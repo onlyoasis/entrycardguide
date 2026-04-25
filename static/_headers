@@ -8,10 +8,10 @@
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=()
-  Strict-Transport-Security: max-age=31536000; includeSubDomains
-  # Tight CSP — this site has no third-party scripts, no analytics, no ads.
-  # If you ever add an analytics or tracking pixel, update this list explicitly.
-  Content-Security-Policy: default-src 'self'; img-src 'self' data: https://web.archive.org; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Cross-Origin-Opener-Policy: same-origin
+  # Cloudflare Web Analytics injects beacon.min.js at the edge. Keep the allowlist narrow.
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: https://web.archive.org; style-src 'self' 'unsafe-inline'; script-src 'self' https://static.cloudflareinsights.com; font-src 'self'; connect-src 'self' https://cloudflareinsights.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; require-trusted-types-for 'script'; trusted-types default
 
 # Long cache for fingerprinted assets (Hugo fingerprints CSS in production)
 /assets/*
