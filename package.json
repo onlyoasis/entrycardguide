@@ -5,8 +5,8 @@
   "description": "Anti-scam entry card guides. Build-only dependencies: Tailwind + PostCSS for CSS pipeline. No browser-side npm dependencies (v1.0).",
   "scripts": {
     "dev": "hugo server --gc --disableFastRender",
-    "build": "hugo --gc --minify --failOnMissingLink",
-    "build:prod": "HUGO_ENV=production hugo --gc --minify --failOnMissingLink",
+    "build": "hugo --gc --minify",
+    "build:prod": "hugo --gc --minify --environment production",
     "clean": "rm -rf public resources"
   },
   "devDependencies": {
