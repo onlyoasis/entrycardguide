@@ -19,6 +19,9 @@ jobs:
   build-and-deploy:
     name: Build and deploy
     runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN || secrets.CF_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID || secrets.CF_ACCOUNT_ID }}
 
     steps:
       - name: Checkout
@@ -44,10 +47,22 @@ jobs:
       - name: Build
         run: npm run build:prod
 
+      - name: Check Cloudflare credentials
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        run: |
+          test -n "$CLOUDFLARE_API_TOKEN" || {
+            echo "Missing Cloudflare API token. Add CLOUDFLARE_API_TOKEN or CF_API_TOKEN in GitHub repository secrets."
+            exit 1
+          }
+          test -n "$CLOUDFLARE_ACCOUNT_ID" || {
+            echo "Missing Cloudflare account ID. Add CLOUDFLARE_ACCOUNT_ID or CF_ACCOUNT_ID in GitHub repository secrets."
+            exit 1
+          }
+
       - name: Deploy to Cloudflare Pages
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         uses: cloudflare/wrangler-action@v3
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          apiToken: ${{ env.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ env.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy public --project-name=entrycardguide --branch=${{ github.ref_name }} --commit-dirty=true
