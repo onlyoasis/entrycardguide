@@ -1,0 +1,8 @@
+# entrycardguide — public site, indexable everywhere.
+# This site's value is Google traffic; we want every reputable crawler in.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://entrycardguide.com/sitemap.xml
+Sitemap: https://entrycardguide.com/zh/sitemap.xml

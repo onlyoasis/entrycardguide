@@ -1,0 +1,21 @@
+# Cloudflare Pages reads this file from the build output root.
+# Hugo copies static/ -> public/ verbatim, so this lands at /_headers.
+# https://developers.cloudflare.com/pages/configuration/headers/
+
+# Apply to every page
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  # Tight CSP — this site has no third-party scripts, no analytics, no ads.
+  # If you ever add an analytics or tracking pixel, update this list explicitly.
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: https://web.archive.org; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+
+# Long cache for fingerprinted assets (Hugo fingerprints CSS in production)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
