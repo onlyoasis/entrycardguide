@@ -1,0 +1,6 @@
+# Cloudflare Pages reads this file from the build output root.
+# Hugo copies static/ -> public/ verbatim, so this lands at /_redirects.
+# https://developers.cloudflare.com/pages/configuration/redirects/
+
+# www → apex (force 301; preserves path and query)
+https://www.entrycardguide.com/*  https://entrycardguide.com/:splat  301!
