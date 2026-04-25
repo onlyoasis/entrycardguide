@@ -1,0 +1,115 @@
+{
+  "country": "thailand",
+  "officialUrl": "https://tdac.immigration.go.th",
+  "lastVerified": "2026-04-22",
+  "source": "https://tdac.immigration.go.th (HTML field attributes, scraped 2026-04-22)",
+  "fields": {
+    "passport": {
+      "type": "passport",
+      "label": "Passport number",
+      "required": true,
+      "minLength": 6,
+      "maxLength": 9,
+      "pattern": "^[A-Z][A-Z0-9]{5,8}$",
+      "placeholder": "A12345678",
+      "help": "Printed on the photo page of your passport. Usually starts with a letter.",
+      "errors": {
+        "required": "Passport number is required",
+        "tooShort": "Passport number too short — min 6 characters",
+        "tooLong": "Passport number too long — max 9 characters",
+        "invalidChars": "Letters and numbers only — no spaces or symbols",
+        "invalidFormat": "Most passports start with a letter. Double check yours."
+      }
+    },
+    "given_name": {
+      "type": "name",
+      "label": "Given name",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 40,
+      "help": "Exactly as shown on your passport (Latin letters only)",
+      "errors": {
+        "required": "Given name is required",
+        "tooLong": "Max 40 characters. Use the Latin abbreviation shown on your passport.",
+        "invalidChars": "Use the Latin spelling from your passport — no accents or special characters"
+      }
+    },
+    "family_name": {
+      "type": "name",
+      "label": "Family name",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 40,
+      "help": "Exactly as shown on your passport (Latin letters only)",
+      "errors": {
+        "required": "Family name is required",
+        "tooLong": "Max 40 characters",
+        "invalidChars": "Use the Latin spelling from your passport — no accents or special characters"
+      }
+    },
+    "date_of_birth": {
+      "type": "date",
+      "label": "Date of birth",
+      "required": true,
+      "minDate": "1900-01-01",
+      "maxDate": "2026-12-31",
+      "placeholder": "1991-08-22",
+      "help": "Format: YYYY-MM-DD",
+      "errors": {
+        "required": "Date of birth is required",
+        "invalidFormat": "Use YYYY-MM-DD (e.g. 1991-08-22)",
+        "tooEarly": "Date of birth seems too far in the past — double check",
+        "tooLate": "Date of birth cannot be in the future"
+      }
+    },
+    "flight_number": {
+      "type": "flight",
+      "label": "Flight number",
+      "required": true,
+      "placeholder": "TG312",
+      "help": "Airline 2-letter code + flight number, no spaces (e.g. TG312, UA1234)",
+      "errors": {
+        "required": "Flight number is required",
+        "invalidFormat": "Format: airline code + number (e.g. TG312, UA1234). No spaces."
+      }
+    },
+    "arrival_date": {
+      "type": "date",
+      "label": "Arrival date",
+      "required": true,
+      "minDate": "2026-01-01",
+      "maxDate": "2027-12-31",
+      "placeholder": "2026-05-14",
+      "help": "Format: YYYY-MM-DD — the date you land in Thailand",
+      "errors": {
+        "required": "Arrival date is required",
+        "invalidFormat": "Use YYYY-MM-DD",
+        "tooEarly": "TDAC must be filed within 3 days before arrival",
+        "tooLate": "Arrival date seems too far in the future"
+      }
+    },
+    "email": {
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "maxLength": 80,
+      "placeholder": "name@example.com",
+      "help": "Confirmation is sent here. Use an email you can check on your phone.",
+      "errors": {
+        "required": "Email is required",
+        "invalidFormat": "Must look like name@example.com",
+        "tooLong": "Email too long — max 80 characters"
+      }
+    },
+    "phone": {
+      "type": "phone",
+      "label": "Phone number",
+      "required": false,
+      "placeholder": "+1 415 555 0100",
+      "help": "Include country code",
+      "errors": {
+        "invalidFormat": "Include country code, e.g. +1 415 555 0100"
+      }
+    }
+  }
+}

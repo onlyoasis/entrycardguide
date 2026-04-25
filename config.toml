@@ -1,0 +1,122 @@
+baseURL = "https://entrycardguide.com/"
+title = "entrycardguide"
+enableGitInfo = true
+enableRobotsTXT = true
+summaryLength = 30
+
+# Multilingual setup
+# - English at root: /, /thailand/, /about/
+# - 简体中文 at /zh/: /zh/, /zh/thailand/, /zh/about/
+# - Content uses file-suffix mode: foo.md (en) + foo.zh.md (zh)
+# - When a Chinese translation does not exist, the language switcher
+#   falls back to /zh/ (homepage), so users never hit a 404.
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    weight = 1
+    title = "entrycardguide"
+    [languages.en.params]
+      description = "Independent. Free. Anti-scam entry card guides for international travelers."
+    [[languages.en.menu.main]]
+      identifier = "thailand"
+      name = "Thailand"
+      url = "/thailand/"
+      weight = 10
+    [[languages.en.menu.main]]
+      identifier = "mexico"
+      name = "Mexico"
+      url = "/mexico/"
+      weight = 20
+    [[languages.en.menu.main]]
+      identifier = "dominican"
+      name = "Dominican Rep."
+      url = "/dominican/"
+      weight = 30
+    [[languages.en.menu.main]]
+      identifier = "malaysia"
+      name = "Malaysia"
+      url = "/malaysia/"
+      weight = 40
+    [[languages.en.menu.main]]
+      identifier = "about"
+      name = "About"
+      url = "/about/"
+      weight = 50
+
+  [languages.zh]
+    languageName = "简体中文"
+    languageCode = "zh-cn"
+    weight = 2
+    title = "entrycardguide · 入境卡指南"
+    [languages.zh.params]
+      description = "独立、免费、反诈骗的入境卡填写指南。"
+    [[languages.zh.menu.main]]
+      identifier = "thailand"
+      name = "泰国"
+      url = "/zh/thailand/"
+      weight = 10
+    [[languages.zh.menu.main]]
+      identifier = "mexico"
+      name = "墨西哥"
+      url = "/zh/mexico/"
+      weight = 20
+    [[languages.zh.menu.main]]
+      identifier = "dominican"
+      name = "多米尼加"
+      url = "/zh/dominican/"
+      weight = 30
+    [[languages.zh.menu.main]]
+      identifier = "malaysia"
+      name = "马来西亚"
+      url = "/zh/malaysia/"
+      weight = 40
+    [[languages.zh.menu.main]]
+      identifier = "about"
+      name = "关于"
+      url = "/zh/about/"
+      weight = 50
+
+[params]
+  defaultTheme = "light"
+  disableThemeToggle = true
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  ShowLastMod = true
+  disableSpecial1stPost = true
+  disableScrollToTop = false
+  hideFooter = false
+
+  [params.author]
+    name = "entrycardguide"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "github"
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+  country = "countries"
+  tag = "tags"
+
+[security]
+  [security.funcs]
+    getenv = ["^HUGO_", "^CI$", "^GITHUB_"]

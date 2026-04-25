@@ -1,0 +1,19 @@
+{
+  "name": "entrycardguide",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Anti-scam entry card guides. Build-only dependencies: Tailwind + PostCSS for CSS pipeline. No browser-side npm dependencies (v1.0).",
+  "scripts": {
+    "dev": "hugo server --gc --disableFastRender",
+    "build": "hugo --gc --minify --failOnMissingLink",
+    "build:prod": "HUGO_ENV=production hugo --gc --minify --failOnMissingLink",
+    "clean": "rm -rf public resources"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.13",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.4"
+  }
+}

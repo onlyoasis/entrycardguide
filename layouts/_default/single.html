@@ -1,0 +1,38 @@
+{{ define "main" }}
+<article class="grid grid-cols-1 lg:grid-cols-[680px_1fr] gap-16 py-12">
+  <div class="max-w-prose">
+
+    {{- if .Parent }}
+    <nav aria-label="Breadcrumb" class="text-meta font-mono uppercase text-muted mb-6">
+      <a href="{{ .Parent.Permalink }}" class="text-muted no-underline hover:underline">{{ .Parent.Title }}</a>
+      <span> / </span>
+      <span>{{ .Title }}</span>
+    </nav>
+    {{- end }}
+
+    <h1 class="mb-4">{{ .Title }}</h1>
+
+    {{- with .Params.kicker }}
+    <p class="text-kicker text-muted mb-8 max-w-[600px]">{{ . }}</p>
+    {{- end }}
+
+    <div class="text-small text-muted border-t border-b border-rule py-3 mb-10 flex flex-wrap gap-x-2 gap-y-1">
+      <span>Last verified <strong class="text-ink font-medium">{{ dateFormat "January 2, 2006" .Lastmod }}</strong></span>
+      {{- with .GitInfo }}
+      <span class="text-muted">·</span>
+      <span>Commit <code class="text-ink">{{ .AbbreviatedHash }}</code></span>
+      {{- end }}
+      <span class="text-muted">·</span>
+      <span>Also on <a href="https://web.archive.org/web/{{ .Permalink }}" class="text-muted underline underline-offset-2">archive.org</a></span>
+    </div>
+
+    <div class="prose prose-lg max-w-none">
+      {{ .Content }}
+    </div>
+  </div>
+
+  <aside class="hidden lg:block sticky top-8 self-start max-w-rail text-small">
+    {{- partial "article-rail.html" . -}}
+  </aside>
+</article>
+{{ end }}

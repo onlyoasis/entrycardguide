@@ -1,0 +1,64 @@
+{{- $country := .Params.country }}
+{{- $urls := dict }}
+{{- if $country }}{{- $urls = index .Site.Data.official_urls $country }}{{- end }}
+
+<div class="border-t-2 border-ink pt-md mb-xl">
+  <h4 class="font-mono text-meta uppercase text-muted mb-3 font-medium">{{ i18n "rail_source_of_truth" }}</h4>
+
+  {{- if $urls }}
+  {{- range $key, $entry := $urls }}
+  {{- if reflect.IsMap $entry }}{{- /* skip arrays like scam_sites */ -}}
+  <div class="py-2 border-b border-rule border-dotted">
+    <span class="block text-xs text-muted font-mono uppercase tracking-wide2">{{ $entry.name | default $key }}</span>
+    <a href="{{ $entry.url }}" class="font-mono text-small text-ink underline underline-offset-2">{{ $entry.url | replaceRE "^https?://" "" }}</a>
+  </div>
+  {{- end }}
+  {{- end }}
+  {{- end }}
+
+  {{- with .Lastmod }}
+  <div class="py-2 border-b border-rule border-dotted">
+    <span class="block text-xs text-muted font-mono uppercase tracking-wide2">{{ i18n "rail_last_verified" }}</span>
+    <span class="text-small">{{ dateFormat "January 2, 2006" . }}</span>
+    <span class="rail-verified mt-2 block">{{ i18n "verified_badge" }}</span>
+  </div>
+  {{- end }}
+
+  {{- with .GitInfo }}
+  <div class="py-2 border-b border-rule border-dotted">
+    <span class="block text-xs text-muted font-mono uppercase tracking-wide2">{{ i18n "rail_source_commit" }}</span>
+    <a href="https://github.com/onlyoasis/entrycardguide/commit/{{ .Hash }}" class="font-mono text-small text-ink">{{ .AbbreviatedHash }}</a>
+  </div>
+  {{- end }}
+
+  <div class="py-2 border-b border-rule border-dotted">
+    <span class="block text-xs text-muted font-mono uppercase tracking-wide2">{{ i18n "rail_archived_at" }}</span>
+    <a href="https://web.archive.org/web/{{ .Permalink }}" class="font-mono text-small text-ink">web.archive.org</a>
+  </div>
+</div>
+
+<div class="border-t-2 border-ink pt-md mb-xl">
+  <h4 class="font-mono text-meta uppercase text-muted mb-3 font-medium">{{ i18n "rail_money_from" }}</h4>
+  <p class="text-small text-muted leading-relaxed">{{ i18n "rail_money_explainer" }}
+    <a href="{{ "/about/" | relLangURL }}" class="text-ink">{{ i18n "rail_full_disclosure" }}</a>.</p>
+  <div class="mt-3 pt-3 border-t border-rule text-small">
+    <span class="block text-xs text-muted font-mono uppercase tracking-wide2 mb-1">{{ i18n "rail_we_dont_take" }}</span>
+    {{ i18n "rail_we_dont_take_value" }}
+  </div>
+</div>
+
+{{- /* Related posts in the same country taxonomy. Filter to current language so a
+       /zh/ article never shows English siblings as related. */ -}}
+{{- $sameSection := where .Site.RegularPages "Section" .Section }}
+{{- $sameLang := where $sameSection "Language.Lang" .Site.Language.Lang }}
+{{- $related := where $sameLang "Permalink" "!=" .Permalink | first 3 }}
+{{- if $related }}
+<div class="border-t-2 border-ink pt-md">
+  <h4 class="font-mono text-meta uppercase text-muted mb-3 font-medium">{{ i18n "rail_related" }}</h4>
+  {{- range $related }}
+  <div class="py-2 border-b border-rule border-dotted">
+    <a href="{{ .Permalink }}" class="text-small text-ink">{{ .Title }}</a>
+  </div>
+  {{- end }}
+</div>
+{{- end }}

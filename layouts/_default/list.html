@@ -1,0 +1,29 @@
+{{ define "main" }}
+<section class="max-w-prose mx-auto py-12">
+  <h1 class="mb-4">{{ .Title }}</h1>
+  {{- with .Params.kicker }}
+  <p class="text-kicker text-muted mb-10">{{ . }}</p>
+  {{- end }}
+
+  <div class="prose prose-lg max-w-none mb-12">
+    {{ .Content }}
+  </div>
+
+  <div class="border-t border-rule">
+    {{- range .Pages.ByLastmod.Reverse }}
+    <article class="py-6 border-b border-rule">
+      <h2 class="mb-1">
+        <a href="{{ .Permalink }}" class="text-ink no-underline hover:underline underline-offset-4">{{ .Title }}</a>
+      </h2>
+      {{- with .Params.kicker }}
+      <p class="text-muted mb-2">{{ . }}</p>
+      {{- end }}
+      <div class="text-small text-muted">
+        Last verified {{ dateFormat "January 2, 2006" .Lastmod }}
+        {{- with .GitInfo }} · Commit <code>{{ .AbbreviatedHash }}</code>{{- end }}
+      </div>
+    </article>
+    {{- end }}
+  </div>
+</section>
+{{ end }}

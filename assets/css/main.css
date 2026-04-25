@@ -1,0 +1,227 @@
+/* ---------------------------------------------------------------- */
+/* Fonts — self-hosted WOFF2. Put files in assets/fonts/ (see README) */
+/* ---------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('/fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Instrument Sans';
+  src: url('/fonts/InstrumentSans-VariableFont_wdth,wght.woff2') format('woff2-variations');
+  font-weight: 400 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('/fonts/GeistMono-VariableFont_wght.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* ---------------------------------------------------------------- */
+/* Tailwind layers                                                   */
+/* ---------------------------------------------------------------- */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------------------------------------------------------- */
+/* Base layer — editorial defaults                                   */
+/* ---------------------------------------------------------------- */
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    background: theme('colors.paper');
+    color: theme('colors.ink');
+    font-family: theme('fontFamily.sans');
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    min-height: 100vh;
+  }
+
+  /* Reduce motion: collapse the 2 allowed transitions to 0 */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      transition-duration: 0ms !important;
+      animation-duration: 0ms !important;
+    }
+  }
+
+  h1 {
+    font-family: theme('fontFamily.serif');
+    font-weight: 500;
+    font-size: theme('fontSize.h1-mobile[0]');
+    line-height: theme('fontSize.h1-mobile[1].lineHeight');
+    letter-spacing: theme('fontSize.h1-mobile[1].letterSpacing');
+    font-variation-settings: 'opsz' 144;
+  }
+
+  @screen md {
+    h1 {
+      font-size: theme('fontSize.h1[0]');
+      line-height: theme('fontSize.h1[1].lineHeight');
+    }
+  }
+
+  h2 {
+    font-family: theme('fontFamily.sans');
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-family: theme('fontFamily.sans');
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  /* Inline mark — highlight for official URLs */
+  mark {
+    background: theme('colors.mark');
+    color: theme('colors.ink');
+    padding: 2px 6px;
+    border-radius: theme('borderRadius.sm');
+    font-family: theme('fontFamily.mono');
+    font-size: 0.95em;
+  }
+
+  /* Inline code — mono, never colored */
+  code {
+    font-family: theme('fontFamily.mono');
+    font-size: 0.95em;
+  }
+
+  /* Prose links — ink with rule-color underline, darken on hover */
+  .prose a, article a {
+    color: theme('colors.ink');
+    text-decoration: underline;
+    text-decoration-color: theme('colors.rule');
+    text-underline-offset: 3px;
+    transition: text-decoration-color theme('transitionDuration.link') ease;
+  }
+
+  .prose a:hover, article a:hover {
+    text-decoration-color: theme('colors.ink');
+  }
+}
+
+/* ---------------------------------------------------------------- */
+/* Component layer                                                   */
+/* ---------------------------------------------------------------- */
+
+@layer components {
+  /* Trust bar at top of every page */
+  .trust-bar {
+    @apply bg-ink text-paper text-center tracking-wide2 py-sm px-md;
+    font-size: 13px;
+  }
+  .trust-bar .dot {
+    color: #5C5C58;
+    margin: 0 0.5rem;
+  }
+
+  /* Official URL callout */
+  .official-callout {
+    @apply border border-verified rounded-md p-md my-lg flex gap-md;
+    border-left-width: 4px;
+  }
+
+  .official-badge {
+    @apply bg-verified text-paper font-sans font-semibold text-meta uppercase tracking-wide3 px-2 py-0.5 rounded-sm shrink-0;
+  }
+
+  /* Validator tool container — white bg = only place white is used */
+  .validator {
+    @apply border border-rule rounded-md p-6 my-lg bg-white;
+  }
+
+  .validator-row {
+    @apply grid grid-cols-[180px_1fr_80px] gap-md items-center py-sm border-t border-rule;
+  }
+  .validator-row:last-of-type {
+    @apply border-b;
+  }
+
+  .validator-input {
+    @apply font-mono text-mono border border-rule rounded-sm px-3 py-2 bg-paper text-ink w-full;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .validator-input:focus {
+    @apply outline-none border-ink;
+  }
+
+  .validator-state {
+    @apply font-mono text-small text-right;
+    transition: color theme('transitionDuration.state') ease-out;
+  }
+  .validator-state.ok { @apply text-verified; }
+  .validator-state.err { @apply text-scam; }
+
+  /* Scam card */
+  .scam-card {
+    @apply relative border border-rule overflow-hidden;
+    aspect-ratio: 16 / 10;
+  }
+
+  .scam-stamp {
+    @apply absolute top-1/2 left-1/2 bg-scam text-paper font-sans font-semibold text-small uppercase tracking-wide4 px-md py-sm rounded-sm;
+    transform: translate(-50%, -50%) rotate(-8deg);
+    box-shadow: 0 0 0 2px theme('colors.paper'), 0 0 0 3px theme('colors.scam');
+  }
+
+  .scam-domain {
+    @apply absolute bottom-0 left-0 right-0 bg-ink text-paper font-mono text-xs px-3 py-1;
+  }
+
+  /* Buttons — only 2 styles allowed */
+  .btn-ink {
+    @apply bg-ink text-paper font-sans font-medium text-small px-5 py-2 rounded-sm border-0 cursor-pointer;
+    transition: background-color theme('transitionDuration.link') ease;
+  }
+  .btn-ink:hover {
+    @apply bg-verified;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent text-ink font-sans font-medium text-small px-5 py-2 rounded-sm border border-ink cursor-pointer;
+    transition: background-color theme('transitionDuration.link') ease, color theme('transitionDuration.link') ease;
+  }
+  .btn-ghost:hover {
+    @apply bg-ink text-paper;
+  }
+
+  /* Verified indicator dot */
+  .rail-verified {
+    @apply inline-flex items-center gap-1 text-verified font-sans font-semibold text-xs uppercase tracking-wide2;
+  }
+  .rail-verified::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: theme('colors.verified');
+    border-radius: 9999px;
+  }
+}

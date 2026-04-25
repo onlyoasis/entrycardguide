@@ -1,0 +1,49 @@
+{{- /*
+  Usage: {{< validator country="thailand" >}}
+
+  Reads data/rules/{country}.json and embeds it as a JSON script tag.
+  Renders one input row per field. JS in assets/js/validator.ts wires up live checks.
+  100% client-side. Zero network.
+  Strings come from i18n/{lang}.yaml.
+*/ -}}
+{{- $country := .Get "country" }}
+{{- $rules := index .Site.Data.rules $country }}
+{{- if not $rules }}
+  {{- errorf "validator shortcode: no rules found at data/rules/%s.json" $country }}
+{{- end }}
+
+<section class="validator" data-country="{{ $country }}" aria-labelledby="validator-title-{{ $country }}">
+  <div class="text-meta text-muted mb-2 font-mono uppercase">{{ i18n "validator_eyebrow" }}</div>
+  <h3 id="validator-title-{{ $country }}" class="font-serif font-medium text-h2 mb-1">{{ i18n "validator_heading" }}</h3>
+  <p class="text-muted text-small mb-6">{{ i18n "validator_intro" }}
+    <a href="https://github.com/onlyoasis/entrycardguide/blob/main/assets/js/validator.ts" class="text-ink">{{ i18n "validator_view_source" }}</a> {{ i18n "validator_to_verify" }}</p>
+
+  {{- /* Embed rules as JSON for the browser to consume. Single source of truth. */ -}}
+  <script type="application/json" class="validator-rules">{{ $rules | jsonify }}</script>
+
+  {{- range $name, $field := $rules.fields }}
+  <div class="validator-row" data-field="{{ $name }}">
+    <label for="validator-{{ $country }}-{{ $name }}" class="text-small font-medium">{{ $field.label }}{{ if $field.required }}<span class="text-muted">{{ i18n "validator_required_marker" }}</span>{{ end }}</label>
+    <input
+      id="validator-{{ $country }}-{{ $name }}"
+      class="validator-input"
+      type="text"
+      autocomplete="off"
+      spellcheck="false"
+      placeholder="{{ $field.placeholder }}"
+      aria-describedby="validator-{{ $country }}-{{ $name }}-help"
+    />
+    <div class="validator-state" aria-live="polite"></div>
+    <div id="validator-{{ $country }}-{{ $name }}-help" class="validator-err-msg col-span-2 text-xs text-scam" style="display:none"></div>
+    {{- with $field.help }}
+    <div class="text-xs text-muted col-span-2 -mt-2 mb-1">{{ . }}</div>
+    {{- end }}
+  </div>
+  {{- end }}
+
+  <div class="mt-md pt-md border-t border-rule text-xs text-muted">
+    {{ i18n "validator_browser_only" }}
+    <br>
+    ✓ {{ i18n "validator_rules_verified" }} <strong class="text-ink">{{ $rules.lastVerified }}</strong>.
+  </div>
+</section>

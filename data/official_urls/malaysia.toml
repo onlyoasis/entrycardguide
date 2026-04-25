@@ -1,0 +1,39 @@
+# Malaysia — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-04-24
+
+[mdac]
+url = "https://imigresen-online.imi.gov.my/mdac/main"
+name = "Malaysia Digital Arrival Card (MDAC)"
+agency = "Jabatan Imigresen Malaysia (Immigration Department of Malaysia)"
+last_verified = "2026-04-24"
+archive_url = "https://web.archive.org/web/2026/https://imigresen-online.imi.gov.my/mdac/main"
+notes = "Reserved under .gov.my — only Malaysian government entities can register this domain suffix. Required for most foreign visitors since January 2024."
+
+[immigration_home]
+url = "https://www.imi.gov.my"
+name = "Jabatan Imigresen Malaysia (home)"
+agency = "Jabatan Imigresen Malaysia"
+last_verified = "2026-04-24"
+
+# Known scam / middleman domains (for scam-site shortcode)
+[[scam_sites]]
+domain = "malaysia-mdac.com"
+first_observed = "2024-02-15"
+evidence = "Charges $19 USD for free form; uses Malaysian Immigration Department branding without authorization"
+
+[[scam_sites]]
+domain = "mdac-malaysia.org"
+first_observed = "2024-05-20"
+evidence = "Reseller charging $29 USD; mimics imi.gov.my layout"
+
+[[scam_sites]]
+domain = "ivisa.com"
+path = "/malaysia"
+first_observed = "2024-02-01"
+evidence = "Commercial middleman charging fees for the free MDAC"
+
+[[scam_sites]]
+domain = "mdac-official.net"
+first_observed = "2025-03-10"
+evidence = "Uses 'official' in name; charges $35 USD and is unaffiliated with Malaysian Immigration"

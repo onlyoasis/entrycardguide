@@ -1,0 +1,7 @@
+{{- /* JS pipeline — Hugo js.Build handles TS transpilation + bundling, zero npm for browser */ -}}
+{{- $opts := dict "targetPath" "js/validator.js" "minify" hugo.IsProduction "target" "es2020" "format" "iife" }}
+{{- $js := resources.Get "js/validator.ts" | js.Build $opts }}
+{{- if hugo.IsProduction }}
+  {{- $js = $js | resources.Fingerprint "sha256" }}
+{{- end }}
+<script src="{{ $js.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $js.Data.Integrity }}"{{ end }} defer></script>

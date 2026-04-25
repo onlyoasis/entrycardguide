@@ -1,0 +1,23 @@
+<footer class="border-t border-rule bg-paper mt-22">
+  <div class="mx-auto max-w-container px-md py-xl flex justify-between items-start gap-md flex-wrap text-small text-muted">
+    <div>
+      <strong class="text-ink">entrycardguide</strong> · {{ i18n "footer_brand_tagline" }}
+    </div>
+    <div>
+      {{ i18n "footer_built_with" }} ·
+      {{- with .GitInfo }}
+      {{ i18n "footer_last_deploy" }} <a href="https://github.com/onlyoasis/entrycardguide/commit/{{ .Hash }}" class="text-ink">{{ .AbbreviatedHash }}</a> ·
+      {{ dateFormat "January 2, 2006" .AuthorDate }}
+      {{- else }}
+      <span>{{ i18n "footer_local_preview" }}</span>
+      {{- end }}
+    </div>
+    <div>
+      <a href="https://github.com/onlyoasis/entrycardguide" class="text-ink">{{ i18n "footer_view_source" }}</a>
+    </div>
+  </div>
+  <div class="mx-auto max-w-container px-md pb-lg text-xs text-muted">
+    <p>{{ i18n "footer_money_disclosure" }}
+    <a href="{{ "/about/" | relLangURL }}" class="text-ink">{{ i18n "footer_full_disclosure" }}</a>.</p>
+  </div>
+</footer>

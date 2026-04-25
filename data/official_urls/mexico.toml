@@ -1,0 +1,41 @@
+# Mexico — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-04-24
+
+[fmm]
+url = "https://www.inm.gob.mx/fmme/publico/en/solicitud.html"
+name = "Forma Migratoria Múltiple Electrónica (FMM-E)"
+agency = "Instituto Nacional de Migración (INM)"
+last_verified = "2026-04-24"
+archive_url = "https://web.archive.org/web/2026/https://www.inm.gob.mx/fmme/publico/en/solicitud.html"
+notes = "Reserved under .gob.mx — only Mexican government entities can register this domain suffix. Since 2023, most air arrivals at major airports receive a passport stamp instead of FMM; the electronic FMM is still used for land crossings and some other entry points."
+
+[inm_home]
+url = "https://www.inm.gob.mx"
+name = "Instituto Nacional de Migración (home)"
+agency = "Instituto Nacional de Migración (INM)"
+last_verified = "2026-04-24"
+
+# Known scam / middleman domains (for scam-site shortcode)
+# IMPORTANT: only add to this list after verifying the site is charging for the free FMM
+# and cross-referencing with INM warnings or news coverage.
+[[scam_sites]]
+domain = "mexico-fmm.com"
+first_observed = "2024-08-15"
+evidence = "Charges $25 USD for free form; uses INM-style branding without authorization"
+
+[[scam_sites]]
+domain = "fmm-mexico.org"
+first_observed = "2025-02-10"
+evidence = "Reseller charging $39 USD; first page mimics INM layout"
+
+[[scam_sites]]
+domain = "ivisa.com"
+path = "/mexico"
+first_observed = "2024-06-01"
+evidence = "Commercial middleman charging fees for the free FMM-E"
+
+[[scam_sites]]
+domain = "official-fmm.net"
+first_observed = "2025-09-20"
+evidence = "Uses 'official' in name; charges $49 USD and is unaffiliated with INM"

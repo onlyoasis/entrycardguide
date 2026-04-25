@@ -1,0 +1,50 @@
+# 简体中文 UI 字符串。保持 key 与 en.yaml 一致。
+# 添加新 key 时同步更新 en.yaml。
+
+# 头部 / 导航
+brand_dot_label: "入境卡指南"
+nav_main_label: "主导航"
+language_switcher_label: "语言"
+
+# 官方链接说明框
+verified_badge: "已核实"
+official_url_label: "官方网址"
+run_by_label: "运营方"
+last_verified_label: "最近核实于"
+archived_snapshot_label: "存档快照"
+
+# 假站卡片
+not_official_stamp: "非官方"
+scam_card_aria_prefix: "假冒站点"
+scam_card_aria_suffix: "截图，标记为非官方"
+
+# 校验器
+validator_eyebrow: "工具 · 提前核对填写内容"
+validator_heading: "粘贴到官方站点前，先在这里检查"
+validator_intro: "在下方输入你的资料。我们不会把它发往任何地方，全部在你的浏览器里运行。"
+validator_view_source: "查看源码"
+validator_to_verify: "以核实。"
+validator_browser_only: "✓ 100% 浏览器本地运行，无任何网络请求，无追踪。可在 GitHub 审计源码。"
+validator_rules_verified: "校验规则最近核实于"
+validator_required_marker: " *"
+
+# 页脚
+footer_brand_tagline: "独立运营 · 非政府机构"
+footer_built_with: "由 Hugo 驱动"
+footer_last_deploy: "最近部署"
+footer_local_preview: "本地预览"
+footer_view_source: "在 GitHub 查看源码"
+footer_money_disclosure: "我们的收入仅来自文章中的旅行保险、eSIM、旅游联盟链接。我们不接受 iVisa、任何签证服务或信用卡公司的资金。"
+footer_full_disclosure: "完整披露"
+
+# 文章侧栏
+rail_source_of_truth: "信息来源"
+rail_last_verified: "最近核实"
+rail_source_commit: "源码提交"
+rail_archived_at: "存档于"
+rail_money_from: "我们的收入来自"
+rail_money_explainer: "本文底部的旅行保险、eSIM、旅游联盟链接。"
+rail_full_disclosure: "完整披露"
+rail_we_dont_take: "我们不接受"
+rail_we_dont_take_value: "iVisa · 任何签证服务 · 信用卡广告"
+rail_related: "相关文章"

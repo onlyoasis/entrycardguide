@@ -1,0 +1,37 @@
+{{- /*
+  Usage: {{< scam-site domain="thailand-tdac.com" screenshot="/scams/thailand-tdac.png" country="thailand" >}}
+
+  Renders a "NOT OFFICIAL" stamp over a screenshot.
+  Legal note: only use domains that appear in data/official_urls/{country}.toml's [[scam_sites]]
+  list with documented evidence. The shortcode VALIDATES this to prevent accidental
+  exposure to defamation claims.
+*/ -}}
+{{- $domain := .Get "domain" }}
+{{- $screenshot := .Get "screenshot" | default "" }}
+{{- $country := .Get "country" }}
+{{- $data := index .Site.Data.official_urls $country }}
+{{- if not $data }}
+  {{- errorf "scam-site shortcode: no data for country %q" $country }}
+{{- end }}
+
+{{- /* Find matching entry in scam_sites[] — BUILD FAILS if domain not listed */ -}}
+{{- $match := false }}
+{{- range $data.scam_sites }}
+  {{- if eq .domain $domain }}
+    {{- $match = . }}
+  {{- end }}
+{{- end }}
+{{- if not $match }}
+  {{- errorf "scam-site shortcode: domain %q is NOT in data/official_urls/%s.toml scam_sites. Add evidence first." $domain $country }}
+{{- end }}
+
+<figure class="scam-card" role="img" aria-label="{{ i18n "scam_card_aria_prefix" }} {{ $domain }}, {{ i18n "scam_card_aria_suffix" }}">
+  {{- if $screenshot }}
+  <img src="{{ $screenshot }}" alt="" loading="lazy" class="w-full h-full object-cover">
+  {{- else }}
+  {{- /* Placeholder pattern when no screenshot is available yet */ -}}
+  <div class="w-full h-full" style="background: repeating-linear-gradient(135deg, #e5e5e0 0 20px, #efefea 20px 40px);"></div>
+  {{- end }}
+  <div class="scam-stamp">{{ i18n "not_official_stamp" }}</div>
+  <figcaption class="scam-domain">{{ $domain }}</figcaption>
+</figure>

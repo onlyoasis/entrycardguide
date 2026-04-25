@@ -1,0 +1,35 @@
+{{- /*
+  Usage: {{< official-link site="thailand.tdac" >}}
+
+  Reads data/official_urls/{country}.toml. Renders the canonical callout block.
+  Single source of truth for URLs — change the TOML, all pages update.
+  Strings come from i18n/{lang}.yaml.
+*/ -}}
+{{- $parts := split (.Get "site") "." }}
+{{- if lt (len $parts) 2 }}
+  {{- errorf "official-link shortcode: site param must be 'country.key' (got %q)" (.Get "site") }}
+{{- end }}
+{{- $country := index $parts 0 }}
+{{- $key := index $parts 1 }}
+{{- $data := index .Site.Data.official_urls $country }}
+{{- if not $data }}
+  {{- errorf "official-link shortcode: no data at data/official_urls/%s.toml" $country }}
+{{- end }}
+{{- $entry := index $data $key }}
+{{- if not $entry }}
+  {{- errorf "official-link shortcode: no key %q in data/official_urls/%s.toml" $key $country }}
+{{- end }}
+
+<div class="official-callout" role="note">
+  <span class="official-badge">{{ i18n "verified_badge" }}</span>
+  <div>
+    <div class="text-meta text-muted font-mono uppercase mb-1">{{ i18n "official_url_label" }}</div>
+    <div><a href="{{ $entry.url }}" rel="noopener" class="no-underline"><mark>{{ $entry.url | replaceRE "^https?://" "" }}</mark></a></div>
+    <div class="text-small text-muted mt-2">
+      {{ i18n "run_by_label" }} <strong class="text-ink">{{ $entry.agency }}</strong>. {{ i18n "last_verified_label" }} <strong class="text-ink">{{ dateFormat "January 2, 2006" $entry.last_verified }}</strong>.
+      {{- with $entry.archive_url }}
+      · <a href="{{ . }}" class="text-muted">{{ i18n "archived_snapshot_label" }}</a>
+      {{- end }}
+    </div>
+  </div>
+</div>

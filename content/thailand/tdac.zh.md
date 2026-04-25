@@ -1,0 +1,81 @@
+---
+title: "泰国数字入境卡（TDAC），不收费的解释。"
+kicker: "2026 年到达泰国的外国旅客中，10% 为这份免费表单付了诈骗站点的钱。这里是官方网址、所有字段，以及如何分辨真假。"
+description: "免费、独立的泰国 TDAC 中文指南。官方网址、假站警示、起飞前字段核对工具。"
+date: 2026-04-22
+lastmod: 2026-04-25
+country: "thailand"
+weight: 10
+---
+
+{{< official-link site="thailand.tdac" >}}
+
+## TDAC 到底是什么
+
+TDAC 是你进入泰国之前要填的一份免费表格。泰国政府于 2024 年 5 月推出，取代了纸质入境卡。如果你手头有护照和航班信息，填写大约需要 8 分钟。
+
+没有人能向你收这笔钱。
+
+没有人能比你自己提交得更快。
+
+不存在所谓的"快速通道"、"优先"、"高级"或"白手套"服务。这些服务根本不存在。你的 TDAC 表单在法律上唯一的提交目的地就是 `tdac.immigration.go.th`，这个域名后缀 `.go.th` 只对泰国政府机构开放注册。
+
+## 问题在哪
+
+如果你现在 Google 搜 *"thailand digital arrival card"*，前三条结果都是付费广告，由中介向你收 20 到 90 美元来填一份免费表格。其中一些中介确实代你提交了真表单，另一些没有，你会在入境处发现。
+
+2026 年 3 月，泰国当局[公开点名 iVisa](https://www.bangkokpost.com/) 是其中一个中介站点。泰国皇家移民局表示，约 10% 的外国入境者使用过非官方网站并多付了钱。
+
+## 在动任何表单之前
+
+看一眼地址栏。官方网址是 <mark>tdac.immigration.go.th</mark>，没有别的。
+
+不是 `thailand-tdac.com`。不是 `official-tdac.org`。也不是任何带 `gov`、`official`、`immigration` 字样但不以 `.go.th` 结尾的变体。任何人都能注册一个 `.com`，但不是任何人都能注册 `.go.th`。
+
+{{< validator country="thailand" >}}
+
+## 官方表单到底问哪些字段
+
+TDAC 共有 23 个字段，分布在 4 个部分：护照、行程、健康、联系方式。
+
+没有任何字段需要上传照片。
+
+没有任何字段需要付款。
+
+如果一个站点要你做这两件事中的任何一件，你就不在官方站点上。
+
+如需逐字段讲解、截图和常见错误说明，请阅读我们的 [TDAC 字段填写指南](/zh/thailand/how-to-fill/)。
+
+## 已知**不是** TDAC 的网站
+
+下面这些网站都在为一份免费表单收费。其中一些代你提交了真表单，另一些没有。
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+{{< scam-site country="thailand" domain="thailand-tdac.com" >}}
+{{< scam-site country="thailand" domain="ivisa.com" >}}
+{{< scam-site country="thailand" domain="official-tdac.org" >}}
+{{< scam-site country="thailand" domain="tdac-gov-th.net" >}}
+</div>
+
+截图于 2026 年 4 月。存档可在 [archive.org](https://web.archive.org/) 查询。
+
+## 常见问题
+
+### TDAC 要收费吗？
+不收。任何向你收 TDAC 费用的人都是中介。泰国皇家移民局不为这份表单收取任何款项。
+
+### 我能在手机上填吗？
+能。官方站点支持移动端。如果可能，建议在笔记本上填，因为某些字段字符上限很紧，键盘输入更不容易出错。
+
+### 我应该什么时候填？
+抵达泰国前 3 天内。再早提交，官方站会拒绝。
+
+### 我已经付了中介，能退款吗？
+联系发卡行，以"未提供服务"（如果中介确实没替你提交）或"欺诈性商业行为"（如果他们提交了，但为免费服务收了钱）提起 chargeback。成功率因机构而异。
+
+### 我提交了表单但没收到确认邮件。
+查看垃圾邮件箱。1 小时后仍然没有就重新提交。官方站是幂等的，重复提交无害，最近的一次为准。
+
+---
+
+*本指南由 entrycardguide 维护。我们与泰国皇家移民局或任何旅行服务都没有任何关联。我们的全部收入来自本页底部的旅行保险和 eSIM 联盟链接，详见 [关于页](/zh/about/)。*

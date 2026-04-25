@@ -1,0 +1,32 @@
+{{ define "main" }}
+<section class="max-w-prose mx-auto py-16">
+
+  <h1 class="mb-6">{{ .Site.Title }}</h1>
+
+  <p class="text-kicker text-muted mb-10 max-w-[600px]">
+    Free, independent guides to every country's digital arrival card. No fees. No stored data. No affiliation with any scam site.
+  </p>
+
+  <div class="prose prose-lg max-w-none mb-16">
+    {{ .Content }}
+  </div>
+
+  <h2 class="mb-6">Countries we cover</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+    {{- range .Site.Menus.main }}
+    {{- if ne .Identifier "about" }}
+    <a href="{{ .URL }}" class="block border border-rule p-md no-underline hover:border-ink">
+      <h3 class="font-serif font-medium mb-1" style="font-size: 22px; font-variation-settings: 'opsz' 144;">{{ .Name }}</h3>
+      <p class="text-small text-muted m-0">
+        {{- if eq .Identifier "thailand" }}TDAC — Digital Arrival Card
+        {{- else if eq .Identifier "mexico" }}FMM — Forma Migratoria Múltiple
+        {{- else if eq .Identifier "dominican" }}e-Ticket — Entry / Exit form
+        {{- else if eq .Identifier "malaysia" }}MDAC — Digital Arrival Card
+        {{- end }}
+      </p>
+    </a>
+    {{- end }}
+    {{- end }}
+  </div>
+</section>
+{{ end }}

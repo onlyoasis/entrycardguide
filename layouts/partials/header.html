@@ -1,0 +1,51 @@
+<header class="border-b border-rule">
+  <div class="mx-auto max-w-container px-md py-5 flex justify-between items-baseline gap-md">
+    <a href="{{ "/" | relLangURL }}" class="font-serif font-medium no-underline" style="font-size: 22px; font-variation-settings: 'opsz' 144;" aria-label="{{ i18n "brand_dot_label" }}">
+      entrycardguide<span class="text-verified">·</span>
+    </a>
+    <nav aria-label="{{ i18n "nav_main_label" }}" class="flex gap-8 text-small items-baseline">
+      {{- range .Site.Menus.main }}
+      <a href="{{ .URL }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ .Name }}</a>
+      {{- end }}
+
+      {{- /*
+        Language switcher (dropdown).
+        Uses native <details>/<summary> for zero-JS accessibility.
+        Trigger shows the current language. Expanded panel lists all languages.
+        For the active language: rendered as plain text with aria-current.
+        For others: a real <a> with hreflang. If the current page has a
+        translation in that language, link directly to it; else fall back
+        to the language home so users never hit a 404.
+        Pattern scales — adding a new language only requires:
+          1. a [languages.xx] block in config.toml
+          2. an i18n/xx.yaml file
+          3. (optional) translated content with .xx.md suffix
+      */ -}}
+      {{- if gt (len .Site.Languages) 1 }}
+      <details class="lang-switcher relative" role="group" aria-label="{{ i18n "language_switcher_label" }}">
+        <summary class="cursor-pointer list-none flex items-baseline gap-1 text-ink hover:underline hover:underline-offset-4 [&::-webkit-details-marker]:hidden">
+          <span>{{ .Site.Language.LanguageName }}</span>
+          <span aria-hidden="true" class="text-muted text-xs">▾</span>
+        </summary>
+        <div class="absolute right-0 top-full mt-2 bg-paper border border-rule py-1 min-w-[140px] z-20 shadow-none">
+          {{- range .Site.Languages }}
+            {{- $lang := . }}
+            {{- if eq $lang.Lang $.Site.Language.Lang }}
+              <span class="block px-3 py-2 text-ink font-medium bg-rule" aria-current="true">{{ $lang.LanguageName }}</span>
+            {{- else }}
+              {{- $href := "" }}
+              {{- range $.AllTranslations }}
+                {{- if eq .Lang $lang.Lang }}{{ $href = .RelPermalink }}{{ end }}
+              {{- end }}
+              {{- if not $href }}
+                {{- if eq $lang.Lang "en" }}{{ $href = "/" }}{{ else }}{{ $href = printf "/%s/" $lang.Lang }}{{ end }}
+              {{- end }}
+              <a href="{{ $href }}" class="block px-3 py-2 text-ink no-underline hover:bg-rule" hreflang="{{ $lang.Lang }}">{{ $lang.LanguageName }}</a>
+            {{- end }}
+          {{- end }}
+        </div>
+      </details>
+      {{- end }}
+    </nav>
+  </div>
+</header>

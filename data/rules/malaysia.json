@@ -1,0 +1,138 @@
+{
+  "country": "malaysia",
+  "officialUrl": "https://imigresen-online.imi.gov.my/mdac/main",
+  "lastVerified": "2026-04-24",
+  "source": "https://imigresen-online.imi.gov.my/mdac/main (HTML field attributes, scraped 2026-04-24)",
+  "fields": {
+    "passport": {
+      "type": "passport",
+      "label": "Passport number",
+      "required": true,
+      "minLength": 6,
+      "maxLength": 12,
+      "pattern": "^[A-Z0-9]{6,12}$",
+      "placeholder": "A12345678",
+      "help": "Printed on the photo page of your passport. Letters and numbers only.",
+      "errors": {
+        "required": "Passport number is required",
+        "tooShort": "Passport number too short — min 6 characters",
+        "tooLong": "Passport number too long — max 12 characters",
+        "invalidChars": "Letters and numbers only — no spaces or symbols"
+      }
+    },
+    "full_name": {
+      "type": "name",
+      "label": "Full name (as in passport)",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 80,
+      "help": "Exactly as shown on your passport (Latin letters only). The MDAC uses one full-name field, not separate given/family.",
+      "errors": {
+        "required": "Full name is required",
+        "tooLong": "Max 80 characters",
+        "invalidChars": "Use the Latin spelling from your passport — no accents or special characters"
+      }
+    },
+    "nationality": {
+      "type": "nationality",
+      "label": "Nationality",
+      "required": true,
+      "placeholder": "USA",
+      "help": "Country that issued your passport",
+      "errors": {
+        "required": "Nationality is required",
+        "invalidFormat": "Select from the dropdown"
+      }
+    },
+    "date_of_birth": {
+      "type": "date",
+      "label": "Date of birth",
+      "required": true,
+      "minDate": "1900-01-01",
+      "maxDate": "2026-12-31",
+      "placeholder": "1991-08-22",
+      "help": "Format: YYYY-MM-DD",
+      "errors": {
+        "required": "Date of birth is required",
+        "invalidFormat": "Use YYYY-MM-DD",
+        "tooEarly": "Date of birth seems too far in the past — double check",
+        "tooLate": "Date of birth cannot be in the future"
+      }
+    },
+    "passport_expiry": {
+      "type": "date",
+      "label": "Passport expiry date",
+      "required": true,
+      "placeholder": "2030-08-22",
+      "help": "Must be at least 6 months after your planned arrival",
+      "errors": {
+        "required": "Passport expiry is required",
+        "invalidFormat": "Use YYYY-MM-DD",
+        "tooEarly": "Passport must be valid at least 6 months after arrival"
+      }
+    },
+    "flight_number": {
+      "type": "flight",
+      "label": "Flight number",
+      "required": true,
+      "placeholder": "MH123",
+      "help": "Airline 2-letter code + flight number (e.g. MH123, AK456). No spaces.",
+      "errors": {
+        "required": "Flight number is required",
+        "invalidFormat": "Format: airline code + number (e.g. MH123). No spaces."
+      }
+    },
+    "arrival_date": {
+      "type": "date",
+      "label": "Arrival date",
+      "required": true,
+      "minDate": "2026-01-01",
+      "maxDate": "2027-12-31",
+      "placeholder": "2026-05-14",
+      "help": "Format: YYYY-MM-DD — the date you arrive in Malaysia",
+      "errors": {
+        "required": "Arrival date is required",
+        "invalidFormat": "Use YYYY-MM-DD",
+        "tooEarly": "MDAC must be filed within 3 days before arrival",
+        "tooLate": "Arrival date seems too far in the future"
+      }
+    },
+    "port_of_entry": {
+      "type": "text",
+      "label": "Port of entry",
+      "required": true,
+      "maxLength": 60,
+      "placeholder": "KUL (Kuala Lumpur)",
+      "help": "Airport IATA code or named land crossing",
+      "errors": {
+        "required": "Port of entry is required",
+        "tooLong": "Max 60 characters"
+      }
+    },
+    "accommodation": {
+      "type": "text",
+      "label": "Address in Malaysia",
+      "required": true,
+      "maxLength": 200,
+      "placeholder": "Hotel Example, Kuala Lumpur",
+      "help": "Hotel name and city is enough for tourism",
+      "errors": {
+        "required": "Address in Malaysia is required",
+        "tooLong": "Max 200 characters"
+      }
+    },
+    "email": {
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "maxLength": 80,
+      "placeholder": "name@example.com",
+      "help": "Confirmation is sent here",
+      "errors": {
+        "required": "Email is required",
+        "invalidFormat": "Must look like name@example.com",
+        "tooLong": "Email too long — max 80 characters"
+      }
+    }
+  }
+}

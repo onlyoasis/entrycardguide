@@ -1,0 +1,50 @@
+# UI strings for English. Keep keys flat and stable.
+# When you add a key here, also add it to zh.yaml.
+
+# Header / navigation
+brand_dot_label: "entrycardguide"
+nav_main_label: "Main navigation"
+language_switcher_label: "Language"
+
+# Official-link callout
+verified_badge: "Verified"
+official_url_label: "Official URL"
+run_by_label: "Run by"
+last_verified_label: "Last verified"
+archived_snapshot_label: "Archived snapshot"
+
+# Scam-site card
+not_official_stamp: "Not Official"
+scam_card_aria_prefix: "Screenshot of scam site"
+scam_card_aria_suffix: "marked NOT OFFICIAL"
+
+# Validator
+validator_eyebrow: "Tool · Pre-check your fields"
+validator_heading: "Before you paste anything into the official site"
+validator_intro: "Type your details below. We never send them anywhere. This runs 100% in your browser."
+validator_view_source: "View source"
+validator_to_verify: "to verify."
+validator_browser_only: "✓ 100% browser-side. No network calls. No tracking. View source on GitHub to audit."
+validator_rules_verified: "Rules last verified"
+validator_required_marker: " *"
+
+# Footer
+footer_brand_tagline: "Independent · Not a government agency"
+footer_built_with: "Built with Hugo"
+footer_last_deploy: "Last deploy"
+footer_local_preview: "Local preview"
+footer_view_source: "View source on GitHub"
+footer_money_disclosure: "We make money only from travel insurance, eSIM, and tour affiliate links on our articles. We do not take money from iVisa, any visa service, or credit card companies."
+footer_full_disclosure: "Full disclosure"
+
+# Article rail
+rail_source_of_truth: "Source of Truth"
+rail_last_verified: "Last verified"
+rail_source_commit: "Source commit"
+rail_archived_at: "Archived at"
+rail_money_from: "We make money from"
+rail_money_explainer: "Travel insurance, eSIM, and tour affiliate links at the bottom of this article."
+rail_full_disclosure: "Full disclosure"
+rail_we_dont_take: "We don't take"
+rail_we_dont_take_value: "iVisa · any visa service · credit card ads"
+rail_related: "Related"

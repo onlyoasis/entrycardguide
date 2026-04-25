@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}" class="bg-paper text-ink">
+<head>
+  {{- partial "head.html" . -}}
+</head>
+<body class="min-h-screen antialiased">
+  {{- partial "trust-bar.html" . -}}
+  {{- partial "header.html" . -}}
+  <main id="main" class="mx-auto max-w-container px-md">
+    {{- block "main" . }}{{- end }}
+  </main>
+  {{- partial "footer-commit.html" . -}}
+  {{- partial "scripts.html" . -}}
+</body>
+</html>

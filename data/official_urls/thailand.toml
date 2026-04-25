@@ -1,0 +1,41 @@
+# Thailand — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-04-22
+
+[tdac]
+url = "https://tdac.immigration.go.th"
+name = "Thailand Digital Arrival Card"
+agency = "Royal Thai Immigration Bureau"
+last_verified = "2026-04-22"
+archive_url = "https://web.archive.org/web/2026/https://tdac.immigration.go.th"
+notes = "Reserved under .go.th — only Thai government entities can register this domain suffix."
+
+[immigration_home]
+url = "https://www.immigration.go.th"
+name = "Thai Immigration Bureau (home)"
+agency = "Royal Thai Immigration Bureau"
+last_verified = "2026-04-22"
+
+# Known scam domains (for scam-site shortcode)
+# IMPORTANT: only add to this list after verifying the site is charging for the free TDAC
+# and cross-referencing with Thai government warnings or news coverage.
+[[scam_sites]]
+domain = "thailand-tdac.com"
+first_observed = "2025-11-01"
+evidence = "Charges $29 for free form; Bangkok Post reported March 2026"
+
+[[scam_sites]]
+domain = "official-tdac.org"
+first_observed = "2025-12-15"
+evidence = "Uses 'official' in domain but is a reseller; charges $49"
+
+[[scam_sites]]
+domain = "ivisa.com"
+path = "/thailand"
+first_observed = "2024-06-01"
+evidence = "Named by Thai Immigration Bureau in March 2026 public warning (Khaosod English)"
+
+[[scam_sites]]
+domain = "tdac-gov-th.net"
+first_observed = "2026-02-10"
+evidence = "Mimics .go.th domain with .net suffix; charges $75"

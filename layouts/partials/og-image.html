@@ -1,0 +1,56 @@
+{{- /*
+  OG image generator using Hugo's images.Text.
+  For each article, generates a {slug}.png at build time with:
+  - Paper background
+  - Verified-green 4px left rule
+  - Fraunces H1 (title)
+  - Instrument Sans meta (site name + date)
+
+  Renders once per page, persisted at /og/{slug}.png (see outputs config).
+  Zero runtime cost — all build-time.
+*/ -}}
+{{- $title := .Title | default .Site.Title }}
+{{- $slug := .File.BaseFileName | default "home" }}
+{{- $outputPath := printf "og/%s.png" $slug }}
+
+{{- $width := 1200 }}
+{{- $height := 630 }}
+
+{{- /* Paper background (#FAFAF7) — Hugo's image filters work on source images.
+       For a pure color bg we'd need to embed a 1x1 paper PNG in assets/images/og-base.png
+       and use images.Resize then overlay text.
+       See README for how to generate the base image. */ -}}
+
+{{- $base := resources.Get "images/og-base.png" }}
+{{- if $base }}
+  {{- $serifPath := "fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.woff2" }}
+  {{- $sansPath := "fonts/InstrumentSans-VariableFont_wdth,wght.woff2" }}
+
+  {{- $titleOpts := dict
+    "color" "#1A1A1A"
+    "size" 72
+    "linespacing" 8
+    "x" 80
+    "y" 180
+    "font" (resources.Get $serifPath)
+  }}
+
+  {{- $metaOpts := dict
+    "color" "#6B6B66"
+    "size" 24
+    "x" 80
+    "y" 520
+    "font" (resources.Get $sansPath)
+  }}
+
+  {{- $metaText := printf "entrycardguide · %s" (dateFormat "January 2, 2006" (.Lastmod | default now)) }}
+
+  {{- $og := $base.Filter
+    (images.Text $title $titleOpts)
+    (images.Text $metaText $metaOpts)
+  }}
+
+  {{- /* This file doesn't output anything visible — the image is referenced via its
+         RelPermalink in head.html <meta property="og:image"> */ -}}
+  <link rel="preload" as="image" href="{{ $og.RelPermalink }}">
+{{- end }}
