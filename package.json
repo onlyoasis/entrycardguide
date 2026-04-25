@@ -7,6 +7,7 @@
     "dev": "hugo server --gc --disableFastRender",
     "build": "hugo --gc --minify",
     "build:prod": "hugo --gc --minify --environment production",
+    "check:seo": "node scripts/check-seo-output.mjs",
     "clean": "rm -rf public resources"
   },
   "devDependencies": {

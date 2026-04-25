@@ -21,15 +21,15 @@
           2. an i18n/xx.yaml file
           3. (optional) translated content with .xx.md suffix
       */ -}}
-      {{- if gt (len .Site.Languages) 1 }}
+      {{- if gt (len hugo.Sites) 1 }}
       <details class="lang-switcher relative" role="group" aria-label="{{ i18n "language_switcher_label" }}">
         <summary class="cursor-pointer list-none flex items-baseline gap-1 text-ink hover:underline hover:underline-offset-4 [&::-webkit-details-marker]:hidden">
           <span>{{ .Site.Language.LanguageName }}</span>
           <span aria-hidden="true" class="text-muted text-xs">▾</span>
         </summary>
         <div class="absolute right-0 top-full mt-2 bg-paper border border-rule py-1 min-w-[140px] z-20 shadow-none">
-          {{- range .Site.Languages }}
-            {{- $lang := . }}
+          {{- range hugo.Sites }}
+            {{- $lang := .Language }}
             {{- if eq $lang.Lang $.Site.Language.Lang }}
               <span class="block px-3 py-2 text-ink font-medium bg-rule" aria-current="true">{{ $lang.LanguageName }}</span>
             {{- else }}

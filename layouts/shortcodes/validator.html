@@ -7,7 +7,7 @@
   Strings come from i18n/{lang}.yaml.
 */ -}}
 {{- $country := .Get "country" }}
-{{- $rules := index .Site.Data.rules $country }}
+{{- $rules := index hugo.Data.rules $country }}
 {{- if not $rules }}
   {{- errorf "validator shortcode: no rules found at data/rules/%s.json" $country }}
 {{- end }}

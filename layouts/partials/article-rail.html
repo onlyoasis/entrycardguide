@@ -1,6 +1,6 @@
 {{- $country := .Params.country }}
 {{- $urls := dict }}
-{{- if $country }}{{- $urls = index .Site.Data.official_urls $country }}{{- end }}
+{{- if $country }}{{- $urls = index hugo.Data.official_urls $country }}{{- end }}
 
 <div class="border-t-2 border-ink pt-md mb-xl">
   <h4 class="font-mono text-meta uppercase text-muted mb-3 font-medium">{{ i18n "rail_source_of_truth" }}</h4>

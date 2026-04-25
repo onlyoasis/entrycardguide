@@ -11,7 +11,7 @@
 {{- end }}
 {{- $country := index $parts 0 }}
 {{- $key := index $parts 1 }}
-{{- $data := index .Site.Data.official_urls $country }}
+{{- $data := index hugo.Data.official_urls $country }}
 {{- if not $data }}
   {{- errorf "official-link shortcode: no data at data/official_urls/%s.toml" $country }}
 {{- end }}

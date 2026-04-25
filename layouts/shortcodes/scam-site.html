@@ -9,7 +9,7 @@
 {{- $domain := .Get "domain" }}
 {{- $screenshot := .Get "screenshot" | default "" }}
 {{- $country := .Get "country" }}
-{{- $data := index .Site.Data.official_urls $country }}
+{{- $data := index hugo.Data.official_urls $country }}
 {{- if not $data }}
   {{- errorf "scam-site shortcode: no data for country %q" $country }}
 {{- end }}
