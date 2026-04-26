@@ -1,0 +1,46 @@
+# Indonesia — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-04-26
+
+[ecd]
+url = "https://ecd.beacukai.go.id"
+name = "Indonesia Electronic Customs Declaration (e-CD)"
+agency = "Direktorat Jenderal Bea dan Cukai (Indonesian Directorate General of Customs and Excise)"
+last_verified = "2026-04-26"
+archive_url = "https://web.archive.org/web/2026/https://ecd.beacukai.go.id"
+notes = "Reserved under .go.id — only Indonesian government entities can register this domain suffix. Required for all arriving travelers (including Indonesian citizens) since 2022. Free."
+
+[evoa]
+url = "https://molina.imigrasi.go.id"
+name = "Indonesia Electronic Visa on Arrival (e-VOA)"
+agency = "Direktorat Jenderal Imigrasi (Indonesian Directorate General of Immigration)"
+last_verified = "2026-04-26"
+notes = "For nationalities not covered by visa-free entry. Government fee: IDR 500,000 (~USD $35). Different from the e-CD which is free. Both may be required."
+
+[immigration_home]
+url = "https://www.imigrasi.go.id"
+name = "Indonesia Immigration (home)"
+agency = "Direktorat Jenderal Imigrasi"
+last_verified = "2026-04-26"
+
+# Known scam / middleman domains (for scam-site shortcode)
+[[scam_sites]]
+domain = "indonesia-customs.com"
+first_observed = "2024-05-10"
+evidence = "Charges $19 USD for the free e-CD form; uses customs branding without authorization"
+
+[[scam_sites]]
+domain = "indonesia-evoa.com"
+first_observed = "2024-08-22"
+evidence = "Charges $79 USD for the $35 USD government e-VOA, including a markup masquerading as 'service fee'"
+
+[[scam_sites]]
+domain = "ivisa.com"
+path = "/indonesia"
+first_observed = "2023-01-01"
+evidence = "Commercial middleman charging fees on top of Indonesia's free e-CD and government e-VOA"
+
+[[scam_sites]]
+domain = "bali-customs.org"
+first_observed = "2025-02-14"
+evidence = "Charges $25 USD for the free e-CD; Bali-targeted ads, mimics official-looking UI"

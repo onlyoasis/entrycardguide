@@ -1,0 +1,41 @@
+# Vietnam — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-04-26
+
+[evisa]
+url = "https://evisa.xuatnhapcanh.gov.vn"
+name = "Vietnam E-Visa (Official)"
+agency = "Vietnam Immigration Department (Cục Quản lý xuất nhập cảnh)"
+last_verified = "2026-04-26"
+archive_url = "https://web.archive.org/web/2026/https://evisa.xuatnhapcanh.gov.vn"
+notes = "Reserved under .gov.vn — only Vietnamese government entities can register this domain suffix. Government fee: USD $25 single-entry, USD $50 multi-entry. This is a real fee, not free. Middlemen charge 2-8x more for the same form."
+
+[immigration_home]
+url = "https://www.xuatnhapcanh.gov.vn"
+name = "Vietnam Immigration Department (home)"
+agency = "Vietnam Immigration Department"
+last_verified = "2026-04-26"
+
+# Known scam / overcharging middleman domains (for scam-site shortcode)
+# IMPORTANT: Vietnam e-visa scams overcharge for a real $25 fee, rather than charging
+# for a free service. Frame the warnings accordingly.
+[[scam_sites]]
+domain = "vietnam-evisa.org"
+first_observed = "2024-03-15"
+evidence = "Charges $89 USD for what is officially a $25 USD government fee; uses .org to mimic an official-looking domain"
+
+[[scam_sites]]
+domain = "evisa-vietnam.com"
+first_observed = "2024-06-10"
+evidence = "Charges $129 USD for $25 government e-visa; copies the official site's UI"
+
+[[scam_sites]]
+domain = "ivisa.com"
+path = "/vietnam"
+first_observed = "2023-01-01"
+evidence = "Commercial middleman charging $99-179 USD for $25 government e-visa"
+
+[[scam_sites]]
+domain = "vietnam-visa-online.com"
+first_observed = "2024-09-05"
+evidence = "Charges $149 USD; runs ads for 'visa on arrival' service that requires a sponsor letter — separate from the e-visa they bill for"

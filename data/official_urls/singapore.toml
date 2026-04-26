@@ -1,0 +1,39 @@
+# Singapore — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-04-26
+
+[sgac]
+url = "https://eservices.ica.gov.sg/sgarrivalcard/"
+name = "Singapore Arrival Card (SGAC)"
+agency = "Immigration & Checkpoints Authority (ICA)"
+last_verified = "2026-04-26"
+archive_url = "https://web.archive.org/web/2026/https://eservices.ica.gov.sg/sgarrivalcard/"
+notes = "Reserved under .gov.sg — only Singapore government entities can register this domain suffix. Required for all foreign visitors and PRs returning. Free."
+
+[ica_home]
+url = "https://www.ica.gov.sg"
+name = "Immigration & Checkpoints Authority (home)"
+agency = "Immigration & Checkpoints Authority"
+last_verified = "2026-04-26"
+
+# Known scam / middleman domains (for scam-site shortcode)
+[[scam_sites]]
+domain = "singapore-arrivalcard.com"
+first_observed = "2024-04-01"
+evidence = "Charges $19 USD for Singapore's free SGAC; uses ICA-style branding without authorization"
+
+[[scam_sites]]
+domain = "sgac-online.org"
+first_observed = "2024-09-15"
+evidence = "Reseller charging $29 USD for free form; mimics ICA layout"
+
+[[scam_sites]]
+domain = "ivisa.com"
+path = "/singapore"
+first_observed = "2023-01-01"
+evidence = "Commercial middleman charging fees for Singapore's free SGAC"
+
+[[scam_sites]]
+domain = "sg-arrival-official.net"
+first_observed = "2025-03-08"
+evidence = "Uses 'official' in name; charges $35 USD and is unaffiliated with ICA"

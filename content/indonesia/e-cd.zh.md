@@ -1,0 +1,90 @@
+---
+title: "印尼 e-CD 海关申报 2026 完整指南：官方网址、免费填写、巴厘岛入境"
+kicker: "印尼电子海关申报是免费的。这里是官方网址、所有字段、以及如何分辨真假。"
+description: "免费、独立的印尼官方 e-CD 海关申报中文指南。官方网址 ecd.beacukai.go.id，每个字段逐项讲解，巴厘岛/雅加达入境必填。"
+date: 2026-04-26
+lastmod: 2026-04-26
+country: "indonesia"
+weight: 10
+keywords: ["印尼海关申报", "印尼 e-CD", "巴厘岛海关表", "印尼入境申报", "印尼海关在线", "iVisa 印尼"]
+faq:
+  - q: "印尼 e-CD 要收费吗？"
+    a: "不收。e-CD 是免费的。印尼海关总署不为它收费。官方网址是 ecd.beacukai.go.id，任何收费都来自中介。"
+  - q: "印尼 e-CD 的官方网址是什么？"
+    a: "唯一官方网址是 ecd.beacukai.go.id。.go.id 后缀只对印尼政府机构开放。indonesia-customs.com 或 bali-customs.org 这类站点都是中介，不是官方。"
+  - q: "我去巴厘岛也要填 e-CD 吗？"
+    a: "要。印尼所有入境点都要求 e-CD，包括巴厘岛（DPS / 努拉莱国际机场）。抵达前 3 天内填一次，整趟行程只填一次。"
+  - q: "e-CD 和落地签 e-VOA 是同一回事吗？"
+    a: "不是，两者分开。e-CD 是海关申报（免费，所有入境者必填）。e-VOA 是签证，针对不享受免签的国家公民（政府费约 $35 美元，在 molina.imigrasi.go.id 申请）。你的行程可能两者都需要。"
+  - q: "什么时候填 e-CD？"
+    a: "抵达前 3 天内。再早提交，官方站会拒绝。"
+  - q: "印尼公民也要填 e-CD 吗？"
+    a: "要。e-CD 适用于所有入境印尼的人 —— 公民、永久居民、外国旅客。印尼公民带身份证（KTP）登记。"
+  - q: "iVisa 是印尼海关官方网站吗？"
+    a: "不是。iVisa 是商业中介，对印尼免费的 e-CD 和政府 e-VOA 都加价收费。它与印尼政府没有任何关联。"
+  - q: "我填了 e-CD 但没收到确认邮件。"
+    a: "先看垃圾邮件箱。1 小时后仍然没有就重新提交。重复提交无害，最近一份为准。"
+---
+
+{{< official-link site="indonesia.ecd" >}}
+
+## e-CD 到底是什么
+
+e-CD（电子海关申报）是印尼海关要求每个入境者填的数字表单。用于申报你是否携带超额现金、违禁品或商业货物。2022 年取代了纸质海关申报表。
+
+它是免费的。
+
+没有人能向你收这笔钱。唯一的合法目的地是 `ecd.beacukai.go.id`，这个 `.go.id` 后缀只对印尼政府机构开放。
+
+## 这个不是签证
+
+e-CD **不是签证**。它是海关申报，与你的签证状态无关，所有入境者都要填。如果你是印尼免签 169 国之一的公民（旅游目的），你只需要 e-CD 就够了。如果你需要签证，单独在 `molina.imigrasi.go.id` 申请 **e-VOA**（电子落地签），政府费用约 $35 美元。两者是不同的表、不同的域名、不同的机构。
+
+## 问题在哪
+
+Google 搜 *"巴厘岛海关表"* 或 *"印尼入境表"*，会看到付费广告，对免费的 e-CD 收 19 到 79 美元。其中一些代你提交了真表，另一些提交了不一样的表（有时是你没要求的 e-VOA），或干脆什么都没提交。
+
+印尼海关总署已发布公开声明：**唯一授权的 e-CD 站点是 `ecd.beacukai.go.id`**，无需任何费用。
+
+## 在动任何表单之前
+
+看一眼地址栏。官方网址是 <mark>ecd.beacukai.go.id</mark>，没有别的。
+
+不是 `indonesia-customs.com`。不是 `bali-customs.org`。不是 `indonesia-evoa.com`。任何人都能注册 `.com` 或 `.org`。只有印尼政府机构能注册 `.go.id`。
+
+{{< validator country="indonesia" >}}
+
+## 官方表单到底问哪些字段
+
+e-CD 大约 9 个字段，分布在 3 部分：旅客身份、行程信息、海关申报。
+
+不需要上传照片。
+
+不需要付款。
+
+如果一个站点要你做这两件事中的任何一件，你就不在官方站点上。
+
+## 已知**不是** e-CD 的网站
+
+下面这些站点都对免费的 e-CD 收费。其中一些代你提交了真表，另一些没有。
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+{{< scam-site country="indonesia" domain="indonesia-customs.com" >}}
+{{< scam-site country="indonesia" domain="bali-customs.org" >}}
+{{< scam-site country="indonesia" domain="ivisa.com" >}}
+{{< scam-site country="indonesia" domain="indonesia-evoa.com" >}}
+</div>
+
+截图于 2026 年 4 月。存档可在 [archive.org](https://web.archive.org/) 查询。
+
+## 如何分辨任何 e-CD 站点不是真站
+
+1. **域名以 `.go.id` 结尾吗？** 不是就不是印尼政府站。没商量。
+2. **要付款吗？** e-CD 是免费的，收费的就是中介。
+3. **要上传护照照片吗？** 官方 e-CD 不会要求。
+4. **URL 里有 "bali"、"indonesia"、"customs"、"official" 但没有 `.go.id`？** 钓饵。
+5. **页面有 testimonial、信任徽章、倒计时？** 政府表单一律没有。
+
+---
+
+*本指南由 entrycardguide 维护。我们与印尼海关总署或任何旅行服务都没有任何关联。我们的全部收入来自本页底部的旅行保险和 eSIM 联盟链接。*
