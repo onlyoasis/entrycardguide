@@ -29,6 +29,10 @@
     <div class="prose prose-lg max-w-none">
       {{ .Content }}
     </div>
+
+    {{- if .Section }}
+    {{- partial "affiliate-footer.html" . -}}
+    {{- end }}
   </div>
 
   <aside class="hidden lg:block sticky top-8 self-start max-w-rail text-small">

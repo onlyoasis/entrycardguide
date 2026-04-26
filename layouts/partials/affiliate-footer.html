@@ -1,0 +1,37 @@
+{{- $affiliate := site.Params.affiliate -}}
+{{- $safetywing := "" -}}
+{{- $airalo := "" -}}
+{{- with $affiliate -}}
+  {{- with .safetywing_url -}}{{- $safetywing = . -}}{{- end -}}
+  {{- with .airalo_url -}}{{- $airalo = . -}}{{- end -}}
+{{- end -}}
+
+{{- if or $safetywing $airalo }}
+<section class="mt-xl pt-lg border-t border-rule" aria-labelledby="affiliate-title">
+  <div class="text-meta text-muted font-mono uppercase mb-2">{{ i18n "affiliate_eyebrow" }}</div>
+  <h2 id="affiliate-title" class="font-serif font-medium mb-3" style="font-size: 28px; font-variation-settings: 'opsz' 144;">{{ i18n "affiliate_heading" }}</h2>
+  <p class="text-small text-muted leading-relaxed mb-md">{{ i18n "affiliate_intro" }}</p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+    {{- with $safetywing }}
+    <a href="{{ . }}" rel="sponsored noopener noreferrer" class="block border border-rule p-md no-underline hover:border-ink">
+      <span class="block text-meta text-muted font-mono uppercase mb-2">{{ i18n "affiliate_safetywing_label" }}</span>
+      <strong class="block text-ink mb-2">{{ i18n "affiliate_safetywing_heading" }}</strong>
+      <span class="block text-small text-muted leading-relaxed mb-3">{{ i18n "affiliate_safetywing_body" }}</span>
+      <span class="text-small text-ink underline underline-offset-2">{{ i18n "affiliate_safetywing_cta" }}</span>
+    </a>
+    {{- end }}
+
+    {{- with $airalo }}
+    <a href="{{ . }}" rel="sponsored noopener noreferrer" class="block border border-rule p-md no-underline hover:border-ink">
+      <span class="block text-meta text-muted font-mono uppercase mb-2">{{ i18n "affiliate_airalo_label" }}</span>
+      <strong class="block text-ink mb-2">{{ i18n "affiliate_airalo_heading" }}</strong>
+      <span class="block text-small text-muted leading-relaxed mb-3">{{ i18n "affiliate_airalo_body" }}</span>
+      <span class="text-small text-ink underline underline-offset-2">{{ i18n "affiliate_airalo_cta" }}</span>
+    </a>
+    {{- end }}
+  </div>
+
+  <p class="text-xs text-muted leading-relaxed mt-md">{{ i18n "affiliate_disclosure" }}</p>
+</section>
+{{- end }}

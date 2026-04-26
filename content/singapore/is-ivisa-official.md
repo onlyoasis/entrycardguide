@@ -86,4 +86,4 @@ The middleman may not have actually submitted anything (rare for iVisa, more com
 
 ---
 
-*This guide is maintained by entrycardguide. We have no affiliation with Singapore's Immigration & Checkpoints Authority or any travel service. Our only revenue is from travel insurance and eSIM affiliate links at the bottom of this page. Read more on our [about page](/about/).*
+*This guide is maintained by entrycardguide. We have no affiliation with Singapore's Immigration & Checkpoints Authority or any travel service. Our current affiliate revenue comes from clearly disclosed travel insurance links on eligible pages. Read more on our [about page](/about/).*

@@ -127,6 +127,10 @@ defaultContentLanguageInSubdir = false
   [params.author]
     name = "entrycardguide"
 
+  [params.affiliate]
+    safetywing_url = "https://safetywing.com/?referenceID=26517368&utm_source=26517368&utm_medium=Ambassador"
+    airalo_url = ""
+
 [markup]
   [markup.goldmark.renderer]
     unsafe = true

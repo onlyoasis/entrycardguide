@@ -83,4 +83,4 @@ Screenshots captured April 2026. Archived snapshots available via [archive.org](
 
 ---
 
-*This guide is maintained by entrycardguide. We have no affiliation with the Vietnam Immigration Department or any travel service. Our only revenue is from travel insurance and eSIM affiliate links at the bottom of this page.*
+*This guide is maintained by entrycardguide. We have no affiliation with the Vietnam Immigration Department or any travel service. Our current affiliate revenue comes from clearly disclosed travel insurance links on eligible pages.*

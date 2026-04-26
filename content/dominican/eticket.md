@@ -96,4 +96,4 @@ Check spam. If still missing after 1 hour, refile. Duplicate submissions are har
 
 ---
 
-*This guide is maintained by entrycardguide. We have no affiliation with DGM or any travel service. Our only revenue is from travel insurance and eSIM affiliate links at the bottom of this page.*
+*This guide is maintained by entrycardguide. We have no affiliation with DGM or any travel service. Our current affiliate revenue comes from clearly disclosed travel insurance links on eligible pages.*

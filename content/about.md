@@ -34,10 +34,11 @@ We could not figure out why no one had built the obvious thing: a free, independ
 
 ## How we make money
 
-Two affiliate links at the bottom of each guide:
+We currently use one affiliate link at the bottom of eligible guides:
 
-1. **Travel insurance.** When you click through and buy a policy, we get a small commission from the insurer. The price you pay is the same as going direct.
-2. **eSIM data plans.** Same model. You get connectivity on arrival, we get a small cut.
+1. **Travel insurance through SafetyWing.** When you click through and buy a policy, we get a small commission from SafetyWing. The price you pay is the same as going direct.
+
+We may add eSIM links later, but we will only show them when the partner link is live and clearly disclosed.
 
 That's it. That is the entire business model.
 
@@ -83,4 +84,4 @@ We aim to respond within 48 hours and ship a fix within a week, faster if it's s
 
 A small team of travelers and developers. We have all paid a middleman at least once before figuring out we did not have to. This site is our way of saving the next person from the same mistake.
 
-If you find this useful and want to support it, click through one of the affiliate links at the bottom of any guide the next time you book travel. That keeps the site running. That is the entire ask.
+If you find this useful and want to support it, click through the affiliate link at the bottom of any eligible guide the next time you buy travel insurance. That keeps the site running. That is the entire ask.

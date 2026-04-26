@@ -37,4 +37,4 @@ Short answer: no. Longer answer, with the sites that keep showing up in Google's
 
 We are not the Royal Thai Immigration Bureau. We are not a travel agency. We do not file your TDAC for you, and we would not take your money if you asked us to.
 
-Our only revenue is from travel insurance and eSIM affiliate links at the bottom of each page. We have never taken money from iVisa or any visa middleman, and we will not. That is the entire business model. Read more on our [about page](/about/).
+Our current affiliate revenue comes from clearly disclosed travel insurance links in eligible guides. We have never taken money from iVisa or any visa middleman, and we will not. That is the entire business model. Read more on our [about page](/about/).
