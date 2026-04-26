@@ -1,11 +1,27 @@
 ---
-title: "马来西亚 MDAC，不收费的解释。"
+title: "马来西亚 MDAC 数字入境卡 2026 完整指南：官方网址、免费填写、防中介诈骗"
 kicker: "马来西亚数字入境卡是免费的。这里是官方移民局网址、所有字段，以及如何分辨真假。"
-description: "免费、独立的马来西亚 MDAC 中文指南。官方网址、假站警示、起飞前字段核对工具。"
+description: "免费、独立的马来西亚 MDAC 中文指南。官方网址 imigresen-online.imi.gov.my，每个字段逐项讲解，永远免费。"
 date: 2026-04-24
-lastmod: 2026-04-25
+lastmod: 2026-04-26
 country: "malaysia"
 weight: 10
+keywords: ["马来西亚 MDAC", "马来西亚电子入境卡", "马来西亚数字入境卡", "MDAC 怎么填", "iVisa 马来西亚"]
+faq:
+  - q: "MDAC 要收费吗？"
+    a: "不收。马来西亚移民局不为 MDAC 收费。官方网址是 imigresen-online.imi.gov.my/mdac/main，永远免费。"
+  - q: "MDAC 的官方网址是什么？"
+    a: "唯一官方网址是 imigresen-online.imi.gov.my/mdac/main。.gov.my 后缀只对马来西亚政府机构开放。malaysia-mdac.com 或 mdac-official.net 这类站点都是中介，不是官方。"
+  - q: "谁可以豁免 MDAC？"
+    a: "新加坡公民、回国的马来西亚公民、从陆路入境的文莱和泰国护照持有人、特定外交护照持有人、不入境的过境旅客、马来西亚永久居民（MyPR）。其他所有人都必须填。"
+  - q: "MDAC 等同于马来西亚签证吗？"
+    a: "不。两者分开。MDAC 是入境声明。签证是入境授权。许多国籍（美国、英国、欧盟、日本）享有免签入境马来西亚，只需要填 MDAC；其他需要签证 + MDAC。"
+  - q: "什么时候填 MDAC？"
+    a: "抵达前 3 天内。再早提交会被拒绝。"
+  - q: "入境时一定要出示 MDAC 确认吗？"
+    a: "不一定。官员会用护照查询你。但把确认邮件留在手机上是零成本的安全网，万一系统出问题可以救急。"
+  - q: "iVisa 是 MDAC 官方网站吗？"
+    a: "不是。iVisa 是为免费 MDAC 收费的商业中介。它与马来西亚移民局没有任何关联。"
 ---
 
 {{< official-link site="malaysia.mdac" >}}

@@ -1,11 +1,27 @@
 ---
-title: "The Malaysia MDAC, explained without a fee."
+title: "Malaysia MDAC: Official Site, Free Digital Arrival Card, Scam-Free Guide (2026)"
 kicker: "The Malaysia Digital Arrival Card is free. Here is the official Immigration Department site, every field it asks, and how to tell real from fake."
-description: "Free, independent guide to the Malaysia Digital Arrival Card (MDAC). Official URL, scam-site warnings, pre-flight field checker."
+description: "Free, independent 2026 guide to the Malaysia Digital Arrival Card (MDAC). Official URL imigresen-online.imi.gov.my, every field explained, no fees."
 date: 2026-04-24
-lastmod: 2026-04-24
+lastmod: 2026-04-26
 country: "malaysia"
 weight: 10
+keywords: ["malaysia digital arrival card", "MDAC", "malaysia MDAC official", "imigresen online MDAC", "is ivisa official malaysia", "malaysia immigration form"]
+faq:
+  - q: "Is there a fee for the Malaysia MDAC?"
+    a: "No. The Malaysian Immigration Department does not charge for the MDAC. The official site is imigresen-online.imi.gov.my/mdac/main and it is always free."
+  - q: "What is the official MDAC website?"
+    a: "The only official site is imigresen-online.imi.gov.my/mdac/main. The .gov.my suffix is restricted to Malaysian government entities. Sites like malaysia-mdac.com or mdac-official.net are middlemen, not official."
+  - q: "Who is exempt from filing the MDAC?"
+    a: "Singaporean citizens, returning Malaysian citizens, Brunei and Thailand passport holders entering by land, certain diplomatic passport holders, transit-only passengers who do not clear immigration, and Malaysian permanent residents (MyPR holders). Everyone else must file."
+  - q: "Is the MDAC the same as a Malaysian visa?"
+    a: "No. They are separate. The MDAC is an arrival declaration. A visa is a separate authorization to enter. Many nationalities (US, UK, EU, Japan) get visa-free entry to Malaysia and only need the MDAC. Others need both."
+  - q: "When should I file the MDAC?"
+    a: "Within 3 days before arrival. Earlier submissions are rejected by the official site."
+  - q: "Do I need to show the MDAC confirmation at immigration?"
+    a: "Not strictly required. Officers look you up by passport. But keeping the confirmation email open on your phone is a zero-cost safety net if their system has issues."
+  - q: "Is iVisa the official MDAC site?"
+    a: "No. iVisa is a commercial middleman charging fees for the free MDAC. It is not affiliated with Jabatan Imigresen Malaysia."
 ---
 
 {{< official-link site="malaysia.mdac" >}}

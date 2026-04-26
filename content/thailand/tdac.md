@@ -1,11 +1,27 @@
 ---
-title: "The Thailand Digital Arrival Card, explained without a fee."
+title: "Thailand TDAC: Official Site, Free Guide, How to Avoid Scams (2026)"
 kicker: "10% of foreign arrivals to Thailand in 2026 paid a scam site to submit a free form. Here is the official site, every field it asks, and how to tell real from fake."
-description: "Free, independent guide to Thailand's TDAC (Digital Arrival Card). Official URL, scam-site warnings, pre-flight field checker."
+description: "Free, independent 2026 guide to Thailand's Digital Arrival Card (TDAC). Official URL, every field explained, scam-site warnings, no fees."
 date: 2026-04-22
-lastmod: 2026-04-22
+lastmod: 2026-04-26
 country: "thailand"
 weight: 10
+keywords: ["thailand digital arrival card", "TDAC", "thailand TDAC official", "is ivisa official thailand", "thailand arrival card free", "tdac.immigration.go.th"]
+faq:
+  - q: "Is there a fee for the TDAC?"
+    a: "No. Anyone charging you for the TDAC is a middleman. The Royal Thai Immigration Bureau does not collect any payment for this form. The official site is tdac.immigration.go.th and it is always free."
+  - q: "What is the official TDAC website?"
+    a: "The only official TDAC website is tdac.immigration.go.th. Domains ending in .go.th are reserved for Thai government entities. Any site without that suffix is not official."
+  - q: "Can I fill the TDAC on my phone?"
+    a: "Yes. The official site is mobile-friendly. Filling on a laptop is recommended because the character limits on some fields are tight and typing with a keyboard reduces errors."
+  - q: "When should I file the TDAC?"
+    a: "Within 3 days before your arrival in Thailand. Earlier than that, the official site will reject the submission."
+  - q: "I already paid a middleman site. Can I get a refund?"
+    a: "Contact your credit card issuer and dispute the charge as 'service not rendered' (if they did not actually file your form) or 'deceptive practice' (if they filed but charged a fee for a free service). Success rates are highest when filed within 60 days of the charge."
+  - q: "I filled out the form but didn't get a confirmation email."
+    a: "Check spam. If still missing after 1 hour, submit again. The official site is idempotent — duplicate submissions are harmless and the most recent one applies."
+  - q: "Is iVisa the official TDAC site?"
+    a: "No. iVisa is a commercial visa middleman, not affiliated with the Royal Thai Immigration Bureau. Thai authorities publicly named iVisa as a non-official site charging fees for the free TDAC in March 2026."
 ---
 
 {{< official-link site="thailand.tdac" >}}

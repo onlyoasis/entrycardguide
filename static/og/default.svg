@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- Paper background -->
+  <rect width="1200" height="630" fill="#FAFAF7"/>
+
+  <!-- Top rule, ink color -->
+  <rect x="80" y="80" width="1040" height="2" fill="#1A1A1A"/>
+
+  <!-- Eyebrow text, mono uppercase, muted -->
+  <text x="80" y="140" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="20" letter-spacing="3" fill="#6B6B66">INDEPENDENT &#183; FREE &#183; ANTI-SCAM</text>
+
+  <!-- Big serif headline -->
+  <text x="80" y="270" font-family="Georgia, serif" font-size="84" font-weight="500" fill="#1A1A1A">Digital arrival cards,</text>
+  <text x="80" y="370" font-family="Georgia, serif" font-size="84" font-weight="500" fill="#1A1A1A">explained without a fee.</text>
+
+  <!-- Subhead -->
+  <text x="80" y="450" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#6B6B66">Thailand TDAC &#183; Mexico FMM &#183; Dominican Republic E-Ticket &#183; Malaysia MDAC</text>
+
+  <!-- Brand mark with green dot -->
+  <text x="80" y="560" font-family="Georgia, serif" font-size="42" font-weight="500" fill="#1A1A1A">entrycardguide</text>
+  <circle cx="395" cy="548" r="10" fill="#0F7356"/>
+
+  <!-- Verified badge in top-right -->
+  <g transform="translate(1020, 110)">
+    <rect width="100" height="40" rx="4" ry="4" fill="#0F7356"/>
+    <text x="50" y="26" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="14" letter-spacing="2" fill="#FAFAF7" text-anchor="middle">VERIFIED</text>
+  </g>
+</svg>

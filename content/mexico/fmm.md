@@ -1,11 +1,25 @@
 ---
-title: "The Mexico FMM, explained without a fee."
+title: "Mexico FMM-E: Official Site, Free Online Form, Scam-Free Guide (2026)"
 kicker: "Mexico's electronic entry permit is free. Here is the official INM site, every field it asks, and how to tell real from fake."
-description: "Free, independent guide to Mexico's Forma Migratoria Múltiple Electrónica (FMM-E). Official URL, scam-site warnings, pre-flight field checker."
+description: "Free, independent 2026 guide to Mexico's Forma Migratoria Múltiple Electrónica (FMM-E). Official INM URL, every field explained, no fees."
 date: 2026-04-24
-lastmod: 2026-04-24
+lastmod: 2026-04-26
 country: "mexico"
 weight: 10
+keywords: ["mexico FMM", "FMM electronic", "FMM-E", "mexico tourist card", "mexico immigration form", "INM FMM official", "is ivisa official mexico"]
+faq:
+  - q: "Is there a fee for the Mexico FMM?"
+    a: "No. Filing the FMM-E on the official INM site (inm.gob.mx) is free. The DNI fee (Derecho de No Inmigrante) is a separate government charge, not an FMM fee, and it is already bundled into most airline tickets."
+  - q: "What is the official FMM website?"
+    a: "The only official site is inm.gob.mx/fmme/. Domains ending in .gob.mx are reserved for Mexican government entities. Sites like mexico-fmm.com or fmm-mexico.org are middlemen, not official."
+  - q: "Do I even need an FMM if I'm flying to Mexico?"
+    a: "Many air travelers arriving at major airports (CUN, MEX, GDL, TIJ, PVR, SJD and others) get a passport stamp instead of a separate FMM. If you arrive by land, by sea, or at a smaller airport, you do need the FMM-E. When unsure, fill it. A filed FMM-E is never a problem at the border."
+  - q: "When should I file the FMM-E?"
+    a: "Any time before arrival. The form accepts submissions up to 30 days out for most port-of-entry combinations. Earlier than that, it may reject."
+  - q: "Is iVisa the official FMM site?"
+    a: "No. iVisa is a commercial middleman. It charges a fee to submit the free FMM-E on your behalf. It is not affiliated with Mexico's INM."
+  - q: "I lost the FMM stub the border officer gave me. What do I do?"
+    a: "You will pay a small replacement fee at the airport when you exit Mexico. Bring proof of entry (boarding pass, hotel receipt) so customs can verify your dates."
 ---
 
 {{< official-link site="mexico.fmm" >}}

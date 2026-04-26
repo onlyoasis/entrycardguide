@@ -1,11 +1,25 @@
 ---
-title: "The Dominican Republic E-Ticket, explained without a fee."
+title: "Dominican Republic E-Ticket: Official Site, Free Form, No Fees (2026)"
 kicker: "The DR E-Ticket is free. Here is the official DGM site, every field it asks, and how to tell real from fake."
-description: "Free, independent guide to the Dominican Republic E-Ticket. Official URL, scam-site warnings, pre-flight field checker."
+description: "Free, independent 2026 guide to the Dominican Republic E-Ticket. Official URL eticket.migracion.gob.do, every field explained, no fees."
 date: 2026-04-24
-lastmod: 2026-04-24
+lastmod: 2026-04-26
 country: "dominican"
 weight: 10
+keywords: ["dominican republic e-ticket", "DR e-ticket", "dominican e-ticket official", "punta cana arrival form", "is ivisa official dominican republic", "eticket.migracion.gob.do"]
+faq:
+  - q: "Is there a fee for the Dominican Republic E-Ticket?"
+    a: "No. The DGM does not charge for the E-Ticket. The official site is eticket.migracion.gob.do and it is always free. Any fee you see is from a middleman."
+  - q: "What is the official DR E-Ticket website?"
+    a: "The only official site is eticket.migracion.gob.do. Domains ending in .gob.do are reserved for Dominican government entities. Sites like eticket-dominican.com or dr-eticket-official.net are middlemen."
+  - q: "Do I need an E-Ticket for both arrival and departure?"
+    a: "Yes, but only one form. When you fill the E-Ticket for arrival, the same QR code covers your departure. If your departure flight changes significantly, you can update or refile."
+  - q: "Can I fill one E-Ticket for my whole family?"
+    a: "Yes. The E-Ticket supports group submissions. One adult fills the form and adds each family member as an additional traveler. Everyone travels under one QR code. Keep it on the lead traveler's phone."
+  - q: "When should I file the E-Ticket?"
+    a: "Within 72 hours of arrival. The DGM recommends 24 to 48 hours before arrival. Earlier than the 72-hour window is allowed but flight details may not be final yet."
+  - q: "Is iVisa the official DR E-Ticket site?"
+    a: "No. iVisa is a commercial middleman charging fees for the free DR E-Ticket. It is not affiliated with the Dirección General de Migración."
 ---
 
 {{< official-link site="dominican.eticket" >}}

@@ -1,11 +1,25 @@
 ---
-title: "多米尼加 E-Ticket，不收费的解释。"
+title: "多米尼加 E-Ticket 入境卡 2026 完整指南：官方网址、免费填写、防中介诈骗"
 kicker: "多米尼加的 E-Ticket 是免费的。这里是官方 DGM 网址、所有字段，以及如何分辨真假。"
-description: "免费、独立的多米尼加 E-Ticket 中文指南。官方网址、假站警示、起飞前字段核对工具。"
+description: "免费、独立的多米尼加 E-Ticket 中文指南。官方网址 eticket.migracion.gob.do，每个字段逐项讲解，永远免费。"
 date: 2026-04-24
-lastmod: 2026-04-25
+lastmod: 2026-04-26
 country: "dominican"
 weight: 10
+keywords: ["多米尼加 E-Ticket", "多米尼加入境卡", "蓬塔卡纳入境表", "DR E-Ticket", "iVisa 多米尼加"]
+faq:
+  - q: "多米尼加 E-Ticket 要收费吗？"
+    a: "不收。DGM 不为 E-Ticket 收费。官方网址是 eticket.migracion.gob.do，永远免费。你看到的任何收费都来自中介。"
+  - q: "DR E-Ticket 的官方网址是什么？"
+    a: "唯一官方网址是 eticket.migracion.gob.do。.gob.do 后缀只对多米尼加政府机构开放。eticket-dominican.com 或 dr-eticket-official.net 这类站点都是中介。"
+  - q: "入境和离境都要填 E-Ticket 吗？"
+    a: "都要，但只填一份。你为入境填的 E-Ticket 二维码同时覆盖离境。如果离境航班有较大变更，可以更新或重填。"
+  - q: "我能为全家填一份 E-Ticket 吗？"
+    a: "可以。E-Ticket 支持团体提交。一名成年人填表，添加每位家庭成员作为额外旅客。一家人共用同一个二维码出行。把它存在带头者的手机上。"
+  - q: "什么时候填 E-Ticket？"
+    a: "抵达前 72 小时内。DGM 推荐抵达前 24 至 48 小时。再早一些也可以，但航班信息可能还没敲定。"
+  - q: "iVisa 是 DR E-Ticket 官方网站吗？"
+    a: "不是。iVisa 是为免费的多米尼加 E-Ticket 收费的商业中介。它与多米尼加移民局总局没有任何关联。"
 ---
 
 {{< official-link site="dominican.eticket" >}}
