@@ -70,21 +70,29 @@ content/thailand/
 
 ## 当前任务清单
 
-| # | 任务 | 文件数 | 估时 | 难度 |
+下表里**已完成 ✅** 的任务是给后续贡献者参考用的（不要重做）。**待做 🔵** 是开放工单，你可以挑一个 PR。
+
+| # | 任务 | 状态 | 估时 | 难度 |
 |---|---|---|---|---|
-| [01](./tasks/01-ivisa-articles.md) | "Is iVisa official" 详解（3 国 × 中英）| 6 篇 | 90 分钟 | ⭐ |
-| [02](./tasks/02-how-to-fill-articles.md) | 字段填写详解（3 新 + 4 旧的中文） | 10 篇 | 5 小时 | ⭐⭐ |
-| [03](./tasks/03-scam-screenshots.md) | 假站真实截图（7 国 × 4 站） | 28 张图 | 3 小时 | ⭐ |
-| [04](./tasks/04-google-search-console.md) | 提交 sitemap 给 Google | 配置 | 10 分钟 | ⭐ |
+| 01 | "Is iVisa official" 详解（V/I/S 三国）| ✅ 已完成 | — | — |
+| 02 | 字段填写详解（10 篇）| ✅ 已完成 | — | — |
+| [03](./tasks/03-scam-site-screenshots.md) | 假站真实截图（16 张）| 🔵 待做 | 1.5–3 小时 | ⭐ |
+| [04](./tasks/04-affiliate-links-revenue-integrity.md) | 联盟链接 / 收入完整性 | 🔵 待做 | 2–4 小时 | ⭐⭐ |
+| [05](./tasks/05-bing-webmaster-tools.md) | Bing Webmaster Tools 提交 | 🔵 待做 | 10 分钟 | ⭐ |
+| [06](./tasks/06-changelog-and-freshness.md) | 变更日志 + 新鲜度信号 | 🔵 待做 | 3–5 小时 | ⭐⭐ |
+| [07](./tasks/07-about-methodology-section.md) | About 页方法论部分（信任叙事核心）| 🔵 待做 | 1.5 小时 | ⭐⭐ |
 
 ---
 
 ## 你需要的访问权限
 
-| 任务 | 仓库 push | Cloudflare | Google Search Console |
+| 任务 | 仓库 PR | Cloudflare | 第三方账号 |
 |---|---|---|---|
-| 01, 02, 03 | 开 PR 即可（不需要直接 push） | 不需要 | 不需要 |
-| 04 | 不需要 | 不需要 | **需要**（仅站长本人能做） |
+| 03（截图）| ✓ | 不需要 | 可选：第三方截图服务的免费 tier |
+| 04（联盟）| ✓ | 需要 dashboard 权限设置 env vars | **需要**（站长 SafetyWing + Airalo 申请） |
+| 05（Bing） | 不需要 PR | 可选：DNS API token（如选手动验证）| **需要**（站长的 Microsoft 账号） |
+| 06（变更日志）| ✓ | 不需要 | 不需要 |
+| 07（方法论）| ✓ | 不需要 | 不需要 |
 
 ---
 
