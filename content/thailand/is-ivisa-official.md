@@ -42,35 +42,27 @@ No.
 
 The `.com` suffix is an open top-level domain. Anyone can register it. The official TDAC is reserved under `.go.th`, a restricted suffix that only Thai government entities can register.
 
-`thailand-tdac.com` is a reseller site. It charges roughly $29 USD to submit the free form on your behalf. It first appeared in our records in November 2025. It does typically file the real TDAC with your data, so you usually arrive with a valid QR code. You just paid $29 for something that takes 8 minutes and costs nothing.
-
-### Is `official-tdac.org` the official site?
-
-No. The word "official" in a domain name means nothing.
-
-`.org` is also an open top-level domain. The Thai government does not operate any `.org` domain for the TDAC. This site charges roughly $49 USD and has been observed serving a copy of the real TDAC form inside an iframe, then adding payment on top.
-
-First observed in our records: December 2025.
-
-### Is `tdac-gov-th.net` the official site?
-
-No, and this one is the most aggressive impersonator on the current list.
-
-The domain is engineered to look like `tdac.gov.th` or `tdac.immigration.go.th` at a glance. It is neither. `.net` is open. `tdac-gov-th` is just a hyphenated string, not a subdomain of any government entity. The Thai government has no `tdac.gov.th` domain. The real one is `tdac.immigration.go.th`.
-
-This site charges roughly $75 USD, the highest fee we have documented. First observed: February 2026.
+`thailand-tdac.com` is a commercial reseller. It typically files the real TDAC with your data, so you usually arrive with a valid QR code. You paid for something that takes 8 minutes and costs nothing on the official site.
 
 ### Is `ivisa.com/thailand` the official site?
 
 No, same as the short answer above. iVisa is a legal commercial middleman, not a Thai government service. See the full explanation at the top of this page.
+
+### What about other lookalike domains?
+
+Periodically you'll see domains like `official-tdac.org`, `tdac-gov-th.net`, or other variants that try to mimic an official-looking name. Pattern recognition is more valuable than a fixed list:
+
+- **Any domain not ending in `.go.th` is not the Thai government.**
+- **Any site charging a fee is not the official TDAC.** The Thai immigration bureau collects no payment for this form.
+- **Any site asking for a passport photo upload is not the official TDAC.** The official form is text fields only.
+
+If a domain meets any of those criteria, treat it as untrusted regardless of whether it is on a published warning list.
 
 ## The scam gallery
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
 {{< scam-site country="thailand" domain="ivisa.com" >}}
 {{< scam-site country="thailand" domain="thailand-tdac.com" >}}
-{{< scam-site country="thailand" domain="official-tdac.org" >}}
-{{< scam-site country="thailand" domain="tdac-gov-th.net" >}}
 </div>
 
 All of the above have been documented charging fees for the free TDAC. Screenshots captured April 2026 and archived on [Wayback Machine](https://web.archive.org/).

@@ -1,10 +1,17 @@
 {{- /*
   Usage: {{< scam-site domain="thailand-tdac.com" screenshot="/scams/thailand-tdac.png" country="thailand" >}}
 
-  Renders a "NOT OFFICIAL" stamp over a screenshot.
-  Legal note: only use domains that appear in data/official_urls/{country}.toml's [[scam_sites]]
-  list with documented evidence. The shortcode VALIDATES this to prevent accidental
-  exposure to defamation claims.
+  Renders a "NOT OFFICIAL" stamp over a screenshot if available. When no
+  screenshot is provided, renders an evidence card showing what we know:
+  - the domain name
+  - the evidence text from data/official_urls/{country}.toml
+  - the first-observed date
+  - a "NOT OFFICIAL" stamp
+
+  Legal note: only use domains that appear in data/official_urls/{country}.toml's
+  [[scam_sites]] list with documented evidence. The shortcode VALIDATES this
+  to prevent accidental exposure to defamation claims. If a domain does not
+  resolve via DNS, do not list it in the TOML.
 */ -}}
 {{- $domain := .Get "domain" }}
 {{- $screenshot := .Get "screenshot" | default "" }}
@@ -29,8 +36,16 @@
   {{- if $screenshot }}
   <img src="{{ $screenshot }}" alt="" loading="lazy" class="w-full h-full object-cover">
   {{- else }}
-  {{- /* Placeholder pattern when no screenshot is available yet */ -}}
-  <div class="w-full h-full" style="background: repeating-linear-gradient(135deg, #e5e5e0 0 20px, #efefea 20px 40px);"></div>
+  {{- /* No screenshot: render an evidence card with the documented facts. */ -}}
+  <div class="scam-evidence" style="padding: 16px 20px; height: 100%; display: flex; flex-direction: column; justify-content: space-between; background: #FAFAF7; border: 1px solid #E8E6DF;">
+    <div>
+      <div style="font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #6B6B66; margin-bottom: 8px;">{{ i18n "evidence_label" | default "Evidence" }}</div>
+      <p style="font-size: 13px; line-height: 1.5; color: #1A1A1A; margin: 0;">{{ $match.evidence }}</p>
+    </div>
+    {{- with $match.first_observed }}
+    <div style="font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 11px; color: #6B6B66; margin-top: 12px; padding-top: 8px; border-top: 1px dotted #E8E6DF;">{{ i18n "first_observed_label" | default "First observed" }}: {{ . }}</div>
+    {{- end }}
+  </div>
   {{- end }}
   <div class="scam-stamp">{{ i18n "not_official_stamp" }}</div>
   <figcaption class="scam-domain">{{ $domain }}</figcaption>

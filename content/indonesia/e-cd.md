@@ -11,7 +11,7 @@ faq:
   - q: "Is there a fee for Indonesia's e-CD?"
     a: "No. The e-CD is free. The Indonesian Directorate General of Customs and Excise does not charge for it. The official site is ecd.beacukai.go.id and any fee is from a middleman."
   - q: "What is the official Indonesia e-CD website?"
-    a: "The only official site is ecd.beacukai.go.id. The .go.id suffix is restricted to Indonesian government entities. Sites like indonesia-customs.com or bali-customs.org are middlemen, not official."
+    a: "The only official site is ecd.beacukai.go.id. The .go.id suffix is restricted to Indonesian government entities. Any other domain — including sites with customs-style branding — is a middleman."
   - q: "Do I need an e-CD if I'm flying to Bali?"
     a: "Yes. The e-CD is required for all arrivals into Indonesia, including Bali (DPS / Ngurah Rai International). You file it within 3 days before arrival, just once per trip."
   - q: "Is the e-CD the same as the Visa on Arrival (e-VOA)?"
@@ -50,7 +50,7 @@ The Indonesian Customs Directorate has issued public statements that **only `ecd
 
 Check the address bar. The official site is <mark>ecd.beacukai.go.id</mark> and nothing else.
 
-Not `indonesia-customs.com`. Not `bali-customs.org`. Not `indonesia-evoa.com`. Anyone can register `.com` or `.org`. Only Indonesian government entities can register `.go.id`.
+Sites using `.com`, `.org`, or `.net` with customs-style branding are commercial middlemen. Anyone can register those open suffixes. Only Indonesian government entities can register `.go.id`.
 
 {{< validator country="indonesia" >}}
 
@@ -69,8 +69,6 @@ If a site asks for either, you are not on the official site.
 These sites all charge fees for what should be free. Some submit the real form, some don't.
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="indonesia" domain="indonesia-customs.com" >}}
-{{< scam-site country="indonesia" domain="bali-customs.org" >}}
 {{< scam-site country="indonesia" domain="ivisa.com" >}}
 {{< scam-site country="indonesia" domain="indonesia-evoa.com" >}}
 </div>

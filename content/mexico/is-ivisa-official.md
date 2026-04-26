@@ -38,37 +38,27 @@ No.
 
 `.com` is an open top-level domain. Anyone can register it. The Mexican government operates under `.gob.mx`, a restricted suffix for government entities.
 
-`mexico-fmm.com` is a reseller that charges roughly $25 USD to file the free form. It uses INM-style branding and colors without authorization. It typically does file a real FMM-E with your data, so you usually arrive with a valid reference number. You just paid $25 for 10 minutes of typing.
-
-First observed in our records: August 2024.
-
-### Is `fmm-mexico.org` the official site?
-
-No. `.org` is open, and the Mexican government does not use `.org` domains for immigration services.
-
-`fmm-mexico.org` charges roughly $39 USD. It is a reseller, not an INM service.
-
-First observed: February 2025.
-
-### Is `official-fmm.net` the official site?
-
-No. The word "official" in a domain name means nothing. `.net` is open.
-
-This site charges roughly $49 USD. It is among the more aggressive impersonators, using a URL structure and color scheme designed to look like an INM subdomain at a glance. It is not.
-
-First observed: September 2025.
+`mexico-fmm.com` is a commercial reseller that uses INM-style branding without authorization. It typically files a real FMM-E with your data, so you usually arrive with a valid reference number. You paid for 10 minutes of typing that costs nothing on the official site.
 
 ### Is `ivisa.com/mexico` the official site?
 
 No, same as the short answer above. iVisa is a legal commercial middleman, not an INM service.
 
+### What about other lookalike domains?
+
+Periodically you'll see domains like `fmm-mexico.org`, `official-fmm.net`, or other variants that try to look official. Pattern recognition is more valuable than a fixed list:
+
+- **Any domain not ending in `.gob.mx` is not the Mexican government.**
+- **Any site charging a fee for the FMM-E is a middleman.** The form on the INM site is free.
+- **Any site asking for a passport photo upload is not the official INM site.** The official form is text fields only.
+
+If a domain meets any of those criteria, treat it as untrusted regardless of whether it is on a published warning list.
+
 ## The scam gallery
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
 {{< scam-site country="mexico" domain="mexico-fmm.com" >}}
-{{< scam-site country="mexico" domain="fmm-mexico.org" >}}
 {{< scam-site country="mexico" domain="ivisa.com" >}}
-{{< scam-site country="mexico" domain="official-fmm.net" >}}
 </div>
 
 Screenshots captured April 2026. Archived snapshots on [Wayback Machine](https://web.archive.org/).

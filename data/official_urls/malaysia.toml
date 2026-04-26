@@ -17,23 +17,17 @@ agency = "Jabatan Imigresen Malaysia"
 last_verified = "2026-04-24"
 
 # Known scam / middleman domains (for scam-site shortcode)
+# Every entry must:
+#   1. Resolve via DNS (we audit this with `dig`)
+#   2. Have documented evidence we have personally observed
+#   3. Reference public news / government warnings where available
 [[scam_sites]]
 domain = "malaysia-mdac.com"
 first_observed = "2024-02-15"
-evidence = "Charges $19 USD for free form; uses Malaysian Immigration Department branding without authorization"
-
-[[scam_sites]]
-domain = "mdac-malaysia.org"
-first_observed = "2024-05-20"
-evidence = "Reseller charging $29 USD; mimics imi.gov.my layout"
+evidence = "Live commercial reseller charging fees for the free MDAC. Uses Malaysian Immigration Department branding without authorization. DNS active 2026-04-26."
 
 [[scam_sites]]
 domain = "ivisa.com"
 path = "/malaysia"
 first_observed = "2024-02-01"
-evidence = "Commercial middleman charging fees for the free MDAC"
-
-[[scam_sites]]
-domain = "mdac-official.net"
-first_observed = "2025-03-10"
-evidence = "Uses 'official' in name; charges $35 USD and is unaffiliated with Malaysian Immigration"
+evidence = "Commercial visa middleman charging fees for the free MDAC."

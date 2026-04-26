@@ -11,7 +11,7 @@ faq:
   - q: "Is there a fee for the Mexico FMM?"
     a: "No. Filing the FMM-E on the official INM site (inm.gob.mx) is free. The DNI fee (Derecho de No Inmigrante) is a separate government charge, not an FMM fee, and it is already bundled into most airline tickets."
   - q: "What is the official FMM website?"
-    a: "The only official site is inm.gob.mx/fmme/. Domains ending in .gob.mx are reserved for Mexican government entities. Sites like mexico-fmm.com or fmm-mexico.org are middlemen, not official."
+    a: "The only official site is inm.gob.mx/fmme/. Domains ending in .gob.mx are reserved for Mexican government entities. Any other domain — including sites with INM-style branding — is a middleman."
   - q: "Do I even need an FMM if I'm flying to Mexico?"
     a: "Many air travelers arriving at major airports (CUN, MEX, GDL, TIJ, PVR, SJD and others) get a passport stamp instead of a separate FMM. If you arrive by land, by sea, or at a smaller airport, you do need the FMM-E. When unsure, fill it. A filed FMM-E is never a problem at the border."
   - q: "When should I file the FMM-E?"
@@ -44,7 +44,7 @@ Mexico's INM has not been as publicly vocal as Thailand's immigration bureau abo
 
 Check the address bar. The official site is <mark>inm.gob.mx/fmme/</mark> and nothing else.
 
-Not `mexico-fmm.com`. Not `fmm-mexico.org`. Not `official-fmm.net`. Anyone can register a `.com`, `.org`, or `.net`. Only Mexican government entities can register `.gob.mx`.
+Anyone can register a `.com`, `.org`, or `.net` — sites like `mexico-fmm.com`, lookalike `fmm-*` domains, or any domain claiming to be "official" without ending in `.gob.mx` are not the INM. Only Mexican government entities can register `.gob.mx`.
 
 {{< validator country="mexico" >}}
 
@@ -81,9 +81,7 @@ These sites all charge money for a free form. Some of them submit a real FMM on 
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
 {{< scam-site country="mexico" domain="mexico-fmm.com" >}}
-{{< scam-site country="mexico" domain="fmm-mexico.org" >}}
 {{< scam-site country="mexico" domain="ivisa.com" >}}
-{{< scam-site country="mexico" domain="official-fmm.net" >}}
 </div>
 
 Screenshots captured April 2026. Archived snapshots available via [archive.org](https://web.archive.org/).

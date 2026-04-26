@@ -15,8 +15,10 @@ archived_snapshot_label: "存档快照"
 
 # 假站卡片
 not_official_stamp: "非官方"
-scam_card_aria_prefix: "假冒站点"
-scam_card_aria_suffix: "截图，标记为非官方"
+scam_card_aria_prefix: "卡片：站点"
+scam_card_aria_suffix: "标记为非官方"
+evidence_label: "证据"
+first_observed_label: "首次观察"
 
 # 校验器
 validator_eyebrow: "工具 · 提前核对填写内容"

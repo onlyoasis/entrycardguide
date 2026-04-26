@@ -17,23 +17,17 @@ agency = "Dirección General de Migración"
 last_verified = "2026-04-24"
 
 # Known scam / middleman domains (for scam-site shortcode)
+# Every entry must:
+#   1. Resolve via DNS (we audit this with `dig`)
+#   2. Have documented evidence we have personally observed
+#   3. Reference public news / government warnings where available
 [[scam_sites]]
 domain = "eticket-dominican.com"
 first_observed = "2023-08-01"
-evidence = "Charges $29 USD for free form; uses DGM-style branding without authorization"
-
-[[scam_sites]]
-domain = "dominicanrepublic-eticket.org"
-first_observed = "2024-03-10"
-evidence = "Reseller charging $39 USD; mimics DGM layout"
+evidence = "Live commercial reseller charging fees for the free E-Ticket. Uses DGM-style branding without authorization. DNS active 2026-04-26."
 
 [[scam_sites]]
 domain = "ivisa.com"
 path = "/dominican-republic"
 first_observed = "2023-06-01"
-evidence = "Commercial middleman charging fees for the free E-Ticket"
-
-[[scam_sites]]
-domain = "dr-eticket-official.net"
-first_observed = "2025-01-20"
-evidence = "Uses 'official' in name; charges $45 USD and is unaffiliated with DGM"
+evidence = "Commercial visa middleman charging fees for the free E-Ticket."

@@ -11,7 +11,7 @@ faq:
   - q: "Is there a fee for the Malaysia MDAC?"
     a: "No. The Malaysian Immigration Department does not charge for the MDAC. The official site is imigresen-online.imi.gov.my/mdac/main and it is always free."
   - q: "What is the official MDAC website?"
-    a: "The only official site is imigresen-online.imi.gov.my/mdac/main. The .gov.my suffix is restricted to Malaysian government entities. Sites like malaysia-mdac.com or mdac-official.net are middlemen, not official."
+    a: "The only official site is imigresen-online.imi.gov.my/mdac/main. The .gov.my suffix is restricted to Malaysian government entities. Any other domain — including sites with Immigration Department-style branding — is a middleman."
   - q: "Who is exempt from filing the MDAC?"
     a: "Singaporean citizens, returning Malaysian citizens, Brunei and Thailand passport holders entering by land, certain diplomatic passport holders, transit-only passengers who do not clear immigration, and Malaysian permanent residents (MyPR holders). Everyone else must file."
   - q: "Is the MDAC the same as a Malaysian visa?"
@@ -59,7 +59,7 @@ The MDAC is newer than the other cards in this guide (launched January 2024), an
 
 Check the address bar. The official site is <mark>imigresen-online.imi.gov.my/mdac/main</mark> and nothing else.
 
-Not `malaysia-mdac.com`. Not `mdac-malaysia.org`. Not `mdac-official.net`. Those are open TLDs. `.gov.my` is restricted to Malaysian government.
+Sites like `malaysia-mdac.com` and any other domain on `.com`, `.org`, or `.net` are commercial middlemen. Those are open TLDs. `.gov.my` is restricted to the Malaysian government.
 
 {{< validator country="malaysia" >}}
 
@@ -79,9 +79,7 @@ For a field-by-field walkthrough, read our [how to fill the MDAC guide](/malaysi
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
 {{< scam-site country="malaysia" domain="malaysia-mdac.com" >}}
-{{< scam-site country="malaysia" domain="mdac-malaysia.org" >}}
 {{< scam-site country="malaysia" domain="ivisa.com" >}}
-{{< scam-site country="malaysia" domain="mdac-official.net" >}}
 </div>
 
 Screenshots captured April 2026. Archived on [Wayback Machine](https://web.archive.org/).

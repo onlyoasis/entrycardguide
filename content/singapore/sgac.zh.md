@@ -11,7 +11,7 @@ faq:
   - q: "新加坡 SGAC 要收费吗？"
     a: "不收。新加坡移民与关卡局（ICA）不为 SGAC 收费。官方网址是 eservices.ica.gov.sg/sgarrivalcard/，任何收费都来自中介。"
   - q: "SGAC 的官方网址是什么？"
-    a: "唯一官方网址是 eservices.ica.gov.sg/sgarrivalcard/。.gov.sg 后缀只对新加坡政府机构开放。singapore-arrivalcard.com 或 sg-arrival-official.net 这类站点都是中介，不是官方。"
+    a: "唯一官方网址是 eservices.ica.gov.sg/sgarrivalcard/。.gov.sg 后缀只对新加坡政府机构开放。任何其他域名 —— 包括带 ICA 风格 UI 的 —— 都是中介。"
   - q: "新加坡公民也要填 SGAC 吗？"
     a: "不需要。持新加坡护照入境的新加坡公民不需要 SGAC。它适用于外国旅客以及从国外回新加坡的永久居民。"
   - q: "什么时候填 SGAC？"
@@ -57,7 +57,7 @@ ICA 已发布公开声明：**唯一授权的 SGAC 站点是 `eservices.ica.gov.
 
 看一眼地址栏。官方网址是 <mark>eservices.ica.gov.sg/sgarrivalcard/</mark>，没有别的。
 
-不是 `singapore-arrivalcard.com`。不是 `sgac-online.org`。不是 `sg-arrival-official.net`。任何人都能注册 `.com`、`.org`、`.net`。只有新加坡政府机构能注册 `.gov.sg`。
+任何人都能注册 `.com`、`.org`、`.net`。设计成像 ICA 站但用这些开放后缀的，都是商业中介。只有新加坡政府机构能注册 `.gov.sg`。
 
 {{< validator country="singapore" >}}
 
@@ -76,10 +76,7 @@ SGAC 大约 9 个字段，分布在 3 部分：旅客身份、行程信息、简
 下面这些站点都对免费的 SGAC 收费。其中一些代你提交了真表，另一些没有。
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="singapore" domain="singapore-arrivalcard.com" >}}
-{{< scam-site country="singapore" domain="sgac-online.org" >}}
 {{< scam-site country="singapore" domain="ivisa.com" >}}
-{{< scam-site country="singapore" domain="sg-arrival-official.net" >}}
 </div>
 
 截图于 2026 年 4 月。存档可在 [archive.org](https://web.archive.org/) 查询。

@@ -19,23 +19,27 @@ last_verified = "2026-04-26"
 # Known scam / overcharging middleman domains (for scam-site shortcode)
 # IMPORTANT: Vietnam e-visa scams overcharge for a real $25 fee, rather than charging
 # for a free service. Frame the warnings accordingly.
+# Every entry must:
+#   1. Resolve via DNS (we audit this with `dig`)
+#   2. Have documented evidence we have personally observed
+#   3. Reference public news / government warnings where available
 [[scam_sites]]
 domain = "vietnam-evisa.org"
 first_observed = "2024-03-15"
-evidence = "Charges $89 USD for what is officially a $25 USD government fee; uses .org to mimic an official-looking domain"
+evidence = "Live commercial reseller charging fees on top of the $25 USD government e-visa. Uses .org to mimic an official-looking domain. DNS active 2026-04-26."
 
 [[scam_sites]]
 domain = "evisa-vietnam.com"
 first_observed = "2024-06-10"
-evidence = "Charges $129 USD for $25 government e-visa; copies the official site's UI"
+evidence = "Live commercial reseller copying the official site's UI; bills above the $25 government fee. DNS active 2026-04-26."
 
 [[scam_sites]]
 domain = "ivisa.com"
 path = "/vietnam"
 first_observed = "2023-01-01"
-evidence = "Commercial middleman charging $99-179 USD for $25 government e-visa"
+evidence = "Commercial visa middleman charging multiple times the $25 government e-visa fee."
 
 [[scam_sites]]
 domain = "vietnam-visa-online.com"
 first_observed = "2024-09-05"
-evidence = "Charges $149 USD; runs ads for 'visa on arrival' service that requires a sponsor letter — separate from the e-visa they bill for"
+evidence = "Live commercial reseller running ads for visa-on-arrival service that requires a sponsor letter, separate from the e-visa they bill for. DNS active 2026-04-26."

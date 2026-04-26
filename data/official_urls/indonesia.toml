@@ -24,23 +24,17 @@ agency = "Direktorat Jenderal Imigrasi"
 last_verified = "2026-04-26"
 
 # Known scam / middleman domains (for scam-site shortcode)
-[[scam_sites]]
-domain = "indonesia-customs.com"
-first_observed = "2024-05-10"
-evidence = "Charges $19 USD for the free e-CD form; uses customs branding without authorization"
-
+# Every entry must:
+#   1. Resolve via DNS (we audit this with `dig`)
+#   2. Have documented evidence we have personally observed
+#   3. Reference public news / government warnings where available
 [[scam_sites]]
 domain = "indonesia-evoa.com"
 first_observed = "2024-08-22"
-evidence = "Charges $79 USD for the $35 USD government e-VOA, including a markup masquerading as 'service fee'"
+evidence = "Live commercial reseller charging above the $35 USD government e-VOA fee, including a markup masquerading as 'service fee'. DNS active 2026-04-26."
 
 [[scam_sites]]
 domain = "ivisa.com"
 path = "/indonesia"
 first_observed = "2023-01-01"
-evidence = "Commercial middleman charging fees on top of Indonesia's free e-CD and government e-VOA"
-
-[[scam_sites]]
-domain = "bali-customs.org"
-first_observed = "2025-02-14"
-evidence = "Charges $25 USD for the free e-CD; Bali-targeted ads, mimics official-looking UI"
+evidence = "Commercial visa middleman charging fees on top of Indonesia's free e-CD and government e-VOA."

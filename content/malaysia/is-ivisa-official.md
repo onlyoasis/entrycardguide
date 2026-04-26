@@ -66,9 +66,7 @@ No, same as the short answer above.
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
 {{< scam-site country="malaysia" domain="malaysia-mdac.com" >}}
-{{< scam-site country="malaysia" domain="mdac-malaysia.org" >}}
 {{< scam-site country="malaysia" domain="ivisa.com" >}}
-{{< scam-site country="malaysia" domain="mdac-official.net" >}}
 </div>
 
 Screenshots captured April 2026. Archived on [Wayback Machine](https://web.archive.org/).

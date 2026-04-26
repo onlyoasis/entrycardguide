@@ -19,23 +19,17 @@ last_verified = "2026-04-24"
 # Known scam / middleman domains (for scam-site shortcode)
 # IMPORTANT: only add to this list after verifying the site is charging for the free FMM
 # and cross-referencing with INM warnings or news coverage.
+# Every entry must:
+#   1. Resolve via DNS (we audit this with `dig`)
+#   2. Have documented evidence we have personally observed
+#   3. Reference public news / government warnings where available
 [[scam_sites]]
 domain = "mexico-fmm.com"
 first_observed = "2024-08-15"
-evidence = "Charges $25 USD for free form; uses INM-style branding without authorization"
-
-[[scam_sites]]
-domain = "fmm-mexico.org"
-first_observed = "2025-02-10"
-evidence = "Reseller charging $39 USD; first page mimics INM layout"
+evidence = "Live commercial reseller charging fees for the free FMM-E. Uses INM-style branding without authorization. DNS active 2026-04-26."
 
 [[scam_sites]]
 domain = "ivisa.com"
 path = "/mexico"
 first_observed = "2024-06-01"
-evidence = "Commercial middleman charging fees for the free FMM-E"
-
-[[scam_sites]]
-domain = "official-fmm.net"
-first_observed = "2025-09-20"
-evidence = "Uses 'official' in name; charges $49 USD and is unaffiliated with INM"
+evidence = "Commercial visa middleman charging fees for the free FMM-E."

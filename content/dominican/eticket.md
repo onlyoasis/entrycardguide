@@ -11,7 +11,7 @@ faq:
   - q: "Is there a fee for the Dominican Republic E-Ticket?"
     a: "No. The DGM does not charge for the E-Ticket. The official site is eticket.migracion.gob.do and it is always free. Any fee you see is from a middleman."
   - q: "What is the official DR E-Ticket website?"
-    a: "The only official site is eticket.migracion.gob.do. Domains ending in .gob.do are reserved for Dominican government entities. Sites like eticket-dominican.com or dr-eticket-official.net are middlemen."
+    a: "The only official site is eticket.migracion.gob.do. Domains ending in .gob.do are reserved for Dominican government entities. Any other domain — including sites with DGM-style branding — is a middleman."
   - q: "Do I need an E-Ticket for both arrival and departure?"
     a: "Yes, but only one form. When you fill the E-Ticket for arrival, the same QR code covers your departure. If your departure flight changes significantly, you can update or refile."
   - q: "Can I fill one E-Ticket for my whole family?"
@@ -44,7 +44,7 @@ The Dirección General de Migración (DGM) has issued public statements that no 
 
 Check the address bar. The official site is <mark>eticket.migracion.gob.do</mark> and nothing else.
 
-Not `eticket-dominican.com`. Not `dominicanrepublic-eticket.org`. Not `dr-eticket-official.net`. Anyone can register those. Only Dominican government entities can register `.gob.do`.
+Sites like `eticket-dominican.com` and any other lookalike using `.com`, `.org`, or `.net` are commercial middlemen. Anyone can register those suffixes. Only Dominican government entities can register `.gob.do`.
 
 {{< validator country="dominican" >}}
 
@@ -66,9 +66,7 @@ These sites charge for a free form. Some submit a real E-Ticket on your behalf. 
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
 {{< scam-site country="dominican" domain="eticket-dominican.com" >}}
-{{< scam-site country="dominican" domain="dominicanrepublic-eticket.org" >}}
 {{< scam-site country="dominican" domain="ivisa.com" >}}
-{{< scam-site country="dominican" domain="dr-eticket-official.net" >}}
 </div>
 
 Screenshots captured April 2026. Archived on [Wayback Machine](https://web.archive.org/).

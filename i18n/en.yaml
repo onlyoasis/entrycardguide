@@ -15,8 +15,10 @@ archived_snapshot_label: "Archived snapshot"
 
 # Scam-site card
 not_official_stamp: "Not Official"
-scam_card_aria_prefix: "Screenshot of scam site"
+scam_card_aria_prefix: "Card for"
 scam_card_aria_suffix: "marked NOT OFFICIAL"
+evidence_label: "Evidence"
+first_observed_label: "First observed"
 
 # Validator
 validator_eyebrow: "Tool · Pre-check your fields"

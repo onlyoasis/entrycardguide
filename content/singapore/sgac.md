@@ -11,7 +11,7 @@ faq:
   - q: "Is there a fee for Singapore's SGAC?"
     a: "No. Singapore's Immigration & Checkpoints Authority (ICA) does not charge for the SGAC. The official site is eservices.ica.gov.sg/sgarrivalcard/ and any fee is from a middleman."
   - q: "What is the official SGAC website?"
-    a: "The only official site is eservices.ica.gov.sg/sgarrivalcard/. The .gov.sg suffix is restricted to Singapore government entities. Sites like singapore-arrivalcard.com or sg-arrival-official.net are middlemen, not official."
+    a: "The only official site is eservices.ica.gov.sg/sgarrivalcard/. The .gov.sg suffix is restricted to Singapore government entities. Any other domain — including sites with ICA-style branding — is a middleman."
   - q: "Do Singapore citizens need the SGAC?"
     a: "No. Singaporean citizens entering on a Singapore passport do not need the SGAC. It is required for foreign visitors and for Singapore PRs returning from abroad."
   - q: "When should I file the SGAC?"
@@ -57,7 +57,7 @@ ICA has issued public statements that **only `eservices.ica.gov.sg` is the autho
 
 Check the address bar. The official site is <mark>eservices.ica.gov.sg/sgarrivalcard/</mark> and nothing else.
 
-Not `singapore-arrivalcard.com`. Not `sgac-online.org`. Not `sg-arrival-official.net`. Anyone can register `.com`, `.org`, or `.net`. Only Singapore government entities can register `.gov.sg`.
+Anyone can register `.com`, `.org`, or `.net`. Domains designed to look like ICA's site but using these open suffixes are commercial middlemen. Only Singapore government entities can register `.gov.sg`.
 
 {{< validator country="singapore" >}}
 
@@ -76,10 +76,7 @@ If a site asks for either, you are not on the official site.
 These sites all charge fees for what should be free. Some submit the real form, some don't.
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="singapore" domain="singapore-arrivalcard.com" >}}
-{{< scam-site country="singapore" domain="sgac-online.org" >}}
 {{< scam-site country="singapore" domain="ivisa.com" >}}
-{{< scam-site country="singapore" domain="sg-arrival-official.net" >}}
 </div>
 
 Screenshots captured April 2026. Archived snapshots available via [archive.org](https://web.archive.org/).

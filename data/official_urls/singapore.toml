@@ -17,23 +17,18 @@ agency = "Immigration & Checkpoints Authority"
 last_verified = "2026-04-26"
 
 # Known scam / middleman domains (for scam-site shortcode)
-[[scam_sites]]
-domain = "singapore-arrivalcard.com"
-first_observed = "2024-04-01"
-evidence = "Charges $19 USD for Singapore's free SGAC; uses ICA-style branding without authorization"
-
-[[scam_sites]]
-domain = "sgac-online.org"
-first_observed = "2024-09-15"
-evidence = "Reseller charging $29 USD for free form; mimics ICA layout"
-
+# Every entry must:
+#   1. Resolve via DNS (we audit this with `dig`)
+#   2. Have documented evidence we have personally observed
+#   3. Reference public news / government warnings where available
+#
+# Note: as of 2026-04-26, the only widely-resolving Singapore-targeted middleman
+# we can document is iVisa. The pattern of fake ICA-lookalike domains (e.g.
+# singapore-arrivalcard.com, sg-arrival-official.net) is documented historically
+# but those domains are not currently active. This list will grow as ICA names
+# new operators in their public warnings.
 [[scam_sites]]
 domain = "ivisa.com"
 path = "/singapore"
 first_observed = "2023-01-01"
-evidence = "Commercial middleman charging fees for Singapore's free SGAC"
-
-[[scam_sites]]
-domain = "sg-arrival-official.net"
-first_observed = "2025-03-08"
-evidence = "Uses 'official' in name; charges $35 USD and is unaffiliated with ICA"
+evidence = "Commercial visa middleman charging fees for Singapore's free SGAC. Not affiliated with ICA."
