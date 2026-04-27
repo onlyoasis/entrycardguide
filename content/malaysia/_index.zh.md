@@ -20,7 +20,7 @@ description: "免费、独立的马来西亚 MDAC 中文指南。官方网址、
 
 ### 3. iVisa（或其他网站）是官方 MDAC 吗？
 不是。这里讲清每个仿冒站点拿你的钱做什么。
-→ [假站图鉴](/zh/malaysia/is-ivisa-official/)
+→ [假站图鉴](/zh/malaysia/mdac/)
 
 ## 速记要点
 

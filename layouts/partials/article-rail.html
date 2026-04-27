@@ -1,6 +1,19 @@
 {{- $country := .Params.country }}
 {{- $urls := dict }}
 {{- if $country }}{{- $urls = index hugo.Data.official_urls $country }}{{- end }}
+{{- $reviewedAt := .Lastmod }}
+{{- $hasVerifiedAt := false }}
+{{- if $urls }}
+  {{- range $key, $entry := $urls }}
+    {{- if and (reflect.IsMap $entry) $entry.last_verified }}
+      {{- $verifiedAt := time.AsTime $entry.last_verified }}
+      {{- if or (not $hasVerifiedAt) (lt $verifiedAt $reviewedAt) }}
+        {{- $reviewedAt = $verifiedAt -}}
+        {{- $hasVerifiedAt = true -}}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
 
 <div class="border-t-2 border-ink pt-md mb-xl">
   <h4 class="font-mono text-meta uppercase text-muted mb-3 font-medium">{{ i18n "rail_source_of_truth" }}</h4>
@@ -16,7 +29,7 @@
   {{- end }}
   {{- end }}
 
-  {{- with .Lastmod }}
+  {{- with $reviewedAt }}
   {{- $age := now.Sub . }}
   {{- $days := math.Floor (div $age.Hours 24) }}
   {{- $tone := "verified" }}

@@ -21,9 +21,6 @@
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
 
 {{- /* Self-hosted font preload for perf */ -}}
-<link rel="preload" href="/fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/InstrumentSans-VariableFont_wdth,wght.woff2" as="font" type="font/woff2" crossorigin>
-
 {{- /* CSS — compiled via postcss + tailwind, fingerprinted */ -}}
 {{- $css := resources.Get "css/main.css" | css.PostCSS }}
 {{- if hugo.IsProduction }}
@@ -97,27 +94,27 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": {{ .Title | jsonify }},
-  "description": {{ (.Description | default .Summary) | jsonify }},
-  "datePublished": {{ .PublishDate.Format "2006-01-02" | jsonify }},
-  "dateModified": {{ .Lastmod.Format "2006-01-02" | jsonify }},
-  "inLanguage": {{ .Site.Language.Lang | jsonify }},
+  "headline": "{{ .Title }}",
+  "description": "{{ (.Description | default .Summary) | plainify }}",
+  "datePublished": "{{ .PublishDate.Format "2006-01-02" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  "inLanguage": "{{ .Site.Language.Lang }}",
   "author": {
     "@type": "Organization",
-    "name": {{ .Site.Title | jsonify }},
+    "name": "{{ .Site.Title }}",
     "url": "https://entrycardguide.com/"
   },
   "publisher": {
     "@type": "Organization",
-    "name": {{ .Site.Title | jsonify }},
+    "name": "{{ .Site.Title }}",
     "url": "https://entrycardguide.com/",
     "logo": {
       "@type": "ImageObject",
       "url": "https://entrycardguide.com/apple-touch-icon.png"
     }
   },
-  "image": {{ ($ogImage | absURL) | jsonify }},
-  "mainEntityOfPage": {{ .Permalink | jsonify }}
+  "image": "{{ $ogImage | absURL }}",
+  "mainEntityOfPage": "{{ .Permalink }}"
 }
 </script>
 {{- end }}
@@ -128,13 +125,13 @@
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": {{ .Title | jsonify }},
-  "description": {{ (.Description | default .Summary) | jsonify }},
-  "datePublished": {{ .PublishDate.Format "2006-01-02" | jsonify }},
-  "dateModified": {{ .Lastmod.Format "2006-01-02" | jsonify }},
+  "name": "{{ .Title }}",
+  "description": "{{ (.Description | default .Summary) | plainify }}",
+  "datePublished": "{{ .PublishDate.Format "2006-01-02" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
   "publisher": {
     "@type": "Organization",
-    "name": {{ .Site.Title | jsonify }},
+    "name": "{{ .Site.Title }}",
     "url": "https://entrycardguide.com/"
   }
 }
@@ -154,20 +151,20 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": {{ .Site.Title | jsonify }},
-      "item": {{ $homeURL | jsonify }}
+      "name": "{{ .Site.Title }}",
+      "item": "{{ $homeURL }}"
     }{{ with $sectionPage }},
     {
       "@type": "ListItem",
       "position": 2,
-      "name": {{ .Title | jsonify }},
-      "item": {{ .Permalink | jsonify }}
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
     }{{ end }},
     {
       "@type": "ListItem",
       "position": {{ if $sectionPage }}3{{ else }}2{{ end }},
-      "name": {{ .Title | jsonify }},
-      "item": {{ .Permalink | jsonify }}
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
     }
   ]
 }
@@ -191,10 +188,10 @@
     {{- if $i }},{{ end }}
     {
       "@type": "Question",
-      "name": {{ $item.q | jsonify }},
+      "name": "{{ $item.q }}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": {{ $item.a | jsonify }}
+        "text": "{{ $item.a }}"
       }
     }
     {{- end }}
