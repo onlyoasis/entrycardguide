@@ -57,7 +57,10 @@ function walk(dir) {
 walk(publicDir);
 
 const missingLocalTargets = [];
+const hreflangProblems = [];
 const localAssetPattern = /\s(?:href|src)=(?:"([^"]+)"|'([^']+)'|([^\s>]+))/g;
+const hreflangPattern =
+  /<link\s+rel=alternate\s+hreflang=(?:"([^"]+)"|'([^']+)'|([^\s>]+))\s+href=(?:"([^"]+)"|'([^']+)'|([^\s>]+))[^>]*>/g;
 
 function localTargetExists(rawUrl) {
   if (
@@ -93,12 +96,31 @@ for (const file of htmlFiles) {
       missingLocalTargets.push(`${path.relative(publicDir, file)} -> ${rawUrl}`);
     }
   }
+
+  for (const match of html.matchAll(hreflangPattern)) {
+    const hreflang = match[1] || match[2] || match[3];
+    const href = match[4] || match[5] || match[6];
+    if (!href?.startsWith("https://entrycardguide.com/")) continue;
+
+    const localPath = new URL(href).pathname;
+    if (!localTargetExists(localPath)) {
+      hreflangProblems.push(`${path.relative(publicDir, file)} -> ${hreflang} ${href}`);
+    }
+
+    if (hreflang === "x-default" && localPath.startsWith("/zh/")) {
+      hreflangProblems.push(`${path.relative(publicDir, file)} has zh x-default: ${href}`);
+    }
+  }
 }
 
 if (missingLocalTargets.length) {
   throw new Error(
     `Missing local links/assets:\n${missingLocalTargets.slice(0, 30).join("\n")}`,
   );
+}
+
+if (hreflangProblems.length) {
+  throw new Error(`Invalid hreflang links:\n${hreflangProblems.slice(0, 30).join("\n")}`);
 }
 
 const jsonLdPattern =

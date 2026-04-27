@@ -22,7 +22,7 @@ description: "免费、独立的泰国 TDAC 中文指南。官方网址、字段
 
 ### 3. iVisa（或其他网站）是官方 TDAC 吗？
 简短回答：不是。详细回答里包含了 Google 搜索前列里那些反复出现的站点，以及它们各自拿你的钱去做什么。
-→ [假站图鉴](/zh/thailand/tdac/)
+→ [假站图鉴](/zh/thailand/is-ivisa-official/)
 
 ## 速记要点
 

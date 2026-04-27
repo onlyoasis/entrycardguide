@@ -13,8 +13,11 @@
 {{- range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
 {{- end }}
-{{- /* Always emit x-default pointing to the EN root version. */ -}}
-<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+{{- $xDefault := .Permalink -}}
+{{- range .AllTranslations }}
+  {{- if eq .Lang "en" }}{{- $xDefault = .Permalink -}}{{- end }}
+{{- end }}
+<link rel="alternate" hreflang="x-default" href="{{ $xDefault }}">
 {{- end }}
 
 {{- /* Robots — always indexable; this site's whole value is Google traffic */ -}}
