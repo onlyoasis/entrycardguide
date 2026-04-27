@@ -32,6 +32,22 @@ We could not figure out why no one had built the obvious thing: a free, independ
 - Not affiliated with iVisa, VisaHQ, Sherpa, or any visa processing service.
 - Not in the business of filing forms for you. We will not take your passport, your money, or your data.
 
+<a id="methodology"></a>
+
+## How to fact-check us
+
+Do not trust us because the site looks serious. Check the artifacts.
+
+1. **Official URLs live in versioned TOML.** Every government URL we point to is stored in [`data/official_urls/{country}.toml`](https://github.com/onlyoasis/entrycardguide/tree/main/data/official_urls), not buried in a template. The Thailand TDAC record, for example, names `tdac.immigration.go.th`, the Royal Thai Immigration Bureau, a `last_verified` date, and a Wayback Machine snapshot. You can compare the TOML, the archived page, and the site you see today without taking our word for it.
+
+2. **Field rules live in JSON you can inspect.** The validator rules are stored in [`data/rules/{country}.json`](https://github.com/onlyoasis/entrycardguide/tree/main/data/rules). Those files list max lengths, regex patterns, required fields, and error text copied from the official forms. The browser widget reads those specs; it does not invent advice. If a government form changes, the JSON is the thing that has to change.
+
+3. **Scam warnings are tied to DNS and evidence.** Each `[[scam_sites]]` entry in the TOML files has a domain, an observed date, and a short evidence note. We only keep domains that resolve when audited. In commit [`6c841f3`](https://github.com/onlyoasis/entrycardguide/commit/6c841f3), 13 dead domains were removed after a DNS audit. Fewer real warnings are better than a bigger list full of ghosts.
+
+4. **The validator runs in your browser.** Open DevTools, go to Network, type into a validator, and watch what happens: no outbound request is sent with your passport data. The rules are embedded in the page and checked locally by [`assets/js/validator.ts`](https://github.com/onlyoasis/entrycardguide/blob/main/assets/js/validator.ts). We do not log keystrokes, store drafts, or phone home with partial submissions.
+
+5. **The whole site is open source.** The live pages map to Markdown files in [`content/`](https://github.com/onlyoasis/entrycardguide/tree/main/content). Data changes map to commits. Corrections happen in public through [issues](https://github.com/onlyoasis/entrycardguide/issues), pull requests, and the git history. If you want the longer walkthrough, read [how to verify everything on this site](/trust/).
+
 ## How we make money
 
 We currently use one affiliate link at the bottom of eligible guides:
@@ -60,14 +76,6 @@ We will:
 - Update the field rules when official forms change. Each rules file has a `lastVerified` date you can audit in [our GitHub data folder](https://github.com/onlyoasis/entrycardguide/tree/main/data).
 - Add new countries when their digital arrival cards launch and the same scam pattern emerges.
 - Take down content the moment we are wrong about something. Email us and we'll fix it the same day.
-
-## How to verify any claim on this site
-
-We try to make this easy. The patterns:
-
-- **Official URLs:** all listed in `data/official_urls/{country}.toml` in [our GitHub](https://github.com/onlyoasis/entrycardguide). Each entry has a `last_verified` date and (where available) a Wayback Machine archive URL. You can click through to the archived snapshot and confirm the URL was the official one on that date.
-- **Scam-site evidence:** each entry in the `scam_sites` table has an `evidence` field describing why we listed it. We only list sites we have personally observed charging fees for the free forms.
-- **Field validators:** every validator runs 100% in your browser. The source code is linked from the validator widget itself. You can open DevTools and watch the network tab to confirm we send nothing.
 
 ## Errors and corrections
 

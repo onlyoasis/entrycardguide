@@ -86,3 +86,5 @@ Success rates are higher when the dispute is filed within 60 days of the charge.
 If the middleman did actually file a real TDAC for you (cases 1 or 2 in the short answer above), your arrival card is still valid and you do not need to refile. You are disputing the fee, not the submission.
 
 If no real TDAC was filed (case 3), file one yourself at the official site (`tdac.immigration.go.th`) before you travel. It takes 8 minutes.
+
+If you do not trust this page, start with the artifacts. [How to fact-check us](/about/#methodology) shows the official URL TOML files, the DNS-audited scam list, and the validator source.

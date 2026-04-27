@@ -48,6 +48,8 @@ TDAC 是你进入泰国之前要填的一份免费表格。泰国政府于 2024 
 
 不是 `thailand-tdac.com`，也不是任何带 `gov`、`official`、`immigration` 字样但不以 `.go.th` 结尾的变体。任何人都能注册一个 `.com`，但只有泰国政府机构能注册 `.go.th`。
 
+如果你不想相信我们的假站名单，很好。[这里是核查我们的方法](/zh/about/#methodology)：官方网址文件、校验器 JSON、经过 DNS 审计的假站域名，以及公开的 git 历史。
+
 {{< validator country="thailand" >}}
 
 ## 官方表单到底问哪些字段

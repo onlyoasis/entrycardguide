@@ -48,6 +48,8 @@ Check the address bar. The official site is <mark>tdac.immigration.go.th</mark> 
 
 Not `thailand-tdac.com`. Not `official-tdac.org`. Not any variant with `gov`, `official`, or `immigration` in the domain that doesn't end in `.go.th`. Anyone can register a `.com`. Not anyone can register a `.go.th`.
 
+If you do not want to trust our warning list, good. [Here is how to fact-check our work](/about/#methodology): official URL files, validator JSON, DNS-audited scam domains, and public git history.
+
 {{< validator country="thailand" >}}
 
 ## Every field the official form asks

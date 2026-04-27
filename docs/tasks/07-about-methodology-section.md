@@ -1,6 +1,8 @@
 # Task 07 — Add a methodology section to the About page
 
-**Status:** open
+**Status:** completed
+**Completed by:** Codex
+**Completed on:** 2026-04-27
 **Estimated time:** 1.5 hours
 **Difficulty:** ⭐⭐ (mostly writing; the technical pattern already exists)
 **Skills needed:** Hugo markdown editing, fluent in both EN and ZH (or a willingness to use a translator carefully)

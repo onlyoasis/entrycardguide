@@ -32,6 +32,22 @@ url: "/zh/about/"
 - 与 iVisa、VisaHQ、Sherpa 或任何签证处理服务都没有任何关联。
 - 不替你填表。我们不会拿你的护照，不会拿你的钱，不会拿你的数据。
 
+<a id="methodology"></a>
+
+## 如何核查我们
+
+不要因为这个站看起来认真就相信我们。请直接看证据。
+
+1. **官方网址存在有版本记录的 TOML 文件里。** 我们指向的每个政府网址都放在 [`data/official_urls/{country}.toml`](https://github.com/onlyoasis/entrycardguide/tree/main/data/official_urls)，不是藏在模板里。以泰国 TDAC 为例，文件里写着 `tdac.immigration.go.th`、运营机构、`last_verified` 日期和 Wayback Machine 存档。你可以同时对照 TOML、存档页和今天打开的官网。
+
+2. **字段规则存在可检查的 JSON 里。** 校验器使用的规则放在 [`data/rules/{country}.json`](https://github.com/onlyoasis/entrycardguide/tree/main/data/rules)。这些文件记录字段长度、正则、必填项和官方表单返回的错误提示。页面上的校验器读取这些规则，不临时编建议。政府表单一变，JSON 就必须跟着变。
+
+3. **假站警告要有 DNS 和证据。** TOML 里的每条 `[[scam_sites]]` 都有域名、首次观察日期和证据说明。我们只保留审计时仍能解析的域名。提交 [`6c841f3`](https://github.com/onlyoasis/entrycardguide/commit/6c841f3) 在 DNS 审计后删掉了 13 个失效域名。少一点但真实的警告，比一长串已经死掉的域名更有用。
+
+4. **校验器只在你的浏览器里运行。** 打开 DevTools 的 Network 面板，在校验器里输入内容，你会看到：不会有携带护照数据的外发请求。规则嵌在页面里，由 [`assets/js/validator.ts`](https://github.com/onlyoasis/entrycardguide/blob/main/assets/js/validator.ts) 在本地检查。我们不记录按键，不保存草稿，也不上传半填的表单。
+
+5. **整个站点都在 GitHub 上。** 线上页面对应 [`content/`](https://github.com/onlyoasis/entrycardguide/tree/main/content) 里的 Markdown 文件，数据变更对应提交记录。发现错误，可以看 [issues](https://github.com/onlyoasis/entrycardguide/issues)、PR 和 git 历史。更长的核查流程在这里：[如何核实本站的每一条说法](/zh/trust/)。
+
 ## 我们怎么赚钱
 
 目前，符合条件的指南底部有一类联盟链接：
@@ -60,14 +76,6 @@ url: "/zh/about/"
 - 在官方表单变化时更新字段规则。每份规则文件都有 `lastVerified` 日期，可以在 [我们的 GitHub data 文件夹](https://github.com/onlyoasis/entrycardguide/tree/main/data) 审计。
 - 在新国家上线数字入境卡且出现相同骗局模式时，加入新国家。
 - 一旦发现某条信息错了，立即下架。给我们发邮件，我们当天就修。
-
-## 如何核实本站的任何说法
-
-我们尽量让这件事简单。规律：
-
-- **官方网址**：全部列在 [我们 GitHub 仓库](https://github.com/onlyoasis/entrycardguide) 的 `data/official_urls/{国家}.toml`。每条记录都有 `last_verified` 日期，并尽可能附上 Wayback Machine 的存档链接。你可以点进存档快照，确认那个日期当时该网址确实是官方的。
-- **假站证据**：`scam_sites` 表的每一条都有 `evidence` 字段，说明我们为什么把它列入。我们只列出我们亲自观察过、确实在为免费表单收费的站点。
-- **字段校验器**：每个校验器 100% 在你的浏览器里运行。校验器组件本身就有源码链接。你可以打开 DevTools 查看 Network 选项卡，确认我们什么也没发出去。
 
 ## 错误与勘误
 
