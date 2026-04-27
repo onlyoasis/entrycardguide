@@ -1,7 +1,7 @@
 ---
-title: "新加坡"
+title: "新加坡 SGAC 官方网站、免费填写和 ICA 入境卡指南"
 kicker: "关于新加坡入境卡（SGAC）你需要知道的一切，不必经手任何中介。"
-description: "免费、独立的新加坡官方 SGAC 中文指南。所有外国入境者必填，免费，只在 eservices.ica.gov.sg 受理。"
+description: "新加坡 SGAC 中文指南：ICA 官方网址 eservices.ica.gov.sg、免费填写、怎么填、iVisa 是否官方和入境卡常见问题。"
 ---
 
 新加坡入境卡（SGAC）是一份所有入境者必填的免费电子表单 —— 外国旅客和返回的新加坡永久居民都要填。在 `eservices.ica.gov.sg` 受理。
@@ -15,6 +15,14 @@ description: "免费、独立的新加坡官方 SGAC 中文指南。所有外国
 ### 1. 不收费的 SGAC 全解
 谁要填、什么时候填、如何分辨 ICA 官方站和转售骗局。
 → [阅读概览](/zh/singapore/sgac/)
+
+### 2. 每个字段怎么填
+按 ICA 官方 SGAC 表单顺序解释护照、航班、住址和健康声明。
+→ [字段逐项指南](/zh/singapore/how-to-fill/)
+
+### 3. iVisa 是新加坡 SGAC 官方吗？
+不是。这里解释 SGAC 为什么免费、iVisa 收费买到什么，以及付过钱后如何处理。
+→ [iVisa 官方性判断](/zh/singapore/is-ivisa-official/)
 
 ## 速记要点
 

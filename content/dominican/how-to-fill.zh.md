@@ -1,7 +1,7 @@
 ---
-title: "多米尼加 E-Ticket 字段填写完整指南：每个字段逐项讲解"
+title: "多米尼加 E-Ticket 怎么填：每个字段填写指南和二维码"
 kicker: "多米尼加官方 DGM E-Ticket 表单字段逐项讲解，常见错误及含义。约 8 分钟看完。"
-description: "免费、独立的多米尼加 E-Ticket 字段填写指南。每个字段实操讲解，照官方表单顺序。"
+description: "多米尼加 E-Ticket 怎么填：按 DGM 官方表单顺序讲解入境/离境字段、二维码和常见错误，附免费官网入口。"
 date: 2026-04-24
 lastmod: 2026-04-26
 country: "dominican"

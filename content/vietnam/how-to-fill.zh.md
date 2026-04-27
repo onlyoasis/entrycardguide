@@ -1,7 +1,7 @@
 ---
-title: "越南 E-Visa 字段填写完整指南 2026：每个字段逐项讲解"
+title: "越南 E-Visa 怎么填 2026：每个字段填写指南和照片要求"
 kicker: "越南官方 E-Visa 表单字段逐项讲解，常见错误与真实原因。约 12 分钟看完。"
-description: "免费、独立的越南官方 E-Visa 字段填写指南。官方网址 evisa.xuatnhapcanh.gov.vn，每个字段实操讲解，无中介加价。"
+description: "越南 E-Visa 怎么填：按官方表单顺序讲解照片、护照、入境口岸、地址和付款字段，避免中介加价。"
 date: 2026-04-26
 lastmod: 2026-04-26
 country: "vietnam"

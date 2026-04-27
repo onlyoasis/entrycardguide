@@ -1,7 +1,7 @@
 ---
-title: "iVisa 是越南 E-Visa 官方网站吗？（不是，真正官方在这里）"
+title: "iVisa 是越南 E-Visa 官网吗？不是：官方 $25 美元费用和加价"
 kicker: "不是。iVisa 是商业中介，对官方 $25 美元政府费用加价数倍。真正的越南 e-visa 在 evisa.xuatnhapcanh.gov.vn。"
-description: "回答搜索词'iVisa 越南官方'—— 不是。越南政府官方站点是 evisa.xuatnhapcanh.gov.vn，真实费用 $25 美元。"
+description: "iVisa 不是越南 E-Visa 官方网站。真正官网是 evisa.xuatnhapcanh.gov.vn，单次入境政府费 $25 美元；这里说明中介加价。"
 date: 2026-04-26
 lastmod: 2026-04-26
 country: "vietnam"

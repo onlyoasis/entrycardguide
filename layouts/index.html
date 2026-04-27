@@ -1,30 +1,72 @@
 {{ define "main" }}
 <section class="max-w-prose mx-auto py-16">
+  {{- $isZh := eq .Site.Language.Lang "zh" -}}
 
   <h1 class="mb-6">{{ .Site.Title }}</h1>
 
   <p class="text-kicker text-muted mb-10 max-w-[600px]">
+    {{- if $isZh -}}
+    免费、独立的入境卡和电子签证指南。官方网址、怎么填、是否收费、如何避开 iVisa 等中介加价。
+    {{- else -}}
     Free, independent guides to every country's digital arrival card. No fees. No stored data. No affiliation with any scam site.
+    {{- end -}}
   </p>
 
   <div class="prose prose-lg max-w-none mb-16">
     {{ .Content }}
   </div>
 
-  <h2 class="mb-6">Countries we cover</h2>
+  <h2 class="mb-6">{{ if $isZh }}热门国家与关键入口{{ else }}Countries we cover{{ end }}</h2>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+    {{- $mainSlugs := dict
+      "thailand" "tdac"
+      "mexico" "fmm"
+      "dominican" "eticket"
+      "malaysia" "mdac"
+      "vietnam" "evisa"
+      "indonesia" "e-cd"
+      "singapore" "sgac"
+    -}}
+    {{- $subtitlesEn := dict
+      "thailand" "TDAC — Digital Arrival Card"
+      "mexico" "FMM-E — electronic tourist card"
+      "dominican" "E-Ticket — entry and exit form"
+      "malaysia" "MDAC — Digital Arrival Card"
+      "vietnam" "E-Visa — official $25 government application"
+      "indonesia" "e-CD — electronic customs declaration"
+      "singapore" "SGAC — Singapore Arrival Card"
+    -}}
+    {{- $subtitlesZh := dict
+      "thailand" "TDAC 入境卡：官网、免费填写、防中介"
+      "mexico" "FMM-E 入境表：官网、免费在线填写"
+      "dominican" "E-Ticket：入境/离境二维码，官方免费"
+      "malaysia" "MDAC 入境卡：官网、免费填写"
+      "vietnam" "E-Visa：官方 $25 美元，防中介加价"
+      "indonesia" "e-CD 海关申报：巴厘岛/雅加达入境必填"
+      "singapore" "SGAC 入境卡：ICA 官方免费表单"
+    -}}
     {{- range .Site.Menus.main }}
     {{- if ne .Identifier "about" }}
-    <a href="{{ .URL }}" class="block border border-rule p-md no-underline hover:border-ink">
-      <h3 class="font-serif font-medium mb-1" style="font-size: 22px; font-variation-settings: 'opsz' 144;">{{ .Name }}</h3>
+    {{- $mainSlug := index $mainSlugs .Identifier }}
+    <article class="border border-rule p-md">
+      <h3 class="font-serif font-medium mb-1" style="font-size: 22px; font-variation-settings: 'opsz' 144;">
+        <a href="{{ .URL }}" class="text-ink no-underline hover:underline underline-offset-4">{{ .Name }}</a>
+      </h3>
       <p class="text-small text-muted m-0">
-        {{- if eq .Identifier "thailand" }}TDAC — Digital Arrival Card
-        {{- else if eq .Identifier "mexico" }}FMM — Forma Migratoria Múltiple
-        {{- else if eq .Identifier "dominican" }}e-Ticket — Entry / Exit form
-        {{- else if eq .Identifier "malaysia" }}MDAC — Digital Arrival Card
-        {{- end }}
+        {{- if $isZh -}}
+          {{- index $subtitlesZh .Identifier -}}
+        {{- else -}}
+          {{- index $subtitlesEn .Identifier -}}
+        {{- end -}}
       </p>
-    </a>
+      {{- if $mainSlug }}
+      <div class="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-small">
+        <a href="{{ printf "%s%s/" .URL $mainSlug }}" class="text-ink underline underline-offset-4">{{ if $isZh }}官网和费用{{ else }}Official site{{ end }}</a>
+        <a href="{{ printf "%show-to-fill/" .URL }}" class="text-ink underline underline-offset-4">{{ if $isZh }}怎么填{{ else }}How to fill{{ end }}</a>
+        <a href="{{ printf "%sis-ivisa-official/" .URL }}" class="text-ink underline underline-offset-4">{{ if $isZh }}iVisa 是官方吗{{ else }}iVisa check{{ end }}</a>
+      </div>
+      {{- end }}
+    </article>
     {{- end }}
     {{- end }}
   </div>

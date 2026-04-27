@@ -1,11 +1,12 @@
 ---
-title: "iVisa 是墨西哥 FMM 官方网站吗？（不是）"
+title: "iVisa 是墨西哥 FMM 官网吗？不是：官方 INM 网址和费用说明"
 kicker: "不是。iVisa 是商业中介。墨西哥 FMM-E 官方站在 inm.gob.mx，免费。"
-description: "回答“iVisa 墨西哥 FMM 官方吗”——不是。FMM-E 官方站是 inm.gob.mx/fmme/，不收中介费。"
+description: "iVisa 不是墨西哥 FMM-E 官方网站。真正官网是 inm.gob.mx/fmme/；这里说明 FMM 是否免费、如何判断真假和付钱后怎么办。"
 date: 2026-04-27
 lastmod: 2026-04-27
 country: "mexico"
 weight: 30
+keywords: ["iVisa 墨西哥", "墨西哥 FMM 官网", "FMM-E 免费", "墨西哥入境表骗局", "INM FMM"]
 faq:
   - q: "iVisa 是墨西哥 FMM 官方网站吗？"
     a: "不是。iVisa 是商业中介，与墨西哥国家移民局 INM 没有任何关联。"

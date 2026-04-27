@@ -1,7 +1,7 @@
 ---
-title: "印度尼西亚"
+title: "印尼 e-CD 海关申报官网、免费填写和巴厘岛入境指南"
 kicker: "关于印尼电子海关申报（e-CD）你需要知道的一切，不必经手任何中介。"
-description: "免费、独立的印尼官方 e-CD 表单中文指南。所有入境者必填，免费，只在 ecd.beacukai.go.id 受理。"
+description: "印尼 e-CD 中文指南：官方网址 ecd.beacukai.go.id、免费海关申报、巴厘岛/雅加达入境怎么填、iVisa 是否官方。"
 ---
 
 印尼电子海关申报（e-CD）是一份所有入境者必填的免费电子表单 —— 包括印尼公民。它在 2022 年取代了纸质海关申报表，只在 `ecd.beacukai.go.id` 受理。
@@ -15,6 +15,14 @@ description: "免费、独立的印尼官方 e-CD 表单中文指南。所有入
 ### 1. 不收费的 e-CD 全解
 谁要填、什么时候填、如何分辨海关官方站和转售骗局。
 → [阅读概览](/zh/indonesia/e-cd/)
+
+### 2. 每个字段怎么填
+按印尼官方 e-CD 海关申报表顺序解释护照、航班、行李、现金和海关问题。
+→ [字段逐项指南](/zh/indonesia/how-to-fill/)
+
+### 3. iVisa 是印尼海关或落地签官方吗？
+不是。这里解释免费 e-CD、付费 e-VOA、iVisa 加价，以及你到底买到了什么。
+→ [iVisa 官方性判断](/zh/indonesia/is-ivisa-official/)
 
 ## 速记要点
 

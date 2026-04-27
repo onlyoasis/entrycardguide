@@ -1,11 +1,12 @@
 ---
-title: "iVisa 是多米尼加 E-Ticket 官方网站吗？（不是）"
+title: "iVisa 是多米尼加 E-Ticket 官网吗？不是：官方站和免费二维码"
 kicker: "不是。iVisa 是商业中介。多米尼加 E-Ticket 官方站是 eticket.migracion.gob.do，免费。"
-description: "回答“iVisa 多米尼加 E-Ticket 官方吗”——不是。真正官方站是 eticket.migracion.gob.do。"
+description: "iVisa 不是多米尼加 E-Ticket 官方网站。真正官网是 eticket.migracion.gob.do，E-Ticket 免费；这里说明真假判断和付钱后怎么办。"
 date: 2026-04-27
 lastmod: 2026-04-27
 country: "dominican"
 weight: 30
+keywords: ["iVisa 多米尼加", "多米尼加 E-Ticket 官网", "多米尼加入境二维码", "DR E-Ticket 免费", "E-Ticket 假站"]
 faq:
   - q: "iVisa 是多米尼加 E-Ticket 官方网站吗？"
     a: "不是。iVisa 是商业中介，与多米尼加移民总局 DGM 没有任何关联。"

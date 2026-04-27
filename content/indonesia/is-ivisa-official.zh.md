@@ -1,7 +1,7 @@
 ---
-title: "iVisa 是印尼海关 / 落地签官方网站吗？（不是）"
+title: "iVisa 是印尼海关或落地签官网吗？不是：e-CD 免费、e-VOA 官方费用"
 kicker: "不是。iVisa 是商业中介。印尼 e-CD 海关申报在 ecd.beacukai.go.id 免费；官方落地签 e-VOA 在 molina.imigrasi.go.id，政府费 $35 美元。"
-description: "回答'iVisa 印尼官方'—— 不是。iVisa 是商业中介。印尼政府为两个不同的表单运营两个独立的官方站点。"
+description: "iVisa 不是印尼海关或落地签官网。e-CD 官方免费，e-VOA 有政府费用；这里说明两个官方站和 iVisa 加价。"
 date: 2026-04-26
 lastmod: 2026-04-26
 country: "indonesia"

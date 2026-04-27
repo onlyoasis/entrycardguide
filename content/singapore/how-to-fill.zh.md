@@ -1,7 +1,7 @@
 ---
-title: "新加坡 SGAC 入境卡字段填写完整指南 2026"
+title: "新加坡 SGAC 入境卡怎么填 2026：ICA 官方字段指南"
 kicker: "新加坡官方入境卡字段逐项讲解，常见错误及含义。约 6 分钟看完。"
-description: "免费、独立的新加坡官方 SGAC 字段填写指南。官方网址 eservices.ica.gov.sg，每个字段实操讲解，所有外国入境者必读。"
+description: "新加坡 SGAC 入境卡怎么填：按 ICA 官方表单讲解护照、航班、住址和健康声明字段，附免费官网入口。"
 date: 2026-04-26
 lastmod: 2026-04-26
 country: "singapore"
