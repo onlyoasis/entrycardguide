@@ -17,9 +17,17 @@
   {{- end }}
 
   {{- with .Lastmod }}
-  <div class="py-2 border-b border-rule border-dotted">
+  {{- $age := now.Sub . }}
+  {{- $days := math.Floor (div $age.Hours 24) }}
+  {{- $tone := "verified" }}
+  {{- if gt $days 90 }}{{- $tone = "stale" -}}{{- end }}
+  {{- if gt $days 365 }}{{- $tone = "very-stale" -}}{{- end }}
+  <div class="py-2 border-b border-rule border-dotted" data-freshness="{{ $tone }}">
     <span class="block text-xs text-muted font-mono uppercase tracking-wide2">{{ i18n "rail_last_verified" }}</span>
     <span class="text-small">{{ dateFormat "January 2, 2006" . }}</span>
+    <span class="block text-xs mt-1{{ if eq $tone "verified" }} text-verified{{ end }}{{ if eq $tone "stale" }} text-mark{{ end }}{{ if eq $tone "very-stale" }} text-scam{{ end }}">
+      {{ $days }} {{ i18n "freshness_days_ago" }}
+    </span>
     <span class="rail-verified mt-2 block">{{ i18n "verified_badge" }}</span>
   </div>
   {{- end }}
@@ -35,6 +43,12 @@
     <span class="block text-xs text-muted font-mono uppercase tracking-wide2">{{ i18n "rail_archived_at" }}</span>
     <a href="https://web.archive.org/web/{{ .Permalink }}" class="font-mono text-small text-ink">web.archive.org</a>
   </div>
+</div>
+
+<div class="border-t-2 border-ink pt-md mb-xl">
+  <h4 class="font-mono text-meta uppercase text-muted mb-3 font-medium">{{ i18n "rail_freshness" }}</h4>
+  <p class="text-small text-muted leading-relaxed">{{ i18n "rail_freshness_explainer" }}
+    <a href="{{ "/changelog/" | relLangURL }}" class="text-ink">{{ i18n "rail_see_changelog" }} -&gt;</a></p>
 </div>
 
 <div class="border-t-2 border-ink pt-md mb-xl">

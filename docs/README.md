@@ -79,8 +79,8 @@ content/thailand/
 | [03](./tasks/03-scam-site-screenshots.md) | 假站真实截图（16 张）| 🔵 待做 | 1.5–3 小时 | ⭐ |
 | [04](./tasks/04-affiliate-links-revenue-integrity.md) | 联盟链接 / 收入完整性 | 🔵 待做 | 2–4 小时 | ⭐⭐ |
 | [05](./tasks/05-bing-webmaster-tools.md) | Bing Webmaster Tools 提交 | 🔵 待做 | 10 分钟 | ⭐ |
-| [06](./tasks/06-changelog-and-freshness.md) | 变更日志 + 新鲜度信号 | 🔵 待做 | 3–5 小时 | ⭐⭐ |
-| [07](./tasks/07-about-methodology-section.md) | About 页方法论部分（信任叙事核心）| 🔵 待做 | 1.5 小时 | ⭐⭐ |
+| [06](./tasks/06-changelog-and-freshness.md) | 变更日志 + 新鲜度信号 | ✅ 已完成 | — | — |
+| [07](./tasks/07-about-methodology-section.md) | About 页方法论部分（信任叙事核心）| ✅ 已完成 | — | — |
 
 ---
 

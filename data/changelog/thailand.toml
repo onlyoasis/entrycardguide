@@ -1,0 +1,11 @@
+# Thailand changelog. Append to this file when Thai immigration policy changes.
+
+[[entries]]
+date = "2026-04-22"
+summary = "Initial TDAC coverage published"
+detail = "Covers TDAC at tdac.immigration.go.th, field validation rules, and iVisa/non-official site warnings."
+
+[[entries]]
+date = "2026-04-26"
+summary = "Scam-site DNS audit"
+detail = "Removed stale non-resolving scam domains and kept only live domains with documented evidence."

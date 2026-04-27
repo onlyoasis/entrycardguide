@@ -1,0 +1,6 @@
+# Mexico changelog. Append to this file when INM policy changes.
+
+[[entries]]
+date = "2026-04-24"
+summary = "Initial FMM coverage published"
+detail = "Covers Mexico FMM/FMM-E official URLs, field guidance, and known commercial middleman patterns."

@@ -1,6 +1,8 @@
 # Task 06 — Add a changelog page + content freshness signals
 
-**Status:** open
+**Status:** completed
+**Completed by:** Codex
+**Completed on:** 2026-04-27
 **Estimated time:** 3–5 hours initial setup, then ~30 min/month ongoing
 **Difficulty:** ⭐⭐ (light Hugo work + some monitoring discipline)
 **Skills needed:** Hugo template editing, basic markdown, ability to monitor government immigration news
