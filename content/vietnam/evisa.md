@@ -65,10 +65,10 @@ If a site asks for your photo or payment but the URL is not `.gov.vn`, you are n
 These sites all charge significantly more than $25 USD for the same Vietnamese government e-visa. Some submit a real application on your behalf. Some don't.
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="vietnam" domain="vietnam-evisa.org" >}}
-{{< scam-site country="vietnam" domain="evisa-vietnam.com" >}}
-{{< scam-site country="vietnam" domain="ivisa.com" >}}
-{{< scam-site country="vietnam" domain="vietnam-visa-online.com" >}}
+{{< scam-site country="vietnam" domain="vietnam-evisa.org" screenshot="/scams/vietnam-evisa-org.png" >}}
+{{< scam-site country="vietnam" domain="evisa-vietnam.com" screenshot="/scams/evisa-vietnam-com.png" >}}
+{{< scam-site country="vietnam" domain="ivisa.com" screenshot="/scams/ivisa-com-vietnam.png" >}}
+{{< scam-site country="vietnam" domain="vietnam-visa-online.com" screenshot="/scams/vietnam-visa-online-com.png" >}}
 </div>
 
 Screenshots captured April 2026. Archived snapshots available via [archive.org](https://web.archive.org/).

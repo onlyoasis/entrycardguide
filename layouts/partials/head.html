@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="{{ .Description | default .Site.Params.description }}">
 
-<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+<title>{{ if .IsHome }}{{ if eq .Site.Language.Lang "zh" }}{{ .Title }} · {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
 
 {{- /* Canonical */ -}}
 <link rel="canonical" href="{{ .Permalink }}">

@@ -57,8 +57,8 @@ If a domain meets any of those criteria, treat it as untrusted regardless of whe
 ## The scam gallery
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="mexico" domain="mexico-fmm.com" >}}
-{{< scam-site country="mexico" domain="ivisa.com" >}}
+{{< scam-site country="mexico" domain="mexico-fmm.com" screenshot="/scams/mexico-fmm-com.png" >}}
+{{< scam-site country="mexico" domain="ivisa.com" screenshot="/scams/ivisa-com-mexico.png" >}}
 </div>
 
 Screenshots captured April 2026. Archived snapshots on [Wayback Machine](https://web.archive.org/).

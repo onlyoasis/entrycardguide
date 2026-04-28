@@ -77,10 +77,10 @@ iVisa 在政府费用之上加了服务费。他们的总价通常是：
 ## 假站图鉴
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="vietnam" domain="ivisa.com" >}}
-{{< scam-site country="vietnam" domain="vietnam-evisa.org" >}}
-{{< scam-site country="vietnam" domain="evisa-vietnam.com" >}}
-{{< scam-site country="vietnam" domain="vietnam-visa-online.com" >}}
+{{< scam-site country="vietnam" domain="ivisa.com" screenshot="/scams/ivisa-com-vietnam.png" >}}
+{{< scam-site country="vietnam" domain="vietnam-evisa.org" screenshot="/scams/vietnam-evisa-org.png" >}}
+{{< scam-site country="vietnam" domain="evisa-vietnam.com" screenshot="/scams/evisa-vietnam-com.png" >}}
+{{< scam-site country="vietnam" domain="vietnam-visa-online.com" screenshot="/scams/vietnam-visa-online-com.png" >}}
 </div>
 
 四个都有据可查的商业中介。没有一个是越南政府。

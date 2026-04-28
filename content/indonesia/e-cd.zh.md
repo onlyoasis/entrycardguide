@@ -69,8 +69,8 @@ e-CD 大约 9 个字段，分布在 3 部分：旅客身份、行程信息、海
 下面这些站点都对免费的 e-CD 收费。其中一些代你提交了真表，另一些没有。
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="indonesia" domain="ivisa.com" >}}
-{{< scam-site country="indonesia" domain="indonesia-evoa.com" >}}
+{{< scam-site country="indonesia" domain="ivisa.com" screenshot="/scams/ivisa-com-indonesia.png" >}}
+{{< scam-site country="indonesia" domain="indonesia-evoa.com" screenshot="/scams/indonesia-evoa-com.png" >}}
 </div>
 
 截图于 2026 年 4 月。存档可在 [archive.org](https://web.archive.org/) 查询。

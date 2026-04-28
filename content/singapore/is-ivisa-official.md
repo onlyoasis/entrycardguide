@@ -51,7 +51,7 @@ Singapore's `.gov.sg` suffix is restricted to government entities. So the test i
 ## The scam gallery
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="singapore" domain="ivisa.com" >}}
+{{< scam-site country="singapore" domain="ivisa.com" screenshot="/scams/ivisa-com-singapore.png" >}}
 </div>
 
 iVisa is the most consistently-resolving commercial middleman for Singapore SGAC. Other lookalike domains exist intermittently — they appear in Google ads, take payments, then disappear when ICA issues a takedown notice or the registrar receives complaints. The pattern is what to recognize, not specific domain names.

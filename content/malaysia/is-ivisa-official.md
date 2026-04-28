@@ -65,8 +65,8 @@ No, same as the short answer above.
 ## The scam gallery
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="malaysia" domain="malaysia-mdac.com" >}}
-{{< scam-site country="malaysia" domain="ivisa.com" >}}
+{{< scam-site country="malaysia" domain="malaysia-mdac.com" screenshot="/scams/malaysia-mdac-com.png" >}}
+{{< scam-site country="malaysia" domain="ivisa.com" screenshot="/scams/ivisa-com-malaysia.png" >}}
 </div>
 
 Screenshots captured April 2026. Archived on [Wayback Machine](https://web.archive.org/).

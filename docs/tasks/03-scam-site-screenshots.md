@@ -1,11 +1,13 @@
 # Task 03 — Capture real screenshots of scam-site cards
 
-**Status:** open
+**Status:** completed on 2026-04-28, with one documented fallback
 **Estimated time:** 1.5–3 hours
 **Difficulty:** ⭐ (mechanical, but requires care around live scam sites)
 **Skills needed:** basic shell, image editing optional, browser automation a plus
 
 ## What this task is
+
+**Completion note:** 14 real screenshots are now wired into the scam-site cards. `thailand-tdac.com` timed out through direct request, image.thum.io, and isolated Playwright Chromium on 2026-04-28, so its cards intentionally keep the evidence-panel fallback instead of using a blank or fabricated screenshot.
 
 Every country page on entrycardguide.com has a "scam gallery" section that renders cards for known commercial middleman / scam sites. Right now, when no real screenshot is available, the card shows a paper-colored evidence panel with text from `data/official_urls/{country}.toml`.
 

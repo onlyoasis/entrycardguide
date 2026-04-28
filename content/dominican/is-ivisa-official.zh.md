@@ -43,8 +43,8 @@ E-Ticket 免费。一个表单同时覆盖入境和离境。
 ## 已知非官方站点
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="dominican" domain="eticket-dominican.com" >}}
-{{< scam-site country="dominican" domain="ivisa.com" >}}
+{{< scam-site country="dominican" domain="eticket-dominican.com" screenshot="/scams/eticket-dominican-com.png" >}}
+{{< scam-site country="dominican" domain="ivisa.com" screenshot="/scams/ivisa-com-dominican.png" >}}
 </div>
 
 完整流程见 [多米尼加 E-Ticket 指南](/zh/dominican/eticket/)。

@@ -43,8 +43,8 @@ iVisa 是商业签证和旅行文件服务，不是墨西哥国家移民局（IN
 ## 已知非官方站点
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="mexico" domain="mexico-fmm.com" >}}
-{{< scam-site country="mexico" domain="ivisa.com" >}}
+{{< scam-site country="mexico" domain="mexico-fmm.com" screenshot="/scams/mexico-fmm-com.png" >}}
+{{< scam-site country="mexico" domain="ivisa.com" screenshot="/scams/ivisa-com-mexico.png" >}}
 </div>
 
 更多背景见 [墨西哥 FMM 完整指南](/zh/mexico/fmm/)。

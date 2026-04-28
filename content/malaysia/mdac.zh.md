@@ -78,8 +78,8 @@ MDAC 大约 9 个字段，分布在 3 部分：旅客身份、行程、马来西
 ## 已知**不是** MDAC 的网站
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="malaysia" domain="malaysia-mdac.com" >}}
-{{< scam-site country="malaysia" domain="ivisa.com" >}}
+{{< scam-site country="malaysia" domain="malaysia-mdac.com" screenshot="/scams/malaysia-mdac-com.png" >}}
+{{< scam-site country="malaysia" domain="ivisa.com" screenshot="/scams/ivisa-com-malaysia.png" >}}
 </div>
 
 截图于 2026 年 4 月。存档可在 [archive.org](https://web.archive.org/) 查询。

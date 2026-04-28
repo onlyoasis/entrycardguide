@@ -80,8 +80,8 @@ For a field-by-field walkthrough with common errors, read our [how to fill the F
 These sites all charge money for a free form. Some of them submit a real FMM on your behalf. Some of them do not.
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="mexico" domain="mexico-fmm.com" >}}
-{{< scam-site country="mexico" domain="ivisa.com" >}}
+{{< scam-site country="mexico" domain="mexico-fmm.com" screenshot="/scams/mexico-fmm-com.png" >}}
+{{< scam-site country="mexico" domain="ivisa.com" screenshot="/scams/ivisa-com-mexico.png" >}}
 </div>
 
 Screenshots captured April 2026. Archived snapshots available via [archive.org](https://web.archive.org/).

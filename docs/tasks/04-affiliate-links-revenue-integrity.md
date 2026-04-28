@@ -1,11 +1,13 @@
 # Task 04 — Wire up real affiliate links (close the credibility gap)
 
-**Status:** open
+**Status:** partially complete
 **Estimated time:** 2–4 hours (most of which is filling out partner application forms)
 **Difficulty:** ⭐⭐ (no hard tech; the gating step is approval timelines from affiliate networks)
 **Skills needed:** basic Hugo template editing, ability to fill affiliate sign-up forms
 
 ## What this task is
+
+**Current state:** SafetyWing is approved and live via `params.affiliate.safetywing_url`, rendered through `layouts/partials/affiliate-footer.html` with sponsored disclosure. Airalo/eSIM is still pending, so this task should not be treated as fully complete yet.
 
 Every article on entrycardguide.com claims "our only revenue is from travel insurance and eSIM affiliate links at the bottom of this page."
 

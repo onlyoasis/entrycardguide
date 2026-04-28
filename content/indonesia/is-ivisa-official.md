@@ -80,8 +80,8 @@ No.
 ## The scam gallery
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="indonesia" domain="ivisa.com" >}}
-{{< scam-site country="indonesia" domain="indonesia-evoa.com" >}}
+{{< scam-site country="indonesia" domain="ivisa.com" screenshot="/scams/ivisa-com-indonesia.png" >}}
+{{< scam-site country="indonesia" domain="indonesia-evoa.com" screenshot="/scams/indonesia-evoa-com.png" >}}
 </div>
 
 Both are documented commercial middlemen. Neither is the Indonesian government.

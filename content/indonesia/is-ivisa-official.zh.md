@@ -79,8 +79,8 @@ iVisa 实际给了什么，看你买的是什么：
 ## 假站图鉴
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="indonesia" domain="ivisa.com" >}}
-{{< scam-site country="indonesia" domain="indonesia-evoa.com" >}}
+{{< scam-site country="indonesia" domain="ivisa.com" screenshot="/scams/ivisa-com-indonesia.png" >}}
+{{< scam-site country="indonesia" domain="indonesia-evoa.com" screenshot="/scams/indonesia-evoa-com.png" >}}
 </div>
 
 两个都是有据可查的商业中介。都不是印尼政府。

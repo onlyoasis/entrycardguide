@@ -70,7 +70,7 @@ These sites all charge money for a free form. Some of them submit a real form on
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
 {{< scam-site country="thailand" domain="thailand-tdac.com" >}}
-{{< scam-site country="thailand" domain="ivisa.com" >}}
+{{< scam-site country="thailand" domain="ivisa.com" screenshot="/scams/ivisa-com-thailand.png" >}}
 </div>
 
 Screenshots captured April 2026. Archived snapshots available via [archive.org](https://web.archive.org/).

@@ -56,7 +56,7 @@ TDAC 本身免费。不存在加急、优先、高级或白手套服务。
 ## 已知非官方站点
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="thailand" domain="ivisa.com" >}}
+{{< scam-site country="thailand" domain="ivisa.com" screenshot="/scams/ivisa-com-thailand.png" >}}
 {{< scam-site country="thailand" domain="thailand-tdac.com" >}}
 </div>
 

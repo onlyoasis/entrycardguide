@@ -61,7 +61,7 @@ If a domain meets any of those criteria, treat it as untrusted regardless of whe
 ## The scam gallery
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="thailand" domain="ivisa.com" >}}
+{{< scam-site country="thailand" domain="ivisa.com" screenshot="/scams/ivisa-com-thailand.png" >}}
 {{< scam-site country="thailand" domain="thailand-tdac.com" >}}
 </div>
 

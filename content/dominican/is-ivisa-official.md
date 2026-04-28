@@ -65,8 +65,8 @@ No, same as the short answer above. iVisa is a commercial middleman.
 ## The scam gallery
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="dominican" domain="eticket-dominican.com" >}}
-{{< scam-site country="dominican" domain="ivisa.com" >}}
+{{< scam-site country="dominican" domain="eticket-dominican.com" screenshot="/scams/eticket-dominican-com.png" >}}
+{{< scam-site country="dominican" domain="ivisa.com" screenshot="/scams/ivisa-com-dominican.png" >}}
 </div>
 
 Screenshots captured April 2026. Archived on [Wayback Machine](https://web.archive.org/).

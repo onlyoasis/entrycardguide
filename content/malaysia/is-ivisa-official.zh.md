@@ -39,8 +39,8 @@ iVisa 是商业签证和旅行文件服务，不是马来西亚移民局。MDAC 
 ## 已知非官方站点
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="malaysia" domain="malaysia-mdac.com" >}}
-{{< scam-site country="malaysia" domain="ivisa.com" >}}
+{{< scam-site country="malaysia" domain="malaysia-mdac.com" screenshot="/scams/malaysia-mdac-com.png" >}}
+{{< scam-site country="malaysia" domain="ivisa.com" screenshot="/scams/ivisa-com-malaysia.png" >}}
 </div>
 
 逐字段填写见 [马来西亚 MDAC 指南](/zh/malaysia/mdac/)。

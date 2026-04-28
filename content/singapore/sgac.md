@@ -76,7 +76,7 @@ If a site asks for either, you are not on the official site.
 These sites all charge fees for what should be free. Some submit the real form, some don't.
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="singapore" domain="ivisa.com" >}}
+{{< scam-site country="singapore" domain="ivisa.com" screenshot="/scams/ivisa-com-singapore.png" >}}
 </div>
 
 Screenshots captured April 2026. Archived snapshots available via [archive.org](https://web.archive.org/).
