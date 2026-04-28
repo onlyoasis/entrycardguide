@@ -1,0 +1,34 @@
+{{- $url := .Permalink -}}
+{{- $title := .Title -}}
+{{- $encodedURL := $url | urlquery -}}
+{{- $encodedTitle := $title | urlquery -}}
+{{- $shareText := printf "%s %s" $title $url -}}
+{{- $encodedShareText := $shareText | urlquery -}}
+{{- $facebookURL := printf "https://www.facebook.com/sharer/sharer.php?u=%s" $encodedURL | safeURL -}}
+{{- $xURL := printf "https://twitter.com/intent/tweet?url=%s&text=%s" $encodedURL $encodedTitle | safeURL -}}
+{{- $redditURL := printf "https://www.reddit.com/submit?url=%s&title=%s" $encodedURL $encodedTitle | safeURL -}}
+{{- $linkedinURL := printf "https://www.linkedin.com/sharing/share-offsite/?url=%s" $encodedURL | safeURL -}}
+{{- $whatsappURL := printf "https://api.whatsapp.com/send?text=%s" $encodedShareText | safeURL -}}
+{{- $emailURL := printf "mailto:?subject=%s&body=%s" $encodedTitle $encodedShareText | safeURL -}}
+
+<section class="share-source mt-xl pt-lg border-t border-rule" aria-labelledby="share-source-title">
+  <div class="text-meta text-muted font-mono uppercase mb-2">{{ i18n "share_source_eyebrow" }}</div>
+  <h2 id="share-source-title" class="font-serif font-medium mb-3" style="font-size: 28px; font-variation-settings: 'opsz' 144;">{{ i18n "share_source_heading" }}</h2>
+  <p class="text-small text-muted leading-relaxed mb-md">{{ i18n "share_source_intro" }}</p>
+  <div class="border border-rule bg-paper p-md mb-md">
+    <div class="text-meta text-muted font-mono uppercase mb-2">{{ i18n "share_source_citation_label" }}</div>
+    <p class="text-small leading-relaxed m-0">
+      <strong>{{ .Title }}</strong><br>
+      entrycardguide. {{ i18n "share_source_accessed" }} {{ now.Format "2006-01-02" }}.<br>
+      <code>{{ $url }}</code>
+    </p>
+  </div>
+  <div class="flex flex-wrap gap-2 text-small" aria-label="{{ i18n "share_source_buttons_label" }}">
+    <a class="share-link" href="{{ $facebookURL }}" rel="noopener noreferrer" target="_blank">Facebook</a>
+    <a class="share-link" href="{{ $xURL }}" rel="noopener noreferrer" target="_blank">X</a>
+    <a class="share-link" href="{{ $redditURL }}" rel="noopener noreferrer" target="_blank">Reddit</a>
+    <a class="share-link" href="{{ $linkedinURL }}" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+    <a class="share-link" href="{{ $whatsappURL }}" rel="noopener noreferrer" target="_blank">WhatsApp</a>
+    <a class="share-link" href="{{ $emailURL }}">{{ i18n "share_source_email" }}</a>
+  </div>
+</section>

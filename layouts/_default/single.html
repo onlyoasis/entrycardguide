@@ -30,6 +30,8 @@
       {{ .Content }}
     </div>
 
+    {{- partial "share-source.html" . -}}
+
     {{- if .Section }}
     {{- partial "affiliate-footer.html" . -}}
     {{- end }}

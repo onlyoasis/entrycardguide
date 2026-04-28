@@ -61,6 +61,11 @@ defaultContentLanguageInSubdir = false
       name = "About"
       url = "/about/"
       weight = 80
+    [[languages.en.menu.main]]
+      identifier = "official-links"
+      name = "Official Links"
+      url = "/official-links/"
+      weight = 75
 
   [languages.zh]
     languageName = "简体中文"
@@ -109,6 +114,11 @@ defaultContentLanguageInSubdir = false
       name = "关于"
       url = "/zh/about/"
       weight = 80
+    [[languages.zh.menu.main]]
+      identifier = "official-links"
+      name = "官方目录"
+      url = "/zh/official-links/"
+      weight = 75
 
 [params]
   defaultTheme = "light"

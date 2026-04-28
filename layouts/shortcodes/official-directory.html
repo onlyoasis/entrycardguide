@@ -1,0 +1,53 @@
+{{- $isZh := eq .Site.Language.Lang "zh" -}}
+{{- $countries := slice
+  (dict "key" "thailand" "en" "Thailand" "zh" "泰国" "form" "tdac" "guide" "tdac")
+  (dict "key" "malaysia" "en" "Malaysia" "zh" "马来西亚" "form" "mdac" "guide" "mdac")
+  (dict "key" "singapore" "en" "Singapore" "zh" "新加坡" "form" "sgac" "guide" "sgac")
+  (dict "key" "indonesia" "en" "Indonesia" "zh" "印度尼西亚" "form" "ecd" "guide" "e-cd")
+  (dict "key" "mexico" "en" "Mexico" "zh" "墨西哥" "form" "fmm" "guide" "fmm")
+  (dict "key" "dominican" "en" "Dominican Republic" "zh" "多米尼加" "form" "eticket" "guide" "eticket")
+  (dict "key" "vietnam" "en" "Vietnam" "zh" "越南" "form" "evisa" "guide" "evisa")
+-}}
+
+<div class="not-prose border-t border-rule">
+  {{- range $countries }}
+    {{- $countryData := index hugo.Data.official_urls .key -}}
+    {{- $official := index $countryData .form -}}
+    {{- $countryName := cond $isZh .zh .en -}}
+    {{- $countryPath := cond $isZh (printf "/zh/%s/" .key) (printf "/%s/" .key) -}}
+    {{- $guidePath := printf "%s%s/" $countryPath .guide -}}
+    {{- $fakePath := printf "%sis-ivisa-official/" $countryPath -}}
+    <article class="py-6 border-b border-rule">
+      <div class="text-meta text-muted font-mono uppercase mb-2">{{ $countryName }}</div>
+      <h2 class="mb-2">
+        <a href="{{ $guidePath }}" class="text-ink no-underline hover:underline underline-offset-4">{{ $official.name }}</a>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-md text-small">
+        <div>
+          <div class="text-muted mb-1">{{ i18n "directory_official_url" }}</div>
+          <a href="{{ $official.url }}" rel="noopener" class="font-mono text-ink underline underline-offset-4">{{ replaceRE "^https?://" "" $official.url }}</a>
+        </div>
+        <div>
+          <div class="text-muted mb-1">{{ i18n "directory_agency" }}</div>
+          <span>{{ $official.agency }}</span>
+        </div>
+        <div>
+          <div class="text-muted mb-1">{{ i18n "directory_fee" }}</div>
+          <span>{{ cond (eq .key "vietnam") (i18n "directory_fee_vietnam") (i18n "directory_fee_free") }}</span>
+        </div>
+        <div>
+          <div class="text-muted mb-1">{{ i18n "directory_last_verified" }}</div>
+          <span>{{ $official.last_verified }}</span>
+        </div>
+      </div>
+      <div class="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-small">
+        <a href="{{ $guidePath }}" class="text-ink underline underline-offset-4">{{ i18n "directory_read_guide" }}</a>
+        <a href="{{ printf "%show-to-fill/" $countryPath }}" class="text-ink underline underline-offset-4">{{ i18n "directory_how_to_fill" }}</a>
+        <a href="{{ $fakePath }}" class="text-ink underline underline-offset-4">{{ i18n "directory_ivisa_check" }}</a>
+        {{- with $official.archive_url }}
+        <a href="{{ . }}" rel="noopener" class="text-ink underline underline-offset-4">{{ i18n "directory_archive" }}</a>
+        {{- end }}
+      </div>
+    </article>
+  {{- end }}
+</div>

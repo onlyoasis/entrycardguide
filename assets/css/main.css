@@ -188,6 +188,14 @@
     @apply bg-ink text-paper;
   }
 
+  .share-link {
+    @apply inline-flex items-center border border-rule px-3 py-2 text-ink no-underline rounded-sm;
+    transition: border-color theme('transitionDuration.link') ease, background-color theme('transitionDuration.link') ease;
+  }
+  .share-link:hover {
+    @apply border-ink bg-white;
+  }
+
   /* Verified indicator dot */
   .rail-verified {
     @apply inline-flex items-center gap-1 text-verified font-sans font-semibold text-xs uppercase tracking-wide2;

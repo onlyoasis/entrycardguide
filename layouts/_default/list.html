@@ -9,6 +9,10 @@
     {{ .Content }}
   </div>
 
+  {{- if .Section }}
+  {{- partial "share-source.html" . -}}
+  {{- end }}
+
   <div class="border-t border-rule">
     {{- range .Pages.ByLastmod.Reverse }}
     <article class="py-6 border-b border-rule">

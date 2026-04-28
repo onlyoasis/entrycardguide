@@ -11,4 +11,6 @@ We publish the official URLs, explain every field the form asks, and let you pre
 
 We don't collect your data. We don't charge you. We've never taken money from iVisa or any visa middleman. Our current affiliate revenue comes from clearly disclosed travel insurance links in eligible guides, and that's the entire business model.
 
+If you need one page to cite in a forum, FAQ, or travel-agent note, use the [official entry card links directory](/official-links/).
+
 We make every claim on this site auditable. [How to fact-check us](/about/#methodology): five independent paths.

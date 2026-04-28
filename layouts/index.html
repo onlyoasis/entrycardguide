@@ -46,7 +46,7 @@
       "singapore" "SGAC 入境卡：ICA 官方免费表单"
     -}}
     {{- range .Site.Menus.main }}
-    {{- if ne .Identifier "about" }}
+    {{- if and (ne .Identifier "about") (ne .Identifier "official-links") }}
     {{- $mainSlug := index $mainSlugs .Identifier }}
     <article class="border border-rule p-md">
       <h3 class="font-serif font-medium mb-1" style="font-size: 22px; font-variation-settings: 'opsz' 144;">
