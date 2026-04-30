@@ -19,6 +19,7 @@ for (const file of requiredFiles) {
 const robots = readFileSync("public/robots.txt", "utf8");
 for (const sitemap of [
   "https://entrycardguide.com/sitemap.xml",
+  "https://entrycardguide.com/en/sitemap.xml",
   "https://entrycardguide.com/zh/sitemap.xml",
 ]) {
   if (!robots.includes(`Sitemap: ${sitemap}`)) {

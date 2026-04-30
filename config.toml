@@ -3,6 +3,7 @@ title = "entrycardguide"
 enableGitInfo = true
 enableRobotsTXT = true
 summaryLength = 30
+disableKinds = ["taxonomy", "term"]
 
 # Multilingual setup
 # - English at root: /, /thailand/, /about/
@@ -153,10 +154,6 @@ defaultContentLanguageInSubdir = false
     endLevel = 3
     ordered = false
     startLevel = 2
-
-[taxonomies]
-  country = "countries"
-  tag = "tags"
 
 [security]
   [security.funcs]
