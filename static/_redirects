@@ -4,3 +4,14 @@
 
 # www → apex (force 301; preserves path and query)
 https://www.entrycardguide.com/*  https://entrycardguide.com/:splat  301!
+
+# Retired Hugo taxonomy pages. These were thin index pages and are not useful
+# search landing pages; send old cached URLs to the closest useful hub.
+/countries/  /  301
+/countries/*  /  301
+/tags/  /  301
+/tags/*  /  301
+/zh/countries/  /zh/  301
+/zh/countries/*  /zh/  301
+/zh/tags/  /zh/  301
+/zh/tags/*  /zh/  301
