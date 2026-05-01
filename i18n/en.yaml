@@ -30,6 +30,25 @@ validator_browser_only: "✓ 100% browser-side. No network calls. No tracking. V
 validator_rules_verified: "Rules last verified"
 validator_required_marker: " *"
 
+# Decision tool (decide.html shortcode + decide.ts)
+decide_eyebrow: "Tool · 60-second decision quiz"
+decide_heading: "Which arrival forms do you actually need?"
+decide_intro: "Pick your destination, answer 1-2 questions, get the exact list of free and paid government forms you need to file. We never store anything."
+decide_step: "Step"
+decide_back: "Back"
+decide_restart: "Start over"
+decide_open_official: "Open official site"
+decide_read_guide: "Read our guide"
+decide_no_forms: "Nothing to file."
+decide_no_forms_explainer: "You're exempt from the digital arrival card. Just bring your passport."
+decide_result_label: "Your answer"
+decide_no_js: "JavaScript is disabled. Pick a country directly:"
+decide_browser_only: "100% browser-side. Zero network calls. We do not store your selections."
+decide_data_verified: "Decision tree last verified"
+
+# Header / nav addition
+nav_decide: "Decide"
+
 # Footer
 footer_brand_tagline: "Independent · Not a government agency"
 footer_built_with: "Built with Hugo"

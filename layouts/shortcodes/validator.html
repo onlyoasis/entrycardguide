@@ -19,7 +19,7 @@
     <a href="https://github.com/onlyoasis/entrycardguide/blob/main/assets/js/validator.ts" class="text-ink">{{ i18n "validator_view_source" }}</a> {{ i18n "validator_to_verify" }}</p>
 
   {{- /* Embed rules as JSON for the browser to consume. Single source of truth. */ -}}
-  <script type="application/json" class="validator-rules">{{ $rules | jsonify }}</script>
+  <script type="application/json" class="validator-rules">{{ $rules | jsonify | safeJS }}</script>
 
   {{- range $name, $field := $rules.fields }}
   <div class="validator-row" data-field="{{ $name }}">

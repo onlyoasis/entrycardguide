@@ -1,0 +1,55 @@
+{{- /*
+  Usage: {{< decide >}}
+
+  Renders the decision-tool container. Reads data/decision/tree.json and
+  embeds it as a JSON script tag for assets/js/decide.ts to consume.
+  100% client-side. Zero network. Single source of truth: the JSON.
+*/ -}}
+{{- $tree := hugo.Data.decision.tree }}
+{{- if not $tree }}
+  {{- errorf "decide shortcode: no data at data/decision/tree.json" }}
+{{- end }}
+
+{{- /* Build i18n payload for the JS to use. Avoids a second round-trip to
+       Hugo template syntax inside the JS file. */ -}}
+{{- $i18n := dict
+  "decide_step" (i18n "decide_step")
+  "decide_back" (i18n "decide_back")
+  "decide_restart" (i18n "decide_restart")
+  "decide_open_official" (i18n "decide_open_official")
+  "decide_read_guide" (i18n "decide_read_guide")
+  "decide_no_forms" (i18n "decide_no_forms")
+  "decide_no_forms_explainer" (i18n "decide_no_forms_explainer")
+  "decide_result_label" (i18n "decide_result_label")
+}}
+
+<section class="decide-tool" aria-labelledby="decide-heading">
+  <div class="text-meta text-muted mb-2 font-mono uppercase">{{ i18n "decide_eyebrow" }}</div>
+  <h2 id="decide-heading" class="font-serif font-medium text-h1 mb-1" style="font-size: 32px; line-height: 1.15;">{{ i18n "decide_heading" }}</h2>
+  <p class="text-muted text-small mb-6">{{ i18n "decide_intro" }}</p>
+
+  <script type="application/json" class="decide-tree">{{ $tree | jsonify | safeJS }}</script>
+  <script type="application/json" class="decide-i18n">{{ $i18n | jsonify | safeJS }}</script>
+
+  {{- /* Where the JS will render. Pre-populated with a no-JS fallback. */ -}}
+  <div class="decide-canvas">
+    <noscript>
+      <p class="text-small text-muted">{{ i18n "decide_no_js" }}</p>
+      <ul>
+        <li><a href="{{ "/thailand/" | relLangURL }}">Thailand TDAC</a></li>
+        <li><a href="{{ "/mexico/" | relLangURL }}">Mexico FMM-E</a></li>
+        <li><a href="{{ "/dominican/" | relLangURL }}">Dominican Republic E-Ticket</a></li>
+        <li><a href="{{ "/malaysia/" | relLangURL }}">Malaysia MDAC</a></li>
+        <li><a href="{{ "/vietnam/" | relLangURL }}">Vietnam E-Visa</a></li>
+        <li><a href="{{ "/indonesia/" | relLangURL }}">Indonesia e-CD</a></li>
+        <li><a href="{{ "/singapore/" | relLangURL }}">Singapore SGAC</a></li>
+      </ul>
+    </noscript>
+  </div>
+
+  <div class="mt-md pt-md border-t border-rule text-xs text-muted">
+    ✓ {{ i18n "decide_browser_only" }}
+    <br>
+    ✓ {{ i18n "decide_data_verified" }} <strong class="text-ink">{{ $tree.lastVerified }}</strong>.
+  </div>
+</section>

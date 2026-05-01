@@ -1,6 +1,30 @@
 /* ---------------------------------------------------------------- */
-/* Fonts: system stacks only until self-hosted WOFF2 files are committed. */
+/* Fonts — self-hosted WOFF2. Put files in assets/fonts/ (see README) */
 /* ---------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('/fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Instrument Sans';
+  src: url('/fonts/InstrumentSans-VariableFont_wdth,wght.woff2') format('woff2-variations');
+  font-weight: 400 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('/fonts/GeistMono-VariableFont_wght.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
 
 /* ---------------------------------------------------------------- */
 /* Tailwind layers                                                   */
@@ -171,6 +195,151 @@
     @apply absolute bottom-0 left-0 right-0 bg-ink text-paper font-mono text-xs px-3 py-1;
   }
 
+  /* Decision tool — interactive quiz */
+  .decide-tool {
+    @apply border-2 border-ink p-md mb-xl bg-paper;
+  }
+
+  .decide-canvas {
+    @apply min-h-[280px] py-md;
+  }
+
+  .decide-breadcrumbs {
+    @apply list-none p-0 mb-md text-small;
+    counter-reset: step;
+  }
+  .decide-breadcrumbs li {
+    @apply pb-2 mb-2 border-b border-rule border-dotted;
+  }
+  .decide-breadcrumbs li::before {
+    counter-increment: step;
+    content: counter(step) ". ";
+    @apply font-mono text-xs text-muted;
+  }
+  .decide-breadcrumbs li > span:first-child {
+    @apply mr-2;
+  }
+
+  .decide-step {
+    @apply mb-2;
+  }
+
+  .decide-question {
+    font-size: 24px;
+    line-height: 1.3;
+    @apply mb-md text-ink;
+  }
+
+  .decide-options {
+    @apply flex flex-col gap-2 mb-md;
+  }
+
+  .decide-option {
+    @apply flex justify-between items-center gap-md text-left
+           bg-paper border border-rule px-md py-3 cursor-pointer
+           text-ink font-sans;
+    font-size: 15px;
+    transition: background-color theme('transitionDuration.link') ease,
+                border-color theme('transitionDuration.link') ease;
+  }
+  .decide-option:hover,
+  .decide-option:focus-visible {
+    @apply bg-rule border-ink outline-none;
+  }
+  .decide-option-arrow {
+    @apply font-mono text-muted;
+    flex-shrink: 0;
+  }
+  .decide-option:hover .decide-option-arrow {
+    @apply text-ink;
+  }
+
+  .decide-back {
+    @apply bg-transparent border-0 cursor-pointer p-0 underline underline-offset-2;
+  }
+
+  /* Result state */
+  .decide-result-eyebrow {
+    @apply mb-2;
+  }
+  .decide-summary {
+    font-size: 26px;
+    line-height: 1.25;
+    @apply mb-md text-ink;
+  }
+
+  .decide-forms {
+    @apply flex flex-col gap-3 my-md;
+  }
+
+  .decide-form {
+    @apply border-l-4 border-verified bg-paper p-md;
+  }
+
+  .decide-form-header {
+    @apply flex justify-between items-baseline gap-md mb-1;
+  }
+  .decide-form-name {
+    @apply font-serif font-medium text-h2 text-ink;
+  }
+  .decide-form-fee {
+    @apply font-mono text-small uppercase tracking-wide2 px-2 py-1 rounded-sm;
+  }
+  .decide-form-fee.is-free {
+    @apply bg-verified text-paper;
+  }
+  .decide-form-fee.is-paid {
+    @apply bg-mark text-ink;
+  }
+  .decide-form-agency {
+    @apply mb-1;
+  }
+  .decide-form-deadline {
+    @apply mb-3 font-mono uppercase tracking-wide2;
+  }
+  .decide-form-actions {
+    @apply flex gap-3 flex-wrap;
+  }
+  .decide-form-cta-primary {
+    @apply bg-ink text-paper font-sans font-medium text-small px-4 py-2 no-underline rounded-sm;
+    transition: background-color theme('transitionDuration.link') ease;
+  }
+  .decide-form-cta-primary:hover {
+    @apply bg-verified;
+  }
+  .decide-form-cta-secondary {
+    @apply bg-transparent text-ink font-sans text-small px-4 py-2 no-underline border border-ink rounded-sm;
+    transition: background-color theme('transitionDuration.link') ease,
+                color theme('transitionDuration.link') ease;
+  }
+  .decide-form-cta-secondary:hover {
+    @apply bg-ink text-paper;
+  }
+
+  .decide-no-forms {
+    @apply border-l-4 border-verified bg-paper p-md mb-md;
+  }
+
+  .decide-note {
+    @apply text-muted leading-relaxed mt-md;
+  }
+  .decide-fallback {
+    @apply mt-2;
+  }
+  .decide-fallback-warning {
+    @apply mt-2 italic;
+  }
+  .decide-actions {
+    @apply mt-md pt-md border-t border-rule flex gap-md items-baseline;
+  }
+  .decide-restart {
+    @apply bg-ink text-paper font-sans font-medium text-small px-4 py-2 rounded-sm border-0 cursor-pointer;
+    transition: background-color theme('transitionDuration.link') ease;
+  }
+  .decide-restart:hover {
+    @apply bg-verified;
+  }
+
   /* Buttons — only 2 styles allowed */
   .btn-ink {
     @apply bg-ink text-paper font-sans font-medium text-small px-5 py-2 rounded-sm border-0 cursor-pointer;
@@ -186,14 +355,6 @@
   }
   .btn-ghost:hover {
     @apply bg-ink text-paper;
-  }
-
-  .share-link {
-    @apply inline-flex items-center border border-rule px-3 py-2 text-ink no-underline rounded-sm;
-    transition: border-color theme('transitionDuration.link') ease, background-color theme('transitionDuration.link') ease;
-  }
-  .share-link:hover {
-    @apply border-ink bg-white;
   }
 
   /* Verified indicator dot */

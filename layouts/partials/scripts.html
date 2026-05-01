@@ -1,7 +1,21 @@
 {{- /* JS pipeline — Hugo js.Build handles TS transpilation + bundling, zero npm for browser */ -}}
-{{- $opts := dict "targetPath" "js/validator.js" "minify" hugo.IsProduction "target" "es2020" "format" "iife" }}
-{{- $js := resources.Get "js/validator.ts" | js.Build $opts }}
+
+{{- /* Validator (loaded on every page so country pages with the validator
+       shortcode work; the script is small and safely no-ops elsewhere). */ -}}
+{{- $valOpts := dict "targetPath" "js/validator.js" "minify" hugo.IsProduction "target" "es2020" "format" "iife" }}
+{{- $val := resources.Get "js/validator.ts" | js.Build $valOpts }}
 {{- if hugo.IsProduction }}
-  {{- $js = $js | resources.Fingerprint "sha256" }}
+  {{- $val = $val | resources.Fingerprint "sha256" }}
 {{- end }}
-<script src="{{ $js.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $js.Data.Integrity }}"{{ end }} defer></script>
+<script src="{{ $val.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $val.Data.Integrity }}"{{ end }} defer></script>
+
+{{- /* Decision tool — only loaded when the page renders the {{< decide >}}
+       shortcode. Hugo can't easily detect this from here, so we ship it
+       site-wide; the script self-detects .decide-tool elements and no-ops
+       on pages without one. ~3KB minified. */ -}}
+{{- $decOpts := dict "targetPath" "js/decide.js" "minify" hugo.IsProduction "target" "es2020" "format" "iife" }}
+{{- $dec := resources.Get "js/decide.ts" | js.Build $decOpts }}
+{{- if hugo.IsProduction }}
+  {{- $dec = $dec | resources.Fingerprint "sha256" }}
+{{- end }}
+<script src="{{ $dec.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $dec.Data.Integrity }}"{{ end }} defer></script>

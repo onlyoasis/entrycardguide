@@ -1,0 +1,250 @@
+{
+  "version": "1.0",
+  "lastVerified": "2026-04-27",
+  "start": "country",
+  "states": {
+    "country": {
+      "type": "question",
+      "label": "Where are you going?",
+      "options": [
+        { "value": "thailand", "label": "Thailand", "next": "thailand_result" },
+        { "value": "mexico", "label": "Mexico", "next": "mexico_entry" },
+        { "value": "dominican", "label": "Dominican Republic", "next": "dominican_result" },
+        { "value": "malaysia", "label": "Malaysia", "next": "malaysia_status" },
+        { "value": "vietnam", "label": "Vietnam", "next": "vietnam_passport" },
+        { "value": "indonesia", "label": "Indonesia", "next": "indonesia_passport" },
+        { "value": "singapore", "label": "Singapore", "next": "singapore_status" }
+      ]
+    },
+
+    "thailand_result": {
+      "type": "result",
+      "country": "thailand",
+      "summary": "You need to file the Thailand Digital Arrival Card (TDAC).",
+      "forms": [
+        {
+          "name": "TDAC",
+          "fee": "FREE",
+          "url": "https://tdac.immigration.go.th",
+          "guide": "/thailand/tdac/",
+          "agency": "Royal Thai Immigration Bureau",
+          "deadline": "Within 3 days before arrival"
+        }
+      ],
+      "note": "All foreign visitors must file the TDAC. It is always free. Anyone charging you is a middleman."
+    },
+
+    "mexico_entry": {
+      "type": "question",
+      "label": "How are you entering Mexico?",
+      "options": [
+        { "value": "land", "label": "By land (car, bus, foot)", "next": "mexico_need" },
+        { "value": "sea", "label": "By sea (cruise, ferry)", "next": "mexico_need" },
+        { "value": "air_major", "label": "By air to a major airport (CUN, MEX, GDL, TIJ, PVR, SJD, etc.)", "next": "mexico_air_major" },
+        { "value": "air_other", "label": "By air to a smaller airport", "next": "mexico_need" }
+      ]
+    },
+    "mexico_air_major": {
+      "type": "result",
+      "country": "mexico",
+      "summary": "You probably do NOT need a separate FMM-E.",
+      "forms": [],
+      "note": "Most major Mexican airports (CUN, MEX, GDL, TIJ, PVR, SJD) now use a passport stamp instead of a separate FMM. The stamp itself authorizes your stay, no separate filing needed.",
+      "fallback_guide": "/mexico/fmm/",
+      "fallback_label": "Read the FMM overview if unsure",
+      "fallback_warning": "If you want extra safety, file the FMM-E anyway (free, takes 10 min). It's never a problem at the border to have one filed."
+    },
+    "mexico_need": {
+      "type": "result",
+      "country": "mexico",
+      "summary": "You need to file the FMM-E (Forma Migratoria Múltiple Electrónica).",
+      "forms": [
+        {
+          "name": "FMM-E",
+          "fee": "FREE",
+          "url": "https://www.inm.gob.mx/fmme/publico/en/solicitud.html",
+          "guide": "/mexico/fmm/",
+          "agency": "Instituto Nacional de Migración (INM)",
+          "deadline": "Any time before arrival; up to 30 days out"
+        }
+      ],
+      "note": "Land, sea, and smaller-airport entries still require the FMM-E. Free on the INM site. Keep the stub the border officer hands you until you exit Mexico."
+    },
+
+    "dominican_result": {
+      "type": "result",
+      "country": "dominican",
+      "summary": "You need to file the Dominican Republic E-Ticket.",
+      "forms": [
+        {
+          "name": "E-Ticket",
+          "fee": "FREE",
+          "url": "https://eticket.migracion.gob.do",
+          "guide": "/dominican/eticket/",
+          "agency": "Dirección General de Migración (DGM)",
+          "deadline": "Within 72 hours before arrival"
+        }
+      ],
+      "note": "All arrivals and departures need the E-Ticket. One filing covers both directions of your trip. Free at the .gob.do site."
+    },
+
+    "malaysia_status": {
+      "type": "question",
+      "label": "Which best describes you?",
+      "options": [
+        { "value": "singapore_citizen", "label": "Singapore citizen", "next": "malaysia_exempt" },
+        { "value": "malaysia_citizen", "label": "Malaysia citizen / Malaysia PR", "next": "malaysia_exempt" },
+        { "value": "brunei_thai_land", "label": "Brunei or Thailand passport entering by land", "next": "malaysia_exempt" },
+        { "value": "transit_only", "label": "Pure transit at KUL (not clearing immigration)", "next": "malaysia_exempt" },
+        { "value": "diplomatic", "label": "Diplomatic / official passport", "next": "malaysia_exempt" },
+        { "value": "other", "label": "None of the above (foreign visitor)", "next": "malaysia_need" }
+      ]
+    },
+    "malaysia_exempt": {
+      "type": "result",
+      "country": "malaysia",
+      "summary": "You are EXEMPT from filing the MDAC.",
+      "forms": [],
+      "note": "Singapore citizens, Malaysian citizens / PRs, Brunei and Thailand passport holders entering by land, pure airside transit travelers, and certain diplomatic passports do not need the MDAC. Just bring your passport.",
+      "fallback_guide": "/malaysia/mdac/",
+      "fallback_label": "Read the MDAC overview"
+    },
+    "malaysia_need": {
+      "type": "result",
+      "country": "malaysia",
+      "summary": "You need to file the Malaysia Digital Arrival Card (MDAC).",
+      "forms": [
+        {
+          "name": "MDAC",
+          "fee": "FREE",
+          "url": "https://imigresen-online.imi.gov.my/mdac/main",
+          "guide": "/malaysia/mdac/",
+          "agency": "Jabatan Imigresen Malaysia",
+          "deadline": "Within 3 days before arrival"
+        }
+      ],
+      "note": "Free at the .gov.my site. Officer scans your passport at immigration; the MDAC submission auto-pulls."
+    },
+
+    "vietnam_passport": {
+      "type": "question",
+      "label": "What's your nationality?",
+      "options": [
+        { "value": "asean", "label": "ASEAN citizen (Singapore, Thailand, Malaysia, Indonesia, Philippines, etc.)", "next": "vietnam_visa_exempt" },
+        { "value": "japan_korea", "label": "Japan or South Korea", "next": "vietnam_visa_exempt" },
+        { "value": "europe_exempt", "label": "Europe (Denmark, Finland, France, Germany, Italy, Norway, Russia, Spain, Sweden, UK, Belarus)", "next": "vietnam_visa_exempt" },
+        { "value": "other", "label": "Other (US, Canada, Australia, China, India, etc.)", "next": "vietnam_need_evisa" }
+      ]
+    },
+    "vietnam_visa_exempt": {
+      "type": "result",
+      "country": "vietnam",
+      "summary": "You can enter Vietnam visa-free for tourism (typically 15-45 days, depending on your nationality).",
+      "forms": [],
+      "note": "No e-visa needed for visa-exempt nationalities. Just bring your passport. Verify your specific stay limit on the official Vietnam Immigration Department page before flying.",
+      "fallback_guide": "/vietnam/evisa/",
+      "fallback_label": "Read the e-visa guide for context"
+    },
+    "vietnam_need_evisa": {
+      "type": "result",
+      "country": "vietnam",
+      "summary": "You need a Vietnam E-Visa.",
+      "forms": [
+        {
+          "name": "E-Visa (single-entry)",
+          "fee": "$25 USD",
+          "url": "https://evisa.xuatnhapcanh.gov.vn",
+          "guide": "/vietnam/evisa/",
+          "agency": "Vietnam Immigration Department",
+          "deadline": "Apply 3-5 working days before flight"
+        }
+      ],
+      "note": "$25 USD is the official government fee. Anyone charging more is a middleman. Multi-entry option ($50) and express ($50 surcharge) are also government tiers. iVisa typically charges $99-179 for the same e-visa."
+    },
+
+    "indonesia_passport": {
+      "type": "question",
+      "label": "What's your nationality?",
+      "options": [
+        { "value": "visa_free", "label": "US, EU, UK, Canada, Australia, Japan, Korea, Singapore (visa-free since 2024)", "next": "indonesia_ecd_only" },
+        { "value": "indonesian", "label": "Indonesian citizen", "next": "indonesia_ecd_only" },
+        { "value": "other", "label": "Other nationality", "next": "indonesia_both" }
+      ]
+    },
+    "indonesia_ecd_only": {
+      "type": "result",
+      "country": "indonesia",
+      "summary": "You only need the e-CD (customs declaration). No visa required.",
+      "forms": [
+        {
+          "name": "e-CD",
+          "fee": "FREE",
+          "url": "https://ecd.beacukai.go.id",
+          "guide": "/indonesia/e-cd/",
+          "agency": "Direktorat Jenderal Bea dan Cukai",
+          "deadline": "Within 3 days before arrival"
+        }
+      ],
+      "note": "All arrivals need the e-CD, including Indonesian citizens. Visa-free nationalities don't need a separate e-VOA. Free at the .go.id site."
+    },
+    "indonesia_both": {
+      "type": "result",
+      "country": "indonesia",
+      "summary": "You need BOTH the e-CD (customs) and the e-VOA (visa).",
+      "forms": [
+        {
+          "name": "e-CD",
+          "fee": "FREE",
+          "url": "https://ecd.beacukai.go.id",
+          "guide": "/indonesia/e-cd/",
+          "agency": "Bea dan Cukai (Customs)",
+          "deadline": "Within 3 days before arrival"
+        },
+        {
+          "name": "e-VOA",
+          "fee": "$35 USD",
+          "url": "https://molina.imigrasi.go.id",
+          "guide": "/indonesia/e-cd/",
+          "agency": "Direktorat Jenderal Imigrasi",
+          "deadline": "Apply before flight"
+        }
+      ],
+      "note": "Two separate forms run by two separate agencies. Don't let middlemen bundle them — each is filed at its own .go.id site. iVisa often charges $109+ for what costs $35 going direct."
+    },
+
+    "singapore_status": {
+      "type": "question",
+      "label": "Which best describes you?",
+      "options": [
+        { "value": "singapore_citizen", "label": "Singapore citizen (using Singapore passport)", "next": "singapore_exempt" },
+        { "value": "transit_only", "label": "Pure airside transit at Changi (not clearing immigration)", "next": "singapore_exempt" },
+        { "value": "other", "label": "Foreign visitor or Singapore PR returning", "next": "singapore_need" }
+      ]
+    },
+    "singapore_exempt": {
+      "type": "result",
+      "country": "singapore",
+      "summary": "You don't need the SGAC.",
+      "forms": [],
+      "note": "Singapore citizens entering on a Singapore passport, and pure airside transit travelers, are exempt. Just bring your passport.",
+      "fallback_guide": "/singapore/sgac/",
+      "fallback_label": "Read the SGAC overview"
+    },
+    "singapore_need": {
+      "type": "result",
+      "country": "singapore",
+      "summary": "You need to file the Singapore Arrival Card (SGAC).",
+      "forms": [
+        {
+          "name": "SGAC",
+          "fee": "FREE",
+          "url": "https://eservices.ica.gov.sg/sgarrivalcard/",
+          "guide": "/singapore/sgac/",
+          "agency": "Immigration & Checkpoints Authority (ICA)",
+          "deadline": "Within 3 days before arrival"
+        }
+      ],
+      "note": "Free at the .gov.sg site. Includes a brief health declaration. eGate-eligible nationalities scan their passport on arrival; the SGAC submission auto-pulls."
+    }
+  }
+}
