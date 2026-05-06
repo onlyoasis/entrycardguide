@@ -304,16 +304,32 @@
     @apply bg-ink text-paper font-sans font-medium text-small px-4 py-2 no-underline rounded-sm;
     transition: background-color theme('transitionDuration.link') ease;
   }
+  .prose .decide-form-cta-primary,
+  article .decide-form-cta-primary {
+    @apply text-paper no-underline;
+  }
   .decide-form-cta-primary:hover {
     @apply bg-verified;
+  }
+  .prose .decide-form-cta-primary:hover,
+  article .decide-form-cta-primary:hover {
+    @apply text-paper no-underline;
   }
   .decide-form-cta-secondary {
     @apply bg-transparent text-ink font-sans text-small px-4 py-2 no-underline border border-ink rounded-sm;
     transition: background-color theme('transitionDuration.link') ease,
                 color theme('transitionDuration.link') ease;
   }
+  .prose .decide-form-cta-secondary,
+  article .decide-form-cta-secondary {
+    @apply text-ink no-underline;
+  }
   .decide-form-cta-secondary:hover {
     @apply bg-ink text-paper;
+  }
+  .prose .decide-form-cta-secondary:hover,
+  article .decide-form-cta-secondary:hover {
+    @apply text-paper no-underline;
   }
 
   .decide-no-forms {

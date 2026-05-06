@@ -61,6 +61,20 @@ interface HistoryEntry {
   answerLabel: string;
 }
 
+type TrustedTypesPolicy = { createHTML: (html: string) => unknown };
+type TrustedTypesWindow = Window & {
+  trustedTypes?: {
+    createPolicy: (
+      name: string,
+      rules: { createHTML: (html: string) => string }
+    ) => TrustedTypesPolicy;
+  };
+};
+
+const htmlPolicy = (window as TrustedTypesWindow).trustedTypes?.createPolicy('decide', {
+  createHTML: (html: string) => html,
+});
+
 class DecisionTool {
   private container: HTMLElement;
   private tree: DecisionTree;
@@ -110,7 +124,9 @@ class DecisionTool {
   private render(): void {
     const state = this.tree.states[this.currentStateId];
     if (!state) {
-      this.container.innerHTML = `<p class="text-scam">Decision tree error: state "${this.currentStateId}" not found.</p>`;
+      this.container.innerHTML = trustedHTML(
+        `<p class="text-scam">Decision tree error: state "${escape(this.currentStateId)}" not found.</p>`
+      );
       return;
     }
 
@@ -130,7 +146,7 @@ class DecisionTool {
       )
       .join('');
 
-    this.container.innerHTML = `
+    this.container.innerHTML = trustedHTML(`
       ${breadcrumbs ? `<ol class="decide-breadcrumbs">${breadcrumbs}</ol>` : ''}
       <div class="decide-step text-meta text-muted font-mono uppercase">${this.t('decide_step', 'Step')} ${stepNum}</div>
       <h2 class="decide-question font-serif font-medium">${escape(state.label)}</h2>
@@ -150,7 +166,7 @@ class DecisionTool {
           ? `<button type="button" class="decide-back text-small text-muted">← ${this.t('decide_back', 'Back')}</button>`
           : ''
       }
-    `;
+    `);
 
     // Wire up listeners
     this.container.querySelectorAll<HTMLButtonElement>('.decide-option').forEach(btn => {
@@ -204,7 +220,7 @@ class DecisionTool {
             <p class="text-small text-muted">${this.t('decide_no_forms_explainer', 'You are exempt from the digital arrival card. Just bring your passport.')}</p>
           </div>`;
 
-    this.container.innerHTML = `
+    this.container.innerHTML = trustedHTML(`
       ${breadcrumbs ? `<ol class="decide-breadcrumbs">${breadcrumbs}</ol>` : ''}
       <div class="decide-result">
         <div class="decide-result-eyebrow text-meta text-muted font-mono uppercase">${this.t('decide_result_label', 'Your answer')}</div>
@@ -228,7 +244,7 @@ class DecisionTool {
           ${this.history.length > 0 ? `<button type="button" class="decide-back text-small text-muted">← ${this.t('decide_back', 'Back')}</button>` : ''}
         </div>
       </div>
-    `;
+    `);
 
     const restartBtn = this.container.querySelector<HTMLButtonElement>('.decide-restart');
     if (restartBtn) restartBtn.addEventListener('click', () => this.restart());
@@ -244,6 +260,10 @@ function escape(s: string): string {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
+}
+
+function trustedHTML(html: string): string {
+  return (htmlPolicy ? htmlPolicy.createHTML(html) : html) as string;
 }
 
 function loadTree(container: HTMLElement): DecisionTree | null {
