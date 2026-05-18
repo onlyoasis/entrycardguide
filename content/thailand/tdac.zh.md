@@ -40,7 +40,7 @@ TDAC 是你进入泰国之前要填的一份免费表格。泰国政府于 2024 
 
 如果你现在 Google 搜 *"thailand digital arrival card"*，前三条结果都是付费广告，由中介向你收 20 到 90 美元来填一份免费表格。其中一些中介确实代你提交了真表单，另一些没有，你会在入境处发现。
 
-2026 年 3 月，泰国当局[公开点名 iVisa](https://www.bangkokpost.com/) 是其中一个中介站点。泰国皇家移民局表示，约 10% 的外国入境者使用过非官方网站并多付了钱。
+2026 年 3 月底，泰国移民局发言人 Pol Maj Gen Choengron Rimpadee [公开点名 iVisa 和 tdac.info](https://www.bangkokpost.com/thailand/general/3226524/immigration-warns-of-scam-digital-arrival-card-websites) 是收费的中介站点。移民局表示，至少 10% 的外国入境者使用过非官方网站并多付了钱。
 
 ## 在动任何表单之前
 

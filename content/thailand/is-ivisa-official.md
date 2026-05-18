@@ -20,7 +20,7 @@ The official TDAC site is:
 
 ## Longer answer
 
-In March 2026, the Bangkok Post [reported](https://www.bangkokpost.com/) that Thai immigration officials issued a public warning naming specific non-official sites that were charging fees for the free TDAC. iVisa was among the named sites.
+In late March 2026, the Bangkok Post [reported](https://www.bangkokpost.com/thailand/general/3226524/immigration-warns-of-scam-digital-arrival-card-websites) that Immigration Bureau spokesman Pol Maj Gen Choengron Rimpadee issued a public warning naming specific non-official sites that were charging fees for the free TDAC. iVisa was among the named sites.
 
 iVisa has not been shut down or sanctioned. It is a legal commercial service in the countries where it operates. But it is not the TDAC, and it is not endorsed, licensed, or recognized by Thailand's immigration authority.
 

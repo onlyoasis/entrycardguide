@@ -40,7 +40,7 @@ There is no fast-track, priority, premium, or "white-glove" service. Those servi
 
 If you search Google for *"thailand digital arrival card"* right now, the first three results are paid ads from middlemen charging $20 to $90 to fill a free form. Some of them submit the real form on your behalf. Some of them don't, and you find out at immigration.
 
-In March 2026, Thai authorities [publicly named iVisa](https://www.bangkokpost.com/) as one of these middleman sites. The Royal Thai Immigration Bureau stated that approximately 10% of foreign arrivals had used unofficial sites and overpaid.
+In late March 2026, Immigration Bureau spokesman Pol Maj Gen Choengron Rimpadee [publicly named iVisa and tdac.info](https://www.bangkokpost.com/thailand/general/3226524/immigration-warns-of-scam-digital-arrival-card-websites) as middleman sites charging fees for the free TDAC. The bureau stated that at least 10% of foreign arrivals had used unofficial sites and overpaid.
 
 ## Before you touch any form
 
