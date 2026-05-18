@@ -1,6 +1,6 @@
 ---
 title: "Independent entry card guides. Free. No data stored."
-description: "Anti-scam guides to digital arrival cards for Thailand, Mexico, Dominican Republic, and Malaysia. Written by travelers, not middlemen."
+description: "Anti-scam guides to official arrival cards and e-visas for Thailand, Malaysia, Singapore, Indonesia, Mexico, Dominican Republic, and Vietnam."
 ---
 
 Every country's digital arrival card is free, and only the official government site can legally accept your form.

@@ -1,7 +1,7 @@
 ---
-title: "马来西亚 MDAC 数字入境卡 2026 完整指南：官方网址、免费填写、防中介诈骗"
-kicker: "马来西亚数字入境卡是免费的。这里是官方移民局网址、所有字段，以及如何分辨真假。"
-description: "免费、独立的马来西亚 MDAC 中文指南。官方网址 imigresen-online.imi.gov.my，每个字段逐项讲解，永远免费。"
+title: "马来西亚入境卡 MDAC 2026：官方网站和免费表格"
+kicker: "马来西亚 MDAC 入境卡免费。使用官方 MDAC 网站 imigresen-online.imi.gov.my，避开收费中介。"
+description: "马来西亚入境卡 MDAC 中文指南：官方网站、免费政府表格、谁要填、什么时候提交，以及如何避开收费假站。"
 date: 2026-04-24
 lastmod: 2026-04-26
 country: "malaysia"
@@ -25,6 +25,14 @@ faq:
 ---
 
 {{< official-link site="malaysia.mdac" >}}
+
+## 快速答案
+
+马来西亚官方入境卡是 **MDAC**，提交地址是 **imigresen-online.imi.gov.my/mdac/main**。
+
+- MDAC **免费**。
+- 多数外国旅客必须在抵达前 **3 天内**提交。
+- 任何向你收 MDAC 费用的网站都是商业中介，不是马来西亚移民局。
 
 ## MDAC 到底是什么
 

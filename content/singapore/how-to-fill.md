@@ -1,7 +1,7 @@
 ---
-title: "How to Fill Singapore's SGAC: Field-by-Field Guide (2026)"
-kicker: "Field-by-field walkthrough of the official Singapore Arrival Card with common errors and what they mean. About 6 minutes total."
-description: "Step-by-step 2026 guide to every field on Singapore's official SGAC at eservices.ica.gov.sg. Free, independent, no fees."
+title: "How to Fill SGAC Form: Singapore Arrival Card Field Guide (2026)"
+kicker: "Use the official ICA SGAC form at eservices.ica.gov.sg. This guide explains each Singapore Arrival Card field, format, and common error."
+description: "How to fill the SGAC form for Singapore: official ICA Arrival Card fields, passport, flight, address, health declaration, and common errors."
 date: 2026-04-26
 lastmod: 2026-04-26
 country: "singapore"
@@ -10,6 +10,14 @@ keywords: ["sgac how to fill", "singapore arrival card fields", "ica sgac help",
 ---
 
 {{< official-link site="singapore.sgac" >}}
+
+## Quick answer
+
+Fill the SGAC form only on **eservices.ica.gov.sg**, the official ICA site for the Singapore Arrival Card.
+
+- Submit within **3 days before arrival**.
+- Prepare passport details, flight or vessel details, Singapore address, email, phone, and health declaration answers.
+- The SGAC is **free**. If a site asks for payment, it is not the official ICA form.
 
 This guide walks through every field the official SGAC asks, in the order the form presents them. Pre-check your entries below before pasting them into the official site.
 

@@ -1,7 +1,7 @@
 ---
-title: "越南 E-Visa 2026 完整指南：官方网址、真实 $25 美元费用、防中介 4 倍加价"
-kicker: "越南 e-visa 有 $25 美元的真实政府费用。中介卖到 $80-200。这里是官方网址和如何直接申请。"
-description: "免费、独立的越南官方 E-Visa 中文指南。官方网址 evisa.xuatnhapcanh.gov.vn，真实费用 $25，每个字段逐项讲解。"
+title: "越南 Evisa 官方网站 2026：$25/$50 美元费用和直接申请"
+kicker: "越南 evisa 官方网站是 evisa.xuatnhapcanh.gov.vn。单次 $25，多次 $50，费用直接付给政府。"
+description: "越南 evisa 官方网站中文指南：使用 evisa.xuatnhapcanh.gov.vn，单次 $25、多次 $50，避开签证中介加价。"
 date: 2026-04-26
 lastmod: 2026-04-26
 country: "vietnam"
@@ -27,6 +27,14 @@ faq:
 ---
 
 {{< official-link site="vietnam.evisa" >}}
+
+## 快速答案
+
+申请越南 evisa，请使用 **evisa.xuatnhapcanh.gov.vn**。这是越南移民局官方网站。
+
+- 单次入境越南 evisa：**$25 美元**。
+- 多次入境越南 evisa：**$50 美元**。
+- 商业签证网站可能对同一份政府申请收 $80-200 美元。
 
 ## 越南 E-Visa 到底是什么
 

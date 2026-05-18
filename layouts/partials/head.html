@@ -4,16 +4,6 @@
 
 <title>{{ if .IsHome }}{{ if eq .Site.Language.Lang "zh" }}{{ .Title }} · {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8C2Q42N506"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8C2Q42N506');
-</script>
-
 {{- /* Canonical */ -}}
 <link rel="canonical" href="{{ .Permalink }}">
 

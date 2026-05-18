@@ -1,7 +1,7 @@
 ---
-title: "新加坡 SGAC 入境卡怎么填 2026：ICA 官方字段指南"
-kicker: "新加坡官方入境卡字段逐项讲解，常见错误及含义。约 6 分钟看完。"
-description: "新加坡 SGAC 入境卡怎么填：按 ICA 官方表单讲解护照、航班、住址和健康声明字段，附免费官网入口。"
+title: "新加坡 SGAC 表格怎么填 2026：ICA 官方入境卡字段指南"
+kicker: "使用 ICA 官方 SGAC 表格 eservices.ica.gov.sg。本页讲清护照、航班、住址和健康声明字段。"
+description: "新加坡 SGAC 表格怎么填：ICA 官方 Arrival Card 的护照、航班、住址、健康声明字段，免费官网入口和常见错误。"
 date: 2026-04-26
 lastmod: 2026-04-26
 country: "singapore"
@@ -10,6 +10,14 @@ keywords: ["sgac 怎么填", "新加坡入境卡字段", "ica sgac 帮助", "新
 ---
 
 {{< official-link site="singapore.sgac" >}}
+
+## 快速答案
+
+SGAC 只在 **eservices.ica.gov.sg** 提交，这是新加坡 ICA 的官方 Arrival Card 网站。
+
+- 抵达前 **3 天内**提交。
+- 准备护照、航班或船班、新加坡住址、邮箱、电话和健康声明答案。
+- SGAC **免费**。如果一个网站要收费，就不是 ICA 官方表格。
 
 本指南按官方表单的实际顺序，逐字段讲解 SGAC 的填写。粘贴到官方站点之前，先在下面预校验。
 
