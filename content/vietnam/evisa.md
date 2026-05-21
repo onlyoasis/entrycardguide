@@ -1,9 +1,9 @@
 ---
-title: "Vietnam Evisa Official Site: $25/$50 Fee and Direct Application (2026)"
-kicker: "The official Vietnam evisa site is evisa.xuatnhapcanh.gov.vn. The fee is $25 single-entry or $50 multi-entry, paid to the government."
-description: "Vietnam evisa official site guide: use evisa.xuatnhapcanh.gov.vn, pay $25 single-entry or $50 multi-entry, and avoid visa middleman markup."
+title: "Evisa Vietnam Official Site: $25/$50 Government Fee (2026)"
+kicker: "The official Vietnam evisa site is evisa.xuatnhapcanh.gov.vn. The government fee is $25 single-entry or $50 multi-entry."
+description: "Evisa Vietnam official site guide: apply at evisa.xuatnhapcanh.gov.vn, pay the $25/$50 government fee, and avoid visa middlemen."
 date: 2026-04-26
-lastmod: 2026-04-26
+lastmod: 2026-05-21
 country: "vietnam"
 weight: 10
 keywords: ["vietnam e-visa", "vietnam evisa official", "evisa.xuatnhapcanh.gov.vn", "vietnam visa online", "vietnam e-visa fee", "is ivisa official vietnam", "vietnam visa scam"]
@@ -30,10 +30,10 @@ faq:
 
 ## Quick answer
 
-For a Vietnam evisa, use **evisa.xuatnhapcanh.gov.vn**. That is the official Vietnamese Immigration Department site.
+For an evisa Vietnam application, use **evisa.xuatnhapcanh.gov.vn**. That is the official Vietnamese Immigration Department site.
 
-- Single-entry Vietnam evisa fee: **$25 USD**.
-- Multi-entry Vietnam evisa fee: **$50 USD**.
+- Single-entry Vietnam evisa government fee: **$25 USD**.
+- Multi-entry Vietnam evisa government fee: **$50 USD**.
 - Commercial visa sites can charge $80-200 for the same government application.
 
 ## What the Vietnam E-Visa actually is

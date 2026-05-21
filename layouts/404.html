@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}" class="bg-paper text-ink">
+<head>
+  {{- $isZh := eq .Site.Language.Lang "zh" -}}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,follow">
+  <title>{{ if $isZh }}页面未找到{{ else }}Page not found{{ end }} · {{ .Site.Title }}</title>
+  {{- $css := resources.Get "css/main.css" | css.PostCSS }}
+  {{- if hugo.IsProduction }}
+    {{- $css = $css | resources.Minify | resources.Fingerprint "sha256" }}
+  {{- end }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $css.Data.Integrity }}"{{ end }}>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0F7356">
+</head>
+<body class="min-h-screen antialiased">
+  {{- partial "trust-bar.html" . -}}
+  {{- partial "header.html" . -}}
+  <main id="main" class="mx-auto max-w-container px-md">
+    <section class="max-w-prose mx-auto py-16">
+      <p class="text-meta font-mono uppercase text-muted mb-4">404</p>
+      <h1 class="mb-6">{{ if $isZh }}页面未找到{{ else }}Page not found{{ end }}</h1>
+      <p class="text-kicker text-muted mb-8 max-w-[600px]">
+        {{- if $isZh -}}
+        这个网址不对应本站已发布的指南。你可以打开官方目录，或回到中文首页。
+        {{- else -}}
+        This URL does not match any guide we publish. Use the official links directory or return to the homepage.
+        {{- end -}}
+      </p>
+      <div class="flex flex-wrap gap-md text-small">
+        <a href="{{ "/official-links/" | relLangURL }}" class="text-ink underline underline-offset-4">
+          {{- if $isZh }}官方目录{{ else }}Official links directory{{ end -}}
+        </a>
+        <a href="{{ "/" | relLangURL }}" class="text-ink underline underline-offset-4">
+          {{- if $isZh }}首页{{ else }}Homepage{{ end -}}
+        </a>
+      </div>
+    </section>
+  </main>
+  {{- partial "footer-commit.html" . -}}
+</body>
+</html>

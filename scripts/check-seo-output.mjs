@@ -4,6 +4,7 @@ import path from "node:path";
 const publicDir = "public";
 
 const requiredFiles = [
+  "public/404.html",
   "public/robots.txt",
   "public/sitemap.xml",
   "public/en/sitemap.xml",
@@ -45,6 +46,7 @@ for (const file of ["public/en/sitemap.xml", "public/zh/sitemap.xml"]) {
 }
 
 const htmlFiles = [];
+const referencedCssFiles = new Set();
 function walk(dir) {
   for (const entry of readdirSync(dir, { withFileTypes: true })) {
     const fullPath = path.join(dir, entry.name);
@@ -60,11 +62,12 @@ walk(publicDir);
 const missingLocalTargets = [];
 const hreflangProblems = [];
 const localAssetPattern = /\s(?:href|src)=(?:"([^"]+)"|'([^']+)'|([^\s>]+))/g;
+const cssUrlPattern = /url\(\s*(?:"([^"]+)"|'([^']+)'|([^)'"]+))\s*\)/g;
 const hreflangPattern =
   /<link\s+rel=alternate\s+hreflang=(?:"([^"]+)"|'([^']+)'|([^\s>]+))\s+href=(?:"([^"]+)"|'([^']+)'|([^\s>]+))[^>]*>/g;
 
-function localTargetExists(rawUrl) {
-  if (
+function shouldSkipUrl(rawUrl) {
+  return (
     !rawUrl ||
     rawUrl.startsWith("http:") ||
     rawUrl.startsWith("https:") ||
@@ -73,20 +76,45 @@ function localTargetExists(rawUrl) {
     rawUrl.startsWith("#") ||
     rawUrl.startsWith("data:") ||
     rawUrl.startsWith("//")
-  ) {
+  );
+}
+
+function localTargetExists(rawUrl, sourceFile = null) {
+  if (shouldSkipUrl(rawUrl)) {
     return true;
   }
 
-  const cleanUrl = rawUrl.split("#")[0].split("?")[0];
-  if (!cleanUrl || cleanUrl === "/") return true;
-
-  const target = cleanUrl.endsWith("/")
-    ? path.join(publicDir, cleanUrl, "index.html")
-    : path.extname(cleanUrl)
-      ? path.join(publicDir, cleanUrl)
-      : path.join(publicDir, cleanUrl, "index.html");
-
+  const target = localTargetPath(rawUrl, sourceFile);
   return existsSync(target) && statSync(target).isFile();
+}
+
+function localTargetPath(rawUrl, sourceFile = null) {
+  const cleanUrl = rawUrl.split("#")[0].split("?")[0];
+  if (!cleanUrl || cleanUrl === "/") return path.join(publicDir, "index.html");
+
+  return cleanUrl.startsWith("/")
+    ? cleanUrl.endsWith("/")
+      ? path.join(publicDir, cleanUrl, "index.html")
+      : path.extname(cleanUrl)
+        ? path.join(publicDir, cleanUrl)
+        : path.join(publicDir, cleanUrl, "index.html")
+    : sourceFile
+      ? path.join(path.dirname(sourceFile), cleanUrl)
+      : path.extname(cleanUrl)
+        ? path.join(publicDir, cleanUrl)
+        : path.join(publicDir, cleanUrl, "index.html");
+}
+
+function localTargetLabel(rawUrl, sourceFile = null) {
+  if (
+    shouldSkipUrl(rawUrl) ||
+    rawUrl.split("#")[0].split("?")[0] === "/" ||
+    !rawUrl.split("#")[0].split("?")[0]
+  ) {
+    return rawUrl;
+  }
+
+  return path.relative(publicDir, localTargetPath(rawUrl, sourceFile));
 }
 
 for (const file of htmlFiles) {
@@ -95,6 +123,8 @@ for (const file of htmlFiles) {
     const rawUrl = match[1] || match[2] || match[3];
     if (!localTargetExists(rawUrl)) {
       missingLocalTargets.push(`${path.relative(publicDir, file)} -> ${rawUrl}`);
+    } else if (!shouldSkipUrl(rawUrl) && path.extname(rawUrl.split("#")[0].split("?")[0]) === ".css") {
+      referencedCssFiles.add(localTargetPath(rawUrl));
     }
   }
 
@@ -117,6 +147,25 @@ for (const file of htmlFiles) {
 if (missingLocalTargets.length) {
   throw new Error(
     `Missing local links/assets:\n${missingLocalTargets.slice(0, 30).join("\n")}`,
+  );
+}
+
+const missingCssTargets = [];
+for (const file of referencedCssFiles) {
+  const css = readFileSync(file, "utf8");
+  for (const match of css.matchAll(cssUrlPattern)) {
+    const rawUrl = (match[1] || match[2] || match[3] || "").trim();
+    if (!localTargetExists(rawUrl, file)) {
+      missingCssTargets.push(
+        `${path.relative(publicDir, file)} -> ${rawUrl} (${localTargetLabel(rawUrl, file)})`,
+      );
+    }
+  }
+}
+
+if (missingCssTargets.length) {
+  throw new Error(
+    `Missing CSS url() assets:\n${missingCssTargets.slice(0, 30).join("\n")}`,
   );
 }
 

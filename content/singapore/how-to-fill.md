@@ -3,10 +3,21 @@ title: "How to Fill SGAC Form: Singapore Arrival Card Field Guide (2026)"
 kicker: "Use the official ICA SGAC form at eservices.ica.gov.sg. This guide explains each Singapore Arrival Card field, format, and common error."
 description: "How to fill the SGAC form for Singapore: official ICA Arrival Card fields, passport, flight, address, health declaration, and common errors."
 date: 2026-04-26
-lastmod: 2026-04-26
+lastmod: 2026-05-21
 country: "singapore"
 weight: 20
 keywords: ["sgac how to fill", "singapore arrival card fields", "ica sgac help", "eservices.ica.gov.sg fields", "sgac health declaration"]
+faq:
+  - q: "When can I fill the SGAC form?"
+    a: "You can submit the Singapore Arrival Card within 3 days before arrival. Earlier submissions are rejected by the official ICA site."
+  - q: "What website should I use for the SGAC form?"
+    a: "Use eservices.ica.gov.sg, the official Immigration & Checkpoints Authority site. The SGAC is free, so any site asking for payment is not the official form."
+  - q: "What details do I need for the SGAC?"
+    a: "Prepare your passport details, travel mode, flight or vessel details, arrival date, Singapore address, email, phone number, and health declaration answers."
+  - q: "Why does the SGAC reject my flight number?"
+    a: "The usual cause is a codeshare mismatch. Use the operating carrier's flight number from your boarding pass, not the marketing carrier's code."
+  - q: "Do I need to print the SGAC confirmation?"
+    a: "No. ICA links the record to your passport. Keep the confirmation email on your phone as a backup in case an officer asks for it."
 ---
 
 {{< official-link site="singapore.sgac" >}}
