@@ -22,6 +22,7 @@ faq:
     a: "查看垃圾邮件箱。1 小时后仍然没有就重新提交。官方站是幂等的，重复提交无害，最近一次为准。"
   - q: "iVisa 是 TDAC 官方网站吗？"
     a: "不是。iVisa 是商业签证中介，与泰国皇家移民局没有任何关联。2026 年 3 月，泰国当局公开点名 iVisa 是为免费 TDAC 收费的非官方站点。"
+layout: country-form
 ---
 
 {{< official-link site="thailand.tdac" >}}

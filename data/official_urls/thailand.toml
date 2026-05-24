@@ -16,6 +16,31 @@ name = "Thai Immigration Bureau (home)"
 agency = "Royal Thai Immigration Bureau"
 last_verified = "2026-04-22"
 
+# Country-page metadata (consumed by country-form layout).
+# Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
+[meta]
+flag = "🇹🇭"
+form_code = "TDAC"
+form_name_en = "Digital Arrival Card"
+form_name_zh = "数字入境卡"
+since_en = "since May 2024"
+since_zh = "2024 年 5 月起"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".go.th"
+
+# News source backing the hero subhead ("X% of foreign arrivals…") and the
+# "Why this matters" callout. When the citation changes, update both _en/_zh.
+[news]
+date = "2026-03-29"
+source = "Bangkok Post"
+source_url = "https://www.bangkokpost.com/thailand/general/3226524/immigration-warns-of-scam-digital-arrival-card-websites"
+pct = "10%"
+quote_en = "About 10% of foreign arrivals had used unofficial sites and overpaid."
+quote_zh = "约 10% 的外国入境者使用过非官方网站并多付了钱。"
+attribution_en = "Pol Maj Gen Choengron Rimpadee, Immigration Bureau spokesman"
+attribution_zh = "泰国移民局发言人 Pol Maj Gen Choengron Rimpadee"
+
 # Known scam domains (for scam-site shortcode)
 # IMPORTANT: only add to this list after verifying the site is charging for the free TDAC
 # and cross-referencing with Thai government warnings or news coverage.

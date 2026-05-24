@@ -22,6 +22,7 @@ faq:
     a: "Check spam. If still missing after 1 hour, submit again. The official site is idempotent — duplicate submissions are harmless and the most recent one applies."
   - q: "Is iVisa the official TDAC site?"
     a: "No. iVisa is a commercial visa middleman, not affiliated with the Royal Thai Immigration Bureau. Thai authorities publicly named iVisa as a non-official site charging fees for the free TDAC in March 2026."
+layout: country-form
 ---
 
 {{< official-link site="thailand.tdac" >}}

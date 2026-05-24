@@ -1,0 +1,104 @@
+{{ define "main" }}
+{{- $isZh := eq .Site.Language.Lang "zh" -}}
+
+{{- /* Country data lookup — section name == TOML file name. */ -}}
+{{- $country := .Section -}}
+{{- $data := index hugo.Data.official_urls $country -}}
+{{- $meta := $data.meta -}}
+{{- $news := $data.news -}}
+{{- $formCode := $meta.form_code -}}
+{{- $formName := cond $isZh $meta.form_name_zh $meta.form_name_en -}}
+{{- $since := cond $isZh $meta.since_zh $meta.since_en -}}
+{{- $fee := cond $isZh $meta.fee_zh $meta.fee_en -}}
+
+{{- /* Breadcrumb (with right-aligned last-reviewed date) ------------- */ -}}
+<nav aria-label="Breadcrumb" class="-mx-md px-md py-3 border-b border-rule flex items-baseline justify-between flex-wrap gap-y-2 font-mono text-xs text-muted">
+  <div>
+    <a href="{{ "/" | relLangURL }}" class="text-muted no-underline hover:text-ink">{{ if $isZh }}首页{{ else }}Home{{ end }}</a>
+    <span class="mx-1.5">›</span>
+    {{- with .Parent }}
+    <a href="{{ .Permalink }}" class="text-muted no-underline hover:text-ink">{{ .Title }}</a>
+    <span class="mx-1.5">›</span>
+    {{- end }}
+    <span class="text-ink">{{ $formCode }}{{ if $isZh }}：官方网址与避坑指南{{ else }}: official site &amp; how to avoid scams{{ end }}</span>
+  </div>
+  <div>
+    {{ if $isZh }}最近核验{{ else }}Last reviewed{{ end }}
+    <span class="text-ink">{{ dateFormat "2006-01-02" .Lastmod }}</span>
+  </div>
+</nav>
+
+{{- /* Hero ----------------------------------------------------------- */ -}}
+<article class="pt-22 pb-md max-w-[920px]">
+  <div class="text-meta font-mono uppercase text-muted mb-5">
+    <span aria-hidden="true">{{ $meta.flag }}</span>
+    {{ .Parent.Title }} {{ $formCode }} · {{ $since }}
+  </div>
+  <h1 class="font-serif font-medium m-0" style="font-size: clamp(36px, 5.6vw, 56px); line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
+    {{ .Title }}
+  </h1>
+  {{- with .Params.kicker }}
+  <p class="text-muted mt-lg max-w-[720px]" style="font-size: 21px; line-height: 1.5;">
+    {{ . }}
+  </p>
+  {{- else }}
+  {{- with $news }}
+  <p class="text-muted mt-lg max-w-[720px]" style="font-size: 21px; line-height: 1.5;">
+    {{ if $isZh }}{{ .pct }} 的外国入境者据报曾通过非官方网站填写这份免费表单。这是官方网址、每一个字段和如何识别真假。{{ else }}{{ .pct }} of foreign arrivals were reported using non-official sites for this free form. Here is the official site, every field it asks, and how to tell real from fake.{{ end }}
+  </p>
+  {{- end }}
+  {{- end }}
+</article>
+
+{{- /* Two-column body + sticky TOC aside ---------------------------- */ -}}
+<div class="pb-xl grid grid-cols-1 lg:grid-cols-[1fr_220px] gap-12 lg:gap-16">
+  <article class="prose prose-lg max-w-[680px]">
+    {{ .Content }}
+  </article>
+
+  <aside class="hidden lg:block sticky top-8 self-start text-small">
+    {{- with .TableOfContents }}
+    <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}本页目录{{ else }}On this page{{ end }}</div>
+    <div class="border-l border-rule pl-4 toc-rail text-small text-muted">
+      {{ . }}
+    </div>
+    {{- end }}
+
+    <div class="mt-lg pt-4 border-t border-rule grid gap-1.5 font-mono text-xs">
+      <a href="https://github.com/onlyoasis/entrycardguide/blob/main/content/{{ .File.Path }}" class="text-muted no-underline hover:text-ink">↗ {{ if $isZh }}GitHub 源文件{{ else }}Source on GitHub{{ end }}</a>
+      <a href="https://github.com/onlyoasis/entrycardguide/issues/new?title=Correction%20for%20{{ .Title }}" class="text-muted no-underline hover:text-ink">↗ {{ if $isZh }}建议勘误{{ else }}Suggest a correction{{ end }}</a>
+      <a href="https://web.archive.org/web/{{ .Permalink }}" class="text-muted no-underline hover:text-ink">↗ {{ if $isZh }}archive.org 快照{{ else }}archive.org snapshot{{ end }}</a>
+    </div>
+  </aside>
+</div>
+
+{{- /* "Why this matters" callout — driven by news data ------------- */ -}}
+{{- with $news }}
+{{- $quote := cond $isZh .quote_zh .quote_en -}}
+{{- $attr := cond $isZh .attribution_zh .attribution_en -}}
+<section class="-mx-md px-md py-xl border-y border-rule" style="background:#F4F2EC;">
+  <div class="grid grid-cols-1 md:grid-cols-[160px_1fr] gap-8 max-w-[920px]">
+    <div class="text-meta font-mono uppercase text-scam">
+      <span class="inline-block w-[6px] h-[6px] rounded-full bg-scam align-baseline mr-2"></span>
+      {{ if $isZh }}为什么重要{{ else }}Why this matters{{ end }}
+    </div>
+    <div>
+      <p class="font-serif m-0" style="font-size: 22px; line-height: 1.4; letter-spacing: -0.005em; font-variation-settings: 'opsz' 144;">
+        {{- /* Highlight the pct token inside the quote with strong+scam-red. */ -}}
+        {{ replace $quote .pct (printf "<strong class=\"text-scam\">%s</strong>" .pct) | safeHTML }}
+      </p>
+      <div class="font-mono text-xs text-muted mt-3">
+        {{ $attr }} · <a href="{{ .source_url }}" rel="noopener" class="text-muted underline underline-offset-2">{{ .source }}</a>, {{ .date }}
+      </div>
+    </div>
+  </div>
+</section>
+{{- end }}
+
+{{- partial "share-source.html" . -}}
+
+{{- if .Section }}
+{{- partial "affiliate-footer.html" . -}}
+{{- end }}
+
+{{ end }}
