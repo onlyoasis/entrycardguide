@@ -6,6 +6,7 @@ date: 2026-04-22
 lastmod: 2026-04-22
 country: "thailand"
 weight: 20
+layout: how-to-fill
 ---
 
 {{< official-link site="thailand.tdac" >}}

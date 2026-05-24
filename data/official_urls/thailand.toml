@@ -31,6 +31,14 @@ fee_en = "Free"
 fee_zh = "免费"
 suffix = ".go.th"
 
+# Used by the how-to-fill layout.
+field_count = 23
+sections = 4
+time_needed_en = "~8 minutes"
+time_needed_zh = "约 8 分钟"
+output_en = "Show the QR code and your passport. Officer scans, stamps, hands it back. Under 30 seconds."
+output_zh = "出示二维码和护照。警官扫描、盖章、还你。一般 30 秒内完事。"
+
 # News source backing the hero subhead ("X% of foreign arrivals…") and the
 # "Why this matters" callout. When the citation changes, update both _en/_zh.
 [news]

@@ -1,0 +1,207 @@
+{{ define "main" }}
+{{- $isZh := eq .Site.Language.Lang "zh" -}}
+
+{{- /* ============================================================ */ -}}
+{{- /* Data lookup — meta from official_urls, display data from fields,
+       validation source-of-truth from rules JSON.                    */ -}}
+{{- /* ============================================================ */ -}}
+{{- $country := .Section -}}
+{{- $urlData := index hugo.Data.official_urls $country -}}
+{{- $meta := $urlData.meta -}}
+{{- $fieldData := index hugo.Data.fields $country -}}
+{{- $rules := (index hugo.Data.rules $country).fields -}}
+
+{{- $countryName := cond $isZh $meta.name_zh $meta.name_en -}}
+{{- $formCode := $meta.form_code -}}
+{{- $since := cond $isZh $meta.since_zh $meta.since_en -}}
+{{- $timeNeeded := cond $isZh $meta.time_needed_zh $meta.time_needed_en -}}
+{{- $output := cond $isZh $meta.output_zh $meta.output_en -}}
+{{- $fieldCount := $meta.field_count -}}
+{{- $sections := $meta.sections -}}
+{{- $fields := $fieldData.fields -}}
+{{- $errors := $fieldData.errors -}}
+{{- $shown := len $fields -}}
+
+{{- /* Breadcrumb ----------------------------------------------------- */ -}}
+<nav aria-label="Breadcrumb" class="-mx-md px-md py-3 border-b border-rule flex items-baseline justify-between flex-wrap gap-y-2 font-mono text-xs text-muted">
+  <div>
+    <a href="{{ "/" | relLangURL }}" class="text-muted no-underline hover:text-ink">{{ if $isZh }}首页{{ else }}Home{{ end }}</a>
+    <span class="mx-1.5">›</span>
+    {{- with .Parent }}
+    <a href="{{ .Permalink }}" class="text-muted no-underline hover:text-ink">{{ $countryName }}</a>
+    <span class="mx-1.5">›</span>
+    {{- end }}
+    <span class="text-ink">{{ if $isZh }}逐字段填写指南{{ else }}How to fill every field{{ end }}</span>
+  </div>
+  <div>
+    {{ if $isZh }}最近核验{{ else }}Last verified{{ end }}
+    <span class="text-ink">{{ dateFormat "2006-01-02" .Lastmod }}</span>
+  </div>
+</nav>
+
+{{- /* Hero ----------------------------------------------------------- */ -}}
+<article class="pt-22 pb-md max-w-[920px]">
+  <div class="text-meta font-mono uppercase text-muted mb-5">
+    <span aria-hidden="true">{{ $meta.flag }}</span>
+    {{ $countryName }} {{ $formCode }} · {{ if $isZh }}字段指南{{ else }}field guide{{ end }} · {{ $timeNeeded }}
+  </div>
+  <h1 class="font-serif font-medium m-0" style="font-size: clamp(36px, 5.6vw, 56px); line-height: 1.06; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
+    {{- if $isZh -}}
+    官方 {{ $formCode }} 表单的每一个字段，按表单实际顺序。
+    {{- else -}}
+    Every field the official {{ $formCode }} asks, in the order it asks.
+    {{- end -}}
+  </h1>
+  <p class="text-muted mt-lg max-w-[720px]" style="font-size: 21px; line-height: 1.5;">
+    {{- if $isZh -}}
+    每个字段附官方正则、官方原话错误提示，以及你大概率会出错的地方。粘贴到官方站之前，可以先在 <a href="{{ .Parent.RelPermalink }}{{ $formCode | lower }}/" class="text-ink underline underline-offset-4">{{ $formCode }} 主页</a> 的本地校验器里对一遍。
+    {{- else -}}
+    With the exact regex the official site enforces, the error message it returns, and what you probably did wrong. Pre-check your values in the <a href="{{ .Parent.RelPermalink }}{{ $formCode | lower }}/" class="text-ink underline underline-offset-4">{{ $formCode }} page's local validator</a> before pasting.
+    {{- end -}}
+  </p>
+</article>
+
+{{- /* Fields section heading + tags --------------------------------- */ -}}
+<section class="pb-xl">
+  <div class="flex items-baseline justify-between mb-lg flex-wrap gap-md">
+    <div>
+      <div class="text-meta font-mono uppercase text-muted mb-2">{{ if $isZh }}§ 按顺序填{{ else }}§ Fields, in order{{ end }}</div>
+      <h2 class="font-serif font-medium m-0" style="font-size: 32px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144;">
+        {{- if $isZh -}}
+        {{ $fieldCount }} 个字段，{{ $sections }} 段，合计 {{ $timeNeeded }}。
+        {{- else -}}
+        {{ $fieldCount }} fields, {{ $sections }} sections, {{ $timeNeeded }} total.
+        {{- end -}}
+      </h2>
+    </div>
+    <div class="flex gap-2 items-baseline">
+      <span class="inline-flex items-center px-2 py-1 border border-rule rounded-sm font-mono uppercase text-muted" style="font-size: 11px; letter-spacing: 0.08em;">
+        {{ if $isZh }}全部段落{{ else }}All sections{{ end }}
+      </span>
+      <span class="inline-flex items-center px-2 py-1 border border-ink rounded-sm font-mono uppercase text-ink" style="font-size: 11px; letter-spacing: 0.08em;">
+        {{ if $isZh }}显示 {{ $shown }} / {{ $fieldCount }}{{ else }}Showing {{ $shown }} of {{ $fieldCount }}{{ end }}
+      </span>
+    </div>
+  </div>
+
+  {{- /* Field cards. Inserts a section divider whenever the section
+         label changes between consecutive fields. ------------------ */ -}}
+  <div class="border border-rule rounded-md overflow-hidden">
+    {{- range $i, $f := $fields -}}
+      {{- $section := cond $isZh $f.section_zh $f.section_en -}}
+      {{- $prevSection := "" -}}
+      {{- if gt $i 0 -}}
+        {{- $prev := index $fields (sub $i 1) -}}
+        {{- $prevSection = cond $isZh $prev.section_zh $prev.section_en -}}
+      {{- end -}}
+      {{- $showDivider := or (eq $i 0) (ne $section $prevSection) -}}
+      {{- $rule := index $rules $f.key -}}
+      {{- $copy := cond $isZh $f.copy_zh $f.copy_en -}}
+      {{- $mistakeWhy := cond $isZh $f.mistake_why_zh $f.mistake_why_en -}}
+
+    {{- if $showDivider }}
+    <div class="py-3 px-6 border-b border-rule" style="background:#F4F2EC;">
+      <div class="text-meta font-mono uppercase text-muted">{{ $section }}</div>
+    </div>
+    {{- end }}
+
+    <div class="grid grid-cols-1 md:grid-cols-[56px_1fr_380px] gap-8 px-7 py-8 {{ if lt (add $i 1) (len $fields) }}border-b border-rule{{ end }}">
+      <div class="font-serif font-medium text-ink" style="font-size: 32px; letter-spacing: -0.01em; line-height: 1; font-variation-settings: 'opsz' 144;">
+        {{ $f.n }}
+      </div>
+
+      <div>
+        <h3 class="font-serif font-medium m-0 mb-3" style="font-size: 26px; letter-spacing: -0.01em; font-variation-settings: 'opsz' 144;">
+          {{ $rule.label }}
+        </h3>
+        <p class="m-0 max-w-[560px]" style="font-size: 16px; line-height: 1.6;">{{ $copy }}</p>
+
+        <div class="mt-5 flex flex-wrap gap-1.5">
+          {{- with $rule.pattern }}
+          <span class="inline-flex items-center px-2 py-1 border border-rule rounded-sm font-mono text-muted" style="font-size: 11px; letter-spacing: 0.04em;">
+            <code class="font-mono text-ink">{{ . }}</code>
+          </span>
+          {{- end }}
+          {{- with $rule.maxLength }}
+          <span class="inline-flex items-center px-2 py-1 border border-rule rounded-sm font-mono uppercase text-muted" style="font-size: 11px; letter-spacing: 0.08em;">
+            max {{ . }}
+          </span>
+          {{- end }}
+        </div>
+      </div>
+
+      <aside class="grid gap-3">
+        <div class="rounded-sm px-4 py-3" style="border:1px solid rgba(15,115,86,0.30); border-left:3px solid #0F7356; background:rgba(15,115,86,0.04);">
+          <div class="text-meta font-mono uppercase text-verified mb-1.5">{{ if $isZh }}这样写对{{ else }}Looks good{{ end }}</div>
+          <div class="font-mono text-ink" style="font-size: 15px;">{{ $f.example }}</div>
+        </div>
+        <div class="rounded-sm px-4 py-3" style="border:1px solid rgba(179,58,30,0.30); border-left:3px solid #B33A1E; background:rgba(179,58,30,0.04);">
+          <div class="text-meta font-mono uppercase text-scam mb-1.5">{{ if $isZh }}会被退回{{ else }}Will be rejected{{ end }}</div>
+          <div class="font-mono text-ink" style="font-size: 15px; text-decoration: line-through; text-decoration-color: #B33A1E;">{{ $f.mistake }}</div>
+          <p class="text-xs text-muted m-0 mt-1.5">{{ $mistakeWhy }}</p>
+        </div>
+      </aside>
+    </div>
+    {{- end }}
+  </div>
+</section>
+
+{{- /* Error decoder band ------------------------------------------- */ -}}
+{{- with $errors }}
+<section class="-mx-md px-md py-xl border-y border-rule" style="background:#F4F2EC;">
+  <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}§ 错误解码{{ else }}§ Error decoder{{ end }}</div>
+  <h2 class="font-serif font-medium mb-lg" style="font-size: 32px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144; margin-top: 0;">
+    {{ if $isZh }}官方原话 vs 真正含义。{{ else }}What the official site says vs. what it actually means.{{ end }}
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 border border-rule bg-paper overflow-hidden">
+    {{- range $i, $e := . }}
+    <div class="p-6 grid grid-cols-[180px_1fr] gap-5 items-baseline {{ if eq (mod $i 2) 0 }}md:border-r border-rule{{ end }} {{ if lt (add $i 1) (len $errors) }}border-b border-rule{{ end }}">
+      <code class="font-mono text-scam font-medium" style="font-size: 13px;">"{{ $e.code }}"</code>
+      <p class="m-0" style="font-size: 15px; line-height: 1.5;">{{ if $isZh }}{{ $e.why_zh }}{{ else }}{{ $e.why_en }}{{ end }}</p>
+    </div>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+{{- /* After submit — 5 steps. 4 i18n + 1 from output_en/zh -------- */ -}}
+<section class="pt-22 pb-xl grid grid-cols-1 md:grid-cols-[280px_1fr] gap-xl">
+  <div>
+    <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}§ 提交之后{{ else }}§ After submit{{ end }}</div>
+    <h2 class="font-serif font-medium m-0" style="font-size: 32px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144;">
+      {{- if $isZh -}}
+      从点提交到过关之间会发生什么。
+      {{- else -}}
+      What happens between hitting submit and getting through immigration.
+      {{- end -}}
+    </h2>
+  </div>
+
+  {{- $steps := slice
+    (dict "tEn" "Confirmation screen" "tZh" "确认页"           "sEn" "The official site shows a confirmation on screen. Screenshot it — that's your backup." "sZh" "官方站会显示一个确认页。先截图——那是你的备份。")
+    (dict "tEn" "Email arrives"       "tZh" "邮件送达"         "sEn" (printf "Within a few minutes from a %s address, with the record details." (strings.TrimPrefix "." $meta.suffix)) "sZh" (printf "几分钟内会有 %s 域名的邮件送达，附记录详情。" (strings.TrimPrefix "." $meta.suffix)))
+    (dict "tEn" "At immigration"      "tZh" "过关时"           "sEn" $output "sZh" $output)
+    (dict "tEn" "No printout needed"  "tZh" "不必打印"         "sEn" "Screenshot is fine. PDF is fine. Even the email app open on your phone is fine." "sZh" "截图就行，PDF 也行，甚至直接打开手机邮箱给官员看都行。")
+    (dict "tEn" "If verification fails" "tZh" "万一核验失败"   "sEn" "Rare. Officer looks you up by passport number — your record is already in the system." "sZh" "极少见。警官会用护照号查你——提交那一刻起记录已经进系统了。")
+  -}}
+  <ol class="list-none p-0 m-0">
+    {{- range $i, $s := $steps }}
+    <li class="grid grid-cols-[48px_1fr] gap-5 py-5 border-t border-rule {{ if eq $i 4 }}border-b border-rule{{ end }}">
+      <div class="font-serif font-medium text-ink" style="font-size: 28px; letter-spacing: -0.01em; line-height: 1; font-variation-settings: 'opsz' 144;">0{{ add $i 1 }}</div>
+      <div>
+        <h3 class="m-0 mb-1.5 font-sans font-semibold" style="font-size: 18px;">{{ if $isZh }}{{ $s.tZh }}{{ else }}{{ $s.tEn }}{{ end }}</h3>
+        <p class="text-small text-muted m-0">{{ if $isZh }}{{ $s.sZh }}{{ else }}{{ $s.sEn }}{{ end }}</p>
+      </div>
+    </li>
+    {{- end }}
+  </ol>
+</section>
+
+{{- partial "share-source.html" . -}}
+
+{{- if .Section }}
+{{- partial "affiliate-footer.html" . -}}
+{{- end }}
+
+{{ end }}

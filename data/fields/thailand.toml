@@ -1,0 +1,143 @@
+# Thailand TDAC — field-by-field display data for the how-to-fill layout.
+# Bilingual fields use `_en` / `_zh`. Keep both translations in sync.
+# `key` links each entry back to data/rules/thailand.json#fields.{key} so the
+# layout can pull the regex / max length / label directly from the validator's
+# source of truth — no duplication.
+
+# Eight most error-prone fields shown on the page; the form has 23 total
+# (see meta.field_count in data/official_urls/thailand.toml).
+
+[[fields]]
+n = "01"
+key = "passport"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "A1234567"
+mistake = "a 1234567"
+mistake_why_en = "lowercase letter and a space — also a common paste from the MRZ row"
+mistake_why_zh = "小写字母 + 空格；也常见于直接从 MRZ 行复制"
+copy_en = "The string next to \"Passport No.\" on the photo page. Six to nine characters, almost always starts with a letter. No spaces, no dashes. Do not use the two long rows of letters and digits at the bottom of the page — that's the MRZ, not your passport number."
+copy_zh = "护照照片页 \"Passport No.\" 那一栏的字符串。6 到 9 位，几乎一定以字母开头。无空格、无短横。不要用照片页底部那两长串字母数字（MRZ），那不是你的护照号。"
+
+[[fields]]
+n = "02"
+key = "given_name"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "JOHN QUINCY"
+mistake = "José"
+mistake_why_en = "TDAC rejects diacritics — use the Latin MRZ spelling"
+mistake_why_zh = "TDAC 不接受重音符；用护照 MRZ 行里的 Latin 拼写"
+copy_en = "First and middle names in Latin letters, exactly as printed. Max 40 characters. No accents, no non-Latin scripts. The MRZ row of your passport is always ASCII — use it as your source of truth."
+copy_zh = "名 + 中间名，用 Latin 字母原样填，最长 40 字符。不接受重音符或非 Latin 文字。护照 MRZ 行永远是 ASCII，可以拿来对照。"
+
+[[fields]]
+n = "03"
+key = "family_name"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "SMITH-JONES"
+mistake = "(blank)"
+mistake_why_en = "some passports leave surname blank — repeat the given name"
+mistake_why_zh = "某些护照姓氏栏是空的——把给定名再写一遍即可"
+copy_en = "Surname, as printed. Keep hyphens. Include suffixes (JR, III) only if printed on the photo page. If your passport's family-name field is blank, repeat the given name."
+copy_zh = "姓氏原样填，保留连字符。后缀（JR、III）只在护照印上才填。如果护照姓氏栏空白，把给定名复制一遍。"
+
+[[fields]]
+n = "04"
+key = "date_of_birth"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "1991-08-22"
+mistake = "08/22/1991"
+mistake_why_en = "US format — the official site only accepts YYYY-MM-DD"
+mistake_why_zh = "美国格式——官方站只认 YYYY-MM-DD"
+copy_en = "ISO 8601 format. Not US, not EU. This is the single most-rejected field on the form. On mobile, tap the field and use the native date picker — it bypasses format errors entirely."
+copy_zh = "ISO 8601 格式。既不是美式也不是欧式。这是整份表格最容易被退回的字段。手机上点开字段用原生日期选择器，能避开所有格式错误。"
+
+[[fields]]
+n = "05"
+key = "flight_number"
+section_en = "Section 2 · Trip"
+section_zh = "第 2 段 · 行程"
+example = "TG312"
+mistake = "THAI 312"
+mistake_why_en = "airline name + space; use the 2-letter IATA code"
+mistake_why_zh = "写了航司全名 + 空格；要用 2 位 IATA 代码"
+copy_en = "Two-letter IATA carrier code, then the flight number, no space. On a codeshare ticket (\"operated by X, marketed as Y\"), use the operating carrier — that's the one on the passenger manifest."
+copy_zh = "2 位 IATA 航司代码 + 航班号，中间不加空格。代码共享航班（\"operated by X, marketed as Y\"）用 operating carrier，那才是旅客名单上的承运方。"
+
+[[fields]]
+n = "06"
+key = "arrival_date"
+section_en = "Section 2 · Trip"
+section_zh = "第 2 段 · 行程"
+example = "2026-05-14"
+mistake = "2026-05-12"
+mistake_why_en = "used departure date — red-eye trap. Use the BKK arrival date"
+mistake_why_zh = "用了起飞日期——红眼航班的常见错误。要用 BKK 实际抵达日期"
+copy_en = "The date you actually land in Thailand, in Thailand local time. Red-eye trap: if you depart JFK at 11pm May 12 and land in Bangkok at 1am May 14 local, the arrival date is 2026-05-14. The official site rejects submissions more than 3 days before arrival."
+copy_zh = "你真正在泰国本地时间落地的那一天。红眼航班陷阱：5 月 12 日晚 11 点从 JFK 起飞、5 月 14 日凌晨 1 点抵达曼谷，到达日期就是 2026-05-14。官方站点拒绝提交时间早于到达前 3 天的表单。"
+
+[[fields]]
+n = "07"
+key = "email"
+section_en = "Section 3 · Contact"
+section_zh = "第 3 段 · 联系方式"
+example = "travel@gmail.com"
+mistake = "travel@gmial.com"
+mistake_why_en = "classic domain typo — TDAC doesn't bounce the address, it just never delivers"
+mistake_why_zh = "经典域名笔误——TDAC 不会退信，是直接不送达"
+copy_en = "Where the confirmation and QR code arrive. Pick an inbox you can open on the phone you'll actually have in the airport. Max 80 chars. If nothing arrives within an hour, check spam, then refile — the official site is idempotent."
+copy_zh = "确认信和二维码会发到这个邮箱。挑一个你在机场也能用手机打开的邮箱。最长 80 字符。一小时内没收到先看垃圾箱，再不行就重新提交——官方站是幂等的。"
+
+[[fields]]
+n = "08"
+key = "phone"
+section_en = "Section 3 · Contact"
+section_zh = "第 3 段 · 联系方式"
+example = "+1 415 555 0100"
+mistake = "415-555-0100"
+mistake_why_en = "missing country code prefix — required even for US numbers"
+mistake_why_zh = "少了国家代码前缀——即便是美国号码也要写 +1"
+copy_en = "Optional. Include the country code with a +. Used only if immigration needs to reach you. Most travelers never get a call."
+copy_zh = "可选。带 + 的国家代码必须有。仅在移民局需要联系你时才会用上，大部分旅客根本不会接到电话。"
+
+# Error decoder — what the official site says vs what it actually means.
+# Each `code` is the literal string the official TDAC returns (lifted from
+# data/rules/thailand.json's errors{} maps and confirmed against the live form).
+
+[[errors]]
+code = "Invalid passport number"
+why_en = "Space, dash, lowercase letter, or pasted from the MRZ."
+why_zh = "空格、短横、小写字母，或者从 MRZ 行复制过来的。"
+
+[[errors]]
+code = "Invalid date format"
+why_en = "Used MM/DD/YYYY or DD/MM/YYYY. TDAC wants YYYY-MM-DD."
+why_zh = "用了 MM/DD/YYYY 或 DD/MM/YYYY。TDAC 要 YYYY-MM-DD。"
+
+[[errors]]
+code = "Arrival date out of range"
+why_en = "More than 3 days before arrival, or more than 18 months out."
+why_zh = "提前超过 3 天，或超过 18 个月。"
+
+[[errors]]
+code = "Email format invalid"
+why_en = "Trailing space, missing @, or a domain typo. Classic is gmial.com."
+why_zh = "末尾空格、缺 @，或者域名拼写错。常见是 gmial.com。"
+
+[[errors]]
+code = "Flight number not recognized"
+why_en = "Used marketing carrier on a codeshare, added a space, or mistyped the IATA prefix."
+why_zh = "代码共享时用了 marketing carrier、加了空格，或者 IATA 前缀打错。"
+
+[[errors]]
+code = "Name contains invalid characters"
+why_en = "Diacritics or non-Latin script. Use the MRZ ASCII spelling."
+why_zh = "重音符或非 Latin 文字。用 MRZ 那行的 ASCII 拼写。"
+
+[[errors]]
+code = "No confirmation email after 1 hour"
+why_en = "Check spam. Still missing — refile. Duplicate submissions are harmless; the latest one applies."
+why_zh = "先查垃圾邮件。还没有就重新提交。重复提交无害，以最新一次为准。"
