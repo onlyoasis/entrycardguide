@@ -22,6 +22,7 @@ faq:
     a: "不一定。官员会用护照查询你。但把确认邮件留在手机上是零成本的安全网，万一系统出问题可以救急。"
   - q: "iVisa 是 MDAC 官方网站吗？"
     a: "不是。iVisa 是为免费 MDAC 收费的商业中介。它与马来西亚移民局没有任何关联。"
+layout: country-form
 ---
 
 {{< official-link site="malaysia.mdac" >}}

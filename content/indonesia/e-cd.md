@@ -24,6 +24,7 @@ faq:
     a: "No. iVisa is a commercial middleman that charges fees on top of Indonesia's free e-CD and government e-VOA. It is not affiliated with the Indonesian government."
   - q: "I filled the e-CD but didn't get a confirmation email."
     a: "Check spam first. If still missing after 1 hour, refile. Duplicate submissions are harmless and the most recent applies."
+layout: country-form
 ---
 
 {{< official-link site="indonesia.ecd" >}}

@@ -16,6 +16,21 @@ name = "Immigration & Checkpoints Authority (home)"
 agency = "Immigration & Checkpoints Authority"
 last_verified = "2026-04-26"
 
+# Country-page metadata (consumed by country-form layout).
+# Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
+[meta]
+flag = "🇸🇬"
+name_en = "Singapore"
+name_zh = "新加坡"
+form_code = "SGAC"
+form_name_en = "Arrival Card"
+form_name_zh = "入境卡"
+since_en = "since 2022"
+since_zh = "2022 年起"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".gov.sg"
+
 # Known scam / middleman domains (for scam-site shortcode)
 # Every entry must:
 #   1. Resolve via DNS (we audit this with `dig`)

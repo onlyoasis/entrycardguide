@@ -24,6 +24,7 @@ faq:
     a: "E-visa is fully online and lets you board your flight directly. Visa on arrival (VOA) requires a sponsor letter from a Vietnamese company before flight, and you pay another fee at the airport. VOA is also where the worst middleman scams live: 'visa on arrival' agencies often charge $40-80 for the sponsor letter, then bill the airport stamping fee on top. For most travelers, e-visa is simpler and cheaper."
   - q: "I already paid a middleman more than $25. Can I get a refund?"
     a: "If they actually delivered a real e-visa from evisa.xuatnhapcanh.gov.vn, your visa is valid and you cannot get a refund from the government. You can dispute the markup with your credit card issuer as 'misleading merchant' — explain the official fee is $25 and you were not informed. Best within 60 days of the charge."
+layout: country-form
 ---
 
 {{< official-link site="vietnam.evisa" >}}

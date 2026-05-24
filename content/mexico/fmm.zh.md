@@ -20,6 +20,7 @@ faq:
     a: "不是。iVisa 是商业中介，向你收钱代你提交免费 FMM-E。它与墨西哥 INM 没有任何关联。"
   - q: "我把边境官员给的 FMM 回执条丢了怎么办？"
     a: "出境时在机场会有一笔小额补办费。带上入境证明（登机牌、酒店收据）方便海关核对日期。"
+layout: country-form
 ---
 
 {{< official-link site="mexico.fmm" >}}

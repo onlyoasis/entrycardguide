@@ -20,6 +20,8 @@ last_verified = "2026-04-22"
 # Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
 [meta]
 flag = "🇹🇭"
+name_en = "Thailand"
+name_zh = "泰国"
 form_code = "TDAC"
 form_name_en = "Digital Arrival Card"
 form_name_zh = "数字入境卡"

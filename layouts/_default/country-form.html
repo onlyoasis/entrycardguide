@@ -10,6 +10,10 @@
 {{- $formName := cond $isZh $meta.form_name_zh $meta.form_name_en -}}
 {{- $since := cond $isZh $meta.since_zh $meta.since_en -}}
 {{- $fee := cond $isZh $meta.fee_zh $meta.fee_en -}}
+{{- /* Short country name. The hub's .Parent.Title is the SEO-loaded long form
+       in ZH ("新加坡 SGAC 官方网站..."); use the [meta] short name everywhere
+       we display the country inline so the breadcrumb and hero meta stay tight. */ -}}
+{{- $countryName := cond $isZh $meta.name_zh $meta.name_en -}}
 
 {{- /* Breadcrumb (with right-aligned last-reviewed date) ------------- */ -}}
 <nav aria-label="Breadcrumb" class="-mx-md px-md py-3 border-b border-rule flex items-baseline justify-between flex-wrap gap-y-2 font-mono text-xs text-muted">
@@ -17,7 +21,7 @@
     <a href="{{ "/" | relLangURL }}" class="text-muted no-underline hover:text-ink">{{ if $isZh }}首页{{ else }}Home{{ end }}</a>
     <span class="mx-1.5">›</span>
     {{- with .Parent }}
-    <a href="{{ .Permalink }}" class="text-muted no-underline hover:text-ink">{{ .Title }}</a>
+    <a href="{{ .Permalink }}" class="text-muted no-underline hover:text-ink">{{ $countryName }}</a>
     <span class="mx-1.5">›</span>
     {{- end }}
     <span class="text-ink">{{ $formCode }}{{ if $isZh }}：官方网址与避坑指南{{ else }}: official site &amp; how to avoid scams{{ end }}</span>
@@ -32,7 +36,7 @@
 <article class="pt-22 pb-md max-w-[920px]">
   <div class="text-meta font-mono uppercase text-muted mb-5">
     <span aria-hidden="true">{{ $meta.flag }}</span>
-    {{ .Parent.Title }} {{ $formCode }} · {{ $since }}
+    {{ $countryName }} {{ $formCode }} · {{ $since }}
   </div>
   <h1 class="font-serif font-medium m-0" style="font-size: clamp(36px, 5.6vw, 56px); line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
     {{ .Title }}

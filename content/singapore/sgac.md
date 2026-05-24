@@ -24,6 +24,7 @@ faq:
     a: "No. iVisa is a commercial middleman charging fees for Singapore's free SGAC. It is not affiliated with ICA."
   - q: "I filled the SGAC but didn't get a confirmation email."
     a: "Check spam first. If still missing after 1 hour, refile. Duplicate submissions are harmless and the most recent one applies."
+layout: country-form
 ---
 
 {{< official-link site="singapore.sgac" >}}

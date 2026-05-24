@@ -20,6 +20,7 @@ faq:
     a: "抵达前 72 小时内。DGM 推荐抵达前 24 至 48 小时。再早一些也可以，但航班信息可能还没敲定。"
   - q: "iVisa 是 DR E-Ticket 官方网站吗？"
     a: "不是。iVisa 是为免费的多米尼加 E-Ticket 收费的商业中介。它与多米尼加移民局总局没有任何关联。"
+layout: country-form
 ---
 
 {{< official-link site="dominican.eticket" >}}

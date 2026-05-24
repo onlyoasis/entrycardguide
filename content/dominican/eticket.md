@@ -20,6 +20,7 @@ faq:
     a: "Within 72 hours of arrival. The DGM recommends 24 to 48 hours before arrival. Earlier than the 72-hour window is allowed but flight details may not be final yet."
   - q: "Is iVisa the official DR E-Ticket site?"
     a: "No. iVisa is a commercial middleman charging fees for the free DR E-Ticket. It is not affiliated with the Dirección General de Migración."
+layout: country-form
 ---
 
 {{< official-link site="dominican.eticket" >}}

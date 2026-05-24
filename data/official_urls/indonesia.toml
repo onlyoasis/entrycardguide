@@ -23,6 +23,22 @@ name = "Indonesia Immigration (home)"
 agency = "Direktorat Jenderal Imigrasi"
 last_verified = "2026-04-26"
 
+# Country-page metadata (consumed by country-form layout).
+# Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
+# Primary main-form page covers the free e-CD; e-VOA is a separate paid path.
+[meta]
+flag = "🇮🇩"
+name_en = "Indonesia"
+name_zh = "印度尼西亚"
+form_code = "e-CD"
+form_name_en = "Electronic Customs Declaration"
+form_name_zh = "电子海关申报"
+since_en = "since 2022"
+since_zh = "2022 年起"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".go.id"
+
 # Known scam / middleman domains (for scam-site shortcode)
 # Every entry must:
 #   1. Resolve via DNS (we audit this with `dig`)

@@ -16,6 +16,21 @@ name = "Jabatan Imigresen Malaysia (home)"
 agency = "Jabatan Imigresen Malaysia"
 last_verified = "2026-04-24"
 
+# Country-page metadata (consumed by country-form layout).
+# Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
+[meta]
+flag = "🇲🇾"
+name_en = "Malaysia"
+name_zh = "马来西亚"
+form_code = "MDAC"
+form_name_en = "Digital Arrival Card"
+form_name_zh = "数字入境卡"
+since_en = "since January 2024"
+since_zh = "2024 年 1 月起"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".gov.my"
+
 # Known scam / middleman domains (for scam-site shortcode)
 # Every entry must:
 #   1. Resolve via DNS (we audit this with `dig`)

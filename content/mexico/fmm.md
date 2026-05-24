@@ -20,6 +20,7 @@ faq:
     a: "No. iVisa is a commercial middleman. It charges a fee to submit the free FMM-E on your behalf. It is not affiliated with Mexico's INM."
   - q: "I lost the FMM stub the border officer gave me. What do I do?"
     a: "You will pay a small replacement fee at the airport when you exit Mexico. Bring proof of entry (boarding pass, hotel receipt) so customs can verify your dates."
+layout: country-form
 ---
 
 {{< official-link site="mexico.fmm" >}}

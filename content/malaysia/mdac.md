@@ -22,6 +22,7 @@ faq:
     a: "Not strictly required. Officers look you up by passport. But keeping the confirmation email open on your phone is a zero-cost safety net if their system has issues."
   - q: "Is iVisa the official MDAC site?"
     a: "No. iVisa is a commercial middleman charging fees for the free MDAC. It is not affiliated with Jabatan Imigresen Malaysia."
+layout: country-form
 ---
 
 {{< official-link site="malaysia.mdac" >}}

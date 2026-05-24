@@ -24,6 +24,7 @@ faq:
     a: "不是。iVisa 是商业中介，对印尼免费的 e-CD 和政府 e-VOA 都加价收费。它与印尼政府没有任何关联。"
   - q: "我填了 e-CD 但没收到确认邮件。"
     a: "先看垃圾邮件箱。1 小时后仍然没有就重新提交。重复提交无害，最近一份为准。"
+layout: country-form
 ---
 
 {{< official-link site="indonesia.ecd" >}}

@@ -24,6 +24,7 @@ faq:
     a: "不是。iVisa 是为新加坡免费 SGAC 收费的商业中介。它与 ICA 没有任何关联。"
   - q: "我填了 SGAC 但没收到确认邮件。"
     a: "先看垃圾邮件箱。1 小时后仍然没有就重新提交。重复提交无害，最近一份为准。"
+layout: country-form
 ---
 
 {{< official-link site="singapore.sgac" >}}
