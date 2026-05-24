@@ -23,6 +23,7 @@ flag = "🇩🇴"
 name_en = "Dominican Republic"
 name_zh = "多米尼加"
 form_code = "E-Ticket"
+guide_slug = "eticket"
 form_name_en = "Electronic Entry/Exit Ticket"
 form_name_zh = "电子入境/离境票"
 since_en = "since 2021"
@@ -30,6 +31,14 @@ since_zh = "2021 年起"
 fee_en = "Free"
 fee_zh = "免费"
 suffix = ".gob.do"
+
+# Used by the how-to-fill layout.
+field_count = 14
+sections = 3
+time_needed_en = "~8 minutes"
+time_needed_zh = "约 8 分钟"
+output_en = "Show passport + QR. Officer scans, stamps, hands back. Same QR is reused on departure — keep the screenshot."
+output_zh = "出示护照和二维码。警官扫描、盖章、还你。离境时再用同一个二维码——截图保留好。"
 
 # Known scam / middleman domains (for scam-site shortcode)
 # Every entry must:

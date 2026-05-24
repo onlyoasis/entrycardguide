@@ -1,0 +1,103 @@
+# Indonesia e-CD — field-by-field display data for the how-to-fill layout.
+# Bilingual fields use `_en` / `_zh`. `key` links to data/rules/indonesia.json
+# for the validator regex / max length (single source of truth).
+
+# Six high-error fields shown on the page; the form has 12 total
+# (see meta.field_count in data/official_urls/indonesia.toml).
+
+[[fields]]
+n = "01"
+key = "passport"
+section_en = "Section 1 · Traveler identity"
+section_zh = "第 1 段 · 旅客身份"
+example = "A12345678"
+mistake = "A 12345678"
+mistake_why_en = "space — e-CD strips it on submit but the validator flags it first"
+mistake_why_zh = "空格——e-CD 提交时会去掉但校验器会先标红"
+copy_en = "The string next to \"Passport No.\" on the photo page. 6 to 12 alphanumeric characters. Do not paste from the MRZ at the bottom — those rows include check digits."
+copy_zh = "护照照片页 \"Passport No.\" 那栏，6 到 12 位字母+数字。不要从底部 MRZ 复制——那两行包含校验位。"
+
+[[fields]]
+n = "02"
+key = "full_name"
+section_en = "Section 1 · Traveler identity"
+section_zh = "第 1 段 · 旅客身份"
+example = "BUDI SANTOSO"
+mistake = "Budi Santoso, S.E."
+mistake_why_en = "academic titles (S.E., M.M.) not on passport — leave them out"
+mistake_why_zh = "护照上没有的学位/职称（如 S.E.、M.M.）不要写"
+copy_en = "Single field — type your full name exactly as on the passport photo page. Latin letters only. Leave out any academic or professional titles that aren't printed on the passport itself."
+copy_zh = "单字段——完整名字按护照照片页原样填，仅限 Latin 字母。护照上没印的学位/职称不要加。"
+
+[[fields]]
+n = "03"
+key = "date_of_birth"
+section_en = "Section 1 · Traveler identity"
+section_zh = "第 1 段 · 旅客身份"
+example = "1991-08-22"
+mistake = "08/22/1991"
+mistake_why_en = "US format — e-CD wants ISO YYYY-MM-DD"
+mistake_why_zh = "美式格式——e-CD 要 ISO YYYY-MM-DD"
+copy_en = "ISO 8601 (YYYY-MM-DD). On mobile use the date picker."
+copy_zh = "ISO 8601（YYYY-MM-DD）。手机上用日期选择器。"
+
+[[fields]]
+n = "04"
+key = "flight_number"
+section_en = "Section 2 · Trip"
+section_zh = "第 2 段 · 行程"
+example = "GA715"
+mistake = "GA 715"
+mistake_why_en = "space in the flight code"
+mistake_why_zh = "航班代码里有空格"
+copy_en = "2-letter IATA code + number, no space. GA (Garuda Indonesia), QZ (AirAsia Indonesia), SQ (Singapore Airlines), CX (Cathay). For small regional carriers the dropdown sometimes misses entries — type the number manually if the dropdown rejects a valid flight."
+copy_zh = "2 位 IATA 代码 + 航班号，不加空格。GA（鹰航）、QZ（亚航印尼）、SQ（新航）、CX（国泰）。小航司有时下拉漏掉，下拉拒了就手动键入。"
+
+[[fields]]
+n = "05"
+key = "arrival_date"
+section_en = "Section 2 · Trip"
+section_zh = "第 2 段 · 行程"
+example = "2026-05-14"
+mistake = "2026-05-13"
+mistake_why_en = "used departure date — use the date you land in Indonesia local time"
+mistake_why_zh = "用了起飞日期——要用印尼本地落地日期"
+copy_en = "Date you land in Indonesia, local time. Submit within 3 days before arrival — earlier rejects. Bali red-eyes from Australia often roll into the next day, watch for that."
+copy_zh = "在印尼本地时间落地的那天。提前 3 天内提交——超前会被拒。澳洲飞巴厘的红眼经常跨日，要留意。"
+
+[[fields]]
+n = "06"
+key = "accommodation"
+section_en = "Section 3 · Customs"
+section_zh = "第 3 段 · 海关"
+example = "Hotel Indigo Bali Seminyak, Jl. Camplung Tanduk No.10"
+mistake = "Hotel"
+mistake_why_en = "name + street is the minimum — \"Hotel\" alone is rejected"
+mistake_why_zh = "至少名字 + 街道——只写 \"Hotel\" 会被退"
+copy_en = "Hotel/villa name + street name + town is enough. Bali addresses with no street number work if the name is recognizable. For multiple stops, use the first night."
+copy_zh = "酒店/民宿名 + 街道 + 区即可。巴厘有些地址没门牌号也行，名字能识别就够。多地行程填第一晚的。"
+
+[[errors]]
+code = "Invalid passport number"
+why_en = "Space, dash, or pasted from the MRZ. Use the short number above the MRZ."
+why_zh = "空格、短横，或从 MRZ 复制。用 MRZ 上方的短号。"
+
+[[errors]]
+code = "Invalid date of arrival"
+why_en = "Used MM/DD/YYYY or DD/MM/YYYY. Use the date picker or paste YYYY-MM-DD."
+why_zh = "用了 MM/DD/YYYY 或 DD/MM/YYYY。用日期选择器或粘 YYYY-MM-DD。"
+
+[[errors]]
+code = "Flight number not recognized"
+why_en = "Codeshare carrier mismatch. Check your boarding pass for the operating carrier. Small airlines sometimes drop from the dropdown — type manually."
+why_zh = "代码共享航司不匹配。看登机牌上的 operating carrier。小航司有时下拉里没有——手动键入。"
+
+[[errors]]
+code = "Email already submitted for this date"
+why_en = "You filed for the same arrival date. Open the existing record by passport number — update it instead of refiling."
+why_zh = "同一到达日期已经提交过。用护照号打开旧记录修改，别重新提交。"
+
+[[errors]]
+code = "No QR after 1 hour"
+why_en = "Check spam. Indonesian customs occasionally drops emails to Outlook.com — try refiling with a Gmail address as backup."
+why_zh = "查垃圾箱。印尼海关有时给 Outlook.com 邮箱送不到——用 Gmail 重提一次作备份。"

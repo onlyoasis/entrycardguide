@@ -7,6 +7,7 @@ lastmod: 2026-04-26
 country: "indonesia"
 weight: 20
 keywords: ["印尼海关申报怎么填", "巴厘岛海关表字段", "印尼海关申报帮助", "ecd.beacukai.go.id 字段"]
+layout: how-to-fill
 ---
 
 {{< official-link site="indonesia.ecd" >}}

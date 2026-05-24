@@ -23,6 +23,7 @@ flag = "🇲🇽"
 name_en = "Mexico"
 name_zh = "墨西哥"
 form_code = "FMM-E"
+guide_slug = "fmm"
 form_name_en = "Forma Migratoria Múltiple"
 form_name_zh = "电子入境表"
 since_en = "since 2023"
@@ -30,6 +31,14 @@ since_zh = "2023 年起"
 fee_en = "Free"
 fee_zh = "免费"
 suffix = ".gob.mx"
+
+# Used by the how-to-fill layout.
+field_count = 10
+sections = 3
+time_needed_en = "~6 minutes"
+time_needed_zh = "约 6 分钟"
+output_en = "Officer stamps the FMM-E PDF and tears off a stub. Keep the stub until you exit Mexico — you surrender it on departure."
+output_zh = "警官在 FMM-E PDF 上盖章并撕下副本。副本要保留到离境时交回——丢了要补办小额费用。"
 
 # Known scam / middleman domains (for scam-site shortcode)
 # IMPORTANT: only add to this list after verifying the site is charging for the free FMM

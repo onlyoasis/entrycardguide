@@ -7,6 +7,7 @@ lastmod: 2026-04-26
 country: "vietnam"
 weight: 20
 keywords: ["vietnam e-visa how to fill", "vietnam evisa fields", "vietnam visa application help", "evisa.xuatnhapcanh.gov.vn fields", "vietnam e-visa photo upload"]
+layout: how-to-fill
 ---
 
 {{< official-link site="vietnam.evisa" >}}

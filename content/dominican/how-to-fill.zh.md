@@ -7,6 +7,7 @@ lastmod: 2026-04-26
 country: "dominican"
 weight: 20
 keywords: ["多米尼加 E-Ticket 怎么填", "DR E-Ticket 字段", "蓬塔卡纳入境表帮助"]
+layout: how-to-fill
 ---
 
 {{< official-link site="dominican.eticket" >}}

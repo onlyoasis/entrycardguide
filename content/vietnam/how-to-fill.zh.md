@@ -7,6 +7,7 @@ lastmod: 2026-04-26
 country: "vietnam"
 weight: 20
 keywords: ["越南 e-visa 怎么填", "越南电子签证字段", "越南签证申请帮助", "越南 e-visa 照片"]
+layout: how-to-fill
 ---
 
 {{< official-link site="vietnam.evisa" >}}

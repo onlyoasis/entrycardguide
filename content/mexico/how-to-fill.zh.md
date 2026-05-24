@@ -7,6 +7,7 @@ lastmod: 2026-04-26
 country: "mexico"
 weight: 20
 keywords: ["FMM 怎么填", "墨西哥入境表字段", "FMM-E 字段填写", "INM 表单帮助"]
+layout: how-to-fill
 ---
 
 {{< official-link site="mexico.fmm" >}}

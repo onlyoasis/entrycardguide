@@ -6,6 +6,7 @@ date: 2026-04-24
 lastmod: 2026-04-24
 country: "mexico"
 weight: 20
+layout: how-to-fill
 ---
 
 {{< official-link site="mexico.fmm" >}}

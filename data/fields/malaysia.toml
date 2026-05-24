@@ -1,0 +1,126 @@
+# Malaysia MDAC — field-by-field display data for the how-to-fill layout.
+# Bilingual fields use `_en` / `_zh`. `key` links each entry back to
+# data/rules/malaysia.json#fields.{key} so the layout reads the regex /
+# max length from the validator's source of truth, no duplication.
+
+# Six high-error fields shown on the page; the form has 15 total
+# (see meta.field_count in data/official_urls/malaysia.toml).
+
+[[fields]]
+n = "01"
+key = "passport"
+section_en = "Section 1 · Traveler identity"
+section_zh = "第 1 段 · 旅客身份"
+example = "A12345678"
+mistake = "A 12345678"
+mistake_why_en = "space in the middle — strip all spaces and dashes"
+mistake_why_zh = "中间有空格——去掉所有空格和短横"
+copy_en = "The string next to \"Passport No.\" on the photo page. 6 to 12 alphanumeric characters. Do not paste from the two long lines at the bottom of the page (the MRZ) — those include check digits, not your passport number."
+copy_zh = "护照照片页 \"Passport No.\" 那一栏的字符串，6 到 12 位字母+数字。不要从照片页底部那两长串复制（那是 MRZ，包含校验位，不是护照号）。"
+
+[[fields]]
+n = "02"
+key = "full_name"
+section_en = "Section 1 · Traveler identity"
+section_zh = "第 1 段 · 旅客身份"
+example = "LIM WEI MING"
+mistake = "Lim, Wei Ming"
+mistake_why_en = "MDAC is a single name field, no comma. Use the order shown on your passport"
+mistake_why_zh = "MDAC 是单字段，不加逗号。按护照印的顺序填"
+copy_en = "Single field — MDAC does not split given and family names. Type your full name exactly as on the passport photo page, in the same order. Western passports usually go given-first; some Asian passports go family-first. Match the passport, do not reorder."
+copy_zh = "单字段——MDAC 不分名和姓。完整名字按护照照片页原样填，顺序也照搬。西式护照通常名在前、姓在后；某些亚洲护照是姓在前。看护照怎么印，别擅自调换。"
+
+[[fields]]
+n = "03"
+key = "date_of_birth"
+section_en = "Section 1 · Traveler identity"
+section_zh = "第 1 段 · 旅客身份"
+example = "1991-08-22"
+mistake = "22/08/1991"
+mistake_why_en = "EU format — MDAC wants ISO YYYY-MM-DD"
+mistake_why_zh = "欧式格式——MDAC 要 ISO YYYY-MM-DD"
+copy_en = "ISO 8601 (YYYY-MM-DD). On mobile, tap the field and use the native date picker — that bypasses format errors entirely."
+copy_zh = "ISO 8601（YYYY-MM-DD）。手机上点开字段用原生选择器，能跳过所有格式问题。"
+
+[[fields]]
+n = "04"
+key = "passport_expiry"
+section_en = "Section 1 · Traveler identity"
+section_zh = "第 1 段 · 旅客身份"
+example = "2030-08-22"
+mistake = "2026-06-01"
+mistake_why_en = "passport must be valid 6+ months past arrival date — airline will refuse boarding"
+mistake_why_zh = "护照需到达后仍有 6 个月+有效期——否则航司根本不让登机"
+copy_en = "ISO 8601. Must be at least 6 months after your planned arrival in Malaysia — this is a standard international immigration rule. If your passport expires sooner, the airline will deny boarding before you reach Malaysian immigration."
+copy_zh = "ISO 8601。必须比你到达马来西亚的日期至少晚 6 个月——这是国际通行规则。早于这个，航司就会拒载，根本到不了马来西亚移民局。"
+
+[[fields]]
+n = "05"
+key = "flight_number"
+section_en = "Section 2 · Trip"
+section_zh = "第 2 段 · 行程"
+example = "MH123"
+mistake = "MH 123"
+mistake_why_en = "space in the flight code"
+mistake_why_zh = "航班代码里有空格"
+copy_en = "2-letter IATA carrier code + number, no space. MH (Malaysia Airlines), AK (AirAsia), SQ (Singapore Airlines), EK (Emirates). Codeshare trap: use the operating carrier, not the marketing one."
+copy_zh = "2 位 IATA 航司代码 + 航班号，中间不加空格。MH（马航）、AK（亚航）、SQ（新航）、EK（阿航）。代码共享要用 operating carrier，不是 marketing carrier。"
+
+[[fields]]
+n = "06"
+key = "arrival_date"
+section_en = "Section 2 · Trip"
+section_zh = "第 2 段 · 行程"
+example = "2026-05-14"
+mistake = "2026-05-13"
+mistake_why_en = "used departure date — use the date you land in Malaysia local time"
+mistake_why_zh = "用了起飞日期——要用马来西亚本地落地的日期"
+copy_en = "Date you land in Malaysia, in Malaysia local time. Must be within 3 days from today — earlier submissions are rejected. Red-eye trap: depart 11pm May 13, land 2am May 14 → arrival date is 2026-05-14."
+copy_zh = "你在马来西亚本地时间落地的那天。必须在 3 天之内——超前提交会被拒。红眼航班：5/13 晚 11 点起飞，5/14 凌晨 2 点落地 → 到达日期是 2026-05-14。"
+
+[[fields]]
+n = "07"
+key = "port_of_entry"
+section_en = "Section 2 · Trip"
+section_zh = "第 2 段 · 行程"
+example = "KUL"
+mistake = "Kuala Lumpur"
+mistake_why_en = "use the IATA code, not the city name"
+mistake_why_zh = "用 IATA 代码，不是城市名"
+copy_en = "Malaysian airport IATA code, or named land/sea crossing. Airports: KUL (KL), PEN (Penang), BKI (Kota Kinabalu), KCH (Kuching), JHB (Johor Bahru), LGK (Langkawi). Land from Thailand: Bukit Kayu Hitam / Padang Besar / Wang Kelian. Land from Singapore: Johor Bahru–Woodlands or Tuas–Tuas."
+copy_zh = "马来西亚机场的 IATA 代码，或带名字的陆路/海路口岸。机场：KUL（吉隆坡）、PEN（槟城）、BKI（亚庇）、KCH（古晋）、JHB（新山）、LGK（兰卡威）。泰马陆路：Bukit Kayu Hitam / Padang Besar / Wang Kelian。新马陆路：Johor Bahru–Woodlands 或 Tuas–Tuas。"
+
+[[errors]]
+code = "Invalid passport number"
+why_en = "Space, dash, or pasted from the MRZ. Use the short number above the MRZ."
+why_zh = "空格、短横，或从 MRZ 复制。用 MRZ 上方的短号码。"
+
+[[errors]]
+code = "Invalid date of birth / Invalid passport expiry"
+why_en = "Used MM/DD/YYYY or DD/MM/YYYY. MDAC wants YYYY-MM-DD or the date picker."
+why_zh = "用了 MM/DD/YYYY 或 DD/MM/YYYY。MDAC 要 YYYY-MM-DD 或用选择器。"
+
+[[errors]]
+code = "Passport not valid for travel"
+why_en = "Passport expiry is less than 6 months past arrival date. Renew before flying."
+why_zh = "护照在到达日期后剩余有效期不足 6 个月。先续护照再飞。"
+
+[[errors]]
+code = "Arrival date out of range"
+why_en = "Submitting more than 3 days before arrival. Wait until inside the window."
+why_zh = "超前 3 天以上提交。等进窗口期再交。"
+
+[[errors]]
+code = "Flight not recognized"
+why_en = "Space in the flight number, or marketing carrier code on a codeshare. Check boarding pass for the operating carrier."
+why_zh = "航班号有空格，或代码共享时用了 marketing carrier。看登机牌上的 operating carrier。"
+
+[[errors]]
+code = "Site times out / hangs"
+why_en = "MDAC server struggles at peak travel periods. Wait 10–15 minutes, try a different browser or network."
+why_zh = "MDAC 服务器在旅游高峰易卡。等 10–15 分钟，换浏览器或网络试试。"
+
+[[errors]]
+code = "No confirmation email after 1 hour"
+why_en = "Check spam. Refile if still missing — duplicates are harmless, the latest one applies."
+why_zh = "先看垃圾箱。还没有就重新提交——重复无害，以最新为准。"

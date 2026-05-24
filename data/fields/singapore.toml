@@ -1,0 +1,125 @@
+# Singapore SGAC — field-by-field display data for the how-to-fill layout.
+# Bilingual fields use `_en` / `_zh`. `key` links to data/rules/singapore.json
+# for the validator regex / max length (single source of truth).
+
+# Seven high-error fields shown on the page; the form has 14 total
+# (see meta.field_count in data/official_urls/singapore.toml).
+
+[[fields]]
+n = "01"
+key = "passport"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "E1234567K"
+mistake = "e1234567k"
+mistake_why_en = "SGAC uppercases on submit but flags lowercase as a typo first"
+mistake_why_zh = "SGAC 提交时会自动转大写，但先把小写标成笔误"
+copy_en = "The string next to \"Passport No.\" on the photo page. ICA accepts 6 to 12 alphanumeric characters — Singapore-issued passports start with a letter, foreign formats vary. Do not paste from the MRZ at the bottom."
+copy_zh = "护照照片页 \"Passport No.\" 那栏。ICA 接受 6 到 12 位字母+数字——新加坡护照以字母开头，外国格式各异。不要从底部 MRZ 复制。"
+
+[[fields]]
+n = "02"
+key = "full_name"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "TAN, WEI MING"
+mistake = "Tan, Wei Ming"
+mistake_why_en = "SGAC needs uppercase Latin only — the MRZ row is your source of truth"
+mistake_why_zh = "SGAC 只接受大写 Latin 字母——以护照 MRZ 行为准"
+copy_en = "Surname first, comma, then given names — matching the MRZ row exactly. Diacritics not accepted. The MRZ is always ASCII; copy that format."
+copy_zh = "姓在前，逗号，再写名——和 MRZ 行完全一致。不接受重音符。MRZ 永远是 ASCII 格式，照搬即可。"
+
+[[fields]]
+n = "03"
+key = "date_of_birth"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "1989-03-14"
+mistake = "14-03-1989"
+mistake_why_en = "EU format — SGAC wants ISO YYYY-MM-DD"
+mistake_why_zh = "欧式格式——SGAC 要 ISO YYYY-MM-DD"
+copy_en = "ISO 8601 (YYYY-MM-DD). SGAC uses a calendar picker on desktop and the native date input on mobile — pick from the widget to avoid format errors entirely."
+copy_zh = "ISO 8601（YYYY-MM-DD）。SGAC 桌面端用日历控件，手机端用原生日期输入——从控件里选，能跳过所有格式问题。"
+
+[[fields]]
+n = "04"
+key = "passport_expiry"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "2030-08-22"
+mistake = "2026-05-01"
+mistake_why_en = "must be at least 6 months past arrival — airline will refuse boarding"
+mistake_why_zh = "必须比到达日期至少晚 6 个月——否则航司不让登机"
+copy_en = "ISO 8601. Must be at least 6 months after your arrival in Singapore. ICA enforces this strictly; airlines also block boarding."
+copy_zh = "ISO 8601。必须比到达新加坡的日期至少晚 6 个月。ICA 严格执行，航司也会拦在登机前。"
+
+[[fields]]
+n = "05"
+key = "flight_number"
+section_en = "Section 2 · Trip"
+section_zh = "第 2 段 · 行程"
+example = "SQ319"
+mistake = "SIA319"
+mistake_why_en = "used the airline name — use the 2-letter IATA code (SQ for Singapore Airlines)"
+mistake_why_zh = "用了航司全称——要用 2 位 IATA 代码（新航是 SQ）"
+copy_en = "For flights: 2-letter IATA code + number, no space. For sea arrivals at the cruise terminal: the vessel name + voyage number works."
+copy_zh = "航班：2 位 IATA 代码 + 航班号，不加空格。海路从邮轮码头入境：船名 + 航次号也可以。"
+
+[[fields]]
+n = "06"
+key = "accommodation"
+section_en = "Section 3 · Address"
+section_zh = "第 3 段 · 地址"
+example = "1 Raffles Place, Singapore 048616"
+mistake = "Marina Bay Sands"
+mistake_why_en = "ICA wants a full postal address with the 6-digit postal code, hotel name alone is rejected"
+mistake_why_zh = "ICA 需要完整地址含 6 位邮编，只写酒店名会被退"
+copy_en = "Full Singapore postal address including the 6-digit postal code. Hotel name alone is rejected. If staying with family, use their address. Cruise transit passengers can use the ship name."
+copy_zh = "完整的新加坡地址，含 6 位邮编。只写酒店名会被退。住亲友家就写他们的地址。邮轮过境用船名也可以。"
+
+[[fields]]
+n = "07"
+key = "email"
+section_en = "Section 3 · Address"
+section_zh = "第 3 段 · 地址"
+example = "traveller@gmail.com"
+mistake = "traveler@gmial.com"
+mistake_why_en = "domain typo — SGAC doesn't bounce, you just never get the confirmation"
+mistake_why_zh = "域名打错——SGAC 不退信，是直接收不到确认"
+copy_en = "Confirmation lands here. Max 80 chars. ICA also auto-links the SGAC to your passport — the email is a backup, not strictly required at e-gate."
+copy_zh = "确认信发到这里。最长 80 字符。ICA 会自动把 SGAC 关联到护照——邮件只是备份，电子通道一般用不上。"
+
+[[errors]]
+code = "Invalid passport number"
+why_en = "Wrong length or invalid character. ICA accepts 6–12 alphanumeric characters."
+why_zh = "长度错或包含非法字符。ICA 接受 6–12 位字母+数字。"
+
+[[errors]]
+code = "Date format invalid"
+why_en = "Used DD-MM-YYYY or MM/DD/YYYY. SGAC wants YYYY-MM-DD."
+why_zh = "用了 DD-MM-YYYY 或 MM/DD/YYYY。SGAC 要 YYYY-MM-DD。"
+
+[[errors]]
+code = "Submission window closed"
+why_en = "More than 3 days before arrival, or your arrival date is in the past."
+why_zh = "超前 3 天以上提交，或到达日期已过。"
+
+[[errors]]
+code = "Address incomplete"
+why_en = "No postal code, or hotel name only. Include the full Singapore address."
+why_zh = "没邮编或只写酒店名。补全完整地址。"
+
+[[errors]]
+code = "Flight code not recognized"
+why_en = "Used airline name instead of IATA code, or mistyped the code."
+why_zh = "用了航司全称而非 IATA 代码，或者代码打错。"
+
+[[errors]]
+code = "Health declaration required"
+why_en = "Skipped a yes/no question. All six are mandatory."
+why_zh = "漏答健康声明里的某题。6 个全部必答。"
+
+[[errors]]
+code = "No confirmation email after 1 hour"
+why_en = "Check spam. Refile if still missing — duplicates are harmless, the latest one applies."
+why_zh = "查垃圾箱。还没收到就重新提交——重复无害，以最新为准。"

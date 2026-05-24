@@ -18,6 +18,7 @@ faq:
     a: "The usual cause is a codeshare mismatch. Use the operating carrier's flight number from your boarding pass, not the marketing carrier's code."
   - q: "Do I need to print the SGAC confirmation?"
     a: "No. ICA links the record to your passport. Keep the confirmation email on your phone as a backup in case an officer asks for it."
+layout: how-to-fill
 ---
 
 {{< official-link site="singapore.sgac" >}}

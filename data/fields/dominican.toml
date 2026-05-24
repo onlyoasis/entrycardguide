@@ -1,0 +1,121 @@
+# Dominican Republic E-Ticket — field-by-field display data for the
+# how-to-fill layout. Bilingual fields use `_en` / `_zh`. `key` links to
+# data/rules/dominican.json for the validator regex / max length.
+
+# Seven high-error fields shown on the page; the form has 14 total
+# (see meta.field_count in data/official_urls/dominican.toml).
+# The E-Ticket covers both arrival AND departure, so it asks for both dates.
+
+[[fields]]
+n = "01"
+key = "passport"
+section_en = "Section 1 · Traveler identity"
+section_zh = "第 1 段 · 旅客身份"
+example = "A12345678"
+mistake = "A 12345678"
+mistake_why_en = "space in the number — strip all spaces and dashes"
+mistake_why_zh = "号码里有空格——去掉所有空格和短横"
+copy_en = "The string next to \"Passport No.\" on the photo page. 6 to 12 alphanumeric characters. Do not paste from the MRZ at the bottom."
+copy_zh = "护照照片页 \"Passport No.\" 那栏，6 到 12 位字母+数字。不要从底部 MRZ 复制。"
+
+[[fields]]
+n = "02"
+key = "given_name"
+section_en = "Section 1 · Traveler identity"
+section_zh = "第 1 段 · 旅客身份"
+example = "JOHN QUINCY"
+mistake = "José"
+mistake_why_en = "diacritics not accepted — use the MRZ Latin spelling"
+mistake_why_zh = "不接受重音符——用 MRZ 行的 Latin 拼写"
+copy_en = "First and middle names exactly as on the passport, Latin letters only. The MRZ row is always ASCII; use that as your source of truth."
+copy_zh = "名 + 中间名按护照原样填，仅限 Latin 字母。MRZ 行永远 ASCII，照搬即可。"
+
+[[fields]]
+n = "03"
+key = "family_name"
+section_en = "Section 1 · Traveler identity"
+section_zh = "第 1 段 · 旅客身份"
+example = "SMITH-JONES"
+mistake = "smith-jones"
+mistake_why_en = "lowercase — DGM accepts but flags before submit"
+mistake_why_zh = "小写——DGM 提交时接受但会先标红"
+copy_en = "Apellidos, as printed. Keep hyphens. Suffixes (JR, III) only if printed on the passport. If your passport has a blank surname field, repeat the given name."
+copy_zh = "Apellidos（姓），原样填，保留连字符。后缀（JR、III）只在护照印上才填。姓氏栏空白就把给定名复制一遍。"
+
+[[fields]]
+n = "04"
+key = "date_of_birth"
+section_en = "Section 1 · Traveler identity"
+section_zh = "第 1 段 · 旅客身份"
+example = "1991-08-22"
+mistake = "22-08-1991"
+mistake_why_en = "EU format — DGM wants ISO YYYY-MM-DD"
+mistake_why_zh = "欧式格式——DGM 要 ISO YYYY-MM-DD"
+copy_en = "ISO 8601 (YYYY-MM-DD). The site has a date picker — use it."
+copy_zh = "ISO 8601（YYYY-MM-DD）。站点有日期选择器，用它。"
+
+[[fields]]
+n = "05"
+key = "flight_number"
+section_en = "Section 2 · Trip"
+section_zh = "第 2 段 · 行程"
+example = "DL2367"
+mistake = "DL 2367"
+mistake_why_en = "space in the flight code"
+mistake_why_zh = "航班代码里有空格"
+copy_en = "2-letter IATA code + number, no space. Common to PUJ / SDQ / POP: DL (Delta), JBU (JetBlue → use B6), AA (American), UA (United), AC (Air Canada), AT (Royal Air Maroc), IB (Iberia). Cruise arrivals: vessel name + voyage number."
+copy_zh = "2 位 IATA 代码 + 航班号，不加空格。常飞 PUJ / SDQ / POP 的：DL（达美）、B6（JetBlue）、AA（美航）、UA（联航）、AC（加航）、AT（皇家摩洛哥）、IB（伊比利亚）。邮轮入境：船名 + 航次号。"
+
+[[fields]]
+n = "06"
+key = "arrival_date"
+section_en = "Section 2 · Trip"
+section_zh = "第 2 段 · 行程"
+example = "2026-05-14"
+mistake = "2026-05-13"
+mistake_why_en = "used departure date — use the date you land in DR local time"
+mistake_why_zh = "用了起飞日期——用多米尼加本地落地日期"
+copy_en = "Date you land in the Dominican Republic, local time. Filing 1–7 days before arrival is fine. Same E-Ticket is reused for departure — that's why it asks both dates upfront."
+copy_zh = "在多米尼加本地时间落地的那天。到达前 1–7 天内提交都行。同一份 E-Ticket 离境时复用——所以一开始就要填两边的日期。"
+
+[[fields]]
+n = "07"
+key = "accommodation"
+section_en = "Section 3 · Accommodation"
+section_zh = "第 3 段 · 住宿"
+example = "Hotel Riu Palace Punta Cana, Playa Arena Gorda"
+mistake = "Hotel Riu"
+mistake_why_en = "many Riu properties exist — name + location is needed"
+mistake_why_zh = "多家 Riu 酒店——需要名字 + 区域"
+copy_en = "Hotel / resort / Airbnb name + town. Punta Cana resorts often share brand names — include the beach or address line. For cruise day-trippers, write the ship name."
+copy_zh = "酒店 / 度假村 / Airbnb 名 + 镇区。蓬塔卡纳的度假村经常同名——把海滩或街道写上。邮轮一日游写船名。"
+
+[[errors]]
+code = "Número de pasaporte inválido"
+why_en = "Space, dash, or pasted from the MRZ. Use the short number above."
+why_zh = "空格、短横，或从 MRZ 复制。用 MRZ 上方的短号。"
+
+[[errors]]
+code = "Fecha inválida"
+why_en = "Used MM/DD/YYYY or DD/MM/YYYY. Use YYYY-MM-DD or the date picker."
+why_zh = "用了 MM/DD/YYYY 或 DD/MM/YYYY。用 YYYY-MM-DD 或日期选择器。"
+
+[[errors]]
+code = "Vuelo no válido"
+why_en = "Space in the flight number, wrong airline prefix, or marketing-vs-operating carrier on a codeshare."
+why_zh = "航班号有空格、航司前缀错，或代码共享时 marketing/operating 不对。"
+
+[[errors]]
+code = "Vuelo de salida vacío"
+why_en = "Departure flight field can't be blank. If you don't know it yet, use a placeholder flight on the same day — you can edit before travel."
+why_zh = "离境航班字段不能空。还没确定就先填同一天任意一个航班——出行前可以改。"
+
+[[errors]]
+code = "QR no escanea"
+why_en = "Rare. Show passport — officer looks up record by passport number. Form is in the DGM system the moment you submit."
+why_zh = "极少见。出示护照——警官用护照号查记录。提交那一刻起记录已经进 DGM 系统。"
+
+[[errors]]
+code = "No PDF after 1 hour"
+why_en = "Check spam. Refile if still missing — duplicates are harmless, the latest one applies."
+why_zh = "查垃圾箱。还没有就重新提交——重复无害，以最新为准。"

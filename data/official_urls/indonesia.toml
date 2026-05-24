@@ -31,6 +31,7 @@ flag = "🇮🇩"
 name_en = "Indonesia"
 name_zh = "印度尼西亚"
 form_code = "e-CD"
+guide_slug = "e-cd"
 form_name_en = "Electronic Customs Declaration"
 form_name_zh = "电子海关申报"
 since_en = "since 2022"
@@ -38,6 +39,14 @@ since_zh = "2022 年起"
 fee_en = "Free"
 fee_zh = "免费"
 suffix = ".go.id"
+
+# Used by the how-to-fill layout.
+field_count = 12
+sections = 4
+time_needed_en = "~5 minutes"
+time_needed_zh = "约 5 分钟"
+output_en = "Scan the QR at the customs gate, walk through the green lane. Answered \"yes\" to anything? You'll be routed to the red-lane secondary check."
+output_zh = "在海关闸口扫二维码，走绿色通道。海关问题答了 \"yes\" 就走红色通道做二次核查。"
 
 # Known scam / middleman domains (for scam-site shortcode)
 # Every entry must:

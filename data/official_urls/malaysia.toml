@@ -23,6 +23,7 @@ flag = "🇲🇾"
 name_en = "Malaysia"
 name_zh = "马来西亚"
 form_code = "MDAC"
+guide_slug = "mdac"
 form_name_en = "Digital Arrival Card"
 form_name_zh = "数字入境卡"
 since_en = "since January 2024"
@@ -30,6 +31,14 @@ since_zh = "2024 年 1 月起"
 fee_en = "Free"
 fee_zh = "免费"
 suffix = ".gov.my"
+
+# Used by the how-to-fill layout.
+field_count = 15
+sections = 3
+time_needed_en = "~7 minutes"
+time_needed_zh = "约 7 分钟"
+output_en = "Show your passport. Officer scans, your MDAC record is already linked. Stamp and through, usually under 30 seconds."
+output_zh = "出示护照。警官扫描时 MDAC 记录已经关联好。盖章过关，一般 30 秒内完事。"
 
 # Known scam / middleman domains (for scam-site shortcode)
 # Every entry must:

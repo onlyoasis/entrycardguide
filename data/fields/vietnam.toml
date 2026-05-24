@@ -1,0 +1,127 @@
+# Vietnam E-Visa — field-by-field display data for the how-to-fill layout.
+# Bilingual fields use `_en` / `_zh`. `key` links to data/rules/vietnam.json
+# for the validator regex / max length (single source of truth).
+
+# Seven high-error fields shown on the page; the form has 25 total
+# (see meta.field_count in data/official_urls/vietnam.toml). Vietnam's
+# e-visa is the longest form in our roster — includes photo upload,
+# passport scan, and 2–3 working days of manual review.
+
+[[fields]]
+n = "01"
+key = "passport"
+section_en = "Section 2 · Passport"
+section_zh = "第 2 段 · 护照"
+example = "A12345678"
+mistake = "a 12345678"
+mistake_why_en = "lowercase + space — Vietnam Immigration Department wants uppercase, no spaces"
+mistake_why_zh = "小写 + 空格——越南移民局要全大写、无空格"
+copy_en = "The string next to \"Passport No.\" on the photo page. 6 to 12 alphanumeric characters. Do not paste from the MRZ at the bottom — those rows include check digits."
+copy_zh = "护照照片页 \"Passport No.\" 那栏，6 到 12 位字母+数字。不要从底部 MRZ 复制——那两行包含校验位。"
+
+[[fields]]
+n = "02"
+key = "full_name"
+section_en = "Section 2 · Passport"
+section_zh = "第 2 段 · 护照"
+example = "NGUYEN VAN A"
+mistake = "Nguyễn Văn A"
+mistake_why_en = "Vietnamese diacritics not accepted in the official passport field — Latin only"
+mistake_why_zh = "护照字段不接受越南语重音符——只接受 Latin"
+copy_en = "Full name exactly as on the MRZ row of your passport. Surname first, given names after, all uppercase Latin. No diacritics — even for Vietnamese names, use the ASCII MRZ form."
+copy_zh = "按护照 MRZ 行的全名原样填，姓在前、名在后，全大写 Latin。不带重音符——越南语名字也要用 MRZ 的 ASCII 写法。"
+
+[[fields]]
+n = "03"
+key = "date_of_birth"
+section_en = "Section 2 · Passport"
+section_zh = "第 2 段 · 护照"
+example = "1991-08-22"
+mistake = "22/08/1991"
+mistake_why_en = "EU format — Vietnam form actually wants DD/MM/YYYY in the picker, but the validated value should be ISO"
+mistake_why_zh = "欧式格式——越南表的选择器显示 DD/MM/YYYY，但校验值要 ISO"
+copy_en = "ISO 8601 (YYYY-MM-DD). The visible date picker on the official site shows DD/MM/YYYY, which trips people up — use the calendar widget rather than typing."
+copy_zh = "ISO 8601（YYYY-MM-DD）。官方站显示的选择器是 DD/MM/YYYY，容易踩坑——用日历控件，别手动键入。"
+
+[[fields]]
+n = "04"
+key = "passport_expiry"
+section_en = "Section 2 · Passport"
+section_zh = "第 2 段 · 护照"
+example = "2030-08-22"
+mistake = "2026-08-01"
+mistake_why_en = "must be valid at least 6 months past entry — Vietnam strictly enforces this"
+mistake_why_zh = "必须比入境日期至少晚 6 个月有效——越南严格执行"
+copy_en = "ISO 8601. Must be at least 6 months after your entry date. Vietnam rejects e-visa applications that don't meet this; airlines also block boarding."
+copy_zh = "ISO 8601。必须比入境日期至少晚 6 个月。不满足越南直接拒签；航司也会拦在登机前。"
+
+[[fields]]
+n = "05"
+key = "intended_arrival"
+section_en = "Section 4 · Trip"
+section_zh = "第 4 段 · 行程"
+example = "2026-05-14"
+mistake = "2026-05-12"
+mistake_why_en = "filed too close — Vietnam takes 3 working days to process, so leave a buffer"
+mistake_why_zh = "递交太晚——越南处理需 3 个工作日，要留 buffer"
+copy_en = "Date you intend to enter Vietnam. The e-visa is single-entry by default, valid for 90 days from approval. Apply at least 4–5 working days before travel — standard processing is 3 working days, plus weekend buffer."
+copy_zh = "你打算入境越南的日期。电子签默认单次，自审批起 90 天内有效。至少提前 4–5 个工作日提交——标准处理需 3 个工作日，再加周末 buffer。"
+
+[[fields]]
+n = "06"
+key = "port_of_entry"
+section_en = "Section 4 · Trip"
+section_zh = "第 4 段 · 行程"
+example = "Tan Son Nhat Intl Airport"
+mistake = "Saigon"
+mistake_why_en = "must pick from the dropdown — typed city names aren't matched"
+mistake_why_zh = "必须从下拉选——手动键入城市名匹配不上"
+copy_en = "Pick from the dropdown of approved e-visa ports. Major airports: Tan Son Nhat (SGN, Ho Chi Minh City), Noi Bai (HAN, Hanoi), Da Nang (DAD), Cam Ranh (CXR, Nha Trang). Land crossings and seaports also listed but limited. You can only enter through the port you picked."
+copy_zh = "从下拉里选已开放电子签证的口岸。主要机场：新山一（SGN，胡志明）、内排（HAN，河内）、岘港（DAD）、金兰（CXR，芽庄）。陆路 / 海路口岸也有但有限。只能从你选的口岸入境。"
+
+[[fields]]
+n = "07"
+key = "accommodation"
+section_en = "Section 4 · Trip"
+section_zh = "第 4 段 · 行程"
+example = "Park Hyatt Saigon, 2 Lam Son Square, District 1, Ho Chi Minh City"
+mistake = "Hotel"
+mistake_why_en = "name + district + city is the minimum — \"Hotel\" alone is rejected"
+mistake_why_zh = "至少名字 + 区 + 城市——只写 \"Hotel\" 会被退"
+copy_en = "Hotel / homestay / address of your first night in Vietnam. Vietnamese addresses include district numbers (District 1, District 3) — include them. Names with Vietnamese diacritics are accepted in this field (unlike the passport name field)."
+copy_zh = "酒店 / 民宿 / 在越南第一晚的地址。越南地址含郡数字（District 1、District 3）——要写上。这个字段允许越南语重音符（和护照名字段不同）。"
+
+[[errors]]
+code = "Photo does not meet requirements"
+why_en = "Background not white, hat or glasses on, wrong ratio, file > 2 MB, or head crop is off. Use 4×6 ratio, white wall, no accessories."
+why_zh = "背景非白、戴帽子或眼镜、比例不对、文件超 2 MB，或头部裁切偏。用 4×6 比例、白墙、不戴任何饰品。"
+
+[[errors]]
+code = "Invalid passport scan"
+why_en = "Scan too dark, too light, or part of the bio page cut off. Re-scan with all four corners visible and good lighting."
+why_zh = "扫描太暗、太亮，或资料页被切掉。重新扫描，四角都要可见，光线要足。"
+
+[[errors]]
+code = "Date format error"
+why_en = "You used YYYY-MM-DD or US MM/DD/YYYY. Vietnam's visible UI is DD/MM/YYYY — use the date picker."
+why_zh = "用了 YYYY-MM-DD 或美式 MM/DD/YYYY。越南可见 UI 是 DD/MM/YYYY——用日期选择器。"
+
+[[errors]]
+code = "Invalid passport number"
+why_en = "Space, dash, or pasted from the MRZ. Use the short number above."
+why_zh = "空格、短横，或从 MRZ 复制。用 MRZ 上方的短号。"
+
+[[errors]]
+code = "Port of entry not selected"
+why_en = "You typed the city instead of picking from the dropdown. Re-open and select from the list."
+why_zh = "你手动输了城市而不是从下拉选。重开页面从列表里选。"
+
+[[errors]]
+code = "Status: rejected"
+why_en = "Log back in with the registration number — the rejection reason is on the page. Most common: photo or passport scan issues. Upload replacements and resubmit."
+why_zh = "用注册号重新登录——拒签原因在页面上。最常见：照片或护照扫描问题。补传后重新提交。"
+
+[[errors]]
+code = "Approved but no PDF download"
+why_en = "Server-side caching glitch — try a different browser, or wait an hour and re-login. The visa is already issued."
+why_zh = "服务端缓存问题——换浏览器，或等一小时再重新登录。签证已经签发。"

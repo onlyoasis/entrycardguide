@@ -54,9 +54,9 @@
   </h1>
   <p class="text-muted mt-lg max-w-[720px]" style="font-size: 21px; line-height: 1.5;">
     {{- if $isZh -}}
-    每个字段附官方正则、官方原话错误提示，以及你大概率会出错的地方。粘贴到官方站之前，可以先在 <a href="{{ .Parent.RelPermalink }}{{ $formCode | lower }}/" class="text-ink underline underline-offset-4">{{ $formCode }} 主页</a> 的本地校验器里对一遍。
+    每个字段附官方正则、官方原话错误提示，以及你大概率会出错的地方。粘贴到官方站之前，可以先在 <a href="{{ .Parent.RelPermalink }}{{ $meta.guide_slug }}/" class="text-ink underline underline-offset-4">{{ $formCode }} 主页</a> 的本地校验器里对一遍。
     {{- else -}}
-    With the exact regex the official site enforces, the error message it returns, and what you probably did wrong. Pre-check your values in the <a href="{{ .Parent.RelPermalink }}{{ $formCode | lower }}/" class="text-ink underline underline-offset-4">{{ $formCode }} page's local validator</a> before pasting.
+    With the exact regex the official site enforces, the error message it returns, and what you probably did wrong. Pre-check your values in the <a href="{{ .Parent.RelPermalink }}{{ $meta.guide_slug }}/" class="text-ink underline underline-offset-4">{{ $formCode }} page's local validator</a> before pasting.
     {{- end -}}
   </p>
 </article>

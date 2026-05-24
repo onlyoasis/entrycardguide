@@ -7,6 +7,7 @@ lastmod: 2026-04-26
 country: "malaysia"
 weight: 20
 keywords: ["MDAC 怎么填", "马来西亚入境卡字段", "MDAC 字段填写", "马来西亚移民局表单帮助"]
+layout: how-to-fill
 ---
 
 {{< official-link site="malaysia.mdac" >}}

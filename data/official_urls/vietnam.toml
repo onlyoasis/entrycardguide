@@ -24,6 +24,7 @@ flag = "🇻🇳"
 name_en = "Vietnam"
 name_zh = "越南"
 form_code = "E-Visa"
+guide_slug = "evisa"
 form_name_en = "Electronic Visa"
 form_name_zh = "电子签证"
 since_en = "official program"
@@ -31,6 +32,15 @@ since_zh = "官方电子签证项目"
 fee_en = "USD $25 single / $50 multi"
 fee_zh = "单次 25 美元 / 多次 50 美元"
 suffix = ".gov.vn"
+
+# Used by the how-to-fill layout. Vietnam's form is longer than the others —
+# it includes photo upload and full passport scan, both validated by humans.
+field_count = 25
+sections = 5
+time_needed_en = "~15 minutes"
+time_needed_zh = "约 15 分钟"
+output_en = "Hand the printed e-visa with your passport. Officer scans, stamps. Print the PDF — some airlines refuse boarding without a paper copy."
+output_zh = "把打印好的电子签证连同护照一起递上。警官扫描、盖章。一定要打印 PDF——部分航司没有纸质件不让登机。"
 
 # Known scam / overcharging middleman domains (for scam-site shortcode)
 # IMPORTANT: Vietnam e-visa scams overcharge for a real $25 fee, rather than charging

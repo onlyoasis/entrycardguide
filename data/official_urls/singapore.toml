@@ -23,6 +23,7 @@ flag = "🇸🇬"
 name_en = "Singapore"
 name_zh = "新加坡"
 form_code = "SGAC"
+guide_slug = "sgac"
 form_name_en = "Arrival Card"
 form_name_zh = "入境卡"
 since_en = "since 2022"
@@ -30,6 +31,14 @@ since_zh = "2022 年起"
 fee_en = "Free"
 fee_zh = "免费"
 suffix = ".gov.sg"
+
+# Used by the how-to-fill layout.
+field_count = 14
+sections = 4
+time_needed_en = "~6 minutes"
+time_needed_zh = "约 6 分钟"
+output_en = "Most travelers walk straight to the e-gate — ICA links your SGAC to your passport automatically. If asked, show the email."
+output_zh = "大多数旅客直接走电子通道——ICA 已经把 SGAC 自动关联到你的护照。被问到就出示邮件。"
 
 # Known scam / middleman domains (for scam-site shortcode)
 # Every entry must:

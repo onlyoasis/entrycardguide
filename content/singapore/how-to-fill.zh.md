@@ -7,6 +7,7 @@ lastmod: 2026-04-26
 country: "singapore"
 weight: 20
 keywords: ["sgac 怎么填", "新加坡入境卡字段", "ica sgac 帮助", "新加坡入境卡健康声明"]
+layout: how-to-fill
 ---
 
 {{< official-link site="singapore.sgac" >}}

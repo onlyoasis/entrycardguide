@@ -1,0 +1,108 @@
+# Mexico FMM-E — field-by-field display data for the how-to-fill layout.
+# Bilingual fields use `_en` / `_zh`. `key` links to data/rules/mexico.json
+# for the validator regex / max length (single source of truth).
+
+# Six high-error fields shown on the page; the form has 10 total
+# (see meta.field_count in data/official_urls/mexico.toml).
+
+[[fields]]
+n = "01"
+key = "passport"
+section_en = "Section 1 · Traveler identity"
+section_zh = "第 1 段 · 旅客身份"
+example = "A12345678"
+mistake = "a 1234 5678"
+mistake_why_en = "lowercase + spaces — INM rejects both"
+mistake_why_zh = "小写 + 空格——INM 都拒"
+copy_en = "The string next to \"Passport No.\" on the photo page. 6 to 12 alphanumeric characters. Do not paste from the MRZ at the bottom — those rows include check digits."
+copy_zh = "护照照片页 \"Passport No.\" 那栏，6 到 12 位字母+数字。不要从底部 MRZ 复制——那两行包含校验位。"
+
+[[fields]]
+n = "02"
+key = "given_name"
+section_en = "Section 1 · Traveler identity"
+section_zh = "第 1 段 · 旅客身份"
+example = "JOHN QUINCY"
+mistake = "José"
+mistake_why_en = "diacritics not accepted — use the MRZ Latin spelling"
+mistake_why_zh = "不接受重音符——用 MRZ 行的 Latin 拼写"
+copy_en = "Given names exactly as on the passport photo page, in Latin letters. Max 50 characters. No accents, no non-Latin scripts. The MRZ row is always ASCII; use that as your source of truth."
+copy_zh = "护照照片页的名，原样填，仅限 Latin 字母，最长 50 字符。不带重音符或非 Latin 文字。MRZ 行永远 ASCII，照搬即可。"
+
+[[fields]]
+n = "03"
+key = "family_name"
+section_en = "Section 1 · Traveler identity"
+section_zh = "第 1 段 · 旅客身份"
+example = "SMITH-JONES"
+mistake = "smith jones"
+mistake_why_en = "lowercase + hyphen dropped — keep the hyphen, uppercase only"
+mistake_why_zh = "小写 + 丢掉了连字符——保留连字符，全大写"
+copy_en = "Apellidos, as printed. Keep hyphens. Max 50 characters. If your passport has a blank surname field, repeat the given name here."
+copy_zh = "Apellidos（姓），原样填，保留连字符，最长 50 字符。如果护照姓氏栏空白，把给定名复制一遍。"
+
+[[fields]]
+n = "04"
+key = "date_of_birth"
+section_en = "Section 1 · Traveler identity"
+section_zh = "第 1 段 · 旅客身份"
+example = "1991-08-22"
+mistake = "08/22/1991"
+mistake_why_en = "US format — INM wants ISO YYYY-MM-DD"
+mistake_why_zh = "美式格式——INM 要 ISO YYYY-MM-DD"
+copy_en = "ISO 8601 (YYYY-MM-DD). On mobile, use the date picker."
+copy_zh = "ISO 8601（YYYY-MM-DD）。手机上用日期选择器。"
+
+[[fields]]
+n = "05"
+key = "arrival_date"
+section_en = "Section 2 · Trip"
+section_zh = "第 2 段 · 行程"
+example = "2026-05-14"
+mistake = "2026-05-13"
+mistake_why_en = "used departure date — use Mexico local arrival date"
+mistake_why_zh = "用了起飞日期——用墨西哥本地到达日期"
+copy_en = "Date you actually land in Mexico, in Mexico local time. INM accepts submissions further out than most arrival cards — the form is valid for up to 180 days from issue."
+copy_zh = "在墨西哥本地时间落地的那天。INM 接受比大多数入境卡更早的提交——表单自签发起 180 天内都有效。"
+
+[[fields]]
+n = "06"
+key = "destination_address"
+section_en = "Section 3 · Address"
+section_zh = "第 3 段 · 地址"
+example = "Hotel Xcaret, Carretera Chetumal-Puerto Juarez Km 282, Playa del Carmen"
+mistake = "Hotel"
+mistake_why_en = "name + street + town is the minimum — \"Hotel\" alone is rejected"
+mistake_why_zh = "至少名字 + 街道 + 城市——只写 \"Hotel\" 会被退"
+copy_en = "Hotel / Airbnb name + street + town. INM accepts addresses without postal codes for tourist stays. For multiple cities, use your first night. Spanish characters (ñ, accents) are fine for addresses, just not for the name fields."
+copy_zh = "酒店 / Airbnb 名 + 街道 + 城市。游客住宿允许不写邮编。多城行程填第一晚的。地址里西语字符（ñ、重音符）可以，名字字段才不行。"
+
+[[errors]]
+code = "Número de pasaporte inválido / Invalid passport number"
+why_en = "Space, dash, or pasted from the MRZ. Use the short number above."
+why_zh = "空格、短横，或从 MRZ 复制。用 MRZ 上方的短号。"
+
+[[errors]]
+code = "Fecha inválida / Invalid date"
+why_en = "Used MM/DD/YYYY or DD/MM/YYYY. INM wants YYYY-MM-DD or the date picker."
+why_zh = "用了 MM/DD/YYYY 或 DD/MM/YYYY。INM 要 YYYY-MM-DD 或用选择器。"
+
+[[errors]]
+code = "Nacionalidad no encontrada / Nationality not found"
+why_en = "Typed the country in English while the form searches in Spanish. Try the 3-letter code (USA, CAN, GBR)."
+why_zh = "用英文输了国家而表单按西语搜。试 3 位代码（USA、CAN、GBR）。"
+
+[[errors]]
+code = "Correo electrónico inválido / Invalid email"
+why_en = "Trailing space, missing @, or domain typo."
+why_zh = "末尾空格、缺 @ 或域名打错。"
+
+[[errors]]
+code = "Sistema no disponible / System unavailable"
+why_en = "INM portal goes down briefly during overnight maintenance (~2–4am Mexico City time). Wait an hour and retry."
+why_zh = "INM 门户夜间维护时短暂宕机（墨西哥城时间 ~2–4 点）。等一小时再试。"
+
+[[errors]]
+code = "No PDF after 1 hour"
+why_en = "Check spam. Some carrier domains delay delivery — log back in with the reference number to download directly."
+why_zh = "查垃圾箱。某些运营商邮箱延迟——用参考号重新登录站点直接下载。"

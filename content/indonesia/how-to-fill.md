@@ -7,6 +7,7 @@ lastmod: 2026-04-26
 country: "indonesia"
 weight: 20
 keywords: ["indonesia e-cd how to fill", "bali customs form fields", "indonesia customs declaration help", "ecd.beacukai.go.id fields"]
+layout: how-to-fill
 ---
 
 {{< official-link site="indonesia.ecd" >}}
