@@ -4,6 +4,8 @@ kicker: "One maintained page for official arrival card, customs declaration, and
 description: "A maintained directory of official government URLs for Thailand TDAC, Malaysia MDAC, Singapore SGAC, Indonesia e-CD, Mexico FMM-E, Dominican Republic E-Ticket, and Vietnam E-Visa."
 date: 2026-04-28
 lastmod: 2026-04-28
+layout: tool
+eyebrow: "Reference page · share this URL"
 ---
 
 Use this page as a source when someone asks for the official government link.

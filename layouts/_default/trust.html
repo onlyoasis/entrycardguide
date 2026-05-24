@@ -1,0 +1,50 @@
+{{ define "main" }}
+{{- $isZh := eq .Site.Language.Lang "zh" -}}
+
+{{- /* Breadcrumb ----------------------------------------------------- */ -}}
+<nav aria-label="Breadcrumb" class="-mx-md px-md py-3 border-b border-rule font-mono text-xs text-muted">
+  <a href="{{ "/" | relLangURL }}" class="text-muted no-underline hover:text-ink">{{ if $isZh }}首页{{ else }}Home{{ end }}</a>
+  <span class="mx-1.5">›</span>
+  <a href="{{ "/about/" | relLangURL }}" class="text-muted no-underline hover:text-ink">{{ if $isZh }}关于{{ else }}About{{ end }}</a>
+  <span class="mx-1.5">›</span>
+  <span class="text-ink">{{ if $isZh }}核查方法论{{ else }}How to verify everything{{ end }}</span>
+</nav>
+
+{{- /* Hero ----------------------------------------------------------- */ -}}
+<section class="pt-22 pb-xl max-w-[920px]">
+  <div class="text-meta font-mono uppercase text-muted mb-5">
+    {{ if $isZh }}方法论 · 完整版{{ else }}Methodology · long version{{ end }}
+  </div>
+  <h1 class="font-serif font-medium m-0" style="font-size: clamp(36px, 5.6vw, 56px); line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
+    {{ .Title }}
+  </h1>
+  {{- with .Params.kicker }}
+  <p class="text-muted mt-lg max-w-[720px]" style="font-size: 21px; line-height: 1.5;">{{ . }}</p>
+  {{- end }}
+</section>
+
+{{- /* Body ----------------------------------------------------------- */ -}}
+<article class="prose prose-lg max-w-none pb-xl">
+  {{ .Content }}
+</article>
+
+{{- /* Closing CTA ---------------------------------------------------- */ -}}
+<section class="-mx-md px-md py-xl border-y border-rule text-center" style="background:#F4F2EC;">
+  <h2 class="font-serif font-medium m-0 mx-auto max-w-[600px]" style="font-size: 28px; line-height: 1.2; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144;">
+    {{- if $isZh -}}
+    发现哪里写错了？把证据发给我们，一天内修好。
+    {{- else -}}
+    Found something we got wrong? Send the artifact, we'll fix it within a day.
+    {{- end -}}
+  </h2>
+  <div class="mt-lg flex justify-center gap-3 flex-wrap">
+    <a href="https://github.com/onlyoasis/entrycardguide/issues/new" class="btn-ink no-underline" style="padding: 12px 18px;">
+      {{ if $isZh }}提交 issue ↗{{ else }}Open an issue ↗{{ end }}
+    </a>
+    <a href="mailto:corrections@entrycardguide.com" class="btn-ghost no-underline" style="padding: 12px 18px;">
+      corrections@entrycardguide.com
+    </a>
+  </div>
+</section>
+
+{{ end }}

@@ -6,6 +6,7 @@ date: 2026-04-28
 lastmod: 2026-04-28
 url: "/decide/"
 keywords: ["which arrival forms do I need", "do I need TDAC", "do I need FMM mexico", "do I need MDAC", "vietnam evisa or visa free", "indonesia evoa or evoa", "singapore SGAC needed", "asia entry forms quiz"]
+layout: tool
 ---
 
 {{< decide >}}

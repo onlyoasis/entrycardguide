@@ -1,74 +1,316 @@
 {{ define "main" }}
-<section class="max-w-prose mx-auto py-16">
-  {{- $isZh := eq .Site.Language.Lang "zh" -}}
+{{- $isZh := eq .Site.Language.Lang "zh" -}}
 
-  <h1 class="mb-6">{{ .Site.Title }}</h1>
+{{- /* Country roster — same shape as official-directory.html shortcode.
+       formKey   → key inside data/official_urls/{country}.toml
+       guideSlug → first segment after /{country}/ on disk
+       formCode  → small uppercase code shown in the grid
+       sub       → tiny qualifier under the fee tag */ -}}
+{{- $countries := slice
+  (dict "key" "thailand"  "en" "Thailand"           "zh" "泰国"     "flag" "🇹🇭" "formKey" "tdac"    "formCode" "TDAC"    "guideSlug" "tdac"    "fee" "free" "subEn" "May 2024"            "subZh" "2024 年 5 月起")
+  (dict "key" "malaysia"  "en" "Malaysia"           "zh" "马来西亚" "flag" "🇲🇾" "formKey" "mdac"    "formCode" "MDAC"    "guideSlug" "mdac"    "fee" "free" "subEn" "Jan 2024"            "subZh" "2024 年 1 月起")
+  (dict "key" "singapore" "en" "Singapore"          "zh" "新加坡"   "flag" "🇸🇬" "formKey" "sgac"    "formCode" "SGAC"    "guideSlug" "sgac"    "fee" "free" "subEn" "ICA"                 "subZh" "ICA 官方")
+  (dict "key" "indonesia" "en" "Indonesia"          "zh" "印度尼西亚" "flag" "🇮🇩" "formKey" "ecd"     "formCode" "e-CD"    "guideSlug" "e-cd"    "fee" "free" "subEn" "+ e-VOA USD 35"      "subZh" "+ e-VOA 35 美元")
+  (dict "key" "mexico"    "en" "Mexico"             "zh" "墨西哥"   "flag" "🇲🇽" "formKey" "fmm"     "formCode" "FMM-E"   "guideSlug" "fmm"     "fee" "free" "subEn" "Not always required" "subZh" "并非每次都要填")
+  (dict "key" "dominican" "en" "Dominican Republic" "zh" "多米尼加" "flag" "🇩🇴" "formKey" "eticket" "formCode" "E-Ticket" "guideSlug" "eticket" "fee" "free" "subEn" "In + out"            "subZh" "入境 + 离境")
+  (dict "key" "vietnam"   "en" "Vietnam"            "zh" "越南"     "flag" "🇻🇳" "formKey" "evisa"   "formCode" "E-Visa"  "guideSlug" "evisa"   "fee" "paid" "subEn" "Govt fee, not free"  "subZh" "官方收费，非免费")
+-}}
 
-  <p class="text-kicker text-muted mb-10 max-w-[600px]">
-    {{- if $isZh -}}
-    免费、独立的入境卡和电子签证指南。官方网址、怎么填、是否收费、如何避开 iVisa 等中介加价。
-    {{- else -}}
-    Free, independent guides to every country's digital arrival card. No fees. No stored data. No affiliation with any scam site.
+{{- /* Stats: countries dynamic from roster, scams sum across TOMLs */ -}}
+{{- $countryCount := len $countries -}}
+{{- $scamCount := 0 -}}
+{{- $urlCount := 0 -}}
+{{- range $countries -}}
+  {{- $data := index hugo.Data.official_urls .key -}}
+  {{- range $k, $v := $data -}}
+    {{- if and (reflect.IsMap $v) (isset $v "url") -}}
+      {{- $urlCount = add $urlCount 1 -}}
     {{- end -}}
-  </p>
+  {{- end -}}
+  {{- with $data.scam_sites -}}
+    {{- $scamCount = add $scamCount (len .) -}}
+  {{- end -}}
+{{- end -}}
 
-  <div class="prose prose-lg max-w-none mb-16">
-    {{ .Content }}
+{{- /* Aggregate the most recent ~5 changelog entries across all countries */ -}}
+{{- $changes := slice -}}
+{{- range $countries -}}
+  {{- $cKey := .key -}}
+  {{- $cName := cond $isZh .zh .en -}}
+  {{- with index hugo.Data.changelog $cKey -}}
+    {{- range .entries -}}
+      {{- $changes = $changes | append (dict "date" .date "summary" .summary "country" $cName "key" $cKey) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $changes = sort $changes "date" "desc" -}}
+{{- $recent := first 5 $changes -}}
+
+{{- $decideURL := cond $isZh "/zh/decide/" "/decide/" -}}
+{{- $directoryURL := cond $isZh "/zh/official-links/" "/official-links/" -}}
+{{- $aboutURL := cond $isZh "/zh/about/" "/about/" -}}
+{{- $methodologyURL := printf "%s#methodology" $aboutURL -}}
+{{- $thailandTdacURL := cond $isZh "/zh/thailand/tdac/" "/thailand/tdac/" -}}
+
+{{- /* ============================================================ */ -}}
+{{- /* Hero ─ editorial headline + provenance strip                  */ -}}
+{{- /* ============================================================ */ -}}
+<section>
+  <div class="pt-22 pb-xl">
+    <div class="text-meta text-scam font-mono uppercase mb-md inline-flex items-center gap-2">
+      <span class="inline-block w-[6px] h-[6px] rounded-full bg-scam"></span>
+      {{ if $isZh }}反诈骗指南 · 开源 · 独立{{ else }}Anti-scam guide · open source · independent{{ end }}
+    </div>
+
+    <h1 class="font-serif font-medium m-0 max-w-[980px]" style="font-size: clamp(40px, 6.2vw, 80px); line-height: 1.04; letter-spacing: -0.025em; font-variation-settings: 'opsz' 144; text-wrap: balance;">
+      {{- if $isZh -}}
+      每个国家的入境卡都是<span class="text-verified">免费</span>的。每个国家只有<mark>一个网址</mark>是真的。
+      {{- else -}}
+      Every digital arrival card is <span class="text-verified">free</span>. And only <mark>one URL</mark> per country is real.
+      {{- end -}}
+    </h1>
+
+    <p class="text-muted mt-lg max-w-[720px]" style="font-size: 22px; line-height: 1.5;">
+      {{- if $isZh -}}
+      我们公布每个国家的官方政府网址，逐字段解释怎么填，并把那些在 Google 搜索结果里挡在官方网站前面的山寨站点列出来。不需要账号，不存数据，从未拿过任何签证中介一分钱。
+      {{- else -}}
+      We publish the official government URL, explain every field, and show you the scam lookalikes that sit above the real site in Google. No accounts. No stored data. No money from any visa middleman, ever.
+      {{- end -}}
+    </p>
+
+    <div class="flex flex-wrap gap-3 mt-lg items-center">
+      <a href="{{ $decideURL }}" class="btn-ink no-underline inline-flex items-center gap-2" style="padding: 12px 18px;">
+        {{ if $isZh }}帮我找到我的表单（60 秒）→{{ else }}Find my form (60 seconds) →{{ end }}
+      </a>
+      <a href="{{ $directoryURL }}" class="btn-ghost no-underline inline-flex items-center gap-2" style="padding: 12px 18px;">
+        {{ if $isZh }}官方链接目录{{ else }}Official links directory{{ end }}
+      </a>
+      <span class="text-xs text-muted ml-2">
+        {{ if $isZh }}无需注册，本地浏览器运行。{{ else }}No signup. Runs in your browser.{{ end }}
+      </span>
+    </div>
   </div>
 
-  <h2 class="mb-6">{{ if $isZh }}热门国家与关键入口{{ else }}Countries we cover{{ end }}</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
-    {{- $mainSlugs := dict
-      "thailand" "tdac"
-      "mexico" "fmm"
-      "dominican" "eticket"
-      "malaysia" "mdac"
-      "vietnam" "evisa"
-      "indonesia" "e-cd"
-      "singapore" "sgac"
+  {{- /* Provenance strip — 4 numerical columns. Border trick:
+         every cell paints border-r + border-b, parent absorbs the outer
+         right/bottom via -mr-px / -mb-px so we get a clean inner grid. */ -}}
+  <div class="border-y border-rule overflow-hidden">
+    {{- $stats := slice
+      (dict "kicker" (cond $isZh "覆盖国家" "COUNTRIES COVERED") "value" (string $countryCount) "subEn" "Thailand · Malaysia · Singapore · Indonesia · Mexico · Dominican · Vietnam" "subZh" "泰国 · 马来西亚 · 新加坡 · 印度尼西亚 · 墨西哥 · 多米尼加 · 越南")
+      (dict "kicker" (cond $isZh "已验证官方网址" "OFFICIAL URLS VERIFIED") "value" (string $urlCount) "subEn" "All in a public TOML file with last_verified dates" "subZh" "全部存在公开 TOML 文件里，附 last_verified 日期")
+      (dict "kicker" (cond $isZh "山寨站点收录数" "SCAM SITES INDEXED") "value" (string $scamCount) "subEn" "DNS-audited monthly; dead domains removed" "subZh" "每月 DNS 审计，失效域名会被移除")
+      (dict "kicker" (cond $isZh "我们存的你的数据" "YOUR DATA WE STORE") "value" "0" "subEn" "Validators run client-side. Zero network requests." "subZh" "校验器在你的浏览器里跑，零网络请求。")
     -}}
-    {{- $subtitlesEn := dict
-      "thailand" "TDAC — Digital Arrival Card"
-      "mexico" "FMM-E — electronic tourist card"
-      "dominican" "E-Ticket — entry and exit form"
-      "malaysia" "MDAC — Digital Arrival Card"
-      "vietnam" "E-Visa — official $25 government application"
-      "indonesia" "e-CD — electronic customs declaration"
-      "singapore" "SGAC — Singapore Arrival Card"
-    -}}
-    {{- $subtitlesZh := dict
-      "thailand" "TDAC 入境卡：官网、免费填写、防中介"
-      "mexico" "FMM-E 入境表：官网、免费在线填写"
-      "dominican" "E-Ticket：入境/离境二维码，官方免费"
-      "malaysia" "MDAC 入境卡：官网、免费填写"
-      "vietnam" "E-Visa：官方 $25 美元，防中介加价"
-      "indonesia" "e-CD 海关申报：巴厘岛/雅加达入境必填"
-      "singapore" "SGAC 入境卡：ICA 官方免费表单"
-    -}}
-    {{- range .Site.Menus.main }}
-    {{- if and (ne .Identifier "about") (ne .Identifier "official-links") (ne .Identifier "decide") }}
-    {{- $mainSlug := index $mainSlugs .Identifier }}
-    <article class="border border-rule p-md">
-      <h3 class="font-serif font-medium mb-1" style="font-size: 22px; font-variation-settings: 'opsz' 144;">
-        <a href="{{ .URL }}" class="text-ink no-underline hover:underline underline-offset-4">{{ .Name }}</a>
-      </h3>
-      <p class="text-small text-muted m-0">
-        {{- if $isZh -}}
-          {{- index $subtitlesZh .Identifier -}}
-        {{- else -}}
-          {{- index $subtitlesEn .Identifier -}}
-        {{- end -}}
-      </p>
-      {{- if $mainSlug }}
-      <div class="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-small">
-        <a href="{{ printf "%s%s/" .URL $mainSlug }}" class="text-ink underline underline-offset-4">{{ if $isZh }}官网和费用{{ else }}Official site{{ end }}</a>
-        <a href="{{ printf "%show-to-fill/" .URL }}" class="text-ink underline underline-offset-4">{{ if $isZh }}怎么填{{ else }}How to fill{{ end }}</a>
-        <a href="{{ printf "%sis-ivisa-official/" .URL }}" class="text-ink underline underline-offset-4">{{ if $isZh }}iVisa 是官方吗{{ else }}iVisa check{{ end }}</a>
+    <div class="grid grid-cols-2 md:grid-cols-4 -mr-px -mb-px">
+      {{- range $s := $stats }}
+      <div class="p-md md:p-8 border-r border-b border-rule">
+        <div class="text-meta font-mono uppercase text-muted mb-3">{{ $s.kicker }}</div>
+        <div class="font-serif" style="font-size: 56px; line-height: 1; letter-spacing: -0.02em; font-variation-settings: 'opsz' 144;">{{ $s.value }}</div>
+        <p class="text-xs text-muted mt-3 m-0" style="line-height: 1.5;">{{ if $isZh }}{{ $s.subZh }}{{ else }}{{ $s.subEn }}{{ end }}</p>
       </div>
       {{- end }}
+    </div>
+  </div>
+</section>
+
+{{- /* ============================================================ */ -}}
+{{- /* 01 · The thesis ─ "why this site exists"                      */ -}}
+{{- /* ============================================================ */ -}}
+<section class="pt-22 pb-xl grid grid-cols-1 md:grid-cols-[280px_1fr] gap-xl">
+  <div>
+    <div class="text-meta font-mono uppercase text-muted mb-4">{{ if $isZh }}§ 01 · 问题{{ else }}§ 01 · The problem{{ end }}</div>
+    <h2 class="font-serif font-medium m-0" style="font-size: 36px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144;">
+      {{ if $isZh }}这个网站为什么存在。{{ else }}Why this site exists.{{ end }}
+    </h2>
+  </div>
+  <div class="prose max-w-[640px]">
+    {{ .Content }}
+  </div>
+</section>
+
+{{- /* ============================================================ */ -}}
+{{- /* 02 · Country grid                                              */ -}}
+{{- /* ============================================================ */ -}}
+<section class="border-y border-rule -mx-md px-md md:-mx-md md:px-md py-xl">
+  <div class="flex items-baseline justify-between mb-lg flex-wrap gap-md">
+    <div>
+      <div class="text-meta font-mono uppercase text-muted mb-2">{{ if $isZh }}§ 02 · 已覆盖国家{{ else }}§ 02 · Countries covered{{ end }}</div>
+      <h2 class="font-serif font-medium m-0" style="font-size: 36px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144;">
+        {{ if $isZh }}{{ $countryCount }} 个国家。{{ $countryCount }} 份免费表单。{{ $countryCount }} 个响亮的官方网址。{{ else }}{{ $countryCount }} countries. {{ $countryCount }} free forms. {{ $countryCount }} loud official URLs.{{ end }}
+      </h2>
+    </div>
+    <a href="{{ $directoryURL }}" class="font-mono text-ink underline underline-offset-4" style="font-size: 13px;">{{ if $isZh }}完整目录 →{{ else }}Full directory →{{ end }}</a>
+  </div>
+
+  <div class="border border-rule rounded-md overflow-hidden">
+    <div class="grid grid-cols-1 md:grid-cols-2 {{ if ge $countryCount 9 }}lg:grid-cols-3{{ end }} -mr-px -mb-px">
+    {{- range $i, $c := $countries -}}
+      {{- $countryData := index hugo.Data.official_urls .key -}}
+      {{- $official := index $countryData .formKey -}}
+      {{- $hostUrl := replaceRE "^https?://" "" $official.url -}}
+      {{- $hostUrl = replaceRE "/$" "" $hostUrl -}}
+      {{- $countryPath := cond $isZh (printf "/zh/%s/" .key) (printf "/%s/" .key) -}}
+      {{- $guidePath := printf "%s%s/" $countryPath .guideSlug -}}
+      {{- $fillPath := printf "%show-to-fill/" $countryPath -}}
+      {{- $ivisaPath := printf "%sis-ivisa-official/" $countryPath -}}
+    <article class="p-7 grid grid-cols-[36px_1fr_auto] gap-5 items-start border-r border-b border-rule">
+      <div style="font-size: 28px; line-height: 1; margin-top: 2px;" aria-hidden="true">{{ .flag }}</div>
+      <div>
+        <div class="flex items-baseline gap-3 mb-1 flex-wrap">
+          <h3 class="font-serif font-medium m-0" style="font-size: 26px; letter-spacing: -0.01em; font-variation-settings: 'opsz' 144;">
+            <a href="{{ $countryPath }}" class="text-ink no-underline">{{ if $isZh }}{{ .zh }}{{ else }}{{ .en }}{{ end }}</a>
+          </h3>
+          <span class="font-mono text-muted" style="font-size: 13px;">· {{ .formCode }}</span>
+        </div>
+        <div class="font-mono mb-4" style="font-size: 13px;">
+          <a href="{{ $official.url }}" rel="noopener" class="text-ink no-underline border-b border-rule pb-px">{{ $hostUrl }}</a>
+        </div>
+        <div class="flex flex-wrap gap-x-4 gap-y-2" style="font-size: 13px;">
+          <a href="{{ $guidePath }}" class="text-ink no-underline border-b border-ink pb-px">{{ if $isZh }}官方网站{{ else }}Official site{{ end }}</a>
+          <a href="{{ $fillPath }}" class="text-ink no-underline border-b border-rule pb-px">{{ if $isZh }}怎么填{{ else }}How to fill{{ end }}</a>
+          <a href="{{ $ivisaPath }}" class="text-ink no-underline border-b border-rule pb-px">{{ if $isZh }}iVisa 核验{{ else }}iVisa check{{ end }}</a>
+        </div>
+      </div>
+      <div class="text-right">
+        {{- if eq .fee "free" }}
+        <span class="inline-flex items-center gap-1.5 font-mono uppercase text-verified border border-verified/30 px-2 py-1 rounded-sm" style="font-size: 11px; letter-spacing: 0.08em; background: rgba(15,115,86,0.05);">
+          <span class="inline-block w-[6px] h-[6px] rounded-full bg-verified"></span>
+          {{ if $isZh }}免费{{ else }}Free{{ end }}
+        </span>
+        {{- else }}
+        <span class="inline-flex items-center gap-1.5 font-mono uppercase text-ink border border-rule px-2 py-1 rounded-sm" style="font-size: 11px; letter-spacing: 0.08em;">
+          USD 25
+        </span>
+        {{- end }}
+        <div class="font-mono text-xs text-muted mt-2">{{ if $isZh }}{{ .subZh }}{{ else }}{{ .subEn }}{{ end }}</div>
+      </div>
     </article>
     {{- end }}
+    </div>
+  </div>
+</section>
+
+{{- /* ============================================================ */ -}}
+{{- /* 03 · Tools — decide + directory                                */ -}}
+{{- /* ============================================================ */ -}}
+<section class="pt-22 pb-xl">
+  <div class="text-meta font-mono uppercase text-muted mb-4">{{ if $isZh }}§ 03 · 工具{{ else }}§ 03 · Tools{{ end }}</div>
+  <h2 class="font-serif font-medium mb-lg" style="font-size: 36px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144; margin-top: 0;">
+    {{ if $isZh }}两条入口，按你已经知道多少来选。{{ else }}Two ways in, depending on what you know already.{{ end }}
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+    <a href="{{ $decideURL }}" class="block border border-ink rounded-md p-8 text-ink no-underline bg-paper hover:bg-rule" style="transition: background-color 80ms ease;">
+      <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}工具 01{{ else }}Tool 01{{ end }}</div>
+      <h3 class="font-serif font-medium mb-3" style="font-size: 30px; letter-spacing: -0.01em; font-variation-settings: 'opsz' 144; margin-top: 0;">
+        {{ if $isZh }}我不知道该填什么。<span class="text-muted">替我决定。</span>{{ else }}I don't know what to fill. <span class="text-muted">Decide for me.</span>{{ end }}
+      </h3>
+      <p class="m-0 mb-5 max-w-[480px]">
+        {{- if $isZh -}}
+        选好目的地，回答 1–2 个关于你怎么入境和你国籍的问题。我们会返回一张卡片：列出你真正需要填的所有表、官方网址、政府收费（如果有），以及逐字段指南的链接。
+        {{- else -}}
+        Pick your destination. Answer 1–2 questions about how you're entering and your nationality. Get back a card that lists every form you actually need, the official URL, the government fee (if any), and a link to the field-by-field guide.
+        {{- end -}}
+      </p>
+      <div class="font-mono text-xs text-muted flex flex-wrap gap-x-3 gap-y-1">
+        <span>{{ if $isZh }}60 秒{{ else }}60 seconds{{ end }}</span>
+        <span>·</span>
+        <span>{{ $countryCount }} {{ if $isZh }}个国家{{ else }}countries{{ end }}</span>
+        <span>·</span>
+        <span>{{ if $isZh }}决策树存在 GitHub JSON 文件里{{ else }}JSON decision tree on GitHub{{ end }}</span>
+      </div>
+    </a>
+
+    <a href="{{ $directoryURL }}" class="block border border-rule rounded-md p-8 text-ink no-underline bg-paper hover:border-ink" style="transition: border-color 80ms ease;">
+      <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}工具 02{{ else }}Tool 02{{ end }}</div>
+      <h3 class="font-serif font-medium mb-3" style="font-size: 30px; letter-spacing: -0.01em; font-variation-settings: 'opsz' 144; margin-top: 0;">
+        {{ if $isZh }}我只想要官方网址。<span class="text-muted">把链接给我。</span>{{ else }}I just need the official URL. <span class="text-muted">Hand me the link.</span>{{ end }}
+      </h3>
+      <p class="m-0 mb-5 max-w-[480px]">
+        {{- if $isZh -}}
+        目录页。一页可以粘贴到论坛回复、聊天框或旅行社邮件里。每个链接都带 <code>last_verified</code> 日期。每个 URL 都以正确的政府后缀结尾。没有一个是 iVisa。
+        {{- else -}}
+        The directory. One page you can paste into a forum reply, a chat, or a travel-agent email. Every URL has a <code>last_verified</code> date. Every URL ends in the correct government suffix. None of them is iVisa.
+        {{- end -}}
+      </p>
+      <div class="font-mono text-xs text-muted flex flex-wrap gap-x-3 gap-y-1">
+        <span>{{ $urlCount }} {{ if $isZh }}个政府网址{{ else }}government URLs{{ end }}</span>
+        <span>·</span>
+        <span>{{ if $isZh }}7 天内复核{{ else }}verified ≤ 7 days{{ end }}</span>
+        <span>·</span>
+        <span>{{ if $isZh }}archive.org 快照{{ else }}archive.org links{{ end }}</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+{{- /* ============================================================ */ -}}
+{{- /* 04 · Methodology — five verifiable paths                       */ -}}
+{{- /* ============================================================ */ -}}
+<section class="border-y border-rule -mx-md px-md py-xl" style="background:#F4F2EC;">
+  <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-xl">
+    <div>
+      <div class="text-meta font-mono uppercase text-muted mb-4">{{ if $isZh }}§ 04 · 为什么信我们{{ else }}§ 04 · Why trust us{{ end }}</div>
+      <h2 class="font-serif font-medium m-0" style="font-size: 36px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144;">
+        {{ if $isZh }}别信文字，去查文件。{{ else }}Don't trust the writing. Check the files.{{ end }}
+      </h2>
+      <p class="text-small text-muted mt-5 max-w-[280px]">
+        {{- if $isZh -}}任何人都能用这五条独立路径核对本站每一条说法。{{- else -}}Five independent paths anyone can use to verify every claim on this site.{{- end -}}
+      </p>
+    </div>
+    <div>
+      {{- $methods := slice
+        (dict "tEn" "Every URL lives in a TOML file with a verification date and an archive link." "tZh" "每个网址都存在 TOML 文件里，附核验日期和 archive 快照链接。" "src" "data/official_urls/{country}.toml")
+        (dict "tEn" "Every field rule lives in a JSON file with regex, max length, and the exact error text the official site returns." "tZh" "每个字段规则存在 JSON 文件里，含正则、最大长度，以及官方网站返回的原话错误信息。" "src" "data/rules/{country}.json")
+        (dict "tEn" "Every scam warning has a domain, a first-observed date, and DNS evidence — dead domains are removed." "tZh" "每条山寨预警都附域名、首次发现日期和 DNS 证据；失效的域名会被移除。" "src" "data/official_urls/*.toml [[scam_sites]]")
+        (dict "tEn" "The validator runs in your browser. Open DevTools → Network and confirm zero outbound requests with your data." "tZh" "校验器在你的浏览器里跑。打开 DevTools → Network，看到的就是零外发请求。" "src" "assets/js/validator.ts")
+        (dict "tEn" "The whole site is on GitHub. Markdown, data, templates, browser code. Bring your own diff." "tZh" "整个站点都在 GitHub 上：Markdown、数据、模板、浏览器代码全部公开。欢迎自己 diff。" "src" "github.com/onlyoasis/entrycardguide")
+      -}}
+      <ol class="list-none p-0 m-0">
+        {{- range $i, $m := $methods }}
+        <li class="grid grid-cols-[48px_1fr] gap-4 py-5 {{ if lt $i 4 }}border-b border-rule{{ end }}">
+          <div class="font-serif font-medium text-ink" style="font-size: 28px; letter-spacing: -0.01em; font-variation-settings: 'opsz' 144;">0{{ add $i 1 }}</div>
+          <div>
+            <p class="m-0 mb-2" style="font-size: 17px;">{{ if $isZh }}{{ $m.tZh }}{{ else }}{{ $m.tEn }}{{ end }}</p>
+            <div class="font-mono text-xs text-muted">↪ {{ $m.src }}</div>
+          </div>
+        </li>
+        {{- end }}
+      </ol>
+      <p class="text-small text-muted mt-md">
+        <a href="{{ $methodologyURL }}" class="text-ink underline underline-offset-4">{{ if $isZh }}完整核查路径 →{{ else }}Full methodology →{{ end }}</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+{{- /* ============================================================ */ -}}
+{{- /* 05 · Recent changes — pulled from data/changelog/*.toml        */ -}}
+{{- /* ============================================================ */ -}}
+{{- if gt (len $recent) 0 }}
+<section class="pt-22 pb-xl">
+  <div class="flex items-baseline justify-between mb-lg flex-wrap gap-md">
+    <div>
+      <div class="text-meta font-mono uppercase text-muted mb-2">{{ if $isZh }}§ 05 · 最近变更{{ else }}§ 05 · Recent changes{{ end }}</div>
+      <h2 class="font-serif font-medium m-0" style="font-size: 36px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144;">
+        {{ if $isZh }}本月动了什么。{{ else }}What we touched this month.{{ end }}
+      </h2>
+    </div>
+    <a href="{{ cond $isZh "/zh/changelog/" "/changelog/" }}" class="font-mono text-ink underline underline-offset-4" style="font-size: 13px;">{{ if $isZh }}完整变更日志 →{{ else }}Full changelog →{{ end }}</a>
+  </div>
+
+  <div class="border-t border-rule">
+    {{- range $recent }}
+    <div class="grid grid-cols-[120px_1fr] md:grid-cols-[160px_1fr] gap-x-md py-4 border-b border-rule items-baseline">
+      <div class="font-mono text-xs text-muted">{{ .date }}</div>
+      <div class="grid grid-cols-[120px_1fr] md:grid-cols-[140px_1fr] gap-md items-baseline">
+        <span class="text-small font-semibold">{{ .country }}</span>
+        <span>{{ .summary }}</span>
+      </div>
+    </div>
     {{- end }}
   </div>
 </section>
+{{- end }}
+
 {{ end }}

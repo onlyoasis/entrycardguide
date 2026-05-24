@@ -6,6 +6,7 @@ date: 2026-04-28
 lastmod: 2026-04-28
 url: "/zh/decide/"
 keywords: ["要填哪些入境表", "需要 TDAC 吗", "墨西哥 FMM 需要吗", "MDAC 谁要填", "越南 evisa 还是免签", "新加坡 SGAC 需要吗", "亚洲入境表测验"]
+layout: tool
 ---
 
 {{< decide >}}

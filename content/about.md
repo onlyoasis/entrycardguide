@@ -4,6 +4,7 @@ description: "Who runs entrycardguide, why this site exists, how we make money, 
 date: 2026-04-25
 lastmod: 2026-04-25
 url: "/about/"
+layout: about
 ---
 
 ## Why this site exists

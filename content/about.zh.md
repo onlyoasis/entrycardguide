@@ -4,6 +4,7 @@ description: "谁在运营 entrycardguide，为什么有这个站点，我们怎
 date: 2026-04-25
 lastmod: 2026-04-25
 url: "/zh/about/"
+layout: about
 ---
 
 ## 为什么有这个站点

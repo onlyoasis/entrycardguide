@@ -5,6 +5,7 @@ description: "The full methodology behind every claim on entrycardguide.com. Ver
 date: 2026-04-27
 lastmod: 2026-04-27
 url: "/trust/"
+layout: trust
 ---
 
 This is the long version of [the about page methodology section](/about/#methodology). The short version: do not trust the writing. Check the files.

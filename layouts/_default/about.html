@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{- $isZh := eq .Site.Language.Lang "zh" -}}
+
+{{- /* Breadcrumb ----------------------------------------------------- */ -}}
+<nav aria-label="Breadcrumb" class="-mx-md px-md py-3 border-b border-rule font-mono text-xs text-muted">
+  <a href="{{ "/" | relLangURL }}" class="text-muted no-underline hover:text-ink">{{ if $isZh }}首页{{ else }}Home{{ end }}</a>
+  <span class="mx-1.5">›</span>
+  <span class="text-ink">{{ if $isZh }}关于{{ else }}About{{ end }}</span>
+</nav>
+
+{{- /* Hero ----------------------------------------------------------- */ -}}
+<section class="pt-22 pb-xl max-w-[920px]">
+  <div class="text-meta font-mono uppercase text-muted mb-5">
+    {{ if $isZh }}关于本站{{ else }}About this site{{ end }}
+  </div>
+  <h1 class="font-serif font-medium m-0" style="font-size: clamp(40px, 6.4vw, 64px); line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
+    {{- if $isZh -}}
+    谁在运营这个站、为什么有它存在，以及我们绝不会做的事。
+    {{- else -}}
+    Who runs this, why it exists, and what we will never do.
+    {{- end -}}
+  </h1>
+</section>
+
+{{- /* Body ----------------------------------------------------------- */ -}}
+<article class="prose prose-lg max-w-none pb-xl">
+  {{ .Content }}
+</article>
+
+{{- partial "share-source.html" . -}}
+
+{{ end }}

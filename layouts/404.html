@@ -20,23 +20,55 @@
   {{- partial "trust-bar.html" . -}}
   {{- partial "header.html" . -}}
   <main id="main" class="mx-auto max-w-container px-md">
-    <section class="max-w-prose mx-auto py-16">
-      <p class="text-meta font-mono uppercase text-muted mb-4">404</p>
-      <h1 class="mb-6">{{ if $isZh }}页面未找到{{ else }}Page not found{{ end }}</h1>
-      <p class="text-kicker text-muted mb-8 max-w-[600px]">
+    <section class="py-22 min-h-[600px] flex flex-col justify-center">
+      <div class="text-meta font-mono uppercase text-scam mb-8 inline-flex items-center gap-2">
+        <span class="inline-block w-[6px] h-[6px] rounded-full bg-scam"></span>
+        {{ if $isZh }}错误 404{{ else }}Error 404{{ end }}
+      </div>
+
+      <h1 class="font-serif font-medium m-0 mb-8 max-w-[980px]" style="font-size: clamp(56px, 10vw, 120px); line-height: 1; letter-spacing: -0.03em; font-variation-settings: 'opsz' 144;">
+        {{ if $isZh }}这个页面没通过入境审查。{{ else }}This page didn't make it through immigration.{{ end }}
+      </h1>
+
+      <p class="text-muted mb-lg max-w-[640px]" style="font-size: 22px; line-height: 1.5;">
         {{- if $isZh -}}
-        这个网址不对应本站已发布的指南。你可以打开官方目录，或回到中文首页。
+        要么我们把它挪走了，要么这个网址从一开始就是假的。如果你是从一个"要求你验证身份"的诈骗站点跳过来的——直接关掉那个标签页。我们不运营任何身份验证流程。
         {{- else -}}
-        This URL does not match any guide we publish. Use the official links directory or return to the homepage.
+        Either we moved it, or the URL was never real. If you landed here from a scam site asking you to "verify" something — close the tab. We do not run a verification flow.
         {{- end -}}
       </p>
-      <div class="flex flex-wrap gap-md text-small">
-        <a href="{{ "/official-links/" | relLangURL }}" class="text-ink underline underline-offset-4">
-          {{- if $isZh }}官方目录{{ else }}Official links directory{{ end -}}
+
+      <div class="flex flex-wrap gap-3 mb-xl">
+        <a href="{{ "/" | relLangURL }}" class="btn-ink no-underline" style="padding: 12px 18px;">
+          {{ if $isZh }}回首页{{ else }}Back to home{{ end }}
         </a>
-        <a href="{{ "/" | relLangURL }}" class="text-ink underline underline-offset-4">
-          {{- if $isZh }}首页{{ else }}Homepage{{ end -}}
+        <a href="{{ "/official-links/" | relLangURL }}" class="btn-ghost no-underline" style="padding: 12px 18px;">
+          {{ if $isZh }}浏览官方目录{{ else }}Browse official links{{ end }}
         </a>
+        <a href="{{ "/decide/" | relLangURL }}" class="btn-ghost no-underline" style="padding: 12px 18px;">
+          {{ if $isZh }}试试 60 秒决策工具{{ else }}Try the 60-second decide{{ end }}
+        </a>
+      </div>
+
+      <div class="pt-md border-t border-rule max-w-[720px]">
+        <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}最近移动过的路径{{ else }}Recently moved{{ end }}</div>
+        <ul class="list-none p-0 m-0 grid gap-2">
+          <li class="flex items-baseline gap-2 flex-wrap">
+            <span class="font-mono text-xs text-muted">/countries/</span>
+            <span class="text-muted">→</span>
+            <a class="text-ink underline underline-offset-4" href="{{ "/" | relLangURL }}">{{ if $isZh }}首页{{ else }}home{{ end }}</a>
+          </li>
+          <li class="flex items-baseline gap-2 flex-wrap">
+            <span class="font-mono text-xs text-muted">/tags/</span>
+            <span class="text-muted">→</span>
+            <a class="text-ink underline underline-offset-4" href="{{ "/" | relLangURL }}">{{ if $isZh }}首页{{ else }}home{{ end }}</a>
+          </li>
+          <li class="flex items-baseline gap-2 flex-wrap">
+            <span class="font-mono text-xs text-muted">/thailand/arrival-card/</span>
+            <span class="text-muted">→</span>
+            <a class="text-ink underline underline-offset-4" href="{{ "/thailand/tdac/" | relLangURL }}">/thailand/tdac/</a>
+          </li>
+        </ul>
       </div>
     </section>
   </main>

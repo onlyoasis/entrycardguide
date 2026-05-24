@@ -1,33 +1,74 @@
 {{ define "main" }}
-<section class="max-w-prose mx-auto py-12">
-  <h1 class="mb-4">{{ .Title }}</h1>
+{{- $isZh := eq .Site.Language.Lang "zh" -}}
+
+{{- /* Country-specific metadata: flag + "since" line. Keep the table small;
+       adding a country means one line here. */ -}}
+{{- $meta := dict
+  "thailand"  (dict "flag" "🇹🇭" "form" "TDAC"     "sinceEn" "since May 2024"  "sinceZh" "2024 年 5 月起")
+  "malaysia"  (dict "flag" "🇲🇾" "form" "MDAC"     "sinceEn" "since Jan 2024"  "sinceZh" "2024 年 1 月起")
+  "singapore" (dict "flag" "🇸🇬" "form" "SGAC"     "sinceEn" "since 2022"      "sinceZh" "2022 年起")
+  "indonesia" (dict "flag" "🇮🇩" "form" "e-CD"     "sinceEn" "since 2022"      "sinceZh" "2022 年起")
+  "mexico"    (dict "flag" "🇲🇽" "form" "FMM-E"    "sinceEn" "since 2023"      "sinceZh" "2023 年起")
+  "dominican" (dict "flag" "🇩🇴" "form" "E-Ticket" "sinceEn" "since 2021"      "sinceZh" "2021 年起")
+  "vietnam"   (dict "flag" "🇻🇳" "form" "E-Visa"   "sinceEn" "official program" "sinceZh" "官方项目")
+-}}
+{{- $section := .Section -}}
+{{- $countryMeta := index $meta $section -}}
+
+{{- /* Breadcrumb ----------------------------------------------------- */ -}}
+<nav aria-label="Breadcrumb" class="-mx-md px-md py-3 border-b border-rule font-mono text-xs text-muted">
+  <a href="{{ "/" | relLangURL }}" class="text-muted no-underline hover:text-ink">{{ if $isZh }}首页{{ else }}Home{{ end }}</a>
+  <span class="mx-1.5">›</span>
+  <span class="text-ink">{{ .Title }}</span>
+</nav>
+
+{{- /* Hero ----------------------------------------------------------- */ -}}
+<section class="pt-22 pb-md">
+  {{- if $countryMeta }}
+  <div class="text-meta font-mono uppercase text-muted mb-5">
+    <span aria-hidden="true">{{ $countryMeta.flag }}</span>
+    {{ .Title }} · {{ if $isZh }}数字入境卡{{ else }}digital arrival card{{ end }} · {{ if $isZh }}{{ $countryMeta.sinceZh }}{{ else }}{{ $countryMeta.sinceEn }}{{ end }}
+  </div>
+  {{- end }}
+
+  <h1 class="font-serif font-medium m-0 max-w-[880px]" style="font-size: clamp(40px, 6vw, 64px); line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
+    {{ .Title }}{{ if $countryMeta }} {{ $countryMeta.form }}{{ end }}{{ if $isZh }}：免费表单，以及如何识别冒牌站点。{{ else }}, the free form, and how to spot the sites pretending to be it.{{ end }}
+  </h1>
+
   {{- with .Params.kicker }}
-  <p class="text-kicker text-muted mb-10">{{ . }}</p>
+  <p class="text-muted mt-lg max-w-[720px]" style="font-size: 21px; line-height: 1.5;">{{ . }}</p>
   {{- end }}
-
-  <div class="prose prose-lg max-w-none mb-12">
-    {{ .Content }}
-  </div>
-
-  {{- if .Section }}
-  {{- partial "share-source.html" . -}}
-  {{- end }}
-
-  <div class="border-t border-rule">
-    {{- range .Pages.ByLastmod.Reverse }}
-    <article class="py-6 border-b border-rule">
-      <h2 class="mb-1">
-        <a href="{{ .Permalink }}" class="text-ink no-underline hover:underline underline-offset-4">{{ .Title }}</a>
-      </h2>
-      {{- with .Params.kicker }}
-      <p class="text-muted mb-2">{{ . }}</p>
-      {{- end }}
-      <div class="text-small text-muted">
-        Last verified {{ dateFormat "January 2, 2006" .Lastmod }}
-        {{- with .GitInfo }} · Commit <code>{{ .AbbreviatedHash }}</code>{{- end }}
-      </div>
-    </article>
-    {{- end }}
-  </div>
 </section>
+
+{{- /* TrustBar — provenance row ------------------------------------- */ -}}
+<div class="flex flex-wrap gap-x-8 gap-y-3 py-4 border-y border-rule mb-lg">
+  <div class="flex items-baseline gap-2">
+    <span class="text-meta font-mono uppercase text-muted">{{ if $isZh }}最近核验{{ else }}Last reviewed{{ end }}</span>
+    <span class="font-mono text-small">{{ dateFormat "2006-01-02" .Lastmod }}</span>
+  </div>
+  <div class="flex items-baseline gap-2">
+    <span class="text-meta font-mono uppercase text-muted">{{ if $isZh }}作者{{ else }}Author{{ end }}</span>
+    <span class="text-small">entrycardguide team</span>
+  </div>
+  {{- with .GitInfo }}
+  <div class="flex items-baseline gap-2">
+    <span class="text-meta font-mono uppercase text-muted">{{ if $isZh }}提交{{ else }}Commit{{ end }}</span>
+    <a href="https://github.com/onlyoasis/entrycardguide/commit/{{ .Hash }}" class="font-mono text-small text-ink underline underline-offset-2">{{ .AbbreviatedHash }}</a>
+  </div>
+  {{- end }}
+  <div class="flex items-baseline gap-2">
+    <span class="text-meta font-mono uppercase text-muted">{{ if $isZh }}源文件{{ else }}Source{{ end }}</span>
+    <a href="https://github.com/onlyoasis/entrycardguide/tree/main/content/{{ $section }}" class="font-mono text-small text-ink underline underline-offset-2">github.com/…/{{ $section }}</a>
+  </div>
+</div>
+
+{{- /* Body content — markdown drives the rest -------------------- */ -}}
+<article class="prose prose-lg max-w-none pb-xl">
+  {{ .Content }}
+</article>
+
+{{- if .Section }}
+{{- partial "share-source.html" . -}}
+{{- end }}
+
 {{ end }}
