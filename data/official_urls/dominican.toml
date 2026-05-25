@@ -40,6 +40,43 @@ time_needed_zh = "约 8 分钟"
 output_en = "Show passport + QR. Officer scans, stamps, hands back. Same QR is reused on departure — keep the screenshot."
 output_zh = "出示护照和二维码。警官扫描、盖章、还你。离境时再用同一个二维码——截图保留好。"
 
+# Used by the is-ivisa layout. Names the headline middleman this page rebuts.
+primary_middleman = "iVisa"
+page_question_en = "Is iVisa the official E-Ticket site?"
+page_question_zh = "iVisa 是官方 E-Ticket 网站吗？"
+page_answer_en = "No."
+page_answer_zh = "不是。"
+
+# Used by the is-ivisa layout. Three cases for "what happened to your money."
+# Dominican is unusual: the E-Ticket is dual-purpose (entry + exit), so case 2
+# centers on travelers paying twice when one ticket would cover both legs.
+[[outcomes]]
+case = "Case 1"
+tag_en = "Most common"
+tag_zh = "最常见"
+headline_en = "iVisa filed the real E-Ticket and kept the fee."
+headline_zh = "iVisa 替你提交了真实 E-Ticket，把费用收走了。"
+body_en = "Your E-Ticket QR works at PUJ / SDQ / POP; you overpaid for a free form. Dispute the charge with your card issuer."
+body_zh = "你的 E-Ticket 二维码在 PUJ / SDQ / POP 都能用；只是免费表单付了冤枉钱。和发卡行申诉这笔费用。"
+
+[[outcomes]]
+case = "Case 2"
+tag_en = "Watch for"
+tag_zh = "需留意"
+headline_en = "iVisa charged you twice — once for arrival, once for departure."
+headline_zh = "iVisa 收了你两次钱——入境一次、离境一次。"
+body_en = "The official E-Ticket covers both legs of one trip in a single submission. If iVisa billed two charges, dispute both — one ticket would have sufficed."
+body_zh = "官方 E-Ticket 一次提交就涵盖往返两程。iVisa 收了两笔的话，两笔都申诉——一张票就够。"
+
+[[outcomes]]
+case = "Case 3"
+tag_en = "Rare"
+tag_zh = "罕见"
+headline_en = "iVisa filed nothing and you arrive without an E-Ticket."
+headline_zh = "iVisa 什么也没提交，你抵达时没有 E-Ticket。"
+body_en = "DGM lets you fill the form on a kiosk at arrivals, but it's slow. File at eticket.migracion.gob.do yourself before flying."
+body_zh = "DGM 会让你在到达大厅自助机上现填，但很慢。出行前自己到 eticket.migracion.gob.do 提交。"
+
 # Known scam / middleman domains (for scam-site shortcode)
 # Every entry must:
 #   1. Resolve via DNS (we audit this with `dig`)

@@ -40,6 +40,43 @@ time_needed_zh = "约 6 分钟"
 output_en = "Officer stamps the FMM-E PDF and tears off a stub. Keep the stub until you exit Mexico — you surrender it on departure."
 output_zh = "警官在 FMM-E PDF 上盖章并撕下副本。副本要保留到离境时交回——丢了要补办小额费用。"
 
+# Used by the is-ivisa layout. Names the headline middleman this page rebuts.
+primary_middleman = "iVisa"
+page_question_en = "Is iVisa the official FMM-E site?"
+page_question_zh = "iVisa 是官方 FMM-E 网站吗？"
+page_answer_en = "No."
+page_answer_zh = "不是。"
+
+# Used by the is-ivisa layout. Three cases for "what happened to your money."
+# Mexico is unusual: since 2023, most air arrivals get a passport stamp
+# automatically — the FMM-E is increasingly optional, so case 2 differs.
+[[outcomes]]
+case = "Case 1"
+tag_en = "Most common"
+tag_zh = "最常见"
+headline_en = "iVisa filed an FMM-E PDF you didn't actually need."
+headline_zh = "iVisa 替你填了一张 FMM-E PDF，但你其实根本不需要。"
+body_en = "Since 2023, major airports auto-stamp your passport instead of using the FMM. The PDF iVisa sent is real but unused. Dispute the charge."
+body_zh = "2023 年起，主要机场直接在护照上盖章，不再用 FMM。iVisa 发给你的 PDF 是真的但根本没用上。申诉这笔费用。"
+
+[[outcomes]]
+case = "Case 2"
+tag_en = "Watch for"
+tag_zh = "需留意"
+headline_en = "Land crossing — iVisa filed the FMM-E but you still need the paper stub."
+headline_zh = "陆路入境——iVisa 替你提交了 FMM-E，但你过关时还得拿到那张纸质副本。"
+body_en = "INM still uses FMM at land borders. Print iVisa's PDF, present it, get the officer to tear off the stub. Keep the stub until exit."
+body_zh = "INM 在陆路口岸还在用 FMM。把 iVisa 的 PDF 打印出来，递给警官，让他撕下副本。副本要保留到离境。"
+
+[[outcomes]]
+case = "Case 3"
+tag_en = "Rare"
+tag_zh = "罕见"
+headline_en = "iVisa filed nothing or filed for the wrong port of entry."
+headline_zh = "iVisa 什么也没提交，或者把入境口岸填错了。"
+body_en = "At a land border this means you fill the FMM on-site (10 minutes, free). At air, you walk through anyway since FMM is no longer the primary record."
+body_zh = "陆路口岸意味着你要现场填 FMM（10 分钟，免费）。空运反正不再以 FMM 为主，照常通关。"
+
 # Known scam / middleman domains (for scam-site shortcode)
 # IMPORTANT: only add to this list after verifying the site is charging for the free FMM
 # and cross-referencing with INM warnings or news coverage.

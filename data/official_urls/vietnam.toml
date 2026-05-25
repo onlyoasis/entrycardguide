@@ -42,6 +42,44 @@ time_needed_zh = "约 15 分钟"
 output_en = "Hand the printed e-visa with your passport. Officer scans, stamps. Print the PDF — some airlines refuse boarding without a paper copy."
 output_zh = "把打印好的电子签证连同护照一起递上。警官扫描、盖章。一定要打印 PDF——部分航司没有纸质件不让登机。"
 
+# Used by the is-ivisa layout. Names the headline middleman this page rebuts.
+# Vietnam's case is "overcharging for a real $25 fee", not "charging for a free service".
+primary_middleman = "iVisa"
+page_question_en = "Is iVisa the official Vietnam E-Visa site?"
+page_question_zh = "iVisa 是越南官方电子签证网站吗？"
+page_answer_en = "No."
+page_answer_zh = "不是。"
+
+# Used by the is-ivisa layout. Three cases for "what happened to your money."
+# Vietnam is unique in the roster: the e-visa is a REAL paid government program
+# (USD $25 / $50). iVisa overcharges 2–8x on top, instead of charging for free.
+[[outcomes]]
+case = "Case 1"
+tag_en = "Most common"
+tag_zh = "最常见"
+headline_en = "iVisa filed the real e-visa and charged 2–8× the government fee."
+headline_zh = "iVisa 替你提交了真实电子签证，但收了政府费的 2–8 倍。"
+body_en = "Government fee is USD $25 (single) / $50 (multi). iVisa typically bills USD $80–250. You got a valid visa; you overpaid. Dispute the markup with your card issuer."
+body_zh = "政府费是单次 25 美元 / 多次 50 美元。iVisa 通常收 80–250 美元。签证是真的，只是多付了。把溢价部分和发卡行申诉。"
+
+[[outcomes]]
+case = "Case 2"
+tag_en = "Watch for"
+tag_zh = "需留意"
+headline_en = "iVisa applied at the wrong port of entry."
+headline_zh = "iVisa 替你填了错的入境口岸。"
+body_en = "Vietnam e-visas lock you to a specific entry port. If iVisa picked SGN but you fly into HAN, you'll be turned back at the gate. Verify the port matches your itinerary before travel."
+body_zh = "越南电子签证会锁定具体入境口岸。iVisa 选了 SGN 但你飞 HAN，会被卡在登机口。出行前核对口岸和行程是否一致。"
+
+[[outcomes]]
+case = "Case 3"
+tag_en = "Rare"
+tag_zh = "罕见"
+headline_en = "iVisa's photo or passport scan was rejected and they kept the fee."
+headline_zh = "iVisa 提交的照片或护照扫描被拒签，但费用没退。"
+body_en = "Government processing returned \"rejected\" but iVisa's terms often don't refund. Reapply directly at evisa.xuatnhapcanh.gov.vn with a corrected photo — costs the real USD $25."
+body_zh = "政府审核返回 \"rejected\"，但 iVisa 的条款经常不退费。换张合规照片直接到 evisa.xuatnhapcanh.gov.vn 重新提交——只花真正的 25 美元。"
+
 # Known scam / overcharging middleman domains (for scam-site shortcode)
 # IMPORTANT: Vietnam e-visa scams overcharge for a real $25 fee, rather than charging
 # for a free service. Frame the warnings accordingly.

@@ -1,0 +1,217 @@
+{{ define "main" }}
+{{- $isZh := eq .Site.Language.Lang "zh" -}}
+
+{{- /* ============================================================ */ -}}
+{{- /* Data lookup                                                   */ -}}
+{{- /* ============================================================ */ -}}
+{{- $country := .Section -}}
+{{- $data := index hugo.Data.official_urls $country -}}
+{{- $meta := $data.meta -}}
+{{- $news := $data.news -}}
+{{- $outcomes := $data.outcomes -}}
+{{- $scams := $data.scam_sites -}}
+
+{{- $countryName := cond $isZh $meta.name_zh $meta.name_en -}}
+{{- $formCode := $meta.form_code -}}
+{{- $primary := $meta.primary_middleman -}}
+{{- $question := cond $isZh $meta.page_question_zh $meta.page_question_en -}}
+{{- $answer := cond $isZh $meta.page_answer_zh $meta.page_answer_en -}}
+{{- $suffix := $meta.suffix -}}
+{{- $cleanUrl := replaceRE "^https?://" "" (replaceRE "/$" "" (index $data $meta.guide_slug).url) -}}
+{{- $agency := (index $data $meta.guide_slug).agency -}}
+
+{{- /* Breadcrumb ---------------------------------------------------- */ -}}
+<nav aria-label="Breadcrumb" class="-mx-md px-md py-3 border-b border-rule flex items-baseline justify-between flex-wrap gap-y-2 font-mono text-xs text-muted">
+  <div>
+    <a href="{{ "/" | relLangURL }}" class="text-muted no-underline hover:text-ink">{{ if $isZh }}首页{{ else }}Home{{ end }}</a>
+    <span class="mx-1.5">›</span>
+    {{- with .Parent }}
+    <a href="{{ .Permalink }}" class="text-muted no-underline hover:text-ink">{{ $countryName }}</a>
+    <span class="mx-1.5">›</span>
+    {{- end }}
+    <span class="text-ink">{{ if $isZh }}{{ $primary }} 是官方 {{ $formCode }} 吗？{{ else }}Is {{ $primary }} the official {{ $formCode }}?{{ end }}</span>
+  </div>
+  <div>
+    {{ if $isZh }}最近核验{{ else }}Last verified{{ end }}
+    <span class="text-ink">{{ dateFormat "2006-01-02" .Lastmod }}</span>
+  </div>
+</nav>
+
+{{- /* Hero — pageQuestion + giant No. + explanation -------------- */ -}}
+<section class="pt-22 pb-xl">
+  <div class="text-meta font-mono uppercase text-scam mb-7 inline-flex items-center gap-2">
+    <span class="inline-block w-[6px] h-[6px] rounded-full bg-scam"></span>
+    {{ if $isZh }}关于 {{ $formCode }} 被搜索最多的一个问题{{ else }}The single most-searched question for the {{ $formCode }}{{ end }}
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
+    {{- /* Left: question + giant answer */ -}}
+    <div>
+      <p class="font-serif text-muted m-0 mb-5" style="font-size: clamp(22px, 3.4vw, 28px); line-height: 1.3; letter-spacing: -0.01em; font-variation-settings: 'opsz' 144;">
+        {{ $question }}
+      </p>
+      <h1 class="font-serif font-medium text-scam m-0" style="font-size: clamp(96px, 18vw, 160px); line-height: 0.95; letter-spacing: -0.04em; font-variation-settings: 'opsz' 144;">
+        {{ $answer }}
+      </h1>
+    </div>
+
+    {{- /* Right: explanation + actual URL */ -}}
+    <div>
+      <p class="m-0 mb-4" style="font-size: 19px; line-height: 1.65;">
+        {{- if $isZh -}}
+        {{ $primary }} 是商业签证与旅行文件服务，<strong>不</strong>隶属 {{ $agency }}。{{ $primary }} 替你提交 {{ $formCode }} 收取一笔费用。而 {{ $formCode }} 本身免费{{- if eq $country "vietnam" }}（政府费 USD $25 单次 / $50 多次，{{ $primary }} 在政府费之上加价 2-8 倍）{{- end }}。
+        {{- else -}}
+        {{ $primary }} is a commercial visa and travel document service. It is <strong>not</strong> affiliated with the {{ $agency }}. {{ $primary }} charges a fee to file the {{ $formCode }} on your behalf. The {{ $formCode }} itself is free{{- if eq $country "vietnam" }} (the government fee is USD $25 single / $50 multi; {{ $primary }} marks it up 2–8×){{- end }}.
+        {{- end -}}
+      </p>
+      {{- with $news }}
+      <p class="m-0 mb-6" style="font-size: 19px; line-height: 1.65;">
+        {{- if $isZh -}}
+        {{ .date }}，{{ $agency }} 公开点名 {{ $primary }} 是收费的中介之一（{{ .source }} 报道）。
+        {{- else -}}
+        On {{ .date }}, the {{ $agency }} publicly named {{ $primary }} among non-official sites charging fees for the free {{ $formCode }} (<a href="{{ .source_url }}" rel="noopener" class="text-ink underline underline-offset-2">{{ .source }}</a>).
+        {{- end -}}
+      </p>
+      {{- end }}
+      <div class="border border-ink rounded-md p-6">
+        <div class="text-meta font-mono uppercase text-verified mb-2 inline-flex items-center gap-2">
+          <span class="inline-block w-[6px] h-[6px] rounded-full bg-verified"></span>
+          {{ if $isZh }}真正的官方网址{{ else }}The actual official URL{{ end }}
+        </div>
+        <div class="font-mono font-medium" style="font-size: 22px;">
+          <a href="https://{{ $cleanUrl }}" rel="noopener" class="text-ink no-underline">{{ $cleanUrl }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{- /* Three outcomes ----------------------------------------------- */ -}}
+{{- with $outcomes }}
+<section class="-mx-md px-md py-xl border-y border-rule" style="background:#F4F2EC;">
+  <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}§ 如果你已经付过 {{ $primary }}{{ else }}§ If you already paid {{ $primary }}{{ end }}</div>
+  <h2 class="font-serif font-medium mb-lg" style="font-size: 32px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144; margin-top: 0;">
+    {{ if $isZh }}三种可能。{{ else }}One of three things happened.{{ end }}
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {{- range . }}
+    <div class="border border-rule rounded-md p-7 bg-paper">
+      <div class="flex items-baseline justify-between mb-4 flex-wrap gap-2">
+        <span class="text-meta font-mono uppercase text-muted">{{ .case }}</span>
+        <span class="inline-flex items-center px-2 py-1 border border-rule rounded-sm font-mono uppercase text-muted" style="font-size: 11px; letter-spacing: 0.08em;">{{ if $isZh }}{{ .tag_zh }}{{ else }}{{ .tag_en }}{{ end }}</span>
+      </div>
+      <h3 class="font-serif font-medium m-0 mb-3" style="font-size: 20px; line-height: 1.3; letter-spacing: -0.005em; font-variation-settings: 'opsz' 144;">
+        {{ if $isZh }}{{ .headline_zh }}{{ else }}{{ .headline_en }}{{ end }}
+      </h3>
+      <p class="text-small text-ink m-0">{{ if $isZh }}{{ .body_zh }}{{ else }}{{ .body_en }}{{ end }}</p>
+    </div>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+{{- /* Gallery ------------------------------------------------------ */ -}}
+{{- with $scams }}
+<section class="pt-22 pb-xl">
+  <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}§ 山寨展区{{ else }}§ The gallery{{ end }}</div>
+  <h2 class="font-serif font-medium mb-lg" style="font-size: 32px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144; margin-top: 0;">
+    {{- if gt (len .) 2 -}}
+    {{ if $isZh }}Google 顶部结果里其它仿冒站点。{{ else }}Other lookalike sites in the top Google results.{{ end }}
+    {{- else -}}
+    {{ if $isZh }}我们已记录的、对免费 {{ $formCode }} 收费的站点。{{ else }}Sites we have documented charging for the free {{ $formCode }}.{{ end }}
+    {{- end -}}
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {{- range . }}
+    <figure class="border border-rule rounded-md overflow-hidden bg-paper m-0">
+      <div class="border-b border-rule p-5">
+        <div class="text-meta font-mono uppercase text-scam mb-2 inline-flex items-center gap-2">
+          <span class="inline-block w-[6px] h-[6px] rounded-full bg-scam"></span>
+          {{ if $isZh }}非官方{{ else }}Not official{{ end }}
+        </div>
+        <div class="font-mono font-medium text-ink" style="font-size: 16px;">{{ .domain }}{{- with .path }}<span class="text-muted">{{ . }}</span>{{- end }}</div>
+      </div>
+      <div class="p-5">
+        <p class="text-small m-0 mb-3">{{ .evidence }}</p>
+        <div class="font-mono text-xs text-muted flex flex-wrap gap-x-3 gap-y-1 pt-3 border-t border-rule">
+          {{- with .first_observed }}
+          <span>{{ if $isZh }}首次观察{{ else }}First observed{{ end }} <span class="text-ink">{{ . }}</span></span>
+          <span>·</span>
+          {{- end }}
+          <a href="https://web.archive.org/web/*/{{ .domain }}" class="text-muted underline underline-offset-2">{{ if $isZh }}archive ↗{{ else }}archive ↗{{ end }}</a>
+        </div>
+      </div>
+    </figure>
+    {{- end }}
+  </div>
+
+  <p class="text-small text-muted mt-md max-w-[720px]">
+    {{- if $isZh -}}
+    上述每个域名在最近一次 DNS 审计时都还能解析。要补充新域名，欢迎到 <a href="https://github.com/onlyoasis/entrycardguide/issues" rel="noopener" class="text-ink underline underline-offset-2">GitHub issues</a> 上开一个。
+    {{- else -}}
+    Every entry above resolved via DNS at last audit. To submit a new domain, open an <a href="https://github.com/onlyoasis/entrycardguide/issues" rel="noopener" class="text-ink underline underline-offset-2">issue on GitHub</a>.
+    {{- end -}}
+  </p>
+</section>
+{{- end }}
+
+{{- /* Five-question identifier ------------------------------------- */ -}}
+<section class="border-t border-rule pt-xl pb-xl grid grid-cols-1 md:grid-cols-[280px_1fr] gap-xl">
+  <div>
+    <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}§ 识别任意仿冒{{ else }}§ Recognize any imitator{{ end }}</div>
+    <h2 class="font-serif font-medium m-0" style="font-size: 32px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144;">
+      {{ if $isZh }}五个问题胜过任何名单。{{ else }}Five questions that beat any list.{{ end }}
+    </h2>
+    <p class="text-small text-muted mt-md max-w-[280px]">
+      {{- if $isZh -}}
+      记模式比记域名靠谱。坏站点常换名字，特征不变。
+      {{- else -}}
+      Pattern recognition beats memorizing domains. Bad sites change names; their tells don't.
+      {{- end -}}
+    </p>
+  </div>
+
+  {{- $questions := slice
+    (dict "qEn" (printf "Does the domain end in %s?"             $suffix)
+          "qZh" (printf "域名以 %s 结尾吗？"                       $suffix)
+          "aEn" (printf "If no, it is not the %s government. Period. %s is restricted by registry." $countryName $suffix)
+          "aZh" (printf "不是的话就不是 %s 政府的站。没商量。%s 后缀由注册机构保留，私人无法申请。" $countryName $suffix))
+    (dict "qEn" "Does it ask for payment?"
+          "qZh" "要付款吗？"
+          "aEn" (printf "The %s is free. Any fee means a middleman." $formCode)
+          "aZh" (printf "%s 是免费的。要收费的就是中介。" $formCode))
+    (dict "qEn" "Does it ask for a photo of your passport?"
+          "qZh" "要求上传护照照片吗？"
+          "aEn" (printf "The official %s does not. It accepts typed text only — no upload field exists." $formCode)
+          "aZh" (printf "官方 %s 不会要求。只接受手动输入，根本没有上传字段。" $formCode))
+    (dict "qEn" (printf "Does the URL contain \"apply\", \"official\", or \"gov\" but not %s?" $suffix)
+          "qZh" (printf "URL 含有 \"apply\"、\"official\"、\"gov\" 但没有 %s？" $suffix)
+          "aEn" (printf "Those words are bait. The real domain is boring: %s." $cleanUrl)
+          "aZh" (printf "这些词是钓饵。真正的域名很无聊：%s。" $cleanUrl))
+    (dict "qEn" "Does the page have trust badges, testimonials, or countdown timers?"
+          "qZh" "页面有信任徽章、用户证言、倒计时？"
+          "aEn" "Government forms have none of these. They are ugly and functional. That is the tell."
+          "aZh" "政府表单一律没有。它们丑而实用，这就是判别要点。")
+  -}}
+  <div>
+    {{- range $i, $q := $questions }}
+    <div class="grid grid-cols-[56px_1fr] gap-5 py-5 border-t border-rule {{ if eq $i 4 }}border-b border-rule{{ end }}">
+      <div class="font-serif font-medium text-ink" style="font-size: 28px; letter-spacing: -0.01em; line-height: 1; font-variation-settings: 'opsz' 144;">0{{ add $i 1 }}</div>
+      <div>
+        <p class="m-0 mb-1.5 font-semibold" style="font-size: 18px; letter-spacing: -0.005em;">{{ if $isZh }}{{ $q.qZh }}{{ else }}{{ $q.qEn }}{{ end }}</p>
+        <p class="text-small text-muted m-0">{{ if $isZh }}{{ $q.aZh }}{{ else }}{{ $q.aEn }}{{ end }}</p>
+      </div>
+    </div>
+    {{- end }}
+  </div>
+</section>
+
+{{- partial "share-source.html" . -}}
+
+{{- if .Section }}
+{{- partial "affiliate-footer.html" . -}}
+{{- end }}
+
+{{ end }}

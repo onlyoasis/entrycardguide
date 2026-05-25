@@ -40,6 +40,41 @@ time_needed_zh = "约 6 分钟"
 output_en = "Most travelers walk straight to the e-gate — ICA links your SGAC to your passport automatically. If asked, show the email."
 output_zh = "大多数旅客直接走电子通道——ICA 已经把 SGAC 自动关联到你的护照。被问到就出示邮件。"
 
+# Used by the is-ivisa layout. Names the headline middleman this page rebuts.
+primary_middleman = "iVisa"
+page_question_en = "Is iVisa the official SGAC site?"
+page_question_zh = "iVisa 是官方 SGAC 网站吗？"
+page_answer_en = "No."
+page_answer_zh = "不是。"
+
+# Used by the is-ivisa layout. Three cases for "what happened to your money."
+[[outcomes]]
+case = "Case 1"
+tag_en = "Most common"
+tag_zh = "最常见"
+headline_en = "iVisa filed the real SGAC and kept the fee."
+headline_zh = "iVisa 替你提交了真实 SGAC，把费用收走了。"
+body_en = "Your SGAC links to your passport at the e-gate; you overpaid. Dispute the charge with your card issuer."
+body_zh = "你的 SGAC 在电子通道会自动关联护照；只是多付了钱。和发卡行申诉这笔费用。"
+
+[[outcomes]]
+case = "Case 2"
+tag_en = "Reported"
+tag_zh = "有过案例"
+headline_en = "iVisa filed nothing and you arrive without an SGAC."
+headline_zh = "iVisa 什么都没提交，你抵达时没有 SGAC 记录。"
+body_en = "ICA may let you file at the kiosk in the arrivals hall, or refer you to a secondary desk. File it yourself before travel to avoid this."
+body_zh = "ICA 可能让你在到达大厅的自助机现填，或转去二线柜台。出行前自己提交可以彻底规避。"
+
+[[outcomes]]
+case = "Case 3"
+tag_en = "Rare"
+tag_zh = "罕见"
+headline_en = "iVisa filed for the wrong traveler / typo case."
+headline_zh = "iVisa 替错了人填，或者出现笔误。"
+body_en = "An SGAC under the wrong passport number doesn't work at e-gate. Refile with your real data on the ICA site."
+body_zh = "护照号错的 SGAC 在电子通道无法识别。在 ICA 官方站用真数据重新提交。"
+
 # Known scam / middleman domains (for scam-site shortcode)
 # Every entry must:
 #   1. Resolve via DNS (we audit this with `dig`)

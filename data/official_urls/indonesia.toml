@@ -48,6 +48,43 @@ time_needed_zh = "约 5 分钟"
 output_en = "Scan the QR at the customs gate, walk through the green lane. Answered \"yes\" to anything? You'll be routed to the red-lane secondary check."
 output_zh = "在海关闸口扫二维码，走绿色通道。海关问题答了 \"yes\" 就走红色通道做二次核查。"
 
+# Used by the is-ivisa layout. Names the headline middleman this page rebuts.
+primary_middleman = "iVisa"
+page_question_en = "Is iVisa the official e-CD site?"
+page_question_zh = "iVisa 是官方 e-CD 网站吗？"
+page_answer_en = "No."
+page_answer_zh = "不是。"
+
+# Used by the is-ivisa layout. Three cases for "what happened to your money."
+# Indonesia is unusual: the e-CD is free, but iVisa also bundles the paid
+# e-VOA — so cases reflect both surfaces.
+[[outcomes]]
+case = "Case 1"
+tag_en = "Most common"
+tag_zh = "最常见"
+headline_en = "iVisa filed the real e-CD and pocketed the fee."
+headline_zh = "iVisa 替你提交了真实 e-CD，费用归它。"
+body_en = "You arrive with a working QR for customs; you overpaid for a free form. Dispute the charge with your card issuer."
+body_zh = "你过海关时有可用的二维码；只是免费表单付了冤枉钱。和发卡行申诉这笔费用。"
+
+[[outcomes]]
+case = "Case 2"
+tag_en = "Watch for"
+tag_zh = "需留意"
+headline_en = "iVisa bundled e-VOA and charged a markup on top."
+headline_zh = "iVisa 把 e-VOA 一起捆绑，又在政府费上加价。"
+body_en = "The USD 35 e-VOA government fee is real, but iVisa adds USD 30–60 service fees. If you need an e-VOA, file directly at molina.imigrasi.go.id."
+body_zh = "35 美元的 e-VOA 政府费是真的，但 iVisa 还加 30–60 美元服务费。需要 e-VOA 直接到 molina.imigrasi.go.id 提交。"
+
+[[outcomes]]
+case = "Case 3"
+tag_en = "Rare"
+tag_zh = "罕见"
+headline_en = "iVisa filed nothing and you find out at customs."
+headline_zh = "iVisa 什么也没提交，你过海关时才发现。"
+body_en = "Customs lets you fill the e-CD at a kiosk in arrivals, but it slows you down. File it yourself before travel."
+body_zh = "海关会让你在到达大厅自助机现填 e-CD，但会拖慢你的入境。出行前自己提交可以规避。"
+
 # Known scam / middleman domains (for scam-site shortcode)
 # Every entry must:
 #   1. Resolve via DNS (we audit this with `dig`)

@@ -40,6 +40,41 @@ time_needed_zh = "约 7 分钟"
 output_en = "Show your passport. Officer scans, your MDAC record is already linked. Stamp and through, usually under 30 seconds."
 output_zh = "出示护照。警官扫描时 MDAC 记录已经关联好。盖章过关，一般 30 秒内完事。"
 
+# Used by the is-ivisa layout. Names the headline middleman this page rebuts.
+primary_middleman = "iVisa"
+page_question_en = "Is iVisa the official MDAC site?"
+page_question_zh = "iVisa 是官方 MDAC 网站吗？"
+page_answer_en = "No."
+page_answer_zh = "不是。"
+
+# Used by the is-ivisa layout. Three cases for "what happened to your money."
+[[outcomes]]
+case = "Case 1"
+tag_en = "Most common"
+tag_zh = "最常见"
+headline_en = "iVisa filed the real MDAC and pocketed the fee."
+headline_zh = "iVisa 替你提交了真实 MDAC，费用归它。"
+body_en = "Your MDAC record is in the immigration system; you overpaid. Dispute the charge with your card issuer."
+body_zh = "你的 MDAC 已经进入移民系统；只是多付了钱。和发卡行申诉这笔费用。"
+
+[[outcomes]]
+case = "Case 2"
+tag_en = "Watch for"
+tag_zh = "需留意"
+headline_en = "iVisa filed nothing and you arrive without an MDAC record."
+headline_zh = "iVisa 什么都没提交，你抵达时系统里没有 MDAC 记录。"
+body_en = "Reported, especially during MDAC outages. Refile yourself at the official site before flying — takes 7 minutes."
+body_zh = "有报道，MDAC 站宕机时尤其多。出行前自己在官方站重交一份——7 分钟搞定。"
+
+[[outcomes]]
+case = "Case 3"
+tag_en = "Rare"
+tag_zh = "罕见"
+headline_en = "iVisa filed for the wrong passport number (typo case)."
+headline_zh = "iVisa 把护照号填错了（笔误）。"
+body_en = "A MDAC record under the wrong passport doesn't link at e-gate. Refile with your real data on the official site."
+body_zh = "护照号错的 MDAC 记录在电子通道无法关联。在官方站用真数据重新提交。"
+
 # Known scam / middleman domains (for scam-site shortcode)
 # Every entry must:
 #   1. Resolve via DNS (we audit this with `dig`)

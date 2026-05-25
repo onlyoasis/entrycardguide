@@ -14,6 +14,7 @@ faq:
     a: "官方站是 eticket.migracion.gob.do。.gob.do 后缀用于多米尼加政府机构。"
   - q: "E-Ticket 要收费吗？"
     a: "不收费。任何向你收 E-Ticket 代填费的网站都不是官方免费入口。"
+layout: is-ivisa
 ---
 
 ## 简短回答

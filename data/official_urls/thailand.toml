@@ -42,6 +42,13 @@ time_needed_zh = "约 8 分钟"
 output_en = "Show the QR code and your passport. Officer scans, stamps, hands it back. Under 30 seconds."
 output_zh = "出示二维码和护照。警官扫描、盖章、还你。一般 30 秒内完事。"
 
+# Used by the is-ivisa layout. Names the headline middleman this page rebuts.
+primary_middleman = "iVisa"
+page_question_en = "Is iVisa the official TDAC site?"
+page_question_zh = "iVisa 是官方 TDAC 网站吗？"
+page_answer_en = "No."
+page_answer_zh = "不是。"
+
 # News source backing the hero subhead ("X% of foreign arrivals…") and the
 # "Why this matters" callout. When the citation changes, update both _en/_zh.
 [news]
@@ -53,6 +60,35 @@ quote_en = "About 10% of foreign arrivals had used unofficial sites and overpaid
 quote_zh = "约 10% 的外国入境者使用过非官方网站并多付了钱。"
 attribution_en = "Pol Maj Gen Choengron Rimpadee, Immigration Bureau spokesman"
 attribution_zh = "泰国移民局发言人 Pol Maj Gen Choengron Rimpadee"
+
+# Used by the is-ivisa layout. Three cases for "what happened to your money."
+# Order: most common first, rare last. tag_en/zh is a short qualifier badge.
+[[outcomes]]
+case = "Case 1"
+tag_en = "Most common"
+tag_zh = "最常见"
+headline_en = "iVisa filed the real TDAC and kept the fee."
+headline_zh = "iVisa 替你提交了真实 TDAC，把费用收走了。"
+body_en = "Your arrival card is valid; you overpaid. Dispute the charge with your card issuer — the submission still works."
+body_zh = "你的入境卡有效，只是多付了钱。和发卡行申诉这笔费用——提交本身没问题。"
+
+[[outcomes]]
+case = "Case 2"
+tag_en = "Watch for"
+tag_zh = "需留意"
+headline_en = "iVisa filed a different form (e.g. a Thailand eVisa) and sent a generic confirmation."
+headline_zh = "iVisa 填了另一种表（如泰国 eVisa），只发了张通用确认。"
+body_en = "You may still need to file the TDAC separately. Check the email for an attachment from tdac.immigration.go.th — if not there, file the TDAC yourself before travel."
+body_zh = "你可能还得另外提交 TDAC。看邮件里有没有 tdac.immigration.go.th 的附件——没有就在出行前自己提交一份。"
+
+[[outcomes]]
+case = "Case 3"
+tag_en = "Rare"
+tag_zh = "罕见"
+headline_en = "iVisa filed nothing and you find out at the arrivals counter."
+headline_zh = "iVisa 什么也没提交，你在到达柜台才发现。"
+body_en = "Documented but uncommon. Officer can let you fill the TDAC at the kiosk in the arrivals hall — file it yourself before travel to avoid this."
+body_zh = "有报道但罕见。警官会让你在到达大厅的自助机现填——出行前自己提交可以彻底规避。"
 
 # Known scam domains (for scam-site shortcode)
 # IMPORTANT: only add to this list after verifying the site is charging for the free TDAC

@@ -20,6 +20,7 @@ faq:
     a: "Singaporean citizens entering on a Singapore passport don't need the SGAC at all. Singapore PRs returning from abroad do, but they typically know the official site already. This scam targets foreign visitors."
   - q: "I already paid for my SGAC. What do I do?"
     a: "Check your email. If you have a confirmation from no-reply@ica.gov.sg with an SGAC reference number, your filing is valid; you overpaid. Dispute the markup with your card issuer as 'misleading merchant.' If you don't see that email, refile at the official site — it's free and only takes 6 minutes."
+layout: is-ivisa
 ---
 
 ## Short answer

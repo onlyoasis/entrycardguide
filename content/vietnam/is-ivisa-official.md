@@ -20,6 +20,7 @@ faq:
     a: "Probably not in the strict sense — most middlemen do submit a real e-visa to the Vietnamese government and pocket the markup. Your visa is valid. You overpaid by $100+. You can dispute the charge with your card issuer as 'misleading merchant' if the middleman did not clearly disclose the official fee."
   - q: "If middlemen submit real visas, why is using them a problem?"
     a: "Three reasons. First, you pay 4-8x more for the same outcome. Second, some middlemen submit different documents (e.g. an invitation letter that doesn't work as a visa) and you find out at the gate. Third, you give your passport scan and personal data to a third party with no Vietnamese government oversight."
+layout: is-ivisa
 ---
 
 ## Short answer

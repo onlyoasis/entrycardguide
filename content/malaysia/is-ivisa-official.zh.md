@@ -14,6 +14,7 @@ faq:
     a: "官方站是 imigresen-online.imi.gov.my/mdac/main，由马来西亚移民局运营。"
   - q: "MDAC 要收费吗？"
     a: "不收费。任何要求你为 MDAC 付款的网站都不是官方免费提交入口。"
+layout: is-ivisa
 ---
 
 ## 简短回答

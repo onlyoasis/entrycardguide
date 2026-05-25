@@ -20,6 +20,7 @@ faq:
     a: "Depends on your nationality. The e-CD is required for everyone (free). The e-VOA is required only if you don't have visa-free entry. Many Western tourists (US, EU, UK, Canada, AU, Japan, Korea) get visa-free for 30 days as of 2024 and only need the e-CD. Others may need both."
   - q: "I already paid iVisa for an Indonesia document. What did I actually get?"
     a: "Check your email for two possible documents. (1) An e-CD QR code from beacukai.go.id — that's the free customs declaration; you overpaid. (2) An e-VOA PDF from imigrasi.go.id — the $35 government visa; you paid the iVisa markup on top. Sometimes both are bundled and you paid extra for both."
+layout: is-ivisa
 ---
 
 ## Short answer
