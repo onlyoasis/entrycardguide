@@ -11,10 +11,17 @@
 {{- $formName := "" -}}
 {{- $since := "" -}}
 {{- $isPaid := false -}}
+{{- $countryName := .Title -}}
 {{- with $countryMeta -}}
   {{- $formName = cond $isZh .form_name_zh .form_name_en -}}
   {{- $since = cond $isZh .since_zh .since_en -}}
   {{- $isPaid = ne (lower .fee_en) "free" -}}
+  {{- /* Short country name for the visible H1. The /zh/ pages use SEO-loaded
+         long .Title values ("泰国 TDAC 官方网站、免费填写和防中介指南") that
+         already include the country + form code, so reusing them in the H1
+         and then appending form_code again produced keyword-stuffed
+         duplication. The [meta] name_en/name_zh fields are short and stable. */ -}}
+  {{- $countryName = cond $isZh .name_zh .name_en -}}
 {{- end -}}
 
 {{- /* Breadcrumb ----------------------------------------------------- */ -}}
@@ -38,9 +45,9 @@
   <h1 class="font-serif font-medium m-0 max-w-[880px]" style="font-size: clamp(40px, 6vw, 64px); line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
     {{- if $countryMeta -}}
       {{- if $isPaid -}}
-        {{ .Title }} {{ $countryMeta.form_code }}{{ if $isZh }}：官方收费电子签证，以及如何识别中介加价。{{ else }}, the official paid e-visa, and how to spot the middlemen who mark it up.{{ end }}
+        {{ $countryName }} {{ $countryMeta.form_code }}{{ if $isZh }}：官方收费电子签证，以及如何识别中介加价。{{ else }}, the official paid e-visa, and how to spot the middlemen who mark it up.{{ end }}
       {{- else -}}
-        {{ .Title }} {{ $countryMeta.form_code }}{{ if $isZh }}：免费表单，以及如何识别冒牌站点。{{ else }}, the free form, and how to spot the sites pretending to be it.{{ end }}
+        {{ $countryName }} {{ $countryMeta.form_code }}{{ if $isZh }}：免费表单，以及如何识别冒牌站点。{{ else }}, the free form, and how to spot the sites pretending to be it.{{ end }}
       {{- end -}}
     {{- else -}}
       {{ .Title }}
