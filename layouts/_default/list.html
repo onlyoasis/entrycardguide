@@ -1,19 +1,21 @@
 {{ define "main" }}
 {{- $isZh := eq .Site.Language.Lang "zh" -}}
 
-{{- /* Country-specific metadata: flag + "since" line. Keep the table small;
-       adding a country means one line here. */ -}}
-{{- $meta := dict
-  "thailand"  (dict "flag" "🇹🇭" "form" "TDAC"     "sinceEn" "since May 2024"  "sinceZh" "2024 年 5 月起")
-  "malaysia"  (dict "flag" "🇲🇾" "form" "MDAC"     "sinceEn" "since Jan 2024"  "sinceZh" "2024 年 1 月起")
-  "singapore" (dict "flag" "🇸🇬" "form" "SGAC"     "sinceEn" "since 2022"      "sinceZh" "2022 年起")
-  "indonesia" (dict "flag" "🇮🇩" "form" "e-CD"     "sinceEn" "since 2022"      "sinceZh" "2022 年起")
-  "mexico"    (dict "flag" "🇲🇽" "form" "FMM-E"    "sinceEn" "since 2023"      "sinceZh" "2023 年起")
-  "dominican" (dict "flag" "🇩🇴" "form" "E-Ticket" "sinceEn" "since 2021"      "sinceZh" "2021 年起")
-  "vietnam"   (dict "flag" "🇻🇳" "form" "E-Visa"   "sinceEn" "official program" "sinceZh" "官方项目")
--}}
+{{- /* Pull country metadata from the TOML — single source of truth.
+       Pages outside a country section (none today, but defensive) skip the
+       hero meta entirely. */ -}}
 {{- $section := .Section -}}
-{{- $countryMeta := index $meta $section -}}
+{{- $countryData := index hugo.Data.official_urls $section -}}
+{{- $countryMeta := false -}}
+{{- with $countryData -}}{{- $countryMeta = .meta -}}{{- end -}}
+{{- $formName := "" -}}
+{{- $since := "" -}}
+{{- $isPaid := false -}}
+{{- with $countryMeta -}}
+  {{- $formName = cond $isZh .form_name_zh .form_name_en -}}
+  {{- $since = cond $isZh .since_zh .since_en -}}
+  {{- $isPaid = ne (lower .fee_en) "free" -}}
+{{- end -}}
 
 {{- /* Breadcrumb ----------------------------------------------------- */ -}}
 <nav aria-label="Breadcrumb" class="-mx-md px-md py-3 border-b border-rule font-mono text-xs text-muted">
@@ -22,17 +24,27 @@
   <span class="text-ink">{{ .Title }}</span>
 </nav>
 
-{{- /* Hero ----------------------------------------------------------- */ -}}
+{{- /* Hero — descriptor and "free vs paid" framing both vary per country.
+       Vietnam's E-Visa is the one paid program; calling it "digital arrival
+       card" or "the free form" would publish false pricing. */ -}}
 <section class="pt-22 pb-md">
   {{- if $countryMeta }}
   <div class="text-meta font-mono uppercase text-muted mb-5">
     <span aria-hidden="true">{{ $countryMeta.flag }}</span>
-    {{ .Title }} · {{ if $isZh }}数字入境卡{{ else }}digital arrival card{{ end }} · {{ if $isZh }}{{ $countryMeta.sinceZh }}{{ else }}{{ $countryMeta.sinceEn }}{{ end }}
+    {{ $countryMeta.name_en }}{{ if and $isZh $countryMeta.name_zh }} · {{ $countryMeta.name_zh }}{{ end }} · {{ $formName }} · {{ $since }}
   </div>
   {{- end }}
 
   <h1 class="font-serif font-medium m-0 max-w-[880px]" style="font-size: clamp(40px, 6vw, 64px); line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
-    {{ .Title }}{{ if $countryMeta }} {{ $countryMeta.form }}{{ end }}{{ if $isZh }}：免费表单，以及如何识别冒牌站点。{{ else }}, the free form, and how to spot the sites pretending to be it.{{ end }}
+    {{- if $countryMeta -}}
+      {{- if $isPaid -}}
+        {{ .Title }} {{ $countryMeta.form_code }}{{ if $isZh }}：官方收费电子签证，以及如何识别中介加价。{{ else }}, the official paid e-visa, and how to spot the middlemen who mark it up.{{ end }}
+      {{- else -}}
+        {{ .Title }} {{ $countryMeta.form_code }}{{ if $isZh }}：免费表单，以及如何识别冒牌站点。{{ else }}, the free form, and how to spot the sites pretending to be it.{{ end }}
+      {{- end -}}
+    {{- else -}}
+      {{ .Title }}
+    {{- end -}}
   </h1>
 
   {{- with .Params.kicker }}
@@ -66,6 +78,34 @@
 <article class="prose prose-lg max-w-none pb-xl">
   {{ .Content }}
 </article>
+
+{{- /* Child page navigation — every page in this section, sorted by weight
+       (so main-form pages come before how-to-fill / is-ivisa-official). The
+       hub's own _index.md doesn't always list its children manually, so this
+       section guarantees the user can always navigate from /thailand/ to
+       /thailand/tdac/ even if the prose intro forgot to include the link. */ -}}
+{{- with .Pages }}
+<section class="border-t border-rule pt-xl pb-xl">
+  <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}§ 本国所有页面{{ else }}§ All pages on this country{{ end }}</div>
+  <div class="border-t border-rule">
+    {{- range .ByWeight }}
+    <article class="grid grid-cols-1 md:grid-cols-[1fr_180px] gap-md py-5 border-b border-rule items-baseline">
+      <div>
+        <h3 class="font-serif font-medium m-0 mb-1" style="font-size: 22px; letter-spacing: -0.005em; font-variation-settings: 'opsz' 144;">
+          <a href="{{ .Permalink }}" class="text-ink no-underline hover:underline underline-offset-4">{{ .Title }}</a>
+        </h3>
+        {{- with .Params.kicker }}
+        <p class="text-small text-muted m-0 max-w-[640px]">{{ . }}</p>
+        {{- end }}
+      </div>
+      <div class="font-mono text-xs text-muted text-left md:text-right">
+        {{ if $isZh }}最近核验{{ else }}Last reviewed{{ end }} {{ dateFormat "2006-01-02" .Lastmod }}
+      </div>
+    </article>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
 
 {{- if .Section }}
 {{- partial "share-source.html" . -}}

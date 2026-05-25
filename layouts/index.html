@@ -199,8 +199,12 @@
           {{ if $isZh }}免费{{ else }}Free{{ end }}
         </span>
         {{- else }}
+        {{- /* Pull the paid-fee label from the country's [meta] so the homepage
+               shows the full single/multi entry pricing, not a hardcoded "USD
+               25" that misses multi-entry travelers. */ -}}
+        {{- $paidFee := cond $isZh (index $countryData.meta "fee_zh") (index $countryData.meta "fee_en") -}}
         <span class="inline-flex items-center gap-1.5 font-mono uppercase text-ink border border-rule px-2 py-1 rounded-sm" style="font-size: 11px; letter-spacing: 0.08em;">
-          USD 25
+          {{ $paidFee }}
         </span>
         {{- end }}
         <div class="font-mono text-xs text-muted mt-2">{{ if $isZh }}{{ .subZh }}{{ else }}{{ .subEn }}{{ end }}</div>
