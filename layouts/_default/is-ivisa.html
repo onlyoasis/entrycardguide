@@ -130,10 +130,15 @@
 <section class="pt-22 pb-xl">
   <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}§ 山寨展区{{ else }}§ The gallery{{ end }}</div>
   <h2 class="font-serif font-medium mb-lg" style="font-size: 32px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144; margin-top: 0;">
+    {{- /* Heading framing varies. Vietnam = marking up a real paid program,
+           Indonesia = mixed (some entries charge for free e-CD, some mark up
+           paid e-VOA), others = charging for free forms. The "Sites we have
+           documented charging/marking up these forms" wording covers all
+           three honestly without needing per-country branches. */ -}}
     {{- if gt (len .) 2 -}}
     {{ if $isZh }}Google 顶部结果里其它仿冒站点。{{ else }}Other lookalike sites in the top Google results.{{ end }}
     {{- else -}}
-    {{ if $isZh }}我们已记录的、对免费 {{ $formCode }} 收费的站点。{{ else }}Sites we have documented charging for the free {{ $formCode }}.{{ end }}
+    {{ if $isZh }}我们已记录的、对 {{ $formCode }} 收费或加价的站点。{{ else }}Sites we have documented charging or marking up the {{ $formCode }}.{{ end }}
     {{- end -}}
   </h2>
 

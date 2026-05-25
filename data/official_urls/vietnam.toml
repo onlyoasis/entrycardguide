@@ -50,6 +50,15 @@ printout_title_zh = "必须打印 PDF"
 printout_body_en = "Some airlines (Vietjet, Bamboo) refuse boarding without a paper e-visa. Vietnamese officers also expect printed. A screenshot on your phone is not enough."
 printout_body_zh = "部分航司（Vietjet、Bamboo）没有纸质电子签证不让登机。越南警官也默认要纸质件。手机截图不够。"
 
+# Override the generic "email arrives in a few minutes" step. Vietnam's e-visa
+# is human-reviewed: you get a receipt email immediately, but the approved
+# visa PDF only arrives 3 working days later (or 1 day for express).
+# Showing "a few minutes" would make the receipt look like approval.
+email_title_en = "Receipt now, visa in 3 working days"
+email_title_zh = "回执立刻到，签证 3 个工作日后下发"
+email_body_en = "Within minutes you get a receipt confirming submission. The approved e-visa PDF arrives by email 3 working days later (1 day for express). Don't book travel until you have the PDF — the receipt is not a visa."
+email_body_zh = "几分钟内会收到一封确认提交的回执邮件。审批后的电子签证 PDF 要 3 个工作日后才会发到邮箱（加急 1 个工作日）。拿到 PDF 之前不要订机票——回执不是签证。"
+
 # Used by the is-ivisa layout. Names the headline middleman this page rebuts.
 # Vietnam's case is "overcharging for a real $25 fee", not "charging for a free service".
 primary_middleman = "iVisa"

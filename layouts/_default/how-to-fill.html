@@ -178,10 +178,22 @@
     </h2>
   </div>
 
-  {{- /* Step 04 (printout) is country-aware: Vietnam and Mexico REQUIRE a
-         printed paper copy (airline boarding gate + immigration counter), so
-         the generic "Screenshot is fine" line is unsafe for those forms.
-         Countries with printout_title_en in [meta] override the default. */ -}}
+  {{- /* Step 02 (email timing) and step 04 (printout) are country-aware.
+         Step 02 default assumes a same-day flow ("a few minutes"); Vietnam's
+         e-visa is human-reviewed and takes 3 working days, so the default
+         would make travelers mistake the receipt email for visa approval.
+         Step 04 default assumes screenshot suffices; Vietnam and Mexico need
+         printed copies (airline gate + officer-stamped stub respectively).
+         Countries can set email_title_en/email_body_en (and zh) plus
+         printout_title_en/printout_body_en (and zh) in [meta] to override. */ -}}
+  {{- $emailTitleEn := "Email arrives" -}}
+  {{- $emailTitleZh := "邮件送达" -}}
+  {{- $emailBodyEn := printf "Within a few minutes from a %s address, with the record details." (strings.TrimPrefix "." $meta.suffix) -}}
+  {{- $emailBodyZh := printf "几分钟内会有 %s 域名的邮件送达，附记录详情。" (strings.TrimPrefix "." $meta.suffix) -}}
+  {{- with $meta.email_title_en }}{{ $emailTitleEn = . }}{{ end -}}
+  {{- with $meta.email_title_zh }}{{ $emailTitleZh = . }}{{ end -}}
+  {{- with $meta.email_body_en }}{{ $emailBodyEn = . }}{{ end -}}
+  {{- with $meta.email_body_zh }}{{ $emailBodyZh = . }}{{ end -}}
   {{- $printoutTitleEn := "No printout needed" -}}
   {{- $printoutTitleZh := "不必打印" -}}
   {{- $printoutBodyEn := "Screenshot is fine. PDF is fine. Even the email app open on your phone is fine." -}}
@@ -192,7 +204,7 @@
   {{- with $meta.printout_body_zh }}{{ $printoutBodyZh = . }}{{ end -}}
   {{- $steps := slice
     (dict "tEn" "Confirmation screen" "tZh" "确认页"           "sEn" "The official site shows a confirmation on screen. Screenshot it — that's your backup." "sZh" "官方站会显示一个确认页。先截图——那是你的备份。")
-    (dict "tEn" "Email arrives"       "tZh" "邮件送达"         "sEn" (printf "Within a few minutes from a %s address, with the record details." (strings.TrimPrefix "." $meta.suffix)) "sZh" (printf "几分钟内会有 %s 域名的邮件送达，附记录详情。" (strings.TrimPrefix "." $meta.suffix)))
+    (dict "tEn" $emailTitleEn          "tZh" $emailTitleZh      "sEn" $emailBodyEn "sZh" $emailBodyZh)
     (dict "tEn" "At immigration"      "tZh" "过关时"           "sEn" $output "sZh" $output)
     (dict "tEn" $printoutTitleEn       "tZh" $printoutTitleZh   "sEn" $printoutBodyEn "sZh" $printoutBodyZh)
     (dict "tEn" "If verification fails" "tZh" "万一核验失败"   "sEn" "Rare. Officer looks you up by passport number — your record is already in the system." "sZh" "极少见。警官会用护照号查你——提交那一刻起记录已经进系统了。")
