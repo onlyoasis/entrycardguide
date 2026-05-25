@@ -59,6 +59,15 @@ email_title_zh = "回执立刻到，签证 3 个工作日后下发"
 email_body_en = "Within minutes you get a receipt confirming submission. The approved e-visa PDF arrives by email 3 working days later (1 day for express). Don't book travel until you have the PDF — the receipt is not a visa."
 email_body_zh = "几分钟内会收到一封确认提交的回执邮件。审批后的电子签证 PDF 要 3 个工作日后才会发到邮箱（加急 1 个工作日）。拿到 PDF 之前不要订机票——回执不是签证。"
 
+# Override the generic "officer looks you up by passport" step. Vietnam's
+# e-visa can fail BEFORE immigration — airlines check at the boarding gate,
+# and a passport lookup at arrivals doesn't help with a missing/wrong-port
+# visa. Don't tell e-visa travelers a passport lookup is a safety net.
+verification_title_en = "If verification fails — fix it before you fly"
+verification_title_zh = "万一被拒——出发前就要处理"
+verification_body_en = "Airlines verify the e-visa at the boarding gate. If the gate rejects you (wrong port of entry, expired window, no approved PDF), there's no in-airport fallback in Vietnam — you'd need to apply again and re-book. Confirm the approved PDF matches your itinerary 24h before departure."
+verification_body_zh = "航司在登机口核验电子签证。被卡（口岸不对、过期、没有审批 PDF）就只能重新申请并重订机票——在越南机场没有补救通道。出发前 24 小时确认审批 PDF 和行程一致。"
+
 # Used by the is-ivisa layout. Names the headline middleman this page rebuts.
 # Vietnam's case is "overcharging for a real $25 fee", not "charging for a free service".
 primary_middleman = "iVisa"

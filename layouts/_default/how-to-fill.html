@@ -202,12 +202,25 @@
   {{- with $meta.printout_title_zh }}{{ $printoutTitleZh = . }}{{ end -}}
   {{- with $meta.printout_body_en }}{{ $printoutBodyEn = . }}{{ end -}}
   {{- with $meta.printout_body_zh }}{{ $printoutBodyZh = . }}{{ end -}}
+  {{- /* Step 05 "if verification fails" default is safe for arrival cards —
+         the officer can look you up by passport. For e-visas (Vietnam), the
+         failure point is the airline boarding gate, not the immigration
+         counter — passport lookup doesn't help an unapproved or wrong-port
+         visa. Override via [meta].verification_title_en/zh. */ -}}
+  {{- $verifyTitleEn := "If verification fails" -}}
+  {{- $verifyTitleZh := "万一核验失败" -}}
+  {{- $verifyBodyEn := "Rare. Officer looks you up by passport number — your record is already in the system." -}}
+  {{- $verifyBodyZh := "极少见。警官会用护照号查你——提交那一刻起记录已经进系统了。" -}}
+  {{- with $meta.verification_title_en }}{{ $verifyTitleEn = . }}{{ end -}}
+  {{- with $meta.verification_title_zh }}{{ $verifyTitleZh = . }}{{ end -}}
+  {{- with $meta.verification_body_en }}{{ $verifyBodyEn = . }}{{ end -}}
+  {{- with $meta.verification_body_zh }}{{ $verifyBodyZh = . }}{{ end -}}
   {{- $steps := slice
     (dict "tEn" "Confirmation screen" "tZh" "确认页"           "sEn" "The official site shows a confirmation on screen. Screenshot it — that's your backup." "sZh" "官方站会显示一个确认页。先截图——那是你的备份。")
     (dict "tEn" $emailTitleEn          "tZh" $emailTitleZh      "sEn" $emailBodyEn "sZh" $emailBodyZh)
     (dict "tEn" "At immigration"      "tZh" "过关时"           "sEn" $output "sZh" $output)
     (dict "tEn" $printoutTitleEn       "tZh" $printoutTitleZh   "sEn" $printoutBodyEn "sZh" $printoutBodyZh)
-    (dict "tEn" "If verification fails" "tZh" "万一核验失败"   "sEn" "Rare. Officer looks you up by passport number — your record is already in the system." "sZh" "极少见。警官会用护照号查你——提交那一刻起记录已经进系统了。")
+    (dict "tEn" $verifyTitleEn         "tZh" $verifyTitleZh     "sEn" $verifyBodyEn   "sZh" $verifyBodyZh)
   -}}
   <ol class="list-none p-0 m-0">
     {{- range $i, $s := $steps }}
