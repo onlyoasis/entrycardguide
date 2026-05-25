@@ -16,11 +16,15 @@
   (dict "key" "vietnam"   "en" "Vietnam"            "zh" "越南"     "flag" "🇻🇳" "formKey" "evisa"   "formCode" "E-Visa"  "guideSlug" "evisa"   "fee" "paid" "subEn" "Govt fee, not free"  "subZh" "官方收费，非免费")
 -}}
 
-{{- /* Stats: countries dynamic from roster, scams sum across TOMLs */ -}}
+{{- /* Stats: countries dynamic from roster, scams sum across TOMLs.
+       freeCount counts countries with a free government form so the section
+       headline doesn't lump Vietnam (paid e-visa) in with the free roster. */ -}}
 {{- $countryCount := len $countries -}}
+{{- $freeCount := 0 -}}
 {{- $scamCount := 0 -}}
 {{- $urlCount := 0 -}}
 {{- range $countries -}}
+  {{- if eq .fee "free" -}}{{- $freeCount = add $freeCount 1 -}}{{- end -}}
   {{- $data := index hugo.Data.official_urls .key -}}
   {{- range $k, $v := $data -}}
     {{- if and (reflect.IsMap $v) (isset $v "url") -}}
@@ -31,6 +35,7 @@
     {{- $scamCount = add $scamCount (len .) -}}
   {{- end -}}
 {{- end -}}
+{{- $paidCount := sub $countryCount $freeCount -}}
 
 {{- /* Aggregate the most recent ~5 changelog entries across all countries */ -}}
 {{- $changes := slice -}}
@@ -140,7 +145,19 @@
     <div>
       <div class="text-meta font-mono uppercase text-muted mb-2">{{ if $isZh }}§ 02 · 已覆盖国家{{ else }}§ 02 · Countries covered{{ end }}</div>
       <h2 class="font-serif font-medium m-0" style="font-size: 36px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144;">
-        {{ if $isZh }}{{ $countryCount }} 个国家。{{ $countryCount }} 份免费表单。{{ $countryCount }} 个响亮的官方网址。{{ else }}{{ $countryCount }} countries. {{ $countryCount }} free forms. {{ $countryCount }} loud official URLs.{{ end }}
+        {{- if $isZh -}}
+          {{- if gt $paidCount 0 -}}
+            {{ $countryCount }} 个国家。{{ $freeCount }} 份免费政府表单 + {{ $paidCount }} 份付费政府电子签证。{{ $countryCount }} 个响亮的官方网址。
+          {{- else -}}
+            {{ $countryCount }} 个国家。{{ $countryCount }} 份免费表单。{{ $countryCount }} 个响亮的官方网址。
+          {{- end -}}
+        {{- else -}}
+          {{- if gt $paidCount 0 -}}
+            {{ $countryCount }} countries. {{ $freeCount }} free government forms + {{ $paidCount }} paid government e-visa. {{ $countryCount }} loud official URLs.
+          {{- else -}}
+            {{ $countryCount }} countries. {{ $countryCount }} free forms. {{ $countryCount }} loud official URLs.
+          {{- end -}}
+        {{- end -}}
       </h2>
     </div>
     <a href="{{ $directoryURL }}" class="font-mono text-ink underline underline-offset-4" style="font-size: 13px;">{{ if $isZh }}完整目录 →{{ else }}Full directory →{{ end }}</a>

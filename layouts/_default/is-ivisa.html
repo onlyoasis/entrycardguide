@@ -187,19 +187,34 @@
     </p>
   </div>
 
+  {{- /* The "fee" and "photo upload" tells differ between free-form countries
+         and Vietnam — Vietnam's e-visa has a real $25 government fee AND
+         requires a passport photo + scan upload. The branch keeps Q2 and Q3
+         honest; the other three questions stay generic. */ -}}
+  {{- $isPaid := eq $country "vietnam" -}}
+  {{- $payAnsEn := printf "The %s is free. Any fee means a middleman." $formCode -}}
+  {{- $payAnsZh := printf "%s 是免费的。要收费的就是中介。" $formCode -}}
+  {{- $photoAnsEn := printf "The official %s does not. It accepts typed text only — no upload field exists." $formCode -}}
+  {{- $photoAnsZh := printf "官方 %s 不会要求。只接受手动输入，根本没有上传字段。" $formCode -}}
+  {{- if $isPaid -}}
+    {{- $payAnsEn = printf "The government fee is real: USD $25 single / $50 multi, paid on %s. Anything more is middleman markup." $cleanUrl -}}
+    {{- $payAnsZh = printf "政府费是真的：单次 25 美元 / 多次 50 美元，付给 %s。再多的就是中介加价。" $cleanUrl -}}
+    {{- $photoAnsEn = "Vietnam's e-visa DOES require a passport photo and bio-page scan upload. The tell isn't whether upload exists, it's whether the upload page sits on .gov.vn." -}}
+    {{- $photoAnsZh = "越南电子签证 确实 要求上传护照照片和资料页扫描。判别要点不是有没有上传，而是上传页是不是在 .gov.vn 域名下。" -}}
+  {{- end -}}
   {{- $questions := slice
     (dict "qEn" (printf "Does the domain end in %s?"             $suffix)
           "qZh" (printf "域名以 %s 结尾吗？"                       $suffix)
           "aEn" (printf "If no, it is not the %s government. Period. %s is restricted by registry." $countryName $suffix)
           "aZh" (printf "不是的话就不是 %s 政府的站。没商量。%s 后缀由注册机构保留，私人无法申请。" $countryName $suffix))
-    (dict "qEn" "Does it ask for payment?"
-          "qZh" "要付款吗？"
-          "aEn" (printf "The %s is free. Any fee means a middleman." $formCode)
-          "aZh" (printf "%s 是免费的。要收费的就是中介。" $formCode))
-    (dict "qEn" "Does it ask for a photo of your passport?"
-          "qZh" "要求上传护照照片吗？"
-          "aEn" (printf "The official %s does not. It accepts typed text only — no upload field exists." $formCode)
-          "aZh" (printf "官方 %s 不会要求。只接受手动输入，根本没有上传字段。" $formCode))
+    (dict "qEn" (cond $isPaid "Does it ask for more than the real government fee?" "Does it ask for payment?")
+          "qZh" (cond $isPaid "收费高于真实政府费吗？" "要付款吗？")
+          "aEn" $payAnsEn
+          "aZh" $payAnsZh)
+    (dict "qEn" (cond $isPaid "Is the photo upload page on .gov.vn?" "Does it ask for a photo of your passport?")
+          "qZh" (cond $isPaid "照片上传页在 .gov.vn 域名下吗？" "要求上传护照照片吗？")
+          "aEn" $photoAnsEn
+          "aZh" $photoAnsZh)
     (dict "qEn" (printf "Does the URL contain \"apply\", \"official\", or \"gov\" but not %s?" $suffix)
           "qZh" (printf "URL 含有 \"apply\"、\"official\"、\"gov\" 但没有 %s？" $suffix)
           "aEn" (printf "Those words are bait. The real domain is boring: %s." $cleanUrl)
