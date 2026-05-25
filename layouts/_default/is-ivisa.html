@@ -17,8 +17,11 @@
 {{- $question := cond $isZh $meta.page_question_zh $meta.page_question_en -}}
 {{- $answer := cond $isZh $meta.page_answer_zh $meta.page_answer_en -}}
 {{- $suffix := $meta.suffix -}}
-{{- $cleanUrl := replaceRE "^https?://" "" (replaceRE "/$" "" (index $data $meta.guide_slug).url) -}}
-{{- $agency := (index $data $meta.guide_slug).agency -}}
+{{- /* Data lookup uses form_key, NOT guide_slug. Indonesia's TOML block is
+       [ecd] but the URL slug is e-cd — they can differ. */ -}}
+{{- $form := index $data $meta.form_key -}}
+{{- $cleanUrl := replaceRE "^https?://" "" (replaceRE "/$" "" $form.url) -}}
+{{- $agency := $form.agency -}}
 
 {{- /* Breadcrumb ---------------------------------------------------- */ -}}
 <nav aria-label="Breadcrumb" class="-mx-md px-md py-3 border-b border-rule flex items-baseline justify-between flex-wrap gap-y-2 font-mono text-xs text-muted">
@@ -55,13 +58,24 @@
       </h1>
     </div>
 
-    {{- /* Right: explanation + actual URL */ -}}
+    {{- /* Right: explanation + actual URL. Branch the "free vs paid" copy
+           BEFORE saying anything about price — Vietnam's e-visa is a real
+           paid government program, so calling it "free" then walking it back
+           in a parenthetical contradicts itself. */ -}}
     <div>
       <p class="m-0 mb-4" style="font-size: 19px; line-height: 1.65;">
-        {{- if $isZh -}}
-        {{ $primary }} 是商业签证与旅行文件服务，<strong>不</strong>隶属 {{ $agency }}。{{ $primary }} 替你提交 {{ $formCode }} 收取一笔费用。而 {{ $formCode }} 本身免费{{- if eq $country "vietnam" }}（政府费 USD $25 单次 / $50 多次，{{ $primary }} 在政府费之上加价 2-8 倍）{{- end }}。
+        {{- if eq $country "vietnam" -}}
+          {{- if $isZh -}}
+          {{ $primary }} 是商业签证与旅行文件服务，<strong>不</strong>隶属 {{ $agency }}。越南 {{ $formCode }} 政府费是 USD $25 单次 / $50 多次（真实政府收费）。{{ $primary }} 在这笔政府费之上还加 2–8 倍的服务费，提交的是同一份政府表单。
+          {{- else -}}
+          {{ $primary }} is a commercial visa and travel document service. It is <strong>not</strong> affiliated with the {{ $agency }}. The Vietnam {{ $formCode }} has a real USD $25 single / $50 multi government fee. {{ $primary }} marks that government fee up 2–8× and files the same government form on your behalf.
+          {{- end -}}
         {{- else -}}
-        {{ $primary }} is a commercial visa and travel document service. It is <strong>not</strong> affiliated with the {{ $agency }}. {{ $primary }} charges a fee to file the {{ $formCode }} on your behalf. The {{ $formCode }} itself is free{{- if eq $country "vietnam" }} (the government fee is USD $25 single / $50 multi; {{ $primary }} marks it up 2–8×){{- end }}.
+          {{- if $isZh -}}
+          {{ $primary }} 是商业签证与旅行文件服务，<strong>不</strong>隶属 {{ $agency }}。{{ $primary }} 替你提交 {{ $formCode }} 并收取一笔费用。{{ $formCode }} 本身免费。
+          {{- else -}}
+          {{ $primary }} is a commercial visa and travel document service. It is <strong>not</strong> affiliated with the {{ $agency }}. {{ $primary }} charges a fee to file the {{ $formCode }} on your behalf. The {{ $formCode }} itself is free.
+          {{- end -}}
         {{- end -}}
       </p>
       {{- with $news }}

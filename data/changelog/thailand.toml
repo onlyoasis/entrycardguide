@@ -3,9 +3,11 @@
 [[entries]]
 date = "2026-04-22"
 summary = "Initial TDAC coverage published"
+summary_zh = "泰国 TDAC 指南首版上线"
 detail = "Covers TDAC at tdac.immigration.go.th, field validation rules, and iVisa/non-official site warnings."
 
 [[entries]]
 date = "2026-04-26"
 summary = "Scam-site DNS audit"
+summary_zh = "山寨站点 DNS 审计"
 detail = "Removed stale non-resolving scam domains and kept only live domains with documented evidence."

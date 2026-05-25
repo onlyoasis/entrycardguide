@@ -39,7 +39,11 @@
   {{- $cName := cond $isZh .zh .en -}}
   {{- with index hugo.Data.changelog $cKey -}}
     {{- range .entries -}}
-      {{- $changes = $changes | append (dict "date" .date "summary" .summary "country" $cName "key" $cKey) -}}
+      {{- /* Pick the localized summary; fall back to the English one if a new
+             changelog entry hasn't been translated yet. */ -}}
+      {{- $summary := .summary -}}
+      {{- if and $isZh .summary_zh -}}{{- $summary = .summary_zh -}}{{- end -}}
+      {{- $changes = $changes | append (dict "date" .date "summary" $summary "country" $cName "key" $cKey) -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
@@ -233,10 +237,22 @@
         The directory. One page you can paste into a forum reply, a chat, or a travel-agent email. Every URL has a <code>last_verified</code> date. Every URL ends in the correct government suffix. None of them is iVisa.
         {{- end -}}
       </p>
+      {{- /* Compute the most-recent last_verified across all main-form entries
+             so the freshness signal reflects reality rather than a hard-coded
+             "≤ 7 days" promise. */ -}}
+      {{- $latestVerified := "" -}}
+      {{- range $countries -}}
+        {{- $cData := index hugo.Data.official_urls .key -}}
+        {{- $cMeta := $cData.meta -}}
+        {{- $cForm := index $cData $cMeta.form_key -}}
+        {{- with $cForm.last_verified -}}
+          {{- if gt . $latestVerified -}}{{- $latestVerified = . -}}{{- end -}}
+        {{- end -}}
+      {{- end -}}
       <div class="font-mono text-xs text-muted flex flex-wrap gap-x-3 gap-y-1">
         <span>{{ $urlCount }} {{ if $isZh }}个政府网址{{ else }}government URLs{{ end }}</span>
         <span>·</span>
-        <span>{{ if $isZh }}7 天内复核{{ else }}verified ≤ 7 days{{ end }}</span>
+        <span>{{ if $isZh }}最近核查 {{ $latestVerified }}{{ else }}latest verify {{ $latestVerified }}{{ end }}</span>
         <span>·</span>
         <span>{{ if $isZh }}archive.org 快照{{ else }}archive.org links{{ end }}</span>
       </div>

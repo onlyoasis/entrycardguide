@@ -26,6 +26,9 @@ form_code = "TDAC"
 # URL slug for the main-form page (the file at content/{country}/{guide_slug}.md).
 # Separate from form_code because display codes (E-Ticket, FMM-E) differ from URL slugs.
 guide_slug = "tdac"
+# Top-level TOML key for this country's main form data (e.g. `[tdac]` block above).
+# Can differ from guide_slug — e.g. Indonesia uses `[ecd]` block + `e-cd` URL slug.
+form_key = "tdac"
 form_name_en = "Digital Arrival Card"
 form_name_zh = "数字入境卡"
 since_en = "since May 2024"
