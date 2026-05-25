@@ -41,6 +41,14 @@ time_needed_zh = "约 6 分钟"
 output_en = "Officer stamps the FMM-E PDF and tears off a stub. Keep the stub until you exit Mexico — you surrender it on departure."
 output_zh = "警官在 FMM-E PDF 上盖章并撕下副本。副本要保留到离境时交回——丢了要补办小额费用。"
 
+# Override the generic "No printout needed" step on the how-to-fill page.
+# Mexico's FMM-E flow requires a printed PDF so the officer can stamp it
+# and tear off a physical stub you carry until exit.
+printout_title_en = "Print the PDF for land crossings"
+printout_title_zh = "陆路口岸必须打印 PDF"
+printout_body_en = "Air arrivals at major airports get auto-stamped (no FMM needed). At land borders, INM still requires the printed PDF so they can stamp it and tear off your stub. Keep the stub until exit."
+printout_body_zh = "主要机场空运现在直接盖章（不再用 FMM）。陆路口岸 INM 仍要纸质 PDF——他们要在上面盖章并撕下副本给你，副本保留到离境。"
+
 # Used by the is-ivisa layout. Names the headline middleman this page rebuts.
 primary_middleman = "iVisa"
 page_question_en = "Is iVisa the official FMM-E site?"

@@ -43,6 +43,13 @@ time_needed_zh = "约 15 分钟"
 output_en = "Hand the printed e-visa with your passport. Officer scans, stamps. Print the PDF — some airlines refuse boarding without a paper copy."
 output_zh = "把打印好的电子签证连同护照一起递上。警官扫描、盖章。一定要打印 PDF——部分航司没有纸质件不让登机。"
 
+# Override the generic "No printout needed" step on the how-to-fill page.
+# Vietnam's e-visa is the one form in our roster that REQUIRES a paper copy.
+printout_title_en = "Print the PDF — required"
+printout_title_zh = "必须打印 PDF"
+printout_body_en = "Some airlines (Vietjet, Bamboo) refuse boarding without a paper e-visa. Vietnamese officers also expect printed. A screenshot on your phone is not enough."
+printout_body_zh = "部分航司（Vietjet、Bamboo）没有纸质电子签证不让登机。越南警官也默认要纸质件。手机截图不够。"
+
 # Used by the is-ivisa layout. Names the headline middleman this page rebuts.
 # Vietnam's case is "overcharging for a real $25 fee", not "charging for a free service".
 primary_middleman = "iVisa"
