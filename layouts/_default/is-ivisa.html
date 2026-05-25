@@ -187,10 +187,11 @@
     </p>
   </div>
 
-  {{- /* The "fee" and "photo upload" tells differ between free-form countries
-         and Vietnam — Vietnam's e-visa has a real $25 government fee AND
-         requires a passport photo + scan upload. The branch keeps Q2 and Q3
-         honest; the other three questions stay generic. */ -}}
+  {{- /* The "fee" and "photo upload" tells differ between simple free-form
+         countries and the ones with paid government paths. Vietnam's e-visa
+         has a real $25/$50 government fee AND requires a passport photo +
+         scan upload. Indonesia has TWO official paths: free e-CD plus a paid
+         $35 e-VOA. Both override the generic answers via [meta] fields. */ -}}
   {{- $isPaid := eq $country "vietnam" -}}
   {{- $payAnsEn := printf "The %s is free. Any fee means a middleman." $formCode -}}
   {{- $payAnsZh := printf "%s 是免费的。要收费的就是中介。" $formCode -}}
@@ -202,6 +203,13 @@
     {{- $photoAnsEn = "Vietnam's e-visa DOES require a passport photo and bio-page scan upload. The tell isn't whether upload exists, it's whether the upload page sits on .gov.vn." -}}
     {{- $photoAnsZh = "越南电子签证 确实 要求上传护照照片和资料页扫描。判别要点不是有没有上传，而是上传页是不是在 .gov.vn 域名下。" -}}
   {{- end -}}
+  {{- /* Per-country payment_answer / photo_answer overrides in [meta] win
+         over the generic logic above — this lets Indonesia (free e-CD + paid
+         e-VOA) say the right thing without hardcoding country names. */ -}}
+  {{- with $meta.payment_answer_en }}{{ $payAnsEn = . }}{{ end -}}
+  {{- with $meta.payment_answer_zh }}{{ $payAnsZh = . }}{{ end -}}
+  {{- with $meta.photo_answer_en }}{{ $photoAnsEn = . }}{{ end -}}
+  {{- with $meta.photo_answer_zh }}{{ $photoAnsZh = . }}{{ end -}}
   {{- $questions := slice
     (dict "qEn" (printf "Does the domain end in %s?"             $suffix)
           "qZh" (printf "域名以 %s 结尾吗？"                       $suffix)
@@ -236,6 +244,23 @@
     {{- end }}
   </div>
 </section>
+
+{{- /* Full markdown context — preserves country-specific explanations that
+       don't fit the generic outcome cards or 5-question template. Indonesia
+       in particular has a visa-free vs e-VOA breakdown that lives only in
+       prose. Wrapped in `{{ with .Content }}` so empty pages don't render
+       a blank section. */ -}}
+{{- with .Content }}
+<section class="border-t border-rule pt-xl pb-xl">
+  <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}§ 完整背景{{ else }}§ Full context{{ end }}</div>
+  <h2 class="font-serif font-medium mb-lg" style="font-size: 32px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144; margin-top: 0;">
+    {{ if $isZh }}本国具体情况、答疑、退款指引。{{ else }}Country-specific details, FAQs, and refund steps.{{ end }}
+  </h2>
+  <article class="prose prose-lg max-w-[680px]">
+    {{ . }}
+  </article>
+</section>
+{{- end }}
 
 {{- partial "share-source.html" . -}}
 

@@ -56,6 +56,13 @@ page_question_zh = "iVisa 是官方 e-CD 网站吗？"
 page_answer_en = "No."
 page_answer_zh = "不是。"
 
+# Override the generic free-form "any fee = middleman" answers because
+# Indonesia has TWO official flows: the free e-CD (customs) plus the paid
+# USD $35 e-VOA (visa). Travelers who need a visa shouldn't be steered away
+# from the legitimate $35 government payment.
+payment_answer_en = "The e-CD (customs declaration) is free. The e-VOA (visa on arrival) has a real USD $35 government fee paid to molina.imigrasi.go.id. Any e-CD fee is a middleman; anything above $35 for the e-VOA is markup."
+payment_answer_zh = "e-CD 海关申报是免费的。e-VOA 落地签有真实的 USD $35 政府费，付到 molina.imigrasi.go.id。e-CD 收任何费用就是中介；e-VOA 超过 35 美元的就是加价。"
+
 # Used by the is-ivisa layout. Three cases for "what happened to your money."
 # Indonesia is unusual: the e-CD is free, but iVisa also bundles the paid
 # e-VOA — so cases reflect both surfaces.
