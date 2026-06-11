@@ -1,15 +1,15 @@
 ---
 title: "iVisa 是越南 E-Visa 官网吗？不是：官方 $25 美元费用和加价"
-kicker: "不是。iVisa 是商业中介，对官方 $25 美元政府费用加价数倍。真正的越南 e-visa 在 evisa.xuatnhapcanh.gov.vn。"
-description: "iVisa 不是越南 E-Visa 官方网站。真正官网是 evisa.xuatnhapcanh.gov.vn，单次入境政府费 $25 美元；这里说明中介加价。"
+kicker: "不是。iVisa 是商业中介，对官方 $25 美元政府费用加价数倍。真正的越南 e-visa 在 evisa.gov.vn。"
+description: "iVisa 不是越南 E-Visa 官方网站。真正官网是 evisa.gov.vn，单次入境政府费 $25 美元；这里说明中介加价。"
 date: 2026-04-26
-lastmod: 2026-04-26
+lastmod: 2026-06-11
 country: "vietnam"
 weight: 30
 keywords: ["iVisa 越南", "越南 e-visa 骗局", "越南签证中介", "越南 evisa 假站", "越南签证多少钱"]
 faq:
   - q: "iVisa 是越南 e-visa 官方网站吗？"
-    a: "不是。iVisa 是商业签证中介，与越南移民局没有任何关联。同一份 e-visa 通过官方站 evisa.xuatnhapcanh.gov.vn 直接申请只需 $25 美元，iVisa 通常收 $99-179 美元。"
+    a: "不是。iVisa 是商业签证中介，与越南移民局没有任何关联。同一份 e-visa 通过官方站 evisa.gov.vn 直接申请只需 $25 美元，iVisa 通常收 $99-179 美元。"
   - q: "vietnam-evisa.org 是官方吗？"
     a: "不是。.org 后缀谁都能注册。越南政府只用 .gov.vn。vietnam-evisa.org 是商业中介，对 $25 美元政府费用大幅加价。"
   - q: "evisa-vietnam.com 是官方吗？"
@@ -35,7 +35,7 @@ layout: is-ivisa
 
 iVisa 是合法企业。付钱让 iVisa 帮你提交 e-visa 不违法。但是**很贵**。你付的差价买到的是几分钟的代为打字。
 
-越南这个情况和泰国 / 马来西亚不同，因为底层表单**确实有政府收费**。越南移民局对单次入境 e-visa 收 **$25 美元**，多次入境收 **$50 美元**。这笔钱通过 `evisa.xuatnhapcanh.gov.vn` 直接付给政府。
+越南这个情况和泰国 / 马来西亚不同，因为底层表单**确实有政府收费**。越南移民局对单次入境 e-visa 收 **$25 美元**，多次入境收 **$50 美元**。这笔钱通过 `evisa.gov.vn` 直接付给政府。
 
 iVisa 在政府费用之上加了服务费。他们的总价通常是：
 
@@ -63,17 +63,7 @@ iVisa 在政府费用之上加了服务费。他们的总价通常是：
 
 `.com` 后缀开放。越南政府不为 e-visa 运营 `.com` 域名。
 
-`evisa-vietnam.com` 收约 $129 美元。它的 UI 与官方站 `evisa.xuatnhapcanh.gov.vn` 仿造得足够像，没见过真站的旅客一眼分辨不出。
-
-### vietnam-visa-online.com 是官方吗？
-
-不是。
-
-这一家特别凶 —— 它**同时**推 e-visa 和**落地签（VOA）**服务。VOA 是另一种骗局：
-
-- VOA 需要登机前先有越南公司发的邀请函。一些代办先收 $40-80 美元邀请函费，再加机场盖章费。
-- 对多数旅客，e-visa 比 VOA 更简单也更便宜。
-- `vietnam-visa-online.com` 把两种都卖，模糊界限，两边都加价。
+`evisa-vietnam.com` 收约 $129 美元。它的 UI 与官方站 `evisa.gov.vn` 仿造得足够像，没见过真站的旅客一眼分辨不出。
 
 ## 假站图鉴
 
@@ -81,10 +71,9 @@ iVisa 在政府费用之上加了服务费。他们的总价通常是：
 {{< scam-site country="vietnam" domain="ivisa.com" screenshot="/scams/ivisa-com-vietnam.png" >}}
 {{< scam-site country="vietnam" domain="vietnam-evisa.org" screenshot="/scams/vietnam-evisa-org.png" >}}
 {{< scam-site country="vietnam" domain="evisa-vietnam.com" screenshot="/scams/evisa-vietnam-com.png" >}}
-{{< scam-site country="vietnam" domain="vietnam-visa-online.com" screenshot="/scams/vietnam-visa-online-com.png" >}}
 </div>
 
-四个都有据可查的商业中介。没有一个是越南政府。
+三个都有据可查的商业中介。没有一个是越南政府。
 
 ## 如何分辨任何越南 e-visa 站点是否真站
 
@@ -100,7 +89,7 @@ iVisa 在政府费用之上加了服务费。他们的总价通常是：
 
 ### 如果你的签证有效（最常见）
 
-你付了中介后从 `evisa.xuatnhapcanh.gov.vn` 收到了真 e-visa PDF —— 签证有效，你多付了钱。两条路：
+你付了中介后从 `evisa.gov.vn` 收到了真 e-visa PDF —— 签证有效，你多付了钱。两条路：
 
 1. **就这样吧。** 签证有效，你为不知道官方站交了一笔学费。
 2. **追讨差价。** 联系发卡行，以"误导性商家"提起 chargeback —— 中介没有清楚披露官方费用。附上官方越南站显示 $25 的截图。美卡发卡行（Chase、Amex、Capital One）认这个类别。60 天内最有效。
@@ -113,7 +102,7 @@ iVisa 在政府费用之上加了服务费。他们的总价通常是：
 - 没有签证号的"旅游邀请函"
 - 什么都没给
 
-你会被拒绝登机或拒绝入境。**立刻在 `evisa.xuatnhapcanh.gov.vn` 重新办真 e-visa**。单次入境 3 个工作日，加急 1 天。
+你会被拒绝登机或拒绝入境。**立刻在 `evisa.gov.vn` 重新办真 e-visa**。单次入境 3 个工作日，加急 1 天。
 
 然后联系发卡行以"未提供服务"提起 chargeback，附上：
 

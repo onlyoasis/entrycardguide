@@ -1,15 +1,15 @@
 ---
 title: "Is iVisa the Official Vietnam E-Visa Site? (No, and Here's What's Real)"
-kicker: "No. iVisa is a commercial middleman charging multiple times the official $25 USD government fee. The real Vietnam e-visa is at evisa.xuatnhapcanh.gov.vn."
-description: "Answering the search query 'is ivisa official for Vietnam e-visa' — no. The official Vietnamese government site is evisa.xuatnhapcanh.gov.vn. Real fee: $25."
+kicker: "No. iVisa is a commercial middleman charging multiple times the official $25 USD government fee. The real Vietnam e-visa is at evisa.gov.vn."
+description: "Answering the search query 'is ivisa official for Vietnam e-visa' — no. The official Vietnamese government site is evisa.gov.vn. Real fee: $25."
 date: 2026-04-26
-lastmod: 2026-04-26
+lastmod: 2026-06-11
 country: "vietnam"
 weight: 30
 keywords: ["is ivisa official vietnam", "ivisa vietnam scam", "vietnam e-visa fake sites", "vietnam visa middleman", "evisa-vietnam.com legit", "vietnam-evisa.org safe"]
 faq:
   - q: "Is iVisa the official Vietnam e-visa site?"
-    a: "No. iVisa is a commercial visa middleman, not affiliated with the Vietnamese Immigration Department. iVisa typically charges $99-179 USD for the same e-visa that costs $25 directly through the official site at evisa.xuatnhapcanh.gov.vn."
+    a: "No. iVisa is a commercial visa middleman, not affiliated with the Vietnamese Immigration Department. iVisa typically charges $99-179 USD for the same e-visa that costs $25 directly through the official site at evisa.gov.vn."
   - q: "Is vietnam-evisa.org official?"
     a: "No. The .org suffix is open to anyone. The Vietnamese government uses .gov.vn exclusively. vietnam-evisa.org is a commercial reseller charging significantly more than the $25 USD government fee."
   - q: "Is evisa-vietnam.com official?"
@@ -35,7 +35,7 @@ The official Vietnam e-visa site is:
 
 iVisa is a legal business in the countries where it operates. It is not illegal to pay iVisa for e-visa submission help. It is, however, **expensive**. You pay the markup for what amounts to a few minutes of typing on your behalf.
 
-Vietnam's situation is different from Thailand or Malaysia because the underlying form does have a real government fee. The Vietnamese Immigration Department charges **$25 USD** for a single-entry e-visa or **$50 USD** for multi-entry. That fee is paid directly to the government through the official site at `evisa.xuatnhapcanh.gov.vn`.
+Vietnam's situation is different from Thailand or Malaysia because the underlying form does have a real government fee. The Vietnamese Immigration Department charges **$25 USD** for a single-entry e-visa or **$50 USD** for multi-entry. That fee is paid directly to the government through the official site at `evisa.gov.vn`.
 
 iVisa charges that government fee plus a service markup. The total they bill is typically:
 
@@ -63,17 +63,7 @@ No.
 
 `.com` is open. The Vietnamese government does not operate `.com` domains for the e-visa.
 
-`evisa-vietnam.com` charges approximately $129 USD. It copies the official site's user interface closely enough that travelers who have never seen the real `evisa.xuatnhapcanh.gov.vn` cannot tell at a glance.
-
-### Is `vietnam-visa-online.com` the official site?
-
-No.
-
-This one is particularly aggressive because it advertises **visa on arrival (VOA)** services in addition to e-visas. The VOA scam is a separate issue:
-
-- VOA requires a sponsor letter from a Vietnamese company before flight. Some agencies charge $40-80 for the sponsor letter, then bill the airport stamping fee on top.
-- For most travelers, the e-visa is simpler and cheaper than VOA.
-- `vietnam-visa-online.com` markets both, blurring the line and overcharging on both.
+`evisa-vietnam.com` charges approximately $129 USD. It copies the official site's user interface closely enough that travelers who have never seen the real `evisa.gov.vn` cannot tell at a glance.
 
 ## The scam gallery
 
@@ -81,10 +71,9 @@ This one is particularly aggressive because it advertises **visa on arrival (VOA
 {{< scam-site country="vietnam" domain="ivisa.com" screenshot="/scams/ivisa-com-vietnam.png" >}}
 {{< scam-site country="vietnam" domain="vietnam-evisa.org" screenshot="/scams/vietnam-evisa-org.png" >}}
 {{< scam-site country="vietnam" domain="evisa-vietnam.com" screenshot="/scams/evisa-vietnam-com.png" >}}
-{{< scam-site country="vietnam" domain="vietnam-visa-online.com" screenshot="/scams/vietnam-visa-online-com.png" >}}
 </div>
 
-All four are documented commercial middlemen. None is the Vietnamese government.
+All three are documented commercial middlemen. None is the Vietnamese government.
 
 ## How to tell any Vietnam e-visa site is not the real one
 
@@ -100,7 +89,7 @@ A checklist you can apply to any site that shows up in your search results:
 
 ### If your visa is valid (most common case)
 
-If you received a real e-visa PDF from `evisa.xuatnhapcanh.gov.vn` after paying a middleman, your visa works. You overpaid. Two paths:
+If you received a real e-visa PDF from `evisa.gov.vn` after paying a middleman, your visa works. You overpaid. Two paths:
 
 1. **Travel and forget.** The visa is valid. You paid a tax for not knowing about the official site.
 2. **Dispute the markup.** Contact your credit card issuer. Cite "misleading merchant" — the middleman did not clearly disclose the official fee. Include a screenshot of the official Vietnamese site showing $25. US issuers (Chase, Amex, Capital One) recognize this category. Best within 60 days.
@@ -113,7 +102,7 @@ This is rarer but does happen. If the middleman delivered:
 - A "tourist invitation" with no visa number
 - Nothing at all
 
-You will be denied boarding or denied entry. **Refile the real e-visa at `evisa.xuatnhapcanh.gov.vn`** as soon as you realize. Single-entry processes in 3 working days; express in 1.
+You will be denied boarding or denied entry. **Refile the real e-visa at `evisa.gov.vn`** as soon as you realize. Single-entry processes in 3 working days; express in 1.
 
 Then dispute the original middleman charge as "service not rendered" with your card issuer. Provide:
 

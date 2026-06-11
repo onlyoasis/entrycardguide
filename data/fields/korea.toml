@@ -1,0 +1,76 @@
+# Korea e-Arrival Card — field-by-field display data for the how-to-fill layout.
+
+[[fields]]
+n = "01"
+key = "passport"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "M12345678"
+mistake = "M 12345678"
+mistake_why_en = "space copied from a profile"
+mistake_why_zh = "从资料里复制时带了空格"
+copy_en = "Use the passport number on the photo page. No spaces or dashes."
+copy_zh = "使用护照照片页上的护照号。不要空格或短横。"
+
+[[fields]]
+n = "02"
+key = "full_name"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "KIM MINJUN"
+mistake = "김민준"
+mistake_why_en = "non-Latin name where passport Latin spelling is expected"
+mistake_why_zh = "应填护照 Latin 拼写，却填了韩文"
+copy_en = "Use the Latin name from your passport."
+copy_zh = "填写护照上的 Latin 姓名。"
+
+[[fields]]
+n = "03"
+key = "flight_number"
+section_en = "Section 2 · Trip"
+section_zh = "第 2 段 · 行程"
+example = "KE82"
+mistake = "Korean Air 82"
+mistake_why_en = "airline name instead of carrier code"
+mistake_why_zh = "写了航司名称而不是承运代码"
+copy_en = "Use the operating flight number. Codeshares should match the operating carrier."
+copy_zh = "使用实际承运航班号。代码共享航班按 operating carrier 填。"
+
+[[fields]]
+n = "04"
+key = "arrival_date"
+section_en = "Section 2 · Trip"
+section_zh = "第 2 段 · 行程"
+example = "2026-07-14"
+mistake = "2026-07-13"
+mistake_why_en = "departure date used instead of Korea local arrival date"
+mistake_why_zh = "用了出发日期，而不是韩国当地抵达日期"
+copy_en = "Use the date you enter Korea, in Korea local time."
+copy_zh = "填写按韩国当地时间入境的日期。"
+
+[[fields]]
+n = "05"
+key = "email"
+section_en = "Section 4 · Contact"
+section_zh = "第 4 段 · 联系方式"
+example = "travel@gmail.com"
+mistake = "travel@gmial.com"
+mistake_why_en = "confirmation email typo"
+mistake_why_zh = "确认邮件地址拼错"
+copy_en = "Use a monitored inbox. Save the confirmation page or QR if the portal shows one."
+copy_zh = "使用能查看的邮箱。门户显示确认页或二维码时及时保存。"
+
+[[errors]]
+code = "Passport mismatch"
+why_en = "Name or passport number does not match the passport scan or airline record."
+why_zh = "姓名或护照号与护照/航司记录不一致。"
+
+[[errors]]
+code = "Wrong system"
+why_en = "K-ETA, Q-Code, visa status, and e-Arrival Card are separate systems."
+why_zh = "K-ETA、Q-Code、签证状态和 e-Arrival Card 是不同系统。"
+
+[[errors]]
+code = "Confirmation not found"
+why_en = "Re-open the official .go.kr portal and check with the same passport/email."
+why_zh = "回到官方 .go.kr 门户，用同一护照和邮箱查询。"

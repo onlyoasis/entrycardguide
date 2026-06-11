@@ -1,0 +1,88 @@
+# Philippines eTravel — field-by-field display data for the how-to-fill layout.
+
+[[fields]]
+n = "01"
+key = "passport"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "A12345678"
+mistake = "A 12345678"
+mistake_why_en = "space pasted from a scan or airline profile"
+mistake_why_zh = "从扫描件或航司资料里复制时带了空格"
+copy_en = "Use the passport number on the photo page. Do not paste the MRZ line. No spaces, no dashes."
+copy_zh = "填写护照照片页上的护照号。不要复制 MRZ 行。无空格、无短横。"
+
+[[fields]]
+n = "02"
+key = "full_name"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "MARIA SANTOS"
+mistake = "María Santos"
+mistake_why_en = "accented characters can break matching with passport data"
+mistake_why_zh = "重音字符可能导致和护照资料匹配失败"
+copy_en = "Use the Latin spelling from your passport. If the printed name has accents, use the MRZ spelling."
+copy_zh = "用护照上的 Latin 拼写。印刷名字带重音符时，以 MRZ 拼写为准。"
+
+[[fields]]
+n = "03"
+key = "date_of_birth"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "1991-08-22"
+mistake = "08/22/1991"
+mistake_why_en = "US format — use the date picker on the official site"
+mistake_why_zh = "美式日期格式——在官方站用日期选择器"
+copy_en = "Use the official date picker when available. This local checker uses ISO YYYY-MM-DD so mistakes are easy to see."
+copy_zh = "官方站有日期选择器就用选择器。本地校验器用 ISO YYYY-MM-DD，方便提前发现错误。"
+
+[[fields]]
+n = "04"
+key = "flight_number"
+section_en = "Section 2 · Trip"
+section_zh = "第 2 段 · 行程"
+example = "PR103"
+mistake = "PAL 103"
+mistake_why_en = "airline name instead of the IATA carrier code"
+mistake_why_zh = "写了航司名，而不是 IATA 航司代码"
+copy_en = "Use the operating carrier code plus flight number. For cruise travel, use the vessel details the eTravel flow asks for."
+copy_zh = "用实际承运航司代码 + 航班号。邮轮旅客按 eTravel 流程要求填船舶信息。"
+
+[[fields]]
+n = "05"
+key = "arrival_date"
+section_en = "Section 2 · Trip"
+section_zh = "第 2 段 · 行程"
+example = "2026-07-14"
+mistake = "2026-07-13"
+mistake_why_en = "used departure date instead of Philippine local arrival date"
+mistake_why_zh = "用了出发日期，而不是菲律宾当地抵达日期"
+copy_en = "Use the date you land in the Philippines, in local time. Red-eye flights often arrive the next day."
+copy_zh = "填写按菲律宾当地时间落地的日期。红眼航班常常是次日抵达。"
+
+[[fields]]
+n = "06"
+key = "email"
+section_en = "Section 4 · Contact"
+section_zh = "第 4 段 · 联系方式"
+example = "travel@gmail.com"
+mistake = "travel@gmial.com"
+mistake_why_en = "domain typo — the QR email never arrives"
+mistake_why_zh = "邮箱域名拼错——二维码邮件不会送达"
+copy_en = "Use an inbox you can open at check-in and arrival. Screenshot the QR after submission."
+copy_zh = "用值机和入境时都能打开的邮箱。提交后立刻截二维码。"
+
+[[errors]]
+code = "Invalid passport number"
+why_en = "Space, dash, or copied MRZ text."
+why_zh = "包含空格、短横，或复制了 MRZ 文本。"
+
+[[errors]]
+code = "Invalid date"
+why_en = "Typed a date instead of using the picker, or used departure date."
+why_zh = "手输日期格式不对，或用了出发日期。"
+
+[[errors]]
+code = "Email not received"
+why_en = "Check spam first. If still missing, refile on etravel.gov.ph and save the QR screenshot."
+why_zh = "先查垃圾箱。仍没有就到 etravel.gov.ph 重新提交，并保存二维码截图。"

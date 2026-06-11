@@ -1,12 +1,12 @@
 # Thailand — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-04-22
+# Last verified: 2026-06-11
 
 [tdac]
 url = "https://tdac.immigration.go.th"
 name = "Thailand Digital Arrival Card"
 agency = "Royal Thai Immigration Bureau"
-last_verified = "2026-04-22"
+last_verified = "2026-06-11"
 archive_url = "https://web.archive.org/web/2026/https://tdac.immigration.go.th"
 notes = "Reserved under .go.th — only Thai government entities can register this domain suffix."
 
@@ -14,7 +14,7 @@ notes = "Reserved under .go.th — only Thai government entities can register th
 url = "https://www.immigration.go.th"
 name = "Thai Immigration Bureau (home)"
 agency = "Royal Thai Immigration Bureau"
-last_verified = "2026-04-22"
+last_verified = "2026-06-11"
 
 # Country-page metadata (consumed by country-form layout).
 # Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
@@ -31,8 +31,8 @@ guide_slug = "tdac"
 form_key = "tdac"
 form_name_en = "Digital Arrival Card"
 form_name_zh = "数字入境卡"
-since_en = "since May 2024"
-since_zh = "2024 年 5 月起"
+since_en = "since May 2025"
+since_zh = "2025 年 5 月起"
 fee_en = "Free"
 fee_zh = "免费"
 suffix = ".go.th"
@@ -100,11 +100,6 @@ body_zh = "有报道但罕见。警官会让你在到达大厅的自助机现填
 #   1. Resolve via DNS (we audit this with `dig`)
 #   2. Have documented evidence we have personally observed
 #   3. Reference public news / government warnings where available
-[[scam_sites]]
-domain = "thailand-tdac.com"
-first_observed = "2025-11-01"
-evidence = "Live commercial reseller; charges fees for the free TDAC. DNS active 2026-04-26."
-
 [[scam_sites]]
 domain = "ivisa.com"
 path = "/thailand"

@@ -1,25 +1,25 @@
 ---
-title: "iVisa 是印尼海关或落地签官网吗？不是：e-CD 免费、e-VOA 官方费用"
-kicker: "不是。iVisa 是商业中介。印尼 e-CD 海关申报在 ecd.beacukai.go.id 免费；官方落地签 e-VOA 在 molina.imigrasi.go.id，政府费 $35 美元。"
+title: "iVisa 是印尼 All Indonesia 或落地签官网吗？不是：e-CD 免费、e-VOA 官方费用"
+kicker: "不是。iVisa 是商业中介。印尼 All Indonesia / e-CD 入境申报在 allindonesia.imigrasi.go.id 免费；官方落地签 e-VOA 在 evisa.imigrasi.go.id，政府费 $35 美元。"
 description: "iVisa 不是印尼海关或落地签官网。e-CD 官方免费，e-VOA 有政府费用；这里说明两个官方站和 iVisa 加价。"
 date: 2026-04-26
-lastmod: 2026-04-26
+lastmod: 2026-06-11
 country: "indonesia"
 weight: 30
 keywords: ["iVisa 印尼", "巴厘岛海关骗局", "印尼 e-CD 中介", "印尼落地签", "印尼签证官方"]
 faq:
   - q: "iVisa 是印尼海关 / 落地签官方网站吗？"
-    a: "不是。iVisa 是商业中介。印尼有两个独立的官方站：ecd.beacukai.go.id 用于免费的 e-CD 海关申报，molina.imigrasi.go.id 用于 $35 美元的 e-VOA 签证。iVisa 哪个都不是，且对两者都加价。"
+    a: "不是。iVisa 是商业中介。印尼用 allindonesia.imigrasi.go.id 处理免费的 All Indonesia / e-CD 申报，用 evisa.imigrasi.go.id 处理 $35 美元的 e-VOA 签证。iVisa 哪个都不是，且对两者都加价。"
   - q: "印尼 e-CD 的官方网站是什么？"
-    a: "ecd.beacukai.go.id，由印尼海关总署运营。.go.id 后缀只对印尼政府机构开放。e-CD 免费，所有入境者必填，包括印尼公民。"
+    a: "allindonesia.imigrasi.go.id 是当前统一旅客入口。旧的 ecd.beacukai.go.id 海关门户仍可解析，但 All Indonesia 是当前应从哪里开始的 URL。"
   - q: "印尼 e-VOA 的官方网站是什么？"
-    a: "molina.imigrasi.go.id，由印尼移民局运营。政府费用：印尼盾 500,000（约 $35 美元）。针对不享受免签的国家公民。"
+    a: "evisa.imigrasi.go.id，由印尼移民局运营。政府费用：印尼盾 500,000（约 $35 美元）。针对不享受免签的国家公民。"
   - q: "我在 Google 看到 indonesia-evoa.com，是官方吗？"
     a: "不是。.com 后缀开放。印尼政府只用 .go.id。indonesia-evoa.com 是商业中介，对 $35 美元政府 e-VOA 加价。"
   - q: "我去巴厘岛要 e-CD 和 e-VOA 都办吗？"
     a: "看你的国籍。e-CD 所有人都要（免费）。e-VOA 只在你不享受免签时才需要。许多西方游客（美、欧、英、加、澳、日、韩）2024 年起 30 天免签，只需要 e-CD。其他可能两者都要。"
   - q: "我已经付了 iVisa 一笔印尼相关的钱，到底买到了什么？"
-    a: "查邮箱里两类可能的文件：(1) 来自 beacukai.go.id 的 e-CD 二维码 —— 免费的海关申报，你多付了。(2) 来自 imigrasi.go.id 的 e-VOA PDF —— $35 政府签证，你在政府费上付了 iVisa 加价。有时两者捆绑，你两边都多付。"
+    a: "查邮箱里两类可能的文件：(1) All Indonesia / e-CD 二维码 —— 免费申报，你多付了。(2) 来自 imigrasi.go.id 的 e-VOA PDF —— $35 政府签证，你在政府费上付了 iVisa 加价。有时两者捆绑，你两边都多付。"
 layout: is-ivisa
 ---
 
@@ -27,11 +27,11 @@ layout: is-ivisa
 
 **不是。** iVisa 是商业签证中介，与印尼任何政府机构都没有关联。
 
-印尼的情况比较特殊，因为有**两个独立的官方站**针对两个不同的表单 —— 旅客通常付完钱才发现：
+印尼的情况比较特殊，因为有**两个政府入口**分别处理两类需求 —— 旅客通常付完钱才发现：
 
-1. **`ecd.beacukai.go.id`** —— 电子海关申报（e-CD）。**免费。** 所有入境者必填，包括印尼公民。由印尼海关总署运营。
+1. **`allindonesia.imigrasi.go.id`** —— All Indonesia 入境申报，包含 e-CD 海关记录。**免费。** 入境者需要提交，供移民和海关使用。
 
-2. **`molina.imigrasi.go.id`** —— 电子落地签（e-VOA）。**政府费 $35 美元。** 只对不享受免签的国家公民必填。由印尼移民局运营。
+2. **`evisa.imigrasi.go.id`** —— 电子落地签（e-VOA）。**政府费 $35 美元。** 只对不享受免签的国家公民必填。由印尼移民局运营。
 
 iVisa 不是上面任何一个。iVisa 在两者之上都加价收费，有时还以混淆的方式打包。
 
@@ -43,9 +43,9 @@ iVisa 通常对 e-CD 收约 **$30 美元**（官方免费）、对 e-VOA 收约 
 
 iVisa 实际给了什么，看你买的是什么：
 
-- **iVisa "e-CD 服务"**：通常用你的数据提交真免费 e-CD。你拿到有效二维码。多付了 $30。
+- **iVisa "e-CD 服务"**：通常用你的数据提交真免费申报。你拿到有效二维码。多付了 $30。
 - **iVisa "e-VOA 服务"**：通常用你的数据提交真 e-VOA。你拿到有效签证。多付了约 $45。
-- **iVisa "印尼一站式套餐"**：有时两者都提交，有时只提交一个，另一个收的是"服务费"什么也没办。**这是最该警惕的情况** —— 如果你买了套餐，**邮箱要同时收到** `beacukai.go.id` **和** `imigrasi.go.id` 两边的确认邮件。
+- **iVisa "印尼一站式套餐"**：有时两者都提交，有时只提交一个，另一个收的是"服务费"什么也没办。**这是最该警惕的情况** —— 如果你买了套餐，邮箱要同时收到 All Indonesia 和 `imigrasi.go.id` 两边的确认。
 
 ## 免签 vs e-VOA：你到底需要签证吗？
 
@@ -96,7 +96,7 @@ iVisa 实际给了什么，看你买的是什么：
 
 ## 如果你已经付了
 
-### 如果你的 e-CD 二维码来自 beacukai.go.id
+### 如果你的申报二维码来自 All Indonesia
 海关申报有效，你多付了。联系发卡行以"误导性商家"提起 chargeback。60 天内最有效。
 
 ### 如果你的 e-VOA 来自 imigrasi.go.id
@@ -105,8 +105,8 @@ iVisa 实际给了什么，看你买的是什么：
 ### 如果两边的确认都找不到
 **这是该担心的情况。** 中介可能什么都没办。自己去官方站重办：
 
-- e-CD：`ecd.beacukai.go.id`，抵达前 3 天内填，免费。
-- e-VOA：`molina.imigrasi.go.id`，重新办，直接付 $35 政府费。
+- All Indonesia / e-CD：`allindonesia.imigrasi.go.id`，抵达前 3 天内填，免费。
+- e-VOA：`evisa.imigrasi.go.id`，重新办，直接付 $35 政府费。
 
 然后联系发卡行以"未提供服务"提起 chargeback，把两份新办的作为证据。
 

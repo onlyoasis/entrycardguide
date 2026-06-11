@@ -1,27 +1,34 @@
 # Indonesia — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-04-26
+# Last verified: 2026-06-11
 
 [ecd]
-url = "https://ecd.beacukai.go.id"
-name = "Indonesia Electronic Customs Declaration (e-CD)"
-agency = "Direktorat Jenderal Bea dan Cukai (Indonesian Directorate General of Customs and Excise)"
-last_verified = "2026-04-26"
-archive_url = "https://web.archive.org/web/2026/https://ecd.beacukai.go.id"
-notes = "Reserved under .go.id — only Indonesian government entities can register this domain suffix. Required for all arriving travelers (including Indonesian citizens) since 2022. Free."
+url = "https://allindonesia.imigrasi.go.id"
+name = "All Indonesia arrival declaration (includes e-CD customs declaration)"
+agency = "Direktorat Jenderal Imigrasi / Direktorat Jenderal Bea dan Cukai"
+last_verified = "2026-06-11"
+archive_url = "https://web.archive.org/web/2026/https://allindonesia.imigrasi.go.id"
+notes = "Reserved under .go.id. Current unified arrival portal for the Indonesia arrival declaration, including the e-CD customs declaration. Free."
 
 [evoa]
-url = "https://molina.imigrasi.go.id"
+url = "https://evisa.imigrasi.go.id"
 name = "Indonesia Electronic Visa on Arrival (e-VOA)"
 agency = "Direktorat Jenderal Imigrasi (Indonesian Directorate General of Immigration)"
-last_verified = "2026-04-26"
+last_verified = "2026-06-11"
 notes = "For nationalities not covered by visa-free entry. Government fee: IDR 500,000 (~USD $35). Different from the e-CD which is free. Both may be required."
 
 [immigration_home]
 url = "https://www.imigrasi.go.id"
 name = "Indonesia Immigration (home)"
 agency = "Direktorat Jenderal Imigrasi"
-last_verified = "2026-04-26"
+last_verified = "2026-06-11"
+
+[customs_legacy]
+url = "https://ecd.beacukai.go.id"
+name = "Indonesia e-CD legacy customs portal"
+agency = "Direktorat Jenderal Bea dan Cukai"
+last_verified = "2026-06-11"
+notes = "Legacy standalone e-CD portal still resolves. The current traveler-facing entry point is All Indonesia."
 
 # Country-page metadata (consumed by country-form layout).
 # Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
@@ -33,10 +40,10 @@ name_zh = "印度尼西亚"
 form_code = "e-CD"
 guide_slug = "e-cd"
 form_key = "ecd"
-form_name_en = "Electronic Customs Declaration"
-form_name_zh = "电子海关申报"
-since_en = "since 2022"
-since_zh = "2022 年起"
+form_name_en = "All Indonesia arrival declaration"
+form_name_zh = "All Indonesia 入境申报"
+since_en = "current unified portal"
+since_zh = "当前统一入口"
 fee_en = "Free"
 fee_zh = "免费"
 suffix = ".go.id"
@@ -46,8 +53,8 @@ field_count = 12
 sections = 4
 time_needed_en = "~5 minutes"
 time_needed_zh = "约 5 分钟"
-output_en = "Scan the QR at the customs gate, walk through the green lane. Answered \"yes\" to anything? You'll be routed to the red-lane secondary check."
-output_zh = "在海关闸口扫二维码，走绿色通道。海关问题答了 \"yes\" 就走红色通道做二次核查。"
+output_en = "Show the All Indonesia confirmation or QR when asked. Customs still uses the declaration record; answered \"yes\" to anything and you'll be routed to secondary inspection."
+output_zh = "被要求时出示 All Indonesia 确认页或二维码。海关仍使用其中的申报记录；海关问题答了 \"yes\" 就会进入二线检查。"
 
 # Used by the is-ivisa layout. Names the headline middleman this page rebuts.
 primary_middleman = "iVisa"
@@ -60,8 +67,8 @@ page_answer_zh = "不是。"
 # Indonesia has TWO official flows: the free e-CD (customs) plus the paid
 # USD $35 e-VOA (visa). Travelers who need a visa shouldn't be steered away
 # from the legitimate $35 government payment.
-payment_answer_en = "The e-CD (customs declaration) is free. The e-VOA (visa on arrival) has a real USD $35 government fee paid to molina.imigrasi.go.id. Any e-CD fee is a middleman; anything above $35 for the e-VOA is markup."
-payment_answer_zh = "e-CD 海关申报是免费的。e-VOA 落地签有真实的 USD $35 政府费，付到 molina.imigrasi.go.id。e-CD 收任何费用就是中介；e-VOA 超过 35 美元的就是加价。"
+payment_answer_en = "The All Indonesia / e-CD arrival declaration is free. The e-VOA has a real USD $35 government fee paid to evisa.imigrasi.go.id. Any declaration fee is a middleman; anything above $35 for the e-VOA is markup."
+payment_answer_zh = "All Indonesia / e-CD 入境申报是免费的。e-VOA 有真实的 USD $35 政府费，付到 evisa.imigrasi.go.id。入境申报收任何费用就是中介；e-VOA 超过 35 美元的就是加价。"
 
 # Used by the is-ivisa layout. Three cases for "what happened to your money."
 # Indonesia is unusual: the e-CD is free, but iVisa also bundles the paid
@@ -81,8 +88,8 @@ tag_en = "Watch for"
 tag_zh = "需留意"
 headline_en = "iVisa bundled e-VOA and charged a markup on top."
 headline_zh = "iVisa 把 e-VOA 一起捆绑，又在政府费上加价。"
-body_en = "The USD 35 e-VOA government fee is real, but iVisa adds USD 30–60 service fees. If you need an e-VOA, file directly at molina.imigrasi.go.id."
-body_zh = "35 美元的 e-VOA 政府费是真的，但 iVisa 还加 30–60 美元服务费。需要 e-VOA 直接到 molina.imigrasi.go.id 提交。"
+body_en = "The USD 35 e-VOA government fee is real, but iVisa adds USD 30–60 service fees. If you need an e-VOA, file directly at evisa.imigrasi.go.id."
+body_zh = "35 美元的 e-VOA 政府费是真的，但 iVisa 还加 30–60 美元服务费。需要 e-VOA 直接到 evisa.imigrasi.go.id 提交。"
 
 [[outcomes]]
 case = "Case 3"

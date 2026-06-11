@@ -1,0 +1,69 @@
+# Cambodia — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-06-11
+
+[earrival]
+url = "https://arrival.gov.kh"
+name = "Cambodia e-Arrival"
+agency = "Cambodia General Department of Immigration"
+last_verified = "2026-06-11"
+archive_url = "https://web.archive.org/web/2026/https://arrival.gov.kh"
+notes = "Reserved under .gov.kh. The e-Arrival system combines arrival card, customs declaration, and health declaration flows. The arrival declaration itself is free; visa fees are separate when a visa is needed."
+
+[meta]
+flag = "🇰🇭"
+name_en = "Cambodia"
+name_zh = "柬埔寨"
+form_code = "e-Arrival"
+guide_slug = "e-arrival"
+form_key = "earrival"
+form_name_en = "e-Arrival Card"
+form_name_zh = "电子入境卡"
+since_en = "current system"
+since_zh = "当前系统"
+fee_en = "Free arrival declaration"
+fee_zh = "入境申报免费"
+suffix = ".gov.kh"
+
+field_count = 14
+sections = 4
+time_needed_en = "~7 minutes"
+time_needed_zh = "约 7 分钟"
+output_en = "Show the e-Arrival QR code with your passport. If you applied for a visa in the same flow, keep that approval separate."
+output_zh = "把 e-Arrival 二维码和护照一起出示。如果你在同一流程里申请了签证，签证批准件要单独保存。"
+
+payment_answer_en = "The e-Arrival declaration is free. Cambodia visa fees are separate and real when you need a visa. A fee just to file the arrival declaration is middleman markup."
+payment_answer_zh = "e-Arrival 入境申报免费。需要签证时，柬埔寨签证费是另一回事，也是真实政府费用。单纯代填入境申报收费就是中介加价。"
+
+primary_middleman = "iVisa"
+page_question_en = "Is iVisa the official Cambodia e-Arrival site?"
+page_question_zh = "iVisa 是柬埔寨 e-Arrival 官方网站吗？"
+page_answer_en = "No."
+page_answer_zh = "不是。"
+
+[[outcomes]]
+case = "Case 1"
+tag_en = "Most common"
+tag_zh = "最常见"
+headline_en = "A middleman filed the real arrival declaration and charged you."
+headline_zh = "中介替你提交了真实入境申报，并收了服务费。"
+body_en = "Your QR can still be valid. You paid for a free declaration. Dispute the service markup."
+body_zh = "你的二维码仍可能有效。你只是为免费申报付了钱。可申诉服务加价。"
+
+[[outcomes]]
+case = "Case 2"
+tag_en = "Watch for"
+tag_zh = "需留意"
+headline_en = "You paid for a visa bundle and still need the e-Arrival QR."
+headline_zh = "你买了签证套餐，但仍需要 e-Arrival 二维码。"
+body_en = "Cambodia visa and e-Arrival records are related but not identical. Check that you have the arrival QR before flying."
+body_zh = "柬埔寨签证和 e-Arrival 记录相关，但不是同一件事。出发前确认你有入境二维码。"
+
+[[outcomes]]
+case = "Case 3"
+tag_en = "Rare"
+tag_zh = "罕见"
+headline_en = "Nothing was filed."
+headline_zh = "中介什么也没提交。"
+body_en = "File directly at arrival.gov.kh. Use the official .gov.kh domain and keep the confirmation."
+body_zh = "直接到 arrival.gov.kh 提交。确认域名是 .gov.kh，并保存确认页。"

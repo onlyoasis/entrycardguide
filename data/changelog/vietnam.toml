@@ -1,6 +1,12 @@
 # Vietnam changelog. Append to this file when immigration policy changes.
 
 [[entries]]
+date = "2026-06-11"
+summary = "Updated Vietnam e-visa official URL"
+summary_zh = "更新越南电子签证官方入口"
+detail = "The legacy evisa.xuatnhapcanh.gov.vn portal states that applications moved to evisa.gov.vn and thithucdientu.gov.vn on 2024-11-11. The guide now uses evisa.gov.vn as the primary URL and removes one DNS-dead middleman domain."
+
+[[entries]]
 date = "2026-04-26"
 summary = "Initial Vietnam e-visa coverage published"
 summary_zh = "越南电子签证指南首版上线"

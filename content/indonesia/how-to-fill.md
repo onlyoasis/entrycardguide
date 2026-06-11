@@ -1,18 +1,18 @@
 ---
-title: "How to Fill Indonesia's e-CD: Field-by-Field Guide (2026)"
-kicker: "Field-by-field walkthrough of the official Indonesia e-CD with common errors and what they mean. About 7 minutes total."
-description: "Step-by-step 2026 guide to every field on Indonesia's official electronic Customs Declaration at ecd.beacukai.go.id. Free, no fees, Bali / Jakarta / all ports."
+title: "How to Fill Indonesia's All Indonesia / e-CD: Field-by-Field Guide (2026)"
+kicker: "Field-by-field walkthrough of Indonesia's official All Indonesia / e-CD declaration with common errors and what they mean. About 7 minutes total."
+description: "Step-by-step 2026 guide to every field on Indonesia's official All Indonesia arrival declaration at allindonesia.imigrasi.go.id. Free, no fees, Bali / Jakarta / all ports."
 date: 2026-04-26
-lastmod: 2026-04-26
+lastmod: 2026-06-11
 country: "indonesia"
 weight: 20
-keywords: ["indonesia e-cd how to fill", "bali customs form fields", "indonesia customs declaration help", "ecd.beacukai.go.id fields"]
+keywords: ["indonesia e-cd how to fill", "all indonesia fields", "bali customs form fields", "indonesia customs declaration help", "allindonesia.imigrasi.go.id fields"]
 layout: how-to-fill
 ---
 
 {{< official-link site="indonesia.ecd" >}}
 
-This guide walks through every field the official e-CD form asks, in the order the form presents them. Pre-check your entries below before you paste them into the official site.
+This guide walks through every field the All Indonesia / e-CD declaration asks, in the order the form presents them. Pre-check your entries below before you paste them into the official site.
 
 The form is in Indonesian and English on the same page (toggle in the upper right). The English version uses the same field order.
 
@@ -124,11 +124,11 @@ This is yellow-fever screening. If yes, you may be asked to show a yellow-fever 
 ## What happens after you submit
 
 1. The site shows a confirmation page with a QR code. **Screenshot it.**
-2. An email arrives from `no-reply@beacukai.go.id` with the same QR attached as a PDF.
+2. A confirmation email arrives with the same QR attached or linked. Sender names can change; trust the QR shown on the official site first.
 3. At immigration in Indonesia:
    - Most travelers go through a fast green-lane: scan QR at the customs gate, walk through.
    - If you answered "yes" to any customs question, the QR routes you to the red lane for the secondary check.
-4. The QR is single-use. If you re-enter Indonesia later, file a new e-CD for that trip.
+4. The QR is single-use. If you re-enter Indonesia later, file a new declaration for that trip.
 
 ## Common errors and what they mean
 

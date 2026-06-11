@@ -1,0 +1,7 @@
+# South Korea changelog. Append to this file when e-Arrival Card policy changes.
+
+[[entries]]
+date = "2026-06-11"
+summary = "Initial Korea e-Arrival Card coverage published"
+summary_zh = "韩国 e-Arrival Card 指南首版上线"
+detail = "Covers the official e-arrivalcard.go.kr portal and separates it from K-ETA, visa, and Q-Code workflows."

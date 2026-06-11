@@ -1,0 +1,76 @@
+# Japan Visit Japan Web — field-by-field display data for the how-to-fill layout.
+
+[[fields]]
+n = "01"
+key = "passport"
+section_en = "Section 1 · Traveler"
+section_zh = "第 1 段 · 旅客"
+example = "A12345678"
+mistake = "A12345678<"
+mistake_why_en = "MRZ filler character copied from the passport scan"
+mistake_why_zh = "从 MRZ 扫描里复制了填充符"
+copy_en = "Use the passport number only. Do not include MRZ filler characters."
+copy_zh = "只填护照号。不要带 MRZ 填充符。"
+
+[[fields]]
+n = "02"
+key = "full_name"
+section_en = "Section 1 · Traveler"
+section_zh = "第 1 段 · 旅客"
+example = "TARO YAMADA"
+mistake = "山田太郎"
+mistake_why_en = "passport matching uses Latin passport data"
+mistake_why_zh = "护照匹配用 Latin 护照资料"
+copy_en = "Use the Latin passport name. Japanese characters belong in address/contact fields only when the form asks."
+copy_zh = "使用护照上的 Latin 姓名。只有地址/联系方式字段明确要求时才使用日文字符。"
+
+[[fields]]
+n = "03"
+key = "flight_number"
+section_en = "Section 2 · Trip"
+section_zh = "第 2 段 · 行程"
+example = "JL5"
+mistake = "Japan Airlines 5"
+mistake_why_en = "airline name instead of flight code"
+mistake_why_zh = "写了航司名称而不是航班代码"
+copy_en = "Use the operating flight code. For codeshare tickets, use the operating carrier."
+copy_zh = "使用实际承运航班代码。代码共享航班用 operating carrier。"
+
+[[fields]]
+n = "04"
+key = "arrival_date"
+section_en = "Section 2 · Trip"
+section_zh = "第 2 段 · 行程"
+example = "2026-07-14"
+mistake = "2026-07-13"
+mistake_why_en = "departure date used on a red-eye itinerary"
+mistake_why_zh = "红眼航班误用了出发日期"
+copy_en = "Use the date you land in Japan, in Japan local time."
+copy_zh = "填写按日本当地时间落地的日期。"
+
+[[fields]]
+n = "05"
+key = "email"
+section_en = "Section 4 · Account"
+section_zh = "第 4 段 · 账号"
+example = "travel@gmail.com"
+mistake = "travel@gmial.com"
+mistake_why_en = "account email typo"
+mistake_why_zh = "账号邮箱拼错"
+copy_en = "Use the email you can access for Visit Japan Web login and confirmation."
+copy_zh = "使用你能登录 Visit Japan Web 并接收确认的邮箱。"
+
+[[errors]]
+code = "Cannot log in"
+why_en = "Wrong account email or password. Use the official Digital Agency page, not a copied login page."
+why_zh = "账号邮箱或密码错误。使用日本数字厅官方页面，不要用复制登录页。"
+
+[[errors]]
+code = "QR not available"
+why_en = "A missing section is usually incomplete traveler, trip, immigration, or customs data."
+why_zh = "通常是旅客、行程、入境或海关资料有一段没填完。"
+
+[[errors]]
+code = "Paper form requested"
+why_en = "Airport fallback. Fill the paper form; it does not mean Visit Japan Web was fake."
+why_zh = "机场兜底流程。填纸质表即可，并不说明 Visit Japan Web 是假的。"

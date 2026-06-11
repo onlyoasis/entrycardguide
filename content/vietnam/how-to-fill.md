@@ -1,12 +1,12 @@
 ---
 title: "How to Fill the Vietnam E-Visa: Field-by-Field Guide (2026)"
 kicker: "Field-by-field walkthrough of the official Vietnam E-Visa form with common errors and what they actually mean. About 12 minutes total."
-description: "Step-by-step 2026 guide to every field on Vietnam's official E-Visa at evisa.xuatnhapcanh.gov.vn. Free, independent, no middleman markup."
+description: "Step-by-step 2026 guide to every field on Vietnam's official E-Visa at evisa.gov.vn. Free, independent, no middleman markup."
 date: 2026-04-26
-lastmod: 2026-04-26
+lastmod: 2026-06-11
 country: "vietnam"
 weight: 20
-keywords: ["vietnam e-visa how to fill", "vietnam evisa fields", "vietnam visa application help", "evisa.xuatnhapcanh.gov.vn fields", "vietnam e-visa photo upload"]
+keywords: ["vietnam e-visa how to fill", "vietnam evisa fields", "vietnam visa application help", "evisa.gov.vn fields", "vietnam e-visa photo upload"]
 layout: how-to-fill
 ---
 
@@ -25,7 +25,7 @@ This is the one place an arrival document genuinely **does** ask for an upload. 
 - **Passport-style portrait photo** — JPG or PNG, white background, head and shoulders, no glasses, no filter. The site enforces a 4×6 ratio. Max 2 MB.
 - **Passport photo-page scan** — JPG or PNG of the bio page. The text must be readable. Max 2 MB.
 
-The upload happens **only at `evisa.xuatnhapcanh.gov.vn`** and **only via HTTPS**. If a site asks for these files but the URL is not `.gov.vn`, you are not on the official site.
+The upload happens **only at `evisa.gov.vn`** and **only via HTTPS**. If a site asks for these files but the URL is not `.gov.vn`, you are not on the official site.
 
 ## Section 2: Personal information
 

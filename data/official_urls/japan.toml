@@ -1,0 +1,72 @@
+# Japan — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-06-11
+
+[vjw]
+url = "https://services.digital.go.jp/en/visit-japan-web/"
+name = "Visit Japan Web"
+agency = "Digital Agency of Japan"
+last_verified = "2026-06-11"
+archive_url = "https://web.archive.org/web/2026/https://services.digital.go.jp/en/visit-japan-web/"
+notes = "Reserved under .go.jp. Visit Japan Web is the official service information page for Japan arrival, customs, and tax-free QR workflows. The service is free."
+
+[isa_home]
+url = "https://www.moj.go.jp/isa/index.html"
+name = "Immigration Services Agency of Japan"
+agency = "Immigration Services Agency of Japan"
+last_verified = "2026-06-11"
+
+[meta]
+flag = "🇯🇵"
+name_en = "Japan"
+name_zh = "日本"
+form_code = "Visit Japan Web"
+guide_slug = "visit-japan-web"
+form_key = "vjw"
+form_name_en = "Visit Japan Web"
+form_name_zh = "Visit Japan Web"
+since_en = "current system"
+since_zh = "当前系统"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".go.jp"
+
+field_count = 15
+sections = 4
+time_needed_en = "~10 minutes"
+time_needed_zh = "约 10 分钟"
+output_en = "Show the Visit Japan Web QR codes for immigration/customs if you created them. Paper forms remain the fallback when the airport flow asks for them."
+output_zh = "如果你已生成 Visit Japan Web 二维码，按机场要求出示入境/海关二维码。机场要求纸质表时，纸质表仍是兜底。"
+
+primary_middleman = "iVisa"
+page_question_en = "Is iVisa the official Visit Japan Web site?"
+page_question_zh = "iVisa 是 Visit Japan Web 官方网站吗？"
+page_answer_en = "No."
+page_answer_zh = "不是。"
+
+[[outcomes]]
+case = "Case 1"
+tag_en = "Common"
+tag_zh = "常见"
+headline_en = "You paid for Japan visa help, not Visit Japan Web."
+headline_zh = "你买到的是日本签证服务，不是 Visit Japan Web。"
+body_en = "Visit Japan Web is free. Visa eligibility is a separate question; do not confuse a visa service with the official arrival QR workflow."
+body_zh = "Visit Japan Web 免费。签证资格是另一回事；不要把签证服务和官方入境二维码流程混在一起。"
+
+[[outcomes]]
+case = "Case 2"
+tag_en = "Watch for"
+tag_zh = "需留意"
+headline_en = "A paid site copied your data into the free service."
+headline_zh = "付费站把你的资料代填进免费服务。"
+body_en = "Your QR may work, but you paid for typing. Keep control of your own Visit Japan Web account."
+body_zh = "二维码可能能用，但你只是为打字付费。Visit Japan Web 账号最好自己掌握。"
+
+[[outcomes]]
+case = "Case 3"
+tag_en = "Rare"
+tag_zh = "罕见"
+headline_en = "No QR was created."
+headline_zh = "没有生成任何二维码。"
+body_en = "Use the official Digital Agency page or the paper forms at the airport. Do not upload passport data to non-.go.jp imitators."
+body_zh = "使用日本数字厅官方页面，或在机场填纸质表。不要把护照资料上传到非 .go.jp 仿冒站。"

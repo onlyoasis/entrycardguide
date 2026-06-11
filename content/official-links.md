@@ -1,9 +1,9 @@
 ---
 title: "Official entry card links directory"
 kicker: "One maintained page for official arrival card, customs declaration, and e-visa URLs. Built for travelers, forums, travel agents, and anyone checking whether a site is official."
-description: "A maintained directory of official government URLs for Thailand TDAC, Malaysia MDAC, Singapore SGAC, Indonesia e-CD, Mexico FMM-E, Dominican Republic E-Ticket, and Vietnam E-Visa."
+description: "A maintained directory of official government URLs for Thailand TDAC, Malaysia MDAC, Singapore SGAC, Indonesia All Indonesia, Mexico FMM-E, Dominican Republic E-Ticket, Vietnam E-Visa, Philippines eTravel, Cambodia e-Arrival, Visit Japan Web, and Korea e-Arrival Card."
 date: 2026-04-28
-lastmod: 2026-04-28
+lastmod: 2026-06-11
 layout: tool
 eyebrow: "Reference page · share this URL"
 ---
@@ -16,7 +16,7 @@ Every URL below comes from the country files in [`data/official_urls`](https://g
 
 ## How to verify these links yourself
 
-1. Check the government domain suffix: `.go.th`, `.gov.my`, `.gov.sg`, `.go.id`, `.gob.mx`, `.gob.do`, or `.gov.vn`.
+1. Check the government domain suffix: `.go.th`, `.gov.my`, `.gov.sg`, `.go.id`, `.gob.mx`, `.gob.do`, `.gov.vn`, `.gov.ph`, `.gov.kh`, `.go.jp`, or `.go.kr`.
 2. Open the linked country guide and compare it with the TOML file in GitHub.
 3. Review the archived snapshot when one is available.
 4. If a commercial site asks you to pay for a free form, compare it with the scam-site screenshots and evidence cards in the guide.

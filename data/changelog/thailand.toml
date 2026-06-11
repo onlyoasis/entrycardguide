@@ -1,6 +1,12 @@
 # Thailand changelog. Append to this file when Thai immigration policy changes.
 
 [[entries]]
+date = "2026-06-11"
+summary = "Corrected TDAC launch year and removed a DNS-dead middleman domain"
+summary_zh = "修正 TDAC 生效年份，并移除一个 DNS 已失效的中介域名"
+detail = "TDAC launch copy now says May 2025. thailand-tdac.com failed DNS during audit and was removed from the active scam_sites list."
+
+[[entries]]
 date = "2026-04-22"
 summary = "Initial TDAC coverage published"
 summary_zh = "泰国 TDAC 指南首版上线"

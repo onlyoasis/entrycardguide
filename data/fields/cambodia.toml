@@ -1,0 +1,76 @@
+# Cambodia e-Arrival — field-by-field display data for the how-to-fill layout.
+
+[[fields]]
+n = "01"
+key = "passport"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "A12345678"
+mistake = "A-12345678"
+mistake_why_en = "dash copied from a booking profile"
+mistake_why_zh = "从订票资料复制时带了短横"
+copy_en = "Use the passport number from the photo page. No spaces or punctuation."
+copy_zh = "使用护照照片页上的护照号。不要空格或标点。"
+
+[[fields]]
+n = "02"
+key = "full_name"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "JOHN SMITH"
+mistake = "John 😊"
+mistake_why_en = "emoji or non-passport characters"
+mistake_why_zh = "包含 emoji 或护照上没有的字符"
+copy_en = "Match the Latin passport spelling. Keep the order shown on the official form."
+copy_zh = "按护照 Latin 拼写填写。顺序按官方表单字段来。"
+
+[[fields]]
+n = "03"
+key = "flight_number"
+section_en = "Section 2 · Trip"
+section_zh = "第 2 段 · 行程"
+example = "K6817"
+mistake = "Cambodia Angkor Air 817"
+mistake_why_en = "airline name instead of code"
+mistake_why_zh = "写了航司名称而不是代码"
+copy_en = "Use the flight number on your boarding pass. For land entry, use the border crossing details the official flow asks for."
+copy_zh = "使用登机牌上的航班号。陆路入境按官方流程填写口岸信息。"
+
+[[fields]]
+n = "04"
+key = "arrival_date"
+section_en = "Section 2 · Trip"
+section_zh = "第 2 段 · 行程"
+example = "2026-07-14"
+mistake = "14/07/2026"
+mistake_why_en = "local display format may differ; use the picker"
+mistake_why_zh = "页面显示格式可能不同；用日期选择器"
+copy_en = "Use the date you enter Cambodia. The e-Arrival flow is built around that arrival window."
+copy_zh = "填写你进入柬埔寨的日期。e-Arrival 流程围绕这个抵达窗口。"
+
+[[fields]]
+n = "05"
+key = "email"
+section_en = "Section 4 · Contact"
+section_zh = "第 4 段 · 联系方式"
+example = "travel@gmail.com"
+mistake = "travel@"
+mistake_why_en = "incomplete address"
+mistake_why_zh = "邮箱地址不完整"
+copy_en = "Use an inbox you can access offline or at low connectivity. Save the QR after submission."
+copy_zh = "使用弱网时也能打开的邮箱。提交后保存二维码。"
+
+[[errors]]
+code = "Invalid passport number"
+why_en = "Spaces, dashes, or MRZ text."
+why_zh = "包含空格、短横，或复制了 MRZ 文本。"
+
+[[errors]]
+code = "Missing arrival QR"
+why_en = "A visa receipt is not the same as the e-Arrival confirmation. Keep both if you need both."
+why_zh = "签证回执不是 e-Arrival 确认。两者都需要时要分别保存。"
+
+[[errors]]
+code = "Email not received"
+why_en = "Check spam, then re-open arrival.gov.kh and confirm the submission."
+why_zh = "先查垃圾箱，再回到 arrival.gov.kh 确认提交状态。"

@@ -1,25 +1,25 @@
 ---
-title: "Is iVisa the Official Indonesia Customs / e-VOA Site? (No)"
-kicker: "No. iVisa is a commercial middleman. Indonesia's e-CD customs declaration is free at ecd.beacukai.go.id; the official e-VOA visa is $35 USD at molina.imigrasi.go.id."
+title: "Is iVisa the Official Indonesia All Indonesia / e-VOA Site? (No)"
+kicker: "No. iVisa is a commercial middleman. Indonesia's All Indonesia / e-CD declaration is free at allindonesia.imigrasi.go.id; the official e-VOA visa is $35 USD at evisa.imigrasi.go.id."
 description: "Answering 'is ivisa official for Indonesia' — no. iVisa is a commercial middleman. The Indonesian government runs two separate sites for two separate forms."
 date: 2026-04-26
-lastmod: 2026-04-26
+lastmod: 2026-06-11
 country: "indonesia"
 weight: 30
 keywords: ["is ivisa official indonesia", "ivisa bali", "indonesia e-cd ivisa", "indonesia evoa middleman", "bali customs scam", "indonesia visa official site"]
 faq:
   - q: "Is iVisa the official Indonesia customs / e-VOA site?"
-    a: "No. iVisa is a commercial middleman. Indonesia uses two separate official sites: ecd.beacukai.go.id for the free e-CD customs declaration, and molina.imigrasi.go.id for the $35 USD e-VOA visa. iVisa is neither and charges fees on top of both."
+    a: "No. iVisa is a commercial middleman. Indonesia uses allindonesia.imigrasi.go.id for the free All Indonesia / e-CD declaration, and evisa.imigrasi.go.id for the $35 USD e-VOA visa. iVisa is neither and charges fees on top of both."
   - q: "What is the official Indonesia e-CD website?"
-    a: "ecd.beacukai.go.id, run by the Directorate General of Customs and Excise. The .go.id suffix is restricted to Indonesian government entities. The e-CD is free and required for all arrivals, including Indonesian citizens."
+    a: "allindonesia.imigrasi.go.id is the current unified traveler-facing entry point. The legacy ecd.beacukai.go.id customs portal still resolves, but All Indonesia is the current URL to start from."
   - q: "What is the official Indonesia e-VOA website?"
-    a: "molina.imigrasi.go.id, run by the Indonesian Directorate General of Immigration. Government fee: IDR 500,000 (about $35 USD). This is for nationalities not covered by visa-free entry."
+    a: "evisa.imigrasi.go.id, run by the Indonesian Directorate General of Immigration. Government fee: IDR 500,000 (about $35 USD). This is for nationalities not covered by visa-free entry."
   - q: "I see indonesia-evoa.com in Google. Is it official?"
     a: "No. .com is open. The Indonesian government uses .go.id exclusively. indonesia-evoa.com is a commercial middleman charging above the $35 USD government e-VOA fee."
   - q: "I'm flying to Bali. Do I need both e-CD and e-VOA?"
     a: "Depends on your nationality. The e-CD is required for everyone (free). The e-VOA is required only if you don't have visa-free entry. Many Western tourists (US, EU, UK, Canada, AU, Japan, Korea) get visa-free for 30 days as of 2024 and only need the e-CD. Others may need both."
   - q: "I already paid iVisa for an Indonesia document. What did I actually get?"
-    a: "Check your email for two possible documents. (1) An e-CD QR code from beacukai.go.id — that's the free customs declaration; you overpaid. (2) An e-VOA PDF from imigrasi.go.id — the $35 government visa; you paid the iVisa markup on top. Sometimes both are bundled and you paid extra for both."
+    a: "Check your email for two possible documents. (1) An All Indonesia / e-CD QR code — that's the free declaration; you overpaid. (2) An e-VOA PDF from imigrasi.go.id — the $35 government visa; you paid the iVisa markup on top. Sometimes both are bundled and you paid extra for both."
 layout: is-ivisa
 ---
 
@@ -27,11 +27,11 @@ layout: is-ivisa
 
 **No.** iVisa is a commercial visa middleman. It is not affiliated with any Indonesian government agency.
 
-Indonesia's situation is unusual because there are **two separate official sites** for two separate forms — and travelers often don't realize until after they've paid:
+Indonesia's situation is unusual because there are **two official government entry points** for two different needs — and travelers often don't realize until after they've paid:
 
-1. **`ecd.beacukai.go.id`** — Electronic Customs Declaration (e-CD). **Free.** Required for all arrivals, including Indonesian citizens. Runs by the Directorate General of Customs and Excise.
+1. **`allindonesia.imigrasi.go.id`** — All Indonesia arrival declaration, including the e-CD customs record. **Free.** Required for arrivals and used by immigration/customs.
 
-2. **`molina.imigrasi.go.id`** — Electronic Visa on Arrival (e-VOA). **$35 USD government fee.** Only required for nationalities not eligible for visa-free entry. Run by the Directorate General of Immigration.
+2. **`evisa.imigrasi.go.id`** — Electronic Visa on Arrival (e-VOA). **$35 USD government fee.** Only required for nationalities not eligible for visa-free entry. Run by the Directorate General of Immigration.
 
 iVisa is not either of these. iVisa charges fees on top of both, and sometimes bundles them in confusing ways.
 
@@ -43,9 +43,9 @@ iVisa typically charges around **$30 USD for the e-CD** (which is free on the of
 
 Whether iVisa actually delivered something usable depends on what you paid for:
 
-- **iVisa "e-CD service"**: They typically file the real free e-CD with your data. You get a valid QR code. You overpaid by $30.
+- **iVisa "e-CD service"**: They typically file the real free declaration with your data. You get a valid QR code. You overpaid by $30.
 - **iVisa "e-VOA service"**: They typically file the real e-VOA with your data. You get a valid visa. You overpaid by ~$45.
-- **iVisa "Indonesia all-in-one bundle"**: Sometimes they file both. Sometimes they file just one and bill the other as a "service fee" with no actual filing. **This is the case to watch out for** — verify your email for confirmations from BOTH `beacukai.go.id` AND `imigrasi.go.id` if you paid for both.
+- **iVisa "Indonesia all-in-one bundle"**: Sometimes they file both. Sometimes they file just one and bill the other as a "service fee" with no actual filing. **This is the case to watch out for** — verify your email for confirmations from BOTH All Indonesia and `imigrasi.go.id` if you paid for both.
 
 ## Visa-free vs e-VOA: do you even need a visa?
 
@@ -97,7 +97,7 @@ Both are documented commercial middlemen. Neither is the Indonesian government.
 
 ## What to do if you already paid
 
-### If your e-CD QR is from beacukai.go.id
+### If your declaration QR is from All Indonesia
 Your customs declaration is valid. You overpaid for a free form. Dispute the markup with your card issuer ("misleading merchant"). Best within 60 days.
 
 ### If your e-VOA is from imigrasi.go.id
@@ -106,8 +106,8 @@ Your visa is valid. You paid the iVisa markup on top of the $35 government fee. 
 ### If you can't find either confirmation
 **This is the case to worry about.** The middleman may not have actually filed anything. Open the official sites yourself:
 
-- e-CD: `ecd.beacukai.go.id` — file fresh within 3 days of arrival. Free.
-- e-VOA: `molina.imigrasi.go.id` — file fresh; you'll pay $35 government fee directly.
+- All Indonesia / e-CD: `allindonesia.imigrasi.go.id` — file fresh within 3 days of arrival. Free.
+- e-VOA: `evisa.imigrasi.go.id` — file fresh; you'll pay $35 government fee directly.
 
 Then dispute the original middleman charge as "service not rendered" with both filings as evidence.
 

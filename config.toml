@@ -58,6 +58,26 @@ defaultContentLanguageInSubdir = false
       url = "/singapore/"
       weight = 70
     [[languages.en.menu.main]]
+      identifier = "philippines"
+      name = "Philippines"
+      url = "/philippines/"
+      weight = 71
+    [[languages.en.menu.main]]
+      identifier = "cambodia"
+      name = "Cambodia"
+      url = "/cambodia/"
+      weight = 72
+    [[languages.en.menu.main]]
+      identifier = "japan"
+      name = "Japan"
+      url = "/japan/"
+      weight = 73
+    [[languages.en.menu.main]]
+      identifier = "korea"
+      name = "Korea"
+      url = "/korea/"
+      weight = 74
+    [[languages.en.menu.main]]
       identifier = "decide"
       name = "Decide"
       url = "/decide/"
@@ -115,6 +135,26 @@ defaultContentLanguageInSubdir = false
       name = "新加坡"
       url = "/zh/singapore/"
       weight = 70
+    [[languages.zh.menu.main]]
+      identifier = "philippines"
+      name = "菲律宾"
+      url = "/zh/philippines/"
+      weight = 71
+    [[languages.zh.menu.main]]
+      identifier = "cambodia"
+      name = "柬埔寨"
+      url = "/zh/cambodia/"
+      weight = 72
+    [[languages.zh.menu.main]]
+      identifier = "japan"
+      name = "日本"
+      url = "/zh/japan/"
+      weight = 73
+    [[languages.zh.menu.main]]
+      identifier = "korea"
+      name = "韩国"
+      url = "/zh/korea/"
+      weight = 74
     [[languages.zh.menu.main]]
       identifier = "decide"
       name = "决策工具"

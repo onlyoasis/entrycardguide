@@ -1,17 +1,17 @@
 ---
 title: "Evisa Vietnam Official Site: $25/$50 Government Fee (2026)"
-kicker: "The official Vietnam evisa site is evisa.xuatnhapcanh.gov.vn. The government fee is $25 single-entry or $50 multi-entry."
-description: "Evisa Vietnam official site guide: apply at evisa.xuatnhapcanh.gov.vn, pay the $25/$50 government fee, and avoid visa middlemen."
+kicker: "The official Vietnam evisa site is evisa.gov.vn. The government fee is $25 single-entry or $50 multi-entry."
+description: "Evisa Vietnam official site guide: apply at evisa.gov.vn, pay the $25/$50 government fee, and avoid visa middlemen."
 date: 2026-04-26
-lastmod: 2026-05-21
+lastmod: 2026-06-11
 country: "vietnam"
 weight: 10
-keywords: ["vietnam e-visa", "vietnam evisa official", "evisa.xuatnhapcanh.gov.vn", "vietnam visa online", "vietnam e-visa fee", "is ivisa official vietnam", "vietnam visa scam"]
+keywords: ["vietnam e-visa", "vietnam evisa official", "evisa.gov.vn", "vietnam visa online", "vietnam e-visa fee", "is ivisa official vietnam", "vietnam visa scam"]
 faq:
   - q: "What is the real cost of a Vietnam e-visa?"
-    a: "$25 USD for single-entry, $50 USD for multi-entry. This is the official Vietnamese government fee, paid directly through the Immigration Department's site at evisa.xuatnhapcanh.gov.vn. Anyone charging more is a middleman."
+    a: "$25 USD for single-entry, $50 USD for multi-entry. This is the official Vietnamese government fee, paid directly through the Immigration Department's site at evisa.gov.vn. Anyone charging more is a middleman."
   - q: "What is the official Vietnam e-visa website?"
-    a: "The only official site is evisa.xuatnhapcanh.gov.vn. The .gov.vn suffix is restricted to Vietnamese government entities. Sites like vietnam-evisa.org or evisa-vietnam.com are commercial middlemen, not official."
+    a: "The only official site is evisa.gov.vn. The .gov.vn suffix is restricted to Vietnamese government entities. Sites like vietnam-evisa.org or evisa-vietnam.com are commercial middlemen, not official."
   - q: "Is iVisa the official Vietnam e-visa site?"
     a: "No. iVisa is a commercial middleman. They typically charge $99-179 USD for the same e-visa that costs $25 directly through the Vietnamese Immigration Department."
   - q: "How long does the e-visa take?"
@@ -23,7 +23,7 @@ faq:
   - q: "What is the difference between e-visa and visa on arrival (VOA)?"
     a: "E-visa is fully online and lets you board your flight directly. Visa on arrival (VOA) requires a sponsor letter from a Vietnamese company before flight, and you pay another fee at the airport. VOA is also where the worst middleman scams live: 'visa on arrival' agencies often charge $40-80 for the sponsor letter, then bill the airport stamping fee on top. For most travelers, e-visa is simpler and cheaper."
   - q: "I already paid a middleman more than $25. Can I get a refund?"
-    a: "If they actually delivered a real e-visa from evisa.xuatnhapcanh.gov.vn, your visa is valid and you cannot get a refund from the government. You can dispute the markup with your credit card issuer as 'misleading merchant' — explain the official fee is $25 and you were not informed. Best within 60 days of the charge."
+    a: "If they actually delivered a real e-visa from evisa.gov.vn, your visa is valid and you cannot get a refund from the government. You can dispute the markup with your credit card issuer as 'misleading merchant' — explain the official fee is $25 and you were not informed. Best within 60 days of the charge."
 layout: country-form
 ---
 
@@ -31,7 +31,7 @@ layout: country-form
 
 ## Quick answer
 
-For an evisa Vietnam application, use **evisa.xuatnhapcanh.gov.vn**. That is the official Vietnamese Immigration Department site.
+For an evisa Vietnam application, use **evisa.gov.vn**. That is the official Vietnamese Immigration Department site.
 
 - Single-entry Vietnam evisa government fee: **$25 USD**.
 - Multi-entry Vietnam evisa government fee: **$50 USD**.
@@ -49,13 +49,13 @@ The catch is not the fee. The catch is that the first three results when you Goo
 
 If you Google *"vietnam e-visa"* right now, you will see paid ads for sites charging $89, $129, $179 USD for the same form. Some of them do submit your application to the real official site. They keep the markup. Some submit a slightly different visa or just an invitation letter that does not work as a visa, and you find out at the gate.
 
-The Vietnamese Immigration Department has issued multiple public statements that **only `evisa.xuatnhapcanh.gov.vn` is the authorized e-visa site**. Travel agencies and visa services that submit on your behalf are not illegal, but they are also not necessary, and they do not get you a visa any faster, easier, or more reliably than going direct.
+The Vietnamese Immigration Department has issued multiple public statements that **only `evisa.gov.vn` is the authorized e-visa site**. Travel agencies and visa services that submit on your behalf are not illegal, but they are also not necessary, and they do not get you a visa any faster, easier, or more reliably than going direct.
 
 ## Before you touch any form
 
-Check the address bar. The official site is <mark>evisa.xuatnhapcanh.gov.vn</mark> and nothing else.
+Check the address bar. The official site is <mark>evisa.gov.vn</mark> and nothing else.
 
-Not `vietnam-evisa.org`. Not `evisa-vietnam.com`. Not `vietnam-visa-online.com`. Anyone can register `.com` or `.org`. Only Vietnamese government entities can register `.gov.vn`.
+Not `vietnam-evisa.org`. Not `evisa-vietnam.com`. Anyone can register `.com` or `.org`. Only Vietnamese government entities can register `.gov.vn`.
 
 {{< validator country="vietnam" >}}
 
@@ -77,7 +77,6 @@ These sites all charge significantly more than $25 USD for the same Vietnamese g
 {{< scam-site country="vietnam" domain="vietnam-evisa.org" screenshot="/scams/vietnam-evisa-org.png" >}}
 {{< scam-site country="vietnam" domain="evisa-vietnam.com" screenshot="/scams/evisa-vietnam-com.png" >}}
 {{< scam-site country="vietnam" domain="ivisa.com" screenshot="/scams/ivisa-com-vietnam.png" >}}
-{{< scam-site country="vietnam" domain="vietnam-visa-online.com" screenshot="/scams/vietnam-visa-online-com.png" >}}
 </div>
 
 Screenshots captured April 2026. Archived snapshots available via [archive.org](https://web.archive.org/).

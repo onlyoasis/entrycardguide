@@ -1,0 +1,7 @@
+# Philippines changelog. Append to this file when eTravel policy changes.
+
+[[entries]]
+date = "2026-06-11"
+summary = "Initial Philippines eTravel coverage published"
+summary_zh = "菲律宾 eTravel 指南首版上线"
+detail = "Covers the official etravel.gov.ph portal, field guidance, and middleman warning pattern."

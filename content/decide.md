@@ -1,9 +1,9 @@
 ---
 title: "Which arrival forms do I need? — 60-second decision tool"
-kicker: "Pick your destination, answer 1-2 questions, get the exact list of free and paid government forms you need to file. Covers Thailand, Mexico, Dominican Republic, Malaysia, Vietnam, Indonesia, Singapore."
-description: "Free interactive tool to find out which digital arrival cards, customs declarations, and e-visas you actually need across 7 countries. 100% browser-side. No login. Government URLs only."
+kicker: "Pick your destination, answer 1-2 questions, get the exact list of free and paid government forms you need to file. Covers Thailand, Mexico, Dominican Republic, Malaysia, Vietnam, Indonesia, Singapore, Philippines, Cambodia, Japan, and South Korea."
+description: "Free interactive tool to find out which digital arrival cards, customs declarations, and e-visas you actually need across 11 countries. 100% browser-side. No login. Government URLs only."
 date: 2026-04-28
-lastmod: 2026-04-28
+lastmod: 2026-06-11
 url: "/decide/"
 keywords: ["which arrival forms do I need", "do I need TDAC", "do I need FMM mexico", "do I need MDAC", "vietnam evisa or visa free", "indonesia evoa or evoa", "singapore SGAC needed", "asia entry forms quiz"]
 layout: tool
@@ -34,14 +34,18 @@ That's it. No email signup. No PDF download with our branding. The answer just a
 - 🇩🇴 **Dominican Republic** — E-Ticket (free)
 - 🇲🇾 **Malaysia** — MDAC (free, with multiple exemption categories)
 - 🇻🇳 **Vietnam** — E-Visa ($25 USD government fee) or visa-free entry depending on nationality
-- 🇮🇩 **Indonesia** — e-CD (always free) plus e-VOA ($35 USD) if you need a visa
+- 🇮🇩 **Indonesia** — All Indonesia / e-CD declaration (always free) plus e-VOA ($35 USD) if you need a visa
 - 🇸🇬 **Singapore** — SGAC (free, with exemptions)
+- 🇵🇭 **Philippines** — eTravel (free)
+- 🇰🇭 **Cambodia** — Cambodia e-Arrival (free arrival declaration; visa rules separate)
+- 🇯🇵 **Japan** — Visit Japan Web (free, optional pre-arrival customs/immigration workflow)
+- 🇰🇷 **South Korea** — e-Arrival Card (free)
 
 ## What we don't cover (yet)
 
 - US ESTA, EU ETIAS, UK ETA, Canada eTA — different model (visa-waiver authorizations rather than arrival cards). Coverage candidates for v2.
 - Chinese visa rules — too complex for a quiz format; needs full guides.
-- Cambodia, Laos, Myanmar, Sri Lanka — all candidates for adding once they finalize their digital arrival systems.
+- Laos, Myanmar, Sri Lanka — candidates for adding once their digital arrival systems are stable enough to document.
 
 If you'd like a country added, [open an issue on GitHub](https://github.com/onlyoasis/entrycardguide/issues).
 

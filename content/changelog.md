@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "What changed on entrycardguide.com: government policy updates, new countries, content corrections, and scam-site audits."
 date: 2026-04-27
-lastmod: 2026-04-27
+lastmod: 2026-06-11
 url: "/changelog/"
 ---
 
@@ -14,6 +14,19 @@ A running log of substantive updates. We publish a new entry when:
 - We add or remove a domain from the `scam_sites` list
 
 We do **not** log every typo fix or layout tweak. For that, see [the git history](https://github.com/onlyoasis/entrycardguide/commits/main).
+
+---
+
+## 2026-06-11 - Philippines, Cambodia, Japan, Korea added; Indonesia and Vietnam URLs refreshed
+
+Added four country guides and refreshed official URL data for Indonesia and Vietnam after a live address audit.
+
+- New: `/philippines/`, `/cambodia/`, `/japan/`, `/korea/`
+- New: English and Chinese country hubs, form guides, field guides, official-site explainers, rules JSON, field TOML, official URL TOML, and country changelogs
+- Updated: Indonesia now points travelers to `allindonesia.imigrasi.go.id` for the unified arrival declaration and `evisa.imigrasi.go.id` for e-VOA
+- Updated: Vietnam now uses `evisa.gov.vn` as the primary e-visa URL, with `thithucdientu.gov.vn` recorded as an official alternate
+- Removed: DNS-dead active warning cards for `thailand-tdac.com` and `vietnam-visa-online.com`
+- Updated: site navigation and decision tool now cover 11 countries
 
 ---
 

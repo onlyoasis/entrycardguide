@@ -2,7 +2,7 @@
 title: "变更日志"
 description: "entrycardguide.com 的重要变更：政府政策更新、新国家、内容勘误和假站审计。"
 date: 2026-04-27
-lastmod: 2026-04-27
+lastmod: 2026-06-11
 url: "/zh/changelog/"
 ---
 
@@ -14,6 +14,19 @@ url: "/zh/changelog/"
 - 我们新增或移除 `scam_sites` 假站名单里的域名
 
 我们**不会**记录每个错别字或样式微调。那些可以看 [git 历史](https://github.com/onlyoasis/entrycardguide/commits/main)。
+
+---
+
+## 2026-06-11 - 新增菲律宾、柬埔寨、日本、韩国；修正印尼和越南官网地址
+
+新增四个国家，并在实时地址审计后刷新印尼和越南的官方 URL 数据。
+
+- 新增：`/philippines/`、`/cambodia/`、`/japan/`、`/korea/`
+- 新增：英文和中文国家首页、表单指南、字段指南、官方站判断页、rules JSON、fields TOML、official URL TOML 和国家 changelog
+- 更新：印尼当前统一入境申报入口改为 `allindonesia.imigrasi.go.id`，e-VOA 改为 `evisa.imigrasi.go.id`
+- 更新：越南以 `evisa.gov.vn` 作为主要 e-visa URL，并记录 `thithucdientu.gov.vn` 为官方备用入口
+- 移除：DNS 已失效的 `thailand-tdac.com` 和 `vietnam-visa-online.com` 活跃警示卡
+- 更新：站点导航和决策工具现在覆盖 11 个国家
 
 ---
 

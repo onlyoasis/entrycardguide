@@ -3,7 +3,7 @@ title: "越南 E-Visa 怎么填 2026：每个字段填写指南和照片要求"
 kicker: "越南官方 E-Visa 表单字段逐项讲解，常见错误与真实原因。约 12 分钟看完。"
 description: "越南 E-Visa 怎么填：按官方表单顺序讲解照片、护照、入境口岸、地址和付款字段，避免中介加价。"
 date: 2026-04-26
-lastmod: 2026-04-26
+lastmod: 2026-06-11
 country: "vietnam"
 weight: 20
 keywords: ["越南 e-visa 怎么填", "越南电子签证字段", "越南签证申请帮助", "越南 e-visa 照片"]
@@ -25,7 +25,7 @@ layout: how-to-fill
 - **护照风格的肖像照** —— JPG 或 PNG，白色背景，头肩照，不戴眼镜，不加滤镜。站点强制 4×6 比例。最大 2 MB。
 - **护照资料页扫描** —— 资料页 JPG 或 PNG，文字清晰可读。最大 2 MB。
 
-上传**只在 `evisa.xuatnhapcanh.gov.vn`** 进行，**只走 HTTPS**。如果一个站点要你上传这些文件但 URL 不是 `.gov.vn`，你就不在官方站点上。
+上传**只在 `evisa.gov.vn`** 进行，**只走 HTTPS**。如果一个站点要你上传这些文件但 URL 不是 `.gov.vn`，你就不在官方站点上。
 
 ## 第 2 部分：个人信息
 

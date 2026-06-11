@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastVerified": "2026-04-27",
+  "lastVerified": "2026-06-11",
   "start": "country",
   "states": {
     "country": {
@@ -13,7 +13,11 @@
         { "value": "malaysia", "label": "Malaysia", "next": "malaysia_status" },
         { "value": "vietnam", "label": "Vietnam", "next": "vietnam_passport" },
         { "value": "indonesia", "label": "Indonesia", "next": "indonesia_passport" },
-        { "value": "singapore", "label": "Singapore", "next": "singapore_status" }
+        { "value": "singapore", "label": "Singapore", "next": "singapore_status" },
+        { "value": "philippines", "label": "Philippines", "next": "philippines_result" },
+        { "value": "cambodia", "label": "Cambodia", "next": "cambodia_result" },
+        { "value": "japan", "label": "Japan", "next": "japan_result" },
+        { "value": "korea", "label": "South Korea", "next": "korea_result" }
       ]
     },
 
@@ -153,7 +157,7 @@
         {
           "name": "E-Visa (single-entry)",
           "fee": "$25 USD",
-          "url": "https://evisa.xuatnhapcanh.gov.vn",
+          "url": "https://evisa.gov.vn",
           "guide": "/vietnam/evisa/",
           "agency": "Vietnam Immigration Department",
           "deadline": "Apply 3-5 working days before flight"
@@ -174,42 +178,42 @@
     "indonesia_ecd_only": {
       "type": "result",
       "country": "indonesia",
-      "summary": "You only need the e-CD (customs declaration). No visa required.",
+      "summary": "You need the All Indonesia arrival declaration. No visa required.",
       "forms": [
         {
-          "name": "e-CD",
+          "name": "All Indonesia",
           "fee": "FREE",
-          "url": "https://ecd.beacukai.go.id",
+          "url": "https://allindonesia.imigrasi.go.id",
           "guide": "/indonesia/e-cd/",
-          "agency": "Direktorat Jenderal Bea dan Cukai",
+          "agency": "Direktorat Jenderal Imigrasi / Bea dan Cukai",
           "deadline": "Within 3 days before arrival"
         }
       ],
-      "note": "All arrivals need the e-CD, including Indonesian citizens. Visa-free nationalities don't need a separate e-VOA. Free at the .go.id site."
+      "note": "All arrivals need the free arrival declaration. Visa-free nationalities don't need a separate e-VOA. Use the official .go.id portal."
     },
     "indonesia_both": {
       "type": "result",
       "country": "indonesia",
-      "summary": "You need BOTH the e-CD (customs) and the e-VOA (visa).",
+      "summary": "You need BOTH the All Indonesia arrival declaration and the e-VOA (visa).",
       "forms": [
         {
-          "name": "e-CD",
+          "name": "All Indonesia",
           "fee": "FREE",
-          "url": "https://ecd.beacukai.go.id",
+          "url": "https://allindonesia.imigrasi.go.id",
           "guide": "/indonesia/e-cd/",
-          "agency": "Bea dan Cukai (Customs)",
+          "agency": "Direktorat Jenderal Imigrasi / Bea dan Cukai",
           "deadline": "Within 3 days before arrival"
         },
         {
           "name": "e-VOA",
           "fee": "$35 USD",
-          "url": "https://molina.imigrasi.go.id",
+          "url": "https://evisa.imigrasi.go.id",
           "guide": "/indonesia/e-cd/",
           "agency": "Direktorat Jenderal Imigrasi",
           "deadline": "Apply before flight"
         }
       ],
-      "note": "Two separate forms run by two separate agencies. Don't let middlemen bundle them — each is filed at its own .go.id site. iVisa often charges $109+ for what costs $35 going direct."
+      "note": "Two separate official flows. Don't let middlemen bundle them: the arrival declaration is free and the e-VOA has a real $35 government fee."
     },
 
     "singapore_status": {
@@ -245,6 +249,74 @@
         }
       ],
       "note": "Free at the .gov.sg site. Includes a brief health declaration. eGate-eligible nationalities scan their passport on arrival; the SGAC submission auto-pulls."
+    },
+
+    "philippines_result": {
+      "type": "result",
+      "country": "philippines",
+      "summary": "You need to file Philippines eTravel.",
+      "forms": [
+        {
+          "name": "eTravel",
+          "fee": "FREE",
+          "url": "https://etravel.gov.ph",
+          "guide": "/philippines/etravel/",
+          "agency": "Philippine Travel Information System",
+          "deadline": "Before check-in / arrival"
+        }
+      ],
+      "note": "Free at the .gov.ph site. eTravel is a travel declaration, not a visa."
+    },
+
+    "cambodia_result": {
+      "type": "result",
+      "country": "cambodia",
+      "summary": "You need the Cambodia e-Arrival declaration.",
+      "forms": [
+        {
+          "name": "e-Arrival",
+          "fee": "FREE declaration",
+          "url": "https://arrival.gov.kh",
+          "guide": "/cambodia/e-arrival/",
+          "agency": "Cambodia General Department of Immigration",
+          "deadline": "Before arrival"
+        }
+      ],
+      "note": "The arrival declaration is free. Visa fees are separate when your trip requires a visa."
+    },
+
+    "japan_result": {
+      "type": "result",
+      "country": "japan",
+      "summary": "You can use Visit Japan Web for Japan arrival QR workflows.",
+      "forms": [
+        {
+          "name": "Visit Japan Web",
+          "fee": "FREE",
+          "url": "https://services.digital.go.jp/en/visit-japan-web/",
+          "guide": "/japan/visit-japan-web/",
+          "agency": "Digital Agency of Japan",
+          "deadline": "Before arrival; paper fallback may exist"
+        }
+      ],
+      "note": "Visit Japan Web is free and separate from visa status. Some airport flows can still use paper forms."
+    },
+
+    "korea_result": {
+      "type": "result",
+      "country": "korea",
+      "summary": "You need the Korea e-Arrival Card when the official portal applies to your trip.",
+      "forms": [
+        {
+          "name": "e-Arrival Card",
+          "fee": "FREE",
+          "url": "https://www.e-arrivalcard.go.kr/portal/main/index.do",
+          "guide": "/korea/e-arrival-card/",
+          "agency": "Korea Immigration Service",
+          "deadline": "Before arrival"
+        }
+      ],
+      "note": "Free at the .go.kr portal. This is separate from K-ETA, visa status, and Q-Code."
     }
   }
 }

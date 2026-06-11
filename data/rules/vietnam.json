@@ -1,8 +1,8 @@
 {
   "country": "vietnam",
-  "officialUrl": "https://evisa.xuatnhapcanh.gov.vn",
-  "lastVerified": "2026-04-26",
-  "source": "https://evisa.xuatnhapcanh.gov.vn (HTML field attributes, scraped 2026-04-26)",
+  "officialUrl": "https://evisa.gov.vn",
+  "lastVerified": "2026-06-11",
+  "source": "https://evisa.gov.vn and https://thithucdientu.gov.vn (official e-visa domains re-checked 2026-06-11)",
   "fields": {
     "passport": {
       "type": "passport",

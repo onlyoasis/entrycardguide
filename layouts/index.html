@@ -7,13 +7,17 @@
        formCode  → small uppercase code shown in the grid
        sub       → tiny qualifier under the fee tag */ -}}
 {{- $countries := slice
-  (dict "key" "thailand"  "en" "Thailand"           "zh" "泰国"     "flag" "🇹🇭" "formKey" "tdac"    "formCode" "TDAC"    "guideSlug" "tdac"    "fee" "free" "subEn" "May 2024"            "subZh" "2024 年 5 月起")
+  (dict "key" "thailand"  "en" "Thailand"           "zh" "泰国"     "flag" "🇹🇭" "formKey" "tdac"    "formCode" "TDAC"    "guideSlug" "tdac"    "fee" "free" "subEn" "May 2025"            "subZh" "2025 年 5 月起")
   (dict "key" "malaysia"  "en" "Malaysia"           "zh" "马来西亚" "flag" "🇲🇾" "formKey" "mdac"    "formCode" "MDAC"    "guideSlug" "mdac"    "fee" "free" "subEn" "Jan 2024"            "subZh" "2024 年 1 月起")
   (dict "key" "singapore" "en" "Singapore"          "zh" "新加坡"   "flag" "🇸🇬" "formKey" "sgac"    "formCode" "SGAC"    "guideSlug" "sgac"    "fee" "free" "subEn" "ICA"                 "subZh" "ICA 官方")
-  (dict "key" "indonesia" "en" "Indonesia"          "zh" "印度尼西亚" "flag" "🇮🇩" "formKey" "ecd"     "formCode" "e-CD"    "guideSlug" "e-cd"    "fee" "free" "subEn" "+ e-VOA USD 35"      "subZh" "+ e-VOA 35 美元")
+  (dict "key" "indonesia" "en" "Indonesia"          "zh" "印度尼西亚" "flag" "🇮🇩" "formKey" "ecd"     "formCode" "All Indonesia" "guideSlug" "e-cd"    "fee" "free" "subEn" "+ e-VOA USD 35"      "subZh" "+ e-VOA 35 美元")
   (dict "key" "mexico"    "en" "Mexico"             "zh" "墨西哥"   "flag" "🇲🇽" "formKey" "fmm"     "formCode" "FMM-E"   "guideSlug" "fmm"     "fee" "free" "subEn" "Not always required" "subZh" "并非每次都要填")
   (dict "key" "dominican" "en" "Dominican Republic" "zh" "多米尼加" "flag" "🇩🇴" "formKey" "eticket" "formCode" "E-Ticket" "guideSlug" "eticket" "fee" "free" "subEn" "In + out"            "subZh" "入境 + 离境")
   (dict "key" "vietnam"   "en" "Vietnam"            "zh" "越南"     "flag" "🇻🇳" "formKey" "evisa"   "formCode" "E-Visa"  "guideSlug" "evisa"   "fee" "paid" "subEn" "Govt fee, not free"  "subZh" "官方收费，非免费")
+  (dict "key" "philippines" "en" "Philippines"      "zh" "菲律宾"   "flag" "🇵🇭" "formKey" "etravel" "formCode" "eTravel" "guideSlug" "etravel" "fee" "free" "subEn" ".gov.ph"             "subZh" ".gov.ph 官方")
+  (dict "key" "cambodia"  "en" "Cambodia"           "zh" "柬埔寨"   "flag" "🇰🇭" "formKey" "earrival" "formCode" "e-Arrival" "guideSlug" "e-arrival" "fee" "free" "subEn" "Visa fees separate" "subZh" "签证费另算")
+  (dict "key" "japan"     "en" "Japan"              "zh" "日本"     "flag" "🇯🇵" "formKey" "vjw"     "formCode" "Visit Japan Web" "guideSlug" "visit-japan-web" "fee" "free" "subEn" "Digital Agency"     "subZh" "日本数字厅")
+  (dict "key" "korea"     "en" "South Korea"        "zh" "韩国"     "flag" "🇰🇷" "formKey" "earrivalcard" "formCode" "e-Arrival Card" "guideSlug" "e-arrival-card" "fee" "free" "subEn" "Not K-ETA"       "subZh" "不是 K-ETA")
 -}}
 
 {{- /* Stats: countries dynamic from roster, scams sum across TOMLs.
@@ -105,7 +109,7 @@
          right/bottom via -mr-px / -mb-px so we get a clean inner grid. */ -}}
   <div class="border-y border-rule overflow-hidden">
     {{- $stats := slice
-      (dict "kicker" (cond $isZh "覆盖国家" "COUNTRIES COVERED") "value" (string $countryCount) "subEn" "Thailand · Malaysia · Singapore · Indonesia · Mexico · Dominican · Vietnam" "subZh" "泰国 · 马来西亚 · 新加坡 · 印度尼西亚 · 墨西哥 · 多米尼加 · 越南")
+      (dict "kicker" (cond $isZh "覆盖国家" "COUNTRIES COVERED") "value" (string $countryCount) "subEn" "Asia, Mexico, Dominican Republic, and Vietnam e-visa" "subZh" "亚洲多国、墨西哥、多米尼加和越南电子签")
       (dict "kicker" (cond $isZh "已验证官方网址" "OFFICIAL URLS VERIFIED") "value" (string $urlCount) "subEn" "All in a public TOML file with last_verified dates" "subZh" "全部存在公开 TOML 文件里，附 last_verified 日期")
       (dict "kicker" (cond $isZh "山寨站点收录数" "SCAM SITES INDEXED") "value" (string $scamCount) "subEn" "DNS-audited monthly; dead domains removed" "subZh" "每月 DNS 审计，失效域名会被移除")
       (dict "kicker" (cond $isZh "我们存的你的数据" "YOUR DATA WE STORE") "value" "0" "subEn" "Validators run client-side. Zero network requests." "subZh" "校验器在你的浏览器里跑，零网络请求。")

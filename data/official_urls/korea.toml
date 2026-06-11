@@ -1,0 +1,66 @@
+# South Korea — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-06-11
+
+[earrivalcard]
+url = "https://www.e-arrivalcard.go.kr/portal/main/index.do"
+name = "Korea e-Arrival Card"
+agency = "Korea Immigration Service"
+last_verified = "2026-06-11"
+archive_url = "https://web.archive.org/web/2026/https://www.e-arrivalcard.go.kr/portal/main/index.do"
+notes = "Reserved under .go.kr. Official Korea e-Arrival Card portal for eligible foreign arrivals. Free."
+
+[meta]
+flag = "🇰🇷"
+name_en = "South Korea"
+name_zh = "韩国"
+form_code = "e-Arrival Card"
+guide_slug = "e-arrival-card"
+form_key = "earrivalcard"
+form_name_en = "e-Arrival Card"
+form_name_zh = "电子入境卡"
+since_en = "since 2025"
+since_zh = "2025 年起"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".go.kr"
+
+field_count = 13
+sections = 4
+time_needed_en = "~6 minutes"
+time_needed_zh = "约 6 分钟"
+output_en = "Show the e-Arrival Card confirmation if requested. Keep your passport and arrival purpose details consistent with the submission."
+output_zh = "如被要求，出示 e-Arrival Card 确认页。护照和入境目的要与提交内容一致。"
+
+primary_middleman = "iVisa"
+page_question_en = "Is iVisa the official Korea e-Arrival Card site?"
+page_question_zh = "iVisa 是韩国 e-Arrival Card 官方网站吗？"
+page_answer_en = "No."
+page_answer_zh = "不是。"
+
+[[outcomes]]
+case = "Case 1"
+tag_en = "Most common"
+tag_zh = "最常见"
+headline_en = "A middleman filed a free arrival card and charged you."
+headline_zh = "中介代填免费入境卡并收费。"
+body_en = "The official e-Arrival Card is free at e-arrivalcard.go.kr. If your record exists, you overpaid for data entry."
+body_zh = "官方 e-Arrival Card 在 e-arrivalcard.go.kr 免费。如果记录存在，你只是为代填付费。"
+
+[[outcomes]]
+case = "Case 2"
+tag_en = "Watch for"
+tag_zh = "需留意"
+headline_en = "You paid for K-ETA or visa help instead."
+headline_zh = "你实际买到的是 K-ETA 或签证服务。"
+body_en = "K-ETA, visa status, Q-Code, and e-Arrival Card are separate systems. Confirm which one you actually received."
+body_zh = "K-ETA、签证状态、Q-Code 和 e-Arrival Card 是不同系统。确认你实际拿到的是哪一个。"
+
+[[outcomes]]
+case = "Case 3"
+tag_en = "Rare"
+tag_zh = "罕见"
+headline_en = "Nothing was submitted."
+headline_zh = "没有任何提交记录。"
+body_en = "File directly on the official .go.kr portal and keep the confirmation."
+body_zh = "直接在官方 .go.kr 门户提交，并保存确认页。"

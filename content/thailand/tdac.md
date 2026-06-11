@@ -3,7 +3,7 @@ title: "Thailand TDAC: Official Site, Free Guide, How to Avoid Scams (2026)"
 kicker: "10% of foreign arrivals to Thailand in 2026 paid a scam site to submit a free form. Here is the official site, every field it asks, and how to tell real from fake."
 description: "Free, independent 2026 guide to Thailand's Digital Arrival Card (TDAC). Official URL, every field explained, scam-site warnings, no fees."
 date: 2026-04-22
-lastmod: 2026-04-26
+lastmod: 2026-06-11
 country: "thailand"
 weight: 10
 keywords: ["thailand digital arrival card", "TDAC", "thailand TDAC official", "is ivisa official thailand", "thailand arrival card free", "tdac.immigration.go.th"]
@@ -29,7 +29,7 @@ layout: country-form
 
 ## What the TDAC actually is
 
-The TDAC is a free form you fill out before entering Thailand. The Thai government introduced it in May 2024, replacing the paper arrival card. It takes about 8 minutes if you have your passport and flight details in front of you.
+The TDAC is a free form you fill out before entering Thailand. The Thai government introduced it in May 2025, replacing the paper arrival card. It takes about 8 minutes if you have your passport and flight details in front of you.
 
 No one can charge you for it.
 
@@ -47,7 +47,7 @@ In late March 2026, Immigration Bureau spokesman Pol Maj Gen Choengron Rimpadee 
 
 Check the address bar. The official site is <mark>tdac.immigration.go.th</mark> and nothing else.
 
-Not `thailand-tdac.com`. Not `official-tdac.org`. Not any variant with `gov`, `official`, or `immigration` in the domain that doesn't end in `.go.th`. Anyone can register a `.com`. Not anyone can register a `.go.th`.
+Not `official-tdac.org`. Not any variant with `gov`, `official`, or `immigration` in the domain that doesn't end in `.go.th`. Anyone can register a `.com`. Not anyone can register a `.go.th`.
 
 If you do not want to trust our warning list, good. [Here is how to fact-check our work](/about/#methodology): official URL files, validator JSON, DNS-audited scam domains, and public git history.
 
@@ -70,7 +70,6 @@ For a field-by-field walkthrough with screenshots and common errors, read our [h
 These sites all charge money for a free form. Some of them submit a real form on your behalf. Some of them do not.
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="thailand" domain="thailand-tdac.com" >}}
 {{< scam-site country="thailand" domain="ivisa.com" screenshot="/scams/ivisa-com-thailand.png" >}}
 </div>
 

@@ -4,7 +4,7 @@ kicker: "Everything you need to know about the Thailand Digital Arrival Card (TD
 description: "Free, independent guides to Thailand's TDAC. Official URL, every field explained, scam-site warnings."
 ---
 
-The Thailand Digital Arrival Card (TDAC) replaced the paper arrival card in May 2024. It is required for every foreign arrival, free to file, and accepted only at `tdac.immigration.go.th`.
+The Thailand Digital Arrival Card (TDAC) replaced the paper arrival card in May 2025. It is required for every foreign arrival, free to file, and accepted only at `tdac.immigration.go.th`.
 
 In March 2026, the Royal Thai Immigration Bureau stated that about **10% of foreign arrivals paid a middleman to submit this free form**. That is the problem we are trying to fix, one honest page at a time.
 

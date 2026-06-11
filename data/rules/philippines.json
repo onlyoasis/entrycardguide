@@ -1,0 +1,90 @@
+{
+  "country": "philippines",
+  "officialUrl": "https://etravel.gov.ph",
+  "lastVerified": "2026-06-11",
+  "source": "https://etravel.gov.ph (official eTravel portal re-checked 2026-06-11)",
+  "fields": {
+    "passport": {
+      "type": "passport",
+      "label": "Passport number",
+      "required": true,
+      "minLength": 6,
+      "maxLength": 12,
+      "pattern": "^[A-Z0-9]{6,12}$",
+      "placeholder": "A12345678",
+      "help": "Use the passport number from the photo page. No spaces or dashes.",
+      "errors": {
+        "required": "Passport number is required",
+        "tooShort": "Passport number too short — min 6 characters",
+        "tooLong": "Passport number too long — max 12 characters",
+        "invalidChars": "Letters and numbers only — no spaces or symbols"
+      }
+    },
+    "full_name": {
+      "type": "name",
+      "label": "Full name",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 80,
+      "placeholder": "MARIA SANTOS",
+      "help": "Use the Latin spelling from your passport.",
+      "errors": {
+        "required": "Full name is required",
+        "tooLong": "Max 80 characters",
+        "invalidChars": "Use Latin letters only"
+      }
+    },
+    "date_of_birth": {
+      "type": "date",
+      "label": "Date of birth",
+      "required": true,
+      "minDate": "1900-01-01",
+      "maxDate": "2026-12-31",
+      "placeholder": "1991-08-22",
+      "help": "Use YYYY-MM-DD in this local checker.",
+      "errors": {
+        "required": "Date of birth is required",
+        "invalidFormat": "Use YYYY-MM-DD",
+        "tooEarly": "Date of birth seems too far in the past",
+        "tooLate": "Date of birth cannot be in the future"
+      }
+    },
+    "flight_number": {
+      "type": "flight",
+      "label": "Flight or vessel number",
+      "required": true,
+      "placeholder": "PR103",
+      "help": "Use the operating carrier code and flight number.",
+      "errors": {
+        "required": "Flight or vessel number is required",
+        "invalidFormat": "Use carrier code + number, e.g. PR103"
+      }
+    },
+    "arrival_date": {
+      "type": "date",
+      "label": "Arrival date",
+      "required": true,
+      "minDate": "2026-01-01",
+      "maxDate": "2028-12-31",
+      "placeholder": "2026-07-14",
+      "help": "Date you arrive in the Philippines.",
+      "errors": {
+        "required": "Arrival date is required",
+        "invalidFormat": "Use YYYY-MM-DD"
+      }
+    },
+    "email": {
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "maxLength": 80,
+      "placeholder": "name@example.com",
+      "help": "Use an inbox you can open at the airport.",
+      "errors": {
+        "required": "Email is required",
+        "invalidFormat": "Must look like name@example.com",
+        "tooLong": "Email too long — max 80 characters"
+      }
+    }
+  }
+}

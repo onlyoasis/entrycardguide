@@ -1,0 +1,88 @@
+{
+  "country": "korea",
+  "officialUrl": "https://www.e-arrivalcard.go.kr/portal/main/index.do",
+  "lastVerified": "2026-06-11",
+  "source": "https://www.e-arrivalcard.go.kr/portal/main/index.do (official e-Arrival Card portal re-checked 2026-06-11)",
+  "fields": {
+    "passport": {
+      "type": "passport",
+      "label": "Passport number",
+      "required": true,
+      "minLength": 6,
+      "maxLength": 12,
+      "pattern": "^[A-Z0-9]{6,12}$",
+      "placeholder": "A12345678",
+      "help": "Use the passport number from the photo page.",
+      "errors": {
+        "required": "Passport number is required",
+        "tooShort": "Passport number too short",
+        "tooLong": "Passport number too long",
+        "invalidChars": "Letters and numbers only"
+      }
+    },
+    "full_name": {
+      "type": "name",
+      "label": "Full name",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 80,
+      "placeholder": "KIM MINJUN",
+      "help": "Use the Latin spelling from your passport.",
+      "errors": {
+        "required": "Full name is required",
+        "tooLong": "Max 80 characters",
+        "invalidChars": "Use Latin letters only"
+      }
+    },
+    "date_of_birth": {
+      "type": "date",
+      "label": "Date of birth",
+      "required": true,
+      "minDate": "1900-01-01",
+      "maxDate": "2026-12-31",
+      "placeholder": "1991-08-22",
+      "help": "Use YYYY-MM-DD in this local checker.",
+      "errors": {
+        "required": "Date of birth is required",
+        "invalidFormat": "Use YYYY-MM-DD"
+      }
+    },
+    "flight_number": {
+      "type": "flight",
+      "label": "Flight number",
+      "required": true,
+      "placeholder": "KE82",
+      "help": "Use the operating flight number.",
+      "errors": {
+        "required": "Flight number is required",
+        "invalidFormat": "Use carrier code + number"
+      }
+    },
+    "arrival_date": {
+      "type": "date",
+      "label": "Arrival date",
+      "required": true,
+      "minDate": "2026-01-01",
+      "maxDate": "2028-12-31",
+      "placeholder": "2026-07-14",
+      "help": "Date you arrive in Korea.",
+      "errors": {
+        "required": "Arrival date is required",
+        "invalidFormat": "Use YYYY-MM-DD"
+      }
+    },
+    "email": {
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "maxLength": 80,
+      "placeholder": "name@example.com",
+      "help": "Confirmation is sent here.",
+      "errors": {
+        "required": "Email is required",
+        "invalidFormat": "Must look like name@example.com",
+        "tooLong": "Email too long — max 80 characters"
+      }
+    }
+  }
+}

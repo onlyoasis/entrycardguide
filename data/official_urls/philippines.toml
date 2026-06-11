@@ -1,0 +1,66 @@
+# Philippines — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-06-11
+
+[etravel]
+url = "https://etravel.gov.ph"
+name = "Philippine eTravel"
+agency = "Philippine Travel Information System"
+last_verified = "2026-06-11"
+archive_url = "https://web.archive.org/web/2026/https://etravel.gov.ph"
+notes = "Reserved under .gov.ph. The official homepage states that eTravel is free. Used for the Philippine electronic travel declaration before arrival or departure."
+
+[meta]
+flag = "🇵🇭"
+name_en = "Philippines"
+name_zh = "菲律宾"
+form_code = "eTravel"
+guide_slug = "etravel"
+form_key = "etravel"
+form_name_en = "Electronic Travel Declaration"
+form_name_zh = "电子旅行申报"
+since_en = "current system"
+since_zh = "当前系统"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".gov.ph"
+
+field_count = 12
+sections = 4
+time_needed_en = "~6 minutes"
+time_needed_zh = "约 6 分钟"
+output_en = "Show the QR code if airline staff or border officers ask. Keep the screenshot until you clear immigration and customs."
+output_zh = "航司或边检要求时出示二维码。截图保留到完成入境和海关。"
+
+primary_middleman = "iVisa"
+page_question_en = "Is iVisa the official Philippines eTravel site?"
+page_question_zh = "iVisa 是菲律宾 eTravel 官方网站吗？"
+page_answer_en = "No."
+page_answer_zh = "不是。"
+
+[[outcomes]]
+case = "Case 1"
+tag_en = "Most common"
+tag_zh = "最常见"
+headline_en = "A middleman filed the real eTravel and charged a fee."
+headline_zh = "中介替你提交了真实 eTravel，并收了服务费。"
+body_en = "Your QR may still work, but the form is free at etravel.gov.ph. Dispute the markup with your card issuer."
+body_zh = "你的二维码可能仍可用，但 etravel.gov.ph 免费。可向发卡行申诉这笔加价。"
+
+[[outcomes]]
+case = "Case 2"
+tag_en = "Watch for"
+tag_zh = "需留意"
+headline_en = "You paid for a visa service, not eTravel."
+headline_zh = "你买到的是签证服务，不是 eTravel。"
+body_en = "eTravel is not a visa. Check whether you still need the free eTravel QR before flying."
+body_zh = "eTravel 不是签证。出发前确认你是否仍需要免费的 eTravel 二维码。"
+
+[[outcomes]]
+case = "Case 3"
+tag_en = "Rare"
+tag_zh = "罕见"
+headline_en = "Nothing was filed and you find out at check-in."
+headline_zh = "中介什么都没交，你在值机时才发现。"
+body_en = "File directly at etravel.gov.ph. The form is short; keep the QR screenshot."
+body_zh = "直接去 etravel.gov.ph 提交。表很短，保存二维码截图。"

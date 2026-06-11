@@ -1,8 +1,8 @@
 {
   "country": "indonesia",
-  "officialUrl": "https://ecd.beacukai.go.id",
-  "lastVerified": "2026-04-26",
-  "source": "https://ecd.beacukai.go.id (HTML field attributes, scraped 2026-04-26)",
+  "officialUrl": "https://allindonesia.imigrasi.go.id",
+  "lastVerified": "2026-06-11",
+  "source": "https://allindonesia.imigrasi.go.id and legacy https://ecd.beacukai.go.id (arrival declaration fields re-checked 2026-06-11)",
   "fields": {
     "passport": {
       "type": "passport",

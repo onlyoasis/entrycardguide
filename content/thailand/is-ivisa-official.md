@@ -3,7 +3,7 @@ title: "Is iVisa the official TDAC site?"
 kicker: "No. The Royal Thai Immigration Bureau publicly named iVisa as a non-official middleman site in March 2026."
 description: "Answering the search query 'is ivisa official for TDAC' — no, iVisa is not the official Thailand TDAC site. Plus the other lookalike sites people ask about."
 date: 2026-04-22
-lastmod: 2026-04-24
+lastmod: 2026-06-11
 country: "thailand"
 weight: 30
 layout: is-ivisa
@@ -35,15 +35,7 @@ If you're not sure which case applies, check your email for a confirmation that 
 
 ## Other sites people ask about
 
-Every site below shows up in the top 5 Google results for *"thailand arrival card"* or *"TDAC"* depending on the day. None of them are the official TDAC. All of them charge for a form the Thai government provides for free.
-
-### Is `thailand-tdac.com` the official site?
-
-No.
-
-The `.com` suffix is an open top-level domain. Anyone can register it. The official TDAC is reserved under `.go.th`, a restricted suffix that only Thai government entities can register.
-
-`thailand-tdac.com` is a commercial reseller. It typically files the real TDAC with your data, so you usually arrive with a valid QR code. You paid for something that takes 8 minutes and costs nothing on the official site.
+Paid middleman sites show up in Google results for *"thailand arrival card"* or *"TDAC"* depending on the day. None of them are the official TDAC. They charge for a form the Thai government provides for free.
 
 ### Is `ivisa.com/thailand` the official site?
 
@@ -63,10 +55,9 @@ If a domain meets any of those criteria, treat it as untrusted regardless of whe
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
 {{< scam-site country="thailand" domain="ivisa.com" screenshot="/scams/ivisa-com-thailand.png" >}}
-{{< scam-site country="thailand" domain="thailand-tdac.com" >}}
 </div>
 
-All of the above have been documented charging fees for the free TDAC. Screenshots captured April 2026 and archived on [Wayback Machine](https://web.archive.org/).
+The site above has been documented charging fees for the free TDAC. Screenshots captured April 2026 and archived on [Wayback Machine](https://web.archive.org/).
 
 ## How to tell any TDAC site is not the real one
 
