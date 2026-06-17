@@ -1,0 +1,89 @@
+name: Verify official URLs
+
+on:
+  schedule:
+    # Mondays 10:00 Asia/Shanghai.
+    - cron: "0 2 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  deployments: write
+
+concurrency:
+  group: verify-official-urls
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    name: Verify official URLs and refresh dates
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN || secrets.CF_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID || secrets.CF_ACCOUNT_ID }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Verify official URLs
+        run: npm run verify:official-urls -- --write
+
+      - name: Detect refreshed dates
+        id: changes
+        run: |
+          git add data/official_urls
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No verification dates changed."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git diff --cached --stat
+          fi
+
+      - name: Build
+        if: steps.changes.outputs.changed == 'true'
+        run: npm run build:prod
+
+      - name: Check SEO files
+        if: steps.changes.outputs.changed == 'true'
+        run: npm run check:seo
+
+      - name: Commit refreshed verification dates
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(content): refresh official URL verification dates"
+          git push
+
+      - name: Check Cloudflare credentials
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          test -n "$CLOUDFLARE_API_TOKEN" || {
+            echo "Missing Cloudflare API token. Add CLOUDFLARE_API_TOKEN or CF_API_TOKEN in GitHub repository secrets."
+            exit 1
+          }
+          test -n "$CLOUDFLARE_ACCOUNT_ID" || {
+            echo "Missing Cloudflare account ID. Add CLOUDFLARE_ACCOUNT_ID or CF_ACCOUNT_ID in GitHub repository secrets."
+            exit 1
+          }
+
+      - name: Deploy to Cloudflare Pages
+        if: steps.changes.outputs.changed == 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ env.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ env.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy public --project-name=entrycardguide --branch=main --commit-dirty=true
