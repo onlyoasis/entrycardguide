@@ -2,6 +2,7 @@
 title: "Indonesia"
 kicker: "Everything you need to know about Indonesia's All Indonesia arrival declaration and e-CD customs record, without paying a middleman."
 description: "Free, independent guide to Indonesia's official All Indonesia arrival declaration. Required for arrivals, free, and filed at allindonesia.imigrasi.go.id."
+lastmod: 2026-06-17
 ---
 
 Indonesia's current traveler-facing arrival declaration is **All Indonesia** at `allindonesia.imigrasi.go.id`. It includes the free customs declaration record that replaced the paper e-CD workflow.

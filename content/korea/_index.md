@@ -2,6 +2,7 @@
 title: "South Korea"
 kicker: "Official Korea e-Arrival Card link, free filing, and how it differs from K-ETA and Q-Code."
 description: "Guide to Korea e-Arrival Card at e-arrivalcard.go.kr: official URL, free filing, fields, and middleman warnings."
+lastmod: 2026-06-17
 ---
 
 Korea e-Arrival Card is the official electronic arrival-card portal at `e-arrivalcard.go.kr`. It is separate from K-ETA, visas, and Q-Code health declarations.

@@ -3,7 +3,7 @@ title: "Indonesia All Indonesia / e-CD: Official Site, Free Customs Declaration,
 kicker: "Indonesia's All Indonesia arrival declaration includes the free e-CD customs record. Here is the official site, every field, and how to tell real from fake."
 description: "Free, independent 2026 guide to Indonesia's official All Indonesia arrival declaration at allindonesia.imigrasi.go.id. Every field explained, no fees, required for Bali / Jakarta / all ports."
 date: 2026-04-26
-lastmod: 2026-06-11
+lastmod: 2026-06-17
 country: "indonesia"
 weight: 10
 keywords: ["indonesia e-cd", "indonesia customs declaration", "allindonesia.imigrasi.go.id", "bali customs form", "bali arrival form", "indonesia customs online", "is ivisa official indonesia"]

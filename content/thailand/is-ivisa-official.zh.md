@@ -3,7 +3,7 @@ title: "iVisa 是泰国 TDAC 官网吗？不是：官方站、免费和退款建
 kicker: "不是。iVisa 是商业中介。泰国 TDAC 官方站是 tdac.immigration.go.th，免费。"
 description: "iVisa 不是泰国 TDAC 官方网站。真正官网是 tdac.immigration.go.th，TDAC 免费；这里说明如何判断真假和付钱后怎么办。"
 date: 2026-04-27
-lastmod: 2026-06-11
+lastmod: 2026-06-17
 country: "thailand"
 weight: 30
 keywords: ["iVisa 泰国", "iVisa TDAC 官方吗", "泰国 TDAC 官网", "泰国 TDAC 免费", "泰国入境卡骗局"]

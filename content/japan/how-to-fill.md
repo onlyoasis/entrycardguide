@@ -3,7 +3,7 @@ title: "How to Fill Visit Japan Web: Field-by-Field Guide (2026)"
 kicker: "Passport, flight, arrival date, and QR fields that cause most Visit Japan Web mistakes."
 description: "Step-by-step guide to Visit Japan Web fields and QR fallback handling."
 date: 2026-06-11
-lastmod: 2026-06-11
+lastmod: 2026-06-17
 country: "japan"
 weight: 20
 keywords: ["visit japan web how to fill", "visit japan web fields", "japan customs QR"]

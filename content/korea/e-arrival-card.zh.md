@@ -3,7 +3,7 @@ title: "韩国 e-Arrival Card 2026 指南：官网、免费填写和字段说明
 kicker: "韩国 e-Arrival Card 使用官方 .go.kr 门户。它免费，且不同于 K-ETA 和 Q-Code。"
 description: "韩国 e-Arrival Card 中文指南：官方网址 e-arrivalcard.go.kr、字段填写和中介提醒。"
 date: 2026-06-11
-lastmod: 2026-06-11
+lastmod: 2026-06-17
 country: "korea"
 weight: 10
 keywords: ["韩国 e-Arrival Card", "e-arrivalcard.go.kr", "韩国入境卡", "韩国入境表", "iVisa 韩国"]

@@ -3,7 +3,7 @@ title: "Is iVisa the Official Philippines eTravel Site? (No)"
 kicker: "No. The official Philippines eTravel site is etravel.gov.ph, and eTravel is free."
 description: "iVisa is not the official Philippines eTravel site. Use etravel.gov.ph for the free government declaration."
 date: 2026-06-11
-lastmod: 2026-06-11
+lastmod: 2026-06-17
 country: "philippines"
 weight: 30
 keywords: ["is ivisa official philippines", "philippines etravel scam", "etravel middleman"]

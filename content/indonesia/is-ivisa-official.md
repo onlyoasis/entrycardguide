@@ -3,7 +3,7 @@ title: "Is iVisa the Official Indonesia All Indonesia / e-VOA Site? (No)"
 kicker: "No. iVisa is a commercial middleman. Indonesia's All Indonesia / e-CD declaration is free at allindonesia.imigrasi.go.id; the official e-VOA visa is $35 USD at evisa.imigrasi.go.id."
 description: "Answering 'is ivisa official for Indonesia' — no. iVisa is a commercial middleman. The Indonesian government runs two separate sites for two separate forms."
 date: 2026-04-26
-lastmod: 2026-06-11
+lastmod: 2026-06-17
 country: "indonesia"
 weight: 30
 keywords: ["is ivisa official indonesia", "ivisa bali", "indonesia e-cd ivisa", "indonesia evoa middleman", "bali customs scam", "indonesia visa official site"]

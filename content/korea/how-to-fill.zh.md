@@ -3,7 +3,7 @@ title: "韩国 e-Arrival Card 字段填写指南（2026）"
 kicker: "韩国 e-Arrival Card 最容易出错的护照、航班、抵达日期和系统混淆字段。"
 description: "韩国 e-Arrival Card 字段逐项中文指南。"
 date: 2026-06-11
-lastmod: 2026-06-11
+lastmod: 2026-06-17
 country: "korea"
 weight: 20
 keywords: ["韩国 e-Arrival Card 怎么填", "e-arrivalcard 字段", "韩国入境卡二维码"]

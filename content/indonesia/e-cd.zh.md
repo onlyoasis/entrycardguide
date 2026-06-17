@@ -3,7 +3,7 @@ title: "印尼 All Indonesia / e-CD 2026 完整指南：官方网址、免费填
 kicker: "印尼 All Indonesia 入境申报包含免费的 e-CD 海关记录。这里是官方网址、所有字段、以及如何分辨真假。"
 description: "免费、独立的印尼 All Indonesia 入境申报中文指南。官方网址 allindonesia.imigrasi.go.id，每个字段逐项讲解，巴厘岛/雅加达入境必填。"
 date: 2026-04-26
-lastmod: 2026-06-11
+lastmod: 2026-06-17
 country: "indonesia"
 weight: 10
 keywords: ["印尼海关申报", "印尼 e-CD", "All Indonesia", "巴厘岛海关表", "印尼入境申报", "印尼海关在线", "iVisa 印尼"]

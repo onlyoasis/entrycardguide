@@ -3,7 +3,7 @@ title: "iVisa 是韩国 e-Arrival Card 官方网站吗？不是"
 kicker: "不是。韩国 e-Arrival Card 在官方 .go.kr 门户免费提交。K-ETA、签证和 Q-Code 是不同系统。"
 description: "iVisa 不是韩国 e-Arrival Card 官方网站。免费入境卡请使用 e-arrivalcard.go.kr。"
 date: 2026-06-11
-lastmod: 2026-06-11
+lastmod: 2026-06-17
 country: "korea"
 weight: 30
 keywords: ["iVisa 韩国", "韩国 e-Arrival Card 骗局", "e-arrivalcard 中介"]

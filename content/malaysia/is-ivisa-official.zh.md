@@ -3,7 +3,7 @@ title: "iVisa 是马来西亚 MDAC 官网吗？不是：官方站、免费和退
 kicker: "不是。iVisa 是商业中介。马来西亚 MDAC 官方站是 imigresen-online.imi.gov.my，免费。"
 description: "iVisa 不是马来西亚 MDAC 官方网站。真正官网由马来西亚移民局运营，MDAC 免费；这里说明真假判断和付钱后怎么办。"
 date: 2026-04-27
-lastmod: 2026-04-27
+lastmod: 2026-06-17
 country: "malaysia"
 weight: 30
 keywords: ["iVisa 马来西亚", "马来西亚 MDAC 官网", "MDAC 免费", "马来西亚入境卡骗局", "MDAC 官方"]

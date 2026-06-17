@@ -8,6 +8,7 @@ import { promisify } from "node:util";
 
 const ROOT = process.cwd();
 const DATA_DIR = path.join(ROOT, "data", "official_urls");
+const CONTENT_DIR = path.join(ROOT, "content");
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 
 const args = new Set(process.argv.slice(2));
@@ -67,8 +68,16 @@ async function main() {
     }
   }
 
+  const bumpedContent = write ? await bumpContentLastmod(results) : [];
+
   printSummary(results);
-  writeGithubSummary(results);
+  if (bumpedContent.length > 0) {
+    console.log("\nUpdated content lastmod:");
+    for (const file of bumpedContent) {
+      console.log(`- ${path.relative(ROOT, file)}`);
+    }
+  }
+  writeGithubSummary(results, bumpedContent);
 
   const okCount = results.filter((result) => result.ok).length;
   const failed = results.filter((result) => !result.ok);
@@ -95,13 +104,14 @@ function parseOfficialToml(text, file) {
   const lines = text.split("\n");
   let current = null;
   const sections = new Map();
+  const country = file.replace(/\.toml$/, "");
 
   for (const line of lines) {
     const sectionMatch = line.match(/^\s*\[([A-Za-z0-9_-]+)\]\s*$/);
     if (sectionMatch) {
       current = sectionMatch[1];
       if (!sections.has(current)) {
-        sections.set(current, { file, section: current });
+        sections.set(current, { country, file, section: current });
       }
       continue;
     }
@@ -286,6 +296,71 @@ function updateTomlText(text, successes, updateHeader) {
     .join("\n");
 }
 
+async function bumpContentLastmod(results) {
+  const successfulSites = new Set(
+    results
+      .filter((result) => result.ok)
+      .map((result) => `${result.country}.${result.section}`),
+  );
+  if (successfulSites.size === 0) return [];
+
+  const files = await listMarkdownFiles(CONTENT_DIR);
+  const bumped = [];
+
+  for (const file of files) {
+    const text = await readFile(file, "utf8");
+    const sites = [...text.matchAll(/\{\{<\s*official-link\s+site="([^"]+)"/g)]
+      .map((match) => match[1]);
+    if (!sites.some((site) => successfulSites.has(site))) continue;
+
+    const nextText = updateLastmod(text);
+    if (nextText !== text) {
+      await writeFile(file, nextText, "utf8");
+      bumped.push(file);
+    }
+  }
+
+  return bumped.sort();
+}
+
+async function listMarkdownFiles(dir) {
+  const entries = await readdir(dir, { withFileTypes: true });
+  const files = [];
+
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      files.push(...(await listMarkdownFiles(fullPath)));
+    } else if (entry.isFile() && entry.name.endsWith(".md")) {
+      files.push(fullPath);
+    }
+  }
+
+  return files;
+}
+
+function updateLastmod(text) {
+  const newline = text.startsWith("---\r\n")
+    ? "\r\n"
+    : text.startsWith("---\n")
+      ? "\n"
+      : "";
+  if (!newline) return text;
+
+  const end = text.indexOf(`${newline}---`, 3 + newline.length);
+  if (end === -1) return text;
+
+  const frontmatter = text.slice(0, end);
+  if (/^lastmod:\s*\d{4}-\d{2}-\d{2}\s*$/m.test(frontmatter)) {
+    return text.replace(
+      /^lastmod:\s*\d{4}-\d{2}-\d{2}\s*$/m,
+      `lastmod: ${targetDate}`,
+    );
+  }
+
+  return `${text.slice(0, end)}${newline}lastmod: ${targetDate}${text.slice(end)}`;
+}
+
 function printSummary(results) {
   const rows = results.map((result) => ({
     file: result.file,
@@ -311,7 +386,7 @@ function printSummary(results) {
   }
 }
 
-function writeGithubSummary(results) {
+function writeGithubSummary(results, bumpedContent) {
   const summaryPath = process.env.GITHUB_STEP_SUMMARY;
   if (!summaryPath) return;
 
@@ -324,6 +399,7 @@ function writeGithubSummary(results) {
     "",
     `Verified: **${passed.length}**`,
     `Not updated: **${failed.length}**`,
+    `Content lastmod updated: **${bumpedContent.length}**`,
     "",
     "| Result | File | Section | Status | URL |",
     "|---|---|---|---|---|",

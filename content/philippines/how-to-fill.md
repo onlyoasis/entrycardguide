@@ -3,7 +3,7 @@ title: "How to Fill Philippines eTravel: Field-by-Field Guide (2026)"
 kicker: "The eTravel fields that most often cause QR or email problems."
 description: "Step-by-step guide to the official Philippines eTravel fields at etravel.gov.ph."
 date: 2026-06-11
-lastmod: 2026-06-11
+lastmod: 2026-06-17
 country: "philippines"
 weight: 20
 keywords: ["philippines etravel how to fill", "etravel fields", "philippines arrival QR"]

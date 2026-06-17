@@ -2,6 +2,7 @@
 title: "泰国 TDAC 官方网站、免费填写和防中介指南"
 kicker: "关于泰国数字入境卡（TDAC）你需要知道的一切，不必经手任何中介。"
 description: "泰国 TDAC 中文指南：官方网址 tdac.immigration.go.th、免费填写、怎么填、iVisa 是否官方和假站警示。"
+lastmod: 2026-06-17
 ---
 
 泰国数字入境卡（TDAC）于 2025 年 5 月取代纸质入境卡。所有外国入境者都必须填写，免费，且只在 `tdac.immigration.go.th` 受理。

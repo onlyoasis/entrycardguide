@@ -3,7 +3,7 @@ title: "Cambodia e-Arrival: Official Site, Free Declaration, and Field Guide (20
 kicker: "Use arrival.gov.kh for Cambodia e-Arrival. The arrival declaration is free; visa fees are separate."
 description: "Free 2026 guide to Cambodia e-Arrival at arrival.gov.kh, with official URL, fields, and middleman warnings."
 date: 2026-06-11
-lastmod: 2026-06-11
+lastmod: 2026-06-17
 country: "cambodia"
 weight: 10
 keywords: ["cambodia e-arrival", "arrival.gov.kh", "cambodia arrival card", "cambodia entry form", "is ivisa official cambodia"]

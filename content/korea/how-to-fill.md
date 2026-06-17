@@ -3,7 +3,7 @@ title: "How to Fill Korea e-Arrival Card: Field-by-Field Guide (2026)"
 kicker: "Passport, flight, arrival date, and system-mix-up fields for Korea e-Arrival Card."
 description: "Step-by-step guide to Korea e-Arrival Card fields at e-arrivalcard.go.kr."
 date: 2026-06-11
-lastmod: 2026-06-11
+lastmod: 2026-06-17
 country: "korea"
 weight: 20
 keywords: ["korea e-arrival card how to fill", "e-arrivalcard fields", "korea arrival card QR"]

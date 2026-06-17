@@ -2,6 +2,7 @@
 title: "Philippines"
 kicker: "Official eTravel link, free filing, and how to avoid paid lookalike sites."
 description: "Free, independent guide to the official Philippines eTravel form at etravel.gov.ph."
+lastmod: 2026-06-17
 ---
 
 Philippines eTravel is the official electronic travel declaration at `etravel.gov.ph`. The homepage says eTravel is free.

@@ -49,7 +49,7 @@ jobs:
       - name: Detect refreshed dates
         id: changes
         run: |
-          git add data/official_urls
+          git add data/official_urls content
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No verification dates changed."

@@ -3,7 +3,7 @@ title: "How to Fill Indonesia's All Indonesia / e-CD: Field-by-Field Guide (2026
 kicker: "Field-by-field walkthrough of Indonesia's official All Indonesia / e-CD declaration with common errors and what they mean. About 7 minutes total."
 description: "Step-by-step 2026 guide to every field on Indonesia's official All Indonesia arrival declaration at allindonesia.imigrasi.go.id. Free, no fees, Bali / Jakarta / all ports."
 date: 2026-04-26
-lastmod: 2026-06-11
+lastmod: 2026-06-17
 country: "indonesia"
 weight: 20
 keywords: ["indonesia e-cd how to fill", "all indonesia fields", "bali customs form fields", "indonesia customs declaration help", "allindonesia.imigrasi.go.id fields"]

@@ -3,7 +3,7 @@ title: "Korea e-Arrival Card: Official Site, Free Filing, and Field Guide (2026)
 kicker: "Use the official .go.kr portal for Korea e-Arrival Card. It is free and separate from K-ETA and Q-Code."
 description: "Free 2026 guide to Korea e-Arrival Card at e-arrivalcard.go.kr, with official URL, fields, and middleman warnings."
 date: 2026-06-11
-lastmod: 2026-06-11
+lastmod: 2026-06-17
 country: "korea"
 weight: 10
 keywords: ["korea e-arrival card", "e-arrivalcard.go.kr", "korea arrival card", "south korea arrival form", "is ivisa official korea"]

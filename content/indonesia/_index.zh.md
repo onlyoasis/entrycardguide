@@ -2,6 +2,7 @@
 title: "印尼 All Indonesia 入境申报、e-CD 海关记录和巴厘岛入境指南"
 kicker: "关于印尼 All Indonesia 入境申报和 e-CD 海关记录你需要知道的一切，不必经手任何中介。"
 description: "印尼 All Indonesia 中文指南：官方网址 allindonesia.imigrasi.go.id、免费入境申报、巴厘岛/雅加达入境怎么填、iVisa 是否官方。"
+lastmod: 2026-06-17
 ---
 
 印尼当前面向旅客的入境申报入口是 **All Indonesia**：`allindonesia.imigrasi.go.id`。它包含免费的海关申报记录，也就是原 e-CD 流程对应的海关信息。

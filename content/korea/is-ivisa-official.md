@@ -3,7 +3,7 @@ title: "Is iVisa the Official Korea e-Arrival Card Site? (No)"
 kicker: "No. Korea e-Arrival Card is free at the official .go.kr portal. K-ETA, visas, and Q-Code are separate."
 description: "iVisa is not the official Korea e-Arrival Card site. Use e-arrivalcard.go.kr for the free arrival card."
 date: 2026-06-11
-lastmod: 2026-06-11
+lastmod: 2026-06-17
 country: "korea"
 weight: 30
 keywords: ["is ivisa official korea", "korea e-arrival card scam", "e-arrivalcard middleman"]
