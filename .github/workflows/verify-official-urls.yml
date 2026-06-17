@@ -44,7 +44,7 @@ jobs:
         run: npm ci
 
       - name: Verify official URLs
-        run: npm run verify:official-urls -- --write
+        run: npm run verify:official-urls -- --write --timeout-ms 45000
 
       - name: Detect refreshed dates
         id: changes

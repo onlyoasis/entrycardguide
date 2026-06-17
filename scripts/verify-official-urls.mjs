@@ -145,6 +145,19 @@ async function verify(entry) {
   const curlResult = await verifyWithCurl(entry);
   if (curlResult.ok) return curlResult;
 
+  if (
+    isTlsVerificationError(fetchResult.error) ||
+    isTlsVerificationError(curlResult.error)
+  ) {
+    const insecureCurlResult = await verifyWithCurl(entry, { insecure: true });
+    if (insecureCurlResult.ok) {
+      return {
+        ...insecureCurlResult,
+        warning: "verified after TLS certificate-chain fallback",
+      };
+    }
+  }
+
   return {
     ...curlResult,
     error: [fetchResult.error || `HTTP ${fetchResult.status}`, curlResult.error]
@@ -182,25 +195,28 @@ async function verifyWithFetch(entry) {
   }
 }
 
-async function verifyWithCurl(entry) {
+async function verifyWithCurl(entry, options = {}) {
+  const args = [
+    "-sS",
+    "-L",
+    "--max-time",
+    String(Math.ceil(timeoutMs / 1000)),
+    "-A",
+    headers["user-agent"],
+    "-o",
+    "/dev/null",
+    "-w",
+    "%{http_code} %{url_effective}",
+    entry.url,
+  ];
+  if (options.insecure) {
+    args.splice(2, 0, "--insecure");
+  }
+
   try {
-    const { stdout } = await execFileAsync(
-      "curl",
-      [
-        "-sS",
-        "-L",
-        "--max-time",
-        String(Math.ceil(timeoutMs / 1000)),
-        "-A",
-        headers["user-agent"],
-        "-o",
-        "/dev/null",
-        "-w",
-        "%{http_code} %{url_effective}",
-        entry.url,
-      ],
-      { timeout: timeoutMs + 5000 },
-    );
+    const { stdout } = await execFileAsync("curl", args, {
+      timeout: timeoutMs + 5000,
+    });
     const [statusText, finalUrl = entry.url] = stdout.trim().split(/\s+/, 2);
     const status = Number(statusText);
     return {
@@ -223,11 +239,19 @@ function cleanError(error) {
   if (error.name === "AbortError") return "timeout";
   if (error.cause?.code) return error.cause.code;
   if (error.stderr) {
-    const stderr = String(error.stderr).trim().split("\n").at(-1);
+    const lines = String(error.stderr).trim().split("\n");
+    const stderr =
+      lines.find((line) => /certificate|ssl/i.test(line)) || lines.at(-1);
     if (stderr) return stderr;
   }
   if (error.code) return error.code;
   return error.message || String(error);
+}
+
+function isTlsVerificationError(error) {
+  return /certificate|UNABLE_TO_VERIFY|SELF_SIGNED|CERT_/i.test(
+    String(error || ""),
+  );
 }
 
 function updateTomlText(text, successes, updateHeader) {
@@ -269,7 +293,9 @@ function printSummary(results) {
     status: result.ok ? `ok ${result.status}` : "failed",
     verified: result.ok ? targetDate : result.lastVerified,
     url: result.url,
-    note: result.ok ? "" : result.error || `HTTP ${result.status}`,
+    note: result.ok
+      ? result.warning || ""
+      : result.error || `HTTP ${result.status}`,
   }));
 
   console.table(rows);
@@ -304,7 +330,7 @@ function writeGithubSummary(results) {
     ...results.map((result) => {
       const mark = result.ok ? "PASS" : "SKIP";
       const status = result.ok
-        ? String(result.status)
+        ? [String(result.status), result.warning].filter(Boolean).join(" - ")
         : result.error || `HTTP ${result.status}`;
       return `| ${mark} | \`${result.file}\` | \`${result.section}\` | ${status} | ${result.url} |`;
     }),
