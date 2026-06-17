@@ -6,7 +6,7 @@
 url = "https://evisa.gov.vn"
 name = "Vietnam E-Visa (Official)"
 agency = "Vietnam Immigration Department (Cục Quản lý xuất nhập cảnh)"
-last_verified = "2026-06-11"
+last_verified = "2026-06-17"
 archive_url = "https://web.archive.org/web/2026/https://evisa.gov.vn"
 notes = "Reserved under .gov.vn — only Vietnamese government entities can register this domain suffix. The legacy evisa.xuatnhapcanh.gov.vn page says the e-visa portal moved to evisa.gov.vn and thithucdientu.gov.vn on 2024-11-11. Government fee: USD $25 single-entry, USD $50 multi-entry. This is a real fee, not free."
 
@@ -14,7 +14,7 @@ notes = "Reserved under .gov.vn — only Vietnamese government entities can regi
 url = "https://thithucdientu.gov.vn"
 name = "Vietnam National Electronic Visa System (Vietnamese domain)"
 agency = "Vietnam Immigration Department"
-last_verified = "2026-06-11"
+last_verified = "2026-06-17"
 notes = "Second official domain named in the old Immigration Department portal notice."
 
 [immigration_home]

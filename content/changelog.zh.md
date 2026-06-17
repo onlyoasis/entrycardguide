@@ -2,7 +2,7 @@
 title: "变更日志"
 description: "entrycardguide.com 的重要变更：政府政策更新、新国家、内容勘误和假站审计。"
 date: 2026-04-27
-lastmod: 2026-06-11
+lastmod: 2026-06-17
 url: "/zh/changelog/"
 ---
 
@@ -14,6 +14,16 @@ url: "/zh/changelog/"
 - 我们新增或移除 `scam_sites` 假站名单里的域名
 
 我们**不会**记录每个错别字或样式微调。那些可以看 [git 历史](https://github.com/onlyoasis/entrycardguide/commits/main)。
+
+---
+
+## 2026-06-17 - 为未变更的官方链接补齐 URL 核验日期
+
+重新检查了 6 月地址审计中未发生变化的官方 URL 记录，并更新它们的 `last_verified` 日期，不再保留旧的 4 月日期。
+
+- 更新：马来西亚 MDAC、墨西哥 FMM-E、新加坡 SGAC、印尼 All Indonesia / e-VOA、菲律宾 eTravel、柬埔寨 e-Arrival、日本 Visit Japan Web、韩国 e-Arrival Card
+- 更新：泰国 TDAC 主入口和越南两个当前 e-visa 官方域名
+- 保持不变：这次复查仍返回 403 或 DNS 失败的 URL，不在缺少证据时标为“已重新核验”
 
 ---
 

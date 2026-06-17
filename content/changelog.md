@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "What changed on entrycardguide.com: government policy updates, new countries, content corrections, and scam-site audits."
 date: 2026-04-27
-lastmod: 2026-06-11
+lastmod: 2026-06-17
 url: "/changelog/"
 ---
 
@@ -14,6 +14,16 @@ A running log of substantive updates. We publish a new entry when:
 - We add or remove a domain from the `scam_sites` list
 
 We do **not** log every typo fix or layout tweak. For that, see [the git history](https://github.com/onlyoasis/entrycardguide/commits/main).
+
+---
+
+## 2026-06-17 - URL verification dates corrected for unchanged official links
+
+Re-checked official URL records that stayed unchanged in the June address audit and updated their `last_verified` dates instead of leaving the older April dates in place.
+
+- Updated: Malaysia MDAC, Mexico FMM-E, Singapore SGAC, Indonesia All Indonesia / e-VOA, Philippines eTravel, Cambodia e-Arrival, Visit Japan Web, Korea e-Arrival Card
+- Updated: Thailand TDAC main portal and Vietnam's two current e-visa domains
+- Left unchanged: URLs that still returned 403 or failed DNS during this follow-up check, so we do not mark them freshly verified without evidence
 
 ---
 

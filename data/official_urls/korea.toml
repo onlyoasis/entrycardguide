@@ -1,12 +1,12 @@
 # South Korea — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-06-11
+# Last verified: 2026-06-17
 
 [earrivalcard]
 url = "https://www.e-arrivalcard.go.kr/portal/main/index.do"
 name = "Korea e-Arrival Card"
 agency = "Korea Immigration Service"
-last_verified = "2026-06-11"
+last_verified = "2026-06-17"
 archive_url = "https://web.archive.org/web/2026/https://www.e-arrivalcard.go.kr/portal/main/index.do"
 notes = "Reserved under .go.kr. Official Korea e-Arrival Card portal for eligible foreign arrivals. Free."
 

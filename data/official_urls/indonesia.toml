@@ -1,12 +1,12 @@
 # Indonesia — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-06-11
+# Last verified: 2026-06-17
 
 [ecd]
 url = "https://allindonesia.imigrasi.go.id"
 name = "All Indonesia arrival declaration (includes e-CD customs declaration)"
 agency = "Direktorat Jenderal Imigrasi / Direktorat Jenderal Bea dan Cukai"
-last_verified = "2026-06-11"
+last_verified = "2026-06-17"
 archive_url = "https://web.archive.org/web/2026/https://allindonesia.imigrasi.go.id"
 notes = "Reserved under .go.id. Current unified arrival portal for the Indonesia arrival declaration, including the e-CD customs declaration. Free."
 
@@ -14,20 +14,20 @@ notes = "Reserved under .go.id. Current unified arrival portal for the Indonesia
 url = "https://evisa.imigrasi.go.id"
 name = "Indonesia Electronic Visa on Arrival (e-VOA)"
 agency = "Direktorat Jenderal Imigrasi (Indonesian Directorate General of Immigration)"
-last_verified = "2026-06-11"
+last_verified = "2026-06-17"
 notes = "For nationalities not covered by visa-free entry. Government fee: IDR 500,000 (~USD $35). Different from the e-CD which is free. Both may be required."
 
 [immigration_home]
 url = "https://www.imigrasi.go.id"
 name = "Indonesia Immigration (home)"
 agency = "Direktorat Jenderal Imigrasi"
-last_verified = "2026-06-11"
+last_verified = "2026-06-17"
 
 [customs_legacy]
 url = "https://ecd.beacukai.go.id"
 name = "Indonesia e-CD legacy customs portal"
 agency = "Direktorat Jenderal Bea dan Cukai"
-last_verified = "2026-06-11"
+last_verified = "2026-06-17"
 notes = "Legacy standalone e-CD portal still resolves. The current traveler-facing entry point is All Indonesia."
 
 # Country-page metadata (consumed by country-form layout).
