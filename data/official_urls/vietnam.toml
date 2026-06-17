@@ -21,7 +21,7 @@ notes = "Second official domain named in the old Immigration Department portal n
 url = "https://www.xuatnhapcanh.gov.vn"
 name = "Vietnam Immigration Department (home)"
 agency = "Vietnam Immigration Department"
-last_verified = "2026-06-11"
+last_verified = "2026-06-17"
 
 # Country-page metadata (consumed by country-form layout).
 # Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
