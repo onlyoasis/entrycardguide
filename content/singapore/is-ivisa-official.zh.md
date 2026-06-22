@@ -3,7 +3,7 @@ title: "iVisa 是新加坡 SGAC 官网吗？不是：ICA 官方免费入境卡"
 kicker: "不是。iVisa 是商业中介。新加坡入境卡（SGAC）的官方站是 eservices.ica.gov.sg，永远免费。"
 description: "iVisa 不是新加坡 SGAC 官方网站。真正官网是 ICA 的 eservices.ica.gov.sg，SGAC 免费；这里说明真假判断和付钱后怎么办。"
 date: 2026-04-26
-lastmod: 2026-06-17
+lastmod: 2026-06-22
 country: "singapore"
 weight: 30
 keywords: ["iVisa 新加坡", "iVisa SGAC", "新加坡入境卡 骗局", "SGAC 中介", "新加坡签证假站"]

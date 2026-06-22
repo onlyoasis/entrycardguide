@@ -3,7 +3,7 @@ title: "Evisa Vietnam Official Site: $25/$50 Government Fee (2026)"
 kicker: "The official Vietnam evisa site is evisa.gov.vn. The government fee is $25 single-entry or $50 multi-entry."
 description: "Evisa Vietnam official site guide: apply at evisa.gov.vn, pay the $25/$50 government fee, and avoid visa middlemen."
 date: 2026-04-26
-lastmod: 2026-06-17
+lastmod: 2026-06-22
 country: "vietnam"
 weight: 10
 keywords: ["vietnam e-visa", "vietnam evisa official", "evisa.gov.vn", "vietnam visa online", "vietnam e-visa fee", "is ivisa official vietnam", "vietnam visa scam"]

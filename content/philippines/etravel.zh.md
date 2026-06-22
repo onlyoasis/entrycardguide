@@ -3,7 +3,7 @@ title: "菲律宾 eTravel 2026 指南：官网、免费二维码和字段填写"
 kicker: "菲律宾 eTravel 官方网站是 etravel.gov.ph。它免费。收费代填站都是中介。"
 description: "菲律宾 eTravel 中文指南：官方 URL、二维码确认、字段填写和付费仿冒站提醒。"
 date: 2026-06-11
-lastmod: 2026-06-17
+lastmod: 2026-06-22
 country: "philippines"
 weight: 10
 keywords: ["菲律宾 eTravel", "etravel.gov.ph", "菲律宾入境申报", "菲律宾旅行申报", "iVisa 菲律宾"]

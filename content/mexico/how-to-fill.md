@@ -3,7 +3,7 @@ title: "How to fill every field on the Mexico FMM-E"
 kicker: "Field-by-field walkthrough of the official INM form with common errors and what they mean. 10 minutes total."
 description: "Step-by-step guide to every field on Mexico's Forma Migratoria Múltiple Electrónica. Free and independent."
 date: 2026-04-24
-lastmod: 2026-06-17
+lastmod: 2026-06-22
 country: "mexico"
 weight: 20
 layout: how-to-fill

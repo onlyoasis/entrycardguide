@@ -3,7 +3,7 @@ title: "柬埔寨 e-Arrival 字段填写指南（2026）"
 kicker: "护照、日期和二维码最容易出错的柬埔寨 e-Arrival 字段。"
 description: "柬埔寨官方 e-Arrival 字段逐项中文指南。"
 date: 2026-06-11
-lastmod: 2026-06-17
+lastmod: 2026-06-22
 country: "cambodia"
 weight: 20
 keywords: ["柬埔寨 e-Arrival 怎么填", "arrival.gov.kh 字段", "柬埔寨入境二维码"]

@@ -3,7 +3,7 @@ title: "iVisa 是 Visit Japan Web 官方网站吗？不是"
 kicker: "不是。Visit Japan Web 是免费的日本政府流程。签证服务另算。"
 description: "iVisa 不是 Visit Japan Web 官方网站。免费二维码流程请使用日本数字厅官方来源。"
 date: 2026-06-11
-lastmod: 2026-06-17
+lastmod: 2026-06-22
 country: "japan"
 weight: 30
 keywords: ["iVisa 日本", "Visit Japan Web 骗局", "Visit Japan Web 中介"]

@@ -3,7 +3,7 @@ title: "iVisa 是菲律宾 eTravel 官方网站吗？不是"
 kicker: "不是。菲律宾 eTravel 官方网站是 etravel.gov.ph，且 eTravel 免费。"
 description: "iVisa 不是菲律宾 eTravel 官方网站。免费政府申报请使用 etravel.gov.ph。"
 date: 2026-06-11
-lastmod: 2026-06-17
+lastmod: 2026-06-22
 country: "philippines"
 weight: 30
 keywords: ["iVisa 菲律宾", "菲律宾 eTravel 骗局", "eTravel 中介"]

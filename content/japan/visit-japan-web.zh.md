@@ -3,7 +3,7 @@ title: "Visit Japan Web 2026 指南：官方入口、免费二维码和字段填
 kicker: "Visit Japan Web 使用日本数字厅 .go.jp 服务页。流程免费。"
 description: "Visit Japan Web 中文指南：日本数字厅官方 URL、二维码流程、字段填写和仿冒站提醒。"
 date: 2026-06-11
-lastmod: 2026-06-17
+lastmod: 2026-06-22
 country: "japan"
 weight: 10
 keywords: ["Visit Japan Web", "Visit Japan Web 官方", "日本入境二维码", "iVisa 日本"]

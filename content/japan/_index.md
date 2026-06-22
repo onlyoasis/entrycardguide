@@ -2,7 +2,7 @@
 title: "Japan"
 kicker: "Official Visit Japan Web link, free QR workflow, and how to avoid fake login pages."
 description: "Guide to Visit Japan Web: official Digital Agency URL, free arrival QR workflow, fields, and middleman warnings."
-lastmod: 2026-06-17
+lastmod: 2026-06-22
 ---
 
 Visit Japan Web is Japan's official digital service for arrival-related QR workflows. The stable government service page is on the Digital Agency domain.

@@ -3,7 +3,7 @@ title: "马来西亚 MDAC 怎么填：每个字段填写指南和常见错误"
 kicker: "马来西亚官方移民局 MDAC 表单字段逐项讲解，常见错误及含义。约 7 分钟看完。"
 description: "马来西亚 MDAC 怎么填：按官方表单顺序讲解护照、行程、住宿和邮箱字段，附常见错误和免费官网入口。"
 date: 2026-04-24
-lastmod: 2026-06-17
+lastmod: 2026-06-22
 country: "malaysia"
 weight: 20
 keywords: ["MDAC 怎么填", "马来西亚入境卡字段", "MDAC 字段填写", "马来西亚移民局表单帮助"]
