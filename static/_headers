@@ -10,8 +10,8 @@
   Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   Cross-Origin-Opener-Policy: same-origin
-  # Cloudflare Web Analytics injects beacon.min.js at the edge. Keep the allowlist narrow.
-  Content-Security-Policy: default-src 'self'; img-src 'self' data: https://web.archive.org; style-src 'self' 'unsafe-inline'; script-src 'self' https://static.cloudflareinsights.com; font-src 'self'; connect-src 'self' https://cloudflareinsights.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; require-trusted-types-for 'script'; trusted-types default decide
+  # Cloudflare Web Analytics and optional GA4 are the only third-party scripts.
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: https://web.archive.org https://www.google-analytics.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; script-src 'self' https://static.cloudflareinsights.com https://www.googletagmanager.com; font-src 'self'; connect-src 'self' https://cloudflareinsights.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; require-trusted-types-for 'script'; trusted-types default decide
 
 # Long cache for fingerprinted assets (Hugo fingerprints CSS and JS in production)
 /assets/*

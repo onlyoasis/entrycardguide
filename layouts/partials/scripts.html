@@ -19,3 +19,13 @@
   {{- $dec = $dec | resources.Fingerprint "sha256" }}
 {{- end }}
 <script src="{{ $dec.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $dec.Data.Integrity }}"{{ end }} defer></script>
+
+{{- /* Analytics — one GA4 pre-conversion event for affiliate clicks.
+       No-ops until params.analytics.ga4.measurement.id is configured. */ -}}
+{{- $analyticsOpts := dict "targetPath" "js/analytics.js" "minify" hugo.IsProduction "target" "es2020" "format" "iife" }}
+{{- $analytics := resources.Get "js/analytics.ts" | js.Build $analyticsOpts }}
+{{- if hugo.IsProduction }}
+  {{- $analytics = $analytics | resources.Fingerprint "sha256" }}
+{{- end }}
+{{- $ga4 := .Site.Params.analytics.ga4.measurement.id | default "" }}
+<script src="{{ $analytics.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $analytics.Data.Integrity }}"{{ end }}{{ with $ga4 }} data-ga4-measurement-id="{{ . }}"{{ end }} defer></script>

@@ -14,7 +14,7 @@
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
     {{- with $safetywing }}
-    <a href="{{ . }}" rel="sponsored noopener noreferrer" class="block border border-rule p-md no-underline hover:border-ink">
+    <a href="{{ . }}" rel="sponsored noopener noreferrer" data-analytics-event="affiliate_click" data-affiliate-partner="safetywing" data-affiliate-slot="footer" class="block border border-rule p-md no-underline hover:border-ink">
       <span class="block text-meta text-muted font-mono uppercase mb-2">{{ i18n "affiliate_safetywing_label" }}</span>
       <strong class="block text-ink mb-2">{{ i18n "affiliate_safetywing_heading" }}</strong>
       <span class="block text-small text-muted leading-relaxed mb-3">{{ i18n "affiliate_safetywing_body" }}</span>
@@ -23,7 +23,7 @@
     {{- end }}
 
     {{- with $airalo }}
-    <a href="{{ . }}" rel="sponsored noopener noreferrer" class="block border border-rule p-md no-underline hover:border-ink">
+    <a href="{{ . }}" rel="sponsored noopener noreferrer" data-analytics-event="affiliate_click" data-affiliate-partner="airalo" data-affiliate-slot="footer" class="block border border-rule p-md no-underline hover:border-ink">
       <span class="block text-meta text-muted font-mono uppercase mb-2">{{ i18n "affiliate_airalo_label" }}</span>
       <strong class="block text-ink mb-2">{{ i18n "affiliate_airalo_heading" }}</strong>
       <span class="block text-small text-muted leading-relaxed mb-3">{{ i18n "affiliate_airalo_body" }}</span>

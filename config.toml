@@ -192,6 +192,9 @@ defaultContentLanguageInSubdir = false
     safetywing_url = "https://safetywing.com/?referenceID=26517368&utm_source=26517368&utm_medium=Ambassador"
     airalo_url = ""
 
+  [params.analytics.ga4.measurement]
+    id = "G-8C2Q42N506"
+
 [markup]
   [markup.goldmark.renderer]
     unsafe = true

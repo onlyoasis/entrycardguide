@@ -47,6 +47,7 @@ for (const file of ["public/en/sitemap.xml", "public/zh/sitemap.xml"]) {
 
 const htmlFiles = [];
 const referencedCssFiles = new Set();
+const jsFiles = [];
 function walk(dir) {
   for (const entry of readdirSync(dir, { withFileTypes: true })) {
     const fullPath = path.join(dir, entry.name);
@@ -54,6 +55,8 @@ function walk(dir) {
       walk(fullPath);
     } else if (entry.isFile() && entry.name.endsWith(".html")) {
       htmlFiles.push(fullPath);
+    } else if (entry.isFile() && entry.name.endsWith(".js")) {
+      jsFiles.push(fullPath);
     }
   }
 }
@@ -171,6 +174,58 @@ if (missingCssTargets.length) {
 
 if (hreflangProblems.length) {
   throw new Error(`Invalid hreflang links:\n${hreflangProblems.slice(0, 30).join("\n")}`);
+}
+
+const affiliateAnalyticsProblems = [];
+const affiliateLinkPattern =
+  /<a\b(?=[^>]*\bhref=(?:"[^"]*(?:safetywing\.com|airalo)[^"]*"|'[^']*(?:safetywing\.com|airalo)[^']*'))[^>]*>/g;
+
+for (const file of htmlFiles) {
+  const html = readFileSync(file, "utf8");
+  for (const match of html.matchAll(affiliateLinkPattern)) {
+    const link = match[0];
+    if (!/\bdata-analytics-event=(?:"affiliate_click"|'affiliate_click'|affiliate_click)(?:\s|>|$)/.test(link)) {
+      affiliateAnalyticsProblems.push(
+        `${path.relative(publicDir, file)} affiliate link missing data-analytics-event`,
+      );
+    }
+    if (!/\bdata-affiliate-partner=/.test(link)) {
+      affiliateAnalyticsProblems.push(
+        `${path.relative(publicDir, file)} affiliate link missing data-affiliate-partner`,
+      );
+    }
+  }
+}
+
+const hasAffiliateClickScript = jsFiles.some(file => {
+  const js = readFileSync(file, "utf8");
+  return js.includes("affiliate_click") && js.includes("gtag");
+});
+
+if (!hasAffiliateClickScript) {
+  affiliateAnalyticsProblems.push("No built JS bundle tracks affiliate_click with gtag");
+}
+
+const ga4MeasurementId = process.env.HUGO_PARAMS_ANALYTICS_GA4_MEASUREMENT_ID?.trim();
+if (ga4MeasurementId) {
+  const homeHtml = readFileSync("public/index.html", "utf8");
+  if (!homeHtml.includes(`https://www.googletagmanager.com/gtag/js?id=${ga4MeasurementId}`)) {
+    affiliateAnalyticsProblems.push("Configured GA4 measurement ID is missing from public/index.html");
+  }
+  if (!homeHtml.includes(`data-ga4-measurement-id="${ga4MeasurementId}"`)) {
+    const dataAttrPattern = new RegExp(
+      `data-ga4-measurement-id=(?:"${ga4MeasurementId}"|'${ga4MeasurementId}'|${ga4MeasurementId})(?:\\s|>)`,
+    );
+    if (!dataAttrPattern.test(homeHtml)) {
+      affiliateAnalyticsProblems.push("Configured GA4 measurement ID is missing from analytics script data attribute");
+    }
+  }
+}
+
+if (affiliateAnalyticsProblems.length) {
+  throw new Error(
+    `Invalid affiliate analytics wiring:\n${affiliateAnalyticsProblems.slice(0, 30).join("\n")}`,
+  );
 }
 
 const jsonLdPattern =

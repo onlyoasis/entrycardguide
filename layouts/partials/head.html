@@ -4,6 +4,10 @@
 
 <title>{{ if .IsHome }}{{ if eq .Site.Language.Lang "zh" }}{{ .Title }} · {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
 
+{{- with .Site.Params.analytics.ga4.measurement.id }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+{{- end }}
+
 {{- /* Canonical */ -}}
 <link rel="canonical" href="{{ .Permalink }}">
 
