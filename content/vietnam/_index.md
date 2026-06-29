@@ -2,7 +2,7 @@
 title: "Vietnam"
 kicker: "Everything you need to know about the Vietnam E-Visa, without paying a middleman a 4x markup."
 description: "Free, independent guide to Vietnam's official E-Visa. The government fee is $25. Middlemen charge $80-200 for the same form."
-lastmod: 2026-06-22
+lastmod: 2026-06-29
 ---
 
 Vietnam's E-Visa is filed at `evisa.gov.vn`. Unlike Thailand's TDAC or Malaysia's MDAC, Vietnam's e-visa **has a real government fee**: $25 USD single-entry, $50 USD multiple-entry. That fee is real and paid to the Vietnamese government.

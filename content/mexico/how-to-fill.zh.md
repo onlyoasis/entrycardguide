@@ -3,7 +3,7 @@ title: "墨西哥 FMM-E 怎么填：每个字段填写指南和常见错误"
 kicker: "墨西哥官方 INM 表单字段逐项讲解，常见错误及含义。约 10 分钟看完。"
 description: "墨西哥 FMM-E 怎么填：按 INM 官方表单顺序讲解护照、航班、入境信息和常见错误，附免费官网入口。"
 date: 2026-04-24
-lastmod: 2026-06-22
+lastmod: 2026-06-29
 country: "mexico"
 weight: 20
 keywords: ["FMM 怎么填", "墨西哥入境表字段", "FMM-E 字段填写", "INM 表单帮助"]

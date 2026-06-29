@@ -3,7 +3,7 @@ title: "Mexico FMM-E: Official Site, Free Online Form, Scam-Free Guide (2026)"
 kicker: "Mexico's electronic entry permit is free. Here is the official INM site, every field it asks, and how to tell real from fake."
 description: "Free, independent 2026 guide to Mexico's Forma Migratoria Múltiple Electrónica (FMM-E). Official INM URL, every field explained, no fees."
 date: 2026-04-24
-lastmod: 2026-06-22
+lastmod: 2026-06-29
 country: "mexico"
 weight: 10
 keywords: ["mexico FMM", "FMM electronic", "FMM-E", "mexico tourist card", "mexico immigration form", "INM FMM official", "is ivisa official mexico"]

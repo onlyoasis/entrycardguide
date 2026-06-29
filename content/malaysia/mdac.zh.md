@@ -3,7 +3,7 @@ title: "马来西亚入境卡 MDAC 2026：官方网站和免费表格"
 kicker: "马来西亚 MDAC 入境卡免费。使用官方 MDAC 网站 imigresen-online.imi.gov.my，避开收费中介。"
 description: "马来西亚入境卡 MDAC 中文指南：官方网站、免费政府表格、谁要填、什么时候提交，以及如何避开收费假站。"
 date: 2026-04-24
-lastmod: 2026-06-22
+lastmod: 2026-06-29
 country: "malaysia"
 weight: 10
 keywords: ["马来西亚 MDAC", "马来西亚电子入境卡", "马来西亚数字入境卡", "MDAC 怎么填", "iVisa 马来西亚"]

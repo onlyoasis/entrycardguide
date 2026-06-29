@@ -27,7 +27,7 @@ last_verified = "2026-06-17"
 url = "https://ecd.beacukai.go.id"
 name = "Indonesia e-CD legacy customs portal"
 agency = "Direktorat Jenderal Bea dan Cukai"
-last_verified = "2026-06-22"
+last_verified = "2026-06-29"
 notes = "Legacy standalone e-CD portal still resolves. The current traveler-facing entry point is All Indonesia."
 
 # Country-page metadata (consumed by country-form layout).

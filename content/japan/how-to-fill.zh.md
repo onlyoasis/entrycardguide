@@ -3,7 +3,7 @@ title: "Visit Japan Web 字段填写指南（2026）"
 kicker: "Visit Japan Web 最容易出错的护照、航班、抵达日期和二维码字段。"
 description: "Visit Japan Web 字段逐项中文指南，以及二维码兜底处理。"
 date: 2026-06-11
-lastmod: 2026-06-22
+lastmod: 2026-06-29
 country: "japan"
 weight: 20
 keywords: ["Visit Japan Web 怎么填", "Visit Japan Web 字段", "日本海关二维码"]

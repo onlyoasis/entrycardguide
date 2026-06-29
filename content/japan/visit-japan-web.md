@@ -3,7 +3,7 @@ title: "Visit Japan Web: Official Site, Free QR Workflow, and Field Guide (2026)
 kicker: "Use the Digital Agency .go.jp service page for Visit Japan Web. The workflow is free."
 description: "Free 2026 guide to Visit Japan Web: official Digital Agency URL, QR workflows, fields, and fake-site warnings."
 date: 2026-06-11
-lastmod: 2026-06-22
+lastmod: 2026-06-29
 country: "japan"
 weight: 10
 keywords: ["visit japan web", "visit japan web official", "vjw digital go jp", "japan arrival QR", "is ivisa official japan"]

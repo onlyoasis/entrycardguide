@@ -3,7 +3,7 @@ title: "Is iVisa the Official Visit Japan Web Site? (No)"
 kicker: "No. Visit Japan Web is a free Japanese government workflow. Visa services are separate."
 description: "iVisa is not the official Visit Japan Web site. Use the Japanese Digital Agency source for the free QR workflow."
 date: 2026-06-11
-lastmod: 2026-06-22
+lastmod: 2026-06-29
 country: "japan"
 weight: 30
 keywords: ["is ivisa official japan", "visit japan web scam", "visit japan web middleman"]

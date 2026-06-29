@@ -2,7 +2,7 @@
 title: "菲律宾 eTravel 官方网站、免费填写和防中介指南"
 kicker: "菲律宾 eTravel 官方链接、免费填写方式，以及如何避开付费仿冒站。"
 description: "菲律宾 eTravel 中文指南：官方网址 etravel.gov.ph、免费申报、字段填写和 iVisa 是否官方。"
-lastmod: 2026-06-22
+lastmod: 2026-06-29
 ---
 
 菲律宾 eTravel 是官方电子旅行申报，网址是 `etravel.gov.ph`。官方首页明确写着 eTravel 免费。

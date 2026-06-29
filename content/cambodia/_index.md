@@ -2,7 +2,7 @@
 title: "Cambodia"
 kicker: "Official Cambodia e-Arrival link, free arrival declaration, and visa-fee boundaries."
 description: "Guide to Cambodia e-Arrival at arrival.gov.kh: official URL, free arrival declaration, fields, and middleman warnings."
-lastmod: 2026-06-22
+lastmod: 2026-06-29
 ---
 
 Cambodia e-Arrival is the official digital arrival declaration at `arrival.gov.kh`. It can sit next to visa steps, but the arrival declaration itself is not a paid middleman service.

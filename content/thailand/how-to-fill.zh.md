@@ -3,7 +3,7 @@ title: "泰国 TDAC 怎么填：每个字段填写指南和常见错误"
 kicker: "泰国官方 TDAC 表单字段逐项讲解，常见错误与真实原因。约 8 分钟看完。"
 description: "泰国 TDAC 怎么填：按官方表单顺序讲解护照、航班、抵达日期、邮箱等字段，附常见错误和免费官网入口。"
 date: 2026-04-22
-lastmod: 2026-06-22
+lastmod: 2026-06-29
 country: "thailand"
 weight: 20
 keywords: ["TDAC 怎么填", "泰国入境卡字段", "TDAC 字段填写", "泰国 TDAC 帮助"]

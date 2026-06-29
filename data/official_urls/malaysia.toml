@@ -1,12 +1,12 @@
 # Malaysia — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-06-22
+# Last verified: 2026-06-29
 
 [mdac]
 url = "https://imigresen-online.imi.gov.my/mdac/main"
 name = "Malaysia Digital Arrival Card (MDAC)"
 agency = "Jabatan Imigresen Malaysia (Immigration Department of Malaysia)"
-last_verified = "2026-06-22"
+last_verified = "2026-06-29"
 archive_url = "https://web.archive.org/web/2026/https://imigresen-online.imi.gov.my/mdac/main"
 notes = "Reserved under .gov.my — only Malaysian government entities can register this domain suffix. Required for most foreign visitors since January 2024."
 
@@ -14,7 +14,7 @@ notes = "Reserved under .gov.my — only Malaysian government entities can regis
 url = "https://www.imi.gov.my"
 name = "Jabatan Imigresen Malaysia (home)"
 agency = "Jabatan Imigresen Malaysia"
-last_verified = "2026-06-22"
+last_verified = "2026-06-29"
 
 # Country-page metadata (consumed by country-form layout).
 # Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.

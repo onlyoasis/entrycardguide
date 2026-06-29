@@ -1,12 +1,12 @@
 # Singapore — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-06-22
+# Last verified: 2026-06-29
 
 [sgac]
 url = "https://eservices.ica.gov.sg/sgarrivalcard/"
 name = "Singapore Arrival Card (SGAC)"
 agency = "Immigration & Checkpoints Authority (ICA)"
-last_verified = "2026-06-22"
+last_verified = "2026-06-29"
 archive_url = "https://web.archive.org/web/2026/https://eservices.ica.gov.sg/sgarrivalcard/"
 notes = "Reserved under .gov.sg — only Singapore government entities can register this domain suffix. Required for all foreign visitors and PRs returning. Free."
 
@@ -14,7 +14,7 @@ notes = "Reserved under .gov.sg — only Singapore government entities can regis
 url = "https://www.ica.gov.sg"
 name = "Immigration & Checkpoints Authority (home)"
 agency = "Immigration & Checkpoints Authority"
-last_verified = "2026-06-22"
+last_verified = "2026-06-29"
 
 # Country-page metadata (consumed by country-form layout).
 # Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
