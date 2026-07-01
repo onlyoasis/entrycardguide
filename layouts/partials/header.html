@@ -1,9 +1,9 @@
 <header class="border-b border-rule">
   <div class="mx-auto max-w-container px-md py-5 flex justify-between items-baseline gap-md">
-    <a href="{{ "/" | relLangURL }}" class="font-serif font-medium no-underline" style="font-size: 22px; font-variation-settings: 'opsz' 144;" aria-label="{{ i18n "brand_dot_label" }}">
+    <a href="{{ "/" | relLangURL }}" class="font-serif font-medium no-underline shrink-0" style="font-size: 22px; font-variation-settings: 'opsz' 144;" aria-label="{{ i18n "brand_dot_label" }}">
       entrycardguide<span class="text-verified">·</span>
     </a>
-    <nav aria-label="{{ i18n "nav_main_label" }}" class="flex gap-8 text-small items-baseline">
+    <nav aria-label="{{ i18n "nav_main_label" }}" class="flex gap-8 text-small items-baseline min-w-0 overflow-x-auto">
       {{- range .Site.Menus.main }}
       <a href="{{ .URL }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ .Name }}</a>
       {{- end }}
