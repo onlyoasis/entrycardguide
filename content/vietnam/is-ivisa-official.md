@@ -3,7 +3,7 @@ title: "Is iVisa the Official Vietnam E-Visa Site? (No, and Here's What's Real)"
 kicker: "No. iVisa is a commercial middleman charging multiple times the official $25 USD government fee. The real Vietnam e-visa is at evisa.gov.vn."
 description: "Answering the search query 'is ivisa official for Vietnam e-visa' — no. The official Vietnamese government site is evisa.gov.vn. Real fee: $25."
 date: 2026-04-26
-lastmod: 2026-06-29
+lastmod: 2026-07-06
 country: "vietnam"
 weight: 30
 keywords: ["is ivisa official vietnam", "ivisa vietnam scam", "vietnam e-visa fake sites", "vietnam visa middleman", "evisa-vietnam.com legit", "vietnam-evisa.org safe"]

@@ -3,7 +3,7 @@ title: "How to Fill the Vietnam E-Visa: Field-by-Field Guide (2026)"
 kicker: "Field-by-field walkthrough of the official Vietnam E-Visa form with common errors and what they actually mean. About 12 minutes total."
 description: "Step-by-step 2026 guide to every field on Vietnam's official E-Visa at evisa.gov.vn. Free, independent, no middleman markup."
 date: 2026-04-26
-lastmod: 2026-06-29
+lastmod: 2026-07-06
 country: "vietnam"
 weight: 20
 keywords: ["vietnam e-visa how to fill", "vietnam evisa fields", "vietnam visa application help", "evisa.gov.vn fields", "vietnam e-visa photo upload"]

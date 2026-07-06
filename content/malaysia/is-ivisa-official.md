@@ -3,7 +3,7 @@ title: "Is iVisa the official Malaysia MDAC site?"
 kicker: "No. iVisa is a commercial middleman. The official MDAC is at imigresen-online.imi.gov.my and is free."
 description: "Answering 'is ivisa official for Malaysia MDAC' — no. Plus the other lookalike sites people ask about."
 date: 2026-04-24
-lastmod: 2026-06-29
+lastmod: 2026-07-06
 country: "malaysia"
 weight: 30
 layout: is-ivisa

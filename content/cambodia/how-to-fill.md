@@ -3,7 +3,7 @@ title: "How to Fill Cambodia e-Arrival: Field-by-Field Guide (2026)"
 kicker: "The Cambodia e-Arrival fields that usually cause passport, date, or QR mistakes."
 description: "Step-by-step guide to the official Cambodia e-Arrival fields at arrival.gov.kh."
 date: 2026-06-11
-lastmod: 2026-06-29
+lastmod: 2026-07-06
 country: "cambodia"
 weight: 20
 keywords: ["cambodia e-arrival how to fill", "arrival.gov.kh fields", "cambodia arrival QR"]

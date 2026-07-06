@@ -3,7 +3,7 @@ title: "iVisa 是柬埔寨 e-Arrival 官方网站吗？不是"
 kicker: "不是。柬埔寨 e-Arrival 官方网站是 arrival.gov.kh。入境申报和签证费是两件事。"
 description: "iVisa 不是柬埔寨 e-Arrival 官方网站。政府入境申报请使用 arrival.gov.kh。"
 date: 2026-06-11
-lastmod: 2026-06-29
+lastmod: 2026-07-06
 country: "cambodia"
 weight: 30
 keywords: ["iVisa 柬埔寨", "柬埔寨 e-Arrival 骗局", "arrival.gov.kh 中介"]

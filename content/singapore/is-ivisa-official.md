@@ -3,7 +3,7 @@ title: "Is iVisa the Official Singapore Arrival Card Site? (No)"
 kicker: "No. iVisa is a commercial middleman. The official Singapore Arrival Card (SGAC) is at eservices.ica.gov.sg and is free."
 description: "Answering 'is ivisa official for Singapore SGAC' — no. The Singapore government runs the SGAC at eservices.ica.gov.sg and charges no fee."
 date: 2026-04-26
-lastmod: 2026-06-29
+lastmod: 2026-07-06
 country: "singapore"
 weight: 30
 keywords: ["is ivisa official singapore", "ivisa singapore sgac", "singapore arrival card scam", "sgac middleman", "singapore visa fake site"]

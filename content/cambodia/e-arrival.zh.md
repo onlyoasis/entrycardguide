@@ -3,7 +3,7 @@ title: "柬埔寨 e-Arrival 2026 指南：官网、免费申报和字段填写"
 kicker: "柬埔寨 e-Arrival 使用 arrival.gov.kh。入境申报免费；签证费另算。"
 description: "柬埔寨 e-Arrival 中文指南：官方 URL、字段填写、签证费边界和中介提醒。"
 date: 2026-06-11
-lastmod: 2026-06-29
+lastmod: 2026-07-06
 country: "cambodia"
 weight: 10
 keywords: ["柬埔寨 e-Arrival", "arrival.gov.kh", "柬埔寨入境卡", "柬埔寨入境申报", "iVisa 柬埔寨"]

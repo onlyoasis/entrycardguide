@@ -3,7 +3,7 @@ title: "Is iVisa the Official Cambodia e-Arrival Site? (No)"
 kicker: "No. The official Cambodia e-Arrival site is arrival.gov.kh. Arrival declaration and visa fees are separate."
 description: "iVisa is not the official Cambodia e-Arrival site. Use arrival.gov.kh for the government declaration."
 date: 2026-06-11
-lastmod: 2026-06-29
+lastmod: 2026-07-06
 country: "cambodia"
 weight: 30
 keywords: ["is ivisa official cambodia", "cambodia e-arrival scam", "arrival.gov.kh middleman"]

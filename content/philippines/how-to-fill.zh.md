@@ -3,7 +3,7 @@ title: "菲律宾 eTravel 字段填写指南（2026）"
 kicker: "最容易导致二维码或邮件问题的 eTravel 字段。"
 description: "菲律宾官方 eTravel 字段逐项中文指南。"
 date: 2026-06-11
-lastmod: 2026-06-29
+lastmod: 2026-07-06
 country: "philippines"
 weight: 20
 keywords: ["菲律宾 eTravel 怎么填", "菲律宾 eTravel 字段", "菲律宾入境二维码"]
