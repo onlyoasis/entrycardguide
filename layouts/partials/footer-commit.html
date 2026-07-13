@@ -1,23 +1,48 @@
 <footer class="border-t border-rule bg-paper mt-22">
-  <div class="mx-auto max-w-container px-md py-xl flex justify-between items-start gap-md flex-wrap text-small text-muted">
+  {{- $isZh := eq .Site.Language.Lang "zh" -}}
+  {{- $countries := partial "country-roster.html" . -}}
+  {{- $directoryURL := cond $isZh "/zh/official-links/" "/official-links/" -}}
+  <div class="mx-auto max-w-container px-md pt-xl pb-lg grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-lg">
+    {{- /* Brand */ -}}
     <div>
-      <strong class="text-ink">entrycardguide</strong> · {{ i18n "footer_brand_tagline" }}
+      <div class="font-serif font-medium text-ink" style="font-size: 22px;">entrycardguide<span class="text-verified">·</span></div>
+      <p class="text-small text-muted mt-2 max-w-[320px]">{{ i18n "footer_brand_tagline" }}</p>
     </div>
+
+    {{- /* Popular countries — first 6 of the shared roster, then the full
+           directory. Caps at 6+1 rows so the footer never grows with N. */ -}}
     <div>
-      {{ i18n "footer_built_with" }} ·
-      {{- with .GitInfo }}
-      {{ i18n "footer_last_deploy" }} <a href="https://github.com/onlyoasis/entrycardguide/commit/{{ .Hash }}" class="text-ink">{{ .AbbreviatedHash }}</a> ·
-      {{ dateFormat "January 2, 2006" .AuthorDate }}
-      {{- else }}
-      <span>{{ i18n "footer_local_preview" }}</span>
-      {{- end }}
+      <div class="text-meta font-mono uppercase text-muted mb-3">{{ i18n "footer_popular_countries" }}</div>
+      <ul class="list-none p-0 m-0 grid gap-1.5 text-small">
+        {{- range first 6 $countries }}
+        <li><a href="{{ if $isZh }}/zh/{{ .key }}/{{ else }}/{{ .key }}/{{ end }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ if $isZh }}{{ .zh }}{{ else }}{{ .en }}{{ end }} <span class="text-muted font-mono" style="font-size: 12px;">{{ .formCode }}</span></a></li>
+        {{- end }}
+        <li><a href="{{ $directoryURL }}" class="text-ink underline underline-offset-4 font-medium">{{ if $isZh }}全部 {{ len $countries }} 个国家 →{{ else }}All {{ len $countries }} countries →{{ end }}</a></li>
+      </ul>
     </div>
+
+    {{- /* The site — real routes only (check:seo verifies every local href). */ -}}
     <div>
-      <a href="https://github.com/onlyoasis/entrycardguide" class="text-ink">{{ i18n "footer_view_source" }}</a>
+      <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}本站{{ else }}The site{{ end }}</div>
+      <ul class="list-none p-0 m-0 grid gap-1.5 text-small">
+        <li><a href="{{ cond $isZh "/zh/decide/" "/decide/" }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ if $isZh }}60 秒决策工具{{ else }}60-second decide{{ end }}</a></li>
+        <li><a href="{{ $directoryURL }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ if $isZh }}官方链接目录{{ else }}Official links directory{{ end }}</a></li>
+        <li><a href="{{ cond $isZh "/zh/changelog/" "/changelog/" }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ if $isZh }}变更日志{{ else }}Changelog{{ end }}</a></li>
+        <li><a href="{{ cond $isZh "/zh/about/" "/about/" }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ if $isZh }}关于{{ else }}About{{ end }}</a></li>
+        <li><a href="{{ cond $isZh "/zh/trust/" "/trust/" }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ if $isZh }}如何核查我们{{ else }}How we verify{{ end }}</a></li>
+        <li><a href="https://github.com/onlyoasis/entrycardguide" rel="noopener" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ i18n "footer_view_source" }} ↗</a></li>
+      </ul>
     </div>
   </div>
-  <div class="mx-auto max-w-container px-md pb-lg text-xs text-muted">
-    <p>{{ i18n "footer_money_disclosure" }}
-    <a href="{{ "/about/" | relLangURL }}" class="text-ink">{{ i18n "footer_full_disclosure" }}</a>.</p>
+
+  {{- /* Bottom bar — money disclosure + build/commit. Trust signals kept intact. */ -}}
+  <div class="mx-auto max-w-container px-md pb-lg pt-6 border-t border-rule flex justify-between items-start gap-md flex-wrap text-xs text-muted">
+    <p class="m-0 max-w-[600px]">{{ i18n "footer_money_disclosure" }}
+      <a href="{{ cond $isZh "/zh/about/" "/about/" }}" class="text-ink">{{ i18n "footer_full_disclosure" }}</a>.</p>
+    <div class="font-mono whitespace-nowrap">
+      {{- i18n "footer_built_with" }}
+      {{- with .GitInfo }} · {{ i18n "footer_last_deploy" }} <a href="https://github.com/onlyoasis/entrycardguide/commit/{{ .Hash }}" class="text-ink">{{ .AbbreviatedHash }}</a> · {{ dateFormat "2006-01-02" .AuthorDate }}
+      {{- else }} · {{ i18n "footer_local_preview" }}{{ end }}
+    </div>
   </div>
 </footer>

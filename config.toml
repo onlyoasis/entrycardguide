@@ -22,61 +22,10 @@ defaultContentLanguageInSubdir = false
     title = "entrycardguide"
     [languages.en.params]
       description = "Independent. Free. Anti-scam entry card guides for international travelers."
-    [[languages.en.menu.main]]
-      identifier = "thailand"
-      name = "Thailand"
-      url = "/thailand/"
-      weight = 10
-    [[languages.en.menu.main]]
-      identifier = "mexico"
-      name = "Mexico"
-      url = "/mexico/"
-      weight = 20
-    [[languages.en.menu.main]]
-      identifier = "dominican"
-      name = "Dominican Rep."
-      url = "/dominican/"
-      weight = 30
-    [[languages.en.menu.main]]
-      identifier = "malaysia"
-      name = "Malaysia"
-      url = "/malaysia/"
-      weight = 40
-    [[languages.en.menu.main]]
-      identifier = "vietnam"
-      name = "Vietnam"
-      url = "/vietnam/"
-      weight = 50
-    [[languages.en.menu.main]]
-      identifier = "indonesia"
-      name = "Indonesia"
-      url = "/indonesia/"
-      weight = 60
-    [[languages.en.menu.main]]
-      identifier = "singapore"
-      name = "Singapore"
-      url = "/singapore/"
-      weight = 70
-    [[languages.en.menu.main]]
-      identifier = "philippines"
-      name = "Philippines"
-      url = "/philippines/"
-      weight = 71
-    [[languages.en.menu.main]]
-      identifier = "cambodia"
-      name = "Cambodia"
-      url = "/cambodia/"
-      weight = 72
-    [[languages.en.menu.main]]
-      identifier = "japan"
-      name = "Japan"
-      url = "/japan/"
-      weight = 73
-    [[languages.en.menu.main]]
-      identifier = "korea"
-      name = "Korea"
-      url = "/korea/"
-      weight = 74
+    # Country pages are intentionally NOT listed in the main menu. The header
+    # renders one "Countries" dropdown from layouts/partials/country-roster.html,
+    # so the nav never overflows as the roster grows (11 → 30+). Keep only the
+    # cross-cutting destinations below.
     [[languages.en.menu.main]]
       identifier = "decide"
       name = "Decide"
@@ -100,61 +49,8 @@ defaultContentLanguageInSubdir = false
     title = "entrycardguide · 入境卡指南"
     [languages.zh.params]
       description = "独立、免费、反诈骗的入境卡填写指南。"
-    [[languages.zh.menu.main]]
-      identifier = "thailand"
-      name = "泰国"
-      url = "/zh/thailand/"
-      weight = 10
-    [[languages.zh.menu.main]]
-      identifier = "mexico"
-      name = "墨西哥"
-      url = "/zh/mexico/"
-      weight = 20
-    [[languages.zh.menu.main]]
-      identifier = "dominican"
-      name = "多米尼加"
-      url = "/zh/dominican/"
-      weight = 30
-    [[languages.zh.menu.main]]
-      identifier = "malaysia"
-      name = "马来西亚"
-      url = "/zh/malaysia/"
-      weight = 40
-    [[languages.zh.menu.main]]
-      identifier = "vietnam"
-      name = "越南"
-      url = "/zh/vietnam/"
-      weight = 50
-    [[languages.zh.menu.main]]
-      identifier = "indonesia"
-      name = "印度尼西亚"
-      url = "/zh/indonesia/"
-      weight = 60
-    [[languages.zh.menu.main]]
-      identifier = "singapore"
-      name = "新加坡"
-      url = "/zh/singapore/"
-      weight = 70
-    [[languages.zh.menu.main]]
-      identifier = "philippines"
-      name = "菲律宾"
-      url = "/zh/philippines/"
-      weight = 71
-    [[languages.zh.menu.main]]
-      identifier = "cambodia"
-      name = "柬埔寨"
-      url = "/zh/cambodia/"
-      weight = 72
-    [[languages.zh.menu.main]]
-      identifier = "japan"
-      name = "日本"
-      url = "/zh/japan/"
-      weight = 73
-    [[languages.zh.menu.main]]
-      identifier = "korea"
-      name = "韩国"
-      url = "/zh/korea/"
-      weight = 74
+    # 国家页不放进主菜单：header 从 layouts/partials/country-roster.html 渲染
+    # 一个「国家」下拉，roster 增长（11 → 30+）时导航永不折行。这里只保留跨页目的地。
     [[languages.zh.menu.main]]
       identifier = "decide"
       name = "决策工具"

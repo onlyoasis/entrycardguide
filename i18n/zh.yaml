@@ -48,6 +48,7 @@ decide_data_verified: "决策树最近核实于"
 
 # 头部导航新增
 nav_decide: "决策工具"
+nav_countries: "国家"
 
 # 页脚
 footer_brand_tagline: "独立运营 · 非政府机构"
@@ -57,6 +58,7 @@ footer_local_preview: "本地预览"
 footer_view_source: "在 GitHub 查看源码"
 footer_money_disclosure: "我们的收入仅来自文章中清楚披露的旅行联盟链接。我们不接受 iVisa、任何签证服务或信用卡公司的资金。"
 footer_full_disclosure: "完整披露"
+footer_popular_countries: "热门国家"
 
 # 联盟链接区
 affiliate_eyebrow: "支持这份指南"

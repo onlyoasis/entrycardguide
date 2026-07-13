@@ -1,24 +1,11 @@
 {{ define "main" }}
 {{- $isZh := eq .Site.Language.Lang "zh" -}}
 
-{{- /* Country roster — same shape as official-directory.html shortcode.
-       formKey   → key inside data/official_urls/{country}.toml
-       guideSlug → first segment after /{country}/ on disk
-       formCode  → small uppercase code shown in the grid
-       sub       → tiny qualifier under the fee tag */ -}}
-{{- $countries := slice
-  (dict "key" "thailand"  "en" "Thailand"           "zh" "泰国"     "flag" "🇹🇭" "formKey" "tdac"    "formCode" "TDAC"    "guideSlug" "tdac"    "fee" "free" "subEn" "May 2025"            "subZh" "2025 年 5 月起")
-  (dict "key" "malaysia"  "en" "Malaysia"           "zh" "马来西亚" "flag" "🇲🇾" "formKey" "mdac"    "formCode" "MDAC"    "guideSlug" "mdac"    "fee" "free" "subEn" "Jan 2024"            "subZh" "2024 年 1 月起")
-  (dict "key" "singapore" "en" "Singapore"          "zh" "新加坡"   "flag" "🇸🇬" "formKey" "sgac"    "formCode" "SGAC"    "guideSlug" "sgac"    "fee" "free" "subEn" "ICA"                 "subZh" "ICA 官方")
-  (dict "key" "indonesia" "en" "Indonesia"          "zh" "印度尼西亚" "flag" "🇮🇩" "formKey" "ecd"     "formCode" "All Indonesia" "guideSlug" "e-cd"    "fee" "free" "subEn" "+ e-VOA USD 35"      "subZh" "+ e-VOA 35 美元")
-  (dict "key" "mexico"    "en" "Mexico"             "zh" "墨西哥"   "flag" "🇲🇽" "formKey" "fmm"     "formCode" "FMM-E"   "guideSlug" "fmm"     "fee" "free" "subEn" "Not always required" "subZh" "并非每次都要填")
-  (dict "key" "dominican" "en" "Dominican Republic" "zh" "多米尼加" "flag" "🇩🇴" "formKey" "eticket" "formCode" "E-Ticket" "guideSlug" "eticket" "fee" "free" "subEn" "In + out"            "subZh" "入境 + 离境")
-  (dict "key" "vietnam"   "en" "Vietnam"            "zh" "越南"     "flag" "🇻🇳" "formKey" "evisa"   "formCode" "E-Visa"  "guideSlug" "evisa"   "fee" "paid" "subEn" "Govt fee, not free"  "subZh" "官方收费，非免费")
-  (dict "key" "philippines" "en" "Philippines"      "zh" "菲律宾"   "flag" "🇵🇭" "formKey" "etravel" "formCode" "eTravel" "guideSlug" "etravel" "fee" "free" "subEn" ".gov.ph"             "subZh" ".gov.ph 官方")
-  (dict "key" "cambodia"  "en" "Cambodia"           "zh" "柬埔寨"   "flag" "🇰🇭" "formKey" "earrival" "formCode" "e-Arrival" "guideSlug" "e-arrival" "fee" "free" "subEn" "Visa fees separate" "subZh" "签证费另算")
-  (dict "key" "japan"     "en" "Japan"              "zh" "日本"     "flag" "🇯🇵" "formKey" "vjw"     "formCode" "Visit Japan Web" "guideSlug" "visit-japan-web" "fee" "free" "subEn" "Digital Agency"     "subZh" "日本数字厅")
-  (dict "key" "korea"     "en" "South Korea"        "zh" "韩国"     "flag" "🇰🇷" "formKey" "earrivalcard" "formCode" "e-Arrival Card" "guideSlug" "e-arrival-card" "fee" "free" "subEn" "Not K-ETA"       "subZh" "不是 K-ETA")
--}}
+{{- /* Country roster (order = traffic, most-visited first). Single source of
+       truth shared with the header "Countries" dropdown and the footer
+       "Popular countries" column — see layouts/partials/country-roster.html.
+       Add a country there; this page, the nav, and the footer all follow. */ -}}
+{{- $countries := partial "country-roster.html" . -}}
 
 {{- /* Stats: countries dynamic from roster, scams sum across TOMLs.
        freeCount counts countries with a free government form so the section
@@ -109,7 +96,7 @@
          right/bottom via -mr-px / -mb-px so we get a clean inner grid. */ -}}
   <div class="border-y border-rule overflow-hidden">
     {{- $stats := slice
-      (dict "kicker" (cond $isZh "覆盖国家" "COUNTRIES COVERED") "value" (string $countryCount) "subEn" "Asia, Mexico, Dominican Republic, and Vietnam e-visa" "subZh" "亚洲多国、墨西哥、多米尼加和越南电子签")
+      (dict "kicker" (cond $isZh "覆盖国家" "COUNTRIES COVERED") "value" (string $countryCount) "subEn" "Asia and the Americas. Sorted by traffic below." "subZh" "覆盖亚洲与美洲，下方按访问量排序。")
       (dict "kicker" (cond $isZh "已验证官方网址" "OFFICIAL URLS VERIFIED") "value" (string $urlCount) "subEn" "All in a public TOML file with last_verified dates" "subZh" "全部存在公开 TOML 文件里，附 last_verified 日期")
       (dict "kicker" (cond $isZh "山寨站点收录数" "SCAM SITES INDEXED") "value" (string $scamCount) "subEn" "DNS-audited monthly; dead domains removed" "subZh" "每月 DNS 审计，失效域名会被移除")
       (dict "kicker" (cond $isZh "我们存的你的数据" "YOUR DATA WE STORE") "value" "0" "subEn" "Validators run client-side. Zero network requests." "subZh" "校验器在你的浏览器里跑，零网络请求。")
@@ -149,74 +136,104 @@
     <div>
       <div class="text-meta font-mono uppercase text-muted mb-2">{{ if $isZh }}§ 02 · 已覆盖国家{{ else }}§ 02 · Countries covered{{ end }}</div>
       <h2 class="font-serif font-medium m-0" style="font-size: 36px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144;">
-        {{- if $isZh -}}
-          {{- if gt $paidCount 0 -}}
-            {{ $countryCount }} 个国家。{{ $freeCount }} 份免费政府表单 + {{ $paidCount }} 份付费政府电子签证。{{ $countryCount }} 个响亮的官方网址。
-          {{- else -}}
-            {{ $countryCount }} 个国家。{{ $countryCount }} 份免费表单。{{ $countryCount }} 个响亮的官方网址。
-          {{- end -}}
-        {{- else -}}
-          {{- if gt $paidCount 0 -}}
-            {{ $countryCount }} countries. {{ $freeCount }} free government forms + {{ $paidCount }} paid government e-visa. {{ $countryCount }} loud official URLs.
-          {{- else -}}
-            {{ $countryCount }} countries. {{ $countryCount }} free forms. {{ $countryCount }} loud official URLs.
-          {{- end -}}
-        {{- end -}}
+        {{ if $isZh }}{{ $countryCount }} 个国家。每国一个真网址。{{ else }}{{ $countryCount }} countries. One real URL each.{{ end }}
       </h2>
     </div>
     <a href="{{ $directoryURL }}" class="font-mono text-ink underline underline-offset-4" style="font-size: 13px;">{{ if $isZh }}完整目录 →{{ else }}Full directory →{{ end }}</a>
   </div>
 
-  <div class="border border-rule rounded-md overflow-hidden">
-    <div class="grid grid-cols-1 md:grid-cols-2 {{ if ge $countryCount 9 }}lg:grid-cols-3{{ end }} -mr-px -mb-px">
-    {{- range $i, $c := $countries -}}
+  {{- /* Search box — the one interactive input in this section, so it gets the
+         reserved white bg (same "this is a tool" signal the validator uses).
+         Filters the grid + mobile list entirely client-side via
+         assets/js/search.ts (zero network requests). With JS off it is inert and
+         every country stays visible. */ -}}
+  <div data-country-search class="flex items-center gap-3 bg-white border border-ink rounded-md" style="padding: 13px 18px;">
+    <span class="font-mono text-muted" style="font-size: 14px;" aria-hidden="true">⌕</span>
+    <input type="text" data-country-search-input autocomplete="off" spellcheck="false"
+      aria-label="{{ if $isZh }}搜索国家{{ else }}Search countries{{ end }}" aria-controls="country-grid country-list"
+      placeholder="{{ if $isZh }}搜索 {{ $countryCount }} 个国家 — 国名、表单码或网址。试试 tdac 或 japan。{{ else }}Search {{ $countryCount }} countries — country, form code, or URL. Try tdac or japan.{{ end }}"
+      class="flex-1 min-w-0 bg-transparent border-0 outline-none text-ink" style="font-size: 15px;" />
+    <span class="font-mono text-xs text-muted border border-rule rounded-sm hidden sm:inline" style="padding: 2px 7px;" aria-hidden="true">/</span>
+  </div>
+
+  {{- /* Sort note + colour legend */ -}}
+  <div class="flex items-center justify-between flex-wrap gap-x-4 gap-y-2 font-mono text-meta uppercase text-muted" style="letter-spacing: 0.06em; margin: 20px 0 12px;">
+    <span>{{ if $isZh }}按访问量排序{{ else }}Sorted by most-visited{{ end }}</span>
+    <span class="inline-flex items-center gap-1.5">
+      <span class="inline-block w-[5px] h-[5px] rounded-full bg-verified" aria-hidden="true"></span>{{ if $isZh }}免费政府表单{{ else }}Free govt form{{ end }}
+      <span class="inline-block w-[5px] h-[5px] rounded-full bg-muted ml-3" aria-hidden="true"></span>{{ if $isZh }}政府收费 · 仍非中介{{ else }}Govt fee · still not a middleman{{ end }}
+    </span>
+  </div>
+
+  {{- /* Desktop compact grid: flag + name + fee status, nothing else — so no
+         card can wrap, no matter how long a name or how many countries. Paper bg
+         (white stays reserved for the validator/search); 1px rule border → ink on
+         hover, 80ms, no shadow, no transform. */ -}}
+  <div id="country-grid" data-country-grid class="hidden md:grid grid-cols-3 lg:grid-cols-5 gap-2">
+    {{- range $countries -}}
       {{- $countryData := index hugo.Data.official_urls .key -}}
       {{- $official := index $countryData .formKey -}}
       {{- $hostUrl := replaceRE "^https?://" "" $official.url -}}
       {{- $hostUrl = replaceRE "/$" "" $hostUrl -}}
+      {{- $name := cond $isZh .zh .en -}}
       {{- $countryPath := cond $isZh (printf "/zh/%s/" .key) (printf "/%s/" .key) -}}
-      {{- $guidePath := printf "%s%s/" $countryPath .guideSlug -}}
-      {{- $fillPath := printf "%show-to-fill/" $countryPath -}}
-      {{- $ivisaPath := printf "%sis-ivisa-official/" $countryPath -}}
-    <article class="p-7 grid grid-cols-[36px_1fr_auto] gap-5 items-start border-r border-b border-rule">
-      <div style="font-size: 28px; line-height: 1; margin-top: 2px;" aria-hidden="true">{{ .flag }}</div>
-      <div>
-        <div class="flex items-baseline gap-3 mb-1 flex-wrap">
-          <h3 class="font-serif font-medium m-0" style="font-size: 26px; letter-spacing: -0.01em; font-variation-settings: 'opsz' 144;">
-            <a href="{{ $countryPath }}" class="text-ink no-underline">{{ if $isZh }}{{ .zh }}{{ else }}{{ .en }}{{ end }}</a>
-          </h3>
-          <span class="font-mono text-muted" style="font-size: 13px;">· {{ .formCode }}</span>
-        </div>
-        <div class="font-mono mb-4" style="font-size: 13px;">
-          <a href="{{ $official.url }}" rel="noopener" class="text-ink no-underline border-b border-rule pb-px break-all">{{ $hostUrl }}</a>
-        </div>
-        <div class="flex flex-wrap gap-x-4 gap-y-2" style="font-size: 13px;">
-          <a href="{{ $guidePath }}" class="text-ink no-underline border-b border-ink pb-px">{{ if $isZh }}官方网站{{ else }}Official site{{ end }}</a>
-          <a href="{{ $fillPath }}" class="text-ink no-underline border-b border-rule pb-px">{{ if $isZh }}怎么填{{ else }}How to fill{{ end }}</a>
-          <a href="{{ $ivisaPath }}" class="text-ink no-underline border-b border-rule pb-px">{{ if $isZh }}iVisa 核验{{ else }}iVisa check{{ end }}</a>
-        </div>
-      </div>
-      <div class="text-right">
-        {{- if eq .fee "free" }}
-        <span class="inline-flex items-center gap-1.5 font-mono uppercase text-verified border border-verified/30 px-2 py-1 rounded-sm" style="font-size: 11px; letter-spacing: 0.08em; background: rgba(15,115,86,0.05);">
-          <span class="inline-block w-[6px] h-[6px] rounded-full bg-verified"></span>
-          {{ if $isZh }}免费{{ else }}Free{{ end }}
+      {{- $terms := lower (printf "%s %s %s %s %s" .en .zh .formCode .key $hostUrl) -}}
+    <a href="{{ $countryPath }}" data-country-card data-search="{{ $terms }}"
+       class="flex flex-col gap-2.5 bg-paper border border-rule rounded-sm text-ink no-underline hover:border-ink"
+       style="min-height: 96px; padding: 14px 14px 12px; transition: border-color 80ms ease;">
+      <span style="font-size: 24px; line-height: 1;" aria-hidden="true">{{ .flag }}</span>
+      <span class="mt-auto">
+        <span class="block font-semibold" style="font-size: 14px; line-height: 1.25; letter-spacing: -0.005em;">{{ $name }}</span>
+        <span class="flex items-center gap-1.5" style="margin-top: 5px;">
+          <span class="inline-block w-[5px] h-[5px] rounded-full {{ if eq .fee "free" }}bg-verified{{ else }}bg-muted{{ end }}" aria-hidden="true"></span>
+          <span class="font-mono uppercase {{ if eq .fee "free" }}text-verified{{ else }}text-muted{{ end }}" style="font-size: 10px; letter-spacing: 0.06em;">{{ if eq .fee "free" }}{{ if $isZh }}免费{{ else }}Free{{ end }}{{ else }}{{ cond $isZh (index $countryData.meta "fee_zh") (index $countryData.meta "fee_en") }}{{ end }}</span>
         </span>
-        {{- else }}
-        {{- /* Pull the paid-fee label from the country's [meta] so the homepage
-               shows the full single/multi entry pricing, not a hardcoded "USD
-               25" that misses multi-entry travelers. */ -}}
-        {{- $paidFee := cond $isZh (index $countryData.meta "fee_zh") (index $countryData.meta "fee_en") -}}
-        <span class="inline-flex items-center gap-1.5 font-mono uppercase text-ink border border-rule px-2 py-1 rounded-sm" style="font-size: 11px; letter-spacing: 0.08em;">
-          {{ $paidFee }}
-        </span>
-        {{- end }}
-        <div class="font-mono text-xs text-muted mt-2">{{ if $isZh }}{{ .subZh }}{{ else }}{{ .subEn }}{{ end }}</div>
-      </div>
-    </article>
+      </span>
+    </a>
     {{- end }}
-    </div>
   </div>
+
+  {{- /* Mobile list: popular 10 as rows, the rest behind a native <details>
+         expander (works with JS off). search.ts opens it while a query is active
+         so a match past the top 10 still surfaces, and swaps the summary label. */ -}}
+  <div id="country-list" data-country-list class="md:hidden border border-rule rounded-md overflow-hidden">
+    {{- range $i, $c := $countries -}}
+      {{- $countryData := index hugo.Data.official_urls $c.key -}}
+      {{- $official := index $countryData $c.formKey -}}
+      {{- $hostUrl := replaceRE "^https?://" "" $official.url -}}
+      {{- $hostUrl = replaceRE "/$" "" $hostUrl -}}
+      {{- $name := cond $isZh $c.zh $c.en -}}
+      {{- $countryPath := cond $isZh (printf "/zh/%s/" $c.key) (printf "/%s/" $c.key) -}}
+      {{- $terms := lower (printf "%s %s %s %s %s" $c.en $c.zh $c.formCode $c.key $hostUrl) -}}
+      {{- if eq $i 10 }}
+    <details data-country-more>
+      <summary class="flex items-center justify-center gap-2 cursor-pointer list-none bg-paper font-semibold text-ink [&::-webkit-details-marker]:hidden" style="font-size: 14px; padding: 14px;" data-label-open="{{ if $isZh }}收起 ↑{{ else }}Show fewer ↑{{ end }}">{{ if $isZh }}显示全部 {{ $countryCount }} 个国家 ↓{{ else }}Show all {{ $countryCount }} countries ↓{{ end }}</summary>
+      {{- end }}
+    <a href="{{ $countryPath }}" data-country-card data-search="{{ $terms }}"
+       class="flex items-center gap-3 text-ink no-underline border-b border-rule hover:bg-rule"
+       style="min-height: 48px; padding: 13px 14px; transition: background-color 80ms ease;">
+      <span style="font-size: 20px; line-height: 1;" aria-hidden="true">{{ $c.flag }}</span>
+      <span class="font-semibold" style="font-size: 15px;">{{ $name }}</span>
+      <span class="ml-auto inline-flex items-center gap-1.5">
+        <span class="inline-block w-[5px] h-[5px] rounded-full {{ if eq $c.fee "free" }}bg-verified{{ else }}bg-muted{{ end }}" aria-hidden="true"></span>
+        <span class="font-mono uppercase {{ if eq $c.fee "free" }}text-verified{{ else }}text-muted{{ end }}" style="font-size: 10px; letter-spacing: 0.06em;">{{ if eq $c.fee "free" }}{{ if $isZh }}免费{{ else }}Free{{ end }}{{ else }}{{ cond $isZh (index $countryData.meta "fee_zh") (index $countryData.meta "fee_en") }}{{ end }}</span>
+      </span>
+    </a>
+      {{- if and (eq $i (sub $countryCount 1)) (gt $countryCount 10) }}
+    </details>
+      {{- end }}
+    {{- end }}
+  </div>
+
+  {{- /* Empty state — search.ts unhides this when nothing matches. */ -}}
+  <p data-country-empty hidden class="text-small text-muted" style="margin-top: 20px;">
+    {{ if $isZh }}没有匹配 — 看<a href="{{ $directoryURL }}" class="text-ink underline underline-offset-4">完整目录 →</a>{{ else }}No match — check the <a href="{{ $directoryURL }}" class="text-ink underline underline-offset-4">full directory →</a>{{ end }}
+  </p>
+
+  {{- /* Below-grid summary — all counts derive from the roster. */ -}}
+  <p class="text-xs text-muted m-0" style="margin-top: 20px;">
+    {{ if $isZh }}{{ $freeCount }} 份免费政府表单 · {{ $paidCount }} 份付费政府电子签。每张卡片都打开该国指南：官方网址、逐字段填法、诈骗核查。{{ else }}{{ $freeCount }} free government forms · {{ $paidCount }} paid government e-visa. Every card opens the country guide: official URL, how to fill, scam check.{{ end }}
+  </p>
 </section>
 
 {{- /* ============================================================ */ -}}

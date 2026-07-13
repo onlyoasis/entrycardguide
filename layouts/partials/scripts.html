@@ -29,3 +29,12 @@
 {{- end }}
 {{- $ga4 := .Site.Params.analytics.ga4.measurement.id | default "" }}
 <script src="{{ $analytics.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $analytics.Data.Integrity }}"{{ end }}{{ with $ga4 }} data-ga4-measurement-id="{{ . }}"{{ end }} defer></script>
+
+{{- /* Country search — filters the homepage §02 grid + mobile list client-side.
+       Self-detects [data-country-search-input] and no-ops on every other page. */ -}}
+{{- $searchOpts := dict "targetPath" "js/search.js" "minify" hugo.IsProduction "target" "es2020" "format" "iife" }}
+{{- $search := resources.Get "js/search.ts" | js.Build $searchOpts }}
+{{- if hugo.IsProduction }}
+  {{- $search = $search | resources.Fingerprint "sha256" }}
+{{- end }}
+<script src="{{ $search.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $search.Data.Integrity }}"{{ end }} defer></script>

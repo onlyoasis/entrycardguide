@@ -48,6 +48,7 @@ decide_data_verified: "Decision tree last verified"
 
 # Header / nav addition
 nav_decide: "Decide"
+nav_countries: "Countries"
 
 # Footer
 footer_brand_tagline: "Independent · Not a government agency"
@@ -57,6 +58,7 @@ footer_local_preview: "Local preview"
 footer_view_source: "View source on GitHub"
 footer_money_disclosure: "We make money only from clearly disclosed travel affiliate links on our articles. We do not take money from iVisa, any visa service, or credit card companies."
 footer_full_disclosure: "Full disclosure"
+footer_popular_countries: "Popular countries"
 
 # Affiliate footer
 affiliate_eyebrow: "Support this guide"

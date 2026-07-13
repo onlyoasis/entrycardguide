@@ -1,0 +1,34 @@
+{{- /* Shared country roster — single source of truth for:
+       · the homepage §02 country grid (layouts/index.html)
+       · the header "Countries" dropdown (layouts/partials/header.html)
+       · the footer "Popular countries" column (layouts/partials/footer-commit.html)
+
+       Order = traffic, most-visited first. The grid, dropdown, and footer all
+       render in this order; "Popular" = the first 6. Adding a country is one
+       dict line here + its data/official_urls + data/rules files — no template,
+       nav, or footer edits anywhere else. This is what lets the homepage scale
+       from 11 to 30+ countries without any layout change.
+
+       Fields:
+         key        → data/official_urls/{key}.toml + /{key}/ route
+         en / zh    → display name
+         flag       → emoji (aria-hidden in every consumer)
+         formKey    → key of the main form inside the country's official_urls TOML
+         formCode   → short code shown in the footer column
+         guideSlug  → first path segment after /{key}/
+         fee        → "free" | "paid" — drives the card fee dot + label
+         subEn/subZh → tiny qualifier, kept for non-grid consumers */ -}}
+{{- $countries := slice
+  (dict "key" "thailand"    "en" "Thailand"           "zh" "泰国"       "flag" "🇹🇭" "formKey" "tdac"         "formCode" "TDAC"            "guideSlug" "tdac"           "fee" "free" "subEn" "May 2025"            "subZh" "2025 年 5 月起")
+  (dict "key" "japan"       "en" "Japan"              "zh" "日本"       "flag" "🇯🇵" "formKey" "vjw"          "formCode" "Visit Japan Web" "guideSlug" "visit-japan-web" "fee" "free" "subEn" "Digital Agency"      "subZh" "日本数字厅")
+  (dict "key" "malaysia"    "en" "Malaysia"           "zh" "马来西亚"   "flag" "🇲🇾" "formKey" "mdac"         "formCode" "MDAC"            "guideSlug" "mdac"           "fee" "free" "subEn" "Jan 2024"            "subZh" "2024 年 1 月起")
+  (dict "key" "singapore"   "en" "Singapore"          "zh" "新加坡"     "flag" "🇸🇬" "formKey" "sgac"         "formCode" "SGAC"            "guideSlug" "sgac"           "fee" "free" "subEn" "ICA"                 "subZh" "ICA 官方")
+  (dict "key" "vietnam"     "en" "Vietnam"            "zh" "越南"       "flag" "🇻🇳" "formKey" "evisa"        "formCode" "E-Visa"          "guideSlug" "evisa"          "fee" "paid" "subEn" "Govt fee, not free"  "subZh" "官方收费，非免费")
+  (dict "key" "indonesia"   "en" "Indonesia"          "zh" "印度尼西亚" "flag" "🇮🇩" "formKey" "ecd"          "formCode" "All Indonesia"   "guideSlug" "e-cd"           "fee" "free" "subEn" "+ e-VOA USD 35"      "subZh" "+ e-VOA 35 美元")
+  (dict "key" "korea"       "en" "South Korea"        "zh" "韩国"       "flag" "🇰🇷" "formKey" "earrivalcard" "formCode" "e-Arrival Card"  "guideSlug" "e-arrival-card" "fee" "free" "subEn" "Not K-ETA"           "subZh" "不是 K-ETA")
+  (dict "key" "philippines" "en" "Philippines"        "zh" "菲律宾"     "flag" "🇵🇭" "formKey" "etravel"      "formCode" "eTravel"         "guideSlug" "etravel"        "fee" "free" "subEn" ".gov.ph"             "subZh" ".gov.ph 官方")
+  (dict "key" "mexico"      "en" "Mexico"             "zh" "墨西哥"     "flag" "🇲🇽" "formKey" "fmm"          "formCode" "FMM-E"           "guideSlug" "fmm"            "fee" "free" "subEn" "Not always required" "subZh" "并非每次都要填")
+  (dict "key" "dominican"   "en" "Dominican Republic" "zh" "多米尼加"   "flag" "🇩🇴" "formKey" "eticket"      "formCode" "E-Ticket"        "guideSlug" "eticket"        "fee" "free" "subEn" "In + out"            "subZh" "入境 + 离境")
+  (dict "key" "cambodia"    "en" "Cambodia"           "zh" "柬埔寨"     "flag" "🇰🇭" "formKey" "earrival"     "formCode" "e-Arrival"       "guideSlug" "e-arrival"      "fee" "free" "subEn" "Visa fees separate"  "subZh" "签证费另算")
+-}}
+{{- return $countries -}}

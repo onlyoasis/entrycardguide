@@ -3,7 +3,28 @@
     <a href="{{ "/" | relLangURL }}" class="font-serif font-medium no-underline shrink-0" style="font-size: 22px; font-variation-settings: 'opsz' 144;" aria-label="{{ i18n "brand_dot_label" }}">
       entrycardguide<span class="text-verified">·</span>
     </a>
-    <nav aria-label="{{ i18n "nav_main_label" }}" class="flex gap-8 text-small items-baseline min-w-0 overflow-x-auto">
+    {{- $isZh := eq .Site.Language.Lang "zh" -}}
+    <nav aria-label="{{ i18n "nav_main_label" }}" class="flex gap-6 text-small items-baseline">
+      {{- /* Countries dropdown — collapses the whole roster into one nav item so
+             the bar never overflows as we add countries. Built from the shared
+             country-roster partial; native <details> keeps it zero-JS, matching
+             the language switcher below. */ -}}
+      {{- $countryNav := partial "country-roster.html" . -}}
+      <details class="countries-nav relative" role="group" aria-label="{{ i18n "nav_countries" }}">
+        <summary class="cursor-pointer list-none inline-flex items-baseline gap-1.5 text-ink hover:underline hover:underline-offset-4 [&::-webkit-details-marker]:hidden">
+          <span>{{ i18n "nav_countries" }}</span>
+          <span class="font-mono text-muted border border-rule rounded-sm" style="font-size: 10px; padding: 1px 5px; letter-spacing: 0.04em;">{{ len $countryNav }}</span>
+          <span aria-hidden="true" class="text-muted text-xs">▾</span>
+        </summary>
+        <div class="absolute left-0 top-full mt-2 bg-paper border border-rule py-1 min-w-[200px] max-h-[70vh] overflow-y-auto z-20 shadow-none">
+          {{- range $countryNav }}
+          <a href="{{ if $isZh }}/zh/{{ .key }}/{{ else }}/{{ .key }}/{{ end }}" class="flex items-center gap-2.5 px-3 py-2 text-ink no-underline hover:bg-rule" style="font-size: 14px;">
+            <span aria-hidden="true" style="font-size: 15px;">{{ .flag }}</span>
+            <span>{{ if $isZh }}{{ .zh }}{{ else }}{{ .en }}{{ end }}</span>
+          </a>
+          {{- end }}
+        </div>
+      </details>
       {{- range .Site.Menus.main }}
       <a href="{{ .URL }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ .Name }}</a>
       {{- end }}
