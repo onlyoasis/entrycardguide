@@ -11,11 +11,13 @@
 {{- $formName := "" -}}
 {{- $since := "" -}}
 {{- $isPaid := false -}}
+{{- $formType := "arrival_card" -}}
 {{- $countryName := .Title -}}
 {{- with $countryMeta -}}
   {{- $formName = cond $isZh .form_name_zh .form_name_en -}}
   {{- $since = cond $isZh .since_zh .since_en -}}
   {{- $isPaid = ne (lower .fee_en) "free" -}}
+  {{- $formType = .form_type | default "arrival_card" -}}
   {{- /* Short country name for the visible H1. The /zh/ pages use SEO-loaded
          long .Title values ("泰国 TDAC 官方网站、免费填写和防中介指南") that
          already include the country + form code, so reusing them in the H1
@@ -45,7 +47,11 @@
   <h1 class="font-serif font-medium m-0 max-w-[880px]" style="font-size: clamp(40px, 6vw, 64px); line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
     {{- if $countryMeta -}}
       {{- if $isPaid -}}
+        {{- if eq $formType "travel_authorization" -}}
+        {{ $countryName }} {{ $countryMeta.form_code }}{{ if $isZh }}：官方收费旅行授权，以及如何识别中介加价。{{ else }}, the official paid travel authorisation, and how to spot the middlemen who mark it up.{{ end }}
+        {{- else -}}
         {{ $countryName }} {{ $countryMeta.form_code }}{{ if $isZh }}：官方收费电子签证，以及如何识别中介加价。{{ else }}, the official paid e-visa, and how to spot the middlemen who mark it up.{{ end }}
+        {{- end -}}
       {{- else -}}
         {{ $countryName }} {{ $countryMeta.form_code }}{{ if $isZh }}：免费表单，以及如何识别冒牌站点。{{ else }}, the free form, and how to spot the sites pretending to be it.{{ end }}
       {{- end -}}
