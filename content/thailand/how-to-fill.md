@@ -3,7 +3,7 @@ title: "How to fill every field on the Thailand TDAC"
 kicker: "Field-by-field walkthrough of the official TDAC form with common errors and what they mean. 8 minutes total."
 description: "Step-by-step guide to every field on the Thailand Digital Arrival Card (TDAC). Free and independent."
 date: 2026-04-22
-lastmod: 2026-07-06
+lastmod: 2026-07-13
 country: "thailand"
 weight: 20
 layout: how-to-fill

@@ -1,12 +1,12 @@
 # Mexico — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-07-06
+# Last verified: 2026-07-13
 
 [fmm]
 url = "https://www.inm.gob.mx/fmme/publico/en/solicitud.html"
 name = "Forma Migratoria Múltiple Electrónica (FMM-E)"
 agency = "Instituto Nacional de Migración (INM)"
-last_verified = "2026-07-06"
+last_verified = "2026-07-13"
 archive_url = "https://web.archive.org/web/2026/https://www.inm.gob.mx/fmme/publico/en/solicitud.html"
 notes = "Reserved under .gob.mx — only Mexican government entities can register this domain suffix. Since 2023, most air arrivals at major airports receive a passport stamp instead of FMM; the electronic FMM is still used for land crossings and some other entry points."
 
@@ -14,7 +14,7 @@ notes = "Reserved under .gob.mx — only Mexican government entities can registe
 url = "https://www.inm.gob.mx"
 name = "Instituto Nacional de Migración (home)"
 agency = "Instituto Nacional de Migración (INM)"
-last_verified = "2026-07-06"
+last_verified = "2026-07-13"
 
 # Country-page metadata (consumed by country-form layout).
 # Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.

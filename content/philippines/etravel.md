@@ -3,7 +3,7 @@ title: "Philippines eTravel: Official Site, Free QR, and Field Guide (2026)"
 kicker: "The official Philippines eTravel site is etravel.gov.ph. It is free. Paid filing sites are middlemen."
 description: "Free 2026 guide to Philippines eTravel at etravel.gov.ph: official URL, QR confirmation, fields, and paid-site warnings."
 date: 2026-06-11
-lastmod: 2026-07-06
+lastmod: 2026-07-13
 country: "philippines"
 weight: 10
 keywords: ["philippines etravel", "etravel.gov.ph", "philippines arrival card", "philippines travel declaration", "is ivisa official philippines"]

@@ -3,7 +3,7 @@ title: "泰国 TDAC 入境卡 2026 完整指南：官方网址、免费填写、
 kicker: "2026 年到达泰国的外国旅客中，10% 为这份免费表单付了诈骗站点的钱。这里是官方网址、所有字段，以及如何分辨真假。"
 description: "免费、独立的泰国 TDAC 中文指南。官方网址 tdac.immigration.go.th，每个字段逐项讲解，假站警示，永远免费。"
 date: 2026-04-22
-lastmod: 2026-07-06
+lastmod: 2026-07-13
 country: "thailand"
 weight: 10
 keywords: ["泰国入境卡", "TDAC", "泰国数字入境卡", "TDAC 怎么填", "泰国 TDAC 官网", "iVisa 泰国"]

@@ -3,7 +3,7 @@ title: "Is iVisa the official TDAC site?"
 kicker: "No. The Royal Thai Immigration Bureau publicly named iVisa as a non-official middleman site in March 2026."
 description: "Answering the search query 'is ivisa official for TDAC' — no, iVisa is not the official Thailand TDAC site. Plus the other lookalike sites people ask about."
 date: 2026-04-22
-lastmod: 2026-07-06
+lastmod: 2026-07-13
 country: "thailand"
 weight: 30
 layout: is-ivisa

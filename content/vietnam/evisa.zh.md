@@ -3,7 +3,7 @@ title: "越南 Evisa 官方网站 2026：$25/$50 美元费用和直接申请"
 kicker: "越南 evisa 官方网站是 evisa.gov.vn。单次 $25，多次 $50，费用直接付给政府。"
 description: "越南 evisa 官方网站中文指南：使用 evisa.gov.vn，单次 $25、多次 $50，避开签证中介加价。"
 date: 2026-04-26
-lastmod: 2026-07-06
+lastmod: 2026-07-13
 country: "vietnam"
 weight: 10
 keywords: ["越南 e-visa", "越南电子签证", "越南签证官网", "越南 evisa 费用", "iVisa 越南", "越南签证骗局"]

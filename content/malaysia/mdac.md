@@ -3,7 +3,7 @@ title: "MDAC Website: Malaysia Arrival Card Official Free Form (2026)"
 kicker: "The official MDAC website is imigresen-online.imi.gov.my/mdac/main. The Malaysia Digital Arrival Card is free."
 description: "MDAC website guide: use the official Malaysia arrival card form at imigresen-online.imi.gov.my/mdac/main. Free, no middleman fee."
 date: 2026-04-24
-lastmod: 2026-07-06
+lastmod: 2026-07-13
 country: "malaysia"
 weight: 10
 keywords: ["malaysia digital arrival card", "MDAC", "malaysia MDAC official", "imigresen online MDAC", "is ivisa official malaysia", "malaysia immigration form"]
