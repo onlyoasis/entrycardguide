@@ -10,7 +10,7 @@
              country-roster partial; native <details> keeps it zero-JS, matching
              the language switcher below. */ -}}
       {{- $countryNav := partial "country-roster.html" . -}}
-      <details class="countries-nav relative" role="group" aria-label="{{ i18n "nav_countries" }}">
+      <details data-nav-dropdown class="countries-nav relative" role="group" aria-label="{{ i18n "nav_countries" }}">
         <summary class="cursor-pointer list-none inline-flex items-baseline gap-1.5 text-ink hover:underline hover:underline-offset-4 [&::-webkit-details-marker]:hidden">
           <span>{{ i18n "nav_countries" }}</span>
           <span class="font-mono text-muted border border-rule rounded-sm" style="font-size: 10px; padding: 1px 5px; letter-spacing: 0.04em;">{{ len $countryNav }}</span>
@@ -43,7 +43,7 @@
           3. (optional) translated content with .xx.md suffix
       */ -}}
       {{- if gt (len hugo.Sites) 1 }}
-      <details class="lang-switcher relative" role="group" aria-label="{{ i18n "language_switcher_label" }}">
+      <details data-nav-dropdown class="lang-switcher relative" role="group" aria-label="{{ i18n "language_switcher_label" }}">
         <summary class="cursor-pointer list-none flex items-baseline gap-1 text-ink hover:underline hover:underline-offset-4 [&::-webkit-details-marker]:hidden">
           <span>{{ .Site.Language.LanguageName }}</span>
           <span aria-hidden="true" class="text-muted text-xs">▾</span>

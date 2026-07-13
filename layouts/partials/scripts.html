@@ -38,3 +38,13 @@
   {{- $search = $search | resources.Fingerprint "sha256" }}
 {{- end }}
 <script src="{{ $search.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $search.Data.Integrity }}"{{ end }} defer></script>
+
+{{- /* Nav dropdowns — adds click-outside + Esc dismissal to the header's
+       Countries menu and language switcher, which are native <details> and
+       don't self-close. Self-detects [data-nav-dropdown] and no-ops elsewhere. */ -}}
+{{- $navOpts := dict "targetPath" "js/nav.js" "minify" hugo.IsProduction "target" "es2020" "format" "iife" }}
+{{- $nav := resources.Get "js/nav.ts" | js.Build $navOpts }}
+{{- if hugo.IsProduction }}
+  {{- $nav = $nav | resources.Fingerprint "sha256" }}
+{{- end }}
+<script src="{{ $nav.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $nav.Data.Integrity }}"{{ end }} defer></script>
