@@ -1,0 +1,7 @@
+# USA changelog. Append to this file when ESTA policy changes.
+
+[[entries]]
+date = "2026-07-13"
+summary = "USA guide published"
+summary_zh = "美国 ESTA 指南上线"
+detail = "Adds the official CBP application, current fee, VWP eligibility source, field rules, and documented commercial middlemen."

@@ -1,0 +1,94 @@
+# United States — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-07-13
+
+[esta]
+url = "https://esta.cbp.dhs.gov/"
+name = "Official ESTA Application"
+agency = "U.S. Customs and Border Protection (CBP)"
+last_verified = "2026-07-13"
+archive_url = "https://web.archive.org/web/2026/https://esta.cbp.dhs.gov/"
+notes = "Verified 2026-07-13 against https://esta.cbp.dhs.gov/, https://www.help.cbp.gov/s/article/Article-1437, and https://www.cbp.gov/newsroom/local-media-release/cbp-buffalo-reminder-esta-requirement-land-border-ports-entry. ESTA is a travel authorization, not a visa. The official site displays USD $40.27: a $4.00 processing fee plus $36.27 authorization fee charged only if approved (raised from $21.00 total on 2025-09-30). CBP says to apply when travel plans begin and no later than 72 hours before arrival. VWP travelers need ESTA for air, sea, and land entry. Approval is generally valid for 2 years or until the passport expires, whichever comes first; Brunei passports are limited to 1 year."
+
+[vwp_info]
+url = "https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html"
+name = "Visa Waiver Program"
+agency = "U.S. Department of State"
+last_verified = "2026-07-13"
+notes = "Verified 2026-07-13. The State Department page lists 42 VWP countries and authorities. Eligible citizens or nationals may travel for tourism or business for 90 days or less if they meet every VWP requirement and hold an approved ESTA. ESTA is not a visa and does not guarantee admission."
+
+[meta]
+flag = "🇺🇸"
+name_en = "United States"
+name_zh = "美国"
+form_code = "ESTA"
+guide_slug = "esta"
+form_key = "esta"
+form_name_en = "Electronic System for Travel Authorization"
+form_name_zh = "旅行授权电子系统"
+since_en = "required for VWP land entry since 2022"
+since_zh = "2022 年起适用于 VWP 陆路入境"
+fee_en = "USD $40.27"
+fee_zh = "40.27 美元"
+suffix = ".dhs.gov"
+form_type = "travel_authorization"
+
+field_count = 9
+sections = 4
+time_needed_en = "~23 minutes"
+time_needed_zh = "约 23 分钟"
+output_en = "Save your application number and check the official site for Authorization Approved, Travel Not Authorized, or Authorization Pending. Approval is electronic; it does not guarantee admission."
+output_zh = "保存申请编号，并在官网查看“授权获批”“旅行未获授权”或“授权待定”。ESTA 是电子授权，不保证一定获准入境。"
+
+primary_middleman = "iVisa"
+page_question_en = "Is iVisa the official ESTA site?"
+page_question_zh = "iVisa 是 ESTA 官方网站吗？"
+page_answer_en = "No."
+page_answer_zh = "不是。"
+
+[[outcomes]]
+case = "Case 1"
+tag_en = "Most common"
+tag_zh = "最常见"
+headline_en = "You bought form-filling help and paid at least USD $40 extra."
+headline_zh = "你买到的是代填服务，多付了至少 40 美元。"
+body_en = "The official approved-application total is USD $40.27. A middleman may submit the same ESTA form and add its own service fee. The authorization can still be valid, but the extra charge is not a CBP fee."
+body_zh = "官方申请获批后的总费用是 40.27 美元。中介可能代填同一份 ESTA，再加收服务费。授权可能有效，但多收的部分不是 CBP 费用。"
+
+[[outcomes]]
+case = "Case 2"
+tag_en = "Watch for"
+tag_zh = "需留意"
+headline_en = "The ESTA was filed, but the account is not under your control."
+headline_zh = "ESTA 已提交，但账号不在你手里。"
+body_en = "A paid site may use its own email address or keep the application number. Check the application on esta.cbp.dhs.gov with your passport details, then keep the status and application number yourself."
+body_zh = "付费站可能使用自己的邮箱，或不把申请编号交给你。用护照信息到 esta.cbp.dhs.gov 查询，并自己保存状态和申请编号。"
+
+[[outcomes]]
+case = "Case 3"
+tag_en = "Rare"
+tag_zh = "罕见"
+headline_en = "You paid, but received no ESTA result."
+headline_zh = "付了钱，却没有收到 ESTA 结果。"
+body_en = "Check the official ESTA site before paying again. If no application exists, apply directly at esta.cbp.dhs.gov and ask your card issuer about the missing service."
+body_zh = "再次付款前，先到 ESTA 官网查询。如果查不到申请，直接在 esta.cbp.dhs.gov 重新申请，并向发卡行说明中介没有交付服务。"
+
+# Commercial ESTA middlemen observed through current public pages.
+# Evidence records only what each site stated or charged on 2026-07-13.
+[[scam_sites]]
+domain = "ivisa.com"
+path = "/visas/usa"
+first_observed = "2026-07-13"
+evidence = "Observed 2026-07-13: the iVisa United States page advertised ESTA prices starting from USD $109.99. The official ESTA site displayed USD $40.27, so the advertised starting total was USD $69.72 higher."
+
+[[scam_sites]]
+domain = "esta.global"
+path = "/apply/"
+first_observed = "2026-07-13"
+evidence = "Observed 2026-07-13: the application page stated 'Total price from $129 per applicant' including the government fee and its service fee. The official ESTA site displayed USD $40.27, a difference of at least USD $88.73."
+
+[[scam_sites]]
+domain = "travelusaesta.com"
+path = "/terms.html"
+first_observed = "2026-07-13"
+evidence = "Observed 2026-07-13: the terms page listed USD $140 per application, including the government fee, for ESTA submission support. The official ESTA site displayed USD $40.27, a difference of USD $99.73."
