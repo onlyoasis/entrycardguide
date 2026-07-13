@@ -24,6 +24,7 @@ since_zh = "当前系统"
 fee_en = "Free"
 fee_zh = "免费"
 suffix = ".gov.ph"
+form_type = "arrival_card"
 
 field_count = 12
 sections = 4

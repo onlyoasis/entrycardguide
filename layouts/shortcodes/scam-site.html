@@ -32,6 +32,17 @@
   {{- errorf "scam-site shortcode: domain %q is NOT in data/official_urls/%s.toml scam_sites. Add evidence first." $domain $country }}
 {{- end }}
 
+{{- /* Legal guardrail: an accusation without documented evidence must not
+       build. first_observed may parse as a TOML date, so stringify first. */ -}}
+{{- $evidence := $match.evidence | default "" }}
+{{- if eq (trim $evidence " ") "" }}
+  {{- errorf "scam-site shortcode: %q in data/official_urls/%s.toml has empty evidence. Document evidence before rendering." $domain $country }}
+{{- end }}
+{{- $firstObserved := printf "%v" ($match.first_observed | default "") }}
+{{- if eq (trim $firstObserved " ") "" }}
+  {{- errorf "scam-site shortcode: %q in data/official_urls/%s.toml has empty first_observed." $domain $country }}
+{{- end }}
+
 <figure class="scam-card" role="img" aria-label="{{ i18n "scam_card_aria_prefix" }} {{ $domain }}, {{ i18n "scam_card_aria_suffix" }}">
   {{- if $screenshot }}
   <img src="{{ $screenshot }}" alt="" loading="lazy" class="w-full h-full object-cover">

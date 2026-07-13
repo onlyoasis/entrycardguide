@@ -36,17 +36,9 @@
     <noscript>
       <p class="text-small text-muted">{{ i18n "decide_no_js" }}</p>
       <ul>
-        <li><a href="{{ "/thailand/" | relLangURL }}">Thailand TDAC</a></li>
-        <li><a href="{{ "/mexico/" | relLangURL }}">Mexico FMM-E</a></li>
-        <li><a href="{{ "/dominican/" | relLangURL }}">Dominican Republic E-Ticket</a></li>
-        <li><a href="{{ "/malaysia/" | relLangURL }}">Malaysia MDAC</a></li>
-        <li><a href="{{ "/vietnam/" | relLangURL }}">Vietnam E-Visa</a></li>
-        <li><a href="{{ "/indonesia/" | relLangURL }}">Indonesia e-CD</a></li>
-        <li><a href="{{ "/singapore/" | relLangURL }}">Singapore SGAC</a></li>
-        <li><a href="{{ "/philippines/" | relLangURL }}">Philippines eTravel</a></li>
-        <li><a href="{{ "/cambodia/" | relLangURL }}">Cambodia e-Arrival</a></li>
-        <li><a href="{{ "/japan/" | relLangURL }}">Visit Japan Web</a></li>
-        <li><a href="{{ "/korea/" | relLangURL }}">Korea e-Arrival Card</a></li>
+        {{- range partial "country-roster.html" . }}
+        <li><a href="{{ printf "/%s/" .key | relLangURL }}">{{ .en }} {{ .formCode }}</a></li>
+        {{- end }}
       </ul>
     </noscript>
   </div>

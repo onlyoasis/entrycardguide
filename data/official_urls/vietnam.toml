@@ -40,6 +40,7 @@ since_zh = "官方电子签证项目"
 fee_en = "USD $25 single / $50 multi"
 fee_zh = "单次 25 美元 / 多次 50 美元"
 suffix = ".gov.vn"
+form_type = "evisa"
 
 # Used by the how-to-fill layout. Vietnam's form is longer than the others —
 # it includes photo upload and full passport scan, both validated by humans.

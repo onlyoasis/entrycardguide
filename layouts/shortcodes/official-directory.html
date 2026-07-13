@@ -1,25 +1,16 @@
 {{- $isZh := eq .Site.Language.Lang "zh" -}}
-{{- $countries := slice
-  (dict "key" "thailand" "en" "Thailand" "zh" "泰国" "form" "tdac" "guide" "tdac")
-  (dict "key" "malaysia" "en" "Malaysia" "zh" "马来西亚" "form" "mdac" "guide" "mdac")
-  (dict "key" "singapore" "en" "Singapore" "zh" "新加坡" "form" "sgac" "guide" "sgac")
-  (dict "key" "indonesia" "en" "Indonesia" "zh" "印度尼西亚" "form" "ecd" "guide" "e-cd")
-  (dict "key" "mexico" "en" "Mexico" "zh" "墨西哥" "form" "fmm" "guide" "fmm")
-  (dict "key" "dominican" "en" "Dominican Republic" "zh" "多米尼加" "form" "eticket" "guide" "eticket")
-  (dict "key" "vietnam" "en" "Vietnam" "zh" "越南" "form" "evisa" "guide" "evisa")
-  (dict "key" "philippines" "en" "Philippines" "zh" "菲律宾" "form" "etravel" "guide" "etravel")
-  (dict "key" "cambodia" "en" "Cambodia" "zh" "柬埔寨" "form" "earrival" "guide" "e-arrival")
-  (dict "key" "japan" "en" "Japan" "zh" "日本" "form" "vjw" "guide" "visit-japan-web")
-  (dict "key" "korea" "en" "South Korea" "zh" "韩国" "form" "earrivalcard" "guide" "e-arrival-card")
--}}
+{{- /* Country list comes from the shared roster partial — the same source the
+       homepage grid, header dropdown, and footer use. Adding a country there
+       adds it here; no per-country edits in this shortcode. */ -}}
+{{- $countries := partial "country-roster.html" . -}}
 
 <div class="not-prose border-t border-rule">
   {{- range $countries }}
     {{- $countryData := index hugo.Data.official_urls .key -}}
-    {{- $official := index $countryData .form -}}
+    {{- $official := index $countryData .formKey -}}
     {{- $countryName := cond $isZh .zh .en -}}
     {{- $countryPath := cond $isZh (printf "/zh/%s/" .key) (printf "/%s/" .key) -}}
-    {{- $guidePath := printf "%s%s/" $countryPath .guide -}}
+    {{- $guidePath := printf "%s%s/" $countryPath .guideSlug -}}
     {{- $fakePath := printf "%sis-ivisa-official/" $countryPath -}}
     <article class="py-6 border-b border-rule">
       <div class="text-meta text-muted font-mono uppercase mb-2">{{ $countryName }}</div>
@@ -37,7 +28,8 @@
         </div>
         <div>
           <div class="text-muted mb-1">{{ i18n "directory_fee" }}</div>
-          <span>{{ cond (eq .key "vietnam") (i18n "directory_fee_vietnam") (i18n "directory_fee_free") }}</span>
+          {{- $meta := $countryData.meta -}}
+          <span>{{ if eq .fee "free" }}{{ i18n "directory_fee_free" }}{{ else }}{{ cond $isZh $meta.fee_zh $meta.fee_en }}{{ end }}</span>
         </div>
         <div>
           <div class="text-muted mb-1">{{ i18n "directory_last_verified" }}</div>

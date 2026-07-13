@@ -36,6 +36,7 @@ since_zh = "2025 年 5 月起"
 fee_en = "Free"
 fee_zh = "免费"
 suffix = ".go.th"
+form_type = "arrival_card"
 
 # Used by the how-to-fill layout.
 field_count = 23
