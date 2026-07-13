@@ -32,6 +32,7 @@ since_zh = "2023 年起"
 fee_en = "Free"
 fee_zh = "免费"
 suffix = ".gob.mx"
+form_type = "arrival_card"
 
 # Used by the how-to-fill layout.
 field_count = 10

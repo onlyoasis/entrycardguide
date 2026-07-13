@@ -24,6 +24,7 @@ since_zh = "当前系统"
 fee_en = "Free arrival declaration"
 fee_zh = "入境申报免费"
 suffix = ".gov.kh"
+form_type = "arrival_card"
 
 field_count = 14
 sections = 4

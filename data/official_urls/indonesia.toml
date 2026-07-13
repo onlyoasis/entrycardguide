@@ -47,6 +47,7 @@ since_zh = "当前统一入口"
 fee_en = "Free"
 fee_zh = "免费"
 suffix = ".go.id"
+form_type = "arrival_card"
 
 # Used by the how-to-fill layout.
 field_count = 12

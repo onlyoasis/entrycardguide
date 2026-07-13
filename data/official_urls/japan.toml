@@ -30,6 +30,7 @@ since_zh = "当前系统"
 fee_en = "Free"
 fee_zh = "免费"
 suffix = ".go.jp"
+form_type = "arrival_card"
 
 field_count = 15
 sections = 4
