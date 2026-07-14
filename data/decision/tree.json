@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastVerified": "2026-06-11",
+  "lastVerified": "2026-07-14",
   "start": "country",
   "states": {
     "country": {
@@ -17,7 +17,8 @@
         { "value": "philippines", "label": "Philippines", "next": "philippines_result" },
         { "value": "cambodia", "label": "Cambodia", "next": "cambodia_result" },
         { "value": "japan", "label": "Japan", "next": "japan_result" },
-        { "value": "korea", "label": "South Korea", "next": "korea_result" }
+        { "value": "korea", "label": "South Korea", "next": "korea_result" },
+        { "value": "usa", "label": "United States", "next": "usa_passport" }
       ]
     },
 
@@ -317,6 +318,40 @@
         }
       ],
       "note": "Free at the .go.kr portal. This is separate from K-ETA, visa status, and Q-Code."
+    },
+
+    "usa_passport": {
+      "type": "question",
+      "label": "Is your passport from a Visa Waiver Program country?",
+      "options": [
+        { "value": "yes", "label": "Yes", "next": "usa_esta_result" },
+        { "value": "no_or_unsure", "label": "No / not sure", "next": "usa_visa_result" }
+      ]
+    },
+    "usa_esta_result": {
+      "type": "result",
+      "country": "usa",
+      "summary": "You need an approved ESTA before traveling under the Visa Waiver Program.",
+      "forms": [
+        {
+          "name": "ESTA",
+          "fee": "USD $40.27",
+          "url": "https://esta.cbp.dhs.gov/",
+          "guide": "/usa/esta/",
+          "agency": "U.S. Customs and Border Protection (CBP)",
+          "deadline": "No later than 72 hours before departure"
+        }
+      ],
+      "note": "ESTA is a travel authorization, not a visa. Eligible Visa Waiver Program travelers need it for air, sea, and land entry. Approval does not guarantee admission."
+    },
+    "usa_visa_result": {
+      "type": "result",
+      "country": "usa",
+      "summary": "You may need a U.S. visa instead of ESTA.",
+      "forms": [],
+      "note": "If your passport is not covered by the Visa Waiver Program, or you are not sure you meet every condition, check the U.S. embassy or consulate visa guidance for your passport and trip.",
+      "fallback_guide": "/usa/esta/",
+      "fallback_label": "Read the ESTA overview and Visa Waiver Program check"
     }
   }
 }
