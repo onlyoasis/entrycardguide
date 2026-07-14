@@ -1,0 +1,110 @@
+# Australia — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-07-14
+
+[eta601]
+url = "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601"
+name = "Electronic Travel Authority (subclass 601)"
+agency = "Australian Department of Home Affairs"
+last_verified = "2026-07-14"
+archive_url = "https://web.archive.org/web/2026/https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601"
+notes = "App-only: ETA 601 applications must be made in the AustralianETA App; there is no official web form for ETA 601. Verified 2026-07-14 against this Home Affairs page and https://immi.homeaffairs.gov.au/supporting/files/australian-eta-app-industry-guidance.pdf. The app scans the passport data page, reads the ePassport chip with NFC, takes a live photo, collects personal and ETA answers, and submits payment. There is no Visa Application Charge, but Home Affairs charges an AUD $20 App application service fee. An ETA normally permits multiple entries during 12 months from grant, or until the linked passport expires if sooner, with stays of up to 3 months per visit. Most applicants receive a result immediately, but some applications require more information or longer processing. Home Affairs publishes no application-completion time; the ~15 minute site estimate below is a planning estimate for the six guide steps, not an official promise."
+
+[eta_app]
+name = "AustralianETA"
+developer = "Department of Home Affairs"
+google_play_url = "https://play.google.com/store/apps/details?id=au.gov.homeaffairs.eta"
+app_store_url = "https://apps.apple.com/au/app/australianeta/id1527982364"
+guidance_url = "https://immi.homeaffairs.gov.au/supporting/files/australian-eta-app-industry-guidance.pdf"
+last_verified = "2026-07-14"
+notes = "Verified 2026-07-14 by following the Apple App Store and Google Play links in Home Affairs guidance. Both stores identify the app as AustralianETA and the developer as Department of Home Affairs. The app itself is free to download; each submitted ETA application carries the AUD $20 application service fee."
+
+[evisitor651]
+url = "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/evisitor-651"
+name = "eVisitor (subclass 651)"
+agency = "Australian Department of Home Affairs"
+last_verified = "2026-07-14"
+archive_url = "https://web.archive.org/web/2026/https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/evisitor-651"
+notes = "Verified 2026-07-14. eVisitor 651 is free and is applied for online through Home Affairs and ImmiAccount, not through the AustralianETA App. It is available to citizens holding eligible European passports. It permits multiple entries during 12 months from grant, with stays of up to 3 months per visit. Applicants must be outside Australia when they apply and when Home Affairs decides the application. Several European passports are eligible for both ETA 601 and eVisitor 651; eligible European travellers can use the free eVisitor route."
+
+[meta]
+flag = "🇦🇺"
+name_en = "Australia"
+name_zh = "澳大利亚"
+form_code = "ETA"
+guide_slug = "eta"
+form_key = "eta601"
+form_name_en = "Electronic Travel Authority (subclass 601)"
+form_name_zh = "电子旅行许可（601 类）"
+since_en = "current AustralianETA App process"
+since_zh = "当前 AustralianETA App 流程"
+fee_en = "AUD $20 app charge"
+fee_zh = "20 澳元 App 费"
+suffix = ".homeaffairs.gov.au"
+form_type = "travel_authorization"
+
+field_count = 6
+sections = 6
+time_needed_en = "allow ~15 minutes"
+time_needed_zh = "建议预留约 15 分钟"
+output_en = "Home Affairs sends the decision in writing. If granted, keep the visa grant number, start date, and conditions. The ETA is linked electronically to the application passport; no passport label is issued."
+output_zh = "Home Affairs 会书面通知决定。获批后保存签证批准编号、生效日期和条件。ETA 与申请护照电子绑定，不发护照贴签。"
+
+primary_middleman = "iVisa"
+page_question_en = "Is iVisa the official Australian ETA site?"
+page_question_zh = "iVisa 是澳大利亚 ETA 官方网站吗？"
+page_answer_en = "No. ETA 601 is applied for in the AustralianETA App."
+page_answer_zh = "不是。ETA 601 要在 AustralianETA App 中申请。"
+
+[[outcomes]]
+case = "Case 1"
+tag_en = "ETA 601"
+tag_zh = "ETA 601"
+headline_en = "You used a web application service even though the official ETA route is App-only."
+headline_zh = "你用了网页代办服务，但官方 ETA 601 只能通过 App 申请。"
+body_en = "Home Affairs requires ETA-eligible passport holders to use AustralianETA. A third-party website may charge for assistance, but it is not the official ETA application channel."
+body_zh = "Home Affairs 要求符合资格的护照持有人使用 AustralianETA。第三方网页可以收取协助费，但它不是官方 ETA 申请入口。"
+
+[[outcomes]]
+case = "Case 2"
+tag_en = "eVisitor 651"
+tag_zh = "eVisitor 651"
+headline_en = "You paid for help with an eVisitor application that is free on Home Affairs."
+headline_zh = "你为 eVisitor 代办付了钱，但 Home Affairs 官方申请免费。"
+body_en = "Eligible European passport holders can apply online for eVisitor 651 without a government fee. A commercial site's review or handling charge is not a Home Affairs fee."
+body_zh = "符合资格的欧洲护照持有人可免费在线申请 eVisitor 651。商业网站收取的审核费或服务费不是 Home Affairs 收费。"
+
+[[outcomes]]
+case = "Case 3"
+tag_en = "Check first"
+tag_zh = "先确认"
+headline_en = "You paid, but do not have a Home Affairs decision or visa grant number."
+headline_zh = "你已经付款，但没有 Home Affairs 决定或签证批准编号。"
+body_en = "Check the official AustralianETA App, VEVO, or ImmiAccount as appropriate before paying again. An ETA or eVisitor is electronic and tied to the passport used in the application."
+body_zh = "再次付款前，按申请类型检查 AustralianETA App、VEVO 或 ImmiAccount。ETA 和 eVisitor 都是电子记录，并与申请护照绑定。"
+
+# Commercial Australia travel-authorisation middlemen observed through current public pages.
+# Evidence records only what each site stated or charged on 2026-07-14.
+[[scam_sites]]
+domain = "ivisa.com"
+path = "/visas/australia"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the Australia page listed eVisitor Visa (Subclass 651) prices starting from USD $89.99 and said iVisa reviews and submits applications; the same page stated that iVisa currently does not offer Australia ETA (Subclass 601). The official eVisitor 651 application is free."
+
+[[scam_sites]]
+domain = "evisarocket.com"
+path = "/australia/eta"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the page offered an online Australia ETA application for USD $49 per traveller, described as an AUD $20 government charge of about USD $14 plus a USD $35 Evisa Rocket service fee, and provided an Apply Now workflow. Home Affairs says ETA 601 applicants must use the AustralianETA App."
+
+[[scam_sites]]
+domain = "visit-app.org"
+path = "/australia/"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the site invited travellers to submit an Australia ETA or eVisitor application online and charged USD $110. Its footer stated that it is an agency not affiliated with the Australian Government and that travellers may apply through the official channel for a lower fee."
+
+[[scam_sites]]
+domain = "digitaltravelauthorization.org"
+path = "/australia/australia-evisitor-651.php"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the site offered Australia eVisitor 651 application assistance for a USD $200 service fee, stated that the government charge is zero, and identified itself as a private provider unaffiliated with any government."
