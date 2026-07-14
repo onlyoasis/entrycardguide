@@ -18,7 +18,8 @@
         { "value": "cambodia", "label": "Cambodia", "next": "cambodia_result" },
         { "value": "japan", "label": "Japan", "next": "japan_result" },
         { "value": "korea", "label": "South Korea", "next": "korea_result" },
-        { "value": "usa", "label": "United States", "next": "usa_passport" }
+        { "value": "usa", "label": "United States", "next": "usa_passport" },
+        { "value": "uk", "label": "United Kingdom", "next": "uk_status" }
       ]
     },
 
@@ -352,6 +353,51 @@
       "note": "If your passport is not covered by the Visa Waiver Program, or you are not sure you meet every condition, check the U.S. embassy or consulate visa guidance for your passport and trip.",
       "fallback_guide": "/usa/esta/",
       "fallback_label": "Read the ESTA overview and Visa Waiver Program check"
+    },
+
+    "uk_status": {
+      "type": "question",
+      "label": "Which best describes you?",
+      "options": [
+        { "value": "british_irish", "label": "British or Irish citizen", "next": "uk_none_result" },
+        { "value": "uk_visa_holder", "label": "I already have a UK visa or UK immigration status", "next": "uk_none_result" },
+        { "value": "visa_free", "label": "Passport from an ETA-eligible visa-free country", "next": "uk_eta_result" },
+        { "value": "other", "label": "None of these / not sure", "next": "uk_visa_result" }
+      ]
+    },
+    "uk_none_result": {
+      "type": "result",
+      "country": "uk",
+      "summary": "You do not need a UK ETA.",
+      "forms": [],
+      "note": "British and Irish citizens do not need an ETA. You also do not need one if you already have a UK visa or permission to live, work, or study in the UK.",
+      "fallback_guide": "/uk/eta/",
+      "fallback_label": "Read the UK ETA overview"
+    },
+    "uk_eta_result": {
+      "type": "result",
+      "country": "uk",
+      "summary": "You need an approved UK ETA before traveling.",
+      "forms": [
+        {
+          "name": "ETA",
+          "fee": "£20",
+          "url": "https://www.gov.uk/eta",
+          "guide": "/uk/eta/",
+          "agency": "Home Office",
+          "deadline": "Before you travel; allow up to 3 working days"
+        }
+      ],
+      "note": "A UK ETA is a travel authorization, not a visa. It is valid for 2 years or until the linked passport expires and covers multiple journeys. Every traveler, including a baby or child, needs a separate application."
+    },
+    "uk_visa_result": {
+      "type": "result",
+      "country": "uk",
+      "summary": "You may need a UK visa instead of an ETA.",
+      "forms": [],
+      "note": "If your passport is not ETA-eligible, or you are not sure you meet the ETA conditions, check the official UK visa guidance for your nationality and trip.",
+      "fallback_guide": "/uk/eta/",
+      "fallback_label": "Read the UK ETA overview and eligibility check"
     }
   }
 }
