@@ -1,8 +1,8 @@
 {
   "country": "usa",
   "officialUrl": "https://esta.cbp.dhs.gov/",
-  "lastVerified": "2026-07-13",
-  "source": "https://esta.cbp.dhs.gov/ and https://esta.cbp.dhs.gov/download/app?hideClose=true (official CBP home and printable application), plus https://www.cbp.gov/sites/default/files/documents/Vol_49_No_17_Title.pdf (CBP mandatory-field notice); re-checked 2026-07-13. CBP publishes no passport-number length limit, so this local checker uses a broad 1-20 alphanumeric range instead of treating the plan's 6-15 range as official.",
+  "lastVerified": "2026-07-14",
+  "source": "https://esta.cbp.dhs.gov/ and https://esta.cbp.dhs.gov/download/app?hideClose=true (official CBP home and printable application), plus https://www.cbp.gov/sites/default/files/documents/Vol_49_No_17_Title.pdf (CBP mandatory-field notice); re-checked 2026-07-14. CBP publishes no passport-number length limit, so this local checker uses a broad 1-20 alphanumeric range instead of treating the plan's 6-15 range as official.",
   "fields": {
     "passport": {
       "type": "passport",
