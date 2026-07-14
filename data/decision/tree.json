@@ -20,7 +20,8 @@
         { "value": "korea", "label": "South Korea", "next": "korea_result" },
         { "value": "usa", "label": "United States", "next": "usa_passport" },
         { "value": "uk", "label": "United Kingdom", "next": "uk_status" },
-        { "value": "canada", "label": "Canada", "next": "canada_entry" }
+        { "value": "canada", "label": "Canada", "next": "canada_entry" },
+        { "value": "new-zealand", "label": "New Zealand", "next": "nz_passport" }
       ]
     },
 
@@ -451,6 +452,74 @@
       "note": "If your passport is visa-required, or you are not sure you meet the eTA conditions, check the official Canada.ca eligibility guidance for your passport, travel history, and route.",
       "fallback_guide": "/canada/eta/",
       "fallback_label": "Read the Canada eTA overview and eligibility check"
+    },
+
+    "nz_passport": {
+      "type": "question",
+      "label": "Which best describes you?",
+      "options": [
+        { "value": "nz_au_citizen", "label": "New Zealand or Australian citizen", "next": "nz_nztd_only_result" },
+        { "value": "visa_waiver", "label": "Visa-waiver passport, or arriving by cruise", "next": "nz_nztd_nzeta_result" },
+        { "value": "other", "label": "Visa-required passport / not sure", "next": "nz_visa_result" }
+      ]
+    },
+    "nz_nztd_only_result": {
+      "type": "result",
+      "country": "new-zealand",
+      "summary": "You need to file the New Zealand Traveller Declaration (NZTD).",
+      "forms": [
+        {
+          "name": "NZTD",
+          "fee": "FREE",
+          "url": "https://www.travellerdeclaration.govt.nz/",
+          "guide": "/new-zealand/nztd/",
+          "agency": "New Zealand Customs Service",
+          "deadline": "Within 24 hours before departure"
+        }
+      ],
+      "note": "Every person entering New Zealand must complete the free NZTD. Australian citizens travelling on Australian passports do not need an NZeTA."
+    },
+    "nz_nztd_nzeta_result": {
+      "type": "result",
+      "country": "new-zealand",
+      "summary": "You need both the free NZTD and an approved NZeTA.",
+      "forms": [
+        {
+          "name": "NZTD",
+          "fee": "FREE",
+          "url": "https://www.travellerdeclaration.govt.nz/",
+          "guide": "/new-zealand/nztd/",
+          "agency": "New Zealand Customs Service",
+          "deadline": "Within 24 hours before departure"
+        },
+        {
+          "name": "NZeTA",
+          "fee": "NZD $17-$23 + IVL NZD $100",
+          "url": "https://nzeta.immigration.govt.nz/",
+          "guide": "/new-zealand/nztd/",
+          "agency": "Immigration New Zealand",
+          "deadline": "Allow up to 72 hours before booking travel"
+        }
+      ],
+      "note": "NZTD and NZeTA are separate. Visa-waiver air travellers, cruise passengers, Australian permanent residents, and some transit travellers need an NZeTA. IVL exemptions apply, including for Australian permanent residents."
+    },
+    "nz_visa_result": {
+      "type": "result",
+      "country": "new-zealand",
+      "summary": "You need the free NZTD and may need a New Zealand visa.",
+      "forms": [
+        {
+          "name": "NZTD",
+          "fee": "FREE",
+          "url": "https://www.travellerdeclaration.govt.nz/",
+          "guide": "/new-zealand/nztd/",
+          "agency": "New Zealand Customs Service",
+          "deadline": "Within 24 hours before departure"
+        }
+      ],
+      "note": "Complete the free NZTD, then check the official New Zealand visa requirements for your passport and trip. An NZeTA does not replace a visa when a visa is required.",
+      "fallback_guide": "/new-zealand/nztd/",
+      "fallback_label": "Read the NZTD overview and visa guidance"
     }
   }
 }
