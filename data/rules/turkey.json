@@ -1,0 +1,228 @@
+{
+  "country": "turkey",
+  "officialUrl": "https://www.evisa.gov.tr/",
+  "lastVerified": "2026-07-14",
+  "source": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/, https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/, https://www.evisa.gov.tr/en/tour/thats/, https://www.evisa.gov.tr/assets/files/guide_en.pdf, and https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa; re-checked 2026-07-14. The official flow first uses nationality, travel-document type, and arrival date to determine visa exemption, direct eligibility, conditional eligibility, or sticker-visa routing. The official group e-Visa guide then documents the applicant, passport, contact, address, and conditional supporting-document fields and publishes exact maximum lengths for those transferred fields. The local checker uses YYYY-MM-DD rather than the guide's compact YYYYMMDD transfer-file format. It uses the guide's published limits where available. The e-Visa flow can vary by nationality, so supporting-document fields are conditional and no local check can decide eligibility or price.",
+  "fields": {
+    "nationality": {
+      "type": "select",
+      "label": "Nationality or region of travel document",
+      "required": true,
+      "help": "Choose the nationality or region of the passport you will carry. The official system uses this answer to check exemption, eligibility, conditions, and price.",
+      "errors": {
+        "required": "Nationality or region is required",
+        "invalidOption": "Choose the nationality or region of your travel document"
+      }
+    },
+    "travel_document_type": {
+      "type": "select",
+      "label": "Travel document type",
+      "required": true,
+      "help": "Choose the exact document type, usually Ordinary Passport. Diplomatic, service, special, official, and other documents can have different rules.",
+      "errors": {
+        "required": "Travel document type is required",
+        "invalidOption": "Choose the exact type printed or assigned to your document"
+      }
+    },
+    "arrival_date": {
+      "type": "date",
+      "label": "Arrival date in Türkiye",
+      "required": true,
+      "minDate": "2026-07-14",
+      "placeholder": "2026-09-15",
+      "help": "Enter the planned first arrival date. The e-Visa validity period begins from the date selected in the official application.",
+      "errors": {
+        "required": "Arrival date is required",
+        "invalidFormat": "Use YYYY-MM-DD in this local checker",
+        "tooEarly": "Arrival date cannot be before 2026-07-14"
+      }
+    },
+    "given_names": {
+      "type": "name",
+      "label": "Given or first name(s)",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 50,
+      "placeholder": "TARO KEN",
+      "help": "Enter every given name as shown in the passport. The official group guide sets a 50-character maximum including spaces.",
+      "errors": {
+        "required": "Given or first name is required",
+        "tooShort": "Enter the given name shown on the passport",
+        "tooLong": "Given names cannot exceed 50 characters",
+        "invalidChars": "Use the Latin passport spelling"
+      }
+    },
+    "surname": {
+      "type": "name",
+      "label": "Surname(s)",
+      "required": false,
+      "maxLength": 50,
+      "placeholder": "YAMADA",
+      "help": "Enter the surname exactly as shown in the passport. Leave it blank only when the passport has no surname. The official group guide sets a 50-character maximum.",
+      "errors": {
+        "tooLong": "Surname cannot exceed 50 characters",
+        "invalidChars": "Use the Latin passport spelling"
+      }
+    },
+    "date_of_birth": {
+      "type": "date",
+      "label": "Date of birth",
+      "required": true,
+      "maxDate": "2026-07-14",
+      "placeholder": "1991-08-22",
+      "help": "Match the passport date. This local checker uses YYYY-MM-DD; the official transfer guide uses YYYYMMDD.",
+      "errors": {
+        "required": "Date of birth is required",
+        "invalidFormat": "Use YYYY-MM-DD",
+        "tooLate": "Date of birth cannot be after 2026-07-14"
+      }
+    },
+    "place_of_birth": {
+      "type": "text",
+      "label": "Place of birth",
+      "required": true,
+      "maxLength": 40,
+      "placeholder": "TOKYO",
+      "help": "Copy the place of birth from the passport. The official group guide sets a 40-character maximum including spaces.",
+      "errors": {
+        "required": "Place of birth is required",
+        "tooLong": "Place of birth cannot exceed 40 characters"
+      }
+    },
+    "mothers_name": {
+      "type": "name",
+      "label": "Mother's name",
+      "required": false,
+      "maxLength": 40,
+      "placeholder": "HANAKO YAMADA",
+      "help": "Enter all names when requested. The official group guide allows this field to be blank when the mother's name is not indicated and sets a 40-character maximum.",
+      "errors": {
+        "tooLong": "Mother's name cannot exceed 40 characters",
+        "invalidChars": "Use Latin letters, spaces, hyphens, or apostrophes"
+      }
+    },
+    "fathers_name": {
+      "type": "name",
+      "label": "Father's name",
+      "required": false,
+      "maxLength": 40,
+      "placeholder": "ICHIRO YAMADA",
+      "help": "Enter all names when requested. The official group guide allows this field to be blank when the father's name is not indicated and sets a 40-character maximum.",
+      "errors": {
+        "tooLong": "Father's name cannot exceed 40 characters",
+        "invalidChars": "Use Latin letters, spaces, hyphens, or apostrophes"
+      }
+    },
+    "passport_number": {
+      "type": "passport",
+      "label": "Travel document number",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 16,
+      "pattern": "^[A-Z0-9]{1,16}$",
+      "placeholder": "A12345678",
+      "help": "Copy the number exactly from the travel document selected earlier. The official group guide disallows spaces and special characters and sets a 16-character maximum.",
+      "errors": {
+        "required": "Travel document number is required",
+        "tooShort": "Enter the number printed on the travel document",
+        "tooLong": "Travel document number cannot exceed 16 characters",
+        "invalidChars": "Use capital letters and numbers only, with no spaces",
+        "invalidFormat": "Use the letters and numbers printed as the document number"
+      }
+    },
+    "passport_issue_date": {
+      "type": "date",
+      "label": "Travel document issue date",
+      "required": true,
+      "maxDate": "2026-07-14",
+      "placeholder": "2023-09-30",
+      "help": "Match the issue date on the travel document. This local checker uses YYYY-MM-DD.",
+      "errors": {
+        "required": "Travel document issue date is required",
+        "invalidFormat": "Use YYYY-MM-DD",
+        "tooLate": "Issue date cannot be after 2026-07-14"
+      }
+    },
+    "passport_expiry": {
+      "type": "date",
+      "label": "Travel document expiry date",
+      "required": true,
+      "minDate": "2026-07-14",
+      "placeholder": "2033-09-29",
+      "help": "Match the document expiry date. Türkiye generally requires validity at least 60 days beyond the permitted stay, and the official eligibility result can impose more.",
+      "errors": {
+        "required": "Travel document expiry date is required",
+        "invalidFormat": "Use YYYY-MM-DD",
+        "tooEarly": "Travel document is already expired"
+      }
+    },
+    "email": {
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "maxLength": 40,
+      "placeholder": "name@example.com",
+      "help": "Use a lowercase email address you control. The payment link and e-Visa download link are sent by email. The official group guide sets a 40-character maximum.",
+      "errors": {
+        "required": "Email is required",
+        "invalidFormat": "Must look like name@example.com",
+        "tooLong": "Email cannot exceed 40 characters in the official group guide"
+      }
+    },
+    "phone": {
+      "type": "phone",
+      "label": "Phone number",
+      "required": true,
+      "maxLength": 20,
+      "placeholder": "+91 98765 43210",
+      "help": "Include the country or region code. The official group guide sets a 20-character display maximum; this local checker accepts an international number with 7-15 digits.",
+      "errors": {
+        "required": "Phone number is required",
+        "invalidFormat": "Include the country code and 7-15 digits",
+        "tooLong": "Phone number cannot exceed 20 displayed characters"
+      }
+    },
+    "home_address": {
+      "type": "text",
+      "label": "Residence address",
+      "required": true,
+      "maxLength": 200,
+      "placeholder": "Street, city, region, country",
+      "help": "Enter the applicant's current residence address. The official group guide sets a 200-character maximum including spaces.",
+      "errors": {
+        "required": "Residence address is required",
+        "tooLong": "Residence address cannot exceed 200 characters"
+      }
+    },
+    "supporting_document_type": {
+      "type": "select",
+      "label": "Supporting document type",
+      "required": false,
+      "help": "Complete this only when the official eligibility result requires a valid visa or residence permit as support. An e-Visa is not available if you do not meet the stated condition.",
+      "errors": {
+        "invalidOption": "Choose visa or residence permit only when the official result requires it"
+      }
+    },
+    "supporting_document_issuer": {
+      "type": "select",
+      "label": "Supporting document issuing country or area",
+      "required": false,
+      "help": "Select the country or area that issued the supporting visa or residence permit. Current MFA country rules commonly refer to Schengen, the United States, the United Kingdom, or Ireland, but follow the exact eligibility screen.",
+      "errors": {
+        "invalidOption": "Choose the issuer shown on the supporting document"
+      }
+    },
+    "supporting_document_expiry": {
+      "type": "date",
+      "label": "Supporting document expiry date",
+      "required": false,
+      "minDate": "2026-07-14",
+      "placeholder": "2027-05-31",
+      "help": "Enter the expiry date when the supporting document has one. It must remain valid under the conditions shown by the official e-Visa system.",
+      "errors": {
+        "invalidFormat": "Use YYYY-MM-DD",
+        "tooEarly": "The supporting document is already expired"
+      }
+    }
+  }
+}

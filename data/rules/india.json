@@ -1,0 +1,178 @@
+{
+  "country": "india",
+  "officialUrl": "https://indianvisaonline.gov.in/earrival/",
+  "lastVerified": "2026-07-14",
+  "source": "https://indianvisaonline.gov.in/earrival/ (current official web form), https://indianvisaonline.gov.in/ and https://ociservices.gov.in/onlineOCI/onlineOCI/faq (72-hour window and OCI applicability), plus https://www.cgisf.gov.in/section/public-advisories/digitization-of-disembarkation-card-for-foreign-nationals-visiting-india/ and https://www.eoisaotome.gov.in/page/e-arrival-card-information/ (official government mission guidance); re-checked 2026-07-14. The current crawlable form directly shows full name, nationality, passport number, purpose, arrival date, countries visited in the last 6 days, India address, state, district, email, phone, emergency phone, and a truth declaration. Government mission guidance also tells travellers to have flight and visa or OCI details ready, so those two travel-document fields are retained here because the form may prefill or reveal them by route or record. The official sources publish no general name, passport, visa or OCI number, address, email, or phone length limits. This local checker therefore uses broad conservative limits and YYYY-MM-DD dates; these are local checks, not quoted government restrictions.",
+  "fields": {
+    "full_name": {
+      "type": "name",
+      "label": "Full name as in passport",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 100,
+      "placeholder": "TARO KEN YAMADA",
+      "help": "Copy the full Latin-script name from the passport used to enter India. Do not shorten middle names.",
+      "errors": {
+        "required": "Full name is required",
+        "tooShort": "Enter the name shown on the passport",
+        "tooLong": "Check the name; this local checker allows up to 100 characters",
+        "invalidChars": "Use the Latin spelling shown on the passport"
+      }
+    },
+    "nationality": {
+      "type": "select",
+      "label": "Nationality or region",
+      "required": true,
+      "help": "Select the nationality or region of the passport you will present at Indian immigration.",
+      "errors": {
+        "required": "Nationality or region is required",
+        "invalidOption": "Choose the nationality or region shown on your passport"
+      }
+    },
+    "passport_number": {
+      "type": "passport",
+      "label": "Passport number",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 20,
+      "pattern": "^[A-Z0-9]{1,20}$",
+      "placeholder": "A12345678",
+      "help": "Copy the passport number from the photo page. The official form publishes no universal length limit, so this checker uses a broad alphanumeric range.",
+      "errors": {
+        "required": "Passport number is required",
+        "tooShort": "Enter the passport number printed on the photo page",
+        "tooLong": "Check the passport number; this local checker allows up to 20 characters",
+        "invalidChars": "Use letters and numbers only, with no spaces or MRZ filler marks",
+        "invalidFormat": "Use the letters and numbers printed as the passport number"
+      }
+    },
+    "visa_or_oci_number": {
+      "type": "text",
+      "label": "Visa, e-Visa, or OCI number",
+      "required": true,
+      "placeholder": "ETA or OCI number",
+      "help": "Use the travel permission that applies to you: the visa or e-Visa reference for a visa holder, or the OCI number for an OCI cardholder. This card does not replace that permission.",
+      "errors": {
+        "required": "Enter the applicable visa, e-Visa, or OCI number"
+      }
+    },
+    "purpose": {
+      "type": "select",
+      "label": "Purpose of visit",
+      "required": true,
+      "help": "Choose the option that matches this trip, such as tourism, business, medical, conference, study, employment, official travel, or other.",
+      "errors": {
+        "required": "Purpose of visit is required",
+        "invalidOption": "Choose the purpose that matches this trip"
+      }
+    },
+    "arrival_date": {
+      "type": "date",
+      "label": "Date of arrival in India",
+      "required": true,
+      "minDate": "2026-07-14",
+      "placeholder": "2026-09-15",
+      "help": "Use the local date you reach India. The official form displays DD/MM/YYYY; this local checker uses YYYY-MM-DD. Submit within the 72 hours before arrival.",
+      "errors": {
+        "required": "Arrival date is required",
+        "invalidFormat": "Use YYYY-MM-DD in this local checker",
+        "tooEarly": "Arrival date cannot be before 2026-07-14"
+      }
+    },
+    "flight_number": {
+      "type": "flight",
+      "label": "Flight number",
+      "required": true,
+      "placeholder": "AI302",
+      "help": "Enter the flight that lands in India, not a booking reference. Government mission guidance lists flight details among the information travellers should have ready.",
+      "errors": {
+        "required": "Flight number is required",
+        "invalidFormat": "Use the airline code and flight number, for example AI302 or SQ406"
+      }
+    },
+    "countries_visited_last_6_days": {
+      "type": "text",
+      "label": "Countries visited in the last 6 days",
+      "required": false,
+      "placeholder": "Singapore, Thailand",
+      "help": "Select every country the official form asks you to report for the previous 6 days. Use its No Country Visited option when that is true.",
+      "errors": {
+        "required": "List the countries or select No Country Visited"
+      }
+    },
+    "india_address": {
+      "type": "text",
+      "label": "Address in India",
+      "required": true,
+      "placeholder": "Hotel name, street, city",
+      "help": "Enter the full address of the first hotel, host, or residence in India, not only a city name.",
+      "errors": {
+        "required": "An address in India is required"
+      }
+    },
+    "state": {
+      "type": "select",
+      "label": "State or union territory",
+      "required": true,
+      "help": "Select the state or union territory for the India address. Confirm it with the hotel or host if unsure.",
+      "errors": {
+        "required": "State or union territory is required",
+        "invalidOption": "Choose the state or union territory for the address"
+      }
+    },
+    "district": {
+      "type": "select",
+      "label": "District",
+      "required": true,
+      "help": "Select the district that contains the India address. It is not always the same text as the city name.",
+      "errors": {
+        "required": "District is required",
+        "invalidOption": "Choose the district for the address"
+      }
+    },
+    "email": {
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "maxLength": 254,
+      "placeholder": "name@example.com",
+      "help": "Use an inbox you control and can open while travelling. Check the domain before submitting.",
+      "errors": {
+        "required": "Email is required",
+        "invalidFormat": "Must look like name@example.com",
+        "tooLong": "Email is too long; this local checker allows up to 254 characters"
+      }
+    },
+    "contact_number": {
+      "type": "phone",
+      "label": "Contact number",
+      "required": true,
+      "placeholder": "+81 90 1234 5678",
+      "help": "Enter the country or region code and a number where Indian immigration can reach you.",
+      "errors": {
+        "required": "Contact number is required",
+        "invalidFormat": "Include the country code and 7-15 digits"
+      }
+    },
+    "emergency_contact_number": {
+      "type": "phone",
+      "label": "Emergency contact number",
+      "required": false,
+      "placeholder": "+81 80 9876 5432",
+      "help": "If provided, use a different reachable contact and include the country or region code.",
+      "errors": {
+        "invalidFormat": "Include the country code and 7-15 digits"
+      }
+    },
+    "declaration": {
+      "type": "select",
+      "label": "Truth and accuracy declaration",
+      "required": true,
+      "help": "Confirm only after checking that the information is true and accurate. The official warning says false information may lead to denial of entry or legal consequences.",
+      "errors": {
+        "required": "Confirm the declaration before submitting",
+        "invalidOption": "Confirm only after reviewing every answer"
+      }
+    }
+  }
+}

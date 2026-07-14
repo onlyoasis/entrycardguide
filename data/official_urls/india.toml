@@ -1,0 +1,101 @@
+# India — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-07-14
+
+[earrival]
+url = "https://indianvisaonline.gov.in/earrival/"
+name = "Official India e-Arrival Card"
+agency = "Bureau of Immigration, Ministry of Home Affairs"
+last_verified = "2026-07-14"
+archive_url = "https://web.archive.org/web/2026/https://indianvisaonline.gov.in/earrival/"
+notes = "Verified 2026-07-14 against https://indianvisaonline.gov.in/earrival/, https://indianvisaonline.gov.in/, https://ociservices.gov.in/onlineOCI/onlineOCI/faq, and the Bureau of Immigration advisory at https://www.cgisf.gov.in/section/public-advisories/digitization-of-disembarkation-card-for-foreign-nationals-visiting-india/. The official form labels the service free of cost. Foreign nationals, including OCI cardholders, must submit it within the 72 hours before arrival; Indian passport holders are not foreign nationals and do not submit it. It records arrival information and does not replace a visa or OCI status. The current web form asks for identity, passport, purpose, arrival, recent travel, India address, contact, emergency-contact, and declaration information. Government mission notices also tell travellers to have flight and visa or OCI details ready; fields may vary by channel or prefilled record."
+
+[evisa]
+url = "https://indianvisaonline.gov.in/evisa/tvoa.html"
+name = "Official India e-Visa"
+agency = "Bureau of Immigration, Ministry of Home Affairs"
+last_verified = "2026-07-14"
+archive_url = "https://web.archive.org/web/2026/https://indianvisaonline.gov.in/evisa/tvoa.html"
+notes = "Verified 2026-07-14 against https://indianvisaonline.gov.in/evisa/tvoa.html and the official 09-July-2026 tourist-fee table at https://indianvisaonline.gov.in/evisa/images/Etourist_fee_final.pdf. The e-Visa is separate from the free e-Arrival Card. Fees vary by nationality and duration. Examples in the current table: Australia and Canada pay USD $10 for a 30-day tourist e-Visa from April to June or USD $25 from July to March, USD $40 for 1 year, and USD $200 for 5 years; the United States has the same 30-day and 1-year fees but USD $160 for 5 years; the United Kingdom has the same 30-day and 1-year fees but USD $484 for 5 years; Japan pays USD $10 or $25 for 30 days and USD $25 for either 1 or 5 years. Some nationalities are listed at USD $0. A 3% bank charge is additional. The official page currently permits first entry through 33 named airports and 19 named seaports; travellers may depart through any authorized Immigration Check Post. Check the live eligibility, fee table, and port list before paying."
+
+[meta]
+flag = "🇮🇳"
+name_en = "India"
+name_zh = "印度"
+form_code = "e-Arrival Card"
+guide_slug = "e-arrival-card"
+form_key = "earrival"
+form_name_en = "India e-Arrival Card"
+form_name_zh = "印度电子入境卡"
+since_en = "required from 1 October 2025"
+since_zh = "2025 年 10 月 1 日起实施"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".gov.in"
+form_type = "arrival_card"
+
+field_count = 15
+sections = 5
+time_needed_en = "~10 minutes"
+time_needed_zh = "约 10 分钟"
+output_en = "Save the digital confirmation or reference after submission. The e-Arrival Card is checked with your travel document at immigration and does not replace your visa or OCI status."
+output_zh = "提交后保存电子确认或参考编号。入境检查时会结合旅行证件核对；e-Arrival Card 不能替代签证或 OCI 身份。"
+
+primary_middleman = "commercial visa and arrival-card sites"
+page_question_en = "Is a paid India visa or arrival-card site official?"
+page_question_zh = "收费的印度签证或入境卡网站是官网吗？"
+page_answer_en = "Not unless the application ends in .gov.in."
+page_answer_zh = "申请域名不是 .gov.in，就不是印度政府官网。"
+
+[[outcomes]]
+case = "Case 1"
+tag_en = "Two forms"
+tag_zh = "两项手续"
+headline_en = "The paid site may have filed an e-Visa, but nobody completed your free e-Arrival Card."
+headline_zh = "付费站可能代办了 e-Visa，但免费的 e-Arrival Card 仍没人替你填。"
+body_en = "An e-Visa and an e-Arrival Card are separate. Check the e-Visa status on indianvisaonline.gov.in, then submit the free e-Arrival Card yourself within 72 hours before arrival."
+body_zh = "e-Visa 和 e-Arrival Card 是两项手续。先在 indianvisaonline.gov.in 核对 e-Visa 状态，再在抵达前 72 小时内自行提交免费的 e-Arrival Card。"
+
+[[outcomes]]
+case = "Case 2"
+tag_en = "No control"
+tag_zh = "不在手里"
+headline_en = "The application may exist, but its email or reference is controlled by the paid site."
+headline_zh = "申请可能存在，但邮箱或参考编号由付费站控制。"
+body_en = "Use the official status or recovery route before paying again. Keep the e-Visa application ID, ETA, e-Arrival confirmation, and email account under your own control."
+body_zh = "再次付款前，先走官网查询或找回流程。e-Visa 申请编号、ETA、e-Arrival 确认和邮箱都应由自己保存。"
+
+[[outcomes]]
+case = "Case 3"
+tag_en = "No result"
+tag_zh = "没有结果"
+headline_en = "You paid but received no usable visa or arrival-card confirmation."
+headline_zh = "付了钱，却没有收到可用的签证或入境卡确认。"
+body_en = "Check for an application on the two official .gov.in services before starting again. If nothing was filed, apply directly and ask your card issuer about the undelivered intermediary service."
+body_zh = "重新申请前，先在两个 .gov.in 官网查询。若确实没有申请记录，直接在官网办理，并向发卡行说明中介没有交付服务。"
+
+# Commercial India travel-document middlemen observed through current public pages.
+# Evidence records only what each site stated or charged on 2026-07-14.
+[[scam_sites]]
+domain = "earrivalcardindia.com"
+path = "/"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the page sold help completing the India e-Arrival Card for a GBP £15 service fee and said it would email the confirmation, while the government form states that the service is free of cost."
+
+[[scam_sites]]
+domain = "indiaearrivalcardgo.com"
+path = "/refund-policy"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the refund page listed a USD $59.99 Standard Service for India e-Arrival Card processing within 24 hours and described the operator as a private travel-assistance provider; the official e-Arrival Card is free."
+
+[[scam_sites]]
+domain = "india-visa.govis.ai"
+path = "/"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the page advertised India e-Visa totals of USD $99 for 30 days, USD $149 for 1 year, and USD $399 for 5 years, including its assistance and government fees. The current official tourist-fee table commonly lists USD $10 or $25, USD $40, and USD $200 respectively, with nationality-specific exceptions."
+
+[[scam_sites]]
+domain = "indiasevisa.org"
+path = "/visa-fees"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the page listed totals including service fees of USD $179 or $199 for a 30-day tourist e-Visa and USD $199 for a 1-year tourist e-Visa, while acknowledging official government fees of USD $10-$25 and USD $40."

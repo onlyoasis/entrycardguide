@@ -1,0 +1,101 @@
+# Turkey — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-07-14
+
+[evisa]
+url = "https://www.evisa.gov.tr/"
+name = "Official Türkiye e-Visa Application"
+agency = "Republic of Türkiye Ministry of Foreign Affairs"
+last_verified = "2026-07-14"
+archive_url = "https://web.archive.org/web/2026/https://www.evisa.gov.tr/"
+notes = "Verified 2026-07-14 against https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/, https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/, https://www.evisa.gov.tr/en/tour/thats/, and https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa. Check visa exemption before applying. Ordinary passport holders from the United States, United Kingdom, Canada, and Australia are currently visa-exempt for tourist visits up to 90 days in any 180-day period, so each has no current e-Visa price. Ordinary People's Republic of China passport holders are also visa-exempt for up to 90 days in any 180-day period from 2 January 2026, so China also has no current e-Visa price. These five requested representative quotes are therefore not applicable, not historical fee figures. For passports that remain eligible, the fee varies by nationality and the official system displays it only after nationality, travel-document type, and travel dates are selected; use the live quote. Some nationalities, including India, Bangladesh, Pakistan, and the Philippines, may obtain a 30-day single-entry e-Visa only when they meet added conditions such as holding a valid Schengen, US, UK, or Ireland visa or residence permit."
+
+[mfa_visa_info]
+url = "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+name = "Visa Information for Foreigners"
+agency = "Republic of Türkiye Ministry of Foreign Affairs"
+last_verified = "2026-07-14"
+archive_url = "https://web.archive.org/web/2026/https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+notes = "Verified 2026-07-14. This is the Ministry of Foreign Affairs country-by-country source for visa exemption, direct e-Visa eligibility, conditional e-Visa eligibility, and sticker-visa requirements. Examples currently exempt for ordinary tourist passports include Germany, France, Italy, Spain, Belgium, Portugal, Switzerland, Norway, Denmark, Finland, Japan, South Korea, Hong Kong SAR, Singapore, Malaysia, the United Kingdom, the United States, Canada, Australia, and China. Stay limits and passport-type rules differ, so check the entry for the exact passport."
+
+[meta]
+flag = "🇹🇷"
+name_en = "Turkey"
+name_zh = "土耳其"
+form_code = "e-Visa"
+guide_slug = "evisa"
+form_key = "evisa"
+form_name_en = "Türkiye Electronic Visa"
+form_name_zh = "土耳其电子签证"
+since_en = "online system since 2013"
+since_zh = "在线系统自 2013 年启用"
+fee_en = "Varies by passport"
+fee_zh = "按护照而定"
+suffix = ".gov.tr"
+form_type = "evisa"
+
+field_count = 18
+sections = 5
+time_needed_en = "~10 minutes"
+time_needed_zh = "约 10 分钟"
+output_en = "After payment, download the e-Visa from the link emailed by the official system. Carry a digital or printed copy with the passport used in the application."
+output_zh = "付款后从官网邮件中的链接下载 e-Visa。入境时携带电子版或打印件，以及申请时使用的护照。"
+
+primary_middleman = "commercial e-Visa sites"
+page_question_en = "Is a paid Turkey e-Visa site official?"
+page_question_zh = "收费的土耳其 e-Visa 网站是官网吗？"
+page_answer_en = "Only evisa.gov.tr is the government application site."
+page_answer_zh = "政府申请网站只有 evisa.gov.tr。"
+
+[[outcomes]]
+case = "Case 1"
+tag_en = "Paid help"
+tag_zh = "代填服务"
+headline_en = "You bought form-filling help and paid a commercial service fee."
+headline_zh = "你买到的是代填服务，并支付了商业服务费。"
+body_en = "The e-Visa may still be valid, but the intermediary charge is not a Ministry of Foreign Affairs fee. First confirm that your passport actually needs an e-Visa."
+body_zh = "e-Visa 可能仍然有效，但中介加价不是土耳其外交部收费。先确认你的护照是否真的需要 e-Visa。"
+
+[[outcomes]]
+case = "Case 2"
+tag_en = "No control"
+tag_zh = "不在手里"
+headline_en = "The e-Visa was filed, but the email or application reference is not under your control."
+headline_zh = "e-Visa 可能已提交，但邮箱或申请编号不在你手里。"
+body_en = "Use the ongoing-application route on evisa.gov.tr before paying again. Keep the email, reference, payment receipt, and PDF yourself."
+body_zh = "再次付款前，先使用 evisa.gov.tr 的继续申请入口查询。邮箱、申请编号、付款凭证和 PDF 都应由自己保存。"
+
+[[outcomes]]
+case = "Case 3"
+tag_en = "No result"
+tag_zh = "没有结果"
+headline_en = "You paid but received no usable e-Visa."
+headline_zh = "付了钱，却没有收到可用的 e-Visa。"
+body_en = "Check your passport on the MFA visa-information page first. If an e-Visa is required and no official application exists, apply at evisa.gov.tr and ask your card issuer about the undelivered intermediary service."
+body_zh = "先在外交部签证信息页核对护照要求。若确实需要 e-Visa 且官网没有申请记录，直接在 evisa.gov.tr 办理，并向发卡行说明中介没有交付服务。"
+
+# Commercial Türkiye e-Visa middlemen observed through current public pages.
+# Evidence records only what each site stated or charged on 2026-07-14.
+[[scam_sites]]
+domain = "evisa.govn.tr"
+path = "/official/en-us/"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the look-alike domain titled itself 'Republic of Türkiye Electronic Visa (e-Visa) - Portal Version 2.0', called its USD $20-$100 range a government fee, and claimed US and UK citizens could receive authorization, although ordinary US and UK tourist passports are currently visa-exempt and the government domain is evisa.gov.tr."
+
+[[scam_sites]]
+domain = "turkey-visa.org"
+path = "/"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the page listed a USD $91 standard service fee or USD $114 urgent service fee, plus a stated USD $13-$99 government fee, for final totals of USD $104-$213."
+
+[[scam_sites]]
+domain = "turkey.gwsg.org"
+path = "/en_US"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the page presented Turkey tourist visa products at USD $119 and USD $120 excluding VAT and said eligible travellers were required to apply online, without first separating visa-exempt passports."
+
+[[scam_sites]]
+domain = "visasforms.com"
+path = "/Turkey"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the page called itself an 'Official Turkey eVisa Service' and advertised a USD $95 service fee including the government fee, while later acknowledging that applicants can apply directly on the government website."

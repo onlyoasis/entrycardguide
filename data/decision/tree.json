@@ -22,7 +22,9 @@
         { "value": "uk", "label": "United Kingdom", "next": "uk_status" },
         { "value": "canada", "label": "Canada", "next": "canada_entry" },
         { "value": "new-zealand", "label": "New Zealand", "next": "nz_passport" },
-        { "value": "australia", "label": "Australia", "next": "australia_passport" }
+        { "value": "australia", "label": "Australia", "next": "australia_passport" },
+        { "value": "india", "label": "India", "next": "india_status" },
+        { "value": "turkey", "label": "Turkey", "next": "turkey_passport" }
       ]
     },
 
@@ -572,6 +574,128 @@
       "note": "If your passport is not eligible for ETA 601 or eVisitor 651, or you are not sure, use the official Home Affairs guidance to find the visa that matches your passport and trip. Do not use a website claiming to offer an official web ETA form.",
       "fallback_guide": "/australia/eta/",
       "fallback_label": "Read the ETA 601 and eVisitor 651 overview"
+    },
+
+    "india_status": {
+      "type": "question",
+      "label": "Which best describes you?",
+      "options": [
+        { "value": "has_visa", "label": "I already have an Indian visa or OCI card", "next": "india_earrival_result" },
+        { "value": "needs_visa", "label": "I still need a visa", "next": "india_both_result" },
+        { "value": "other", "label": "Not sure", "next": "india_unsure_result" }
+      ]
+    },
+    "india_earrival_result": {
+      "type": "result",
+      "country": "india",
+      "summary": "You need to file the free India e-Arrival Card.",
+      "forms": [
+        {
+          "name": "e-Arrival Card",
+          "fee": "FREE",
+          "url": "https://indianvisaonline.gov.in/earrival/",
+          "guide": "/india/e-arrival-card/",
+          "agency": "Bureau of Immigration, Ministry of Home Affairs",
+          "deadline": "Within 72 hours before arrival"
+        }
+      ],
+      "note": "Foreign nationals, including OCI cardholders, submit the free e-Arrival Card. It records arrival information and does not replace a visa or OCI status."
+    },
+    "india_both_result": {
+      "type": "result",
+      "country": "india",
+      "summary": "You need the free e-Arrival Card and the Indian visa required for your trip.",
+      "forms": [
+        {
+          "name": "e-Arrival Card",
+          "fee": "FREE",
+          "url": "https://indianvisaonline.gov.in/earrival/",
+          "guide": "/india/e-arrival-card/",
+          "agency": "Bureau of Immigration, Ministry of Home Affairs",
+          "deadline": "Within 72 hours before arrival"
+        },
+        {
+          "name": "e-Visa",
+          "fee": "Varies by nationality and validity",
+          "url": "https://indianvisaonline.gov.in/evisa/tvoa.html",
+          "guide": "/india/e-arrival-card/",
+          "agency": "Bureau of Immigration, Ministry of Home Affairs",
+          "deadline": "Apply before travel; check eligibility and the permitted entry ports"
+        }
+      ],
+      "note": "These are separate official procedures. The e-Arrival Card is free. e-Visa fees vary by nationality and validity, carry an additional 3% bank charge, and permit first entry only through listed airports and seaports."
+    },
+    "india_unsure_result": {
+      "type": "result",
+      "country": "india",
+      "summary": "You need the free e-Arrival Card and must check your visa status separately.",
+      "forms": [
+        {
+          "name": "e-Arrival Card",
+          "fee": "FREE",
+          "url": "https://indianvisaonline.gov.in/earrival/",
+          "guide": "/india/e-arrival-card/",
+          "agency": "Bureau of Immigration, Ministry of Home Affairs",
+          "deadline": "Within 72 hours before arrival"
+        }
+      ],
+      "note": "The free e-Arrival Card does not grant permission to travel. Check whether your passport and trip require an e-Visa or another Indian visa on the official indianvisaonline.gov.in service before departure.",
+      "fallback_guide": "/india/e-arrival-card/",
+      "fallback_label": "Read the e-Arrival Card and e-Visa overview"
+    },
+
+    "turkey_passport": {
+      "type": "question",
+      "label": "Which passport are you travelling on?",
+      "options": [
+        { "value": "visa_exempt", "label": "Visa-exempt passport (including US, UK, Canada, Australia, China, EU, and others)", "next": "turkey_none_result" },
+        { "value": "evisa_eligible", "label": "Passport eligible for e-Visa", "next": "turkey_evisa_result" },
+        { "value": "conditional", "label": "Needs a valid Schengen/US/UK/Ireland visa to qualify", "next": "turkey_conditional_result" },
+        { "value": "other", "label": "Not sure", "next": "turkey_check_result" }
+      ]
+    },
+    "turkey_none_result": {
+      "type": "result",
+      "country": "turkey",
+      "summary": "You do not need a Turkey e-Visa or arrival form.",
+      "forms": [],
+      "note": "Visa-exempt visitors can stay for up to 90 days in any 180-day period without filing a form. Any site charging you for a Turkey visa is selling a need that does not exist for this trip.",
+      "fallback_guide": "/turkey/evisa/",
+      "fallback_label": "Check your passport on the official visa-information page"
+    },
+    "turkey_evisa_result": {
+      "type": "result",
+      "country": "turkey",
+      "summary": "You need a Turkey e-Visa before travelling.",
+      "forms": [
+        {
+          "name": "e-Visa",
+          "fee": "Varies by passport",
+          "url": "https://www.evisa.gov.tr/",
+          "guide": "/turkey/evisa/",
+          "agency": "Republic of Türkiye Ministry of Foreign Affairs",
+          "deadline": "Before you travel; apply at evisa.gov.tr"
+        }
+      ],
+      "note": "The official system displays the live fee after nationality, travel-document type, and travel dates are selected. Apply only at evisa.gov.tr."
+    },
+    "turkey_conditional_result": {
+      "type": "result",
+      "country": "turkey",
+      "summary": "You may qualify for a conditional Turkey e-Visa.",
+      "forms": [],
+      "note": "Some passports, including India, Bangladesh, Pakistan, and the Philippines, may qualify only with a valid Schengen, US, UK, or Ireland visa or residence permit and every other condition shown by the official e-Visa system.",
+      "fallback_guide": "/turkey/evisa/",
+      "fallback_label": "Check the conditional e-Visa requirements"
+    },
+    "turkey_check_result": {
+      "type": "result",
+      "country": "turkey",
+      "summary": "Check the rule for your exact passport before paying.",
+      "forms": [],
+      "note": "Use the Ministry of Foreign Affairs list at mfa.gov.tr to check visa exemption, direct e-Visa eligibility, conditional eligibility, or another visa requirement for your passport and trip.",
+      "fallback_guide": "/turkey/evisa/",
+      "fallback_label": "Open the Turkey visa and e-Visa guide"
     }
   }
 }
