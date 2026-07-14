@@ -22,7 +22,8 @@
         { "value": "uk", "label": "United Kingdom", "next": "uk_status" },
         { "value": "canada", "label": "Canada", "next": "canada_entry" },
         { "value": "new-zealand", "label": "New Zealand", "next": "nz_passport" },
-        { "value": "australia", "label": "Australia", "next": "australia_passport" }
+        { "value": "australia", "label": "Australia", "next": "australia_passport" },
+        { "value": "india", "label": "India", "next": "india_status" }
       ]
     },
 
@@ -572,6 +573,74 @@
       "note": "If your passport is not eligible for ETA 601 or eVisitor 651, or you are not sure, use the official Home Affairs guidance to find the visa that matches your passport and trip. Do not use a website claiming to offer an official web ETA form.",
       "fallback_guide": "/australia/eta/",
       "fallback_label": "Read the ETA 601 and eVisitor 651 overview"
+    },
+
+    "india_status": {
+      "type": "question",
+      "label": "Which best describes you?",
+      "options": [
+        { "value": "has_visa", "label": "I already have an Indian visa or OCI card", "next": "india_earrival_result" },
+        { "value": "needs_visa", "label": "I still need a visa", "next": "india_both_result" },
+        { "value": "other", "label": "Not sure", "next": "india_unsure_result" }
+      ]
+    },
+    "india_earrival_result": {
+      "type": "result",
+      "country": "india",
+      "summary": "You need to file the free India e-Arrival Card.",
+      "forms": [
+        {
+          "name": "e-Arrival Card",
+          "fee": "FREE",
+          "url": "https://indianvisaonline.gov.in/earrival/",
+          "guide": "/india/e-arrival-card/",
+          "agency": "Bureau of Immigration, Ministry of Home Affairs",
+          "deadline": "Within 72 hours before arrival"
+        }
+      ],
+      "note": "Foreign nationals, including OCI cardholders, submit the free e-Arrival Card. It records arrival information and does not replace a visa or OCI status."
+    },
+    "india_both_result": {
+      "type": "result",
+      "country": "india",
+      "summary": "You need the free e-Arrival Card and the Indian visa required for your trip.",
+      "forms": [
+        {
+          "name": "e-Arrival Card",
+          "fee": "FREE",
+          "url": "https://indianvisaonline.gov.in/earrival/",
+          "guide": "/india/e-arrival-card/",
+          "agency": "Bureau of Immigration, Ministry of Home Affairs",
+          "deadline": "Within 72 hours before arrival"
+        },
+        {
+          "name": "e-Visa",
+          "fee": "Varies by nationality and validity",
+          "url": "https://indianvisaonline.gov.in/evisa/tvoa.html",
+          "guide": "/india/e-arrival-card/",
+          "agency": "Bureau of Immigration, Ministry of Home Affairs",
+          "deadline": "Apply before travel; check eligibility and the permitted entry ports"
+        }
+      ],
+      "note": "These are separate official procedures. The e-Arrival Card is free. e-Visa fees vary by nationality and validity, carry an additional 3% bank charge, and permit first entry only through listed airports and seaports."
+    },
+    "india_unsure_result": {
+      "type": "result",
+      "country": "india",
+      "summary": "You need the free e-Arrival Card and must check your visa status separately.",
+      "forms": [
+        {
+          "name": "e-Arrival Card",
+          "fee": "FREE",
+          "url": "https://indianvisaonline.gov.in/earrival/",
+          "guide": "/india/e-arrival-card/",
+          "agency": "Bureau of Immigration, Ministry of Home Affairs",
+          "deadline": "Within 72 hours before arrival"
+        }
+      ],
+      "note": "The free e-Arrival Card does not grant permission to travel. Check whether your passport and trip require an e-Visa or another Indian visa on the official indianvisaonline.gov.in service before departure.",
+      "fallback_guide": "/india/e-arrival-card/",
+      "fallback_label": "Read the e-Arrival Card and e-Visa overview"
     }
   }
 }
