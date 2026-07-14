@@ -1,0 +1,113 @@
+{
+  "country": "usa",
+  "officialUrl": "https://esta.cbp.dhs.gov/",
+  "lastVerified": "2026-07-14",
+  "source": "https://esta.cbp.dhs.gov/ and https://esta.cbp.dhs.gov/download/app?hideClose=true (official CBP home and printable application), plus https://www.cbp.gov/sites/default/files/documents/Vol_49_No_17_Title.pdf (CBP mandatory-field notice); re-checked 2026-07-14. CBP publishes no passport-number length limit, so this local checker uses a broad 1-20 alphanumeric range instead of treating the plan's 6-15 range as official.",
+  "fields": {
+    "passport": {
+      "type": "passport",
+      "label": "Passport number",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 20,
+      "pattern": "^[A-Z0-9]{1,20}$",
+      "placeholder": "A12345678",
+      "help": "Copy the number exactly from the VWP e-passport used for travel. This checker accepts a broad alphanumeric range because CBP publishes no fixed length.",
+      "errors": {
+        "required": "Passport number is required",
+        "tooShort": "Enter the passport number printed on the photo page",
+        "tooLong": "Check the passport number — this local checker allows up to 20 characters",
+        "invalidChars": "Use letters and numbers only",
+        "invalidFormat": "Use the letters and numbers printed as the passport number"
+      }
+    },
+    "full_name": {
+      "type": "name",
+      "label": "Full name",
+      "required": true,
+      "minLength": 1,
+      "placeholder": "TARO YAMADA",
+      "help": "Enter every family and given name in the Latin spelling shown on the passport.",
+      "errors": {
+        "required": "Full name is required",
+        "tooShort": "Enter the name shown on the passport",
+        "invalidChars": "Use the Latin passport spelling"
+      }
+    },
+    "date_of_birth": {
+      "type": "date",
+      "label": "Date of birth",
+      "required": true,
+      "maxDate": "2026-07-13",
+      "placeholder": "1991-08-22",
+      "help": "Use YYYY-MM-DD in this local checker. Match the passport date.",
+      "errors": {
+        "required": "Date of birth is required",
+        "invalidFormat": "Use YYYY-MM-DD",
+        "tooLate": "Date of birth cannot be after 2026-07-13"
+      }
+    },
+    "email": {
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "maxLength": 254,
+      "placeholder": "name@example.com",
+      "help": "Use an address you control. ESTA requires email verification and sends the application number here.",
+      "errors": {
+        "required": "Email is required",
+        "invalidFormat": "Must look like name@example.com",
+        "tooLong": "Email is too long — max 254 characters in this checker"
+      }
+    },
+    "phone": {
+      "type": "phone",
+      "label": "Phone number",
+      "required": true,
+      "placeholder": "+44 20 7946 0958",
+      "help": "Include the country code. If you have no phone, CBP permits a reachable third-party contact number.",
+      "errors": {
+        "required": "A contact phone number is required",
+        "invalidFormat": "Include country code and 7-15 digits"
+      }
+    },
+    "home_address": {
+      "type": "text",
+      "label": "Home address",
+      "required": true,
+      "placeholder": "Street, city, region, country",
+      "help": "Enter your current home address. CBP lists home address as required application information.",
+      "errors": {
+        "required": "Home address is required"
+      }
+    },
+    "employer": {
+      "type": "select",
+      "label": "Current or previous employer",
+      "required": true,
+      "help": "Answer Yes or No. If Yes, enter the current or previous employer details requested by ESTA; employer address and phone are only applicable when you have an employer to report.",
+      "errors": {
+        "required": "Answer whether you have a current or previous employer"
+      }
+    },
+    "us_contact": {
+      "type": "text",
+      "label": "U.S. point of contact",
+      "required": true,
+      "placeholder": "Hotel name or UNKNOWN",
+      "help": "Use a friend, relative, business contact, or the place you will stay. CBP permits UNKNOWN when you do not know the information.",
+      "errors": {
+        "required": "Enter a U.S. contact, place of stay, or UNKNOWN"
+      }
+    },
+    "social_media": {
+      "type": "select",
+      "label": "Social media",
+      "required": false,
+      "help": "The current official ESTA printable application labels this section Optional. Add identifiers if you choose, select no online presence when applicable, or leave it blank.",
+      "errors": {
+        "invalidOption": "Choose a listed option or leave this optional field blank"
+      }
+    }
+  }
+}

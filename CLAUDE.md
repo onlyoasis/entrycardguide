@@ -98,7 +98,7 @@ content/{country}/how-to-fill.md       # 字段逐项填写
 content/{country}/is-ivisa-official.md # 诈骗站点画廊
 ```
 
-加新国家的最小改动：在 7 个文件里加内容，加 4 份 data 文件（rules、official_urls、changelog、可选 decision 节点），在 `config.toml` 加菜单项，更新 `layouts/index.html` 的 `$mainSlugs`/`$subtitlesEn`/`$subtitlesZh`，加 i18n 国家名。`layouts/shortcodes/official-directory.html` 也要加一行。
+加新国家的最小改动：8 个内容文件（4 篇 × 英中），5 份 data 文件（rules、official_urls、changelog、**fields**——`layouts/_default/how-to-fill.html` 强依赖 `data/fields/{country}.toml`——外加 decision 树节点），以及 `layouts/partials/country-roster.html` 末尾追加一行。首页网格、导航下拉、页脚、官方目录、decide 无 JS fallback 全部从 roster 自动生成，无需逐处修改。付费国家在 TOML `[meta]` 里写 `form_type`（`arrival_card | travel_authorization | evisa`）和 `fee_en/fee_zh`。
 
 ## 写作风格（来自 docs/README.md）
 

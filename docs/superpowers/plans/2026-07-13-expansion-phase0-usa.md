@@ -259,3 +259,11 @@
 ## 后续批次(本计划不含,按同一模式出计划)
 
 PR 3: UK + Canada;PR 4: NZ + Australia(App-only 特殊建模);PR 5: India + Turkey(资格先行决策树)。见 spec。
+
+## 执行偏差记录(2026-07-14 完成时补记)
+
+1. **计划漏了第 5 份 data 文件**:`layouts/_default/how-to-fill.html` 强依赖 `data/fields/{country}.toml`(字段卡片展示数据)。已补 `data/fields/usa.toml`(9 字段,01–09,与 rules 同序)。后续批次的计划必须包含这份文件;CLAUDE.md 已同步修正。
+2. **费用为 USD $40.27**,非计划基线的 $40:$4.00 处理费 + 获批后 $36.27(多源核验,2025-09-30 生效)。全站按 $40.27 落地。
+3. **social media 字段为 Optional**(官方申请表标注),未采用基线的"必答";护照号未见官方长度规定,rules 用保守的 `^[A-Z0-9]{1,20}$` 并在 source 注明。
+4. 目录 `<article>` 宽泛计数含 trust.html 外层容器,断言应按国家卡片计数(12)。
+5. 决策树 deadline 文案统一为 "No later than 72 hours before departure"。
