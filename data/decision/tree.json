@@ -23,7 +23,8 @@
         { "value": "canada", "label": "Canada", "next": "canada_entry" },
         { "value": "new-zealand", "label": "New Zealand", "next": "nz_passport" },
         { "value": "australia", "label": "Australia", "next": "australia_passport" },
-        { "value": "india", "label": "India", "next": "india_status" }
+        { "value": "india", "label": "India", "next": "india_status" },
+        { "value": "turkey", "label": "Turkey", "next": "turkey_passport" }
       ]
     },
 
@@ -641,6 +642,60 @@
       "note": "The free e-Arrival Card does not grant permission to travel. Check whether your passport and trip require an e-Visa or another Indian visa on the official indianvisaonline.gov.in service before departure.",
       "fallback_guide": "/india/e-arrival-card/",
       "fallback_label": "Read the e-Arrival Card and e-Visa overview"
+    },
+
+    "turkey_passport": {
+      "type": "question",
+      "label": "Which passport are you travelling on?",
+      "options": [
+        { "value": "visa_exempt", "label": "Visa-exempt passport (including US, UK, Canada, Australia, China, EU, and others)", "next": "turkey_none_result" },
+        { "value": "evisa_eligible", "label": "Passport eligible for e-Visa", "next": "turkey_evisa_result" },
+        { "value": "conditional", "label": "Needs a valid Schengen/US/UK/Ireland visa to qualify", "next": "turkey_conditional_result" },
+        { "value": "other", "label": "Not sure", "next": "turkey_check_result" }
+      ]
+    },
+    "turkey_none_result": {
+      "type": "result",
+      "country": "turkey",
+      "summary": "You do not need a Turkey e-Visa or arrival form.",
+      "forms": [],
+      "note": "Visa-exempt visitors can stay for up to 90 days in any 180-day period without filing a form. Any site charging you for a Turkey visa is selling a need that does not exist for this trip.",
+      "fallback_guide": "/turkey/evisa/",
+      "fallback_label": "Check your passport on the official visa-information page"
+    },
+    "turkey_evisa_result": {
+      "type": "result",
+      "country": "turkey",
+      "summary": "You need a Turkey e-Visa before travelling.",
+      "forms": [
+        {
+          "name": "e-Visa",
+          "fee": "Varies by passport",
+          "url": "https://www.evisa.gov.tr/",
+          "guide": "/turkey/evisa/",
+          "agency": "Republic of Türkiye Ministry of Foreign Affairs",
+          "deadline": "Before you travel; apply at evisa.gov.tr"
+        }
+      ],
+      "note": "The official system displays the live fee after nationality, travel-document type, and travel dates are selected. Apply only at evisa.gov.tr."
+    },
+    "turkey_conditional_result": {
+      "type": "result",
+      "country": "turkey",
+      "summary": "You may qualify for a conditional Turkey e-Visa.",
+      "forms": [],
+      "note": "Some passports, including India, Bangladesh, Pakistan, and the Philippines, may qualify only with a valid Schengen, US, UK, or Ireland visa or residence permit and every other condition shown by the official e-Visa system.",
+      "fallback_guide": "/turkey/evisa/",
+      "fallback_label": "Check the conditional e-Visa requirements"
+    },
+    "turkey_check_result": {
+      "type": "result",
+      "country": "turkey",
+      "summary": "Check the rule for your exact passport before paying.",
+      "forms": [],
+      "note": "Use the Ministry of Foreign Affairs list at mfa.gov.tr to check visa exemption, direct e-Visa eligibility, conditional eligibility, or another visa requirement for your passport and trip.",
+      "fallback_guide": "/turkey/evisa/",
+      "fallback_label": "Open the Turkey visa and e-Visa guide"
     }
   }
 }
