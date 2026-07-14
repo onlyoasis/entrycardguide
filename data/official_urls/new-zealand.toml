@@ -1,0 +1,101 @@
+# New Zealand — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-07-14
+
+[nztd]
+url = "https://www.travellerdeclaration.govt.nz/"
+name = "Official New Zealand Traveller Declaration"
+agency = "New Zealand Customs Service"
+last_verified = "2026-07-14"
+archive_url = "https://web.archive.org/web/2026/https://www.travellerdeclaration.govt.nz/"
+notes = "Verified 2026-07-14 against https://www.travellerdeclaration.govt.nz/, https://www.travellerdeclaration.govt.nz/completing-your-declaration/, and https://www.customs.govt.nz/travel-to-and-from-new-zealand/travelling-to-new-zealand. The NZTD is free and each person entering New Zealand must complete one, including New Zealand passport holders, babies, and children. Airside transit passengers who stay in Auckland Airport's transit area do not complete an NZTD. The online form is at https://app.travellerdeclaration.govt.nz/. Air travellers may submit from 24 hours before starting their journey to New Zealand; sea travellers may submit from 24 hours before the vessel leaves its last foreign port. The declaration must be submitted before passport control, or by the time a vessel berths at its first New Zealand port. Travellers can start earlier; the 24-hour rule limits submission, not when they may begin entering information."
+
+[nzeta]
+url = "https://nzeta.immigration.govt.nz/"
+name = "Official NZeTA Request"
+agency = "Immigration New Zealand"
+last_verified = "2026-07-14"
+archive_url = "https://web.archive.org/web/2026/https://nzeta.immigration.govt.nz/"
+notes = "Verified 2026-07-14 against https://www.immigration.govt.nz/visas/new-zealand-electronic-travel-authority-nzeta/, https://www.immigration.govt.nz/visit/what-you-need-to-visit-new-zealand/nzeta-application-guide-for-citizens-of-china/, and https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/fees-processing-times-and-refunds/how-much-visa-applications-cost-and-when-to-pay/. NZeTA is a separate travel requirement from the free NZTD. It costs NZD $17 in the official app or NZD $23 on the official website. Most visitors also pay the NZD $100 International Visitor Conservation and Tourism Levy with the request; exemptions apply, including Australian permanent residents. A traveller NZeTA is valid for 2 years and may be used for multiple journeys. Visa-waiver air travellers, cruise or cargo ship passengers, Australian permanent residents, and some transit travellers need one. Australian citizens travelling on Australian passports do not need an NZeTA. Australian permanent residents normally do, unless they already hold a valid New Zealand visa."
+
+[meta]
+flag = "🇳🇿"
+name_en = "New Zealand"
+name_zh = "新西兰"
+form_code = "NZTD"
+guide_slug = "nztd"
+form_key = "nztd"
+form_name_en = "New Zealand Traveller Declaration"
+form_name_zh = "新西兰旅客申报"
+since_en = "current digital declaration"
+since_zh = "当前数字旅客申报"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".govt.nz"
+form_type = "arrival_card"
+
+field_count = 18
+sections = 5
+time_needed_en = "~10 minutes"
+time_needed_zh = "约 10 分钟"
+output_en = "Keep the emailed reference number. After submission, the declaration is linked to your passport and checked at the eGate or by a border officer. You do not need to print it."
+output_zh = "保存邮件中的申报参考编号。提交后，申报会与护照关联，并在 eGate 或边境官员查验护照时自动核对，无需打印。"
+
+primary_middleman = "iVisa"
+page_question_en = "Is iVisa the official NZTD or NZeTA site?"
+page_question_zh = "iVisa 是 NZTD 或 NZeTA 官方网站吗？"
+page_answer_en = "No."
+page_answer_zh = "不是。"
+
+[[outcomes]]
+case = "Case 1"
+tag_en = "NZTD"
+tag_zh = "NZTD"
+headline_en = "You paid for help with a declaration that is free on the government site."
+headline_zh = "你为代填服务付了钱，但政府 NZTD 本身免费。"
+body_en = "A commercial site may copy your details into the NZTD and charge a service fee. The declaration may still work, but New Zealand Customs does not charge to complete or submit it."
+body_zh = "商业网站可能把你的资料代填进 NZTD，再收服务费。申报可能有效，但新西兰海关不收填写费或提交费。"
+
+[[outcomes]]
+case = "Case 2"
+tag_en = "NZeTA"
+tag_zh = "NZeTA"
+headline_en = "You bought an NZeTA package priced above the official NZD $17 or $23 fee."
+headline_zh = "你买了高于官方 17 或 23 新西兰元的 NZeTA 套餐。"
+body_en = "NZeTA is separate from NZTD. Most applicants also pay the NZD $100 IVL, but any additional review, rush, or handling charge belongs to the intermediary, not Immigration New Zealand."
+body_zh = "NZeTA 与 NZTD 是两项要求。多数申请人还要付 100 新西兰元 IVL；额外的审核费、加急费或服务费属于中介，不是新西兰移民局收费。"
+
+[[outcomes]]
+case = "Case 3"
+tag_en = "Check first"
+tag_zh = "先确认"
+headline_en = "The application was filed, but the reference or email is not under your control."
+headline_zh = "申请可能已经提交，但参考编号或邮箱不在你手里。"
+body_en = "Use the official NZTD reference email or the official NZeTA status checker before paying again. Keep your own reference number, confirmation, and passport details."
+body_zh = "再次付款前，先用 NZTD 官方参考邮件或 NZeTA 官方状态查询。申报编号、确认邮件和护照资料应由自己保存。"
+
+# Commercial New Zealand travel-document middlemen observed through current public pages.
+# Evidence records only what each site stated or charged on 2026-07-14.
+[[scam_sites]]
+domain = "ivisa.com"
+path = "/visas/new-zealand/eta"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the page advertised an expert-reviewed New Zealand ETA application starting from USD $99.99 and said iVisa would review and submit the application to the government; the page also stated that iVisa is not the New Zealand government."
+
+[[scam_sites]]
+domain = "nzeta.visaonline.travel"
+path = "/n/visa-fee/visa-fee"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the page listed a USD $69 standard service fee per applicant, with 'Plus USD $79' emergency and 'Plus USD $99' rush options, separately from its stated USD $18 government fee and USD $64 IVL; its footer described the operator as a professional travel agency."
+
+[[scam_sites]]
+domain = "newzealandetavisa.co.nz"
+path = "/fees"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the fee page listed Tourist/Business NZeTA at USD $135, Express NZeTA at USD $170, and Transit NZeTA at USD $85. Its Apply Now link led to an application-assistance service rather than an immigration.govt.nz application page."
+
+[[scam_sites]]
+domain = "newzealandvisaonline.com"
+path = "/news/new-zealand-traveller-declaration"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the page offered optional New Zealand Traveller Declaration support for USD $39 while acknowledging that the official NZTD is free and that the service is not affiliated with the New Zealand Government or the official NZTD website."
