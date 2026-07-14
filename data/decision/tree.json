@@ -19,7 +19,8 @@
         { "value": "japan", "label": "Japan", "next": "japan_result" },
         { "value": "korea", "label": "South Korea", "next": "korea_result" },
         { "value": "usa", "label": "United States", "next": "usa_passport" },
-        { "value": "uk", "label": "United Kingdom", "next": "uk_status" }
+        { "value": "uk", "label": "United Kingdom", "next": "uk_status" },
+        { "value": "canada", "label": "Canada", "next": "canada_entry" }
       ]
     },
 
@@ -398,6 +399,58 @@
       "note": "If your passport is not ETA-eligible, or you are not sure you meet the ETA conditions, check the official UK visa guidance for your nationality and trip.",
       "fallback_guide": "/uk/eta/",
       "fallback_label": "Read the UK ETA overview and eligibility check"
+    },
+
+    "canada_entry": {
+      "type": "question",
+      "label": "How are you entering Canada?",
+      "options": [
+        { "value": "air", "label": "By air, including connecting through a Canadian airport", "next": "canada_passport" },
+        { "value": "land_sea", "label": "By car, bus, train, or cruise ship", "next": "canada_none_result" }
+      ]
+    },
+    "canada_passport": {
+      "type": "question",
+      "label": "Which best describes your passport?",
+      "options": [
+        { "value": "us_citizen_or_pr", "label": "U.S. citizen or U.S. lawful permanent resident", "next": "canada_none_result" },
+        { "value": "visa_free", "label": "Visa-exempt passport", "next": "canada_eta_result" },
+        { "value": "other", "label": "Visa-required passport / not sure", "next": "canada_visa_result" }
+      ]
+    },
+    "canada_eta_result": {
+      "type": "result",
+      "country": "canada",
+      "summary": "You need an approved Canada eTA before flying or connecting through a Canadian airport.",
+      "forms": [
+        {
+          "name": "eTA",
+          "fee": "CAD $7",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html",
+          "guide": "/canada/eta/",
+          "agency": "Immigration, Refugees and Citizenship Canada (IRCC)",
+          "deadline": "Before you book or board your flight"
+        }
+      ],
+      "note": "A Canada eTA is valid for up to 5 years or until the linked passport expires, whichever comes first. It supports multiple entries and does not guarantee admission."
+    },
+    "canada_none_result": {
+      "type": "result",
+      "country": "canada",
+      "summary": "You do not need a Canada eTA for this trip.",
+      "forms": [],
+      "note": "Travelers arriving by car, bus, train, or cruise ship normally do not need an eTA. U.S. citizens are exempt. U.S. lawful permanent residents have also been exempt since April 26, 2022; when flying, carry a valid passport plus a valid green card or other proof of U.S. status accepted by IRCC.",
+      "fallback_guide": "/canada/eta/",
+      "fallback_label": "Read the Canada eTA overview"
+    },
+    "canada_visa_result": {
+      "type": "result",
+      "country": "canada",
+      "summary": "You may need a Canadian visitor visa instead of an eTA.",
+      "forms": [],
+      "note": "If your passport is visa-required, or you are not sure you meet the eTA conditions, check the official Canada.ca eligibility guidance for your passport, travel history, and route.",
+      "fallback_guide": "/canada/eta/",
+      "fallback_label": "Read the Canada eTA overview and eligibility check"
     }
   }
 }
