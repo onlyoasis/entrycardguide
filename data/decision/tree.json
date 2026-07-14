@@ -21,7 +21,8 @@
         { "value": "usa", "label": "United States", "next": "usa_passport" },
         { "value": "uk", "label": "United Kingdom", "next": "uk_status" },
         { "value": "canada", "label": "Canada", "next": "canada_entry" },
-        { "value": "new-zealand", "label": "New Zealand", "next": "nz_passport" }
+        { "value": "new-zealand", "label": "New Zealand", "next": "nz_passport" },
+        { "value": "australia", "label": "Australia", "next": "australia_passport" }
       ]
     },
 
@@ -520,6 +521,57 @@
       "note": "Complete the free NZTD, then check the official New Zealand visa requirements for your passport and trip. An NZeTA does not replace a visa when a visa is required.",
       "fallback_guide": "/new-zealand/nztd/",
       "fallback_label": "Read the NZTD overview and visa guidance"
+    },
+
+    "australia_passport": {
+      "type": "question",
+      "label": "Which passport are you travelling on?",
+      "options": [
+        { "value": "eta_eligible", "label": "ETA-eligible passport (including US, Canada, Japan, South Korea, Singapore, Hong Kong, Malaysia, Brunei)", "next": "australia_eta_result" },
+        { "value": "evisitor", "label": "Eligible European passport", "next": "australia_evisitor_result" },
+        { "value": "other", "label": "Other passport / not sure", "next": "australia_visa_result" }
+      ]
+    },
+    "australia_eta_result": {
+      "type": "result",
+      "country": "australia",
+      "summary": "You need an approved ETA 601 before travelling to Australia.",
+      "forms": [
+        {
+          "name": "ETA (subclass 601)",
+          "fee": "AUD $20 app charge",
+          "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601",
+          "guide": "/australia/eta/",
+          "agency": "Department of Home Affairs",
+          "deadline": "Before you travel; app only"
+        }
+      ],
+      "note": "ETA 601 has no official web application form. Apply only in the AustralianETA App from the Department of Home Affairs. There is no Visa Application Charge, but each App application carries an AUD $20 service fee."
+    },
+    "australia_evisitor_result": {
+      "type": "result",
+      "country": "australia",
+      "summary": "You can apply online for the free eVisitor 651.",
+      "forms": [
+        {
+          "name": "eVisitor (subclass 651)",
+          "fee": "FREE",
+          "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/evisitor-651",
+          "guide": "/australia/eta/",
+          "agency": "Department of Home Affairs",
+          "deadline": "Before you travel; apply online through ImmiAccount"
+        }
+      ],
+      "note": "Eligible European passport holders can apply for eVisitor 651 online through Home Affairs and ImmiAccount without a government application fee. It normally permits multiple visits during 12 months, with stays of up to 3 months each."
+    },
+    "australia_visa_result": {
+      "type": "result",
+      "country": "australia",
+      "summary": "You may need another Australian visa.",
+      "forms": [],
+      "note": "If your passport is not eligible for ETA 601 or eVisitor 651, or you are not sure, use the official Home Affairs guidance to find the visa that matches your passport and trip. Do not use a website claiming to offer an official web ETA form.",
+      "fallback_guide": "/australia/eta/",
+      "fallback_label": "Read the ETA 601 and eVisitor 651 overview"
     }
   }
 }
