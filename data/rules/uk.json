@@ -1,0 +1,116 @@
+{
+  "country": "uk",
+  "officialUrl": "https://www.gov.uk/eta",
+  "lastVerified": "2026-07-14",
+  "source": "https://www.gov.uk/eta/apply, https://www.gov.uk/guidance/using-the-uk-eta-app, and https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-electronic-travel-authorisation; re-checked 2026-07-14. GOV.UK confirms the passport, email, address, job, other-nationality, criminal-conviction, and conditional parental-contact steps. Passport photo, chip scan, face scan, and face photo are non-text steps and are excluded from this checker. The Home Office publishes no fixed passport-number or text-length limits for ETA, so this local checker uses broad conservative limits rather than presenting them as official.",
+  "fields": {
+    "passport": {
+      "type": "passport",
+      "label": "Passport number",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 20,
+      "pattern": "^[A-Z0-9]{1,20}$",
+      "placeholder": "123456789",
+      "help": "Copy the number from the passport you will use to travel. The app also photographs the passport and may scan its chip; the online route requires a passport photo.",
+      "errors": {
+        "required": "Passport number is required",
+        "tooShort": "Enter the passport number printed on the photo page",
+        "tooLong": "Check the passport number — this local checker allows up to 20 characters",
+        "invalidChars": "Use letters and numbers only",
+        "invalidFormat": "Use the letters and numbers printed as the passport number"
+      }
+    },
+    "full_name": {
+      "type": "name",
+      "label": "Full name",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 100,
+      "placeholder": "TARO YAMADA",
+      "help": "Use every family and given name shown on the passport. Check any details read from the passport photo or chip before continuing.",
+      "errors": {
+        "required": "Full name is required",
+        "tooShort": "Enter the name shown on the passport",
+        "tooLong": "Check the passport spelling — this local checker allows up to 100 characters",
+        "invalidChars": "Use the Latin passport spelling"
+      }
+    },
+    "date_of_birth": {
+      "type": "date",
+      "label": "Date of birth",
+      "required": true,
+      "maxDate": "2026-07-14",
+      "placeholder": "1991-08-22",
+      "help": "Use YYYY-MM-DD in this local checker. Match the date shown on the passport.",
+      "errors": {
+        "required": "Date of birth is required",
+        "invalidFormat": "Use YYYY-MM-DD",
+        "tooLate": "Date of birth cannot be after 2026-07-14"
+      }
+    },
+    "email": {
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "maxLength": 254,
+      "placeholder": "name@example.com",
+      "help": "Use an inbox you control. The Home Office sends submission and decision emails, including the 16-digit ETA reference number.",
+      "errors": {
+        "required": "Email is required",
+        "invalidFormat": "Must look like name@example.com",
+        "tooLong": "Email is too long — max 254 characters in this checker"
+      }
+    },
+    "home_address": {
+      "type": "text",
+      "label": "Home address",
+      "required": true,
+      "placeholder": "Street, city, region, country",
+      "help": "Enter your current address. GOV.UK lists address questions in the ETA application.",
+      "errors": {
+        "required": "Home address is required"
+      }
+    },
+    "job": {
+      "type": "text",
+      "label": "Job",
+      "required": true,
+      "placeholder": "Software engineer",
+      "help": "Answer the job questions with your current situation. Do not invent an employer if you are unemployed, retired, or studying.",
+      "errors": {
+        "required": "Job information is required"
+      }
+    },
+    "other_nationalities": {
+      "type": "select",
+      "label": "Other nationalities",
+      "required": true,
+      "help": "Answer whether you hold any other nationality. If Yes, provide each nationality requested by the official form.",
+      "errors": {
+        "required": "Answer whether you have any other nationality",
+        "invalidOption": "Choose Yes or No"
+      }
+    },
+    "criminal_convictions": {
+      "type": "select",
+      "label": "Criminal convictions",
+      "required": true,
+      "help": "Answer truthfully. If Yes, GOV.UK asks for the offence, conviction date, and sentence in as much detail as possible.",
+      "errors": {
+        "required": "Answer the criminal-conviction question",
+        "invalidOption": "Choose Yes or No"
+      }
+    },
+    "parent_contact": {
+      "type": "text",
+      "label": "Parent or guardian contact",
+      "required": false,
+      "placeholder": "Name, email, and phone",
+      "help": "Required only when the applicant is under 18. GOV.UK asks for contact details for someone with parental responsibility. Every applicant, including a child, also needs a face photo; applicants aged 10 or over using the app need a face scan.",
+      "errors": {
+        "required": "Enter the parent or guardian contact details for an applicant under 18"
+      }
+    }
+  }
+}
