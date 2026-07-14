@@ -1,0 +1,88 @@
+# Canada — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-07-14
+
+[eta]
+url = "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html"
+name = "Official Canada eTA Application"
+agency = "Immigration, Refugees and Citizenship Canada (IRCC)"
+last_verified = "2026-07-14"
+archive_url = "https://web.archive.org/web/2026/https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html"
+notes = "Verified 2026-07-14 against https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html, https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/facts.html, and https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/eligibility.html. The official fee is CAD $7. An eTA is for flying to or transiting through a Canadian airport and is valid for up to 5 years or until the linked passport expires, whichever comes first. It is not normally needed for entry by car, bus, train, or boat; the current eligibility page notes a narrow sea exception for travel from Saint Pierre and Miquelon other than cruise ships. U.S. citizens are exempt. As of 2022-04-26, lawful permanent residents of the United States are also exempt from the eTA requirement. For air travel they must carry a valid passport or equivalent travel document and a valid green card or other accepted proof of U.S. status."
+
+[eligibility]
+url = "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/eligibility.html"
+name = "Check who can apply for a Canada eTA"
+agency = "Immigration, Refugees and Citizenship Canada (IRCC)"
+last_verified = "2026-07-14"
+notes = "Verified 2026-07-14. Visa-exempt foreign nationals generally need an eTA only for air travel. Some citizens of selected visa-required countries may qualify for an eTA for air travel if they meet the listed conditions; they still need a visitor visa for land or sea entry. Canadian citizens and permanent residents use Canadian documents instead of an eTA."
+
+[meta]
+flag = "🇨🇦"
+name_en = "Canada"
+name_zh = "加拿大"
+form_code = "eTA"
+guide_slug = "eta"
+form_key = "eta"
+form_name_en = "Electronic Travel Authorization"
+form_name_zh = "电子旅行授权"
+since_en = "required for eligible air travellers since 2016"
+since_zh = "2016 年起适用于符合条件的空路旅客"
+fee_en = "CAD $7"
+fee_zh = "7 加元"
+suffix = ".canada.ca"
+form_type = "travel_authorization"
+
+field_count = 11
+sections = 4
+time_needed_en = "a few minutes"
+time_needed_zh = "几分钟"
+output_en = "Keep the approval email and eTA number, then confirm that its passport number matches your passport exactly. The eTA is electronic and does not guarantee entry."
+output_zh = "保存批准邮件和 eTA 编号，并确认邮件中的护照号与护照完全一致。eTA 是电子授权，不保证一定获准入境。"
+
+primary_middleman = "iVisa"
+page_question_en = "Is iVisa the official Canada eTA site?"
+page_question_zh = "iVisa 是 Canada eTA 官方网站吗？"
+page_answer_en = "No."
+page_answer_zh = "不是。"
+
+[[outcomes]]
+case = "Case 1"
+tag_en = "Most common"
+tag_zh = "最常见"
+headline_en = "You bought application help and paid more than the CAD $7 government fee."
+headline_zh = "你买到的是申请协助，支付金额高于 7 加元官方费。"
+body_en = "A commercial site may submit the same eTA form and add its own service fee. The eTA can still be valid, but the extra charge is not an IRCC fee."
+body_zh = "商业网站可能代交同一份 eTA 表格，再加收服务费。eTA 可能有效，但多收的部分不是 IRCC 费用。"
+
+[[outcomes]]
+case = "Case 2"
+tag_en = "Check first"
+tag_zh = "先确认"
+headline_en = "You paid for an eTA even though your trip or status did not require one."
+headline_zh = "你的路线或身份不需要 eTA，却仍然付了款。"
+body_en = "An eTA is normally for air travel. U.S. citizens and lawful permanent residents of the United States are exempt. Check the Canada.ca eligibility page before paying any application site."
+body_zh = "eTA 通常只用于空路旅行。美国公民和美国合法永久居民豁免。付款前先用 Canada.ca 资格页面核对。"
+
+[[outcomes]]
+case = "Case 3"
+tag_en = "Watch for"
+tag_zh = "需留意"
+headline_en = "The eTA was approved with the wrong passport number."
+headline_zh = "eTA 获批，但护照号填错了。"
+body_en = "Compare the passport number in the approval email with the number at the top of the passport photo page. If they differ, IRCC says you must apply for a new eTA."
+body_zh = "把批准邮件里的护照号与护照资料页顶部号码逐字核对。两者不同时，IRCC 要求重新申请 eTA。"
+
+# Commercial Canada eTA middlemen observed through current public pages.
+# Evidence records only what each site stated or charged on 2026-07-14.
+[[scam_sites]]
+domain = "ivisa.com"
+path = "/visas/canada"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the iVisa Canada page advertised Canada ETA prices starting from USD $89.99 and delivery as fast as 3 hours. The official Canada.ca application charged CAD $7, and IRCC said most approvals arrive within minutes without an intermediary."
+
+[[scam_sites]]
+domain = "canadavisas.net"
+path = "/"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the page advertised a USD $99 final price, including a USD $93 service fee, and separately displayed a USD $6 government fee while its footer said the total included the CAD $7 fee. The official Canada.ca fee was CAD $7."

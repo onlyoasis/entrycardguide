@@ -1,0 +1,103 @@
+# United Kingdom — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-07-14
+
+[eta]
+url = "https://www.gov.uk/eta"
+name = "Official UK ETA Application"
+agency = "Home Office"
+last_verified = "2026-07-14"
+archive_url = "https://web.archive.org/web/2026/https://www.gov.uk/eta"
+notes = "Verified 2026-07-14 against https://www.gov.uk/eta/apply, https://www.gov.uk/eta/what-you-can-cannot-do, https://www.gov.uk/eta/when-not-need-eta, and https://www.legislation.gov.uk/uksi/2026/311/pdfs/uksi_20260311_en.pdf. The official fee is £20. The regulations raised it from £16 at 9:00am on 2026-04-08. An ETA lasts 2 years or until the linked passport expires, whichever comes first, and permits multiple journeys. Visitor stays are normally limited to 6 months per visit. British and Irish citizens, UK visa holders, and people with permission to live, work, or study in the UK do not need an ETA. Decisions usually arrive within a day; GOV.UK says to allow up to 3 working days."
+
+[eligibility]
+url = "https://www.gov.uk/guidance/check-when-you-can-get-an-electronic-travel-authorisation-eta"
+name = "Check who can get a UK ETA"
+agency = "UK Visas and Immigration"
+last_verified = "2026-07-14"
+notes = "Verified 2026-07-14. Current Home Office statistics describe 85 specified non-visa nationalities. Eligibility follows the nationality shown on the passport. Other nationalities must check whether they need a visa."
+
+[eta_app]
+name = "UK ETA"
+developer = "Home Office"
+google_play_url = "https://play.google.com/store/apps/details?id=uk.gov.HomeOffice.ho3"
+app_store_url = "https://apps.apple.com/us/app/uk-eta/id6444912481"
+guidance_url = "https://www.gov.uk/guidance/using-the-uk-eta-app"
+last_verified = "2026-07-14"
+notes = "Verified 2026-07-14 by following the Google Play and App Store links on https://www.gov.uk/eta/apply. Both store listings identify the app as UK ETA and the developer or seller as Home Office. The app scans the passport and face; the GOV.UK online form is the official alternative."
+
+[meta]
+flag = "🇬🇧"
+name_en = "United Kingdom"
+name_zh = "英国"
+form_code = "ETA"
+guide_slug = "eta"
+form_key = "eta"
+form_name_en = "Electronic Travel Authorisation"
+form_name_zh = "电子旅行授权"
+since_en = "enforced for non-visa nationals since February 2026"
+since_zh = "2026 年 2 月起对免签旅客强制执行"
+fee_en = "£20"
+fee_zh = "20 英镑"
+suffix = ".gov.uk"
+form_type = "travel_authorization"
+
+field_count = 9
+sections = 4
+time_needed_en = "~10 minutes"
+time_needed_zh = "约 10 分钟"
+output_en = "Wait for the decision email and keep the 16-digit ETA reference number. The ETA is linked to the passport used in the application; it does not guarantee entry."
+output_zh = "等待决定邮件，并保存 16 位 ETA 参考编号。ETA 与申请时使用的护照绑定，不保证一定获准入境。"
+
+primary_middleman = "iVisa"
+page_question_en = "Is iVisa the official UK ETA site?"
+page_question_zh = "iVisa 是 UK ETA 官方网站吗？"
+page_answer_en = "No."
+page_answer_zh = "不是。"
+
+[[outcomes]]
+case = "Case 1"
+tag_en = "Most common"
+tag_zh = "最常见"
+headline_en = "You bought application help and paid more than the £20 government fee."
+headline_zh = "你买到的是申请协助，支付金额高于 20 英镑官方费。"
+body_en = "A commercial site may submit the same ETA application and add a review or handling fee. The ETA can still be valid, but the extra charge is not a Home Office fee."
+body_zh = "商业网站可能代交同一份 ETA 申请，再收审核费或服务费。ETA 可能有效，但多收的部分不是英国内政部费用。"
+
+[[outcomes]]
+case = "Case 2"
+tag_en = "Watch for"
+tag_zh = "需留意"
+headline_en = "The ETA was filed, but the email or reference number is not under your control."
+headline_zh = "ETA 已提交，但邮箱或参考编号不在你手里。"
+body_en = "The decision email contains a 16-digit reference number. Keep the email yourself and check the ETA on GOV.UK before paying another site."
+body_zh = "决定邮件包含 16 位参考编号。自己保存邮件，并在再次付款前到 GOV.UK 查询 ETA。"
+
+[[outcomes]]
+case = "Case 3"
+tag_en = "Rare"
+tag_zh = "罕见"
+headline_en = "You paid, but received no ETA decision."
+headline_zh = "付了钱，却没有收到 ETA 决定。"
+body_en = "Check your spam folder and the ETA status on GOV.UK. If no valid ETA exists, apply through GOV.UK or the Home Office UK ETA app and ask your card issuer about the missing service."
+body_zh = "先查垃圾邮件和 GOV.UK 上的 ETA 状态。如果没有有效 ETA，通过 GOV.UK 或 Home Office 的 UK ETA App 申请，并向发卡行说明中介没有交付服务。"
+
+# Commercial UK ETA middlemen observed through current public pages.
+# Evidence records only what each site stated or charged on 2026-07-14.
+[[scam_sites]]
+domain = "ivisa.com"
+path = "/visas/united-kingdom"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the iVisa United Kingdom page advertised UK ETA prices starting from USD $100.99 and 'Get it as fast as 15 minutes.' GOV.UK charged £20 and stated that another website or app cannot provide a faster decision."
+
+[[scam_sites]]
+domain = "eta-united-kingdom.com"
+path = "/terms-and-conditions"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the terms page listed a EUR 69.00 service fee including VAT for a new UK ETA. This service fee was separate from the £20 government application fee shown on GOV.UK."
+
+[[scam_sites]]
+domain = "application-eta.uk"
+path = "/uk-eta-fees-processing-time/"
+first_observed = "2026-07-14"
+evidence = "Observed 2026-07-14: the pricing page listed totals of EUR 69 Regular, EUR 119 Priority, and EUR 169 Dedicated Agent, including handling fees of EUR 46, EUR 96, or EUR 146. GOV.UK charged £20 and stated that another website cannot provide a faster decision."
