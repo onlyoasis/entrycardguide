@@ -12,8 +12,8 @@ function installGtag(measurementId: string): void {
   analyticsWindow.dataLayer = analyticsWindow.dataLayer || [];
   analyticsWindow.gtag =
     analyticsWindow.gtag ||
-    function gtagProxy(...args: unknown[]) {
-      analyticsWindow.dataLayer?.push(args);
+    function gtagProxy() {
+      analyticsWindow.dataLayer?.push(arguments);
     };
 
   analyticsWindow.gtag('js', new Date());

@@ -1,5 +1,6 @@
 import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import path from "node:path";
+import { runInNewContext } from "node:vm";
 
 const publicDir = "public";
 
@@ -197,18 +198,36 @@ for (const file of htmlFiles) {
   }
 }
 
-const hasAffiliateClickScript = jsFiles.some(file => {
+const homeHtml = readFileSync("public/index.html", "utf8");
+const affiliateAnalyticsScript = jsFiles.find(file => {
+  const publicPath = `/${path.relative(publicDir, file).replaceAll("\\", "/")}`;
   const js = readFileSync(file, "utf8");
-  return js.includes("affiliate_click") && js.includes("gtag");
+  return homeHtml.includes(publicPath) && js.includes("affiliate_click") && js.includes("gtag");
 });
 
-if (!hasAffiliateClickScript) {
+if (!affiliateAnalyticsScript) {
   affiliateAnalyticsProblems.push("No built JS bundle tracks affiliate_click with gtag");
+} else {
+  const browser = {
+    document: {
+      currentScript: { dataset: { ga4MeasurementId: "G-TEST" } },
+      addEventListener() {},
+    },
+  };
+  browser.window = browser;
+
+  runInNewContext(readFileSync(affiliateAnalyticsScript, "utf8"), browser);
+
+  const queuedCommandType = Object.prototype.toString.call(browser.dataLayer?.[0]);
+  if (queuedCommandType !== "[object Arguments]") {
+    affiliateAnalyticsProblems.push(
+      `Built analytics queues ${queuedCommandType}; expected [object Arguments]`,
+    );
+  }
 }
 
 const ga4MeasurementId = process.env.HUGO_PARAMS_ANALYTICS_GA4_MEASUREMENT_ID?.trim();
 if (ga4MeasurementId) {
-  const homeHtml = readFileSync("public/index.html", "utf8");
   if (!homeHtml.includes(`https://www.googletagmanager.com/gtag/js?id=${ga4MeasurementId}`)) {
     affiliateAnalyticsProblems.push("Configured GA4 measurement ID is missing from public/index.html");
   }
