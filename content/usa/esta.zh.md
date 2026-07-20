@@ -3,7 +3,7 @@ title: "ESTA 多少钱？2026 官网费用是 40.27 美元"
 kicker: "ESTA 不免费，也不是签证。申请官网是 esta.cbp.dhs.gov。"
 description: "ESTA 费用中文指南：获批总价 40.27 美元、4 美元处理费、CBP 官方网站、有效期和中介加价。"
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "usa"
 weight: 10
 keywords: ["ESTA 多少钱", "ESTA 官网", "ESTA 官方网站", "ESTA 费用", "美国 ESTA", "iVisa ESTA"]

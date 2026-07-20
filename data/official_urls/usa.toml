@@ -6,7 +6,7 @@
 url = "https://esta.cbp.dhs.gov/"
 name = "Official ESTA Application"
 agency = "U.S. Customs and Border Protection (CBP)"
-last_verified = "2026-07-14"
+last_verified = "2026-07-20"
 archive_url = "https://web.archive.org/web/2026/https://esta.cbp.dhs.gov/"
 notes = "Verified 2026-07-14 against https://esta.cbp.dhs.gov/, https://www.help.cbp.gov/s/article/Article-1437, and https://www.cbp.gov/newsroom/local-media-release/cbp-buffalo-reminder-esta-requirement-land-border-ports-entry. ESTA is a travel authorization, not a visa. The official site displays USD $40.27: a $4.00 processing fee plus $36.27 authorization fee charged only if approved (raised from $21.00 total on 2025-09-30). CBP says to apply when travel plans begin and no later than 72 hours before arrival. VWP travelers need ESTA for air, sea, and land entry. Approval is generally valid for 2 years or until the passport expires, whichever comes first; Brunei passports are limited to 1 year."
 

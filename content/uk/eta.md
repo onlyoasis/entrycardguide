@@ -3,7 +3,7 @@ title: "Is UK ETA Free? Official Website and £20 Fee (2026)"
 kicker: "UK ETA is not free and it is not a visa. Apply at gov.uk/eta."
 description: "Is UK ETA free? No. The official UK ETA fee is £20 per person. Use GOV.UK or the Home Office app and avoid commercial application markups."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "uk"
 weight: 10
 keywords: ["is UK ETA free", "UK ETA official website", "UK ETA official site", "UK ETA fee", "gov.uk ETA", "UK travel authorization", "is iVisa official UK ETA"]

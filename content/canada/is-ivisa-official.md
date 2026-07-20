@@ -3,7 +3,7 @@ title: "Is iVisa the Official Canada eTA Site? No, Use Canada.ca"
 kicker: "iVisa and canadavisas.net are commercial services. The Canada eTA official site is Canada.ca."
 description: "iVisa is not the official Canada eTA site. Compare iVisa prices from USD $89.99 and a USD $99 canadavisas.net total with the CAD $7 IRCC fee."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "canada"
 weight: 30
 keywords: ["is iVisa official Canada eTA", "Canada eTA official site", "Canada eTA scam", "canadavisas.net", "Canada eTA fee", "is eTA Canada free"]

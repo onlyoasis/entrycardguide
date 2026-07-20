@@ -3,7 +3,7 @@ title: "新西兰入境卡免费吗？NZTD 官网与 NZeTA 多少钱（2026）"
 kicker: "NZTD 人人要填且完全免费。NZeTA 是另一项收费旅行授权。"
 description: "新西兰入境卡 NZTD 中文指南：官方入口、免费规则、提交时间、适用人群，以及 NZeTA 费用和有效期。"
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "new-zealand"
 weight: 10
 keywords: ["新西兰入境卡", "NZTD 官网", "NZTD 免费吗", "NZeTA 多少钱", "新西兰旅客申报", "新西兰电子入境卡"]

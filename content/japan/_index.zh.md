@@ -2,7 +2,7 @@
 title: "日本 Visit Japan Web 官方入口、免费二维码和防仿冒指南"
 kicker: "日本 Visit Japan Web 官方来源、免费二维码流程，以及如何避开假登录页。"
 description: "日本 Visit Japan Web 中文指南：日本数字厅官方 URL、免费入境二维码流程、字段填写和中介提醒。"
-lastmod: 2026-07-13
+lastmod: 2026-07-20
 ---
 
 Visit Japan Web 是日本官方的入境相关二维码服务。稳定的政府服务说明页在日本数字厅 `.go.jp` 域名下。

@@ -1,12 +1,12 @@
 # United Kingdom — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-07-14
+# Last verified: 2026-07-20
 
 [eta]
 url = "https://www.gov.uk/eta"
 name = "Official UK ETA Application"
 agency = "Home Office"
-last_verified = "2026-07-14"
+last_verified = "2026-07-20"
 archive_url = "https://web.archive.org/web/2026/https://www.gov.uk/eta"
 notes = "Verified 2026-07-14 against https://www.gov.uk/eta/apply, https://www.gov.uk/eta/what-you-can-cannot-do, https://www.gov.uk/eta/when-not-need-eta, and https://www.legislation.gov.uk/uksi/2026/311/pdfs/uksi_20260311_en.pdf. The official fee is £20. The regulations raised it from £16 at 9:00am on 2026-04-08. An ETA lasts 2 years or until the linked passport expires, whichever comes first, and permits multiple journeys. Visitor stays are normally limited to 6 months per visit. British and Irish citizens, UK visa holders, and people with permission to live, work, or study in the UK do not need an ETA. Decisions usually arrive within a day; GOV.UK says to allow up to 3 working days."
 
@@ -14,7 +14,7 @@ notes = "Verified 2026-07-14 against https://www.gov.uk/eta/apply, https://www.g
 url = "https://www.gov.uk/guidance/check-when-you-can-get-an-electronic-travel-authorisation-eta"
 name = "Check who can get a UK ETA"
 agency = "UK Visas and Immigration"
-last_verified = "2026-07-14"
+last_verified = "2026-07-20"
 notes = "Verified 2026-07-14. Current Home Office statistics describe 85 specified non-visa nationalities. Eligibility follows the nationality shown on the passport. Other nationalities must check whether they need a visa."
 
 [eta_app]

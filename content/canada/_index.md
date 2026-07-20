@@ -2,7 +2,7 @@
 title: "Canada eTA Official Site, CAD $7 Fee, and Air-Only Rule"
 kicker: "The Canada eTA official site is Canada.ca. The government fee is CAD $7, and the authorization is normally needed only for air travel."
 description: "Canada eTA guide: official Canada.ca application, CAD $7 fee, air-only rule, eligibility, application fields, validity, and middleman warnings."
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 ---
 
 Canada's Electronic Travel Authorization is for eligible travelers who fly to Canada or connect through a Canadian airport. Apply on Canada.ca through Immigration, Refugees and Citizenship Canada (IRCC).

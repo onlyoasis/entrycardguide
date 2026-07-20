@@ -3,7 +3,7 @@ title: "iVisa 是 UK ETA 官方网站吗？不是，请用 GOV.UK"
 kicker: "iVisa、eta-united-kingdom.com 和 application-eta.uk 都是商业服务。官方入口是 gov.uk/eta。"
 description: "iVisa 不是 UK ETA 官方网站。对比 100.99 美元或 69 欧元起的中介价格与英国内政部 20 英镑官方费。"
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "uk"
 weight: 30
 keywords: ["iVisa 是 UK ETA 官网吗", "英国 ETA 官网", "UK ETA 骗局", "eta-united-kingdom.com", "application-eta.uk", "英国 ETA 费用"]

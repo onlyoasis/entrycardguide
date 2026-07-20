@@ -3,7 +3,7 @@ title: "How to Fill the UK ETA Form: All 9 Fields Explained (2026)"
 kicker: "Nine UK ETA field groups, plus the passport and face-photo steps that happen outside this checker."
 description: "How to fill the official UK ETA form: passport, name, birth date, email, home address, job, other nationalities, convictions, and parent contact."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "uk"
 weight: 20
 keywords: ["how to fill UK ETA", "UK ETA form fields", "UK ETA passport scan", "UK ETA face photo", "UK ETA parent contact"]

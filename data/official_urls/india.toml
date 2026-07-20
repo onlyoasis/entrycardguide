@@ -1,12 +1,12 @@
 # India — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-07-14
+# Last verified: 2026-07-20
 
 [earrival]
 url = "https://indianvisaonline.gov.in/earrival/"
 name = "Official India e-Arrival Card"
 agency = "Bureau of Immigration, Ministry of Home Affairs"
-last_verified = "2026-07-14"
+last_verified = "2026-07-20"
 archive_url = "https://web.archive.org/web/2026/https://indianvisaonline.gov.in/earrival/"
 notes = "Verified 2026-07-14 against https://indianvisaonline.gov.in/earrival/, https://indianvisaonline.gov.in/, https://ociservices.gov.in/onlineOCI/onlineOCI/faq, and the Bureau of Immigration advisory at https://www.cgisf.gov.in/section/public-advisories/digitization-of-disembarkation-card-for-foreign-nationals-visiting-india/. The official form labels the service free of cost. Foreign nationals, including OCI cardholders, must submit it within the 72 hours before arrival; Indian passport holders are not foreign nationals and do not submit it. It records arrival information and does not replace a visa or OCI status. The current web form asks for identity, passport, purpose, arrival, recent travel, India address, contact, emergency-contact, and declaration information. Government mission notices also tell travellers to have flight and visa or OCI details ready; fields may vary by channel or prefilled record."
 
@@ -14,7 +14,7 @@ notes = "Verified 2026-07-14 against https://indianvisaonline.gov.in/earrival/, 
 url = "https://indianvisaonline.gov.in/evisa/tvoa.html"
 name = "Official India e-Visa"
 agency = "Bureau of Immigration, Ministry of Home Affairs"
-last_verified = "2026-07-14"
+last_verified = "2026-07-20"
 archive_url = "https://web.archive.org/web/2026/https://indianvisaonline.gov.in/evisa/tvoa.html"
 notes = "Verified 2026-07-14 against https://indianvisaonline.gov.in/evisa/tvoa.html and the official 09-July-2026 tourist-fee table at https://indianvisaonline.gov.in/evisa/images/Etourist_fee_final.pdf. The e-Visa is separate from the free e-Arrival Card. Fees vary by nationality and duration. Examples in the current table: Australia and Canada pay USD $10 for a 30-day tourist e-Visa from April to June or USD $25 from July to March, USD $40 for 1 year, and USD $200 for 5 years; the United States has the same 30-day and 1-year fees but USD $160 for 5 years; the United Kingdom has the same 30-day and 1-year fees but USD $484 for 5 years; Japan pays USD $10 or $25 for 30 days and USD $25 for either 1 or 5 years. Some nationalities are listed at USD $0. A 3% bank charge is additional. The official page currently permits first entry through 33 named airports and 19 named seaports; travellers may depart through any authorized Immigration Check Post. Check the live eligibility, fee table, and port list before paying."
 

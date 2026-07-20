@@ -3,7 +3,7 @@ title: "New Zealand Traveller Declaration Official Site: Is NZTD Free? (2026)"
 kicker: "NZTD is free and required for everyone entering New Zealand. NZeTA is a separate requirement with a government fee."
 description: "Is NZTD free? Yes. Use the official New Zealand Traveller Declaration site. Learn the 24-hour submission rule and separate NZeTA cost."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "new-zealand"
 weight: 10
 keywords: ["nz traveller declaration official", "New Zealand Traveller Declaration official site", "is NZTD free", "NZTD fee", "NZeTA cost", "New Zealand entry form"]

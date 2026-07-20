@@ -2,7 +2,7 @@
 title: "Mexico"
 kicker: "Everything you need to know about Mexico's Forma Migratoria Múltiple Electrónica (FMM-E), without paying a middleman."
 description: "Free, independent guides to Mexico's FMM-E. Official URL, every field explained, scam-site warnings."
-lastmod: 2026-07-13
+lastmod: 2026-07-20
 ---
 
 The Forma Migratoria Múltiple Electrónica (FMM-E) is Mexico's digital entry permit. It is required for most foreign visitors entering Mexico and is **free** to file on the official INM site.

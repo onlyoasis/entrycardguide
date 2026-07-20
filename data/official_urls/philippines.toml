@@ -1,12 +1,12 @@
 # Philippines — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-07-13
+# Last verified: 2026-07-20
 
 [etravel]
 url = "https://etravel.gov.ph"
 name = "Philippine eTravel"
 agency = "Philippine Travel Information System"
-last_verified = "2026-07-13"
+last_verified = "2026-07-20"
 archive_url = "https://web.archive.org/web/2026/https://etravel.gov.ph"
 notes = "Reserved under .gov.ph. The official homepage states that eTravel is free. Used for the Philippine electronic travel declaration before arrival or departure."
 

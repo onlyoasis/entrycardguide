@@ -1,12 +1,12 @@
 # Cambodia — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-07-13
+# Last verified: 2026-07-20
 
 [earrival]
 url = "https://arrival.gov.kh"
 name = "Cambodia e-Arrival"
 agency = "Cambodia General Department of Immigration"
-last_verified = "2026-07-13"
+last_verified = "2026-07-20"
 archive_url = "https://web.archive.org/web/2026/https://arrival.gov.kh"
 notes = "Reserved under .gov.kh. The e-Arrival system combines arrival card, customs declaration, and health declaration flows. The arrival declaration itself is free; visa fees are separate when a visa is needed."
 

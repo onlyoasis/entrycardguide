@@ -3,7 +3,7 @@ title: "印度 e-Arrival Card 免费吗？官网与 e-Visa 费用（2026）"
 kicker: "外国旅客要免费填写 e-Arrival Card，并在抵达前 72 小时内提交。"
 description: "印度 e-Arrival Card 中文指南：免费官网、适用人群、72 小时规则、另行办理的 e-Visa 费用和指定入境口岸。"
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "india"
 weight: 10
 keywords: ["印度入境卡", "印度 e-Arrival Card 官网", "印度入境卡免费吗", "印度电子签多少钱", "India eVisa 官网"]

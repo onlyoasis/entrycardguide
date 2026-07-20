@@ -3,7 +3,7 @@ title: "英国 ETA 多少钱？2026 官网费用是 20 英镑"
 kicker: "UK ETA 不免费，也不是签证。申请官网是 gov.uk/eta。"
 description: "英国 ETA 费用中文指南：每人 20 英镑、GOV.UK 官方网站、Home Office 官方 App、适用人群、处理时间和有效期。"
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "uk"
 weight: 10
 keywords: ["英国 ETA 多少钱", "英国 ETA 官网", "UK ETA 官方网站", "英国 ETA 费用", "英国电子旅行授权", "iVisa UK ETA"]

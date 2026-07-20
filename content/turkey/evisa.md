@@ -3,7 +3,7 @@ title: "Turkey e-Visa: Check Whether You Need One Before Paying (2026)"
 kicker: "Many ordinary passports are visa-exempt for 90 days in any 180. Check first, then use only evisa.gov.tr if you still need an e-Visa."
 description: "Turkey e-Visa guide: check 90/180 visa exemption before paying, use evisa.gov.tr, understand passport-based fees, and check conditional eligibility."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "turkey"
 weight: 10
 keywords: ["Turkey e-Visa", "is Turkey eVisa official", "Turkey eVisa official site", "Turkey visa fee", "evisa.gov.tr", "Turkey visa exempt"]

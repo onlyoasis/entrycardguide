@@ -3,7 +3,7 @@ title: "加拿大 eTA 多少钱？2026 官网费用是 7 加元"
 kicker: "加拿大 eTA 不是免费项目。请在 Canada.ca 申请，政府费用为 7 加元。"
 description: "加拿大 eTA 费用中文指南：官网收费 7 加元，说明仅限空路的适用规则、美国公民和绿卡豁免、有效期及官方入口。"
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "canada"
 weight: 10
 keywords: ["加拿大 eTA 多少钱", "加拿大 eTA 官网", "Canada eTA 官方网站", "加拿大 eTA 费用", "加拿大转机 eTA", "iVisa 加拿大 eTA"]

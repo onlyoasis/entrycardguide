@@ -3,7 +3,7 @@ title: "印度入境卡怎么填：e-Arrival Card 15 个字段（2026）"
 kicker: "按 5 段核对 15 个字段，从护照姓名一直到真实性声明。"
 description: "印度入境卡怎么填：e-Arrival Card 的身份、行程、印度地址、联系方式和声明共 15 个字段中文说明。"
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "india"
 weight: 20
 keywords: ["印度入境卡怎么填", "印度 e-Arrival Card", "印度入境卡字段", "印度入境卡官网", "印度入境卡航班号"]

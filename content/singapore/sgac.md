@@ -3,7 +3,7 @@ title: "Singapore SGAC: Official ICA Site, Free Arrival Card, No Fees Guide (202
 kicker: "Singapore's Arrival Card is free. Here is the official ICA site, every field, and how to tell real from fake."
 description: "Free, independent 2026 guide to Singapore's official SGAC at eservices.ica.gov.sg. Every field explained, no fees, required for all foreign arrivals."
 date: 2026-04-26
-lastmod: 2026-07-13
+lastmod: 2026-07-20
 country: "singapore"
 weight: 10
 keywords: ["singapore arrival card", "SGAC", "singapore SGAC official", "ica singapore arrival card", "is ivisa official singapore", "singapore immigration form"]

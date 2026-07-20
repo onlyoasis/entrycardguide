@@ -2,7 +2,7 @@
 title: "UK ETA Official Website, £20 Fee, and Middleman Check"
 kicker: "The UK ETA official website is gov.uk/eta. It is a paid travel authorization, not a visa."
 description: "UK ETA guide: official GOV.UK application, £20 fee, eligibility, application fields, validity, and commercial middleman warnings."
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 ---
 
 The UK Electronic Travel Authorisation is for eligible visa-free visitors. It is not a visa. Apply through GOV.UK or the official UK ETA app published by the Home Office.

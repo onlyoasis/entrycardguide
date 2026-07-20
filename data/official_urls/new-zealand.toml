@@ -1,12 +1,12 @@
 # New Zealand — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-07-14
+# Last verified: 2026-07-20
 
 [nztd]
 url = "https://www.travellerdeclaration.govt.nz/"
 name = "Official New Zealand Traveller Declaration"
 agency = "New Zealand Customs Service"
-last_verified = "2026-07-14"
+last_verified = "2026-07-20"
 archive_url = "https://web.archive.org/web/2026/https://www.travellerdeclaration.govt.nz/"
 notes = "Verified 2026-07-14 against https://www.travellerdeclaration.govt.nz/, https://www.travellerdeclaration.govt.nz/completing-your-declaration/, and https://www.customs.govt.nz/travel-to-and-from-new-zealand/travelling-to-new-zealand. The NZTD is free and each person entering New Zealand must complete one, including New Zealand passport holders, babies, and children. Airside transit passengers who stay in Auckland Airport's transit area do not complete an NZTD. The online form is at https://app.travellerdeclaration.govt.nz/. Air travellers may submit from 24 hours before starting their journey to New Zealand; sea travellers may submit from 24 hours before the vessel leaves its last foreign port. The declaration must be submitted before passport control, or by the time a vessel berths at its first New Zealand port. Travellers can start earlier; the 24-hour rule limits submission, not when they may begin entering information."
 
@@ -14,7 +14,7 @@ notes = "Verified 2026-07-14 against https://www.travellerdeclaration.govt.nz/, 
 url = "https://nzeta.immigration.govt.nz/"
 name = "Official NZeTA Request"
 agency = "Immigration New Zealand"
-last_verified = "2026-07-14"
+last_verified = "2026-07-20"
 archive_url = "https://web.archive.org/web/2026/https://nzeta.immigration.govt.nz/"
 notes = "Verified 2026-07-14 against https://www.immigration.govt.nz/visas/new-zealand-electronic-travel-authority-nzeta/, https://www.immigration.govt.nz/visit/what-you-need-to-visit-new-zealand/nzeta-application-guide-for-citizens-of-china/, and https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/fees-processing-times-and-refunds/how-much-visa-applications-cost-and-when-to-pay/. NZeTA is a separate travel requirement from the free NZTD. It costs NZD $17 in the official app or NZD $23 on the official website. Most visitors also pay the NZD $100 International Visitor Conservation and Tourism Levy with the request; exemptions apply, including Australian permanent residents. A traveller NZeTA is valid for 2 years and may be used for multiple journeys. Visa-waiver air travellers, cruise or cargo ship passengers, Australian permanent residents, and some transit travellers need one. Australian citizens travelling on Australian passports do not need an NZeTA. Australian permanent residents normally do, unless they already hold a valid New Zealand visa."
 

@@ -3,7 +3,7 @@ title: "ESTA 怎么填：9 组字段逐项中文说明（2026）"
 kicker: "从电子护照号码到标为 Optional 的社交媒体栏目，按 9 组字段核对。"
 description: "ESTA 怎么填：护照、姓名、出生日期、邮箱、电话、住址、雇主、美国联系人和可选社交媒体字段。"
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "usa"
 weight: 20
 keywords: ["ESTA 怎么填", "ESTA 填写", "ESTA 雇主", "ESTA 美国联系人 UNKNOWN", "ESTA 社交媒体 Optional"]

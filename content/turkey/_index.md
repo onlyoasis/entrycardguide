@@ -2,7 +2,7 @@
 title: "Turkey Visa Guide: Do You Need an e-Visa in 2026?"
 kicker: "Many travellers need no visa and no form. Check your passport before paying for a Turkey e-Visa."
 description: "Turkey visa guide: check 90/180 visa exemption, conditional e-Visa rules, the official evisa.gov.tr site, all 18 fields, and middleman charges."
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 ---
 
 Many visitors to Turkey need **no e-Visa and no pre-travel form**. Ordinary US, UK, Canadian, Australian, and Chinese passport holders are among those currently exempt for tourist visits of up to 90 days in any 180-day period.

@@ -3,7 +3,7 @@ title: "Is iVisa the Official NZTD or NZeTA Website? No"
 kicker: "iVisa and other application services are commercial middlemen. NZTD is free; NZeTA has fixed government fees."
 description: "iVisa is not the official NZTD or NZeTA website. Compare the free NZTD and official NZeTA cost with documented USD $39 to $170 services."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "new-zealand"
 weight: 30
 keywords: ["is iVisa official New Zealand", "NZTD scam", "NZeTA official website", "NZeTA fee", "New Zealand Traveller Declaration fee"]

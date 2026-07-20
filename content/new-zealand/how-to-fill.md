@@ -3,7 +3,7 @@ title: "How to Fill the New Zealand Traveller Declaration: All 18 Fields (2026)"
 kicker: "Five sections and 18 NZTD fields, from the passport number to the final declaration."
 description: "How to fill the official NZTD: all 18 passport, travel, contact, immigration, customs, cash, and biosecurity fields explained."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "new-zealand"
 weight: 20
 keywords: ["how to fill NZTD", "New Zealand Traveller Declaration fields", "New Zealand entry form", "NZTD biosecurity", "NZTD passport number"]

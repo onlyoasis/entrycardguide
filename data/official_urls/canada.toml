@@ -1,12 +1,12 @@
 # Canada — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-07-14
+# Last verified: 2026-07-20
 
 [eta]
 url = "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html"
 name = "Official Canada eTA Application"
 agency = "Immigration, Refugees and Citizenship Canada (IRCC)"
-last_verified = "2026-07-14"
+last_verified = "2026-07-20"
 archive_url = "https://web.archive.org/web/2026/https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html"
 notes = "Verified 2026-07-14 against https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html, https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/facts.html, and https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/eligibility.html. The official fee is CAD $7. An eTA is for flying to or transiting through a Canadian airport and is valid for up to 5 years or until the linked passport expires, whichever comes first. It is not normally needed for entry by car, bus, train, or boat; the current eligibility page notes a narrow sea exception for travel from Saint Pierre and Miquelon other than cruise ships. U.S. citizens are exempt. As of 2022-04-26, lawful permanent residents of the United States are also exempt from the eTA requirement. For air travel they must carry a valid passport or equivalent travel document and a valid green card or other accepted proof of U.S. status."
 
@@ -14,7 +14,7 @@ notes = "Verified 2026-07-14 against https://www.canada.ca/en/immigration-refuge
 url = "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/eligibility.html"
 name = "Check who can apply for a Canada eTA"
 agency = "Immigration, Refugees and Citizenship Canada (IRCC)"
-last_verified = "2026-07-14"
+last_verified = "2026-07-20"
 notes = "Verified 2026-07-14. Visa-exempt foreign nationals generally need an eTA only for air travel. Some citizens of selected visa-required countries may qualify for an eTA for air travel if they meet the listed conditions; they still need a visitor visa for land or sea entry. Canadian citizens and permanent residents use Canadian documents instead of an eTA."
 
 [meta]

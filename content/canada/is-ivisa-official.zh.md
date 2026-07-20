@@ -3,7 +3,7 @@ title: "iVisa 是加拿大 eTA 官方网站吗？不是，请用 Canada.ca"
 kicker: "iVisa 和 canadavisas.net 都是商业服务。加拿大 eTA 官方入口在 Canada.ca。"
 description: "iVisa 不是加拿大 eTA 官网。对比 iVisa 89.99 美元起、canadavisas.net 99 美元总价与 IRCC 7 加元官方费。"
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "canada"
 weight: 30
 keywords: ["iVisa 是加拿大 eTA 官网吗", "加拿大 eTA 官网", "加拿大 eTA 骗局", "canadavisas.net", "加拿大 eTA 费用", "加拿大 eTA 免费吗"]

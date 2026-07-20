@@ -2,7 +2,7 @@
 title: "新西兰入境卡官网指南：NZTD 免费，NZeTA 另算"
 kicker: "所有入境新西兰的人都要填免费的 NZTD。NZeTA 是另一项旅行授权。"
 description: "新西兰入境卡中文指南：NZTD 官方网站、免费规则、NZeTA 多少钱和适用人群、18 个字段及中介加价证据。"
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 ---
 
 每个入境新西兰的人都要填写 New Zealand Traveller Declaration，包括新西兰公民、婴儿和儿童。NZTD 不收填写费或提交费。

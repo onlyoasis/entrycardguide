@@ -1,12 +1,12 @@
 # Turkey — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-07-14
+# Last verified: 2026-07-20
 
 [evisa]
 url = "https://www.evisa.gov.tr/"
 name = "Official Türkiye e-Visa Application"
 agency = "Republic of Türkiye Ministry of Foreign Affairs"
-last_verified = "2026-07-14"
+last_verified = "2026-07-20"
 archive_url = "https://web.archive.org/web/2026/https://www.evisa.gov.tr/"
 notes = "Verified 2026-07-14 against https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/, https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/, https://www.evisa.gov.tr/en/tour/thats/, and https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa. Check visa exemption before applying. Ordinary passport holders from the United States, United Kingdom, Canada, and Australia are currently visa-exempt for tourist visits up to 90 days in any 180-day period, so each has no current e-Visa price. Ordinary People's Republic of China passport holders are also visa-exempt for up to 90 days in any 180-day period from 2 January 2026, so China also has no current e-Visa price. These five requested representative quotes are therefore not applicable, not historical fee figures. For passports that remain eligible, the fee varies by nationality and the official system displays it only after nationality, travel-document type, and travel dates are selected; use the live quote. Some nationalities, including India, Bangladesh, Pakistan, and the Philippines, may obtain a 30-day single-entry e-Visa only when they meet added conditions such as holding a valid Schengen, US, UK, or Ireland visa or residence permit."
 
@@ -14,7 +14,7 @@ notes = "Verified 2026-07-14 against https://www.evisa.gov.tr/en/info/what-do-i-
 url = "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
 name = "Visa Information for Foreigners"
 agency = "Republic of Türkiye Ministry of Foreign Affairs"
-last_verified = "2026-07-14"
+last_verified = "2026-07-20"
 archive_url = "https://web.archive.org/web/2026/https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
 notes = "Verified 2026-07-14. This is the Ministry of Foreign Affairs country-by-country source for visa exemption, direct e-Visa eligibility, conditional e-Visa eligibility, and sticker-visa requirements. Examples currently exempt for ordinary tourist passports include Germany, France, Italy, Spain, Belgium, Portugal, Switzerland, Norway, Denmark, Finland, Japan, South Korea, Hong Kong SAR, Singapore, Malaysia, the United Kingdom, the United States, Canada, Australia, and China. Stay limits and passport-type rules differ, so check the entry for the exact passport."
 

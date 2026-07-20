@@ -3,7 +3,7 @@ title: "How to Fill the ESTA Form: All 9 Fields Explained (2026)"
 kicker: "Nine ESTA field groups, from the e-passport number to the optional social media section."
 description: "How to fill the official ESTA form: passport, name, birth date, email, phone, address, employer, U.S. contact, and optional social media fields."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "usa"
 weight: 20
 keywords: ["how to fill ESTA", "ESTA form fields", "ESTA employer information", "ESTA US contact UNKNOWN", "ESTA social media optional"]

@@ -3,7 +3,7 @@ title: "Is iVisa the Official ESTA Website? No, Use CBP"
 kicker: "iVisa, esta.global, and travelusaesta.com are commercial services. The official ESTA host is esta.cbp.dhs.gov."
 description: "iVisa is not the official ESTA website. Compare commercial prices of USD $109.99 to $140 with CBP's official USD $40.27 approved total."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "usa"
 weight: 30
 keywords: ["is iVisa official ESTA", "ESTA official website", "ESTA scam", "esta.global", "travelusaesta.com", "ESTA fee"]

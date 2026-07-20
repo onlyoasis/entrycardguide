@@ -3,7 +3,7 @@ title: "Is ESTA Free? Official Website and USD $40.27 Fee (2026)"
 kicker: "ESTA is not free and it is not a visa. Apply at esta.cbp.dhs.gov."
 description: "Is ESTA free? No. The official ESTA total is USD $40.27 if approved. Use the CBP website and avoid commercial application markups."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "usa"
 weight: 10
 keywords: ["is ESTA free", "ESTA official website", "ESTA official site", "ESTA fee", "esta.cbp.dhs.gov", "USA travel authorization", "is iVisa official ESTA"]

@@ -3,7 +3,7 @@ title: "India e-Arrival Card Official Site: Is It Free? (2026)"
 kicker: "The e-Arrival Card is free for foreign travellers. Submit it within 72 hours before arrival."
 description: "Use the India e-Arrival Card official site for free. Learn who must file, the 72-hour rule, separate e-Visa fees, and eligible entry ports."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "india"
 weight: 10
 keywords: ["india e-arrival card official", "India e-Arrival Card official site", "is India e-Arrival Card free", "India arrival card", "India eVisa official site"]

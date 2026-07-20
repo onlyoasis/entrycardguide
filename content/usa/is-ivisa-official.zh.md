@@ -3,7 +3,7 @@ title: "iVisa 是 ESTA 官方网站吗？不是，请用 CBP 官网"
 kicker: "iVisa、esta.global 和 travelusaesta.com 都是商业服务。ESTA 官网是 esta.cbp.dhs.gov。"
 description: "iVisa 不是 ESTA 官方网站。中介价格为 109.99 至 140 美元，CBP 官网获批总价是 40.27 美元。"
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "usa"
 weight: 30
 keywords: ["iVisa 是官网吗", "ESTA 官网", "ESTA 骗局", "esta.global", "travelusaesta.com", "ESTA 费用"]

@@ -3,7 +3,7 @@ title: "How to Fill the India e-Arrival Card: All 15 Fields (2026)"
 kicker: "Five sections and 15 fields, from the passport name to the truth declaration."
 description: "How to fill the India e-Arrival Card: all 15 identity, travel, address, contact, and declaration fields explained in form order."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "india"
 weight: 20
 keywords: ["how to fill India e-Arrival Card", "India arrival card fields", "India e-Arrival Card official", "India arrival form", "India e-Arrival Card flight number"]

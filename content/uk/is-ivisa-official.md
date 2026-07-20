@@ -3,7 +3,7 @@ title: "Is iVisa the Official UK ETA Website? No, Use GOV.UK"
 kicker: "iVisa, eta-united-kingdom.com, and application-eta.uk are commercial services. The official route is gov.uk/eta."
 description: "iVisa is not the UK ETA official website. Compare observed commercial prices starting at USD $100.99 or EUR 69 with the £20 Home Office fee."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "uk"
 weight: 30
 keywords: ["is iVisa official UK ETA", "UK ETA official website", "UK ETA scam", "eta-united-kingdom.com", "application-eta.uk", "UK ETA fee"]

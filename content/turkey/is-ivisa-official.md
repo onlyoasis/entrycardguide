@@ -3,7 +3,7 @@ title: "Is Turkey eVisa Official? Only evisa.gov.tr Is Government"
 kicker: "Commercial sites can charge for a visa that an exempt passport does not need. Check the MFA list before any checkout."
 description: "Is a Turkey eVisa site official? Use only evisa.gov.tr, check visa exemption first, and compare documented USD $91 to $213 middleman offers."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "turkey"
 weight: 30
 keywords: ["is Turkey eVisa official", "Turkey eVisa official site", "is iVisa official Turkey", "evisa.gov.tr", "Turkey visa scam", "evisa.govn.tr"]

@@ -3,7 +3,7 @@ title: "UK ETA 怎么填：9 组字段逐项中文说明（2026）"
 kicker: "按 9 组文字字段核对，并留意本地检查器不包含的护照和人脸拍摄步骤。"
 description: "UK ETA 怎么填：护照、姓名、出生日期、邮箱、住址、职业、其他国籍、定罪记录和监护人联系方式。"
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "uk"
 weight: 20
 keywords: ["UK ETA 怎么填", "英国 ETA 填写", "UK ETA 护照扫描", "UK ETA 人脸照片", "UK ETA 监护人"]

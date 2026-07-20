@@ -3,7 +3,7 @@ title: "India eVisa Official Site: Is iVisa Official? No"
 kicker: "The government site ends in .gov.in. Commercial arrival-card and e-Visa services charge their own fees."
 description: "Find the India eVisa official site, check the exact .gov.in suffix, and compare the free e-Arrival Card with documented £15 to USD $399 services."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "india"
 weight: 30
 keywords: ["india evisa official site", "is iVisa official India", "India eVisa scam", "indianvisaonline.gov.in", "India e-Arrival Card fee"]

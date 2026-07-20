@@ -3,7 +3,7 @@ title: "土耳其电子签多少钱？先确认你是否免签（2026）"
 kicker: "中国普通护照自 2026 年 1 月 2 日起 90/180 免签。多数中文读者的正确费用是 0。"
 description: "土耳其电子签多少钱：先核对中国等护照免签资格，再认准 evisa.gov.tr，并了解按护照报价和有条件 e-Visa。"
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "turkey"
 weight: 10
 keywords: ["土耳其需要签证吗", "土耳其电子签多少钱", "土耳其 eVisa 官网", "中国护照土耳其免签", "evisa.gov.tr"]

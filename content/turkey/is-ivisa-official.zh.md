@@ -3,7 +3,7 @@ title: "土耳其 eVisa 官网是哪个？认准 evisa.gov.tr"
 kicker: "有些中介把签证卖给本来免签的旅客。付款前先查外交部名单，再逐字核对域名。"
 description: "辨认土耳其 eVisa 官网：只认 evisa.gov.tr，先查中国等护照免签，并对比 91 至 213 美元的已记录中介报价。"
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "turkey"
 weight: 30
 keywords: ["土耳其 eVisa 官网", "土耳其电子签官网", "iVisa 是土耳其官网吗", "evisa.gov.tr", "土耳其签证骗局", "evisa.govn.tr"]

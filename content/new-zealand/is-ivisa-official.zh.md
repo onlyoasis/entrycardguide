@@ -3,7 +3,7 @@ title: "iVisa 是 NZTD 或 NZeTA 官方网站吗？不是"
 kicker: "iVisa 等申请服务是商业中介。NZTD 免费，NZeTA 有固定政府收费。"
 description: "iVisa 不是 NZTD 或 NZeTA 官网。对比免费的 NZTD、NZeTA 官方费用，以及已记录的 39 至 170 美元中介服务。"
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "new-zealand"
 weight: 30
 keywords: ["iVisa 是官网吗", "NZTD 骗局", "NZeTA 官网", "NZeTA 多少钱", "新西兰入境卡收费"]

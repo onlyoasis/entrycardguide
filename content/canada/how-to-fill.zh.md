@@ -3,7 +3,7 @@ title: "加拿大 eTA 怎么填：11 组字段逐项中文说明（2026）"
 kicker: "按 IRCC 表格顺序核对 11 组字段，先确认自己的入境方式是否真的需要 eTA。"
 description: "加拿大 eTA 怎么填：护照、姓名、出生资料、婚姻状况、职业、邮箱、住址、旅行日期和背景问题逐项说明。"
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "canada"
 weight: 20
 keywords: ["加拿大 eTA 怎么填", "加拿大 eTA 表格", "加拿大 eTA 护照号", "加拿大 eTA 地址", "加拿大 eTA 背景问题"]

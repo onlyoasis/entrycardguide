@@ -3,7 +3,7 @@ title: "Is eTA Canada Free? Official Site and CAD $7 Fee (2026)"
 kicker: "Canada eTA is not free. Apply on Canada.ca and pay the CAD $7 government fee."
 description: "Is eTA Canada free? No. The official Canada eTA fee is CAD $7. Check the air-only rule, exemptions, validity, and Canada.ca application site."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "canada"
 weight: 10
 keywords: ["is eTA Canada free", "Canada eTA official site", "Canada eTA official website", "Canada eTA fee", "Canada eTA air travel", "is iVisa official Canada eTA"]

@@ -2,7 +2,7 @@
 title: "柬埔寨 e-Arrival 官方网站、免费申报和防中介指南"
 kicker: "柬埔寨 e-Arrival 官方链接、入境申报免费边界，以及签证费用和中介费用的区别。"
 description: "柬埔寨 e-Arrival 中文指南：官方网址 arrival.gov.kh、免费入境申报、字段填写和中介提醒。"
-lastmod: 2026-07-13
+lastmod: 2026-07-20
 ---
 
 柬埔寨 e-Arrival 是官方电子入境申报，网址是 `arrival.gov.kh`。它可能和签证步骤放在一起，但入境申报本身不是付费中介服务。

@@ -3,7 +3,7 @@ title: "How to Fill the Canada eTA Form: All 11 Fields Explained (2026)"
 kicker: "Eleven Canada eTA field groups, checked against the passport and IRCC form guidance."
 description: "How to fill the official Canada eTA form: passport, names, birth details, marital status, occupation, email, address, travel date, and background questions."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "canada"
 weight: 20
 keywords: ["how to fill Canada eTA", "Canada eTA form fields", "Canada eTA passport number", "Canada eTA address", "Canada eTA background questions"]

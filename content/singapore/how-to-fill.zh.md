@@ -3,7 +3,7 @@ title: "新加坡 SGAC 表格怎么填 2026：ICA 官方入境卡字段指南"
 kicker: "使用 ICA 官方 SGAC 表格 eservices.ica.gov.sg。本页讲清护照、航班、住址和健康声明字段。"
 description: "新加坡 SGAC 表格怎么填：ICA 官方 Arrival Card 的护照、航班、住址、健康声明字段，免费官网入口和常见错误。"
 date: 2026-04-26
-lastmod: 2026-07-13
+lastmod: 2026-07-20
 country: "singapore"
 weight: 20
 keywords: ["sgac 怎么填", "新加坡入境卡字段", "ica sgac 帮助", "新加坡入境卡健康声明"]

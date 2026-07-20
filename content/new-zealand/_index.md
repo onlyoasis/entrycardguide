@@ -2,7 +2,7 @@
 title: "New Zealand Traveller Declaration Official Guide: NZTD, NZeTA, and Fees"
 kicker: "The NZTD is free and required for every person entering New Zealand. NZeTA is a separate travel authorization."
 description: "New Zealand entry guide: official NZTD website, free declaration, NZeTA fees and eligibility, all 18 fields, and documented middleman prices."
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 ---
 
 Every person entering New Zealand must complete a New Zealand Traveller Declaration, including New Zealand citizens, babies, and children. The NZTD is free.

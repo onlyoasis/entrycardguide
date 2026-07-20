@@ -2,7 +2,7 @@
 title: "United States ESTA: Official Website, $40.27 Fee, and Middleman Check"
 kicker: "The official ESTA site is esta.cbp.dhs.gov. ESTA is a paid travel authorization, not a visa."
 description: "United States ESTA guide: official CBP website, USD $40.27 fee, VWP eligibility, application fields, and commercial middleman warnings."
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 ---
 
 ESTA is the United States travel authorization for eligible Visa Waiver Program travelers. It is not a visa. Apply on the U.S. Customs and Border Protection website.

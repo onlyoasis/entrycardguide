@@ -3,7 +3,7 @@ title: "India eVisa 官网怎么认？iVisa 不是印度政府网站"
 kicker: "印度政府申请域名以 .gov.in 结尾。入境卡和 e-Visa 中介另收服务费。"
 description: "辨认 India eVisa 官网：逐字核对 .gov.in 后缀，对比免费 e-Arrival Card 与已记录的 15 英镑至 399 美元中介服务。"
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-20
 country: "india"
 weight: 30
 keywords: ["India eVisa 官网", "iVisa 是印度官网吗", "印度电子签骗局", "indianvisaonline.gov.in", "印度入境卡收费"]
