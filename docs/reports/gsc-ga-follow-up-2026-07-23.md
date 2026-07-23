@@ -285,6 +285,30 @@ ChatGPT 合计：**浏览 260（占全站 49.3%）、活跃用户 203（43.9%）
 
 AI 助手的联网检索大量依赖 Bing 及各家自有索引（OAI-SearchBot 等），而本站只在 Google 做了收录工作。目前这 2 个被引用的页面更像是「碰巧被非 Google 索引收进去了」，不是内容特殊。这是推断，不是定论——但它给出一个 10 分钟、零风险的验证动作。
 
+### 机制修正（当天接入 Bing 后实测）
+
+当天已完成 Bing Webmaster Tools 接入（详见下节）。BWT 的 **AI Performance** 报告给出实测基线：
+
+| 指标（近 3 个月，来源 Microsoft Copilots and Partners） | 值 |
+|---|---:|
+| Total Citations | **0** |
+| Avg. Cited Pages | **0** |
+
+这修正了上面的推断，结论更精确：
+
+- 本站在 **Bing / Copilot 生态里的引用量是 0**，与 `bing / organic` 仅 1 个用户一致——确实完全不在这套索引里。
+- 但 ChatGPT 同期贡献了 203 个用户。**如果 ChatGPT 纯靠 Bing 索引，它不可能引用一个 Bing 里不存在的站。** 所以 ChatGPT 目前主要走 OpenAI 自有索引（OAI-SearchBot），不是 Bing。
+- 因此接入 Bing **不一定**能扩大 ChatGPT 引流。它的真实价值是另一件事：**Copilot 这条 AI 渠道当前是 0，属于完全未开采的增量**，而不是「修复」ChatGPT 渠道。
+
+AI Performance 从此可作为 Copilot 渠道的跟踪仪表，基线 0，之后任何变化都可归因。
+
+### 当天已完成的 Bing 接入
+
+- 通过 GSC 一键导入（Google 授权范围 `webmasters.readonly`），`entrycardguide.com` 已验证，无需 DNS 记录。
+- 只导入了本站，未动 `aistarter.online`、`openskillmarket.com` 两个同账号站点。
+- 已提交 `https://entrycardguide.com/sitemap.xml`（含 en/zh 子表）：Known sitemaps 1、错误 0、警告 0、状态 Processing。
+- 首次授权曾失败一次：Google 同意页的权限复选框未勾选，回调 `scope` 里只有 `email/openid`，导致 Bing 报 "we didn't find any sites from GSC"。重做并授予 `webmasters.readonly` 后正常。
+
 ### 行动
 
 1. **接入 Bing Webmaster Tools**（`docs/tasks/05`，可从 GSC 一键导入，约 10 分钟），提交两份 sitemap。这是解锁其余 16 国 AI 引流成本最低、最值得先试的一步。

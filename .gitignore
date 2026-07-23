@@ -24,3 +24,7 @@ Thumbs.db
 .env
 .env.local
 .env.*.local
+
+# Local agent tooling (.claude/worktrees holds full repo checkouts)
+.claude/
+.context/
