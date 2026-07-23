@@ -98,3 +98,10 @@ jobs:
           apiToken: ${{ env.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ env.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy public --project-name=entrycardguide --branch=${{ github.ref_name }} --commit-dirty=true
+
+      # Runs after the deploy: IndexNow fetches the key file and the submitted
+      # URLs, so they have to be live first. A search engine being down must not
+      # fail a deploy that already succeeded.
+      - name: Notify IndexNow
+        run: npm run submit:indexnow
+        continue-on-error: true

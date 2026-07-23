@@ -9,6 +9,7 @@
     "build:prod": "hugo --gc --minify --environment production",
     "check:seo": "node scripts/check-seo-output.mjs",
     "verify:official-urls": "node scripts/verify-official-urls.mjs",
+    "submit:indexnow": "node scripts/submit-indexnow.mjs",
     "clean": "rm -rf public resources"
   },
   "devDependencies": {
