@@ -67,6 +67,23 @@ defaultContentLanguageInSubdir = false
       url = "/zh/about/"
       weight = 80
 
+# llms.txt — plain-text site index for LLM crawlers (llmstxt.org convention).
+# 44% of active users arrive from ChatGPT and other AI assistants, so this file
+# is a first-class surface, not an afterthought. It is GENERATED from
+# data/official_urls/*.toml by layouts/index.llms.txt: change a URL, agency, or
+# fee in the TOML and llms.txt follows. Never hand-write it — a second copy of
+# the official URLs is exactly the kind of drift this site exists to prevent.
+# notAlternative keeps it out of hreflang so check:seo stays happy.
+[outputFormats]
+  [outputFormats.LLMS]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
+    notAlternative = true
+
+[outputs]
+  home = ["HTML", "RSS", "LLMS"]
+
 [params]
   defaultTheme = "light"
   disableThemeToggle = true

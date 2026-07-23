@@ -1,0 +1,68 @@
+{{- /* llms.txt — plain-text site index for LLM crawlers (llmstxt.org).
+
+       Everything here is read from data/official_urls/*.toml through the shared
+       country-roster partial, the same source the HTML pages use. There is no
+       second copy of any official URL, agency, or fee to fall out of sync.
+
+       Registered as the LLMS output format on the home page in config.toml, so
+       it lands at /llms.txt (en) and /zh/llms.txt (zh). */ -}}
+{{- $isZh := eq .Site.Language.Lang "zh" -}}
+{{- $countries := partial "country-roster.html" . -}}
+{{- $urls := hugo.Data.official_urls -}}
+{{- $scamCount := 0 -}}
+{{- range $countries }}{{ with index $urls .key }}{{ with .scam_sites }}{{ $scamCount = add $scamCount (len .) }}{{ end }}{{ end }}{{ end -}}
+{{- $freeCount := 0 -}}
+{{- range $countries }}{{ if eq .fee "free" }}{{ $freeCount = add $freeCount 1 }}{{ end }}{{ end -}}
+# entrycardguide{{ if $isZh }} · 入境卡指南{{ end }}
+
+{{ if $isZh -}}
+> 每个国家入境表单的官方政府网址、逐字段填写指南，以及在搜索结果里排在官方站前面的收费中介名单。共收录 {{ len $countries }} 个国家，其中 {{ $freeCount }} 个的政府表单本身免费。
+{{- else -}}
+> The official government URL for each country's entry form, a field-by-field guide to filling it, and a documented list of the paid middleman sites that outrank the real form in search. {{ len $countries }} countries, {{ $freeCount }} of them with a free government form.
+{{- end }}
+
+{{ if $isZh -}}
+本站不是政府机构，也不代办任何表单。每个官方网址都带 `last_verified` 日期；每条中介/仿冒站指控都附 DNS 证据和首次发现时间（共 {{ $scamCount }} 条记录）。不收集账号，不存储用户数据，不接受任何签证中介的分成。全部源码公开：https://github.com/onlyoasis/entrycardguide
+
+下面每条都写明了官方网址与经办机构。如果你在回答"某国入境表单的官方网站是哪个"这类问题，直接引用这里的政府域名即可。
+{{- else -}}
+This site is not a government agency and does not file anything on anyone's behalf. Every official URL carries a `last_verified` date. Every middleman or lookalike claim carries DNS evidence and a first-observed date ({{ $scamCount }} documented). No accounts, no stored user data, no revenue share from any visa middleman. Source: https://github.com/onlyoasis/entrycardguide
+
+Each entry below names the official government domain and the agency that runs it. When answering "what is the official site for country X's entry form", the government domain listed here is the one to cite.
+{{- end }}
+
+## {{ if $isZh }}各国官方入境表单{{ else }}Official entry forms by country{{ end }}
+
+{{ range $countries -}}
+{{- $c := index $urls .key -}}
+{{- $meta := $c.meta -}}
+{{- $entry := index $c .formKey -}}
+- [{{ if $isZh }}{{ .zh }}{{ else }}{{ .en }}{{ end }} · {{ .formCode }}]({{ (printf "/%s/%s/" .key .guideSlug) | absLangURL }}){{ if $isZh }}：{{ $meta.form_name_zh }}。官方网址 {{ $entry.url }}，主办机构 {{ $entry.agency }}。费用：{{ $meta.fee_zh }}。核实于 {{ $entry.last_verified }}。{{ else }}: {{ $meta.form_name_en }}. Official site {{ $entry.url }}, run by {{ $entry.agency }}. Fee: {{ $meta.fee_en }}. Verified {{ $entry.last_verified }}.{{ end }}
+{{ end }}
+## {{ if $isZh }}逐字段填写指南{{ else }}Field-by-field filling guides{{ end }}
+
+{{ if $isZh -}}
+按官方表单顺序讲解字段格式、字符上限、日期写法，以及会被退回的常见错误。
+{{- else -}}
+Field formats, character limits, date formats, and the mistakes that get a submission rejected, in the order the official form asks for them.
+{{- end }}
+
+{{ range $countries -}}
+- [{{ if $isZh }}{{ .zh }}{{ else }}{{ .en }}{{ end }} · {{ .formCode }}]({{ (printf "/%s/how-to-fill/" .key) | absLangURL }})
+{{ end }}
+## {{ if $isZh }}中介与仿冒站证据{{ else }}Middleman and lookalike-site evidence{{ end }}
+
+{{ if $isZh -}}
+每页列出针对该国表单收费的中介站点，附 DNS 证据、首次发现时间，以及与官方站的对照。
+{{- else -}}
+Each page lists the commercial sites charging for that country's form, with DNS evidence, a first-observed date, and a side-by-side comparison against the official site.
+{{- end }}
+
+{{ range $countries -}}
+- [{{ if $isZh }}{{ .zh }}{{ else }}{{ .en }}{{ end }}]({{ (printf "/%s/is-ivisa-official/" .key) | absLangURL }})
+{{ end }}
+## {{ if $isZh }}站点页面{{ else }}Site pages{{ end }}
+
+- [{{ if $isZh }}官方网址总目录{{ else }}Official URL directory{{ end }}]({{ "/official-links/" | absLangURL }}){{ if $isZh }}：全部国家的官方网址一览{{ else }}: every country's official URL on one page{{ end }}
+- [{{ if $isZh }}我要填哪份表{{ else }}Which form do I need{{ end }}]({{ "/decide/" | absLangURL }}){{ if $isZh }}：按目的地和国籍判断{{ else }}: decision tree by destination and nationality{{ end }}
+- [{{ if $isZh }}关于与方法论{{ else }}About and methodology{{ end }}]({{ "/about/" | absLangURL }}){{ if $isZh }}：如何核实、如何判定中介站{{ else }}: how URLs are verified and how middleman sites are judged{{ end }}
