@@ -1,9 +1,9 @@
 ---
-title: "How to fill every field on the Malaysia MDAC"
+title: "How to Fill the Malaysia MDAC: Field Guide (2026)"
 kicker: "Field-by-field walkthrough of the official Immigration Department MDAC with common errors and what they mean. 7 minutes total."
 description: "Step-by-step guide to every field on the Malaysia Digital Arrival Card. Free and independent."
 date: 2026-04-24
-lastmod: 2026-07-20
+lastmod: 2026-07-23
 country: "malaysia"
 weight: 20
 layout: how-to-fill

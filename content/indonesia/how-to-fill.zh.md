@@ -1,9 +1,9 @@
 ---
-title: "印尼 All Indonesia / e-CD 怎么填 2026：巴厘岛入境字段指南"
+title: "印尼 e-CD 海关申报怎么填 2026：巴厘岛入境字段指南"
 kicker: "印尼官方 All Indonesia / e-CD 申报字段逐项讲解，常见错误及含义。约 7 分钟看完。"
 description: "印尼 All Indonesia / e-CD 怎么填：按官方表单讲解护照、航班、行李、现金和海关问题，巴厘岛/雅加达通用。"
 date: 2026-04-26
-lastmod: 2026-06-17
+lastmod: 2026-07-23
 country: "indonesia"
 weight: 20
 keywords: ["印尼海关申报怎么填", "All Indonesia 字段", "巴厘岛海关表字段", "印尼海关申报帮助", "allindonesia.imigrasi.go.id 字段"]
