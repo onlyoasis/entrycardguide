@@ -38,7 +38,7 @@
 
 | 域名 | TOML 里的指控 | 首次观测 | 今天实际情况 | 还成立吗 |
 |---|---|---|---|:--:|
-| `evisa.govn.tr` | look-alike 域名，自称官方门户 | 2026-07-14 | 标题仍为 "**Official** Turkey Electronic Visa Apply"，H2 仍为 "Republic of Türkiye Electronic Visa (e-Visa) - Portal Version 2.0"，域名 `govn.tr` 仿 `gov.tr`。页脚有 "operated by E-Services, a private entity"，**但全文未声明与政府无关** | **部分成立** |
+| `evisa.govn.tr` | look-alike 域名，自称官方门户 | 2026-07-14 | 域名 `govn.tr` 仿 `gov.tr` 属实，标题仍自称 Official。但 `disclaimer.php` 明写 "This company (E SERVICES) **is not associated with the government of Turkey**"；费用表已改为「政府费 + Addl. Admin Fee」分列；原指控的"美英资格说法过时"也已修正（现写明 USA 可免签入境） | 否 |
 | `malaysia-mdac.com` | 冒用马来西亚移民局品牌 | 2024-02-15 | 页脚："本网站**不隶属于马来西亚政府和使馆**。协助申请服务将收取一定的服务费"，正文另有"如希望通过马来西亚入境卡官网申请，您可以在此申请"并给出官方链接 | 否 |
 | `mexico-fmm.com` | 冒用 INM 品牌 | 2024-08-15 | **域名已 301 到 `mexicofmm.com`**。新站页脚："www.mexicofmm.com **is not affiliated with the Government** or its sponsors. An application can also be submitted **for a lower cost** through the Government's website here" | 否 |
 | `eticket-dominican.com` | 冒用 DGM 品牌 | 2023-08-01 | 页脚："www.eticket-dominican.com **no está afiliado al Gobierno**... También se puede enviar una solicitud **por un precio menor** a través del sitio web del gobierno aquí" | 否 |
@@ -47,9 +47,11 @@
 | `vietnam-evisa.org` | 用 .org 仿官方域名 | 2024-03-15 | 正文："**We are not affiliated with the Government**... you can visit the official website **for a cheaper price**"。（页脚版权写 "VIETNAM EVISA DEPARTMENT"，"Department" 有误导性，但披露明确） | 基本否 |
 | `visasforms.com` | 自称 "Official Turkey eVisa Service" | 2026-07-14 | H1 **仍是** "Official Turkey eVisa Service"，但同页有："This is a private third-party service **not affiliated with or endorsed by** the Turkish Ministry of Foreign Affairs... For official eVisa applications, **visit evisa.gov.tr**" | 弱 |
 
-**8 个里 7 个现在都带明确的非官方免责声明，多数还主动给出官方链接并说明官方更便宜。**
+**8 个全部带明确的非官方免责声明，多数还主动给出官方链接并说明官方更便宜。**
 
 如果按原计划批量提交，等于提交 37 份假举报，其中 12 份针对一家有律师的公司。
+
+> **本节的一次自我修正**：第一轮复核只看了 `evisa.govn.tr` 的首页，据此判定它"全文未声明与政府无关"、可以单独提交。随后查它的 `disclaimer.php`，发现声明明确存在，只是没放在首页。结论因此从"1 条可提交"改为"0 条可提交"。记在这里是因为它说明了一件事：**只看落地页不足以判定一个站是否披露，必须翻完 disclaimer / about / terms。** 这条应写进复核流程。
 
 ### 附带发现：三个站是同一个模板
 
@@ -59,13 +61,14 @@
 
 复核的直接后果不是"不能提交举报"，而是：
 
-**`data/official_urls/*.toml` 里目前有 5 条指控，在今天已经不符合事实。** 它们随构建渲染进 `{{< scam-site >}}`，是公开发布的内容：
+**`data/official_urls/*.toml` 里目前有 6 条指控，在今天已经不符合事实。** 它们随构建渲染进 `{{< scam-site >}}`，是公开发布的内容：
 
 - `malaysia-mdac.com` — "Uses Malaysian Immigration Department branding **without authorization**"
 - `mexico-fmm.com` — "Uses INM-style branding **without authorization**"（且域名已迁移）
 - `eticket-dominican.com` — "Uses DGM-style branding **without authorization**"
 - `evisa-vietnam.com` — "**copying the official site's UI**"
 - `indonesia-evoa.com` — "markup **masquerading as** 'service fee'"
+- `evisa.govn.tr` — "called its USD $20-$100 range a **government fee**" 及"**美英资格说法过时**"（该站已改版，费用分列、资格说法已修正）
 
 CLAUDE.md 把 shortcode 的构建时校验称为"法律防线（避免没有证据的污蔑指控）"。那条防线保证的是"指控必须有 TOML 条目"，它**保证不了 TOML 条目本身还成立**。上面 5 条就是从这个缝里漏出去的。
 
@@ -86,9 +89,11 @@ CLAUDE.md 把 shortcode 的构建时校验称为"法律防线（避免没有证�
 - 不向 APWG 提交（同一套 phishing 定义）
 - 不向 Google Safe Browsing 批量提交 37 条
 
-### 可做（需逐条确认）
+### 也不做
 
-`evisa.govn.tr` 是唯一有实质理由的一条：仿冒域名（`govn.tr` vs 官方 `gov.tr`）+ 标题自称 Official + 冒用政府门户命名，且**全文没有一句声明与政府无关**。可按「标识不明的第三方服务」单独提交，附我们的观测记录。一次一条，提交前你过目。
+`evisa.govn.tr` 一度被判为唯一可提交的一条，复核 `disclaimer.php` 后撤回：声明存在，只是不在首页。**26 个域名，0 条符合 Safe Browsing 的提交标准。**
+
+它仍有一个真实问题——`govn.tr` 与官方 `evisa.gov.tr` 只差一个字母，属于近似域名。但这是**域名/商标争议**，不是社会工程学，对口渠道是 .tr 注册管理机构和土耳其外交部，不是 Google Safe Browsing。
 
 ### 更值得做的替代路线
 
@@ -101,7 +106,8 @@ CLAUDE.md 把 shortcode 的构建时校验称为"法律防线（避免没有证�
 
 ## 六、下一步
 
-1. **改 5 条已过期的证据**（`malaysia`、`mexico`、`dominican`、`vietnam`、`indonesia`）。保留收费指控，删除/改写品牌侵权指控。同步更新 `mexico-fmm.com` → `mexicofmm.com` 的域名迁移。
-2. 把"同一站群模板"这条发现记进相关 TOML。
-3. 建立复核制度：`docs/maintenance/monthly-review.md` 已有月度流程，但显然没覆盖到 scam_sites 的证据时效。26 个域名手工复核约 1 小时，值得排进月度。
-4. `evisa.govn.tr` 单独提交与否，待定。
+1. ~~改 6 条已过期的证据~~ **已完成**（`malaysia`、`mexico`、`dominican`、`vietnam`×2、`indonesia`、`turkey`）。保留收费指控，删除/改写品牌侵权指控。同步更新 `mexico-fmm.com` → `mexicofmm.com` 的域名迁移。
+2. ~~把"同一站群模板"这条发现记进相关 TOML~~ **已完成**。
+3. **建立复核制度。** `docs/maintenance/monthly-review.md` 已有月度流程，但没覆盖 scam_sites 的证据时效——这次 6 条过期的最老一条是 2023-08，将近三年没复核。26 个域名手工复核约 1 小时，应排进月度。流程里必须写明：**逐站要翻 disclaimer / about / terms 页，不能只看落地页**（见第三节的自我修正）。
+4. ~~`evisa.govn.tr` 单独提交~~ **撤回，不提交。**
+5. 打通政府机构渠道（第五节），这才是原本要的外链和背书。

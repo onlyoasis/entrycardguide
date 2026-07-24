@@ -24,7 +24,7 @@ Check whether your passport needs a visa before comparing service prices. Ordina
 
 The official host is <mark>evisa.gov.tr</mark>. It ends with **`.gov.tr`**.
 
-`evisa.govn.tr` is different. The extra `n` turns `gov` into `govn`; it is not the government host. On July 14, 2026, that lookalike presented itself as a Republic of Türkiye e-Visa portal and used outdated eligibility language for US and UK citizens.
+`evisa.govn.tr` is different. The extra `n` turns `gov` into `govn`; it is not the government host. Checked again on July 24, 2026: the home page is still titled "Official Turkey Electronic Visa Apply" and still carries the heading "Republic of Türkiye Electronic Visa (e-Visa) - Portal Version 2.0". Its fee table adds an admin fee on top of each government amount. A separate disclaimer page says the operator is not associated with the government of Turkey, but the home page does not.
 
 Words such as Turkey, visa, official, government, portal, or service elsewhere in a domain do not make it official. Open the MFA or e-Visa link above and compare every character before entering passport or card data.
 
@@ -35,7 +35,7 @@ Public pages observed on July 14, 2026 showed:
 - **turkey-visa.org:** a USD $91 standard or USD $114 urgent service fee, plus a stated USD $13 to $99 government fee, for listed totals of USD $104 to $213.
 - **visasforms.com:** called itself an “Official Turkey eVisa Service” and advertised USD $95 including the government fee, while later acknowledging that travellers can apply on the government website.
 - **turkey.gwsg.org:** listed tourist visa products at USD $119 and USD $120 excluding VAT without first separating visa-exempt passports.
-- **evisa.govn.tr:** used a lookalike domain and offered authorization under outdated US and UK eligibility wording.
+- **evisa.govn.tr:** a lookalike domain one letter off `evisa.gov.tr`, titled "Official Turkey Electronic Visa Apply", charging an admin fee on top of the government amount.
 
 These are observations of each site's own public page, not government fee quotes. The official e-Visa fee varies by passport and appears only after the official eligibility choices.
 

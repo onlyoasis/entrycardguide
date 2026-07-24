@@ -24,7 +24,7 @@ layout: is-ivisa
 
 官方主机名是 <mark>evisa.gov.tr</mark>，结尾必须是 **`.gov.tr`**。
 
-`evisa.govn.tr` 多了一个字母 `n`，`gov` 变成了 `govn`，因此不是政府主机名。2026 年 7 月 14 日，该近似域名把自己包装成土耳其共和国 e-Visa 门户，并对美、英护照使用了过时的资格说法。
+`evisa.govn.tr` 多了一个字母 `n`，`gov` 变成了 `govn`，因此不是政府主机名。2026 年 7 月 24 日复核：首页标题仍是「Official Turkey Electronic Visa Apply」，仍带「Republic of Türkiye Electronic Visa (e-Visa) - Portal Version 2.0」标题行，费用表在每档政府费之外另加一笔管理费。它在单独的免责声明页写明运营方与土耳其政府无关，但首页没有这句话。
 
 域名中出现 Turkey、visa、official、government、portal 或 service，都不能证明它属于政府。先打开上面的外交部或电子签入口，再逐字对比地址栏，确认后才输入护照和银行卡资料。
 
@@ -35,7 +35,7 @@ layout: is-ivisa
 - **turkey-visa.org**：标准服务费 91 美元，紧急服务费 114 美元，另列 13 至 99 美元政府费，页面总价为 104 至 213 美元。
 - **visasforms.com**：自称 “Official Turkey eVisa Service”，标出含政府费的 95 美元服务，后文又承认旅客可以直接走政府网站。
 - **turkey.gwsg.org**：列出 119 和 120 美元的旅游签产品，未含 VAT，也没有先把免签护照排除。
-- **evisa.govn.tr**：使用近似官方域名，并用过时的美、英护照资格说法推销授权。
+- **evisa.govn.tr**：与 `evisa.gov.tr` 只差一个字母的近似域名，标题自称「Official Turkey Electronic Visa Apply」，在政府费之外另收管理费。
 
 这些数字只记录各站自己的公开报价，不是政府费用。官网费用按护照而定，完成资格选择后才显示。
 

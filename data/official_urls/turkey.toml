@@ -80,7 +80,7 @@ body_zh = "先在外交部签证信息页核对护照要求。若确实需要 e-
 domain = "evisa.govn.tr"
 path = "/official/en-us/"
 first_observed = "2026-07-14"
-evidence = "Observed 2026-07-14: the look-alike domain titled itself 'Republic of Türkiye Electronic Visa (e-Visa) - Portal Version 2.0', called its USD $20-$100 range a government fee, and claimed US and UK citizens could receive authorization, although ordinary US and UK tourist passports are currently visa-exempt and the government domain is evisa.gov.tr."
+evidence = "Observed 2026-07-24: the host name is one letter off the government domain evisa.gov.tr. The home page is titled 'Official Turkey Electronic Visa Apply' and carries the heading 'Republic of Türkiye Electronic Visa (e-Visa) - Portal Version 2.0'. Its fee table lists each nationality as a government amount plus an 'Addl. Admin Fee' it keeps. A separate disclaimer page states that the operator, E Services, is not associated with the government of Turkey; the home page itself carries no such statement."
 
 [[scam_sites]]
 domain = "turkey-visa.org"
