@@ -39,7 +39,7 @@ No.
 
 `.com` is an open top-level domain. Anyone can register it. The Mexican government operates under `.gob.mx`, a restricted suffix for government entities.
 
-`mexico-fmm.com` is a commercial reseller that uses INM-style branding without authorization. It typically files a real FMM-E with your data, so you usually arrive with a valid reference number. You paid for 10 minutes of typing that costs nothing on the official site.
+`mexico-fmm.com` now redirects to `mexicofmm.com`, a commercial reseller. Its own footer says it is not affiliated with the government and that you can apply for less on the official site. It typically files a real FMM-E with your data, so you usually arrive with a valid reference number. You paid for 10 minutes of typing that costs nothing on the official site.
 
 ### Is `ivisa.com/mexico` the official site?
 

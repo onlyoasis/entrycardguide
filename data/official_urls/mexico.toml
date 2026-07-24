@@ -97,7 +97,7 @@ body_zh = "陆路口岸意味着你要现场填 FMM（10 分钟，免费）。�
 [[scam_sites]]
 domain = "mexico-fmm.com"
 first_observed = "2024-08-15"
-evidence = "Live commercial reseller charging fees for the free FMM-E. Uses INM-style branding without authorization. DNS active 2026-04-26."
+evidence = "Observed 2026-07-24: the domain redirects to mexicofmm.com, which sells a paid service for the free FMM-E. Its footer states that the site is not affiliated with the government and that an application can be submitted for a lower cost through the government website. Runs the same page template and disclaimer wording as eticket-dominican.com and indonesia-evoa.com."
 
 [[scam_sites]]
 domain = "ivisa.com"

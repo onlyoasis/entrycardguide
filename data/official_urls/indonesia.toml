@@ -109,7 +109,7 @@ body_zh = "海关会让你在到达大厅自助机现填 e-CD，但会拖慢你�
 [[scam_sites]]
 domain = "indonesia-evoa.com"
 first_observed = "2024-08-22"
-evidence = "Live commercial reseller charging above the $35 USD government e-VOA fee, including a markup masquerading as 'service fee'. DNS active 2026-04-26."
+evidence = "Observed 2026-07-24: charges its own service fee on top of the $35 USD government e-VOA fee. Its footer states that the site is not affiliated with the government and that an application can be submitted for a lower cost through the government website. Runs the same page template and disclaimer wording as mexicofmm.com and eticket-dominican.com."
 
 [[scam_sites]]
 domain = "ivisa.com"

@@ -13,7 +13,7 @@ faq:
   - q: "Is vietnam-evisa.org official?"
     a: "No. The .org suffix is open to anyone. The Vietnamese government uses .gov.vn exclusively. vietnam-evisa.org is a commercial reseller charging significantly more than the $25 USD government fee."
   - q: "Is evisa-vietnam.com official?"
-    a: "No. evisa-vietnam.com is another commercial reseller copying the official site's UI. It is not affiliated with the Vietnamese Immigration Department."
+    a: "No. evisa-vietnam.com is another commercial reseller. Its own footer says it is neither a government website nor affiliated with the embassy."
   - q: "What is the real Vietnam e-visa cost?"
     a: "$25 USD for single-entry, $50 USD for multi-entry. This is the official Vietnamese government fee. Anything higher is middleman markup. Express processing adds $50 USD government surcharge for ~1 working day instead of 3."
   - q: "I already paid $129 to a middleman. Did I get scammed?"

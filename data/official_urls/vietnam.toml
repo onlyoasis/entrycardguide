@@ -124,12 +124,12 @@ body_zh = "政府审核返回 \"rejected\"，但 iVisa 的条款经常不退费�
 [[scam_sites]]
 domain = "vietnam-evisa.org"
 first_observed = "2024-03-15"
-evidence = "Live commercial reseller charging fees on top of the $25 USD government e-visa. Uses .org to mimic an official-looking domain. DNS active 2026-06-11."
+evidence = "Observed 2026-07-24: charges fees on top of the $25 USD government e-visa. The page states that the site is not affiliated with the government and that the official website is cheaper, while its footer copyright line reads 'VIETNAM EVISA DEPARTMENT'."
 
 [[scam_sites]]
 domain = "evisa-vietnam.com"
 first_observed = "2024-06-10"
-evidence = "Live commercial reseller copying the official site's UI; bills above the $25 government fee. DNS active 2026-06-11."
+evidence = "Observed 2026-07-24: bills above the $25 government e-visa fee. Its footer states that the site is neither a government website nor affiliated with the embassy, and that it is a commercial service."
 
 [[scam_sites]]
 domain = "ivisa.com"

@@ -85,7 +85,7 @@ body_zh = "护照号错的 MDAC 记录在电子通道无法关联。在官方站
 [[scam_sites]]
 domain = "malaysia-mdac.com"
 first_observed = "2024-02-15"
-evidence = "Live commercial reseller charging fees for the free MDAC. Uses Malaysian Immigration Department branding without authorization. DNS active 2026-04-26."
+evidence = "Observed 2026-07-24: sells a paid service for the free MDAC. Its footer states that the site is not affiliated with the Malaysian government or embassies and that a service fee applies, and the page links to the official site. The page also describes the MDAC as a paper form, which it is not."
 
 [[scam_sites]]
 domain = "ivisa.com"
