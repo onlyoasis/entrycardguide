@@ -51,7 +51,12 @@
 
 如果按原计划批量提交，等于提交 37 份假举报，其中 12 份针对一家有律师的公司。
 
-> **本节的一次自我修正**：第一轮复核只看了 `evisa.govn.tr` 的首页，据此判定它"全文未声明与政府无关"、可以单独提交。随后查它的 `disclaimer.php`，发现声明明确存在，只是没放在首页。结论因此从"1 条可提交"改为"0 条可提交"。记在这里是因为它说明了一件事：**只看落地页不足以判定一个站是否披露，必须翻完 disclaimer / about / terms。** 这条应写进复核流程。
+> **本节的两次自我修正**，都是同一种错法——查得太浅就断定"它没有披露"：
+>
+> 1. `evisa.govn.tr`：只看首页，判定"全文未声明与政府无关"、可单独提交。查 `disclaimer.php` 后发现声明明确存在，只是不在首页。结论从"1 条可提交"改为"0 条"。
+> 2. `ivisa.com/malaysia`：翻了页脚、用正则搜 `not the government`，判定"该页没有任何非官方声明"。实际文本是 "We are not the **Malaysian** government"——正则漏了中间的国名。
+>
+> **复核流程必须写死两条**：(a) 逐站翻完 disclaimer / about / terms，不能只看落地页；(b) 搜披露文本要用宽松模式（`We are not`、`not affiliated`、`no está afiliado`、`不隶属`），不能假设措辞。
 
 ### 附带发现：三个站是同一个模板
 
@@ -95,14 +100,37 @@ CLAUDE.md 把 shortcode 的构建时校验称为"法律防线（避免没有证�
 
 它仍有一个真实问题——`govn.tr` 与官方 `evisa.gov.tr` 只差一个字母，属于近似域名。但这是**域名/商标争议**，不是社会工程学，对口渠道是 .tr 注册管理机构和土耳其外交部，不是 Google Safe Browsing。
 
-### 更值得做的替代路线
+### 政府机构渠道：查过了，同样没有可提交的东西
 
-原目标是"拿外链 + 权威背书"。真正的对口渠道不是安全厂商，是**被冒用品牌的政府机构本身**：
+原本判断"真正的对口渠道是被冒用品牌的政府机构"。实际去查之后，这条也不成立。
 
-- 泰国移民局已经在发公开警告（我们 `thailand.toml` 的证据就引用了这个）
-- 各国移民局有反诈联系渠道，且**有动机**发布中介警告名单
+**渠道确实存在且对口。** 新加坡 ICA 的 feedback 表单有一个专设类别，标题直接写着 "Others (e.g. **Reporting of Scams Related to ICA Services/Facilities**)"（`form.gov.sg/68553b140c742cca1571de4c`）。马来西亚移民局的 contact 页只给出 `webmaster@imi.gov.my`，没有独立的反诈通道。
 
-一个 `immigration.go.th` 或 `ica.gov.sg` 的警告页引用本站，权重远高于 PhishTank 条目（后者基本是 nofollow，SEO 价值接近 0），而且这些机构本来就想要这份数据。方向对了，强度也更高。
+**但没有可填进去的内容。** 复核 iVisa 各国入境卡页面（2026-07-24）：
+
+| 页面 | 披露文本 | 标价 |
+|---|---|---|
+| `/thailand/digital-arrival-card` | "We are not the Thai government, but will submit your application to them on your behalf." | from $64.99 |
+| `/malaysia/digital-arrival-card` | "We are not the Malaysian government..." | from $64.99 |
+| `/indonesia/arrival-card` | "We are not the Indonesian government..." | from $64.99 |
+| `/singapore/sg-arrival-card-health-declaration` | "We are not the Singapore government..." | from $64.99 |
+
+模板化的披露，逐国替换国名，价格统一。要向 ICA 提交的内容会变成"有公司为你们免费的表收 $64.99，并且明确说了自己不是你们"——这不是诈骗举报，ICA 那个类别是给冒充 ICA 的行为准备的。
+
+### 由此得到的真正结论
+
+**这个行业已经普遍加上了免责声明。** 今天复核的每一个站——8 个涉嫌冒充的 + iVisa 的 4 个国家页——无一例外。
+
+这不削弱本站，反而校正了它的定位：
+
+- 站不住的版本：「这些是骗子/诈骗站」
+- 站得住的版本：**「你正要为一份免费的表付 $64.99，真正的网址在这里」**
+
+第二个版本不需要证明任何人违法，只需要两个可核验的数字并列，而这两个数字本站已经全部持有。后续所有对外表述都应该收敛到第二个版本。
+
+### 那外链怎么办
+
+第二节说的"外链=0 是 Google 排名的天花板"仍然成立，但本节证明**它不能靠举报诈骗站来解决**。这个问题要退回 `docs/tasks/09-quora-outreach.md` 和 `10-backlink-recon.md` 的常规路径，或者接受 `monetization-model` 报告的判断——本站的流量引擎本来就是 AI 助手而不是 Google，外链的优先级可能被高估了。
 
 ## 六、下一步
 
