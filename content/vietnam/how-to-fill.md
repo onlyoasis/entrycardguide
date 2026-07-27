@@ -3,7 +3,7 @@ title: "How to Fill the Vietnam E-Visa Application Form (2026)"
 kicker: "Field-by-field walkthrough of the official Vietnam E-Visa form with common errors and what they actually mean. About 12 minutes total."
 description: "Step-by-step 2026 guide to Vietnam's official e-visa application form at evisa.gov.vn. Government fee is $25 single entry, $50 multiple. No middleman markup."
 date: 2026-04-26
-lastmod: 2026-07-23
+lastmod: 2026-07-27
 country: "vietnam"
 weight: 20
 keywords: ["vietnam e-visa how to fill", "vietnam evisa fields", "vietnam visa application help", "evisa.gov.vn fields", "vietnam e-visa photo upload"]
