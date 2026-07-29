@@ -1,19 +1,20 @@
 ---
-title: "Australian ETA App Official Step-by-Step Guide (2026)"
-kicker: "Six App-only steps: verify the developer, read the passport chip, take a live photo, answer questions, pay AUD $20, and check the result."
-description: "How to apply in the official AustralianETA App: Department of Home Affairs store links, NFC passport scan, live face photo, declarations, AUD $20 fee, and result."
+title: "Australian ETA App Steps and eVisitor 651 Field Guide (2026)"
+kicker: "Nine eVisitor 651 fields with Home Affairs' own MRZ and dd/mm/yy rules, plus the six App-only steps for ETA 601."
+description: "Australia field guide: eVisitor 651 field-by-field rules, the official Home Affairs lodgement error messages, and the six AustralianETA App steps for ETA 601."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-24
 country: "australia"
 weight: 20
-keywords: ["australian eta app official", "how to use AustralianETA App", "Australia ETA NFC passport", "Australia ETA photo", "Australia ETA fee"]
+layout: how-to-fill
+keywords: ["australian eta app official", "how to use AustralianETA App", "Australia eVisitor 651 fields", "Australia ETA NFC passport", "Australia ETA fee"]
 ---
 
 {{< official-link site="australia.eta601" >}}
 
-ETA 601 is an App-only process. There is no official website form and this page does not contain a field validator.
+The fields above belong to eVisitor 651, the free online route for eligible European passports. ETA 601 is a different process with no official website form, so none of those field cards apply to it.
 
-A browser checker cannot pre-test the parts that make this application official: the App reads the ePassport chip through NFC, captures a live face photo, checks device state, presents current Home Affairs questions, and sends the application for a government decision. Regular expressions cannot confirm a chip read, match a live face to the passport, or predict a request for more information. Use this page as a sequence checklist, then follow the current prompts inside AustralianETA.
+A browser checker cannot pre-test the parts that make an ETA application official: the App reads the ePassport chip through NFC, captures a live face photo, checks device state, presents current Home Affairs questions, and sends the application for a government decision. Regular expressions cannot confirm a chip read, match a live face to the passport, or predict a request for more information. Use the six steps below as a sequence checklist, then follow the current prompts inside AustralianETA.
 
 ## 1. Download the App and verify the developer
 

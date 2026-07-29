@@ -1,6 +1,12 @@
 # Australia changelog. Append to this file when ETA or eVisitor policy changes.
 
 [[entries]]
+date = "2026-07-24"
+summary = "Added an eVisitor 651 field guide with Home Affairs' own wording"
+summary_zh = "新增 eVisitor 651 字段指南，全部采用 Home Affairs 原文"
+detail = "ETA 601 is App-only and has no web form, so the how-to-fill page now documents the eVisitor 651 online application instead: nine fields, the machine-readable-zone rule for the passport number, the dd/mm/yy date format, and six verbatim Home Affairs lodgement error messages. Home Affairs publishes no field maxlengths or regexes for the form, which sits behind the ImmiAccount login, so none are invented here. The six AustralianETA App steps stay on the same page below the field cards."
+
+[[entries]]
 date = "2026-07-14"
 summary = "Australia guide published"
 summary_zh = "澳大利亚 ETA 指南上线"

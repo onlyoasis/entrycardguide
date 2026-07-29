@@ -12,7 +12,13 @@
 {{- $rules := (index hugo.Data.rules $country).fields -}}
 
 {{- $countryName := cond $isZh $meta.name_zh $meta.name_en -}}
+{{- /* A country's field guide usually documents the form named in form_code.
+       Australia is the exception: form_code is ETA 601, which is App-only and
+       has no web fields to document, while the form this guide covers is
+       eVisitor 651. Set fields_form_code in [meta] to relabel this page only —
+       form_code still drives the hub, roster, and is-ivisa pages. */ -}}
 {{- $formCode := $meta.form_code -}}
+{{- with $meta.fields_form_code }}{{ $formCode = . }}{{ end -}}
 {{- $since := cond $isZh $meta.since_zh $meta.since_en -}}
 {{- $timeNeeded := cond $isZh $meta.time_needed_zh $meta.time_needed_en -}}
 {{- $output := cond $isZh $meta.output_zh $meta.output_en -}}
@@ -52,8 +58,15 @@
     The fields where people get the official {{ $formCode }} wrong, in form order.
     {{- end -}}
   </h1>
+  {{- /* The default intro promises official regexes and a local validator on the
+         guide page. A country that has neither — because its form publishes no
+         web validation, or because the guide page runs no validator — sets
+         fields_intro_en/zh in [meta] to say what it actually offers. */ -}}
+  {{- $intro := cond $isZh $meta.fields_intro_zh $meta.fields_intro_en -}}
   <p class="text-muted mt-lg max-w-[720px]" style="font-size: 21px; line-height: 1.5;">
-    {{- if $isZh -}}
+    {{- if $intro -}}
+    {{ $intro | safeHTML }}
+    {{- else if $isZh -}}
     每个字段附官方正则、官方原话错误提示，以及你大概率会出错的地方。粘贴到官方站之前，可以先在 <a href="{{ .Parent.RelPermalink }}{{ $meta.guide_slug }}/" class="text-ink underline underline-offset-4">{{ $formCode }} 主页</a> 的本地校验器里对一遍。
     {{- else -}}
     With the exact regex the official site enforces, the error message it returns, and what you probably did wrong. Pre-check your values in the <a href="{{ .Parent.RelPermalink }}{{ $meta.guide_slug }}/" class="text-ink underline underline-offset-4">{{ $formCode }} page's local validator</a> before pasting.
@@ -241,8 +254,11 @@
 {{- with .Content }}
 <section class="border-t border-rule pt-xl pb-xl">
   <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}§ 完整逐字段指南{{ else }}§ Full walkthrough{{ end }}</div>
+  {{- $walkthrough := cond $isZh $meta.fields_walkthrough_zh $meta.fields_walkthrough_en -}}
   <h2 class="font-serif font-medium mb-lg" style="font-size: 32px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144; margin-top: 0;">
-    {{- if $isZh -}}
+    {{- if $walkthrough -}}
+    {{ $walkthrough }}
+    {{- else if $isZh -}}
     字段讲解、官方校验器、常见错误解读。
     {{- else -}}
     The walkthrough, the in-browser validator, and the full common-errors list.

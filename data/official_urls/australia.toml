@@ -1,14 +1,14 @@
 # Australia — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-07-14
+# Last verified: 2026-07-24
 
 [eta601]
 url = "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601"
 name = "Electronic Travel Authority (subclass 601)"
 agency = "Australian Department of Home Affairs"
-last_verified = "2026-07-14"
+last_verified = "2026-07-24"
 archive_url = "https://web.archive.org/web/2026/https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601"
-notes = "App-only: ETA 601 applications must be made in the AustralianETA App; there is no official web form for ETA 601. Verified 2026-07-14 against this Home Affairs page and https://immi.homeaffairs.gov.au/supporting/files/australian-eta-app-industry-guidance.pdf. The app scans the passport data page, reads the ePassport chip with NFC, takes a live photo, collects personal and ETA answers, and submits payment. There is no Visa Application Charge, but Home Affairs charges an AUD $20 App application service fee. An ETA normally permits multiple entries during 12 months from grant, or until the linked passport expires if sooner, with stays of up to 3 months per visit. Most applicants receive a result immediately, but some applications require more information or longer processing. Home Affairs publishes no application-completion time; the ~15 minute site estimate below is a planning estimate for the six guide steps, not an official promise."
+notes = "App-only: ETA 601 applications must be made in the AustralianETA App; there is no official web form for ETA 601. Re-verified 2026-07-24 against this Home Affairs page, which states 'All ETA-eligible passport holders must apply for an ETA using the Australian ETA app' and 'There is a service charge of AUD20 to use the Australian ETA app'. Originally verified 2026-07-14 against this page and https://immi.homeaffairs.gov.au/supporting/files/australian-eta-app-industry-guidance.pdf. The app scans the passport data page, reads the ePassport chip with NFC, takes a live photo, collects personal and ETA answers, and submits payment. There is no Visa Application Charge, but Home Affairs charges an AUD $20 App application service fee. An ETA normally permits multiple entries during 12 months from grant, or until the linked passport expires if sooner, with stays of up to 3 months per visit. Most applicants receive a result immediately, but some applications require more information or longer processing. Home Affairs publishes no application-completion time; the ~15 minute site estimate below is a planning estimate for working through this guide, not an official promise."
 
 [eta_app]
 name = "AustralianETA"
@@ -23,9 +23,9 @@ notes = "Verified 2026-07-14 by following the Apple App Store and Google Play li
 url = "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/evisitor-651"
 name = "eVisitor (subclass 651)"
 agency = "Australian Department of Home Affairs"
-last_verified = "2026-07-14"
+last_verified = "2026-07-24"
 archive_url = "https://web.archive.org/web/2026/https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/evisitor-651"
-notes = "Verified 2026-07-14. eVisitor 651 is free and is applied for online through Home Affairs and ImmiAccount, not through the AustralianETA App. It is available to citizens holding eligible European passports. It permits multiple entries during 12 months from grant, with stays of up to 3 months per visit. Applicants must be outside Australia when they apply and when Home Affairs decides the application. Several European passports are eligible for both ETA 601 and eVisitor 651; eligible European travellers can use the free eVisitor route."
+notes = "Re-verified 2026-07-24; the Step by step tab's 'Provide accurate information' panel is the public, login-free source for the dd/mm/yy date format and the name-autocorrect warning used in data/rules/australia.json. The application itself opens at https://online.immi.gov.au/elp/app?action=new&formId=TV-AP-651, which now redirects to the ImmiAccount login, so no field maxlengths or regexes are publicly observable. Originally verified 2026-07-14. eVisitor 651 is free and is applied for online through Home Affairs and ImmiAccount, not through the AustralianETA App. It is available to citizens holding eligible European passports. It permits multiple entries during 12 months from grant, with stays of up to 3 months per visit. Applicants must be outside Australia when they apply and when Home Affairs decides the application. Several European passports are eligible for both ETA 601 and eVisitor 651; eligible European travellers can use the free eVisitor route."
 
 [meta]
 flag = "🇦🇺"
@@ -43,12 +43,25 @@ fee_zh = "20 澳元 App 费"
 suffix = ".homeaffairs.gov.au"
 form_type = "travel_authorization"
 
-field_count = 6
-sections = 6
-time_needed_en = "allow ~15 minutes"
-time_needed_zh = "建议预留约 15 分钟"
-output_en = "Home Affairs sends the decision in writing. If granted, keep the visa grant number, start date, and conditions. The ETA is linked electronically to the application passport; no passport label is issued."
-output_zh = "Home Affairs 会书面通知决定。获批后保存签证批准编号、生效日期和条件。ETA 与申请护照电子绑定，不发护照贴签。"
+# The how-to-fill page documents the eVisitor 651 online form, because ETA 601
+# is App-only and has no web fields. These three overrides relabel that page
+# only; form_code above still drives the hub, roster, and is-ivisa pages.
+fields_form_code = "eVisitor 651"
+fields_intro_en = "Home Affairs publishes no field regexes for this form, so this guide carries none. What it does carry is the government's own wording: the machine-readable-zone rule for the passport number, the dd/mm/yy date format, and the verbatim lodgement errors. ETA 601 holders should skip to the App steps below."
+fields_intro_zh = "Home Affairs 没有公开这套表单的字段正则，所以本页一个都不编。本页给的是政府自己的原话：护照号按机读区填的规则、dd/mm/yy 日期格式，以及递交时的官方报错原文。申请 ETA 601 的人请直接看下方 App 步骤。"
+fields_walkthrough_en = "ETA 601 is App-only. Here are its six steps."
+fields_walkthrough_zh = "ETA 601 只能用 App。以下是它的六个步骤。"
+
+field_count = 9
+sections = 3
+time_needed_en = "~15 minutes"
+time_needed_zh = "约 15 分钟"
+output_en = "Home Affairs sends the decision in writing. If granted, keep the visa grant number, start date, and conditions. Both the ETA and the eVisitor are linked electronically to the application passport; no passport label is issued."
+output_zh = "Home Affairs 会书面通知决定。获批后保存签证批准编号、生效日期和条件。ETA 和 eVisitor 都与申请护照电子绑定，不发护照贴签。"
+email_title_en = "Email arrives"
+email_title_zh = "邮件送达"
+email_body_en = "ETA results are usually immediate. For eVisitor, Home Affairs emails confirmation within 12 hours — if nothing arrives, check the status in ImmiAccount rather than lodging again."
+email_body_zh = "ETA 通常立刻出结果。eVisitor 则由 Home Affairs 在 12 小时内发确认信——没收到就去 ImmiAccount 查状态，不要重复递交。"
 
 primary_middleman = "iVisa"
 page_question_en = "Is iVisa the official Australian ETA site?"

@@ -1,0 +1,150 @@
+# Australia eVisitor (subclass 651) — field-by-field display data for the how-to-fill layout.
+#
+# Scope: this file describes the eVisitor 651 ONLINE application, not ETA 601.
+# ETA 601 has no web form — Home Affairs requires the AustralianETA App — so it
+# has no fields to document. See data/rules/australia.json `source` for the URLs.
+#
+# Field keys must match the keys in data/rules/australia.json.
+
+[[fields]]
+n = "01"
+key = "passport_number"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "C01X00T47"
+mistake = "C01X00T47<<<<<<"
+mistake_why_en = "MRZ filler chevrons copied along with the number"
+mistake_why_zh = "把机读区的 < 填充符一起复制进来了"
+copy_en = "Home Affairs says to enter the passport number exactly as it appears in the machine readable zone — the two dense lines at the bottom left of the photo page. Copy the characters only, not the chevrons that pad the line."
+copy_zh = "Home Affairs 要求护照号按机读区原样填写——就是资料页左下角那两行密集字符。只抄字符本身，不要抄补位的 < 符号。"
+
+[[fields]]
+n = "02"
+key = "passport_country"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "Germany"
+mistake = "United Kingdom — British National (Overseas)"
+mistake_why_en = "BN(O) passport is named in the official exclusion list"
+mistake_why_zh = "BN(O) 护照在官方排除名单里"
+copy_en = "You must be a citizen of, and hold a valid passport from, one of the 36 eligible countries. Home Affairs excludes a non-citizen passport, a certificate of identity, a Titre de Voyage, and British National (Overseas), British Dependent Territories Citizen, British Overseas Citizen, British Protected Person and British Subject passports."
+copy_zh = "你必须是 36 个符合资格国家之一的公民，并持有该国有效护照。官方明确排除：非公民护照、身份证明书、Titre de Voyage，以及 BN(O)、英国属土公民、英国海外公民、受英国保护人士和英国臣民护照。"
+
+[[fields]]
+n = "03"
+key = "family_name"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "MÜLLER"
+mistake = "Mueller"
+mistake_why_en = "umlaut re-spelled instead of copied from the passport"
+mistake_why_zh = "把变音符改写成 ue，没有照护照原样填"
+copy_en = "Enter the family name exactly as it is spelt on the passport. Home Affairs warns that a phone or tablet can silently auto-correct it, and asks you to list every name you have been known by."
+copy_zh = "姓要和护照拼写完全一致。Home Affairs 提醒手机或平板可能会自动更正，还要求列出你曾用过的全部姓名。"
+
+[[fields]]
+n = "04"
+key = "given_names"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "ANNA SOFIE"
+mistake = "ANNA"
+mistake_why_en = "middle given name dropped, which Home Affairs lists as a thing to check"
+mistake_why_zh = "漏了中间名，这正是官方点名要核对的一项"
+copy_en = "Enter every given name shown on the passport, including a middle name. Home Affairs lists an omitted middle name and a device auto-correction as the two things to check before you submit."
+copy_zh = "填写护照上的全部名，中间名也要填。官方列出提交前要核对的两件事：漏填中间名，以及被设备自动更正。"
+
+[[fields]]
+n = "05"
+key = "date_of_birth"
+section_en = "Section 1 · Passport"
+section_zh = "第 1 段 · 护照"
+example = "1991-08-22"
+mistake = "08/22/91"
+mistake_why_en = "US month-first order, but the official form asks for dd/mm/yy"
+mistake_why_zh = "用了美式月在前，官方表单要 dd/mm/yy"
+copy_en = "The official eVisitor form asks for the date of birth in dd/mm/yy format, and Home Affairs names it as one of four things to check before submitting. This local checker uses YYYY-MM-DD."
+copy_zh = "官方 eVisitor 表单要求出生日期用 dd/mm/yy 格式，Home Affairs 把它列为提交前必查的四项之一。本地检查器用 YYYY-MM-DD。"
+
+[[fields]]
+n = "06"
+key = "email"
+section_en = "Section 2 · Contact"
+section_zh = "第 2 段 · 联系方式"
+example = "anna@example.de"
+mistake = "anna@exampl.de"
+mistake_why_en = "domain typo, so the 12-hour confirmation and the decision never arrive"
+mistake_why_zh = "域名拼错，12 小时确认信和最终决定都收不到"
+copy_en = "Use an inbox you control and check the spelling. Home Affairs emails a confirmation within 12 hours of lodgement — if nothing arrives, check the application status in ImmiAccount rather than lodging again."
+copy_zh = "填你自己能收的邮箱，并核对拼写。Home Affairs 会在递交后 12 小时内发确认信——没收到就去 ImmiAccount 查申请状态，不要重复递交。"
+
+[[fields]]
+n = "07"
+key = "location_when_applying"
+section_en = "Section 3 · Declarations"
+section_zh = "第 3 段 · 申报"
+example = "Outside Australia"
+mistake = "Applying during a Sydney stopover"
+mistake_why_en = "lodged from inside Australia, which the system rejects outright"
+mistake_why_zh = "人在澳大利亚境内递交，系统直接拒绝"
+copy_en = "You must be outside Australia when you apply and also when Home Affairs decides. Both moments count, so a decision that lands while you are in transit inside Australia is a problem."
+copy_zh = "递交时和 Home Affairs 做决定时，人都必须在澳大利亚境外。两个时点都算，所以决定恰好在你于澳境内中转时下达就会出问题。"
+
+[[fields]]
+n = "08"
+key = "family_members"
+section_en = "Section 3 · Declarations"
+section_zh = "第 3 段 · 申报"
+example = "One application per person"
+mistake = "Adding a child listed in your passport"
+mistake_why_en = "eVisitor takes no dependants, even one printed inside your own passport"
+mistake_why_zh = "eVisitor 不能附带任何人，哪怕是印在你护照里的孩子"
+copy_en = "You cannot include family members in an eVisitor application. Each person needs a separate application, including any family member listed inside your passport."
+copy_zh = "eVisitor 申请不能包含家庭成员。每个人都要单独申请，包括印在你护照内页的家属。"
+
+[[fields]]
+n = "09"
+key = "character_declaration"
+section_en = "Section 3 · Declarations"
+section_zh = "第 3 段 · 申报"
+example = "No convictions in any country"
+mistake = "No, the conviction was spent"
+mistake_why_en = "the question covers all criminal conduct in any country, not just unspent convictions"
+mistake_why_zh = "问题涵盖任何国家的全部犯罪行为，不只是未撤销的定罪"
+copy_en = "If you have a criminal conviction in any country, Home Affairs directs you to apply for a Visitor visa (subclass 600) instead. If you still apply for an eVisitor, declare all criminal conduct and give the offences and any fines or sentences. Home Affairs may ask for a police certificate."
+copy_zh = "在任何国家有犯罪定罪，Home Affairs 都建议改申请 600 类访客签证。如果仍然申请 eVisitor，必须申报全部犯罪行为，写明罪名和罚金或刑期。Home Affairs 可能要求提供无犯罪证明。"
+
+# Official lodgement error messages published by Home Affairs at
+# /help-support/applying-online-or-on-paper/online/common-issues-and-error-messages
+# Codes 3 and 5 are the distinctive fragment of a longer official sentence; the
+# full text is quoted in data/rules/australia.json `source`.
+
+[[errors]]
+code = "Our records indicate that you are in Australia"
+why_en = "You lodged from inside Australia. eVisitor requires you to be offshore when you apply and when we decide."
+why_zh = "你人在澳大利亚境内递交。eVisitor 要求递交时和决定时都在境外。"
+
+[[errors]]
+code = "Applicant [name] cannot be identified"
+why_en = "Passport details do not match the record. Re-enter them from the MRZ; if it repeats, send Home Affairs a copy of the passport."
+why_zh = "护照信息与记录对不上。按机读区重新填一遍；仍然报错就把护照复印件发给 Home Affairs。"
+
+[[errors]]
+code = "not eligible … using this online service"
+why_en = "The passport you entered is not eVisitor-eligible, or a character is wrong. Check it against the 36-country list."
+why_zh = "填入的护照不符合 eVisitor 资格，或者有字符填错。对照 36 国名单核一遍。"
+
+[[errors]]
+code = "You are in a location that means you cannot use this service"
+why_en = "Wrong application for where you are. eVisitor is offshore-only; check you picked the right visa and location."
+why_zh = "申请类型和你所在位置不匹配。eVisitor 只能境外申请；确认签证类型和位置选对了。"
+
+[[errors]]
+code = "a member of the family unit cannot be included"
+why_en = "You tried to add a dependant. eVisitor is one application per person, with no exceptions."
+why_zh = "你试图添加随行人。eVisitor 一人一申请，没有例外。"
+
+[[errors]]
+code = "System is currently unavailable"
+why_en = "Browser session problem, not your data. Clear cookies and history a few times, then retry."
+why_zh = "浏览器会话问题，不是你填的内容有错。多清几次 cookie 和历史记录再试。"

@@ -1,0 +1,110 @@
+{
+  "country": "australia",
+  "officialUrl": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/evisitor-651",
+  "lastVerified": "2026-07-24",
+  "source": "Covers the eVisitor (subclass 651) online application, NOT the Electronic Travel Authority (subclass 601). Home Affairs states that ETA 601 has no web form at all — 'All ETA-eligible passport holders must apply for an ETA using the Australian ETA app' — so no browser checker can model it. eVisitor 651 is the one Australian visitor route lodged through an online form, and it is free. Sources, all public and login-free, re-checked 2026-07-24: https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/evisitor-651 (Step by step > 'Provide accurate information', which states 'checking you have entered your date of birth in dd/mm/yy format' and warns that device auto-correct may alter the name), https://immi.homeaffairs.gov.au/help-support/applying-online-or-on-paper/online/common-issues-and-error-messages (which states 'Make sure you enter: applicant names exactly as they are on the passport and passport numbers exactly as they are in the machine readable zone (bottom left corner) of the passport' and publishes the verbatim lodgement error messages), and https://immi.homeaffairs.gov.au/check-twice-submit-once. The application form itself sits behind an ImmiAccount login, so Home Affairs publishes no field maxlengths and no client-side regexes for it. This file therefore carries no invented pattern for any field. The one exception is the passport length range: assets/js/validator.ts falls back to a 6-9 character limit when minLength/maxLength are absent, which would reject valid passport numbers, so an explicit broad 1-20 range is set here as a local checker bound — it is not a Home Affairs limit. Name fields use non-restrictive text rules rather than the checker's Latin-only name validator, because every eVisitor-eligible passport is European and accented spellings are normal.",
+  "fields": {
+    "passport_number": {
+      "type": "passport",
+      "label": "Passport number",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 20,
+      "placeholder": "C01X00T47",
+      "help": "Home Affairs says to enter the passport number exactly as it appears in the machine readable zone — the two dense lines at the bottom left of the photo page. This is the opposite of the Canadian rule. The 1-20 range is a local checker bound; Home Affairs publishes no length limit.",
+      "errors": {
+        "required": "Passport number is required",
+        "tooShort": "Enter the passport number from the machine readable zone",
+        "tooLong": "Check the passport number — this local checker allows up to 20 characters",
+        "invalidChars": "Use letters and numbers only — no spaces, and no < filler marks from the MRZ",
+        "invalidFormat": "Use the letters and numbers printed as the passport number"
+      }
+    },
+    "passport_country": {
+      "type": "select",
+      "label": "Passport country",
+      "required": true,
+      "help": "You must be a citizen of, and hold a valid passport from, one of the 36 eVisitor-eligible countries. Home Affairs excludes a non-citizen passport, certificate of identity, Titre de Voyage, and British National (Overseas), British Dependent Territories Citizen, British Overseas Citizen, British Protected Person and British Subject passports.",
+      "errors": {
+        "required": "Passport country is required",
+        "invalidOption": "Choose an eVisitor-eligible passport country"
+      }
+    },
+    "family_name": {
+      "type": "text",
+      "label": "Family name",
+      "required": true,
+      "placeholder": "MÜLLER",
+      "help": "Enter the family name exactly as it is spelt on the passport. Home Affairs warns that a phone or tablet may silently auto-correct it, and asks you to list every name you have been known by.",
+      "errors": {
+        "required": "Family name is required"
+      }
+    },
+    "given_names": {
+      "type": "text",
+      "label": "Given names",
+      "required": true,
+      "placeholder": "ANNA SOFIE",
+      "help": "Enter every given name shown on the passport, including a middle name. Home Affairs lists an omitted middle name and a device auto-correction as the two things to check before submitting.",
+      "errors": {
+        "required": "Given names are required"
+      }
+    },
+    "date_of_birth": {
+      "type": "date",
+      "label": "Date of birth",
+      "required": true,
+      "maxDate": "2026-07-24",
+      "placeholder": "1991-08-22",
+      "help": "The official eVisitor form asks for the date of birth in dd/mm/yy format — check it before submitting. This local checker uses YYYY-MM-DD; use the official form's own format when applying.",
+      "errors": {
+        "required": "Date of birth is required",
+        "invalidFormat": "Use YYYY-MM-DD in this checker — the official form uses dd/mm/yy",
+        "tooLate": "Date of birth cannot be after 2026-07-24"
+      }
+    },
+    "email": {
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "maxLength": 254,
+      "placeholder": "name@example.com",
+      "help": "Use an inbox you control and check the spelling. Home Affairs emails confirmation within 12 hours of lodgement, and sends the grant or refusal decision in writing. The 254-character bound is the internet standard for an address, not a Home Affairs limit.",
+      "errors": {
+        "required": "Email is required",
+        "invalidFormat": "Must look like name@example.com",
+        "tooLong": "Email is too long — max 254 characters in this checker"
+      }
+    },
+    "location_when_applying": {
+      "type": "select",
+      "label": "Where you are when you apply",
+      "required": true,
+      "help": "You must be outside Australia when you apply and also when Home Affairs decides the application. Lodging from inside Australia returns the error 'Our records indicate that you are in Australia'.",
+      "errors": {
+        "required": "Answer where you are when you apply",
+        "invalidOption": "You must be outside Australia to lodge an eVisitor"
+      }
+    },
+    "family_members": {
+      "type": "select",
+      "label": "Family members included",
+      "required": true,
+      "help": "You cannot include family members in an eVisitor application. Home Affairs requires a separate application for each person, including any family member listed inside your passport.",
+      "errors": {
+        "required": "Answer whether you are including family members",
+        "invalidOption": "Each person needs their own eVisitor application"
+      }
+    },
+    "character_declaration": {
+      "type": "select",
+      "label": "Criminal conviction declaration",
+      "required": true,
+      "help": "If you have a criminal conviction in any country, Home Affairs directs you to apply for a Visitor visa (subclass 600) instead. If you still apply for an eVisitor you must declare all criminal conduct, answer every question truthfully, and give the offences and any fines or sentences imposed. Home Affairs may ask for a police certificate.",
+      "errors": {
+        "required": "Answer the character questions",
+        "invalidOption": "Declare all criminal conduct truthfully"
+      }
+    }
+  }
+}

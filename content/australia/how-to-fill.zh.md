@@ -1,19 +1,20 @@
 ---
-title: "澳大利亚 ETA App 怎么申请：6 步官方流程（2026）"
-kicker: "核对开发者、NFC 读护照芯片、拍本人实时照片、回答问题、支付 20 澳元、查看结果。"
-description: "AustralianETA App 中文步骤：官方商店链接、NFC 护照扫描、人脸实时照片、申报问题、20 澳元服务费和申请结果。"
+title: "澳大利亚 ETA App 六步流程 + eVisitor 651 字段指南（2026）"
+kicker: "eVisitor 651 的 9 个字段，附 Home Affairs 原文的机读区规则和 dd/mm/yy 格式；另加 ETA 601 的六步 App 流程。"
+description: "澳大利亚字段指南：eVisitor 651 逐字段规则、Home Affairs 官方递交报错原文，以及 ETA 601 的六步 AustralianETA App 流程。"
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-07-24
 country: "australia"
 weight: 20
-keywords: ["澳大利亚 ETA App 怎么申请", "AustralianETA App 官方", "澳大利亚 ETA NFC 护照", "澳大利亚 ETA 照片", "澳大利亚 ETA 多少钱"]
+layout: how-to-fill
+keywords: ["澳大利亚 ETA App 怎么申请", "AustralianETA App 官方", "澳大利亚 eVisitor 651 字段", "澳大利亚 ETA NFC 护照", "澳大利亚 ETA 多少钱"]
 ---
 
 {{< official-link site="australia.eta601" >}}
 
-ETA 601 只能在 App 内申请。它没有官方网页表单，本页也不提供字段检查器。
+上面那些字段属于 eVisitor 651——符合资格的欧洲护照可以走的免费网页通道。ETA 601 是另一条路，没有官方网页表单，上面的字段卡对它都不适用。
 
-浏览器检查器无法预检这套流程里决定申请是否成立的部分：AustralianETA 要通过 NFC 读取电子护照芯片，现场拍摄本人照片，检查手机状态，显示 Home Affairs 当前问题，再把申请交给政府判断。正则表达式无法确认芯片是否读成功，也无法核对真人与护照照片，更不能预测是否会被要求补资料。本页只帮助你按顺序准备，正式填写以 App 当时显示为准。
+浏览器检查器无法预检 ETA 申请里决定成立与否的部分：AustralianETA 要通过 NFC 读取电子护照芯片，现场拍摄本人照片，检查手机状态，显示 Home Affairs 当前问题，再把申请交给政府判断。正则表达式无法确认芯片是否读成功，也无法核对真人与护照照片，更不能预测是否会被要求补资料。下面六步只帮助你按顺序准备，正式填写以 App 当时显示为准。
 
 ## 第 1 步：下载 App 并核对开发者
 
