@@ -340,25 +340,22 @@ async function listMarkdownFiles(dir) {
 }
 
 function updateLastmod(text) {
-  const newline = text.startsWith("---\r\n")
-    ? "\r\n"
-    : text.startsWith("---\n")
-      ? "\n"
-      : "";
-  if (!newline) return text;
+  const frontmatter = text.match(
+    /^---(\r?\n)([\s\S]*?)(\r?\n)---(?=\r?\n|$)/,
+  );
+  if (!frontmatter) return text;
 
-  const end = text.indexOf(`${newline}---`, 3 + newline.length);
-  if (end === -1) return text;
-
-  const frontmatter = text.slice(0, end);
-  if (/^lastmod:\s*\d{4}-\d{2}-\d{2}\s*$/m.test(frontmatter)) {
+  if (
+    /^lastmod:[ \t]*\d{4}-\d{2}-\d{2}[ \t]*\r?$/m.test(frontmatter[0])
+  ) {
     return text.replace(
-      /^lastmod:\s*\d{4}-\d{2}-\d{2}\s*$/m,
-      `lastmod: ${targetDate}`,
+      /^lastmod:[ \t]*\d{4}-\d{2}-\d{2}[ \t]*(\r?)$/m,
+      `lastmod: ${targetDate}$1`,
     );
   }
 
-  return `${text.slice(0, end)}${newline}lastmod: ${targetDate}${text.slice(end)}`;
+  const closingIndex = frontmatter[0].length - 3;
+  return `${text.slice(0, closingIndex)}lastmod: ${targetDate}${frontmatter[3]}${text.slice(closingIndex)}`;
 }
 
 function printSummary(results) {
