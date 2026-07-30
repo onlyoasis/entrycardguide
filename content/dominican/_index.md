@@ -2,6 +2,7 @@
 title: "Dominican Republic"
 kicker: "Everything you need to know about the Dominican Republic E-Ticket, without paying a middleman."
 description: "Free, independent guides to the DR's E-Ticket. Official URL, every field explained, scam-site warnings."
+lastmod: 2026-04-25
 ---
 
 The Dominican Republic E-Ticket is a free digital form required for all arrivals and departures. It replaced the paper entry and exit cards in 2021 and is accepted only at `eticket.migracion.gob.do`.
