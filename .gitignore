@@ -3,11 +3,20 @@ public/
 resources/
 .hugo_build.lock
 
+# Cloudflare
+.wrangler/
+
 # Node
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Test artifacts
+coverage/
+test-results/
+playwright-report/
+blob-report/
 
 # OS
 .DS_Store
@@ -28,3 +37,5 @@ Thumbs.db
 # Local agent tooling (.claude/worktrees holds full repo checkouts)
 .claude/
 .context/
+/AGENTS.md.before-sync-*
+/CLAUDE.md.before-sync-*
