@@ -63,7 +63,7 @@ First observed: January 2025.
 
 No, same as the short answer above. iVisa is a commercial middleman.
 
-## The scam gallery
+## Known not-official sites
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
 {{< scam-site country="dominican" domain="eticket-dominican.com" screenshot="/scams/eticket-dominican-com.png" >}}

@@ -14,10 +14,10 @@ faq:
     a: "eservices.ica.gov.sg/sgarrivalcard/. The .gov.sg suffix is restricted to Singapore government entities. No other domain is the SGAC."
   - q: "Why does iVisa charge for a free form?"
     a: "iVisa charges a 'service fee' to fill the form on your behalf. They do typically submit the real SGAC to ICA, so your record is valid. But the form is 9 fields and takes 6 minutes — paying $19-35 USD for that is a markup, not a service."
-  - q: "Singapore is highly developed. Why are scams a problem here?"
+  - q: "Singapore is highly developed. Why are middlemen a problem here?"
     a: "Tourists often assume Singapore's bureaucracy is well-marketed and that any official-looking site must be real. Search engine ads exploit this — middleman sites buy ad slots above the official ICA site for terms like 'Singapore arrival card'. The first result on Google is often paid, not official."
   - q: "Do Singapore citizens need to worry about this?"
-    a: "Singaporean citizens entering on a Singapore passport don't need the SGAC at all. Singapore PRs returning from abroad do, but they typically know the official site already. This scam targets foreign visitors."
+    a: "Singaporean citizens entering on a Singapore passport don't need the SGAC at all. Singapore PRs returning from abroad do, but they typically know the official site already. These sites target foreign visitors."
   - q: "I already paid for my SGAC. What do I do?"
     a: "Check your email. If you have a confirmation from no-reply@ica.gov.sg with an SGAC reference number, your filing is valid; you overpaid. Dispute the markup with your card issuer as 'misleading merchant.' If you don't see that email, refile at the official site — it's free and only takes 6 minutes."
 layout: is-ivisa
@@ -33,7 +33,7 @@ The Singapore Arrival Card (SGAC) is **free** and is filed only at:
 
 iVisa typically charges around **$19-35 USD** to file an SGAC on your behalf. They do submit the real form to ICA. You just paid for what amounts to 6 minutes of typing.
 
-## Why this is a particularly clean scam
+## Why this is an especially clear-cut case
 
 The SGAC is one of the simplest forms in this guide. **9 fields, no payment, no photo upload.** Singapore is one of the most efficient governments in Asia at running digital services.
 
@@ -49,7 +49,7 @@ Singapore's `.gov.sg` suffix is restricted to government entities. So the test i
 2. **Does the URL look like a fake government domain?** Variations like `singapore-arrival.gov` (no, `.gov` is restricted to US government), `ica-singapore.com`, `singaporegov.com` are all bait.
 3. **Does the page show ICA's logo but at a different domain?** ICA's logo without the `.gov.sg` URL = unauthorized use, not the real ICA.
 
-## The scam gallery
+## Known not-official sites
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
 {{< scam-site country="singapore" domain="ivisa.com" screenshot="/scams/ivisa-com-singapore.png" >}}

@@ -77,7 +77,7 @@ iVisa 实际给了什么，看你买的是什么：
 
 `indonesia-evoa.com` 是商业中介，对 $35 美元政府 e-VOA 加价。它通常确实把真 e-VOA 提交了，但你付了差价。
 
-## 假站图鉴
+## 已知非官方站点
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
 {{< scam-site country="indonesia" domain="ivisa.com" screenshot="/scams/ivisa-com-indonesia.png" >}}

@@ -55,7 +55,7 @@ Periodically you'll see domains like `fmm-mexico.org`, `official-fmm.net`, or ot
 
 If a domain meets any of those criteria, treat it as untrusted regardless of whether it is on a published warning list.
 
-## The scam gallery
+## Known not-official sites
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
 {{< scam-site country="mexico" domain="mexico-fmm.com" screenshot="/scams/mexico-fmm-com.png" >}}

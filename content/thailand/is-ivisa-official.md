@@ -51,7 +51,7 @@ Periodically you'll see domains like `official-tdac.org`, `tdac-gov-th.net`, or 
 
 If a domain meets any of those criteria, treat it as untrusted regardless of whether it is on a published warning list.
 
-## The scam gallery
+## Known not-official sites
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
 {{< scam-site country="thailand" domain="ivisa.com" screenshot="/scams/ivisa-com-thailand.png" >}}
@@ -79,4 +79,4 @@ If the middleman did actually file a real TDAC for you (cases 1 or 2 in the shor
 
 If no real TDAC was filed (case 3), file one yourself at the official site (`tdac.immigration.go.th`) before you travel. It takes 8 minutes.
 
-If you do not trust this page, start with the artifacts. [How to fact-check us](/about/#methodology) shows the official URL TOML files, the DNS-audited scam list, and the validator source.
+If you do not trust this page, start with the artifacts. [How to fact-check us](/about/#methodology) shows the official URL TOML files, the DNS-audited list of not-official sites, and the validator source.

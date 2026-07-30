@@ -14,10 +14,10 @@ faq:
     a: "eservices.ica.gov.sg/sgarrivalcard/。.gov.sg 后缀只对新加坡政府机构开放。任何其他域名都不是 SGAC。"
   - q: "iVisa 凭什么对一份免费表单收钱？"
     a: "iVisa 收所谓服务费代你填表。他们通常确实把真 SGAC 提交给 ICA，所以你的记录有效。但这份表只有 9 个字段，6 分钟填完 —— 为这事付 $19-35 美元是加价，不是真的提供服务。"
-  - q: "新加坡这么发达，为什么也会有骗局？"
+  - q: "新加坡这么发达，为什么也会有中介？"
     a: "旅客往往以为新加坡政府服务做得好，任何看起来官方的站点都该是真的。搜索引擎广告利用这一点 —— 中介买'新加坡入境卡'等关键词的广告位，排到 ICA 官方站之上。Google 第一条结果常是付费广告而不是官方。"
   - q: "新加坡公民也要担心这个吗？"
-    a: "持新加坡护照入境的新加坡公民根本不需要 SGAC。从国外回新加坡的永久居民需要，但他们多半已经知道官方站。这种骗局针对的是外国游客。"
+    a: "持新加坡护照入境的新加坡公民根本不需要 SGAC。从国外回新加坡的永久居民需要，但他们多半已经知道官方站。这类站点针对的是外国游客。"
   - q: "我已经付钱办了 SGAC，怎么办？"
     a: "查邮箱。如果有 no-reply@ica.gov.sg 的确认信和 SGAC 参考号，你的提交有效，只是多付了。联系发卡行以'误导性商家'提起 chargeback。如果没有这封邮件，自己去官方站重办 —— 免费，6 分钟。"
 layout: is-ivisa
@@ -49,7 +49,7 @@ SGAC 是本指南里最简单的表单之一。**9 个字段，不付费，不�
 2. **URL 假装是政府域名？** `singapore-arrival.gov`（错，`.gov` 是美国政府专属）、`ica-singapore.com`、`singaporegov.com` 这类都是钓饵。
 3. **页面上有 ICA logo 但 URL 不是 `.gov.sg`？** ICA logo + 非 `.gov.sg` URL = 未授权使用，不是真 ICA。
 
-## 假站图鉴
+## 已知非官方站点
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
 {{< scam-site country="singapore" domain="ivisa.com" screenshot="/scams/ivisa-com-singapore.png" >}}

@@ -78,7 +78,7 @@ No.
 
 `indonesia-evoa.com` is a commercial reseller charging fees above the $35 USD government e-VOA fee. It does typically file the real e-VOA, but you pay the markup.
 
-## The scam gallery
+## Known not-official sites
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
 {{< scam-site country="indonesia" domain="ivisa.com" screenshot="/scams/ivisa-com-indonesia.png" >}}

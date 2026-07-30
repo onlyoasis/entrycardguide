@@ -65,7 +65,7 @@ No.
 
 `evisa-vietnam.com` charges approximately $129 USD. It copies the official site's user interface closely enough that travelers who have never seen the real `evisa.gov.vn` cannot tell at a glance.
 
-## The scam gallery
+## Known not-official sites
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
 {{< scam-site country="vietnam" domain="ivisa.com" screenshot="/scams/ivisa-com-vietnam.png" >}}

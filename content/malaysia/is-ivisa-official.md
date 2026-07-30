@@ -63,7 +63,7 @@ First observed: March 2025.
 
 No, same as the short answer above.
 
-## The scam gallery
+## Known not-official sites
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
 {{< scam-site country="malaysia" domain="malaysia-mdac.com" screenshot="/scams/malaysia-mdac-com.png" >}}

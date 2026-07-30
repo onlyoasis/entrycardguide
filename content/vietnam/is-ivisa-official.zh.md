@@ -65,7 +65,7 @@ iVisa 在政府费用之上加了服务费。他们的总价通常是：
 
 `evisa-vietnam.com` 收约 $129 美元。它的页脚写明自己既不是政府网站也与使馆无关，但这行字在页面最底部，先看到的是申请按钮。
 
-## 假站图鉴
+## 已知非官方站点
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
 {{< scam-site country="vietnam" domain="ivisa.com" screenshot="/scams/ivisa-com-vietnam.png" >}}
