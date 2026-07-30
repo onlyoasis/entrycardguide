@@ -70,6 +70,23 @@ content/thailand/
 
 ---
 
+## 许可证
+
+仓库按两份许可证拆开。提 PR 就等于同意你的贡献按对应许可证发布。
+
+| 许可证 | 覆盖范围 |
+|---|---|
+| [MIT](../LICENSE) | `layouts/`、`assets/`、`scripts/`、`functions/`、`i18n/`，以及 `config.toml`、`tailwind.config.js`、`postcss.config.js`、`package.json` |
+| [CC BY-SA 4.0](../LICENSE-CC-BY-SA-4.0) | `data/`（官方网址、字段规则、字段卡片、变更日志、决策树）、`content/`、`docs/`，以及 `static/og/` 和站点图标 |
+
+例外：`static/scams/*.png` 是第三方网站的截图，作为假站记录的证据发布。本项目不主张这些截图所拍摄的网站内容的版权，也无权把它授权给你。
+
+数据选 CC BY-SA 4.0 是有目的的：假站名单和字段规则可以被自由引用，但转用的人必须署名并保持同样开放。中介想把这份数据吞进自己的付费页面而不说出处，这条许可证不允许。
+
+需要在闭源或专有产品里使用这些数据，无法接受 share-alike 的传染性？另有商业授权，联系 `licensing@entrycardguide.com`。
+
+---
+
 ## 当前任务清单
 
 下表里**已完成 ✅** 的任务是给后续贡献者参考用的（不要重做）。**待做 🔵** 是开放工单，你可以挑一个 PR。

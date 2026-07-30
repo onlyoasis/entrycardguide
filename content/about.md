@@ -2,7 +2,7 @@
 title: "About"
 description: "Who runs entrycardguide, why this site exists, how we make money, and what we promise we will never do."
 date: 2026-04-25
-lastmod: 2026-04-25
+lastmod: 2026-07-30
 url: "/about/"
 layout: about
 ---
@@ -23,7 +23,7 @@ We could not figure out why no one had built the obvious thing: a free, independ
 - Written by people who have actually filed each form.
 - Updated when the official sites change.
 - Hosted as a static site. No accounts, no logins, no databases.
-- 100% open source. The code, the field rules, the scam-site list — all in [our GitHub repo](https://github.com/onlyoasis/entrycardguide).
+- Open source under named licenses. The code is [MIT](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE). The field rules, the scam-site list, and these pages are [CC BY-SA 4.0](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE-CC-BY-SA-4.0): reuse them and you have to credit the source and keep it open.
 
 ## What we are not
 
@@ -47,7 +47,7 @@ Do not trust us because the site looks serious. Check the artifacts.
 
 4. **The validator runs in your browser.** Open DevTools, go to Network, type into a validator, and watch what happens: no outbound request is sent with your passport data. The rules are embedded in the page and checked locally by [`assets/js/validator.ts`](https://github.com/onlyoasis/entrycardguide/blob/main/assets/js/validator.ts). We do not log keystrokes, store drafts, or phone home with partial submissions.
 
-5. **The whole site is open source.** The live pages map to Markdown files in [`content/`](https://github.com/onlyoasis/entrycardguide/tree/main/content). Data changes map to commits. Corrections happen in public through [issues](https://github.com/onlyoasis/entrycardguide/issues), pull requests, and the git history. If you want the longer walkthrough, read [how to verify everything on this site](/trust/).
+5. **The whole site is open source.** The live pages map to Markdown files in [`content/`](https://github.com/onlyoasis/entrycardguide/tree/main/content). Data changes map to commits. Two licenses cover it: [MIT](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE) for the code, [CC BY-SA 4.0](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE-CC-BY-SA-4.0) for the data and the guides. Corrections happen in public through [issues](https://github.com/onlyoasis/entrycardguide/issues), pull requests, and the git history. If you want the longer walkthrough, read [how to verify everything on this site](/trust/).
 
 ## How we make money
 

@@ -2,7 +2,7 @@
 title: "关于我们"
 description: "谁在运营 entrycardguide，为什么有这个站点，我们怎么赚钱，以及我们承诺永远不做的事。"
 date: 2026-04-25
-lastmod: 2026-04-25
+lastmod: 2026-07-30
 url: "/zh/about/"
 layout: about
 ---
@@ -23,7 +23,7 @@ layout: about
 - 由真正填过每一份表的人撰写。
 - 在官方站点变更时同步更新。
 - 以静态站点形式托管。无账号、无登录、无数据库。
-- 100% 开源。代码、字段规则、假站名单，全在 [我们的 GitHub 仓库](https://github.com/onlyoasis/entrycardguide)。
+- 开源，并且写明了许可证。代码是 [MIT](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE)，字段规则、假站名单和这些页面是 [CC BY-SA 4.0](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE-CC-BY-SA-4.0)：拿去用可以，但必须署名，并且保持同样开放。
 
 ## 我们不是什么
 
@@ -47,7 +47,7 @@ layout: about
 
 4. **校验器只在你的浏览器里运行。** 打开 DevTools 的 Network 面板，在校验器里输入内容，你会看到：不会有携带护照数据的外发请求。规则嵌在页面里，由 [`assets/js/validator.ts`](https://github.com/onlyoasis/entrycardguide/blob/main/assets/js/validator.ts) 在本地检查。我们不记录按键，不保存草稿，也不上传半填的表单。
 
-5. **整个站点都在 GitHub 上。** 线上页面对应 [`content/`](https://github.com/onlyoasis/entrycardguide/tree/main/content) 里的 Markdown 文件，数据变更对应提交记录。发现错误，可以看 [issues](https://github.com/onlyoasis/entrycardguide/issues)、PR 和 git 历史。更长的核查流程在这里：[如何核实本站的每一条说法](/zh/trust/)。
+5. **整个站点都在 GitHub 上。** 线上页面对应 [`content/`](https://github.com/onlyoasis/entrycardguide/tree/main/content) 里的 Markdown 文件，数据变更对应提交记录。两份许可证覆盖全站：代码用 [MIT](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE)，数据和指南用 [CC BY-SA 4.0](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE-CC-BY-SA-4.0)。发现错误，可以看 [issues](https://github.com/onlyoasis/entrycardguide/issues)、PR 和 git 历史。更长的核查流程在这里：[如何核实本站的每一条说法](/zh/trust/)。
 
 ## 我们怎么赚钱
 
