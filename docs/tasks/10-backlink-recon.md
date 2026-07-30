@@ -42,7 +42,7 @@ A 档 9 项调研全部完成。Chrome 浏览器扩展默认拒绝访问外部�
 Chrome 扩展拒了。改为本地终端 5 分钟脚本:
 
 ```bash
-# 在 /Users/lzc/code/entrycardguide/ 下跑
+# 在 /Users/lzc/Projects/web/entrycardguide/ 下跑
 urls=(
   "https://entrycardguide.com/"
   "https://entrycardguide.com/decide/"

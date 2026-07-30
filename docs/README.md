@@ -66,6 +66,8 @@ content/thailand/
 4. CI 自动跑构建。绿了 → reviewer 看 → 合并 → 自动部署
 5. 当天上线 `entrycardguide.com`
 
+发布前按 [`docs/maintenance/release-checklist.md`](./maintenance/release-checklist.md) 固定文件范围，并核对 official URL、`last_verified`、页面 `lastmod` 和线上 deployment SHA。
+
 ---
 
 ## 当前任务清单
