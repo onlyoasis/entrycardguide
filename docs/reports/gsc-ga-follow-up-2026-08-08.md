@@ -150,9 +150,13 @@ GA4 没有等价的一键全量导出，仍是界面读取，但 GA4 的分页�
 
 未编入的 8 页：7 个「网页会自动重定向」+ 1 个 404。需要查那个 404 是什么。
 
-## 三、新发现：一批「报错型」长尾查询没有页面接
+## 三、「报错型」长尾查询
 
-从 750 行查询里筛出排名 ≤10 且零点击的 116 个词（合计 286 曝光），发现一个上轮没识别出的类目——**用户带着表单的具体报错和字段格式问题来搜**：
+> **2026-08-09 更正：这一节最初的结论是错的，下面的建议已作废。**
+> 原文从「排名 9–13 且零点击」推断出「站点缺内容」和「标题摘要接不住」，但没有实际查看 SERP。
+> 补做三次验证后，两个前提都不成立，见本节末尾的「更正」。表格本身是原始数据，予以保留。
+
+从 750 行查询里筛出排名 ≤10 且零点击的 116 个词（合计 286 曝光），其中一批是**用户带着表单的具体报错和字段格式问题来搜**：
 
 | Query | 曝光 | 排名 |
 |---|---:|---:|
@@ -174,6 +178,26 @@ GA4 没有等价的一键全量导出，仍是界面读取，但 GA4 的分页�
 还有一类导航型查询：`www.e-arrivalcard.go.kr🇰🇷`（7 曝光 pos 8.9）、`www.e-arrivalcard.go.kr/portal/main/index.do`（4 曝光 pos 8.8）、`mdac 官网`（5 曝光 pos 9.6）——用户在搜官方 URL 本身。
 
 以及 `ivisa korea`（5，pos 9.2）、`ivisa philippines`（5，pos 9.6）、`ivisa cambodia`（3，pos 7.3）、`ivisa dominican republic`（3，pos 11.3）、`singapore ivisa`（2，pos 11.0）：`is-ivisa-official` 页在接这些词，排名不错但 0 点击。
+
+### 更正（2026-08-09）：上面的推断经不起 SERP 检验
+
+挑三个代表词实际去 Google 搜了一遍：
+
+| 查询 | GSC 记录 | 实际 SERP |
+|---|---|---|
+| `indonesia passport number format` | 14 曝光 pos 10.0 | 前 20 名内没有本站。结果是 Microsoft Learn 的数据分类定义、Wikipedia 护照条目、Passport Index——**该词问的是印尼护照号本身的格式，不是怎么填表**，搜的人不是本站用户 |
+| `full contact or residential address in new zealand` | 5 曝光 pos 11.0 | **第 7 位**，摘要精准抓到 field card：「use the first address. Looks good. Hotel Britomart, Auckland.」 |
+| 多米尼加 e-ticket 护照号带不带字母 | 14 曝光 pos 11.1 | **第 2 位**，仅次于官方 MITUR，摘要「Format: letters and digits, 6 to 12 characters. No spaces or dashes. Do not use the MRZ.」 |
+
+两个错误：
+
+1. **「缺内容」不成立。** 「表单报错」类目早就存在——`layouts/_default/how-to-fill.html:162-179` 就是 Error decoder 段落，`[[errors]]` 数据结构带 `code`/`why_en`/`why_zh`，且 GSC 里有需求的 6 个国家（印尼 5、泰国 7、越南 7、多米尼加 6、新加坡 7、马来 7 条）全都已经有数据。写报告时没去看模板。
+
+2. **「零点击 = CTR 有问题」是把噪声当信号。** 116 个词分摊 286 次曝光，平均每词 2.5 次。pos 7 的期望 CTR 约 3–5%，5 次曝光的期望点击是 0.2 次——观测到 0 是正常结果。在意图匹配的词上，内容、摘要、位置都已接近最优，没有可修的东西。
+
+真正卡住的是排名，而挡在前面的是官方站（`travellerdeclaration.govt.nz`、MITUR）、论坛（Cruise Critic、Facebook）和中介内容农场（`tropicalevasion.com`、`nowinpuntacana.com` 等）。这把结论推回外链，也就是本报告的另一条 P0。
+
+**唯一幸存的线索**是「缺字段」而非「缺呈现」：`data/rules/thailand.json` 的 8 个字段里确实没有 `occupation`，而 TDAC 官方表单有这个字段（2026-08-09 在中介站的表单副本上确认）。`data/rules/vietnam.json` 也没有身份证字段。这两处是真空白，但合计曝光仅 47，优先级低于外链。
 
 ## 四、GA4 数据（近 28 天，7/11–8/7）
 
@@ -332,21 +356,20 @@ GA4 近 28 天记录的事件只有 6 个，全部是增强型衡量的自动事
 
 `docs/tasks/09-quora-outreach.md`、`docs/tasks/10-backlink-recon.md` 两份任务书三个月没动。建议本轮只挑一个渠道跑通，不要铺开：Reddit 的 r/indonesia、r/bali、r/malaysia、r/VietNam 里有大量「e-CD 怎么填」「MDAC 官网是哪个」的真实提问，回答后链到对应的 how-to-fill 页。锚文本用 `official Indonesia e-CD site`、`Malaysia MDAC official website`。
 
-### P0：新建「表单报错」内容类目
+### ~~P0：新建「表单报错」内容类目~~ —— 已作废（2026-08-09）
 
-第三节那批词是免费的机会：站点已经排 9–13 位，没有任何针对性优化，说明竞争极低。
+原建议基于两个错误前提（类目不存在、CTR 有问题），SERP 验证后都不成立，详见第三节末尾的更正。**不要执行。**
 
-建议在 `data/fields/{country}.toml` 里为高频报错字段补 `error_message` 和 `example` 两个键，让 `layouts/_default/how-to-fill.html` 渲染成可被搜索命中的段落。优先做数据已经证明有需求的：
+从这条作废建议里剩下的，只有两个真实的字段空白，降级为 P2：
 
-- 印尼护照号格式（`indonesia passport number format` / `example` / `印尼護照號碼格式`，合计 24 曝光）
-- 泰国 TDAC 职业字段只收 a–z（`tdac occupation field only letters allowed` / `a-z` / `free type field`，合计 32 曝光）
-- 越南 e-visa 身份证字段（`vietnam evisa identity card field`，25 曝光 pos 9.7）
-- 多米尼加 e-ticket 护照号要不要带字母（14 曝光）
-- SGAC 报错码（6 曝光）
+- `data/rules/thailand.json` 没有 `occupation` 字段，而 TDAC 官方表单有（`tdac occupation field only letters allowed` / `a-z` / `free type field`，合计 22 曝光）
+- `data/rules/vietnam.json` 没有身份证字段（`vietnam evisa identity card field`，25 曝光 pos 9.7）
 
-这条路的好处是走 data 文件，不动模板，符合项目的数据驱动约定。
+合计 47 曝光。补之前必须先拿到官方表单的真实约束——这个站不编造字段规则。
 
 ### P1：修 5 个第 1 页页面的标题与摘要
+
+**先做一次 SERP 抽查再动手。** 作废的 P0 就栽在这上面。这里的样本量大得多（曝光 146–1,700，不是每词 2.5 次），CTR 从 0.32% 到 4.93% 的差距也不像噪声，但同样没有验证过 Google 实际展示成什么样。花 10 分钟搜三五个词，确认摘要确实抓错了段落，再改 front matter。
 
 按「曝光 × CTR 差距」排序，只改 `content/{country}/how-to-fill.md` 的 front matter：
 
@@ -387,7 +410,7 @@ GA4 近 28 天记录的事件只有 6 个，全部是增强型衡量的自动事
 
 - Bing 系（`cn.bing.com` + `bing/organic`）是否继续保持三位数增长率，会不会超过 ChatGPT
 - 外链是否从 0 起步——这是唯一能判断 P0 有没有执行的指标
-- 表单报错类页面上线后，那批 pos 9–13 的词是否开始有点击
+- ~~表单报错类页面上线后，那批 pos 9–13 的词是否开始有点击~~ —— 该建议已作废，不必跟踪
 - `1280x1200` 那批爬虫是否还在，占比是否变化（`ga4-bot-signature.json` 直接能看）
 - `copilot.com` 会话是否从个位数起量
 - 剔除爬虫后，`/malaysia/how-to-fill`、`/indonesia/how-to-fill` 的真实互动时长基线是多少——本轮只推算出前者约 7 秒，需要用比较对象量准
