@@ -7,17 +7,19 @@ A 档 9 项调研全部完成。Chrome 浏览器扩展默认拒绝访问外部�
 
 ---
 
-## 🚨 关键红警(立刻看)
+## ✅ 原「关键红警」已解除(2026-08-09 复核)
 
-**Google `site:entrycardguide.com` 零结果。** 用 Google 搜任何形式的 `site:entrycardguide.com`、`site:entrycardguide.com thailand` 都返回 "No links found"。站点可能完全未被 Google 索引,或者 sitelinks 信号有问题。
+> **这份文档原本以一条红警开头:「Google `site:entrycardguide.com` 零结果,站点可能完全未被索引」,并断言「如果完全没被索引,后面所有外链推广都是浪费——先解决索引,再做外链」。**
+>
+> **那条红警已被证伪,而且它很可能是这份文档三个月零执行的原因——它把第一步设成了一个不存在的问题。**
 
-**建议第一步:** 用户登录 Google Search Console,看:
+2026-08-09 实测:
 
-- `Indexing > Pages`:是否所有页都是 "Not indexed"?
-- `Settings > Crawl stats`:Googlebot 最近什么时候来过?
-- `Sitemaps`:`sitemap.xml` 是否成功被读取?
+- `site:entrycardguide.com` 返回 6 页以上结果,中英文页面都在
+- GSC「网页索引编制」:**已编入索引 156 页**,未编入 8 页(7 个重定向 + 1 个 404)
+- 索引数变化:2026-05 的 14 页 → 07-23 的 100 页 → 08-08 的 156 页
 
-如果完全没被索引,后面所有外链推广都是浪费——先解决索引,再做外链。可能原因:站点太新、GSC 未验证、sitemap 提交失败,或者(极小概率)有 robots noindex meta tag 残留。
+**索引从来不是瓶颈,现在更不是。下面的 outreach 动作可以直接开始,不需要任何前置检查。**
 
 ---
 
@@ -312,24 +314,59 @@ done
 
 ---
 
-## 🎯 用户立刻能做的 5 件事(按 ROI 排序)
+## 🎯 用户立刻能做的 4 件事(按 ROI 排序)
+
+原第 1 件「GSC 检查为什么 Google 零索引」已删除——索引正常,见文档开头。
 
 | # | 动作 | 时间 | 价值 |
 |---|---|---|---|
-| 1 | **GSC 检查为什么 Google 零索引** | 5 分钟 | 解决根本问题,否则所有外链都白搭 |
-| 2 | **跑上面的 archive.org bash 脚本** | 5 分钟 | 14 条永久 archive.org backlink |
+| 1 | **回 Quora 的 TDAC 官网问题**(`docs/tasks/09`,答案草稿 2026-08-09 已核实事实) | 20 分钟 | 该问题目前**没有直接答案**,第一个认真回答的人占位 |
+| 2 | **跑下面的 archive.org bash 脚本** | 5 分钟 | 14 条永久 archive.org backlink |
 | 3 | **回 3 个 Tripadvisor 帖子**(本文档"Tripadvisor 高优先级")按 09 任务的披露格式 | 30 分钟 | 3 条高 DA 论坛 backlink + 真实流量 |
-| 4 | **HARO 注册 + 选 Travel + Business 类别** | 5 分钟 | 接下来 30 天每天 3 封 query,1-2 次引用 = 高权重 backlink |
-| 5 | **`awesome-immigration` 提 PR 加 entrycardguide** | 10 分钟 | 1 条 GitHub 高 PR 仓库 backlink |
+| 4 | **`awesome-immigration` 提 PR 加 entrycardguide** | 10 分钟 | 1 条 GitHub 高 PR 仓库 backlink |
+
+原第 4 件 HARO 注册需要新建账号,归入需要站长本人操作的一类,不在此表。
 
 ---
 
-## 🚧 新发现的诈骗站(可立刻补 `data/official_urls/*.toml`)
+## 🚧 待核验的中介域名候选(**不可直接补进** `data/official_urls/*.toml`)
 
-### Thailand
-- `tdac.agents.co.th`(站点已有)
-- `tdac.in.th`(Thai Visa Centre 旗下,Tripadvisor 多帖警告)
-- 涉案人:Chad Scira(Thai authorities 公开点名,Tripadvisor 有专帖)
+> **2026-08-09 更正:本节原标题是「新发现的诈骗站(可立刻补)」,那是错的。**
+>
+> 下列域名是 2026-05-16 的搜索线索,**没有一个做过独立核验**。截至 2026-08-09,17 个候选里
+> 入库数为 0 —— 这是对的,不是遗漏。`layouts/shortcodes/scam-site.html` 在构建时强制要求
+> 每个域名都有 `evidence` 和 `first_observed`,这是法律防线,不是流程摩擦。
+>
+> **入库前每个域名都要单独核验:站点当前是否冒充官方、是否披露非官方身份、是否有官方或
+> 权威媒体点名。搜索线索、论坛帖、Scamadviser 评分都不够格。**
+
+### Thailand —— 已核验,结论是**不入库**(2026-08-09)
+
+原记录:「`tdac.agents.co.th`(站点已有)」「`tdac.in.th`(Thai Visa Centre 旗下,Tripadvisor 多帖警告)」。
+两条都需要更正:
+
+- **「站点已有」是错的。** `data/official_urls/thailand.toml` 的 `[[scam_sites]]` 只有 `ivisa.com` 一条。
+- **两个域名指向同一运营方**(AGENTS CO., LTD.),内容完全相同,DNS 都在 Cloudflare 后面,
+  `Last Updated: 2026-08-06`,处于活跃运营。
+- **它们不符合入库标准。** 页面顶部有明确声明:"We are not affiliated with the Thai government.
+  For the official TDAC form go to tdac.immigration.go.th",并标注 "TDAC Cost: FREE"。
+  申请页同样写着 "Private travel agency service for TDAC submission"。它们出售的是付费代提交服务,
+  这是**披露充分的商业中介**,不是冒充官方。
+- **没有任何官方或权威媒体点名这两个域名。** 泰国移民局 2026-03-30 的警告(见下)只给了整体
+  比例和费用区间,没有列具体域名。
+
+**关于原记录里的「涉案人」一条:已删除。** 那个说法的来源是 Quora 上一名匿名用户,称其为 "criminal"。
+未经权威来源证实的指控**不得**写入本仓库任何文件,更不得发布到 Quora/Tripadvisor。
+这类内容一旦发出,毁掉的是本站唯一的资产。参见 commit `0a0fe57` —— 上一次因站点改版而
+撤下不再成立的品牌滥用指控,是同一个判断标准。
+
+**可以引用的权威事实**(2026-08-09 核实,适用于所有 TDAC 相关 outreach):
+泰国移民局副局长兼发言人 Pol. Maj. Gen. Choengron Rimpadee 于 2026-03-30 表示,至少 10% 的
+外国入境者使用了非官方 TDAC 网站,这些站点收费 US$20–90,而官方 TDAC 免费。
+来源:[Bangkok Post](https://www.bangkokpost.com/thailand/general/3226524/immigration-warns-of-scam-digital-arrival-card-websites)、
+[Khaosod English](https://www.khaosodenglish.com/tourism/2026/03/29/10-of-foreign-arrivals-used-fake-tdac-sites-immigration-warns/)、
+[Thai Examiner](https://www.thaiexaminer.com/thai-news-foreigners/2026/03/30/immigration-bureau-warns-that-rip-off-entry-tdac-sites-stand-to-make-up-to-100-million-from-visitors/)。
+**说「有站点收费 $20–90」有据可查;说「某个具体域名是骗子」没有。**
 
 ### Indonesia(站点 e-CD 页面值得加 evidence 卡)
 - `exploreindonesiatoday.com`($65 USD)

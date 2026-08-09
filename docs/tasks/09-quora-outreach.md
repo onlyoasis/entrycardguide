@@ -2,6 +2,34 @@
 
 替代 Reddit 的问答型 outreach。Quora 对新账号宽松,排序看答案质量,你站点的"开源数据可核查"在这里是天然加分项。
 
+## 核验状态(2026-08-09)
+
+草稿写于 2026-05,本轮逐条复核:
+
+| 项 | 结论 |
+|---|---|
+| 8 个目标问题是否还在 | 抽查泰国 4 题,**都还在** |
+| 目标问题 1(TDAC 官网)的竞争 | **目前没有直接答案**,页面显示的全是相关问题的回答——第一个认真回答的人占位 |
+| 泰国答案草稿的事实 | **全部准确**,逐条对过 `data/official_urls/thailand.toml` 与新闻原文,详见下方核实清单 |
+| 前置阻塞(`docs/tasks/10` 的索引红警) | **已解除**,那条红警已被证伪,索引 156 页正常 |
+
+**泰国答案里可引用事实的核实清单:**
+
+- 官方 URL `https://tdac.immigration.go.th` —— 与 `thailand.toml` 一致,`last_verified` 2026-08-03
+- 机构名 Royal Thai Immigration Bureau —— 一致
+- TDAC 免费、约 8 分钟 —— 与 `[meta]` 的 `fee_en` / `time_needed_en` 一致
+- 发言人全名职务:**Pol. Maj. Gen. Choengron Rimpadee, deputy commissioner and bureau spokesperson**
+- 10% 的比例、US$20–90 的收费区间、2026-03-30 的日期 —— 三家媒体报道一致
+
+验证方式(如实记录,便于后续复核):Thai Examiner 那篇**读取了全文**,上述四项均出自其中;
+Bangkok Post 与 Khaosod English 是**搜索结果层面**确认标题与摘要一致,两站都有反爬,未读到正文。
+粘贴答案前请自己点开一次 Bangkok Post 链接确认可访问——它是三个来源里权威度最高的一个。
+
+**一条硬约束:** 答案里可以说「有非官方站点收费 $20–90」(有官方表态支撑),**不可以**点名某个具体域名说它是骗子——
+除非该域名已经进了 `data/official_urls/*.toml` 的 `[[scam_sites]]` 并带 evidence。
+本轮核验了 `tdac.agents.co.th` / `tdac.in.th`,结论是**不符合入库标准**(它们已明确声明非官方并标注 TDAC 免费),
+原调研里那条关于运营者个人的指控来自匿名论坛发言,已删除。详见 `10-backlink-recon.md`。
+
 ## 使用规则(必读)
 
 1. **节奏**:一天最多回 2-3 条,跨问题间隔 2-3 小时。一次性灌满会被反作弊降权。
@@ -25,6 +53,9 @@
 
 **为什么选**:意图最纯粹——提问者就是在搜"哪个是官方的"。回答价值最高,转化也最好。
 
+**2026-08-09 复核:这题目前没有直接答案。** 打开页面看到的全是相关问题的回答(如"泰国 90 天报到的官网")。
+先答这一题。
+
 **答案草稿:**
 
 ```
@@ -41,7 +72,12 @@ Two things make this URL trustworthy:
 
 The TDAC is free. It takes about 8 minutes. You can submit it any time within 3 days before arrival. There is no expedited or premium version, no matter what other sites claim.
 
-If a site asks you for $20–$90 to "process" the TDAC, it's a reseller, not the government. In late March 2026, Immigration Bureau spokesman Pol Maj Gen Choengron Rimpadee stated that at least 10% of foreign arrivals had used unofficial sites and overpaid (widely reported by Bangkok Post, Khaosod English, and Thai Examiner).
+If a site asks you for $20–$90 to "process" the TDAC, it's a reseller, not the government. On 30 March 2026, Pol. Maj. Gen. Choengron Rimpadee — deputy commissioner and spokesman for the Immigration Bureau — said at least 10% of foreign arrivals had gone through unofficial sites, which charge between US$20 and US$90 for a form that is free:
+
+https://www.bangkokpost.com/thailand/general/3226524/immigration-warns-of-scam-digital-arrival-card-websites
+https://www.khaosodenglish.com/tourism/2026/03/29/10-of-foreign-arrivals-used-fake-tdac-sites-immigration-warns/
+
+Worth knowing: not every third-party TDAC site is hiding what it is. Some state plainly that they aren't the government, link to the official URL, and charge for an optional submission service. That's a choice you can make with open eyes. The ones to walk away from are those that don't tell you the form is free, or that dress themselves up to look like the Immigration Bureau.
 
 For a field-by-field walkthrough that runs entirely in your browser (no data stored), there's a free guide here: https://entrycardguide.com/thailand/tdac/ — it lists the official URL at the top and names known scam domains with evidence at the bottom. The underlying data is in a public GitHub repo so you can audit any claim.
 ```
@@ -275,6 +311,48 @@ If you got tricked already: check your email for a confirmation FROM tdac.immigr
 
 A current list of known fake TDAC domains with DNS evidence and first-observed dates is here: https://entrycardguide.com/thailand/tdac/ (scroll to the scam domain section). The list is in a public GitHub repo so anyone can audit how it was built — we removed 13 dead entries in one cleanup commit because a short, real list beats a long stale one.
 ```
+
+---
+
+## 目标问题 9-11:2026-08-09 新发现(Quora 侧栏"相关问题")
+
+答问题 1 时,Quora 侧栏露出三个 09 原本没收录的高意图问题。**URL 未逐个确认**——
+Quora 的 slug 对含点号的标题处理不一致,请在 Quora 搜索框里按标题搜:
+
+| # | 问题标题 | 为什么值得答 |
+|---|---|---|
+| 9 | What is the correct website for Thailand TDAC? | 与问题 1 同意图,措辞不同,Quora 视作独立问题 |
+| 10 | **Should I pay tdac.agents.co.th for my Thailand TDAC?** | 提问者已经站在付费页面前犹豫,决策时刻,转化最高 |
+| 11 | Is tdac.immigration.go.th the official Thailand TDAC site? | 纯验证意图,一句话就能答准 |
+
+### 问题 10 的答案草稿(措辞需要格外小心)
+
+这题的价值在于给一个**公允**的答案。已核验:该站明确声明非官方、标注 TDAC 免费、链接到官方站。
+说它是骗子既不准确也有法律风险;含糊其辞又帮不到提问者。照下面写:
+
+```
+Disclosure: I help maintain entrycardguide.com, an open-source guide to free government arrival cards. Biased, but everything below is checkable in about a minute.
+
+Short answer: you don't have to pay anyone. The TDAC is free at the government site:
+
+https://tdac.immigration.go.th
+
+It takes roughly 8 minutes and gives you a QR code by email. There is no faster tier, no premium version, and no fee — the Immigration Bureau is explicit about this.
+
+To be fair to the site you asked about: it does say on its own pages that it isn't affiliated with the Thai government, it points to the official URL, and it states that the TDAC itself is free. What it sells is an optional submission service — someone types your details into the official form for you and answers questions if you get stuck. That's a legitimate thing to sell, and if you'd genuinely rather pay to have it handled, that's your call to make.
+
+What I'd want you to know before deciding:
+
+1. The form is short. Passport details, flight number, arrival date, first night's address. If you can book a flight online, you can do this.
+2. You hand over the same passport data either way — to the government directly, or to a third party first.
+3. Thai immigration said in March 2026 that around 10% of arrivals had used unofficial sites, paying US$20–90 for the free form. Whether that's worth it is a judgement call, not a scam in every case, but it's a lot of money for eight minutes of typing.
+
+Sources for the fee figures: https://www.bangkokpost.com/thailand/general/3226524/immigration-warns-of-scam-digital-arrival-card-websites
+
+If you want to just do it yourself, there's a free field-by-field walkthrough here: https://entrycardguide.com/thailand/how-to-fill/ — it runs entirely in your browser, stores nothing, and the underlying data is in a public GitHub repo.
+```
+
+**不要**在这条答案里说该域名是 fake/scam/fraud。它不符合本站的入库标准,理由见 `10-backlink-recon.md`。
 
 ---
 
