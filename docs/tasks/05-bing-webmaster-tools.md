@@ -1,6 +1,6 @@
 # Task 05 — Submit site to Bing Webmaster Tools
 
-**Status:** open
+**Status:** completed on 2026-07-23 — imported from GSC, both sitemaps submitted
 **Estimated time:** 10 minutes
 **Difficulty:** ⭐ (mostly clicking through dashboard)
 **Skills needed:** access to a Microsoft account, ability to log into the site owner's accounts
@@ -124,11 +124,30 @@ This task is done when:
 
 ## Notes
 
-(Person who completes this task: fill in below.)
+- Verification method used: **GSC import** (OAuth scope `webmasters.readonly`). No DNS record needed.
+  Only entrycardguide.com was imported; the other two sites on the same account were left alone.
+- Date submitted: **2026-07-23**
+- Initial sitemap status: `https://entrycardguide.com/sitemap.xml` (carries the en and zh child
+  sitemaps) — Known sitemaps 1, errors 0, warnings 0, state Processing.
+- Any issues encountered: the first authorization failed. Google's consent screen has the
+  permission checkbox unticked by default, so the callback came back with only `email/openid`
+  in `scope` and Bing reported "we didn't find any sites from GSC". Redoing the grant with
+  `webmasters.readonly` ticked fixed it.
 
-- Verification method used:
-- Date submitted:
-- Initial sitemap status (Bing reported X of Y URLs discovered):
-- Any issues encountered:
+## Outcome, measured 4 weeks later (2026-08-08)
 
-When you're done, update this file with your name and the merge date.
+The "What to watch for after submission" section above asked for a 4-week read. Result:
+
+| Source | Sessions (28d, 7/11–8/7) | vs previous period |
+|---|---:|---|
+| `cn.bing.com / referral` | 93 | +84.8% |
+| `bing / organic` | 45 | +209.1% |
+| — combined | **138** | **2.1x `google / organic` (66)** |
+
+Before this task, `bing / organic` had exactly 1 user. Bing is now the fastest-growing
+channel on the site and outperforms Google organic in absolute sessions.
+
+One expectation did not hold: BWT's AI Performance report showed 0 citations at onboarding,
+and ChatGPT was already sending 200+ users at the time — so ChatGPT is not reading Bing's
+index. Copilot, which does, went from 0 to 4 sessions. See
+`../reports/gsc-ga-follow-up-2026-08-08.md`.

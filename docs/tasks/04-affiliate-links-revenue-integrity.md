@@ -9,6 +9,8 @@
 
 **Current state:** SafetyWing is approved and live via `params.affiliate.safetywing_url`, rendered through `layouts/partials/affiliate-footer.html` with sponsored disclosure. Airalo/eSIM is still pending, so this task should not be treated as fully complete yet.
 
+**Measured 2026-08-08:** the `affiliate_click` event has never fired. GA4 recorded six event types over 28 days and 1,974 sessions; that is not one of them. The tracking chain was verified end to end — gtag.js loads, the CSP allows it, `data-analytics-event` renders on the link — so this is a real zero, not a measurement gap. Signing up Airalo will not by itself change it: readers arrive to check an official URL and leave in about 20 seconds. Treat what is left here as revenue-model research, not as "one more partner to onboard". See `../reports/gsc-ga-follow-up-2026-08-08.md`.
+
 Every article on entrycardguide.com claims "our only revenue is from travel insurance and eSIM affiliate links at the bottom of this page."
 
 **Those links don't exist yet.**

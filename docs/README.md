@@ -92,7 +92,7 @@ content/thailand/
 
 ## 当前任务清单
 
-下表里**已完成 ✅** 的任务是给后续贡献者参考用的（不要重做）。**待做 🔵** 是开放工单，你可以挑一个 PR。
+下表里**已完成 ✅** 的任务是给后续贡献者参考用的（不要重做）。**待做 🔵** 是开放工单，你可以挑一个 PR。**🟡 部分完成**和**⚪ 无执行记录**需要先找站长确认现状，别直接开工。
 
 | # | 任务 | 状态 | 估时 | 难度 |
 |---|---|---|---|---|
@@ -100,9 +100,12 @@ content/thailand/
 | 02 | 字段填写详解（10 篇）| ✅ 已完成 | — | — |
 | [03](./tasks/03-scam-site-screenshots.md) | 假站真实截图 | ✅ 已完成（1 个死站保留证据卡） | — | — |
 | [04](./tasks/04-affiliate-links-revenue-integrity.md) | 联盟链接 / 收入完整性 | 🟡 SafetyWing 已上线，Airalo 待申请 | — | — |
-| [05](./tasks/05-bing-webmaster-tools.md) | Bing Webmaster Tools 提交 | 🔵 待做 | 10 分钟 | ⭐ |
+| [05](./tasks/05-bing-webmaster-tools.md) | Bing Webmaster Tools 提交 | ✅ 已完成（2026-07-23）| — | — |
 | [06](./tasks/06-changelog-and-freshness.md) | 变更日志 + 新鲜度信号 | ✅ 已完成 | — | — |
 | [07](./tasks/07-about-methodology-section.md) | About 页方法论部分（信任叙事核心）| ✅ 已完成 | — | — |
+| [08](./tasks/08-show-hn-launch.md) | Show HN 发布 | ⚪ 无执行记录（草稿计划 2026-05-12）| — | — |
+| [09](./tasks/09-quora-outreach.md) | Quora 问答推广 | 🔵 待做（外链仍为 0，见 2026-08-08 报告）| 站长手动 | ⭐⭐ |
+| [10](./tasks/10-backlink-recon.md) | 外链推广调研 | 🟡 调研完成，待手动执行 | 30–60 分钟 | ⭐⭐ |
 
 ---
 
