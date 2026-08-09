@@ -2,6 +2,9 @@
 
 This recurring task keeps entrycardguide.com's content credible. Run it once a month. Estimated time: 30-45 minutes.
 
+For the traffic side of the review, pull GSC and GA4 first with `npm run fetch:search-data` —
+see `search-data-api.md` for the one-time credential setup.
+
 ## What to check
 
 For each country, in this order:

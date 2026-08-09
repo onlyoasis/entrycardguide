@@ -34,6 +34,9 @@ Thumbs.db
 .env.local
 .env.*.local
 
+# GSC/GA4 pulls from scripts/fetch-search-data.mjs
+data-exports/
+
 # Local agent tooling (.claude/worktrees holds full repo checkouts)
 .claude/
 .context/

@@ -28,6 +28,9 @@ npm install
 npm run dev       # 本地预览 http://localhost:1313
 npm run build:prod  # 生产构建
 npm run check:seo   # SEO 验证（CI 也跑这个）
+
+# 月度复盘取数（需先配置凭据，见 maintenance/search-data-api.md）
+npm run fetch:search-data
 ```
 
 ### 3. 现有内容的样板
