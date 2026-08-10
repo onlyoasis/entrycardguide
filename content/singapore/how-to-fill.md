@@ -3,7 +3,7 @@ title: "How to Fill the SGAC Form: Singapore Arrival Card (2026)"
 kicker: "Use the official ICA SGAC form at eservices.ica.gov.sg. This guide explains each Singapore Arrival Card field, format, and common error."
 description: "How to fill the SGAC form for Singapore: official ICA Arrival Card fields, passport, flight, address, health declaration, and common errors."
 date: 2026-04-26
-lastmod: 2026-08-03
+lastmod: 2026-08-10
 country: "singapore"
 weight: 20
 keywords: ["sgac how to fill", "singapore arrival card fields", "ica sgac help", "eservices.ica.gov.sg fields", "sgac health declaration"]
