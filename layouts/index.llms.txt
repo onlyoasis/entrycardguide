@@ -50,17 +50,6 @@ Field formats, character limits, date formats, and the mistakes that get a submi
 {{ range $countries -}}
 - [{{ if $isZh }}{{ .zh }}{{ else }}{{ .en }}{{ end }} · {{ .formCode }}]({{ (printf "/%s/how-to-fill/" .key) | absLangURL }})
 {{ end }}
-## {{ if $isZh }}中介与仿冒站证据{{ else }}Middleman and lookalike-site evidence{{ end }}
-
-{{ if $isZh -}}
-每页列出针对该国表单收费的中介站点，附 DNS 证据、首次发现时间，以及与官方站的对照。
-{{- else -}}
-Each page lists the commercial sites charging for that country's form, with DNS evidence, a first-observed date, and a side-by-side comparison against the official site.
-{{- end }}
-
-{{ range $countries -}}
-- [{{ if $isZh }}{{ .zh }}{{ else }}{{ .en }}{{ end }}]({{ (printf "/%s/is-ivisa-official/" .key) | absLangURL }})
-{{ end }}
 ## {{ if $isZh }}站点页面{{ else }}Site pages{{ end }}
 
 - [{{ if $isZh }}官方网址总目录{{ else }}Official URL directory{{ end }}]({{ "/official-links/" | absLangURL }}){{ if $isZh }}：全部国家的官方网址一览{{ else }}: every country's official URL on one page{{ end }}

@@ -80,6 +80,6 @@ A traveller NZeTA is valid for **2 years** and can cover multiple eligible journ
 
 Middlemen often combine a free NZTD with an NZeTA application, document review, or rush label. Prices recorded on July 14, 2026 included USD $99.99, $135, and $170 packages. Another service listed a USD $69 service fee separately from its stated government fee and IVL. Those service charges do not change the official NZTD price: **FREE**.
 
-One documented site, `newzealandvisaonline.com`, offered NZTD support for **USD $39** while acknowledging that the official declaration is free. Any site charging specifically for NZTD deserves a separate check before you enter passport or card details.
+One documented site offered NZTD support for **USD $39** while acknowledging that the official declaration is free. Any site charging specifically for NZTD deserves a separate check before you enter passport or card details.
 
 {{< validator country="new-zealand" >}}

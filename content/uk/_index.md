@@ -19,10 +19,6 @@ No. The official fee is **£20 per person**. See the price history, eligibility 
 Passport, name, birth date, email, home address, job, other nationalities, conviction history, and a parent or guardian contact when required.
 → [Field-by-field guide](/uk/how-to-fill/)
 
-### 3. Is iVisa the UK ETA official website?
-No. Compare the £20 Home Office fee with observed commercial prices starting at USD $100.99 or EUR 69.
-→ [Check UK ETA middlemen](/uk/is-ivisa-official/)
-
 ## The fast facts
 
 - **Official fee:** £20 for every applicant. The fee rose from £10 to £16 on April 9, 2025, then to £20 on April 8, 2026.

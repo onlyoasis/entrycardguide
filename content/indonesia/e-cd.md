@@ -6,7 +6,7 @@ date: 2026-04-26
 lastmod: 2026-06-17
 country: "indonesia"
 weight: 10
-keywords: ["indonesia e-cd", "indonesia customs declaration", "allindonesia.imigrasi.go.id", "bali customs form", "bali arrival form", "indonesia customs online", "is ivisa official indonesia"]
+keywords: ["indonesia e-cd", "indonesia customs declaration", "allindonesia.imigrasi.go.id", "bali customs form", "bali arrival form", "indonesia customs online"]
 faq:
   - q: "Is there a fee for Indonesia's e-CD?"
     a: "No. The All Indonesia / e-CD arrival declaration is free. The Indonesian government does not charge for it. The current official entry point is allindonesia.imigrasi.go.id and any declaration fee is from a middleman."
@@ -20,8 +20,8 @@ faq:
     a: "Within 3 days before arrival. Earlier than that, the official site rejects the submission."
   - q: "Do Indonesian citizens need to file the e-CD?"
     a: "Yes. The e-CD is required for everyone arriving in Indonesia — citizens, permanent residents, and foreign visitors alike. Bring a passport-style ID for Indonesian citizens (KTP)."
-  - q: "Is iVisa the official Indonesia customs site?"
-    a: "No. iVisa is a commercial middleman that charges fees on top of Indonesia's free e-CD and government e-VOA. It is not affiliated with the Indonesian government."
+  - q: "A site is charging me for the Indonesia e-CD. Is it official?"
+    a: "No. The e-CD is free at allindonesia.imigrasi.go.id. Commercial sites add their own fee on top of the free e-CD and the government e-VOA, and none of them are affiliated with the Indonesian government."
   - q: "I filled the e-CD but didn't get a confirmation email."
     a: "Check spam first. If still missing after 1 hour, refile. Duplicate submissions are harmless and the most recent applies."
 layout: country-form
@@ -64,17 +64,6 @@ No photo upload required.
 No payment required.
 
 If a site asks for either, you are not on the official site.
-
-## Known sites that are NOT the e-CD
-
-These sites all charge fees for what should be free. Some submit the real form, some don't.
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="indonesia" domain="ivisa.com" screenshot="/scams/ivisa-com-indonesia.png" >}}
-{{< scam-site country="indonesia" domain="indonesia-evoa.com" screenshot="/scams/indonesia-evoa-com.png" >}}
-</div>
-
-Screenshots captured April 2026. Archived snapshots available via [archive.org](https://web.archive.org/).
 
 ## How to tell any e-CD site is not the real one
 

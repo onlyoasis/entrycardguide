@@ -6,7 +6,7 @@ date: 2026-07-14
 lastmod: 2026-08-03
 country: "canada"
 weight: 10
-keywords: ["is eTA Canada free", "Canada eTA official site", "Canada eTA official website", "Canada eTA fee", "Canada eTA air travel", "is iVisa official Canada eTA"]
+keywords: ["is eTA Canada free", "Canada eTA official site", "Canada eTA official website", "Canada eTA fee", "Canada eTA air travel"]
 faq:
   - q: "Is eTA Canada free?"
     a: "No. Immigration, Refugees and Citizenship Canada charges CAD $7 through the official Canada.ca application."
@@ -68,7 +68,7 @@ Apply before booking or boarding your flight. IRCC says most approvals arrive wi
 
 ## Why search results show higher prices
 
-Commercial sites sell form review or submission help. Prices observed on July 14, 2026 included **USD $89.99 or more at iVisa** and a **USD $99 final price at canadavisas.net**, including a stated USD $93 service fee.
+Commercial sites sell form review or submission help. Prices observed on July 14, 2026 ranged from **USD $89.99** to a **USD $99 final price**, one of them itemising a USD $93 service fee.
 
 The official IRCC price is CAD $7. Paying more does not change the eTA validity, create a land-entry requirement, or improve the border decision.
 

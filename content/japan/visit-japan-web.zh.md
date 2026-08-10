@@ -6,7 +6,7 @@ date: 2026-06-11
 lastmod: 2026-08-03
 country: "japan"
 weight: 10
-keywords: ["Visit Japan Web", "Visit Japan Web 官方", "日本入境二维码", "iVisa 日本"]
+keywords: ["Visit Japan Web", "Visit Japan Web 官方", "日本入境二维码"]
 faq:
   - q: "Visit Japan Web 的官方来源是什么？"
     a: "日本数字厅服务页 services.digital.go.jp/en/visit-japan-web/ 是稳定官方来源。"

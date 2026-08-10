@@ -1,7 +1,7 @@
 ---
 title: "Thailand"
 kicker: "Everything you need to know about the Thailand Digital Arrival Card (TDAC), without paying a middleman."
-description: "Free, independent guides to Thailand's TDAC. Official URL, every field explained, scam-site warnings."
+description: "Free, independent guides to Thailand's TDAC. Official URL, every field explained."
 lastmod: 2026-08-03
 ---
 
@@ -21,10 +21,6 @@ Who must file, when, what it actually is, and how to tell the official site from
 Field-by-field walkthrough, in the exact order the form asks. Covers every error message the official site throws and what actually caused it. About 8 minutes end-to-end.
 → [Field-by-field guide](/thailand/how-to-fill/)
 
-### 3. Is iVisa (or any other site) the official TDAC?
-Short answer: no. Longer answer, with the sites that keep showing up in Google's top results and what each one actually does with your money.
-→ [Scam site gallery](/thailand/is-ivisa-official/)
-
 ## The fast facts
 
 - **Official URL:** `tdac.immigration.go.th` — nothing else ends in `.go.th`, and that suffix is restricted to Thai government entities.
@@ -38,4 +34,4 @@ Short answer: no. Longer answer, with the sites that keep showing up in Google's
 
 We are not the Royal Thai Immigration Bureau. We are not a travel agency. We do not file your TDAC for you, and we would not take your money if you asked us to.
 
-Our current affiliate revenue comes from clearly disclosed travel insurance links in eligible guides. We have never taken money from iVisa or any visa middleman, and we will not. That is the entire business model. Read more on our [about page](/about/).
+Our current affiliate revenue comes from clearly disclosed travel insurance links in eligible guides. We have never taken money from a visa middleman, and we will not. That is the entire business model. Read more on our [about page](/about/).

@@ -1,7 +1,7 @@
 ---
 title: "菲律宾 eTravel 官方网站、免费填写和防中介指南"
 kicker: "菲律宾 eTravel 官方链接、免费填写方式，以及如何避开付费仿冒站。"
-description: "菲律宾 eTravel 中文指南：官方网址 etravel.gov.ph、免费申报、字段填写和 iVisa 是否官方。"
+description: "菲律宾 eTravel 中文指南：官方网址 etravel.gov.ph、免费申报、每个字段怎么填。"
 lastmod: 2026-08-03
 ---
 
@@ -18,10 +18,6 @@ lastmod: 2026-08-03
 ### 2. 每个字段怎么填
 护照、航班、抵达日期、联系方式，以及最常见的二维码邮件错误。
 → [字段逐项指南](/zh/philippines/how-to-fill/)
-
-### 3. iVisa 是官方吗？
-不是。这里解释 eTravel、签证和付费代填服务的区别。
-→ [iVisa 官方性判断](/zh/philippines/is-ivisa-official/)
 
 ## 速记要点
 

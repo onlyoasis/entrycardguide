@@ -19,10 +19,6 @@ Who uses it, when to file, and how to tell the official `.gov.ph` portal from co
 Passport, flight, arrival date, contact details, and the common QR email mistakes.
 → [Field-by-field guide](/philippines/how-to-fill/)
 
-### 3. Is iVisa official?
-No. This page explains the difference between eTravel, visas, and paid filing services.
-→ [iVisa official-site check](/philippines/is-ivisa-official/)
-
 ## The fast facts
 
 - **Official URL:** `etravel.gov.ph`.

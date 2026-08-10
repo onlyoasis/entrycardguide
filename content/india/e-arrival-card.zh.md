@@ -66,7 +66,7 @@ e-Visa 决定你能否持该旅行许可前往印度。e-Arrival Card 则申报�
 
 印度官方签证系统是 `indianvisaonline.gov.in`。从右往左看，结尾必须完整写成 **`.gov.in`**。域名里出现 india、visa、government、online 或 arrival，不代表它属于政府。
 
-`earrivalcardindia.com` 和 `indiaearrivalcardgo.com` 看起来像相关入口，但都不是 `.gov.in`。2026 年 7 月 14 日，它们分别对免费入境卡标出 15 英镑和 59.99 美元服务费。
+域名里堆满 india、arrival、card 这些词，也可能是商业站。2026 年 7 月 14 日记录到，这类站点对免费入境卡标出 15 英镑和 59.99 美元服务费。
 
 e-Visa 中介套餐也会明显加价。一个已记录站点把 30 天、1 年和 5 年套餐分别卖到 99、149 和 399 美元。这些是打包后的总价，不是常见政府价目。
 

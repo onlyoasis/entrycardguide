@@ -19,10 +19,6 @@ Yes. See the official NZTD website, the 24-hour submission window, and how the f
 Passport, travel, contact, immigration status, restricted goods, and biosecurity declarations.
 → [Field-by-field NZTD guide](/new-zealand/how-to-fill/)
 
-### 3. Is iVisa official?
-No. Commercial sites advertise New Zealand document packages from USD $99.99 to $170. One site charged USD $39 for help with the free NZTD.
-→ [Check NZTD and NZeTA middlemen](/new-zealand/is-ivisa-official/)
-
 ## The fast facts
 
 - **NZTD fee:** free. New Zealand Customs does not charge to complete or submit it.

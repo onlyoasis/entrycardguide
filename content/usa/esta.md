@@ -6,7 +6,7 @@ date: 2026-07-14
 lastmod: 2026-08-03
 country: "usa"
 weight: 10
-keywords: ["is ESTA free", "ESTA official website", "ESTA official site", "ESTA fee", "esta.cbp.dhs.gov", "USA travel authorization", "is iVisa official ESTA"]
+keywords: ["is ESTA free", "ESTA official website", "ESTA official site", "ESTA fee", "esta.cbp.dhs.gov", "USA travel authorization"]
 faq:
   - q: "Is ESTA free?"
     a: "No. CBP charges a $4.00 processing fee. If the application is approved, it charges another $36.27, for a total of USD $40.27. A refused application is charged only $4.00."

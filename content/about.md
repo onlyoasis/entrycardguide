@@ -15,7 +15,7 @@ And every one of them has a small ecosystem of paid middlemen sitting in front o
 
 In March 2026, the Royal Thai Immigration Bureau publicly stated that **about 10% of foreign arrivals to Thailand had paid a non-official site to file their TDAC**. That is the number that started this project.
 
-We could not figure out why no one had built the obvious thing: a free, independent, plain-English guide to each country's official form, with screenshots of the scam sites next to a giant link to the real one. So we built it.
+We could not figure out why no one had built the obvious thing: a free, independent, plain-English guide to each country's official form, with a giant link to the real one at the top. So we built it.
 
 ## What we are
 
@@ -30,7 +30,7 @@ We could not figure out why no one had built the obvious thing: a free, independ
 - Not the Royal Thai Immigration Bureau, INM, DGM, or Jabatan Imigresen Malaysia.
 - Not a travel agency.
 - Not a visa middleman.
-- Not affiliated with iVisa, VisaHQ, Sherpa, or any visa processing service.
+- Not affiliated with any visa processing service.
 - Not in the business of filing forms for you. We will not take your passport, your money, or your data.
 
 <a id="methodology"></a>
@@ -43,11 +43,9 @@ Do not trust us because the site looks serious. Check the artifacts.
 
 2. **Field rules live in JSON you can inspect.** The validator rules are stored in [`data/rules/{country}.json`](https://github.com/onlyoasis/entrycardguide/tree/main/data/rules). Those files list max lengths, regex patterns, required fields, and error text copied from the official forms. The browser widget reads those specs; it does not invent advice. If a government form changes, the JSON is the thing that has to change.
 
-3. **Scam warnings are tied to DNS and evidence.** Each `[[scam_sites]]` entry in the TOML files has a domain, an observed date, and a short evidence note. We only keep domains that resolve when audited. In commit [`6c841f3`](https://github.com/onlyoasis/entrycardguide/commit/6c841f3), 13 dead domains were removed after a DNS audit. Fewer real warnings are better than a bigger list full of ghosts.
+3. **The validator runs in your browser.** Open DevTools, go to Network, type into a validator, and watch what happens: no outbound request is sent with your passport data. The rules are embedded in the page and checked locally by [`assets/js/validator.ts`](https://github.com/onlyoasis/entrycardguide/blob/main/assets/js/validator.ts). We do not log keystrokes, store drafts, or phone home with partial submissions.
 
-4. **The validator runs in your browser.** Open DevTools, go to Network, type into a validator, and watch what happens: no outbound request is sent with your passport data. The rules are embedded in the page and checked locally by [`assets/js/validator.ts`](https://github.com/onlyoasis/entrycardguide/blob/main/assets/js/validator.ts). We do not log keystrokes, store drafts, or phone home with partial submissions.
-
-5. **The whole site is open source.** The live pages map to Markdown files in [`content/`](https://github.com/onlyoasis/entrycardguide/tree/main/content). Data changes map to commits. Two licenses cover it: [MIT](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE) for the code, [CC BY-SA 4.0](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE-CC-BY-SA-4.0) for the data and the guides. Corrections happen in public through [issues](https://github.com/onlyoasis/entrycardguide/issues), pull requests, and the git history. If you want the longer walkthrough, read [how to verify everything on this site](/trust/).
+4. **The whole site is open source.** The live pages map to Markdown files in [`content/`](https://github.com/onlyoasis/entrycardguide/tree/main/content). Data changes map to commits. Two licenses cover it: [MIT](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE) for the code, [CC BY-SA 4.0](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE-CC-BY-SA-4.0) for the data and the guides. Corrections happen in public through [issues](https://github.com/onlyoasis/entrycardguide/issues), pull requests, and the git history. If you want the longer walkthrough, read [how to verify everything on this site](/trust/).
 
 ## How we make money
 
@@ -59,7 +57,7 @@ We may add eSIM links later, but we will only show them when the partner link is
 
 That's it. That is the entire business model.
 
-We have **never** taken money from iVisa or any visa middleman. We will not, ever. Not because we are noble, but because doing so would invalidate the entire premise of this site, and we like the premise.
+We have **never** taken money from a visa middleman. We will not, ever. Not because we are noble, but because doing so would invalidate the entire premise of this site, and we like the premise.
 
 ## What we promise
 

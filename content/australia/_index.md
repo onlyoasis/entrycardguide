@@ -23,12 +23,6 @@ Download the official App, read the passport chip with NFC, take a live face pho
 
 → [Follow the six App steps](/australia/how-to-fill/)
 
-### 3. Is iVisa the official Australia ETA site?
-
-No. Compare the official routes with observed commercial charges from USD $89.99 to $200 for help with the free eVisitor 651.
-
-→ [Check Australia ETA and eVisitor middlemen](/australia/is-ivisa-official/)
-
 ## ETA 601 or eVisitor 651?
 
 - **ETA 601:** for an ETA-eligible passport. Apply only in AustralianETA. There is no Visa Application Charge, but the App service charge is AUD $20.

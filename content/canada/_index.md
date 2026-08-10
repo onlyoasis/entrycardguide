@@ -19,10 +19,6 @@ No. The official fee is **CAD $7**. See who needs one, how long it lasts, and wh
 Passport, names, birth details, marital status, occupation, email, home address, travel date, and background questions.
 → [Field-by-field guide](/canada/how-to-fill/)
 
-### 3. Is iVisa the Canada eTA official site?
-No. Compare the CAD $7 IRCC fee with observed commercial prices starting at USD $89.99 or reaching USD $99.
-→ [Check Canada eTA middlemen](/canada/is-ivisa-official/)
-
 ## The route rule middlemen often omit
 
 An eTA is normally needed only when an eligible traveler **flies to Canada or connects through a Canadian airport**. You do not need an eTA when arriving by car, bus, train, or cruise ship. Canada notes a narrow sea exception for certain travelers arriving from Saint Pierre and Miquelon other than on a cruise ship; check the official eligibility page if that is your route.

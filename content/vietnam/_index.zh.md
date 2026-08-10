@@ -1,7 +1,7 @@
 ---
 title: "越南 E-Visa 官方网站、费用和防中介加价指南"
 kicker: "关于越南 E-Visa 你需要知道的一切，不必给中介付 4 倍加价。"
-description: "越南 E-Visa 中文指南：官方网址 evisa.gov.vn、真实 $25 美元政府费用、怎么填、iVisa 是否官方和中介加价。"
+description: "越南 E-Visa 中文指南：官方网址 evisa.gov.vn、真实 $25 美元政府费用、每个字段怎么填。"
 lastmod: 2026-08-03
 ---
 
@@ -20,10 +20,6 @@ lastmod: 2026-08-03
 ### 2. 每个字段怎么填
 按越南官方 E-Visa 表单顺序解释照片、护照、入境口岸、地址和付款字段。
 → [字段逐项指南](/zh/vietnam/how-to-fill/)
-
-### 3. iVisa 是越南 E-Visa 官方吗？
-不是。这里解释官方 $25 美元费用、iVisa 常见加价，以及付过钱后怎么判断签证是否有效。
-→ [iVisa 官方性判断](/zh/vietnam/is-ivisa-official/)
 
 ## 速记要点
 

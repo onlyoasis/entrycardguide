@@ -32,17 +32,7 @@ To check one rule yourself, open the official form in Chrome, inspect the field,
 
 When the official site changes, this is the file that should drift. That is why each rules file has a verification date and why the validator links back to its source.
 
-## Path 3: Verify the scam-site list
-
-Scam warnings are stored in the `[[scam_sites]]` arrays inside the same TOML files as the official URLs. Each entry has a domain, the first date we observed it, and an evidence note.
-
-The policy is simple: a domain must resolve via DNS when we list it. It also needs evidence that it charges for a free form, imitates an official flow, or appears in a public warning or news report. If a domain stops resolving, we remove it instead of keeping a stale warning.
-
-That happened in commit [`6c841f3`](https://github.com/onlyoasis/entrycardguide/commit/6c841f3), which removed 13 dead domains after a DNS audit. A shorter list with live domains is more useful than a dramatic list no traveler can verify.
-
-To repeat the check, run `dig example.com` or `nslookup example.com`, then compare the result with the evidence in the TOML.
-
-## Path 4: Verify the validator is local
+## Path 3: Verify the validator is local
 
 Open a guide with a validator, then open DevTools and switch to the Network tab. Type sample data into the validator. No request should leave the page with the values you typed.
 
@@ -50,7 +40,7 @@ The validator is implemented in [`assets/js/validator.ts`](https://github.com/on
 
 There is no account system, no database, and no endpoint that receives draft form data. If a future change adds one, it should be visible in the source and in the network panel.
 
-## Path 5: Verify the whole site
+## Path 4: Verify the whole site
 
 The repository at [`github.com/onlyoasis/entrycardguide`](https://github.com/onlyoasis/entrycardguide) is the site. Markdown pages live in [`content/`](https://github.com/onlyoasis/entrycardguide/tree/main/content), structured data lives in [`data/`](https://github.com/onlyoasis/entrycardguide/tree/main/data), templates live in [`layouts/`](https://github.com/onlyoasis/entrycardguide/tree/main/layouts), and browser code lives in [`assets/js/`](https://github.com/onlyoasis/entrycardguide/tree/main/assets/js).
 

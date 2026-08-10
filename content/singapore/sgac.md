@@ -6,7 +6,7 @@ date: 2026-04-26
 lastmod: 2026-08-03
 country: "singapore"
 weight: 10
-keywords: ["singapore arrival card", "SGAC", "singapore SGAC official", "ica singapore arrival card", "is ivisa official singapore", "singapore immigration form"]
+keywords: ["singapore arrival card", "SGAC", "singapore SGAC official", "ica singapore arrival card", "singapore immigration form"]
 faq:
   - q: "Is there a fee for Singapore's SGAC?"
     a: "No. Singapore's Immigration & Checkpoints Authority (ICA) does not charge for the SGAC. The official site is eservices.ica.gov.sg/sgarrivalcard/ and any fee is from a middleman."
@@ -20,8 +20,8 @@ faq:
     a: "Not required. ICA looks you up by passport. But keeping the confirmation email open on your phone is a zero-cost safety net if their system has issues."
   - q: "I'm transiting through Changi Airport. Do I need the SGAC?"
     a: "Only if you clear immigration (leave the transit area). Pure airside transit travelers do not need the SGAC. If you exit the transit area, you do."
-  - q: "Is iVisa the official SGAC site?"
-    a: "No. iVisa is a commercial middleman charging fees for Singapore's free SGAC. It is not affiliated with ICA."
+  - q: "A site is charging me for the SGAC. Is it official?"
+    a: "No. The SGAC is free at eservices.ica.gov.sg. Any site charging a fee is a commercial service, not ICA."
   - q: "I filled the SGAC but didn't get a confirmation email."
     a: "Check spam first. If still missing after 1 hour, refile. Duplicate submissions are harmless and the most recent one applies."
 layout: country-form
@@ -71,16 +71,6 @@ No photo upload required.
 No payment required.
 
 If a site asks for either, you are not on the official site.
-
-## Known sites that are NOT the SGAC
-
-These sites all charge fees for what should be free. Some submit the real form, some don't.
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="singapore" domain="ivisa.com" screenshot="/scams/ivisa-com-singapore.png" >}}
-</div>
-
-Screenshots captured April 2026. Archived snapshots available via [archive.org](https://web.archive.org/).
 
 ## How to tell any SGAC site is not the real one
 

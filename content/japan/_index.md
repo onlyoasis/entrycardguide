@@ -19,10 +19,6 @@ What it does, what it does not do, and why the `.go.jp` source matters.
 Passport, flight, arrival date, account email, and QR fallback notes.
 → [Field-by-field guide](/japan/how-to-fill/)
 
-### 3. Is iVisa official?
-No. Visa services and Visit Japan Web are separate.
-→ [iVisa official-site check](/japan/is-ivisa-official/)
-
 ## The fast facts
 
 - **Official source:** Digital Agency service page under `.go.jp`.

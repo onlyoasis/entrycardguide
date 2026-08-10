@@ -1,7 +1,7 @@
 ---
 title: "马来西亚 MDAC 官方网站、免费填写和防中介指南"
 kicker: "关于马来西亚数字入境卡（MDAC）你需要知道的一切，不必经手任何中介。"
-description: "马来西亚 MDAC 中文指南：官方网址 imigresen-online.imi.gov.my、免费填写、怎么填、iVisa 是否官方和假站警示。"
+description: "马来西亚 MDAC 中文指南：官方网址 imigresen-online.imi.gov.my、免费填写、每个字段怎么填。"
 lastmod: 2026-08-03
 ---
 
@@ -18,10 +18,6 @@ lastmod: 2026-08-03
 ### 2. 每个字段怎么填
 逐字段讲解，常见错误和真实原因。
 → [字段逐项指南](/zh/malaysia/how-to-fill/)
-
-### 3. iVisa（或其他网站）是官方 MDAC 吗？
-不是。这里讲清每个仿冒站点拿你的钱做什么。
-→ [假站图鉴](/zh/malaysia/is-ivisa-official/)
 
 ## 速记要点
 

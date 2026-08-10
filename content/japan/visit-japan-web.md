@@ -6,7 +6,7 @@ date: 2026-06-11
 lastmod: 2026-08-03
 country: "japan"
 weight: 10
-keywords: ["visit japan web", "visit japan web official", "vjw digital go jp", "japan arrival QR", "is ivisa official japan"]
+keywords: ["visit japan web", "visit japan web official", "vjw digital go jp", "japan arrival QR"]
 faq:
   - q: "What is the official Visit Japan Web source?"
     a: "The Digital Agency service page at services.digital.go.jp/en/visit-japan-web/ is the stable official source."

@@ -1,7 +1,7 @@
 ---
 title: "印尼 All Indonesia 入境申报、e-CD 海关记录和巴厘岛入境指南"
 kicker: "关于印尼 All Indonesia 入境申报和 e-CD 海关记录你需要知道的一切，不必经手任何中介。"
-description: "印尼 All Indonesia 中文指南：官方网址 allindonesia.imigrasi.go.id、免费入境申报、巴厘岛/雅加达入境怎么填、iVisa 是否官方。"
+description: "印尼 All Indonesia 中文指南：官方网址 allindonesia.imigrasi.go.id、免费入境申报、巴厘岛/雅加达入境怎么填。"
 lastmod: 2026-06-17
 ---
 
@@ -20,10 +20,6 @@ lastmod: 2026-06-17
 ### 2. 每个字段怎么填
 按印尼官方 e-CD 海关申报表顺序解释护照、航班、行李、现金和海关问题。
 → [字段逐项指南](/zh/indonesia/how-to-fill/)
-
-### 3. iVisa 是印尼海关或落地签官方吗？
-不是。这里解释免费 e-CD、付费 e-VOA、iVisa 加价，以及你到底买到了什么。
-→ [iVisa 官方性判断](/zh/indonesia/is-ivisa-official/)
 
 ## 速记要点
 

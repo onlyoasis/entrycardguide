@@ -6,7 +6,7 @@ date: 2026-06-11
 lastmod: 2026-08-03
 country: "philippines"
 weight: 10
-keywords: ["philippines etravel", "etravel.gov.ph", "philippines arrival card", "philippines travel declaration", "is ivisa official philippines"]
+keywords: ["philippines etravel", "etravel.gov.ph", "philippines arrival card", "philippines travel declaration"]
 faq:
   - q: "What is the official Philippines eTravel website?"
     a: "etravel.gov.ph. The .gov.ph suffix is reserved for Philippine government services."

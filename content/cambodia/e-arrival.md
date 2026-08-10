@@ -6,7 +6,7 @@ date: 2026-06-11
 lastmod: 2026-08-03
 country: "cambodia"
 weight: 10
-keywords: ["cambodia e-arrival", "arrival.gov.kh", "cambodia arrival card", "cambodia entry form", "is ivisa official cambodia"]
+keywords: ["cambodia e-arrival", "arrival.gov.kh", "cambodia arrival card", "cambodia entry form"]
 faq:
   - q: "What is the official Cambodia e-Arrival website?"
     a: "arrival.gov.kh. The .gov.kh suffix is reserved for Cambodian government services."

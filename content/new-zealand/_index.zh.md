@@ -1,7 +1,7 @@
 ---
 title: "新西兰入境卡官网指南：NZTD 免费，NZeTA 另算"
 kicker: "所有入境新西兰的人都要填免费的 NZTD。NZeTA 是另一项旅行授权。"
-description: "新西兰入境卡中文指南：NZTD 官方网站、免费规则、NZeTA 多少钱和适用人群、18 个字段及中介加价证据。"
+description: "新西兰入境卡中文指南：NZTD 官方网站、免费规则、NZeTA 多少钱和适用人群、18 个字段及常见加价区间。"
 lastmod: 2026-08-03
 ---
 
@@ -18,10 +18,6 @@ lastmod: 2026-08-03
 ### 2. 18 个字段怎么填
 按护照、行程、联系方式、入境身份、限制品和生物安全申报逐项核对。
 → [查看 NZTD 字段指南](/zh/new-zealand/how-to-fill/)
-
-### 3. iVisa 是官网吗？
-不是。商业站公开销售 99.99 至 170 美元的新西兰旅行文件套餐。还有一家对本来免费的 NZTD 代填服务收 39 美元。
-→ [查看 NZTD 与 NZeTA 中介核查](/zh/new-zealand/is-ivisa-official/)
 
 ## 先记住这 6 点
 

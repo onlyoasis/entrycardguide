@@ -6,7 +6,7 @@ date: 2026-04-24
 lastmod: 2026-04-26
 country: "dominican"
 weight: 10
-keywords: ["dominican republic e-ticket", "DR e-ticket", "dominican e-ticket official", "punta cana arrival form", "is ivisa official dominican republic", "eticket.migracion.gob.do"]
+keywords: ["dominican republic e-ticket", "DR e-ticket", "dominican e-ticket official", "punta cana arrival form", "eticket.migracion.gob.do"]
 faq:
   - q: "Is there a fee for the Dominican Republic E-Ticket?"
     a: "No. The DGM does not charge for the E-Ticket. The official site is eticket.migracion.gob.do and it is always free. Any fee you see is from a middleman."
@@ -18,8 +18,8 @@ faq:
     a: "Yes. The E-Ticket supports group submissions. One adult fills the form and adds each family member as an additional traveler. Everyone travels under one QR code. Keep it on the lead traveler's phone."
   - q: "When should I file the E-Ticket?"
     a: "Within 72 hours of arrival. The DGM recommends 24 to 48 hours before arrival. Earlier than the 72-hour window is allowed but flight details may not be final yet."
-  - q: "Is iVisa the official DR E-Ticket site?"
-    a: "No. iVisa is a commercial middleman charging fees for the free DR E-Ticket. It is not affiliated with the Dirección General de Migración."
+  - q: "A site is charging me for the DR E-Ticket. Is it official?"
+    a: "No. The E-Ticket is free at the official DGM site. Any site charging a fee is a commercial service, not the Dirección General de Migración."
 layout: country-form
 ---
 
@@ -45,7 +45,7 @@ The Dirección General de Migración (DGM) has issued public statements that no 
 
 Check the address bar. The official site is <mark>eticket.migracion.gob.do</mark> and nothing else.
 
-Sites like `eticket-dominican.com` and any other lookalike using `.com`, `.org`, or `.net` are commercial middlemen. Anyone can register those suffixes. Only Dominican government entities can register `.gob.do`.
+Any lookalike on `.com`, `.org`, or `.net` is a commercial service, not the DGM. Anyone can register those suffixes. Only Dominican government entities can register `.gob.do`.
 
 {{< validator country="dominican" >}}
 
@@ -60,17 +60,6 @@ None of them require payment.
 If a site asks for either, you are not on the official site.
 
 For a field-by-field walkthrough, read our [how to fill the E-Ticket guide](/dominican/how-to-fill/).
-
-## Known sites that are NOT the E-Ticket
-
-These sites charge for a free form. Some submit a real E-Ticket on your behalf. Some do not.
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="dominican" domain="eticket-dominican.com" screenshot="/scams/eticket-dominican-com.png" >}}
-{{< scam-site country="dominican" domain="ivisa.com" screenshot="/scams/ivisa-com-dominican.png" >}}
-</div>
-
-Screenshots captured April 2026. Archived on [Wayback Machine](https://web.archive.org/).
 
 ## Frequently asked
 

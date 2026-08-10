@@ -6,7 +6,7 @@ date: 2026-04-26
 lastmod: 2026-06-17
 country: "indonesia"
 weight: 10
-keywords: ["印尼海关申报", "印尼 e-CD", "All Indonesia", "巴厘岛海关表", "印尼入境申报", "印尼海关在线", "iVisa 印尼"]
+keywords: ["印尼海关申报", "印尼 e-CD", "All Indonesia", "巴厘岛海关表", "印尼入境申报", "印尼海关在线"]
 faq:
   - q: "印尼 e-CD 要收费吗？"
     a: "不收。All Indonesia / e-CD 入境申报是免费的。印尼政府不为它收费。当前官方入口是 allindonesia.imigrasi.go.id，任何申报费都来自中介。"
@@ -20,8 +20,8 @@ faq:
     a: "抵达前 3 天内。再早提交，官方站会拒绝。"
   - q: "印尼公民也要填 e-CD 吗？"
     a: "要。e-CD 适用于所有入境印尼的人 —— 公民、永久居民、外国旅客。印尼公民带身份证（KTP）登记。"
-  - q: "iVisa 是印尼海关官方网站吗？"
-    a: "不是。iVisa 是商业中介，对印尼免费的 e-CD 和政府 e-VOA 都加价收费。它与印尼政府没有任何关联。"
+  - q: "有网站要收我印尼 e-CD 的钱，它是官方吗？"
+    a: "不是。e-CD 在 allindonesia.imigrasi.go.id 上是免费的。商业站点在免费的 e-CD 和政府 e-VOA 之上另收服务费，都与印尼政府没有关联。"
   - q: "我填了 e-CD 但没收到确认邮件。"
     a: "先看垃圾邮件箱。1 小时后仍然没有就重新提交。重复提交无害，最近一份为准。"
 layout: country-form
@@ -64,17 +64,6 @@ e-CD 大约 9 个字段，分布在 3 部分：旅客身份、行程信息、海
 不需要付款。
 
 如果一个站点要你做这两件事中的任何一件，你就不在官方站点上。
-
-## 已知**不是** e-CD 的网站
-
-下面这些站点都对免费的 e-CD 收费。其中一些代你提交了真表，另一些没有。
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="indonesia" domain="ivisa.com" screenshot="/scams/ivisa-com-indonesia.png" >}}
-{{< scam-site country="indonesia" domain="indonesia-evoa.com" screenshot="/scams/indonesia-evoa-com.png" >}}
-</div>
-
-截图于 2026 年 4 月。存档可在 [archive.org](https://web.archive.org/) 查询。
 
 ## 如何分辨任何 e-CD 站点不是真站
 

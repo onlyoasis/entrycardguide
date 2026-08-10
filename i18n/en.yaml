@@ -14,11 +14,6 @@ last_verified_label: "Last verified"
 archived_snapshot_label: "Archived snapshot"
 
 # Scam-site card
-not_official_stamp: "Not Official"
-scam_card_aria_prefix: "Card for"
-scam_card_aria_suffix: "marked NOT OFFICIAL"
-evidence_label: "Evidence"
-first_observed_label: "First observed"
 
 # Validator
 validator_eyebrow: "Tool · Pre-check your fields"
@@ -56,7 +51,7 @@ footer_built_with: "Built with Hugo"
 footer_last_deploy: "Last deploy"
 footer_local_preview: "Local preview"
 footer_view_source: "View source on GitHub"
-footer_money_disclosure: "We make money only from clearly disclosed travel affiliate links on our articles. We do not take money from iVisa, any visa service, or credit card companies."
+footer_money_disclosure: "We make money only from clearly disclosed travel affiliate links on our articles. We do not take money from any visa service or credit card company."
 footer_full_disclosure: "Full disclosure"
 footer_popular_countries: "Popular countries"
 
@@ -87,7 +82,7 @@ rail_money_from: "We make money from"
 rail_money_explainer: "Clearly disclosed travel affiliate links at the bottom of this article."
 rail_full_disclosure: "Full disclosure"
 rail_we_dont_take: "We don't take"
-rail_we_dont_take_value: "iVisa · any visa service · credit card ads"
+rail_we_dont_take_value: "any visa service · credit card ads"
 rail_related: "Related"
 
 # Directory / share
@@ -98,7 +93,6 @@ directory_fee_free: "Free government form"
 directory_last_verified: "Last verified"
 directory_read_guide: "Read guide"
 directory_how_to_fill: "How to fill"
-directory_ivisa_check: "Is iVisa official?"
 directory_archive: "Archived snapshot"
 share_source_eyebrow: "Cite or share"
 share_source_heading: "Share this source"

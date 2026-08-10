@@ -6,7 +6,7 @@ date: 2026-04-24
 lastmod: 2026-08-03
 country: "malaysia"
 weight: 10
-keywords: ["malaysia digital arrival card", "MDAC", "malaysia MDAC official", "imigresen online MDAC", "is ivisa official malaysia", "malaysia immigration form"]
+keywords: ["malaysia digital arrival card", "MDAC", "malaysia MDAC official", "imigresen online MDAC", "malaysia immigration form"]
 faq:
   - q: "Is there a fee for the Malaysia MDAC?"
     a: "No. The Malaysian Immigration Department does not charge for the MDAC. The official site is imigresen-online.imi.gov.my/mdac/main and it is always free."
@@ -20,8 +20,8 @@ faq:
     a: "Within 3 days before arrival. Earlier submissions are rejected by the official site."
   - q: "Do I need to show the MDAC confirmation at immigration?"
     a: "Not strictly required. Officers look you up by passport. But keeping the confirmation email open on your phone is a zero-cost safety net if their system has issues."
-  - q: "Is iVisa the official MDAC site?"
-    a: "No. iVisa is a commercial middleman charging fees for the free MDAC. It is not affiliated with Jabatan Imigresen Malaysia."
+  - q: "A site is charging me for the MDAC. Is it official?"
+    a: "No. The MDAC is free at imigresen-online.imi.gov.my. Any site charging a fee is a commercial service, not Jabatan Imigresen Malaysia."
 layout: country-form
 ---
 
@@ -68,7 +68,7 @@ The MDAC is newer than the other cards in this guide (launched January 2024), an
 
 Check the address bar. The official site is <mark>imigresen-online.imi.gov.my/mdac/main</mark> and nothing else.
 
-Sites like `malaysia-mdac.com` and any other domain on `.com`, `.org`, or `.net` are commercial middlemen. Those are open TLDs. `.gov.my` is restricted to the Malaysian government.
+Any domain on `.com`, `.org`, or `.net` is a commercial service, not the Immigration Department. Those are open TLDs. `.gov.my` is restricted to the Malaysian government.
 
 {{< validator country="malaysia" >}}
 
@@ -83,15 +83,6 @@ None of them require payment.
 If a site asks for either, you are not on the official site.
 
 For a field-by-field walkthrough, read our [how to fill the MDAC guide](/malaysia/how-to-fill/).
-
-## Known sites that are NOT the MDAC
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="malaysia" domain="malaysia-mdac.com" screenshot="/scams/malaysia-mdac-com.png" >}}
-{{< scam-site country="malaysia" domain="ivisa.com" screenshot="/scams/ivisa-com-malaysia.png" >}}
-</div>
-
-Screenshots captured April 2026. Archived on [Wayback Machine](https://web.archive.org/).
 
 ## Frequently asked
 

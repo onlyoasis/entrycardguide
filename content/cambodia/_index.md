@@ -19,10 +19,6 @@ What the `.gov.kh` site does, what is free, and where visa fees are separate.
 Passport, arrival details, contact info, and QR handling.
 → [Field-by-field guide](/cambodia/how-to-fill/)
 
-### 3. Is iVisa official?
-No. This page separates e-Arrival, visa fees, and paid filing services.
-→ [iVisa official-site check](/cambodia/is-ivisa-official/)
-
 ## The fast facts
 
 - **Official URL:** `arrival.gov.kh`.

@@ -1,7 +1,7 @@
 ---
 title: "柬埔寨 e-Arrival 官方网站、免费申报和防中介指南"
 kicker: "柬埔寨 e-Arrival 官方链接、入境申报免费边界，以及签证费用和中介费用的区别。"
-description: "柬埔寨 e-Arrival 中文指南：官方网址 arrival.gov.kh、免费入境申报、字段填写和中介提醒。"
+description: "柬埔寨 e-Arrival 中文指南：官方网址 arrival.gov.kh、免费入境申报、字段填写。"
 lastmod: 2026-08-03
 ---
 
@@ -18,10 +18,6 @@ lastmod: 2026-08-03
 ### 2. 每个字段怎么填
 护照、抵达信息、联系方式和二维码保存。
 → [字段逐项指南](/zh/cambodia/how-to-fill/)
-
-### 3. iVisa 是官方吗？
-不是。这里区分 e-Arrival、签证费和付费代填服务。
-→ [iVisa 官方性判断](/zh/cambodia/is-ivisa-official/)
 
 ## 速记要点
 

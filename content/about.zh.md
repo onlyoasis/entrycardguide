@@ -15,7 +15,7 @@ layout: about
 
 2026 年 3 月，泰国皇家移民局公开声明：**约有 10% 的泰国外国入境者使用过非官方网站填写 TDAC 并多付了钱**。这个数字促成了这个项目。
 
-我们想不通为什么没有人做这件显而易见的事：一份免费、独立、白话的指南，把每个国家的官方表单和假冒站点的截图放在一起，再附上一个巨大的指向真站的链接。所以我们自己做了。
+我们想不通为什么没有人做这件显而易见的事：一份免费、独立、白话的指南，把每个国家官方表单的正确网址放在最显眼的位置，逐字段讲清楚怎么填。所以我们自己做了。
 
 ## 我们是什么
 
@@ -30,7 +30,7 @@ layout: about
 - 不是泰国移民局、INM、DGM、马来西亚移民局，或任何政府机构。
 - 不是旅行社。
 - 不是签证中介。
-- 与 iVisa、VisaHQ、Sherpa 或任何签证处理服务都没有任何关联。
+- 与任何签证代办服务都没有任何关联。
 - 不替你填表。我们不会拿你的护照，不会拿你的钱，不会拿你的数据。
 
 <a id="methodology"></a>
@@ -43,11 +43,9 @@ layout: about
 
 2. **字段规则存在可检查的 JSON 里。** 校验器使用的规则放在 [`data/rules/{country}.json`](https://github.com/onlyoasis/entrycardguide/tree/main/data/rules)。这些文件记录字段长度、正则、必填项和官方表单返回的错误提示。页面上的校验器读取这些规则，不临时编建议。政府表单一变，JSON 就必须跟着变。
 
-3. **假站警告要有 DNS 和证据。** TOML 里的每条 `[[scam_sites]]` 都有域名、首次观察日期和证据说明。我们只保留审计时仍能解析的域名。提交 [`6c841f3`](https://github.com/onlyoasis/entrycardguide/commit/6c841f3) 在 DNS 审计后删掉了 13 个失效域名。少一点但真实的警告，比一长串已经死掉的域名更有用。
+3. **校验器只在你的浏览器里运行。** 打开 DevTools 的 Network 面板，在校验器里输入内容，你会看到：不会有携带护照数据的外发请求。规则嵌在页面里，由 [`assets/js/validator.ts`](https://github.com/onlyoasis/entrycardguide/blob/main/assets/js/validator.ts) 在本地检查。我们不记录按键，不保存草稿，也不上传半填的表单。
 
-4. **校验器只在你的浏览器里运行。** 打开 DevTools 的 Network 面板，在校验器里输入内容，你会看到：不会有携带护照数据的外发请求。规则嵌在页面里，由 [`assets/js/validator.ts`](https://github.com/onlyoasis/entrycardguide/blob/main/assets/js/validator.ts) 在本地检查。我们不记录按键，不保存草稿，也不上传半填的表单。
-
-5. **整个站点都在 GitHub 上。** 线上页面对应 [`content/`](https://github.com/onlyoasis/entrycardguide/tree/main/content) 里的 Markdown 文件，数据变更对应提交记录。两份许可证覆盖全站：代码用 [MIT](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE)，数据和指南用 [CC BY-SA 4.0](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE-CC-BY-SA-4.0)。发现错误，可以看 [issues](https://github.com/onlyoasis/entrycardguide/issues)、PR 和 git 历史。更长的核查流程在这里：[如何核实本站的每一条说法](/zh/trust/)。
+4. **整个站点都在 GitHub 上。** 线上页面对应 [`content/`](https://github.com/onlyoasis/entrycardguide/tree/main/content) 里的 Markdown 文件，数据变更对应提交记录。两份许可证覆盖全站：代码用 [MIT](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE)，数据和指南用 [CC BY-SA 4.0](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE-CC-BY-SA-4.0)。发现错误，可以看 [issues](https://github.com/onlyoasis/entrycardguide/issues)、PR 和 git 历史。更长的核查流程在这里：[如何核实本站的每一条说法](/zh/trust/)。
 
 ## 我们怎么赚钱
 
@@ -59,7 +57,7 @@ layout: about
 
 就这样。这就是全部商业模式。
 
-我们 **从来没有** 收过 iVisa 或任何签证中介的钱。我们也永远不会，不是因为我们高尚，而是因为那样做会让本站存在的整个理由失效，我们喜欢这个理由。
+我们 **从来没有** 收过任何签证中介的钱。我们也永远不会，不是因为我们高尚，而是因为那样做会让本站存在的整个理由失效，我们喜欢这个理由。
 
 ## 我们的承诺
 

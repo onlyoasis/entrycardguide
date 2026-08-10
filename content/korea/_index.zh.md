@@ -1,7 +1,7 @@
 ---
 title: "韩国 e-Arrival Card 官方网站、免费填写和防中介指南"
 kicker: "韩国 e-Arrival Card 官方链接、免费填写方式，以及它和 K-ETA / Q-Code 的区别。"
-description: "韩国 e-Arrival Card 中文指南：官方网址 e-arrivalcard.go.kr、免费填写、字段说明和中介提醒。"
+description: "韩国 e-Arrival Card 中文指南：官方网址 e-arrivalcard.go.kr、免费填写、字段说明。"
 lastmod: 2026-08-03
 ---
 
@@ -18,10 +18,6 @@ lastmod: 2026-08-03
 ### 2. 每个字段怎么填
 护照、航班、抵达日期、联系方式和系统混淆。
 → [字段逐项指南](/zh/korea/how-to-fill/)
-
-### 3. iVisa 是官方吗？
-不是。这里区分 e-Arrival Card、K-ETA、签证和付费服务。
-→ [iVisa 官方性判断](/zh/korea/is-ivisa-official/)
 
 ## 速记要点
 

@@ -19,10 +19,6 @@ Yes. See the official `.gov.in` portal, the 72-hour submission window, and why t
 Identity, visa or OCI details, travel, India address, contact information, and the final declaration.
 → [Field-by-field e-Arrival Card guide](/india/how-to-fill/)
 
-### 3. Is iVisa official?
-No commercial application service is the Indian government. Learn how to check the exact `.gov.in` ending and compare documented £15, $59.99, and $99-$399 offers.
-→ [Check India arrival-card and e-Visa middlemen](/india/is-ivisa-official/)
-
 ## The fast facts
 
 - **e-Arrival Card fee:** free. The official form says the service is free of cost.

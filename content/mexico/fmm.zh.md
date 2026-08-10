@@ -6,7 +6,7 @@ date: 2026-04-24
 lastmod: 2026-08-03
 country: "mexico"
 weight: 10
-keywords: ["墨西哥 FMM", "FMM 怎么填", "墨西哥入境表", "墨西哥旅游卡", "INM FMM 官网", "iVisa 墨西哥"]
+keywords: ["墨西哥 FMM", "FMM 怎么填", "墨西哥入境表", "墨西哥旅游卡", "INM FMM 官网"]
 faq:
   - q: "墨西哥 FMM 要收费吗？"
     a: "不收。在 INM 官方站点（inm.gob.mx）提交 FMM-E 是免费的。DNI（非移民税）是另一笔政府费用，不是 FMM 费用，且对绝大多数航空旅客来说已经打包进了机票里。"
@@ -16,8 +16,8 @@ faq:
     a: "飞往主要机场（CUN、MEX、GDL、TIJ、PVR、SJD 等）的航空旅客大多直接拿到护照盖章，不再单独发 FMM 卡。从陆路、海路或较小机场入境的旅客需要 FMM-E。不确定就填，已提交的 FMM-E 在边境从来不是问题。"
   - q: "什么时候填 FMM-E？"
     a: "抵达前任何时间均可。多数口岸组合接受最多 30 天前的提交。再早就可能被拒绝。"
-  - q: "iVisa 是 FMM 官方网站吗？"
-    a: "不是。iVisa 是商业中介，向你收钱代你提交免费 FMM-E。它与墨西哥 INM 没有任何关联。"
+  - q: "有网站要收我 FMM 的钱，它是官方吗？"
+    a: "不是。FMM-E 在 INM 官网上是免费的。收费的站点卖的是代填服务，与墨西哥 INM 没有关联。"
   - q: "我把边境官员给的 FMM 回执条丢了怎么办？"
     a: "出境时在机场会有一笔小额补办费。带上入境证明（登机牌、酒店收据）方便海关核对日期。"
 layout: country-form
@@ -45,7 +45,7 @@ layout: country-form
 
 看一眼地址栏。官方网址是 <mark>inm.gob.mx/fmme/</mark>，没有别的。
 
-任何人都能注册 `.com`、`.org` 或 `.net` —— 像 `mexico-fmm.com` 这种、或者任何打着 "official" 旗号但不以 `.gob.mx` 结尾的，都不是 INM。只有墨西哥政府机构能注册 `.gob.mx`。
+任何人都能注册 `.com`、`.org` 或 `.net` —— 仿冒的 `fmm-*` 域名，或任何打着 "official" 旗号但不以 `.gob.mx` 结尾的，都不是 INM。只有墨西哥政府机构能注册 `.gob.mx`。
 
 {{< validator country="mexico" >}}
 
@@ -75,17 +75,6 @@ FMM-E 大约 10 个字段，分布在 3 部分：旅客身份、行程、墨西�
 如果一个站点要你做这两件事中的任何一件，你就不在官方站点上。
 
 如需逐字段讲解，请阅读我们的 [FMM 字段填写指南](/zh/mexico/how-to-fill/)。
-
-## 已知**不是** FMM-E 的网站
-
-下面这些网站都在为一份免费表单收费。其中一些代你提交了真 FMM，另一些没有。
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="mexico" domain="mexico-fmm.com" screenshot="/scams/mexico-fmm-com.png" >}}
-{{< scam-site country="mexico" domain="ivisa.com" screenshot="/scams/ivisa-com-mexico.png" >}}
-</div>
-
-截图于 2026 年 4 月。存档可在 [archive.org](https://web.archive.org/) 查询。
 
 ## 常见问题
 

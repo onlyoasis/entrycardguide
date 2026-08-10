@@ -1,7 +1,7 @@
 ---
 title: "印度入境卡官网指南：e-Arrival Card 免费，e-Visa 另算"
 kicker: "印度 e-Arrival Card 免费。e-Visa 是另一项收费的旅行许可。"
-description: "印度入境指南：e-Arrival Card 官网、抵达前 72 小时规则、e-Visa 费用、15 个字段和中介加价证据。"
+description: "印度入境指南：e-Arrival Card 官网、抵达前 72 小时规则、e-Visa 费用、15 个字段和常见加价区间。"
 lastmod: 2026-08-03
 ---
 
@@ -18,10 +18,6 @@ lastmod: 2026-08-03
 ### 2. 印度入境卡怎么填
 按身份、签证或 OCI、行程、印度地址、联系方式和声明，逐项核对 15 个字段。
 → [查看 e-Arrival Card 字段指南](/zh/india/how-to-fill/)
-
-### 3. iVisa 是印度官网吗？
-不是。商业申请服务不是印度政府。这里会逐字检查 `.gov.in` 后缀，并对比已记录的 15 英镑、59.99 美元和 99 至 399 美元报价。
-→ [查看印度入境卡与 e-Visa 中介核查](/zh/india/is-ivisa-official/)
 
 ## 先记住这 6 点
 

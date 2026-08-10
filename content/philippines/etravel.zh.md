@@ -6,7 +6,7 @@ date: 2026-06-11
 lastmod: 2026-08-03
 country: "philippines"
 weight: 10
-keywords: ["菲律宾 eTravel", "etravel.gov.ph", "菲律宾入境申报", "菲律宾旅行申报", "iVisa 菲律宾"]
+keywords: ["菲律宾 eTravel", "etravel.gov.ph", "菲律宾入境申报", "菲律宾旅行申报"]
 faq:
   - q: "菲律宾 eTravel 官方网站是什么？"
     a: "etravel.gov.ph。.gov.ph 后缀用于菲律宾政府服务。"

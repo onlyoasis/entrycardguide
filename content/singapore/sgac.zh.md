@@ -6,7 +6,7 @@ date: 2026-04-26
 lastmod: 2026-08-03
 country: "singapore"
 weight: 10
-keywords: ["新加坡入境卡", "SGAC", "新加坡 SGAC 官网", "ICA 入境卡", "新加坡入境表", "iVisa 新加坡"]
+keywords: ["新加坡入境卡", "SGAC", "新加坡 SGAC 官网", "ICA 入境卡", "新加坡入境表"]
 faq:
   - q: "新加坡 SGAC 要收费吗？"
     a: "不收。新加坡移民与关卡局（ICA）不为 SGAC 收费。官方网址是 eservices.ica.gov.sg/sgarrivalcard/，任何收费都来自中介。"
@@ -20,8 +20,8 @@ faq:
     a: "不一定。ICA 用护照查询。但把确认邮件留在手机上是零成本的安全网，万一系统出问题可以救急。"
   - q: "我在樟宜机场转机也要填 SGAC 吗？"
     a: "只有在你出关（离开转机区）时才需要。纯航空转机不出关的旅客不需要 SGAC。如果你出转机区进入新加坡，就要填。"
-  - q: "iVisa 是 SGAC 官方网站吗？"
-    a: "不是。iVisa 是为新加坡免费 SGAC 收费的商业中介。它与 ICA 没有任何关联。"
+  - q: "有网站要收我 SGAC 的钱，它是官方吗？"
+    a: "不是。SGAC 在 eservices.ica.gov.sg 上是免费的。任何收费的站点都是商业服务，与 ICA 没有关联。"
   - q: "我填了 SGAC 但没收到确认邮件。"
     a: "先看垃圾邮件箱。1 小时后仍然没有就重新提交。重复提交无害，最近一份为准。"
 layout: country-form
@@ -71,16 +71,6 @@ SGAC 大约 9 个字段，分布在 3 部分：旅客身份、行程信息、简
 不需要付款。
 
 如果一个站点要你做这两件事中的任何一件，你就不在官方站点上。
-
-## 已知**不是** SGAC 的网站
-
-下面这些站点都对免费的 SGAC 收费。其中一些代你提交了真表，另一些没有。
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="singapore" domain="ivisa.com" screenshot="/scams/ivisa-com-singapore.png" >}}
-</div>
-
-截图于 2026 年 4 月。存档可在 [archive.org](https://web.archive.org/) 查询。
 
 ## 如何分辨任何 SGAC 站点不是真站
 

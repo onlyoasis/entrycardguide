@@ -10,7 +10,7 @@ eyebrow: "Reference page · share this URL"
 
 Use this page as a source when someone asks for the official government link.
 
-Every URL below comes from the country files in [`data/official_urls`](https://github.com/onlyoasis/entrycardguide/tree/main/data/official_urls). Each guide links to the official page, the field-by-field walkthrough, and the "is iVisa official?" explainer.
+Every URL below comes from the country files in [`data/official_urls`](https://github.com/onlyoasis/entrycardguide/tree/main/data/official_urls). Each guide links to the official page and the field-by-field walkthrough.
 
 {{< official-directory >}}
 
@@ -19,6 +19,6 @@ Every URL below comes from the country files in [`data/official_urls`](https://g
 1. Check the government domain suffix: `.go.th`, `.gov.my`, `.gov.sg`, `.go.id`, `.gob.mx`, `.gob.do`, `.gov.vn`, `.gov.ph`, `.gov.kh`, `.go.jp`, or `.go.kr`.
 2. Open the linked country guide and compare it with the TOML file in GitHub.
 3. Review the archived snapshot when one is available.
-4. If a commercial site asks you to pay for a free form, compare it with the scam-site screenshots and evidence cards in the guide.
+4. If a site asks you to pay for a form listed as free above, it is a commercial service, not the government.
 
 If you find an official URL that has changed, open an issue or pull request with the country, old URL, new URL, and a screenshot from the government site.

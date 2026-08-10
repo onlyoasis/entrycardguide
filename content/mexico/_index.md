@@ -1,7 +1,7 @@
 ---
 title: "Mexico"
 kicker: "Everything you need to know about Mexico's Forma Migratoria Múltiple Electrónica (FMM-E), without paying a middleman."
-description: "Free, independent guides to Mexico's FMM-E. Official URL, every field explained, scam-site warnings."
+description: "Free, independent guides to Mexico's FMM-E. Official URL, every field explained."
 lastmod: 2026-08-03
 ---
 
@@ -20,10 +20,6 @@ Who must file, when, and how to tell the official INM site from a scam reseller.
 ### 2. How to fill every field
 Field-by-field walkthrough of the INM form with common errors.
 → [Field-by-field guide](/mexico/how-to-fill/)
-
-### 3. Is iVisa (or any other site) the official FMM?
-No. Here is what each lookalike site actually does with your money.
-→ [Scam site gallery](/mexico/is-ivisa-official/)
 
 ## The fast facts
 

@@ -1,12 +1,12 @@
 ---
 title: "Thailand TDAC: Official Site, Free Guide, How to Avoid Scams (2026)"
-kicker: "10% of foreign arrivals to Thailand in 2026 paid a scam site to submit a free form. Here is the official site, every field it asks, and how to tell real from fake."
-description: "Free, independent 2026 guide to Thailand's Digital Arrival Card (TDAC). Official URL, every field explained, scam-site warnings, no fees."
+kicker: "10% of foreign arrivals to Thailand in 2026 paid a non-official site to submit a free form. Here is the official site and every field it asks."
+description: "Free, independent 2026 guide to Thailand's Digital Arrival Card (TDAC). Official URL, every field explained, no fees."
 date: 2026-04-22
 lastmod: 2026-08-03
 country: "thailand"
 weight: 10
-keywords: ["thailand digital arrival card", "TDAC", "thailand TDAC official", "is ivisa official thailand", "thailand arrival card free", "tdac.immigration.go.th"]
+keywords: ["thailand digital arrival card", "TDAC", "thailand TDAC official", "thailand arrival card free", "tdac.immigration.go.th"]
 faq:
   - q: "Is there a fee for the TDAC?"
     a: "No. Anyone charging you for the TDAC is a middleman. The Royal Thai Immigration Bureau does not collect any payment for this form. The official site is tdac.immigration.go.th and it is always free."
@@ -20,8 +20,8 @@ faq:
     a: "Contact your credit card issuer and dispute the charge as 'service not rendered' (if they did not actually file your form) or 'deceptive practice' (if they filed but charged a fee for a free service). Success rates are highest when filed within 60 days of the charge."
   - q: "I filled out the form but didn't get a confirmation email."
     a: "Check spam. If still missing after 1 hour, submit again. The official site is idempotent — duplicate submissions are harmless and the most recent one applies."
-  - q: "Is iVisa the official TDAC site?"
-    a: "No. iVisa is a commercial visa middleman, not affiliated with the Royal Thai Immigration Bureau. Thai authorities publicly named iVisa as a non-official site charging fees for the free TDAC in March 2026."
+  - q: "A site is charging me for the TDAC. Is it official?"
+    a: "No. The TDAC is free at tdac.immigration.go.th. In March 2026 Thai immigration publicly warned that non-official sites were charging fees for the free TDAC."
 layout: country-form
 ---
 
@@ -41,7 +41,7 @@ There is no fast-track, priority, premium, or "white-glove" service. Those servi
 
 If you search Google for *"thailand digital arrival card"* right now, the first three results are paid ads from middlemen charging $20 to $90 to fill a free form. Some of them submit the real form on your behalf. Some of them don't, and you find out at immigration.
 
-In late March 2026, Immigration Bureau spokesman Pol Maj Gen Choengron Rimpadee [publicly named iVisa and tdac.info](https://www.bangkokpost.com/thailand/general/3226524/immigration-warns-of-scam-digital-arrival-card-websites) as middleman sites charging fees for the free TDAC. The bureau stated that at least 10% of foreign arrivals had used unofficial sites and overpaid.
+In late March 2026, Immigration Bureau spokesman Pol Maj Gen Choengron Rimpadee [warned about non-official sites](https://www.bangkokpost.com/thailand/general/3226524/immigration-warns-of-scam-digital-arrival-card-websites) charging fees for the free TDAC. The bureau stated that at least 10% of foreign arrivals had used unofficial sites and overpaid.
 
 ## Before you touch any form
 
@@ -64,16 +64,6 @@ None of them require payment.
 If a site asks for either, you are not on the official site.
 
 For a field-by-field walkthrough with screenshots and common errors, read our [how to fill the TDAC guide](/thailand/how-to-fill/).
-
-## Known sites that are NOT the TDAC
-
-These sites all charge money for a free form. Some of them submit a real form on your behalf. Some of them do not.
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="thailand" domain="ivisa.com" screenshot="/scams/ivisa-com-thailand.png" >}}
-</div>
-
-Screenshots captured April 2026. Archived snapshots available via [archive.org](https://web.archive.org/).
 
 ## Frequently asked
 

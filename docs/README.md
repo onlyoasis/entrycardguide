@@ -44,7 +44,6 @@ content/thailand/
   tdac.md              # 主介绍文章（英）
   tdac.zh.md           # 主介绍文章（中）
   how-to-fill.md       # 字段逐项填写（英）
-  is-ivisa-official.md # 「iVisa 是不是官方？」（英）
 ```
 
 写新内容**不要凭空想**，照样板的结构和语气写。具体见每个 task 文档。

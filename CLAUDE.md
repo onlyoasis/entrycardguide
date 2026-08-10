@@ -55,19 +55,17 @@ npm run clean        # 清理 public/ 和 resources/
 每个国家的所有内容由四份 data 文件驱动，shortcode 直接读取，**没有重复的字符串**：
 
 - `data/rules/{country}.json` — 字段验证规则（label、pattern、minLength、错误信息）。`{{< validator >}}` shortcode 把它嵌成 `<script type="application/json">`，`assets/js/validator.ts` 在浏览器读。
-- `data/official_urls/{country}.toml` — 官方 URL、机构名、`last_verified` 日期、`[[scam_sites]]` 名单（带 `evidence` 和 `first_observed`）。`{{< official-link >}}` 和 `{{< scam-site >}}` 都从这里读。
+- `data/official_urls/{country}.toml` — 官方 URL、机构名、`last_verified` 日期。`{{< official-link >}}` 从这里读。文件里仍保留 `[[scam_sites]]` 数组作为内部记录，但**站点不再渲染它**（2026-08-10 移除中介名单）。
 - `data/decision/tree.json` — `/decide/` 决策树状态机。被 `{{< decide >}}` shortcode 嵌入，`assets/js/decide.ts` 消费。
 - `data/changelog/{country}.toml` — 国家变更日志（`docs/maintenance/monthly-review.md` 描述了月度审查流程）。
 
-**改任何 URL、字段规则、诈骗站、决策状态时只改 data 文件，不要去翻 markdown。**
+**改任何 URL、字段规则、决策状态时只改 data 文件，不要去翻 markdown。**
 
 ### Shortcode 构建时验证
 
-`layouts/shortcodes/scam-site.html` 在构建时强制：传入的 `domain` 必须出现在 `data/official_urls/{country}.toml` 的 `[[scam_sites]]` 里。不在 → `errorf` 终止构建。这是法律防线（避免没有证据的污蔑指控）。
+`layouts/shortcodes/official-link.html` 在构建时强制：`site="country.key"` 必须能在 TOML 中找到，否则 `errorf` 终止构建。
 
-`layouts/shortcodes/official-link.html` 也类似——`site="country.key"` 必须能在 TOML 中找到，否则构建失败。
-
-加新诈骗站：先在 TOML 加 `[[scam_sites]]` 条目（含 `evidence` 和 `first_observed` 日期），**再**在 markdown 里写 `{{< scam-site >}}`。
+**站点不再发布中介/仿冒站名单。** `scam-site.html` shortcode 和 `is-ivisa-official` 页面已于 2026-08-10 移除，理由是这批页面几乎没有流量却承担了全部法律风险。不要重新引入对第三方公司的点名——页面只讲官方网址和字段怎么填。
 
 ### 双语机制
 
@@ -122,10 +120,9 @@ npm run clean        # 清理 public/ 和 resources/
 content/{country}/_index.md            # 国家枢纽（链到三篇主文章）
 content/{country}/{form-slug}.md       # 主表介绍（如 tdac、fmm、eticket、mdac、evisa、e-cd、sgac）
 content/{country}/how-to-fill.md       # 字段逐项填写
-content/{country}/is-ivisa-official.md # 诈骗站点画廊
 ```
 
-加新国家的最小改动：8 个内容文件（4 篇 × 英中），5 份 data 文件（rules、official_urls、changelog、**fields**——`layouts/_default/how-to-fill.html` 强依赖 `data/fields/{country}.toml`——外加 decision 树节点），以及 `layouts/partials/country-roster.html` 末尾追加一行。首页网格、导航下拉、页脚、官方目录、decide 无 JS fallback 全部从 roster 自动生成，无需逐处修改。付费国家在 TOML `[meta]` 里写 `form_type`（`arrival_card | travel_authorization | evisa`）和 `fee_en/fee_zh`。
+加新国家的最小改动：6 个内容文件（3 篇 × 英中），5 份 data 文件（rules、official_urls、changelog、**fields**——`layouts/_default/how-to-fill.html` 强依赖 `data/fields/{country}.toml`——外加 decision 树节点），以及 `layouts/partials/country-roster.html` 末尾追加一行。首页网格、导航下拉、页脚、官方目录、decide 无 JS fallback 全部从 roster 自动生成，无需逐处修改。付费国家在 TOML `[meta]` 里写 `form_type`（`arrival_card | travel_authorization | evisa`）和 `fee_en/fee_zh`。
 
 ## 写作风格（来自 docs/README.md）
 
@@ -178,19 +175,17 @@ npm run clean        # 清理 public/ 和 resources/
 每个国家的所有内容由四份 data 文件驱动，shortcode 直接读取，**没有重复的字符串**：
 
 - `data/rules/{country}.json` — 字段验证规则（label、pattern、minLength、错误信息）。`{{< validator >}}` shortcode 把它嵌成 `<script type="application/json">`，`assets/js/validator.ts` 在浏览器读。
-- `data/official_urls/{country}.toml` — 官方 URL、机构名、`last_verified` 日期、`[[scam_sites]]` 名单（带 `evidence` 和 `first_observed`）。`{{< official-link >}}` 和 `{{< scam-site >}}` 都从这里读。
+- `data/official_urls/{country}.toml` — 官方 URL、机构名、`last_verified` 日期。`{{< official-link >}}` 从这里读。文件里仍保留 `[[scam_sites]]` 数组作为内部记录，但**站点不再渲染它**（2026-08-10 移除中介名单）。
 - `data/decision/tree.json` — `/decide/` 决策树状态机。被 `{{< decide >}}` shortcode 嵌入，`assets/js/decide.ts` 消费。
 - `data/changelog/{country}.toml` — 国家变更日志（`docs/maintenance/monthly-review.md` 描述了月度审查流程）。
 
-**改任何 URL、字段规则、诈骗站、决策状态时只改 data 文件，不要去翻 markdown。**
+**改任何 URL、字段规则、决策状态时只改 data 文件，不要去翻 markdown。**
 
 ### Shortcode 构建时验证
 
-`layouts/shortcodes/scam-site.html` 在构建时强制：传入的 `domain` 必须出现在 `data/official_urls/{country}.toml` 的 `[[scam_sites]]` 里。不在 → `errorf` 终止构建。这是法律防线（避免没有证据的污蔑指控）。
+`layouts/shortcodes/official-link.html` 在构建时强制：`site="country.key"` 必须能在 TOML 中找到，否则 `errorf` 终止构建。
 
-`layouts/shortcodes/official-link.html` 也类似——`site="country.key"` 必须能在 TOML 中找到，否则构建失败。
-
-加新诈骗站：先在 TOML 加 `[[scam_sites]]` 条目（含 `evidence` 和 `first_observed` 日期），**再**在 markdown 里写 `{{< scam-site >}}`。
+**站点不再发布中介/仿冒站名单。** `scam-site.html` shortcode 和 `is-ivisa-official` 页面已于 2026-08-10 移除，理由是这批页面几乎没有流量却承担了全部法律风险。不要重新引入对第三方公司的点名——页面只讲官方网址和字段怎么填。
 
 ### 双语机制
 
@@ -245,7 +240,6 @@ npm run clean        # 清理 public/ 和 resources/
 content/{country}/_index.md            # 国家枢纽（链到三篇主文章）
 content/{country}/{form-slug}.md       # 主表介绍（如 tdac、fmm、eticket、mdac、evisa、e-cd、sgac）
 content/{country}/how-to-fill.md       # 字段逐项填写
-content/{country}/is-ivisa-official.md # 诈骗站点画廊
 ```
 
 加新国家的最小改动：在 7 个文件里加内容，加 4 份 data 文件（rules、official_urls、changelog、可选 decision 节点），在 `config.toml` 加菜单项，更新 `layouts/index.html` 的 `$mainSlugs`/`$subtitlesEn`/`$subtitlesZh`，加 i18n 国家名。`layouts/shortcodes/official-directory.html` 也要加一行。

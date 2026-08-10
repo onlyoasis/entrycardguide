@@ -1,7 +1,7 @@
 ---
 title: "Dominican Republic"
 kicker: "Everything you need to know about the Dominican Republic E-Ticket, without paying a middleman."
-description: "Free, independent guides to the DR's E-Ticket. Official URL, every field explained, scam-site warnings."
+description: "Free, independent guides to the DR's E-Ticket. Official URL, every field explained."
 lastmod: 2026-04-25
 ---
 
@@ -20,10 +20,6 @@ Who must file, when, and how to tell the official DGM site from a reseller.
 ### 2. How to fill every field
 Field-by-field walkthrough with common errors and what they mean.
 → [Field-by-field guide](/dominican/how-to-fill/)
-
-### 3. Is iVisa (or any other site) the official E-Ticket?
-No. Here is what each lookalike site actually does with your money.
-→ [Scam site gallery](/dominican/is-ivisa-official/)
 
 ## The fast facts
 

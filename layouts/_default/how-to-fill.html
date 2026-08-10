@@ -16,7 +16,7 @@
        Australia is the exception: form_code is ETA 601, which is App-only and
        has no web fields to document, while the form this guide covers is
        eVisitor 651. Set fields_form_code in [meta] to relabel this page only —
-       form_code still drives the hub, roster, and is-ivisa pages. */ -}}
+       form_code still drives the hub and the roster. */ -}}
 {{- $formCode := $meta.form_code -}}
 {{- with $meta.fields_form_code }}{{ $formCode = . }}{{ end -}}
 {{- $since := cond $isZh $meta.since_zh $meta.since_en -}}

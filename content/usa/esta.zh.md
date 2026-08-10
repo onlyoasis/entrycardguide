@@ -6,7 +6,7 @@ date: 2026-07-14
 lastmod: 2026-08-03
 country: "usa"
 weight: 10
-keywords: ["ESTA 多少钱", "ESTA 官网", "ESTA 官方网站", "ESTA 费用", "美国 ESTA", "iVisa ESTA"]
+keywords: ["ESTA 多少钱", "ESTA 官网", "ESTA 官方网站", "ESTA 费用", "美国 ESTA"]
 faq:
   - q: "ESTA 多少钱？"
     a: "提交申请先收 4.00 美元处理费。获批后再收 36.27 美元，合计 40.27 美元。如果未获授权，只收 4.00 美元。"

@@ -25,12 +25,6 @@ For travellers who really need an e-Visa, follow nationality, travel document, a
 
 → [Read the field-by-field Turkey e-Visa guide](/turkey/how-to-fill/)
 
-### 3. Is a Turkey e-Visa site official?
-
-Only `evisa.gov.tr` is the government application site. A similar-looking domain can sell a visa to someone whose passport is already visa-exempt.
-
-→ [Compare the official site with documented middlemen](/turkey/is-ivisa-official/)
-
 ## The fast facts
 
 - **US, UK, Canada, and Australia:** ordinary passport holders are currently visa-exempt for tourist visits of up to 90 days in any 180-day period.

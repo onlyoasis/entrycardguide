@@ -15,39 +15,22 @@ For each country, in this order:
    - No new fee has been added.
    - No new exemptions or eligibility changes were announced.
 
-2. **DNS-audit the `scam_sites` list.**
+2. ~~DNS-audit the `scam_sites` list.~~ **No longer part of the review.** The site
+   stopped publishing middleman and lookalike-site listings on 2026-08-10. The
+   `[[scam_sites]]` arrays remain in the TOML files as an internal record, but
+   nothing renders them, so there is no published claim to keep current. Do not
+   re-introduce named third parties into the guides.
 
-   ```bash
-   for d in $(grep -h "^domain = " data/official_urls/*.toml | sort -u | sed 's/domain = "//; s/"//'); do
-     ip=$(dig +short +time=2 +tries=1 "$d" | tail -1)
-     [ -n "$ip" ] && echo "OK $d" || echo "DEAD $d"
-   done
-   ```
+3. **Update verification dates.** For each TOML and each `data/rules/*.json` file reviewed, update the relevant verification date to today.
 
-   Remove dead domains using the same policy as commit `6c841f3`: fewer live warnings are better than stale warnings.
+4. **Update `lastmod`.** If the underlying policy did not change but the guide was reviewed, update `lastmod` on the relevant country pages.
 
-3. **Check for new public scam-site announcements.** Search Google News for:
-   - `"thailand immigration" warning`
-   - `"INM mexico" official site warning`
-   - `"DGM dominican republic" scam`
-   - `"jabatan imigresen" malaysia warning`
-   - `"vietnam immigration" e-visa scam`
-   - `"bea cukai" scam warning`
-   - `"imigrasi indonesia" scam warning`
-   - `"ICA singapore" scam warning`
-
-   Add newly named domains to the appropriate TOML `scam_sites` array with the source summarized in `evidence`.
-
-4. **Update verification dates.** For each TOML and each `data/rules/*.json` file reviewed, update the relevant verification date to today.
-
-5. **Update `lastmod`.** If the underlying policy did not change but the guide was reviewed, update `lastmod` on the relevant country pages.
-
-6. **Add a changelog entry.** Even if nothing changed, add:
+5. **Add a changelog entry.** Even if nothing changed, add:
 
    ```markdown
    ## 2026-MM-DD - Monthly review
 
-   No policy changes this cycle. All country guides re-verified against live official sites. Scam-site DNS audit clean.
+   No policy changes this cycle. All country guides re-verified against live official sites.
    ```
 
 ## Cadence

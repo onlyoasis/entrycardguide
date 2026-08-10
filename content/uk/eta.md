@@ -6,7 +6,7 @@ date: 2026-07-14
 lastmod: 2026-08-03
 country: "uk"
 weight: 10
-keywords: ["is UK ETA free", "UK ETA official website", "UK ETA official site", "UK ETA fee", "gov.uk ETA", "UK travel authorization", "is iVisa official UK ETA"]
+keywords: ["is UK ETA free", "UK ETA official website", "UK ETA official site", "UK ETA fee", "gov.uk ETA", "UK travel authorization"]
 faq:
   - q: "Is UK ETA free?"
     a: "No. The Home Office charges £20 for each applicant. Babies and children need separate applications, and there is no family discount."
@@ -70,7 +70,7 @@ The authorization permits multiple journeys during its validity. Each visit is n
 
 ## Why search results show higher prices
 
-Commercial application sites sell form-filling or review services. Prices observed on July 14, 2026 included **USD $100.99 at iVisa**, a stated **EUR 69 service fee at eta-united-kingdom.com**, and totals of **EUR 69, EUR 119, or EUR 169 at application-eta.uk**.
+Commercial application sites sell form-filling or review services. Prices observed on July 14, 2026 included **USD $100.99**, a stated **EUR 69 service fee**, and tiered totals of **EUR 69, EUR 119, or EUR 169**.
 
 The Home Office fee remains £20. Paying a service does not create a family discount, improve the approval decision, or shorten the Home Office processing time.
 

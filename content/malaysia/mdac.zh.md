@@ -1,12 +1,12 @@
 ---
 title: "马来西亚入境卡 MDAC 2026：官方网站和免费表格"
 kicker: "马来西亚 MDAC 入境卡免费。使用官方 MDAC 网站 imigresen-online.imi.gov.my，避开收费中介。"
-description: "马来西亚入境卡 MDAC 中文指南：官方网站、免费政府表格、谁要填、什么时候提交，以及如何避开收费假站。"
+description: "马来西亚入境卡 MDAC 中文指南：官方网站、免费政府表格、谁要填、什么时候提交、每个字段怎么填。"
 date: 2026-04-24
 lastmod: 2026-08-03
 country: "malaysia"
 weight: 10
-keywords: ["马来西亚 MDAC", "马来西亚电子入境卡", "马来西亚数字入境卡", "MDAC 怎么填", "iVisa 马来西亚"]
+keywords: ["马来西亚 MDAC", "马来西亚电子入境卡", "马来西亚数字入境卡", "MDAC 怎么填"]
 faq:
   - q: "MDAC 要收费吗？"
     a: "不收。马来西亚移民局不为 MDAC 收费。官方网址是 imigresen-online.imi.gov.my/mdac/main，永远免费。"
@@ -20,8 +20,8 @@ faq:
     a: "抵达前 3 天内。再早提交会被拒绝。"
   - q: "入境时一定要出示 MDAC 确认吗？"
     a: "不一定。官员会用护照查询你。但把确认邮件留在手机上是零成本的安全网，万一系统出问题可以救急。"
-  - q: "iVisa 是 MDAC 官方网站吗？"
-    a: "不是。iVisa 是为免费 MDAC 收费的商业中介。它与马来西亚移民局没有任何关联。"
+  - q: "有网站要收我 MDAC 的钱，它是官方吗？"
+    a: "不是。MDAC 在 imigresen-online.imi.gov.my 上是免费的。任何收费的站点都是商业服务，与马来西亚移民局没有关联。"
 layout: country-form
 ---
 
@@ -68,7 +68,7 @@ MDAC 比本指南覆盖的其他几张卡更新（2024 年 1 月才上线），�
 
 看一眼地址栏。官方网址是 <mark>imigresen-online.imi.gov.my/mdac/main</mark>，没有别的。
 
-像 `malaysia-mdac.com` 以及其他用 `.com`、`.org`、`.net` 的仿冒域名都是商业中介。这些都是开放后缀，谁都能注册。`.gov.my` 只属于马来西亚政府。
+任何用 `.com`、`.org`、`.net` 的域名都是商业服务，不是马来西亚移民局。这些都是开放后缀，谁都能注册。`.gov.my` 只属于马来西亚政府。
 
 {{< validator country="malaysia" >}}
 
@@ -83,15 +83,6 @@ MDAC 大约 9 个字段，分布在 3 部分：旅客身份、行程、马来西
 如果一个站点要你做这两件事中的任何一件，你就不在官方站点上。
 
 如需逐字段讲解，请阅读我们的 [MDAC 字段填写指南](/zh/malaysia/how-to-fill/)。
-
-## 已知**不是** MDAC 的网站
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="malaysia" domain="malaysia-mdac.com" screenshot="/scams/malaysia-mdac-com.png" >}}
-{{< scam-site country="malaysia" domain="ivisa.com" screenshot="/scams/ivisa-com-malaysia.png" >}}
-</div>
-
-截图于 2026 年 4 月。存档可在 [archive.org](https://web.archive.org/) 查询。
 
 ## 常见问题
 

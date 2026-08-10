@@ -32,17 +32,7 @@ layout: trust
 
 官方站一旦改字段，最应该变化的就是这个 JSON 文件。所以每份规则都有核实日期，校验器也会链接回源码。
 
-## 路径 3：核实假站名单
-
-假站警告存在官方 URL TOML 文件里的 `[[scam_sites]]` 数组中。每条都有域名、首次观察日期和证据说明。
-
-规则很简单：列入时，域名必须能通过 DNS 解析。它还必须有证据显示正在为免费表单收费、模仿官方流程，或出现在公开警告和新闻报道中。如果域名不再解析，我们会删除，而不是留一个过期警告撑场面。
-
-提交 [`6c841f3`](https://github.com/onlyoasis/entrycardguide/commit/6c841f3) 就是这样做的：DNS 审计后删除了 13 个失效域名。短一点但还能核实的名单，比一长串旅客打不开的域名更有用。
-
-你可以用 `dig example.com` 或 `nslookup example.com` 复查，再和 TOML 里的证据说明对照。
-
-## 路径 4：核实校验器只在本地运行
+## 路径 3：核实校验器只在本地运行
 
 打开一个带校验器的指南，再打开 DevTools 的 Network 面板。往校验器里输入测试数据。页面不应该发出任何携带你输入内容的请求。
 
@@ -50,7 +40,7 @@ layout: trust
 
 本站没有账号系统，没有数据库，也没有接收草稿表单数据的接口。如果未来有人改出这样的接口，它应该同时出现在源码和 Network 面板里。
 
-## 路径 5：核实整个站点
+## 路径 4：核实整个站点
 
 [`github.com/onlyoasis/entrycardguide`](https://github.com/onlyoasis/entrycardguide) 就是这个站。Markdown 页面在 [`content/`](https://github.com/onlyoasis/entrycardguide/tree/main/content)，结构化数据在 [`data/`](https://github.com/onlyoasis/entrycardguide/tree/main/data)，模板在 [`layouts/`](https://github.com/onlyoasis/entrycardguide/tree/main/layouts)，浏览器端代码在 [`assets/js/`](https://github.com/onlyoasis/entrycardguide/tree/main/assets/js)。
 

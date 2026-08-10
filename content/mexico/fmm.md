@@ -6,7 +6,7 @@ date: 2026-04-24
 lastmod: 2026-08-03
 country: "mexico"
 weight: 10
-keywords: ["mexico FMM", "FMM electronic", "FMM-E", "mexico tourist card", "mexico immigration form", "INM FMM official", "is ivisa official mexico"]
+keywords: ["mexico FMM", "FMM electronic", "FMM-E", "mexico tourist card", "mexico immigration form", "INM FMM official"]
 faq:
   - q: "Is there a fee for the Mexico FMM?"
     a: "No. Filing the FMM-E on the official INM site (inm.gob.mx) is free. The DNI fee (Derecho de No Inmigrante) is a separate government charge, not an FMM fee, and it is already bundled into most airline tickets."
@@ -16,8 +16,8 @@ faq:
     a: "Many air travelers arriving at major airports (CUN, MEX, GDL, TIJ, PVR, SJD and others) get a passport stamp instead of a separate FMM. If you arrive by land, by sea, or at a smaller airport, you do need the FMM-E. When unsure, fill it. A filed FMM-E is never a problem at the border."
   - q: "When should I file the FMM-E?"
     a: "Any time before arrival. The form accepts submissions up to 30 days out for most port-of-entry combinations. Earlier than that, it may reject."
-  - q: "Is iVisa the official FMM site?"
-    a: "No. iVisa is a commercial middleman. It charges a fee to submit the free FMM-E on your behalf. It is not affiliated with Mexico's INM."
+  - q: "A site is charging me for the FMM. Is it official?"
+    a: "No. The FMM-E is free on the INM site. Any site charging a fee is selling submission help, and it is not affiliated with Mexico's INM."
   - q: "I lost the FMM stub the border officer gave me. What do I do?"
     a: "You will pay a small replacement fee at the airport when you exit Mexico. Bring proof of entry (boarding pass, hotel receipt) so customs can verify your dates."
 layout: country-form
@@ -45,7 +45,7 @@ Mexico's INM has not been as publicly vocal as Thailand's immigration bureau abo
 
 Check the address bar. The official site is <mark>inm.gob.mx/fmme/</mark> and nothing else.
 
-Anyone can register a `.com`, `.org`, or `.net` — sites like `mexico-fmm.com`, lookalike `fmm-*` domains, or any domain claiming to be "official" without ending in `.gob.mx` are not the INM. Only Mexican government entities can register `.gob.mx`.
+Anyone can register a `.com`, `.org`, or `.net` — a lookalike `fmm-*` domain, or any domain claiming to be "official" without ending in `.gob.mx`, is not the INM. Only Mexican government entities can register `.gob.mx`.
 
 {{< validator country="mexico" >}}
 
@@ -75,17 +75,6 @@ None of them require payment at the INM site.
 If a site asks for either, you are not on the official site.
 
 For a field-by-field walkthrough with common errors, read our [how to fill the FMM guide](/mexico/how-to-fill/).
-
-## Known sites that are NOT the FMM-E
-
-These sites all charge money for a free form. Some of them submit a real FMM on your behalf. Some of them do not.
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="mexico" domain="mexico-fmm.com" screenshot="/scams/mexico-fmm-com.png" >}}
-{{< scam-site country="mexico" domain="ivisa.com" screenshot="/scams/ivisa-com-mexico.png" >}}
-</div>
-
-Screenshots captured April 2026. Archived snapshots available via [archive.org](https://web.archive.org/).
 
 ## Frequently asked
 

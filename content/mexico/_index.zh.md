@@ -1,7 +1,7 @@
 ---
 title: "墨西哥 FMM-E 官方网站、免费在线填写和防中介指南"
 kicker: "关于墨西哥电子入境表（FMM-E）你需要知道的一切，不必经手任何中介。"
-description: "墨西哥 FMM-E 中文指南：INM 官方网址 inm.gob.mx/fmme、免费在线填写、怎么填、iVisa 是否官方和假站警示。"
+description: "墨西哥 FMM-E 中文指南：INM 官方网址 inm.gob.mx/fmme、免费在线填写、每个字段怎么填。"
 lastmod: 2026-08-03
 ---
 
@@ -20,10 +20,6 @@ lastmod: 2026-08-03
 ### 2. 每个字段怎么填
 按官方表单顺序的逐字段讲解，常见错误和真实原因。
 → [字段逐项指南](/zh/mexico/how-to-fill/)
-
-### 3. iVisa（或其他网站）是官方 FMM 吗？
-不是。这里讲清每个仿冒站点拿你的钱做什么。
-→ [假站图鉴](/zh/mexico/is-ivisa-official/)
 
 ## 速记要点
 

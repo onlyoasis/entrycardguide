@@ -14,11 +14,6 @@ last_verified_label: "最近核实于"
 archived_snapshot_label: "存档快照"
 
 # 假站卡片
-not_official_stamp: "非官方"
-scam_card_aria_prefix: "卡片：站点"
-scam_card_aria_suffix: "标记为非官方"
-evidence_label: "证据"
-first_observed_label: "首次观察"
 
 # 校验器
 validator_eyebrow: "工具 · 提前核对填写内容"
@@ -56,7 +51,7 @@ footer_built_with: "由 Hugo 驱动"
 footer_last_deploy: "最近部署"
 footer_local_preview: "本地预览"
 footer_view_source: "在 GitHub 查看源码"
-footer_money_disclosure: "我们的收入仅来自文章中清楚披露的旅行联盟链接。我们不接受 iVisa、任何签证服务或信用卡公司的资金。"
+footer_money_disclosure: "我们的收入仅来自文章中清楚披露的旅行联盟链接。我们不接受任何签证服务或信用卡公司的资金。"
 footer_full_disclosure: "完整披露"
 footer_popular_countries: "热门国家"
 
@@ -87,7 +82,7 @@ rail_money_from: "我们的收入来自"
 rail_money_explainer: "本文底部清楚披露的旅行联盟链接。"
 rail_full_disclosure: "完整披露"
 rail_we_dont_take: "我们不接受"
-rail_we_dont_take_value: "iVisa · 任何签证服务 · 信用卡广告"
+rail_we_dont_take_value: "任何签证服务 · 信用卡广告"
 rail_related: "相关文章"
 
 # 目录 / 分享
@@ -98,7 +93,6 @@ directory_fee_free: "政府免费表单"
 directory_last_verified: "最近核实"
 directory_read_guide: "阅读指南"
 directory_how_to_fill: "怎么填"
-directory_ivisa_check: "iVisa 是官方吗？"
 directory_archive: "存档快照"
 share_source_eyebrow: "引用或分享"
 share_source_heading: "引用本页 / 分享给他人"

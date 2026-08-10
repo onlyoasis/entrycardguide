@@ -1,12 +1,12 @@
 ---
 title: "泰国 TDAC 入境卡 2026 完整指南：官方网址、免费填写、防中介诈骗"
 kicker: "2026 年到达泰国的外国旅客中，10% 为这份免费表单付了诈骗站点的钱。这里是官方网址、所有字段，以及如何分辨真假。"
-description: "免费、独立的泰国 TDAC 中文指南。官方网址 tdac.immigration.go.th，每个字段逐项讲解，假站警示，永远免费。"
+description: "免费、独立的泰国 TDAC 中文指南。官方网址 tdac.immigration.go.th，每个字段逐项讲解，永远免费。"
 date: 2026-04-22
 lastmod: 2026-08-03
 country: "thailand"
 weight: 10
-keywords: ["泰国入境卡", "TDAC", "泰国数字入境卡", "TDAC 怎么填", "泰国 TDAC 官网", "iVisa 泰国"]
+keywords: ["泰国入境卡", "TDAC", "泰国数字入境卡", "TDAC 怎么填", "泰国 TDAC 官网"]
 faq:
   - q: "TDAC 要收费吗？"
     a: "不收。任何向你收 TDAC 费用的人都是中介。泰国皇家移民局不为这份表单收取任何款项。官方网址是 tdac.immigration.go.th，永远免费。"
@@ -20,8 +20,8 @@ faq:
     a: "联系发卡行，以'未提供服务'（如果中介没有真正提交）或'欺诈性商业行为'（如果他们提交了但为免费服务收了钱）提起 chargeback。60 天内成功率最高。"
   - q: "我提交了表单但没收到确认邮件。"
     a: "查看垃圾邮件箱。1 小时后仍然没有就重新提交。官方站是幂等的，重复提交无害，最近一次为准。"
-  - q: "iVisa 是 TDAC 官方网站吗？"
-    a: "不是。iVisa 是商业签证中介，与泰国皇家移民局没有任何关联。2026 年 3 月，泰国当局公开点名 iVisa 是为免费 TDAC 收费的非官方站点。"
+  - q: "有网站要收我 TDAC 的钱，它是官方吗？"
+    a: "不是。TDAC 在 tdac.immigration.go.th 上是免费的。2026 年 3 月，泰国移民局公开警告有非官方站点为免费的 TDAC 收费。"
 layout: country-form
 ---
 
@@ -41,7 +41,7 @@ TDAC 是你进入泰国之前要填的一份免费表格。泰国政府于 2025 
 
 如果你现在 Google 搜 *"thailand digital arrival card"*，前三条结果都是付费广告，由中介向你收 20 到 90 美元来填一份免费表格。其中一些中介确实代你提交了真表单，另一些没有，你会在入境处发现。
 
-2026 年 3 月底，泰国移民局发言人 Pol Maj Gen Choengron Rimpadee [公开点名 iVisa 和 tdac.info](https://www.bangkokpost.com/thailand/general/3226524/immigration-warns-of-scam-digital-arrival-card-websites) 是收费的中介站点。移民局表示，至少 10% 的外国入境者使用过非官方网站并多付了钱。
+2026 年 3 月底，泰国移民局发言人 Pol Maj Gen Choengron Rimpadee [公开警告非官方站点](https://www.bangkokpost.com/thailand/general/3226524/immigration-warns-of-scam-digital-arrival-card-websites)对免费的 TDAC 收费。移民局表示，至少 10% 的外国入境者使用过非官方网站并多付了钱。
 
 ## 在动任何表单之前
 
@@ -49,7 +49,7 @@ TDAC 是你进入泰国之前要填的一份免费表格。泰国政府于 2025 
 
 不是任何带 `gov`、`official`、`immigration` 字样但不以 `.go.th` 结尾的变体。任何人都能注册一个 `.com`，但只有泰国政府机构能注册 `.go.th`。
 
-如果你不想相信我们的假站名单，很好。[这里是核查我们的方法](/zh/about/#methodology)：官方网址文件、校验器 JSON、经过 DNS 审计的假站域名，以及公开的 git 历史。
+如果你不想只相信我们，很好。[这里是核查我们的方法](/zh/about/#methodology)：官方网址文件、校验器 JSON，以及公开的 git 历史。
 
 {{< validator country="thailand" >}}
 
@@ -64,16 +64,6 @@ TDAC 共有 23 个字段，分布在 4 个部分：护照、行程、健康、�
 如果一个站点要你做这两件事中的任何一件，你就不在官方站点上。
 
 如需逐字段讲解、截图和常见错误说明，请阅读我们的 [TDAC 字段填写指南](/zh/thailand/how-to-fill/)。
-
-## 已知**不是** TDAC 的网站
-
-下面这些网站都在为一份免费表单收费。其中一些代你提交了真表单，另一些没有。
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="thailand" domain="ivisa.com" screenshot="/scams/ivisa-com-thailand.png" >}}
-</div>
-
-截图于 2026 年 4 月。存档可在 [archive.org](https://web.archive.org/) 查询。
 
 ## 常见问题
 

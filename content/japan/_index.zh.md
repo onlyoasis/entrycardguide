@@ -1,7 +1,7 @@
 ---
 title: "日本 Visit Japan Web 官方入口、免费二维码和防仿冒指南"
 kicker: "日本 Visit Japan Web 官方来源、免费二维码流程，以及如何避开假登录页。"
-description: "日本 Visit Japan Web 中文指南：日本数字厅官方 URL、免费入境二维码流程、字段填写和中介提醒。"
+description: "日本 Visit Japan Web 中文指南：日本数字厅官方 URL、免费入境二维码流程、字段填写。"
 lastmod: 2026-08-03
 ---
 
@@ -18,10 +18,6 @@ Visit Japan Web 是日本官方的入境相关二维码服务。稳定的政府�
 ### 2. 每个字段怎么填
 护照、航班、抵达日期、账号邮箱和二维码兜底说明。
 → [字段逐项指南](/zh/japan/how-to-fill/)
-
-### 3. iVisa 是官方吗？
-不是。签证服务和 Visit Japan Web 是两件事。
-→ [iVisa 官方性判断](/zh/japan/is-ivisa-official/)
 
 ## 速记要点
 

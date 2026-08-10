@@ -6,7 +6,7 @@ date: 2026-06-11
 lastmod: 2026-08-03
 country: "cambodia"
 weight: 10
-keywords: ["柬埔寨 e-Arrival", "arrival.gov.kh", "柬埔寨入境卡", "柬埔寨入境申报", "iVisa 柬埔寨"]
+keywords: ["柬埔寨 e-Arrival", "arrival.gov.kh", "柬埔寨入境卡", "柬埔寨入境申报"]
 faq:
   - q: "柬埔寨 e-Arrival 官方网站是什么？"
     a: "arrival.gov.kh。.gov.kh 后缀用于柬埔寨政府服务。"

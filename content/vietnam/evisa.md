@@ -6,14 +6,14 @@ date: 2026-04-26
 lastmod: 2026-08-03
 country: "vietnam"
 weight: 10
-keywords: ["vietnam e-visa", "vietnam evisa official", "evisa.gov.vn", "vietnam visa online", "vietnam e-visa fee", "is ivisa official vietnam", "vietnam visa scam"]
+keywords: ["vietnam e-visa", "vietnam evisa official", "evisa.gov.vn", "vietnam visa online", "vietnam e-visa fee", "vietnam visa scam"]
 faq:
   - q: "What is the real cost of a Vietnam e-visa?"
     a: "$25 USD for single-entry, $50 USD for multi-entry. This is the official Vietnamese government fee, paid directly through the Immigration Department's site at evisa.gov.vn. Anyone charging more is a middleman."
   - q: "What is the official Vietnam e-visa website?"
-    a: "The only official site is evisa.gov.vn. The .gov.vn suffix is restricted to Vietnamese government entities. Sites like vietnam-evisa.org or evisa-vietnam.com are commercial middlemen, not official."
-  - q: "Is iVisa the official Vietnam e-visa site?"
-    a: "No. iVisa is a commercial middleman. They typically charge $99-179 USD for the same e-visa that costs $25 directly through the Vietnamese Immigration Department."
+    a: "The only official site is evisa.gov.vn. The .gov.vn suffix is restricted to Vietnamese government entities. Any other domain is a commercial service, not official."
+  - q: "A site is charging me much more than $25 for the Vietnam e-visa. Is it official?"
+    a: "No. The government fee is $25 USD at evisa.gov.vn. Commercial sites typically charge $99-179 USD for the same e-visa."
   - q: "How long does the e-visa take?"
     a: "Standard processing is 3 working days. The official site offers an express option for an additional $50 USD government surcharge, processed in about 1 working day. Middlemen often charge extra on top of these government fees."
   - q: "Who needs a Vietnam e-visa?"
@@ -55,7 +55,7 @@ The Vietnamese Immigration Department has issued multiple public statements that
 
 Check the address bar. The official site is <mark>evisa.gov.vn</mark> and nothing else.
 
-Not `vietnam-evisa.org`. Not `evisa-vietnam.com`. Anyone can register `.com` or `.org`. Only Vietnamese government entities can register `.gov.vn`.
+Not a `.com`. Not a `.org`. Anyone can register those. Only Vietnamese government entities can register `.gov.vn`.
 
 {{< validator country="vietnam" >}}
 
@@ -68,18 +68,6 @@ A passport-style photo upload **is required** (this is one of the few cases wher
 Payment **is required** ($25 single, $50 multi) — but payment goes through the Vietnamese government's payment processor, not to a third party.
 
 If a site asks for your photo or payment but the URL is not `.gov.vn`, you are not on the official site.
-
-## Known sites that overcharge for the e-visa
-
-These sites all charge significantly more than $25 USD for the same Vietnamese government e-visa. Some submit a real application on your behalf. Some don't.
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="vietnam" domain="vietnam-evisa.org" screenshot="/scams/vietnam-evisa-org.png" >}}
-{{< scam-site country="vietnam" domain="evisa-vietnam.com" screenshot="/scams/evisa-vietnam-com.png" >}}
-{{< scam-site country="vietnam" domain="ivisa.com" screenshot="/scams/ivisa-com-vietnam.png" >}}
-</div>
-
-Screenshots captured April 2026. Archived snapshots available via [archive.org](https://web.archive.org/).
 
 ## How to tell any e-visa site is not the real one
 

@@ -15,3 +15,9 @@ https://www.entrycardguide.com/*  https://entrycardguide.com/:splat  301!
 /zh/countries/*  /zh/  301
 /zh/tags/  /zh/  301
 /zh/tags/*  /zh/  301
+
+# Retired middleman-listing pages (18 countries x 2 languages). The site now
+# covers only the official URL and how to fill each form; send old URLs to the
+# country hub. The /zh/ rule must precede the generic one.
+/zh/:country/is-ivisa-official/  /zh/:country/  301
+/:country/is-ivisa-official/  /:country/  301

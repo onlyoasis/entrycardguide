@@ -6,14 +6,14 @@ date: 2026-04-26
 lastmod: 2026-08-03
 country: "vietnam"
 weight: 10
-keywords: ["越南 e-visa", "越南电子签证", "越南签证官网", "越南 evisa 费用", "iVisa 越南", "越南签证骗局"]
+keywords: ["越南 e-visa", "越南电子签证", "越南签证官网", "越南 evisa 费用", "越南签证骗局"]
 faq:
   - q: "越南 e-visa 真实费用是多少？"
     a: "单次入境 $25 美元，多次入境 $50 美元。这是越南政府官方费用，直接通过移民局站点 evisa.gov.vn 支付。任何收得更多的都是中介。"
   - q: "越南 e-visa 的官方网址是什么？"
-    a: "唯一官方网址是 evisa.gov.vn。.gov.vn 后缀只对越南政府机构开放。vietnam-evisa.org 或 evisa-vietnam.com 这类站点都是商业中介，不是官方。"
-  - q: "iVisa 是越南 e-visa 官方网站吗？"
-    a: "不是。iVisa 是商业中介。同一份 e-visa 通过越南移民局直接申请只需 $25 美元，他们通常收 $99-179 美元。"
+    a: "唯一官方网址是 evisa.gov.vn。.gov.vn 后缀只对越南政府机构开放。其他任何域名都是商业服务，不是官方。"
+  - q: "有网站收的钱远超 $25，它是越南 e-visa 官方吗？"
+    a: "不是。政府费用是 $25 美元，入口在 evisa.gov.vn。商业站点对同一份 e-visa 通常收 $99-179 美元。"
   - q: "越南 e-visa 处理多久？"
     a: "标准处理 3 个工作日。官方站本身有加急选项，加 $50 美元政府附加费，大约 1 个工作日处理完。中介在这两层政府费用之上还会再加价。"
   - q: "谁需要越南 e-visa？"
@@ -55,7 +55,7 @@ Google 搜 *"vietnam e-visa"*，结果前几条会看到收 $89、$129、$179 �
 
 看一眼地址栏。官方网址是 <mark>evisa.gov.vn</mark>，没有别的。
 
-不是 `vietnam-evisa.org`。不是 `evisa-vietnam.com`。任何人都能注册 `.com` 或 `.org`。只有越南政府机构能注册 `.gov.vn`。
+不是 `.com`，也不是 `.org`。任何人都能注册这些后缀。只有越南政府机构能注册 `.gov.vn`。
 
 {{< validator country="vietnam" >}}
 
@@ -68,18 +68,6 @@ Google 搜 *"vietnam e-visa"*，结果前几条会看到收 $89、$129、$179 �
 **需要付款**（单次 $25，多次 $50）—— 但付款走越南政府的支付处理器，不是第三方。
 
 如果一个站点要你上传照片或付款，但 URL 不是 `.gov.vn`，你就不在官方站点上。
-
-## 已知对 e-visa 加价的网站
-
-下面这些站点都对同一份越南政府 e-visa 加价远超 $25 美元。其中一些代你提交了真申请，另一些没有。
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="vietnam" domain="vietnam-evisa.org" screenshot="/scams/vietnam-evisa-org.png" >}}
-{{< scam-site country="vietnam" domain="evisa-vietnam.com" screenshot="/scams/evisa-vietnam-com.png" >}}
-{{< scam-site country="vietnam" domain="ivisa.com" screenshot="/scams/ivisa-com-vietnam.png" >}}
-</div>
-
-截图于 2026 年 4 月。存档可在 [archive.org](https://web.archive.org/) 查询。
 
 ## 如何分辨任何 e-visa 站点不是真站
 

@@ -19,10 +19,6 @@ What the `.go.kr` portal does and what it does not replace.
 Passport, flight, arrival date, contact details, and system mix-ups.
 → [Field-by-field guide](/korea/how-to-fill/)
 
-### 3. Is iVisa official?
-No. This page separates e-Arrival Card from K-ETA, visas, and paid services.
-→ [iVisa official-site check](/korea/is-ivisa-official/)
-
 ## The fast facts
 
 - **Official URL:** `www.e-arrivalcard.go.kr`.

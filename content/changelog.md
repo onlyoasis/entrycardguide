@@ -1,8 +1,8 @@
 ---
 title: "Changelog"
-description: "What changed on entrycardguide.com: government policy updates, new countries, content corrections, and scam-site audits."
+description: "What changed on entrycardguide.com: government policy updates, new countries, and content corrections."
 date: 2026-04-27
-lastmod: 2026-06-17
+lastmod: 2026-08-10
 url: "/changelog/"
 ---
 
@@ -11,11 +11,23 @@ A running log of substantive updates. We publish a new entry when:
 - A government immigration agency changes a form field, fee, or eligibility rule
 - A new arrival-card country launches and we cover it
 - We find and correct a factual error in an existing guide
-- We add or remove a domain from the `scam_sites` list
+- We add or retire a whole category of content
 
 We do **not** log every typo fix or layout tweak. For that, see [the git history](https://github.com/onlyoasis/entrycardguide/commits/main).
 
 ---
+
+## 2026-08-10 - Middleman listings retired
+
+The site no longer publishes pages listing the commercial sites that charge for each country's form. Those 36 pages drew almost no readers while carrying the whole legal exposure of naming third parties, and a July re-verification found that most of the companies now disclose their non-official status themselves, which made the original framing wrong.
+
+What replaces them: nothing. The official URL and the field-by-field guide already carry the message that matters, and they are the pages people actually read.
+
+- Removed: `/{country}/is-ivisa-official/` for all 18 countries, English and Chinese
+- Removed: the evidence-card galleries on the main form pages and their 14 screenshots
+- Kept: every official URL, `last_verified` date, fee statement, and field guide
+- Kept: the price comparisons, minus the company names — the official total versus what commercial sites charge is still on each guide
+- Old URLs 301-redirect to the country hub
 
 ## 2026-06-17 - URL verification dates corrected for unchanged official links
 
@@ -55,7 +67,7 @@ Added a public methodology section to `/about/`, a longer `/trust/` page, and vi
 Added three countries with full English and Chinese coverage. Vietnam is the first country covered where the underlying form has a real government fee, so the framing is "middlemen overcharge" rather than "free form sold for money."
 
 - New: `/vietnam/`, `/indonesia/`, `/singapore/`
-- New: country guide, how-to-fill, and iVisa/offical-site explainer for each
+- New: country guide, how-to-fill, and official-site explainer for each
 - Updated: site navigation now lists seven countries
 
 ---
@@ -81,7 +93,7 @@ Added automated output checks for robots.txt and sitemap generation after the Cl
 
 ## 2026-04-22 - Thailand TDAC added
 
-First country published. Covers the full TDAC flow at `tdac.immigration.go.th`, documents the iVisa middleman situation publicly named by Thai immigration in March 2026, and includes an in-browser validator.
+First country published. Covers the full TDAC flow at `tdac.immigration.go.th`, documents the middleman situation publicly named by Thai immigration in March 2026, and includes an in-browser validator.
 
 - New: `/thailand/tdac/`, `/thailand/how-to-fill/`, `/thailand/is-ivisa-official/`
 - New: `data/official_urls/thailand.toml`, `data/rules/thailand.json`

@@ -19,10 +19,6 @@ No. An approved application costs **USD $40.27**. See the official fee split, va
 Passport, name, contact, employer, U.S. contact, and optional social media details.
 → [Field-by-field guide](/usa/how-to-fill/)
 
-### 3. Is iVisa the official ESTA site?
-No. Compare the official USD $40.27 total with commercial prices from USD $109.99 to $140.
-→ [Check ESTA middlemen](/usa/is-ivisa-official/)
-
 ## The fast facts
 
 - **Official total if approved:** USD $40.27. CBP charges a $4.00 processing fee, then $36.27 after approval. If the application is refused, only the $4.00 processing fee is charged.

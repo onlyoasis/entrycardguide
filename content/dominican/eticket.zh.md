@@ -6,7 +6,7 @@ date: 2026-04-24
 lastmod: 2026-04-26
 country: "dominican"
 weight: 10
-keywords: ["多米尼加 E-Ticket", "多米尼加入境卡", "蓬塔卡纳入境表", "DR E-Ticket", "iVisa 多米尼加"]
+keywords: ["多米尼加 E-Ticket", "多米尼加入境卡", "蓬塔卡纳入境表", "DR E-Ticket"]
 faq:
   - q: "多米尼加 E-Ticket 要收费吗？"
     a: "不收。DGM 不为 E-Ticket 收费。官方网址是 eticket.migracion.gob.do，永远免费。你看到的任何收费都来自中介。"
@@ -18,8 +18,8 @@ faq:
     a: "可以。E-Ticket 支持团体提交。一名成年人填表，添加每位家庭成员作为额外旅客。一家人共用同一个二维码出行。把它存在带头者的手机上。"
   - q: "什么时候填 E-Ticket？"
     a: "抵达前 72 小时内。DGM 推荐抵达前 24 至 48 小时。再早一些也可以，但航班信息可能还没敲定。"
-  - q: "iVisa 是 DR E-Ticket 官方网站吗？"
-    a: "不是。iVisa 是为免费的多米尼加 E-Ticket 收费的商业中介。它与多米尼加移民局总局没有任何关联。"
+  - q: "有网站要收我 E-Ticket 的钱，它是官方吗？"
+    a: "不是。E-Ticket 在官方 DGM 网站上是免费的。任何收费的站点都是商业服务，与多米尼加移民局总局没有关联。"
 layout: country-form
 ---
 
@@ -45,7 +45,7 @@ Google 搜 *"Dominican Republic E-Ticket"*，结果前几条里有数条来自�
 
 看一眼地址栏。官方网址是 <mark>eticket.migracion.gob.do</mark>，没有别的。
 
-像 `eticket-dominican.com` 以及其他用 `.com`、`.org`、`.net` 的仿冒域名都是商业中介。任何人都能注册这些后缀。只有多米尼加政府机构能注册 `.gob.do`。
+任何用 `.com`、`.org`、`.net` 的仿冒域名都是商业服务，不是 DGM。任何人都能注册这些后缀。只有多米尼加政府机构能注册 `.gob.do`。
 
 {{< validator country="dominican" >}}
 
@@ -60,17 +60,6 @@ E-Ticket 大约有 10 个核心字段，加一段海关申报：旅客身份、�
 如果一个站点要你做这两件事中的任何一件，你就不在官方站点上。
 
 如需逐字段讲解，请阅读我们的 [E-Ticket 字段填写指南](/zh/dominican/how-to-fill/)。
-
-## 已知**不是** E-Ticket 的网站
-
-下面这些网站都在为一份免费表单收费。其中一些代你提交了真 E-Ticket，另一些没有。
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-{{< scam-site country="dominican" domain="eticket-dominican.com" screenshot="/scams/eticket-dominican-com.png" >}}
-{{< scam-site country="dominican" domain="ivisa.com" screenshot="/scams/ivisa-com-dominican.png" >}}
-</div>
-
-截图于 2026 年 4 月。存档可在 [archive.org](https://web.archive.org/) 查询。
 
 ## 常见问题
 

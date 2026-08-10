@@ -10,7 +10,7 @@ eyebrow: "参考页 · 可直接转发本链接"
 
 当别人问“哪个才是官方入境卡官网”时，可以直接引用这一页。
 
-下面每个 URL 都来自仓库里的 [`data/official_urls`](https://github.com/onlyoasis/entrycardguide/tree/main/data/official_urls)。每个国家都附带主指南、逐字段填写指南，以及“iVisa 是官方吗”的解释页。
+下面每个 URL 都来自仓库里的 [`data/official_urls`](https://github.com/onlyoasis/entrycardguide/tree/main/data/official_urls)。每个国家都附带主指南和逐字段填写指南。
 
 {{< official-directory >}}
 
@@ -19,6 +19,6 @@ eyebrow: "参考页 · 可直接转发本链接"
 1. 先看政府域名后缀：`.go.th`、`.gov.my`、`.gov.sg`、`.go.id`、`.gob.mx`、`.gob.do`、`.gov.vn`、`.gov.ph`、`.gov.kh`、`.go.jp` 或 `.go.kr`。
 2. 打开对应国家指南，对照 GitHub 里的 TOML 文件。
 3. 如果页面提供了存档快照，可以同时查看 archive.org。
-4. 如果某个商业站点要求你为免费表单付款，对照指南里的假站截图和证据卡。
+4. 如果某个站点要求你为上表中标注免费的表单付款，它就是商业服务，不是政府。
 
 如果你发现官方 URL 已经变化，请提交 issue 或 PR，并附上国家、旧网址、新网址和政府站截图。

@@ -6,7 +6,7 @@ date: 2026-06-11
 lastmod: 2026-08-03
 country: "korea"
 weight: 10
-keywords: ["korea e-arrival card", "e-arrivalcard.go.kr", "korea arrival card", "south korea arrival form", "is ivisa official korea"]
+keywords: ["korea e-arrival card", "e-arrivalcard.go.kr", "korea arrival card", "south korea arrival form"]
 faq:
   - q: "What is the official Korea e-Arrival Card website?"
     a: "www.e-arrivalcard.go.kr. The .go.kr suffix is reserved for Korean government services."

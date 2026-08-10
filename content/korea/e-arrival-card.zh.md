@@ -6,7 +6,7 @@ date: 2026-06-11
 lastmod: 2026-08-03
 country: "korea"
 weight: 10
-keywords: ["韩国 e-Arrival Card", "e-arrivalcard.go.kr", "韩国入境卡", "韩国入境表", "iVisa 韩国"]
+keywords: ["韩国 e-Arrival Card", "e-arrivalcard.go.kr", "韩国入境卡", "韩国入境表"]
 faq:
   - q: "韩国 e-Arrival Card 官方网站是什么？"
     a: "www.e-arrivalcard.go.kr。.go.kr 后缀用于韩国政府服务。"

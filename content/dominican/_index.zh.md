@@ -1,7 +1,7 @@
 ---
 title: "多米尼加 E-Ticket 官方网站、免费填写和二维码指南"
 kicker: "关于多米尼加 E-Ticket 你需要知道的一切，不必经手任何中介。"
-description: "多米尼加 E-Ticket 中文指南：官方 DGM 网址 eticket.migracion.gob.do、免费填写、二维码、iVisa 是否官方和假站警示。"
+description: "多米尼加 E-Ticket 中文指南：官方 DGM 网址 eticket.migracion.gob.do、免费填写、二维码、每个字段怎么填。"
 lastmod: 2026-04-27
 ---
 
@@ -20,10 +20,6 @@ lastmod: 2026-04-27
 ### 2. 每个字段怎么填
 逐字段讲解，常见错误和真实原因。
 → [字段逐项指南](/zh/dominican/how-to-fill/)
-
-### 3. iVisa（或其他网站）是官方 E-Ticket 吗？
-不是。这里讲清每个仿冒站点拿你的钱做什么。
-→ [假站图鉴](/zh/dominican/is-ivisa-official/)
 
 ## 速记要点
 

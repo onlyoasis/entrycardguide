@@ -24,7 +24,7 @@ Names accept the Roman-script spelling used by the official form, including Fren
 
 ## Before payment
 
-Confirm that the application is on `canada.ca` and the charge is CAD $7. iVisa advertised prices from USD $89.99, while canadavisas.net displayed a USD $99 final price on July 14, 2026. Those totals include commercial help, not a higher IRCC fee.
+Confirm that the application is on `canada.ca` and the charge is CAD $7. Commercial sites advertised prices from USD $89.99 to a USD $99 final price on July 14, 2026. Those totals include commercial help, not a higher IRCC fee.
 
 Use an email address you control. IRCC sends the decision and any document request there. After approval, compare the passport number in the email with the passport photo page. If they differ, IRCC requires a new application.
 

@@ -1,7 +1,7 @@
 ---
 title: "Malaysia"
 kicker: "Everything you need to know about the Malaysia Digital Arrival Card (MDAC), without paying a middleman."
-description: "Free, independent guides to Malaysia's MDAC. Official URL, every field explained, scam-site warnings."
+description: "Free, independent guides to Malaysia's MDAC. Official URL, every field explained."
 lastmod: 2026-08-03
 ---
 
@@ -18,10 +18,6 @@ Who must file, who is exempt, and how to tell the official Immigration Departmen
 ### 2. How to fill every field
 Field-by-field walkthrough with common errors and what they mean.
 → [Field-by-field guide](/malaysia/how-to-fill/)
-
-### 3. Is iVisa (or any other site) the official MDAC?
-No. Here is what each lookalike site actually does with your money.
-→ [Scam site gallery](/malaysia/is-ivisa-official/)
 
 ## The fast facts
 

@@ -66,7 +66,7 @@ Check the live port list before booking. A valid e-Visa does not make an unliste
 
 The official visa system is `indianvisaonline.gov.in`. Read the ending from right to left: it must end in **`.gov.in`**. A domain containing words such as india, visa, government, online, or arrival is not official unless that exact suffix is present.
 
-For example, `earrivalcardindia.com` and `indiaearrivalcardgo.com` look relevant but do not end in `.gov.in`. On July 14, 2026, they advertised £15 and $59.99 services for the free card.
+A domain packed with words like india, arrival, and card can still be commercial: on July 14, 2026, such sites advertised £15 and $59.99 services for the free card.
 
 Commercial e-Visa packages can also cost much more. One documented site advertised $99 for 30 days, $149 for 1 year, and $399 for 5 years. Those were bundled totals, not the standard government price table.
 
