@@ -3,7 +3,7 @@ title: "新加坡 SGAC 入境卡 2026 完整指南：官方 ICA 网址、免费�
 kicker: "新加坡入境卡是免费的。这里是官方 ICA 网址、所有字段、以及如何分辨真假。"
 description: "免费、独立的新加坡官方 SGAC 中文指南。官方网址 eservices.ica.gov.sg，每个字段逐项讲解，所有外国入境者必填。"
 date: 2026-04-26
-lastmod: 2026-08-10
+lastmod: 2026-08-17
 country: "singapore"
 weight: 10
 keywords: ["新加坡入境卡", "SGAC", "新加坡 SGAC 官网", "ICA 入境卡", "新加坡入境表"]

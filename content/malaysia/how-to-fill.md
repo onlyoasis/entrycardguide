@@ -3,7 +3,7 @@ title: "How to Fill the Malaysia MDAC: Field Guide (2026)"
 kicker: "Field-by-field walkthrough of the official Immigration Department MDAC with common errors and what they mean. 7 minutes total."
 description: "Field guide to the Malaysia Digital Arrival Card (MDAC): passport, flight, arrival date and address fields, plus the errors that get it rejected. Free."
 date: 2026-04-24
-lastmod: 2026-08-10
+lastmod: 2026-08-17
 country: "malaysia"
 weight: 20
 layout: how-to-fill

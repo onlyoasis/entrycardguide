@@ -3,7 +3,7 @@ title: "越南 E-Visa 申请表怎么填 2026：照片要求和易错字段"
 kicker: "越南官方 E-Visa 表单字段逐项讲解，常见错误与真实原因。约 12 分钟看完。"
 description: "越南 E-Visa 申请表怎么填：按官方 evisa.gov.vn 表单讲解照片、护照、入境口岸和付款字段。官方费用单次 $25、多次 $50，不含中介加价。"
 date: 2026-04-26
-lastmod: 2026-08-10
+lastmod: 2026-08-17
 country: "vietnam"
 weight: 20
 keywords: ["越南 e-visa 怎么填", "越南电子签证字段", "越南签证申请帮助", "越南 e-visa 照片"]

@@ -2,7 +2,7 @@
 title: "Malaysia"
 kicker: "Everything you need to know about the Malaysia Digital Arrival Card (MDAC), without paying a middleman."
 description: "Free, independent guides to Malaysia's MDAC. Official URL, every field explained."
-lastmod: 2026-08-10
+lastmod: 2026-08-17
 ---
 
 The Malaysia Digital Arrival Card (MDAC) is a free digital form required for most foreign visitors since January 2024. It is accepted only at `imigresen-online.imi.gov.my/mdac/main`.
