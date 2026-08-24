@@ -3,7 +3,7 @@ title: "Thailand TDAC: Official Site, Free Guide, How to Avoid Scams (2026)"
 kicker: "10% of foreign arrivals to Thailand in 2026 paid a non-official site to submit a free form. Here is the official site and every field it asks."
 description: "Free, independent 2026 guide to Thailand's Digital Arrival Card (TDAC). Official URL, every field explained, no fees."
 date: 2026-04-22
-lastmod: 2026-08-17
+lastmod: 2026-08-24
 country: "thailand"
 weight: 10
 keywords: ["thailand digital arrival card", "TDAC", "thailand TDAC official", "thailand arrival card free", "tdac.immigration.go.th"]
