@@ -23,6 +23,11 @@
   {{- with .Params.kicker }}
   <p class="text-muted mt-lg max-w-[720px]" style="font-size: 21px; line-height: 1.5;">{{ . }}</p>
   {{- end }}
+
+  <div class="mt-lg pt-4 border-t border-rule flex items-baseline gap-4 flex-wrap">
+    <span class="text-meta font-mono uppercase text-muted">{{ i18n "share_rail_label" }}</span>
+    {{- partial "share-buttons.html" . -}}
+  </div>
 </section>
 
 {{- /* Last-verified strip ------------------------------------------- */ -}}
@@ -49,8 +54,5 @@
 </article>
 
 {{- partial "share-source.html" . -}}
-<div class="mt-md">
-  {{- partial "share-buttons.html" . -}}
-</div>
 
 {{ end }}

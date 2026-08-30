@@ -26,15 +26,17 @@
       <span>Also on <a href="https://web.archive.org/web/{{ .Permalink }}" class="text-muted underline underline-offset-2">archive.org</a></span>
     </div>
 
+    <div class="lg:hidden -mt-6 mb-10 flex items-baseline gap-4 flex-wrap">
+      <span class="text-meta font-mono uppercase text-muted">{{ i18n "share_rail_label" }}</span>
+      {{- partial "share-buttons.html" . -}}
+    </div>
+
     <div class="prose prose-lg max-w-none">
       {{ .Content }}
     </div>
 
     {{- partial "share-source.html" . -}}
 
-    <div class="lg:hidden mt-md">
-      {{- partial "share-buttons.html" . -}}
-    </div>
     {{- if .Section }}
     <div class="lg:hidden">
       {{- partial "affiliate-footer.html" "bottom" -}}

@@ -20,6 +20,11 @@
     Who runs this, why it exists, and what we will never do.
     {{- end -}}
   </h1>
+
+  <div class="mt-lg pt-4 border-t border-rule flex items-baseline gap-4 flex-wrap">
+    <span class="text-meta font-mono uppercase text-muted">{{ i18n "share_rail_label" }}</span>
+    {{- partial "share-buttons.html" . -}}
+  </div>
 </section>
 
 {{- /* Body ----------------------------------------------------------- */ -}}
@@ -28,8 +33,5 @@
 </article>
 
 {{- partial "share-source.html" . -}}
-<div class="mt-md">
-  {{- partial "share-buttons.html" . -}}
-</div>
 
 {{ end }}
