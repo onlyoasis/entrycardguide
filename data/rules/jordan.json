@@ -1,0 +1,150 @@
+{
+  "country": "jordan",
+  "officialUrl": "https://www.jordanpass.jo/buynow.aspx?type=Wanderer",
+  "lastVerified": "2026-08-30",
+  "source": "https://www.jordanpass.jo/buynow.aspx?type=Wanderer form HTML, read 2026-08-30. The live page carries maxlength=100 on the name and both email inputs, maxlength=150 on the telephone and maxlength=250 on the residency address, and its inline validator script registers the email expression ^([\\w\\.\\-]+)@([\\w\\.\\-]+)((\\.(\\w){2,4})+)$ with the error strings Full name required, You must enter the email, Not Valid Email, Telephone is required, Purpose visit is required and Nights is required, plus validator titles You must specify type of accommodation, You must specify how many nights are you spending in Jordan, You must specify ticket type and You must specify the number of tickets. Purpose, accommodation, city of stay, nights, airline, travel party, arrival month, ticket type and ticket count are dropdowns with fixed options, so no text input exists to validate. No local validator is mounted for this country.",
+  "fields": {
+    "eligibility": {
+      "type": "nationality",
+      "label": "Passport eligibility",
+      "required": true,
+      "placeholder": "Not on the Interior Ministry restricted list",
+      "help": "The Interior Ministry lists 53 restricted nationalities that need prior approval. The pass FAQ also states the pass is not available to Arabic nationality holders and names South Africa, Malaysia, Hong Kong, Japan and Vatican City as exempt from visa fees.",
+      "errors": {"required": "Confirm your passport is eligible before paying"}
+    },
+    "buy_before_arrival": {
+      "type": "text",
+      "label": "Purchase timing",
+      "required": true,
+      "placeholder": "Bought before arrival",
+      "help": "The terms state that buying the Jordan Pass after arrival does not allow the pass holder to benefit from the entry visa exemption.",
+      "errors": {"required": "Confirm you are buying before arrival"}
+    },
+    "nights_minimum": {
+      "type": "text",
+      "label": "Minimum stay for the visa waiver",
+      "required": true,
+      "placeholder": "2 whole nights (3 days)",
+      "help": "The FAQ says the pass waives the visa fees only if you stay a minimum of 2 whole nights (3 days), and that leaving earlier means paying at the airport.",
+      "errors": {"required": "Confirm the stay length"}
+    },
+    "visa_fee_covered": {
+      "type": "text",
+      "label": "Which visa fee is waived",
+      "required": true,
+      "placeholder": "Single entry only",
+      "help": "The FAQ says the pass waives the visa fees of only a single entry visa. The Ministry of Tourism prices that visa at JD 40 for one month on arrival at the airport; JD 60 and JD 120 embassy visas are not covered.",
+      "errors": {"required": "Confirm the visa type the pass covers"}
+    },
+    "full_name": {
+      "type": "name",
+      "label": "Your Name",
+      "required": true,
+      "maxLength": 100,
+      "placeholder": "As on the passport you will show at the border",
+      "help": "The live form caps this field at 100 characters and its validator shows Full name required when it is empty. The pass is checked against the passport at the visa office and at every site.",
+      "errors": {"required": "Full name required", "tooLong": "The form allows 100 characters"}
+    },
+    "email": {
+      "type": "email",
+      "label": "Your Email Address",
+      "required": true,
+      "maxLength": 100,
+      "pattern": "^([\\w\\.\\-]+)@([\\w\\.\\-]+)((\\.(\\w){2,4})+)$",
+      "placeholder": "The inbox you check before the trip",
+      "help": "The live form caps this field at 100 characters, its validator shows You must enter the email and Not Valid Email, and the pass itself is delivered to this address as a PDF and an image.",
+      "errors": {"required": "You must enter the email", "invalidFormat": "Not Valid Email", "tooLong": "The form allows 100 characters"}
+    },
+    "confirm_email": {
+      "type": "email",
+      "label": "Re-enter Email Address",
+      "required": true,
+      "maxLength": 100,
+      "placeholder": "Same address again",
+      "help": "The live form caps this field at 100 characters and compares it with the first email field before payment.",
+      "errors": {"required": "You must enter the email", "invalidFormat": "Not Valid Email", "tooLong": "The form allows 100 characters"}
+    },
+    "telephone": {
+      "type": "phone",
+      "label": "Telephone",
+      "required": true,
+      "maxLength": 150,
+      "placeholder": "A number that works while abroad",
+      "help": "The live form caps this field at 150 characters and its validator shows Telephone is required when it is empty.",
+      "errors": {"required": "Telephone is required", "tooLong": "The form allows 150 characters"}
+    },
+    "purpose_of_visit": {
+      "type": "text",
+      "label": "What is the main purpose of your visit?",
+      "required": true,
+      "placeholder": "Dropdown on the official form",
+      "help": "The live form offers fixed choices such as Visit historical sites, Experiencing local culture, Religious, Business and Medical treatment, and shows Purpose visit is required when nothing is selected.",
+      "errors": {"required": "Purpose visit is required"}
+    },
+    "accommodation_type": {
+      "type": "text",
+      "label": "What type of accommodation are you staying at?",
+      "required": true,
+      "placeholder": "Dropdown on the official form",
+      "help": "The live form offers hotel star categories, Airbnb and serviced apartments, and its validator reads You must specify type of accommodation.",
+      "errors": {"required": "You must specify type of accommodation"}
+    },
+    "city_of_stay": {
+      "type": "text",
+      "label": "City of Stay",
+      "required": true,
+      "placeholder": "One of 12 governorates",
+      "help": "The live dropdown lists Amman, Irbid, Zarqa, Balqa, Mafraq, Karak, Tafilah, Ma'an, Madaba, Jerash, Ajloun and Aqaba governorates.",
+      "errors": {"required": "Choose the governorate you will stay in"}
+    },
+    "address_in_jordan": {
+      "type": "text",
+      "label": "Residency Address in Jordan",
+      "required": true,
+      "maxLength": 250,
+      "placeholder": "Hotel name and street",
+      "help": "The live form caps this field at 250 characters. Keep the booking confirmation at hand in case the address has to be checked.",
+      "errors": {"required": "Enter the address you will stay at", "tooLong": "The form allows 250 characters"}
+    },
+    "nights_in_jordan": {
+      "type": "text",
+      "label": "How many nights are you spending in Jordan?",
+      "required": true,
+      "placeholder": "Dropdown runs from 2 to 30",
+      "help": "The live dropdown starts at 2, which matches the two-whole-nights condition for the visa waiver, and its validator reads Nights is required.",
+      "errors": {"required": "Nights is required"}
+    },
+    "month_of_arrival": {
+      "type": "text",
+      "label": "Expected Month of Arrival",
+      "required": true,
+      "placeholder": "Month dropdown, for example 09-2026",
+      "help": "The live form asks for the arrival month, not an exact date, and the pass stays usable for 3 months after purchase.",
+      "errors": {"required": "Choose your expected month of arrival"}
+    },
+    "ticket_type": {
+      "type": "text",
+      "label": "Ticket Type",
+      "required": true,
+      "placeholder": "Jordan Wanderer - 70JD / Explorer - 75JD / Expert - 80JD",
+      "help": "The live dropdown lists the three packages. The only difference is the number of consecutive Petra days: 1, 2 or 3.",
+      "errors": {"required": "You must specify ticket type"}
+    },
+    "number_of_tickets": {
+      "type": "text",
+      "label": "Number Of Tickets",
+      "required": true,
+      "placeholder": "One per traveller aged 12 and over",
+      "help": "The live form asks for a count and its validator reads You must specify the number of tickets. Children under 12 enter the sites free with their parents.",
+      "errors": {"required": "You must specify the number of tickets"}
+    },
+    "printed_copy": {
+      "type": "text",
+      "label": "Printed copy of the pass",
+      "required": true,
+      "placeholder": "Printed PDF at the visa office",
+      "help": "The FAQ says to show the pass printed out to the passport officer because the QR code might be unreadable through a cell phone, and the same applies at every included site.",
+      "errors": {"required": "Carry a printed copy of the pass"}
+    }
+  }
+}

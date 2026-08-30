@@ -1,0 +1,112 @@
+{
+  "country": "russia",
+  "officialUrl": "https://evisa.kdmid.ru/",
+  "lastVerified": "2026-08-30",
+  "source": "Characteristics of the unified e-visa and conditions for its issuance at https://evisa.kdmid.ru/Home/Instruction, plus the information portal pages https://electronic-visa.kdmid.ru/index_en.html, /country_en.html, /checkpoint_en.html, /faq_en.html and /support_en.html, read 2026-08-30. The application itself sits behind a personal-account login at https://evisa.kdmid.ru/, so no field regexes, character limits or official validation error strings could be read; no pattern key is used and no local validator is mounted.",
+  "fields": {
+    "eligibility": {
+      "type": "nationality",
+      "label": "E-visa nationality eligibility",
+      "required": true,
+      "placeholder": "Check the 64-state list",
+      "help": "The ministry lists 64 foreign states whose nationals can apply for the unified e-visa. A passport outside that list needs a regular visa from a Russian diplomatic mission or consular post.",
+      "errors": {"required": "Check the 64-state list before applying"}
+    },
+    "entry_purpose": {
+      "type": "text",
+      "label": "Purpose of travel",
+      "required": true,
+      "placeholder": "Private or business visit, tourism, or an event",
+      "help": "The e-visa covers a private or business visit, tourism, and participation in scientific, cultural, socio-political, economic or sporting events. There is no transit option in the application; other purposes need a regular visa.",
+      "errors": {"required": "Select a purpose the e-visa covers"}
+    },
+    "children": {
+      "type": "text",
+      "label": "Children travelling with you",
+      "required": true,
+      "placeholder": "One separate application per child",
+      "help": "Children registered in a parent's passport still need their own e-visa. Applicants under 6 years of age on the date of submission pay no consular fee.",
+      "errors": {"required": "Confirm the number of separate applications"}
+    },
+    "insurance": {
+      "type": "text",
+      "label": "Medical insurance valid in Russia",
+      "required": true,
+      "placeholder": "Valid for the whole stay",
+      "help": "Travellers on a unified e-visa must hold medical insurance valid in Russia for the entire stay. Some nationalities are exempt on the basis of reciprocity; the application asks about it, and missing insurance data alone is not a reason for refusal.",
+      "errors": {"required": "Confirm medical insurance"}
+    },
+    "payment": {
+      "type": "text",
+      "label": "Consular fee payment",
+      "required": true,
+      "placeholder": "Foreign bank card only",
+      "help": "The amount appears at the payment step. Invoices are issued in dirhams or yuan, Russian bank cards are not accepted, confirmation takes 20 to 45 minutes, and the fee is not refunded whatever the outcome.",
+      "errors": {"required": "Confirm the payment rules before applying"}
+    },
+    "email": {
+      "type": "email",
+      "label": "Email address for notifications",
+      "required": true,
+      "placeholder": "you@example.com",
+      "help": "Notifications about progress and results go to this address and to your personal account. The portal asks applicants to avoid Gmail because delivery has been unstable and delayed.",
+      "errors": {"required": "An email address is required"}
+    },
+    "passport_number": {
+      "type": "passport",
+      "label": "Passport number",
+      "required": true,
+      "placeholder": "As printed in the machine-readable zone",
+      "help": "The passport must be machine-readable. If the form rejects your passport number, the official advice is to write to evisa_info@kdmid.ru with a photo of the passport attached; the ministry does not publish the rule the field applies.",
+      "errors": {"required": "Passport number is required"}
+    },
+    "passport_scan": {
+      "type": "text",
+      "label": "Photo of the passport data page",
+      "required": true,
+      "placeholder": "JPEG",
+      "help": "The ministry asks for a digital photo of your passport data in JPEG format, taken from the passport you will use to cross the border.",
+      "errors": {"required": "A passport data page image is required"}
+    },
+    "face_photo": {
+      "type": "text",
+      "label": "Digital face photo",
+      "required": true,
+      "placeholder": "35x45 aspect ratio, JPEG",
+      "help": "Taken within 6 months, full face, neutral expression, plain light background, no shadows. The photo must be rectangular with a 35x45 aspect ratio and the face must take up 70-80 percent of it.",
+      "errors": {"required": "A face photo is required"}
+    },
+    "passport_validity": {
+      "type": "text",
+      "label": "Passport validity and stamp space",
+      "required": true,
+      "placeholder": "At least 6 months from the date you apply",
+      "help": "The passport must be issued by your country of nationality, machine-readable, valid for at least 6 months from the date the application is submitted, and have sufficient space for border crossing stamps.",
+      "errors": {"required": "Confirm passport validity and stamp space"}
+    },
+    "entry_date": {
+      "type": "date",
+      "label": "Intended date of entry",
+      "required": true,
+      "placeholder": "4 to 86 days ahead",
+      "help": "The application can be submitted no earlier than 86 days and no later than 4 days before the expected entry date. The site's own calculator asks for the date in DD.MM.YYYY format.",
+      "errors": {"required": "Intended date of entry is required"}
+    },
+    "stay_length": {
+      "type": "text",
+      "label": "Length of stay",
+      "required": true,
+      "placeholder": "No more than 30 days",
+      "help": "The stay may not exceed 30 days from the date of entry, and the exit date cannot be later than 120 days after issue. The ministry warns that the day of arrival and the day of departure both count, so 30 days is not 720 hours of net time.",
+      "errors": {"required": "Confirm the stay fits the 30-day limit"}
+    },
+    "exit_checkpoint": {
+      "type": "text",
+      "label": "Entry and exit crossing points",
+      "required": true,
+      "placeholder": "Both on the approved list",
+      "help": "The e-visa is valid for entry and for exit only through the border crossing points approved by the government. The published list is grouped into air, road, rail, sea and pedestrian points.",
+      "errors": {"required": "Check both crossing points against the list"}
+    }
+  }
+}

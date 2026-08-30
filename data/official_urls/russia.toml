@@ -1,0 +1,85 @@
+# Russia — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-08-30
+
+[evisa]
+url = "https://evisa.kdmid.ru/"
+name = "Unified e-visa application and personal account"
+agency = "Consular Department, Ministry of Foreign Affairs of the Russian Federation"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://evisa.kdmid.ru/"
+notes = "Read 2026-08-30. This is the application host named by the ministry's own information portal. Applications are filed only from a personal account on this site or in the ministry's mobile app, so the form itself could not be read without an account. The landing page names the supported browsers as Mozilla Firefox, Google Chrome and Microsoft Edge, and links the Instruction page that carries the Characteristics of the unified e-visa and conditions for its issuance."
+
+[instruction]
+url = "https://evisa.kdmid.ru/Home/Instruction"
+name = "Characteristics of the unified e-visa and conditions for its issuance"
+agency = "Consular Department, Ministry of Foreign Affairs of the Russian Federation"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://evisa.kdmid.ru/Home/Instruction"
+notes = "Read 2026-08-30. Single entry, 120 days of validity from issue, a stay of no more than 30 days from entry, and a warning that the day of arrival and the day of departure both count. Applications open 86 days and close 4 days before the intended entry date. Processing takes no more than 4 calendar days. The passport must be machine-readable, valid at least 6 months from the date the application is submitted, with space for border stamps. Face photo in JPEG, taken within 6 months, 35x45 aspect ratio, face taking 70-80 percent of the photo. Children listed in a parent's passport need a separate e-visa each; applicants under 6 pay no consular fee. Medical insurance valid in Russia is required, with exemptions by reciprocity."
+
+[portal]
+url = "https://electronic-visa.kdmid.ru/index_en.html"
+name = "E-visa information portal of the Consular Department"
+agency = "Consular Department, Ministry of Foreign Affairs of the Russian Federation"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://electronic-visa.kdmid.ru/index_en.html"
+notes = "Read 2026-08-30. States that nationals of 64 foreign states may be granted an e-visa, that an e-visa is issued within 4 calendar days including weekends and bank holidays, and that no invitations or confirmations are needed. Also recommends against Gmail for registration and notifications because of unstable and delayed delivery."
+
+[nationalities]
+url = "https://electronic-visa.kdmid.ru/country_en.html"
+name = "States whose nationals can apply for e-visa"
+agency = "Consular Department, Ministry of Foreign Affairs of the Russian Federation"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://electronic-visa.kdmid.ru/country_en.html"
+notes = "Read 2026-08-30. Lists the 64 eligible states, including China (including Taiwan), India, Japan, Turkey, Saudi Arabia, the Gulf states, the EU member states, Britain's neighbours and several Southeast Asian states. Passports outside this list need a regular visa from a Russian diplomatic mission or consular post."
+
+[checkpoints]
+url = "https://electronic-visa.kdmid.ru/checkpoint_en.html"
+name = "Border crossing points for entry and exit on an e-visa"
+agency = "Consular Department, Ministry of Foreign Affairs of the Russian Federation"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://electronic-visa.kdmid.ru/checkpoint_en.html"
+notes = "Read 2026-08-30. Groups the approved border crossing points into air, road, rail, sea and pedestrian cards. Air points include Moscow (Vnukovo), Moscow (Domodedovo), Moscow (Sheremetyevo), Moscow (Zhukovsky), Saint Petersburg (Pulkovo), Vladivostok (Knevichi), Kaliningrad (Khrabrovo), Sochi, Kazan, Novosibirsk (Tolmachevo) and Irkutsk. One road point, Ivangorod, is marked temporarily closed for reconstruction."
+
+[faq]
+url = "https://electronic-visa.kdmid.ru/faq_en.html"
+name = "E-visa frequently asked questions"
+agency = "Consular Department, Ministry of Foreign Affairs of the Russian Federation"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://electronic-visa.kdmid.ru/faq_en.html"
+notes = "Read 2026-08-30. Records the 23 August 2025 change that extended e-visa validity to up to 120 days with a stay of up to 30 days, replacing the earlier 60-day validity and 16-day stay. Entry and exit must both use approved checkpoints. No transit purpose exists in the application. Consular fee is payable only with cards issued by banks outside Russia, invoices are issued in dirhams or yuan, payment takes 20 to 45 minutes to confirm, and no refund is available regardless of the outcome. Migration registration must be completed within 7 working days of arrival."
+
+[support]
+url = "https://electronic-visa.kdmid.ru/support_en.html"
+name = "Technical support recommendations"
+agency = "Consular Department, Ministry of Foreign Affairs of the Russian Federation"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://electronic-visa.kdmid.ru/support_en.html"
+notes = "Read 2026-08-30. Payment confirmation takes 20 to 45 minutes, Russian bank cards cannot be used, and payment problems go to the visa application centre addresses support@sinovisa.org, help@sinovisa.org or support.gkd-global.com. The e-visa is valid for entry from the moment the issuance notification is received."
+
+[meta]
+flag = "🇷🇺"
+name_en = "Russia"
+name_zh = "俄罗斯"
+form_code = "e-Visa"
+guide_slug = "evisa"
+form_key = "evisa"
+form_name_en = "Unified e-Visa"
+form_name_zh = "统一电子签证"
+since_en = "electronic visa since 2017, unified e-visa since 2023"
+since_zh = "2017 年起有电子签证，2023 年起为统一电子签证"
+fee_en = "Paid; amount shown at payment"
+fee_zh = "收费；付款时显示金额"
+suffix = ".kdmid.ru"
+form_type = "evisa"
+
+field_count = 13
+sections = 3
+time_needed_en = "~20 minutes + 4 days processing"
+time_needed_zh = "约 20 分钟 + 4 天审批"
+output_en = "A PDF notification to print or keep on your phone. You show it when boarding and again to the Border Service officer at an approved crossing point, together with the passport used in the application."
+output_zh = "一份可打印或存在手机里的 PDF 签发通知。登机时和抵达指定口岸过边检时都要出示，并携带申请时使用的同一本护照。"
+
+fields_intro_en = "The live application sits behind a personal-account login, so no field regexes, character limits or official validation error text could be read. This guide states none. What it does carry is the ministry's published conditions: the 86-to-4-day application window, the machine-readable passport rule, the 35x45 JPEG photo spec and the 30-day stay count."
+fields_intro_zh = "实时申请表在个人账户登录之后，无法读取字段正则、字符上限或官方报错原文，所以本页一个都不写。本页写的是俄方公布的条件：提前 86 天到 4 天的申请窗口、护照必须机读、35x45 的 JPEG 照片规格，以及 30 天停留期的计算方式。"

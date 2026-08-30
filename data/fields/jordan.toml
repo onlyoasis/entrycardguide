@@ -1,0 +1,237 @@
+# Jordan Pass — live purchase form (buynow.aspx) and the pass conditions.
+# Error codes below are strings that appear on the live form page, read 2026-08-30.
+# Each key must exist in data/rules/jordan.json.
+
+[[fields]]
+n = "01"
+key = "eligibility"
+section_en = "Section 1 · Route and pass conditions"
+section_zh = "第 1 段 · 路径与通票条件"
+example = "Ordinary passport not on the Interior Ministry restricted list"
+mistake = "Buying a pass for a nationality it is not sold to"
+mistake_why_en = "the FAQ says the pass is not available for Arabic nationality holders"
+mistake_why_zh = "FAQ 写明约旦通票不向阿拉伯国籍持有人发售"
+copy_en = "Check the passport first. The Interior Ministry lists 53 restricted nationalities that need prior approval, the FAQ lists South Africa, Malaysia, Hong Kong, Japan and Vatican City as exempt from visa fees, and arriving at Aqaba Airport is a separate rule for non-restricted nationalities. Do all of this before paying for anything."
+copy_zh = "先查护照。内政部列出 53 个需事先批准的受限国籍，FAQ 列出南非、马来西亚、香港、日本和梵蒂冈免签证费，而从安曼阿利亚皇后机场以外的阿卡巴机场入境另有规定。付款之前先把这些查清楚。"
+
+[[fields]]
+n = "02"
+key = "buy_before_arrival"
+section_en = "Section 1 · Route and pass conditions"
+section_zh = "第 1 段 · 路径与通票条件"
+example = "Purchased online before the flight"
+mistake = "Buying the pass after landing"
+mistake_why_en = "the terms say buying after arrival does not allow the visa exemption"
+mistake_why_zh = "条款写明抵达后才购买不能享受签证费减免"
+copy_en = "Buy the pass before you enter Jordan. A purchase made after arrival still gets you into the sites, but the JD 40 visa fee is no longer waived."
+copy_zh = "在进入约旦之前完成购买。落地后再买仍可进景点，但 40 约旦第纳尔的签证费不再减免。"
+
+[[fields]]
+n = "03"
+key = "nights_minimum"
+section_en = "Section 1 · Route and pass conditions"
+section_zh = "第 1 段 · 路径与通票条件"
+example = "2 whole nights (3 days) or more"
+mistake = "A one-night stopover"
+mistake_why_en = "the FAQ says the waiver needs a minimum of 2 whole nights and the exit system checks it"
+mistake_why_zh = "FAQ 写明至少要住 2 个整晚，出境系统会核对"
+copy_en = "The waiver needs a minimum of 2 whole nights (3 days). The FAQ says you do not have to prove it in advance: the immigration system checks the nights when you leave, and short stays are sent to an office to pay."
+copy_zh = "签证费减免要求至少住 2 个整晚（3 天）。FAQ 说明无需提前证明：出境时移民系统会核对晚数，不足者会被引导到办公室补缴。"
+
+[[fields]]
+n = "04"
+key = "visa_fee_covered"
+section_en = "Section 1 · Route and pass conditions"
+section_zh = "第 1 段 · 路径与通票条件"
+example = "Single-entry tourist visa on arrival"
+mistake = "Expecting the JD 60 or JD 120 embassy visa to be covered"
+mistake_why_en = "the FAQ says the pass waives only a single entry visa fee"
+mistake_why_zh = "FAQ 写明通票只免单次入境签证费"
+copy_en = "The pass waives the single-entry visa fee only. The Tourism Ministry prices that visa at JD 40 for one month on arrival at the airport, while JD 60 double-entry and JD 120 multiple-entry visas come from an embassy and are not covered."
+copy_zh = "通票只免单次入境签证费。旅游部定价为落地机场停留 1 个月 40 约旦第纳尔；60 约旦第纳尔的两次入境和 120 约旦第纳尔的多次入境签证需在使馆办理，不在减免范围。"
+
+[[fields]]
+n = "05"
+key = "full_name"
+section_en = "Section 2 · Buyer details"
+section_zh = "第 2 段 · 购买人信息"
+example = "Name exactly as in the passport"
+mistake = "A nickname or a shortened form"
+mistake_why_en = "officers check the pass against the passport at the visa office and at site entrances"
+mistake_why_zh = "官员会在签证办公室和景点入口把通票与护照核对"
+copy_en = "Copy the name from the passport you will present at the border. The field allows 100 characters and the form shows Full name required when it is empty."
+copy_zh = "按入境时出示的护照抄姓名。该字段上限 100 字符，留空时表单提示 Full name required。"
+
+[[fields]]
+n = "06"
+key = "email"
+section_en = "Section 2 · Buyer details"
+section_zh = "第 2 段 · 购买人信息"
+example = "The inbox you check before the trip"
+mistake = "A work address you cannot open while travelling"
+mistake_why_en = "the pass is delivered as a PDF and an image to this address"
+mistake_why_zh = "通票以 PDF 和图片发送到这个邮箱"
+copy_en = "Use an inbox you can open on the road. The field allows 100 characters, and the page validator rejects a malformed address with Not Valid Email. The FAQ says to check the spam folder if nothing arrives."
+copy_zh = "用一个旅途中能打开的邮箱。字段上限 100 字符，格式不对时页面校验提示 Not Valid Email。FAQ 建议收不到时先查垃圾邮件。"
+
+[[fields]]
+n = "07"
+key = "confirm_email"
+section_en = "Section 2 · Buyer details"
+section_zh = "第 2 段 · 购买人信息"
+example = "The same address typed again"
+mistake = "A typo that still looks like an email"
+mistake_why_en = "the form compares the two fields before payment"
+mistake_why_zh = "表单在付款前会比较两个字段"
+copy_en = "Type the same address twice. A mismatch stops the purchase, and a wrong but matching pair sends your pass to someone else's inbox."
+copy_zh = "两次输入同一个地址。不一致会卡住购买流程；而两个一致但错误的地址会把通票发到别人的邮箱。"
+
+[[fields]]
+n = "08"
+key = "telephone"
+section_en = "Section 2 · Buyer details"
+section_zh = "第 2 段 · 购买人信息"
+example = "A reachable mobile number with country code"
+mistake = "A landline nobody answers abroad"
+mistake_why_en = "the field is required and the validator shows Telephone is required"
+mistake_why_zh = "该字段必填，校验提示 Telephone is required"
+copy_en = "Enter a number that can receive a call while you are travelling, with the country code. The field allows 150 characters."
+copy_zh = "填写旅途中能接通的电话号码，并带国家区号。该字段上限 150 字符。"
+
+[[fields]]
+n = "09"
+key = "purpose_of_visit"
+section_en = "Section 3 · Trip details"
+section_zh = "第 3 段 · 行程信息"
+example = "Visit historical sites"
+mistake = "Picking the first option to move on"
+mistake_why_en = "the dropdown is required and shows Purpose visit is required when empty"
+mistake_why_zh = "下拉项必填，未选择时提示 Purpose visit is required"
+copy_en = "Choose the option that matches the trip. The dropdown includes Medical treatment, Wellness Spa, Walking Hiking Biking, Business, Religious, Experiencing local culture, Visit historical sites and Extreme Adventure."
+copy_zh = "选择与行程相符的选项。下拉列表包含就医、水疗、徒步骑行、商务、宗教、体验当地文化、参观历史古迹和极限探险等。"
+
+[[fields]]
+n = "10"
+key = "accommodation_type"
+section_en = "Section 3 · Trip details"
+section_zh = "第 3 段 · 行程信息"
+example = "3 Star Hotel"
+mistake = "Choosing 5 Star Hotel for a hostel bed"
+mistake_why_en = "the validator reads Accommodation is required"
+mistake_why_zh = "校验提示 Accommodation is required"
+copy_en = "Pick the accommodation type you actually booked. Options run from 5 Star Hotel down to 1 Star Hotel, plus Airbnb and hotel or serviced apartments."
+copy_zh = "按实际预订的住宿类型选择。选项从五星酒店到一星酒店，另有 Airbnb 和酒店式公寓。"
+
+[[fields]]
+n = "11"
+key = "city_of_stay"
+section_en = "Section 3 · Trip details"
+section_zh = "第 3 段 · 行程信息"
+example = "Ma'an Governorate for a Wadi Rum and Petra trip"
+mistake = "Amman by default"
+mistake_why_en = "the dropdown lists the 12 governorates and the trip usually starts in the south"
+mistake_why_zh = "下拉列出 12 个省，行程通常从南部开始"
+copy_en = "Choose the governorate where you will stay. The list covers Amman, Irbid, Zarqa, Balqa, Mafraq, Karak, Tafilah, Ma'an, Madaba, Jerash, Ajloun and Aqaba."
+copy_zh = "选择实际停留的省。列表包含安曼、伊尔比德、扎尔卡、巴尔卡、马弗拉克、卡拉克、塔菲拉、马安、马代巴、杰拉什、阿杰隆和亚喀巴。"
+
+[[fields]]
+n = "12"
+key = "address_in_jordan"
+section_en = "Section 3 · Trip details"
+section_zh = "第 3 段 · 行程信息"
+example = "Hotel name, street, town"
+mistake = "Just the word Jordan"
+mistake_why_en = "the field asks for the residency address during the visit"
+mistake_why_zh = "该字段要求填写在约旦期间的居住地址"
+copy_en = "Enter the hotel or accommodation address. The field allows 250 characters, so the hotel name, street and town fit."
+copy_zh = "填写酒店或住宿地址。字段上限 250 字符，酒店名、街道和城镇都放得下。"
+
+[[fields]]
+n = "13"
+key = "nights_in_jordan"
+section_en = "Section 3 · Trip details"
+section_zh = "第 3 段 · 行程信息"
+example = "4"
+mistake = "1"
+mistake_why_en = "the dropdown starts at 2, matching the visa waiver condition"
+mistake_why_zh = "下拉从 2 开始，与签证费减免条件一致"
+copy_en = "The dropdown runs from 2 to 30 nights, so the form itself never lets you claim a one-night stay. Choose the number you actually plan to spend; the exit system checks it."
+copy_zh = "下拉选项从 2 到 30 晚，表单本身就不允许申报单晚停留。按实际计划填写；出境系统会核对。"
+
+[[fields]]
+n = "14"
+key = "month_of_arrival"
+section_en = "Section 3 · Trip details"
+section_zh = "第 3 段 · 行程信息"
+example = "10-2026"
+mistake = "A specific day the form never asks for"
+mistake_why_en = "the live form asks only for the month"
+mistake_why_zh = "实时表单只要求填月份"
+copy_en = "Pick the expected month in MM-YYYY form. There is no exact-date field, and the pass stays usable for 3 months after purchase."
+copy_zh = "按 月-年 格式选择预计抵达月份。表单没有精确日期字段，通票自购买起 3 个月内可用。"
+
+[[fields]]
+n = "15"
+key = "ticket_type"
+section_en = "Section 4 · Ticket and delivery"
+section_zh = "第 4 段 · 票种与交付"
+example = "Jordan Wanderer - 70JD"
+mistake = "Paying JD 80 for a one-day Petra visit"
+mistake_why_en = "the packages differ only in consecutive Petra days: 1, 2 or 3"
+mistake_why_zh = "三档票的差别只在佩特拉连续入场天数：1 天、2 天或 3 天"
+copy_en = "Choose Wanderer (JD 70, 1 day in Petra), Explorer (JD 75, 2 consecutive days) or Expert (JD 80, 3 consecutive days). Petra days must be consecutive, Petra by Night is not included, and the pass scans only at the Petra Visitor's Center."
+copy_zh = "选择 Wanderer（70 约旦第纳尔，佩特拉 1 天）、Explorer（75，连续 2 天）或 Expert（80，连续 3 天）。佩特拉入场日必须连续，佩特拉之夜不含在内，且通票只能在佩特拉游客中心扫码。"
+
+[[fields]]
+n = "16"
+key = "number_of_tickets"
+section_en = "Section 4 · Ticket and delivery"
+section_zh = "第 4 段 · 票种与交付"
+example = "2 for a couple"
+mistake = "Buying a pass for a 10-year-old"
+mistake_why_en = "the terms say children under 12 enter the attractions free with their parents"
+mistake_why_zh = "条款写明 12 岁以下儿童随父母免费入场"
+copy_en = "Buy one pass per traveller aged 12 and over. Children under 12 enter the included sites free when accompanied by their parents."
+copy_zh = "每位 12 岁及以上旅客买一张。12 岁以下儿童随父母可免费进入包含的景点。"
+
+[[fields]]
+n = "17"
+key = "printed_copy"
+section_en = "Section 4 · Ticket and delivery"
+section_zh = "第 4 段 · 票种与交付"
+example = "Printed PDF in the passport sleeve"
+mistake = "Relying on the QR code on a phone screen"
+mistake_why_en = "the FAQ says the QR code might be unreadable through a cell phone"
+mistake_why_zh = "FAQ 写明手机屏幕上的二维码可能无法识别"
+copy_en = "Print the PDF the operator emails you. Show it at the visa office on arrival and at every included site, and keep the email in case the printout is lost."
+copy_zh = "把官方邮件发来的 PDF 打印出来。抵达时在签证办公室和每个包含的景点出示，并保留邮件以备打印件丢失。"
+
+[[errors]]
+code = "Full name required"
+why_en = "The name field was left empty. The form allows 100 characters and the pass is checked against the passport at the visa office."
+why_zh = "姓名字段为空。该字段上限 100 字符，通票会在签证办公室与护照核对。"
+
+[[errors]]
+code = "You must enter the email"
+why_en = "Either email field was left empty. Both allow 100 characters and the pass is delivered to this address."
+why_zh = "两个邮箱字段之一为空。字段上限 100 字符，通票会发送到这个地址。"
+
+[[errors]]
+code = "Not Valid Email"
+why_en = "The address failed the form's own pattern check. Fix the syntax instead of resubmitting the same string."
+why_zh = "地址没有通过表单自身的格式校验。请修正格式，不要原样重试。"
+
+[[errors]]
+code = "Telephone is required"
+why_en = "The telephone field was left empty. It allows 150 characters, country code included."
+why_zh = "电话字段为空。字段上限 150 字符，含国家区号。"
+
+[[errors]]
+code = "Purpose visit is required"
+why_en = "No main purpose was selected in the dropdown. It is a fixed list, so free text is impossible."
+why_zh = "未在下拉中选择主要目的。它是固定列表，无法自由输入。"
+
+[[errors]]
+code = "Nights is required"
+why_en = "No night count was selected. The dropdown starts at 2, which is also the minimum for the visa fee waiver."
+why_zh = "未选择停留晚数。下拉从 2 开始，这也正是签证费减免的最低晚数。"

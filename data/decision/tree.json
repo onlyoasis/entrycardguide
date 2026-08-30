@@ -54,7 +54,9 @@
         { "value": "panama", "label": "Panama", "next": "panama_result" },
         { "value": "peru", "label": "Peru", "next": "peru_result" },
         { "value": "brazil", "label": "Brazil", "next": "brazil_eligibility" },
-        { "value": "barbados", "label": "Barbados", "next": "barbados_result" }
+        { "value": "barbados", "label": "Barbados", "next": "barbados_result" },
+        { "value": "russia", "label": "Russia", "next": "russia_eligibility" },
+        { "value": "jordan", "label": "Jordan", "next": "jordan_restricted" }
       ]
     },
 
@@ -2385,6 +2387,166 @@
         }
       ],
       "note": "Save both emailed receipts: one for Immigration and one for Customs. Keep digital or printed copies for arrival."
+    },
+
+    "russia_eligibility": {
+      "type": "question",
+      "label": "Which passport will you use for Russia?",
+      "options": [
+        {
+          "value": "eligible_evisa",
+          "label": "Passport is on the ministry's 64-state e-visa list",
+          "next": "russia_evisa_result"
+        },
+        {
+          "value": "not_listed",
+          "label": "Passport is not on the list",
+          "next": "russia_regular_visa_result"
+        },
+        {
+          "value": "valid_visa",
+          "label": "This passport already holds a valid Russian visa",
+          "next": "russia_valid_visa_result"
+        }
+      ]
+    },
+
+    "russia_evisa_result": {
+      "type": "result",
+      "country": "russia",
+      "summary": "File the unified e-visa from a personal account at evisa.kdmid.ru. Single entry, 120-day validity, 30-day stay, and a non-refundable fee.",
+      "forms": [
+        {
+          "name": "Unified e-visa application",
+          "fee": "Paid; amount shown at payment, not refunded",
+          "url": "https://evisa.kdmid.ru/",
+          "guide": "/russia/evisa/",
+          "agency": "Consular Department, Ministry of Foreign Affairs of the Russian Federation",
+          "deadline": "Apply 4 to 86 days before the intended entry date"
+        }
+      ],
+      "note": "Entry and exit must both use crossing points on the approved list, and processing takes up to 4 calendar days. Use an email other than Gmail for the account."
+    },
+
+    "russia_regular_visa_result": {
+      "type": "result",
+      "country": "russia",
+      "summary": "A passport outside the 64-state list has no online e-visa route. Apply for a regular visa at a Russian diplomatic mission or consular post.",
+      "forms": [],
+      "note": "Any site offering an online Russia e-visa for a passport outside that list is not the government route."
+    },
+
+    "russia_valid_visa_result": {
+      "type": "result",
+      "country": "russia",
+      "summary": "No e-visa needed. The ministry says a valid Russian visa in the same passport covers the trip without the e-visa restrictions.",
+      "forms": [],
+      "note": "A regular visa cannot be extended by obtaining an e-visa."
+    },
+
+    "jordan_restricted": {
+      "type": "question",
+      "label": "Is your passport on the Interior Ministry's restricted list (prior approval required), or is it an Arab nationality the pass is not sold to?",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes, one of those applies",
+          "next": "jordan_embassy_result"
+        },
+        {
+          "value": "no",
+          "label": "No, neither applies",
+          "next": "jordan_arrival"
+        }
+      ]
+    },
+
+    "jordan_arrival": {
+      "type": "question",
+      "label": "Where will you enter Jordan?",
+      "options": [
+        {
+          "value": "queen_alia",
+          "label": "Queen Alia Airport (Amman) or Sheikh Hussein Bridge",
+          "next": "jordan_pass_question"
+        },
+        {
+          "value": "wadi_araba",
+          "label": "Wadi Araba border from Eilat",
+          "next": "jordan_pass_question"
+        },
+        {
+          "value": "aqaba",
+          "label": "Aqaba Airport or Aqaba seaport",
+          "next": "jordan_aqaba_result"
+        }
+      ]
+    },
+
+    "jordan_pass_question": {
+      "type": "question",
+      "label": "Will you buy the official Jordan Pass before arrival and stay at least 2 whole nights (3 days)?",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes, buying before arrival",
+          "next": "jordan_pass_result"
+        },
+        {
+          "value": "no",
+          "label": "No, I will pay at the border",
+          "next": "jordan_visa_on_arrival_result"
+        }
+      ]
+    },
+
+    "jordan_pass_result": {
+      "type": "result",
+      "country": "jordan",
+      "summary": "Buy the pass on jordanpass.jo, print the PDF, and show it at the visa office: the JD 40 single-entry visa fee is waived and over 40 sites including Petra are covered.",
+      "forms": [
+        {
+          "name": "Jordan Pass",
+          "fee": "JD 70 / 75 / 80 by Petra days",
+          "url": "https://www.jordanpass.jo/",
+          "guide": "/jordan/jordan-pass/",
+          "agency": "Ministry of Tourism and Antiquities of Jordan",
+          "deadline": "Buy before arrival; the terms deny the visa exemption to passes bought after arrival"
+        }
+      ],
+      "note": "The pass is not a visa: border officers still grant it. The waiver needs a stay of at least 2 whole nights, and leaving earlier means paying at the airport."
+    },
+
+    "jordan_visa_on_arrival_result": {
+      "type": "result",
+      "country": "jordan",
+      "summary": "Pay the single-entry tourist visa at the border. No online form is needed before travel.",
+      "forms": [
+        {
+          "name": "Single-entry tourist visa on arrival",
+          "fee": "JD 40 for one month",
+          "url": "https://mota.gov.jo/En/Pages/Visa_information",
+          "guide": "/jordan/jordan-pass/",
+          "agency": "Ministry of Interior of Jordan"
+        }
+      ],
+      "note": "Site tickets are then paid separately at each entrance. If Petra is on the plan, compare with the JD 70 pass before deciding: the pass also carries the visa fee."
+    },
+
+    "jordan_aqaba_result": {
+      "type": "result",
+      "country": "jordan",
+      "summary": "The pass FAQ says non-restricted nationalities arriving at Aqaba Airport do not need a visa.",
+      "forms": [],
+      "note": "Attraction tickets are paid separately unless a pass is bought. Restricted nationalities must obtain a visa from a Jordanian embassy before travel. Confirm the current Aqaba zone rule before relying on it."
+    },
+
+    "jordan_embassy_result": {
+      "type": "result",
+      "country": "jordan",
+      "summary": "Restricted nationalities need prior approval, so apply at a Jordanian diplomatic mission before travel.",
+      "forms": [],
+      "note": "The Interior Ministry e-service at eservices.moi.gov.jo/MOI_EVISA is an account-login workflow for applications submitted from outside the Kingdom, with a JD 2 service allowance and JD 1000 guarantee per invited person. Any site selling an instant online visa for a restricted nationality is not the government route."
     }
   }
 }
