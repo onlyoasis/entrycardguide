@@ -1,0 +1,62 @@
+# Laos — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-08-30
+
+[evisa]
+url = "https://laoevisa.gov.la/application"
+name = "Lao eVisa Application"
+agency = "Consular Department, Ministry of Foreign Affairs of the Lao PDR"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://laoevisa.gov.la/application"
+notes = "Read 2026-08-30. This is the live application on the Lao government .gov.la portal. It asks for passport and face images, passport details, a designated port, intended entry date and address in Laos. The page states DD-MM-YYYY for dates, a 2 MB limit for each image, JPG/JPEG/PNG formats, and at least 6 months of passport validity from arrival."
+
+[information]
+url = "https://laoevisa.gov.la/info"
+name = "Lao eVisa Information"
+agency = "Consular Department, Ministry of Foreign Affairs of the Lao PDR"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://laoevisa.gov.la/info"
+notes = "Read 2026-08-30. The Ministry describes the three-step application, the nationality-based fee calculator, the designated ports, the eVisa Approval Letter and the normal processing time of 3 working days. The fee shown by the calculator is non-refundable."
+
+[faq]
+url = "https://laoevisa.gov.la/faq"
+name = "Lao eVisa FAQ"
+agency = "Consular Department, Ministry of Foreign Affairs of the Lao PDR"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://laoevisa.gov.la/faq"
+notes = "Read 2026-08-30. The eVisa is a single-entry Tourist Visa only, allows a 30-day stay, and is valid for 60 days after the Approval Letter is issued. The current FAQ lists 9 designated ports and says an eVisa fee is not refunded if the traveller arrives at an undesignated port."
+
+[terms]
+url = "https://laoevisa.gov.la/term/"
+name = "Lao eVisa Terms and Conditions"
+agency = "Consular Department, Ministry of Foreign Affairs of the Lao PDR"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://laoevisa.gov.la/term/"
+notes = "Read 2026-08-30. Only ordinary passports qualify. The passport must have more than 6 months of validity from arrival and at least one blank page. The traveller must carry a hard copy of the Approval Letter and use the same passport as in the application."
+
+[meta]
+flag = "🇱🇦"
+name_en = "Laos"
+name_zh = "老挝"
+form_code = "eVisa"
+guide_slug = "evisa"
+form_key = "evisa"
+form_name_en = "Lao Tourist eVisa"
+form_name_zh = "老挝旅游电子签"
+since_en = "online tourist visa"
+since_zh = "在线旅游签证"
+fee_en = "Varies by passport"
+fee_zh = "按护照而定"
+suffix = ".gov.la"
+form_type = "evisa"
+
+field_count = 23
+sections = 3
+time_needed_en = "varies"
+time_needed_zh = "时间不定"
+output_en = "The approved letter is sent by email and can be checked online. Print it and present it with the same passport at one of the 9 designated ports; immigration places the entry permission sticker there."
+output_zh = "批准函通过邮件发送，也可在线查状态。打印批准函，在 9 个指定口岸之一与申请时同一本护照一起出示；移民人员现场贴入境许可贴纸。"
+
+fields_intro_en = "The live application exposes required labels, DD-MM-YYYY date prompts and 2 MB JPG/JPEG/PNG upload limits, but it publishes no field regexes, character limits or error text. This guide therefore states no invented validator rules. The cards below follow the application, FAQ and terms read on 30 August 2026."
+fields_intro_zh = "实时申请表公开了必填标记、DD-MM-YYYY 日期提示，以及 2 MB 的 JPG/JPEG/PNG 上传限制，但没有公开字段正则、字符上限或报错原文，所以本页不编造校验规则。以下卡片依据 2026 年 8 月 30 日读取的申请表、FAQ 和条款整理。"
+

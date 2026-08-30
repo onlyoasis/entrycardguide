@@ -1,0 +1,98 @@
+# Azerbaijan ASAN e-Visa — preparation items from public government pages.
+# No [[errors]] array is included because later live-form error text was not readable.
+
+[[fields]]
+n = "01"
+key = "visa_free_status"
+section_en = "Section 1 · Eligibility"
+section_zh = "第 1 段 · 资格"
+example = "Passport appears on the current visa-free list"
+mistake = "Starting a paid application first"
+mistake_why_en = "some ordinary passports can enter without an e-Visa"
+mistake_why_zh = "部分普通护照无需电子签"
+copy_en = "Open the Ministry's current visa-free page before the ASAN application. Check passport type, permitted stay and any temporary scheme dates. If the passport is covered for this trip, no e-Visa form is needed."
+copy_zh = "先打开外交部当前免签页，核对护照类型、允许停留期和临时方案日期。本次行程符合的，不用填 eVisa 表。"
+
+[[fields]]
+n = "02"
+key = "nationality"
+section_en = "Section 1 · Eligibility"
+section_zh = "第 1 段 · 资格"
+example = "Country that issued the passport"
+mistake = "Country of residence"
+mistake_why_en = "ASAN ties eligibility and the visa to the travel document"
+mistake_why_zh = "ASAN 按旅行证件判定资格并绑定签证"
+copy_en = "Choose nationality according to the passport you will use. Dual nationals must apply and travel on the same document; a different document makes the e-Visa invalid."
+copy_zh = "国籍按准备出行的护照选。双重国籍旅客申请和出行必须用同一本证件，换一本会使电子签失效。"
+
+[[fields]]
+n = "03"
+key = "travel_document_type"
+section_en = "Section 1 · Eligibility"
+section_zh = "第 1 段 · 资格"
+example = "Ordinary passport"
+mistake = "Selecting an ordinary passport for a refugee document"
+mistake_why_en = "the first screen separates document types and redirects refugee-status cases"
+mistake_why_zh = "首页区分证件类型，并将难民身份情形引导至使领馆"
+copy_en = "Select the document you will physically present at the border. The portal directs persons with refugee status to an Azerbaijani diplomatic mission."
+copy_zh = "选择到口岸时会实际出示的证件。官网建议难民身份持有者联系阿塞拜疆驻外使领馆。"
+
+[[fields]]
+n = "04"
+key = "passport_validity"
+section_en = "Section 2 · Travel document"
+section_zh = "第 2 段 · 旅行证件"
+example = "Valid at least 3 months after the e-Visa expires"
+mistake = "Three months after arrival"
+mistake_why_en = "the published rule counts from the visa expiry date"
+mistake_why_zh = "官方规则从签证到期日开始算"
+copy_en = "Check the document expiry against the end of the e-Visa's validity, not only against the arrival date. The required buffer is 3 months beyond visa expiry."
+copy_zh = "用证件到期日对比电子签的有效期终点，不是只对比抵达日。官方要求在签证到期后还有 3 个月。"
+
+[[fields]]
+n = "05"
+key = "passport_scan"
+section_en = "Section 2 · Travel document"
+section_zh = "第 2 段 · 旅行证件"
+example = "Full, readable photo page"
+mistake = "Glare across the number"
+mistake_why_en = "ASAN can reject an unreadable travel-document copy"
+mistake_why_zh = "ASAN 可因证件扫描不可读而拒绝签发"
+copy_en = "Prepare a clear image of the page containing the photo. Keep all edges and text readable. The applicant is responsible for the scan, and the portal warns that an unreadable copy can be rejected."
+copy_zh = "准备带照片资料页的清晰图片，边缘和文字都要可读。扫描件由申请人负责，官网明确提醒不可读的副本可能被拒。"
+
+[[fields]]
+n = "06"
+key = "travel_start"
+section_en = "Section 3 · Timing and delivery"
+section_zh = "第 3 段 · 时间与送达"
+example = "Standard application at least 3 working days early"
+mistake = "Applying the day before travel"
+mistake_why_en = "standard service needs a 3-working-day lead time"
+mistake_why_zh = "标准服务需要至少 3 个工作日"
+copy_en = "For standard service, choose an arrival date at least 3 working days after submission. Urgent service is a separate 3-hour route, including weekends and holidays."
+copy_zh = "标准服务的抵达日至少要晚于递交日 3 个工作日。加急服务是另一条 3 小时通道，周末和节假日也处理。"
+
+[[fields]]
+n = "07"
+key = "email"
+section_en = "Section 3 · Timing and delivery"
+section_zh = "第 3 段 · 时间与送达"
+example = "An inbox available during the trip"
+mistake = "A mistyped address"
+mistake_why_en = "acceptance, payment and decision notices all go there"
+mistake_why_zh = "受理、付款和决定通知都发到这个地址"
+copy_en = "Use an inbox you can open before travel and check the spelling. If no result email arrives, use ASAN's status checker with the application details."
+copy_zh = "填写出行前能登录的邮箱，并核对拼写。没收到结果邮件时，用申请信息到 ASAN 官方状态页查询。"
+
+[[fields]]
+n = "08"
+key = "payment_card"
+section_en = "Section 3 · Timing and delivery"
+section_zh = "第 3 段 · 时间与送达"
+example = "Visa, Mastercard and UnionPay"
+mistake = "Paying a second site for the same form"
+mistake_why_en = "the government portal itself accepts the listed cards"
+mistake_why_zh = "政府门户本身就接受这些卡组织"
+copy_en = "The official standard charge is USD 20 plus a USD 5 service fee. The card may belong to someone else. Both the review fee and service fee are non-refundable."
+copy_zh = "官方标准费用是 20 美元国家费加 5 美元服务费。付款卡可以不是申请人本人的，审理费和服务费都不退。"

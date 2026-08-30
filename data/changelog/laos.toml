@@ -1,0 +1,7 @@
+# Laos changelog. Append to this file when eVisa policy changes.
+
+[[entries]]
+date = "2026-08-30"
+summary = "Initial Lao Tourist eVisa coverage published"
+summary_zh = "老挝旅游电子签指南首版上线"
+detail = "Covers the official laoevisa.gov.la application, nationality-based fee calculator, tourist-only single-entry rule, 30-day stay, 3-working-day processing, passport and image requirements, 9 designated ports, and the separate visa-on-arrival route for other ports."

@@ -34,7 +34,9 @@
         { "value": "israel", "label": "Israel", "next": "israel_eligibility" },
         { "value": "cuba", "label": "Cuba", "next": "cuba_result" },
         { "value": "curacao", "label": "Curaçao", "next": "curacao_result" },
-        { "value": "colombia", "label": "Colombia", "next": "colombia_result" }
+        { "value": "colombia", "label": "Colombia", "next": "colombia_result" },
+        { "value": "laos", "label": "Laos", "next": "laos_eligibility" },
+        { "value": "azerbaijan", "label": "Azerbaijan", "next": "azerbaijan_passport" }
       ]
     },
 
@@ -1114,6 +1116,115 @@
         }
       ],
       "note": "Migración Colombia says Check-Mig is optional and recommended to speed up control. It is not a visa or admission approval, and the government service has no fee."
+    },
+
+    "laos_eligibility": {
+      "type": "question",
+      "label": "Did you confirm both eVisa eligibility and a designated entry port?",
+      "options": [
+        {
+          "value": "eligible",
+          "label": "Yes, my passport is eligible and I will use one of the 9 eVisa ports",
+          "next": "laos_evisa_result"
+        },
+        {
+          "value": "other",
+          "label": "No / I am not sure",
+          "next": "laos_check_result"
+        }
+      ]
+    },
+
+    "laos_evisa_result": {
+      "type": "result",
+      "country": "laos",
+      "summary": "Apply for the Lao Tourist eVisa before travel.",
+      "forms": [
+        {
+          "name": "Lao Tourist eVisa",
+          "fee": "Varies by passport",
+          "url": "https://laoevisa.gov.la/application",
+          "guide": "/laos/evisa/",
+          "agency": "Consular Department, Ministry of Foreign Affairs of the Lao PDR",
+          "deadline": "At least 5 days before arrival; normal processing is 3 working days"
+        }
+      ],
+      "note": "The eVisa is single-entry tourism only, allows a 30-day stay, and works at 9 designated ports. Print the Approval Letter and carry the same passport used in the application."
+    },
+
+    "laos_check_result": {
+      "type": "result",
+      "country": "laos",
+      "summary": "Check the passport list and entry port before paying.",
+      "forms": [],
+      "note": "Visa exemption, eVisa and visa on arrival are separate routes. An eVisa cannot be used at an undesignated port, and the official fee is not refunded in that case."
+    },
+
+    "azerbaijan_passport": {
+      "type": "question",
+      "label": "Does the current MFA visa-free list cover the passport and trip dates you will use?",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes, this trip is visa-free",
+          "next": "azerbaijan_visa_free"
+        },
+        {
+          "value": "no",
+          "label": "No or not listed",
+          "next": "azerbaijan_evisa_eligible"
+        }
+      ]
+    },
+
+    "azerbaijan_evisa_eligible": {
+      "type": "question",
+      "label": "Does evisa.gov.az list your passport as eligible for an ASAN e-Visa?",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "next": "azerbaijan_apply"
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "next": "azerbaijan_consular"
+        }
+      ]
+    },
+
+    "azerbaijan_visa_free": {
+      "type": "result",
+      "country": "azerbaijan",
+      "summary": "This trip follows Azerbaijan's current visa-free route.",
+      "forms": [],
+      "note": "No ASAN e-Visa form is required for this trip. Do not pay anyone to file one; carry evidence that the passport and travel dates meet the current MFA rule."
+    },
+
+    "azerbaijan_apply": {
+      "type": "result",
+      "country": "azerbaijan",
+      "summary": "Use the official ASAN e-Visa portal.",
+      "forms": [
+        {
+          "name": "ASAN Electronic Visa",
+          "fee": "USD $20 + $5 service fee",
+          "url": "https://www.evisa.gov.az/en/",
+          "guide": "/azerbaijan/evisa/",
+          "agency": "State Agency for Public Service and Social Innovations under the President of Azerbaijan",
+          "deadline": "Apply at least 3 working days before arrival for standard service."
+        }
+      ],
+      "note": "The e-Visa is single entry, valid for 90 days and permits a stay up to 30 days."
+    },
+
+    "azerbaijan_consular": {
+      "type": "result",
+      "country": "azerbaijan",
+      "summary": "The ASAN online route is not available for this passport.",
+      "forms": [],
+      "note": "Do not force an online application. Follow the Ministry of Foreign Affairs route for an Azerbaijani diplomatic mission or consulate."
     }
   }
 }

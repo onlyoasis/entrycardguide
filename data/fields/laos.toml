@@ -1,0 +1,136 @@
+# Lao Tourist eVisa — public application, FAQ and terms guidance.
+# No [[errors]] array: the official pages publish no live validation error text.
+# Each key must exist in data/rules/laos.json.
+
+[[fields]]
+n = "01"
+key = "eligibility"
+section_en = "Section 1 · Route and documents"
+section_zh = "第 1 段 · 路径与材料"
+example = "Passport appears on the eVisa list"
+mistake = "Assuming every passport uses eVisa"
+mistake_why_en = "visa exemption and visa on arrival are separate routes"
+mistake_why_zh = "免签和落地签是另外两条路径"
+copy_en = "Check the portal's eligible-country list for the passport you will carry. Do this before uploading documents or paying a non-refundable fee."
+copy_zh = "先在门户的符合资格国家名单里查本次出行使用的护照。完成这一步之后再上传资料、支付不可退的费用。"
+
+[[fields]]
+n = "02"
+key = "face_photo"
+section_en = "Section 1 · Route and documents"
+section_zh = "第 1 段 · 路径与材料"
+example = "4 x 6 cm, colour, white background"
+mistake = "A shadowed holiday photo"
+mistake_why_en = "the FAQ requires a recent neutral face photo with no shadows"
+mistake_why_zh = "FAQ 要近期、中性表情且没有阴影的证件照"
+copy_en = "Use a 4 x 6 cm colour photo taken within 6 months. Plain white background, no shadows, face the camera, neutral expression, both eyes open. Upload JPG, JPEG or PNG no larger than 2 MB."
+copy_zh = "使用 6 个月内拍摄的 4 × 6 厘米彩色照片。纯白背景、无阴影、正对镜头、中性表情、双眼睁开。上传 JPG、JPEG 或 PNG，文件不超过 2 MB。"
+
+[[fields]]
+n = "03"
+key = "passport_scan"
+section_en = "Section 1 · Route and documents"
+section_zh = "第 1 段 · 路径与材料"
+example = "Whole bio page, both MRZ lines visible"
+mistake = "A crop that cuts off the MRZ"
+mistake_why_en = "the application explicitly asks for the whole page including both MRZ lines"
+mistake_why_zh = "申请表明确要求整张资料页，含两行机读区"
+copy_en = "Photograph or scan the whole bio page. Keep every edge and both MRZ lines visible. The upload accepts JPG, JPEG or PNG up to 2 MB."
+copy_zh = "拍摄或扫描完整资料页，保留四边和底部两行机读区。上传格式为 JPG、JPEG 或 PNG，最大 2 MB。"
+
+[[fields]]
+n = "04"
+key = "surname"
+section_en = "Section 2 · Passport data"
+section_zh = "第 2 段 · 护照资料"
+example = "Surname exactly as in the passport"
+mistake = "A married name not on this passport"
+mistake_why_en = "the Approval Letter is checked against the travel document"
+mistake_why_zh = "批准函会和出行护照逐项核对"
+copy_en = "Copy the surname from the passport used for the application. Do not substitute a name from another document."
+copy_zh = "从申请使用的护照上抄姓氏。不要换成其他证件上的姓名。"
+
+[[fields]]
+n = "05"
+key = "given_names"
+section_en = "Section 2 · Passport data"
+section_zh = "第 2 段 · 护照资料"
+example = "Every given name shown in the passport"
+mistake = "Dropping a middle given name"
+mistake_why_en = "the live form asks for given names as in the passport"
+mistake_why_zh = "实时表单要求按护照填写全部名"
+copy_en = "Copy all given names shown in the passport, including a middle given name."
+copy_zh = "把护照上的全部名抄下来，中间名也不要漏。"
+
+[[fields]]
+n = "06"
+key = "date_of_birth"
+section_en = "Section 2 · Passport data"
+section_zh = "第 2 段 · 护照资料"
+example = "22-08-1991"
+mistake = "1991-08-22"
+mistake_why_en = "the official form displays DD-MM-YYYY"
+mistake_why_zh = "官方表单显示的是 DD-MM-YYYY"
+copy_en = "Use the official date control and follow its DD-MM-YYYY prompt."
+copy_zh = "使用官网日期控件，按页面提示的 DD-MM-YYYY 填写。"
+
+[[fields]]
+n = "07"
+key = "passport_number"
+section_en = "Section 2 · Passport data"
+section_zh = "第 2 段 · 护照资料"
+example = "The passport carried on this trip"
+mistake = "A renewed or second passport"
+mistake_why_en = "the eVisa is valid only with the passport used in the request"
+mistake_why_zh = "电子签只能和申请时使用的护照一起使用"
+copy_en = "Enter the number from the passport you will present at the Lao border. A different passport can lead to refusal."
+copy_zh = "填写抵达老挝口岸时会出示的那本护照号码。换一本护照可能被拒绝入境。"
+
+[[fields]]
+n = "08"
+key = "passport_validity"
+section_en = "Section 2 · Passport data"
+section_zh = "第 2 段 · 护照资料"
+example = "More than 6 months left, one blank page"
+mistake = "Exactly 6 months or no blank page"
+mistake_why_en = "the terms say more than 6 months and at least one blank page"
+mistake_why_zh = "条款写的是超过 6 个月，并至少留有一页空白页"
+copy_en = "Only ordinary passports qualify. Confirm more than 6 months of validity from arrival and at least one blank page before paying."
+copy_zh = "只接受普通护照。付款前确认从抵达日起有效期超过 6 个月，并至少有一页空白页。"
+
+[[fields]]
+n = "09"
+key = "port_of_entry"
+section_en = "Section 3 · Trip"
+section_zh = "第 3 段 · 行程"
+example = "Wattay International Airport"
+mistake = "A border crossing outside the 9-port list"
+mistake_why_en = "the eVisa cannot be used there and the fee is not refunded"
+mistake_why_zh = "电子签在那里不能使用，费用也不退"
+copy_en = "Choose one of the 9 designated ports. You may use any port on that list even if it differs from the one selected, but an undesignated port requires a separate visa route."
+copy_zh = "选择 9 个指定口岸之一。实际可从名单内任一口岸进入，不必与申请时所选完全相同；名单外口岸必须另走签证路径。"
+
+[[fields]]
+n = "10"
+key = "intended_entry_date"
+section_en = "Section 3 · Trip"
+section_zh = "第 3 段 · 行程"
+example = "At least 5 days ahead, no more than 60"
+mistake = "Applying the night before the flight"
+mistake_why_en = "the portal normally needs 3 working days and the form requires lead time"
+mistake_why_zh = "门户通常需要 3 个工作日，表单也要求留出提前量"
+copy_en = "Use DD-MM-YYYY. The FAQ says the arrival date may be no more than 60 days from application and the system allows applications from 5 days before arrival."
+copy_zh = "按 DD-MM-YYYY 填写。FAQ 说明抵达日期不能超过申请日起 60 天，系统要求至少提前 5 天申请。"
+
+[[fields]]
+n = "11"
+key = "address_in_laos"
+section_en = "Section 3 · Trip"
+section_zh = "第 3 段 · 行程"
+example = "Hotel name and address in Vientiane"
+mistake = "Laos"
+mistake_why_en = "the field asks for the address during the visit"
+mistake_why_zh = "该字段要求在老挝停留期间的地址"
+copy_en = "Enter the hotel or local address for the stay. Keep the booking available in case the address needs checking."
+copy_zh = "填写酒店或本地住宿地址。保留订单，便于需要时核对地址。"
+

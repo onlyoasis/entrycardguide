@@ -1,0 +1,88 @@
+{
+  "country": "azerbaijan",
+  "officialUrl": "https://www.evisa.gov.az/en/",
+  "lastVerified": "2026-08-30",
+  "source": "https://www.evisa.gov.az/en/apply-step1, /en/countries, /en/conditions and /en/information, all read 2026-08-30. The first application screen and public conditions identify the choices and preparation items below. Later live-form HTML validation attributes, regexes, character limits and field error text were not publicly readable, so no pattern or length is claimed.",
+  "fields": {
+    "visa_free_status": {
+      "type": "nationality",
+      "label": "Visa-free status",
+      "required": true,
+      "placeholder": "Check the current MFA list",
+      "help": "The Ministry of Foreign Affairs maintains ordinary-passport visa-free arrangements, including time-limited schemes. Check the exact passport and travel date before opening a paid application.",
+      "errors": {
+        "required": "Check whether this passport needs a visa before paying"
+      }
+    },
+    "nationality": {
+      "type": "nationality",
+      "label": "Nationality or citizenship",
+      "required": true,
+      "placeholder": "As shown by the travel document",
+      "help": "The first ASAN application screen asks for nationality or citizenship. Select the country tied to the travel document you will use.",
+      "errors": {
+        "required": "Nationality or citizenship is required"
+      }
+    },
+    "travel_document_type": {
+      "type": "text",
+      "label": "Travel document or passport type",
+      "required": true,
+      "placeholder": "Select the actual document type",
+      "help": "Choose the document type shown on the first application screen. Refugee-status holders are directed to an Azerbaijani diplomatic mission instead of this portal.",
+      "errors": {
+        "required": "Select the travel document type"
+      }
+    },
+    "passport_validity": {
+      "type": "text",
+      "label": "Travel document validity",
+      "required": true,
+      "placeholder": "Valid 3 months beyond e-Visa expiry",
+      "help": "The travel document must remain valid for at least 3 months after the e-Visa expires.",
+      "errors": {
+        "required": "Confirm the travel document validity"
+      }
+    },
+    "passport_scan": {
+      "type": "text",
+      "label": "Travel document photo-page scan",
+      "required": true,
+      "placeholder": "Clear and readable image",
+      "help": "ASAN makes the applicant responsible for a readable scan of the page containing the photo. An unreadable copy can lead to refusal.",
+      "errors": {
+        "required": "Prepare a readable photo-page scan"
+      }
+    },
+    "travel_start": {
+      "type": "text",
+      "label": "Planned arrival date",
+      "required": true,
+      "placeholder": "Allow 3 working days for standard service",
+      "help": "Standard applications must be made at least 3 working days before arrival. Urgent applications use a separate 3-hour service.",
+      "errors": {
+        "required": "Choose the planned arrival date"
+      }
+    },
+    "email": {
+      "type": "email",
+      "label": "Email address",
+      "required": true,
+      "placeholder": "An inbox you can access",
+      "help": "Application, payment and decision notices are sent to this address. ASAN tells applicants to enter it correctly and offers a status checker if mail does not arrive.",
+      "errors": {
+        "required": "An accessible email address is required"
+      }
+    },
+    "payment_card": {
+      "type": "text",
+      "label": "Payment card",
+      "required": true,
+      "placeholder": "Visa, Mastercard and UnionPay",
+      "help": "The portal accepts Visa, Mastercard and UnionPay. The card does not have to be in the applicant's name. The USD 20 state fee and USD 5 service fee are non-refundable.",
+      "errors": {
+        "required": "Prepare an accepted payment card"
+      }
+    }
+  }
+}

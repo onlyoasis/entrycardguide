@@ -1,0 +1,97 @@
+{
+  "country": "laos",
+  "officialUrl": "https://laoevisa.gov.la/application",
+  "lastVerified": "2026-08-30",
+  "source": "https://laoevisa.gov.la/application, https://laoevisa.gov.la/faq and https://laoevisa.gov.la/term/, read 2026-08-30. The live application exposes required labels, DD-MM-YYYY date prompts and JPG/JPEG/PNG uploads capped at 2 MB; the FAQ and terms publish the photo, passport, validity, visa-type and port rules. The portal publishes no text-field regexes, character limits or official validation error strings, so no pattern key is used and no local validator is mounted.",
+  "fields": {
+    "eligibility": {
+      "type": "nationality",
+      "label": "eVisa nationality eligibility",
+      "required": true,
+      "placeholder": "Check the portal list",
+      "help": "The portal publishes the passports eligible for eVisa. Check the exact passport before starting; visa exemption and visa on arrival are separate routes.",
+      "errors": {"required": "Check eVisa eligibility before applying"}
+    },
+    "face_photo": {
+      "type": "text",
+      "label": "Face photo",
+      "required": true,
+      "placeholder": "4 x 6 cm, colour, white background",
+      "help": "The FAQ requires a 4 x 6 cm colour photo taken within the last 6 months, with no shadows, a plain white background, neutral expression and both eyes open. The upload accepts JPG, JPEG or PNG up to 2 MB.",
+      "errors": {"required": "A face photo is required"}
+    },
+    "passport_scan": {
+      "type": "text",
+      "label": "Passport bio-page image",
+      "required": true,
+      "placeholder": "Whole bio page including both MRZ lines",
+      "help": "Upload the whole passport bio page including the two MRZ lines. The live application accepts JPG, JPEG or PNG up to 2 MB.",
+      "errors": {"required": "A passport bio-page image is required"}
+    },
+    "surname": {
+      "type": "name",
+      "label": "Surname",
+      "required": true,
+      "placeholder": "As in the passport",
+      "help": "The live form says to type the surname as it appears in the passport.",
+      "errors": {"required": "Surname is required"}
+    },
+    "given_names": {
+      "type": "name",
+      "label": "Given names",
+      "required": true,
+      "placeholder": "As in the passport",
+      "help": "The live form says to type all given names as they appear in the passport.",
+      "errors": {"required": "Given names are required"}
+    },
+    "date_of_birth": {
+      "type": "date",
+      "label": "Date of birth",
+      "required": true,
+      "placeholder": "DD-MM-YYYY on the official form",
+      "help": "The official application displays DD-MM-YYYY. Use its date control; this guide does not translate that prompt into an invented regex.",
+      "errors": {"required": "Date of birth is required"}
+    },
+    "passport_number": {
+      "type": "passport",
+      "label": "Passport number",
+      "required": true,
+      "placeholder": "Use the passport you will carry",
+      "help": "The Approval Letter is tied to the passport in the application. Present that same passport at the border.",
+      "errors": {"required": "Passport number is required"}
+    },
+    "passport_validity": {
+      "type": "text",
+      "label": "Passport validity and blank page",
+      "required": true,
+      "placeholder": "More than 6 months from arrival",
+      "help": "Only an ordinary passport qualifies. It must have more than 6 months of validity from arrival and at least one blank page for the entry permission sticker.",
+      "errors": {"required": "Confirm passport validity and a blank page"}
+    },
+    "port_of_entry": {
+      "type": "text",
+      "label": "Designated port of entry",
+      "required": true,
+      "placeholder": "Choose one of the 9 eVisa ports",
+      "help": "The eVisa works only at the designated ports. The FAQ says the fee is not refunded if you arrive elsewhere.",
+      "errors": {"required": "A designated port of entry is required"}
+    },
+    "intended_entry_date": {
+      "type": "date",
+      "label": "Intended entry date",
+      "required": true,
+      "placeholder": "DD-MM-YYYY on the official form",
+      "help": "The official form displays DD-MM-YYYY. The FAQ says the date may be no more than 60 days out and the system requires at least 5 days before arrival.",
+      "errors": {"required": "Intended entry date is required"}
+    },
+    "address_in_laos": {
+      "type": "text",
+      "label": "Address during the visit",
+      "required": true,
+      "placeholder": "Hotel or local address",
+      "help": "Enter the address where you will stay in Laos. It is a required field in the travel-details section.",
+      "errors": {"required": "Address during the visit is required"}
+    }
+  }
+}
+
