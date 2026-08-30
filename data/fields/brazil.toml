@@ -1,0 +1,75 @@
+# Brazil e-Visa — government and designated-contractor public instructions.
+# The application does not publish stable regexes, maxlengths or validation
+# messages. This file has no [[errors]].
+
+[[fields]]
+n = "01"
+key = "eligibility"
+section_en = "Section 1 · Eligibility"
+section_zh = "第 1 段 · 资格"
+example = "Valid Australian, Canadian or U.S. passport"
+mistake = "Applying only because the traveller lives in one of those countries"
+mistake_why_en = "the current e-Visa route is based on the passport held, not residence"
+mistake_why_zh = "当前电子签路径按持有的护照判断，不按居住地判断"
+copy_en = "Use this VFS route only for a valid Australian, Canadian or United States passport. Other passport holders must check Brazil's current government visa rules."
+copy_zh = "只有持有效澳大利亚、加拿大或美国护照者才使用这条 VFS 路径。其他护照持有人应查看巴西政府现行签证规则。"
+
+[[fields]]
+n = "02"
+key = "passport_bio_page"
+section_en = "Section 2 · Applicant documents"
+section_zh = "第 2 段 · 申请材料"
+example = "Clear colour passport biographical page"
+mistake = "A cropped, blurred or different passport"
+mistake_why_en = "the issued e-Visa must match the passport carried to Brazil"
+mistake_why_zh = "获批电子签必须与前往巴西时携带的护照一致"
+copy_en = "Upload a clear colour image of the biographical page. Use the same valid passport for the application and travel."
+copy_zh = "上传清晰的护照资料页彩色图像。申请和出行使用同一本有效护照。"
+
+[[fields]]
+n = "03"
+key = "photograph"
+section_en = "Section 2 · Applicant documents"
+section_zh = "第 2 段 · 申请材料"
+example = "Recent front-facing photo"
+mistake = "A casual photo that ignores the live background or pose instructions"
+mistake_why_en = "the contractor checks the uploaded photograph before verified submission"
+mistake_why_zh = "承包商会在完成核验提交前检查上传照片"
+copy_en = "Prepare a recent front-facing photograph and follow the current background, pose and file controls shown by the application."
+copy_zh = "准备近期正面照片，并遵守申请页面当时显示的背景、姿势和文件要求。"
+
+[[fields]]
+n = "04"
+key = "travel_details"
+section_en = "Section 2 · Applicant documents"
+section_zh = "第 2 段 · 申请材料"
+example = "Current trip itinerary"
+mistake = "Old or placeholder travel details"
+mistake_why_en = "the application and any requested evidence must describe the same trip"
+mistake_why_zh = "申请及补充材料必须描述同一次行程"
+copy_en = "Use current travel details. Provide itinerary or other evidence if the live application requests it; do not upload an unrelated old booking."
+copy_zh = "填写当前行程。实时申请要求时提供行程或其他证明，不要上传无关的旧订单。"
+
+[[fields]]
+n = "05"
+key = "email"
+section_en = "Section 3 · Delivery"
+section_zh = "第 3 段 · 送达"
+example = "Applicant-controlled inbox"
+mistake = "An agent's inaccessible address"
+mistake_why_en = "the approved e-Visa PDF is delivered by email"
+mistake_why_zh = "获批电子签 PDF 通过邮件送达"
+copy_en = "Use an inbox controlled by the applicant. Save the approval PDF and verify every passport detail before travel."
+copy_zh = "使用申请人本人可控制的邮箱。保存获批 PDF，并在出行前核对每项护照信息。"
+
+[[fields]]
+n = "06"
+key = "minor_documents"
+section_en = "Section 2 · Applicant documents"
+section_zh = "第 2 段 · 申请材料"
+example = "Current parental consent and identity evidence"
+mistake = "Submitting an adult document set for a child"
+mistake_why_en = "the contractor publishes additional conditional documents for minors"
+mistake_why_zh = "承包商对未成年人公布了额外的条件性材料"
+copy_en = "For a minor, open the current child-document instructions and prepare the requested consent and parent or guardian identity evidence."
+copy_zh = "未成年人申请时，打开当前儿童材料说明，准备所要求的同意书及父母或监护人身份证明。"

@@ -1,0 +1,111 @@
+# Panama Digital Sworn Traveler Declaration — live public controls.
+# The form publishes required controls and standard input types but no readable
+# regexes, maxlengths or validation messages. This file has no [[errors]].
+
+[[fields]]
+n = "01"
+key = "declaration_type"
+section_en = "Section 1 · Movement"
+section_zh = "第 1 段 · 出入境方向"
+example = "Entry into the country"
+mistake = "Exit selected for an arriving trip"
+mistake_why_en = "the live form separates entry and exit declarations"
+mistake_why_zh = "实时表单把入境和出境申报分开"
+copy_en = "Choose entry or exit to match the current movement. Arriving travellers select entry into the country."
+copy_zh = "按本次行程选择入境或出境。抵达旅客选择入境。"
+
+[[fields]]
+n = "02"
+key = "customs_checkpoint"
+section_en = "Section 1 · Movement"
+section_zh = "第 1 段 · 出入境方向"
+example = "Current checkpoint from the live list"
+mistake = "A checkpoint from a previous trip"
+mistake_why_en = "customs uses the selected point to route the declaration"
+mistake_why_zh = "海关按所选检查点处理申报"
+copy_en = "Select the customs entry or exit point from the current portal list. Do not guess from an old guide."
+copy_zh = "从当前门户列表选择海关出入境检查点，不要照旧攻略猜口岸。"
+
+[[fields]]
+n = "03"
+key = "first_names"
+section_en = "Section 2 · Traveller identity"
+section_zh = "第 2 段 · 旅客身份"
+example = "Given names from passport"
+mistake = "A nickname"
+mistake_why_en = "the declaration should match the travel document"
+mistake_why_zh = "申报应与旅行证件一致"
+copy_en = "Copy the first names from the passport or travel document used for the trip."
+copy_zh = "抄写本次旅行所用护照或旅行证件上的名字。"
+
+[[fields]]
+n = "04"
+key = "last_names"
+section_en = "Section 2 · Traveller identity"
+section_zh = "第 2 段 · 旅客身份"
+example = "Surnames from passport"
+mistake = "Only one surname when the document shows more"
+mistake_why_en = "the live field asks for last names"
+mistake_why_zh = "实时字段要求填写姓氏"
+copy_en = "Copy the surname or surnames shown in the travel document."
+copy_zh = "抄写旅行证件上显示的一个或多个姓氏。"
+
+[[fields]]
+n = "05"
+key = "nationality"
+section_en = "Section 2 · Traveller identity"
+section_zh = "第 2 段 · 旅客身份"
+example = "Nationality of the passport used"
+mistake = "Country of residence"
+mistake_why_en = "nationality and residence are different facts"
+mistake_why_zh = "国籍和居住国家不是同一项"
+copy_en = "Select the nationality of the travel document used for this movement."
+copy_zh = "选择本次出入境所用旅行证件对应的国籍。"
+
+[[fields]]
+n = "06"
+key = "document_number"
+section_en = "Section 2 · Traveller identity"
+section_zh = "第 2 段 · 旅客身份"
+example = "Passport number carried to customs"
+mistake = "A visa or booking number"
+mistake_why_en = "the live field asks for the passport"
+mistake_why_zh = "实时字段要求护照号"
+copy_en = "Use the passport number from the document carried for this trip. The public form states no character pattern."
+copy_zh = "填写本次携带护照上的号码。公开表单没有说明字符格式。"
+
+[[fields]]
+n = "07"
+key = "date_of_birth"
+section_en = "Section 2 · Traveller identity"
+section_zh = "第 2 段 · 旅客身份"
+example = "Date shown in passport"
+mistake = "Today's date"
+mistake_why_en = "the field identifies the declaring traveller"
+mistake_why_zh = "该字段用于识别申报旅客"
+copy_en = "Match the travel document. The live form labels the declaring-traveller field for age 18 or older."
+copy_zh = "与旅行证件一致。实时表单把申报旅客栏标为 18 岁或以上。"
+
+[[fields]]
+n = "08"
+key = "email"
+section_en = "Section 2 · Traveller identity"
+section_zh = "第 2 段 · 旅客身份"
+example = "Reachable inbox entered twice"
+mistake = "Two different email spellings"
+mistake_why_en = "the live form requires email and confirmation fields"
+mistake_why_zh = "实时表单要求填写邮箱并再次确认"
+copy_en = "Enter the same reachable email address in both live fields. Save the QR directly after submission."
+copy_zh = "在两个实时字段中填写同一个可用邮箱。提交后直接保存 QR。"
+
+[[fields]]
+n = "09"
+key = "customs_answers"
+section_en = "Section 3 · Goods and values"
+section_zh = "第 3 段 · 物品和金额"
+example = "Answers matching everything carried"
+mistake = "Leaving out food, animals, commercial goods or reportable money"
+mistake_why_en = "the declaration covers goods and values and may be inspected"
+mistake_why_zh = "申报覆盖物品和金额，海关可能查验"
+copy_en = "Answer every customs question for the current luggage and family group. Declare regulated goods and reportable cash or negotiable instruments truthfully."
+copy_zh = "按本次行李和家庭成员逐项回答海关问题，如实申报受管制物品及达到申报要求的现金或可转让票据。"

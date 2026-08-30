@@ -1,0 +1,66 @@
+# Brazil — government authorization and designated contractor URLs
+# Last verified: 2026-08-30
+
+[government_authorization]
+url = "https://www.gov.br/mre/pt-br/consulado-sao-francisco/electronic-visitor-visa-e-visa"
+name = "Brazil Ministry of Foreign Affairs e-Visa notice"
+agency = "Ministry of Foreign Affairs of Brazil"
+last_verified = "2026-08-30"
+notes = "Government page stating that eligible Australian, Canadian and United States passport holders are subject to visa requirements from 10 April 2025 and directing e-Visa requests to brazil.vfsevisa.com. Start here to verify the contractor link. The live page blocks automated sessions; verified against its Internet Archive snapshot of 2024-11-06."
+
+[evisa]
+url = "https://brazil.vfsevisa.com/tourist-visa.html"
+name = "Brazil e-Visa application information"
+agency = "VFS Global, designated by the Government of Brazil"
+last_verified = "2026-08-30"
+notes = "Government-designated commercial application host. The .com domain is not a government suffix. The current page publishes the USD 80.90 fee, passport and photograph requirements, multiple-entry validity branches, stay limit, processing time and printed e-Visa instruction. The live host blocks automated sessions; verified against its Internet Archive snapshot of 2026-07-14."
+
+[faq]
+url = "https://brazil.vfsevisa.com/faqs.html"
+name = "Brazil e-Visa FAQ"
+agency = "VFS Global, designated by the Government of Brazil"
+last_verified = "2026-08-30"
+notes = "Confirms the eligible passport group, multiple-entry character, email delivery, non-refundable fee and processing time. Verify this non-government host through the Ministry of Foreign Affairs page before using it. Verified against the Internet Archive snapshot of 2026-07-14 because the live host blocks automated sessions."
+
+[contractor_terms]
+url = "https://brazil.vfsevisa.com/terms-and-conditions.html"
+name = "VFS Global Brazil e-Visa terms"
+agency = "VFS Global"
+last_verified = "2026-08-30"
+notes = "Identifies the commercial operator as VF Worldwide Holdings Ltd trading as VFS Global and states that visa grants, duration and refusal sit with the immigration authorities' sole discretion and that fees are non-refundable. Verified against the Internet Archive snapshot of 2026-07-14 because the live host blocks automated sessions."
+
+[meta]
+flag = "🇧🇷"
+name_en = "Brazil"
+name_zh = "巴西"
+form_code = "eVisa"
+guide_slug = "evisa"
+form_key = "evisa"
+form_name_en = "Brazil Electronic Visitor Visa"
+form_name_zh = "巴西电子访问签证"
+since_en = "for eligible Australian, Canadian and U.S. passport holders"
+since_zh = "供符合条件的澳大利亚、加拿大和美国护照持有人使用"
+fee_en = "USD $80.90"
+fee_zh = "80.90 美元"
+suffix = ".com"
+form_type = "evisa"
+field_count = 6
+sections = 3
+time_needed_en = "up to 10 business days after verified submission"
+time_needed_zh = "完成核验提交后最长 10 个工作日"
+output_en = "Approved e-Visa PDF delivered by email. Print it and carry it with the passport used in the application."
+output_zh = "获批电子签 PDF 通过邮件送达。打印后与申请所用护照一同携带。"
+fields_intro_en = "The designated contractor application is dynamic and does not publish stable regexes, character limits or validation messages. These six cards cover only the documents and checkpoints stated by the government and contractor pages."
+fields_intro_zh = "政府指定承包商的申请是动态页面，没有公开稳定的正则、字符上限或校验报错。以下 6 张卡片只覆盖政府和承包商页面明确列出的材料与检查项。"
+email_title_en = "Approved e-Visa arrives by email"
+email_title_zh = "获批电子签通过邮件送达"
+email_body_en = "Use an inbox you control. Save the approved PDF and confirm that the passport details match before travel."
+email_body_zh = "使用本人可控制的邮箱。保存获批 PDF，并在出行前核对护照信息。"
+printout_title_en = "Print the e-Visa PDF"
+printout_title_zh = "打印电子签 PDF"
+printout_body_en = "The contractor instructs travellers to carry a printed e-Visa with the valid passport used in the application."
+printout_body_zh = "承包商要求旅客打印电子签，并与申请时使用的有效护照一同携带。"
+verification_title_en = "Approval belongs to Brazil's immigration authorities"
+verification_title_zh = "审批权属于巴西移民机关"
+verification_body_en = "VFS Global receives the application but does not decide it. Check the issued validity and stay conditions on the approved document."
+verification_body_zh = "VFS Global 接收申请但不作审批决定。以获批文件显示的有效期和停留条件为准。"

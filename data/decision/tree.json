@@ -44,7 +44,17 @@
         { "value": "georgia", "label": "Georgia", "next": "georgia_passport" },
         { "value": "oman", "label": "Oman", "next": "oman_eligibility" },
         { "value": "qatar", "label": "Qatar", "next": "qatar_eligibility" },
-        { "value": "bahrain", "label": "Bahrain", "next": "bahrain_route" }
+        { "value": "bahrain", "label": "Bahrain", "next": "bahrain_route" },
+        { "value": "tanzania", "label": "Tanzania", "next": "tanzania_route" },
+        { "value": "ethiopia", "label": "Ethiopia", "next": "ethiopia_route" },
+        { "value": "morocco", "label": "Morocco", "next": "morocco_eligibility" },
+        { "value": "jamaica", "label": "Jamaica", "next": "jamaica_route" },
+        { "value": "bahamas", "label": "The Bahamas", "next": "bahamas_route" },
+        { "value": "aruba", "label": "Aruba", "next": "aruba_result" },
+        { "value": "panama", "label": "Panama", "next": "panama_result" },
+        { "value": "peru", "label": "Peru", "next": "peru_result" },
+        { "value": "brazil", "label": "Brazil", "next": "brazil_eligibility" },
+        { "value": "barbados", "label": "Barbados", "next": "barbados_result" }
       ]
     },
 
@@ -1862,6 +1872,519 @@
       "summary": "Check both official lists and run the NPRA eligibility tool.",
       "forms": [],
       "note": "Use passport nationality, current GCC status and the real purpose. Do not start a paid online application merely because a country appears on the separate on-arrival list."
+    },
+
+    "tanzania_route": {
+      "type": "question",
+      "label": "Which Tanzania route fits the passport and purpose?",
+      "options": [
+        {
+          "value": "exempt",
+          "label": "Visa-exempt passport",
+          "next": "tanzania_exempt_result"
+        },
+        {
+          "value": "ordinary",
+          "label": "Ordinary tourism visa",
+          "next": "tanzania_ordinary_result"
+        },
+        {
+          "value": "usa_tourism",
+          "label": "United States passport for tourism",
+          "next": "tanzania_multiple_result"
+        },
+        {
+          "value": "transit",
+          "label": "Transit to another country",
+          "next": "tanzania_transit_result"
+        },
+        {
+          "value": "not_sure",
+          "label": "I am not sure",
+          "next": "tanzania_check_result"
+        }
+      ]
+    },
+
+    "tanzania_exempt_result": {
+      "type": "result",
+      "country": "tanzania",
+      "summary": "No Tanzania visa form is required for this visa-exempt route.",
+      "forms": [],
+      "note": "Confirm the passport on the current Immigration Services exemption list. Do not pay for an eVisa when the exact passport and trip are exempt."
+    },
+
+    "tanzania_ordinary_result": {
+      "type": "result",
+      "country": "tanzania",
+      "summary": "Apply for the Ordinary Visa on the government portal.",
+      "forms": [
+        {
+          "name": "Tanzania Ordinary Visa",
+          "fee": "USD 50",
+          "url": "https://visa.immigration.go.tz/",
+          "guide": "/tanzania/evisa/",
+          "agency": "Tanzania Immigration Services Department",
+          "deadline": "Normal applications are processed within 10 days"
+        }
+      ],
+      "note": "The Ordinary Visa is the normal tourism route except for United States passport holders. It is valid for up to 90 days."
+    },
+
+    "tanzania_multiple_result": {
+      "type": "result",
+      "country": "tanzania",
+      "summary": "Use the Multiple Visa route for United States passport tourism.",
+      "forms": [
+        {
+          "name": "Tanzania Multiple Visa",
+          "fee": "USD 100",
+          "url": "https://visa.immigration.go.tz/",
+          "guide": "/tanzania/evisa/",
+          "agency": "Tanzania Immigration Services Department",
+          "deadline": "Normal applications are processed within 10 days"
+        }
+      ],
+      "note": "The guidelines require United States passport holders to use Multiple Visa for tourism even when only one entry is planned."
+    },
+
+    "tanzania_transit_result": {
+      "type": "result",
+      "country": "tanzania",
+      "summary": "Use Transit Visa only for onward transit to another country.",
+      "forms": [
+        {
+          "name": "Tanzania Transit Visa",
+          "fee": "USD 30",
+          "url": "https://visa.immigration.go.tz/",
+          "guide": "/tanzania/evisa/",
+          "agency": "Tanzania Immigration Services Department",
+          "deadline": "Normal applications are processed within 10 days"
+        }
+      ],
+      "note": "Transit Visa is not for tourism. It permits no more than 7 days and requires destination visa and/or onward-ticket evidence."
+    },
+
+    "tanzania_check_result": {
+      "type": "result",
+      "country": "tanzania",
+      "summary": "Read the current exemption, referral and visa-type guidance before applying.",
+      "forms": [],
+      "note": "The fee and processing route depend on passport and purpose. Referral cases must apply online and wait for approval."
+    },
+
+    "ethiopia_route": {
+      "type": "question",
+      "label": "Which Ethiopia tourist-entry route fits the passport and stay?",
+      "options": [
+        {
+          "value": "exempt",
+          "label": "Kenya or Djibouti passport exemption",
+          "next": "ethiopia_exempt_result"
+        },
+        {
+          "value": "on_arrival",
+          "label": "Eligible for Tourist Visa on Arrival",
+          "next": "ethiopia_arrival_result"
+        },
+        {
+          "value": "thirty",
+          "label": "30-day Tourist eVisa",
+          "next": "ethiopia_30_result"
+        },
+        {
+          "value": "ninety",
+          "label": "90-day Tourist eVisa",
+          "next": "ethiopia_90_result"
+        },
+        {
+          "value": "land_or_unsure",
+          "label": "Land entry or not sure",
+          "next": "ethiopia_check_result"
+        }
+      ]
+    },
+
+    "ethiopia_exempt_result": {
+      "type": "result",
+      "country": "ethiopia",
+      "summary": "No Ethiopia tourist visa form is required for this passport exemption.",
+      "forms": [],
+      "note": "The official page states that Kenya and Djibouti citizens with valid passports can enter without a visa."
+    },
+
+    "ethiopia_arrival_result": {
+      "type": "result",
+      "country": "ethiopia",
+      "summary": "Use the separate Tourist Visa on Arrival route shown for the passport.",
+      "forms": [],
+      "note": "Check the current official on-arrival list and its conditions. This result does not send the traveller to the paid online eVisa form."
+    },
+
+    "ethiopia_30_result": {
+      "type": "result",
+      "country": "ethiopia",
+      "summary": "Apply for the 30-day single-entry Tourist eVisa.",
+      "forms": [
+        {
+          "name": "Ethiopia 30-day Tourist eVisa",
+          "fee": "USD 62",
+          "url": "https://www.evisa.gov.et/visa",
+          "guide": "/ethiopia/evisa/",
+          "agency": "Immigration and Citizenship Service of Ethiopia",
+          "deadline": "Normally 3 days; apply at least 3 days before intended arrival"
+        }
+      ],
+      "note": "Validity starts from the intended entry date entered in the application."
+    },
+
+    "ethiopia_90_result": {
+      "type": "result",
+      "country": "ethiopia",
+      "summary": "Apply for the 90-day single-entry Tourist eVisa.",
+      "forms": [
+        {
+          "name": "Ethiopia 90-day Tourist eVisa",
+          "fee": "USD 152",
+          "url": "https://www.evisa.gov.et/visa",
+          "guide": "/ethiopia/evisa/",
+          "agency": "Immigration and Citizenship Service of Ethiopia",
+          "deadline": "Normally 3 days; apply at least 3 days before intended arrival"
+        }
+      ],
+      "note": "Validity starts from the intended entry date entered in the application."
+    },
+
+    "ethiopia_check_result": {
+      "type": "result",
+      "country": "ethiopia",
+      "summary": "Confirm the exact entry point and passport route with Immigration and Citizenship Service.",
+      "forms": [],
+      "note": "The official pages reviewed did not publish a current eVisa port list or confirm land-border use. Do not pay on the assumption that a planned land crossing accepts the eVisa."
+    },
+
+    "morocco_eligibility": {
+      "type": "question",
+      "label": "What result does the official Accès Maroc eligibility checker show?",
+      "options": [
+        {
+          "value": "exempt",
+          "label": "No visa required",
+          "next": "morocco_exempt_result"
+        },
+        {
+          "value": "evisa",
+          "label": "Eligible for eVisa",
+          "next": "morocco_evisa_result"
+        },
+        {
+          "value": "consular",
+          "label": "Consular visa required",
+          "next": "morocco_consular_result"
+        },
+        {
+          "value": "aevm",
+          "label": "AEVM route shown",
+          "next": "morocco_aevm_result"
+        },
+        {
+          "value": "unsure",
+          "label": "I have not checked",
+          "next": "morocco_check_result"
+        }
+      ]
+    },
+
+    "morocco_exempt_result": {
+      "type": "result",
+      "country": "morocco",
+      "summary": "No Morocco visa form is required for this visa-exempt route.",
+      "forms": [],
+      "note": "Use the live government-linked checker for the exact passport and circumstances. If it confirms visa-free entry, do not pay an eVisa intermediary."
+    },
+
+    "morocco_evisa_result": {
+      "type": "result",
+      "country": "morocco",
+      "summary": "Apply for the Morocco eVisa only after the checker confirms eligibility.",
+      "forms": [
+        {
+          "name": "Morocco eVisa",
+          "fee": "MAD 770 standard / MAD 1,100 express",
+          "url": "https://www.acces-maroc.ma/",
+          "guide": "/morocco/evisa/",
+          "agency": "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates",
+          "deadline": "72 Moroccan working hours standard / 24 express"
+        }
+      ],
+      "note": "The non-government-suffix domain is linked by the Ministry, which says Department engineers and technicians developed the platform. Verify the link from diplomatie.ma before paying."
+    },
+
+    "morocco_consular_result": {
+      "type": "result",
+      "country": "morocco",
+      "summary": "Follow the consular visa route shown by the official checker.",
+      "forms": [],
+      "note": "Do not submit and pay for an eVisa when the checker routes the passport to a consular visa."
+    },
+
+    "morocco_aevm_result": {
+      "type": "result",
+      "country": "morocco",
+      "summary": "Follow the AEVM route shown by the official checker.",
+      "forms": [],
+      "note": "AEVM is a separate route. Use the instructions returned for the exact passport and trip instead of the eVisa form."
+    },
+
+    "morocco_check_result": {
+      "type": "result",
+      "country": "morocco",
+      "summary": "Run the Accès Maroc eligibility check before choosing any paid route.",
+      "forms": [],
+      "note": "The checker asks about nationality, residence, document type, trip purpose and qualifying visas. A visa-exempt traveller needs no paid eVisa form."
+    },
+
+    "jamaica_route": {
+      "type": "question",
+      "label": "Are you arriving in Jamaica as a visitor or resident?",
+      "options": [
+        {
+          "value": "visitor",
+          "label": "Arriving visitor",
+          "next": "jamaica_c5_result"
+        },
+        {
+          "value": "resident",
+          "label": "Arriving resident",
+          "next": "jamaica_c5_result"
+        },
+        {
+          "value": "not_arriving",
+          "label": "Not entering Jamaica",
+          "next": "jamaica_no_form_result"
+        }
+      ]
+    },
+
+    "jamaica_c5_result": {
+      "type": "result",
+      "country": "jamaica",
+      "summary": "Submit the free Electronic Passenger Declaration (C5) on the government portal.",
+      "forms": [
+        {
+          "name": "Jamaica Electronic Passenger Declaration (C5)",
+          "fee": "Free",
+          "url": "https://enterjamaica.gov.jm/?language=en-US",
+          "guide": "/jamaica/c5/",
+          "agency": "Passport, Immigration and Citizenship Agency and Jamaica Customs Agency",
+          "deadline": "Up to 30 days before travel"
+        }
+      ],
+      "note": "The current portal is enterjamaica.gov.jm. PICA says no third party was contracted to provide this form. C5 is separate from any passport-specific visa requirement."
+    },
+
+    "jamaica_no_form_result": {
+      "type": "result",
+      "country": "jamaica",
+      "summary": "No Jamaica arrival C5 is needed when the traveller is not entering Jamaica.",
+      "forms": [],
+      "note": "Run the route again for an actual arrival. Transit circumstances can differ, so follow the carrier and border instructions for the itinerary."
+    },
+
+    "bahamas_route": {
+      "type": "question",
+      "label": "Which Bahamas customs or pilot route applies?",
+      "options": [
+        {
+          "value": "returning_resident",
+          "label": "Returning resident",
+          "next": "bahamas_c17_result"
+        },
+        {
+          "value": "visitor_goods",
+          "label": "Visitor with items beyond used personal belongings",
+          "next": "bahamas_c17_result"
+        },
+        {
+          "value": "visitor_personal",
+          "label": "Visitor with only used personal belongings",
+          "next": "bahamas_oral_result"
+        },
+        {
+          "value": "selected_pilot",
+          "label": "Selected for the Digital Arrival Card pilot",
+          "next": "bahamas_pilot_result"
+        },
+        {
+          "value": "unsure",
+          "label": "I am not sure",
+          "next": "bahamas_check_result"
+        }
+      ]
+    },
+
+    "bahamas_c17_result": {
+      "type": "result",
+      "country": "bahamas",
+      "summary": "Submit the free digital Customs C17 through the government-authorized Exempt portal.",
+      "forms": [
+        {
+          "name": "Bahamas Customs C17 Digital Declaration",
+          "fee": "Free; customs duties are separate",
+          "url": "https://exempt.gov.bs/",
+          "guide": "/bahamas/c17/",
+          "agency": "Bahamas Customs Department and Ministry of Finance",
+          "deadline": "Complete electronically before arrival"
+        }
+      ],
+      "note": "The .gov.bs portal is officially authorized and identifies Exempt Technologies as the developer. Save the QR code for the designated customs lane."
+    },
+
+    "bahamas_oral_result": {
+      "type": "result",
+      "country": "bahamas",
+      "summary": "Use the oral baggage-declaration route for this visitor case.",
+      "forms": [],
+      "note": "The current government page says a visitor with only used personal belongings makes an oral baggage declaration. Do not open an unnecessary paid or digital filing service."
+    },
+
+    "bahamas_pilot_result": {
+      "type": "result",
+      "country": "bahamas",
+      "summary": "Follow the dedicated Bahamas Digital Arrival Card pilot instructions supplied for the selected flight.",
+      "forms": [],
+      "note": "The 5 May 2026 announcement limits the pilot to select visitors on selected flights and keeps the paper process in parallel. It does not establish a universal public form."
+    },
+
+    "bahamas_check_result": {
+      "type": "result",
+      "country": "bahamas",
+      "summary": "Confirm residence status, goods and any selected-flight pilot notice before filing.",
+      "forms": [],
+      "note": "Every returning resident uses C17. A visitor uses it for items beyond used personal belongings; a visitor with only used personal belongings uses the oral route under the government page."
+    },
+
+    "aruba_result": {
+      "type": "result",
+      "country": "aruba",
+      "summary": "Every passenger completes the ED Card. Most air arrivals also pay a separate USD 20 sustainability fee in the same official flow.",
+      "forms": [
+        {
+          "name": "Aruba ED Card",
+          "fee": "USD $20 sustainability fee for most air arrivals; exemptions apply",
+          "url": "https://edcardaruba.aw/welcome",
+          "guide": "/aruba/ed-card/",
+          "agency": "Aruba Immigration",
+          "deadline": "Within 7 days before travel"
+        }
+      ],
+      "note": "The ED Card also applies to sea arrivals, but the sustainability fee applies only to airport arrivals."
+    },
+
+    "panama_result": {
+      "type": "result",
+      "country": "panama",
+      "summary": "Use Panama Customs' free digital declaration for goods and values, then save the QR response code.",
+      "forms": [
+        {
+          "name": "Digital Sworn Traveler Declaration",
+          "fee": "Free",
+          "url": "https://declaraciondeviajero.ana.gob.pa/",
+          "guide": "/panama/traveler-declaration/",
+          "agency": "Autoridad Nacional de Aduanas",
+          "deadline": "File and present within the official 72-hour window"
+        }
+      ],
+      "note": "The portal supports Spanish and English. One declaration may cover a family group; the QR does not replace customs inspection."
+    },
+
+    "peru_result": {
+      "type": "result",
+      "country": "peru",
+      "summary": "Peru Migraciones creates the TAM Virtual automatically at immigration control. Use the free official lookup afterward.",
+      "forms": [
+        {
+          "name": "Virtual Andean Migration Card lookup",
+          "fee": "Free",
+          "url": "https://cel.migraciones.gob.pe/ConsultaTAMVirtual/VerificarTAM",
+          "guide": "/peru/tam-virtual/",
+          "agency": "Superintendencia Nacional de Migraciones",
+          "deadline": "After the movement has been recorded"
+        }
+      ],
+      "note": "This is a post-control movement record, not a form to submit before travelling. Review the authorized stay shown on the downloaded TAM."
+    },
+
+    "brazil_eligibility": {
+      "type": "question",
+      "label": "Which passport will you use for Brazil?",
+      "options": [
+        {
+          "value": "eligible_evisa",
+          "label": "Australian, Canadian or U.S. passport",
+          "next": "brazil_evisa_result"
+        },
+        {
+          "value": "visa_exempt",
+          "label": "Passport is visa-exempt under current Brazil rules",
+          "next": "brazil_exempt_result"
+        },
+        {
+          "value": "other_or_unsure",
+          "label": "Another passport or unsure",
+          "next": "brazil_other_result"
+        }
+      ]
+    },
+
+    "brazil_evisa_result": {
+      "type": "result",
+      "country": "brazil",
+      "summary": "Eligible Australian, Canadian and U.S. passport holders use Brazil's designated VFS Global e-Visa route.",
+      "forms": [
+        {
+          "name": "Brazil Electronic Visitor Visa",
+          "fee": "USD $80.90",
+          "url": "https://brazil.vfsevisa.com/tourist-visa.html",
+          "guide": "/brazil/evisa/",
+          "agency": "Ministry of Foreign Affairs of Brazil; application administered by VFS Global",
+          "deadline": "Apply early; processing is up to 10 business days after verified submission"
+        }
+      ],
+      "note": "The .com application host is a government-designated commercial contractor, not a government suffix. Verify it through the Ministry of Foreign Affairs page on gov.br."
+    },
+
+    "brazil_exempt_result": {
+      "type": "result",
+      "country": "brazil",
+      "summary": "Do not buy an e-Visa when the travel passport is visa-exempt under Brazil's current official rules.",
+      "forms": [],
+      "note": "Recheck the current exemption and permitted-stay rules on gov.br before travel."
+    },
+
+    "brazil_other_result": {
+      "type": "result",
+      "country": "brazil",
+      "summary": "The VFS e-Visa route is not a general application for every passport.",
+      "forms": [],
+      "note": "Check the Ministry of Foreign Affairs or a Brazilian consulate for the current rule and correct visa route for this passport."
+    },
+
+    "barbados_result": {
+      "type": "result",
+      "country": "barbados",
+      "summary": "Complete Barbados' free combined Immigration and Customs Form after it opens 72 hours before arrival.",
+      "forms": [
+        {
+          "name": "Online Immigration and Customs Form",
+          "fee": "Free",
+          "url": "https://www.travelform.gov.bb/",
+          "guide": "/barbados/ed-form/",
+          "agency": "Barbados Immigration Department and Customs & Excise Department",
+          "deadline": "Available 72 hours before arrival"
+        }
+      ],
+      "note": "Save both emailed receipts: one for Immigration and one for Customs. Keep digital or printed copies for arrival."
     }
   }
 }

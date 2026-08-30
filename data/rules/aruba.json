@@ -1,0 +1,76 @@
+{
+  "country": "aruba",
+  "officialUrl": "https://edcardaruba.aw/welcome",
+  "lastVerified": "2026-08-30",
+  "source": "The live Aruba ED Card application bundle and the Aruba Tourism Authority ED Card guide were read on 2026-08-30. The live controls expose required passport and travel fields, name and passport length limits, alphanumeric passport normalization, and alphanumeric flight inputs. No server-side error messages are claimed.",
+  "fields": {
+    "arrival_date": {
+      "type": "date",
+      "label": "Arrival date",
+      "required": true,
+      "help": "The ED Card opens within seven days before travel. Use the confirmed Aruba arrival date."
+    },
+    "passport_number": {
+      "type": "passport",
+      "label": "Passport number",
+      "required": true,
+      "pattern": "^[A-Z0-9]{5,30}$",
+      "minLength": 5,
+      "maxLength": 30,
+      "help": "The live application converts this field to uppercase alphanumeric characters and exposes a 5 to 30 character limit."
+    },
+    "first_names": {
+      "type": "name",
+      "label": "First names",
+      "required": true,
+      "maxLength": 50,
+      "help": "Copy the given names from the passport. The live application exposes a 50 character maximum."
+    },
+    "last_name": {
+      "type": "name",
+      "label": "Last name",
+      "required": true,
+      "maxLength": 50,
+      "help": "Copy the surname from the passport. The live application exposes a 50 character maximum."
+    },
+    "passport_expiration": {
+      "type": "date",
+      "label": "Passport expiration date",
+      "required": true,
+      "help": "Use the expiration date printed in the same passport."
+    },
+    "arrival_flight": {
+      "type": "flight",
+      "label": "Arrival flight number",
+      "required": true,
+      "pattern": "^[A-Za-z0-9]{1,10}$",
+      "maxLength": 10,
+      "help": "The live custom-flight input accepts letters and numbers and exposes a 10 character maximum."
+    },
+    "departure_date": {
+      "type": "date",
+      "label": "Departure date",
+      "required": true,
+      "help": "Use the planned date you will leave Aruba."
+    },
+    "address": {
+      "type": "text",
+      "label": "Home address",
+      "required": true,
+      "maxLength": 42,
+      "help": "Use the current residence address. The live application exposes a 42 character maximum for the address line."
+    },
+    "purpose_of_visit": {
+      "type": "text",
+      "label": "Purpose of visit",
+      "required": true,
+      "help": "Choose the purpose that matches this trip."
+    },
+    "email": {
+      "type": "email",
+      "label": "Email address",
+      "required": true,
+      "help": "Use an inbox you can open while travelling and keep the approved confirmation."
+    }
+  }
+}

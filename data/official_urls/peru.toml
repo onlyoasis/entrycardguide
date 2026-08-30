@@ -1,0 +1,59 @@
+# Peru — official URLs
+# Last verified: 2026-08-30
+
+[tam_virtual]
+url = "https://cel.migraciones.gob.pe/ConsultaTAMVirtual/VerificarTAM"
+name = "Peru TAM Virtual lookup"
+agency = "Superintendencia Nacional de Migraciones"
+last_verified = "2026-08-30"
+notes = "Official bilingual lookup for the electronic Andean Migration Card record generated during immigration control. It asks for document type, document number, nationality, movement date, optional departure record and CAPTCHA."
+
+[official_guide]
+url = "https://www.gob.pe/institucion/migraciones/campa%C3%B1as/28799-descarga-tu-tarjeta-andina-de-migracion-virtual"
+name = "Download your Virtual Andean Migration Card"
+agency = "Superintendencia Nacional de Migraciones"
+last_verified = "2026-08-30"
+notes = "Explains that Peru eliminated passport stamping for international flight immigration control and instructs travellers to complete the lookup and CAPTCHA. Document identifiers use letters and numbers without dots, hyphens or spaces."
+
+[record_explanation]
+url = "https://www.gob.pe/institucion/migraciones/noticias/882413-como-puedes-obtener-tu-tarjeta-andina-de-migracion-tam-virtual"
+name = "How to obtain the TAM Virtual"
+agency = "Superintendencia Nacional de Migraciones"
+last_verified = "2026-08-30"
+notes = "States that the TAM Virtual is generated automatically during immigration control and records personal details, movement date and time, checkpoint and authorized stay. Download is free."
+
+[meta]
+flag = "🇵🇪"
+name_en = "Peru"
+name_zh = "秘鲁"
+form_code = "TAM Virtual"
+guide_slug = "tam-virtual"
+form_key = "tam_virtual"
+form_name_en = "Virtual Andean Migration Card"
+form_name_zh = "虚拟安第斯移民卡"
+since_en = "automatic electronic migration record"
+since_zh = "自动生成的电子移民记录"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".gob.pe"
+form_type = "arrival_card"
+field_count = 5
+sections = 2
+time_needed_en = "varies"
+time_needed_zh = "因记录可用情况而异"
+output_en = "Download the TAM Virtual record showing the registered movement and authorized stay."
+output_zh = "下载显示已登记出入境记录和获准停留信息的 TAM Virtual。"
+fields_intro_en = "The official lookup publishes an alphanumeric document rule and its live script formats the movement date as DD/MM/YYYY with a 10 character maximum. Server-side validation messages are not published."
+fields_intro_zh = "官方查询页公开了证件号只能含字母和数字的规则，实时脚本把出入境日期格式化为 DD/MM/YYYY 且上限 10 个字符。服务器校验报错没有公开。"
+email_title_en = "No email step"
+email_title_zh = "没有邮件步骤"
+email_body_en = "The public lookup displays the record for download. It does not ask for an email address."
+email_body_zh = "公开查询页直接显示可下载记录，不要求邮箱。"
+printout_title_en = "Download the record"
+printout_title_zh = "下载记录"
+printout_body_en = "Save the TAM Virtual after a successful lookup. Print a copy if an airline, hotel or authority requests proof of the movement record."
+printout_body_zh = "查询成功后保存 TAM Virtual。如航司、酒店或机关要求出入境记录证明，可打印一份。"
+verification_title_en = "Check the recorded stay"
+verification_title_zh = "核对已登记停留期"
+verification_body_en = "The TAM shows the movement and authorized stay recorded by Migraciones. Contact Migraciones if the record is missing or incorrect."
+verification_body_zh = "TAM 显示 Migraciones 登记的出入境和获准停留信息。记录缺失或错误时联系 Migraciones。"

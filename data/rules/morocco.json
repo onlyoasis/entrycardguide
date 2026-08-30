@@ -1,0 +1,92 @@
+{
+  "country": "morocco",
+  "officialUrl": "https://www.acces-maroc.ma/",
+  "lastVerified": "2026-08-30",
+  "source": "https://www.acces-maroc.ma/, https://www.acces-maroc.ma/assets/docs/Conditions%20utilisation%20eVisa%20-%20An.pdf and https://www.acces-maroc.ma/assets/docs/Guide%20eVisa.pdf, read 2026-08-30. The live eligibility screen and official PDFs publish route questions, required documents, a 35 x 45 mm photo, JPG/JPEG/PDF attachments up to 1 MB and the application sequence. Authenticated text-field regexes, character limits and official error strings are not public, so no pattern or [[errors]] is used and no local validator is mounted.",
+  "fields": {
+    "eligibility_result": {
+      "type": "nationality",
+      "label": "Entry eligibility result",
+      "required": true,
+      "placeholder": "No visa, consular visa, AEVM or eVisa",
+      "help": "Run the live checker before paying. The official guide says it can route the traveller to no visa, a consular visa, AEVM or eVisa."
+    },
+    "nationality": {
+      "type": "nationality",
+      "label": "Nationality/Country Citizenship",
+      "required": true,
+      "placeholder": "Passport nationality",
+      "help": "The live checker starts with the nationality of the passport that will be used for travel."
+    },
+    "country_of_residence": {
+      "type": "nationality",
+      "label": "Country of Usual Residence",
+      "required": true,
+      "placeholder": "Current country of residence",
+      "help": "Residence can affect Category B eligibility. The residence permit must meet the current validity rule."
+    },
+    "passport_type": {
+      "type": "text",
+      "label": "Document type (Passport)",
+      "required": true,
+      "placeholder": "Ordinary passport",
+      "help": "Only ordinary passports are accepted for eVisa. Other travel-document holders are directed to an embassy or consulate."
+    },
+    "purpose": {
+      "type": "text",
+      "label": "Purpose of the Trip",
+      "required": true,
+      "placeholder": "Tourism or Business",
+      "help": "The eVisa is issued for Tourism or Business. The live checker also asks whether the traveller is participating in an event."
+    },
+    "supporting_status": {
+      "type": "text",
+      "label": "Residence permit or supporting visa",
+      "required": false,
+      "placeholder": "Only when Category B or C applies",
+      "help": "Category B uses an eligible residence card or permit valid at least 180 days. Category C uses an eligible multiple-entry non-electronic visa valid at least 90 days."
+    },
+    "name_and_birth": {
+      "type": "name",
+      "label": "Surname, given name and date of birth",
+      "required": true,
+      "placeholder": "Exactly as in the passport",
+      "help": "The official note tells applicants to transcribe surname, given name and date of birth from the passport."
+    },
+    "document_details": {
+      "type": "passport",
+      "label": "Passport and supporting-document details",
+      "required": true,
+      "placeholder": "Number and validity of each document",
+      "help": "Copy nationality, document number and validity from the passport, residence card or supporting visa used for eligibility."
+    },
+    "email": {
+      "type": "email",
+      "label": "Email and confirmation",
+      "required": true,
+      "placeholder": "An inbox you control",
+      "help": "The guide sends a secure application link to the entered email and uses the same address for tracking."
+    },
+    "photo": {
+      "type": "text",
+      "label": "Colour photo",
+      "required": true,
+      "placeholder": "35 x 45 mm, taken within 6 months",
+      "help": "The official note requires a good-quality 35 x 45 mm colour photo taken within the last 6 months and showing facial features to ICAO standards."
+    },
+    "passport_copy": {
+      "type": "text",
+      "label": "Ordinary passport colour copy",
+      "required": true,
+      "placeholder": "Identity and validity pages",
+      "help": "Attach a clear colour copy of the valid ordinary passport pages showing identity and validity."
+    },
+    "attachments": {
+      "type": "text",
+      "label": "Supporting attachments",
+      "required": false,
+      "placeholder": "JPG, JPEG or PDF, up to 1 MB",
+      "help": "Category B, Category C and Business applicants attach the applicable supporting documents. Official limits are JPG, JPEG or PDF and no more than 1 MB."
+    }
+  }
+}

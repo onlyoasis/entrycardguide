@@ -1,0 +1,54 @@
+# Tanzania — official government URLs
+# Last verified: 2026-08-30
+
+[evisa]
+url = "https://visa.immigration.go.tz/"
+name = "Tanzania Electronic Visa Application System"
+agency = "Tanzania Immigration Services Department"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The .go.tz portal accepts applications for Tanzania Mainland and Zanzibar, takes online payment, emails decisions and provides status tracking."
+
+[guidelines]
+url = "https://visa.immigration.go.tz/guidelines"
+name = "Tanzania Visa Guidelines"
+agency = "Tanzania Immigration Services Department"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The page publishes exemption and referral routes, a normal processing period within ten days, passport and photo requirements, visa types, validity and fees."
+
+[start]
+url = "https://visa.immigration.go.tz/start"
+name = "Start a Tanzania Online Visa Application"
+agency = "Tanzania Immigration Services Department"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The public first step asks for email, passport number, passport issue country, security question and security answer. Its HTML publishes a 100-character maximum for email and security answer, but no passport-number pattern."
+
+[fees]
+url = "https://www.immigration.go.tz/index.php/fees-for-visa"
+name = "Fees for Visa"
+agency = "Tanzania Immigration Services Department"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The fee table lists USD 50 for an Ordinary Visa, USD 100 for Multiple Entry and USD 30 for Transit. Eligibility and visa category must be checked before payment."
+
+[meta]
+flag = "🇹🇿"
+name_en = "Tanzania"
+name_zh = "坦桑尼亚"
+form_code = "eVisa"
+guide_slug = "evisa"
+form_key = "evisa"
+form_name_en = "Tanzania Online Visa"
+form_name_zh = "坦桑尼亚在线签证"
+since_en = "official online application"
+since_zh = "官方在线申请"
+fee_en = "Varies by passport"
+fee_zh = "按护照和签证类别而定"
+suffix = ".go.tz"
+form_type = "evisa"
+field_count = 10
+sections = 3
+time_needed_en = "varies"
+time_needed_zh = "时间不定"
+output_en = "The portal emails the decision and lets the applicant download a Visa Grant Notice through status tracking. Carry it with the same passport; final entry clearance remains with the immigration officer."
+output_zh = "门户通过邮件发送决定，也可从状态查询下载 Visa Grant Notice。请与申请时使用的同一本护照一起携带；最终入境许可仍由移民官决定。"
+fields_intro_en = "The public first step exposes required labels, exact error text and 100-character limits for email and the security answer. Later application screens were not opened because doing so would create a live application. No passport regex or later-screen limits are claimed, and no local validator is mounted."
+fields_intro_zh = "公开首屏给出了必填标签、原始报错文案，以及邮箱和安全问题答案的 100 字符上限。继续操作会创建真实申请，所以没有进入后续页面。本页不编护照正则或后续字段上限，也不挂本地校验器。"

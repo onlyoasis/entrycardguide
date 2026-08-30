@@ -1,0 +1,61 @@
+# Jamaica — official government URLs
+# Last verified: 2026-08-30
+
+[c5]
+url = "https://enterjamaica.gov.jm/?language=en-US"
+name = "Electronic Immigration and Customs Declaration Card (C5)"
+agency = "Passport, Immigration and Citizenship Agency (PICA) and Jamaica Customs Agency (JCA)"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The live .gov.jm page identifies itself as the official Electronic C5 and displays the PICA and JCA names and logos. Its public HTML exposes required attributes, a 6-character email minimum, a 4-character flight-number maximum and the mm/dd/yyyy travel-date prompt."
+
+[customs_passenger]
+url = "https://jca.gov.jm/individual/passenger/"
+name = "Jamaica Customs Passenger Declaration (C5) Notice"
+agency = "Jamaica Customs Agency"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. JCA mandates the Electronic Passenger Declaration for arriving passengers, links enterjamaica.gov.jm and states that the service is free for visitors and residents."
+
+[government_facts]
+url = "https://jis.gov.jm/information/get-the-facts/the-goj-online-immigration-form-travel-with-ease/"
+name = "Government of Jamaica Online Immigration Form Facts"
+agency = "Jamaica Information Service"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. JIS identifies the PICA/JCA collaboration, says the form is free, permits submission up to 30 days before travel and says a confirmation email follows submission."
+
+[government_warning]
+url = "https://jis.gov.jm/no-third-party-contracted-to-provide-online-immigration-passenger-declaration-form/"
+name = "PICA Warning: No Third Party Contracted for the Passenger Declaration"
+agency = "Jamaica Information Service and Passport, Immigration and Citizenship Agency"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The 2023 government warning says no third party was contracted, the facility is free and sites charging for it are not the government service. It named the older enterjamaica.com address; current JCA and Tourism pages use enterjamaica.gov.jm."
+
+[tourism_notice]
+url = "https://www.mot.gov.jm/node/1496"
+name = "Jamaica Ministry of Tourism C5 Notice"
+agency = "Jamaica Ministry of Tourism"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The Ministry directs travellers to enterjamaica.gov.jm and describes it as free, safe and convenient."
+
+[meta]
+flag = "🇯🇲"
+name_en = "Jamaica"
+name_zh = "牙买加"
+form_code = "C5"
+guide_slug = "c5"
+form_key = "c5"
+form_name_en = "Electronic Passenger Declaration (C5)"
+form_name_zh = "电子旅客申报表（C5）"
+since_en = "mandatory online since 2023"
+since_zh = "2023 年起在线必填"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".gov.jm"
+form_type = "arrival_card"
+field_count = 20
+sections = 5
+time_needed_en = "varies"
+time_needed_zh = "时间不定"
+output_en = "A confirmation email is sent after submission. Keep it available for final immigration and customs clearance at the Jamaican airport."
+output_zh = "提交后会收到确认邮件。抵达牙买加机场办理移民和海关最终查验时，保留该邮件以便出示。"
+fields_intro_en = "The public government form exposes required attributes, a 6-character minimum on the email-verification input, a 4-character maximum for the flight number and an mm/dd/yyyy arrival-date prompt. It does not publish text-field regexes or a complete set of official error strings. Only the observed attributes are recorded; no invented pattern or error decoder is used, and no local validator is mounted."
+fields_intro_zh = "政府公开表单能读到必填属性、邮箱验证输入至少 6 个字符、航班号最多 4 个字符，以及抵达日期 mm/dd/yyyy 提示；但没有公开文本字段正则或完整官方报错。本页只记录看到的属性，不编 pattern 或错误解码，也不挂本地校验器。"

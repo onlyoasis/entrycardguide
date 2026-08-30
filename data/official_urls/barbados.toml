@@ -1,0 +1,66 @@
+# Barbados — official URLs
+# Last verified: 2026-08-30
+
+[ed_form]
+url = "https://www.travelform.gov.bb/"
+name = "Barbados Online Immigration and Customs Form"
+agency = "Barbados Immigration Department and Customs & Excise Department"
+last_verified = "2026-08-30"
+notes = "Government portal for the combined online Immigration and Customs Form. It opens 72 hours before arrival, lists flight information, passenger passports and a valid email address, and returns separate Immigration and Customs receipts. The official flow lists no filing payment. The live portal sits behind an automated-session checkpoint; verified against its Internet Archive snapshot of 2025-01-04."
+
+[visitor_rules]
+url = "https://immigration.gov.bb/pages/visitor.aspx"
+name = "Visitors to Barbados"
+agency = "Barbados Immigration Department"
+last_verified = "2026-08-30"
+notes = "Confirms the 72-hour availability window and receipt presentation. Also lists a passport valid for the trip, return ticket, intended address and evidence of personal support among visitor entry items."
+
+[tourism_guide]
+url = "https://www.visitbarbados.org/online-ed-card"
+name = "Barbados Online ED Card"
+agency = "Barbados Tourism Marketing Inc."
+last_verified = "2026-08-30"
+notes = "Official destination guide confirming that Immigration and Customs receipts are emailed after submission and that a valid email address is required."
+
+[form_specification]
+url = "https://oag.gov.bb/attachments/Immigration%20%28Forms%20and%20Fees%29%20%28Amendment%29%20Regulations%2C%202020%20No%208.pdf"
+name = "Barbados Immigration Form E.1"
+agency = "Government of Barbados, Office of the Attorney General"
+last_verified = "2026-08-30"
+notes = "Official form specification listing travel, passport, identity, contact, destination and stay fields."
+
+[meta]
+flag = "🇧🇧"
+name_en = "Barbados"
+name_zh = "巴巴多斯"
+form_code = "ED Form"
+guide_slug = "ed-form"
+form_key = "ed_form"
+form_name_en = "Online Immigration and Customs Form"
+form_name_zh = "在线入境和海关表"
+since_en = "combined online immigration and customs form"
+since_zh = "合并的在线入境和海关表"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".gov.bb"
+form_type = "arrival_card"
+field_count = 8
+sections = 3
+time_needed_en = "varies"
+time_needed_zh = "因人而异"
+output_en = "Separate Immigration and Customs receipts sent by email. Save them on a device or print them for arrival."
+output_zh = "移民和海关回执分别通过邮件送达。保存在设备中或打印，抵达时出示。"
+fields_intro_en = "The official portal and legal form publish the information groups, but the protected live application exposes no readable regexes, character limits or validation messages. These eight cards claim no hidden pattern."
+fields_intro_zh = "官方门户和法定表格公开了信息分组，但受保护的实时申请没有暴露可读正则、字符上限或校验报错。以下 8 张卡片不声称知道隐藏格式。"
+email_title_en = "Two receipts arrive by email"
+email_title_zh = "两份回执通过邮件送达"
+email_body_en = "Use a valid inbox. Save both the Immigration receipt and the Customs receipt after submission."
+email_body_zh = "使用有效邮箱。提交后保存移民回执和海关回执。"
+printout_title_en = "Save or print both receipts"
+printout_title_zh = "保存或打印两份回执"
+printout_body_en = "The official portal says both receipts may be saved to a mobile device or printed for presentation on arrival."
+printout_body_zh = "官方门户写明，两份回执可保存到手机或打印，在抵达时出示。"
+verification_title_en = "Present receipts to both services"
+verification_title_zh = "分别向两个部门出示回执"
+verification_body_en = "Keep both receipts available for Immigration and Customs. A receipt does not replace the authorities' arrival checks."
+verification_body_zh = "把两份回执分别留给移民和海关检查。回执不取代抵达查验。"

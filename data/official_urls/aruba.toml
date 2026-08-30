@@ -1,0 +1,59 @@
+# Aruba — official URLs
+# Last verified: 2026-08-30
+
+[ed_card]
+url = "https://edcardaruba.aw/welcome"
+name = "Aruba Online ED Card"
+agency = "Aruba Immigration"
+last_verified = "2026-08-30"
+notes = "Mandatory online Embarkation and Disembarkation Card. The live application exposes several required fields and length controls. Most air arrivals pay a separate USD 20 sustainability fee inside the same flow; the fee does not apply to sea arrivals and published exemptions apply."
+
+[official_guide]
+url = "https://www.aruba.com/us/plan-your-visit/getting-to-aruba/online-ed-card"
+name = "Aruba Online ED Card guide"
+agency = "Aruba Tourism Authority"
+last_verified = "2026-08-30"
+notes = "Confirms that the ED Card is mandatory for every passenger, including infants and children, opens within seven days before travel, and applies at air and seaports."
+
+[sustainability_fee]
+url = "https://www.aruba.com/uk/sustainability-fee"
+name = "Aruba sustainability fee"
+agency = "Aruba Tourism Authority"
+last_verified = "2026-08-30"
+notes = "Explains the USD 20 sustainability fee collected through the ED Card flow for air arrivals, the published exemptions, and that the fee is not charged to sea arrivals."
+
+[meta]
+flag = "🇦🇼"
+name_en = "Aruba"
+name_zh = "阿鲁巴"
+form_code = "ED Card"
+guide_slug = "ed-card"
+form_key = "ed_card"
+form_name_en = "Aruba ED Card"
+form_name_zh = "阿鲁巴 ED Card"
+since_en = "mandatory online entry card"
+since_zh = "强制在线入境卡"
+fee_en = "USD $20 sustainability fee for most air arrivals"
+fee_zh = "多数航空入境者需付 20 美元可持续发展费"
+suffix = ".aw"
+form_type = "arrival_card"
+field_count = 10
+sections = 4
+time_needed_en = "varies"
+time_needed_zh = "因人而异"
+output_en = "Save or print the approved ED Card confirmation and carry it for airline check-in and arrival."
+output_zh = "保存或打印获批的 ED Card 确认，在航司值机和抵达时携带。"
+fields_intro_en = "The live official application exposes required fields and selected length or character controls. The cards below use only those visible controls and the public Aruba guide. Server-side error wording is not published."
+fields_intro_zh = "官方实时申请公开了必填项及部分长度或字符限制。以下卡片只采用这些可见控件和阿鲁巴官方指南；服务器报错文案没有公开。"
+email_title_en = "Keep the approved confirmation"
+email_title_zh = "保存获批确认"
+email_body_en = "After submission and any required sustainability-fee payment, keep the approved ED Card confirmation where you can reach it during travel."
+email_body_zh = "提交并完成适用的可持续发展费付款后，把获批的 ED Card 确认保存在旅途中可打开的位置。"
+printout_title_en = "Digital copy plus a printout"
+printout_title_zh = "电子版加打印件"
+printout_body_en = "Aruba recommends printing the application and confirmation. Keep a digital copy as backup."
+printout_body_zh = "阿鲁巴官方建议打印申请和确认，同时保留电子备份。"
+verification_title_en = "ED Card approval is part of admission"
+verification_title_zh = "ED Card 获批只是准入流程的一部分"
+verification_body_en = "Complete and obtain approval for the card before travel. Border authorities still decide admission."
+verification_body_zh = "出行前完成卡片并取得批准；最终准入仍由边境机关决定。"

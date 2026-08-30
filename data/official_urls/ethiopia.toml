@@ -1,0 +1,61 @@
+# Ethiopia — official government URLs
+# Last verified: 2026-08-30
+
+[evisa]
+url = "https://www.evisa.gov.et/"
+name = "Ethiopian e-Visa Official Website"
+agency = "Immigration and Citizenship Service of Ethiopia"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The .gov.et portal identifies the Tourist Visa as an Ethiopian government single-entry eVisa and warns that applications or payments on lookalike sites are not accepted."
+
+[tourist]
+url = "https://www.evisa.gov.et/information/tourist"
+name = "Ethiopia Tourist Visa Information"
+agency = "Immigration and Citizenship Service of Ethiopia"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The page lists a passport photo and passport valid for at least 6 months, normal processing in 3 days, single-entry fees of USD 62 for 30 days and USD 152 for 90 days, validity from intended entry and extension/overstay guidance."
+
+[application]
+url = "https://www.evisa.gov.et/visa"
+name = "Ethiopia e-Visa Application"
+agency = "Immigration and Citizenship Service of Ethiopia"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The public application renders visa selection, arrival, Ethiopia address, personal, passport and upload sections. It names the live fields and accepts passport/photo uploads in JPEG, JPG or PNG, but publishes no readable regexes, character limits or error text."
+
+[on_arrival]
+url = "https://www.evisa.gov.et/information/touristOnArrivalVisa"
+name = "Ethiopia Tourist Visa on Arrival"
+agency = "Immigration and Citizenship Service of Ethiopia"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. This is the separate official visa-on-arrival eligibility list and it states that Kenya and Djibouti citizens with valid passports are visa-exempt."
+
+[ics]
+url = "https://www.immigration.gov.et/"
+name = "Immigration and Citizenship Service Official Portal"
+agency = "Immigration and Citizenship Service of Ethiopia"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The government portal identifies ICS as the authority for passports, Ethiopian Origin IDs, visas and work permits."
+
+[meta]
+flag = "🇪🇹"
+name_en = "Ethiopia"
+name_zh = "埃塞俄比亚"
+form_code = "eVisa"
+guide_slug = "evisa"
+form_key = "evisa"
+form_name_en = "Ethiopia Tourist eVisa"
+form_name_zh = "埃塞俄比亚旅游电子签"
+since_en = "official online tourist visa"
+since_zh = "官方在线旅游签"
+fee_en = "USD $62 / $152"
+fee_zh = "62 / 152 美元"
+suffix = ".gov.et"
+form_type = "evisa"
+field_count = 33
+sections = 6
+time_needed_en = "varies"
+time_needed_zh = "时间不定"
+output_en = "Check the status on evisa.gov.et and download the approved visa document. The validity period starts from the intended entry date entered in the application."
+output_zh = "在 evisa.gov.et 查询状态并下载获批签证文件。有效期从申请中填写的计划入境日开始计算。"
+fields_intro_en = "The public application exposes the section and field labels plus JPEG/JPG/PNG upload formats, but the React page publishes no readable field regexes, character limits or official error strings. The 13 cards below are a documented preparation shortlist, not a claim that every live field is locally validated. No validator is mounted."
+fields_intro_zh = "公开申请页能读到分段、字段名以及 JPEG/JPG/PNG 上传格式，但 React 页面没有公开可读的字段正则、字符上限或官方报错原文。以下 13 张卡片只是有出处的准备清单，不表示实时字段已被本地校验。本页不挂 validator。"

@@ -1,0 +1,99 @@
+# Barbados Online Immigration and Customs Form — public portal and Form E.1.
+# The protected live application exposes no readable regexes, maxlengths or
+# validation messages. This file has no [[errors]].
+
+[[fields]]
+n = "01"
+key = "flight_information"
+section_en = "Section 1 · Travel information"
+section_zh = "第 1 段 · 行程信息"
+example = "Operating arrival flight or vessel"
+mistake = "A booking reference"
+mistake_why_en = "the official portal lists flight information as a required preparation item"
+mistake_why_zh = "官方门户把航班信息列为必备准备项"
+copy_en = "Use the operating flight or vessel information for the arrival. Match the current booking rather than a reservation code."
+copy_zh = "填写本次抵达的实际承运航班或船舶信息，与当前订单一致，不要填预订编号。"
+
+[[fields]]
+n = "02"
+key = "passport"
+section_en = "Section 2 · Passenger identity"
+section_zh = "第 2 段 · 旅客身份"
+example = "Passport carried to Barbados"
+mistake = "A different second passport"
+mistake_why_en = "the form and arrival inspection must match the same document"
+mistake_why_zh = "表单和抵达检查必须匹配同一本证件"
+copy_en = "Use the passport carried to Barbados. The Immigration Department says it must remain valid for the duration of the trip."
+copy_zh = "使用前往巴巴多斯时携带的护照。移民部门要求护照覆盖整个行程有效。"
+
+[[fields]]
+n = "03"
+key = "full_name"
+section_en = "Section 2 · Passenger identity"
+section_zh = "第 2 段 · 旅客身份"
+example = "Last name and given names from travel document"
+mistake = "Nickname or shortened name"
+mistake_why_en = "Form E.1 instructs travellers to copy the name from the travel document"
+mistake_why_zh = "E.1 表要求旅客按旅行证件抄写姓名"
+copy_en = "Copy the last name and given names as written in the travel document."
+copy_zh = "按旅行证件抄写姓氏和名字。"
+
+[[fields]]
+n = "04"
+key = "date_of_birth"
+section_en = "Section 2 · Passenger identity"
+section_zh = "第 2 段 · 旅客身份"
+example = "Date shown in travel document"
+mistake = "A date guessed from memory"
+mistake_why_en = "the name and birth date identify the passenger in the receipts"
+mistake_why_zh = "姓名和出生日期用于在回执中识别旅客"
+copy_en = "Match the travel document and use the current form's date control. No stable live date pattern is claimed here."
+copy_zh = "与旅行证件一致，并按当前表单日期控件填写。这里不声称有稳定的实时日期格式。"
+
+[[fields]]
+n = "05"
+key = "intended_address"
+section_en = "Section 1 · Travel information"
+section_zh = "第 1 段 · 行程信息"
+example = "Confirmed hotel or host address"
+mistake = "Only the island or parish name"
+mistake_why_en = "the Immigration Department lists an intended address as an entry item"
+mistake_why_zh = "移民部门把计划住宿地址列为入境项目"
+copy_en = "Enter the confirmed hotel, accommodation or host address in Barbados. Keep the booking or host details available at arrival."
+copy_zh = "填写巴巴多斯已确认的酒店、住宿或接待人地址，抵达时保留订单或接待人资料。"
+
+[[fields]]
+n = "06"
+key = "length_of_stay"
+section_en = "Section 1 · Travel information"
+section_zh = "第 1 段 · 行程信息"
+example = "Planned nights for this visit"
+mistake = "Visa validity instead of trip length"
+mistake_why_en = "Form E.1 asks for the length of the current stay in nights"
+mistake_why_zh = "E.1 表要求按晚数填写本次停留长度"
+copy_en = "Enter the planned number of nights for this visit. This answer does not grant or extend immigration permission."
+copy_zh = "填写本次计划停留的晚数。该答案不会授予或延长移民许可。"
+
+[[fields]]
+n = "07"
+key = "customs_declaration"
+section_en = "Section 3 · Customs and receipts"
+section_zh = "第 3 段 · 海关和回执"
+example = "Answers matching all goods carried"
+mistake = "Skipping an item because it is packed in checked baggage"
+mistake_why_en = "the combined form produces a separate Customs receipt"
+mistake_why_zh = "合并表单会生成单独的海关回执"
+copy_en = "Answer the Customs section for everything carried in cabin and checked baggage. Review before submitting the declaration."
+copy_zh = "按随身和托运行李中的全部物品回答海关部分，提交前复核。"
+
+[[fields]]
+n = "08"
+key = "email"
+section_en = "Section 3 · Customs and receipts"
+section_zh = "第 3 段 · 海关和回执"
+example = "Valid inbox available at arrival"
+mistake = "An inaccessible or misspelled address"
+mistake_why_en = "both Immigration and Customs receipts are emailed after submission"
+mistake_why_zh = "提交后移民和海关两份回执都会发到邮箱"
+copy_en = "Use a valid inbox available during travel. Save both emailed receipts to the device and print backups if possible."
+copy_zh = "使用旅途中能打开的有效邮箱。把邮件中的两份回执保存到设备，有条件时打印备用。"

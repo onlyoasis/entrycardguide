@@ -1,0 +1,56 @@
+{
+  "country": "barbados",
+  "officialUrl": "https://www.travelform.gov.bb/",
+  "lastVerified": "2026-08-30",
+  "source": "The official Barbados portal, Immigration Department visitor page and Form E.1 specification were read on 2026-08-30. They publish required information groups but the protected live application exposes no readable regexes, maxlengths or validation messages. No hidden pattern is claimed.",
+  "fields": {
+    "flight_information": {
+      "type": "flight",
+      "label": "Flight or vessel information",
+      "required": true,
+      "help": "Use the operating arrival flight or vessel information for this trip."
+    },
+    "passport": {
+      "type": "passport",
+      "label": "Passenger passport",
+      "required": true,
+      "help": "Use the passport carried to Barbados. It must be valid for the duration of the trip."
+    },
+    "full_name": {
+      "type": "name",
+      "label": "Name as shown in travel document",
+      "required": true,
+      "help": "Copy last name and given names from the travel document."
+    },
+    "date_of_birth": {
+      "type": "date",
+      "label": "Date of birth",
+      "required": true,
+      "help": "Match the travel document. Follow the date control shown by the current form."
+    },
+    "intended_address": {
+      "type": "text",
+      "label": "Intended address in Barbados",
+      "required": true,
+      "help": "Use the confirmed hotel, accommodation or host address for this stay."
+    },
+    "length_of_stay": {
+      "type": "text",
+      "label": "Length of stay",
+      "required": true,
+      "help": "Enter the planned number of nights for the current visit."
+    },
+    "customs_declaration": {
+      "type": "text",
+      "label": "Customs declaration",
+      "required": true,
+      "help": "Answer the Customs section for all goods and values carried."
+    },
+    "email": {
+      "type": "email",
+      "label": "Email address",
+      "required": true,
+      "help": "The separate Immigration and Customs receipts are emailed to this address."
+    }
+  }
+}

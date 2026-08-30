@@ -1,0 +1,98 @@
+{
+  "country": "tanzania",
+  "officialUrl": "https://visa.immigration.go.tz/",
+  "lastVerified": "2026-08-30",
+  "source": "https://visa.immigration.go.tz/start HTML and https://visa.immigration.go.tz/guidelines, read 2026-08-30. The public start screen exposes five required fields, exact data-val messages and 100-character limits for email and security answer. Later screens were not opened because that would create a live application. No passport regex or later-screen limits are claimed, and no local validator is mounted.",
+  "fields": {
+    "passport_route": {
+      "type": "nationality",
+      "label": "Passport route",
+      "required": true,
+      "placeholder": "Exempt, online/on-arrival, or referral",
+      "help": "Read the current exemption and referral lists for the passport before starting. Referral cases must apply online and wait for approval."
+    },
+    "visa_type": {
+      "type": "text",
+      "label": "Visa type",
+      "required": true,
+      "placeholder": "Ordinary, Multiple or Transit",
+      "help": "Tourists normally use Ordinary Visa, except United States passport holders who use Multiple Visa. Transit Visa is only for onward transit."
+    },
+    "email": {
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "maxLength": 100,
+      "placeholder": "name@example.com",
+      "help": "The portal sends the application ID and decision to this address.",
+      "errors": {
+        "required": "Email is required",
+        "invalidFormat": "Please enter a valid email address.",
+        "tooLong": "The field Email must be a string with a maximum length of 100."
+      }
+    },
+    "passport_number": {
+      "type": "passport",
+      "label": "Passport Number",
+      "required": true,
+      "placeholder": "As shown on the bio page",
+      "help": "The public first step requires the passport number but publishes no pattern or length.",
+      "errors": {
+        "required": "The Passport Number field is required."
+      }
+    },
+    "passport_issue_country": {
+      "type": "nationality",
+      "label": "Passport Issue Country",
+      "required": true,
+      "placeholder": "Select the issuing country",
+      "help": "Choose the country that issued the passport used for this application.",
+      "errors": {
+        "required": "The Passport Issue Country field is required."
+      }
+    },
+    "security_question": {
+      "type": "text",
+      "label": "Security Question",
+      "required": true,
+      "placeholder": "Select one question",
+      "help": "This is part of the application-recovery information on the public start screen.",
+      "errors": {
+        "required": "Security Question is required"
+      }
+    },
+    "security_answer": {
+      "type": "text",
+      "label": "Security Answer",
+      "required": true,
+      "maxLength": 100,
+      "placeholder": "An answer you can reproduce",
+      "help": "Store the answer with the application ID. The official HTML sets a 100-character maximum.",
+      "errors": {
+        "required": "Security Answer is required",
+        "tooLong": "The field Security Answer must be a string with a maximum length of 100."
+      }
+    },
+    "passport_validity": {
+      "type": "text",
+      "label": "Passport validity and blank page",
+      "required": true,
+      "placeholder": "At least 6 months and one unused visa page",
+      "help": "The guidelines require at least six months of passport validity and at least one unused visa page before application."
+    },
+    "photo": {
+      "type": "text",
+      "label": "Visa photo",
+      "required": true,
+      "placeholder": "JPG or JPEG, up to 500 KB",
+      "help": "The guidelines require a colour full-face image on a plain background, no larger than 45 mm by 35 mm and 500 KB, in JPG or JPEG format."
+    },
+    "travel_document": {
+      "type": "text",
+      "label": "Return or onward travel document",
+      "required": true,
+      "placeholder": "Return ticket or transit onward ticket",
+      "help": "Ordinary Visa applicants need a return ticket. Transit applicants need an entry visa and/or onward ticket for the destination country."
+    }
+  }
+}

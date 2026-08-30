@@ -1,0 +1,61 @@
+# Morocco — official government-linked URLs
+# Last verified: 2026-08-30
+
+[evisa]
+url = "https://www.acces-maroc.ma/"
+name = "Accès Maroc eVisa and Entry Eligibility Portal"
+agency = "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The domain is not a government suffix. Verify it by following the link from diplomatie.ma. The Ministry says the platform was developed by engineers and technicians of the Department. The live home page checks exemption and routes travellers to no visa, consular visa, AEVM or eVisa."
+
+[mfa_launch]
+url = "https://diplomatie.ma/en/launch-electronic-visa-evisa"
+name = "Ministry Launch of the Morocco eVisa"
+agency = "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The Ministry identifies acces-maroc.ma as the eVisa platform, states the 180-day maximum validity, 30-day maximum stay, three eligibility categories, 24-hour express and 72-hour standard processing, and says Department staff developed and operate the platform."
+
+[terms]
+url = "https://www.acces-maroc.ma/assets/docs/Conditions%20utilisation%20eVisa%20-%20An.pdf"
+name = "Morocco eVisa General Information"
+agency = "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The English briefing note publishes current Category A, B and C criteria, ordinary-passport and document rules, 180-day validity, 30-day single-entry stay, 24/72-hour deadlines, non-refund rule and border documents."
+
+[guide]
+url = "https://www.acces-maroc.ma/assets/docs/Guide%20eVisa.pdf"
+name = "Accès Maroc eVisa User Guide"
+agency = "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The user guide shows eligibility, email verification, personal and supplemental information, document upload, Treasury payment and status tracking. The payment screen shows MAD 770 standard and MAD 1,100 express."
+
+[embassy_eligibility]
+url = "https://us.diplomatie.ma/index.php/en/visa-requirements"
+name = "Morocco Embassy Visa Requirements"
+agency = "Embassy of the Kingdom of Morocco in the United States"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The embassy tells travellers to verify visa-exemption eligibility on acces-maroc.ma before applying for a visa."
+
+[meta]
+flag = "🇲🇦"
+name_en = "Morocco"
+name_zh = "摩洛哥"
+form_code = "eVisa"
+guide_slug = "evisa"
+form_key = "evisa"
+form_name_en = "Morocco eVisa"
+form_name_zh = "摩洛哥电子签"
+since_en = "online since 2022"
+since_zh = "2022 年起在线办理"
+fee_en = "MAD 770 / MAD 1,100"
+fee_zh = "770 / 1,100 摩洛哥迪拉姆"
+suffix = "acces-maroc.ma"
+form_type = "evisa"
+field_count = 12
+sections = 4
+time_needed_en = "varies"
+time_needed_zh = "时间不定"
+output_en = "Track the file in the Accès Maroc account. If accepted, download the eVisa and carry it with the same passport and any residence card or supporting visa used for eligibility."
+output_zh = "在 Accès Maroc 账户中跟踪申请。获批后下载 eVisa，并与申请时使用的同一本护照、居留卡或附加签证一起携带。"
+fields_intro_en = "The live eligibility page and official PDFs publish the route questions, required documents, 35 x 45 mm photo size, JPG/JPEG/PDF formats and 1 MB upload limit. The authenticated application does not expose public text-field regexes, character limits or error strings. No invented pattern or error decoder is used, and no local validator is mounted."
+fields_intro_zh = "实时资格页和官方 PDF 公布了分流问题、材料、35 × 45 毫米照片规格、JPG/JPEG/PDF 格式和 1 MB 上传上限。登录后的申请没有公开文本字段正则、字符上限或报错原文。本页不编 pattern 或错误解码，也不挂本地校验器。"

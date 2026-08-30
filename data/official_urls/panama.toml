@@ -1,0 +1,59 @@
+# Panama — official URLs
+# Last verified: 2026-08-30
+
+[traveler_declaration]
+url = "https://declaraciondeviajero.ana.gob.pa/"
+name = "Panama Digital Sworn Traveler Declaration"
+agency = "Autoridad Nacional de Aduanas"
+last_verified = "2026-08-30"
+notes = "Official Panama Customs portal for declaring goods and values when entering or leaving the country. The portal has Spanish and English interfaces."
+
+[customs_process]
+url = "https://tramites.ana.gob.pa/w_proceso/GestiondeDespacho.html"
+name = "Panama traveler declaration process"
+agency = "Autoridad Nacional de Aduanas"
+last_verified = "2026-08-30"
+notes = "States that the declaration is free of charge, may be digital or manual, may cover one family group with a single declaration, and must be filed and presented within the published 72-hour window."
+
+[digital_resolution]
+url = "https://www.ana.gob.pa/w_ana/images/ANA_pdf/slider/2024/RES_079_29042024.pdf"
+name = "Resolution 079 adopting the digital sworn traveler declaration"
+agency = "Autoridad Nacional de Aduanas"
+last_verified = "2026-08-30"
+notes = "Adopts the digital declaration portal and requires the traveller to present its QR response code."
+
+[meta]
+flag = "🇵🇦"
+name_en = "Panama"
+name_zh = "巴拿马"
+form_code = "DJV"
+guide_slug = "traveler-declaration"
+form_key = "traveler_declaration"
+form_name_en = "Digital Sworn Traveler Declaration"
+form_name_zh = "电子旅客宣誓申报"
+since_en = "digital or manual customs declaration"
+since_zh = "可在线或手写的海关申报"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".gob.pa"
+form_type = "arrival_card"
+field_count = 9
+sections = 3
+time_needed_en = "varies"
+time_needed_zh = "因人而异"
+output_en = "Save the QR response code and present it to customs within the official 72-hour window."
+output_zh = "保存 QR 回执码，并在官方 72 小时窗口内向海关出示。"
+fields_intro_en = "The live bilingual form exposes required controls and standard date or email input types, but no public regexes, character limits or validation messages. These nine cards do not claim hidden patterns."
+fields_intro_zh = "实时双语表单公开了必填控件及标准日期、邮箱输入类型，但没有公开正则、字符上限或校验报错。以下 9 张卡片不声称知道隐藏格式。"
+email_title_en = "Save the QR after submission"
+email_title_zh = "提交后保存 QR"
+email_body_en = "The official rule requires the QR response code at customs. Save it immediately; no email-delivery promise is made here."
+email_body_zh = "官方规则要求在海关出示 QR 回执码。提交后立即保存；本指南不承诺系统一定通过邮件送达。"
+printout_title_en = "Keep a digital and printed QR"
+printout_title_zh = "同时保存电子和纸质 QR"
+printout_body_en = "Keep the QR on the device used during travel and print a backup if possible."
+printout_body_zh = "把 QR 保存在旅途中使用的设备上，有条件时再打印一份备用。"
+verification_title_en = "Present the QR to customs"
+verification_title_zh = "向海关出示 QR"
+verification_body_en = "The declaration does not replace inspection. Customs may ask to verify the declared goods, values or family members."
+verification_body_zh = "申报不取代查验。海关可能核对申报的物品、金额或家庭成员。"

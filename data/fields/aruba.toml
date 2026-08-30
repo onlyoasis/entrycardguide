@@ -1,0 +1,123 @@
+# Aruba ED Card — public guide and live official application controls.
+# The live application exposes selected required, length and character rules,
+# but not its server-side error wording. This file has no [[errors]].
+
+[[fields]]
+n = "01"
+key = "arrival_date"
+section_en = "Section 1 · Travel information"
+section_zh = "第 1 段 · 行程信息"
+example = "Confirmed date within the 7-day filing window"
+mistake = "Starting an application more than 7 days before travel"
+mistake_why_en = "the official guide says the card can be completed within seven days before travel"
+mistake_why_zh = "官方指南写明只能在出行前 7 天内填写"
+copy_en = "Open the ED Card within seven days before travel and enter the confirmed arrival date. The requirement covers arrivals at air and seaports."
+copy_zh = "在出行前 7 天内打开 ED Card，填写已确认的抵达日期。航空和海路入境都要填。"
+
+[[fields]]
+n = "02"
+key = "passport_number"
+section_en = "Section 2 · Passport information"
+section_zh = "第 2 段 · 护照信息"
+example = "AB123456"
+mistake = "Spaces, punctuation or fewer than 5 characters"
+mistake_why_en = "the live control normalizes the value to 5 to 30 uppercase letters and numbers"
+mistake_why_zh = "实时控件把内容规范为 5 至 30 个大写字母或数字"
+copy_en = "Copy the passport number. The live application removes punctuation, converts letters to uppercase and accepts 5 to 30 alphanumeric characters."
+copy_zh = "照护照抄写号码。实时申请会去掉标点、把字母转为大写，并接受 5 至 30 个字母或数字。"
+
+[[fields]]
+n = "03"
+key = "first_names"
+section_en = "Section 2 · Passport information"
+section_zh = "第 2 段 · 护照信息"
+example = "Given names shown in passport"
+mistake = "A nickname"
+mistake_why_en = "the ED Card must match the travel document"
+mistake_why_zh = "ED Card 必须与旅行证件一致"
+copy_en = "Copy all given names from the passport. The live field is required and exposes a 50 character maximum."
+copy_zh = "抄写护照上的全部名字。实时字段为必填，上限 50 个字符。"
+
+[[fields]]
+n = "04"
+key = "last_name"
+section_en = "Section 2 · Passport information"
+section_zh = "第 2 段 · 护照信息"
+example = "Surname shown in passport"
+mistake = "A shortened family name"
+mistake_why_en = "the ED Card must match the passport"
+mistake_why_zh = "ED Card 必须与护照一致"
+copy_en = "Copy the surname from the passport. The live field is required and exposes a 50 character maximum."
+copy_zh = "抄写护照姓氏。实时字段为必填，上限 50 个字符。"
+
+[[fields]]
+n = "05"
+key = "passport_expiration"
+section_en = "Section 2 · Passport information"
+section_zh = "第 2 段 · 护照信息"
+example = "Expiration date from the passport"
+mistake = "The issue date"
+mistake_why_en = "the live form asks for the passport expiration date"
+mistake_why_zh = "实时表单要求填写护照到期日"
+copy_en = "Use the expiration date printed in the same passport used for the trip."
+copy_zh = "填写本次出行所用同一本护照上的到期日。"
+
+[[fields]]
+n = "06"
+key = "arrival_flight"
+section_en = "Section 1 · Travel information"
+section_zh = "第 1 段 · 行程信息"
+example = "Operating flight number"
+mistake = "A booking reference"
+mistake_why_en = "the field asks for the operating arrival flight"
+mistake_why_zh = "该栏要求实际承运的抵达航班号"
+copy_en = "Use the operating flight number, not the booking code. The live custom-flight control accepts letters and numbers with a 10 character maximum."
+copy_zh = "填写实际承运航班号，不要填订单号。实时自定义航班控件只接受字母和数字，上限 10 个字符。"
+
+[[fields]]
+n = "07"
+key = "departure_date"
+section_en = "Section 1 · Travel information"
+section_zh = "第 1 段 · 行程信息"
+example = "Planned departure date"
+mistake = "Repeating the arrival date"
+mistake_why_en = "the form asks for the planned departure from Aruba"
+mistake_why_zh = "表单要求计划离开阿鲁巴的日期"
+copy_en = "Enter the date you plan to leave Aruba and keep it aligned with the current itinerary."
+copy_zh = "填写计划离开阿鲁巴的日期，并与当前行程保持一致。"
+
+[[fields]]
+n = "08"
+key = "address"
+section_en = "Section 3 · Personal information"
+section_zh = "第 3 段 · 个人信息"
+example = "Current home address"
+mistake = "A hotel address copied into the residence field"
+mistake_why_en = "the live personal-information section asks for the traveller's residence"
+mistake_why_zh = "实时个人信息段要求旅客居住地址"
+copy_en = "Enter the current residence address. The live address line exposes a 42 character maximum."
+copy_zh = "填写当前居住地址。实时地址栏上限 42 个字符。"
+
+[[fields]]
+n = "09"
+key = "purpose_of_visit"
+section_en = "Section 1 · Travel information"
+section_zh = "第 1 段 · 行程信息"
+example = "Purpose matching this trip"
+mistake = "A purpose from an earlier trip"
+mistake_why_en = "the declaration must describe the current journey"
+mistake_why_zh = "申报必须描述本次行程"
+copy_en = "Choose the purpose that describes this trip. Do not reuse an answer from a previous visit without checking it."
+copy_zh = "选择符合本次行程的目的，不要未经核对沿用上次答案。"
+
+[[fields]]
+n = "10"
+key = "email"
+section_en = "Section 4 · Contact and confirmation"
+section_zh = "第 4 段 · 联系与确认"
+example = "Inbox available during travel"
+mistake = "An address you cannot open"
+mistake_why_en = "the approved confirmation must remain available during travel"
+mistake_why_zh = "旅途中需要能打开获批确认"
+copy_en = "Use a valid inbox you can reach at airline check-in. Save the approved ED Card confirmation after submission."
+copy_zh = "填写在航司值机时能打开的有效邮箱。提交后保存获批的 ED Card 确认。"

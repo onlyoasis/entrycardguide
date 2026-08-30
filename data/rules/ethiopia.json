@@ -1,0 +1,99 @@
+{
+  "country": "ethiopia",
+  "officialUrl": "https://www.evisa.gov.et/visa",
+  "lastVerified": "2026-08-30",
+  "source": "https://www.evisa.gov.et/visa and https://www.evisa.gov.et/information/tourist, read 2026-08-30. The public React application renders the visa, arrival, Ethiopia address, personal, passport and upload field labels and states JPEG/JPG/PNG for photo and passport copy. It publishes no readable regexes, character limits or official validation error strings, so no pattern key is used, no [[errors]] array is published and no local validator is mounted.",
+  "fields": {
+    "visa_route": {
+      "type": "nationality",
+      "label": "Visa route",
+      "required": true,
+      "placeholder": "Exempt, on arrival, or online",
+      "help": "Check the official exemption and visa-on-arrival page before choosing the paid online Tourist Visa."
+    },
+    "visa_duration": {
+      "type": "text",
+      "label": "Tourist Visa duration",
+      "required": true,
+      "placeholder": "Single entry, 30 or 90 days",
+      "help": "The tourist page lists USD 62 for a 30-day single-entry visa and USD 152 for a 90-day single-entry visa."
+    },
+    "arrival_date": {
+      "type": "date",
+      "label": "Arrival Date",
+      "required": true,
+      "placeholder": "Select in the official date control",
+      "help": "The eVisa validity starts from the intended entry date entered in the application. The page publishes no text date pattern."
+    },
+    "departure_country": {
+      "type": "nationality",
+      "label": "Departure Country and City",
+      "required": true,
+      "placeholder": "Country and city before Ethiopia",
+      "help": "The arrival-information section asks for the departure country and city, airline and flight number."
+    },
+    "address_in_ethiopia": {
+      "type": "text",
+      "label": "Address in Ethiopia",
+      "required": true,
+      "placeholder": "Accommodation name, city, street and phone",
+      "help": "The application asks for accommodation type, name, city, street address and telephone."
+    },
+    "given_name": {
+      "type": "name",
+      "label": "Given Name",
+      "required": true,
+      "placeholder": "As in the passport",
+      "help": "Copy the given name from the passport used for the application. The page publishes no character limit."
+    },
+    "surname": {
+      "type": "name",
+      "label": "Surname",
+      "required": true,
+      "placeholder": "As in the passport",
+      "help": "Copy the surname from the passport used for the application. The page publishes no character limit."
+    },
+    "citizenship": {
+      "type": "nationality",
+      "label": "Citizenship",
+      "required": true,
+      "placeholder": "Passport citizenship",
+      "help": "Multiple nationals should choose citizenship according to the passport they intend to use for travel."
+    },
+    "date_of_birth": {
+      "type": "date",
+      "label": "Date of Birth",
+      "required": true,
+      "placeholder": "Select in the official date control",
+      "help": "Match the passport. The public page publishes no text date pattern."
+    },
+    "email": {
+      "type": "email",
+      "label": "Email Address",
+      "required": true,
+      "placeholder": "An inbox you control",
+      "help": "The personal-information section asks for email and email confirmation. Use an address you can check for the decision."
+    },
+    "passport_number": {
+      "type": "passport",
+      "label": "Passport Number",
+      "required": true,
+      "placeholder": "As in the passport",
+      "help": "Use the passport that will be carried for entry. The public page publishes no passport-number pattern or length."
+    },
+    "passport_expiry": {
+      "type": "date",
+      "label": "Passport Expiry Date",
+      "required": true,
+      "placeholder": "At least 6 months from intended entry",
+      "help": "The tourist page requires the passport to be valid for at least 6 months from the intended entry date."
+    },
+    "photo_and_passport_copy": {
+      "type": "text",
+      "label": "Photo and Passport Copy",
+      "required": true,
+      "placeholder": "JPEG, JPG or PNG",
+      "help": "A recent passport-size photo and a scanned colour passport copy are mandatory. The public upload note accepts JPEG, JPG and PNG."
+    }
+  }
+}

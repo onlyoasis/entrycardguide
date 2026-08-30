@@ -1,0 +1,28 @@
+{
+  "country": "jamaica",
+  "officialUrl": "https://enterjamaica.gov.jm/?language=en-US",
+  "lastVerified": "2026-08-30",
+  "source": "https://enterjamaica.gov.jm/?language=en-US live C5 HTML, read 2026-08-30. The public HTML exposes field labels and required attributes, minlength=6 on the email-verification input, maxlength=4 on Flight #, and the Travel Date (mm/dd/yyyy) prompt. No text-field regexes or complete official error set is claimed, and no local validator is mounted.",
+  "fields": {
+    "email": {"type":"email","label":"Email verification","required":true,"minLength":6,"placeholder":"A working email address","help":"The portal requires email verification before the C5 form opens and sends confirmation after submission."},
+    "last_name": {"type":"name","label":"Last Name","required":true,"placeholder":"As shown in the passport","help":"Copy the family name from the passport."},
+    "first_name": {"type":"name","label":"First Name","required":true,"placeholder":"As shown in the passport","help":"Copy the first name from the passport."},
+    "middle_name": {"type":"name","label":"Middle Name","required":false,"placeholder":"As shown in the passport, if any","help":"The live HTML does not mark this input required."},
+    "birth_date": {"type":"date","label":"Birth Date","required":true,"placeholder":"Day, Month, Year","help":"The form says to enter it as it appears on the passport. No text regex is published."},
+    "gender": {"type":"text","label":"Gender","required":true,"placeholder":"Select the form option","help":"Use the option matching the passport details."},
+    "family_members": {"type":"text","label":"Family Members with you","required":true,"placeholder":"0 to 5 on the live form","help":"Choose the number travelling with you; the public select lists 0 through 5."},
+    "home_address": {"type":"text","label":"Home Address","required":true,"placeholder":"Street, city, region, postal code, country","help":"The live form separates the home address into these five parts."},
+    "occupation": {"type":"text","label":"Occupation","required":true,"placeholder":"Current occupation","help":"Use a short current occupation description."},
+    "passport_number": {"type":"passport","label":"Passport Number","required":true,"placeholder":"As shown in the passport","help":"Use the passport carried for the trip. The page publishes no number pattern or length."},
+    "passport_issue_country": {"type":"nationality","label":"Country of Issue","required":true,"placeholder":"Passport issuing country","help":"This is the issuing country, not the country of residence."},
+    "jamaica_address": {"type":"text","label":"Address in Jamaica","required":true,"placeholder":"Hotel name or residential address","help":"Enter the actual first stay address shown in the booking or host details."},
+    "countries_visited": {"type":"text","label":"Countries visited","required":true,"placeholder":"Select the applicable countries","help":"Use the multi-select on the live form for the requested travel-history answer."},
+    "flight_number": {"type":"flight","label":"Flight number","required":true,"maxLength":4,"placeholder":"0090","help":"The public HTML sets maxlength=4 for the number portion after the airline selector."},
+    "departure_port": {"type":"text","label":"Departure Port","required":true,"placeholder":"Miami","help":"Enter the port from which this flight or vessel reaches Jamaica."},
+    "travel_date": {"type":"date","label":"Travel Date","required":true,"placeholder":"mm/dd/yyyy","help":"The official input is read-only and shows Travel Date (mm/dd/yyyy). Use its date picker."},
+    "visit_purpose": {"type":"text","label":"Purpose of visit","required":true,"placeholder":"Vacation, business, transit, resident or another listed purpose","help":"Select the option matching this trip."},
+    "stay_length": {"type":"text","label":"Length of Stay","required":true,"placeholder":"Number of days","help":"The live form asks for length of stay in days."},
+    "luggage_counts": {"type":"text","label":"Number of pieces of luggage","required":true,"placeholder":"Accompanied and unaccompanied","help":"Report checked and hand luggage separately from luggage sent by air or sea freight."},
+    "customs_declaration": {"type":"text","label":"Customs declaration questions","required":true,"placeholder":"Answer every item truthfully","help":"Declare restricted goods, currency, commercial goods and items above the allowance. If in doubt, declare them to the customs officer."}
+  }
+}

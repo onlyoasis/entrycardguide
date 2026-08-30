@@ -1,0 +1,62 @@
+{
+  "country": "panama",
+  "officialUrl": "https://declaraciondeviajero.ana.gob.pa/",
+  "lastVerified": "2026-08-30",
+  "source": "The official bilingual Panama Customs portal and its first live form page were read on 2026-08-30. The form exposes required controls and standard date and email input types, but no public regexes, maxlengths or validation messages. No hidden pattern is claimed.",
+  "fields": {
+    "declaration_type": {
+      "type": "text",
+      "label": "Declaration type",
+      "required": true,
+      "help": "Choose entry into or exit from the country to match the current movement."
+    },
+    "customs_checkpoint": {
+      "type": "text",
+      "label": "Customs entry or exit point",
+      "required": true,
+      "help": "Choose the Panama customs checkpoint used for this trip from the live list."
+    },
+    "first_names": {
+      "type": "name",
+      "label": "First names",
+      "required": true,
+      "help": "Copy the given names from the travel document."
+    },
+    "last_names": {
+      "type": "name",
+      "label": "Last names",
+      "required": true,
+      "help": "Copy the surnames from the travel document."
+    },
+    "nationality": {
+      "type": "nationality",
+      "label": "Nationality",
+      "required": true,
+      "help": "Select the nationality of the passport used for this movement."
+    },
+    "document_number": {
+      "type": "passport",
+      "label": "Passport number",
+      "required": true,
+      "help": "Use the number from the passport carried to customs. No public format rule is stated."
+    },
+    "date_of_birth": {
+      "type": "date",
+      "label": "Date of birth",
+      "required": true,
+      "help": "Match the travel document. The live form labels this field for travellers aged 18 or older."
+    },
+    "email": {
+      "type": "email",
+      "label": "Email address",
+      "required": true,
+      "help": "The live form requires the email address twice. Use an inbox available during travel."
+    },
+    "customs_answers": {
+      "type": "text",
+      "label": "Goods and values declaration",
+      "required": true,
+      "help": "Answer the goods, food, animals and money questions truthfully. Customs may inspect the declaration."
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "country": "brazil",
+  "officialUrl": "https://brazil.vfsevisa.com/tourist-visa.html",
+  "lastVerified": "2026-08-30",
+  "source": "The Brazil Ministry of Foreign Affairs authorization page and the designated VFS Global tourist-visa and FAQ pages were read on 2026-08-30. The application is dynamic and publishes no stable regexes, maxlengths or validation messages. No hidden pattern is claimed.",
+  "fields": {
+    "eligibility": {
+      "type": "nationality",
+      "label": "Eligible passport",
+      "required": true,
+      "help": "The VFS e-Visa route is exclusively for valid Australian, Canadian and United States passports under the current government notice."
+    },
+    "passport_bio_page": {
+      "type": "passport",
+      "label": "Passport biographical page",
+      "required": true,
+      "help": "Upload a clear colour copy of the biographical page from the passport used for travel."
+    },
+    "photograph": {
+      "type": "text",
+      "label": "Recent photograph",
+      "required": true,
+      "help": "Prepare a recent front-facing photograph that follows the current portal instructions."
+    },
+    "travel_details": {
+      "type": "text",
+      "label": "Travel details",
+      "required": true,
+      "help": "Use the current itinerary and provide additional travel evidence if the application requests it."
+    },
+    "email": {
+      "type": "email",
+      "label": "Email address",
+      "required": true,
+      "help": "The approved e-Visa is delivered by email. Use an inbox controlled by the applicant."
+    },
+    "minor_documents": {
+      "type": "text",
+      "label": "Documents for a minor",
+      "required": false,
+      "help": "For a child application, follow the current portal's parental-consent and identity-document requirements."
+    }
+  }
+}

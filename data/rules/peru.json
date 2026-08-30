@@ -1,0 +1,41 @@
+{
+  "country": "peru",
+  "officialUrl": "https://cel.migraciones.gob.pe/ConsultaTAMVirtual/VerificarTAM",
+  "lastVerified": "2026-08-30",
+  "source": "The Peru Migraciones TAM Virtual campaign and the live bilingual lookup were read on 2026-08-30. The campaign says document values use letters and numbers without dots, hyphens or spaces. The live script formats the movement date as DD/MM/YYYY and exposes a 10 character maximum. Server-side error messages are not claimed.",
+  "fields": {
+    "document_type": {
+      "type": "text",
+      "label": "Document type",
+      "required": true,
+      "help": "Choose the same travel-document type used at Peru immigration control."
+    },
+    "document_number": {
+      "type": "passport",
+      "label": "Document number",
+      "required": true,
+      "pattern": "^[A-Za-z0-9]+$",
+      "help": "Migraciones instructs users to enter only letters and numbers, without dots, hyphens or spaces."
+    },
+    "nationality": {
+      "type": "nationality",
+      "label": "Nationality",
+      "required": true,
+      "help": "Select the nationality recorded for the movement."
+    },
+    "movement_date": {
+      "type": "text",
+      "label": "Arrival or departure date",
+      "required": true,
+      "pattern": "^\\d{2}/\\d{2}/\\d{4}$",
+      "maxLength": 10,
+      "help": "The live lookup script formats this value as DD/MM/YYYY."
+    },
+    "include_departure_record": {
+      "type": "text",
+      "label": "Include departure record",
+      "required": false,
+      "help": "Use the live TAM output option when a departure movement should be included."
+    }
+  }
+}

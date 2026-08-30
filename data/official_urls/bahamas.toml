@@ -1,0 +1,61 @@
+# The Bahamas — official government and government-authorized URLs
+# Last verified: 2026-08-30
+
+[c17]
+url = "https://exempt.gov.bs/"
+name = "Exempt Bahamas Customs C17 Digital Declaration"
+agency = "Bahamas Customs Department and Ministry of Finance"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The .gov.bs portal says it is officially authorized by Bahamas Customs and the Ministry of Finance. It provides electronic C17 submission, passport-profile scanning, QR-code clearance and optional duty prepayment. It identifies Exempt Technologies as the app developer."
+
+[government_entry]
+url = "https://www.bahamas.gov.bs/arrivals-and-departures"
+name = "Bahamas Government Arrival and Customs Requirements"
+agency = "Government of The Bahamas"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The government page says a visitor carrying only used personal belongings makes an oral baggage declaration; a visitor with other items uses C17; every returning resident uses C17 whether or not there are items to declare."
+
+[digital_arrival_pilot]
+url = "https://www.bahamas.com/pressroom/the-bahamas-initiates-soft-launch-of-digital-arrival-card-in-historic-first-for-the-destination"
+name = "Bahamas Digital Arrival Card Pilot Announcement"
+agency = "Bahamas Ministry of Tourism, Investments and Aviation"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The 5 May 2026 release describes BDAC as a pilot for select visitors on selected flights, combining immigration and customs. It says the traditional paper process remains alongside the pilot."
+
+[airport_notice]
+url = "https://nassaulpia.com/news/department-of-bahamas-customs-has-launched-a-new-digital-declaration/"
+name = "Lynden Pindling International Airport Exempt Notice"
+agency = "Lynden Pindling International Airport"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The airport notice says the Exempt digital declaration is mandatory for returning residents and required for visitors with items to declare."
+
+[operator_terms]
+url = "https://www.myexempt.com/privacy-api.php"
+name = "Exempt App Operator Privacy Notice"
+agency = "Exempt Technologies, Inc."
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. Exempt Technologies identifies itself as the app builder and states that the service is provided at no cost. Customs duties are separate and may be prepaid through the app."
+
+[meta]
+flag = "🇧🇸"
+name_en = "The Bahamas"
+name_zh = "巴哈马"
+form_code = "C17"
+guide_slug = "c17"
+form_key = "c17"
+form_name_en = "Bahamas Customs C17 Digital Declaration"
+form_name_zh = "巴哈马海关 C17 电子申报"
+since_en = "digital customs declaration"
+since_zh = "电子海关申报"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".gov.bs"
+form_type = "arrival_card"
+field_count = 12
+sections = 7
+time_needed_en = "varies"
+time_needed_zh = "时间不定"
+output_en = "After electronic submission, the Exempt portal issues a QR code for the designated customs lane. Any customs duty is separate from the free filing service."
+output_zh = "电子提交后，Exempt 门户生成二维码，用于指定海关通道。可能产生的关税与免费申报服务分开。"
+fields_intro_en = "The public C17 page exposes the form title, seven section headings and an all-fields-mandatory notice. The portal also says passport information must be scanned before forms can be submitted. It publishes no field regexes, character limits or complete official error set. No invented pattern or error decoder is used, and no local validator is mounted."
+fields_intro_zh = "公开 C17 页面能读到表单名称、7 个分段标题和所有字段必填提示；门户还说明提交前必须扫描护照资料。页面没有公开字段正则、字符上限或完整官方报错。本页不编 pattern 或错误解码，也不挂本地校验器。"

@@ -1,0 +1,63 @@
+# Peru TAM Virtual — official lookup controls.
+# The public guide and live script expose document-character and date-format
+# rules. Server-side error wording is not public, so this file has no [[errors]].
+
+[[fields]]
+n = "01"
+key = "document_type"
+section_en = "Section 1 · Movement lookup"
+section_zh = "第 1 段 · 出入境记录查询"
+example = "Document type used at immigration control"
+mistake = "A different ID type"
+mistake_why_en = "the lookup must match the movement record created at the border"
+mistake_why_zh = "查询条件必须匹配边检生成的出入境记录"
+copy_en = "Select the travel-document type used when Migraciones recorded the movement. The TAM is generated at immigration control; this is not a pre-arrival application."
+copy_zh = "选择 Migraciones 登记出入境时使用的旅行证件类型。TAM 在边检时生成，这不是入境前申请。"
+
+[[fields]]
+n = "02"
+key = "document_number"
+section_en = "Section 1 · Movement lookup"
+section_zh = "第 1 段 · 出入境记录查询"
+example = "AB123456"
+mistake = "AB-123 456"
+mistake_why_en = "Migraciones says to use letters and numbers without dots, hyphens or spaces"
+mistake_why_zh = "Migraciones 要求只用字母和数字，不加点、连字符或空格"
+copy_en = "Enter only the letters and numbers from the document number. Remove dots, hyphens and spaces."
+copy_zh = "证件号只填写字母和数字，去掉点、连字符和空格。"
+
+[[fields]]
+n = "03"
+key = "nationality"
+section_en = "Section 1 · Movement lookup"
+section_zh = "第 1 段 · 出入境记录查询"
+example = "Nationality recorded at the border"
+mistake = "Country of residence"
+mistake_why_en = "the lookup matches nationality in the migration record"
+mistake_why_zh = "查询会匹配出入境记录中的国籍"
+copy_en = "Select the nationality used in the recorded movement. It may differ from the country of residence."
+copy_zh = "选择出入境记录使用的国籍；它可能与居住国家不同。"
+
+[[fields]]
+n = "04"
+key = "movement_date"
+section_en = "Section 1 · Movement lookup"
+section_zh = "第 1 段 · 出入境记录查询"
+example = "30/08/2026"
+mistake = "2026-08-30"
+mistake_why_en = "the live lookup formats the date as DD/MM/YYYY"
+mistake_why_zh = "实时查询页把日期格式化为 DD/MM/YYYY"
+copy_en = "Enter the arrival or departure date as DD/MM/YYYY. The live control accepts ten characters and inserts the slashes."
+copy_zh = "按 DD/MM/YYYY 填写抵达或离境日期。实时控件接受 10 个字符并插入斜线。"
+
+[[fields]]
+n = "05"
+key = "include_departure_record"
+section_en = "Section 2 · Output"
+section_zh = "第 2 段 · 输出"
+example = "Select when the departure record is needed"
+mistake = "Assuming an unchecked output contains both movements"
+mistake_why_en = "the live lookup exposes a separate TAM departure-record option"
+mistake_why_zh = "实时查询页单独提供 TAM 离境记录选项"
+copy_en = "Use the departure-record option when that movement should appear in the output. Complete the CAPTCHA, search and download the returned TAM."
+copy_zh = "需要在输出中显示离境记录时选择相应选项。完成 CAPTCHA，查询并下载返回的 TAM。"

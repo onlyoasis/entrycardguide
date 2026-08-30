@@ -1,0 +1,20 @@
+{
+  "country": "bahamas",
+  "officialUrl": "https://exempt.gov.bs/",
+  "lastVerified": "2026-08-30",
+  "source": "https://exempt.gov.bs/ and its public C17 page https://exempt.gov.bs/c17-new3?auth1=&auth2=, read 2026-08-30. The portal states that passport information must be scanned before submission; the C17 page exposes Passenger, Travel, Baggage, Invoice, Alcohol, Tobacco and Submission sections and says all fields are mandatory. No regexes, character limits or complete official error strings were published, and no local validator is mounted.",
+  "fields": {
+    "traveller_route": {"type":"text","label":"C17 filing route","required":true,"placeholder":"Returning resident or visitor with items to declare","help":"The government page requires C17 for every returning resident and for visitors bringing items beyond used personal belongings."},
+    "passport_profile": {"type":"passport","label":"Scanned passport profile","required":true,"placeholder":"Passport used for this arrival","help":"The portal says the user profile must be completed by scanning passport information before forms can be submitted."},
+    "passenger_identity": {"type":"name","label":"Passenger information","required":true,"placeholder":"As shown in the passport","help":"Use identity details from the same passport scanned into the profile. No public name regex or length is claimed."},
+    "passport_number": {"type":"passport","label":"Passport number","required":true,"placeholder":"From the passport bio page","help":"Use the passport carried for this arrival. The public page publishes no number pattern or length."},
+    "residence_status": {"type":"text","label":"Residence status","required":true,"placeholder":"Returning resident or visitor","help":"This answer changes whether C17 is required when no other goods are being brought in."},
+    "travel_information": {"type":"flight","label":"Travel information","required":true,"placeholder":"Arrival transport details","help":"Enter the actual arriving flight or vessel details requested in the Travel Information section."},
+    "baggage_information": {"type":"text","label":"Baggage information","required":true,"placeholder":"Baggage for this arrival","help":"Report the baggage requested in the C17 Baggage Information section."},
+    "invoice_information": {"type":"text","label":"Invoice information","required":true,"placeholder":"Receipts and values for declared goods","help":"The portal supports purchase-receipt uploads and uses invoice information to calculate applicable duties."},
+    "alcohol_information": {"type":"text","label":"Alcohol information","required":true,"placeholder":"Amounts carried, if any","help":"Answer the dedicated Alcohol Information section truthfully."},
+    "tobacco_information": {"type":"text","label":"Tobacco information","required":true,"placeholder":"Amounts carried, if any","help":"Answer the dedicated Tobacco Information section truthfully."},
+    "customs_goods": {"type":"text","label":"Goods to declare","required":true,"placeholder":"Describe every applicable item","help":"Visitors with items beyond used personal belongings must make a C17 declaration. Do not hide goods to avoid duty."},
+    "submission_qr": {"type":"text","label":"Submission and QR code","required":true,"placeholder":"Submit and save the issued QR code","help":"The portal issues a QR code after travel documents and the C17 are submitted for customs review."}
+  }
+}
