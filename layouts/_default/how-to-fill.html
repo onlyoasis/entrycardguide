@@ -72,6 +72,11 @@
     With the exact regex the official site enforces, the error message it returns, and what you probably did wrong. Pre-check your values in the <a href="{{ .Parent.RelPermalink }}{{ $meta.guide_slug }}/" class="text-ink underline underline-offset-4">{{ $formCode }} page's local validator</a> before pasting.
     {{- end -}}
   </p>
+
+  <div class="mt-lg pt-4 border-t border-rule flex items-baseline gap-4 flex-wrap">
+    <span class="text-meta font-mono uppercase text-muted">{{ i18n "share_rail_label" }}</span>
+    {{- partial "share-buttons.html" . -}}
+  </div>
 </article>
 
 {{- /* Fields section heading + tags --------------------------------- */ -}}
@@ -248,6 +253,8 @@
   </ol>
 </section>
 
+{{- partial "affiliate-footer.html" "mid" -}}
+
 {{- /* Full markdown walkthrough — preserves the pre-existing per-field prose,
        validator shortcode, and any country-specific edge cases that aren't
        captured in data/fields/*.toml's shortlist of high-error fields. */ -}}
@@ -271,9 +278,5 @@
 {{- end }}
 
 {{- partial "share-source.html" . -}}
-
-{{- if .Section }}
-{{- partial "affiliate-footer.html" . -}}
-{{- end }}
 
 {{ end }}

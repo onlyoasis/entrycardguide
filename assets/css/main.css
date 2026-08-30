@@ -345,6 +345,15 @@
     @apply bg-ink text-paper;
   }
 
+  /* Share links — bordered tags that wrap cleanly in a 220px rail */
+  .share-link {
+    @apply inline-block border border-rule text-muted font-mono text-xs uppercase tracking-wide2 px-2 py-1 no-underline rounded-sm;
+    transition: border-color theme('transitionDuration.link') ease, color theme('transitionDuration.link') ease;
+  }
+  .share-link:hover {
+    @apply border-ink text-ink;
+  }
+
   /* Verified indicator dot */
   .rail-verified {
     @apply inline-flex items-center gap-1 text-verified font-sans font-semibold text-xs uppercase tracking-wide2;

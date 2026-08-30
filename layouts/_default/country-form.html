@@ -52,6 +52,11 @@
   </p>
   {{- end }}
   {{- end }}
+
+  <div class="lg:hidden mt-lg pt-4 border-t border-rule flex items-baseline gap-4 flex-wrap">
+    <span class="text-meta font-mono uppercase text-muted">{{ i18n "share_rail_label" }}</span>
+    {{- partial "share-buttons.html" . -}}
+  </div>
 </article>
 
 {{- /* Two-column body + sticky TOC aside ---------------------------- */ -}}
@@ -60,13 +65,24 @@
     {{ .Content }}
   </article>
 
-  <aside class="hidden lg:block sticky top-8 self-start text-small">
+  <aside class="hidden lg:block sticky top-8 self-start max-h-[calc(100vh-4rem)] overflow-y-auto text-small">
     {{- with .TableOfContents }}
     <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}本页目录{{ else }}On this page{{ end }}</div>
-    <div class="border-l border-rule pl-4 toc-rail text-small text-muted">
+    {{- /* Cap the TOC so a long one cannot push share and affiliate below the
+           fold. Malaysia MDAC has 14 entries; uncapped it costs ~350px. */ -}}
+    <div class="border-l border-rule pl-4 toc-rail text-small text-muted max-h-[30vh] overflow-y-auto">
       {{ . }}
     </div>
     {{- end }}
+
+    <div class="mt-lg pt-4 border-t border-rule">
+      <div class="text-meta font-mono uppercase text-muted mb-3">{{ i18n "share_rail_label" }}</div>
+      {{- partial "share-buttons.html" . -}}
+    </div>
+
+    <div class="mt-lg pt-4 border-t border-rule">
+      {{- partial "affiliate-rail.html" . -}}
+    </div>
 
     <div class="mt-lg pt-4 border-t border-rule grid gap-1.5 font-mono text-xs">
       <a href="https://github.com/onlyoasis/entrycardguide/blob/main/content/{{ .File.Path }}" class="text-muted no-underline hover:text-ink">↗ {{ if $isZh }}GitHub 源文件{{ else }}Source on GitHub{{ end }}</a>
@@ -75,6 +91,12 @@
     </div>
   </aside>
 </div>
+
+{{- if .Section }}
+<div class="lg:hidden">
+  {{- partial "affiliate-footer.html" "bottom" -}}
+</div>
+{{- end }}
 
 {{- /* "Why this matters" callout — driven by news data ------------- */ -}}
 {{- with $news }}
@@ -100,9 +122,5 @@
 {{- end }}
 
 {{- partial "share-source.html" . -}}
-
-{{- if .Section }}
-{{- partial "affiliate-footer.html" . -}}
-{{- end }}
 
 {{ end }}

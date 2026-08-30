@@ -32,12 +32,17 @@
 
     {{- partial "share-source.html" . -}}
 
+    <div class="lg:hidden mt-md">
+      {{- partial "share-buttons.html" . -}}
+    </div>
     {{- if .Section }}
-    {{- partial "affiliate-footer.html" . -}}
+    <div class="lg:hidden">
+      {{- partial "affiliate-footer.html" "bottom" -}}
+    </div>
     {{- end }}
   </div>
 
-  <aside class="hidden lg:block sticky top-8 self-start max-w-rail text-small">
+  <aside class="hidden lg:block sticky top-8 self-start max-h-[calc(100vh-4rem)] overflow-y-auto max-w-rail text-small">
     {{- partial "article-rail.html" . -}}
   </aside>
 </article>

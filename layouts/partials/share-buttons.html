@@ -1,0 +1,17 @@
+{{- /* Social share links only. The citation block lives in share-source.html.
+       Rendered in the sticky rail on country-form and single, under the hero on
+       how-to-fill, and below the citation card on about/list/tool. Callers own
+       the surrounding spacing so each context keeps its own rhythm. */ -}}
+{{- $url := .Permalink -}}
+{{- $title := .Title -}}
+{{- $encodedURL := $url | urlquery -}}
+{{- $encodedTitle := $title | urlquery -}}
+{{- $encodedShareText := printf "%s %s" $title $url | urlquery -}}
+<div class="flex flex-wrap gap-2" aria-label="{{ i18n "share_source_buttons_label" }}">
+  <a class="share-link" href="{{ printf "https://www.facebook.com/sharer/sharer.php?u=%s" $encodedURL | safeURL }}" rel="noopener noreferrer" target="_blank">Facebook</a>
+  <a class="share-link" href="{{ printf "https://twitter.com/intent/tweet?url=%s&text=%s" $encodedURL $encodedTitle | safeURL }}" rel="noopener noreferrer" target="_blank">X</a>
+  <a class="share-link" href="{{ printf "https://www.reddit.com/submit?url=%s&title=%s" $encodedURL $encodedTitle | safeURL }}" rel="noopener noreferrer" target="_blank">Reddit</a>
+  <a class="share-link" href="{{ printf "https://www.linkedin.com/sharing/share-offsite/?url=%s" $encodedURL | safeURL }}" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+  <a class="share-link" href="{{ printf "https://api.whatsapp.com/send?text=%s" $encodedShareText | safeURL }}" rel="noopener noreferrer" target="_blank">WhatsApp</a>
+  <a class="share-link" href="{{ printf "mailto:?subject=%s&body=%s" $encodedTitle $encodedShareText | safeURL }}">{{ i18n "share_source_email" }}</a>
+</div>
