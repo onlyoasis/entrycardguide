@@ -1,0 +1,69 @@
+# Oman — official government URLs
+# Last verified: 2026-08-30
+
+[evisa]
+url = "https://evisa.rop.gov.om/"
+name = "Royal Oman Police eVisa"
+agency = "Royal Oman Police"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. This is the ROP portal for tourist and sponsored visa applications. Tourist applicants must register or log in before starting an application."
+
+[visa_exemption]
+url = "https://www.fm.gov.om/en/visitors/entry-visas/"
+name = "Oman entry visas and visa exemptions"
+agency = "Foreign Ministry of Oman"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. Updated 16 January 2026. It lists more than 100 countries and regions whose visitors may use a visa exemption for stays up to 14 days, divides them into two groups, gives the extra conditions for the second group, and states that GCC citizens need no visa."
+
+[eligibility]
+url = "https://evisa.rop.gov.om/visa-eligibility?tabId=eiwscr"
+name = "Oman eVisa Eligibility Wizard"
+agency = "Royal Oman Police"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The public wizard asks for nationality, GCC residence and GCC country where applicable. Its result supplies eligible visa subtypes, fee details, stay duration and conditions."
+
+[faq]
+url = "https://evisa.rop.gov.om/en/frequently-asked-questions"
+name = "Oman eVisa FAQ"
+agency = "Royal Oman Police"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The FAQ covers visa types, pre-use validity, a recommended 4-day application lead, lawful border entry, 6-month passport validity, a 512 KB upload limit and email delivery after approval."
+
+[meta]
+flag = "🇴🇲"
+name_en = "Oman"
+name_zh = "阿曼"
+form_code = "eVisa"
+guide_slug = "evisa"
+form_key = "evisa"
+form_name_en = "Oman Electronic Visa"
+form_name_zh = "阿曼电子签证"
+since_en = "current ROP online system"
+since_zh = "当前皇家警察在线系统"
+fee_en = "Varies by visa type"
+fee_zh = "按签证类型而定"
+suffix = ".rop.gov.om"
+form_type = "evisa"
+
+field_count = 9
+sections = 3
+time_needed_en = "varies"
+time_needed_zh = "时间不定"
+output_en = "If approved, the Royal Oman Police sends the electronic visa to the registered email. Keep the PDF and payment receipt with the application passport."
+output_zh = "获批后，阿曼皇家警察把电子签发送到注册邮箱。请把 PDF、付款凭证和申请护照一起保存。"
+
+fields_intro_en = "The public eligibility wizard and FAQ show the decision questions, document conditions and upload limit. The actual application requires login, and its live regexes, later field limits and error text were not readable, so this guide makes no pattern or official-error claims."
+fields_intro_zh = "公开资格向导和 FAQ 可读到资格问题、证件条件和上传上限；真实申请必须登录，后续字段的实时正则、字符上限和报错原文无法读取，所以本页不写 pattern，也不声称有官方报错。"
+
+email_title_en = "Decision arrives by email"
+email_title_zh = "决定通过邮件发送"
+email_body_en = "After payment and submission, the ROP sends the approved electronic visa to the registered email. Payment does not guarantee approval."
+email_body_zh = "付款并递交后，皇家警察把获批电子签发送到注册邮箱。付款不保证获批。"
+printout_title_en = "Keep the eVisa PDF"
+printout_title_zh = "保存电子签 PDF"
+printout_body_en = "The FAQ explains how to generate the visa PDF again from the account. Keep a copy available for airline and border checks."
+printout_body_zh = "FAQ 说明可在账户中重新生成签证 PDF。请保存一份，供航司和口岸核查。"
+verification_title_en = "Use the selected visa conditions"
+verification_title_zh = "按所选签证条件出行"
+verification_body_en = "The eligibility result supplies the permitted stay and conditions for the exact visa subtype. Do not substitute another traveller's result."
+verification_body_zh = "资格结果会给出这类签证的停留期和条件。不要套用其他旅客的结果。"

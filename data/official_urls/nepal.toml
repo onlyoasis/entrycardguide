@@ -1,0 +1,70 @@
+# Nepal — official government visa URLs
+# Last verified: 2026-08-30
+
+[tourist_visa_form]
+url = "https://nepaliport.immigration.gov.np/on-arrival/tourist-visa"
+name = "Nepal Online Tourist Visa Form for Visa on Arrival"
+agency = "Department of Immigration, Government of Nepal"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. This is the on-arrival Tourist Visa application in NepaliPort. It begins with passport-issuing country, Tourist Visa, passport number and date of birth. The Department says the online form may be completed before arrival or at a TIA kiosk; it produces a barcode receipt valid for 15 days, while the immigration officer issues the visa at the port."
+
+[eta]
+url = "https://nepaliport.immigration.gov.np/"
+name = "NepaliPort Electronic Travel Authorization and Visa Services"
+agency = "Department of Immigration, Government of Nepal"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The same government portal separates Visa On-arrival, Visa From Nepalese Mission and Electronic Travel Authorization. ETA is a pre-arrival application route, not the same product as the on-arrival online form documented as the main guide."
+
+[visa_information]
+url = "https://immigration.gov.np/visa-information"
+name = "Nepal Department of Immigration Visa Information"
+agency = "Department of Immigration, Government of Nepal"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The current Tourist Visa section publishes the three on-arrival fees, the online-form and kiosk flow, the 15-day receipt validity, payment and immigration-desk issuance. It also identifies gratis categories and passports that must arrange a visa in advance."
+
+[china_tourist_visa]
+url = "https://cn.nepalembassy.gov.np/pages/visa/"
+name = "Nepal Embassy in Beijing Tourist Visa Information"
+agency = "Embassy of Nepal, Beijing, Government of Nepal"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. Chinese nationals are eligible for visa on arrival and pay no Tourist Visa fee. The page asks for more than six months of passport validity and explains the online form, digital photograph, contact details, Nepal address and 15-day application retention."
+
+[meta]
+flag = "🇳🇵"
+name_en = "Nepal"
+name_zh = "尼泊尔"
+form_code = "Tourist Visa"
+guide_slug = "visa-on-arrival"
+form_key = "tourist_visa_form"
+form_name_en = "Nepal Online Tourist Visa Form"
+form_name_zh = "尼泊尔落地签在线预填表"
+since_en = "official NepaliPort system"
+since_zh = "NepaliPort 官方系统"
+fee_en = "USD $30 / $50 / $125; some travellers free"
+fee_zh = "30 / 50 / 125 美元；部分旅客免费"
+suffix = ".gov.np"
+form_type = "evisa"
+
+field_count = 10
+sections = 3
+time_needed_en = "about 5 minutes"
+time_needed_zh = "约 5 分钟"
+output_en = "Save or print the barcode submission receipt. At the port, present it with the payment receipt and passport; the immigration officer issues the Tourist Visa there."
+output_zh = "保存或打印带条码的提交回执。到口岸后与付款凭证和护照一起出示，由移民官现场签发旅游签证。"
+
+fields_intro_en = "The public on-arrival screen and official guidance expose the field labels, required preparation and 15-day receipt window. The later live form does not publish readable text-field regexes, character limits or official validation error strings. No invented pattern is used and no local validator is mounted."
+fields_intro_zh = "公开落地签页面和官方说明给出了字段名称、准备材料和 15 天回执期限。后续实时表单没有公开可读的文本字段正则、字符上限或官方校验报错原文。本页不编造 `pattern`，也不挂本地校验器。"
+
+email_title_en = "Keep the barcode receipt"
+email_title_zh = "保存条码回执"
+email_body_en = "The submitted online form remains in the system for 15 days. Save the barcode receipt before closing the page."
+email_body_zh = "在线表单提交后在系统中保留 15 天。关闭页面前保存带条码的回执。"
+printout_title_en = "Print the form and payment receipt"
+printout_title_zh = "打印表单与付款凭证"
+printout_body_en = "The Department tells on-arrival applicants to present the online form, payment receipt and passport at the immigration desk."
+printout_body_zh = "移民局要求落地签旅客在移民柜台出示在线表单、付款凭证和护照。"
+verification_title_en = "The visa is issued at the port"
+verification_title_zh = "签证在口岸签发"
+verification_body_en = "The online form is a pre-fill and receipt, not the visa itself. Final issuance remains with the immigration officer."
+verification_body_zh = "在线表单只是预填和回执，不是签证本身。最终仍由移民官现场签发。"
+

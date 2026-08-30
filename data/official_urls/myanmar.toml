@@ -1,0 +1,54 @@
+# Myanmar — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-08-30
+
+[tourist_evisa]
+url = "https://evisa.moip.gov.mm/home"
+name = "Official Myanmar Tourist eVisa"
+agency = "Ministry of Immigration and Population, Republic of the Union of Myanmar"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://evisa.moip.gov.mm/home"
+notes = "Read 2026-08-30. The current Ministry home page presents separate Tourist and Business eVisa application routes, account registration, payment, Approval Letter and stamping on arrival. The official user guide's Tourist walkthrough ends with a payment acknowledgement showing a USD 50 processing fee; confirm the current amount on the Step 5 payment screen before paying. Announcements on the portal were last updated 2026-07, and no suspension notice is posted."
+
+[faq]
+url = "https://evisa.moip.gov.mm/common-items/faq"
+name = "Myanmar eVisa FAQ"
+agency = "Ministry of Immigration and Population, Republic of the Union of Myanmar"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://evisa.moip.gov.mm/common-items/faq"
+notes = "Read 2026-08-30. The FAQ separates Tourist and Business eVisas: 100 versus 54 eligible nationalities, different supporting documents, 28 versus 70 days of stay, and different extension rules. It states a minimum of 3 working days, a 90-day Approval Letter validity, single entry, a printed Approval Letter, and four current entry points: Yangon, Mandalay and Nay Pyi Taw airports plus Kawthaung land checkpoint."
+
+[user_guide]
+url = "https://evisa.moip.gov.mm/assets/dist/img/guide/userGuide.pdf"
+name = "Myanmar eVisa Application User Guide"
+agency = "Ministry of Immigration and Population, Republic of the Union of Myanmar"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://evisa.moip.gov.mm/assets/dist/img/guide/userGuide.pdf"
+notes = "Read 2026-08-30. The 25-page official guide covers account activation, the five-step Tourist or Business eVisa flow, passport validity, MRZ name entry, JPG/PDF uploads up to 2 MB, the Tourist payment acknowledgement showing a USD 50 processing fee, the minimum 3-working-day approval time, and printing the Approval Letter."
+
+[meta]
+flag = "🇲🇲"
+name_en = "Myanmar"
+name_zh = "缅甸"
+form_code = "Tourist eVisa"
+guide_slug = "tourist-evisa"
+form_key = "tourist_evisa"
+form_name_en = "Myanmar Tourist eVisa"
+form_name_zh = "缅甸旅游电子签"
+since_en = "official online visa system"
+since_zh = "官方在线签证系统"
+fee_en = "USD $50"
+fee_zh = "50 美元"
+suffix = ".gov.mm"
+form_type = "evisa"
+
+field_count = 11
+sections = 3
+time_needed_en = "varies"
+time_needed_zh = "时间不定"
+output_en = "After approval, download and print one copy of the Approval Letter. Present it with the same passport at Yangon, Mandalay or Nay Pyi Taw airport, or Kawthaung land checkpoint, for the visa stamp."
+output_zh = "批准后下载并打印一份批准函。与申请时同一本护照一起，在仰光、曼德勒、内比都机场或高当陆路口岸出示，现场取得签证章。"
+
+fields_intro_en = "The public FAQ and 25-page application guide expose required steps, the MRZ name rule, at least 6 months of passport validity, JPG/PDF uploads up to 2 MB and the supporting-document lists. The actual personal-information form requires an activated account and publishes no readable text-field regexes, character limits or validation error strings. No invented pattern is used and no local validator is mounted."
+fields_intro_zh = "公开 FAQ 和 25 页申请手册给出了必填步骤、按机读区填写姓名、护照至少 6 个月有效、JPG/PDF 最大 2 MB，以及材料清单。实际个人资料表需要激活账号，未公开可读取的文本字段正则、字符上限或校验报错原文。本页不编造 `pattern`，也不挂本地校验器。"
+

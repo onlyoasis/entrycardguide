@@ -1,0 +1,98 @@
+# Qatar Hayya e-Visa — route and preparation items from public official pages.
+# No [[errors]] array is included because account-form error text was not readable.
+
+[[fields]]
+n = "01"
+key = "nationality"
+section_en = "Section 1 · Route"
+section_zh = "第 1 段 · 路径"
+example = "Country that issued the passport"
+mistake = "Country of residence"
+mistake_why_en = "the first route decision is based on passport nationality"
+mistake_why_zh = "第一层路径按护照国籍判断"
+copy_en = "Enter the passport country in the live Qatar Tourism checker and Hayya journey. Do not substitute residence for nationality."
+copy_zh = "在卡塔尔旅游局实时查询器和 Hayya 路径中填写护照签发国，不要用居住国代替国籍。"
+
+[[fields]]
+n = "02"
+key = "gcc_citizenship"
+section_en = "Section 1 · Route"
+section_zh = "第 1 段 · 路径"
+example = "GCC citizen: no visa"
+mistake = "Applying for A2 as a GCC citizen"
+mistake_why_en = "A2 is for GCC residents; GCC citizens enter without a visa"
+mistake_why_zh = "A2 面向海合会居民；海合会国家公民无需签证"
+copy_en = "Citizens of Bahrain, Kuwait, Oman, Saudi Arabia and the UAE need no visa. Hayya says a passport or GCC ID is enough for this status."
+copy_zh = "巴林、科威特、阿曼、沙特和阿联酋公民无需签证。Hayya 写明这一路径只需护照或海合会身份证。"
+
+[[fields]]
+n = "03"
+key = "visa_free_status"
+section_en = "Section 1 · Route"
+section_zh = "第 1 段 · 路径"
+example = "Live result says Enter visa-free"
+mistake = "Buying A1 without checking"
+mistake_why_en = "more than 102 passport countries qualify for free entry"
+mistake_why_zh = "有 102 个以上护照国家符合免费入境资格"
+copy_en = "Use the live result for the exact passport. If it says Enter visa-free and you meet the listed conditions, a Hayya tourist visa is not required."
+copy_zh = "按实际护照查看实时结果。结果显示“Enter visa-free”且满足列出的条件，就不需要 Hayya 旅游签。"
+
+[[fields]]
+n = "04"
+key = "residence_or_visa_status"
+section_en = "Section 1 · Route"
+section_zh = "第 1 段 · 路径"
+example = "Current GCC residence or qualifying visa status"
+mistake = "Expired residence permit"
+mistake_why_en = "A2 and A3 routing uses current status"
+mistake_why_zh = "A2 和 A3 分流使用当前有效身份"
+copy_en = "Answer the checker questions about GCC residence and residence in, or a valid visa for, the named countries. These answers can direct the traveller to A2 or A3."
+copy_zh = "按查询器回答海合会居留，以及是否居住在指定国家或持有其有效签证。这些答案可能把旅客分流到 A2 或 A3。"
+
+[[fields]]
+n = "05"
+key = "hayya_category"
+section_en = "Section 2 · Application"
+section_zh = "第 2 段 · 申请"
+example = "Tourist Visa A1"
+mistake = "Choosing A2 without GCC residence"
+mistake_why_en = "Hayya defines separate categories for different status groups"
+mistake_why_zh = "Hayya 为不同身份分设签证类别"
+copy_en = "A1 is for tourism and leisure. A2 is for GCC residents. A3 is for nationals or residents of specified countries. Hayya also lists A4 for GCC-citizen companions and F1 for US passports."
+copy_zh = "A1 面向旅游休闲，A2 面向海合会居民，A3 面向特定国家的国民或居民。Hayya 还列有海合会公民随行人的 A4 和美国护照的 F1。"
+
+[[fields]]
+n = "06"
+key = "passport_validity"
+section_en = "Section 2 · Application"
+section_zh = "第 2 段 · 申请"
+example = "At least 3 months from arrival"
+mistake = "Two months remaining"
+mistake_why_en = "the public checker states a 3-month minimum"
+mistake_why_zh = "公开查询器规定至少 3 个月"
+copy_en = "Check the passport expiry against the arrival date. Qatar Tourism states that the passport must remain valid for at least 3 months from arrival or entry."
+copy_zh = "用护照到期日对比抵达日。卡塔尔旅游局写明，护照从抵达或入境日起至少还要有效 3 个月。"
+
+[[fields]]
+n = "07"
+key = "accommodation"
+section_en = "Section 2 · Application"
+section_zh = "第 2 段 · 申请"
+example = "Hotel reservation matching the trip"
+mistake = "No booking for an A1 route that asks for one"
+mistake_why_en = "the A1 prompt requires a hotel reservation during application"
+mistake_why_zh = "A1 提示要求申请时提供酒店预订"
+copy_en = "Prepare the accommodation evidence shown for the route. Qatar Tourism says A1 requires a hotel reservation during the application, while some arrival routes require a Discover Qatar booking."
+copy_zh = "准备本人路径要求的住宿证明。卡塔尔旅游局说明 A1 申请要酒店预订，部分抵达办理路径则要求 Discover Qatar 预订。"
+
+[[fields]]
+n = "08"
+key = "visa_fee"
+section_en = "Section 3 · Decision"
+section_zh = "第 3 段 · 决定"
+example = "QAR 100 after A1 approval"
+mistake = "Paying before the route check"
+mistake_why_en = "visa-free travellers need no paid tourist visa"
+mistake_why_zh = "免签旅客不需要付费旅游签"
+copy_en = "Qatar Tourism lists QAR 100 for a Hayya tourist visa and says the A1 payment request comes after approval. Confirm the category and live amount before paying."
+copy_zh = "卡塔尔旅游局列出的 Hayya 旅游签费用为 100 卡塔尔里亚尔，并说明 A1 获批后才要求付款。付款前再核对类别和实时金额。"

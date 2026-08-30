@@ -1,0 +1,98 @@
+# Pakistan Visa Prior to Arrival — preparation fields from official notices and the mobile guide.
+# No [[errors]] array: no official live-form validation error strings were publicly readable.
+
+[[fields]]
+n = "01"
+key = "visa_route"
+section_en = "Section 1 · Route and eligibility"
+section_zh = "第 1 段 · 路径与资格"
+example = "VPA-eligible passport"
+mistake = "Applying before checking exemption"
+mistake_why_en = "six GCC nationalities need no ETA or visa for tourism and business"
+mistake_why_zh = "6 个海合会国家的公民因旅游或商务入境无需 ETA 或签证"
+copy_en = "Check the passport route first. GCC citizens covered by the exemption need no form; current DGI&P guidance places 120 passport countries on the VPA route."
+copy_zh = "先按护照判断路径。适用豁免的海合会国家公民无需填表；DGI&P 当前把 120 个护照国家纳入 VPA 路径。"
+
+[[fields]]
+n = "02"
+key = "application_category"
+section_en = "Section 1 · Route and eligibility"
+section_zh = "第 1 段 · 路径与资格"
+example = "Visa Prior to Arrival — Tourism"
+mistake = "Regular tourist visa or business VPA"
+mistake_why_en = "the portal separates product and purpose"
+mistake_why_zh = "门户把产品和访问目的分开"
+copy_en = "For this guide, choose Visa Prior to Arrival and Tourism. Do not select a regular online visa merely because both routes share the same portal."
+copy_zh = "本指南对应 Visa Prior to Arrival 和 Tourism。不要因为两条路径共用门户，就误选常规在线签证。"
+
+[[fields]]
+n = "03"
+key = "passport_name"
+section_en = "Section 2 · Passport and documents"
+section_zh = "第 2 段 · 护照与文件"
+example = "Full passport name"
+mistake = "Nickname or booking abbreviation"
+mistake_why_en = "the application is tied to the uploaded passport"
+mistake_why_zh = "申请与上传的护照绑定"
+copy_en = "Enter the name from the passport used for the application and travel."
+copy_zh = "填写申请和出行时使用的同一本护照上的姓名。"
+
+[[fields]]
+n = "04"
+key = "passport_details"
+section_en = "Section 2 · Passport and documents"
+section_zh = "第 2 段 · 护照与文件"
+example = "Passport number and document dates"
+mistake = "Details from an old passport"
+mistake_why_en = "border checks use the passport attached to the notice"
+mistake_why_zh = "边检使用获批通知关联的护照"
+copy_en = "Copy the number and document dates from the passport image you will upload."
+copy_zh = "从将要上传的护照图片中抄写号码和证件日期。"
+
+[[fields]]
+n = "05"
+key = "nationality"
+section_en = "Section 2 · Passport and documents"
+section_zh = "第 2 段 · 护照与文件"
+example = "Nationality on the passport"
+mistake = "Country of residence"
+mistake_why_en = "VPA eligibility follows passport nationality"
+mistake_why_zh = "VPA 资格按护照国籍判断"
+copy_en = "Select the nationality printed in the travel passport, not the place of residence or departure."
+copy_zh = "选择旅行护照所列国籍，不要填居住国或出发国。"
+
+[[fields]]
+n = "06"
+key = "passport_image"
+section_en = "Section 2 · Passport and documents"
+section_zh = "第 2 段 · 护照与文件"
+example = "Clear passport document image"
+mistake = "An unreadable crop"
+mistake_why_en = "the application checks submitted details against the document"
+mistake_why_zh = "申请资料会与证件文件核对"
+copy_en = "Upload the passport document requested by the current screen. This guide does not invent a public pixel or file-size limit."
+copy_zh = "按当前页面要求上传护照文件。本指南没有核实到公开的像素或文件大小限制，因此不写具体数值。"
+
+[[fields]]
+n = "07"
+key = "live_photograph"
+section_en = "Section 2 · Passport and documents"
+section_zh = "第 2 段 · 护照与文件"
+example = "Live image captured in the official app"
+mistake = "Skipping the capture prompt"
+mistake_why_en = "the official mobile guide includes a live-photograph step"
+mistake_why_zh = "官方移动端手册包含实时拍照步骤"
+copy_en = "Follow the official capture prompt for the live photograph. Use the current screen rather than a guessed local size rule."
+copy_zh = "按官方页面提示完成实时拍照，以当前页面要求为准，不猜测本地尺寸规则。"
+
+[[fields]]
+n = "08"
+key = "email_review"
+section_en = "Section 3 · Submit and receive"
+section_zh = "第 3 段 · 提交与接收"
+example = "Reachable account email"
+mistake = "Closing after seeing a dashboard status"
+mistake_why_en = "the travel document is the issued Visa Grant Notice"
+mistake_why_zh = "出行凭证是正式签发的 Visa Grant Notice"
+copy_en = "Use an email you can access, review the route and passport before submission, then download the issued notice and read its conditions."
+copy_zh = "使用可访问的邮箱，提交前复核路径和护照信息。获批后下载通知并逐项阅读条件。"

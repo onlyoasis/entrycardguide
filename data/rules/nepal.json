@@ -1,0 +1,79 @@
+{
+  "country": "nepal",
+  "officialUrl": "https://nepaliport.immigration.gov.np/on-arrival/tourist-visa",
+  "lastVerified": "2026-08-30",
+  "source": "https://nepaliport.immigration.gov.np/on-arrival/tourist-visa live first screen and its current JavaScript labels, plus https://immigration.gov.np/visa-information and https://cn.nepalembassy.gov.np/pages/visa/, read 2026-08-30. The public pages expose the preparation items below but no readable text-field regexes, character limits or official validation error strings, so no pattern or maxLength is claimed and no local validator is mounted.",
+  "fields": {
+    "visa_route": {
+      "type": "text",
+      "label": "Visa route and on-arrival eligibility",
+      "required": true,
+      "placeholder": "Visa on arrival, ETA or mission visa",
+      "help": "Most eligible tourists can use visa on arrival and pre-fill the online form. Indian citizens do not need a visa. Twelve listed nationalities and travel-document holders must arrange a visa in advance."
+    },
+    "entry_point": {
+      "type": "text",
+      "label": "Entry point",
+      "required": true,
+      "placeholder": "The port where you will enter Nepal",
+      "help": "The online flow starts by asking for the entry point. Choose the airport or land office where the immigration officer will issue the visa."
+    },
+    "passport_country": {
+      "type": "nationality",
+      "label": "Passport-issuing country",
+      "required": true,
+      "placeholder": "Country that issued the passport",
+      "help": "NepaliPort uses the passport-issuing country to determine the route and fee treatment, including gratis categories."
+    },
+    "passport_number": {
+      "type": "passport",
+      "label": "Passport number",
+      "required": true,
+      "placeholder": "From the passport used for travel",
+      "help": "Use the passport that will be presented at the immigration desk."
+    },
+    "date_of_birth": {
+      "type": "date",
+      "label": "Date of birth (AD)",
+      "required": true,
+      "placeholder": "Use the official day, month and year controls",
+      "help": "The live first screen asks for Date of Birth (AD) with separate day, month and year choices."
+    },
+    "full_name": {
+      "type": "name",
+      "label": "Full name",
+      "required": true,
+      "placeholder": "Exactly as shown in the passport",
+      "help": "The Department tells applicants to make every detail match the passport."
+    },
+    "passport_validity": {
+      "type": "date",
+      "label": "Passport validity",
+      "required": true,
+      "placeholder": "More than 6 months for processing",
+      "help": "The Nepal Embassy in Beijing says the passport should remain valid for more than six months for visa processing."
+    },
+    "digital_photo": {
+      "type": "text",
+      "label": "Recent digital photograph",
+      "required": true,
+      "placeholder": "Passport-size image",
+      "help": "The official online guidance asks applicants to prepare a recent digital photograph."
+    },
+    "addresses": {
+      "type": "text",
+      "label": "Permanent address and address in Nepal",
+      "required": true,
+      "placeholder": "Full home address and hotel or local address",
+      "help": "Prepare a detailed permanent residence address and the detailed address where you will stay in Nepal."
+    },
+    "contact_and_duration": {
+      "type": "text",
+      "label": "Contact details and visa duration",
+      "required": true,
+      "placeholder": "Phone, email and 15 / 30 / 90 days",
+      "help": "The official guidance asks for telephone numbers and email. Select the intended Tourist Visa duration before payment."
+    }
+  }
+}
+

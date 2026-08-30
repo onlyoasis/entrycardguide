@@ -1,0 +1,72 @@
+{
+  "country": "qatar",
+  "officialUrl": "https://hayya.qa/en?category=WVE",
+  "lastVerified": "2026-08-30",
+  "source": "https://visitqatar.com/intl-en/plan-your-trip/visas, https://hayya.qa/en?category=WVE and the Government Communications Office Hayya page, read 2026-08-30. The public pages identify the route questions and preparation items below. The account application does not publicly expose later HTML validation attributes, regexes, character limits or error text, so no pattern or length is claimed.",
+  "fields": {
+    "nationality": {
+      "type": "nationality",
+      "label": "Nationality",
+      "required": true,
+      "placeholder": "Type the passport country",
+      "help": "Both the Qatar Tourism checker and Hayya journey start with nationality because the available route depends on the passport.",
+      "errors": {"required": "Nationality is required for the route check"}
+    },
+    "gcc_citizenship": {
+      "type": "nationality",
+      "label": "GCC citizenship",
+      "required": true,
+      "placeholder": "Check whether you are a GCC citizen",
+      "help": "Citizens of Bahrain, Kuwait, Oman, Saudi Arabia and the UAE do not require a visa to enter Qatar.",
+      "errors": {"required": "Check GCC-citizen status before applying"}
+    },
+    "visa_free_status": {
+      "type": "nationality",
+      "label": "Visa-free entry status",
+      "required": true,
+      "placeholder": "Use the live Qatar Tourism result",
+      "help": "Citizens of more than 102 countries are eligible for free entry. The exact condition and stay depend on the passport result.",
+      "errors": {"required": "Check visa-free status before opening Hayya"}
+    },
+    "residence_or_visa_status": {
+      "type": "text",
+      "label": "Residence or qualifying visa status",
+      "required": true,
+      "placeholder": "Answer the live checker questions",
+      "help": "The checker asks about GCC residence and residence in, or a valid visa for, specified countries before directing some travellers to A2 or A3.",
+      "errors": {"required": "Answer the residence and visa-status questions"}
+    },
+    "hayya_category": {
+      "type": "text",
+      "label": "Hayya e-Visa category",
+      "required": true,
+      "placeholder": "A1, A2, A3 or another offered route",
+      "help": "Hayya publishes separate categories for tourists, GCC residents, qualifying ETA holders, GCC-citizen companions and US-passport holders. Use the category shown for the applicant.",
+      "errors": {"required": "Select only the Hayya category shown as eligible"}
+    },
+    "passport_validity": {
+      "type": "text",
+      "label": "Passport validity",
+      "required": true,
+      "placeholder": "At least 3 months from arrival",
+      "help": "The Qatar Tourism checker states that the visitor passport must remain valid for at least 3 months from arrival or entry.",
+      "errors": {"required": "Confirm at least 3 months of passport validity"}
+    },
+    "accommodation": {
+      "type": "text",
+      "label": "Accommodation",
+      "required": true,
+      "placeholder": "Hotel reservation for the selected route",
+      "help": "The A1 route shown by Qatar Tourism requires a hotel reservation during the application. Some arrival routes require a Discover Qatar booking.",
+      "errors": {"required": "Prepare accommodation evidence required by the route"}
+    },
+    "visa_fee": {
+      "type": "text",
+      "label": "Visa fee",
+      "required": true,
+      "placeholder": "QAR 100 for the tourist visa",
+      "help": "Qatar Tourism states that Hayya tourist visas cost QAR 100 and that payment is requested after approval for the A1 route.",
+      "errors": {"required": "Confirm the live fee for the selected route"}
+    }
+  }
+}

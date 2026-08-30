@@ -1,0 +1,123 @@
+# Nepal online Tourist Visa pre-fill — fields from the live first screen and official guidance.
+# No [[errors]] array: no official live-form validation error strings were publicly readable.
+
+[[fields]]
+n = "01"
+key = "visa_route"
+section_en = "Section 1 · Route and eligibility"
+section_zh = "第 1 段 · 路径与资格"
+example = "Visa on arrival, eligible passport"
+mistake = "Treating every online tile as the same visa"
+mistake_why_en = "NepaliPort separates on-arrival, ETA and mission routes"
+mistake_why_zh = "NepaliPort 把落地签、ETA 和使领馆路径分开"
+copy_en = "Check the route before filling. Indian citizens need no visa. Most eligible tourists use visa on arrival; the twelve restricted nationalities and travel-document holders need an advance route."
+copy_zh = "先判断路径。印度公民无需签证；多数符合资格的游客可办落地签，12 个受限国籍和旅行证件持有人要提前办理。"
+
+[[fields]]
+n = "02"
+key = "entry_point"
+section_en = "Section 1 · Route and eligibility"
+section_zh = "第 1 段 · 路径与资格"
+example = "Tribhuvan International Airport"
+mistake = "A different port"
+mistake_why_en = "the application starts by tying the request to an entry office"
+mistake_why_zh = "申请一开始就把请求与入境办公室关联"
+copy_en = "Choose the airport or land office where you will actually enter. The immigration officer at that port issues the visa."
+copy_zh = "选择实际入境的机场或陆路办公室。签证由该口岸的移民官签发。"
+
+[[fields]]
+n = "03"
+key = "passport_country"
+section_en = "Section 1 · Route and eligibility"
+section_zh = "第 1 段 · 路径与资格"
+example = "Country that issued the passport"
+mistake = "Country of residence"
+mistake_why_en = "eligibility and gratis treatment follow the travel document"
+mistake_why_zh = "资格和免费待遇按旅行证件判断"
+copy_en = "Select the passport-issuing country. Chinese nationals currently receive a gratis Tourist Visa; other exemptions have their own conditions."
+copy_zh = "选择护照签发国。中国公民当前可获免费旅游签；其他免费类别各有条件。"
+
+[[fields]]
+n = "04"
+key = "passport_number"
+section_en = "Section 2 · Passport and identity"
+section_zh = "第 2 段 · 护照与身份"
+example = "Number from the passport carried to Nepal"
+mistake = "A renewed or second passport"
+mistake_why_en = "the receipt and border check use the submitted passport"
+mistake_why_zh = "回执和口岸查验使用提交时的护照"
+copy_en = "Enter the number from the passport you will show at the immigration desk."
+copy_zh = "填写到移民柜台时会出示的那本护照号码。"
+
+[[fields]]
+n = "05"
+key = "date_of_birth"
+section_en = "Section 2 · Passport and identity"
+section_zh = "第 2 段 · 护照与身份"
+example = "Day, month and year from the passport"
+mistake = "A local-calendar date"
+mistake_why_en = "the live screen labels the value Date of Birth (AD)"
+mistake_why_zh = "实时页面明确标注 Date of Birth (AD)"
+copy_en = "Use the official day, month and year controls and enter the Gregorian date shown in the passport."
+copy_zh = "使用官网的日、月、年控件，填写护照上的公历出生日期。"
+
+[[fields]]
+n = "06"
+key = "full_name"
+section_en = "Section 2 · Passport and identity"
+section_zh = "第 2 段 · 护照与身份"
+example = "Full name exactly from the passport"
+mistake = "A nickname"
+mistake_why_en = "the Department tells applicants to match the passport"
+mistake_why_zh = "移民局要求申请资料与护照一致"
+copy_en = "Copy the full name from the same passport. Do not shorten it to a booking nickname."
+copy_zh = "从同一本护照抄完整姓名，不要改成订票时使用的简称。"
+
+[[fields]]
+n = "07"
+key = "passport_validity"
+section_en = "Section 2 · Passport and identity"
+section_zh = "第 2 段 · 护照与身份"
+example = "More than 6 months remaining"
+mistake = "Renewing after submitting"
+mistake_why_en = "the receipt is tied to the submitted passport"
+mistake_why_zh = "回执与提交时的护照绑定"
+copy_en = "The Nepal Embassy in Beijing says more than six months of passport validity is required for processing. Renew first if the document is close to expiry."
+copy_zh = "尼泊尔驻华使馆写明，办理时护照有效期应超过 6 个月。临近到期就先换发。"
+
+[[fields]]
+n = "08"
+key = "digital_photo"
+section_en = "Section 2 · Passport and identity"
+section_zh = "第 2 段 · 护照与身份"
+example = "Recent passport-size digital photo"
+mistake = "No image prepared at the kiosk"
+mistake_why_en = "the online guidance asks for a digital photograph"
+mistake_why_zh = "在线说明要求准备电子照片"
+copy_en = "Prepare a recent passport-size digital photograph before opening the form. No verified public pixel or file-size limit is claimed here."
+copy_zh = "打开表单前准备近期电子证件照。本页没有核实到公开的像素或文件大小限制，因此不写具体数值。"
+
+[[fields]]
+n = "09"
+key = "addresses"
+section_en = "Section 3 · Stay and contact"
+section_zh = "第 3 段 · 停留与联系"
+example = "Full home address and Kathmandu hotel"
+mistake = "Nepal"
+mistake_why_en = "the official guidance asks for detailed addresses"
+mistake_why_zh = "官方说明要求填写详细地址"
+copy_en = "Prepare the permanent home address and the full hotel or local address in Nepal."
+copy_zh = "准备常住地址，以及尼泊尔酒店或本地住宿的完整地址。"
+
+[[fields]]
+n = "10"
+key = "contact_and_duration"
+section_en = "Section 3 · Stay and contact"
+section_zh = "第 3 段 · 停留与联系"
+example = "Working phone and email; 30 days"
+mistake = "Choosing a duration after paying"
+mistake_why_en = "the fee follows the 15, 30 or 90-day choice"
+mistake_why_zh = "费用按 15、30 或 90 天档位计算"
+copy_en = "Give reachable phone and email details. Select 15, 30 or 90 days before payment, then save the barcode receipt; it remains valid for 15 days."
+copy_zh = "填写可联系的电话和邮箱。付款前选择 15、30 或 90 天，再保存条码回执；回执有效 15 天。"
+

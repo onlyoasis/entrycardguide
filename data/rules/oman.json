@@ -1,0 +1,80 @@
+{
+  "country": "oman",
+  "officialUrl": "https://evisa.rop.gov.om/visa-eligibility?tabId=eiwscr",
+  "lastVerified": "2026-08-30",
+  "source": "https://www.fm.gov.om/en/visitors/entry-visas/, https://evisa.rop.gov.om/visa-eligibility?tabId=eiwscr and https://evisa.rop.gov.om/en/frequently-asked-questions, read 2026-08-30. The public pages identify the eligibility questions, conditions and preparation items below. The application itself requires login, so later live validation attributes, regexes, character limits and field error text were not readable; no pattern or length is claimed.",
+  "fields": {
+    "visa_exemption": {
+      "type": "nationality",
+      "label": "14-day visa-exemption status",
+      "required": true,
+      "placeholder": "Check the current Foreign Ministry lists",
+      "help": "More than 100 countries and regions are covered, but second-group passports need an additional qualifying visa or residence status. GCC citizens do not need a visa.",
+      "errors": {"required": "Check exemption eligibility before applying"}
+    },
+    "nationality": {
+      "type": "nationality",
+      "label": "Nationality as shown in passport",
+      "required": true,
+      "placeholder": "Select the passport nationality",
+      "help": "The ROP wizard uses the nationality shown in the passport to determine available visa subtypes.",
+      "errors": {"required": "Nationality is required"}
+    },
+    "gcc_residency": {
+      "type": "text",
+      "label": "GCC residence status",
+      "required": true,
+      "placeholder": "Yes or no",
+      "help": "The eligibility wizard asks whether the applicant is resident in Bahrain, Kuwait, Qatar, Saudi Arabia or the UAE and then asks for the GCC country.",
+      "errors": {"required": "Answer the GCC residence question"}
+    },
+    "visa_subtype": {
+      "type": "text",
+      "label": "Eligible visa subtype",
+      "required": true,
+      "placeholder": "Use the wizard result",
+      "help": "The result supplies eligible visa subtypes, fee details, permitted stay and conditions for the entered answers.",
+      "errors": {"required": "Select only a visa subtype shown as eligible"}
+    },
+    "passport_validity": {
+      "type": "text",
+      "label": "Passport validity",
+      "required": true,
+      "placeholder": "At least 6 months before entry",
+      "help": "The ROP FAQ says a normal passport should be valid for at least 6 months before entering Oman.",
+      "errors": {"required": "Confirm at least 6 months of passport validity"}
+    },
+    "passport_scan": {
+      "type": "text",
+      "label": "Passport file",
+      "required": true,
+      "placeholder": "Readable file, no more than 512 KB",
+      "help": "The FAQ states that the passport file must not exceed 512 KB.",
+      "errors": {"required": "A readable passport file is required"}
+    },
+    "personal_photo": {
+      "type": "text",
+      "label": "Personal photo file",
+      "required": true,
+      "placeholder": "No more than 512 KB",
+      "help": "The FAQ gives the same 512 KB maximum for the picture upload.",
+      "errors": {"required": "A personal photo file is required"}
+    },
+    "email": {
+      "type": "email",
+      "label": "Registered email",
+      "required": true,
+      "placeholder": "An inbox you can access",
+      "help": "The application, payment receipt and approved electronic visa are sent to the registered email.",
+      "errors": {"required": "An accessible email address is required"}
+    },
+    "application_timing": {
+      "type": "date",
+      "label": "Application timing",
+      "required": true,
+      "placeholder": "Apply at least 4 days before arrival",
+      "help": "The ROP recommends lodging at least 4 days before arrival because processing time varies by application.",
+      "errors": {"required": "Leave the recommended application lead time"}
+    }
+  }
+}

@@ -1,0 +1,69 @@
+# Georgia — official government URLs
+# Last verified: 2026-08-30
+
+[evisa]
+url = "https://www.evisa.gov.ge/GeoVisa/en/VisaApp"
+name = "Georgia e-Visa Application"
+agency = "Ministry of Foreign Affairs of Georgia"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The live application is for short stays only and starts with citizenship, travel-document type, purpose and insurance. It lists the documents to upload and states that the current process has two mandatory steps: the application and fee, followed within 24 hours by DuVerify with an additional USD 15 fee."
+
+[visa_free]
+url = "https://matsne.gov.ge/en/document/view/2867361?publication=4"
+name = "List of countries whose citizens may enter Georgia without a visa"
+agency = "Legislative Herald of Georgia"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The current consolidated government ordinance lists the covered countries and states that their citizens may enter and stay in Georgia without a visa for one full year. Travellers must check that their exact passport country remains in the current annex."
+
+[faq]
+url = "https://www.evisa.gov.ge/GeoVisa/en/Home/FAQ"
+name = "Georgia e-Visa FAQ"
+agency = "Ministry of Foreign Affairs of Georgia"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The FAQ states a USD 20 fee plus a 2% service fee, a decision time of not less than 5 working days, passport conditions, required border documents and passport-dependent visa validity and stay."
+
+[about]
+url = "https://www.evisa.gov.ge/GeoVisa/en/Home/AboutVisa"
+name = "About the Georgia e-Visa"
+agency = "Ministry of Foreign Affairs of Georgia"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The Ministry identifies the portal as its short-term e-Visa service and describes the apply, pay and print process."
+
+[meta]
+flag = "🇬🇪"
+name_en = "Georgia"
+name_zh = "格鲁吉亚"
+form_code = "e-Visa"
+guide_slug = "evisa"
+form_key = "evisa"
+form_name_en = "Georgia Electronic Visa"
+form_name_zh = "格鲁吉亚电子签证"
+since_en = "short-stay online visa"
+since_zh = "短期在线签证"
+fee_en = "USD $20 + 2% + $15 verification"
+fee_zh = "20 美元 + 2% + 15 美元核验费"
+suffix = ".gov.ge"
+form_type = "evisa"
+
+field_count = 9
+sections = 4
+time_needed_en = "varies"
+time_needed_zh = "时间不定"
+output_en = "The Ministry sends the e-Visa by email. Print the PDF and carry it with the application passport plus the border documents listed by the portal."
+output_zh = "外交部通过邮件发送电子签 PDF。请打印，并与申请护照及官网列出的口岸材料一起携带。"
+
+fields_intro_en = "The public application exposes the first eligibility fields and its document checklist, while the FAQ publishes several form instructions. Later personal-information validation attributes, character limits and error text were not readable, so this guide carries no pattern or official-error claims."
+fields_intro_zh = "公开申请页展示了首屏资格字段和材料清单，FAQ 也公开了部分填写说明；但后续个人信息页的校验属性、字符上限和报错原文无法读取，所以本页不写 pattern，也不声称有官方报错。"
+
+email_title_en = "Complete both email steps"
+email_title_zh = "完成两段邮件流程"
+email_body_en = "Verify the first email within 1 hour. After the paid application, complete the mandatory DuVerify step from its email link within 24 hours."
+email_body_zh = "第一封验证邮件要在 1 小时内确认。付费申请后，还要在 24 小时内通过邮件链接完成强制 DuVerify。"
+printout_title_en = "Print the e-Visa PDF"
+printout_title_zh = "打印电子签 PDF"
+printout_body_en = "The Ministry says to print the e-Visa received by email and bring it when travelling to Georgia."
+printout_body_zh = "外交部要求打印邮件收到的电子签，并在前往格鲁吉亚时随身携带。"
+verification_title_en = "Carry the supporting evidence"
+verification_title_zh = "带齐证明材料"
+verification_body_en = "At the border, be ready to show the passport, purpose, accommodation, insurance and sufficient-funds evidence used for the trip."
+verification_body_zh = "过关时准备出示护照、旅行目的、住宿、保险和足够资金证明。"

@@ -1,0 +1,99 @@
+{
+  "country": "uzbekistan",
+  "officialUrl": "https://e-visa.gov.uz/application",
+  "lastVerified": "2026-08-30",
+  "source": "The live application, current JavaScript and https://e-visa.gov.uz/assets/localization/en.json, plus the current MFA policy page, read 2026-08-30. The portal exposes the field labels and image constraints below. It does not expose safe public regexes or character limits for passport names, numbers, addresses or contact fields, so no pattern or maxLength is claimed and no incomplete local validator is mounted.",
+  "fields": {
+    "visa_free_status": {
+      "type": "text",
+      "label": "Current visa-free status",
+      "required": true,
+      "placeholder": "Visa-free with applicable duration and conditions, or not visa-free",
+      "help": "Check the current MFA list first. Visa-free periods and ticket or passport conditions differ; confirmed visa-free travellers do not need an eVisa."
+    },
+    "evisa_eligibility": {
+      "type": "nationality",
+      "label": "eVisa passport eligibility",
+      "required": true,
+      "placeholder": "Passport country in the current Appendix 1",
+      "help": "Only passports on the current eVisa appendix may use this product. The portal redirects other travellers to an Uzbekistan foreign mission."
+    },
+    "travel_document": {
+      "type": "text",
+      "label": "Citizenship and travel-document type",
+      "required": true,
+      "placeholder": "Citizenship and passport type used to enter",
+      "help": "Choose the citizenship and document that will be used at the border. Entry with a different passport may be denied."
+    },
+    "entry_type": {
+      "type": "text",
+      "label": "Visa entry type",
+      "required": true,
+      "placeholder": "Single, double or multiple entry",
+      "help": "The current fees are USD 20 single, USD 35 double and USD 50 multiple."
+    },
+    "purpose_dates": {
+      "type": "text",
+      "label": "Tourism purpose and intended dates",
+      "required": true,
+      "placeholder": "Tourism and a stay of no more than 30 days",
+      "help": "The portal says a non-tourism purpose requires an inviting organisation to use the MFA visa route. eVisa stay may not exceed 30 days."
+    },
+    "passport_name": {
+      "type": "name",
+      "label": "Surname, name and patronymic",
+      "required": true,
+      "placeholder": "In English from the travel document",
+      "help": "The official guidance requires personal data in English according to the passport used to enter Uzbekistan."
+    },
+    "birth_details": {
+      "type": "date",
+      "label": "Date and place of birth",
+      "required": true,
+      "placeholder": "DD.MM.YYYY and passport place of birth",
+      "help": "The live English label displays Date of birth (DD.MM.YYYY). Use the official control and passport data."
+    },
+    "passport_details": {
+      "type": "passport",
+      "label": "Passport number and dates",
+      "required": true,
+      "placeholder": "Series and number, issue date and expiration date",
+      "help": "Copy all values from the passport that will be presented with the eVisa."
+    },
+    "residence_contact": {
+      "type": "text",
+      "label": "Permanent residence and phone",
+      "required": true,
+      "placeholder": "Full permanent address and reachable number",
+      "help": "The live application requests permanent residence and mobile or land-line contact details."
+    },
+    "work_and_stay": {
+      "type": "text",
+      "label": "Work or study and place of stay",
+      "required": true,
+      "placeholder": "Work or study position and preliminary Uzbekistan address",
+      "help": "Prepare the work or study details and preliminary hotel or residence in Uzbekistan requested by the portal."
+    },
+    "face_photo": {
+      "type": "text",
+      "label": "Face photograph",
+      "required": true,
+      "placeholder": "35 × 45 mm, 300 dpi, JPG or JPEG, under 1024 KB",
+      "help": "The portal publishes 35 × 45 mm and 300 dpi guidance, requires ICAO compliance, and returns an official JPG/JPEG under-1024-KB error."
+    },
+    "passport_scan": {
+      "type": "text",
+      "label": "Passport data-page copy",
+      "required": true,
+      "placeholder": "Readable JPG or JPEG, no more than 500 KB",
+      "help": "The portal guidance sets a 500 KB maximum for the readable electronic copy of the passport data page."
+    },
+    "email_activation": {
+      "type": "email",
+      "label": "Email and activation code",
+      "required": true,
+      "placeholder": "Reachable email controlled by the applicant",
+      "help": "The portal emails a digital activation code, then sends the processing result and approved PDF to the same address."
+    }
+  }
+}

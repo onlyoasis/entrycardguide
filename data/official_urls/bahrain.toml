@@ -1,0 +1,104 @@
+# Bahrain — official government URLs
+# Last verified: 2026-08-30
+
+[evisa]
+url = "https://www.evisa.gov.bh/"
+name = "Kingdom of Bahrain Electronic Visa Service"
+agency = "Ministry of Interior - Nationality, Passports & Residence Affairs (NPRA)"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The portal identifies itself as the only official Bahrain visa application website, offers application and eligibility services, and warns that payment or possession of a visa does not guarantee entry."
+
+[eligibility]
+url = "https://www.evisa.gov.bh/VISA/visaInput?A0S=a&nav=A0S"
+name = "Bahrain Visa Selection Criteria"
+agency = "Nationality, Passports & Residence Affairs (NPRA)"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The live public step asks about current GCC residence or visit-visa status, visit purpose, detailed purpose, description and passport nationality before displaying eligible routes."
+
+[online_countries]
+url = "https://www.evisa.gov.bh/list-of-online-visa-country.html"
+name = "Countries eligible to get a Bahrain visa online"
+agency = "Nationality, Passports & Residence Affairs (NPRA)"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The portal publishes the current online-eligible country list and warns that terms and conditions apply and that each country must be checked for exact eligibility."
+
+[arrival_countries]
+url = "https://www.evisa.gov.bh/list-of-onarrival-visa-country.html"
+name = "Countries eligible to get a Bahrain visa on arrival"
+agency = "Nationality, Passports & Residence Affairs (NPRA)"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. This is a separate current list for on-arrival eligibility. The portal says terms and conditions apply, so appearance on the list is not a statement that every arrival product is free."
+
+[faq]
+url = "https://www.evisa.gov.bh/VisaBhr7En.html"
+name = "Bahrain eVisa FAQ"
+agency = "Nationality, Passports & Residence Affairs (NPRA)"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The FAQ identifies NPRA, explains guarantor cases, tells travellers to use the eligibility page for validity and stay, gives an approximate 3-to-5-working-day process and explains printing and same-passport use."
+
+[two_week]
+url = "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1871"
+name = "Two-week single-entry Visit eVisa"
+agency = "Ministry of Interior - Nationality, Passports and Residence Affairs"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The government service directory describes a two-week single-entry product for nationals of 212 countries, a BD 9 visa fee plus BD 4 application fee, four supporting-document categories and a 3-to-5-working-day process."
+
+[three_month]
+url = "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1870"
+name = "Three-month multiple-entry Visit eVisa"
+agency = "Ministry of Interior - Nationality, Passports and Residence Affairs"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The government service directory describes a three-month multiple-entry product for nationals of 212 countries, BD 29 total, the same four supporting-document categories and a 3-to-5-working-day process."
+
+[one_year]
+url = "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1875"
+name = "One-year multiple-entry Visitor eVisa"
+agency = "Ministry of Interior - Nationality, Passports and Residence Affairs"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The government service directory describes a one-year multiple-entry product for nationals of 212 countries, BD 44, the same four supporting-document categories and a 3-to-5-working-day process."
+
+[five_year]
+url = "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1874"
+name = "Five-year multiple-entry Visit eVisa"
+agency = "Ministry of Interior - Nationality, Passports and Residence Affairs"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The government service directory describes a five-year multiple-entry product for nationals of 68 countries, BD 64, the same four supporting-document categories and a 3-to-5-working-day process."
+
+[meta]
+flag = "🇧🇭"
+name_en = "Bahrain"
+name_zh = "巴林"
+form_code = "eVisa"
+guide_slug = "evisa"
+form_key = "evisa"
+form_name_en = "Bahrain Visit eVisa"
+form_name_zh = "巴林访问电子签"
+since_en = "current NPRA online system"
+since_zh = "当前 NPRA 在线系统"
+fee_en = "Varies by visa type"
+fee_zh = "按签证类型而定"
+suffix = ".gov.bh"
+form_type = "evisa"
+
+field_count = 11
+sections = 3
+time_needed_en = "varies"
+time_needed_zh = "时间不定"
+output_en = "NPRA emails the decision. If approved, retrieve and print the eVisa through the official status service and enter with the same passport used in the application."
+output_zh = "NPRA 通过邮件通知决定。获批后从官方状态服务取回并打印电子签，入境时使用申请所用的同一本护照。"
+
+fields_intro_en = "The public eligibility screen exposes its first route questions, and the government service directory publishes product documents and fees. Later application regexes, character limits and most field errors were not publicly readable, so this guide makes no pattern or official-error claims."
+fields_intro_zh = "公开资格页可读到首轮路径问题，政府服务目录也公布了各产品材料和费用；后续申请的正则、字符上限和大部分字段报错无法公开读取，所以本页不写 pattern，也不声称有官方报错。"
+
+email_title_en = "Decision arrives by email"
+email_title_zh = "决定通过邮件发送"
+email_body_en = "NPRA says it advises applicants by email when a decision is made. Keep the reference number and use the same application email for any status help."
+email_body_zh = "NPRA 说明会通过邮件通知决定。保存申请编号，查询帮助时使用申请所填的同一邮箱。"
+printout_title_en = "Print the eVisa"
+printout_title_zh = "打印电子签"
+printout_body_en = "Use Check your Visa on the official portal to print the document. No visa is stamped in the passport before arrival."
+printout_body_zh = "在官网使用 Check your Visa 打印文件。抵达前不会在护照中贴签。"
+verification_title_en = "Use the same passport"
+verification_title_zh = "使用同一本护照"
+verification_body_en = "NPRA says entry must use the same passport used for the online application. Approval still does not guarantee admission at the border."
+verification_body_zh = "NPRA 要求入境使用在线申请时的同一本护照。获批仍不保证口岸一定准入。"

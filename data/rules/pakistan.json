@@ -1,0 +1,64 @@
+{
+  "country": "pakistan",
+  "officialUrl": "https://visa.nadra.gov.pk/",
+  "lastVerified": "2026-08-30",
+  "source": "Current DGI&P and Ministry of Foreign Affairs VPA notices, plus the official Pakistan Online Visa mobile guide, read 2026-08-30. The portal blocks some automated sessions and does not expose readable text-field regexes, character limits or stable validation error strings, so no pattern or maxLength is claimed and no local validator is mounted.",
+  "fields": {
+    "visa_route": {
+      "type": "text",
+      "label": "Visa route and passport eligibility",
+      "required": true,
+      "placeholder": "Visa-exempt, VPA eligible or regular visa",
+      "help": "Six GCC nationalities are exempt for tourism and business. DGI&P currently lists 120-country VPA eligibility; other travellers must use the applicable regular route."
+    },
+    "application_category": {
+      "type": "text",
+      "label": "Application category",
+      "required": true,
+      "placeholder": "Visa Prior to Arrival — Tourism",
+      "help": "Choose VPA and Tourism only when the passport qualifies. Business and Sikh pilgrimage are separate categories."
+    },
+    "passport_name": {
+      "type": "name",
+      "label": "Name from passport",
+      "required": true,
+      "placeholder": "Exactly as shown in the passport",
+      "help": "Use the identity printed in the passport that will be carried to Pakistan."
+    },
+    "passport_details": {
+      "type": "passport",
+      "label": "Passport details",
+      "required": true,
+      "placeholder": "Number and document dates from the passport",
+      "help": "Copy the details from the same passport image uploaded with the application."
+    },
+    "nationality": {
+      "type": "nationality",
+      "label": "Passport nationality",
+      "required": true,
+      "placeholder": "Nationality on the travel passport",
+      "help": "Route eligibility follows the passport nationality, not residence or departure country."
+    },
+    "passport_image": {
+      "type": "text",
+      "label": "Passport document image",
+      "required": true,
+      "placeholder": "Clear image requested by the official application",
+      "help": "Upload the requested passport document. No unverified public pixel or file-size limit is claimed here."
+    },
+    "live_photograph": {
+      "type": "text",
+      "label": "Live photograph",
+      "required": true,
+      "placeholder": "Photograph captured in the official flow",
+      "help": "The official mobile guide includes a live-photograph step. Follow the current on-screen capture instructions."
+    },
+    "email_review": {
+      "type": "email",
+      "label": "Account email and final review",
+      "required": true,
+      "placeholder": "Reachable email used for the application",
+      "help": "Review the category, passport and uploads before submission, then monitor the official account and email for the Visa Grant Notice."
+    }
+  }
+}

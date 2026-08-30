@@ -1,0 +1,96 @@
+{
+  "country": "bahrain",
+  "officialUrl": "https://www.evisa.gov.bh/VISA/visaInput?A0S=a&nav=A0S",
+  "lastVerified": "2026-08-30",
+  "source": "https://www.evisa.gov.bh/VISA/visaInput?A0S=a&nav=A0S, the NPRA FAQ, the online and on-arrival country lists, and Bahrain government service-directory pages psID 1870, 1871, 1874 and 1875, read 2026-08-30. These public pages identify the route questions, products, documents and fees below. Later application regexes, character limits and field error text were not publicly readable, so no pattern or length is claimed.",
+  "fields": {
+    "route_eligibility": {
+      "type": "nationality",
+      "label": "Online or on-arrival eligibility",
+      "required": true,
+      "placeholder": "Check both official lists",
+      "help": "NPRA publishes separate lists for online visas and visas on arrival. Terms and conditions apply to both.",
+      "errors": {"required": "Check the official route before applying"}
+    },
+    "gcc_status": {
+      "type": "text",
+      "label": "Current GCC residence permit or visit visa",
+      "required": true,
+      "placeholder": "Yes or no, then select the country",
+      "help": "The live eligibility screen asks whether the applicant holds a current GCC residence permit or visit visa and asks for the country when yes.",
+      "errors": {"required": "Answer the current GCC-status question"}
+    },
+    "visit_purpose": {
+      "type": "text",
+      "label": "Purpose of visit",
+      "required": true,
+      "placeholder": "Select the actual purpose",
+      "help": "The eligibility screen asks for purpose, detailed purpose and a description before showing available visas.",
+      "errors": {"required": "Purpose of visit is required"}
+    },
+    "detailed_purpose": {
+      "type": "text",
+      "label": "Detailed purpose and description",
+      "required": true,
+      "placeholder": "Describe the real visit",
+      "help": "Use details that match the accommodation, return ticket and any sponsor or family evidence for the route.",
+      "errors": {"required": "A detailed purpose is required"}
+    },
+    "nationality": {
+      "type": "nationality",
+      "label": "Nationality as shown in passport",
+      "required": true,
+      "placeholder": "Select the passport nationality",
+      "help": "The live eligibility page asks for nationality exactly as shown in the passport.",
+      "errors": {"required": "Passport nationality is required"}
+    },
+    "visa_product": {
+      "type": "text",
+      "label": "Visit eVisa product",
+      "required": true,
+      "placeholder": "Choose an eligible duration and entry count",
+      "help": "Current government services include two-week single-entry, three-month multiple-entry, one-year multiple-entry and five-year multiple-entry products, with different eligibility and fees.",
+      "errors": {"required": "Choose only a product shown as eligible"}
+    },
+    "passport_copy": {
+      "type": "text",
+      "label": "Passport copy",
+      "required": true,
+      "placeholder": "Clear copy of the valid passport",
+      "help": "The government service directory lists a passport copy among the required attachments for the visitor eVisa products covered here.",
+      "errors": {"required": "A passport copy is required"}
+    },
+    "hotel_reservation": {
+      "type": "text",
+      "label": "Hotel reservation",
+      "required": true,
+      "placeholder": "Reservation matching the visit",
+      "help": "The visitor eVisa service pages list a hotel reservation as a required attachment.",
+      "errors": {"required": "A hotel reservation is required"}
+    },
+    "return_ticket": {
+      "type": "flight",
+      "label": "Return ticket",
+      "required": true,
+      "placeholder": "Return booking for the visit",
+      "help": "The visitor eVisa service pages list a return ticket as a required attachment.",
+      "errors": {"required": "A return ticket is required"}
+    },
+    "bank_statement": {
+      "type": "text",
+      "label": "Three-month bank statement",
+      "required": true,
+      "placeholder": "English statement meeting the published means test",
+      "help": "The covered products ask for a 3-month statement in English showing regular income of BD 300-500 per month or funds equivalent to BD 150 for each day of the visit.",
+      "errors": {"required": "The published financial evidence is required"}
+    },
+    "email_and_reference": {
+      "type": "email",
+      "label": "Application email and reference number",
+      "required": true,
+      "placeholder": "An inbox you control",
+      "help": "NPRA emails the decision. If the reference number is lost, status help requires the applicant details and the same email used for the application.",
+      "errors": {"required": "An accessible email is required"}
+    }
+  }
+}

@@ -1,0 +1,136 @@
+# Myanmar Tourist eVisa — public FAQ and official user-guide guidance.
+# No [[errors]] array: no personal-form validation error strings were publicly readable.
+# Each key must exist in data/rules/myanmar.json.
+
+[[fields]]
+n = "01"
+key = "visa_type"
+section_en = "Section 1 · Route and eligibility"
+section_zh = "第 1 段 · 路径与资格"
+example = "Tourist eVisa for a holiday"
+mistake = "Business eVisa for tourism"
+mistake_why_en = "the two products have different eligibility, documents and stay periods"
+mistake_why_zh = "两种产品的国籍资格、材料和停留期都不同"
+copy_en = "Choose Tourist for a holiday. Business requires an invitation, requisition letter and company records. A religious visit must use an embassy or consulate route. The type cannot be changed after payment."
+copy_zh = "度假选 Tourist。商务签要邀请函、申请函和公司资料；宗教访问须走使领馆路径。付款后不能更改签证类型。"
+
+[[fields]]
+n = "02"
+key = "nationality_eligibility"
+section_en = "Section 1 · Route and eligibility"
+section_zh = "第 1 段 · 路径与资格"
+example = "Passport appears on the Tourist list"
+mistake = "Using the Business list"
+mistake_why_en = "the FAQ lists 100 Tourist nationalities but only 54 Business nationalities"
+mistake_why_zh = "FAQ 列出 100 个旅游电子签国籍，商务电子签只有 54 个"
+copy_en = "Check the current list for the exact visa type. Eligibility for one does not prove eligibility for the other."
+copy_zh = "按具体签证类型查当前名单。符合其中一种，不代表也符合另一种。"
+
+[[fields]]
+n = "03"
+key = "passport_validity"
+section_en = "Section 1 · Route and eligibility"
+section_zh = "第 1 段 · 路径与资格"
+example = "At least 6 months remaining"
+mistake = "Renewing after the eVisa is issued"
+mistake_why_en = "the issued eVisa is tied to the passport in the application"
+mistake_why_zh = "签发的电子签与申请时的护照绑定"
+copy_en = "The official guide says to verify at least 6 months remain. If the passport will be renewed, do it before applying."
+copy_zh = "官方手册要求确认护照至少还有 6 个月有效期。准备换发护照就先换，再申请。"
+
+[[fields]]
+n = "04"
+key = "full_name"
+section_en = "Section 2 · Identity and uploads"
+section_zh = "第 2 段 · 身份与上传"
+example = "Full name from the MRZ"
+mistake = "Local-script spelling"
+mistake_why_en = "the FAQ says this field accepts English characters only"
+mistake_why_zh = "FAQ 明确说该字段只接受英文字母"
+copy_en = "Copy the full name from the two machine-readable lines at the bottom of the bio page. Surname and given-name order is not important if the value matches."
+copy_zh = "从资料页底部两行机读区抄完整姓名。只要内容与护照一致，姓和名的先后顺序不影响。"
+
+[[fields]]
+n = "05"
+key = "passport_number"
+section_en = "Section 2 · Identity and uploads"
+section_zh = "第 2 段 · 身份与上传"
+example = "Number from the travel passport"
+mistake = "A second passport"
+mistake_why_en = "entry is allowed with the passport to which the eVisa was issued"
+mistake_why_zh = "入境时必须使用电子签对应的那本护照"
+copy_en = "Enter the number from the passport you will carry. Review it before payment; paid applications cannot be corrected."
+copy_zh = "填写本次会携带的护照号码。付款前核对；付款后不能修改申请。"
+
+[[fields]]
+n = "06"
+key = "passport_photo"
+section_en = "Section 2 · Identity and uploads"
+section_zh = "第 2 段 · 身份与上传"
+example = "Recent digital passport photo"
+mistake = "A cropped passport page"
+mistake_why_en = "the face photo and passport copy are separate uploads"
+mistake_why_zh = "人像照片和护照资料页是两个不同上传项"
+copy_en = "Upload a recent digital passport-sized photo. The guide states JPG or PDF and a 2 MB file limit."
+copy_zh = "上传近期电子证件照。手册写明格式为 JPG 或 PDF，文件最大 2 MB。"
+
+[[fields]]
+n = "07"
+key = "passport_copy"
+section_en = "Section 2 · Identity and uploads"
+section_zh = "第 2 段 · 身份与上传"
+example = "Readable passport bio page"
+mistake = "A photo over 2 MB"
+mistake_why_en = "the guide publishes a 2 MB upload cap"
+mistake_why_zh = "手册公开了 2 MB 上传上限"
+copy_en = "Upload a readable copy of the bio-data page. Use JPG or PDF no larger than 2 MB."
+copy_zh = "上传清晰可读的护照资料页。使用 JPG 或 PDF，文件不超过 2 MB。"
+
+[[fields]]
+n = "08"
+key = "hotel_booking"
+section_en = "Section 3 · Tourist trip"
+section_zh = "第 3 段 · 旅游行程"
+example = "Hotel booking for the stay"
+mistake = "A business invitation instead"
+mistake_why_en = "Tourist and Business applications have different document lists"
+mistake_why_zh = "旅游和商务申请的材料清单不同"
+copy_en = "The FAQ requires a hotel booking for a Tourist eVisa. Save a readable document rather than a link that needs another person's account."
+copy_zh = "FAQ 要求旅游电子签提供酒店订单。保存成可直接读取的文件，不要只留需要别人账号才能打开的链接。"
+
+[[fields]]
+n = "09"
+key = "return_ticket"
+section_en = "Section 3 · Tourist trip"
+section_zh = "第 3 段 · 旅游行程"
+example = "Return ticket from Myanmar"
+mistake = "Only the inbound booking"
+mistake_why_en = "the Tourist list asks for a return ticket"
+mistake_why_zh = "旅游签材料清单要求离开缅甸的返程票"
+copy_en = "Upload the ticket showing how you leave Myanmar. For Kawthaung land entry, the FAQ accepts boat and trip-plan evidence."
+copy_zh = "上传能说明如何离开缅甸的票据。若从高当陆路口岸入境，FAQ 接受船票和行程计划。"
+
+[[fields]]
+n = "10"
+key = "port_of_entry"
+section_en = "Section 3 · Tourist trip"
+section_zh = "第 3 段 · 旅游行程"
+example = "Yangon International Airport"
+mistake = "A border crossing outside the four-port list"
+mistake_why_en = "the current FAQ names only three airports and Kawthaung"
+mistake_why_zh = "当前 FAQ 只列出三个机场和高当口岸"
+copy_en = "Choose Yangon, Mandalay or Nay Pyi Taw International Airport, or Kawthaung land checkpoint. Do not assume a former or nearby crossing still accepts eVisa."
+copy_zh = "选择仰光、曼德勒或内比都国际机场，或高当陆路口岸。不要假设曾经开放或邻近的口岸仍接受电子签。"
+
+[[fields]]
+n = "11"
+key = "email_and_review"
+section_en = "Section 3 · Tourist trip"
+section_zh = "第 3 段 · 旅游行程"
+example = "Your own activated email"
+mistake = "Paying before the final review"
+mistake_why_en = "details and visa type cannot be changed after payment"
+mistake_why_zh = "付款后，资料和签证类型都不能修改"
+copy_en = "Use an inbox you control for activation, acknowledgment and the Approval Letter. Review the name, nationality, passport number, email and visa type before paying."
+copy_zh = "使用自己掌握的邮箱接收激活、受理和批准函。付款前核对姓名、国籍、护照号、邮箱和签证类型。"
+

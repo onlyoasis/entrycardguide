@@ -1,0 +1,62 @@
+# Qatar — official entry-policy and Hayya URLs
+# Last verified: 2026-08-30
+
+[hayya]
+url = "https://hayya.qa/en?category=WVE"
+name = "Hayya Tourist E-Visas"
+agency = "Qatar Tourism / Hayya"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The portal lists Tourist Visa A1, GCC Resident Visa A2, Visa with ETA A3, Companion of GCC Citizen A4 and Visa-Free for US Citizens F1. It asks nationality first and tells GCC nationals that no visa is required."
+
+[visa_guide]
+url = "https://visitqatar.com/intl-en/plan-your-trip/visas"
+name = "Qatar visa-free entry and Hayya e-Visa guide"
+agency = "Qatar Tourism"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The live nationality checker separates visa-free entry, paid visa on arrival and Hayya routes. It says citizens of more than 102 countries are eligible for free entry, GCC citizens need no visa, and tourist visas can be applied for on Hayya for QAR 100."
+
+[government_confirmation]
+url = "https://www.gco.gov.qa/en/media-centre/major-events/fifa-qatar-2022/hayya-card/"
+name = "Hayya after the FIFA World Cup"
+agency = "Government Communications Office of the State of Qatar"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The Government Communications Office states that Qatar Tourism relaunched Hayya after the World Cup, that it is the central hub for tourist and event visas, and that visitors who require an entry visa can apply on hayya.qa or in the app."
+
+[meta]
+flag = "🇶🇦"
+name_en = "Qatar"
+name_zh = "卡塔尔"
+form_code = "Hayya e-Visa"
+guide_slug = "hayya-evisa"
+form_key = "hayya"
+form_name_en = "Hayya Tourist E-Visa"
+form_name_zh = "Hayya 旅游电子签"
+since_en = "post-World Cup visitor platform"
+since_zh = "世界杯后的访客平台"
+fee_en = "QAR 100 tourist visa"
+fee_zh = "旅游签 100 卡塔尔里亚尔"
+suffix = ".hayya.qa"
+form_type = "evisa"
+
+field_count = 8
+sections = 3
+time_needed_en = "varies"
+time_needed_zh = "时间不定"
+output_en = "Manage the approved Hayya e-Visa in the Hayya website or app and travel with the passport used for the route check and application."
+output_zh = "在 Hayya 网站或 App 中管理获批电子签，并携带资格查询和申请时使用的同一本护照出行。"
+
+fields_intro_en = "The public Qatar Tourism checker and Hayya category page expose the route questions, passport-validity rule and accommodation prompt. The account application does not expose later regexes, character limits or error text publicly, so this guide makes no pattern or official-error claims."
+fields_intro_zh = "卡塔尔旅游局公开查询器和 Hayya 类别页可读到路径问题、护照有效期和住宿要求；账户内申请没有公开后续正则、字符上限或报错原文，所以本页不写 pattern，也不声称有官方报错。"
+
+email_title_en = "Track the result in Hayya"
+email_title_zh = "在 Hayya 中跟踪结果"
+email_body_en = "The platform lets applicants manage the e-Visa through the website and app. Do not treat an account submission as an approved entry visa."
+email_body_zh = "平台允许在网站和 App 中管理电子签。创建账户或递交申请不等于已经获批。"
+printout_title_en = "Keep the approved e-Visa available"
+printout_title_zh = "保存获批电子签"
+printout_body_en = "Keep the approved Hayya e-Visa available on the trip together with the application passport."
+printout_body_zh = "出行时把获批 Hayya 电子签和申请护照一起保存好。"
+verification_title_en = "Follow the exact route result"
+verification_title_zh = "按本人查询结果出行"
+verification_body_en = "Visa-free, arrival and Hayya rules depend on passport and residence or visa status. Recheck the live Qatar Tourism result before departure."
+verification_body_zh = "免签、抵达办理和 Hayya 路径取决于护照及居留或签证身份。出发前重新核对卡塔尔旅游局实时结果。"

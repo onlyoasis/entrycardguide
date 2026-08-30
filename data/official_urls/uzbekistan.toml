@@ -1,0 +1,62 @@
+# Uzbekistan — official government visa URLs
+# Last verified: 2026-08-30
+
+[evisa]
+url = "https://e-visa.gov.uz/application"
+name = "Uzbekistan Official Electronic Visa Portal"
+agency = "Ministry of Foreign Affairs of the Republic of Uzbekistan"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30, including the current application shell, JavaScript and English portal guidance. The first step asks for citizenship, travel-document type, visa entry type and purpose. Later steps collect passport identity, dates, residence, work, contact and stay details, plus a face photo, passport copy and email activation."
+
+[visa_policy]
+url = "https://gov.uz/en/mfa/pages/o-zbekiston-respublikasi-vizasi"
+name = "Visa to the Republic of Uzbekistan"
+agency = "Ministry of Foreign Affairs of the Republic of Uzbekistan"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The current government page was last updated 2026-06-01. It publishes the visa-free regimes and their different durations and conditions, the current 56-entry eVisa eligibility appendix, and USD 20 / 35 / 50 single, double and multiple eVisa fees for stays up to 30 days."
+
+[portal_guidance]
+url = "https://e-visa.gov.uz/what-you-need-to-know"
+name = "Uzbekistan eVisa Portal English Guidance"
+agency = "Ministry of Foreign Affairs of the Republic of Uzbekistan"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30 together with the page's live English localization data at https://e-visa.gov.uz/assets/localization/en.json. The guidance says to apply at least 3 working days before arrival; consideration takes 2 working days excluding the filing day; the eVisa is valid for entry within 90 days and permits a stay up to 30 days. It also publishes the English field labels, photo guidance, 500 KB passport-copy limit, email activation and PDF delivery."
+
+[meta]
+flag = "🇺🇿"
+name_en = "Uzbekistan"
+name_zh = "乌兹别克斯坦"
+form_code = "eVisa"
+guide_slug = "evisa"
+form_key = "evisa"
+form_name_en = "Uzbekistan eVisa"
+form_name_zh = "乌兹别克斯坦电子签证"
+since_en = "official eVisa portal"
+since_zh = "官方电子签证门户"
+fee_en = "USD $20 single / $35 double / $50 multiple"
+fee_zh = "单次 20 美元 / 两次 35 美元 / 多次 50 美元"
+suffix = ".gov.uz"
+form_type = "evisa"
+
+field_count = 13
+sections = 4
+time_needed_en = "varies"
+time_needed_zh = "因申请人与图片准备情况而异"
+output_en = "The approved eVisa is sent to the applicant's email as a PDF. Carry it in printed or electronic form with the same passport."
+output_zh = "获批电子签以 PDF 发到申请人邮箱。打印或电子版均应与申请时使用的同一本护照一起携带。"
+
+fields_intro_en = "The live portal publishes field labels, a DD.MM.YYYY birth-date label, photo and passport-copy constraints, and official error text for image format and size. It does not expose safe public regexes or character limits for passport names, numbers, addresses or contact fields. The executable constraints are documented below, but no incomplete local validator is mounted."
+fields_intro_zh = "实时门户公开了字段名称、DD.MM.YYYY 出生日期标签、照片与护照副本限制，以及图片格式和大小的官方报错；但没有公开适用于护照姓名、号码、地址和联系方式的可靠正则或字符上限。下文记录可执行限制，但不挂不完整的本地校验器。"
+
+email_title_en = "Activate and receive the PDF by email"
+email_title_zh = "用邮箱激活并接收 PDF"
+email_body_en = "Enter the digital activation code sent to the applicant's email. The final decision and approved PDF are delivered to that address."
+email_body_zh = "输入发到申请人邮箱的数字激活码。最终决定和获批 PDF 都发送到该邮箱。"
+printout_title_en = "Carry the eVisa with the same passport"
+printout_title_zh = "电子签与同一本护照同行"
+printout_body_en = "The portal allows the eVisa in printed or electronic form. It is valid only with the travel document used in the application."
+printout_body_zh = "门户允许出示打印版或电子版电子签，但必须与申请时使用的旅行证件配套。"
+verification_title_en = "Check the 90-day entry window"
+verification_title_zh = "核对 90 天入境窗口"
+verification_body_en = "The eVisa permits up to 30 days of stay and is valid for entry within 90 days from registration. The granted PDF controls the trip."
+verification_body_zh = "电子签允许最多停留 30 天，并须在登记日起 90 天内用于入境。具体出行条件以获批 PDF 为准。"

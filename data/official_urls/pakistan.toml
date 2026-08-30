@@ -1,0 +1,76 @@
+# Pakistan — official government visa URLs
+# Last verified: 2026-08-30
+
+[vpa]
+url = "https://visa.nadra.gov.pk/"
+name = "Pakistan Online Visa System — Visa Prior to Arrival"
+agency = "National Database and Registration Authority for the Ministry of Interior, Government of Pakistan"
+last_verified = "2026-08-30"
+notes = "Read through the current official DGI&P and Ministry of Foreign Affairs pages on 2026-08-30. Open the government portal and select Visa Prior to Arrival for Tourism only after confirming passport eligibility. DGI&P currently says citizens of 120 countries may use VPA for tourism, business or Sikh pilgrimage. The portal blocks some automated requests with HTTP 403, so no unverified live-form regex or character limit is claimed."
+
+[eligibility]
+url = "https://dgip.gov.pk/home/"
+name = "Pakistan Online Visa Eligibility Notice"
+agency = "Directorate General of Immigration & Passports, Ministry of Interior, Government of Pakistan"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. The current DGI&P home page says the online system is open to 192 countries, VPA is available to citizens of 120 countries for tourism, business or Sikh pilgrimage, and six GCC countries are visa-exempt for these categories. It also says regular visa fees are reciprocal."
+
+[vpa_information]
+url = "https://mofa.gov.pk/news/visa-prior-to-arrival-vpa-facility?mission=tunis"
+name = "Visa Prior to Arrival Facility Notice"
+agency = "Ministry of Foreign Affairs, Government of Pakistan"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. This embassy notice is addressed to Tunisian and Maltese nationals. It describes their VPA for tourism, business and Sikh pilgrimage as free and processed within 24 hours, then directs applicants to visa.nadra.gov.pk. The 24-hour statement is not treated as a universal promise for all 120 eligible passport countries."
+
+[gcc_exemption]
+url = "https://mofa.gov.pk/press-releases/gcc-citizens-now-enjoy-visa-free-travel-to-pakistan-for-business-and-tourism?mission=Kuwait%2520Post"
+name = "GCC Citizens Visa Exemption"
+agency = "Ministry of Foreign Affairs, Government of Pakistan"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. Citizens of Saudi Arabia, Kuwait, the United Arab Emirates, Oman, Qatar and Bahrain may travel for tourism or business without an ETA or visa and may stay up to 90 days."
+
+[regular_visa_fee]
+url = "https://dgip.gov.pk/visa/fee.php"
+name = "Pakistan Regular Visa Fee Schedule"
+agency = "Directorate General of Immigration & Passports, Ministry of Interior, Government of Pakistan"
+last_verified = "2026-08-30"
+notes = "Read 2026-08-30. Regular online visa fees are charged on a reciprocal basis and differ by passport and visa category. This is a separate route from the free VPA product."
+
+[meta]
+flag = "🇵🇰"
+name_en = "Pakistan"
+name_zh = "巴基斯坦"
+form_code = "VPA"
+guide_slug = "visa-prior-to-arrival"
+form_key = "vpa"
+form_name_en = "Pakistan Visa Prior to Arrival"
+form_name_zh = "巴基斯坦入境前签证申请"
+since_en = "current Pakistan Online Visa System"
+since_zh = "现行巴基斯坦在线签证系统"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".gov.pk"
+form_type = "evisa"
+
+field_count = 8
+sections = 3
+time_needed_en = "varies"
+time_needed_zh = "因申请人和材料而异"
+output_en = "Visa Grant Notice. Read the issued notice for its entry and stay conditions before travel."
+output_zh = "Visa Grant Notice（签证批准通知）。出发前按获批通知核对入境次数和停留条件。"
+
+fields_intro_en = "The official portal currently blocks some automated sessions. Government notices and the official mobile guide identify the route, category, passport details, photograph, documents and final submission, but do not expose public text-field regexes, character limits or stable validation error strings. No invented pattern is used and no local validator is mounted."
+fields_intro_zh = "官方门户目前会拦截部分自动访问。政府公告和官方移动端手册能确认路径、类别、护照资料、照片、文件和最终提交步骤，但没有公开可读的文本字段正则、字符上限或稳定报错原文。本页不编造 `pattern`，也不挂本地校验器。"
+
+email_title_en = "Save the Visa Grant Notice"
+email_title_zh = "保存 Visa Grant Notice"
+email_body_en = "Download the issued notice from the official account or email. The notice, not the application dashboard alone, states the permission granted."
+email_body_zh = "从官方账户或邮件下载获批通知。实际获准条件以通知正文为准，不以申请面板状态代替。"
+printout_title_en = "Carry the issued notice"
+printout_title_zh = "随身携带获批通知"
+printout_body_en = "Keep an offline copy for airline and border checks. Also carry the passport used in the application."
+printout_body_zh = "保存离线副本供航司和边检查验，并携带申请时使用的同一本护照。"
+verification_title_en = "Read the granted conditions"
+verification_title_zh = "核对获批条件"
+verification_body_en = "Check the issued notice for validity, entries and permitted stay. Do not infer a stay length from a general eligibility page."
+verification_body_zh = "在获批通知中核对有效期、入境次数和允许停留期，不要从资格页面推算停留天数。"

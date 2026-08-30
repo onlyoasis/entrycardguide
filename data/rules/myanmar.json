@@ -1,0 +1,97 @@
+{
+  "country": "myanmar",
+  "officialUrl": "https://evisa.moip.gov.mm/home",
+  "lastVerified": "2026-08-30",
+  "source": "https://evisa.moip.gov.mm/common-items/faq and https://evisa.moip.gov.mm/assets/dist/img/guide/userGuide.pdf, read 2026-08-30. The official FAQ and 25-page guide publish the Tourist versus Business split, eligibility counts, required supporting documents, the MRZ name instruction, at least 6 months of passport validity, JPG/PDF uploads capped at 2 MB, payment and print steps, and the four entry points. The personal-information form requires an activated account and no public text-field regexes, character limits or validation error strings were readable, so no pattern key is used and no local validator is mounted.",
+  "fields": {
+    "visa_type": {
+      "type": "text",
+      "label": "Tourist or Business eVisa",
+      "required": true,
+      "placeholder": "Tourist eVisa for a holiday",
+      "help": "The portal has separate Tourist and Business routes. The type cannot be changed after payment, and a religious visit needs a different visa from an embassy or consulate.",
+      "errors": {"required": "Choose the correct visa type before paying"}
+    },
+    "nationality_eligibility": {
+      "type": "nationality",
+      "label": "eVisa nationality eligibility",
+      "required": true,
+      "placeholder": "Check the current Tourist list",
+      "help": "The FAQ says 100 nationalities qualify for Tourist eVisa and 54 for Business eVisa. Check the list for the exact route.",
+      "errors": {"required": "Check nationality eligibility"}
+    },
+    "passport_validity": {
+      "type": "text",
+      "label": "Passport validity",
+      "required": true,
+      "placeholder": "At least 6 months remaining",
+      "help": "The official guide says to verify that at least 6 months remain on the passport.",
+      "errors": {"required": "Confirm at least 6 months of passport validity"}
+    },
+    "full_name": {
+      "type": "text",
+      "label": "Full name",
+      "required": true,
+      "placeholder": "English characters from the MRZ",
+      "help": "The FAQ says the field accepts English characters only. Copy the full name from the machine-readable zone at the bottom of the passport bio page; surname and given-name order is not important if the value matches.",
+      "errors": {"required": "Full name is required"}
+    },
+    "passport_number": {
+      "type": "passport",
+      "label": "Passport number",
+      "required": true,
+      "placeholder": "Use the passport you will carry",
+      "help": "The traveller must enter with the passport to which the eVisa was issued. Details cannot be corrected after payment.",
+      "errors": {"required": "Passport number is required"}
+    },
+    "passport_photo": {
+      "type": "text",
+      "label": "Recent passport-sized photograph",
+      "required": true,
+      "placeholder": "Recent digital photo",
+      "help": "The FAQ requires a recent digital passport-sized photograph. The guide says uploads accept JPG or PDF up to 2 MB.",
+      "errors": {"required": "A recent passport photograph is required"}
+    },
+    "passport_copy": {
+      "type": "text",
+      "label": "Passport bio-page copy",
+      "required": true,
+      "placeholder": "Readable scan of the bio page",
+      "help": "The FAQ requires a scanned copy of the passport bio-data page. The guide says uploaded files accept JPG or PDF up to 2 MB.",
+      "errors": {"required": "A passport bio-page copy is required"}
+    },
+    "hotel_booking": {
+      "type": "text",
+      "label": "Hotel booking",
+      "required": true,
+      "placeholder": "Tourist eVisa supporting document",
+      "help": "The FAQ lists a hotel booking for a Tourist eVisa. Business eVisa uses company documents instead.",
+      "errors": {"required": "A hotel booking is required for Tourist eVisa"}
+    },
+    "return_ticket": {
+      "type": "text",
+      "label": "Return ticket or Kawthaung trip evidence",
+      "required": true,
+      "placeholder": "Return ticket from Myanmar",
+      "help": "Tourist applications require a return ticket. For entry at Kawthaung, the FAQ accepts boat and trip-plan evidence instead.",
+      "errors": {"required": "Return travel evidence is required"}
+    },
+    "port_of_entry": {
+      "type": "text",
+      "label": "eVisa port of entry",
+      "required": true,
+      "placeholder": "Yangon, Mandalay, Nay Pyi Taw or Kawthaung",
+      "help": "The current FAQ lists three international airports and Kawthaung land checkpoint. Other border crossings are not listed for eVisa entry.",
+      "errors": {"required": "Choose an eVisa port of entry"}
+    },
+    "email_and_review": {
+      "type": "email",
+      "label": "Registered email and final review",
+      "required": true,
+      "placeholder": "An inbox you control",
+      "help": "Account activation, acknowledgment and the Approval Letter use the registered email. Review every field before payment because paid applications cannot be modified.",
+      "errors": {"required": "A registered email is required", "invalidFormat": "Use a working email address"}
+    }
+  }
+}
+

@@ -36,7 +36,15 @@
         { "value": "curacao", "label": "Curaçao", "next": "curacao_result" },
         { "value": "colombia", "label": "Colombia", "next": "colombia_result" },
         { "value": "laos", "label": "Laos", "next": "laos_eligibility" },
-        { "value": "azerbaijan", "label": "Azerbaijan", "next": "azerbaijan_passport" }
+        { "value": "azerbaijan", "label": "Azerbaijan", "next": "azerbaijan_passport" },
+        { "value": "myanmar", "label": "Myanmar", "next": "myanmar_eligibility" },
+        { "value": "nepal", "label": "Nepal", "next": "nepal_route" },
+        { "value": "pakistan", "label": "Pakistan", "next": "pakistan_route" },
+        { "value": "uzbekistan", "label": "Uzbekistan", "next": "uzbekistan_route" },
+        { "value": "georgia", "label": "Georgia", "next": "georgia_passport" },
+        { "value": "oman", "label": "Oman", "next": "oman_eligibility" },
+        { "value": "qatar", "label": "Qatar", "next": "qatar_eligibility" },
+        { "value": "bahrain", "label": "Bahrain", "next": "bahrain_route" }
       ]
     },
 
@@ -1225,6 +1233,635 @@
       "summary": "The ASAN online route is not available for this passport.",
       "forms": [],
       "note": "Do not force an online application. Follow the Ministry of Foreign Affairs route for an Azerbaijani diplomatic mission or consulate."
+    },
+
+    "myanmar_eligibility": {
+      "type": "question",
+      "label": "Does your passport appear on the current Tourist eVisa eligibility list?",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "next": "myanmar_evisa_result"
+        },
+        {
+          "value": "no_unsure",
+          "label": "No or unsure",
+          "next": "myanmar_not_eligible"
+        }
+      ]
+    },
+
+    "myanmar_evisa_result": {
+      "type": "result",
+      "country": "myanmar",
+      "summary": "Apply for the Myanmar Tourist eVisa before travel.",
+      "forms": [
+        {
+          "name": "Myanmar Tourist eVisa",
+          "fee": "USD $50 in the official guide; confirm Step 5",
+          "url": "https://evisa.moip.gov.mm/home",
+          "guide": "/myanmar/tourist-evisa/",
+          "agency": "Ministry of Immigration and Population",
+          "deadline": "Allow at least 3 working days"
+        }
+      ],
+      "note": "Single entry, 28-day stay, 90-day Approval Letter and 4 current entry points. Print one copy after approval."
+    },
+
+    "myanmar_not_eligible": {
+      "type": "result",
+      "country": "myanmar",
+      "summary": "Do not pay for the Tourist eVisa until the official list confirms eligibility.",
+      "forms": [],
+      "note": "The Tourist and Business lists differ. Contact a Myanmar embassy or consulate for the correct visa route if the passport is not eligible."
+    },
+
+    "nepal_route": {
+      "type": "question",
+      "label": "Which passport or visa-on-arrival situation applies?",
+      "options": [
+        {
+          "value": "indian",
+          "label": "Indian citizen",
+          "next": "nepal_visa_exempt"
+        },
+        {
+          "value": "chinese_gratis",
+          "label": "Chinese passport or another confirmed gratis category",
+          "next": "nepal_gratis_result"
+        },
+        {
+          "value": "voa_eligible",
+          "label": "Visa-on-arrival eligible passport",
+          "next": "nepal_voa_result"
+        },
+        {
+          "value": "advance_required",
+          "label": "Not eligible for visa on arrival or unsure",
+          "next": "nepal_advance_result"
+        }
+      ]
+    },
+
+    "nepal_visa_exempt": {
+      "type": "result",
+      "country": "nepal",
+      "summary": "Indian citizens do not need a Nepal visa.",
+      "forms": [],
+      "note": "No Tourist Visa form or fee is required. Check the current government entry-document rules before travel."
+    },
+
+    "nepal_gratis_result": {
+      "type": "result",
+      "country": "nepal",
+      "summary": "Complete the applicable Tourist Visa process, but the visa fee may be waived.",
+      "forms": [
+        {
+          "name": "Nepal Online Tourist Visa Form",
+          "fee": "FREE for confirmed gratis categories",
+          "url": "https://nepaliport.immigration.gov.np/on-arrival/tourist-visa",
+          "guide": "/nepal/visa-on-arrival/",
+          "agency": "Department of Immigration, Government of Nepal",
+          "deadline": "Submit within 15 days before presenting the barcode receipt"
+        }
+      ],
+      "note": "Chinese nationals are a current gratis Tourist Visa category. Other free categories have conditions; confirm the exact category before travel."
+    },
+
+    "nepal_voa_result": {
+      "type": "result",
+      "country": "nepal",
+      "summary": "Pre-fill the Tourist Visa form, then obtain the visa at the port.",
+      "forms": [
+        {
+          "name": "Nepal Online Tourist Visa Form",
+          "fee": "USD $30 / $50 / $125",
+          "url": "https://nepaliport.immigration.gov.np/on-arrival/tourist-visa",
+          "guide": "/nepal/visa-on-arrival/",
+          "agency": "Department of Immigration, Government of Nepal",
+          "deadline": "Barcode receipt remains valid for 15 days"
+        }
+      ],
+      "note": "The online receipt is not the visa. Present it with payment proof and the passport to the immigration officer."
+    },
+
+    "nepal_advance_result": {
+      "type": "result",
+      "country": "nepal",
+      "summary": "Use the advance ETA or Nepalese-mission route instead of visa on arrival.",
+      "forms": [
+        {
+          "name": "NepaliPort ETA / Mission Visa Services",
+          "fee": "Varies by route",
+          "url": "https://nepaliport.immigration.gov.np/",
+          "guide": "/nepal/visa-on-arrival/",
+          "agency": "Department of Immigration, Government of Nepal",
+          "deadline": "Arrange before travel"
+        }
+      ],
+      "note": "NepaliPort lists visa on arrival, ETA and mission visa as separate services. Do not submit the on-arrival form when the passport requires advance approval."
+    },
+
+    "pakistan_route": {
+      "type": "question",
+      "label": "Which Pakistan tourist-entry route applies to your passport?",
+      "options": [
+        {
+          "value": "gcc_exempt",
+          "label": "Citizen of Saudi Arabia, Kuwait, UAE, Oman, Qatar or Bahrain",
+          "next": "pakistan_visa_exempt"
+        },
+        {
+          "value": "vpa_eligible",
+          "label": "Passport is on the current Visa Prior to Arrival list",
+          "next": "pakistan_vpa_result"
+        },
+        {
+          "value": "other_unsure",
+          "label": "Other passport or unsure",
+          "next": "pakistan_regular_result"
+        }
+      ]
+    },
+
+    "pakistan_visa_exempt": {
+      "type": "result",
+      "country": "pakistan",
+      "summary": "The current GCC exemption requires no ETA or visa for tourism or business.",
+      "forms": [],
+      "note": "This route currently covers citizens of Saudi Arabia, Kuwait, the United Arab Emirates, Oman, Qatar and Bahrain, with stays up to 90 days. Recheck the official notice before travel."
+    },
+
+    "pakistan_vpa_result": {
+      "type": "result",
+      "country": "pakistan",
+      "summary": "Use the free Visa Prior to Arrival tourism application.",
+      "forms": [
+        {
+          "name": "Pakistan Visa Prior to Arrival",
+          "fee": "FREE",
+          "url": "https://visa.nadra.gov.pk/",
+          "guide": "/pakistan/visa-prior-to-arrival/",
+          "agency": "Directorate General of Immigration & Passports / NADRA",
+          "deadline": "Obtain the Visa Grant Notice before travel"
+        }
+      ],
+      "note": "Download the issued Visa Grant Notice. Read that notice for validity, entries and permitted stay; do not infer a universal stay from the general eligibility page."
+    },
+
+    "pakistan_regular_result": {
+      "type": "result",
+      "country": "pakistan",
+      "summary": "Check the regular online visa or mission route before paying.",
+      "forms": [
+        {
+          "name": "Pakistan Online Visa System",
+          "fee": "Varies by passport and category",
+          "url": "https://visa.nadra.gov.pk/",
+          "guide": "/pakistan/visa-prior-to-arrival/",
+          "agency": "Directorate General of Immigration & Passports / NADRA",
+          "deadline": "Arrange before travel"
+        }
+      ],
+      "note": "Regular visa fees are reciprocal. The free VPA is a separate product and is available only to currently eligible passports."
+    },
+
+    "uzbekistan_route": {
+      "type": "question",
+      "label": "Have you checked the current Uzbekistan visa-free list for this passport and trip?",
+      "options": [
+        {
+          "value": "confirmed_free",
+          "label": "Yes, this trip meets a current visa-free rule",
+          "next": "uzbekistan_visa_free_result"
+        },
+        {
+          "value": "confirmed_not_free",
+          "label": "Yes, a visa is required",
+          "next": "uzbekistan_evisa_eligibility"
+        },
+        {
+          "value": "not_checked",
+          "label": "No or unsure",
+          "next": "uzbekistan_check_first"
+        }
+      ]
+    },
+
+    "uzbekistan_visa_free_result": {
+      "type": "result",
+      "country": "uzbekistan",
+      "summary": "No eVisa form is required for a trip that meets the current visa-free rule.",
+      "forms": [],
+      "note": "No form and no eVisa fee. Follow the exact duration, passport and ticket conditions in the current MFA entry for that nationality."
+    },
+
+    "uzbekistan_check_first": {
+      "type": "result",
+      "country": "uzbekistan",
+      "summary": "Check the current MFA visa-free list before opening a paid eVisa application.",
+      "forms": [],
+      "note": "Visa-free durations and conditions differ. Do not pay until the passport and trip have been checked against the current government page."
+    },
+
+    "uzbekistan_evisa_eligibility": {
+      "type": "question",
+      "label": "Does the passport appear in the current eVisa eligibility Appendix 1?",
+      "options": [
+        {
+          "value": "eligible",
+          "label": "Yes",
+          "next": "uzbekistan_evisa_result"
+        },
+        {
+          "value": "not_eligible",
+          "label": "No or unsure",
+          "next": "uzbekistan_mission_result"
+        }
+      ]
+    },
+
+    "uzbekistan_evisa_result": {
+      "type": "result",
+      "country": "uzbekistan",
+      "summary": "Apply through the official Uzbekistan eVisa portal.",
+      "forms": [
+        {
+          "name": "Uzbekistan eVisa",
+          "fee": "USD $20 single / $35 double / $50 multiple",
+          "url": "https://e-visa.gov.uz/application",
+          "guide": "/uzbekistan/evisa/",
+          "agency": "Ministry of Foreign Affairs of the Republic of Uzbekistan",
+          "deadline": "Apply at least 3 working days before arrival"
+        }
+      ],
+      "note": "Consideration takes 2 working days excluding the filing day. The eVisa allows up to 30 days of stay and is valid for entry within 90 days from registration."
+    },
+
+    "uzbekistan_mission_result": {
+      "type": "result",
+      "country": "uzbekistan",
+      "summary": "Do not use the eVisa form until the current Appendix 1 confirms eligibility.",
+      "forms": [],
+      "note": "The portal directs passports outside the simplified eVisa list to the appropriate Uzbekistan foreign mission."
+    },
+
+    "georgia_passport": {
+      "type": "question",
+      "label": "What does Georgia's current visa-free list say about your passport?",
+      "options": [
+        {
+          "value": "visa_free",
+          "label": "My passport is on the one-full-year visa-free list",
+          "next": "georgia_none_result"
+        },
+        {
+          "value": "evisa_eligible",
+          "label": "I need a visa and the official portal accepts my passport",
+          "next": "georgia_evisa_result"
+        },
+        {
+          "value": "not_sure",
+          "label": "I am not sure",
+          "next": "georgia_check_result"
+        }
+      ]
+    },
+
+    "georgia_none_result": {
+      "type": "result",
+      "country": "georgia",
+      "summary": "You do not need a Georgia e-Visa for this visa-free trip.",
+      "forms": [],
+      "note": "Citizens of countries in the current government annex may enter and stay without a visa for one full year. No form is required. Anyone charging for a Georgia e-Visa on this route is selling an application you do not need."
+    },
+
+    "georgia_evisa_result": {
+      "type": "result",
+      "country": "georgia",
+      "summary": "Use the official Georgia e-Visa process.",
+      "forms": [
+        {
+          "name": "Georgia e-Visa",
+          "fee": "USD 20 + 2% service fee + USD 15 DuVerify",
+          "url": "https://www.evisa.gov.ge/GeoVisa/en/VisaApp",
+          "guide": "/georgia/evisa/",
+          "agency": "Ministry of Foreign Affairs of Georgia",
+          "deadline": "Allow at least 5 working days; complete DuVerify within 24 hours"
+        }
+      ],
+      "note": "The current process has two mandatory paid steps. Visa validity and permitted stay depend on the selected passport."
+    },
+
+    "georgia_check_result": {
+      "type": "result",
+      "country": "georgia",
+      "summary": "Check the current government list before paying.",
+      "forms": [],
+      "note": "Find the passport country in the current visa-free ordinance, then use the official e-Visa portal only if a visa is required and the portal accepts that travel document."
+    },
+
+    "oman_eligibility": {
+      "type": "question",
+      "label": "Which Oman entry route fits your passport and trip?",
+      "options": [
+        {
+          "value": "gcc_citizen",
+          "label": "GCC citizen",
+          "next": "oman_none_result"
+        },
+        {
+          "value": "fourteen_day_exempt",
+          "label": "Eligible for the current 14-day visa exemption",
+          "next": "oman_exempt_result"
+        },
+        {
+          "value": "evisa",
+          "label": "The ROP wizard offers me an eVisa",
+          "next": "oman_evisa_result"
+        },
+        {
+          "value": "not_sure",
+          "label": "I am not sure",
+          "next": "oman_check_result"
+        }
+      ]
+    },
+
+    "oman_none_result": {
+      "type": "result",
+      "country": "oman",
+      "summary": "GCC citizens do not need an Oman visa.",
+      "forms": [],
+      "note": "Citizens of Bahrain, Kuwait, Qatar, Saudi Arabia and the United Arab Emirates enter Oman without a visa. No form is required."
+    },
+
+    "oman_exempt_result": {
+      "type": "result",
+      "country": "oman",
+      "summary": "You do not need an eVisa for this 14-day exempt trip.",
+      "forms": [],
+      "note": "Read every current condition, including the second-group qualification rules. The 14-day exemption cannot be extended or converted. No eVisa form is required for a qualifying trip."
+    },
+
+    "oman_evisa_result": {
+      "type": "result",
+      "country": "oman",
+      "summary": "Apply for the visa subtype shown by the Royal Oman Police wizard.",
+      "forms": [
+        {
+          "name": "Oman eVisa",
+          "fee": "Varies by visa type",
+          "url": "https://evisa.rop.gov.om/visa-eligibility?tabId=eiwscr",
+          "guide": "/oman/evisa/",
+          "agency": "Royal Oman Police",
+          "deadline": "Apply at least 4 days before arrival; processing can vary"
+        }
+      ],
+      "note": "Use the fee, stay duration and conditions shown for the exact subtype in your eligibility result."
+    },
+
+    "oman_check_result": {
+      "type": "result",
+      "country": "oman",
+      "summary": "Check the current exemption lists and ROP wizard.",
+      "forms": [],
+      "note": "Start with the Foreign Ministry's current two-group exemption page. If it does not cover the trip, enter the real passport and GCC-residence status in the Royal Oman Police wizard."
+    },
+
+    "qatar_eligibility": {
+      "type": "question",
+      "label": "What does Qatar's live visa checker show for your passport and status?",
+      "options": [
+        {
+          "value": "gcc_citizen",
+          "label": "I am a GCC citizen",
+          "next": "qatar_none_result"
+        },
+        {
+          "value": "visa_free",
+          "label": "Enter visa-free",
+          "next": "qatar_free_result"
+        },
+        {
+          "value": "a1",
+          "label": "Apply for Hayya Tourist Visa A1",
+          "next": "qatar_a1_result"
+        },
+        {
+          "value": "other_hayya",
+          "label": "Apply for another offered Hayya category",
+          "next": "qatar_hayya_result"
+        },
+        {
+          "value": "not_sure",
+          "label": "I am not sure",
+          "next": "qatar_check_result"
+        }
+      ]
+    },
+
+    "qatar_none_result": {
+      "type": "result",
+      "country": "qatar",
+      "summary": "GCC citizens do not need a Qatar visa.",
+      "forms": [],
+      "note": "Citizens of Bahrain, Kuwait, Oman, Saudi Arabia and the United Arab Emirates enter without a visa. Hayya says a passport or GCC ID is enough for this status."
+    },
+
+    "qatar_free_result": {
+      "type": "result",
+      "country": "qatar",
+      "summary": "You do not need a paid Hayya tourist visa for this free-entry route.",
+      "forms": [],
+      "note": "Read and meet every condition shown by the live checker for the passport. More than 102 countries are eligible for free entry, but the exact stay and document conditions vary."
+    },
+
+    "qatar_a1_result": {
+      "type": "result",
+      "country": "qatar",
+      "summary": "Apply for the Hayya Tourist Visa A1.",
+      "forms": [
+        {
+          "name": "Hayya Tourist Visa (A1)",
+          "fee": "QAR 100",
+          "url": "https://hayya.qa/en?category=WVE",
+          "guide": "/qatar/hayya-evisa/",
+          "agency": "Qatar Tourism / Hayya"
+        }
+      ],
+      "note": "Qatar Tourism says the A1 route requires a hotel reservation during the application and asks for payment after approval."
+    },
+
+    "qatar_hayya_result": {
+      "type": "result",
+      "country": "qatar",
+      "summary": "Use the Hayya category shown by the live checker.",
+      "forms": [
+        {
+          "name": "Hayya e-Visa",
+          "fee": "QAR 100 tourist visa; confirm the offered category",
+          "url": "https://hayya.qa/en?category=WVE",
+          "guide": "/qatar/hayya-evisa/",
+          "agency": "Qatar Tourism / Hayya"
+        }
+      ],
+      "note": "A2, A3 and A4 serve different residence, visa-status or companion groups. Use only the category offered for the applicant."
+    },
+
+    "qatar_check_result": {
+      "type": "result",
+      "country": "qatar",
+      "summary": "Use the live Qatar Tourism checker before opening Hayya.",
+      "forms": [],
+      "note": "Enter the real passport, GCC status and current residence or qualifying-visa answers. Free-entry travellers should not be sent to a paid A1 application."
+    },
+
+    "bahrain_route": {
+      "type": "question",
+      "label": "Which Bahrain route does the official eligibility check show?",
+      "options": [
+        {
+          "value": "on_arrival",
+          "label": "Visa on arrival",
+          "next": "bahrain_arrival_result"
+        },
+        {
+          "value": "online",
+          "label": "Online Visit eVisa",
+          "next": "bahrain_product"
+        },
+        {
+          "value": "guarantor",
+          "label": "Visa through a guarantor",
+          "next": "bahrain_guarantor_result"
+        },
+        {
+          "value": "not_sure",
+          "label": "I am not sure",
+          "next": "bahrain_check_result"
+        }
+      ]
+    },
+
+    "bahrain_arrival_result": {
+      "type": "result",
+      "country": "bahrain",
+      "summary": "Follow the visa-on-arrival conditions shown for your passport.",
+      "forms": [],
+      "note": "The on-arrival route does not require this online eVisa form. It is a separate eligibility path and is not necessarily free. Entry remains subject to the conditions and the immigration officer's decision."
+    },
+
+    "bahrain_product": {
+      "type": "question",
+      "label": "Which Visit eVisa product does the eligibility result offer?",
+      "options": [
+        {
+          "value": "two_week",
+          "label": "Two-week single entry",
+          "next": "bahrain_two_week_result"
+        },
+        {
+          "value": "three_month",
+          "label": "Three-month multiple entry",
+          "next": "bahrain_three_month_result"
+        },
+        {
+          "value": "one_year",
+          "label": "One-year multiple entry",
+          "next": "bahrain_one_year_result"
+        },
+        {
+          "value": "five_year",
+          "label": "Five-year multiple entry",
+          "next": "bahrain_five_year_result"
+        }
+      ]
+    },
+
+    "bahrain_two_week_result": {
+      "type": "result",
+      "country": "bahrain",
+      "summary": "Apply for the eligible two-week single-entry Visit eVisa.",
+      "forms": [
+        {
+          "name": "Bahrain two-week single-entry Visit eVisa",
+          "fee": "BD 13",
+          "url": "https://www.evisa.gov.bh/",
+          "guide": "/bahrain/evisa/",
+          "agency": "Nationality, Passports & Residence Affairs (NPRA)",
+          "deadline": "Approximately 3-5 working days; exceptional cases can take longer"
+        }
+      ],
+      "note": "The published total is BD 9 for the visa plus BD 4 for the application. Read the live product conditions before paying."
+    },
+
+    "bahrain_three_month_result": {
+      "type": "result",
+      "country": "bahrain",
+      "summary": "Apply for the eligible three-month multiple-entry Visit eVisa.",
+      "forms": [
+        {
+          "name": "Bahrain three-month multiple-entry Visit eVisa",
+          "fee": "BD 29",
+          "url": "https://www.evisa.gov.bh/",
+          "guide": "/bahrain/evisa/",
+          "agency": "Nationality, Passports & Residence Affairs (NPRA)",
+          "deadline": "Approximately 3-5 working days; exceptional cases can take longer"
+        }
+      ],
+      "note": "The published total is BD 25 for issuance plus BD 4 for the application. Read the live product conditions before paying."
+    },
+
+    "bahrain_one_year_result": {
+      "type": "result",
+      "country": "bahrain",
+      "summary": "Apply for the eligible one-year multiple-entry Visitor eVisa.",
+      "forms": [
+        {
+          "name": "Bahrain one-year multiple-entry Visitor eVisa",
+          "fee": "BD 44",
+          "url": "https://www.evisa.gov.bh/",
+          "guide": "/bahrain/evisa/",
+          "agency": "Nationality, Passports & Residence Affairs (NPRA)",
+          "deadline": "Approximately 3-5 working days; exceptional cases can take longer"
+        }
+      ],
+      "note": "Use this product only when it appears in the official eligibility result. Read the validity and period-of-stay conditions before paying."
+    },
+
+    "bahrain_five_year_result": {
+      "type": "result",
+      "country": "bahrain",
+      "summary": "Apply for the eligible five-year multiple-entry Visit eVisa.",
+      "forms": [
+        {
+          "name": "Bahrain five-year multiple-entry Visit eVisa",
+          "fee": "BD 64",
+          "url": "https://www.evisa.gov.bh/",
+          "guide": "/bahrain/evisa/",
+          "agency": "Nationality, Passports & Residence Affairs (NPRA)",
+          "deadline": "Approximately 3-5 working days; exceptional cases can take longer"
+        }
+      ],
+      "note": "The government service page publishes a narrower eligible-nationality pool for this product. Use it only when the live eligibility result offers it."
+    },
+
+    "bahrain_guarantor_result": {
+      "type": "result",
+      "country": "bahrain",
+      "summary": "A Bahrain guarantor must apply for this route.",
+      "forms": [],
+      "note": "NPRA lists airlines, places of stay, Bahrain travel agents, Bahrain companies and Bahrain citizens as possible guarantors. This is not the direct traveller eVisa form."
+    },
+
+    "bahrain_check_result": {
+      "type": "result",
+      "country": "bahrain",
+      "summary": "Check both official lists and run the NPRA eligibility tool.",
+      "forms": [],
+      "note": "Use passport nationality, current GCC status and the real purpose. Do not start a paid online application merely because a country appears on the separate on-arrival list."
     }
   }
 }

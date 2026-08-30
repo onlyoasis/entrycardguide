@@ -1,0 +1,80 @@
+{
+  "country": "georgia",
+  "officialUrl": "https://www.evisa.gov.ge/GeoVisa/en/VisaApp",
+  "lastVerified": "2026-08-30",
+  "source": "https://www.evisa.gov.ge/GeoVisa/en/VisaApp and https://www.evisa.gov.ge/GeoVisa/en/Home/FAQ, read 2026-08-30. The public first screen and FAQ identify the choices, documents and timing below. Later personal-information HTML validation attributes, regexes, character limits and field error text were not readable, so no pattern or length is claimed.",
+  "fields": {
+    "visa_free_status": {
+      "type": "nationality",
+      "label": "Visa-free status",
+      "required": true,
+      "placeholder": "Check the current government list",
+      "help": "The current government ordinance lists passports whose citizens may enter and stay without a visa for one full year. Check this before opening a paid application.",
+      "errors": {"required": "Check whether this passport needs a visa before paying"}
+    },
+    "citizenship": {
+      "type": "nationality",
+      "label": "Citizenship / country",
+      "required": true,
+      "placeholder": "As shown in the travel document",
+      "help": "The first application screen says to select citizenship according to the passport that will be used for travel.",
+      "errors": {"required": "Citizenship is required"}
+    },
+    "travel_document_type": {
+      "type": "text",
+      "label": "Type of travel document / passport",
+      "required": true,
+      "placeholder": "Select the document you will carry",
+      "help": "Eligibility depends on holding one of the travel documents listed after the citizenship choice.",
+      "errors": {"required": "Travel document type is required"}
+    },
+    "purpose_of_visit": {
+      "type": "text",
+      "label": "Purpose of visit",
+      "required": true,
+      "placeholder": "Choose the actual short-stay purpose",
+      "help": "The e-Visa portal is for short-stay visits of less than 90 days and asks for proof of the selected purpose.",
+      "errors": {"required": "Purpose of visit is required"}
+    },
+    "passport_validity": {
+      "type": "text",
+      "label": "Passport validity",
+      "required": true,
+      "placeholder": "Valid beyond the requested visa",
+      "help": "The passport must remain valid for at least 3 months after the requested Georgian visa expires, have at least 2 free pages and have been issued within the previous 10 years.",
+      "errors": {"required": "Confirm the passport meets the published conditions"}
+    },
+    "photo": {
+      "type": "text",
+      "label": "Recent photo",
+      "required": true,
+      "placeholder": "Taken within the last 6 months",
+      "help": "The FAQ requires a recent photo facing the camera and rejects snapshots, mobile-device photos and scans copied from other official documents.",
+      "errors": {"required": "A compliant recent photo is required"}
+    },
+    "supporting_documents": {
+      "type": "text",
+      "label": "Supporting documents",
+      "required": true,
+      "placeholder": "Passport PDF, accommodation, ticket, insurance and funds",
+      "help": "The application lists a passport scan, accommodation, round ticket, travel insurance, financial means and travel-purpose evidence. A supporting-document copy is included when applicable.",
+      "errors": {"required": "Prepare the documents listed by the portal"}
+    },
+    "email_verification": {
+      "type": "email",
+      "label": "Email address",
+      "required": true,
+      "placeholder": "An inbox you can open immediately",
+      "help": "The FAQ says the first verification email expires after 1 hour. Payment must then be completed within 5 hours of the payment notice.",
+      "errors": {"required": "An accessible email address is required"}
+    },
+    "duverify": {
+      "type": "text",
+      "label": "DuVerify follow-up",
+      "required": true,
+      "placeholder": "Complete within 24 hours",
+      "help": "The live application states that DuVerify is the second mandatory step and carries an additional USD 15 fee per applicant.",
+      "errors": {"required": "Complete the mandatory DuVerify step"}
+    }
+  }
+}
