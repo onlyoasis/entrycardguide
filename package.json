@@ -11,6 +11,7 @@
     "verify:official-urls": "node scripts/verify-official-urls.mjs",
     "submit:indexnow": "node scripts/submit-indexnow.mjs",
     "fetch:search-data": "node scripts/fetch-search-data.mjs",
+    "check:index-status": "node scripts/check-index-status.mjs",
     "clean": "rm -rf public resources"
   },
   "devDependencies": {
