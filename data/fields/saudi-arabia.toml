@@ -1,0 +1,113 @@
+# Saudi Arabia tourist eVisa — items published by the tourist eVisa portal,
+# its terms page, and the government overview pages on my.gov.sa. The live
+# application publishes no readable validation attributes, so this file
+# contains no [[errors]] array.
+# Each `key` must exist in data/rules/saudi-arabia.json.
+
+[[fields]]
+n = "01"
+key = "eligibility"
+section_en = "Section 1 · Route and eligibility"
+section_zh = "第 1 段 · 路径与资格"
+example = "One of the 66 eligible passports"
+mistake = "Applying with a passport outside the list"
+mistake_why_en = "non-eligible passports use the visa finder or a Saudi mission"
+mistake_why_zh = "不在名单上的护照要走签证查询工具或使领馆"
+copy_en = "66 eligible-country passports can apply for the tourist eVisa. A passport outside that list is not stuck, but it uses the current KSA Visa Finder or a Saudi mission instead."
+copy_zh = "66 个符合资格国家的护照可以申请旅游电子签。不在名单上的护照并非无路可走，而是要改用现行的沙特签证查询工具或使领馆渠道。"
+
+[[fields]]
+n = "02"
+key = "alternate_route"
+section_en = "Section 1 · Route and eligibility"
+section_zh = "第 1 段 · 路径与资格"
+example = "Checked the finder for a US or UK visa holder"
+mistake = "Assuming a US visa always unlocks the eVisa"
+mistake_why_en = "eligibility for that route differs from the 66-country list"
+mistake_why_zh = "该路径的资格条件与 66 国名单不同"
+copy_en = "Holders of specified valid US, UK or Schengen visas or permanent residence, and GCC residents, must use the visa finder. Their eligibility is decided on different terms from the 66-country list."
+copy_zh = "持有指定的有效美国、英国或申根签证或永久居留的人，以及海湾合作委员会（GCC）居民，要使用签证查询工具。他们的资格判断标准与 66 国名单不同。"
+
+[[fields]]
+n = "03"
+key = "visit_purpose"
+section_en = "Section 1 · Route and eligibility"
+section_zh = "第 1 段 · 路径与资格"
+example = "Tourism, or Umrah excluding Hajj"
+mistake = "Buying a tourist eVisa for Hajj"
+mistake_why_en = "Hajj requires its own visa and permit"
+mistake_why_zh = "朝觐需要专门的签证和许可"
+copy_en = "The tourist visa covers tourism, events, family and relative visits, leisure, and Umrah excluding Hajj. It does not cover Hajj, study or work. The Umrah visa route runs through KSA Visa and the Umrah permit through Nusuk."
+copy_zh = "旅游签证涵盖旅游、活动、探亲访友、休闲，以及不含朝觐的副朝。它不涵盖朝觐、留学和工作。副朝签证走 KSA Visa，副朝许可走 Nusuk。"
+
+[[fields]]
+n = "04"
+key = "portal_hostname"
+section_en = "Section 2 · Application"
+section_zh = "第 2 段 · 申请"
+example = "Opened from a my.gov.sa page"
+mistake = "Opened from a search advertisement"
+mistake_why_en = "the portal host is not a .gov.sa suffix, so the hostname is worth checking"
+mistake_why_zh = "门户主机名不是 .gov.sa 后缀，更需要逐字核对"
+copy_en = "The tourist eVisa portal host does not end in .gov.sa. Reach it from the Saudi National Platform or Visit Saudi, then read the hostname character by character before entering passport or card details."
+copy_zh = "旅游电子签门户的主机名不以 .gov.sa 结尾。请从沙特国家统一平台或 Visit Saudi 点进去，填写护照或银行卡资料前逐字核对主机名。"
+
+[[fields]]
+n = "05"
+key = "passport_number"
+section_en = "Section 2 · Application"
+section_zh = "第 2 段 · 申请"
+example = "Copy the exact passport value"
+mistake = "The number from a renewed passport"
+mistake_why_en = "the issued eVisa is tied to the document in the application"
+mistake_why_zh = "签发的电子签与申请时的证件绑定"
+copy_en = "Copy the number from the passport you will travel on. The issued eVisa is tied to that document, so travelling on a different passport is a problem the border cannot resolve for you."
+copy_zh = "从本次出行使用的护照上抄号码。签发的电子签与该证件绑定，换一本护照出行，口岸也没法替你解决。"
+
+[[fields]]
+n = "06"
+key = "passport_validity"
+section_en = "Section 2 · Application"
+section_zh = "第 2 段 · 申请"
+example = "Valid 6+ months at entry"
+mistake = "Expires 4 months after entry"
+mistake_why_en = "the requirement is at least 6 months at entry"
+mistake_why_zh = "要求是入境时至少 6 个月有效"
+copy_en = "The passport needs at least 6 months of validity at entry. Check the expiry before paying, because the fee components are not a refundable deposit."
+copy_zh = "护照在入境时至少要有 6 个月有效期。付款前先看到期日，各项费用不是可退的押金。"
+
+[[fields]]
+n = "07"
+key = "email"
+section_en = "Section 2 · Application"
+section_zh = "第 2 段 · 申请"
+example = "An inbox you control"
+mistake = "A third party's inbox"
+mistake_why_en = "the result reaches whoever holds that address"
+mistake_why_zh = "结果发到谁的邮箱，就由谁掌握"
+copy_en = "The application result reaches this address. Use an inbox you can open yourself, so the eVisa does not sit somewhere you have to ask for it."
+copy_zh = "申请结果会发到这个邮箱。用自己打得开的邮箱，免得电子签落在还得开口去要的地方。"
+
+[[fields]]
+n = "08"
+key = "insurance"
+section_en = "Section 3 · Cost and validity"
+section_zh = "第 3 段 · 费用与有效期"
+example = "SAR 300 base plus insurance and VAT"
+mistake = "Budgeting SAR 300 flat"
+mistake_why_en = "insurance, VAT and the payment amount all affect the total"
+mistake_why_zh = "保险、增值税和支付金额都会影响总额"
+copy_en = "The tourist visa base government fee is SAR 300. Mandatory medical insurance, VAT and the payment amount affect the checkout total, so the number you pay is higher than the base fee."
+copy_zh = "旅游签证的基础政府费用是 300 里亚尔。强制医疗保险、增值税和支付金额都会影响结账总额，所以实付金额高于基础费。"
+
+[[fields]]
+n = "09"
+key = "validity_plan"
+section_en = "Section 3 · Cost and validity"
+section_zh = "第 3 段 · 费用与有效期"
+example = "One year, multiple entry, up to 90 days"
+mistake = "Treating it as single entry"
+mistake_why_en = "the eVisa is normally multiple entry for a year"
+mistake_why_zh = "该电子签通常是一年多次入境"
+copy_en = "The eVisa is normally valid for one year with multiple entries and stays of up to 90 days. Plan the trip inside those limits instead of buying again for a second visit in the same year."
+copy_zh = "电子签通常一年有效、多次入境、每次最多停留 90 天。按这个范围安排行程，同一年内的第二次访问不必再买一张。"

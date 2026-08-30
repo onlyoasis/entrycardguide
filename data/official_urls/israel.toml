@@ -1,0 +1,62 @@
+# Israel — official government URLs
+# Last verified: 2026-08-30
+
+[eta_il]
+url = "https://israel-entry.piba.gov.il/"
+name = "Israel Entry — ETA-IL"
+agency = "Population and Immigration Authority (PIBA)"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://israel-entry.piba.gov.il/"
+notes = "Official PIBA portal on a gov.il host. The portal says ETA-IL is for citizens of visa-exempt countries, recommends applying at least 72 hours before making non-refundable travel bookings, and says approval is generally valid for multiple trips for up to two years or until passport expiry."
+
+[eligibility]
+url = "https://www.gov.il/en/service/group_entry_to_israel"
+name = "Israel entry requirement and eligibility check"
+agency = "Israel Ministry of Tourism"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://www.gov.il/en/service/group_entry_to_israel"
+notes = "Government page stating that all visa-exempt travellers need ETA-IL from 1 January 2025, while travellers who need a visa must use the visa route. It links to PIBA's live eligibility check."
+
+[mfa_notice]
+url = "https://embassies.gov.il/en/announcements/eta-il-entrance-tourists-visa-exempt-countries"
+name = "ETA-IL for tourists from visa-exempt countries"
+agency = "Israel Ministry of Foreign Affairs"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://embassies.gov.il/en/announcements/eta-il-entrance-tourists-visa-exempt-countries"
+notes = "States that the official application costs ILS 25, the decision is emailed within 72 hours, and a payment receipt is sent by the official site."
+
+[meta]
+flag = "🇮🇱"
+name_en = "Israel"
+name_zh = "以色列"
+form_code = "ETA-IL"
+guide_slug = "eta-il"
+form_key = "eta_il"
+form_name_en = "Electronic Travel Authorisation for Israel"
+form_name_zh = "以色列电子旅行授权"
+since_en = "required for visa-exempt travellers since 1 January 2025"
+since_zh = "2025 年 1 月 1 日起免签旅客须办理"
+fee_en = "ILS 25"
+fee_zh = "25 新谢克尔"
+suffix = ".gov.il"
+form_type = "travel_authorization"
+field_count = 6
+sections = 3
+time_needed_en = "~10 minutes"
+time_needed_zh = "约 10 分钟"
+output_en = "Keep the approval email showing the ETA-IL number, validity and conditions. Approval allows travel but does not replace border control."
+output_zh = "保存写有 ETA-IL 编号、有效期和条件的批准邮件。批准只允许出发，不能替代入境审查。"
+fields_intro_en = "PIBA's public pages explain eligibility, passport validity, purpose, email, payment and final review, but do not publish the live form's regexes, maxlengths or validation messages. These six cards are preparation checks, not a claim about hidden HTML rules."
+fields_intro_zh = "PIBA 公开页面说明了资格、护照有效期、访问目的、邮箱、付款和提交前复核，但没有公开实时表单的正则、字符上限或校验报错。以下 6 张卡片是申请准备项，不声称知道隐藏的 HTML 规则。"
+email_title_en = "Decision arrives by email"
+email_title_zh = "决定通过邮件送达"
+email_body_en = "Many results are immediate, but official notices allow up to 72 hours. The receipt email is not the approval."
+email_body_zh = "很多申请即时出结果，但官方说明最长可到 72 小时。收件邮件不是批准。"
+printout_title_en = "Keep the approval email"
+printout_title_zh = "保存批准邮件"
+printout_body_en = "The official instruction says to carry the email showing the ETA-IL number, validity and conditions during entry and the stay."
+printout_body_zh = "官方步骤要求在入境及停留期间保存写有 ETA-IL 编号、有效期和条件的邮件。"
+verification_title_en = "Border control still applies"
+verification_title_zh = "仍须接受入境审查"
+verification_body_en = "ETA-IL authorises travel for an eligible visitor. The border officer still decides admission and the permitted stay."
+verification_body_zh = "ETA-IL 只允许符合资格的旅客前往以色列，是否准入及停留期限仍由口岸决定。"

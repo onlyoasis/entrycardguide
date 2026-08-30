@@ -1,0 +1,62 @@
+# Curaçao — official designated URLs
+# Last verified: 2026-08-30
+
+[dicard]
+url = "https://dicardcuracao.com/dicard/"
+name = "Curaçao Digital Immigration Card"
+agency = "Curaçao Immigration, through the Curaçao Tourist Board designated portal"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://dicardcuracao.com/dicard/"
+notes = "Government-designated entry portal on a non-government .com domain. Verify it by following the DI Card link from curacao.com, the Curaçao Tourist Board site. The portal says all foreign visitors must complete the card within seven days before departure and present the digital or printed confirmation at airline check-in and immigration."
+
+[official_entry_rules]
+url = "https://www.curacao.com/en/article/curacao/"
+name = "Curaçao visa and entry requirements"
+agency = "Curaçao Tourist Board"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://www.curacao.com/en/article/curacao/"
+notes = "Official tourism board page last updated August 2026. It links to dicardcuracao.com and states the DI Card is mandatory before travel, separate from visa status and completely free of charge."
+
+[faq]
+url = "https://dicardcuracao.com/portal"
+name = "Official Curaçao Entry Portal FAQ"
+agency = "Curaçao Tourist Board / Curaçao Immigration"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://dicardcuracao.com/portal"
+notes = "Publishes the seven-day window, required application groups, passport and nickname rule, flight lookup behavior, per-person/per-trip rule, edit process and confirmation handling."
+
+[meta]
+flag = "🇨🇼"
+name_en = "Curaçao"
+name_zh = "库拉索"
+form_code = "DI Card"
+guide_slug = "digital-immigration-card"
+form_key = "dicard"
+form_name_en = "Digital Immigration Card"
+form_name_zh = "数字移民卡"
+since_en = "digital-only visitor card"
+since_zh = "仅在线办理的访客卡"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".com"
+form_type = "arrival_card"
+field_count = 7
+sections = 4
+time_needed_en = "a few minutes"
+time_needed_zh = "几分钟"
+output_en = "Download the PDF or keep the confirmation email. Show a digital or printed copy at airline check-in and to immigration on arrival."
+output_zh = "下载 PDF 或保存确认邮件，在航司值机和抵达移民检查时出示电子版或打印件。"
+fields_intro_en = "The official portal publishes the application groups and several field rules, but not the live form's regexes, maxlengths or validation messages. These seven cards use only those public instructions and claim no hidden pattern."
+fields_intro_zh = "官方门户公开了申请分组和几条字段规则，但没有公开实时表单的正则、字符上限或校验报错。以下 7 张卡片只使用这些公开说明，不声称知道隐藏正则。"
+email_title_en = "Confirmation PDF arrives"
+email_title_zh = "确认 PDF 送达"
+email_body_en = "The portal emails the confirmation and also lets you download the PDF immediately. Check spam if the email is missing."
+email_body_zh = "门户会发送确认邮件，也允许立即下载 PDF。没有收到先查垃圾箱。"
+printout_title_en = "Digital or printed copy"
+printout_title_zh = "电子版或打印件"
+printout_body_en = "The official portal requires the confirmation at airline check-in and immigration; either format is accepted."
+printout_body_zh = "官网要求在航司值机和移民检查时出示确认，电子版和打印件均可。"
+verification_title_en = "Admission is still decided at the border"
+verification_title_zh = "最终准入仍由口岸决定"
+verification_body_en = "A valid DI Card does not guarantee admission. The immigration officer may grant or refuse entry."
+verification_body_zh = "有效 DI Card 不保证入境，移民官仍可批准或拒绝准入。"

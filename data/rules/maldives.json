@@ -1,0 +1,74 @@
+{
+  "country": "maldives",
+  "officialUrl": "https://imuga.immigration.gov.mv/traveller",
+  "lastVerified": "2026-08-30",
+  "source": "https://imuga.immigration.gov.mv/traveller (public first step of the Traveller Declaration), https://www.immigration.gov.mv/traveller-declaration, https://www.immigration.gov.mv/visa/tourist-visa and the 13 August 2024 announcement listed at https://www.immigration.gov.mv/news, all read 2026-08-30. The public first step shows a passport data-page scan or upload, purpose of visit, and a conditional permit number and expiry. The tourist visa page names personal details, travel information and accommodation details. Beyond that, the live form publishes no readable HTML validation attributes, so no pattern, character limit or error message is claimed below.",
+  "fields": {
+    "passport_page": {
+      "type": "text",
+      "label": "Passport data page",
+      "required": true,
+      "placeholder": "Scan or upload the data page",
+      "help": "The first public step of the declaration reads the passport data page by scan or upload. Have the physical passport, or a clear image of the data page, ready before starting.",
+      "errors": {
+        "required": "The passport data page is required"
+      }
+    },
+    "personal_details": {
+      "type": "text",
+      "label": "Personal details",
+      "required": true,
+      "placeholder": "Copy the exact passport values",
+      "help": "Personal details are named on the official tourist entry page. Take every value from the passport data page rather than from a booking confirmation.",
+      "errors": {
+        "required": "Personal details are required"
+      }
+    },
+    "purpose": {
+      "type": "text",
+      "label": "Purpose of visit",
+      "required": true,
+      "placeholder": "The real reason for this trip",
+      "help": "Purpose of visit appears on the public first step. Answer it as it is, because the tourist visa issued on arrival is tied to a short visit rather than to work or study.",
+      "errors": {
+        "required": "Purpose of visit is required"
+      }
+    },
+    "permit_number": {
+      "type": "text",
+      "label": "Permit number (conditional)",
+      "required": false,
+      "placeholder": "Only when a permit applies",
+      "help": "The first step asks for a permit number only when one applies to the traveller. Leave it alone if the portal does not ask you for it.",
+      "errors": {}
+    },
+    "permit_expiry": {
+      "type": "text",
+      "label": "Permit expiry (conditional)",
+      "required": false,
+      "placeholder": "Only when a permit applies",
+      "help": "The expiry date is asked alongside the conditional permit number. It applies to the same travellers and to nobody else.",
+      "errors": {}
+    },
+    "travel_details": {
+      "type": "text",
+      "label": "Travel information",
+      "required": true,
+      "placeholder": "Flight and trip details for this arrival",
+      "help": "Travel information is named on the official tourist entry page. Use the itinerary for the arrival covered by this declaration, submitted within the 96 hours before arrival.",
+      "errors": {
+        "required": "Travel information is required"
+      }
+    },
+    "accommodation": {
+      "type": "text",
+      "label": "Accommodation details",
+      "required": true,
+      "placeholder": "Where you are staying in the Maldives",
+      "help": "Accommodation details are named on the official tourist entry page. Resort, guesthouse or hotel details for the stay belong here.",
+      "errors": {
+        "required": "Accommodation details are required"
+      }
+    }
+  }
+}

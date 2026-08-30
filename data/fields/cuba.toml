@@ -1,0 +1,86 @@
+# Cuba D'Viajeros — public information groups. The live form exposes no
+# readable validation attributes, so this file contains no [[errors]] array.
+
+[[fields]]
+n = "01"
+key = "passport"
+section_en = "Section 1 · Traveller information"
+section_zh = "第 1 段 · 旅客信息"
+example = "Passport used for the eVisa and entry"
+mistake = "A renewed passport not linked to the eVisa"
+mistake_why_en = "the tourist eVisa is linked to the passport used in its application"
+mistake_why_zh = "旅游 eVisa 与申请时使用的护照绑定"
+copy_en = "Use the passport carried to Cuba. Cuba Travel states it must be valid for six months from entry. If an eVisa is required, the same passport must be linked to that visa."
+copy_zh = "使用本次入境携带的护照。Cuba Travel 写明护照须从入境日起还有 6 个月有效期。需要 eVisa 时，必须与电子签绑定同一本护照。"
+
+[[fields]]
+n = "02"
+key = "email"
+section_en = "Section 1 · Traveller information"
+section_zh = "第 1 段 · 旅客信息"
+example = "An inbox available on the trip"
+mistake = "An inaccessible booking inbox"
+mistake_why_en = "the traveller cannot retrieve the PDF and QR"
+mistake_why_zh = "旅客本人拿不到 PDF 和二维码"
+copy_en = "Use an inbox you can open while travelling. The official service brochure says the completed PDF with QR code is sent by email."
+copy_zh = "使用旅行期间能打开的邮箱。官方说明写明完成后的 PDF 和二维码会通过邮件发送。"
+
+[[fields]]
+n = "03"
+key = "arrival"
+section_en = "Section 2 · Immigration information"
+section_zh = "第 2 段 · 移民信息"
+example = "Current confirmed flight to Cuba"
+mistake = "An old or cancelled itinerary"
+mistake_why_en = "the advance arrival record no longer matches the trip"
+mistake_why_zh = "预先入境记录和实际行程不一致"
+copy_en = "Complete D'Viajeros during the seven days before travel, after the arrival itinerary is stable. Follow the live date and transport controls; no public format rule is published."
+copy_zh = "在旅行前 7 天内、抵达行程稳定后填写。日期和交通工具格式跟随实时控件；官网没有公开格式规则。"
+
+[[fields]]
+n = "04"
+key = "accommodation"
+section_en = "Section 2 · Immigration information"
+section_zh = "第 2 段 · 移民信息"
+example = "First confirmed stay in Cuba"
+mistake = "Country name only"
+mistake_why_en = "it does not identify where the traveller will stay"
+mistake_why_zh = "没有说明旅客在古巴住哪里"
+copy_en = "Use the confirmed accommodation for this trip. Keep the booking details beside the passport and itinerary while completing the form."
+copy_zh = "填写本次行程确认的住宿。填表时把住宿预订、护照和行程放在手边。"
+
+[[fields]]
+n = "05"
+key = "visa_code"
+section_en = "Section 2 · Immigration information"
+section_zh = "第 2 段 · 移民信息"
+example = "Code emailed by eVisaCuba"
+mistake = "D'Viajeros QR used as a visa"
+mistake_why_en = "the free QR and the paid tourist eVisa are different documents"
+mistake_why_zh = "免费二维码和付费旅游 eVisa 是两份不同文件"
+copy_en = "If your passport requires a tourist visa, obtain the eVisa first and enter its emailed code here. The old Tourist Card has been replaced by eVisa; the visa fee depends on the consulate or authorised channel."
+copy_zh = "护照需要旅游签证时，先取得 eVisa，再填写邮件中的签证代码。旧 Tourist Card 已由 eVisa 取代；签证费按领馆或授权渠道而定。"
+
+[[fields]]
+n = "06"
+key = "customs_declaration"
+section_en = "Section 3 · Customs information"
+section_zh = "第 3 段 · 海关信息"
+example = "Answers match the luggage carried"
+mistake = "A restricted item left undeclared"
+mistake_why_en = "the declaration does not match the baggage presented"
+mistake_why_zh = "申报与实际携带行李不一致"
+copy_en = "Answer the live customs questions from the baggage actually carried. The official brochure identifies customs as a separate D'Viajeros information group."
+copy_zh = "按实际携带行李回答实时海关问题。官方说明把海关信息列为 D'Viajeros 的独立分段。"
+
+[[fields]]
+n = "07"
+key = "health_declaration"
+section_en = "Section 4 · Health information"
+section_zh = "第 4 段 · 卫生信息"
+example = "Current health answers"
+mistake = "Answers copied from a previous trip"
+mistake_why_en = "the health declaration must describe the current journey"
+mistake_why_zh = "卫生申报必须反映本次行程"
+copy_en = "Answer the health questions shown for the current journey. Public sources identify the section but publish no live field format or validation message."
+copy_zh = "按本次行程回答当前显示的卫生问题。公开资料只确认该分段，没有公开实时字段格式或校验报错。"

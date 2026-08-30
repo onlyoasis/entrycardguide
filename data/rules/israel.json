@@ -1,0 +1,44 @@
+{
+  "country": "israel",
+  "officialUrl": "https://israel-entry.piba.gov.il/",
+  "lastVerified": "2026-08-30",
+  "source": "https://israel-entry.piba.gov.il/, https://www.gov.il/en/service/group_entry_to_israel, https://embassies.gov.il/en/announcements/eta-il-entrance-tourists-visa-exempt-countries and https://embassies.gov.il/sites/default/files/2024-12/eta-il_instruction.pdf, read 2026-08-30. The public pages explain eligibility, passport validity, purpose, email, card payment and review, but the live application does not publish readable HTML validation attributes, regexes, maxlengths or validation messages. No pattern below is claimed as an official PIBA rule.",
+  "fields": {
+    "eligibility": {
+      "type": "nationality",
+      "label": "ETA-IL eligibility",
+      "required": true,
+      "help": "ETA-IL is only for citizens of countries that do not require a B/2 visitor visa. A visa-required passport must use the visa route instead."
+    },
+    "passport": {
+      "type": "text",
+      "label": "Travel passport",
+      "required": true,
+      "help": "The government entry page says an ETA traveller's passport must be valid for three months beyond arrival. A new passport requires a new ETA-IL."
+    },
+    "email": {
+      "type": "text",
+      "label": "Email address",
+      "required": true,
+      "help": "The official instruction sends the application result, ETA-IL number, validity and conditions to this email."
+    },
+    "purpose": {
+      "type": "text",
+      "label": "Purpose of visit",
+      "required": true,
+      "help": "ETA-IL covers short tourism or business visits of up to 90 days. Employment, study and other long stays require the relevant visa."
+    },
+    "payment": {
+      "type": "text",
+      "label": "Payment card",
+      "required": true,
+      "help": "The official fee is ILS 25 and is non-refundable. The official site sends a payment receipt."
+    },
+    "final_review": {
+      "type": "text",
+      "label": "Final review",
+      "required": true,
+      "help": "PIBA says answers can be corrected before submission. After submission, a mistake requires a new form and fee."
+    }
+  }
+}

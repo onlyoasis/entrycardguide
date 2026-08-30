@@ -1,0 +1,62 @@
+# Colombia — official government URLs
+# Last verified: 2026-08-30
+
+[checkmig]
+url = "https://apps.migracioncolombia.gov.co/pre-registro/public/"
+name = "CheckMig immigration pre-registration"
+agency = "Unidad Administrativa Especial Migración Colombia"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://apps.migracioncolombia.gov.co/pre-registro/public/"
+notes = "Official Migración Colombia application. It lets Colombian and foreign travellers preload entry or exit trip information. The live page states the filing window runs from 72 hours before travel until one hour before travel."
+
+[service_guide]
+url = "https://portal.migracioncolombia.gov.co/tramites-y-servicios/aplicativos/checkmig"
+name = "Migración Colombia CheckMig service guide"
+agency = "Unidad Administrativa Especial Migración Colombia"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://portal.migracioncolombia.gov.co/tramites-y-servicios/aplicativos/checkmig"
+notes = "Official service page. It states CheckMig is free, online and optional; is intended for national and foreign travellers entering or leaving Colombia; takes two to five minutes; cannot be edited after submission; and sends an email confirmation that can also be downloaded."
+
+[entry_requirements]
+url = "https://portal.migracioncolombia.gov.co/tramites-y-servicios/instructivos/requisitos-de-entrada-y-salida-del-pais"
+name = "Colombia entry and exit requirements"
+agency = "Unidad Administrativa Especial Migración Colombia"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://portal.migracioncolombia.gov.co/tramites-y-servicios/instructivos/requisitos-de-entrada-y-salida-del-pais"
+notes = "Official requirements page. It describes CheckMig as optional and recommended, repeats the 72-hour-to-one-hour window, and separates it from passports, visas and admission requirements."
+
+[meta]
+flag = "🇨🇴"
+name_en = "Colombia"
+name_zh = "哥伦比亚"
+form_code = "Check-Mig"
+guide_slug = "check-mig"
+form_key = "checkmig"
+form_name_en = "Check-Mig immigration pre-registration"
+form_name_zh = "Check-Mig 移民预登记"
+since_en = "optional online pre-registration"
+since_zh = "可选的线上预登记"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".gov.co"
+form_type = "arrival_card"
+field_count = 10
+sections = 5
+time_needed_en = "2–5 minutes"
+time_needed_zh = "2–5 分钟"
+output_en = "Save the near-immediate email confirmation or download the registration from CheckMig. Present it if requested during immigration control."
+output_zh = "保存几乎即时送达的邮件确认，或从 CheckMig 下载登记记录；移民检查要求时出示。"
+fields_intro_en = "The current CheckMig form exposes its five steps, field labels and a few visible instructions, but not readable regex, maxlength or validation attributes. These ten cards use only the live labels and Migración Colombia's public service guide. No hidden pattern is claimed."
+fields_intro_zh = "当前 CheckMig 表单公开了 5 个步骤、字段名称和少量可见提示，但无法读取正则、字符上限等校验属性。以下 10 张卡片只使用实时字段与 Migración Colombia 服务说明，不声称知道隐藏规则。"
+email_title_en = "Confirmation arrives by email"
+email_title_zh = "确认邮件送达"
+email_body_en = "Migración Colombia says the confirmation normally arrives almost immediately. If it does not, use the official check-and-download tool."
+email_body_zh = "Migración Colombia 写明确认通常几乎即时送达；没收到时，用官网查询与下载功能找回。"
+printout_title_en = "Save a download"
+printout_title_zh = "保存下载件"
+printout_body_en = "Keep the confirmation offline before heading to immigration. The service page says it can be presented during control."
+printout_body_zh = "前往移民检查前离线保存确认。服务页写明可在检查时出示。"
+verification_title_en = "Check-Mig is not entry permission"
+verification_title_zh = "Check-Mig 不是入境许可"
+verification_body_en = "It preloads interview data. Passport, visa when required and the immigration officer's decision remain separate."
+verification_body_zh = "它只预载移民问询资料。护照、需要时的签证和移民官决定仍是另外的入境条件。"

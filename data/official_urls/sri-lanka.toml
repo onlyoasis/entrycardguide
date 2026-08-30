@@ -1,0 +1,76 @@
+# Sri Lanka — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-08-30
+
+[eta]
+url = "https://www.eta.gov.lk/slvisa/"
+name = "Sri Lanka Electronic Travel Authorization (ETA)"
+agency = "Department of Immigration and Emigration, Sri Lanka"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://www.eta.gov.lk/slvisa/"
+notes = "Read 2026-08-30. The Department of Immigration and Emigration site still links to eta.gov.lk as the ETA application, and the live terms served at https://eta.gov.lk/etaslvisa/etaNavServ?payType=1 name the Department. The 2024 commercial outsourcing portal is not used here. The application step page https://www.eta.gov.lk/slvisa/visainfo/apply.jsp?locale=en_US describes the applicant flow. The host is a government .gov.lk suffix."
+
+[policy]
+url = "https://www.immigration.gov.lk/pages_e.php?id=60"
+name = "ETA free scheme and current entry policy"
+agency = "Department of Immigration and Emigration, Sri Lanka"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://www.immigration.gov.lk/pages_e.php?id=60"
+notes = "Read 2026-08-30. States that from 25 May 2026, 40 named nationalities plus Maldives, Seychelles and Singapore receive the tourist ETA free of charge. Maldivian nationals receive 90 days. Other free-scheme tourists receive 30 days and double entry. The page keeps the ETA requirement in place for those passports; free means the fee is zero, not that the authorisation is skipped."
+
+[fees]
+url = "https://www.immigration.gov.lk/pages_e.php?id=45"
+name = "Visa and ETA fee table"
+agency = "Department of Immigration and Emigration, Sri Lanka"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://www.immigration.gov.lk/pages_e.php?id=45"
+notes = "Read 2026-08-30. For passports outside the free scheme, the online tourist ETA is USD 20 for SAARC nationals and USD 50 for other nationalities. Children under 12 and two-day transit are free. The on-arrival route costs more than the online route and can end in return travel if a referral is issued."
+
+[apply_steps]
+url = "https://www.eta.gov.lk/slvisa/visainfo/apply.jsp?locale=en_US"
+name = "ETA application information and process"
+agency = "Department of Immigration and Emigration, Sri Lanka"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://www.eta.gov.lk/slvisa/visainfo/apply.jsp?locale=en_US"
+notes = "Read 2026-08-30. Describes what the application requires: a correct passport number, nationality exactly as written in the travel document, and date of birth. The same travel document must be used for the application and at arrival. The traveller also needs a passport valid at least 6 months, a confirmed return ticket and sufficient funds."
+
+# Country-page metadata (consumed by country-form and how-to-fill layouts).
+# Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
+[meta]
+flag = "🇱🇰"
+name_en = "Sri Lanka"
+name_zh = "斯里兰卡"
+form_code = "ETA"
+guide_slug = "eta"
+form_key = "eta"
+form_name_en = "Electronic Travel Authorization"
+form_name_zh = "电子旅行授权"
+since_en = "free tourist ETA scheme since 25 May 2026"
+since_zh = "免费旅游 ETA 方案自 2026 年 5 月 25 日起"
+fee_en = "Varies by passport"
+fee_zh = "按护照而定"
+suffix = ".gov.lk"
+form_type = "travel_authorization"
+
+field_count = 8
+sections = 3
+time_needed_en = "varies"
+time_needed_zh = "时间不定"
+output_en = "Keep the ETA approval and its reference number, and travel on the same document used in the application. The approval lets you board and present yourself at the border; the officer still decides admission and the permitted stay."
+output_zh = "保存 ETA 批准信和参考编号，并使用申请时的同一本旅行证件出行。批准只让你登机并到口岸接受查验，是否准入和停留期限仍由口岸官员决定。"
+
+fields_intro_en = "The Department publishes who needs an ETA, which passports currently pay zero, and what the application checks. It does not publish the live form's regexes, character limits or error text, so this guide invents none. The eight cards below are preparation checks taken from those public pages."
+fields_intro_zh = "移民局公开说明了谁需要 ETA、哪些护照当前费用为零，以及申请会核对什么，但没有公开实时表单的正则、字符上限或报错原文，所以本页一条都不编。下面 8 张卡片是从这些公开页面整理的准备项。"
+
+email_title_en = "Approval arrives by email"
+email_title_zh = "批准信通过邮件送达"
+email_body_en = "The approval and its reference number go to the address you entered. Save the message; a payment receipt alone is not an approval."
+email_body_zh = "批准信和参考编号会发到你填写的邮箱。请保存这封邮件，仅有付款收据不等于已经获批。"
+printout_title_en = "Carry the approval"
+printout_title_zh = "随身带好批准信"
+printout_body_en = "Keep the approval on your phone or on paper, together with the same travel document used in the application."
+printout_body_zh = "把批准信存在手机里或打印出来，并携带申请时使用的同一本旅行证件。"
+verification_title_en = "The border still decides"
+verification_title_zh = "口岸仍有决定权"
+verification_body_en = "An ETA is an authorisation to travel. Passport validity, the return ticket and funds can still be checked at the port of entry."
+verification_body_zh = "ETA 只是出行授权。护照有效期、返程票和资金在口岸仍可能被查验。"

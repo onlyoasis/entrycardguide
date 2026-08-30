@@ -1,0 +1,97 @@
+{
+  "country": "saudi-arabia",
+  "officialUrl": "https://visa.visitsaudi.com/",
+  "lastVerified": "2026-08-30",
+  "source": "https://visa.visitsaudi.com/ and https://visa.visitsaudi.com/Home/TermsConditions (the live tourist eVisa portal and its terms, which state the service is operated by the Ministry of Tourism; note that this host is not a .gov.sa suffix), https://my.gov.sa/en/content/tourism, https://my.gov.sa/en/experience/615129/615469, https://my.gov.sa/en/services/2691010 and https://ksavisa.sa/, all read 2026-08-30. These pages publish eligibility for 66 countries, one-year multiple-entry validity with stays up to 90 days, the 6-month passport requirement, the SAR 300 base government fee plus mandatory medical insurance and VAT, and the scope of the tourist visa. They publish no HTML validation attributes, character limits or error messages for the live application, so no pattern key appears below.",
+  "fields": {
+    "eligibility": {
+      "type": "nationality",
+      "label": "Eligible-country check",
+      "required": true,
+      "placeholder": "One of the 66 eligible passports",
+      "help": "66 eligible-country passports can apply for the tourist eVisa. A passport outside that list uses the current KSA Visa Finder or a Saudi mission instead.",
+      "errors": {
+        "required": "Check eligibility before applying"
+      }
+    },
+    "alternate_route": {
+      "type": "text",
+      "label": "Alternate route check",
+      "required": false,
+      "placeholder": "US, UK, Schengen or GCC route",
+      "help": "Holders of specified valid US, UK or Schengen visas or permanent residence, and GCC residents, must use the visa finder because their eligibility differs from the 66-country list.",
+      "errors": {}
+    },
+    "visit_purpose": {
+      "type": "text",
+      "label": "Purpose within the visa's scope",
+      "required": true,
+      "placeholder": "Tourism, events, family visit, leisure, Umrah",
+      "help": "The tourist visa covers tourism, events, family and relative visits, leisure, and Umrah excluding Hajj. It does not cover Hajj, study or work.",
+      "errors": {
+        "required": "Purpose of visit is required"
+      }
+    },
+    "portal_hostname": {
+      "type": "text",
+      "label": "Portal hostname check",
+      "required": true,
+      "placeholder": "Reached from a government page",
+      "help": "The tourist eVisa portal host is not a .gov.sa suffix. Reach it from the Saudi National Platform or Visit Saudi and confirm the exact hostname before entering anything.",
+      "errors": {
+        "required": "Confirm the portal hostname before continuing"
+      }
+    },
+    "passport_number": {
+      "type": "text",
+      "label": "Passport number",
+      "required": true,
+      "placeholder": "Copy the exact passport value",
+      "help": "Copy the number from the passport you will travel on. The issued eVisa is tied to that document.",
+      "errors": {
+        "required": "Passport number is required"
+      }
+    },
+    "passport_validity": {
+      "type": "text",
+      "label": "Passport validity",
+      "required": true,
+      "placeholder": "At least 6 months at entry",
+      "help": "The passport needs at least 6 months of validity at entry. Check the expiry before paying.",
+      "errors": {
+        "required": "Confirm the passport validity"
+      }
+    },
+    "email": {
+      "type": "email",
+      "label": "Email address",
+      "required": true,
+      "placeholder": "An inbox you control",
+      "help": "The application result reaches this address. Use an inbox you can open yourself rather than one held by a third party.",
+      "errors": {
+        "required": "Email is required",
+        "invalidFormat": "Must look like name@example.com"
+      }
+    },
+    "insurance": {
+      "type": "text",
+      "label": "Mandatory medical insurance",
+      "required": true,
+      "placeholder": "Included in the checkout total",
+      "help": "Medical insurance is mandatory and is one of the components added to the SAR 300 base government fee, along with VAT and the payment amount.",
+      "errors": {
+        "required": "Medical insurance is mandatory"
+      }
+    },
+    "validity_plan": {
+      "type": "text",
+      "label": "Validity and stay plan",
+      "required": true,
+      "placeholder": "One year, multiple entry, up to 90 days",
+      "help": "The eVisa is normally valid for one year with multiple entries and stays of up to 90 days. Plan the trip inside those limits rather than against a single date.",
+      "errors": {
+        "required": "Confirm the trip fits the visa validity"
+      }
+    }
+  }
+}

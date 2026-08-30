@@ -1,0 +1,56 @@
+{
+  "country": "kenya",
+  "officialUrl": "https://etakenya.go.ke/",
+  "lastVerified": "2026-08-30",
+  "source": "https://etakenya.go.ke/form/apply/how-to-apply?type=tourist and https://etakenya.go.ke/faqs, read 2026-08-30. The public pages name the required passport, contact, itinerary, accommodation and payment information, but do not publish the live form's HTML validation attributes, regexes, character limits or validation messages. No pattern or maxlength below is presented as an official portal rule.",
+  "fields": {
+    "passport_details": {
+      "type": "text",
+      "label": "Passport details",
+      "required": true,
+      "help": "The official guide requires a passport valid for at least six months after planned arrival, with at least one blank page."
+    },
+    "passport_nationality": {
+      "type": "nationality",
+      "label": "Passport nationality",
+      "required": true,
+      "help": "Use the nationality of the passport carried for this trip. The official exemption and document rules depend on citizenship and residence."
+    },
+    "email": {
+      "type": "text",
+      "label": "Email address",
+      "required": true,
+      "help": "The official portal sends receipt, payment and approval or refusal messages by email."
+    },
+    "phone": {
+      "type": "text",
+      "label": "Phone number",
+      "required": true,
+      "help": "The public application guide names a phone number as required contact information."
+    },
+    "arrival_date": {
+      "type": "text",
+      "label": "Arrival itinerary",
+      "required": true,
+      "help": "Provide the arrival details from the itinerary. The public guide does not publish a date format or field constraint."
+    },
+    "departure_date": {
+      "type": "text",
+      "label": "Departure itinerary",
+      "required": true,
+      "help": "Provide the departure details from the itinerary. The public guide does not publish a date format or field constraint."
+    },
+    "accommodation": {
+      "type": "text",
+      "label": "Accommodation booking",
+      "required": true,
+      "help": "The official guide requires accommodation booking confirmation or confirmations."
+    },
+    "purpose_of_visit": {
+      "type": "text",
+      "label": "Purpose of visit",
+      "required": true,
+      "help": "Purpose controls extra documents. Business visitors need company material; family visitors need host material; medical and conference trips may need letters."
+    }
+  }
+}

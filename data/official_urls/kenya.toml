@@ -1,0 +1,61 @@
+# Kenya — official government URLs
+# Last verified: 2026-08-30
+
+[eta]
+url = "https://etakenya.go.ke/"
+name = "Kenya Electronic Travel Authorisation (eTA)"
+agency = "Ministry of Interior and National Administration, State Department for Immigration and Citizen Services, Directorate of Immigration Services"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://etakenya.go.ke/"
+notes = "Official Government of Kenya portal. Its FAQ says the standard eTA starts at USD $30, normally takes three working days/72 hours, and must be approved before travel. The application guide says an issued eTA is valid for travel within 90 days."
+
+[eligibility]
+url = "https://etakenya.go.ke/form/apply/how-to-apply?type=tourist"
+name = "Kenya eTA application requirements and exemptions"
+agency = "Directorate of Immigration Services"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://etakenya.go.ke/form/apply/how-to-apply?type=tourist"
+notes = "Lists exempt travellers and passport nationalities, required documents, purpose-specific documents, validity and processing time. The current list includes EAC partner-state citizens plus named nationalities with 90-day or 60-day exemptions."
+
+[fees]
+url = "https://immigration.go.ke/wp-content/uploads/2025/07/DIRECTORATE-OF-IMMIGRATION-SERVICE-DELIVERY-CHARTER-2025.pdf"
+name = "Directorate of Immigration Services Delivery Charter 2025"
+agency = "Directorate of Immigration Services"
+last_verified = "2026-08-30"
+notes = "The service charter lists USD $30 for a standard eTA and a three-day service timeline. The live portal may offer other eTA products or expedited service at different prices."
+
+[meta]
+flag = "🇰🇪"
+name_en = "Kenya"
+name_zh = "肯尼亚"
+form_code = "eTA"
+guide_slug = "eta"
+form_key = "eta"
+form_name_en = "Electronic Travel Authorisation"
+form_name_zh = "电子旅行授权"
+since_en = "visa-free policy since January 2024"
+since_zh = "2024 年 1 月起实施免签政策"
+fee_en = "USD $30 standard"
+fee_zh = "标准申请 30 美元"
+suffix = ".go.ke"
+form_type = "travel_authorization"
+field_count = 8
+sections = 3
+time_needed_en = "~15 minutes, plus document uploads"
+time_needed_zh = "约 15 分钟，另需上传材料"
+output_en = "Wait for the approval email. Download or print the attached PDF and show the approved eTA at departure and on arrival."
+output_zh = "等待批准邮件，下载或打印附件 PDF，并在出发和抵达时出示已批准的 eTA。"
+fields_intro_en = "The Kenya portal publishes its required documents, but not the live form's regexes, character limits, or validation messages. These eight cards cover only the inputs named in the public application guide. No official pattern is claimed."
+fields_intro_zh = "肯尼亚官网公开了所需材料，但没有公开实时表单的正则、字符上限或校验报错。以下 8 张卡片只覆盖官方申请指南点名的信息，不声称存在官方正则。"
+email_title_en = "Decision email arrives"
+email_title_zh = "决定邮件送达"
+email_body_en = "Standard applications are generally processed within three working days, but verification can take longer. The receipt email is not approval."
+email_body_zh = "标准申请通常在 3 个工作日内处理，但核验可能更久。收件确认邮件不等于批准。"
+printout_title_en = "Save the approval PDF"
+printout_title_zh = "保存批准 PDF"
+printout_body_en = "The official FAQ says to print the attached PDF or save it on your phone or in the official app for departure and arrival checks."
+printout_body_zh = "官网 FAQ 要求打印附件 PDF，或保存到手机及官方 App，供出发和抵达时核验。"
+verification_title_en = "No approval means no travel"
+verification_title_zh = "未批准就不能出发"
+verification_body_en = "The portal says you may travel only after Government of Kenya approval. A receipt or payment confirmation does not replace it."
+verification_body_zh = "官网写明只有获得肯尼亚政府批准后才能出行。收件确认或付款凭证不能替代批准。"

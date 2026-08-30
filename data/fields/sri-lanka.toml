@@ -1,0 +1,100 @@
+# Sri Lanka ETA — preparation checks drawn from public Department of
+# Immigration and Emigration pages. The live form publishes no readable
+# validation attributes, so this file contains no [[errors]] array.
+# Each `key` must exist in data/rules/sri-lanka.json.
+
+[[fields]]
+n = "01"
+key = "fee_category"
+section_en = "Section 1 · Fee and eligibility"
+section_zh = "第 1 段 · 费用与资格"
+example = "Free-scheme passport, fee shows zero"
+mistake = "Paying a quoted price without checking"
+mistake_why_en = "40 nationalities plus Maldives, Seychelles and Singapore currently pay nothing"
+mistake_why_zh = "40 个国籍加马尔代夫、塞舌尔、新加坡当前费用为零"
+copy_en = "Check the fee for your exact passport before paying anyone. Since 25 May 2026 the tourist ETA is free for 40 named nationalities plus Maldives, Seychelles and Singapore. Free still means you apply for the ETA."
+copy_zh = "付款前先核对自己护照的费用。2026 年 5 月 25 日起，40 个国籍加马尔代夫、塞舌尔、新加坡的旅游 ETA 免费。免费仍然要申请 ETA。"
+
+[[fields]]
+n = "02"
+key = "nationality"
+section_en = "Section 1 · Fee and eligibility"
+section_zh = "第 1 段 · 费用与资格"
+example = "As printed in the travel document"
+mistake = "Country of residence"
+mistake_why_en = "the fee and the permitted stay follow the document, not where you live"
+mistake_why_zh = "费用和停留期按证件判断，不按居住地"
+copy_en = "Enter nationality exactly as written in the travel document. Maldivian nationals in the free scheme receive 90 days. Other free-scheme tourists receive 30 days and double entry."
+copy_zh = "国籍按旅行证件原样填写。免费方案中的马尔代夫国民可停留 90 天，其他免费方案旅客为 30 天、两次入境。"
+
+[[fields]]
+n = "03"
+key = "passport_number"
+section_en = "Section 2 · Travel document"
+section_zh = "第 2 段 · 旅行证件"
+example = "Copy the exact passport value"
+mistake = "A number typed from memory"
+mistake_why_en = "the Department lists a correct passport number as an application requirement"
+mistake_why_zh = "移民局把正确的护照号列为申请要求"
+copy_en = "Copy the passport number from the passport itself. A value taken from a booking confirmation or an old visa is the common source of a mismatch at the border."
+copy_zh = "护照号从护照本身抄写。从订单确认或旧签证上抄来的号码，是过关时对不上的常见原因。"
+
+[[fields]]
+n = "04"
+key = "date_of_birth"
+section_en = "Section 2 · Travel document"
+section_zh = "第 2 段 · 旅行证件"
+example = "Copy the exact travel document value"
+mistake = "A guessed date order"
+mistake_why_en = "the live form shows its own date format on screen"
+mistake_why_zh = "实时表单会在页面上显示自己的日期格式"
+copy_en = "Match the date printed in the travel document, and use the date format the application screen shows. This guide does not restate a format the Department has not published."
+copy_zh = "按旅行证件上的日期填写，并使用申请页面显示的日期格式。移民局没有公开的格式，本页不代为声称。"
+
+[[fields]]
+n = "05"
+key = "passport_validity"
+section_en = "Section 2 · Travel document"
+section_zh = "第 2 段 · 旅行证件"
+example = "Valid at least 6 months"
+mistake = "Expires 2 months after arrival"
+mistake_why_en = "shorter than the published 6-month requirement"
+mistake_why_zh = "短于公开的 6 个月要求"
+copy_en = "The passport must be valid for at least 6 months. Check the expiry date before applying. Renewing the passport later means applying for a new ETA."
+copy_zh = "护照有效期至少 6 个月。申请前先看到期日。之后换发护照就要重新申请 ETA。"
+
+[[fields]]
+n = "06"
+key = "same_document"
+section_en = "Section 2 · Travel document"
+section_zh = "第 2 段 · 旅行证件"
+example = "The same document as in the application"
+mistake = "Travelling on a second passport"
+mistake_why_en = "the approval is tied to the document used in the application"
+mistake_why_zh = "批准与申请时使用的证件绑定"
+copy_en = "Present the same travel document at arrival that you used in the application. Dual nationals should pick one document and use it for both the ETA and the flight."
+copy_zh = "抵达时出示与申请时相同的旅行证件。双重国籍旅客先选定一本证件，ETA 和航班都用它。"
+
+[[fields]]
+n = "07"
+key = "return_ticket"
+section_en = "Section 3 · Trip conditions"
+section_zh = "第 3 段 · 行程条件"
+example = "Confirmed onward or return booking"
+mistake = "An unpaid hold"
+mistake_why_en = "the requirement is a confirmed ticket"
+mistake_why_zh = "要求的是已确认的机票"
+copy_en = "A confirmed return or onward ticket is a published entry requirement. Keep it retrievable offline, because airport wifi is not guaranteed at the counter."
+copy_zh = "已确认的返程或续程机票是公开的入境要求。最好能离线打开，机场柜台不一定有可用网络。"
+
+[[fields]]
+n = "08"
+key = "funds"
+section_en = "Section 3 · Trip conditions"
+section_zh = "第 3 段 · 行程条件"
+example = "Evidence you can support the stay"
+mistake = "Assuming approval ends the checks"
+mistake_why_en = "funds can still be checked at the port of entry"
+mistake_why_zh = "资金在口岸仍可能被查验"
+copy_en = "Sufficient funds for the stay are a published requirement. An approved ETA does not close the door on questions at the port of entry."
+copy_zh = "停留期间的充足资金是公开要求。ETA 获批不代表口岸不会再问。"

@@ -1,0 +1,7 @@
+# Saudi Arabia changelog. Append to this file when visa policy or the entry route changes.
+
+[[entries]]
+date = "2026-08-30"
+summary = "Initial Saudi tourist eVisa coverage published"
+summary_zh = "沙特旅游电子签指南首版上线"
+detail = "Covers the live tourist eVisa portal operated by the Ministry of Tourism, the 66 eligible-country list, one-year multiple-entry validity with 90-day stays, the SAR 300 base fee plus mandatory insurance and VAT, the visa finder route for other passports, and the separate Umrah and Hajj routes. Records that the portal host is not a .gov.sa suffix and must be reached from a government page."

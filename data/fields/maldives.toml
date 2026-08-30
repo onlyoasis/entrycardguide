@@ -1,0 +1,89 @@
+# Maldives IMUGA Traveller Declaration — items confirmed by the public first
+# step of the portal and by Maldives Immigration's tourist entry page. The
+# live form publishes no readable validation attributes, so this file
+# contains no [[errors]] array.
+# Each `key` must exist in data/rules/maldives.json.
+
+[[fields]]
+n = "01"
+key = "passport_page"
+section_en = "Section 1 · Traveller and document"
+section_zh = "第 1 段 · 旅客与证件"
+example = "Clear scan of the data page"
+mistake = "A photo of the visa page"
+mistake_why_en = "the step reads the data page, not another page of the passport"
+mistake_why_zh = "这一步读取的是资料页，不是护照的其他页"
+copy_en = "The first public step scans or uploads the passport data page. Have the passport itself, or a clear image of the data page, open before you start."
+copy_zh = "公开的第一步会扫描或上传护照资料页。开始前先把护照本身，或资料页的清晰图片准备好。"
+
+[[fields]]
+n = "02"
+key = "personal_details"
+section_en = "Section 1 · Traveller and document"
+section_zh = "第 1 段 · 旅客与证件"
+example = "Copy the exact passport values"
+mistake = "The spelling used on the flight booking"
+mistake_why_en = "the passport is the source of truth for these values"
+mistake_why_zh = "这些资料以护照为准"
+copy_en = "Personal details are named on the official tourist entry page. Copy them from the passport data page. A booking system's shortened or reordered name is not the reference."
+copy_zh = "官方旅游入境页面点名要求个人资料。请从护照资料页抄写。订票系统里被缩写或调换顺序的姓名不作依据。"
+
+[[fields]]
+n = "03"
+key = "purpose"
+section_en = "Section 2 · Purpose and permit"
+section_zh = "第 2 段 · 目的与许可"
+example = "Tourism"
+mistake = "Tourism, while intending to work"
+mistake_why_en = "the visa issued on arrival covers a short visit"
+mistake_why_zh = "落地签发的签证覆盖的是短期访问"
+copy_en = "Purpose of visit appears on the public first step. Answer it truthfully. The tourist visa issued at the counter covers a short visit, not employment or study."
+copy_zh = "访问目的出现在公开的第一步。如实填写。柜台签发的旅游签证覆盖短期访问，不覆盖工作或学习。"
+
+[[fields]]
+n = "04"
+key = "permit_number"
+section_en = "Section 2 · Purpose and permit"
+section_zh = "第 2 段 · 目的与许可"
+example = "Left alone when no permit applies"
+mistake = "Inventing a number to move on"
+mistake_why_en = "the field is conditional and most tourists never see it"
+mistake_why_zh = "该字段是条件字段，多数游客根本不会看到"
+copy_en = "The permit number is conditional. It appears only for travellers a permit applies to. If the portal does not ask you for one, there is nothing to fill in."
+copy_zh = "许可编号是条件字段，只对适用许可的旅客出现。门户没有问你，就没有要填的内容。"
+
+[[fields]]
+n = "05"
+key = "permit_expiry"
+section_en = "Section 2 · Purpose and permit"
+section_zh = "第 2 段 · 目的与许可"
+example = "Matches the permit document"
+mistake = "A date guessed from the permit number"
+mistake_why_en = "the expiry belongs to the permit document itself"
+mistake_why_zh = "到期日以许可文件本身为准"
+copy_en = "The expiry date is asked alongside the conditional permit number, and it comes from the permit document. It applies to the same travellers and to nobody else."
+copy_zh = "到期日与条件许可编号一同出现，取自许可文件本身。适用对象和上一项相同，其他旅客不涉及。"
+
+[[fields]]
+n = "06"
+key = "travel_details"
+section_en = "Section 3 · Trip and stay"
+section_zh = "第 3 段 · 行程与住宿"
+example = "The arrival this declaration covers"
+mistake = "A previous trip's flight"
+mistake_why_en = "the declaration covers one arrival, submitted within 96 hours before it"
+mistake_why_zh = "一份申报对应一次入境，在抵达前 96 小时内提交"
+copy_en = "Travel information is named on the official tourist entry page. Use the itinerary for the arrival this declaration covers, and submit within the 96 hours before arrival."
+copy_zh = "官方旅游入境页面点名要求行程资料。填写本次申报对应的入境行程，并在抵达前 96 小时内提交。"
+
+[[fields]]
+n = "07"
+key = "accommodation"
+section_en = "Section 3 · Trip and stay"
+section_zh = "第 3 段 · 行程与住宿"
+example = "Resort or guesthouse for the stay"
+mistake = "Island name only"
+mistake_why_en = "the page asks for accommodation details, not just a location"
+mistake_why_zh = "页面要求的是住宿资料，不只是一个地名"
+copy_en = "Accommodation details are named on the official tourist entry page. Give the resort, guesthouse or hotel for the stay rather than only the island."
+copy_zh = "官方旅游入境页面点名要求住宿资料。填写本次入住的度假村、民宿或酒店，而不是只写岛名。"

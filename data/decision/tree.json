@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "lastVerified": "2026-07-14",
+  "lastVerified": "2026-08-30",
   "start": "country",
   "states": {
     "country": {
@@ -24,7 +24,17 @@
         { "value": "new-zealand", "label": "New Zealand", "next": "nz_passport" },
         { "value": "australia", "label": "Australia", "next": "australia_passport" },
         { "value": "india", "label": "India", "next": "india_status" },
-        { "value": "turkey", "label": "Turkey", "next": "turkey_passport" }
+        { "value": "turkey", "label": "Turkey", "next": "turkey_passport" },
+        { "value": "sri-lanka", "label": "Sri Lanka", "next": "sri_lanka_fee_scheme" },
+        { "value": "maldives", "label": "Maldives", "next": "maldives_result" },
+        { "value": "taiwan", "label": "Taiwan", "next": "taiwan_status" },
+        { "value": "egypt", "label": "Egypt", "next": "egypt_passport" },
+        { "value": "saudi-arabia", "label": "Saudi Arabia", "next": "saudi_passport" },
+        { "value": "kenya", "label": "Kenya", "next": "kenya_eligibility" },
+        { "value": "israel", "label": "Israel", "next": "israel_eligibility" },
+        { "value": "cuba", "label": "Cuba", "next": "cuba_result" },
+        { "value": "curacao", "label": "Curaçao", "next": "curacao_result" },
+        { "value": "colombia", "label": "Colombia", "next": "colombia_result" }
       ]
     },
 
@@ -696,6 +706,414 @@
       "note": "Use the Ministry of Foreign Affairs list at mfa.gov.tr to check visa exemption, direct e-Visa eligibility, conditional eligibility, or another visa requirement for your passport and trip.",
       "fallback_guide": "/turkey/evisa/",
       "fallback_label": "Open the Turkey visa and e-Visa guide"
+    },
+
+    "sri_lanka_fee_scheme": {
+      "type": "question",
+      "label": "Is your passport in the free ETA scheme?",
+      "options": [
+        {
+          "value": "free_scheme",
+          "label": "One of the 40 free-scheme nationalities, or Maldives, Seychelles or Singapore",
+          "next": "sri_lanka_free_result"
+        },
+        {
+          "value": "paid",
+          "label": "Another passport / not sure",
+          "next": "sri_lanka_paid_result"
+        }
+      ]
+    },
+
+    "sri_lanka_free_result": {
+      "type": "result",
+      "country": "sri-lanka",
+      "summary": "You still need the ETA, and your fee is zero.",
+      "forms": [
+        {
+          "name": "ETA",
+          "fee": "FREE",
+          "url": "https://www.eta.gov.lk/slvisa/",
+          "guide": "/sri-lanka/eta/",
+          "agency": "Department of Immigration and Emigration, Sri Lanka",
+          "deadline": "Before travel; confirm the fee shows zero"
+        }
+      ],
+      "note": "From 25 May 2026 the tourist ETA is free for 40 named nationalities plus Maldives, Seychelles and Singapore. Free means the fee is zero, not that the ETA is skipped. Maldivian nationals receive 90 days; other free-scheme tourists receive 30 days and double entry. Children under 12 and two-day transit are also free."
+    },
+
+    "sri_lanka_paid_result": {
+      "type": "result",
+      "country": "sri-lanka",
+      "summary": "You need the ETA, and your passport pays a fee.",
+      "forms": [
+        {
+          "name": "ETA",
+          "fee": "USD $20 SAARC or $50 other passport",
+          "url": "https://www.eta.gov.lk/slvisa/",
+          "guide": "/sri-lanka/eta/",
+          "agency": "Department of Immigration and Emigration, Sri Lanka",
+          "deadline": "Before travel; the on-arrival route costs more"
+        }
+      ],
+      "note": "For passports outside the free scheme, the online tourist ETA is USD 20 for SAARC nationals and USD 50 for other nationalities. Applying on arrival costs more and can end in return travel if a referral is issued. Check the Department's fee table for the current amount before paying."
+    },
+
+    "maldives_result": {
+      "type": "result",
+      "country": "maldives",
+      "summary": "You need the free IMUGA Traveller Declaration for arrival.",
+      "forms": [
+        {
+          "name": "Traveller Declaration",
+          "fee": "FREE",
+          "url": "https://imuga.immigration.gov.mv/traveller",
+          "guide": "/maldives/traveller-declaration/",
+          "agency": "Maldives Immigration",
+          "deadline": "Within 96 hours before arrival"
+        }
+      ],
+      "note": "All foreign arrivals submit the free declaration within the 96 hours before arrival. Outbound travellers are no longer required to submit it since 15 August 2024. The tourist visa is issued on arrival and has no pre-approval step, so the declaration does not replace it."
+    },
+
+    "taiwan_status": {
+      "type": "question",
+      "label": "Which best describes you?",
+      "options": [
+        {
+          "value": "resident_status",
+          "label": "I hold an Alien Resident Certificate, Resident Visa, Diplomatic ID, or a Taiwan-area residence certificate",
+          "next": "taiwan_none_result"
+        },
+        {
+          "value": "other",
+          "label": "None of those / foreign visitor or specified permit holder",
+          "next": "taiwan_twac_result"
+        }
+      ]
+    },
+
+    "taiwan_none_result": {
+      "type": "result",
+      "country": "taiwan",
+      "summary": "You do not submit the arrival card for this trip.",
+      "forms": [],
+      "note": "The official homepage limits the arrival card to foreign nationals without an Alien Resident Certificate, Resident Visa or Diplomatic ID, specified Mainland, Hong Kong and Macao permit holders, and nationals without household registration who do not hold Taiwan-area residence certificates. Holding one of those residence documents means the arrival card is not your step.",
+      "fallback_guide": "/taiwan/twac/",
+      "fallback_label": "Read who submits the arrival card"
+    },
+
+    "taiwan_twac_result": {
+      "type": "result",
+      "country": "taiwan",
+      "summary": "You need to submit the free Taiwan Arrival Card (TWAC).",
+      "forms": [
+        {
+          "name": "TWAC",
+          "fee": "FREE",
+          "url": "https://twac.immigration.gov.tw/",
+          "guide": "/taiwan/twac/",
+          "agency": "National Immigration Agency, Ministry of the Interior",
+          "deadline": "Within 7 days before arrival"
+        }
+      ],
+      "note": "The arrival card is online only since 1 October 2025 and is free. The submission window is within 7 days before arrival, extended in July 2026. One person may file individually for up to 10 travellers, and the group-file import supports up to 16. No printout is needed at inspection because scanning the passport retrieves the record."
+    },
+
+    "egypt_passport": {
+      "type": "question",
+      "label": "Is your passport on the official eVisa list?",
+      "options": [
+        {
+          "value": "listed",
+          "label": "Yes, it is listed in the official eVisa FAQ",
+          "next": "egypt_evisa_result"
+        },
+        {
+          "value": "not_listed",
+          "label": "No / not sure",
+          "next": "egypt_check_result"
+        }
+      ]
+    },
+
+    "egypt_evisa_result": {
+      "type": "result",
+      "country": "egypt",
+      "summary": "You can apply for the Egypt e-Visa on the government portal.",
+      "forms": [
+        {
+          "name": "e-Visa",
+          "fee": "USD $30 single / $65 multiple",
+          "url": "https://www.visa2egypt.gov.eg/eVisa/Home",
+          "guide": "/egypt/evisa/",
+          "agency": "Ministry of Interior, Arab Republic of Egypt",
+          "deadline": "Create the application at least 7 days before departure"
+        }
+      ],
+      "note": "Current tourism fees are USD 30 single entry and USD 65 multiple entry. Approval and the download link arrive by email; a payment confirmation alone is not an approval. At entry the official checklist asks for a passport valid at least 6 months from arrival, a printed eVisa, an itinerary, hotel details for tourism, and a supporting letter for a business or family visit."
+    },
+
+    "egypt_check_result": {
+      "type": "result",
+      "country": "egypt",
+      "summary": "Check your visa route with an Egyptian mission before you travel.",
+      "forms": [],
+      "note": "The official eVisa FAQ lists the eligible nationalities, so a passport outside that list cannot use the portal. This does not mean visa-free entry. Check with an Egyptian embassy or consulate, and check visa-on-arrival eligibility separately: embassy guidance states that travellers on the pre-approval list cannot obtain a visa on arrival, that Bangladeshi nationals require a visa before entry, and that airlines should confirm boarding eligibility.",
+      "fallback_guide": "/egypt/evisa/",
+      "fallback_label": "Read the eligibility and visa-on-arrival limits"
+    },
+
+    "saudi_passport": {
+      "type": "question",
+      "label": "Is your passport one of the 66 eligible for the tourist eVisa?",
+      "options": [
+        {
+          "value": "eligible",
+          "label": "Yes, it is on the 66-country eVisa list",
+          "next": "saudi_evisa_result"
+        },
+        {
+          "value": "other",
+          "label": "No / not sure",
+          "next": "saudi_alt_status"
+        }
+      ]
+    },
+
+    "saudi_evisa_result": {
+      "type": "result",
+      "country": "saudi-arabia",
+      "summary": "You can apply for the Saudi tourist eVisa.",
+      "forms": [
+        {
+          "name": "Tourist eVisa",
+          "fee": "SAR 300 base + insurance and VAT",
+          "url": "https://visa.visitsaudi.com/",
+          "guide": "/saudi-arabia/tourist-evisa/",
+          "agency": "Saudi Ministry of Tourism",
+          "deadline": "Before travel; normally one year, multiple entry, up to 90 days"
+        }
+      ],
+      "note": "The portal is operated by the Ministry of Tourism, but its host is not a .gov.sa suffix, so reach it from the Saudi National Platform at my.gov.sa or from Visit Saudi and check the exact hostname before entering details. The SAR 300 base fee is not the total: mandatory medical insurance, VAT and the payment amount all affect checkout. The visa covers tourism, events, family and relative visits, leisure, and Umrah excluding Hajj. It does not cover Hajj, study or work."
+    },
+
+    "saudi_alt_status": {
+      "type": "question",
+      "label": "Do you hold a specified US, UK or Schengen visa or permanent residence, or GCC residency?",
+      "options": [
+        {
+          "value": "has_alt",
+          "label": "Yes, one of those",
+          "next": "saudi_finder_result"
+        },
+        {
+          "value": "none",
+          "label": "No / not sure",
+          "next": "saudi_mission_result"
+        }
+      ]
+    },
+
+    "saudi_finder_result": {
+      "type": "result",
+      "country": "saudi-arabia",
+      "summary": "Use the KSA Visa Finder, because your eligibility is decided differently.",
+      "forms": [
+        {
+          "name": "KSA Visa Finder",
+          "fee": "Depends on the route the finder returns",
+          "url": "https://my.gov.sa/en/experience/615129/615469",
+          "guide": "/saudi-arabia/tourist-evisa/",
+          "agency": "Saudi National Unified Platform",
+          "deadline": "Before booking; the route decides the fee and conditions"
+        }
+      ],
+      "note": "Holders of specified valid US, UK or Schengen visas or permanent residence, and GCC residents, are decided on different terms from the 66-country eVisa list. Transit visas, Umrah and Nusuk permits, Hajj visas and GCC-resident routes are separate products with their own conditions."
+    },
+
+    "saudi_mission_result": {
+      "type": "result",
+      "country": "saudi-arabia",
+      "summary": "Check the current route through the visa finder or a Saudi mission.",
+      "forms": [],
+      "note": "A passport outside the 66-country list is not visa-free. Use the current KSA Visa Finder on my.gov.sa or the KSA Visa platform at ksavisa.sa, or apply through a Saudi mission. Umrah and Hajj have their own routes: the Umrah visa through KSA Visa, the Umrah permit through Nusuk, and Hajj its own visa and permit.",
+      "fallback_guide": "/saudi-arabia/tourist-evisa/",
+      "fallback_label": "Read which Saudi visa route applies"
+    },
+
+    "kenya_eligibility": {
+      "type": "question",
+      "label": "Does your passport or traveller status appear on Kenya's current eTA exemption list?",
+      "options": [
+        {
+          "value": "exempt",
+          "label": "Yes, I confirmed an exemption on the Kenya portal",
+          "next": "kenya_exempt_result"
+        },
+        {
+          "value": "required",
+          "label": "No, I confirmed that I need an eTA",
+          "next": "kenya_eta_result"
+        },
+        {
+          "value": "unknown",
+          "label": "I have not checked the current list",
+          "next": "kenya_check_result"
+        }
+      ]
+    },
+
+    "kenya_exempt_result": {
+      "type": "result",
+      "country": "kenya",
+      "summary": "You do not need a Kenya eTA under the exemption you confirmed.",
+      "forms": [],
+      "note": "Carry the passport or status evidence that supports the exemption. Do not pay for an eTA that the current Government of Kenya list says you do not need."
+    },
+
+    "kenya_eta_result": {
+      "type": "result",
+      "country": "kenya",
+      "summary": "Apply for the Kenya Electronic Travel Authorisation before travel.",
+      "forms": [
+        {
+          "name": "Kenya eTA",
+          "fee": "USD $30 standard",
+          "url": "https://etakenya.go.ke/",
+          "guide": "/kenya/eta/",
+          "agency": "Directorate of Immigration Services",
+          "deadline": "Allow at least three working days; travel only after approval"
+        }
+      ],
+      "note": "The standard government fee is USD $30. Extra products or expedited processing can cost more. A receipt is not approval."
+    },
+
+    "kenya_check_result": {
+      "type": "result",
+      "country": "kenya",
+      "summary": "Check Kenya's current exemption list before paying.",
+      "forms": [],
+      "note": "The current list includes EAC citizens, named passport nationalities and traveller-status exemptions. Confirm your exact passport and status on etakenya.go.ke first."
+    },
+
+    "israel_eligibility": {
+      "type": "question",
+      "label": "Which Israel entry route applies to your passport and visit?",
+      "options": [
+        {
+          "value": "visa_exempt",
+          "label": "Visa-exempt passport, short tourism or business visit",
+          "next": "israel_eta_result"
+        },
+        {
+          "value": "visa_required",
+          "label": "My passport requires an Israeli visitor visa",
+          "next": "israel_visa_result"
+        },
+        {
+          "value": "other_status",
+          "label": "I hold an exempt Israeli status or valid Israeli visa",
+          "next": "israel_status_result"
+        },
+        {
+          "value": "unknown",
+          "label": "I am not sure",
+          "next": "israel_check_result"
+        }
+      ]
+    },
+
+    "israel_eta_result": {
+      "type": "result",
+      "country": "israel",
+      "summary": "Apply for ETA-IL before the short visit.",
+      "forms": [
+        {
+          "name": "ETA-IL",
+          "fee": "ILS 25",
+          "url": "https://israel-entry.piba.gov.il/",
+          "guide": "/israel/eta-il/",
+          "agency": "Population and Immigration Authority (PIBA)",
+          "deadline": "Apply at least 72 hours before non-refundable travel arrangements"
+        }
+      ],
+      "note": "ETA-IL is only for visa-exempt citizens making an eligible short visit. The fee is non-refundable and approval does not guarantee admission."
+    },
+
+    "israel_visa_result": {
+      "type": "result",
+      "country": "israel",
+      "summary": "Do not apply for ETA-IL. Use the Israeli visitor-visa route.",
+      "forms": [],
+      "note": "ETA-IL does not convert a visa-required passport into a visa-exempt one. Paying ILS 25 here would not replace the required B/2 visitor visa."
+    },
+
+    "israel_status_result": {
+      "type": "result",
+      "country": "israel",
+      "summary": "Do not buy a second ETA-IL if your current Israeli status or visa is exempt.",
+      "forms": [],
+      "note": "Verify that the passport and existing status remain valid for this trip. Use PIBA's eligibility check if the status has changed."
+    },
+
+    "israel_check_result": {
+      "type": "result",
+      "country": "israel",
+      "summary": "Check visa exemption before paying for ETA-IL.",
+      "forms": [],
+      "note": "Start at the official gov.il eligibility page. Visa-exempt short visitors use ETA-IL; visa-required travellers use the visa route."
+    },
+
+    "cuba_result": {
+      "type": "result",
+      "country": "cuba",
+      "summary": "Complete the free D'Viajeros form for the arriving trip.",
+      "forms": [
+        {
+          "name": "D'Viajeros",
+          "fee": "FREE",
+          "url": "https://dviajeros.mitrans.gob.cu/inicio",
+          "guide": "/cuba/dviajeros/",
+          "agency": "Cuban Ministry of Transport with immigration, customs and public-health services",
+          "deadline": "Within seven days before travel"
+        }
+      ],
+      "note": "Each arriving passenger files D'Viajeros for each arrival, including children. It is not the tourist visa. If the trip requires a tourist eVisa, obtain that separate paid code first, then enter it in D'Viajeros to produce the QR."
+    },
+
+    "curacao_result": {
+      "type": "result",
+      "country": "curacao",
+      "summary": "Complete Curaçao's free Digital Immigration Card for each visitor.",
+      "forms": [
+        {
+          "name": "Digital Immigration Card",
+          "fee": "FREE",
+          "url": "https://dicardcuracao.com/dicard/",
+          "guide": "/curacao/digital-immigration-card/",
+          "agency": "Curaçao Immigration through the Curaçao Tourist Board designated portal",
+          "deadline": "Within seven days before departure; no later than one hour before arrival"
+        }
+      ],
+      "note": "The designated host uses .com, not a government suffix. Verify it by following the DI Card link from curacao.com. The official DI Card itself never requires payment."
+    },
+
+    "colombia_result": {
+      "type": "result",
+      "country": "colombia",
+      "summary": "You may file the free, optional Check-Mig pre-registration for this entry or exit.",
+      "forms": [
+        {
+          "name": "Check-Mig",
+          "fee": "FREE",
+          "url": "https://apps.migracioncolombia.gov.co/pre-registro/public/",
+          "guide": "/colombia/check-mig/",
+          "agency": "Unidad Administrativa Especial Migración Colombia",
+          "deadline": "From 72 hours before travel until one hour before travel"
+        }
+      ],
+      "note": "Migración Colombia says Check-Mig is optional and recommended to speed up control. It is not a visa or admission approval, and the government service has no fee."
     }
   }
 }

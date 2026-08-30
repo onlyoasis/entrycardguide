@@ -1,0 +1,124 @@
+# Egypt e-Visa — items published by the government portal and its FAQ.
+# The live application publishes no readable validation attributes, so this
+# file contains no [[errors]] array.
+# Each `key` must exist in data/rules/egypt.json.
+
+[[fields]]
+n = "01"
+key = "eligibility"
+section_en = "Section 1 · Eligibility and visa type"
+section_zh = "第 1 段 · 资格与签证类型"
+example = "Passport listed in the official FAQ"
+mistake = "Assuming every passport can use it"
+mistake_why_en = "the FAQ lists the eligible nationalities"
+mistake_why_zh = "FAQ 列出的是符合资格的国籍"
+copy_en = "Check the FAQ list for your exact passport before starting. The eVisa portal is open to the listed nationalities, not to everyone."
+copy_zh = "开始之前先在 FAQ 名单里查自己的护照。电子签门户面向名单上的国籍开放，并非人人可用。"
+
+[[fields]]
+n = "02"
+key = "visa_type"
+section_en = "Section 1 · Eligibility and visa type"
+section_zh = "第 1 段 · 资格与签证类型"
+example = "Single USD 30, multiple USD 65"
+mistake = "Two single-entry visas for one round trip"
+mistake_why_en = "two singles cost more than one multiple-entry visa"
+mistake_why_zh = "两次单次签的总价高于一张多次签"
+copy_en = "Current tourism fees are USD 30 single entry and USD 65 multiple entry. Pick the one that matches the trip. Buying a second single-entry visa later is not the cheaper path."
+copy_zh = "当前旅游费用为单次 30 美元、多次 65 美元。按行程选择。之后再买第二张单次签，并不是更省钱的做法。"
+
+[[fields]]
+n = "03"
+key = "passport_number"
+section_en = "Section 2 · Application"
+section_zh = "第 2 段 · 申请"
+example = "Copy the exact passport value"
+mistake = "The number from an older passport"
+mistake_why_en = "the issued eVisa is tied to the document in the application"
+mistake_why_zh = "签发的电子签与申请时的证件绑定"
+copy_en = "Copy the number from the passport you will travel on. The issued eVisa is tied to that document, so a renewed passport means a new application."
+copy_zh = "从本次出行使用的护照上抄号码。签发的电子签与该证件绑定，换发护照就要重新申请。"
+
+[[fields]]
+n = "04"
+key = "passport_validity"
+section_en = "Section 2 · Application"
+section_zh = "第 2 段 · 申请"
+example = "Valid 6+ months from arrival"
+mistake = "Expires 3 months after arrival"
+mistake_why_en = "the official entry checklist requires at least 6 months from arrival"
+mistake_why_zh = "官方入境清单要求自抵达起至少 6 个月"
+copy_en = "The entry checklist requires a passport valid at least 6 months from arrival. Check the expiry before paying, because the fee does not come back."
+copy_zh = "入境清单要求护照自抵达起至少有 6 个月有效期。付款前先看到期日，费用不会退回来。"
+
+[[fields]]
+n = "05"
+key = "travel_dates"
+section_en = "Section 2 · Application"
+section_zh = "第 2 段 · 申请"
+example = "Applied 3 weeks before departure"
+mistake = "Applying the day before the flight"
+mistake_why_en = "the portal says to apply at least 7 days before departure"
+mistake_why_zh = "门户要求至少在出发前 7 天创建申请"
+copy_en = "The portal says to create the application at least 7 days before departure. Treat 7 days as the floor, not the plan."
+copy_zh = "门户说明至少在出发前 7 天创建申请。把 7 天当成下限，而不是计划本身。"
+
+[[fields]]
+n = "06"
+key = "email"
+section_en = "Section 2 · Application"
+section_zh = "第 2 段 · 申请"
+example = "An inbox you control"
+mistake = "An agent's inbox"
+mistake_why_en = "the approval and the download link go to that address"
+mistake_why_zh = "批准和下载链接都发到那个邮箱"
+copy_en = "Approval and the download link arrive by email. If the address belongs to someone else, getting your own eVisa depends on them answering."
+copy_zh = "批准和下载链接通过邮件送达。邮箱在别人手里，拿到自己的电子签就要等对方回应。"
+
+[[fields]]
+n = "07"
+key = "printed_evisa"
+section_en = "Section 3 · Entry checklist"
+section_zh = "第 3 段 · 入境清单"
+example = "Paper copy in the carry-on"
+mistake = "Only a screenshot"
+mistake_why_en = "the checklist names a printed eVisa"
+mistake_why_zh = "清单点名要求打印的电子签"
+copy_en = "A printed eVisa is on the official entry checklist. Print it before leaving home rather than counting on an airport printer."
+copy_zh = "打印的电子签在官方入境清单上。出发前就打印好，不要指望机场的打印机。"
+
+[[fields]]
+n = "08"
+key = "itinerary"
+section_en = "Section 3 · Entry checklist"
+section_zh = "第 3 段 · 入境清单"
+example = "Trip plan for this visit"
+mistake = "Nothing beyond the inbound flight"
+mistake_why_en = "the checklist names an itinerary"
+mistake_why_zh = "清单点名要求行程单"
+copy_en = "The checklist names an itinerary. Keep the trip plan available on arrival alongside the printed eVisa."
+copy_zh = "清单点名要求行程单。抵达时把行程和打印的电子签放在一起备查。"
+
+[[fields]]
+n = "09"
+key = "accommodation"
+section_en = "Section 3 · Entry checklist"
+section_zh = "第 3 段 · 入境清单"
+example = "Hotel booking for a tourism visit"
+mistake = "A booking that can only be opened online"
+mistake_why_en = "checks can happen before you reach usable wifi"
+mistake_why_zh = "查验可能发生在还没连上可用网络之前"
+copy_en = "For tourism, the checklist names a hotel booking or accommodation details. Save it so it opens without wifi."
+copy_zh = "旅游用途下，清单要求酒店订单或住宿资料。存成离线也能打开的形式。"
+
+[[fields]]
+n = "10"
+key = "supporting_letter"
+section_en = "Section 3 · Entry checklist"
+section_zh = "第 3 段 · 入境清单"
+example = "Letter for a business or family visit"
+mistake = "Preparing one for a plain holiday"
+mistake_why_en = "this item applies to business and family visits"
+mistake_why_zh = "该项针对商务和探亲访问"
+copy_en = "The checklist names a supporting letter for a business or family visit. A straightforward tourism trip does not need one."
+copy_zh = "清单要求商务或探亲访问提供邀请或说明函。单纯旅游行程不需要这一项。"

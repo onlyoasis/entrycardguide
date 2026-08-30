@@ -1,0 +1,92 @@
+# Saudi Arabia — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-08-30
+
+[tourist_evisa]
+url = "https://visa.visitsaudi.com/"
+name = "Saudi Tourist eVisa portal"
+agency = "Saudi Ministry of Tourism"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://visa.visitsaudi.com/"
+notes = "Read 2026-08-30. This is the live portal for the ordinary eligible-country tourist eVisa. It calls itself the official tourist eVisa portal, and its terms page says the service is operated by the Ministry of Tourism. The host is NOT a .gov.sa suffix, so every page that links here must tell the traveller to reach it from the Saudi National Platform or Visit Saudi and to check the exact hostname before entering passport or card details. 66 eligible-country passports can apply. The eVisa is normally one year, multiple entry, up to 90 days per stay, and the passport needs at least 6 months validity at entry. The candidate address visa.mofa.gov.sa is not the clearest current entry point for this product."
+
+[terms]
+url = "https://visa.visitsaudi.com/Home/TermsConditions"
+name = "Tourist eVisa terms and conditions"
+agency = "Saudi Ministry of Tourism"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://visa.visitsaudi.com/Home/TermsConditions"
+notes = "Read 2026-08-30. States that the service is operated by the Ministry of Tourism, and sets out what the tourist visa covers: tourism, events, family and relative visits, leisure, and Umrah excluding Hajj. It does not cover Hajj, study or work. Same non-government host caveat as the portal itself."
+
+[national_platform]
+url = "https://my.gov.sa/en/content/tourism"
+name = "Saudi National Platform tourism section"
+agency = "Saudi National Unified Platform"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://my.gov.sa/en/content/tourism"
+notes = "Read 2026-08-30. Government overview on a .gov.sa host. Use this page as the government-side starting point, then follow its links out to the tourist eVisa portal, so the non-government hostname is reached from a government page rather than from a search result."
+
+[visa_finder]
+url = "https://my.gov.sa/en/experience/615129/615469"
+name = "Saudi visa finder overview"
+agency = "Saudi National Unified Platform"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://my.gov.sa/en/experience/615129/615469"
+notes = "Read 2026-08-30. Current government overview of which visa route applies. Holders of specified valid US, UK or Schengen visas or permanent residence, and GCC residents, must use the finder because their eligibility differs from the 66-country eVisa list."
+
+[ksa_visa]
+url = "https://ksavisa.sa/"
+name = "KSA Visa platform"
+agency = "Saudi Ministry of Foreign Affairs"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://ksavisa.sa/"
+notes = "Read 2026-08-30. The broad Saudi visa platform run by the Ministry of Foreign Affairs, covering routes beyond the ordinary tourist eVisa. Passports outside the 66-country list use this platform or a Saudi mission."
+
+[umrah_route]
+url = "https://my.gov.sa/en/services/2691010"
+name = "Umrah visa and permit routes"
+agency = "Saudi National Unified Platform"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://my.gov.sa/en/services/2691010"
+notes = "Read 2026-08-30. Government page separating the routes: the Umrah visa is applied for through KSA Visa, and the Umrah permit through Nusuk. Hajj requires its own visa and permit; the tourist eVisa does not permit Hajj."
+
+# Country-page metadata (consumed by country-form and how-to-fill layouts).
+# Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
+[meta]
+flag = "🇸🇦"
+name_en = "Saudi Arabia"
+name_zh = "沙特阿拉伯"
+form_code = "Tourist eVisa"
+guide_slug = "tourist-evisa"
+form_key = "tourist_evisa"
+form_name_en = "Saudi Tourist eVisa"
+form_name_zh = "沙特旅游电子签"
+since_en = "current tourist eVisa for 66 eligible countries"
+since_zh = "面向 66 个符合资格国家的现行旅游电子签"
+fee_en = "SAR 300 base + insurance and VAT"
+fee_zh = "300 里亚尔基础费，另加保险和增值税"
+suffix = ".gov.sa"
+form_type = "evisa"
+
+field_count = 9
+sections = 3
+time_needed_en = "varies"
+time_needed_zh = "时间不定"
+output_en = "The issued eVisa is tied to the passport used in the application. Carry it with that passport, and keep the mandatory medical insurance document with it."
+output_zh = "签发的电子签与申请时使用的护照绑定。携带该护照和电子签，并把强制医疗保险文件一并带好。"
+
+fields_intro_en = "The tourist eVisa portal and the government overview pages publish eligibility, validity, the fee components and what the visa covers. They do not publish the live application's regexes, character limits or error text, so this guide states none. The nine cards below follow those public pages."
+fields_intro_zh = "旅游电子签门户和政府概览页面公开了资格、有效期、费用构成以及签证涵盖范围，但没有公开实时申请表的正则、字符上限或报错原文，所以本页一条都不写。以下 9 张卡片按这些公开页面整理。"
+
+email_title_en = "Check the hostname before paying"
+email_title_zh = "付款前先核对主机名"
+email_body_en = "The tourist eVisa portal host is not a .gov.sa suffix. Reach it from the Saudi National Platform or Visit Saudi, and confirm the exact hostname before entering passport or card details."
+email_body_zh = "旅游电子签门户的主机名不是 .gov.sa 后缀。请从沙特国家统一平台或 Visit Saudi 点进去，填写护照或银行卡资料前先核对完整主机名。"
+printout_title_en = "Carry the insurance too"
+printout_title_zh = "保险文件也要带"
+printout_body_en = "Medical insurance is mandatory and is part of the checkout total. Keep its document with the eVisa and the passport."
+printout_body_zh = "医疗保险是强制项，也计入结账总额。把保险文件和电子签、护照放在一起。"
+verification_title_en = "The visa has limits"
+verification_title_zh = "签证有适用边界"
+verification_body_en = "The tourist visa covers tourism, events, family and relative visits, leisure, and Umrah excluding Hajj. It does not cover Hajj, study or work."
+verification_body_zh = "旅游签证涵盖旅游、活动、探亲访友、休闲，以及不含朝觐（Hajj）的副朝（Umrah）。它不涵盖朝觐、留学和工作。"

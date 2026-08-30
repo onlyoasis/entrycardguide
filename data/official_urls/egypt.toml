@@ -1,0 +1,68 @@
+# Egypt — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-08-30
+
+[evisa]
+url = "https://www.visa2egypt.gov.eg/eVisa/Home"
+name = "Egypt e-Visa Portal"
+agency = "Ministry of Interior, Arab Republic of Egypt"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://www.visa2egypt.gov.eg/eVisa/Home"
+notes = "Read 2026-08-30. The government e-Visa portal, on a .gov.eg host. Current fees are USD 30 for a single-entry tourist visa and USD 65 for a multiple-entry tourist visa. The portal says to create the application at least 7 days before departure, and that the approval and download link arrive by email."
+
+[faq]
+url = "https://www.visa2egypt.gov.eg/eVisa/FAQ"
+name = "Egypt e-Visa FAQ and eligible nationalities"
+agency = "Ministry of Interior, Arab Republic of Egypt"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://www.visa2egypt.gov.eg/eVisa/FAQ"
+notes = "Read 2026-08-30. Lists the nationalities currently eligible to use the eVisa, so the portal is not open to every passport. The entry checklist on this page is a passport valid at least 6 months from arrival, a printed eVisa, an itinerary, a supporting letter for a business or family visit, and hotel booking or accommodation details for tourism."
+
+[embassy_visa_requirements]
+url = "https://egyptembassy.net/consular-services/visas-travel/visa-requirements/"
+name = "Egyptian Embassy visa requirements"
+agency = "Embassy of the Arab Republic of Egypt in Washington, D.C."
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://egyptembassy.net/consular-services/visas-travel/visa-requirements/"
+notes = "Read 2026-08-30. Note the host: egyptembassy.net is the Egyptian Embassy in Washington's own site and does not carry a government suffix, so treat it as embassy guidance rather than as the application portal. It states that travellers on the pre-approval list cannot obtain a visa on arrival, that Bangladeshi nationals require a visa before entry, and that airlines should confirm boarding eligibility. Visa on arrival is therefore a separate product whose availability depends on passport and port."
+
+# Country-page metadata (consumed by country-form and how-to-fill layouts).
+# Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
+[meta]
+flag = "🇪🇬"
+name_en = "Egypt"
+name_zh = "埃及"
+form_code = "e-Visa"
+guide_slug = "evisa"
+form_key = "evisa"
+form_name_en = "Egypt Electronic Visa"
+form_name_zh = "埃及电子签证"
+since_en = "government e-Visa portal"
+since_zh = "政府电子签门户"
+fee_en = "USD $30 single / $65 multiple"
+fee_zh = "单次 30 美元 / 多次 65 美元"
+suffix = ".gov.eg"
+form_type = "evisa"
+
+field_count = 10
+sections = 3
+time_needed_en = "varies"
+time_needed_zh = "时间不定"
+output_en = "The approval and download link arrive by email. Print the eVisa and carry it with the passport used in the application; the printed eVisa is on the official entry checklist."
+output_zh = "批准和下载链接通过邮件送达。把电子签打印出来，与申请时使用的护照一起携带；打印件在官方入境清单上。"
+
+fields_intro_en = "The e-Visa portal and its FAQ publish eligibility, fees, the 7-day lead time and the entry checklist. They do not publish the live application's regexes, character limits or error text, so this guide states none. The 10 cards below follow those public pages."
+fields_intro_zh = "电子签门户和 FAQ 公开了资格、费用、提前 7 天的时限和入境清单，但没有公开实时申请表的正则、字符上限或报错原文，所以本页一条都不写。以下 10 张卡片按这些公开页面整理。"
+
+email_title_en = "Approval arrives by email"
+email_title_zh = "批准通过邮件送达"
+email_body_en = "The portal sends the approval and the download link to the address in the application. A payment confirmation on its own is not an approved eVisa."
+email_body_zh = "门户会把批准和下载链接发到申请时填写的邮箱。仅有付款确认，不等于电子签已获批。"
+printout_title_en = "Print the eVisa"
+printout_title_zh = "把电子签打印出来"
+printout_body_en = "A printed eVisa is on the official entry checklist. Carry it on paper together with the passport used in the application."
+printout_body_zh = "打印的电子签在官方入境清单上。请携带纸质件，并带上申请时使用的护照。"
+verification_title_en = "Bring the rest of the checklist"
+verification_title_zh = "清单其余项也要带齐"
+verification_body_en = "The FAQ checklist also names a passport valid at least 6 months from arrival, an itinerary, hotel details for tourism, and a supporting letter for a business or family visit."
+verification_body_zh = "FAQ 清单还要求护照自抵达起至少 6 个月有效、行程单、旅游用途的酒店资料，以及商务或探亲的邀请或说明函。"

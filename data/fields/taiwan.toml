@@ -1,0 +1,161 @@
+# Taiwan TWAC — items named by the official English user manual at
+# https://twac.immigration.gov.tw/files/UserManual_Eng.pdf. The live form
+# publishes no readable validation attributes, so this file contains no
+# [[errors]] array.
+# Each `key` must exist in data/rules/taiwan.json.
+
+[[fields]]
+n = "01"
+key = "email_verification"
+section_en = "Section 1 · Account and document"
+section_zh = "第 1 段 · 账户与证件"
+example = "An inbox you can open during the trip"
+mistake = "An agent's inbox"
+mistake_why_en = "verification and the confirmation both land in that inbox"
+mistake_why_zh = "验证码和确认件都会发到那个邮箱"
+copy_en = "The manual starts with email verification and ends with a confirmation email or electronic document. Use an address you can open while travelling, not one someone else controls."
+copy_zh = "手册的流程从邮箱验证开始，以确认邮件或电子文件结束。用旅途中自己打得开的邮箱，不要用别人掌握的。"
+
+[[fields]]
+n = "02"
+key = "passport_entry"
+section_en = "Section 1 · Account and document"
+section_zh = "第 1 段 · 账户与证件"
+example = "Upload the passport, or type the values"
+mistake = "Values from an expired passport"
+mistake_why_en = "the record is retrieved by scanning the passport you carry"
+mistake_why_zh = "记录靠扫描你携带的护照调出"
+copy_en = "The manual offers a passport upload or manual entry. Either path must match the passport you carry, because inspection retrieves the record from a passport scan."
+copy_zh = "手册提供上传护照或手动输入两条路径。无论哪一条，都要与随身携带的护照一致，因为查验时靠扫描护照调出记录。"
+
+[[fields]]
+n = "03"
+key = "nationality"
+section_en = "Section 1 · Account and document"
+section_zh = "第 1 段 · 账户与证件"
+example = "As shown in the travel document"
+mistake = "The country you flew from"
+mistake_why_en = "nationality follows the document, not the itinerary"
+mistake_why_zh = "国籍按证件填，不按行程"
+copy_en = "Enter nationality as the travel document shows it. A transit point or a country of residence is a different thing and does not belong in this field."
+copy_zh = "国籍按旅行证件填写。中转地或居住国是另一回事，不填在这里。"
+
+[[fields]]
+n = "04"
+key = "passport_expiry"
+section_en = "Section 1 · Account and document"
+section_zh = "第 1 段 · 账户与证件"
+example = "Copy the exact passport value"
+mistake = "The issue date"
+mistake_why_en = "the field asks for expiry, and the two sit next to each other on the data page"
+mistake_why_zh = "这里要的是到期日，资料页上它和签发日紧挨着"
+copy_en = "Copy the expiry date from the passport data page. Issue date and expiry date sit next to each other there, which is exactly why they get swapped."
+copy_zh = "从护照资料页抄到期日。签发日和到期日在资料页上紧挨着，这也正是它们容易填反的原因。"
+
+[[fields]]
+n = "05"
+key = "visa_type_number"
+section_en = "Section 2 · Applicant details"
+section_zh = "第 2 段 · 申请人资料"
+example = "Left alone when the form does not ask"
+mistake = "Inventing a number to continue"
+mistake_why_en = "the manual marks this pair as conditional"
+mistake_why_zh = "手册把这一组标为条件字段"
+copy_en = "Visa type and number are conditional. They appear only for travellers whose entry route requires them. If the form does not show them, there is nothing missing."
+copy_zh = "签证类型和号码是条件字段，只对入境路径需要的旅客出现。表单没有显示，就不是漏填。"
+
+[[fields]]
+n = "06"
+key = "occupation"
+section_en = "Section 2 · Applicant details"
+section_zh = "第 2 段 · 申请人资料"
+example = "Your actual role"
+mistake = "A title chosen to look better"
+mistake_why_en = "the field is conditional and answered as it is"
+mistake_why_zh = "该字段是条件字段，如实填写即可"
+copy_en = "Occupation and job title are conditional in the manual. When the form presents them, answer with the role you actually hold."
+copy_zh = "职业和职称在手册中属于条件字段。表单出现时，按实际身份填写。"
+
+[[fields]]
+n = "07"
+key = "phone"
+section_en = "Section 2 · Applicant details"
+section_zh = "第 2 段 · 申请人资料"
+example = "A number reachable during the trip"
+mistake = "A home number switched off abroad"
+mistake_why_en = "the contact details are collected for this visit"
+mistake_why_zh = "联系方式是为本次访问收集的"
+copy_en = "A phone number is collected next to the email. Give one that can be reached during the visit rather than a line you turn off when you land."
+copy_zh = "电话号码和邮箱一起收集。填一个访问期间打得通的号码，不要填落地后就关掉的那条线。"
+
+[[fields]]
+n = "08"
+key = "arrival_transport"
+section_en = "Section 3 · Travel"
+section_zh = "第 3 段 · 行程"
+example = "The flight or vessel that lands in Taiwan"
+mistake = "The marketing carrier on a codeshare"
+mistake_why_en = "use the service that actually operates the arriving segment"
+mistake_why_zh = "填实际承运抵达航段的班次"
+copy_en = "The manual collects the arrival flight or vessel. Use the operating service for the segment that lands in Taiwan, which is what appears on the manifest."
+copy_zh = "手册收集抵达航班或船班。填实际承运抵达航段的班次，也就是旅客名单上出现的那个。"
+
+[[fields]]
+n = "09"
+key = "departure_transport"
+section_en = "Section 3 · Travel"
+section_zh = "第 3 段 · 行程"
+example = "The flight or vessel you leave on"
+mistake = "Leaving it until later"
+mistake_why_en = "the form asks for it at submission time"
+mistake_why_zh = "表单在提交时就要这一项"
+copy_en = "The departure flight or vessel is asked in the same section. Have the onward booking to hand before you start, because the form asks for it at submission time."
+copy_zh = "离境航班或船班在同一段被问到。开始前先把续程订单准备好，因为提交时就要填。"
+
+[[fields]]
+n = "10"
+key = "departure_date"
+section_en = "Section 3 · Travel"
+section_zh = "第 3 段 · 行程"
+example = "DD/MM/YYYY"
+mistake = "MM/DD/YYYY"
+mistake_why_en = "the manual gives DD/MM/YYYY for this field"
+mistake_why_zh = "手册对该字段给出的格式是 DD/MM/YYYY"
+copy_en = "The manual states DD/MM/YYYY for the departure date. That is the one date format the official document publishes, so it is the one this guide repeats."
+copy_zh = "手册写明离境日期使用 DD/MM/YYYY。这是官方文件公开的唯一日期格式，本页也只复述这一条。"
+
+[[fields]]
+n = "11"
+key = "purpose"
+section_en = "Section 4 · Stay"
+section_zh = "第 4 段 · 停留"
+example = "The real purpose of the trip"
+mistake = "Other, with the reason left blank"
+mistake_why_en = "choosing Other opens a reason field that must be answered"
+mistake_why_zh = "选择 Other 会展开必须填写的原因栏"
+copy_en = "Purpose of visit is collected. Choosing Other opens a reason field. Choosing to visit relatives opens a relative contact field. Pick the purpose that is true and then finish the field it opens."
+copy_zh = "表单收集访问目的。选择 Other 会展开原因栏，选择探亲会展开亲属联系人栏。先选真实目的，再把随之出现的字段填完。"
+
+[[fields]]
+n = "12"
+key = "accommodation"
+section_en = "Section 4 · Stay"
+section_zh = "第 4 段 · 停留"
+example = "Hotel or address for the stay"
+mistake = "City name only"
+mistake_why_en = "the field asks where you are staying"
+mistake_why_zh = "该字段问的是住在哪里"
+copy_en = "Give the address or property where you are staying. A city name on its own answers a different question than the one being asked."
+copy_zh = "填写实际入住的地址或住宿名称。只写城市名，回答的不是这个问题。"
+
+[[fields]]
+n = "13"
+key = "relative_contact"
+section_en = "Section 4 · Stay"
+section_zh = "第 4 段 · 停留"
+example = "Shown only when visiting relatives"
+mistake = "Filling it for a tourism trip"
+mistake_why_en = "the field appears only for the visiting-relatives purpose"
+mistake_why_zh = "该字段只在探亲目的下出现"
+copy_en = "The manual adds a relative contact when the purpose is visiting relatives. It does not appear for other purposes, so there is nothing to prepare unless that is your trip."
+copy_zh = "目的为探亲时，手册会增加亲属联系人字段。其他目的不会出现，所以不是探亲就不用准备。"

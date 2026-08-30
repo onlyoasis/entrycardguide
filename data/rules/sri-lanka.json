@@ -1,0 +1,88 @@
+{
+  "country": "sri-lanka",
+  "officialUrl": "https://www.eta.gov.lk/slvisa/",
+  "lastVerified": "2026-08-30",
+  "source": "https://www.immigration.gov.lk/pages_e.php?id=60 (free-scheme policy), https://www.immigration.gov.lk/pages_e.php?id=45 (fee table), https://www.eta.gov.lk/slvisa/ and https://www.eta.gov.lk/slvisa/visainfo/apply.jsp?locale=en_US (application information), plus the live terms served at https://eta.gov.lk/etaslvisa/etaNavServ?payType=1, all read 2026-08-30. These pages state what the application requires but publish no HTML validation attributes, regexes, character limits or error text for the live form. No pattern is claimed below, and no field carries an invented length or format rule.",
+  "fields": {
+    "fee_category": {
+      "type": "nationality",
+      "label": "ETA fee category",
+      "required": true,
+      "placeholder": "Check the fee for this exact passport",
+      "help": "From 25 May 2026 the tourist ETA is free for 40 named nationalities plus Maldives, Seychelles and Singapore. Other passports pay USD 20 for SAARC nationals or USD 50 for other nationalities. Children under 12 and two-day transit are free. Free means the fee is zero, not that the ETA is skipped.",
+      "errors": {
+        "required": "Check the fee category before paying anyone"
+      }
+    },
+    "nationality": {
+      "type": "nationality",
+      "label": "Nationality",
+      "required": true,
+      "placeholder": "Exactly as written in the travel document",
+      "help": "Enter nationality exactly as it appears in the travel document you will carry. This answer decides both the fee and the permitted stay.",
+      "errors": {
+        "required": "Nationality is required"
+      }
+    },
+    "passport_number": {
+      "type": "text",
+      "label": "Passport number",
+      "required": true,
+      "placeholder": "Copy the exact passport value",
+      "help": "The Department lists a correct passport number as an application requirement. Copy it from the passport rather than from a booking confirmation or an old visa.",
+      "errors": {
+        "required": "Passport number is required"
+      }
+    },
+    "date_of_birth": {
+      "type": "text",
+      "label": "Date of birth",
+      "required": true,
+      "placeholder": "Copy the exact travel document value",
+      "help": "Match the date printed in the travel document. The live form's own date format is shown on the application screen; this guide does not restate it.",
+      "errors": {
+        "required": "Date of birth is required"
+      }
+    },
+    "passport_validity": {
+      "type": "text",
+      "label": "Passport validity",
+      "required": true,
+      "placeholder": "At least 6 months",
+      "help": "The Department requires a passport valid for at least 6 months. Check the expiry date before applying, because a renewed passport means a new ETA.",
+      "errors": {
+        "required": "Confirm the passport validity"
+      }
+    },
+    "same_document": {
+      "type": "text",
+      "label": "Document used at arrival",
+      "required": true,
+      "placeholder": "The same document as in the application",
+      "help": "The travel document used for the application must be the document presented at arrival. A second passport, even a valid one, does not carry the approval.",
+      "errors": {
+        "required": "Confirm which travel document you will carry"
+      }
+    },
+    "return_ticket": {
+      "type": "text",
+      "label": "Confirmed return ticket",
+      "required": true,
+      "placeholder": "Onward or return booking",
+      "help": "A confirmed return ticket is one of the published entry requirements. Have the booking available at the border, not only in an email you cannot open offline.",
+      "errors": {
+        "required": "Confirm the return or onward ticket"
+      }
+    },
+    "funds": {
+      "type": "text",
+      "label": "Sufficient funds",
+      "required": true,
+      "placeholder": "Evidence you can support the stay",
+      "help": "Sufficient funds for the stay are a published entry requirement. The officer at the port of entry can ask about this even after the ETA is approved.",
+      "errors": {
+        "required": "Confirm you can show sufficient funds"
+      }
+    }
+  }
+}

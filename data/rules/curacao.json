@@ -1,0 +1,50 @@
+{
+  "country": "curacao",
+  "officialUrl": "https://dicardcuracao.com/dicard/",
+  "lastVerified": "2026-08-30",
+  "source": "https://dicardcuracao.com/portal, https://dicardcuracao.com/dicard/ and https://www.curacao.com/en/article/curacao/, read 2026-08-30. The designated portal publishes the travel, passport, contact and personal information groups; exact passport matching with no nicknames; a flight-number lookup; and the email, date-of-birth and passport fields used to retrieve a submission. The live form does not publish readable regexes, maxlengths or validation messages. No pattern below is claimed as an official DI Card rule.",
+  "fields": {
+    "arrival_date": {
+      "type": "text",
+      "label": "Arrival date",
+      "required": true,
+      "help": "Complete the card within seven days before departure. A card remains active for at least one day after the initial arrival date if a flight is missed or cancelled."
+    },
+    "flight_number": {
+      "type": "text",
+      "label": "Flight number",
+      "required": true,
+      "help": "The official FAQ says entering the flight number displays active carriers and the corresponding port of embarkation."
+    },
+    "passport": {
+      "type": "text",
+      "label": "Passport information",
+      "required": true,
+      "help": "Passport upload is optional, but all required passport fields must match the passport carried for entry."
+    },
+    "name": {
+      "type": "text",
+      "label": "Name as shown in passport",
+      "required": true,
+      "help": "The official FAQ says passport information must be entered as shown in the passport and nicknames are not allowed."
+    },
+    "date_of_birth": {
+      "type": "text",
+      "label": "Date of birth",
+      "required": true,
+      "help": "Date of birth is one of the fields the portal uses to retrieve a submitted card. No public format rule is published."
+    },
+    "email": {
+      "type": "text",
+      "label": "Email address",
+      "required": true,
+      "help": "The confirmation PDF is emailed here. A parent or guardian should use their own email for a child."
+    },
+    "contact_information": {
+      "type": "text",
+      "label": "Contact information",
+      "required": true,
+      "help": "The official application process lists contact information as a required group after travel and passport information."
+    }
+  }
+}

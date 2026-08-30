@@ -1,0 +1,78 @@
+# Cuba — official government URLs
+# Last verified: 2026-08-30
+
+[dviajeros]
+url = "https://dviajeros.mitrans.gob.cu/inicio"
+name = "D'Viajeros Advance Passenger Information"
+agency = "Ministry of Transport, with Cuban Immigration, Customs and Ministry of Public Health"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://dviajeros.mitrans.gob.cu/inicio"
+notes = "Official .gob.cu portal. The government tourism portal links to D'Viajeros and says completion produces a QR code for entry. The official service brochure describes four information groups: traveller, immigration, customs and health, followed by an emailed PDF with QR code."
+
+[official_travel_rules]
+url = "https://www.cuba.travel/en/useful-information/regulations-and-formalities"
+name = "Cuba Travel regulations and formalities"
+agency = "Cuban Ministry of Tourism tourism portal"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://www.cuba.travel/en/useful-information/regulations-and-formalities"
+notes = "Lists the D'Viajeros QR code separately from the tourist visa, links to both official systems, states the passport validity and says eVisa replaces the Tourist Card."
+
+[evisa]
+url = "https://evisacuba.cu/en/inicio"
+name = "eVisaCuba tourist visa portal"
+agency = "Cuban Ministry of Foreign Affairs"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://evisacuba.cu/en/inicio"
+notes = "Government-designated portal linked by the Cuba Travel official tourism page. The domain is not .gob.cu; verify it by following the Cuba Travel link. The portal footer identifies the Cuban Foreign Ministry. It says the eVisa is tied to the passport, the visa code is emailed, and response is within 72 business hours. Fees depend on the selected consulate or authorised channel and are not published as one global amount."
+
+[timing_notice]
+url = "https://www.granma.cu/cuba/2025-01-21/la-visa-de-turismo-electronica-sera-obligatoria-para-la-entrada-a-cuba-desde-finales-de-junio-21-01-2025-01-01-26"
+name = "Electronic tourist visa and D'Viajeros timing notice"
+agency = "Granma, official publication of the Central Committee of the Communist Party of Cuba"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://www.granma.cu/cuba/2025-01-21/la-visa-de-turismo-electronica-sera-obligatoria-para-la-entrada-a-cuba-desde-finales-de-junio-21-01-2025-01-01-26"
+notes = "Quotes the Ministry of Tourism commercial director: the eVisa code is entered into D'Viajeros to produce the QR code, and D'Viajeros can be completed during the seven days before travel. It also announced eVisa as the tourist route from 30 June 2025."
+
+[mandatory_notice]
+url = "https://www.cuba.travel/en/wheretogo/havana/usefulinformation/howtoget"
+name = "Cuba Travel D'Viajeros passenger requirement"
+agency = "Cuban Ministry of Tourism tourism portal"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://www.cuba.travel/en/wheretogo/havana/usefulinformation/howtoget"
+notes = "Current Cuba Travel destination guidance states that every passenger must truthfully complete D'Viajeros for immigration, customs and public-health services."
+
+[meta]
+flag = "🇨🇺"
+name_en = "Cuba"
+name_zh = "古巴"
+form_code = "D'Viajeros"
+guide_slug = "dviajeros"
+form_key = "dviajeros"
+form_name_en = "Advance Passenger Information form"
+form_name_zh = "旅客预先信息表"
+since_en = "digital entry form before arrival"
+since_zh = "抵达前数字入境表"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".gob.cu"
+form_type = "arrival_card"
+field_count = 7
+sections = 4
+time_needed_en = "~10 minutes"
+time_needed_zh = "约 10 分钟"
+output_en = "Save the emailed PDF and QR code. Show it on a device or as a printout to the authorised personnel on arrival."
+output_zh = "保存邮件发送的 PDF 和二维码，抵达时用手机或打印件向工作人员出示。"
+fields_intro_en = "The official D'Viajeros brochure identifies four sections and the QR result, but the live portal does not publish readable regexes, maxlengths or validation messages. These seven cards cover the public information groups and entry documents only."
+fields_intro_zh = "D'Viajeros 官方说明列出 4 个信息分段和二维码结果，但实时门户没有公开可读的正则、字符上限或校验报错。以下 7 张卡片只覆盖公开的信息类别和入境材料。"
+email_title_en = "PDF and QR arrive"
+email_title_zh = "PDF 和二维码送达"
+email_body_en = "After completion, D'Viajeros emails a PDF containing the QR code. Save it before travel."
+email_body_zh = "D'Viajeros 完成后会通过邮件发送含二维码的 PDF，出发前保存好。"
+printout_title_en = "Phone or printout"
+printout_title_zh = "手机或打印件均可"
+printout_body_en = "The official brochure says the QR can be shown on a device or on a printed copy."
+printout_body_zh = "官方说明写明二维码可用设备出示，也可打印。"
+verification_title_en = "The QR is not the visa"
+verification_title_zh = "二维码不是签证"
+verification_body_en = "D'Viajeros records entry information. A traveller who needs a tourist visa must obtain the separate eVisa before completing the form."
+verification_body_zh = "D'Viajeros 记录入境信息。需要旅游签证的旅客须先取得单独的 eVisa，再填写本表。"

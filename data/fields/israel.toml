@@ -1,0 +1,74 @@
+# Israel ETA-IL — public preparation checks. No live HTML validation
+# attributes were readable, so this file contains no [[errors]] array.
+
+[[fields]]
+n = "01"
+key = "eligibility"
+section_en = "Section 1 · Eligibility"
+section_zh = "第 1 段 · 资格"
+example = "Visa-exempt passport"
+mistake = "Passport that requires a B/2 visa"
+mistake_why_en = "ETA-IL cannot replace the visitor visa required for that passport"
+mistake_why_zh = "ETA-IL 不能替代该护照必须办理的访客签证"
+copy_en = "Start with PIBA's eligibility check. ETA-IL is for visa-exempt citizenship only. If the result says B/2 visa, stop and follow the visa route."
+copy_zh = "先用 PIBA 资格检查。ETA-IL 只对免签国籍开放；结果显示需要 B/2 签证，就停下改走签证流程。"
+
+[[fields]]
+n = "02"
+key = "passport"
+section_en = "Section 1 · Eligibility"
+section_zh = "第 1 段 · 资格"
+example = "Passport valid 4 months after arrival"
+mistake = "Passport valid 1 month after arrival"
+mistake_why_en = "shorter than the three months stated by the government entry page"
+mistake_why_zh = "短于政府入境页写明的抵达后 3 个月"
+copy_en = "Use the passport carried for this trip. For an ETA traveller, the government entry page says it must remain valid for three months beyond arrival. A renewed passport needs a new ETA-IL."
+copy_zh = "使用本次旅行携带的护照。政府入境页要求 ETA 旅客的护照在抵达后仍有 3 个月有效期。换发护照后要重新申请 ETA-IL。"
+
+[[fields]]
+n = "03"
+key = "email"
+section_en = "Section 2 · Contact and purpose"
+section_zh = "第 2 段 · 联系方式与目的"
+example = "An inbox checked before travel"
+mistake = "A third party's inbox"
+mistake_why_en = "the traveller cannot retrieve the decision or ETA-IL number"
+mistake_why_zh = "旅客本人拿不到决定和 ETA-IL 编号"
+copy_en = "Use an inbox you control. PIBA sends receipt, payment receipt and decision messages there. The approved message contains the ETA-IL number, validity and conditions."
+copy_zh = "使用自己控制的邮箱。PIBA 会发收件通知、付款收据和决定。批准邮件含 ETA-IL 编号、有效期和条件。"
+
+[[fields]]
+n = "04"
+key = "purpose"
+section_en = "Section 2 · Contact and purpose"
+section_zh = "第 2 段 · 联系方式与目的"
+example = "Tourism, up to 90 days"
+mistake = "Long-term study"
+mistake_why_en = "study and other long stays require the appropriate visa"
+mistake_why_zh = "留学和其他长期停留需要对应签证"
+copy_en = "ETA-IL covers short tourism and business visits for up to 90 days per visit. Work, study and other long stays use a visa, not ETA-IL."
+copy_zh = "ETA-IL 覆盖每次最多 90 天的短期旅游和商务。工作、留学及其他长期停留要办签证，不用 ETA-IL。"
+
+[[fields]]
+n = "05"
+key = "payment"
+section_en = "Section 3 · Payment and review"
+section_zh = "第 3 段 · 付款与复核"
+example = "ILS 25 on israel-entry.piba.gov.il"
+mistake = "An express surcharge"
+mistake_why_en = "official notices say the fee is ILS 25 and there is no express option"
+mistake_why_zh = "官方说明费用为 25 新谢克尔，且没有加急选项"
+copy_en = "The official fee is ILS 25 and non-refundable. Pay only on the PIBA government host. The official site sends a receipt after payment."
+copy_zh = "官方费用为 25 新谢克尔，且不退款。只在 PIBA 政府域名付款；官网付款后会发送收据。"
+
+[[fields]]
+n = "06"
+key = "final_review"
+section_en = "Section 3 · Payment and review"
+section_zh = "第 3 段 · 付款与复核"
+example = "Passport and answers checked before submit"
+mistake = "Correct it after submission"
+mistake_why_en = "PIBA does not allow submitted applications to be edited"
+mistake_why_zh = "PIBA 不允许编辑已经提交的申请"
+copy_en = "Use the final review screen. PIBA says you can correct answers before submission, but after submission you must file a new form. Name, gender or citizenship changes also require a new ETA-IL."
+copy_zh = "使用最终复核页。PIBA 允许提交前修改；提交后填错只能重新申请。姓名、性别或国籍变化也要重办 ETA-IL。"

@@ -1,0 +1,133 @@
+{
+  "country": "taiwan",
+  "officialUrl": "https://twac.immigration.gov.tw/",
+  "lastVerified": "2026-08-30",
+  "source": "https://twac.immigration.gov.tw/ (homepage, who submits), https://twac.immigration.gov.tw/files/UserManual_Eng.pdf (official English user manual), https://www.immigration.gov.tw/5382/5385/7229/7238/415735 (current 7-day submission window, extended July 2026), https://www.immigration.gov.tw/5382/5385/7445/392097/392128/cp_news (the arrival card is free) and https://www.immigration.gov.tw/5475/5478/141457/142068/398041 (online-only from 1 October 2025), all read 2026-08-30. The manual names the collected items and which are conditional. It publishes one format only, DD/MM/YYYY for the departure date. No HTML validation attributes, character limits or error messages were readable for the live form, so none are claimed below and no pattern key appears.",
+  "fields": {
+    "email_verification": {
+      "type": "email",
+      "label": "Email verification",
+      "required": true,
+      "placeholder": "An inbox you can open during the trip",
+      "help": "The manual confirms an email verification step before the form opens, and a confirmation email or electronic document after submission. Use an address you control.",
+      "errors": {
+        "required": "An email address is required",
+        "invalidFormat": "Must look like name@example.com"
+      }
+    },
+    "passport_entry": {
+      "type": "text",
+      "label": "Passport upload or manual entry",
+      "required": true,
+      "placeholder": "Upload the passport, or type the values",
+      "help": "The manual offers a passport upload or manual entry. Either way, the values must match the passport carried on the trip, because the record is retrieved by passport scan at inspection.",
+      "errors": {
+        "required": "Passport information is required"
+      }
+    },
+    "nationality": {
+      "type": "nationality",
+      "label": "Nationality",
+      "required": true,
+      "placeholder": "As shown in the travel document",
+      "help": "Nationality is collected by the arrival card. Enter it as the travel document shows it, not as the country you flew from.",
+      "errors": {
+        "required": "Nationality is required"
+      }
+    },
+    "passport_expiry": {
+      "type": "text",
+      "label": "Passport expiry",
+      "required": true,
+      "placeholder": "Copy the exact passport value",
+      "help": "Passport expiry is collected. Copy the date from the passport data page. A renewed passport is a different document and needs its own submission.",
+      "errors": {
+        "required": "Passport expiry is required"
+      }
+    },
+    "visa_type_number": {
+      "type": "text",
+      "label": "Visa type and number (conditional)",
+      "required": false,
+      "placeholder": "Only when the form asks",
+      "help": "The manual marks visa type and number as conditional. They appear for travellers whose entry route requires them, and stay hidden for everyone else.",
+      "errors": {}
+    },
+    "occupation": {
+      "type": "text",
+      "label": "Occupation or job title (conditional)",
+      "required": false,
+      "placeholder": "Only when the form asks",
+      "help": "Occupation and job title are also conditional in the manual. Answer them when the form presents them, using your actual role.",
+      "errors": {}
+    },
+    "phone": {
+      "type": "text",
+      "label": "Phone number",
+      "required": true,
+      "placeholder": "A number reachable during the trip",
+      "help": "A phone number is collected alongside the email. Use a number that can be reached during the visit rather than one you will switch off on landing.",
+      "errors": {
+        "required": "A phone number is required"
+      }
+    },
+    "arrival_transport": {
+      "type": "text",
+      "label": "Arrival flight or vessel",
+      "required": true,
+      "placeholder": "The flight or vessel you arrive on",
+      "help": "The manual collects the arrival flight or vessel. Use the operating service for the segment that lands in Taiwan.",
+      "errors": {
+        "required": "The arrival flight or vessel is required"
+      }
+    },
+    "departure_transport": {
+      "type": "text",
+      "label": "Departure flight or vessel",
+      "required": true,
+      "placeholder": "The flight or vessel you leave on",
+      "help": "The departure flight or vessel is collected in the same section. It is asked at submission time, so have the onward booking to hand.",
+      "errors": {
+        "required": "The departure flight or vessel is required"
+      }
+    },
+    "departure_date": {
+      "type": "text",
+      "label": "Departure date",
+      "required": true,
+      "placeholder": "DD/MM/YYYY",
+      "help": "The manual gives the departure date format as DD/MM/YYYY. This is the one format the official document states; the guide does not invent formats for the other date fields.",
+      "errors": {
+        "required": "The departure date is required"
+      }
+    },
+    "purpose": {
+      "type": "text",
+      "label": "Purpose of visit",
+      "required": true,
+      "placeholder": "The real purpose of the trip",
+      "help": "Purpose of visit is collected. Choosing Other opens a reason field, and choosing to visit relatives opens a relative contact field.",
+      "errors": {
+        "required": "Purpose of visit is required"
+      }
+    },
+    "accommodation": {
+      "type": "text",
+      "label": "Accommodation",
+      "required": true,
+      "placeholder": "Where you are staying in Taiwan",
+      "help": "Accommodation is collected in the same section as the travel details. Give the address or property for the stay.",
+      "errors": {
+        "required": "Accommodation is required"
+      }
+    },
+    "relative_contact": {
+      "type": "text",
+      "label": "Relative contact (conditional)",
+      "required": false,
+      "placeholder": "Only when visiting relatives",
+      "help": "The manual adds a relative contact field when the purpose is visiting relatives. It does not appear for other purposes.",
+      "errors": {}
+    }
+  }
+}

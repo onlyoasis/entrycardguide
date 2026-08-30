@@ -1,0 +1,50 @@
+{
+  "country": "cuba",
+  "officialUrl": "https://dviajeros.mitrans.gob.cu/inicio",
+  "lastVerified": "2026-08-30",
+  "source": "https://dviajeros.mitrans.gob.cu/inicio, https://www.cuba.travel/en/useful-information/regulations-and-formalities, the official D'Viajeros service brochure linked from Cuba Travel, and https://www.granma.cu/cuba/2025-01-21/la-visa-de-turismo-electronica-sera-obligatoria-para-la-entrada-a-cuba-desde-finales-de-junio-21-01-2025-01-01-26, read 2026-08-30. Public sources identify traveller, immigration, customs and health sections, the separate eVisa code and the emailed QR result. The live D'Viajeros portal does not publish readable HTML validation attributes, regexes, maxlengths or validation messages. No pattern below is claimed as an official rule.",
+  "fields": {
+    "passport": {
+      "type": "text",
+      "label": "Passport",
+      "required": true,
+      "help": "The official Cuba Travel page says the passport must be valid for six months from entry. Use the same passport linked to any eVisa."
+    },
+    "email": {
+      "type": "text",
+      "label": "Email address",
+      "required": true,
+      "help": "The completed form is emailed as a PDF with QR code."
+    },
+    "arrival": {
+      "type": "text",
+      "label": "Arrival information",
+      "required": true,
+      "help": "D'Viajeros is an advance entry form. Complete it within the seven days before the trip using the current arrival details."
+    },
+    "accommodation": {
+      "type": "text",
+      "label": "Stay in Cuba",
+      "required": true,
+      "help": "Use the accommodation for the trip. Cuba Travel lists the entry form alongside the other travel documents."
+    },
+    "visa_code": {
+      "type": "text",
+      "label": "Tourist eVisa code, when required",
+      "required": false,
+      "help": "The eVisa is separate and paid. Travellers who require it enter the emailed visa code into D'Viajeros before generating the QR."
+    },
+    "customs_declaration": {
+      "type": "text",
+      "label": "Customs declaration",
+      "required": true,
+      "help": "The official D'Viajeros brochure names customs information as one of its four sections."
+    },
+    "health_declaration": {
+      "type": "text",
+      "label": "Health declaration",
+      "required": true,
+      "help": "The official D'Viajeros brochure names health information as one of its four sections."
+    }
+  }
+}

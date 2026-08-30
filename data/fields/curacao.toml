@@ -1,0 +1,86 @@
+# Curaçao DI Card — public application instructions. The live form exposes no
+# readable regexes or validation messages, so this file has no [[errors]].
+
+[[fields]]
+n = "01"
+key = "arrival_date"
+section_en = "Section 1 · Travel information"
+section_zh = "第 1 段 · 行程信息"
+example = "Confirmed Curaçao arrival date"
+mistake = "A date more than 7 days away"
+mistake_why_en = "the official portal opens the card within seven days before departure"
+mistake_why_zh = "官网只在出发前 7 天内开放填写"
+copy_en = "Complete the DI Card within seven days before departure. Use the confirmed arrival date. If a flight is missed or cancelled, the card stays active for at least one day after the original date."
+copy_zh = "在出发前 7 天内填写，使用确认的抵达日期。航班误机或取消时，卡片在原抵达日后至少还会保持 1 天有效。"
+
+[[fields]]
+n = "02"
+key = "flight_number"
+section_en = "Section 1 · Travel information"
+section_zh = "第 1 段 · 行程信息"
+example = "Operating flight to CUR"
+mistake = "A booking reference"
+mistake_why_en = "the field expects a flight number to retrieve carrier and embarkation port"
+mistake_why_zh = "该栏用航班号检索承运人和登机口岸，不是订单号"
+copy_en = "Enter the flight number. The official FAQ says the portal then shows active carriers and the matching port of embarkation. Choose the current operating itinerary."
+copy_zh = "填写航班号。官网 FAQ 写明门户会显示当前承运人和对应登机口岸，选择本次实际承运行程。"
+
+[[fields]]
+n = "03"
+key = "passport"
+section_en = "Section 2 · Passport information"
+section_zh = "第 2 段 · 护照信息"
+example = "Passport carried to Curaçao"
+mistake = "A different second passport"
+mistake_why_en = "the submitted passport must match the passport used for travel"
+mistake_why_zh = "提交的护照必须和实际旅行护照一致"
+copy_en = "Use the passport carried for entry. Uploading an image is optional; if upload fails, enter the required passport fields manually. The document must be valid throughout the stay."
+copy_zh = "使用入境时携带的护照。上传图片不是强制；上传失败可手填必需护照栏。护照须覆盖整个停留期。"
+
+[[fields]]
+n = "04"
+key = "name"
+section_en = "Section 2 · Passport information"
+section_zh = "第 2 段 · 护照信息"
+example = "Full name printed in passport"
+mistake = "Travel nickname"
+mistake_why_en = "the official FAQ says nicknames are not allowed"
+mistake_why_zh = "官网 FAQ 明确不允许昵称"
+copy_en = "Copy the name from the passport. Do not shorten it to a nickname. The portal says required passport fields must use the information shown in the document."
+copy_zh = "按护照抄写姓名，不要缩成昵称。官网要求必需护照栏使用证件上显示的信息。"
+
+[[fields]]
+n = "05"
+key = "date_of_birth"
+section_en = "Section 3 · Personal information"
+section_zh = "第 3 段 · 个人信息"
+example = "Date shown in passport"
+mistake = "A month and day guessed from memory"
+mistake_why_en = "the value may not match the passport or retrieve the submitted card"
+mistake_why_zh = "可能和护照不一致，也无法找回已提交卡片"
+copy_en = "Match the passport. Date of birth, email and passport number are used when support retrieves an existing card. The public FAQ does not state a date format."
+copy_zh = "与护照一致。客服找回已有卡片时会使用出生日期、邮箱和护照号。公开 FAQ 没有规定日期格式。"
+
+[[fields]]
+n = "06"
+key = "email"
+section_en = "Section 4 · Contact information"
+section_zh = "第 4 段 · 联系方式"
+example = "Inbox available at check-in"
+mistake = "An inaccessible third-party inbox"
+mistake_why_en = "the traveller cannot retrieve the mandatory confirmation PDF"
+mistake_why_zh = "旅客本人拿不到值机必需的确认 PDF"
+copy_en = "Use an inbox accessible at airline check-in. The portal emails the PDF and also allows an immediate download. A parent or guardian uses their own email for a child."
+copy_zh = "使用航司值机时能打开的邮箱。门户会邮件发送 PDF，也允许立即下载。儿童可填写父母或监护人的邮箱。"
+
+[[fields]]
+n = "07"
+key = "contact_information"
+section_en = "Section 4 · Contact information"
+section_zh = "第 4 段 · 联系方式"
+example = "Current trip contact details"
+mistake = "Contact details from a previous trip"
+mistake_why_en = "the card is per person and per trip"
+mistake_why_zh = "DI Card 按每人每次行程填写"
+copy_en = "Use current contact details. For a future trip, retrieve the existing DI Card and update its travel information rather than keeping the old itinerary."
+copy_zh = "填写当前联系方式。下次旅行应找回已有 DI Card 并更新旅行信息，不要沿用旧行程。"

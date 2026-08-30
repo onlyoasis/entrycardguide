@@ -1,0 +1,98 @@
+# Kenya eTA — public requirement cards. The live form exposes no public
+# validation attributes, so this file contains no [[errors]] array.
+
+[[fields]]
+n = "01"
+key = "passport_details"
+section_en = "Section 1 · Eligibility and passport"
+section_zh = "第 1 段 · 资格与护照"
+example = "Passport valid 8 months after arrival"
+mistake = "Passport expires 3 months after arrival"
+mistake_why_en = "less than the six months required by the official guide"
+mistake_why_zh = "少于官网要求的抵达后 6 个月有效期"
+copy_en = "Use the passport you will carry. It must remain valid for at least six months after the planned arrival date and have at least one blank page."
+copy_zh = "使用本次出行携带的护照。护照须在计划抵达后至少还有 6 个月有效期，并至少有 1 页空白页。"
+
+[[fields]]
+n = "02"
+key = "passport_nationality"
+section_en = "Section 1 · Eligibility and passport"
+section_zh = "第 1 段 · 资格与护照"
+example = "Nationality on the travel passport"
+mistake = "Country of residence"
+mistake_why_en = "residence selected instead of passport nationality"
+mistake_why_zh = "把居住国当成了护照国籍"
+copy_en = "Choose the nationality on the passport used for this journey. Check the portal's current exemption list before paying; exemptions differ by nationality and passport or status."
+copy_zh = "选择本次旅行护照上的国籍。付款前先查官网当前豁免名单；国籍、护照类型和身份不同，结论也不同。"
+
+[[fields]]
+n = "03"
+key = "email"
+section_en = "Section 2 · Contact"
+section_zh = "第 2 段 · 联系方式"
+example = "An inbox checked before departure"
+mistake = "A booking agent's inbox"
+mistake_why_en = "the traveller cannot retrieve the decision or PDF"
+mistake_why_zh = "旅客本人拿不到决定邮件和 PDF"
+copy_en = "Use an inbox you control. The portal emails receipt, payment confirmation when applicable, and the approval or refusal decision. Only the approval lets you travel."
+copy_zh = "使用自己能控制的邮箱。官网会发送收件确认、适用时的付款确认，以及批准或拒绝决定。只有批准结果可以出行。"
+
+[[fields]]
+n = "04"
+key = "phone"
+section_en = "Section 2 · Contact"
+section_zh = "第 2 段 · 联系方式"
+example = "+86 138 0000 0000"
+mistake = "138 0000 0000"
+mistake_why_en = "country code omitted from an international contact"
+mistake_why_zh = "国际联系方式漏了国家或地区代码"
+copy_en = "Give a number that works while travelling and include its country or region code. The public guide names phone number as required contact information."
+copy_zh = "填写旅行期间能接通的号码，并带国家或地区代码。官方公开指南把电话列为必需联系方式。"
+
+[[fields]]
+n = "05"
+key = "arrival_date"
+section_en = "Section 3 · Trip and stay"
+section_zh = "第 3 段 · 行程与住宿"
+example = "Arrival shown on the confirmed itinerary"
+mistake = "Departure from the origin airport"
+mistake_why_en = "the outbound date was used instead of the Kenya arrival"
+mistake_why_zh = "填了出发日，没有填抵达肯尼亚的行程"
+copy_en = "Use the arrival details for Kenya from the confirmed itinerary. The public page does not publish the form's date format, so follow the live date picker."
+copy_zh = "按确认行程填写抵达肯尼亚的信息。公开页面没有给出表单日期格式，请跟随实时日期选择器。"
+
+[[fields]]
+n = "06"
+key = "departure_date"
+section_en = "Section 3 · Trip and stay"
+section_zh = "第 3 段 · 行程与住宿"
+example = "Departure shown on the confirmed itinerary"
+mistake = "A date copied from an old booking"
+mistake_why_en = "the itinerary and application no longer match"
+mistake_why_zh = "申请信息和当前行程不一致"
+copy_en = "Use the departure details for this trip. The eTA is valid for travel within 90 days of issue, but the stay granted is decided at the border."
+copy_zh = "填写本次行程的离境信息。eTA 自签发后可在 90 天内用于出行，但获准停留多久由入境口岸决定。"
+
+[[fields]]
+n = "07"
+key = "accommodation"
+section_en = "Section 3 · Trip and stay"
+section_zh = "第 3 段 · 行程与住宿"
+example = "Confirmed hotel or host booking"
+mistake = "A city name only"
+mistake_why_en = "the official guide asks for booking confirmation"
+mistake_why_zh = "官网要求住宿预订确认"
+copy_en = "Prepare the accommodation booking confirmation or confirmations. A family visit also needs the host's invitation and identity or immigration document."
+copy_zh = "准备住宿预订确认。探亲还要准备邀请信，以及邀请人的身份证件、护照、外侨证或入境许可。"
+
+[[fields]]
+n = "08"
+key = "purpose_of_visit"
+section_en = "Section 3 · Trip and stay"
+section_zh = "第 3 段 · 行程与住宿"
+example = "Tourism"
+mistake = "Tourism selected for a business meeting"
+mistake_why_en = "purpose-specific supporting documents would be missing"
+mistake_why_zh = "会漏掉访问目的对应的证明材料"
+copy_en = "Choose the real purpose. Business needs an invitation and company registration copy; medical, conference, employment, resettlement and family trips can trigger other documents."
+copy_zh = "选择真实目的。商务需要邀请信和公司注册文件；医疗、会议、就业、安置和探亲还可能触发其他材料。"

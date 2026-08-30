@@ -1,0 +1,72 @@
+# Maldives — official government URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-08-30
+
+[traveller_declaration]
+url = "https://imuga.immigration.gov.mv/traveller"
+name = "IMUGA Traveller Declaration"
+agency = "Maldives Immigration"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://imuga.immigration.gov.mv/traveller"
+notes = "Read 2026-08-30. The declaration is submitted on the IMUGA portal, hosted under the government immigration.gov.mv domain. Every foreign arrival submits it within 96 hours before arrival. The public first step shows a passport data-page scan or upload, purpose of visit, and a conditional permit number and expiry. No fee is charged."
+
+[declaration_info]
+url = "https://www.immigration.gov.mv/traveller-declaration"
+name = "Traveller Declaration information"
+agency = "Maldives Immigration"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://www.immigration.gov.mv/traveller-declaration"
+notes = "Read 2026-08-30. Maldives Immigration's own page describing the Traveller Declaration, who submits it and the 96-hour window before arrival."
+
+[tourist_visa]
+url = "https://www.immigration.gov.mv/visa/tourist-visa"
+name = "Tourist visa on arrival requirements"
+agency = "Maldives Immigration"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://www.immigration.gov.mv/visa/tourist-visa"
+notes = "Read 2026-08-30. The tourist visa is issued on arrival with no pre-approval step. The page names personal details, travel information and accommodation details among the requirements. The visa and the Traveller Declaration are separate; the declaration is still mandatory for foreign arrivals."
+
+[departure_change]
+url = "https://www.immigration.gov.mv/news"
+name = "Maldives Immigration announcements"
+agency = "Maldives Immigration"
+last_verified = "2026-08-30"
+archive_url = "https://web.archive.org/web/2026/https://www.immigration.gov.mv/news"
+notes = "Read 2026-08-30. The 13 August 2024 item states that outbound travellers are no longer required to submit the declaration from 15 August 2024. Older guides that tell travellers to file a departure form are describing a rule that no longer applies."
+
+# Country-page metadata (consumed by country-form and how-to-fill layouts).
+# Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
+[meta]
+flag = "🇲🇻"
+name_en = "Maldives"
+name_zh = "马尔代夫"
+form_code = "IMUGA"
+guide_slug = "traveller-declaration"
+form_key = "traveller_declaration"
+form_name_en = "Traveller Declaration"
+form_name_zh = "旅客申报表"
+since_en = "arrival only since 15 August 2024"
+since_zh = "2024 年 8 月 15 日起仅入境提交"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".gov.mv"
+form_type = "arrival_card"
+
+field_count = 7
+sections = 3
+time_needed_en = "varies"
+time_needed_zh = "时间不定"
+output_en = "Keep the submitted declaration available on arrival. It records the trip; the tourist visa itself is issued at the counter with no pre-approval step."
+output_zh = "抵达时保持已提交的申报可随时调出。它记录的是本次行程；旅游签证在柜台签发，没有事先审批环节。"
+
+fields_intro_en = "Maldives Immigration publishes what the declaration collects and when to submit it, but the live IMUGA form does not expose readable validation attributes, character limits or error text. These seven cards list the items the public pages confirm, and claim nothing about hidden form rules."
+fields_intro_zh = "马尔代夫移民局公开了申报表收集哪些资料以及提交时限，但实时 IMUGA 表单没有公开可读的校验属性、字符上限或报错原文。以下 7 张卡片只列公开页面确认的资料项，不对隐藏的表单规则作任何声称。"
+
+email_title_en = "Submission is recorded"
+email_title_zh = "提交后留下记录"
+email_body_en = "Keep whatever confirmation the portal returns. The declaration is free, so nothing about a payment step belongs in this flow."
+email_body_zh = "保存门户返回的确认信息。申报免费，这个流程里不应该出现任何付款环节。"
+verification_title_en = "The visa is issued at the counter"
+verification_title_zh = "签证在柜台签发"
+verification_body_en = "The tourist visa on arrival has no pre-approval. The declaration does not replace it, and it does not decide admission."
+verification_body_zh = "落地旅游签证没有事前审批。申报表不能替代签证，也不决定是否准入。"

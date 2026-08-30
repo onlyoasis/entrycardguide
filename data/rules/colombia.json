@@ -1,0 +1,68 @@
+{
+  "country": "colombia",
+  "officialUrl": "https://apps.migracioncolombia.gov.co/pre-registro/public/",
+  "lastVerified": "2026-08-30",
+  "source": "https://apps.migracioncolombia.gov.co/pre-registro/public/DatosViaje live CheckMig form and https://portal.migracioncolombia.gov.co/tramites-y-servicios/aplicativos/checkmig official service guide, read 2026-08-30. The live form exposes five steps, visible field labels, the mm/dd/yyyy travel-date prompt and the instruction that the flight number is entered without letters. Readable HTML regex, maxlength and validation attributes were not available, so no pattern or maxlength is claimed below.",
+  "fields": {
+    "journey_direction": {
+      "type": "text",
+      "label": "Entry or exit",
+      "required": true,
+      "help": "The first step asks whether the traveller is going to Colombia or travelling from Colombia."
+    },
+    "transport_type": {
+      "type": "text",
+      "label": "Transport type",
+      "required": true,
+      "help": "The live form offers air, land, maritime and river transport. Choose the route actually used."
+    },
+    "checkpoint": {
+      "type": "text",
+      "label": "Immigration checkpoint",
+      "required": true,
+      "help": "Migración Colombia's service steps require the immigration checkpoint used for the entry or exit."
+    },
+    "travel_date": {
+      "type": "text",
+      "label": "Travel date",
+      "required": true,
+      "help": "The live date control displays mm/dd/yyyy. Submit from 72 hours before travel until one hour before travel."
+    },
+    "flight_number": {
+      "type": "text",
+      "label": "Flight number, without letters",
+      "required": false,
+      "help": "For an air trip, the live form asks for the flight number without letters. Use the current operating trip details."
+    },
+    "biographical_information": {
+      "type": "text",
+      "label": "Biographical information",
+      "required": true,
+      "help": "The official entry requirements group foreign-traveller data into biographical, visa when applicable, route and accommodation information."
+    },
+    "contact_information": {
+      "type": "text",
+      "label": "Contact information",
+      "required": true,
+      "help": "The official service guide lists contact information among the details needed for the trip and sends confirmation by email."
+    },
+    "travel_purpose": {
+      "type": "text",
+      "label": "Purpose of travel",
+      "required": true,
+      "help": "Migración Colombia names the purpose of travel among the information preloaded in CheckMig."
+    },
+    "accommodation": {
+      "type": "text",
+      "label": "Accommodation in Colombia, when applicable",
+      "required": false,
+      "help": "The official service requirements ask for accommodation information in Colombia when it applies to the trip."
+    },
+    "health_information": {
+      "type": "text",
+      "label": "Health questions",
+      "required": true,
+      "help": "The official service page includes health status among the information preloaded for immigration control."
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "country": "egypt",
+  "officialUrl": "https://www.visa2egypt.gov.eg/eVisa/Home",
+  "lastVerified": "2026-08-30",
+  "source": "https://www.visa2egypt.gov.eg/eVisa/Home and https://www.visa2egypt.gov.eg/eVisa/FAQ, read 2026-08-30, plus https://egyptembassy.net/consular-services/visas-travel/visa-requirements/ for the visa-on-arrival limits (that host is the Egyptian Embassy in Washington's own site and is not a government suffix). The portal publishes fees of USD 30 single-entry and USD 65 multiple-entry tourism, the instruction to create the application at least 7 days before departure, the list of eligible nationalities, and the entry checklist. It publishes no HTML validation attributes, character limits or error messages for the live application, so no pattern key appears below and no format rule is claimed.",
+  "fields": {
+    "eligibility": {
+      "type": "nationality",
+      "label": "eVisa nationality eligibility",
+      "required": true,
+      "placeholder": "Check the FAQ list for this passport",
+      "help": "The FAQ lists the nationalities currently eligible to use the eVisa. The portal is not open to every passport, so check the list before starting an application.",
+      "errors": {
+        "required": "Check eVisa eligibility before applying"
+      }
+    },
+    "visa_type": {
+      "type": "text",
+      "label": "Single or multiple entry",
+      "required": true,
+      "placeholder": "Single USD 30, multiple USD 65",
+      "help": "Current tourism fees are USD 30 for single entry and USD 65 for multiple entry. Pick the one that matches the trip; a second single-entry visa is not cheaper than one multiple-entry visa.",
+      "errors": {
+        "required": "Choose single or multiple entry"
+      }
+    },
+    "passport_number": {
+      "type": "text",
+      "label": "Passport number",
+      "required": true,
+      "placeholder": "Copy the exact passport value",
+      "help": "Copy the number from the passport you will travel on. The issued eVisa is tied to the document in the application.",
+      "errors": {
+        "required": "Passport number is required"
+      }
+    },
+    "passport_validity": {
+      "type": "text",
+      "label": "Passport validity",
+      "required": true,
+      "placeholder": "At least 6 months from arrival",
+      "help": "The official entry checklist requires a passport valid at least 6 months from arrival. Check the expiry before paying, not at the airport.",
+      "errors": {
+        "required": "Confirm the passport validity"
+      }
+    },
+    "travel_dates": {
+      "type": "text",
+      "label": "Travel dates and lead time",
+      "required": true,
+      "placeholder": "Apply at least 7 days before departure",
+      "help": "The portal says to create the application at least 7 days before departure. Treat that as the minimum, not the target.",
+      "errors": {
+        "required": "Travel dates are required"
+      }
+    },
+    "email": {
+      "type": "email",
+      "label": "Email address",
+      "required": true,
+      "placeholder": "An inbox you control",
+      "help": "Approval and the download link arrive by email. If the address belongs to someone else, retrieving the eVisa depends on them.",
+      "errors": {
+        "required": "Email is required",
+        "invalidFormat": "Must look like name@example.com"
+      }
+    },
+    "printed_evisa": {
+      "type": "text",
+      "label": "Printed eVisa",
+      "required": true,
+      "placeholder": "Paper copy for the border",
+      "help": "A printed eVisa is on the official entry checklist. Print it before leaving rather than counting on an airport printer.",
+      "errors": {
+        "required": "Print the eVisa before travelling"
+      }
+    },
+    "itinerary": {
+      "type": "text",
+      "label": "Itinerary",
+      "required": true,
+      "placeholder": "Trip plan for this visit",
+      "help": "The entry checklist names an itinerary. Have it available on arrival together with the printed eVisa.",
+      "errors": {
+        "required": "An itinerary is on the entry checklist"
+      }
+    },
+    "accommodation": {
+      "type": "text",
+      "label": "Hotel booking or accommodation details",
+      "required": false,
+      "placeholder": "For a tourism visit",
+      "help": "For tourism, the checklist names a hotel booking or accommodation details. Keep the booking retrievable without wifi.",
+      "errors": {}
+    },
+    "supporting_letter": {
+      "type": "text",
+      "label": "Supporting letter",
+      "required": false,
+      "placeholder": "For a business or family visit",
+      "help": "The checklist names a supporting letter for a business or family visit. It does not apply to a plain tourism trip.",
+      "errors": {}
+    }
+  }
+}
