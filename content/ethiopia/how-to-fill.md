@@ -3,7 +3,7 @@ title: "How to Prepare an Ethiopia Tourist eVisa Application (2026)"
 kicker: "Thirteen documented checks from the public evisa.gov.et form and Tourist Visa page."
 description: "Prepare an Ethiopia eVisa application: route, duration, arrival, accommodation, passport data, email and mandatory image uploads."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "ethiopia"
 weight: 20
 keywords: ["how to fill Ethiopia eVisa", "Ethiopia visa application", "evisa.gov.et application"]

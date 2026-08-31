@@ -3,7 +3,7 @@ title: "牙买加 C5 怎么填（2026）"
 kicker: "20 项来自实时 `.gov.jm` 表单；不编护照正则，也不放伪绿色校验。"
 description: "牙买加 C5 填写指南：邮箱验证、护照字段、牙买加地址、航班号、mm/dd/yyyy 日期、行李和海关申报。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "jamaica"
 weight: 20
 keywords: ["牙买加 C5 怎么填", "牙买加入境表", "牙买加海关申报表"]

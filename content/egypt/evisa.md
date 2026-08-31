@@ -3,7 +3,7 @@ title: "Egypt e-Visa: Official Portal, USD $30 and $65 Fees (2026)"
 kicker: "Check the eligible-nationality list, then apply at least 7 days before departure on the government portal."
 description: "Egypt e-Visa guide: the official visa2egypt.gov.eg portal, USD 30 single and USD 65 multiple entry fees, the 7-day lead time, and how visa on arrival differs."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "egypt"
 weight: 10
 keywords: ["Egypt e-Visa", "Egypt eVisa official site", "visa2egypt.gov.eg", "Egypt visa fee", "Egypt visa on arrival"]

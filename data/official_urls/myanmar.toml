@@ -1,12 +1,12 @@
 # Myanmar — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-08-30
+# Last verified: 2026-08-31
 
 [tourist_evisa]
 url = "https://evisa.moip.gov.mm/home"
 name = "Official Myanmar Tourist eVisa"
 agency = "Ministry of Immigration and Population, Republic of the Union of Myanmar"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://evisa.moip.gov.mm/home"
 notes = "Read 2026-08-30. The current Ministry home page presents separate Tourist and Business eVisa application routes, account registration, payment, Approval Letter and stamping on arrival. The official user guide's Tourist walkthrough ends with a payment acknowledgement showing a USD 50 processing fee; confirm the current amount on the Step 5 payment screen before paying. Announcements on the portal were last updated 2026-07, and no suspension notice is posted."
 
@@ -14,7 +14,7 @@ notes = "Read 2026-08-30. The current Ministry home page presents separate Touri
 url = "https://evisa.moip.gov.mm/common-items/faq"
 name = "Myanmar eVisa FAQ"
 agency = "Ministry of Immigration and Population, Republic of the Union of Myanmar"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://evisa.moip.gov.mm/common-items/faq"
 notes = "Read 2026-08-30. The FAQ separates Tourist and Business eVisas: 100 versus 54 eligible nationalities, different supporting documents, 28 versus 70 days of stay, and different extension rules. It states a minimum of 3 working days, a 90-day Approval Letter validity, single entry, a printed Approval Letter, and four current entry points: Yangon, Mandalay and Nay Pyi Taw airports plus Kawthaung land checkpoint."
 
@@ -22,7 +22,7 @@ notes = "Read 2026-08-30. The FAQ separates Tourist and Business eVisas: 100 ver
 url = "https://evisa.moip.gov.mm/assets/dist/img/guide/userGuide.pdf"
 name = "Myanmar eVisa Application User Guide"
 agency = "Ministry of Immigration and Population, Republic of the Union of Myanmar"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://evisa.moip.gov.mm/assets/dist/img/guide/userGuide.pdf"
 notes = "Read 2026-08-30. The 25-page official guide covers account activation, the five-step Tourist or Business eVisa flow, passport validity, MRZ name entry, JPG/PDF uploads up to 2 MB, the Tourist payment acknowledgement showing a USD 50 processing fee, the minimum 3-working-day approval time, and printing the Approval Letter."
 

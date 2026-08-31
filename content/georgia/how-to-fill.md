@@ -3,7 +3,7 @@ title: "How to Prepare a Georgia e-Visa Application (2026)"
 kicker: "Nine checks from the live application and official FAQ, starting with the check that may remove the entire form."
 description: "Prepare a Georgia e-Visa application: visa-free status, passport, purpose, photo, uploads, email deadlines and mandatory DuVerify."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "georgia"
 weight: 20
 keywords: ["how to fill Georgia eVisa", "Georgia eVisa application", "Georgia eVisa documents", "evisa.gov.ge"]

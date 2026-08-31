@@ -1,12 +1,12 @@
 # Maldives — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-08-30
+# Last verified: 2026-08-31
 
 [traveller_declaration]
 url = "https://imuga.immigration.gov.mv/traveller"
 name = "IMUGA Traveller Declaration"
 agency = "Maldives Immigration"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://imuga.immigration.gov.mv/traveller"
 notes = "Read 2026-08-30. The declaration is submitted on the IMUGA portal, hosted under the government immigration.gov.mv domain. Every foreign arrival submits it within 96 hours before arrival. The public first step shows a passport data-page scan or upload, purpose of visit, and a conditional permit number and expiry. No fee is charged."
 
@@ -14,7 +14,7 @@ notes = "Read 2026-08-30. The declaration is submitted on the IMUGA portal, host
 url = "https://www.immigration.gov.mv/traveller-declaration"
 name = "Traveller Declaration information"
 agency = "Maldives Immigration"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://www.immigration.gov.mv/traveller-declaration"
 notes = "Read 2026-08-30. Maldives Immigration's own page describing the Traveller Declaration, who submits it and the 96-hour window before arrival."
 
@@ -22,7 +22,7 @@ notes = "Read 2026-08-30. Maldives Immigration's own page describing the Travell
 url = "https://www.immigration.gov.mv/visa/tourist-visa"
 name = "Tourist visa on arrival requirements"
 agency = "Maldives Immigration"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://www.immigration.gov.mv/visa/tourist-visa"
 notes = "Read 2026-08-30. The tourist visa is issued on arrival with no pre-approval step. The page names personal details, travel information and accommodation details among the requirements. The visa and the Traveller Declaration are separate; the declaration is still mandatory for foreign arrivals."
 
@@ -30,7 +30,7 @@ notes = "Read 2026-08-30. The tourist visa is issued on arrival with no pre-appr
 url = "https://www.immigration.gov.mv/news"
 name = "Maldives Immigration announcements"
 agency = "Maldives Immigration"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://www.immigration.gov.mv/news"
 notes = "Read 2026-08-30. The 13 August 2024 item states that outbound travellers are no longer required to submit the declaration from 15 August 2024. Older guides that tell travellers to file a departure form are describing a rule that no longer applies."
 

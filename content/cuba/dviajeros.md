@@ -3,7 +3,7 @@ title: "Cuba D'Viajeros: Free Form, Separate Tourist eVisa (2026)"
 kicker: "The D'Viajeros QR costs nothing. The tourist eVisa is a different document with a separate issuing fee."
 description: "Cuba D'Viajeros guide: official free form, seven-day filing window, QR result and separate tourist eVisa."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "cuba"
 weight: 10
 keywords: ["Cuba D'Viajeros", "DViajeros official site", "Cuba arrival form", "dviajeros.mitrans.gob.cu", "Cuba eVisa"]

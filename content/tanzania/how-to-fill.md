@@ -3,7 +3,7 @@ title: "How to Prepare a Tanzania Online Visa Application (2026)"
 kicker: "Ten checks from the live first screen and the government visa guidelines."
 description: "Prepare a Tanzania Online Visa application: passport route, visa type, start-screen fields, passport validity, photo and travel documents."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "tanzania"
 weight: 20
 keywords: ["how to fill Tanzania eVisa", "Tanzania visa application", "Tanzania visa photo requirements"]

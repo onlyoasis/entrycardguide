@@ -1,32 +1,32 @@
 # Georgia — official government URLs
-# Last verified: 2026-08-30
+# Last verified: 2026-08-31
 
 [evisa]
 url = "https://www.evisa.gov.ge/GeoVisa/en/VisaApp"
 name = "Georgia e-Visa Application"
 agency = "Ministry of Foreign Affairs of Georgia"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The live application is for short stays only and starts with citizenship, travel-document type, purpose and insurance. It lists the documents to upload and states that the current process has two mandatory steps: the application and fee, followed within 24 hours by DuVerify with an additional USD 15 fee."
 
 [visa_free]
 url = "https://matsne.gov.ge/en/document/view/2867361?publication=4"
 name = "List of countries whose citizens may enter Georgia without a visa"
 agency = "Legislative Herald of Georgia"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The current consolidated government ordinance lists the covered countries and states that their citizens may enter and stay in Georgia without a visa for one full year. Travellers must check that their exact passport country remains in the current annex."
 
 [faq]
 url = "https://www.evisa.gov.ge/GeoVisa/en/Home/FAQ"
 name = "Georgia e-Visa FAQ"
 agency = "Ministry of Foreign Affairs of Georgia"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The FAQ states a USD 20 fee plus a 2% service fee, a decision time of not less than 5 working days, passport conditions, required border documents and passport-dependent visa validity and stay."
 
 [about]
 url = "https://www.evisa.gov.ge/GeoVisa/en/Home/AboutVisa"
 name = "About the Georgia e-Visa"
 agency = "Ministry of Foreign Affairs of Georgia"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The Ministry identifies the portal as its short-term e-Visa service and describes the apply, pay and print process."
 
 [meta]

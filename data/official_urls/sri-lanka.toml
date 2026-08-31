@@ -1,12 +1,12 @@
 # Sri Lanka — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-08-30
+# Last verified: 2026-08-31
 
 [eta]
 url = "https://www.eta.gov.lk/slvisa/"
 name = "Sri Lanka Electronic Travel Authorization (ETA)"
 agency = "Department of Immigration and Emigration, Sri Lanka"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://www.eta.gov.lk/slvisa/"
 notes = "Read 2026-08-30. The Department of Immigration and Emigration site still links to eta.gov.lk as the ETA application, and the live terms served at https://eta.gov.lk/etaslvisa/etaNavServ?payType=1 name the Department. The 2024 commercial outsourcing portal is not used here. The application step page https://www.eta.gov.lk/slvisa/visainfo/apply.jsp?locale=en_US describes the applicant flow. The host is a government .gov.lk suffix."
 
@@ -14,7 +14,7 @@ notes = "Read 2026-08-30. The Department of Immigration and Emigration site stil
 url = "https://www.immigration.gov.lk/pages_e.php?id=60"
 name = "ETA free scheme and current entry policy"
 agency = "Department of Immigration and Emigration, Sri Lanka"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://www.immigration.gov.lk/pages_e.php?id=60"
 notes = "Read 2026-08-30. States that from 25 May 2026, 40 named nationalities plus Maldives, Seychelles and Singapore receive the tourist ETA free of charge. Maldivian nationals receive 90 days. Other free-scheme tourists receive 30 days and double entry. The page keeps the ETA requirement in place for those passports; free means the fee is zero, not that the authorisation is skipped."
 
@@ -22,7 +22,7 @@ notes = "Read 2026-08-30. States that from 25 May 2026, 40 named nationalities p
 url = "https://www.immigration.gov.lk/pages_e.php?id=45"
 name = "Visa and ETA fee table"
 agency = "Department of Immigration and Emigration, Sri Lanka"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://www.immigration.gov.lk/pages_e.php?id=45"
 notes = "Read 2026-08-30. For passports outside the free scheme, the online tourist ETA is USD 20 for SAARC nationals and USD 50 for other nationalities. Children under 12 and two-day transit are free. The on-arrival route costs more than the online route and can end in return travel if a referral is issued."
 
@@ -30,7 +30,7 @@ notes = "Read 2026-08-30. For passports outside the free scheme, the online tour
 url = "https://www.eta.gov.lk/slvisa/visainfo/apply.jsp?locale=en_US"
 name = "ETA application information and process"
 agency = "Department of Immigration and Emigration, Sri Lanka"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://www.eta.gov.lk/slvisa/visainfo/apply.jsp?locale=en_US"
 notes = "Read 2026-08-30. Describes what the application requires: a correct passport number, nationality exactly as written in the travel document, and date of birth. The same travel document must be used for the application and at arrival. The traveller also needs a passport valid at least 6 months, a confirmed return ticket and sufficient funds."
 

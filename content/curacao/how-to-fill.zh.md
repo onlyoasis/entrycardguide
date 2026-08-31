@@ -3,7 +3,7 @@ title: "库拉索 DI Card 怎么填 2026：航班、护照和确认 PDF"
 kicker: "7 项检查来自指定 DI Card 门户，不编正则。"
 description: "库拉索 DI Card 字段指南：航班、护照、姓名、出生日期、邮箱和确认 PDF。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "curacao"
 weight: 20
 keywords: ["库拉索 DI Card 怎么填", "库拉索移民卡字段", "dicardcuracao 表单"]

@@ -3,7 +3,7 @@ title: "巴巴多斯 ED Form 2026：免费官方入口"
 kicker: ".gov.bb 表单在抵达前 72 小时开放，并分别生成移民和海关回执。"
 description: "巴巴多斯在线入境和海关表中文指南：免费政府门户、时间、材料、邮箱和回执。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "barbados"
 weight: 10
 keywords: ["巴巴多斯 ED Form", "travelform.gov.bb", "巴巴多斯入境表", "巴巴多斯海关表", "巴巴多斯旅行表免费"]

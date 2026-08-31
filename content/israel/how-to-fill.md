@@ -3,7 +3,7 @@ title: "How to Prepare an Israel ETA-IL Application (2026)"
 kicker: "Eligibility, passport, email, purpose, payment and review from official PIBA guidance."
 description: "Prepare the official Israel ETA-IL application without confusing it with a visitor visa."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "israel"
 weight: 20
 keywords: ["how to fill ETA-IL", "Israel ETA application", "ETA-IL requirements"]

@@ -3,7 +3,7 @@ title: "Oman"
 kicker: "More than 100 passport countries and regions have a current 14-day exemption route. Check it before buying an eVisa."
 description: "Independent Oman entry guide: current 14-day visa exemptions, the official Royal Oman Police eVisa portal and application preparation."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 Oman's current entry page places many short tourist trips outside the paid eVisa route. More than 100 countries and regions appear in two exemption groups for stays up to 14 days. GCC citizens do not need a visa.

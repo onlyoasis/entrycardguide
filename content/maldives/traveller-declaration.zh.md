@@ -3,7 +3,7 @@ title: "马尔代夫入境申报表 IMUGA：免费，且只填入境（2026）"
 kicker: "在政府 IMUGA 门户上，抵达前 96 小时内免费提交一次。2024 年起离境不再需要填表。"
 description: "马尔代夫旅客申报表指南：官方 imuga.immigration.gov.mv 入口、96 小时窗口、2024 年取消离境表，以及和落地签的区别。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "maldives"
 weight: 10
 keywords: ["马尔代夫 IMUGA", "马尔代夫入境申报表", "马尔代夫入境卡", "imuga.immigration.gov.mv", "马尔代夫落地签"]

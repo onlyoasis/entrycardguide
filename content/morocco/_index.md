@@ -3,7 +3,7 @@ title: "Morocco"
 kicker: "Many travellers need no visa. Run the official eligibility checker before paying MAD 770 or MAD 1,100."
 description: "Independent Morocco eVisa guide: visa-exemption-first checker, official Accès Maroc portal, standard and express prices, eligibility and documents."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 Do not begin with the eVisa application. Morocco's official checker can return four different routes: no visa, a consular visa, AEVM or eVisa.

@@ -3,7 +3,7 @@ title: "Georgia"
 kicker: "Your passport may allow a full year without a visa. Check the government list before paying for an e-Visa."
 description: "Independent Georgia visa guide: the current visa-free ordinance, official evisa.gov.ge portal, mandatory DuVerify step and application documents."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 Georgia is visa-free for citizens of many countries. The current government ordinance says citizens of countries in its annex may enter and stay without a visa for one full year.

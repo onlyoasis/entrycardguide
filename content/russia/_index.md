@@ -3,7 +3,7 @@ title: "Russia"
 kicker: "The unified e-visa is open to 64 nationalities, single entry, and paid through a personal account. Check the list before you start."
 description: "Independent Russia e-visa guide: the 64-state eligibility list, the official evisa.kdmid.ru application, the 30-day stay rule and the approved border crossing points."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 Russia's unified e-visa is a **single-entry visa issued by the Consular Department of the Ministry of Foreign Affairs**. It is not open to every passport: the ministry publishes a list of 64 states whose nationals can apply, and everyone else needs a regular visa from a Russian diplomatic mission or consular post.

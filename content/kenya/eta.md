@@ -3,7 +3,7 @@ title: "Kenya eTA: Check Whether You Are Exempt Before Paying (2026)"
 kicker: "The standard eTA is USD $30, but Kenya's current official list exempts EAC citizens and many named passport nationalities."
 description: "Kenya eTA guide for 2026: check exemptions, apply at etakenya.go.ke, prepare documents and wait for approval before travel."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "kenya"
 weight: 10
 keywords: ["Kenya eTA", "Kenya eTA official site", "etakenya.go.ke", "Kenya eTA fee", "Kenya eTA exempt countries"]

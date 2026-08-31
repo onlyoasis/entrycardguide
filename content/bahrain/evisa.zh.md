@@ -3,7 +3,7 @@ title: "巴林电子签怎么办？先查线上与落地资格（2026）"
 kicker: "线上和落地是两张名单。电子签产品的入境次数、期限和费用也不同。"
 description: "巴林电子签指南：NPRA 官方入口、线上与落地资格、访问电子签产品、费用、处理时间和材料。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "bahrain"
 weight: 10
 keywords: ["巴林电子签", "巴林落地签", "evisa.gov.bh", "巴林电子签费用", "巴林 NPRA"]

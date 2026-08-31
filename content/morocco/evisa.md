@@ -3,7 +3,7 @@ title: "Morocco eVisa: Check Whether You Need One Before Paying (2026)"
 kicker: "Accès Maroc may tell you that no visa is required. Treat that result as the first decision, not the payment page."
 description: "Morocco eVisa guide: exemption-first eligibility, official portal verification, MAD 770 and MAD 1,100 prices, stay, timing and documents."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "morocco"
 weight: 10
 keywords: ["Morocco eVisa", "Morocco visa exemption", "Acces Maroc official", "Morocco eVisa fee"]

@@ -3,7 +3,7 @@ title: "斯里兰卡 ETA 多少钱？先确认你的费用是不是零（2026）
 kicker: "2026 年 5 月 25 日起，40 个国籍加马尔代夫、塞舌尔、新加坡免费，但仍然要申请 ETA。"
 description: "斯里兰卡 ETA 多少钱：2026 年 5 月 25 日起的免费名单、20 美元与 50 美元在线费用、官方 eta.gov.lk 入口，以及落地办理为什么更贵。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "sri-lanka"
 weight: 10
 keywords: ["斯里兰卡 ETA", "斯里兰卡 ETA 免费", "斯里兰卡 ETA 官网", "eta.gov.lk", "斯里兰卡电子旅行授权费用"]

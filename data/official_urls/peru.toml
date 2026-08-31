@@ -1,25 +1,25 @@
 # Peru — official URLs
-# Last verified: 2026-08-30
+# Last verified: 2026-08-31
 
 [tam_virtual]
 url = "https://cel.migraciones.gob.pe/ConsultaTAMVirtual/VerificarTAM"
 name = "Peru TAM Virtual lookup"
 agency = "Superintendencia Nacional de Migraciones"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Official bilingual lookup for the electronic Andean Migration Card record generated during immigration control. It asks for document type, document number, nationality, movement date, optional departure record and CAPTCHA."
 
 [official_guide]
 url = "https://www.gob.pe/institucion/migraciones/campa%C3%B1as/28799-descarga-tu-tarjeta-andina-de-migracion-virtual"
 name = "Download your Virtual Andean Migration Card"
 agency = "Superintendencia Nacional de Migraciones"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Explains that Peru eliminated passport stamping for international flight immigration control and instructs travellers to complete the lookup and CAPTCHA. Document identifiers use letters and numbers without dots, hyphens or spaces."
 
 [record_explanation]
 url = "https://www.gob.pe/institucion/migraciones/noticias/882413-como-puedes-obtener-tu-tarjeta-andina-de-migracion-tam-virtual"
 name = "How to obtain the TAM Virtual"
 agency = "Superintendencia Nacional de Migraciones"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "States that the TAM Virtual is generated automatically during immigration control and records personal details, movement date and time, checkpoint and authorized stay. Download is free."
 
 [meta]

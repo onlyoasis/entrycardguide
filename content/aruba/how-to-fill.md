@@ -3,7 +3,7 @@ title: "How to Fill the Aruba ED Card (2026)"
 kicker: "Use the live .aw controls for passport, name, flight and address fields."
 description: "Aruba ED Card field guide: seven-day window, passport format, flight number, travel dates, address and confirmation."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "aruba"
 weight: 20
 keywords: ["how to fill Aruba ED Card", "Aruba ED Card fields", "edcardaruba form"]

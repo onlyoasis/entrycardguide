@@ -3,7 +3,7 @@ title: "古巴 D'Viajeros 2026：免费入境表和旅游 eVisa 要分开"
 kicker: "D'Viajeros 二维码不收费；旅游 eVisa 是另一份文件，另有签发费用。"
 description: "古巴 D'Viajeros 中文指南：免费官网、旅行前 7 天窗口、二维码和单独的旅游 eVisa。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "cuba"
 weight: 10
 keywords: ["古巴 D'Viajeros", "DViajeros 官网", "古巴入境表", "dviajeros.mitrans.gob.cu", "古巴 eVisa"]

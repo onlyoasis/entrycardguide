@@ -3,7 +3,7 @@ title: "Peru TAM Virtual: Free Official Lookup (2026)"
 kicker: "The electronic migration record is created at the border. Use Migraciones only to retrieve it afterward."
 description: "Peru TAM Virtual guide: automatic immigration record, free official lookup, recorded stay and downloadable proof."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "peru"
 weight: 10
 keywords: ["Peru TAM Virtual", "Peru Andean Migration Card", "Peru immigration record", "Consulta TAM Virtual"]

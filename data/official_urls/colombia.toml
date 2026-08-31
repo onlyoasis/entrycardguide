@@ -1,11 +1,11 @@
 # Colombia — official government URLs
-# Last verified: 2026-08-30
+# Last verified: 2026-08-31
 
 [checkmig]
 url = "https://apps.migracioncolombia.gov.co/pre-registro/public/"
 name = "CheckMig immigration pre-registration"
 agency = "Unidad Administrativa Especial Migración Colombia"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://apps.migracioncolombia.gov.co/pre-registro/public/"
 notes = "Official Migración Colombia application. It lets Colombian and foreign travellers preload entry or exit trip information. The live page states the filing window runs from 72 hours before travel until one hour before travel."
 
@@ -13,7 +13,7 @@ notes = "Official Migración Colombia application. It lets Colombian and foreign
 url = "https://portal.migracioncolombia.gov.co/tramites-y-servicios/aplicativos/checkmig"
 name = "Migración Colombia CheckMig service guide"
 agency = "Unidad Administrativa Especial Migración Colombia"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://portal.migracioncolombia.gov.co/tramites-y-servicios/aplicativos/checkmig"
 notes = "Official service page. It states CheckMig is free, online and optional; is intended for national and foreign travellers entering or leaving Colombia; takes two to five minutes; cannot be edited after submission; and sends an email confirmation that can also be downloaded."
 
@@ -21,7 +21,7 @@ notes = "Official service page. It states CheckMig is free, online and optional;
 url = "https://portal.migracioncolombia.gov.co/tramites-y-servicios/instructivos/requisitos-de-entrada-y-salida-del-pais"
 name = "Colombia entry and exit requirements"
 agency = "Unidad Administrativa Especial Migración Colombia"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://portal.migracioncolombia.gov.co/tramites-y-servicios/instructivos/requisitos-de-entrada-y-salida-del-pais"
 notes = "Official requirements page. It describes CheckMig as optional and recommended, repeats the 72-hour-to-one-hour window, and separates it from passports, visas and admission requirements."
 

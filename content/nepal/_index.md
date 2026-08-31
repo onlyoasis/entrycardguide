@@ -3,7 +3,7 @@ title: "Nepal"
 kicker: "Most eligible tourists can pre-fill the visa-on-arrival form online. The barcode receipt is not the visa."
 description: "Independent Nepal Tourist Visa guide: official NepaliPort form, USD 30 / 50 / 125 tiers, gratis categories, 15-day receipt and separate ETA route."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 Nepal's **online Tourist Visa form** is a pre-fill for visa on arrival. Submit it before travel, save the barcode receipt, pay the applicable fee, and present everything to the immigration officer who issues the visa at the port.

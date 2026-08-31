@@ -3,7 +3,7 @@ title: "阿塞拜疆电子签怎么办？付款前先查免签（2026）"
 kicker: "标准费用是 20 美元加 5 美元。部分护照根本不用办 eVisa。"
 description: "阿塞拜疆 ASAN 电子签指南：免签查询、官方入口、25 美元标准费用、审理时间、有效期和护照要求。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "azerbaijan"
 weight: 10
 keywords: ["阿塞拜疆电子签", "ASAN 签证", "阿塞拜疆免签", "evisa.gov.az", "阿塞拜疆签证费用"]

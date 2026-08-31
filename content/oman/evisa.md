@@ -3,7 +3,7 @@ title: "Oman eVisa: Check the 14-Day Exemption Before Applying (2026)"
 kicker: "Many travellers need no visa for a short trip. The Royal Oman Police wizard shows the paid route only after passport and GCC-residence checks."
 description: "Oman eVisa guide: 14-day visa exemption, official ROP portal, eligibility, fees, timing, passport validity and file limits."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "oman"
 weight: 10
 keywords: ["Oman eVisa", "Oman visa free 14 days", "evisa.rop.gov.om", "Oman eVisa fee", "Oman visa requirements"]

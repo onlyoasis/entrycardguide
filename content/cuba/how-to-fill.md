@@ -3,7 +3,7 @@ title: "How to Fill Cuba D'Viajeros (2026)"
 kicker: "Prepare the four official information groups and keep the tourist eVisa separate."
 description: "Cuba D'Viajeros field guide: passport, arrival, accommodation, eVisa code, customs, health and QR result."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "cuba"
 weight: 20
 keywords: ["how to fill D'Viajeros", "Cuba arrival form fields", "DViajeros QR code"]

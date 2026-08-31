@@ -3,7 +3,7 @@ title: "Maldives IMUGA Traveller Declaration: Free, and Arrival Only (2026)"
 kicker: "One free submission within 96 hours before arrival, on the government IMUGA portal. No departure form since 2024."
 description: "Maldives Traveller Declaration guide: the official imuga.immigration.gov.mv portal, the 96-hour window, the 2024 departure-form removal, and the separate visa on arrival."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "maldives"
 weight: 10
 keywords: ["Maldives IMUGA", "Maldives Traveller Declaration", "IMUGA official site", "imuga.immigration.gov.mv", "Maldives arrival form"]

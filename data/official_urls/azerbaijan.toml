@@ -12,7 +12,7 @@ notes = "Read 2026-08-30. The ASAN Visa portal identifies itself as the official
 url = "https://mfa.gov.az/en/category/visa/visa-free-countries"
 name = "Azerbaijan visa-free countries"
 agency = "Ministry of Foreign Affairs of the Republic of Azerbaijan"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The Ministry page lists ordinary-passport visa-free arrangements and their stay limits, including permanent reciprocal arrangements and time-limited unilateral schemes. Travellers must check the exact passport and current dates before applying for an e-Visa."
 
 [eligible_countries]

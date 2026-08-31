@@ -1,11 +1,11 @@
 # Curaçao — official designated URLs
-# Last verified: 2026-08-30
+# Last verified: 2026-08-31
 
 [dicard]
 url = "https://dicardcuracao.com/dicard/"
 name = "Curaçao Digital Immigration Card"
 agency = "Curaçao Immigration, through the Curaçao Tourist Board designated portal"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://dicardcuracao.com/dicard/"
 notes = "Government-designated entry portal on a non-government .com domain. Verify it by following the DI Card link from curacao.com, the Curaçao Tourist Board site. The portal says all foreign visitors must complete the card within seven days before departure and present the digital or printed confirmation at airline check-in and immigration."
 
@@ -13,7 +13,7 @@ notes = "Government-designated entry portal on a non-government .com domain. Ver
 url = "https://www.curacao.com/en/article/curacao/"
 name = "Curaçao visa and entry requirements"
 agency = "Curaçao Tourist Board"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://www.curacao.com/en/article/curacao/"
 notes = "Official tourism board page last updated August 2026. It links to dicardcuracao.com and states the DI Card is mandatory before travel, separate from visa status and completely free of charge."
 
@@ -21,7 +21,7 @@ notes = "Official tourism board page last updated August 2026. It links to dicar
 url = "https://dicardcuracao.com/portal"
 name = "Official Curaçao Entry Portal FAQ"
 agency = "Curaçao Tourist Board / Curaçao Immigration"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://dicardcuracao.com/portal"
 notes = "Publishes the seven-day window, required application groups, passport and nickname rule, flight lookup behavior, per-person/per-trip rule, edit process and confirmation handling."
 

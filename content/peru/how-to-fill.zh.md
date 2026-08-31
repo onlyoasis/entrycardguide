@@ -3,7 +3,7 @@ title: "秘鲁 TAM Virtual 怎么查 2026：证件、日期和下载"
 kicker: "按边检记录匹配证件、国籍和 DD/MM/YYYY 日期。"
 description: "秘鲁 TAM Virtual 查询字段指南：证件格式、国籍、出入境日期、CAPTCHA 和下载记录。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "peru"
 weight: 20
 keywords: ["秘鲁 TAM Virtual 查询", "下载秘鲁 TAM", "秘鲁出入境记录字段"]

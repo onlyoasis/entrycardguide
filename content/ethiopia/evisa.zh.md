@@ -3,7 +3,7 @@ title: "埃塞俄比亚电子签多少钱？30 天 62 美元、90 天 152 美元
 kicker: "在 evisa.gov.et 选择 30 或 90 天，有效期从计划入境日开始算。"
 description: "埃塞俄比亚旅游电子签指南：官网、30 天与 90 天费用、处理时间、材料、有效期、延期和逾期规则。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "ethiopia"
 weight: 10
 keywords: ["埃塞俄比亚电子签", "埃塞俄比亚签证官网", "埃塞俄比亚电子签费用", "evisa.gov.et"]

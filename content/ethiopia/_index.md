@@ -3,7 +3,7 @@ title: "Ethiopia"
 kicker: "The official tourist eVisa has 30-day and 90-day single-entry prices. Check exemption and arrival eligibility first."
 description: "Independent Ethiopia eVisa guide: official evisa.gov.et portal, USD 62 and USD 152 tourist options, 3-day processing and application fields."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 Ethiopia's Tourist eVisa is a government-issued, single-entry visa for tourism and other non-business travel. The current official prices are USD 62 for 30 days and USD 152 for 90 days.

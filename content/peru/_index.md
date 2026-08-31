@@ -3,7 +3,7 @@ title: "Peru"
 kicker: "Peru's TAM Virtual is generated automatically at immigration control. The official site is a free lookup, not a pre-arrival form."
 description: "Independent Peru TAM Virtual guide: automatic border record, free Migraciones lookup, document format and downloadable proof."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 Peru replaced the paper movement card and passport stamp for international flight immigration control with an electronic record. The Virtual Andean Migration Card, or TAM Virtual, is generated automatically during immigration control.

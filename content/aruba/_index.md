@@ -3,7 +3,7 @@ title: "Aruba"
 kicker: "Every passenger needs the ED Card. Most air arrivals also pay a separate USD 20 sustainability fee in the same flow."
 description: "Independent Aruba ED Card guide: official .aw portal, seven-day window, air and sea arrivals, and the separate sustainability fee."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 The Aruba ED Card is a mandatory online admission step for every passenger, including infants and children. It applies at air and seaports and opens within seven days before travel.

@@ -3,7 +3,7 @@ title: "How to Prepare an Oman eVisa Application (2026)"
 kicker: "Nine checks from the current Foreign Ministry and Royal Oman Police pages, before you log in to the application."
 description: "Prepare an Oman eVisa application: exemption, nationality, GCC residence, visa subtype, passport, 512 KB files, email and timing."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "oman"
 weight: 20
 keywords: ["how to fill Oman eVisa", "Oman eVisa application", "Oman eVisa documents", "evisa.rop.gov.om"]

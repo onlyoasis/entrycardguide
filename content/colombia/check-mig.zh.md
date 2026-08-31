@@ -3,7 +3,7 @@ title: "哥伦比亚 Check-Mig：免费官网、填写时间和确认"
 kicker: "免费且不强制。本次入境或出境要在出行前 72 小时至 1 小时内登记。"
 description: "哥伦比亚 Check-Mig 中文指南：免费官方应用、可选性质、确切窗口、入境出境用途和确认。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "colombia"
 weight: 10
 keywords: ["哥伦比亚 Check-Mig", "Check Mig 哥伦比亚官网", "哥伦比亚入境表", "Check-Mig 免费"]

@@ -3,7 +3,7 @@ title: "Ethiopia Tourist eVisa: Official USD 62 and USD 152 Options (2026)"
 kicker: "Choose 30 or 90 days on evisa.gov.et, then count validity from the intended entry date."
 description: "Ethiopia Tourist eVisa guide: official site, 30-day and 90-day fees, processing, documents, validity, extensions and overstay rule."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "ethiopia"
 weight: 10
 keywords: ["Ethiopia eVisa", "Ethiopia visa official website", "Ethiopia eVisa fee", "evisa.gov.et"]

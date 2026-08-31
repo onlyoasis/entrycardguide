@@ -3,7 +3,7 @@ title: "秘鲁 TAM Virtual 2026：免费官方查询"
 kicker: "电子移民记录在边检时生成，之后只从 Migraciones 找回。"
 description: "秘鲁 TAM Virtual 中文指南：自动出入境记录、免费官网查询、获准停留信息和下载凭证。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "peru"
 weight: 10
 keywords: ["秘鲁 TAM Virtual", "秘鲁安第斯移民卡", "秘鲁出入境记录", "TAM Virtual 查询"]

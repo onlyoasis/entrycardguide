@@ -3,7 +3,7 @@ title: "台湾入境登记表 TWAC：官网、免费、抵达前 7 天内提交�
 kicker: "2025 年 10 月起只能线上填写，免费，可在抵达前 7 天内提交。这里讲清楚谁要填、去哪填。"
 description: "台湾入境登记表指南：官方 twac.immigration.gov.tw 入口、7 天提交窗口、免费公告，以及适用对象。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "taiwan"
 weight: 10
 keywords: ["台湾入境登记表", "TWAC", "台湾入境卡官网", "twac.immigration.gov.tw", "台湾线上入境登记"]

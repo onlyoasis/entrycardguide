@@ -3,7 +3,7 @@ title: "Nepal Visa on Arrival: Official Online Form, Fees and Gratis Rules (2026
 kicker: "Pre-fill online, then take the barcode receipt, payment proof and passport to the immigration desk."
 description: "Nepal visa-on-arrival guide: official NepaliPort form, USD 30 / 50 / 125 fees, Chinese gratis treatment, restricted passports and separate ETA."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "nepal"
 weight: 10
 keywords: ["Nepal visa on arrival", "Nepal online tourist visa", "NepaliPort", "Nepal visa fee", "Nepal visa Chinese passport"]

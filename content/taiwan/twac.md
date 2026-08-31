@@ -3,7 +3,7 @@ title: "Taiwan Arrival Card (TWAC): Official Site, Free, 7-Day Window (2026)"
 kicker: "Online only since October 2025, free, and accepted within 7 days before arrival. Here is who submits and where."
 description: "Taiwan Arrival Card guide: the official twac.immigration.gov.tw portal, the 7-day submission window, the free-of-charge notice, and the eligibility groups."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "taiwan"
 weight: 10
 keywords: ["Taiwan Arrival Card", "TWAC", "TWAC official site", "twac.immigration.gov.tw", "Taiwan online arrival card"]

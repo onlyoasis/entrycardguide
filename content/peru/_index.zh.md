@@ -3,7 +3,7 @@ title: "秘鲁 TAM Virtual：自动生成、免费查询和下载"
 kicker: "TAM Virtual 在边检时自动生成。官网是免费查询，不是入境前要填的表。"
 description: "秘鲁 TAM Virtual 中文指南：边检自动记录、Migraciones 免费查询、证件格式和下载凭证。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 秘鲁以电子记录取代了国际航班移民检查中的纸质卡和护照盖章。虚拟安第斯移民卡 TAM Virtual 在边检时自动生成。

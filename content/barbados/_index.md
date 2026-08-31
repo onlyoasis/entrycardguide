@@ -3,7 +3,7 @@ title: "Barbados"
 kicker: "Use the free .gov.bb form within its 72-hour opening window and save both Immigration and Customs receipts."
 description: "Independent Barbados ED Form guide: official government portal, free filing, 72-hour window, required travel documents and two receipts."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 Barbados combines immigration and customs questions in one online ED Form. The government portal opens 72 hours before arrival. It asks travellers to prepare flight information, passenger passports and a valid email address.

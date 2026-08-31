@@ -3,7 +3,7 @@ title: "How to Apply for the Russia e-Visa: 13 Checks (2026)"
 kicker: "The application sits behind a personal-account login, so this guide carries the ministry's published conditions instead of invented regexes."
 description: "Fill the Russia unified e-visa: the 64-state list, machine-readable passport, 35x45 JPEG photo, DD.MM.YYYY dates, the 86-to-4-day window and approved crossing points."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "russia"
 weight: 20
 keywords: ["how to apply Russia e-visa", "Russia e-visa requirements", "Russia e-visa photo requirements", "evisa.kdmid.ru application"]

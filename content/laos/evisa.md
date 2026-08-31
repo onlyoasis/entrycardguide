@@ -3,7 +3,7 @@ title: "Laos eVisa: Official Site, Fees and 9 Entry Ports (2026)"
 kicker: "Check your passport and port before paying a fee the government says is non-refundable."
 description: "Laos eVisa guide: official laoevisa.gov.la site, passport-based fee, 9 designated ports, 30-day single-entry tourist stay and visa-on-arrival difference."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "laos"
 weight: 10
 keywords: ["Laos eVisa", "Lao eVisa official website", "laoevisa.gov.la", "Laos eVisa fee", "Laos visa on arrival"]

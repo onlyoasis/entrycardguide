@@ -3,7 +3,7 @@ title: "墨西哥 FMM-E 入境表 2026 完整指南：官方网址、免费在�
 kicker: "墨西哥的电子入境许可是免费的。这里是官方 INM 网址、所有字段，以及如何分辨真假。"
 description: "免费、独立的墨西哥 FMM-E 中文指南。官方 INM 网址 inm.gob.mx/fmme，每个字段逐项讲解，永远免费。"
 date: 2026-04-24
-lastmod: 2026-08-24
+lastmod: 2026-08-31
 country: "mexico"
 weight: 10
 keywords: ["墨西哥 FMM", "FMM 怎么填", "墨西哥入境表", "墨西哥旅游卡", "INM FMM 官网"]

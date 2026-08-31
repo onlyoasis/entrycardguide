@@ -3,7 +3,7 @@ title: "哥伦比亚 Check-Mig 怎么填：5 步字段指南"
 kicker: "按实时 5 步整理 10 项准备检查，不编官方正则。"
 description: "哥伦比亚 Check-Mig 中文字段指南：行程方向、交通、旅行日期、纯数字航班号、个人资料和确认。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "colombia"
 weight: 20
 keywords: ["哥伦比亚 Check-Mig 怎么填", "Check-Mig 字段", "哥伦比亚移民预登记"]

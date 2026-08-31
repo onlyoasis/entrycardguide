@@ -3,7 +3,7 @@ title: "Jordan Pass: Official Site, Prices and the JD 40 Visa Fee It Waives (202
 kicker: "Buy it before arrival, stay two whole nights, and the single-entry visa fee disappears."
 description: "Jordan Pass guide: the official jordanpass.jo site, JD 70 / 75 / 80 packages, the visa fee it waives, which borders grant visa on arrival and the Interior Ministry e-visa route."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "jordan"
 weight: 10
 keywords: ["Jordan Pass", "Jordan Pass official website", "jordanpass.jo", "Jordan visa fee", "Jordan visa on arrival", "Jordan e-visa"]

@@ -1,39 +1,39 @@
 # Morocco — official government-linked URLs
-# Last verified: 2026-08-30
+# Last verified: 2026-08-31
 
 [evisa]
 url = "https://www.acces-maroc.ma/"
 name = "Accès Maroc eVisa and Entry Eligibility Portal"
 agency = "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The domain is not a government suffix. Verify it by following the link from diplomatie.ma. The Ministry says the platform was developed by engineers and technicians of the Department. The live home page checks exemption and routes travellers to no visa, consular visa, AEVM or eVisa."
 
 [mfa_launch]
 url = "https://diplomatie.ma/en/launch-electronic-visa-evisa"
 name = "Ministry Launch of the Morocco eVisa"
 agency = "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The Ministry identifies acces-maroc.ma as the eVisa platform, states the 180-day maximum validity, 30-day maximum stay, three eligibility categories, 24-hour express and 72-hour standard processing, and says Department staff developed and operate the platform."
 
 [terms]
 url = "https://www.acces-maroc.ma/assets/docs/Conditions%20utilisation%20eVisa%20-%20An.pdf"
 name = "Morocco eVisa General Information"
 agency = "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The English briefing note publishes current Category A, B and C criteria, ordinary-passport and document rules, 180-day validity, 30-day single-entry stay, 24/72-hour deadlines, non-refund rule and border documents."
 
 [guide]
 url = "https://www.acces-maroc.ma/assets/docs/Guide%20eVisa.pdf"
 name = "Accès Maroc eVisa User Guide"
 agency = "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The user guide shows eligibility, email verification, personal and supplemental information, document upload, Treasury payment and status tracking. The payment screen shows MAD 770 standard and MAD 1,100 express."
 
 [embassy_eligibility]
 url = "https://us.diplomatie.ma/index.php/en/visa-requirements"
 name = "Morocco Embassy Visa Requirements"
 agency = "Embassy of the Kingdom of Morocco in the United States"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The embassy tells travellers to verify visa-exemption eligibility on acces-maroc.ma before applying for a visa."
 
 [meta]

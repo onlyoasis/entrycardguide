@@ -3,7 +3,7 @@ title: "Sri Lanka ETA: Check Whether Your Fee Is Zero Before Paying (2026)"
 kicker: "40 nationalities plus Maldives, Seychelles and Singapore pay nothing since 25 May 2026. They still apply for the ETA."
 description: "Sri Lanka ETA guide: the free-scheme list from 25 May 2026, USD 20 and USD 50 online fees, the official eta.gov.lk application, and why on-arrival costs more."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "sri-lanka"
 weight: 10
 keywords: ["Sri Lanka ETA", "Sri Lanka ETA free", "Sri Lanka ETA official site", "eta.gov.lk", "Sri Lanka ETA fee"]

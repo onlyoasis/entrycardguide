@@ -3,7 +3,7 @@ title: "How to Prepare the Bahamas C17 Digital Declaration (2026)"
 kicker: "Twelve checks from the government-authorized portal and the public C17 sections."
 description: "Prepare the Bahamas C17: filing route, passport profile, passenger and travel information, baggage, invoices, alcohol, tobacco, declared goods and QR code."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "bahamas"
 weight: 20
 keywords: ["how to fill Bahamas C17", "Bahamas Exempt app form", "Bahamas digital customs declaration"]

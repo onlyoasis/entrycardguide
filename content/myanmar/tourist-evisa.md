@@ -3,7 +3,7 @@ title: "Myanmar Tourist eVisa: Official Site, USD 50 Guide Price and 4 Entry Poi
 kicker: "Check the nationality list and the 4-port limit before paying a non-refundable fee."
 description: "Myanmar Tourist eVisa guide: official portal, USD 50 guide price, documents, minimum 3-working-day processing, 28-day stay and 90-day Approval Letter."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "myanmar"
 weight: 10
 keywords: ["Myanmar eVisa", "Myanmar Tourist eVisa", "Myanmar eVisa official website", "evisa.moip.gov.mm", "Myanmar eVisa fee"]

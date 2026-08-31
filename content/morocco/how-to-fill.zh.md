@@ -3,7 +3,7 @@ title: "摩洛哥电子签怎么填：12 项资格与材料检查（2026）"
 kicker: "12 项内容来自 Accès Maroc 实时资格页和官方说明。"
 description: "摩洛哥电子签怎么填：资格结果、护照、居留或签证证明、邮箱、照片和 1 MB 附件。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "morocco"
 weight: 20
 keywords: ["摩洛哥电子签怎么填", "Accès Maroc 申请", "摩洛哥电子签材料"]

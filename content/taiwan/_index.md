@@ -3,7 +3,7 @@ title: "Taiwan"
 kicker: "The TWAC is free, online only since October 2025, and now accepted within 7 days before arrival."
 description: "Independent Taiwan Arrival Card guide: the official twac.immigration.gov.tw portal, the 7-day window, who submits, and what the official manual collects."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 The Taiwan Arrival Card replaced paper cards on **1 October 2025**. It is submitted online, and it is free.

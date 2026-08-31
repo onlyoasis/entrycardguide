@@ -1,12 +1,12 @@
 # Egypt — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-08-30
+# Last verified: 2026-08-31
 
 [evisa]
 url = "https://www.visa2egypt.gov.eg/eVisa/Home"
 name = "Egypt e-Visa Portal"
 agency = "Ministry of Interior, Arab Republic of Egypt"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://www.visa2egypt.gov.eg/eVisa/Home"
 notes = "Read 2026-08-30. The government e-Visa portal, on a .gov.eg host. Current fees are USD 30 for a single-entry tourist visa and USD 65 for a multiple-entry tourist visa. The portal says to create the application at least 7 days before departure, and that the approval and download link arrive by email."
 
@@ -14,7 +14,7 @@ notes = "Read 2026-08-30. The government e-Visa portal, on a .gov.eg host. Curre
 url = "https://www.visa2egypt.gov.eg/eVisa/FAQ"
 name = "Egypt e-Visa FAQ and eligible nationalities"
 agency = "Ministry of Interior, Arab Republic of Egypt"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://www.visa2egypt.gov.eg/eVisa/FAQ"
 notes = "Read 2026-08-30. Lists the nationalities currently eligible to use the eVisa, so the portal is not open to every passport. The entry checklist on this page is a passport valid at least 6 months from arrival, a printed eVisa, an itinerary, a supporting letter for a business or family visit, and hotel booking or accommodation details for tourism."
 
@@ -22,7 +22,7 @@ notes = "Read 2026-08-30. Lists the nationalities currently eligible to use the 
 url = "https://egyptembassy.net/consular-services/visas-travel/visa-requirements/"
 name = "Egyptian Embassy visa requirements"
 agency = "Embassy of the Arab Republic of Egypt in Washington, D.C."
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://egyptembassy.net/consular-services/visas-travel/visa-requirements/"
 notes = "Read 2026-08-30. Note the host: egyptembassy.net is the Egyptian Embassy in Washington's own site and does not carry a government suffix, so treat it as embassy guidance rather than as the application portal. It states that travellers on the pre-approval list cannot obtain a visa on arrival, that Bangladeshi nationals require a visa before entry, and that airlines should confirm boarding eligibility. Visa on arrival is therefore a separate product whose availability depends on passport and port."
 

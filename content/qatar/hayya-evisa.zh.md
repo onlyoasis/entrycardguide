@@ -3,7 +3,7 @@ title: "卡塔尔 Hayya 电子签怎么办？付 100 里亚尔前先查免签（
 kicker: "Hayya 既是访客平台，也是电子签枢纽。符合免费入境的旅客大多不用买 A1 旅游签。"
 description: "卡塔尔 Hayya 电子签指南：免费入境、官方平台、A1/A2/A3 路径、100 里亚尔费用、护照和住宿。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "qatar"
 weight: 10
 keywords: ["卡塔尔 Hayya 签证", "卡塔尔免签", "Hayya 电子签", "卡塔尔 A1 旅游签", "卡塔尔签证费用"]

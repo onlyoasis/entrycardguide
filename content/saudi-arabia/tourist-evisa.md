@@ -3,7 +3,7 @@ title: "Saudi Tourist eVisa: Who Can Apply and What SAR 300 Really Costs (2026)"
 kicker: "66 eligible passports, one year multiple entry, and a checkout total that is more than the base fee."
 description: "Saudi tourist eVisa guide: the 66-country list, the Ministry of Tourism portal and its non-government hostname, SAR 300 plus insurance and VAT, and the finder route."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "saudi-arabia"
 weight: 10
 keywords: ["Saudi tourist eVisa", "Saudi eVisa official site", "Saudi visa fee", "visa.visitsaudi.com", "Saudi visa finder"]

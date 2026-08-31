@@ -3,7 +3,7 @@ title: "卡塔尔 Hayya 电子签怎么填：8 项路径核对（2026）"
 kicker: "8 项内容来自卡塔尔旅游局和 Hayya，第 1 组先排除无需付费签证的护照。"
 description: "卡塔尔 Hayya 电子签怎么填：国籍、免费入境、海合会身份、类别、护照、住宿和费用。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "qatar"
 weight: 20
 keywords: ["Hayya 签证怎么申请", "卡塔尔 A1 签证", "Hayya 申请材料", "hayya.qa"]

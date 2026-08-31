@@ -1,12 +1,12 @@
 # Laos — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-08-30
+# Last verified: 2026-08-31
 
 [evisa]
 url = "https://laoevisa.gov.la/application"
 name = "Lao eVisa Application"
 agency = "Consular Department, Ministry of Foreign Affairs of the Lao PDR"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://laoevisa.gov.la/application"
 notes = "Read 2026-08-30. This is the live application on the Lao government .gov.la portal. It asks for passport and face images, passport details, a designated port, intended entry date and address in Laos. The page states DD-MM-YYYY for dates, a 2 MB limit for each image, JPG/JPEG/PNG formats, and at least 6 months of passport validity from arrival."
 
@@ -14,7 +14,7 @@ notes = "Read 2026-08-30. This is the live application on the Lao government .go
 url = "https://laoevisa.gov.la/info"
 name = "Lao eVisa Information"
 agency = "Consular Department, Ministry of Foreign Affairs of the Lao PDR"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://laoevisa.gov.la/info"
 notes = "Read 2026-08-30. The Ministry describes the three-step application, the nationality-based fee calculator, the designated ports, the eVisa Approval Letter and the normal processing time of 3 working days. The fee shown by the calculator is non-refundable."
 
@@ -22,7 +22,7 @@ notes = "Read 2026-08-30. The Ministry describes the three-step application, the
 url = "https://laoevisa.gov.la/faq"
 name = "Lao eVisa FAQ"
 agency = "Consular Department, Ministry of Foreign Affairs of the Lao PDR"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://laoevisa.gov.la/faq"
 notes = "Read 2026-08-30. The eVisa is a single-entry Tourist Visa only, allows a 30-day stay, and is valid for 60 days after the Approval Letter is issued. The current FAQ lists 9 designated ports and says an eVisa fee is not refunded if the traveller arrives at an undesignated port."
 
@@ -30,7 +30,7 @@ notes = "Read 2026-08-30. The eVisa is a single-entry Tourist Visa only, allows 
 url = "https://laoevisa.gov.la/term/"
 name = "Lao eVisa Terms and Conditions"
 agency = "Consular Department, Ministry of Foreign Affairs of the Lao PDR"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://laoevisa.gov.la/term/"
 notes = "Read 2026-08-30. Only ordinary passports qualify. The passport must have more than 6 months of validity from arrival and at least one blank page. The traveller must carry a hard copy of the Approval Letter and use the same passport as in the application."
 

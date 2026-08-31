@@ -3,7 +3,7 @@ title: "Russia e-Visa: Official Site, 64 Eligible States and the 30-Day Rule (20
 kicker: "Check the nationality list and the border crossing points before you pay a fee the ministry will not refund."
 description: "Russia unified e-visa guide: the official evisa.kdmid.ru application, the 64-state list, 120-day validity, 30-day stay, approved crossing points and the non-refundable fee."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "russia"
 weight: 10
 keywords: ["Russia e-visa", "Russia unified e-visa", "evisa.kdmid.ru", "Russia e-visa fee", "Russia e-visa eligible countries"]

@@ -3,7 +3,7 @@ title: "How to Fill Colombia Check-Mig (2026)"
 kicker: "Ten public preparation checks across the five live steps, with no invented regexes."
 description: "Colombia Check-Mig field guide: journey direction, transport, travel date, numeric flight number, personal data and confirmation."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "colombia"
 weight: 20
 keywords: ["how to fill Colombia Check-Mig", "Check-Mig fields", "Colombia immigration pre-registration"]

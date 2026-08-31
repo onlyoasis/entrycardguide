@@ -3,7 +3,7 @@ title: "Brazil e-Visa: Official VFS Route and USD 80.90 Fee (2026)"
 kicker: "Verify the commercial .com portal through Brazil's Ministry of Foreign Affairs before entering passport or payment details."
 description: "Brazil e-Visa guide: eligible passports, gov.br verification chain, VFS contractor, fee, processing and issued validity."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "brazil"
 weight: 10
 keywords: ["Brazil eVisa", "brazil.vfsevisa.com", "Brazil eVisa official", "Brazil visa Australia Canada USA", "Brazil eVisa fee"]

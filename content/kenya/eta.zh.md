@@ -3,7 +3,7 @@ title: "肯尼亚 eTA 2026：付款前先查豁免国籍"
 kicker: "标准 eTA 是 30 美元，但官网当前豁免 EAC 公民和多批指定护照国籍。"
 description: "肯尼亚 eTA 中文指南：查豁免、只用 etakenya.go.ke、准备材料，并在出行前等到正式批准。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "kenya"
 weight: 10
 keywords: ["肯尼亚 eTA", "肯尼亚 eTA 官网", "etakenya.go.ke", "肯尼亚 eTA 费用", "肯尼亚 eTA 豁免"]

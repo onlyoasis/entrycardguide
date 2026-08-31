@@ -3,7 +3,7 @@ title: "Uzbekistan eVisa: Check Visa-Free Status Before Paying (2026)"
 kicker: "Visa-free status comes first. The eVisa is a separate paid route for passports in the current eligibility appendix."
 description: "Uzbekistan eVisa guide: visa-free check, eligible passports, USD 20 / 35 / 50 fees, 30-day stay, 90-day entry validity and two-day processing."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "uzbekistan"
 weight: 10
 keywords: ["Uzbekistan eVisa", "Uzbekistan visa free", "e-visa.gov.uz", "Uzbekistan electronic visa fee", "Uzbekistan visa application"]

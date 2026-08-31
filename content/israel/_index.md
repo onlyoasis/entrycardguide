@@ -3,7 +3,7 @@ title: "Israel"
 kicker: "ETA-IL is only for visa-exempt passports. Check eligibility before paying ILS 25."
 description: "Independent Israel ETA-IL guide: visa-exempt eligibility, official PIBA URL, ILS 25 fee and 72-hour decision window."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 ETA-IL is Israel's electronic travel authorisation for short visitors from visa-exempt countries. It became mandatory on 1 January 2025. It does not turn a visa-required passport into a visa-exempt one.

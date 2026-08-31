@@ -3,7 +3,7 @@ title: "Panama Digital Sworn Traveler Declaration (2026)"
 kicker: "Use the free Panama Customs portal, save the QR and do not confuse this goods declaration with a visa."
 description: "Panama customs declaration guide: official bilingual portal, free filing, 72-hour timing, family rule and QR receipt."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "panama"
 weight: 10
 keywords: ["Panama traveler declaration", "Panama customs form", "declaraciondeviajero.ana.gob.pa", "Panama declaration QR"]

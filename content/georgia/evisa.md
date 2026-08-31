@@ -3,7 +3,7 @@ title: "Georgia e-Visa: You May Not Need One Before Paying (2026)"
 kicker: "Many listed passports can enter without a visa for one full year. If you do need an e-Visa, the current process has two paid steps."
 description: "Georgia e-Visa guide: visa-free eligibility, official portal, USD 20 plus 2% fee, mandatory USD 15 DuVerify and required documents."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "georgia"
 weight: 10
 keywords: ["Georgia eVisa", "Georgia visa free", "evisa.gov.ge", "Georgia eVisa fee", "Georgia visa requirements"]

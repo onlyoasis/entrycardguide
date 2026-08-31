@@ -3,7 +3,7 @@ title: "Sri Lanka"
 kicker: "Many passports now pay zero for the Sri Lanka ETA, and they still have to apply for it. Check your fee before paying anyone."
 description: "Independent Sri Lanka ETA guide: the free-scheme passport list from 25 May 2026, the government fee table, the official eta.gov.lk application and what it checks."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 The Sri Lanka Electronic Travel Authorization is the online approval a visitor obtains before arriving. Since 25 May 2026, 40 named nationalities plus Maldives, Seychelles and Singapore receive the tourist ETA free of charge.

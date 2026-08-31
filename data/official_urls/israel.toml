@@ -5,7 +5,7 @@
 url = "https://israel-entry.piba.gov.il/"
 name = "Israel Entry — ETA-IL"
 agency = "Population and Immigration Authority (PIBA)"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://israel-entry.piba.gov.il/"
 notes = "Official PIBA portal on a gov.il host. The portal says ETA-IL is for citizens of visa-exempt countries, recommends applying at least 72 hours before making non-refundable travel bookings, and says approval is generally valid for multiple trips for up to two years or until passport expiry."
 
@@ -21,7 +21,7 @@ notes = "Government page stating that all visa-exempt travellers need ETA-IL fro
 url = "https://embassies.gov.il/en/announcements/eta-il-entrance-tourists-visa-exempt-countries"
 name = "ETA-IL for tourists from visa-exempt countries"
 agency = "Israel Ministry of Foreign Affairs"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://embassies.gov.il/en/announcements/eta-il-entrance-tourists-visa-exempt-countries"
 notes = "States that the official application costs ILS 25, the decision is emailed within 72 hours, and a payment receipt is sent by the official site."
 

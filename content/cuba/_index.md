@@ -3,7 +3,7 @@ title: "Cuba"
 kicker: "D'Viajeros is free. A tourist eVisa is separate and may be paid. Do not buy them as one form."
 description: "Independent Cuba D'Viajeros guide: official free form, seven-day window, QR code and separate eVisa requirement."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 Cuba has two different entry steps that are often presented as one product.

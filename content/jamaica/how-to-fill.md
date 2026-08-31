@@ -3,7 +3,7 @@ title: "How to Fill the Jamaica C5 Form (2026)"
 kicker: "Twenty checks from the live .gov.jm form, without invented passport regexes or fake green checks."
 description: "Prepare the Jamaica C5 form: email verification, passport fields, Jamaica address, flight number, mm/dd/yyyy date, luggage and customs declarations."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "jamaica"
 weight: 20
 keywords: ["how to fill Jamaica C5", "Jamaica entry form fields", "Jamaica customs declaration form"]

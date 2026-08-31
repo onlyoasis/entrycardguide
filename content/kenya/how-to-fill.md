@@ -3,7 +3,7 @@ title: "How to Prepare the Kenya eTA Application (2026)"
 kicker: "Eight public requirements from the official portal, with no invented form regexes or error messages."
 description: "Prepare passport, contact, itinerary, accommodation and purpose documents for the official Kenya eTA application."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "kenya"
 weight: 20
 keywords: ["how to fill Kenya eTA", "Kenya eTA requirements", "Kenya eTA documents"]

@@ -1,25 +1,25 @@
 # Aruba — official URLs
-# Last verified: 2026-08-30
+# Last verified: 2026-08-31
 
 [ed_card]
 url = "https://edcardaruba.aw/welcome"
 name = "Aruba Online ED Card"
 agency = "Aruba Immigration"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Mandatory online Embarkation and Disembarkation Card. The live application exposes several required fields and length controls. Most air arrivals pay a separate USD 20 sustainability fee inside the same flow; the fee does not apply to sea arrivals and published exemptions apply."
 
 [official_guide]
 url = "https://www.aruba.com/us/plan-your-visit/getting-to-aruba/online-ed-card"
 name = "Aruba Online ED Card guide"
 agency = "Aruba Tourism Authority"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Confirms that the ED Card is mandatory for every passenger, including infants and children, opens within seven days before travel, and applies at air and seaports."
 
 [sustainability_fee]
 url = "https://www.aruba.com/uk/sustainability-fee"
 name = "Aruba sustainability fee"
 agency = "Aruba Tourism Authority"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Explains the USD 20 sustainability fee collected through the ED Card flow for air arrivals, the published exemptions, and that the fee is not charged to sea arrivals."
 
 [meta]

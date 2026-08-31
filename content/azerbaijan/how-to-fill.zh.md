@@ -3,7 +3,7 @@ title: "阿塞拜疆 ASAN 电子签怎么填：8 项申请准备（2026）"
 kicker: "8 项内容全部来自 ASAN 公开页面，第 1 项可能直接省下全部费用。"
 description: "阿塞拜疆 ASAN 电子签怎么填：免签、护照资格、证件有效期、扫描件、时间、邮箱和付款逐项说明。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "azerbaijan"
 weight: 20
 keywords: ["阿塞拜疆电子签怎么填", "ASAN 申请", "阿塞拜疆电子签材料", "evisa.gov.az"]

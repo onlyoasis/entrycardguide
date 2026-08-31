@@ -3,7 +3,7 @@ title: "Tanzania eVisa: Official Site and the Right Fee for Your Route (2026)"
 kicker: "USD 50, USD 100 and USD 30 are all official figures. Only one may fit your passport and purpose."
 description: "Tanzania eVisa guide: official portal, Ordinary, United States tourist and Transit fees, processing time, validity and required documents."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "tanzania"
 weight: 10
 keywords: ["Tanzania eVisa", "Tanzania visa official website", "Tanzania visa fee", "visa.immigration.go.tz"]

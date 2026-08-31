@@ -3,7 +3,7 @@ title: "巴西 VFS 电子签怎么申请 2026：材料和核验链"
 kicker: "先从 gov.br 核对 .com 承包商，再准备护照页、照片、行程和邮箱。"
 description: "巴西电子签字段指南：资格、政府到 VFS 链接、护照图、照片、行程、邮箱和未成年人材料。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "brazil"
 weight: 20
 keywords: ["巴西电子签怎么申请", "巴西 VFS 电子签材料", "巴西电子签申请字段"]

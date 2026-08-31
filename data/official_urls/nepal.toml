@@ -1,32 +1,32 @@
 # Nepal — official government visa URLs
-# Last verified: 2026-08-30
+# Last verified: 2026-08-31
 
 [tourist_visa_form]
 url = "https://nepaliport.immigration.gov.np/on-arrival/tourist-visa"
 name = "Nepal Online Tourist Visa Form for Visa on Arrival"
 agency = "Department of Immigration, Government of Nepal"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. This is the on-arrival Tourist Visa application in NepaliPort. It begins with passport-issuing country, Tourist Visa, passport number and date of birth. The Department says the online form may be completed before arrival or at a TIA kiosk; it produces a barcode receipt valid for 15 days, while the immigration officer issues the visa at the port."
 
 [eta]
 url = "https://nepaliport.immigration.gov.np/"
 name = "NepaliPort Electronic Travel Authorization and Visa Services"
 agency = "Department of Immigration, Government of Nepal"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The same government portal separates Visa On-arrival, Visa From Nepalese Mission and Electronic Travel Authorization. ETA is a pre-arrival application route, not the same product as the on-arrival online form documented as the main guide."
 
 [visa_information]
 url = "https://immigration.gov.np/visa-information"
 name = "Nepal Department of Immigration Visa Information"
 agency = "Department of Immigration, Government of Nepal"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The current Tourist Visa section publishes the three on-arrival fees, the online-form and kiosk flow, the 15-day receipt validity, payment and immigration-desk issuance. It also identifies gratis categories and passports that must arrange a visa in advance."
 
 [china_tourist_visa]
 url = "https://cn.nepalembassy.gov.np/pages/visa/"
 name = "Nepal Embassy in Beijing Tourist Visa Information"
 agency = "Embassy of Nepal, Beijing, Government of Nepal"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. Chinese nationals are eligible for visa on arrival and pay no Tourist Visa fee. The page asks for more than six months of passport validity and explains the online form, digital photograph, contact details, Nepal address and 15-day application retention."
 
 [meta]

@@ -3,7 +3,7 @@ title: "How to Buy the Jordan Pass: 17 Items That Cause Trouble (2026)"
 kicker: "The live form shows its maxlengths and error strings. This page documents those and invents nothing."
 description: "Fill the Jordan Pass form: passport eligibility, buy-before-arrival rule, two-whole-nights minimum, 100-character name, email regex, dropdowns for city, nights and ticket type, and the printed PDF."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "jordan"
 weight: 20
 keywords: ["how to buy Jordan Pass", "Jordan Pass form", "jordanpass.jo buynow", "Jordan Pass visa waiver", "Jordan Pass nights"]

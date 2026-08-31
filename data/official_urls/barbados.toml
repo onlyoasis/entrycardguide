@@ -12,21 +12,21 @@ notes = "Government portal for the combined online Immigration and Customs Form.
 url = "https://immigration.gov.bb/pages/visitor.aspx"
 name = "Visitors to Barbados"
 agency = "Barbados Immigration Department"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Confirms the 72-hour availability window and receipt presentation. Also lists a passport valid for the trip, return ticket, intended address and evidence of personal support among visitor entry items."
 
 [tourism_guide]
 url = "https://www.visitbarbados.org/online-ed-card"
 name = "Barbados Online ED Card"
 agency = "Barbados Tourism Marketing Inc."
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Official destination guide confirming that Immigration and Customs receipts are emailed after submission and that a valid email address is required."
 
 [form_specification]
 url = "https://oag.gov.bb/attachments/Immigration%20%28Forms%20and%20Fees%29%20%28Amendment%29%20Regulations%2C%202020%20No%208.pdf"
 name = "Barbados Immigration Form E.1"
 agency = "Government of Barbados, Office of the Attorney General"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Official form specification listing travel, passport, identity, contact, destination and stay fields."
 
 [meta]

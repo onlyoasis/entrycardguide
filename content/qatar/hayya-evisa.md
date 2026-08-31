@@ -3,7 +3,7 @@ title: "Qatar Hayya e-Visa: Check Free Entry Before Paying QAR 100 (2026)"
 kicker: "Hayya is both a visitor platform and the e-Visa hub. Most eligible free-entry travellers do not need to buy its tourist visa."
 description: "Qatar Hayya e-Visa guide: free entry, official portal, A1/A2/A3 routes, QAR 100 fee, passport validity and accommodation."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "qatar"
 weight: 10
 keywords: ["Qatar Hayya visa", "Qatar visa free", "Hayya eVisa", "Qatar tourist visa A1", "Qatar visa fee"]

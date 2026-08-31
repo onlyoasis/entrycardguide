@@ -3,7 +3,7 @@ title: "巴拿马电子旅客宣誓申报 2026：免费官网和 QR"
 kicker: "使用巴拿马海关免费门户，保存 QR；这张物品申报不是签证。"
 description: "巴拿马海关申报中文指南：官方双语门户、免费、72 小时时间、家庭规则和 QR 回执。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "panama"
 weight: 10
 keywords: ["巴拿马旅客申报", "巴拿马海关表", "declaraciondeviajero.ana.gob.pa", "巴拿马申报 QR"]

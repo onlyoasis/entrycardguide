@@ -3,7 +3,7 @@ title: "Aruba ED Card: Official Form and USD 20 Fee (2026)"
 kicker: "The ED Card is mandatory. The USD 20 sustainability fee is a separate charge collected in the same flow from most air arrivals."
 description: "Aruba ED Card guide: official link, seven-day filing window, air and sea rules, sustainability fee and exemptions."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "aruba"
 weight: 10
 keywords: ["Aruba ED Card", "edcardaruba.aw", "Aruba entry form", "Aruba sustainability fee", "Aruba ED Card official"]

@@ -1,25 +1,25 @@
 # Uzbekistan — official government visa URLs
-# Last verified: 2026-08-30
+# Last verified: 2026-08-31
 
 [evisa]
 url = "https://e-visa.gov.uz/application"
 name = "Uzbekistan Official Electronic Visa Portal"
 agency = "Ministry of Foreign Affairs of the Republic of Uzbekistan"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30, including the current application shell, JavaScript and English portal guidance. The first step asks for citizenship, travel-document type, visa entry type and purpose. Later steps collect passport identity, dates, residence, work, contact and stay details, plus a face photo, passport copy and email activation."
 
 [visa_policy]
 url = "https://gov.uz/en/mfa/pages/o-zbekiston-respublikasi-vizasi"
 name = "Visa to the Republic of Uzbekistan"
 agency = "Ministry of Foreign Affairs of the Republic of Uzbekistan"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The current government page was last updated 2026-06-01. It publishes the visa-free regimes and their different durations and conditions, the current 56-entry eVisa eligibility appendix, and USD 20 / 35 / 50 single, double and multiple eVisa fees for stays up to 30 days."
 
 [portal_guidance]
 url = "https://e-visa.gov.uz/what-you-need-to-know"
 name = "Uzbekistan eVisa Portal English Guidance"
 agency = "Ministry of Foreign Affairs of the Republic of Uzbekistan"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30 together with the page's live English localization data at https://e-visa.gov.uz/assets/localization/en.json. The guidance says to apply at least 3 working days before arrival; consideration takes 2 working days excluding the filing day; the eVisa is valid for entry within 90 days and permits a stay up to 30 days. It also publishes the English field labels, photo guidance, 500 KB passport-copy limit, email activation and PDF delivery."
 
 [meta]

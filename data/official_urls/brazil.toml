@@ -12,21 +12,21 @@ notes = "Government page stating that eligible Australian, Canadian and United S
 url = "https://brazil.vfsevisa.com/tourist-visa.html"
 name = "Brazil e-Visa application information"
 agency = "VFS Global, designated by the Government of Brazil"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Government-designated commercial application host. The .com domain is not a government suffix. The current page publishes the USD 80.90 fee, passport and photograph requirements, multiple-entry validity branches, stay limit, processing time and printed e-Visa instruction. The live host blocks automated sessions; verified against its Internet Archive snapshot of 2026-07-14."
 
 [faq]
 url = "https://brazil.vfsevisa.com/faqs.html"
 name = "Brazil e-Visa FAQ"
 agency = "VFS Global, designated by the Government of Brazil"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Confirms the eligible passport group, multiple-entry character, email delivery, non-refundable fee and processing time. Verify this non-government host through the Ministry of Foreign Affairs page before using it. Verified against the Internet Archive snapshot of 2026-07-14 because the live host blocks automated sessions."
 
 [contractor_terms]
 url = "https://brazil.vfsevisa.com/terms-and-conditions.html"
 name = "VFS Global Brazil e-Visa terms"
 agency = "VFS Global"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Identifies the commercial operator as VF Worldwide Holdings Ltd trading as VFS Global and states that visa grants, duration and refusal sit with the immigration authorities' sole discretion and that fees are non-refundable. Verified against the Internet Archive snapshot of 2026-07-14 because the live host blocks automated sessions."
 
 [meta]

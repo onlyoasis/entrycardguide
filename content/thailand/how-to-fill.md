@@ -3,7 +3,7 @@ title: "How to Fill Thailand's Free TDAC Form (2026)"
 kicker: "Field-by-field walkthrough of the official TDAC form with common errors and what they mean. 8 minutes total."
 description: "Field guide to the Thailand Digital Arrival Card (TDAC): passport, flight, arrival date and contact fields, plus the errors that get it rejected. Free."
 date: 2026-04-22
-lastmod: 2026-08-24
+lastmod: 2026-08-31
 country: "thailand"
 weight: 20
 layout: how-to-fill

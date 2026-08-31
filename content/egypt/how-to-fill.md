@@ -3,7 +3,7 @@ title: "How to Apply for the Egypt e-Visa: 10 Items (2026)"
 kicker: "Eligibility, the application itself, and the official entry checklist the border asks for."
 description: "Apply for the Egypt e-Visa: eligible nationality, single or multiple entry, passport validity, the 7-day lead time, and the printed eVisa and documents at entry."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "egypt"
 weight: 20
 keywords: ["how to apply Egypt eVisa", "Egypt eVisa requirements", "Egypt eVisa documents", "visa2egypt.gov.eg"]

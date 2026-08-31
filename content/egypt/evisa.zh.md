@@ -3,7 +3,7 @@ title: "埃及电子签多少钱？官网入口与 30 / 65 美元费用（2026�
 kicker: "先查符合资格的国籍名单，再在政府门户至少提前 7 天创建申请。"
 description: "埃及电子签指南：官方 visa2egypt.gov.eg 门户、单次 30 美元与多次 65 美元费用、提前 7 天时限，以及落地签的区别。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "egypt"
 weight: 10
 keywords: ["埃及电子签", "埃及签证官网", "visa2egypt.gov.eg", "埃及签证多少钱", "埃及落地签"]

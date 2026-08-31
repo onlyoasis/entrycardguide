@@ -3,7 +3,7 @@ title: "Jordan"
 kicker: "Most visitors enter on a single-entry visa that costs JD 40 on arrival. The official Jordan Pass waives that fee and covers Petra, if you buy it before arrival and stay 2 whole nights."
 description: "Independent Jordan guide: the official jordanpass.jo site, the JD 70 / 75 / 80 packages, the visa fee it waives, the borders that grant visa on arrival and the Interior Ministry e-visa route."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 Jordan has two separate things people confuse. The **visa** is issued by the Interior Ministry, and the single-entry tourist visa costs **JD 40 for one month** on arrival at the airport. The **Jordan Pass** is a Ministry of Tourism package that includes over 40 sites and removes that JD 40 fee under conditions.

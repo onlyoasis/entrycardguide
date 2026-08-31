@@ -3,7 +3,7 @@ title: "The Bahamas"
 kicker: "C17 is digital, but not every visitor follows the same declaration route."
 description: "Independent Bahamas C17 guide: who files electronically, official Exempt .gov.bs portal, operator identity, free filing, QR clearance and the limited BDAC pilot."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 The Bahamas has a government-authorized digital Customs C17 route at `exempt.gov.bs`. Check the traveller category before opening it.

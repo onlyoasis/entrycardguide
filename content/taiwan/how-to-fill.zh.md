@@ -3,7 +3,7 @@ title: "台湾入境登记表怎么填：13 项资料逐段说明（2026）"
 kicker: "按官方英文手册分成 4 段，并说明哪些字段只对部分旅客出现。"
 description: "台湾入境登记表怎么填：邮箱验证、护照输入、条件性签证与职业字段、航班、DD/MM/YYYY 离境日期、访问目的和住宿。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "taiwan"
 weight: 20
 keywords: ["TWAC 怎么填", "台湾入境登记表字段", "台湾入境卡填写", "twac.immigration.gov.tw"]

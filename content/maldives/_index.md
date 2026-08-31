@@ -3,7 +3,7 @@ title: "Maldives"
 kicker: "The IMUGA Traveller Declaration is free and takes one submission within 96 hours before arrival. Departure declarations ended in 2024."
 description: "Independent Maldives IMUGA guide: the free Traveller Declaration on the government portal, the 96-hour window, and how it differs from the visa on arrival."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 Every foreign arrival in the Maldives submits the IMUGA Traveller Declaration within the **96 hours before arrival**. It is free, and it runs on a government host.

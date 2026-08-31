@@ -40,28 +40,28 @@ notes = "Read 2026-08-30. The FAQ identifies NPRA, explains guarantor cases, tel
 url = "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1871"
 name = "Two-week single-entry Visit eVisa"
 agency = "Ministry of Interior - Nationality, Passports and Residence Affairs"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The government service directory describes a two-week single-entry product for nationals of 212 countries, a BD 9 visa fee plus BD 4 application fee, four supporting-document categories and a 3-to-5-working-day process."
 
 [three_month]
 url = "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1870"
 name = "Three-month multiple-entry Visit eVisa"
 agency = "Ministry of Interior - Nationality, Passports and Residence Affairs"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The government service directory describes a three-month multiple-entry product for nationals of 212 countries, BD 29 total, the same four supporting-document categories and a 3-to-5-working-day process."
 
 [one_year]
 url = "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1875"
 name = "One-year multiple-entry Visitor eVisa"
 agency = "Ministry of Interior - Nationality, Passports and Residence Affairs"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The government service directory describes a one-year multiple-entry product for nationals of 212 countries, BD 44, the same four supporting-document categories and a 3-to-5-working-day process."
 
 [five_year]
 url = "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1874"
 name = "Five-year multiple-entry Visit eVisa"
 agency = "Ministry of Interior - Nationality, Passports and Residence Affairs"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The government service directory describes a five-year multiple-entry product for nationals of 68 countries, BD 64, the same four supporting-document categories and a 3-to-5-working-day process."
 
 [meta]

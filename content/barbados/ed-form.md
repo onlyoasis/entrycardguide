@@ -3,7 +3,7 @@ title: "Barbados ED Form: Free Official Portal (2026)"
 kicker: "The .gov.bb form opens 72 hours before arrival and returns separate Immigration and Customs receipts."
 description: "Barbados online Immigration and Customs Form guide: free government portal, timing, documents, email and receipts."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "barbados"
 weight: 10
 keywords: ["Barbados ED Form", "travelform.gov.bb", "Barbados immigration form", "Barbados customs form", "Barbados travel form free"]

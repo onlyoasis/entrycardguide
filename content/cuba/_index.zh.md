@@ -3,7 +3,7 @@ title: "古巴 D'Viajeros 免费入境表官网与 eVisa 区别"
 kicker: "D'Viajeros 免费，旅游 eVisa 另办且可能收费，不要把两件事打包买。"
 description: "古巴 D'Viajeros 中文指南：免费官网、旅行前 7 天窗口、二维码，以及单独的 eVisa 要求。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 古巴有两道不同的入境手续，经常被包装成一件商品。

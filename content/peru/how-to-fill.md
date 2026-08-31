@@ -3,7 +3,7 @@ title: "How to Use Peru's TAM Virtual Lookup (2026)"
 kicker: "Match the border record: document, nationality and movement date in DD/MM/YYYY."
 description: "Peru TAM Virtual lookup guide: document format, nationality, movement date, CAPTCHA and downloaded record."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "peru"
 weight: 20
 keywords: ["Peru TAM Virtual lookup", "download Peru TAM", "Peru immigration record fields"]

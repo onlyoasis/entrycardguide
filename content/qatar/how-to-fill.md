@@ -3,7 +3,7 @@ title: "How to Prepare a Qatar Hayya e-Visa Application (2026)"
 kicker: "Eight route checks from Qatar Tourism and Hayya, starting with the passports that need no paid visa."
 description: "Prepare a Qatar Hayya e-Visa route: nationality, free entry, GCC status, category, passport validity, accommodation and fee."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "qatar"
 weight: 20
 keywords: ["how to apply Hayya visa", "Qatar A1 visa application", "Qatar Hayya requirements", "hayya.qa"]

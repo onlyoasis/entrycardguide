@@ -3,7 +3,7 @@ title: "How to Prepare a Morocco eVisa Application (2026)"
 kicker: "Twelve checks from the live Accès Maroc eligibility page and official briefing note."
 description: "Prepare a Morocco eVisa application: eligibility result, passport, residence or visa evidence, email, photo and 1 MB attachments."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "morocco"
 weight: 20
 keywords: ["how to fill Morocco eVisa", "Acces Maroc application", "Morocco eVisa documents"]

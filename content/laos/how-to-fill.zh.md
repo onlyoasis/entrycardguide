@@ -3,7 +3,7 @@ title: "老挝电子签怎么申请：11 项资料（2026）"
 kicker: "公开表单给出了日期和上传提示，但没有正则或官方报错原文。"
 description: "老挝电子签怎么填：护照资格、4 × 6 厘米照片、2 MB 图片上限、DD-MM-YYYY 日期、护照有效期、指定口岸和老挝地址。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "laos"
 weight: 20
 keywords: ["老挝电子签怎么申请", "老挝电子签材料", "老挝电子签照片尺寸", "laoevisa.gov.la 申请"]

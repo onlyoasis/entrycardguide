@@ -3,7 +3,7 @@ title: "How to Fill the Uzbekistan eVisa: 13 Checks (2026)"
 kicker: "The live portal publishes image rules and date labels, but not safe public regexes for names, passport numbers, addresses or contact fields."
 description: "Fill the Uzbekistan eVisa: eligibility, entry type, purpose, passport identity, DD.MM.YYYY birth date, stay, JPG images, email activation and PDF."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "uzbekistan"
 weight: 20
 keywords: ["Uzbekistan eVisa form", "Uzbekistan eVisa application", "e-visa.gov.uz application", "Uzbekistan eVisa photo requirements"]

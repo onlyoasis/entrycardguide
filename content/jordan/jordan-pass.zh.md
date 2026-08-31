@@ -3,7 +3,7 @@ title: "约旦通票 Jordan Pass 官网、票价与可免的 40 第纳尔签证�
 kicker: "出发前买好、住满两个整晚，单次入境签证费就不用付了。"
 description: "约旦通票中文指南：官方 jordanpass.jo 购买入口、70 / 75 / 80 约旦第纳尔三档票价、可免的签证费、可落地签的口岸，以及内政部电子签通道。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "jordan"
 weight: 10
 keywords: ["约旦通票", "Jordan Pass 官网", "jordanpass.jo", "约旦签证费", "约旦落地签", "约旦电子签"]

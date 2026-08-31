@@ -3,7 +3,7 @@ title: "阿鲁巴 ED Card 怎么填 2026：护照、航班和地址限制"
 kicker: "护照、姓名、航班和地址按 .aw 实时页面的可见控件填写。"
 description: "阿鲁巴 ED Card 字段指南：7 天窗口、护照格式、航班号、行程日期、地址和确认。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "aruba"
 weight: 20
 keywords: ["阿鲁巴 ED Card 怎么填", "阿鲁巴 ED Card 字段", "edcardaruba 表单"]

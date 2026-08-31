@@ -5,14 +5,14 @@
 url = "https://declaraciondeviajero.ana.gob.pa/"
 name = "Panama Digital Sworn Traveler Declaration"
 agency = "Autoridad Nacional de Aduanas"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Official Panama Customs portal for declaring goods and values when entering or leaving the country. The portal has Spanish and English interfaces."
 
 [customs_process]
 url = "https://tramites.ana.gob.pa/w_proceso/GestiondeDespacho.html"
 name = "Panama traveler declaration process"
 agency = "Autoridad Nacional de Aduanas"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "States that the declaration is free of charge, may be digital or manual, may cover one family group with a single declaration, and must be filed and presented within the published 72-hour window."
 
 [digital_resolution]

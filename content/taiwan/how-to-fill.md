@@ -3,7 +3,7 @@ title: "How to Fill the Taiwan Arrival Card: All 13 Items (2026)"
 kicker: "Four sections from the official English manual, including which fields only appear for some travellers."
 description: "Fill the Taiwan Arrival Card: email verification, passport entry, conditional visa and occupation fields, flights, DD/MM/YYYY departure date, purpose and accommodation."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "taiwan"
 weight: 20
 keywords: ["how to fill TWAC", "Taiwan Arrival Card fields", "TWAC form help", "twac.immigration.gov.tw"]

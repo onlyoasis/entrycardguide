@@ -3,7 +3,7 @@ title: "How to Fill the Maldives Traveller Declaration (2026)"
 kicker: "Seven items the official pages confirm: passport data page, personal details, purpose, conditional permit, travel and accommodation."
 description: "Fill the Maldives IMUGA Traveller Declaration: what the public first step asks, what the official tourist entry page names, and the 96-hour window."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "maldives"
 weight: 20
 keywords: ["how to fill IMUGA", "Maldives Traveller Declaration fields", "IMUGA form help", "imuga.immigration.gov.mv"]

@@ -3,7 +3,7 @@ title: "Laos"
 kicker: "The official eVisa is a paid tourist visa for ordinary passports and 9 designated ports. Check both before paying."
 description: "Independent Laos eVisa guide: the official laoevisa.gov.la application, passport-based fee, 9 entry ports, 30-day stay and the separate visa-on-arrival route."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 The Lao eVisa is a **single-entry Tourist Visa**. It is not the same thing as a visa on arrival, and it only works at the 9 ports named by the Ministry of Foreign Affairs.

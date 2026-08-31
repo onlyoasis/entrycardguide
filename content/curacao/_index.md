@@ -3,7 +3,7 @@ title: "Curaçao"
 kicker: "The official Digital Immigration Card is mandatory for visitors and completely free."
 description: "Independent Curaçao DI Card guide: designated official portal, seven-day filing window, free fee and confirmation PDF."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 All foreign visitors to Curaçao must complete a Digital Immigration Card for each person and each trip. Residents are exempt. The card is free and separate from visa status.

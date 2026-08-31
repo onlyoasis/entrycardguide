@@ -3,7 +3,7 @@ title: "肯尼亚 eTA 怎么填 2026：护照、行程和材料准备"
 kicker: "8 项信息来自官方公开指南，不编表单正则，也不编错误提示。"
 description: "肯尼亚 eTA 填写准备：护照、联系方式、行程、住宿和访问目的材料，附官方入口。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "kenya"
 weight: 20
 keywords: ["肯尼亚 eTA 怎么填", "肯尼亚 eTA 材料", "肯尼亚 eTA 要求"]

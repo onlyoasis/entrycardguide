@@ -3,7 +3,7 @@ title: "Panama"
 kicker: "Panama Customs offers a free digital sworn declaration for goods and values, with Spanish and English interfaces."
 description: "Independent Panama traveller declaration guide: official .gob.pa portal, free filing, 72-hour window, family filing and QR receipt."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 Panama's Digital Sworn Traveler Declaration is a customs declaration for goods and values when entering or leaving the country. The official portal supports Spanish and English. The declaration is free and may also be completed manually.

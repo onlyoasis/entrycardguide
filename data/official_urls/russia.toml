@@ -1,12 +1,12 @@
 # Russia — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-08-30
+# Last verified: 2026-08-31
 
 [evisa]
 url = "https://evisa.kdmid.ru/"
 name = "Unified e-visa application and personal account"
 agency = "Consular Department, Ministry of Foreign Affairs of the Russian Federation"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://evisa.kdmid.ru/"
 notes = "Read 2026-08-30. This is the application host named by the ministry's own information portal. Applications are filed only from a personal account on this site or in the ministry's mobile app, so the form itself could not be read without an account. The landing page names the supported browsers as Mozilla Firefox, Google Chrome and Microsoft Edge, and links the Instruction page that carries the Characteristics of the unified e-visa and conditions for its issuance."
 
@@ -14,7 +14,7 @@ notes = "Read 2026-08-30. This is the application host named by the ministry's o
 url = "https://evisa.kdmid.ru/Home/Instruction"
 name = "Characteristics of the unified e-visa and conditions for its issuance"
 agency = "Consular Department, Ministry of Foreign Affairs of the Russian Federation"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://evisa.kdmid.ru/Home/Instruction"
 notes = "Read 2026-08-30. Single entry, 120 days of validity from issue, a stay of no more than 30 days from entry, and a warning that the day of arrival and the day of departure both count. Applications open 86 days and close 4 days before the intended entry date. Processing takes no more than 4 calendar days. The passport must be machine-readable, valid at least 6 months from the date the application is submitted, with space for border stamps. Face photo in JPEG, taken within 6 months, 35x45 aspect ratio, face taking 70-80 percent of the photo. Children listed in a parent's passport need a separate e-visa each; applicants under 6 pay no consular fee. Medical insurance valid in Russia is required, with exemptions by reciprocity."
 
@@ -22,7 +22,7 @@ notes = "Read 2026-08-30. Single entry, 120 days of validity from issue, a stay 
 url = "https://electronic-visa.kdmid.ru/index_en.html"
 name = "E-visa information portal of the Consular Department"
 agency = "Consular Department, Ministry of Foreign Affairs of the Russian Federation"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://electronic-visa.kdmid.ru/index_en.html"
 notes = "Read 2026-08-30. States that nationals of 64 foreign states may be granted an e-visa, that an e-visa is issued within 4 calendar days including weekends and bank holidays, and that no invitations or confirmations are needed. Also recommends against Gmail for registration and notifications because of unstable and delayed delivery."
 
@@ -30,7 +30,7 @@ notes = "Read 2026-08-30. States that nationals of 64 foreign states may be gran
 url = "https://electronic-visa.kdmid.ru/country_en.html"
 name = "States whose nationals can apply for e-visa"
 agency = "Consular Department, Ministry of Foreign Affairs of the Russian Federation"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://electronic-visa.kdmid.ru/country_en.html"
 notes = "Read 2026-08-30. Lists the 64 eligible states, including China (including Taiwan), India, Japan, Turkey, Saudi Arabia, the Gulf states, the EU member states, Britain's neighbours and several Southeast Asian states. Passports outside this list need a regular visa from a Russian diplomatic mission or consular post."
 
@@ -38,7 +38,7 @@ notes = "Read 2026-08-30. Lists the 64 eligible states, including China (includi
 url = "https://electronic-visa.kdmid.ru/checkpoint_en.html"
 name = "Border crossing points for entry and exit on an e-visa"
 agency = "Consular Department, Ministry of Foreign Affairs of the Russian Federation"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://electronic-visa.kdmid.ru/checkpoint_en.html"
 notes = "Read 2026-08-30. Groups the approved border crossing points into air, road, rail, sea and pedestrian cards. Air points include Moscow (Vnukovo), Moscow (Domodedovo), Moscow (Sheremetyevo), Moscow (Zhukovsky), Saint Petersburg (Pulkovo), Vladivostok (Knevichi), Kaliningrad (Khrabrovo), Sochi, Kazan, Novosibirsk (Tolmachevo) and Irkutsk. One road point, Ivangorod, is marked temporarily closed for reconstruction."
 
@@ -46,7 +46,7 @@ notes = "Read 2026-08-30. Groups the approved border crossing points into air, r
 url = "https://electronic-visa.kdmid.ru/faq_en.html"
 name = "E-visa frequently asked questions"
 agency = "Consular Department, Ministry of Foreign Affairs of the Russian Federation"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://electronic-visa.kdmid.ru/faq_en.html"
 notes = "Read 2026-08-30. Records the 23 August 2025 change that extended e-visa validity to up to 120 days with a stay of up to 30 days, replacing the earlier 60-day validity and 16-day stay. Entry and exit must both use approved checkpoints. No transit purpose exists in the application. Consular fee is payable only with cards issued by banks outside Russia, invoices are issued in dirhams or yuan, payment takes 20 to 45 minutes to confirm, and no refund is available regardless of the outcome. Migration registration must be completed within 7 working days of arrival."
 
@@ -54,7 +54,7 @@ notes = "Read 2026-08-30. Records the 23 August 2025 change that extended e-visa
 url = "https://electronic-visa.kdmid.ru/support_en.html"
 name = "Technical support recommendations"
 agency = "Consular Department, Ministry of Foreign Affairs of the Russian Federation"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://electronic-visa.kdmid.ru/support_en.html"
 notes = "Read 2026-08-30. Payment confirmation takes 20 to 45 minutes, Russian bank cards cannot be used, and payment problems go to the visa application centre addresses support@sinovisa.org, help@sinovisa.org or support.gkd-global.com. The e-visa is valid for entry from the moment the issuance notification is received."
 

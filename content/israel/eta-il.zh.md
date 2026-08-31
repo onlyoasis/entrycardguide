@@ -3,7 +3,7 @@ title: "以色列 ETA-IL 2026：只限免签护照，付款前先查资格"
 kicker: "先用 PIBA 查资格。需要访客签证的护照不能用 ETA-IL 替代。"
 description: "以色列 ETA-IL 中文指南：资格先行、PIBA 官方申请、25 新谢克尔、72 小时决定和两年有效期。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "israel"
 weight: 10
 keywords: ["以色列 ETA-IL", "以色列 ETA 官网", "israel-entry.piba.gov.il", "ETA-IL 费用", "以色列免签"]

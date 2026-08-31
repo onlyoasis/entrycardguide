@@ -3,7 +3,7 @@ title: "摩洛哥电子签怎么办？付款前先查免签资格（2026）"
 kicker: "Accès Maroc 可能直接告诉你免签。第一步是资格结果，不是付款页。"
 description: "摩洛哥电子签指南：免签优先、官方入口核对、770 与 1,100 迪拉姆费用、停留、时限和材料。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "morocco"
 weight: 10
 keywords: ["摩洛哥电子签", "摩洛哥免签", "Accès Maroc 官网", "摩洛哥电子签费用"]

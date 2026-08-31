@@ -3,7 +3,7 @@ title: "以色列 ETA-IL 怎么填 2026：先查免签资格"
 kicker: "按 PIBA 官方说明核对资格、护照、邮箱、目的、付款和提交前复核。"
 description: "以色列 ETA-IL 填写准备：不要把电子旅行授权当成访客签证，附 PIBA 官方入口。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "israel"
 weight: 20
 keywords: ["ETA-IL 怎么填", "以色列 ETA 申请", "ETA-IL 要求"]

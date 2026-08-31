@@ -3,7 +3,7 @@ title: "How to Fill Panama's Traveler Declaration (2026)"
 kicker: "Match the movement, checkpoint, passport identity and everything carried."
 description: "Panama traveler declaration field guide: entry or exit, checkpoint, passport, email, goods and QR."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "panama"
 weight: 20
 keywords: ["how to fill Panama traveler declaration", "Panama customs declaration fields", "Panama QR form"]

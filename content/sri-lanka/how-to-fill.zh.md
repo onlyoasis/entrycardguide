@@ -3,7 +3,7 @@ title: "斯里兰卡 ETA 怎么申请：8 项准备清单（2026）"
 kicker: "费用档位、旅行证件、以及移民局公开的行程条件。8 项检查，不编造规则。"
 description: "斯里兰卡 ETA 怎么申请：费用档位、护照号、国籍、6 个月有效期、返程票和资金要求逐项说明。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "sri-lanka"
 weight: 20
 keywords: ["斯里兰卡 ETA 怎么办", "斯里兰卡 ETA 材料", "斯里兰卡 ETA 申请", "eta.gov.lk"]

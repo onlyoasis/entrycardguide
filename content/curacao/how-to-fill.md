@@ -3,7 +3,7 @@ title: "How to Fill the Curaçao Digital Immigration Card (2026)"
 kicker: "Seven public checks from the designated DI Card portal, with no invented regexes."
 description: "Curaçao DI Card field guide: flight, passport, name, date of birth, email and confirmation PDF."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "curacao"
 weight: 20
 keywords: ["how to fill Curaçao DI Card", "Curaçao immigration card fields", "dicardcuracao form"]

@@ -1,39 +1,39 @@
 # Jamaica — official government URLs
-# Last verified: 2026-08-30
+# Last verified: 2026-08-31
 
 [c5]
 url = "https://enterjamaica.gov.jm/?language=en-US"
 name = "Electronic Immigration and Customs Declaration Card (C5)"
 agency = "Passport, Immigration and Citizenship Agency (PICA) and Jamaica Customs Agency (JCA)"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The live .gov.jm page identifies itself as the official Electronic C5 and displays the PICA and JCA names and logos. Its public HTML exposes required attributes, a 6-character email minimum, a 4-character flight-number maximum and the mm/dd/yyyy travel-date prompt."
 
 [customs_passenger]
 url = "https://jca.gov.jm/individual/passenger/"
 name = "Jamaica Customs Passenger Declaration (C5) Notice"
 agency = "Jamaica Customs Agency"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. JCA mandates the Electronic Passenger Declaration for arriving passengers, links enterjamaica.gov.jm and states that the service is free for visitors and residents."
 
 [government_facts]
 url = "https://jis.gov.jm/information/get-the-facts/the-goj-online-immigration-form-travel-with-ease/"
 name = "Government of Jamaica Online Immigration Form Facts"
 agency = "Jamaica Information Service"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. JIS identifies the PICA/JCA collaboration, says the form is free, permits submission up to 30 days before travel and says a confirmation email follows submission."
 
 [government_warning]
 url = "https://jis.gov.jm/no-third-party-contracted-to-provide-online-immigration-passenger-declaration-form/"
 name = "PICA Warning: No Third Party Contracted for the Passenger Declaration"
 agency = "Jamaica Information Service and Passport, Immigration and Citizenship Agency"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The 2023 government warning says no third party was contracted, the facility is free and sites charging for it are not the government service. It named the older enterjamaica.com address; current JCA and Tourism pages use enterjamaica.gov.jm."
 
 [tourism_notice]
 url = "https://www.mot.gov.jm/node/1496"
 name = "Jamaica Ministry of Tourism C5 Notice"
 agency = "Jamaica Ministry of Tourism"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The Ministry directs travellers to enterjamaica.gov.jm and describes it as free, safe and convenient."
 
 [meta]

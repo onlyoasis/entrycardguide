@@ -3,7 +3,7 @@ title: "Azerbaijan"
 kicker: "Your passport may already be visa-free. Check that before paying USD 25 for an ASAN e-Visa."
 description: "Independent Azerbaijan visa guide: current visa-free checks, the official evisa.gov.az portal, the USD 20 plus USD 5 fee and the documents to prepare."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 Azerbaijan's ASAN e-Visa is a paid, single-entry visa. It is not the first step for every traveller. The Ministry of Foreign Affairs keeps a separate visa-free list, including arrangements with different passport types, stay limits and effective dates.

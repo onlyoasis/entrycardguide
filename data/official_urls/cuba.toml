@@ -1,11 +1,11 @@
 # Cuba — official government URLs
-# Last verified: 2026-08-30
+# Last verified: 2026-08-31
 
 [dviajeros]
 url = "https://dviajeros.mitrans.gob.cu/inicio"
 name = "D'Viajeros Advance Passenger Information"
 agency = "Ministry of Transport, with Cuban Immigration, Customs and Ministry of Public Health"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://dviajeros.mitrans.gob.cu/inicio"
 notes = "Official .gob.cu portal. The government tourism portal links to D'Viajeros and says completion produces a QR code for entry. The official service brochure describes four information groups: traveller, immigration, customs and health, followed by an emailed PDF with QR code."
 
@@ -13,7 +13,7 @@ notes = "Official .gob.cu portal. The government tourism portal links to D'Viaje
 url = "https://www.cuba.travel/en/useful-information/regulations-and-formalities"
 name = "Cuba Travel regulations and formalities"
 agency = "Cuban Ministry of Tourism tourism portal"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://www.cuba.travel/en/useful-information/regulations-and-formalities"
 notes = "Lists the D'Viajeros QR code separately from the tourist visa, links to both official systems, states the passport validity and says eVisa replaces the Tourist Card."
 
@@ -21,7 +21,7 @@ notes = "Lists the D'Viajeros QR code separately from the tourist visa, links to
 url = "https://evisacuba.cu/en/inicio"
 name = "eVisaCuba tourist visa portal"
 agency = "Cuban Ministry of Foreign Affairs"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://evisacuba.cu/en/inicio"
 notes = "Government-designated portal linked by the Cuba Travel official tourism page. The domain is not .gob.cu; verify it by following the Cuba Travel link. The portal footer identifies the Cuban Foreign Ministry. It says the eVisa is tied to the passport, the visa code is emailed, and response is within 72 business hours. Fees depend on the selected consulate or authorised channel and are not published as one global amount."
 
@@ -29,7 +29,7 @@ notes = "Government-designated portal linked by the Cuba Travel official tourism
 url = "https://www.granma.cu/cuba/2025-01-21/la-visa-de-turismo-electronica-sera-obligatoria-para-la-entrada-a-cuba-desde-finales-de-junio-21-01-2025-01-01-26"
 name = "Electronic tourist visa and D'Viajeros timing notice"
 agency = "Granma, official publication of the Central Committee of the Communist Party of Cuba"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://www.granma.cu/cuba/2025-01-21/la-visa-de-turismo-electronica-sera-obligatoria-para-la-entrada-a-cuba-desde-finales-de-junio-21-01-2025-01-01-26"
 notes = "Quotes the Ministry of Tourism commercial director: the eVisa code is entered into D'Viajeros to produce the QR code, and D'Viajeros can be completed during the seven days before travel. It also announced eVisa as the tourist route from 30 June 2025."
 
@@ -37,7 +37,7 @@ notes = "Quotes the Ministry of Tourism commercial director: the eVisa code is e
 url = "https://www.cuba.travel/en/wheretogo/havana/usefulinformation/howtoget"
 name = "Cuba Travel D'Viajeros passenger requirement"
 agency = "Cuban Ministry of Tourism tourism portal"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://www.cuba.travel/en/wheretogo/havana/usefulinformation/howtoget"
 notes = "Current Cuba Travel destination guidance states that every passenger must truthfully complete D'Viajeros for immigration, customs and public-health services."
 

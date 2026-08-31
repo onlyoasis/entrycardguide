@@ -1,11 +1,11 @@
 # Kenya — official government URLs
-# Last verified: 2026-08-30
+# Last verified: 2026-08-31
 
 [eta]
 url = "https://etakenya.go.ke/"
 name = "Kenya Electronic Travel Authorisation (eTA)"
 agency = "Ministry of Interior and National Administration, State Department for Immigration and Citizen Services, Directorate of Immigration Services"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://etakenya.go.ke/"
 notes = "Official Government of Kenya portal. Its FAQ says the standard eTA starts at USD $30, normally takes three working days/72 hours, and must be approved before travel. The application guide says an issued eTA is valid for travel within 90 days."
 
@@ -13,7 +13,7 @@ notes = "Official Government of Kenya portal. Its FAQ says the standard eTA star
 url = "https://etakenya.go.ke/form/apply/how-to-apply?type=tourist"
 name = "Kenya eTA application requirements and exemptions"
 agency = "Directorate of Immigration Services"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 archive_url = "https://web.archive.org/web/2026/https://etakenya.go.ke/form/apply/how-to-apply?type=tourist"
 notes = "Lists exempt travellers and passport nationalities, required documents, purpose-specific documents, validity and processing time. The current list includes EAC partner-state citizens plus named nationalities with 90-day or 60-day exemptions."
 
@@ -21,7 +21,7 @@ notes = "Lists exempt travellers and passport nationalities, required documents,
 url = "https://immigration.go.ke/wp-content/uploads/2025/07/DIRECTORATE-OF-IMMIGRATION-SERVICE-DELIVERY-CHARTER-2025.pdf"
 name = "Directorate of Immigration Services Delivery Charter 2025"
 agency = "Directorate of Immigration Services"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "The service charter lists USD $30 for a standard eTA and a three-day service timeline. The live portal may offer other eTA products or expedited service at different prices."
 
 [meta]

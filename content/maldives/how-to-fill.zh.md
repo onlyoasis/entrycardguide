@@ -3,7 +3,7 @@ title: "马尔代夫 IMUGA 申报表怎么填：7 项资料（2026）"
 kicker: "官方页面确认的 7 项：护照资料页、个人资料、访问目的、条件许可、行程和住宿。"
 description: "马尔代夫 IMUGA 旅客申报表怎么填：公开第一步问什么、官方旅游入境页面点名了哪些资料，以及 96 小时窗口。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "maldives"
 weight: 20
 keywords: ["IMUGA 怎么填", "马尔代夫申报表字段", "马尔代夫入境表帮助", "imuga.immigration.gov.mv"]

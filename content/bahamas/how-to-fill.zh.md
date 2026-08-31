@@ -3,7 +3,7 @@ title: "巴哈马 C17 电子申报怎么准备（2026）"
 kicker: "12 项来自政府授权门户和公开 C17 分段。"
 description: "巴哈马 C17 准备指南：申报路径、护照资料、旅客和行程、行李、发票、酒类、烟草、申报物品与二维码。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "bahamas"
 weight: 20
 keywords: ["巴哈马 C17 怎么填", "巴哈马 Exempt", "巴哈马电子海关申报"]

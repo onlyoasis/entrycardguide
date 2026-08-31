@@ -3,7 +3,7 @@ title: "阿鲁巴 ED Card 2026：官方表和 20 美元费用"
 kicker: "ED Card 强制填写；20 美元是同一流程向多数航空入境者收取的单独可持续发展费。"
 description: "阿鲁巴 ED Card 中文指南：官方入口、7 天窗口、海空规则、可持续发展费和豁免。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "aruba"
 weight: 10
 keywords: ["阿鲁巴 ED Card", "edcardaruba.aw", "阿鲁巴入境表", "阿鲁巴可持续发展费", "阿鲁巴 ED Card 官网"]

@@ -3,7 +3,7 @@ title: "古巴 D'Viajeros 怎么填 2026：4 段信息和二维码"
 kicker: "准备官网列出的 4 类信息，并把旅游 eVisa 当成另一份文件。"
 description: "古巴 D'Viajeros 字段指南：护照、抵达、住宿、eVisa 代码、海关、卫生和二维码。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "cuba"
 weight: 20
 keywords: ["D'Viajeros 怎么填", "古巴入境表字段", "DViajeros 二维码"]

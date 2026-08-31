@@ -3,7 +3,7 @@ title: "How to Prepare a Sri Lanka ETA Application (2026)"
 kicker: "Fee category, travel document, and the trip conditions the Department publishes. Eight checks, no invented rules."
 description: "Prepare the official Sri Lanka ETA application: fee category, passport number, nationality, 6-month validity, return ticket and funds."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "sri-lanka"
 weight: 20
 keywords: ["how to fill Sri Lanka ETA", "Sri Lanka ETA requirements", "Sri Lanka ETA application", "eta.gov.lk"]

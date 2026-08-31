@@ -3,7 +3,7 @@ title: "老挝电子签官网、费用与 9 个适用口岸（2026）"
 kicker: "先查护照资格和入境口岸，再支付官网明确不可退的费用。"
 description: "老挝电子签指南：官方 laoevisa.gov.la、按护照报价、9 个指定口岸、30 天单次旅游停留，以及与落地签的区别。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "laos"
 weight: 10
 keywords: ["老挝电子签", "老挝电子签官网", "laoevisa.gov.la", "老挝电子签多少钱", "老挝落地签"]

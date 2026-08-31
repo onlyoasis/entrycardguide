@@ -3,7 +3,7 @@ title: "格鲁吉亚电子签怎么办？付款前先查一年免签资格（202
 kicker: "大量名单内护照可免签停留完整一年。确实要办 eVisa 时，当前流程有两段收费。"
 description: "格鲁吉亚电子签指南：免签资格、官方入口、20 美元加 2% 费用、强制 15 美元 DuVerify 和申请材料。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "georgia"
 weight: 10
 keywords: ["格鲁吉亚电子签", "格鲁吉亚免签", "evisa.gov.ge", "格鲁吉亚签证费用", "格鲁吉亚签证材料"]

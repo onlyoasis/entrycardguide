@@ -5,14 +5,14 @@
 url = "https://hayya.qa/en?category=WVE"
 name = "Hayya Tourist E-Visas"
 agency = "Qatar Tourism / Hayya"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The portal lists Tourist Visa A1, GCC Resident Visa A2, Visa with ETA A3, Companion of GCC Citizen A4 and Visa-Free for US Citizens F1. It asks nationality first and tells GCC nationals that no visa is required."
 
 [visa_guide]
 url = "https://visitqatar.com/intl-en/plan-your-trip/visas"
 name = "Qatar visa-free entry and Hayya e-Visa guide"
 agency = "Qatar Tourism"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The live nationality checker separates visa-free entry, paid visa on arrival and Hayya routes. It says citizens of more than 102 countries are eligible for free entry, GCC citizens need no visa, and tourist visas can be applied for on Hayya for QAR 100."
 
 [government_confirmation]

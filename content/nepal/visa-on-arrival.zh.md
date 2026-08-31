@@ -3,7 +3,7 @@ title: "尼泊尔落地签：官方在线预填、费用与中国护照免费规
 kicker: "在线预填后，把条码回执、付款凭证和护照交到移民柜台。"
 description: "尼泊尔落地签指南：NepaliPort 官方表单、30/50/125 美元费用、中国护照免费、受限国籍和单独的 ETA。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "nepal"
 weight: 10
 keywords: ["尼泊尔落地签", "尼泊尔旅游签在线申请", "NepaliPort", "尼泊尔签证费", "中国护照尼泊尔签证"]

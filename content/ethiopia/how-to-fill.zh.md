@@ -3,7 +3,7 @@ title: "埃塞俄比亚电子签怎么填：13 项申请准备（2026）"
 kicker: "13 项内容来自 evisa.gov.et 公开表单和旅游签说明。"
 description: "埃塞俄比亚电子签怎么填：路径、时长、入境、住宿、护照资料、邮箱和必需图片上传。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "ethiopia"
 weight: 20
 keywords: ["埃塞俄比亚电子签怎么填", "埃塞俄比亚签证申请", "evisa.gov.et 申请"]

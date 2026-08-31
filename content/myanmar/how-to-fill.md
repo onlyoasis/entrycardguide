@@ -3,7 +3,7 @@ title: "How to Apply for the Myanmar Tourist eVisa: 11 Checks (2026)"
 kicker: "The official FAQ and guide publish document rules, but not readable text-field regexes or error strings."
 description: "Prepare the Myanmar Tourist eVisa: eligibility, MRZ name, 6-month passport validity, 2 MB JPG/PDF uploads, hotel, return ticket and entry point."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "myanmar"
 weight: 20
 keywords: ["how to apply Myanmar eVisa", "Myanmar eVisa requirements", "Myanmar eVisa documents", "Myanmar eVisa photo size"]

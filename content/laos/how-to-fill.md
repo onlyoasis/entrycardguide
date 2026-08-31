@@ -3,7 +3,7 @@ title: "How to Apply for the Laos eVisa: 11 Items (2026)"
 kicker: "The public form exposes the date and upload prompts, but no regexes or official error text."
 description: "Fill the Laos eVisa: passport eligibility, 4 x 6 cm photo, 2 MB image limits, DD-MM-YYYY dates, passport validity, designated port and Lao address."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "laos"
 weight: 20
 keywords: ["how to apply Laos eVisa", "Laos eVisa requirements", "Laos eVisa photo size", "laoevisa.gov.la application"]

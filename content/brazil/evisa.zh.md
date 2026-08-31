@@ -3,7 +3,7 @@ title: "巴西电子签 2026：VFS 官方指定路径和 80.90 美元费用"
 kicker: "输入护照或付款信息前，从巴西外交部核对这个商业 .com 门户。"
 description: "巴西电子签中文指南：适用护照、gov.br 核验链、VFS 承包商、费用、处理时间和获批有效期。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "brazil"
 weight: 10
 keywords: ["巴西电子签", "brazil.vfsevisa.com", "巴西电子签官网", "巴西签证澳大利亚加拿大美国", "巴西电子签费用"]

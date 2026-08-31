@@ -3,7 +3,7 @@ title: "Colombia Check-Mig: Official Free Pre-Registration (2026)"
 kicker: "It is free and optional. File from 72 hours to one hour before the current entry or exit."
 description: "Colombia Check-Mig guide: official free app, optional status, exact filing window, entry and exit use and confirmation."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "colombia"
 weight: 10
 keywords: ["Colombia Check-Mig", "Check Mig Colombia official", "Colombia entry form", "apps.migracioncolombia.gov.co", "Check-Mig free"]

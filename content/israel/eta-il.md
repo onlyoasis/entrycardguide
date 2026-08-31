@@ -3,7 +3,7 @@ title: "Israel ETA-IL: Visa-Exempt Passports Only (2026)"
 kicker: "Check PIBA eligibility first. A passport that needs a visitor visa cannot use ETA-IL instead."
 description: "Israel ETA-IL guide: eligibility first, official PIBA application, ILS 25 fee, 72-hour decision and two-year validity."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "israel"
 weight: 10
 keywords: ["Israel ETA-IL", "Israel ETA official site", "israel-entry.piba.gov.il", "ETA-IL fee", "Israel visa exempt"]

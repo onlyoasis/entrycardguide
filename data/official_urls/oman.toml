@@ -1,32 +1,32 @@
 # Oman — official government URLs
-# Last verified: 2026-08-30
+# Last verified: 2026-08-31
 
 [evisa]
 url = "https://evisa.rop.gov.om/"
 name = "Royal Oman Police eVisa"
 agency = "Royal Oman Police"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. This is the ROP portal for tourist and sponsored visa applications. Tourist applicants must register or log in before starting an application."
 
 [visa_exemption]
 url = "https://www.fm.gov.om/en/visitors/entry-visas/"
 name = "Oman entry visas and visa exemptions"
 agency = "Foreign Ministry of Oman"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. Updated 16 January 2026. It lists more than 100 countries and regions whose visitors may use a visa exemption for stays up to 14 days, divides them into two groups, gives the extra conditions for the second group, and states that GCC citizens need no visa."
 
 [eligibility]
 url = "https://evisa.rop.gov.om/visa-eligibility?tabId=eiwscr"
 name = "Oman eVisa Eligibility Wizard"
 agency = "Royal Oman Police"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The public wizard asks for nationality, GCC residence and GCC country where applicable. Its result supplies eligible visa subtypes, fee details, stay duration and conditions."
 
 [faq]
 url = "https://evisa.rop.gov.om/en/frequently-asked-questions"
 name = "Oman eVisa FAQ"
 agency = "Royal Oman Police"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The FAQ covers visa types, pre-use validity, a recommended 4-day application lead, lawful border entry, 6-month passport validity, a 512 KB upload limit and email delivery after approval."
 
 [meta]

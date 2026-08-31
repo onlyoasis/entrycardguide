@@ -3,7 +3,7 @@ title: "Bahrain eVisa: Check Online and On-Arrival Eligibility (2026)"
 kicker: "The two routes use separate lists. Eligible eVisa products have different entry counts, periods and fees."
 description: "Bahrain eVisa guide: official NPRA portal, online versus on-arrival eligibility, Visit eVisa products, fees, timing and documents."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "bahrain"
 weight: 10
 keywords: ["Bahrain eVisa", "Bahrain visa on arrival", "evisa.gov.bh", "Bahrain eVisa fee", "NPRA Bahrain"]

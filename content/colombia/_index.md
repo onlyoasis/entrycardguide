@@ -3,7 +3,7 @@ title: "Colombia"
 kicker: "Check-Mig is the government's free, optional pre-registration for entry and exit."
 description: "Independent Colombia Check-Mig guide: official free portal, 72-hour-to-one-hour window, entry and exit records and confirmation."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 Check-Mig preloads trip information before Colombian immigration control. Migración Colombia says the service is free and optional. It is available to Colombian and foreign travellers entering or leaving the country.

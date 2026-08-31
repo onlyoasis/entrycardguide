@@ -3,7 +3,7 @@ title: "Jamaica"
 kicker: "The Electronic Passenger Declaration (C5) is free. Use the current .gov.jm portal."
 description: "Independent Jamaica C5 guide: current government portal, PICA and JCA ownership, free filing, submission timing and live form fields."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 ---
 
 Jamaica requires arriving passengers to submit the Electronic Passenger Declaration (C5) for immigration and customs clearance at its international airports.

@@ -3,7 +3,7 @@ title: "库拉索数字移民卡 2026：官方表免费，不要付费"
 kicker: "从 Curaçao Tourist Board 跳转到 dicardcuracao.com，DI Card 永远不需要付款。"
 description: "库拉索数字移民卡中文指南：免费官方表、7 天窗口、每人一份和确认 PDF。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "curacao"
 weight: 10
 keywords: ["库拉索数字移民卡", "库拉索 DI Card 官网", "dicardcuracao.com", "库拉索入境表", "库拉索入境表免费"]

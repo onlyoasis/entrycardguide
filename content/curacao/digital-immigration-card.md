@@ -3,7 +3,7 @@ title: "Curaçao Digital Immigration Card: Official Free Form (2026)"
 kicker: "Use the Curaçao Tourist Board link to reach dicardcuracao.com. The DI Card never requires payment."
 description: "Curaçao Digital Immigration Card guide: free official form, seven-day window, each traveller and confirmation PDF."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "curacao"
 weight: 10
 keywords: ["Curaçao Digital Immigration Card", "Curaçao DI Card official", "dicardcuracao.com", "Curaçao immigration form", "Curaçao entry form free"]

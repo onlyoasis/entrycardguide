@@ -3,7 +3,7 @@ title: "格鲁吉亚电子签怎么填：9 项申请准备（2026）"
 kicker: "9 项内容来自实时申请页和官方 FAQ，第 1 项可能直接省掉整份表。"
 description: "格鲁吉亚电子签怎么填：免签、护照、目的、照片、上传材料、邮件时限和强制 DuVerify。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "georgia"
 weight: 20
 keywords: ["格鲁吉亚电子签怎么填", "格鲁吉亚电子签申请", "格鲁吉亚电子签材料", "evisa.gov.ge"]

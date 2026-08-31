@@ -3,7 +3,7 @@ title: "How to Apply for Brazil's VFS e-Visa (2026)"
 kicker: "Verify the .com contractor through gov.br, then prepare the passport page, photo, trip details and email."
 description: "Brazil e-Visa field guide: eligibility, government-to-VFS link, passport image, photo, travel details, email and minors."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "brazil"
 weight: 20
 keywords: ["how to apply Brazil eVisa", "Brazil VFS eVisa documents", "Brazil eVisa application fields"]
