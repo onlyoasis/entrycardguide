@@ -16,6 +16,13 @@ name = "Dirección General de Migración (home)"
 agency = "Dirección General de Migración"
 last_verified = "2026-04-24"
 
+[embassy_faq_usa]
+url = "https://usa.mirex.gob.do/preguntas-frecuentes/"
+name = "Dominican Embassy in the USA — travel FAQ"
+agency = "Ministerio de Relaciones Exteriores (MIREX)"
+last_verified = "2026-09-02"
+notes = "Source for the USD 20 departure tax being included in the airline ticket, and for the paid extension when staying past 30 days. The E-Ticket itself stays free."
+
 # Country-page metadata (consumed by country-form layout).
 # Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
 [meta]
