@@ -23,6 +23,47 @@ A 档 9 项调研全部完成。Chrome 浏览器扩展默认拒绝访问外部�
 
 ---
 
+## ⚠️ 政策复核(2026-09-03)——本文档早于中介名单移除决定
+
+> 这份调研写于 **2026-05-16**。站点在 **2026-08-10** 移除了全部中介/仿冒站名单
+> (`scam-site.html` shortcode 和 `is-ivisa-official` 页面),理由是这批页面几乎没有流量
+> 却承担了全部法律风险。CLAUDE.md 现行红线:**不要重新引入对第三方公司的点名**。
+>
+> 下面逐项标注哪些还能用。**标记「失效」的部分不要执行**——它们的话术都建立在
+> 「本站发布一份点名的中介域名数据集」这个前提上,而这个前提已经不成立。
+> 拿一份站点不再发布的数据集去 outreach,是虚假陈述。
+
+| # | 原任务 | 复核结论 |
+|---|---|---|
+| 1 | archive.org 批量存档 | ✅ **有效**,URL 清单需更新(见下) |
+| 2 | 竞争对手反链摸底 | ❌ **失效**——全部产出是为了补进 `is-ivisa-official.md`,该页已删 |
+| 3 | 政府/大使馆 outreach | ⚠️ **名单有效,邮件模板失效**——模板卖点是"我们维护点名的诈骗域名数据集",要整段重写 |
+| 4 | awesome-list | ✅ **有效**,且现在更契合(站点现在纯粹是官方 URL 目录) |
+| 5 | 维基百科 | ⚠️ **部分有效**——「External links 加国家枢纽页」保留;「用 `<ref>` 引用本站 scam domain catalog」失效 |
+| 6 | HARO | ⚠️ **联系流程有效,bio 和回复模板失效**——两处都在卖诈骗域名数据集,且"across 7 countries"已过时(现在 50 国) |
+| 7 | 记者邮箱 | ✅ **联系人有效**,pitch 角度要换 |
+| 8 | 论坛帖盘点 | ⚠️ **帖子清单有效,回帖角度要换**——回"官方网址 + 字段怎么填",不回"这些是骗子" |
+| 9 | 索引自检 | ❌ **已过时**——Google 索引正常(156 页);Bing 已于 2026-07-23 接入并生效(`bing/organic` 1 → 45 会话) |
+| 🚧 | 待核验中介域名候选 | ❌ **整节失效**——它服务的 `[[scam_sites]]` 已不再渲染。TOML 里的数据按 CLAUDE.md 保留为内部记录,不再入库新域名 |
+
+### 换掉之后,pitch 用什么
+
+原来的卖点是"我们点名骗子"。现在站点的真实卖点是三条,都能兑现且都不点名任何公司:
+
+1. **50 个国家的官方政府网址,每条带 `last_verified` 日期和 archive 快照链接**,存在公开 TOML 里
+2. **497 条字段规则**,含正则、字符上限,以及官方网站返回的原话错误信息,存在公开 JSON 里
+3. **每次变更都记在公开 changelog**,一国一份,带日期
+
+还有一条**第三方权威事实**可以引用,它只讲品类不点名公司,所以不受这次移除影响:
+
+> 泰国移民局副局长兼发言人 Pol. Maj. Gen. Choengron Rimpadee 于 2026-03-30 表示,至少 10% 的
+> 外国入境者使用了非官方 TDAC 网站,收费 US$20–90,而官方 TDAC 免费。
+> (Bangkok Post / Khaosod English / Thai Examiner,2026-08-09 核实)
+
+**「有站点收费 $20–90」有据可查;「某个具体域名是骗子」没有。** 这条区分是所有 outreach 文案的边界。
+
+---
+
 ## 📋 9 项 A 档结果一览表
 
 | # | 任务 | 状态 | 主要产出 |
@@ -51,15 +92,23 @@ urls=(
   "https://entrycardguide.com/official-links/"
   "https://entrycardguide.com/about/"
   "https://entrycardguide.com/thailand/tdac/"
-  "https://entrycardguide.com/thailand/is-ivisa-official/"
   "https://entrycardguide.com/malaysia/mdac/"
   "https://entrycardguide.com/singapore/sgac/"
   "https://entrycardguide.com/indonesia/e-cd/"
   "https://entrycardguide.com/mexico/fmm/"
   "https://entrycardguide.com/dominican/eticket/"
-  "https://entrycardguide.com/vietnam/evisa/"
   "https://entrycardguide.com/zh/"
   "https://entrycardguide.com/zh/official-links/"
+  # 2026-09-03 更新:去掉已删除的 /thailand/is-ivisa-official/(会存档到 404);
+  # 按 GA4 真实会话补进流量最高的几页
+  "https://entrycardguide.com/singapore/how-to-fill/"
+  "https://entrycardguide.com/malaysia/how-to-fill/"
+  "https://entrycardguide.com/vietnam/how-to-fill/"
+  "https://entrycardguide.com/indonesia/how-to-fill/"
+  "https://entrycardguide.com/korea/e-arrival-card/"
+  "https://entrycardguide.com/zh/thailand/tdac/"
+  "https://entrycardguide.com/zh/singapore/sgac/"
+  "https://entrycardguide.com/zh/indonesia/e-cd/"
 )
 for u in "${urls[@]}"; do
   echo "Archiving: $u"
