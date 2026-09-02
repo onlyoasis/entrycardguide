@@ -7,12 +7,13 @@
        Add a country there; this page, the nav, and the footer all follow. */ -}}
 {{- $countries := partial "country-roster.html" . -}}
 
-{{- /* Stats: countries dynamic from roster, scams sum across TOMLs.
-       freeCount counts countries with a free government form so the section
-       headline doesn't lump Vietnam (paid e-visa) in with the free roster. */ -}}
+{{- /* Stats: countries dynamic from roster, field rules sum across
+       data/rules/*.json. freeCount counts countries with a free government
+       form so the section headline doesn't lump Vietnam (paid e-visa) in
+       with the free roster. */ -}}
 {{- $countryCount := len $countries -}}
 {{- $freeCount := 0 -}}
-{{- $scamCount := 0 -}}
+{{- $fieldRuleCount := 0 -}}
 {{- $urlCount := 0 -}}
 {{- range $countries -}}
   {{- if eq .fee "free" -}}{{- $freeCount = add $freeCount 1 -}}{{- end -}}
@@ -22,8 +23,8 @@
       {{- $urlCount = add $urlCount 1 -}}
     {{- end -}}
   {{- end -}}
-  {{- with $data.scam_sites -}}
-    {{- $scamCount = add $scamCount (len .) -}}
+  {{- with (index hugo.Data.rules .key) -}}
+    {{- with .fields -}}{{- $fieldRuleCount = add $fieldRuleCount (len .) -}}{{- end -}}
   {{- end -}}
 {{- end -}}
 {{- $paidCount := sub $countryCount $freeCount -}}
@@ -72,9 +73,9 @@
 
     <p class="text-muted mt-lg max-w-[720px]" style="font-size: 22px; line-height: 1.5;">
       {{- if $isZh -}}
-      我们公布每个国家的官方政府网址，逐字段解释怎么填，并把那些在 Google 搜索结果里挡在官方网站前面的山寨站点列出来。不需要账号，不存数据，从未拿过任何签证中介一分钱。
+      我们公布每个国家的官方政府网址，逐字段解释怎么填，并附上官方网站返回的原话错误信息。不需要账号，不存数据，从未拿过任何签证中介一分钱。
       {{- else -}}
-      We publish the official government URL, explain every field, and show you the scam lookalikes that sit above the real site in Google. No accounts. No stored data. No money from any visa middleman, ever.
+      We publish the official government URL, explain every field, and give you the exact error text the official site returns when you get one wrong. No accounts. No stored data. No money from any visa middleman, ever.
       {{- end -}}
     </p>
 
@@ -98,7 +99,7 @@
     {{- $stats := slice
       (dict "kicker" (cond $isZh "覆盖国家" "COUNTRIES COVERED") "value" (string $countryCount) "subEn" "Asia and the Americas. Sorted by traffic below." "subZh" "覆盖亚洲与美洲，下方按访问量排序。")
       (dict "kicker" (cond $isZh "已验证官方网址" "OFFICIAL URLS VERIFIED") "value" (string $urlCount) "subEn" "All in a public TOML file with last_verified dates" "subZh" "全部存在公开 TOML 文件里，附 last_verified 日期")
-      (dict "kicker" (cond $isZh "山寨站点收录数" "SCAM SITES INDEXED") "value" (string $scamCount) "subEn" "DNS-audited monthly; dead domains removed" "subZh" "每月 DNS 审计，失效域名会被移除")
+      (dict "kicker" (cond $isZh "字段规则收录数" "FIELD RULES PUBLISHED") "value" (string $fieldRuleCount) "subEn" "Regex, length limits, and the official error text — all in public JSON" "subZh" "正则、字符上限、官方原话错误信息，全在公开 JSON 里")
       (dict "kicker" (cond $isZh "我们存的你的数据" "YOUR DATA WE STORE") "value" "0" "subEn" "Validators run client-side. Zero network requests." "subZh" "校验器在你的浏览器里跑，零网络请求。")
     -}}
     <div class="grid grid-cols-2 md:grid-cols-4 -mr-px -mb-px">
@@ -325,7 +326,7 @@
       {{- $methods := slice
         (dict "tEn" "Every URL lives in a TOML file with a verification date and an archive link." "tZh" "每个网址都存在 TOML 文件里，附核验日期和 archive 快照链接。" "src" "data/official_urls/{country}.toml")
         (dict "tEn" "Every field rule lives in a JSON file with regex, max length, and the exact error text the official site returns." "tZh" "每个字段规则存在 JSON 文件里，含正则、最大长度，以及官方网站返回的原话错误信息。" "src" "data/rules/{country}.json")
-        (dict "tEn" "Every scam warning has a domain, a first-observed date, and DNS evidence — dead domains are removed." "tZh" "每条山寨预警都附域名、首次发现日期和 DNS 证据；失效的域名会被移除。" "src" "data/official_urls/*.toml [[scam_sites]]")
+        (dict "tEn" "Every change to an official URL or field rule is dated in a public changelog, one file per country." "tZh" "每一次官方网址或字段规则的变更都记在公开 changelog 里，一国一份，带日期。" "src" "data/changelog/{country}.toml")
         (dict "tEn" "The validator runs in your browser. Open DevTools → Network and confirm zero outbound requests with your data." "tZh" "校验器在你的浏览器里跑。打开 DevTools → Network，看到的就是零外发请求。" "src" "assets/js/validator.ts")
         (dict "tEn" "The whole site is on GitHub. Markdown, data, templates, browser code. Bring your own diff." "tZh" "整个站点都在 GitHub 上：Markdown、数据、模板、浏览器代码全部公开。欢迎自己 diff。" "src" "github.com/onlyoasis/entrycardguide")
       -}}
