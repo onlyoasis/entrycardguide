@@ -87,6 +87,8 @@ rail_we_dont_take_value: "任何签证服务 · 信用卡广告"
 rail_related: "相关文章"
 
 # 目录 / 分享
+directory_country: "国家"
+directory_form: "表单"
 directory_official_url: "官方网址"
 directory_agency: "政府机构"
 directory_fee: "费用"

@@ -1,47 +1,52 @@
 {{- $isZh := eq .Site.Language.Lang "zh" -}}
 {{- /* Country list comes from the shared roster partial — the same source the
        homepage grid, header dropdown, and footer use. Adding a country there
-       adds it here; no per-country edits in this shortcode. */ -}}
+       adds it here; no per-country edits in this shortcode.
+
+       Rendered as a table so the whole directory reads as one comparison:
+       50 rows, same six fields, no per-country prose to parse. The wrapper
+       scrolls horizontally instead of letting the row crush on narrow
+       screens — agency names run long. */ -}}
 {{- $countries := partial "country-roster.html" . -}}
 
-<div class="not-prose border-t border-rule">
-  {{- range $countries }}
-    {{- $countryData := index hugo.Data.official_urls .key -}}
-    {{- $official := index $countryData .formKey -}}
-    {{- $countryName := cond $isZh .zh .en -}}
-    {{- $countryPath := cond $isZh (printf "/zh/%s/" .key) (printf "/%s/" .key) -}}
-    {{- $guidePath := printf "%s%s/" $countryPath .guideSlug -}}
-    <article class="py-6 border-b border-rule">
-      <div class="text-meta text-muted font-mono uppercase mb-2">{{ $countryName }}</div>
-      <h2 class="mb-2">
-        <a href="{{ $guidePath }}" class="text-ink no-underline hover:underline underline-offset-4">{{ $official.name }}</a>
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-md text-small">
-        <div>
-          <div class="text-muted mb-1">{{ i18n "directory_official_url" }}</div>
-          <a href="{{ $official.url }}" rel="noopener" class="font-mono text-ink underline underline-offset-4">{{ replaceRE "^https?://" "" $official.url }}</a>
-        </div>
-        <div>
-          <div class="text-muted mb-1">{{ i18n "directory_agency" }}</div>
-          <span>{{ $official.agency }}</span>
-        </div>
-        <div>
-          <div class="text-muted mb-1">{{ i18n "directory_fee" }}</div>
-          {{- $meta := $countryData.meta -}}
-          <span>{{ if eq .fee "free" }}{{ i18n "directory_fee_free" }}{{ else }}{{ cond $isZh $meta.fee_zh $meta.fee_en }}{{ end }}</span>
-        </div>
-        <div>
-          <div class="text-muted mb-1">{{ i18n "directory_last_verified" }}</div>
-          <span>{{ $official.last_verified }}</span>
-        </div>
-      </div>
-      <div class="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-small">
-        <a href="{{ $guidePath }}" class="text-ink underline underline-offset-4">{{ i18n "directory_read_guide" }}</a>
-        <a href="{{ printf "%show-to-fill/" $countryPath }}" class="text-ink underline underline-offset-4">{{ i18n "directory_how_to_fill" }}</a>
-        {{- with $official.archive_url }}
-        <a href="{{ . }}" rel="noopener" class="text-ink underline underline-offset-4">{{ i18n "directory_archive" }}</a>
+<div class="not-prose overflow-x-auto border-t border-rule">
+  <table class="w-full min-w-[760px] border-collapse text-small">
+    <thead>
+      <tr class="border-b border-rule">
+        {{- range slice (i18n "directory_country") (i18n "directory_form") (i18n "directory_official_url") (i18n "directory_agency") (i18n "directory_fee") (i18n "directory_last_verified") }}
+        <th scope="col" class="text-left align-bottom py-3 pr-6 text-meta font-mono uppercase text-muted font-normal">{{ . }}</th>
         {{- end }}
-      </div>
-    </article>
-  {{- end }}
+      </tr>
+    </thead>
+    <tbody>
+      {{- range $countries }}
+      {{- $countryData := index hugo.Data.official_urls .key -}}
+      {{- $official := index $countryData .formKey -}}
+      {{- $meta := $countryData.meta -}}
+      {{- $countryPath := cond $isZh (printf "/zh/%s/" .key) (printf "/%s/" .key) -}}
+      {{- $guidePath := printf "%s%s/" $countryPath .guideSlug -}}
+      <tr class="border-b border-rule align-top">
+        <th scope="row" class="text-left font-normal py-4 pr-6">
+          <a href="{{ $countryPath }}" class="text-ink no-underline hover:underline underline-offset-4">{{ cond $isZh .zh .en }}</a>
+        </th>
+        <td class="py-4 pr-6">
+          <a href="{{ $guidePath }}" class="text-ink underline underline-offset-4">{{ $official.name }}</a>
+          <div class="text-meta text-muted mt-1">
+            <a href="{{ printf "%show-to-fill/" $countryPath }}" class="text-muted underline underline-offset-4">{{ i18n "directory_how_to_fill" }}</a>
+            {{- with $official.archive_url }}
+            <span aria-hidden="true"> · </span>
+            <a href="{{ . }}" rel="noopener" class="text-muted underline underline-offset-4">{{ i18n "directory_archive" }}</a>
+            {{- end }}
+          </div>
+        </td>
+        <td class="py-4 pr-6">
+          <a href="{{ $official.url }}" rel="noopener" class="font-mono text-ink underline underline-offset-4 break-all">{{ replaceRE "^https?://" "" $official.url }}</a>
+        </td>
+        <td class="py-4 pr-6">{{ $official.agency }}</td>
+        <td class="py-4 pr-6 whitespace-nowrap">{{ if eq .fee "free" }}{{ i18n "directory_fee_free" }}{{ else }}{{ cond $isZh $meta.fee_zh $meta.fee_en }}{{ end }}</td>
+        <td class="py-4 font-mono whitespace-nowrap">{{ $official.last_verified }}</td>
+      </tr>
+      {{- end }}
+    </tbody>
+  </table>
 </div>

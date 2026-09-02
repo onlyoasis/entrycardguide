@@ -87,6 +87,8 @@ rail_we_dont_take_value: "any visa service · credit card ads"
 rail_related: "Related"
 
 # Directory / share
+directory_country: "Country"
+directory_form: "Form"
 directory_official_url: "Official URL"
 directory_agency: "Agency"
 directory_fee: "Fee"
