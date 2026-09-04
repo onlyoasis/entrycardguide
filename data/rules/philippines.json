@@ -1,12 +1,12 @@
 {
   "country": "philippines",
   "officialUrl": "https://etravel.gov.ph",
-  "lastVerified": "2026-06-11",
-  "source": "https://etravel.gov.ph (official eTravel portal re-checked 2026-06-11)",
+  "lastVerified": "2026-09-04",
+  "source": "https://etravel.gov.ph — Data Policy (collected items), declaration form i18n catalog (field labels, MM/DD/YYYY date hint), FAQ (QR rules), re-checked 2026-09-04",
   "fields": {
     "passport": {
       "type": "passport",
-      "label": "Passport number",
+      "label": "Passport Number",
       "required": true,
       "minLength": 6,
       "maxLength": 12,
@@ -27,7 +27,7 @@
       "minLength": 1,
       "maxLength": 80,
       "placeholder": "MARIA SANTOS",
-      "help": "Use the Latin spelling from your passport.",
+      "help": "The form asks First / Middle / Last / Suffix in separate boxes. Use the Latin spelling from your passport.",
       "errors": {
         "required": "Full name is required",
         "tooLong": "Max 80 characters",
@@ -41,7 +41,7 @@
       "minDate": "1900-01-01",
       "maxDate": "2026-12-31",
       "placeholder": "1991-08-22",
-      "help": "Use YYYY-MM-DD in this local checker.",
+      "help": "The official form marks date fields (MM/DD/YYYY). This local checker takes YYYY-MM-DD.",
       "errors": {
         "required": "Date of birth is required",
         "invalidFormat": "Use YYYY-MM-DD",
@@ -49,14 +49,23 @@
         "tooLate": "Date of birth cannot be in the future"
       }
     },
+    "mobile_number": {
+      "type": "phone",
+      "label": "Mobile Number",
+      "placeholder": "+639171234567",
+      "help": "Include your country code. This local checker accepts + followed by 7 to 15 digits.",
+      "errors": {
+        "invalidFormat": "Use + country code and 7 to 15 digits"
+      }
+    },
     "flight_number": {
       "type": "flight",
-      "label": "Flight or vessel number",
+      "label": "Flight Number",
       "required": true,
       "placeholder": "PR103",
-      "help": "Use the operating carrier code and flight number.",
+      "help": "Operating carrier code + number. Sea travelers: the form asks for Voyage Number and Vessel Name instead.",
       "errors": {
-        "required": "Flight or vessel number is required",
+        "required": "Flight number is required",
         "invalidFormat": "Use carrier code + number, e.g. PR103"
       }
     },
@@ -67,7 +76,7 @@
       "minDate": "2026-01-01",
       "maxDate": "2028-12-31",
       "placeholder": "2026-07-14",
-      "help": "Date you arrive in the Philippines.",
+      "help": "Date you land in Philippine local time. The form shows (MM/DD/YYYY); this checker takes YYYY-MM-DD. Registration opens 72 hours before arrival.",
       "errors": {
         "required": "Arrival date is required",
         "invalidFormat": "Use YYYY-MM-DD"
@@ -75,13 +84,13 @@
     },
     "email": {
       "type": "email",
-      "label": "Email",
+      "label": "Email address",
       "required": true,
       "maxLength": 80,
       "placeholder": "name@example.com",
-      "help": "Use an inbox you can open at the airport.",
+      "help": "Use an inbox you can open at the airport. Sign-up sends a 6-digit OTP here.",
       "errors": {
-        "required": "Email is required",
+        "required": "Email address is required",
         "invalidFormat": "Must look like name@example.com",
         "tooLong": "Email too long — max 80 characters"
       }

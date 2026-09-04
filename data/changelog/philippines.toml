@@ -5,3 +5,9 @@ date = "2026-06-11"
 summary = "Initial Philippines eTravel coverage published"
 summary_zh = "菲律宾 eTravel 指南首版上线"
 detail = "Covers the official etravel.gov.ph portal, field guidance, and middleman warning pattern."
+
+[[entries]]
+date = "2026-09-04"
+summary = "Field guide rebuilt on the official eTravel wizard text"
+summary_zh = "字段指南改用 eTravel 官方向导文案重构"
+detail = "Cards now use the form's own labels and step order (Data Policy item list plus the form page's i18n catalog: MM/DD/YYYY dates, Mobile Number card added, official flight-number notice). Three unsourced error strings were replaced with verbatim FAQ quotes (QR colors, 72-hour window, lost-QR recovery, free of charge, duplicate registration). meta.field_count re-counted to the 28 items the Data Policy enumerates."

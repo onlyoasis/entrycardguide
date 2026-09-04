@@ -26,8 +26,19 @@ fee_zh = "免费"
 suffix = ".gov.ph"
 form_type = "arrival_card"
 
-field_count = 12
+# 28 data items enumerated verbatim in the eTravel Data Policy
+# (etravel.gov.ph/data-policy): 20 personal/travel items + 8 COVID-19
+# vaccine items. Previously 12, which had no official source.
+field_count = 28
+# The declaration wizard's own step names (form i18n catalog): 1 Personal
+# Information, 2 Permanent Country of Residence, 3 Travel Details,
+# 4 Health Declaration. The TIEZA travel-tax step and the Summary review
+# page are not counted.
 sections = 4
+# The official form publishes no regexes or character limits, so the format
+# chips on the field cards are this site's local checker, not eTravel's rules.
+fields_intro_en = "The wizard publishes its step names, field labels and a (MM/DD/YYYY) date hint, but no regexes or character limits. The format chips on these cards belong to this site's local checker, not to eTravel. Official notices and outcomes are quoted word for word."
+fields_intro_zh = "官方向导公开了步骤名、字段名和（MM/DD/YYYY）日期标注，但没有公开正则或字符上限。卡片上的格式芯片属于本站本地校验器，不是官方规则。官方提示和结果均按原文引用。"
 time_needed_en = "~6 minutes"
 time_needed_zh = "约 6 分钟"
 output_en = "Show the QR code if airline staff or border officers ask. Keep the screenshot until you clear immigration and customs."
