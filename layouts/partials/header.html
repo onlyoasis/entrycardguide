@@ -1,10 +1,10 @@
 <header class="border-b border-rule">
-  <div class="mx-auto max-w-container px-md py-5 flex justify-between items-baseline gap-md">
+  <div class="mx-auto max-w-container px-md py-5 grid grid-cols-[minmax(0,1fr)_auto] md:flex md:justify-between items-baseline gap-x-md gap-y-3">
     <a href="{{ "/" | relLangURL }}" class="font-serif font-medium no-underline shrink-0" style="font-size: 22px; font-variation-settings: 'opsz' 144;" aria-label="{{ i18n "brand_dot_label" }}">
       entrycardguide<span class="text-verified">·</span>
     </a>
     {{- $isZh := eq .Site.Language.Lang "zh" -}}
-    <nav aria-label="{{ i18n "nav_main_label" }}" class="flex gap-6 text-small items-baseline">
+    <nav aria-label="{{ i18n "nav_main_label" }}" class="col-span-2 order-last md:order-none md:ml-auto flex flex-wrap gap-x-4 md:gap-x-6 gap-y-2 text-small items-baseline">
       {{- /* Countries dropdown — collapses the whole roster into one nav item so
              the bar never overflows as we add countries. Built from the shared
              country-roster partial; native <details> keeps it zero-JS, matching
@@ -28,6 +28,7 @@
       {{- range .Site.Menus.main }}
       <a href="{{ .URL }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ .Name }}</a>
       {{- end }}
+    </nav>
 
       {{- /*
         Language switcher (dropdown).
@@ -67,6 +68,5 @@
         </div>
       </details>
       {{- end }}
-    </nav>
   </div>
 </header>

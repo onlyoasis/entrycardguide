@@ -6,7 +6,7 @@
 <body class="min-h-screen antialiased">
   {{- partial "trust-bar.html" . -}}
   {{- partial "header.html" . -}}
-  <main id="main" class="mx-auto max-w-container px-md">
+  <main id="main" class="mx-auto px-md {{ if .HasShortcode "official-directory" }}directory-page{{ else }}max-w-container{{ end }}">
     {{- block "main" . }}{{- end }}
   </main>
   {{- partial "footer-commit.html" . -}}

@@ -103,6 +103,132 @@
 /* ---------------------------------------------------------------- */
 
 @layer components {
+  /* 目录使用宽表格；说明文字保留原有阅读宽度。 */
+  .directory-page {
+    max-width: 1440px;
+  }
+
+  .directory-page .prose {
+    max-width: none;
+  }
+
+  .directory-page .prose > :not(.official-directory) {
+    max-width: theme('maxWidth.prose');
+  }
+
+  .official-directory {
+    @apply my-lg;
+  }
+
+  .directory-controls:not([hidden]) {
+    @apply grid gap-4 items-end;
+    grid-template-columns: minmax(0, 1fr) minmax(10rem, 14rem) auto;
+  }
+
+  .directory-label {
+    @apply block text-small font-medium mb-2;
+  }
+
+  .directory-input {
+    @apply w-full min-w-0 border border-rule rounded-sm bg-paper text-ink px-3 py-2;
+    min-height: 2.75rem;
+    font-size: 16px;
+  }
+
+  .directory-input:focus-visible,
+  .directory-reset:focus-visible,
+  .directory-scroll:focus-visible,
+  .directory-table a:focus-visible {
+    outline: 2px solid theme('colors.verified');
+    outline-offset: 3px;
+  }
+
+  .directory-reset {
+    min-height: 2.75rem;
+  }
+
+  .directory-reset:disabled {
+    @apply text-muted border-rule cursor-default bg-transparent;
+  }
+
+  .directory-summary {
+    @apply flex flex-wrap justify-between gap-x-4 gap-y-1 text-small text-muted my-4;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .directory-scroll-hint {
+    display: none;
+  }
+
+  .directory-scroll {
+    @apply overflow-x-auto border-y border-rule;
+  }
+
+  .directory-table {
+    @apply w-full border-collapse text-small;
+    min-width: 1080px;
+    table-layout: fixed;
+  }
+
+  .directory-col-country { width: 12%; }
+  .directory-col-form { width: 20%; }
+  .directory-col-url { width: 23%; }
+  .directory-col-agency { width: 20%; }
+  .directory-col-fee { width: 15%; }
+  .directory-col-verified { width: 10%; }
+
+  .directory-table th,
+  .directory-table td {
+    @apply text-left align-top px-4 py-4 border-b border-rule;
+    overflow-wrap: anywhere;
+  }
+
+  .directory-table thead th {
+    @apply align-bottom bg-rule text-xs font-mono text-muted font-medium py-3;
+  }
+
+  .directory-table tbody th {
+    @apply font-medium;
+  }
+
+  .directory-table tr > :first-child {
+    @apply sticky left-0 bg-paper;
+  }
+
+  .directory-table thead tr > :first-child {
+    @apply bg-rule;
+  }
+
+  .directory-table tbody tr:hover > * {
+    @apply bg-rule;
+  }
+
+  .directory-table tbody tr:last-child > * {
+    border-bottom: 0;
+  }
+
+  .directory-table .directory-date {
+    @apply font-mono text-xs whitespace-nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .directory-empty {
+    @apply text-center text-muted text-small py-10 border-b border-rule;
+  }
+
+  @media (max-width: 1199px) {
+    .directory-scroll-hint { display: block; }
+  }
+
+  @media (max-width: 639px) {
+    .directory-controls:not([hidden]) {
+      grid-template-columns: minmax(0, 1fr) auto;
+    }
+    .directory-controls > :first-child {
+      grid-column: 1 / -1;
+    }
+  }
+
   /* Trust bar at top of every page */
   .trust-bar {
     @apply bg-ink text-paper text-center tracking-wide2 py-sm px-md;

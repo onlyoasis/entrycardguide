@@ -1,5 +1,14 @@
 {{- /* JS pipeline — Hugo js.Build handles TS transpilation + bundling, zero npm for browser */ -}}
 
+{{- if .HasShortcode "official-directory" }}
+  {{- $directoryOpts := dict "targetPath" "js/directory.js" "minify" hugo.IsProduction "target" "es2020" "format" "iife" }}
+  {{- $directory := resources.Get "js/directory.ts" | js.Build $directoryOpts }}
+  {{- if hugo.IsProduction }}
+    {{- $directory = $directory | resources.Fingerprint "sha256" }}
+  {{- end }}
+<script src="{{ $directory.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $directory.Data.Integrity }}"{{ end }} defer></script>
+{{- end }}
+
 {{- /* Validator (loaded on every page so country pages with the validator
        shortcode work; the script is small and safely no-ops elsewhere). */ -}}
 {{- $valOpts := dict "targetPath" "js/validator.js" "minify" hugo.IsProduction "target" "es2020" "format" "iife" }}
