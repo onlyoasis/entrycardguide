@@ -1,0 +1,69 @@
+# China — official URLs
+# Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
+# Last verified: 2026-09-05
+
+[arrivalcard]
+url = "https://s.nia.gov.cn/ArrivalCardFillingPC/"
+name = "Arrival Card Filling (入境卡填报)"
+agency = "National Immigration Administration (国家移民管理局)"
+last_verified = "2026-09-05"
+notes = "The online arrival card for foreign nationals, run by the NIA on the .gov.cn domain. Interface offers 13 languages including English. Free. The filing notice on the site lists 8 exemption categories, says transit travellers leaving the port (24-hour and 240-hour stays) may also file here, and the implementing notice confirms the card can be completed at the port. Selected controls and conditional branches were checked in the saved official bundle js/app.bc4b0fcf.js on 2026-09-05. This is not a completed end-to-end filing or a verification of every branch."
+
+[consulate_notice]
+url = "https://losangeles.china-consulate.gov.cn/tzgg/202512/t20251202_11764464.htm"
+name = "Notice on implementing online arrival card filing for foreign nationals"
+agency = "Chinese Consulate General in Los Angeles"
+last_verified = "2026-09-05"
+notes = "Announces online filing from 2025-11-20. Lists the filing channels — the NIA website, the government service platform, the 'NIA 12367' app, WeChat and Alipay mini-programs, and scanning the arrival card QR code, and says the card can still be completed at the port of entry."
+
+[nia_notice]
+url = "https://s.nia.gov.cn/mps/zcjd/202507/t20250750_1010.html"
+name = "NIA notice on look-alike arrival card filing sites charging fees"
+agency = "National Immigration Administration"
+last_verified = "2026-09-05"
+notes = "Published 2025-12-02. States that offshore operators have been imitating the arrival card filing site and taking fees from travellers, and restates that the official filing carries no fee."
+
+# Country-page metadata (consumed by country-form and how-to-fill layouts).
+# Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
+[meta]
+fields_examples_only = true
+flag = "🇨🇳"
+name_en = "China"
+name_zh = "中国"
+form_code = "Arrival Card"
+guide_slug = "arrival-card"
+form_key = "arrivalcard"
+form_name_en = "Arrival Card Filling"
+form_name_zh = "外国人入境卡网上填报"
+since_en = "since 20 November 2025"
+since_zh = "2025 年 11 月 20 日起"
+fee_en = "Free"
+fee_zh = "免费"
+suffix = ".gov.cn"
+form_type = "arrival_card"
+
+# Used by the how-to-fill layout.
+field_count = 8
+sections = 4
+time_needed_en = "varies"
+time_needed_zh = "因人而异"
+fields_title_en = "China Arrival Card: passport upload and selected fields"
+fields_title_zh = "中国入境卡：护照上传与常见资料项"
+fields_intro_en = "Eight selected items in four guide groups, following the ordinary filing flow. These are not the form’s total field or step counts; questions vary with your answers. Examples are checks to make before filing, not a guarantee of acceptance or rejection. This page provides no online pre-check."
+fields_intro_zh = "本指南选列八项资料，分为四组，按普通填报流程排列。这不是官方全表的字段数或步骤数；问题会随回答变化。示例用于填报前核对，不保证一定通过或被拒。本页不提供在线预检。"
+fields_walkthrough_en = "The sections below explain the ordinary screen’s five steps and selected conditional questions. Follow the questions shown for your situation; this guide does not cover every branch."
+fields_walkthrough_zh = "下文说明普通界面的五个步骤与部分条件问题。请以自身情况实际展开的问题为准，本指南没有覆盖所有分支。"
+output_en = "An Entry Declaration Receipt for Foreigner. Use \"Download to Local\" or \"Send to Email\" on the receipt screen, and show it with your passport at inspection."
+output_zh = "一份入境申报回执（官方英文名 Entry Declaration Receipt for Foreigner）。回执页用「Download to Local」下载或「Send to Email」发邮箱，查验时与护照一起出示。"
+email_title_en = "Receipt: download or email it yourself"
+email_title_zh = "回执要自己下载或发邮箱"
+email_body_en = "The receipt screen offers \"Download to Local\" and \"Send to Email\". Pick one before you close the page."
+email_body_zh = "回执页提供「Download to Local」下载和「Send to Email」发邮箱两个选项。关页面前选一个保存好。"
+printout_title_en = "Keep the receipt on your phone"
+printout_title_zh = "回执保存在手机里"
+printout_body_en = "Save the downloaded file or a screenshot before leaving the receipt screen. Keep it reachable at the entry counter."
+printout_body_zh = "离开回执页前，把下载的文件或截图保存好，入境查验时要能马上调出来。"
+verification_title_en = "Keep the receipt reachable"
+verification_title_zh = "保证回执随时可查"
+verification_body_en = "Carry the receipt file or screenshot on the device you travel with, ready for the entry inspection."
+verification_body_zh = "回执文件或截图存在随身设备上，入境查验时随手可查。"

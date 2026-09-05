@@ -52,7 +52,10 @@
     {{ $countryName }} {{ $formCode }} · {{ if $isZh }}字段指南{{ else }}field guide{{ end }} · {{ $timeNeeded }}
   </div>
   <h1 class="font-serif font-medium m-0" style="font-size: clamp(36px, 5.6vw, 56px); line-height: 1.06; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
-    {{- if $isZh -}}
+    {{- $fieldsTitle := cond $isZh $meta.fields_title_zh $meta.fields_title_en -}}
+    {{- if $fieldsTitle -}}
+    {{ $fieldsTitle }}
+    {{- else if $isZh -}}
     官方 {{ $formCode }} 表单里最容易出错的字段，按表单实际顺序。
     {{- else -}}
     The fields where people get the official {{ $formCode }} wrong, in form order.
@@ -149,7 +152,7 @@
           <div class="font-mono text-ink" style="font-size: 15px;">{{ $f.example }}</div>
         </div>
         <div class="rounded-sm px-4 py-3" style="border:1px solid rgba(179,58,30,0.30); border-left:3px solid #B33A1E; background:rgba(179,58,30,0.04);">
-          <div class="text-meta font-mono uppercase text-scam mb-1.5">{{ if $isZh }}会被退回{{ else }}Will be rejected{{ end }}</div>
+          <div class="text-meta font-mono uppercase text-scam mb-1.5">{{ if $meta.fields_examples_only }}{{ if $isZh }}需要核对{{ else }}Needs checking{{ end }}{{ else }}{{ if $isZh }}会被退回{{ else }}Will be rejected{{ end }}{{ end }}</div>
           <div class="font-mono text-ink" style="font-size: 15px; text-decoration: line-through; text-decoration-color: #B33A1E;">{{ $f.mistake }}</div>
           <p class="text-xs text-muted m-0 mt-1.5">{{ $mistakeWhy }}</p>
         </div>

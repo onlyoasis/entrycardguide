@@ -1,0 +1,129 @@
+# 普通流程选列八项，分四组；不是官方表单总字段数或步骤数。
+# 顺序依据 stepData 及 BaseInfo、PersonInfo、Step3 的实际控件。
+# 错误区只保留已找到调用路径的英文消息；占位提示另在正文说明。
+
+[[fields]]
+n = "01"
+key = "passport_upload"
+section_en = "Document upload"
+section_zh = "证件上传"
+example = "JPEG / PNG"
+mistake = "PDF"
+mistake_why_en = "the passport control rejects PDF, even a small file; PDF belongs to another upload control"
+mistake_why_zh = "护照控件不接受 PDF，小文件也不例外；PDF 属于另一处上传控件"
+copy_en = "Upload a clear JPEG or PNG of the document data page. The official upload compresses the image before checking a 102400-byte limit. A file below that size alone does not guarantee acceptance."
+copy_zh = "上传清楚的 JPEG 或 PNG 证件资料页图片。官方上传路径先压缩，再检查是否超过 102400 字节；仅低于大小限制不代表一定通过。"
+
+[[fields]]
+n = "02"
+key = "date_of_birth"
+section_en = "Basic information"
+section_zh = "基本信息"
+example = "1991-08-22"
+mistake = "(blank)"
+mistake_why_en = "date of birth is required in the ordinary basic-information component"
+mistake_why_zh = "普通基本信息组件要求填写出生日期"
+copy_en = "Check the birth date read from the document image. Use the date printed in your travel document and the official date control; this example illustrates the year-month-day order."
+copy_zh = "核对照片识别出的出生日期，以旅行证件为准，并使用官方日期控件。示例表示年、月、日的排列方式。"
+
+[[fields]]
+n = "03"
+key = "passport_number"
+section_en = "Basic information"
+section_zh = "基本信息"
+example = "A12345678"
+mistake = "(blank)"
+mistake_why_en = "the document number is required"
+mistake_why_zh = "证件号码为必填"
+copy_en = "Compare the copied number character by character with the document you will use for this trip. Correct an image-recognition error before continuing. The example is illustrative, not a rule for every country's passport format."
+copy_zh = "逐字符核对识别结果与本次旅行使用的证件，继续之前纠正识别错误。示例不代表各国护照号码都采用这种格式。"
+
+[[fields]]
+n = "04"
+key = "contact_number"
+section_en = "Personal information"
+section_zh = "个人信息"
+example = "+14155550100"
+mistake = "(blank)"
+mistake_why_en = "the personal contact number is required"
+mistake_why_zh = "个人联系电话为必填"
+copy_en = "The personal contact input keeps + and digits and has a 30-character limit. Spaces, brackets and hyphens are removed as you type. Check the actual value after pasting; the inviter contact below uses a different rule."
+copy_zh = "个人联系电话输入框只保留 + 和数字，上限 30 字符。输入时会去掉空格、括号和连字符，粘贴后检查实际值。下方邀请方电话使用不同规则。"
+
+[[fields]]
+n = "05"
+key = "email"
+section_en = "Personal information"
+section_zh = "个人信息"
+example = "name@example.com"
+mistake = "name@@example.com"
+mistake_why_en = "a doubled @ fails the ordinary component's email validator"
+mistake_why_zh = "双写 @ 不符合普通组件绑定的邮箱校验规则"
+copy_en = "Email is optional in the ordinary personal-information component. If supplied, it is checked when you leave the field. Use an address you can access. Receipt-email delivery has not been tested for this guide."
+copy_zh = "普通个人信息组件里的邮箱为选填；填写后离开输入框时会校验格式。使用你能收信的地址。本指南没有测试回执邮件送达。"
+
+[[fields]]
+n = "06"
+key = "date_of_entry"
+section_en = "Travel information"
+section_zh = "行程信息"
+example = "2026-09-15"
+mistake = "(blank)"
+mistake_why_en = "the entry date is required before dependent travel selections"
+mistake_why_zh = "入境日期必填，后续部分行程选项也依赖它"
+copy_en = "Use the date you enter China and the official date picker, which stores YYYY-MM-DD. Check the arrival date if the trip crosses midnight. Set the date and city before the later fields that depend on them."
+copy_zh = "使用官方日期控件填写进入中国的日期，其值采用 YYYY-MM-DD。跨午夜行程需核对抵达日。先选日期和城市，再填依赖它们的后续字段。"
+
+[[fields]]
+n = "07"
+key = "address_in_china"
+section_en = "Travel information"
+section_zh = "行程信息"
+example = "No. 6 East Chang'an Street"
+mistake = "(no administrative area selected)"
+mistake_why_en = "the administrative-area selection is required; the street example does not replace that selection"
+mistake_why_zh = "行政区划选择为必填；街道地址示例不能代替这一选择"
+copy_en = "Select the administrative area and enter the address where you will stay. The detailed-address input is limited to 100 bytes. Its street example is placeholder guidance, not a confirmed error for a vague address. Your accommodation is separate from the invitation question."
+copy_zh = "先选行政区划，再填实际住宿地址。详细地址输入框上限 100 字节。街道示例是占位提示，不是已证实的笼统地址错误。住宿地址与邀请信息分开填写。"
+
+[[fields]]
+n = "08"
+key = "entity_contact_information"
+section_en = "Travel information"
+section_zh = "行程信息"
+example = "1088888888"
+mistake = "(inviter contact blank after answering Yes)"
+mistake_why_en = "the contact is required within the invitation branch, not for every traveller"
+mistake_why_zh = "有邀请方时这一分支要求填联系电话，并非所有旅客都要填"
+copy_en = "First answer whether you have an inviting entity or person. If yes, the chosen type requires its name and a contact number. The contact keeps digits only, up to 12 characters. Entity names allow 200 bytes; individual inviter names allow 32 bytes. A hotel booking alone does not make the hotel an inviter."
+copy_zh = "先回答有无中方邀请单位或邀请人。有邀请方时，所选类型要求填写名称和电话；电话只保留数字，最多 12 字符。单位名称上限 200 字节，个人邀请人姓名上限 32 字节。仅预订酒店不代表酒店是邀请方。"
+
+[[errors]]
+code = "Only JPG and PNG image formats are allowed"
+why_en = "The passport upload accepts JPEG/PNG images. PDF support in a separate material-upload control does not apply here."
+why_zh = "护照上传只接受 JPEG/PNG 图片。另一处说明材料控件支持 PDF，不适用于这里。"
+
+[[errors]]
+code = "File size cannot exceed 100kb"
+why_en = "For passport images, this checks the compressed result against 102400 bytes. For PDFs in the separate supporting-material control, it checks the original file. Check which upload raised the message."
+why_zh = "护照图片按压缩后的结果检查 102400 字节限制；另一处说明材料的 PDF 按原文件检查。先确认是哪一个上传控件报错。"
+
+[[errors]]
+code = "Please upload JPG or PNG images or PDF files"
+why_en = "This is the supporting-material upload's format error. It does not mean the passport upload accepts PDF."
+why_zh = "这是说明材料上传的格式错误，不能据此把 PDF 用于护照上传。"
+
+[[errors]]
+code = "The email format is invalid"
+why_en = "The ordinary personal-information component checks a supplied email address on blur. Recheck its spelling and the @ sign."
+why_zh = "普通个人信息组件会在离开输入框时校验已填写的邮箱。检查拼写和 @ 符号。"
+
+[[errors]]
+code = "Please select 'Date of Entry' first"
+why_en = "Complete the entry-date selection before a field that depends on it."
+why_zh = "先选择入境日期，再填依赖这一日期的字段。"
+
+[[errors]]
+code = "Please select 'City of Entry' first"
+why_en = "Complete the entry-city selection before a field that depends on it."
+why_zh = "先选择入境城市，再填依赖这一城市的字段。"

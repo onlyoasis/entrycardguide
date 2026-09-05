@@ -1,0 +1,69 @@
+{
+  "country": "south-africa",
+  "form": "SARS Traveller Declaration",
+  "officialUrl": "https://tools.sars.gov.za/sarsonlinequery/traveller",
+  "lastVerified": "2026-09-05",
+  "source": "2026-09-05 核查官方公开入口 https://tools.sars.gov.za/sarsonlinequery/traveller 、FAQ https://www.sars.gov.za/travellerdeclaration/faqs-for-the-required-online-traveller-declarations-from-1-july-2026/ 与官方指南 https://www.sars.gov.za/wp-content/uploads/Ops/Guides/SC-PA-01-12-SATMS-Through-SARS-Website-External-Guide.pdf 。这里仅列12项准备资料，不是完整表单或校验规则；未提交申报，未核验全部条件分支，不接入本地 validator。",
+  "fields": {
+    "declaration_type": {
+      "type": "text",
+      "label": "Full or Nil / 申报类型",
+      "help": "Compare the Full and Nil descriptions with what you carry. Nil is for no declarable goods; it does not let you skip filing. This example describes a situation, not text to paste."
+    },
+    "travel_mode": {
+      "type": "text",
+      "label": "Travel mode and port / 出行方式与口岸",
+      "help": "Choose the actual travel mode and port. Prepare the corresponding flight, train, vessel or vehicle details. An air traveller checks the booking; a road traveller should not invent a flight number."
+    },
+    "travel_document": {
+      "type": "text",
+      "label": "Travel document / 旅行证件",
+      "help": "Prepare the document type, number and issuing country from your travel document, not an old application. This guide does not impose a passport-number length or require a South African ID from every foreign visitor."
+    },
+    "nationality": {
+      "type": "text",
+      "label": "Nationality / 国籍",
+      "help": "Use the nationality in your travel document. Issuing country is a separate question. Do not substitute the country where you live merely because it appears in your address."
+    },
+    "traveller_name": {
+      "type": "text",
+      "label": "First name and surname / 名与姓",
+      "help": "Prepare First Name and Surname as shown in your travel document. Check spelling, not a nickname. For a single name or characters the page cannot accept, ask SARS; those branches have not been verified for this guide."
+    },
+    "date_of_birth": {
+      "type": "text",
+      "label": "Date of birth / 出生日期",
+      "help": "Use your document's birth date. The current first screen shows CCYY/MM/DD, illustrated by 1991/08/22. Follow its date control; this example does not prove every accepted format. Do not enter your travel date here."
+    },
+    "contact_details": {
+      "type": "text",
+      "label": "Contact details / 联系方式",
+      "help": "Prepare an accessible email and a mobile number if you have one. The rules allow a port email arranged by Customs in relevant cases; ask for help rather than inventing one. Occupation is supplied where applicable, not assumed mandatory for everyone."
+    },
+    "stay_address": {
+      "type": "text",
+      "label": "Address for this journey / 本次住宿地址",
+      "help": "For arrival, prepare your South African accommodation address. For departure, rule 15.04(a)(iv) asks for the address where you will stay in the destination country. Check street, city and postal details against the booking. A fixed screen heading does not remove this difference."
+    },
+    "travel_capacity": {
+      "type": "text",
+      "label": "Travel capacity and purpose / 身份与目的",
+      "help": "Indicate whether you travel personally or for an entity, then your actual purpose. A personal holiday is the example. Prepare entity details if you represent one; do not invent a company to complete a conditional section."
+    },
+    "itinerary": {
+      "type": "text",
+      "label": "Itinerary and dates / 行程与日期",
+      "help": "Prepare origin, destination, dates and transit points where applicable. Use the current booking, not a cancelled one; do not invent a transit country for a direct journey. Inbound connections use the final leg directly to South Africa for the 24-hour filing window."
+    },
+    "companions": {
+      "type": "text",
+      "label": "Travelling companions / 同行人",
+      "help": "If you have companions, prepare their names, document numbers and issuing countries. Each person needs declaration coverage, including children and infants. A parent or legal guardian may submit for a child; do not assume adding names completes every adult's declaration."
+    },
+    "goods_currency": {
+      "type": "text",
+      "label": "Goods and currency / 货物与货币",
+      "help": "Answer according to what you carry. Where prompted, prepare descriptions, quantities or amounts, values, source and serial numbers. Nil is inappropriate for declarable items. Check current SARS currency rules; this guide does not combine different thresholds into one number."
+    }
+  }
+}
