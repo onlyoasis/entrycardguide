@@ -14,8 +14,7 @@
  * (english name, chinese name, form code, key, official host), built at build
  * time from the country roster. Adding a country needs no change here.
  *
- * Progressive enhancement: with JS off the input is inert and every country
- * stays visible.
+ * 无 JS 时隐藏搜索，国家链接和原生展开列表仍可浏览。
  */
 (() => {
   const input = document.querySelector<HTMLInputElement>('[data-country-search-input]');
@@ -71,4 +70,5 @@
       input.blur();
     }
   });
+  input.closest<HTMLElement>('[data-country-search]')!.hidden = false;
 })();

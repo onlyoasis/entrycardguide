@@ -50,7 +50,7 @@ module.exports = {
     },
     maxWidth: {
       prose: '680px',
-      container: '1120px',
+      container: '1440px', // 2026-09-05：按复查要求统一目录、页头、正文与页脚宽度
       rail: '280px',
     },
     extend: {

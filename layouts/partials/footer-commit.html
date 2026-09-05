@@ -6,7 +6,7 @@
     {{- /* Brand */ -}}
     <div>
       <div class="font-serif font-medium text-ink" style="font-size: 22px;">entrycardguide<span class="text-verified">·</span></div>
-      <p class="text-small text-muted mt-2 max-w-[320px]">{{ i18n "footer_brand_tagline" }}</p>
+      <p class="text-small text-muted mt-2">{{ i18n "footer_brand_tagline" }}</p>
     </div>
 
     {{- /* Popular countries — first 6 of the shared roster, then the full
@@ -37,7 +37,7 @@
 
   {{- /* Bottom bar — money disclosure + build/commit. Trust signals kept intact. */ -}}
   <div class="mx-auto max-w-container px-md pb-lg pt-6 border-t border-rule flex justify-between items-start gap-md flex-wrap text-xs text-muted">
-    <p class="m-0 max-w-[600px]">{{ i18n "footer_money_disclosure" }}
+    <p class="m-0 flex-1 basis-[30rem] min-w-0">{{ i18n "footer_money_disclosure" }}
       <a href="{{ cond $isZh "/zh/about/" "/about/" }}" class="text-ink">{{ i18n "footer_full_disclosure" }}</a>.</p>
     <div class="font-mono">
       {{- i18n "footer_built_with" }}

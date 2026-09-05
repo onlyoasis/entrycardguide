@@ -42,12 +42,12 @@
     {{ .Title }}
   </h1>
   {{- with .Params.kicker }}
-  <p class="text-muted mt-lg max-w-[720px]" style="font-size: 21px; line-height: 1.5;">
+  <p class="text-muted mt-lg" style="font-size: 21px; line-height: 1.5;">
     {{ . }}
   </p>
   {{- else }}
   {{- with $news }}
-  <p class="text-muted mt-lg max-w-[720px]" style="font-size: 21px; line-height: 1.5;">
+  <p class="text-muted mt-lg" style="font-size: 21px; line-height: 1.5;">
     {{ if $isZh }}{{ .pct }} 的外国入境者据报曾通过非官方网站填写这份免费表单。这是官方网址、每一个字段和如何识别真假。{{ else }}{{ .pct }} of foreign arrivals were reported using non-official sites for this free form. Here is the official site, every field it asks, and how to tell real from fake.{{ end }}
   </p>
   {{- end }}
@@ -103,7 +103,7 @@
 {{- $quote := cond $isZh .quote_zh .quote_en -}}
 {{- $attr := cond $isZh .attribution_zh .attribution_en -}}
 <section class="-mx-md px-md py-xl border-y border-rule" style="background:#F4F2EC;">
-  <div class="grid grid-cols-1 md:grid-cols-[160px_1fr] gap-8 max-w-[920px]">
+  <div class="grid grid-cols-1 md:grid-cols-[160px_1fr] gap-8">
     <div class="text-meta font-mono uppercase text-scam">
       <span class="inline-block w-[6px] h-[6px] rounded-full bg-scam align-baseline mr-2"></span>
       {{ if $isZh }}为什么重要{{ else }}Why this matters{{ end }}

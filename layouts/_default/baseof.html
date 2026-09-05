@@ -7,7 +7,7 @@
   <a href="#main" class="skip-link">{{ i18n "skip_to_content" }}</a>
   {{- partial "trust-bar.html" . -}}
   {{- partial "header.html" . -}}
-  <main id="main" tabindex="-1" class="mx-auto px-md {{ if .HasShortcode "official-directory" }}directory-page{{ else }}max-w-container{{ end }}">
+  <main id="main" tabindex="-1" class="mx-auto max-w-container px-md">
     {{- block "main" . }}{{- end }}
   </main>
   {{- partial "footer-commit.html" . -}}

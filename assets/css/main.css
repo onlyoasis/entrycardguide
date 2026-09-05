@@ -39,6 +39,11 @@
     overflow-wrap: anywhere;
   }
 
+  input::placeholder, textarea::placeholder {
+    color: theme('colors.muted');
+    opacity: 1;
+  }
+
   :where(a, button, summary, input, select, textarea):focus-visible {
     outline: 2px solid theme('colors.verified');
     outline-offset: 3px;
@@ -146,9 +151,6 @@
   .home-hero h1 {
     font-size: clamp(36px, 6vw, 76px);
   }
-  .page-hero > p {
-    max-width: 760px;
-  }
 
   .prose {
     --tw-prose-body: theme('colors.ink');
@@ -167,9 +169,6 @@
   .prose.prose-lg {
     font-size: 18px;
     line-height: 1.75;
-  }
-  .prose > :where(p, ul, ol, blockquote, h2, h3, h4) {
-    max-width: 760px;
   }
 
   .article-layout {
@@ -230,6 +229,9 @@
     outline: 2px solid theme('colors.verified');
     outline-offset: 3px;
   }
+  [data-country-search][hidden] {
+    display: none;
+  }
 
   .content-table-scroll {
     @apply overflow-x-auto my-lg;
@@ -241,19 +243,6 @@
   .content-table-scroll table {
     min-width: 36rem;
     margin: 0;
-  }
-
-  /* 目录使用宽表格；说明文字保留原有阅读宽度。 */
-  .directory-page {
-    max-width: 1440px;
-  }
-
-  .directory-page .prose {
-    max-width: none;
-  }
-
-  .directory-page .prose > :not(.official-directory) {
-    max-width: 760px;
   }
 
   .official-directory {
@@ -356,7 +345,7 @@
     @apply text-center text-muted text-small py-10 border-b border-rule;
   }
 
-  @media (max-width: 1199px) {
+  @media (max-width: 1130px) {
     .directory-scroll-hint { display: block; }
   }
 

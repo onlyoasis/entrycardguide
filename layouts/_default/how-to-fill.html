@@ -63,7 +63,7 @@
          web validation, or because the guide page runs no validator — sets
          fields_intro_en/zh in [meta] to say what it actually offers. */ -}}
   {{- $intro := cond $isZh $meta.fields_intro_zh $meta.fields_intro_en -}}
-  <p class="text-muted mt-lg max-w-[720px]" style="font-size: 21px; line-height: 1.5;">
+  <p class="text-muted mt-lg" style="font-size: 21px; line-height: 1.5;">
     {{- if $intro -}}
     {{ $intro | safeHTML }}
     {{- else if $isZh -}}
@@ -132,7 +132,7 @@
         <h3 class="font-serif font-medium m-0 mb-3" style="font-size: 26px; letter-spacing: -0.01em; font-variation-settings: 'opsz' 144;">
           {{ $rule.label }}
         </h3>
-        <p class="m-0 max-w-[560px]" style="font-size: 16px; line-height: 1.6;">{{ $copy }}</p>
+        <p class="m-0" style="font-size: 16px; line-height: 1.6;">{{ $copy }}</p>
 
         <div class="mt-5 flex flex-wrap gap-1.5">
           {{- with $rule.pattern }}
@@ -271,7 +271,7 @@
     The walkthrough, the in-browser validator, and the full common-errors list.
     {{- end -}}
   </h2>
-  <article class="prose prose-lg max-w-[760px]">
+  <article class="prose prose-lg max-w-none">
     {{ . }}
   </article>
 </section>

@@ -27,11 +27,11 @@
         {{ if $isZh }}错误 404{{ else }}Error 404{{ end }}
       </div>
 
-      <h1 class="font-serif font-medium m-0 mb-8 max-w-[980px]" style="font-size: clamp(56px, 10vw, 120px); line-height: 1; letter-spacing: -0.03em; font-variation-settings: 'opsz' 144;">
+      <h1 class="font-serif font-medium m-0 mb-8" style="font-size: clamp(56px, 10vw, 120px); line-height: 1; letter-spacing: -0.03em; font-variation-settings: 'opsz' 144;">
         {{ if $isZh }}这个页面没通过入境审查。{{ else }}This page didn't make it through immigration.{{ end }}
       </h1>
 
-      <p class="text-muted mb-lg max-w-[640px]" style="font-size: 22px; line-height: 1.5;">
+      <p class="text-muted mb-lg" style="font-size: 22px; line-height: 1.5;">
         {{- if $isZh -}}
         要么我们把它挪走了，要么这个网址从一开始就是假的。如果你是从一个"要求你验证身份"的诈骗站点跳过来的——直接关掉那个标签页。我们不运营任何身份验证流程。
         {{- else -}}
@@ -51,7 +51,7 @@
         </a>
       </div>
 
-      <div class="pt-md border-t border-rule max-w-[720px]">
+      <div class="pt-md border-t border-rule">
         <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}最近移动过的路径{{ else }}Recently moved{{ end }}</div>
         <ul class="list-none p-0 m-0 grid gap-2">
           <li class="flex items-baseline gap-2 flex-wrap">
@@ -74,5 +74,6 @@
     </section>
   </main>
   {{- partial "footer-commit.html" . -}}
+  {{- partial "nav-script.html" . -}}
 </body>
 </html>

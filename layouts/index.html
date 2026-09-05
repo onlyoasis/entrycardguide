@@ -63,7 +63,7 @@
       {{ if $isZh }}反诈骗指南 · 开源 · 独立{{ else }}Anti-scam guide · open source · independent{{ end }}
     </div>
 
-    <h1 class="font-serif font-medium m-0 max-w-[980px]" style="line-height: 1.04; letter-spacing: -0.025em; font-variation-settings: 'opsz' 144; ">
+    <h1 class="font-serif font-medium m-0" style="line-height: 1.04; letter-spacing: -0.025em; font-variation-settings: 'opsz' 144; ">
       {{- if $isZh -}}
       每个国家的入境卡都是<span class="text-verified">免费</span>的。每个国家只有<mark class="whitespace-nowrap">一个网址</mark>是真的。
       {{- else -}}
@@ -71,7 +71,7 @@
       {{- end -}}
     </h1>
 
-    <p class="text-muted mt-lg max-w-[720px]" style="font-size: 22px; line-height: 1.5;">
+    <p class="text-muted mt-lg" style="font-size: 22px; line-height: 1.5;">
       {{- if $isZh -}}
       我们公布每个国家的官方政府网址，逐字段解释怎么填，并附上官方网站返回的原话错误信息。不需要账号，不存数据，从未拿过任何签证中介一分钱。
       {{- else -}}
@@ -129,7 +129,7 @@
       {{ if $isZh }}这个网站为什么存在。{{ else }}Why this site exists.{{ end }}
     </h2>
   </div>
-  <div class="prose max-w-[640px]">
+  <div class="prose max-w-none">
     {{ .Content }}
   </div>
 </section>
@@ -153,7 +153,7 @@
          Filters the grid + mobile list entirely client-side via
          assets/js/search.ts (zero network requests). With JS off it is inert and
          every country stays visible. */ -}}
-  <div data-country-search class="flex items-center gap-3 bg-white border border-ink rounded-md" style="padding: 13px 18px;">
+  <div data-country-search hidden class="flex items-center gap-3 bg-white border border-ink rounded-md" style="padding: 13px 18px;">
     <span class="font-mono text-muted" style="font-size: 14px;" aria-hidden="true">⌕</span>
     <input type="text" data-country-search-input autocomplete="off" spellcheck="false"
       aria-label="{{ if $isZh }}搜索国家{{ else }}Search countries{{ end }}" aria-controls="country-grid country-list"
@@ -257,7 +257,7 @@
       <h3 class="font-serif font-medium mb-3" style="font-size: 30px; letter-spacing: -0.01em; font-variation-settings: 'opsz' 144; margin-top: 0;">
         {{ if $isZh }}我不知道该填什么。<span class="text-muted">替我决定。</span>{{ else }}I don't know what to fill. <span class="text-muted">Decide for me.</span>{{ end }}
       </h3>
-      <p class="m-0 mb-5 max-w-[480px]">
+      <p class="m-0 mb-5">
         {{- if $isZh -}}
         选好目的地，回答 1–2 个关于你怎么入境和你国籍的问题。我们会返回一张卡片：列出你真正需要填的所有表、官方网址、政府收费（如果有），以及逐字段指南的链接。
         {{- else -}}
@@ -278,7 +278,7 @@
       <h3 class="font-serif font-medium mb-3" style="font-size: 30px; letter-spacing: -0.01em; font-variation-settings: 'opsz' 144; margin-top: 0;">
         {{ if $isZh }}我只想要官方网址。<span class="text-muted">把链接给我。</span>{{ else }}I just need the official URL. <span class="text-muted">Hand me the link.</span>{{ end }}
       </h3>
-      <p class="m-0 mb-5 max-w-[480px]">
+      <p class="m-0 mb-5">
         {{- if $isZh -}}
         目录页。一页可以粘贴到论坛回复、聊天框或旅行社邮件里。每个链接都带 <code>last_verified</code> 日期。每个 URL 都以正确的政府后缀结尾。没有一个是中介站。
         {{- else -}}
@@ -318,7 +318,7 @@
       <h2 class="font-serif font-medium m-0" style="font-size: 36px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144;">
         {{ if $isZh }}别信文字，去查文件。{{ else }}Don't trust the writing. Check the files.{{ end }}
       </h2>
-      <p class="text-small text-muted mt-5 max-w-[280px]">
+      <p class="text-small text-muted mt-5">
         {{- if $isZh -}}任何人都能用这五条独立路径核对本站每一条说法。{{- else -}}Five independent paths anyone can use to verify every claim on this site.{{- end -}}
       </p>
     </div>

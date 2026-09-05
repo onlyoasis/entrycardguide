@@ -61,7 +61,7 @@
   </h1>
 
   {{- with .Params.kicker }}
-  <p class="text-muted mt-lg max-w-[720px]" style="font-size: 21px; line-height: 1.5;">{{ . }}</p>
+  <p class="text-muted mt-lg" style="font-size: 21px; line-height: 1.5;">{{ . }}</p>
   {{- end }}
 
   <div class="mt-lg pt-4 border-t border-rule flex items-baseline gap-4 flex-wrap">
@@ -113,7 +113,7 @@
           <a href="{{ .Permalink }}" class="text-ink no-underline hover:underline underline-offset-4">{{ .Title }}</a>
         </h3>
         {{- with .Params.kicker }}
-        <p class="text-small text-muted m-0 max-w-[640px]">{{ . }}</p>
+        <p class="text-small text-muted m-0">{{ . }}</p>
         {{- end }}
       </div>
       <div class="font-mono text-xs text-muted text-left md:text-right">
