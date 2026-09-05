@@ -36,7 +36,7 @@
 {{- /* Hero — descriptor and "free vs paid" framing both vary per country.
        Vietnam's E-Visa is the one paid program; calling it "digital arrival
        card" or "the free form" would publish false pricing. */ -}}
-<section class="pt-22 pb-md">
+<section class="page-hero pb-md">
   {{- if $countryMeta }}
   <div class="text-meta font-mono uppercase text-muted mb-5">
     <span aria-hidden="true">{{ $countryMeta.flag }}</span>
@@ -44,7 +44,7 @@
   </div>
   {{- end }}
 
-  <h1 class="font-serif font-medium m-0 max-w-[880px]" style="font-size: clamp(40px, 6vw, 64px); line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
+  <h1 class="font-serif font-medium m-0" style="line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
     {{- if $countryMeta -}}
       {{- if $isPaid -}}
         {{- if eq $formType "travel_authorization" -}}

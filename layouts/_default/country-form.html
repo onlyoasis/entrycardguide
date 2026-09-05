@@ -33,12 +33,12 @@
 </nav>
 
 {{- /* Hero ----------------------------------------------------------- */ -}}
-<article class="pt-22 pb-md max-w-[920px]">
+<article class="page-hero pb-md">
   <div class="text-meta font-mono uppercase text-muted mb-5">
     <span aria-hidden="true">{{ $meta.flag }}</span>
     {{ $countryName }} {{ $formCode }} · {{ $since }}
   </div>
-  <h1 class="font-serif font-medium m-0" style="font-size: clamp(36px, 5.6vw, 56px); line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
+  <h1 class="font-serif font-medium m-0" style="line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
     {{ .Title }}
   </h1>
   {{- with .Params.kicker }}
@@ -60,8 +60,8 @@
 </article>
 
 {{- /* Two-column body + sticky TOC aside ---------------------------- */ -}}
-<div class="pb-xl grid grid-cols-1 lg:grid-cols-[1fr_220px] gap-12 lg:gap-16">
-  <article class="prose prose-lg max-w-[680px]">
+<div class="article-layout pb-xl">
+  <article class="prose prose-lg max-w-none">
     {{ .Content }}
   </article>
 

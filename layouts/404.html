@@ -17,9 +17,10 @@
   <meta name="theme-color" content="#0F7356">
 </head>
 <body class="min-h-screen antialiased">
+  <a href="#main" class="skip-link">{{ i18n "skip_to_content" }}</a>
   {{- partial "trust-bar.html" . -}}
   {{- partial "header.html" . -}}
-  <main id="main" class="mx-auto max-w-container px-md">
+  <main id="main" tabindex="-1" class="mx-auto max-w-container px-md">
     <section class="py-22 min-h-[600px] flex flex-col justify-center">
       <div class="text-meta font-mono uppercase text-scam mb-8 inline-flex items-center gap-2">
         <span class="inline-block w-[6px] h-[6px] rounded-full bg-scam"></span>

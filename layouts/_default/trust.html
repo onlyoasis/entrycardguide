@@ -11,11 +11,11 @@
 </nav>
 
 {{- /* Hero ----------------------------------------------------------- */ -}}
-<section class="pt-22 pb-xl max-w-[920px]">
+<section class="page-hero pb-lg">
   <div class="text-meta font-mono uppercase text-muted mb-5">
     {{ if $isZh }}方法论 · 完整版{{ else }}Methodology · long version{{ end }}
   </div>
-  <h1 class="font-serif font-medium m-0" style="font-size: clamp(36px, 5.6vw, 56px); line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
+  <h1 class="font-serif font-medium m-0" style="line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
     {{ .Title }}
   </h1>
   {{- with .Params.kicker }}

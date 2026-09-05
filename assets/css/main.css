@@ -6,6 +6,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 自定义 maxWidth 配置未包含 none；恢复模板已使用的标准工具类。 */
+@layer utilities {
+  .max-w-none { max-width: none; }
+}
+
 /* ---------------------------------------------------------------- */
 /* Base layer — editorial defaults                                   */
 /* ---------------------------------------------------------------- */
@@ -28,6 +33,26 @@
 
   body {
     min-height: 100vh;
+  }
+
+  main, footer {
+    overflow-wrap: anywhere;
+  }
+
+  :where(a, button, summary, input, select, textarea):focus-visible {
+    outline: 2px solid theme('colors.verified');
+    outline-offset: 3px;
+  }
+
+  :where(h1, h2, h3, h4) {
+    scroll-margin-top: 1.5rem;
+  }
+
+  h1 mark {
+    font-family: inherit;
+    font-size: inherit;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
   }
 
   /* Reduce motion: collapse the 2 allowed transitions to 0 */
@@ -103,6 +128,121 @@
 /* ---------------------------------------------------------------- */
 
 @layer components {
+  .skip-link {
+    @apply absolute z-30 top-4 left-4 bg-ink text-paper px-4 py-3 text-small;
+    transform: translateY(-200%);
+  }
+  .skip-link:focus {
+    transform: none;
+  }
+
+  .page-hero {
+    padding-top: clamp(2rem, 5vw, 5.5rem);
+  }
+  .page-hero h1 {
+    font-size: clamp(32px, 4.5vw, 56px);
+    text-wrap: pretty;
+  }
+  .home-hero h1 {
+    font-size: clamp(36px, 6vw, 76px);
+  }
+  .page-hero > p {
+    max-width: 760px;
+  }
+
+  .prose {
+    --tw-prose-body: theme('colors.ink');
+    --tw-prose-headings: theme('colors.ink');
+    --tw-prose-links: theme('colors.ink');
+    --tw-prose-bold: theme('colors.ink');
+    --tw-prose-code: theme('colors.ink');
+    --tw-prose-quotes: theme('colors.ink');
+    --tw-prose-counters: theme('colors.muted');
+    --tw-prose-bullets: theme('colors.muted');
+    --tw-prose-hr: theme('colors.rule');
+    --tw-prose-quote-borders: theme('colors.rule');
+    --tw-prose-th-borders: theme('colors.rule');
+    --tw-prose-td-borders: theme('colors.rule');
+  }
+  .prose.prose-lg {
+    font-size: 18px;
+    line-height: 1.75;
+  }
+  .prose > :where(p, ul, ol, blockquote, h2, h3, h4) {
+    max-width: 760px;
+  }
+
+  .article-layout {
+    @apply grid gap-10;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .article-layout > * {
+    min-width: 0;
+  }
+  @screen lg {
+    .article-layout {
+      grid-template-columns: minmax(0, 1fr) 240px;
+      column-gap: 3rem;
+    }
+  }
+
+  .field-card {
+    @apply grid gap-5 p-5;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .field-card > * {
+    min-width: 0;
+  }
+  .field-examples {
+    align-self: start;
+  }
+  @screen md {
+    .field-card {
+      @apply gap-6 p-6;
+      grid-template-columns: 2.5rem minmax(0, 1fr);
+    }
+    .field-examples {
+      grid-column: 2;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @screen lg {
+    .field-card {
+      grid-template-columns: 2.5rem minmax(0, 1.2fr) minmax(0, 1fr);
+    }
+    .field-examples {
+      grid-column: auto;
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .country-list-row {
+    @apply grid gap-x-3 gap-y-1;
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+  .country-list-row > :first-child {
+    grid-row: span 2;
+  }
+  .country-list-fee {
+    grid-column: 2;
+  }
+  [data-country-search]:focus-within {
+    outline: 2px solid theme('colors.verified');
+    outline-offset: 3px;
+  }
+
+  .content-table-scroll {
+    @apply overflow-x-auto my-lg;
+  }
+  .content-table-scroll:focus-visible {
+    outline: 2px solid theme('colors.verified');
+    outline-offset: 3px;
+  }
+  .content-table-scroll table {
+    min-width: 36rem;
+    margin: 0;
+  }
+
   /* 目录使用宽表格；说明文字保留原有阅读宽度。 */
   .directory-page {
     max-width: 1440px;
@@ -113,7 +253,7 @@
   }
 
   .directory-page .prose > :not(.official-directory) {
-    max-width: theme('maxWidth.prose');
+    max-width: 760px;
   }
 
   .official-directory {
@@ -241,8 +381,11 @@
 
   /* Official URL callout */
   .official-callout {
-    @apply border border-verified rounded-md p-md my-lg flex gap-md;
+    @apply border border-verified rounded-md p-5 sm:p-md my-lg flex flex-col sm:flex-row items-start gap-3 sm:gap-md;
     border-left-width: 4px;
+  }
+  .official-callout > div {
+    min-width: 0;
   }
 
   .official-badge {
@@ -251,23 +394,58 @@
 
   /* Validator tool container — white bg = only place white is used */
   .validator {
-    @apply border border-rule rounded-md p-6 my-lg bg-white;
+    @apply border border-rule rounded-md p-4 sm:p-6 my-lg bg-white;
   }
 
   .validator-row {
-    @apply grid grid-cols-[180px_1fr_80px] gap-md items-center py-sm border-t border-rule;
+    @apply grid gap-x-3 gap-y-2 items-center py-4 border-t border-rule;
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+  .validator-err-msg,
+  .validator-help {
+    grid-column: 1 / -1;
+  }
+  .validator-row label {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .validator-row > * {
+    min-width: 0;
+  }
+  .validator-row .validator-input {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+  .validator-row .validator-state {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  @screen sm {
+    .validator-row label {
+      grid-column: 1 / -1;
+    }
+    .validator-row .validator-input {
+      grid-column: 1;
+    }
+    .validator-row .validator-state {
+      grid-row: 2;
+    }
   }
   .validator-row:last-of-type {
     @apply border-b;
   }
 
   .validator-input {
-    @apply font-mono text-mono border border-rule rounded-sm px-3 py-2 bg-paper text-ink w-full;
+    @apply font-mono border border-rule rounded-sm px-3 py-2 bg-paper text-ink w-full;
+    font-size: 16px;
+    min-height: 44px;
     font-variant-numeric: tabular-nums;
   }
 
-  .validator-input:focus {
-    @apply outline-none border-ink;
+  .validator-input:focus-visible {
+    @apply border-ink;
+    outline: 2px solid theme('colors.verified');
+    outline-offset: 3px;
   }
 
   .validator-state {
@@ -375,7 +553,7 @@
   }
 
   .decide-form-header {
-    @apply flex justify-between items-baseline gap-md mb-1;
+    @apply flex flex-wrap justify-between items-baseline gap-x-md gap-y-2 mb-1;
   }
   .decide-form-name {
     @apply font-serif font-medium text-h2 text-ink;

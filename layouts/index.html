@@ -57,17 +57,17 @@
 {{- /* Hero ─ editorial headline + provenance strip                  */ -}}
 {{- /* ============================================================ */ -}}
 <section>
-  <div class="pt-22 pb-xl">
+  <div class="page-hero home-hero pb-xl">
     <div class="text-meta text-scam font-mono uppercase mb-md inline-flex items-center gap-2">
       <span class="inline-block w-[6px] h-[6px] rounded-full bg-scam"></span>
       {{ if $isZh }}反诈骗指南 · 开源 · 独立{{ else }}Anti-scam guide · open source · independent{{ end }}
     </div>
 
-    <h1 class="font-serif font-medium m-0 max-w-[980px]" style="font-size: clamp(40px, 6.2vw, 80px); line-height: 1.04; letter-spacing: -0.025em; font-variation-settings: 'opsz' 144; text-wrap: balance;">
+    <h1 class="font-serif font-medium m-0 max-w-[980px]" style="line-height: 1.04; letter-spacing: -0.025em; font-variation-settings: 'opsz' 144; ">
       {{- if $isZh -}}
-      每个国家的入境卡都是<span class="text-verified">免费</span>的。每个国家只有<mark>一个网址</mark>是真的。
+      每个国家的入境卡都是<span class="text-verified">免费</span>的。每个国家只有<mark class="whitespace-nowrap">一个网址</mark>是真的。
       {{- else -}}
-      Every digital arrival card is <span class="text-verified">free</span>. And only <mark>one URL</mark> per country is real.
+      Every digital arrival card is <span class="text-verified">free</span>. And only <mark class="whitespace-nowrap">one URL</mark> per country is real.
       {{- end -}}
     </h1>
 
@@ -158,14 +158,14 @@
     <input type="text" data-country-search-input autocomplete="off" spellcheck="false"
       aria-label="{{ if $isZh }}搜索国家{{ else }}Search countries{{ end }}" aria-controls="country-grid country-list"
       placeholder="{{ if $isZh }}搜索 {{ $countryCount }} 个国家 — 国名、表单码或网址。试试 tdac 或 japan。{{ else }}Search {{ $countryCount }} countries — country, form code, or URL. Try tdac or japan.{{ end }}"
-      class="flex-1 min-w-0 bg-transparent border-0 outline-none text-ink" style="font-size: 15px;" />
+      class="flex-1 min-w-0 bg-transparent border-0 outline-none text-ink" style="font-size: 16px;" />
     <span class="font-mono text-xs text-muted border border-rule rounded-sm hidden sm:inline" style="padding: 2px 7px;" aria-hidden="true">/</span>
   </div>
 
   {{- /* Sort note + colour legend */ -}}
   <div class="flex items-center justify-between flex-wrap gap-x-4 gap-y-2 font-mono text-meta uppercase text-muted" style="letter-spacing: 0.06em; margin: 20px 0 12px;">
     <span>{{ if $isZh }}按访问量排序{{ else }}Sorted by most-visited{{ end }}</span>
-    <span class="inline-flex items-center gap-1.5">
+    <span class="inline-flex flex-wrap items-center gap-1.5">
       <span class="inline-block w-[5px] h-[5px] rounded-full bg-verified" aria-hidden="true"></span>{{ if $isZh }}免费政府表单{{ else }}Free govt form{{ end }}
       <span class="inline-block w-[5px] h-[5px] rounded-full bg-muted ml-3" aria-hidden="true"></span>{{ if $isZh }}政府收费 · 仍非中介{{ else }}Govt fee · still not a middleman{{ end }}
     </span>
@@ -175,7 +175,7 @@
          card can wrap, no matter how long a name or how many countries. Paper bg
          (white stays reserved for the validator/search); 1px rule border → ink on
          hover, 80ms, no shadow, no transform. */ -}}
-  <div id="country-grid" data-country-grid class="hidden md:grid grid-cols-3 lg:grid-cols-5 gap-2">
+  <div id="country-grid" data-country-grid class="hidden md:grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2">
     {{- range $countries -}}
       {{- $countryData := index hugo.Data.official_urls .key -}}
       {{- $official := index $countryData .formKey -}}
@@ -216,11 +216,11 @@
       <summary class="flex items-center justify-center gap-2 cursor-pointer list-none bg-paper font-semibold text-ink [&::-webkit-details-marker]:hidden" style="font-size: 14px; padding: 14px;" data-label-open="{{ if $isZh }}收起 ↑{{ else }}Show fewer ↑{{ end }}">{{ if $isZh }}显示全部 {{ $countryCount }} 个国家 ↓{{ else }}Show all {{ $countryCount }} countries ↓{{ end }}</summary>
       {{- end }}
     <a href="{{ $countryPath }}" data-country-card data-search="{{ $terms }}"
-       class="flex items-center gap-3 text-ink no-underline border-b border-rule hover:bg-rule"
+       class="country-list-row text-ink no-underline border-b border-rule hover:bg-rule"
        style="min-height: 48px; padding: 13px 14px; transition: background-color 80ms ease;">
       <span style="font-size: 20px; line-height: 1;" aria-hidden="true">{{ $c.flag }}</span>
       <span class="font-semibold" style="font-size: 15px;">{{ $name }}</span>
-      <span class="ml-auto inline-flex items-center gap-1.5">
+      <span class="country-list-fee inline-flex items-center gap-1.5">
         <span class="inline-block w-[5px] h-[5px] rounded-full {{ if eq $c.fee "free" }}bg-verified{{ else }}bg-muted{{ end }}" aria-hidden="true"></span>
         <span class="font-mono uppercase {{ if eq $c.fee "free" }}text-verified{{ else }}text-muted{{ end }}" style="font-size: 10px; letter-spacing: 0.06em;">{{ if eq $c.fee "free" }}{{ if $isZh }}免费{{ else }}Free{{ end }}{{ else }}{{ cond $isZh (index $countryData.meta "fee_zh") (index $countryData.meta "fee_en") }}{{ end }}</span>
       </span>
@@ -365,9 +365,9 @@
 
   <div class="border-t border-rule">
     {{- range $recent }}
-    <div class="grid grid-cols-[120px_1fr] md:grid-cols-[160px_1fr] gap-x-md py-4 border-b border-rule items-baseline">
+    <div class="grid grid-cols-1 md:grid-cols-[120px_minmax(0,1fr)] gap-x-md gap-y-2 py-4 border-b border-rule items-baseline">
       <div class="font-mono text-xs text-muted">{{ .date }}</div>
-      <div class="grid grid-cols-[120px_1fr] md:grid-cols-[140px_1fr] gap-md items-baseline">
+      <div class="grid grid-cols-1 lg:grid-cols-[140px_minmax(0,1fr)] gap-y-1 lg:gap-x-md items-baseline">
         <span class="text-small font-semibold">{{ .country }}</span>
         <span>{{ .summary }}</span>
       </div>

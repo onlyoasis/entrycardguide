@@ -46,12 +46,12 @@
 </nav>
 
 {{- /* Hero ----------------------------------------------------------- */ -}}
-<article class="pt-22 pb-md max-w-[920px]">
+<article class="page-hero pb-md">
   <div class="text-meta font-mono uppercase text-muted mb-5">
     <span aria-hidden="true">{{ $meta.flag }}</span>
     {{ $countryName }} {{ $formCode }} · {{ if $isZh }}字段指南{{ else }}field guide{{ end }} · {{ $timeNeeded }}
   </div>
-  <h1 class="font-serif font-medium m-0" style="font-size: clamp(36px, 5.6vw, 56px); line-height: 1.06; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
+  <h1 class="font-serif font-medium m-0" style="line-height: 1.06; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
     {{- if $isZh -}}
     官方 {{ $formCode }} 表单里最容易出错的字段，按表单实际顺序。
     {{- else -}}
@@ -123,7 +123,7 @@
     </div>
     {{- end }}
 
-    <div class="grid grid-cols-1 md:grid-cols-[56px_1fr_380px] gap-8 px-7 py-8 {{ if lt (add $i 1) (len $fields) }}border-b border-rule{{ end }}">
+    <div class="field-card {{ if lt (add $i 1) (len $fields) }}border-b border-rule{{ end }}">
       <div class="font-serif font-medium text-ink" style="font-size: 32px; letter-spacing: -0.01em; line-height: 1; font-variation-settings: 'opsz' 144;">
         {{ $f.n }}
       </div>
@@ -148,7 +148,7 @@
         </div>
       </div>
 
-      <aside class="grid gap-3">
+      <aside class="field-examples grid gap-3">
         <div class="rounded-sm px-4 py-3" style="border:1px solid rgba(15,115,86,0.30); border-left:3px solid #0F7356; background:rgba(15,115,86,0.04);">
           <div class="text-meta font-mono uppercase text-verified mb-1.5">{{ if $isZh }}这样写对{{ else }}Looks good{{ end }}</div>
           <div class="font-mono text-ink" style="font-size: 15px;">{{ $f.example }}</div>
@@ -174,7 +174,7 @@
 
   <div class="grid grid-cols-1 md:grid-cols-2 border border-rule bg-paper overflow-hidden">
     {{- range $i, $e := . }}
-    <div class="p-6 grid grid-cols-[180px_1fr] gap-5 items-baseline {{ if eq (mod $i 2) 0 }}md:border-r border-rule{{ end }} {{ if lt (add $i 1) (len $errors) }}border-b border-rule{{ end }}">
+    <div class="p-5 grid grid-cols-1 gap-2 content-start {{ if eq (mod $i 2) 0 }}md:border-r border-rule{{ end }} {{ if lt (add $i 1) (len $errors) }}border-b border-rule{{ end }}">
       <code class="font-mono text-scam font-medium" style="font-size: 13px;">"{{ $e.code }}"</code>
       <p class="m-0" style="font-size: 15px; line-height: 1.5;">{{ if $isZh }}{{ $e.why_zh }}{{ else }}{{ $e.why_en }}{{ end }}</p>
     </div>
@@ -271,7 +271,7 @@
     The walkthrough, the in-browser validator, and the full common-errors list.
     {{- end -}}
   </h2>
-  <article class="prose prose-lg max-w-[680px]">
+  <article class="prose prose-lg max-w-[760px]">
     {{ . }}
   </article>
 </section>

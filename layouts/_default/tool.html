@@ -9,7 +9,7 @@
 </nav>
 
 {{- /* Hero ----------------------------------------------------------- */ -}}
-<section class="pt-22 pb-md max-w-[920px]">
+<section class="page-hero pb-md">
   {{- with .Params.eyebrow }}
   <div class="text-meta font-mono uppercase text-muted mb-5">{{ . }}</div>
   {{- else }}
@@ -17,7 +17,7 @@
     {{ if $isZh }}工具 · 浏览器内运行{{ else }}Tool · runs in your browser{{ end }}
   </div>
   {{- end }}
-  <h1 class="font-serif font-medium m-0" style="font-size: clamp(36px, 5.6vw, 56px); line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
+  <h1 class="font-serif font-medium m-0" style="line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
     {{ .Title }}
   </h1>
   {{- with .Params.kicker }}
