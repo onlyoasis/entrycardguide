@@ -148,6 +148,76 @@ Sitemaps API 仍可能返回 `contents[].indexed`，但 Google 已把该字段�
 读任何 GA4 指标前先看 `ga4-bot-signature.json`，把这一组合扣掉再算比率。
 GA4 的数据过滤器只支持 `traffic_type`，没法按分辨率过滤原始数据，所以只能在分析时扣。
 
+## Bing Webmaster Tools 取数
+
+GSC 会匿名化低频查询（见上），Bing 不做匿名化，而且 GA4 里 Bing 系流量是
+Google 的 3.1 倍。`scripts/fetch-bing-search-data.mjs` 把 Bing Webmaster Tools
+的 query 级数据拉下来，补上 GSC 缺的那块。
+
+```bash
+npm run fetch:bing-data
+```
+
+### 拿 API key（一次性）
+
+1. 登录 [Bing Webmaster Tools](https://www.bing.com/webmasters)（站点 2026-07-23 已验证）；
+2. 右上角 **Settings → API Access**；
+3. 首次使用先接受条款，点 **Generate API Key**。
+
+key 跟用户走、不跟站点走：一个用户只有一把，所有已验证站点通用。怀疑泄露时
+在原页面删除旧 key 后重新 Generate。拿到后写进 `.env`：
+
+```
+BING_WEBMASTER_API_KEY=<API Key>
+```
+
+缺这个变量时脚本直接报错并附上面的获取路径，不会静默退出。
+
+### 输出
+
+数据写到 `data-exports/<运行日期>-bing/`（已 gitignore）：
+
+| 文件 | API 方法 | 内容 |
+|---|---|---|
+| `bing-get-query-stats.json` | GetQueryStats | top query 的点击/曝光/平均排名，数据每周刷新 |
+| `bing-get-rank-and-traffic-stats.json` | GetRankAndTrafficStats | 全站按天的点击/曝光，含 Web/Chat/News 等全部垂直 |
+| `bing-get-crawl-stats.json` | GetCrawlStats | 按天抓取量分布、索引页数、外链数，近 6 个月 |
+
+三条请求都只带 `siteUrl`（默认 `https://entrycardguide.com`，可用
+`BING_SITE_URL` 覆盖，不能用 GSC 的 `sc-domain:` 形态）和 `apikey` 参数，
+没有日期范围参数——返回窗口由 Bing 固定。`Date` 字段从 ASP.NET 的
+`/Date(1316156400000-0700)/` 转成 `YYYY-MM-DD`；不匹配该格式的值原样保留，
+方便第一时间发现格式漂移。
+
+### 已通过真实 API 验证（2026-09-05）
+
+首次真实调用于 2026-09-05 完成，三个方法全部 HTTP 200。此前标注的四项待验假设
+**全部验证通过**：方法名正确、成功响应为 `{"d": [...]}` 包装、字段名与文档一致、
+日期为 `/Date(毫秒±偏移)/`。684 条日期由主控方独立重算，零不符。
+
+**两条官方文档没写、但会直接算错数的语义**（实测所得，读数前必看）：
+
+| 端点 | 实际粒度 |
+|---|---|
+| `GetQueryStats` | **周度 + 截断**。日期间隔正好 7 天，每个日期正好 100 行——是「每周 top-100」，既不是按天序列，也不是全量 query。跨日期求和没问题（周不重叠），**把单行当成某一天的数据就错了**。 |
+| `GetRankAndTrafficStats` | **按天**。要算站点总量、要做覆盖率分母，用这个。 |
+
+踩过的坑记在这里：拿 query 维度合计去除以 `GetRankAndTrafficStats` 中**同名日期**
+那几天的合计，会得到 423% 这种不可能的覆盖率——因为分子是 6 个周汇总、分母是 5 个单日。
+正确口径是两边都取整个窗口：41,247 / 79,116 ≈ **52% 曝光覆盖**（GSC 同口径 21%）。
+
+另一条实测限制：**`AvgClickPosition` 全部返回 `-1`**，当作缺失字段处理，不要用它做点击排名。
+`AvgImpressionPosition` 有值可用。
+
+官方文档：
+
+- [Bing Webmaster API 总览](https://learn.microsoft.com/en-us/bingwebmaster/)
+- [获取 API key](https://learn.microsoft.com/en-us/bingwebmaster/getting-access)
+- [错误响应格式](https://learn.microsoft.com/en-us/bingwebmaster/getting-started)
+- [GetQueryStats](https://learn.microsoft.com/en-us/dotnet/api/microsoft.bing.webmaster.api.interfaces.iwebmasterapi.getquerystats?view=bing-webmaster-dotnet)
+- [GetRankAndTrafficStats](https://learn.microsoft.com/en-us/dotnet/api/microsoft.bing.webmaster.api.interfaces.iwebmasterapi.getrankandtrafficstats?view=bing-webmaster-dotnet)
+- [GetCrawlStats](https://learn.microsoft.com/en-us/dotnet/api/microsoft.bing.webmaster.api.interfaces.iwebmasterapi.getcrawlstats?view=bing-webmaster-dotnet)
+
 ## 相关
 
 - 月度内容复盘流程：`monthly-review.md`
