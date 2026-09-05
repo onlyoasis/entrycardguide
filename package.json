@@ -10,6 +10,7 @@
     "check:seo": "node scripts/check-seo-output.mjs",
     "verify:official-urls": "node scripts/verify-official-urls.mjs",
     "submit:indexnow": "node scripts/submit-indexnow.mjs",
+    "submit:sitemaps": "node scripts/resubmit-sitemaps.mjs",
     "fetch:search-data": "node scripts/fetch-search-data.mjs",
     "check:index-status": "node scripts/check-index-status.mjs",
     "clean": "rm -rf public resources"
