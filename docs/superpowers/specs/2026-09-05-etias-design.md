@@ -55,10 +55,19 @@ ETIAS 是**一张授权覆盖 30 个欧洲国家**，而本站的数据模型假
 
 ---
 
-## 3. 需要用户拍板：站点的"国家数"口径
+## 3. 站点的"国家数"口径 —— 已按方案 A 实施（2026-09-06）
 
-两处模板直接用 `len $countries` 对外声明数量：
+> **状态更新（2026-09-06）**：用户选定方案 A，已实施并提交。
+> 本节初稿说"两处模板"，**这个数字是错的**：实际有 **3 个文件、8 处用户可见文案**
+> 在用 `len $countries`。初稿只 grep 到了两处，漏掉了 `layouts/index.html:13`
+> 那个 `$countryCount` 变量，它一个人驱动了首页 6 处文案。
+> 落地实现见本节末尾。
 
+原始问题：模板直接用 `len $countries` 对外声明数量：
+
+- `layouts/index.html:13` → 一个 `$countryCount` 变量驱动 6 处：
+  统计卡「COUNTRIES COVERED」、`{N} countries. One real URL each.`、
+  搜索框 placeholder、`Show all {N} countries ↓`、网格末尾卡片、页脚计数
 - `layouts/partials/footer-commit.html:20` → `全部 {N} 个国家 →` / `All {N} countries →`
 - `layouts/index.llms.txt:19,21` → `共收录 {N} 个国家` / `{N} countries`
 
@@ -84,6 +93,30 @@ roster 那行加一个 `kind = "authorization"` 字段，上面两处计数改�
 每一处都要单独硬编码——正好是 roster 当初被设计出来消灭的那类重复。不推荐。
 
 **建议 A。**在用户确认前，本设计后续章节按 A 描述。
+
+### 方案 A 的落地（已完成）
+
+新增 `layouts/partials/country-count.html`：遍历 roster，只数 `kind` 不等于
+`authorization` 的行，`return` 计数。用显式循环而不是 `where`——Hugo 的 `where`
+会丢掉缺少该键的元素，而"缺少 `kind`"正是国家行的样子。
+
+三个消费方改为 `partial "country-count.html" .`：`index.html:13`、
+`footer-commit.html`、`index.llms.txt`。roster 的字段注释补了 `kind` 的说明。
+
+**验证**（2026-09-06）：
+
+- 今天是 no-op：8 处文案全部仍读 53，`build:prod` exit 0（EN 224 / ZH 222），
+  `check:seo` 通过。
+- 守卫确实会生效：临时给 `nigeria` 那行加上 `"kind" "authorization"` 重新构建，
+  8 处计数**同步降为 52**，而该行在首页卡片、导航下拉、官方目录里**照常渲染**
+  （3 / 1 / 3 处命中）——正是方案 A 要的"照常出现，只是不计入国家数"。随后已还原。
+
+`index.html:29` 的 `$paidCount := sub $countryCount $freeCount` 无需改动：
+ETIAS 是付费行，既不进 `$countryCount` 也不进 `$freeCount`，
+`$paidCount` 仍然等于"付费国家数"。
+
+所以阶段一实施时，ETIAS 的 roster 行只要带上 `"kind" "authorization"`，
+计数就自动正确，不需要再动任何模板。
 
 ---
 

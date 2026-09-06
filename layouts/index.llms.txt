@@ -14,16 +14,17 @@
 {{- else if eq $lang "zh-hant" -}}{{- $suffix = "zh_hant" -}}{{- $nameKey = "zht" -}}{{- end -}}
 {{- $countries := partial "country-roster.html" . -}}
 {{- $urls := hugo.Data.official_urls -}}
+{{- $countryCount := partial "country-count.html" . -}}
 {{- $freeCount := 0 -}}
 {{- range $countries }}{{ if eq .fee "free" }}{{ $freeCount = add $freeCount 1 }}{{ end }}{{ end -}}
 # entrycardguide{{ if ne $nameKey "en" }} · 入境卡指南{{ end }}
 
 {{ if eq $lang "zh" -}}
-> 每个国家入境表单的官方政府网址，以及逐字段的填写规则。共收录 {{ len $countries }} 个国家，其中 {{ $freeCount }} 个的政府表单本身免费。
+> 每个国家入境表单的官方政府网址，以及逐字段的填写规则。共收录 {{ $countryCount }} 个国家，其中 {{ $freeCount }} 个的政府表单本身免费。
 {{- else if eq $lang "zh-hant" -}}
-> 每個國家入境表單的官方政府網址，以及逐欄位的填寫規則。共收錄 {{ len $countries }} 個國家，其中 {{ $freeCount }} 個的政府表單本身免費。
+> 每個國家入境表單的官方政府網址，以及逐欄位的填寫規則。共收錄 {{ $countryCount }} 個國家，其中 {{ $freeCount }} 個的政府表單本身免費。
 {{- else -}}
-> The official government URL for each country's entry form and a field-by-field guide to filling it. {{ len $countries }} countries, {{ $freeCount }} of them with a free government form.
+> The official government URL for each country's entry form and a field-by-field guide to filling it. {{ $countryCount }} countries, {{ $freeCount }} of them with a free government form.
 {{- end }}
 
 {{ if eq $lang "zh" -}}

@@ -20,7 +20,7 @@
         {{- range first 6 $countries }}
         <li><a href="{{ printf "/%s/" .key | relLangURL }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ index . $nameKey }} <span class="text-muted font-mono" style="font-size: 12px;">{{ .formCode }}</span></a></li>
         {{- end }}
-        <li><a href="{{ $directoryURL }}" class="text-ink underline underline-offset-4 font-medium">{{ printf (i18n "footer_all_countries") (len $countries) | safeHTML }}</a></li>
+        <li><a href="{{ $directoryURL }}" class="text-ink underline underline-offset-4 font-medium">{{ printf (i18n "footer_all_countries") (partial "country-count.html" .) | safeHTML }}</a></li>
       </ul>
     </div>
 

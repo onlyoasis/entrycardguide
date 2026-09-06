@@ -15,7 +15,7 @@
        data/rules/*.json. freeCount counts countries with a free government
        form so the section headline doesn't lump Vietnam (paid e-visa) in
        with the free roster. */ -}}
-{{- $countryCount := len $countries -}}
+{{- $countryCount := partial "country-count.html" . -}}
 {{- $freeCount := 0 -}}
 {{- $fieldRuleCount := 0 -}}
 {{- $urlCount := 0 -}}
