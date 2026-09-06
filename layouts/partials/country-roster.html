@@ -19,7 +19,11 @@
          formCode   → short code shown in the footer column
          guideSlug  → first path segment after /{key}/
          fee        → "free" | "paid" — drives the card fee dot + label
-         subEn/subZh → tiny qualifier, kept for non-grid consumers */ -}}
+         subEn/subZh → tiny qualifier, kept for non-grid consumers
+         kind       → omit for a country. Set to "authorization" for a row that
+                      is not one country (ETIAS covers 30 European states).
+                      Such a row still renders everywhere; it is only left out
+                      of the country count — see partials/country-count.html */ -}}
 {{- $countries := slice
   (dict "key" "indonesia"   "en" "Indonesia"          "zh" "印度尼西亚" "flag" "🇮🇩" "formKey" "ecd"          "formCode" "All Indonesia"   "guideSlug" "e-cd"           "fee" "free" "subEn" "+ e-VOA USD 35"      "subZh" "+ e-VOA 35 美元")
   (dict "key" "malaysia"    "en" "Malaysia"           "zh" "马来西亚"   "flag" "🇲🇾" "formKey" "mdac"         "formCode" "MDAC"            "guideSlug" "mdac"           "fee" "free" "subEn" "Jan 2024"            "subZh" "2024 年 1 月起")

@@ -1,0 +1,21 @@
+{{- /* How many countries the site claims to cover.
+
+       Not the same as `len` of the roster. The roster also carries entries that
+       are not countries — an authorisation covering many states, such as ETIAS
+       across 30 European countries — and counting those as countries would put
+       a false number in the footer and in llms.txt. Rows opt out by setting
+       `kind` to "authorization"; every country row leaves `kind` unset.
+
+       Written as an explicit loop rather than `where`, because Hugo's `where`
+       drops elements whose key is absent, and absent is exactly what a country
+       row looks like here.
+
+       Usage: {{ partial "country-count.html" . }}
+       Anything printing a count of countries must go through this partial —
+       `len $countries` is the bug this exists to prevent. */ -}}
+{{- $countries := partial "country-roster.html" . -}}
+{{- $count := 0 -}}
+{{- range $countries }}
+  {{- if ne .kind "authorization" }}{{ $count = add $count 1 }}{{ end -}}
+{{- end -}}
+{{- return $count -}}

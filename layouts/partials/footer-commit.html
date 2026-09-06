@@ -17,7 +17,8 @@
         {{- range first 6 $countries }}
         <li><a href="{{ if $isZh }}/zh/{{ .key }}/{{ else }}/{{ .key }}/{{ end }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ if $isZh }}{{ .zh }}{{ else }}{{ .en }}{{ end }} <span class="text-muted font-mono" style="font-size: 12px;">{{ .formCode }}</span></a></li>
         {{- end }}
-        <li><a href="{{ $directoryURL }}" class="text-ink underline underline-offset-4 font-medium">{{ if $isZh }}全部 {{ len $countries }} 个国家 →{{ else }}All {{ len $countries }} countries →{{ end }}</a></li>
+        {{- $countryCount := partial "country-count.html" . }}
+        <li><a href="{{ $directoryURL }}" class="text-ink underline underline-offset-4 font-medium">{{ if $isZh }}全部 {{ $countryCount }} 个国家 →{{ else }}All {{ $countryCount }} countries →{{ end }}</a></li>
       </ul>
     </div>
 

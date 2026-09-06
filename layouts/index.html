@@ -10,7 +10,7 @@
 {{- /* Stats: countries dynamic from roster, scams sum across TOMLs.
        freeCount counts countries with a free government form so the section
        headline doesn't lump Vietnam (paid e-visa) in with the free roster. */ -}}
-{{- $countryCount := len $countries -}}
+{{- $countryCount := partial "country-count.html" . -}}
 {{- $freeCount := 0 -}}
 {{- $scamCount := 0 -}}
 {{- $urlCount := 0 -}}

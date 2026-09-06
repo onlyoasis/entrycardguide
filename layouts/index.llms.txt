@@ -11,14 +11,15 @@
 {{- $urls := hugo.Data.official_urls -}}
 {{- $scamCount := 0 -}}
 {{- range $countries }}{{ with index $urls .key }}{{ with .scam_sites }}{{ $scamCount = add $scamCount (len .) }}{{ end }}{{ end }}{{ end -}}
+{{- $countryCount := partial "country-count.html" . -}}
 {{- $freeCount := 0 -}}
 {{- range $countries }}{{ if eq .fee "free" }}{{ $freeCount = add $freeCount 1 }}{{ end }}{{ end -}}
 # entrycardguide{{ if $isZh }} · 入境卡指南{{ end }}
 
 {{ if $isZh -}}
-> 每个国家入境表单的官方政府网址、逐字段填写指南，以及在搜索结果里排在官方站前面的收费中介名单。共收录 {{ len $countries }} 个国家，其中 {{ $freeCount }} 个的政府表单本身免费。
+> 每个国家入境表单的官方政府网址、逐字段填写指南，以及在搜索结果里排在官方站前面的收费中介名单。共收录 {{ $countryCount }} 个国家，其中 {{ $freeCount }} 个的政府表单本身免费。
 {{- else -}}
-> The official government URL for each country's entry form, a field-by-field guide to filling it, and a documented list of the paid middleman sites that outrank the real form in search. {{ len $countries }} countries, {{ $freeCount }} of them with a free government form.
+> The official government URL for each country's entry form, a field-by-field guide to filling it, and a documented list of the paid middleman sites that outrank the real form in search. {{ $countryCount }} countries, {{ $freeCount }} of them with a free government form.
 {{- end }}
 
 {{ if $isZh -}}
