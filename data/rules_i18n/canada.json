@@ -1,0 +1,104 @@
+{
+ "ui": {
+  "fix": "修正 ✗",
+  "ok": "正確 ✓"
+ },
+ "fields": {
+  "passport": {
+   "label": "護照號碼",
+   "help": "使用護照照片頁頂部的號碼。IRCC 說明多數為 8–11 個字元。不要加空格、短橫，也不要用底部機讀區的號碼。",
+   "errors": {
+    "required": "請輸入護照號碼",
+    "tooShort": "請輸入照片頁頂部的護照號碼",
+    "tooLong": "請檢查護照號碼——本機檢查器最多允許 20 個字元",
+    "invalidChars": "只能使用字母和數字——不含空格或短橫",
+    "invalidFormat": "請輸入照片頁上印刷的字母與數字"
+   }
+  },
+  "family_name": {
+   "label": "姓（Family name）",
+   "help": "輸入護照上顯示的所有姓。可用機讀區確認姓名順序，但若機讀行有縮寫，以頁面上半部的完整拼寫為準。",
+   "errors": {
+    "required": "請輸入姓（Family name）"
+   }
+  },
+  "given_names": {
+   "label": "名（Given names）",
+   "help": "輸入護照上顯示的所有名。保留允許的撇號、短橫和法語重音符號；除非機讀姓名中有，否則不要加頭銜或親屬稱謂。",
+   "errors": {
+    "required": "請輸入名（Given names）"
+   }
+  },
+  "date_of_birth": {
+   "label": "出生日期",
+   "help": "在本機檢查器中使用 YYYY-MM-DD 格式，並與護照日期一致。",
+   "errors": {
+    "required": "請輸入出生日期",
+    "invalidFormat": "請使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必須是 01–12",
+    "invalidDay": "日期不正確——請對照該月份天數檢查",
+    "invalid": "不是真實存在的日期",
+    "tooLate": "出生日期不能晚於 2026-07-14"
+   }
+  },
+  "place_of_birth": {
+   "label": "出生地",
+   "help": "選擇護照「出生地」欄顯示的國家，並填寫出生的城市、鎮或村。若護照未列城市，請填實際出生地。",
+   "errors": {
+    "required": "請輸入出生地"
+   }
+  },
+  "marital_status": {
+   "label": "婚姻狀況",
+   "help": "依 IRCC 定義選擇目前狀況：已婚、合法分居、離婚、婚姻被撤銷、喪偶、同居伴侶或從未結婚／單身。",
+   "errors": {
+    "required": "請選擇婚姻狀況",
+    "invalidOption": "請從官方婚姻狀況選項中選擇"
+   }
+  },
+  "occupation": {
+   "label": "職業與僱主或學校",
+   "help": "選擇最接近的目前職業。適用時請填職稱、僱主或學校、國家、城市及入職年份。",
+   "errors": {
+    "required": "請填寫職業資訊",
+    "invalidOption": "請選擇最接近的官方職業選項"
+   }
+  },
+  "email": {
+   "label": "電子郵件",
+   "help": "請使用你可收信的有效信箱。IRCC 會把審核結果與補件要求寄到這裡；為未成年人申請的家長可填家長信箱。",
+   "errors": {
+    "required": "請輸入電子郵件",
+    "invalidFormat": "格式必須類似 name@example.com",
+    "tooLong": "電子郵件太長——本檢查器最多 254 個字元"
+   }
+  },
+  "home_address": {
+   "label": "永久住家地址",
+   "help": "填寫永久居住地址，不要填臨時地址或郵政信箱。IRCC 提醒郵政信箱可能導致拒簽。",
+   "errors": {
+    "required": "請輸入永久住家地址"
+   }
+  },
+  "travel_date": {
+   "label": "預計旅行日期",
+   "help": "尚不清楚日期時可留空。若已確定，請填預計日期，並依官方表單填寫已確認的航班時間。",
+   "errors": {
+    "required": "請輸入預計旅行日期",
+    "invalidFormat": "請使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必須是 01–12",
+    "invalidDay": "日期不正確——請對照該月份天數檢查",
+    "invalid": "不是真實存在的日期",
+    "tooEarly": "預計旅行日期不能早於 2026-07-14"
+   }
+  },
+  "background_questions": {
+   "label": "移民、犯罪與健康背景",
+   "help": "請如實回答每一項官方背景問題：拒簽或遣返令、刑事犯罪、肺結核及列明的未治療健康狀況。每個「是」的答案都請提供完整細節。",
+   "errors": {
+    "required": "請回答所有背景問題",
+    "invalidOption": "每個官方問題請如實選擇答案"
+   }
+  }
+ }
+}

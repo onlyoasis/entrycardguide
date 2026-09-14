@@ -4,4 +4,5 @@
 date = "2026-07-14"
 summary = "India guide published"
 summary_zh = "印度 e-Arrival Card 指南上线"
+summary_zh_hant = "印度 e-Arrival Card 指南上線"
 detail = "Adds the free official e-Arrival Card, the separate nationality-based e-Visa fees and authorized ports, field rules, and documented commercial middlemen."

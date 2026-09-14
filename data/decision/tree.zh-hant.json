@@ -1,0 +1,2860 @@
+{
+ "version": "1.0",
+ "lastVerified": "2026-08-30",
+ "start": "country",
+ "states": {
+  "country": {
+   "type": "question",
+   "label": "你要去哪裡？",
+   "options": [
+    {
+     "value": "thailand",
+     "label": "泰國",
+     "next": "thailand_result"
+    },
+    {
+     "value": "mexico",
+     "label": "墨西哥",
+     "next": "mexico_entry"
+    },
+    {
+     "value": "dominican",
+     "label": "多明尼加",
+     "next": "dominican_result"
+    },
+    {
+     "value": "malaysia",
+     "label": "馬來西亞",
+     "next": "malaysia_status"
+    },
+    {
+     "value": "vietnam",
+     "label": "越南",
+     "next": "vietnam_passport"
+    },
+    {
+     "value": "indonesia",
+     "label": "印尼",
+     "next": "indonesia_passport"
+    },
+    {
+     "value": "singapore",
+     "label": "新加坡",
+     "next": "singapore_status"
+    },
+    {
+     "value": "philippines",
+     "label": "菲律賓",
+     "next": "philippines_result"
+    },
+    {
+     "value": "cambodia",
+     "label": "柬埔寨",
+     "next": "cambodia_result"
+    },
+    {
+     "value": "japan",
+     "label": "日本",
+     "next": "japan_result"
+    },
+    {
+     "value": "korea",
+     "label": "韓國",
+     "next": "korea_result"
+    },
+    {
+     "value": "usa",
+     "label": "美國",
+     "next": "usa_passport"
+    },
+    {
+     "value": "uk",
+     "label": "英國",
+     "next": "uk_status"
+    },
+    {
+     "value": "canada",
+     "label": "加拿大",
+     "next": "canada_entry"
+    },
+    {
+     "value": "new-zealand",
+     "label": "紐西蘭",
+     "next": "nz_passport"
+    },
+    {
+     "value": "australia",
+     "label": "澳洲",
+     "next": "australia_passport"
+    },
+    {
+     "value": "india",
+     "label": "印度",
+     "next": "india_status"
+    },
+    {
+     "value": "turkey",
+     "label": "土耳其",
+     "next": "turkey_passport"
+    },
+    {
+     "value": "sri-lanka",
+     "label": "斯里蘭卡",
+     "next": "sri_lanka_fee_scheme"
+    },
+    {
+     "value": "maldives",
+     "label": "馬爾地夫",
+     "next": "maldives_result"
+    },
+    {
+     "value": "taiwan",
+     "label": "台灣",
+     "next": "taiwan_status"
+    },
+    {
+     "value": "egypt",
+     "label": "埃及",
+     "next": "egypt_passport"
+    },
+    {
+     "value": "saudi-arabia",
+     "label": "沙烏地阿拉伯",
+     "next": "saudi_passport"
+    },
+    {
+     "value": "kenya",
+     "label": "肯亞",
+     "next": "kenya_eligibility"
+    },
+    {
+     "value": "israel",
+     "label": "以色列",
+     "next": "israel_eligibility"
+    },
+    {
+     "value": "cuba",
+     "label": "古巴",
+     "next": "cuba_result"
+    },
+    {
+     "value": "curacao",
+     "label": "庫拉索",
+     "next": "curacao_result"
+    },
+    {
+     "value": "colombia",
+     "label": "哥倫比亞",
+     "next": "colombia_result"
+    },
+    {
+     "value": "laos",
+     "label": "寮國",
+     "next": "laos_eligibility"
+    },
+    {
+     "value": "azerbaijan",
+     "label": "亞塞拜然",
+     "next": "azerbaijan_passport"
+    },
+    {
+     "value": "myanmar",
+     "label": "緬甸",
+     "next": "myanmar_eligibility"
+    },
+    {
+     "value": "nepal",
+     "label": "尼泊爾",
+     "next": "nepal_route"
+    },
+    {
+     "value": "pakistan",
+     "label": "巴基斯坦",
+     "next": "pakistan_route"
+    },
+    {
+     "value": "uzbekistan",
+     "label": "烏茲別克",
+     "next": "uzbekistan_route"
+    },
+    {
+     "value": "georgia",
+     "label": "喬治亞",
+     "next": "georgia_passport"
+    },
+    {
+     "value": "oman",
+     "label": "阿曼",
+     "next": "oman_eligibility"
+    },
+    {
+     "value": "qatar",
+     "label": "卡達",
+     "next": "qatar_eligibility"
+    },
+    {
+     "value": "bahrain",
+     "label": "巴林",
+     "next": "bahrain_route"
+    },
+    {
+     "value": "tanzania",
+     "label": "坦尚尼亞",
+     "next": "tanzania_route"
+    },
+    {
+     "value": "ethiopia",
+     "label": "衣索比亞",
+     "next": "ethiopia_route"
+    },
+    {
+     "value": "morocco",
+     "label": "摩洛哥",
+     "next": "morocco_eligibility"
+    },
+    {
+     "value": "jamaica",
+     "label": "牙買加",
+     "next": "jamaica_route"
+    },
+    {
+     "value": "bahamas",
+     "label": "巴哈馬",
+     "next": "bahamas_route"
+    },
+    {
+     "value": "aruba",
+     "label": "阿魯巴",
+     "next": "aruba_result"
+    },
+    {
+     "value": "panama",
+     "label": "巴拿馬",
+     "next": "panama_result"
+    },
+    {
+     "value": "peru",
+     "label": "秘魯",
+     "next": "peru_result"
+    },
+    {
+     "value": "brazil",
+     "label": "巴西",
+     "next": "brazil_eligibility"
+    },
+    {
+     "value": "barbados",
+     "label": "巴貝多",
+     "next": "barbados_result"
+    },
+    {
+     "value": "russia",
+     "label": "俄羅斯",
+     "next": "russia_eligibility"
+    },
+    {
+     "value": "jordan",
+     "label": "約旦",
+     "next": "jordan_restricted"
+    }
+   ]
+  },
+  "thailand_result": {
+   "type": "result",
+   "country": "thailand",
+   "summary": "你需要填寫泰國數位入境卡（TDAC）。",
+   "forms": [
+    {
+     "name": "TDAC",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://tdac.immigration.go.th",
+     "guide": "/zh-hant/thailand/tdac/",
+     "agency": "泰國皇家移民局",
+     "deadline": "抵達前 3 天內"
+    }
+   ],
+   "note": "所有外國訪客都必須填寫 TDAC。它永遠免費。向你收費的就是中介。"
+  },
+  "mexico_entry": {
+   "type": "question",
+   "label": "你怎麼進入墨西哥？",
+   "options": [
+    {
+     "value": "land",
+     "label": "陸路（汽車、公車、步行）",
+     "next": "mexico_need"
+    },
+    {
+     "value": "sea",
+     "label": "海路（郵輪、渡輪）",
+     "next": "mexico_need"
+    },
+    {
+     "value": "air_major",
+     "label": "空路至主要機場（CUN、MEX、GDL、TIJ、PVR、SJD 等）",
+     "next": "mexico_air_major"
+    },
+    {
+     "value": "air_other",
+     "label": "空路至較小的機場",
+     "next": "mexico_need"
+    }
+   ]
+  },
+  "mexico_air_major": {
+   "type": "result",
+   "country": "mexico",
+   "summary": "你多半「不需要」另填 FMM-E。",
+   "forms": [],
+   "note": "多數墨西哥主要機場（CUN、MEX、GDL、TIJ、PVR、SJD）現在改用護照蓋章，不再另發 FMM。章本身即核准你的停留，無需另行申報。",
+   "fallback_guide": "/zh-hant/mexico/fmm/",
+   "fallback_label": "若不確定，先讀 FMM 總覽",
+   "fallback_warning": "想更保險的話，照樣填一份 FMM-E（免費、約 10 分鐘）。入境時已有一份絕不會是問題。"
+  },
+  "mexico_need": {
+   "type": "result",
+   "country": "mexico",
+   "summary": "你需要填寫 FMM-E（電子多元移民表）。",
+   "forms": [
+    {
+     "name": "FMM-E",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://www.inm.gob.mx/fmme/publico/en/solicitud.html",
+     "guide": "/zh-hant/mexico/fmm/",
+     "agency": "墨西哥國家移民局（INM）",
+     "deadline": "抵達前任何時間；最早可提前 30 天"
+    }
+   ],
+   "note": "陸路、海路及較小機場入境仍需 FMM-E。在 INM 官網免費填寫。邊檢官員交給你的存根請留到離開墨西哥。"
+  },
+  "dominican_result": {
+   "type": "result",
+   "country": "dominican",
+   "summary": "你需要填寫多明尼加 E-Ticket。",
+   "forms": [
+    {
+     "name": "E-Ticket",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://eticket.migracion.gob.do",
+     "guide": "/zh-hant/dominican/eticket/",
+     "agency": "多明尼加移民總局（DGM）",
+     "deadline": "抵達前 72 小時內"
+    }
+   ],
+   "note": "所有入境與離境都需要 E-Ticket。一次申報同時涵蓋去程與回程。請在 .gob.do 官網免費辦理。"
+  },
+  "malaysia_status": {
+   "type": "question",
+   "label": "哪一項最符合你的情況？",
+   "options": [
+    {
+     "value": "singapore_citizen",
+     "label": "新加坡公民",
+     "next": "malaysia_exempt"
+    },
+    {
+     "value": "malaysia_citizen",
+     "label": "馬來西亞公民／馬來西亞永久居民",
+     "next": "malaysia_exempt"
+    },
+    {
+     "value": "brunei_thai_land",
+     "label": "持汶萊或泰國護照由陸路入境",
+     "next": "malaysia_exempt"
+    },
+    {
+     "value": "transit_only",
+     "label": "在 KUL 純轉機（不通過移民查驗）",
+     "next": "malaysia_exempt"
+    },
+    {
+     "value": "diplomatic",
+     "label": "外交／公務護照",
+     "next": "malaysia_exempt"
+    },
+    {
+     "value": "other",
+     "label": "以上皆非（外國訪客）",
+     "next": "malaysia_need"
+    }
+   ]
+  },
+  "malaysia_exempt": {
+   "type": "result",
+   "country": "malaysia",
+   "summary": "你「免填」MDAC。",
+   "forms": [],
+   "note": "新加坡公民、馬來西亞公民／永久居民、由陸路入境的汶萊與泰國護照持有人、純空側轉機旅客，以及部分外交護照，都不需要 MDAC。帶好護照即可。",
+   "fallback_guide": "/zh-hant/malaysia/mdac/",
+   "fallback_label": "先讀 MDAC 總覽"
+  },
+  "malaysia_need": {
+   "type": "result",
+   "country": "malaysia",
+   "summary": "你需要填寫馬來西亞數位入境卡（MDAC）。",
+   "forms": [
+    {
+     "name": "MDAC",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://imigresen-online.imi.gov.my/mdac/main",
+     "guide": "/zh-hant/malaysia/mdac/",
+     "agency": "馬來西亞移民局",
+     "deadline": "抵達前 3 天內"
+    }
+   ],
+   "note": "請在 .gov.my 官網免費填寫。移民官掃描你的護照時會自動帶出 MDAC 申報紀錄。"
+  },
+  "vietnam_passport": {
+   "type": "question",
+   "label": "你的國籍是？",
+   "options": [
+    {
+     "value": "asean",
+     "label": "東協公民（新加坡、泰國、馬來西亞、印尼、菲律賓等）",
+     "next": "vietnam_visa_exempt"
+    },
+    {
+     "value": "japan_korea",
+     "label": "日本或韓國",
+     "next": "vietnam_visa_exempt"
+    },
+    {
+     "value": "europe_exempt",
+     "label": "歐洲（丹麥、芬蘭、法國、德國、義大利、挪威、俄羅斯、西班牙、瑞典、英國、白俄羅斯）",
+     "next": "vietnam_visa_exempt"
+    },
+    {
+     "value": "other",
+     "label": "其他（美國、加拿大、澳洲、中國、印度等）",
+     "next": "vietnam_need_evisa"
+    }
+   ]
+  },
+  "vietnam_visa_exempt": {
+   "type": "result",
+   "country": "vietnam",
+   "summary": "你可免簽入境越南觀光（一般 15–45 天，依國籍而定）。",
+   "forms": [],
+   "note": "免簽國籍不需要電子簽。帶好護照即可。出發前請在越南移民局官方頁面確認你的具體停留上限。",
+   "fallback_guide": "/zh-hant/vietnam/evisa/",
+   "fallback_label": "先讀電子簽指南了解背景"
+  },
+  "vietnam_need_evisa": {
+   "type": "result",
+   "country": "vietnam",
+   "summary": "你需要越南電子簽證。",
+   "forms": [
+    {
+     "name": "電子簽（單次）",
+     "fee": "$25 USD",
+     "feeDisplay": "25 美元",
+     "url": "https://evisa.gov.vn",
+     "guide": "/zh-hant/vietnam/evisa/",
+     "agency": "越南移民局",
+     "deadline": "航班前 3–5 個工作日申請"
+    }
+   ],
+   "note": "25 美元是官方政府費用。多收你錢的就是中介。多次入境（50 美元）與加急（加收 50 美元）同樣是政府檔位。商業網站對同一份電子簽通常收 99–179 美元。"
+  },
+  "indonesia_passport": {
+   "type": "question",
+   "label": "你的國籍是？",
+   "options": [
+    {
+     "value": "visa_free",
+     "label": "美國、歐盟、英國、加拿大、澳洲、日本、韓國、新加坡（2024 年起免簽）",
+     "next": "indonesia_ecd_only"
+    },
+    {
+     "value": "indonesian",
+     "label": "印尼公民",
+     "next": "indonesia_ecd_only"
+    },
+    {
+     "value": "other",
+     "label": "其他國籍",
+     "next": "indonesia_both"
+    }
+   ]
+  },
+  "indonesia_ecd_only": {
+   "type": "result",
+   "country": "indonesia",
+   "summary": "你需要 All Indonesia 入境申報。不需要簽證。",
+   "forms": [
+    {
+     "name": "All Indonesia",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://allindonesia.imigrasi.go.id",
+     "guide": "/zh-hant/indonesia/e-cd/",
+     "agency": "印尼移民總局／海關",
+     "deadline": "抵達前 3 天內"
+    }
+   ],
+   "note": "所有入境者都需填寫免費的入境申報。免簽國籍不需另辦電子落地簽。請使用官方 .go.id 入口網。"
+  },
+  "indonesia_both": {
+   "type": "result",
+   "country": "indonesia",
+   "summary": "你需要「同時」辦理 All Indonesia 入境申報與電子落地簽（簽證）。",
+   "forms": [
+    {
+     "name": "All Indonesia",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://allindonesia.imigrasi.go.id",
+     "guide": "/zh-hant/indonesia/e-cd/",
+     "agency": "印尼移民總局／海關",
+     "deadline": "抵達前 3 天內"
+    },
+    {
+     "name": "電子落地簽（e-VOA）",
+     "fee": "$35 USD",
+     "feeDisplay": "35 美元",
+     "url": "https://evisa.imigrasi.go.id",
+     "guide": "/zh-hant/indonesia/e-cd/",
+     "agency": "印尼移民總局",
+     "deadline": "出發前申請"
+    }
+   ],
+   "note": "兩條獨立的官方流程。別讓中介打包收費：入境申報免費，電子落地簽的 35 美元是真實的政府費用。"
+  },
+  "singapore_status": {
+   "type": "question",
+   "label": "哪一項最符合你的情況？",
+   "options": [
+    {
+     "value": "singapore_citizen",
+     "label": "新加坡公民（持新加坡護照）",
+     "next": "singapore_exempt"
+    },
+    {
+     "value": "transit_only",
+     "label": "在樟宜機場純空側轉機（不通過移民查驗）",
+     "next": "singapore_exempt"
+    },
+    {
+     "value": "other",
+     "label": "外國訪客，或回國的新加坡永久居民",
+     "next": "singapore_need"
+    }
+   ]
+  },
+  "singapore_exempt": {
+   "type": "result",
+   "country": "singapore",
+   "summary": "你不需要 SGAC。",
+   "forms": [],
+   "note": "持新加坡護照入境的新加坡公民，以及純空側轉機旅客，皆免填。帶好護照即可。",
+   "fallback_guide": "/zh-hant/singapore/sgac/",
+   "fallback_label": "先讀 SGAC 總覽"
+  },
+  "singapore_need": {
+   "type": "result",
+   "country": "singapore",
+   "summary": "你需要填寫新加坡入境卡（SGAC）。",
+   "forms": [
+    {
+     "name": "SGAC",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://eservices.ica.gov.sg/sgarrivalcard/",
+     "guide": "/zh-hant/singapore/sgac/",
+     "agency": "新加坡移民與關卡局（ICA）",
+     "deadline": "抵達前 3 天內"
+    }
+   ],
+   "note": "請在 .gov.sg 官網免費填寫。內含簡短的健康聲明。適用 eGate 的國籍入境時掃描護照即可，系統會自動帶出 SGAC 申報。"
+  },
+  "philippines_result": {
+   "type": "result",
+   "country": "philippines",
+   "summary": "你需要填寫菲律賓 eTravel。",
+   "forms": [
+    {
+     "name": "eTravel",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://etravel.gov.ph",
+     "guide": "/zh-hant/philippines/etravel/",
+     "agency": "菲律賓旅遊資訊系統",
+     "deadline": "報到／抵達前"
+    }
+   ],
+   "note": "請在 .gov.ph 官網免費填寫。eTravel 是旅行申報，不是簽證。"
+  },
+  "cambodia_result": {
+   "type": "result",
+   "country": "cambodia",
+   "summary": "你需要柬埔寨 e-Arrival 入境申報。",
+   "forms": [
+    {
+     "name": "e-Arrival",
+     "fee": "FREE declaration",
+     "feeDisplay": "免費",
+     "url": "https://arrival.gov.kh",
+     "guide": "/zh-hant/cambodia/e-arrival/",
+     "agency": "柬埔寨移民總局",
+     "deadline": "抵達前"
+    }
+   ],
+   "note": "入境申報免費。行程需要簽證時，簽證費另計。"
+  },
+  "japan_result": {
+   "type": "result",
+   "country": "japan",
+   "summary": "你可以使用 Visit Japan Web 辦理日本入境 QR Code 流程。",
+   "forms": [
+    {
+     "name": "Visit Japan Web",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://services.digital.go.jp/en/visit-japan-web/",
+     "guide": "/zh-hant/japan/visit-japan-web/",
+     "agency": "日本數位廳",
+     "deadline": "抵達前；仍可能提供紙本替代"
+    }
+   ],
+   "note": "Visit Japan Web 免費，與簽證身分無關。部分機場流程仍可使用紙本表單。"
+  },
+  "korea_result": {
+   "type": "result",
+   "country": "korea",
+   "summary": "當官方入口適用於你的行程時，你需要韓國電子入境卡。",
+   "forms": [
+    {
+     "name": "e-Arrival Card",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://www.e-arrivalcard.go.kr/portal/main/index.do",
+     "guide": "/zh-hant/korea/e-arrival-card/",
+     "agency": "韓國出入境外國人廳",
+     "deadline": "抵達前"
+    }
+   ],
+   "note": "請在 .go.kr 官方入口免費填寫。它與 K-ETA、簽證身分及 Q-Code 相互獨立。"
+  },
+  "usa_passport": {
+   "type": "question",
+   "label": "你的護照是免簽計畫（Visa Waiver Program）國家嗎？",
+   "options": [
+    {
+     "value": "yes",
+     "label": "是",
+     "next": "usa_esta_result"
+    },
+    {
+     "value": "no_or_unsure",
+     "label": "否／不確定",
+     "next": "usa_visa_result"
+    }
+   ]
+  },
+  "usa_esta_result": {
+   "type": "result",
+   "country": "usa",
+   "summary": "以免簽計畫旅行前，你需要一份已核准的 ESTA。",
+   "forms": [
+    {
+     "name": "ESTA",
+     "fee": "USD $40.27",
+     "feeDisplay": "40.27 美元",
+     "url": "https://esta.cbp.dhs.gov/",
+     "guide": "/zh-hant/usa/esta/",
+     "agency": "美國海關與邊境保護局（CBP）",
+     "deadline": "最遲於出發前 72 小時"
+    }
+   ],
+   "note": "ESTA 是旅行許可，不是簽證。符合資格的免簽計畫旅客空、海、陸路入境都需要它。核准不保證准許入境。"
+  },
+  "usa_visa_result": {
+   "type": "result",
+   "country": "usa",
+   "summary": "你可能需要美國簽證，而不是 ESTA。",
+   "forms": [],
+   "note": "如果你的護照不適用免簽計畫，或你不確定是否符合全部條件，請依你的護照與行程查詢美國使領館的簽證指引。",
+   "fallback_guide": "/zh-hant/usa/esta/",
+   "fallback_label": "先讀 ESTA 總覽與免簽計畫檢查"
+  },
+  "uk_status": {
+   "type": "question",
+   "label": "哪一項最符合你的情況？",
+   "options": [
+    {
+     "value": "british_irish",
+     "label": "英國或愛爾蘭公民",
+     "next": "uk_none_result"
+    },
+    {
+     "value": "uk_visa_holder",
+     "label": "我已持有英國簽證或英國移民身分",
+     "next": "uk_none_result"
+    },
+    {
+     "value": "visa_free",
+     "label": "護照來自適用 ETA 的免簽國家",
+     "next": "uk_eta_result"
+    },
+    {
+     "value": "other",
+     "label": "皆非／不確定",
+     "next": "uk_visa_result"
+    }
+   ]
+  },
+  "uk_none_result": {
+   "type": "result",
+   "country": "uk",
+   "summary": "你不需要英國 ETA。",
+   "forms": [],
+   "note": "英國與愛爾蘭公民不需要 ETA。已持有英國簽證，或在英國居住、工作、就學許可的人也不需要。",
+   "fallback_guide": "/zh-hant/uk/eta/",
+   "fallback_label": "先讀英國 ETA 總覽"
+  },
+  "uk_eta_result": {
+   "type": "result",
+   "country": "uk",
+   "summary": "出發前你需要一份已核准的英國 ETA。",
+   "forms": [
+    {
+     "name": "ETA",
+     "fee": "£20",
+     "feeDisplay": "20 英鎊",
+     "url": "https://www.gov.uk/eta",
+     "guide": "/zh-hant/uk/eta/",
+     "agency": "英國內政部",
+     "deadline": "出發前申請，請預留最長 3 個工作日的處理時間"
+    }
+   ],
+   "note": "英國 ETA 是旅行許可，不是簽證。有效期 2 年或至綁定護照到期（以先到者為準），可多次入境。每位旅客（包括嬰兒與兒童）都需單獨申請。"
+  },
+  "uk_visa_result": {
+   "type": "result",
+   "country": "uk",
+   "summary": "你可能需要英國簽證，而不是 ETA。",
+   "forms": [],
+   "note": "如果你的護照不適用 ETA，或你不確定是否符合 ETA 條件，請依你的國籍與行程查詢英國官方簽證指引。",
+   "fallback_guide": "/zh-hant/uk/eta/",
+   "fallback_label": "先讀英國 ETA 總覽與資格檢查"
+  },
+  "canada_entry": {
+   "type": "question",
+   "label": "你怎麼進入加拿大？",
+   "options": [
+    {
+     "value": "air",
+     "label": "空路（含經加拿大機場轉機）",
+     "next": "canada_passport"
+    },
+    {
+     "value": "land_sea",
+     "label": "汽車、公車、火車或郵輪",
+     "next": "canada_none_result"
+    }
+   ]
+  },
+  "canada_passport": {
+   "type": "question",
+   "label": "你的護照屬於哪一類？",
+   "options": [
+    {
+     "value": "us_citizen_or_pr",
+     "label": "美國公民或美國合法永久居民",
+     "next": "canada_none_result"
+    },
+    {
+     "value": "visa_free",
+     "label": "免簽護照",
+     "next": "canada_eta_result"
+    },
+    {
+     "value": "other",
+     "label": "需簽證護照／不確定",
+     "next": "canada_visa_result"
+    }
+   ]
+  },
+  "canada_eta_result": {
+   "type": "result",
+   "country": "canada",
+   "summary": "搭機或經加拿大機場轉機前，你需要一份已核准的加拿大 eTA。",
+   "forms": [
+    {
+     "name": "eTA",
+     "fee": "CAD $7",
+     "feeDisplay": "7 加元",
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html",
+     "guide": "/zh-hant/canada/eta/",
+     "agency": "加拿大移民、難民及公民部（IRCC）",
+     "deadline": "訂票或登機前"
+    }
+   ],
+   "note": "加拿大 eTA 最長有效期 5 年，或至綁定護照到期（以先到者為準）。可多次入境，且不保證准許入境。"
+  },
+  "canada_none_result": {
+   "type": "result",
+   "country": "canada",
+   "summary": "本次行程你不需要加拿大 eTA。",
+   "forms": [],
+   "note": "開車、搭公車、火車或郵輪抵達的旅客一般不需要 eTA。美國公民免辦。美國合法永久居民自 2022 年 4 月 26 日起也免辦；搭機時請攜帶有效護照及 IRCC 接受的有效綠卡或其他美國身分證明。",
+   "fallback_guide": "/zh-hant/canada/eta/",
+   "fallback_label": "先讀加拿大 eTA 總覽"
+  },
+  "canada_visa_result": {
+   "type": "result",
+   "country": "canada",
+   "summary": "你可能需要加拿大訪客簽證，而不是 eTA。",
+   "forms": [],
+   "note": "如果你的護照需要簽證，或你不確定是否符合 eTA 條件，請依你的護照、旅行紀錄與路線查閱 Canada.ca 官方資格指引。",
+   "fallback_guide": "/zh-hant/canada/eta/",
+   "fallback_label": "先讀加拿大 eTA 總覽與資格檢查"
+  },
+  "nz_passport": {
+   "type": "question",
+   "label": "哪一項最符合你的情況？",
+   "options": [
+    {
+     "value": "nz_au_citizen",
+     "label": "紐西蘭或澳洲公民",
+     "next": "nz_nztd_only_result"
+    },
+    {
+     "value": "visa_waiver",
+     "label": "免簽護照，或搭郵輪抵達",
+     "next": "nz_nztd_nzeta_result"
+    },
+    {
+     "value": "other",
+     "label": "需簽證護照／不確定",
+     "next": "nz_visa_result"
+    }
+   ]
+  },
+  "nz_nztd_only_result": {
+   "type": "result",
+   "country": "new-zealand",
+   "summary": "你需要填寫紐西蘭旅行者聲明（NZTD）。",
+   "forms": [
+    {
+     "name": "NZTD",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://www.travellerdeclaration.govt.nz/",
+     "guide": "/zh-hant/new-zealand/nztd/",
+     "agency": "紐西蘭海關",
+     "deadline": "出發前 24 小時內"
+    }
+   ],
+   "note": "每位入境紐西蘭的人都必須完成免費的 NZTD。持澳洲護照旅行的澳洲公民不需要 NZeTA。"
+  },
+  "nz_nztd_nzeta_result": {
+   "type": "result",
+   "country": "new-zealand",
+   "summary": "你需要同時辦理免費的 NZTD 與一份已核准的 NZeTA。",
+   "forms": [
+    {
+     "name": "NZTD",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://www.travellerdeclaration.govt.nz/",
+     "guide": "/zh-hant/new-zealand/nztd/",
+     "agency": "紐西蘭海關",
+     "deadline": "出發前 24 小時內"
+    },
+    {
+     "name": "NZeTA",
+     "fee": "NZD $17-$23 + IVL NZD $100",
+     "feeDisplay": "17–23 紐幣＋IVL 100 紐幣",
+     "url": "https://nzeta.immigration.govt.nz/",
+     "guide": "/zh-hant/new-zealand/nztd/",
+     "agency": "紐西蘭移民局",
+     "deadline": "預訂行程前，請預留可能長達 72 小時的處理時間"
+    }
+   ],
+   "note": "NZTD 與 NZeTA 相互獨立。免簽空路旅客、郵輪乘客、澳洲永久居民及部分轉機旅客需要 NZeTA。IVL 有豁免情形，包括澳洲永久居民。"
+  },
+  "nz_visa_result": {
+   "type": "result",
+   "country": "new-zealand",
+   "summary": "你需要免費的 NZTD，並可能需要紐西蘭簽證。",
+   "forms": [
+    {
+     "name": "NZTD",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://www.travellerdeclaration.govt.nz/",
+     "guide": "/zh-hant/new-zealand/nztd/",
+     "agency": "紐西蘭海關",
+     "deadline": "出發前 24 小時內"
+    }
+   ],
+   "note": "先完成免費的 NZTD，再依你的護照與行程查詢紐西蘭官方簽證要求。需要簽證時，NZeTA 不能取代簽證。",
+   "fallback_guide": "/zh-hant/new-zealand/nztd/",
+   "fallback_label": "先讀 NZTD 總覽與簽證指引"
+  },
+  "australia_passport": {
+   "type": "question",
+   "label": "你持哪本護照旅行？",
+   "options": [
+    {
+     "value": "eta_eligible",
+     "label": "適用 ETA 的護照（含美國、加拿大、日本、韓國、新加坡、香港、馬來西亞、汶萊）",
+     "next": "australia_eta_result"
+    },
+    {
+     "value": "evisitor",
+     "label": "符合資格的歐洲護照",
+     "next": "australia_evisitor_result"
+    },
+    {
+     "value": "other",
+     "label": "其他護照／不確定",
+     "next": "australia_visa_result"
+    }
+   ]
+  },
+  "australia_eta_result": {
+   "type": "result",
+   "country": "australia",
+   "summary": "前往澳洲前，你需要一份已核准的 ETA 601。",
+   "forms": [
+    {
+     "name": "ETA（subclass 601）",
+     "fee": "AUD $20 app charge",
+     "feeDisplay": "App 申請費 20 澳元",
+     "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601",
+     "guide": "/zh-hant/australia/eta/",
+     "agency": "澳洲內政部",
+     "deadline": "出發前；僅限 App"
+    }
+   ],
+   "note": "ETA 601 沒有官方網頁申請表。只能透過內政部的 AustralianETA App 申請。無簽證申請費，但每次 App 申請收 20 澳元服務費。"
+  },
+  "australia_evisitor_result": {
+   "type": "result",
+   "country": "australia",
+   "summary": "你可以線上申請免費的 eVisitor 651。",
+   "forms": [
+    {
+     "name": "eVisitor（subclass 651）",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/evisitor-651",
+     "guide": "/zh-hant/australia/eta/",
+     "agency": "澳洲內政部",
+     "deadline": "出發前；經 ImmiAccount 線上申請"
+    }
+   ],
+   "note": "符合資格的歐洲護照持有人可透過內政部與 ImmiAccount 線上申請 eVisitor 651，無政府申請費。一般允許 12 個月內多次到訪，每次停留最多 3 個月。"
+  },
+  "australia_visa_result": {
+   "type": "result",
+   "country": "australia",
+   "summary": "你可能需要其他澳洲簽證。",
+   "forms": [],
+   "note": "如果你的護照不適用 ETA 601 或 eVisitor 651，或你不確定，請用內政部官方指引找到符合你護照與行程的簽證。不要使用聲稱提供官方網頁 ETA 表格的網站。",
+   "fallback_guide": "/zh-hant/australia/eta/",
+   "fallback_label": "先讀 ETA 601 與 eVisitor 651 總覽"
+  },
+  "india_status": {
+   "type": "question",
+   "label": "哪一項最符合你的情況？",
+   "options": [
+    {
+     "value": "has_visa",
+     "label": "我已持有印度簽證或 OCI 卡",
+     "next": "india_earrival_result"
+    },
+    {
+     "value": "needs_visa",
+     "label": "我還需要簽證",
+     "next": "india_both_result"
+    },
+    {
+     "value": "other",
+     "label": "不確定",
+     "next": "india_unsure_result"
+    }
+   ]
+  },
+  "india_earrival_result": {
+   "type": "result",
+   "country": "india",
+   "summary": "你需要填寫免費的印度 e-Arrival Card。",
+   "forms": [
+    {
+     "name": "e-Arrival Card",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://indianvisaonline.gov.in/earrival/",
+     "guide": "/zh-hant/india/e-arrival-card/",
+     "agency": "印度內政部移民局",
+     "deadline": "抵達前 72 小時內"
+    }
+   ],
+   "note": "外國國民（包括 OCI 卡持有人）都需提交免費的 e-Arrival Card。它記錄入境資訊，不能取代簽證或 OCI 身分。"
+  },
+  "india_both_result": {
+   "type": "result",
+   "country": "india",
+   "summary": "你需要免費的 e-Arrival Card，以及行程所需的印度簽證。",
+   "forms": [
+    {
+     "name": "e-Arrival Card",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://indianvisaonline.gov.in/earrival/",
+     "guide": "/zh-hant/india/e-arrival-card/",
+     "agency": "印度內政部移民局",
+     "deadline": "抵達前 72 小時內"
+    },
+    {
+     "name": "電子簽（e-Visa）",
+     "fee": "Varies by nationality and validity",
+     "feeDisplay": "依國籍與效期而異",
+     "url": "https://indianvisaonline.gov.in/evisa/tvoa.html",
+     "guide": "/zh-hant/india/e-arrival-card/",
+     "agency": "印度內政部移民局",
+     "deadline": "出發前申請；請確認資格與獲准入境口岸"
+    }
+   ],
+   "note": "這是兩條獨立的官方程序。e-Arrival Card 免費。電子簽費用依國籍與效期而異，另有 3% 銀行手續費，且首次入境只能經列明的機場與海港。"
+  },
+  "india_unsure_result": {
+   "type": "result",
+   "country": "india",
+   "summary": "你需要免費的 e-Arrival Card，並須另行確認簽證狀態。",
+   "forms": [
+    {
+     "name": "e-Arrival Card",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://indianvisaonline.gov.in/earrival/",
+     "guide": "/zh-hant/india/e-arrival-card/",
+     "agency": "印度內政部移民局",
+     "deadline": "抵達前 72 小時內"
+    }
+   ],
+   "note": "免費的 e-Arrival Card 不給予旅行許可。出發前請在官方 indianvisaonline.gov.in 服務確認你的護照與行程是否需要電子簽或其他印度簽證。",
+   "fallback_guide": "/zh-hant/india/e-arrival-card/",
+   "fallback_label": "先讀 e-Arrival Card 與電子簽總覽"
+  },
+  "turkey_passport": {
+   "type": "question",
+   "label": "你持哪本護照旅行？",
+   "options": [
+    {
+     "value": "visa_exempt",
+     "label": "免簽護照（含美國、英國、加拿大、澳洲、中國、歐盟等）",
+     "next": "turkey_none_result"
+    },
+    {
+     "value": "evisa_eligible",
+     "label": "可申辦電子簽的護照",
+     "next": "turkey_evisa_result"
+    },
+    {
+     "value": "conditional",
+     "label": "需持有效申根／美／英／愛爾蘭簽證才符合資格",
+     "next": "turkey_conditional_result"
+    },
+    {
+     "value": "other",
+     "label": "不確定",
+     "next": "turkey_check_result"
+    }
+   ]
+  },
+  "turkey_none_result": {
+   "type": "result",
+   "country": "turkey",
+   "summary": "你不需要土耳其電子簽或入境表。",
+   "forms": [],
+   "note": "免簽訪客可在任一 180 天期間內停留最多 90 天，無需填寫任何表單。向你收土耳其簽證費的網站，賣的是你這趟不需要的東西。",
+   "fallback_guide": "/zh-hant/turkey/evisa/",
+   "fallback_label": "在官方簽證資訊頁查核你的護照"
+  },
+  "turkey_evisa_result": {
+   "type": "result",
+   "country": "turkey",
+   "summary": "出發前你需要土耳其電子簽。",
+   "forms": [
+    {
+     "name": "e-Visa",
+     "fee": "Varies by passport",
+     "feeDisplay": "依護照而異",
+     "url": "https://www.evisa.gov.tr/",
+     "guide": "/zh-hant/turkey/evisa/",
+     "agency": "土耳其共和國外交部",
+     "deadline": "出發前；請在 evisa.gov.tr 申請"
+    }
+   ],
+   "note": "官方系統會在選擇國籍、旅行證件類型與旅行日期後顯示即時費用。請只在 evisa.gov.tr 申請。"
+  },
+  "turkey_conditional_result": {
+   "type": "result",
+   "country": "turkey",
+   "summary": "你可能符合有條件土耳其電子簽的資格。",
+   "forms": [],
+   "note": "部分護照（包括印度、孟加拉、巴基斯坦、菲律賓）只有在持有效申根、美國、英國或愛爾蘭簽證或居留許可，且符合官方電子簽系統顯示的全部其他條件時才可能符合資格。",
+   "fallback_guide": "/zh-hant/turkey/evisa/",
+   "fallback_label": "查閱有條件電子簽的要求"
+  },
+  "turkey_check_result": {
+   "type": "result",
+   "country": "turkey",
+   "summary": "付款前，先查核你確切護照的規則。",
+   "forms": [],
+   "note": "請用 mfa.gov.tr 的外交部清單，確認你的護照與行程屬於簽證豁免、直接電子簽資格、有條件資格，還是需要其他簽證。",
+   "fallback_guide": "/zh-hant/turkey/evisa/",
+   "fallback_label": "開啟土耳其簽證與電子簽指南"
+  },
+  "sri_lanka_fee_scheme": {
+   "type": "question",
+   "label": "你的護照適用免費 ETA 方案嗎？",
+   "options": [
+    {
+     "value": "free_scheme",
+     "label": "40 個免費方案國籍之一，或馬爾地夫、塞席爾、新加坡",
+     "next": "sri_lanka_free_result"
+    },
+    {
+     "value": "paid",
+     "label": "其他護照／不確定",
+     "next": "sri_lanka_paid_result"
+    }
+   ]
+  },
+  "sri_lanka_free_result": {
+   "type": "result",
+   "country": "sri-lanka",
+   "summary": "你仍需 ETA，但費用為零。",
+   "forms": [
+    {
+     "name": "ETA",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://www.eta.gov.lk/slvisa/",
+     "guide": "/zh-hant/sri-lanka/eta/",
+     "agency": "斯里蘭卡移民局",
+     "deadline": "出發前；確認費用顯示為零"
+    }
+   ],
+   "note": "自 2026 年 5 月 25 日起，觀光 ETA 對 40 個列名國籍以及馬爾地夫、塞席爾和新加坡免費。免費指費用為零，不是免辦 ETA。馬爾地夫國民可停留 90 天；其他免費方案旅客 30 天、雙次入境。12 歲以下兒童與兩天過境也免費。"
+  },
+  "sri_lanka_paid_result": {
+   "type": "result",
+   "country": "sri-lanka",
+   "summary": "你需要 ETA，且你的護照需付費。",
+   "forms": [
+    {
+     "name": "ETA",
+     "fee": "USD $20 SAARC or $50 other passport",
+     "feeDisplay": "SAARC 20 美元／其他護照 50 美元",
+     "url": "https://www.eta.gov.lk/slvisa/",
+     "guide": "/zh-hant/sri-lanka/eta/",
+     "agency": "斯里蘭卡移民局",
+     "deadline": "出發前；落地管道費用更高"
+    }
+   ],
+   "note": "免費方案以外的護照，線上觀光 ETA 為 SAARC 國籍 20 美元、其他國籍 50 美元。落地申請更貴，若被要求補件可能被遣返。付款前請查閱移民局的現行費用表。"
+  },
+  "maldives_result": {
+   "type": "result",
+   "country": "maldives",
+   "summary": "你需要免費的 IMUGA 旅行者聲明（入境）。",
+   "forms": [
+    {
+     "name": "Traveller Declaration",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://imuga.immigration.gov.mv/traveller",
+     "guide": "/zh-hant/maldives/traveller-declaration/",
+     "agency": "馬爾地夫移民局",
+     "deadline": "抵達前 96 小時內"
+    }
+   ],
+   "note": "所有外國入境者須在抵達前 96 小時內提交免費聲明。自 2024 年 8 月 15 日起，離境旅客不再需要提交。觀光簽證於抵達時核發，沒有預先核准步驟，聲明不能取代它。"
+  },
+  "taiwan_status": {
+   "type": "question",
+   "label": "哪一項最符合你的情況？",
+   "options": [
+    {
+     "value": "resident_status",
+     "label": "我持外僑居留證、居留簽證、外交人員識別證，或台灣地區居留證明",
+     "next": "taiwan_none_result"
+    },
+    {
+     "value": "other",
+     "label": "皆非／外國訪客或特定許可持有人",
+     "next": "taiwan_twac_result"
+    }
+   ]
+  },
+  "taiwan_none_result": {
+   "type": "result",
+   "country": "taiwan",
+   "summary": "這趟行程你不需要提交入境卡。",
+   "forms": [],
+   "note": "官方首頁將入境卡限定為：無外僑居留證、居留簽證或外交人員識別證的外國人，特定的大陸、香港、澳門許可持有人，以及無戶籍國民中未持台灣地區居留證明者。持有上述居留證件，入境卡就不是你的步驟。",
+   "fallback_guide": "/zh-hant/taiwan/twac/",
+   "fallback_label": "讀讀看誰需要提交入境卡"
+  },
+  "taiwan_twac_result": {
+   "type": "result",
+   "country": "taiwan",
+   "summary": "你需要提交免費的台灣入境卡（TWAC）。",
+   "forms": [
+    {
+     "name": "TWAC",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://twac.immigration.gov.tw/",
+     "guide": "/zh-hant/taiwan/twac/",
+     "agency": "內政部移民署",
+     "deadline": "抵達前 7 天內"
+    }
+   ],
+   "note": "入境卡自 2025 年 10 月 1 日起僅供線上填寫，且免費。提交窗口為抵達前 7 天內（2026 年 7 月放寬）。一人可為最多 10 名旅客個別代填，團體匯入最多支援 16 人。查驗時無需列印，掃描護照即可調出紀錄。"
+  },
+  "egypt_passport": {
+   "type": "question",
+   "label": "你的護照在官方電子簽清單上嗎？",
+   "options": [
+    {
+     "value": "listed",
+     "label": "是，列在官方電子簽 FAQ",
+     "next": "egypt_evisa_result"
+    },
+    {
+     "value": "not_listed",
+     "label": "否／不確定",
+     "next": "egypt_check_result"
+    }
+   ]
+  },
+  "egypt_evisa_result": {
+   "type": "result",
+   "country": "egypt",
+   "summary": "你可以在政府入口網申請埃及電子簽。",
+   "forms": [
+    {
+     "name": "e-Visa",
+     "fee": "USD $30 single / $65 multiple",
+     "feeDisplay": "單次 30 美元／多次 65 美元",
+     "url": "https://www.visa2egypt.gov.eg/eVisa/Home",
+     "guide": "/zh-hant/egypt/evisa/",
+     "agency": "埃及內政部",
+     "deadline": "至少出發前 7 天建立申請"
+    }
+   ],
+   "note": "現行觀光費用為單次入境 30 美元、多次入境 65 美元。核准與下載連結以電子郵件送達；僅有付款確認不等於核准。入境時官方檢核清單要求：護照效期自抵達起至少 6 個月、列印的電子簽、行程表、觀光飯店資訊，以及商務或探親的 supporting letter。"
+  },
+  "egypt_check_result": {
+   "type": "result",
+   "country": "egypt",
+   "summary": "出發前先向埃及使領館確認你的簽證管道。",
+   "forms": [],
+   "note": "官方電子簽 FAQ 列有符合資格的國籍，清單外的護照無法使用該入口。這不代表免簽入境。請向埃及大使館或領事館確認，並另行確認落地簽資格：使領館指引指出，列於預先核准清單的旅客不能辦理落地簽、孟加拉國民須於入境前取得簽證，航空公司應確認登機資格。",
+   "fallback_guide": "/zh-hant/egypt/evisa/",
+   "fallback_label": "讀讀資格與落地簽限制"
+  },
+  "saudi_passport": {
+   "type": "question",
+   "label": "你的護照是 66 個觀光電子簽適用國家之一嗎？",
+   "options": [
+    {
+     "value": "eligible",
+     "label": "是，在 66 國電子簽清單上",
+     "next": "saudi_evisa_result"
+    },
+    {
+     "value": "other",
+     "label": "否／不確定",
+     "next": "saudi_alt_status"
+    }
+   ]
+  },
+  "saudi_evisa_result": {
+   "type": "result",
+   "country": "saudi-arabia",
+   "summary": "你可以申請沙烏地觀光電子簽。",
+   "forms": [
+    {
+     "name": "Tourist eVisa",
+     "fee": "SAR 300 base + insurance and VAT",
+     "feeDisplay": "300 里亞爾起，另加保險與加值稅",
+     "url": "https://visa.visitsaudi.com/",
+     "guide": "/zh-hant/saudi-arabia/tourist-evisa/",
+     "agency": "沙烏地阿拉伯旅遊部",
+     "deadline": "出發前；一般有效期一年，可多次入境，最多停留 90 天"
+    }
+   ],
+   "note": "入口網由旅遊部營運，但主機不是 .gov.sa 後綴。請從沙烏地國家平台 my.gov.sa 或 Visit Saudi 進入，並在輸入資料前核對確切主機名。300 里亞爾基本費不是全部：強制醫療保險、加值稅與付款金額都會影響結帳。此簽證涵蓋觀光、活動、探親訪友、休閒，以及不包括朝覲（Hajj）的副朝（Umrah）。不涵蓋朝覲、就學或工作。"
+  },
+  "saudi_alt_status": {
+   "type": "question",
+   "label": "你是否持有特定的美、英或申根簽證或永久居留，或 GCC 居留身分？",
+   "options": [
+    {
+     "value": "has_alt",
+     "label": "是，其中之一",
+     "next": "saudi_finder_result"
+    },
+    {
+     "value": "none",
+     "label": "否／不確定",
+     "next": "saudi_mission_result"
+    }
+   ]
+  },
+  "saudi_finder_result": {
+   "type": "result",
+   "country": "saudi-arabia",
+   "summary": "請使用 KSA Visa Finder，你的資格適用不同的判定方式。",
+   "forms": [
+    {
+     "name": "KSA Visa Finder",
+     "fee": "Depends on the route the finder returns",
+     "feeDisplay": "依工具返回的路徑而定",
+     "url": "https://my.gov.sa/en/experience/615129/615469",
+     "guide": "/zh-hant/saudi-arabia/tourist-evisa/",
+     "agency": "沙烏地國家統一平台",
+     "deadline": "訂票前；路徑決定費用與條件"
+    }
+   ],
+   "note": "持特定有效美、英或申根簽證或永久居留者，以及 GCC 居民，其判定條件不同於 66 國電子簽清單。過境簽、副朝與 Nusuk 許可、朝覲簽證與 GCC 居民路徑都是條件各異的獨立產品。"
+  },
+  "saudi_mission_result": {
+   "type": "result",
+   "country": "saudi-arabia",
+   "summary": "請透過簽證查找工具或沙烏地使領館確認現行路徑。",
+   "forms": [],
+   "note": "66 國清單外的護照並非免簽。請使用 my.gov.sa 現行的 KSA Visa Finder 或 ksavisa.sa 的 KSA Visa 平台，或透過沙烏地使領館申請。副朝與朝覲各有專屬管道：副朝簽證走 KSA Visa、副朝許可走 Nusuk，朝覲有專屬簽證與許可。",
+   "fallback_guide": "/zh-hant/saudi-arabia/tourist-evisa/",
+   "fallback_label": "讀讀哪條沙烏地簽證路徑適用"
+  },
+  "kenya_eligibility": {
+   "type": "question",
+   "label": "你的護照或旅客身分出現在肯亞現行 eTA 豁免清單上了嗎？",
+   "options": [
+    {
+     "value": "exempt",
+     "label": "是，我已在肯亞入口確認豁免",
+     "next": "kenya_exempt_result"
+    },
+    {
+     "value": "required",
+     "label": "不，我確認需要 eTA",
+     "next": "kenya_eta_result"
+    },
+    {
+     "value": "unknown",
+     "label": "我還沒查過現行清單",
+     "next": "kenya_check_result"
+    }
+   ]
+  },
+  "kenya_exempt_result": {
+   "type": "result",
+   "country": "kenya",
+   "summary": "依你確認的豁免，你不需要肯亞 eTA。",
+   "forms": [],
+   "note": "請攜帶支持豁免的護照或身分證明。現行肯亞政府清單說你不需要的 eTA，就不要付錢買。"
+  },
+  "kenya_eta_result": {
+   "type": "result",
+   "country": "kenya",
+   "summary": "出發前請申請肯亞電子旅行許可（eTA）。",
+   "forms": [
+    {
+     "name": "Kenya eTA",
+     "fee": "USD $30 standard",
+     "feeDisplay": "標準 30 美元",
+     "url": "https://etakenya.go.ke/",
+     "guide": "/zh-hant/kenya/eta/",
+     "agency": "肯亞移民服務局",
+     "deadline": "至少預留 3 個工作日；核准後再出發"
+    }
+   ],
+   "note": "標準政府費用為 30 美元。加值產品或加急處理可能更貴。收據不等於核准。"
+  },
+  "kenya_check_result": {
+   "type": "result",
+   "country": "kenya",
+   "summary": "付款前先查肯亞現行豁免清單。",
+   "forms": [],
+   "note": "現行清單涵蓋 EAC 公民、列名護照國籍與旅客身分豁免。請先在 etakenya.go.ke 確認你確切的護照與身分。"
+  },
+  "israel_eligibility": {
+   "type": "question",
+   "label": "你的護照與行程適用哪條以色列入境路徑？",
+   "options": [
+    {
+     "value": "visa_exempt",
+     "label": "免簽護照，短期觀光或商務",
+     "next": "israel_eta_result"
+    },
+    {
+     "value": "visa_required",
+     "label": "我的護照需要以色列訪客簽證",
+     "next": "israel_visa_result"
+    },
+    {
+     "value": "other_status",
+     "label": "我持豁免的以色列身分或有效以色列簽證",
+     "next": "israel_status_result"
+    },
+    {
+     "value": "unknown",
+     "label": "我不確定",
+     "next": "israel_check_result"
+    }
+   ]
+  },
+  "israel_eta_result": {
+   "type": "result",
+   "country": "israel",
+   "summary": "短期行程前請申請 ETA-IL。",
+   "forms": [
+    {
+     "name": "ETA-IL",
+     "fee": "ILS 25",
+     "feeDisplay": "25 謝克爾",
+     "url": "https://israel-entry.piba.gov.il/",
+     "guide": "/zh-hant/israel/eta-il/",
+     "agency": "以色列人口與移民管理局（PIBA）",
+     "deadline": "在不可退款的行程安排前至少 72 小時申請"
+    }
+   ],
+   "note": "ETA-IL 僅適用於進行符合資格短期行程的免簽公民。費用不退，核准不保證入境。"
+  },
+  "israel_visa_result": {
+   "type": "result",
+   "country": "israel",
+   "summary": "不要申請 ETA-IL。請走以色列訪客簽證管道。",
+   "forms": [],
+   "note": "ETA-IL 不會把需簽證護照變成免簽護照。在這裡付 25 謝克爾也不能取代必需的 B/2 訪客簽證。"
+  },
+  "israel_status_result": {
+   "type": "result",
+   "country": "israel",
+   "summary": "若你目前的以色列身分或簽證已屬豁免，不要重複購買 ETA-IL。",
+   "forms": [],
+   "note": "請確認護照與現有身分對本次行程仍然有效。身分有變動時，使用 PIBA 的資格檢查。"
+  },
+  "israel_check_result": {
+   "type": "result",
+   "country": "israel",
+   "summary": "付款購買 ETA-IL 前，先確認簽證豁免。",
+   "forms": [],
+   "note": "從官方 gov.il 資格頁開始。免簽短期訪客用 ETA-IL；需簽證旅客走簽證管道。"
+  },
+  "cuba_result": {
+   "type": "result",
+   "country": "cuba",
+   "summary": "入境行程請填寫免費的 D'Viajeros 表。",
+   "forms": [
+    {
+     "name": "D'Viajeros",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://dviajeros.mitrans.gob.cu/inicio",
+     "guide": "/zh-hant/cuba/dviajeros/",
+     "agency": "古巴交通部（會同移民、海關與公共衛生部門）",
+     "deadline": "出發前 7 天內"
+    }
+   ],
+   "note": "每位入境旅客（包括兒童）每次入境都要填 D'Viajeros。它不是觀光簽證。若行程需要觀光電子簽，請先取得該付費代碼，再填入 D'Viajeros 以產生 QR Code。"
+  },
+  "curacao_result": {
+   "type": "result",
+   "country": "curacao",
+   "summary": "每位訪客都要填寫庫拉索免費的數位移民卡。",
+   "forms": [
+    {
+     "name": "Digital Immigration Card",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://dicardcuracao.com/dicard/",
+     "guide": "/zh-hant/curacao/digital-immigration-card/",
+     "agency": "庫拉索移民局（經庫拉索觀光局指定入口）",
+     "deadline": "出發前 7 天內；最遲抵達前 1 小時"
+    }
+   ],
+   "note": "指定主機使用 .com，不是政府後綴。請從 curacao.com 的 DI Card 連結進入以驗證。官方 DI Card 本身絕不收費。"
+  },
+  "colombia_result": {
+   "type": "result",
+   "country": "colombia",
+   "summary": "這次入境或離境，你可以填寫免費且可選的 Check-Mig 預先登記。",
+   "forms": [
+    {
+     "name": "Check-Mig",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://apps.migracioncolombia.gov.co/pre-registro/public/",
+     "guide": "/zh-hant/colombia/check-mig/",
+     "agency": "哥倫比亞移民局特別行政單位",
+     "deadline": "出發前 72 小時起至出發前 1 小時"
+    }
+   ],
+   "note": "哥倫比亞移民局表示 Check-Mig 為可選，建議填寫以加快查驗。它不是簽證或入境核准，政府服務不收費。"
+  },
+  "laos_eligibility": {
+   "type": "question",
+   "label": "你是否同時確認了電子簽資格與指定入境口岸？",
+   "options": [
+    {
+     "value": "eligible",
+     "label": "是，我的護照符合資格，且我會使用 9 個電子簽口岸之一",
+     "next": "laos_evisa_result"
+    },
+    {
+     "value": "other",
+     "label": "否／我不確定",
+     "next": "laos_check_result"
+    }
+   ]
+  },
+  "laos_evisa_result": {
+   "type": "result",
+   "country": "laos",
+   "summary": "出發前請申請寮國觀光電子簽。",
+   "forms": [
+    {
+     "name": "Lao Tourist eVisa",
+     "fee": "Varies by passport",
+     "feeDisplay": "依護照而異",
+     "url": "https://laoevisa.gov.la/application",
+     "guide": "/zh-hant/laos/evisa/",
+     "agency": "寮國外交部領事司",
+     "deadline": "抵達前至少 5 天；一般處理 3 個工作日"
+    }
+   ],
+   "note": "電子簽僅限單次入境觀光，可停留 30 天，適用 9 個指定口岸。請列印核准函，並持與申請相同的護照。"
+  },
+  "laos_check_result": {
+   "type": "result",
+   "country": "laos",
+   "summary": "付款前先查核護照清單與入境口岸。",
+   "forms": [],
+   "note": "免簽、電子簽與落地簽是三條不同路徑。電子簽不能在非指定口岸使用，且這種情況官方費用不予退還。"
+  },
+  "azerbaijan_passport": {
+   "type": "question",
+   "label": "現行外交部免簽清單是否涵蓋你將使用的護照與行程日期？",
+   "options": [
+    {
+     "value": "yes",
+     "label": "是，這趟免簽",
+     "next": "azerbaijan_visa_free"
+    },
+    {
+     "value": "no",
+     "label": "否或未列",
+     "next": "azerbaijan_evisa_eligible"
+    }
+   ]
+  },
+  "azerbaijan_evisa_eligible": {
+   "type": "question",
+   "label": "evisa.gov.az 是否將你的護照列為 ASAN 電子簽適用？",
+   "options": [
+    {
+     "value": "yes",
+     "label": "是",
+     "next": "azerbaijan_apply"
+    },
+    {
+     "value": "no",
+     "label": "否",
+     "next": "azerbaijan_consular"
+    }
+   ]
+  },
+  "azerbaijan_visa_free": {
+   "type": "result",
+   "country": "azerbaijan",
+   "summary": "這趟行程適用亞塞拜然現行免簽管道。",
+   "forms": [],
+   "note": "這趟行程不需要 ASAN 電子簽表。不要付錢請人代辦；請攜帶護照與旅行日期符合現行外交部規定的證明。"
+  },
+  "azerbaijan_apply": {
+   "type": "result",
+   "country": "azerbaijan",
+   "summary": "請使用官方 ASAN 電子簽入口。",
+   "forms": [
+    {
+     "name": "ASAN 電子簽證",
+     "fee": "USD $20 + $5 service fee",
+     "feeDisplay": "20 美元＋5 美元服務費",
+     "url": "https://www.evisa.gov.az/en/",
+     "guide": "/zh-hant/azerbaijan/evisa/",
+     "agency": "亞塞拜然總統直屬國家公共服務與社會創新局",
+     "deadline": "標準服務請於抵達前至少 3 個工作日申請。"
+    }
+   ],
+   "note": "電子簽為單次入境，有效期 90 天，可停留最多 30 天。"
+  },
+  "azerbaijan_consular": {
+   "type": "result",
+   "country": "azerbaijan",
+   "summary": "這本護照無法使用 ASAN 線上管道。",
+   "forms": [],
+   "note": "不要硬走線上申請。請依外交部管道聯繫亞塞拜然使領館。"
+  },
+  "myanmar_eligibility": {
+   "type": "question",
+   "label": "你的護照出現在現行觀光電子簽資格清單上了嗎？",
+   "options": [
+    {
+     "value": "yes",
+     "label": "是",
+     "next": "myanmar_evisa_result"
+    },
+    {
+     "value": "no_unsure",
+     "label": "否或不確定",
+     "next": "myanmar_not_eligible"
+    }
+   ]
+  },
+  "myanmar_evisa_result": {
+   "type": "result",
+   "country": "myanmar",
+   "summary": "出發前請申請緬甸觀光電子簽。",
+   "forms": [
+    {
+     "name": "Myanmar Tourist eVisa",
+     "fee": "USD $50 in the official guide; confirm Step 5",
+     "feeDisplay": "官方指南為 50 美元；請在步驟 5 確認",
+     "url": "https://evisa.moip.gov.mm/home",
+     "guide": "/zh-hant/myanmar/tourist-evisa/",
+     "agency": "緬甸移民與人口部",
+     "deadline": "至少預留 3 個工作日"
+    }
+   ],
+   "note": "單次入境、可停留 28 天、核准函 90 天有效，現行 4 個入境口岸。核准後請列印一份。"
+  },
+  "myanmar_not_eligible": {
+   "type": "result",
+   "country": "myanmar",
+   "summary": "官方清單確認資格前，不要付錢辦觀光電子簽。",
+   "forms": [],
+   "note": "觀光與商務清單不同。護照不符合資格時，請聯繫緬甸使領館取得正確的簽證管道。"
+  },
+  "nepal_route": {
+   "type": "question",
+   "label": "哪種護照或落地簽情況適用於你？",
+   "options": [
+    {
+     "value": "indian",
+     "label": "印度公民",
+     "next": "nepal_visa_exempt"
+    },
+    {
+     "value": "chinese_gratis",
+     "label": "中國護照或其他已確認的免費類別",
+     "next": "nepal_gratis_result"
+    },
+    {
+     "value": "voa_eligible",
+     "label": "可辦落地簽的護照",
+     "next": "nepal_voa_result"
+    },
+    {
+     "value": "advance_required",
+     "label": "不符合落地簽資格或不確定",
+     "next": "nepal_advance_result"
+    }
+   ]
+  },
+  "nepal_visa_exempt": {
+   "type": "result",
+   "country": "nepal",
+   "summary": "印度公民不需要尼泊爾簽證。",
+   "forms": [],
+   "note": "無需觀光簽證表格或費用。出發前請查閱現行的政府入境文件規定。"
+  },
+  "nepal_gratis_result": {
+   "type": "result",
+   "country": "nepal",
+   "summary": "請完成適用的觀光簽證流程，但簽證費可能免除。",
+   "forms": [
+    {
+     "name": "Nepal Online Tourist Visa Form",
+     "fee": "FREE for confirmed gratis categories",
+     "feeDisplay": "已確認免費類別者免費",
+     "url": "https://nepaliport.immigration.gov.np/on-arrival/tourist-visa",
+     "guide": "/zh-hant/nepal/visa-on-arrival/",
+     "agency": "尼泊爾政府移民局",
+     "deadline": "請於出示條碼收據前 15 天內提交"
+    }
+   ],
+   "note": "中國國民屬現行免費觀光簽類別。其他免費類別附有條件；出發前請確認確切類別。"
+  },
+  "nepal_voa_result": {
+   "type": "result",
+   "country": "nepal",
+   "summary": "先預填觀光簽證表，再於口岸取得簽證。",
+   "forms": [
+    {
+     "name": "Nepal Online Tourist Visa Form",
+     "fee": "USD $30 / $50 / $125",
+     "feeDisplay": "30 / 50 / 125 美元",
+     "url": "https://nepaliport.immigration.gov.np/on-arrival/tourist-visa",
+     "guide": "/zh-hant/nepal/visa-on-arrival/",
+     "agency": "尼泊爾政府移民局",
+     "deadline": "條碼收據 15 天內有效"
+    }
+   ],
+   "note": "線上收據不是簽證。請持收據、付款證明與護照向移民官辦理。"
+  },
+  "nepal_advance_result": {
+   "type": "result",
+   "country": "nepal",
+   "summary": "請改用預先 ETA 或尼泊爾使領館管道，而非落地簽。",
+   "forms": [
+    {
+     "name": "NepaliPort ETA／使領館簽證服務",
+     "fee": "Varies by route",
+     "feeDisplay": "依路徑而異",
+     "url": "https://nepaliport.immigration.gov.np/",
+     "guide": "/zh-hant/nepal/visa-on-arrival/",
+     "agency": "尼泊爾政府移民局",
+     "deadline": "出發前安排"
+    }
+   ],
+   "note": "NepaliPort 將落地簽、ETA 與使領館簽證列為獨立服務。護照需要預先核准時，請勿提交落地簽表格。"
+  },
+  "pakistan_route": {
+   "type": "question",
+   "label": "你的護照適用哪條巴基斯坦觀光入境路徑？",
+   "options": [
+    {
+     "value": "gcc_exempt",
+     "label": "沙烏地阿拉伯、科威特、阿聯酋、阿曼、卡達或巴林公民",
+     "next": "pakistan_visa_exempt"
+    },
+    {
+     "value": "vpa_eligible",
+     "label": "護照在現行抵達前簽證（VPA）清單上",
+     "next": "pakistan_vpa_result"
+    },
+    {
+     "value": "other_unsure",
+     "label": "其他護照或不確定",
+     "next": "pakistan_regular_result"
+    }
+   ]
+  },
+  "pakistan_visa_exempt": {
+   "type": "result",
+   "country": "pakistan",
+   "summary": "現行 GCC 豁免：觀光或商務不需 ETA 或簽證。",
+   "forms": [],
+   "note": "此路徑目前涵蓋沙烏地阿拉伯、科威特、阿拉伯聯合大公國、阿曼、卡達和巴林公民，可停留最多 90 天。出發前請重新查閱官方公告。"
+  },
+  "pakistan_vpa_result": {
+   "type": "result",
+   "country": "pakistan",
+   "summary": "請使用免費的抵達前簽證（VPA）觀光申請。",
+   "forms": [
+    {
+     "name": "Pakistan Visa Prior to Arrival",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://visa.nadra.gov.pk/",
+     "guide": "/zh-hant/pakistan/visa-prior-to-arrival/",
+     "agency": "巴基斯坦移民與護照總局／NADRA",
+     "deadline": "出發前取得簽證核准通知（Visa Grant Notice）"
+    }
+   ],
+   "note": "請下載核發的簽證核准通知。效期、入境次數與允許停留以該通知為準；不要從一般資格頁推斷統一停留天數。"
+  },
+  "pakistan_regular_result": {
+   "type": "result",
+   "country": "pakistan",
+   "summary": "付款前先查一般線上簽證或使領館管道。",
+   "forms": [
+    {
+     "name": "巴基斯坦線上簽證系統",
+     "fee": "Varies by passport and category",
+     "feeDisplay": "依護照與類別而異",
+     "url": "https://visa.nadra.gov.pk/",
+     "guide": "/zh-hant/pakistan/visa-prior-to-arrival/",
+     "agency": "巴基斯坦移民與護照總局／NADRA",
+     "deadline": "出發前安排"
+    }
+   ],
+   "note": "一般簽證費用採對等原則。免費 VPA 是獨立產品，僅供現行符合資格的護照使用。"
+  },
+  "uzbekistan_route": {
+   "type": "question",
+   "label": "你是否查過烏茲別克現行免簽清單對此護照與行程的規定？",
+   "options": [
+    {
+     "value": "confirmed_free",
+     "label": "是，這趟符合現行免簽規定",
+     "next": "uzbekistan_visa_free_result"
+    },
+    {
+     "value": "confirmed_not_free",
+     "label": "是，需要簽證",
+     "next": "uzbekistan_evisa_eligibility"
+    },
+    {
+     "value": "not_checked",
+     "label": "否或不確定",
+     "next": "uzbekistan_check_first"
+    }
+   ]
+  },
+  "uzbekistan_visa_free_result": {
+   "type": "result",
+   "country": "uzbekistan",
+   "summary": "符合現行免簽規定的行程不需要電子簽表格。",
+   "forms": [],
+   "note": "不需要表格，也沒有電子簽費用。請遵循外交部該國籍條目中確切的期間、護照與機票條件。"
+  },
+  "uzbekistan_check_first": {
+   "type": "result",
+   "country": "uzbekistan",
+   "summary": "開啟付費電子簽申請前，先查現行外交部免簽清單。",
+   "forms": [],
+   "note": "免簽期間與條件各有不同。未對照現行政府頁面確認護照與行程前，請勿付款。"
+  },
+  "uzbekistan_evisa_eligibility": {
+   "type": "question",
+   "label": "護照是否列在現行電子簽資格附錄 1？",
+   "options": [
+    {
+     "value": "eligible",
+     "label": "是",
+     "next": "uzbekistan_evisa_result"
+    },
+    {
+     "value": "not_eligible",
+     "label": "否或不確定",
+     "next": "uzbekistan_mission_result"
+    }
+   ]
+  },
+  "uzbekistan_evisa_result": {
+   "type": "result",
+   "country": "uzbekistan",
+   "summary": "請透過官方烏茲別克電子簽入口申請。",
+   "forms": [
+    {
+     "name": "Uzbekistan eVisa",
+     "fee": "USD $20 single / $35 double / $50 multiple",
+     "feeDisplay": "單次 20 美元／兩次 35 美元／多次 50 美元",
+     "url": "https://e-visa.gov.uz/application",
+     "guide": "/zh-hant/uzbekistan/evisa/",
+     "agency": "烏茲別克共和國外交部",
+     "deadline": "抵達前至少 3 個工作日申請"
+    }
+   ],
+   "note": "審核需 2 個工作日（不含提交日）。電子簽可停留最多 30 天，自登記起 90 天內入境有效。"
+  },
+  "uzbekistan_mission_result": {
+   "type": "result",
+   "country": "uzbekistan",
+   "summary": "現行附錄 1 確認資格前，不要使用電子簽表格。",
+   "forms": [],
+   "note": "入口會把簡化電子簽清單外的護照導向相應的烏茲別克駐外使領館。"
+  },
+  "georgia_passport": {
+   "type": "question",
+   "label": "喬治亞現行免簽清單對你的護照怎麼說？",
+   "options": [
+    {
+     "value": "visa_free",
+     "label": "我的護照在整整一年免簽清單上",
+     "next": "georgia_none_result"
+    },
+    {
+     "value": "evisa_eligible",
+     "label": "我需要簽證，且官方入口接受我的護照",
+     "next": "georgia_evisa_result"
+    },
+    {
+     "value": "not_sure",
+     "label": "我不確定",
+     "next": "georgia_check_result"
+    }
+   ]
+  },
+  "georgia_none_result": {
+   "type": "result",
+   "country": "georgia",
+   "summary": "這趟免簽行程你不需要喬治亞電子簽。",
+   "forms": [],
+   "note": "現行政府附件所列國家的公民可免簽入境並停留整整一年。不需要任何表格。在這條路徑上向你收喬治亞電子簽費用的人，賣的是你不需要的申請。"
+  },
+  "georgia_evisa_result": {
+   "type": "result",
+   "country": "georgia",
+   "summary": "請使用官方喬治亞電子簽流程。",
+   "forms": [
+    {
+     "name": "Georgia e-Visa",
+     "fee": "USD 20 + 2% service fee + USD 15 DuVerify",
+     "feeDisplay": "20 美元＋2% 服務費＋15 美元 DuVerify",
+     "url": "https://www.evisa.gov.ge/GeoVisa/en/VisaApp",
+     "guide": "/zh-hant/georgia/evisa/",
+     "agency": "喬治亞外交部",
+     "deadline": "至少預留 5 個工作日；24 小時內完成 DuVerify"
+    }
+   ],
+   "note": "現行流程有兩個強制付費步驟。簽證效期與允許停留依所選護照而定。"
+  },
+  "georgia_check_result": {
+   "type": "result",
+   "country": "georgia",
+   "summary": "付款前先查現行政府清單。",
+   "forms": [],
+   "note": "在現行免簽命令中找到護照國家；只有確實需要簽證且官方電子簽入口接受該旅行證件時，才使用電子簽入口。"
+  },
+  "oman_eligibility": {
+   "type": "question",
+   "label": "哪條阿曼入境路徑符合你的護照與行程？",
+   "options": [
+    {
+     "value": "gcc_citizen",
+     "label": "GCC 公民",
+     "next": "oman_none_result"
+    },
+    {
+     "value": "fourteen_day_exempt",
+     "label": "符合現行 14 天免簽",
+     "next": "oman_exempt_result"
+    },
+    {
+     "value": "evisa",
+     "label": "ROP 申請引導工具顯示可辦電子簽",
+     "next": "oman_evisa_result"
+    },
+    {
+     "value": "not_sure",
+     "label": "我不確定",
+     "next": "oman_check_result"
+    }
+   ]
+  },
+  "oman_none_result": {
+   "type": "result",
+   "country": "oman",
+   "summary": "GCC 公民不需要阿曼簽證。",
+   "forms": [],
+   "note": "巴林、科威特、卡達、沙烏地阿拉伯與阿拉伯聯合大公國公民可免簽入境阿曼。不需要任何表格。"
+  },
+  "oman_exempt_result": {
+   "type": "result",
+   "country": "oman",
+   "summary": "這趟 14 天免簽行程不需要電子簽。",
+   "forms": [],
+   "note": "請閱讀全部現行條件，包括第二組資格規則。14 天豁免不可延長或轉換。符合條件的行程不需要電子簽表格。"
+  },
+  "oman_evisa_result": {
+   "type": "result",
+   "country": "oman",
+   "summary": "請申請皇家阿曼警察精靈顯示的簽證子類型。",
+   "forms": [
+    {
+     "name": "Oman eVisa",
+     "fee": "Varies by visa type",
+     "feeDisplay": "依簽證類型而異",
+     "url": "https://evisa.rop.gov.om/visa-eligibility?tabId=eiwscr",
+     "guide": "/zh-hant/oman/evisa/",
+     "agency": "皇家阿曼警察",
+     "deadline": "抵達前至少 4 天申請；處理時間可能不同"
+    }
+   ],
+   "note": "請使用資格結果中該確切子類型顯示的費用、停留時間與條件。"
+  },
+  "oman_check_result": {
+   "type": "result",
+   "country": "oman",
+   "summary": "先查現行豁免清單與皇家警察精靈。",
+   "forms": [],
+   "note": "從外交部現行的兩組豁免頁面開始。若未涵蓋你的行程，請在皇家阿曼警察精靈中輸入真實護照與 GCC 居民身分。"
+  },
+  "qatar_eligibility": {
+   "type": "question",
+   "label": "卡達即時簽證檢查器對你的護照與身分顯示什麼？",
+   "options": [
+    {
+     "value": "gcc_citizen",
+     "label": "我是 GCC 公民",
+     "next": "qatar_none_result"
+    },
+    {
+     "value": "visa_free",
+     "label": "免簽入境",
+     "next": "qatar_free_result"
+    },
+    {
+     "value": "a1",
+     "label": "申請 Hayya 觀光簽證 A1",
+     "next": "qatar_a1_result"
+    },
+    {
+     "value": "other_hayya",
+     "label": "申請其他提供的 Hayya 類別",
+     "next": "qatar_hayya_result"
+    },
+    {
+     "value": "not_sure",
+     "label": "我不確定",
+     "next": "qatar_check_result"
+    }
+   ]
+  },
+  "qatar_none_result": {
+   "type": "result",
+   "country": "qatar",
+   "summary": "GCC 公民不需要卡達簽證。",
+   "forms": [],
+   "note": "巴林、科威特、阿曼、沙烏地阿拉伯與阿拉伯聯合大公國公民免簽入境。Hayya 表示此身分憑護照或 GCC 證件即可。"
+  },
+  "qatar_free_result": {
+   "type": "result",
+   "country": "qatar",
+   "summary": "這條免費入境路徑不需要付費的 Hayya 觀光簽證。",
+   "forms": [],
+   "note": "請閱讀並滿足即時檢查器為你的護照顯示的每一項條件。超過 102 個國家可免費入境，但確切的停留與文件條件各有不同。"
+  },
+  "qatar_a1_result": {
+   "type": "result",
+   "country": "qatar",
+   "summary": "請申請 Hayya 觀光簽證 A1。",
+   "forms": [
+    {
+     "name": "Hayya Tourist Visa (A1)",
+     "fee": "QAR 100",
+     "feeDisplay": "100 里亞爾",
+     "url": "https://hayya.qa/en?category=WVE",
+     "guide": "/zh-hant/qatar/hayya-evisa/",
+     "agency": "卡達旅遊局／Hayya"
+    }
+   ],
+   "note": "卡達旅遊局表示 A1 路徑要求在申請時提供飯店預訂，並在核准後付款。"
+  },
+  "qatar_hayya_result": {
+   "type": "result",
+   "country": "qatar",
+   "summary": "請使用即時檢查器顯示的 Hayya 類別。",
+   "forms": [
+    {
+     "name": "Hayya e-Visa",
+     "fee": "QAR 100 tourist visa; confirm the offered category",
+     "feeDisplay": "觀光簽 100 里亞爾；請確認提供的類別",
+     "url": "https://hayya.qa/en?category=WVE",
+     "guide": "/zh-hant/qatar/hayya-evisa/",
+     "agency": "卡達旅遊局／Hayya"
+    }
+   ],
+   "note": "A2、A3 與 A4 服務不同的居留、簽證身分或同行者群組。僅使用為申請人提供的類別。"
+  },
+  "qatar_check_result": {
+   "type": "result",
+   "country": "qatar",
+   "summary": "開啟 Hayya 前，先用卡達旅遊局即時檢查器。",
+   "forms": [],
+   "note": "請輸入真實護照、GCC 身分與目前的居留或符合資格的簽證答案。免費入境的旅客不應被導向付費的 A1 申請。"
+  },
+  "bahrain_route": {
+   "type": "question",
+   "label": "官方資格檢查顯示哪條巴林路徑？",
+   "options": [
+    {
+     "value": "on_arrival",
+     "label": "落地簽",
+     "next": "bahrain_arrival_result"
+    },
+    {
+     "value": "online",
+     "label": "線上訪客電子簽",
+     "next": "bahrain_product"
+    },
+    {
+     "value": "guarantor",
+     "label": "透過保證人辦理簽證",
+     "next": "bahrain_guarantor_result"
+    },
+    {
+     "value": "not_sure",
+     "label": "我不確定",
+     "next": "bahrain_check_result"
+    }
+   ]
+  },
+  "bahrain_arrival_result": {
+   "type": "result",
+   "country": "bahrain",
+   "summary": "請遵循為你的護照顯示的落地簽條件。",
+   "forms": [],
+   "note": "落地簽路徑不需要這份線上電子簽表格。它是另一條資格路徑，且不一定免費。能否入境仍取決於條件與移民官的決定。"
+  },
+  "bahrain_product": {
+   "type": "question",
+   "label": "資格結果提供哪種訪客電子簽產品？",
+   "options": [
+    {
+     "value": "two_week",
+     "label": "兩週單次入境",
+     "next": "bahrain_two_week_result"
+    },
+    {
+     "value": "three_month",
+     "label": "三個月多次入境",
+     "next": "bahrain_three_month_result"
+    },
+    {
+     "value": "one_year",
+     "label": "一年多次入境",
+     "next": "bahrain_one_year_result"
+    },
+    {
+     "value": "five_year",
+     "label": "五年多次入境",
+     "next": "bahrain_five_year_result"
+    }
+   ]
+  },
+  "bahrain_two_week_result": {
+   "type": "result",
+   "country": "bahrain",
+   "summary": "請申請符合資格的兩週單次入境訪客電子簽。",
+   "forms": [
+    {
+     "name": "Bahrain two-week single-entry Visit eVisa",
+     "fee": "BD 13",
+     "feeDisplay": "13 第納爾",
+     "url": "https://www.evisa.gov.bh/",
+     "guide": "/zh-hant/bahrain/evisa/",
+     "agency": "國籍、護照與居留事務局（NPRA）",
+     "deadline": "約 3–5 個工作日；特殊情況可能更久"
+    }
+   ],
+   "note": "公布的總額為簽證 9 第納爾加申請 4 第納爾。付款前請閱讀即時產品條件。"
+  },
+  "bahrain_three_month_result": {
+   "type": "result",
+   "country": "bahrain",
+   "summary": "請申請符合資格的三個月多次入境訪客電子簽。",
+   "forms": [
+    {
+     "name": "Bahrain three-month multiple-entry Visit eVisa",
+     "fee": "BD 29",
+     "feeDisplay": "29 第納爾",
+     "url": "https://www.evisa.gov.bh/",
+     "guide": "/zh-hant/bahrain/evisa/",
+     "agency": "國籍、護照與居留事務局（NPRA）",
+     "deadline": "約 3–5 個工作日；特殊情況可能更久"
+    }
+   ],
+   "note": "公布的總額為核發 25 第納爾加申請 4 第納爾。付款前請閱讀即時產品條件。"
+  },
+  "bahrain_one_year_result": {
+   "type": "result",
+   "country": "bahrain",
+   "summary": "請申請符合資格的一年多次入境訪客電子簽。",
+   "forms": [
+    {
+     "name": "Bahrain one-year multiple-entry Visitor eVisa",
+     "fee": "BD 44",
+     "feeDisplay": "44 第納爾",
+     "url": "https://www.evisa.gov.bh/",
+     "guide": "/zh-hant/bahrain/evisa/",
+     "agency": "國籍、護照與居留事務局（NPRA）",
+     "deadline": "約 3–5 個工作日；特殊情況可能更久"
+    }
+   ],
+   "note": "只有官方資格結果出現此產品時才使用。付款前請閱讀效期與停留期間條件。"
+  },
+  "bahrain_five_year_result": {
+   "type": "result",
+   "country": "bahrain",
+   "summary": "請申請符合資格的五年多次入境訪客電子簽。",
+   "forms": [
+    {
+     "name": "Bahrain five-year multiple-entry Visit eVisa",
+     "fee": "BD 64",
+     "feeDisplay": "64 第納爾",
+     "url": "https://www.evisa.gov.bh/",
+     "guide": "/zh-hant/bahrain/evisa/",
+     "agency": "國籍、護照與居留事務局（NPRA）",
+     "deadline": "約 3–5 個工作日；特殊情況可能更久"
+    }
+   ],
+   "note": "政府服務頁為此產品公布了較窄的適用國籍範圍。只有即時資格結果提供時才使用。"
+  },
+  "bahrain_guarantor_result": {
+   "type": "result",
+   "country": "bahrain",
+   "summary": "這條路徑必須由巴林保證人提出申請。",
+   "forms": [],
+   "note": "NPRA 列出的可能保證人包括航空公司、住宿地點、巴林旅行社、巴林公司與巴林公民。這不是旅客直接申請的電子簽表格。"
+  },
+  "bahrain_check_result": {
+   "type": "result",
+   "country": "bahrain",
+   "summary": "請查閱兩份官方清單並執行 NPRA 資格工具。",
+   "forms": [],
+   "note": "使用護照國籍、現行 GCC 身分與真實目的。不要只因某國出現在另一份落地簽清單上，就開始付費的線上申請。"
+  },
+  "tanzania_route": {
+   "type": "question",
+   "label": "哪條坦尚尼亞路徑符合你的護照與目的？",
+   "options": [
+    {
+     "value": "exempt",
+     "label": "免簽護照",
+     "next": "tanzania_exempt_result"
+    },
+    {
+     "value": "ordinary",
+     "label": "普通觀光簽證",
+     "next": "tanzania_ordinary_result"
+    },
+    {
+     "value": "usa_tourism",
+     "label": "美國護照觀光",
+     "next": "tanzania_multiple_result"
+    },
+    {
+     "value": "transit",
+     "label": "前往第三國的過境",
+     "next": "tanzania_transit_result"
+    },
+    {
+     "value": "not_sure",
+     "label": "我不確定",
+     "next": "tanzania_check_result"
+    }
+   ]
+  },
+  "tanzania_exempt_result": {
+   "type": "result",
+   "country": "tanzania",
+   "summary": "這條免簽路徑不需要坦尚尼亞簽證表格。",
+   "forms": [],
+   "note": "請在現行移民服務豁免清單上確認護照。護照與行程確實豁免時，不要付錢辦電子簽。"
+  },
+  "tanzania_ordinary_result": {
+   "type": "result",
+   "country": "tanzania",
+   "summary": "請在政府入口申請普通簽證（Ordinary Visa）。",
+   "forms": [
+    {
+     "name": "Tanzania Ordinary Visa",
+     "fee": "USD 50",
+     "feeDisplay": "50 美元",
+     "url": "https://visa.immigration.go.tz/",
+     "guide": "/zh-hant/tanzania/evisa/",
+     "agency": "坦尚尼亞移民服務局",
+     "deadline": "一般申請 10 天內處理"
+    }
+   ],
+   "note": "普通簽證是美國護照持有人以外的一般觀光路徑。有效期最長 90 天。"
+  },
+  "tanzania_multiple_result": {
+   "type": "result",
+   "country": "tanzania",
+   "summary": "美國護照觀光請使用多次入境簽證（Multiple Visa）。",
+   "forms": [
+    {
+     "name": "Tanzania Multiple Visa",
+     "fee": "USD 100",
+     "feeDisplay": "100 美元",
+     "url": "https://visa.immigration.go.tz/",
+     "guide": "/zh-hant/tanzania/evisa/",
+     "agency": "坦尚尼亞移民服務局",
+     "deadline": "一般申請 10 天內處理"
+    }
+   ],
+   "note": "指引要求美國護照持有人觀光時使用多次入境簽證，即使只打算入境一次。"
+  },
+  "tanzania_transit_result": {
+   "type": "result",
+   "country": "tanzania",
+   "summary": "過境簽證（Transit Visa）僅適用於前往第三國的過境。",
+   "forms": [
+    {
+     "name": "Tanzania Transit Visa",
+     "fee": "USD 30",
+     "feeDisplay": "30 美元",
+     "url": "https://visa.immigration.go.tz/",
+     "guide": "/zh-hant/tanzania/evisa/",
+     "agency": "坦尚尼亞移民服務局",
+     "deadline": "一般申請 10 天內處理"
+    }
+   ],
+   "note": "過境簽證不是觀光用。它最多允許 7 天，並要求目的地簽證及／或後續機票證明。"
+  },
+  "tanzania_check_result": {
+   "type": "result",
+   "country": "tanzania",
+   "summary": "申請前請閱讀現行的豁免、轉介與簽證類型指引。",
+   "forms": [],
+   "note": "費用與處理路徑取決於護照與目的。轉介（referral）案例必須線上申請並等待核准。"
+  },
+  "ethiopia_route": {
+   "type": "question",
+   "label": "哪條衣索比亞觀光入境路徑符合你的護照與停留？",
+   "options": [
+    {
+     "value": "exempt",
+     "label": "肯亞或吉布地護照豁免",
+     "next": "ethiopia_exempt_result"
+    },
+    {
+     "value": "on_arrival",
+     "label": "符合落地觀光簽資格",
+     "next": "ethiopia_arrival_result"
+    },
+    {
+     "value": "thirty",
+     "label": "30 天觀光電子簽",
+     "next": "ethiopia_30_result"
+    },
+    {
+     "value": "ninety",
+     "label": "90 天觀光電子簽",
+     "next": "ethiopia_90_result"
+    },
+    {
+     "value": "land_or_unsure",
+     "label": "陸路入境或不確定",
+     "next": "ethiopia_check_result"
+    }
+   ]
+  },
+  "ethiopia_exempt_result": {
+   "type": "result",
+   "country": "ethiopia",
+   "summary": "這項護照豁免不需要衣索比亞觀光簽證表格。",
+   "forms": [],
+   "note": "官方頁面說明，持有效護照的肯亞與吉布地公民可免簽入境。"
+  },
+  "ethiopia_arrival_result": {
+   "type": "result",
+   "country": "ethiopia",
+   "summary": "請使用為該護照顯示的獨立落地觀光簽路徑。",
+   "forms": [],
+   "note": "請查閱現行官方落地清單及其條件。此結果不會把旅客導向付費的線上電子簽表格。"
+  },
+  "ethiopia_30_result": {
+   "type": "result",
+   "country": "ethiopia",
+   "summary": "請申請 30 天單次入境觀光電子簽。",
+   "forms": [
+    {
+     "name": "Ethiopia 30-day Tourist eVisa",
+     "fee": "USD 62",
+     "feeDisplay": "62 美元",
+     "url": "https://www.evisa.gov.et/visa",
+     "guide": "/zh-hant/ethiopia/evisa/",
+     "agency": "衣索比亞移民與公民身分服務局",
+     "deadline": "一般 3 天；請於預計抵達前至少 3 天申請"
+    }
+   ],
+   "note": "效期自申請中填寫的預計入境日期起算。"
+  },
+  "ethiopia_90_result": {
+   "type": "result",
+   "country": "ethiopia",
+   "summary": "請申請 90 天單次入境觀光電子簽。",
+   "forms": [
+    {
+     "name": "Ethiopia 90-day Tourist eVisa",
+     "fee": "USD 152",
+     "feeDisplay": "152 美元",
+     "url": "https://www.evisa.gov.et/visa",
+     "guide": "/zh-hant/ethiopia/evisa/",
+     "agency": "衣索比亞移民與公民身分服務局",
+     "deadline": "一般 3 天；請於預計抵達前至少 3 天申請"
+    }
+   ],
+   "note": "效期自申請中填寫的預計入境日期起算。"
+  },
+  "ethiopia_check_result": {
+   "type": "result",
+   "country": "ethiopia",
+   "summary": "請向移民與公民身分服務局確認確切的入境點與護照路徑。",
+   "forms": [],
+   "note": "所查閱的官方頁面未公布現行電子簽口岸清單，也未確認陸路邊境可用。請勿假設計畫中的陸路口岸接受電子簽而付款。"
+  },
+  "morocco_eligibility": {
+   "type": "question",
+   "label": "官方 Accès Maroc 資格檢查器顯示什麼結果？",
+   "options": [
+    {
+     "value": "exempt",
+     "label": "不需要簽證",
+     "next": "morocco_exempt_result"
+    },
+    {
+     "value": "evisa",
+     "label": "符合電子簽資格",
+     "next": "morocco_evisa_result"
+    },
+    {
+     "value": "consular",
+     "label": "需要領事簽證",
+     "next": "morocco_consular_result"
+    },
+    {
+     "value": "aevm",
+     "label": "顯示 AEVM 路徑",
+     "next": "morocco_aevm_result"
+    },
+    {
+     "value": "unsure",
+     "label": "我還沒查",
+     "next": "morocco_check_result"
+    }
+   ]
+  },
+  "morocco_exempt_result": {
+   "type": "result",
+   "country": "morocco",
+   "summary": "這條免簽路徑不需要摩洛哥簽證表格。",
+   "forms": [],
+   "note": "請用政府連結的即時檢查器確認確切的護照與情況。若確認免簽入境，就不要付錢給電子簽中介。"
+  },
+  "morocco_evisa_result": {
+   "type": "result",
+   "country": "morocco",
+   "summary": "只有檢查器確認資格後，才申請摩洛哥電子簽。",
+   "forms": [
+    {
+     "name": "Morocco eVisa",
+     "fee": "MAD 770 standard / MAD 1,100 express",
+     "feeDisplay": "標準 770 迪拉姆／加急 1,100 迪拉姆",
+     "url": "https://www.acces-maroc.ma/",
+     "guide": "/zh-hant/morocco/evisa/",
+     "agency": "摩洛哥王國外交部、非洲合作與摩洛哥僑民事務部",
+     "deadline": "標準 72 個摩洛哥工作小時／加急 24 小時"
+    }
+   ],
+   "note": "這個非政府後綴域名由外交部連結，該部表示平台由其工程與技術人員開發。付款前請從 diplomatie.ma 驗證連結。"
+  },
+  "morocco_consular_result": {
+   "type": "result",
+   "country": "morocco",
+   "summary": "請遵循官方檢查器顯示的領事簽證路徑。",
+   "forms": [],
+   "note": "當檢查器把你的護照導向領事簽證時，不要提交並支付電子簽費用。"
+  },
+  "morocco_aevm_result": {
+   "type": "result",
+   "country": "morocco",
+   "summary": "請遵循官方檢查器顯示的 AEVM 路徑。",
+   "forms": [],
+   "note": "AEVM 是獨立路徑。請使用為確切護照與行程返回的說明，而不是電子簽表格。"
+  },
+  "morocco_check_result": {
+   "type": "result",
+   "country": "morocco",
+   "summary": "選擇任何付費路徑前，先執行 Accès Maroc 資格檢查。",
+   "forms": [],
+   "note": "檢查器會詢問國籍、居留、證件類型、行程目的與符合資格的簽證。免簽旅客不需要付費的電子簽表格。"
+  },
+  "jamaica_route": {
+   "type": "question",
+   "label": "你是以訪客還是居民身分抵達牙買加？",
+   "options": [
+    {
+     "value": "visitor",
+     "label": "抵達的訪客",
+     "next": "jamaica_c5_result"
+    },
+    {
+     "value": "resident",
+     "label": "抵達的居民",
+     "next": "jamaica_c5_result"
+    },
+    {
+     "value": "not_arriving",
+     "label": "不入境牙買加",
+     "next": "jamaica_no_form_result"
+    }
+   ]
+  },
+  "jamaica_c5_result": {
+   "type": "result",
+   "country": "jamaica",
+   "summary": "請在政府入口提交免費的電子旅客申報（C5）。",
+   "forms": [
+    {
+     "name": "Jamaica Electronic Passenger Declaration (C5)",
+     "fee": "Free",
+     "feeDisplay": "免費",
+     "url": "https://enterjamaica.gov.jm/?language=en-US",
+     "guide": "/zh-hant/jamaica/c5/",
+     "agency": "牙買加護照、移民與公民服務署及牙買加海關",
+     "deadline": "出發前最多 30 天"
+    }
+   ],
+   "note": "現行入口為 enterjamaica.gov.jm。PICA 表示未委託任何第三方提供此表格。C5 與任何針對特定護照的簽證要求相互獨立。"
+  },
+  "jamaica_no_form_result": {
+   "type": "result",
+   "country": "jamaica",
+   "summary": "旅客不入境牙買加時，不需要入境 C5。",
+   "forms": [],
+   "note": "實際入境時請重新執行此工具。過境情況可能不同，請遵循航空公司與邊境對你行程的指示。"
+  },
+  "bahamas_route": {
+   "type": "question",
+   "label": "哪條巴哈馬海關或試點路徑適用？",
+   "options": [
+    {
+     "value": "returning_resident",
+     "label": "返國居民",
+     "next": "bahamas_c17_result"
+    },
+    {
+     "value": "visitor_goods",
+     "label": "攜帶超出「已使用的個人物品」範圍的物品的訪客",
+     "next": "bahamas_c17_result"
+    },
+    {
+     "value": "visitor_personal",
+     "label": "僅攜帶已使用的個人物品的訪客",
+     "next": "bahamas_oral_result"
+    },
+    {
+     "value": "selected_pilot",
+     "label": "獲選參加數位入境卡試點",
+     "next": "bahamas_pilot_result"
+    },
+    {
+     "value": "unsure",
+     "label": "我不確定",
+     "next": "bahamas_check_result"
+    }
+   ]
+  },
+  "bahamas_c17_result": {
+   "type": "result",
+   "country": "bahamas",
+   "summary": "請透過政府授權的 Exempt 入口提交免費的電子海關 C17。",
+   "forms": [
+    {
+     "name": "Bahamas Customs C17 Digital Declaration",
+     "fee": "Free; customs duties are separate",
+     "feeDisplay": "免費；關稅另計",
+     "url": "https://exempt.gov.bs/",
+     "guide": "/zh-hant/bahamas/c17/",
+     "agency": "巴哈馬海關部與財政部",
+     "deadline": "抵達前以電子方式完成"
+    }
+   ],
+   "note": ".gov.bs 入口經正式授權，並標明 Exempt Technologies 為開發方。請保存 QR Code 供指定海關通道使用。"
+  },
+  "bahamas_oral_result": {
+   "type": "result",
+   "country": "bahamas",
+   "summary": "此訪客情況請使用口頭行李申報路徑。",
+   "forms": [],
+   "note": "現行政府頁面說明，僅攜帶已用個人物品的訪客做口頭行李申報即可。不要開啟不必要的付費或數位申報服務。"
+  },
+  "bahamas_pilot_result": {
+   "type": "result",
+   "country": "bahamas",
+   "summary": "請遵循為獲選航班提供的巴哈馬數位入境卡試點專用說明。",
+   "forms": [],
+   "note": "2026 年 5 月 5 日的公告將試點限於指定航班上的獲選訪客，紙本流程同步保留。它並未設立通用的公開表格。"
+  },
+  "bahamas_check_result": {
+   "type": "result",
+   "country": "bahamas",
+   "summary": "申報前先確認居留身分、物品與任何獲選航班試點通知。",
+   "forms": [],
+   "note": "每位返國居民都使用 C17。訪客攜帶超出已用個人物品時使用 C17；僅攜帶已用個人物品的訪客依政府頁面走口頭申報。"
+  },
+  "aruba_result": {
+   "type": "result",
+   "country": "aruba",
+   "summary": "每位旅客都要填 ED Card。多數空路抵達者還要在同一官方流程中另付 20 美元可持續發展費。",
+   "forms": [
+    {
+     "name": "Aruba ED Card",
+     "fee": "USD $20 sustainability fee for most air arrivals; exemptions apply",
+     "feeDisplay": "多數空路抵達者 20 美元永續費；有豁免情形",
+     "url": "https://edcardaruba.aw/welcome",
+     "guide": "/zh-hant/aruba/ed-card/",
+     "agency": "阿魯巴移民局",
+     "deadline": "出發前 7 天內"
+    }
+   ],
+   "note": "ED Card 也適用於海路抵達，但永續費僅適用於機場抵達。"
+  },
+  "panama_result": {
+   "type": "result",
+   "country": "panama",
+   "summary": "請使用巴拿馬海關免費的數位貨品與財物申報，然後保存 QR 回應碼。",
+   "forms": [
+    {
+     "name": "數位旅行者宣誓申報表",
+     "fee": "Free",
+     "feeDisplay": "免費",
+     "url": "https://declaraciondeviajero.ana.gob.pa/",
+     "guide": "/zh-hant/panama/traveler-declaration/",
+     "agency": "巴拿馬國家海關總署",
+     "deadline": "請在官方 72 小時窗口內提交並出示"
+    }
+   ],
+   "note": "入口支援西班牙語與英語。一份申報可涵蓋家庭團體；QR Code 不能取代海關查驗。"
+  },
+  "peru_result": {
+   "type": "result",
+   "country": "peru",
+   "summary": "秘魯移民局會在移民查驗時自動生成 TAM Virtual。之後可使用免費的官方查詢。",
+   "forms": [
+    {
+     "name": "虛擬安地斯移民卡查詢",
+     "fee": "Free",
+     "feeDisplay": "免費",
+     "url": "https://cel.migraciones.gob.pe/ConsultaTAMVirtual/VerificarTAM",
+     "guide": "/zh-hant/peru/tam-virtual/",
+     "agency": "秘魯國家移民總署",
+     "deadline": "出入境紀錄建立之後"
+    }
+   ],
+   "note": "這是查驗後的入境紀錄，不是出發前要提交的表格。請核對下載的 TAM 上顯示的核准停留。"
+  },
+  "brazil_eligibility": {
+   "type": "question",
+   "label": "你將持哪本護照前往巴西？",
+   "options": [
+    {
+     "value": "eligible_evisa",
+     "label": "澳洲、加拿大或美國護照",
+     "next": "brazil_evisa_result"
+    },
+    {
+     "value": "visa_exempt",
+     "label": "依巴西現行規定免簽的護照",
+     "next": "brazil_exempt_result"
+    },
+    {
+     "value": "other_or_unsure",
+     "label": "其他護照或不確定",
+     "next": "brazil_other_result"
+    }
+   ]
+  },
+  "brazil_evisa_result": {
+   "type": "result",
+   "country": "brazil",
+   "summary": "符合資格的澳洲、加拿大與美國護照持有人，請使用巴西指定的 VFS Global 電子簽路徑。",
+   "forms": [
+    {
+     "name": "巴西電子訪客簽證",
+     "fee": "USD $80.90",
+     "feeDisplay": "80.90 美元",
+     "url": "https://brazil.vfsevisa.com/tourist-visa.html",
+     "guide": "/zh-hant/brazil/evisa/",
+     "agency": "巴西外交部；申請由 VFS Global 受理",
+     "deadline": "儘早申請；核實提交後最多 10 個工作日"
+    }
+   ],
+   "note": "這個 .com 申請主機是政府指定的商業承包商，不是政府後綴。請透過 gov.br 上的外交部頁面驗證。"
+  },
+  "brazil_exempt_result": {
+   "type": "result",
+   "country": "brazil",
+   "summary": "旅行護照依巴西現行官方規定免簽時，不要購買電子簽。",
+   "forms": [],
+   "note": "出發前請在 gov.br 重新確認現行豁免與允許停留規定。"
+  },
+  "brazil_other_result": {
+   "type": "result",
+   "country": "brazil",
+   "summary": "VFS 電子簽路徑不是適用於所有護照的通用申請。",
+   "forms": [],
+   "note": "請向外交部或巴西使領館查詢此護照的現行規定與正確簽證路徑。"
+  },
+  "barbados_result": {
+   "type": "result",
+   "country": "barbados",
+   "summary": "巴巴多斯的合併移民與海關表格於抵達前 72 小時開放，請完成免費表格。",
+   "forms": [
+    {
+     "name": "Online Immigration and Customs Form",
+     "fee": "Free",
+     "feeDisplay": "免費",
+     "url": "https://www.travelform.gov.bb/",
+     "guide": "/zh-hant/barbados/ed-form/",
+     "agency": "巴巴多斯移民局與海關貨物稅局",
+     "deadline": "抵達前 72 小時開放"
+    }
+   ],
+   "note": "請保存兩封電子郵件收據：一份給移民局、一份給海關。入境時備妥電子或列印本。"
+  },
+  "russia_eligibility": {
+   "type": "question",
+   "label": "你將持哪本護照前往俄羅斯？",
+   "options": [
+    {
+     "value": "eligible_evisa",
+     "label": "護照在該部 64 國電子簽清單上",
+     "next": "russia_evisa_result"
+    },
+    {
+     "value": "not_listed",
+     "label": "護照不在清單上",
+     "next": "russia_regular_visa_result"
+    },
+    {
+     "value": "valid_visa",
+     "label": "這本護照已持有效俄羅斯簽證",
+     "next": "russia_valid_visa_result"
+    }
+   ]
+  },
+  "russia_evisa_result": {
+   "type": "result",
+   "country": "russia",
+   "summary": "請在 evisa.kdmid.ru 以個人帳號提交統一電子簽。單次入境、效期 120 天、停留 30 天，費用不退。",
+   "forms": [
+    {
+     "name": "統一電子簽申請",
+     "fee": "Paid; amount shown at payment, not refunded",
+     "feeDisplay": "付費；金額於付款時顯示，不予退還",
+     "url": "https://evisa.kdmid.ru/",
+     "guide": "/zh-hant/russia/evisa/",
+     "agency": "俄羅斯聯邦外交部領事司",
+     "deadline": "預計入境日前 4 至 86 天申請"
+    }
+   ],
+   "note": "入境與離境都必須使用核准清單上的口岸，處理最多 4 個日曆天。帳號請使用 Gmail 以外的電子郵件。"
+  },
+  "russia_regular_visa_result": {
+   "type": "result",
+   "country": "russia",
+   "summary": "64 國清單外的護照沒有線上電子簽管道。請在俄羅斯使領館或領事館申請普通簽證。",
+   "forms": [],
+   "note": "任何向清單外護照提供線上俄羅斯電子簽的網站，都不是政府管道。"
+  },
+  "russia_valid_visa_result": {
+   "type": "result",
+   "country": "russia",
+   "summary": "不需要電子簽。外交部表示，同一護照內的有效俄羅斯簽證即可涵蓋行程，不受電子簽限制。",
+   "forms": [],
+   "note": "普通簽證不能靠取得電子簽來延長。"
+  },
+  "jordan_restricted": {
+   "type": "question",
+   "label": "你的護照在內政部的限制清單上（需事先核准），或屬於不販售 Pass 的阿拉伯國籍嗎？",
+   "options": [
+    {
+     "value": "yes",
+     "label": "是，其中之一適用",
+     "next": "jordan_embassy_result"
+    },
+    {
+     "value": "no",
+     "label": "否，兩者皆不適用",
+     "next": "jordan_arrival"
+    }
+   ]
+  },
+  "jordan_arrival": {
+   "type": "question",
+   "label": "你將從哪裡進入約旦？",
+   "options": [
+    {
+     "value": "queen_alia",
+     "label": "Queen Alia 機場（安曼）或 Sheikh Hussein 橋",
+     "next": "jordan_pass_question"
+    },
+    {
+     "value": "wadi_araba",
+     "label": "從埃拉特方向的 Wadi Araba 邊境",
+     "next": "jordan_pass_question"
+    },
+    {
+     "value": "aqaba",
+     "label": "阿卡巴機場或阿卡巴海港",
+     "next": "jordan_aqaba_result"
+    }
+   ]
+  },
+  "jordan_pass_question": {
+   "type": "question",
+   "label": "你會在抵達前購買官方 Jordan Pass，並停留至少 2 個完整夜晚（3 天）嗎？",
+   "options": [
+    {
+     "value": "yes",
+     "label": "會，抵達前購買",
+     "next": "jordan_pass_result"
+    },
+    {
+     "value": "no",
+     "label": "不會，我在邊境付費",
+     "next": "jordan_visa_on_arrival_result"
+    }
+   ]
+  },
+  "jordan_pass_result": {
+   "type": "result",
+   "country": "jordan",
+   "summary": "在 jordanpass.jo 購買 Pass、列印 PDF，並在簽證櫃檯出示：40 第納爾的單次入境簽證費獲得免除，並涵蓋包括佩特拉在內的 40 多個景點。",
+   "forms": [
+    {
+     "name": "Jordan Pass",
+     "fee": "JD 70 / 75 / 80 by Petra days",
+     "feeDisplay": "依佩特拉天數 70 / 75 / 80 第納爾",
+     "url": "https://www.jordanpass.jo/",
+     "guide": "/zh-hant/jordan/jordan-pass/",
+     "agency": "約旦旅遊與古蹟部",
+     "deadline": "抵達前購買；條款規定抵達後購買的 Pass 不享簽證豁免"
+    }
+   ],
+   "note": "Pass 不是簽證：簽證仍由邊防官員核發。免除需停留至少 2 個完整夜晚，提前離境意味著要在機場付費。"
+  },
+  "jordan_visa_on_arrival_result": {
+   "type": "result",
+   "country": "jordan",
+   "summary": "請在邊境支付單次入境觀光簽證費。出發前不需要任何線上表格。",
+   "forms": [
+    {
+     "name": "單次入境觀光落地簽",
+     "fee": "JD 40 for one month",
+     "feeDisplay": "一個月 40 第納爾",
+     "url": "https://mota.gov.jo/En/Pages/Visa_information",
+     "guide": "/zh-hant/jordan/jordan-pass/",
+     "agency": "約旦內政部"
+    }
+   ],
+   "note": "景點門票之後在各入口分開支付。如果佩特拉在計畫中，決定前先與 70 第納爾的 Pass 比較：Pass 也包含簽證費。"
+  },
+  "jordan_aqaba_result": {
+   "type": "result",
+   "country": "jordan",
+   "summary": "Pass FAQ 表示，抵達阿卡巴機場的非受限國籍不需要簽證。",
+   "forms": [],
+   "note": "未購買 Pass 時，景點門票仍需分開支付。受限國籍必須在出發前向約旦使領館取得簽證。依賴此規定前，請確認現行的阿卡巴特區規定。"
+  },
+  "jordan_embassy_result": {
+   "type": "result",
+   "country": "jordan",
+   "summary": "受限國籍需要事先核准，請在出發前向約旦使領館申請。",
+   "forms": [],
+   "note": "內政部電子服務 eservices.moi.gov.jo/MOI_EVISA 是供在王國境外提交申請的帳號登入流程，含 2 第納爾服務費與每位被邀請人 1000 第納爾保證金。任何向受限國籍販售即時線上簽證的網站都不是政府管道。"
+  }
+ }
+}

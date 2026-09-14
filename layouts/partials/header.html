@@ -3,7 +3,11 @@
     <a href="{{ "/" | relLangURL }}" class="font-serif font-medium no-underline shrink-0" style="font-size: 22px; font-variation-settings: 'opsz' 144;" aria-label="{{ i18n "brand_dot_label" }}">
       entrycardguide<span class="text-verified">·</span>
     </a>
-    {{- $isZh := eq .Site.Language.Lang "zh" -}}
+    {{- $lang := .Site.Language.Lang -}}
+    {{- /* Roster display name key per language: en / zh / zht (see country-roster.html). */ -}}
+    {{- $nameKey := "en" -}}
+    {{- if eq $lang "zh" -}}{{- $nameKey = "zh" -}}
+    {{- else if eq $lang "zh-hant" -}}{{- $nameKey = "zht" -}}{{- end -}}
     <nav aria-label="{{ i18n "nav_main_label" }}" class="col-span-2 order-last md:order-none md:ml-auto flex flex-wrap gap-x-4 md:gap-x-6 gap-y-2 text-small items-baseline">
       {{- /* Countries dropdown — collapses the whole roster into one nav item so
              the bar never overflows as we add countries. Built from the shared
@@ -18,9 +22,9 @@
         </summary>
         <div class="absolute left-0 top-full mt-2 bg-paper border border-rule py-1 min-w-[200px] max-h-[70vh] overflow-y-auto z-20 shadow-none">
           {{- range $countryNav }}
-          <a href="{{ if $isZh }}/zh/{{ .key }}/{{ else }}/{{ .key }}/{{ end }}" class="flex items-center gap-2.5 px-3 py-2 text-ink no-underline hover:bg-rule" style="font-size: 14px;">
+          <a href="{{ printf "/%s/" .key | relLangURL }}" class="flex items-center gap-2.5 px-3 py-2 text-ink no-underline hover:bg-rule" style="font-size: 14px;">
             <span aria-hidden="true" style="font-size: 15px;">{{ .flag }}</span>
-            <span>{{ if $isZh }}{{ .zh }}{{ else }}{{ .en }}{{ end }}</span>
+            <span>{{ index . $nameKey }}</span>
           </a>
           {{- end }}
         </div>

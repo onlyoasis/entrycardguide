@@ -1,7 +1,10 @@
 <footer class="border-t border-rule bg-paper mt-22">
-  {{- $isZh := eq .Site.Language.Lang "zh" -}}
+  {{- $lang := .Site.Language.Lang -}}
+  {{- $nameKey := "en" -}}
+  {{- if eq $lang "zh" -}}{{- $nameKey = "zh" -}}
+  {{- else if eq $lang "zh-hant" -}}{{- $nameKey = "zht" -}}{{- end -}}
   {{- $countries := partial "country-roster.html" . -}}
-  {{- $directoryURL := cond $isZh "/zh/official-links/" "/official-links/" -}}
+  {{- $directoryURL := "/official-links/" | relLangURL -}}
   <div class="mx-auto max-w-container px-md pt-xl pb-lg grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-lg">
     {{- /* Brand */ -}}
     <div>
@@ -15,21 +18,21 @@
       <div class="text-meta font-mono uppercase text-muted mb-3">{{ i18n "footer_popular_countries" }}</div>
       <ul class="list-none p-0 m-0 grid gap-1.5 text-small">
         {{- range first 6 $countries }}
-        <li><a href="{{ if $isZh }}/zh/{{ .key }}/{{ else }}/{{ .key }}/{{ end }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ if $isZh }}{{ .zh }}{{ else }}{{ .en }}{{ end }} <span class="text-muted font-mono" style="font-size: 12px;">{{ .formCode }}</span></a></li>
+        <li><a href="{{ printf "/%s/" .key | relLangURL }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ index . $nameKey }} <span class="text-muted font-mono" style="font-size: 12px;">{{ .formCode }}</span></a></li>
         {{- end }}
-        <li><a href="{{ $directoryURL }}" class="text-ink underline underline-offset-4 font-medium">{{ if $isZh }}全部 {{ len $countries }} 个国家 →{{ else }}All {{ len $countries }} countries →{{ end }}</a></li>
+        <li><a href="{{ $directoryURL }}" class="text-ink underline underline-offset-4 font-medium">{{ printf (i18n "footer_all_countries") (len $countries) | safeHTML }}</a></li>
       </ul>
     </div>
 
     {{- /* The site — real routes only (check:seo verifies every local href). */ -}}
     <div>
-      <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}本站{{ else }}The site{{ end }}</div>
+      <div class="text-meta font-mono uppercase text-muted mb-3">{{ i18n "footer_site" }}</div>
       <ul class="list-none p-0 m-0 grid gap-1.5 text-small">
-        <li><a href="{{ cond $isZh "/zh/decide/" "/decide/" }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ if $isZh }}60 秒决策工具{{ else }}60-second decide{{ end }}</a></li>
-        <li><a href="{{ $directoryURL }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ if $isZh }}官方链接目录{{ else }}Official links directory{{ end }}</a></li>
-        <li><a href="{{ cond $isZh "/zh/changelog/" "/changelog/" }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ if $isZh }}变更日志{{ else }}Changelog{{ end }}</a></li>
-        <li><a href="{{ cond $isZh "/zh/about/" "/about/" }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ if $isZh }}关于{{ else }}About{{ end }}</a></li>
-        <li><a href="{{ cond $isZh "/zh/trust/" "/trust/" }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ if $isZh }}如何核查我们{{ else }}How we verify{{ end }}</a></li>
+        <li><a href="{{ "/decide/" | relLangURL }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ i18n "footer_decide" }}</a></li>
+        <li><a href="{{ $directoryURL }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ i18n "footer_directory" }}</a></li>
+        <li><a href="{{ "/changelog/" | relLangURL }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ i18n "footer_changelog" }}</a></li>
+        <li><a href="{{ "/about/" | relLangURL }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ i18n "footer_about" }}</a></li>
+        <li><a href="{{ "/trust/" | relLangURL }}" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ i18n "footer_how_we_verify" }}</a></li>
         <li><a href="https://github.com/onlyoasis/entrycardguide" rel="noopener" class="text-ink no-underline hover:underline hover:underline-offset-4">{{ i18n "footer_view_source" }} ↗</a></li>
       </ul>
     </div>
@@ -38,7 +41,7 @@
   {{- /* Bottom bar — money disclosure + build/commit. Trust signals kept intact. */ -}}
   <div class="mx-auto max-w-container px-md pb-lg pt-6 border-t border-rule flex justify-between items-start gap-md flex-wrap text-xs text-muted">
     <p class="m-0 flex-1 basis-[30rem] min-w-0">{{ i18n "footer_money_disclosure" }}
-      <a href="{{ cond $isZh "/zh/about/" "/about/" }}" class="text-ink">{{ i18n "footer_full_disclosure" }}</a>.</p>
+      <a href="{{ "/about/" | relLangURL }}" class="text-ink">{{ i18n "footer_full_disclosure" }}</a>.</p>
     <div class="font-mono">
       {{- i18n "footer_built_with" }}
       {{- with .GitInfo }} · {{ i18n "footer_last_deploy" }} <a href="https://github.com/onlyoasis/entrycardguide/commit/{{ .Hash }}" class="text-ink">{{ .AbbreviatedHash }}</a> · {{ dateFormat "2006-01-02" .AuthorDate }}

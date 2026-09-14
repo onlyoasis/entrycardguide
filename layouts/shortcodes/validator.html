@@ -11,6 +11,17 @@
 {{- if not $rules }}
   {{- errorf "validator shortcode: no rules found at data/rules/%s.json" $country }}
 {{- end }}
+{{- /* zh-hant pages merge the Traditional display overlay (label/help/errors
+       + UI strings) over the machine rules. Machine fields stay single-sourced
+       in data/rules/{country}.json; a missing overlay fails the build instead
+       of silently falling back to English prompts. */ -}}
+{{- if eq .Site.Language.Lang "zh-hant" }}
+  {{- $overlay := index hugo.Data.rules_i18n $country }}
+  {{- if not $overlay }}
+    {{- errorf "validator shortcode: missing Traditional overlay at data/rules_i18n/%s.json" $country }}
+  {{- end }}
+  {{- $rules = merge $rules $overlay }}
+{{- end }}
 
 <section class="validator not-prose" data-country="{{ $country }}" aria-labelledby="validator-title-{{ $country }}">
   <div class="text-meta text-muted mb-2 font-mono uppercase">{{ i18n "validator_eyebrow" }}</div>

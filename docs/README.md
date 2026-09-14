@@ -126,3 +126,9 @@ content/thailand/
 - 写作风格 / 内容判断：先参考样板文件
 - 实在卡住：在仓库 [Issues](https://github.com/onlyoasis/entrycardguide/issues) 开一个 question 标签的 issue
 - 紧急 / 凭证 / 法务：邮件给项目维护者
+
+---
+
+## 繁体中文（zh-Hant）
+
+站点维护完整的繁体第三语言（`/zh-hant/`）。派生文件不要手改，用 `npm run sync:zh-hant` 重新生成、`npm run check:zh-hant` 检查。流程、术语表和日期语义见 [`docs/maintenance/zh-hant.md`](./maintenance/zh-hant.md)。

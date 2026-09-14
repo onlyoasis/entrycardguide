@@ -1,0 +1,72 @@
+{
+ "ui": {
+  "fix": "修正 ✗",
+  "ok": "正確 ✓"
+ },
+ "fields": {
+  "passport": {
+   "label": "護照號碼",
+   "help": "印在護照照片頁上，只含字母和數字。",
+   "errors": {
+    "required": "請輸入護照號碼",
+    "tooShort": "護照號碼太短——至少 6 個字元",
+    "tooLong": "護照號碼太長——最多 12 個字元",
+    "invalidChars": "只能使用字母和數字——不含空格或符號",
+    "invalidFormat": "請輸入照片頁上印刷的字母與數字"
+   }
+  },
+  "full_name": {
+   "label": "全名",
+   "help": "使用護照上的拉丁拼寫。",
+   "errors": {
+    "required": "請輸入全名",
+    "tooShort": "請輸入護照上顯示的姓名",
+    "tooLong": "最多 80 個字元",
+    "invalidChars": "只能使用拉丁字母"
+   }
+  },
+  "date_of_birth": {
+   "label": "出生日期",
+   "help": "在本機檢查器中使用 YYYY-MM-DD 格式。",
+   "errors": {
+    "required": "請輸入出生日期",
+    "invalidFormat": "請使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必須是 01–12",
+    "invalidDay": "日期不正確——請對照該月份天數檢查",
+    "invalid": "不是真實存在的日期",
+    "tooEarly": "出生日期不能早於 1900-01-01",
+    "tooLate": "出生日期不能晚於 2026-12-31"
+   }
+  },
+  "flight_number": {
+   "label": "航班號碼",
+   "help": "使用實際執飛的航班號碼。",
+   "errors": {
+    "required": "請輸入航班號碼",
+    "invalidFormat": "格式：航空公司代碼＋編號"
+   }
+  },
+  "arrival_date": {
+   "label": "抵達日期",
+   "help": "你抵達柬埔寨的日期。",
+   "errors": {
+    "required": "請輸入抵達日期",
+    "invalidFormat": "請使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必須是 01–12",
+    "invalidDay": "日期不正確——請對照該月份天數檢查",
+    "invalid": "不是真實存在的日期",
+    "tooEarly": "抵達日期不能早於 2026-01-01",
+    "tooLate": "抵達日期不能晚於 2028-12-31"
+   }
+  },
+  "email": {
+   "label": "電子郵件",
+   "help": "確認信將寄到此信箱。",
+   "errors": {
+    "required": "請輸入電子郵件",
+    "invalidFormat": "格式必須類似 name@example.com",
+    "tooLong": "電子郵件太長——最多 80 個字元"
+   }
+  }
+ }
+}

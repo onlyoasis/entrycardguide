@@ -4,4 +4,5 @@
 date = "2026-08-30"
 summary = "Initial Lao Tourist eVisa coverage published"
 summary_zh = "老挝旅游电子签指南首版上线"
+summary_zh_hant = "老撾旅遊電子簽指南首版上線"
 detail = "Covers the official laoevisa.gov.la application, nationality-based fee calculator, tourist-only single-entry rule, 30-day stay, 3-working-day processing, passport and image requirements, 9 designated ports, and the separate visa-on-arrival route for other ports."

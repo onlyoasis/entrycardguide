@@ -67,15 +67,16 @@ npm run clean        # 清理 public/ 和 resources/
 
 **站点不再发布中介/仿冒站名单。** `scam-site.html` shortcode 和 `is-ivisa-official` 页面已于 2026-08-10 移除，理由是这批页面几乎没有流量却承担了全部法律风险。不要重新引入对第三方公司的点名——页面只讲官方网址和字段怎么填。
 
-### 双语机制
+### 多语言机制（en / zh-Hans / zh-Hant）
 
 - 默认英语在根（`/`、`/thailand/`、`/about/`）
-- 简体中文加 `/zh/` 前缀（`/zh/`、`/zh/thailand/`、`/zh/about/`）
-- 文件后缀决定语言：`tdac.md`（英）+ `tdac.zh.md`（中）
-- UI 字符串走 `i18n/en.yaml` 和 `i18n/zh.yaml`——**加一个 key 必须两个文件都加**
-- 中文翻译不存在时，语言切换器 fallback 到 `/zh/`（不会 404）
+- 简体中文加 `/zh/` 前缀，繁体中文加 `/zh-hant/` 前缀；HTML lang / hreflang / sitemap 使用 en、zh-Hans、zh-Hant 映射，robots.txt 列出三个子 sitemap
+- 文件后缀决定语言：`tdac.md`（英）+ `tdac.zh.md`（简）+ `tdac.zh-hant.md`（繁，生成文件不要手改）
+- UI 字符串走 `i18n/en.yaml`、`i18n/zh.yaml`、`i18n/zh-hant.yaml`——**加一个 key 必须三个文件都加**（zh-hant.yaml 由 `scripts/zh-hant/gen-i18n.mjs` 生成，勿手改）
+- 繁体派生物用 `npm run sync:zh-hant` 重生成；`npm run check:zh-hant` 是 build/dev 前置只读门禁；手工英文→繁体覆写（`data/rules_i18n/`、决策树覆写）受源文本快照陈旧门禁保护
+- 译文不存在时，语言切换器 fallback 到该语言首页（不会 404）
 - `disableKinds = ["taxonomy", "term"]`（无 tag/category 索引页）；旧的 `/countries/` 和 `/tags/` 路径在 `static/_redirects` 中 301 到首页
-
+- 细节与流程：`docs/maintenance/zh-hant.md`
 ### JS 资源管道
 
 **浏览器端零 npm 依赖**（v1.0 设计约束）。`assets/js/*.ts` 通过 Hugo 的 `js.Build` 编译为 IIFE，生产构建会 minify + fingerprint + SRI。看 `layouts/partials/scripts.html`。
@@ -187,15 +188,16 @@ npm run clean        # 清理 public/ 和 resources/
 
 **站点不再发布中介/仿冒站名单。** `scam-site.html` shortcode 和 `is-ivisa-official` 页面已于 2026-08-10 移除，理由是这批页面几乎没有流量却承担了全部法律风险。不要重新引入对第三方公司的点名——页面只讲官方网址和字段怎么填。
 
-### 双语机制
+### 多语言机制（en / zh-Hans / zh-Hant）
 
 - 默认英语在根（`/`、`/thailand/`、`/about/`）
-- 简体中文加 `/zh/` 前缀（`/zh/`、`/zh/thailand/`、`/zh/about/`）
-- 文件后缀决定语言：`tdac.md`（英）+ `tdac.zh.md`（中）
-- UI 字符串走 `i18n/en.yaml` 和 `i18n/zh.yaml`——**加一个 key 必须两个文件都加**
-- 中文翻译不存在时，语言切换器 fallback 到 `/zh/`（不会 404）
+- 简体中文加 `/zh/` 前缀，繁体中文加 `/zh-hant/` 前缀；HTML lang / hreflang / sitemap 使用 en、zh-Hans、zh-Hant 映射，robots.txt 列出三个子 sitemap
+- 文件后缀决定语言：`tdac.md`（英）+ `tdac.zh.md`（简）+ `tdac.zh-hant.md`（繁，生成文件不要手改）
+- UI 字符串走 `i18n/en.yaml`、`i18n/zh.yaml`、`i18n/zh-hant.yaml`——**加一个 key 必须三个文件都加**（zh-hant.yaml 由 `scripts/zh-hant/gen-i18n.mjs` 生成，勿手改）
+- 繁体派生物用 `npm run sync:zh-hant` 重生成；`npm run check:zh-hant` 是 build/dev 前置只读门禁；手工英文→繁体覆写（`data/rules_i18n/`、决策树覆写）受源文本快照陈旧门禁保护
+- 译文不存在时，语言切换器 fallback 到该语言首页（不会 404）
 - `disableKinds = ["taxonomy", "term"]`（无 tag/category 索引页）；旧的 `/countries/` 和 `/tags/` 路径在 `static/_redirects` 中 301 到首页
-
+- 细节与流程：`docs/maintenance/zh-hant.md`
 ### JS 资源管道
 
 **浏览器端零 npm 依赖**（v1.0 设计约束）。`assets/js/*.ts` 通过 Hugo 的 `js.Build` 编译为 IIFE，生产构建会 minify + fingerprint + SRI。看 `layouts/partials/scripts.html`。
@@ -259,3 +261,7 @@ content/{country}/how-to-fill.md       # 字段逐项填写
 - **改字段规则只改 `data/rules/*.json`，不要碰 `validator.ts`**。
 - **加诈骗站：先 TOML，后 markdown**，否则构建失败。
 - 国家页面 `Last verified` 元数据来自 `enableGitInfo` + 文件 `Lastmod`，所以**改文件 = 自动刷新 last-verified 显示**。如果只是审查没改变内容，要主动 bump `lastmod` 前置字段。
+
+## 繁体中文（zh-Hant）维护
+
+繁体是完整的第三语言（`/zh-hant/`，156 篇内容页 + 全部 UI/数据/校验器/决策树本地化）。派生文件（`.zh-hant.md`、`*_zh_hant` TOML 字段、`i18n/zh-hant.yaml`、`tree.zh-hant.json`）**不要手改**——用 `npm run sync:zh-hant` 重新生成；`npm run check:zh-hant` 是 build/dev 前置只读门禁。手工英文→繁体覆写（rules_i18n、决策树）受源文本快照陈旧门禁保护，改英文源后复核翻译再 `npm run snapshot:zh-hant`。细节见 `docs/maintenance/zh-hant.md`。

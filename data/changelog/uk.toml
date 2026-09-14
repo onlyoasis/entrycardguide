@@ -4,4 +4,5 @@
 date = "2026-07-14"
 summary = "UK guide published"
 summary_zh = "英国 ETA 指南上线"
+summary_zh_hant = "英國 ETA 指南上線"
 detail = "Adds the official Home Office application and app links, current £20 fee, eligibility and exemption sources, field rules, and documented commercial middlemen."

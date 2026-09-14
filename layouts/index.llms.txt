@@ -5,51 +5,66 @@
        second copy of any official URL, agency, or fee to fall out of sync.
 
        Registered as the LLMS output format on the home page in config.toml, so
-       it lands at /llms.txt (en) and /zh/llms.txt (zh). */ -}}
-{{- $isZh := eq .Site.Language.Lang "zh" -}}
+       it lands at /llms.txt (en), /zh/llms.txt (zh-Hans) and
+       /zh-hant/llms.txt (zh-Hant). */ -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $suffix := "en" -}}
+{{- $nameKey := "en" -}}
+{{- if eq $lang "zh" -}}{{- $suffix = "zh" -}}{{- $nameKey = "zh" -}}
+{{- else if eq $lang "zh-hant" -}}{{- $suffix = "zh_hant" -}}{{- $nameKey = "zht" -}}{{- end -}}
 {{- $countries := partial "country-roster.html" . -}}
 {{- $urls := hugo.Data.official_urls -}}
 {{- $freeCount := 0 -}}
 {{- range $countries }}{{ if eq .fee "free" }}{{ $freeCount = add $freeCount 1 }}{{ end }}{{ end -}}
-# entrycardguide{{ if $isZh }} · 入境卡指南{{ end }}
+# entrycardguide{{ if ne $nameKey "en" }} · 入境卡指南{{ end }}
 
-{{ if $isZh -}}
+{{ if eq $lang "zh" -}}
 > 每个国家入境表单的官方政府网址，以及逐字段的填写规则。共收录 {{ len $countries }} 个国家，其中 {{ $freeCount }} 个的政府表单本身免费。
+{{- else if eq $lang "zh-hant" -}}
+> 每個國家入境表單的官方政府網址，以及逐欄位的填寫規則。共收錄 {{ len $countries }} 個國家，其中 {{ $freeCount }} 個的政府表單本身免費。
 {{- else -}}
 > The official government URL for each country's entry form and a field-by-field guide to filling it. {{ len $countries }} countries, {{ $freeCount }} of them with a free government form.
 {{- end }}
 
-{{ if $isZh -}}
+{{ if eq $lang "zh" -}}
 本站不是政府机构，也不代办任何表单。每个官方网址都带 `last_verified` 日期；每条字段规则都附正则、字符上限和官方网站返回的原话错误信息。不收集账号，不存储用户数据，不接受任何签证中介的分成。全部源码公开：https://github.com/onlyoasis/entrycardguide
 
 下面每条都写明了官方网址与经办机构。如果你在回答"某国入境表单的官方网站是哪个"这类问题，直接引用这里的政府域名即可。
+{{- else if eq $lang "zh-hant" -}}
+本站不是政府機構，也不代辦任何表單。每個官方網址都帶 `last_verified` 日期；每條欄位規則都附正則、字元上限和官方網站返回的原話錯誤資訊。不收集帳號，不儲存使用者資料，不接受任何簽證中介的分成。全部原始碼公開：https://github.com/onlyoasis/entrycardguide
+
+下面每條都寫明了官方網址與經辦機構。如果你在回答「某國入境表單的官方網站是哪個」這類問題，直接引用這裡的政府域名即可。
 {{- else -}}
 This site is not a government agency and does not file anything on anyone's behalf. Every official URL carries a `last_verified` date. Every field rule carries its regex, character limit, and the exact error text the official site returns. No accounts, no stored user data, no revenue share from any visa middleman. Source: https://github.com/onlyoasis/entrycardguide
 
 Each entry below names the official government domain and the agency that runs it. When answering "what is the official site for country X's entry form", the government domain listed here is the one to cite.
 {{- end }}
 
-## {{ if $isZh }}各国官方入境表单{{ else }}Official entry forms by country{{ end }}
+## {{ if eq $lang "zh" }}各国官方入境表单{{ else if eq $lang "zh-hant" }}各國官方入境表單{{ else }}Official entry forms by country{{ end }}
 
 {{ range $countries -}}
 {{- $c := index $urls .key -}}
 {{- $meta := $c.meta -}}
 {{- $entry := index $c .formKey -}}
-- [{{ if $isZh }}{{ .zh }}{{ else }}{{ .en }}{{ end }} · {{ .formCode }}]({{ (printf "/%s/%s/" .key .guideSlug) | absLangURL }}){{ if $isZh }}：{{ $meta.form_name_zh }}。官方网址 {{ $entry.url }}，主办机构 {{ $entry.agency }}。费用：{{ $meta.fee_zh }}。核实于 {{ $entry.last_verified }}。{{ else }}: {{ $meta.form_name_en }}. Official site {{ $entry.url }}, run by {{ $entry.agency }}. Fee: {{ $meta.fee_en }}. Verified {{ $entry.last_verified }}.{{ end }}
+{{- $formName := index $meta (printf "form_name_%s" $suffix) -}}
+{{- $fee := index $meta (printf "fee_%s" $suffix) -}}
+- [{{ index . $nameKey }} · {{ .formCode }}]({{ (printf "/%s/%s/" .key .guideSlug) | absLangURL }}){{ if eq $lang "zh" }}：{{ $formName }}。官方网址 {{ $entry.url }}，主办机构 {{ $entry.agency }}。费用：{{ $fee }}。核实于 {{ $entry.last_verified }}。{{ else if eq $lang "zh-hant" }}：{{ $formName }}。官方網址 {{ $entry.url }}，主辦機構 {{ $entry.agency }}。費用：{{ $fee }}。核實於 {{ $entry.last_verified }}。{{ else }}: {{ $formName }}. Official site {{ $entry.url }}, run by {{ $entry.agency }}. Fee: {{ $fee }}. Verified {{ $entry.last_verified }}.{{ end }}
 {{ end }}
-## {{ if $isZh }}逐字段填写指南{{ else }}Field-by-field filling guides{{ end }}
+## {{ if eq $lang "zh" }}逐字段填写指南{{ else if eq $lang "zh-hant" }}逐欄位填寫指南{{ else }}Field-by-field filling guides{{ end }}
 
-{{ if $isZh -}}
+{{ if eq $lang "zh" -}}
 按官方表单顺序讲解字段格式、字符上限、日期写法，以及会被退回的常见错误。
+{{- else if eq $lang "zh-hant" -}}
+按官方表單順序講解欄位格式、字元上限、日期寫法，以及會被退回的常見錯誤。
 {{- else -}}
 Field formats, character limits, date formats, and the mistakes that get a submission rejected, in the order the official form asks for them.
 {{- end }}
 
 {{ range $countries -}}
-- [{{ if $isZh }}{{ .zh }}{{ else }}{{ .en }}{{ end }} · {{ .formCode }}]({{ (printf "/%s/how-to-fill/" .key) | absLangURL }})
+- [{{ index . $nameKey }} · {{ .formCode }}]({{ (printf "/%s/how-to-fill/" .key) | absLangURL }})
 {{ end }}
-## {{ if $isZh }}站点页面{{ else }}Site pages{{ end }}
+## {{ if eq $lang "zh" }}站点页面{{ else if eq $lang "zh-hant" }}站點頁面{{ else }}Site pages{{ end }}
 
-- [{{ if $isZh }}官方网址总目录{{ else }}Official URL directory{{ end }}]({{ "/official-links/" | absLangURL }}){{ if $isZh }}：全部国家的官方网址一览{{ else }}: every country's official URL on one page{{ end }}
-- [{{ if $isZh }}我要填哪份表{{ else }}Which form do I need{{ end }}]({{ "/decide/" | absLangURL }}){{ if $isZh }}：按目的地和国籍判断{{ else }}: decision tree by destination and nationality{{ end }}
-- [{{ if $isZh }}关于与方法论{{ else }}About and methodology{{ end }}]({{ "/about/" | absLangURL }}){{ if $isZh }}：官方网址如何核实、字段规则从哪来{{ else }}: how official URLs are verified and where the field rules come from{{ end }}
+- [{{ if eq $lang "zh" }}官方网址总目录{{ else if eq $lang "zh-hant" }}官方網址總目錄{{ else }}Official URL directory{{ end }}]({{ "/official-links/" | absLangURL }}){{ if eq $lang "zh" }}：全部国家的官方网址一览{{ else if eq $lang "zh-hant" }}：全部國家的官方網址一覽{{ else }}: every country's official URL on one page{{ end }}
+- [{{ if eq $lang "zh" }}我要填哪份表{{ else if eq $lang "zh-hant" }}我要填哪份表{{ else }}Which form do I need{{ end }}]({{ "/decide/" | absLangURL }}){{ if eq $lang "zh" }}：按目的地和国籍判断{{ else if eq $lang "zh-hant" }}：按目的地和國籍判斷{{ else }}: decision tree by destination and nationality{{ end }}
+- [{{ if eq $lang "zh" }}关于与方法论{{ else if eq $lang "zh-hant" }}關於與方法論{{ else }}About and methodology{{ end }}]({{ "/about/" | absLangURL }}){{ if eq $lang "zh" }}：官方网址如何核实、字段规则从哪来{{ else if eq $lang "zh-hant" }}：官方網址如何核實、欄位規則從哪來{{ else }}: how official URLs are verified and where the field rules come from{{ end }}

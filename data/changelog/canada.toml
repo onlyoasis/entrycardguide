@@ -4,4 +4,5 @@
 date = "2026-07-14"
 summary = "Canada guide published"
 summary_zh = "加拿大 eTA 指南上线"
+summary_zh_hant = "加拿大 eTA 指南上線"
 detail = "Adds the official IRCC application, CAD $7 fee, air-travel and U.S. permanent-resident rules, field rules, and documented commercial middlemen."

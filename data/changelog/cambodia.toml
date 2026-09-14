@@ -4,4 +4,5 @@
 date = "2026-06-11"
 summary = "Initial Cambodia e-Arrival coverage published"
 summary_zh = "柬埔寨 e-Arrival 指南首版上线"
+summary_zh_hant = "柬埔寨 e-Arrival 指南首版上線"
 detail = "Covers arrival.gov.kh, the free arrival declaration, and the distinction between arrival declaration and visa fees."

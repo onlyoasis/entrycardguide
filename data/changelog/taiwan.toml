@@ -4,4 +4,5 @@
 date = "2026-08-30"
 summary = "Initial TWAC coverage published"
 summary_zh = "台湾 TWAC 入境登记表指南首版上线"
+summary_zh_hant = "臺灣 TWAC 入境登記表指南首版上線"
 detail = "Covers the online-only arrival card at twac.immigration.gov.tw in force since 1 October 2025, the 7-day submission window extended in July 2026, the agency notice that the card is free, and the items named in the official English user manual."

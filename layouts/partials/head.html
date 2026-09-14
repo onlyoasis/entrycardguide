@@ -2,7 +2,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="{{ .Description | default .Site.Params.description }}">
 
-<title>{{ if .IsHome }}{{ if eq .Site.Language.Lang "zh" }}{{ .Title }} · {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+{{- /* Language mapping: site keys en/zh/zh-hant → BCP 47 tags en/zh-Hans/zh-Hant
+       for hreflang + JSON-LD. OG locale uses per-language region params
+       (og_locale) because platforms want zh_CN/zh_TW, not script tags. */ -}}
+{{- $langMap := dict "en" "en" "zh" "zh-Hans" "zh-hant" "zh-Hant" -}}
+{{- $isCn := in (slice "zh" "zh-hant") .Site.Language.Lang -}}
+
+<title>{{ if .IsHome }}{{ if $isCn }}{{ .Title }} · {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
 
 {{- with .Site.Params.analytics.ga4.measurement.id }}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
@@ -15,7 +21,7 @@
        that have a translation in another language. */ -}}
 {{- if .IsTranslated }}
 {{- range .AllTranslations }}
-<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+<link rel="alternate" hreflang="{{ index $langMap .Lang }}" href="{{ .Permalink }}">
 {{- end }}
 {{- $xDefault := .Permalink -}}
 {{- range .AllTranslations }}
@@ -43,9 +49,9 @@
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
-<meta property="og:locale" content="{{ replace .Site.Language.LanguageCode "-" "_" }}">
+<meta property="og:locale" content="{{ .Site.Params.og_locale | default (replace .Site.Language.LanguageCode "-" "_") }}">
 {{- range .Translations }}
-<meta property="og:locale:alternate" content="{{ replace .Site.Language.LanguageCode "-" "_" }}">
+<meta property="og:locale:alternate" content="{{ .Language.Params.og_locale | default (replace .Language.LanguageCode "-" "_") }}">
 {{- end }}
 {{- $ogBase := "default" }}
 {{- with .File }}{{ $ogBase = .BaseFileName }}{{ end }}
@@ -85,7 +91,7 @@
   "@type": "WebSite",
   "name": "entrycardguide",
   "url": "https://entrycardguide.com/",
-  "inLanguage": ["en", "zh"],
+  "inLanguage": ["en", "zh-Hans", "zh-Hant"],
   "publisher": {
     "@type": "Organization",
     "name": "entrycardguide",
@@ -105,7 +111,7 @@
   "description": "{{ (.Description | default .Summary) | plainify }}",
   "datePublished": "{{ .PublishDate.Format "2006-01-02" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
-  "inLanguage": "{{ .Site.Language.Lang }}",
+  "inLanguage": "{{ index $langMap .Site.Language.Lang }}",
   "author": {
     "@type": "Organization",
     "name": "{{ .Site.Title }}",
@@ -127,7 +133,7 @@
 {{- end }}
 
 {{- /* CollectionPage schema for the maintained changelog. */ -}}
-{{- if or (eq .RelPermalink "/changelog/") (eq .RelPermalink "/zh/changelog/") }}
+{{- if or (eq .RelPermalink "/changelog/") (eq .RelPermalink "/zh/changelog/") (eq .RelPermalink "/zh-hant/changelog/") }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

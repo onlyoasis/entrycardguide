@@ -1,0 +1,186 @@
+{
+ "ui": {
+  "fix": "修正 ✗",
+  "ok": "正確 ✓"
+ },
+ "fields": {
+  "nationality": {
+   "label": "國籍或旅行證件地區",
+   "help": "選擇你將持用的護照的國籍或地區。官方系統以此答案檢查豁免、資格、條件與價格。",
+   "errors": {
+    "required": "請選擇國籍或地區",
+    "invalidOption": "請選擇旅行證件的國籍或地區"
+   }
+  },
+  "travel_document_type": {
+   "label": "旅行證件類型",
+   "help": "選擇確切的證件類型，通常為普通護照。外交、公務、特別、官方等證件規則可能不同。",
+   "errors": {
+    "required": "請選擇旅行證件類型",
+    "invalidOption": "請選擇證件上印刷或核發的確切類型"
+   }
+  },
+  "arrival_date": {
+   "label": "抵達土耳其日期",
+   "help": "填預計的首次抵達日期。電子簽效力期間自官方申請中選擇的日期起算。",
+   "errors": {
+    "required": "請輸入抵達日期",
+    "invalidFormat": "本機檢查器請使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必須是 01–12",
+    "invalidDay": "日期不正確——請對照該月份天數檢查",
+    "invalid": "不是真實存在的日期",
+    "tooEarly": "抵達日期不能早於 2026-07-14"
+   }
+  },
+  "given_names": {
+   "label": "名（Given name(s)）",
+   "help": "輸入護照上顯示的所有名。官方團體指南設定含空格在內最多 50 字元。",
+   "errors": {
+    "required": "請輸入名",
+    "tooShort": "請輸入護照上顯示的名",
+    "tooLong": "名不能超過 50 個字元",
+    "invalidChars": "使用護照上的拉丁拼寫"
+   }
+  },
+  "surname": {
+   "label": "姓（Surname(s)）",
+   "help": "原樣輸入護照上的姓。僅當護照沒有姓時才留空。官方團體指南設定最多 50 字元。",
+   "errors": {
+    "required": "請輸入姓",
+    "tooShort": "請輸入護照上顯示的姓",
+    "tooLong": "姓不能超過 50 個字元",
+    "invalidChars": "使用護照上的拉丁拼寫"
+   }
+  },
+  "date_of_birth": {
+   "label": "出生日期",
+   "help": "與護照日期一致。本機檢查器使用 YYYY-MM-DD；官方轉帳指南使用 YYYYMMDD。",
+   "errors": {
+    "required": "請輸入出生日期",
+    "invalidFormat": "請使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必須是 01–12",
+    "invalidDay": "日期不正確——請對照該月份天數檢查",
+    "invalid": "不是真實存在的日期",
+    "tooLate": "出生日期不能晚於 2026-07-14"
+   }
+  },
+  "place_of_birth": {
+   "label": "出生地",
+   "help": "從護照複製出生地。官方團體指南設定含空格在內最多 40 字元。",
+   "errors": {
+    "required": "請輸入出生地",
+    "tooLong": "出生地不能超過 40 個字元"
+   }
+  },
+  "mothers_name": {
+   "label": "母親姓名",
+   "help": "被要求時輸入全部姓名。官方團體指南允許在未標示母親姓名時留空，並設定最多 40 字元。",
+   "errors": {
+    "required": "請輸入母親姓名",
+    "tooShort": "請輸入母親姓名",
+    "tooLong": "母親姓名不能超過 40 個字元",
+    "invalidChars": "只能使用拉丁字母、空格、短橫或撇號"
+   }
+  },
+  "fathers_name": {
+   "label": "父親姓名",
+   "help": "被要求時輸入全部姓名。官方團體指南允許在未標示父親姓名時留空，並設定最多 40 字元。",
+   "errors": {
+    "required": "請輸入父親姓名",
+    "tooShort": "請輸入父親姓名",
+    "tooLong": "父親姓名不能超過 40 個字元",
+    "invalidChars": "只能使用拉丁字母、空格、短橫或撇號"
+   }
+  },
+  "passport_number": {
+   "label": "旅行證件號碼",
+   "help": "從先前選擇的旅行證件原樣複製號碼。官方團體指南不允許空格與特殊字元，最多 16 字元。",
+   "errors": {
+    "required": "請輸入旅行證件號碼",
+    "tooShort": "請輸入證件上印刷的號碼",
+    "tooLong": "旅行證件號碼不能超過 16 個字元",
+    "invalidChars": "只能使用大寫字母和數字，不含空格",
+    "invalidFormat": "請輸入證件上印刷的字母與數字"
+   }
+  },
+  "passport_issue_date": {
+   "label": "旅行證件簽發日期",
+   "help": "與證件上的簽發日期一致。本機檢查器使用 YYYY-MM-DD。",
+   "errors": {
+    "required": "請輸入簽發日期",
+    "invalidFormat": "請使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必須是 01–12",
+    "invalidDay": "日期不正確——請對照該月份天數檢查",
+    "invalid": "不是真實存在的日期",
+    "tooLate": "簽發日期不能晚於 2026-07-14"
+   }
+  },
+  "passport_expiry": {
+   "label": "旅行證件效期",
+   "help": "與證件效期一致。土耳其一般要求效期至少比允許停留多 60 天，官方資格結果可能要求更多。",
+   "errors": {
+    "required": "請輸入證件效期",
+    "invalidFormat": "請使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必須是 01–12",
+    "invalidDay": "日期不正確——請對照該月份天數檢查",
+    "invalid": "不是真實存在的日期",
+    "tooEarly": "該旅行證件已過期"
+   }
+  },
+  "email": {
+   "label": "電子郵件",
+   "help": "使用你自有的小寫信箱。付款連結與電子簽下載連結將以電子郵件寄送。官方團體指南設定最多 40 字元。",
+   "errors": {
+    "required": "請輸入電子郵件",
+    "invalidFormat": "格式必須類似 name@example.com",
+    "tooLong": "官方團體指南中電子郵件不能超過 40 個字元"
+   }
+  },
+  "phone": {
+   "label": "電話號碼",
+   "help": "包含國家/地區代碼。官方團體指南顯示上限 20 字元；本機檢查器接受 7–15 位數的國際號碼。",
+   "errors": {
+    "required": "請輸入電話號碼",
+    "invalidFormat": "請包含國家代碼和 7–15 位數字",
+    "tooLong": "電話號碼顯示不能超過 20 個字元"
+   }
+  },
+  "home_address": {
+   "label": "居住地址",
+   "help": "填申請人目前的居住地址。官方團體指南設定含空格在內最多 200 字元。",
+   "errors": {
+    "required": "請輸入居住地址",
+    "tooLong": "居住地址不能超過 200 個字元"
+   },
+   "placeholder": "街道、城市、地區、國家"
+  },
+  "supporting_document_type": {
+   "label": "輔助證件類型",
+   "help": "僅當官方資格結果要求有效的簽證或居留許可作為支持時才填寫。不符合所述條件時無法取得電子簽。",
+   "errors": {
+    "required": "請選擇輔助證件類型",
+    "invalidOption": "僅當官方結果要求時才選擇簽證或居留許可"
+   }
+  },
+  "supporting_document_issuer": {
+   "label": "輔助證件簽發國家或地區",
+   "help": "選擇簽發輔助簽證或居留許可的國家或地區。目前外交部國家規則常指申根、美國、英國或愛爾蘭，但請以資格畫面為準。",
+   "errors": {
+    "required": "請選擇簽發國家或地區",
+    "invalidOption": "請選擇輔助證件上顯示的簽發方"
+   }
+  },
+  "supporting_document_expiry": {
+   "label": "輔助證件效期",
+   "help": "輔助證件有效期時請填寫。它必須在官方電子簽系統顯示的條件下保持有效。",
+   "errors": {
+    "required": "請輸入輔助證件效期",
+    "invalidFormat": "請使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必須是 01–12",
+    "invalidDay": "日期不正確——請對照該月份天數檢查",
+    "invalid": "不是真實存在的日期",
+    "tooEarly": "該輔助證件已過期"
+   }
+  }
+ }
+}

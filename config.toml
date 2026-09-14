@@ -8,20 +8,25 @@ disableKinds = ["taxonomy", "term"]
 # Multilingual setup
 # - English at root: /, /thailand/, /about/
 # - 简体中文 at /zh/: /zh/, /zh/thailand/, /zh/about/
-# - Content uses file-suffix mode: foo.md (en) + foo.zh.md (zh)
-# - When a Chinese translation does not exist, the language switcher
-#   falls back to /zh/ (homepage), so users never hit a 404.
+# - 繁體中文 at /zh-hant/: /zh-hant/, /zh-hant/thailand/, /zh-hant/about/
+# - Content uses file-suffix mode: foo.md (en) + foo.zh.md (zh) + foo.zh-hant.md
+# - When a translation does not exist, the language switcher falls back to the
+#   language home, so users never hit a 404.
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
 [languages]
   [languages.en]
     languageName = "English"
-    languageCode = "en-us"
+    # BCP 47 "en" keeps <html lang>/hreflang aligned with the zh-Hans/zh-Hant
+    # mapping; the OG region tag stays en_US via og_locale below.
+    languageCode = "en"
     weight = 1
     title = "entrycardguide"
     [languages.en.params]
       description = "Independent. Free. Anti-scam entry card guides for international travelers."
+      # OG locale must be a platform-valid region tag (zh_Hans is not one).
+      og_locale = "en_US"
     # Country pages are intentionally NOT listed in the main menu. The header
     # renders one "Countries" dropdown from layouts/partials/country-roster.html,
     # so the nav never overflows as the roster grows (11 → 30+). Keep only the
@@ -44,11 +49,14 @@ defaultContentLanguageInSubdir = false
 
   [languages.zh]
     languageName = "简体中文"
-    languageCode = "zh-cn"
+    # BCP 47 zh-Hans so <html lang>/hreflang/JSON-LD say "Simplified Chinese"
+    # unambiguously (the /zh/ URL path itself is unchanged).
+    languageCode = "zh-Hans"
     weight = 2
     title = "entrycardguide · 入境卡指南"
     [languages.zh.params]
       description = "独立、免费、反诈骗的入境卡填写指南。"
+      og_locale = "zh_CN"
     # 国家页不放进主菜单：header 从 layouts/partials/country-roster.html 渲染
     # 一个「国家」下拉，roster 增长（11 → 30+）时导航永不折行。这里只保留跨页目的地。
     [[languages.zh.menu.main]]
@@ -65,6 +73,37 @@ defaultContentLanguageInSubdir = false
       identifier = "about"
       name = "关于"
       url = "/zh/about/"
+      weight = 80
+
+  [languages.zh-hant]
+    languageName = "繁體中文"
+    languageCode = "zh-Hant"
+    weight = 3
+    title = "entrycardguide · 入境卡指南"
+    # Translations pin their lastmod in front matter (synced from the source
+    # page's effective date). Git-first ordering would otherwise turn the
+    # future translation commit date into a fake "last verified" bump — a
+    # translation is not a regulation re-verification. en/zh keep the default
+    # :git-first behaviour.
+    [languages.zh-hant.frontmatter]
+      lastmod = ["lastmod", "date"]
+    [languages.zh-hant.params]
+      description = "獨立、免費、反詐騙的入境卡填寫指南。"
+      og_locale = "zh_TW"
+    [[languages.zh-hant.menu.main]]
+      identifier = "decide"
+      name = "決策工具"
+      url = "/zh-hant/decide/"
+      weight = 5
+    [[languages.zh-hant.menu.main]]
+      identifier = "official-links"
+      name = "官方目錄"
+      url = "/zh-hant/official-links/"
+      weight = 75
+    [[languages.zh-hant.menu.main]]
+      identifier = "about"
+      name = "關於"
+      url = "/zh-hant/about/"
       weight = 80
 
 # llms.txt — plain-text site index for LLM crawlers (llmstxt.org convention).

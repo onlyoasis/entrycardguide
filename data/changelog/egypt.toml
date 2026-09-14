@@ -4,4 +4,5 @@
 date = "2026-08-30"
 summary = "Initial Egypt e-Visa coverage published"
 summary_zh = "埃及电子签指南首版上线"
+summary_zh_hant = "埃及電子簽指南首版上線"
 detail = "Covers the government portal at visa2egypt.gov.eg, the current USD 30 single-entry and USD 65 multiple-entry tourism fees, the 7-day lead time, the FAQ list of eligible nationalities, the official entry checklist, and the separate visa-on-arrival limits."

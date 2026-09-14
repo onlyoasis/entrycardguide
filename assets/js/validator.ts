@@ -35,6 +35,9 @@ interface FieldRule {
 interface CountryRules {
   country: string;
   fields: Record<string, FieldRule>;
+  // Build-time display strings for the Fix/OK state chip. Present only in
+  // localized payloads (zh-hant); the fallbacks keep EN/ZH output identical.
+  ui?: { fix: string; ok: string };
 }
 
 interface ValidationResult {
@@ -207,7 +210,7 @@ function validateField(value: string, rule: FieldRule): ValidationResult {
 
 // ------ DOM wiring ------
 
-function renderState(row: HTMLElement, result: ValidationResult) {
+function renderState(row: HTMLElement, result: ValidationResult, ui: { fix: string; ok: string }) {
   const state = row.querySelector<HTMLElement>('.validator-state');
   const err = row.querySelector<HTMLElement>('.validator-err-msg');
   if (!state) return;
@@ -215,14 +218,14 @@ function renderState(row: HTMLElement, result: ValidationResult) {
   state.classList.remove('ok', 'err');
   if (!result.ok && result.message) {
     state.classList.add('err');
-    state.textContent = 'Fix ✗';
+    state.textContent = ui.fix;
     if (err) {
       err.textContent = result.message;
       err.style.display = '';
     }
   } else if (result.ok) {
     state.classList.add('ok');
-    state.textContent = 'OK ✓';
+    state.textContent = ui.ok;
     if (err) {
       err.textContent = '';
       err.style.display = 'none';
@@ -244,6 +247,7 @@ function wireValidator(container: HTMLElement) {
     console.warn('validator: no rules found for', container);
     return;
   }
+  const ui = rules.ui ?? { fix: 'Fix ✗', ok: 'OK ✓' };
 
   const rows = container.querySelectorAll<HTMLElement>('.validator-row[data-field]');
   rows.forEach((row) => {
@@ -257,7 +261,7 @@ function wireValidator(container: HTMLElement) {
 
     const runCheck = () => {
       const result = validateField(input.value, rule);
-      renderState(row, result);
+      renderState(row, result, ui);
     };
 
     input.addEventListener('input', runCheck);

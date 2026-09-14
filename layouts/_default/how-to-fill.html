@@ -1,5 +1,9 @@
 {{ define "main" }}
-{{- $isZh := eq .Site.Language.Lang "zh" -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $suffix := "en" -}}
+{{- $sfxKey := "en" -}}
+{{- if eq $lang "zh" -}}{{- $suffix = "zh" -}}{{- $sfxKey = "zh" -}}
+{{- else if eq $lang "zh-hant" -}}{{- $suffix = "zh_hant" -}}{{- $sfxKey = "zht" -}}{{- end -}}
 
 {{- /* ============================================================ */ -}}
 {{- /* Data lookup — meta from official_urls, display data from fields,
@@ -11,7 +15,7 @@
 {{- $fieldData := index hugo.Data.fields $country -}}
 {{- $rules := (index hugo.Data.rules $country).fields -}}
 
-{{- $countryName := cond $isZh $meta.name_zh $meta.name_en -}}
+{{- $countryName := index $meta (printf "name_%s" $suffix) -}}
 {{- /* A country's field guide usually documents the form named in form_code.
        Australia is the exception: form_code is ETA 601, which is App-only and
        has no web fields to document, while the form this guide covers is
@@ -19,9 +23,9 @@
        form_code still drives the hub and the roster. */ -}}
 {{- $formCode := $meta.form_code -}}
 {{- with $meta.fields_form_code }}{{ $formCode = . }}{{ end -}}
-{{- $since := cond $isZh $meta.since_zh $meta.since_en -}}
-{{- $timeNeeded := cond $isZh $meta.time_needed_zh $meta.time_needed_en -}}
-{{- $output := cond $isZh $meta.output_zh $meta.output_en -}}
+{{- $since := index $meta (printf "since_%s" $suffix) -}}
+{{- $timeNeeded := index $meta (printf "time_needed_%s" $suffix) -}}
+{{- $output := index $meta (printf "output_%s" $suffix) -}}
 {{- $fieldCount := $meta.field_count -}}
 {{- $sections := $meta.sections -}}
 {{- $fields := $fieldData.fields -}}
@@ -29,18 +33,18 @@
 {{- $shown := len $fields -}}
 
 {{- /* Breadcrumb ----------------------------------------------------- */ -}}
-<nav aria-label="Breadcrumb" class="-mx-md px-md py-3 border-b border-rule flex items-baseline justify-between flex-wrap gap-y-2 font-mono text-xs text-muted">
+<nav aria-label="{{ i18n "aria_breadcrumb" }}" class="-mx-md px-md py-3 border-b border-rule flex items-baseline justify-between flex-wrap gap-y-2 font-mono text-xs text-muted">
   <div>
-    <a href="{{ "/" | relLangURL }}" class="text-muted no-underline hover:text-ink">{{ if $isZh }}首页{{ else }}Home{{ end }}</a>
+    <a href="{{ "/" | relLangURL }}" class="text-muted no-underline hover:text-ink">{{ i18n "crumb_home" }}</a>
     <span class="mx-1.5">›</span>
     {{- with .Parent }}
     <a href="{{ .Permalink }}" class="text-muted no-underline hover:text-ink">{{ $countryName }}</a>
     <span class="mx-1.5">›</span>
     {{- end }}
-    <span class="text-ink">{{ if $isZh }}逐字段填写指南{{ else }}How to fill every field{{ end }}</span>
+    <span class="text-ink">{{ i18n "htf_crumb_leaf" }}</span>
   </div>
   <div>
-    {{ if $isZh }}最近核验{{ else }}Last verified{{ end }}
+    {{ i18n "label_last_verified" }}
     <span class="text-ink">{{ dateFormat "2006-01-02" .Lastmod }}</span>
   </div>
 </nav>
@@ -49,27 +53,21 @@
 <article class="page-hero pb-md">
   <div class="text-meta font-mono uppercase text-muted mb-5">
     <span aria-hidden="true">{{ $meta.flag }}</span>
-    {{ $countryName }} {{ $formCode }} · {{ if $isZh }}字段指南{{ else }}field guide{{ end }} · {{ $timeNeeded }}
+    {{ $countryName }} {{ $formCode }} · {{ i18n "htf_eyebrow_suffix" }} · {{ $timeNeeded }}
   </div>
   <h1 class="font-serif font-medium m-0" style="line-height: 1.06; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
-    {{- if $isZh -}}
-    官方 {{ $formCode }} 表单里最容易出错的字段，按表单实际顺序。
-    {{- else -}}
-    The fields where people get the official {{ $formCode }} wrong, in form order.
-    {{- end -}}
+    {{ printf (i18n "htf_headline") $formCode | safeHTML }}
   </h1>
   {{- /* The default intro promises official regexes and a local validator on the
          guide page. A country that has neither — because its form publishes no
          web validation, or because the guide page runs no validator — sets
          fields_intro_en/zh in [meta] to say what it actually offers. */ -}}
-  {{- $intro := cond $isZh $meta.fields_intro_zh $meta.fields_intro_en -}}
+  {{- $intro := index $meta (printf "fields_intro_%s" $suffix) -}}
   <p class="text-muted mt-lg" style="font-size: 21px; line-height: 1.5;">
     {{- if $intro -}}
     {{ $intro | safeHTML }}
-    {{- else if $isZh -}}
-    每个字段附官方正则、官方原话错误提示，以及你大概率会出错的地方。粘贴到官方站之前，可以先在 <a href="{{ .Parent.RelPermalink }}{{ $meta.guide_slug }}/" class="text-ink underline underline-offset-4">{{ $formCode }} 主页</a> 的本地校验器里对一遍。
     {{- else -}}
-    With the exact regex the official site enforces, the error message it returns, and what you probably did wrong. Pre-check your values in the <a href="{{ .Parent.RelPermalink }}{{ $meta.guide_slug }}/" class="text-ink underline underline-offset-4">{{ $formCode }} page's local validator</a> before pasting.
+    {{ printf (i18n "htf_intro_default") (printf "%s%s/" .Parent.RelPermalink $meta.guide_slug) $formCode | safeHTML }}
     {{- end -}}
   </p>
 
@@ -83,21 +81,17 @@
 <section class="pb-xl">
   <div class="flex items-baseline justify-between mb-lg flex-wrap gap-md">
     <div>
-      <div class="text-meta font-mono uppercase text-muted mb-2">{{ if $isZh }}§ 按顺序填{{ else }}§ Fields, in order{{ end }}</div>
+      <div class="text-meta font-mono uppercase text-muted mb-2">{{ i18n "htf_section_fields" }}</div>
       <h2 class="font-serif font-medium m-0" style="font-size: 32px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144;">
-        {{- if $isZh -}}
-        {{ $fieldCount }} 个字段，{{ $sections }} 段，合计 {{ $timeNeeded }}。
-        {{- else -}}
-        {{ $fieldCount }} fields, {{ $sections }} sections, {{ $timeNeeded }} total.
-        {{- end -}}
+        {{ printf (i18n "htf_fields_count") $fieldCount $sections $timeNeeded | safeHTML }}
       </h2>
     </div>
     <div class="flex gap-2 items-baseline">
       <span class="inline-flex items-center px-2 py-1 border border-rule rounded-sm font-mono uppercase text-muted" style="font-size: 11px; letter-spacing: 0.08em;">
-        {{ if $isZh }}全部段落{{ else }}All sections{{ end }}
+{{ i18n "htf_all_sections" }}
       </span>
       <span class="inline-flex items-center px-2 py-1 border border-ink rounded-sm font-mono uppercase text-ink" style="font-size: 11px; letter-spacing: 0.08em;">
-        {{ if $isZh }}显示 {{ $shown }} / {{ $fieldCount }}{{ else }}Showing {{ $shown }} of {{ $fieldCount }}{{ end }}
+        {{ printf (i18n "htf_showing") $shown $fieldCount | safeHTML }}
       </span>
     </div>
   </div>
@@ -106,16 +100,16 @@
          label changes between consecutive fields. ------------------ */ -}}
   <div class="border border-rule rounded-md overflow-hidden">
     {{- range $i, $f := $fields -}}
-      {{- $section := cond $isZh $f.section_zh $f.section_en -}}
+      {{- $section := index $f (printf "section_%s" $suffix) -}}
       {{- $prevSection := "" -}}
       {{- if gt $i 0 -}}
         {{- $prev := index $fields (sub $i 1) -}}
-        {{- $prevSection = cond $isZh $prev.section_zh $prev.section_en -}}
+        {{- $prevSection = index $prev (printf "section_%s" $suffix) -}}
       {{- end -}}
       {{- $showDivider := or (eq $i 0) (ne $section $prevSection) -}}
       {{- $rule := index $rules $f.key -}}
-      {{- $copy := cond $isZh $f.copy_zh $f.copy_en -}}
-      {{- $mistakeWhy := cond $isZh $f.mistake_why_zh $f.mistake_why_en -}}
+      {{- $copy := index $f (printf "copy_%s" $suffix) -}}
+      {{- $mistakeWhy := index $f (printf "mistake_why_%s" $suffix) -}}
 
     {{- if $showDivider }}
     <div class="py-3 px-6 border-b border-rule" style="background:#F4F2EC;">
@@ -150,11 +144,11 @@
 
       <aside class="field-examples grid gap-3">
         <div class="rounded-sm px-4 py-3" style="border:1px solid rgba(15,115,86,0.30); border-left:3px solid #0F7356; background:rgba(15,115,86,0.04);">
-          <div class="text-meta font-mono uppercase text-verified mb-1.5">{{ if $isZh }}这样写对{{ else }}Looks good{{ end }}</div>
+          <div class="text-meta font-mono uppercase text-verified mb-1.5">{{ i18n "htf_looks_good" }}</div>
           <div class="font-mono text-ink" style="font-size: 15px;">{{ $f.example }}</div>
         </div>
         <div class="rounded-sm px-4 py-3" style="border:1px solid rgba(179,58,30,0.30); border-left:3px solid #B33A1E; background:rgba(179,58,30,0.04);">
-          <div class="text-meta font-mono uppercase text-scam mb-1.5">{{ if $isZh }}会被退回{{ else }}Will be rejected{{ end }}</div>
+          <div class="text-meta font-mono uppercase text-scam mb-1.5">{{ i18n "htf_will_reject" }}</div>
           <div class="font-mono text-ink" style="font-size: 15px; text-decoration: line-through; text-decoration-color: #B33A1E;">{{ $f.mistake }}</div>
           <p class="text-xs text-muted m-0 mt-1.5">{{ $mistakeWhy }}</p>
         </div>
@@ -167,16 +161,16 @@
 {{- /* Error decoder band ------------------------------------------- */ -}}
 {{- with $errors }}
 <section class="-mx-md px-md py-xl border-y border-rule" style="background:#F4F2EC;">
-  <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}§ 错误解码{{ else }}§ Error decoder{{ end }}</div>
+  <div class="text-meta font-mono uppercase text-muted mb-3">{{ i18n "htf_section_decoder" }}</div>
   <h2 class="font-serif font-medium mb-lg" style="font-size: 32px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144; margin-top: 0;">
-    {{ if $isZh }}官方原话 vs 真正含义。{{ else }}What the official site says vs. what it actually means.{{ end }}
+    {{ i18n "htf_decoder_headline" }}
   </h2>
 
   <div class="grid grid-cols-1 md:grid-cols-2 border border-rule bg-paper overflow-hidden">
     {{- range $i, $e := . }}
     <div class="p-5 grid grid-cols-1 gap-2 content-start {{ if eq (mod $i 2) 0 }}md:border-r border-rule{{ end }} {{ if lt (add $i 1) (len $errors) }}border-b border-rule{{ end }}">
       <code class="font-mono text-scam font-medium" style="font-size: 13px;">"{{ $e.code }}"</code>
-      <p class="m-0" style="font-size: 15px; line-height: 1.5;">{{ if $isZh }}{{ $e.why_zh }}{{ else }}{{ $e.why_en }}{{ end }}</p>
+      <p class="m-0" style="font-size: 15px; line-height: 1.5;">{{ index $e (printf "why_%s" $suffix) }}</p>
     </div>
     {{- end }}
   </div>
@@ -186,13 +180,9 @@
 {{- /* After submit — 5 steps. 4 i18n + 1 from output_en/zh -------- */ -}}
 <section class="pt-22 pb-xl grid grid-cols-1 md:grid-cols-[280px_1fr] gap-xl">
   <div>
-    <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}§ 提交之后{{ else }}§ After submit{{ end }}</div>
+    <div class="text-meta font-mono uppercase text-muted mb-3">{{ i18n "htf_section_after_submit" }}</div>
     <h2 class="font-serif font-medium m-0" style="font-size: 32px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144;">
-      {{- if $isZh -}}
-      从点提交到过关之间会发生什么。
-      {{- else -}}
-      What happens between hitting submit and getting through immigration.
-      {{- end -}}
+      {{ i18n "htf_submit_headline" }}
     </h2>
   </div>
 
@@ -204,22 +194,31 @@
          printed copies (airline gate + officer-stamped stub respectively).
          Countries can set email_title_en/email_body_en (and zh) plus
          printout_title_en/printout_body_en (and zh) in [meta] to override. */ -}}
+  {{- $domain := strings.TrimPrefix "." $meta.suffix -}}
   {{- $emailTitleEn := "Email arrives" -}}
   {{- $emailTitleZh := "邮件送达" -}}
-  {{- $emailBodyEn := printf "Within a few minutes from a %s address, with the record details." (strings.TrimPrefix "." $meta.suffix) -}}
-  {{- $emailBodyZh := printf "几分钟内会有 %s 域名的邮件送达，附记录详情。" (strings.TrimPrefix "." $meta.suffix) -}}
+  {{- $emailTitleHant := "郵件送達" -}}
+  {{- $emailBodyEn := printf "Within a few minutes from a %s address, with the record details." $domain -}}
+  {{- $emailBodyZh := printf "几分钟内会有 %s 域名的邮件送达，附记录详情。" $domain -}}
+  {{- $emailBodyHant := printf "幾分鐘內會有 %s 域名的郵件送達，附記錄詳情。" $domain -}}
   {{- with $meta.email_title_en }}{{ $emailTitleEn = . }}{{ end -}}
   {{- with $meta.email_title_zh }}{{ $emailTitleZh = . }}{{ end -}}
+  {{- with $meta.email_title_zh_hant }}{{ $emailTitleHant = . }}{{ end -}}
   {{- with $meta.email_body_en }}{{ $emailBodyEn = . }}{{ end -}}
   {{- with $meta.email_body_zh }}{{ $emailBodyZh = . }}{{ end -}}
+  {{- with $meta.email_body_zh_hant }}{{ $emailBodyHant = . }}{{ end -}}
   {{- $printoutTitleEn := "No printout needed" -}}
   {{- $printoutTitleZh := "不必打印" -}}
+  {{- $printoutTitleHant := "不必列印" -}}
   {{- $printoutBodyEn := "Screenshot is fine. PDF is fine. Even the email app open on your phone is fine." -}}
   {{- $printoutBodyZh := "截图就行，PDF 也行，甚至直接打开手机邮箱给官员看都行。" -}}
+  {{- $printoutBodyHant := "截圖就行，PDF 也行，甚至直接打開手機信箱給官員看都行。" -}}
   {{- with $meta.printout_title_en }}{{ $printoutTitleEn = . }}{{ end -}}
   {{- with $meta.printout_title_zh }}{{ $printoutTitleZh = . }}{{ end -}}
+  {{- with $meta.printout_title_zh_hant }}{{ $printoutTitleHant = . }}{{ end -}}
   {{- with $meta.printout_body_en }}{{ $printoutBodyEn = . }}{{ end -}}
   {{- with $meta.printout_body_zh }}{{ $printoutBodyZh = . }}{{ end -}}
+  {{- with $meta.printout_body_zh_hant }}{{ $printoutBodyHant = . }}{{ end -}}
   {{- /* Step 05 "if verification fails" default is safe for arrival cards —
          the officer can look you up by passport. For e-visas (Vietnam), the
          failure point is the airline boarding gate, not the immigration
@@ -227,26 +226,30 @@
          visa. Override via [meta].verification_title_en/zh. */ -}}
   {{- $verifyTitleEn := "If verification fails" -}}
   {{- $verifyTitleZh := "万一核验失败" -}}
+  {{- $verifyTitleHant := "萬一核驗失敗" -}}
   {{- $verifyBodyEn := "Rare. Officer looks you up by passport number — your record is already in the system." -}}
   {{- $verifyBodyZh := "极少见。警官会用护照号查你——提交那一刻起记录已经进系统了。" -}}
+  {{- $verifyBodyHant := "極少見。警官會用護照號查你——提交那一刻起記錄已經進系統了。" -}}
   {{- with $meta.verification_title_en }}{{ $verifyTitleEn = . }}{{ end -}}
   {{- with $meta.verification_title_zh }}{{ $verifyTitleZh = . }}{{ end -}}
+  {{- with $meta.verification_title_zh_hant }}{{ $verifyTitleHant = . }}{{ end -}}
   {{- with $meta.verification_body_en }}{{ $verifyBodyEn = . }}{{ end -}}
   {{- with $meta.verification_body_zh }}{{ $verifyBodyZh = . }}{{ end -}}
+  {{- with $meta.verification_body_zh_hant }}{{ $verifyBodyHant = . }}{{ end -}}
   {{- $steps := slice
-    (dict "tEn" "Confirmation screen" "tZh" "确认页"           "sEn" "The official site shows a confirmation on screen. Screenshot it — that's your backup." "sZh" "官方站会显示一个确认页。先截图——那是你的备份。")
-    (dict "tEn" $emailTitleEn          "tZh" $emailTitleZh      "sEn" $emailBodyEn "sZh" $emailBodyZh)
-    (dict "tEn" "At immigration"      "tZh" "过关时"           "sEn" $output "sZh" $output)
-    (dict "tEn" $printoutTitleEn       "tZh" $printoutTitleZh   "sEn" $printoutBodyEn "sZh" $printoutBodyZh)
-    (dict "tEn" $verifyTitleEn         "tZh" $verifyTitleZh     "sEn" $verifyBodyEn   "sZh" $verifyBodyZh)
+    (dict "ten" "Confirmation screen" "tzh" "确认页" "tzht" "確認頁" "sen" "The official site shows a confirmation on screen. Screenshot it — that's your backup." "szh" "官方站会显示一个确认页。先截图——那是你的备份。" "szht" "官方站會顯示一個確認頁。先截圖——那是你的備份。")
+    (dict "ten" $emailTitleEn "tzh" $emailTitleZh "tzht" $emailTitleHant "sen" $emailBodyEn "szh" $emailBodyZh "szht" $emailBodyHant)
+    (dict "ten" "At immigration" "tzh" "过关时" "tzht" "過關時" "sen" $output "szh" $output "szht" $output)
+    (dict "ten" $printoutTitleEn "tzh" $printoutTitleZh "tzht" $printoutTitleHant "sen" $printoutBodyEn "szh" $printoutBodyZh "szht" $printoutBodyHant)
+    (dict "ten" $verifyTitleEn "tzh" $verifyTitleZh "tzht" $verifyTitleHant "sen" $verifyBodyEn "szh" $verifyBodyZh "szht" $verifyBodyHant)
   -}}
   <ol class="list-none p-0 m-0">
     {{- range $i, $s := $steps }}
     <li class="grid grid-cols-[48px_1fr] gap-5 py-5 border-t border-rule {{ if eq $i 4 }}border-b border-rule{{ end }}">
       <div class="font-serif font-medium text-ink" style="font-size: 28px; letter-spacing: -0.01em; line-height: 1; font-variation-settings: 'opsz' 144;">0{{ add $i 1 }}</div>
       <div>
-        <h3 class="m-0 mb-1.5 font-sans font-semibold" style="font-size: 18px;">{{ if $isZh }}{{ $s.tZh }}{{ else }}{{ $s.tEn }}{{ end }}</h3>
-        <p class="text-small text-muted m-0">{{ if $isZh }}{{ $s.sZh }}{{ else }}{{ $s.sEn }}{{ end }}</p>
+        <h3 class="m-0 mb-1.5 font-sans font-semibold" style="font-size: 18px;">{{ index $s (printf "t%s" $sfxKey) }}</h3>
+        <p class="text-small text-muted m-0">{{ index $s (printf "s%s" $sfxKey) }}</p>
       </div>
     </li>
     {{- end }}
@@ -260,15 +263,13 @@
        captured in data/fields/*.toml's shortlist of high-error fields. */ -}}
 {{- with .Content }}
 <section class="border-t border-rule pt-xl pb-xl">
-  <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}§ 完整逐字段指南{{ else }}§ Full walkthrough{{ end }}</div>
-  {{- $walkthrough := cond $isZh $meta.fields_walkthrough_zh $meta.fields_walkthrough_en -}}
+  <div class="text-meta font-mono uppercase text-muted mb-3">{{ i18n "htf_section_walkthrough" }}</div>
+  {{- $walkthrough := index $meta (printf "fields_walkthrough_%s" $suffix) -}}
   <h2 class="font-serif font-medium mb-lg" style="font-size: 32px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144; margin-top: 0;">
     {{- if $walkthrough -}}
     {{ $walkthrough }}
-    {{- else if $isZh -}}
-    字段讲解、官方校验器、常见错误解读。
     {{- else -}}
-    The walkthrough, the in-browser validator, and the full common-errors list.
+    {{ i18n "htf_walkthrough_headline" }}
     {{- end -}}
   </h2>
   <article class="prose prose-lg max-w-none">

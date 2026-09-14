@@ -30,15 +30,19 @@ last_verified = "2026-09-14"
 flag = "🇻🇳"
 name_en = "Vietnam"
 name_zh = "越南"
+name_zh_hant = "越南"
 form_code = "E-Visa"
 guide_slug = "evisa"
 form_key = "evisa"
 form_name_en = "Electronic Visa"
 form_name_zh = "电子签证"
+form_name_zh_hant = "電子簽證"
 since_en = "official program"
 since_zh = "官方电子签证项目"
+since_zh_hant = "官方電子簽證項目"
 fee_en = "USD $25 single / $50 multi"
 fee_zh = "单次 25 美元 / 多次 50 美元"
+fee_zh_hant = "單次 25 美元 / 多次 50 美元"
 suffix = ".gov.vn"
 form_type = "evisa"
 
@@ -48,15 +52,19 @@ field_count = 25
 sections = 5
 time_needed_en = "~15 minutes"
 time_needed_zh = "约 15 分钟"
+time_needed_zh_hant = "約 15 分鐘"
 output_en = "Hand the printed e-visa with your passport. Officer scans, stamps. Print the PDF — some airlines refuse boarding without a paper copy."
 output_zh = "把打印好的电子签证连同护照一起递上。警官扫描、盖章。一定要打印 PDF——部分航司没有纸质件不让登机。"
+output_zh_hant = "把列印好的電子簽證連同護照一起遞上。警官掃描、蓋章。一定要列印 PDF——部分航司沒有紙質件不讓登機。"
 
 # Override the generic "No printout needed" step on the how-to-fill page.
 # Vietnam's e-visa is the one form in our roster that REQUIRES a paper copy.
 printout_title_en = "Print the PDF — required"
 printout_title_zh = "必须打印 PDF"
+printout_title_zh_hant = "必須列印 PDF"
 printout_body_en = "Some airlines (Vietjet, Bamboo) refuse boarding without a paper e-visa. Vietnamese officers also expect printed. A screenshot on your phone is not enough."
 printout_body_zh = "部分航司（Vietjet、Bamboo）没有纸质电子签证不让登机。越南警官也默认要纸质件。手机截图不够。"
+printout_body_zh_hant = "部分航司（Vietjet、Bamboo）沒有紙質電子簽證不讓登機。越南警官也默認要紙質件。手機截圖不夠。"
 
 # Override the generic "email arrives in a few minutes" step. Vietnam's e-visa
 # is human-reviewed: you get a receipt email immediately, but the approved
@@ -64,8 +72,10 @@ printout_body_zh = "部分航司（Vietjet、Bamboo）没有纸质电子签证�
 # Showing "a few minutes" would make the receipt look like approval.
 email_title_en = "Receipt now, visa in 3 working days"
 email_title_zh = "回执立刻到，签证 3 个工作日后下发"
+email_title_zh_hant = "回執立刻到，簽證 3 個工作日後下發"
 email_body_en = "Within minutes you get a receipt confirming submission. The approved e-visa PDF arrives by email 3 working days later (1 day for express). Don't book travel until you have the PDF — the receipt is not a visa."
 email_body_zh = "几分钟内会收到一封确认提交的回执邮件。审批后的电子签证 PDF 要 3 个工作日后才会发到邮箱（加急 1 个工作日）。拿到 PDF 之前不要订机票——回执不是签证。"
+email_body_zh_hant = "幾分鐘內會收到一封確認提交的回執郵件。審批後的電子簽證 PDF 要 3 個工作日後才會發到信箱（加急 1 個工作日）。拿到 PDF 之前不要訂機票——回執不是簽證。"
 
 # Override the generic "officer looks you up by passport" step. Vietnam's
 # e-visa can fail BEFORE immigration — airlines check at the boarding gate,
@@ -73,16 +83,20 @@ email_body_zh = "几分钟内会收到一封确认提交的回执邮件。审批
 # visa. Don't tell e-visa travelers a passport lookup is a safety net.
 verification_title_en = "If verification fails — fix it before you fly"
 verification_title_zh = "万一被拒——出发前就要处理"
+verification_title_zh_hant = "萬一被拒——出發前就要處理"
 verification_body_en = "Airlines verify the e-visa at the boarding gate. If the gate rejects you (wrong port of entry, expired window, no approved PDF), there's no in-airport fallback in Vietnam — you'd need to apply again and re-book. Confirm the approved PDF matches your itinerary 24h before departure."
 verification_body_zh = "航司在登机口核验电子签证。被卡（口岸不对、过期、没有审批 PDF）就只能重新申请并重订机票——在越南机场没有补救通道。出发前 24 小时确认审批 PDF 和行程一致。"
+verification_body_zh_hant = "航司在登機口核驗電子簽證。被卡（口岸不對、過期、沒有審批 PDF）就只能重新申請並重訂機票——在越南機場沒有補救通道。出發前 24 小時確認審批 PDF 和行程一致。"
 
 # Used by the is-ivisa layout. Names the headline middleman this page rebuts.
 # Vietnam's case is "overcharging for a real $25 fee", not "charging for a free service".
 primary_middleman = "iVisa"
 page_question_en = "Is iVisa the official Vietnam E-Visa site?"
 page_question_zh = "iVisa 是越南官方电子签证网站吗？"
+page_question_zh_hant = "iVisa 是越南官方電子簽證網站嗎？"
 page_answer_en = "No."
 page_answer_zh = "不是。"
+page_answer_zh_hant = "不是。"
 
 # Used by the is-ivisa layout. Three cases for "what happened to your money."
 # Vietnam is unique in the roster: the e-visa is a REAL paid government program
@@ -91,28 +105,37 @@ page_answer_zh = "不是。"
 case = "Case 1"
 tag_en = "Most common"
 tag_zh = "最常见"
+tag_zh_hant = "最常見"
 headline_en = "iVisa filed the real e-visa and charged 2–8× the government fee."
 headline_zh = "iVisa 替你提交了真实电子签证，但收了政府费的 2–8 倍。"
+headline_zh_hant = "iVisa 替你提交了真實電子簽證，但收了政府費的 2–8 倍。"
 body_en = "Government fee is USD $25 (single) / $50 (multi). iVisa typically bills USD $80–250. You got a valid visa; you overpaid. Dispute the markup with your card issuer."
 body_zh = "政府费是单次 25 美元 / 多次 50 美元。iVisa 通常收 80–250 美元。签证是真的，只是多付了。把溢价部分和发卡行申诉。"
+body_zh_hant = "政府費是單次 25 美元 / 多次 50 美元。iVisa 通常收 80–250 美元。簽證是真的，只是多付了。把溢價部分和發卡行申訴。"
 
 [[outcomes]]
 case = "Case 2"
 tag_en = "Watch for"
 tag_zh = "需留意"
+tag_zh_hant = "需留意"
 headline_en = "iVisa applied at the wrong port of entry."
 headline_zh = "iVisa 替你填了错的入境口岸。"
+headline_zh_hant = "iVisa 替你填了錯的入境口岸。"
 body_en = "Vietnam e-visas lock you to a specific entry port. If iVisa picked SGN but you fly into HAN, you'll be turned back at the gate. Verify the port matches your itinerary before travel."
 body_zh = "越南电子签证会锁定具体入境口岸。iVisa 选了 SGN 但你飞 HAN，会被卡在登机口。出行前核对口岸和行程是否一致。"
+body_zh_hant = "越南電子簽證會鎖定具體入境口岸。iVisa 選了 SGN 但你飛 HAN，會被卡在登機口。出行前核對口岸和行程是否一致。"
 
 [[outcomes]]
 case = "Case 3"
 tag_en = "Rare"
 tag_zh = "罕见"
+tag_zh_hant = "罕見"
 headline_en = "iVisa's photo or passport scan was rejected and they kept the fee."
 headline_zh = "iVisa 提交的照片或护照扫描被拒签，但费用没退。"
+headline_zh_hant = "iVisa 提交的照片或護照掃描被拒簽，但費用沒退。"
 body_en = "Government processing returned \"rejected\" but iVisa's terms often don't refund. Reapply directly at evisa.gov.vn with a corrected photo — costs the real USD $25."
 body_zh = "政府审核返回 \"rejected\"，但 iVisa 的条款经常不退费。换张合规照片直接到 evisa.gov.vn 重新提交——只花真正的 25 美元。"
+body_zh_hant = "政府審核返回 \"rejected\"，但 iVisa 的條款經常不退費。換張合規照片直接到 evisa.gov.vn 重新提交——只花真正的 25 美元。"
 
 # Known scam / overcharging middleman domains (for scam-site shortcode)
 # IMPORTANT: Vietnam e-visa scams overcharge for a real $25 fee, rather than charging

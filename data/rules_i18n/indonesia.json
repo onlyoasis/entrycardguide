@@ -1,0 +1,96 @@
+{
+ "ui": {
+  "fix": "修正 ✗",
+  "ok": "正確 ✓"
+ },
+ "fields": {
+  "passport": {
+   "label": "護照號碼",
+   "help": "印在護照照片頁上，只含字母和數字。",
+   "errors": {
+    "required": "請輸入護照號碼",
+    "tooShort": "護照號碼太短——至少 6 個字元",
+    "tooLong": "護照號碼太長——最多 12 個字元",
+    "invalidChars": "只能使用字母和數字——不含空格或符號",
+    "invalidFormat": "請輸入照片頁上印刷的字母與數字"
+   }
+  },
+  "full_name": {
+   "label": "全名（與護照相同）",
+   "help": "與護照顯示完全一致（僅拉丁字母）。",
+   "errors": {
+    "required": "請輸入全名",
+    "tooShort": "請輸入護照上顯示的姓名",
+    "tooLong": "最多 80 個字元",
+    "invalidChars": "使用護照上的拉丁拼寫——不帶重音符號或特殊字元"
+   }
+  },
+  "nationality": {
+   "label": "國籍",
+   "help": "簽發你護照的國家。",
+   "errors": {
+    "required": "請選擇國籍",
+    "invalidFormat": "請從下拉選單中選擇"
+   }
+  },
+  "date_of_birth": {
+   "label": "出生日期",
+   "help": "格式：YYYY-MM-DD。",
+   "errors": {
+    "required": "請輸入出生日期",
+    "invalidFormat": "請使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必須是 01–12",
+    "invalidDay": "日期不正確——請對照該月份天數檢查",
+    "invalid": "不是真實存在的日期",
+    "tooEarly": "出生日期似乎過早——請再次確認",
+    "tooLate": "出生日期不能晚於今天"
+   }
+  },
+  "flight_number": {
+   "label": "航班或船班編號",
+   "help": "航空公司兩位 IATA 代碼＋航班編號（例如嘉魯達 GA456、亞航 AK788）。郵輪請填船舶識別號。",
+   "errors": {
+    "required": "請輸入航班或船班編號",
+    "invalidFormat": "格式：航空公司代碼＋編號（例如 GA456），中間無空格。"
+   }
+  },
+  "arrival_date": {
+   "label": "抵達印尼日期",
+   "help": "格式：YYYY-MM-DD——你落地印尼的日期（雅加達時間）。",
+   "errors": {
+    "required": "請輸入抵達日期",
+    "invalidFormat": "請使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必須是 01–12",
+    "invalidDay": "日期不正確——請對照該月份天數檢查",
+    "invalid": "不是真實存在的日期",
+    "tooLate": "抵達日期似乎過遠",
+    "tooEarly": "抵達日期不能早於 2026-01-01"
+   }
+  },
+  "port_of_entry": {
+   "label": "入境口岸",
+   "help": "機場 IATA 代碼或指定海港。CGK＝雅加達，DPS＝峇里島，SUB＝泗水，BPN＝巴厘巴板。",
+   "errors": {
+    "required": "請輸入入境口岸",
+    "tooLong": "最多 60 個字元"
+   }
+  },
+  "accommodation": {
+   "label": "印尼境內地址",
+   "help": "第一晚住宿地點。旅遊填飯店名＋地址即可。",
+   "errors": {
+    "required": "請輸入印尼境內地址",
+    "tooLong": "最多 200 個字元"
+   }
+  },
+  "email": {
+   "label": "電子郵件",
+   "help": "QR Code 將寄到此信箱。",
+   "errors": {
+    "required": "請輸入電子郵件",
+    "invalidFormat": "格式必須類似 name@example.com",
+    "tooLong": "電子郵件太長——最多 80 個字元"
+   }
+  }
+ }
+}

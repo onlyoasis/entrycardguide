@@ -23,6 +23,9 @@ interface QuestionOption {
 interface Form {
   name: string;
   fee: string;
+  // Localized display text for the fee chip (zh-hant payloads). The machine
+  // check below stays on `fee === 'FREE'` so styling can never drift.
+  feeDisplay?: string;
   url: string;
   guide: string;
   agency: string;
@@ -203,7 +206,7 @@ class DecisionTool {
         <div class="decide-form">
           <div class="decide-form-header">
             <span class="decide-form-name">${escape(f.name)}</span>
-            <span class="decide-form-fee ${f.fee === 'FREE' ? 'is-free' : 'is-paid'}">${escape(f.fee)}</span>
+            <span class="decide-form-fee ${f.fee === 'FREE' ? 'is-free' : 'is-paid'}">${escape(f.feeDisplay ?? f.fee)}</span>
           </div>
           <div class="decide-form-agency text-small text-muted">${escape(f.agency)}</div>
           ${f.deadline ? `<div class="decide-form-deadline text-xs text-muted">${escape(f.deadline)}</div>` : ''}

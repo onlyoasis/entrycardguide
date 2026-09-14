@@ -1,0 +1,864 @@
+{
+ "saudi_passport": {
+  "label": "你的護照是 66 個觀光電子簽適用國家之一嗎？",
+  "options": {
+   "eligible": "是，在 66 國電子簽清單上",
+   "other": "否／不確定"
+  }
+ },
+ "saudi_evisa_result": {
+  "summary": "你可以申請沙烏地觀光電子簽。",
+  "forms": [
+   {
+    "feeDisplay": "300 里亞爾起，另加保險與加值稅",
+    "agency": "沙烏地阿拉伯旅遊部",
+    "deadline": "出發前；一般有效期一年，可多次入境，最多停留 90 天"
+   }
+  ],
+  "note": "入口網由旅遊部營運，但主機不是 .gov.sa 後綴。請從沙烏地國家平台 my.gov.sa 或 Visit Saudi 進入，並在輸入資料前核對確切主機名。300 里亞爾基本費不是全部：強制醫療保險、加值稅與付款金額都會影響結帳。此簽證涵蓋觀光、活動、探親訪友、休閒，以及不包括朝覲（Hajj）的副朝（Umrah）。不涵蓋朝覲、就學或工作。"
+ },
+ "saudi_alt_status": {
+  "label": "你是否持有特定的美、英或申根簽證或永久居留，或 GCC 居留身分？",
+  "options": {
+   "has_alt": "是，其中之一",
+   "none": "否／不確定"
+  }
+ },
+ "saudi_finder_result": {
+  "summary": "請使用 KSA Visa Finder，你的資格適用不同的判定方式。",
+  "forms": [
+   {
+    "feeDisplay": "依工具返回的路徑而定",
+    "agency": "沙烏地國家統一平台",
+    "deadline": "訂票前；路徑決定費用與條件"
+   }
+  ],
+  "note": "持特定有效美、英或申根簽證或永久居留者，以及 GCC 居民，其判定條件不同於 66 國電子簽清單。過境簽、副朝與 Nusuk 許可、朝覲簽證與 GCC 居民路徑都是條件各異的獨立產品。"
+ },
+ "saudi_mission_result": {
+  "summary": "請透過簽證查找工具或沙烏地使領館確認現行路徑。",
+  "note": "66 國清單外的護照並非免簽。請使用 my.gov.sa 現行的 KSA Visa Finder 或 ksavisa.sa 的 KSA Visa 平台，或透過沙烏地使領館申請。副朝與朝覲各有專屬管道：副朝簽證走 KSA Visa、副朝許可走 Nusuk，朝覲有專屬簽證與許可。",
+  "fallback_label": "讀讀哪條沙烏地簽證路徑適用"
+ },
+ "kenya_eligibility": {
+  "label": "你的護照或旅客身分出現在肯亞現行 eTA 豁免清單上了嗎？",
+  "options": {
+   "exempt": "是，我已在肯亞入口確認豁免",
+   "required": "不，我確認需要 eTA",
+   "unknown": "我還沒查過現行清單"
+  }
+ },
+ "kenya_exempt_result": {
+  "summary": "依你確認的豁免，你不需要肯亞 eTA。",
+  "note": "請攜帶支持豁免的護照或身分證明。現行肯亞政府清單說你不需要的 eTA，就不要付錢買。"
+ },
+ "kenya_eta_result": {
+  "summary": "出發前請申請肯亞電子旅行許可（eTA）。",
+  "forms": [
+   {
+    "feeDisplay": "標準 30 美元",
+    "agency": "肯亞移民服務局",
+    "deadline": "至少預留 3 個工作日；核准後再出發"
+   }
+  ],
+  "note": "標準政府費用為 30 美元。加值產品或加急處理可能更貴。收據不等於核准。"
+ },
+ "kenya_check_result": {
+  "summary": "付款前先查肯亞現行豁免清單。",
+  "note": "現行清單涵蓋 EAC 公民、列名護照國籍與旅客身分豁免。請先在 etakenya.go.ke 確認你確切的護照與身分。"
+ },
+ "israel_eligibility": {
+  "label": "你的護照與行程適用哪條以色列入境路徑？",
+  "options": {
+   "visa_exempt": "免簽護照，短期觀光或商務",
+   "visa_required": "我的護照需要以色列訪客簽證",
+   "other_status": "我持豁免的以色列身分或有效以色列簽證",
+   "unknown": "我不確定"
+  }
+ },
+ "israel_eta_result": {
+  "summary": "短期行程前請申請 ETA-IL。",
+  "forms": [
+   {
+    "feeDisplay": "25 謝克爾",
+    "agency": "以色列人口與移民管理局（PIBA）",
+    "deadline": "在不可退款的行程安排前至少 72 小時申請"
+   }
+  ],
+  "note": "ETA-IL 僅適用於進行符合資格短期行程的免簽公民。費用不退，核准不保證入境。"
+ },
+ "israel_visa_result": {
+  "summary": "不要申請 ETA-IL。請走以色列訪客簽證管道。",
+  "note": "ETA-IL 不會把需簽證護照變成免簽護照。在這裡付 25 謝克爾也不能取代必需的 B/2 訪客簽證。"
+ },
+ "israel_status_result": {
+  "summary": "若你目前的以色列身分或簽證已屬豁免，不要重複購買 ETA-IL。",
+  "note": "請確認護照與現有身分對本次行程仍然有效。身分有變動時，使用 PIBA 的資格檢查。"
+ },
+ "israel_check_result": {
+  "summary": "付款購買 ETA-IL 前，先確認簽證豁免。",
+  "note": "從官方 gov.il 資格頁開始。免簽短期訪客用 ETA-IL；需簽證旅客走簽證管道。"
+ },
+ "cuba_result": {
+  "summary": "入境行程請填寫免費的 D'Viajeros 表。",
+  "forms": [
+   {
+    "feeDisplay": "免費",
+    "agency": "古巴交通部（會同移民、海關與公共衛生部門）",
+    "deadline": "出發前 7 天內"
+   }
+  ],
+  "note": "每位入境旅客（包括兒童）每次入境都要填 D'Viajeros。它不是觀光簽證。若行程需要觀光電子簽，請先取得該付費代碼，再填入 D'Viajeros 以產生 QR Code。"
+ },
+ "curacao_result": {
+  "summary": "每位訪客都要填寫庫拉索免費的數位移民卡。",
+  "forms": [
+   {
+    "feeDisplay": "免費",
+    "agency": "庫拉索移民局（經庫拉索觀光局指定入口）",
+    "deadline": "出發前 7 天內；最遲抵達前 1 小時"
+   }
+  ],
+  "note": "指定主機使用 .com，不是政府後綴。請從 curacao.com 的 DI Card 連結進入以驗證。官方 DI Card 本身絕不收費。"
+ },
+ "colombia_result": {
+  "summary": "這次入境或離境，你可以填寫免費且可選的 Check-Mig 預先登記。",
+  "forms": [
+   {
+    "feeDisplay": "免費",
+    "agency": "哥倫比亞移民局特別行政單位",
+    "deadline": "出發前 72 小時起至出發前 1 小時"
+   }
+  ],
+  "note": "哥倫比亞移民局表示 Check-Mig 為可選，建議填寫以加快查驗。它不是簽證或入境核准，政府服務不收費。"
+ },
+ "laos_eligibility": {
+  "label": "你是否同時確認了電子簽資格與指定入境口岸？",
+  "options": {
+   "eligible": "是，我的護照符合資格，且我會使用 9 個電子簽口岸之一",
+   "other": "否／我不確定"
+  }
+ },
+ "laos_evisa_result": {
+  "summary": "出發前請申請寮國觀光電子簽。",
+  "forms": [
+   {
+    "feeDisplay": "依護照而異",
+    "agency": "寮國外交部領事司",
+    "deadline": "抵達前至少 5 天；一般處理 3 個工作日"
+   }
+  ],
+  "note": "電子簽僅限單次入境觀光，可停留 30 天，適用 9 個指定口岸。請列印核准函，並持與申請相同的護照。"
+ },
+ "laos_check_result": {
+  "summary": "付款前先查核護照清單與入境口岸。",
+  "note": "免簽、電子簽與落地簽是三條不同路徑。電子簽不能在非指定口岸使用，且這種情況官方費用不予退還。"
+ },
+ "azerbaijan_passport": {
+  "label": "現行外交部免簽清單是否涵蓋你將使用的護照與行程日期？",
+  "options": {
+   "yes": "是，這趟免簽",
+   "no": "否或未列"
+  }
+ },
+ "azerbaijan_evisa_eligible": {
+  "label": "evisa.gov.az 是否將你的護照列為 ASAN 電子簽適用？",
+  "options": {
+   "yes": "是",
+   "no": "否"
+  }
+ },
+ "azerbaijan_visa_free": {
+  "summary": "這趟行程適用亞塞拜然現行免簽管道。",
+  "note": "這趟行程不需要 ASAN 電子簽表。不要付錢請人代辦；請攜帶護照與旅行日期符合現行外交部規定的證明。"
+ },
+ "azerbaijan_apply": {
+  "summary": "請使用官方 ASAN 電子簽入口。",
+  "forms": [
+   {
+    "name": "ASAN 電子簽證",
+    "feeDisplay": "20 美元＋5 美元服務費",
+    "agency": "亞塞拜然總統直屬國家公共服務與社會創新局",
+    "deadline": "標準服務請於抵達前至少 3 個工作日申請。"
+   }
+  ],
+  "note": "電子簽為單次入境，有效期 90 天，可停留最多 30 天。"
+ },
+ "azerbaijan_consular": {
+  "summary": "這本護照無法使用 ASAN 線上管道。",
+  "note": "不要硬走線上申請。請依外交部管道聯繫亞塞拜然使領館。"
+ },
+ "myanmar_eligibility": {
+  "label": "你的護照出現在現行觀光電子簽資格清單上了嗎？",
+  "options": {
+   "yes": "是",
+   "no_unsure": "否或不確定"
+  }
+ },
+ "myanmar_evisa_result": {
+  "summary": "出發前請申請緬甸觀光電子簽。",
+  "forms": [
+   {
+    "feeDisplay": "官方指南為 50 美元；請在步驟 5 確認",
+    "agency": "緬甸移民與人口部",
+    "deadline": "至少預留 3 個工作日"
+   }
+  ],
+  "note": "單次入境、可停留 28 天、核准函 90 天有效，現行 4 個入境口岸。核准後請列印一份。"
+ },
+ "myanmar_not_eligible": {
+  "summary": "官方清單確認資格前，不要付錢辦觀光電子簽。",
+  "note": "觀光與商務清單不同。護照不符合資格時，請聯繫緬甸使領館取得正確的簽證管道。"
+ },
+ "nepal_route": {
+  "label": "哪種護照或落地簽情況適用於你？",
+  "options": {
+   "indian": "印度公民",
+   "chinese_gratis": "中國護照或其他已確認的免費類別",
+   "voa_eligible": "可辦落地簽的護照",
+   "advance_required": "不符合落地簽資格或不確定"
+  }
+ },
+ "nepal_visa_exempt": {
+  "summary": "印度公民不需要尼泊爾簽證。",
+  "note": "無需觀光簽證表格或費用。出發前請查閱現行的政府入境文件規定。"
+ },
+ "nepal_gratis_result": {
+  "summary": "請完成適用的觀光簽證流程，但簽證費可能免除。",
+  "forms": [
+   {
+    "feeDisplay": "已確認免費類別者免費",
+    "agency": "尼泊爾政府移民局",
+    "deadline": "請於出示條碼收據前 15 天內提交"
+   }
+  ],
+  "note": "中國國民屬現行免費觀光簽類別。其他免費類別附有條件；出發前請確認確切類別。"
+ },
+ "nepal_voa_result": {
+  "summary": "先預填觀光簽證表，再於口岸取得簽證。",
+  "forms": [
+   {
+    "feeDisplay": "30 / 50 / 125 美元",
+    "agency": "尼泊爾政府移民局",
+    "deadline": "條碼收據 15 天內有效"
+   }
+  ],
+  "note": "線上收據不是簽證。請持收據、付款證明與護照向移民官辦理。"
+ },
+ "nepal_advance_result": {
+  "summary": "請改用預先 ETA 或尼泊爾使領館管道，而非落地簽。",
+  "forms": [
+   {
+    "name": "NepaliPort ETA／使領館簽證服務",
+    "feeDisplay": "依路徑而異",
+    "agency": "尼泊爾政府移民局",
+    "deadline": "出發前安排"
+   }
+  ],
+  "note": "NepaliPort 將落地簽、ETA 與使領館簽證列為獨立服務。護照需要預先核准時，請勿提交落地簽表格。"
+ },
+ "pakistan_route": {
+  "label": "你的護照適用哪條巴基斯坦觀光入境路徑？",
+  "options": {
+   "gcc_exempt": "沙烏地阿拉伯、科威特、阿聯酋、阿曼、卡達或巴林公民",
+   "vpa_eligible": "護照在現行抵達前簽證（VPA）清單上",
+   "other_unsure": "其他護照或不確定"
+  }
+ },
+ "pakistan_visa_exempt": {
+  "summary": "現行 GCC 豁免：觀光或商務不需 ETA 或簽證。",
+  "note": "此路徑目前涵蓋沙烏地阿拉伯、科威特、阿拉伯聯合大公國、阿曼、卡達和巴林公民，可停留最多 90 天。出發前請重新查閱官方公告。"
+ },
+ "pakistan_vpa_result": {
+  "summary": "請使用免費的抵達前簽證（VPA）觀光申請。",
+  "forms": [
+   {
+    "feeDisplay": "免費",
+    "agency": "巴基斯坦移民與護照總局／NADRA",
+    "deadline": "出發前取得簽證核准通知（Visa Grant Notice）"
+   }
+  ],
+  "note": "請下載核發的簽證核准通知。效期、入境次數與允許停留以該通知為準；不要從一般資格頁推斷統一停留天數。"
+ },
+ "pakistan_regular_result": {
+  "summary": "付款前先查一般線上簽證或使領館管道。",
+  "forms": [
+   {
+    "name": "巴基斯坦線上簽證系統",
+    "feeDisplay": "依護照與類別而異",
+    "agency": "巴基斯坦移民與護照總局／NADRA",
+    "deadline": "出發前安排"
+   }
+  ],
+  "note": "一般簽證費用採對等原則。免費 VPA 是獨立產品，僅供現行符合資格的護照使用。"
+ },
+ "uzbekistan_route": {
+  "label": "你是否查過烏茲別克現行免簽清單對此護照與行程的規定？",
+  "options": {
+   "confirmed_free": "是，這趟符合現行免簽規定",
+   "confirmed_not_free": "是，需要簽證",
+   "not_checked": "否或不確定"
+  }
+ },
+ "uzbekistan_visa_free_result": {
+  "summary": "符合現行免簽規定的行程不需要電子簽表格。",
+  "note": "不需要表格，也沒有電子簽費用。請遵循外交部該國籍條目中確切的期間、護照與機票條件。"
+ },
+ "uzbekistan_check_first": {
+  "summary": "開啟付費電子簽申請前，先查現行外交部免簽清單。",
+  "note": "免簽期間與條件各有不同。未對照現行政府頁面確認護照與行程前，請勿付款。"
+ },
+ "uzbekistan_evisa_eligibility": {
+  "label": "護照是否列在現行電子簽資格附錄 1？",
+  "options": {
+   "eligible": "是",
+   "not_eligible": "否或不確定"
+  }
+ },
+ "uzbekistan_evisa_result": {
+  "summary": "請透過官方烏茲別克電子簽入口申請。",
+  "forms": [
+   {
+    "feeDisplay": "單次 20 美元／兩次 35 美元／多次 50 美元",
+    "agency": "烏茲別克共和國外交部",
+    "deadline": "抵達前至少 3 個工作日申請"
+   }
+  ],
+  "note": "審核需 2 個工作日（不含提交日）。電子簽可停留最多 30 天，自登記起 90 天內入境有效。"
+ },
+ "uzbekistan_mission_result": {
+  "summary": "現行附錄 1 確認資格前，不要使用電子簽表格。",
+  "note": "入口會把簡化電子簽清單外的護照導向相應的烏茲別克駐外使領館。"
+ },
+ "georgia_passport": {
+  "label": "喬治亞現行免簽清單對你的護照怎麼說？",
+  "options": {
+   "visa_free": "我的護照在整整一年免簽清單上",
+   "evisa_eligible": "我需要簽證，且官方入口接受我的護照",
+   "not_sure": "我不確定"
+  }
+ },
+ "georgia_none_result": {
+  "summary": "這趟免簽行程你不需要喬治亞電子簽。",
+  "note": "現行政府附件所列國家的公民可免簽入境並停留整整一年。不需要任何表格。在這條路徑上向你收喬治亞電子簽費用的人，賣的是你不需要的申請。"
+ },
+ "georgia_evisa_result": {
+  "summary": "請使用官方喬治亞電子簽流程。",
+  "forms": [
+   {
+    "feeDisplay": "20 美元＋2% 服務費＋15 美元 DuVerify",
+    "agency": "喬治亞外交部",
+    "deadline": "至少預留 5 個工作日；24 小時內完成 DuVerify"
+   }
+  ],
+  "note": "現行流程有兩個強制付費步驟。簽證效期與允許停留依所選護照而定。"
+ },
+ "georgia_check_result": {
+  "summary": "付款前先查現行政府清單。",
+  "note": "在現行免簽命令中找到護照國家；只有確實需要簽證且官方電子簽入口接受該旅行證件時，才使用電子簽入口。"
+ },
+ "oman_eligibility": {
+  "label": "哪條阿曼入境路徑符合你的護照與行程？",
+  "options": {
+   "gcc_citizen": "GCC 公民",
+   "fourteen_day_exempt": "符合現行 14 天免簽",
+   "evisa": "ROP 申請引導工具顯示可辦電子簽",
+   "not_sure": "我不確定"
+  }
+ },
+ "oman_none_result": {
+  "summary": "GCC 公民不需要阿曼簽證。",
+  "note": "巴林、科威特、卡達、沙烏地阿拉伯與阿拉伯聯合大公國公民可免簽入境阿曼。不需要任何表格。"
+ },
+ "oman_exempt_result": {
+  "summary": "這趟 14 天免簽行程不需要電子簽。",
+  "note": "請閱讀全部現行條件，包括第二組資格規則。14 天豁免不可延長或轉換。符合條件的行程不需要電子簽表格。"
+ },
+ "oman_evisa_result": {
+  "summary": "請申請皇家阿曼警察精靈顯示的簽證子類型。",
+  "forms": [
+   {
+    "feeDisplay": "依簽證類型而異",
+    "agency": "皇家阿曼警察",
+    "deadline": "抵達前至少 4 天申請；處理時間可能不同"
+   }
+  ],
+  "note": "請使用資格結果中該確切子類型顯示的費用、停留時間與條件。"
+ },
+ "oman_check_result": {
+  "summary": "先查現行豁免清單與皇家警察精靈。",
+  "note": "從外交部現行的兩組豁免頁面開始。若未涵蓋你的行程，請在皇家阿曼警察精靈中輸入真實護照與 GCC 居民身分。"
+ },
+ "qatar_eligibility": {
+  "label": "卡達即時簽證檢查器對你的護照與身分顯示什麼？",
+  "options": {
+   "gcc_citizen": "我是 GCC 公民",
+   "visa_free": "免簽入境",
+   "a1": "申請 Hayya 觀光簽證 A1",
+   "other_hayya": "申請其他提供的 Hayya 類別",
+   "not_sure": "我不確定"
+  }
+ },
+ "qatar_none_result": {
+  "summary": "GCC 公民不需要卡達簽證。",
+  "note": "巴林、科威特、阿曼、沙烏地阿拉伯與阿拉伯聯合大公國公民免簽入境。Hayya 表示此身分憑護照或 GCC 證件即可。"
+ },
+ "qatar_free_result": {
+  "summary": "這條免費入境路徑不需要付費的 Hayya 觀光簽證。",
+  "note": "請閱讀並滿足即時檢查器為你的護照顯示的每一項條件。超過 102 個國家可免費入境，但確切的停留與文件條件各有不同。"
+ },
+ "qatar_a1_result": {
+  "summary": "請申請 Hayya 觀光簽證 A1。",
+  "forms": [
+   {
+    "feeDisplay": "100 里亞爾",
+    "agency": "卡達旅遊局／Hayya",
+    "deadline": "無"
+   }
+  ],
+  "note": "卡達旅遊局表示 A1 路徑要求在申請時提供飯店預訂，並在核准後付款。"
+ },
+ "qatar_hayya_result": {
+  "summary": "請使用即時檢查器顯示的 Hayya 類別。",
+  "forms": [
+   {
+    "feeDisplay": "觀光簽 100 里亞爾；請確認提供的類別",
+    "agency": "卡達旅遊局／Hayya",
+    "deadline": "無"
+   }
+  ],
+  "note": "A2、A3 與 A4 服務不同的居留、簽證身分或同行者群組。僅使用為申請人提供的類別。"
+ },
+ "qatar_check_result": {
+  "summary": "開啟 Hayya 前，先用卡達旅遊局即時檢查器。",
+  "note": "請輸入真實護照、GCC 身分與目前的居留或符合資格的簽證答案。免費入境的旅客不應被導向付費的 A1 申請。"
+ },
+ "bahrain_route": {
+  "label": "官方資格檢查顯示哪條巴林路徑？",
+  "options": {
+   "on_arrival": "落地簽",
+   "online": "線上訪客電子簽",
+   "guarantor": "透過保證人辦理簽證",
+   "not_sure": "我不確定"
+  }
+ },
+ "bahrain_arrival_result": {
+  "summary": "請遵循為你的護照顯示的落地簽條件。",
+  "note": "落地簽路徑不需要這份線上電子簽表格。它是另一條資格路徑，且不一定免費。能否入境仍取決於條件與移民官的決定。"
+ },
+ "bahrain_product": {
+  "label": "資格結果提供哪種訪客電子簽產品？",
+  "options": {
+   "two_week": "兩週單次入境",
+   "three_month": "三個月多次入境",
+   "one_year": "一年多次入境",
+   "five_year": "五年多次入境"
+  }
+ },
+ "bahrain_two_week_result": {
+  "summary": "請申請符合資格的兩週單次入境訪客電子簽。",
+  "forms": [
+   {
+    "feeDisplay": "13 第納爾",
+    "agency": "國籍、護照與居留事務局（NPRA）",
+    "deadline": "約 3–5 個工作日；特殊情況可能更久"
+   }
+  ],
+  "note": "公布的總額為簽證 9 第納爾加申請 4 第納爾。付款前請閱讀即時產品條件。"
+ },
+ "bahrain_three_month_result": {
+  "summary": "請申請符合資格的三個月多次入境訪客電子簽。",
+  "forms": [
+   {
+    "feeDisplay": "29 第納爾",
+    "agency": "國籍、護照與居留事務局（NPRA）",
+    "deadline": "約 3–5 個工作日；特殊情況可能更久"
+   }
+  ],
+  "note": "公布的總額為核發 25 第納爾加申請 4 第納爾。付款前請閱讀即時產品條件。"
+ },
+ "bahrain_one_year_result": {
+  "summary": "請申請符合資格的一年多次入境訪客電子簽。",
+  "forms": [
+   {
+    "feeDisplay": "44 第納爾",
+    "agency": "國籍、護照與居留事務局（NPRA）",
+    "deadline": "約 3–5 個工作日；特殊情況可能更久"
+   }
+  ],
+  "note": "只有官方資格結果出現此產品時才使用。付款前請閱讀效期與停留期間條件。"
+ },
+ "bahrain_five_year_result": {
+  "summary": "請申請符合資格的五年多次入境訪客電子簽。",
+  "forms": [
+   {
+    "feeDisplay": "64 第納爾",
+    "agency": "國籍、護照與居留事務局（NPRA）",
+    "deadline": "約 3–5 個工作日；特殊情況可能更久"
+   }
+  ],
+  "note": "政府服務頁為此產品公布了較窄的適用國籍範圍。只有即時資格結果提供時才使用。"
+ },
+ "bahrain_guarantor_result": {
+  "summary": "這條路徑必須由巴林保證人提出申請。",
+  "note": "NPRA 列出的可能保證人包括航空公司、住宿地點、巴林旅行社、巴林公司與巴林公民。這不是旅客直接申請的電子簽表格。"
+ },
+ "bahrain_check_result": {
+  "summary": "請查閱兩份官方清單並執行 NPRA 資格工具。",
+  "note": "使用護照國籍、現行 GCC 身分與真實目的。不要只因某國出現在另一份落地簽清單上，就開始付費的線上申請。"
+ },
+ "tanzania_route": {
+  "label": "哪條坦尚尼亞路徑符合你的護照與目的？",
+  "options": {
+   "exempt": "免簽護照",
+   "ordinary": "普通觀光簽證",
+   "usa_tourism": "美國護照觀光",
+   "transit": "前往第三國的過境",
+   "not_sure": "我不確定"
+  }
+ },
+ "tanzania_exempt_result": {
+  "summary": "這條免簽路徑不需要坦尚尼亞簽證表格。",
+  "note": "請在現行移民服務豁免清單上確認護照。護照與行程確實豁免時，不要付錢辦電子簽。"
+ },
+ "tanzania_ordinary_result": {
+  "summary": "請在政府入口申請普通簽證（Ordinary Visa）。",
+  "forms": [
+   {
+    "feeDisplay": "50 美元",
+    "agency": "坦尚尼亞移民服務局",
+    "deadline": "一般申請 10 天內處理"
+   }
+  ],
+  "note": "普通簽證是美國護照持有人以外的一般觀光路徑。有效期最長 90 天。"
+ },
+ "tanzania_multiple_result": {
+  "summary": "美國護照觀光請使用多次入境簽證（Multiple Visa）。",
+  "forms": [
+   {
+    "feeDisplay": "100 美元",
+    "agency": "坦尚尼亞移民服務局",
+    "deadline": "一般申請 10 天內處理"
+   }
+  ],
+  "note": "指引要求美國護照持有人觀光時使用多次入境簽證，即使只打算入境一次。"
+ },
+ "tanzania_transit_result": {
+  "summary": "過境簽證（Transit Visa）僅適用於前往第三國的過境。",
+  "forms": [
+   {
+    "feeDisplay": "30 美元",
+    "agency": "坦尚尼亞移民服務局",
+    "deadline": "一般申請 10 天內處理"
+   }
+  ],
+  "note": "過境簽證不是觀光用。它最多允許 7 天，並要求目的地簽證及／或後續機票證明。"
+ },
+ "tanzania_check_result": {
+  "summary": "申請前請閱讀現行的豁免、轉介與簽證類型指引。",
+  "note": "費用與處理路徑取決於護照與目的。轉介（referral）案例必須線上申請並等待核准。"
+ },
+ "ethiopia_route": {
+  "label": "哪條衣索比亞觀光入境路徑符合你的護照與停留？",
+  "options": {
+   "exempt": "肯亞或吉布地護照豁免",
+   "on_arrival": "符合落地觀光簽資格",
+   "thirty": "30 天觀光電子簽",
+   "ninety": "90 天觀光電子簽",
+   "land_or_unsure": "陸路入境或不確定"
+  }
+ },
+ "ethiopia_exempt_result": {
+  "summary": "這項護照豁免不需要衣索比亞觀光簽證表格。",
+  "note": "官方頁面說明，持有效護照的肯亞與吉布地公民可免簽入境。"
+ },
+ "ethiopia_arrival_result": {
+  "summary": "請使用為該護照顯示的獨立落地觀光簽路徑。",
+  "note": "請查閱現行官方落地清單及其條件。此結果不會把旅客導向付費的線上電子簽表格。"
+ },
+ "ethiopia_30_result": {
+  "summary": "請申請 30 天單次入境觀光電子簽。",
+  "forms": [
+   {
+    "feeDisplay": "62 美元",
+    "agency": "衣索比亞移民與公民身分服務局",
+    "deadline": "一般 3 天；請於預計抵達前至少 3 天申請"
+   }
+  ],
+  "note": "效期自申請中填寫的預計入境日期起算。"
+ },
+ "ethiopia_90_result": {
+  "summary": "請申請 90 天單次入境觀光電子簽。",
+  "forms": [
+   {
+    "feeDisplay": "152 美元",
+    "agency": "衣索比亞移民與公民身分服務局",
+    "deadline": "一般 3 天；請於預計抵達前至少 3 天申請"
+   }
+  ],
+  "note": "效期自申請中填寫的預計入境日期起算。"
+ },
+ "ethiopia_check_result": {
+  "summary": "請向移民與公民身分服務局確認確切的入境點與護照路徑。",
+  "note": "所查閱的官方頁面未公布現行電子簽口岸清單，也未確認陸路邊境可用。請勿假設計畫中的陸路口岸接受電子簽而付款。"
+ },
+ "morocco_eligibility": {
+  "label": "官方 Accès Maroc 資格檢查器顯示什麼結果？",
+  "options": {
+   "exempt": "不需要簽證",
+   "evisa": "符合電子簽資格",
+   "consular": "需要領事簽證",
+   "aevm": "顯示 AEVM 路徑",
+   "unsure": "我還沒查"
+  }
+ },
+ "morocco_exempt_result": {
+  "summary": "這條免簽路徑不需要摩洛哥簽證表格。",
+  "note": "請用政府連結的即時檢查器確認確切的護照與情況。若確認免簽入境，就不要付錢給電子簽中介。"
+ },
+ "morocco_evisa_result": {
+  "summary": "只有檢查器確認資格後，才申請摩洛哥電子簽。",
+  "forms": [
+   {
+    "feeDisplay": "標準 770 迪拉姆／加急 1,100 迪拉姆",
+    "agency": "摩洛哥王國外交部、非洲合作與摩洛哥僑民事務部",
+    "deadline": "標準 72 個摩洛哥工作小時／加急 24 小時"
+   }
+  ],
+  "note": "這個非政府後綴域名由外交部連結，該部表示平台由其工程與技術人員開發。付款前請從 diplomatie.ma 驗證連結。"
+ },
+ "morocco_consular_result": {
+  "summary": "請遵循官方檢查器顯示的領事簽證路徑。",
+  "note": "當檢查器把你的護照導向領事簽證時，不要提交並支付電子簽費用。"
+ },
+ "morocco_aevm_result": {
+  "summary": "請遵循官方檢查器顯示的 AEVM 路徑。",
+  "note": "AEVM 是獨立路徑。請使用為確切護照與行程返回的說明，而不是電子簽表格。"
+ },
+ "morocco_check_result": {
+  "summary": "選擇任何付費路徑前，先執行 Accès Maroc 資格檢查。",
+  "note": "檢查器會詢問國籍、居留、證件類型、行程目的與符合資格的簽證。免簽旅客不需要付費的電子簽表格。"
+ },
+ "jamaica_route": {
+  "label": "你是以訪客還是居民身分抵達牙買加？",
+  "options": {
+   "visitor": "抵達的訪客",
+   "resident": "抵達的居民",
+   "not_arriving": "不入境牙買加"
+  }
+ },
+ "jamaica_c5_result": {
+  "summary": "請在政府入口提交免費的電子旅客申報（C5）。",
+  "forms": [
+   {
+    "feeDisplay": "免費",
+    "agency": "牙買加護照、移民與公民服務署及牙買加海關",
+    "deadline": "出發前最多 30 天"
+   }
+  ],
+  "note": "現行入口為 enterjamaica.gov.jm。PICA 表示未委託任何第三方提供此表格。C5 與任何針對特定護照的簽證要求相互獨立。"
+ },
+ "jamaica_no_form_result": {
+  "summary": "旅客不入境牙買加時，不需要入境 C5。",
+  "note": "實際入境時請重新執行此工具。過境情況可能不同，請遵循航空公司與邊境對你行程的指示。"
+ },
+ "bahamas_route": {
+  "label": "哪條巴哈馬海關或試點路徑適用？",
+  "options": {
+   "returning_resident": "返國居民",
+   "visitor_goods": "攜帶超出「已使用的個人物品」範圍的物品的訪客",
+   "visitor_personal": "僅攜帶已使用的個人物品的訪客",
+   "selected_pilot": "獲選參加數位入境卡試點",
+   "unsure": "我不確定"
+  }
+ },
+ "bahamas_c17_result": {
+  "summary": "請透過政府授權的 Exempt 入口提交免費的電子海關 C17。",
+  "forms": [
+   {
+    "feeDisplay": "免費；關稅另計",
+    "agency": "巴哈馬海關部與財政部",
+    "deadline": "抵達前以電子方式完成"
+   }
+  ],
+  "note": ".gov.bs 入口經正式授權，並標明 Exempt Technologies 為開發方。請保存 QR Code 供指定海關通道使用。"
+ },
+ "bahamas_oral_result": {
+  "summary": "此訪客情況請使用口頭行李申報路徑。",
+  "note": "現行政府頁面說明，僅攜帶已用個人物品的訪客做口頭行李申報即可。不要開啟不必要的付費或數位申報服務。"
+ },
+ "bahamas_pilot_result": {
+  "summary": "請遵循為獲選航班提供的巴哈馬數位入境卡試點專用說明。",
+  "note": "2026 年 5 月 5 日的公告將試點限於指定航班上的獲選訪客，紙本流程同步保留。它並未設立通用的公開表格。"
+ },
+ "bahamas_check_result": {
+  "summary": "申報前先確認居留身分、物品與任何獲選航班試點通知。",
+  "note": "每位返國居民都使用 C17。訪客攜帶超出已用個人物品時使用 C17；僅攜帶已用個人物品的訪客依政府頁面走口頭申報。"
+ },
+ "aruba_result": {
+  "summary": "每位旅客都要填 ED Card。多數空路抵達者還要在同一官方流程中另付 20 美元可持續發展費。",
+  "forms": [
+   {
+    "feeDisplay": "多數空路抵達者 20 美元永續費；有豁免情形",
+    "agency": "阿魯巴移民局",
+    "deadline": "出發前 7 天內"
+   }
+  ],
+  "note": "ED Card 也適用於海路抵達，但永續費僅適用於機場抵達。"
+ },
+ "panama_result": {
+  "summary": "請使用巴拿馬海關免費的數位貨品與財物申報，然後保存 QR 回應碼。",
+  "forms": [
+   {
+    "name": "數位旅行者宣誓申報表",
+    "feeDisplay": "免費",
+    "agency": "巴拿馬國家海關總署",
+    "deadline": "請在官方 72 小時窗口內提交並出示"
+   }
+  ],
+  "note": "入口支援西班牙語與英語。一份申報可涵蓋家庭團體；QR Code 不能取代海關查驗。"
+ },
+ "peru_result": {
+  "summary": "秘魯移民局會在移民查驗時自動生成 TAM Virtual。之後可使用免費的官方查詢。",
+  "forms": [
+   {
+    "name": "虛擬安地斯移民卡查詢",
+    "feeDisplay": "免費",
+    "agency": "秘魯國家移民總署",
+    "deadline": "出入境紀錄建立之後"
+   }
+  ],
+  "note": "這是查驗後的入境紀錄，不是出發前要提交的表格。請核對下載的 TAM 上顯示的核准停留。"
+ },
+ "brazil_eligibility": {
+  "label": "你將持哪本護照前往巴西？",
+  "options": {
+   "eligible_evisa": "澳洲、加拿大或美國護照",
+   "visa_exempt": "依巴西現行規定免簽的護照",
+   "other_or_unsure": "其他護照或不確定"
+  }
+ },
+ "brazil_evisa_result": {
+  "summary": "符合資格的澳洲、加拿大與美國護照持有人，請使用巴西指定的 VFS Global 電子簽路徑。",
+  "forms": [
+   {
+    "name": "巴西電子訪客簽證",
+    "feeDisplay": "80.90 美元",
+    "agency": "巴西外交部；申請由 VFS Global 受理",
+    "deadline": "儘早申請；核實提交後最多 10 個工作日"
+   }
+  ],
+  "note": "這個 .com 申請主機是政府指定的商業承包商，不是政府後綴。請透過 gov.br 上的外交部頁面驗證。"
+ },
+ "brazil_exempt_result": {
+  "summary": "旅行護照依巴西現行官方規定免簽時，不要購買電子簽。",
+  "note": "出發前請在 gov.br 重新確認現行豁免與允許停留規定。"
+ },
+ "brazil_other_result": {
+  "summary": "VFS 電子簽路徑不是適用於所有護照的通用申請。",
+  "note": "請向外交部或巴西使領館查詢此護照的現行規定與正確簽證路徑。"
+ },
+ "barbados_result": {
+  "summary": "巴巴多斯的合併移民與海關表格於抵達前 72 小時開放，請完成免費表格。",
+  "forms": [
+   {
+    "feeDisplay": "免費",
+    "agency": "巴巴多斯移民局與海關貨物稅局",
+    "deadline": "抵達前 72 小時開放"
+   }
+  ],
+  "note": "請保存兩封電子郵件收據：一份給移民局、一份給海關。入境時備妥電子或列印本。"
+ },
+ "russia_eligibility": {
+  "label": "你將持哪本護照前往俄羅斯？",
+  "options": {
+   "eligible_evisa": "護照在該部 64 國電子簽清單上",
+   "not_listed": "護照不在清單上",
+   "valid_visa": "這本護照已持有效俄羅斯簽證"
+  }
+ },
+ "russia_evisa_result": {
+  "summary": "請在 evisa.kdmid.ru 以個人帳號提交統一電子簽。單次入境、效期 120 天、停留 30 天，費用不退。",
+  "forms": [
+   {
+    "name": "統一電子簽申請",
+    "feeDisplay": "付費；金額於付款時顯示，不予退還",
+    "agency": "俄羅斯聯邦外交部領事司",
+    "deadline": "預計入境日前 4 至 86 天申請"
+   }
+  ],
+  "note": "入境與離境都必須使用核准清單上的口岸，處理最多 4 個日曆天。帳號請使用 Gmail 以外的電子郵件。"
+ },
+ "russia_regular_visa_result": {
+  "summary": "64 國清單外的護照沒有線上電子簽管道。請在俄羅斯使領館或領事館申請普通簽證。",
+  "note": "任何向清單外護照提供線上俄羅斯電子簽的網站，都不是政府管道。"
+ },
+ "russia_valid_visa_result": {
+  "summary": "不需要電子簽。外交部表示，同一護照內的有效俄羅斯簽證即可涵蓋行程，不受電子簽限制。",
+  "note": "普通簽證不能靠取得電子簽來延長。"
+ },
+ "jordan_restricted": {
+  "label": "你的護照在內政部的限制清單上（需事先核准），或屬於不販售 Pass 的阿拉伯國籍嗎？",
+  "options": {
+   "yes": "是，其中之一適用",
+   "no": "否，兩者皆不適用"
+  }
+ },
+ "jordan_arrival": {
+  "label": "你將從哪裡進入約旦？",
+  "options": {
+   "queen_alia": "Queen Alia 機場（安曼）或 Sheikh Hussein 橋",
+   "wadi_araba": "從埃拉特方向的 Wadi Araba 邊境",
+   "aqaba": "阿卡巴機場或阿卡巴海港"
+  }
+ },
+ "jordan_pass_question": {
+  "label": "你會在抵達前購買官方 Jordan Pass，並停留至少 2 個完整夜晚（3 天）嗎？",
+  "options": {
+   "yes": "會，抵達前購買",
+   "no": "不會，我在邊境付費"
+  }
+ },
+ "jordan_pass_result": {
+  "summary": "在 jordanpass.jo 購買 Pass、列印 PDF，並在簽證櫃檯出示：40 第納爾的單次入境簽證費獲得免除，並涵蓋包括佩特拉在內的 40 多個景點。",
+  "forms": [
+   {
+    "feeDisplay": "依佩特拉天數 70 / 75 / 80 第納爾",
+    "agency": "約旦旅遊與古蹟部",
+    "deadline": "抵達前購買；條款規定抵達後購買的 Pass 不享簽證豁免"
+   }
+  ],
+  "note": "Pass 不是簽證：簽證仍由邊防官員核發。免除需停留至少 2 個完整夜晚，提前離境意味著要在機場付費。"
+ },
+ "jordan_visa_on_arrival_result": {
+  "summary": "請在邊境支付單次入境觀光簽證費。出發前不需要任何線上表格。",
+  "forms": [
+   {
+    "name": "單次入境觀光落地簽",
+    "feeDisplay": "一個月 40 第納爾",
+    "agency": "約旦內政部",
+    "deadline": "無"
+   }
+  ],
+  "note": "景點門票之後在各入口分開支付。如果佩特拉在計畫中，決定前先與 70 第納爾的 Pass 比較：Pass 也包含簽證費。"
+ },
+ "jordan_aqaba_result": {
+  "summary": "Pass FAQ 表示，抵達阿卡巴機場的非受限國籍不需要簽證。",
+  "note": "未購買 Pass 時，景點門票仍需分開支付。受限國籍必須在出發前向約旦使領館取得簽證。依賴此規定前，請確認現行的阿卡巴特區規定。"
+ },
+ "jordan_embassy_result": {
+  "summary": "受限國籍需要事先核准，請在出發前向約旦使領館申請。",
+  "note": "內政部電子服務 eservices.moi.gov.jo/MOI_EVISA 是供在王國境外提交申請的帳號登入流程，含 2 第納爾服務費與每位被邀請人 1000 第納爾保證金。任何向受限國籍販售即時線上簽證的網站都不是政府管道。"
+ },
+ "thailand_result": {
+  "summary": "你需要填寫泰國數位入境卡（TDAC）。",
+  "forms": [
+   {
+    "feeDisplay": "免費",
+    "agency": "泰國皇家移民局",
+    "deadline": "抵達前 3 天內"
+   }
+  ],
+  "note": "所有外國訪客都必須填寫 TDAC。它永遠免費。向你收費的就是中介。"
+ }
+}

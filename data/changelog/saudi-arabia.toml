@@ -4,4 +4,5 @@
 date = "2026-08-30"
 summary = "Initial Saudi tourist eVisa coverage published"
 summary_zh = "沙特旅游电子签指南首版上线"
+summary_zh_hant = "沙特旅遊電子簽指南首版上線"
 detail = "Covers the live tourist eVisa portal operated by the Ministry of Tourism, the 66 eligible-country list, one-year multiple-entry validity with 90-day stays, the SAR 300 base fee plus mandatory insurance and VAT, the visa finder route for other passports, and the separate Umrah and Hajj routes. Records that the portal host is not a .gov.sa suffix and must be reached from a government page."

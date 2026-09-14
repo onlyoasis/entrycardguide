@@ -12,11 +12,19 @@
     "submit:indexnow": "node scripts/submit-indexnow.mjs",
     "fetch:search-data": "node scripts/fetch-search-data.mjs",
     "check:index-status": "node scripts/check-index-status.mjs",
-    "clean": "rm -rf public resources"
+    "clean": "rm -rf public resources",
+    "sync:zh-hant": "node scripts/sync-zh-hant.mjs && node scripts/zh-hant/gen-data-toml.mjs && node scripts/zh-hant/gen-roster.mjs && node scripts/zh-hant/gen-i18n.mjs && node scripts/zh-hant/gen-tree.mjs",
+    "check:zh-hant": "node scripts/sync-zh-hant.mjs --check && node scripts/zh-hant/gen-data-toml.mjs --check && node scripts/zh-hant/gen-roster.mjs --check && node scripts/zh-hant/gen-i18n.mjs --check && node scripts/zh-hant/gen-tree.mjs --check && node scripts/zh-hant/check-rules-i18n.mjs && node scripts/zh-hant/check-translation-currency.mjs",
+    "snapshot:zh-hant": "node scripts/zh-hant/snapshot-sources.mjs",
+    "prebuild": "npm run check:zh-hant",
+    "prebuild:prod": "npm run check:zh-hant",
+    "predev": "npm run check:zh-hant"
   },
   "devDependencies": {
+    "@iarna/toml": "2.2.5",
     "@tailwindcss/typography": "^0.5.13",
     "autoprefixer": "^10.4.19",
+    "opencc-js": "1.4.2",
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
     "tailwindcss": "^3.4.4"

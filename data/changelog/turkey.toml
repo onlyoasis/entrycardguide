@@ -4,4 +4,5 @@
 date = "2026-07-14"
 summary = "Turkey guide published"
 summary_zh = "土耳其 e-Visa 指南上线"
+summary_zh_hant = "土耳其 e-Visa 指南上線"
 detail = "Adds the official e-Visa and MFA eligibility sources, current visa-exemption and conditional e-Visa rules, field rules, and documented commercial middlemen."

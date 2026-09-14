@@ -1,0 +1,106 @@
+{
+ "ui": {
+  "fix": "修正 ✗",
+  "ok": "正確 ✓"
+ },
+ "fields": {
+  "passport": {
+   "label": "護照號碼",
+   "help": "印在護照照片頁上，只含字母和數字。",
+   "errors": {
+    "required": "請輸入護照號碼",
+    "tooShort": "護照號碼太短——至少 6 個字元",
+    "tooLong": "護照號碼太長——最多 12 個字元",
+    "invalidChars": "只能使用字母和數字——不含空格或符號",
+    "invalidFormat": "請輸入照片頁上印刷的字母與數字"
+   }
+  },
+  "given_name": {
+   "label": "名（Nombre）",
+   "help": "與護照顯示完全一致（僅拉丁字母）。",
+   "errors": {
+    "required": "請輸入名（Given name）",
+    "tooShort": "請輸入護照上顯示的姓名",
+    "tooLong": "最多 50 個字元",
+    "invalidChars": "使用護照上的拉丁拼寫——不帶重音符號"
+   }
+  },
+  "family_name": {
+   "label": "姓（Apellidos）",
+   "help": "與護照顯示完全一致（僅拉丁字母）。",
+   "errors": {
+    "required": "請輸入姓（Family name）",
+    "tooShort": "請輸入護照上顯示的姓名",
+    "tooLong": "最多 50 個字元",
+    "invalidChars": "使用護照上的拉丁拼寫——不帶重音符號"
+   }
+  },
+  "nationality": {
+   "label": "國籍",
+   "help": "簽發你護照的國家（ISO 三碼國家代碼）。",
+   "errors": {
+    "required": "請選擇國籍",
+    "invalidFormat": "請使用三碼國家代碼（例如 USA、CAN、GBR、FRA）"
+   }
+  },
+  "date_of_birth": {
+   "label": "出生日期",
+   "help": "格式：YYYY-MM-DD。",
+   "errors": {
+    "required": "請輸入出生日期",
+    "invalidFormat": "請使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必須是 01–12",
+    "invalidDay": "日期不正確——請對照該月份天數檢查",
+    "invalid": "不是真實存在的日期",
+    "tooEarly": "出生日期似乎過早——請再次確認",
+    "tooLate": "出生日期不能晚於今天"
+   }
+  },
+  "arrival_date": {
+   "label": "抵達日期",
+   "help": "格式：YYYY-MM-DD——你進入墨西哥的日期。",
+   "errors": {
+    "required": "請輸入抵達日期",
+    "invalidFormat": "請使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必須是 01–12",
+    "invalidDay": "日期不正確——請對照該月份天數檢查",
+    "invalid": "不是真實存在的日期",
+    "tooEarly": "FMM-E 通常在抵達前 30 天內提交",
+    "tooLate": "抵達日期似乎過遠"
+   }
+  },
+  "entry_point": {
+   "label": "入境口岸",
+   "help": "你進入墨西哥的機場或陸路口岸。機場請用 IATA 代碼。",
+   "errors": {
+    "required": "請輸入入境口岸",
+    "tooLong": "最多 60 個字元"
+   }
+  },
+  "trip_purpose": {
+   "label": "旅行目的",
+   "help": "觀光、商務、過境、就學或其他。",
+   "errors": {
+    "required": "請選擇旅行目的"
+   }
+  },
+  "destination_address": {
+   "label": "墨西哥境內地址",
+   "help": "你的住宿地點。旅遊填飯店名＋城市即可。",
+   "errors": {
+    "required": "請輸入墨西哥境內地址",
+    "tooLong": "最多 200 個字元"
+   },
+   "placeholder": "飯店名稱、街道、城市"
+  },
+  "email": {
+   "label": "電子郵件",
+   "help": "FMM PDF 與參考號碼將寄到此信箱。",
+   "errors": {
+    "required": "請輸入電子郵件",
+    "invalidFormat": "格式必須類似 name@example.com",
+    "tooLong": "電子郵件太長——最多 80 個字元"
+   }
+  }
+ }
+}

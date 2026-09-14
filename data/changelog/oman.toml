@@ -4,4 +4,5 @@
 date = "2026-08-30"
 summary = "Initial Oman visa-exemption and eVisa coverage published"
 summary_zh = "阿曼免签与电子签指南首版上线"
+summary_zh_hant = "阿曼免簽與電子簽指南首版上線"
 detail = "Covers the current two-group 14-day exemption, GCC-citizen exemption, ROP eligibility wizard, visa-type-dependent fee and stay, 6-month passport rule, 512 KB upload limit and recommended 4-day application lead."

@@ -3,7 +3,7 @@
   <div class="min-w-0">
 
     {{- if .Parent }}
-    <nav aria-label="Breadcrumb" class="text-meta font-mono uppercase text-muted mb-6">
+    <nav aria-label="{{ i18n "aria_breadcrumb" }}" class="text-meta font-mono uppercase text-muted mb-6">
       <a href="{{ .Parent.Permalink }}" class="text-muted no-underline hover:underline">{{ .Parent.Title }}</a>
       <span> / </span>
       <span>{{ .Title }}</span>
@@ -17,13 +17,13 @@
     {{- end }}
 
     <div class="text-small text-muted border-t border-b border-rule py-3 mb-10 flex flex-wrap gap-x-2 gap-y-1">
-      <span>Last verified <strong class="text-ink font-medium">{{ dateFormat "January 2, 2006" .Lastmod }}</strong></span>
+      <span>{{ i18n "label_last_verified" }} <strong class="text-ink font-medium">{{ dateFormat "January 2, 2006" .Lastmod }}</strong></span>
       {{- with .GitInfo }}
       <span class="text-muted">·</span>
-      <span>Commit <code class="text-ink">{{ .AbbreviatedHash }}</code></span>
+      <span>{{ i18n "label_commit" }} <code class="text-ink">{{ .AbbreviatedHash }}</code></span>
       {{- end }}
       <span class="text-muted">·</span>
-      <span>Also on <a href="https://web.archive.org/web/{{ .Permalink }}" class="text-muted underline underline-offset-2">archive.org</a></span>
+      <span>{{ i18n "label_also_on" }} <a href="https://web.archive.org/web/{{ .Permalink }}" class="text-muted underline underline-offset-2">archive.org</a></span>
     </div>
 
     <div class="lg:hidden -mt-6 mb-10 flex items-baseline gap-4 flex-wrap">

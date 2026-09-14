@@ -1,9 +1,9 @@
 {{ define "main" }}
-{{- $isZh := eq .Site.Language.Lang "zh" -}}
+{{- $isCn := in (slice "zh" "zh-hant") .Site.Language.Lang -}}
 
 {{- /* Breadcrumb ----------------------------------------------------- */ -}}
-<nav aria-label="Breadcrumb" class="-mx-md px-md py-3 border-b border-rule font-mono text-xs text-muted">
-  <a href="{{ "/" | relLangURL }}" class="text-muted no-underline hover:text-ink">{{ if $isZh }}首页{{ else }}Home{{ end }}</a>
+<nav aria-label="{{ i18n "aria_breadcrumb" }}" class="-mx-md px-md py-3 border-b border-rule font-mono text-xs text-muted">
+  <a href="{{ "/" | relLangURL }}" class="text-muted no-underline hover:text-ink">{{ i18n "crumb_home" }}</a>
   <span class="mx-1.5">›</span>
   <span class="text-ink">{{ .Title }}</span>
 </nav>
@@ -14,7 +14,7 @@
   <div class="text-meta font-mono uppercase text-muted mb-5">{{ . }}</div>
   {{- else }}
   <div class="text-meta font-mono uppercase text-muted mb-5">
-    {{ if $isZh }}工具 · 浏览器内运行{{ else }}Tool · runs in your browser{{ end }}
+    {{ i18n "tool_eyebrow_default" }}
   </div>
   {{- end }}
   <h1 class="font-serif font-medium m-0" style="line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
@@ -33,17 +33,17 @@
 {{- /* Last-verified strip ------------------------------------------- */ -}}
 <div class="flex flex-wrap gap-x-8 gap-y-3 py-4 border-y border-rule mb-lg">
   <div class="flex items-baseline gap-2">
-    <span class="text-meta font-mono uppercase text-muted">{{ if $isZh }}最近核验{{ else }}Last reviewed{{ end }}</span>
+    <span class="text-meta font-mono uppercase text-muted">{{ i18n "label_last_reviewed" }}</span>
     <span class="font-mono text-small">{{ dateFormat "2006-01-02" .Lastmod }}</span>
   </div>
   {{- with .GitInfo }}
   <div class="flex items-baseline gap-2">
-    <span class="text-meta font-mono uppercase text-muted">{{ if $isZh }}提交{{ else }}Commit{{ end }}</span>
+    <span class="text-meta font-mono uppercase text-muted">{{ i18n "label_commit" }}</span>
     <a href="https://github.com/onlyoasis/entrycardguide/commit/{{ .Hash }}" class="font-mono text-small text-ink underline underline-offset-2">{{ .AbbreviatedHash }}</a>
   </div>
   {{- end }}
   <div class="flex items-baseline gap-2 ml-auto">
-    <span class="text-meta font-mono uppercase text-muted">{{ if $isZh }}存档{{ else }}Archive{{ end }}</span>
+    <span class="text-meta font-mono uppercase text-muted">{{ i18n "label_archive" }}</span>
     <a href="https://web.archive.org/web/{{ .Permalink }}" class="font-mono text-small text-muted underline underline-offset-2">archive.org ↗</a>
   </div>
 </div>

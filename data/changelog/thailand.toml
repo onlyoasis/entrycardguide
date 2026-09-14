@@ -4,16 +4,19 @@
 date = "2026-06-11"
 summary = "Corrected TDAC launch year and removed a DNS-dead middleman domain"
 summary_zh = "修正 TDAC 生效年份，并移除一个 DNS 已失效的中介域名"
+summary_zh_hant = "修正 TDAC 生效年份，並移除一個 DNS 已失效的中介域名"
 detail = "TDAC launch copy now says May 2025. thailand-tdac.com failed DNS during audit and was removed from the active scam_sites list."
 
 [[entries]]
 date = "2026-04-22"
 summary = "Initial TDAC coverage published"
 summary_zh = "泰国 TDAC 指南首版上线"
+summary_zh_hant = "泰國 TDAC 指南首版上線"
 detail = "Covers TDAC at tdac.immigration.go.th, field validation rules, and iVisa/non-official site warnings."
 
 [[entries]]
 date = "2026-04-26"
 summary = "Scam-site DNS audit"
 summary_zh = "山寨站点 DNS 审计"
+summary_zh_hant = "山寨網站 DNS 審計"
 detail = "Removed stale non-resolving scam domains and kept only live domains with documented evidence."

@@ -4,4 +4,5 @@
 date = "2026-08-30"
 summary = "Initial IMUGA Traveller Declaration coverage published"
 summary_zh = "马尔代夫 IMUGA 旅客申报表指南首版上线"
+summary_zh_hant = "馬爾代夫 IMUGA 旅客申報表指南首版上線"
 detail = "Covers the free Traveller Declaration on the government IMUGA portal, the 96-hour submission window for foreign arrivals, the separate tourist visa issued on arrival, and the 15 August 2024 change that removed the departure declaration."

@@ -4,4 +4,5 @@
 date = "2026-08-30"
 summary = "Initial Bahamas Customs C17 digital declaration coverage published"
 summary_zh = "巴哈马海关 C17 电子申报指南首版上线"
+summary_zh_hant = "巴哈馬海關 C17 電子申報指南首版上線"
 detail = "Covers the government-authorized Exempt .gov.bs portal, the returning-resident and visitor declaration routes, Exempt Technologies operator disclosure, free filing versus customs duties, QR clearance, and the limited 2026 Digital Arrival Card pilot."

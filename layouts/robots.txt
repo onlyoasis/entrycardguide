@@ -4,3 +4,4 @@ Allow: /
 Sitemap: {{ "sitemap.xml" | absURL }}
 Sitemap: {{ "en/sitemap.xml" | absURL }}
 Sitemap: {{ "zh/sitemap.xml" | absURL }}
+Sitemap: {{ "zh-hant/sitemap.xml" | absURL }}

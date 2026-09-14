@@ -1,4 +1,8 @@
-{{- $isZh := eq .Site.Language.Lang "zh" -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $suffix := "en" -}}
+{{- $nameKey := "en" -}}
+{{- if eq $lang "zh" -}}{{- $suffix = "zh" -}}{{- $nameKey = "zh" -}}
+{{- else if eq $lang "zh-hant" -}}{{- $suffix = "zh_hant" -}}{{- $nameKey = "zht" -}}{{- end -}}
 {{- /* Country list comes from the shared roster partial — the same source the
        homepage grid, header dropdown, and footer use. Adding a country there
        adds it here; no per-country edits in this shortcode.
@@ -49,11 +53,11 @@
       {{- $countryData := index hugo.Data.official_urls .key -}}
       {{- $official := index $countryData .formKey -}}
       {{- $meta := $countryData.meta -}}
-      {{- $countryPath := cond $isZh (printf "/zh/%s/" .key) (printf "/%s/" .key) -}}
+      {{- $countryPath := printf "/%s/" .key | relLangURL -}}
       {{- $guidePath := printf "%s%s/" $countryPath .guideSlug -}}
-      <tr data-directory-row data-fee="{{ .fee }}" data-search="{{ printf "%s %s %s %s %s %s %s" .key .en .zh .formCode $official.name $official.url $official.agency }}">
+      <tr data-directory-row data-fee="{{ .fee }}" data-search="{{ printf "%s %s %s %s %s %s %s %s %s" .key .en .zh .zht $meta.name_zh_hant .formCode $official.name $official.url $official.agency }}">
         <th scope="row">
-          <a href="{{ $countryPath }}" class="text-ink no-underline hover:underline underline-offset-4">{{ cond $isZh .zh .en }}</a>
+          <a href="{{ $countryPath }}" class="text-ink no-underline hover:underline underline-offset-4">{{ index . $nameKey }}</a>
         </th>
         <td>
           <a href="{{ $guidePath }}" class="text-ink underline underline-offset-4">{{ $official.name }}</a>
@@ -69,7 +73,7 @@
           <a href="{{ $official.url }}" rel="noopener" class="font-mono text-ink underline underline-offset-4">{{ replaceRE "^https?://" "" $official.url }}</a>
         </td>
         <td class="text-muted">{{ $official.agency }}</td>
-        <td{{ if eq .fee "free" }} class="text-verified"{{ end }}>{{ if eq .fee "free" }}{{ i18n "directory_fee_free" }}{{ else }}{{ cond $isZh $meta.fee_zh $meta.fee_en }}{{ end }}</td>
+        <td{{ if eq .fee "free" }} class="text-verified"{{ end }}>{{ if eq .fee "free" }}{{ i18n "directory_fee_free" }}{{ else }}{{ index $meta (printf "fee_%s" $suffix) }}{{ end }}</td>
         <td class="directory-date">{{ $official.last_verified }}</td>
       </tr>
       {{- end }}

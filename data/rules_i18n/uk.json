@@ -1,0 +1,89 @@
+{
+ "ui": {
+  "fix": "修正 ✗",
+  "ok": "正確 ✓"
+ },
+ "fields": {
+  "passport": {
+   "label": "護照號碼",
+   "help": "從你將持用的護照複製號碼。App 會拍攝護照並可能讀取晶片；線上管道需要護照照片。",
+   "errors": {
+    "required": "請輸入護照號碼",
+    "tooShort": "請輸入照片頁上印刷的護照號碼",
+    "tooLong": "請檢查護照號碼——本機檢查器最多允許 20 個字元",
+    "invalidChars": "只能使用字母和數字",
+    "invalidFormat": "請輸入照片頁上印刷的字母與數字"
+   }
+  },
+  "full_name": {
+   "label": "全名",
+   "help": "使用護照上顯示的所有姓與名。繼續之前先核對從護照照片或晶片讀取的資料。",
+   "errors": {
+    "required": "請輸入全名",
+    "tooShort": "請輸入護照上顯示的姓名",
+    "tooLong": "請檢查護照拼寫——本機檢查器最多允許 100 個字元",
+    "invalidChars": "使用護照上的拉丁拼寫"
+   }
+  },
+  "date_of_birth": {
+   "label": "出生日期",
+   "help": "在本機檢查器中使用 YYYY-MM-DD 格式，與護照顯示的日期一致。",
+   "errors": {
+    "required": "請輸入出生日期",
+    "invalidFormat": "請使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必須是 01–12",
+    "invalidDay": "日期不正確——請對照該月份天數檢查",
+    "invalid": "不是真實存在的日期",
+    "tooLate": "出生日期不能晚於 2026-07-14"
+   }
+  },
+  "email": {
+   "label": "電子郵件",
+   "help": "請使用你可收信的信箱。內政部會寄送提交與結果通知，包括 16 位 ETA 參考號。",
+   "errors": {
+    "required": "請輸入電子郵件",
+    "invalidFormat": "格式必須類似 name@example.com",
+    "tooLong": "電子郵件太長——本檢查器最多 254 個字元"
+   }
+  },
+  "home_address": {
+   "label": "住家地址",
+   "help": "填寫目前的地址。GOV.UK 在 ETA 申請中列出地址問題。",
+   "errors": {
+    "required": "請輸入住家地址"
+   },
+   "placeholder": "街道、城市、地區、國家"
+  },
+  "job": {
+   "label": "職業",
+   "help": "依目前狀況回答職業問題。失業、退休或在學請如實說明，不要虛構僱主。",
+   "errors": {
+    "required": "請填寫職業資訊"
+   }
+  },
+  "other_nationalities": {
+   "label": "其他國籍",
+   "help": "回答你是否持有其他國籍。若「是」，請提供官方表單要求的每一項國籍。",
+   "errors": {
+    "required": "請回答是否持有其他國籍",
+    "invalidOption": "請選擇「是」或「否」"
+   }
+  },
+  "criminal_convictions": {
+   "label": "刑事定罪紀錄",
+   "help": "請如實回答。若「是」，GOV.UK 會要求盡可能詳細提供罪名、定罪日期與刑期。",
+   "errors": {
+    "required": "請回答刑事定罪問題",
+    "invalidOption": "請選擇「是」或「否」"
+   }
+  },
+  "parent_contact": {
+   "label": "家長或監護人聯絡方式",
+   "help": "僅申請人未滿 18 歲時必填。GOV.UK 要求提供具親權責任者的聯絡方式。每位申請人（含兒童）都需臉部照片；App 申請的 10 歲以上申請人還需臉部掃描。",
+   "errors": {
+    "required": "未滿 18 歲的申請人請填家長或監護人聯絡方式"
+   },
+   "placeholder": "姓名、電子郵件與電話"
+  }
+ }
+}

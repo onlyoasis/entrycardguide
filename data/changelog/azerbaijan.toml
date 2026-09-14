@@ -4,4 +4,5 @@
 date = "2026-08-30"
 summary = "Initial Azerbaijan ASAN e-Visa coverage published"
 summary_zh = "阿塞拜疆 ASAN 电子签证指南首版上线"
+summary_zh_hant = "阿塞拜疆 ASAN 電子簽證指南首版上線"
 detail = "Covers the visa-free check before payment, the official evisa.gov.az route, the USD 20 state fee plus USD 5 service fee, standard and urgent processing windows, and the 90-day validity with a stay up to 30 days."

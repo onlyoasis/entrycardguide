@@ -4,4 +4,5 @@
 date = "2026-08-30"
 summary = "Initial Kenya eTA coverage published"
 summary_zh = "肯尼亚 eTA 指南首版上线"
+summary_zh_hant = "肯尼亞 eTA 指南首版上線"
 detail = "Covers the official etakenya.go.ke portal, current exemptions, the USD $30 standard fee, public document requirements and the approval process."

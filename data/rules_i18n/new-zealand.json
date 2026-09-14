@@ -1,0 +1,169 @@
+{
+ "ui": {
+  "fix": "修正 ✗",
+  "ok": "正確 ✓"
+ },
+ "fields": {
+  "passport_number": {
+   "label": "護照號碼",
+   "help": "從你將持用入境紐西蘭的護照複製號碼。NZTD 未公布統一的網頁長度上限，本檢查器採用較寬的英數範圍。",
+   "errors": {
+    "required": "請輸入護照號碼",
+    "tooShort": "請輸入照片頁上印刷的護照號碼",
+    "tooLong": "請檢查護照號碼——本機檢查器最多允許 20 個字元",
+    "invalidChars": "只能使用字母和數字——不含空格或機讀區填充符",
+    "invalidFormat": "請輸入照片頁上印刷的字母與數字"
+   }
+  },
+  "passport_expiry": {
+   "label": "護照效期",
+   "help": "與你將持用入境紐西蘭的護照效期一致。本機檢查器使用 YYYY-MM-DD；提交時請用官方表單的日期控制項。",
+   "errors": {
+    "required": "請輸入護照效期",
+    "invalidFormat": "請使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必須是 01–12",
+    "invalidDay": "日期不正確——請對照該月份天數檢查",
+    "invalid": "不是真實存在的日期",
+    "tooEarly": "護照效期不能早於 2026-07-14"
+   }
+  },
+  "family_name": {
+   "label": "姓（Surname / Family name）",
+   "help": "使用你將持用入境紐西蘭的護照上的英文或拉丁拼寫。",
+   "errors": {
+    "required": "請輸入姓",
+    "tooShort": "請輸入護照上顯示的姓",
+    "tooLong": "最多 80 個字元",
+    "invalidChars": "使用護照上的英文或拉丁拼寫"
+   }
+  },
+  "given_names": {
+   "label": "名（Given name(s)）",
+   "help": "輸入你將持用入境紐西蘭的護照上的所有名。不要漏掉任何一個中間名。",
+   "errors": {
+    "required": "請輸入名",
+    "tooShort": "請輸入護照上顯示的名",
+    "tooLong": "最多 80 個字元",
+    "invalidChars": "使用護照上的英文或拉丁拼寫"
+   }
+  },
+  "date_of_birth": {
+   "label": "出生日期",
+   "help": "與護照日期一致。本機檢查器使用 YYYY-MM-DD；提交時請用官方表單的日期控制項。",
+   "errors": {
+    "required": "請輸入出生日期",
+    "invalidFormat": "請使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必須是 01–12",
+    "invalidDay": "日期不正確——請對照該月份天數檢查",
+    "invalid": "不是真實存在的日期",
+    "tooLate": "出生日期不能晚於 2026-07-14"
+   }
+  },
+  "country_of_birth": {
+   "label": "出生國家",
+   "help": "填 NZTD 要求的出生國家。申報內容必須使用英文。",
+   "errors": {
+    "required": "請輸入出生國家"
+   }
+  },
+  "nationality": {
+   "label": "國籍",
+   "help": "選擇你將持用入境紐西蘭的護照顯示的國籍。",
+   "errors": {
+    "required": "請輸入國籍"
+   }
+  },
+  "arrival_date": {
+   "label": "抵達紐西蘭日期",
+   "help": "填你的航班或船班抵達紐西蘭的日期，不是離開第一個國家的日期。本機檢查器使用 YYYY-MM-DD。",
+   "errors": {
+    "required": "請輸入抵達日期",
+    "invalidFormat": "請使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必須是 01–12",
+    "invalidDay": "日期不正確——請對照該月份天數檢查",
+    "invalid": "不是真實存在的日期",
+    "tooEarly": "抵達日期不能早於 2026-07-14"
+   }
+  },
+  "arrival_method": {
+   "label": "空路或海路抵達",
+   "help": "選擇空路或海路。官方表單會為空路展開航班欄位，為海路展開船班與港口欄位。",
+   "errors": {
+    "required": "請選擇空路或海路抵達",
+    "invalidOption": "請選擇空路或海路"
+   }
+  },
+  "flight_number": {
+   "label": "航班號碼",
+   "help": "空路旅客請填抵達紐西蘭的航班。海路旅客改用船班與港口欄位。本檢查器接受常見的航空公司代碼＋編號格式。",
+   "errors": {
+    "required": "請輸入航班號碼",
+    "invalidFormat": "請使用航空公司代碼＋航班編號，例如 NZ1 或 SQ285"
+   }
+  },
+  "email": {
+   "label": "電子郵件",
+   "help": "請使用你自有的信箱。NZTD 會把參考號碼與提交資訊寄到這裡。",
+   "errors": {
+    "required": "請輸入電子郵件",
+    "invalidFormat": "格式必須類似 name@example.com",
+    "tooLong": "電子郵件太長——本檢查器最多 254 個字元"
+   }
+  },
+  "phone": {
+   "label": "聯絡電話號碼",
+   "help": "請包含國家/地區代碼，確保能聯絡到你。",
+   "errors": {
+    "required": "請輸入聯絡電話號碼",
+    "invalidFormat": "請包含國家代碼和 7–15 位數字"
+   }
+  },
+  "nz_address": {
+   "label": "紐西蘭聯絡或居住地址",
+   "help": "若會住在多處，填第一個紐西蘭地址。請用英文。",
+   "errors": {
+    "required": "請輸入紐西蘭聯絡或居住地址"
+   },
+   "placeholder": "飯店名稱、街道、城市"
+  },
+  "travel_history": {
+   "label": "最近 30 天到訪的國家",
+   "help": "列出過去 30 天到訪的每個紐西蘭以外國家，包括機場轉機。",
+   "errors": {
+    "required": "請填寫最近 30 天的旅行紀錄"
+   }
+  },
+  "immigration_status": {
+   "label": "移民身分",
+   "help": "選擇符合你情況的官方選項：護照與紐西蘭簽證或居民身分、澳洲護照或永久居留，或落地簽證情形。",
+   "errors": {
+    "required": "請選擇移民身分",
+    "invalidOption": "請選擇與你證件相符的官方身分選項"
+   }
+  },
+  "restricted_items": {
+   "label": "管制物品、免稅額與現金",
+   "help": "回答每個問題：藥品、管制物品、酒類、菸草、超額物品、商業貨品、代他人攜帶的物品，以及 10,000 紐幣或等值以上的現金。",
+   "errors": {
+    "required": "請回答所有管制物品與現金問題",
+    "invalidOption": "每個官方問題請如實選擇答案"
+   }
+  },
+  "biosecurity_items": {
+   "label": "食品、動植物與戶外用品",
+   "help": "申報食品、動植物製品、土壤或水、接觸過動植物的器材、用過的戶外裝備，以及最近的野外、動物或農場接觸。不確定就申報。",
+   "errors": {
+    "required": "請回答所有生物安全問題",
+    "invalidOption": "每個官方問題請如實選擇答案"
+   }
+  },
+  "declaration": {
+   "label": "最終聲明",
+   "help": "確認所有答案真實、正確且完整後再勾選。之後的任何更改必須在護照查驗前重新提交。",
+   "errors": {
+    "required": "提交前請先確認聲明",
+    "invalidOption": "檢查所有答案後再確認"
+   }
+  }
+ }
+}

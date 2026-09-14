@@ -4,4 +4,5 @@
 date = "2026-08-30"
 summary = "Initial Aruba ED Card coverage published"
 summary_zh = "阿鲁巴 ED Card 指南首版上线"
+summary_zh_hant = "阿魯巴 ED Card 指南首版上線"
 detail = "Covers the mandatory seven-day ED Card window and separates the card from the USD 20 sustainability fee collected from most air arrivals."
