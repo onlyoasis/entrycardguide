@@ -5,27 +5,15 @@ description: "Free, independent guide to Singapore's official SGAC. Required for
 lastmod: 2026-09-14
 ---
 
-The Singapore Arrival Card (SGAC) is a free electronic form required for everyone entering Singapore — foreign visitors and Singapore PRs returning from abroad. It is filed at `eservices.ica.gov.sg`.
-
-It includes a brief health declaration. It must be filed within 3 days before arrival. It is, and has always been, free.
+The Singapore Arrival Card is a free pre-arrival declaration. Use ICA's service and check the requirements for your journey.
 
 {{< official-link site="singapore.sgac" >}}
 
 ## Start here
 
-### 1. The SGAC, explained without a fee
-Who must file, when, and how to tell the official ICA site from a reseller.
-→ [Read the overview](/singapore/sgac/)
+- [Official service, submission window and exemptions](/singapore/sgac/).
+- [Name, dates, last port and confirmation help](/singapore/how-to-fill/).
 
-## The fast facts
+The three-day window includes your arrival day. Residents entering through land checkpoints and travellers transiting without immigration clearance have exemptions; residents arriving by air or sea should check the submission requirement.
 
-- **Official URL:** `eservices.ica.gov.sg/sgarrivalcard/` — the `.gov.sg` suffix is restricted to Singapore government entities.
-- **Cost:** free. Always free.
-- **Required for:** every foreign arrival into Singapore, plus Singapore PRs returning from abroad. Singaporean citizens entering on a Singapore passport do not need the SGAC.
-- **When to file:** within 3 days before arrival. Earlier submissions are rejected.
-- **What you need:** passport, flight number, address in Singapore, email, about 6 minutes.
-- **What you get:** an email confirmation. The system also auto-links to your passport — most travelers do not need to show the email at immigration.
-
-## Who we are
-
-We are not Singapore's Immigration & Checkpoints Authority (ICA). We do not file SGACs for you. We do not take payment. See our [about page](/about/) for full disclosure.
+{{< source-link site="singapore.sgac_guidance" text="Read ICA's current requirements" >}}. We are an independent guide, not ICA, and do not submit the declaration for you.

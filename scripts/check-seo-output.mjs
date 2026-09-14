@@ -214,8 +214,9 @@ if (!affiliateAnalyticsScript) {
   affiliateAnalyticsProblems.push("No built JS bundle tracks affiliate_click with gtag");
 } else {
   const browser = {
+    location: { hostname: "entrycardguide.com" },
     document: {
-      currentScript: { dataset: { ga4MeasurementId: "G-TEST" } },
+      currentScript: { dataset: { ga4MeasurementId: "G-TEST", ga4Hostname: "entrycardguide.com" } },
       addEventListener() {},
     },
   };

@@ -1,200 +1,59 @@
 ---
-title: "How to Fill the SGAC Form: Singapore Arrival Card (2026)"
-kicker: "Use the official ICA SGAC form at eservices.ica.gov.sg. This guide explains each Singapore Arrival Card field, format, and common error."
-description: "How to fill the SGAC form for Singapore: official ICA Arrival Card fields, passport, flight, address, health declaration, and common errors."
+title: "How to Fill the Singapore Arrival Card: Name, Dates and SGAC Help"
+kicker: "Choose the ICA service, check your name and arrival date, and save the acknowledgement."
+description: "Singapore Arrival Card field help: given names before surname, the three-day window, last city of embarkation, Chinese interface and finding your confirmation."
 date: 2026-04-26
 lastmod: 2026-09-14
-country: "singapore"
+country: singapore
 weight: 20
-keywords: ["sgac how to fill", "singapore arrival card fields", "ica sgac help", "eservices.ica.gov.sg fields", "sgac health declaration"]
-faq:
-  - q: "When can I fill the SGAC form?"
-    a: "You can submit the Singapore Arrival Card within 3 days before arrival. Earlier submissions are rejected by the official ICA site."
-  - q: "What website should I use for the SGAC form?"
-    a: "Use eservices.ica.gov.sg, the official Immigration & Checkpoints Authority site. The SGAC is free, so any site asking for payment is not the official form."
-  - q: "What details do I need for the SGAC?"
-    a: "Prepare your passport details, travel mode, flight or vessel details, arrival date, Singapore address, email, phone number, and health declaration answers."
-  - q: "Why does the SGAC reject my flight number?"
-    a: "The usual cause is a codeshare mismatch. Use the operating carrier's flight number from your boarding pass, not the marketing carrier's code."
-  - q: "Do I need to print the SGAC confirmation?"
-    a: "No. ICA links the record to your passport. Keep the confirmation email on your phone as a backup in case an officer asks for it."
 layout: how-to-fill
+walkthrough_first: true
+guide_title: "Singapore Arrival Card: name, dates and confirmation"
+faq:
+  - q: "Does the three-day window include my arrival day?"
+    a: "Yes. ICA includes the arrival day. For arrival on 30 June, its example permits submission from 28 June."
+  - q: "Can I use the SGAC in Chinese?"
+    a: "The current ICA service offers a Simplified Chinese interface. Its instructions still require the information you provide to be in English."
+  - q: "Which name comes first?"
+    a: "The current Foreign Visitor form prompts Given Name followed by Surname. Check the prompt in the version you are using and include the names from your passport."
+  - q: "Should I submit in both ICA versions?"
+    a: "No. ICA currently links an enhanced version alongside the existing service and says one submission per trip is required."
 ---
 
 {{< official-link site="singapore.sgac" >}}
 
-## Quick answer
+## Start with the official service {#official-service}
 
-Fill the SGAC form only on **eservices.ica.gov.sg**, the official ICA site for the Singapore Arrival Card.
+SGAC is free and is not a visa. ICA offers its web service and the MyICA app. The web page currently links an {{< source-link site="singapore.sgac_enhanced" track="official" text="enhanced version" >}} too: use either version, not both for the same trip.
 
-- Submit within **3 days before arrival**.
-- Prepare passport details, flight or vessel details, Singapore address, email, phone, and health declaration answers.
-- The SGAC is **free**. If a site asks for payment, it is not the official ICA form.
+Select **Submit SGAC**, then the residency category that matches your status. Ordinary foreign visitors use **Foreign Visitor / In-Principle Approval Holder**. Singapore residents and long-term pass holders have their own choices.
 
-This guide walks through every field the official SGAC asks, in the order the form presents them. Pre-check your entries below before pasting them into the official site.
+The current web interface includes **简体中文** in the language menu. The instructions still say to provide your information **in English**. A translated interface does not change how you should enter your travel details.
 
-The SGAC is in English only. The form supports filling for up to 10 travelers in one submission (group bookings).
+## When can I submit? {#submission-window}
 
-{{< validator country="singapore" >}}
+The three-day window **includes your arrival day**. ICA's example: arrival on 30 June means submission from 28 June. In our 14 September check, the form offered arrival dates 14, 15 and 16 September.
 
-## Section 1: Trip type
+Use the date you expect to enter Singapore, not the date you depart from the previous airport. See ICA's {{< source-link site="singapore.arrival_date_help" text="arrival-date answer" >}}. Exemptions include airside transit without immigration clearance and residents entering through land checkpoints; consult the {{< source-link site="singapore.sgac_guidance" text="ICA requirements" >}} for your status.
 
-The first screen asks who you are filling for:
+## Full name: given names, then surname {#passport-name}
 
-- **Individual** — just yourself.
-- **Group** — up to 10 people in one submission. Use this for families.
-- **Bus driver / cabin crew** — operational roles, separate flow.
+The current Foreign Visitor form labels the box **Full Name (In Passport)** and prompts **Given Name followed by Surname**. For an illustrative passport with given names WEI MING and surname TAN, that order is **WEI MING TAN**.
 
-Most travelers pick **Individual**. Group is the same form repeated; everything below applies per traveler.
+Use your own passport's names. Do not add a comma simply because an older guide uses surname-first formatting. If the enhanced service presents separate name boxes, follow those labels. We did not verify every enhanced-service screen.
 
-## Section 2: Passport and identity
+## Last city or port of embarkation {#last-port}
 
-### Passport number
+This field concerns the journey into Singapore, rather than your nationality or where you normally live. For a connecting flight, identify the place where you board the Singapore-bound segment. For example, on London → Doha → Singapore, that segment starts in Doha. This is an explanatory itinerary example, not a quote from ICA.
 
-The string on the photo page. Letters and digits, no spaces.
+Keep it separate from the arrival-date field. For an unusual routing or a dropdown option you cannot match, use ICA's {{< source-link site="singapore.contact" text="help service" >}} instead of inventing a place or flight number.
 
-- ICA's system is strict about format. If your passport number has unusual characters (some Russian or Chinese passports), enter exactly what the photo page shows. The MRZ is not what you want.
+## Before you finish {#confirmation}
 
-### Full name as in passport
+Check your passport details, contact email, dates and Singapore accommodation. For group travel, ICA supports up to ten people on the current service; the group should be travelling together on the same trip. Check the copied trip details for every traveller.
 
-Single field. Type as printed on the photo page.
+Keep the SGAC acknowledgement and D/E number. An **e-Pass** is a different record issued after immigration clearance; it is not the same as submitting the SGAC. ICA explains {{< source-link site="singapore.epass_help" text="how to retrieve these records" >}}.
 
-- Max 80 characters.
-- Latin letters only. Use the spelling from the MRZ if your printed name has accents.
-- Keep the order on the passport (some are family-first, some given-first).
+If an email is missing, check spam and the official retrieval/help options. Do not assume that submitting again is harmless or required after a fixed number of minutes. Use **Update SGAC** for changes while the record remains valid.
 
-### Nationality
-
-Dropdown, English alphabetical order.
-
-### Date of birth
-
-Format: `DD/MM/YYYY` on the form (Singapore uses British convention). Use the date picker.
-
-### Sex
-
-Dropdown: Male / Female / Other.
-
-### Country of residence
-
-Where you currently live. May or may not match nationality.
-
-## Section 3: Trip details
-
-### Travel mode
-
-- **Air** (most common) — flight number required.
-- **Sea** — vessel name required.
-- **Land** — bus operator and crossing point required.
-
-### Flight number / vessel name
-
-For air: airline 2-letter IATA code + flight number, no space.
-
-- `SQ32` (Singapore Airlines), `TR123` (Scoot), `MI471` (SilkAir), `AK706` (AirAsia).
-- **Codeshare trap**: use the operating carrier's flight, not the marketing carrier.
-
-For sea or land: vessel name or bus operator + crossing.
-
-### Date of arrival
-
-Format: `DD/MM/YYYY`. The date you arrive in Singapore (Singapore time, GMT+8).
-
-- Must be within 3 days from today. Earlier submissions are rejected.
-
-### Time of arrival
-
-Approximate. Use the boarding pass's scheduled landing time.
-
-### Last city/port of embarkation
-
-Where you boarded the flight to Singapore. Hong Kong, Tokyo, Bangkok, etc.
-
-## Section 4: Stay in Singapore
-
-### Address in Singapore
-
-Where you'll stay. Hotel name and full address, or residential address for SG residents.
-
-- Max 200 characters.
-- Marina Bay Sands example: `Marina Bay Sands, 10 Bayfront Avenue, Singapore 018956`.
-- For Airbnb / private apartment, use the address the host gave you.
-- Crossing through Singapore for cruises? Use the cruise terminal name plus your hotel for any pre/post-cruise nights.
-
-### Type of accommodation
-
-Dropdown: Hotel / Service apartment / Hostel / Friend's home / Own home (for SG PRs) / Other.
-
-### Date of departure from Singapore
-
-Format `DD/MM/YYYY`. Your planned exit date. Approximate is OK; ICA does not enforce.
-
-## Section 5: Health declaration
-
-This is the part that distinguishes the SGAC from a customs form. Singapore is strict about disease control.
-
-### Have you visited any country in the last 14 days?
-
-If yes, list each country in order. The form has a free-text section.
-
-### Do you have any of the following symptoms now?
-
-Checkbox list:
-- Fever (≥ 38°C)
-- Cough
-- Sore throat
-- Shortness of breath
-- Loss of taste or smell
-- Other (free text)
-
-If you have any symptoms, **answer truthfully**. Singapore has airport health screening; lying about symptoms can lead to mandatory testing or quarantine.
-
-### Have you been hospitalized in the last 21 days?
-
-Yes/No. If yes, brief details.
-
-### Have you been in close contact with anyone with a serious infectious disease?
-
-Yes/No. Honest answer. Singapore screens for tuberculosis, measles, monkeypox, and seasonal high-concern viruses.
-
-## Section 6: Email and phone
-
-Where the confirmation goes.
-
-- Email: max 80 chars. Use a monitored inbox.
-- Phone with country code (`+1 415 555 0100`).
-
----
-
-## What happens after you submit
-
-1. The site shows a confirmation page with a reference number. **Screenshot it.**
-2. An email arrives from `no-reply@ica.gov.sg` confirming submission. There is no separate QR code; the system links your record to your passport.
-3. At Changi Airport / Tuas / Woodlands:
-   - **Singapore Citizens / PRs**: use automated lanes (eGates), no SGAC step needed (if you're a citizen, you don't need the SGAC anyway).
-   - **Foreign visitors**: most use automated lanes if eligible (35+ nationalities, including US, EU, UK, Australia, Japan, etc.). Scan passport, eGate verifies your SGAC submission, gates open.
-   - Otherwise: regular immigration lane. Officer scans your passport, your SGAC record auto-pulls.
-4. You do not need to print or show the confirmation. ICA recommends keeping the email open on your phone as a backup.
-
-## Common errors and what they mean
-
-**"Invalid passport number"**
-You included a space, a dash, or pasted from the MRZ. Use the short passport number.
-
-**"Date of arrival cannot be more than 3 days from today"**
-You're filing too early. Wait until within the 3-day window.
-
-**"Flight not recognized"**
-Most often: codeshare carrier mismatch. Check your boarding pass for the operating carrier code. Sometimes the form rejects perfectly valid flights from charter airlines; in that case, type the flight number manually.
-
-**"Health declaration must be confirmed"**
-You skipped one of the health questions. Every health question is required. Scroll back up.
-
-**"Submission already exists for this passport and date"**
-You filed already and the system has a record. You can update or just leave the existing one — the most recent applies.
-
-**No confirmation email after 1 hour**
-Check spam first. ICA's email system has been reliable but not perfect. If still missing, refile. Duplicate SGACs are harmless and the latest one applies.
-
-**At eGates: "passport not found in SGAC"**
-Rare. Sometimes there's a sync delay between submission and the eGate database. Try the eGate again 5 minutes later, or use the manual lane. If using the manual lane, the officer can verify your SGAC by passport number directly.
+The cards below are practical checks, not certified government regexes. The optional [local checker on the SGAC overview](/singapore/sgac/) applies this site's own limits and cannot submit or retrieve an ICA record.

@@ -3,7 +3,8 @@
 //
 //   node scripts/fetch-search-data.mjs --auth    # one-time: grant access, print refresh token
 //   node scripts/fetch-search-data.mjs           # last 28 days -> data-exports/<date>/
-//   node scripts/fetch-search-data.mjs --days=90
+//   node scripts/fetch-search-data.mjs --days=28 --end-date=2026-09-11 --output-dir=/external/path
+// Default GA4 reports use the production-host/suspected-bot filter. --all-traffic keeps raw traffic.
 //
 // Reads credentials from the environment (or a .env file, which is gitignored):
 //
@@ -37,6 +38,29 @@ const wantsAuth = process.argv.includes("--auth");
 const days = readDays();
 const siteUrl = process.env.GSC_SITE_URL || "sc-domain:entrycardguide.com";
 const propertyId = process.env.GA4_PROPERTY_ID || "536218791";
+const rawTraffic = process.argv.includes("--all-traffic");
+const reportMetadata = { reports: {} };
+function option(name) {
+  return process.argv.find(arg => arg.startsWith(`--${name}=`))?.slice(name.length + 3);
+}
+function reportWindow() {
+  const endDate = option("end-date") || isoDate(3);
+  const end = new Date(`${endDate}T00:00:00Z`);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(endDate) || !Number.isFinite(end.getTime()) || end.toISOString().slice(0,10) !== endDate) {
+    throw new Error("--end-date must be a valid YYYY-MM-DD date");
+  }
+  const startDate = new Date(end.getTime() - (days - 1) * 86400000).toISOString().slice(0,10);
+  return { startDate, endDate };
+}
+const exact = (fieldName, value) => ({ filter: { fieldName, stringFilter: { matchType: "EXACT", value } } });
+const productionFilter = {
+  andGroup: { expressions: [
+    exact("hostName", "entrycardguide.com"),
+    { notExpression: { andGroup: { expressions: [
+      exact("sessionSourceMedium", "(direct) / (none)"), exact("city", "Singapore"), exact("screenResolution", "1280x1200")
+    ] } } }
+  ] }
+};
 
 function loadDotEnv() {
   const file = ".env";
@@ -173,7 +197,7 @@ async function gscQuery(token, dimensions, startDate, endDate) {
   const endpoint = `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(siteUrl)}/searchAnalytics/query`;
   const rows = [];
   for (let startRow = 0; ; startRow += gscRowLimit) {
-    const page = await postJson(endpoint, { startDate, endDate, dimensions, rowLimit: gscRowLimit, startRow }, token);
+    const page = await postJson(endpoint, { startDate, endDate, dimensions, type: "web", dataState: "final", rowLimit: gscRowLimit, startRow }, token);
     if (!page.rows?.length) break;
     rows.push(
       ...page.rows.map(row => ({
@@ -189,29 +213,43 @@ async function gscQuery(token, dimensions, startDate, endDate) {
   return rows;
 }
 
-async function ga4Report(token, dimensions, metrics, startDate, endDate) {
+async function ga4Report(token, dimensions, metrics, startDate, endDate, name, eventFilter) {
+  const filters = [...(rawTraffic ? [] : [productionFilter]), ...(eventFilter ? [eventFilter] : [])];
   const endpoint = `https://analyticsdata.googleapis.com/v1beta/properties/${propertyId}:runReport`;
-  const report = await postJson(
-    endpoint,
-    {
+  const rows = [];
+  const pages = [];
+  let rowCount = 0;
+  do {
+    const report = await postJson(endpoint, {
       dateRanges: [{ startDate, endDate }],
       dimensions: dimensions.map(name => ({ name })),
       metrics: metrics.map(name => ({ name })),
       limit: ga4RowLimit,
-    },
-    token,
-  );
-  return (report.rows || []).map(row => ({
-    ...Object.fromEntries(dimensions.map((name, index) => [name, row.dimensionValues[index].value])),
-    ...Object.fromEntries(metrics.map((name, index) => [name, Number(row.metricValues[index].value)])),
-  }));
+      offset: rows.length,
+      ...(filters.length ? { dimensionFilter: { andGroup: { expressions: filters } } } : {}),
+    }, token);
+    rowCount = report.rowCount || 0;
+    pages.push({ rowCount, metadata: report.metadata || {} });
+    if (!report.rows?.length) {
+      if (rows.length < rowCount) throw new Error(`Incomplete GA4 report: ${name}`);
+      break;
+    }
+    rows.push(...report.rows.map(row => ({
+      ...Object.fromEntries(dimensions.map((name, index) => [name, row.dimensionValues[index].value])),
+      ...Object.fromEntries(metrics.map((name, index) => [name, Number(row.metricValues[index].value)])),
+    })));
+  } while (rows.length < rowCount);
+  reportMetadata.reports[name] = { rowCount, eventFilter: eventFilter || null, metadata: pages[0]?.metadata || {}, pages };
+  return rows;
 }
 
 async function pull() {
+  const { startDate, endDate } = reportWindow();
+  const root = option("output-dir") || process.env.SEARCH_DATA_OUTPUT_DIR || "data-exports";
+  const outDir = path.join(root, `${endDate}-${days}d${rawTraffic ? "-raw" : ""}`);
   const token = await accessToken();
-  const endDate = isoDate(2); // GSC lags ~2 days; keep both sources on one window
-  const startDate = isoDate(2 + days);
-  const outDir = path.join("data-exports", `${endDate}-${days}d`);
+  Object.assign(reportMetadata, { startDate, endDate, days, siteUrl, propertyId,
+    ga4Filter: rawTraffic ? null : productionFilter, retrievedAt: new Date().toISOString() });
   mkdirSync(outDir, { recursive: true });
 
   console.log(`Window ${startDate} .. ${endDate} (${days} days)`);
@@ -219,22 +257,29 @@ async function pull() {
   console.log(`GA4  properties/${propertyId}\n`);
 
   const ga4Metrics = ["sessions", "activeUsers", "engagedSessions", "userEngagementDuration", "eventCount"];
+  const officialClick = exact("eventName", "official_link_click");
+  const conversionMetrics = ["eventCount", "sessions", "totalUsers"];
   const jobs = [
+    ["ga4-official-click-total", () => ga4Report(token, [], conversionMetrics, startDate, endDate, "ga4-official-click-total", officialClick)],
+    ["ga4-official-click-source", () => ga4Report(token, ["sessionSourceMedium"], conversionMetrics, startDate, endDate, "ga4-official-click-source", officialClick)],
+    ["ga4-official-click-page", () => ga4Report(token, ["pagePath"], conversionMetrics, startDate, endDate, "ga4-official-click-page", officialClick)],
+    ["gsc-total", () => gscQuery(token, [], startDate, endDate)],
+    ["ga4-total", () => ga4Report(token, [], ga4Metrics, startDate, endDate, "ga4-total")],
     ["gsc-query", () => gscQuery(token, ["query"], startDate, endDate)],
     ["gsc-page", () => gscQuery(token, ["page"], startDate, endDate)],
     ["gsc-country", () => gscQuery(token, ["country"], startDate, endDate)],
     ["gsc-device", () => gscQuery(token, ["device"], startDate, endDate)],
     ["gsc-date", () => gscQuery(token, ["date"], startDate, endDate)],
     ["gsc-page-query", () => gscQuery(token, ["page", "query"], startDate, endDate)],
-    ["ga4-source-medium", () => ga4Report(token, ["sessionSourceMedium"], ga4Metrics, startDate, endDate)],
-    ["ga4-channel", () => ga4Report(token, ["sessionDefaultChannelGroup"], ga4Metrics, startDate, endDate)],
-    ["ga4-landing-page", () => ga4Report(token, ["landingPage"], ga4Metrics, startDate, endDate)],
-    ["ga4-event", () => ga4Report(token, ["eventName"], ["eventCount"], startDate, endDate)],
-    ["ga4-country", () => ga4Report(token, ["country"], ga4Metrics, startDate, endDate)],
-    ["ga4-landing-page-by-source", () => ga4Report(token, ["landingPage", "sessionSourceMedium"], ga4Metrics, startDate, endDate)],
+    ["ga4-source-medium", () => ga4Report(token, ["sessionSourceMedium"], ga4Metrics, startDate, endDate, "ga4-source-medium")],
+    ["ga4-channel", () => ga4Report(token, ["sessionDefaultChannelGroup"], ga4Metrics, startDate, endDate, "ga4-channel")],
+    ["ga4-landing-page", () => ga4Report(token, ["landingPage"], ga4Metrics, startDate, endDate, "ga4-landing-page")],
+    ["ga4-event", () => ga4Report(token, ["eventName"], ["eventCount"], startDate, endDate, "ga4-event")],
+    ["ga4-country", () => ga4Report(token, ["country"], ga4Metrics, startDate, endDate, "ga4-country")],
+    ["ga4-landing-page-by-source", () => ga4Report(token, ["landingPage", "sessionSourceMedium"], ga4Metrics, startDate, endDate, "ga4-landing-page-by-source")],
     // Headless crawlers show up as one source + one city + one screen resolution with
     // ~0s engagement. Confirmed 2026-08-08: (direct) x Singapore x 1280x1200, 30% of sessions.
-    ["ga4-bot-signature", () => ga4Report(token, ["sessionSourceMedium", "city", "screenResolution"], ga4Metrics, startDate, endDate)],
+    ["ga4-bot-signature", () => ga4Report(token, ["sessionSourceMedium", "city", "screenResolution"], ga4Metrics, startDate, endDate, "ga4-bot-signature")],
   ];
 
   for (const [name, run] of jobs) {
@@ -243,7 +288,8 @@ async function pull() {
     console.log(`  ${name.padEnd(28)} ${String(rows.length).padStart(6)} rows`);
   }
 
-  console.log(`\nWrote ${jobs.length} files to ${outDir}/`);
+  writeFileSync(path.join(outDir, "report-metadata.json"), JSON.stringify(reportMetadata, null, 2));
+  console.log(`\nWrote ${jobs.length} data files and metadata to ${outDir}/`);
 }
 
 if (wantsAuth) {

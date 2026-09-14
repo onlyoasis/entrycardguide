@@ -1,112 +1,64 @@
 ---
-title: "MDAC Website: Malaysia Arrival Card Official Free Form (2026)"
-kicker: "The official MDAC website is imigresen-online.imi.gov.my/mdac/main. The Malaysia Digital Arrival Card is free."
-description: "MDAC website guide: use the official Malaysia arrival card form at imigresen-online.imi.gov.my/mdac/main. Free, no middleman fee."
+title: "Malaysia MDAC: Official Free Form, Who Needs It and How to Submit"
+kicker: "Check the exemption list, prepare your travel details, then open the free Immigration Department form."
+description: "Malaysia MDAC guide: the free official arrival card, exemptions, three-day submission window and a checklist before you fill in your travel details."
 date: 2026-04-24
 lastmod: 2026-09-14
-country: "malaysia"
+country: malaysia
 weight: 10
-keywords: ["malaysia digital arrival card", "MDAC", "malaysia MDAC official", "imigresen online MDAC", "malaysia immigration form"]
-faq:
-  - q: "Is there a fee for the Malaysia MDAC?"
-    a: "No. The Malaysian Immigration Department does not charge for the MDAC. The official site is imigresen-online.imi.gov.my/mdac/main and it is always free."
-  - q: "What is the official MDAC website?"
-    a: "The only official site is imigresen-online.imi.gov.my/mdac/main. The .gov.my suffix is restricted to Malaysian government entities. Any other domain — including sites with Immigration Department-style branding — is a middleman."
-  - q: "Who is exempt from filing the MDAC?"
-    a: "Singaporean citizens, returning Malaysian citizens, Brunei and Thailand passport holders entering by land, certain diplomatic passport holders, transit-only passengers who do not clear immigration, and Malaysian permanent residents (MyPR holders). Everyone else must file."
-  - q: "Is the MDAC the same as a Malaysian visa?"
-    a: "No. They are separate. The MDAC is an arrival declaration. A visa is a separate authorization to enter. Many nationalities (US, UK, EU, Japan) get visa-free entry to Malaysia and only need the MDAC. Others need both."
-  - q: "When should I file the MDAC?"
-    a: "Within 3 days before arrival. Earlier submissions are rejected by the official site."
-  - q: "Do I need to show the MDAC confirmation at immigration?"
-    a: "Not strictly required. Officers look you up by passport. But keeping the confirmation email open on your phone is a zero-cost safety net if their system has issues."
-  - q: "A site is charging me for the MDAC. Is it official?"
-    a: "No. The MDAC is free at imigresen-online.imi.gov.my. Any site charging a fee is a commercial service, not Jabatan Imigresen Malaysia."
 layout: country-form
+faq:
+  - q: "Is the MDAC free?"
+    a: "Yes. Use the Malaysian Immigration Department form linked on this page. A commercial service charge is not a government MDAC fee."
+  - q: "Does a Thai passport alone make me exempt?"
+    a: "No. The published exemption names holders of a Thailand Border Pass, not every Thai passport holder entering by land."
+  - q: "Do Malaysian long-term pass holders need an MDAC?"
+    a: "Malaysian permanent residents and Malaysian long-term pass holders are on the published exemption list. Check your document category before applying."
 ---
 
 {{< official-link site="malaysia.mdac" >}}
 
-## Quick answer
+## Before you start
 
-The official Malaysia arrival card is the **MDAC**. The official MDAC website is **imigresen-online.imi.gov.my/mdac/main**.
+The **Malaysia Digital Arrival Card (MDAC)** is a free arrival declaration. It does not replace a visa or a decision on admission. Foreign visitors who are not exempt should submit it within **three days before arrival**.
 
-- The MDAC is **free**.
-- Most foreign visitors must file within **3 days before arrival**.
-- Any MDAC site charging a fee is a commercial middleman, not the Malaysian Immigration Department.
+Need help with a particular box? Open the [MDAC field guide](/malaysia/how-to-fill/) alongside the official form.
 
-## What the MDAC actually is
+## Who is exempt?
 
-The Malaysia Digital Arrival Card (MDAC) is a digital pre-arrival declaration required for most foreign visitors entering Malaysia. It was introduced by Jabatan Imigresen Malaysia (the Immigration Department of Malaysia) in January 2024.
+The Ministry of Foreign Affairs lists these categories:
 
-It replaces the paper arrival card you used to fill on the plane. You now file it online, within 3 days before your arrival.
+- Singapore citizens.
+- Diplomatic or official passport holders.
+- Malaysian permanent residents and Malaysian long-term pass holders.
+- Holders of Brunei's General Certificate of Identity (GCI).
+- Holders of the Brunei Malaysia Frequent Traveller Facility.
+- Thailand Border Pass holders.
+- Holders of Indonesia's cross-border travel document (PLB).
 
-It is free.
+**A Thai or Brunei passport alone is not the same as the specific border document or facility listed above.** Malaysian citizens are outside this foreign-visitor requirement. If your document category is unclear, check with Immigration before relying on an exemption.
 
-No one can charge you for it. The only legal destination is `imigresen-online.imi.gov.my`, a subdomain of `.gov.my`, which is restricted to Malaysian government entities.
+## Prepare your details
 
-## Who must file and who is exempt
+Keep your passport, arrival and departure itinerary, contact email and Malaysian accommodation details beside you. Use information from your actual documents and booking. Check the arrival date in Malaysia, especially for an overnight flight.
 
-**You must file the MDAC if you are a foreign national entering Malaysia**, with the following exceptions:
+1. Open the official form above and select its registration option.
+2. Enter the passport and trip details requested by the live form.
+3. Review names, passport number and arrival date before submitting.
+4. Save the confirmation or reference the official service provides.
 
-- **Singaporean citizens** — exempt.
-- **Malaysian citizens returning home** — exempt (you are not a visitor).
-- **Passport holders of Brunei and Thailand entering by land** — exempt (special bilateral arrangements).
-- **Diplomatic and official passport holders** under specific agreements — exempt.
-- **Transit passengers** who do not clear immigration (staying airside at KUL, for example) — exempt.
-- **Permanent residents of Malaysia (MyPR holders)** — exempt.
+Do not pay a third party merely to reach the government form. If you choose commercial assistance, its fee is separate from the free MDAC service.
 
-If you do not fit into any of those categories, you must file. When in doubt, file. A filed MDAC is never a problem at immigration. Missing one when you needed it means filling it in front of the officer, on airport wifi, while the line behind you grows.
+## Check a field before submitting
 
-## The problem
-
-Search Google for *"Malaysia arrival card"* and several top results are paid ads from middlemen charging $19 to $35 to fill a free form. Some file the real MDAC. Some do not.
-
-The MDAC is newer than the other cards in this guide (launched January 2024), and the scam ecosystem around it grew fast. Multiple Malaysian news outlets and the Immigration Department's own social media accounts have warned travelers about unauthorized resellers.
-
-## Before you touch any form
-
-Check the address bar. The official site is <mark>imigresen-online.imi.gov.my/mdac/main</mark> and nothing else.
-
-Any domain on `.com`, `.org`, or `.net` is a commercial service, not the Immigration Department. Those are open TLDs. `.gov.my` is restricted to the Malaysian government.
+This optional checker applies the local rules maintained by this guide. It does not submit an MDAC, check your immigration record or guarantee acceptance. Follow the live government form if its controls differ.
 
 {{< validator country="malaysia" >}}
 
-## Every field the official form asks
+## Continuing to another country?
 
-The MDAC has about 9 fields across 3 sections: traveler identity, trip, and stay in Malaysia.
+Malaysia's declaration does not cover the next border crossing. See the [Singapore SG Arrival Card guide](/singapore/sgac/) or [Thailand TDAC guide](/thailand/tdac/) for those separate processes.
 
-None of them require a photo upload.
+## Source for the exemption list
 
-None of them require payment.
-
-If a site asks for either, you are not on the official site.
-
-For a field-by-field walkthrough, read our [how to fill the MDAC guide](/malaysia/how-to-fill/).
-
-## Frequently asked
-
-### Is there a fee for the MDAC?
-No. The Malaysian Immigration Department does not charge for the MDAC.
-
-### Can I fill it on my phone?
-Yes. The official site is mobile-friendly. The site is occasionally slow during peak booking hours; if it times out, wait a few minutes and retry.
-
-### When should I fill it?
-Within 3 days before arrival. Earlier submissions get rejected.
-
-### Is the MDAC the same as a Malaysian visa?
-No. They are separate. The MDAC is an arrival declaration. A visa is a separate authorization to enter. Many nationalities (US, UK, EU, Japan, etc.) get visa-free entry to Malaysia and only need the MDAC. Others need both a visa and the MDAC.
-
-### I already paid a middleman. Can I get a refund?
-Dispute the charge with your credit card issuer. "Service not rendered" or "deceptive practice" usually works. Best within 60 days.
-
-### I filled out the form but didn't get a confirmation email.
-Check spam. If still missing after 1 hour, refile. Duplicate submissions are harmless.
-
-### Do I need to show the MDAC confirmation at immigration?
-Not required. The officer looks you up by passport. But keeping the confirmation email on your phone is a zero-cost safety net if their system has issues.
-
----
-
-*This guide is maintained by entrycardguide. We have no affiliation with Jabatan Imigresen Malaysia or any travel service. Our current affiliate revenue comes from clearly disclosed travel insurance links on eligible pages.*
+{{< source-link site="malaysia.exemptions" >}}

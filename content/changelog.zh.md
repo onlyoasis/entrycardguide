@@ -2,7 +2,7 @@
 title: "变更日志"
 description: "entrycardguide.com 的重要变更：政府政策更新、新国家和内容勘误。"
 date: 2026-04-27
-lastmod: 2026-08-10
+lastmod: 2026-09-14
 url: "/zh/changelog/"
 ---
 
@@ -16,6 +16,14 @@ url: "/zh/changelog/"
 我们**不会**记录每个错别字或样式微调。那些可以看 [git 历史](https://github.com/onlyoasis/entrycardguide/commits/main)。
 
 ---
+
+## 2026-09-14 - 新加坡指南勘误：姓名顺序、提交窗口与官方入口
+
+直接核对 ICA 当前外国旅客页面后，更新了[新加坡字段指南](/zh/singapore/how-to-fill/)：名在前、姓在后；界面可以翻译，资料仍用英文；三天窗口包含抵达当天。[SGAC 介绍页](/zh/singapore/sgac/)也已区分居民陆路豁免，并链接官方增强版。
+
+移除了未经证实的重复提交和政府校验断言。这些是本站指南勘误，不是政府宣布新政策。
+
+本次此前还修正了[马来西亚 MDAC 豁免说明](/zh/malaysia/mdac/)、明确了[英国 ETA 地址示例](/zh/uk/how-to-fill/#home-address)，并从[多米尼加 E-Ticket 指南](/zh/dominican/how-to-fill/)撤回“同一个二维码自动涵盖往返”的说法。
 
 ## 2026-08-10 - 下线中介名单
 

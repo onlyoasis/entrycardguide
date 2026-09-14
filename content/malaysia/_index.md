@@ -24,6 +24,6 @@ Field-by-field walkthrough with common errors and what they mean.
 - **Official URL:** `imigresen-online.imi.gov.my/mdac/main` — the `.gov.my` suffix is restricted to Malaysian government entities.
 - **Cost:** free. Always free.
 - **When to file:** within 3 days before your arrival in Malaysia.
-- **Who is exempt:** Singaporean citizens, Malaysians returning home, Brunei and Thailand passport holders entering by land, certain diplomatic passport holders, and transit-only passengers who do not clear immigration. Everyone else must file.
+- **Who is exempt:** check the [document categories in the MDAC guide](/malaysia/mdac/#who-is-exempt). An ordinary Thai or Brunei passport is not the same as a listed border document.
 - **What you need:** passport (valid 6+ months past arrival), flight details, Malaysia address, email, about 7 minutes.
 - **What you get:** a confirmation email. You do not strictly need to show a QR on arrival; the system is checked by passport. But keeping the email is smart.
