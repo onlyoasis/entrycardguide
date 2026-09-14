@@ -2,7 +2,7 @@
 title: "Changelog"
 description: "What changed on entrycardguide.com: government policy updates, new countries, and content corrections."
 date: 2026-04-27
-lastmod: 2026-08-10
+lastmod: 2026-09-14
 url: "/changelog/"
 ---
 
@@ -16,6 +16,14 @@ A running log of substantive updates. We publish a new entry when:
 We do **not** log every typo fix or layout tweak. For that, see [the git history](https://github.com/onlyoasis/entrycardguide/commits/main).
 
 ---
+
+## 2026-09-14 - Singapore guide corrections
+
+Updated the [Singapore field guide](/singapore/how-to-fill/) after checking ICA's current Foreign Visitor screen: given names before surname, a translated interface with English input, and a three-day window that includes arrival day. The [SGAC overview](/singapore/sgac/) now distinguishes resident land-checkpoint exemptions and links the enhanced official service.
+
+Removed unsupported duplicate-submission and government-validation claims. These are corrections to our guides, not an announcement of new immigration policy.
+
+Earlier in this update, we corrected the [Malaysia MDAC exemption explanation](/malaysia/mdac/), clarified the [UK ETA address example](/uk/how-to-fill/#home-address), and removed unsupported one-code-for-both-directions advice from the [Dominican E-Ticket guide](/dominican/how-to-fill/).
 
 ## 2026-08-10 - Middleman listings retired
 
