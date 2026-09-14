@@ -54,7 +54,7 @@
   },
   "date_of_birth": {
    "label": "出生日期",
-   "help": "與護照日期一致。本機檢查器使用 YYYY-MM-DD；官方轉帳指南使用 YYYYMMDD。",
+   "help": "與護照日期一致。本機檢查器使用 YYYY-MM-DD；官方傳輸指南使用 YYYYMMDD。",
    "errors": {
     "required": "請輸入出生日期",
     "invalidFormat": "請使用 YYYY-MM-DD 格式",
@@ -172,7 +172,7 @@
   },
   "supporting_document_expiry": {
    "label": "輔助證件效期",
-   "help": "輔助證件有效期時請填寫。它必須在官方電子簽系統顯示的條件下保持有效。",
+   "help": "輔助證件有到期日時，請填寫該日期。它必須在官方電子簽系統顯示的條件下保持有效。",
    "errors": {
     "required": "請輸入輔助證件效期",
     "invalidFormat": "請使用 YYYY-MM-DD 格式",

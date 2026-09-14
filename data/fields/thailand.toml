@@ -17,7 +17,7 @@ example = "A1234567"
 mistake = "a 1234567"
 mistake_why_en = "lowercase letter and a space — also a common paste from the MRZ row"
 mistake_why_zh = "小写字母 + 空格；也常见于直接从 MRZ 行复制"
-mistake_why_zh_hant = "小寫字母 + 空格；也常見於直接從 MRZ 行復制"
+mistake_why_zh_hant = "小寫字母 + 空格；也常見於直接從 MRZ 行複製"
 copy_en = "The string next to \"Passport No.\" on the photo page. Six to nine characters, almost always starts with a letter. No spaces, no dashes. Do not use the two long rows of letters and digits at the bottom of the page — that's the MRZ, not your passport number."
 copy_zh = "护照照片页 \"Passport No.\" 那一栏的字符串。6 到 9 位，几乎一定以字母开头。无空格、无短横。不要用照片页底部那两长串字母数字（MRZ），那不是你的护照号。"
 copy_zh_hant = "護照照片頁 \"Passport No.\" 那一欄的字符串。6 到 9 位，幾乎一定以字母開頭。無空格、無短橫。不要用照片頁底部那兩長串字母數字（MRZ），那不是你的護照號。"
@@ -135,7 +135,7 @@ copy_zh_hant = "可選。帶 + 的國家代碼必須有。僅在移民局需要�
 code = "Invalid passport number"
 why_en = "Space, dash, lowercase letter, or pasted from the MRZ."
 why_zh = "空格、短横、小写字母，或者从 MRZ 行复制过来的。"
-why_zh_hant = "空格、短橫、小寫字母，或者從 MRZ 行復制過來的。"
+why_zh_hant = "空格、短橫、小寫字母，或者從 MRZ 行複製過來的。"
 
 [[errors]]
 code = "Invalid date format"

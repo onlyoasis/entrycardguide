@@ -11,4 +11,5 @@ detail = "Covers Singapore Arrival Card official URL, field guidance, and commer
 date = "2026-09-14"
 summary = "Guide correction: name order, submission window and official service options"
 summary_zh = "指南勘误：姓名顺序、提交窗口与官方服务入口"
+summary_zh_hant = "指南勘誤：姓名順序、提交窗口與官方服務入口"
 detail = "Checked ICA's current Foreign Visitor screen and guidance. Distinguished translated interface from English input, corrected resident land-checkpoint exemptions, and removed unsupported duplicate-submission advice. This records a guide correction, not a newly announced immigration policy."

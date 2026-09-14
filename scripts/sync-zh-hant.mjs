@@ -23,6 +23,7 @@
 import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
+import TOML from "@iarna/toml";
 import {
   convertMarkdownBody,
   convertFrontMatterLine,
@@ -143,7 +144,33 @@ for (const src of sources) {
   }
 
   const bodyOut = convertMarkdownBody(body);
-  const { text: anchored, unresolved } = remapAnchors(body, bodyOut);
+  // Only the how-to-fill layout renders `field-<key>` card ids. Layout and
+  // country come from front matter, kept aligned with the directory section
+  // used by the templates. Missing or malformed required TOML fails the sync.
+  let knownAnchors = [];
+  const layout = fm?.match(/^layout:\s*["']?([A-Za-z0-9_-]+)["']?\s*$/m)?.[1];
+  const country = fm?.match(/^country:\s*["']?([a-z0-9-]+)["']?\s*$/m)?.[1];
+  if (layout === "how-to-fill") {
+    if (!country) {
+      failures.push(`${rel}: layout=how-to-fill requires a country front matter key`);
+      continue;
+    }
+    let fieldsData;
+    try {
+      fieldsData = TOML.parse(readFileSync(path.join(ROOT, "data", "fields", `${country}.toml`), "utf8"));
+    } catch (e) {
+      failures.push(`${rel}: cannot read data/fields/${country}.toml: ${e.message}`);
+      continue;
+    }
+    if (!Array.isArray(fieldsData.fields)) {
+      failures.push(`${rel}: data/fields/${country}.toml has no [[fields]] array`);
+      continue;
+    }
+    for (const f of fieldsData.fields) {
+      if (f && typeof f.key === "string") knownAnchors.push(`field-${f.key}`);
+    }
+  }
+  const { text: anchored, unresolved } = remapAnchors(body, bodyOut, knownAnchors);
   if (unresolved.length) {
     failures.push(`${rel}: anchors not resolvable after conversion: ${unresolved.join(", ")}`);
     continue;

@@ -108,7 +108,7 @@ npm run clean        # 清理 public/ 和 resources/
 
 `scripts/check-seo-output.mjs` 在 `npm run check:seo` 时跑，**CI 失败会阻断部署**。它验证：
 
-1. `robots.txt` 和 `sitemap.xml`（含 en、zh 子 sitemap）存在
+1. `robots.txt` 和 `sitemap.xml`（含 en、zh、zh-hant 子 sitemap）存在
 2. 所有 HTML 中的 `href`/`src` 本地路径在 `public/` 真实存在
 3. `hreflang` alternate 都解析得到（且 `x-default` 不指向 `/zh/`）
 4. 所有 JSON-LD 合法可解析，没有双重转义（如 `"\"foo\""`）
@@ -229,7 +229,7 @@ npm run clean        # 清理 public/ 和 resources/
 
 `scripts/check-seo-output.mjs` 在 `npm run check:seo` 时跑，**CI 失败会阻断部署**。它验证：
 
-1. `robots.txt` 和 `sitemap.xml`（含 en、zh 子 sitemap）存在
+1. `robots.txt` 和 `sitemap.xml`（含 en、zh、zh-hant 子 sitemap）存在
 2. 所有 HTML 中的 `href`/`src` 本地路径在 `public/` 真实存在
 3. `hreflang` alternate 都解析得到（且 `x-default` 不指向 `/zh/`）
 4. 所有 JSON-LD 合法可解析，没有双重转义（如 `"\"foo\""`）

@@ -3,7 +3,7 @@ title: "變更日誌"
 description: "entrycardguide.com 的重要變更：政府政策更新、新國家和內容勘誤。"
 date: 2026-04-27
 url: "/zh-hant/changelog/"
-lastmod: 2026-08-10
+lastmod: 2026-09-14
 ---
 
 這裡記錄實質性更新。出現這些情況時，我們會新增一條：
@@ -16,6 +16,14 @@ lastmod: 2026-08-10
 我們**不會**記錄每個錯別字或樣式微調。那些可以看 [git 歷史](https://github.com/onlyoasis/entrycardguide/commits/main)。
 
 ---
+
+## 2026-09-14 - 新加坡指南勘誤：姓名順序、提交窗口與官方入口
+
+直接核對 ICA 當前外國旅客頁面後，更新了[新加坡欄位指南](/zh-hant/singapore/how-to-fill/)：名在前、姓在後；界面可以翻譯，資料仍用英文；三天窗口包含抵達當天。[SGAC 介紹頁](/zh-hant/singapore/sgac/)也已區分居民陸路豁免，並連結官方增強版。
+
+移除了未經證實的重複提交和政府校驗斷言。這些是本站指南勘誤，不是政府宣佈新政策。
+
+本次此前還修正了[馬來西亞 MDAC 豁免說明](/zh-hant/malaysia/mdac/)、明確了[英國 ETA 地址示例](/zh-hant/uk/how-to-fill/#home-address)，並從[多米尼加 E-Ticket 指南](/zh-hant/dominican/how-to-fill/)撤回“同一個 QR Code 自動涵蓋往返”的說法。
 
 ## 2026-08-10 - 下線中介名單
 

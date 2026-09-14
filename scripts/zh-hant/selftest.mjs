@@ -15,6 +15,7 @@ test("term overrides and core conversion", () => {
   assert.equal(zh2hant("官方网址"), "官方網址");
   assert.equal(zh2hant("电子邮件"), "電子郵件");
   assert.equal(zh2hant("填写表单"), "填寫表單");
+  assert.equal(zh2hant("把 MRZ 填充符和护照号一起复制了"), "把 MRZ 填充符和護照號一起複製了");
   assert.equal(zh2hant("扫描二维码后提交"), "掃描 QR Code 後提交");
   assert.equal(zh2hant("（二维码）"), "（QR Code）");
   assert.equal(zh2hant("电子表"), "電子表");
@@ -202,6 +203,26 @@ test("review-13: reference-style internal destination mapped, blank lines kept",
   assert.match(text, /\[1\]: \/zh-hant\/thailand\/tdac\//);
   assert.match(text, /\[ext\]: https:\/\/example\.com\/zh\/x/);
   assert.match(text, /\n\n下一段。/);
+});
+
+
+test("source-link: text attribute converts, site/track/syntax untouched", () => {
+  const src = '{{< source-link site="uk.application_help" text="英国内政部 App 指南" >}} 和 {{< source-link site="singapore.sgac_enhanced" track="official" text="增强版" >}}';
+  const out = convertMarkdownBody(src);
+  assert.match(out, /site="uk\.application_help"/);
+  assert.match(out, /site="singapore\.sgac_enhanced"/);
+  assert.match(out, /track="official"/);
+  assert.match(out, /text="英國內政部 App 指南"/);
+  assert.match(out, /text="增強版"/);
+  assert.match(out, /\{\{< source-link /);
+});
+
+test("source-link without text stays byte-identical; fenced shortcode untouched", () => {
+  const src = '正文。\n\n```html\n{{< source-link site="uk.application_help" text="英国内政部 App 指南" >}}\n```\n\n{{< source-link site="dominican.service_requirements" >}}';
+  const out = convertMarkdownBody(src);
+  const fence = out.slice(out.indexOf('```html'), out.indexOf('```', out.indexOf('```html') + 6) + 3);
+  assert.match(fence, /text="英国内政部 App 指南"/, 'fenced shortcode must stay verbatim');
+  assert.match(out, /\{\{< source-link site="dominican\.service_requirements" >\}\}/);
 });
 
 let failed = 0;

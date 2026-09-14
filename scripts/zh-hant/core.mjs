@@ -75,6 +75,8 @@ const PRE_SIMP = [
 const POST_TRAD = [
   // 二維碼 is the HK term; "QR Code" is unambiguous for TW and HK readers.
   [/二維碼/g, "QR Code"],
+  // opencc maps 复制 (copy) to 復制; the generic Traditional verb is 複製.
+  [/復制/g, "複製"],
 ];
 
 export function zh2hant(s) {
@@ -138,7 +140,14 @@ export function convertMarkdownBody(body) {
     /\b(href|src|srcset|id|action|poster)="([^"]*)"/gi,
     (_, attr, val) => `${attr}="${stash(val)}"`,
   );
-  staged = staged.replace(/\{\{<[^\n]*?>\}\}|\{\{%[^\n]*?%\}\}/g, (m) => stash(m));
+  staged = staged.replace(/\{\{<[^\n]*?>\}\}|\{\{%[^\n]*?%\}\}/g, (m) => {
+    // source-link shortcode: only the display `text` attribute is visible
+    // prose — convert its value; site/track/URLs and syntax stay byte-identical.
+    if (m.startsWith('{{< source-link')) {
+      return stash(m.replace(/\btext="([^"]*)"/g, (_, v) => `text="${zh2hant(v)}"`));
+    }
+    return stash(m);
+  });
 
   let out = zh2hant(staged);
 
@@ -229,6 +238,16 @@ function headings(body) {
   return [...body.matchAll(/^#{1,6}\s+(.+?)\s*$/gm)].map((m) => m[1]);
 }
 
+// Effective heading anchors: an explicit goldmark `{#id}` on the heading is
+// the ID Hugo emits (kept verbatim — ASCII survives conversion); otherwise
+// the default github slug of the heading text.
+export function headingAnchors(body) {
+  return headings(body).map((text) => {
+    const ex = text.match(/\{#([A-Za-z0-9_\-]+)\}\s*$/);
+    return ex ? ex[1] : slugifyHeading(text.replace(/\{#[^}]*\}\s*$/, ""));
+  });
+}
+
 // Rewrite `](#anchor)` links from source-language slugs to converted slugs.
 // Same-file anchors are validated; an anchor with no counterpart heading is
 // reported so the sync fails loudly instead of shipping a dead link.
@@ -242,19 +261,21 @@ function withFencesProtected(body, fn) {
   return text.replace(/\u0001F(\d+)\u0001/g, (_, i) => vault[Number(i)]);
 }
 
-export function remapAnchors(srcBody, outBody) {
-  const src = headings(srcBody).map(slugifyHeading);
-  const out = headings(outBody).map(slugifyHeading);
+export function remapAnchors(srcBody, outBody, knownAnchors = []) {
+  const src = headingAnchors(srcBody);
+  const out = headingAnchors(outBody);
   const map = new Map();
   src.forEach((s, i) => {
     if (out[i] && s !== out[i]) map.set(s, out[i]);
   });
 
+  const valid = new Set([...out, ...knownAnchors]);
+
   const unresolved = [];
   const text = withFencesProtected(outBody, (staged) =>
     staged.replace(/\]\(#([^)\s]+)\)/g, (whole, anchor) => {
       const mapped = map.get(anchor) || anchor;
-      if (!out.includes(mapped)) unresolved.push(anchor);
+      if (!valid.has(mapped)) unresolved.push(anchor);
       return `](#${mapped})`;
     }),
   );

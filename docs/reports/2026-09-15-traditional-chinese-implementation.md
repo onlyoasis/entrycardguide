@@ -1,54 +1,69 @@
-# 全站繁体中文实施报告（2026-09-15）
+# 全站繁体中文实施与验收（2026-09-15）
 
-执行方：ZCode 内置 `builtin:bigmodel-coding-plan/GLM-5.3-Flash`（本会话，单任务串行）。
-实施窗口：北京时间 2026-09-14 23:05 起（东京 9-15 00:05），夜间免费时段内。
-任务书：`docs/plans/2026-09-14-full-traditional-chinese.md`；基线 `92e52a2`；分支 `codex/full-traditional-chinese`。
-本报告为**本地实施完成**声明：未 commit / push / deploy；"完成"不等同于上线、收录或流量变化。
+全站繁体版本已完成本地实现与独立验收，覆盖当前主线 `62f89f5` 的全部50个目的地、156个内容路径。本轮尚未推送或部署，不代表已经收录或取得流量增长。
 
-## 范围与产出
+ZCode 内置 `builtin:bigmodel-coding-plan / GLM-5.3-Flash` 负责实现；Codex 制定任务书、审核补丁、合并主线并独立验收。实际调用日志核对了267个完成请求，全部为指定模型，执行时间为北京时间9月14日23:05至9月15日06:56。任务书见 [全站繁体实施方案](../plans/2026-09-14-full-traditional-chinese.md)。
 
-- **第三语言**：`[languages.zh-hant]`（languageCode `zh-Hant`，繁体菜单）；zh 语言码改为 `zh-Hans`、en 改为 `en`（BCP 47 映射 en / zh-Hans / zh-Hant，OG 地区标记 en_US / zh_CN / zh_TW 独立经 `og_locale` 参数）。
-- **内容 156/156**：全部 156 个内容路径的 `.zh-hant.md`（50 个目的地 + 首页、decide、官方目录、about、trust、changelog 等通用页）。404 为模板产出，三语各一份（en、zh、zh-hant 的 `404.html`），文案已三语化，不计入 156 个 Markdown 路径。由可重复的 `scripts/sync-zh-hant.mjs` 从 `.zh.md` 生成（OpenCC cn→tw + 手工术语覆写 + 保护规则），`--check` 幂等。
-- **i18n**：`i18n/zh-hant.yaml` 由 `gen-i18n.mjs` 生成（含 5 个英文基线 key 的繁体 OVERRIDES：trust-bar ×2、Also on、2 个 aria 标签）；en/zh 各新增 118 个 key（git 基线 92e52a2 为 98，现各 216；zh-hant 216），UI 全部三语。
-- **数据展示字段**：`data/{fields,official_urls,changelog}` 的全部 `*_zh` 展示字段派生 `*_zh_hant`（2250 条，150 个 TOML），机器字段/日期/URL 零改动（Codex 独立结构化核对 201 份源文件，0 原字段变动）。
-- **校验器**：31 个渲染校验器的页面（17 目的地、171 字段、617 个错误槽位）全部繁体提示：`data/rules_i18n/*.json` 覆写 build 时 merge 进 payload；`validator.ts` 仅把 `Fix ✗/OK ✓` 改为 payload 驱动（en/zh 走原 fallback，行为不变）；校验算法与机器规则未动。新增 9 个说明型 placeholder 的繁体展示覆写（真实例值原样保留）。
-- **决策树**：`data/decision/tree.zh-hant.json` —— 173 状态、72 表单、145 条结果路径全部手工繁体；guide/fallback 链接指向 `/zh-hant/`；`gen-tree.mjs` 校验状态/边/费用机器值与基线完全一致；`decide.ts` 仅增加 `feeDisplay` 展示回退（`fee === 'FREE'` 机器语义未动）。
-- **搜索/目录**：首页与目录的 `data-search` 含 en/简体/繁体国名（含 `name_zh_hant` 区域异写别名：印度尼西亞、新西蘭、澳洲、臺灣、老撾 等），筛选/计数/清除/无结果提示经 i18n 本地化；无 JS fallback 可用。
-- **SEO**：`head.html` hreflang 映射（en/zh-Hans/zh-Hant）、og:locale、JSON-LD inLanguage、WebSite 语言列表、changelog CollectionPage 路径；`check-seo-output.mjs` 新增三语门禁（sitemap 互译集、精确 alternate 图、self-canonical、x-default=en 必需、html lang、Unicode 锚点、反向收录覆盖、完整 URL 比对）。
-- **构建入口**：`npm run sync:zh-hant`（顺序重生成全部派生物）、`npm run check:zh-hant`（只读门禁：sync --check、TOML/roster/i18n/tree --check、rules 覆写完整性、翻译源文本陈旧检测）；`prebuild`/`prebuild:prod`/`predev` 自动前置。快照刷新 `npm run snapshot:zh-hant` 必须在翻译复核后显式执行，build/sync 不自动刷新。
+## 实现范围
 
-## 已通过的检查（本方执行）
-
-| 命令 | 结果 |
+| 项目 | 实际覆盖 |
 |---|---|
-| `npm run build:prod` | 通过（三语各 210 页；真实内容 URL 以 sitemap 为准 156×3） |
-| `npm run check:seo` | 通过（含新增三语门禁：155+ 检查项 0 问题） |
-| `npm run check:zh-hant` | 通过（7 项命令：内容/TOML/roster/i18n/tree 的 --check、rules 覆写完整性、翻译源文本陈旧检测） |
-| `node scripts/zh-hant/selftest.mjs` | 18 例转换回归（保护/术语/锚点/链接/围栏） |
-| `node scripts/zh-hant/test-data-toml.mjs` | 10 例 CLI 回归（含 review-04/05/06 全部反例） |
-| `node scripts/zh-hant/test-sync-zh-hant.mjs` | 7 例（url 映射/别名/日期钉入/幂等） |
-| `node scripts/zh-hant/test-rules-gate.mjs` | 3 例（英文句/非展示键拒绝） |
-| `node scripts/zh-hant/test-translation-currency.mjs` | 7 例（help/maxLength/fee 变更、空/缺项快照拒绝） |
-| `node scripts/zh-hant/test-check-seo.mjs` | 8 例（删页/错文 alternate/错 x-default/错域名 canonical/篡改 sitemap/删 sitemap/未收录页） |
-| 术语扫描 | 可见文本 0 个 籤 类签证误字（合法 標籤/抽籤 15 处保留）；已知的简体残留与 OpenCC 误字清单（review-08/11）全部修复并经 Codex 独立 HTML 复核。该扫描证明已审阅的残留为零，不是对全部译文的逐句人工认证 |
+| 内容与路由 | 英文 `/`、简体 `/zh/`、繁体 `/zh-hant/` 各156个内容URL，共468个；另有三语404页面 |
+| 用户界面 | 导航、语言菜单、首页搜索、官方目录与筛选、页脚、分享、工具按钮、辅助说明和无JS后备内容 |
+| UI词条 | 三个语言文件各222个key；当前主线已有的英/简词条保持原值 |
+| TOML展示数据 | 150个文件、2262个 `_zh_hant` 展示字段；英文缩写和空字符串也同步 |
+| 校验器 | 29个实际嵌入页面、17个目的地、171个字段、617个错误提示槽位；规则与算法保持原样 |
+| 决策工具 | 173个状态、145条可达结果路径、72条表单记录；问题、选项、结果、费用展示及指南链接本地化 |
+| 搜索与SEO | 同页语言切换、简繁常用国名、三语sitemap、self-canonical、互相对应的hreflang、英文x-default、JSON-LD与OG语言信息 |
 
-## 独立验收证据（Codex 拥有，本方未修改）
+Markdown和TOML从简体源生成，采用构建时OpenCC及明确的术语覆写。校验器与决策树的英文展示文字使用人工覆写。原始网址、金额、日期、代码、示例值、字段约束和状态分支保持单一来源。浏览器端没有新增npm依赖。
 
-- `content-semantic-preservation.json`：156 对源码结构化对照，数字/代码/真实值保留；9 个"源 Git 有效日期钉入"与 3 个口岸说明例外已复核。
-- `data-preservation-final-precheck.json`：201 份原始 JSON/TOML，0 原字段变动。
-- `seo-independent-negatives.json`：正常副本 + 12 种错误副本全部预期结果。
-- `validator-behaviour-comparison-final.json`：31 页 / 171 字段，8314 次输入（原 8300 次判定全部保持，另 14 例覆盖本地化 placeholder）。
-- `decision-behaviour-comparison-01.json`：173 状态 / 145 路径，官方链接、对应指南、免费/收费样式一致。
-- `nojs-hant-01.json`：6 项无 JS 验证；`layout-browser-hant-precommit.json`：156 页 × 4 宽度 624 项无溢出。搜索复检（800 × 3 语，含繁体区域异写别名）以 Codex 的最终读数为准，本报告不预先声明结果。
+## 主线集成与日期
 
-## 语义边界（按任务书）
+初始基线为 `92e52a2`，繁体实现检查点为 `ee90a9f`。期间主线增加了增长统计和新加坡等指南纠正；Codex将当前主线 `62f89f5` 合入，检查点为 `9347fe0`，再由ZCode同步译文。新版主线的29个校验器页面替代旧基线的31个页面，旧阶段的8300次输入和2250个展示字段不能当作最终数量。
 
-- 校验规则/决策树机器逻辑零修改；浏览器端仍零 npm 依赖（opencc-js、@iarna/toml 仅构建端，锁定版本）。
-- 翻译不是法规重新核验：`last_verified`、规则 lastVerified、决策树 lastVerified 全部保留原值；繁体页 lastmod 钉入**源页有效日期**（zh-hant 语言块 `frontmatter.lastmod=["lastmod","date"]`），提交翻译不会伪造核验日期。
-- en/zh 原行为保持：模板语言分支改为 i18n key（文本值不变）、站内路径统一 `relLangURL`；head 的 og:locale:alternate 修复为输出各译文自身 locale（原实现重复输出当前页 locale，属任务 C 要求的修正）。
-- 两处**已确认接受的简体 UI 变化**（基线 zh 页面此前显示英文）：`/zh/changelog/` 等使用 single 模板的页面的元数据标签（Last verified / Commit）由英文变为简体中文；`/zh/decide/` 无 JS fallback 的 50 个国家名由英文变为简体。二者属 i18n 化的预期改善，英文原文未动。
-- 已知残留限制：繁体文件未提交故 51 个页面暂时缺 source commit 链接（Codex 确认按未提交状态处理）；引用块 Accessed 日期随构建日期自然变化。
+保留了主线的 `guide_title`、`walkthrough_first`、`fields_guidance_only`、字段卡片锚点、相关指南、官方链接点击标记及生产域名统计限制。`source-link` 只翻译显示文字，机器参数保留。字段卡片锚点按实际TOML字段识别，显式标题ID保持可用。
 
-## 交接
+翻译提交不会刷新法规核验日期：繁体front matter钉入源页有效日期，繁体语言的lastmod优先使用该值；英/简仍按原有Git日期规则。原始 `last_verified` 等事实字段未因翻译而修改。
 
-本地 diff 停在工作树等待 Codex 最终验收与串行 Git 交付；未 commit / push / deploy。
+## 独立验收
+
+| 检查 | 结果 |
+|---|---|
+| 468个实际内容页面、三语404、语言菜单、链接、锚点、schema和日期 | 通过 |
+| 156组源文/译文的结构化对照 | 数字、代码、机器元数据及核验日期符合源文 |
+| 202份原始JSON/TOML完整解析对照 | 原字段零变动，2262个繁体展示字段齐全 |
+| 29个校验器页面，7811次真实浏览器输入 | 7797个当前主线基线判定全部保留，另有14个本地化placeholder输入；无运行或溢出问题 |
+| 173个决策状态、145条路径 | 全部遍历；官方入口、指南和费用样式与基线一致；返回、重启、焦点和27个后备链接符合原始树 |
+| 英/简/繁搜索与目录 | 每种语言800次查询，共2400次通过；筛选、重置、无结果及菜单键盘行为通过 |
+| 实际语言往返切换 | 7类页面、2个宽度，共42次导航通过 |
+| 无JS页面 | 首页、目录、决策工具在2个宽度下共6项通过 |
+| 全部156个繁体页面，320/390/768/1440四种宽度 | 624项检查，无水平溢出 |
+| SEO反例 | 仓库8项与Codex独立13项均达到预期；缺页、错误alternate/canonical、缺x-default、错误sitemap和锚点等会失败 |
+| 布局锚点的实际生成器正反例 | 5项通过；修复前卡片锚点无法通过，修复后可用，错误目标仍被拒绝；正式页面另经完整构建和链接检查 |
+
+人工对照了全部171条字段说明，以及决策问题、选项、费用和期限展示。补齐了姓名字段遗漏，纠正了错误词义、上下文转字和个别期限措辞。原文中的官方英文名称、格式和实际填写值保留；该工作不等于重新核验各国法规。
+
+英/简正文、链接及机器数据与当前主线保持一致。两项有意的原中文界面变化是：`/zh/changelog/` 的核验/提交标签改为中文，`/zh/decide/` 的无JS国家名称使用现有简体名称；目标链接与流程保持。
+
+## 构建和维护
+
+以下真实命令通过：
+
+```bash
+npm run sync:zh-hant
+npm run check:zh-hant
+npm run build:prod
+npm run check:seo
+npm run check:growth
+node scripts/zh-hant/selftest.mjs
+node scripts/zh-hant/test-data-toml.mjs
+node scripts/zh-hant/test-sync-zh-hant.mjs
+node scripts/zh-hant/test-rules-gate.mjs
+node scripts/zh-hant/test-translation-currency.mjs
+node scripts/zh-hant/test-check-seo.mjs
+```
+
+`sync:zh-hant` 顺序生成内容、TOML、roster、i18n及决策树；`check:zh-hant` 是开发/构建前的只读门禁。英文手工覆写源发生变化后，需要复核译文再显式执行 `npm run snapshot:zh-hant`，普通同步不会自动刷新快照。运行增长回归时，按既有脚本要求将 `GROWTH_TEST_TMP` 指向测试目录。
+
+维护入口见 [繁体三语维护指南](../maintenance/zh-hant.md)。完整浏览器记录、模型元数据、反例及提交后的日期回读由Codex保存在本任务的外盘验收目录；未将这些运行记录作为网站内容发布。

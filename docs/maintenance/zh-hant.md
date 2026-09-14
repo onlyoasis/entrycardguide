@@ -1,15 +1,16 @@
 # 繁体中文（zh-Hant）三语维护指南
 
-本站在英文（`/`）和简体中文（`/zh/`）之外维护完整的繁体中文版本（`/zh-hant/`）。这份文档说明三类繁体内容的来源、必须遵守的流程，以及哪些文件永远不要手改。
+本站在英文（`/`）和简体中文（`/zh/`）之外维护完整的繁体中文版本（`/zh-hant/`）。这份文档说明内容来源、同步流程和人工翻译入口。
 
-## 三类繁体内容，三条规则
+## 内容来源与修改入口
 
 | 内容 | 来源 | 修改方式 |
 |---|---|---|
 | 内容页 `.zh-hant.md`（156 篇） | 由 `.zh.md` 经 `scripts/sync-zh-hant.mjs` 转换（**生成文件**） | 只改简体源或 `scripts/zh-hant/core.mjs` 的术语表，然后重新生成；不要手改生成文件（重跑会覆盖） |
-| 数据展示字段 `*_zh_hant`（data/fields、official_urls、changelog 共 2250 条） | 由 `*_zh` 源经 `scripts/zh-hant/gen-data-toml.mjs` 派生（**生成值**） | 同上，只改 `_zh` 源或术语表 |
-| 手工英文→繁体覆写（**人工源文件**：`data/rules_i18n/*.json`、`scripts/zh-hant/tree-zh-hant.part*.json`、`gen-i18n.mjs` 的 OVERRIDES 表） | 人工翻译，受"源文本快照"陈旧门禁保护 | 直接编辑这些人工源文件；改英文源后先复核翻译再更新 |
-| `i18n/zh-hant.yaml`、`data/decision/tree.zh-hant.json` | 由上述人工源文件 + zh.yaml/tree.json 经生成器产出（**生成文件**） | 永远不要手改；`gen-i18n.mjs` / `gen-tree.mjs` 的 `--check` 会拒绝陈旧输出 |
+| 数据展示字段 `*_zh_hant`（150 个 TOML，当前共 2262 条，含英文缩写和空字符串） | 由 `*_zh` 源经 `scripts/zh-hant/gen-data-toml.mjs` 派生 | 只改 `_zh` 源或术语表，再同步；原字段、规则、日期和网址不因翻译而改变 |
+| 校验器与决策树人工覆写：`data/rules_i18n/*.json`、`scripts/zh-hant/tree-zh-hant.part*.json` | 英文源对应的人工翻译，受 `translation-sources.json` 陈旧检查保护 | 直接编辑这些人工源；英文源改变后复核翻译，再显式刷新快照 |
+| `i18n/zh-hant.yaml` | `zh.yaml` 加 `gen-i18n.mjs` 的人工 `OVERRIDES` 表生成 | 改源文件或覆写表，再同步；由生成器 `--check` 检查，**不使用英文源快照** |
+| `data/decision/tree.zh-hant.json` | 原始树加人工覆写生成 | 不手改生成文件；由 `gen-tree.mjs --check` 检查 |
 
 ## 日常命令
 
@@ -33,14 +34,16 @@ npm run build:prod      # prebuild:prod 会先跑 check:zh-hant
 
 ## 修改 UI 字符串（i18n）
 
-`i18n/` 三个文件：en.yaml、zh.yaml、zh-hant.yaml。**新 key 三个文件都要加**；zh-hant.yaml 由 `scripts/zh-hant/gen-i18n.mjs` 从 zh.yaml 生成，个别英文原文保留在简体里的 key（如 trust-bar）在生成脚本的 `OVERRIDES` 表里给出繁体。
+新增 key 时先同时更新 `i18n/en.yaml` 和 `i18n/zh.yaml`，再运行同步命令生成 `zh-hant.yaml`，保持三个文件的 key 集合一致。简体源保留英文的个别 key（如 trust-bar），在 `gen-i18n.mjs` 的 `OVERRIDES` 表中提供繁体文字。
 
 ## 新增国家
 
 1. 按现有流程加 6 个内容文件（3 篇 × 英/简）+ 数据文件 + roster 行（roster 现在还带 `zht`/`subZht`，跑 `node scripts/zh-hant/gen-roster.mjs` 补齐，译名表在脚本里手工维护）；
 2. 内容跑 `npm run sync:zh-hant` 即有繁体页；
-3. 如果新国家的 how-to-fill 页带校验器：必须新增 `data/rules_i18n/{country}.json` 繁体覆写（label/help/全部可触发 errors），否则构建失败（validator shortcode 对 zh-hant 硬性要求覆写）；
+3. 如果新国家任一页面使用 `validator` shortcode：必须新增 `data/rules_i18n/{country}.json` 繁体覆写（label/help/全部可触发 errors），否则繁体构建失败；
 4. 若决策树加入新国家：更新 `scripts/zh-hant/tree-zh-hant.part*.json` 覆写并重跑 `node scripts/zh-hant/gen-tree.mjs`（树边/状态与基线不一致会失败）。
+
+国家页的 `country` front matter 必须与目录国家一致。`how-to-fill` 模板的 `field-*` 跳转来自 `data/fields/{country}.toml` 的实际字段卡片；同步器会识别这些 ID 和显式标题 ID，例如 `{#home-address}`，不存在的卡片仍会报错。`source-link` 的 `text` 显示属性会转为繁体，`site`、`track` 等机器参数保持原样。
 
 ## 手工英文→繁体覆写的陈旧检测
 

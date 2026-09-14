@@ -10,7 +10,7 @@
       {{- if not $data }}{{ errorf "Related guide country missing: %s" $country }}{{ end -}}
       {{- $target := $page.Site.GetPage (printf "/%s/%s" $country $data.meta.guide_slug) -}}
       {{- if not $target }}{{ errorf "Related guide page missing: %s (%s)" $country $page.Language.Lang }}{{ end -}}
-      <li><a href="{{ $target.RelPermalink }}" class="text-ink underline underline-offset-4">{{ cond (eq $page.Language.Lang "zh") $data.meta.name_zh $data.meta.name_en }} · {{ $data.meta.form_code }}</a></li>
+      <li><a href="{{ $target.RelPermalink }}" class="text-ink underline underline-offset-4">{{ $name := $data.meta.name_en }}{{ if eq $page.Language.Lang "zh" }}{{ $name = $data.meta.name_zh }}{{ else if eq $page.Language.Lang "zh-hant" }}{{ $name = $data.meta.name_zh_hant }}{{ end }}{{ $name }} · {{ $data.meta.form_code }}</a></li>
     {{- end }}
   </ul>
 </section>

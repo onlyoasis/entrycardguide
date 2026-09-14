@@ -6,7 +6,7 @@
  "fields": {
   "passport": {
    "label": "護照號碼",
-   "help": "印在護照照片頁上，只含字母和數字。",
+   "help": "護照照片頁上的護照號碼。",
    "errors": {
     "required": "請輸入護照號碼",
     "tooShort": "護照號碼太短——至少 6 個字元",

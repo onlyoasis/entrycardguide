@@ -60,7 +60,7 @@
   },
   "intended_arrival": {
    "label": "預計入境日期",
-   "help": "格式：YYYY-MM-DD——你計畫進入越南的日期。電子簽自我填日期起 90 天有效。",
+   "help": "格式：YYYY-MM-DD——你計畫進入越南的日期。電子簽自該日期起 90 天有效。",
    "errors": {
     "required": "請輸入預計入境日期",
     "invalidFormat": "請使用 YYYY-MM-DD 格式",

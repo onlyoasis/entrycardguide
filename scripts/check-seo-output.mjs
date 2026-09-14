@@ -549,4 +549,3 @@ if (seoProblems.length) {
 
 console.log("Three-language SEO gate passed: sitemap coverage, alternates, canonical, lang, anchors");
 console.log("SEO output check passed");
-
