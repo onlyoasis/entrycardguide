@@ -152,3 +152,27 @@ GA4 的数据过滤器只支持 `traffic_type`，没法按分辨率过滤原始�
 
 - 月度内容复盘流程：`monthly-review.md`
 - 历史复盘报告：`../reports/gsc-ga-follow-up-*.md`
+
+## 2026-09-14：可重复的增长复盘口径
+
+`--days=28` 现在严格包含 28 个日历日，默认截止 UTC 今天减 3 天，GSC 仅取 final Web 数据。旧版起止日期均包含时实际为 29 天，请勿直接混比。
+
+原始数据应写外盘，显式设置目录：
+
+```bash
+node scripts/fetch-search-data.mjs --days=28 --end-date=2026-09-11 \
+  --output-dir=/Volumes/ExternalPrivate/Runtime/entrycardguide/search-data
+# 另取原始流量，写到带 -raw 后缀的目录，不覆盖过滤后的数据
+node scripts/fetch-search-data.mjs --days=28 --end-date=2026-09-11 --all-traffic \
+  --output-dir=/Volumes/ExternalPrivate/Runtime/entrycardguide/search-data
+```
+
+也可用 `SEARCH_DATA_OUTPUT_DIR` 指定外盘根目录；旧默认 `data-exports` 保留兼容，执行前必须确认它实际落在外盘。
+
+默认 GA4 仅保留 `entrycardguide.com`，排除 `(direct) / (none)` × Singapore × 1280x1200。该规则是疑似自动化访问排除，不代表其余会话都是真人。`--all-traffic` 移除此过滤，用于复查特征及原始来源。不要再次从过滤后报表扣除同一组流量。
+
+新增 `gsc-total.json`、`ga4-total.json`。页面/查询/用户分组不可直接相加替代总计；GSC 查询匿名化会使关键词点击远少于属性总计。GA4 按 rowCount 分页；`report-metadata.json` 保存窗口、实际过滤条件及每份 GA4 报表响应 metadata，可检查抽样/阈值与时区。
+
+前端新增 `official_link_click`：仅模板中的官方链接触发，参数为 `destination`、`official_key`、`link_slot`。官方目录的 slot 为 `directory`，正文 callout 为 `callout`。来源说明链接也有独立 official_key，统计表单入口时只选该国 meta.form_key，不能把豁免说明页算作提交入口。事件不带护照、姓名、邮箱、输入值和 URL 参数。
+
+开发构建不带测量 ID；生产 bundle 在 hostname 不匹配时不调用 GA config 或点击事件。使用生产产物预览时 gtag.js 可能仍被加载，但本站不会配置该主机的统计。此变更不追溯删除历史访问，也不替代 GA4 管理后台的过滤设置。联盟事件保持原名，不能与通用 click 相加计算转化。

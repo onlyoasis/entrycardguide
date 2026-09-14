@@ -118,3 +118,6 @@ share_source_accessed: "Accessed"
 share_source_buttons_label: "Share links"
 share_source_email: "Email"
 share_rail_label: "Warn a friend before they pay"
+
+related_guides_title: "More stops on your trip?"
+related_guides_intro: "Each destination has its own entry process. Check the guide for your next border crossing."

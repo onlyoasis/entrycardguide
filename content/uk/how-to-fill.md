@@ -8,13 +8,23 @@ country: "uk"
 weight: 20
 keywords: ["how to fill UK ETA", "UK ETA form fields", "UK ETA passport scan", "UK ETA face photo", "UK ETA parent contact"]
 layout: how-to-fill
+guide_title: "UK ETA form: home address and other fields"
+walkthrough_first: true
 ---
 
 {{< official-link site="uk.eta" >}}
 
+## Home address and address line 1 {#home-address}
+
+Use the address where you live when the application asks for your home address. Keep it separate from accommodation for your UK visit.
+
+An illustrative address might be split as **12 Example Road** on line 1 and **Flat 4** on an additional line, with town, postal code and country in their own boxes when provided. This is a formatting example, not a rule that every country's address must use this structure. Follow the labels shown in your application.
+
+[Jump to the address field card](#field-home_address). The Home Office's {{< source-link site="uk.application_help" text="app guidance" >}} confirms that the application asks about your address; the example above is this guide's explanation.
+
 Use the passport you will carry. Apply through GOV.UK or the UK ETA app published by the Home Office. The official fee is £20 for each person, including every baby and child. There is no family discount.
 
-The checker below covers the 9 text field groups in `data/rules/uk.json`. It runs in your browser and sends nothing to us. The live Home Office application controls the final questions.
+The checker below covers 9 text field groups. It runs in your browser and sends nothing to us. The live Home Office application controls the final questions.
 
 The official process also requires a passport image and a face photo. The app may scan the passport chip. App applicants aged 10 or over complete a face scan. Those image and scan steps are not reproduced by this local checker.
 

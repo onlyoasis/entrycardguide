@@ -118,3 +118,6 @@ share_source_accessed: "访问日期"
 share_source_buttons_label: "分享链接"
 share_source_email: "邮件"
 share_rail_label: "提醒朋友别多花钱"
+
+related_guides_title: "行程还包括其他目的地？"
+related_guides_intro: "每个目的地有独立的入境流程，请查看下一站的对应指南。"

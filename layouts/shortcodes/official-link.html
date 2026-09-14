@@ -24,7 +24,7 @@
   <span class="official-badge">{{ i18n "verified_badge" }}</span>
   <div>
     <div class="text-meta text-muted font-mono uppercase mb-1">{{ i18n "official_url_label" }}</div>
-    <div><a href="{{ $entry.url }}" rel="noopener" class="no-underline"><mark>{{ $entry.url | replaceRE "^https?://" "" }}</mark></a></div>
+    <div><a data-analytics-event="official_link_click" data-country="{{ $country }}" data-official-key="{{ $key }}" data-link-slot="callout" href="{{ $entry.url }}" rel="noopener" class="no-underline"><mark>{{ $entry.url | replaceRE "^https?://" "" }}</mark></a></div>
     <div class="text-small text-muted mt-2">
       {{ i18n "run_by_label" }} <strong class="text-ink">{{ $entry.agency }}</strong>. {{ i18n "last_verified_label" }} <strong class="text-ink">{{ dateFormat "January 2, 2006" $entry.last_verified }}</strong>.
       {{- with $entry.archive_url }}

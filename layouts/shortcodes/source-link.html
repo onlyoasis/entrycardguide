@@ -1,0 +1,6 @@
+{{- $parts := split (.Get "site") "." -}}
+{{- if ne (len $parts) 2 }}{{ errorf "source-link expects country.key" }}{{ end -}}
+{{- $country := index hugo.Data.official_urls (index $parts 0) -}}
+{{- $entry := index $country (index $parts 1) -}}
+{{- if not $entry.url }}{{ errorf "source-link URL missing: %s" (.Get "site") }}{{ end -}}
+<a href="{{ $entry.url }}" rel="noopener">{{ .Get "text" | default $entry.name }}</a>

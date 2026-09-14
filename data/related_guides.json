@@ -1,0 +1,7 @@
+{
+  "singapore": ["malaysia", "thailand"],
+  "thailand": ["malaysia", "singapore"],
+  "indonesia": ["malaysia", "singapore"],
+  "dominican": ["jamaica", "bahamas"],
+  "korea": ["japan", "taiwan"]
+}

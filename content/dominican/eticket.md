@@ -3,7 +3,7 @@ title: "Dominican Republic E-Ticket: Official Site, Free Form, No Fees (2026)"
 kicker: "The DR E-Ticket is free. Here is the official DGM site, every field it asks, and how to tell real from fake."
 description: "Free, independent 2026 guide to the Dominican Republic E-Ticket. Official URL eticket.migracion.gob.do, every field explained, no fees."
 date: 2026-04-24
-lastmod: 2026-04-26
+lastmod: 2026-09-14
 country: "dominican"
 weight: 10
 keywords: ["dominican republic e-ticket", "DR e-ticket", "dominican e-ticket official", "punta cana arrival form", "eticket.migracion.gob.do"]
@@ -13,9 +13,9 @@ faq:
   - q: "What is the official DR E-Ticket website?"
     a: "The only official site is eticket.migracion.gob.do. Domains ending in .gob.do are reserved for Dominican government entities. Any other domain — including sites with DGM-style branding — is a middleman."
   - q: "Do I need an E-Ticket for both arrival and departure?"
-    a: "Yes, but only one form. When you fill the E-Ticket for arrival, the same QR code covers your departure. If your departure flight changes significantly, you can update or refile."
+    a: "Entry and exit information are required. Follow the official service for each journey and save the confirmations it generates."
   - q: "Can I fill one E-Ticket for my whole family?"
-    a: "Yes. The E-Ticket supports group submissions. One adult fills the form and adds each family member as an additional traveler. Everyone travels under one QR code. Keep it on the lead traveler's phone."
+    a: "Every traveller must be included. Follow the official form options for group travel and retain the confirmations it generates."
   - q: "When should I file the E-Ticket?"
     a: "Within 72 hours of arrival. The DGM recommends 24 to 48 hours before arrival. Earlier than the 72-hour window is allowed but flight details may not be final yet."
   - q: "A site is charging me for the DR E-Ticket. Is it official?"
@@ -29,7 +29,7 @@ layout: country-form
 
 The Dominican Republic E-Ticket is a digital form for entering and leaving the country. It combines what used to be three separate paper forms: the immigration card, the customs declaration, and the international boarding card.
 
-One E-Ticket covers both arrival and departure for the same trip. You fill it once before arriving, show the QR at immigration on entry, and show it again (or a refreshed version) on exit.
+The service handles entry and exit declarations. Complete the information for both directions and retain the confirmation provided for each journey.
 
 It is free.
 
@@ -73,16 +73,16 @@ Yes. The official site is mobile-friendly. A laptop is still easier for the acco
 Within 72 hours of arrival. The form also accepts submissions further out, but flight details may not be final yet. The DGM recommends 24 to 48 hours before arrival.
 
 ### Do I need one for departure too, or is that separate?
-Same form, one submission. When you fill the E-Ticket for arrival, the same QR covers your departure. If your departure flight changes significantly, you can update or refile.
+Complete the entry and exit information required by the official service. Keep the resulting confirmations for the correct journeys.
 
 ### Can I fill one form for my whole family?
-Yes. The E-Ticket supports group submissions. One adult fills the form and adds each family member as an additional traveler. Everyone travels under one QR code. Keep it on the lead traveler's phone.
+Every traveller must be included. Follow the official form options for group travel and retain the confirmations it generates.
 
 ### I already paid a middleman. Can I get a refund?
 Dispute the charge with your credit card issuer. "Service not rendered" or "deceptive practice" usually works. Best results within 60 days.
 
 ### I filled out the form but didn't get the QR email.
-Check spam. If still missing after 1 hour, refile. Duplicate submissions are harmless. The most recent applies.
+Check the confirmation shown by the official service and its retrieval or help options before submitting again. Do not rely on a fixed email delivery time.
 
 ---
 

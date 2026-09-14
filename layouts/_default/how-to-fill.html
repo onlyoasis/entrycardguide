@@ -52,7 +52,9 @@
     {{ $countryName }} {{ $formCode }} · {{ if $isZh }}字段指南{{ else }}field guide{{ end }} · {{ $timeNeeded }}
   </div>
   <h1 class="font-serif font-medium m-0" style="line-height: 1.06; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
-    {{- if $isZh -}}
+    {{- if .Params.guide_title -}}
+    {{ .Params.guide_title }}
+    {{- else if $isZh -}}
     官方 {{ $formCode }} 表单里最容易出错的字段，按表单实际顺序。
     {{- else -}}
     The fields where people get the official {{ $formCode }} wrong, in form order.
@@ -78,6 +80,10 @@
     {{- partial "share-buttons.html" . -}}
   </div>
 </article>
+
+{{- if .Params.walkthrough_first }}
+<section class="prose prose-lg max-w-none pb-xl">{{ .Content }}</section>
+{{- end }}
 
 {{- /* Fields section heading + tags --------------------------------- */ -}}
 <section class="pb-xl">
@@ -123,7 +129,7 @@
     </div>
     {{- end }}
 
-    <div class="field-card {{ if lt (add $i 1) (len $fields) }}border-b border-rule{{ end }}">
+    <div id="field-{{ $f.key }}" class="field-card {{ if lt (add $i 1) (len $fields) }}border-b border-rule{{ end }}">
       <div class="font-serif font-medium text-ink" style="font-size: 32px; letter-spacing: -0.01em; line-height: 1; font-variation-settings: 'opsz' 144;">
         {{ $f.n }}
       </div>
@@ -258,6 +264,7 @@
 {{- /* Full markdown walkthrough — preserves the pre-existing per-field prose,
        validator shortcode, and any country-specific edge cases that aren't
        captured in data/fields/*.toml's shortlist of high-error fields. */ -}}
+{{- if not .Params.walkthrough_first }}
 {{- with .Content }}
 <section class="border-t border-rule pt-xl pb-xl">
   <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}§ 完整逐字段指南{{ else }}§ Full walkthrough{{ end }}</div>
@@ -277,6 +284,9 @@
 </section>
 {{- end }}
 
+{{- end }}
+
+{{- partial "related-guides.html" . -}}
 {{- partial "share-source.html" . -}}
 
 {{ end }}

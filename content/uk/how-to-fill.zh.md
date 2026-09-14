@@ -8,13 +8,23 @@ country: "uk"
 weight: 20
 keywords: ["UK ETA 怎么填", "英国 ETA 填写", "UK ETA 护照扫描", "UK ETA 人脸照片", "UK ETA 监护人"]
 layout: how-to-fill
+guide_title: "英国 ETA 填写：家庭地址及其他字段"
+walkthrough_first: true
 ---
 
 {{< official-link site="uk.eta" >}}
 
+## Home address 和 Address line 1 怎么填？ {#home-address}
+
+表格询问家庭地址时，填写你居住的地址，与英国旅行期间的住宿地址区分开。
+
+例如，第一行写 **12 Example Road**，额外地址行写 **Flat 4**；如果表格提供城市、邮编和国家的独立输入框，再分别填写。这是排版示例，不代表所有国家的地址都必须采用这种结构，请按实际申请页面的标签填写。
+
+[跳到地址字段卡片](#field-home_address)。{{< source-link site="uk.application_help" text="英国内政部 App 指南" >}}说明申请会询问地址；上面的地址拆分示例是本站解释。
+
 使用赴英时随身携带的护照。在 GOV.UK 网页填写，或使用开发者或销售方标为 Home Office 的 UK ETA App。官方费用是每人 20 英镑，婴儿和儿童也要各办一份，没有家庭折扣。
 
-下面的本地检查器读取 `data/rules/uk.json`，覆盖 9 组文字字段。数据只在浏览器内检查，不会发给本站。最终问题和填写要求以英国内政部实际申请页面为准。
+下面的本地检查器覆盖 9 组文字字段。数据只在浏览器内检查，不会发给本站。最终问题和填写要求以英国内政部实际申请页面为准。
 
 正式申请还要拍摄护照和人脸照片。App 可能扫描护照芯片；使用 App 且年满 10 岁的申请人还要做人脸扫描。这些图片和扫描步骤不在本地检查器中模拟。
 

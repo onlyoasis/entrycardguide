@@ -26,6 +26,18 @@ notes = "Source for the USD 20 departure tax being included in the airline ticke
 # Country-page metadata (consumed by country-form layout).
 # Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
 [meta]
+email_title_en = "Keep the result"
+email_title_zh = "保存结果"
+email_body_en = "Keep the confirmation provided by the official service. Do not depend on an email arriving within a fixed time."
+email_body_zh = "保存官方服务提供的确认信息，不要依赖固定时间内收到邮件。"
+printout_title_en = "Keep an offline copy"
+printout_title_zh = "保留离线副本"
+printout_body_en = "Save the result for access without mobile data. Follow the instructions given by the official service and your carrier."
+printout_body_zh = "保存不联网也能查看的结果，按官方服务和承运人的要求准备。"
+verification_body_en = "Use the government service to retrieve or check the declaration. This guide cannot look up your submission."
+verification_body_zh = "通过政府服务找回或检查申报，本站不能查询提交记录。"
+fields_intro_en = "Find the official service, practical examples and the local field checks maintained by this guide. The live application controls its own requirements."
+fields_intro_zh = "查找官方服务、填写示例和本站维护的本地字段检查。最终要求以在线政府表格为准。"
 flag = "🇩🇴"
 name_en = "Dominican Republic"
 name_zh = "多米尼加"
@@ -46,8 +58,8 @@ field_count = 14
 sections = 3
 time_needed_en = "~8 minutes"
 time_needed_zh = "约 8 分钟"
-output_en = "Show passport + QR. Officer scans, stamps, hands back. Same QR is reused on departure — keep the screenshot."
-output_zh = "出示护照和二维码。警官扫描、盖章、还你。离境时再用同一个二维码——截图保留好。"
+output_en = "Keep the confirmation and QR code available for the journey you submitted. Complete entry and exit information as required by the official service."
+output_zh = "保存本次行程的确认信息及二维码，并按官方服务要求完成入境、离境资料。"
 
 # Used by the is-ivisa layout. Names the headline middleman this page rebuts.
 primary_middleman = "iVisa"
@@ -101,3 +113,9 @@ domain = "ivisa.com"
 path = "/dominican-republic"
 first_observed = "2023-06-01"
 evidence = "Commercial visa middleman charging fees for the free E-Ticket."
+
+[service_requirements]
+url = "https://migracion.gob.do/servicio/solicitud-de-e-ticket-entrada-y-salida-de-pasajeros/"
+name = "E-Ticket service requirements"
+agency = "Dirección General de Migración"
+last_verified = "2026-09-14"
