@@ -1,32 +1,32 @@
 # Brazil — government authorization and designated contractor URLs
-# Last verified: 2026-09-07
+# Last verified: 2026-09-14
 
 [government_authorization]
 url = "https://www.gov.br/mre/pt-br/consulado-sao-francisco/electronic-visitor-visa-e-visa"
 name = "Brazil Ministry of Foreign Affairs e-Visa notice"
 agency = "Ministry of Foreign Affairs of Brazil"
-last_verified = "2026-09-07"
+last_verified = "2026-09-14"
 notes = "Government page stating that eligible Australian, Canadian and United States passport holders are subject to visa requirements from 10 April 2025 and directing e-Visa requests to brazil.vfsevisa.com. Start here to verify the contractor link. The live page blocks automated sessions; verified against its Internet Archive snapshot of 2024-11-06."
 
 [evisa]
 url = "https://brazil.vfsevisa.com/tourist-visa.html"
 name = "Brazil e-Visa application information"
 agency = "VFS Global, designated by the Government of Brazil"
-last_verified = "2026-09-07"
+last_verified = "2026-09-14"
 notes = "Government-designated commercial application host. The .com domain is not a government suffix. The current page publishes the USD 80.90 fee, passport and photograph requirements, multiple-entry validity branches, stay limit, processing time and printed e-Visa instruction. The live host blocks automated sessions; verified against its Internet Archive snapshot of 2026-07-14."
 
 [faq]
 url = "https://brazil.vfsevisa.com/faqs.html"
 name = "Brazil e-Visa FAQ"
 agency = "VFS Global, designated by the Government of Brazil"
-last_verified = "2026-09-07"
+last_verified = "2026-09-14"
 notes = "Confirms the eligible passport group, multiple-entry character, email delivery, non-refundable fee and processing time. Verify this non-government host through the Ministry of Foreign Affairs page before using it. Verified against the Internet Archive snapshot of 2026-07-14 because the live host blocks automated sessions."
 
 [contractor_terms]
 url = "https://brazil.vfsevisa.com/terms-and-conditions.html"
 name = "VFS Global Brazil e-Visa terms"
 agency = "VFS Global"
-last_verified = "2026-09-07"
+last_verified = "2026-09-14"
 notes = "Identifies the commercial operator as VF Worldwide Holdings Ltd trading as VFS Global and states that visa grants, duration and refusal sit with the immigration authorities' sole discretion and that fees are non-refundable. Verified against the Internet Archive snapshot of 2026-07-14 because the live host blocks automated sessions."
 
 [meta]
