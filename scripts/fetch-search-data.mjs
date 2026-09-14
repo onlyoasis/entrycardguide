@@ -213,7 +213,8 @@ async function gscQuery(token, dimensions, startDate, endDate) {
   return rows;
 }
 
-async function ga4Report(token, dimensions, metrics, startDate, endDate, name) {
+async function ga4Report(token, dimensions, metrics, startDate, endDate, name, eventFilter) {
+  const filters = [...(rawTraffic ? [] : [productionFilter]), ...(eventFilter ? [eventFilter] : [])];
   const endpoint = `https://analyticsdata.googleapis.com/v1beta/properties/${propertyId}:runReport`;
   const rows = [];
   const pages = [];
@@ -225,7 +226,7 @@ async function ga4Report(token, dimensions, metrics, startDate, endDate, name) {
       metrics: metrics.map(name => ({ name })),
       limit: ga4RowLimit,
       offset: rows.length,
-      ...(rawTraffic ? {} : { dimensionFilter: productionFilter }),
+      ...(filters.length ? { dimensionFilter: { andGroup: { expressions: filters } } } : {}),
     }, token);
     rowCount = report.rowCount || 0;
     pages.push({ rowCount, metadata: report.metadata || {} });
@@ -238,7 +239,7 @@ async function ga4Report(token, dimensions, metrics, startDate, endDate, name) {
       ...Object.fromEntries(metrics.map((name, index) => [name, Number(row.metricValues[index].value)])),
     })));
   } while (rows.length < rowCount);
-  reportMetadata.reports[name] = { rowCount, metadata: pages[0]?.metadata || {}, pages };
+  reportMetadata.reports[name] = { rowCount, eventFilter: eventFilter || null, metadata: pages[0]?.metadata || {}, pages };
   return rows;
 }
 
@@ -256,7 +257,12 @@ async function pull() {
   console.log(`GA4  properties/${propertyId}\n`);
 
   const ga4Metrics = ["sessions", "activeUsers", "engagedSessions", "userEngagementDuration", "eventCount"];
+  const officialClick = exact("eventName", "official_link_click");
+  const conversionMetrics = ["eventCount", "sessions", "totalUsers"];
   const jobs = [
+    ["ga4-official-click-total", () => ga4Report(token, [], conversionMetrics, startDate, endDate, "ga4-official-click-total", officialClick)],
+    ["ga4-official-click-source", () => ga4Report(token, ["sessionSourceMedium"], conversionMetrics, startDate, endDate, "ga4-official-click-source", officialClick)],
+    ["ga4-official-click-page", () => ga4Report(token, ["pagePath"], conversionMetrics, startDate, endDate, "ga4-official-click-page", officialClick)],
     ["gsc-total", () => gscQuery(token, [], startDate, endDate)],
     ["ga4-total", () => ga4Report(token, [], ga4Metrics, startDate, endDate, "ga4-total")],
     ["gsc-query", () => gscQuery(token, ["query"], startDate, endDate)],

@@ -30,7 +30,7 @@ ICA 的规则是抵达前的三天内，包含抵达当天。例如官方举例�
 
 官网：[MDAC](https://imigresen-online.imi.gov.my/mdac/main)。我维护的独立中文指南已按官方名单修订：[MDAC 豁免与填写说明](https://entrycardguide.com/zh/malaysia/mdac/?utm_source=travel_group&utm_medium=referral&utm_campaign=entry-guides-202609&utm_content=malaysia-exemption)。
 
-先等待本批修订上线，再使用这篇。依据：[马来西亚外交部旅行提示](https://www.kln.gov.my/web/can_vancouver/travel_advisory)。
+首批修订已于2026-09-14上线，可在获准的渠道使用。依据：[马来西亚外交部旅行提示](https://www.kln.gov.my/web/can_vancouver/travel_advisory)。
 
 ## 4. 英国：Home address 与旅行住宿分开
 
@@ -40,7 +40,7 @@ ICA 的规则是抵达前的三天内，包含抵达当天。例如官方举例�
 
 我是独立填写指南的维护者，把这段解释放在页面前部，并做了直达锚点：[地址说明](https://entrycardguide.com/uk/how-to-fill/?utm_source=travel_group&utm_medium=referral&utm_campaign=entry-guides-202609&utm_content=uk-address#home-address)。申请始终从 [GOV.UK](https://www.gov.uk/eta/apply) 进入。
 
-先等待本批上线。内政部指南确认申请询问地址；地址拆分示例是本站解释，不能当作官方格式限制。衡量：该落地页互动、官方申请入口点击。
+首批已于2026-09-14上线。内政部指南确认申请询问地址；地址拆分示例是本站解释，不能当作官方格式限制。衡量：该落地页互动、官方申请入口点击。
 
 ## 执行和停止条件
 
@@ -48,3 +48,13 @@ ICA 的规则是抵达前的三天内，包含抵达当天。例如官方举例�
 - 不重复向同一社群发多篇，不冒充游客体验或政府机构，不点名指控第三方公司。
 - 外链目标先筛10个旅行主题作者/站点，再为最匹配的5个准备个性化说明。没有核对当前内容前，不批量发模板邮件。
 - 两轮试验仍无有效访问，先换问题与受众，不增加刷帖频次。付费广告不在本批执行范围。
+
+## 5. 新加坡姓名顺序（第二批上线后可用）
+
+标题：SGAC 姓名到底谁在前？看 ICA 当前输入框的提示
+
+本站9月14日直接查看 ICA 外国旅客表单，Full Name 输入框的提示是 Given Name followed by Surname，也就是名在前、姓在后。例子：名 WEI MING、姓 TAN，对应 WEI MING TAN。请按自己的护照和所用版本标签填写，不要盲目照搬姓在前、加逗号的旧示例。
+
+官网可以选简体中文界面，但页面仍要求资料用英文。我们把姓名、三天窗口、最后出发地和确认信息整理在[同一份中文指南](https://entrycardguide.com/zh/singapore/how-to-fill/?utm_source=travel_group&utm_medium=referral&utm_campaign=entry-guides-202609&utm_content=singapore-name#passport-name)。我是该独立指南的维护者；实际提交请从 [ICA](https://eservices.ica.gov.sg/sgarrivalcard/) 进入。
+
+证据：官方空白外国旅客第一页，只读核验，没有填入或提交任何个人资料。没有核验增强版的全部步骤，不能声称所有版本的字段完全相同。发布后按UTM访问和官方入口点击评估，不能以发帖数替代效果。

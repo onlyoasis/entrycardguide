@@ -1,85 +1,52 @@
 ---
-title: "Singapore SGAC: Official ICA Site, Free Arrival Card, No Fees Guide (2026)"
-kicker: "Singapore's Arrival Card is free. Here is the official ICA site, every field, and how to tell real from fake."
-description: "Free, independent 2026 guide to Singapore's official SGAC at eservices.ica.gov.sg. Every field explained, no fees, required for all foreign arrivals."
+title: "Singapore Arrival Card: Official ICA Service, Free SGAC and Exemptions"
+kicker: "Find the free ICA Singapore Arrival Card, check the three-day window and resident exemptions, and open the name, date and confirmation guide."
+description: "Find the free ICA Singapore Arrival Card, check the three-day window and resident exemptions, and open the name, date and confirmation guide."
 date: 2026-04-26
 lastmod: 2026-09-14
-country: "singapore"
+country: singapore
 weight: 10
-keywords: ["singapore arrival card", "SGAC", "singapore SGAC official", "ica singapore arrival card", "singapore immigration form"]
-faq:
-  - q: "Is there a fee for Singapore's SGAC?"
-    a: "No. Singapore's Immigration & Checkpoints Authority (ICA) does not charge for the SGAC. The official site is eservices.ica.gov.sg/sgarrivalcard/ and any fee is from a middleman."
-  - q: "What is the official SGAC website?"
-    a: "The only official site is eservices.ica.gov.sg/sgarrivalcard/. The .gov.sg suffix is restricted to Singapore government entities. Any other domain — including sites with ICA-style branding — is a middleman."
-  - q: "Do Singapore citizens need the SGAC?"
-    a: "No. Singaporean citizens entering on a Singapore passport do not need the SGAC. It is required for foreign visitors and for Singapore PRs returning from abroad."
-  - q: "When should I file the SGAC?"
-    a: "Within 3 days before arrival. Earlier submissions are rejected by the official site."
-  - q: "Do I need to show the SGAC confirmation at immigration?"
-    a: "Not required. ICA looks you up by passport. But keeping the confirmation email open on your phone is a zero-cost safety net if their system has issues."
-  - q: "I'm transiting through Changi Airport. Do I need the SGAC?"
-    a: "Only if you clear immigration (leave the transit area). Pure airside transit travelers do not need the SGAC. If you exit the transit area, you do."
-  - q: "A site is charging me for the SGAC. Is it official?"
-    a: "No. The SGAC is free at eservices.ica.gov.sg. Any site charging a fee is a commercial service, not ICA."
-  - q: "I filled the SGAC but didn't get a confirmation email."
-    a: "Check spam first. If still missing after 1 hour, refile. Duplicate submissions are harmless and the most recent one applies."
 layout: country-form
+faq:
+  - q: "Is the Singapore Arrival Card free?"
+    a: "Yes. ICA offers free submission through its SGAC service and MyICA app."
+  - q: "Are Singapore citizens exempt?"
+    a: "Residents entering through land checkpoints are exempt. Citizens arriving by air or sea still need the SGAC unless another applicable exemption applies."
+  - q: "Do I need to use both ICA website versions?"
+    a: "No. ICA currently permits either the current or enhanced version and says one submission per trip is required."
 ---
 
 {{< official-link site="singapore.sgac" >}}
 
-## What the SGAC actually is
+## Which official service should I use?
 
-The Singapore Arrival Card (SGAC) is a free electronic pre-arrival declaration required for everyone entering Singapore — foreign visitors and Singapore PRs returning from abroad. It includes traveler identity, trip details, and a brief health declaration.
+Use ICA's SGAC website or the MyICA app. The website currently also links an {{< source-link site="singapore.sgac_enhanced" track="official" text="enhanced SGAC service" >}}. ICA says to choose either version: only one submission is required per trip.
 
-It is free.
+The government service is **free**. A commercial service fee is not an ICA submission fee. An SGAC is not a visa and does not guarantee admission.
 
-No one can charge you for it. The only legal destination is `eservices.ica.gov.sg`, a domain reserved under `.gov.sg` for Singapore government entities.
+## Who needs to submit? {#who-needs-sgac}
 
-## Who must file
+ICA requires travellers to submit before arrival, except those transiting without immigration clearance and residents entering through land checkpoints. Residents include Singapore citizens, permanent residents and long-term pass holders.
 
-- **All foreign visitors** entering Singapore — yes, even for short business trips or transits that exit the transit area.
-- **Singapore Permanent Residents** returning from overseas trips.
+**Citizens and other residents arriving by air or sea are not exempt merely because of their residency.** Check the {{< source-link site="singapore.sgac_guidance" text="ICA requirements" >}} for your journey.
 
-## Who is exempt
+## When can I fill it in? {#submission-window}
 
-- **Singapore citizens** entering on a Singapore passport.
-- **Pure airside transit travelers** at Changi who do not clear immigration.
-- **Holders of certain long-term passes** (Employment Pass, Student Pass, etc.) returning to Singapore — though many file it anyway as a precaution; it does not hurt.
+Submit within three days **including the arrival day**. For arrival on 30 June, ICA's example allows submission from 28 June. Use your expected Singapore arrival date.
 
-## The problem
+## Need help with the form?
 
-Search Google for *"Singapore arrival card"* or *"SGAC"* and you'll see paid ads from middleman sites charging $19 to $35 USD for the free form. Some submit the real SGAC for you. Some submit a different form (sometimes nothing at all), and you find out at Changi.
+The current website offers a Simplified Chinese interface, but its instructions require your information in English.
 
-ICA has issued public statements that **only `eservices.ica.gov.sg` is the authorized SGAC site** and that the form is free.
+- [Name order: given names followed by surname](/singapore/how-to-fill/#passport-name).
+- [Arrival date and the three-day window](/singapore/how-to-fill/#submission-window).
+- [Last city or port of embarkation](/singapore/how-to-fill/#last-port).
+- [Finding the acknowledgement and D/E number](/singapore/how-to-fill/#confirmation).
 
-## Before you touch any form
+If a confirmation is missing, check the official retrieval/help options before submitting again. Use Update SGAC for changes to a valid record. The e-Pass issued after immigration clearance is different from the SGAC acknowledgement.
 
-Check the address bar. The official site is <mark>eservices.ica.gov.sg/sgarrivalcard/</mark> and nothing else.
+## Optional local checks
 
-Anyone can register `.com`, `.org`, or `.net`. Domains designed to look like ICA's site but using these open suffixes are commercial middlemen. Only Singapore government entities can register `.gov.sg`.
+The checker below applies this guide's local limits. It does not reproduce every question or verify an ICA record. Follow the live form's requirements if they differ; a warning here does not prove the government will reject your entry.
 
 {{< validator country="singapore" >}}
-
-## Every field the official form asks
-
-The SGAC has roughly 9 fields across 3 sections: traveler identity, trip details, and a brief health declaration.
-
-No photo upload required.
-
-No payment required.
-
-If a site asks for either, you are not on the official site.
-
-## How to tell any SGAC site is not the real one
-
-1. **Does the domain end in `.gov.sg`?** If no, it is not a Singapore government site. Period.
-2. **Does it ask for payment?** The SGAC is free. Any fee means a middleman.
-3. **Does it ask you to upload a passport photo?** The official SGAC does not.
-4. **Does the URL contain "singapore", "SGAC", "official", "arrival" but not `.gov.sg`?** Bait.
-5. **Does the page have testimonials, trust badges, or countdown timers?** Government forms have none of these.
-
----
-
-*This guide is maintained by entrycardguide. We have no affiliation with Singapore's Immigration & Checkpoints Authority or any travel service. Our current affiliate revenue comes from clearly disclosed travel insurance links on eligible pages.*

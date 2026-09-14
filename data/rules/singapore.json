@@ -26,7 +26,7 @@
       "required": true,
       "minLength": 1,
       "maxLength": 80,
-      "help": "Exactly as shown on your passport (Latin letters only).",
+      "help": "The current ICA Foreign Visitor form prompts given names followed by surname. This local checker applies its own length limit.",
       "errors": {
         "required": "Full name is required",
         "tooLong": "Max 80 characters",
@@ -64,7 +64,7 @@
       "label": "Passport expiry date",
       "required": true,
       "placeholder": "2030-08-22",
-      "help": "Must be at least 6 months after your planned arrival",
+      "help": "Check ICA passport-validity requirements for your travel document; Singapore passport holders have different requirements from foreign visitors.",
       "errors": {
         "required": "Passport expiry is required",
         "invalidFormat": "Use YYYY-MM-DD",

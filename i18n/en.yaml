@@ -121,3 +121,8 @@ share_rail_label: "Warn a friend before they pay"
 
 related_guides_title: "More stops on your trip?"
 related_guides_intro: "Each destination has its own entry process. Check the guide for your next border crossing."
+
+field_guidance_heading: "Practical field checks"
+field_guidance_count: "checks"
+field_guidance_example: "Example"
+field_guidance_check: "Check before submitting"

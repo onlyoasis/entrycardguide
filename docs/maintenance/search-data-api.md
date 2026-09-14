@@ -173,6 +173,19 @@ node scripts/fetch-search-data.mjs --days=28 --end-date=2026-09-11 --all-traffic
 
 新增 `gsc-total.json`、`ga4-total.json`。页面/查询/用户分组不可直接相加替代总计；GSC 查询匿名化会使关键词点击远少于属性总计。GA4 按 rowCount 分页；`report-metadata.json` 保存窗口、实际过滤条件及每份 GA4 报表响应 metadata，可检查抽样/阈值与时区。
 
-前端新增 `official_link_click`：仅模板中的官方链接触发，参数为 `destination`、`official_key`、`link_slot`。官方目录的 slot 为 `directory`，正文 callout 为 `callout`。来源说明链接也有独立 official_key，统计表单入口时只选该国 meta.form_key，不能把豁免说明页算作提交入口。事件不带护照、姓名、邮箱、输入值和 URL 参数。
+前端新增 `official_link_click`：仅模板中的官方链接触发，参数为 `destination`、`official_key`、`link_slot`。官方目录的 slot 为 `directory`，正文 callout 为 `callout`，明确标记的官方内联入口为 `inline`。来源说明链接也有独立 official_key，统计表单入口时核对该国 meta.form_key 与明确支持的替代入口（如 sgac_enhanced），不能把豁免说明页算作提交入口。事件不带护照、姓名、邮箱、输入值和 URL 参数。
 
 开发构建不带测量 ID；生产 bundle 在 hostname 不匹配时不调用 GA config 或点击事件。使用生产产物预览时 gtag.js 可能仍被加载，但本站不会配置该主机的统计。此变更不追溯删除历史访问，也不替代 GA4 管理后台的过滤设置。联盟事件保持原名，不能与通用 click 相加计算转化。
+
+
+### 官方入口点击的来源与页面
+
+新增三份数据（同样应用默认正式主机名及疑似自动化过滤）：
+
+- `ga4-official-click-total.json`：`official_link_click` 的事件数、产生该事件的会话和用户。
+- `ga4-official-click-source.json`：按 `sessionSourceMedium` 分组。
+- `ga4-official-click-page.json`：按发生点击的 `pagePath` 分组，不是落地页。
+
+本批合计18份数据文件与metadata。`--all-traffic` 只移除流量过滤，官方点击报告仍限定事件名。空数组表示窗口内没有返回该事件，不是取数失败，也不能单凭它判定埋点失效。报告metadata记录eventFilter。
+
+以官方点击会话除以同窗口同过滤的GA4总会话，作为本站引导使用的代理比率；它不代表政府表单提交成功。各页面/来源的用户数不可相加替代去重总计。目的地、official_key等自定义参数尚未注册为GA4自定义维度，本轮不改后台配置；当前报告不依赖这些维度。

@@ -8,7 +8,7 @@ name = "Singapore Arrival Card (SGAC)"
 agency = "Immigration & Checkpoints Authority (ICA)"
 last_verified = "2026-09-14"
 archive_url = "https://web.archive.org/web/2026/https://eservices.ica.gov.sg/sgarrivalcard/"
-notes = "Reserved under .gov.sg — only Singapore government entities can register this domain suffix. Required for all foreign visitors and PRs returning. Free."
+notes = "Free ICA service. Refer to ICA guidance for transit and resident land-checkpoint exemptions. Current and enhanced services are linked by ICA; one submission per trip."
 
 [ica_home]
 url = "https://www.ica.gov.sg"
@@ -19,6 +19,19 @@ last_verified = "2026-09-14"
 # Country-page metadata (consumed by country-form layout).
 # Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
 [meta]
+fields_guidance_only = true
+fields_intro_en = "Use the official service and the practical checks below. Examples explain the current form; they do not certify its server-side validation rules."
+fields_intro_zh = "使用官方服务并对照下面的实用提示。示例帮助理解当前表单，不代表已核实服务端的全部校验规则。"
+email_title_en = "Keep the acknowledgement"
+email_title_zh = "保存确认信息"
+email_body_en = "Keep your SGAC acknowledgement and D/E number. Do not rely on a fixed email delivery time."
+email_body_zh = "保存 SGAC 确认信息及 D/E 编号，不依赖固定的邮件送达时间。"
+printout_title_en = "Keep a copy available"
+printout_title_zh = "保留可查看的副本"
+printout_body_en = "Keep the acknowledgement available on your phone or as a printout for reference."
+printout_body_zh = "把确认信息保存在手机上或打印备用。"
+verification_body_en = "Use ICA retrieval and help options if you cannot find your acknowledgement. Do not assume a duplicate submission is needed."
+verification_body_zh = "找不到确认时使用 ICA 找回与帮助入口，不要假定必须重复提交。"
 flag = "🇸🇬"
 name_en = "Singapore"
 name_zh = "新加坡"
@@ -39,8 +52,8 @@ field_count = 14
 sections = 4
 time_needed_en = "~6 minutes"
 time_needed_zh = "约 6 分钟"
-output_en = "Most travelers walk straight to the e-gate — ICA links your SGAC to your passport automatically. If asked, show the email."
-output_zh = "大多数旅客直接走电子通道——ICA 已经把 SGAC 自动关联到你的护照。被问到就出示邮件。"
+output_en = "Present your travel document for immigration clearance. An SGAC submission does not guarantee entry."
+output_zh = "办理入境检查时出示旅行证件，提交 SGAC 不代表保证获准入境。"
 
 # Used by the is-ivisa layout. Names the headline middleman this page rebuts.
 primary_middleman = "iVisa"
@@ -93,3 +106,33 @@ domain = "ivisa.com"
 path = "/singapore"
 first_observed = "2023-01-01"
 evidence = "Commercial visa middleman charging fees for Singapore's free SGAC. Not affiliated with ICA."
+
+[sgac_guidance]
+url = "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/sg-arrival-card"
+name = "ICA SGAC requirements"
+agency = "Immigration & Checkpoints Authority"
+last_verified = "2026-09-14"
+
+[sgac_enhanced]
+url = "https://eservices.ica.gov.sg/arrivalcard/sgac"
+name = "ICA enhanced SGAC service"
+agency = "Immigration & Checkpoints Authority"
+last_verified = "2026-09-14"
+
+[arrival_date_help]
+url = "https://ask.gov.sg/ica/questions/cluuhsp9l001afxu700snp0f0"
+name = "ICA arrival date guidance"
+agency = "Immigration & Checkpoints Authority"
+last_verified = "2026-09-14"
+
+[epass_help]
+url = "https://www.ica.gov.sg/enter-transit-depart/at-our-checkpoints/for-travellers/retrieval-of-electronic-visit-pass"
+name = "ICA SGAC and e-Pass retrieval"
+agency = "Immigration & Checkpoints Authority"
+last_verified = "2026-09-14"
+
+[contact]
+url = "https://www.ica.gov.sg/contact-us"
+name = "ICA contact and help"
+agency = "Immigration & Checkpoints Authority"
+last_verified = "2026-09-14"

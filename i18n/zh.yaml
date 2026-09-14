@@ -121,3 +121,8 @@ share_rail_label: "提醒朋友别多花钱"
 
 related_guides_title: "行程还包括其他目的地？"
 related_guides_intro: "每个目的地有独立的入境流程，请查看下一站的对应指南。"
+
+field_guidance_heading: "实用字段核对"
+field_guidance_count: "项核对"
+field_guidance_example: "填写示例"
+field_guidance_check: "提交前核对"
