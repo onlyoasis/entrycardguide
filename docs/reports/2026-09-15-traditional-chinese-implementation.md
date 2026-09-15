@@ -1,8 +1,15 @@
 # 全站繁体中文实施与验收（2026-09-15）
 
-全站繁体版本已完成本地实现与独立验收，覆盖当前主线 `62f89f5` 的全部50个目的地、156个内容路径。本轮尚未推送或部署，不代表已经收录或取得流量增长。
+全站繁体版本已完成实现、独立验收和生产发布，覆盖主线 `7538cbe` 的全部50个目的地、156个内容路径。发布完成不代表已经被搜索引擎收录或取得流量增长。
 
 ZCode 内置 `builtin:bigmodel-coding-plan / GLM-5.3-Flash` 负责实现；Codex 制定任务书、审核补丁、合并主线并独立验收。实际调用日志核对了267个完成请求，全部为指定模型，执行时间为北京时间9月14日23:05至9月15日06:56。任务书见 [全站繁体实施方案](../plans/2026-09-14-full-traditional-chinese.md)。
+
+## 生产发布
+
+- 源码提交 `7538cbeb3391cd46db9e27326e1ba10354ab02b8` 已快进推送至 `main`。
+- GitHub Actions `34912432224` 的 Build 与 Cloudflare Pages Deploy 均成功；部署完成于 2026-09-15 00:16:21 UTC，IndexNow 通知成功。
+- Cloudflare 部署地址：`https://45f39ceb.entrycardguide.pages.dev`；正式繁体入口：`https://entrycardguide.com/zh-hant/`。
+- 生产回读检查英文、简体、繁体 sitemap 各156条；全部156个繁体URL均返回200，页面语言、canonical、hreflang和H1正确。繁体目录下不存在的页面返回404及繁体404正文，正式域名保留HSTS、CSP及其余安全响应头。
 
 ## 实现范围
 
