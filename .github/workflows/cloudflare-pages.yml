@@ -47,6 +47,12 @@ jobs:
       - name: Check SEO files
         run: npm run check:seo
 
+      - name: Check MCP data snapshot
+        run: npm run check:mcp
+
+      - name: MCP function tests
+        run: npm run test:mcp
+
   deploy:
     name: Deploy to Cloudflare Pages
     runs-on: ubuntu-latest

@@ -104,6 +104,16 @@ npm run clean        # 清理 public/ 和 resources/
 
 `functions/_middleware.js` 是 Pages Function，做 www→apex 重定向兜底（与 `_redirects` 冗余但更可靠）。
 
+### MCP 服务器（`/api/mcp`，feat/mcp-server 分支）
+
+给注册用户的本地 agent（Claude Code / Cursor）提供站点数据的 MCP 端点，**仅限带 API key 的注册用户**。详见 `docs/mcp.md`，要点：
+
+- 协议是手写的 MCP Streamable HTTP 无状态子集（`functions/_mcp/protocol.js`），**零 npm 依赖**，5 个工具全部读 `functions/_mcp/snapshot.js` 快照
+- 快照由 `scripts/gen-mcp-data.mjs` 从 `data/` + roster 生成：**改 data 后必须 `npm run gen:mcp`**，`npm run check:mcp` 是 CI 门禁；快照排除 `scam_sites`/`outcomes`/news（延续不点名中介的决策）
+- 用户与调用计量在 D1（`migrations/0001_mcp_init.sql`，绑定名 `DB`）；`functions/_mcp/quota.js` 是收费口：`PLANS` 表 + `authorizeCall`/`recordCall`，`mcp_usage` 只追加，付费档接进来只改 `mcp_users.plan`
+- 单测 `npm run test:mcp`（node:sqlite 内存库跑真实 SQL，需 Node 22 的 `--experimental-sqlite`）
+- `wrangler.toml` 里的 `database_id` 是占位符：**合并 main 前必须先 `wrangler d1 create` 并填真值**，否则 `/api/*` 全 503（静态站不受影响）
+
 ### SEO 严格性
 
 `scripts/check-seo-output.mjs` 在 `npm run check:seo` 时跑，**CI 失败会阻断部署**。它验证：

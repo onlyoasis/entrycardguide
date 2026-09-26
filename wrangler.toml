@@ -1,0 +1,21 @@
+# Cloudflare Pages configuration. Bindings declared here are applied by
+# `wrangler pages deploy` (the deploy workflow already calls it).
+#
+# BEFORE MERGING feat/mcp-server:
+#   1. wrangler d1 create entrycardguide-mcp
+#   2. Paste the printed database_id below (replacing the placeholder).
+#   3. wrangler d1 migrations apply entrycardguide-mcp --remote
+# Until then the Pages functions degrade to 503 mcp_not_configured and the
+# static site is unaffected. Full runbook: docs/mcp.md.
+
+name = "entrycardguide"
+pages_build_output_dir = "public"
+compatibility_date = "2026-05-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "entrycardguide-mcp"
+database_id = "REPLACE_WITH_D1_DATABASE_ID_BEFORE_MERGE"
+
+# Optional runtime tuning (set as Pages environment variables, not here):
+#   MCP_FREE_MONTHLY_CALLS — override the free-tier monthly tool-call limit.

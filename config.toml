@@ -42,6 +42,11 @@ defaultContentLanguageInSubdir = false
       url = "/official-links/"
       weight = 75
     [[languages.en.menu.main]]
+      identifier = "mcp"
+      name = "MCP"
+      url = "/mcp/"
+      weight = 76
+    [[languages.en.menu.main]]
       identifier = "about"
       name = "About"
       url = "/about/"
@@ -69,6 +74,11 @@ defaultContentLanguageInSubdir = false
       name = "官方目录"
       url = "/zh/official-links/"
       weight = 75
+    [[languages.zh.menu.main]]
+      identifier = "mcp"
+      name = "MCP 接口"
+      url = "/zh/mcp/"
+      weight = 76
     [[languages.zh.menu.main]]
       identifier = "about"
       name = "关于"
@@ -100,6 +110,11 @@ defaultContentLanguageInSubdir = false
       name = "官方目錄"
       url = "/zh-hant/official-links/"
       weight = 75
+    [[languages.zh-hant.menu.main]]
+      identifier = "mcp"
+      name = "MCP 介面"
+      url = "/zh-hant/mcp/"
+      weight = 76
     [[languages.zh-hant.menu.main]]
       identifier = "about"
       name = "關於"
