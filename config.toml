@@ -37,6 +37,11 @@ defaultContentLanguageInSubdir = false
       url = "/decide/"
       weight = 5
     [[languages.en.menu.main]]
+      identifier = "ask"
+      name = "Ask"
+      url = "/ask/"
+      weight = 6
+    [[languages.en.menu.main]]
       identifier = "official-links"
       name = "Official Links"
       url = "/official-links/"
@@ -64,6 +69,11 @@ defaultContentLanguageInSubdir = false
       name = "决策工具"
       url = "/zh/decide/"
       weight = 5
+    [[languages.zh.menu.main]]
+      identifier = "ask"
+      name = "快速问答"
+      url = "/zh/ask/"
+      weight = 6
     [[languages.zh.menu.main]]
       identifier = "official-links"
       name = "官方目录"
@@ -96,6 +106,11 @@ defaultContentLanguageInSubdir = false
       url = "/zh-hant/decide/"
       weight = 5
     [[languages.zh-hant.menu.main]]
+      identifier = "ask"
+      name = "快速問答"
+      url = "/zh-hant/ask/"
+      weight = 6
+    [[languages.zh-hant.menu.main]]
       identifier = "official-links"
       name = "官方目錄"
       url = "/zh-hant/official-links/"
@@ -113,6 +128,12 @@ defaultContentLanguageInSubdir = false
 # fee in the TOML and llms.txt follows. Never hand-write it — a second copy of
 # the official URLs is exactly the kind of drift this site exists to prevent.
 # notAlternative keeps it out of hreflang so check:seo stays happy.
+#
+# ask-index.json — per-language answer index for the /ask/ Q&A engine. Built by
+# layouts/index.ask.json from every page's faq front matter + the country
+# roster, so the tool's knowledge base is the site's own verified content and
+# nothing else. Lands at /ask-index.json, /zh/ask-index.json,
+# /zh-hant/ask-index.json. notAlternative for the same hreflang reason.
 [outputFormats]
   [outputFormats.LLMS]
     mediaType = "text/plain"
@@ -120,8 +141,14 @@ defaultContentLanguageInSubdir = false
     isPlainText = true
     notAlternative = true
 
+  [outputFormats.ASK]
+    mediaType = "application/json"
+    baseName = "ask-index"
+    isPlainText = true
+    notAlternative = true
+
 [outputs]
-  home = ["HTML", "RSS", "LLMS"]
+  home = ["HTML", "RSS", "LLMS", "ASK"]
 
 [params]
   defaultTheme = "light"

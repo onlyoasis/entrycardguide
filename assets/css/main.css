@@ -465,6 +465,11 @@
     @apply border-2 border-ink p-md mb-xl bg-paper;
   }
 
+  /* Ask tool — Q&A engine frame (same tool frame language as decide) */
+  .ask-tool {
+    @apply border-2 border-ink p-md mb-xl bg-paper;
+  }
+
   .decide-canvas {
     @apply min-h-[280px] py-md;
   }

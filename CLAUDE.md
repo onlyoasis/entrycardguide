@@ -81,11 +81,13 @@ npm run clean        # 清理 public/ 和 resources/
 
 **浏览器端零 npm 依赖**（v1.0 设计约束）。`assets/js/*.ts` 通过 Hugo 的 `js.Build` 编译为 IIFE，生产构建会 minify + fingerprint + SRI。看 `layouts/partials/scripts.html`。
 
-只有两个 TS 文件：
-- `validator.ts` — 客户端字段校验，零网络请求
-- `decide.ts` — 决策树状态机渲染器
+浏览器端 TS 文件（均零 npm 依赖，规则/数据从构建时嵌入或同源 JSON 来）：
+- `validator.ts` — 客户端字段校验，零网络请求（站内全局加载）
+- `decide.ts` — 决策树状态机渲染器（站内全局加载）
+- `search.ts` — 首页国家网格过滤；`directory.ts` / `nav.ts` / `analytics.ts` — 目录、导航、点击埋点
+- `ask.ts` — `/ask/` 页问答引擎：同源拉取构建期生成的 `/ask-index.json`（每语言一份，来自各页 faq 前置元数据 + 国家 roster，见 `layouts/index.ask.json`），浏览器内做中英混合检索匹配，答案全部带出处链接；仅含 `{{< ask >}}` shortcode 的页面加载（`scripts.html` 里 `.HasShortcode` 门控）
 
-两个都站内全局加载（在没有对应容器的页面静默 no-op）。规则全部从 data 文件来，**改字段验证不需要改代码**。
+没有对应容器的页面静默 no-op。**改字段验证不需要改代码**。
 
 ### CSS 管道
 

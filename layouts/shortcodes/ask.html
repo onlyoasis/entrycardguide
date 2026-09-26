@@ -1,0 +1,90 @@
+{{- /*
+  Usage: {{< ask >}}  (only on the /ask/ page)
+
+  Renders the Q&A tool frame. The knowledge base is NOT here — it is the
+  per-language /ask-index.json built by layouts/index.ask.json from every
+  page's faq front matter plus the country roster. assets/js/ask.ts fetches
+  that index (one same-origin GET, identical for every visitor) and does all
+  matching in the browser. Nothing the user types is sent anywhere.
+
+  Suggestion chips and the <noscript> fallback both render from THIS page's
+  own faq front matter — the same array head.html turns into FAQPage schema,
+  so the strings exist exactly once.
+*/ -}}
+{{- $i18n := dict
+  "ask_loading" (i18n "ask_loading")
+  "ask_error" (i18n "ask_error")
+  "ask_retry" (i18n "ask_retry")
+  "ask_result_label" (i18n "ask_result_label")
+  "ask_source_label" (i18n "ask_source_label")
+  "ask_read_guide" (i18n "ask_read_guide")
+  "ask_followups" (i18n "ask_followups")
+  "ask_no_match" (i18n "ask_no_match")
+  "ask_no_match_hint" (i18n "ask_no_match_hint")
+  "ask_try_decide" (i18n "ask_try_decide")
+  "ask_try_directory" (i18n "ask_try_directory")
+  "ask_country_official" (i18n "ask_country_official")
+  "ask_country_fee" (i18n "ask_country_fee")
+  "ask_country_verified" (i18n "ask_country_verified")
+  "ask_country_agency" (i18n "ask_country_agency")
+  "ask_country_howto" (i18n "ask_country_howto")
+  "ask_status_indexed" (i18n "ask_status_indexed")
+  "decide_url" ("/decide/" | relLangURL)
+  "directory_url" ("/official-links/" | relLangURL)
+}}
+
+<section class="ask-tool not-prose" data-ask-tool data-ask-index="{{ "/ask-index.json" | relLangURL }}" aria-labelledby="ask-heading">
+  <div class="text-meta text-muted mb-2 font-mono uppercase">{{ i18n "ask_eyebrow" }}</div>
+  <h2 id="ask-heading" class="font-serif font-medium text-h1 mb-1" style="font-size: 32px; line-height: 1.15;">{{ i18n "ask_heading" }}</h2>
+  <p class="text-muted text-small mb-6">{{ i18n "ask_intro" }}</p>
+
+  <script type="application/json" data-ask-i18n>{{ $i18n | jsonify | safeJS }}</script>
+
+  <form data-ask-form class="flex items-stretch gap-0 mb-2">
+    <div class="flex items-center gap-3 bg-white border border-ink border-r-0 rounded-l-md flex-1 min-w-0" style="padding: 11px 16px;">
+      <span class="font-mono text-muted" style="font-size: 14px;" aria-hidden="true">⌕</span>
+      <input type="text" data-ask-input autocomplete="off" spellcheck="false"
+        aria-label="{{ i18n "ask_label" }}"
+        placeholder="{{ i18n "ask_placeholder" }}"
+        class="w-full min-w-0 bg-transparent border-0 outline-none text-ink" style="font-size: 16px;" />
+    </div>
+    <button type="submit" class="btn-ink rounded-l-none rounded-r-md">{{ i18n "ask_button" }}</button>
+  </form>
+  <div data-ask-status class="font-mono text-xs text-muted mb-md" aria-hidden="true">…</div>
+
+  {{- /* Chips come from this page's faq front matter — real questions, no
+         second string to maintain. Clicking fills + runs the query. */ -}}
+  {{- with .Page.Params.faq }}
+  <div class="mb-lg">
+    <div class="text-meta text-muted font-mono uppercase mb-2">{{ i18n "ask_suggested" }}</div>
+    <div class="flex flex-wrap gap-2">
+      {{- range first 5 . }}
+      <button type="button" data-ask-chip="{{ .q }}"
+        class="border border-rule rounded-sm bg-paper text-ink font-mono text-xs cursor-pointer hover:border-ink"
+        style="padding: 6px 10px; transition: border-color 80ms ease;">{{ .q }}</button>
+      {{- end }}
+    </div>
+  </div>
+  {{- end }}
+
+  {{- /* Where the JS renders. role=status keeps screen readers announced. */ -}}
+  <div data-ask-results role="status" aria-live="polite" class="mb-md"></div>
+
+  <noscript>
+    <p class="text-small text-muted mb-3">{{ i18n "ask_no_js_heading" }}</p>
+    <div class="grid gap-2 mb-md">
+      {{- with .Page.Params.faq }}
+        {{- range . }}
+      <details class="border border-rule rounded-sm" style="padding: 10px 12px;">
+        <summary class="cursor-pointer font-semibold text-small">{{ .q }}</summary>
+        <p class="text-small m-0 mt-2">{{ .a }}</p>
+      </details>
+        {{- end }}
+      {{- end }}
+    </div>
+  </noscript>
+
+  <div class="mt-md pt-md border-t border-rule text-xs text-muted">
+    ✓ {{ i18n "ask_browser_only" }}
+  </div>
+</section>
