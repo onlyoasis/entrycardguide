@@ -9,11 +9,12 @@ const projectName = 'entrycardguide';
 const databaseName = 'entrycardguide-mcp';
 const token = process.env.CLOUDFLARE_API_TOKEN;
 const account = process.env.CLOUDFLARE_ACCOUNT_ID;
+const d1Token = process.env.CLOUDFLARE_MCP_API_TOKEN || token;
 function requireCondition(ok, message) { if (!ok) throw new Error(message); }
 async function cloudflare(route, method = 'GET', body) {
   const response = await fetch(`https://api.cloudflare.com/client/v4/accounts/${account}/${route}`, {
     method,
-    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+    headers: { Authorization: `Bearer ${route.startsWith('d1/') ? d1Token : token}`, 'Content-Type': 'application/json' },
     ...(body === undefined ? {} : { body: JSON.stringify(body) }),
     signal: AbortSignal.timeout(30000),
   });
@@ -27,7 +28,7 @@ async function cloudflare(route, method = 'GET', body) {
 function wrangler(args, input, parse = false) {
   const result = spawnSync('wrangler', args, {
     input, encoding: 'utf8', timeout: 120000,
-    env: { ...process.env, WRANGLER_SEND_METRICS: 'false' },
+    env: { ...process.env, CLOUDFLARE_API_TOKEN: args[0] === 'd1' ? d1Token : token, WRANGLER_SEND_METRICS: 'false' },
   });
   requireCondition(result.status === 0, `Wrangler ${args.slice(0, 3).join(' ')} failed; verify the production token has Pages Edit and D1 Edit permissions`);
   if (parse) {

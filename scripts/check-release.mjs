@@ -28,7 +28,7 @@ try {
     requireCondition(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(database?.database_id || ''), 'Configure the real D1 database_id in wrangler.toml before deployment');
     function remote(args, parseJson = true) {
       const command = process.env.WRANGLER_BIN || 'wrangler';
-      const run = spawnSync(command, args, { encoding: 'utf8', timeout: 45000, env: { ...process.env, WRANGLER_SEND_METRICS: 'false' } });
+      const run = spawnSync(command, args, { encoding: 'utf8', timeout: 45000, env: { ...process.env, ...(args[0] === 'd1' && process.env.CLOUDFLARE_MCP_API_TOKEN ? { CLOUDFLARE_API_TOKEN: process.env.CLOUDFLARE_MCP_API_TOKEN } : {}), WRANGLER_SEND_METRICS: 'false' } });
       requireCondition(run.status === 0, 'Unable to read MCP remote deployment prerequisites; verify Cloudflare access');
       if (!parseJson) return run.stdout.replace(/\u001b\[[0-9;]*m/g, "");
       try { return JSON.parse(run.stdout); } catch { throw new Error('Invalid remote prerequisite response'); }

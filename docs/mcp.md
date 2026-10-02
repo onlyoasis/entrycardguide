@@ -80,4 +80,6 @@ npm run check:release
 
 ## 生产初始化工作流
 
-用户已授权部署时，可运行`Provision MCP production`工作流。首次整合通过受限发布分支push触发；进入main后仅保留手动触发。它使用现有GitHub Cloudflare加密secret，只读确认Pages项目生产分支后创建或复用专用D1、按migrations应用两份迁移、创建缺失认证secret。若本项目RESEND_API_KEY与MCP_EMAIL_FROM已明确配置在GitHub secret，则同步到Pages生产secret；缺邮件配置时报告缺失，不绕过部署门禁。输出artifact仅含数据库ID、迁移名、secret名称及旧部署元数据，不输出值。
+用户已授权部署时，可运行`Provision MCP production`工作流。首次受限发布分支初始化已执行；后续仅通过手动触发执行。它使用现有GitHub Cloudflare加密secret，只读确认Pages项目生产分支后创建或复用专用D1、按migrations应用两份迁移、创建缺失认证secret。若本项目RESEND_API_KEY与MCP_EMAIL_FROM已明确配置在GitHub secret，则同步到Pages生产secret；缺邮件配置时报告缺失，不绕过部署门禁。输出artifact仅含数据库ID、迁移名、secret名称及旧部署元数据，不输出值。
+
+现有Pages部署令牌没有D1权限时，可单独配置GitHub `CLOUDFLARE_MCP_API_TOKEN`：生产初始化需D1 Edit，查询迁移前置需对应D1访问权限。D1请求只使用该独立令牌，Pages请求与部署继续使用原`CLOUDFLARE_API_TOKEN`。未配置独立令牌时兼容原合并权限令牌；没有权限就失败，不绕过门禁。

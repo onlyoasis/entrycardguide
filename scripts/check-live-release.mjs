@@ -10,6 +10,12 @@ function requireCondition(ok, message) { if (!ok) throw new Error(message); }
 async function get(url, options) {
   return fetch(url, { ...options, signal: AbortSignal.timeout(30000) });
 }
+function htmlLanguage(html) {
+  const openingTag = html.match(/<html\b(?:[^"'<>]|"[^"]*"|'[^']*')*>/i)?.[0] || '';
+  const attributes = [...openingTag.matchAll(/([^\s"'<>/=]+)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>`]+)))?/g)];
+  const lang = attributes.find(attribute => attribute[1].toLowerCase() === 'lang');
+  return lang?.[2] ?? lang?.[3] ?? lang?.[4] ?? null;
+}
 try {
   requireCondition(account && token, 'Missing Cloudflare deployment credentials');
   const response = await get(`https://api.cloudflare.com/client/v4/accounts/${account}/pages/projects/entrycardguide`, { headers: { Authorization: `Bearer ${token}` } });
@@ -19,13 +25,13 @@ try {
   const deployment = project.canonical_deployment;
   requireCondition(project.production_branch === 'main' && deployment?.environment === 'production', 'Deployment must be the main production release');
   requireCondition(deployment.deployment_trigger?.metadata?.commit_hash === expected, 'Pages production revision does not match the pushed commit');
-  requireCondition(deployment.latest_stage?.status === 'success', 'Pages production deployment is not successful');
+  requireCondition(deployment.latest_stage?.name === 'deploy' && deployment.latest_stage.status === 'success', 'Pages production deployment is not successful');
   const library = JSON.parse(readFileSync('data/travel_library_public.json', 'utf8'));
   const seen = [];
   for (const [prefix, lang] of [['', 'en'], ['/zh', 'zh-Hans'], ['/zh-hant', 'zh-Hant']]) {
     const directory = await get(`${origin}${prefix}/library/`);
     const html = await directory.text();
-    requireCondition(directory.status === 200 && (html.includes(`lang=${lang}`) || html.includes(`lang="${lang}"`)), `Invalid ${lang} library response`);
+    requireCondition(directory.status === 200 && htmlLanguage(html) === lang, `Invalid ${lang} library response`);
     requireCondition((html.match(/data-library-row(?:[\s=>])/g) || []).length === 249, `Missing ${lang} destination rows`);
     const sitemap = await get(`${origin}${prefix || '/en'}/sitemap.xml`);
     const xml = await sitemap.text();

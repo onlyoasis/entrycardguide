@@ -1,11 +1,6 @@
 name: Provision MCP production
 
 on:
-  push:
-    branches: [codex/release-global-mcp]
-    paths:
-      - .github/workflows/provision-mcp.yml
-      - scripts/provision-mcp.mjs
   workflow_dispatch:
 
 permissions:
@@ -23,6 +18,7 @@ jobs:
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN || secrets.CF_API_TOKEN }}
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID || secrets.CF_ACCOUNT_ID }}
+      CLOUDFLARE_MCP_API_TOKEN: ${{ secrets.CLOUDFLARE_MCP_API_TOKEN }}
       RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
       MCP_EMAIL_FROM: ${{ secrets.MCP_EMAIL_FROM }}
     steps:
