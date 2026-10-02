@@ -1,0 +1,57 @@
+{
+  "country": "china",
+  "officialUrl": "https://s.nia.gov.cn/ArrivalCardFillingPC/",
+  "lastVerified": "2026-09-05",
+  "source": "2026-09-05 核查同日保存的官方 js/app.bc4b0fcf.js 控件、绑定与条件分支；供字段卡说明使用，中国页面不接入公共 validator。详见本批事实表。",
+  "fields": {
+    "passport_upload": {
+      "type": "file",
+      "label": "Passport Data Page",
+      "required": true,
+      "help": "JPEG or PNG only. Image compression occurs before the 102400-byte size check. The separate supporting-material PDF path does not apply here."
+    },
+    "date_of_birth": {
+      "type": "date",
+      "label": "Date of Birth",
+      "required": true,
+      "help": "Use the official birth-date control and the birth date in your travel document."
+    },
+    "passport_number": {
+      "type": "text",
+      "label": "Passport Number",
+      "required": true,
+      "help": "Check the number copied from your document. The ordinary BaseInfo component requires idNumber."
+    },
+    "contact_number": {
+      "type": "phone",
+      "label": "Contact Number",
+      "required": true,
+      "maxLength": 30,
+      "help": "The ordinary PersonInfo jwdh input is required, keeps + and digits, and has a 30-character limit. These are the official input controls, not rules executed by this guide."
+    },
+    "email": {
+      "type": "email",
+      "label": "Email",
+      "required": false,
+      "help": "Optional in ordinary PersonInfo. A supplied address is checked by the official email validator on blur."
+    },
+    "date_of_entry": {
+      "type": "date",
+      "label": "Date of Entry",
+      "required": true,
+      "help": "The entry-date picker uses yyyy-MM-dd. Use your date of entry; later travel selections depend on earlier answers."
+    },
+    "address_in_china": {
+      "type": "text",
+      "label": "Address in China",
+      "required": true,
+      "help": "The administrative-area selection zhzzxzqhdm is required. The separate detailed-address input zhxxzz has a 100-byte limit; its example is a placeholder, not a vague-address error."
+    },
+    "entity_contact_information": {
+      "type": "text",
+      "label": "Entity Contact Information / Inviter Contact",
+      "maxLength": 12,
+      "help": "Shown when zfsfyq is 1. The zfyqlxdh contact is required inside this invitation branch, accepts digits only, and is limited to 12 characters. Entity name or inviter name is required for the chosen invitation type; limits are 200 and 32 bytes respectively."
+    }
+  }
+}

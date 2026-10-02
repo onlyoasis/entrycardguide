@@ -16,7 +16,7 @@ import path from "node:path";
 
 const tokenEndpoint = "https://oauth2.googleapis.com/token";
 const inspectionEndpoint = "https://searchconsole.googleapis.com/v1/urlInspection/index:inspect";
-const sitemapFiles = ["public/en/sitemap.xml", "public/zh/sitemap.xml"];
+const sitemapFiles = ["public-release/en/sitemap.xml", "public-release/zh/sitemap.xml", "public-release/zh-hant/sitemap.xml"];
 const inspectionIntervalMs = 120;
 const oldCountrySlugs = new Set([
   "australia",

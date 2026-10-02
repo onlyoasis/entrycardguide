@@ -70,6 +70,12 @@ content/thailand/
 
 发布前按 [`docs/maintenance/release-checklist.md`](./maintenance/release-checklist.md) 固定文件范围，并核对 official URL、`last_verified`、页面 `lastmod` 和线上 deployment SHA。
 
+本地发布候选从 `npm run build:prod` 生成到 `public-release/`，生产不能读取内部研究库。
+全球目录覆盖249个目的地，保留核实状态和未公开计数；维护方式见
+[`data-publication-boundary.md`](./maintenance/data-publication-boundary.md)。MCP 账户先验证邮箱并登录，
+再单独授权只读凭据；调用检查参数和账户额度。运行、迁移及发布前配置见 [`mcp.md`](./mcp.md)。
+
+
 ---
 
 ## 许可证

@@ -2213,7 +2213,10 @@
     "brazil": "Brazil",
     "barbados": "Barbados",
     "russia": "Russia",
-    "jordan": "Jordan"
+    "jordan": "Jordan",
+    "china": "China",
+    "south-africa": "South Africa",
+    "nigeria": "Nigeria"
    }
   },
   "thailand_result": {
@@ -3729,6 +3732,133 @@
    "summary": "Restricted nationalities need prior approval, so apply at a Jordanian diplomatic mission before travel.",
    "note": "The Interior Ministry e-service at eservices.moi.gov.jo/MOI_EVISA is an account-login workflow for applications submitted from outside the Kingdom, with a JD 2 service allowance and JD 1000 guarantee per invited person. Any site selling an instant online visa for a restricted nationality is not the government route.",
    "forms": []
+  },
+  "china_exempt": {
+   "label": "China's form lists 8 groups exempt from online Arrival Card filing. Does any apply to you? Holder of a Foreign Permanent Resident ID; holder of a Hong Kong or Macau travel permit (non-Chinese national); 24-hour direct transit without leaving the port restricted area; member of a visa-free or group-visa tour group; transport crew such as flight crew, sailors or drivers; cruise passenger returning on the same ship; person eligible for courtesy treatment with centralized document inspection; entry via a border fast-channel.",
+   "options": {
+    "yes": "Yes, one of these applies",
+    "no": "No, none applies"
+   }
+  },
+  "china_exempt_result": {
+   "summary": "You do not need to file the online Arrival Card for China.",
+   "note": "The form's own filing notice lists these 8 exemption categories. This system is not required for you. Border-area residents of the 7 neighbouring countries holding border-resident documents use the separate Entry Declaration for Border Area Residents channel.",
+   "forms": []
+  },
+  "china_result": {
+   "summary": "You can file the free online Arrival Card for China, available since 20 November 2025.",
+   "note": "The NIA fee notice confirms that filing is free. The official notices reviewed do not specify an advance filing window; they also describe filling the card at the port. This guide covers foreign nationals using the ordinary arrival-card flow. Use the official form for its current questions and validation. Transit stay limits are not filing deadlines.",
+   "forms": [
+    {
+     "name": "Arrival Card Filling",
+     "fee": "FREE",
+     "agency": "National Immigration Administration"
+    }
+   ]
+  },
+  "south_africa_transit": {
+   "label": "Are you only transiting South Africa by air or sea, without leaving the designated transit area or the aircraft or vessel on which you arrived?",
+   "options": {
+    "yes": "Yes, only this limited transit",
+    "no": "No, I am entering or leaving South Africa"
+   }
+  },
+  "south_africa_transit_result": {
+   "summary": "This limited air or sea transit is excluded from the SARS traveller declaration.",
+   "note": "This exclusion applies only to the SARS customs declaration. It does not decide visa or immigration requirements. Leaving the transit area, or crossing by land or rail, does not fall within this exclusion.",
+   "forms": []
+  },
+  "south_africa_direction": {
+   "label": "Are you entering or leaving South Africa on this trip?",
+   "options": {
+    "arrival": "Entering South Africa",
+    "departure": "Leaving South Africa"
+   }
+  },
+  "south_africa_arrival": {
+   "summary": "Complete the free SARS customs traveller declaration for your arrival.",
+   "note": "The requirement includes South African citizens, residents, foreign visitors and children. Having no items to declare means selecting the appropriate Nil declaration, not skipping the form. Save the confirmation and follow its Customs instructions after immigration on arrival. Submission is free; duties or VAT on goods are separate.",
+   "forms": [
+    {
+     "name": "SARS Traveller Declaration",
+     "fee": "FREE",
+     "agency": "South African Revenue Service",
+     "deadline": "Within 24 hours before departure; with stops, use the last leg directly to South Africa."
+    }
+   ]
+  },
+  "south_africa_departure": {
+   "summary": "Complete the free SARS customs traveller declaration for your departure.",
+   "note": "Children must also be covered by a declaration. Select Full or Nil according to the official questions about your goods and currency. For the stay address, the rules distinguish departures: use the address in your destination country. Follow your confirmation and Customs instructions before immigration; any duties or VAT are separate from the free declaration.",
+   "forms": [
+    {
+     "name": "SARS Traveller Declaration",
+     "fee": "FREE",
+     "agency": "South African Revenue Service",
+     "deadline": "Within 24 hours before departure from South Africa."
+    }
+   ]
+  },
+  "nigeria_transit": {
+   "label": "Does your journey involve entering Nigeria or departing after a stay, or are you only a transit passenger?",
+   "options": {
+    "stay": "Entering Nigeria or leaving after a stay",
+    "transit": "Only transit, without entering for a visit or stay"
+   }
+  },
+  "nigeria_transit_result": {
+   "summary": "The NIS Landing and Exit Card portal does not cover pure transit journeys.",
+   "note": "The portal FAQ excludes transit purposes. A connecting ticket alone does not establish that you are only transiting: if you need to enter Nigeria, check your entry requirements with NIS. This result does not grant a transit visa exemption.",
+   "forms": []
+  },
+  "nigeria_status": {
+   "label": "Are you travelling as a foreign visitor, or do you need NIS to clarify requirements for your passport or status?",
+   "options": {
+    "foreign_visitor": "Foreign visitor entering or departing Nigeria",
+    "confirm": "Nigerian passport, dual nationality, special status, or unsure"
+   }
+  },
+  "nigeria_confirm_status": {
+   "summary": "Confirm your card requirements with NIS before applying. This guide cannot establish an exemption for your status.",
+   "note": "The dedicated portal FAQ addresses foreign travellers, while the main NIS introduction uses broader wording. The information link above is guidance, not a decision that you must submit a card. Visa exemptions, diplomatic status or residence documents must not be assumed to exempt you from this separate card.",
+   "forms": [
+    {
+     "name": "NIS eligibility guidance — confirm requirements first",
+     "fee": "FREE",
+     "agency": "Nigeria Immigration Service"
+    }
+   ]
+  },
+  "nigeria_direction": {
+   "label": "Which Nigerian border movement are you preparing for?",
+   "options": {
+    "arrival": "Arriving in Nigeria",
+    "departure": "Departing Nigeria"
+   }
+  },
+  "nigeria_arrival": {
+   "summary": "Prepare a free NIS Landing Card for your arrival.",
+   "note": "Use the official portal and select the arrival application; it currently leads to login. Each traveller submits individually. Use the visa or passport route that applies to you, save the successful email and download and print the card. A card does not replace a required visa. If submitted details are wrong, the FAQ directs you to resubmit with correct information.",
+   "forms": [
+    {
+     "name": "Landing Card",
+     "fee": "FREE",
+     "agency": "Nigeria Immigration Service",
+     "deadline": "Complete before boarding and before immigration checks; no specific advance-hour window is verified in this guide."
+    }
+   ]
+  },
+  "nigeria_departure": {
+   "summary": "Prepare a free NIS Exit Card or exit confirmation for your departure.",
+   "note": "Select the departure application in the official portal; an earlier Landing Card does not complete this separate departure step. Submit each traveller individually, then save the email and download and print the card or confirmation. For missing or incorrect details, use the portal guidance and NIS support rather than assuming the earlier record will be corrected automatically.",
+   "forms": [
+    {
+     "name": "Exit Card / exit confirmation",
+     "fee": "FREE",
+     "agency": "Nigeria Immigration Service",
+     "deadline": "Complete before boarding and before departure immigration checks; no specific advance-hour window is verified in this guide."
+    }
+   ]
   }
  }
 }

@@ -1,0 +1,10 @@
+{{ .EnableAllLanguages }}
+{{ $library := partial "library-data.html" . }}
+{{ $field := cond (eq .Site.Language.Lang "en") "name_en" (cond (eq .Site.Language.Lang "zh-hant") "name_zh_hant" "name_zh") }}
+{{ range $library.jurisdictions }}
+  {{ $record := index $library.byId .id }}
+  {{ if not $record }}{{ errorf "Public destination %s lacks a public record" .id }}{{ end }}
+  {{ $title := printf "%s (%s)" (index . $field) .id }}
+  {{ $date := time.AsTime (printf "%sT00:00:00+09:00" $record.researched_at) }}
+  {{ $.AddPage (dict "kind" "page" "path" (lower .id) "title" $title "params" (dict "iso" .id) "dates" (dict "date" $date "lastmod" $date "publishDate" $date)) }}
+{{ end }}

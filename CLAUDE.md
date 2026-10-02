@@ -275,3 +275,11 @@ content/{country}/how-to-fill.md       # 字段逐项填写
 ## 繁体中文（zh-Hant）维护
 
 繁体是完整的第三语言（`/zh-hant/`，156 篇内容页 + 全部 UI/数据/校验器/决策树本地化）。派生文件（`.zh-hant.md`、`*_zh_hant` TOML 字段、`i18n/zh-hant.yaml`、`tree.zh-hant.json`）**不要手改**——用 `npm run sync:zh-hant` 重新生成；`npm run check:zh-hant` 是 build/dev 前置只读门禁。手工英文→繁体覆写（rules_i18n、决策树）受源文本快照陈旧门禁保护，改英文源后复核翻译再 `npm run snapshot:zh-hant`。细节见 `docs/maintenance/zh-hant.md`。
+
+## 2026-10-02 本地发布候选补充
+
+- `codex/release-global-mcp` 工作树整合53个详细国家指南和249目的地全球资料库三语页；公开数据只来自`data/travel_library_public.json`，原研究主库留外盘独立工作树。
+- 公共v2投影保留状态及覆盖数量，当前328公开事项、66暂不公开、531待核问题。不要把完整目的地目录说成完整法规核验。
+- `build:prod`固定产出`public-release/`；CI发布相同目录，检查公共schema、三语派生物、MCP快照、SEO和私有数据历史边界。
+- MCP改用邮箱验证码登录与显式`mcp:read`授权；旧匿名key停用。`gen:mcp`同时包含公开全球快照，新增`get_jurisdiction`，每次调用校验授权、参数和原子账户额度。
+- 生产发布前必须填真实D1 ID、应用两份迁移并设置邮件/认证secret；`check:release -- --deployment`只读核对前置条件。详见`docs/mcp.md`与本轮验收报告。不得把本地假邮件测试说成真实送达。

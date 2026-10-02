@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Negative regressions for the three-language SEO gate (review-15/16).
-// Each case runs the REAL gate against an isolated temp copy of public/ via
-// PUBLIC_DIR; the real public/ directory is never modified.
+// Each case runs the REAL gate against an isolated temp copy of public-release/ via
+// PUBLIC_DIR; the real public-release/ directory is never modified.
 import { spawnSync } from "node:child_process";
 import { cpSync, rmSync, mkdtempSync, readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import path from "node:path";
@@ -13,7 +13,7 @@ const GATE = path.join(ROOT, "scripts/check-seo-output.mjs");
 
 function freshCopy() {
   const dir = mkdtempSync(path.join(os.tmpdir(), "zh-hant-seo-"));
-  cpSync(path.join(ROOT, "public"), path.join(dir, "public"), { recursive: true, dereference: true });
+  cpSync(path.join(ROOT, "public-release"), path.join(dir, "public"), { recursive: true, dereference: true });
   return dir;
 }
 function run(dir) {

@@ -1,0 +1,49 @@
+{
+  "country": "nigeria",
+  "form": "Landing and Exit Card",
+  "officialUrl": "https://lecard.immigration.gov.ng/",
+  "lastVerified": "2026-09-05",
+  "source": "2026-09-05 核查官方公开门户 https://lecard.immigration.gov.ng/ 、FAQ https://lecard.immigration.gov.ng/faq 与账户入口 https://lecard.immigration.gov.ng/register-page 。这里仅列8项准备资料，不是完整申请表或校验规则；未注册或提交，登录后字段未逐项核验，不接入本地 validator。",
+  "fields": {
+    "journey_direction": {
+      "type": "text",
+      "label": "Arrival or departure / 入境或出境",
+      "help": "Choose Arrival for entry and Departure for leaving Nigeria. These are separate services. The example is inbound; an earlier Landing Card does not automatically complete the later exit process."
+    },
+    "full_name": {
+      "type": "text",
+      "label": "Full name on passport / 护照全名",
+      "help": "Copy your name from the passport for this trip, not a nickname. The public account page separates first, middle and last names. Do not invent a middle name or remove spaces and hyphens without official instructions."
+    },
+    "passport_number": {
+      "type": "text",
+      "label": "Passport number / 护照号码",
+      "help": "Prepare the number from your travel passport and compare each character. Do not copy an old passport from a saved trip record. Public guidance names passport or visa details; this guide has not verified number lengths or every application branch."
+    },
+    "visa_number": {
+      "type": "text",
+      "label": "Visa number, where applicable / 适用签证号码",
+      "help": "Prepare visa details if they apply to your route. The portal mentions a visa or passport number. Visa-free and ECOWAS travellers should follow their actual category, not invent a visa. Visa exemption does not itself establish a card exemption."
+    },
+    "date_of_birth": {
+      "type": "text",
+      "label": "Date of birth / 出生日期",
+      "help": "Use the birth date on your passport, not its date of issue. Follow the date control in your application. The public retrieval page uses a date picker; that does not establish a universal typed format for all application screens."
+    },
+    "nationality": {
+      "type": "text",
+      "label": "Nationality / 国籍",
+      "help": "Match nationality to your travel document, not your residence. This is separate from country of issuance on Get Card. For dual nationality or unclear eligibility, confirm with NIS before assuming an exemption."
+    },
+    "email": {
+      "type": "text",
+      "label": "Email address / 电子邮箱",
+      "help": "Use an inbox you can open while travelling. NIS says it emails successful confirmation and the card, which also allows reprinting. An old inbox you cannot access will not help you recover that message."
+    },
+    "phone": {
+      "type": "text",
+      "label": "Phone number / 联系电话",
+      "help": "Prepare a current number where you can be contacted. Follow the official input instructions; this guide has not verified prefix rules, length limits or mandatory status. Do not use a copied sample number as your own contact."
+    }
+  }
+}

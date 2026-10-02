@@ -44,3 +44,14 @@ data-exports/
 .context/
 /AGENTS.md.before-sync-*
 /CLAUDE.md.before-sync-*
+
+# Private research and rebuildable public output
+/data/travel_library/
+/public-release/
+/research-public/
+/.cache/
+/.wrangler/
+
+/mcp-provision.json
+
+/release-live.json

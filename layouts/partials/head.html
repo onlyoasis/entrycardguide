@@ -37,7 +37,7 @@
 
 {{- /* Self-hosted font preload for perf */ -}}
 {{- /* CSS — compiled via postcss + tailwind, fingerprinted */ -}}
-{{- $css := resources.Get "css/main.css" | css.PostCSS }}
+{{- $css := (slice (resources.Get "css/main.css") (resources.Get "css/library.css")) | resources.Concat "css/site.css" | css.PostCSS }}
 {{- if hugo.IsProduction }}
   {{- $css = $css | resources.Minify | resources.Fingerprint "sha256" }}
 {{- end }}

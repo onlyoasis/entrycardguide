@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "hugo server --gc --disableFastRender",
     "build": "hugo --gc --minify",
-    "build:prod": "hugo --gc --minify --environment production",
-    "check:seo": "node scripts/check-seo-output.mjs",
+    "build:prod": "node scripts/build-public.mjs",
+    "check:seo": "PUBLIC_DIR=public-release node scripts/check-seo-output.mjs",
     "gen:mcp": "node scripts/gen-mcp-data.mjs",
     "check:mcp": "node scripts/gen-mcp-data.mjs --check",
     "test:mcp": "node --experimental-sqlite scripts/test-mcp.mjs",
@@ -21,8 +21,16 @@
     "check:zh-hant": "node scripts/sync-zh-hant.mjs --check && node scripts/zh-hant/gen-data-toml.mjs --check && node scripts/zh-hant/gen-roster.mjs --check && node scripts/zh-hant/gen-i18n.mjs --check && node scripts/zh-hant/gen-tree.mjs --check && node scripts/zh-hant/check-rules-i18n.mjs && node scripts/zh-hant/check-translation-currency.mjs",
     "snapshot:zh-hant": "node scripts/zh-hant/snapshot-sources.mjs",
     "prebuild": "npm run check:zh-hant",
-    "prebuild:prod": "npm run check:zh-hant",
-    "predev": "npm run check:zh-hant"
+    "prebuild:prod": "npm run check:zh-hant && npm run check:public-library && npm run check:library-ui && npm run check:mcp",
+    "predev": "npm run check:zh-hant",
+    "check:public-library": "node scripts/check-public-travel-library.mjs",
+    "export:public-library": "node scripts/export-public-travel-library.mjs",
+    "check:data-boundary": "node scripts/check-data-boundary.mjs --index && node scripts/check-data-boundary.mjs --history HEAD",
+    "test:data-boundary": "node --test tests/*boundary.test.mjs tests/public-output.test.mjs tests/travel-library-public.test.mjs tests/public-library-v2.test.mjs",
+    "test:mcp-auth": "node --experimental-sqlite scripts/test-mcp-auth.mjs",
+    "check:release": "node scripts/check-release.mjs",
+    "gen:library-ui": "node scripts/gen-library-ui.mjs",
+    "check:library-ui": "node scripts/gen-library-ui.mjs --check"
   },
   "devDependencies": {
     "@iarna/toml": "2.2.5",

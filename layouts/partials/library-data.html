@@ -1,0 +1,14 @@
+{{- /* Public pages never load or fall back to the private research corpus. */ -}}
+{{- $snapshot := hugo.Data.travel_library_public -}}
+{{- if not (reflect.IsMap $snapshot) -}}
+  {{- errorf "Missing public travel library snapshot; research fallback is forbidden" -}}
+{{- else if or (not (in (slice (float 1) (float 2)) $snapshot.schema_version)) (not (reflect.IsSlice $snapshot.jurisdictions)) (not (reflect.IsSlice $snapshot.records)) -}}
+  {{- errorf "Invalid public travel library snapshot" -}}
+{{- end -}}
+{{- $byId := dict -}}
+{{- range $snapshot.records -}}
+  {{- if and (eq $snapshot.schema_version (float 1)) (ne .review_status "verified") }}{{ errorf "v1 public record %s must be verified" .jurisdiction_id }}{{ end -}}
+  {{- if and (eq .review_status "blocked") (gt (len .procedures) 0) }}{{ errorf "Blocked public record %s cannot publish procedures" .jurisdiction_id }}{{ end -}}
+  {{- $byId = merge $byId (dict .jurisdiction_id .) -}}
+{{- end -}}
+{{- return (dict "isResearch" false "jurisdictions" $snapshot.jurisdictions "records" $snapshot.records "byId" $byId) -}}

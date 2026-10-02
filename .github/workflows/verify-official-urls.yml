@@ -17,6 +17,7 @@ concurrency:
 jobs:
   verify:
     name: Verify official URLs and refresh dates
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN || secrets.CF_API_TOKEN }}
@@ -46,17 +47,36 @@ jobs:
       - name: Verify official URLs
         run: npm run verify:official-urls -- --write --timeout-ms 45000
 
-      - name: Detect refreshed dates
+      - name: Detect refreshed source dates
         id: changes
         run: |
-          git add data/official_urls content
+          git add -- data/official_urls content ':(exclude,glob)content/**/*.zh-hant.md'
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "No verification dates changed."
+            echo "No source verification dates changed."
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
             git diff --cached --stat
           fi
+
+      # Translation dates use the source file's Git author date. Commit the
+      # source locally before regenerating; failed checks never push it.
+      - name: Commit source verification dates locally
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(content): refresh official URL verification dates"
+
+      - name: Regenerate translations and MCP snapshot
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          npm run sync:zh-hant
+          npm run gen:mcp
+
+      - name: Check private data boundary
+        if: steps.changes.outputs.changed == 'true'
+        run: npm run check:data-boundary
 
       - name: Build
         if: steps.changes.outputs.changed == 'true'
@@ -66,12 +86,25 @@ jobs:
         if: steps.changes.outputs.changed == 'true'
         run: npm run check:seo
 
-      - name: Commit refreshed verification dates
+      - name: Check global release structure
+        if: steps.changes.outputs.changed == 'true'
+        run: npm run check:release
+
+      - name: Check MCP data snapshot
+        if: steps.changes.outputs.changed == 'true'
+        run: npm run check:mcp
+
+      - name: MCP function tests
+        if: steps.changes.outputs.changed == 'true'
+        run: npm run test:mcp && npm run test:mcp-auth
+
+      - name: Commit generated files and push checked changes
         if: steps.changes.outputs.changed == 'true'
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore(content): refresh official URL verification dates"
+          git add -- data content i18n/zh-hant.yaml layouts/partials/country-roster.html functions/_mcp/snapshot.js
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(content): sync verified-date translations and MCP data"
+          fi
           git push
 
       - name: Check Cloudflare credentials
@@ -86,10 +119,15 @@ jobs:
             exit 1
           }
 
+      - name: Check MCP deployment configuration
+        if: steps.changes.outputs.changed == 'true'
+        run: npx --yes --package=wrangler@4.85.0 -- npm run check:release -- --deployment
+
       - name: Deploy to Cloudflare Pages
         if: steps.changes.outputs.changed == 'true'
         uses: cloudflare/wrangler-action@v3
         with:
+          wranglerVersion: "4.85.0"
           apiToken: ${{ env.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ env.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy public --project-name=entrycardguide --branch=main --commit-dirty=true
+          command: pages deploy public-release --project-name=entrycardguide --branch=main --commit-dirty=true

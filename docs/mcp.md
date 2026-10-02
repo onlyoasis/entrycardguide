@@ -1,103 +1,83 @@
-# MCP 服务器（`/api/mcp`）
+# MCP 账户、授权与调用
 
-把站点数据以 MCP（Model Context Protocol）工具的形式提供给注册用户的本地 agent（Claude Code、Cursor 等）。本文是架构说明 + 运维手册。
+`/api/mcp` 是带只读授权的 Streamable HTTP 无状态接口。注册仅创建待验证账户；收到邮箱验证码并登录后，用户必须在账户页明确同意 `mcp:read`，才能获取 API key。登录 Cookie 不能代替 MCP Bearer 授权。
 
-用户可见的说明在 `/mcp/` 页面（en/zh/zh-hant 三语），本文只讲内部。
-
-## 端点
+## 路由
 
 | 路由 | 方法 | 用途 |
 |---|---|---|
-| `/api/mcp` | POST | MCP JSON-RPC 端点（每个请求都要求 `Authorization: Bearer ecg_...`） |
-| `/api/mcp` | GET / DELETE | 405（无状态服务器，无 SSE、无会话） |
-| `/api/mcp/register` | POST | 注册：`{"email":"..."}`（JSON）或表单提交（返回 HTML）→ 返回一次性 API key |
-| `/api/mcp/whoami` | GET | 同一 Bearer key，查配额用量（不计费） |
+| `/api/mcp/account?lang=en|zh|zh-hant` | GET | 三语注册、登录、授权和撤销界面；Accept JSON 返回会话、CSRF 和授权摘要 |
+| `/api/mcp/register` | POST | 邮箱注册并申请验证码，不返回 API key |
+| `/api/mcp/login` | POST | 已注册账户申请新的验证码，不创建未知账户 |
+| `/api/mcp/verify` | POST | `{challengeId, code}`，邮箱验证后建立会话 |
+| `/api/mcp/authorize` | POST | `{csrf, scope:"mcp:read", consent:true}`，明确授权后一次显示 API key |
+| `/api/mcp/revoke` | POST | `{csrf, grantId}`，只能撤销自己的授权 |
+| `/api/mcp/logout` | POST | `{csrf}`，撤销当前登录会话；MCP 授权独立管理 |
+| `/api/mcp` | POST | Bearer 凭据、JSON-RPC 请求；GET/DELETE 为405 |
+| `/api/mcp/whoami` | GET | Bearer 授权状态和账户月度用量，不扣调用次数 |
 
-协议层实现 MCP Streamable HTTP 的无状态子集（2025-06-18 规范）：单条 JSON-RPC 消息对单条 JSON 响应；notification 回 202；不支持的 `protocolVersion` 回退到 `2025-06-18`。零 npm 依赖（延续 v1.0 约束）。
+账户 POST 支持 JSON 或 URL-encoded 表单。必须提供与请求地址一致的 `Origin`；表单含 `lang`。错误只返回安全代码，不返回邮件供应商、SQL 或凭据内容。账户响应禁缓存、禁嵌入、禁索引，使用独立 CSP。
 
-## 文件地图
+验证码10分钟有效、最多5次尝试、原子单次消费。只保存以 `MCP_AUTH_SECRET` 为密钥的验证码 HMAC。注册/发码、验证、授权和撤销均有D1原子限流。邮件投递失败不激活验证码；并发投递按最后成功送达的验证码替换已送达旧码，不提前作废尚未投递的请求。
 
-```
-functions/_mcp/            下划线目录不参与路由，全是内部模块
-  snapshot.js              数据快照（生成物，勿手改）
-  protocol.js              JSON-RPC 分发 + 5 个工具定义
-  auth.js                  key 生成/哈希/Bearer 解析
-  db.js                    D1 查询（唯一 SQL 出口）
-  quota.js                 计划表 + 配额执行（收费口）
-functions/api/mcp/         路由：index.js / register.js / whoami.js
-migrations/0001_mcp_init.sql   mcp_users + mcp_usage 表
-scripts/gen-mcp-data.mjs   从 data/ 生成 snapshot.js（npm run gen:mcp / check:mcp）
-scripts/test-mcp.mjs       单元测试（node:sqlite 模拟 D1，npm run test:mcp）
-wrangler.toml              Pages 配置：D1 绑定 `DB`
-```
+登录会话7天有效，Cookie为 `__Host-ecg_session; HttpOnly; Secure; SameSite=Strict; Path=/`，数据库只存会话凭据哈希。登录会轮换当前会话，写操作同时验证Origin与会话CSRF。授权30天有效，每账户最多10个有效授权；数据库只保存API key哈希。撤销、账户停用和到期会在每次MCP请求检查，工具计量时再核对一次。迁移0002使旧版匿名key失效，原账户需验证邮箱并重新授权。
 
-## 数据流
+## 调用与数据
 
-`data/`（rules / official_urls / fields / changelog / decision tree）＋ roster 顺序
-→ `scripts/gen-mcp-data.mjs` → `functions/_mcp/snapshot.js`（构建时打包进 Functions bundle）
+六个工具：`list_countries`、`get_jurisdiction`、`get_country_forms`、`get_field_rules`、`get_field_guide`、`run_decision_tree`。
 
-- **快照排除** `scam_sites`、`outcomes`、`news`、`primary_middleman`/`page_question`/`page_answer`。与 2026-08-10 站点决策一致：MCP 只发布官方网址与字段规则，不发布第三方公司点名。changelog 正文里提到历史移除记录属于已公开文案，保留。
-- 快照体积约 1MB 源码（JSON 压缩后远小于 Workers 1MB 压缩限制）。国家数翻倍前需要复查。
-- 快照**不含时间戳**（避免 check 在跨日时误报陈旧）；新鲜度由数据内的 `last_verified` 体现。
-- CI 门禁：改了 `data/` 或 roster 后必须 `npm run gen:mcp`，否则 `check:mcp` 失败阻断构建——和 zh-hant 门禁同一套路。
+- `list_countries`覆盖249个目的地；`get_jurisdiction({id:"TH"})`返回同一公开快照内的记录。
+- 53个详细指南继续通过country slug调用。准备资料型字段明确返回`examples_only`，不能据此宣称执行了官方全部校验。
+- 快照由`npm run gen:mcp`从既有公开指南数据及`data/travel_library_public.json`生成。禁止读取研究主库。全球公开版本含328事项，66事项暂不公开；28/194/27核实状态原样保留，531个待核问题只保留数量。没有公开事项不能解释为无需申报。
+- 不包含`scam_sites`、`outcomes`、新闻块、原研究引文、私密路径或待核正文。原核实日期保留，工具调用不代表重新核实法规。
 
-## 工具（5 个）
+请求检查Origin（如有）、Content-Type、Accept、协议头、16KiB流式大小上限、UTF-8、JSON-RPC envelope、request ID、方法参数及实际工具schema。拒绝额外属性、类型错误、非法国家/语言和终态后的多余答案。无ID请求只允许`notifications/initialized`，不能绕过`tools/call`记账。
 
-`list_countries` / `get_country_forms` / `get_field_rules` / `get_field_guide` / `run_decision_tree`。定义在 `functions/_mcp/protocol.js` 的 `TOOLS`。加新工具 = 加一个 run 函数 + schema，无其他改动。
-
-## 配额与收费口
-
-`functions/_mcp/quota.js` 是唯一的计费咽喉：
-
-- `PLANS`：`free: 100 次/月`，`pro: 10000`，`enterprise: null`（不限）。用户的 plan 存在 `mcp_users.plan` 列。
-- `authorizeCall()` 在每次 `tools/call` 前查额；`recordCall()` 在工具**成功后**记账。校验错误（如国家 slug 打错）不烧配额；`initialize`/`tools/list`/`ping` 不计数。
-- `mcp_usage` 只追加（user, period, tool, 时间戳），是未来计费作业的唯一数据源——按 `(user_id, period)` 聚合即可出账，历史不因改 plan 重写。
-- 接入付费（Stripe 等）时的改动点：webhook 更新 `mcp_users.plan`；必要时在 `recordCall` 里加一行上报。不需要动协议层。
-- 免费额度支持运行时覆盖：Pages 环境变量 `MCP_FREE_MONTHLY_CALLS`，不用重新部署。
-
-## 部署（合并 main 之前的必做步骤）
-
-1. `wrangler d1 create entrycardguide-mcp`，把打印的 `database_id` 填进 `wrangler.toml`（替换占位符）。
-2. `wrangler d1 migrations apply entrycardguide-mcp --remote` 建表。
-3. 之后正常 `git push main`。`wrangler pages deploy` 会带上 wrangler.toml 里的 D1 绑定。
-
-绑定缺失时所有 `/api/*` 返回 503 `mcp_not_configured`，静态站点不受影响——所以带着占位符合并不会挂站，但 MCP 不可用。
-
-### 本地开发
+支持2025-06-18与2025-03-26，返回JSON响应，不提供服务器SSE。原2024-11-05 HTTP+SSE版本不在支持范围。传输约束依据[MCP规范](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports)。
 
 ```bash
-npm run build:prod                    # 先产出 public/
-wrangler d1 migrations apply entrycardguide-mcp --local
-wrangler pages dev                    # 读 wrangler.toml，本地 D1 + functions
-curl -X POST http://localhost:8788/api/mcp/register -H 'Content-Type: application/json' -d '{"email":"dev@test"}'
+curl https://entrycardguide.com/api/mcp \
+  -H 'Authorization: Bearer ecg_YOUR_AUTHORIZED_KEY' \
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json, text/event-stream' \
+  -H 'MCP-Protocol-Version: 2025-06-18' \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"get_jurisdiction","arguments":{"id":"TH"}}}'
 ```
 
-单测不需要 wrangler：`npm run test:mcp` 用 `node:sqlite` 内存库跑真实 SQL（Node 22 的 `--experimental-sqlite` 已写进 npm script；CI 锁 Node 22）。
+## 配额
 
-## 日常运维（D1 SQL）
+免费账户UTC自然月100次成功工具调用；pro10000，enterprise不限。多个授权共享账户额度。`initialize`、`ping`、`tools/list`不计数，参数或业务校验错误不计数。
 
-```sql
--- 查一个用户（支持场景只有 key 前缀）
-SELECT id, email, plan, revoked FROM mcp_users WHERE key_prefix = 'ecg_xxxx';
+工具先执行完整校验和纯快照读取，再以单条条件`INSERT ... SELECT`同时检查有效授权、账户计划与`COUNT < limit`，记账成功后才返回数据。并发不会越额。额度用尽HTTP429，授权失效401，未知计划或数据库异常503。`MCP_FREE_MONTHLY_CALLS`运行时覆盖须为非负整数字符串，错误配置拒绝服务，不静默放宽。
 
--- 吊销一个 key（立即生效，下次请求 401）
-UPDATE mcp_users SET revoked = 1 WHERE email = 'abuser@example.com';
+## 上线前配置
 
--- 升级到付费档
-UPDATE mcp_users SET plan = 'pro' WHERE email = 'customer@example.com';
+本次仅准备本地发布候选。`wrangler.toml`的数据库ID仍是占位符；没有创建生产D1、迁移生产库、设置生产secret或发送真实验证码。上线需要另行授权生产操作。
 
--- 本月用量总览
-SELECT u.email, s.period, COUNT(*) AS calls
-FROM mcp_usage s JOIN mcp_users u ON u.id = s.user_id
-WHERE s.period = strftime('%Y-%m', 'now')
-GROUP BY u.email ORDER BY calls DESC;
+1. 创建专用`entrycardguide-mcp` D1，填真实`database_id`。
+2. 应用`0001_mcp_init.sql`和`0002_mcp_accounts.sql`远程迁移；第二份会停用旧匿名key。
+3. 在Pages生产环境设置secret：`RESEND_API_KEY`、`MCP_EMAIL_FROM`（已验证发件域地址）、`MCP_AUTH_SECRET`（随机至少32字符）。不写入Git、文档或日志。
+4. `npm run check:release -- --deployment`只读回查D1表与Pages secret名称，缺配置会阻断发布；配置存在不代表真实邮件已经送达。
+5. 发布后用实际邮箱走注册→收码→登录→明确授权→初始化→工具调用→用量→撤销后401，并回读部署SHA与正式域名。
+
+CI固定构建`public-release`，构建前检查公开schema、三语生成物和MCP快照；测试账户、协议、额度及数据隔离。部署步骤只发布这个目录，并要求生产前置检查通过。不会自动创建D1、应用远程迁移或写secret。
+
+## 本地验收
+
+```bash
+npm run gen:mcp
+npm run test:mcp
+npm run test:mcp-auth
+npm run test:data-boundary
+npm run build:prod
+npm run check:seo
+npm run check:release
 ```
 
-远程执行：`wrangler d1 execute entrycardguide-mcp --remote --command "<SQL>"`。
+本机测试运行目录和D1持久化必须在已挂载外盘。示例：`/Volumes/ExternalPrivate/Runtime/entrycardguide/release-20261002`；依赖与npm缓存在`/Volumes/ExternalProjects/DevCaches/entrycardguide`。真实SQLite测试执行所有迁移和HTTP handler，邮件只用隔离测试transport；生产代码没有测试验证码或登录绕过。Cloudflare本地runtime迁移、未授权401及缺邮件配置503也必须实际回读。
 
-## 已知限制（v1）
+密钥、验证码和会话只出现在相应一次性响应或私密邮件中，不输出到服务日志。已有CC BY-SA许可继续有效，访问授权不撤回原公开数据许可。
 
-- **无邮箱验证。** 注册只查邮箱格式 + 唯一性。若出现注册灌水，在 Cloudflare 加一条 WAF 限速规则（针对 `/api/mcp/register`），比在应用层做限速更省事。
-- **注册无限流。** 同上，交给边缘。
-- **配额计数有竞态。** 先查后插，极端并发下可能略微超出免费额度。可接受，如需精确改为 D1 batch / 事务。
-- **key 无法自助找回。** 只存哈希；找回 = 运维核对注册邮箱后删行重发（老 key 因唯一约束需先删除）。
+## 生产初始化工作流
+
+用户已授权部署时，可运行`Provision MCP production`工作流。首次整合通过受限发布分支push触发；进入main后仅保留手动触发。它使用现有GitHub Cloudflare加密secret，只读确认Pages项目生产分支后创建或复用专用D1、按migrations应用两份迁移、创建缺失认证secret。若本项目RESEND_API_KEY与MCP_EMAIL_FROM已明确配置在GitHub secret，则同步到Pages生产secret；缺邮件配置时报告缺失，不绕过部署门禁。输出artifact仅含数据库ID、迁移名、secret名称及旧部署元数据，不输出值。

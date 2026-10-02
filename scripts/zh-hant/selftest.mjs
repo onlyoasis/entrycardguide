@@ -187,6 +187,12 @@ test("review-13: full chain leaves fenced href untouched", () => {
   assert.match(text, /\[\S+\]\(\/zh-hant\/thailand\/tdac\/\)/);
 });
 
+test("MCP account link uses Traditional UI without changing unrelated queries", () => {
+  const { text, problems } = remapInternalLinks("[account](/api/mcp/account?lang=zh) [other](/api/mcp/account?lang=en)", new Set());
+  assert.deepEqual(problems, []);
+  assert.equal(text, "[account](/api/mcp/account?lang=zh-hant) [other](/api/mcp/account?lang=en)");
+});
+
 test("review-13: query strings preserved on rewritten links", () => {
   const routes = new Set(["/decide/", "/thailand/tdac/"]);
   const { text, problems } = remapInternalLinks("[](/zh/decide/?utm=x&y=1) [](/thailand/tdac/?a=1)", routes);

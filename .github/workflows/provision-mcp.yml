@@ -1,0 +1,41 @@
+name: Provision MCP production
+
+on:
+  push:
+    branches: [codex/release-global-mcp]
+    paths:
+      - .github/workflows/provision-mcp.yml
+      - scripts/provision-mcp.mjs
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: provision-entrycardguide-mcp
+  cancel-in-progress: false
+
+jobs:
+  provision:
+    if: github.repository == 'onlyoasis/entrycardguide'
+    runs-on: ubuntu-latest
+    environment: production
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN || secrets.CF_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID || secrets.CF_ACCOUNT_ID }}
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      MCP_EMAIL_FROM: ${{ secrets.MCP_EMAIL_FROM }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Provision dedicated D1 and MCP secrets
+        run: npx --yes --package=wrangler@4.85.0 -- node scripts/provision-mcp.mjs
+      - name: Save resource metadata without credentials
+        uses: actions/upload-artifact@v4
+        with:
+          name: entrycardguide-mcp-provision
+          path: mcp-provision.json
+          if-no-files-found: error
+          retention-days: 1

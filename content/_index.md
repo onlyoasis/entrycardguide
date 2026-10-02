@@ -1,5 +1,5 @@
 ---
-title: "Independent entry card guides. Free. No data stored."
+title: "Independent entry card guides. Free guides. Form checks stay local."
 description: "Anti-scam guides to official arrival cards and e-visas for Thailand, Malaysia, Singapore, Indonesia, Mexico, Dominican Republic, Vietnam, Philippines, Cambodia, Japan, and Korea."
 ---
 

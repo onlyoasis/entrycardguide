@@ -38,7 +38,7 @@ Open a guide with a validator, then open DevTools and switch to the Network tab.
 
 The validator is implemented in [`assets/js/validator.ts`](https://github.com/onlyoasis/entrycardguide/blob/main/assets/js/validator.ts). The page embeds the country rules as JSON, the script parses them in your browser, and validation happens locally.
 
-There is no account system, no database, and no endpoint that receives draft form data. If a future change adds one, it should be visible in the source and in the network panel.
+The form validator has no endpoint that receives draft form data. The separate MCP account service stores your verified email, sessions, authorizations and call counts in D1. Registration and authorization do not submit your passport or form entries. See the [MCP guide](/mcp/) and `functions/_mcp/` for that separate flow.
 
 ## Path 4: Verify the whole site
 

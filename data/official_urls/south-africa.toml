@@ -1,0 +1,106 @@
+# 官方来源与双语页面元数据。
+
+[traveller_declaration]
+url = "https://tools.sars.gov.za/sarsonlinequery/traveller"
+name = "SARS Customs Online Traveller Declaration"
+agency = "South African Revenue Service"
+last_verified = "2026-09-05"
+notes = "主入口首屏提供 Full/Nil 与旅客资料，未提交或验证全部分支。"
+
+[service]
+url = "https://www.sars.gov.za/travellerdeclaration/"
+name = "Customs Online Traveller Declaration: service and border instructions"
+agency = "South African Revenue Service"
+last_verified = "2026-09-05"
+notes = "确认邮件可手机保存或打印；入境先 immigration 后 Customs，离境按 Customs 指示再 immigration。"
+
+[faq]
+url = "https://www.sars.gov.za/travellerdeclaration/faqs-for-the-required-online-traveller-declarations-from-1-july-2026/"
+name = "FAQs for required traveller declarations from 1 July 2026"
+agency = "South African Revenue Service"
+last_verified = "2026-09-05"
+notes = "适用人群、纯过境、出发前24小时内、儿童、更改、有限纸表与货币规则。"
+
+[rules]
+url = "https://www.sars.gov.za/legal-lsec-ce-ra-2026-11-r7622-gg-54900-ra-under-ss-15-and-120-electronic-south-african-traveller-management-system-dar275-26-june-2026/"
+name = "R.7622 / GG54900: electronic traveller declaration rules"
+agency = "South African Revenue Service"
+last_verified = "2026-09-05"
+notes = "2026-07-01生效。15.02 纯过境；15.04(a)(iv) 入境南非住所、离境目的地国家住所；15.04 联系条件；15.06 提交及更改。"
+
+[guide]
+url = "https://www.sars.gov.za/wp-content/uploads/Ops/Guides/SC-PA-01-12-SATMS-Through-SARS-Website-External-Guide.pdf"
+name = "SC-PA-01-12: SATMS Through SARS Website"
+agency = "South African Revenue Service"
+last_verified = "2026-09-05"
+notes = "2026-07-01生效的40页指南，第6–16页用于准备资料。地址与条件资料以规则为准，截图不作为格式校验证据。"
+
+[fee_notice]
+url = "https://www.sars.gov.za/media-release/nearly-39-000-foreign-registered-vehicles-already-registered-as-sars-launches-the-process-from-1-june-2026/"
+name = "SARS notice confirming no online declaration fee"
+agency = "South African Revenue Service"
+last_verified = "2026-09-05"
+notes = "2026-06-01公告明确在线申报免费；仅取费用事实，不覆盖7月1日新规日期。"
+
+[processing_policy]
+url = "https://www.sars.gov.za/wp-content/uploads/Ops/Policies/SC-PA-01-11-Traveller-Processing-External-Policy.pdf"
+name = "SC-PA-01-11: Traveller Processing"
+agency = "South African Revenue Service"
+last_verified = "2026-09-05"
+notes = "2026-07-01生效；无货物也须申报，关税、VAT及相关担保另计。"
+
+[meta]
+fields_examples_only = true
+fee_en = "Free"
+fee_zh = "免费"
+fee_zh_hant = "免費"
+form_type = "arrival_card"
+sections = 4
+time_needed_en = "varies"
+time_needed_zh = "因人而异"
+time_needed_zh_hant = "因人而異"
+flag = "🇿🇦"
+name_en = "South Africa"
+name_zh = "南非"
+name_zh_hant = "南非"
+form_code = "Traveller Declaration"
+guide_slug = "traveller-declaration"
+form_key = "traveller_declaration"
+form_name_en = "SARS Traveller Declaration"
+form_name_zh = "SARS 旅客海关申报"
+form_name_zh_hant = "SARS 旅客海關申報"
+since_en = "required from 1 July 2026"
+since_zh = "2026 年 7 月 1 日起按新规申报"
+since_zh_hant = "2026 年 7 月 1 日起按新規申報"
+suffix = ".gov.za"
+field_count = 12
+fields_title_en = "South Africa customs declaration: details to prepare"
+fields_title_zh = "南非旅客海关申报：需要准备哪些资料"
+fields_title_zh_hant = "南非旅客海關申報：需要準備哪些資料"
+fields_intro_en = "Twelve preparation items in four guide groups, not the total fields or steps of the official form. Questions depend on your journey and goods. Examples and red comparison cards are document checks, not promises that an entry will pass or be rejected. This page provides no local pre-check."
+fields_intro_zh = "本指南选列12项准备资料，分为4组，不是官方全表的字段数或步骤数。问题随行程和携带物品变化。示例和红色对照卡用于核对资料，不代表某种填法一定通过或被退回。本页不提供本地预检。"
+fields_intro_zh_hant = "本指南選列12項準備資料，分為4組，不是官方全表的欄位數或步驟數。問題隨行程和攜帶物品變化。示例和紅色對照卡用於核對資料，不代表某種填法一定通過或被退回。本頁不提供本地預檢。"
+fields_walkthrough_en = "Preparing and submitting the SARS customs declaration"
+fields_walkthrough_zh = "准备资料、提交 SARS 海关申报与口岸办理"
+fields_walkthrough_zh_hant = "準備資料、提交 SARS 海關申報與口岸辦理"
+output_en = "Keep the SARS confirmation for Customs, not as an immigration permit. On arrival, clear immigration and then follow the confirmation to Customs. On departure, complete the instructed Customs matters before immigration."
+output_zh = "SARS 确认用于 Customs（海关），不是移民入境许可。入境先办理 immigration，再按确认指示前往海关；离境先完成指示要求的海关事项，再办理 immigration。"
+output_zh_hant = "SARS 確認用於 Customs（海關），不是移民入境許可。入境先辦理 immigration，再按確認指示前往海關；離境先完成指示要求的海關事項，再辦理 immigration。"
+email_title_en = "Read the confirmation and Customs instructions"
+email_title_zh = "查看确认邮件与海关指示"
+email_title_zh_hant = "查看確認郵件與海關指示"
+email_body_en = "SARS says it emails confirmation and instructions after submission. Read what applies at your port; no fixed delivery time is promised here."
+email_body_zh = "SARS 说明提交后会发送确认邮件和指示。查看本次口岸要求；本指南不承诺固定收信时间。"
+email_body_zh_hant = "SARS 說明提交後會發送確認郵件和指示。查看本次口岸要求；本指南不承諾固定收信時間。"
+printout_title_en = "Save the confirmation on your phone or print it"
+printout_title_zh = "手机保存确认，或打印携带"
+printout_title_zh_hant = "手機保存確認，或列印攜帶"
+printout_body_en = "SARS allows a copy on your mobile device or a printout. Keep the confirmation available when Customs asks for it."
+printout_body_zh = "SARS 允许把确认存在手机里或打印。海关要求查看时应能出示。"
+printout_body_zh_hant = "SARS 允許把確認存在手機裡或列印。海關要求查看時應能出示。"
+verification_title_en = "Keep details current before Customs"
+verification_title_zh = "通过海关前核对变更"
+verification_title_zh_hant = "通過海關前核對變更"
+verification_body_en = "If submitted details change, update the declaration before proceeding through the Customs processing channel. Follow the official system or ask SARS for help."
+verification_body_zh = "已提交资料有变化时，必须在进入海关处理通道前更新。按官方系统指示操作，或向 SARS 求助。"
+verification_body_zh_hant = "已提交資料有變化時，必須在進入海關處理通道前更新。按官方系統指示操作，或向 SARS 求助。"

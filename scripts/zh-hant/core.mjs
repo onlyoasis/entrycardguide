@@ -336,6 +336,16 @@ export function remapInternalLinks(outBody, routes, convertFragments = true) {
       // else: not a content route (static asset, /og/, /llms.txt) — untouched
     }
 
+    // Account routes are dynamic, so they do not use relLangURL. Keep the
+    // generated Traditional guide's sign-in link in the same UI language.
+    if (target === "/api/mcp/account" && query) {
+      const accountQuery = new URLSearchParams(query);
+      if (accountQuery.get("lang") === "zh") {
+        accountQuery.set("lang", "zh-hant");
+        query = "?" + accountQuery.toString();
+      }
+    }
+
     // Validate the content part resolves to a real site route — but only when
     // we actually rewrote something; untouched paths may be static assets.
     if (rewritten) {

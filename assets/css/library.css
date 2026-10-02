@@ -1,0 +1,23 @@
+/* Library tables remain usable without JavaScript. All colors use the existing palette. */
+@layer components {
+  .library-scroll { @apply overflow-x-auto border-y border-rule my-md; }
+  .library-table { @apply w-full text-small; min-width: 44rem; border-collapse: collapse; }
+  .library-table th, .library-table td { @apply text-left px-3 py-3 border-b border-rule; }
+  .library-table th { @apply font-semibold; }
+  .library-table [hidden] { display: none; }
+  .library-controls { @apply flex flex-wrap gap-3 items-end my-md; }
+  .library-controls input, .library-controls select, .library-controls button { @apply border border-rule bg-paper rounded-sm px-3 py-2 text-small; }
+  .library-controls button:disabled { @apply text-muted; }
+  .library-status { @apply text-xs font-mono; }
+  .library-status-verified { @apply text-verified; }
+  .library-status-partial { @apply text-ink; }
+  .library-status-blocked { @apply text-muted; }
+  .library-note { @apply border-l-4 border-mark bg-paper p-md text-small my-md; }
+  .library-procedure { @apply border border-rule rounded-md p-md my-md; }
+  .library-facts { @apply grid gap-3 text-small my-md; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); }
+  .library-facts > div { @apply border-t border-rule pt-2; min-width: 0; }
+  .library-facts dt { @apply font-mono text-xs text-muted; }
+  .library-facts dd { @apply m-0 text-ink; overflow-wrap: anywhere; }
+  .library-prose { @apply text-small my-3; white-space: pre-line; overflow-wrap: anywhere; }
+  .library-source { @apply border-l-4 border-rule p-md my-md text-small; overflow-wrap: anywhere; }
+}

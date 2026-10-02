@@ -41,17 +41,28 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Check private data boundary
+        run: npm run check:data-boundary
+
       - name: Build
         run: npm run build:prod
 
       - name: Check SEO files
         run: npm run check:seo
 
+      - name: Check global release structure
+        run: npm run check:release
+
       - name: Check MCP data snapshot
         run: npm run check:mcp
 
       - name: MCP function tests
-        run: npm run test:mcp
+        run: npm run test:mcp && npm run test:mcp-auth
+
+      - name: Public library boundary tests
+        env:
+          TRAVEL_LIBRARY_TEST_ROOT: ${{ runner.temp }}/entrycardguide-boundary-tests
+        run: npm run test:data-boundary
 
   deploy:
     name: Deploy to Cloudflare Pages
@@ -84,8 +95,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Check private data boundary
+        run: npm run check:data-boundary
+
       - name: Build
         run: npm run build:prod
+
+      - name: Check MCP deployment configuration
+        run: npx --yes --package=wrangler@4.85.0 -- npm run check:release -- --deployment
 
       - name: Check Cloudflare credentials
         run: |
@@ -101,9 +118,21 @@ jobs:
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
+          wranglerVersion: "4.85.0"
           apiToken: ${{ env.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ env.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy public --project-name=entrycardguide --branch=${{ github.ref_name }} --commit-dirty=true
+          command: pages deploy public-release --project-name=entrycardguide --branch=${{ github.ref_name }} --commit-dirty=true
+
+      - name: Verify production revision and live MCP boundary
+        run: node scripts/check-live-release.mjs
+
+      - name: Save production readback
+        uses: actions/upload-artifact@v4
+        with:
+          name: entrycardguide-production-readback
+          path: release-live.json
+          if-no-files-found: error
+          retention-days: 3
 
       # Runs after the deploy: IndexNow fetches the key file and the submitted
       # URLs, so they have to be live first. A search engine being down must not

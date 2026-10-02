@@ -38,7 +38,7 @@ lastmod: 2026-08-10
 
 校驗器原始碼在 [`assets/js/validator.ts`](https://github.com/onlyoasis/entrycardguide/blob/main/assets/js/validator.ts)。頁面把國家規則作為 JSON 嵌入，腳本在你的瀏覽器裡解析，校驗也在本地完成。
 
-本站沒有賬號系統，沒有資料庫，也沒有接收草稿表單資料的接口。如果未來有人改出這樣的接口，它應該同時出現在原始碼和 Network 面板裡。
+表單校驗器沒有接收草稿欄位的接口。獨立的 MCP 賬戶服務會在 D1 保存已驗證信箱、會話、授權和調用次數；註冊及授權不會提交護照或表單輸入。可在 [MCP 指南](/zh-hant/mcp/) 與 `functions/_mcp/` 核對這條獨立流程。
 
 ## 路徑 4：核實整個網站
 

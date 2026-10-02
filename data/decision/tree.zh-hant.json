@@ -256,6 +256,21 @@
      "value": "jordan",
      "label": "約旦",
      "next": "jordan_restricted"
+    },
+    {
+     "value": "china",
+     "label": "中國",
+     "next": "china_exempt"
+    },
+    {
+     "value": "south-africa",
+     "label": "南非",
+     "next": "south_africa_transit"
+    },
+    {
+     "value": "nigeria",
+     "label": "奈及利亞",
+     "next": "nigeria_transit"
     }
    ]
   },
@@ -2855,6 +2870,223 @@
    "summary": "受限國籍需要事先核准，請在出發前向約旦使領館申請。",
    "forms": [],
    "note": "內政部電子服務 eservices.moi.gov.jo/MOI_EVISA 是供在王國境外提交申請的帳號登入流程，含 2 第納爾服務費與每位被邀請人 1000 第納爾保證金。任何向受限國籍販售即時線上簽證的網站都不是政府管道。"
+  },
+  "china_exempt": {
+   "type": "question",
+   "label": "中國入境卡列出八類免於線上填報的人員：外國人永久居留身分證持有人；港澳居民來往內地通行證（非中國籍）持有人；不離開口岸限定區域的24小時直接過境人員；免簽或團體簽證旅遊團成員；機組、船員、司機等交通運輸工具員工；同船返回的郵輪旅客；集中查驗證件的禮遇人員；經邊檢快捷通道入境者。你是否符合其中一類？",
+   "options": [
+    {
+     "value": "yes",
+     "label": "是，符合其中一類",
+     "next": "china_exempt_result"
+    },
+    {
+     "value": "no",
+     "label": "否，均不符合",
+     "next": "china_result"
+    }
+   ]
+  },
+  "china_exempt_result": {
+   "type": "result",
+   "country": "china",
+   "summary": "你無需填報中國線上入境卡。",
+   "forms": [],
+   "note": "官方填報須知列出上述八類豁免。持邊民證件的七個鄰國邊境地區居民，使用另一個「邊境地區居民入境申報」通道。"
+  },
+  "china_result": {
+   "type": "result",
+   "country": "china",
+   "summary": "你可以免費填報中國線上入境卡，系統自2025年11月20日開放。",
+   "forms": [
+    {
+     "name": "入境卡填報",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://s.nia.gov.cn/ArrivalCardFillingPC/",
+     "guide": "/zh-hant/china/arrival-card/",
+     "agency": "國家移民管理局"
+    }
+   ],
+   "note": "國家移民管理局公告確認填報免費。已核實公告未規定提前填報時限，也說明可在口岸填寫。本指南適用一般外籍人士入境卡流程；以官方表單的即時問題及校驗為準。過境停留時限不是填卡截止時間。"
+  },
+  "south_africa_transit": {
+   "type": "question",
+   "label": "你是否僅經南非空路或海路轉機／轉船，且不離開指定過境區域或抵達時所乘飛機、船舶？",
+   "options": [
+    {
+     "value": "yes",
+     "label": "是，僅屬上述有限過境",
+     "next": "south_africa_transit_result"
+    },
+    {
+     "value": "no",
+     "label": "否，我會入境或離境南非",
+     "next": "south_africa_direction"
+    }
+   ]
+  },
+  "south_africa_transit_result": {
+   "type": "result",
+   "country": "south-africa",
+   "summary": "上述有限空路或海路過境不在SARS旅客申報適用範圍內。",
+   "forms": [],
+   "note": "此例外僅針對SARS海關申報，不決定簽證或移民要求。離開過境區域、經陸路或鐵路通關均不屬於此例外。"
+  },
+  "south_africa_direction": {
+   "type": "question",
+   "label": "本次行程是入境還是離境南非？",
+   "options": [
+    {
+     "value": "arrival",
+     "label": "入境南非",
+     "next": "south_africa_arrival"
+    },
+    {
+     "value": "departure",
+     "label": "離境南非",
+     "next": "south_africa_departure"
+    }
+   ]
+  },
+  "south_africa_arrival": {
+   "type": "result",
+   "country": "south-africa",
+   "summary": "為入境填寫免費SARS旅客海關申報。",
+   "forms": [
+    {
+     "name": "SARS旅客申報",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://tools.sars.gov.za/sarsonlinequery/traveller",
+     "guide": "/zh-hant/south-africa/traveller-declaration/",
+     "agency": "南非稅務局",
+     "deadline": "出發前24小時內；有中途停留時，以直接前往南非的最後一段為準。"
+    }
+   ],
+   "note": "此要求涵蓋南非公民、居民、外國訪客及兒童。沒有物品需要申報時，依情況選擇Nil申報，不能跳過表單。保存確認，入境辦理移民檢查後依指示前往海關。提交免費，物品關稅及增值稅另計。"
+  },
+  "south_africa_departure": {
+   "type": "result",
+   "country": "south-africa",
+   "summary": "為離境填寫免費SARS旅客海關申報。",
+   "forms": [
+    {
+     "name": "SARS旅客申報",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://tools.sars.gov.za/sarsonlinequery/traveller",
+     "guide": "/zh-hant/south-africa/traveller-declaration/",
+     "agency": "南非稅務局",
+     "deadline": "離開南非前24小時內。"
+    }
+   ],
+   "note": "兒童也必須有申報。依官方物品及貨幣問題選擇Full或Nil。離境時的住宿地址應為目的地國家的地址。依確認指示先辦理海關事項，再辦理移民檢查；關稅或增值稅與免費申報分開。"
+  },
+  "nigeria_transit": {
+   "type": "question",
+   "label": "你會入境奈及利亞或停留後離境，還是純粹過境？",
+   "options": [
+    {
+     "value": "stay",
+     "label": "入境奈及利亞或停留後離境",
+     "next": "nigeria_status"
+    },
+    {
+     "value": "transit",
+     "label": "僅過境，不入境訪問或停留",
+     "next": "nigeria_transit_result"
+    }
+   ]
+  },
+  "nigeria_transit_result": {
+   "type": "result",
+   "country": "nigeria",
+   "summary": "NIS入境及離境卡入口不涵蓋純過境行程。",
+   "forms": [],
+   "note": "入口FAQ排除過境用途。持有轉機機票不等於純過境；需要入境時請向NIS核對要求。此結果不代表過境簽證豁免。"
+  },
+  "nigeria_status": {
+   "type": "question",
+   "label": "你是否以外國訪客身分旅行，或需要NIS說明你的護照／身分適用要求？",
+   "options": [
+    {
+     "value": "foreign_visitor",
+     "label": "入境或離境的外國訪客",
+     "next": "nigeria_direction"
+    },
+    {
+     "value": "confirm",
+     "label": "奈及利亞護照、雙重國籍、特殊身分或不確定",
+     "next": "nigeria_confirm_status"
+    }
+   ]
+  },
+  "nigeria_confirm_status": {
+   "type": "result",
+   "country": "nigeria",
+   "summary": "申請前向NIS確認卡片要求。本指南不能確認你的身分是否豁免。",
+   "forms": [
+    {
+     "name": "NIS資格說明：先確認要求",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://lecard.immigration.gov.ng/faq",
+     "guide": "/zh-hant/nigeria/landing-exit-card/",
+     "agency": "奈及利亞移民局"
+    }
+   ],
+   "note": "專用入口FAQ談外國旅客，NIS主站介紹使用較廣的措辭。上方連結是資訊頁，不代表判定你必須提交卡片。不得假定簽證豁免、外交或居留身分也免除此獨立卡片。"
+  },
+  "nigeria_direction": {
+   "type": "question",
+   "label": "你要準備哪一種奈及利亞通關行程？",
+   "options": [
+    {
+     "value": "arrival",
+     "label": "抵達奈及利亞",
+     "next": "nigeria_arrival"
+    },
+    {
+     "value": "departure",
+     "label": "離開奈及利亞",
+     "next": "nigeria_departure"
+    }
+   ]
+  },
+  "nigeria_arrival": {
+   "type": "result",
+   "country": "nigeria",
+   "summary": "為抵達準備免費NIS入境卡。",
+   "forms": [
+    {
+     "name": "入境卡",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://lecard.immigration.gov.ng/",
+     "guide": "/zh-hant/nigeria/landing-exit-card/",
+     "agency": "奈及利亞移民局",
+     "deadline": "登機及移民檢查前完成；本指南未核實具體提前小時數。"
+    }
+   ],
+   "note": "使用官方入口選擇抵達申請，目前會導向登入。每位旅客單獨提交。依你的簽證或護照選擇適用通道，保存成功郵件並下載、列印卡片。卡片不能取代必要簽證。資料錯誤時FAQ指示重新提交正確資料。"
+  },
+  "nigeria_departure": {
+   "type": "result",
+   "country": "nigeria",
+   "summary": "為離境準備免費NIS離境卡或離境確認。",
+   "forms": [
+    {
+     "name": "離境卡／離境確認",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://lecard.immigration.gov.ng/",
+     "guide": "/zh-hant/nigeria/landing-exit-card/",
+     "agency": "奈及利亞移民局",
+     "deadline": "登機及離境移民檢查前完成；本指南未核實具體提前小時數。"
+    }
+   ],
+   "note": "在官方入口選擇離境申請；先前入境卡不能完成此獨立離境步驟。每位旅客單獨提交，再保存郵件並下載、列印卡片或確認。缺漏或錯誤時依入口說明與NIS支援辦理，不假定舊紀錄會自動更正。"
   }
  }
 }

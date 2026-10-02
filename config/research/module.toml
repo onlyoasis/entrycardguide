@@ -1,0 +1,4 @@
+# 仅显式 --environment research 可载入内部研究主库。
+[[mounts]]
+  source = "data"
+  target = "data"

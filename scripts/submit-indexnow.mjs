@@ -10,10 +10,10 @@
 import { readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 
-const publicDir = "public";
+const publicDir = "public-release";
 const host = "entrycardguide.com";
 const endpoint = "https://api.indexnow.org/indexnow";
-const sitemaps = ["public/en/sitemap.xml", "public/zh/sitemap.xml"];
+const sitemaps = ["en/sitemap.xml", "zh/sitemap.xml", "zh-hant/sitemap.xml"].map(file => path.join(publicDir, file));
 const keyFilePattern = /^[0-9a-f]{32}\.txt$/;
 
 const submitEverything = process.argv.includes("--all");

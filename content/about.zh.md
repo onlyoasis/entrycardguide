@@ -20,9 +20,9 @@ layout: about
 ## 我们是什么
 
 - 一份独立的数字入境卡指南。
-- 由真正填过每一份表的人撰写。
+- 按官方来源记录整理，保留核实日期和仍待核实的范围。
 - 在官方站点变更时同步更新。
-- 以静态站点形式托管。无账号、无登录、无数据库。
+- 指南是公开静态页面。MCP 另需验证邮箱、登录并授权只读访问；D1 保存其账户和调用记录。
 - 开源，并且写明了许可证。代码是 [MIT](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE)，字段规则、假站名单和这些页面是 [CC BY-SA 4.0](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE-CC-BY-SA-4.0)：拿去用可以，但必须署名，并且保持同样开放。
 
 ## 我们不是什么

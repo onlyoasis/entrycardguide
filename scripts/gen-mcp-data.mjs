@@ -22,6 +22,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import TOML from "@iarna/toml";
+import { validatePublicTravelLibrary } from "./travel-library-public.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const OUT = path.join(ROOT, "functions/_mcp/snapshot.js");
@@ -95,6 +96,7 @@ function buildCountry(slug) {
 
   return {
     slug,
+    validationMode: meta.fields_examples_only || meta.fields_guidance_only ? "examples_only" : "field_rules",
     names: {
       en: cleanMeta.name_en,
       zh: cleanMeta.name_zh,
@@ -124,7 +126,12 @@ function buildCountry(slug) {
 
 const countries = rosterOrder().map(buildCountry);
 
+const library = readJson("data/travel_library_public.json");
+const libraryErrors = validatePublicTravelLibrary(library);
+if (libraryErrors.length) throw new Error(libraryErrors.join("\n"));
+
 const snapshot = {
+  library,
   site: {
     origin: "https://entrycardguide.com",
     mcpEndpoint: "https://entrycardguide.com/api/mcp",

@@ -38,7 +38,7 @@ layout: trust
 
 校验器源码在 [`assets/js/validator.ts`](https://github.com/onlyoasis/entrycardguide/blob/main/assets/js/validator.ts)。页面把国家规则作为 JSON 嵌入，脚本在你的浏览器里解析，校验也在本地完成。
 
-本站没有账号系统，没有数据库，也没有接收草稿表单数据的接口。如果未来有人改出这样的接口，它应该同时出现在源码和 Network 面板里。
+表单校验器没有接收草稿字段的接口。独立的 MCP 账户服务会在 D1 保存已验证邮箱、会话、授权和调用次数；注册及授权不会提交护照或表单输入。可在 [MCP 指南](/zh/mcp/) 与 `functions/_mcp/` 核对这条独立流程。
 
 ## 路径 4：核实整个站点
 

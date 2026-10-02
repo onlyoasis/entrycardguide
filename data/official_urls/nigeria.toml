@@ -1,0 +1,106 @@
+# 官方来源与双语页面元数据。
+
+[landing_exit_card]
+url = "https://lecard.immigration.gov.ng/"
+name = "Nigeria Landing and Exit Card Portal"
+agency = "Nigeria Immigration Service"
+last_verified = "2026-09-05"
+notes = "官方主入口分别提供入境和出境业务，当前申请链接到登录页。公开说明列证件、姓名、生日、国籍、联系方式并要求下载打印。未登录或提交。"
+
+[faq]
+url = "https://lecard.immigration.gov.ng/faq"
+name = "Landing and Exit Card FAQ"
+agency = "Nigeria Immigration Service"
+last_verified = "2026-09-05"
+notes = "面向外国旅客，卡片免费，纯过境不适用，逐人提交；已提交不能直接改，错误重提；成功后邮件与可下载卡。"
+
+[nis_overview]
+url = "https://immigration.gov.ng/lecard/"
+name = "NIS introduction to Landing and Exit Cards"
+agency = "Nigeria Immigration Service"
+last_verified = "2026-09-05"
+notes = "主站all passengers口径较专用FAQ更宽；公民、双国籍及特殊身份向NIS确认，不推断豁免。"
+
+[launch]
+url = "https://immigration.gov.ng/"
+name = "Nigeria Immigration Service: Landing and Exit Cards"
+agency = "Nigeria Immigration Service"
+last_verified = "2026-09-05"
+notes = "Landing and Exit Cards小节说明2025-05-01启用；不挪用相邻其他业务的小时数。"
+
+[government_notice]
+url = "https://fmino.gov.ng/fg-strengthens-border-security-travel-experience-through-inter-ministerial-collaboration/"
+name = "Federal notice on digital Landing and Exit Cards"
+agency = "Federal Ministry of Information and National Orientation"
+last_verified = "2026-09-05"
+notes = "2025-04-10公告明确数字卡对外国旅客免费，并要求登机前完成。"
+
+[get_card]
+url = "https://lecard.immigration.gov.ng/get-last-card"
+name = "Get your last Landing or Exit Card"
+agency = "Nigeria Immigration Service"
+last_verified = "2026-09-05"
+notes = "找卡页要求护照号、签发国与生日；不把签发国移作已核验申报主字段。未提交查询。"
+
+[register]
+url = "https://lecard.immigration.gov.ng/register-page"
+name = "Landing and Exit Card account registration"
+agency = "Nigeria Immigration Service"
+last_verified = "2026-09-05"
+notes = "公开账户页要求姓名与护照一致，并列邮箱电话。未注册，不把账户控件总数当主表总数，不提供密码字段。"
+
+[meta]
+fields_examples_only = true
+fee_en = "Free"
+fee_zh = "免费"
+fee_zh_hant = "免費"
+form_type = "arrival_card"
+sections = 4
+time_needed_en = "varies"
+time_needed_zh = "因人而异"
+time_needed_zh_hant = "因人而異"
+flag = "🇳🇬"
+name_en = "Nigeria"
+name_zh = "尼日利亚"
+name_zh_hant = "尼日利亞"
+form_code = "Landing & Exit Card"
+guide_slug = "landing-exit-card"
+form_key = "landing_exit_card"
+form_name_en = "Landing and Exit Card"
+form_name_zh = "Landing & Exit Card 入境与出境卡"
+form_name_zh_hant = "Landing & Exit Card 入境與出境卡"
+since_en = "since 1 May 2025"
+since_zh = "2025 年 5 月 1 日起"
+since_zh_hant = "2025 年 5 月 1 日起"
+suffix = ".gov.ng"
+field_count = 8
+fields_title_en = "Nigeria Landing & Exit Card: details to prepare"
+fields_title_zh = "尼日利亚入境与出境卡：需要准备哪些资料"
+fields_title_zh_hant = "尼日利亞入境與出境卡：需要準備哪些資料"
+fields_intro_en = "Eight preparation items in four guide groups, drawn from official public guidance and the account entry. This is not the full application: fields after login have not been checked individually. Follow the questions in your application. Examples and red comparison cards help check documents; they do not guarantee acceptance or rejection. No local pre-check is provided."
+fields_intro_zh = "本指南按官方公开说明和账户入口选列8项准备资料，分为4组，不是完整申请表。登录后的字段尚未逐项核验，请以实际申请问题为准。示例和红色对照卡帮助核对证件，不保证某种填法一定通过或被退回。本页不提供本地预检。"
+fields_intro_zh_hant = "本指南按官方公開說明和賬戶入口選列8項準備資料，分為4組，不是完整申請表。登入後的欄位尚未逐項核驗，請以實際申請問題為準。示例和紅色對照卡幫助核對證件，不保證某種填法一定通過或被退回。本頁不提供本地預檢。"
+fields_walkthrough_en = "Choose the journey, prepare documents and save the card"
+fields_walkthrough_zh = "选择行程方向、准备证件与保存卡片"
+fields_walkthrough_zh_hant = "選擇行程方向、準備證件與保存卡片"
+output_en = "Download and print the Landing Card or Exit confirmation for the relevant immigration checkpoint. Keep the confirmation email too. An arrival card does not automatically cover the departure journey or replace a required visa."
+output_zh = "下载并打印本次对应的入境卡或出境确认，在相关移民检查点出示，同时保留确认邮件。入境卡不自动覆盖离境行程，也不替代所需签证。"
+output_zh_hant = "下載並列印本次對應的入境卡或出境確認，在相關移民檢查點出示，同時保留確認郵件。入境卡不自動覆蓋離境行程，也不替代所需簽證。"
+email_title_en = "Check for successful processing and the card"
+email_title_zh = "确认处理成功并取得卡片"
+email_title_zh_hant = "確認處理成功並取得卡片"
+email_body_en = "NIS says successful processing produces an email confirmation and a downloadable card. Its FAQ describes instant processing when details are valid and requirements are met; individual problems can still need support."
+email_body_zh = "NIS 说明处理成功后有确认邮件和可下载卡。FAQ 称资料有效且满足要求时即时处理；个别问题仍可能需要支持。"
+email_body_zh_hant = "NIS 說明處理成功後有確認郵件和可下載卡。FAQ 稱資料有效且滿足要求時即時處理；個別問題仍可能需要支持。"
+printout_title_en = "Download and print the card"
+printout_title_zh = "下载并打印卡片"
+printout_title_zh_hant = "下載並列印卡片"
+printout_body_en = "The official portal instructs travellers to print the Landing Card or Exit confirmation for checkpoints. Keep the email so you can reprint it if needed."
+printout_body_zh = "官方门户要求打印入境卡或出境确认，以便检查点核验。保留邮件，遗失时可重新打印。"
+printout_body_zh_hant = "官方門戶要求列印入境卡或出境確認，以便檢查點核驗。保留郵件，遺失時可重新列印。"
+verification_title_en = "Recover a missing card through the official portal"
+verification_title_zh = "通过官方入口找回遗失卡片"
+verification_title_zh_hant = "通過官方入口找回遺失卡片"
+verification_body_en = "Use the emailed copy or Get Card. The retrieval page asks for passport number, country of issuance and date of birth. Recover and print the card; knowing only the passport number is not a substitute."
+verification_body_zh = "从邮件或 Get Card 入口找回。找卡页要求护照号、签发国与生日。恢复后打印卡片，不能只记护照号就代替凭证。"
+verification_body_zh_hant = "從郵件或 Get Card 入口找回。找卡頁要求護照號、簽發國與生日。恢復後列印卡片，不能只記護照號就代替憑證。"

@@ -91,7 +91,7 @@
     <div>
       <div class="text-meta font-mono uppercase text-muted mb-2">{{ i18n "htf_section_fields" }}</div>
       <h2 class="font-serif font-medium m-0" style="font-size: 32px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144;">
-{{- if $meta.fields_guidance_only -}}
+{{- if (or $meta.fields_guidance_only $meta.fields_examples_only) -}}
 {{ i18n "field_guidance_heading" }}
 {{- else -}}
 {{ printf (i18n "htf_fields_count") $fieldCount $sections $timeNeeded | safeHTML }}
@@ -103,7 +103,7 @@
 {{ i18n "htf_all_sections" }}
       </span>
       <span class="inline-flex items-center px-2 py-1 border border-ink rounded-sm font-mono uppercase text-ink" style="font-size: 11px; letter-spacing: 0.08em;">
-{{ if $meta.fields_guidance_only }}{{ $shown }} {{ i18n "field_guidance_count" }}{{ else }}{{ printf (i18n "htf_showing") $shown $fieldCount | safeHTML }}{{ end }}
+{{ if (or $meta.fields_guidance_only $meta.fields_examples_only) }}{{ $shown }} {{ i18n "field_guidance_count" }}{{ else }}{{ printf (i18n "htf_showing") $shown $fieldCount | safeHTML }}{{ end }}
       </span>
     </div>
   </div>
@@ -140,7 +140,7 @@
         </h3>
         <p class="m-0" style="font-size: 16px; line-height: 1.6;">{{ $copy }}</p>
 
-        {{- if not $meta.fields_guidance_only }}
+        {{- if not (or $meta.fields_guidance_only $meta.fields_examples_only) }}
         <div class="mt-5 flex flex-wrap gap-1.5">
           {{- with $rule.pattern }}
           <span class="inline-flex items-center px-2 py-1 border border-rule rounded-sm font-mono text-muted" style="font-size: 11px; letter-spacing: 0.04em;">
@@ -158,11 +158,11 @@
 
       <aside class="field-examples grid gap-3">
         <div class="rounded-sm px-4 py-3" style="border:1px solid rgba(15,115,86,0.30); border-left:3px solid #0F7356; background:rgba(15,115,86,0.04);">
-          <div class="text-meta font-mono uppercase text-verified mb-1.5">{{ if $meta.fields_guidance_only }}{{ i18n "field_guidance_example" }}{{ else }}{{ i18n "htf_looks_good" }}{{ end }}</div>
+          <div class="text-meta font-mono uppercase text-verified mb-1.5">{{ if (or $meta.fields_guidance_only $meta.fields_examples_only) }}{{ i18n "field_guidance_example" }}{{ else }}{{ i18n "htf_looks_good" }}{{ end }}</div>
           <div class="font-mono text-ink" style="font-size: 15px;">{{ $f.example }}</div>
         </div>
         <div class="rounded-sm px-4 py-3" style="border:1px solid rgba(179,58,30,0.30); border-left:3px solid #B33A1E; background:rgba(179,58,30,0.04);">
-          <div class="text-meta font-mono uppercase text-scam mb-1.5">{{ if $meta.fields_guidance_only }}{{ i18n "field_guidance_check" }}{{ else }}{{ i18n "htf_will_reject" }}{{ end }}</div>
+          <div class="text-meta font-mono uppercase text-scam mb-1.5">{{ if (or $meta.fields_guidance_only $meta.fields_examples_only) }}{{ i18n "field_guidance_check" }}{{ else }}{{ i18n "htf_will_reject" }}{{ end }}</div>
           <div class="font-mono text-ink" style="font-size: 15px; text-decoration: line-through; text-decoration-color: #B33A1E;">{{ $f.mistake }}</div>
           <p class="text-xs text-muted m-0 mt-1.5">{{ $mistakeWhy }}</p>
         </div>

@@ -1,0 +1,49 @@
+{{ define "main" }}
+{{ $library := partial "library-data.html" . }}
+{{ $labels := index hugo.Data.library_ui .Site.Language.Lang }}
+{{ $suffix := cond (eq .Site.Language.Lang "en") "en" (cond (eq .Site.Language.Lang "zh-hant") "zh_hant" "zh") }}
+{{ $record := index $library.byId .Params.iso }}
+{{ $jurisdiction := false }}
+{{ range $library.jurisdictions }}{{ if eq .id $.Params.iso }}{{ $jurisdiction = . }}{{ end }}{{ end }}
+{{ if or (not $record) (not $jurisdiction) }}{{ errorf "Missing public library record %s" .Params.iso }}{{ end }}
+<nav aria-label="{{ i18n "aria_breadcrumb" }}" class="py-md font-mono text-xs text-muted"><a href="{{ "/" | relLangURL }}">{{ $labels.home }}</a> · <a href="{{ "/library/" | relLangURL }}">{{ $labels.library }}</a> · {{ index $jurisdiction (printf "name_%s" $suffix) }}</nav>
+<header class="py-lg" data-library-mode="public">
+  <p class="text-meta font-mono text-muted">{{ .Params.iso }} · {{ index $labels $jurisdiction.region | default $jurisdiction.region }}</p>
+  <h1 class="font-serif text-h1 m-0">{{ .Title }}</h1>
+  <p class="text-small text-muted"><span class="library-status library-status-{{ $record.review_status }}">{{ index $labels $record.review_status }}</span> · {{ $labels.checked }} {{ $record.researched_at }}</p>
+</header>
+<p class="library-note">{{ index $labels (printf "%s_note" $record.review_status) }}</p>
+{{ with $record.coverage }}<p class="text-small text-muted">{{ printf $labels.coverage (int .published_procedures) (int .withheld_procedures) (int .open_questions) }}</p>{{ end }}
+<h2 class="font-serif text-h2 mt-lg">{{ $labels.procedure_heading }}</h2>
+{{ range $record.procedures }}
+  <section class="library-procedure">
+    <h3 class="font-sans text-h3 mt-0">{{ index . (printf "name_%s" $suffix) }}</h3>
+    <dl class="library-facts">
+      <div><dt>{{ $labels.type }}</dt><dd>{{ index $labels .type | default .type }}</dd></div>
+      <div><dt>{{ $labels.agency }}</dt><dd>{{ .agency }}</dd></div>
+      <div><dt>{{ $labels.official_source }}</dt><dd><a href="{{ .official_url }}" rel="noopener">{{ .official_url }}</a></dd></div>
+      <div><dt>{{ $labels.channel }}</dt><dd>{{ index $labels .channel | default .channel }}</dd></div>
+      <div><dt>{{ $labels.fee }}</dt><dd>{{ if reflect.IsMap .fee }}{{ if eq (printf "%T" .fee.amount) "<nil>" }}{{ $labels.unknown }}{{ else if eq (float .fee.amount) 0.0 }}{{ $labels.free }}{{ else }}{{ .fee.amount }} {{ .fee.currency }}{{ end }}{{ with .fee.note }} ({{ . }}){{ end }}{{ else }}{{ $labels.unknown }}{{ end }}</dd></div>
+      <div><dt>{{ $labels.verification }}</dt><dd>{{ .verified_at }}</dd></div>
+    </dl>
+    <p class="library-prose">{{ index . (printf "applicability_%s" $suffix) }}</p>
+    <p class="library-prose"><strong>{{ $labels.timing }}:</strong> {{ index . (printf "timing_%s" $suffix) }}</p>
+    <p class="text-small text-muted">{{ $labels.sources }}: {{ range $index, $source := .source_ids }}{{ if $index }} · {{ end }}<a href="#source-{{ $source }}">{{ $source }}</a>{{ end }}</p>
+  </section>
+{{ else }}
+  <p class="text-body text-muted">{{ $labels.no_procedures }}</p>
+{{ end }}
+{{ with $record.sources }}
+<h2 class="font-serif text-h2 mt-lg">{{ $labels.sources }}</h2>
+{{ range . }}
+<section class="library-source" id="source-{{ .id }}">
+  <h3 class="font-sans text-h3 mt-0">{{ .title }}</h3>
+  <p>{{ $labels.publisher }}: {{ .publisher }}</p>
+  <p><a href="{{ .url }}" rel="noopener">{{ .url }}</a></p>
+</section>
+{{ end }}
+{{ end }}
+{{ with $jurisdiction.existing_site_key }}
+<p class="text-small my-lg"><a href="{{ printf "/%s/" . | relLangURL }}">{{ $labels.guide }}</a> · {{ $labels.guide_note }}</p>
+{{ end }}
+{{ end }}

@@ -9,7 +9,7 @@
 # static site is unaffected. Full runbook: docs/mcp.md.
 
 name = "entrycardguide"
-pages_build_output_dir = "public"
+pages_build_output_dir = "public-release"
 compatibility_date = "2026-05-01"
 
 [[d1_databases]]

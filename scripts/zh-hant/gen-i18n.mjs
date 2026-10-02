@@ -15,8 +15,8 @@ const out = path.join(ROOT, "i18n/zh-hant.yaml");
 // English on /zh/ by baseline) or needs a hand-verified sentence. Applied on
 // every regeneration — never hand-edit the generated file.
 const OVERRIDES = {
-  tb_full: '獨立營運 <span class="dot">·</span> 與任何政府無關 <span class="dot">·</span> 我們不收費 <span class="dot">·</span> 我們不儲存你的資料',
-  tb_short: '獨立營運 <span class="dot">·</span> 免費 <span class="dot">·</span> 不儲存資料',
+  tb_full: '獨立營運 <span class="dot">·</span> 與任何政府無關 <span class="dot">·</span> 表單校驗在瀏覽器內完成',
+  tb_short: '獨立營運 <span class="dot">·</span> 免費指南 <span class="dot">·</span> 表單資料留在本機',
   label_also_on: "另見",
   aria_breadcrumb: "目前位置",
   aria_trust: "關於本站",

@@ -1,52 +1,33 @@
 ---
-title: "MCP 服务器 — 把本站数据接进你的本地 agent"
-description: "免费 MCP 服务器，把 entrycardguide 核实过的官方入境表单网址、字段校验规则、费用与决策树提供给 Claude Code、Cursor 及任何 MCP 客户端。仅限注册用户，需要 API key。"
+title: "MCP：登录并授权你的 Agent"
+description: "通过 MCP 获取官方入境表指南和全球目的地资料。验证邮箱并登录后，单独授权可撤销的只读凭据。"
 date: 2026-09-26
-lastmod: 2026-09-26
+lastmod: 2026-10-02
 url: "/zh/mcp/"
 ---
 
-## 这是什么
+## 注册、登录与授权
 
-一个 MCP 服务器，地址 `https://entrycardguide.com/api/mcp`。装进 Claude Code、Cursor 或任何 MCP 客户端后，你的 agent 回答「泰国 TDAC 官网是哪个」「巴厘岛 e-CD 为什么不收我的护照号」这类问题时，用的是本站核实过的数据，而不是搜索引擎喂给它的东西。
+[打开账户页面](/api/mcp/account?lang=zh)。使用自己的邮箱注册，输入收到的一次性验证码完成邮箱验证和登录。再次登录时重新申请验证码；验证码10分钟内有效。
 
-数据和页面同源：带 `last_verified` 日期的官方政府网址、逐字段的正则和字符上限、费用、截止时间，以及[决策工具](/zh/decide/)背后的决策树。
+注册和登录不会直接开通 MCP。登录后在账户页明确授权**只读 MCP 访问**，才会生成 API key。凭据只显示一次，请保存到客户端的安全存储中。凭据30天后过期，也可随时在账户页撤销。同一账户下所有凭据共用调用额度。
 
-## 五个工具
+## 可用工具
 
 | 工具 | 返回内容 |
 |---|---|
-| `list_countries` | 全部 50 个国家：主表单、官方网址、费用、表单类型、最近核实日期 |
-| `get_country_forms` | 一国全部官方网址（机构、存档链接）+ 费用 + 最近 5 条政策变更 |
-| `get_field_rules` | 逐字段校验规则：正则、长度上下限、官方网站返回的错误原文 |
-| `get_field_guide` | 最容易填错的字段讲解：正确示例、常见错误、被退回的原因（`en` / `zh` / `zh-hant`） |
-| `run_decision_tree` | 走决策树：你需要填哪些表、费用、截止时间 |
+| `list_countries` | 全部249个目的地、核实状态、资料库链接与已有指南 |
+| `get_jurisdiction` | 一个目的地可公开的有来源申报事项、原核实日期、来源与覆盖情况 |
+| `get_country_forms` | 53个详细表单指南中的一个国家的官方链接与费用 |
+| `get_field_rules` | 字段规则或准备资料说明，明确其校验模式 |
+| `get_field_guide` | 英文、简体或繁体的字段示例及填写说明 |
+| `run_decision_tree` | 已支持指南的决策问题、费用和填报说明 |
 
-## 注册（免费）
+[全球资料库](/zh/library/)区分已核实、部分核实和受阻记录。没有公开某个事项，表示该事项未通过公开核验，不能理解为无需申报。返回日期是来源核实日期，不代表调用时重新核实了法规。
 
-服务器仅限注册用户。一次 POST，换一个 API key：
+## 接入客户端
 
-```bash
-curl -X POST https://entrycardguide.com/api/mcp/register \
-  -H 'Content-Type: application/json' \
-  -d '{"email":"you@example.com"}'
-```
-
-响应里有你的 key（`ecg_...`），**只显示这一次**，立刻存好。我们只保存它的哈希；key 丢了，用注册邮箱联系站长补发。
-
-一个邮箱一个 key。v1 没有邮箱验证，别用你不控制的地址注册——key 找回走这个邮箱。
-
-## 接入你的客户端
-
-Claude Code：
-
-```bash
-claude mcp add --transport http entrycardguide \
-  https://entrycardguide.com/api/mcp \
-  --header "Authorization: Bearer ecg_YOUR_KEY"
-```
-
-任何支持 streamable HTTP 的 MCP 客户端：
+配置支持 Streamable HTTP 的 MCP 客户端：
 
 ```json
 {
@@ -54,29 +35,27 @@ claude mcp add --transport http entrycardguide \
     "entrycardguide": {
       "type": "http",
       "url": "https://entrycardguide.com/api/mcp",
-      "headers": { "Authorization": "Bearer ecg_YOUR_KEY" }
+      "headers": {
+        "Authorization": "Bearer ecg_YOUR_AUTHORIZED_KEY"
+      }
     }
   }
 }
 ```
 
-没有有效 key 的请求，所有方法（包括 `initialize`）一律 `401`。
+直接调用 HTTP 时还需发送 `Content-Type: application/json`、`Accept: application/json, text/event-stream` 和协商后的 `MCP-Protocol-Version`。登录 Cookie 不能授权 MCP 请求。缺少有效只读授权的请求返回 `401`。
 
-## 配额
+## 校验与调用额度
 
-免费档每个 key **每月 100 次工具调用**（按自然月）。`initialize`、`tools/list`、`ping` 不计数；只有工具调用计数，而且校验失败的调用（国家 slug 打错）不烧配额。
+每次请求检查身份、授权范围、到期状态、传输请求头、JSON-RPC 结构、方法参数和工具参数。无效国家编号、语言、额外字段及无效决策路径均被拒绝。输入错误不扣调用次数。
 
-随时查用量：
+免费账户每个UTC自然月可成功调用工具**100次**。`initialize`、`tools/list`、`ping`不计数。并发调用通过同一原子额度检查，额度用尽返回`429`。
 
 ```bash
 curl https://entrycardguide.com/api/mcp/whoami \
-  -H 'Authorization: Bearer ecg_YOUR_KEY'
+  -H 'Authorization: Bearer ecg_YOUR_AUTHORIZED_KEY'
 ```
 
-用超后，工具调用会返回带用量数字的 JSON-RPC 错误。更高的配额和付费档在代码里留了口子（源码见 `functions/_mcp/quota.js`）；批量商用授权走 `licensing@entrycardguide.com`。
+## 数据使用
 
-## 条款
-
-- **仅限注册用户。** 每个请求都要带 key。别把 key 发进截图，也别留在会公开的 dotfiles 里。
-- **署名。** 服务器提供的数据采用 [CC BY-SA 4.0](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE-CC-BY-SA-4.0)。你的 agent 转述这份数据时要注明来自 entrycardguide.com。不接受 share-alike 的商用条款：`licensing@entrycardguide.com`。
-- **和站点同一条反诈骗规则。** 服务器只提供官方网址和字段规则，不提供点名第三方公司的名单。
+来源网址和已有指南数据继续使用[CC BY-SA 4.0](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE-CC-BY-SA-4.0)。转载须注明entrycardguide.com。商业授权请联系`licensing@entrycardguide.com`。服务不发布点名中介名单或内部研究文件。

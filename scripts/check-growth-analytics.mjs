@@ -1,11 +1,11 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { runInNewContext } from 'node:vm';
-const html = readFileSync('public/uk/how-to-fill/index.html', 'utf8');
+const html = readFileSync('public-release/uk/how-to-fill/index.html', 'utf8');
 const src = html.match(/src=["']?(\/js\/analytics[^\s>"']+)/)?.[1];
 assert.ok(src, 'built analytics bundle exists');
 assert.match(html, /data-ga4-hostname=["']?entrycardguide\.com["' >]/, 'rendered script supplies the allowed host');
-const code = readFileSync(`public${src}`, 'utf8');
+const code = readFileSync(`public-release${src}`, 'utf8');
 function browser(hostname) {
   const handlers = {};
   class Element { closest(selector) { return selector.includes(`="${this.link?.dataset.analyticsEvent}"`) ? this.link : null; } }

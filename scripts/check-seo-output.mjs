@@ -4,7 +4,7 @@ import { runInNewContext } from "node:vm";
 
 // PUBLIC_DIR env override — isolated negative regressions run the gate
 // against a temp copy of the built output.
-const publicDir = process.env.PUBLIC_DIR || "public";
+const publicDir = process.env.PUBLIC_DIR || process.argv[2] || "public-release";
 
 const requiredFiles = [
   "404.html",
@@ -92,6 +92,9 @@ function localTargetExists(rawUrl, sourceFile = null) {
   if (shouldSkipUrl(rawUrl)) {
     return true;
   }
+
+  const route = rawUrl.split("?")[0].replace(/\/$/, "");
+  if (route === "/api/mcp/account" && existsSync("functions/api/mcp/account.js")) return true;
 
   const target = localTargetPath(rawUrl, sourceFile);
   return existsSync(target) && statSync(target).isFile();

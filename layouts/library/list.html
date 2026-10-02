@@ -1,0 +1,45 @@
+{{ define "main" }}
+{{ $library := partial "library-data.html" . }}
+{{ $labels := index hugo.Data.library_ui .Site.Language.Lang }}
+{{ $field := cond (eq .Site.Language.Lang "en") "name_en" (cond (eq .Site.Language.Lang "zh-hant") "name_zh_hant" "name_zh") }}
+{{ $tally := dict "verified" 0 "partial" 0 "blocked" 0 }}
+{{ $regions := slice }}
+{{ range $library.jurisdictions }}
+  {{ $record := index $library.byId .id }}
+  {{ $tally = merge $tally (dict $record.review_status (add (index $tally $record.review_status) 1)) }}
+  {{ if not (in $regions .region) }}{{ $regions = $regions | append .region }}{{ end }}
+{{ end }}
+<nav aria-label="{{ i18n "aria_breadcrumb" }}" class="py-md font-mono text-xs text-muted"><a href="{{ "/" | relLangURL }}">{{ $labels.home }}</a> · {{ .Title }}</nav>
+<header class="py-lg" data-library-mode="public">
+  <h1 class="font-serif text-h1 m-0">{{ .Title }}</h1>
+  <p class="text-body text-muted">{{ printf $labels.index_intro (int (len $library.jurisdictions)) (int (index $tally "verified")) (int (index $tally "partial")) (int (index $tally "blocked")) }}</p>
+</header>
+<div data-library>
+  <div data-library-controls class="library-controls" style="display:none">
+    <label>{{ $labels.search }}<br><input data-library-search type="search" placeholder="{{ $labels.search_placeholder }}"></label>
+    <label>{{ $labels.region }}<br><select data-library-region><option value="">{{ $labels.all_regions }}</option>{{ range sort $regions }}<option value="{{ . }}">{{ index $labels . | default . }}</option>{{ end }}</select></label>
+    <label>{{ $labels.status }}<br><select data-library-status><option value="">{{ $labels.all_statuses }}</option>{{ range slice "verified" "partial" "blocked" }}<option value="{{ . }}">{{ index $labels . }}</option>{{ end }}</select></label>
+    <button type="button" data-library-reset disabled>{{ $labels.reset }}</button>
+  </div>
+  <p data-library-count data-count-label="{{ $labels.count }}" style="display:none" aria-live="polite" class="text-small text-muted"></p>
+  <div class="library-scroll">
+    <table class="library-table">
+      <thead><tr><th scope="col">{{ $labels.destination }}</th><th scope="col">{{ $labels.region }}</th><th scope="col">{{ $labels.status }}</th><th scope="col">{{ $labels.procedures }}</th><th scope="col">{{ $labels.links }}</th></tr></thead>
+      <tbody>
+      {{ range sort $library.jurisdictions "name_en" }}
+        {{ $record := index $library.byId .id }}
+        <tr data-library-row data-iso="{{ .id }}" data-status="{{ $record.review_status }}" data-region="{{ .region }}" data-search="{{ .name_en }} {{ .name_zh }} {{ .name_zh_hant }} {{ .id }} {{ .region }}">
+          <th scope="row"><a href="{{ printf "/library/%s/" (lower .id) | relLangURL }}">{{ index . $field }}</a><div class="font-mono text-xs text-muted">{{ .id }}</div></th>
+          <td>{{ index $labels .region | default .region }}</td>
+          <td><span class="library-status library-status-{{ $record.review_status }}">{{ index $labels $record.review_status }}</span></td>
+          <td class="font-mono">{{ len $record.procedures }}</td>
+          <td><a href="{{ printf "/library/%s/" (lower .id) | relLangURL }}">{{ $labels.details }}</a>{{ with .existing_site_key }} · <a href="{{ printf "/%s/" . | relLangURL }}">{{ $labels.guide }}</a>{{ end }}</td>
+        </tr>
+      {{ end }}
+      </tbody>
+    </table>
+  </div>
+  <p data-library-empty hidden class="text-small text-muted">{{ $labels.empty }}</p>
+</div>
+<div class="content max-w-prose text-small my-lg">{{ .Content }}</div>
+{{ end }}

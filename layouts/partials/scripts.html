@@ -50,3 +50,9 @@
 <script src="{{ $search.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $search.Data.Integrity }}"{{ end }} defer></script>
 
 {{- partial "nav-script.html" . -}}
+
+{{- if eq .Section "library" }}
+  {{- $library := resources.Get "js/library.ts" | js.Build (dict "targetPath" "js/library.js" "minify" hugo.IsProduction "target" "es2020" "format" "iife") }}
+  {{- if hugo.IsProduction }}{{ $library = $library | resources.Fingerprint "sha256" }}{{ end }}
+<script src="{{ $library.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $library.Data.Integrity }}"{{ end }} defer></script>
+{{- end }}

@@ -42,6 +42,11 @@ defaultContentLanguageInSubdir = false
       url = "/official-links/"
       weight = 75
     [[languages.en.menu.main]]
+      identifier = "library"
+      name = "Global library"
+      url = "/library/"
+      weight = 74
+    [[languages.en.menu.main]]
       identifier = "mcp"
       name = "MCP"
       url = "/mcp/"
@@ -74,6 +79,11 @@ defaultContentLanguageInSubdir = false
       name = "官方目录"
       url = "/zh/official-links/"
       weight = 75
+    [[languages.zh.menu.main]]
+      identifier = "library"
+      name = "全球资料库"
+      url = "/zh/library/"
+      weight = 74
     [[languages.zh.menu.main]]
       identifier = "mcp"
       name = "MCP 接口"
@@ -110,6 +120,11 @@ defaultContentLanguageInSubdir = false
       name = "官方目錄"
       url = "/zh-hant/official-links/"
       weight = 75
+    [[languages.zh-hant.menu.main]]
+      identifier = "library"
+      name = "全球資料庫"
+      url = "/zh-hant/library/"
+      weight = 74
     [[languages.zh-hant.menu.main]]
       identifier = "mcp"
       name = "MCP 介面"
@@ -179,3 +194,10 @@ defaultContentLanguageInSubdir = false
 [security]
   [security.funcs]
     getenv = ["^HUGO_", "^CI$", "^GITHUB_"]
+
+# Public builds never mount private research data.
+[module]
+  [[module.mounts]]
+    source = "data"
+    target = "data"
+    files = ["! travel_library/**"]

@@ -1,350 +1,282 @@
 #!/usr/bin/env node
-// Unit tests for the MCP Pages Functions. Runs against a real SQLite database
-// (node:sqlite) wrapped in the same prepare().bind().first()/all()/run()
-// surface Cloudflare D1 exposes, so the SQL in functions/_mcp/db.js is
-// actually executed, not mocked away.
-//
-//   npm run test:mcp    (Node 22: node:sqlite needs --experimental-sqlite)
-
+// Route and protocol regression tests, using the real migrations and SQL.
+// Accounts and explicit grants are fixtures; OTP/login have a separate suite.
+import assert from "node:assert/strict";
 import { DatabaseSync } from "node:sqlite";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { generateKey, sha256Hex } from "../functions/_mcp/auth.js";
+import { currentPeriod, planLimit } from "../functions/_mcp/quota.js";
+import { onRequestPost as mcpPost, onRequestGet as mcpGet, onRequestDelete as mcpDelete } from "../functions/api/mcp/index.js";
+import { onRequestGet as whoamiGet } from "../functions/api/mcp/whoami.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-
-// --- D1 adapter -----------------------------------------------------------
-
-class D1StatementShim {
-  constructor(db, sql) {
-    this.statement = db.prepare(sql);
-    this.args = [];
-  }
-  bind(...args) {
-    this.args = args;
-    return this;
-  }
-  async first() {
-    return this.statement.get(...this.args) ?? null;
-  }
-  async all() {
-    return { results: this.statement.all(...this.args) };
-  }
-  async run() {
-    const info = this.statement.run(...this.args);
-    return { success: true, meta: { changes: info.changes } };
-  }
-}
-
 const database = new DatabaseSync(":memory:");
-database.exec(readFileSync(path.join(ROOT, "migrations/0001_mcp_init.sql"), "utf8"));
-const db = { prepare: (sql) => new D1StatementShim(database, sql) };
-
-// --- harness ---------------------------------------------------------------
-
-const failures = [];
-let passed = 0;
-function check(name, condition, detail = "") {
-  if (condition) {
-    passed++;
-  } else {
-    failures.push(`${name}${detail ? ` — ${detail}` : ""}`);
-  }
+database.exec("PRAGMA foreign_keys = ON");
+for (const migration of readdirSync(path.join(ROOT, "migrations")).filter((name) => name.endsWith(".sql")).sort()) {
+  database.exec(readFileSync(path.join(ROOT, "migrations", migration), "utf8"));
 }
-
-const ORIGIN = "https://entrycardguide.com";
-// Two environments: envQuota forces the free tier down to 2 calls/month for
-// exhaustion tests; envDefault leaves it at the code default (100) for the
-// tool-semantics tests that need more calls.
-const envQuota = { DB: db, MCP_FREE_MONTHLY_CALLS: "2" };
+class D1Statement {
+  constructor(sql) { this.statement = database.prepare(sql); this.args = []; }
+  bind(...args) { this.args = args; return this; }
+  async first() { return this.statement.get(...this.args) ?? null; }
+  async all() { return { results: this.statement.all(...this.args) }; }
+  async run() { const row = this.statement.run(...this.args); return { success: true, meta: { changes: row.changes } }; }
+}
+const db = { prepare: (sql) => new D1Statement(sql) };
 const envDefault = { DB: db };
-const context = (request, env = envQuota) => ({ request, env, next: async () => new Response(null, { status: 599 }) });
+const ORIGIN = "https://entrycardguide.com";
+const BASE_HEADERS = { "Content-Type": "application/json", Accept: "application/json, text/event-stream", "MCP-Protocol-Version": "2025-06-18" };
+const context = (request, env = envDefault) => ({ request, env });
+let passed = 0;
+function check(name, condition, detail = "") { assert.ok(condition, `${name}${detail ? `: ${detail}` : ""}`); passed++; }
+function request(body, key, extra = {}) {
+  const headers = { ...BASE_HEADERS, ...(key ? { Authorization: `Bearer ${key}` } : {}), ...extra.headers };
+  for (const name of Object.keys(headers)) if (headers[name] === null) delete headers[name];
+  return new Request(`${ORIGIN}/api/mcp`, { method: "POST", headers, body: extra.raw === undefined ? JSON.stringify(body) : extra.raw });
+}
+function rpc(method, params, key, id = 1, extra) {
+  return request({ jsonrpc: "2.0", id, method, ...(params === undefined ? {} : { params }) }, key, extra);
+}
+const initParams = { protocolVersion: "2025-06-18", capabilities: {}, clientInfo: { name: "regression-client", version: "1" } };
+async function fixture(options = {}) {
+  const id = options.userId ?? crypto.randomUUID();
+  const now = Date.now();
+  if (!options.userId) database.prepare(`INSERT INTO mcp_users
+    (id,email,key_hash,key_prefix,plan,created_at,revoked,verified_at) VALUES (?,?,?,?,'free',?,0,?)`)
+    .run(id, `${id}@example.com`, `retired:${id}`, "retired", now, options.verified === false ? null : now);
+  const key = await generateKey();
+  const grantId = crypto.randomUUID();
+  database.prepare(`INSERT INTO mcp_grants (id,user_id,key_hash,key_prefix,scope,created_at,expires_at,revoked_at)
+    VALUES (?,?,?,?,?,?,?,?)`).run(grantId, id, await sha256Hex(key), key.slice(0, 10), options.scope ?? "mcp:read", now,
+      options.expiresAt ?? now + 3600000, options.revokedAt ?? null);
+  return { id, key, grantId };
+}
+const usage = (userId) => database.prepare("SELECT COUNT(*) AS n FROM mcp_usage WHERE user_id = ?").get(userId).n;
+const first = await fixture();
+const KEY = first.key;
 
-const { onRequestPost: mcpPost, onRequestGet: mcpGet, onRequestDelete: mcpDelete } = await import(
-  "../functions/api/mcp/index.js"
-);
-const { onRequestPost: registerPost } = await import("../functions/api/mcp/register.js");
-const { onRequestGet: whoamiGet } = await import("../functions/api/mcp/whoami.js");
+let response = await mcpPost(context(rpc("initialize", initParams)));
+check("missing Bearer key is unauthorized", response.status === 401);
+check("401 advertises Bearer authentication", response.headers.get("WWW-Authenticate")?.startsWith("Bearer"));
+response = await mcpPost(context(rpc("ping", undefined, "ecg_invalid")));
+check("unknown key is unauthorized", response.status === 401);
+response = await mcpPost(context(rpc("ping", undefined, undefined, 1, { headers: { Cookie: "ecg_session=browser-session" } })));
+check("browser login cookie cannot authorize MCP", response.status === 401);
+const expired = await fixture({ expiresAt: Date.now() - 1 });
+check("expired grant cannot initialize", (await mcpPost(context(rpc("initialize", initParams, expired.key)))).status === 401);
+const revoked = await fixture({ revokedAt: Date.now() });
+check("revoked grant cannot ping", (await mcpPost(context(rpc("ping", undefined, revoked.key)))).status === 401);
+const unverified = await fixture({ verified: false });
+check("unverified account cannot use grant", (await mcpPost(context(rpc("ping", undefined, unverified.key)))).status === 401);
+const disabled = await fixture();
+database.prepare("UPDATE mcp_users SET revoked=1 WHERE id=?").run(disabled.id);
+check("disabled account cannot use an otherwise active grant", (await mcpPost(context(rpc("ping", undefined, disabled.key)))).status === 401);
+const legacyKey = await generateKey();
+database.prepare("UPDATE mcp_users SET key_hash=? WHERE id=?").run(await sha256Hex(legacyKey), first.id);
+check("retired user-level key cannot authorize MCP", (await mcpPost(context(rpc("ping", undefined, legacyKey)))).status === 401);
+check("stored grant contains no plaintext key", !JSON.stringify(database.prepare("SELECT * FROM mcp_grants").all()).includes(KEY));
 
-function rpc(method, params, key, id = 1) {
-  const body = { jsonrpc: "2.0", id, method };
-  if (params !== undefined) body.params = params;
-  return new Request(`${ORIGIN}/api/mcp`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      ...(key ? { Authorization: `Bearer ${key}` } : {}),
-    },
-    body: JSON.stringify(body),
-  });
+response = await mcpPost(context(rpc("initialize", initParams, KEY)));
+let body = await response.json();
+check("initialize returns negotiated version", body.result?.protocolVersion === "2025-06-18");
+check("initialize returns serverInfo and tools capability", body.result?.serverInfo?.name === "entrycardguide" && body.result.capabilities.tools);
+response = await mcpPost(context(rpc("initialize", { ...initParams, protocolVersion: "unknown" }, KEY)));
+check("initialize negotiates an unknown requested version", (await response.json()).result?.protocolVersion === "2025-06-18");
+response = await mcpPost(context(rpc("ping", undefined, KEY, "string-id")));
+check("string id survives response", (await response.json()).id === "string-id");
+response = await mcpPost(context(rpc("ping", undefined, KEY, 0, { headers: { "MCP-Protocol-Version": null } })));
+check("missing protocol header supports older native clients", response.status === 200);
+response = await mcpPost(context(request({ jsonrpc: "2.0", method: "notifications/initialized" }, KEY)));
+check("initialized notification returns empty 202", response.status === 202 && await response.text() === "");
+for (const id of [null, {}, [], true, 1.5, "", "i".repeat(129)]) {
+  response = await mcpPost(context(rpc("ping", undefined, KEY, id)));
+  check(`invalid request id (${typeof id}) is rejected`, (await response.json()).error?.code === -32600);
+}
+for (const message of [[], null, { jsonrpc: "1.0", id: 1, method: "ping" }, { jsonrpc: "2.0", id: 1, method: "ping", extra: true }]) {
+  check("invalid envelope is rejected", (await (await mcpPost(context(request(message, KEY)))).json()).error?.code === -32600);
+}
+response = await mcpPost(context(request({ jsonrpc: "2.0", method: "tools/call", params: { name: "list_countries" } }, KEY)));
+check("tools/call cannot masquerade as a notification", response.status === 400 && usage(first.id) === 0);
+response = await mcpPost(context(rpc("notifications/initialized", {}, KEY)));
+check("notification with id is rejected", (await response.json()).error?.code === -32600);
+response = await mcpPost(context(rpc("made/up", {}, KEY)));
+check("unknown method returns method-not-found", (await response.json()).error?.code === -32601);
+for (const [method, params] of [["initialize", { protocolVersion: "2025-06-18" }], ["ping", []], ["ping", { unexpected: 1 }], ["tools/list", null], ["tools/call", { name: 1 }], ["tools/call", { name: "list_countries", extra: 1 }]]) {
+  response = await mcpPost(context(rpc(method, params, KEY)));
+  check(`invalid ${method} params rejected`, (await response.json()).error?.code === -32602);
 }
 
-// --- registration ----------------------------------------------------------
-
-let noAuth = await mcpPost(context(rpc("initialize", { protocolVersion: "2025-06-18" })));
-check("initialize without key → 401", noAuth.status === 401, `got ${noAuth.status}`);
-check("401 carries WWW-Authenticate", noAuth.headers.get("WWW-Authenticate")?.startsWith("Bearer"));
-
-let reg = await registerPost(
-  context(
-    new Request(`${ORIGIN}/api/mcp/register`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: "agent@example.com" }),
-    }),
-  ),
-);
-check("register JSON → 201", reg.status === 201, `got ${reg.status}`);
-const regBody = await reg.json();
-const KEY = regBody.apiKey;
-check("register returns ecg_ key", typeof KEY === "string" && KEY.startsWith("ecg_") && KEY.length > 20);
-check("register returns free quota 2 (env override)", regBody.monthlyCallQuota === 2, JSON.stringify(regBody));
-check("register stores only hash", !JSON.stringify(database.prepare("SELECT * FROM mcp_users").all()).includes(KEY));
-
-let dup = await registerPost(
-  context(
-    new Request(`${ORIGIN}/api/mcp/register`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: "AGENT@example.com" }),
-    }),
-  ),
-);
-check("duplicate email (case-insensitive) → 409", dup.status === 409, `got ${dup.status}`);
-
-let badEmail = await registerPost(
-  context(
-    new Request(`${ORIGIN}/api/mcp/register`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: "not-an-email" }),
-    }),
-  ),
-);
-check("invalid email → 400", badEmail.status === 400);
-
-let htmlReg = await registerPost(
-  context(
-    new Request(`${ORIGIN}/api/mcp/register`, {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: "email=form-user@example.com",
-    }),
-  ),
-);
-check("register form post → 201 HTML", htmlReg.status === 201 && (htmlReg.headers.get("Content-Type") || "").startsWith("text/html"));
-const htmlText = await htmlReg.text();
-check("HTML register page shows key once", htmlText.includes("ecg_") && !htmlText.includes("<script"));
-
-let wrongCt = await registerPost(
-  context(new Request(`${ORIGIN}/api/mcp/register`, { method: "POST", headers: { "Content-Type": "text/plain" }, body: "x" })),
-);
-check("unsupported content type → 415", wrongCt.status === 415);
-
-// --- protocol --------------------------------------------------------------
-
-let badKey = await mcpPost(context(rpc("ping", undefined, "ecg_wrongkey")));
-check("unknown key → 401", badKey.status === 401);
-
-let init = await mcpPost(context(rpc("initialize", { protocolVersion: "2025-03-26" }, KEY)));
-let initBody = await init.json();
-check("initialize echoes supported protocolVersion", initBody.result?.protocolVersion === "2025-03-26");
-check("initialize serverInfo", initBody.result?.serverInfo?.name === "entrycardguide");
-check("initialize advertises tools capability", initBody.result?.capabilities?.tools);
-
-init = await mcpPost(context(rpc("initialize", { protocolVersion: "1999-01-01" }, KEY, 2)));
-initBody = await init.json();
-check("initialize falls back on unknown protocolVersion", initBody.result?.protocolVersion === "2025-06-18");
-
-let ping = await mcpPost(context(rpc("ping", undefined, KEY, 3)));
-check("ping → empty result", (await ping.json()).result !== undefined);
-
-let notif = await mcpPost(
-  context(
-    new Request(`${ORIGIN}/api/mcp`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json", Authorization: `Bearer ${KEY}` },
-      body: JSON.stringify({ jsonrpc: "2.0", method: "notifications/initialized" }),
-    }),
-  ),
-);
-check("notification → 202 empty", notif.status === 202);
-
-let batch = await mcpPost(
-  context(
-    new Request(`${ORIGIN}/api/mcp`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json", Authorization: `Bearer ${KEY}` },
-      body: JSON.stringify([{ jsonrpc: "2.0", id: 20, method: "ping" }]),
-    }),
-  ),
-);
-check("batch array → -32600", (await batch.json()).error?.code === -32600);
-
-let get = await mcpGet(context(new Request(`${ORIGIN}/api/mcp`, { method: "GET" })));
-check("GET /api/mcp → 405", get.status === 405);
-let del = await mcpDelete(context(new Request(`${ORIGIN}/api/mcp`, { method: "DELETE" })));
-check("DELETE /api/mcp → 405", del.status === 405);
-
-let badJson = await mcpPost(
-  context(
-    new Request(`${ORIGIN}/api/mcp`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json", Authorization: `Bearer ${KEY}` },
-      body: "{not json",
-    }),
-  ),
-);
-check("unparseable body → 400", badJson.status === 400);
-
-// --- tools -----------------------------------------------------------------
-
-let toolList = await mcpPost(context(rpc("tools/list", undefined, KEY, 4)));
-let toolListBody = await toolList.json();
-const toolNames = toolListBody.result?.tools?.map((t) => t.name);
-check(
-  "tools/list has all five tools",
-  JSON.stringify(toolNames) === JSON.stringify(["list_countries", "get_country_forms", "get_field_rules", "get_field_guide", "run_decision_tree"]),
-  JSON.stringify(toolNames),
-);
-check("every tool has an inputSchema", toolListBody.result.tools.every((t) => t.inputSchema?.type === "object"));
-
-let unknownTool = await mcpPost(context(rpc("tools/call", { name: "nope" }, KEY, 5)));
-check("unknown tool → -32602", (await unknownTool.json()).error?.code === -32602);
-
-// call 1 of quota 2: list_countries
-let countries = await mcpPost(context(rpc("tools/call", { name: "list_countries", arguments: {} }, KEY, 6)));
-let countriesBody = await countries.json();
-const countriesPayload = JSON.parse(countriesBody.result.content[0].text);
-check("list_countries returns 50 countries", countriesPayload.count === 50, `got ${countriesPayload.count}`);
-check("list_countries includes thailand with official URL", countriesPayload.countries.some((c) => c.slug === "thailand" && c.officialUrl?.includes("go.th")));
-check("list_countries carries license attribution", countriesPayload.source?.license?.includes("CC BY-SA"));
-check("list_countries result is not an error", countriesBody.result.isError !== true);
-
-// call 2 of quota 2: get_field_rules
-let rules = await mcpPost(context(rpc("tools/call", { name: "get_field_rules", arguments: { country: "thailand" } }, KEY, 7)));
-let rulesBody = await rules.json();
-const rulesPayload = JSON.parse(rulesBody.result.content[0].text);
-check("get_field_rules returns passport pattern", rulesPayload.fields?.passport?.pattern === "^[A-Z][A-Z0-9]{5,8}$");
-
-// call 3 → over quota
-let over = await mcpPost(context(rpc("tools/call", { name: "get_field_guide", arguments: { country: "thailand" } }, KEY, 8)));
-let overBody = await over.json();
-check("quota exhaustion → -32001 with usage data", overBody.error?.code === -32001 && overBody.error.data?.used === 2 && overBody.error.data?.limit === 2);
-
-// tool-level validation errors under the low quota: the gate still runs first
-let badCountryOver = await mcpPost(context(rpc("tools/call", { name: "get_field_rules", arguments: { country: "atlantis" } }, KEY, 9)));
-check("quota gate precedes execution (blocked even for bad args)", (await badCountryOver.json()).error?.code === -32001);
-
-// fresh key for non-quota tool tests (default free limit)
-let reg2 = await registerPost(
-  context(
-    new Request(`${ORIGIN}/api/mcp/register`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: "second@example.com" }),
-    }),
-    envDefault,
-  ),
-);
-const KEY2 = (await reg2.json()).apiKey;
-
-let badCountry = await mcpPost(context(rpc("tools/call", { name: "get_field_rules", arguments: { country: "atlantis" } }, KEY2, 10), envDefault));
-let badCountryBody = await badCountry.json();
-check(
-  "unknown country → isError with slug list",
-  badCountryBody.result?.isError === true && badCountryBody.result.content[0].text.includes("Unknown country") && badCountryBody.result.content[0].text.includes("thailand"),
-);
-
-let guide = await mcpPost(context(rpc("tools/call", { name: "get_field_guide", arguments: { country: "thailand", lang: "zh" } }, KEY2, 11), envDefault));
-let guideBody = await guide.json();
-const guidePayload = JSON.parse(guideBody.result.content[0].text);
-check("get_field_guide zh returns Chinese copy", guidePayload.lang === "zh" && /护照/.test(guidePayload.fields[0].howToFill || ""));
-
-let badLang = await mcpPost(context(rpc("tools/call", { name: "get_field_guide", arguments: { country: "thailand", lang: "fr" } }, KEY2, 12), envDefault));
-check("invalid lang → isError", (await badLang.json()).result?.isError === true);
-
-let forms = await mcpPost(context(rpc("tools/call", { name: "get_country_forms", arguments: { country: "thailand" } }, KEY2, 13), envDefault));
-let formsBody = await forms.json();
-const formsPayload = JSON.parse(formsBody.result.content[0].text);
-check(
-  "get_country_forms lists official links + changelog",
-  Array.isArray(formsPayload.officialLinks) && formsPayload.officialLinks.length >= 1 && Array.isArray(formsPayload.recentChanges),
-);
-check(
-  "get_country_forms excludes internal-only structures",
-  !("scam_sites" in formsPayload) && !("outcomes" in formsPayload) && !("news" in formsPayload) && !formsPayload.officialLinks.some((f) => f.key === "meta" || !f.url),
-);
-
-// decision tree
-let treeStart = await mcpPost(context(rpc("tools/call", { name: "run_decision_tree", arguments: { answers: [] } }, KEY2, 14), envDefault));
-let treeStartBody = await treeStart.json();
-const startPayload = JSON.parse(treeStartBody.result.content[0].text);
-check("empty answers → opening question", startPayload.done === false && startPayload.nextQuestion.options.some((o) => o.value === "thailand"));
-
-let treeTh = await mcpPost(context(rpc("tools/call", { name: "run_decision_tree", arguments: { answers: ["thailand"] } }, KEY2, 15), envDefault));
-let treeThBody = await treeTh.json();
-const thPayload = JSON.parse(treeThBody.result.content[0].text);
-check("thailand path → TDAC result", thPayload.done === true && thPayload.summary.includes("TDAC") && thPayload.forms[0].url.includes("go.th"));
-
-let treeBad = await mcpPost(context(rpc("tools/call", { name: "run_decision_tree", arguments: { answers: ["nonsense"] } }, KEY2, 16), envDefault));
-let treeBadBody = await treeBad.json();
-check("invalid option value → isError with valid values", treeBadBody.result?.isError === true && treeBadBody.result.content[0].text.includes("land"));
-
-let multiStep = await mcpPost(context(rpc("tools/call", { name: "run_decision_tree", arguments: { answers: ["mexico"] } }, KEY2, 17), envDefault));
-let multiStepBody = JSON.parse((await multiStep.json()).result.content[0].text);
-check("mexico → follow-up question", multiStepBody.done === false && Array.isArray(multiStepBody.nextQuestion.options) && multiStepBody.nextQuestion.options.length >= 2);
-
-// validation errors do not burn quota: fresh key under envQuota(2), one bad
-// call, then the meter should still read zero
-let reg3 = await registerPost(
-  context(
-    new Request(`${ORIGIN}/api/mcp/register`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: "quota-probe@example.com" }),
-    }),
-  ),
-);
-const KEY3 = (await reg3.json()).apiKey;
-let probe = await mcpPost(context(rpc("tools/call", { name: "get_field_rules", arguments: { country: "atlantis" } }, KEY3, 21)));
-check("probe call is a tool error", (await probe.json()).result?.isError === true);
-let probeWho = await whoamiGet(context(new Request(`${ORIGIN}/api/mcp/whoami`, { headers: { Authorization: `Bearer ${KEY3}` } })));
-check("isError calls are not metered", (await probeWho.json()).quota?.used === 0);
-
-// --- whoami ----------------------------------------------------------------
-
-let whoami = await whoamiGet(
-  context(new Request(`${ORIGIN}/api/mcp/whoami`, { headers: { Authorization: `Bearer ${KEY}` } })),
-);
-check("whoami → 200", whoami.status === 200);
-let whoamiBody = await whoami.json();
-check(
-  "whoami reports quota 2/2 used",
-  whoamiBody.quota?.used === 2 && whoamiBody.quota?.limit === 2 && whoamiBody.quota?.remaining === 0,
-  JSON.stringify(whoamiBody.quota),
-);
-check("whoami breaks usage down by tool", whoamiBody.usedByTool?.some((row) => row.tool === "list_countries" && row.calls === 1));
-check("whoami never exposes the key hash", !JSON.stringify(whoamiBody).includes("key_hash"));
-
-let whoamiNoKey = await whoamiGet(context(new Request(`${ORIGIN}/api/mcp/whoami`)));
-check("whoami without key → 401", whoamiNoKey.status === 401);
-
-// --- revocation ------------------------------------------------------------
-
-database.exec("UPDATE mcp_users SET revoked = 1 WHERE email = 'second@example.com'");
-let revokedCall = await mcpPost(context(rpc("ping", undefined, KEY2, 18)));
-check("revoked key → 401", revokedCall.status === 401);
-
-// --- unconfigured deployment ------------------------------------------------
-
-let noDb = await mcpPost({ request: rpc("ping", undefined, KEY, 19), env: {}, next: async () => new Response(null, { status: 599 }) });
-check("missing DB binding → 503 mcp_not_configured", noDb.status === 503 && (await noDb.json()).error === "mcp_not_configured");
-
-// --- report ------------------------------------------------------------------
-
-if (failures.length) {
-  console.error(`FAIL (${failures.length}/${passed + failures.length}):\n  - ${failures.join("\n  - ")}`);
-  process.exit(1);
+for (const [headers, status] of [
+  [{ Origin: "https://attacker.example" }, 403], [{ Origin: "null" }, 403],
+  [{ "Content-Type": "text/plain" }, 415], [{ "Content-Type": "application/json; charset=latin1" }, 415],
+  [{ Accept: null }, 406], [{ Accept: "text/event-stream" }, 406], [{ Accept: "application/json;q=0, text/event-stream" }, 406],
+  [{ "MCP-Protocol-Version": "2024-11-05" }, 400], [{ "Content-Length": "bad" }, 400], [{ "Content-Length": "99999" }, 413],
+]) {
+  response = await mcpPost(context(rpc("ping", undefined, KEY, 1, { headers })));
+  check(`invalid transport returns ${status}`, response.status === status);
 }
-console.log(`MCP tests passed: ${passed}/${passed + failures.length}`);
+response = await mcpPost(context(rpc("ping", undefined, KEY, 1, { headers: { Origin: ORIGIN } })));
+check("same-origin browser request is allowed", response.status === 200);
+response = await mcpPost(context(request({}, KEY, { raw: "{invalid" })));
+check("malformed JSON returns 400", response.status === 400);
+response = await mcpPost(context(request({}, KEY, { raw: new Uint8Array([0xff, 0xfe]) })));
+check("invalid UTF-8 is rejected", response.status === 400);
+response = await mcpPost(context(request({}, KEY, { raw: JSON.stringify({ padding: "x".repeat(17000) }) })));
+check("stream body is bounded without Content-Length", response.status === 413);
+check("GET endpoint returns 405", (await mcpGet(context(new Request(`${ORIGIN}/api/mcp`)))).status === 405);
+check("DELETE endpoint returns 405", (await mcpDelete(context(new Request(`${ORIGIN}/api/mcp`, { method: "DELETE" })))).status === 405);
+check("foreign Origin on GET rejected", (await mcpGet(context(new Request(`${ORIGIN}/api/mcp`, { headers: { Origin: "https://attacker.example" } })))).status === 403);
+
+response = await mcpPost(context(rpc("tools/list", undefined, KEY)));
+body = await response.json();
+const requiredTools = ["list_countries", "get_country_forms", "get_field_rules", "get_field_guide", "run_decision_tree"];
+check("existing guide tools remain available", requiredTools.every((name) => body.result.tools.some((tool) => tool.name === name)));
+check("tool schemas are declared", body.result.tools.every((tool) => tool.inputSchema?.type === "object"));
+for (const [name, args] of [
+  ["list_countries", []], ["list_countries", null], ["list_countries", "thailand"], ["list_countries", { unknown: true }],
+  ["get_country_forms", {}], ["get_country_forms", { country: 123 }], ["get_country_forms", { country: "a".repeat(65) }],
+  ["get_field_rules", { country: "thailand", extra: true }],
+  ["get_field_guide", { country: "thailand", lang: "toString" }], ["get_field_guide", { country: "thailand", lang: "fr" }],
+  ["run_decision_tree", { answers: "thailand" }], ["run_decision_tree", { answers: [1] }],
+  ["run_decision_tree", { answers: ["x".repeat(129)] }], ["run_decision_tree", { answers: Array(33).fill("thailand") }],
+]) {
+  response = await mcpPost(context(rpc("tools/call", { name, arguments: args }, KEY)));
+  check(`invalid ${name} schema rejected`, (await response.json()).error?.code === -32602);
+}
+check("transport, envelope, and schema failures do not consume quota", usage(first.id) === 0);
+response = await mcpPost(context(rpc("tools/call", { name: "unknown" }, KEY)));
+check("unknown tool rejected", (await response.json()).error?.code === -32602);
+response = await mcpPost(context(rpc("tools/call", { name: "get_field_rules", arguments: { country: "atlantis" } }, KEY)));
+check("unknown country is a tool error", (await response.json()).result?.isError === true);
+response = await mcpPost(context(rpc("tools/call", { name: "run_decision_tree", arguments: { answers: ["thailand", "extra"] } }, KEY)));
+check("extra answer after final decision is rejected", (await response.json()).result?.isError === true);
+check("business validation errors do not consume quota", usage(first.id) === 0);
+
+async function tool(name, args, key = KEY, env = envDefault) {
+  const response = await mcpPost(context(rpc("tools/call", { name, arguments: args }, key), env));
+  const body = await response.json();
+  check(`${name} succeeds`, response.status === 200 && body.result?.isError !== true && body.result?.content?.[0]?.type === "text");
+  return JSON.parse(body.result.content[0].text);
+}
+let payload = await tool("list_countries", {});
+check("country list includes existing guide destinations", payload.count >= 50 && payload.countries.some((country) => country.slug === "thailand" || country.iso2 === "TH"));
+check("list countries provides attribution", payload.source?.license?.includes("CC BY-SA"));
+payload = await tool("get_field_rules", { country: "thailand" });
+check("Thailand passport constraint preserved", payload.fields.passport.pattern === "^[A-Z][A-Z0-9]{5,8}$");
+check("field rules identify validation mode", payload.validationMode === "field_rules");
+payload = await tool("get_field_guide", { country: "thailand", lang: "zh" });
+check("Chinese field guide preserved", payload.lang === "zh" && /护照/.test(payload.fields[0].howToFill || ""));
+payload = await tool("get_field_guide", { country: "thailand", lang: "zh-hant" });
+check("traditional Chinese field guide preserved", payload.lang === "zh-hant" && /護照/.test(payload.fields[0].howToFill || ""));
+payload = await tool("get_country_forms", { country: "thailand" });
+check("country forms carry official links and changelog", payload.officialLinks.some((link) => link.url.includes("go.th")) && Array.isArray(payload.recentChanges));
+check("country forms exclude internal blocks", !["scam_sites", "outcomes", "news"].some((key) => key in payload));
+payload = await tool("run_decision_tree", { answers: [] });
+check("empty answers returns opening question", payload.done === false && payload.nextQuestion.options.some((option) => option.value === "thailand"));
+payload = await tool("run_decision_tree", { answers: ["thailand"] });
+check("Thailand decision returns official TDAC", payload.done === true && payload.summary.includes("TDAC") && payload.forms[0].url.includes("go.th"));
+payload = await tool("run_decision_tree", { answers: ["mexico"] });
+check("Mexico decision returns follow-up", payload.done === false && payload.nextQuestion.options.length >= 2);
+
+const limited = await fixture();
+const otherGrant = await fixture({ userId: limited.id });
+const envQuota = { DB: db, MCP_FREE_MONTHLY_CALLS: "2" };
+await tool("list_countries", {}, limited.key, envQuota);
+await tool("get_country_forms", { country: "thailand" }, otherGrant.key, envQuota);
+response = await mcpPost(context(rpc("tools/call", { name: "list_countries" }, limited.key), envQuota));
+body = await response.json();
+check("quota exhaustion is HTTP 429 with actual usage", response.status === 429 && body.error?.code === -32001 && body.error.data.used === 2 && body.error.data.limit === 2);
+check("multiple grants share one account quota", usage(limited.id) === 2);
+response = await mcpPost(context(rpc("tools/call", { name: "get_field_rules", arguments: { country: 1 } }, limited.key), envQuota));
+check("schema errors still return validation failure at exhausted quota", (await response.json()).error?.code === -32602 && usage(limited.id) === 2);
+const parallel = await fixture();
+const concurrent = await Promise.all(Array.from({ length: 8 }, () => mcpPost(context(rpc("tools/call", { name: "list_countries" }, parallel.key), { DB: db, MCP_FREE_MONTHLY_CALLS: "1" }))));
+check("parallel calls admit exactly one success", concurrent.filter((item) => item.status === 200).length === 1 && concurrent.filter((item) => item.status === 429).length === 7);
+check("parallel calls consume exactly one usage row", usage(parallel.id) === 1);
+const racingGrant = await fixture();
+let revokedDuringCall = false;
+const revokeDuringMeterDb = { prepare(sql) {
+  if (sql.startsWith("INSERT INTO mcp_usage") && !revokedDuringCall) {
+    revokedDuringCall = true;
+    database.prepare("UPDATE mcp_grants SET revoked_at=? WHERE id=?").run(Date.now(), racingGrant.grantId);
+  }
+  return db.prepare(sql);
+} };
+response = await mcpPost(context(rpc("tools/call", { name: "list_countries" }, racingGrant.key), { DB: revokeDuringMeterDb }));
+check("grant revoked between authentication and metering cannot return data", response.status === 401 && usage(racingGrant.id) === 0);
+const racingPlan = await fixture();
+database.prepare("UPDATE mcp_users SET plan='pro' WHERE id=?").run(racingPlan.id);
+let downgradedDuringCall = false;
+const downgradeDuringMeterDb = { prepare(sql) {
+  if (sql.startsWith("INSERT INTO mcp_usage") && !downgradedDuringCall) {
+    downgradedDuringCall = true;
+    database.prepare("UPDATE mcp_users SET plan='free' WHERE id=?").run(racingPlan.id);
+  }
+  return db.prepare(sql);
+} };
+response = await mcpPost(context(rpc("tools/call", { name: "list_countries" }, racingPlan.key), { DB: downgradeDuringMeterDb }));
+check("plan changed between authentication and metering cannot use stale limit", response.status === 401 && usage(racingPlan.id) === 0);
+const zero = await fixture();
+response = await mcpPost(context(rpc("tools/call", { name: "list_countries" }, zero.key), { DB: db, MCP_FREE_MONTHLY_CALLS: "0" }));
+check("zero quota denies successful reads", response.status === 429 && usage(zero.id) === 0);
+const unlimited = await fixture();
+database.prepare("UPDATE mcp_users SET plan='enterprise' WHERE id=?").run(unlimited.id);
+await tool("list_countries", {}, unlimited.key);
+check("unlimited plan still records successful calls", usage(unlimited.id) === 1);
+const unknownPlan = await fixture();
+database.prepare("UPDATE mcp_users SET plan='constructor' WHERE id=?").run(unknownPlan.id);
+response = await mcpPost(context(rpc("tools/call", { name: "list_countries" }, unknownPlan.key)));
+check("unknown plan fails closed", response.status === 503 && usage(unknownPlan.id) === 0);
+response = await mcpPost(context(rpc("tools/call", { name: "list_countries" }, KEY), { DB: db, MCP_FREE_MONTHLY_CALLS: "100junk" }));
+check("invalid quota override fails closed", response.status === 503);
+check("UTC month period is stable", currentPeriod(new Date("2026-10-01T00:00:00Z")) === "2026-10");
+check("known plan limits preserved", planLimit({}, "free") === 100 && planLimit({}, "pro") === 10000 && planLimit({}, "enterprise") === null);
+
+response = await whoamiGet(context(new Request(`${ORIGIN}/api/mcp/whoami`, { headers: { Authorization: `Bearer ${limited.key}` } }), envQuota));
+body = await response.json();
+check("whoami reports account usage and active authorization", response.status === 200 && body.quota.used === 2 && body.quota.remaining === 0 && body.authorization.scope === "mcp:read");
+check("whoami reports tool usage", body.usedByTool.some((item) => item.tool === "list_countries" && item.calls === 1));
+check("whoami reveals no credential hash", !JSON.stringify(body).includes("key_hash"));
+check("whoami and MCP responses prevent caching", response.headers.get("Cache-Control") === "no-store");
+check("whoami without Bearer is unauthorized", (await whoamiGet(context(new Request(`${ORIGIN}/api/mcp/whoami`)))).status === 401);
+database.prepare("UPDATE mcp_grants SET revoked_at=? WHERE id=?").run(Date.now(), first.grantId);
+check("revoked active fixture is immediately denied", (await mcpPost(context(rpc("ping", undefined, KEY)))).status === 401);
+check("revoked grant cannot query whoami", (await whoamiGet(context(new Request(`${ORIGIN}/api/mcp/whoami`, { headers: { Authorization: `Bearer ${KEY}` } })))).status === 401);
+const noDbResponse = await mcpPost(context(rpc("ping", undefined, limited.key), {}));
+check("missing binding returns 503", noDbResponse.status === 503 && (await noDbResponse.json()).error === "mcp_not_configured");
+const brokenDb = { prepare() { throw new Error("SECRET SQLITE internal table detail"); } };
+response = await mcpPost(context(rpc("ping", undefined, limited.key), { DB: brokenDb }));
+check("database failure returns safe 503", response.status === 503 && !(await response.text()).includes("SQLITE"));
+response = await whoamiGet(context(new Request(`${ORIGIN}/api/mcp/whoami`, { headers: { Authorization: `Bearer ${limited.key}` } }), { DB: brokenDb }));
+check("whoami database failure returns safe 503", response.status === 503 && !(await response.text()).includes("SQLITE"));
+
+// The global MCP contract exposes exactly the website's public projection.
+const publicLibrary = JSON.parse(readFileSync(path.join(ROOT, "data/travel_library_public.json"), "utf8"));
+const globalUser = await fixture();
+database.prepare("UPDATE mcp_users SET plan='enterprise' WHERE id=?").run(globalUser.id);
+payload = await tool("list_countries", {}, globalUser.key);
+check("all 249 destinations available without duplicate ISO2 IDs", payload.count === 249 && payload.countries.length === 249 && new Set(payload.countries.map(item => item.iso2)).size === 249);
+check("53 detailed country guides remain available", payload.detailedGuideCount === 53 && payload.countries.filter(item => item.guide).length === 53);
+for (const [args, expected] of [[{}, -32602], [{ id: "th" }, -32602], [{ id: "TH", extra: true }, -32602], [{ id: 42 }, -32602]]) {
+  response = await mcpPost(context(rpc("tools/call", { name: "get_jurisdiction", arguments: args }, globalUser.key)));
+  check("global tool validates ID and rejects unknown properties", (await response.json()).error?.code === expected);
+}
+check("invalid global arguments do not consume quota", usage(globalUser.id) === 1);
+response = await mcpPost(context(rpc("tools/call", { name: "get_jurisdiction", arguments: { id: "ZZ" } }, globalUser.key)));
+check("unknown valid-format ISO2 ID is rejected", (await response.json()).result?.isError === true && usage(globalUser.id) === 1);
+for (const destination of publicLibrary.jurisdictions) {
+  payload = await tool("get_jurisdiction", { id: destination.id }, globalUser.key);
+  assert.deepEqual(payload.jurisdiction, destination);
+  assert.deepEqual(payload.record, publicLibrary.records.find(record => record.jurisdiction_id === destination.id));
+  check(`${destination.id} MCP matches public projection without private fields`, !/"(?:evidence_excerpt|access_status|unresolved|supports)"\s*:|\/Users\/|\/Volumes\//.test(JSON.stringify(payload)));
+  if (payload.record.review_status === "blocked") check(`${destination.id} blocked record cannot publish requirements`, payload.record.procedures.length === 0);
+}
+check("every successful global read is metered", usage(globalUser.id) === 250);
+for (const country of ["china", "nigeria", "south-africa"]) {
+  payload = await tool("get_field_rules", { country }, globalUser.key);
+  check(`${country} preparation data does not claim executable validation`, payload.validationMode === "examples_only");
+}
+
+console.log(`MCP tests passed: ${passed}/${passed}`);

@@ -25,6 +25,9 @@ const CHECK = process.argv.includes("--check");
 // key → Traditional exonym (generic TW/HK service language; no nationality
 // inference — these are standard place-name exonyms only).
 const ZHT = {
+  china: "中國",
+  "south-africa": "南非",
+  nigeria: "奈及利亞",
   indonesia: "印尼",
   malaysia: "馬來西亞",
   singapore: "新加坡",
