@@ -14,7 +14,7 @@ faq:
     a: "不能。這裡只列12項選定準備資料，不是官方全表或本地校驗器。請按 SARS 實際表單填寫。"
   - q: "提交後資料能變更嗎？"
     a: "資料變化時必須在通過海關處理通道前更新。請按官方系統指示操作或向 SARS 求助。"
-lastmod: 2026-09-05
+lastmod: 2026-10-02
 ---
 
 {{< official-link site="south-africa.traveller_declaration" >}}

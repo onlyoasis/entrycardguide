@@ -5,7 +5,7 @@ description: "entrycardguide.com 每一類說法背後的完整方法論。任�
 date: 2026-04-27
 url: "/zh-hant/trust/"
 layout: trust
-lastmod: 2026-08-10
+lastmod: 2026-10-02
 ---
 
 這是[關於頁方法論部分](/zh-hant/about/#methodology)的長版。短版是：不要相信文案，直接查文件。

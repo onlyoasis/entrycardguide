@@ -3,7 +3,7 @@ title: "MCP：登入並授權你的 Agent"
 description: "通過 MCP 獲取官方入境表指南和全球目的地資料。驗證信箱並登入後，單獨授權可撤銷的只讀憑據。"
 date: 2026-09-26
 url: "/zh-hant/mcp/"
-lastmod: 2026-09-26
+lastmod: 2026-10-02
 ---
 
 ## 註冊、登入與授權

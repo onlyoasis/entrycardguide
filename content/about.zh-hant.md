@@ -4,7 +4,7 @@ description: "誰在營運 entrycardguide，為什麼有這個網站，我們怎
 date: 2026-04-25
 url: "/zh-hant/about/"
 layout: about
-lastmod: 2026-08-10
+lastmod: 2026-10-02
 ---
 
 ## 為什麼有這個網站
