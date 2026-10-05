@@ -1,0 +1,152 @@
+{{ define "main" }}
+{{- $isZh := eq .Site.Language.Lang "zh" -}}
+
+{{- $library := partial "library-data.html" . -}}
+{{- $jurs := $library.jurisdictions -}}
+{{- $byId := $library.byId -}}
+
+{{- $statusLabels := cond $isZh
+  (dict "verified" "已核实" "partial" "部分核实" "pending" "待核" "not_researched" "尚未整理")
+  (dict "verified" "Verified" "partial" "Partial" "pending" "Needs verification" "not_researched" "Not researched yet") -}}
+{{- $regionsZh := dict "Africa" "非洲" "Americas" "美洲" "Asia" "亚洲" "Europe" "欧洲" "Oceania" "大洋洲" "Unspecified (M49)" "其他地区" -}}
+
+{{- /* Mutual-exclusive status per jurisdiction + tallies */ -}}
+{{- $tally := dict "verified" 0 "partial" 0 "pending" 0 "not_researched" 0 -}}
+{{- $regions := slice -}}
+{{- range $jurs -}}
+  {{- $rec := index $byId .id -}}
+  {{- $status := "not_researched" -}}
+  {{- if $rec -}}
+    {{- if eq $rec.review_status "verified" }}{{ $status = "verified" }}
+    {{- else if eq $rec.review_status "partial" }}{{ $status = "partial" }}
+    {{- else }}{{ $status = "pending" }}{{- end -}}
+  {{- else if and $library.isResearch (ne .research_status "not_researched") }}{{ $status = "pending" }}{{- end -}}
+  {{- $tally = merge $tally (dict $status (add (index $tally $status) 1)) -}}
+  {{- if not (in $regions .region) }}{{ $regions = $regions | append .region }}{{ end -}}
+{{- end -}}
+
+<nav aria-label="Breadcrumb" class="-mx-md px-md py-3 border-b border-rule font-mono text-xs text-muted">
+  <a href="{{ "/" | relLangURL }}" class="text-muted no-underline hover:text-ink">{{ if $isZh }}首页{{ else }}Home{{ end }}</a>
+  <span class="mx-1.5">›</span>
+  <span class="text-ink">{{ .Title }}</span>
+</nav>
+
+<header class="page-hero pb-md" data-library-mode="{{ cond $library.isResearch "research" "public" }}">
+  <h1 class="font-serif font-medium m-0" style="line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">{{ .Title }}</h1>
+  <p class="mt-4 mb-0 text-muted" style="max-width: 46rem;">{{ if not $jurs }}
+    {{ if $isZh }}资料正在核对中。你可以先查阅官方链接目录和现有指南。{{ else }}We are checking these details. Browse the official links and existing guides in the meantime.{{ end }}
+  {{ else if not $library.isResearch }}
+    {{ if $isZh }}查看 {{ len $jurs }} 个目的地的入境申报事项、官方来源和核实日期。{{ else }}Entry declaration requirements, official sources and verification dates for {{ len $jurs }} destinations.{{ end }}
+  {{ else if $isZh }}
+    共 {{ len $jurs }} 个国家和地区。资料已核实 {{ index $tally "verified" }}、部分核实 {{ index $tally "partial" }}、待核 {{ index $tally "pending" }}、尚未整理 {{ index $tally "not_researched" }}，四类互斥。「已有指南」只代表本站有旧文章，不等于海关资料已核实。
+  {{ else }}
+    {{ len $jurs }} countries and areas in scope. Verified {{ index $tally "verified" }}, partial {{ index $tally "partial" }}, needs verification {{ index $tally "pending" }}, not researched yet {{ index $tally "not_researched" }} — the four categories are mutually exclusive. "Guide" means an older article of ours exists; it does not mean customs research is verified.
+  {{ end }}</p>
+</header>
+
+{{ if $jurs }}
+<div data-library class="my-lg">
+  {{- /* Hidden until JS loads; without JS the full table stays browsable. */ -}}
+  {{- /* display:none inline, not the hidden attribute: the .flex utility
+         would otherwise override [hidden] and show dead controls without
+         JS. library.ts clears the inline style on init. */ -}}
+  <div data-library-controls style="display:none" class="flex flex-wrap items-end gap-3 mb-4">
+    <div class="flex flex-col gap-1">
+      <label for="library-search" class="font-mono text-xs uppercase text-muted">{{ if $isZh }}搜索{{ else }}Search{{ end }}</label>
+      <input id="library-search" data-library-search type="search"
+        placeholder="{{ if $isZh }}名称或 ISO 代码{{ else }}Name or ISO code{{ end }}"
+        class="border border-rule rounded-md px-3 py-2 text-small bg-white font-sans" />
+    </div>
+    <div class="flex flex-col gap-1">
+      <label for="library-region" class="font-mono text-xs uppercase text-muted">{{ if $isZh }}地区{{ else }}Region{{ end }}</label>
+      <select id="library-region" data-library-region class="border border-rule rounded-md px-3 py-2 text-small bg-white font-sans">
+        <option value="">{{ if $isZh }}全部地区{{ else }}All regions{{ end }}</option>
+        {{- range $regions }}
+        <option value="{{ . }}">{{ if $isZh }}{{ index $regionsZh . | default . }}{{ else }}{{ . }}{{ end }}</option>
+        {{- end }}
+      </select>
+    </div>
+    <div class="flex flex-col gap-1">
+      <label for="library-status" class="font-mono text-xs uppercase text-muted">{{ if $isZh }}状态{{ else }}Status{{ end }}</label>
+      <select id="library-status" data-library-status class="border border-rule rounded-md px-3 py-2 text-small bg-white font-sans">
+        <option value="">{{ if $isZh }}全部状态{{ else }}All statuses{{ end }}</option>
+        <option value="verified">{{ index $statusLabels "verified" }}</option>
+        {{ if $library.isResearch }}
+        <option value="partial">{{ index $statusLabels "partial" }}</option>
+        <option value="pending">{{ index $statusLabels "pending" }}</option>
+        <option value="not_researched">{{ index $statusLabels "not_researched" }}</option>
+        {{ end }}
+      </select>
+    </div>
+    <button type="button" data-library-reset disabled
+      class="border border-rule rounded-md px-3 py-2 text-small font-sans text-ink">{{ if $isZh }}重置{{ else }}Reset{{ end }}</button>
+  </div>
+
+  <p data-library-count style="display:none" class="text-small text-muted my-4" aria-live="polite"
+     data-count-label="{{ if $isZh }}{count} / {total} 个目的地{{ else }}{count} of {total} destinations{{ end }}"></p>
+
+  <div class="directory-scroll">
+    <table class="directory-table library-table">
+      <thead>
+        <tr>
+          <th class="library-col-destination" scope="col">{{ if $isZh }}目的地{{ else }}Destination{{ end }}</th>
+          <th class="library-col-region" scope="col">{{ if $isZh }}地区{{ else }}Region{{ end }}</th>
+          <th class="library-col-status" scope="col">{{ if $isZh }}资料状态{{ else }}Research status{{ end }}</th>
+          <th class="library-col-procedures" scope="col">{{ if $isZh }}事项数{{ else }}Procedures{{ end }}</th>
+          <th class="library-col-links" scope="col">{{ if $isZh }}链接{{ else }}Links{{ end }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{- range sort $jurs "name_en" }}
+        {{- $rec := index $byId .id -}}
+        {{- $status := "not_researched" -}}
+        {{- if $rec -}}
+          {{- if eq $rec.review_status "verified" }}{{ $status = "verified" }}
+          {{- else if eq $rec.review_status "partial" }}{{ $status = "partial" }}
+          {{- else }}{{ $status = "pending" }}{{- end -}}
+        {{- else if and $library.isResearch (ne .research_status "not_researched") }}{{ $status = "pending" }}{{- end -}}
+        {{- $regionLabel := .region }}{{ if $isZh }}{{ $regionLabel = index $regionsZh .region | default .region }}{{ end -}}
+        {{- $searchText := printf "%s %s %s %s" .name_en .name_zh .id .region -}}
+        <tr data-library-row data-status="{{ $status }}" data-region="{{ .region }}" data-search="{{ $searchText }}">
+          <th scope="row">
+            {{- if $rec -}}
+            <a class="text-ink font-medium no-underline underline-offset-2 hover:underline" href="{{ printf "/library/%s/" (lower .id) | relLangURL }}">{{ .name_en }}{{ if $isZh }} · {{ .name_zh }}{{ end }}</a>
+            {{- else -}}
+            <span class="font-medium">{{ .name_en }}{{ if $isZh }} · {{ .name_zh }}{{ end }}</span>
+            {{- end -}}
+            <div class="font-mono text-xs text-muted mt-0.5">{{ .id }}</div>
+          </th>
+          <td>{{ $regionLabel }}</td>
+          <td>
+            <span class="library-status library-status-{{ $status }}">{{ index $statusLabels $status }}</span>
+            {{- if and $rec (eq $rec.review_status "blocked") }}
+            <div class="text-xs text-muted mt-0.5">{{ if $isZh }}研究受阻{{ else }}research blocked{{ end }}</div>
+            {{- end -}}
+          </td>
+          <td class="font-mono">{{ with $rec }}{{ len .procedures }}{{ else }}—{{ end }}</td>
+          <td>
+            {{- if $rec -}}
+            <a class="text-verified no-underline underline-offset-2 hover:underline" href="{{ printf "/library/%s/" (lower .id) | relLangURL }}">{{ if $isZh }}详情{{ else }}Details{{ end }}</a>
+            {{- end -}}
+            {{- with .existing_site_key }}
+            {{- if $rec }} · {{ end -}}
+            <a class="text-muted no-underline underline-offset-2 hover:text-ink hover:underline" href="{{ printf "/%s/" . | relLangURL }}">{{ if $isZh }}指南{{ else }}Guide{{ end }}</a>
+            {{- end -}}
+          </td>
+        </tr>
+        {{- end -}}
+      </tbody>
+    </table>
+  </div>
+
+  {{- if $isZh }}<p data-library-empty hidden class="text-small text-scam my-4">没有符合条件的目的地。</p>
+  {{- else }}<p data-library-empty hidden class="text-small text-scam my-4">No destination matches.</p>{{- end -}}
+</div>
+{{ else }}
+<p class="my-lg"><a class="text-verified underline underline-offset-2" href="{{ "/official-links/" | relLangURL }}">{{ if $isZh }}查看官方链接目录{{ else }}Browse official links{{ end }}</a></p>
+{{ end }}
+
+<div class="content max-w-prose mt-lg text-body">
+  {{ .Content }}
+</div>
+{{ end }}

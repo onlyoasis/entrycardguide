@@ -1,0 +1,151 @@
+{{ define "main" }}
+{{- $isZh := eq .Site.Language.Lang "zh" -}}
+
+{{- $library := partial "library-data.html" . -}}
+{{- $iso := .Params.iso -}}
+{{- $jur := false -}}
+{{- range $library.jurisdictions -}}
+  {{- if eq .id $iso }}{{ $jur = . }}{{ end -}}
+{{- end -}}
+{{- $rec := index $library.byId $iso -}}
+
+{{- $statusLabels := cond $isZh
+  (dict "verified" "已核实" "partial" "部分核实" "pending" "待核")
+  (dict "verified" "Verified" "partial" "Partial" "pending" "Needs verification") -}}
+{{- $typeLabels := cond $isZh
+  (dict "customs_declaration" "海关申报" "arrival_card" "入境卡" "health_declaration" "健康申报" "travel_authorization" "旅行授权" "visa" "签证")
+  (dict "customs_declaration" "Customs declaration" "arrival_card" "Arrival card" "health_declaration" "Health declaration" "travel_authorization" "Travel authorisation" "visa" "Visa") -}}
+{{- $channelLabels := cond $isZh
+  (dict "online" "在线" "paper" "纸质" "on_arrival" "入境时" "on_departure" "出境时" "conditional" "视情况" "unknown" "未知")
+  (dict "online" "Online" "paper" "Paper" "on_arrival" "On arrival" "on_departure" "On departure" "conditional" "Conditional" "unknown" "Unknown") -}}
+{{- $status := "pending" -}}
+{{- with $rec -}}
+  {{- if eq .review_status "verified" }}{{ $status = "verified" }}
+  {{- else if eq .review_status "partial" }}{{ $status = "partial" }}{{- end -}}
+{{- end -}}
+{{- $regionsZh := dict "Africa" "非洲" "Americas" "美洲" "Asia" "亚洲" "Europe" "欧洲" "Oceania" "大洋洲" "Unspecified (M49)" "其他地区" -}}
+
+<nav aria-label="Breadcrumb" class="-mx-md px-md py-3 border-b border-rule font-mono text-xs text-muted">
+  <a href="{{ "/" | relLangURL }}" class="text-muted no-underline hover:text-ink">{{ if $isZh }}首页{{ else }}Home{{ end }}</a>
+  <span class="mx-1.5">›</span>
+  <a href="{{ "/library/" | relLangURL }}" class="text-muted no-underline hover:text-ink">{{ if $isZh }}资料库{{ else }}Library{{ end }}</a>
+  <span class="mx-1.5">›</span>
+  <span class="text-ink">{{ with $jur }}{{ if $isZh }}{{ .name_zh }}{{ else }}{{ .name_en }}{{ end }}{{ else }}{{ $iso }}{{ end }}</span>
+</nav>
+
+{{- if not $rec }}
+{{- /* Should not happen: the adapter only creates pages for existing
+       records. Render an honest empty state rather than fake facts. */ -}}
+<header class="page-hero pb-md" data-library-mode="{{ cond $library.isResearch "research" "public" }}">
+  <h1 class="font-serif font-medium m-0" style="line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">{{ .Title }}</h1>
+</header>
+<p class="text-body text-muted">{{ if $isZh }}该目的地暂无研究记录，返回资料库查看当前状态。{{ else }}No research record for this destination yet. See the library index for its current status.{{ end }}</p>
+<p><a class="text-verified underline underline-offset-2" href="{{ "/library/" | relLangURL }}">{{ if $isZh }}返回资料库{{ else }}Back to the library{{ end }}</a></p>
+{{- else }}
+
+<header class="page-hero pb-md" data-library-mode="{{ cond $library.isResearch "research" "public" }}">
+  <div class="text-meta font-mono uppercase text-muted mb-5">
+    {{ $iso }} · {{ with $jur }}{{ if $isZh }}{{ index $regionsZh .region | default .region }}{{ else }}{{ .region }}{{ end }}{{ end }}
+  </div>
+  <h1 class="font-serif font-medium m-0" style="line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
+    {{ with $jur }}{{ if $isZh }}{{ .name_zh }}{{ else }}{{ .name_en }}{{ end }}{{ else }}{{ $iso }}{{ end }}{{ if $isZh }} · 入境申报资料{{ else }} · entry declaration requirements{{ end }}
+  </h1>
+  <p class="mt-4 mb-0 text-small text-muted font-mono uppercase">
+    <span class="library-status library-status-{{ $status }}">{{ index $statusLabels $status }}</span>
+    {{ if $isZh }}核对于{{ else }}checked{{ end }} {{ with $rec.researched_at }}{{ . }}{{ else }}{{ if $isZh }}日期未知{{ else }}date unknown{{ end }}{{ end }}
+    {{- if eq $rec.review_status "blocked" }} · {{ if $isZh }}研究受阻{{ else }}research blocked{{ end }}{{ end -}}
+  </p>
+</header>
+
+{{- if eq $rec.review_status "blocked" }}
+<p class="library-pending-note">{{ if $isZh }}该目的地的研究目前受阻：下面没有任何已证实的要求，只有待核事项和下一步官方入口。{{ else }}Research on this destination is currently blocked: nothing below is a confirmed requirement — only unresolved items and next official steps.{{ end }}</p>
+{{- else if eq $rec.review_status "partial" }}
+<p class="library-pending-note">{{ if $isZh }}以下内容为部分核实：每项单独标注了核实日期；未标注核实日期的项仍需进一步核实。{{ else }}Partially verified: each item shows its own verification date; items without one still need further verification.{{ end }}</p>
+{{- end }}
+
+{{- with $rec.procedures }}
+<h2 class="font-serif font-medium text-h2 mt-lg mb-md">{{ if $isZh }}申报事项{{ else }}Procedures{{ end }}</h2>
+{{- range . }}
+<section class="library-procedure">
+  <h3 class="font-sans font-semibold text-h3 mt-0 mb-2">
+    {{ if $isZh }}{{ .name_zh | default .name_en }}{{ else }}{{ .name_en }}{{ end }}
+    {{- if not .verified_at }} <span class="library-pending-badge">{{ if $isZh }}待核{{ else }}unverified{{ end }}</span>{{ end -}}
+  </h3>
+  <dl class="library-facts">
+    <div><dt>{{ if $isZh }}类型{{ else }}Type{{ end }}</dt><dd>{{ index $typeLabels .type | default .type }}</dd></div>
+    <div><dt>{{ if $isZh }}办理机构{{ else }}Agency{{ end }}</dt><dd>{{ .agency }}</dd></div>
+    {{- with .official_url }}
+    <div><dt>{{ if $isZh }}官方来源{{ else }}Official source{{ end }}</dt><dd><a class="text-verified underline underline-offset-2 break-words" href="{{ . }}" rel="noopener">{{ . }}</a></dd></div>
+    {{- end }}
+    <div><dt>{{ if $isZh }}渠道{{ else }}Channel{{ end }}</dt><dd>{{ index $channelLabels .channel | default .channel }}</dd></div>
+    <div><dt>{{ if $isZh }}费用{{ else }}Fee{{ end }}</dt><dd>{{ if reflect.IsMap .fee -}}
+      {{- $amount := .fee.amount -}}
+      {{- if eq (printf "%T" $amount) "<nil>" }}<span class="library-pending-badge">{{ if $isZh }}未知{{ else }}unknown{{ end }}</span>
+      {{- else if eq (float $amount) 0.0 }}{{ if $isZh }}免费{{ else }}Free{{ end }}
+      {{- else }}{{ $amount }}{{ with .fee.currency }} {{ . }}{{ end }}{{ end -}}
+      {{- with .fee.note }} <span class="text-muted">({{ . }})</span>{{ end -}}
+    {{- else if eq .fee "unknown" }}<span class="library-pending-badge">{{ if $isZh }}未知{{ else }}unknown{{ end }}</span>{{- else if eq .fee "free" }}{{ if $isZh }}免费{{ else }}Free{{ end }}{{- else if .fee }}{{ .fee }}{{- else }}<span class="library-pending-badge">{{ if $isZh }}未知{{ else }}unknown{{ end }}</span>{{- end }}</dd></div>
+    <div><dt>{{ if $isZh }}核实状态{{ else }}Verification{{ end }}</dt><dd>{{ with .verified_at }}{{ if $isZh }}已核实于{{ else }}verified{{ end }} {{ . }}{{ else }}<span class="library-pending-badge">{{ if $isZh }}待核——需进一步核实{{ else }}needs verification — not yet confirmed{{ end }}</span>{{ end }}</dd></div>
+  </dl>
+  {{- with .applicability_en }}{{ if not $isZh }}<p class="library-prose">{{ . }}</p>{{ end }}{{ end }}
+  {{- with .applicability_zh }}{{ if $isZh }}<p class="library-prose">{{ . }}</p>{{ end }}{{ end }}
+  {{- with .timing_en }}{{ if not $isZh }}<p class="library-prose"><span class="font-mono text-xs uppercase text-muted">{{ if $isZh }}时间{{ else }}Timing{{ end }}:</span> {{ . }}</p>{{ end }}{{ end }}
+  {{- with .timing_zh }}{{ if $isZh }}<p class="library-prose"><span class="font-mono text-xs uppercase text-muted">办理时间:</span> {{ . }}</p>{{ end }}{{ end }}
+  {{- with .source_ids }}
+  <p class="text-small text-muted">{{ if $isZh }}来源：{{ else }}Sources: {{ end }}{{ range $i, $sourceId := . }}{{ if $i }} · {{ end }}<a class="text-verified underline underline-offset-2" href="#source-{{ $sourceId }}">{{ $sourceId }}</a>{{ end }}</p>
+  {{- end }}
+</section>
+{{- end }}
+{{- else }}
+<h2 class="font-serif font-medium text-h2 mt-lg mb-md">{{ if $isZh }}申报事项{{ else }}Procedures{{ end }}</h2>
+<p class="text-body text-muted">{{ if $isZh }}尚未记录入境或海关申报事项，研究仍在进行。{{ else }}No entry or customs procedures recorded yet — research is in progress.{{ end }}</p>
+{{- end }}
+
+{{- with $rec.sources }}
+<h2 class="font-serif font-medium text-h2 mt-lg mb-md">{{ if $isZh }}来源{{ else }}Sources{{ end }}</h2>
+{{- range . }}
+<section class="library-source" id="source-{{ .id }}">
+  <h3 class="font-sans font-semibold text-h3 mt-0 mb-2">{{ .title }}</h3>
+  <dl class="library-facts">
+    <div><dt>{{ if $isZh }}发布方{{ else }}Publisher{{ end }}</dt><dd>{{ .publisher }}</dd></div>
+    <div><dt>URL</dt><dd><a class="text-verified underline underline-offset-2 break-words" href="{{ .url }}" rel="noopener">{{ .url }}</a></dd></div>
+    {{- if $library.isResearch }}
+    <div><dt>{{ if $isZh }}检索于{{ else }}Retrieved{{ end }}</dt><dd>{{ .retrieved_at }}</dd></div>
+    {{- if ne .access_status "ok" }}
+    <div><dt>{{ if $isZh }}访问状态{{ else }}Access{{ end }}</dt><dd><span class="library-pending-badge">{{ if $isZh }}访问未完成{{ else }}access not completed{{ end }}</span></dd></div>
+    {{- end }}
+    {{- end }}
+  </dl>
+  {{- if $library.isResearch }}
+  {{- with .evidence_excerpt }}
+  <blockquote class="library-evidence"><p class="m-0">{{ . }}</p></blockquote>
+  {{- end }}
+  {{- end }}
+</section>
+{{- end }}
+{{- end }}
+
+{{- if $library.isResearch }}
+{{- with $rec.unresolved }}
+<h2 class="font-serif font-medium text-h2 mt-lg mb-md">{{ if $isZh }}需进一步核实{{ else }}Needs further verification{{ end }}</h2>
+<p class="text-small text-muted">{{ if $isZh }}以下事项尚未核实，不构成已证实的要求。{{ else }}The items below are unresolved; do not treat them as confirmed requirements.{{ end }}</p>
+{{- range . }}
+{{- with .note }}
+<p class="library-unresolved-note">{{ . }}</p>
+{{- end }}
+{{- with .next_check_url }}
+<p class="text-small">{{ if $isZh }}下一步官方入口:{{ else }}Next official step:{{ end }} <a class="text-verified underline underline-offset-2 break-words" href="{{ . }}" rel="noopener">{{ . }}</a></p>
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{- end }}
+
+{{- with $jur.existing_site_key }}
+<p class="mt-lg text-small">
+  <a class="text-verified underline underline-offset-2" href="{{ printf "/%s/" . | relLangURL }}">{{ if $isZh }}阅读本站旧指南{{ else }}Read our older guide{{ end }}</a>
+  <span class="text-muted">{{ if $isZh }}（旧指南不等于本文资料已核实）{{ else }}(an older article — not the same as verified research above){{ end }}</span>
+</p>
+{{- end }}
+{{- end }}
+{{ end }}

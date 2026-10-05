@@ -65,6 +65,11 @@
 </div>
 
 <div class="border-t-2 border-ink pt-md mb-xl">
+  <h4 class="font-mono text-meta uppercase text-muted mb-3 font-medium">{{ i18n "share_rail_label" }}</h4>
+  {{- partial "share-buttons.html" . -}}
+</div>
+
+<div class="border-t-2 border-ink pt-md mb-xl">
   <h4 class="font-mono text-meta uppercase text-muted mb-3 font-medium">{{ i18n "rail_money_from" }}</h4>
   <p class="text-small text-muted leading-relaxed">{{ i18n "rail_money_explainer" }}
     <a href="{{ "/about/" | relLangURL }}" class="text-ink">{{ i18n "rail_full_disclosure" }}</a>.</p>
@@ -73,6 +78,14 @@
     {{ i18n "rail_we_dont_take_value" }}
   </div>
 </div>
+
+{{- /* Section-scoped, matching the guard single.html used before the card
+       moved into the rail — top-level pages like /changelog/ stay ad-free. */ -}}
+{{- if .Section }}
+<div class="border-t-2 border-ink pt-md mb-xl">
+  {{- partial "affiliate-rail.html" . -}}
+</div>
+{{- end }}
 
 {{- /* Related posts in the same country taxonomy. Filter to current language so a
        /zh/ article never shows English siblings as related. */ -}}

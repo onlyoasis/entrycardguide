@@ -1,88 +1,139 @@
 # Philippines eTravel — field-by-field display data for the how-to-fill layout.
+#
+# Labels, date-format hints, notices and error strings below are verbatim from
+# official eTravel properties, captured 2026-09-04:
+#   - https://etravel.gov.ph/data-policy — the 28 data items eTravel collects
+#   - https://etravel.gov.ph declaration form page (embedded i18n catalog) —
+#     wizard step names, field labels, "(MM/DD/YYYY)" date hint, flight notice
+#   - https://etravel.gov.ph/frequently-asked-questions — QR colors, 72-hour
+#     window, lost-QR recovery, free-of-charge, duplicate registration
+#
+# [[fields]] is the high-error shortlist shown on the page; the form total
+# (28 items) lives in meta.field_count in data/official_urls/philippines.toml,
+# same convention as malaysia.toml. Step numbers follow the wizard order in the
+# i18n catalog: 1 Personal Information, 2 Permanent Country of Residence,
+# 3 Travel Details, 4 Health Declaration. Steps 2 and 4 are dropdowns and
+# yes/no questions, so no high-error text card carries them.
 
 [[fields]]
 n = "01"
-key = "passport"
-section_en = "Section 1 · Passport"
-section_zh = "第 1 段 · 护照"
-example = "A12345678"
-mistake = "A 12345678"
-mistake_why_en = "space pasted from a scan or airline profile"
-mistake_why_zh = "从扫描件或航司资料里复制时带了空格"
-copy_en = "Use the passport number on the photo page. Do not paste the MRZ line. No spaces, no dashes."
-copy_zh = "填写护照照片页上的护照号。不要复制 MRZ 行。无空格、无短横。"
+key = "email"
+section_en = "Step 1 · Personal Information"
+section_zh = "第 1 步 · 个人信息"
+example = "travel@gmail.com"
+mistake = "travel@gmial.com"
+mistake_why_en = "domain typo — the 6-digit OTP never arrives and registration cannot finish"
+mistake_why_zh = "域名打错——6 位验证码永远收不到，注册走不完"
+copy_en = "Official label: Email address, the first item in the Data Policy's list of what eTravel collects. Sign-up emails a 6-digit one-time password (OTP) to this address; the site says to wait at least 3 minutes for it. Use an inbox you can open on your phone at check-in."
+copy_zh = "官方字段名「Email address」，在 Data Policy 的收集清单里排第 1 位。注册时官方向这个邮箱发 6 位一次性验证码（OTP），并提示至少等 3 分钟。填你在值机时用手机打得开的邮箱。"
 
 [[fields]]
 n = "02"
 key = "full_name"
-section_en = "Section 1 · Passport"
-section_zh = "第 1 段 · 护照"
-example = "MARIA SANTOS"
-mistake = "María Santos"
-mistake_why_en = "accented characters can break matching with passport data"
-mistake_why_zh = "重音字符可能导致和护照资料匹配失败"
-copy_en = "Use the Latin spelling from your passport. If the printed name has accents, use the MRZ spelling."
-copy_zh = "用护照上的 Latin 拼写。印刷名字带重音符时，以 MRZ 拼写为准。"
+section_en = "Step 1 · Personal Information"
+section_zh = "第 1 步 · 个人信息"
+example = "First Name MARIA · Last Name SANTOS"
+mistake = "First Name SANTOS · Last Name MARIA"
+mistake_why_en = "names swapped between boxes — the eTravel record stops matching the passport"
+mistake_why_zh = "姓和名填反——eTravel 记录和护照对不上"
+copy_en = "Four separate boxes, not one: First Name, Middle Name, Last Name, Suffix, in the order the Data Policy lists them. Type each part exactly as printed on the passport photo page, and keep each passport name in its own box."
+copy_zh = "官方是 4 个独立输入框，不是一整栏：「First Name」「Middle Name」「Last Name」「Suffix」，Data Policy 也按这个顺序列出。每一段按护照资料页的印刷拼写逐框填，不调换顺序。"
 
 [[fields]]
 n = "03"
-key = "date_of_birth"
-section_en = "Section 1 · Passport"
-section_zh = "第 1 段 · 护照"
-example = "1991-08-22"
-mistake = "08/22/1991"
-mistake_why_en = "US format — use the date picker on the official site"
-mistake_why_zh = "美式日期格式——在官方站用日期选择器"
-copy_en = "Use the official date picker when available. This local checker uses ISO YYYY-MM-DD so mistakes are easy to see."
-copy_zh = "官方站有日期选择器就用选择器。本地校验器用 ISO YYYY-MM-DD，方便提前发现错误。"
+key = "passport"
+section_en = "Step 1 · Personal Information"
+section_zh = "第 1 步 · 个人信息"
+example = "A12345678"
+mistake = "A 12345678"
+mistake_why_en = "space copied from the photo page layout or an airline profile"
+mistake_why_zh = "照照片页版式或航司资料复制时带进了空格"
+copy_en = "Official label: Passport Number. Type the number from the photo page as one string. Do not paste the two long lines at the bottom of the data page: that is the MRZ, with check digits, not the number itself."
+copy_zh = "官方字段名「Passport Number」。照资料页逐位输入，作为一个连续字符串。别把资料页底部那两长串粘进来：那是 MRZ，含校验位，不是护照号。"
 
 [[fields]]
 n = "04"
-key = "flight_number"
-section_en = "Section 2 · Trip"
-section_zh = "第 2 段 · 行程"
-example = "PR103"
-mistake = "PAL 103"
-mistake_why_en = "airline name instead of the IATA carrier code"
-mistake_why_zh = "写了航司名，而不是 IATA 航司代码"
-copy_en = "Use the operating carrier code plus flight number. For cruise travel, use the vessel details the eTravel flow asks for."
-copy_zh = "用实际承运航司代码 + 航班号。邮轮旅客按 eTravel 流程要求填船舶信息。"
+key = "date_of_birth"
+section_en = "Step 1 · Personal Information"
+section_zh = "第 1 步 · 个人信息"
+example = "08/22/1991"
+mistake = "22/08/1991"
+mistake_why_en = "day-first order — there is no month 22 in (MM/DD/YYYY)"
+mistake_why_zh = "日在前的写法——（MM/DD/YYYY）里没有第 22 个月"
+copy_en = "Official label: Birth Date, and the form marks every date field (MM/DD/YYYY): month, then day, then year. 08/22/1991 means August 22, 1991. The local checker below is the opposite — it takes YYYY-MM-DD."
+copy_zh = "官方字段名「Birth Date」。表单所有日期栏都标注（MM/DD/YYYY）：先月、再日、后年。08/22/1991 是 1991 年 8 月 22 日。下方本地校验器相反，输入格式是 YYYY-MM-DD。"
 
 [[fields]]
 n = "05"
-key = "arrival_date"
-section_en = "Section 2 · Trip"
-section_zh = "第 2 段 · 行程"
-example = "2026-07-14"
-mistake = "2026-07-13"
-mistake_why_en = "used departure date instead of Philippine local arrival date"
-mistake_why_zh = "用了出发日期，而不是菲律宾当地抵达日期"
-copy_en = "Use the date you land in the Philippines, in local time. Red-eye flights often arrive the next day."
-copy_zh = "填写按菲律宾当地时间落地的日期。红眼航班常常是次日抵达。"
+key = "mobile_number"
+section_en = "Step 1 · Personal Information"
+section_zh = "第 1 步 · 个人信息"
+example = "+639171234567"
+mistake = "0917-123-4567"
+mistake_why_en = "local format with dashes and no country code — unreachable from abroad"
+mistake_why_zh = "只有本地格式，带连字符没区号——从国外打不通"
+copy_en = "Official label: Mobile Number, item 11 in the Data Policy list, between Nationality and Address. Include your country code (+86 for China, +63 for a Philippine SIM). The local checker below accepts a + followed by 7 to 15 digits."
+copy_zh = "官方字段名「Mobile Number」，Data Policy 清单第 11 项，排在「Nationality」和「Address」之间。带国家区号（中国 +86，菲律宾卡 +63）。下方本地校验器接受 + 加 7 到 15 位数字。"
 
 [[fields]]
 n = "06"
-key = "email"
-section_en = "Section 4 · Contact"
-section_zh = "第 4 段 · 联系方式"
-example = "travel@gmail.com"
-mistake = "travel@gmial.com"
-mistake_why_en = "domain typo — the QR email never arrives"
-mistake_why_zh = "邮箱域名拼错——二维码邮件不会送达"
-copy_en = "Use an inbox you can open at check-in and arrival. Screenshot the QR after submission."
-copy_zh = "用值机和入境时都能打开的邮箱。提交后立刻截二维码。"
+key = "arrival_date"
+section_en = "Step 3 · Travel Details"
+section_zh = "第 3 步 · 行程信息"
+example = "07/14/2026"
+mistake = "landed 07/14 · typed 07/13"
+mistake_why_en = "departure-city date — the form wants the arrival date in Philippine local time"
+mistake_why_zh = "填了出发地日期——表单要的是菲律宾当地的抵达日期"
+copy_en = "Official label: Date of Arrival, marked (MM/DD/YYYY) like every date field. Use the date you land in Philippine local time; red-eye flights often arrive the next calendar day. This date also controls the registration window — see the error decoder below."
+copy_zh = "官方字段名「Date of Arrival」，和其他日期栏一样按（MM/DD/YYYY）填。用菲律宾当地落地日期；红眼航班常常跨到第二天。这个日期还决定注册窗口，见下方错误解码。"
+
+[[fields]]
+n = "07"
+key = "flight_number"
+section_en = "Step 3 · Travel Details"
+section_zh = "第 3 步 · 行程信息"
+example = "PR103"
+mistake = "PAL 103"
+mistake_why_en = "airline name instead of the two-letter carrier code"
+mistake_why_zh = "写了航司名，不是两位航司代码"
+copy_en = "Official label: Flight Number, in the Travel Details step. The form auto-fills your terminal from it, and after the NAIA terminal reassignments the site posts a notice: fill in the correct flight number in your scheduled travel, and disregard the auto-filled terminal. Sea travelers get Voyage Number and Vessel Name fields instead."
+copy_zh = "官方字段名「Flight Number」，在行程（Travel Details）步骤。表单会按它自动带出航站楼；NAIA 航站楼调整后，官网专门公告：请填正确航班号（fill in the correct flight number in your scheduled travel），忽略自动带出的航站楼。乘船旅客对应的是「Voyage Number」和「Vessel Name」。"
+
+# Error decoder — every code is an official string, verbatim.
+# Sources: form i18n catalog (Validation), site banner, FAQ. Official typos
+# ("regisration", "incovenience") are kept as printed.
 
 [[errors]]
-code = "Invalid passport number"
-why_en = "Space, dash, or copied MRZ text."
-why_zh = "包含空格、短横，或复制了 MRZ 文本。"
+code = "Please make sure to fill out all required fields."
+why_en = "The form's own validation banner. Skipping a box and submitting anyway is the incomplete half of what earns a red QR; the FAQ pairs incomplete with incorrect."
+why_zh = "表单自带的必填校验提示。漏填硬交，正是 FAQ 里红码成因的「不完整」那一半，另一半是填错。"
 
 [[errors]]
-code = "Invalid date"
-why_en = "Typed a date instead of using the picker, or used departure date."
-why_zh = "手输日期格式不对，或用了出发日期。"
+code = "The green QR code is issued when your submission of required information is proper and complete."
+why_en = "Green means straight through. The FAQ says with a green QR you may directly proceed with immigration inspection upon arrival. Screenshot it and go."
+why_zh = "绿码直通。FAQ 原文说拿到绿码可直达入境查验（directly proceed with immigration inspection upon arrival）。截图走人。"
 
 [[errors]]
-code = "Email not received"
-why_en = "Check spam first. If still missing, refile on etravel.gov.ph and save the QR screenshot."
-why_zh = "先查垃圾箱。仍没有就到 etravel.gov.ph 重新提交，并保存二维码截图。"
+code = "The red QR code is issued when the data submitted is incomplete/incorrect, and/or if for the past 30 days, you are sick or have a history of exposure to a person who is sick or known to have communicable/infectious disease prior to travel."
+why_en = "Red is not a refusal. You are routed to further inspection by the Bureau of Quarantine (BOQ) before immigration formalities. The triggers are incomplete or wrong data, or the 30-day health questions, which the Health Declaration step asks verbatim."
+why_zh = "红码不等于拒入境，而是先接受检疫局（BOQ）进一步检查再办入境。触发原因是资料不完整或填错，或 30 天健康问题，健康申报步骤问的就是这几条原文。"
+
+[[errors]]
+code = "You may only register within 72 hours prior to your arrival or departure in the Philippines."
+why_en = "The announcement banner on the site itself. Registration opens only 3 days before your flight, so a Date of Arrival further out is not accepted. Do not file weeks early."
+why_zh = "官网公告横幅原文。只能在航班前 3 天内注册，太远的抵达日期不被接受。别提前几周填。"
+
+[[errors]]
+code = "To open your profile, go to: https://etravel.gov.ph/search and enter your reference number and date of birth then press continue."
+why_en = "Lost the QR screenshot? This is the FAQ's official recovery path: reference number plus date of birth at etravel.gov.ph/search."
+why_zh = "二维码截图丢了？FAQ 给的官方找回路径：到 etravel.gov.ph/search，用参考号加出生日期打开记录。"
+
+[[errors]]
+code = "No. eTravel regisration/update is absolutely free of charge, hence, it does not collect or require any form of online payment."
+why_en = "The typo is the FAQ's own — regisration, as printed. Anyone demanding payment for eTravel registration is not the official site; the same answer warns against fake sites that require payment."
+why_zh = "错字是 FAQ 自己的——原文就拼作 regisration，照抄。任何要你为 eTravel 注册付钱的都不是官方；同一条答案还警告了要求付款的假冒网站。"
+
+[[errors]]
+code = "Presenting different QR codes may cause delay or incovenience."
+why_en = "Another FAQ typo, kept as printed (incovenience). If you registered twice, pick one QR and present only that one. To fix a mistake, use the Edit Registration tab instead of filing again."
+why_zh = "又一条 FAQ 错字，照原文保留（incovenience）。注册了两次就固定出示一个二维码。要改错误，用「Edit Registration」标签页，别重新提交。"

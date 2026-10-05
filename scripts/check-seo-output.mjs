@@ -2,15 +2,15 @@ import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import path from "node:path";
 import { runInNewContext } from "node:vm";
 
-const publicDir = "public";
+const publicDir = process.argv[2] || "public";
 
 const requiredFiles = [
-  "public/404.html",
-  "public/robots.txt",
-  "public/sitemap.xml",
-  "public/en/sitemap.xml",
-  "public/zh/sitemap.xml",
-];
+  "404.html",
+  "robots.txt",
+  "sitemap.xml",
+  "en/sitemap.xml",
+  "zh/sitemap.xml",
+].map(file => path.join(publicDir, file));
 
 for (const file of requiredFiles) {
   if (!existsSync(file)) {
@@ -18,7 +18,7 @@ for (const file of requiredFiles) {
   }
 }
 
-const robots = readFileSync("public/robots.txt", "utf8");
+const robots = readFileSync(path.join(publicDir, "robots.txt"), "utf8");
 for (const sitemap of [
   "https://entrycardguide.com/sitemap.xml",
   "https://entrycardguide.com/en/sitemap.xml",
@@ -29,7 +29,7 @@ for (const sitemap of [
   }
 }
 
-const rootSitemap = readFileSync("public/sitemap.xml", "utf8");
+const rootSitemap = readFileSync(path.join(publicDir, "sitemap.xml"), "utf8");
 for (const sitemap of [
   "https://entrycardguide.com/en/sitemap.xml",
   "https://entrycardguide.com/zh/sitemap.xml",
@@ -39,7 +39,7 @@ for (const sitemap of [
   }
 }
 
-for (const file of ["public/en/sitemap.xml", "public/zh/sitemap.xml"]) {
+for (const file of ["en/sitemap.xml", "zh/sitemap.xml"].map(file => path.join(publicDir, file))) {
   const sitemap = readFileSync(file, "utf8");
   if (!sitemap.includes("<urlset")) {
     throw new Error(`${file} is not a URL sitemap`);
@@ -198,7 +198,7 @@ for (const file of htmlFiles) {
   }
 }
 
-const homeHtml = readFileSync("public/index.html", "utf8");
+const homeHtml = readFileSync(path.join(publicDir, "index.html"), "utf8");
 const affiliateAnalyticsScript = jsFiles.find(file => {
   const publicPath = `/${path.relative(publicDir, file).replaceAll("\\", "/")}`;
   const js = readFileSync(file, "utf8");

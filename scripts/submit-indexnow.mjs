@@ -4,16 +4,21 @@
 //   node scripts/submit-indexnow.mjs             # pages whose lastmod is within 2 days
 //   node scripts/submit-indexnow.mjs --all       # every page (use once, to seed the index)
 //   node scripts/submit-indexnow.mjs --dry-run   # print what would be sent, send nothing
+//   node scripts/submit-indexnow.mjs --public-dir public-release # 指定本次构建目录
 //
 // INDEXNOW_MAX_AGE_DAYS overrides the 2-day window.
 
 import { readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 
-const publicDir = "public";
+const publicDirIndex = process.argv.indexOf("--public-dir");
+const publicDir = publicDirIndex === -1 ? "public" : process.argv[publicDirIndex + 1];
+if (!publicDir || publicDir.startsWith("--")) {
+  throw new Error("--public-dir requires a directory path.");
+}
 const host = "entrycardguide.com";
 const endpoint = "https://api.indexnow.org/indexnow";
-const sitemaps = ["public/en/sitemap.xml", "public/zh/sitemap.xml"];
+const sitemaps = ["en", "zh"].map(language => path.join(publicDir, language, "sitemap.xml"));
 const keyFilePattern = /^[0-9a-f]{32}\.txt$/;
 
 const submitEverything = process.argv.includes("--all");

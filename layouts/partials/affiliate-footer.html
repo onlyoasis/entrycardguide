@@ -1,3 +1,5 @@
+{{- /* Param is the analytics slot name, e.g. "mid" or "bottom". */ -}}
+{{- $slot := . | default "mid" -}}
 {{- $affiliate := site.Params.affiliate -}}
 {{- $safetywing := "" -}}
 {{- $airalo := "" -}}
@@ -12,9 +14,9 @@
   <h2 id="affiliate-title" class="font-serif font-medium mb-3" style="font-size: 28px; font-variation-settings: 'opsz' 144;">{{ i18n "affiliate_heading" }}</h2>
   <p class="text-small text-muted leading-relaxed mb-md">{{ i18n "affiliate_intro" }}</p>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+  <div class="grid grid-cols-1{{ if and $safetywing $airalo }} md:grid-cols-2{{ end }} gap-md">
     {{- with $safetywing }}
-    <a href="{{ . }}" rel="sponsored noopener noreferrer" data-analytics-event="affiliate_click" data-affiliate-partner="safetywing" data-affiliate-slot="footer" class="block border border-rule p-md no-underline hover:border-ink">
+    <a href="{{ . }}" rel="sponsored noopener noreferrer" data-analytics-event="affiliate_click" data-affiliate-partner="safetywing" data-affiliate-slot="{{ $slot }}" class="block border border-rule p-md no-underline hover:border-ink">
       <span class="block text-meta text-muted font-mono uppercase mb-2">{{ i18n "affiliate_safetywing_label" }}</span>
       <strong class="block text-ink mb-2">{{ i18n "affiliate_safetywing_heading" }}</strong>
       <span class="block text-small text-muted leading-relaxed mb-3">{{ i18n "affiliate_safetywing_body" }}</span>
@@ -23,7 +25,7 @@
     {{- end }}
 
     {{- with $airalo }}
-    <a href="{{ . }}" rel="sponsored noopener noreferrer" data-analytics-event="affiliate_click" data-affiliate-partner="airalo" data-affiliate-slot="footer" class="block border border-rule p-md no-underline hover:border-ink">
+    <a href="{{ . }}" rel="sponsored noopener noreferrer" data-analytics-event="affiliate_click" data-affiliate-partner="airalo" data-affiliate-slot="{{ $slot }}" class="block border border-rule p-md no-underline hover:border-ink">
       <span class="block text-meta text-muted font-mono uppercase mb-2">{{ i18n "affiliate_airalo_label" }}</span>
       <strong class="block text-ink mb-2">{{ i18n "affiliate_airalo_heading" }}</strong>
       <span class="block text-small text-muted leading-relaxed mb-3">{{ i18n "affiliate_airalo_body" }}</span>

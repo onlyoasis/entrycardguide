@@ -3,7 +3,7 @@ title: "Pakistan Visa Prior to Arrival: Eligibility, Free Application and Grant 
 kicker: "Visa-free GCC travellers use no form. Eligible VPA applicants select the free tourism route in the official portal."
 description: "Pakistan VPA guide: current 120-country eligibility, six-country GCC exemption, free application, official portal and Visa Grant Notice."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "pakistan"
 weight: 10
 keywords: ["Pakistan Visa Prior to Arrival", "Pakistan VPA", "Pakistan online visa", "visa.nadra.gov.pk", "Pakistan tourist visa"]

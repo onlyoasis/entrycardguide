@@ -1,4 +1,5 @@
 baseURL = "https://entrycardguide.com/"
+publishDir = "public-release"
 title = "entrycardguide"
 enableGitInfo = true
 enableRobotsTXT = true
@@ -32,6 +33,11 @@ defaultContentLanguageInSubdir = false
       url = "/decide/"
       weight = 5
     [[languages.en.menu.main]]
+      identifier = "library"
+      name = "Library"
+      url = "/library/"
+      weight = 70
+    [[languages.en.menu.main]]
       identifier = "official-links"
       name = "Official Links"
       url = "/official-links/"
@@ -56,6 +62,11 @@ defaultContentLanguageInSubdir = false
       name = "决策工具"
       url = "/zh/decide/"
       weight = 5
+    [[languages.zh.menu.main]]
+      identifier = "library"
+      name = "资料库"
+      url = "/zh/library/"
+      weight = 70
     [[languages.zh.menu.main]]
       identifier = "official-links"
       name = "官方目录"
@@ -124,3 +135,9 @@ defaultContentLanguageInSubdir = false
 [security]
   [security.funcs]
     getenv = ["^HUGO_", "^CI$", "^GITHUB_"]
+
+# 默认在数据加载层排除研究主库；仅 config/research 显式重新挂载。
+[[module.mounts]]
+  source = "data"
+  target = "data"
+  files = ["! travel_library/**"]

@@ -1,0 +1,30 @@
+{{- /* Compact affiliate block for sticky rails. Renders inner content only —
+       the caller supplies the divider so it matches its own rail conventions.
+       Full-width version with the long disclosure lives in affiliate-footer.html. */ -}}
+{{- $affiliate := site.Params.affiliate -}}
+{{- $safetywing := "" -}}
+{{- $airalo := "" -}}
+{{- with $affiliate -}}
+  {{- with .safetywing_url -}}{{- $safetywing = . -}}{{- end -}}
+  {{- with .airalo_url -}}{{- $airalo = . -}}{{- end -}}
+{{- end -}}
+
+{{- if or $safetywing $airalo }}
+<div class="text-meta font-mono uppercase text-muted mb-3">{{ i18n "affiliate_eyebrow" }}</div>
+
+{{- with $safetywing }}
+<a href="{{ . }}" rel="sponsored noopener noreferrer" data-analytics-event="affiliate_click" data-affiliate-partner="safetywing" data-affiliate-slot="rail" class="block no-underline mb-3">
+  <span class="block text-xs text-muted font-mono uppercase tracking-wide2">{{ i18n "affiliate_safetywing_label" }}</span>
+  <span class="block text-small text-ink underline underline-offset-2">{{ i18n "affiliate_safetywing_heading" }}</span>
+</a>
+{{- end }}
+
+{{- with $airalo }}
+<a href="{{ . }}" rel="sponsored noopener noreferrer" data-analytics-event="affiliate_click" data-affiliate-partner="airalo" data-affiliate-slot="rail" class="block no-underline mb-3">
+  <span class="block text-xs text-muted font-mono uppercase tracking-wide2">{{ i18n "affiliate_airalo_label" }}</span>
+  <span class="block text-small text-ink underline underline-offset-2">{{ i18n "affiliate_airalo_heading" }}</span>
+</a>
+{{- end }}
+
+<p class="text-xs text-muted leading-relaxed m-0">{{ i18n "affiliate_rail_disclosure" }}</p>
+{{- end }}

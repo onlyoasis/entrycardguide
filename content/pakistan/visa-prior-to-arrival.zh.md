@@ -3,7 +3,7 @@ title: "巴基斯坦入境前签证：资格、免费申请与获批通知（202
 kicker: "适用海合会豁免的旅客无需填表；符合 VPA 资格者在官方门户选择免费旅游路径。"
 description: "巴基斯坦 VPA 指南：现行 120 国资格、6 个海合会国家豁免、免费申请、官方门户与 Visa Grant Notice。"
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-08-31
 country: "pakistan"
 weight: 10
 keywords: ["巴基斯坦入境前签证", "巴基斯坦 VPA", "巴基斯坦在线签证", "visa.nadra.gov.pk", "巴基斯坦旅游签证"]

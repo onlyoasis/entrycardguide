@@ -26,9 +26,20 @@ npm install
 
 # 日常
 npm run dev       # 本地预览 http://localhost:1313
-npm run build:prod  # 生产构建
-npm run check:seo   # SEO 验证（CI 也跑这个）
+npm run build:prod  # 公开构建：索引与快照检查 → public-release → 产物检查
+npm run check:seo   # 检查 public-release 的 SEO（CI 同样执行）
+npm run check:travel-library  # 内部研究主库结构校验
+```
 
+`check:travel-library` 校验 `data/travel_library/` 的结构与证据关联：管辖区的
+id / 记录文件互相引用是否成立、日期是否为真实存在的日历日、来源是否带 URL 和
+摘录、程序（procedure）的 `verified_at` 是否有被引用且 `access_status: ok` 的
+来源支撑等。它证明结构与证据链自洽，不证明资料内容本身全部属实——事实正确性
+靠每条记录引用的官方来源与独立审查确认。研究预览及公开导出前自动执行该检查；公开构建只校验公开快照，不依赖研究主库。
+
+研究预览、公开快照导出和本地 Git 检查的操作步骤见 [资料发布边界](maintenance/data-publication-boundary.md)。
+
+```bash
 # 月度复盘取数（需先配置凭据，见 maintenance/search-data-api.md）
 npm run fetch:search-data
 ```

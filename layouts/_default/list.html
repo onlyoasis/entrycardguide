@@ -36,7 +36,7 @@
 {{- /* Hero — descriptor and "free vs paid" framing both vary per country.
        Vietnam's E-Visa is the one paid program; calling it "digital arrival
        card" or "the free form" would publish false pricing. */ -}}
-<section class="pt-22 pb-md">
+<section class="page-hero pb-md">
   {{- if $countryMeta }}
   <div class="text-meta font-mono uppercase text-muted mb-5">
     <span aria-hidden="true">{{ $countryMeta.flag }}</span>
@@ -44,7 +44,7 @@
   </div>
   {{- end }}
 
-  <h1 class="font-serif font-medium m-0 max-w-[880px]" style="font-size: clamp(40px, 6vw, 64px); line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
+  <h1 class="font-serif font-medium m-0" style="line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
     {{- if $countryMeta -}}
       {{- if $isPaid -}}
         {{- if eq $formType "travel_authorization" -}}
@@ -61,8 +61,13 @@
   </h1>
 
   {{- with .Params.kicker }}
-  <p class="text-muted mt-lg max-w-[720px]" style="font-size: 21px; line-height: 1.5;">{{ . }}</p>
+  <p class="text-muted mt-lg" style="font-size: 21px; line-height: 1.5;">{{ . }}</p>
   {{- end }}
+
+  <div class="mt-lg pt-4 border-t border-rule flex items-baseline gap-4 flex-wrap">
+    <span class="text-meta font-mono uppercase text-muted">{{ i18n "share_rail_label" }}</span>
+    {{- partial "share-buttons.html" . -}}
+  </div>
 </section>
 
 {{- /* TrustBar — provenance row ------------------------------------- */ -}}
@@ -108,7 +113,7 @@
           <a href="{{ .Permalink }}" class="text-ink no-underline hover:underline underline-offset-4">{{ .Title }}</a>
         </h3>
         {{- with .Params.kicker }}
-        <p class="text-small text-muted m-0 max-w-[640px]">{{ . }}</p>
+        <p class="text-small text-muted m-0">{{ . }}</p>
         {{- end }}
       </div>
       <div class="font-mono text-xs text-muted text-left md:text-right">
@@ -121,6 +126,10 @@
 {{- end }}
 
 {{- if .Section }}
+{{- /* Own slot name so the 100 hub pages stay separable from rail / mid /
+       bottom in GA4, and can be pulled back out on their own. */ -}}
+{{- partial "affiliate-footer.html" "hub" -}}
+
 {{- partial "share-source.html" . -}}
 {{- end }}
 

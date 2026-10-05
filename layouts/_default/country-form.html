@@ -33,40 +33,56 @@
 </nav>
 
 {{- /* Hero ----------------------------------------------------------- */ -}}
-<article class="pt-22 pb-md max-w-[920px]">
+<article class="page-hero pb-md">
   <div class="text-meta font-mono uppercase text-muted mb-5">
     <span aria-hidden="true">{{ $meta.flag }}</span>
     {{ $countryName }} {{ $formCode }} · {{ $since }}
   </div>
-  <h1 class="font-serif font-medium m-0" style="font-size: clamp(36px, 5.6vw, 56px); line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
+  <h1 class="font-serif font-medium m-0" style="line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
     {{ .Title }}
   </h1>
   {{- with .Params.kicker }}
-  <p class="text-muted mt-lg max-w-[720px]" style="font-size: 21px; line-height: 1.5;">
+  <p class="text-muted mt-lg" style="font-size: 21px; line-height: 1.5;">
     {{ . }}
   </p>
   {{- else }}
   {{- with $news }}
-  <p class="text-muted mt-lg max-w-[720px]" style="font-size: 21px; line-height: 1.5;">
+  <p class="text-muted mt-lg" style="font-size: 21px; line-height: 1.5;">
     {{ if $isZh }}{{ .pct }} 的外国入境者据报曾通过非官方网站填写这份免费表单。这是官方网址、每一个字段和如何识别真假。{{ else }}{{ .pct }} of foreign arrivals were reported using non-official sites for this free form. Here is the official site, every field it asks, and how to tell real from fake.{{ end }}
   </p>
   {{- end }}
   {{- end }}
+
+  <div class="lg:hidden mt-lg pt-4 border-t border-rule flex items-baseline gap-4 flex-wrap">
+    <span class="text-meta font-mono uppercase text-muted">{{ i18n "share_rail_label" }}</span>
+    {{- partial "share-buttons.html" . -}}
+  </div>
 </article>
 
 {{- /* Two-column body + sticky TOC aside ---------------------------- */ -}}
-<div class="pb-xl grid grid-cols-1 lg:grid-cols-[1fr_220px] gap-12 lg:gap-16">
-  <article class="prose prose-lg max-w-[680px]">
+<div class="article-layout pb-xl">
+  <article class="prose prose-lg max-w-none">
     {{ .Content }}
   </article>
 
-  <aside class="hidden lg:block sticky top-8 self-start text-small">
+  <aside class="hidden lg:block sticky top-8 self-start max-h-[calc(100vh-4rem)] overflow-y-auto text-small">
     {{- with .TableOfContents }}
     <div class="text-meta font-mono uppercase text-muted mb-3">{{ if $isZh }}本页目录{{ else }}On this page{{ end }}</div>
-    <div class="border-l border-rule pl-4 toc-rail text-small text-muted">
+    {{- /* Cap the TOC so a long one cannot push share and affiliate below the
+           fold. Malaysia MDAC has 14 entries; uncapped it costs ~350px. */ -}}
+    <div class="border-l border-rule pl-4 toc-rail text-small text-muted max-h-[30vh] overflow-y-auto">
       {{ . }}
     </div>
     {{- end }}
+
+    <div class="mt-lg pt-4 border-t border-rule">
+      <div class="text-meta font-mono uppercase text-muted mb-3">{{ i18n "share_rail_label" }}</div>
+      {{- partial "share-buttons.html" . -}}
+    </div>
+
+    <div class="mt-lg pt-4 border-t border-rule">
+      {{- partial "affiliate-rail.html" . -}}
+    </div>
 
     <div class="mt-lg pt-4 border-t border-rule grid gap-1.5 font-mono text-xs">
       <a href="https://github.com/onlyoasis/entrycardguide/blob/main/content/{{ .File.Path }}" class="text-muted no-underline hover:text-ink">↗ {{ if $isZh }}GitHub 源文件{{ else }}Source on GitHub{{ end }}</a>
@@ -76,12 +92,18 @@
   </aside>
 </div>
 
+{{- if .Section }}
+<div class="lg:hidden">
+  {{- partial "affiliate-footer.html" "bottom" -}}
+</div>
+{{- end }}
+
 {{- /* "Why this matters" callout — driven by news data ------------- */ -}}
 {{- with $news }}
 {{- $quote := cond $isZh .quote_zh .quote_en -}}
 {{- $attr := cond $isZh .attribution_zh .attribution_en -}}
 <section class="-mx-md px-md py-xl border-y border-rule" style="background:#F4F2EC;">
-  <div class="grid grid-cols-1 md:grid-cols-[160px_1fr] gap-8 max-w-[920px]">
+  <div class="grid grid-cols-1 md:grid-cols-[160px_1fr] gap-8">
     <div class="text-meta font-mono uppercase text-scam">
       <span class="inline-block w-[6px] h-[6px] rounded-full bg-scam align-baseline mr-2"></span>
       {{ if $isZh }}为什么重要{{ else }}Why this matters{{ end }}
@@ -100,9 +122,5 @@
 {{- end }}
 
 {{- partial "share-source.html" . -}}
-
-{{- if .Section }}
-{{- partial "affiliate-footer.html" . -}}
-{{- end }}
 
 {{ end }}

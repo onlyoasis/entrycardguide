@@ -20,7 +20,7 @@
   {{- errorf "official-link shortcode: no key %q in data/official_urls/%s.toml" $key $country }}
 {{- end }}
 
-<div class="official-callout" role="note">
+<div class="official-callout not-prose" role="note">
   <span class="official-badge">{{ i18n "verified_badge" }}</span>
   <div>
     <div class="text-meta text-muted font-mono uppercase mb-1">{{ i18n "official_url_label" }}</div>

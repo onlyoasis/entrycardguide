@@ -1,6 +1,6 @@
 {{ define "main" }}
-<article class="grid grid-cols-1 lg:grid-cols-[680px_1fr] gap-16 py-12">
-  <div class="max-w-prose">
+<article class="article-layout py-12">
+  <div class="min-w-0">
 
     {{- if .Parent }}
     <nav aria-label="Breadcrumb" class="text-meta font-mono uppercase text-muted mb-6">
@@ -13,7 +13,7 @@
     <h1 class="mb-4">{{ .Title }}</h1>
 
     {{- with .Params.kicker }}
-    <p class="text-kicker text-muted mb-8 max-w-[600px]">{{ . }}</p>
+    <p class="text-kicker text-muted mb-8">{{ . }}</p>
     {{- end }}
 
     <div class="text-small text-muted border-t border-b border-rule py-3 mb-10 flex flex-wrap gap-x-2 gap-y-1">
@@ -26,6 +26,11 @@
       <span>Also on <a href="https://web.archive.org/web/{{ .Permalink }}" class="text-muted underline underline-offset-2">archive.org</a></span>
     </div>
 
+    <div class="lg:hidden -mt-6 mb-10 flex items-baseline gap-4 flex-wrap">
+      <span class="text-meta font-mono uppercase text-muted">{{ i18n "share_rail_label" }}</span>
+      {{- partial "share-buttons.html" . -}}
+    </div>
+
     <div class="prose prose-lg max-w-none">
       {{ .Content }}
     </div>
@@ -33,11 +38,13 @@
     {{- partial "share-source.html" . -}}
 
     {{- if .Section }}
-    {{- partial "affiliate-footer.html" . -}}
+    <div class="lg:hidden">
+      {{- partial "affiliate-footer.html" "bottom" -}}
+    </div>
     {{- end }}
   </div>
 
-  <aside class="hidden lg:block sticky top-8 self-start max-w-rail text-small">
+  <aside class="hidden lg:block sticky top-8 self-start max-h-[calc(100vh-4rem)] overflow-y-auto max-w-rail text-small">
     {{- partial "article-rail.html" . -}}
   </aside>
 </article>

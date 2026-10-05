@@ -38,6 +38,11 @@
   // Escape closes any open dropdown.
   document.addEventListener('keydown', (e: KeyboardEvent) => {
     if (e.key !== 'Escape') return;
-    for (const d of dropdowns) if (d.open) d.open = false;
+    for (const d of dropdowns) {
+      if (!d.open) continue;
+      const restoreFocus = d.contains(document.activeElement);
+      d.open = false;
+      if (restoreFocus) d.querySelector<HTMLElement>('summary')!.focus();
+    }
   });
 })();

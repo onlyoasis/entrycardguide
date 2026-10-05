@@ -46,12 +46,12 @@
 </nav>
 
 {{- /* Hero ----------------------------------------------------------- */ -}}
-<article class="pt-22 pb-md max-w-[920px]">
+<article class="page-hero pb-md">
   <div class="text-meta font-mono uppercase text-muted mb-5">
     <span aria-hidden="true">{{ $meta.flag }}</span>
     {{ $countryName }} {{ $formCode }} · {{ if $isZh }}字段指南{{ else }}field guide{{ end }} · {{ $timeNeeded }}
   </div>
-  <h1 class="font-serif font-medium m-0" style="font-size: clamp(36px, 5.6vw, 56px); line-height: 1.06; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
+  <h1 class="font-serif font-medium m-0" style="line-height: 1.06; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
     {{- $fieldsTitle := cond $isZh $meta.fields_title_zh $meta.fields_title_en -}}
     {{- if $fieldsTitle -}}
     {{ $fieldsTitle }}
@@ -66,7 +66,7 @@
          web validation, or because the guide page runs no validator — sets
          fields_intro_en/zh in [meta] to say what it actually offers. */ -}}
   {{- $intro := cond $isZh $meta.fields_intro_zh $meta.fields_intro_en -}}
-  <p class="text-muted mt-lg max-w-[720px]" style="font-size: 21px; line-height: 1.5;">
+  <p class="text-muted mt-lg" style="font-size: 21px; line-height: 1.5;">
     {{- if $intro -}}
     {{ $intro | safeHTML }}
     {{- else if $isZh -}}
@@ -75,6 +75,11 @@
     With the exact regex the official site enforces, the error message it returns, and what you probably did wrong. Pre-check your values in the <a href="{{ .Parent.RelPermalink }}{{ $meta.guide_slug }}/" class="text-ink underline underline-offset-4">{{ $formCode }} page's local validator</a> before pasting.
     {{- end -}}
   </p>
+
+  <div class="mt-lg pt-4 border-t border-rule flex items-baseline gap-4 flex-wrap">
+    <span class="text-meta font-mono uppercase text-muted">{{ i18n "share_rail_label" }}</span>
+    {{- partial "share-buttons.html" . -}}
+  </div>
 </article>
 
 {{- /* Fields section heading + tags --------------------------------- */ -}}
@@ -121,7 +126,7 @@
     </div>
     {{- end }}
 
-    <div class="grid grid-cols-1 md:grid-cols-[56px_1fr_380px] gap-8 px-7 py-8 {{ if lt (add $i 1) (len $fields) }}border-b border-rule{{ end }}">
+    <div class="field-card {{ if lt (add $i 1) (len $fields) }}border-b border-rule{{ end }}">
       <div class="font-serif font-medium text-ink" style="font-size: 32px; letter-spacing: -0.01em; line-height: 1; font-variation-settings: 'opsz' 144;">
         {{ $f.n }}
       </div>
@@ -130,7 +135,7 @@
         <h3 class="font-serif font-medium m-0 mb-3" style="font-size: 26px; letter-spacing: -0.01em; font-variation-settings: 'opsz' 144;">
           {{ $rule.label }}
         </h3>
-        <p class="m-0 max-w-[560px]" style="font-size: 16px; line-height: 1.6;">{{ $copy }}</p>
+        <p class="m-0" style="font-size: 16px; line-height: 1.6;">{{ $copy }}</p>
 
         <div class="mt-5 flex flex-wrap gap-1.5">
           {{- with $rule.pattern }}
@@ -146,7 +151,7 @@
         </div>
       </div>
 
-      <aside class="grid gap-3">
+      <aside class="field-examples grid gap-3">
         <div class="rounded-sm px-4 py-3" style="border:1px solid rgba(15,115,86,0.30); border-left:3px solid #0F7356; background:rgba(15,115,86,0.04);">
           <div class="text-meta font-mono uppercase text-verified mb-1.5">{{ if $isZh }}这样写对{{ else }}Looks good{{ end }}</div>
           <div class="font-mono text-ink" style="font-size: 15px;">{{ $f.example }}</div>
@@ -172,7 +177,7 @@
 
   <div class="grid grid-cols-1 md:grid-cols-2 border border-rule bg-paper overflow-hidden">
     {{- range $i, $e := . }}
-    <div class="p-6 grid grid-cols-[180px_1fr] gap-5 items-baseline {{ if eq (mod $i 2) 0 }}md:border-r border-rule{{ end }} {{ if lt (add $i 1) (len $errors) }}border-b border-rule{{ end }}">
+    <div class="p-5 grid grid-cols-1 gap-2 content-start {{ if eq (mod $i 2) 0 }}md:border-r border-rule{{ end }} {{ if lt (add $i 1) (len $errors) }}border-b border-rule{{ end }}">
       <code class="font-mono text-scam font-medium" style="font-size: 13px;">"{{ $e.code }}"</code>
       <p class="m-0" style="font-size: 15px; line-height: 1.5;">{{ if $isZh }}{{ $e.why_zh }}{{ else }}{{ $e.why_en }}{{ end }}</p>
     </div>
@@ -251,6 +256,8 @@
   </ol>
 </section>
 
+{{- partial "affiliate-footer.html" "mid" -}}
+
 {{- /* Full markdown walkthrough — preserves the pre-existing per-field prose,
        validator shortcode, and any country-specific edge cases that aren't
        captured in data/fields/*.toml's shortlist of high-error fields. */ -}}
@@ -267,16 +274,12 @@
     The walkthrough, the in-browser validator, and the full common-errors list.
     {{- end -}}
   </h2>
-  <article class="prose prose-lg max-w-[680px]">
+  <article class="prose prose-lg max-w-none">
     {{ . }}
   </article>
 </section>
 {{- end }}
 
 {{- partial "share-source.html" . -}}
-
-{{- if .Section }}
-{{- partial "affiliate-footer.html" . -}}
-{{- end }}
 
 {{ end }}

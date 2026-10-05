@@ -2,6 +2,12 @@
 public/
 resources/
 .hugo_build.lock
+public-release/
+research-public/
+.cache/
+
+# Internal research is never committed to the public repository.
+/data/travel_library/
 
 # Cloudflare
 .wrangler/

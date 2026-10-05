@@ -1,0 +1,2 @@
+# 研究预览默认写入独立目录，避免与可部署产物混用。
+publishDir = "research-public"

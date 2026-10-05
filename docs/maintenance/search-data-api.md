@@ -88,6 +88,53 @@ node scripts/fetch-search-data.mjs --days=90
 
 窗口两端都往回退 2 天，因为 GSC 数据有约 2 天延迟，这样两个数据源对齐同一区间。
 
+## 核查 Google 索引状态
+
+`scripts/check-index-status.mjs` 先读取 GSC 已提交的 sitemap 状态，再逐个核查本地
+`public/en/sitemap.xml` 和 `public/zh/sitemap.xml` 中的 URL。它会回答 GSC 是否下载了新版
+sitemap、每个 URL 的索引判定，以及未索引原因。
+
+先生成生产 sitemap，再运行：
+
+```bash
+npm run build:prod
+npm run check:index-status
+
+# 只查 sitemap 提交状态，不消耗 URL Inspection 配额
+node scripts/check-index-status.mjs --sitemaps-only
+
+# 只核查 URL 中包含指定字符串的页面
+node scripts/check-index-status.mjs --filter=/jordan/
+```
+
+结果写入 `data-exports/<运行日期>-index-status/`：
+
+| 文件 | 内容 |
+|---|---|
+| `sitemaps.json` | Sitemaps API 原始返回 |
+| `url-inspection.json` | 每个 URL 的判定、抓取、robots、canonical 等关键字段 |
+| `summary.txt` | coverage 分布、新旧国家页面统计、按国家分组的未索引 URL 完整清单 |
+
+脚本使用现有的 `https://www.googleapis.com/auth/webmasters.readonly` scope，不需要重新授权，
+也不需要启用新的 API；第 1 步已经启用的 **Google Search Console API** 同时提供 Sitemaps
+和 URL Inspection。域名属性参数使用 `sc-domain:entrycardguide.com`，脚本在 Sitemaps API
+路径中对它做 URL 编码，在 URL Inspection 请求体中按原格式传入。
+
+Google 官方配额为每属性每天 2,000 次 URL Inspection、每分钟 600 次；项目当前 312 个 URL
+可在一次运行中查完。脚本串行请求，每次间隔 120 ms，约 500 次/分钟。Sitemaps API 属于
+其他资源配额，不消耗 URL Inspection 配额。
+
+Sitemaps API 仍可能返回 `contents[].indexed`，但 Google 已把该字段标记为 deprecated。
+脚本会原样保存和展示它，不能把这个值当作当前完整索引总数；逐 URL 结果以 URL Inspection
+的 `verdict` 和 `coverageState` 为准。
+
+官方资料：
+
+- [Sitemaps: list](https://developers.google.com/webmaster-tools/v1/sitemaps/list)
+- [URL Inspection: index.inspect](https://developers.google.com/webmaster-tools/v1/urlInspection.index/inspect)
+- [URL Inspection 返回字段](https://developers.google.com/webmaster-tools/v1/urlInspection.index/UrlInspectionResult)
+- [Search Console API 配额](https://developers.google.com/webmaster-tools/limits)
+
 ## 已知限制
 
 **GSC 会匿名化低频查询。** 2026-08-08 的实测：查询维度返回的行只覆盖全站 26% 的曝光、

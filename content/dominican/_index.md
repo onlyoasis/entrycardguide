@@ -2,7 +2,7 @@
 title: "Dominican Republic"
 kicker: "Everything you need to know about the Dominican Republic E-Ticket, without paying a middleman."
 description: "Free, independent guides to the DR's E-Ticket. Official URL, every field explained."
-lastmod: 2026-04-25
+lastmod: 2026-09-02
 ---
 
 The Dominican Republic E-Ticket is a free digital form required for all arrivals and departures. It replaced the paper entry and exit cards in 2021 and is accepted only at `eticket.migracion.gob.do`.
@@ -29,3 +29,13 @@ Field-by-field walkthrough with common errors and what they mean.
 - **What you need:** passport, flight details, accommodation, email, about 8 minutes.
 - **What you get:** one QR code that covers both entry and exit. Screenshot it. You show it at both borders.
 - **Family groups:** one adult can file for the whole family in a single E-Ticket. Each traveler is a section inside one form.
+
+## Is there an entry fee or an exit fee?
+
+The E-Ticket is free. The fees people search for are real, but you do not pay them on the E-Ticket site, and you do not pay them to anyone offering to file the form for you.
+
+- **Departure tax: USD 20.** Already inside your airline ticket. The Dominican embassy in the United States states it plainly: "There is also a USD 20 departure tax, included in the airline ticket." Check the tax line on your booking confirmation before anyone asks you to pay it twice.
+- **Staying past 30 days:** an extension fee applies. The embassy says it can be paid online or at the airport. It is a real government charge, unrelated to the E-Ticket.
+- **Filing the E-Ticket: USD 0.** Any site charging a "processing", "service", or "expedite" fee to submit `eticket.migracion.gob.do` on your behalf is charging you for something the government gives away.
+
+Source: [Dominican embassy travel FAQ](https://usa.mirex.gob.do/preguntas-frecuentes/), verified 2026-09-02.

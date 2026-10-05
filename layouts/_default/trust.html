@@ -11,16 +11,21 @@
 </nav>
 
 {{- /* Hero ----------------------------------------------------------- */ -}}
-<section class="pt-22 pb-xl max-w-[920px]">
+<section class="page-hero pb-lg">
   <div class="text-meta font-mono uppercase text-muted mb-5">
     {{ if $isZh }}方法论 · 完整版{{ else }}Methodology · long version{{ end }}
   </div>
-  <h1 class="font-serif font-medium m-0" style="font-size: clamp(36px, 5.6vw, 56px); line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
+  <h1 class="font-serif font-medium m-0" style="line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
     {{ .Title }}
   </h1>
   {{- with .Params.kicker }}
-  <p class="text-muted mt-lg max-w-[720px]" style="font-size: 21px; line-height: 1.5;">{{ . }}</p>
+  <p class="text-muted mt-lg" style="font-size: 21px; line-height: 1.5;">{{ . }}</p>
   {{- end }}
+
+  <div class="mt-lg pt-4 border-t border-rule flex items-baseline gap-4 flex-wrap">
+    <span class="text-meta font-mono uppercase text-muted">{{ i18n "share_rail_label" }}</span>
+    {{- partial "share-buttons.html" . -}}
+  </div>
 </section>
 
 {{- /* Body ----------------------------------------------------------- */ -}}
@@ -30,7 +35,7 @@
 
 {{- /* Closing CTA ---------------------------------------------------- */ -}}
 <section class="-mx-md px-md py-xl border-y border-rule text-center" style="background:#F4F2EC;">
-  <h2 class="font-serif font-medium m-0 mx-auto max-w-[600px]" style="font-size: 28px; line-height: 1.2; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144;">
+  <h2 class="font-serif font-medium m-0 mx-auto" style="font-size: 28px; line-height: 1.2; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144;">
     {{- if $isZh -}}
     发现哪里写错了？把证据发给我们，一天内修好。
     {{- else -}}

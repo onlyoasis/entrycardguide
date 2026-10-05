@@ -100,28 +100,28 @@ class DecisionTool {
       answerLabel: option.label,
     });
     this.currentStateId = option.next;
-    this.render();
+    this.render(true);
   }
 
   private back(): void {
     const prev = this.history.pop();
     if (prev) {
       this.currentStateId = prev.stateId;
-      this.render();
+      this.render(true);
     }
   }
 
   private restart(): void {
     this.history = [];
     this.currentStateId = this.tree.start;
-    this.render();
+    this.render(true);
   }
 
   private t(key: string, fallback: string): string {
     return this.i18n[key] || fallback;
   }
 
-  private render(): void {
+  private render(moveFocus = false): void {
     const state = this.tree.states[this.currentStateId];
     if (!state) {
       this.container.innerHTML = trustedHTML(
@@ -134,6 +134,13 @@ class DecisionTool {
       this.renderQuestion(state);
     } else {
       this.renderResult(state);
+    }
+    if (moveFocus) {
+      this.container.querySelector<HTMLElement>('h2')!.focus({ preventScroll: true });
+      this.container.scrollIntoView({
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+        block: 'start',
+      });
     }
   }
 
@@ -149,7 +156,7 @@ class DecisionTool {
     this.container.innerHTML = trustedHTML(`
       ${breadcrumbs ? `<ol class="decide-breadcrumbs">${breadcrumbs}</ol>` : ''}
       <div class="decide-step text-meta text-muted font-mono uppercase">${this.t('decide_step', 'Step')} ${stepNum}</div>
-      <h2 class="decide-question font-serif font-medium">${escape(state.label)}</h2>
+      <h2 class="decide-question font-serif font-medium" tabindex="-1">${escape(state.label)}</h2>
       <div class="decide-options">
         ${state.options
           .map(
@@ -178,10 +185,6 @@ class DecisionTool {
     const backBtn = this.container.querySelector<HTMLButtonElement>('.decide-back');
     if (backBtn) backBtn.addEventListener('click', () => this.back());
 
-    // Scroll the new question into view (subtle, only if scrolled past)
-    if (this.history.length > 0) {
-      this.container.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
   }
 
   private renderResult(state: ResultState): void {
@@ -224,7 +227,7 @@ class DecisionTool {
       ${breadcrumbs ? `<ol class="decide-breadcrumbs">${breadcrumbs}</ol>` : ''}
       <div class="decide-result">
         <div class="decide-result-eyebrow text-meta text-muted font-mono uppercase">${this.t('decide_result_label', 'Your answer')}</div>
-        <h2 class="decide-summary font-serif font-medium">${escape(state.summary)}</h2>
+        <h2 class="decide-summary font-serif font-medium" tabindex="-1">${escape(state.summary)}</h2>
         <div class="decide-forms">${formsHtml}</div>
         ${state.note ? `<p class="decide-note text-small">${escape(state.note)}</p>` : ''}
         ${

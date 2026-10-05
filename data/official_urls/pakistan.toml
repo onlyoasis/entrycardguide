@@ -12,28 +12,28 @@ notes = "Read through the current official DGI&P and Ministry of Foreign Affairs
 url = "https://dgip.gov.pk/home/"
 name = "Pakistan Online Visa Eligibility Notice"
 agency = "Directorate General of Immigration & Passports, Ministry of Interior, Government of Pakistan"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. The current DGI&P home page says the online system is open to 192 countries, VPA is available to citizens of 120 countries for tourism, business or Sikh pilgrimage, and six GCC countries are visa-exempt for these categories. It also says regular visa fees are reciprocal."
 
 [vpa_information]
 url = "https://mofa.gov.pk/news/visa-prior-to-arrival-vpa-facility?mission=tunis"
 name = "Visa Prior to Arrival Facility Notice"
 agency = "Ministry of Foreign Affairs, Government of Pakistan"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. This embassy notice is addressed to Tunisian and Maltese nationals. It describes their VPA for tourism, business and Sikh pilgrimage as free and processed within 24 hours, then directs applicants to visa.nadra.gov.pk. The 24-hour statement is not treated as a universal promise for all 120 eligible passport countries."
 
 [gcc_exemption]
 url = "https://mofa.gov.pk/press-releases/gcc-citizens-now-enjoy-visa-free-travel-to-pakistan-for-business-and-tourism?mission=Kuwait%2520Post"
 name = "GCC Citizens Visa Exemption"
 agency = "Ministry of Foreign Affairs, Government of Pakistan"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. Citizens of Saudi Arabia, Kuwait, the United Arab Emirates, Oman, Qatar and Bahrain may travel for tourism or business without an ETA or visa and may stay up to 90 days."
 
 [regular_visa_fee]
 url = "https://dgip.gov.pk/visa/fee.php"
 name = "Pakistan Regular Visa Fee Schedule"
 agency = "Directorate General of Immigration & Passports, Ministry of Interior, Government of Pakistan"
-last_verified = "2026-08-30"
+last_verified = "2026-08-31"
 notes = "Read 2026-08-30. Regular online visa fees are charged on a reciprocal basis and differ by passport and visa category. This is a separate route from the free VPA product."
 
 [meta]

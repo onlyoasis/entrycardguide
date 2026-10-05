@@ -24,8 +24,11 @@
 <link rel="alternate" hreflang="x-default" href="{{ $xDefault }}">
 {{- end }}
 
-{{- /* Robots — always indexable; this site's whole value is Google traffic */ -}}
+{{- if and (eq hugo.Environment "research") (eq .Section "library") -}}
+<meta name="robots" content="noindex,nofollow">
+{{- else -}}
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+{{- end -}}
 
 {{- /* Self-hosted font preload for perf */ -}}
 {{- /* CSS — compiled via postcss + tailwind, fingerprinted */ -}}

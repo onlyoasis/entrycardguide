@@ -1,5 +1,14 @@
 {{- /* JS pipeline — Hugo js.Build handles TS transpilation + bundling, zero npm for browser */ -}}
 
+{{- if .HasShortcode "official-directory" }}
+  {{- $directoryOpts := dict "targetPath" "js/directory.js" "minify" hugo.IsProduction "target" "es2020" "format" "iife" }}
+  {{- $directory := resources.Get "js/directory.ts" | js.Build $directoryOpts }}
+  {{- if hugo.IsProduction }}
+    {{- $directory = $directory | resources.Fingerprint "sha256" }}
+  {{- end }}
+<script src="{{ $directory.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $directory.Data.Integrity }}"{{ end }} defer></script>
+{{- end }}
+
 {{- /* Validator (loaded on every page so country pages with the validator
        shortcode work; the script is small and safely no-ops elsewhere). */ -}}
 {{- $valOpts := dict "targetPath" "js/validator.js" "minify" hugo.IsProduction "target" "es2020" "format" "iife" }}
@@ -30,6 +39,17 @@
 {{- $ga4 := .Site.Params.analytics.ga4.measurement.id | default "" }}
 <script src="{{ $analytics.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $analytics.Data.Integrity }}"{{ end }}{{ with $ga4 }} data-ga4-measurement-id="{{ . }}"{{ end }} defer></script>
 
+{{- /* Travel library directory filter — only on the /library/ section
+       index; no-ops (and doesn't load) on detail pages and elsewhere. */ -}}
+{{- if and (eq .Section "library") (eq .Kind "section") }}
+  {{- $libOpts := dict "targetPath" "js/library.js" "minify" hugo.IsProduction "target" "es2020" "format" "iife" }}
+  {{- $libJs := resources.Get "js/library.ts" | js.Build $libOpts }}
+  {{- if hugo.IsProduction }}
+    {{- $libJs = $libJs | resources.Fingerprint "sha256" }}
+  {{- end }}
+<script src="{{ $libJs.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $libJs.Data.Integrity }}"{{ end }} defer></script>
+{{- end }}
+
 {{- /* Country search — filters the homepage §02 grid + mobile list client-side.
        Self-detects [data-country-search-input] and no-ops on every other page. */ -}}
 {{- $searchOpts := dict "targetPath" "js/search.js" "minify" hugo.IsProduction "target" "es2020" "format" "iife" }}
@@ -39,12 +59,4 @@
 {{- end }}
 <script src="{{ $search.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $search.Data.Integrity }}"{{ end }} defer></script>
 
-{{- /* Nav dropdowns — adds click-outside + Esc dismissal to the header's
-       Countries menu and language switcher, which are native <details> and
-       don't self-close. Self-detects [data-nav-dropdown] and no-ops elsewhere. */ -}}
-{{- $navOpts := dict "targetPath" "js/nav.js" "minify" hugo.IsProduction "target" "es2020" "format" "iife" }}
-{{- $nav := resources.Get "js/nav.ts" | js.Build $navOpts }}
-{{- if hugo.IsProduction }}
-  {{- $nav = $nav | resources.Fingerprint "sha256" }}
-{{- end }}
-<script src="{{ $nav.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $nav.Data.Integrity }}"{{ end }} defer></script>
+{{- partial "nav-script.html" . -}}

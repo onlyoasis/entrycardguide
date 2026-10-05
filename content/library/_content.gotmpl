@@ -1,0 +1,27 @@
+{{/* 数据入口与列表、详情页一致。日期按研究时区 +09:00 解释，避免 UTC
+     当日未开始时被 buildFuture=false 隐藏；核验日期仍来自记录。 */ -}}
+{{ .EnableAllLanguages }}
+{{ $library := partial "library-data.html" . }}
+{{ $isZh := eq .Site.Language.Lang "zh" }}
+{{ range $library.jurisdictions }}
+  {{ $record := index $library.byId .id }}
+  {{ if $record }}
+    {{ $title := "" }}
+    {{ if $isZh }}
+      {{ $title = printf "%s（%s）入境申报资料" .name_zh .id }}
+    {{ else }}
+      {{ $title = printf "%s (%s): entry declaration requirements" .name_en .id }}
+    {{ end }}
+    {{ $page := dict
+      "kind" "page"
+      "path" (lower .id)
+      "title" $title
+      "params" (dict "iso" .id)
+    }}
+    {{ with $record.researched_at }}
+      {{ $researchTime := time.AsTime (printf "%sT00:00:00+09:00" .) }}
+      {{ $page = merge $page (dict "dates" (dict "date" $researchTime "lastmod" $researchTime "publishDate" $researchTime)) }}
+    {{ end }}
+    {{ $.AddPage $page }}
+  {{ end }}
+{{ end }}

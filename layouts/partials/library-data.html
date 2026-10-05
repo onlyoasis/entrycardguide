@@ -1,0 +1,30 @@
+{{- /* 所有资料库页面共用这一入口；只有显式 research 环境可读取研究主库。 */ -}}
+{{- $isResearch := eq hugo.Environment "research" -}}
+{{- $jurs := slice -}}
+{{- $records := slice -}}
+{{- if $isResearch -}}
+  {{- with hugo.Data.travel_library -}}
+    {{- $jurs = .jurisdictions.jurisdictions -}}
+    {{- range .records }}{{ $records = $records | append . }}{{ end -}}
+  {{- else -}}
+    {{- errorf "research 环境缺少 data/travel_library 研究主库" -}}
+  {{- end -}}
+{{- else -}}
+  {{- $public := hugo.Data.travel_library_public -}}
+  {{- if not (reflect.IsMap $public) -}}
+    {{- errorf "缺少公开快照 data/travel_library_public.json；禁止回退研究主库" -}}
+  {{- else if or (ne $public.schema_version (float 1)) (not (reflect.IsSlice $public.jurisdictions)) (not (reflect.IsSlice $public.records)) -}}
+    {{- errorf "data/travel_library_public.json 必须包含 schema_version=1 以及 jurisdictions、records 数组" -}}
+  {{- else -}}
+    {{- $jurs = $public.jurisdictions -}}
+    {{- $records = $public.records -}}
+    {{- range $records -}}
+      {{- if ne .review_status "verified" -}}
+        {{- errorf "公开快照目的地 %s 的 review_status 必须为 verified" .jurisdiction_id -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $byId := dict -}}
+{{- range $records }}{{ $byId = merge $byId (dict .jurisdiction_id .) }}{{ end -}}
+{{- return (dict "isResearch" $isResearch "jurisdictions" $jurs "records" $records "byId" $byId) -}}

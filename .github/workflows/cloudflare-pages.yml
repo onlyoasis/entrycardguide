@@ -44,6 +44,14 @@ jobs:
       - name: Build
         run: npm run build:prod
 
+      - name: Check data boundary tests
+        run: npm run test:data-protection
+        env:
+          TRAVEL_LIBRARY_TEST_ROOT: ${{ runner.temp }}/entrycardguide-tests
+
+      - name: Check repository data history
+        run: node scripts/check-data-boundary.mjs --history HEAD
+
       - name: Check SEO files
         run: npm run check:seo
 
@@ -81,6 +89,9 @@ jobs:
       - name: Build
         run: npm run build:prod
 
+      - name: Check deploy artifacts
+        run: npm run check:public-output && npm run check:seo
+
       - name: Check Cloudflare credentials
         run: |
           test -n "$CLOUDFLARE_API_TOKEN" || {
@@ -97,7 +108,7 @@ jobs:
         with:
           apiToken: ${{ env.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ env.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy public --project-name=entrycardguide --branch=${{ github.ref_name }} --commit-dirty=true
+          command: pages deploy public-release --project-name=entrycardguide --branch=${{ github.ref_name }} --commit-dirty=true
 
       # Runs after the deploy: IndexNow fetches the key file and the submitted
       # URLs, so they have to be live first. A search engine being down must not
