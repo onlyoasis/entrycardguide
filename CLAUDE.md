@@ -1,37 +1,16 @@
 # CLAUDE.md
 
 <!-- project-knowledge-sync:start -->
-## 项目知识文档（必读）
+## 项目资料
 
-- 统一详情：`/Users/lzc/Projects/project-registry/docs/projects/entrycardguide.md`
-- 事实与状态口径：`/Users/lzc/Projects/project-registry/docs/project-documentation-standard.md`
-
-### 会话启动
-
-1. Code Agent 自动加载本文件后，在分析或修改前继续读取上面的统一详情；
-2. 先确认 `pwd`、Git root、当前分支和 `git status --short`，保留已有改动；
-3. 项目源码、测试、发布平台和真实 runtime 是当前事实；若与文档冲突，先记录差异，
-   不得用旧文档覆盖 live evidence。
-
-### 变更后的文档同步
-
-当本轮变更影响项目目标、已完成功能、架构、构建/测试结论、发布状态、安装或
-runtime 路径、域名/URL、外部准入状态、下一步计划时，必须在交接前同步更新统一
-详情中的对应章节和信息快照日期。
-
-- 代码完成、构建通过、制品生成、部署完成和线上可访问必须分开记录；
-- 发布状态只能按事实与状态口径中的枚举填写，并附当前证据；
-- 没有事实变化时，不为刷新日期而制造文档改动；
-- 不把密码、密钥、token、cookie、私人正文或数据库内容写入项目文档；
-- 更新跨仓库项目文档后，在最终交接中单独列出该改动；提交、推送、发布、启停或
-  重启仍需遵守用户授权边界。
+- 项目详情：`/Users/lzc/Projects/project-registry/docs/projects/entrycardguide.md`。需要背景、运行或发布信息时查阅相关章节，以当前源码和运行证据为准。
+- 项目目标、功能、架构、路径或发布事实改变时，同步详情对应章节；区分代码、测试、部署和线上验证，不为刷新日期改文档。
+- 更新发布状态时按 `/Users/lzc/Projects/project-registry/docs/project-documentation-standard.md` 的口径记录证据；仅保存非敏感事实。
 <!-- project-knowledge-sync:end -->
-
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## 项目本质
 
-反诈骗入境卡指南站。目标搜索 query 是 *"thailand TDAC"*、*"is iVisa official"*、*"巴厘岛海关表"*。每个国家有一份免费的政府入境表，每个表前面都有付费中介在 Google 搜索结果里拦截。这个站把官方 URL、字段填法、已知诈骗站名单放在一起。
+反诈骗入境卡指南站。目标搜索 query 是 *"thailand TDAC"*、*"is iVisa official"*、*"巴厘岛海关表"*。每个国家有一份免费的政府入境表，每个表前面都有付费中介在 Google 搜索结果里拦截。这个站提供官方 URL 与字段填法；不发布第三方公司点名名单。
 
 **做改动前先读 `docs/README.md`**——它是贡献者指南，包含写作风格规则（避免 AI 八股词）、内容样板、任务清单。
 
@@ -46,7 +25,7 @@ npm run clean        # 清理 public/ 和 resources/
 
 需要 Hugo **0.160.1+ extended**（`brew install hugo`）和 Node 22+（CI 用 22）。Hugo 必须是 extended 版（PostCSS、TypeScript 编译都依赖它）。
 
-部署：push 到 `main` → GitHub Actions → Cloudflare Pages（`.github/workflows/cloudflare-pages.yml`）。全过程 < 1 分钟。
+部署：push 到 `main` → GitHub Actions → Cloudflare Pages（`.github/workflows/cloudflare-pages.yml`）。完成时间与线上结果须实际回读。
 
 ## 关键架构
 
@@ -81,11 +60,13 @@ npm run clean        # 清理 public/ 和 resources/
 
 **浏览器端零 npm 依赖**（v1.0 设计约束）。`assets/js/*.ts` 通过 Hugo 的 `js.Build` 编译为 IIFE，生产构建会 minify + fingerprint + SRI。看 `layouts/partials/scripts.html`。
 
-只有两个 TS 文件：
-- `validator.ts` — 客户端字段校验，零网络请求
-- `decide.ts` — 决策树状态机渲染器
+浏览器端 TS 文件（均零 npm 依赖，规则/数据从构建时嵌入或同源 JSON 来）：
+- `validator.ts` — 客户端字段校验，零网络请求（站内全局加载）
+- `decide.ts` — 决策树状态机渲染器（站内全局加载）
+- `search.ts` — 首页国家网格过滤；`directory.ts` / `nav.ts` / `analytics.ts` — 目录、导航、点击埋点
+- `ask.ts` — `/ask/` 页问答引擎：同源拉取构建期生成的 `/ask-index.json`（每语言一份，来自各页 faq 前置元数据 + 国家 roster，见 `layouts/index.ask.json`），浏览器内做中英混合检索匹配，答案全部带出处链接；仅含 `{{< ask >}}` shortcode 的页面加载（`scripts.html` 里 `.HasShortcode` 门控）
 
-两个都站内全局加载（在没有对应容器的页面静默 no-op）。规则全部从 data 文件来，**改字段验证不需要改代码**。
+没有对应容器的页面静默 no-op。**改字段验证不需要改代码**。
 
 ### CSS 管道
 
@@ -148,128 +129,6 @@ content/{country}/how-to-fill.md       # 字段逐项填写
 - **不要 `git push --force`**。CI 触发部署，强推会污染历史。
 - **不要修改 `tailwind.config.js` 加调色板/阴影/圆角**，除非有明确设计依据。
 - **改字段规则只改 `data/rules/*.json`，不要碰 `validator.ts`**。
-- **加诈骗站：先 TOML，后 markdown**，否则构建失败。
-- 国家页面 `Last verified` 元数据来自 `enableGitInfo` + 文件 `Lastmod`，所以**改文件 = 自动刷新 last-verified 显示**。如果只是审查没改变内容，要主动 bump `lastmod` 前置字段。
-
-
----
-
-# AGENTS.md 合并内容
-
-# AGENTS.md
-
-This file provides guidance to Codex (Codex.ai/code) when working with code in this repository.
-
-## 项目本质
-
-反诈骗入境卡指南站。目标搜索 query 是 *"thailand TDAC"*、*"is iVisa official"*、*"巴厘岛海关表"*。每个国家有一份免费的政府入境表，每个表前面都有付费中介在 Google 搜索结果里拦截。这个站把官方 URL、字段填法、已知诈骗站名单放在一起。
-
-**做改动前先读 `docs/README.md`**——它是贡献者指南，包含写作风格规则（避免 AI 八股词）、内容样板、任务清单。
-
-## 常用命令
-
-```bash
-npm run dev          # 本地预览 http://localhost:1313（Hugo server + GC）
-npm run build:prod   # 生产构建（含 minify、production 环境）
-npm run check:seo    # SEO 验证：必需文件、本地链接、hreflang、JSON-LD（CI 也跑）
-npm run clean        # 清理 public/ 和 resources/
-```
-
-需要 Hugo **0.160.1+ extended**（`brew install hugo`）和 Node 22+（CI 用 22）。Hugo 必须是 extended 版（PostCSS、TypeScript 编译都依赖它）。
-
-部署：push 到 `main` → GitHub Actions → Cloudflare Pages（`.github/workflows/cloudflare-pages.yml`）。全过程 < 1 分钟。
-
-## 关键架构
-
-### 数据驱动（修改数据 = 修改所有页面）
-
-每个国家的所有内容由四份 data 文件驱动，shortcode 直接读取，**没有重复的字符串**：
-
-- `data/rules/{country}.json` — 字段验证规则（label、pattern、minLength、错误信息）。`{{< validator >}}` shortcode 把它嵌成 `<script type="application/json">`，`assets/js/validator.ts` 在浏览器读。
-- `data/official_urls/{country}.toml` — 官方 URL、机构名、`last_verified` 日期。`{{< official-link >}}` 从这里读。文件里仍保留 `[[scam_sites]]` 数组作为内部记录，但**站点不再渲染它**（2026-08-10 移除中介名单）。
-- `data/decision/tree.json` — `/decide/` 决策树状态机。被 `{{< decide >}}` shortcode 嵌入，`assets/js/decide.ts` 消费。
-- `data/changelog/{country}.toml` — 国家变更日志（`docs/maintenance/monthly-review.md` 描述了月度审查流程）。
-
-**改任何 URL、字段规则、决策状态时只改 data 文件，不要去翻 markdown。**
-
-### Shortcode 构建时验证
-
-`layouts/shortcodes/official-link.html` 在构建时强制：`site="country.key"` 必须能在 TOML 中找到，否则 `errorf` 终止构建。
-
-**站点不再发布中介/仿冒站名单。** `scam-site.html` shortcode 和 `is-ivisa-official` 页面已于 2026-08-10 移除，理由是这批页面几乎没有流量却承担了全部法律风险。不要重新引入对第三方公司的点名——页面只讲官方网址和字段怎么填。
-
-### 多语言机制（en / zh-Hans / zh-Hant）
-
-- 默认英语在根（`/`、`/thailand/`、`/about/`）
-- 简体中文加 `/zh/` 前缀，繁体中文加 `/zh-hant/` 前缀；HTML lang / hreflang / sitemap 使用 en、zh-Hans、zh-Hant 映射，robots.txt 列出三个子 sitemap
-- 文件后缀决定语言：`tdac.md`（英）+ `tdac.zh.md`（简）+ `tdac.zh-hant.md`（繁，生成文件不要手改）
-- UI 字符串走 `i18n/en.yaml`、`i18n/zh.yaml`、`i18n/zh-hant.yaml`——**加一个 key 必须三个文件都加**（zh-hant.yaml 由 `scripts/zh-hant/gen-i18n.mjs` 生成，勿手改）
-- 繁体派生物用 `npm run sync:zh-hant` 重生成；`npm run check:zh-hant` 是 build/dev 前置只读门禁；手工英文→繁体覆写（`data/rules_i18n/`、决策树覆写）受源文本快照陈旧门禁保护
-- 译文不存在时，语言切换器 fallback 到该语言首页（不会 404）
-- `disableKinds = ["taxonomy", "term"]`（无 tag/category 索引页）；旧的 `/countries/` 和 `/tags/` 路径在 `static/_redirects` 中 301 到首页
-- 细节与流程：`docs/maintenance/zh-hant.md`
-### JS 资源管道
-
-**浏览器端零 npm 依赖**（v1.0 设计约束）。`assets/js/*.ts` 通过 Hugo 的 `js.Build` 编译为 IIFE，生产构建会 minify + fingerprint + SRI。看 `layouts/partials/scripts.html`。
-
-只有两个 TS 文件：
-- `validator.ts` — 客户端字段校验，零网络请求
-- `decide.ts` — 决策树状态机渲染器
-
-两个都站内全局加载（在没有对应容器的页面静默 no-op）。规则全部从 data 文件来，**改字段验证不需要改代码**。
-
-### CSS 管道
-
-- `assets/css/main.css` → `css.PostCSS` → 生产构建 minify + fingerprint
-- `tailwind.config.js` 锁定了完整的设计系统（颜色、字号、间距、圆角）。文件首行警告："adding tints/shades, shadows, pill radii, or blue will break the anti-scam visual positioning"。
-- 调色板只有：`ink`、`paper`、`rule`、`muted`、`verified`、`scam`、`mark`、`white`。**没有蓝/紫，没有 tint 级别，没有阴影，没有渐变。**
-- 字体三种：Fraunces（serif）、Instrument Sans（sans）、Geist Mono（mono）。自托管（见 `assets/fonts/`）。
-- 不要加 `rounded-xl`、`rounded-full`、`shadow-*`、`bg-gradient-*` 等。Tailwind 配置主动禁用了 `boxShadow` 和 `gradientColorStops`。
-
-### Cloudflare Pages 配置
-
-通过 `static/` 里两个特殊文件配置（Hugo 把 `static/` 原样拷到 `public/`）：
-
-- `static/_headers` — 全站 CSP（严格：默认只允许 self，外加 Cloudflare Insights）、HSTS、X-Frame-Options 等
-- `static/_redirects` — www→apex 强制 301、已废弃的 taxonomy 路径 301
-
-`functions/_middleware.js` 是 Pages Function，做 www→apex 重定向兜底（与 `_redirects` 冗余但更可靠）。
-
-### SEO 严格性
-
-`scripts/check-seo-output.mjs` 在 `npm run check:seo` 时跑，**CI 失败会阻断部署**。它验证：
-
-1. `robots.txt` 和 `sitemap.xml`（含 en、zh、zh-hant 子 sitemap）存在
-2. 所有 HTML 中的 `href`/`src` 本地路径在 `public/` 真实存在
-3. `hreflang` alternate 都解析得到（且 `x-default` 不指向 `/zh/`）
-4. 所有 JSON-LD 合法可解析，没有双重转义（如 `"\"foo\""`）
-
-每个页面都会发出 Article/BreadcrumbList schema；前置元数据有 `faq` 字段时自动发 FAQPage。详见 `layouts/partials/head.html`。
-
-### 关键路径
-
-```
-content/{country}/_index.md            # 国家枢纽（链到三篇主文章）
-content/{country}/{form-slug}.md       # 主表介绍（如 tdac、fmm、eticket、mdac、evisa、e-cd、sgac）
-content/{country}/how-to-fill.md       # 字段逐项填写
-```
-
-加新国家的最小改动：在 7 个文件里加内容，加 4 份 data 文件（rules、official_urls、changelog、可选 decision 节点），在 `config.toml` 加菜单项，更新 `layouts/index.html` 的 `$mainSlugs`/`$subtitlesEn`/`$subtitlesZh`，加 i18n 国家名。`layouts/shortcodes/official-directory.html` 也要加一行。
-
-## 写作风格（来自 docs/README.md）
-
-英文 — 禁用：`delve`、`crucial`、`comprehensive`、`nuanced`、`furthermore`、`moreover`、长破折号单独成句。
-
-中文 — 禁用：「关键在于」「让我来分解一下」「重要的是」「值得注意的是」这类开场套话。
-
-要用：短句、具体数字、具体文件名、具体规则、真实用户视角、政府表单的真实约束（字符上限、日期格式、API 错误信息）。
-
-## 编辑注意
-
-- **不要 `git push --force`**。CI 触发部署，强推会污染历史。
-- **不要修改 `tailwind.config.js` 加调色板/阴影/圆角**，除非有明确设计依据。
-- **改字段规则只改 `data/rules/*.json`，不要碰 `validator.ts`**。
-- **加诈骗站：先 TOML，后 markdown**，否则构建失败。
 - 国家页面 `Last verified` 元数据来自 `enableGitInfo` + 文件 `Lastmod`，所以**改文件 = 自动刷新 last-verified 显示**。如果只是审查没改变内容，要主动 bump `lastmod` 前置字段。
 
 ## 繁体中文（zh-Hant）维护
