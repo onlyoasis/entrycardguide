@@ -3,7 +3,7 @@ title: "南非海关申报怎么填：资料准备与提交流程"
 kicker: "12项选列准备资料，说明 Full 与 Nil、入境和离境住宿地址，以及海关确认的用途。"
 description: "南非 SARS 申报填写指南：旅行证件、入境或离境地址、同行人、货物与货币、提交窗口和海关指示。"
 date: 2026-09-05
-lastmod: 2026-09-05
+lastmod: 2026-10-05
 country: "south-africa"
 weight: 20
 layout: how-to-fill

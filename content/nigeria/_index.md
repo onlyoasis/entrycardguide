@@ -3,7 +3,7 @@ title: "Nigeria"
 kicker: "Find the free NIS Landing & Exit Card portal, choose entry or departure, and download and print the card for your journey."
 description: "Nigeria Landing and Exit Card guide: official NIS portal, free filing, foreign-traveller scope, transit, when to apply and printed confirmation."
 date: 2026-09-05
-lastmod: 2026-09-05
+lastmod: 2026-10-05
 ---
 
 Nigeria Immigration Service (NIS) runs the free Landing & Exit Card portal, launched on 1 May 2025. Choose the relevant arrival or departure service; an arrival card does not automatically cover leaving Nigeria. The card does not replace a required visa.

@@ -6,7 +6,7 @@
 url = "https://eservices.ica.gov.sg/sgarrivalcard/"
 name = "Singapore Arrival Card (SGAC)"
 agency = "Immigration & Checkpoints Authority (ICA)"
-last_verified = "2026-09-14"
+last_verified = "2026-10-05"
 archive_url = "https://web.archive.org/web/2026/https://eservices.ica.gov.sg/sgarrivalcard/"
 notes = "Free ICA service. Refer to ICA guidance for transit and resident land-checkpoint exemptions. Current and enhanced services are linked by ICA; one submission per trip."
 
@@ -14,7 +14,7 @@ notes = "Free ICA service. Refer to ICA guidance for transit and resident land-c
 url = "https://www.ica.gov.sg"
 name = "Immigration & Checkpoints Authority (home)"
 agency = "Immigration & Checkpoints Authority"
-last_verified = "2026-09-14"
+last_verified = "2026-10-05"
 
 # Country-page metadata (consumed by country-form layout).
 # Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
@@ -134,13 +134,13 @@ evidence = "Commercial visa middleman charging fees for Singapore's free SGAC. N
 url = "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/sg-arrival-card"
 name = "ICA SGAC requirements"
 agency = "Immigration & Checkpoints Authority"
-last_verified = "2026-09-14"
+last_verified = "2026-10-05"
 
 [sgac_enhanced]
 url = "https://eservices.ica.gov.sg/arrivalcard/sgac"
 name = "ICA enhanced SGAC service"
 agency = "Immigration & Checkpoints Authority"
-last_verified = "2026-09-14"
+last_verified = "2026-10-05"
 
 [arrival_date_help]
 url = "https://ask.gov.sg/ica/questions/cluuhsp9l001afxu700snp0f0"
@@ -152,10 +152,10 @@ last_verified = "2026-09-14"
 url = "https://www.ica.gov.sg/enter-transit-depart/at-our-checkpoints/for-travellers/retrieval-of-electronic-visit-pass"
 name = "ICA SGAC and e-Pass retrieval"
 agency = "Immigration & Checkpoints Authority"
-last_verified = "2026-09-14"
+last_verified = "2026-10-05"
 
 [contact]
 url = "https://www.ica.gov.sg/contact-us"
 name = "ICA contact and help"
 agency = "Immigration & Checkpoints Authority"
-last_verified = "2026-09-14"
+last_verified = "2026-10-05"

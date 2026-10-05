@@ -3,7 +3,7 @@ title: "Singapore Arrival Card: Official ICA Service, Free SGAC and Exemptions"
 kicker: "Find the free ICA Singapore Arrival Card, check the three-day window and resident exemptions, and open the name, date and confirmation guide."
 description: "Find the free ICA Singapore Arrival Card, check the three-day window and resident exemptions, and open the name, date and confirmation guide."
 date: 2026-04-26
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 country: singapore
 weight: 10
 layout: country-form

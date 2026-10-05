@@ -3,7 +3,7 @@ title: "How to Fill the Singapore Arrival Card: Name, Dates and SGAC Help"
 kicker: "Choose the ICA service, check your name and arrival date, and save the acknowledgement."
 description: "Singapore Arrival Card field help: given names before surname, the three-day window, last city of embarkation, Chinese interface and finding your confirmation."
 date: 2026-04-26
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 country: singapore
 weight: 20
 layout: how-to-fill

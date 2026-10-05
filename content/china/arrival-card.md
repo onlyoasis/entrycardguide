@@ -3,7 +3,7 @@ title: "China Arrival Card: Official NIA Site, Free Filing (2026)"
 kicker: "Foreign nationals entering China can file the free Arrival Card online before departure, or complete it at the port. Official URL, exemptions, timing and the receipt."
 description: "China's online Arrival Card for foreign nationals: the official s.nia.gov.cn site, free filing, the 8 exemption categories, official channels, timing and the declaration receipt."
 date: 2026-09-05
-lastmod: 2026-09-05
+lastmod: 2026-10-05
 country: "china"
 weight: 10
 keywords: ["china arrival card", "china arrival card online", "china arrival card official site", "s.nia.gov.cn", "foreigner arrival card china"]

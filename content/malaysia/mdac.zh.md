@@ -3,7 +3,7 @@ title: "马来西亚 MDAC 入境卡：免费官网、豁免条件与填写步骤
 kicker: "先核对证件对应的豁免条件，再准备行程资料，进入移民局免费表格。"
 description: "马来西亚 MDAC 中文指南：免费官方网址、豁免名单、抵达前三天提交窗口，以及护照和行程填写清单。"
 date: 2026-04-24
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 country: malaysia
 weight: 10
 layout: country-form

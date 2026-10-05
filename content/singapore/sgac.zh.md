@@ -3,7 +3,7 @@ title: "新加坡入境卡 SGAC：ICA 免费官网、提交时间与豁免条件
 kicker: "新加坡 SGAC 入境卡官方入口：免费提交、包含抵达当天的三天窗口、居民陆路豁免，以及姓名、日期、确认信息填写说明。"
 description: "新加坡 SGAC 入境卡官方入口：免费提交、包含抵达当天的三天窗口、居民陆路豁免，以及姓名、日期、确认信息填写说明。"
 date: 2026-04-26
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 country: singapore
 weight: 10
 layout: country-form

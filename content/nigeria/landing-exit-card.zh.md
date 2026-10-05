@@ -3,7 +3,7 @@ title: "尼日利亚入境与出境卡：NIS 官方入口，免费办理"
 kicker: "选择入境或出境业务，在行程查验前办妥免费卡片，下载并打印确认。"
 description: "尼日利亚 Landing & Exit Card 官方指南：NIS 免费入口、外国旅客、纯过境范围、登机前办理、打印和资料更正。"
 date: 2026-09-05
-lastmod: 2026-09-05
+lastmod: 2026-10-05
 country: "nigeria"
 weight: 10
 layout: country-form

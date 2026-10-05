@@ -3,7 +3,7 @@ title: "China"
 kicker: "Foreign nationals entering China can file the free Arrival Card online before departure or complete it at the port. Official URL, exemptions, timing and help with selected fields."
 description: "China Arrival Card guide: the official s.nia.gov.cn filing site, free of charge, the 8 exemption categories, when to file, and field-by-field help."
 date: 2026-09-05
-lastmod: 2026-09-05
+lastmod: 2026-10-05
 ---
 
 China runs an online Arrival Card for foreign nationals, available since 20 November 2025. It is run by the National Immigration Administration, it is free, and the website is one of six official channels: the web form, the government service platform, the "NIA 12367" app, the WeChat and Alipay mini-programs, and scanning an arrival card QR code at the port.

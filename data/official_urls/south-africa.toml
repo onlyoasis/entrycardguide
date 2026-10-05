@@ -4,49 +4,49 @@
 url = "https://tools.sars.gov.za/sarsonlinequery/traveller"
 name = "SARS Customs Online Traveller Declaration"
 agency = "South African Revenue Service"
-last_verified = "2026-09-05"
+last_verified = "2026-10-05"
 notes = "主入口首屏提供 Full/Nil 与旅客资料，未提交或验证全部分支。"
 
 [service]
 url = "https://www.sars.gov.za/travellerdeclaration/"
 name = "Customs Online Traveller Declaration: service and border instructions"
 agency = "South African Revenue Service"
-last_verified = "2026-09-05"
+last_verified = "2026-10-05"
 notes = "确认邮件可手机保存或打印；入境先 immigration 后 Customs，离境按 Customs 指示再 immigration。"
 
 [faq]
 url = "https://www.sars.gov.za/travellerdeclaration/faqs-for-the-required-online-traveller-declarations-from-1-july-2026/"
 name = "FAQs for required traveller declarations from 1 July 2026"
 agency = "South African Revenue Service"
-last_verified = "2026-09-05"
+last_verified = "2026-10-05"
 notes = "适用人群、纯过境、出发前24小时内、儿童、更改、有限纸表与货币规则。"
 
 [rules]
 url = "https://www.sars.gov.za/legal-lsec-ce-ra-2026-11-r7622-gg-54900-ra-under-ss-15-and-120-electronic-south-african-traveller-management-system-dar275-26-june-2026/"
 name = "R.7622 / GG54900: electronic traveller declaration rules"
 agency = "South African Revenue Service"
-last_verified = "2026-09-05"
+last_verified = "2026-10-05"
 notes = "2026-07-01生效。15.02 纯过境；15.04(a)(iv) 入境南非住所、离境目的地国家住所；15.04 联系条件；15.06 提交及更改。"
 
 [guide]
 url = "https://www.sars.gov.za/wp-content/uploads/Ops/Guides/SC-PA-01-12-SATMS-Through-SARS-Website-External-Guide.pdf"
 name = "SC-PA-01-12: SATMS Through SARS Website"
 agency = "South African Revenue Service"
-last_verified = "2026-09-05"
+last_verified = "2026-10-05"
 notes = "2026-07-01生效的40页指南，第6–16页用于准备资料。地址与条件资料以规则为准，截图不作为格式校验证据。"
 
 [fee_notice]
 url = "https://www.sars.gov.za/media-release/nearly-39-000-foreign-registered-vehicles-already-registered-as-sars-launches-the-process-from-1-june-2026/"
 name = "SARS notice confirming no online declaration fee"
 agency = "South African Revenue Service"
-last_verified = "2026-09-05"
+last_verified = "2026-10-05"
 notes = "2026-06-01公告明确在线申报免费；仅取费用事实，不覆盖7月1日新规日期。"
 
 [processing_policy]
 url = "https://www.sars.gov.za/wp-content/uploads/Ops/Policies/SC-PA-01-11-Traveller-Processing-External-Policy.pdf"
 name = "SC-PA-01-11: Traveller Processing"
 agency = "South African Revenue Service"
-last_verified = "2026-09-05"
+last_verified = "2026-10-05"
 notes = "2026-07-01生效；无货物也须申报，关税、VAT及相关担保另计。"
 
 [meta]

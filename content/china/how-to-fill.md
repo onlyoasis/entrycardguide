@@ -3,7 +3,7 @@ title: "How to Fill the China Arrival Card (2026): Upload, Dates and Entity Cont
 kicker: "Passport image uploads, date fields, the address in China and conditional inviter details in the ordinary filing flow."
 description: "China Arrival Card filling guide: JPEG/PNG passport uploads, date format, address limits, when Entity Contact Information is required, and saving the receipt."
 date: 2026-09-05
-lastmod: 2026-09-05
+lastmod: 2026-10-05
 country: "china"
 weight: 20
 keywords: ["how to fill china arrival card", "china arrival card date format", "china arrival card entity contact information", "china arrival card step by step", "china arrival card when to fill"]

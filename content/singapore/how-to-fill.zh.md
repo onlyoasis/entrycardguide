@@ -3,7 +3,7 @@ title: "新加坡入境卡怎么填：姓名顺序、三天窗口与 SGAC 确认
 kicker: "先打开 ICA 官网，再核对姓名、抵达日期和确认信息。"
 description: "新加坡 SGAC 入境卡中文填写说明：名与姓的顺序、包含抵达当天的三天窗口、最后出发城市、中文界面及确认信息找回。"
 date: 2026-04-26
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 country: singapore
 weight: 20
 layout: how-to-fill

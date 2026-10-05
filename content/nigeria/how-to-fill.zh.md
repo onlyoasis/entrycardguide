@@ -3,7 +3,7 @@ title: "尼日利亚入境与出境卡怎么准备"
 kicker: "八项选列准备资料、官方登录入口，以及打印和找回卡片的方法。"
 description: "尼日利亚 Landing & Exit Card 准备指南：护照姓名、证件和签证资料、生日、国籍、联系方式、打印和找回卡片。"
 date: 2026-09-05
-lastmod: 2026-09-05
+lastmod: 2026-10-05
 country: "nigeria"
 weight: 20
 layout: how-to-fill

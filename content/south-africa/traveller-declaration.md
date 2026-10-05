@@ -3,7 +3,7 @@ title: "South Africa Traveller Declaration: Official SARS Site and 24-Hour Rule"
 kicker: "Free customs filing for entry and exit. No declarable goods still means a Nil declaration."
 description: "Official South Africa SARS Traveller Declaration guide: who files, the 24-hour departure window, Full or Nil, transit, children, fees and Customs confirmation."
 date: 2026-09-05
-lastmod: 2026-09-05
+lastmod: 2026-10-05
 country: "south-africa"
 weight: 10
 layout: country-form

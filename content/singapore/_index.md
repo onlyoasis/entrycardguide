@@ -2,7 +2,7 @@
 title: "Singapore"
 kicker: "Everything you need to know about the Singapore Arrival Card (SGAC), without paying a middleman."
 description: "Free, independent guide to Singapore's official SGAC. Required for all arrivals, free, only at eservices.ica.gov.sg."
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 The Singapore Arrival Card is a free pre-arrival declaration. Use ICA's service and check the requirements for your journey.

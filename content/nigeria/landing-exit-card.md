@@ -3,7 +3,7 @@ title: "Nigeria Landing & Exit Card: Official NIS Portal, Free Filing"
 kicker: "Choose arrival or departure, complete the free card before your journey's checks, and download and print the confirmation."
 description: "Nigeria Landing and Exit Card official guide: free NIS portal, foreign travellers, transit limits, pre-boarding filing, printed cards and correcting errors."
 date: 2026-09-05
-lastmod: 2026-09-05
+lastmod: 2026-10-05
 country: "nigeria"
 weight: 10
 layout: country-form

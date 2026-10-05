@@ -3,7 +3,7 @@ title: "Malaysia MDAC: Official Free Form, Who Needs It and How to Submit"
 kicker: "Check the exemption list, prepare your travel details, then open the free Immigration Department form."
 description: "Malaysia MDAC guide: the free official arrival card, exemptions, three-day submission window and a checklist before you fill in your travel details."
 date: 2026-04-24
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 country: malaysia
 weight: 10
 layout: country-form

@@ -3,7 +3,7 @@ title: "South Africa Customs Declaration: How to Prepare and Submit"
 kicker: "Twelve selected preparation items, Full or Nil, the correct accommodation address and your Customs confirmation."
 description: "Prepare the South Africa SARS declaration: travel documents, address for arrival or departure, companions, goods and currency, timing and Customs instructions."
 date: 2026-09-05
-lastmod: 2026-09-05
+lastmod: 2026-10-05
 country: "south-africa"
 weight: 20
 layout: how-to-fill

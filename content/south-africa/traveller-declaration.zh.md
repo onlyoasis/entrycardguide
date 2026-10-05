@@ -3,7 +3,7 @@ title: "南非旅客海关申报：SARS 官方入口与24小时规则"
 kicker: "入境与离境海关申报免费。没有应申报物品也要填写 Nil 申报。"
 description: "南非 SARS 旅客海关申报指南：适用人群、出发前24小时窗口、Full与Nil、纯过境、儿童、费用和海关确认。"
 date: 2026-09-05
-lastmod: 2026-09-05
+lastmod: 2026-10-05
 country: "south-africa"
 weight: 10
 layout: country-form

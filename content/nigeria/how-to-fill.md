@@ -3,7 +3,7 @@ title: "How to Prepare Nigeria's Landing & Exit Card"
 kicker: "Eight selected preparation items, the official login entry, and how to print or recover your card."
 description: "Nigeria Landing and Exit Card preparation: passport name, document and visa details, date of birth, nationality, contacts, printing and card retrieval."
 date: 2026-09-05
-lastmod: 2026-09-05
+lastmod: 2026-10-05
 country: "nigeria"
 weight: 20
 layout: how-to-fill

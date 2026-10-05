@@ -4,28 +4,28 @@
 url = "https://lecard.immigration.gov.ng/"
 name = "Nigeria Landing and Exit Card Portal"
 agency = "Nigeria Immigration Service"
-last_verified = "2026-09-05"
+last_verified = "2026-10-05"
 notes = "官方主入口分别提供入境和出境业务，当前申请链接到登录页。公开说明列证件、姓名、生日、国籍、联系方式并要求下载打印。未登录或提交。"
 
 [faq]
 url = "https://lecard.immigration.gov.ng/faq"
 name = "Landing and Exit Card FAQ"
 agency = "Nigeria Immigration Service"
-last_verified = "2026-09-05"
+last_verified = "2026-10-05"
 notes = "面向外国旅客，卡片免费，纯过境不适用，逐人提交；已提交不能直接改，错误重提；成功后邮件与可下载卡。"
 
 [nis_overview]
 url = "https://immigration.gov.ng/lecard/"
 name = "NIS introduction to Landing and Exit Cards"
 agency = "Nigeria Immigration Service"
-last_verified = "2026-09-05"
+last_verified = "2026-10-05"
 notes = "主站all passengers口径较专用FAQ更宽；公民、双国籍及特殊身份向NIS确认，不推断豁免。"
 
 [launch]
 url = "https://immigration.gov.ng/"
 name = "Nigeria Immigration Service: Landing and Exit Cards"
 agency = "Nigeria Immigration Service"
-last_verified = "2026-09-05"
+last_verified = "2026-10-05"
 notes = "Landing and Exit Cards小节说明2025-05-01启用；不挪用相邻其他业务的小时数。"
 
 [government_notice]
@@ -39,14 +39,14 @@ notes = "2025-04-10公告明确数字卡对外国旅客免费，并要求登机�
 url = "https://lecard.immigration.gov.ng/get-last-card"
 name = "Get your last Landing or Exit Card"
 agency = "Nigeria Immigration Service"
-last_verified = "2026-09-05"
+last_verified = "2026-10-05"
 notes = "找卡页要求护照号、签发国与生日；不把签发国移作已核验申报主字段。未提交查询。"
 
 [register]
 url = "https://lecard.immigration.gov.ng/register-page"
 name = "Landing and Exit Card account registration"
 agency = "Nigeria Immigration Service"
-last_verified = "2026-09-05"
+last_verified = "2026-10-05"
 notes = "公开账户页要求姓名与护照一致，并列邮箱电话。未注册，不把账户控件总数当主表总数，不提供密码字段。"
 
 [meta]

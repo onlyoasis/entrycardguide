@@ -3,7 +3,7 @@ title: "South Africa"
 kicker: "The free SARS Traveller Declaration covers customs on entry and exit. Find the official portal, the 24-hour filing window and the details to prepare."
 description: "South Africa customs declaration guide: official SARS portal, free filing, Full or Nil, transit exemption, children and when to submit."
 date: 2026-09-05
-lastmod: 2026-09-05
+lastmod: 2026-10-05
 ---
 
 South Africa's SARS Traveller Declaration is a customs declaration for goods, currency and related items. It does not replace a visa or the Department of Home Affairs ETA. The current electronic declaration rules took effect on 1 July 2026.
