@@ -18,7 +18,7 @@ faq:
   - q: "印度旅遊 e-Visa 多少錢？"
     a: "價格按國籍和有效期變化。常見官網示例為 30 天 10 或 25 美元、1 年 40 美元、5 年 200 美元，另加 3% 銀行手續費。存在國籍例外，付款時要看官網即時報價。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="india.earrival" >}}

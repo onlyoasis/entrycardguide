@@ -7,7 +7,7 @@ country: "cuba"
 weight: 20
 keywords: ["D'Viajeros 怎麼填", "古巴入境表欄位", "DViajeros QR Code"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="cuba.dviajeros" >}}

@@ -18,7 +18,7 @@ faq:
   - q: "護照資料頁能上傳 PDF 嗎？最大多大？"
     a: "不能。護照上傳只接受 JPEG 或 PNG，系統先壓縮圖片，再檢查是否超過 102400 字節。PDF 由另一處說明材料上傳接受，不適用於護照上傳；低於大小限制也不保證一定能通過。"
 layout: how-to-fill
-lastmod: 2026-10-02
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="china.arrivalcard" >}}

@@ -7,7 +7,7 @@ country: "jamaica"
 weight: 20
 keywords: ["牙買加 C5 怎麼填", "牙買加入境表", "牙買加海關申報表"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="jamaica.c5" >}}

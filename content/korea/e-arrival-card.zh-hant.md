@@ -14,7 +14,7 @@ faq:
   - q: "e-Arrival Card 和 K-ETA 或 Q-Code 是同一回事嗎？"
     a: "不是。K-ETA、簽證、Q-Code 和 e-Arrival Card 是不同系統。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="korea.earrivalcard" >}}

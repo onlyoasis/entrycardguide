@@ -2,7 +2,7 @@
 title: "韓國 e-Arrival Card 官方網站、免費填寫和防中介指南"
 kicker: "韓國 e-Arrival Card 官方連結、免費填寫方式，以及它和 K-ETA / Q-Code 的區別。"
 description: "韓國 e-Arrival Card 中文指南：官方網址 e-arrivalcard.go.kr、免費填寫、欄位說明。"
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 韓國 e-Arrival Card 是官方電子入境卡門戶，網址是 `e-arrivalcard.go.kr`。它和 K-ETA、簽證、Q-Code 健康申報是不同系統。

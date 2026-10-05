@@ -7,7 +7,7 @@ country: "turkey"
 weight: 20
 keywords: ["土耳其 e-Visa 怎麼填", "土耳其電子簽欄位", "土耳其電子簽申請", "evisa.gov.tr", "土耳其電子簽附加證明"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 繼續之前，先確認你的護照確實需要土耳其 e-Visa。

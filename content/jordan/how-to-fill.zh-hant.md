@@ -7,7 +7,7 @@ country: "jordan"
 weight: 20
 keywords: ["約旦通票怎麼買", "Jordan Pass 填寫", "jordanpass.jo 購買", "約旦簽證費減免", "約旦通票幾晚"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="jordan.purchase_form" >}}

@@ -7,7 +7,7 @@ country: "kenya"
 weight: 20
 keywords: ["肯尼亞 eTA 怎麼填", "肯尼亞 eTA 材料", "肯尼亞 eTA 要求"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="kenya.eligibility" >}}

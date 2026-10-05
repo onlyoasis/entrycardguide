@@ -7,7 +7,7 @@ country: "cambodia"
 weight: 20
 keywords: ["柬埔寨 e-Arrival 怎麼填", "arrival.gov.kh 欄位", "柬埔寨入境 QR Code"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="cambodia.earrival" >}}

@@ -7,7 +7,7 @@ country: "myanmar"
 weight: 20
 keywords: ["緬甸電子簽怎麼申請", "緬甸電子簽材料", "緬甸電子簽照片", "緬甸電子簽填寫"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="myanmar.user_guide" >}}

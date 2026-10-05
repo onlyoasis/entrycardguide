@@ -7,7 +7,7 @@ country: "sri-lanka"
 weight: 20
 keywords: ["斯里蘭卡 ETA 怎麼辦", "斯里蘭卡 ETA 材料", "斯里蘭卡 ETA 申請", "eta.gov.lk"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="sri-lanka.eta" >}}

@@ -18,7 +18,7 @@ faq:
   - q: "Hayya 多久出結果？"
     a: "本輪核對的公開頁面沒有給所有 Hayya 類別一個統一審理時限。請提前申請，並在實際申請中跟蹤。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 ## 你可能不需要 Hayya 電子簽

@@ -3,7 +3,7 @@ title: "秘魯 TAM Virtual：自動生成、免費查詢和下載"
 kicker: "TAM Virtual 在邊檢時自動生成。官網是免費查詢，不是入境前要填的表。"
 description: "秘魯 TAM Virtual 中文指南：邊檢自動記錄、Migraciones 免費查詢、證件格式和下載憑證。"
 date: 2026-08-30
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 秘魯以電子記錄取代了國際航班移民檢查中的紙質卡和護照蓋章。虛擬安第斯移民卡 TAM Virtual 在邊檢時自動生成。

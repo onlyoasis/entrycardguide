@@ -7,7 +7,7 @@ country: "azerbaijan"
 weight: 20
 keywords: ["阿塞拜疆電子簽怎麼填", "ASAN 申請", "阿塞拜疆電子簽材料", "evisa.gov.az"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="azerbaijan.evisa" >}}

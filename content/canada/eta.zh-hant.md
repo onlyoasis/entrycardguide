@@ -18,7 +18,7 @@ faq:
   - q: "美國公民和美國綠卡持有人需要加拿大 eTA 嗎？"
     a: "都不需要。美國合法永久居民從 2022 年 4 月 26 日起豁免；乘飛機時仍要攜帶有效護照和有效綠卡，或 IRCC 接受的其他美國身份憑證。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="canada.eta" >}}

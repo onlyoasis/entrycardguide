@@ -7,7 +7,7 @@ country: "india"
 weight: 20
 keywords: ["印度入境卡怎麼填", "印度 e-Arrival Card", "印度入境卡欄位", "印度入境卡官網", "印度入境卡航班號"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="india.earrival" >}}

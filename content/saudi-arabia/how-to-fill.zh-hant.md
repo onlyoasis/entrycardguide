@@ -7,7 +7,7 @@ country: "saudi-arabia"
 weight: 20
 keywords: ["沙特電子簽怎麼辦", "沙特旅遊簽材料", "沙特簽證保險", "沙特簽證查詢工具"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="saudi-arabia.national_platform" >}}

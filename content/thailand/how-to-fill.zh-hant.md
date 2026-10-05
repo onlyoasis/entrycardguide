@@ -7,7 +7,7 @@ country: "thailand"
 weight: 20
 keywords: ["TDAC 怎麼填", "泰國入境卡欄位", "TDAC 欄位填寫", "泰國 TDAC 幫助"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="thailand.tdac" >}}

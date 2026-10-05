@@ -7,7 +7,7 @@ country: "laos"
 weight: 20
 keywords: ["老撾電子簽怎麼申請", "老撾電子簽材料", "老撾電子簽照片尺寸", "laoevisa.gov.la 申請"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="laos.evisa" >}}

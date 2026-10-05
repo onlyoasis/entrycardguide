@@ -7,7 +7,7 @@ country: "oman"
 weight: 20
 keywords: ["阿曼電子簽怎麼填", "阿曼電子簽申請", "阿曼電子簽材料", "evisa.rop.gov.om"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="oman.eligibility" >}}

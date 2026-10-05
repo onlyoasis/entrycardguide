@@ -18,7 +18,7 @@ faq:
   - q: "約旦有政府電子簽嗎？"
     a: "有，在內政部：moi.gov.jo 連結到 eservices.moi.gov.jo/MOI_EVISA，這是賬號登入式服務，只受理在王國境外遞交的申請，每名被邀請人另收 2 約旦第納爾服務費和 1000 約旦第納爾保證金。它不是遊客自助下單通道。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 ## 付款之前先查護照

@@ -2,7 +2,7 @@
 title: "越南 E-Visa 官方網站、費用和防中介加價指南"
 kicker: "關於越南 E-Visa 你需要知道的一切，不必給中介付 4 倍加價。"
 description: "越南 E-Visa 中文指南：官方網址 evisa.gov.vn、真實 $25 美元政府費用、每個欄位怎麼填。"
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 越南 E-Visa 在 `evisa.gov.vn` 提交。和泰國 TDAC 或馬來西亞 MDAC 不同，越南 E-Visa **確實有政府收費**：單次入境 $25 美元，多次入境 $50 美元，這是付給越南政府的真實費用。

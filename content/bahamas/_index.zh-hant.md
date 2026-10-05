@@ -3,7 +3,7 @@ title: "巴哈馬"
 kicker: "C17 已電子化，但不是每名訪客都走同一申報路徑。"
 description: "巴哈馬 C17 獨立指南：誰需要電子填寫、Exempt 官方 `.gov.bs` 入口、營運方、免費申報、QR Code 查驗和限量 BDAC 試點。"
 date: 2026-08-30
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 巴哈馬在 `exempt.gov.bs` 提供政府授權的海關 C17 電子路徑。打開前先判斷旅客類別。

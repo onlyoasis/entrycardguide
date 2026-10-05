@@ -7,7 +7,7 @@ country: "panama"
 weight: 20
 keywords: ["巴拿馬旅客申報怎麼填", "巴拿馬海關申報欄位", "巴拿馬 QR 表單"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="panama.traveler_declaration" >}}

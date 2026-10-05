@@ -16,7 +16,7 @@ faq:
   - q: "紙卡被什麼取代？"
     a: "秘魯把出入境電子登記在 TAM Virtual，並取消國際航班移民檢查中的護照蓋章。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 ## 在邊檢時自動生成

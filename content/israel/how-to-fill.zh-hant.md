@@ -7,7 +7,7 @@ country: "israel"
 weight: 20
 keywords: ["ETA-IL 怎麼填", "以色列 ETA 申請", "ETA-IL 要求"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="israel.eta_il" >}}

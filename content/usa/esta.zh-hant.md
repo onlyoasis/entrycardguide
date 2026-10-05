@@ -18,7 +18,7 @@ faq:
   - q: "ESTA 最晚什麼時候申請？"
     a: "開始規劃行程時就可以申請，最遲不要晚於出發前 72 小時。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="usa.esta" >}}

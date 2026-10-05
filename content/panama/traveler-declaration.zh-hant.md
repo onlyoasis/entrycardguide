@@ -16,7 +16,7 @@ faq:
   - q: "向海關出示什麼？"
     a: "出示電子申報生成的 QR 回執碼。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 ## 這是海關申報，不是簽證

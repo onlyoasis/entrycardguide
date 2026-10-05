@@ -18,7 +18,7 @@ faq:
   - q: "尼泊爾 ETA 和落地簽預填是同一個產品嗎？"
     a: "不是。NepaliPort 把 ETA、落地簽和使領館簽證列為不同服務。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 ## 先選正確路徑

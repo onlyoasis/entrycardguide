@@ -2,7 +2,7 @@
 title: "英國 ETA 官網、20 英鎊費用和中介核查"
 kicker: "英國 ETA 官網是 gov.uk/eta。它是收費旅行授權，不是簽證。"
 description: "英國 ETA 中文指南：GOV.UK 官方申請入口、20 英鎊費用、適用人群、欄位填寫、有效期和常見加價區間。"
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 UK ETA 是英國提供給符合條件的免簽旅客的電子旅行授權。它不是英國簽證。可以在 GOV.UK 網頁申請，也可以使用開發者或銷售方標為 Home Office 的官方 UK ETA App。

@@ -7,7 +7,7 @@ country: "philippines"
 weight: 20
 keywords: ["菲律賓 eTravel 怎麼填", "菲律賓 eTravel 欄位", "菲律賓入境 QR Code"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="philippines.etravel" >}}

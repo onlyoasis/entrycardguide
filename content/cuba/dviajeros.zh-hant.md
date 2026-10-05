@@ -18,7 +18,7 @@ faq:
   - q: "2026 年還能用紙質 Tourist Card 嗎？"
     a: "古巴旅遊官方頁寫明 eVisa 已取代 Tourist Card。2026 年應使用當前 eVisa 路線，不要按購買紙卡安排行程。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 ## 兩份文件，作用完全不同

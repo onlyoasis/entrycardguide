@@ -14,7 +14,7 @@ faq:
   - q: "Visit Japan Web 是簽證嗎？"
     a: "不是。它是入境和海關 QR Code 流程。簽證資格另算。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="japan.vjw" >}}

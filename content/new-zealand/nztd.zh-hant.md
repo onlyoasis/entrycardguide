@@ -18,7 +18,7 @@ faq:
   - q: "NZeTA 多少錢？"
     a: "官方 App 收 17 新西蘭元，官網收 23 新西蘭元。多數申請人還要同時繳納 100 新西蘭元 IVL。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="new-zealand.nztd" >}}

@@ -7,7 +7,7 @@ country: "taiwan"
 weight: 20
 keywords: ["TWAC 怎麼填", "臺灣入境登記表欄位", "臺灣入境卡填寫", "twac.immigration.gov.tw"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="taiwan.twac" >}}

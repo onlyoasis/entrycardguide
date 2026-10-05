@@ -17,7 +17,7 @@ faq:
     a: "當前外國旅客表單提示 Given Name followed by Surname，即名在前、姓在後。核對你所用版本的提示，填寫護照上的姓名。"
   - q: "新版和舊版都要提交嗎？"
     a: "不需要。ICA 當前同時提供原版和增強版入口，明確說明每次行程只需提交一次。"
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="singapore.sgac" >}}

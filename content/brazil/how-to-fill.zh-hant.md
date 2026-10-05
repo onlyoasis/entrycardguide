@@ -7,7 +7,7 @@ country: "brazil"
 weight: 20
 keywords: ["巴西電子簽怎麼申請", "巴西 VFS 電子簽材料", "巴西電子簽申請欄位"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 從外交部頁面開始。該頁連結到政府指定商業承包商 `brazil.vfsevisa.com`；這個 `.com` 不是政府後綴。

@@ -20,7 +20,7 @@ faq:
   - q: "我把邊境官員給的 FMM 回執條丟了怎麼辦？"
     a: "出境時在機場會有一筆小額補辦費。帶上入境證明（登機牌、酒店收據）方便海關核對日期。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="mexico.fmm" >}}

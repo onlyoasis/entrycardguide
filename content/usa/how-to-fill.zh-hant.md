@@ -7,7 +7,7 @@ country: "usa"
 weight: 20
 keywords: ["ESTA 怎麼填", "ESTA 填寫", "ESTA 僱主", "ESTA 美國聯繫人 UNKNOWN", "ESTA 社交媒體 Optional"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="usa.esta" >}}

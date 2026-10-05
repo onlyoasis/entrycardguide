@@ -7,7 +7,7 @@ country: "canada"
 weight: 20
 keywords: ["加拿大 eTA 怎麼填", "加拿大 eTA 表格", "加拿大 eTA 護照號", "加拿大 eTA 地址", "加拿大 eTA 背景問題"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="canada.eta" >}}

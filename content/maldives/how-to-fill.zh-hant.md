@@ -7,7 +7,7 @@ country: "maldives"
 weight: 20
 keywords: ["IMUGA 怎麼填", "馬爾代夫申報表欄位", "馬爾代夫入境表幫助", "imuga.immigration.gov.mv"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="maldives.traveller_declaration" >}}

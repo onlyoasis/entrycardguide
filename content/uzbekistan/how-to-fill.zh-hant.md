@@ -7,7 +7,7 @@ country: "uzbekistan"
 weight: 20
 keywords: ["烏茲別克斯坦電子簽表", "烏茲別克斯坦電子簽申請", "e-visa.gov.uz 申請", "烏茲別克斯坦電子簽照片要求"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="uzbekistan.evisa" >}}

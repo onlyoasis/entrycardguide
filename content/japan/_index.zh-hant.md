@@ -2,7 +2,7 @@
 title: "日本 Visit Japan Web 官方入口、免費 QR Code 和防仿冒指南"
 kicker: "日本 Visit Japan Web 官方來源、免費 QR Code 流程，以及如何避開假登入頁。"
 description: "日本 Visit Japan Web 中文指南：日本數字廳官方 URL、免費入境 QR Code 流程、欄位填寫。"
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 Visit Japan Web 是日本官方的入境相關 QR Code 服務。穩定的政府服務說明頁在日本數字廳 `.go.jp` 域名下。

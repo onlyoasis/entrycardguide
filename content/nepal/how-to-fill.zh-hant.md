@@ -7,7 +7,7 @@ country: "nepal"
 weight: 20
 keywords: ["尼泊爾落地簽表格", "尼泊爾旅遊簽線上申請", "NepaliPort 怎麼填", "尼泊爾簽證材料"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="nepal.tourist_visa_form" >}}

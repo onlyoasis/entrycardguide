@@ -20141,11 +20141,11 @@ export default {
           "name": "Indonesia e-CD legacy customs portal",
           "url": "https://ecd.beacukai.go.id",
           "agency": "Direktorat Jenderal Bea dan Cukai",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Legacy standalone e-CD portal still resolves. The current traveler-facing entry point is All Indonesia."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "malaysia",
@@ -20178,7 +20178,7 @@ export default {
           "name": "Malaysia Digital Arrival Card (MDAC)",
           "url": "https://imigresen-online.imi.gov.my/mdac/main",
           "agency": "Jabatan Imigresen Malaysia (Immigration Department of Malaysia)",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://imigresen-online.imi.gov.my/mdac/main",
           "notes": "Reserved under .gov.my — only Malaysian government entities can register this domain suffix. Required for most foreign visitors since January 2024."
         },
@@ -20187,18 +20187,18 @@ export default {
           "name": "Jabatan Imigresen Malaysia (home)",
           "url": "https://www.imi.gov.my",
           "agency": "Jabatan Imigresen Malaysia",
-          "lastVerified": "2026-09-14"
+          "lastVerified": "2026-10-05"
         },
         {
           "key": "exemptions",
           "name": "MDAC exemptions",
           "url": "https://www.kln.gov.my/web/can_vancouver/travel_advisory",
           "agency": "Ministry of Foreign Affairs Malaysia",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Exemption text reviewed through the official KLN search-indexed page on 2026-09-14; direct page fetch returned 502. This reference is not an application endpoint."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "singapore",
@@ -20231,7 +20231,7 @@ export default {
           "name": "Singapore Arrival Card (SGAC)",
           "url": "https://eservices.ica.gov.sg/sgarrivalcard/",
           "agency": "Immigration & Checkpoints Authority (ICA)",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://eservices.ica.gov.sg/sgarrivalcard/",
           "notes": "Free ICA service. Refer to ICA guidance for transit and resident land-checkpoint exemptions. Current and enhanced services are linked by ICA; one submission per trip."
         },
@@ -20240,21 +20240,21 @@ export default {
           "name": "Immigration & Checkpoints Authority (home)",
           "url": "https://www.ica.gov.sg",
           "agency": "Immigration & Checkpoints Authority",
-          "lastVerified": "2026-09-14"
+          "lastVerified": "2026-10-05"
         },
         {
           "key": "sgac_guidance",
           "name": "ICA SGAC requirements",
           "url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/sg-arrival-card",
           "agency": "Immigration & Checkpoints Authority",
-          "lastVerified": "2026-09-14"
+          "lastVerified": "2026-10-05"
         },
         {
           "key": "sgac_enhanced",
           "name": "ICA enhanced SGAC service",
           "url": "https://eservices.ica.gov.sg/arrivalcard/sgac",
           "agency": "Immigration & Checkpoints Authority",
-          "lastVerified": "2026-09-14"
+          "lastVerified": "2026-10-05"
         },
         {
           "key": "arrival_date_help",
@@ -20268,17 +20268,17 @@ export default {
           "name": "ICA SGAC and e-Pass retrieval",
           "url": "https://www.ica.gov.sg/enter-transit-depart/at-our-checkpoints/for-travellers/retrieval-of-electronic-visit-pass",
           "agency": "Immigration & Checkpoints Authority",
-          "lastVerified": "2026-09-14"
+          "lastVerified": "2026-10-05"
         },
         {
           "key": "contact",
           "name": "ICA contact and help",
           "url": "https://www.ica.gov.sg/contact-us",
           "agency": "Immigration & Checkpoints Authority",
-          "lastVerified": "2026-09-14"
+          "lastVerified": "2026-10-05"
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "vietnam",
@@ -20311,7 +20311,7 @@ export default {
           "name": "Vietnam E-Visa (Official)",
           "url": "https://evisa.gov.vn",
           "agency": "Vietnam Immigration Department (Cục Quản lý xuất nhập cảnh)",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://evisa.gov.vn",
           "notes": "Reserved under .gov.vn — only Vietnamese government entities can register this domain suffix. The legacy evisa.xuatnhapcanh.gov.vn page says the e-visa portal moved to evisa.gov.vn and thithucdientu.gov.vn on 2024-11-11. Government fee: USD $25 single-entry, USD $50 multi-entry. This is a real fee, not free."
         },
@@ -20320,7 +20320,7 @@ export default {
           "name": "Vietnam National Electronic Visa System (Vietnamese domain)",
           "url": "https://thithucdientu.gov.vn",
           "agency": "Vietnam Immigration Department",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Second official domain named in the old Immigration Department portal notice."
         },
         {
@@ -20328,10 +20328,10 @@ export default {
           "name": "Vietnam Immigration Department (home)",
           "url": "https://www.xuatnhapcanh.gov.vn",
           "agency": "Vietnam Immigration Department",
-          "lastVerified": "2026-09-14"
+          "lastVerified": "2026-10-05"
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "thailand",
@@ -20364,7 +20364,7 @@ export default {
           "name": "Thailand Digital Arrival Card",
           "url": "https://tdac.immigration.go.th",
           "agency": "Royal Thai Immigration Bureau",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://tdac.immigration.go.th",
           "notes": "Reserved under .go.th — only Thai government entities can register this domain suffix."
         },
@@ -20376,7 +20376,7 @@ export default {
           "lastVerified": "2026-06-11"
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "dominican",
@@ -20425,7 +20425,7 @@ export default {
           "name": "Dominican Embassy in the USA — travel FAQ",
           "url": "https://usa.mirex.gob.do/preguntas-frecuentes/",
           "agency": "Ministerio de Relaciones Exteriores (MIREX)",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Source for the USD 20 departure tax being included in the airline ticket, and for the paid extension when staying past 30 days. The E-Ticket itself stays free."
         },
         {
@@ -20436,7 +20436,7 @@ export default {
           "lastVerified": "2026-09-14"
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "mexico",
@@ -20469,7 +20469,7 @@ export default {
           "name": "Forma Migratoria Múltiple Electrónica (FMM-E)",
           "url": "https://www.inm.gob.mx/fmme/publico/en/solicitud.html",
           "agency": "Instituto Nacional de Migración (INM)",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.inm.gob.mx/fmme/publico/en/solicitud.html",
           "notes": "Reserved under .gob.mx — only Mexican government entities can register this domain suffix. Since 2023, most air arrivals at major airports receive a passport stamp instead of FMM; the electronic FMM is still used for land crossings and some other entry points."
         },
@@ -20478,10 +20478,10 @@ export default {
           "name": "Instituto Nacional de Migración (home)",
           "url": "https://www.inm.gob.mx",
           "agency": "Instituto Nacional de Migración (INM)",
-          "lastVerified": "2026-09-14"
+          "lastVerified": "2026-10-05"
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "japan",
@@ -20514,7 +20514,7 @@ export default {
           "name": "Visit Japan Web",
           "url": "https://services.digital.go.jp/en/visit-japan-web/",
           "agency": "Digital Agency of Japan",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://services.digital.go.jp/en/visit-japan-web/",
           "notes": "Reserved under .go.jp. Visit Japan Web is the official service information page for Japan arrival, customs, and tax-free QR workflows. The service is free."
         },
@@ -20523,10 +20523,10 @@ export default {
           "name": "Immigration Services Agency of Japan",
           "url": "https://www.moj.go.jp/isa/index.html",
           "agency": "Immigration Services Agency of Japan",
-          "lastVerified": "2026-09-14"
+          "lastVerified": "2026-10-05"
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "india",
@@ -20559,7 +20559,7 @@ export default {
           "name": "Official India e-Arrival Card",
           "url": "https://indianvisaonline.gov.in/earrival/",
           "agency": "Bureau of Immigration, Ministry of Home Affairs",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://indianvisaonline.gov.in/earrival/",
           "notes": "Verified 2026-07-14 against https://indianvisaonline.gov.in/earrival/, https://indianvisaonline.gov.in/, https://ociservices.gov.in/onlineOCI/onlineOCI/faq, and the Bureau of Immigration advisory at https://www.cgisf.gov.in/section/public-advisories/digitization-of-disembarkation-card-for-foreign-nationals-visiting-india/. The official form labels the service free of cost. Foreign nationals, including OCI cardholders, must submit it within the 72 hours before arrival; Indian passport holders are not foreign nationals and do not submit it. It records arrival information and does not replace a visa or OCI status. The current web form asks for identity, passport, purpose, arrival, recent travel, India address, contact, emergency-contact, and declaration information. Government mission notices also tell travellers to have flight and visa or OCI details ready; fields may vary by channel or prefilled record."
         },
@@ -20568,12 +20568,12 @@ export default {
           "name": "Official India e-Visa",
           "url": "https://indianvisaonline.gov.in/evisa/tvoa.html",
           "agency": "Bureau of Immigration, Ministry of Home Affairs",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://indianvisaonline.gov.in/evisa/tvoa.html",
           "notes": "Verified 2026-07-14 against https://indianvisaonline.gov.in/evisa/tvoa.html and the official 09-July-2026 tourist-fee table at https://indianvisaonline.gov.in/evisa/images/Etourist_fee_final.pdf. The e-Visa is separate from the free e-Arrival Card. Fees vary by nationality and duration. Examples in the current table: Australia and Canada pay USD $10 for a 30-day tourist e-Visa from April to June or USD $25 from July to March, USD $40 for 1 year, and USD $200 for 5 years; the United States has the same 30-day and 1-year fees but USD $160 for 5 years; the United Kingdom has the same 30-day and 1-year fees but USD $484 for 5 years; Japan pays USD $10 or $25 for 30 days and USD $25 for either 1 or 5 years. Some nationalities are listed at USD $0. A 3% bank charge is additional. The official page currently permits first entry through 33 named airports and 19 named seaports; travellers may depart through any authorized Immigration Check Post. Check the live eligibility, fee table, and port list before paying."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "korea",
@@ -20606,12 +20606,12 @@ export default {
           "name": "Korea e-Arrival Card",
           "url": "https://www.e-arrivalcard.go.kr/portal/main/index.do",
           "agency": "Korea Immigration Service",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.e-arrivalcard.go.kr/portal/main/index.do",
           "notes": "Reserved under .go.kr. Official Korea e-Arrival Card portal for eligible foreign arrivals. Free."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "philippines",
@@ -20644,12 +20644,12 @@ export default {
           "name": "Philippine eTravel",
           "url": "https://etravel.gov.ph",
           "agency": "Philippine Travel Information System",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://etravel.gov.ph",
           "notes": "Reserved under .gov.ph. The official homepage states that eTravel is free. Used for the Philippine electronic travel declaration before arrival or departure."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "cambodia",
@@ -20682,12 +20682,12 @@ export default {
           "name": "Cambodia e-Arrival",
           "url": "https://arrival.gov.kh",
           "agency": "Cambodia General Department of Immigration",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://arrival.gov.kh",
           "notes": "Reserved under .gov.kh. The e-Arrival system combines arrival card, customs declaration, and health declaration flows. The arrival declaration itself is free; visa fees are separate when a visa is needed."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "usa",
@@ -20720,7 +20720,7 @@ export default {
           "name": "Official ESTA Application",
           "url": "https://esta.cbp.dhs.gov/",
           "agency": "U.S. Customs and Border Protection (CBP)",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://esta.cbp.dhs.gov/",
           "notes": "Verified 2026-07-14 against https://esta.cbp.dhs.gov/, https://www.help.cbp.gov/s/article/Article-1437, and https://www.cbp.gov/newsroom/local-media-release/cbp-buffalo-reminder-esta-requirement-land-border-ports-entry. ESTA is a travel authorization, not a visa. The official site displays USD $40.27: a $4.00 processing fee plus $36.27 authorization fee charged only if approved (raised from $21.00 total on 2025-09-30). CBP says to apply when travel plans begin and no later than 72 hours before arrival. VWP travelers need ESTA for air, sea, and land entry. Approval is generally valid for 2 years or until the passport expires, whichever comes first; Brunei passports are limited to 1 year."
         },
@@ -20733,7 +20733,7 @@ export default {
           "notes": "Verified 2026-07-14. The State Department page lists 42 VWP countries and authorities. Eligible citizens or nationals may travel for tourism or business for 90 days or less if they meet every VWP requirement and hold an approved ESTA. ESTA is not a visa and does not guarantee admission."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "uk",
@@ -20766,7 +20766,7 @@ export default {
           "name": "Official UK ETA Application",
           "url": "https://www.gov.uk/eta",
           "agency": "Home Office",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.gov.uk/eta",
           "notes": "Verified 2026-07-14 against https://www.gov.uk/eta/apply, https://www.gov.uk/eta/what-you-can-cannot-do, https://www.gov.uk/eta/when-not-need-eta, and https://www.legislation.gov.uk/uksi/2026/311/pdfs/uksi_20260311_en.pdf. The official fee is £20. The regulations raised it from £16 at 9:00am on 2026-04-08. An ETA lasts 2 years or until the linked passport expires, whichever comes first, and permits multiple journeys. Visitor stays are normally limited to 6 months per visit. British and Irish citizens, UK visa holders, and people with permission to live, work, or study in the UK do not need an ETA. Decisions usually arrive within a day; GOV.UK says to allow up to 3 working days."
         },
@@ -20775,7 +20775,7 @@ export default {
           "name": "Check who can get a UK ETA",
           "url": "https://www.gov.uk/guidance/check-when-you-can-get-an-electronic-travel-authorisation-eta",
           "agency": "UK Visas and Immigration",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Verified 2026-07-14. Current Home Office statistics describe 85 specified non-visa nationalities. Eligibility follows the nationality shown on the passport. Other nationalities must check whether they need a visa."
         },
         {
@@ -20791,10 +20791,10 @@ export default {
           "name": "Home Office application guidance",
           "url": "https://www.gov.uk/guidance/using-the-uk-eta-app#complete-the-application",
           "agency": "Home Office",
-          "lastVerified": "2026-09-14"
+          "lastVerified": "2026-10-05"
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "canada",
@@ -20827,7 +20827,7 @@ export default {
           "name": "Official Canada eTA Application",
           "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html",
           "agency": "Immigration, Refugees and Citizenship Canada (IRCC)",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html",
           "notes": "Verified 2026-07-14 against https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html, https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/facts.html, and https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/eligibility.html. The official fee is CAD $7. An eTA is for flying to or transiting through a Canadian airport and is valid for up to 5 years or until the linked passport expires, whichever comes first. It is not normally needed for entry by car, bus, train, or boat; the current eligibility page notes a narrow sea exception for travel from Saint Pierre and Miquelon other than cruise ships. U.S. citizens are exempt. As of 2022-04-26, lawful permanent residents of the United States are also exempt from the eTA requirement. For air travel they must carry a valid passport or equivalent travel document and a valid green card or other accepted proof of U.S. status."
         },
@@ -20836,11 +20836,11 @@ export default {
           "name": "Check who can apply for a Canada eTA",
           "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/eligibility.html",
           "agency": "Immigration, Refugees and Citizenship Canada (IRCC)",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Verified 2026-07-14. Visa-exempt foreign nationals generally need an eTA only for air travel. Some citizens of selected visa-required countries may qualify for an eTA for air travel if they meet the listed conditions; they still need a visitor visa for land or sea entry. Canadian citizens and permanent residents use Canadian documents instead of an eTA."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "new-zealand",
@@ -20873,7 +20873,7 @@ export default {
           "name": "Official New Zealand Traveller Declaration",
           "url": "https://www.travellerdeclaration.govt.nz/",
           "agency": "New Zealand Customs Service",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.travellerdeclaration.govt.nz/",
           "notes": "Verified 2026-07-14 against https://www.travellerdeclaration.govt.nz/, https://www.travellerdeclaration.govt.nz/completing-your-declaration/, and https://www.customs.govt.nz/travel-to-and-from-new-zealand/travelling-to-new-zealand. The NZTD is free and each person entering New Zealand must complete one, including New Zealand passport holders, babies, and children. Airside transit passengers who stay in Auckland Airport's transit area do not complete an NZTD. The online form is at https://app.travellerdeclaration.govt.nz/. Air travellers may submit from 24 hours before starting their journey to New Zealand; sea travellers may submit from 24 hours before the vessel leaves its last foreign port. The declaration must be submitted before passport control, or by the time a vessel berths at its first New Zealand port. Travellers can start earlier; the 24-hour rule limits submission, not when they may begin entering information."
         },
@@ -20882,12 +20882,12 @@ export default {
           "name": "Official NZeTA Request",
           "url": "https://nzeta.immigration.govt.nz/",
           "agency": "Immigration New Zealand",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://nzeta.immigration.govt.nz/",
           "notes": "Verified 2026-07-14 against https://www.immigration.govt.nz/visas/new-zealand-electronic-travel-authority-nzeta/, https://www.immigration.govt.nz/visit/what-you-need-to-visit-new-zealand/nzeta-application-guide-for-citizens-of-china/, and https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/fees-processing-times-and-refunds/how-much-visa-applications-cost-and-when-to-pay/. NZeTA is a separate travel requirement from the free NZTD. It costs NZD $17 in the official app or NZD $23 on the official website. Most visitors also pay the NZD $100 International Visitor Conservation and Tourism Levy with the request; exemptions apply, including Australian permanent residents. A traveller NZeTA is valid for 2 years and may be used for multiple journeys. Visa-waiver air travellers, cruise or cargo ship passengers, Australian permanent residents, and some transit travellers need one. Australian citizens travelling on Australian passports do not need an NZeTA. Australian permanent residents normally do, unless they already hold a valid New Zealand visa."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "australia",
@@ -20975,7 +20975,7 @@ export default {
           "name": "Official Türkiye e-Visa Application",
           "url": "https://www.evisa.gov.tr/",
           "agency": "Republic of Türkiye Ministry of Foreign Affairs",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.evisa.gov.tr/",
           "notes": "Verified 2026-07-14 against https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/, https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/, https://www.evisa.gov.tr/en/tour/thats/, and https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa. Check visa exemption before applying. Ordinary passport holders from the United States, United Kingdom, Canada, and Australia are currently visa-exempt for tourist visits up to 90 days in any 180-day period, so each has no current e-Visa price. Ordinary People's Republic of China passport holders are also visa-exempt for up to 90 days in any 180-day period from 2 January 2026, so China also has no current e-Visa price. These five requested representative quotes are therefore not applicable, not historical fee figures. For passports that remain eligible, the fee varies by nationality and the official system displays it only after nationality, travel-document type, and travel dates are selected; use the live quote. Some nationalities, including India, Bangladesh, Pakistan, and the Philippines, may obtain a 30-day single-entry e-Visa only when they meet added conditions such as holding a valid Schengen, US, UK, or Ireland visa or residence permit."
         },
@@ -20984,12 +20984,12 @@ export default {
           "name": "Visa Information for Foreigners",
           "url": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
           "agency": "Republic of Türkiye Ministry of Foreign Affairs",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
           "notes": "Verified 2026-07-14. This is the Ministry of Foreign Affairs country-by-country source for visa exemption, direct e-Visa eligibility, conditional e-Visa eligibility, and sticker-visa requirements. Examples currently exempt for ordinary tourist passports include Germany, France, Italy, Spain, Belgium, Portugal, Switzerland, Norway, Denmark, Finland, Japan, South Korea, Hong Kong SAR, Singapore, Malaysia, the United Kingdom, the United States, Canada, Australia, and China. Stay limits and passport-type rules differ, so check the entry for the exact passport."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "sri-lanka",
@@ -21022,7 +21022,7 @@ export default {
           "name": "Sri Lanka Electronic Travel Authorization (ETA)",
           "url": "https://www.eta.gov.lk/slvisa/",
           "agency": "Department of Immigration and Emigration, Sri Lanka",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.eta.gov.lk/slvisa/",
           "notes": "Read 2026-08-30. The Department of Immigration and Emigration site still links to eta.gov.lk as the ETA application, and the live terms served at https://eta.gov.lk/etaslvisa/etaNavServ?payType=1 name the Department. The 2024 commercial outsourcing portal is not used here. The application step page https://www.eta.gov.lk/slvisa/visainfo/apply.jsp?locale=en_US describes the applicant flow. The host is a government .gov.lk suffix."
         },
@@ -21031,7 +21031,7 @@ export default {
           "name": "ETA free scheme and current entry policy",
           "url": "https://www.immigration.gov.lk/pages_e.php?id=60",
           "agency": "Department of Immigration and Emigration, Sri Lanka",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.immigration.gov.lk/pages_e.php?id=60",
           "notes": "Read 2026-08-30. States that from 25 May 2026, 40 named nationalities plus Maldives, Seychelles and Singapore receive the tourist ETA free of charge. Maldivian nationals receive 90 days. Other free-scheme tourists receive 30 days and double entry. The page keeps the ETA requirement in place for those passports; free means the fee is zero, not that the authorisation is skipped."
         },
@@ -21040,7 +21040,7 @@ export default {
           "name": "Visa and ETA fee table",
           "url": "https://www.immigration.gov.lk/pages_e.php?id=45",
           "agency": "Department of Immigration and Emigration, Sri Lanka",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.immigration.gov.lk/pages_e.php?id=45",
           "notes": "Read 2026-08-30. For passports outside the free scheme, the online tourist ETA is USD 20 for SAARC nationals and USD 50 for other nationalities. Children under 12 and two-day transit are free. The on-arrival route costs more than the online route and can end in return travel if a referral is issued."
         },
@@ -21049,12 +21049,12 @@ export default {
           "name": "ETA application information and process",
           "url": "https://www.eta.gov.lk/slvisa/visainfo/apply.jsp?locale=en_US",
           "agency": "Department of Immigration and Emigration, Sri Lanka",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.eta.gov.lk/slvisa/visainfo/apply.jsp?locale=en_US",
           "notes": "Read 2026-08-30. Describes what the application requires: a correct passport number, nationality exactly as written in the travel document, and date of birth. The same travel document must be used for the application and at arrival. The traveller also needs a passport valid at least 6 months, a confirmed return ticket and sufficient funds."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "maldives",
@@ -21087,7 +21087,7 @@ export default {
           "name": "IMUGA Traveller Declaration",
           "url": "https://imuga.immigration.gov.mv/traveller",
           "agency": "Maldives Immigration",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://imuga.immigration.gov.mv/traveller",
           "notes": "Read 2026-08-30. The declaration is submitted on the IMUGA portal, hosted under the government immigration.gov.mv domain. Every foreign arrival submits it within 96 hours before arrival. The public first step shows a passport data-page scan or upload, purpose of visit, and a conditional permit number and expiry. No fee is charged."
         },
@@ -21096,7 +21096,7 @@ export default {
           "name": "Traveller Declaration information",
           "url": "https://www.immigration.gov.mv/traveller-declaration",
           "agency": "Maldives Immigration",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.immigration.gov.mv/traveller-declaration",
           "notes": "Read 2026-08-30. Maldives Immigration's own page describing the Traveller Declaration, who submits it and the 96-hour window before arrival."
         },
@@ -21105,7 +21105,7 @@ export default {
           "name": "Tourist visa on arrival requirements",
           "url": "https://www.immigration.gov.mv/visa/tourist-visa",
           "agency": "Maldives Immigration",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.immigration.gov.mv/visa/tourist-visa",
           "notes": "Read 2026-08-30. The tourist visa is issued on arrival with no pre-approval step. The page names personal details, travel information and accommodation details among the requirements. The visa and the Traveller Declaration are separate; the declaration is still mandatory for foreign arrivals."
         },
@@ -21114,12 +21114,12 @@ export default {
           "name": "Maldives Immigration announcements",
           "url": "https://www.immigration.gov.mv/news",
           "agency": "Maldives Immigration",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.immigration.gov.mv/news",
           "notes": "Read 2026-08-30. The 13 August 2024 item states that outbound travellers are no longer required to submit the declaration from 15 August 2024. Older guides that tell travellers to file a departure form are describing a rule that no longer applies."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "taiwan",
@@ -21152,7 +21152,7 @@ export default {
           "name": "Taiwan Arrival Card (TWAC)",
           "url": "https://twac.immigration.gov.tw/",
           "agency": "National Immigration Agency, Ministry of the Interior",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://twac.immigration.gov.tw/",
           "notes": "Read 2026-08-30. The current online arrival card, on a government .gov.tw host. The homepage states who submits: foreign nationals without an Alien Resident Certificate, Resident Visa or Diplomatic ID; specified Mainland, Hong Kong and Macao permit holders; and nationals without household registration who do not hold Taiwan-area residence certificates. The older niaspeedy.immigration.gov.tw address is outdated."
         },
@@ -21161,7 +21161,7 @@ export default {
           "name": "TWAC submission window",
           "url": "https://www.immigration.gov.tw/5382/5385/7229/7238/415735",
           "agency": "National Immigration Agency, Ministry of the Interior",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.immigration.gov.tw/5382/5385/7229/7238/415735",
           "notes": "Read 2026-08-30. States the current submission window: within 7 days before arrival, extended in July 2026. Guides written against the earlier, shorter window are out of date."
         },
@@ -21170,7 +21170,7 @@ export default {
           "name": "Official notice: the arrival card is free",
           "url": "https://www.immigration.gov.tw/5382/5385/7445/392097/392128/cp_news",
           "agency": "National Immigration Agency, Ministry of the Interior",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.immigration.gov.tw/5382/5385/7445/392097/392128/cp_news",
           "notes": "Read 2026-08-30. Agency notice confirming that the arrival card is submitted free of charge through the official channel. Any charge for this form comes from somewhere other than the agency."
         },
@@ -21179,7 +21179,7 @@ export default {
           "name": "Online arrival card launch and eligibility",
           "url": "https://www.immigration.gov.tw/5475/5478/141457/142068/398041",
           "agency": "National Immigration Agency, Ministry of the Interior",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.immigration.gov.tw/5475/5478/141457/142068/398041",
           "notes": "Read 2026-08-30. English-language announcement covering the switch from paper cards to the online-only TWAC from 1 October 2025, and who is eligible to submit."
         },
@@ -21188,12 +21188,12 @@ export default {
           "name": "TWAC user manual (English)",
           "url": "https://twac.immigration.gov.tw/files/UserManual_Eng.pdf",
           "agency": "National Immigration Agency, Ministry of the Interior",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://twac.immigration.gov.tw/files/UserManual_Eng.pdf",
           "notes": "Read 2026-08-30. The official manual confirms email verification; passport upload or manual entry; nationality, passport expiry, conditional visa type and number, conditional occupation and job title, email and phone; arrival and departure flight or vessel, departure date in DD/MM/YYYY, purpose and accommodation; a relative contact when the purpose is visiting relatives; and a reason when the purpose is Other. A confirmation email or electronic document is sent. The traveller does not need to show it at inspection because scanning the passport retrieves the TWAC data. One person may file individually for up to 10 travellers, and the group-file import supports up to 16."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "egypt",
@@ -21226,7 +21226,7 @@ export default {
           "name": "Egypt e-Visa Portal",
           "url": "https://www.visa2egypt.gov.eg/eVisa/Home",
           "agency": "Ministry of Interior, Arab Republic of Egypt",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.visa2egypt.gov.eg/eVisa/Home",
           "notes": "Read 2026-08-30. The government e-Visa portal, on a .gov.eg host. Current fees are USD 30 for a single-entry tourist visa and USD 65 for a multiple-entry tourist visa. The portal says to create the application at least 7 days before departure, and that the approval and download link arrive by email."
         },
@@ -21235,7 +21235,7 @@ export default {
           "name": "Egypt e-Visa FAQ and eligible nationalities",
           "url": "https://www.visa2egypt.gov.eg/eVisa/FAQ",
           "agency": "Ministry of Interior, Arab Republic of Egypt",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.visa2egypt.gov.eg/eVisa/FAQ",
           "notes": "Read 2026-08-30. Lists the nationalities currently eligible to use the eVisa, so the portal is not open to every passport. The entry checklist on this page is a passport valid at least 6 months from arrival, a printed eVisa, an itinerary, a supporting letter for a business or family visit, and hotel booking or accommodation details for tourism."
         },
@@ -21244,12 +21244,12 @@ export default {
           "name": "Egyptian Embassy visa requirements",
           "url": "https://egyptembassy.net/consular-services/visas-travel/visa-requirements/",
           "agency": "Embassy of the Arab Republic of Egypt in Washington, D.C.",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://egyptembassy.net/consular-services/visas-travel/visa-requirements/",
           "notes": "Read 2026-08-30. Note the host: egyptembassy.net is the Egyptian Embassy in Washington's own site and does not carry a government suffix, so treat it as embassy guidance rather than as the application portal. It states that travellers on the pre-approval list cannot obtain a visa on arrival, that Bangladeshi nationals require a visa before entry, and that airlines should confirm boarding eligibility. Visa on arrival is therefore a separate product whose availability depends on passport and port."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "saudi-arabia",
@@ -21318,7 +21318,7 @@ export default {
           "name": "KSA Visa platform",
           "url": "https://ksavisa.sa/",
           "agency": "Saudi Ministry of Foreign Affairs",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://ksavisa.sa/",
           "notes": "Read 2026-08-30. The broad Saudi visa platform run by the Ministry of Foreign Affairs, covering routes beyond the ordinary tourist eVisa. Passports outside the 66-country list use this platform or a Saudi mission."
         },
@@ -21332,7 +21332,7 @@ export default {
           "notes": "Read 2026-08-30. Government page separating the routes: the Umrah visa is applied for through KSA Visa, and the Umrah permit through Nusuk. Hajj requires its own visa and permit; the tourist eVisa does not permit Hajj."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "kenya",
@@ -21365,7 +21365,7 @@ export default {
           "name": "Kenya Electronic Travel Authorisation (eTA)",
           "url": "https://etakenya.go.ke/",
           "agency": "Ministry of Interior and National Administration, State Department for Immigration and Citizen Services, Directorate of Immigration Services",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://etakenya.go.ke/",
           "notes": "Official Government of Kenya portal. Its FAQ says the standard eTA starts at USD $30, normally takes three working days/72 hours, and must be approved before travel. The application guide says an issued eTA is valid for travel within 90 days."
         },
@@ -21374,7 +21374,7 @@ export default {
           "name": "Kenya eTA application requirements and exemptions",
           "url": "https://etakenya.go.ke/form/apply/how-to-apply?type=tourist",
           "agency": "Directorate of Immigration Services",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://etakenya.go.ke/form/apply/how-to-apply?type=tourist",
           "notes": "Lists exempt travellers and passport nationalities, required documents, purpose-specific documents, validity and processing time. The current list includes EAC partner-state citizens plus named nationalities with 90-day or 60-day exemptions."
         },
@@ -21383,11 +21383,11 @@ export default {
           "name": "Directorate of Immigration Services Delivery Charter 2025",
           "url": "https://immigration.go.ke/wp-content/uploads/2025/07/DIRECTORATE-OF-IMMIGRATION-SERVICE-DELIVERY-CHARTER-2025.pdf",
           "agency": "Directorate of Immigration Services",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "The service charter lists USD $30 for a standard eTA and a three-day service timeline. The live portal may offer other eTA products or expedited service at different prices."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "israel",
@@ -21420,7 +21420,7 @@ export default {
           "name": "Israel Entry — ETA-IL",
           "url": "https://israel-entry.piba.gov.il/",
           "agency": "Population and Immigration Authority (PIBA)",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://israel-entry.piba.gov.il/",
           "notes": "Official PIBA portal on a gov.il host. The portal says ETA-IL is for citizens of visa-exempt countries, recommends applying at least 72 hours before making non-refundable travel bookings, and says approval is generally valid for multiple trips for up to two years or until passport expiry."
         },
@@ -21438,12 +21438,12 @@ export default {
           "name": "ETA-IL for tourists from visa-exempt countries",
           "url": "https://embassies.gov.il/en/announcements/eta-il-entrance-tourists-visa-exempt-countries",
           "agency": "Israel Ministry of Foreign Affairs",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://embassies.gov.il/en/announcements/eta-il-entrance-tourists-visa-exempt-countries",
           "notes": "States that the official application costs ILS 25, the decision is emailed within 72 hours, and a payment receipt is sent by the official site."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "cuba",
@@ -21476,7 +21476,7 @@ export default {
           "name": "D'Viajeros Advance Passenger Information",
           "url": "https://dviajeros.mitrans.gob.cu/inicio",
           "agency": "Ministry of Transport, with Cuban Immigration, Customs and Ministry of Public Health",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://dviajeros.mitrans.gob.cu/inicio",
           "notes": "Official .gob.cu portal. The government tourism portal links to D'Viajeros and says completion produces a QR code for entry. The official service brochure describes four information groups: traveller, immigration, customs and health, followed by an emailed PDF with QR code."
         },
@@ -21485,7 +21485,7 @@ export default {
           "name": "Cuba Travel regulations and formalities",
           "url": "https://www.cuba.travel/en/useful-information/regulations-and-formalities",
           "agency": "Cuban Ministry of Tourism tourism portal",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.cuba.travel/en/useful-information/regulations-and-formalities",
           "notes": "Lists the D'Viajeros QR code separately from the tourist visa, links to both official systems, states the passport validity and says eVisa replaces the Tourist Card."
         },
@@ -21494,7 +21494,7 @@ export default {
           "name": "eVisaCuba tourist visa portal",
           "url": "https://evisacuba.cu/en/inicio",
           "agency": "Cuban Ministry of Foreign Affairs",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://evisacuba.cu/en/inicio",
           "notes": "Government-designated portal linked by the Cuba Travel official tourism page. The domain is not .gob.cu; verify it by following the Cuba Travel link. The portal footer identifies the Cuban Foreign Ministry. It says the eVisa is tied to the passport, the visa code is emailed, and response is within 72 business hours. Fees depend on the selected consulate or authorised channel and are not published as one global amount."
         },
@@ -21503,7 +21503,7 @@ export default {
           "name": "Electronic tourist visa and D'Viajeros timing notice",
           "url": "https://www.granma.cu/cuba/2025-01-21/la-visa-de-turismo-electronica-sera-obligatoria-para-la-entrada-a-cuba-desde-finales-de-junio-21-01-2025-01-01-26",
           "agency": "Granma, official publication of the Central Committee of the Communist Party of Cuba",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.granma.cu/cuba/2025-01-21/la-visa-de-turismo-electronica-sera-obligatoria-para-la-entrada-a-cuba-desde-finales-de-junio-21-01-2025-01-01-26",
           "notes": "Quotes the Ministry of Tourism commercial director: the eVisa code is entered into D'Viajeros to produce the QR code, and D'Viajeros can be completed during the seven days before travel. It also announced eVisa as the tourist route from 30 June 2025."
         },
@@ -21512,12 +21512,12 @@ export default {
           "name": "Cuba Travel D'Viajeros passenger requirement",
           "url": "https://www.cuba.travel/en/wheretogo/havana/usefulinformation/howtoget",
           "agency": "Cuban Ministry of Tourism tourism portal",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.cuba.travel/en/wheretogo/havana/usefulinformation/howtoget",
           "notes": "Current Cuba Travel destination guidance states that every passenger must truthfully complete D'Viajeros for immigration, customs and public-health services."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "curacao",
@@ -21550,7 +21550,7 @@ export default {
           "name": "Curaçao Digital Immigration Card",
           "url": "https://dicardcuracao.com/dicard/",
           "agency": "Curaçao Immigration, through the Curaçao Tourist Board designated portal",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://dicardcuracao.com/dicard/",
           "notes": "Government-designated entry portal on a non-government .com domain. Verify it by following the DI Card link from curacao.com, the Curaçao Tourist Board site. The portal says all foreign visitors must complete the card within seven days before departure and present the digital or printed confirmation at airline check-in and immigration."
         },
@@ -21559,7 +21559,7 @@ export default {
           "name": "Curaçao visa and entry requirements",
           "url": "https://www.curacao.com/en/article/curacao/",
           "agency": "Curaçao Tourist Board",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.curacao.com/en/article/curacao/",
           "notes": "Official tourism board page last updated August 2026. It links to dicardcuracao.com and states the DI Card is mandatory before travel, separate from visa status and completely free of charge."
         },
@@ -21568,12 +21568,12 @@ export default {
           "name": "Official Curaçao Entry Portal FAQ",
           "url": "https://dicardcuracao.com/portal",
           "agency": "Curaçao Tourist Board / Curaçao Immigration",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://dicardcuracao.com/portal",
           "notes": "Publishes the seven-day window, required application groups, passport and nickname rule, flight lookup behavior, per-person/per-trip rule, edit process and confirmation handling."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "colombia",
@@ -21606,7 +21606,7 @@ export default {
           "name": "CheckMig immigration pre-registration",
           "url": "https://apps.migracioncolombia.gov.co/pre-registro/public/",
           "agency": "Unidad Administrativa Especial Migración Colombia",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://apps.migracioncolombia.gov.co/pre-registro/public/",
           "notes": "Official Migración Colombia application. It lets Colombian and foreign travellers preload entry or exit trip information. The live page states the filing window runs from 72 hours before travel until one hour before travel."
         },
@@ -21615,7 +21615,7 @@ export default {
           "name": "Migración Colombia CheckMig service guide",
           "url": "https://portal.migracioncolombia.gov.co/tramites-y-servicios/aplicativos/checkmig",
           "agency": "Unidad Administrativa Especial Migración Colombia",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://portal.migracioncolombia.gov.co/tramites-y-servicios/aplicativos/checkmig",
           "notes": "Official service page. It states CheckMig is free, online and optional; is intended for national and foreign travellers entering or leaving Colombia; takes two to five minutes; cannot be edited after submission; and sends an email confirmation that can also be downloaded."
         },
@@ -21624,12 +21624,12 @@ export default {
           "name": "Colombia entry and exit requirements",
           "url": "https://portal.migracioncolombia.gov.co/tramites-y-servicios/instructivos/requisitos-de-entrada-y-salida-del-pais",
           "agency": "Unidad Administrativa Especial Migración Colombia",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://portal.migracioncolombia.gov.co/tramites-y-servicios/instructivos/requisitos-de-entrada-y-salida-del-pais",
           "notes": "Official requirements page. It describes CheckMig as optional and recommended, repeats the 72-hour-to-one-hour window, and separates it from passports, visas and admission requirements."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "laos",
@@ -21662,7 +21662,7 @@ export default {
           "name": "Lao eVisa Application",
           "url": "https://laoevisa.gov.la/application",
           "agency": "Consular Department, Ministry of Foreign Affairs of the Lao PDR",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://laoevisa.gov.la/application",
           "notes": "Read 2026-08-30. This is the live application on the Lao government .gov.la portal. It asks for passport and face images, passport details, a designated port, intended entry date and address in Laos. The page states DD-MM-YYYY for dates, a 2 MB limit for each image, JPG/JPEG/PNG formats, and at least 6 months of passport validity from arrival."
         },
@@ -21671,7 +21671,7 @@ export default {
           "name": "Lao eVisa Information",
           "url": "https://laoevisa.gov.la/info",
           "agency": "Consular Department, Ministry of Foreign Affairs of the Lao PDR",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://laoevisa.gov.la/info",
           "notes": "Read 2026-08-30. The Ministry describes the three-step application, the nationality-based fee calculator, the designated ports, the eVisa Approval Letter and the normal processing time of 3 working days. The fee shown by the calculator is non-refundable."
         },
@@ -21680,7 +21680,7 @@ export default {
           "name": "Lao eVisa FAQ",
           "url": "https://laoevisa.gov.la/faq",
           "agency": "Consular Department, Ministry of Foreign Affairs of the Lao PDR",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://laoevisa.gov.la/faq",
           "notes": "Read 2026-08-30. The eVisa is a single-entry Tourist Visa only, allows a 30-day stay, and is valid for 60 days after the Approval Letter is issued. The current FAQ lists 9 designated ports and says an eVisa fee is not refunded if the traveller arrives at an undesignated port."
         },
@@ -21689,12 +21689,12 @@ export default {
           "name": "Lao eVisa Terms and Conditions",
           "url": "https://laoevisa.gov.la/term/",
           "agency": "Consular Department, Ministry of Foreign Affairs of the Lao PDR",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://laoevisa.gov.la/term/",
           "notes": "Read 2026-08-30. Only ordinary passports qualify. The passport must have more than 6 months of validity from arrival and at least one blank page. The traveller must carry a hard copy of the Approval Letter and use the same passport as in the application."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "azerbaijan",
@@ -21735,7 +21735,7 @@ export default {
           "name": "Azerbaijan visa-free countries",
           "url": "https://mfa.gov.az/en/category/visa/visa-free-countries",
           "agency": "Ministry of Foreign Affairs of the Republic of Azerbaijan",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The Ministry page lists ordinary-passport visa-free arrangements and their stay limits, including permanent reciprocal arrangements and time-limited unilateral schemes. Travellers must check the exact passport and current dates before applying for an e-Visa."
         },
         {
@@ -21763,7 +21763,7 @@ export default {
           "notes": "Read 2026-08-30. The standard e-Visa carries a USD 20 state fee plus a USD 5 service fee. Payment is non-refundable. The portal accepts Visa, Mastercard and UnionPay, and emails the result to the applicant."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "myanmar",
@@ -21796,7 +21796,7 @@ export default {
           "name": "Official Myanmar Tourist eVisa",
           "url": "https://evisa.moip.gov.mm/home",
           "agency": "Ministry of Immigration and Population, Republic of the Union of Myanmar",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://evisa.moip.gov.mm/home",
           "notes": "Read 2026-08-30. The current Ministry home page presents separate Tourist and Business eVisa application routes, account registration, payment, Approval Letter and stamping on arrival. The official user guide's Tourist walkthrough ends with a payment acknowledgement showing a USD 50 processing fee; confirm the current amount on the Step 5 payment screen before paying. Announcements on the portal were last updated 2026-07, and no suspension notice is posted."
         },
@@ -21805,7 +21805,7 @@ export default {
           "name": "Myanmar eVisa FAQ",
           "url": "https://evisa.moip.gov.mm/common-items/faq",
           "agency": "Ministry of Immigration and Population, Republic of the Union of Myanmar",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://evisa.moip.gov.mm/common-items/faq",
           "notes": "Read 2026-08-30. The FAQ separates Tourist and Business eVisas: 100 versus 54 eligible nationalities, different supporting documents, 28 versus 70 days of stay, and different extension rules. It states a minimum of 3 working days, a 90-day Approval Letter validity, single entry, a printed Approval Letter, and four current entry points: Yangon, Mandalay and Nay Pyi Taw airports plus Kawthaung land checkpoint."
         },
@@ -21814,12 +21814,12 @@ export default {
           "name": "Myanmar eVisa Application User Guide",
           "url": "https://evisa.moip.gov.mm/assets/dist/img/guide/userGuide.pdf",
           "agency": "Ministry of Immigration and Population, Republic of the Union of Myanmar",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://evisa.moip.gov.mm/assets/dist/img/guide/userGuide.pdf",
           "notes": "Read 2026-08-30. The 25-page official guide covers account activation, the five-step Tourist or Business eVisa flow, passport validity, MRZ name entry, JPG/PDF uploads up to 2 MB, the Tourist payment acknowledgement showing a USD 50 processing fee, the minimum 3-working-day approval time, and printing the Approval Letter."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "nepal",
@@ -21852,7 +21852,7 @@ export default {
           "name": "Nepal Online Tourist Visa Form for Visa on Arrival",
           "url": "https://nepaliport.immigration.gov.np/on-arrival/tourist-visa",
           "agency": "Department of Immigration, Government of Nepal",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. This is the on-arrival Tourist Visa application in NepaliPort. It begins with passport-issuing country, Tourist Visa, passport number and date of birth. The Department says the online form may be completed before arrival or at a TIA kiosk; it produces a barcode receipt valid for 15 days, while the immigration officer issues the visa at the port."
         },
         {
@@ -21860,7 +21860,7 @@ export default {
           "name": "NepaliPort Electronic Travel Authorization and Visa Services",
           "url": "https://nepaliport.immigration.gov.np/",
           "agency": "Department of Immigration, Government of Nepal",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The same government portal separates Visa On-arrival, Visa From Nepalese Mission and Electronic Travel Authorization. ETA is a pre-arrival application route, not the same product as the on-arrival online form documented as the main guide."
         },
         {
@@ -21868,7 +21868,7 @@ export default {
           "name": "Nepal Department of Immigration Visa Information",
           "url": "https://immigration.gov.np/visa-information",
           "agency": "Department of Immigration, Government of Nepal",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The current Tourist Visa section publishes the three on-arrival fees, the online-form and kiosk flow, the 15-day receipt validity, payment and immigration-desk issuance. It also identifies gratis categories and passports that must arrange a visa in advance."
         },
         {
@@ -21876,11 +21876,11 @@ export default {
           "name": "Nepal Embassy in Beijing Tourist Visa Information",
           "url": "https://cn.nepalembassy.gov.np/pages/visa/",
           "agency": "Embassy of Nepal, Beijing, Government of Nepal",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. Chinese nationals are eligible for visa on arrival and pay no Tourist Visa fee. The page asks for more than six months of passport validity and explains the online form, digital photograph, contact details, Nepal address and 15-day application retention."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "pakistan",
@@ -21921,7 +21921,7 @@ export default {
           "name": "Pakistan Online Visa Eligibility Notice",
           "url": "https://dgip.gov.pk/home/",
           "agency": "Directorate General of Immigration & Passports, Ministry of Interior, Government of Pakistan",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The current DGI&P home page says the online system is open to 192 countries, VPA is available to citizens of 120 countries for tourism, business or Sikh pilgrimage, and six GCC countries are visa-exempt for these categories. It also says regular visa fees are reciprocal."
         },
         {
@@ -21929,7 +21929,7 @@ export default {
           "name": "Visa Prior to Arrival Facility Notice",
           "url": "https://mofa.gov.pk/news/visa-prior-to-arrival-vpa-facility?mission=tunis",
           "agency": "Ministry of Foreign Affairs, Government of Pakistan",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. This embassy notice is addressed to Tunisian and Maltese nationals. It describes their VPA for tourism, business and Sikh pilgrimage as free and processed within 24 hours, then directs applicants to visa.nadra.gov.pk. The 24-hour statement is not treated as a universal promise for all 120 eligible passport countries."
         },
         {
@@ -21937,7 +21937,7 @@ export default {
           "name": "GCC Citizens Visa Exemption",
           "url": "https://mofa.gov.pk/press-releases/gcc-citizens-now-enjoy-visa-free-travel-to-pakistan-for-business-and-tourism?mission=Kuwait%2520Post",
           "agency": "Ministry of Foreign Affairs, Government of Pakistan",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. Citizens of Saudi Arabia, Kuwait, the United Arab Emirates, Oman, Qatar and Bahrain may travel for tourism or business without an ETA or visa and may stay up to 90 days."
         },
         {
@@ -21945,11 +21945,11 @@ export default {
           "name": "Pakistan Regular Visa Fee Schedule",
           "url": "https://dgip.gov.pk/visa/fee.php",
           "agency": "Directorate General of Immigration & Passports, Ministry of Interior, Government of Pakistan",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. Regular online visa fees are charged on a reciprocal basis and differ by passport and visa category. This is a separate route from the free VPA product."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "uzbekistan",
@@ -21982,7 +21982,7 @@ export default {
           "name": "Uzbekistan Official Electronic Visa Portal",
           "url": "https://e-visa.gov.uz/application",
           "agency": "Ministry of Foreign Affairs of the Republic of Uzbekistan",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30, including the current application shell, JavaScript and English portal guidance. The first step asks for citizenship, travel-document type, visa entry type and purpose. Later steps collect passport identity, dates, residence, work, contact and stay details, plus a face photo, passport copy and email activation."
         },
         {
@@ -21990,7 +21990,7 @@ export default {
           "name": "Visa to the Republic of Uzbekistan",
           "url": "https://gov.uz/en/mfa/pages/o-zbekiston-respublikasi-vizasi",
           "agency": "Ministry of Foreign Affairs of the Republic of Uzbekistan",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The current government page was last updated 2026-06-01. It publishes the visa-free regimes and their different durations and conditions, the current 56-entry eVisa eligibility appendix, and USD 20 / 35 / 50 single, double and multiple eVisa fees for stays up to 30 days."
         },
         {
@@ -21998,11 +21998,11 @@ export default {
           "name": "Uzbekistan eVisa Portal English Guidance",
           "url": "https://e-visa.gov.uz/what-you-need-to-know",
           "agency": "Ministry of Foreign Affairs of the Republic of Uzbekistan",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30 together with the page's live English localization data at https://e-visa.gov.uz/assets/localization/en.json. The guidance says to apply at least 3 working days before arrival; consideration takes 2 working days excluding the filing day; the eVisa is valid for entry within 90 days and permits a stay up to 30 days. It also publishes the English field labels, photo guidance, 500 KB passport-copy limit, email activation and PDF delivery."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "georgia",
@@ -22035,7 +22035,7 @@ export default {
           "name": "Georgia e-Visa Application",
           "url": "https://www.evisa.gov.ge/GeoVisa/en/VisaApp",
           "agency": "Ministry of Foreign Affairs of Georgia",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The live application is for short stays only and starts with citizenship, travel-document type, purpose and insurance. It lists the documents to upload and states that the current process has two mandatory steps: the application and fee, followed within 24 hours by DuVerify with an additional USD 15 fee."
         },
         {
@@ -22043,7 +22043,7 @@ export default {
           "name": "List of countries whose citizens may enter Georgia without a visa",
           "url": "https://matsne.gov.ge/en/document/view/2867361?publication=4",
           "agency": "Legislative Herald of Georgia",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The current consolidated government ordinance lists the covered countries and states that their citizens may enter and stay in Georgia without a visa for one full year. Travellers must check that their exact passport country remains in the current annex."
         },
         {
@@ -22051,7 +22051,7 @@ export default {
           "name": "Georgia e-Visa FAQ",
           "url": "https://www.evisa.gov.ge/GeoVisa/en/Home/FAQ",
           "agency": "Ministry of Foreign Affairs of Georgia",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The FAQ states a USD 20 fee plus a 2% service fee, a decision time of not less than 5 working days, passport conditions, required border documents and passport-dependent visa validity and stay."
         },
         {
@@ -22059,11 +22059,11 @@ export default {
           "name": "About the Georgia e-Visa",
           "url": "https://www.evisa.gov.ge/GeoVisa/en/Home/AboutVisa",
           "agency": "Ministry of Foreign Affairs of Georgia",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The Ministry identifies the portal as its short-term e-Visa service and describes the apply, pay and print process."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "oman",
@@ -22096,7 +22096,7 @@ export default {
           "name": "Royal Oman Police eVisa",
           "url": "https://evisa.rop.gov.om/",
           "agency": "Royal Oman Police",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. This is the ROP portal for tourist and sponsored visa applications. Tourist applicants must register or log in before starting an application."
         },
         {
@@ -22104,7 +22104,7 @@ export default {
           "name": "Oman entry visas and visa exemptions",
           "url": "https://www.fm.gov.om/en/visitors/entry-visas/",
           "agency": "Foreign Ministry of Oman",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. Updated 16 January 2026. It lists more than 100 countries and regions whose visitors may use a visa exemption for stays up to 14 days, divides them into two groups, gives the extra conditions for the second group, and states that GCC citizens need no visa."
         },
         {
@@ -22112,7 +22112,7 @@ export default {
           "name": "Oman eVisa Eligibility Wizard",
           "url": "https://evisa.rop.gov.om/visa-eligibility?tabId=eiwscr",
           "agency": "Royal Oman Police",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The public wizard asks for nationality, GCC residence and GCC country where applicable. Its result supplies eligible visa subtypes, fee details, stay duration and conditions."
         },
         {
@@ -22120,11 +22120,11 @@ export default {
           "name": "Oman eVisa FAQ",
           "url": "https://evisa.rop.gov.om/en/frequently-asked-questions",
           "agency": "Royal Oman Police",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The FAQ covers visa types, pre-use validity, a recommended 4-day application lead, lawful border entry, 6-month passport validity, a 512 KB upload limit and email delivery after approval."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "qatar",
@@ -22157,7 +22157,7 @@ export default {
           "name": "Hayya Tourist E-Visas",
           "url": "https://hayya.qa/en?category=WVE",
           "agency": "Qatar Tourism / Hayya",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The portal lists Tourist Visa A1, GCC Resident Visa A2, Visa with ETA A3, Companion of GCC Citizen A4 and Visa-Free for US Citizens F1. It asks nationality first and tells GCC nationals that no visa is required."
         },
         {
@@ -22165,7 +22165,7 @@ export default {
           "name": "Qatar visa-free entry and Hayya e-Visa guide",
           "url": "https://visitqatar.com/intl-en/plan-your-trip/visas",
           "agency": "Qatar Tourism",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The live nationality checker separates visa-free entry, paid visa on arrival and Hayya routes. It says citizens of more than 102 countries are eligible for free entry, GCC citizens need no visa, and tourist visas can be applied for on Hayya for QAR 100."
         },
         {
@@ -22177,7 +22177,7 @@ export default {
           "notes": "Read 2026-08-30. The Government Communications Office states that Qatar Tourism relaunched Hayya after the World Cup, that it is the central hub for tourist and event visas, and that visitors who require an entry visa can apply on hayya.qa or in the app."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "bahrain",
@@ -22250,7 +22250,7 @@ export default {
           "name": "Two-week single-entry Visit eVisa",
           "url": "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1871",
           "agency": "Ministry of Interior - Nationality, Passports and Residence Affairs",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The government service directory describes a two-week single-entry product for nationals of 212 countries, a BD 9 visa fee plus BD 4 application fee, four supporting-document categories and a 3-to-5-working-day process."
         },
         {
@@ -22258,7 +22258,7 @@ export default {
           "name": "Three-month multiple-entry Visit eVisa",
           "url": "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1870",
           "agency": "Ministry of Interior - Nationality, Passports and Residence Affairs",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The government service directory describes a three-month multiple-entry product for nationals of 212 countries, BD 29 total, the same four supporting-document categories and a 3-to-5-working-day process."
         },
         {
@@ -22266,7 +22266,7 @@ export default {
           "name": "One-year multiple-entry Visitor eVisa",
           "url": "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1875",
           "agency": "Ministry of Interior - Nationality, Passports and Residence Affairs",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The government service directory describes a one-year multiple-entry product for nationals of 212 countries, BD 44, the same four supporting-document categories and a 3-to-5-working-day process."
         },
         {
@@ -22274,11 +22274,11 @@ export default {
           "name": "Five-year multiple-entry Visit eVisa",
           "url": "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1874",
           "agency": "Ministry of Interior - Nationality, Passports and Residence Affairs",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The government service directory describes a five-year multiple-entry product for nationals of 68 countries, BD 64, the same four supporting-document categories and a 3-to-5-working-day process."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "tanzania",
@@ -22311,7 +22311,7 @@ export default {
           "name": "Tanzania Electronic Visa Application System",
           "url": "https://visa.immigration.go.tz/",
           "agency": "Tanzania Immigration Services Department",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The .go.tz portal accepts applications for Tanzania Mainland and Zanzibar, takes online payment, emails decisions and provides status tracking."
         },
         {
@@ -22319,7 +22319,7 @@ export default {
           "name": "Tanzania Visa Guidelines",
           "url": "https://visa.immigration.go.tz/guidelines",
           "agency": "Tanzania Immigration Services Department",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The page publishes exemption and referral routes, a normal processing period within ten days, passport and photo requirements, visa types, validity and fees."
         },
         {
@@ -22327,7 +22327,7 @@ export default {
           "name": "Start a Tanzania Online Visa Application",
           "url": "https://visa.immigration.go.tz/start",
           "agency": "Tanzania Immigration Services Department",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The public first step asks for email, passport number, passport issue country, security question and security answer. Its HTML publishes a 100-character maximum for email and security answer, but no passport-number pattern."
         },
         {
@@ -22335,11 +22335,11 @@ export default {
           "name": "Fees for Visa",
           "url": "https://www.immigration.go.tz/index.php/fees-for-visa",
           "agency": "Tanzania Immigration Services Department",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The fee table lists USD 50 for an Ordinary Visa, USD 100 for Multiple Entry and USD 30 for Transit. Eligibility and visa category must be checked before payment."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "ethiopia",
@@ -22372,7 +22372,7 @@ export default {
           "name": "Ethiopian e-Visa Official Website",
           "url": "https://www.evisa.gov.et/",
           "agency": "Immigration and Citizenship Service of Ethiopia",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The .gov.et portal identifies the Tourist Visa as an Ethiopian government single-entry eVisa and warns that applications or payments on lookalike sites are not accepted."
         },
         {
@@ -22380,7 +22380,7 @@ export default {
           "name": "Ethiopia Tourist Visa Information",
           "url": "https://www.evisa.gov.et/information/tourist",
           "agency": "Immigration and Citizenship Service of Ethiopia",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The page lists a passport photo and passport valid for at least 6 months, normal processing in 3 days, single-entry fees of USD 62 for 30 days and USD 152 for 90 days, validity from intended entry and extension/overstay guidance."
         },
         {
@@ -22388,7 +22388,7 @@ export default {
           "name": "Ethiopia e-Visa Application",
           "url": "https://www.evisa.gov.et/visa",
           "agency": "Immigration and Citizenship Service of Ethiopia",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The public application renders visa selection, arrival, Ethiopia address, personal, passport and upload sections. It names the live fields and accepts passport/photo uploads in JPEG, JPG or PNG, but publishes no readable regexes, character limits or error text."
         },
         {
@@ -22396,7 +22396,7 @@ export default {
           "name": "Ethiopia Tourist Visa on Arrival",
           "url": "https://www.evisa.gov.et/information/touristOnArrivalVisa",
           "agency": "Immigration and Citizenship Service of Ethiopia",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. This is the separate official visa-on-arrival eligibility list and it states that Kenya and Djibouti citizens with valid passports are visa-exempt."
         },
         {
@@ -22404,11 +22404,11 @@ export default {
           "name": "Immigration and Citizenship Service Official Portal",
           "url": "https://www.immigration.gov.et/",
           "agency": "Immigration and Citizenship Service of Ethiopia",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The government portal identifies ICS as the authority for passports, Ethiopian Origin IDs, visas and work permits."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "morocco",
@@ -22441,7 +22441,7 @@ export default {
           "name": "Accès Maroc eVisa and Entry Eligibility Portal",
           "url": "https://www.acces-maroc.ma/",
           "agency": "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The domain is not a government suffix. Verify it by following the link from diplomatie.ma. The Ministry says the platform was developed by engineers and technicians of the Department. The live home page checks exemption and routes travellers to no visa, consular visa, AEVM or eVisa."
         },
         {
@@ -22449,7 +22449,7 @@ export default {
           "name": "Ministry Launch of the Morocco eVisa",
           "url": "https://diplomatie.ma/en/launch-electronic-visa-evisa",
           "agency": "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The Ministry identifies acces-maroc.ma as the eVisa platform, states the 180-day maximum validity, 30-day maximum stay, three eligibility categories, 24-hour express and 72-hour standard processing, and says Department staff developed and operate the platform."
         },
         {
@@ -22457,7 +22457,7 @@ export default {
           "name": "Morocco eVisa General Information",
           "url": "https://www.acces-maroc.ma/assets/docs/Conditions%20utilisation%20eVisa%20-%20An.pdf",
           "agency": "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The English briefing note publishes current Category A, B and C criteria, ordinary-passport and document rules, 180-day validity, 30-day single-entry stay, 24/72-hour deadlines, non-refund rule and border documents."
         },
         {
@@ -22465,7 +22465,7 @@ export default {
           "name": "Accès Maroc eVisa User Guide",
           "url": "https://www.acces-maroc.ma/assets/docs/Guide%20eVisa.pdf",
           "agency": "Kingdom of Morocco Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The user guide shows eligibility, email verification, personal and supplemental information, document upload, Treasury payment and status tracking. The payment screen shows MAD 770 standard and MAD 1,100 express."
         },
         {
@@ -22473,11 +22473,11 @@ export default {
           "name": "Morocco Embassy Visa Requirements",
           "url": "https://us.diplomatie.ma/index.php/en/visa-requirements",
           "agency": "Embassy of the Kingdom of Morocco in the United States",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The embassy tells travellers to verify visa-exemption eligibility on acces-maroc.ma before applying for a visa."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "jamaica",
@@ -22510,7 +22510,7 @@ export default {
           "name": "Electronic Immigration and Customs Declaration Card (C5)",
           "url": "https://enterjamaica.gov.jm/?language=en-US",
           "agency": "Passport, Immigration and Citizenship Agency (PICA) and Jamaica Customs Agency (JCA)",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The live .gov.jm page identifies itself as the official Electronic C5 and displays the PICA and JCA names and logos. Its public HTML exposes required attributes, a 6-character email minimum, a 4-character flight-number maximum and the mm/dd/yyyy travel-date prompt."
         },
         {
@@ -22518,7 +22518,7 @@ export default {
           "name": "Jamaica Customs Passenger Declaration (C5) Notice",
           "url": "https://jca.gov.jm/individual/passenger/",
           "agency": "Jamaica Customs Agency",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. JCA mandates the Electronic Passenger Declaration for arriving passengers, links enterjamaica.gov.jm and states that the service is free for visitors and residents."
         },
         {
@@ -22526,7 +22526,7 @@ export default {
           "name": "Government of Jamaica Online Immigration Form Facts",
           "url": "https://jis.gov.jm/information/get-the-facts/the-goj-online-immigration-form-travel-with-ease/",
           "agency": "Jamaica Information Service",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. JIS identifies the PICA/JCA collaboration, says the form is free, permits submission up to 30 days before travel and says a confirmation email follows submission."
         },
         {
@@ -22534,7 +22534,7 @@ export default {
           "name": "PICA Warning: No Third Party Contracted for the Passenger Declaration",
           "url": "https://jis.gov.jm/no-third-party-contracted-to-provide-online-immigration-passenger-declaration-form/",
           "agency": "Jamaica Information Service and Passport, Immigration and Citizenship Agency",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The 2023 government warning says no third party was contracted, the facility is free and sites charging for it are not the government service. It named the older enterjamaica.com address; current JCA and Tourism pages use enterjamaica.gov.jm."
         },
         {
@@ -22542,11 +22542,11 @@ export default {
           "name": "Jamaica Ministry of Tourism C5 Notice",
           "url": "https://www.mot.gov.jm/node/1496",
           "agency": "Jamaica Ministry of Tourism",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The Ministry directs travellers to enterjamaica.gov.jm and describes it as free, safe and convenient."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "bahamas",
@@ -22579,7 +22579,7 @@ export default {
           "name": "Exempt Bahamas Customs C17 Digital Declaration",
           "url": "https://exempt.gov.bs/",
           "agency": "Bahamas Customs Department and Ministry of Finance",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The .gov.bs portal says it is officially authorized by Bahamas Customs and the Ministry of Finance. It provides electronic C17 submission, passport-profile scanning, QR-code clearance and optional duty prepayment. It identifies Exempt Technologies as the app developer."
         },
         {
@@ -22587,7 +22587,7 @@ export default {
           "name": "Bahamas Government Arrival and Customs Requirements",
           "url": "https://www.bahamas.gov.bs/arrivals-and-departures",
           "agency": "Government of The Bahamas",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The government page says a visitor carrying only used personal belongings makes an oral baggage declaration; a visitor with other items uses C17; every returning resident uses C17 whether or not there are items to declare."
         },
         {
@@ -22595,7 +22595,7 @@ export default {
           "name": "Bahamas Digital Arrival Card Pilot Announcement",
           "url": "https://www.bahamas.com/pressroom/the-bahamas-initiates-soft-launch-of-digital-arrival-card-in-historic-first-for-the-destination",
           "agency": "Bahamas Ministry of Tourism, Investments and Aviation",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The 5 May 2026 release describes BDAC as a pilot for select visitors on selected flights, combining immigration and customs. It says the traditional paper process remains alongside the pilot."
         },
         {
@@ -22603,7 +22603,7 @@ export default {
           "name": "Lynden Pindling International Airport Exempt Notice",
           "url": "https://nassaulpia.com/news/department-of-bahamas-customs-has-launched-a-new-digital-declaration/",
           "agency": "Lynden Pindling International Airport",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. The airport notice says the Exempt digital declaration is mandatory for returning residents and required for visitors with items to declare."
         },
         {
@@ -22611,11 +22611,11 @@ export default {
           "name": "Exempt App Operator Privacy Notice",
           "url": "https://www.myexempt.com/privacy-api.php",
           "agency": "Exempt Technologies, Inc.",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Read 2026-08-30. Exempt Technologies identifies itself as the app builder and states that the service is provided at no cost. Customs duties are separate and may be prepaid through the app."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "aruba",
@@ -22648,7 +22648,7 @@ export default {
           "name": "Aruba Online ED Card",
           "url": "https://edcardaruba.aw/welcome",
           "agency": "Aruba Immigration",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Mandatory online Embarkation and Disembarkation Card. The live application exposes several required fields and length controls. Most air arrivals pay a separate USD 20 sustainability fee inside the same flow; the fee does not apply to sea arrivals and published exemptions apply."
         },
         {
@@ -22656,7 +22656,7 @@ export default {
           "name": "Aruba Online ED Card guide",
           "url": "https://www.aruba.com/us/plan-your-visit/getting-to-aruba/online-ed-card",
           "agency": "Aruba Tourism Authority",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Confirms that the ED Card is mandatory for every passenger, including infants and children, opens within seven days before travel, and applies at air and seaports."
         },
         {
@@ -22664,11 +22664,11 @@ export default {
           "name": "Aruba sustainability fee",
           "url": "https://www.aruba.com/uk/sustainability-fee",
           "agency": "Aruba Tourism Authority",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Explains the USD 20 sustainability fee collected through the ED Card flow for air arrivals, the published exemptions, and that the fee is not charged to sea arrivals."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "panama",
@@ -22701,7 +22701,7 @@ export default {
           "name": "Panama Digital Sworn Traveler Declaration",
           "url": "https://declaraciondeviajero.ana.gob.pa/",
           "agency": "Autoridad Nacional de Aduanas",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Official Panama Customs portal for declaring goods and values when entering or leaving the country. The portal has Spanish and English interfaces."
         },
         {
@@ -22709,7 +22709,7 @@ export default {
           "name": "Panama traveler declaration process",
           "url": "https://tramites.ana.gob.pa/w_proceso/GestiondeDespacho.html",
           "agency": "Autoridad Nacional de Aduanas",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "States that the declaration is free of charge, may be digital or manual, may cover one family group with a single declaration, and must be filed and presented within the published 72-hour window."
         },
         {
@@ -22721,7 +22721,7 @@ export default {
           "notes": "Adopts the digital declaration portal and requires the traveller to present its QR response code."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "peru",
@@ -22754,7 +22754,7 @@ export default {
           "name": "Peru TAM Virtual lookup",
           "url": "https://cel.migraciones.gob.pe/ConsultaTAMVirtual/VerificarTAM",
           "agency": "Superintendencia Nacional de Migraciones",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Official bilingual lookup for the electronic Andean Migration Card record generated during immigration control. It asks for document type, document number, nationality, movement date, optional departure record and CAPTCHA."
         },
         {
@@ -22762,7 +22762,7 @@ export default {
           "name": "Download your Virtual Andean Migration Card",
           "url": "https://www.gob.pe/institucion/migraciones/campa%C3%B1as/28799-descarga-tu-tarjeta-andina-de-migracion-virtual",
           "agency": "Superintendencia Nacional de Migraciones",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Explains that Peru eliminated passport stamping for international flight immigration control and instructs travellers to complete the lookup and CAPTCHA. Document identifiers use letters and numbers without dots, hyphens or spaces."
         },
         {
@@ -22770,11 +22770,11 @@ export default {
           "name": "How to obtain the TAM Virtual",
           "url": "https://www.gob.pe/institucion/migraciones/noticias/882413-como-puedes-obtener-tu-tarjeta-andina-de-migracion-tam-virtual",
           "agency": "Superintendencia Nacional de Migraciones",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "States that the TAM Virtual is generated automatically during immigration control and records personal details, movement date and time, checkpoint and authorized stay. Download is free."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "brazil",
@@ -22807,7 +22807,7 @@ export default {
           "name": "Brazil Ministry of Foreign Affairs e-Visa notice",
           "url": "https://www.gov.br/mre/pt-br/consulado-sao-francisco/electronic-visitor-visa-e-visa",
           "agency": "Ministry of Foreign Affairs of Brazil",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Government page stating that eligible Australian, Canadian and United States passport holders are subject to visa requirements from 10 April 2025 and directing e-Visa requests to brazil.vfsevisa.com. Start here to verify the contractor link. The live page blocks automated sessions; verified against its Internet Archive snapshot of 2024-11-06."
         },
         {
@@ -22815,7 +22815,7 @@ export default {
           "name": "Brazil e-Visa application information",
           "url": "https://brazil.vfsevisa.com/tourist-visa.html",
           "agency": "VFS Global, designated by the Government of Brazil",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Government-designated commercial application host. The .com domain is not a government suffix. The current page publishes the USD 80.90 fee, passport and photograph requirements, multiple-entry validity branches, stay limit, processing time and printed e-Visa instruction. The live host blocks automated sessions; verified against its Internet Archive snapshot of 2026-07-14."
         },
         {
@@ -22823,7 +22823,7 @@ export default {
           "name": "Brazil e-Visa FAQ",
           "url": "https://brazil.vfsevisa.com/faqs.html",
           "agency": "VFS Global, designated by the Government of Brazil",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Confirms the eligible passport group, multiple-entry character, email delivery, non-refundable fee and processing time. Verify this non-government host through the Ministry of Foreign Affairs page before using it. Verified against the Internet Archive snapshot of 2026-07-14 because the live host blocks automated sessions."
         },
         {
@@ -22831,11 +22831,11 @@ export default {
           "name": "VFS Global Brazil e-Visa terms",
           "url": "https://brazil.vfsevisa.com/terms-and-conditions.html",
           "agency": "VFS Global",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Identifies the commercial operator as VF Worldwide Holdings Ltd trading as VFS Global and states that visa grants, duration and refusal sit with the immigration authorities' sole discretion and that fees are non-refundable. Verified against the Internet Archive snapshot of 2026-07-14 because the live host blocks automated sessions."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "barbados",
@@ -22876,7 +22876,7 @@ export default {
           "name": "Visitors to Barbados",
           "url": "https://immigration.gov.bb/pages/visitor.aspx",
           "agency": "Barbados Immigration Department",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Confirms the 72-hour availability window and receipt presentation. Also lists a passport valid for the trip, return ticket, intended address and evidence of personal support among visitor entry items."
         },
         {
@@ -22884,7 +22884,7 @@ export default {
           "name": "Barbados Online ED Card",
           "url": "https://www.visitbarbados.org/online-ed-card",
           "agency": "Barbados Tourism Marketing Inc.",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Official destination guide confirming that Immigration and Customs receipts are emailed after submission and that a valid email address is required."
         },
         {
@@ -22892,11 +22892,11 @@ export default {
           "name": "Barbados Immigration Form E.1",
           "url": "https://oag.gov.bb/attachments/Immigration%20%28Forms%20and%20Fees%29%20%28Amendment%29%20Regulations%2C%202020%20No%208.pdf",
           "agency": "Government of Barbados, Office of the Attorney General",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "notes": "Official form specification listing travel, passport, identity, contact, destination and stay fields."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "russia",
@@ -22929,7 +22929,7 @@ export default {
           "name": "Unified e-visa application and personal account",
           "url": "https://evisa.kdmid.ru/",
           "agency": "Consular Department, Ministry of Foreign Affairs of the Russian Federation",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://evisa.kdmid.ru/",
           "notes": "Read 2026-08-30. This is the application host named by the ministry's own information portal. Applications are filed only from a personal account on this site or in the ministry's mobile app, so the form itself could not be read without an account. The landing page names the supported browsers as Mozilla Firefox, Google Chrome and Microsoft Edge, and links the Instruction page that carries the Characteristics of the unified e-visa and conditions for its issuance."
         },
@@ -22938,7 +22938,7 @@ export default {
           "name": "Characteristics of the unified e-visa and conditions for its issuance",
           "url": "https://evisa.kdmid.ru/Home/Instruction",
           "agency": "Consular Department, Ministry of Foreign Affairs of the Russian Federation",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://evisa.kdmid.ru/Home/Instruction",
           "notes": "Read 2026-08-30. Single entry, 120 days of validity from issue, a stay of no more than 30 days from entry, and a warning that the day of arrival and the day of departure both count. Applications open 86 days and close 4 days before the intended entry date. Processing takes no more than 4 calendar days. The passport must be machine-readable, valid at least 6 months from the date the application is submitted, with space for border stamps. Face photo in JPEG, taken within 6 months, 35x45 aspect ratio, face taking 70-80 percent of the photo. Children listed in a parent's passport need a separate e-visa each; applicants under 6 pay no consular fee. Medical insurance valid in Russia is required, with exemptions by reciprocity."
         },
@@ -22947,7 +22947,7 @@ export default {
           "name": "E-visa information portal of the Consular Department",
           "url": "https://electronic-visa.kdmid.ru/index_en.html",
           "agency": "Consular Department, Ministry of Foreign Affairs of the Russian Federation",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://electronic-visa.kdmid.ru/index_en.html",
           "notes": "Read 2026-08-30. States that nationals of 64 foreign states may be granted an e-visa, that an e-visa is issued within 4 calendar days including weekends and bank holidays, and that no invitations or confirmations are needed. Also recommends against Gmail for registration and notifications because of unstable and delayed delivery."
         },
@@ -22956,7 +22956,7 @@ export default {
           "name": "States whose nationals can apply for e-visa",
           "url": "https://electronic-visa.kdmid.ru/country_en.html",
           "agency": "Consular Department, Ministry of Foreign Affairs of the Russian Federation",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://electronic-visa.kdmid.ru/country_en.html",
           "notes": "Read 2026-08-30. Lists the 64 eligible states, including China (including Taiwan), India, Japan, Turkey, Saudi Arabia, the Gulf states, the EU member states, Britain's neighbours and several Southeast Asian states. Passports outside this list need a regular visa from a Russian diplomatic mission or consular post."
         },
@@ -22965,7 +22965,7 @@ export default {
           "name": "Border crossing points for entry and exit on an e-visa",
           "url": "https://electronic-visa.kdmid.ru/checkpoint_en.html",
           "agency": "Consular Department, Ministry of Foreign Affairs of the Russian Federation",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://electronic-visa.kdmid.ru/checkpoint_en.html",
           "notes": "Read 2026-08-30. Groups the approved border crossing points into air, road, rail, sea and pedestrian cards. Air points include Moscow (Vnukovo), Moscow (Domodedovo), Moscow (Sheremetyevo), Moscow (Zhukovsky), Saint Petersburg (Pulkovo), Vladivostok (Knevichi), Kaliningrad (Khrabrovo), Sochi, Kazan, Novosibirsk (Tolmachevo) and Irkutsk. One road point, Ivangorod, is marked temporarily closed for reconstruction."
         },
@@ -22974,7 +22974,7 @@ export default {
           "name": "E-visa frequently asked questions",
           "url": "https://electronic-visa.kdmid.ru/faq_en.html",
           "agency": "Consular Department, Ministry of Foreign Affairs of the Russian Federation",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://electronic-visa.kdmid.ru/faq_en.html",
           "notes": "Read 2026-08-30. Records the 23 August 2025 change that extended e-visa validity to up to 120 days with a stay of up to 30 days, replacing the earlier 60-day validity and 16-day stay. Entry and exit must both use approved checkpoints. No transit purpose exists in the application. Consular fee is payable only with cards issued by banks outside Russia, invoices are issued in dirhams or yuan, payment takes 20 to 45 minutes to confirm, and no refund is available regardless of the outcome. Migration registration must be completed within 7 working days of arrival."
         },
@@ -22983,12 +22983,12 @@ export default {
           "name": "Technical support recommendations",
           "url": "https://electronic-visa.kdmid.ru/support_en.html",
           "agency": "Consular Department, Ministry of Foreign Affairs of the Russian Federation",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://electronic-visa.kdmid.ru/support_en.html",
           "notes": "Read 2026-08-30. Payment confirmation takes 20 to 45 minutes, Russian bank cards cannot be used, and payment problems go to the visa application centre addresses support@sinovisa.org, help@sinovisa.org or support.gkd-global.com. The e-visa is valid for entry from the moment the issuance notification is received."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "jordan",
@@ -23021,7 +23021,7 @@ export default {
           "name": "Jordan Pass official website",
           "url": "https://www.jordanpass.jo/",
           "agency": "Ministry of Tourism and Antiquities of Jordan",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.jordanpass.jo/",
           "notes": "Read 2026-08-30. The package costs JD 70 (Jordan Wanderer, 1 day in Petra), JD 75 (Jordan Explorer, 2 consecutive days) or JD 80 (Jordan Expert, 3 consecutive days), and each tier carries the same condition: waiving of tourist entry visa fees if you purchase the pass before arrival and stay a minimum of two nights (3 days). The FAQ states the pass is not a visa, that it waives only the single-entry visa fee of JD 40, that it is not available to Arabic nationality holders, and that the printed PDF must be shown at the visa office because the QR code may not scan from a phone. jordanpass.jo is not a government-suffix domain: the footer reads Ministry of Tourism and Antiquities, the privacy policy is written in the Ministry's name, and the Ministry's own page at mota.gov.jo/En/Pages/General_Information links to https://www.jordanpass.jo/. Enter from that Ministry page if you want a government-anchored path to the purchase form."
         },
@@ -23030,7 +23030,7 @@ export default {
           "name": "Jordan Pass purchase form",
           "url": "https://www.jordanpass.jo/buynow.aspx?type=Wanderer",
           "agency": "Ministry of Tourism and Antiquities of Jordan",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.jordanpass.jo/buynow.aspx?type=Wanderer",
           "notes": "Read 2026-08-30. The live form asks for name, email, re-entered email, telephone, main purpose of visit, accommodation type, City of Stay, Residency Address in Jordan, number of nights (dropdown starts at 2), airline, travel party, expected month of arrival, ticket type and number of tickets. The page HTML carries maxlength 100 on the name and both email fields, 150 on the telephone and 250 on the address, the validator script carries the email pattern ^([\\w\\.\\-]+)@([\\w\\.\\-]+)((\\.(\\w){2,4})+)$, and the validator labels read Full name required, You must enter the email, Not Valid Email, Telephone is required, Purpose visit is required and Nights is required."
         },
@@ -23039,7 +23039,7 @@ export default {
           "name": "Visa information",
           "url": "https://mota.gov.jo/En/Pages/Visa_information",
           "agency": "Ministry of Tourism and Antiquities of Jordan",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://mota.gov.jo/En/Pages/Visa_information",
           "notes": "Read 2026-08-30. The Ministry states the entry visa value for all nationalities: JD 40 for a one-time entry visa for one month upon arrival at the airport, JD 60 for a double-entry visa not exceeding three months from an embassy or consulate, and JD 120 for a multiple-entry visa not exceeding six months from an embassy or consulate. The page also warns that all information is subject to change without prior notice and links nationalities needing a visa before travel to the Interior Ministry e-applications page. The separate Tourist Sites Entrance Fees page returned an expiry error page, so attraction prices outside the pass remain unverified."
         },
@@ -23048,7 +23048,7 @@ export default {
           "name": "Ministry of Interior e-visa e-service (account login)",
           "url": "https://eservices.moi.gov.jo/MOI_EVISA/",
           "agency": "Ministry of Interior of Jordan",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://eservices.moi.gov.jo/MOI_EVISA/",
           "notes": "Read 2026-08-30. The live address returns an Oracle ADF JavaScript shell that only redirects to a login page; no application fields are readable without an account. A verified Internet Archive snapshot of 2022-05-19 shows the same shape: Ministry of Interior E-Services Site with username, password, confirmation code, Create New Account and User Manual. Treat this as the government e-visa channel reachable from the Interior Ministry page, not as a public tourist checkout."
         },
@@ -23057,7 +23057,7 @@ export default {
           "name": "E-Applications for Visa and Residence Permits",
           "url": "https://moi.gov.jo/En/Pages/E_Applications_for_Visa_and_Residence_Permits",
           "agency": "Ministry of Interior of Jordan",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://moi.gov.jo/En/Pages/E_Applications_for_Visa_and_Residence_Permits",
           "notes": "Read 2026-08-30. The Interior Ministry describes 16 electronic services covering Visit Visa, Transit Visa, Exit/Entry Visa, Study Visa, Work Visa and residence permits, states that visa applications are accepted only if submitted from outside the Kingdom, quotes a service allowance of 2 JOD per invited person and financial guarantees of 1000 JOD per invited person, and links to the eservices.moi.gov.jo login. This is a sponsored, account-based workflow, not the tourist route."
         },
@@ -23066,7 +23066,7 @@ export default {
           "name": "Restricted and Non Restricted Countries (Nationalities)",
           "url": "https://moi.gov.jo/En/Pages/Restricted_and_Non_Restricted_Countries_Nationalities",
           "agency": "Ministry of Interior of Jordan",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://moi.gov.jo/En/Pages/Restricted_and_Non_Restricted_Countries_Nationalities",
           "notes": "Read 2026-08-30. The Ministry defines restricted countries as countries that need prior approval and non-restricted countries as countries that do not need prior approval, and lists 14 Asian, 37 African and 2 South American nationalities, 53 in total, from Afghanistan, Iran, Pakistan, Bangladesh, Iraq and Yemen to Ethiopia, Nigeria, Sudan, Somalia, Belize and Cuba. The Jordan Pass FAQ links its own restricted-nationality question to the same list."
         },
@@ -23075,12 +23075,12 @@ export default {
           "name": "Travel Visas (Jordan Gate national portal)",
           "url": "https://jordan.gov.jo/EN/Pages/Travel_Visas",
           "agency": "Government of Jordan",
-          "lastVerified": "2026-09-14",
+          "lastVerified": "2026-10-05",
           "archiveUrl": "https://web.archive.org/web/2026/https://jordan.gov.jo/EN/Pages/Travel_Visas",
           "notes": "Read 2026-08-30. The national portal states that most tourists opt for the single-entry tourist visa, that visa on arrival is available at major entry points including Queen Alia International Airport, that tourist visas typically allow stays of 1 month or 3 months, and that required documents are a passport with at least six months of validity, a passport-sized photo, a flight itinerary and hotel reservation details. Its e-visa step links to moi.gov.jo/EN/Pages/Visa_E_Applications."
         }
       ],
-      "lastVerified": "2026-09-14"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "china",
@@ -23113,7 +23113,7 @@ export default {
           "name": "Arrival Card Filling (入境卡填报)",
           "url": "https://s.nia.gov.cn/ArrivalCardFillingPC/",
           "agency": "National Immigration Administration (国家移民管理局)",
-          "lastVerified": "2026-09-05",
+          "lastVerified": "2026-10-05",
           "notes": "The online arrival card for foreign nationals, run by the NIA on the .gov.cn domain. Interface offers 13 languages including English. Free. The filing notice on the site lists 8 exemption categories, says transit travellers leaving the port (24-hour and 240-hour stays) may also file here, and the implementing notice confirms the card can be completed at the port. Selected controls and conditional branches were checked in the saved official bundle js/app.bc4b0fcf.js on 2026-09-05. This is not a completed end-to-end filing or a verification of every branch."
         },
         {
@@ -23121,7 +23121,7 @@ export default {
           "name": "Notice on implementing online arrival card filing for foreign nationals",
           "url": "https://losangeles.china-consulate.gov.cn/tzgg/202512/t20251202_11764464.htm",
           "agency": "Chinese Consulate General in Los Angeles",
-          "lastVerified": "2026-09-05",
+          "lastVerified": "2026-10-05",
           "notes": "Announces online filing from 2025-11-20. Lists the filing channels — the NIA website, the government service platform, the 'NIA 12367' app, WeChat and Alipay mini-programs, and scanning the arrival card QR code, and says the card can still be completed at the port of entry."
         },
         {
@@ -23129,11 +23129,11 @@ export default {
           "name": "NIA notice on look-alike arrival card filing sites charging fees",
           "url": "https://s.nia.gov.cn/mps/zcjd/202507/t20250750_1010.html",
           "agency": "National Immigration Administration",
-          "lastVerified": "2026-09-05",
+          "lastVerified": "2026-10-05",
           "notes": "Published 2025-12-02. States that offshore operators have been imitating the arrival card filing site and taking fees from travellers, and restates that the official filing carries no fee."
         }
       ],
-      "lastVerified": "2026-09-05"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "south-africa",
@@ -23166,7 +23166,7 @@ export default {
           "name": "SARS Customs Online Traveller Declaration",
           "url": "https://tools.sars.gov.za/sarsonlinequery/traveller",
           "agency": "South African Revenue Service",
-          "lastVerified": "2026-09-05",
+          "lastVerified": "2026-10-05",
           "notes": "主入口首屏提供 Full/Nil 与旅客资料，未提交或验证全部分支。"
         },
         {
@@ -23174,7 +23174,7 @@ export default {
           "name": "Customs Online Traveller Declaration: service and border instructions",
           "url": "https://www.sars.gov.za/travellerdeclaration/",
           "agency": "South African Revenue Service",
-          "lastVerified": "2026-09-05",
+          "lastVerified": "2026-10-05",
           "notes": "确认邮件可手机保存或打印；入境先 immigration 后 Customs，离境按 Customs 指示再 immigration。"
         },
         {
@@ -23182,7 +23182,7 @@ export default {
           "name": "FAQs for required traveller declarations from 1 July 2026",
           "url": "https://www.sars.gov.za/travellerdeclaration/faqs-for-the-required-online-traveller-declarations-from-1-july-2026/",
           "agency": "South African Revenue Service",
-          "lastVerified": "2026-09-05",
+          "lastVerified": "2026-10-05",
           "notes": "适用人群、纯过境、出发前24小时内、儿童、更改、有限纸表与货币规则。"
         },
         {
@@ -23190,7 +23190,7 @@ export default {
           "name": "R.7622 / GG54900: electronic traveller declaration rules",
           "url": "https://www.sars.gov.za/legal-lsec-ce-ra-2026-11-r7622-gg-54900-ra-under-ss-15-and-120-electronic-south-african-traveller-management-system-dar275-26-june-2026/",
           "agency": "South African Revenue Service",
-          "lastVerified": "2026-09-05",
+          "lastVerified": "2026-10-05",
           "notes": "2026-07-01生效。15.02 纯过境；15.04(a)(iv) 入境南非住所、离境目的地国家住所；15.04 联系条件；15.06 提交及更改。"
         },
         {
@@ -23198,7 +23198,7 @@ export default {
           "name": "SC-PA-01-12: SATMS Through SARS Website",
           "url": "https://www.sars.gov.za/wp-content/uploads/Ops/Guides/SC-PA-01-12-SATMS-Through-SARS-Website-External-Guide.pdf",
           "agency": "South African Revenue Service",
-          "lastVerified": "2026-09-05",
+          "lastVerified": "2026-10-05",
           "notes": "2026-07-01生效的40页指南，第6–16页用于准备资料。地址与条件资料以规则为准，截图不作为格式校验证据。"
         },
         {
@@ -23206,7 +23206,7 @@ export default {
           "name": "SARS notice confirming no online declaration fee",
           "url": "https://www.sars.gov.za/media-release/nearly-39-000-foreign-registered-vehicles-already-registered-as-sars-launches-the-process-from-1-june-2026/",
           "agency": "South African Revenue Service",
-          "lastVerified": "2026-09-05",
+          "lastVerified": "2026-10-05",
           "notes": "2026-06-01公告明确在线申报免费；仅取费用事实，不覆盖7月1日新规日期。"
         },
         {
@@ -23214,11 +23214,11 @@ export default {
           "name": "SC-PA-01-11: Traveller Processing",
           "url": "https://www.sars.gov.za/wp-content/uploads/Ops/Policies/SC-PA-01-11-Traveller-Processing-External-Policy.pdf",
           "agency": "South African Revenue Service",
-          "lastVerified": "2026-09-05",
+          "lastVerified": "2026-10-05",
           "notes": "2026-07-01生效；无货物也须申报，关税、VAT及相关担保另计。"
         }
       ],
-      "lastVerified": "2026-09-05"
+      "lastVerified": "2026-10-05"
     },
     {
       "slug": "nigeria",
@@ -23251,7 +23251,7 @@ export default {
           "name": "Nigeria Landing and Exit Card Portal",
           "url": "https://lecard.immigration.gov.ng/",
           "agency": "Nigeria Immigration Service",
-          "lastVerified": "2026-09-05",
+          "lastVerified": "2026-10-05",
           "notes": "官方主入口分别提供入境和出境业务，当前申请链接到登录页。公开说明列证件、姓名、生日、国籍、联系方式并要求下载打印。未登录或提交。"
         },
         {
@@ -23259,7 +23259,7 @@ export default {
           "name": "Landing and Exit Card FAQ",
           "url": "https://lecard.immigration.gov.ng/faq",
           "agency": "Nigeria Immigration Service",
-          "lastVerified": "2026-09-05",
+          "lastVerified": "2026-10-05",
           "notes": "面向外国旅客，卡片免费，纯过境不适用，逐人提交；已提交不能直接改，错误重提；成功后邮件与可下载卡。"
         },
         {
@@ -23267,7 +23267,7 @@ export default {
           "name": "NIS introduction to Landing and Exit Cards",
           "url": "https://immigration.gov.ng/lecard/",
           "agency": "Nigeria Immigration Service",
-          "lastVerified": "2026-09-05",
+          "lastVerified": "2026-10-05",
           "notes": "主站all passengers口径较专用FAQ更宽；公民、双国籍及特殊身份向NIS确认，不推断豁免。"
         },
         {
@@ -23275,7 +23275,7 @@ export default {
           "name": "Nigeria Immigration Service: Landing and Exit Cards",
           "url": "https://immigration.gov.ng/",
           "agency": "Nigeria Immigration Service",
-          "lastVerified": "2026-09-05",
+          "lastVerified": "2026-10-05",
           "notes": "Landing and Exit Cards小节说明2025-05-01启用；不挪用相邻其他业务的小时数。"
         },
         {
@@ -23291,7 +23291,7 @@ export default {
           "name": "Get your last Landing or Exit Card",
           "url": "https://lecard.immigration.gov.ng/get-last-card",
           "agency": "Nigeria Immigration Service",
-          "lastVerified": "2026-09-05",
+          "lastVerified": "2026-10-05",
           "notes": "找卡页要求护照号、签发国与生日；不把签发国移作已核验申报主字段。未提交查询。"
         },
         {
@@ -23299,11 +23299,11 @@ export default {
           "name": "Landing and Exit Card account registration",
           "url": "https://lecard.immigration.gov.ng/register-page",
           "agency": "Nigeria Immigration Service",
-          "lastVerified": "2026-09-05",
+          "lastVerified": "2026-10-05",
           "notes": "公开账户页要求姓名与护照一致，并列邮箱电话。未注册，不把账户控件总数当主表总数，不提供密码字段。"
         }
       ],
-      "lastVerified": "2026-09-05"
+      "lastVerified": "2026-10-05"
     }
   ],
   "rules": {

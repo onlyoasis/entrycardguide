@@ -7,7 +7,7 @@ country: "tanzania"
 weight: 20
 keywords: ["坦桑尼亞電子簽怎麼填", "坦桑尼亞簽證申請", "坦桑尼亞簽證照片要求"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="tanzania.start" >}}

@@ -18,7 +18,7 @@ faq:
   - q: "英國 ETA 有效期多久？"
     a: "有效期為 2 年或到綁定護照到期日，以先到者為準。有效期內可以多次赴英，每次通常最長停留 6 個月。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="uk.eta" >}}

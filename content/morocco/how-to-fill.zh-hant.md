@@ -7,7 +7,7 @@ country: "morocco"
 weight: 20
 keywords: ["摩洛哥電子簽怎麼填", "Accès Maroc 申請", "摩洛哥電子簽材料"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="morocco.evisa" >}}

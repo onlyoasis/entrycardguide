@@ -9,7 +9,7 @@ keywords: ["UK ETA 怎麼填", "英國 ETA 填寫", "UK ETA 護照掃描", "UK E
 layout: how-to-fill
 guide_title: "英國 ETA 填寫：家庭地址及其他欄位"
 walkthrough_first: true
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="uk.eta" >}}

@@ -2,7 +2,7 @@
 title: "新西蘭入境卡官網指南：NZTD 免費，NZeTA 另算"
 kicker: "所有入境新西蘭的人都要填免費的 NZTD。NZeTA 是另一項旅行授權。"
 description: "新西蘭入境卡中文指南：NZTD 官方網站、免費規則、NZeTA 多少錢和適用人群、18 個欄位及常見加價區間。"
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 每個入境新西蘭的人都要填寫 New Zealand Traveller Declaration，包括新西蘭公民、嬰兒和兒童。NZTD 不收填寫費或提交費。

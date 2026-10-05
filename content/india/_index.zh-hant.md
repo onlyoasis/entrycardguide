@@ -2,7 +2,7 @@
 title: "印度入境卡官網指南：e-Arrival Card 免費，e-Visa 另算"
 kicker: "印度 e-Arrival Card 免費。e-Visa 是另一項收費的旅行許可。"
 description: "印度入境指南：e-Arrival Card 官網、抵達前 72 小時規則、e-Visa 費用、15 個欄位和常見加價區間。"
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 外國旅客入境印度前要填免費的 e-Arrival Card，OCI 持有人也包括在內。提交時間是抵達前 72 小時內。持印度護照的人不用填。

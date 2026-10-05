@@ -2,7 +2,7 @@
 title: "馬來西亞 MDAC 官方網站、免費填寫和防中介指南"
 kicker: "關於馬來西亞數字入境卡（MDAC）你需要知道的一切，不必經手任何中介。"
 description: "馬來西亞 MDAC 中文指南：官方網址 imigresen-online.imi.gov.my、免費填寫、每個欄位怎麼填。"
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 馬來西亞數字入境卡（MDAC）是一份免費的電子表格，多數外國遊客自 2024 年 1 月起都必須填寫。它只在 `imigresen-online.imi.gov.my/mdac/main` 受理。

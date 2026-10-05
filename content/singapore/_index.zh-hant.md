@@ -2,7 +2,7 @@
 title: "新加坡 SGAC 官方網站、免費填寫和 ICA 入境卡指南"
 kicker: "關於新加坡入境卡（SGAC）你需要知道的一切，不必經手任何中介。"
 description: "新加坡 SGAC 中文指南：ICA 官方網址 eservices.ica.gov.sg、免費填寫、怎麼填、入境卡常見問題。"
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 新加坡入境卡是一份免費的抵達前申報。使用 ICA 官方服務，並核對本次行程的要求。

@@ -18,7 +18,7 @@ faq:
   - q: "Check-Mig 能代替哥倫比亞簽證嗎？"
     a: "不能。它只預載移民資料；需要簽證的旅客仍要另行取得簽證。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 ## 免費，而且不強制

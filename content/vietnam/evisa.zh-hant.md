@@ -24,7 +24,7 @@ faq:
   - q: "我已經付了中介超過 $25 美元，能退款嗎？"
     a: "如果中介確實給你提交了 evisa.gov.vn 的真 e-visa，你的簽證是有效的，無法向政府申請退款。但你可以聯繫發卡行，以'誤導性商家'提起 chargeback —— 說明官方費用是 $25 而你未被告知。60 天內成功率最高。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="vietnam.evisa" >}}

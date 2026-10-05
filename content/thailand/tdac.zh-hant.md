@@ -22,7 +22,7 @@ faq:
   - q: "有網站要收我 TDAC 的錢，它是官方嗎？"
     a: "不是。TDAC 在 tdac.immigration.go.th 上是免費的。2026 年 3 月，泰國移民局公開警告有非官方網站為免費的 TDAC 收費。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="thailand.tdac" >}}

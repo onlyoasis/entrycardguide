@@ -7,7 +7,7 @@ country: "ethiopia"
 weight: 20
 keywords: ["埃塞俄比亞電子簽怎麼填", "埃塞俄比亞簽證申請", "evisa.gov.et 申請"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="ethiopia.application" >}}

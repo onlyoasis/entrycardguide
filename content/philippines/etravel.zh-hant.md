@@ -14,7 +14,7 @@ faq:
   - q: "eTravel 是簽證嗎？"
     a: "不是。eTravel 是旅行申報。簽證或入境資格是另一件事。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="philippines.etravel" >}}

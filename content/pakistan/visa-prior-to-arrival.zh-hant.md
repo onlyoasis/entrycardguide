@@ -18,7 +18,7 @@ faq:
   - q: "可以停留多久？"
     a: "以獲批的 Visa Grant Notice 為準。當前通用資格頁沒有給所有護照路徑統一的旅遊停留天數。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 ## 申請前先判斷路徑

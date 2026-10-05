@@ -7,7 +7,7 @@ country: "qatar"
 weight: 20
 keywords: ["Hayya 簽證怎麼申請", "卡塔爾 A1 簽證", "Hayya 申請材料", "hayya.qa"]
 layout: how-to-fill
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="qatar.visa_guide" >}}

@@ -2,7 +2,7 @@
 title: "菲律賓 eTravel 官方網站、免費填寫和防中介指南"
 kicker: "菲律賓 eTravel 官方連結、免費填寫方式，以及如何避開付費仿冒站。"
 description: "菲律賓 eTravel 中文指南：官方網址 etravel.gov.ph、免費申報、每個欄位怎麼填。"
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 菲律賓 eTravel 是官方電子旅行申報，網址是 `etravel.gov.ph`。官方首頁明確寫著 eTravel 免費。

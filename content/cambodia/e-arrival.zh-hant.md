@@ -14,7 +14,7 @@ faq:
   - q: "e-Arrival 和簽證是同一件事嗎？"
     a: "不是。入境申報、簽證狀態和簽證付款是不同檢查。"
 layout: country-form
-lastmod: 2026-09-14
+lastmod: 2026-10-05
 ---
 
 {{< official-link site="cambodia.earrival" >}}
