@@ -123,6 +123,10 @@ done
 
 ## 2. 竞争对手情报(可立刻用于内容)
 
+> ⛔ **本节已停用(2026-09-05 标注)。** 失效原因:本节产出全部用于增补已于 2026-08-10 删除的
+> `is-ivisa-official` 中介名单页面,且内容点名第三方公司,与 CLAUDE.md 现行红线
+> (不点名任何第三方公司/中介域名)冲突。**本节内容不得用于任何对外沟通**,仅按原样保留作历史记录。
+
 **iVisa 已知问题(可用为站内 "is-ivisa-official.md" 增补数据):**
 
 - 一个具体案例:iVisa **收 $128.99 卖免费的 Thai TDAC**(Trustpilot 投诉原文)。站点当前用"$20-$90"范围,可加这个最高值案例。
@@ -139,7 +143,7 @@ done
 
 ## 3. 政府/大使馆 consumer warning 页(Tier 2.3 outreach 名单,已备好)
 
-按 outreach 优先级排序。这些页面**已经在警告假站**,带上"我们维护一份带 first_observed 日期 + DNS 证据的完整名单"邮件去:
+按 outreach 优先级排序。这些页面**已经在警告假站**,带上"可交叉核对的官方网址 + 字段规则数据集"的邮件去(模板已于 2026-09-05 按新卖点重写,见下):
 
 | 目标 | URL | 联系路径 |
 |---|---|---|
@@ -158,23 +162,25 @@ done
 | Italian Embassy Kuala Lumpur — MDAC | [ambkualalumpur.esteri.it/en/news/dall_ambasciata/2023/12/mandatory-malaysia-digital-arrival-card-mdac-for-travelers-entering-malaysia-2/](https://ambkualalumpur.esteri.it/en/news/dall_ambasciata/2023/12/mandatory-malaysia-digital-arrival-card-mdac-for-travelers-entering-malaysia-2/) | 第三国大使馆引用源 |
 | Norway Embassy Malaysia — MDAC | [norway.no/en/malaysia/norway-malaysia/news-events/malaysia-digital-arrival-card-required-for-foreign-visitors/](https://www.norway.no/en/malaysia/norway-malaysia/news-events/malaysia-digital-arrival-card-required-for-foreign-visitors/) | 同上 |
 
-**邮件模板**(给 Embassy ACS 用):
+**邮件模板**(给 Embassy ACS 用;2026-09-05 重写,旧版卖点「点名的诈骗域名数据集」已随 2026-08-10 的移除决定失效):
 
-> Subject: Auditable scam-domain dataset for your TDAC/MDAC consumer warning page
+> Subject: Cross-checkable official-URL and field-rule dataset for your TDAC/MDAC consumer warning page
 >
 > Dear ACS [city],
 >
-> I run entrycardguide.com, an open-source guide to digital arrival cards. Your scam alert page already warns travelers about fake TDAC sites, which is exactly the problem we track.
+> I run entrycardguide.com, an open-source guide to free government arrival cards. Your scam alert page already warns travelers about fake TDAC sites, which is exactly the problem we work on.
 >
-> We maintain a public GitHub repository of named scam domains with `first_observed` dates, DNS audit evidence, and the fee charged. The data is verifiable against the live sites and updated monthly.
+> We publish a public, version-controlled dataset covering 50 countries: the official government URL for every arrival card — each entry carries the issuing agency and a last_verified date — plus 498 field-level rules captured from the official forms themselves (accepted formats, character limits, and the exact error text the official site returns). Every claim is cross-checkable against the live government pages, and every change is recorded in a per-country public changelog.
 >
-> Full dataset: github.com/onlyoasis/entrycardguide/blob/main/data/official_urls/thailand.toml
+> Full dataset: github.com/onlyoasis/entrycardguide/tree/main/data
 >
 > Two ways this might be useful:
-> 1. Cross-check the domains you've already listed against ours
-> 2. Cite our dataset on the warning page as an evergreen reference (no advertising, all anti-scam)
+> 1. Cross-check the official URLs you've already listed against ours
+> 2. Cite the dataset on the warning page as an evergreen reference (no advertising, no fees)
 >
-> Happy to discuss. The site has no fees and no commercial relationship with any of the resellers it lists.
+> For context on the paid-copy problem: Thailand's Immigration Bureau said on 2026-03-30 that at least 10% of foreign arrivals had used unofficial TDAC sites charging US$20–90 for a form that is free.
+>
+> Happy to discuss. The site has no fees and no commercial relationship with any entry-card reseller.
 >
 > Best,
 > [Maintainer name]
@@ -209,12 +215,11 @@ done
 | Indonesia e-CD | (待查) | — | — |
 | 泰国数字入境卡(中文 wiki) | (待查 zh.wikipedia.org/wiki/泰国数字入境卡) | — | — |
 
-**编辑策略(避免被回滚):**
+**编辑策略(避免被回滚;2026-09-05 更新:原第 2 步「用 `<ref>` 引用本站数据集作来源」已删——它指向的数据集已不存在):**
 
 1. **先修事实**:每个条目都有"reseller 加价"现实,但 Wikipedia 条目很可能只写官方流程没写诈骗问题。在 "Issues" 或 "Reception" 段增加官方政府警告引用(Royal Thai Immigration Bureau 2026-03 公开数据)。
-2. **再加 reference**:用 `<ref>` 引用 entrycardguide 的具体 data 文件 URL(不是首页)作为 "scam domain catalog" 来源。
-3. **External links 段**:只加官方政府 URL + entrycardguide 的 country hub 页(`/thailand/`)。
-4. **账号要求:** Wikipedia 要 autoconfirmed 账号(4 天龄 + 10 次有效编辑)才能编辑半保护页。新号要先做 10 次无关编辑(改 typo、加 reference)养号。
+2. **External links 段**:只加官方政府 URL + entrycardguide 的 country hub 页(`/thailand/`)。正文确需引用本站作来源时,引用官方 URL 目录页 `/official-links/`(每条官方网址带 last_verified 日期),不要引用具体 data 文件。
+3. **账号要求:** Wikipedia 要 autoconfirmed 账号(4 天龄 + 10 次有效编辑)才能编辑半保护页。新号要先做 10 次无关编辑(改 typo、加 reference)养号。
 
 **待用户决定:** 中文 wiki 是否值得做?中文 wiki 流量小,但权重高,且不易被回滚(中文编辑社区更宽容)。
 
@@ -227,18 +232,18 @@ done
 - **流程:** 邮箱注册 → 邮箱验证 → 选 source 类别。
 - **选哪些类别:** Travel(直接相关)、Business & Finance(消费者保护交叉)、Lifestyle & Entertainment(travel 子类)。
 - **邮件频率:** 周一到周五,每天 3 次(上午/下午/晚上),全是 journalist 在求 source。
-- **Profile bio 模板:**
+- **Profile bio 模板**(2026-09-05 重写):
 
-> Maintainer of entrycardguide.com — open-source, auditable guide to free government arrival cards across 7 countries. Tracks reseller scam domains with first-observed dates and DNS evidence. Available for sources on: anti-fraud, travel consumer protection, visa middlemen, chargeback strategies, open-data publishing.
+> Maintainer of entrycardguide.com — an open-source guide to the free government arrival cards of 50 countries. We publish every official form URL with a last_verified date, 498 field-level rules captured from the official forms, and a per-country public changelog. Available for sources on: travel consumer protection, official vs. third-party entry forms, visa middlemen pricing, open-data publishing.
 
-**回 query 模板:**
+**回 query 模板**(2026-09-05 重写):
 
 > Hi [reporter name], I'm [your name], maintainer of entrycardguide.com.
 >
 > Re: your query on [topic]:
 > [Specific evidence + 2-3 sentence answer]
 >
-> If useful, our underlying scam domain dataset is here (CC-licensed, free to cite): [URL]
+> If useful, our public dataset of official government entry-form URLs (50 countries, each with a last_verified date) and 498 field rules is here (free to cite): [URL]
 >
 > Happy to provide additional examples or do a brief call.
 
@@ -334,15 +339,28 @@ done
 
 **机会:** 用 maintainer 账号(已养 100+ karma)在以下 subreddit **主动开帖**(不只是回答):
 
-- `r/scams`(800k)— "PSA: Thai TDAC is free, here's the named reseller list" 这种 PSA 帖子高赞概率大
+- `r/scams`(800k)— "PSA: Thai TDAC is free, here's the official link + the fields people get wrong" 这种 PSA 帖子高赞概率大(2026-09-05 改:只给官方 URL 和字段规则,不再提任何名单)
 - `r/Thailand`(380k)— 同上
 - `r/solotravel`(2.7M)— 通用反中介
-- `r/digitalnomad`(2.1M)— 7 国混合
+- `r/digitalnomad`(2.1M)— 50 国混合
 - `r/IWantOut`(1.1M)— 长签证混淆
+
+### 回帖示范(2026-09-05 新增)
+
+每条回复同一边界:**回官方网址 + 字段怎么填,不回"这些是骗子"**。以泰国 TDAC 帖为例(换国家时替换官方 URL 和字段约束):
+
+> I maintain entrycardguide.com, a free open-source guide to government arrival cards — disclosing that up front. The official TDAC form is at https://tdac.immigration.go.th and costs nothing; Thailand's Immigration Bureau said on 2026-03-30 that at least 10% of foreign arrivals used unofficial sites charging US$20–90. If your submission bounces, check the strict fields: passport number is 6–9 letters/digits starting with a letter, and names are Latin-only, max 40 characters each.
+
+字段约束的数据源是 `data/rules/{country}.json`(共 498 条),官方 URL 在 `data/official_urls/{country}.toml`(共 50 国,每条带 last_verified 日期)。说「有站点收费 $20–90」有据可查;说「某个具体域名是骗子」没有——这条区分对论坛回帖同样生效。
 
 ---
 
 ## 9. Bing/百度索引现状自检
+
+> ⛔ **本节已停用(2026-09-05 标注)。** 失效原因:结论建立在「Google 零索引」前提上,该前提已于
+> 2026-08-09 被证伪(`site:` 返回 6+ 页、GSC 已索引 156 页);Bing 也已于 2026-07-23 接入
+> (`bing/organic` 1 → 45 会话)。索引核查改用 `npm run check:index-status`。
+> **本节内容不得用于任何对外沟通**,仅按原样保留作历史记录。
 
 - **Google:** `site:entrycardguide.com` 零结果 ⚠️(见顶部红警)
 - **Bing:** 未查(需用户登录 Bing Webmaster Tools)
@@ -379,6 +397,10 @@ done
 ---
 
 ## 🚧 待核验的中介域名候选(**不可直接补进** `data/official_urls/*.toml`)
+
+> ⛔ **本节已停用(2026-09-05 标注)。** 失效原因:本节服务的 `[[scam_sites]]` 渲染已于 2026-08-10
+> 移除,站点不再发布中介/仿冒站名单,新域名不再入库(TOML 里的既有数据按 CLAUDE.md 保留为内部
+> 记录)。**本节内容不得用于任何对外沟通**,仅按原样保留作历史记录。
 
 > **2026-08-09 更正:本节原标题是「新发现的诈骗站(可立刻补)」,那是错的。**
 >
