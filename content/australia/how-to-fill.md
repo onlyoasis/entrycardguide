@@ -3,7 +3,7 @@ title: "Australian ETA App Steps and eVisitor 651 Field Guide (2026)"
 kicker: "Nine eVisitor 651 fields with Home Affairs' own MRZ and dd/mm/yy rules, plus the six App-only steps for ETA 601."
 description: "Australia field guide: eVisitor 651 field-by-field rules, the official Home Affairs lodgement error messages, and the six AustralianETA App steps for ETA 601."
 date: 2026-07-14
-lastmod: 2026-07-24
+lastmod: 2026-10-12
 country: "australia"
 weight: 20
 layout: how-to-fill

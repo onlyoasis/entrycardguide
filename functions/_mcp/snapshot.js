@@ -20117,9 +20117,9 @@ export default {
           "name": "All Indonesia arrival declaration (includes e-CD customs declaration)",
           "url": "https://allindonesia.imigrasi.go.id",
           "agency": "Direktorat Jenderal Imigrasi / Direktorat Jenderal Bea dan Cukai",
-          "lastVerified": "2026-06-17",
+          "lastVerified": "2026-10-12",
           "archiveUrl": "https://web.archive.org/web/2026/https://allindonesia.imigrasi.go.id",
-          "notes": "Reserved under .go.id. Current unified arrival portal for the Indonesia arrival declaration, including the e-CD customs declaration. Free."
+          "notes": "Reserved under .go.id. Current unified arrival portal for the Indonesia arrival declaration, including the e-CD customs declaration. Free. Re-checked 2026-10-12 in a browser: the portal is live, its help centre calls All Indonesia the official platform of the Directorate General of Immigration, and the foreign-visitor arrival card runs in 4 steps (personal information, trip details, transport and address, declaration) with no payment step."
         },
         {
           "key": "evoa",
@@ -20145,7 +20145,7 @@ export default {
           "notes": "Legacy standalone e-CD portal still resolves. The current traveler-facing entry point is All Indonesia."
         }
       ],
-      "lastVerified": "2026-10-05"
+      "lastVerified": "2026-10-12"
     },
     {
       "slug": "malaysia",
@@ -20409,9 +20409,9 @@ export default {
           "name": "Dominican Republic E-Ticket (Electronic Entry/Exit Ticket)",
           "url": "https://eticket.migracion.gob.do",
           "agency": "Dirección General de Migración (DGM)",
-          "lastVerified": "2026-04-24",
+          "lastVerified": "2026-10-12",
           "archiveUrl": "https://web.archive.org/web/2026/https://eticket.migracion.gob.do",
-          "notes": "Reserved under .gob.do — only Dominican government entities can register this domain suffix. Required for all arrivals and departures since 2021."
+          "notes": "Reserved under .gob.do — only Dominican government entities can register this domain suffix. Required for all arrivals and departures since 2021. 2026-10-12: the portal sits behind a Cloudflare human check and was not loaded; the DGM service page (service_requirements) read the same day lists the E-Ticket as 'Sin costo' and names eticket.migracion.gob.do as the filing URL."
         },
         {
           "key": "dgm_home",
@@ -20433,10 +20433,10 @@ export default {
           "name": "E-Ticket service requirements",
           "url": "https://migracion.gob.do/servicio/solicitud-de-e-ticket-entrada-y-salida-de-pasajeros/",
           "agency": "Dirección General de Migración",
-          "lastVerified": "2026-09-14"
+          "lastVerified": "2026-10-12"
         }
       ],
-      "lastVerified": "2026-10-05"
+      "lastVerified": "2026-10-12"
     },
     {
       "slug": "mexico",
@@ -20920,9 +20920,9 @@ export default {
           "name": "Electronic Travel Authority (subclass 601)",
           "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601",
           "agency": "Australian Department of Home Affairs",
-          "lastVerified": "2026-07-24",
+          "lastVerified": "2026-10-12",
           "archiveUrl": "https://web.archive.org/web/2026/https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601",
-          "notes": "App-only: ETA 601 applications must be made in the AustralianETA App; there is no official web form for ETA 601. Re-verified 2026-07-24 against this Home Affairs page, which states 'All ETA-eligible passport holders must apply for an ETA using the Australian ETA app' and 'There is a service charge of AUD20 to use the Australian ETA app'. Originally verified 2026-07-14 against this page and https://immi.homeaffairs.gov.au/supporting/files/australian-eta-app-industry-guidance.pdf. The app scans the passport data page, reads the ePassport chip with NFC, takes a live photo, collects personal and ETA answers, and submits payment. There is no Visa Application Charge, but Home Affairs charges an AUD $20 App application service fee. An ETA normally permits multiple entries during 12 months from grant, or until the linked passport expires if sooner, with stays of up to 3 months per visit. Most applicants receive a result immediately, but some applications require more information or longer processing. Home Affairs publishes no application-completion time; the ~15 minute site estimate below is a planning estimate for working through this guide, not an official promise."
+          "notes": "App-only: ETA 601 applications must be made in the AustralianETA App; there is no official web form for ETA 601. Re-verified 2026-07-24 against this Home Affairs page, which states 'All ETA-eligible passport holders must apply for an ETA using the Australian ETA app' and 'There is a service charge of AUD20 to use the Australian ETA app'. Originally verified 2026-07-14 against this page and https://immi.homeaffairs.gov.au/supporting/files/australian-eta-app-industry-guidance.pdf. The app scans the passport data page, reads the ePassport chip with NFC, takes a live photo, collects personal and ETA answers, and submits payment. There is no Visa Application Charge, but Home Affairs charges an AUD $20 App application service fee. An ETA normally permits multiple entries during 12 months from grant, or until the linked passport expires if sooner, with stays of up to 3 months per visit. Most applicants receive a result immediately, but some applications require more information or longer processing. Home Affairs publishes no application-completion time; the ~15 minute site estimate below is a planning estimate for working through this guide, not an official promise. Re-verified 2026-10-12 in a desktop browser (the automated check gets HTTP 403): the page still says ETA-eligible passport holders must use the Australian ETA App and lists a service charge of AUD20 with no other charge."
         },
         {
           "key": "eta_app",
@@ -20937,12 +20937,12 @@ export default {
           "name": "eVisitor (subclass 651)",
           "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/evisitor-651",
           "agency": "Australian Department of Home Affairs",
-          "lastVerified": "2026-07-24",
+          "lastVerified": "2026-10-12",
           "archiveUrl": "https://web.archive.org/web/2026/https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/evisitor-651",
-          "notes": "Re-verified 2026-07-24; the Step by step tab's 'Provide accurate information' panel is the public, login-free source for the dd/mm/yy date format and the name-autocorrect warning used in data/rules/australia.json. The application itself opens at https://online.immi.gov.au/elp/app?action=new&formId=TV-AP-651, which now redirects to the ImmiAccount login, so no field maxlengths or regexes are publicly observable. Originally verified 2026-07-14. eVisitor 651 is free and is applied for online through Home Affairs and ImmiAccount, not through the AustralianETA App. It is available to citizens holding eligible European passports. It permits multiple entries during 12 months from grant, with stays of up to 3 months per visit. Applicants must be outside Australia when they apply and when Home Affairs decides the application. Several European passports are eligible for both ETA 601 and eVisitor 651; eligible European travellers can use the free eVisitor route."
+          "notes": "Re-verified 2026-07-24; the Step by step tab's 'Provide accurate information' panel is the public, login-free source for the dd/mm/yy date format and the name-autocorrect warning used in data/rules/australia.json. The application itself opens at https://online.immi.gov.au/elp/app?action=new&formId=TV-AP-651, which now redirects to the ImmiAccount login, so no field maxlengths or regexes are publicly observable. Originally verified 2026-07-14. eVisitor 651 is free and is applied for online through Home Affairs and ImmiAccount, not through the AustralianETA App. It is available to citizens holding eligible European passports. It permits multiple entries during 12 months from grant, with stays of up to 3 months per visit. Applicants must be outside Australia when they apply and when Home Affairs decides the application. Several European passports are eligible for both ETA 601 and eVisitor 651; eligible European travellers can use the free eVisitor route. Re-verified 2026-10-12 in a desktop browser (the automated check gets HTTP 403): the page still lists the cost as Free and says applicants must apply from outside Australia."
         }
       ],
-      "lastVerified": "2026-07-24"
+      "lastVerified": "2026-10-12"
     },
     {
       "slug": "turkey",

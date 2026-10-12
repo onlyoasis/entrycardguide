@@ -3,7 +3,7 @@ title: "印尼 All Indonesia / e-CD 2026 完整指南：官方网址、免费填
 kicker: "印尼 All Indonesia 入境申报包含免费的 e-CD 海关记录。这里是官方网址、所有字段、以及如何分辨真假。"
 description: "免费、独立的印尼 All Indonesia 入境申报中文指南。官方网址 allindonesia.imigrasi.go.id，每个字段逐项讲解，巴厘岛/雅加达入境必填。"
 date: 2026-04-26
-lastmod: 2026-06-17
+lastmod: 2026-10-12
 country: "indonesia"
 weight: 10
 keywords: ["印尼海关申报", "印尼 e-CD", "All Indonesia", "巴厘岛海关表", "印尼入境申报", "印尼海关在线"]
@@ -57,7 +57,7 @@ Google 搜 *"巴厘岛海关表"* 或 *"印尼入境表"*，会看到付费广�
 
 ## 官方表单到底问哪些字段
 
-e-CD 大约 9 个字段，分布在 3 部分：旅客身份、行程信息、海关申报。
+当前面向外国旅客的 All Indonesia 入境卡分 4 步：个人信息、行程信息、交通方式与地址、申报（含海关问题）（2026 年 10 月 12 日核对）。
 
 不需要上传照片。
 

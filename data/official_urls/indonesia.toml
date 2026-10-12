@@ -6,9 +6,9 @@
 url = "https://allindonesia.imigrasi.go.id"
 name = "All Indonesia arrival declaration (includes e-CD customs declaration)"
 agency = "Direktorat Jenderal Imigrasi / Direktorat Jenderal Bea dan Cukai"
-last_verified = "2026-06-17"
+last_verified = "2026-10-12"
 archive_url = "https://web.archive.org/web/2026/https://allindonesia.imigrasi.go.id"
-notes = "Reserved under .go.id. Current unified arrival portal for the Indonesia arrival declaration, including the e-CD customs declaration. Free."
+notes = "Reserved under .go.id. Current unified arrival portal for the Indonesia arrival declaration, including the e-CD customs declaration. Free. Re-checked 2026-10-12 in a browser: the portal is live, its help centre calls All Indonesia the official platform of the Directorate General of Immigration, and the foreign-visitor arrival card runs in 4 steps (personal information, trip details, transport and address, declaration) with no payment step."
 
 [evoa]
 url = "https://evisa.imigrasi.go.id"

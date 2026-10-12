@@ -3,7 +3,7 @@ title: "澳大利亚 ETA App 六步流程 + eVisitor 651 字段指南（2026）"
 kicker: "eVisitor 651 的 9 个字段，附 Home Affairs 原文的机读区规则和 dd/mm/yy 格式；另加 ETA 601 的六步 App 流程。"
 description: "澳大利亚字段指南：eVisitor 651 逐字段规则、Home Affairs 官方递交报错原文，以及 ETA 601 的六步 AustralianETA App 流程。"
 date: 2026-07-14
-lastmod: 2026-07-24
+lastmod: 2026-10-12
 country: "australia"
 weight: 20
 layout: how-to-fill

@@ -3,7 +3,7 @@ title: "Australian ETA App Official: Is Australia ETA Free? (2026)"
 kicker: "There is no official ETA 601 web form. The only official application channel is the AustralianETA App."
 description: "Is Australia ETA free? ETA 601 has no visa application charge, but the official App charges AUD $20. Eligible European passports can use free eVisitor 651."
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-10-12
 country: "australia"
 weight: 10
 keywords: ["australian eta app official", "is australia eta free", "Australia ETA official website", "Australia ETA fee", "eVisitor 651 free", "AustralianETA App"]

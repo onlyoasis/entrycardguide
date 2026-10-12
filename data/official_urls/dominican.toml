@@ -6,9 +6,9 @@
 url = "https://eticket.migracion.gob.do"
 name = "Dominican Republic E-Ticket (Electronic Entry/Exit Ticket)"
 agency = "Dirección General de Migración (DGM)"
-last_verified = "2026-04-24"
+last_verified = "2026-10-12"
 archive_url = "https://web.archive.org/web/2026/https://eticket.migracion.gob.do"
-notes = "Reserved under .gob.do — only Dominican government entities can register this domain suffix. Required for all arrivals and departures since 2021."
+notes = "Reserved under .gob.do — only Dominican government entities can register this domain suffix. Required for all arrivals and departures since 2021. 2026-10-12: the portal sits behind a Cloudflare human check and was not loaded; the DGM service page (service_requirements) read the same day lists the E-Ticket as 'Sin costo' and names eticket.migracion.gob.do as the filing URL."
 
 [dgm_home]
 url = "https://www.migracion.gob.do"
@@ -141,4 +141,4 @@ evidence = "Commercial visa middleman charging fees for the free E-Ticket."
 url = "https://migracion.gob.do/servicio/solicitud-de-e-ticket-entrada-y-salida-de-pasajeros/"
 name = "E-Ticket service requirements"
 agency = "Dirección General de Migración"
-last_verified = "2026-09-14"
+last_verified = "2026-10-12"
