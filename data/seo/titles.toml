@@ -66,7 +66,7 @@ title = "Ethiopia eVisa Guide: Official Portal and Fees"
 title = "Georgia e-Visa Guide: Visa-Free Check and Official Portal"
 
 [indonesia]
-title = "Indonesia Arrival Card and e-CD Customs Form: Official, Free"
+title = "Indonesia Entry Forms: Arrival Card, e-CD and e-VOA Guide"
 
 [israel]
 title = "Israel ETA-IL Guide: Official Site and Who Needs It"
@@ -169,6 +169,19 @@ title_zh_hant = "烏茲別克斯坦電子簽指南：免簽核查與官方入口
 
 [vietnam]
 title = "Vietnam e-Visa Guide: Official Site and Government Fee"
+
+# ---- Form pages whose own title runs far past the SERP width ----
+
+["indonesia/e-cd"]
+title = "Indonesia Arrival Card (All Indonesia / e-CD): Official Site, Free"
+title_zh = "印尼 All Indonesia / e-CD 入境卡：官方网址、免费填写（2026）"
+title_zh_hant = "印尼 All Indonesia / e-CD 入境卡：官方網址、免費填寫（2026）"
+
+["pakistan/visa-prior-to-arrival"]
+title = "Pakistan Visa Prior to Arrival: Free Application and Eligibility"
+
+["myanmar/tourist-evisa"]
+title = "Myanmar Tourist eVisa: Official Site, Fee and Entry Points (2026)"
 
 # ---- how-to-fill pages ranking 6-11 with low CTR (GSC 2026-07-12..10-09) ----
 # Titles lead with the field people search for; descriptions answer it first.

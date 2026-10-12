@@ -23,7 +23,14 @@
        per-page suffix it doubled the brand and pushed most zh titles past
        the SERP width, so inner pages use the shorter title_brand param. */ -}}
 {{- $brand := .Site.Params.title_brand | default .Site.Title -}}
-<title>{{ if .IsHome }}{{ if $isCn }}{{ .Title }} · {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}{{ else }}{{ $seoTitle }} · {{ $brand }}{{ end }}</title>
+{{- /* Append the brand only while the whole title stays within ~65 display
+       columns (CJK and full-width punctuation count as 2). Longer titles keep
+       their keywords instead; Google shows the site name separately. */ -}}
+{{- $wideRE := "[\\p{Han}\\x{3000}-\\x{303F}\\x{FF00}-\\x{FFEF}]" -}}
+{{- $width := add (strings.RuneCount $seoTitle) (len (findRE $wideRE $seoTitle)) -}}
+{{- $brandWidth := add 3 (add (strings.RuneCount $brand) (len (findRE $wideRE $brand))) -}}
+{{- $fullTitle := cond (le (add $width $brandWidth) 65) (printf "%s · %s" $seoTitle $brand) $seoTitle -}}
+<title>{{ if .IsHome }}{{ if $isCn }}{{ .Title }} · {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}{{ else }}{{ $fullTitle }}{{ end }}</title>
 
 {{- if hugo.IsProduction }}
 {{- with .Site.Params.analytics.ga4.measurement.id }}
