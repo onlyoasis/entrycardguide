@@ -6,7 +6,7 @@
 url = "https://twac.immigration.gov.tw/"
 name = "Taiwan Arrival Card (TWAC)"
 agency = "National Immigration Agency, Ministry of the Interior"
-last_verified = "2026-10-05"
+last_verified = "2026-10-12"
 archive_url = "https://web.archive.org/web/2026/https://twac.immigration.gov.tw/"
 notes = "Read 2026-08-30. The current online arrival card, on a government .gov.tw host. The homepage states who submits: foreign nationals without an Alien Resident Certificate, Resident Visa or Diplomatic ID; specified Mainland, Hong Kong and Macao permit holders; and nationals without household registration who do not hold Taiwan-area residence certificates. The older niaspeedy.immigration.gov.tw address is outdated."
 
@@ -14,7 +14,7 @@ notes = "Read 2026-08-30. The current online arrival card, on a government .gov.
 url = "https://www.immigration.gov.tw/5382/5385/7229/7238/415735"
 name = "TWAC submission window"
 agency = "National Immigration Agency, Ministry of the Interior"
-last_verified = "2026-10-05"
+last_verified = "2026-10-12"
 archive_url = "https://web.archive.org/web/2026/https://www.immigration.gov.tw/5382/5385/7229/7238/415735"
 notes = "Read 2026-08-30. States the current submission window: within 7 days before arrival, extended in July 2026. Guides written against the earlier, shorter window are out of date."
 
@@ -22,7 +22,7 @@ notes = "Read 2026-08-30. States the current submission window: within 7 days be
 url = "https://www.immigration.gov.tw/5382/5385/7445/392097/392128/cp_news"
 name = "Official notice: the arrival card is free"
 agency = "National Immigration Agency, Ministry of the Interior"
-last_verified = "2026-10-05"
+last_verified = "2026-10-12"
 archive_url = "https://web.archive.org/web/2026/https://www.immigration.gov.tw/5382/5385/7445/392097/392128/cp_news"
 notes = "Read 2026-08-30. Agency notice confirming that the arrival card is submitted free of charge through the official channel. Any charge for this form comes from somewhere other than the agency."
 
@@ -30,7 +30,7 @@ notes = "Read 2026-08-30. Agency notice confirming that the arrival card is subm
 url = "https://www.immigration.gov.tw/5475/5478/141457/142068/398041"
 name = "Online arrival card launch and eligibility"
 agency = "National Immigration Agency, Ministry of the Interior"
-last_verified = "2026-10-05"
+last_verified = "2026-10-12"
 archive_url = "https://web.archive.org/web/2026/https://www.immigration.gov.tw/5475/5478/141457/142068/398041"
 notes = "Read 2026-08-30. English-language announcement covering the switch from paper cards to the online-only TWAC from 1 October 2025, and who is eligible to submit."
 

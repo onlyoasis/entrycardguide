@@ -7,7 +7,7 @@ country: "japan"
 weight: 20
 keywords: ["Visit Japan Web 怎麼填", "Visit Japan Web 欄位", "日本海關 QR Code"]
 layout: how-to-fill
-lastmod: 2026-10-05
+lastmod: 2026-10-12
 ---
 
 {{< official-link site="japan.vjw" >}}
