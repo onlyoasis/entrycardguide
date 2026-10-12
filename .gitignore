@@ -55,3 +55,6 @@ data-exports/
 /mcp-provision.json
 
 /release-live.json
+
+# Local SEO analysis cache
+.seo-cache/
