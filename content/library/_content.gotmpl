@@ -1,10 +1,34 @@
 {{ .EnableAllLanguages }}
 {{ $library := partial "library-data.html" . }}
-{{ $field := cond (eq .Site.Language.Lang "en") "name_en" (cond (eq .Site.Language.Lang "zh-hant") "name_zh_hant" "name_zh") }}
+{{ $lang := .Site.Language.Lang }}
+{{ $field := cond (eq $lang "en") "name_en" (cond (eq $lang "zh-hant") "name_zh_hant" "name_zh") }}
+{{ $suffix := cond (eq $lang "en") "en" (cond (eq $lang "zh-hant") "zh_hant" "zh") }}
+{{ $labels := index hugo.Data.library_ui $lang }}
+{{ $typeOrder := slice "arrival_card" "travel_authorization" "visa" "health_declaration" "customs_declaration" }}
 {{ range $library.jurisdictions }}
   {{ $record := index $library.byId .id }}
   {{ if not $record }}{{ errorf "Public destination %s lacks a public record" .id }}{{ end }}
-  {{ $title := printf "%s (%s)" (index . $field) .id }}
+  {{ $name := index . $field }}
+  {{ $title := printf "%s (%s)" $name .id }}
   {{ $date := time.AsTime (printf "%sT00:00:00+09:00" $record.researched_at) }}
-  {{ $.AddPage (dict "kind" "page" "path" (lower .id) "title" $title "params" (dict "iso" .id) "dates" (dict "date" $date "lastmod" $date "publishDate" $date)) }}
+  {{- /* Search title and description come from the published procedures only.
+         A destination with nothing published stays reachable from the
+         directory but is kept out of the index: an empty page cannot answer
+         the query it would rank for. */ -}}
+  {{ $types := slice }}
+  {{ range $typeOrder }}{{ $t := . }}{{ range $record.procedures }}{{ if and (eq .type $t) (not (in $types $t)) }}{{ $types = $types | append $t }}{{ end }}{{ end }}{{ end }}
+  {{ $typeNames := slice }}
+  {{ range $types }}{{ $typeNames = $typeNames | append (lower (index $labels .)) }}{{ end }}
+  {{ if ne $lang "en" }}{{ $typeNames = slice }}{{ range $types }}{{ $typeNames = $typeNames | append (index $labels .) }}{{ end }}{{ end }}
+  {{ $procNames := slice }}
+  {{ range $record.procedures }}{{ $procNames = $procNames | append (index . (printf "name_%s" $suffix)) }}{{ end }}
+  {{ $params := dict "iso" .id }}
+  {{ $sitemap := dict }}
+  {{ if $record.procedures }}
+    {{ $params = merge $params (dict "seo_title" (printf $labels.seo_title $name (delimit $typeNames $labels.and)) "seo_description" (printf $labels.seo_desc (len $record.procedures) $name (delimit $procNames (cond (eq $lang "en") "; " "；")))) }}
+  {{ else }}
+    {{ $params = merge $params (dict "seo_title" (printf $labels.seo_title_empty $name) "seo_description" (printf $labels.seo_desc_empty $name) "noindex" true) }}
+    {{ $sitemap = dict "disable" true }}
+  {{ end }}
+  {{ $.AddPage (dict "kind" "page" "path" (lower .id) "title" $title "params" $params "sitemap" $sitemap "dates" (dict "date" $date "lastmod" $date "publishDate" $date)) }}
 {{ end }}

@@ -1,10 +1,24 @@
 /* Library tables remain usable without JavaScript. All colors use the existing palette. */
 @layer components {
-  .library-scroll { @apply overflow-x-auto border-y border-rule my-md; }
-  .library-table { @apply w-full text-small; min-width: 44rem; border-collapse: collapse; }
-  .library-table th, .library-table td { @apply text-left px-3 py-3 border-b border-rule; }
-  .library-table th { @apply font-semibold; }
+  .library-scroll { @apply border-y border-rule my-md; }
+  .library-table { @apply w-full text-small; border-collapse: collapse; }
+  .library-table th, .library-table td { @apply text-left px-3 py-3 border-b border-rule align-top; }
+  .library-table thead th { @apply font-mono text-meta uppercase text-muted font-normal; }
+  .library-table tbody th { @apply font-semibold; }
   .library-table [hidden] { display: none; }
+  /* Phones: each destination becomes a stacked block instead of a table
+     that scrolls sideways. Header cells are visually hidden; every data cell
+     carries its own label via data-label. */
+  @media (max-width: 767px) {
+    .library-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    .library-table tr { @apply block py-3 border-b border-rule; }
+    .library-table tr[hidden] { display: none; }
+    .library-table th, .library-table td { @apply block px-0 py-0.5 border-0; }
+    .library-table td[data-label]::before { content: attr(data-label) " · "; @apply font-mono text-xs text-muted; }
+  }
+  .library-types { @apply flex flex-wrap gap-1.5; }
+  .library-type { @apply inline-flex items-center px-2 py-0.5 border border-rule rounded-sm font-mono text-xs text-ink; }
+  .library-guide-badge { @apply inline-block mt-1 font-mono text-xs text-verified no-underline; }
   .library-controls { @apply flex flex-wrap gap-3 items-end my-md; }
   .library-controls input, .library-controls select, .library-controls button { @apply border border-rule bg-paper rounded-sm px-3 py-2 text-small; }
   .library-controls button:disabled { @apply text-muted; }
@@ -13,11 +27,22 @@
   .library-status-partial { @apply text-ink; }
   .library-status-blocked { @apply text-muted; }
   .library-note { @apply border-l-4 border-mark bg-paper p-md text-small my-md; }
-  .library-procedure { @apply border border-rule rounded-md p-md my-md; }
+  .library-guide { @apply flex flex-col gap-1 border border-ink rounded-md p-md my-md text-ink no-underline bg-paper; transition: background-color 80ms ease; }
+  .library-guide:hover { @apply bg-rule; }
+  .library-glance { @apply list-none p-0 my-md border-t border-rule; counter-reset: glance; }
+  .library-glance li { @apply flex flex-col gap-1 py-3 border-b border-rule; }
+  .library-glance-meta { @apply font-mono text-xs text-muted; }
+  .library-procedure { @apply border border-rule rounded-md p-md my-md; scroll-margin-top: 1.5rem; }
+  .library-official { @apply inline-flex flex-wrap items-baseline gap-x-3 gap-y-1 border border-ink rounded-sm px-3 py-2 text-small font-semibold text-ink no-underline bg-paper; max-width: 100%; transition: background-color 80ms ease; }
+  .library-official:hover { @apply bg-rule; }
+  .library-official-url { @apply font-mono text-xs font-normal text-muted; overflow-wrap: anywhere; }
   .library-facts { @apply grid gap-3 text-small my-md; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); }
   .library-facts > div { @apply border-t border-rule pt-2; min-width: 0; }
   .library-facts dt { @apply font-mono text-xs text-muted; }
   .library-facts dd { @apply m-0 text-ink; overflow-wrap: anywhere; }
+  .library-more { @apply border-t border-rule pt-3 my-md; }
+  .library-more summary { @apply cursor-pointer text-small font-semibold text-ink; }
   .library-prose { @apply text-small my-3; white-space: pre-line; overflow-wrap: anywhere; }
-  .library-source { @apply border-l-4 border-rule p-md my-md text-small; overflow-wrap: anywhere; }
+  .library-sources { @apply pl-md text-small; }
+  .library-sources li { @apply my-3; overflow-wrap: anywhere; scroll-margin-top: 1.5rem; }
 }

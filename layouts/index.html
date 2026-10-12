@@ -237,13 +237,20 @@
   </div>
 
   {{- /* Empty state — search.ts unhides this when nothing matches. */ -}}
+  {{- /* search.ts appends the typed query to the library link as ?q=. */ -}}
+  {{- $libraryURL := "/library/" | relLangURL -}}
+  {{- $libraryCount := len hugo.Data.travel_library_public.jurisdictions -}}
   <p data-country-empty hidden class="text-small text-muted" style="margin-top: 20px;">
-    {{ printf (i18n "home_no_match") $directoryURL | safeHTML }}
+    {{ printf (i18n "home_no_match") $directoryURL | safeHTML }}<br>
+    {{ printf (i18n "home_no_match_library") $libraryCount $libraryURL | safeHTML }}
   </p>
 
   {{- /* Below-grid summary — all counts derive from the roster. */ -}}
   <p class="text-xs text-muted m-0" style="margin-top: 20px;">
     {{ printf (i18n "home_grid_summary") $freeCount $paidCount | safeHTML }}
+  </p>
+  <p class="text-small m-0" style="margin-top: 12px;">
+    {{ printf (i18n "home_library_more") $libraryCount $libraryURL | safeHTML }}
   </p>
 </section>
 

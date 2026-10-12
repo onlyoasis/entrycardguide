@@ -1,0 +1,17 @@
+{{- /* Fee line for a public library procedure. Input: dict fee, labels, lang,
+       short (bool; omits the note).
+       Fee notes exist in one language only. A note written in Chinese is shown
+       on the Simplified page alone; it is not machine-converted or shown in the
+       wrong script on the English or Traditional page. */ -}}
+{{- $fee := .fee -}}
+{{- $labels := .labels -}}
+{{- if reflect.IsMap $fee -}}
+  {{- if eq (printf "%T" $fee.amount) "<nil>" -}}{{ $labels.unknown }}
+  {{- else if eq (float $fee.amount) 0.0 -}}{{ $labels.free }}
+  {{- else -}}{{ $fee.amount }} {{ $fee.currency }}
+  {{- end -}}
+  {{- with and (not .short) $fee.note -}}
+    {{- $isChinese := findRE `\p{Han}` . 1 -}}
+    {{- if or (not $isChinese) (eq $.lang "zh") }} ({{ . }}){{ end -}}
+  {{- end -}}
+{{- else -}}{{ $labels.unknown }}{{- end -}}

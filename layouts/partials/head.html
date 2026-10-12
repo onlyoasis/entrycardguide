@@ -5,8 +5,8 @@
        Git-derived "Last verified" date does not move for a retitle. */ -}}
 {{- $seoKey := strings.TrimPrefix "/" .Path -}}
 {{- $seoSuffix := cond (eq .Site.Language.Lang "en") "" (printf "_%s" (replace .Site.Language.Lang "-" "_")) -}}
-{{- $seoTitle := .Title -}}
-{{- $seoDesc := .Description | default .Site.Params.description -}}
+{{- $seoTitle := .Params.seo_title | default .Title -}}
+{{- $seoDesc := .Description | default .Params.seo_description | default .Site.Params.description -}}
 {{- with and $seoKey (index (hugo.Data.seo.titles | default dict) $seoKey) }}
   {{- with index . (printf "title%s" $seoSuffix) }}{{ $seoTitle = . }}{{ end }}
   {{- with index . (printf "description%s" $seoSuffix) }}{{ $seoDesc = . }}{{ end }}
@@ -54,8 +54,14 @@
 <link rel="alternate" hreflang="x-default" href="{{ $xDefault }}">
 {{- end }}
 
-{{- /* Robots — always indexable; this site's whole value is Google traffic */ -}}
+{{- /* Robots — indexable except generated library pages with nothing
+       published (.Params.noindex, set in content/library/_content.gotmpl;
+       those pages are also left out of the sitemap). */ -}}
+{{- if .Params.noindex }}
+<meta name="robots" content="noindex,follow">
+{{- else }}
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+{{- end }}
 
 {{- /* Self-hosted font preload for perf */ -}}
 {{- /* CSS — compiled via postcss + tailwind, fingerprinted */ -}}

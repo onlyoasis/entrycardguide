@@ -25,6 +25,10 @@
 
   const empty = document.querySelector<HTMLElement>('[data-country-empty]');
   const details = document.querySelector<HTMLDetailsElement>('[data-country-more]');
+  // The global library covers far more destinations than the grid; an
+  // unmatched query is handed to it as ?q= (same origin, nothing sent away).
+  const handoff = document.querySelector<HTMLAnchorElement>('[data-library-handoff]');
+  const handoffBase = handoff ? handoff.getAttribute('href') || '' : '';
 
   // Swap the mobile expander label as it opens/closes — whether the user clicked
   // it or a search opened it. textContent only, never innerHTML.
@@ -52,6 +56,7 @@
     if (details) details.open = q !== '';
     // Empty-state line only when the user typed something and nothing matched.
     if (empty) empty.hidden = !(q !== '' && !anyMatch);
+    if (handoff) handoff.setAttribute('href', q ? `${handoffBase}?q=${encodeURIComponent(query.trim())}` : handoffBase);
   }
 
   input.addEventListener('input', () => apply(input.value));

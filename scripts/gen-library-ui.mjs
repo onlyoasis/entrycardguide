@@ -15,6 +15,8 @@ const en = {
   procedure_heading:'Source-backed procedures', type:'Type', agency:'Authority', official_source:'Official page', channel:'Channel', fee:'Fee', unknown:'Not verified', free:'Free', timing:'When to apply', sources:'Sources', publisher:'Publisher',
   customs_declaration:'Customs declaration', arrival_card:'Arrival card', health_declaration:'Health declaration', travel_authorization:'Travel authorization', visa:'Visa', online:'Online', paper:'Paper', on_arrival:'On arrival', on_departure:'On departure', conditional:'Conditional',
   guide_note:'Existing guides cover a different scope from the research summary above.',
+  forms:'Forms', type_filter:'Form type', all_types:'All form types', has_guide:'Step-by-step guide', at_a_glance:'At a glance', open_official:'Open the official page', applies_to:'Who it applies to', applies_more:'Who it applies to, exceptions and limits (full text)', based_on:'Based on',
+  guide_cta:'Read the step-by-step %s guide', seo_title:'%s %s: official links and rules', seo_title_empty:'%s entry and customs requirements: research status', seo_desc:'%d source-backed procedures for %s: %s. Official URLs, channel, fee and timing, each tied to a government source.', seo_desc_empty:'Research status for %s. No source-backed procedure is published yet; check the destination authority before travel.', and:' & ',
 };
 const zh = {
   home:'首页', library:'全球旅行资料库', destination:'目的地', region:'地区', status:'资料覆盖', procedures:'公开事项', links:'链接', details:'详情', guide:'现有指南',
@@ -29,6 +31,8 @@ const zh = {
   procedure_heading:'已有来源支持的事项', type:'类型', agency:'主管机关', official_source:'官方页面', channel:'办理渠道', fee:'费用', unknown:'尚未核实', free:'免费', timing:'办理时间', sources:'来源', publisher:'发布方',
   customs_declaration:'海关申报', arrival_card:'入境卡', health_declaration:'健康申报', travel_authorization:'旅行授权', visa:'签证', online:'在线', paper:'纸质', on_arrival:'入境时', on_departure:'离境时', conditional:'视情况',
   guide_note:'现有指南与本页研究摘要覆盖的范围不同。',
+  forms:'表单与申报', type_filter:'表单类型', all_types:'全部类型', has_guide:'详细指南', at_a_glance:'一览', open_official:'打开官方页面', applies_to:'适用对象', applies_more:'适用对象、例外与限额（完整说明）', based_on:'依据',
+  guide_cta:'查看%s逐项填写指南', seo_title:'%s%s：官方网址与规则', seo_title_empty:'%s入境与海关要求：研究进度', seo_desc:'%[2]s的%[1]d项来源核证事项：%[3]s。列出官方网址、办理渠道、费用和时间，每项都对应政府来源。', seo_desc_empty:'%s的研究进度。目前没有可公开的来源核证事项，出行前请向目的地主管机关确认。', and:'与',
 };
 if (Object.keys(en).sort().join() !== Object.keys(zh).sort().join()) throw new Error('Library UI language keys differ');
 const output=JSON.stringify({en, zh, 'zh-hant':Object.fromEntries(Object.entries(zh).map(([key,value])=>[key,zh2hant(value)]))},null,2)+'\n';

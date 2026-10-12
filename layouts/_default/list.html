@@ -73,6 +73,11 @@
   {{- if $countryMeta }}
   {{- $formPage := $.Site.GetPage (printf "/%s/%s" $section $countryMeta.guide_slug) -}}
   {{- $howPage := $.Site.GetPage (printf "/%s/how-to-fill" $section) -}}
+  {{- /* The country's global-library entry, linked only when it publishes at
+         least one source-backed procedure (empty entries are noindex). */ -}}
+  {{- $libraryPath := "" -}}
+  {{- $library := partial "library-data.html" . -}}
+  {{- range $library.jurisdictions }}{{ if eq .existing_site_key $section }}{{ with index $library.byId .id }}{{ if .procedures }}{{ $libraryPath = printf "/library/%s/" (lower .jurisdiction_id) }}{{ end }}{{ end }}{{ end }}{{ end -}}
   {{- if or $formPage $howPage }}
   <ul class="list-none p-0 mt-lg mb-0 border-t border-rule">
     {{- with $formPage }}
@@ -80,6 +85,9 @@
     {{- end }}
     {{- with $howPage }}
     <li class="border-b border-rule py-3"><a href="{{ .RelPermalink }}" class="text-ink underline underline-offset-4">{{ $countryMeta.form_code }}{{ i18n "hub_cta_howto" }}</a> →</li>
+    {{- end }}
+    {{- with $libraryPath }}
+    <li class="border-b border-rule py-3"><a href="{{ . | relLangURL }}" class="text-ink underline underline-offset-4">{{ $countryName }}{{ i18n "hub_cta_library" }}</a> →</li>
     {{- end }}
   </ul>
   {{- end }}
