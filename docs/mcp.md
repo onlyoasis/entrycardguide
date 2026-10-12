@@ -56,9 +56,10 @@ curl https://entrycardguide.com/api/mcp \
 
 1. 创建专用`entrycardguide-mcp` D1，填真实`database_id`。
 2. 应用`0001_mcp_init.sql`和`0002_mcp_accounts.sql`远程迁移；第二份会停用旧匿名key。
-3. 在Pages生产环境设置secret：`RESEND_API_KEY`、`MCP_EMAIL_FROM`（已验证发件域地址）、`MCP_AUTH_SECRET`（随机至少32字符）。不写入Git、文档或日志。
-4. `npm run check:release -- --deployment`只读回查D1表与Pages secret名称，缺配置会阻断发布；配置存在不代表真实邮件已经送达。
-5. 发布后用实际邮箱走注册→收码→登录→明确授权→初始化→工具调用→用量→撤销后401，并回读部署SHA与正式域名。
+3. 发信走 Cloudflare Email Sending REST API（与 emailHub 是同一通道；Pages Functions 没有 `send_email` binding，所以不用 binding）。先在 Cloudflare 控制台 Compute → Email Service → Email Sending 接入发件域，控制台会自动添加 `cf-bounce` 的 MX/SPF/DKIM 和 `_dmarc` 记录。外发需要 Workers Paid；每个账户每月含 3,000 封，超出按每千封 $0.35 计费。
+4. 在Pages生产环境设置secret：`MCP_EMAIL_API_TOKEN`（权限 Email Sending: Edit）、`MCP_EMAIL_ACCOUNT_ID`（发件域所在的账户 ID）、`MCP_EMAIL_FROM`（已接入发件域的地址，可写成 `显示名 <地址>`）、`MCP_AUTH_SECRET`（随机至少32字符）。不写入Git、文档或日志。
+5. `npm run check:release -- --deployment`只读回查D1表与Pages secret名称，缺配置会阻断发布；配置存在不代表真实邮件已经送达。
+6. 发布后用实际邮箱走注册→收码→登录→明确授权→初始化→工具调用→用量→撤销后401，并回读部署SHA与正式域名。
 
 CI固定构建`public-release`，构建前检查公开schema、三语生成物和MCP快照；测试账户、协议、额度及数据隔离。部署步骤只发布这个目录，并要求生产前置检查通过。不会自动创建D1、应用远程迁移或写secret。
 
@@ -80,6 +81,6 @@ npm run check:release
 
 ## 生产初始化工作流
 
-用户已授权部署时，可运行`Provision MCP production`工作流。首次受限发布分支初始化已执行；后续仅通过手动触发执行。它使用现有GitHub Cloudflare加密secret，只读确认Pages项目生产分支后创建或复用专用D1、按migrations应用两份迁移、创建缺失认证secret。若本项目RESEND_API_KEY与MCP_EMAIL_FROM已明确配置在GitHub secret，则同步到Pages生产secret；缺邮件配置时报告缺失，不绕过部署门禁。输出artifact仅含数据库ID、迁移名、secret名称及旧部署元数据，不输出值。
+用户已授权部署时，可运行`Provision MCP production`工作流。首次受限发布分支初始化已执行；后续仅通过手动触发执行。它使用现有GitHub Cloudflare加密secret，只读确认Pages项目生产分支后创建或复用专用D1、按migrations应用两份迁移、创建缺失认证secret。若本项目 GitHub secret `CLOUDFLARE_EMAIL_API_TOKEN`（Email Sending: Edit）与 `MCP_EMAIL_FROM` 都已配置，就写入 Pages 生产 secret `MCP_EMAIL_API_TOKEN`、`MCP_EMAIL_FROM`，并把 `CLOUDFLARE_ACCOUNT_ID` 写为 `MCP_EMAIL_ACCOUNT_ID`；缺邮件配置时报告缺失，不绕过部署门禁。输出artifact仅含数据库ID、迁移名、secret名称及旧部署元数据，不输出值。
 
 现有Pages部署令牌没有D1权限时，可单独配置GitHub `CLOUDFLARE_MCP_API_TOKEN`：生产初始化需D1 Edit，查询迁移前置需对应D1访问权限。D1请求只使用该独立令牌，Pages请求与部署继续使用原`CLOUDFLARE_API_TOKEN`。未配置独立令牌时兼容原合并权限令牌；没有权限就失败，不绕过门禁。

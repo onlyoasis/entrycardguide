@@ -61,18 +61,19 @@ try {
   if (variables.MCP_AUTH_SECRET?.type !== 'secret_text') {
     wrangler(['pages', 'secret', 'put', 'MCP_AUTH_SECRET', '--project-name', projectName, '--env', 'production'], randomBytes(32).toString('base64url'));
   }
-  // Only project-owned CI email credentials are accepted. No other project's
-  // key is fetched or reused by this script.
-  const mailKey = process.env.RESEND_API_KEY;
+  // Login codes go through Cloudflare Email Sending on this account. Only the
+  // project's own CI token is accepted; no other project's key is reused.
+  const mailToken = process.env.CLOUDFLARE_EMAIL_API_TOKEN;
   const mailFrom = process.env.MCP_EMAIL_FROM;
-  requireCondition(Boolean(mailKey) === Boolean(mailFrom), 'Configure both entrycardguide RESEND_API_KEY and MCP_EMAIL_FROM CI secrets');
-  if (mailKey && mailFrom) {
+  requireCondition(Boolean(mailToken) === Boolean(mailFrom), 'Configure both entrycardguide CLOUDFLARE_EMAIL_API_TOKEN and MCP_EMAIL_FROM CI secrets');
+  if (mailToken && mailFrom) {
     requireCondition(!/[\r\n]/.test(mailFrom) && mailFrom.length <= 254 && mailFrom.includes('@'), 'Invalid MCP sender address');
-    wrangler(['pages', 'secret', 'put', 'RESEND_API_KEY', '--project-name', projectName, '--env', 'production'], mailKey);
+    wrangler(['pages', 'secret', 'put', 'MCP_EMAIL_API_TOKEN', '--project-name', projectName, '--env', 'production'], mailToken);
+    wrangler(['pages', 'secret', 'put', 'MCP_EMAIL_ACCOUNT_ID', '--project-name', projectName, '--env', 'production'], account);
     wrangler(['pages', 'secret', 'put', 'MCP_EMAIL_FROM', '--project-name', projectName, '--env', 'production'], mailFrom);
   }
   const readback = await cloudflare(`pages/projects/${projectName}`);
-  const requiredNames = ['MCP_AUTH_SECRET', 'RESEND_API_KEY', 'MCP_EMAIL_FROM'];
+  const requiredNames = ['MCP_AUTH_SECRET', 'MCP_EMAIL_API_TOKEN', 'MCP_EMAIL_ACCOUNT_ID', 'MCP_EMAIL_FROM'];
   const secretNames = requiredNames.filter(name => readback.deployment_configs?.production?.env_vars?.[name]?.type === 'secret_text');
   const output = {
     project: projectName, production_branch: readback.production_branch,
@@ -86,7 +87,7 @@ try {
     },
   };
   writeFileSync('mcp-provision.json', JSON.stringify(output, null, 2) + '\n');
-  console.log(`MCP production D1 ready; two migrations confirmed; ${secretNames.length}/3 required secret names present. No secret values exported.`);
+  console.log(`MCP production D1 ready; two migrations confirmed; ${secretNames.length}/${requiredNames.length} required secret names present. No secret values exported.`);
   if (!output.email_configured) console.log('Email credentials remain required before production deployment.');
 } catch (error) {
   console.error(`provision-mcp: ${error.message}`);
