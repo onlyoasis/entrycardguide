@@ -1,0 +1,287 @@
+{
+  "summary": {
+    "health_score": 75,
+    "business_type": "Informational publisher (travel entry-form guides, YMYL-adjacent), trilingual en/zh-Hans/zh-Hant",
+    "audited_at": "2026-10-12",
+    "pages_crawled": 468,
+    "top_findings": [
+      "ChatGPT referrals fell 96% (978 sessions in 90d vs 24 in last 28d); decline began 2026-08-08, before the 08-10 middleman-list removal",
+      "43/50 English country hubs carry bare country-name titles; all 150 hubs emit no JSON-LD",
+      "Pages ranking 6-11 have 0.4-1.7% CTR (uk, singapore, india, indonesia how-to-fill)",
+      "Titles too long: 91/156 en and 133/156 per Chinese locale exceed ~65 width; Chinese site title adds a double brand suffix",
+      "Indonesia (2026-06-17) and Dominican (2026-04-24) official-URL verification dates are stale on top traffic pages"
+    ],
+    "quick_wins": [
+      "Single-brand Chinese site title in config.toml",
+      "Keyword titles for 43 en + 6 zh hubs",
+      "Rewrite title/description of four how-to-fill pages around the GSC field queries",
+      "Emit BreadcrumbList + CollectionPage on hub pages",
+      "Re-verify Indonesia and Dominican official URLs"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 90,
+      "what_works": [
+        "468/468 URLs 200, self canonicals",
+        "hreflang en/zh-Hans/zh-Hant/x-default on every page",
+        "Real 404, www/http 301",
+        "Full security headers incl. HSTS preload and strict CSP",
+        "AI crawler UAs allowed"
+      ],
+      "findings": [
+        {
+          "title": "main deployment pipeline blocked",
+          "severity": "High",
+          "description": "Cloudflare Pages workflow on main fails at check-release (D1 database_id placeholder); Verify official URLs job failed 10-05 on HTTP 403",
+          "recommendation": "Resolve the D1 gate before merging SEO fixes"
+        },
+        {
+          "title": "Sitemap alternates miss x-default",
+          "severity": "Low",
+          "description": "HTML has x-default, sitemap xhtml:link does not",
+          "recommendation": "Add x-default to sitemap template"
+        },
+        {
+          "title": "/favicon.ico 404",
+          "severity": "Low",
+          "description": "Only svg/png icons declared",
+          "recommendation": "Add static/favicon.ico"
+        },
+        {
+          "title": "All requests routed through Pages Function middleware",
+          "severity": "Info",
+          "description": "No _routes.json; server time ~0.2-0.4s, measurement skewed by local proxy",
+          "recommendation": "Optionally limit Functions to /api/*"
+        }
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 72,
+      "what_works": [
+        "Median 923 words (en), 1311/1336 CJK chars (zh/zh-Hant)",
+        "Data-backed official URLs and field rules",
+        "Clear affiliate disclosure with rel=sponsored"
+      ],
+      "findings": [
+        {
+          "title": "Stale verification on top pages",
+          "severity": "High",
+          "description": "Indonesia 2026-06-17, Dominican 2026-04-24, Australia 2026-07-24 (403)",
+          "recommendation": "Manual re-verification; manual process for 403 sites"
+        },
+        {
+          "title": "Inconsistent field counts",
+          "severity": "Medium",
+          "description": "/indonesia/e-cd/ says 9 fields/3 sections; how-to-fill says 12/4",
+          "recommendation": "Align with data/fields"
+        },
+        {
+          "title": "No identifiable author or reviewer",
+          "severity": "Medium",
+          "description": "Article author is Organization only",
+          "recommendation": "Editorial policy page + publishingPrinciples"
+        },
+        {
+          "title": "About page mentions removed scam-site list",
+          "severity": "Low",
+          "description": "License paragraph still lists it",
+          "recommendation": "Remove phrase"
+        }
+      ]
+    },
+    {
+      "name": "On-Page SEO",
+      "score": 62,
+      "what_works": [
+        "No missing/duplicate descriptions",
+        "Exactly one H1 per page",
+        "No broken internal links"
+      ],
+      "findings": [
+        {
+          "title": "Bare hub titles",
+          "severity": "High",
+          "description": "43/50 en hubs and 6 per Chinese locale; hubs rank 50-78 for head terms",
+          "recommendation": "Rewrite titles following the 7 already-improved hubs"
+        },
+        {
+          "title": "Hub vs form cannibalization",
+          "severity": "High",
+          "description": "e.g. 菲律賓 etravel: hub 20.4 vs form 48.5; customs declaration indonesia across 3 URLs",
+          "recommendation": "Hubs route head terms to form pages"
+        },
+        {
+          "title": "Low CTR at positions 6-11",
+          "severity": "High",
+          "description": "uk 2679 impr/40 clicks, singapore 2911/39, india 1978/29, indonesia 1334/5 (90d)",
+          "recommendation": "Lead titles/descriptions with the searched field"
+        },
+        {
+          "title": "Over-long titles",
+          "severity": "High",
+          "description": "91/156 en, 133/156 zh-Hans, 133/156 zh-Hant over ~65 width",
+          "recommendation": "Single brand suffix; drop suffix on long titles"
+        },
+        {
+          "title": "Thin internal linking to money pages",
+          "severity": "Medium",
+          "description": "Form and how-to-fill pages have 4 inbound internal links",
+          "recommendation": "Link from directory, home cards, related countries"
+        }
+      ]
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 70,
+      "what_works": [
+        "0 JSON-LD parse errors",
+        "Article+Breadcrumb+FAQPage on 150 form pages"
+      ],
+      "findings": [
+        {
+          "title": "Hubs have no JSON-LD",
+          "severity": "High",
+          "description": "150 hub URLs emit nothing",
+          "recommendation": "BreadcrumbList + CollectionPage/ItemList"
+        },
+        {
+          "title": "Official URL not modeled as an entity",
+          "severity": "Medium",
+          "description": "No GovernmentService/GovernmentOrganization",
+          "recommendation": "Add about: GovernmentService from official_urls TOML"
+        },
+        {
+          "title": "how-to-fill pages lack FAQPage",
+          "severity": "Medium",
+          "description": "147/150 without faq",
+          "recommendation": "Add faq from GSC question queries"
+        }
+      ]
+    },
+    {
+      "name": "Performance (CWV)",
+      "score": 95,
+      "what_works": [
+        "Lighthouse mobile 100/100/100/100 on 4 pages",
+        "LCP 1.1s, CLS 0, TBT 10-50ms"
+      ],
+      "findings": [
+        {
+          "title": "No field CWV data verified",
+          "severity": "Info",
+          "description": "PSI quota exhausted, no CrUX key",
+          "recommendation": "Configure CrUX/PSI API key"
+        },
+        {
+          "title": "Accessibility label mismatch",
+          "severity": "Low",
+          "description": "/zh/thailand/tdac/ label-content-name-mismatch",
+          "recommendation": "Align visible label and accessible name"
+        }
+      ]
+    },
+    {
+      "name": "AI Search Readiness",
+      "score": 68,
+      "what_works": [
+        "SSR content, llms.txt passes Lighthouse rules",
+        "AI bots allowed",
+        "zh-Hant release lifted Google weekly clicks from ~15-18 to 33-41"
+      ],
+      "findings": [
+        {
+          "title": "ChatGPT referral collapse",
+          "severity": "High",
+          "description": "Weekly chatgpt.com sessions 243-305 (w30-32) -> 12 (w33) -> 3-7; daily decline from 08-08, before 08-10 deploy e105f05",
+          "recommendation": "Baseline ChatGPT answers manually; add citable dated fact sentences; check Bing indexing; owner decides on citing government scam warnings"
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "score": 60,
+      "what_works": [
+        "No alt-text defects (no <img> in content)"
+      ],
+      "findings": [
+        {
+          "title": "No content images",
+          "severity": "Medium",
+          "description": "0 <img> across 468 pages",
+          "recommendation": "Add dated official-form screenshots without personal data"
+        },
+        {
+          "title": "Single OG image site-wide",
+          "severity": "Low",
+          "description": "/og/default.png on all 468 pages",
+          "recommendation": "Per-country OG images"
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {
+        "name": "Phase 0: Unblock main deployment",
+        "timeframe": "Before any merge",
+        "items": [
+          "Resolve D1 database_id release gate"
+        ]
+      },
+      {
+        "name": "Phase 1: High-Impact Improvements",
+        "timeframe": "Week 1",
+        "items": [
+          "Title suffix and length fix",
+          "Rewrite four how-to-fill titles/descriptions",
+          "Hub titles and schema",
+          "Re-verify Indonesia/Dominican",
+          "ChatGPT citation baseline"
+        ]
+      },
+      {
+        "name": "Phase 2: Content & Authority",
+        "timeframe": "Weeks 2-4",
+        "items": [
+          "Internal links to form/how-to-fill pages",
+          "GovernmentService schema",
+          "FAQ on how-to-fill",
+          "Editorial policy page",
+          "Form screenshots"
+        ]
+      },
+      {
+        "name": "Phase 3: Low priority",
+        "timeframe": "Backlog",
+        "items": [
+          "Sitemap x-default",
+          "favicon.ico",
+          "Per-country OG images",
+          "_routes.json evaluation"
+        ]
+      },
+      {
+        "name": "Phase 4: Monitoring & Iteration",
+        "timeframe": "Ongoing",
+        "items": [
+          "Monthly GSC/GA4 pull",
+          "Weekly AI/Bing source split",
+          "zh-Hant query migration check",
+          "Add CrUX and Bing API keys"
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "FULL-AUDIT-REPORT.md (sections)",
+    "screenshots_dir": null,
+    "limitations": [
+      "No CrUX field data",
+      "No backlink data (no Moz/Bing key; Common Crawl timed out)",
+      "No Bing Webmaster data"
+    ]
+  }
+}
