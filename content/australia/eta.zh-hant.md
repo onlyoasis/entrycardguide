@@ -18,7 +18,7 @@ faq:
   - q: "ETA 多久出結果？"
     a: "Home Affairs 表示多數 ETA 申請會立即收到結果；資料不全、需要進一步核查時會更久。"
 layout: country-form
-lastmod: 2026-07-14
+lastmod: 2026-10-12
 ---
 
 {{< official-link site="australia.eta601" >}}

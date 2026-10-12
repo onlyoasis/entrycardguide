@@ -24,7 +24,7 @@ faq:
   - q: "我填了 e-CD 但沒收到確認郵件。"
     a: "先看垃圾郵件匣。1 小時後仍然沒有就重新提交。重複提交無害，最近一份為準。"
 layout: country-form
-lastmod: 2026-08-10
+lastmod: 2026-10-12
 ---
 
 {{< official-link site="indonesia.ecd" >}}
