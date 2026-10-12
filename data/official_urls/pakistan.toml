@@ -12,7 +12,7 @@ notes = "Read through the current official DGI&P and Ministry of Foreign Affairs
 url = "https://dgip.gov.pk/home/"
 name = "Pakistan Online Visa Eligibility Notice"
 agency = "Directorate General of Immigration & Passports, Ministry of Interior, Government of Pakistan"
-last_verified = "2026-10-05"
+last_verified = "2026-10-12"
 notes = "Read 2026-08-30. The current DGI&P home page says the online system is open to 192 countries, VPA is available to citizens of 120 countries for tourism, business or Sikh pilgrimage, and six GCC countries are visa-exempt for these categories. It also says regular visa fees are reciprocal."
 
 [vpa_information]
@@ -33,7 +33,7 @@ notes = "Read 2026-08-30. Citizens of Saudi Arabia, Kuwait, the United Arab Emir
 url = "https://dgip.gov.pk/visa/fee.php"
 name = "Pakistan Regular Visa Fee Schedule"
 agency = "Directorate General of Immigration & Passports, Ministry of Interior, Government of Pakistan"
-last_verified = "2026-10-05"
+last_verified = "2026-10-12"
 notes = "Read 2026-08-30. Regular online visa fees are charged on a reciprocal basis and differ by passport and visa category. This is a separate route from the free VPA product."
 
 [meta]
