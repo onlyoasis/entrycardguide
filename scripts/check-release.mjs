@@ -36,7 +36,7 @@ try {
     const secretReport = remote(['pages', 'secret', 'list', '--project-name', 'entrycardguide', '--env', 'production'], false);
     requireCondition(secretReport.includes('"production" environment of your Pages project "entrycardguide"'), 'Unable to confirm the Pages production environment');
     const secrets = [...secretReport.matchAll(/^\s+- ([A-Za-z0-9_]+): Value Encrypted\s*$/gm)].map(match => ({name: match[1]}));
-    for (const name of ['MCP_AUTH_SECRET', 'RESEND_API_KEY', 'MCP_EMAIL_FROM']) requireCondition(secrets.some(item => item.name === name), `Configure the production Pages secret ${name}`);
+    for (const name of ['MCP_AUTH_SECRET', 'MCP_EMAIL_API_TOKEN', 'MCP_EMAIL_ACCOUNT_ID', 'MCP_EMAIL_FROM']) requireCondition(secrets.some(item => item.name === name), `Configure the production Pages secret ${name}`);
     const rows = remote(['d1', 'execute', database.database_name, '--remote', '--json', '--command', "SELECT name FROM sqlite_master WHERE type='table' AND name IN ('mcp_users','mcp_sessions','mcp_grants','mcp_login_codes','mcp_auth_limits','mcp_usage');"]);
     const names = new Set(rows.flatMap(item => item.results || []).map(item => item.name));
     for (const name of ['mcp_users', 'mcp_sessions', 'mcp_grants', 'mcp_login_codes', 'mcp_auth_limits', 'mcp_usage']) requireCondition(names.has(name), `Apply the production migration for ${name}`);
