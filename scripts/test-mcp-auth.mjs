@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Full HTTP handler flow with real migrations/SQL and a fake Resend HTTPS
-// transport. No production bypass, network request, printed code or key.
+// Full HTTP handler flow with real migrations/SQL and a fake Cloudflare Email
+// Sending transport. No production bypass, network request, printed code or key.
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createTestDatabase } from "./helpers/d1-test-shim.mjs";
@@ -25,29 +25,34 @@ const oldKey = "ecg_legacy_anonymous_registration_key";
 const oldHash = await sha256Hex(oldKey);
 const db = createTestDatabase(ROOT, (sqlite) => sqlite.prepare(`INSERT INTO mcp_users
   (id,email,key_hash,key_prefix,plan,created_at) VALUES ('legacy','legacy@example.com',?,'ecg_legacy','free',1)`).run(oldHash));
-const env = { DB: db, RESEND_API_KEY: "test-resend-not-a-secret", MCP_EMAIL_FROM: "entrycardguide <test@example.com>", MCP_AUTH_SECRET: "test-only-otp-pepper-with-at-least-thirty-two-characters" };
+const env = { DB: db, MCP_EMAIL_API_TOKEN: "test-email-token-not-a-secret", MCP_EMAIL_ACCOUNT_ID: "0123456789abcdef0123456789abcdef", MCP_EMAIL_FROM: "entrycardguide <test@example.com>", MCP_AUTH_SECRET: "test-only-otp-pepper-with-at-least-thirty-two-characters" };
 const context = (request, runtimeEnv = env) => ({ request, env: runtimeEnv });
 const originalFetch = globalThis.fetch;
 const sent = [];
 let mailFailure = false;
 let transportFailure = false;
+let apiRejects = false;
+let permanentBounce = false;
 let delayedEmail = null;
 let delayedRequests = [];
 let notifyDelayed;
 globalThis.fetch = async (url, options) => {
-  check("sender uses fixed Resend HTTPS URL", url === "https://api.resend.com/emails");
-  check("sender uses POST and API authorization", options.method === "POST" && options.headers.Authorization === `Bearer ${env.RESEND_API_KEY}`);
+  check("sender uses the account Email Sending URL", url === `https://api.cloudflare.com/client/v4/accounts/${env.MCP_EMAIL_ACCOUNT_ID}/email/sending/send`);
+  check("sender uses POST and API token authorization", options.method === "POST" && options.headers.Authorization === `Bearer ${env.MCP_EMAIL_API_TOKEN}`);
   const message = JSON.parse(options.body);
-  check("sender sets idempotency key and timeout", options.headers["Idempotency-Key"]?.startsWith("mcp-login/") && options.signal instanceof AbortSignal);
+  check("sender splits display name and address", message.from?.address === "test@example.com" && message.from?.name === "entrycardguide");
+  check("sender tags the challenge and sets a timeout", message.headers?.["X-Entity-Ref-ID"]?.startsWith("mcp-login/") && options.signal instanceof AbortSignal);
   if (transportFailure) throw new Error("fake transport failure");
-  if (mailFailure) return new Response(null, { status: 503 });
+  if (mailFailure) return new Response(JSON.stringify({ success: false, errors: [{ code: 10002 }] }), { status: 500 });
+  if (apiRejects) return new Response(JSON.stringify({ success: false, errors: [{ code: 10203 }] }), { status: 200 });
+  if (permanentBounce) return new Response(JSON.stringify({ success: true, delivered: [], permanent_bounces: [message.to[0]], queued: [] }), { status: 200 });
   if (message.to[0] === delayedEmail) {
     const waiting = new Promise((resolve) => delayedRequests.push({ resolve }));
     if (delayedRequests.length === 2) notifyDelayed();
     await waiting;
   }
-  sent.push({ id: options.headers["Idempotency-Key"].slice("mcp-login/".length), email: message.to[0], code: message.text.match(/\b\d{6}\b/)[0] });
-  return new Response(JSON.stringify({ id: "test-mail" }), { status: 200 });
+  sent.push({ id: message.headers["X-Entity-Ref-ID"].slice("mcp-login/".length), email: message.to[0], code: message.text.match(/\b\d{6}\b/)[0] });
+  return new Response(JSON.stringify({ success: true, delivered: [message.to[0]], permanent_bounces: [], queued: [] }), { status: 200 });
 };
 
 function post(route, body, { cookie, origin = ORIGIN, type = "application/json", ip = "192.0.2.1", raw, headers = {} } = {}) {
@@ -79,7 +84,7 @@ try {
   check("legacy key does not authenticate", await authenticate(env, bearer(oldKey)) === null);
   let response = await register(context(post("register", { email: "good@example.com" }), {}));
   check("missing D1 returns 503", response.status === 503);
-  for (const missing of ["RESEND_API_KEY", "MCP_EMAIL_FROM", "MCP_AUTH_SECRET"]) {
+  for (const missing of ["MCP_EMAIL_API_TOKEN", "MCP_EMAIL_ACCOUNT_ID", "MCP_EMAIL_FROM", "MCP_AUTH_SECRET"]) {
     response = await register(context(post("register", { email: "config@example.com" }), { ...env, [missing]: "" }));
     check(`missing ${missing} fails closed`, response.status === 503 && !response.headers.has("Set-Cookie"));
   }
@@ -268,6 +273,14 @@ try {
   response = await register(context(post("register", { email: "transport-failure@example.com" }, { ip: "192.0.2.8" })));
   check("mail transport failure returns safe 503", response.status === 503 && (await response.json()).error === "email_delivery_unavailable");
   transportFailure = false;
+  apiRejects = true;
+  response = await register(context(post("register", { email: "api-rejects@example.com" }, { ip: "192.0.2.9" })));
+  check("HTTP 200 with success:false returns safe 503", response.status === 503 && (await response.json()).error === "email_delivery_unavailable");
+  apiRejects = false;
+  permanentBounce = true;
+  response = await register(context(post("register", { email: "bounce@example.com" }, { ip: "192.0.2.10" })));
+  check("permanent bounce returns safe 503", response.status === 503 && (await response.json()).error === "email_delivery_unavailable");
+  permanentBounce = false;
 
   for (let i = 0; i < 5; i++) await start("limited@example.com", login, { ip: `192.0.2.${30 + i}` });
   response = await login(context(post("login", { email: "limited@example.com" }, { ip: "192.0.2.40" })));
