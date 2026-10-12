@@ -1,6 +1,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="{{ .Description | default .Site.Params.description }}">
+{{- /* Search-result title/description overrides (data/seo/titles.toml),
+       keyed by language-neutral path. Content files stay untouched so the
+       Git-derived "Last verified" date does not move for a retitle. */ -}}
+{{- $seoKey := strings.TrimPrefix "/" .Path -}}
+{{- $seoSuffix := cond (eq .Site.Language.Lang "en") "" (printf "_%s" (replace .Site.Language.Lang "-" "_")) -}}
+{{- $seoTitle := .Title -}}
+{{- $seoDesc := .Description | default .Site.Params.description -}}
+{{- with and $seoKey (index (hugo.Data.seo.titles | default dict) $seoKey) }}
+  {{- with index . (printf "title%s" $seoSuffix) }}{{ $seoTitle = . }}{{ end }}
+  {{- with index . (printf "description%s" $seoSuffix) }}{{ $seoDesc = . }}{{ end }}
+{{- end }}
+<meta name="description" content="{{ $seoDesc }}">
 
 {{- /* Language mapping: site keys en/zh/zh-hant → BCP 47 tags en/zh-Hans/zh-Hant
        for hreflang + JSON-LD. OG locale uses per-language region params
@@ -8,7 +19,11 @@
 {{- $langMap := dict "en" "en" "zh" "zh-Hans" "zh-hant" "zh-Hant" -}}
 {{- $isCn := in (slice "zh" "zh-hant") .Site.Language.Lang -}}
 
-<title>{{ if .IsHome }}{{ if $isCn }}{{ .Title }} · {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+{{- /* Chinese site title is bilingual ("entrycardguide · 入境卡指南"); as a
+       per-page suffix it doubled the brand and pushed most zh titles past
+       the SERP width, so inner pages use the shorter title_brand param. */ -}}
+{{- $brand := .Site.Params.title_brand | default .Site.Title -}}
+<title>{{ if .IsHome }}{{ if $isCn }}{{ .Title }} · {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}{{ else }}{{ $seoTitle }} · {{ $brand }}{{ end }}</title>
 
 {{- if hugo.IsProduction }}
 {{- with .Site.Params.analytics.ga4.measurement.id }}
@@ -46,8 +61,8 @@
 {{- /* OG tags. Per-page og:image lives at /og/{basename}.png. If the file
        does not exist, fall back to /og/default.png. We always emit the
        default; per-page can be added later by dropping a PNG in static/og/. */ -}}
-<meta property="og:title" content="{{ .Title | default .Site.Title }}">
-<meta property="og:description" content="{{ .Description | default .Site.Params.description }}">
+<meta property="og:title" content="{{ $seoTitle | default .Site.Title }}">
+<meta property="og:description" content="{{ $seoDesc }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
@@ -65,8 +80,8 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ .Title | default .Site.Title }}">
-<meta name="twitter:description" content="{{ .Description | default .Site.Params.description }}">
+<meta name="twitter:title" content="{{ $seoTitle | default .Site.Title }}">
+<meta name="twitter:description" content="{{ $seoDesc }}">
 <meta name="twitter:image" content="{{ $ogImage | absURL }}">
 
 {{- /* Organization schema — site-wide brand identity for Google's
@@ -184,6 +199,23 @@
   ]
 }
 </script>
+{{- end }}
+
+{{- /* Country hub schema — section pages (/indonesia/, /zh/indonesia/) are
+       not .IsPage, so the Article/BreadcrumbList blocks above skip them.
+       Emit Home → country breadcrumbs plus a CollectionPage listing the
+       country's guides. Built as dicts + jsonify so strings are JSON-escaped
+       exactly once. */ -}}
+{{- with and .IsSection (index hugo.Data.official_urls .Section) }}
+{{- $hub := $ -}}
+{{- $nameKey := printf "name_%s" (cond (eq $hub.Site.Language.Lang "en") "en" (replace $hub.Site.Language.Lang "-" "_")) -}}
+{{- $countryName := (index .meta $nameKey) | default $hub.Title -}}
+{{- $items := slice -}}
+{{- range $i, $p := $hub.RegularPages.ByWeight -}}
+  {{- $items = $items | append (dict "@type" "ListItem" "position" (add $i 1) "name" $p.Title "url" $p.Permalink) -}}
+{{- end }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" (slice (dict "@type" "ListItem" "position" 1 "name" $hub.Site.Title "item" (absLangURL "/")) (dict "@type" "ListItem" "position" 2 "name" $countryName "item" $hub.Permalink)) | jsonify | safeJS }}</script>
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "CollectionPage" "name" $seoTitle "description" $seoDesc "url" $hub.Permalink "inLanguage" (index $langMap $hub.Site.Language.Lang) "dateModified" ($hub.Lastmod.Format "2006-01-02") "isPartOf" (dict "@type" "WebSite" "name" $hub.Site.Title "url" (absLangURL "/")) "mainEntity" (dict "@type" "ItemList" "numberOfItems" (len $items) "itemListElement" $items) | jsonify | safeJS }}</script>
 {{- end }}
 
 {{- /* FAQPage schema — auto-generated for any page that has a "faq" array
