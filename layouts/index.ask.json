@@ -1,0 +1,67 @@
+{{- /* ask-index.json — per-language answer index for the /ask/ Q&A engine.
+
+       Consumed by assets/js/ask.ts (one same-origin fetch, no user data sent).
+       Generated per language by the ASK output format registered on the home
+       page in config.toml, landing at /ask-index.json, /zh/ask-index.json and
+       /zh-hant/ask-index.json.
+
+       Two sections, both derived from sources that already exist:
+       · entries — every regular page's `faq` front matter (the same array
+         head.html turns into FAQPage schema). One entry per q/a pair, with the
+         source page URL/title/country so every answer can be cited. Adding a
+         FAQ to any page adds it to the tool — no second copy of any string.
+       · countries — roster + official_urls facts (display name in all three
+         languages for cross-language detection, form code, fee, official URL,
+         host, agency, last_verified, guide/how-to-fill links) so the engine
+         can answer "official site for X" directly and boost a country's
+         entries when the query names it.
+
+       Never hand-write this file; change the faq front matter or the TOML. */ -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $suffix := "en" -}}
+{{- $nameKey := "en" -}}
+{{- if eq $lang "zh" -}}{{- $suffix = "zh" -}}{{- $nameKey = "zh" -}}
+{{- else if eq $lang "zh-hant" -}}{{- $suffix = "zh_hant" -}}{{- $nameKey = "zht" -}}{{- end -}}
+{{- $roster := partial "country-roster.html" . -}}
+{{- $urls := hugo.Data.official_urls -}}
+{{- $countries := slice -}}
+{{- range $roster }}
+  {{- $c := index $urls .key -}}
+  {{- $meta := $c.meta -}}
+  {{- $form := index $c $meta.form_key -}}
+  {{- $host := replaceRE "^https?://" "" $form.url -}}
+  {{- $host = replaceRE "/$" "" $host -}}
+  {{- $countries = $countries | append (dict
+        "k" .key
+        "en" .en
+        "zh" .zh
+        "zht" .zht
+        "alias" ($meta.name_zh_hant | default "")
+        "code" .formCode
+        "name" (index $meta (printf "name_%s" $suffix))
+        "form" (index $meta (printf "form_name_%s" $suffix))
+        "fee" (index $meta (printf "fee_%s" $suffix))
+        "url" $form.url
+        "host" $host
+        "agency" $form.agency
+        "v" $form.last_verified
+        "guide" (printf "/%s/%s/" .key .guideSlug | relLangURL)
+        "htf" (printf "/%s/how-to-fill/" .key | relLangURL)
+  ) -}}
+{{- end -}}
+{{- $entries := slice -}}
+{{- range sort (where .Site.RegularPages "Params.faq" "!=" nil) "RelPermalink" -}}
+  {{- $u := .RelPermalink -}}
+  {{- $t := .Title -}}
+  {{- $ck := .Params.country | default "" -}}
+  {{- range .Params.faq -}}
+    {{- $entries = $entries | append (dict
+          "q" .q
+          "a" .a
+          "u" $u
+          "t" $t
+          "c" $ck
+    ) -}}
+  {{- end -}}
+{{- end -}}
+{{- jsonify (dict "entries" $entries "countries" $countries) -}}

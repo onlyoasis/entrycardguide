@@ -49,6 +49,18 @@
 {{- end }}
 <script src="{{ $search.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $search.Data.Integrity }}"{{ end }} defer></script>
 
+{{- /* Ask tool — Q&A engine on the /ask/ page only (gated like directory.js).
+       One same-origin fetch of the build-time /ask-index.json; matching runs
+       in the browser, nothing typed is ever sent. */ -}}
+{{- if .HasShortcode "ask" }}
+  {{- $askOpts := dict "targetPath" "js/ask.js" "minify" hugo.IsProduction "target" "es2020" "format" "iife" }}
+  {{- $ask := resources.Get "js/ask.ts" | js.Build $askOpts }}
+  {{- if hugo.IsProduction }}
+    {{- $ask = $ask | resources.Fingerprint "sha256" }}
+  {{- end }}
+<script src="{{ $ask.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $ask.Data.Integrity }}"{{ end }} defer></script>
+{{- end }}
+
 {{- partial "nav-script.html" . -}}
 
 {{- if eq .Section "library" }}

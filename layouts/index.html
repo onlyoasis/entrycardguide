@@ -53,9 +53,16 @@
 
 {{- $decideURL := "/decide/" | relLangURL -}}
 {{- $directoryURL := "/official-links/" | relLangURL -}}
+{{- $askURL := "/ask/" | relLangURL -}}
 {{- $aboutURL := "/about/" | relLangURL -}}
 {{- $methodologyURL := printf "%s#methodology" $aboutURL -}}
 {{- $thailandTdacURL := "/thailand/tdac/" | relLangURL -}}
+{{- /* FAQ-answer count for the tool 03 card — same harvest that feeds
+       /ask-index.json, so the number on the card matches the tool. */ -}}
+{{- $faqCount := 0 -}}
+{{- range where .Site.RegularPages "Params.faq" "!=" nil -}}
+  {{- $faqCount = add $faqCount (len .Params.faq) -}}
+{{- end -}}
 
 {{- /* ============================================================ */ -}}
 {{- /* Hero ─ editorial headline + provenance strip                  */ -}}
@@ -249,7 +256,7 @@
     {{ i18n "home_s03_headline" }}
   </h2>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
     <a href="{{ $decideURL }}" class="block border border-ink rounded-md p-8 text-ink no-underline bg-paper hover:bg-rule" style="transition: background-color 80ms ease;">
       <div class="text-meta font-mono uppercase text-muted mb-3">{{ i18n "home_tool01_kicker" }}</div>
       <h3 class="font-serif font-medium mb-3" style="font-size: 30px; letter-spacing: -0.01em; font-variation-settings: 'opsz' 144; margin-top: 0;">
@@ -293,6 +300,25 @@
         <span>{{ printf (i18n "home_tool02_meta2") $latestVerified | safeHTML }}</span>
         <span>·</span>
         <span>{{ i18n "home_tool02_meta3" }}</span>
+      </div>
+    </a>
+
+    {{- /* Tool 03 — the ask engine. Same border treatment as tool 01 so the
+           interactive tools read as a pair. */ -}}
+    <a href="{{ $askURL }}" class="block border border-ink rounded-md p-8 text-ink no-underline bg-paper hover:bg-rule" style="transition: background-color 80ms ease;">
+      <div class="text-meta font-mono uppercase text-muted mb-3">{{ i18n "home_tool03_kicker" }}</div>
+      <h3 class="font-serif font-medium mb-3" style="font-size: 30px; letter-spacing: -0.01em; font-variation-settings: 'opsz' 144; margin-top: 0;">
+        {{ i18n "home_tool03_title" | safeHTML }}
+      </h3>
+      <p class="m-0 mb-5">
+        {{ i18n "home_tool03_body" }}
+      </p>
+      <div class="font-mono text-xs text-muted flex flex-wrap gap-x-3 gap-y-1">
+        <span>{{ printf (i18n "home_tool03_meta1") $faqCount | safeHTML }}</span>
+        <span>·</span>
+        <span>{{ i18n "home_tool03_meta2" }}</span>
+        <span>·</span>
+        <span>{{ i18n "home_tool03_meta3" }}</span>
       </div>
     </a>
   </div>
