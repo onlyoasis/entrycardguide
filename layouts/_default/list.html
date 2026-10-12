@@ -67,6 +67,24 @@
   <p class="text-muted mt-lg" style="font-size: 21px; line-height: 1.5;">{{ . }}</p>
   {{- end }}
 
+  {{- /* Above-the-fold routes to the two guides, anchored on the form name.
+         Hubs were ranking for the form's head terms instead of the form page;
+         these links tell readers and crawlers which page answers them. */ -}}
+  {{- if $countryMeta }}
+  {{- $formPage := $.Site.GetPage (printf "/%s/%s" $section $countryMeta.guide_slug) -}}
+  {{- $howPage := $.Site.GetPage (printf "/%s/how-to-fill" $section) -}}
+  {{- if or $formPage $howPage }}
+  <ul class="list-none p-0 mt-lg mb-0 border-t border-rule">
+    {{- with $formPage }}
+    <li class="border-b border-rule py-3"><a href="{{ .RelPermalink }}" class="text-ink underline underline-offset-4">{{ $formName }} ({{ $countryMeta.form_code }}){{ i18n "hub_cta_official" }}</a> →</li>
+    {{- end }}
+    {{- with $howPage }}
+    <li class="border-b border-rule py-3"><a href="{{ .RelPermalink }}" class="text-ink underline underline-offset-4">{{ $countryMeta.form_code }}{{ i18n "hub_cta_howto" }}</a> →</li>
+    {{- end }}
+  </ul>
+  {{- end }}
+  {{- end }}
+
   <div class="mt-lg pt-4 border-t border-rule flex items-baseline gap-4 flex-wrap">
     <span class="text-meta font-mono uppercase text-muted">{{ i18n "share_rail_label" }}</span>
     {{- partial "share-buttons.html" . -}}

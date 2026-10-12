@@ -1,6 +1,6 @@
 // Upsert Traditional display siblings (`*_zh_hant`) next to every Simplified
-// display field (`*_zh`) in data/fields/*.toml, data/official_urls/*.toml and
-// data/changelog/*.toml.
+// display field (`*_zh`) in data/fields/*.toml, data/official_urls/*.toml,
+// data/changelog/*.toml and data/seo/*.toml (search-result title overrides).
 //
 //   node scripts/zh-hant/gen-data-toml.mjs [--check]
 //   (DATA_ROOT env overrides the data dir — test hook for isolated fixtures)
@@ -32,7 +32,9 @@ const ROOT = path.resolve(import.meta.dirname, "../..");
 const DATA_ROOT = process.env.DATA_ROOT ? path.resolve(process.env.DATA_ROOT) : path.join(ROOT, "data");
 const CHECK = process.argv.includes("--check");
 
-const SUBDIRS = ["fields", "official_urls", "changelog"];
+const SUBDIRS = ["fields", "official_urls", "changelog", "seo"];
+// seo/ holds optional search-title overrides; isolated fixtures may omit it.
+const OPTIONAL_SUBDIRS = new Set(["seo"]);
 const fatal = []; // unsupported syntax — early exit, both modes
 const problems = []; // missing/stale/orphan coverage findings — reported together
 let parsed = 0, inserted = 0, updated = 0, removed = 0, unchanged = 0;
@@ -193,6 +195,7 @@ function discoverFiles() {
     try {
       names = readdirSync(dir);
     } catch {
+      if (OPTIONAL_SUBDIRS.has(sub)) continue;
       fatal.push(`data dir missing: ${path.relative(ROOT, dir)}`);
       continue;
     }

@@ -3,7 +3,7 @@ title: "How to Fill the Dominican Republic E-Ticket (2026)"
 kicker: "Field-by-field walkthrough of the official DGM E-Ticket with common errors and what they mean. 8 minutes total."
 description: "Step-by-step guide to every field on the Dominican Republic E-Ticket. Free and independent."
 date: 2026-04-24
-lastmod: 2026-09-14
+lastmod: 2026-10-12
 country: "dominican"
 weight: 20
 layout: how-to-fill

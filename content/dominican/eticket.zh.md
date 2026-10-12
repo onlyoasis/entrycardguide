@@ -3,7 +3,7 @@ title: "多米尼加 E-Ticket 入境卡 2026 完整指南：官方网址、免�
 kicker: "多米尼加的 E-Ticket 是免费的。这里是官方 DGM 网址、所有字段，以及如何分辨真假。"
 description: "免费、独立的多米尼加 E-Ticket 中文指南。官方网址 eticket.migracion.gob.do，每个字段逐项讲解，永远免费。"
 date: 2026-04-24
-lastmod: 2026-09-14
+lastmod: 2026-10-12
 country: "dominican"
 weight: 10
 keywords: ["多米尼加 E-Ticket", "多米尼加入境卡", "蓬塔卡纳入境表", "DR E-Ticket"]

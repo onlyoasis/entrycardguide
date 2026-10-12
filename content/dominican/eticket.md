@@ -3,7 +3,7 @@ title: "Dominican Republic E-Ticket: Official Site, Free Form, No Fees (2026)"
 kicker: "The DR E-Ticket is free. Here is the official DGM site, every field it asks, and how to tell real from fake."
 description: "Free, independent 2026 guide to the Dominican Republic E-Ticket. Official URL eticket.migracion.gob.do, every field explained, no fees."
 date: 2026-04-24
-lastmod: 2026-09-14
+lastmod: 2026-10-12
 country: "dominican"
 weight: 10
 keywords: ["dominican republic e-ticket", "DR e-ticket", "dominican e-ticket official", "punta cana arrival form", "eticket.migracion.gob.do"]

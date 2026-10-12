@@ -2,7 +2,7 @@
 title: "多米尼加 E-Ticket 官方網站、免費填寫和 QR Code 指南"
 kicker: "關於多米尼加 E-Ticket 你需要知道的一切，不必經手任何中介。"
 description: "多米尼加 E-Ticket 中文指南：官方 DGM 網址 eticket.migracion.gob.do、免費填寫、QR Code、每個欄位怎麼填。"
-lastmod: 2026-09-14
+lastmod: 2026-10-12
 ---
 
 多米尼加 E-Ticket 是一份免費的電子表單，所有入境和離境旅客都必須填寫。它在 2021 年取代了紙質入境卡和離境卡，並且只在 `eticket.migracion.gob.do` 受理。

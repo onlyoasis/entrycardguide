@@ -7,7 +7,7 @@ country: "australia"
 weight: 20
 layout: how-to-fill
 keywords: ["澳大利亞 ETA App 怎麼申請", "AustralianETA App 官方", "澳大利亞 eVisitor 651 欄位", "澳大利亞 ETA NFC 護照", "澳大利亞 ETA 多少錢"]
-lastmod: 2026-07-29
+lastmod: 2026-10-12
 ---
 
 {{< official-link site="australia.eta601" >}}

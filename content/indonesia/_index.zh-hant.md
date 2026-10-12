@@ -2,7 +2,7 @@
 title: "印尼 All Indonesia 入境申報、e-CD 海關記錄和巴厘島入境指南"
 kicker: "關於印尼 All Indonesia 入境申報和 e-CD 海關記錄你需要知道的一切，不必經手任何中介。"
 description: "印尼 All Indonesia 中文指南：官方網址 allindonesia.imigrasi.go.id、免費入境申報、巴厘島/雅加達入境怎麼填。"
-lastmod: 2026-08-10
+lastmod: 2026-10-12
 ---
 
 印尼當前面向旅客的入境申報入口是 **All Indonesia**：`allindonesia.imigrasi.go.id`。它包含免費的海關申報記錄，也就是原 e-CD 流程對應的海關資訊。

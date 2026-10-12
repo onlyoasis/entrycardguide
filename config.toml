@@ -67,6 +67,8 @@ defaultContentLanguageInSubdir = false
     [languages.zh.params]
       description = "独立、免费、反诈骗的入境卡填写指南。"
       og_locale = "zh_CN"
+      # Per-page <title> suffix; the bilingual site title stays for schema/OG.
+      title_brand = "入境卡指南"
     # 国家页不放进主菜单：header 从 layouts/partials/country-roster.html 渲染
     # 一个「国家」下拉，roster 增长（11 → 30+）时导航永不折行。这里只保留跨页目的地。
     [[languages.zh.menu.main]]
@@ -110,6 +112,8 @@ defaultContentLanguageInSubdir = false
     [languages.zh-hant.params]
       description = "獨立、免費、反詐騙的入境卡填寫指南。"
       og_locale = "zh_TW"
+      # Per-page <title> suffix; the bilingual site title stays for schema/OG.
+      title_brand = "入境卡指南"
     [[languages.zh-hant.menu.main]]
       identifier = "decide"
       name = "決策工具"

@@ -3,7 +3,7 @@ title: "澳大利亚 ETA 多少钱？唯一官方入口是 AustralianETA App（2
 kicker: "ETA 601 没有官方网页表单，唯一官方申请途径是 AustralianETA App。"
 description: "澳大利亚 ETA 多少钱：ETA 601 没有签证申请费，但官方 App 收 20 澳元服务费；符合条件的欧洲护照可免费申请 eVisitor 651。"
 date: 2026-07-14
-lastmod: 2026-07-14
+lastmod: 2026-10-12
 country: "australia"
 weight: 10
 keywords: ["澳大利亚 ETA 多少钱", "澳大利亚 ETA 官网", "AustralianETA App 官方", "澳大利亚 ETA 费用", "eVisitor 651 免费", "澳洲电子签"]

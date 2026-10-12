@@ -150,6 +150,8 @@ hub_paid_authorisation: "：官方收费旅行授权，以及如何识别中介�
 hub_paid_evisa: "：官方收费电子签证，以及如何识别中介加价。"
 hub_free_form: "：免费表单，以及如何识别冒牌站点。"
 hub_all_pages: "§ 本国所有页面"
+hub_cta_official: "：官方网址、费用和适用对象"
+hub_cta_howto: "：每个字段怎么填"
 cf_crumb_suffix: "：官方网址与避坑指南"
 cf_news_intro: "%s 的外国入境者据报曾通过非官方网站填写这份免费表单。这是官方网址、每一个字段和如何识别真假。"
 cf_on_this_page: "本页目录"

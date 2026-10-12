@@ -150,6 +150,8 @@ hub_paid_authorisation: ", the official paid travel authorisation, and how to sp
 hub_paid_evisa: ", the official paid e-visa, and how to spot the middlemen who mark it up."
 hub_free_form: ", the free form, and how to spot the sites pretending to be it."
 hub_all_pages: "§ All pages on this country"
+hub_cta_official: ": official site, fee and who needs it"
+hub_cta_howto: ": how to fill every field"
 cf_crumb_suffix: ": official site & how to avoid scams"
 cf_news_intro: "%s of foreign arrivals were reported using non-official sites for this free form. Here is the official site, every field it asks, and how to tell real from fake."
 cf_on_this_page: "On this page"

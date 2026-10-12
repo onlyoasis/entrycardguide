@@ -2,7 +2,7 @@
 title: "Australian ETA App Official Guide: ETA 601 and Free eVisitor 651"
 kicker: "Australia has no official web form for ETA 601. Use the AustralianETA App, or the free eVisitor 651 route if your European passport is eligible."
 description: "Australia entry guide: official AustralianETA App, AUD $20 service charge, free eVisitor 651, App steps, validity, and documented middleman prices."
-lastmod: 2026-07-14
+lastmod: 2026-10-12
 ---
 
 There is **no official web application form for Australia ETA 601**. The only official ETA 601 application channel is the AustralianETA App from the Department of Home Affairs.

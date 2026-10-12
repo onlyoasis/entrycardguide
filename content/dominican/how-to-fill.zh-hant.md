@@ -9,7 +9,7 @@ keywords: ["多米尼加 E-Ticket 怎麼填", "DR E-Ticket 欄位", "蓬塔卡�
 layout: how-to-fill
 guide_title: "多米尼加 E-Ticket：行程資料與提交確認"
 walkthrough_first: true
-lastmod: 2026-09-14
+lastmod: 2026-10-12
 ---
 
 {{< official-link site="dominican.eticket" >}}

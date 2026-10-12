@@ -2,7 +2,7 @@
 title: "澳大利亞 ETA 多少錢？官方 App 與免費 eVisitor 651 指南"
 kicker: "澳大利亞 ETA 601 沒有官方網頁申請表。請使用 AustralianETA App；符合條件的歐洲護照可改走免費的 eVisitor 651。"
 description: "澳大利亞 ETA 中文指南：AustralianETA 官方 App、20 澳元服務費、免費 eVisitor 651、App 申請步驟、有效期和常見加價區間。"
-lastmod: 2026-08-10
+lastmod: 2026-10-12
 ---
 
 澳大利亞 ETA 601 **沒有官方網頁申請表**。唯一官方申請途徑，是澳大利亞內政部發布的 AustralianETA App。
