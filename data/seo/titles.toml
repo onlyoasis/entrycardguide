@@ -201,3 +201,10 @@ description = "How to fill the India e-Arrival Card in form order: the contact n
 ["indonesia/how-to-fill"]
 title = "Indonesia e-CD Customs Declaration: How to Fill Every Field"
 description = "How to fill Indonesia's free customs declaration (e-CD) on All Indonesia at allindonesia.imigrasi.go.id: passport number without spaces or dashes, arrival details, and every customs question."
+
+# ---- Global library: the roster carries the formal state name ----
+
+["library/gb"]
+title = "UK customs and cash declarations (£10,000 / €10,000): official links"
+title_zh = "英国海关与现金申报（1万英镑/1万欧元）：官方网址"
+title_zh_hant = "英國海關與現金申報（1萬英鎊/1萬歐元）：官方網址"
