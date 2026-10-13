@@ -2,7 +2,7 @@
 # 添加新 key 时同步更新 en.yaml。
 
 # 头部 / 导航
-brand_dot_label: "入境卡指南"
+brand_dot_label: "entrycardguide 入境卡指南"
 nav_main_label: "主导航"
 language_switcher_label: "语言"
 
