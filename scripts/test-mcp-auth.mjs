@@ -232,13 +232,17 @@ try {
     delayedEmail = `delivery-order-${deliveryOrder.join("")}@example.com`;
     delayedRequests = [];
     const ready = new Promise((resolve) => { notifyDelayed = resolve; });
-    const registrationPromises = [0, 1].map(() => register(context(post("register", { email: delayedEmail }, { ip: "203.0.113.4" }))));
+    // delayedRequests is indexed by the order the two sends reached the mail
+    // API, which need not match the order register() was called in. Pair each
+    // released send with whichever registration it unblocks.
+    const registrations = [0, 1].map((index) => register(context(post("register", { email: delayedEmail }, { ip: "203.0.113.4" }))).then((response) => ({ index, response })));
     await ready;
     delayedRequests[deliveryOrder[0]].resolve();
-    const firstRegistration = await registrationPromises[deliveryOrder[0]];
+    const first = await Promise.race(registrations);
+    const firstRegistration = first.response;
     const firstChallenge = await firstRegistration.json();
     delayedRequests[deliveryOrder[1]].resolve();
-    const lastRegistration = await registrationPromises[deliveryOrder[1]];
+    const lastRegistration = (await registrations[1 - first.index]).response;
     const lastChallenge = await lastRegistration.json();
     const lastCode = sent.find((message) => message.id === lastChallenge.challengeId).code;
     check(`out-of-order delivery ${deliveryOrder.join()} preserves one usable code`, firstRegistration.status === 202 && lastRegistration.status === 202 && db.sqlite.prepare("SELECT COUNT(*) AS n FROM mcp_login_codes WHERE user_id=(SELECT id FROM mcp_users WHERE email=?) AND consumed_at IS NULL AND delivered_at IS NOT NULL").get(delayedEmail).n === 1);
