@@ -6453,12 +6453,90 @@ export default {
         "jurisdiction_id": "CW",
         "review_status": "partial",
         "researched_at": "2026-09-28",
-        "procedures": [],
-        "sources": [],
+        "procedures": [
+          {
+            "id": "CW-currency-transport-report",
+            "type": "customs_declaration",
+            "name_en": "Cross-border money and valuables reporting",
+            "name_zh": "跨境资金及贵重物品报告",
+            "agency": "Douane Curaçao (Customs Curaçao), Ministerie van Financiën — under the Landsverordening aanmeldingsplicht van grensoverschrijdende geldtransporten (P.B. 2002, no. 74; consolidated text P.B. 2012, no. 9 (G.T.)), as amended in 2014 (amendment listed on the douane.cw page)",
+            "official_url": "https://douane.cw/particulier/reizigersbagage/melden-van-geldtransporten/",
+            "channel": "conditional",
+            "applicability_en": "Everyone entering or leaving Curaçao must report to the Douane (Customs) authorities the money, money-valued papers, precious metals, jewellery or other objects they carry worth NAF. 20,000 or more (threshold inclusive, 'of meer'); the same applies, in both directions, where persons who demonstrably travel together jointly carry money, precious metals, jewellery or other objects worth NAF. 20,000 or more in aggregate (the page's group sentence does not list money-valued papers). The douane.cw page still prints 'NAF. 20.000 of meer'. The Caribbean guilder (XCG) replaced the Netherlands Antillean guilder (ANG) as the official currency of the common Curaçao–Sint Maarten monetary union with effect from 31 March 2025, at a one-to-one rate, the change implemented by the Centrale Bank van Curaçao en Sint Maarten (Staatscourant 2025, 24285, published 2025-07-17 — a Kingdom official gazette notice naming both countries; it evidences only this issuance fact, not any Curaçao reporting rule); Art. 16(7) of the common Regeling correspondingly requires the two Lands to guarantee that the Art. 16 landsbesluiten (including the issuance-moment decision of Art. 16(1)) are uniform and carry one identical effective date. On that basis, by Art. 18(1)–(2) of the Regeling Gemeenschappelijk Geldstelsel Curaçao en Sint Maarten (CVDR230646) — a statutory inference, not wording taken from the customs page — the NAf references in this reporting ordinance read as Caribbean guilder at one-to-one, so the operative threshold for 2026 is XCG (Caribbean guilder) 20,000 or more, inclusive: same amount, no USD conversion implied. The actual filing vehicle is not established by any readable text: the page links downloadable English and Spanish report forms and states no paper-only rule and no online channel; the signed-written-declaration formula ('inleveren van een door de aanmelder ondertekende aangifte volgens een door de Minister vast te stellen model') sits in pre-2014-amendment texts whose 2014 successor is unread. For joint carrying of money, the readable pre-2014 texts rest the obligations on each traveller separately (Art. 2(1), second sentence, and Art. 2(2), second sentence); whether that each-person allocation equally covers the 2014-expanded valuables categories is unverified because the amendment text is unread. No fee is stated in any readable text.",
+            "applicability_zh": "每一入境或离开库拉索的人员，须就随身携带、价值达 NAF.20,000 及以上（门槛含本数，原文 'of meer'）的现金、有价票据、贵金属、珠宝或其他物品向海关（Douane）当局报告；确实共同旅行的人员在入境与出境两个方向合计携带现金、贵金属、珠宝或其他物品价值达 NAF.20,000 及以上（含本数）时同样适用（该合计句未列有价票据）。douane.cw 页面仍原样印 'NAF. 20.000 of meer'。Caribbean guilder（XCG）已于 2025 年 3 月 31 日起取代 Netherlands Antillean guilder（ANG）成为库拉索—圣马丁共同货币联盟的官方通货，汇率一比一，该更换由库拉索—圣马丁中央银行（CBCS）实施（《Staatscourant》2025 年第 24285 号，2025-07-17 刊发——王国官方公报通告，明指两国；仅证明此发行事实，并非库拉索申报规则）；共同规约 Art. 16(7) 亦相应规定两国须保证 Art. 16 所指 landsbesluiten（含 Art. 16(1) 的发行时点令）统一并载同一生效日。据此，依《库拉索—圣马丁共同货币制规约》（CVDR230646）Art. 18(1)–(2)——此为法定推断，非海关页措辞——本条例中的 NAf 引用按一比一视为 Caribbean guilder，2026 年现行门槛为 XCG（Caribbean guilder）20,000 及以上、含本数：金额不变，不换算为美元。实际提交载体无任何可读文本确立：页面链接可下载的英文/西班牙文申报表，既未言明仅收纸质，也未提供任何线上渠道；'提交由申报人签字、按部长核定式样的申报表'（inleveren van een door de aanmelder ondertekende aangifte volgens een door de Minister vast te stellen model）一语位于 2014 修订之前的旧文本，其 2014 后继正文未读。就合计携带现金的情形，可读的修订前文本使义务由各名旅客分别负担（Art. 2(1) 第二句、Art. 2(2) 第二句）；该各人分别负担的分配是否同样覆盖 2014 扩大的贵重物组别，因修订正文未读而未证。所有可读文本均未载任何手续费。",
+            "timing_en": "Stated only by the readable statutory texts, which predate the unread 2014 amendment (2012 consolidated text, Art. 2(4)–(6); whether the 2014 amendment touched these articles is unknown): on entry — at the latest when the customs officer can begin examining travellers' baggage and, where a control zone is instituted, before entering it; if no customs officer is present, immediately after passage to the nearest customs officer. On exit — at the latest when passport control begins or, if there is none, when baggage examination can begin; if no customs officer is present, before passage, to the nearest customs officer. If no customs officers are present in Curaçao, at the police of the Toelatingsorganisatie Curaçao. The douane.cw page itself states no timing and no submission route.",
+            "timing_zh": "仅由可读法条文本载明，且该等文本为 2014 修订（未读）之前的版本（2012 合并文本 Art. 2(4)–(6)；2014 修订是否改动这些条款未知）：入境——最迟于海关关员可开始查验旅客行李之时，设有监管区的须在进入监管区前；当场无海关关员的，通过后立即向最近的海关关员申报。出境——最迟于开始护照查验之时，无护照查验的最迟于可开始行李查验之时；当场无海关关员的，通过前向最近的海关关员申报。库拉索全岛无海关关员时，向入境组织（Toelatingsorganisatie Curaçao）警员申报。douane.cw 页面本身未列时点，亦未列提交途径。",
+            "fee": "unknown",
+            "source_ids": [
+              "CW-money-page",
+              "CW-money-page-group",
+              "CW-law-CVDR144080",
+              "CW-consolidated-2012",
+              "CW-monetary-law",
+              "CW-monetary-law-art18-2",
+              "CW-monetary-law-art16-7",
+              "CW-xcg-issuance-stcrt"
+            ],
+            "verified_at": "2026-09-28",
+            "name_zh_hant": "跨境資金及貴重物品報告",
+            "applicability_zh_hant": "每一入境或離開庫拉索的人員，須就隨身攜帶、價值達 NAF.20,000 及以上（門檻含本數，原文 'of meer'）的現金、有價票據、貴金屬、珠寶或其他物品向海關（Douane）當局報告；確實共同旅行的人員在入境與出境兩個方向合計攜帶現金、貴金屬、珠寶或其他物品價值達 NAF.20,000 及以上（含本數）時同樣適用（該合計句未列有價票據）。douane.cw 頁面仍原樣印 'NAF. 20.000 of meer'。Caribbean guilder（XCG）已於 2025 年 3 月 31 日起取代 Netherlands Antillean guilder（ANG）成為庫拉索—聖馬丁共同貨幣聯盟的官方通貨，匯率一比一，該更換由庫拉索—聖馬丁中央銀行（CBCS）實施（《Staatscourant》2025 年第 24285 號，2025-07-17 刊發——王國官方公報通告，明指兩國；僅證明此發行事實，並非庫拉索申報規則）；共同規約 Art. 16(7) 亦相應規定兩國須保證 Art. 16 所指 landsbesluiten（含 Art. 16(1) 的發行時點令）統一併載同一生效日。據此，依《庫拉索—聖馬丁共同貨幣制規約》（CVDR230646）Art. 18(1)–(2)——此為法定推斷，非海關頁措辭——本條例中的 NAf 引用按一比一視為 Caribbean guilder，2026 年現行門檻為 XCG（Caribbean guilder）20,000 及以上、含本數：金額不變，不換算為美元。實際提交載體無任何可讀文本確立：頁面連結可下載的英文/西班牙文申報表，既未言明僅收紙質，也未提供任何線上渠道；'提交由申報人簽字、按部長核定式樣的申報表'（inleveren van een door de aanmelder ondertekende aangifte volgens een door de Minister vast te stellen model）一語位於 2014 修訂之前的舊文本，其 2014 後繼正文未讀。就合計攜帶現金的情形，可讀的修訂前文本使義務由各名旅客分別負擔（Art. 2(1) 第二句、Art. 2(2) 第二句）；該各人分別負擔的分配是否同樣覆蓋 2014 擴大的貴重物組別，因修訂正文未讀而未證。所有可讀文本均未載任何手續費。",
+            "timing_zh_hant": "僅由可讀法條文本載明，且該等文本為 2014 修訂（未讀）之前的版本（2012 合併文本 Art. 2(4)–(6)；2014 修訂是否改動這些條款未知）：入境——最遲於海關關員可開始查驗旅客行李之時，設有監管區的須在進入監管區前；當場無海關關員的，通過後立即向最近的海關關員申報。出境——最遲於開始護照查驗之時，無護照查驗的最遲於可開始行李查驗之時；當場無海關關員的，通過前向最近的海關關員申報。庫拉索全島無海關關員時，向入境組織（Toelatingsorganisatie Curaçao）警員申報。douane.cw 頁面本身未列時點，亦未列提交途徑。"
+          }
+        ],
+        "sources": [
+          {
+            "id": "CW-money-page",
+            "url": "https://douane.cw/particulier/reizigersbagage/melden-van-geldtransporten/",
+            "title": "Melden van geldtransporten — Douane Curaçao",
+            "publisher": "Douane Curaçao, Ministerie van Financiën"
+          },
+          {
+            "id": "CW-money-page-group",
+            "url": "https://douane.cw/particulier/reizigersbagage/melden-van-geldtransporten/",
+            "title": "Melden van geldtransporten — Douane Curaçao",
+            "publisher": "Douane Curaçao, Ministerie van Financiën"
+          },
+          {
+            "id": "CW-law-CVDR144080",
+            "url": "https://lokaleregelgeving.overheid.nl/CVDR144080",
+            "title": "Landsverordening aanmeldingsplicht van grensoverschrijdende geldtransporten (P.B. 2002, no. 74) — CVDR144080",
+            "publisher": "Land Curaçao, via Lokale wet- en regelgeving (overheid.nl)"
+          },
+          {
+            "id": "CW-consolidated-2012",
+            "url": "https://douane.cw/wp-content/uploads/2019/05/Landsverordening_aanmeldingsplicht_van_grensoverschrijdende_geldtransporten.pdf",
+            "title": "Landsverordening aanmeldingsplicht van grensoverschrijdende geldtransporten, geconsolideerde tekst (P.B. 2012, no. 9) — Douane Curaçao",
+            "publisher": "Land Curaçao (Publicatieblad), gehost door douane.cw"
+          },
+          {
+            "id": "CW-monetary-law",
+            "url": "https://lokaleregelgeving.overheid.nl/CVDR230646",
+            "title": "Regeling Gemeenschappelijk Geldstelsel Curaçao en Sint Maarten (CVDR230646), Art. 18(1)",
+            "publisher": "Curaçao en Sint Maarten, via Lokale wet- en regelgeving (overheid.nl)"
+          },
+          {
+            "id": "CW-monetary-law-art18-2",
+            "url": "https://lokaleregelgeving.overheid.nl/CVDR230646",
+            "title": "Regeling Gemeenschappelijk Geldstelsel Curaçao en Sint Maarten (CVDR230646), Art. 18(2)",
+            "publisher": "Curaçao en Sint Maarten, via Lokale wet- en regelgeving (overheid.nl)"
+          },
+          {
+            "id": "CW-monetary-law-art16-7",
+            "url": "https://lokaleregelgeving.overheid.nl/CVDR230646",
+            "title": "Regeling Gemeenschappelijk Geldstelsel Curaçao en Sint Maarten (CVDR230646), Art. 16(7)",
+            "publisher": "Curaçao en Sint Maarten, via Lokale wet- en regelgeving (overheid.nl)"
+          },
+          {
+            "id": "CW-xcg-issuance-stcrt",
+            "url": "https://zoek.officielebekendmakingen.nl/stcrt-2025-24285.html",
+            "title": "Staatscourant 2025, 24285 — introductie Caribische gulden",
+            "publisher": "Staatscourant van het Koninkrijk der Nederlanden — Ministerie van Defensie"
+          }
+        ],
         "coverage": {
           "total_procedures": 1,
-          "published_procedures": 0,
-          "withheld_procedures": 1,
+          "published_procedures": 1,
+          "withheld_procedures": 0,
           "open_questions": 4
         }
       },
@@ -6785,12 +6863,121 @@ export default {
         "jurisdiction_id": "JM",
         "review_status": "partial",
         "researched_at": "2026-09-28",
-        "procedures": [],
-        "sources": [],
+        "procedures": [
+          {
+            "id": "JM-c5-declaration",
+            "type": "customs_declaration",
+            "name_en": "Immigration/Customs C5 Passenger Declaration (Electronic C5 via enterjamaica.gov.jm; physical card also accepted per PICA)",
+            "name_zh": "入境/海关C5旅客申报表（经enterjamaica.gov.jm电子C5；PICA亦接受实物卡）",
+            "agency": "Jamaica Customs Agency (JCA) with Passport, Immigration and Citizenship Agency (PICA)",
+            "official_url": "https://jca.gov.jm/individual/passenger/",
+            "channel": "online",
+            "applicability_en": "Since 1 September 2023 JCA mandates that all arriving passengers complete and submit an Electronic Passenger Declaration (C5) via enterjamaica.gov.jm for final clearance at its international airports, free of charge to visitors and residents (PICA helpdesk FAQ likewise states the online C5 is free). PICA's current travel-documents page requires every traveller entering Jamaica to present a completed and signed Immigration/Customs C5 form, either online or a physical form. The C5 itself asks whether the traveller carries currency or monetary instruments over US$10,000 or equivalent — a question on the same form, distinct from the separate POCA CTR filing — and whether goods exceed the personal duty-free allowance or include gifts/articles for resale. Duty-concession eligibility involves no separate submission: per the JCA Passenger Allowance page, passengers aged 18+ may receive an additional concession for other personal/household effects up to US$1,000 total value, not applicable to aircraft/ship crew; the 2020 paper C5 card instead prints a US$500 duty-free allowance plus duty-free tobacco/alcohol (200 cigarettes or 50 cigars or 230g tobacco; 1L spirits; 1L wine; 170ml perfumed spirits; 340ml toilet water) — the amount version skew is not reconciled here.",
+            "applicability_zh": "JCA规定自2023年9月1日起所有入境旅客须经enterjamaica.gov.jm完成并提交电子C5以在国际机场完成通关，访客与居民均免费（PICA客服FAQ亦明示线上C5免费）。PICA现行旅行证件页要求所有入境牙买加旅客出示已完成并签署的入境/海关C5表，线上或实物表均可。C5表内即询问是否携带超过10,000美元或等值现金/货币工具——此为同表问项，有别于独立的POCA CTR报告——并询问物品是否超过个人免税额或含转售礼品。关税优惠属资格认定、无独立提交程序：JCA Passenger Allowance页载18岁及以上旅客对其他个人/家用物品可获总额不超过1,000美元的额外优惠，飞机/船舶机组不适用；2020版纸质C5卡则印US$500免税额及免税烟酒量（200支香烟或50支雪茄或230克烟草、1升烈酒、1升葡萄酒、170毫升香水酒精及340毫升花露水）——两额版本差异此处未调和。",
+            "timing_en": "The online C5 may be completed up to 30 days before arrival; PICA also allows completing it on arrival at the airport (airport Wi-Fi, tablets and staff assistance available). No mandatory advance-filing window is stated.",
+            "timing_zh": "线上C5最早可于到达前30天内填写；PICA亦允许到达后在机场现场完成（提供Wi-Fi、平板与人员协助）。官方未规定必须提前提交的硬性时限。",
+            "fee": {
+              "amount": 0,
+              "currency": "JMD",
+              "note": "JCA页面明示访客与居民免费，PICA客服FAQ同证；free per JCA passenger page and PICA helpdesk FAQ."
+            },
+            "source_ids": [
+              "JM-jca-passenger",
+              "JM-pica-sea2",
+              "JM-jis-window",
+              "JM-c5-live",
+              "JM-c5-paper",
+              "JM-fee-faq",
+              "JM-jca-allowance"
+            ],
+            "verified_at": "2026-09-28",
+            "name_zh_hant": "入境/海關C5旅客申報表（經enterjamaica.gov.jm電子C5；PICA亦接受實物卡）",
+            "applicability_zh_hant": "JCA規定自2023年9月1日起所有入境旅客須經enterjamaica.gov.jm完成並提交電子C5以在國際機場完成通關，訪客與居民均免費（PICA客服FAQ亦明示線上C5免費）。PICA現行旅行證件頁要求所有入境牙買加旅客出示已完成並簽署的入境/海關C5表，線上或實物表均可。C5表內即詢問是否攜帶超過10,000美元或等值現金/貨幣工具——此為同表問項，有別於獨立的POCA CTR報告——並詢問物品是否超過個人免稅額或含轉售禮品。關稅優惠屬資格認定、無獨立提交程序：JCA Passenger Allowance頁載18歲及以上旅客對其他個人/家用物品可獲總額不超過1,000美元的額外優惠，飛機/船舶機組不適用；2020版紙質C5卡則印US$500免稅額及免稅菸酒量（200支香菸或50支雪茄或230克菸草、1升烈酒、1升葡萄酒、170毫升香水酒精及340毫升花露水）——兩額版本差異此處未調和。",
+            "timing_zh_hant": "線上C5最早可於到達前30天內填寫；PICA亦允許到達後在機場現場完成（提供Wi-Fi、平板與人員協助）。官方未規定必須提前提交的硬性時限。"
+          },
+          {
+            "id": "JM-currency-reference",
+            "type": "customs_declaration",
+            "name_en": "POCA Section 101 CTR — Report of International Transportation of Currency or Bearer-Negotiable Instruments (traveller filing)",
+            "name_zh": "POCA第101条CTR——跨境现金或无记名可转让票据国际运输报告（旅客提交）",
+            "agency": "Financial Investigations Division (FID), Ministry of Finance and the Public Service; traveller CTR filed with the Customs Officer in charge of the port of entry or departure",
+            "official_url": "https://jca.gov.jm/wp-content/uploads/2021/08/New-Cross-Border-Form-poca-101_ver.7_.x10270.pdf",
+            "channel": "paper",
+            "applicability_en": "Official FID form stating the report is required by Section 101(2) of the Proceeds of Crime Act 2007: every person who transports or causes the transportation of cash into or out of Jamaica exceeding US$10,000 (or its equivalent in any other currency) must report. Header: 'Declaration of Cash or BNI Exceeding US$10,000 or its equivalent in any other currency'. Part II is completed by persons entering/departing Jamaica, and 'WHEN AND WHERE TO FILE' directs travellers to file the CTR with the Customs Officer in charge of the port of entry or departure — a separate filing from the C5's same-form currency question. FID (October 2025): carrying cash across borders is not illegal, but any amount over US$10,000 must be declared with clear proof of source and purpose. Whether exactly US$10,000 triggers the duty remains unresolved; the verified wording is 'exceeding'/'over'. The form's shipper/mailer and person-in-charge-of-conveyance parts are cargo procedures, not traveller steps.",
+            "applicability_zh": "FID官方表载明本报告依据《2007年犯罪收益法》第101(2)条：任何人将超过10,000美元（或等值其他货币）现金运入或运出牙买加均须报告。表头为'DECLARATION OF CASH OR BNI EXCEEDING US$10,000 OR IT'S EQUIVALENT IN ANY OTHER CURRENCY'。第II部分由入/离牙买加人员填写，'WHEN AND WHERE TO FILE'指引旅客向入/出境港口主管海关官员提交CTR表——此为独立于C5同表现金问项的另一提交。FID（2025年10月）：跨境携带现金不违法，但超过10,000美元的任何金额均须申报并清楚证明来源与用途。恰好10,000美元是否触发义务仍未决（已核措辞为exceeding/over）。表的寄件人/货运及运输工具负责人部分属货运程序，非旅客步骤。",
+            "timing_en": "Stated as the form's own two separate provisions, not merged into one step: WHO MUST REPORT quotes the statutory requirement to report 'before the transportation takes place' to the Chief Technical Director of the Financial Investigations Division; WHEN AND WHERE TO FILE (A) directs travellers entering or leaving Jamaica to file the CTR form with the Customs Officer in charge of the port of entry or departure. The same page does not state how these two timings reconcile for an inbound traveller, so no definite 'file with Jamaica port customs before transportation begins' step is asserted.",
+            "timing_zh": "仅按表内两项原文分别转述，不合并为单一确定步骤：WHO MUST REPORT引法定措辞，须在运输发生前（'before the transportation takes place'）向金融调查部总技术主任（Chief Technical Director, FID）报告；WHEN AND WHERE TO FILE (A)指引进/离牙买加旅客向入/离境港口主管海关官员提交CTR表。同页未说明入境旅客两项时点如何调和，故不把'赴牙买加运输开始前须向牙买加港口海关提交'写成确定步骤。",
+            "fee": "unknown",
+            "source_ids": [
+              "JM-crossborder-form",
+              "JM-fid-2025"
+            ],
+            "verified_at": "2026-09-28",
+            "name_zh_hant": "POCA第101條CTR——跨境現金或無記名可轉讓票據國際運輸報告（旅客提交）",
+            "applicability_zh_hant": "FID官方表載明本報告依據《2007年犯罪收益法》第101(2)條：任何人將超過10,000美元（或等值其他貨幣）現金運入或運出牙買加均須報告。表頭為'DECLARATION OF CASH OR BNI EXCEEDING US$10,000 OR IT'S EQUIVALENT IN ANY OTHER CURRENCY'。第II部分由入/離牙買加人員填寫，'WHEN AND WHERE TO FILE'指引旅客向入/出境港口主管海關官員提交CTR表——此為獨立於C5同表現金問項的另一提交。FID（2025年10月）：跨境攜帶現金不違法，但超過10,000美元的任何金額均須申報並清楚證明來源與用途。恰好10,000美元是否觸發義務仍未決（已核措辭為exceeding/over）。表的寄件人/貨運及運輸工具負責人部分屬貨運程序，非旅客步驟。",
+            "timing_zh_hant": "僅按表內兩項原文分別轉述，不合併為單一確定步驟：WHO MUST REPORT引法定措辭，須在運輸發生前（'before the transportation takes place'）向金融調查部總技術主任（Chief Technical Director, FID）報告；WHEN AND WHERE TO FILE (A)指引進/離牙買加旅客向入/離境港口主管海關官員提交CTR表。同頁未說明入境旅客兩項時點如何調和，故不把'赴牙買加運輸開始前須向牙買加港口海關提交'寫成確定步驟。"
+          }
+        ],
+        "sources": [
+          {
+            "id": "JM-jca-passenger",
+            "url": "https://jca.gov.jm/individual/passenger/",
+            "title": "Passenger – Jamaica Customs Agency",
+            "publisher": "Jamaica Customs Agency"
+          },
+          {
+            "id": "JM-pica-sea2",
+            "url": "https://www.pica.gov.jm/immigration/travel-documents-required",
+            "title": "Travel Documents Required | Passport, Immigration and Citizenship Agency",
+            "publisher": "Passport, Immigration and Citizenship Agency (PICA)"
+          },
+          {
+            "id": "JM-jis-window",
+            "url": "https://jis.gov.jm/travellers-urged-to-complete-c5-form-before-arrival/",
+            "title": "Travellers Urged to Complete C5 Form Before Arrival – Jamaica Information Service",
+            "publisher": "Jamaica Information Service (quoting PICA Business Development and Communications Director)"
+          },
+          {
+            "id": "JM-c5-live",
+            "url": "https://enterjamaica.gov.jm/",
+            "title": "Electronic C5 | Passport Immigration and Citizenship Agency (PICA)",
+            "publisher": "PICA / Jamaica Customs Agency (enterjamaica.gov.jm)"
+          },
+          {
+            "id": "JM-c5-paper",
+            "url": "https://jca.gov.jm/wp-content/uploads/2020/07/C5new.x69017.pdf",
+            "title": "IMMIGRATION/CUSTOMS C5 CARD — paper form PDF (2 pages, JCA)",
+            "publisher": "Jamaica Customs Agency"
+          },
+          {
+            "id": "JM-fee-faq",
+            "url": "https://picahelpeu.freshdesk.com/support/solutions/articles/103000261003-what-is-the-cost-for-the-online-passenger-declaration-form-",
+            "title": "What is the Cost for the Online Passenger Declaration Form? : PICA Relationship Management",
+            "publisher": "PICA helpdesk (picahelpeu.freshdesk.com)"
+          },
+          {
+            "id": "JM-jca-allowance",
+            "url": "https://jca.gov.jm/individual/passenger/passenger-allowance/",
+            "title": "Passenger Allowance – Jamaica Customs Agency",
+            "publisher": "Jamaica Customs Agency"
+          },
+          {
+            "id": "JM-crossborder-form",
+            "url": "https://jca.gov.jm/wp-content/uploads/2021/08/New-Cross-Border-Form-poca-101_ver.7_.x10270.pdf",
+            "title": "Report of International Transportation of Currency or Bearer-Negotiable Instruments (POCA s.101) — Jamaica Customs Agency",
+            "publisher": "Financial Investigations Division, Ministry of Finance & the Public Service (hosted on jca.gov.jm)"
+          },
+          {
+            "id": "JM-fid-2025",
+            "url": "https://www.fid.gov.jm/fid-and-jamaica-customs-agency-operation-nets-cash-forfeiture-and-poca-convictions/",
+            "title": "Joint Border-Security Operation Nets Cash Forfeiture and POCA Convictions – Financial Investigations Divisions",
+            "publisher": "Financial Investigations Division (FID), Jamaica"
+          }
+        ],
         "coverage": {
           "total_procedures": 2,
-          "published_procedures": 0,
-          "withheld_procedures": 2,
+          "published_procedures": 2,
+          "withheld_procedures": 0,
           "open_questions": 4
         }
       },
@@ -13963,15 +14150,58 @@ export default {
       },
       {
         "jurisdiction_id": "JO",
-        "review_status": "blocked",
+        "review_status": "partial",
         "researched_at": "2026-09-29",
-        "procedures": [],
-        "sources": [],
+        "procedures": [
+          {
+            "id": "JO-customs-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Cash and bearer negotiable instruments declaration (strictly over JOD 10,000)",
+            "name_zh": "现金及无记名可转让票据申报（严格超过1万约旦第纳尔）",
+            "agency": "Jordan Customs Department",
+            "official_url": "https://www.customs.gov.jo/En/NewsDetails/JCD_IMPLEMENTS_NEW_MEASURES_IN_ANTIMONEY_LAUNDERING_AND_TERRORIST_FINANCING",
+            "channel": "conditional",
+            "applicability_en": "Under Article 23(a) of the Anti-Money Laundering and Counter Terrorist Financing Law No. (20) of 2021, any person entering or leaving the Kingdom must declare transported cash or bearer negotiable instruments (BNIs) to the Customs Department, on the form made for that purpose, when their value exceeds the threshold set by the National Committee. The Committee's Instructions for Declaring Cash and Cross-Border Bearer Negotiable Instruments for the Year 2021 (Article 3(a)) set that threshold at JOD 10,000 or its equivalent in foreign currencies, converted at Central Bank of Jordan rates. The threshold is strictly 'exceeds': exactly JOD 10,000 or less does not trigger the duty. The duty applies on both entry and exit. Customs may ask about the source and purpose of the cash (Article 23(b)), and seizes cash and BNIs that were not declared or were declared falsely (Article 24(a)). The law also covers cash sent by mail or cargo; this item covers what a traveller carries.",
+            "applicability_zh": "依据2021年第20号《反洗钱与反恐怖融资法》第23条(a)款，任何人入境或离开约旦王国时，所运送的现金或无记名可转让票据价值超过国家委员会确定的门槛的，须使用专门表格向海关部门申报。委员会发布的《2021年现金及跨境无记名可转让票据申报细则》第3条(a)款将该门槛定为10,000约旦第纳尔或等值外币，外币按约旦中央银行公布的汇率折算。门槛为严格“超过”：恰为或低于10,000第纳尔不触发义务。入境与出境均适用。海关可询问现金的来源与用途（第23条(b)款），对未申报或虚假申报的现金及票据予以扣押（第24条(a)款）。该法同样适用于经邮寄或货运寄送的现金；本条只涉及旅客随身携带的部分。",
+            "timing_en": "At the moment of arrival in or departure from the Kingdom, at the border crossing; one declaration per crossing direction when the threshold is exceeded.",
+            "timing_zh": "在抵达或离开王国的当时于口岸办理；超过门槛时按入境或出境方向各办一次申报。",
+            "fee": "unknown",
+            "source_ids": [
+              "JO-cash",
+              "JO-amlu-law20-art23",
+              "JO-amlu-instructions-2021-art3"
+            ],
+            "verified_at": "2026-10-13",
+            "name_zh_hant": "現金及無記名可轉讓票據申報（嚴格超過1萬約旦第納爾）",
+            "applicability_zh_hant": "依據2021年第20號《反洗錢與反恐怖融資法》第23條(a)款，任何人入境或離開約旦王國時，所運送的現金或無記名可轉讓票據價值超過國家委員會確定的門檻的，須使用專門表格向海關部門申報。委員會發布的《2021年現金及跨境無記名可轉讓票據申報細則》第3條(a)款將該門檻定為10,000約旦第納爾或等值外幣，外幣按約旦中央銀行公佈的匯率折算。門檻為嚴格“超過”：恰為或低於10,000第納爾不觸發義務。入境與出境均適用。海關可詢問現金的來源與用途（第23條(b)款），對未申報或虛假申報的現金及票據予以扣押（第24條(a)款）。該法同樣適用於經郵寄或貨運寄送的現金；本條只涉及旅客隨身攜帶的部分。",
+            "timing_zh_hant": "在抵達或離開王國的當時於口岸辦理；超過門檻時按入境或出境方向各辦一次申報。"
+          }
+        ],
+        "sources": [
+          {
+            "id": "JO-cash",
+            "url": "https://www.customs.gov.jo/En/NewsDetails/JCD_IMPLEMENTS_NEW_MEASURES_IN_ANTIMONEY_LAUNDERING_AND_TERRORIST_FINANCING",
+            "title": "JCD IMPLEMENTS NEW MEASURES IN ANTI-MONEY LAUNDERING AND TERRORIST FINANCING (news, published 2021-09-26)",
+            "publisher": "Jordan Customs Department"
+          },
+          {
+            "id": "JO-amlu-law20-art23",
+            "url": "https://www.amlu.gov.jo/ebv4.0/root_storage/en/eb_list_page/anti_money_laundering_and_counter_terrorist_financing__law_no._(20)_of_2021.pdf",
+            "title": "Anti Money Laundering and Counter Terrorist Financing Law No. (20) of 2021 — Anti Money Laundering and Counter Terrorist Financing Unit",
+            "publisher": "Anti Money Laundering and Counter Terrorist Financing Unit (AMLU), Jordan"
+          },
+          {
+            "id": "JO-amlu-instructions-2021-art3",
+            "url": "https://www.amlu.gov.jo/ebv4.0/root_storage/en/eb_list_page/instructions_for_declaring_cash_and_cross-border_bearer_negotiable_instruments_for_the_year_2021.pdf",
+            "title": "Instructions for Declaring Cash and Cross-Border Bearer Negotiable Instruments for the Year 2021 — Anti Money Laundering and Counter Terrorist Financing Unit",
+            "publisher": "Anti Money Laundering and Counter Terrorist Financing Unit (AMLU), Jordan"
+          }
+        ],
         "coverage": {
           "total_procedures": 3,
-          "published_procedures": 0,
-          "withheld_procedures": 3,
-          "open_questions": 3
+          "published_procedures": 1,
+          "withheld_procedures": 2,
+          "open_questions": 4
         }
       },
       {
@@ -14998,15 +15228,79 @@ export default {
       },
       {
         "jurisdiction_id": "RU",
-        "review_status": "blocked",
+        "review_status": "partial",
         "researched_at": "2026-09-27",
-        "procedures": [],
-        "sources": [],
+        "procedures": [
+          {
+            "id": "RU-cash-declaration-arrival",
+            "type": "customs_declaration",
+            "name_en": "Cash over USD 10,000 equivalent — declare on the EAEU passenger customs declaration (entering Russia)",
+            "name_zh": "入境俄罗斯携带超过等值1万美元现金——填写欧亚经济联盟旅客海关申报单",
+            "agency": "Federal Customs Service of Russia (FCS); rules set by the Customs Code of the Eurasian Economic Union",
+            "official_url": "https://eec.eaeunion.org/comission/department/dep_tamoj_zak/transferenceProduct.php",
+            "channel": "on_arrival",
+            "applicability_en": "Russia applies the Customs Code of the Eurasian Economic Union (EAEU) at its border. Cash and/or traveller's cheques must be declared when their total, brought in at one time, exceeds the equivalent of USD 10,000 at the exchange rate on the day the passenger customs declaration is filed (Customs Code Article 260(1)(7)); the whole amount is declared, not only the part above the threshold. At or below the equivalent of USD 10,000, declaring is optional. Bills of exchange, bank cheques and securities must be declared whatever the amount. The declaration is made on the passenger customs declaration (Article 260(3)), completing its annex for cash and monetary instruments. If the total exceeds the equivalent of USD 100,000, documents showing where the money came from must be submitted with the declaration. Where a two-channel system operates, travellers with goods to declare use the red channel (Article 257). This item covers entering Russia. Taking cash out of Russia is also subject to Russian national currency rules, which are not covered here.",
+            "applicability_zh": "俄罗斯在边境适用《欧亚经济联盟海关法典》。一次性带入的现金和/或旅行支票合计超过按旅客海关申报单提交当日汇率折算的等值1万美元时，须申报（海关法典第260条第1款第7项），且申报全部金额，而非仅超出部分。等于或低于等值1万美元的，可自愿申报。本票、银行支票和有价证券不论金额都须申报。申报使用旅客海关申报单（第260条第3款），并填写其中现金和货币票据的附页。合计超过等值10万美元的，须随申报单提交资金来源证明文件。设有红绿双通道的口岸，有应申报物品的旅客走红色通道（第257条）。本条只涉及入境俄罗斯。携带现金离开俄罗斯还受俄罗斯本国货币管制规定约束，本条不涉及。",
+            "timing_en": "On arrival, at customs control at the border crossing point: file the passenger customs declaration and use the red channel where one operates.",
+            "timing_zh": "入境时在口岸海关监管处：提交旅客海关申报单，设有红色通道的走红色通道。",
+            "fee": "unknown",
+            "source_ids": [
+              "RU-eec-customs-code-pdf",
+              "RU-eec-cash-threshold",
+              "RU-eec-cash-instruments",
+              "RU-eec-cash-100k",
+              "RU-tk-art260-ptd",
+              "RU-tk-art257-red"
+            ],
+            "verified_at": "2026-10-13",
+            "name_zh_hant": "入境俄羅斯攜帶超過等值1萬美元現金——填寫歐亞經濟聯盟旅客海關申報單",
+            "applicability_zh_hant": "俄羅斯在邊境適用《歐亞經濟聯盟海關法典》。一次性帶入的現金和/或旅行支票合計超過按旅客海關申報單提交當日匯率折算的等值1萬美元時，須申報（海關法典第260條第1款第7項），且申報全部金額，而非僅超出部分。等於或低於等值1萬美元的，可自願申報。本票、銀行支票和有價證券不論金額都須申報。申報使用旅客海關申報單（第260條第3款），並填寫其中現金和貨幣票據的附頁。合計超過等值10萬美元的，須隨申報單提交資金來源證明文件。設有紅綠雙通道的口岸，有應申報物品的旅客走紅色通道（第257條）。本條只涉及入境俄羅斯。攜帶現金離開俄羅斯還受俄羅斯本國貨幣管制規定約束，本條不涉及。",
+            "timing_zh_hant": "入境時在口岸海關監管處：提交旅客海關申報單，設有紅色通道的走紅色通道。"
+          }
+        ],
+        "sources": [
+          {
+            "id": "RU-eec-customs-code-pdf",
+            "url": "https://eec.eaeunion.org/upload/iblock/93c/TK-EAES.pdf",
+            "title": "Таможенный кодекс Евразийского экономического союза — Евразийская экономическая комиссия",
+            "publisher": "Eurasian Economic Commission (Евразийская экономическая комиссия)"
+          },
+          {
+            "id": "RU-eec-cash-threshold",
+            "url": "https://eec.eaeunion.org/comission/department/dep_tamoj_zak/transferenceProduct.php",
+            "title": "Перемещение физическими лицами товаров для личного пользования, а также наличных денежных средств и (или) денежных инструментов — Евразийская экономическая комиссия",
+            "publisher": "Eurasian Economic Commission (EEC)"
+          },
+          {
+            "id": "RU-eec-cash-instruments",
+            "url": "https://eec.eaeunion.org/comission/department/dep_tamoj_zak/transferenceProduct.php",
+            "title": "Перемещение физическими лицами товаров для личного пользования, а также наличных денежных средств и (или) денежных инструментов — Евразийская экономическая комиссия",
+            "publisher": "Eurasian Economic Commission (EEC)"
+          },
+          {
+            "id": "RU-eec-cash-100k",
+            "url": "https://eec.eaeunion.org/comission/department/dep_tamoj_zak/transferenceProduct.php",
+            "title": "Перемещение физическими лицами товаров для личного пользования, а также наличных денежных средств и (или) денежных инструментов — Евразийская экономическая комиссия",
+            "publisher": "Eurasian Economic Commission (EEC)"
+          },
+          {
+            "id": "RU-tk-art260-ptd",
+            "url": "https://eec.eaeunion.org/upload/iblock/93c/TK-EAES.pdf",
+            "title": "Таможенный кодекс Евразийского экономического союза — Евразийская экономическая комиссия",
+            "publisher": "Eurasian Economic Commission (EEC)"
+          },
+          {
+            "id": "RU-tk-art257-red",
+            "url": "https://eec.eaeunion.org/upload/iblock/93c/TK-EAES.pdf",
+            "title": "Таможенный кодекс Евразийского экономического союза — Евразийская экономическая комиссия",
+            "publisher": "Eurasian Economic Commission (EEC)"
+          }
+        ],
         "coverage": {
-          "total_procedures": 0,
-          "published_procedures": 0,
+          "total_procedures": 1,
+          "published_procedures": 1,
           "withheld_procedures": 0,
-          "open_questions": 1
+          "open_questions": 2
         }
       },
       {
