@@ -256,7 +256,7 @@
            - q: "Question text?"
              a: "Answer text."
 */ -}}
-{{- with .Params.faq }}
+{{- with partial "page-faq.html" . }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

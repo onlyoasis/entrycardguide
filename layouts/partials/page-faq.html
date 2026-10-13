@@ -1,0 +1,22 @@
+{{- /* Returns this page's FAQ as a list of {q, a} in the page language.
+       Front matter `faq` wins; otherwise data/seo/faq.toml, keyed like
+       data/seo/titles.toml by language-neutral path ("uk/how-to-fill"), with
+       q/a (en), q_zh/a_zh, and generated q_zh_hant/a_zh_hant. The data file
+       exists so adding questions does not touch the content file and move its
+       Git-derived "Last verified" date. Used by head.html (FAQPage JSON-LD)
+       and the how-to-fill layout (visible questions). */ -}}
+{{- $faq := .Params.faq -}}
+{{- if not $faq -}}
+  {{- $key := strings.TrimPrefix "/" .Path -}}
+  {{- $suffix := cond (eq .Site.Language.Lang "en") "" (printf "_%s" (replace .Site.Language.Lang "-" "_")) -}}
+  {{- $items := slice -}}
+  {{- with and $key (index (hugo.Data.seo.faq | default dict) $key) -}}
+    {{- range . -}}
+      {{- $q := index . (printf "q%s" $suffix) -}}
+      {{- $a := index . (printf "a%s" $suffix) -}}
+      {{- if and $q $a }}{{ $items = $items | append (dict "q" $q "a" $a) }}{{ end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $faq = $items -}}
+{{- end -}}
+{{- return $faq -}}

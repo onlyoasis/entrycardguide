@@ -295,6 +295,24 @@
 
 {{- end }}
 
+{{- /* FAQ front matter feeds the FAQPage JSON-LD in head.html; Google only
+       accepts FAQ markup for questions shown on the page, so render any
+       question the body text does not already contain. */ -}}
+{{- $body := .Content | plainify -}}
+{{- $faqShown := slice -}}
+{{- range partial "page-faq.html" . }}{{ if not (strings.Contains $body .q) }}{{ $faqShown = $faqShown | append . }}{{ end }}{{ end -}}
+{{- with $faqShown }}
+<section class="border-t border-rule pt-xl pb-xl" aria-labelledby="htf-faq">
+  <h2 id="htf-faq" class="font-serif font-medium mb-lg" style="font-size: 32px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144; margin-top: 0;">{{ i18n "htf_faq_heading" }}</h2>
+  <dl class="prose prose-lg max-w-none">
+    {{- range . }}
+    <dt class="font-medium">{{ .q }}</dt>
+    <dd class="ml-0 mb-md">{{ .a }}</dd>
+    {{- end }}
+  </dl>
+</section>
+{{- end }}
+
 {{- partial "related-guides.html" . -}}
 {{- partial "share-source.html" . -}}
 
