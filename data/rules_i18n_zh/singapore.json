@@ -1,0 +1,100 @@
+{
+ "ui": {
+  "fix": "修正 ✗",
+  "ok": "正确 ✓"
+ },
+ "fields": {
+  "passport": {
+   "label": "护照号码",
+   "help": "印在护照照片页上，只含字母和数字。",
+   "errors": {
+    "required": "请输入护照号码",
+    "tooShort": "护照号码太短——至少 6 个字符",
+    "tooLong": "护照号码太长——最多 12 个字符",
+    "invalidChars": "只能使用字母和数字——不含空格或符号",
+    "invalidFormat": "请输入照片页上印刷的字母与数字"
+   }
+  },
+  "full_name": {
+   "label": "全名（与护照相同）",
+   "help": "目前 ICA 的外国旅客表单提示先填名字、再填姓氏。本机检查器采用自己的长度上限。",
+   "errors": {
+    "required": "请输入全名",
+    "tooShort": "请输入护照上显示的姓名",
+    "tooLong": "最多 80 个字符",
+    "invalidChars": "使用护照上的拉丁拼写——不带重音符号或特殊字符"
+   }
+  },
+  "nationality": {
+   "label": "国籍",
+   "help": "签发你护照的国家。",
+   "errors": {
+    "required": "请选择国籍",
+    "invalidFormat": "请从下拉菜单中选择"
+   }
+  },
+  "date_of_birth": {
+   "label": "出生日期",
+   "help": "表单上为 DD/MM/YYYY，但本检查器接受 YYYY-MM-DD。",
+   "errors": {
+    "required": "请输入出生日期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "出生日期似乎过早——请再次确认",
+    "tooLate": "出生日期不能晚于今天"
+   }
+  },
+  "passport_expiry": {
+   "label": "护照效期",
+   "help": "请核对 ICA 对你旅行证件的效期要求；新加坡护照持有人的要求与外国旅客不同。",
+   "errors": {
+    "required": "请输入护照效期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "护照必须在抵达后至少还有 6 个月效期"
+   }
+  },
+  "flight_number": {
+   "label": "航班或船班编号",
+   "help": "航空公司两位 IATA 代码＋航班编号，无空格（例如新航 SQ32、酷航 TR123）。",
+   "errors": {
+    "required": "请输入航班号码",
+    "invalidFormat": "格式：航空公司代码＋编号（例如 SQ32），中间无空格。"
+   }
+  },
+  "arrival_date": {
+   "label": "抵达日期",
+   "help": "格式：YYYY-MM-DD——你抵达新加坡的日期（新加坡时间）。",
+   "errors": {
+    "required": "请输入抵达日期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "SGAC 必须在抵达前 3 天内提交",
+    "tooLate": "抵达日期似乎过远"
+   }
+  },
+  "accommodation": {
+   "label": "新加坡境内地址",
+   "help": "饭店名＋地址。新加坡居民请填家庭住址。",
+   "errors": {
+    "required": "请输入新加坡境内地址",
+    "tooLong": "最多 200 个字符"
+   }
+  },
+  "email": {
+   "label": "电子邮件",
+   "help": "确认信将寄到此信箱。",
+   "errors": {
+    "required": "请输入电子邮件",
+    "invalidFormat": "格式必须类似 name@example.com",
+    "tooLong": "电子邮件太长——最多 80 个字符"
+   }
+  }
+ }
+}

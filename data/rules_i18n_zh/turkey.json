@@ -1,0 +1,186 @@
+{
+ "ui": {
+  "fix": "修正 ✗",
+  "ok": "正确 ✓"
+ },
+ "fields": {
+  "nationality": {
+   "label": "国籍或旅行证件地区",
+   "help": "选择你将持用的护照的国籍或地区。官方系统以此答案检查豁免、资格、条件与价格。",
+   "errors": {
+    "required": "请选择国籍或地区",
+    "invalidOption": "请选择旅行证件的国籍或地区"
+   }
+  },
+  "travel_document_type": {
+   "label": "旅行证件类型",
+   "help": "选择确切的证件类型，通常为普通护照。外交、公务、特别、官方等证件规则可能不同。",
+   "errors": {
+    "required": "请选择旅行证件类型",
+    "invalidOption": "请选择证件上印刷或核发的确切类型"
+   }
+  },
+  "arrival_date": {
+   "label": "抵达土耳其日期",
+   "help": "填预计的首次抵达日期。电子签效力期间自官方申请中选择的日期起算。",
+   "errors": {
+    "required": "请输入抵达日期",
+    "invalidFormat": "本机检查器请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "抵达日期不能早于 2026-07-14"
+   }
+  },
+  "given_names": {
+   "label": "名（Given name(s)）",
+   "help": "输入护照上显示的所有名。官方团体指南设置含空格在内最多 50 字符。",
+   "errors": {
+    "required": "请输入名",
+    "tooShort": "请输入护照上显示的名",
+    "tooLong": "名不能超过 50 个字符",
+    "invalidChars": "使用护照上的拉丁拼写"
+   }
+  },
+  "surname": {
+   "label": "姓（Surname(s)）",
+   "help": "原样输入护照上的姓。仅当护照没有姓时才留空。官方团体指南设置最多 50 字符。",
+   "errors": {
+    "required": "请输入姓",
+    "tooShort": "请输入护照上显示的姓",
+    "tooLong": "姓不能超过 50 个字符",
+    "invalidChars": "使用护照上的拉丁拼写"
+   }
+  },
+  "date_of_birth": {
+   "label": "出生日期",
+   "help": "与护照日期一致。本机检查器使用 YYYY-MM-DD；官方传输指南使用 YYYYMMDD。",
+   "errors": {
+    "required": "请输入出生日期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooLate": "出生日期不能晚于 2026-07-14"
+   }
+  },
+  "place_of_birth": {
+   "label": "出生地",
+   "help": "从护照复制出生地。官方团体指南设置含空格在内最多 40 字符。",
+   "errors": {
+    "required": "请输入出生地",
+    "tooLong": "出生地不能超过 40 个字符"
+   }
+  },
+  "mothers_name": {
+   "label": "母亲姓名",
+   "help": "被要求时输入全部姓名。官方团体指南允许在未标示母亲姓名时留空，并设置最多 40 字符。",
+   "errors": {
+    "required": "请输入母亲姓名",
+    "tooShort": "请输入母亲姓名",
+    "tooLong": "母亲姓名不能超过 40 个字符",
+    "invalidChars": "只能使用拉丁字母、空格、短横或撇号"
+   }
+  },
+  "fathers_name": {
+   "label": "父亲姓名",
+   "help": "被要求时输入全部姓名。官方团体指南允许在未标示父亲姓名时留空，并设置最多 40 字符。",
+   "errors": {
+    "required": "请输入父亲姓名",
+    "tooShort": "请输入父亲姓名",
+    "tooLong": "父亲姓名不能超过 40 个字符",
+    "invalidChars": "只能使用拉丁字母、空格、短横或撇号"
+   }
+  },
+  "passport_number": {
+   "label": "旅行证件号码",
+   "help": "从先前选择的旅行证件原样复制号码。官方团体指南不允许空格与特殊字符，最多 16 字符。",
+   "errors": {
+    "required": "请输入旅行证件号码",
+    "tooShort": "请输入证件上印刷的号码",
+    "tooLong": "旅行证件号码不能超过 16 个字符",
+    "invalidChars": "只能使用大写字母和数字，不含空格",
+    "invalidFormat": "请输入证件上印刷的字母与数字"
+   }
+  },
+  "passport_issue_date": {
+   "label": "旅行证件签发日期",
+   "help": "与证件上的签发日期一致。本机检查器使用 YYYY-MM-DD。",
+   "errors": {
+    "required": "请输入签发日期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooLate": "签发日期不能晚于 2026-07-14"
+   }
+  },
+  "passport_expiry": {
+   "label": "旅行证件效期",
+   "help": "与证件效期一致。土耳其一般要求效期至少比允许停留多 60 天，官方资格结果可能要求更多。",
+   "errors": {
+    "required": "请输入证件效期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "该旅行证件已过期"
+   }
+  },
+  "email": {
+   "label": "电子邮件",
+   "help": "使用你自有的小写信箱。付款链接与电子签下载链接将以电子邮件寄送。官方团体指南设置最多 40 字符。",
+   "errors": {
+    "required": "请输入电子邮件",
+    "invalidFormat": "格式必须类似 name@example.com",
+    "tooLong": "官方团体指南中电子邮件不能超过 40 个字符"
+   }
+  },
+  "phone": {
+   "label": "电话号码",
+   "help": "包含国家/地区代码。官方团体指南显示上限 20 字符；本机检查器接受 7–15 位数的国际号码。",
+   "errors": {
+    "required": "请输入电话号码",
+    "invalidFormat": "请包含国家代码和 7–15 位数字",
+    "tooLong": "电话号码显示不能超过 20 个字符"
+   }
+  },
+  "home_address": {
+   "label": "居住地址",
+   "help": "填申请人目前的居住地址。官方团体指南设置含空格在内最多 200 字符。",
+   "errors": {
+    "required": "请输入居住地址",
+    "tooLong": "居住地址不能超过 200 个字符"
+   },
+   "placeholder": "街道、城市、地区、国家"
+  },
+  "supporting_document_type": {
+   "label": "辅助证件类型",
+   "help": "仅当官方资格结果要求有效的签证或居留许可作为支持时才填写。不符合所述条件时无法取得电子签。",
+   "errors": {
+    "required": "请选择辅助证件类型",
+    "invalidOption": "仅当官方结果要求时才选择签证或居留许可"
+   }
+  },
+  "supporting_document_issuer": {
+   "label": "辅助证件签发国家或地区",
+   "help": "选择签发辅助签证或居留许可的国家或地区。目前外交部国家规则常指申根、美国、英国或爱尔兰，但请以资格画面为准。",
+   "errors": {
+    "required": "请选择签发国家或地区",
+    "invalidOption": "请选择辅助证件上显示的签发方"
+   }
+  },
+  "supporting_document_expiry": {
+   "label": "辅助证件效期",
+   "help": "辅助证件有到期日时，请填写该日期。它必须在官方电子签系统显示的条件下保持有效。",
+   "errors": {
+    "required": "请输入辅助证件效期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "该辅助证件已过期"
+   }
+  }
+ }
+}

@@ -9,6 +9,7 @@
 | 内容页 `.zh-hant.md`（156 篇） | 由 `.zh.md` 经 `scripts/sync-zh-hant.mjs` 转换（**生成文件**） | 只改简体源或 `scripts/zh-hant/core.mjs` 的术语表，然后重新生成；不要手改生成文件（重跑会覆盖） |
 | 数据展示字段 `*_zh_hant`（150 个 TOML，当前共 2262 条，含英文缩写和空字符串） | 由 `*_zh` 源经 `scripts/zh-hant/gen-data-toml.mjs` 派生 | 只改 `_zh` 源或术语表，再同步；原字段、规则、日期和网址不因翻译而改变 |
 | 校验器与决策树人工覆写：`data/rules_i18n/*.json`、`scripts/zh-hant/tree-zh-hant.part*.json` | 英文源对应的人工翻译，受 `translation-sources.json` 陈旧检查保护 | 直接编辑这些人工源；英文源改变后复核翻译，再显式刷新快照 |
+| 简体校验器覆写：`data/rules_i18n_zh/*.json` | `scripts/zh/gen-rules-zh.mjs` 用 opencc 从繁体覆写 `data/rules_i18n/*.json` 生成（2026-10-13 起） | 不手改；用词在脚本 POST 表里改；`sync:zh-hant` 会重生成，`check:zh-hant` 用 `--check` 检查 |
 | `i18n/zh-hant.yaml` | `zh.yaml` 加 `gen-i18n.mjs` 的人工 `OVERRIDES` 表生成 | 改源文件或覆写表，再同步；由生成器 `--check` 检查，**不使用英文源快照** |
 | `data/decision/tree.zh-hant.json` | 原始树加人工覆写生成 | 不手改生成文件；由 `gen-tree.mjs --check` 检查 |
 

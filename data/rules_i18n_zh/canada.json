@@ -1,0 +1,104 @@
+{
+ "ui": {
+  "fix": "修正 ✗",
+  "ok": "正确 ✓"
+ },
+ "fields": {
+  "passport": {
+   "label": "护照号码",
+   "help": "使用护照照片页顶部的号码。IRCC 说明多数为 8–11 个字符。不要加空格、短横，也不要用底部机读区的号码。",
+   "errors": {
+    "required": "请输入护照号码",
+    "tooShort": "请输入照片页顶部的护照号码",
+    "tooLong": "请检查护照号码——本机检查器最多允许 20 个字符",
+    "invalidChars": "只能使用字母和数字——不含空格或短横",
+    "invalidFormat": "请输入照片页上印刷的字母与数字"
+   }
+  },
+  "family_name": {
+   "label": "姓（Family name）",
+   "help": "输入护照上显示的所有姓。可用机读区确认姓名顺序，但若机读行有缩写，以页面上半部的完整拼写为准。",
+   "errors": {
+    "required": "请输入姓（Family name）"
+   }
+  },
+  "given_names": {
+   "label": "名（Given names）",
+   "help": "输入护照上显示的所有名。保留允许的撇号、短横和法语重音符号；除非机读姓名中有，否则不要加头衔或亲属称谓。",
+   "errors": {
+    "required": "请输入名（Given names）"
+   }
+  },
+  "date_of_birth": {
+   "label": "出生日期",
+   "help": "在本机检查器中使用 YYYY-MM-DD 格式，并与护照日期一致。",
+   "errors": {
+    "required": "请输入出生日期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooLate": "出生日期不能晚于 2026-07-14"
+   }
+  },
+  "place_of_birth": {
+   "label": "出生地",
+   "help": "选择护照「出生地」栏显示的国家，并填写出生的城市、镇或村。若护照未列城市，请填实际出生地。",
+   "errors": {
+    "required": "请输入出生地"
+   }
+  },
+  "marital_status": {
+   "label": "婚姻状况",
+   "help": "依 IRCC 定义选择当前状况：已婚、合法分居、离婚、婚姻被撤销、丧偶、同居伴侣或从未结婚／单身。",
+   "errors": {
+    "required": "请选择婚姻状况",
+    "invalidOption": "请从官方婚姻状况选项中选择"
+   }
+  },
+  "occupation": {
+   "label": "职业与雇主或学校",
+   "help": "选择最接近的目前职业。适用时请填职称、雇主或学校、国家、城市及入职年份。",
+   "errors": {
+    "required": "请填写职业信息",
+    "invalidOption": "请选择最接近的官方职业选项"
+   }
+  },
+  "email": {
+   "label": "电子邮件",
+   "help": "请使用你可收信的有效信箱。IRCC 会把审核结果与补件要求寄到这里；为未成年人申请的家长可填家长信箱。",
+   "errors": {
+    "required": "请输入电子邮件",
+    "invalidFormat": "格式必须类似 name@example.com",
+    "tooLong": "电子邮件太长——本检查器最多 254 个字符"
+   }
+  },
+  "home_address": {
+   "label": "永久家庭住址",
+   "help": "填写永久居住地址，不要填临时地址或邮政信箱。IRCC 提醒邮政信箱可能导致申请被拒。",
+   "errors": {
+    "required": "请输入永久家庭住址"
+   }
+  },
+  "travel_date": {
+   "label": "预计旅行日期",
+   "help": "尚不清楚日期时可留空。若已确定，请填预计日期，并依官方表单填写已确认的航班时间。",
+   "errors": {
+    "required": "请输入预计旅行日期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "预计旅行日期不能早于 2026-07-14"
+   }
+  },
+  "background_questions": {
+   "label": "移民、犯罪与健康背景",
+   "help": "请如实回答每一项官方背景问题：拒签或遣返令、刑事犯罪、肺结核及列明的未治疗健康状况。每个「是」的答案都请提供完整细节。",
+   "errors": {
+    "required": "请回答所有背景问题",
+    "invalidOption": "每个官方问题请如实选择答案"
+   }
+  }
+ }
+}

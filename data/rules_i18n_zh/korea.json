@@ -1,0 +1,72 @@
+{
+ "ui": {
+  "fix": "修正 ✗",
+  "ok": "正确 ✓"
+ },
+ "fields": {
+  "passport": {
+   "label": "护照号码",
+   "help": "使用护照照片页上的护照号码。",
+   "errors": {
+    "required": "请输入护照号码",
+    "tooShort": "护照号码太短",
+    "tooLong": "护照号码太长",
+    "invalidChars": "只能使用字母和数字",
+    "invalidFormat": "请输入照片页上印刷的字母与数字"
+   }
+  },
+  "full_name": {
+   "label": "全名",
+   "help": "使用护照上的拉丁拼写。",
+   "errors": {
+    "required": "请输入全名",
+    "tooShort": "请输入护照上显示的姓名",
+    "tooLong": "最多 80 个字符",
+    "invalidChars": "只能使用拉丁字母"
+   }
+  },
+  "date_of_birth": {
+   "label": "出生日期",
+   "help": "在本机检查器中使用 YYYY-MM-DD 格式。",
+   "errors": {
+    "required": "请输入出生日期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "出生日期不能早于 1900-01-01",
+    "tooLate": "出生日期不能晚于 2026-12-31"
+   }
+  },
+  "flight_number": {
+   "label": "航班号码",
+   "help": "使用实际执飞的航班号码。",
+   "errors": {
+    "required": "请输入航班号码",
+    "invalidFormat": "格式：航空公司代码＋编号"
+   }
+  },
+  "arrival_date": {
+   "label": "抵达日期",
+   "help": "你抵达韩国的日期。",
+   "errors": {
+    "required": "请输入抵达日期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "抵达日期不能早于 2026-01-01",
+    "tooLate": "抵达日期不能晚于 2028-12-31"
+   }
+  },
+  "email": {
+   "label": "电子邮件",
+   "help": "确认信将寄到此信箱。",
+   "errors": {
+    "required": "请输入电子邮件",
+    "invalidFormat": "格式必须类似 name@example.com",
+    "tooLong": "电子邮件太长——最多 80 个字符"
+   }
+  }
+ }
+}

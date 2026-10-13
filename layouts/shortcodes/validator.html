@@ -21,6 +21,14 @@
     {{- errorf "validator shortcode: missing Traditional overlay at data/rules_i18n/%s.json" $country }}
   {{- end }}
   {{- $rules = merge $rules $overlay }}
+{{- else if eq .Site.Language.Lang "zh" }}
+  {{- /* Simplified overlay, generated from the Traditional one by
+         scripts/zh/gen-rules-zh.mjs (checked before every build). */ -}}
+  {{- $overlay := index hugo.Data.rules_i18n_zh $country }}
+  {{- if not $overlay }}
+    {{- errorf "validator shortcode: missing Simplified overlay at data/rules_i18n_zh/%s.json" $country }}
+  {{- end }}
+  {{- $rules = merge $rules $overlay }}
 {{- end }}
 {{- /* Copy sheet (docs/plans/2026-10-13-revenue-plan.md, A3) — only for the
        countries in site.Params.prefill_sheet.countries. Those validators list

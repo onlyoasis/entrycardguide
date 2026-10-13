@@ -1,0 +1,89 @@
+{
+ "ui": {
+  "fix": "修正 ✗",
+  "ok": "正确 ✓"
+ },
+ "fields": {
+  "passport": {
+   "label": "护照号码",
+   "help": "从你将持用的 VWP 电子护照原样复制号码。CBP 未公布固定长度，本检查器接受较宽的英数范围。",
+   "errors": {
+    "required": "请输入护照号码",
+    "tooShort": "请输入照片页上印刷的护照号码",
+    "tooLong": "请检查护照号码——本机检查器最多允许 20 个字符",
+    "invalidChars": "只能使用字母和数字",
+    "invalidFormat": "请输入照片页上印刷的字母与数字"
+   }
+  },
+  "full_name": {
+   "label": "全名",
+   "help": "以护照显示的拉丁拼写填入所有姓与名。",
+   "errors": {
+    "required": "请输入全名",
+    "tooShort": "请输入护照上显示的姓名",
+    "tooLong": "最多 80 个字符",
+    "invalidChars": "使用护照上的拉丁拼写"
+   }
+  },
+  "date_of_birth": {
+   "label": "出生日期",
+   "help": "在本机检查器中使用 YYYY-MM-DD 格式，与护照日期一致。",
+   "errors": {
+    "required": "请输入出生日期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooLate": "出生日期不能晚于 2026-07-13"
+   }
+  },
+  "email": {
+   "label": "电子邮件",
+   "help": "使用你自有的信箱。ESTA 需要验证电子邮件，申请编号将寄到这里。",
+   "errors": {
+    "required": "请输入电子邮件",
+    "invalidFormat": "格式必须类似 name@example.com",
+    "tooLong": "电子邮件太长——本检查器最多 254 个字符"
+   }
+  },
+  "phone": {
+   "label": "电话号码",
+   "help": "包含国家/地区代码。没有电话时，CBP 允许填一个可接通的第三方联系电话。",
+   "errors": {
+    "required": "请输入联系电话号码",
+    "invalidFormat": "请包含国家代码和 7–15 位数字"
+   }
+  },
+  "home_address": {
+   "label": "家庭住址",
+   "help": "填写目前的家庭住址。CBP 将家庭住址列为必填申请信息。",
+   "errors": {
+    "required": "请输入家庭住址"
+   },
+   "placeholder": "街道、城市、地区、国家"
+  },
+  "employer": {
+   "label": "现任或前任雇主",
+   "help": "回答是或否。若「是」，请填 ESTA 要求的现任或前任雇主信息；雇主地址与电话仅在有雇主可申报时适用。",
+   "errors": {
+    "required": "请回答是否有现任或前任雇主"
+   }
+  },
+  "us_contact": {
+   "label": "美国联系人",
+   "help": "可填朋友、亲属、商务联系人或你的住宿地点。不清楚时 CBP 允许填 UNKNOWN。",
+   "errors": {
+    "required": "请填美国联系人、住宿地点或 UNKNOWN"
+   },
+   "placeholder": "饭店名称或 UNKNOWN"
+  },
+  "social_media": {
+   "label": "社交媒体",
+   "help": "官方 ESTA 可打印版申请将此区标为选填。可自行加社区识别码、选择「无网络帐号」，或留空。",
+   "errors": {
+    "required": "请回答社交媒体问题",
+    "invalidOption": "请选择清单选项，或将此选填栏留空"
+   }
+  }
+ }
+}

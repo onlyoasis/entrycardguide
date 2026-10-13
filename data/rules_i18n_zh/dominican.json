@@ -1,0 +1,111 @@
+{
+ "ui": {
+  "fix": "修正 ✗",
+  "ok": "正确 ✓"
+ },
+ "fields": {
+  "passport": {
+   "label": "护照号码",
+   "help": "印在护照照片页上，只含字母和数字。",
+   "errors": {
+    "required": "请输入护照号码",
+    "tooShort": "护照号码太短——至少 6 个字符",
+    "tooLong": "护照号码太长——最多 12 个字符",
+    "invalidChars": "只能使用字母和数字——不含空格或符号",
+    "invalidFormat": "请输入照片页上印刷的字母与数字"
+   }
+  },
+  "given_name": {
+   "label": "名（Given name）",
+   "help": "与护照显示完全一致（仅拉丁字母）。",
+   "errors": {
+    "required": "请输入名（Given name）",
+    "tooShort": "请输入护照上显示的姓名",
+    "tooLong": "最多 50 个字符",
+    "invalidChars": "使用护照上的拉丁拼写——不带重音符号"
+   }
+  },
+  "family_name": {
+   "label": "姓（Family name）",
+   "help": "与护照显示完全一致（仅拉丁字母）。",
+   "errors": {
+    "required": "请输入姓（Family name）",
+    "tooShort": "请输入护照上显示的姓名",
+    "tooLong": "最多 50 个字符",
+    "invalidChars": "使用护照上的拉丁拼写——不带重音符号"
+   }
+  },
+  "nationality": {
+   "label": "国籍",
+   "help": "签发你护照的国家。",
+   "errors": {
+    "required": "请选择国籍",
+    "invalidFormat": "请从下拉菜单中选择"
+   }
+  },
+  "date_of_birth": {
+   "label": "出生日期",
+   "help": "格式：YYYY-MM-DD。",
+   "errors": {
+    "required": "请输入出生日期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "出生日期似乎过早——请再次确认",
+    "tooLate": "出生日期不能晚于今天"
+   }
+  },
+  "flight_number": {
+   "label": "航班或船班编号",
+   "help": "航空公司两位代码＋航班编号（例如 AA1234）。邮轮请填船舶识别号。",
+   "errors": {
+    "required": "请输入航班或船班编号",
+    "invalidFormat": "格式：航空公司代码＋编号（例如 AA1234），中间无空格。"
+   }
+  },
+  "arrival_date": {
+   "label": "抵达日期",
+   "help": "格式：YYYY-MM-DD——你抵达多米尼加的日期。",
+   "errors": {
+    "required": "请输入抵达日期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooLate": "抵达日期似乎过远",
+    "tooEarly": "抵达日期不能早于 2026-01-01"
+   }
+  },
+  "departure_date": {
+   "label": "离境日期",
+   "help": "格式：YYYY-MM-DD——你离开多米尼加的日期，填大约日期即可。",
+   "errors": {
+    "required": "请输入离境日期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "离境日期必须晚于或等于抵达日期",
+    "tooLate": "离境日期不能晚于 2027-12-31"
+   }
+  },
+  "accommodation": {
+   "label": "多米尼加地址或饭店",
+   "help": "你的住宿地点。旅游填饭店名＋城市即可。",
+   "errors": {
+    "required": "请输入多米尼加境内地址",
+    "tooLong": "最多 200 个字符"
+   }
+  },
+  "email": {
+   "label": "电子邮件",
+   "help": "QR Code 将寄到此信箱。请使用手机上可打开的信箱。",
+   "errors": {
+    "required": "请输入电子邮件",
+    "invalidFormat": "格式必须类似 name@example.com",
+    "tooLong": "电子邮件太长——最多 80 个字符"
+   }
+  }
+ }
+}

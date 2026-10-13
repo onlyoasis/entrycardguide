@@ -1,0 +1,108 @@
+{
+ "ui": {
+  "fix": "修正 ✗",
+  "ok": "正确 ✓"
+ },
+ "fields": {
+  "passport": {
+   "label": "护照号码",
+   "help": "印在护照照片页上，只含字母和数字。",
+   "errors": {
+    "required": "请输入护照号码",
+    "tooShort": "护照号码太短——至少 6 个字符",
+    "tooLong": "护照号码太长——最多 12 个字符",
+    "invalidChars": "只能使用字母和数字——不含空格或符号",
+    "invalidFormat": "请输入照片页上印刷的字母与数字"
+   }
+  },
+  "full_name": {
+   "label": "全名（与护照相同）",
+   "help": "与护照显示完全一致（仅拉丁字母）。MDAC 使用一个完整姓名字段，不分开填写名字与姓氏。",
+   "errors": {
+    "required": "请输入全名",
+    "tooShort": "请输入护照上显示的姓名",
+    "tooLong": "最多 80 个字符",
+    "invalidChars": "使用护照上的拉丁拼写——不带重音符号或特殊字符"
+   }
+  },
+  "nationality": {
+   "label": "国籍",
+   "help": "签发你护照的国家。",
+   "errors": {
+    "required": "请选择国籍",
+    "invalidFormat": "请从下拉菜单中选择"
+   }
+  },
+  "date_of_birth": {
+   "label": "出生日期",
+   "help": "格式：YYYY-MM-DD。",
+   "errors": {
+    "required": "请输入出生日期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "出生日期似乎过早——请再次确认",
+    "tooLate": "出生日期不能晚于今天"
+   }
+  },
+  "passport_expiry": {
+   "label": "护照效期",
+   "help": "必须比预计抵达日至少晚 6 个月",
+   "errors": {
+    "required": "请输入护照效期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "护照必须在抵达后至少还有 6 个月效期"
+   }
+  },
+  "flight_number": {
+   "label": "航班号码",
+   "help": "航空公司两位代码＋航班编号（例如 MH123、AK456），中间无空格。",
+   "errors": {
+    "required": "请输入航班号码",
+    "invalidFormat": "格式：航空公司代码＋编号（例如 MH123），中间无空格。"
+   }
+  },
+  "arrival_date": {
+   "label": "抵达日期",
+   "help": "格式：YYYY-MM-DD——你抵达马来西亚的日期。",
+   "errors": {
+    "required": "请输入抵达日期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "MDAC 必须在抵达前 3 天内提交",
+    "tooLate": "抵达日期似乎过远"
+   }
+  },
+  "port_of_entry": {
+   "label": "入境口岸",
+   "help": "机场 IATA 代码或指定的陆路口岸。",
+   "errors": {
+    "required": "请输入入境口岸",
+    "tooLong": "最多 60 个字符"
+   }
+  },
+  "accommodation": {
+   "label": "马来西亚境内地址",
+   "help": "旅游填饭店名＋城市即可。",
+   "errors": {
+    "required": "请输入马来西亚境内地址",
+    "tooLong": "最多 200 个字符"
+   }
+  },
+  "email": {
+   "label": "电子邮件",
+   "help": "确认信将寄到此信箱",
+   "errors": {
+    "required": "请输入电子邮件",
+    "invalidFormat": "格式必须类似 name@example.com",
+    "tooLong": "电子邮件太长——最多 80 个字符"
+   }
+  }
+ }
+}

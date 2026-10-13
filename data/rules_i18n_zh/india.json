@@ -1,0 +1,137 @@
+{
+ "ui": {
+  "fix": "修正 ✗",
+  "ok": "正确 ✓"
+ },
+ "fields": {
+  "full_name": {
+   "label": "全名（与护照相同）",
+   "help": "从你将持用入境印度的护照复制完整拉丁字母姓名。不要省略中间名。",
+   "errors": {
+    "required": "请输入全名",
+    "tooShort": "请输入护照上显示的姓名",
+    "tooLong": "请检查姓名；本机检查器最多允许 100 个字符",
+    "invalidChars": "使用护照上显示的拉丁拼写"
+   }
+  },
+  "nationality": {
+   "label": "国籍或地区",
+   "help": "选择你将在印度移民局出示的护照的国籍或地区。",
+   "errors": {
+    "required": "请选择国籍或地区",
+    "invalidOption": "请选择护照显示的国籍或地区"
+   }
+  },
+  "passport_number": {
+   "label": "护照号码",
+   "help": "从照片页复制护照号码。官方表单未公布统一长度上限，本检查器采用较宽的英数范围。",
+   "errors": {
+    "required": "请输入护照号码",
+    "tooShort": "请输入照片页上印刷的护照号码",
+    "tooLong": "请检查护照号码；本机检查器最多允许 20 个字符",
+    "invalidChars": "只能使用字母和数字，不含空格或机读区填充符",
+    "invalidFormat": "请输入照片页上印刷的字母与数字"
+   }
+  },
+  "visa_or_oci_number": {
+   "label": "签证、电子签或 OCI 号码",
+   "help": "填适用于你的旅行许可：持签证者填签证或电子签参考号，OCI 卡持有者填 OCI 号码。本卡不能取代该许可。",
+   "errors": {
+    "required": "请填写适用的签证、电子签或 OCI 号码"
+   },
+   "placeholder": "ETA 或 OCI 号码"
+  },
+  "purpose": {
+   "label": "到访目的",
+   "help": "选择与本次进程相符的选项：观光、商务、医疗、会议、就学、就业、公务或其他。",
+   "errors": {
+    "required": "请选择到访目的",
+    "invalidOption": "请选择与本次进程相符的目的"
+   }
+  },
+  "arrival_date": {
+   "label": "抵达印度日期",
+   "help": "填你抵达印度的当地日期。官方表单显示 DD/MM/YYYY；本机检查器使用 YYYY-MM-DD。请在抵达前 72 小时内提交。",
+   "errors": {
+    "required": "请输入抵达日期",
+    "invalidFormat": "本机检查器请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "抵达日期不能早于 2026-07-14"
+   }
+  },
+  "flight_number": {
+   "label": "航班号码",
+   "help": "填降落在印度的航班，不是订票代号。政府指引将航班信息列为应备数据。",
+   "errors": {
+    "required": "请输入航班号码",
+    "invalidFormat": "请使用航空公司代码＋航班编号，例如 AI302 或 SQ406"
+   }
+  },
+  "countries_visited_last_6_days": {
+   "label": "最近 6 天到访的国家",
+   "help": "选择官方表单要求申报的前 6 天到访国家；确实未到访请选「未到访任何国家」。",
+   "errors": {
+    "required": "请列出国家或选择「未到访任何国家」"
+   }
+  },
+  "india_address": {
+   "label": "印度境内地址",
+   "help": "填第一家饭店、接待人或住所的完整地址，不要只填城市名。",
+   "errors": {
+    "required": "请输入印度境内地址"
+   },
+   "placeholder": "饭店名称、街道、城市"
+  },
+  "state": {
+   "label": "邦或联邦属地",
+   "help": "选择印度地址所在的邦或联邦属地。不确定时请向饭店或接待人确认。",
+   "errors": {
+    "required": "请选择邦或联邦属地",
+    "invalidOption": "请选择地址所在的邦或联邦属地"
+   }
+  },
+  "district": {
+   "label": "县区（District）",
+   "help": "选择包含该印度地址的县区。它不一定与城市名相同。",
+   "errors": {
+    "required": "请选择县区",
+    "invalidOption": "请选择地址所在的县区"
+   }
+  },
+  "email": {
+   "label": "电子邮件",
+   "help": "请使用旅行期间可打开的信箱，提交前确认网域。",
+   "errors": {
+    "required": "请输入电子邮件",
+    "invalidFormat": "格式必须类似 name@example.com",
+    "tooLong": "电子邮件太长；本机检查器最多允许 254 个字符"
+   }
+  },
+  "contact_number": {
+   "label": "联系电话",
+   "help": "填印度移民局能联系到你的国家/地区代码＋号码。",
+   "errors": {
+    "required": "请输入联系电话",
+    "invalidFormat": "请包含国家代码和 7–15 位数字"
+   }
+  },
+  "emergency_contact_number": {
+   "label": "紧急联系电话",
+   "help": "如填写，请用另一个可接通的联系人并包含国家/地区代码。",
+   "errors": {
+    "required": "请输入紧急联系电话",
+    "invalidFormat": "请包含国家代码和 7–15 位数字"
+   }
+  },
+  "declaration": {
+   "label": "真实性与准确性声明",
+   "help": "确认信息真实无误后再勾选。官方警示：虚假信息可能导致拒绝入境或法律后果。",
+   "errors": {
+    "required": "提交前请先确认声明",
+    "invalidOption": "检查所有答案后再确认"
+   }
+  }
+ }
+}

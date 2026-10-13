@@ -1,0 +1,90 @@
+{
+ "ui": {
+  "fix": "修正 ✗",
+  "ok": "正确 ✓"
+ },
+ "fields": {
+  "passport": {
+   "label": "护照号码",
+   "help": "印在护照照片页上，通常以字母开头。",
+   "errors": {
+    "required": "请输入护照号码",
+    "tooShort": "护照号码太短——至少 6 个字符",
+    "tooLong": "护照号码太长——最多 9 个字符",
+    "invalidChars": "只能使用字母和数字——不含空格或符号",
+    "invalidFormat": "大多数护照以字母开头，请再次确认。"
+   }
+  },
+  "given_name": {
+   "label": "名（Given name）",
+   "help": "与护照显示完全一致（仅拉丁字母）。",
+   "errors": {
+    "required": "请输入名（Given name）",
+    "tooShort": "请输入护照上显示的姓名",
+    "tooLong": "最多 40 个字符。请使用护照上显示的拉丁缩写。",
+    "invalidChars": "使用护照上的拉丁拼写——不带重音符号或特殊字符"
+   }
+  },
+  "family_name": {
+   "label": "姓（Family name）",
+   "help": "与护照显示完全一致（仅拉丁字母）。",
+   "errors": {
+    "required": "请输入姓（Family name）",
+    "tooShort": "请输入护照上显示的姓名",
+    "tooLong": "最多 40 个字符",
+    "invalidChars": "使用护照上的拉丁拼写——不带重音符号或特殊字符"
+   }
+  },
+  "date_of_birth": {
+   "label": "出生日期",
+   "help": "格式：YYYY-MM-DD。",
+   "errors": {
+    "required": "请输入出生日期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "出生日期似乎过早——请再次确认",
+    "tooLate": "出生日期不能晚于今天"
+   }
+  },
+  "flight_number": {
+   "label": "航班号码",
+   "help": "航空公司两位代码＋航班编号，无空格（例如 TG312、UA1234）。",
+   "errors": {
+    "required": "请输入航班号码",
+    "invalidFormat": "格式：航空公司代码＋编号（例如 TG312、UA1234），中间无空格。"
+   }
+  },
+  "arrival_date": {
+   "label": "抵达日期",
+   "help": "格式：YYYY-MM-DD——你抵达泰国的日期。",
+   "errors": {
+    "required": "请输入抵达日期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "TDAC 必须在抵达前 3 天内提交",
+    "tooLate": "抵达日期似乎过远"
+   }
+  },
+  "email": {
+   "label": "电子邮件",
+   "help": "确认信将寄到此信箱。请使用手机上可打开的信箱。",
+   "errors": {
+    "required": "请输入电子邮件",
+    "invalidFormat": "格式必须类似 name@example.com",
+    "tooLong": "电子邮件太长——最多 80 个字符"
+   }
+  },
+  "phone": {
+   "label": "电话号码",
+   "help": "请包含国家/地区代码。",
+   "errors": {
+    "required": "请输入电话号码",
+    "invalidFormat": "请包含国家代码，例如 +1 415 555 0100"
+   }
+  }
+ }
+}

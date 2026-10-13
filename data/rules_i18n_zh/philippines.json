@@ -1,0 +1,80 @@
+{
+ "ui": {
+  "fix": "修正 ✗",
+  "ok": "正确 ✓"
+ },
+ "fields": {
+  "passport": {
+   "label": "护照号码",
+   "help": "使用护照照片页上的护照号码，无空格或短横。",
+   "errors": {
+    "required": "请输入护照号码",
+    "tooShort": "护照号码太短——至少 6 个字符",
+    "tooLong": "护照号码太长——最多 12 个字符",
+    "invalidChars": "只能使用字母和数字——不含空格或符号",
+    "invalidFormat": "请输入照片页上印刷的字母与数字"
+   }
+  },
+  "full_name": {
+   "label": "全名",
+   "help": "官方表单将 First / Middle / Last / Suffix 分栏填写。请使用护照上的拉丁拼写。",
+   "errors": {
+    "required": "请输入全名",
+    "tooShort": "请输入护照上显示的姓名",
+    "tooLong": "最多 80 个字符",
+    "invalidChars": "只能使用拉丁字母"
+   }
+  },
+  "date_of_birth": {
+   "label": "出生日期",
+   "help": "官方表单日期栏为 MM/DD/YYYY；本机检查器接受 YYYY-MM-DD。",
+   "errors": {
+    "required": "请输入出生日期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "出生日期似乎过早",
+    "tooLate": "出生日期不能晚于今天"
+   }
+  },
+  "mobile_number": {
+   "label": "移动电话号码",
+   "help": "请包含国家/地区代码。本机检查器接受 + 加 7 至 15 位数字。",
+   "errors": {
+    "required": "请输入移动电话号码",
+    "invalidFormat": "请使用 + 国家代码加 7 至 15 位数字"
+   }
+  },
+  "flight_number": {
+   "label": "航班号码",
+   "help": "实际执飞航空公司代码＋编号。海路旅客改填航次（Voyage Number）与船名。",
+   "errors": {
+    "required": "请输入航班号码",
+    "invalidFormat": "格式：航空公司代码＋编号，例如 PR103"
+   }
+  },
+  "arrival_date": {
+   "label": "抵达日期",
+   "help": "你落地当地的日期（当地时间）。表单显示 MM/DD/YYYY；本检查器接受 YYYY-MM-DD。注册于抵达前 72 小时开放。",
+   "errors": {
+    "required": "请输入抵达日期",
+    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "抵达日期不能早于 2026-01-01",
+    "tooLate": "抵达日期不能晚于 2028-12-31"
+   }
+  },
+  "email": {
+   "label": "电子邮箱地址",
+   "help": "请使用机场也能打开的信箱。注册会寄 6 位 OTP 到此。",
+   "errors": {
+    "required": "请输入电子邮箱地址",
+    "invalidFormat": "格式必须类似 name@example.com",
+    "tooLong": "电子邮件太长——最多 80 个字符"
+   }
+  }
+ }
+}
