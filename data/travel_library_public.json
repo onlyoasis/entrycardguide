@@ -16102,12 +16102,97 @@
       "jurisdiction_id": "GB",
       "review_status": "partial",
       "researched_at": "2026-09-28",
-      "procedures": [],
-      "sources": [],
+      "procedures": [
+        {
+          "id": "GB-customs-rules-reference",
+          "type": "customs_declaration",
+          "name_en": "Passenger goods declaration and cash declarations (Great Britain £10,000; Northern Ireland €10,000) — HM Revenue & Customs (HMRC)",
+          "name_zh": "旅客物品申报与现金申报（大不列颠1万英镑；北爱尔兰1万欧元）——英国皇家税务与海关总署（HMRC）",
+          "agency": "HM Revenue & Customs (HMRC)",
+          "official_url": "https://www.gov.uk/duty-free-goods",
+          "channel": "conditional",
+          "applicability_en": "Direction: travellers bringing goods into the UK for personal use. Per HMRC: the goods you can bring without paying UK tax or duty are your ‘personal allowance’; you must declare all commercial goods (no personal allowances for goods to sell or use in business); before crossing the UK border you must declare goods where you go over your allowances, and goods that are banned or restricted; if you go over an allowance you pay tax and duty on all the goods in that category; goods can be declared online from 5 days (120 hours) before arrival; goods and vehicles may be seized, and travellers fined or prosecuted for breaking the rules. Allowance rules differ depending on whether you arrive in Great Britain or Northern Ireland. Personal allowance amounts (captured for travellers to Great Britain (England, Wales or Scotland) from outside the UK; you must transport the goods yourself and use them yourself or give them away as gifts): alcohol — you can bring in both beer 42 litres and still wine 18 litres, plus either 4 litres of spirits and other liquors over 22% alcohol or 9 litres of other alcoholic drinks up to 22% alcohol (not including beer or still wine, e.g. sparkling wine, fortified wine, cider), and this either/or allowance can be split between the two; tobacco — one of 200 cigarettes, 100 cigarillos, 50 cigars, 250g tobacco or 200 sticks of tobacco for electronic heated tobacco devices, and this allowance can be split; there is no alcohol or tobacco allowance if you are under 17 (you can still bring alcohol and tobacco for your own use but you must declare it and pay tax and duty on the full amount); other goods up to £390, or up to £270 if you arrive by private plane or boat. You cannot combine your personal allowance with anyone else’s. These amounts are tax-free allowances, not a stand-alone declaration duty: a duty to declare arises only for commercial goods, goods over your allowances (tax and duty then apply to all the goods in that category — for other goods, to the total value of the goods, not just the value above the allowance) and banned or restricted goods. The amounts above are captured for arrivals in Great Britain from outside the UK only and must not be applied to Northern Ireland. Northern Ireland (Arriving in Northern Ireland page; the rules and allowances depend on whether you are travelling from the EU or another country). Arriving in Northern Ireland from the EU: you do not need to declare or pay tax or duty on any goods you bring into Northern Ireland from the EU as long as you transport them yourself, will use them yourself or give them away as a gift, and have paid tax and duty in the country where you bought them; these rules are the same as before 1 January 2021; if you are bringing in goods from the Canary Islands, the north of Cyprus, Gibraltar or the Channel Islands you must follow the rules for countries outside the EU. If a customs officer thinks you may be bringing in goods to sell, they may check your goods and ask questions to find out if the goods are for personal use. Although there are no limits to the alcohol and tobacco you can bring in from EU countries, you are more likely to be asked questions if you have more than the following indicative amounts, which are questioning guidance only — not legal allowances and not by themselves a duty to declare: cigarettes 800, cigars 200, cigarillos 400, tobacco 1kg, 800 sticks of tobacco for electronic heated tobacco devices, beer 110 litres, wine 90 litres, spirits 10 litres, fortified wine (for example sherry, port) 20 litres. Arriving in Northern Ireland from outside the EU (you must transport the goods yourself and use them yourself or give them away as a gift; you cannot combine your personal allowance with anyone else’s): alcohol — you can bring in both beer 16 litres and still wine 4 litres, plus either 1 litre of spirits and other liquors over 22% alcohol or 2 litres of other alcoholic drinks up to 22% alcohol (not including beer or still wine, e.g. sparkling wine, fortified wine, cider), and this either/or allowance can be split; tobacco — one of 200 cigarettes, 100 cigarillos, 50 cigars, 250g tobacco or 200 sticks of tobacco for electronic heated tobacco devices, and this allowance can be split; there is no alcohol or tobacco allowance if you are under 17 (you can still bring alcohol and tobacco for your own use, but you must pay tax and duty on them before you arrive in the UK); other goods up to £390, or up to £270 if you arrive by private plane or boat. If you go over your allowances you must declare all your goods and pay tax and duty on all the goods in that category, and for other goods you pay tax and duty on the total value of the goods, not just the value above your allowance; you may also have to pay customs duty if you exceed your allowance, and import VAT may apply on the total value of the goods plus duty at the current UK VAT rate; your goods could be seized if you do not declare them. Travelling from Great Britain to Northern Ireland is governed by separate rules and the arrival allowances above must not be applied mechanically to that route: you do not need to declare your goods if both of the following apply — you are a UK resident, and you have already paid both VAT and excise duty (alcohol and tobacco only) on the goods in Great Britain; you may need to declare your goods if you are not a UK resident, if you are taking in alcohol or tobacco over your allowances for Northern Ireland on which excise duty has not been paid in Great Britain, or if you are taking in goods worth more than £390 and you have not paid VAT on them in Great Britain. If you are taking a vehicle into Northern Ireland from Great Britain you will need to declare the vehicle if all of the following apply: you are taking it to Northern Ireland permanently (for example, you live there and you are taking the vehicle back with you); you bought it in Great Britain for your own personal use or to give as a gift; the value of the vehicle, together with any other goods you are bringing in, exceeds £390; it is already registered with DVLA; and you have not paid VAT on it in Great Britain (for example, you bought the vehicle from a person or dealer not registered for VAT). Travelling from Northern Ireland to Great Britain (England, Wales or Scotland) you do not have to declare any goods, but you will need to pay Import VAT on any goods you buy in Northern Ireland from shops that offer tax-free shopping under the VAT Retail Export Scheme. Cash: separately, you must declare cash of £10,000 or more to UK customs when carrying it between Great Britain (England, Scotland and Wales) and a country outside the UK; for families/groups the £10,000 is aggregated even if individuals carry less; the earliest you can make a declaration is 72 hours before you plan to travel (this timing line sits in the page's Great Britain section). Cash (Northern Ireland, per the same page's Taking cash in and out of Northern Ireland section): you must declare cash of €10,000 or more if you carry it between Northern Ireland and any non-EU country (either direction); you must also declare cash of €10,000 or more if you're arriving in Northern Ireland from Great Britain, while you do not need to declare any amount of cash when travelling the other way, from Northern Ireland to Great Britain; the Great Britain section of the page adds that if you're travelling to Northern Ireland and carrying €10,000 or more (or equivalent) you must follow the rules for taking cash into Northern Ireland; for families/groups under the Northern Ireland rules, €10,000 or more in total still requires a declaration even if individuals carry less; customs authorities may ask you to fill in a cash disclosure form if you send cash by freight, post or parcel between Northern Ireland and any non-EU country — this includes if you send cash from Great Britain to Northern Ireland. Types of cash (same page): you must declare notes and coins, bearer bonds, travellers' cheques, and cheques (including travellers' cheques) that are signed but not made out to a person or organisation; if you are carrying cash in or out of Northern Ireland you must also declare money orders, gold coins, bullion or nuggets, and prepaid cards. Method (page-level How to declare cash section): if you're leaving the UK you must declare cash before you go; if you're coming to the UK you must declare either before you travel or at customs when you arrive (follow 'goods to declare' or 'red channel' signs); you can declare online or by phone and will get a reference number — the online service covers cash you're carrying into or out of Great Britain and cash you're carrying into or out of Northern Ireland, the latter including cash carried from Great Britain into Northern Ireland; if you cannot use the online service you can phone the Customs and International Trade Helpline on 0300 322 9434 (24-hour service). Penalties (page-level): if you do not declare cash that you should have, all the cash you are carrying can be seized by a Border Force officer and you may have to pay a penalty of up to £5,000 to get it back; any cash can be seized if customs authorities have reasonable grounds to suspect a crime and kept for 48 hours, after which they need a court order. Boundary notes: the Northern Ireland obligation line runs to any non-EU country, not to a country outside the UK as the Great Britain line does; the page does not address cash carried between Northern Ireland and EU countries, and states no separate earliest-declaration window for Northern Ireland (the 72-hours line sits in the Great Britain section) — both residuals are recorded as unresolved.",
+          "applicability_zh": "方向：携物品进入英国的个人自用旅客。据 HMRC：可免税携入的物品即“个人额度”；所有商业物品必须申报（销售或营业用物品无个人额度）；过境前须申报超出额度以及禁限物品；超出额度须按该类全部物品缴税；可在抵达前 5 天（120 小时）在线申报；违规可致物品/车辆没收并罚款或起诉。额度规则因抵达大不列颠或北爱尔兰而不同。个人额度金额（仅针对从英国以外前往大不列颠（英格兰、威尔士或苏格兰）的旅客采集；须本人运送物品，且自用或作为礼物赠送）：酒类——可同时携带啤酒 42 升和静止葡萄酒 18 升，另可携带以下两者之一：超过 22% 酒精的烈酒及其他酒类 4 升，或 22% 及以下酒精的其他酒类（不含啤酒和静止葡萄酒，如起泡酒、加强酒、苹果酒）9 升，该项“二选一”额度可在两类之间拆分；烟草——以下之一：200 支香烟、100 支小雪茄、50 支雪茄、250 克烟草或 200 支电子加热烟草设备用烟草棒，该额度可拆分；未满 17 岁无烟酒额度（仍可为自用携入，但须申报并按全额缴税）；其他物品不超过 390 英镑，乘私人飞机或游船抵达则不超过 270 英镑。个人额度不可与他人合并。上述金额只是免税额度，本身并非独立的申报义务；申报义务仅产生于：商业物品、超出额度的物品（届时须按该类全部物品缴税——其他物品按物品总价值计，而不仅是超出部分）以及禁限物品。以上额度金额仅针对从英国以外抵达大不列颠的情形采集，不得适用于北爱尔兰。北爱尔兰（“抵达北爱尔兰”页；规则与额度取决于旅客来自欧盟还是其他国家）。从欧盟抵达北爱尔兰：只要本人运送、自用或作为礼物赠送、且已在购买国缴纳税款和关税，从欧盟携入北爱尔兰的任何货物均无需申报、无需缴纳英国税款或关税；该部分规则与 2021 年 1 月 1 日之前相同；来自加那利群岛、塞浦路斯北部、直布罗陀或海峡群岛的货物须按欧盟以外国家的规则办理。海关官员如认为旅客可能携带货物前来出售，可查验货物并提问以判断是否自用。从欧盟国家携入的酒类和烟草没有数量上限，但超过下列指示性数量时更可能被问询；该数量仅为问询指引，不是法定额度，本身亦不构成申报义务：香烟 800 支、雪茄 200 支、小雪茄 400 支、烟草 1 公斤、电子加热烟草设备用烟草棒 800 支、啤酒 110 升、葡萄酒 90 升、烈酒 10 升、加强酒（例如雪莉酒、波特酒）20 升。从欧盟以外抵达北爱尔兰（须本人运送物品，且自用或作为礼物赠送；个人额度不可与他人合并）：酒类——可同时携带啤酒 16 升和静止葡萄酒 4 升，另可携带以下两者之一：超过 22% 酒精的烈酒及其他酒类 1 升，或 22% 及以下酒精的其他酒类（不含啤酒和静止葡萄酒，如起泡酒、加强酒、苹果酒）2 升，该项“二选一”额度可在两类之间拆分；烟草——以下之一：200 支香烟、100 支小雪茄、50 支雪茄、250 克烟草或 200 支电子加热烟草设备用烟草棒，该额度可拆分；未满 17 岁无烟酒额度（仍可为自用携入，但须在抵达英国前就该等物品缴纳税款和关税）；其他物品不超过 390 英镑，乘私人飞机或游船抵达则不超过 270 英镑。超出额度须申报全部物品并按该类全部物品缴纳税款和关税，其他物品按物品总价值计征而不仅是超出部分；超额还可能须缴关税，进口增值税可能按物品总价值加关税、以现行英国增值税税率计征；未申报超额物品可被没收。从大不列颠前往北爱尔兰适用单独规则，不得将上述抵达额度机械套用于该路线：同时满足以下两项则无需申报——旅客为英国居民；已在大不列颠就物品缴纳增值税及消费税（仅限酒类和烟草）。出现下列情形可能需要申报：非英国居民；携入超过北爱尔兰额度的酒类或烟草且未在大不列颠缴纳消费税；携入价值超过 390 英镑的物品且未在大不列颠缴纳增值税。将车辆从大不列颠携入北爱尔兰，若下列条件全部满足则须申报该车辆：永久携入北爱尔兰（例如在当地居住并将车辆带回）；在大不列颠购买用于自用或作为礼物赠送；车辆价值连同其他携入物品合计超过 390 英镑；已在 DVLA 登记；未在大不列颠缴纳增值税（例如从不在增值税登记范围内的个人或经销商处购买）。从北爱尔兰前往大不列颠（英格兰、威尔士或苏格兰）无需申报任何货物，但在北爱尔兰提供免税购物的商店（增值税零售出口计划 VAT Retail Export Scheme 项下）所购货物须缴纳进口增值税。现金：另据规定，携带 **10,000 英镑或以上**现金往返大不列颠（英格兰、苏格兰、威尔士）与英国以外国家时须向海关申报；家庭/团体合计达 10,000 英镑即须申报（即使个人携带不足）；申报最早可于计划出行前 72 小时办理（该时限句位于页面大不列颠段内）。现金（北爱尔兰，依同一官页“Taking cash in and out of Northern Ireland”段）：在北爱尔兰与任何非欧盟国家之间携带 10,000 欧元或以上现金须申报（双向）；从大不列颠抵达北爱尔兰时携带 10,000 欧元或以上亦须申报，反方向从北爱尔兰前往大不列颠则任何金额均无需申报；页面大不列颠段另载明：前往北爱尔兰且携带 10,000 欧元或以上（或等值）现金时，须遵循将现金携入北爱尔兰的规则；按北爱尔兰规则出行的家庭/团体合计达 10,000 欧元即须申报（即使个人携带不足）；通过货运、邮寄或包裹在北爱尔兰与任何非欧盟国家之间寄送现金时，海关当局可要求填写现金披露表——包括从大不列颠寄往北爱尔兰的情形。须申报的现金类型（同一页面）：纸币与硬币、不记名债券、旅行支票、已签署但未填具收款人（个人或机构）的支票（含旅行支票）；携现金进出北爱尔兰时还须申报：汇票、金币/金条/天然金块、预付卡。申报方式（页面级“How to declare cash”段）：离开英国须在出行前申报现金；前来英国须在出行前或抵达时在海关申报（按“goods to declare”或红色通道指示）；可在线或电话申报并获参考号——在线服务覆盖携入/携出大不列颠与携入/携出北爱尔兰的现金，后者包括从大不列颠携入北爱尔兰；无法在线办理时可致电海关与国际贸易热线 0300 322 9434（24 小时服务）。处罚（页面级）：未申报应报现金的，所携全部现金可被边境执法官员扣押，且可能须缴最高 5,000 英镑罚款方可取回；海关当局如有合理根据怀疑犯罪，可扣押任何现金并扣留 48 小时，其后须有法院命令。边界说明：北爱尔兰申报义务的边界为“任何非欧盟国家”，不同于大不列颠条文的“英国以外国家”；页面未述北爱尔兰与欧盟国家之间的现金携带，也未给北爱尔兰申报单独的最早时点（72 小时句位于大不列颠段）——该两项残余均记入 unresolved。",
+          "timing_en": "Goods: declare online from 120 hours before arrival and at the UK border. Cash (Great Britain): declare on entry to or exit from Great Britain when carrying £10,000 or more; the earliest you can make a declaration is 72 hours before you plan to travel (this line sits in the page's Great Britain section). Cash (Northern Ireland): declare €10,000 or more when carrying it between Northern Ireland and any non-EU country and when arriving in Northern Ireland from Great Britain — if leaving the UK, declare before you go; if coming to the UK, declare before you travel or at customs when you arrive; no declaration is required when travelling from Northern Ireland to Great Britain; the page states no separate earliest-declaration window for Northern Ireland. Northern Ireland, travelling from outside the EU: if you go over your allowances you must declare your goods online before you travel or at the border when you arrive, and if you are under 17 you must pay tax and duty on alcohol and tobacco before you arrive in the UK.",
+          "timing_zh": "物品：抵达前 120 小时内可在线申报，并在边境办理。现金（大不列颠）：进出大不列颠携带 10,000 英镑或以上现金时申报；申报最早可于计划出行前 72 小时办理（该时限句位于页面大不列颠段内）。现金（北爱尔兰）：在北爱尔兰与任何非欧盟国家之间携带 10,000 欧元或以上、以及从大不列颠抵达北爱尔兰携带 10,000 欧元或以上时申报——离开英国须在出行前申报，前来英国须在出行前或抵达时在海关申报；从北爱尔兰前往大不列颠无需申报任何金额；官页未给北爱尔兰申报单独的最早时点。北爱尔兰（从欧盟以外抵达）：超出额度时须在出行前在线申报物品或抵达时在边境申报；未满 17 岁携入烟酒须在抵达英国前缴纳税款和关税。",
+          "fee": "unknown",
+          "source_ids": [
+            "GB-src",
+            "GB-when-declare",
+            "GB-cash",
+            "GB-overview",
+            "GB-arriving-gb",
+            "GB-border-force-leaflet",
+            "GB-arriving-ni",
+            "GB-ni-gb",
+            "GB-cash-ni"
+          ],
+          "verified_at": "2026-09-28",
+          "name_zh_hant": "旅客物品申報與現金申報（大不列顛1萬英鎊；北愛爾蘭1萬歐元）——英國皇家稅務與海關總署（HMRC）",
+          "applicability_zh_hant": "方向：攜物品進入英國的個人自用旅客。據 HMRC：可免稅攜入的物品即“個人額度”；所有商業物品必須申報（銷售或營業用物品無個人額度）；過境前須申報超出額度以及禁限物品；超出額度須按該類全部物品繳稅；可在抵達前 5 天（120 小時）線上申報；違規可致物品/車輛沒收並罰款或起訴。額度規則因抵達大不列顛或北愛爾蘭而不同。個人額度金額（僅針對從英國以外前往大不列顛（英格蘭、威爾士或蘇格蘭）的旅客採集；須本人運送物品，且自用或作為禮物贈送）：酒類——可同時攜帶啤酒 42 升和靜止葡萄酒 18 升，另可攜帶以下兩者之一：超過 22% 酒精的烈酒及其他酒類 4 升，或 22% 及以下酒精的其他酒類（不含啤酒和靜止葡萄酒，如起泡酒、加強酒、蘋果酒）9 升，該項“二選一”額度可在兩類之間拆分；菸草——以下之一：200 支香菸、100 支小雪茄、50 支雪茄、250 克菸草或 200 支電子加熱菸草設備用菸草棒，該額度可拆分；未滿 17 歲無煙酒額度（仍可為自用攜入，但須申報並按全額繳稅）；其他物品不超過 390 英鎊，乘私人飛機或遊船抵達則不超過 270 英鎊。個人額度不可與他人合併。上述金額只是免稅額度，本身並非獨立的申報義務；申報義務僅產生於：商業物品、超出額度的物品（屆時須按該類全部物品繳稅——其他物品按物品總價值計，而不僅是超出部分）以及禁限物品。以上額度金額僅針對從英國以外抵達大不列顛的情形採集，不得適用於北愛爾蘭。北愛爾蘭（“抵達北愛爾蘭”頁；規則與額度取決於旅客來自歐盟還是其他國家）。從歐盟抵達北愛爾蘭：只要本人運送、自用或作為禮物贈送、且已在購買國繳納稅款和關稅，從歐盟攜入北愛爾蘭的任何貨物均無需申報、無需繳納英國稅款或關稅；該部分規則與 2021 年 1 月 1 日之前相同；來自加那利群島、塞浦路斯北部、直布羅陀或海峽群島的貨物須按歐盟以外國家的規則辦理。海關官員如認為旅客可能攜帶貨物前來出售，可查驗貨物並提問以判斷是否自用。從歐盟國家攜入的酒類和菸草沒有數量上限，但超過下列指示性數量時更可能被問詢；該數量僅為問詢指引，不是法定額度，本身亦不構成申報義務：香菸 800 支、雪茄 200 支、小雪茄 400 支、菸草 1 公斤、電子加熱菸草設備用菸草棒 800 支、啤酒 110 升、葡萄酒 90 升、烈酒 10 升、加強酒（例如雪莉酒、波特酒）20 升。從歐盟以外抵達北愛爾蘭（須本人運送物品，且自用或作為禮物贈送；個人額度不可與他人合併）：酒類——可同時攜帶啤酒 16 升和靜止葡萄酒 4 升，另可攜帶以下兩者之一：超過 22% 酒精的烈酒及其他酒類 1 升，或 22% 及以下酒精的其他酒類（不含啤酒和靜止葡萄酒，如起泡酒、加強酒、蘋果酒）2 升，該項“二選一”額度可在兩類之間拆分；菸草——以下之一：200 支香菸、100 支小雪茄、50 支雪茄、250 克菸草或 200 支電子加熱菸草設備用菸草棒，該額度可拆分；未滿 17 歲無煙酒額度（仍可為自用攜入，但須在抵達英國前就該等物品繳納稅款和關稅）；其他物品不超過 390 英鎊，乘私人飛機或遊船抵達則不超過 270 英鎊。超出額度須申報全部物品並按該類全部物品繳納稅款和關稅，其他物品按物品總價值計徵而不僅是超出部分；超額還可能須繳關稅，進口增值稅可能按物品總價值加關稅、以現行英國增值稅稅率計徵；未申報超額物品可被沒收。從大不列顛前往北愛爾蘭適用單獨規則，不得將上述抵達額度機械套用於該路線：同時滿足以下兩項則無需申報——旅客為英國居民；已在大不列顛就物品繳納增值稅及消費稅（僅限酒類和菸草）。出現下列情形可能需要申報：非英國居民；攜入超過北愛爾蘭額度的酒類或菸草且未在大不列顛繳納消費稅；攜入價值超過 390 英鎊的物品且未在大不列顛繳納增值稅。將車輛從大不列顛攜入北愛爾蘭，若下列條件全部滿足則須申報該車輛：永久攜入北愛爾蘭（例如在當地居住並將車輛帶回）；在大不列顛購買用於自用或作為禮物贈送；車輛價值連同其他攜入物品合計超過 390 英鎊；已在 DVLA 登記；未在大不列顛繳納增值稅（例如從不在增值稅登記範圍內的個人或經銷商處購買）。從北愛爾蘭前往大不列顛（英格蘭、威爾士或蘇格蘭）無需申報任何貨物，但在北愛爾蘭提供免稅購物的商店（增值稅零售出口計劃 VAT Retail Export Scheme 項下）所購貨物須繳納進口增值稅。現金：另據規定，攜帶 **10,000 英鎊或以上**現金往返大不列顛（英格蘭、蘇格蘭、威爾士）與英國以外國家時須向海關申報；家庭/團體合計達 10,000 英鎊即須申報（即使個人攜帶不足）；申報最早可於計劃出行前 72 小時辦理（該時限句位於頁面大不列顛段內）。現金（北愛爾蘭，依同一官頁“Taking cash in and out of Northern Ireland”段）：在北愛爾蘭與任何非歐盟國家之間攜帶 10,000 歐元或以上現金須申報（雙向）；從大不列顛抵達北愛爾蘭時攜帶 10,000 歐元或以上亦須申報，反方向從北愛爾蘭前往大不列顛則任何金額均無需申報；頁面大不列顛段另載明：前往北愛爾蘭且攜帶 10,000 歐元或以上（或等值）現金時，須遵循將現金攜入北愛爾蘭的規則；按北愛爾蘭規則出行的家庭/團體合計達 10,000 歐元即須申報（即使個人攜帶不足）；通過貨運、郵寄或包裹在北愛爾蘭與任何非歐盟國家之間寄送現金時，海關當局可要求填寫現金披露表——包括從大不列顛寄往北愛爾蘭的情形。須申報的現金類型（同一頁面）：紙幣與硬幣、不記名債券、旅行支票、已簽署但未填具收款人（個人或機構）的支票（含旅行支票）；攜現金進出北愛爾蘭時還須申報：匯票、金幣/金條/天然金塊、預付卡。申報方式（頁面級“How to declare cash”段）：離開英國須在出行前申報現金；前來英國須在出行前或抵達時在海關申報（按“goods to declare”或紅色通道指示）；可線上或電話申報並獲參考號——線上服務覆蓋攜入/攜出大不列顛與攜入/攜出北愛爾蘭的現金，後者包括從大不列顛攜入北愛爾蘭；無法線上辦理時可致電海關與國際貿易熱線 0300 322 9434（24 小時服務）。處罰（頁面級）：未申報應報現金的，所攜全部現金可被邊境執法官員扣押，且可能須繳最高 5,000 英鎊罰款方可取回；海關當局如有合理根據懷疑犯罪，可扣押任何現金並扣留 48 小時，其後須有法院命令。邊界說明：北愛爾蘭申報義務的邊界為“任何非歐盟國家”，不同於大不列顛條文的“英國以外國家”；頁面未述北愛爾蘭與歐盟國家之間的現金攜帶，也未給北愛爾蘭申報單獨的最早時點（72 小時句位於大不列顛段）——該兩項殘餘均記入 unresolved。",
+          "timing_zh_hant": "物品：抵達前 120 小時內可線上申報，並在邊境辦理。現金（大不列顛）：進出大不列顛攜帶 10,000 英鎊或以上現金時申報；申報最早可於計劃出行前 72 小時辦理（該時限句位於頁面大不列顛段內）。現金（北愛爾蘭）：在北愛爾蘭與任何非歐盟國家之間攜帶 10,000 歐元或以上、以及從大不列顛抵達北愛爾蘭攜帶 10,000 歐元或以上時申報——離開英國須在出行前申報，前來英國須在出行前或抵達時在海關申報；從北愛爾蘭前往大不列顛無需申報任何金額；官頁未給北愛爾蘭申報單獨的最早時點。北愛爾蘭（從歐盟以外抵達）：超出額度時須在出行前線上申報物品或抵達時在邊境申報；未滿 17 歲攜入菸酒須在抵達英國前繳納稅款和關稅。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "GB-src",
+          "url": "https://www.gov.uk/duty-free-goods",
+          "title": "Bringing goods into the UK for personal use — GOV.UK",
+          "publisher": "HM Revenue & Customs (HMRC) — national customs authority of the United Kingdom"
+        },
+        {
+          "id": "GB-when-declare",
+          "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/when-to-declare-goods-to-uk-customs",
+          "title": "Bringing goods into the UK for personal use — GOV.UK",
+          "publisher": "HM Revenue & Customs (HMRC)"
+        },
+        {
+          "id": "GB-cash",
+          "url": "https://www.gov.uk/bringing-cash-into-uk",
+          "title": "Take cash in and out of the UK — GOV.UK",
+          "publisher": "HM Revenue & Customs, United Kingdom"
+        },
+        {
+          "id": "GB-overview",
+          "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use",
+          "title": "Bringing goods into the UK for personal use: Overview — GOV.UK",
+          "publisher": "HM Revenue & Customs (HMRC)"
+        },
+        {
+          "id": "GB-arriving-gb",
+          "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain",
+          "title": "Bringing goods into the UK for personal use: Arriving in Great Britain — GOV.UK",
+          "publisher": "HM Revenue & Customs (HMRC)"
+        },
+        {
+          "id": "GB-border-force-leaflet",
+          "url": "https://www.gov.uk/government/publications/travelling-to-the-uk/travelling-to-the-uk",
+          "title": "UK customs information: England, Scotland and Wales — GOV.UK",
+          "publisher": "Border Force (Home Office), United Kingdom"
+        },
+        {
+          "id": "GB-arriving-ni",
+          "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-northern-ireland",
+          "title": "Bringing goods into the UK for personal use: Arriving in Northern Ireland — GOV.UK",
+          "publisher": "HM Revenue & Customs (HMRC)"
+        },
+        {
+          "id": "GB-ni-gb",
+          "url": "https://www.gov.uk/bringing-goods-into-uk-personal-use/travelling-between-great-britain-and-northern-ireland",
+          "title": "Bringing goods into the UK for personal use: Travelling between Great Britain and Northern Ireland — GOV.UK",
+          "publisher": "HM Revenue & Customs (HMRC)"
+        },
+        {
+          "id": "GB-cash-ni",
+          "url": "https://www.gov.uk/bringing-cash-into-uk",
+          "title": "Take cash in and out of the UK: Northern Ireland — GOV.UK",
+          "publisher": "HM Revenue & Customs, United Kingdom"
+        }
+      ],
       "coverage": {
         "total_procedures": 1,
-        "published_procedures": 0,
-        "withheld_procedures": 1,
+        "published_procedures": 1,
+        "withheld_procedures": 0,
         "open_questions": 2
       }
     },
@@ -17471,13 +17556,139 @@
       "jurisdiction_id": "AU",
       "review_status": "partial",
       "researched_at": "2026-09-29",
-      "procedures": [],
-      "sources": [],
+      "procedures": [
+        {
+          "id": "AU-ipc",
+          "type": "arrival_card",
+          "name_en": "Incoming Passenger Card (IPC) — mandatory paper declaration; optional invitation-only ATD digital pilot on select Qantas flights",
+          "name_zh": "入境旅客卡（IPC）——强制纸质申报；部分澳航航班可选的受邀制 ATD 数字试点",
+          "agency": "Australian Border Force (ABF), Department of Home Affairs; ATD pilot with Department of Agriculture, Fisheries and Forestry and Qantas",
+          "official_url": "https://www.abf.gov.au/entering-and-leaving-australia/crossing-the-border/at-the-border/incoming-passenger-card-%28ipc%29",
+          "channel": "on_arrival",
+          "applicability_en": "Most passengers arriving in Australia must complete and present an Incoming Passenger Card (IPC) — a paper card issued on board the flight or ship before arrival, or by the Australian Border Force in the arrival terminal, and completed when provided, before border clearance (not all cards are completed in flight). Exemptions are prescribed by regulation 3.06 and Schedule 9 of the Migration Regulations 1994 (under the Migration Act 1958). The IPC must be completed in English on both sides — front: family/given names and passport number, flight number or ship name, intended address in Australia, whether the passenger intends to live in Australia for the next 12 months, and customs/quarantine declarations; back: country of boarding, date of birth, usual occupation, nationality as shown in the passport, and contact and emergency contact details in Australia. Passengers must sign and date the IPC and correctly answer questions on migration status, health status and any prior criminal convictions; false information can affect visa status, and citizens who refuse to complete an IPC may be penalised. A person in charge of a traveller (parent/guardian of a minor, carer of a traveller with special needs) may complete the IPC on their behalf. Biosecurity basis: travellers are required to provide information to a biosecurity officer on an IPC (or Crew Declaration Form, CDF) under s.196 of the Biosecurity Act 2015; on arrival they must complete a declaration and either declare any risk goods — food, animal products, plant material including wooden articles, and all footwear, clothing and equipment used in rural areas or near animals — or dispose of them in the bins at the airport or cruise terminal. Screening (X-ray, detector dogs, inspection, questioning) and passport scanning at biosecurity intervention points are enforcement tools, not a separate traveller declaration form. CURRENT ATD PILOT (optional, invitation-only, NOT a national replacement): the ABF and the Department of Agriculture, Fisheries and Forestry are piloting the digital Australia Travel Declaration (ATD) with Qantas. Destination-side statement (ABF): passengers on Qantas flights into Brisbane, and select flights into Sydney and Melbourne, can complete the declaration through the Qantas app. Origin-side statement (DAFF, Trans-Tasman Seamless Travel Initiative): eligible travellers on certain Qantas flights from New Zealand will be invited to complete the ATD through the Qantas mobile app; all other travellers complete the IPC as normal. These are two separate current official statements, not an exhaustive list of covered flights, and must not be merged into a universal route promise. Invited submission is via the Qantas app within the final 72 hours before departure — no earlier than 72 hours prior to departure (eligibility: Qantas app user, able to complete in English, eligible to use kiosks and SmartGates); the declaration pass is scanned at the airport exit (or baggage carousel); ineligible, uninvited, or affected passengers (e.g. cancelled, rescheduled or diverted flights) use the paper IPC as normal. Duty-free context (traveller concessions only — allowances, not a separate form or filing step): aged 18+ AUD 900 general goods (under 18/crew AUD 450); 18+ 2.25 litres alcoholic beverages; 18+ 25 cigarettes or 25 g tobacco plus one open packet; families on the same flight/voyage may pool concessions; exceeding any limit makes duty and tax apply to that entire category. Goods in excess of a concession must be declared (with proof of purchase); goods for which a Tourist Refund Scheme (TRS) claim was made are specifically to be declared at Question 3 of the IPC.",
+          "applicability_zh": "抵达澳大利亚的大多数旅客须填写并出示入境旅客卡（IPC）——纸质卡于抵达前在机上/船上发放，或在抵达航站楼内由澳大利亚边境力量（ABF）发放；持卡人于领取时填写，并在边防清关前完成（并非所有旅客都在机上完成）。豁免由《1994年移民条例》第3.06条及附表9规定（依据《1958年移民法》）。IPC 须以英文填写正反两面——正面：姓/名及护照号、航班号或船名、在澳拟住地址、是否拟未来12个月在澳居住、海关/检疫申报；背面：登机国、出生日期、通常职业、护照所示国籍、在澳联系方式及紧急联系人。旅客须签署并注明日期，正确回答移民身份、健康状况及既往犯罪等问题；提供虚假信息可影响签证，公民拒填可能被处罚。负责照看旅客者（未成年人家长/监护人、特殊需要旅客照护者）可代填。生物安全依据：依据《2015年生物安全法》（Biosecurity Act 2015）第196条，旅客须在 IPC（或机组申报表 CDF）上向生物安全官员提供信息；抵达时须作出申报：申报任何风险物品——食品、动物制品、含木制品的植物材料，以及在农村地区或近动物处使用过的全部鞋类、衣物和设备——或将其投入机场/邮轮码头的回收箱处置。筛查（X光、检疫犬、检查、询问）及生物安全干预点的护照扫描属于执法手段，并非单独的旅客申报表格。现行 ATD 试点（可选、受邀制、非全国替代）：ABF 与农业、渔业和林业部正与澳航试点数字版 Australia Travel Declaration。目的地侧表述（ABF）：飞往布里斯班的澳航航班以及飞往悉尼/墨尔本的部分航班旅客可通过 Qantas 应用完成申报。出发地侧表述（DAFF，跨塔斯曼无缝旅行倡议）：来自新西兰的部分澳航航班的合格旅客将受邀经 Qantas 移动应用完成 ATD；其余旅客照常填写 IPC。两者为各自独立的现行官方表述，并非覆盖航班的详尽清单，不得合并为普遍路线承诺。受邀申报经 Qantas 应用在出发前72小时内提交——不得早于出发前72小时（条件：Qantas 应用用户、能以英文填写、可使用机场自助柜台/SmartGate）；申报通行码在机场出口（或行李转盘）扫描；未受邀、不符合条件或受航班取消/改期/改降影响者照常使用纸质 IPC。免税额度背景（仅为旅客优惠额度，并非单独表格或申报手续）：18岁以上一般物品 AUD 900（未满18岁/机组 AUD 450）；18岁以上酒类 2.25 升；18岁以上烟草 25 支香烟或 25 克另加一包已开封；同机/同船家庭可合并额度；任一类别超限即该类别全部物品计税。超额物品须申报（并提供购买凭证）；经旅客退税计划（TRS）退税的物品特别须在 IPC 第3问申报。",
+          "timing_en": "Paper IPC completed when provided, before border clearance — on board the flight or ship before arrival, or from the Australian Border Force in the arrival terminal (not all cards are completed in flight); ATD pilot submission via the Qantas app within the final 72 hours before departure (no earlier than 72 hours prior).",
+          "timing_zh": "纸质 IPC 于领取时填写、边防清关前完成——可于抵达前在机上/船上填写，或在抵达航站楼内领取填写（并非都在机上完成）；ATD 试点须在出发前72小时内经 Qantas 应用提交（不得早于出发前72小时）。",
+          "fee": "unknown",
+          "source_ids": [
+            "AU-abf-ipc",
+            "AU-abf-ipc-provision",
+            "AU-abf-ipc-atd",
+            "AU-abf-atd-faq",
+            "AU-abf-atd-faq-window",
+            "AU-daff-travelling",
+            "AU-daff-travelling-riskgoods",
+            "AU-daff-travelling-atd",
+            "AU-abf-dutyfree",
+            "AU-abf-dutyfree-excess"
+          ],
+          "verified_at": "2026-09-29",
+          "name_zh_hant": "入境旅客卡（IPC）——強制紙質申報；部分澳航航班可選的受邀制 ATD 數字試點",
+          "applicability_zh_hant": "抵達澳大利亞的大多數旅客須填寫並出示入境旅客卡（IPC）——紙質卡於抵達前在機上/船上發放，或在抵達航站樓內由澳大利亞邊境力量（ABF）發放；持卡人於領取時填寫，並在邊防清關前完成（並非所有旅客都在機上完成）。豁免由《1994年移民條例》第3.06條及附表9規定（依據《1958年移民法》）。IPC 須以英文填寫正反兩面——正面：姓/名及護照號、航班號或船名、在澳擬住地址、是否擬未來12個月在澳居住、海關/檢疫申報；背面：登機國、出生日期、通常職業、護照所示國籍、在澳聯繫方式及緊急聯繫人。旅客須簽署並註明日期，正確回答移民身份、健康狀況及既往犯罪等問題；提供虛假資訊可影響簽證，公民拒填可能被處罰。負責照看旅客者（未成年人家長/監護人、特殊需要旅客照護者）可代填。生物安全依據：依據《2015年生物安全法》（Biosecurity Act 2015）第196條，旅客須在 IPC（或機組申報表 CDF）上向生物安全官員提供資訊；抵達時須作出申報：申報任何風險物品——食品、動物製品、含木製品的植物材料，以及在農村地區或近動物處使用過的全部鞋類、衣物和設備——或將其投入機場/郵輪碼頭的回收箱處置。篩查（X光、檢疫犬、檢查、詢問）及生物安全乾預點的護照掃描屬於執法手段，並非單獨的旅客申報表格。現行 ATD 試點（可選、受邀制、非全國替代）：ABF 與農業、漁業和林業部正與澳航試點數字版 Australia Travel Declaration。目的地側表述（ABF）：飛往布里斯班的澳航航班以及飛往悉尼/墨爾本的部分航班旅客可通過 Qantas 應用完成申報。出發地側表述（DAFF，跨塔斯曼無縫旅行倡議）：來自新西蘭的部分澳航航班的合格旅客將受邀經 Qantas 移動應用完成 ATD；其餘旅客照常填寫 IPC。兩者為各自獨立的現行官方表述，並非覆蓋航班的詳盡清單，不得合併為普遍路線承諾。受邀申報經 Qantas 應用在出發前72小時內提交——不得早於出發前72小時（條件：Qantas 應用用戶、能以英文填寫、可使用機場自助櫃檯/SmartGate）；申報通行碼在機場出口（或行李轉盤）掃描；未受邀、不符合條件或受航班取消/改期/改降影響者照常使用紙質 IPC。免稅額度背景（僅為旅客優惠額度，並非單獨表格或申報手續）：18歲以上一般物品 AUD 900（未滿18歲/機組 AUD 450）；18歲以上酒類 2.25 升；18歲以上菸草 25 支香菸或 25 克另加一包已開封；同機/同船家庭可合併額度；任一類別超限即該類別全部物品計稅。超額物品須申報（並提供購買憑證）；經旅客退稅計劃（TRS）退稅的物品特別須在 IPC 第3問申報。",
+          "timing_zh_hant": "紙質 IPC 於領取時填寫、邊防清關前完成——可於抵達前在機上/船上填寫，或在抵達航站樓內領取填寫（並非都在機上完成）；ATD 試點須在出發前72小時內經 Qantas 應用提交（不得早於出發前72小時）。"
+        },
+        {
+          "id": "AU-cash-declaration-arrival",
+          "type": "customs_declaration",
+          "name_en": "Cash of AUD 10,000 or more — declare on the Incoming Passenger Card (question 5)",
+          "name_zh": "携带1万澳元或以上现金——在入境旅客卡第5题申报",
+          "agency": "Australian Border Force (ABF), Department of Home Affairs",
+          "official_url": "https://www.abf.gov.au/entering-and-leaving-australia/crossing-the-border/at-the-border/incoming-passenger-card-%28ipc%29",
+          "channel": "on_arrival",
+          "applicability_en": "Question 5 of the Incoming Passenger Card asks every arriving passenger: \"AUD$10,000 or more in Australian or foreign currency equivalent?\" A passenger carrying that amount answers Yes. The card instructs passengers to answer every question and to answer Yes if unsure. A note under the question adds that if a customs or police officer asks, you must report travellers cheques, cheques, money orders or other bearer negotiable instruments of any amount. This item covers the arrival card question only. Reporting cash when leaving Australia, and any separate cash report form, are not covered here.",
+          "applicability_zh": "入境旅客卡第5题询问每位入境旅客：是否携带1万澳元或以上的澳元现金或等值外币。携带该金额的旅客应回答“是”。入境卡要求回答每一题，不确定时回答“是”。该题下方注明：如海关或警务人员要求，旅客必须申报任何金额的旅行支票、支票、汇票或其他不记名可转让票据。本条只涉及入境卡上的这一题，离境时的现金申报及任何单独的现金申报表不在本条范围内。",
+          "timing_en": "On arrival: answer question 5 on the paper Incoming Passenger Card and present the card with your passport.",
+          "timing_zh": "入境时：在纸质入境旅客卡上回答第5题，并与护照一起出示。",
+          "fee": "unknown",
+          "source_ids": [
+            "AU-abf-ipc-sample-q5",
+            "AU-abf-ipc-sample-bni"
+          ],
+          "verified_at": "2026-10-13",
+          "name_zh_hant": "攜帶1萬澳元或以上現金——在入境旅客卡第5題申報",
+          "applicability_zh_hant": "入境旅客卡第5題詢問每位入境旅客：是否攜帶1萬澳元或以上的澳元現金或等值外幣。攜帶該金額的旅客應回答“是”。入境卡要求回答每一題，不確定時回答“是”。該題下方註明：如海關或警務人員要求，旅客必須申報任何金額的旅行支票、支票、匯票或其他不記名可轉讓票據。本條只涉及入境卡上的這一題，離境時的現金申報及任何單獨的現金申報表不在本條範圍內。",
+          "timing_zh_hant": "入境時：在紙質入境旅客卡上回答第5題，並與護照一起出示。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "AU-abf-ipc",
+          "url": "https://www.abf.gov.au/entering-and-leaving-australia/crossing-the-border/at-the-border/incoming-passenger-card-%28ipc%29",
+          "title": "Incoming Passenger Card (IPC) — Australian Border Force",
+          "publisher": "Australian Border Force, Department of Home Affairs"
+        },
+        {
+          "id": "AU-abf-ipc-provision",
+          "url": "https://www.abf.gov.au/entering-and-leaving-australia/crossing-the-border/at-the-border/incoming-passenger-card-%28ipc%29",
+          "title": "Incoming Passenger Card (IPC) — Australian Border Force",
+          "publisher": "Australian Border Force, Department of Home Affairs"
+        },
+        {
+          "id": "AU-abf-ipc-atd",
+          "url": "https://www.abf.gov.au/entering-and-leaving-australia/crossing-the-border/at-the-border/incoming-passenger-card-%28ipc%29",
+          "title": "Incoming Passenger Card (IPC) — Australian Border Force",
+          "publisher": "Australian Border Force, Department of Home Affairs"
+        },
+        {
+          "id": "AU-abf-atd-faq",
+          "url": "https://www.abf.gov.au/entering-and-leaving-australia/crossing-the-border/at-the-border/incoming-passenger-card-%28ipc%29-faqs",
+          "title": "Incoming Passenger Card (IPC) FAQs — Australian Border Force",
+          "publisher": "Australian Border Force, Department of Home Affairs"
+        },
+        {
+          "id": "AU-abf-atd-faq-window",
+          "url": "https://www.abf.gov.au/entering-and-leaving-australia/crossing-the-border/at-the-border/incoming-passenger-card-%28ipc%29-faqs",
+          "title": "Incoming Passenger Card (IPC) FAQs — Australian Border Force",
+          "publisher": "Australian Border Force, Department of Home Affairs"
+        },
+        {
+          "id": "AU-daff-travelling",
+          "url": "https://www.agriculture.gov.au/travelling/to-australia",
+          "title": "Travelling to Australia — Department of Agriculture, Fisheries and Forestry",
+          "publisher": "Department of Agriculture, Fisheries and Forestry (DAFF)"
+        },
+        {
+          "id": "AU-daff-travelling-riskgoods",
+          "url": "https://www.agriculture.gov.au/travelling/to-australia",
+          "title": "Travelling to Australia — Department of Agriculture, Fisheries and Forestry",
+          "publisher": "Department of Agriculture, Fisheries and Forestry (DAFF)"
+        },
+        {
+          "id": "AU-daff-travelling-atd",
+          "url": "https://www.agriculture.gov.au/travelling/to-australia",
+          "title": "Travelling to Australia — Department of Agriculture, Fisheries and Forestry",
+          "publisher": "Department of Agriculture, Fisheries and Forestry (DAFF)"
+        },
+        {
+          "id": "AU-abf-dutyfree",
+          "url": "https://www.abf.gov.au/entering-and-leaving-australia/duty-free",
+          "title": "Duty free — Australian Border Force",
+          "publisher": "Australian Border Force, Department of Home Affairs"
+        },
+        {
+          "id": "AU-abf-dutyfree-excess",
+          "url": "https://www.abf.gov.au/entering-and-leaving-australia/duty-free",
+          "title": "Duty free — Australian Border Force",
+          "publisher": "Australian Border Force, Department of Home Affairs"
+        },
+        {
+          "id": "AU-abf-ipc-sample-q5",
+          "url": "https://www.abf.gov.au/entering-leaving-australia/files/ipc-sample-english.pdf",
+          "title": "Incoming passenger card — sample (English) — Australian Border Force",
+          "publisher": "Australian Border Force, Department of Home Affairs"
+        },
+        {
+          "id": "AU-abf-ipc-sample-bni",
+          "url": "https://www.abf.gov.au/entering-leaving-australia/files/ipc-sample-english.pdf",
+          "title": "Incoming passenger card — sample (English) — Australian Border Force",
+          "publisher": "Australian Border Force, Department of Home Affairs"
+        }
+      ],
       "coverage": {
-        "total_procedures": 1,
-        "published_procedures": 0,
-        "withheld_procedures": 1,
-        "open_questions": 2
+        "total_procedures": 2,
+        "published_procedures": 2,
+        "withheld_procedures": 0,
+        "open_questions": 3
       }
     },
     {
