@@ -22,6 +22,22 @@
   {{- end }}
   {{- $rules = merge $rules $overlay }}
 {{- end }}
+{{- /* Copy sheet (docs/plans/2026-10-13-revenue-plan.md, A3) — only for the
+       countries in site.Params.prefill_sheet.countries. Those validators list
+       their rows in the guide's field order from data/fields/{country}.toml so
+       the sheet reads top to bottom; every other validator keeps key order. */ -}}
+{{- $sheet := in (site.Params.prefill_sheet.countries | default slice) $country }}
+{{- $keys := slice }}
+{{- if $sheet }}
+  {{- with index hugo.Data.fields $country }}
+    {{- range .fields }}
+      {{- if index $rules.fields .key }}{{ $keys = $keys | append .key }}{{ end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- range $name, $_ := $rules.fields }}
+  {{- if not (in $keys $name) }}{{ $keys = $keys | append $name }}{{ end }}
+{{- end }}
 
 <section class="validator not-prose" data-country="{{ $country }}" aria-labelledby="validator-title-{{ $country }}">
   <div class="text-meta text-muted mb-2 font-mono uppercase">{{ i18n "validator_eyebrow" }}</div>
@@ -32,7 +48,8 @@
   {{- /* Embed rules as JSON for the browser to consume. Single source of truth. */ -}}
   <script type="application/json" class="validator-rules">{{ $rules | jsonify | safeJS }}</script>
 
-  {{- range $name, $field := $rules.fields }}
+  {{- range $name := $keys }}
+  {{- $field := index $rules.fields $name }}
   <div class="validator-row" data-field="{{ $name }}">
     <label for="validator-{{ $country }}-{{ $name }}" class="text-small font-medium">{{ $field.label }}{{ if $field.required }}<span class="text-muted">{{ i18n "validator_required_marker" }}</span>{{ end }}</label>
     <input
@@ -50,6 +67,29 @@
     <div class="validator-help text-xs text-muted">{{ . }}</div>
     {{- end }}
   </div>
+  {{- end }}
+
+  {{- if $sheet }}
+  {{- /* Built in the browser by validator.ts from what is typed above; nothing
+         is stored or sent, so the link below carries no analytics attribute. */ -}}
+  {{- $countryUrls := index hugo.Data.official_urls $country }}
+  {{- $official := index $countryUrls $countryUrls.meta.form_key }}
+  <div class="validator-sheet-actions">
+    <button type="button" class="btn-ghost" data-sheet-build>{{ i18n "sheet_button" }}</button>
+  </div>
+  <div class="validator-sheet" data-sheet hidden tabindex="-1" data-copy="{{ i18n "sheet_copy" }}" data-copied="{{ i18n "sheet_copied" }}" data-missing="{{ i18n "sheet_missing" }}" data-fix="{{ i18n "sheet_fix" }}">
+    <h4 class="font-serif font-medium text-h3 mb-1">{{ i18n "sheet_heading" }}</h4>
+    <p class="text-small text-muted mb-4">{{ i18n "sheet_intro" }}</p>
+    <ol class="validator-sheet-list" data-sheet-list></ol>
+    <p class="text-small mt-4">{{ i18n "sheet_review" }}</p>
+    {{- with $official }}
+    <p class="text-small mt-2"><a href="{{ .url }}" target="_blank" rel="noopener" class="text-ink underline underline-offset-2">{{ i18n "sheet_open_official" }}{{ .url | replaceRE "^https?://" "" }} ↗</a></p>
+    {{- end }}
+  </div>
+  <details class="validator-help-request">
+    <summary class="text-small font-medium">{{ i18n "sheet_help_toggle" }}</summary>
+    <p class="text-small text-muted mt-2">{{ i18n "sheet_help_body" }}</p>
+  </details>
   {{- end }}
 
   <div class="mt-md pt-md border-t border-rule text-xs text-muted">

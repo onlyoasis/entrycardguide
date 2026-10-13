@@ -3,6 +3,7 @@
 记录时间：2026-07-23
 相关：`docs/tasks/04-affiliate-links-revenue-integrity.md`（Task 04，状态 partially complete）、`docs/reports/gsc-ga-follow-up-2026-07-23.md`
 状态：**待决策，尚无结论**
+更新（2026-10-13）：`docs/plans/2026-10-13-revenue-plan.md` 的 A2 给出方向：位置不变，换成 eSIM、接机并按语言配伙伴；伙伴数上限待拍板。
 
 ## 一句话
 

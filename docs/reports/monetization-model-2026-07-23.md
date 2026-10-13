@@ -3,6 +3,7 @@
 记录时间：2026-07-23
 输入：`docs/reports/affiliate-placement-2026-07-23.md`、`docs/reports/gsc-ga-follow-up-2026-07-23.md`、`docs/tasks/04-affiliate-links-revenue-integrity.md`、仓库现状盘点
 状态：**分析与建议，未执行**
+更新（2026-10-13）：结论已由 `docs/plans/2026-10-13-revenue-plan.md` 复核，冲突处以该计划为准。B2B 数据授权降为一次性验证，MCP 收费冻结。
 
 ## 一句话
 

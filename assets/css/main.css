@@ -258,6 +258,24 @@
     @apply block text-small font-medium mb-2;
   }
 
+  /* "Is this the official site?" — domain-check.ts, top of official-directory */
+  .domain-check {
+    @apply border border-rule rounded-md p-4 sm:p-6 mb-lg bg-white;
+  }
+  .domain-check-row {
+    @apply flex flex-col sm:flex-row gap-3;
+  }
+  .domain-check-row .btn-ghost {
+    @apply shrink-0;
+    min-height: 2.75rem;
+  }
+  .domain-check-result {
+    @apply mt-md pt-md border-t border-rule text-small;
+  }
+  .domain-check-result p + p {
+    @apply mt-2;
+  }
+
   .directory-input {
     @apply w-full min-w-0 border border-rule rounded-sm bg-paper text-ink px-3 py-2;
     min-height: 2.75rem;
@@ -443,6 +461,47 @@
   }
   .validator-state.ok { @apply text-verified; }
   .validator-state.err { @apply text-scam; }
+
+  /* Copy sheet — built by validator.ts for params.prefill_sheet countries */
+  .validator-sheet-actions {
+    @apply pt-md border-t border-rule;
+  }
+  .validator-sheet {
+    @apply mt-md pt-md border-t border-rule;
+  }
+  .validator-sheet:focus {
+    outline: none;
+  }
+  .validator-sheet-list {
+    @apply list-decimal pl-5;
+  }
+  .validator-sheet-item {
+    @apply py-2 border-b border-rule border-dotted;
+  }
+  .validator-sheet-row {
+    @apply flex items-center justify-between gap-3 mt-1;
+  }
+  .validator-sheet-value {
+    @apply font-mono text-small text-ink break-all;
+  }
+  .validator-sheet-copy {
+    @apply shrink-0 font-mono text-xs uppercase tracking-wide2 border border-rule rounded-sm px-3 py-1 bg-paper text-ink cursor-pointer;
+    min-height: 36px;
+  }
+  .validator-sheet-copy:hover {
+    @apply border-ink;
+  }
+  .validator-sheet-copy:focus-visible,
+  .validator-help-request summary:focus-visible {
+    outline: 2px solid theme('colors.verified');
+    outline-offset: 3px;
+  }
+  .validator-help-request {
+    @apply mt-md;
+  }
+  .validator-help-request summary {
+    @apply cursor-pointer;
+  }
 
   /* Scam card */
   .scam-card {

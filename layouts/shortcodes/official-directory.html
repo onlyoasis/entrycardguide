@@ -10,6 +10,8 @@
        同一份语义表格用于浏览、搜索和无 JS 回退。 */ -}}
 {{- $countries := partial "country-roster.html" . -}}
 
+{{ partial "domain-check.html" . }}
+
 <div class="not-prose official-directory" data-directory>
   <div class="directory-controls" data-directory-controls hidden>
     <div>
@@ -70,7 +72,7 @@
           </div>
         </td>
         <td>
-          <a data-analytics-event="official_link_click" data-country="{{ .key }}" data-official-key="{{ .formKey }}" data-link-slot="directory" href="{{ $official.url }}" rel="noopener" class="font-mono text-ink underline underline-offset-4">{{ replaceRE "^https?://" "" $official.url }}</a>
+          <a data-analytics-event="official_link_click" data-country="{{ .key }}" data-official-key="{{ .formKey }}" data-link-slot="directory" href="{{ $official.url }}" target="_blank" rel="noopener" class="font-mono text-ink underline underline-offset-4">{{ replaceRE "^https?://" "" $official.url }}</a>
         </td>
         <td class="text-muted">{{ $official.agency }}</td>
         <td{{ if eq .fee "free" }} class="text-verified"{{ end }}>{{ if eq .fee "free" }}{{ i18n "directory_fee_free" }}{{ else }}{{ index $meta (printf "fee_%s" $suffix) }}{{ end }}</td>

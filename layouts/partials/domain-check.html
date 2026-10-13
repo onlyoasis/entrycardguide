@@ -1,0 +1,47 @@
+{{- /* "Is this the official site?" (docs/plans/2026-10-13-revenue-plan.md, A4).
+       Compares a pasted address with every official entry in data/official_urls:
+       tables that carry both url and agency. meta, news, outcomes and
+       scam_sites are never included, so the tool only confirms official
+       addresses and never names anyone else.
+
+       Rendered hidden; assets/js/domain-check.ts reveals it and does the
+       matching in the browser. The typed address is never sent or stored. */ -}}
+{{- $lang := site.Language.Lang }}
+{{- $nameField := "name_en" }}
+{{- if eq $lang "zh" }}{{ $nameField = "name_zh" }}{{ else if eq $lang "zh-hant" }}{{ $nameField = "name_zh_hant" }}{{ end }}
+{{- $entries := slice }}
+{{- range $country, $data := hugo.Data.official_urls }}
+  {{- $formKey := $data.meta.form_key }}
+  {{- $countryName := index $data.meta $nameField | default $data.meta.name_en | default $country }}
+  {{- $path := printf "/%s/" $country | relLangURL }}
+  {{- range $key, $entry := $data }}
+    {{- if and (reflect.IsMap $entry) $entry.url $entry.agency }}
+      {{- $entries = $entries | append (dict "url" $entry.url "main" (eq $key $formKey) "k" $country "f" $key "c" $countryName "p" $path "n" $entry.name "a" $entry.agency "v" (dateFormat "2006-01-02" $entry.last_verified)) }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- $strings := dict
+  "checked" (i18n "domain_check_checked")
+  "match" (i18n "domain_check_match")
+  "noMatch" (i18n "domain_check_no_match")
+  "noMatchBody" (i18n "domain_check_no_match_body")
+  "invalid" (i18n "domain_check_invalid")
+  "runBy" (i18n "run_by_label")
+  "verified" (i18n "last_verified_label")
+  "guide" (i18n "domain_check_guide")
+  "open" (i18n "domain_check_open")
+  "table" (i18n "domain_check_table")
+}}
+<section class="domain-check not-prose" data-domain-check hidden aria-labelledby="domain-check-title">
+  <h2 id="domain-check-title" class="font-serif font-medium text-h2 mb-1">{{ i18n "domain_check_heading" }}</h2>
+  <p class="text-small text-muted mb-4">{{ i18n "domain_check_intro" }}</p>
+  <form data-domain-check-form novalidate>
+    <label for="domain-check-input" class="directory-label">{{ i18n "domain_check_label" }}</label>
+    <div class="domain-check-row">
+      <input id="domain-check-input" class="directory-input" type="text" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="{{ i18n "domain_check_placeholder" }}" data-domain-check-input>
+      <button type="submit" class="btn-ghost">{{ i18n "domain_check_button" }}</button>
+    </div>
+  </form>
+  <div class="domain-check-result" role="status" aria-live="polite" data-domain-check-result hidden></div>
+  <script type="application/json" data-domain-check-data>{{ dict "t" $strings "e" $entries | jsonify | safeJS }}</script>
+</section>

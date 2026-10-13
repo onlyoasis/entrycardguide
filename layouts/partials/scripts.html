@@ -7,6 +7,13 @@
     {{- $directory = $directory | resources.Fingerprint "sha256" }}
   {{- end }}
 <script src="{{ $directory.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $directory.Data.Integrity }}"{{ end }} defer></script>
+  {{- /* "Is this the official site?" sits at the top of the same shortcode. */ -}}
+  {{- $domainCheckOpts := dict "targetPath" "js/domain-check.js" "minify" hugo.IsProduction "target" "es2020" "format" "iife" }}
+  {{- $domainCheck := resources.Get "js/domain-check.ts" | js.Build $domainCheckOpts }}
+  {{- if hugo.IsProduction }}
+    {{- $domainCheck = $domainCheck | resources.Fingerprint "sha256" }}
+  {{- end }}
+<script src="{{ $domainCheck.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $domainCheck.Data.Integrity }}"{{ end }} defer></script>
 {{- end }}
 
 {{- /* Validator (loaded on every page so country pages with the validator

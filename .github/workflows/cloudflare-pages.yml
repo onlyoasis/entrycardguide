@@ -64,6 +64,9 @@ jobs:
           TRAVEL_LIBRARY_TEST_ROOT: ${{ runner.temp }}/entrycardguide-boundary-tests
         run: npm run test:data-boundary
 
+      - name: Browser helper tests
+        run: npm run test:ui
+
   deploy:
     name: Deploy to Cloudflare Pages
     runs-on: ubuntu-latest

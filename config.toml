@@ -205,6 +205,11 @@ defaultContentLanguageInSubdir = false
     safetywing_url = "https://safetywing.com/?referenceID=26517368&utm_source=26517368&utm_medium=Ambassador"
     airalo_url = ""
 
+  # Copy sheet under the validator (docs/plans/2026-10-13-revenue-plan.md, A3).
+  # The sheet's help text says the official form is free: list free forms only.
+  [params.prefill_sheet]
+    countries = ["thailand", "malaysia", "singapore", "indonesia"]
+
   [params.analytics.ga4.measurement]
     id = "G-8C2Q42N506"
     hostname = "entrycardguide.com"
@@ -225,6 +230,11 @@ defaultContentLanguageInSubdir = false
 [security]
   [security.funcs]
     getenv = ["^HUGO_", "^CI$", "^GITHUB_"]
+
+# assets/js now imports ./lib helpers; without this js.Build writes an
+# editor-only assets/jsconfig.json on every build.
+[build]
+  noJSConfigInAssets = true
 
 # Public builds never mount private research data.
 [module]
