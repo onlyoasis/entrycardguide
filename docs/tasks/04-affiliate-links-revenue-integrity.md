@@ -260,7 +260,7 @@ The fix is 4 hours of work (most of it waiting for affiliate approvals). The sit
 ## Out of scope (do not do)
 
 - Don't add display ads (Google AdSense, etc.). They contradict the visual minimalism and hurt page speed.
-- Don't add 5+ affiliate partners. Two is plenty; more dilutes per-partner conversion and looks spammy.
+- Don't add more than two affiliate partners per language area (English, Simplified Chinese, Traditional Chinese). More dilutes per-partner conversion and looks spammy. (Changed 2026-10-13 from "two in total"; see `docs/plans/2026-10-13-revenue-plan.md`.)
 - Don't add affiliate links inside the article body in places where they don't make sense. The footer is the right place. Inline mentions are fine but only when contextually motivated (e.g. "after you file the TDAC, you'll want connectivity at the airport — see Airalo at the bottom").
 - Don't add interstitial popups, exit-intent modals, or "wait, before you go!" overlays. The site's minimalism is a competitive advantage. Don't burn it.
 

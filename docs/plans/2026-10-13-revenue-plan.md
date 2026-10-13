@@ -100,7 +100,7 @@ R4 的依据：政府不免费提供照片，卖照片处理不违背承诺。�
   - `config.toml` 的 `[params.affiliate]` 改成按语言配置伙伴。
   - `layouts/partials/affiliate-footer.html`、`affiliate-rail.html` 按语言取伙伴。
   - 文案加在 `i18n/en.yaml`、`i18n/zh.yaml`；`i18n/zh-hant.yaml` 用 `npm run sync:zh-hant` 生成。
-- 位置不变，仍在"§ 提交之后"后面（08-30 已调整）。每个语言区最多两个伙伴，需拍板（第七节第 2 项）。
+- 位置不变，仍在"§ 提交之后"后面（08-30 已调整）。每个语言区最多两个伙伴（2026-10-13 已拍板，Task 04 已同步）。
 - SafetyWing 只保留在入境要求含保险的目的地，例如古巴；动手前先按官方来源核实。
 - GA4：`affiliate_click` 带 partner、slot、lang 三个参数。
 - about 页：改写 `content/about.md` 第 52–58 行"只用一个联盟链接、这就是全部商业模式"和第 94 行"买保险时点联盟链接"，`about.zh.md` 同步，繁体由 sync 生成。保留第 60–66 行"不收中介的钱、不为填表收费"。
@@ -188,7 +188,7 @@ R4 的依据：政府不免费提供照片，卖照片处理不违背承诺。�
    - a. 移到私有位置（参照研究主库的做法），接受 git 历史里的残留（CLAUDE.md 禁止 force push）；
    - b. 仓库转私有，同时改掉 about 页的"开源"表述；
    - c. 维持现状，接受风险。
-2. **Task 04 的"最多两个联盟伙伴"** 改为每个语言区最多两个（`docs/tasks/04-affiliate-links-revenue-integrity.md`）。
+2. **Task 04 的"最多两个联盟伙伴"** 改为每个语言区最多两个（`docs/tasks/04-affiliate-links-revenue-integrity.md`）：**2026-10-13 已拍板，Task 04 已改。**
 3. **改写 about 页的商业模式表述**（A2）。
 4. **冻结 MCP full 模式**：**2026-10-13 已拍板冻结。** `wrangler.toml` 的 `database_id` 保持占位符，不再配置生产 D1 和发信，不运行 `Provision MCP production`，直到有人要 API。
 5. **是否投入 R3**，即每周 2–3 篇的时间。
