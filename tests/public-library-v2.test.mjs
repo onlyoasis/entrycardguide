@@ -96,8 +96,8 @@ test('the checked-in global snapshot has one record per destination, consistent 
  assert.deepEqual(validatePublicTravelLibrary(snapshot),[]);
  assert.equal(snapshot.records.filter(r=>r.review_status==='blocked').every(r=>r.procedures.length===0),true);
  assert.equal(snapshot.records.reduce((sum,r)=>sum+r.coverage.total_procedures,0),415);
- assert.equal(snapshot.records.reduce((sum,r)=>sum+r.procedures.length,0),408);
- assert.equal(snapshot.records.reduce((sum,r)=>sum+r.coverage.withheld_procedures,0),7);
+ assert.equal(snapshot.records.reduce((sum,r)=>sum+r.procedures.length,0),409);
+ assert.equal(snapshot.records.reduce((sum,r)=>sum+r.coverage.withheld_procedures,0),6);
  assert.equal(snapshot.records.reduce((sum,r)=>sum+r.coverage.open_questions,0),536);
  assert.equal(PRIVATE_RESEARCH_TEXT.test(JSON.stringify(snapshot)),false);
 });

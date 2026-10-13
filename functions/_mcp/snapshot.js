@@ -24176,14 +24176,57 @@ export default {
       },
       {
         "jurisdiction_id": "TK",
-        "review_status": "blocked",
-        "researched_at": "2026-09-27",
-        "procedures": [],
-        "sources": [],
+        "review_status": "partial",
+        "researched_at": "2026-10-13",
+        "procedures": [
+          {
+            "id": "tk-visitor-entry-permit",
+            "type": "travel_authorization",
+            "name_en": "Tokelau entry permit for foreign visitors",
+            "name_zh": "托克劳外籍访客入境许可",
+            "agency": "Government of Tokelau — Support Services",
+            "official_url": "https://www.tokelau.org.nz/Tokelau+Government/Government+Departments/BDM+Certificates.html",
+            "channel": "conditional",
+            "applicability_en": "All foreign visitors who wish to travel to Tokelau must apply for an entry permit before travelling. Contact the Government of Tokelau one month before the intended visit. Support Services processes permit applications and issues the permit once the appropriate village has approved the visit. The Government of Tokelau website provides a downloadable Tokelau Permit Application Form on its Permit Services page (Tokelau Government > Government Departments > BDM Certificates) and names Support Services as the contact for further information (an email address is listed on the page). The page does not state a fee or how a completed form is lodged, so ask Support Services how to submit it. Residents' passport services on the same page are a separate matter.",
+            "applicability_zh": "所有希望前往托克劳的外籍访客，须在出行前申请入境许可。请在拟访问前 1 个月联系托克劳政府。Support Services 负责受理许可申请，并在相应村庄批准访问后签发许可。托克劳政府网站的“Permit Services”栏（Tokelau Government > Government Departments > BDM Certificates）提供可下载的 Tokelau Permit Application Form，并列出 Support Services 作为进一步咨询的联系方（页面列有邮箱）。该页面未写明费用，也未写明填好的表格如何递交，请向 Support Services 询问递交方式。同页的居民护照服务是另一事项。",
+            "timing_en": "Contact the Government of Tokelau one month before the intended visit. The permit is issued after the appropriate village approves the visit. The page states no other deadline, processing time or validity period.",
+            "timing_zh": "拟访问前 1 个月联系托克劳政府；相应村庄批准访问后签发许可。页面未写明其他期限、办理时长或有效期。",
+            "fee": "unknown",
+            "source_ids": [
+              "tk-bdm-permits",
+              "tk-bdm-permits-process",
+              "tk-bdm-permits-village"
+            ],
+            "verified_at": "2026-10-13",
+            "name_zh_hant": "托克勞外籍訪客入境許可",
+            "applicability_zh_hant": "所有希望前往托克勞的外籍訪客，須在出行前申請入境許可。請在擬訪問前 1 個月聯繫托克勞政府。Support Services 負責受理許可申請，並在相應村莊批准訪問後簽發許可。托克勞政府網站的“Permit Services”欄（Tokelau Government > Government Departments > BDM Certificates）提供可下載的 Tokelau Permit Application Form，並列出 Support Services 作為進一步諮詢的聯繫方（頁面列有信箱）。該頁面未寫明費用，也未寫明填好的表格如何遞交，請向 Support Services 詢問遞交方式。同頁的居民護照服務是另一事項。",
+            "timing_zh_hant": "擬訪問前 1 個月聯繫托克勞政府；相應村莊批准訪問後簽發許可。頁面未寫明其他期限、辦理時長或有效期。"
+          }
+        ],
+        "sources": [
+          {
+            "id": "tk-bdm-permits",
+            "url": "https://www.tokelau.org.nz/Tokelau+Government/Government+Departments/BDM+Certificates.html",
+            "title": "BDM Certificates, Permit Services section — Government of Tokelau",
+            "publisher": "Government of Tokelau (tokelau.org.nz)"
+          },
+          {
+            "id": "tk-bdm-permits-process",
+            "url": "https://www.tokelau.org.nz/Tokelau+Government/Government+Departments/BDM+Certificates.html",
+            "title": "BDM Certificates, Permit Services section — Government of Tokelau",
+            "publisher": "Government of Tokelau (tokelau.org.nz)"
+          },
+          {
+            "id": "tk-bdm-permits-village",
+            "url": "https://www.tokelau.org.nz/Tokelau+Government/Government+Departments/BDM+Certificates.html",
+            "title": "BDM Certificates, Permit Services section — Government of Tokelau",
+            "publisher": "Government of Tokelau (tokelau.org.nz)"
+          }
+        ],
         "coverage": {
           "total_procedures": 1,
-          "published_procedures": 0,
-          "withheld_procedures": 1,
+          "published_procedures": 1,
+          "withheld_procedures": 0,
           "open_questions": 4
         }
       },
