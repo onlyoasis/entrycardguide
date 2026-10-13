@@ -2,7 +2,7 @@
 title: "About"
 description: "Who runs entrycardguide, why this site exists, how we make money, and what we promise we will never do."
 date: 2026-04-25
-lastmod: 2026-07-30
+lastmod: 2026-10-13
 url: "/about/"
 layout: about
 ---
@@ -49,13 +49,13 @@ Do not trust us because the site looks serious. Check the artifacts.
 
 ## How we make money
 
-We currently use one affiliate link at the bottom of eligible guides:
+Right now there is one affiliate partner. Its link appears on eligible guides and is labelled as an affiliate link:
 
 1. **Travel insurance through SafetyWing.** When you click through and buy a policy, we get a small commission from SafetyWing. The price you pay is the same as going direct.
 
-We may add eSIM links later, but we will only show them when the partner link is live and clearly disclosed.
+We may add links for things people sort out in the days before landing, such as an eSIM or an airport transfer. A link only appears once the partner link is live and clearly disclosed, and it will be listed here.
 
-That's it. That is the entire business model.
+We never make money from the forms themselves. If we add any other source of income, it will be listed on this page from the day it starts.
 
 We have **never** taken money from a visa middleman. We will not, ever. Not because we are noble, but because doing so would invalidate the entire premise of this site, and we like the premise.
 
@@ -91,4 +91,4 @@ We aim to respond within 48 hours and ship a fix within a week, faster if it's s
 
 A small team of travelers and developers. We have all paid a middleman at least once before figuring out we did not have to. This site is our way of saving the next person from the same mistake.
 
-If you find this useful and want to support it, click through the affiliate link at the bottom of any eligible guide the next time you buy travel insurance. That keeps the site running. That is the entire ask.
+If you find this useful and want to support it, use the partner link on one of our guides when you actually need that product. Or send this site to someone who is about to pay a middleman for a free form. That is the entire ask.
