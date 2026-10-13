@@ -23,7 +23,7 @@ We could not figure out why no one had built the obvious thing: a free, independ
 - Written from official source records, with review dates and remaining gaps identified.
 - Updated when the official sites change.
 - Guides are public static pages. MCP access requires email verification, sign-in and read-only authorization; its account and usage records are stored in D1.
-- Open source under named licenses. The code is [MIT](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE). The field rules, the scam-site list, and these pages are [CC BY-SA 4.0](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE-CC-BY-SA-4.0): reuse them and you have to credit the source and keep it open.
+- Open source under named licenses. The code is [MIT](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE). The field rules, the official-URL data, and these pages are [CC BY-SA 4.0](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE-CC-BY-SA-4.0): reuse them and you have to credit the source and keep it open.
 
 ## What we are not
 

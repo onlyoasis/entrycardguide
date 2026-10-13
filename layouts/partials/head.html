@@ -133,6 +133,21 @@
 
 {{- /* Article schema for articles */ -}}
 {{- if and .IsPage (not .IsHome) }}
+{{- /* Form and how-to-fill pages describe one official government service:
+       name it as the Article's `about` (SEO action plan 2026-10-12, phase 2).
+       provider is typed GovernmentOrganization only on a government host;
+       contractor-run portals (e.g. Brazil via VFS) stay a plain Organization. */ -}}
+{{- $about := "" }}
+{{- if and .Params.country (in (slice "country-form" "how-to-fill") .Layout) }}
+  {{- with index hugo.Data.official_urls .Params.country }}
+    {{- $meta := .meta }}
+    {{- with index . $meta.form_key }}
+      {{- $host := (urls.Parse .url).Hostname }}
+      {{- $orgType := cond (findRE `(\.gov|\.go|\.gob|\.gouv|\.govt|\.gc)\.[a-z]{2}$|\.gov$|\.gc\.ca$|europa\.eu$|^www\.canada\.ca$` $host | len | lt 0) "GovernmentOrganization" "Organization" }}
+      {{- $about = dict "@type" "GovernmentService" "name" .name "url" .url "provider" (dict "@type" $orgType "name" .agency) "areaServed" (dict "@type" "Country" "name" $meta.name_en) }}
+    {{- end }}
+  {{- end }}
+{{- end }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -157,6 +172,9 @@
     }
   },
   "image": "{{ $ogImage | absURL }}",
+  {{- with $about }}
+  "about": {{ . | jsonify | safeJS }},
+  {{- end }}
   "mainEntityOfPage": "{{ .Permalink }}"
 }
 </script>

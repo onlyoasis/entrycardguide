@@ -23,7 +23,7 @@ lastmod: 2026-10-13
 - 按官方來源記錄整理，保留核實日期和仍待核實的範圍。
 - 在官方網站變更時同步更新。
 - 指南是公開靜態頁面。MCP 另需驗證信箱、登入並授權只讀訪問；D1 保存其賬戶和調用記錄。
-- 開源，並且寫明瞭許可證。代碼是 [MIT](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE)，欄位規則、假站名單和這些頁面是 [CC BY-SA 4.0](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE-CC-BY-SA-4.0)：拿去用可以，但必須署名，並且保持同樣開放。
+- 開源，並且寫明瞭許可證。代碼是 [MIT](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE)，欄位規則、官方網址資料和這些頁面是 [CC BY-SA 4.0](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE-CC-BY-SA-4.0)：拿去用可以，但必須署名，並且保持同樣開放。
 
 ## 我們不是什麼
 

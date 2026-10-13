@@ -23,7 +23,7 @@ layout: about
 - 按官方来源记录整理，保留核实日期和仍待核实的范围。
 - 在官方站点变更时同步更新。
 - 指南是公开静态页面。MCP 另需验证邮箱、登录并授权只读访问；D1 保存其账户和调用记录。
-- 开源，并且写明了许可证。代码是 [MIT](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE)，字段规则、假站名单和这些页面是 [CC BY-SA 4.0](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE-CC-BY-SA-4.0)：拿去用可以，但必须署名，并且保持同样开放。
+- 开源，并且写明了许可证。代码是 [MIT](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE)，字段规则、官方网址数据和这些页面是 [CC BY-SA 4.0](https://github.com/onlyoasis/entrycardguide/blob/main/LICENSE-CC-BY-SA-4.0)：拿去用可以，但必须署名，并且保持同样开放。
 
 ## 我们不是什么
 
