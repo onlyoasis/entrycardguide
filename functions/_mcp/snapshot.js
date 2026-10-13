@@ -15239,8 +15239,8 @@ export default {
             "agency": "Federal Customs Service of Russia (FCS); rules set by the Customs Code of the Eurasian Economic Union",
             "official_url": "https://eec.eaeunion.org/comission/department/dep_tamoj_zak/transferenceProduct.php",
             "channel": "on_arrival",
-            "applicability_en": "Russia applies the Customs Code of the Eurasian Economic Union (EAEU) at its border. Cash and/or traveller's cheques must be declared when their total, brought in at one time, exceeds the equivalent of USD 10,000 at the exchange rate on the day the passenger customs declaration is filed (Customs Code Article 260(1)(7)); the whole amount is declared, not only the part above the threshold. At or below the equivalent of USD 10,000, declaring is optional. Bills of exchange, bank cheques and securities must be declared whatever the amount. The declaration is made on the passenger customs declaration (Article 260(3)), completing its annex for cash and monetary instruments. If the total exceeds the equivalent of USD 100,000, documents showing where the money came from must be submitted with the declaration. Where a two-channel system operates, travellers with goods to declare use the red channel (Article 257). This item covers entering Russia. Taking cash out of Russia is also subject to Russian national currency rules, which are not covered here.",
-            "applicability_zh": "俄罗斯在边境适用《欧亚经济联盟海关法典》。一次性带入的现金和/或旅行支票合计超过按旅客海关申报单提交当日汇率折算的等值1万美元时，须申报（海关法典第260条第1款第7项），且申报全部金额，而非仅超出部分。等于或低于等值1万美元的，可自愿申报。本票、银行支票和有价证券不论金额都须申报。申报使用旅客海关申报单（第260条第3款），并填写其中现金和货币票据的附页。合计超过等值10万美元的，须随申报单提交资金来源证明文件。设有红绿双通道的口岸，有应申报物品的旅客走红色通道（第257条）。本条只涉及入境俄罗斯。携带现金离开俄罗斯还受俄罗斯本国货币管制规定约束，本条不涉及。",
+            "applicability_en": "Russia applies the Customs Code of the Eurasian Economic Union (EAEU) at its border. Cash and/or traveller's cheques must be declared when their total, brought in at one time, exceeds the equivalent of USD 10,000 at the exchange rate on the day the passenger customs declaration is filed (Customs Code Article 260(1)(7)); the whole amount is declared, not only the part above the threshold. At or below the equivalent of USD 10,000, declaring is optional. Bills of exchange, bank cheques and securities must be declared whatever the amount. The declaration is made on the passenger customs declaration (Article 260(3)), completing its annex for cash and monetary instruments. If the total exceeds the equivalent of USD 100,000, documents showing where the money came from must be submitted with the declaration. Where a two-channel system operates, travellers with goods to declare use the red channel (Article 257). This item covers entering Russia; leaving Russia with cash is a separate item.",
+            "applicability_zh": "俄罗斯在边境适用《欧亚经济联盟海关法典》。一次性带入的现金和/或旅行支票合计超过按旅客海关申报单提交当日汇率折算的等值1万美元时，须申报（海关法典第260条第1款第7项），且申报全部金额，而非仅超出部分。等于或低于等值1万美元的，可自愿申报。本票、银行支票和有价证券不论金额都须申报。申报使用旅客海关申报单（第260条第3款），并填写其中现金和货币票据的附页。合计超过等值10万美元的，须随申报单提交资金来源证明文件。设有红绿双通道的口岸，有应申报物品的旅客走红色通道（第257条）。本条只涉及入境俄罗斯；携带现金出境另列一条。",
             "timing_en": "On arrival, at customs control at the border crossing point: file the passenger customs declaration and use the red channel where one operates.",
             "timing_zh": "入境时在口岸海关监管处：提交旅客海关申报单，设有红色通道的走红色通道。",
             "fee": "unknown",
@@ -15254,8 +15254,35 @@ export default {
             ],
             "verified_at": "2026-10-13",
             "name_zh_hant": "入境俄羅斯攜帶超過等值1萬美元現金——填寫歐亞經濟聯盟旅客海關申報單",
-            "applicability_zh_hant": "俄羅斯在邊境適用《歐亞經濟聯盟海關法典》。一次性帶入的現金和/或旅行支票合計超過按旅客海關申報單提交當日匯率折算的等值1萬美元時，須申報（海關法典第260條第1款第7項），且申報全部金額，而非僅超出部分。等於或低於等值1萬美元的，可自願申報。本票、銀行支票和有價證券不論金額都須申報。申報使用旅客海關申報單（第260條第3款），並填寫其中現金和貨幣票據的附頁。合計超過等值10萬美元的，須隨申報單提交資金來源證明文件。設有紅綠雙通道的口岸，有應申報物品的旅客走紅色通道（第257條）。本條只涉及入境俄羅斯。攜帶現金離開俄羅斯還受俄羅斯本國貨幣管制規定約束，本條不涉及。",
+            "applicability_zh_hant": "俄羅斯在邊境適用《歐亞經濟聯盟海關法典》。一次性帶入的現金和/或旅行支票合計超過按旅客海關申報單提交當日匯率折算的等值1萬美元時，須申報（海關法典第260條第1款第7項），且申報全部金額，而非僅超出部分。等於或低於等值1萬美元的，可自願申報。本票、銀行支票和有價證券不論金額都須申報。申報使用旅客海關申報單（第260條第3款），並填寫其中現金和貨幣票據的附頁。合計超過等值10萬美元的，須隨申報單提交資金來源證明文件。設有紅綠雙通道的口岸，有應申報物品的旅客走紅色通道（第257條）。本條只涉及入境俄羅斯；攜帶現金出境另列一條。",
             "timing_zh_hant": "入境時在口岸海關監管處：提交旅客海關申報單，設有紅色通道的走紅色通道。"
+          },
+          {
+            "id": "RU-cash-departure",
+            "type": "customs_declaration",
+            "name_en": "Leaving Russia with cash: foreign currency capped at USD 10,000 equivalent; declare cash over USD 10,000",
+            "name_zh": "携带现金离开俄罗斯：外币现金不得超过等值1万美元；超过1万美元的现金须申报",
+            "agency": "Federal Customs Service of Russia (FCS); export limit set by Presidential Decree No. 81 and applied by the Bank of Russia",
+            "official_url": "http://www.cbr.ru/content/document/file/155960/nav_om.pdf",
+            "channel": "on_departure",
+            "applicability_en": "Presidential Decree No. 81 of 1 March 2022 (item 1, sub-item \"zh\") prohibits, from 2 March 2022, taking foreign cash and/or monetary instruments in foreign currency out of Russia in an amount exceeding the equivalent of USD 10,000, calculated at the Bank of Russia official rate on the day of export. The Bank of Russia navigator of restrictive measures (as of 1 May 2026, the version linked from its navigator page) lists this export as not permitted for both residents and non-residents, with no end date set, and lists foreign cash up to USD 10,000 inclusive as needing no permission. The exceptions it lists are for authorised banks and VEB.RF, not for travellers. The Eurasian Economic Union declaration duty also applies on exit: cash and/or traveller's cheques taken out at one time totalling more than the equivalent of USD 10,000 must be declared on the passenger customs declaration, stating the whole amount (Customs Code Article 260(1)(7), 260(3)); bills of exchange, bank cheques and securities must be declared whatever the amount. The sources do not say how the foreign-currency cap and the declaration duty combine when a traveller also carries roubles; ask customs before travelling with large sums.",
+            "applicability_zh": "2022年3月1日第81号总统令第1条“ж”项规定，自2022年3月2日起，禁止携带超过等值1万美元的外币现金和/或外币货币票据出境，按出境当日俄罗斯央行官方汇率折算。俄罗斯央行《限制措施导航》（截至2026年5月1日，为其导航页当前链接的版本）将这类出境列为居民与非居民均不允许、未设终止日期，并将1万美元以内（含）的外币现金列为无需许可。导航列出的例外只适用于授权银行和ВЭБ.РФ，不适用于旅客。欧亚经济联盟的申报义务在出境时同样适用：一次性带出的现金和/或旅行支票合计超过等值1万美元的，须在旅客海关申报单上申报全部金额（海关法典第260条第1款第7项、第3款）；本票、银行支票和有价证券不论金额都须申报。同时携带卢布时外币上限与申报义务如何合并计算，上述来源没有说明；携带大额现金出行前请向海关确认。",
+            "timing_en": "At departure, at customs control at the border crossing point before leaving Russia: file the passenger customs declaration and use the red channel where one operates.",
+            "timing_zh": "出境时在口岸海关监管处、离开俄罗斯之前：提交旅客海关申报单，设有红色通道的走红色通道。",
+            "fee": "unknown",
+            "source_ids": [
+              "RU-tk-art260-ptd",
+              "RU-tk-art257-red",
+              "RU-decree81-cash-export",
+              "RU-cbr-navigator-residents",
+              "RU-cbr-navigator-nonresidents",
+              "RU-cbr-navigator-up-to-10k",
+              "RU-eec-cash-exit"
+            ],
+            "verified_at": "2026-10-13",
+            "name_zh_hant": "攜帶現金離開俄羅斯：外幣現金不得超過等值1萬美元；超過1萬美元的現金須申報",
+            "applicability_zh_hant": "2022年3月1日第81號總統令第1條“ж”項規定，自2022年3月2日起，禁止攜帶超過等值1萬美元的外幣現金和/或外幣貨幣票據出境，按出境當日俄羅斯央行官方匯率折算。俄羅斯央行《限制措施導航》（截至2026年5月1日，為其導航頁當前連結的版本）將這類出境列為居民與非居民均不允許、未設終止日期，並將1萬美元以內（含）的外幣現金列為無需許可。導航列出的例外只適用於授權銀行和ВЭБ.РФ，不適用於旅客。歐亞經濟聯盟的申報義務在出境時同樣適用：一次性帶出的現金和/或旅行支票合計超過等值1萬美元的，須在旅客海關申報單上申報全部金額（海關法典第260條第1款第7項、第3款）；本票、銀行支票和有價證券不論金額都須申報。同時攜帶盧布時外幣上限與申報義務如何合併計算，上述來源沒有說明；攜帶大額現金出行前請向海關確認。",
+            "timing_zh_hant": "出境時在口岸海關監管處、離開俄羅斯之前：提交旅客海關申報單，設有紅色通道的走紅色通道。"
           }
         ],
         "sources": [
@@ -15294,11 +15321,41 @@ export default {
             "url": "https://eec.eaeunion.org/upload/iblock/93c/TK-EAES.pdf",
             "title": "Таможенный кодекс Евразийского экономического союза — Евразийская экономическая комиссия",
             "publisher": "Eurasian Economic Commission (EEC)"
+          },
+          {
+            "id": "RU-decree81-cash-export",
+            "url": "http://www.kremlin.ru/acts/bank/47594",
+            "title": "Указ Президента Российской Федерации от 01.03.2022 г. № 81 — Президент России",
+            "publisher": "President of the Russian Federation (kremlin.ru)"
+          },
+          {
+            "id": "RU-cbr-navigator-residents",
+            "url": "http://www.cbr.ru/content/document/file/155960/nav_om.pdf",
+            "title": "Навигатор по ограничительным мерам на 1 мая 2026 года — Банк России",
+            "publisher": "Bank of Russia"
+          },
+          {
+            "id": "RU-cbr-navigator-nonresidents",
+            "url": "http://www.cbr.ru/content/document/file/155960/nav_om.pdf",
+            "title": "Навигатор по ограничительным мерам на 1 мая 2026 года — Банк России",
+            "publisher": "Bank of Russia"
+          },
+          {
+            "id": "RU-cbr-navigator-up-to-10k",
+            "url": "http://www.cbr.ru/content/document/file/155960/nav_om.pdf",
+            "title": "Навигатор по ограничительным мерам на 1 мая 2026 года — Банк России",
+            "publisher": "Bank of Russia"
+          },
+          {
+            "id": "RU-eec-cash-exit",
+            "url": "https://eec.eaeunion.org/comission/department/dep_tamoj_zak/transferenceProduct.php",
+            "title": "Перемещение физическими лицами товаров для личного пользования, а также наличных денежных средств и (или) денежных инструментов — Евразийская экономическая комиссия",
+            "publisher": "Eurasian Economic Commission (EEC)"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
           "open_questions": 2
         }
