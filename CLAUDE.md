@@ -93,7 +93,7 @@ npm run clean        # 清理 public/ 和 resources/
 - 快照由 `scripts/gen-mcp-data.mjs` 从 `data/` + roster 生成：**改 data 后必须 `npm run gen:mcp`**，`npm run check:mcp` 是 CI 门禁；快照排除 `scam_sites`/`outcomes`/news（延续不点名中介的决策）
 - 用户与调用计量在 D1（`migrations/0001_mcp_init.sql`，绑定名 `DB`）；`functions/_mcp/quota.js` 是收费口：`PLANS` 表 + `authorizeCall`/`recordCall`，`mcp_usage` 只追加，付费档接进来只改 `mcp_users.plan`
 - 单测 `npm run test:mcp`（node:sqlite 内存库跑真实 SQL，需 Node 22 的 `--experimental-sqlite`）
-- `wrangler.toml` 里的 `database_id` 是占位符：**合并 main 前必须先 `wrangler d1 create` 并填真值**，否则 `/api/*` 全 503（静态站不受影响）
+- 部署模式由 `scripts/release-mode.mjs` 按 `wrangler.toml` 的 `database_id` 决定：占位符 → **static**（不带 D1 绑定部署，`/api/*` 返回 503 `mcp_not_configured`，`/mcp/` 显示“注册暂未开放”）；真实 UUID → **full**（远端 MCP 前置检查 + D1 绑定）。填真值前先 `wrangler d1 create`、应用迁移并设好 secret
 
 ### SEO 严格性
 
@@ -141,4 +141,4 @@ content/{country}/how-to-fill.md       # 字段逐项填写
 - 公共v2投影保留状态及覆盖数量，当前328公开事项、66暂不公开、531待核问题。不要把完整目的地目录说成完整法规核验。
 - `build:prod`固定产出`public-release/`；CI发布相同目录，检查公共schema、三语派生物、MCP快照、SEO和私有数据历史边界。
 - MCP改用邮箱验证码登录与显式`mcp:read`授权；旧匿名key停用。`gen:mcp`同时包含公开全球快照，新增`get_jurisdiction`，每次调用校验授权、参数和原子账户额度。
-- 生产发布前必须填真实D1 ID、应用两份迁移并设置邮件/认证secret；`check:release -- --deployment`只读核对前置条件。详见`docs/mcp.md`与本轮验收报告。不得把本地假邮件测试说成真实送达。
+- MCP 上线（full 模式）前必须填真实D1 ID、应用两份迁移并设置邮件/认证secret；`check:release -- --deployment`只读核对前置条件。静态站不受此限，2026-10-13 起以 static 模式发布。详见`docs/mcp.md`与本轮验收报告。不得把本地假邮件测试说成真实送达。
