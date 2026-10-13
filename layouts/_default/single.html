@@ -31,6 +31,11 @@
       {{- partial "share-buttons.html" . -}}
     </div>
 
+    {{- /* /mcp/ describes sign-up; say plainly when this release cannot take it. */ -}}
+    {{- if and (eq .Path "/mcp") (not (partial "mcp-open.html" .)) }}
+    <p class="border-l-4 border-mark bg-paper p-md text-small mb-10">{{ i18n "mcp_not_open" }}</p>
+    {{- end }}
+
     <div class="prose prose-lg max-w-none">
       {{ .Content }}
     </div>

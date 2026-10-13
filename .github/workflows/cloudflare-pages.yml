@@ -102,8 +102,25 @@ jobs:
       - name: Build
         run: npm run build:prod
 
+      # "full" once wrangler.toml carries the real D1 database_id; until then
+      # "static": the site ships without the D1 binding and MCP answers 503.
+      - name: Detect release mode
+        id: mode
+        run: echo "mode=$(node scripts/release-mode.mjs)" >> "$GITHUB_OUTPUT"
+
       - name: Check MCP deployment configuration
+        if: steps.mode.outputs.mode == 'full'
         run: npx --yes --package=wrangler@4.85.0 -- npm run check:release -- --deployment
+
+      - name: Check static release structure
+        if: steps.mode.outputs.mode == 'static'
+        run: npm run check:release
+
+      # wrangler pages deploy applies the bindings in wrangler.toml; a placeholder
+      # database_id cannot be bound, so a static release deploys without it.
+      - name: Set aside the MCP binding config
+        if: steps.mode.outputs.mode == 'static'
+        run: mv wrangler.toml wrangler.toml.mcp-pending
 
       - name: Check Cloudflare credentials
         run: |
@@ -125,7 +142,7 @@ jobs:
           command: pages deploy public-release --project-name=entrycardguide --branch=${{ github.ref_name }} --commit-dirty=true
 
       - name: Verify production revision and live MCP boundary
-        run: node scripts/check-live-release.mjs
+        run: node scripts/check-live-release.mjs ${{ steps.mode.outputs.mode == 'static' && '--static' || '' }}
 
       - name: Save production readback
         uses: actions/upload-artifact@v4

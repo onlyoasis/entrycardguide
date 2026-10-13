@@ -1,0 +1,10 @@
+{{- /* Whether MCP sign-up is live in this build: wrangler.toml must carry a
+       real D1 database_id. Same rule as scripts/release-mode.mjs, which picks
+       a "static" release (no D1 binding, MCP answers 503) otherwise. */ -}}
+{{- $open := false -}}
+{{- with os.ReadFile "wrangler.toml" -}}
+  {{- range (transform.Unmarshal (dict "format" "toml") .).d1_databases -}}
+    {{- if and (eq .binding "DB") (findRE `^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$` .database_id) }}{{ $open = true }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $open -}}

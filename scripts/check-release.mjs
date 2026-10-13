@@ -5,6 +5,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import TOML from '@iarna/toml';
 import { validatePublicTravelLibrary } from './travel-library-public.mjs';
+import { D1_ID } from './release-mode.mjs';
 
 function requireCondition(ok, message) { if (!ok) throw new Error(message); }
 try {
@@ -25,7 +26,7 @@ try {
   requireCondition(existsSync('migrations/0002_mcp_accounts.sql'), 'Missing account/grant migration');
   if (process.argv.includes('--deployment')) {
     const database = config.d1_databases?.find(item => item.binding === 'DB');
-    requireCondition(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(database?.database_id || ''), 'Configure the real D1 database_id in wrangler.toml before deployment');
+    requireCondition(D1_ID.test(database?.database_id || ''), 'Configure the real D1 database_id in wrangler.toml before deployment');
     function remote(args, parseJson = true) {
       const command = process.env.WRANGLER_BIN || 'wrangler';
       const run = spawnSync(command, args, { encoding: 'utf8', timeout: 45000, env: { ...process.env, ...(args[0] === 'd1' && process.env.CLOUDFLARE_MCP_API_TOKEN ? { CLOUDFLARE_API_TOKEN: process.env.CLOUDFLARE_MCP_API_TOKEN } : {}), WRANGLER_SEND_METRICS: 'false' } });
