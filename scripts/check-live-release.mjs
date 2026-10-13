@@ -19,7 +19,9 @@ function htmlLanguage(html) {
   const lang = attributes.find(attribute => attribute[1].toLowerCase() === 'lang');
   return lang?.[2] ?? lang?.[3] ?? lang?.[4] ?? null;
 }
-try {
+// Pages can take a minute to reach every edge after the deploy step returns,
+// so a stale page or sitemap is retried before the release is called failed.
+async function readBack() {
   requireCondition(account && token, 'Missing Cloudflare deployment credentials');
   const response = await get(`https://api.cloudflare.com/client/v4/accounts/${account}/pages/projects/entrycardguide`, { headers: { Authorization: `Bearer ${token}` } });
   const envelope = await response.json();
@@ -65,7 +67,20 @@ try {
   console.log(staticRelease
     ? `Production Pages revision ${expected} confirmed (static release); 249 destinations in all three live indexes, ${published.size} in each sitemap; MCP answers 503 mcp_not_configured until D1 is set up.`
     : `Production Pages revision ${expected} confirmed; 249 destinations in all three live indexes, ${published.size} in each sitemap; MCP rejects invalid keys and anonymous authorization. Email sign-in still requires separate acceptance.`);
-} catch (error) {
-  console.error(`check-live-release: ${error.message}`);
-  process.exitCode = 1;
+}
+const ATTEMPTS = 7;
+for (let attempt = 1; ; attempt++) {
+  try {
+    await readBack();
+    break;
+  } catch (error) {
+    if (attempt < ATTEMPTS) {
+      console.log(`check-live-release: attempt ${attempt}/${ATTEMPTS} failed (${error.message}); retrying in 20s`);
+      await new Promise((resolve) => setTimeout(resolve, 20000));
+      continue;
+    }
+    console.error(`check-live-release: ${error.message}`);
+    process.exitCode = 1;
+    break;
+  }
 }
