@@ -17947,24 +17947,54 @@ export default {
           {
             "id": "AU-cash-declaration-arrival",
             "type": "customs_declaration",
-            "name_en": "Cash of AUD 10,000 or more — declare on the Incoming Passenger Card (question 5)",
-            "name_zh": "携带1万澳元或以上现金——在入境旅客卡第5题申报",
+            "name_en": "Cash and other monetary instruments of AUD 10,000 or more — report on arrival and answer Yes to question 5 of the Incoming Passenger Card",
+            "name_zh": "携带1万澳元或以上现金及其他货币票据——入境时报告，并在入境旅客卡第5题回答“是”",
             "agency": "Australian Border Force (ABF), Department of Home Affairs",
             "official_url": "https://www.abf.gov.au/entering-and-leaving-australia/crossing-the-border/at-the-border/incoming-passenger-card-%28ipc%29",
             "channel": "on_arrival",
-            "applicability_en": "Question 5 of the Incoming Passenger Card asks every arriving passenger: \"AUD$10,000 or more in Australian or foreign currency equivalent?\" A passenger carrying that amount answers Yes. The card instructs passengers to answer every question and to answer Yes if unsure. A note under the question adds that if a customs or police officer asks, you must report travellers cheques, cheques, money orders or other bearer negotiable instruments of any amount. This item covers the arrival card question only. Reporting cash when leaving Australia, and any separate cash report form, are not covered here.",
-            "applicability_zh": "入境旅客卡第5题询问每位入境旅客：是否携带1万澳元或以上的澳元现金或等值外币。携带该金额的旅客应回答“是”。入境卡要求回答每一题，不确定时回答“是”。该题下方注明：如海关或警务人员要求，旅客必须申报任何金额的旅行支票、支票、汇票或其他不记名可转让票据。本条只涉及入境卡上的这一题，离境时的现金申报及任何单独的现金申报表不在本条范围内。",
-            "timing_en": "On arrival: answer question 5 on the paper Incoming Passenger Card and present the card with your passport.",
-            "timing_zh": "入境时：在纸质入境旅客卡上回答第5题，并与护照一起出示。",
+            "applicability_en": "Under section 53 of the Anti-Money Laundering and Counter-Terrorism Financing Act 2006, a person who brings monetary instruments into Australia must report them when their total is AUD 10,000 or more. Monetary instruments are physical currency (Australian or foreign) and bearer negotiable instruments (instruments payable to bearer, such as cheques, traveller's cheques and money orders, Act section 17), so these count toward the AUD 10,000 total. The report must be in the approved form and given to the AUSTRAC CEO, a customs officer or a police officer. Failing to report is an offence punishable by up to 2 years' imprisonment or 500 penalty units, or both. Question 5 of the paper Incoming Passenger Card also asks every arriving passenger whether they are bringing AUD$10,000 or more in Australian or foreign currency equivalent; the card says to answer every question and to answer Yes if unsure. The sample card's note that other bearer negotiable instruments need reporting only if an officer asks reflects an older rule and is not the current law.",
+            "applicability_zh": "依据《2006年反洗钱与反恐怖融资法》第53条，携带货币票据入境澳大利亚、合计达1万澳元或以上的，必须报告。货币票据包括现金（澳元或外币）和不记名可转让票据（即付给持票人的支票、旅行支票、汇票等，该法第17条），这些都计入1万澳元的总额。报告须使用批准的表格，交给AUSTRAC负责人、海关官员或警务人员。不报告属于犯罪，最高可处2年监禁或500个罚款单位，或两者并处。纸质入境旅客卡第5题也询问每位入境旅客是否携带1万澳元或以上的澳元现金或等值外币；入境卡要求回答每一题，不确定时回答“是”。样张上“其他不记名可转让票据只在官员要求时报告”的备注反映的是旧规则，不是现行法律。",
+            "timing_en": "On arrival, no later than when you reach the place where customs officers examine baggage (AML/CTF Rules 2025, section 9-12(3)(a)); also answer question 5 on the Incoming Passenger Card.",
+            "timing_zh": "入境时，最迟在到达海关查验行李的地点时报告（《2025年反洗钱与反恐怖融资细则》第9-12(3)(a)条）；同时在入境旅客卡第5题作答。",
             "fee": "unknown",
             "source_ids": [
               "AU-abf-ipc-sample-q5",
-              "AU-abf-ipc-sample-bni"
+              "AU-amlctf-act-s53-into",
+              "AU-amlctf-act-definition",
+              "AU-amlctf-act-s53-recipient",
+              "AU-amlctf-act-s53-penalty",
+              "AU-amlctf-rules-9-12-entry"
             ],
             "verified_at": "2026-10-13",
-            "name_zh_hant": "攜帶1萬澳元或以上現金——在入境旅客卡第5題申報",
-            "applicability_zh_hant": "入境旅客卡第5題詢問每位入境旅客：是否攜帶1萬澳元或以上的澳元現金或等值外幣。攜帶該金額的旅客應回答“是”。入境卡要求回答每一題，不確定時回答“是”。該題下方註明：如海關或警務人員要求，旅客必須申報任何金額的旅行支票、支票、匯票或其他不記名可轉讓票據。本條只涉及入境卡上的這一題，離境時的現金申報及任何單獨的現金申報表不在本條範圍內。",
-            "timing_zh_hant": "入境時：在紙質入境旅客卡上回答第5題，並與護照一起出示。"
+            "name_zh_hant": "攜帶1萬澳元或以上現金及其他貨幣票據——入境時報告，並在入境旅客卡第5題回答“是”",
+            "applicability_zh_hant": "依據《2006年反洗錢與反恐怖融資法》第53條，攜帶貨幣票據入境澳大利亞、合計達1萬澳元或以上的，必須報告。貨幣票據包括現金（澳元或外幣）和不記名可轉讓票據（即付給持票人的支票、旅行支票、匯票等，該法第17條），這些都計入1萬澳元的總額。報告須使用批准的表格，交給AUSTRAC負責人、海關官員或警務人員。不報告屬於犯罪，最高可處2年監禁或500個罰款單位，或兩者並處。紙質入境旅客卡第5題也詢問每位入境旅客是否攜帶1萬澳元或以上的澳元現金或等值外幣；入境卡要求回答每一題，不確定時回答“是”。樣張上“其他不記名可轉讓票據只在官員要求時報告”的備註反映的是舊規則，不是現行法律。",
+            "timing_zh_hant": "入境時，最遲在到達海關查驗行李的地點時報告（《2025年反洗錢與反恐怖融資細則》第9-12(3)(a)條）；同時在入境旅客卡第5題作答。"
+          },
+          {
+            "id": "AU-cash-departure",
+            "type": "customs_declaration",
+            "name_en": "Leaving Australia with AUD 10,000 or more in cash or other monetary instruments — report before passport control",
+            "name_zh": "携带1万澳元或以上现金及其他货币票据离开澳大利亚——在护照查验前报告",
+            "agency": "AUSTRAC and the Australian Border Force (ABF); reporting duty under the Anti-Money Laundering and Counter-Terrorism Financing Act 2006",
+            "official_url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "channel": "on_departure",
+            "applicability_en": "Under section 53 of the Anti-Money Laundering and Counter-Terrorism Financing Act 2006, a person who takes monetary instruments out of Australia must report them when their total is AUD 10,000 or more. Monetary instruments are physical currency (Australian or foreign) and bearer negotiable instruments (instruments payable to bearer, such as cheques, traveller's cheques and money orders, Act section 17); they are added together. The report must be in the approved form and given to the AUSTRAC CEO, a customs officer or a police officer. Failing to report is an offence punishable by up to 2 years' imprisonment or 500 penalty units, or both. A traveller leaving by air or sea is treated as having taken the money out once they leave the place where customs officers examine passports (Act section 56(2)). The Act sets a reporting duty, not a limit on the amount that may be taken out.",
+            "applicability_zh": "依据《2006年反洗钱与反恐怖融资法》第53条，携带货币票据离开澳大利亚、合计达1万澳元或以上的，必须报告。货币票据包括现金（澳元或外币）和不记名可转让票据（即付给持票人的支票、旅行支票、汇票等，该法第17条），合并计算。报告须使用批准的表格，交给AUSTRAC负责人、海关官员或警务人员。不报告属于犯罪，最高可处2年监禁或500个罚款单位，或两者并处。乘飞机或船离境的旅客，一旦离开海关查验护照的区域，即视为已将钱款带出澳大利亚（该法第56(2)条）。该法规定的是报告义务，并未限制可带出的金额。",
+            "timing_en": "Before leaving Australia, no later than when you reach the customs officer who examines your passport for departure (AML/CTF Rules 2025, section 9-12(3)(c)).",
+            "timing_zh": "离开澳大利亚前，最迟在走到为你办理离境护照查验的海关官员面前时报告（《2025年反洗钱与反恐怖融资细则》第9-12(3)(c)条）。",
+            "fee": "unknown",
+            "source_ids": [
+              "AU-amlctf-act-s53-out",
+              "AU-amlctf-act-definition",
+              "AU-amlctf-act-s53-recipient",
+              "AU-amlctf-act-s53-penalty",
+              "AU-amlctf-act-s56",
+              "AU-amlctf-rules-9-12-exit"
+            ],
+            "verified_at": "2026-10-13",
+            "name_zh_hant": "攜帶1萬澳元或以上現金及其他貨幣票據離開澳大利亞——在護照查驗前報告",
+            "applicability_zh_hant": "依據《2006年反洗錢與反恐怖融資法》第53條，攜帶貨幣票據離開澳大利亞、合計達1萬澳元或以上的，必須報告。貨幣票據包括現金（澳元或外幣）和不記名可轉讓票據（即付給持票人的支票、旅行支票、匯票等，該法第17條），合併計算。報告須使用批准的表格，交給AUSTRAC負責人、海關官員或警務人員。不報告屬於犯罪，最高可處2年監禁或500個罰款單位，或兩者並處。乘飛機或船離境的旅客，一旦離開海關查驗護照的區域，即視為已將錢款帶出澳大利亞（該法第56(2)條）。該法規定的是報告義務，並未限制可帶出的金額。",
+            "timing_zh_hant": "離開澳大利亞前，最遲在走到為你辦理離境護照查驗的海關官員面前時報告（《2025年反洗錢與反恐怖融資細則》第9-12(3)(c)條）。"
           }
         ],
         "sources": [
@@ -18035,15 +18065,57 @@ export default {
             "publisher": "Australian Border Force, Department of Home Affairs"
           },
           {
-            "id": "AU-abf-ipc-sample-bni",
-            "url": "https://www.abf.gov.au/entering-leaving-australia/files/ipc-sample-english.pdf",
-            "title": "Incoming passenger card — sample (English) — Australian Border Force",
-            "publisher": "Australian Border Force, Department of Home Affairs"
+            "id": "AU-amlctf-act-s53-into",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "AU-amlctf-act-s53-out",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "AU-amlctf-act-definition",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "AU-amlctf-act-s53-recipient",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "AU-amlctf-act-s53-penalty",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "AU-amlctf-act-s56",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "AU-amlctf-rules-9-12-entry",
+            "url": "https://www.legislation.gov.au/F2025L01026/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Rules 2025 (compilation of 31 March 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "AU-amlctf-rules-9-12-exit",
+            "url": "https://www.legislation.gov.au/F2025L01026/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Rules 2025 (compilation of 31 March 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
           }
         ],
         "coverage": {
-          "total_procedures": 2,
-          "published_procedures": 2,
+          "total_procedures": 3,
+          "published_procedures": 3,
           "withheld_procedures": 0,
           "open_questions": 3
         }
