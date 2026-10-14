@@ -21379,15 +21379,100 @@ export default {
       },
       {
         "jurisdiction_id": "MK",
-        "review_status": "blocked",
+        "review_status": "partial",
         "researched_at": "2026-09-27",
-        "procedures": [],
-        "sources": [],
+        "procedures": [
+          {
+            "id": "MK-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Declaration of foreign cash and cheques at the border (EUR 10,000 or more on entry; EUR 2,000 to 10,000 for residents leaving)",
+            "name_zh": "入出境外币现金及支票申报（入境 1 万欧元及以上；居民出境 2000 至 1 万欧元）",
+            "agency": "Customs Administration of North Macedonia; declaration form issued by the Ministry of Finance",
+            "official_url": "https://finance.gov.mk/mk-MK/oblasti/obrazec-za-prijavuvanje-na-efektivni-stranski-i-domasni-pari-i-cekovi",
+            "channel": "paper",
+            "applicability_en": "Direction: both. The rules come from the Government Decision on foreign cash and cheques brought into or taken out of the country (Official Gazette 128/2014), which the Ministry of Finance lists as the regulation in force under the Foreign Exchange Act. Entering (residents and non-residents): foreign cash and cheques in foreign currency up to EUR 10,000 may be brought in freely; EUR 10,000 or more may be brought in only if declared to customs at the border crossing. Smaller amounts may also be declared. Residents leaving: up to EUR 2,000 freely; EUR 2,000 to 10,000 only if declared to customs, backed by a certificate from an authorised bank or exchange office for buying the cash, or a bank certificate for withdrawing it from the resident's own foreign-currency account. The certificate is valid until the first border crossing and for no more than 90 days after issue. Residents may not take out more than EUR 10,000. Non-residents leaving may not take out more than the amount they declared to customs on entry. The Ministry of Finance form also states that cash and cheques of MKD 120,000 and/or EUR 10,000 or more must be declared when entering or leaving, and that a false, inaccurate or incomplete declaration counts as no declaration, with a fine of EUR 1,500 to 3,000 in denar equivalent and seizure of the undeclared amount above the permitted limit. The Decision says both 'up to EUR 10,000' and 'EUR 10,000 and more', so declare if you carry exactly EUR 10,000.",
+            "applicability_zh": "方向：双向。规则来自政府《关于可带入或带出本国的外币现金和支票的条件与金额的决定》（官方公报 2014 年第 128 号），财政部把它列为《外汇业务法》下的现行规定。入境（居民和非居民）：外币现金及以外币计值的支票在 1 万欧元以内可自由带入；1 万欧元及以上，须在过境时向海关申报才可带入；较小金额也可申报。居民出境：2000 欧元以内可自由带出；2000 至 1 万欧元须向海关申报，并持有授权银行或兑换所的购汇证明，或银行出具的从本人外币账户取现的证明；证明在首次过境前有效，最长自签发起 90 天。居民不得带出超过 1 万欧元。非居民出境带出的金额，不得超过入境时向海关申报的金额。财政部申报表另写明：入境或出境携带 12 万代纳尔和/或 1 万欧元及以上的现金和支票须申报；虚假、不准确或不完整的申报视为未申报，处 1500 至 3000 欧元（按代纳尔折算）罚款，超出允许额度的未申报金额会被没收。决定同时写有“1 万欧元以内”和“1 万欧元及以上”，携带恰好 1 万欧元时应申报。",
+            "timing_en": "At the border crossing, when entering or leaving, on the paper form for declaring foreign and domestic cash and cheques. The form can be downloaded from the Ministry of Finance website and has fields for the customs officer's signature and the customs stamp.",
+            "timing_zh": "入境或出境过境时，填写纸质的外币和本币现金及支票申报表。表格可从财政部网站下载，表上有海关官员签名和海关盖章栏。",
+            "fee": "unknown",
+            "source_ids": [
+              "MK-mof-decision-2014-entry",
+              "MK-mof-decision-2014-resident-exit",
+              "MK-mof-decision-2014-certificate",
+              "MK-mof-decision-2014-certificate-validity",
+              "MK-mof-decision-2014-resident-max",
+              "MK-mof-decision-2014-nonresident-exit",
+              "MK-mof-form-duty",
+              "MK-mof-form-penalty",
+              "MK-mof-regulations-list"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "入出境外幣現金及支票申報（入境 1 萬歐元及以上；居民出境 2000 至 1 萬歐元）",
+            "applicability_zh_hant": "方向：雙向。規則來自政府《關於可帶入或帶出本國的外幣現金和支票的條件與金額的決定》（官方公報 2014 年第 128 號），財政部把它列為《外匯業務法》下的現行規定。入境（居民和非居民）：外幣現金及以外幣計值的支票在 1 萬歐元以內可自由帶入；1 萬歐元及以上，須在過境時向海關申報才可帶入；較小金額也可申報。居民出境：2000 歐元以內可自由帶出；2000 至 1 萬歐元須向海關申報，並持有授權銀行或兌換所的購匯證明，或銀行出具的從本人外幣賬戶取現的證明；證明在首次過境前有效，最長自簽發起 90 天。居民不得帶出超過 1 萬歐元。非居民出境帶出的金額，不得超過入境時向海關申報的金額。財政部申報表另寫明：入境或出境攜帶 12 萬代納爾和/或 1 萬歐元及以上的現金和支票須申報；虛假、不準確或不完整的申報視為未申報，處 1500 至 3000 歐元（按代納爾折算）罰款，超出允許額度的未申報金額會被沒收。決定同時寫有“1 萬歐元以內”和“1 萬歐元及以上”，攜帶恰好 1 萬歐元時應申報。",
+            "timing_zh_hant": "入境或出境過境時，填寫紙質的外幣和本幣現金及支票申報表。表格可從財政部網站下載，表上有海關官員簽名和海關蓋章欄。"
+          }
+        ],
+        "sources": [
+          {
+            "id": "MK-mof-decision-2014-entry",
+            "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-koi-go-reguliraat-finansiskiot-sistem-file-HODS.pdf",
+            "title": "Government Decision on the conditions and amount of foreign cash and cheques that may be brought into or taken out of the Republic of Macedonia (Official Gazette 128/2014) — Government of North Macedonia",
+            "publisher": "Government of North Macedonia (published by the Ministry of Finance)"
+          },
+          {
+            "id": "MK-mof-decision-2014-resident-exit",
+            "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-koi-go-reguliraat-finansiskiot-sistem-file-HODS.pdf",
+            "title": "Government Decision on the conditions and amount of foreign cash and cheques that may be brought into or taken out of the Republic of Macedonia (Official Gazette 128/2014) — Government of North Macedonia",
+            "publisher": "Government of North Macedonia (published by the Ministry of Finance)"
+          },
+          {
+            "id": "MK-mof-decision-2014-certificate",
+            "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-koi-go-reguliraat-finansiskiot-sistem-file-HODS.pdf",
+            "title": "Government Decision on the conditions and amount of foreign cash and cheques that may be brought into or taken out of the Republic of Macedonia (Official Gazette 128/2014) — Government of North Macedonia",
+            "publisher": "Government of North Macedonia (published by the Ministry of Finance)"
+          },
+          {
+            "id": "MK-mof-decision-2014-certificate-validity",
+            "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-koi-go-reguliraat-finansiskiot-sistem-file-HODS.pdf",
+            "title": "Government Decision on the conditions and amount of foreign cash and cheques that may be brought into or taken out of the Republic of Macedonia (Official Gazette 128/2014) — Government of North Macedonia",
+            "publisher": "Government of North Macedonia (published by the Ministry of Finance)"
+          },
+          {
+            "id": "MK-mof-decision-2014-resident-max",
+            "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-koi-go-reguliraat-finansiskiot-sistem-file-HODS.pdf",
+            "title": "Government Decision on the conditions and amount of foreign cash and cheques that may be brought into or taken out of the Republic of Macedonia (Official Gazette 128/2014) — Government of North Macedonia",
+            "publisher": "Government of North Macedonia (published by the Ministry of Finance)"
+          },
+          {
+            "id": "MK-mof-decision-2014-nonresident-exit",
+            "url": "https://portal.mdt.gov.mk/post-body-files/zakoni-koi-go-reguliraat-finansiskiot-sistem-file-HODS.pdf",
+            "title": "Government Decision on the conditions and amount of foreign cash and cheques that may be brought into or taken out of the Republic of Macedonia (Official Gazette 128/2014) — Government of North Macedonia",
+            "publisher": "Government of North Macedonia (published by the Ministry of Finance)"
+          },
+          {
+            "id": "MK-mof-form-duty",
+            "url": "https://portal.mdt.gov.mk/post-body-files/obrazec-za-prijavuvanje-na-efektivni-stranski-i-domasni-pari-i-cekovi-file-C1Ib.pdf",
+            "title": "Form for declaring foreign and domestic cash and cheques brought into or taken out of the country — Ministry of Finance of North Macedonia",
+            "publisher": "Ministry of Finance of North Macedonia"
+          },
+          {
+            "id": "MK-mof-form-penalty",
+            "url": "https://portal.mdt.gov.mk/post-body-files/obrazec-za-prijavuvanje-na-efektivni-stranski-i-domasni-pari-i-cekovi-file-C1Ib.pdf",
+            "title": "Form for declaring foreign and domestic cash and cheques brought into or taken out of the country — Ministry of Finance of North Macedonia",
+            "publisher": "Ministry of Finance of North Macedonia"
+          },
+          {
+            "id": "MK-mof-regulations-list",
+            "url": "https://finance.gov.mk/mk-MK/zakoni-i-propisi/finansiski-sistem",
+            "title": "Laws regulating the financial system — Ministry of Finance of North Macedonia",
+            "publisher": "Ministry of Finance of North Macedonia"
+          }
+        ],
         "coverage": {
-          "total_procedures": 0,
-          "published_procedures": 0,
+          "total_procedures": 1,
+          "published_procedures": 1,
           "withheld_procedures": 0,
-          "open_questions": 1
+          "open_questions": 2
         }
       },
       {
