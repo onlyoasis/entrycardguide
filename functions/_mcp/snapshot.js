@@ -2081,7 +2081,7 @@ export default {
       {
         "jurisdiction_id": "EG",
         "review_status": "partial",
-        "researched_at": "2026-09-27",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "EG-departure-valuables-registration",
@@ -2103,6 +2103,32 @@ export default {
             "name_zh_hant": "離境居民貴重物品登記，供返國時免稅帶回（2020年第207號海關法、2021年第430號實施條例）",
             "applicability_zh_hant": "離境埃及、且希望日後返國時將貴重物品帶回的居民。為使物品納入返國居民行李待遇，離境居民須在為此指定的表格上（\"على النموذج المعد لذلك\"）證明/登記；現行官方旅客頁未公佈表號，也無表格下載。回國時，離境時已在上述表格登記的個人行李屬於可帶回行李；另有不超過15000埃鎊的新個人物品（如禮品）免稅額，新品超額部分徵稅；新品免稅每年最多給予2次，且須護照持有人本人在場。15000埃鎊為入境新品免稅額度，並非觸發本登記的金額門檻。該頁未稱未登記貴重品禁止返國帶入。",
             "timing_zh_hant": "離埃前在指定表格上證明/登記貴重物品，以備返國時使用。官方頁面未說明具體辦理窗口或提交流程。"
+          },
+          {
+            "id": "EG-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Declaration of foreign cash and bearer negotiable instruments over US$10,000 on entry (and over US$5,000 on exit)",
+            "name_zh": "外币现金及不记名票据申报（入境超过1万美元；出境超过5000美元）",
+            "agency": "Egyptian Customs Authority (receives the declaration forms at entry and exit points); rules set by the Central Bank of Egypt law and the Anti-Money Laundering Executive Regulations",
+            "official_url": "https://www.cbe.org.eg/-/media/project/cbe/page-content/rich-text/aml-and-cft/laws/%D8%A7%D9%84%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D8%AF%D9%84%D8%A9-2023.pdf",
+            "channel": "paper",
+            "applicability_en": "Entering Egypt: every arriving traveller carrying foreign cash or bearer negotiable instruments worth more than US$10,000 (or its equivalent in another foreign currency; cash and instruments are added together) must declare the amount to Customs in the declaration form provided for this purpose (Central Bank and Banking Sector Law No. 194 of 2020, Article 213; Executive Regulations of the Anti-Money Laundering Law, Article 14(3)). Leaving Egypt: foreign cash taken out may not exceed US$10,000 or its equivalent, except that a traveller may take out the balance of an amount previously declared on arrival (Article 213). The Executive Regulations, as published by the Central Bank, also require a departing traveller to declare to Customs, in the form provided, foreign cash or bearer negotiable instruments worth more than US$5,000 or its equivalent (Article 14(4)). Egyptian banknotes or bearer negotiable instruments: travellers entering or leaving may carry up to EGP 5,000 (Article 14(5)); Article 213 leaves the amount to be set by the Central Bank's board. Customs makes the forms available at marked points in the departure and arrival halls, or hands them out to arriving and departing travellers. The Customs Authority's own passenger page (customs.gov.eg) does not mention cash or give a form number.",
+            "applicability_zh": "入境埃及：每位入境旅客携带的外币现金或不记名可转让票据价值超过1万美元（或等值其他外币；现金与票据合并计算）的，须在为此提供的申报表上向海关申报（2020年第194号《中央银行与银行体系法》第213条；《反洗钱法实施条例》第14条第3项）。离境埃及：带出的外币现金不得超过1万美元或等值外币，但旅客可带出入境时已申报的余额（第213条）。中央银行公布的《实施条例》还要求离境旅客就价值超过5000美元或等值的外币现金或不记名可转让票据，在提供的表格上向海关申报（第14条第4项）。埃及镑纸币或不记名可转让票据：入境或离境旅客可携带最多5000埃镑（第14条第5项）；第213条把具体金额交由中央银行董事会确定。海关在出入境大厅的指定显著位置提供这些表格，或向入境和离境旅客发放。埃及海关总署自己的旅客页面（customs.gov.eg）未提及现金，也没有给出表格编号。",
+            "timing_en": "Made on the declaration form at the Customs point when entering (arrival hall) or leaving (departure hall).",
+            "timing_zh": "入境时在到达大厅、离境时在出发大厅的海关点填写申报表办理。",
+            "fee": "unknown",
+            "source_ids": [
+              "EG-cbe-law194-art213-entry",
+              "EG-cbe-law194-art213-exit",
+              "EG-aml-regs-art14-entry",
+              "EG-aml-regs-art14-exit",
+              "EG-aml-regs-art14-forms",
+              "EG-aml-regs-art14-pound"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "外幣現金及不記名票據申報（入境超過1萬美元；出境超過5000美元）",
+            "applicability_zh_hant": "入境埃及：每位入境旅客攜帶的外幣現金或不記名可轉讓票據價值超過1萬美元（或等值其他外幣；現金與票據合併計算）的，須在為此提供的申報表上向海關申報（2020年第194號《中央銀行與銀行體系法》第213條；《反洗錢法實施條例》第14條第3項）。離境埃及：帶出的外幣現金不得超過1萬美元或等值外幣，但旅客可帶出入境時已申報的餘額（第213條）。中央銀行公佈的《實施條例》還要求離境旅客就價值超過5000美元或等值的外幣現金或不記名可轉讓票據，在提供的表格上向海關申報（第14條第4項）。埃及鎊紙幣或不記名可轉讓票據：入境或離境旅客可攜帶最多5000埃鎊（第14條第5項）；第213條把具體金額交由中央銀行董事會確定。海關在出入境大廳的指定顯著位置提供這些表格，或向入境和離境旅客發放。埃及海關總署自己的旅客頁面（customs.gov.eg）未提及現金，也沒有給出表格編號。",
+            "timing_zh_hant": "入境時在到達大廳、離境時在出發大廳的海關點填寫申報表辦理。"
           }
         ],
         "sources": [
@@ -2111,13 +2137,49 @@ export default {
             "url": "https://customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1",
             "title": "الركاب (Passengers) — Travel and Tourism legislations",
             "publisher": "Egyptian Customs Authority, Ministry of Finance"
+          },
+          {
+            "id": "EG-cbe-law194-art213-entry",
+            "url": "https://www.cbe.org.eg/-/media/project/cbe/page-content/other-links/cbe-law-no,-d-,-194-of-2020.pdf",
+            "title": "Central Bank and Banking Sector Law No. 194 of 2020, Article 213 (Official Gazette, 15 September 2020) — Central Bank of Egypt",
+            "publisher": "Central Bank of Egypt (publication of the Official Gazette text)"
+          },
+          {
+            "id": "EG-cbe-law194-art213-exit",
+            "url": "https://www.cbe.org.eg/-/media/project/cbe/page-content/other-links/cbe-law-no,-d-,-194-of-2020.pdf",
+            "title": "Central Bank and Banking Sector Law No. 194 of 2020, Article 213 (Official Gazette, 15 September 2020) — Central Bank of Egypt",
+            "publisher": "Central Bank of Egypt (publication of the Official Gazette text)"
+          },
+          {
+            "id": "EG-aml-regs-art14-entry",
+            "url": "https://www.cbe.org.eg/-/media/project/cbe/page-content/rich-text/aml-and-cft/laws/%D8%A7%D9%84%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D8%AF%D9%84%D8%A9-2023.pdf",
+            "title": "Executive Regulations of the Anti-Money Laundering Law, Article 14 (as amended to 2023) — Central Bank of Egypt",
+            "publisher": "Central Bank of Egypt (publication of the Prime Minister's Executive Regulations)"
+          },
+          {
+            "id": "EG-aml-regs-art14-exit",
+            "url": "https://www.cbe.org.eg/-/media/project/cbe/page-content/rich-text/aml-and-cft/laws/%D8%A7%D9%84%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D8%AF%D9%84%D8%A9-2023.pdf",
+            "title": "Executive Regulations of the Anti-Money Laundering Law, Article 14 (as amended to 2023) — Central Bank of Egypt",
+            "publisher": "Central Bank of Egypt (publication of the Prime Minister's Executive Regulations)"
+          },
+          {
+            "id": "EG-aml-regs-art14-forms",
+            "url": "https://www.cbe.org.eg/-/media/project/cbe/page-content/rich-text/aml-and-cft/laws/%D8%A7%D9%84%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D8%AF%D9%84%D8%A9-2023.pdf",
+            "title": "Executive Regulations of the Anti-Money Laundering Law, Article 14 (as amended to 2023) — Central Bank of Egypt",
+            "publisher": "Central Bank of Egypt (publication of the Prime Minister's Executive Regulations)"
+          },
+          {
+            "id": "EG-aml-regs-art14-pound",
+            "url": "https://www.cbe.org.eg/-/media/project/cbe/page-content/rich-text/aml-and-cft/laws/%D8%A7%D9%84%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D8%AF%D9%84%D8%A9-2023.pdf",
+            "title": "Executive Regulations of the Anti-Money Laundering Law, Article 14 (as amended to 2023) — Central Bank of Egypt",
+            "publisher": "Central Bank of Egypt (publication of the Prime Minister's Executive Regulations)"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
-          "open_questions": 1
+          "open_questions": 2
         }
       },
       {
@@ -3015,7 +3077,7 @@ export default {
       {
         "jurisdiction_id": "KE",
         "review_status": "partial",
-        "researched_at": "2026-09-29",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "KE-passenger-declaration",
@@ -3025,8 +3087,8 @@ export default {
             "agency": "Kenya Revenue Authority — Customs & Border Control",
             "official_url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya",
             "channel": "on_arrival",
-            "applicability_en": "Two distinct questions must be told apart, and current KRA pages answer them inconsistently — in part within a single page: declaring goods to customs, and completing the specific Passenger Declaration Form (F88). Declaration to customs — current official texts conflict: the live KRA knowledge base (https://www.kra.go.ke/component/knowledge_base/category/5) corrects the misconception “Only new items exceeding USD 2,000 must be declared” with the clarification “All items brought into Kenya from a foreign/partner state must be declared to customs (including currencies and monetary instruments of more than $10,000)”, and its Step 2 states “A passenger arriving is required to make a declaration to customs of all personal items brought with him/her from abroad”; yet immediately below, under Personal Items, the same page states “Used personal items and effects are exempt from customs duties and do not need to be declared”. The page contradicts itself on whether used personal effects must be declared to customs. Form F88 trigger — current official texts conflict across pages: the only form edition KRA still serves is the May-2018 print, which states it “MUST be completed by ALL passengers prior to arrival” and cites EACCMA 2004 Sections 44-46 and Fifth Schedule Part B Paragraph 5(4); the live Passenger Terminal FAQ likewise says “All passengers arriving into the country are supposed to make declarations using the prescribed Passenger Declaration Form (s) (Form F88)”; the knowledge base, however, ties the form to new goods: “Any new items with a value of up to USD 2,000 per traveler are exempt from import tax, provided they are declared to the Customs Officer. If the value exceeds this limit, the passenger must declare the items in the Passenger Declaration Form (F88) before arrival.” Official pages therefore disagree on whether completing Form F88 is required of every passenger (printed form; terminal FAQ) or only when new goods exceed USD 2,000 (knowledge base); a requirement for every passenger to complete Form F88 is not consistently established by current official texts. The USD 2,000 figure is a tax concession, not by itself a declaration trigger: EAC Legal Notice EAC/427/2024 (Gazette of 31 December 2024; five-page official Gazette) amended EACCMA Fifth Schedule Part B Paragraph 5(9) by substituting “five hundred” with “two thousand”; the terminal FAQ gives a “concession of USD. 2000 applicable only to goods for personal and/or household use”, the knowledge base “a concession of up to USD 2,000 on items bought for personal and/or household use”. Under the knowledge-base wording the exemption of new items up to USD 2,000 is conditional on their being declared to the Customs Officer, and F88 form completion attaches only above that limit; the tax exemption and any declaration or form duty are separate questions. Superseded USD 500 figures persist on the older Customs FAQ, the 02/11/2023 KRA public notice (which already announced an upcoming higher limit), the goods checkbox of the printed form and a stale declare-item on the terminal FAQ itself; used personal effects are exempt from tax (knowledge base; terminal FAQ), subject to the declaration contradiction above. Section 45 EACCMA 2004 provides dual-channel clearance: Green Channel for passengers with nothing to declare carrying dutiable goods within the duty-free allowance (oral declaration / declaration on the Passenger Declaration, passenger Categories A & B); Red Channel for passengers carrying dutiable or restricted goods — all crew members use the Red Channel, and the printed form directs any “Yes” answer to the Red Channel counter. For passengers aged 18 or over — the 18+ qualifier attaches to these consumables allowances in source wording; no age condition is stated for the USD 2,000 concession itself — duty is not levied on: spirits (including liquors) or wine not exceeding one litre, or wine not exceeding two litres; perfume and toilet water not exceeding in all one-half litre, of which not more than a quarter may be perfume; cigarettes, cigars, cheroots, cigarillos, tobacco and snuff not exceeding 250 grammes in total. Currency: the terminal FAQ requires arriving passengers to declare “Currency of USD. 10,000 and above or its equivalent”; the knowledge base states cash “exceeding 10,000 USD or its equivalent MUST be declared at Customs on arrival or before departure”, while its misconception-clarification says “more than $10,000” — current official pages conflict at exactly USD 10,000, and the printed form’s “exceeding the equivalent of USD 10,000” checkbox reflects the form’s own printing, not a current tax allowance or the legal cash threshold in force. Excerpts of FRC guidance and the POCAMLA Second Schedule (Kenya Law) available online suggest an inclusive threshold applying into and out of Kenya, but complete official originals of either text are not available for checking, so the exact legal cash threshold and any departure-side form or channel have no confirmation from complete official texts; completing Form F88 on arrival is not a substitute for any departure-side report, and the current official texts name no separate departure cash-declaration form. Non- or mis-declaration contravenes Section 203 EACCMA 2004, with strict penal action and seizure/confiscation. Duty is assessed on the transaction value under the East African Community Common External Tariff 2022 and paid, after generation of an electronic payment slip, through appointed banks at the terminal, PDQ card machines or M-Pesa (paybill 222222).",
-            "applicability_zh": "须区分两个不同的问题，现行KRA页面对其答复不一（部分矛盾发生在同一页面之内）：一是向海关申报物品，二是填写特定的旅客申报表（F88表）。向海关申报——现行官方文本存在页面内部矛盾：KRA现行知识库（https://www.kra.go.ke/component/knowledge_base/category/5）在纠正“仅超过2,000美元的新物品须申报”这一误解时称“所有从外国/伙伴国带入肯尼亚的物品均须向海关申报（包括超过1万美元的货币及货币工具）”，其步骤2又称“入境旅客须就其从国外随身携带的所有个人物品向海关申报”；但紧接其下“个人物品”项下，同一页面称“使用过的个人物品及自用品免征关税，无需申报”。该页面就使用过的个人自用物品是否须向海关申报前后不一；两种表述在同一官方页面上并存。F88表触发条件——现行官方文本跨页冲突：KRA官网仍在提供的唯一表格版本为2018年5月印刷版，其注明“本表必须由所有旅客在抵达肯尼亚前填写”，并援引EACCMA 2004第44-46条及第五附表B部第5(4)段；现行“旅客航站楼通关”FAQ亦称“所有入境旅客应使用规定的旅客申报表（F88表）作出申报”；而知识库仅就新物品设定该表义务：“任何价值不超过每旅客2,000美元的新物品均免征进口税，但须向海关官员申报。若价值超过该限额，旅客须在抵达前在旅客申报表（F88）中申报该物品。”因此官方页面之间对F88表是全体旅客均须填写（印刷版表格；航站楼FAQ），还是仅在新物品超过2,000美元时才须填写（知识库），说法不一；“全体旅客一律填表”的要求并未得到现行官方文本的一致支持。2,000美元系税收优惠额度，其本身并非申报触发条件：东非共同体第EAC/427/2024号法律公告（2024年12月31日公报；5页官方公报）将EACCMA第五附表B部第5(9)段中的“五百”替换为“二千”；航站楼FAQ称仅就“个人及/或家庭自用物品”给予“2,000美元”优惠额度，知识库称“就购买作个人及/或家庭自用之物品可获最高2,000美元的优惠额度”。依知识库表述，不超过2,000美元新物品的免税以向海关官员申报为条件，F88表填报义务仅系于超过该限额的情形；税收减免与申报/填表义务系两个不同的问题。已被取代的500美元数额仍见于较旧的Customs FAQ、KRA 2023年11月2日公告（该公告已预告将上调限额）、印刷版表格的物品勾选项及航站楼FAQ遗留条目；使用过的个人自用品免税（知识库；航站楼FAQ），但受上述申报矛盾影响。EACCMA 2004第45条规定双通道通关：无申报且应税物品在免税额度内的旅客走绿色通道（以口头申报/旅客申报表申报，适用于A、B类旅客）；携带应税或受限物品的旅客走红色通道——全体机组/船员须走红色通道，表格并指示凡任一勾选项答“是”者前往红色通道柜台。年满18周岁的旅客以下物品免税——18周岁条件在原文中仅系于这些消耗品免税限额，2,000美元一般优惠额度本身的官方表述未设年龄条件：烈酒（含利口酒）或葡萄酒不超过1升，或葡萄酒不超过2升；香水和化妆水合计不超过0.5升（其中香水不超过四分之一）；香烟、雪茄、方头雪茄、小雪茄、烟草及鼻烟合计不超过250克。货币：航站楼FAQ要求入境旅客申报“1万美元及以上或等值货币”；知识库FAQ称“超过1万美元或等值的货币及货币工具必须在抵达时或离境前向海关申报”，其误解澄清项则称“超过1万美元”——现行官方页面在恰为1万美元处口径不一；印刷版表格“超过等值1万美元”勾选项属表格自身印载内容，并非现行税收额度或现行法定现金门槛。FRC指引与POCAMLA第二附表（Kenya Law）的现有摘录显示该限额为“等于或超过”，且适用于运入及运出肯尼亚两个方向；但两者的完整官方原文未能取得核对，法定现金门槛及任何离境申报表格/渠道均无官方全文确认；入境时填写的F88表不能当作离境申报的替代，现行官方文本也未载明单独的离境货币申报表格。未申报或虚报违反EACCMA 2004第203条，将受严厉处罚并可能被扣押/没收物品。关税按成交价格依《东非共同体共同对外关税2022》估征，电子缴费单生成后，经航站楼指定银行、PDQ刷卡机或M-Pesa（222222支付号）缴纳。",
+            "applicability_en": "Two distinct questions must be told apart, and current KRA pages answer them inconsistently — in part within a single page: declaring goods to customs, and completing the specific Passenger Declaration Form (F88). Declaration to customs — current official texts conflict: the live KRA knowledge base (https://www.kra.go.ke/component/knowledge_base/category/5) corrects the misconception “Only new items exceeding USD 2,000 must be declared” with the clarification “All items brought into Kenya from a foreign/partner state must be declared to customs (including currencies and monetary instruments of more than $10,000)”, and its Step 2 states “A passenger arriving is required to make a declaration to customs of all personal items brought with him/her from abroad”; yet immediately below, under Personal Items, the same page states “Used personal items and effects are exempt from customs duties and do not need to be declared”. The page contradicts itself on whether used personal effects must be declared to customs. Form F88 trigger — current official texts conflict across pages: the only form edition KRA still serves is the May-2018 print, which states it “MUST be completed by ALL passengers prior to arrival” and cites EACCMA 2004 Sections 44-46 and Fifth Schedule Part B Paragraph 5(4); the live Passenger Terminal FAQ likewise says “All passengers arriving into the country are supposed to make declarations using the prescribed Passenger Declaration Form (s) (Form F88)”; the knowledge base, however, ties the form to new goods: “Any new items with a value of up to USD 2,000 per traveler are exempt from import tax, provided they are declared to the Customs Officer. If the value exceeds this limit, the passenger must declare the items in the Passenger Declaration Form (F88) before arrival.” Official pages therefore disagree on whether completing Form F88 is required of every passenger (printed form; terminal FAQ) or only when new goods exceed USD 2,000 (knowledge base); a requirement for every passenger to complete Form F88 is not consistently established by current official texts. The USD 2,000 figure is a tax concession, not by itself a declaration trigger: EAC Legal Notice EAC/427/2024 (Gazette of 31 December 2024; five-page official Gazette) amended EACCMA Fifth Schedule Part B Paragraph 5(9) by substituting “five hundred” with “two thousand”; the terminal FAQ gives a “concession of USD. 2000 applicable only to goods for personal and/or household use”, the knowledge base “a concession of up to USD 2,000 on items bought for personal and/or household use”. Under the knowledge-base wording the exemption of new items up to USD 2,000 is conditional on their being declared to the Customs Officer, and F88 form completion attaches only above that limit; the tax exemption and any declaration or form duty are separate questions. Superseded USD 500 figures persist on the older Customs FAQ, the 02/11/2023 KRA public notice (which already announced an upcoming higher limit), the goods checkbox of the printed form and a stale declare-item on the terminal FAQ itself; used personal effects are exempt from tax (knowledge base; terminal FAQ), subject to the declaration contradiction above. Section 45 EACCMA 2004 provides dual-channel clearance: Green Channel for passengers with nothing to declare carrying dutiable goods within the duty-free allowance (oral declaration / declaration on the Passenger Declaration, passenger Categories A & B); Red Channel for passengers carrying dutiable or restricted goods — all crew members use the Red Channel, and the printed form directs any “Yes” answer to the Red Channel counter. For passengers aged 18 or over — the 18+ qualifier attaches to these consumables allowances in source wording; no age condition is stated for the USD 2,000 concession itself — duty is not levied on: spirits (including liquors) or wine not exceeding one litre, or wine not exceeding two litres; perfume and toilet water not exceeding in all one-half litre, of which not more than a quarter may be perfume; cigarettes, cigars, cheroots, cigarillos, tobacco and snuff not exceeding 250 grammes in total. Currency: the terminal FAQ requires arriving passengers to declare “Currency of USD. 10,000 and above or its equivalent”; the knowledge base states cash “exceeding 10,000 USD or its equivalent MUST be declared at Customs on arrival or before departure”, while its misconception-clarification says “more than $10,000” — current official pages conflict at exactly USD 10,000, and the printed form’s “exceeding the equivalent of USD 10,000” checkbox reflects the form’s own printing, not a current tax allowance or the legal cash threshold in force. The cash-declaration duty under the Proceeds of Crime and Anti-Money Laundering Act applies in both directions and is described as a separate entry; completing Form F88 on arrival is not a substitute for any departure-side report. Non- or mis-declaration contravenes Section 203 EACCMA 2004, with strict penal action and seizure/confiscation. Duty is assessed on the transaction value under the East African Community Common External Tariff 2022 and paid, after generation of an electronic payment slip, through appointed banks at the terminal, PDQ card machines or M-Pesa (paybill 222222).",
+            "applicability_zh": "须区分两个不同的问题，现行KRA页面对其答复不一（部分矛盾发生在同一页面之内）：一是向海关申报物品，二是填写特定的旅客申报表（F88表）。向海关申报——现行官方文本存在页面内部矛盾：KRA现行知识库（https://www.kra.go.ke/component/knowledge_base/category/5）在纠正“仅超过2,000美元的新物品须申报”这一误解时称“所有从外国/伙伴国带入肯尼亚的物品均须向海关申报（包括超过1万美元的货币及货币工具）”，其步骤2又称“入境旅客须就其从国外随身携带的所有个人物品向海关申报”；但紧接其下“个人物品”项下，同一页面称“使用过的个人物品及自用品免征关税，无需申报”。该页面就使用过的个人自用物品是否须向海关申报前后不一；两种表述在同一官方页面上并存。F88表触发条件——现行官方文本跨页冲突：KRA官网仍在提供的唯一表格版本为2018年5月印刷版，其注明“本表必须由所有旅客在抵达肯尼亚前填写”，并援引EACCMA 2004第44-46条及第五附表B部第5(4)段；现行“旅客航站楼通关”FAQ亦称“所有入境旅客应使用规定的旅客申报表（F88表）作出申报”；而知识库仅就新物品设定该表义务：“任何价值不超过每旅客2,000美元的新物品均免征进口税，但须向海关官员申报。若价值超过该限额，旅客须在抵达前在旅客申报表（F88）中申报该物品。”因此官方页面之间对F88表是全体旅客均须填写（印刷版表格；航站楼FAQ），还是仅在新物品超过2,000美元时才须填写（知识库），说法不一；“全体旅客一律填表”的要求并未得到现行官方文本的一致支持。2,000美元系税收优惠额度，其本身并非申报触发条件：东非共同体第EAC/427/2024号法律公告（2024年12月31日公报；5页官方公报）将EACCMA第五附表B部第5(9)段中的“五百”替换为“二千”；航站楼FAQ称仅就“个人及/或家庭自用物品”给予“2,000美元”优惠额度，知识库称“就购买作个人及/或家庭自用之物品可获最高2,000美元的优惠额度”。依知识库表述，不超过2,000美元新物品的免税以向海关官员申报为条件，F88表填报义务仅系于超过该限额的情形；税收减免与申报/填表义务系两个不同的问题。已被取代的500美元数额仍见于较旧的Customs FAQ、KRA 2023年11月2日公告（该公告已预告将上调限额）、印刷版表格的物品勾选项及航站楼FAQ遗留条目；使用过的个人自用品免税（知识库；航站楼FAQ），但受上述申报矛盾影响。EACCMA 2004第45条规定双通道通关：无申报且应税物品在免税额度内的旅客走绿色通道（以口头申报/旅客申报表申报，适用于A、B类旅客）；携带应税或受限物品的旅客走红色通道——全体机组/船员须走红色通道，表格并指示凡任一勾选项答“是”者前往红色通道柜台。年满18周岁的旅客以下物品免税——18周岁条件在原文中仅系于这些消耗品免税限额，2,000美元一般优惠额度本身的官方表述未设年龄条件：烈酒（含利口酒）或葡萄酒不超过1升，或葡萄酒不超过2升；香水和化妆水合计不超过0.5升（其中香水不超过四分之一）；香烟、雪茄、方头雪茄、小雪茄、烟草及鼻烟合计不超过250克。货币：航站楼FAQ要求入境旅客申报“1万美元及以上或等值货币”；知识库FAQ称“超过1万美元或等值的货币及货币工具必须在抵达时或离境前向海关申报”，其误解澄清项则称“超过1万美元”——现行官方页面在恰为1万美元处口径不一；印刷版表格“超过等值1万美元”勾选项属表格自身印载内容，并非现行税收额度或现行法定现金门槛。《犯罪所得与反洗钱法》规定的现金申报义务适用于入境和出境两个方向，另作单独事项列出；入境时填写的F88表不能当作离境申报的替代。未申报或虚报违反EACCMA 2004第203条，将受严厉处罚并可能被扣押/没收物品。关税按成交价格依《东非共同体共同对外关税2022》估征，电子缴费单生成后，经航站楼指定银行、PDQ刷卡机或M-Pesa（222222支付号）缴纳。",
             "timing_en": "Where Form F88 applies, it (served May-2018 edition) is completed before arrival and presented to Customs at the point of entry; whether it applies to all passengers or only to new items over USD 2,000 follows the disagreement between official pages described above, and the knowledge base adds that “declaration is supposed to be done before scanning”. The passenger is cleared at the Green or Red Channel after disembarkation. The knowledge base places cash declaration “on arrival or before departure”; the current official texts name no departure-side form or channel.",
             "timing_zh": "凡适用F88表者（现行提供的2018年5月版），于抵达前填写并在入境口岸交海关；该表适用于全体旅客抑或仅适用于超过2,000美元的新物品，官方页面说法不一（见上文）；知识库并称“申报应在扫描前完成”。下机后经绿色或红色通道通关。知识库称现金申报须于“抵达时或离境前”作出；离境申报使用何种表格/渠道，现行官方文本未载明。",
             "fee": "unknown",
@@ -3044,8 +3106,34 @@ export default {
             ],
             "verified_at": "2026-09-29",
             "name_zh_hant": "旅客申報表（F88表）與雙通道通關",
-            "applicability_zh_hant": "須區分兩個不同的問題，現行KRA頁面對其答覆不一（部分矛盾發生在同一頁面之內）：一是向海關申報物品，二是填寫特定的旅客申報表（F88表）。向海關申報——現行官方文本存在頁面內部矛盾：KRA現行知識庫（https://www.kra.go.ke/component/knowledge_base/category/5）在糾正“僅超過2,000美元的新物品須申報”這一誤解時稱“所有從外國/夥伴國帶入肯尼亞的物品均須向海關申報（包括超過1萬美元的貨幣及貨幣工具）”，其步驟2又稱“入境旅客須就其從國外隨身攜帶的所有個人物品向海關申報”；但緊接其下“個人物品”項下，同一頁面稱“使用過的個人物品及自用品免徵關稅，無需申報”。該頁面就使用過的個人自用物品是否須向海關申報前後不一；兩種表述在同一官方頁面上並存。F88表觸發條件——現行官方文本跨頁衝突：KRA官網仍在提供的唯一表格版本為2018年5月印刷版，其註明“本表必須由所有旅客在抵達肯尼亞前填寫”，並援引EACCMA 2004第44-46條及第五附表B部第5(4)段；現行“旅客航站樓通關”FAQ亦稱“所有入境旅客應使用規定的旅客申報表（F88表）作出申報”；而知識庫僅就新物品設定該表義務：“任何價值不超過每旅客2,000美元的新物品均免徵進口稅，但須向海關官員申報。若價值超過該限額，旅客須在抵達前在旅客申報表（F88）中申報該物品。”因此官方頁面之間對F88表是全體旅客均須填寫（印刷版表格；航站樓FAQ），還是僅在新物品超過2,000美元時才須填寫（知識庫），說法不一；“全體旅客一律填表”的要求並未得到現行官方文本的一致支持。2,000美元系稅收優惠額度，其本身並非申報觸發條件：東非共同體第EAC/427/2024號法律公告（2024年12月31日公報；5頁官方公報）將EACCMA第五附表B部第5(9)段中的“五百”替換為“二千”；航站樓FAQ稱僅就“個人及/或家庭自用物品”給予“2,000美元”優惠額度，知識庫稱“就購買作個人及/或家庭自用之物品可獲最高2,000美元的優惠額度”。依知識庫表述，不超過2,000美元新物品的免稅以向海關官員申報為條件，F88表填報義務僅繫於超過該限額的情形；稅收減免與申報/填表義務系兩個不同的問題。已被取代的500美元數額仍見於較舊的Customs FAQ、KRA 2023年11月2日公告（該公告已預告將上調限額）、印刷版表格的物品勾選項及航站樓FAQ遺留條目；使用過的個人自用品免稅（知識庫；航站樓FAQ），但受上述申報矛盾影響。EACCMA 2004第45條規定雙通道通關：無申報且應稅物品在免稅額度內的旅客走綠色通道（以口頭申報/旅客申報表申報，適用於A、B類旅客）；攜帶應稅或受限物品的旅客走紅色通道——全體機組/船員須走紅色通道，表格並指示凡任一勾選項答“是”者前往紅色通道櫃檯。年滿18週歲的旅客以下物品免稅——18週歲條件在原文中僅繫於這些消耗品免稅限額，2,000美元一般優惠額度本身的官方表述未設年齡條件：烈酒（含利口酒）或葡萄酒不超過1升，或葡萄酒不超過2升；香水和化妝水合計不超過0.5升（其中香水不超過四分之一）；香菸、雪茄、方頭雪茄、小雪茄、菸草及鼻菸合計不超過250克。貨幣：航站樓FAQ要求入境旅客申報“1萬美元及以上或等值貨幣”；知識庫FAQ稱“超過1萬美元或等值的貨幣及貨幣工具必須在抵達時或離境前向海關申報”，其誤解澄清項則稱“超過1萬美元”——現行官方頁面在恰為1萬美元處口徑不一；印刷版表格“超過等值1萬美元”勾選項屬表格自身印載內容，並非現行稅收額度或現行法定現金門檻。FRC指引與POCAMLA第二附表（Kenya Law）的現有摘錄顯示該限額為“等於或超過”，且適用於運入及運出肯尼亞兩個方向；但兩者的完整官方原文未能取得核對，法定現金門檻及任何離境申報表格/渠道均無官方全文確認；入境時填寫的F88表不能當作離境申報的替代，現行官方文本也未載明單獨的離境貨幣申報表格。未申報或虛報違反EACCMA 2004第203條，將受嚴厲處罰並可能被扣押/沒收物品。關稅按成交價格依《東非共同體共同對外關稅2022》估徵，電子繳費單生成後，經航站樓指定銀行、PDQ刷卡機或M-Pesa（222222支付號）繳納。",
+            "applicability_zh_hant": "須區分兩個不同的問題，現行KRA頁面對其答覆不一（部分矛盾發生在同一頁面之內）：一是向海關申報物品，二是填寫特定的旅客申報表（F88表）。向海關申報——現行官方文本存在頁面內部矛盾：KRA現行知識庫（https://www.kra.go.ke/component/knowledge_base/category/5）在糾正“僅超過2,000美元的新物品須申報”這一誤解時稱“所有從外國/夥伴國帶入肯尼亞的物品均須向海關申報（包括超過1萬美元的貨幣及貨幣工具）”，其步驟2又稱“入境旅客須就其從國外隨身攜帶的所有個人物品向海關申報”；但緊接其下“個人物品”項下，同一頁面稱“使用過的個人物品及自用品免徵關稅，無需申報”。該頁面就使用過的個人自用物品是否須向海關申報前後不一；兩種表述在同一官方頁面上並存。F88表觸發條件——現行官方文本跨頁衝突：KRA官網仍在提供的唯一表格版本為2018年5月印刷版，其註明“本表必須由所有旅客在抵達肯尼亞前填寫”，並援引EACCMA 2004第44-46條及第五附表B部第5(4)段；現行“旅客航站樓通關”FAQ亦稱“所有入境旅客應使用規定的旅客申報表（F88表）作出申報”；而知識庫僅就新物品設定該表義務：“任何價值不超過每旅客2,000美元的新物品均免徵進口稅，但須向海關官員申報。若價值超過該限額，旅客須在抵達前在旅客申報表（F88）中申報該物品。”因此官方頁面之間對F88表是全體旅客均須填寫（印刷版表格；航站樓FAQ），還是僅在新物品超過2,000美元時才須填寫（知識庫），說法不一；“全體旅客一律填表”的要求並未得到現行官方文本的一致支持。2,000美元系稅收優惠額度，其本身並非申報觸發條件：東非共同體第EAC/427/2024號法律公告（2024年12月31日公報；5頁官方公報）將EACCMA第五附表B部第5(9)段中的“五百”替換為“二千”；航站樓FAQ稱僅就“個人及/或家庭自用物品”給予“2,000美元”優惠額度，知識庫稱“就購買作個人及/或家庭自用之物品可獲最高2,000美元的優惠額度”。依知識庫表述，不超過2,000美元新物品的免稅以向海關官員申報為條件，F88表填報義務僅繫於超過該限額的情形；稅收減免與申報/填表義務系兩個不同的問題。已被取代的500美元數額仍見於較舊的Customs FAQ、KRA 2023年11月2日公告（該公告已預告將上調限額）、印刷版表格的物品勾選項及航站樓FAQ遺留條目；使用過的個人自用品免稅（知識庫；航站樓FAQ），但受上述申報矛盾影響。EACCMA 2004第45條規定雙通道通關：無申報且應稅物品在免稅額度內的旅客走綠色通道（以口頭申報/旅客申報表申報，適用於A、B類旅客）；攜帶應稅或受限物品的旅客走紅色通道——全體機組/船員須走紅色通道，表格並指示凡任一勾選項答“是”者前往紅色通道櫃檯。年滿18週歲的旅客以下物品免稅——18週歲條件在原文中僅繫於這些消耗品免稅限額，2,000美元一般優惠額度本身的官方表述未設年齡條件：烈酒（含利口酒）或葡萄酒不超過1升，或葡萄酒不超過2升；香水和化妝水合計不超過0.5升（其中香水不超過四分之一）；香菸、雪茄、方頭雪茄、小雪茄、菸草及鼻菸合計不超過250克。貨幣：航站樓FAQ要求入境旅客申報“1萬美元及以上或等值貨幣”；知識庫FAQ稱“超過1萬美元或等值的貨幣及貨幣工具必須在抵達時或離境前向海關申報”，其誤解澄清項則稱“超過1萬美元”——現行官方頁面在恰為1萬美元處口徑不一；印刷版表格“超過等值1萬美元”勾選項屬表格自身印載內容，並非現行稅收額度或現行法定現金門檻。《犯罪所得與反洗錢法》規定的現金申報義務適用於入境和出境兩個方向，另作單獨事項列出；入境時填寫的F88表不能當作離境申報的替代。未申報或虛報違反EACCMA 2004第203條，將受嚴厲處罰並可能被扣押/沒收物品。關稅按成交價格依《東非共同體共同對外關稅2022》估徵，電子繳費單生成後，經航站樓指定銀行、PDQ刷卡機或M-Pesa（222222支付號）繳納。",
             "timing_zh_hant": "凡適用F88表者（現行提供的2018年5月版），於抵達前填寫並在入境口岸交海關；該表適用於全體旅客抑或僅適用於超過2,000美元的新物品，官方頁面說法不一（見上文）；知識庫並稱“申報應在掃描前完成”。下機後經綠色或紅色通道通關。知識庫稱現金申報須於“抵達時或離境前”作出；離境申報使用何種表格/渠道，現行官方文本未載明。"
+          },
+          {
+            "id": "KE-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Declaration of currency and monetary instruments worth US$10,000 or its equivalent (entering or leaving Kenya)",
+            "name_zh": "现金及货币票据申报（价值1万美元或等值，入境或出境）",
+            "agency": "Kenya Revenue Authority — Customs & Border Control (reports are forwarded to the Financial Reporting Centre)",
+            "official_url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya",
+            "channel": "conditional",
+            "applicability_en": "A person entering or leaving Kenya with currency or monetary instruments worth US$10,000 or its equivalent in Kenya Shillings or another currency must declare them to Customs in the prescribed form at the port of entry or exit (Proceeds of Crime and Anti-Money Laundering Act, section 12 and Second Schedule). \"Monetary instruments\" means coins and paper currency of Kenya or any foreign country, travellers' cheques, personal and bank cheques, money orders, securities, and other negotiable instruments in bearer form. The duty applies in both directions and whether the money travels with a traveller, by mail or as cargo. On arrival, the KRA Passenger Terminal FAQ lists \"Currency of USD. 10,000 and above or its equivalent\" among the items to declare, and the printed Passenger Declaration Form (F88) has a Yes/No box for currency or monetary instruments \"exceeding the equivalent of USD 10,000\". For departure, the KRA knowledge base says currency and monetary instruments over that amount must be declared \"on arrival or before departure\"; current KRA pages name no separate departure form. The official texts word the threshold differently: the Second Schedule says \"of US $10,000\", section 12(1) says \"in excess of the amount prescribed\", the KRA FAQ says \"10,000 and above\" and the KRA knowledge base says \"exceeding\". They do not settle whether exactly US$10,000 is covered, so declaring that amount is the cautious course. Wilfully failing to report, or materially misstating the amount, is an offence under section 12(3).",
+            "applicability_zh": "入境或出境肯尼亚时携带价值1万美元或等值肯尼亚先令/其他货币的现金或货币票据，须在入境口岸或出境口岸按规定表格向海关申报（《犯罪所得与反洗钱法》第12条及第二附表）。\"货币票据\"指肯尼亚或任何外国的硬币和纸币、旅行支票、个人支票和银行支票、汇票、证券，以及其他不记名的可转让票据。该义务适用于两个方向，无论款项随旅客携带、邮寄还是作为货物运输。入境时，KRA旅客航站楼FAQ把\"1万美元及以上或等值货币\"列入应申报事项，F88旅客申报表印有\"超过等值1万美元的货币或货币票据\"的是/否勾选项。出境方面，KRA知识库称超过该金额的货币和货币票据须在\"抵达时或离境前\"向海关申报；KRA现行页面未列出单独的离境申报表。各官方文本对门槛的措辞不一：第二附表为\"1万美元\"，第12条第1款为\"超过规定金额\"，KRA FAQ为\"1万美元及以上\"，KRA知识库为\"超过\"。这些文本并未说明恰为1万美元是否在内，因此携带恰好该金额时，稳妥做法是申报。故意不申报或虚报金额，依第12条第3款构成犯罪。",
+            "timing_en": "On arrival: at the point of entry, with the Passenger Declaration Form (F88). On departure: at the port of exit before leaving. Section 12(1) requires the report to be made before the money is conveyed.",
+            "timing_zh": "入境时：在入境口岸随F88旅客申报表办理。出境时：在出境口岸离境前办理。第12条第1款要求在携带款项出入境之前作出报告。",
+            "fee": "unknown",
+            "source_ids": [
+              "KE-kenyalaw-pocamla-2009",
+              "KE-kra-kb-cash-10k",
+              "KE-kenyalaw-pocamla-s12-scope",
+              "KE-kenyalaw-pocamla-s12-offence",
+              "KE-kra-terminal-currency-10k",
+              "KE-kra-f88-currency-box"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "現金及貨幣票據申報（價值1萬美元或等值，入境或出境）",
+            "applicability_zh_hant": "入境或出境肯尼亞時攜帶價值1萬美元或等值肯尼亞先令/其他貨幣的現金或貨幣票據，須在入境口岸或出境口岸按規定表格向海關申報（《犯罪所得與反洗錢法》第12條及第二附表）。\"貨幣票據\"指肯尼亞或任何外國的硬幣和紙幣、旅行支票、個人支票和銀行支票、匯票、證券，以及其他不記名的可轉讓票據。該義務適用於兩個方向，無論款項隨旅客攜帶、郵寄還是作為貨物運輸。入境時，KRA旅客航站樓FAQ把\"1萬美元及以上或等值貨幣\"列入應申報事項，F88旅客申報表印有\"超過等值1萬美元的貨幣或貨幣票據\"的是/否勾選項。出境方面，KRA知識庫稱超過該金額的貨幣和貨幣票據須在\"抵達時或離境前\"向海關申報；KRA現行頁面未列出單獨的離境申報表。各官方文本對門檻的措辭不一：第二附表為\"1萬美元\"，第12條第1款為\"超過規定金額\"，KRA FAQ為\"1萬美元及以上\"，KRA知識庫為\"超過\"。這些文本並未說明恰為1萬美元是否在內，因此攜帶恰好該金額時，穩妥做法是申報。故意不申報或虛報金額，依第12條第3款構成犯罪。",
+            "timing_zh_hant": "入境時：在入境口岸隨F88旅客申報表辦理。出境時：在出境口岸離境前辦理。第12條第1款要求在攜帶款項出入境之前作出報告。"
           }
         ],
         "sources": [
@@ -3066,6 +3154,12 @@ export default {
             "url": "https://www.kra.go.ke/images/publications/Passenger-Declaration-Form-May-2018-Editable.pdf",
             "title": "Passenger Declaration Form (F88), May 2018 edition (PDF)",
             "publisher": "Kenya Revenue Authority"
+          },
+          {
+            "id": "KE-kenyalaw-pocamla-2009",
+            "url": "https://new.kenyalaw.org/akn/ke/act/2009/9/eng",
+            "title": "Proceeds of Crime and Anti-Money Laundering Act (Cap. 59A), Second Schedule — National Council for Law Reporting (Kenya Law)",
+            "publisher": "National Council for Law Reporting (Kenya Law)"
           },
           {
             "id": "KE-kra-kb-concession",
@@ -3108,11 +3202,35 @@ export default {
             "url": "https://www.kra.go.ke/component/knowledge_base/category/5",
             "title": "KRA knowledge base: Passenger Clearance (Customs) — cash over USD 10,000",
             "publisher": "Kenya Revenue Authority"
+          },
+          {
+            "id": "KE-kenyalaw-pocamla-s12-scope",
+            "url": "https://new.kenyalaw.org/akn/ke/act/2009/9/eng",
+            "title": "Proceeds of Crime and Anti-Money Laundering Act (Cap. 59A), section 12 — National Council for Law Reporting (Kenya Law)",
+            "publisher": "National Council for Law Reporting (Kenya Law)"
+          },
+          {
+            "id": "KE-kenyalaw-pocamla-s12-offence",
+            "url": "https://new.kenyalaw.org/akn/ke/act/2009/9/eng",
+            "title": "Proceeds of Crime and Anti-Money Laundering Act (Cap. 59A), section 12(3) — National Council for Law Reporting (Kenya Law)",
+            "publisher": "National Council for Law Reporting (Kenya Law)"
+          },
+          {
+            "id": "KE-kra-terminal-currency-10k",
+            "url": "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya",
+            "title": "Passenger Terminal Clearance in Kenya (FAQ) — Kenya Revenue Authority",
+            "publisher": "Kenya Revenue Authority"
+          },
+          {
+            "id": "KE-kra-f88-currency-box",
+            "url": "https://www.kra.go.ke/images/publications/Passenger-Declaration-Form-May-2018-Editable.pdf",
+            "title": "Passenger Declaration Form (F88), May 2018 edition (PDF) — Kenya Revenue Authority",
+            "publisher": "Kenya Revenue Authority"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
           "open_questions": 4
         }
@@ -3234,7 +3352,7 @@ export default {
       {
         "jurisdiction_id": "MW",
         "review_status": "partial",
-        "researched_at": "2026-09-10",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "MW-traveller-arrival-clearance",
@@ -3297,7 +3415,7 @@ export default {
       {
         "jurisdiction_id": "MU",
         "review_status": "verified",
-        "researched_at": "2026-09-10",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "MU-arrival-declaration",
@@ -3340,6 +3458,33 @@ export default {
             "name_zh_hant": "免稅額度（菸酒限18歲以上）",
             "applicability_zh_hant": "自用個人物品（衣物、盥洗用品、含手錶的個人首飾）免關稅和增值稅入境。菸酒免稅須年滿18歲，且只能三選一（2025年9月1日起生效）：A——菸草250克+烈酒1升+葡萄酒/麥芽酒/啤酒2升；B——菸草250克+烈酒2升，無葡萄酒/麥芽酒/啤酒；C——菸草250克+葡萄酒/麥芽酒/啤酒4升，無烈酒。超出部分須繳關稅、消費稅和增值稅。其他隨身物品免稅額（不含武器彈藥、菸草、酒類、銷售商品）：自羅德里格斯島抵——12歲以上2萬盧比、12歲以下1萬盧比；國際航班——毛里求斯護照12歲以上3萬盧比、12歲以下1.5萬盧比，外國護照不限年齡1.5萬盧比。遊客另可免稅攜帶職業用器具工具，以及一支運動用槍和不超過50發子彈（須在規定期限內復運出境）。",
             "timing_zh_hant": "入境海關環節適用；物品須隨旅客同行。"
+          },
+          {
+            "id": "MU-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Declaration of currency, bearer negotiable instruments, precious stones and metals or high-value goods over Rs 500,000 (arriving, leaving or in transit)",
+            "name_zh": "现金、不记名可转让票据、贵金属宝石及高价值物品申报（超过50万卢比；入境、出境或过境）",
+            "agency": "Mauritius Revenue Authority — Customs",
+            "official_url": "https://www.mra.mu/index.php/customs1/travellers/physical-cross-border-transportation",
+            "channel": "conditional",
+            "applicability_en": "Anyone arriving in, leaving or passing in transit through Mauritius who physically carries currency, bearer negotiable instruments (including cheques, traveller's cheques and other bearer cheques), precious stones and metals including gold, diamond and jewellery, or any goods of high value including works of art, of more than Rs 500,000 or its equivalent in foreign currency, must declare them to Customs (Customs Act, section 131A, and Customs Regulations 1989, regulations 80 and 81). The duty covers goods in accompanying luggage, container cargo and mail. The law does not prohibit carrying such sums; the duty is to declare. Two ways to declare: (1) the paper Declaration Form MRA/CUS/CANS/AMLU/FORM 1, available at the Customs counter at the airport, port or cargo terminal; (2) the MRA online declaration (e-services, Customs menu), which can be submitted at any time before arrival, departure or transit and returns a Currency Declaration ID. On arrival, a passenger carrying such items uses the Red Channel. On departure, the declaration is made at Customs before Immigration formalities and states the origin and intended use of the sum. A customs officer may question the declarant and inspect travel documents and luggage. Failing to declare, refusing to declare or making a false or misleading declaration is an offence punishable by a fine of at least 20 per cent of the whole amount involved, up to Rs 2 million, and imprisonment of up to 5 years.",
+            "applicability_zh": "抵达、离开或过境毛里求斯的任何人，如亲身携带价值超过50万卢比（或等值外币）的现金、不记名可转让票据（含支票、旅行支票和其他不记名支票）、贵金属宝石（含黄金、钻石、珠宝）或其他高价值物品（含艺术品），须向海关申报（《海关法》第131A条；1989年《海关条例》第80、81条）。该义务涵盖随身行李、集装箱货运和邮寄。法律不禁止携带此类款项，义务是申报。申报有两种方式：（1）纸质申报表MRA/CUS/CANS/AMLU/FORM 1，可在机场、港口或货运站的海关柜台领取；（2）MRA在线申报（电子服务，海关菜单），入境、离境或过境前任何时间均可提交，提交后获得一个货币申报编号。入境时，携带此类物品的旅客走红色通道。出境时，在办理移民手续前向海关申报，并写明款项的来源和拟用途。海关关员可就申报内容询问申报人，并查验旅行证件和行李。未申报、拒绝申报或作虚假/误导性申报属犯罪，罚款不低于涉案总额的20%、最高200万卢比，并可处最长5年监禁。",
+            "timing_en": "On arrival: at Customs through the Red Channel, or online beforehand. On departure: at the Customs counter before Immigration formalities, or online beforehand. In transit: before transit, on paper or online.",
+            "timing_zh": "入境时：经红色通道向海关申报，或事先在线申报。出境时：在办理移民手续前到海关柜台申报，或事先在线申报。过境时：过境前以纸质或在线方式申报。",
+            "fee": "unknown",
+            "source_ids": [
+              "MU-mra-pcbt-scope",
+              "MU-mra-pcbt-threshold",
+              "MU-mra-pcbt-form",
+              "MU-mra-pcbt-online",
+              "MU-mra-pcbt-penalty",
+              "MU-mra-departing-currency",
+              "MU-mra-online-declaration-leaflet"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "現金、不記名可轉讓票據、貴金屬寶石及高價值物品申報（超過50萬盧比；入境、出境或過境）",
+            "applicability_zh_hant": "抵達、離開或過境毛里求斯的任何人，如親身攜帶價值超過50萬盧比（或等值外幣）的現金、不記名可轉讓票據（含支票、旅行支票和其他不記名支票）、貴金屬寶石（含黃金、鑽石、珠寶）或其他高價值物品（含藝術品），須向海關申報（《海關法》第131A條；1989年《海關條例》第80、81條）。該義務涵蓋隨身行李、集裝箱貨運和郵寄。法律不禁止攜帶此類款項，義務是申報。申報有兩種方式：（1）紙質申報表MRA/CUS/CANS/AMLU/FORM 1，可在機場、港口或貨運站的海關櫃檯領取；（2）MRA線上申報（電子服務，海關菜單），入境、離境或過境前任何時間均可提交，提交後獲得一個貨幣申報編號。入境時，攜帶此類物品的旅客走紅色通道。出境時，在辦理移民手續前向海關申報，並寫明款項的來源和擬用途。海關關員可就申報內容詢問申報人，並查驗旅行證件和行李。未申報、拒絕申報或作虛假/誤導性申報屬犯罪，罰款不低於涉案總額的20%、最高200萬盧比，並可處最長5年監禁。",
+            "timing_zh_hant": "入境時：經紅色通道向海關申報，或事先線上申報。出境時：在辦理移民手續前到海關櫃檯申報，或事先線上申報。過境時：過境前以紙質或線上方式申報。"
           }
         ],
         "sources": [
@@ -3354,11 +3499,53 @@ export default {
             "url": "https://www.mra.mu/index.php/customs1/travellers/allowances",
             "title": "Allowances — Customs, Mauritius Revenue Authority",
             "publisher": "Mauritius Revenue Authority"
+          },
+          {
+            "id": "MU-mra-pcbt-scope",
+            "url": "https://www.mra.mu/index.php/customs1/travellers/physical-cross-border-transportation",
+            "title": "Physical cross-border transportation — Customs, Mauritius Revenue Authority",
+            "publisher": "Mauritius Revenue Authority"
+          },
+          {
+            "id": "MU-mra-pcbt-threshold",
+            "url": "https://www.mra.mu/index.php/customs1/travellers/physical-cross-border-transportation",
+            "title": "Physical cross-border transportation — Customs, Mauritius Revenue Authority",
+            "publisher": "Mauritius Revenue Authority"
+          },
+          {
+            "id": "MU-mra-pcbt-form",
+            "url": "https://www.mra.mu/index.php/customs1/travellers/physical-cross-border-transportation",
+            "title": "Physical cross-border transportation — Customs, Mauritius Revenue Authority",
+            "publisher": "Mauritius Revenue Authority"
+          },
+          {
+            "id": "MU-mra-pcbt-online",
+            "url": "https://www.mra.mu/index.php/customs1/travellers/physical-cross-border-transportation",
+            "title": "Physical cross-border transportation — Customs, Mauritius Revenue Authority",
+            "publisher": "Mauritius Revenue Authority"
+          },
+          {
+            "id": "MU-mra-pcbt-penalty",
+            "url": "https://www.mra.mu/index.php/customs1/travellers/physical-cross-border-transportation",
+            "title": "Physical cross-border transportation — Customs, Mauritius Revenue Authority",
+            "publisher": "Mauritius Revenue Authority"
+          },
+          {
+            "id": "MU-mra-departing-currency",
+            "url": "https://www.mra.mu/index.php/customs1/travellers/currency-declaration",
+            "title": "Departing from Mauritius — Currency Declaration, Mauritius Revenue Authority",
+            "publisher": "Mauritius Revenue Authority"
+          },
+          {
+            "id": "MU-mra-online-declaration-leaflet",
+            "url": "https://www.mra.mu/download/OnlineCurrencyDeclaration.pdf",
+            "title": "Online Declaration to MRA Customs — Currency, bearer negotiable instruments, precious stones and metals (leaflet) — Mauritius Revenue Authority",
+            "publisher": "Mauritius Revenue Authority"
           }
         ],
         "coverage": {
-          "total_procedures": 2,
-          "published_procedures": 2,
+          "total_procedures": 3,
+          "published_procedures": 3,
           "withheld_procedures": 0,
           "open_questions": 0
         }
@@ -3609,7 +3796,7 @@ export default {
       {
         "jurisdiction_id": "RW",
         "review_status": "partial",
-        "researched_at": "2026-09-29",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "rw-arrival-goods-declaration",
@@ -3674,6 +3861,34 @@ export default {
             "name_zh_hant": "落地簽",
             "applicability_zh_hant": "自 2018 年 1 月 1 日起，所有國家公民均可在抵達時辦理簽證，無需提前申請。簽證費因國籍與簽證類別而異，頁面未載明適用於整個程序的單一固定金額，僅規定簽證費不得超過 50 美元（單次入境）或 70 美元（多次入境）。非洲聯盟、英聯邦或法語國家組織成員國公民可落地簽，且 30 天訪問免簽證費；東非共同體成員國公民抵達時免費獲發通行證/入境簽證，可停留六個月；頁面所列國家的公民抵達時免費獲發 90 天簽證。不免簽國家的公民也可在出發前線上申請或向居住國的盧旺達外交使團申請。",
             "timing_zh_hant": "抵達時簽發，無需提前申請。不免簽國家的公民也可在出發前線上申請或向居住國的盧旺達外交使團申請；線上申請者可線上支付或抵達時支付。"
+          },
+          {
+            "id": "RW-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Declaration of cash or bearer negotiable instruments of FRW 10,000,000 or more (departing or in transit)",
+            "name_zh": "现金及不记名可转让票据申报（价值达到或超过1000万卢旺达法郎；出境或过境）",
+            "agency": "Financial Intelligence Centre (rule-maker); declarations are received by the authorities operating at the border or airport (Immigration and Emigration, Rwanda National Police, Rwanda Investigation Bureau, Rwanda Revenue Authority)",
+            "official_url": "https://www.fic.gov.rw/fileadmin/user_upload/FIC/Publications/Regulations_and_Directives/Regulations_relating_to_the_declaration_of_Cross_Border_Cash_or_Bearer_Negotiable_Instruments__of_26_June_2023_.pdf",
+            "channel": "on_departure",
+            "applicability_en": "A person departing from Rwanda, or passing through it in transit, who carries cash or bearer negotiable instruments worth FRW 10,000,000 or more (or the equivalent in other currencies) must declare them to the competent authority at the border or airport, in writing, electronically or on a declaration form available there (Regulation No. 001/FIC/2023, Articles 3 and 5). A person entering Rwanda with cash or instruments at or above the same threshold does not make an upfront declaration: Article 3(1) requires them to disclose the cash or instruments to the competent authority upon request. The declaring person must be at least 18; a person under 18 travelling without a parent, guardian or other accompanying person also declares, and amounts carried by an accompanied minor are added to those of the accompanying adult. This Regulation repealed Regulation No. 002/FIC/2021, whose threshold was US$10,000.",
+            "applicability_zh": "离开卢旺达或经卢旺达过境的人，携带价值达到或超过1000万卢旺达法郎（或等值其他货币）的现金或不记名可转让票据，须在边境口岸或机场向主管机关申报，方式为书面、电子或使用该处提供的申报表（第001/FIC/2023号条例第3条、第5条）。入境卢旺达并携带达到或超过同一门槛的现金或票据的人，不需事先主动申报：第3条第1款规定其在主管机关要求时披露。申报人须年满18周岁；未满18周岁且无父母、监护人或其他人陪同的旅行者也须申报，有人陪同的未成年人所带金额并入陪同成年人的金额计算。该条例废止了此前门槛为1万美元的第002/FIC/2021号条例。",
+            "timing_en": "Made upfront, before leaving Rwanda or continuing in transit, to the competent authority operating at the border or airport. On entry, disclosure is made only when the authority asks for it.",
+            "timing_zh": "离开卢旺达或继续过境前，事先向边境口岸或机场的主管机关申报。入境时仅在主管机关要求时披露。",
+            "fee": "unknown",
+            "source_ids": [
+              "RW-fic-reg2023-art3-2-scope",
+              "RW-fic-reg2023-art3-2-declares",
+              "RW-fic-reg2023-art3-1-entry",
+              "RW-fic-reg2023-art3-3-form",
+              "RW-fic-reg2023-art5-threshold",
+              "RW-fic-reg2023-art4-age",
+              "RW-fic-reg2023-art11-repeal",
+              "RW-fic-reg2023-art2-authority"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "現金及不記名可轉讓票據申報（價值達到或超過1000萬盧旺達法郎；出境或過境）",
+            "applicability_zh_hant": "離開盧旺達或經盧旺達過境的人，攜帶價值達到或超過1000萬盧旺達法郎（或等值其他貨幣）的現金或不記名可轉讓票據，須在邊境口岸或機場向主管機關申報，方式為書面、電子或使用該處提供的申報表（第001/FIC/2023號條例第3條、第5條）。入境盧旺達並攜帶達到或超過同一門檻的現金或票據的人，不需事先主動申報：第3條第1款規定其在主管機關要求時披露。申報人須年滿18週歲；未滿18週歲且無父母、監護人或其他人陪同的旅行者也須申報，有人陪同的未成年人所帶金額併入陪同成年人的金額計算。該條例廢止了此前門檻為1萬美元的第002/FIC/2021號條例。",
+            "timing_zh_hant": "離開盧旺達或繼續過境前，事先向邊境口岸或機場的主管機關申報。入境時僅在主管機關要求時披露。"
           }
         ],
         "sources": [
@@ -3700,11 +3915,59 @@ export default {
             "url": "https://www.migration.gov.rw/visa-on-arrival",
             "title": "Visa on arrival — Rwanda Directorate General of Immigration and Emigration (current page)",
             "publisher": "Rwanda Directorate General of Immigration and Emigration"
+          },
+          {
+            "id": "RW-fic-reg2023-art3-2-scope",
+            "url": "https://www.fic.gov.rw/fileadmin/user_upload/FIC/Publications/Regulations_and_Directives/Regulations_relating_to_the_declaration_of_Cross_Border_Cash_or_Bearer_Negotiable_Instruments__of_26_June_2023_.pdf",
+            "title": "Regulation No. 001/FIC/2023 of 26/06/2023 relating to the declaration of cross-border cash or bearer negotiable instruments — Financial Intelligence Centre (Article 3(2))",
+            "publisher": "Financial Intelligence Centre (Rwanda)"
+          },
+          {
+            "id": "RW-fic-reg2023-art3-2-declares",
+            "url": "https://www.fic.gov.rw/fileadmin/user_upload/FIC/Publications/Regulations_and_Directives/Regulations_relating_to_the_declaration_of_Cross_Border_Cash_or_Bearer_Negotiable_Instruments__of_26_June_2023_.pdf",
+            "title": "Regulation No. 001/FIC/2023 of 26/06/2023 relating to the declaration of cross-border cash or bearer negotiable instruments — Financial Intelligence Centre (Article 3(2))",
+            "publisher": "Financial Intelligence Centre (Rwanda)"
+          },
+          {
+            "id": "RW-fic-reg2023-art3-1-entry",
+            "url": "https://www.fic.gov.rw/fileadmin/user_upload/FIC/Publications/Regulations_and_Directives/Regulations_relating_to_the_declaration_of_Cross_Border_Cash_or_Bearer_Negotiable_Instruments__of_26_June_2023_.pdf",
+            "title": "Regulation No. 001/FIC/2023 of 26/06/2023 relating to the declaration of cross-border cash or bearer negotiable instruments — Financial Intelligence Centre (Article 3(1))",
+            "publisher": "Financial Intelligence Centre (Rwanda)"
+          },
+          {
+            "id": "RW-fic-reg2023-art3-3-form",
+            "url": "https://www.fic.gov.rw/fileadmin/user_upload/FIC/Publications/Regulations_and_Directives/Regulations_relating_to_the_declaration_of_Cross_Border_Cash_or_Bearer_Negotiable_Instruments__of_26_June_2023_.pdf",
+            "title": "Regulation No. 001/FIC/2023 of 26/06/2023 relating to the declaration of cross-border cash or bearer negotiable instruments — Financial Intelligence Centre (Article 3(3))",
+            "publisher": "Financial Intelligence Centre (Rwanda)"
+          },
+          {
+            "id": "RW-fic-reg2023-art5-threshold",
+            "url": "https://www.fic.gov.rw/fileadmin/user_upload/FIC/Publications/Regulations_and_Directives/Regulations_relating_to_the_declaration_of_Cross_Border_Cash_or_Bearer_Negotiable_Instruments__of_26_June_2023_.pdf",
+            "title": "Regulation No. 001/FIC/2023 of 26/06/2023 relating to the declaration of cross-border cash or bearer negotiable instruments — Financial Intelligence Centre (Article 5)",
+            "publisher": "Financial Intelligence Centre (Rwanda)"
+          },
+          {
+            "id": "RW-fic-reg2023-art4-age",
+            "url": "https://www.fic.gov.rw/fileadmin/user_upload/FIC/Publications/Regulations_and_Directives/Regulations_relating_to_the_declaration_of_Cross_Border_Cash_or_Bearer_Negotiable_Instruments__of_26_June_2023_.pdf",
+            "title": "Regulation No. 001/FIC/2023 of 26/06/2023 relating to the declaration of cross-border cash or bearer negotiable instruments — Financial Intelligence Centre (Article 4)",
+            "publisher": "Financial Intelligence Centre (Rwanda)"
+          },
+          {
+            "id": "RW-fic-reg2023-art11-repeal",
+            "url": "https://www.fic.gov.rw/fileadmin/user_upload/FIC/Publications/Regulations_and_Directives/Regulations_relating_to_the_declaration_of_Cross_Border_Cash_or_Bearer_Negotiable_Instruments__of_26_June_2023_.pdf",
+            "title": "Regulation No. 001/FIC/2023 of 26/06/2023 relating to the declaration of cross-border cash or bearer negotiable instruments — Financial Intelligence Centre (Article 11)",
+            "publisher": "Financial Intelligence Centre (Rwanda)"
+          },
+          {
+            "id": "RW-fic-reg2023-art2-authority",
+            "url": "https://www.fic.gov.rw/fileadmin/user_upload/FIC/Publications/Regulations_and_Directives/Regulations_relating_to_the_declaration_of_Cross_Border_Cash_or_Bearer_Negotiable_Instruments__of_26_June_2023_.pdf",
+            "title": "Regulation No. 001/FIC/2023 of 26/06/2023 relating to the declaration of cross-border cash or bearer negotiable instruments — Financial Intelligence Centre (Article 2)",
+            "publisher": "Financial Intelligence Centre (Rwanda)"
           }
         ],
         "coverage": {
-          "total_procedures": 3,
-          "published_procedures": 3,
+          "total_procedures": 4,
+          "published_procedures": 4,
           "withheld_procedures": 0,
           "open_questions": 0
         }
@@ -4060,7 +4323,7 @@ export default {
       {
         "jurisdiction_id": "TZ",
         "review_status": "partial",
-        "researched_at": "2026-09-28",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "TZ-passenger-baggage-allowances",
@@ -4107,6 +4370,30 @@ export default {
             "name_zh_hant": "迴流居民與初次抵達者——家用物品、機動車與90/360天進口時限",
             "applicability_zh_hant": "據TRA官方「Returning Resident and First Arrival」頁。資格——該免稅僅適用於符合以下條件者：初次抵達坦桑尼亞者或迴流公民，經關員認定為真實（bona fide）把居住地由坦桑境外遷入坦桑境內（因而符合免稅資格）；且此前未獲過免稅、抵達前未在坦桑居住（臨時非居民訪問除外）——TRA原句語法有誤，此處僅取其明示內容，不作外推。年滿十八週歲迴流居民的允許物品：衣著；在原居住地作個人或家庭使用過的各類個人及家用物品；一輛機動車——排除座位超過13人的客車/小巴與載重超過2噸的載貨車——自制造之日起不滿八年、氣缸容量（cubic capacity）不超過3000（TRA未給cc單位，單位保留未知），且乘客本人在坦桑境外自有並使用至少十二個月（海運時航運期不計）。時限：對乘客抵達之日起九十日內進口的行李給予免稅，或經專員准許延長至抵達後不超過三百六十日。法條層級結構（據坦桑尼亞政府貿易門戶託管的EAC Customs Management Act 2004（Revised 30 June 2019）——Fifth Schedule Part B item 5，PDF頁167–169/印刷頁161–163；該同法官方門戶文本較KRA託管的Rev 2009近十年，取代其作為結構來源）：第1(a)條要求貨物為旅客所有並隨行，惟「except as provided in Paragraph 7」除外；第7段把90/360天窗口授予第(3)-(5)段的免稅（初次抵達/迴流居民變更居住、臨時訪客、探訪後返回的居民），其末句把非隨身行李排除限於第(6)段額度（烈酒/葡萄酒、香水/化妝水、菸草）。TRA簡化Note（「依法律給予的免稅額度以非隨身行李進口時不予適用」）依該結構解讀：表面張力在法條層級解決——90/360天內遲後（含非隨身）進口僅對第(3)-(5)段類物品與車輛（須滿足車輛條件）可獲免稅，而消耗品額度與超24小時USD2000門檻仍限隨身；因此非隨身後運並非當然免稅。該解讀的版次邊界：2024-12-31 EAC Gazette（Legal Notice No. EAC/427/2024）僅修訂第5(9)段金額（five hundred改two thousand），不復述第7段；Rev2019門戶文本的隨文修訂註記僅匯至其2019-06-30修訂日（第5(9)段註記僅及EAC/13/2010），故不能證明其後再無修法改動第7段結構；現行EAC合併文本（2008法典、2025修正法）在EAC官網未能訪問，2019年以來是否有修法改動第7段無法確認。上述結構解讀因此以「Rev2019＋TRA當期頁」為依據，不視為對現行合併條文的逐字讀取。Rev2019文本第5(9)段仍為2024年修改前的「United States Dollars five Hundred」，不用於現行金額。遷居：獲免稅者若在抵達後九十日內把居住地遷往夥伴國之外，須在三十日內（經專員准許可至六十日）出口其家用物品，否則自進口之日起補繳關稅。該頁為此迴流居民/初次抵達程序列出的附件（屬本頁對象，並非對每位普通旅客的要求）：護照複印件；裝箱單；填妥的海關行李申報單（BD），海關辦事處備取；正本提單或空運單；證明物品持有時長的發票；居留許可或境外就讀證明；機動車登記卡（進口機動車時）；出口國機動車保險。表格與費用按原文：TRA僅說明BD在海關辦事處可取得，未寫明它是紙質表格還是其他介質；頁面未提及線上提交，但這本身不等於不存線上上渠道；頁面未提及本流程的任何費用。",
             "timing_zh_hant": "行李須在抵達後90日內進口，經專員准許可延至不超過360日；依該法結構，此窗口覆蓋第(3)-(5)段物品與車輛免稅，而第(6)段消耗品額度與超24小時USD2000限額僅限隨身。若在抵達後90日內把居住地遷往夥伴國之外，家用物品須在30日內（可延至60日）復運出境，否則自進口之日起計繳關稅。"
+          },
+          {
+            "id": "TZ-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Declaration of currency and bearer negotiable instruments worth US$10,000 or its equivalent (entering or leaving mainland Tanzania)",
+            "name_zh": "现金及不记名可转让票据申报（价值1万美元或等值；入境或出境坦桑尼亚大陆）",
+            "agency": "Tanzania Revenue Authority — Customs (forms go to the Financial Intelligence Unit)",
+            "official_url": "https://www.fiu.go.tz/uploads/documents/en-1748522757-AML%20(CROSSBORDER%20CURRENCY%20AND%20BNI%20DECLARATION)%20REGULATIONS,%202016.pdf",
+            "channel": "conditional",
+            "applicability_en": "A person entering or leaving the United Republic with currency or bearer negotiable instruments worth US$10,000 or its equivalent in Tanzanian shillings or another currency must fill in the Cross-Border Declaration of Currency and Bearer Negotiable Instruments form (Form I, First Schedule of the Anti-Money Laundering (Cross-Border Declaration of Currency and Bearer Negotiable Instruments) Regulations, 2016) and present it to Customs for inspection. Currency and instruments are added together, and the amount is converted at the Bank of Tanzania official rate in effect when the money crosses the border. Bearer negotiable instruments include bank drafts, promissory notes, cheques, money orders, travellers' cheques, bearer bonds, postal orders and prepaid cards. The Regulations apply to mainland Tanzania and cover money carried on the person or in luggage or a vehicle, shipped in containerised cargo, or sent by mail. The Customs officer keeps the original form and hands the declarant a duplicate copy. The Foreign Exchange Regulations, 2022 (regulation 4) repeat the duty for foreign currency exceeding US$10,000, to be declared to Customs at arrival or departure. The two texts differ at exactly US$10,000: the Anti-Money Laundering Regulations say \"equal to or above\" and the form says \"at least\", while the Foreign Exchange Regulations say \"exceeding\".",
+            "applicability_zh": "入境或出境坦桑尼亚联合共和国时，携带价值1万美元或等值坦桑尼亚先令/其他货币的现金或不记名可转让票据者，须填写《现金及不记名可转让票据跨境申报表》（Form I，《2016年反洗钱（现金及不记名可转让票据跨境申报）条例》第一附表），并交海关检查。现金与票据合并计算，金额按货币越境时坦桑尼亚银行的官方汇率折算。不记名可转让票据包括银行汇票、本票、支票、汇票、旅行支票、不记名债券、邮政汇票和预付卡。该条例适用于坦桑尼亚大陆，涵盖随身或随行李、车辆携带，集装箱货运和邮寄的款项。海关关员留存申报表原件，并把副本交给申报人。《2022年外汇条例》第4条对超过1万美元的外币重申了该义务，须在抵达或离境时向海关申报。两部文本在恰为1万美元时措辞不同：反洗钱条例写\"等于或高于\"，表格写\"至少\"，外汇条例写\"超过\"。",
+            "timing_en": "Made on the form at the Customs point when entering or leaving, and presented to the Customs officer there.",
+            "timing_zh": "入境或出境时在海关点填写申报表，并当场交给海关关员。",
+            "fee": "unknown",
+            "source_ids": [
+              "TZ-fiu-gn268-threshold",
+              "TZ-fiu-gn268-duty",
+              "TZ-fiu-gn268-form-heading",
+              "TZ-bot-fxreg2022-reg4"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "現金及不記名可轉讓票據申報（價值1萬美元或等值；入境或出境坦桑尼亞大陸）",
+            "applicability_zh_hant": "入境或出境坦桑尼亞聯合共和國時，攜帶價值1萬美元或等值坦桑尼亞先令/其他貨幣的現金或不記名可轉讓票據者，須填寫《現金及不記名可轉讓票據跨境申報表》（Form I，《2016年反洗錢（現金及不記名可轉讓票據跨境申報）條例》第一附表），並交海關檢查。現金與票據合併計算，金額按貨幣越境時坦桑尼亞銀行的官方匯率折算。不記名可轉讓票據包括銀行匯票、本票、支票、匯票、旅行支票、不記名債券、郵政匯票和預付卡。該條例適用於坦桑尼亞大陸，涵蓋隨身或隨行李、車輛攜帶，集裝箱貨運和郵寄的款項。海關關員留存申報表原件，並把副本交給申報人。《2022年外匯條例》第4條對超過1萬美元的外幣重申了該義務，須在抵達或離境時向海關申報。兩部文本在恰為1萬美元時措辭不同：反洗錢條例寫\"等於或高於\"，表格寫\"至少\"，外匯條例寫\"超過\"。",
+            "timing_zh_hant": "入境或出境時在海關點填寫申報表，並當場交給海關關員。"
           }
         ],
         "sources": [
@@ -4145,19 +4432,43 @@ export default {
             "url": "https://www.rra.gov.rw/fileadmin/user_upload/EAC_Gazette_Vol._AT_1_NO._33_DECEMBER_2024.pdf",
             "title": "East African Community Gazette Vol. AT 1 No. 33, 31 December 2024 — Legal Notice No. EAC/427/2024 (RRA-hosted PDF)",
             "publisher": "East African Community — Council of Ministers; PDF hosted by Rwanda Revenue Authority (RRA)"
+          },
+          {
+            "id": "TZ-fiu-gn268-threshold",
+            "url": "https://www.fiu.go.tz/uploads/documents/en-1748522757-AML%20(CROSSBORDER%20CURRENCY%20AND%20BNI%20DECLARATION)%20REGULATIONS,%202016.pdf",
+            "title": "Anti-Money Laundering (Cross-Border Declaration of Currency and Bearer Negotiable Instruments) Regulations, 2016 (G.N. No. 268), regulation 4 — Financial Intelligence Unit",
+            "publisher": "Financial Intelligence Unit (Tanzania)"
+          },
+          {
+            "id": "TZ-fiu-gn268-duty",
+            "url": "https://www.fiu.go.tz/uploads/documents/en-1748522757-AML%20(CROSSBORDER%20CURRENCY%20AND%20BNI%20DECLARATION)%20REGULATIONS,%202016.pdf",
+            "title": "Anti-Money Laundering (Cross-Border Declaration of Currency and Bearer Negotiable Instruments) Regulations, 2016 (G.N. No. 268), regulation 5 — Financial Intelligence Unit",
+            "publisher": "Financial Intelligence Unit (Tanzania)"
+          },
+          {
+            "id": "TZ-fiu-gn268-form-heading",
+            "url": "https://www.fiu.go.tz/uploads/documents/en-1748522757-AML%20(CROSSBORDER%20CURRENCY%20AND%20BNI%20DECLARATION)%20REGULATIONS,%202016.pdf",
+            "title": "Anti-Money Laundering (Cross-Border Declaration of Currency and Bearer Negotiable Instruments) Regulations, 2016 (G.N. No. 268), First Schedule (Form I) — Financial Intelligence Unit",
+            "publisher": "Financial Intelligence Unit (Tanzania)"
+          },
+          {
+            "id": "TZ-bot-fxreg2022-reg4",
+            "url": "https://www.bot.go.tz/Publications/Acts,%20Regulations,%20Circulars,%20Guidelines/Regulations/en/2022051910514495.pdf",
+            "title": "Foreign Exchange Regulations, 2022 (G.N. No. 294), regulation 4 — Bank of Tanzania",
+            "publisher": "Bank of Tanzania"
           }
         ],
         "coverage": {
-          "total_procedures": 2,
-          "published_procedures": 2,
+          "total_procedures": 3,
+          "published_procedures": 3,
           "withheld_procedures": 0,
-          "open_questions": 3
+          "open_questions": 4
         }
       },
       {
         "jurisdiction_id": "ZM",
         "review_status": "partial",
-        "researched_at": "2026-09-10",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "zm-visa-on-arrival",
@@ -4200,6 +4511,29 @@ export default {
             "name_zh_hant": "旅客免稅額度與CE6表格貨物申報——贊比亞稅務局",
             "applicability_zh_hant": "方向：攜帶隨行行李抵達贊比亞的旅客。據贊比亞稅務局（ZRA）「貨物進口」頁面（2026-09-26 實時取得）。旅客免稅額度：旅客可免稅進口價值 1,000 美元的物品，超出部分只要稅款低於 K10 亦可繳稅進口；物品不得用於商業目的或屬於非旅客本人；返利不適用於為家人朋友購買的禮品。年滿 18 歲的旅客另可免稅進口以下數量的應稅物品：清啤 2.5 升；菸草 0.5 公斤或雪茄 0.5 公斤或捲菸 400 支；葡萄酒 2.5 升；烈酒 1.5 升。不在額度內的旅客物品按以下程序申報清關：旅客填寫 CE6 申報表並連同其他證明文件提交海關；海關實物查驗後核定應繳稅款；繳稅並開具收據。同頁的分檔：小价值包裹（CIF 價值超 1,000 美元但不超過 2,000 美元）無需報關行，須繳稅費；價值超 2,000 美元的大價值包裹需報關行並電子申報。範圍說明：贊比亞稅務局頁面載有上述免稅額度與 CE6 申報流程，未提及 5,000 美元門檻或紅/綠通道。",
             "timing_zh_hant": "額度外的旅客物品：填寫 CE6 申報表，連同其他證明文件提交海關；海關實物查驗後核定應繳稅款；繳稅並取得收據。"
+          },
+          {
+            "id": "zm-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Currency declaration for amounts above USD 5,000 — Zambia Revenue Authority",
+            "name_zh": "超过5,000美元等值的货币申报——赞比亚税务局",
+            "agency": "Zambia Revenue Authority (ZRA)",
+            "official_url": "https://www.zra.org.zm/wp-content/uploads/2024/02/User-Guide-for-the-Integrated-Border-Declaration-Form-Process-on-the-Customs-Portal-and-TaxOnApp.pdf",
+            "channel": "conditional",
+            "applicability_en": "Direction: both entering and leaving Zambia. Anyone importing into or exporting from Zambia currency notes, in any currency, worth more than the equivalent of USD 5,000 must make a declaration in the prescribed form (Customs and Excise Act, Chapter 322, section 41A). The Act's Currency Declaration Form (Customs Form No. 47A) asks for name, nationality, passport number, port of entry or exit, and each currency with its amount and US dollar equivalent. ZRA's Integrated Border Declaration Form, which visitors file on the ZRA Customs Portal or the TaxOnApp mobile app, has a currency section for travellers carrying more than USD 5,000, and ZRA says any amount above USD 5,000 must be declared before the customs official at the point of entry or exit. Zambia sets no limit on how much currency can be brought in or taken out; the duty is to declare amounts above the threshold. If an officer has reason to believe the declaration was not made or is false, the officer may search the person and baggage, and currency notes found above the threshold are seized and forfeited to the state; the owner may appeal to the Commissioner-General within thirty days. Registered banks, bureaux de change and other licensed financial institutions are exempt. The Act speaks of currency notes and does not mention cheques or other bearer instruments.",
+            "applicability_zh": "方向：入境和出境均适用。任何人携带货币纸钞（任何币种）入境或出境，价值超过5,000美元等值的，须按规定表格申报（《海关与消费税法》第322章第41A条）。法律附带的货币申报表（海关表格第47A号）要求填写姓名、国籍、护照号码、入境或出境口岸，以及每种货币的金额和美元等值。赞比亚税务局（ZRA）的综合边境申报表（Integrated Border Declaration Form）可由访客在ZRA海关门户或TaxOnApp手机应用上提交，其中设有货币申报部分，供携带超过5,000美元的旅客使用；ZRA写明超过5,000美元的金额须在入境或出境口岸向海关官员申报。赞比亚对携带入出境的货币总额没有上限，义务是申报超过门槛的部分。官员有理由认为未申报或申报不实的，可搜查本人及行李；搜出超过门槛的货币纸钞将被扣押并没收归国家，物主可在30日内向税务局总局长申诉。注册银行、货币兑换所及其他持牌金融机构豁免。法律条文针对货币纸钞，未提及支票或其他无记名票据。",
+            "timing_en": "On entering or leaving Zambia, declared to a customs officer at the port of entry or exit. Visitors can file the Integrated Border Declaration Form in advance on the Customs Portal or TaxOnApp.",
+            "timing_zh": "入境或出境时向口岸海关官员申报；访客可提前在海关门户或TaxOnApp上提交综合边境申报表。",
+            "fee": "unknown",
+            "source_ids": [
+              "zm-customs-act-s41a",
+              "zm-customs-act-form-47a",
+              "zm-zra-ibdf-guide-currency"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "超過5,000美元等值的貨幣申報——贊比亞稅務局",
+            "applicability_zh_hant": "方向：入境和出境均適用。任何人攜帶貨幣紙鈔（任何幣種）入境或出境，價值超過5,000美元等值的，須按規定表格申報（《海關與消費稅法》第322章第41A條）。法律附帶的貨幣申報表（海關表格第47A號）要求填寫姓名、國籍、護照號碼、入境或出境口岸，以及每種貨幣的金額和美元等值。贊比亞稅務局（ZRA）的綜合邊境申報表（Integrated Border Declaration Form）可由訪客在ZRA海關門戶或TaxOnApp手機應用上提交，其中設有貨幣申報部分，供攜帶超過5,000美元的旅客使用；ZRA寫明超過5,000美元的金額須在入境或出境口岸向海關官員申報。贊比亞對攜帶入出境的貨幣總額沒有上限，義務是申報超過門檻的部分。官員有理由認為未申報或申報不實的，可搜查本人及行李；搜出超過門檻的貨幣紙鈔將被扣押並沒收歸國家，物主可在30日內向稅務局總局長申訴。註冊銀行、貨幣兌換所及其他持牌金融機構豁免。法律條文針對貨幣紙鈔，未提及支票或其他無記名票據。",
+            "timing_zh_hant": "入境或出境時向口岸海關官員申報；訪客可提前在海關門戶或TaxOnApp上提交綜合邊境申報表。"
           }
         ],
         "sources": [
@@ -4214,11 +4548,29 @@ export default {
             "url": "https://www.zra.org.zm/importation-of-goods",
             "title": "Importation of Goods (traveller allowances and CE6) — Zambia Revenue Authority; captured live 2026-09-26; replaces the dead Passenger-Clearance.pdf link",
             "publisher": "Zambia Revenue Authority (ZRA) — national customs authority"
+          },
+          {
+            "id": "zm-customs-act-s41a",
+            "url": "https://www.parliament.gov.zm/sites/default/files/documents/acts/Customs%20and%20Excise%20Act.pdf",
+            "title": "The Customs and Excise Act, Chapter 322, section 41A (Declaration of currency notes) — Laws of Zambia, Ministry of Legal Affairs",
+            "publisher": "Ministry of Legal Affairs, Zambia"
+          },
+          {
+            "id": "zm-customs-act-form-47a",
+            "url": "https://www.parliament.gov.zm/sites/default/files/documents/acts/Customs%20and%20Excise%20Act.pdf",
+            "title": "The Customs and Excise Act, Chapter 322, Customs Form No. 47A (Currency Declaration Form) — Laws of Zambia, Ministry of Legal Affairs",
+            "publisher": "Ministry of Legal Affairs, Zambia"
+          },
+          {
+            "id": "zm-zra-ibdf-guide-currency",
+            "url": "https://www.zra.org.zm/wp-content/uploads/2024/02/User-Guide-for-the-Integrated-Border-Declaration-Form-Process-on-the-Customs-Portal-and-TaxOnApp.pdf",
+            "title": "User Guide for the Integrated Border Declaration Form Process on the Customs Portal and TaxOnApp, section 6.6 — Zambia Revenue Authority",
+            "publisher": "Zambia Revenue Authority"
           }
         ],
         "coverage": {
-          "total_procedures": 2,
-          "published_procedures": 2,
+          "total_procedures": 3,
+          "published_procedures": 3,
           "withheld_procedures": 0,
           "open_questions": 1
         }
@@ -4947,7 +5299,7 @@ export default {
       {
         "jurisdiction_id": "ZA",
         "review_status": "partial",
-        "researched_at": "2026-09-29",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "ZA-online-traveller-declaration",
@@ -5002,6 +5354,33 @@ export default {
             "name_zh_hant": "居民離境貴重物品申報",
             "applicability_zh_hant": "南非居民離境攜帶擬返帶的可識別貴重物品，可在離境前向海關以旅客貨物申報單（TGD1）登記並保存記錄，以備返程證明覆運入境。SARS 當前離境網頁稱旅客須在離境前申報珠寶、手錶、相機、攝像機、筆電電腦等貴重物品，並須附序列號以供返程識別；SC-PA-01-03 第8版 §3(a) 則寫南非居民可選擇在離境前向海關以 TGD1 登記其可識別貴重物品。兩者對強制範圍表述不一；此處僅覆蓋居民擬返帶且可識別的物品，不稱每位旅客都須登記所有貴重品。擬返帶的暫時出口物品仍須在離境前通過 SATMS 申報，海關可記錄序列號或登記號等識別特徵。返程時保存的 TGD1 用於識別同一物品。",
             "timing_zh_hant": "離境前登記，保存 TGD1 或登記記錄供返程識別。現行官方文件對居民此類貴重品是否一律必須登記表述不一。"
+          },
+          {
+            "id": "ZA-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Declaration of cash and currency entering or leaving South Africa — South African Revenue Service",
+            "name_zh": "入出境携带现金与货币申报——南非税务局（SARS）",
+            "agency": "South African Revenue Service (SARS) — Customs",
+            "official_url": "https://www.sars.gov.za/customs-and-excise/travellers/",
+            "channel": "conditional",
+            "applicability_en": "Direction: both. SARS policy SC-PA-01-06 (revision 11, effective 1 July 2026) applies to every person entering or leaving South Africa from or to a country outside the Common Monetary Area (CMA) who has South African bank notes, any foreign currency or Kruger Rand coins. It says every person must declare the currency in his or her possession: on arrival, South African bank notes; on departure, South African bank notes, securities and gold. The declaration is made in the same SATMS online traveller declaration that every traveller files before travel, or on the paper Traveller Card (TD-01) where prescribed; the customs officer then prepares the Traveller Goods Declaration (TGD1) from the traveller's verbal declaration. There is no separate cash form. Amounts: R100,000 is the exchange-control limit. SARS says excess currency is any amount above R100,000, or foreign currency convertible to more than R100,000, and travellers must obtain written permission from the South African Reserve Bank (SARB) before entering or leaving with it. SARB Exchange Control Circular 9/2026 (8 April 2026) raised the Rand bank note export limit from R25,000 to R100,000 per person. The policy also says customs officers may seize South African bank notes above R100,000 unless the traveller is travelling within the CMA, and that cash above R100,000 must be reported to the Financial Intelligence Centre. Used currency carried by a traveller attracts no duty or VAT. Air passengers transiting South Africa without passing immigration need not declare currency. Botswana is outside the CMA, so travellers to and from Botswana are covered. Some SARS web pages still describe declaring currency as voluntary; the policy text effective 1 July 2026 says every person must declare.",
+            "applicability_zh": "方向：双向。SARS政策SC-PA-01-06（第11版，2026年7月1日生效）适用于所有从共同货币区（CMA）以外国家入境南非、或前往CMA以外国家并持有南非纸钞、任何外币或克鲁格金币的人。政策写明每个人都须申报所持货币：入境时申报南非纸钞；出境时申报南非纸钞、有价证券和黄金。申报方式是在每位旅客出行前提交的同一份SATMS在线旅客申报中填写，或在规定情形下使用纸质旅客卡（TD-01）；随后海关官员根据旅客的口头申报制作旅客货物申报单（TGD1）。没有单独的现金表格。金额：R100,000是外汇管制限额。SARS说明，超额货币是指超过R100,000的金额，或可兑换为超过R100,000的外币；旅客携带入境或出境前须先取得南非储备银行（SARB）的书面许可。SARB外汇管制通函9/2026（2026年4月8日）将兰特纸钞出境限额由每人R25,000提高到R100,000。政策还写明，海关官员可扣押超过R100,000的南非纸钞（在CMA内旅行者除外），且超过R100,000的现金须向金融情报中心报告。旅客携带的已使用货币不征关税和增值税。乘飞机过境南非且未通过移民检查的旅客无须申报货币。博茨瓦纳不属于CMA，往返博茨瓦纳的旅客同样适用。部分SARS网页仍称申报货币出于自愿；2026年7月1日生效的政策文本写明每个人都须申报。",
+            "timing_en": "Before travel in the online traveller declaration, no more than 24 hours before departure from the country of travel; officers also ask about currency at the port, and any amount above R100,000 needs prior SARB permission.",
+            "timing_zh": "出行前在线旅客申报中填写，须在出发国启程前24小时内；口岸官员也会询问所带货币；超过R100,000的金额须事先取得SARB许可。",
+            "fee": "unknown",
+            "source_ids": [
+              "ZA-faq-2026",
+              "ZA-traveller-declaration",
+              "ZA-currency-current",
+              "ZA-travellers-page",
+              "ZA-sarb-circular-9-2026",
+              "ZA-currency-declare-every-person",
+              "ZA-currency-departure-page"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "入出境攜帶現金與貨幣申報——南非稅務局（SARS）",
+            "applicability_zh_hant": "方向：雙向。SARS政策SC-PA-01-06（第11版，2026年7月1日生效）適用於所有從共同貨幣區（CMA）以外國家入境南非、或前往CMA以外國家並持有南非紙鈔、任何外幣或克魯格金幣的人。政策寫明每個人都須申報所持貨幣：入境時申報南非紙鈔；出境時申報南非紙鈔、有價證券和黃金。申報方式是在每位旅客出行前提交的同一份SATMS線上旅客申報中填寫，或在規定情形下使用紙質旅客卡（TD-01）；隨後海關官員根據旅客的口頭申報製作旅客貨物申報單（TGD1）。沒有單獨的現金錶格。金額：R100,000是外匯管制限額。SARS說明，超額貨幣是指超過R100,000的金額，或可兌換為超過R100,000的外幣；旅客攜帶入境或出境前須先取得南非儲備銀行（SARB）的書面許可。SARB外匯管制通函9/2026（2026年4月8日）將蘭特紙鈔出境限額由每人R25,000提高到R100,000。政策還寫明，海關官員可扣押超過R100,000的南非紙鈔（在CMA內旅行者除外），且超過R100,000的現金須向金融情報中心報告。旅客攜帶的已使用貨幣不徵關稅和增值稅。乘飛機過境南非且未通過移民檢查的旅客無須申報貨幣。博茨瓦納不屬於CMA，往返博茨瓦納的旅客同樣適用。部分SARS網頁仍稱申報貨幣出於自願；2026年7月1日生效的政策文本寫明每個人都須申報。",
+            "timing_zh_hant": "出行前線上旅客申報中填寫，須在出發國啟程前24小時內；口岸官員也會詢問所帶貨幣；超過R100,000的金額須事先取得SARB許可。"
           }
         ],
         "sources": [
@@ -5088,11 +5467,23 @@ export default {
             "url": "https://www.sars.gov.za/legal-lsec-vat-gn-2026-01-notice-7811-gg-55190-vat-notice-because-of-consequential-amendments-to-note-5-item-407-14-august-2026/",
             "title": "Government Gazette No. 55190, Notice No. R. 7811, 14 August 2026 — Amendment of items 407.00, 407.02/00.00/01.00 and 407.02/00.00/02.00 of Schedule 1 to the Value-Added Tax Act, 1991 (s 74(3)(a) consequential to R.7810), page 2 shows [R5 000] R10 000 and [R20 000] R40 000",
             "publisher": "Government of South Africa — Government Gazette No. 55190 (notice issued via South African Revenue Service)"
+          },
+          {
+            "id": "ZA-currency-declare-every-person",
+            "url": "https://www.sars.gov.za/wp-content/uploads/Ops/Policies/SC-PA-01-06-Excess-Currency-External-Policy.pdf",
+            "title": "SC-PA-01-06 Excess Currency External Policy, Declaration of currency — South African Revenue Service",
+            "publisher": "South African Revenue Service"
+          },
+          {
+            "id": "ZA-currency-departure-page",
+            "url": "https://www.sars.gov.za/customs-and-excise/travellers/departure-from-sa/",
+            "title": "Departure from SA, currency — South African Revenue Service",
+            "publisher": "South African Revenue Service"
           }
         ],
         "coverage": {
-          "total_procedures": 2,
-          "published_procedures": 2,
+          "total_procedures": 3,
+          "published_procedures": 3,
           "withheld_procedures": 0,
           "open_questions": 2
         }
@@ -5744,7 +6135,7 @@ export default {
       {
         "jurisdiction_id": "GN",
         "review_status": "partial",
-        "researched_at": "2026-09-28",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "GN-temporary-personal-effects",
@@ -5766,6 +6157,27 @@ export default {
             "name_zh_hant": "旅客個人物品暫準進出口",
             "applicability_zh_hant": "《海關法》（2015年5月25日Loi L/2015/007/AN）第288條：臨時來幾內亞停留的旅客可暫緩入境稅費進口僅供個人使用之物品（禁止進口品除外），條件為6個月內原狀復出口；經充分理由可由海關總署長准予延期並續簽承諾；暫準進口可要求訂閱擔保書（acquit-à-caution），擔保可以稅款保證金替代；暫準進口憑證須應海關任何要求出示；未復出口物品經特許可繳稅留存幾內亞。第289條：主要居住或設立於幾內亞、赴外臨時停留的旅客可暫緩出口稅費輸出自有物品；該出口明定以訂閱acquit-à-caution（應繳出口稅費者，擔保可以稅款保證金替代）或取得passavant通行證（免出口稅費者）為條件；由原出口人本人在6個月內復進口的，免納進口稅費且不受進口禁限。適用細則由主管海關部長的局令規定（第288條第6款、第289條第4款），該等局令未取得。同法第57條另要求旅客遵守對外貿易管制及對外金融關係法規；本法本身未設現金申報門檻、表格或費用。",
             "timing_zh_hant": "在邊境辦理暫準進出口時；6個月內原狀復出口或復進口；進口側經充分理由可延期。"
+          },
+          {
+            "id": "GN-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Written declaration of cash and bearer negotiable instruments at the border — Guinea",
+            "name_zh": "边境现金及无记名可转让票据书面申报——几内亚",
+            "agency": "Direction générale des Douanes de Guinée",
+            "official_url": "https://www.bcrg-guinee.org/wp-content/uploads/2021/09/LOI_LBCFT_0024_AN-2021-V.pdf",
+            "channel": "conditional",
+            "applicability_en": "Direction: both entering and leaving Guinea. Under Article 69 of the 2021 law on combating money laundering and the financing of terrorism, anyone physically carrying cash or bearer negotiable instruments of 100,000,000 Guinean francs or more across the border must make a written declaration at the border post on the form provided for that purpose. The duty applies to all physical cross-border transport, including by travellers, by mail and by freight. Unaccompanied cash or bearer instruments of that value sent by mail or freight must be declared by the sender or recipient within 30 days, and customs hold them until the declaration is made (Article 70). Customs officers may question the carrier about the origin and intended use of the money and may stop or hold it for 30 working days, extendable to 90, when a declaration is false, missing or the officer suspects money laundering (Article 71). A declaration that is incorrect or incomplete counts as not made. The law gives no foreign-currency conversion rule in these articles; the threshold is stated in Guinean francs.",
+            "applicability_zh": "方向：入境和出境均适用。依据2021年《反洗钱和反恐融资法》第69条，任何人亲自携带现金或无记名可转让票据跨境，金额达到或超过1亿几内亚法郎（100,000,000 GNF）的，须在边境口岸使用规定表格作书面申报。该义务适用于所有实物跨境运送，包括旅客随身携带、邮寄和货运。以邮寄或货运方式运送的无人陪同的同等金额现金或无记名票据，须由寄件人或收件人在30天内申报，申报前由海关扣留（第70条）。申报虚假、缺失或官员怀疑涉及洗钱时，海关官员可询问携带人资金来源和用途，并可扣留30个工作日，最长可延至90日（第71条）。申报不正确或不完整视为未申报。上述条文未规定外币折算办法，门槛以几内亚法郎表述。",
+            "timing_en": "At the border post when entering or leaving Guinea; unaccompanied cash or instruments sent by mail or freight are declared within 30 days.",
+            "timing_zh": "入境或出境时在边境口岸申报；邮寄或货运的无人陪同现金或票据在30天内申报。",
+            "fee": "unknown",
+            "source_ids": [
+              "GN-aml-law-2021-art69"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "邊境現金及無記名可轉讓票據書面申報——幾內亞",
+            "applicability_zh_hant": "方向：入境和出境均適用。依據2021年《反洗錢和反恐融資法》第69條，任何人親自攜帶現金或無記名可轉讓票據跨境，金額達到或超過1億幾內亞法郎（100,000,000 GNF）的，須在邊境口岸使用規定表格作書面申報。該義務適用於所有實物跨境運送，包括旅客隨身攜帶、郵寄和貨運。以郵寄或貨運方式運送的無人陪同的同等金額現金或無記名票據，須由寄件人或收件人在30天內申報，申報前由海關扣留（第70條）。申報虛假、缺失或官員懷疑涉及洗錢時，海關官員可詢問攜帶人資金來源和用途，並可扣留30個工作日，最長可延至90日（第71條）。申報不正確或不完整視為未申報。上述條文未規定外幣折算辦法，門檻以幾內亞法郎表述。",
+            "timing_zh_hant": "入境或出境時在邊境口岸申報；郵寄或貨運的無人陪同現金或票據在30天內申報。"
           }
         ],
         "sources": [
@@ -5774,13 +6186,19 @@ export default {
             "url": "https://dgd.gov.gn/wp-content/uploads/2024/02/CODE-DES-DOUANESDE-GUINEE.pdf",
             "title": "Code des douanes 2015 (Loi L/2015/007/AN) — full direct PDF capture (371,961 bytes, 28 pages); articles 288–289 traveller temporary franchise",
             "publisher": "Direction générale des Douanes de Guinée"
+          },
+          {
+            "id": "GN-aml-law-2021-art69",
+            "url": "https://www.bcrg-guinee.org/wp-content/uploads/2021/09/LOI_LBCFT_0024_AN-2021-V.pdf",
+            "title": "Loi relative à la lutte contre le blanchiment de capitaux et le financement du terrorisme (2021), article 69 — Banque Centrale de la République de Guinée",
+            "publisher": "Banque Centrale de la République de Guinée"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
-          "open_questions": 4
+          "open_questions": 3
         }
       },
       {
@@ -6099,7 +6517,7 @@ export default {
       {
         "jurisdiction_id": "MR",
         "review_status": "partial",
-        "researched_at": "2026-09-12",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "MR-returning-residents-franchise",
@@ -6635,7 +7053,7 @@ export default {
       {
         "jurisdiction_id": "SL",
         "review_status": "partial",
-        "researched_at": "2026-09-12",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "SL-customs-rules-reference",
@@ -6657,6 +7075,29 @@ export default {
             "name_zh_hant": "第27(c)條旅客個人物品額度",
             "applicability_zh_hant": "NRA對2023年稅費豁免法第27(c)條的說明規定：作為旅客個人物品的花露水不超過0.25升、香水不超過50克。該條說明海關怎樣處理超量，並非禁止攜帶這些產品。該說明不涉及一般行李申報表、現金申報門檻或寶石出口許可；這些事項是否另有規定，頁面未作說明。",
             "timing_zh_hant": "海關查驗旅客行李時。"
+          },
+          {
+            "id": "SL-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Declaration of cash and bearer instruments over USD 10,000 when arriving in or leaving Sierra Leone",
+            "name_zh": "入出塞拉利昂携带超过 1 万美元现金及无记名票据的申报",
+            "agency": "Sierra Leone Police, customs officers of the National Revenue Authority, Financial Intelligence Agency",
+            "official_url": "https://sierralii.gov.sl/akn/sl/act/2024/4/eng@2024-06-06/source.pdf",
+            "channel": "conditional",
+            "applicability_en": "Direction: both. Under section 104 of the Anti-Money Laundering and Combating of Financing of Terrorism and Financing of Proliferation of Weapons of Mass Destruction Act, 2024, a person arriving in or leaving Sierra Leone with more than USD 10,000.00, or the equivalent in leones or another foreign currency, in cash or negotiable bearer instruments must declare it to a police officer, a customs officer or an officer of the Financial Intelligence Agency. This covers cash carried on the person, in luggage, or sent by mail or cargo. Not declaring, or declaring falsely, is an offence: on conviction the penalty is forfeiture of the whole amount, imprisonment of not less than 5 years, or both. The Act does not name a declaration form.",
+            "applicability_zh": "方向：双向。依据 2024 年《反洗钱、反恐融资及反大规模杀伤性武器扩散融资法》第 104 条，抵达或离开塞拉利昂时携带超过 10,000.00 美元（或等值利昂、其他外币）的现金或无记名可转让票据，须向警察、海关官员或金融情报机构人员申报。随身携带、放在行李中，或通过邮件、货运寄送的都包括在内。不申报或虚假申报属犯罪：定罪后可没收全部金额，或处不少于 5 年监禁，或两者并处。该法没有写明申报表格名称。",
+            "timing_en": "When arriving in or leaving Sierra Leone.",
+            "timing_zh": "抵达或离开塞拉利昂时。",
+            "fee": "unknown",
+            "source_ids": [
+              "SL-aml-2024-s104-threshold",
+              "SL-aml-2024-s104-authority",
+              "SL-aml-2024-s104-penalty"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "入出塞拉利昂攜帶超過 1 萬美元現金及無記名票據的申報",
+            "applicability_zh_hant": "方向：雙向。依據 2024 年《反洗錢、反恐融資及反大規模殺傷性武器擴散融資法》第 104 條，抵達或離開塞拉利昂時攜帶超過 10,000.00 美元（或等值利昂、其他外幣）的現金或無記名可轉讓票據，須向警察、海關官員或金融情報機構人員申報。隨身攜帶、放在行李中，或通過郵件、貨運寄送的都包括在內。不申報或虛假申報屬犯罪：定罪後可沒收全部金額，或處不少於 5 年監禁，或兩者並處。該法沒有寫明申報表格名稱。",
+            "timing_zh_hant": "抵達或離開塞拉利昂時。"
           }
         ],
         "sources": [
@@ -6665,11 +7106,29 @@ export default {
             "url": "https://mail.nra.gov.sl/news/nra-dispels-misconceptions-tax-and-duty-exemption-act-2023",
             "title": "NRA explains section 27 of Tax and Duty Exemption Act 2023",
             "publisher": "National Revenue Authority, Sierra Leone"
+          },
+          {
+            "id": "SL-aml-2024-s104-threshold",
+            "url": "https://sierralii.gov.sl/akn/sl/act/2024/4/eng@2024-06-06/source.pdf",
+            "title": "Anti-Money Laundering and Combating of Financing of Terrorism and Financing of Proliferation of Weapons of Mass Destruction Act, 2024 (Act 4 of 2024), section 104 — Government of Sierra Leone, published on SierraLII",
+            "publisher": "Government of Sierra Leone (SierraLII)"
+          },
+          {
+            "id": "SL-aml-2024-s104-authority",
+            "url": "https://sierralii.gov.sl/akn/sl/act/2024/4/eng@2024-06-06/source.pdf",
+            "title": "Anti-Money Laundering and Combating of Financing of Terrorism and Financing of Proliferation of Weapons of Mass Destruction Act, 2024 (Act 4 of 2024), section 104 — Government of Sierra Leone, published on SierraLII",
+            "publisher": "Government of Sierra Leone (SierraLII)"
+          },
+          {
+            "id": "SL-aml-2024-s104-penalty",
+            "url": "https://sierralii.gov.sl/akn/sl/act/2024/4/eng@2024-06-06/source.pdf",
+            "title": "Anti-Money Laundering and Combating of Financing of Terrorism and Financing of Proliferation of Weapons of Mass Destruction Act, 2024 (Act 4 of 2024), section 104 — Government of Sierra Leone, published on SierraLII",
+            "publisher": "Government of Sierra Leone (SierraLII)"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
           "open_questions": 1
         }
@@ -7079,7 +7538,7 @@ export default {
       {
         "jurisdiction_id": "BS",
         "review_status": "partial",
-        "researched_at": "2026-09-27",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "BS-c17-accompanied-baggage-declaration",
@@ -7101,6 +7560,31 @@ export default {
             "name_zh_hant": "隨行行李申報（C17表）",
             "applicability_zh_hant": "適用於入境巴哈馬的旅客。下機/下船旅客須就其攜帶或行李中的所有貨物先作口頭申報，並僅就應稅貨物完成本表；同住一戶且同行的家庭成員可合併填報一份。攜帶現金或貨幣工具達 B$10,000 或以上（含本數）或等值外幣者須作書面申報；表背面對 currency 的定義包括現金、旅行支票、匯票等，並提示攜帶現金、可流通票據、貴金屬或寶石價值達 B$10,000 或以上者先讀背面說明再填全表。免稅優惠：僅限成人——酒精飲料不超過一夸脫烈酒及一夸脫葡萄酒，菸草不超過一磅或200支香菸或50支雪茄；其他物品價值不超過 $500.00，此為免稅優惠額度而非填表門檻。表格警示虛假或錯誤申報及違禁/受限貨物（含水果或其他植物材料、動物、鳥類、毒品、槍支）將受處罰並可沒收。本2018年版 C17 表自2018年7月1日起替換《2013海關管理條例》第一附表的 C17 表（據財政部官方掃描件）。依據官方年度列表所見2026年修訂條例，本表未作改動；2019-2025 年間的修訂尚未逐項核對。表中另有”每位旅客或負責任的家庭成員須完成本表”的指示，較應稅條件為寬；這並不意味著所有入境旅客一律須填表。未確立離境申報要求。表本身未規定辦理手續費；應稅貨物所繳關稅為稅款而非表格費用。",
             "timing_zh_hant": "入境巴哈馬時（下機/下船旅客）。"
+          },
+          {
+            "id": "BS-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Declaration of currency and monetary instruments of B$10,000 or more (Form C17 on arrival; Travellers Currency Declaration on departure)",
+            "name_zh": "携带现金及货币工具 B$10,000 及以上的申报（入境填 C17 表；离境旅客货币申报）",
+            "agency": "Bahamas Customs Department",
+            "official_url": "https://www.bahamascustoms.gov.bs/visitor-info/departing/",
+            "channel": "conditional",
+            "applicability_en": "For travellers carrying currency or monetary instruments into or out of The Bahamas. Arriving: the 2018 Form C17 (Accompanied Baggage Declaration) requires a written declaration from any person carrying currency or a monetary instrument of B$10,000 or more, or the foreign-currency equivalent. The form defines currency as the currency of The Bahamas or of any foreign country, including cash, travellers cheques and drafts, and states that carrying currency or monetary instruments is legal regardless of the amount. Its first page also points travellers carrying cash, negotiable instruments, precious metals or precious stones of that value to the notes on the back. The Customs Department's arrival page says C17 forms are completed through its Exempt app. Departing: the Customs Department's departing page says each person or responsible family member travelling must declare if travelling with cash, negotiable instruments, precious metals or precious stones of a value equivalent to B$10,000. That page names no form and no filing point for departures. Customs says non-compliance can mean forfeiture of the cash plus a fine of up to $2,000. The 2018 form says B$10,000 or more; the departing page does not say whether exactly B$10,000 is included.",
+            "applicability_zh": "适用于携带现金或货币工具入境或离境巴哈马的旅客。入境：2018 年版 C17 表（随行行李申报表）要求，携带货币或货币工具达 B$10,000 或以上（含本数）或等值外币者须作书面申报。表中货币包括巴哈马或任何外国的货币、现金、旅行支票和汇票等，并说明携带货币或货币工具本身不论金额均合法。表格首页另提示：携带上述价值的现金、可流通票据、贵金属或宝石者，应先阅读表背面说明。海关入境页面称 C17 表通过海关的 Exempt 应用填报。离境：海关离境页面称，每位旅客或负责任的家庭成员若携带现金、可流通票据、贵金属或宝石，价值相当于 B$10,000，须申报；该页未写明离境所用表格或申报地点。海关称，违规者可能被没收现金，并另处最高 $2,000 罚款。2018 年表格写明“B$10,000 或以上”；离境页面未写明恰为 B$10,000 时是否包括在内。",
+            "timing_en": "On entering The Bahamas, with the C17 declaration. On leaving, the departing page does not say at which point the declaration is made.",
+            "timing_zh": "入境时随 C17 表申报；离境时，离境页面未写明在哪个环节申报。",
+            "fee": "unknown",
+            "source_ids": [
+              "BS-c17-2018-currency",
+              "BS-c17-2018-currency-written",
+              "BS-customs-departing-currency",
+              "BS-customs-departing-penalty",
+              "BS-customs-arriving-c17-app"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "攜帶現金及貨幣工具 B$10,000 及以上的申報（入境填 C17 表；離境旅客貨幣申報）",
+            "applicability_zh_hant": "適用於攜帶現金或貨幣工具入境或離境巴哈馬的旅客。入境：2018 年版 C17 表（隨行行李申報表）要求，攜帶貨幣或貨幣工具達 B$10,000 或以上（含本數）或等值外幣者須作書面申報。表中貨幣包括巴哈馬或任何外國的貨幣、現金、旅行支票和匯票等，並說明攜帶貨幣或貨幣工具本身不論金額均合法。表格首頁另提示：攜帶上述價值的現金、可流通票據、貴金屬或寶石者，應先閱讀表背面說明。海關入境頁面稱 C17 表通過海關的 Exempt 應用填報。離境：海關離境頁面稱，每位旅客或負責任的家庭成員若攜帶現金、可流通票據、貴金屬或寶石，價值相當於 B$10,000，須申報；該頁未寫明離境所用表格或申報地點。海關稱，違規者可能被沒收現金，並另處最高 $2,000 罰款。2018 年表格寫明“B$10,000 或以上”；離境頁面未寫明恰為 B$10,000 時是否包括在內。",
+            "timing_zh_hant": "入境時隨 C17 表申報；離境時，離境頁面未寫明在哪個環節申報。"
           }
         ],
         "sources": [
@@ -7109,19 +7593,49 @@ export default {
             "url": "https://cdn.bahamas.gov.bs/tenant/tenantministryoffinance/documents/All%20Documents/CustomsManagementAmendmentRegulations2018-20240426020132.pdf",
             "title": "Customs Management (Amendment) Regulations, 2018 — official Ministry of Finance scan, complete CDN copy (HTTP 200, 775,030 bytes); Form C17 'Accompanied Baggage Declaration' (PDF pp. 3-4; commencement/replacement of the 2013 First Schedule form on p. 2)",
             "publisher": "Ministry of Finance / Bahamas Customs Department, The Bahamas"
+          },
+          {
+            "id": "BS-c17-2018-currency",
+            "url": "https://cdn.bahamas.gov.bs/tenant/tenantministryoffinance/documents/All%20Documents/CustomsManagementAmendmentRegulations2018-20240426020132.pdf",
+            "title": "Customs Management (Amendment) Regulations, 2018, Form C17 Accompanied Baggage Declaration — Ministry of Finance, The Bahamas",
+            "publisher": "Ministry of Finance / Bahamas Customs Department, The Bahamas"
+          },
+          {
+            "id": "BS-c17-2018-currency-written",
+            "url": "https://cdn.bahamas.gov.bs/tenant/tenantministryoffinance/documents/All%20Documents/CustomsManagementAmendmentRegulations2018-20240426020132.pdf",
+            "title": "Customs Management (Amendment) Regulations, 2018, Form C17 Accompanied Baggage Declaration — Ministry of Finance, The Bahamas",
+            "publisher": "Ministry of Finance / Bahamas Customs Department, The Bahamas"
+          },
+          {
+            "id": "BS-customs-departing-currency",
+            "url": "https://www.bahamascustoms.gov.bs/visitor-info/departing/",
+            "title": "Departing, Travellers Currency Declaration — The Bahamas Customs Department",
+            "publisher": "Bahamas Customs Department, The Bahamas"
+          },
+          {
+            "id": "BS-customs-departing-penalty",
+            "url": "https://www.bahamascustoms.gov.bs/visitor-info/departing/",
+            "title": "Departing, Travellers Currency Declaration — The Bahamas Customs Department",
+            "publisher": "Bahamas Customs Department, The Bahamas"
+          },
+          {
+            "id": "BS-customs-arriving-c17-app",
+            "url": "https://www.bahamascustoms.gov.bs/visitor-info/arriving/",
+            "title": "Arriving — The Bahamas Customs Department",
+            "publisher": "Bahamas Customs Department, The Bahamas"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
-          "open_questions": 4
+          "open_questions": 5
         }
       },
       {
         "jurisdiction_id": "BB",
         "review_status": "partial",
-        "researched_at": "2026-09-28",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "BB-customs-declaration-form",
@@ -7144,6 +7658,32 @@ export default {
             "name_zh_hant": "線上移民與海關合並表（一次提交，含C.23旅客海關申報）",
             "applicability_zh_hant": "所有赴巴巴多斯旅客須完成一份線上移民與海關合並表，完成後將移民與海關兩份回執存入手機或列印、抵達時出示——兩份回執同屬一次提交，不拆成兩個程序。海關部分即C.23旅客海關申報表（海關法Cap. 66，經2020年《海關（修訂）條例》替換）：表載明每位旅客或攜未滿18歲子女同行的家長鬚完成海關表。是/否問項涵蓋行李件數；水果、植物、切花、蔬菜、土壤、肉類、活體動物及生物、蜂蜜、野生動植物產品、植物材料、食品；藥品；麻醉品及其他毒品、生物製品、槍械、彈藥、爆炸物及其他武器；商業物品；以及攜帶超過10,000巴巴多斯元（BDS$10,000）等值的現金或票據——該現金點僅是同一份提交內的問項，不另立表格。表內另問18歲及以上公民/居民本年度是否已申報過每歷年不超過500巴巴多斯元（BDS$500）的免稅額；所有18歲及以上旅客可攜葡萄酒或烈酒不超過1升。",
             "timing_zh_hant": "線上合併表自抵達巴巴多斯前72小時起開放可用；旅客可在方便的時間與地點填寫，抵達時向移民與海關出示兩份回執。72小時是線上窗口的開放時點，並非必須提前72小時提交；兩源均未載提前提交截止時限。2020年條例對C.23表未設時間窗。"
+          },
+          {
+            "id": "BB-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Declaration of currency and monetary instruments over BDS$10,000 (Customs Form C.23 question; report under the Money Laundering and Financing of Terrorism Act, section 24)",
+            "name_zh": "携带现金及货币工具超过 BDS$10,000 的申报（海关 C.23 表问项；《反洗钱和反恐融资法》第24条报告）",
+            "agency": "Barbados Customs and Excise Department",
+            "official_url": "https://travelform.gov.bb/",
+            "channel": "conditional",
+            "applicability_en": "Applies to a traveller entering or leaving Barbados with currency or monetary instruments. Arriving: the passenger Customs declaration (Form C.23, Customs Act Cap. 66) completed in the online Immigration and Customs Form asks whether the traveller is carrying currency or monetary instruments over BDS$10,000 or equivalent. Every traveller, or head of a family travelling with children under 18, completes the Customs form, which is part of the same online submission. Under section 24 of the Money Laundering and Financing of Terrorism (Prevention and Control) Act, 2011-23, a person who takes Barbadian or foreign currency into or out of Barbados in an amount of more than $10,000 in value must make a signed report in the form approved by the Anti-Money Laundering Authority, unless permission for the transfer was obtained under the Exchange Control Act. When the currency travels on the person, in luggage or as cargo, the report goes to the Comptroller of Customs at the time the currency is brought in or taken out. For a passenger leaving by aircraft or vessel, currency counts as taken out on reaching the customs area for embarking passengers, or otherwise the immigration officer who examines the passport. Failing to report is an offence punishable by a fine and imprisonment (up to $200,000 or five years on indictment). The Act speaks of 'currency'; the C.23 question also names monetary instruments. The Act does not name the departure form, and the C.23 form covers arrivals only.",
+            "applicability_zh": "适用于携带现金或货币工具入境或离开巴巴多斯的旅客。入境：在线移民与海关表中的旅客海关申报（C.23表，《海关法》第66章）询问旅客是否携带超过 BDS$10,000 或等值的货币或货币工具。每位旅客，或携 18 岁以下儿童同行的家长，均须填写海关表，因此该问项在同一次在线提交中作答。依据《反洗钱和反恐融资（预防和控制）法》2011-23 第24条，任何人将巴巴多斯货币或外币带入或带出巴巴多斯，金额超过 $10,000 的，须按反洗钱管理局核准的格式作出并签署报告，除非已依《外汇管制法》取得转移许可。货币随身、在行李中或作为货物携带时，报告在货币带入或带出时向海关总监提交。乘飞机或船离境者，在到达海关人员处理登机/登船旅客的区域时，或（无此区域时）到达查验护照的移民官处时，视为带出货币。不报告属犯罪：简易程序定罪可处 $10,000 罚款或两年监禁，公诉程序定罪可处 $200,000 罚款或五年监禁。商业承运人无须报告其乘客所携货币。法律条文用“货币”一词，C.23 问项另列货币工具。法律未写明出境所用表格，C.23 表只涉及入境。",
+            "timing_en": "On arrival, as part of the online Immigration and Customs Form. For the section 24 report, at the time the currency is brought into or taken out of Barbados.",
+            "timing_zh": "入境时随在线移民与海关表作答；第24条报告须在货币带入或带出巴巴多斯时提交。",
+            "fee": "unknown",
+            "source_ids": [
+              "BB-cash-form-c23",
+              "BB-cash-mlfta-threshold",
+              "BB-cash-mlfta-customs",
+              "BB-cash-mlfta-timing",
+              "BB-cash-mlfta-penalty",
+              "BB-cash-mlfta-penalty-indictment"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "攜帶現金及貨幣工具超過 BDS$10,000 的申報（海關 C.23 表問項；《反洗錢和反恐融資法》第24條報告）",
+            "applicability_zh_hant": "適用於攜帶現金或貨幣工具入境或離開巴巴多斯的旅客。入境：線上移民與海關表中的旅客海關申報（C.23表，《海關法》第66章）詢問旅客是否攜帶超過 BDS$10,000 或等值的貨幣或貨幣工具。每位旅客，或攜 18 歲以下兒童同行的家長，均須填寫海關表，因此該問項在同一次線上提交中作答。依據《反洗錢和反恐融資（預防和控制）法》2011-23 第24條，任何人將巴巴多斯貨幣或外幣帶入或帶出巴巴多斯，金額超過 $10,000 的，須按反洗錢管理局核准的格式作出並簽署報告，除非已依《外匯管制法》取得轉移許可。貨幣隨身、在行李中或作為貨物攜帶時，報告在貨幣帶入或帶出時向海關總監提交。乘飛機或船離境者，在到達海關人員處理登機/登船旅客的區域時，或（無此區域時）到達查驗護照的移民官處時，視為帶出貨幣。不報告屬犯罪：簡易程序定罪可處 $10,000 罰款或兩年監禁，公訴程序定罪可處 $200,000 罰款或五年監禁。商業承運人無須報告其乘客所攜貨幣。法律條文用“貨幣”一詞，C.23 問項另列貨幣工具。法律未寫明出境所用表格，C.23 表只涉及入境。",
+            "timing_zh_hant": "入境時隨線上移民與海關表作答；第24條報告須在貨幣帶入或帶出巴巴多斯時提交。"
           }
         ],
         "sources": [
@@ -7158,13 +7698,49 @@ export default {
             "url": "https://immigration.gov.bb/pages/visitor.aspx",
             "title": "Visitors to Barbados — Visitor Information / Things to Know",
             "publisher": "Barbados Immigration Department (Prime Minister's Office — Defence & Security)"
+          },
+          {
+            "id": "BB-cash-form-c23",
+            "url": "https://oag.gov.bb/attachments/Customs%20%28Amendment%29%20Regulations%2C%202020%20No%207.pdf",
+            "title": "Customs (Amendment) Regulations, 2020 (S.I. 2020 No. 7), Form C.23 Passenger Customs Declaration — Attorney General's Chambers, Barbados",
+            "publisher": "Attorney General's Chambers, Barbados"
+          },
+          {
+            "id": "BB-cash-mlfta-threshold",
+            "url": "https://cdn.centralbank.org.bb/documents/2022-03-14-06-30-42-MLFT-Act---2011-23.pdf",
+            "title": "Money Laundering and Financing of Terrorism (Prevention and Control) Act, 2011-23 — Parliament of Barbados (published by the Central Bank of Barbados)",
+            "publisher": "Parliament of Barbados (copy published by the Central Bank of Barbados)"
+          },
+          {
+            "id": "BB-cash-mlfta-customs",
+            "url": "https://cdn.centralbank.org.bb/documents/2022-03-14-06-30-42-MLFT-Act---2011-23.pdf",
+            "title": "Money Laundering and Financing of Terrorism (Prevention and Control) Act, 2011-23 — Parliament of Barbados (published by the Central Bank of Barbados)",
+            "publisher": "Parliament of Barbados (copy published by the Central Bank of Barbados)"
+          },
+          {
+            "id": "BB-cash-mlfta-timing",
+            "url": "https://cdn.centralbank.org.bb/documents/2022-03-14-06-30-42-MLFT-Act---2011-23.pdf",
+            "title": "Money Laundering and Financing of Terrorism (Prevention and Control) Act, 2011-23 — Parliament of Barbados (published by the Central Bank of Barbados)",
+            "publisher": "Parliament of Barbados (copy published by the Central Bank of Barbados)"
+          },
+          {
+            "id": "BB-cash-mlfta-penalty",
+            "url": "https://cdn.centralbank.org.bb/documents/2022-03-14-06-30-42-MLFT-Act---2011-23.pdf",
+            "title": "Money Laundering and Financing of Terrorism (Prevention and Control) Act, 2011-23 — Parliament of Barbados (published by the Central Bank of Barbados)",
+            "publisher": "Parliament of Barbados (copy published by the Central Bank of Barbados)"
+          },
+          {
+            "id": "BB-cash-mlfta-penalty-indictment",
+            "url": "https://cdn.centralbank.org.bb/documents/2022-03-14-06-30-42-MLFT-Act---2011-23.pdf",
+            "title": "Money Laundering and Financing of Terrorism (Prevention and Control) Act, 2011-23 — Parliament of Barbados (published by the Central Bank of Barbados)",
+            "publisher": "Parliament of Barbados (copy published by the Central Bank of Barbados)"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
-          "open_questions": 3
+          "open_questions": 4
         }
       },
       {
@@ -7562,7 +8138,7 @@ export default {
       {
         "jurisdiction_id": "DM",
         "review_status": "partial",
-        "researched_at": "2026-10-13",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "DM-edcard-online",
@@ -7600,6 +8176,34 @@ export default {
             "name_zh_hant": "線上移民與海關申報卡（ED Card）——赴多米尼克一次提交的落地卡，涵蓋移民、健康與海關申報",
             "applicability_zh_hant": "所有赴多米尼克旅客在 edcard.dominica.gov.dm 線上填寫政府出入境落地卡（“LANDING CARD — Please complete clearly in English”）；政府2024-12-20公告稱該網站為線上移民及海關申報卡（Online Immigration and Customs Declaration Card）的官方唯一平臺。這是同一張卡、一次提交，而非兩個程序：每個分支都是一張多步表單，海關步驟經由表內繼續操作進入（“I confirm that the above is true and correct: Continue to Customs Declaration”），證明聲明（“I certify that all statements I have made in this declaration are true, correct and complete. I understand that failure to make a full declaration is an offence and can result in seizure of the goods, fines and/or imprisonment.”）之後即唯一的 Submit 提交動作；官網首頁流程也只列一個提交步驟——“Complete the online form any time prior to travel and click submit”——隨後收到帶 QR Code 的確認，在入境口岸應要求與護照一併出示給移民與海關當局；官方 ED 卡頁面未見第二個獨立的提交步驟。入境者按居住身份選擇分支：非居民/訪客（EDCard_arr/Create；步驟 Arrivals–Personal–Travel–Destination–Health–Customs）或居民/返國國民（EDCard_arr/Nationals；步驟 Arrivals–Personal–Travel–Health–Family–Customs）。兩分支均詢問抵多方式——空路（航司下拉含美國航空、加勒比航空、LIAT、美聯航、包機、私人飛機等）或海路（Cruise Ship 郵輪、L'Express Des Iles、Val Ferry、其他渡輪）——並填寫航班號/船舶號、下船口岸、抵港日期與時間及個人資訊、旅行證件與健康（近訪國家1–5）各步；訪客分支另有目的地、訪問目的、過境與停留天數欄位。官網首頁寫明每位旅客必須持有航班資訊及有效護照或其他政府簽發旅行證件；首頁籠統的“Flight Information”措辭並非要求純海路旅客填報航班號——兩分支表單本身提供空/海方式選項及航班號/船舶號欄位，海路旅客真實表單填報渡輪/船舶資訊。海關問項嵌於同一次 ED 提交內（入境方向）：隨行/非隨行行李欄位之後為“2. I am (We are) bringing:”是/否問項(a)–(e)：(a) 水果、植物、鮮花、蔬菜、土壤、肉類、活體動物及生物、蜂蜜、野生動植物產品、植物材料、食品、動物產品或活禽鳥；(b) 藥品、麻醉品及其他違禁藥物和生物物質；(c) 武器、彈藥、爆炸物、煙花、玩具槍或其他武器；(d) 供銷售物品、用於招攬訂單的樣品或不屬個人物品的貨物；(e) “I am (we are) carrying currency or monetary instruments over (USD $10,000) or equivalent”（攜帶超過10,000美元（USD $10,000）或等值的現金或貨幣票據）；其後為物品清單（描述、價值/幣種）。表單免稅說明按受益人區分：居民（Residents）18歲及以上每年享有400東加勒比元（EC $400）個人及家用物品免稅額（非商用數量），另含227克菸草、或不超過200支香菸、或不超過50支雪茄，及1升烈酒或葡萄酒；“Visitor — Declare all dutiable articles whether remaining in Dominica or for subsequent re-export”（訪客須申報全部應稅物品，無論留存多米尼克還是隨後復出口），並附“If you have doubt, declare all items to the Customs Officer”（有疑問即向海關關員申報）。二者受益人與物品類別均不同，不得互套。另據多米尼克海關官方旅客頁：前兩句依次稱“All arriving passengers 18 years or older”個人自用品免稅、“Arriving passengers 18 years and older”享烈酒或葡萄酒1升/香菸200支/雪茄50支/菸草227克限額；第三句另起、以“Arriving passengers are also allowed”開頭（未重複年齡限定），稱可免稅攜帶“souvenirs and gifts imported and carried in their baggage with a value not exceeding EC$400.00 (US$150.00)”（隨身行李內價值不超過400東加勒比元（合150美元）的紀念品與禮品）——官方文字未寫明該禮品額度適用的年齡範圍（既未寫明僅限18歲及以上，也未寫明嬰幼兒/未成年旅客可用），亦無“每年”條件，與 ED 表內居民專屬的年度 EC $400 個人/家用物品免稅額分屬不同制度，兩者不得混同；適用頻率等條件官方文字未提及。家庭合併僅存在於居民/返國國民分支：其旅客須知寫明“Every passanger or head of the family travelling together with a spouse and children under the age of 18, is required to complete this Section”（與配偶及18歲以下子女同行的每位旅客或戶主須完成本節；拼寫照錄官方表單），並通過 Family 標籤的“Add Accompanying Individuals”實現（名、姓、出生日期、性別、旅行證件類型含護照/國民身份證、證件號、關係）。訪客 Create 表無 Family 標籤、無添加隨行人區塊、亦無訪客家庭可合併為一張卡的任何表述。官方 ED 卡頁面未見出境方向 ED 卡，亦未見單獨紙質卡。",
             "timing_zh_hant": "官網首頁寫 ED Card 應在赴多米尼克旅行前“不超過三（3）天”提交——措辭為建議（should）；同頁流程第1步又寫“Complete the online form any time prior to travel and click submit”（旅行前任意時間完成並提交）。海關問項在同一次提交內完成，QR Code 確認在入境口岸與護照一併出示。官方頁面未見平臺硬性截止或拒絕更早提交的任何說明；3天窗口為官方建議，並非官方寫明的強制截止。"
+          },
+          {
+            "id": "DM-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Currency and monetary instruments question in the online ED Card (over USD $10,000 or equivalent, arrival)",
+            "name_zh": "在线ED卡中的现金及货币工具问项（超过 USD $10,000 或等值，入境）",
+            "agency": "Government of the Commonwealth of Dominica (Customs and Immigration)",
+            "official_url": "https://edcard.dominica.gov.dm/",
+            "channel": "online",
+            "applicability_en": "Applies to every traveller arriving in Dominica. Both branches of the online Immigration and Customs Declaration ED Card (Non-Resident/Visitor and Resident/Returning National) carry the customs question '(e) I am (we are) carrying currency or monetary instruments over (USD $10,000) or equivalent', answered Yes or No inside the same single submission as the rest of the customs section. The traveller certifies the statements as true, correct and complete, and the form warns that failure to make a full declaration is an offence that can result in seizure of the goods, fines and/or imprisonment. The ED Card pages cover arrivals only: no declaration of currency on leaving Dominica appears on them, and the form does not say whether exactly USD $10,000 triggers a Yes.",
+            "applicability_zh": "适用于所有抵达多米尼克的旅客。在线移民与海关申报ED卡的两个分支（非居民/访客与居民/返国国民）均设有海关问项“(e) 我（我们）携带的货币或货币工具超过（USD $10,000）或等值”，须在海关部分同一次提交中选“是”或“否”。旅客须声明所填内容真实、正确、完整；表格警告，未作完整申报属违法，可导致货物被扣押、罚款和/或监禁。ED卡页面只涉及入境：页面上没有离开多米尼克时的货币申报，且表格未说明恰为 USD $10,000 时是否应选“是”。",
+            "timing_en": "On the online ED Card, submitted before travel and presented as a QR code with the passport at the port of entry.",
+            "timing_zh": "随在线ED卡于出行前提交，抵达口岸时凭二维码与护照出示。",
+            "fee": {
+              "amount": 0,
+              "currency": "XCD",
+              "note": "政府公告明示：完成在线ED表不收取任何费用。"
+            },
+            "source_ids": [
+              "DM-fee-notice",
+              "DM-visitor-cash-item",
+              "DM-visitor-certify",
+              "DM-resident-cash-item"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "線上ED卡中的現金及貨幣工具問項（超過 USD $10,000 或等值，入境）",
+            "applicability_zh_hant": "適用於所有抵達多米尼克的旅客。線上移民與海關申報ED卡的兩個分支（非居民/訪客與居民/返國國民）均設有海關問項“(e) 我（我們）攜帶的貨幣或貨幣工具超過（USD $10,000）或等值”，須在海關部分同一次提交中選“是”或“否”。旅客須聲明所填內容真實、正確、完整；表格警告，未作完整申報屬違法，可導致貨物被扣押、罰款和/或監禁。ED卡頁面只涉及入境：頁面上沒有離開多米尼克時的貨幣申報，且表格未說明恰為 USD $10,000 時是否應選“是”。",
+            "timing_zh_hant": "隨線上ED卡於出行前提交，抵達口岸時憑 QR Code 與護照出示。"
           }
         ],
         "sources": [
@@ -7680,13 +8284,19 @@ export default {
             "url": "https://customs.gov.dm/customs-procedures/information-for-travellers",
             "title": "Information for Travellers — Dominica Customs and Excise Division",
             "publisher": "Dominica Customs and Excise Division (customs.gov.dm)"
+          },
+          {
+            "id": "DM-resident-cash-item",
+            "url": "https://edcard.dominica.gov.dm/EDCard_arr/Nationals",
+            "title": "Online Immigration and Customs Declaration ED Card, Resident/Returning National form — Government of the Commonwealth of Dominica",
+            "publisher": "Government of the Commonwealth of Dominica"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
-          "open_questions": 2
+          "open_questions": 3
         }
       },
       {
@@ -7921,7 +8531,7 @@ export default {
       {
         "jurisdiction_id": "GD",
         "review_status": "partial",
-        "researched_at": "2026-09-28",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "GD-arrival-customs-declaration",
@@ -8041,7 +8651,7 @@ export default {
           "total_procedures": 1,
           "published_procedures": 1,
           "withheld_procedures": 0,
-          "open_questions": 2
+          "open_questions": 3
         }
       },
       {
@@ -8123,7 +8733,7 @@ export default {
       {
         "jurisdiction_id": "HT",
         "review_status": "partial",
-        "researched_at": "2026-10-13",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "HT-ikat-entry-exit-form",
@@ -8164,6 +8774,31 @@ export default {
             "name_zh_hant": "iKAT——海地電子出入境表（數字登離卡）",
             "applicability_zh_hant": "範圍：海地移民與出入境管理局（Direction de l’Immigration et de l’Émigration, DIE）的合併式電子出入境表 iKAT。表單內容：iKat 是讓旅客提前——抵離前 72 小時——提供資訊的工具，以加快各入境點手續，包括機場、海港與陸路邊境站。表單包含多個欄目：個人資訊、旅行詳情、航班或陸路交通資訊及海關資訊；旅客須以精確且真實的資訊填寫表單全部欄目。該單一表格替代現行索取的各表：個人資訊、旅行資訊、海關申報表及旅客宣誓健康申報（déclaration sanitaire sur l’honneur）。每人一表：舉家出行須為每位家庭成員各填一份表。通過檢查點時，衛生與海關當局將向旅客查驗 QR 碼。DIE 官頁提供官方線上填表門戶（品牌 iKAT (MICT/DIE)，delidoc.gouv.ht/ikat/）。部署進展：DIE 2026 年 3 月 13 日發佈宣佈 IKAT 項目營運階段——2026 年 3 月 12 日（星期四）於 Cap-Haïtien，DIE 啟動 IKAT 的“opérationnalisation”（運行化）：新的數字登離卡，旅客可最遲於航班前 72 小時線上填寫登離表，漸進替換沿用至今的傳統實體卡，依據 2025 年 12 月 31 日創建該數字卡的法令；DIE 表示將繼續務實努力，使該裝置在全國所有出入境口岸落實生效——此為宣示目標，非已完成全國部署；當前哪些檢查站已啟用未有列明，且 DIE FAQ 本身仍把該要求等同於現行紙質表、須在通過各檢查點前填寫。更早的海地政府公告（2025 年 12 月 9 日）記載：iKat 在總理 Alix Didier Fils-Aimé 領導下與海地統計資訊學院（IHSI）、海關總署（DGD）及公共衛生與人口部（MSPP）協作開發，使移徙、海關與衛生資料的採集現代化，並載明所有旅客此後須在出行前 72 小時填寫數字登離表，無論陸路、空路或海路；2026 年 3 月的後件表明部署實為漸進，故不得推斷每個入境口岸均已運行 iKAT。時窗——72/48 小時並存：DIE 主文稱資訊於抵離前 72 小時提供，兩份官方公告亦均為 72 小時；同一 DIE 頁面的 FAQ 又警告每位乘客獲告知必須提前 48 小時填表，未填者須在通過各檢查點前補填、將使行程複雜化。兩個窗口均如實轉述，不裁斷唯一權威窗口。海關與額度背景——非獨立提交：iKAT 的海關資訊欄替代紙質海關申報，海地海關總署（AGD）的免稅（franchise）規則僅作為該欄背景、不構成旅客獨立程序：無論採用何種運輸方式，對旅客個人合理所需（新舊均可）的衣物、貼身內衣與盥洗用品給予免稅，但排除數量達到商業進口性質應予認定的全部貨物；非隨行行李須憑運輸單據（connaissement 提單、airwaybill 空運單、lettre de transport 運單）辦理並因此列入運輸工具艙單；免稅延伸至“pacotille”雜項小物件（雖新亦可），總值不超過 2,000.00 至 2,500.00 古德（該頁自載雙數字區間含混，不作為精確現行門檻）、菸草/雪茄/捲菸合計不超過 1 公斤及 0.75 升裝烈酒兩瓶；僅適用於十六歲以上旅客，運輸工具機組人員除外；遷居轉移所用舊物免一切稅費；免稅不及於機動車（按《進口稅則》處理）、食品儲備或其他具商業性質的存貨；臨時停留旅客可臨時免稅（免入境環節應徵稅費）進口專供自用、隨身攜帶的物品，實施細則由經濟財政部長令（arrêtés）規定。現金門檻：官方文本未載明海地的跨境現金申報門檻，故不列任何數額。費用：官方文本未載明 iKAT 的任何費用，不列費用數額。",
             "timing_zh_hant": "官方所載提前填表窗口：DIE 主文——抵離前 72 小時提供資訊；DIE 2026 年 3 月 13 日公告——最遲航班前 72 小時線上填寫；政府 2025 年 12 月 9 日公告——出行前 72 小時。同頁 FAQ 衝突：每位乘客被警告必須提前 48 小時填表，否則須在通過各檢查點前補填、將使行程複雜化；如同現行紙質表，須在通過各檢查點前填寫。上線節奏：2026 年 3 月 12 日（星期四）於 Cap-Haïtien 運行性啟動；全國替換實體卡為漸進，未給出其他口岸日期。檢查點處由衛生與海關當局查驗 QR 碼。"
+          },
+          {
+            "id": "HT-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Cash declaration on entering or leaving Haiti (Customs Code 2023, Article 62; amount set by the Banque de la République d'Haïti)",
+            "name_zh": "进出海地的现金申报（2023年《海关法典》第62条；金额由海地共和国银行规定）",
+            "agency": "Administration Générale des Douanes (AGD), Haiti",
+            "official_url": "https://www.douane.gouv.ht/code-douanier/",
+            "channel": "conditional",
+            "applicability_en": "Applies to every person entering or leaving Haiti. Under Article 62(1)(c) of the 2023 Customs Code (Décret portant Code des Douanes, Le Moniteur, Spécial No. 11, 21 March 2023), a person entering or leaving Haiti is required, at entry or exit, to complete a cash declaration for an amount equal to or greater than the regulatory amount fixed by the Banque de la République d'Haïti (BRH), and to hand it to the customs office at the point of entry or exit. The Code states that Customs forwards this information to the Unité Centrale de Renseignements Financiers (UCREF) within five days, and that the traveller cannot be held responsible if the form, or the office that issues or collects it, is unavailable. Customs seizes the whole amount of undeclared cash in case of non-declaration or false declaration, or on suspicion of money laundering or terrorist financing. The Code does not state the BRH amount, the name of the form, or whether the declaration is made on paper or in the electronic iKAT entry and exit form. The Code's wording is 'égal ou supérieur' (equal to or greater than) the BRH amount, so an amount exactly equal to it is included.",
+            "applicability_zh": "适用于所有进入或离开海地的人员。依据2023年《海关法典》（Décret portant Code des Douanes，《官方公报》Le Moniteur 特刊第11号，2023年3月21日）第62条第1款c项，进入或离开海地的人员在入境或出境时，须就等于或超过海地共和国银行（BRH）规定金额的现金填写申报，并交给入境或出境地点的海关办事处。法典规定，海关须在五日内将这些信息转交金融情报中心（UCREF）；表格或负责发放、收集表格的机构无法提供时，旅客不承担责任。未申报或虚假申报，或涉嫌洗钱或恐怖融资的，海关没收全部未申报现金。法典未写明 BRH 规定的金额、表格名称，也未写明申报是用纸质表格还是在电子 iKAT 出入境表中完成。法典措辞为“égal ou supérieur”（等于或超过）BRH 金额，因此恰等于该金额者包括在内。",
+            "timing_en": "At the moment of entering or leaving Haiti, handed to the customs office at the point of entry or exit.",
+            "timing_zh": "进入或离开海地时，交给入境或出境地点的海关办事处。",
+            "fee": "unknown",
+            "source_ids": [
+              "HT-cash-code2023-persons",
+              "HT-cash-code2023-amount",
+              "HT-cash-code2023-office",
+              "HT-cash-code2023-seizure",
+              "HT-cash-code2023-unavailable"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "進出海地的現金申報（2023年《海關法典》第62條；金額由海地共和國銀行規定）",
+            "applicability_zh_hant": "適用於所有進入或離開海地的人員。依據2023年《海關法典》（Décret portant Code des Douanes，《官方公報》Le Moniteur 特刊第11號，2023年3月21日）第62條第1款c項，進入或離開海地的人員在入境或出境時，須就等於或超過海地共和國銀行（BRH）規定金額的現金填寫申報，並交給入境或出境地點的海關辦事處。法典規定，海關須在五日內將這些資訊轉交金融情報中心（UCREF）；表格或負責發放、收集表格的機構無法提供時，旅客不承擔責任。未申報或虛假申報，或涉嫌洗錢或恐怖融資的，海關沒收全部未申報現金。法典未寫明 BRH 規定的金額、表格名稱，也未寫明申報是用紙質表格還是在電子 iKAT 出入境表中完成。法典措辭為“égal ou supérieur”（等於或超過）BRH 金額，因此恰等於該金額者包括在內。",
+            "timing_zh_hant": "進入或離開海地時，交給入境或出境地點的海關辦事處。"
           }
         ],
         "sources": [
@@ -8286,13 +8921,43 @@ export default {
             "url": "https://communication.gouv.ht/communiques/lancement-et-presentation-des-avancees-du-projet-ikat/",
             "title": "Lancement et présentation des avancées du projet iKAT — communiqué of 9 December 2025 — Government of Haïti",
             "publisher": "Government of Haïti communications portal — communication.gouv.ht"
+          },
+          {
+            "id": "HT-cash-code2023-persons",
+            "url": "https://www.douane.gouv.ht/wp-content/uploads/2025/01/decret_portant_code_des_douanes-2023.pdf",
+            "title": "Décret portant Code des Douanes, Le Moniteur Spécial N° 11 du 21 mars 2023 — Administration Générale des Douanes d'Haïti",
+            "publisher": "Administration Générale des Douanes (AGD), Haïti (Journal officiel Le Moniteur)"
+          },
+          {
+            "id": "HT-cash-code2023-amount",
+            "url": "https://www.douane.gouv.ht/wp-content/uploads/2025/01/decret_portant_code_des_douanes-2023.pdf",
+            "title": "Décret portant Code des Douanes, Le Moniteur Spécial N° 11 du 21 mars 2023 — Administration Générale des Douanes d'Haïti",
+            "publisher": "Administration Générale des Douanes (AGD), Haïti (Journal officiel Le Moniteur)"
+          },
+          {
+            "id": "HT-cash-code2023-office",
+            "url": "https://www.douane.gouv.ht/wp-content/uploads/2025/01/decret_portant_code_des_douanes-2023.pdf",
+            "title": "Décret portant Code des Douanes, Le Moniteur Spécial N° 11 du 21 mars 2023 — Administration Générale des Douanes d'Haïti",
+            "publisher": "Administration Générale des Douanes (AGD), Haïti (Journal officiel Le Moniteur)"
+          },
+          {
+            "id": "HT-cash-code2023-seizure",
+            "url": "https://www.douane.gouv.ht/wp-content/uploads/2025/01/decret_portant_code_des_douanes-2023.pdf",
+            "title": "Décret portant Code des Douanes, Le Moniteur Spécial N° 11 du 21 mars 2023 — Administration Générale des Douanes d'Haïti",
+            "publisher": "Administration Générale des Douanes (AGD), Haïti (Journal officiel Le Moniteur)"
+          },
+          {
+            "id": "HT-cash-code2023-unavailable",
+            "url": "https://www.douane.gouv.ht/wp-content/uploads/2025/01/decret_portant_code_des_douanes-2023.pdf",
+            "title": "Décret portant Code des Douanes, Le Moniteur Spécial N° 11 du 21 mars 2023 — Administration Générale des Douanes d'Haïti",
+            "publisher": "Administration Générale des Douanes (AGD), Haïti (Journal officiel Le Moniteur)"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
-          "open_questions": 2
+          "open_questions": 3
         }
       },
       {
@@ -8747,7 +9412,7 @@ export default {
       {
         "jurisdiction_id": "KN",
         "review_status": "partial",
-        "researched_at": "2026-09-28",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "KN-ed-form",
@@ -8836,7 +9501,7 @@ export default {
           "total_procedures": 2,
           "published_procedures": 2,
           "withheld_procedures": 0,
-          "open_questions": 2
+          "open_questions": 3
         }
       },
       {
@@ -9128,7 +9793,7 @@ export default {
       {
         "jurisdiction_id": "TT",
         "review_status": "partial",
-        "researched_at": "2026-09-28",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "TT-arrival-c15",
@@ -9173,6 +9838,30 @@ export default {
             "name_zh_hant": "非隨行行李申報表（C88）申報",
             "applicability_zh_hant": "適用於非隨行行李：海關告示點名非隨行行李申報表（C88）——與旅客本人的C15為不同表格——用於須申報之物（家用品、含肉/果蔬之食品、禮品、酒、煙、商用物）。告示未另載C88的資格條件、數字門檻或額度；其\"非隨行行李\"指向僅來自表名本身。機場管理局頁面僅在機場範圍重複同一C15/C88表述。",
             "timing_zh_hant": "官方未單列C88的提交時間窗或期限，其指向僅來自表名所載之非隨行行李。"
+          },
+          {
+            "id": "TT-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Declaration of cash, currency and monetary instruments over US$5,000 or TT$20,000 to a Customs Officer (arriving and departing)",
+            "name_zh": "向海关人员申报携带超过 5,000 美元或 20,000 特元的现金、货币及货币工具（入境和离境）",
+            "agency": "Customs and Excise Division, Ministry of Finance, Trinidad and Tobago",
+            "official_url": "http://www.customs.gov.tt/travelling/customs-and-excise-brochures",
+            "channel": "conditional",
+            "applicability_en": "Applies to all arriving and departing passengers. The Customs and Excise Division's 'Declaration of Currency or Monetary Instruments' notice advises that passengers are required to declare to a Customs Officer on duty at the airport or sea port whether they are carrying cash, currency or monetary instruments in excess of US$5,000 or its equivalent in any currency, or TT$20,000. The notice defines bearer negotiable instruments as including travellers' cheques, promissory notes, bills of exchange and bank drafts. It warns that a false declaration of the amount of cash or the value of monetary instruments being carried may result in severe penalties. The notice is worded 'in excess of' the amounts and does not address an amount exactly equal to them. It names no form for this declaration and does not say whether the question is answered on Form C15.",
+            "applicability_zh": "适用于所有入境和离境旅客。海关和消费税司的《货币或货币工具申报》通告提醒：旅客须向机场或海港值班的海关人员申报，是否携带超过 5,000 美元（或任何货币的等值）或 20,000 特立尼达和多巴哥元（TT$）的现金、货币或货币工具。通告称无记名可转让票据包括旅行支票、本票、汇票和银行汇票。通告警告，就所携现金金额或货币工具价值作虚假申报，可能受到严厉处罚。通告的措辞为“超过”（in excess of）上述金额，未涉及恰等于该金额的情形。通告未指明此项申报所用表格，也未说明是否在 C15 表上作答。",
+            "timing_en": "On arrival and on departure, at the airport or sea port, to the Customs Officer on duty.",
+            "timing_zh": "入境和离境时，在机场或海港向值班海关人员申报。",
+            "fee": "unknown",
+            "source_ids": [
+              "TT-cash-notice-declare",
+              "TT-cash-notice-threshold",
+              "TT-cash-notice-bni",
+              "TT-cash-notice-penalty"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "向海關人員申報攜帶超過 5,000 美元或 20,000 特元的現金、貨幣及貨幣工具（入境和離境）",
+            "applicability_zh_hant": "適用於所有入境和離境旅客。海關和消費稅司的《貨幣或貨幣工具申報》通告提醒：旅客須向機場或海港值班的海關人員申報，是否攜帶超過 5,000 美元（或任何貨幣的等值）或 20,000 特立尼達和多巴哥元（TT$）的現金、貨幣或貨幣工具。通告稱無記名可轉讓票據包括旅行支票、本票、匯票和銀行匯票。通告警告，就所攜現金金額或貨幣工具價值作虛假申報，可能受到嚴厲處罰。通告的措辭為“超過”（in excess of）上述金額，未涉及恰等於該金額的情形。通告未指明此項申報所用表格，也未說明是否在 C15 表上作答。",
+            "timing_zh_hant": "入境和離境時，在機場或海港向值班海關人員申報。"
           }
         ],
         "sources": [
@@ -9187,11 +9876,35 @@ export default {
             "url": "https://tntairports.com/travel/when-you-arrive/customs/",
             "title": "Customs - When You Arrive (Airports Authority Trinidad and Tobago)",
             "publisher": "Airports Authority Trinidad and Tobago (government statutory airport authority; airport scope only)"
+          },
+          {
+            "id": "TT-cash-notice-declare",
+            "url": "http://www.customs.gov.tt/content/Travellers%20Advisory%20-%20Declaration%20of%20Currency.pdf",
+            "title": "Declaration of Currency or Monetary Instruments, Travellers Advisory — Customs and Excise Division, Ministry of Finance, Trinidad and Tobago",
+            "publisher": "Customs and Excise Division, Ministry of Finance, Trinidad and Tobago"
+          },
+          {
+            "id": "TT-cash-notice-threshold",
+            "url": "http://www.customs.gov.tt/content/Travellers%20Advisory%20-%20Declaration%20of%20Currency.pdf",
+            "title": "Declaration of Currency or Monetary Instruments, Travellers Advisory — Customs and Excise Division, Ministry of Finance, Trinidad and Tobago",
+            "publisher": "Customs and Excise Division, Ministry of Finance, Trinidad and Tobago"
+          },
+          {
+            "id": "TT-cash-notice-bni",
+            "url": "http://www.customs.gov.tt/content/Travellers%20Advisory%20-%20Declaration%20of%20Currency.pdf",
+            "title": "Declaration of Currency or Monetary Instruments, Travellers Advisory — Customs and Excise Division, Ministry of Finance, Trinidad and Tobago",
+            "publisher": "Customs and Excise Division, Ministry of Finance, Trinidad and Tobago"
+          },
+          {
+            "id": "TT-cash-notice-penalty",
+            "url": "http://www.customs.gov.tt/content/Travellers%20Advisory%20-%20Declaration%20of%20Currency.pdf",
+            "title": "Declaration of Currency or Monetary Instruments, Travellers Advisory — Customs and Excise Division, Ministry of Finance, Trinidad and Tobago",
+            "publisher": "Customs and Excise Division, Ministry of Finance, Trinidad and Tobago"
           }
         ],
         "coverage": {
-          "total_procedures": 2,
-          "published_procedures": 2,
+          "total_procedures": 3,
+          "published_procedures": 3,
           "withheld_procedures": 0,
           "open_questions": 3
         }
@@ -9299,7 +10012,7 @@ export default {
       {
         "jurisdiction_id": "VI",
         "review_status": "partial",
-        "researched_at": "2026-09-28",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "VI-us-arrival-declaration",
@@ -9332,6 +10045,33 @@ export default {
             "name_zh_hant": "自美屬維爾京群島入境美國（美國海關領土：本土各州/哥倫比亞特區/波多黎各）時向CBP關員申報攜帶物品",
             "applicability_zh_hant": "範圍：由美屬維爾京群島（USVI）入境美國時的聯邦申報義務，不含抵達USVI本身的本地手續。19 CFR 101.1 界定“美國海關領土”僅含各州、哥倫比亞特區和波多黎各；維爾京群島海關港口雖隸屬財政部長管轄，但另具自身海關法（48 U.S.C. 1406(i)），在美國海關領土之外，且非上述規章意義下的“ports of entry”。48 U.S.C. 1406i 規定財政部長指定USVI各口岸與子口岸並管理當地海關法；除國會外不得在USVI新徵出口稅。申報義務：依19 CFR 148.11，任何個人帶入美國的全部物品須在入美第一入境口岸（port of first arrival in the United States）向CBP關員申報，或在配有CBP關員的赴美運輸工具上、或在美國關員駐外的預檢辦事處申報。故該申報義務適用於由USVI前往美國本土各州、哥倫比亞特區或波多黎各的旅客，不得概括為所有抵達USVI者。申報形式：依19 CFR 148.12，返程居民與非居民抵達美國僅在規定條件下可口頭申報——返程居民須其在境外取得的全部隨身物品（含境外改動及應稅修理）按取得國公平零售價合計不超過適用上限：直接或間接自USVI抵達（如同自美屬薩摩亞、關島、北馬里亞納群島聯邦抵達）者為1,600美元，其中在上述地點以外取得的部分不得超過800美元，且無隨身物品保稅轉運、亦非為他人賬戶或轉售進口；非居民須其須申報的全部物品屬個人免稅或不超過200美元合計價值的行政小額免稅（19 U.S.C. 1321(a)(2)(B)）。任何口岸仍可一般性或就特定交通類型要求書面申報；即使允許口頭申報，也可能要求填寫CBP Form 6059-B的識別資訊。依19 CFR 148.13，凡口頭申報未按§ 148.12被接受，抵達美國者的申報須以Customs Form 6059-B書面作出；須列明抵達時持有的全部境外取得物品（逐項填報實付價格或取得國公平零售價，並按列明豁免規則執行），每份書面申報須在查驗行李的海關關員面前確認。未覆蓋：入境USVI本身的本地入境表、免稅額度與現金申報規則。承運人/通用航空預檢與農檢不屬於旅客另行提交的獨立申報。1,600美元是19 CFR 148.12對自USVI抵達返程居民口頭申報的價值上限，並非一般免稅額度；19 CFR 148.33–148.35的免稅額機制（30天使用限制、家庭合併、48小時規則）此處不涉及。",
             "timing_zh_hant": "在入美第一入境口岸——或在配有CBP關員的赴美運輸工具上、或在外國的預檢辦事處——辦理。需書面申報時（口頭申報未獲接受，或該口岸要求書面），即場填寫Customs Form 6059-B列明全部境外取得物品，並在查驗行李的海關關員面前確認。"
+          },
+          {
+            "id": "VI-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "FinCEN Form 105 report of currency or monetary instruments over US$10,000 carried into or out of the United States (including the U.S. Virgin Islands)",
+            "name_zh": "携带超过 10,000 美元的货币或货币工具进出美国（含美属维尔京群岛）的 FinCEN 105 表报告",
+            "agency": "U.S. Customs and Border Protection / FinCEN (U.S. Department of the Treasury)",
+            "official_url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-C/section-1010.340",
+            "channel": "conditional",
+            "applicability_en": "Federal rule, 31 CFR 1010.340. Anyone who physically transports, mails or ships currency or other monetary instruments in an aggregate amount exceeding $10,000 at one time from the United States to any place outside the United States, or into the United States from any place outside it, must file a report. For this rule 'United States' includes the Territories and Insular Possessions, and the U.S. Virgin Islands are listed among them, so the rule applies to a traveller moving more than $10,000 between the U.S. Virgin Islands and a place outside the United States. A traveller carrying the currency or instruments files FinCEN Form 105 with the Customs officer in charge at the port of entry or departure, at the time of entry into or departure from the United States. A person who receives more than $10,000 in the United States that was sent from abroad without a report must also file one, within 15 days of receipt. The rule does not apply to reports by Federal Reserve banks, banks and securities brokers in some cases, and common carriers of passengers for currency in their passengers' possession. A transfer of funds through normal banking channels that involves no physical transport is not reportable. The regulation's threshold is 'exceeding $10,000'.",
+            "applicability_zh": "联邦规定，31 CFR 1010.340。任何人一次性亲自携带、邮寄或托运合计超过 $10,000 的货币或其他货币工具，从美国运往美国境外任何地点，或从境外运入美国，须提交报告。就该规定而言，“美国”包括各属地和海外领地，美属维尔京群岛列入其中，因此该规定适用于在美属维尔京群岛与美国境外之间携带超过 $10,000 的旅客。随身携带货币或工具的旅客，须在入境或出境美国时，向入境或离境口岸的主管海关官员提交 FinCEN 105 表。在美国境内收到来自境外的超过 $10,000 的货币或工具、且未曾有人提交报告的，收款人须在收款后 15 日内提交。联邦储备银行、部分情形下的银行和证券经纪商，以及旅客现金的客运承运人，不在报告义务之列。通过正常银行渠道转账而不涉及实物运输的，无须报告。条文的门槛为“超过 $10,000”。",
+            "timing_en": "At the time of entry into or departure from the United States, with the Customs officer in charge at the port.",
+            "timing_zh": "入境或出境美国时，向口岸主管海关官员提交。",
+            "fee": "unknown",
+            "source_ids": [
+              "VI-cash-31cfr-duty",
+              "VI-cash-31cfr-duty-inbound",
+              "VI-cash-31cfr-territories",
+              "VI-cash-31cfr-usdef",
+              "VI-cash-31cfr-timing",
+              "VI-cash-31cfr-where",
+              "VI-cash-form105-travelers"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "攜帶超過 10,000 美元的貨幣或貨幣工具進出美國（含美屬維爾京群島）的 FinCEN 105 表報告",
+            "applicability_zh_hant": "聯邦規定，31 CFR 1010.340。任何人一次性親自攜帶、郵寄或託運合計超過 $10,000 的貨幣或其他貨幣工具，從美國運往美國境外任何地點，或從境外運入美國，須提交報告。就該規定而言，“美國”包括各屬地和海外領地，美屬維爾京群島列入其中，因此該規定適用於在美屬維爾京群島與美國境外之間攜帶超過 $10,000 的旅客。隨身攜帶貨幣或工具的旅客，須在入境或出境美國時，向入境或離境口岸的主管海關官員提交 FinCEN 105 表。在美國境內收到來自境外的超過 $10,000 的貨幣或工具、且未曾有人提交報告的，收款人須在收款後 15 日內提交。聯邦儲備銀行、部分情形下的銀行和證券經紀商，以及旅客現金的客運承運人，不在報告義務之列。通過正常銀行渠道轉賬而不涉及實物運輸的，無須報告。條文的門檻為“超過 $10,000”。",
+            "timing_zh_hant": "入境或出境美國時，向口岸主管海關官員提交。"
           }
         ],
         "sources": [
@@ -9406,13 +10146,55 @@ export default {
             "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title48-section1406i&num=0&edition=prelim",
             "title": "48 U.S.C. 1406i — Taxes and fees; ports of entry in the Virgin Islands (U.S. Code, uscode.house.gov; page states text contains laws in effect on September 26, 2026)",
             "publisher": "Office of the Law Revision Counsel, U.S. House of Representatives"
+          },
+          {
+            "id": "VI-cash-31cfr-duty",
+            "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-10-09/title-31.xml?part=1010&section=1010.340",
+            "title": "31 CFR 1010.340 Reports of transportation of currency or monetary instruments — U.S. Department of the Treasury",
+            "publisher": "U.S. Department of the Treasury (31 CFR, eCFR)"
+          },
+          {
+            "id": "VI-cash-31cfr-duty-inbound",
+            "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-10-09/title-31.xml?part=1010&section=1010.340",
+            "title": "31 CFR 1010.340 Reports of transportation of currency or monetary instruments — U.S. Department of the Treasury",
+            "publisher": "U.S. Department of the Treasury (31 CFR, eCFR)"
+          },
+          {
+            "id": "VI-cash-31cfr-territories",
+            "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-10-09/title-31.xml?part=1010&section=1010.100",
+            "title": "31 CFR 1010.100 General definitions — U.S. Department of the Treasury",
+            "publisher": "U.S. Department of the Treasury (31 CFR, eCFR)"
+          },
+          {
+            "id": "VI-cash-31cfr-usdef",
+            "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-10-09/title-31.xml?part=1010&section=1010.100",
+            "title": "31 CFR 1010.100 General definitions — U.S. Department of the Treasury",
+            "publisher": "U.S. Department of the Treasury (31 CFR, eCFR)"
+          },
+          {
+            "id": "VI-cash-31cfr-timing",
+            "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-10-09/title-31.xml?part=1010&section=1010.306",
+            "title": "31 CFR 1010.306 Filing of reports — U.S. Department of the Treasury",
+            "publisher": "U.S. Department of the Treasury (31 CFR, eCFR)"
+          },
+          {
+            "id": "VI-cash-31cfr-where",
+            "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-10-09/title-31.xml?part=1010&section=1010.306",
+            "title": "31 CFR 1010.306 Filing of reports — U.S. Department of the Treasury",
+            "publisher": "U.S. Department of the Treasury (31 CFR, eCFR)"
+          },
+          {
+            "id": "VI-cash-form105-travelers",
+            "url": "https://www.fincen.gov/system/files/shared/fin105_cmir.pdf",
+            "title": "FinCEN Form 105, Report of International Transportation of Currency or Monetary Instruments, with instructions — FinCEN",
+            "publisher": "Financial Crimes Enforcement Network (FinCEN), U.S. Department of the Treasury"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
-          "open_questions": 2
+          "open_questions": 3
         }
       },
       {
@@ -9523,6 +10305,30 @@ export default {
             "name_zh_hant": "哥斯達黎加海關申報表（DGA-372-2009 號決議）",
             "applicability_zh_hant": "以下描述為 2026-09-10 抓取到的 DGA-372-2009 號決議文本內容；其後未再讀到任何現行官方原文，故該決議現行效力與當下旅客提交流程尚無現行官方確認。所抓內容：攜帶“1 萬（含）以上中美洲比索”現金或 5 萬（含）以上比索證券的旅客須申報（第 8204 號法）；未申報現金被扣存 ICD 賬戶。申報表由承運人抵達前發放（DGA-072-2005 號決議）。同行家庭可合併一份申報。免稅“bonificación”每人 1–500 比索，條件為離境滿 72 小時（Paso Canoas 口岸 48 小時）且 6 個月內未使用。非隨行行李限到達前 3 個月/後 3 個月。金額一律保留原文“中美洲比索”單位，來源文本未做美元換算，本描述也不斷言換算值。",
             "timing_zh_hant": "據 2026-09-10 抓取文本：承運人抵達前發放紙質表；免稅額度須離境滿 72 小時（Paso Canoas 48 小時）。"
+          },
+          {
+            "id": "cr-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Cash and securities on the Declaración de Aduana (arrival, DGA-372-2009)",
+            "name_zh": "入境现金与有价证券申报（Declaración de Aduana，DGA-372-2009）",
+            "agency": "Dirección General de Aduanas, Ministerio de Hacienda (Costa Rica)",
+            "official_url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=66898&param2=79058&param3=3&param4=2",
+            "channel": "paper",
+            "applicability_en": "Travellers entering Costa Rica who carry cash of ten thousand or more Central American pesos (diez mil o más pesos centroamericanos), or the equivalent in national currency, must declare it on the paper \"Declaración de Aduana\". Securities (títulos valores) worth fifty thousand or more Central American pesos, or the equivalent, must be declared the same way. The text states the amounts in Central American pesos and gives no conversion to other currencies. Hand the form and your passport to the customs officer in the baggage area. Cash or securities at or above these amounts that were not declared are recorded in a report and retained by customs for transfer to the Instituto Costarricense sobre Drogas (ICD). This resolution covers arrival only; its text does not set an exit procedure.",
+            "applicability_zh": "入境哥斯达黎加的旅客，携带现金达到或超过“一万中美洲比索”（diez mil o más pesos centroamericanos）或等值本币的，须在纸质“海关申报表”（Declaración de Aduana）上申报；有价证券（títulos valores）价值达到或超过五万中美洲比索或等值的，同样须申报。条文金额以中美洲比索表示，未给出向其他货币的换算。申报表连同护照在行李区交给海关官员。达到上述金额而未申报的现金或有价证券，海关会制作记录并扣留，转交哥斯达黎加禁毒机构（Instituto Costarricense sobre Drogas，ICD）。该决议只规定入境程序，条文未设出境程序。",
+            "timing_en": "On arrival: the carrier hands out the form before landing; if you do not receive it, ask for it at the customs office of entry. Complete and sign it before presenting yourself to the customs officer.",
+            "timing_zh": "抵达时：承运人在落地前发放表格；未拿到的，到入境海关办公室索取。在向海关官员出示前填写并签名。",
+            "fee": "unknown",
+            "source_ids": [
+              "cr-dga372-cash-threshold-2026-10",
+              "cr-dga372-cash-declare-2026-10",
+              "cr-dga372-form-2026-10",
+              "cr-dga372-retention-2026-10"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "入境現金與有價證券申報（Declaración de Aduana，DGA-372-2009）",
+            "applicability_zh_hant": "入境哥斯達黎加的旅客，攜帶現金達到或超過“一萬中美洲比索”（diez mil o más pesos centroamericanos）或等值本幣的，須在紙質“海關申報表”（Declaración de Aduana）上申報；有價證券（títulos valores）價值達到或超過五萬中美洲比索或等值的，同樣須申報。條文金額以中美洲比索表示，未給出向其他貨幣的換算。申報表連同護照在行李區交給海關官員。達到上述金額而未申報的現金或有價證券，海關會製作記錄並扣留，轉交哥斯達黎加禁毒機構（Instituto Costarricense sobre Drogas，ICD）。該決議只規定入境程序，條文未設出境程序。",
+            "timing_zh_hant": "抵達時：承運人在落地前發放表格；未拿到的，到入境海關辦公室索取。在向海關官員出示前填寫並簽名。"
           }
         ],
         "sources": [
@@ -9531,13 +10337,37 @@ export default {
             "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=66898&param2=79058&param3=3&param4=2",
             "title": "Resolución DGA-372-2009 — Ingreso de Viajeros y sus Mercancías",
             "publisher": "PGR Costa Rica (Sinalevi)"
+          },
+          {
+            "id": "cr-dga372-cash-threshold-2026-10",
+            "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=66898&param2=79058&param3=3&param4=2",
+            "title": "Resolución DGA-372-2009, Procedimiento Ingreso de Viajeros y sus Mercancías — Dirección General de Aduanas",
+            "publisher": "Dirección General de Aduanas (texto en Sinalevi, Procuraduría General de la República), Costa Rica"
+          },
+          {
+            "id": "cr-dga372-cash-declare-2026-10",
+            "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=66898&param2=79058&param3=3&param4=2",
+            "title": "Resolución DGA-372-2009, Procedimiento Ingreso de Viajeros y sus Mercancías — Dirección General de Aduanas",
+            "publisher": "Dirección General de Aduanas (texto en Sinalevi, Procuraduría General de la República), Costa Rica"
+          },
+          {
+            "id": "cr-dga372-form-2026-10",
+            "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=66898&param2=79058&param3=3&param4=2",
+            "title": "Resolución DGA-372-2009, Procedimiento Ingreso de Viajeros y sus Mercancías — Dirección General de Aduanas",
+            "publisher": "Dirección General de Aduanas (texto en Sinalevi, Procuraduría General de la República), Costa Rica"
+          },
+          {
+            "id": "cr-dga372-retention-2026-10",
+            "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=66898&param2=79058&param3=3&param4=2",
+            "title": "Resolución DGA-372-2009, Procedimiento Ingreso de Viajeros y sus Mercancías — Dirección General de Aduanas",
+            "publisher": "Dirección General de Aduanas (texto en Sinalevi, Procuraduría General de la República), Costa Rica"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
-          "open_questions": 4
+          "open_questions": 5
         }
       },
       {
@@ -9662,6 +10492,35 @@ export default {
             "name_zh_hant": "中美洲區域旅客宣誓申報（DJRV）",
             "applicability_zh_hant": "向 SAT 電子填報的區域旅客宣誓申報。SAT 海關 FAQ 明示：凡經空路或海路出入危地馬拉的旅客，無論本國人或外國旅客均須填寫；SAT 2025 指南第3頁亦寫所有使用空中或海上交通方式的旅客在入出境時應填。一份申報可覆蓋配偶及未成年子女，成年子女須各自另填（海關 FAQ；指南第13頁）。可在出行或抵達前按 SAT 指引用任意聯網設備線上填報，旅客或戶主須保留申報號/QR Code 以備向當局出示（指南第10頁）。紙質表僅作為 SAT 資訊系統不可用時的應急渠道（海關 FAQ）。填報本身免費：SAT 2025 指南第3頁明示電子 DJRV 填報“sin costo”（無費用），如有超出行李的貨物，相應稅款視情況另計（指南第11頁）。現行官方正文僅涉及空路與海路入出境，未提及陸路口岸是否同樣適用；經陸路出入境的旅客出行前宜向 SAT 確認。",
             "timing_zh_hant": "電子表全天候（24 小時、365 天）可填，須在航班抵達前完成（SAT DJRV 專頁；指南第10頁）；僅在下填報的旅行日期當日有效，否則須更新旅行日期重新填報（指南第10頁；海關 FAQ）。提前時限在現行官方資料中相互衝突：2025 指南第3頁寫最多提前 3 天、第13頁寫“提前三天”，而 SAT 現行海關 FAQ 答“15 天”（並稱航司通常提前 3 天提供航班號）。官方未給出唯一窗口：2025 指南與現行海關 FAQ 在提前天數上不一致，SAT 發佈正式勘誤前旅客宜按兩套口徑中較保守的安排。"
+          },
+          {
+            "id": "gt-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Cash and valuables of US$10,000 or more on the Regional Traveler Sworn Declaration (DJRV)",
+            "name_zh": "现金及贵重物品达 US$10,000 以上的申报（区域旅客宣誓申报 DJRV）",
+            "agency": "Superintendencia de Administración Tributaria (SAT), Guatemala",
+            "official_url": "https://portal.sat.gob.gt/portal/declaracion-jurada-regional-de-viajero/",
+            "channel": "online",
+            "applicability_en": "A traveler entering or leaving Guatemala who carries cash or monetary values, securities, objects, precious metals or a combination of these worth US$10,000.00 or more, or the equivalent, must declare them in the matching sections of the electronic Declaración Jurada Regional de Viajero (SAT resolution SAT-DSI-1049-2023, article 5). The threshold is \"igual o superior\" (equal to or above) US$10,000.00. It applies to entry and exit. SAT states that all travelers, Guatemalan or foreign, entering or leaving by air or sea must file the DJRV; the SAT texts do not say whether it also applies at land crossings. One declaration covers a family group (spouses and minor children), completed by the head of family; adult children file their own. If the electronic system is unavailable, a printed form can be used.",
+            "applicability_zh": "入境或出境危地马拉的旅客，携带现金或货币性票据、有价证券、物品、贵金属或其组合，价值达到或超过（igual o superior）US$10,000.00 或等值外币的，须在电子版“区域旅客宣誓申报”（DJRV）的相应栏目中申报（SAT 第 SAT-DSI-1049-2023 号决议第 5 条）。入境与出境均适用。SAT 说明，经空路或海路出入境的所有旅客（无论危地马拉人或外国人）都须填写 DJRV；SAT 的现行文本未说明陆路口岸是否同样适用。一份申报涵盖一个家庭组（配偶及未成年子女），由户主填写；成年子女须各自填写。电子系统不可用时可使用纸质表。",
+            "timing_en": "Complete the electronic form before travel. SAT's materials give different advance windows: the 2025 guide says up to three days before the flight, and the customs FAQ answers 15 days.",
+            "timing_zh": "出行前在线填写电子表。SAT 的材料对提前时间说法不一：2025 年指南写最多提前三天，海关常见问题答 15 天。",
+            "fee": {
+              "amount": 0,
+              "currency": "GTQ",
+              "note": "SAT guide: the electronic declaration is filled at no cost (sin costo). Duties or taxes on goods are separate."
+            },
+            "source_ids": [
+              "gt-sat-dsi-1049-art5-2026-10",
+              "gt-sat-dsi-1049-art5b-2026-10",
+              "gt-sat-faq-cash-scope-2026-10",
+              "gt-sat-faq-cash-timing-2026-10",
+              "gt-sat-guide-cash-fee-2026-10"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "現金及貴重物品達 US$10,000 以上的申報（區域旅客宣誓申報 DJRV）",
+            "applicability_zh_hant": "入境或出境危地馬拉的旅客，攜帶現金或貨幣性票據、有價證券、物品、貴金屬或其組合，價值達到或超過（igual o superior）US$10,000.00 或等值外幣的，須在電子版“區域旅客宣誓申報”（DJRV）的相應欄目中申報（SAT 第 SAT-DSI-1049-2023 號決議第 5 條）。入境與出境均適用。SAT 說明，經空路或海路出入境的所有旅客（無論危地馬拉人或外國人）都須填寫 DJRV；SAT 的現行文本未說明陸路口岸是否同樣適用。一份申報涵蓋一個家庭組（配偶及未成年子女），由戶主填寫；成年子女須各自填寫。電子系統不可用時可使用紙質表。",
+            "timing_zh_hant": "出行前線上填寫電子表。SAT 的材料對提前時間說法不一：2025 年指南寫最多提前三天，海關常見問題答 15 天。"
           }
         ],
         "sources": [
@@ -9682,11 +10541,41 @@ export default {
             "url": "https://portal.sat.gob.gt/portal/descarga/16236/documento-de-orientacion/90587/guia-declaracion-jurada-regional-de-viajero-2.pdf",
             "title": "Guía Declaración Jurada Regional de Viajero (SAT, 2025)",
             "publisher": "SAT Guatemala"
+          },
+          {
+            "id": "gt-sat-dsi-1049-art5-2026-10",
+            "url": "https://portal.sat.gob.gt/portal/descarga/1895/legislacion-aduanera/71623/resolucion-de-superintendencia-numero-sat-dsi-1049-2023-declaracion-jurada-regional-de-viajero-de-manera-electronica.pdf",
+            "title": "Resolución de Superintendencia SAT-DSI-1049-2023, Declaración Jurada Regional de Viajero de manera electrónica — SAT",
+            "publisher": "Superintendencia de Administración Tributaria (SAT), Guatemala"
+          },
+          {
+            "id": "gt-sat-dsi-1049-art5b-2026-10",
+            "url": "https://portal.sat.gob.gt/portal/descarga/1895/legislacion-aduanera/71623/resolucion-de-superintendencia-numero-sat-dsi-1049-2023-declaracion-jurada-regional-de-viajero-de-manera-electronica.pdf",
+            "title": "Resolución de Superintendencia SAT-DSI-1049-2023, Declaración Jurada Regional de Viajero de manera electrónica — SAT",
+            "publisher": "Superintendencia de Administración Tributaria (SAT), Guatemala"
+          },
+          {
+            "id": "gt-sat-faq-cash-scope-2026-10",
+            "url": "https://portal.sat.gob.gt/portal/preguntas-frecuentes/temas-aduaneros/",
+            "title": "Preguntas Frecuentes: Temas Aduaneros — SAT",
+            "publisher": "Superintendencia de Administración Tributaria (SAT), Guatemala"
+          },
+          {
+            "id": "gt-sat-faq-cash-timing-2026-10",
+            "url": "https://portal.sat.gob.gt/portal/preguntas-frecuentes/temas-aduaneros/",
+            "title": "Preguntas Frecuentes: Temas Aduaneros — SAT",
+            "publisher": "Superintendencia de Administración Tributaria (SAT), Guatemala"
+          },
+          {
+            "id": "gt-sat-guide-cash-fee-2026-10",
+            "url": "https://portal.sat.gob.gt/portal/descarga/16236/documento-de-orientacion/90587/guia-declaracion-jurada-regional-de-viajero-2.pdf",
+            "title": "Guía Declaración Jurada Regional de Viajero — SAT",
+            "publisher": "Superintendencia de Administración Tributaria (SAT), Guatemala"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
           "open_questions": 3
         }
@@ -9921,6 +10810,28 @@ export default {
             "name_zh_hant": "尼加拉瓜海關旅客申報線上系統",
             "applicability_zh_hant": "表單原文（西/英雙語）：所有出入境旅客或一家之主（戶主）均須填寫申報（TODO VIAJERO O JEFE DE FAMILIA QUE INGRESE O SALGA DEL PAÍS DEBE LLENAR UNA DECLARACIÓN / ALL TRAVELERS OR HEAD FAMILY ... MUST COMPLETE A DECLARATION），覆蓋入境（ENTRADA/ENTRY）與出境（SALIDA/EXIT）。同一次線上登記並列印的單一提交還合併承載全部申報問項：近6個月是否享受過稅費豁免；現金、有價證券、物品、貴金屬或其組合等於或超過 US$10,000.00 或等值——答“是”須填類別、幣種、證券或貴金屬類別、US$ 計價值、資金來源與去向；活體動物、植物或食品；化學品、藥品、有毒物質或殘留、武器、彈藥或爆炸物；行李以外的貨物；近30天到訪過的國家。以上均為同一提交，刻意不拆分立項。",
             "timing_zh_hant": "已由官方門戶正文（雙語）解決：僅可在出行前3天內登記資訊（“Únicamente puede registrar la información tres días antes de su viaje.” / “You can only register your information three days before traveling.”）。"
+          },
+          {
+            "id": "ni-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Cash and monetary values question on the Traveler's Declaration (DGA)",
+            "name_zh": "旅客申报中的现金与有价物问项（DGA）",
+            "agency": "Dirección General de Servicios Aduaneros (DGA), Nicaragua",
+            "official_url": "https://sistemas.dga.gob.ni:8282/Viajeros/",
+            "channel": "online",
+            "applicability_en": "Every traveler, or the head of a family, entering or leaving Nicaragua completes the DGA online Traveler's Declaration (entry and exit are both selectable). The form asks whether you are carrying cash, monetary values, securities, objects, precious metals or a combination of these worth US$10,000.00 or more, or the equivalent. The threshold is \"equal to or greater than\" US$10,000.00. If the answer is yes, the form asks for the category, currency, class of security or metal, value in US$, and the origin and destination of the funds. This question is part of the same online declaration as the other customs questions; it is not a separate filing.",
+            "applicability_zh": "所有入境或出境尼加拉瓜的旅客或一家之主，均须在 DGA 在线“旅客申报”（Declaración de Viajero）中填报，系统可选入境或出境。表中询问是否携带现金、有价物、有价证券、物品、贵金属或其组合，价值“等于或超过”（igual o superior a）US$10,000.00 或等值外币。答“是”须填写类别、币种、证券或贵金属种类、美元价值，以及资金的来源与去向。该问项属于同一份在线申报，不是单独的另一份申报。",
+            "timing_en": "The portal states that you can only register your information three days before traveling.",
+            "timing_zh": "门户说明只能在出行前三天内登记信息。",
+            "fee": "unknown",
+            "source_ids": [
+              "ni-dga-viajeros-cash-2026-10",
+              "ni-dga-viajeros-scope-2026-10"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "旅客申報中的現金與有價物問項（DGA）",
+            "applicability_zh_hant": "所有入境或出境尼加拉瓜的旅客或一家之主，均須在 DGA 線上“旅客申報”（Declaración de Viajero）中填報，系統可選入境或出境。表中詢問是否攜帶現金、有價物、有價證券、物品、貴金屬或其組合，價值“等於或超過”（igual o superior a）US$10,000.00 或等值外幣。答“是”須填寫類別、幣種、證券或貴金屬種類、美元價值，以及資金的來源與去向。該問項屬於同一份線上申報，不是單獨的另一份申報。",
+            "timing_zh_hant": "門戶說明只能在出行前三天內登記資訊。"
           }
         ],
         "sources": [
@@ -9941,13 +10852,25 @@ export default {
             "url": "https://sistemas.dga.gob.ni:8282/Viajeros/",
             "title": "DGA Nicaragua — Sistema Declaración de Viajero (umbral de efectivo)",
             "publisher": "DGA Nicaragua"
+          },
+          {
+            "id": "ni-dga-viajeros-cash-2026-10",
+            "url": "https://sistemas.dga.gob.ni:8282/Viajeros/",
+            "title": "Sistema Declaración de Viajero (DGA) — Dirección General de Servicios Aduaneros",
+            "publisher": "Dirección General de Servicios Aduaneros (DGA), Nicaragua"
+          },
+          {
+            "id": "ni-dga-viajeros-scope-2026-10",
+            "url": "https://sistemas.dga.gob.ni:8282/Viajeros/",
+            "title": "Sistema Declaración de Viajero (DGA) — Dirección General de Servicios Aduaneros",
+            "publisher": "Dirección General de Servicios Aduaneros (DGA), Nicaragua"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
-          "open_questions": 2
+          "open_questions": 3
         }
       },
       {
@@ -9977,6 +10900,28 @@ export default {
             "name_zh_hant": "旅客宣誓申報表（Declaración Jurada de Viajero，入境與出境，電子或紙質可選）",
             "applicability_zh_hant": "凡經巴拿馬任一開放口岸入境或出境的旅客均須填報“旅客宣誓申報表”（2019-12-11第602號決議第1條）。家庭同行只填一份（RECAUCA第579條）。申報可電子或紙質（2024-04-04第079號決議）；紙表在邊境站、港口、機場及遊艇碼頭免費發放（2017-08-18第472號執行令第6條）。入境或出境攜帶嚴格超過B/. 10,000.00的現金、有價證券或可轉讓單據亦由同一份申報涵蓋，並須在二次面談或以文件向海關說明來源及最終收受人（DE 472/2017第6條）。線上表首屏可選申報類型為入境或出境及入/出境海關口岸。",
             "timing_zh_hant": "電子：海關原文稱可在到達（arribo al país）前七十二（72）小時內填寫，並稱須“不遲於七十二（72）小時”呈交但未給起算點；該72小時表述僅繫於到達，故僅對入境申報成立，電子出境申報的填寫窗口未載明。紙質：在口岸以墨水清晰填寫、經宣誓後當場交指定海關官員；原文未載提前時限。"
+          },
+          {
+            "id": "PA-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Cash, securities and negotiable instruments above B/. 10,000 on the Sworn Traveller Declaration (ANA)",
+            "name_zh": "现金、有价证券及可转让票据超过 B/. 10,000 的申报（ANA 旅客宣誓申报）",
+            "agency": "Autoridad Nacional de Aduanas (ANA), Panamá",
+            "official_url": "https://declaraciondeviajero.ana.gob.pa/Declaracion/",
+            "channel": "conditional",
+            "applicability_en": "Every traveller entering or leaving Panama who carries cash, securities or negotiable instruments for a sum above (superior a) B/. 10,000.00 reports it on the Sworn Traveller Declaration (Declaración Jurada de Viajero), for entry and for exit alike. A family group files one declaration. After declaring, the traveller must explain the origin and final recipient of the money to the designated ANA officer, at a secondary interview or with documents. Foreign travellers who declared more than B/. 10,000.00 on entry must, before leaving, report to ANA at the exit port and state the final destination of the money. The declaration can be completed digitally on the ANA traveller declaration website or on paper at the border post, port, airport or marina; a digital filing produces a QR code to show to the ANA officer.",
+            "applicability_zh": "入境或出境巴拿马的旅客，携带现金、有价证券或可转让票据金额“超过”（superior a）B/. 10,000.00 的，须在“旅客宣誓申报”（Declaración Jurada de Viajero）上申报，入境与出境均适用。家庭同行只需一份申报。申报后，旅客须在二次面谈中或以文件向 ANA 指定官员说明款项来源及最终收款人。入境时申报过超过 B/. 10,000.00 的外国旅客，离境前须到出境口岸向 ANA 说明这笔钱的最终去向。申报可在 ANA 旅客申报网站在线填写，也可在边境口岸、港口、机场或码头填纸质表；在线填写后会得到二维码，须向 ANA 官员出示。",
+            "timing_en": "Digital filing: may be completed up to seventy-two (72) hours before arrival in the country. Paper: completed by hand at the port of entry or exit and handed to the designated ANA officer.",
+            "timing_zh": "在线填报：可在抵达前七十二（72）小时内填写。纸质表：在入境或出境口岸手写填写并交给 ANA 指定官员。",
+            "fee": "unknown",
+            "source_ids": [
+              "PA-ana-cash-2026-10",
+              "PA-ana-cash-timing-2026-10"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "現金、有價證券及可轉讓票據超過 B/. 10,000 的申報（ANA 旅客宣誓申報）",
+            "applicability_zh_hant": "入境或出境巴拿馬的旅客，攜帶現金、有價證券或可轉讓票據金額“超過”（superior a）B/. 10,000.00 的，須在“旅客宣誓申報”（Declaración Jurada de Viajero）上申報，入境與出境均適用。家庭同行只需一份申報。申報後，旅客須在二次面談中或以文件向 ANA 指定官員說明款項來源及最終收款人。入境時申報過超過 B/. 10,000.00 的外國旅客，離境前須到出境口岸向 ANA 說明這筆錢的最終去向。申報可在 ANA 旅客申報網站線上填寫，也可在邊境口岸、港口、機場或碼頭填紙質表；線上填寫後會得到 QR Code，須向 ANA 官員出示。",
+            "timing_zh_hant": "線上填報：可在抵達前七十二（72）小時內填寫。紙質表：在入境或出境口岸手寫填寫並交給 ANA 指定官員。"
           }
         ],
         "sources": [
@@ -9997,11 +10942,23 @@ export default {
             "url": "https://declaraciondeviajero.ana.gob.pa/Declaracion/",
             "title": "Declaración de bienes y valores",
             "publisher": "Autoridad Nacional de Aduanas Panamá"
+          },
+          {
+            "id": "PA-ana-cash-2026-10",
+            "url": "https://tramites.ana.gob.pa/w_proceso/GestiondeDespacho.html",
+            "title": "Gestión de Despacho — Normativas de la Declaración Jurada de Viajero — Autoridad Nacional de Aduanas",
+            "publisher": "Autoridad Nacional de Aduanas (ANA), Panamá"
+          },
+          {
+            "id": "PA-ana-cash-timing-2026-10",
+            "url": "https://tramites.ana.gob.pa/w_proceso/GestiondeDespacho.html",
+            "title": "Gestión de Despacho — Normativas de la Declaración Jurada de Viajero — Autoridad Nacional de Aduanas",
+            "publisher": "Autoridad Nacional de Aduanas (ANA), Panamá"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
           "open_questions": 2
         }
@@ -10457,6 +11414,31 @@ export default {
             "name_zh_hant": "電子旅客物品申報（e-DBV）",
             "applicability_zh_hant": "旅客（乘客與機組），巴西人或外國人，出入境攜帶特定應申報物品或現金者——並非所有個人物品都需申報。現金嚴格超過等值10,000美元，入境與出境均觸發e-DBV；恰為10,000美元不觸發（\"mais de US$ 10.000,00\"）。入境另含：超過免稅價值/數量額度的物品；總值超過3,000美元且將復運出境的臨時入境物品（指引：適用於非巴西居民）；交付法人或不屬行李概念的物品；須按普通進口制度清關的物品；其他聯邦機構管制物（動植物及其製品；醫療牙科產品；藥品、維生素、補充劑——個人自用除外；武器彈藥）。出境另含：價值超過2,000美元並在DU-E登記以證明國內購買的物品；離境時可被要求出示現金來源證明。未滿16歲攜應申報物：以未成年人名義申報，由父/母或監護人簽署。可自願申報以證明物品合規入境；申報絕不使禁品（毒品等）可進口。",
             "timing_zh_hant": "全程線上填寫並傳送，可於行前完成；傳送後生成回執。入境：下機取行李後呈交，選紅色通道。出境：在托運行李或登機前呈交，且最遲於值機開始前1小時。如有應納稅款，須同時出示已繳DARF。"
+          },
+          {
+            "id": "BR-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Cash above US$10,000 — e-DBV (Declaração Eletrônica de Bens do Viajante)",
+            "name_zh": "现金超过 1 万美元的申报（e-DBV 旅客电子物品申报）",
+            "agency": "Receita Federal do Brasil",
+            "official_url": "https://www.gov.br/pt-br/servicos/declarar-bens-para-viagem-internacional-dbv",
+            "channel": "online",
+            "applicability_en": "Travellers (passengers and crew), Brazilian or foreign, entering or leaving Brazil with cash in national or foreign currency worth more than (acima de / maior que) US$10,000.00, or the equivalent in another currency, must file the e-DBV and present it to the Receita Federal. This applies both on arrival and on departure. On arrival, choose the red channel (bens a declarar) at the baggage hall after collecting your luggage. On departure, present the declaration to the Receita Federal before baggage check-in or boarding, at least 1 hour before check-in opens. On departure, the Receita Federal may ask for proof of the origin of the money. Cash above the limit that was not declared can be lost for the excess over US$10,000.00, and a fine applies. A traveller under 16 files an e-DBV in their own name, signed by a parent or guardian.",
+            "applicability_zh": "巴西公民或外国人，作为乘客或机组人员入境或出境巴西，携带的本币或外币现金价值“超过”（acima de / maior que）10,000.00 美元或等值其他货币的，须填写 e-DBV 并向联邦税务局（Receita Federal）出示。入境和出境均适用。入境时：取完行李后，在行李厅选择红色通道（bens a declarar）。出境时：在托运行李或登机前向联邦税务局出示，且至少在值机开始前 1 小时。出境时，税务局可能要求提供款项来源证明。超过限额而未申报的现金，超出 10,000.00 美元的部分可能被没收，并处罚款。未满 16 岁的旅客须以本人名义填写 e-DBV，由父母或监护人签署。",
+            "timing_en": "The e-DBV is filled in fully online and can be completed before the trip. Arrival: present it after collecting baggage, at the red channel. Departure: present it before baggage check-in or boarding, at least 1 hour before check-in opens.",
+            "timing_zh": "e-DBV 完全在线填写，可在出行前完成。入境：取行李后在红色通道出示。出境：托运行李或登机前出示，至少在值机开始前 1 小时。",
+            "fee": "unknown",
+            "source_ids": [
+              "BR-edbv-cash-2026-10",
+              "BR-guia-cash-2026-10",
+              "BR-edbv-cash-entry-2026-10",
+              "BR-edbv-cash-exit-2026-10",
+              "BR-edbv-cash-online-2026-10"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "現金超過 1 萬美元的申報（e-DBV 旅客電子物品申報）",
+            "applicability_zh_hant": "巴西公民或外國人，作為乘客或機組人員入境或出境巴西，攜帶的本幣或外幣現金價值“超過”（acima de / maior que）10,000.00 美元或等值其他貨幣的，須填寫 e-DBV 並向聯邦稅務局（Receita Federal）出示。入境和出境均適用。入境時：取完行李後，在行李廳選擇紅色通道（bens a declarar）。出境時：在托運行李或登機前向聯邦稅務局出示，且至少在值機開始前 1 小時。出境時，稅務局可能要求提供款項來源證明。超過限額而未申報的現金，超出 10,000.00 美元的部分可能被沒收，並處罰款。未滿 16 歲的旅客須以本人名義填寫 e-DBV，由父母或監護人簽署。",
+            "timing_zh_hant": "e-DBV 完全線上填寫，可在出行前完成。入境：取行李後在紅色通道出示。出境：托運行李或登機前出示，至少在值機開始前 1 小時。"
           }
         ],
         "sources": [
@@ -10471,11 +11453,41 @@ export default {
             "url": "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/bens-a-declarar-tributacao-e-calculo-do-imposto",
             "title": "Bens a Declarar, Cálculo do Imposto e Pagamento — Guia do Viajante",
             "publisher": "Receita Federal do Brasil"
+          },
+          {
+            "id": "BR-edbv-cash-2026-10",
+            "url": "https://www.gov.br/pt-br/servicos/declarar-bens-para-viagem-internacional-dbv",
+            "title": "Declarar bens para viagem internacional (e-DBV) — Receita Federal",
+            "publisher": "Receita Federal do Brasil"
+          },
+          {
+            "id": "BR-guia-cash-2026-10",
+            "url": "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/viagens-internacionais/guia-do-viajante/entrada-no-brasil/bens-a-declarar-tributacao-e-calculo-do-imposto",
+            "title": "Guia do Viajante: bens a declarar, tributação e cálculo do imposto — Receita Federal",
+            "publisher": "Receita Federal do Brasil"
+          },
+          {
+            "id": "BR-edbv-cash-entry-2026-10",
+            "url": "https://www.gov.br/pt-br/servicos/declarar-bens-para-viagem-internacional-dbv",
+            "title": "Declarar bens para viagem internacional (e-DBV) — Receita Federal",
+            "publisher": "Receita Federal do Brasil"
+          },
+          {
+            "id": "BR-edbv-cash-exit-2026-10",
+            "url": "https://www.gov.br/pt-br/servicos/declarar-bens-para-viagem-internacional-dbv",
+            "title": "Declarar bens para viagem internacional (e-DBV) — Receita Federal",
+            "publisher": "Receita Federal do Brasil"
+          },
+          {
+            "id": "BR-edbv-cash-online-2026-10",
+            "url": "https://www.gov.br/pt-br/servicos/declarar-bens-para-viagem-internacional-dbv",
+            "title": "Declarar bens para viagem internacional (e-DBV) — Receita Federal",
+            "publisher": "Receita Federal do Brasil"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
           "open_questions": 2
         }
@@ -10726,6 +11738,31 @@ export default {
             "name_zh_hant": "遊客宣誓聲明書（DJT）— 旅遊車輛臨時進境",
             "applicability_zh_hant": "駕乘私人或旅遊租賃車輛入境厄瓜多爾的陸路旅客：遊客宣誓聲明書（DJT）是向 SENAE 作出的宣誓聲明，據此獲准車輛臨時進境、免繳進口稅費，但須履行強制復出境義務。在邊境須提交：身份證件（經移民局蓋章的護照）、駕駛證和車輛登記證；租賃車輛還須租賃合同，據此入境車輛構成以厄瓜多爾海關為受益人的特別優先質押。車輛停留期與移民記錄中授予遊客的最長期限相同；能證明居住國外的厄瓜多爾人獲 90 個日曆日（可連續或不連續，在 12 個月內計算）。DJT 絕不簽發給厄瓜多爾居民，且僅適用於不屬厄瓜多爾現行雙邊或國際公約涵蓋範圍的車輛。當地客運和出租車則提交統一的旅客運輸單證；旅遊運輸車輛提交旅遊運輸單證及團隊名單。",
             "timing_zh_hant": "入境時在邊境辦理；車輛須在旅客獲准停留期屆滿時離境（按移民記錄最長時限；居住國外的厄瓜多爾人為 12 個月內 90 個日曆日）；未寫提前辦理窗口。"
+          },
+          {
+            "id": "ec-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Cash, bearer instruments, precious metals and stones of USD 10,000 or more — Formulario de Registro Aduanero (FRA)",
+            "name_zh": "现金、无记名票据、贵金属及宝石价值达 1 万美元的申报（海关登记表 FRA）",
+            "agency": "Servicio Nacional de Aduana del Ecuador (SENAE)",
+            "official_url": "https://www.aduana.gob.ec/servicio-al-ciudadano/viajeros-por-via-aerea/",
+            "channel": "online",
+            "applicability_en": "Every passenger entering or leaving Ecuador (SENAE pages for air and land travellers) who carries cash, bearer negotiable instruments, precious metals and stones, or a combination of these, worth USD 10,000 or more (igual o superior a), or the equivalent in other currencies, must declare it to the authorities under the anti-money-laundering law. To declare, fill in the Formulario de Registro Aduanero (FRA), which can be completed electronically, before going through customs control. At the airport, show the FRA as a QR code or PDF, printed or on your phone, together with your passport before the customs scanner; at land borders, show it with your passport or cédula. SENAE states this declaration is unrelated to the Impuesto a la Salida de Divisas (ISD).",
+            "applicability_zh": "入境或出境厄瓜多尔的每位旅客（SENAE 空路和陆路旅客页面），携带现金、无记名可转让票据、贵金属和宝石或其组合，价值“等于或超过”（igual o superior a）1 万美元或等值其他货币的，须依反洗钱法向当局申报。申报方式是在海关查验前填写海关登记表（Formulario de Registro Aduanero，FRA），可在线填写。在机场，须在通过海关扫描前出示 FRA 的二维码或 PDF（打印件或手机均可）及护照；在陆路口岸，须连同护照或身份证（cédula）出示。SENAE 说明该申报与出境外汇税（ISD）无关。",
+            "timing_en": "Fill in the FRA before you go through customs control (\"hasta antes de someterse al control aduanero\"). No number of days before travel is stated.",
+            "timing_zh": "在通过海关查验前填写 FRA。官方未写明需提前多少天。",
+            "fee": "unknown",
+            "source_ids": [
+              "ec-senae-cash-air-threshold-2026-10",
+              "ec-senae-cash-air-direction-2026-10",
+              "ec-senae-cash-air-fra-2026-10",
+              "ec-senae-cash-land-threshold-2026-10",
+              "ec-senae-cash-land-fra-2026-10"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "現金、無記名票據、貴金屬及寶石價值達 1 萬美元的申報（海關登記表 FRA）",
+            "applicability_zh_hant": "入境或出境厄瓜多爾的每位旅客（SENAE 空路和陸路旅客頁面），攜帶現金、無記名可轉讓票據、貴金屬和寶石或其組合，價值“等於或超過”（igual o superior a）1 萬美元或等值其他貨幣的，須依反洗錢法向當局申報。申報方式是在海關查驗前填寫海關登記表（Formulario de Registro Aduanero，FRA），可線上填寫。在機場，須在通過海關掃描前出示 FRA 的 QR Code 或 PDF（列印件或手機均可）及護照；在陸路口岸，須連同護照或身份證（cédula）出示。SENAE 說明該申報與出境外匯稅（ISD）無關。",
+            "timing_zh_hant": "在通過海關查驗前填寫 FRA。官方未寫明需提前多少天。"
           }
         ],
         "sources": [
@@ -10746,11 +11783,41 @@ export default {
             "url": "https://www.aduana.gob.ec/gacnorm/data/2026/05/04/10/SENAE-SENAE-2026-0041-RE.pdf",
             "title": "Resolución SENAE-SENAE-2026-0041-RE — Manual General para el despacho de equipaje de pasajeros y tripulantes (aeropuertos internacionales)",
             "publisher": "SENAE Ecuador"
+          },
+          {
+            "id": "ec-senae-cash-air-threshold-2026-10",
+            "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/viajeros-por-via-aerea/",
+            "title": "Viajeros por vía aérea — Servicio Nacional de Aduana del Ecuador",
+            "publisher": "Servicio Nacional de Aduana del Ecuador (SENAE)"
+          },
+          {
+            "id": "ec-senae-cash-air-direction-2026-10",
+            "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/viajeros-por-via-aerea/",
+            "title": "Viajeros por vía aérea — Servicio Nacional de Aduana del Ecuador",
+            "publisher": "Servicio Nacional de Aduana del Ecuador (SENAE)"
+          },
+          {
+            "id": "ec-senae-cash-air-fra-2026-10",
+            "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/viajeros-por-via-aerea/",
+            "title": "Viajeros por vía aérea — Servicio Nacional de Aduana del Ecuador",
+            "publisher": "Servicio Nacional de Aduana del Ecuador (SENAE)"
+          },
+          {
+            "id": "ec-senae-cash-land-threshold-2026-10",
+            "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/viajeros-por-via-terrestre/",
+            "title": "Viajeros por vía terrestre — Servicio Nacional de Aduana del Ecuador",
+            "publisher": "Servicio Nacional de Aduana del Ecuador (SENAE)"
+          },
+          {
+            "id": "ec-senae-cash-land-fra-2026-10",
+            "url": "https://www.aduana.gob.ec/servicio-al-ciudadano/viajeros-por-via-terrestre/",
+            "title": "Viajeros por vía terrestre — Servicio Nacional de Aduana del Ecuador",
+            "publisher": "Servicio Nacional de Aduana del Ecuador (SENAE)"
           }
         ],
         "coverage": {
-          "total_procedures": 3,
-          "published_procedures": 3,
+          "total_procedures": 4,
+          "published_procedures": 4,
           "withheld_procedures": 0,
           "open_questions": 3
         }
@@ -11180,6 +12247,30 @@ export default {
             "name_zh_hant": "巴拉圭旅客電子海關申報（eDAV / e-DAV）",
             "applicability_zh_hant": "eDAV是DNIT的線上旅客海關申報，為真實網站申報，出入巴拉圭前在DNIT網站填報；適用於任一方向（入境或出境）攜帶的現金及不記名可轉讓票據（現金、旅行支票、債券、股票等），金額無上限，超過1萬美元（第1015/97號法；DNA第475/2021號決議）必須申報——超門檻為確定事項。恰為1萬美元時官方口徑衝突：eDAV官網頁、2025-07-22公告與指南PDF均要求申報“超過”（más de / superior a）1萬美元，而2026-02-04公告要求“達到或超過”（superior o igual a）1萬美元，該邊界不可自行判定為嚴格大於或大於等於，須向DNIT核實。提交後旅客取得 QR Code（Código QR）向海關出示（2026公告）。任何DNIT來源均未寫明申報服務費；fee unknown。",
             "timing_zh_hant": "出入境前在DNIT網站線上填報；未寫明提前窗口。提交後取得 QR Code（Código QR）向海關出示（2026公告）。"
+          },
+          {
+            "id": "py-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Cash and bearer instruments above USD 10,000 — e-DAV declaration (DNIT)",
+            "name_zh": "现金及无记名票据超过 10,000 美元的申报（DNIT e-DAV）",
+            "agency": "Dirección Nacional de Ingresos Tributarios (DNIT), Paraguay",
+            "official_url": "https://www.dnit.gov.py/web/portal-institucional/declaraci%C3%B3n-electr%C3%B3nica-aduanera-de-viajeros",
+            "channel": "online",
+            "applicability_en": "Travellers entering or leaving Paraguay with more than USD 10,000 (or the equivalent in other currencies) in cash or bearer negotiable instruments (traveller's cheques, bonds, shares and similar) must declare it to Customs through the DNIT electronic traveller declaration (e-DAV), under Law 1015/97. Paraguay sets no maximum amount you may carry; the threshold only triggers the declaration. After filing, the traveller gets a QR code to show to the customs officer. Exactly USD 10,000: the DNIT pages and guide say \"more than\" (más de / superior a), while the DNIT bulletin of 4 February 2026 says \"equal to or greater than\" (superior o igual a). If you carry exactly USD 10,000, declaring it is the safe choice.",
+            "applicability_zh": "入境或出境巴拉圭的旅客，携带现金或无记名可转让票据（旅行支票、债券、股票等）超过 10,000 美元（或等值其他货币）的，须依第 1015/97 号法律，通过 DNIT 电子旅客申报系统（e-DAV）向海关申报。巴拉圭对可携带金额没有上限，10,000 美元只是触发申报义务的门槛。申报后会得到二维码，须向海关官员出示。恰好 10,000 美元的情形：DNIT 页面和指南写“超过”（más de / superior a），而 DNIT 2026 年 2 月 4 日的公告写“等于或超过”（superior o igual a）。携带恰好 10,000 美元时，稳妥起见应申报。",
+            "timing_en": "File online on the DNIT website before entering or leaving the country. No advance window is stated.",
+            "timing_zh": "在入境或出境前，在 DNIT 网站在线申报。官方未写明提前多久。",
+            "fee": "unknown",
+            "source_ids": [
+              "py-dnit-cash-2026-10",
+              "py-dnit-cash-timing-2026-10",
+              "py-dnit-faq-cash-2026-10",
+              "py-dnit-noticia-2026-cash-2026-10"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "現金及無記名票據超過 10,000 美元的申報（DNIT e-DAV）",
+            "applicability_zh_hant": "入境或出境巴拉圭的旅客，攜帶現金或無記名可轉讓票據（旅行支票、債券、股票等）超過 10,000 美元（或等值其他貨幣）的，須依第 1015/97 號法律，通過 DNIT 電子旅客申報系統（e-DAV）向海關申報。巴拉圭對可攜帶金額沒有上限，10,000 美元只是觸發申報義務的門檻。申報後會得到 QR Code，須向海關官員出示。恰好 10,000 美元的情形：DNIT 頁面和指南寫“超過”（más de / superior a），而 DNIT 2026 年 2 月 4 日的公告寫“等於或超過”（superior o igual a）。攜帶恰好 10,000 美元時，穩妥起見應申報。",
+            "timing_zh_hant": "在入境或出境前，在 DNIT 網站線上申報。官方未寫明提前多久。"
           }
         ],
         "sources": [
@@ -11206,11 +12297,35 @@ export default {
             "url": "https://www.dnit.gov.py/documents/20123/1085745/Ayuda-Viajero-Declaracion-Electronica-ESP.pdf/ea112a1e-d15c-0f4f-c190-eea66d4a7b5c",
             "title": "Ayuda al Viajero — Declaración Electrónica (ESP), PDF 1 page",
             "publisher": "DNIT Paraguay"
+          },
+          {
+            "id": "py-dnit-cash-2026-10",
+            "url": "https://www.dnit.gov.py/en/web/portal-institucional/declaraci%C3%B3n-electr%C3%B3nica-aduanera-de-viajeros",
+            "title": "Declaración Electrónica Aduanera de Viajeros (e-DAV) — Dirección Nacional de Ingresos Tributarios",
+            "publisher": "Dirección Nacional de Ingresos Tributarios (DNIT), Paraguay"
+          },
+          {
+            "id": "py-dnit-cash-timing-2026-10",
+            "url": "https://www.dnit.gov.py/en/web/portal-institucional/declaraci%C3%B3n-electr%C3%B3nica-aduanera-de-viajeros",
+            "title": "Declaración Electrónica Aduanera de Viajeros (e-DAV) — Dirección Nacional de Ingresos Tributarios",
+            "publisher": "Dirección Nacional de Ingresos Tributarios (DNIT), Paraguay"
+          },
+          {
+            "id": "py-dnit-faq-cash-2026-10",
+            "url": "https://www.dnit.gov.py/web/portal-institucional/preguntas-frecuentes",
+            "title": "Preguntas frecuentes — Dirección Nacional de Ingresos Tributarios",
+            "publisher": "Dirección Nacional de Ingresos Tributarios (DNIT), Paraguay"
+          },
+          {
+            "id": "py-dnit-noticia-2026-cash-2026-10",
+            "url": "https://www.dnit.gov.py/en/web/portal-institucional/w/dnit-recuerda-normas-vigentes-para-viajeros-1",
+            "title": "DNIT recuerda normas vigentes para viajeros — Dirección Nacional de Ingresos Tributarios",
+            "publisher": "Dirección Nacional de Ingresos Tributarios (DNIT), Paraguay"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
           "open_questions": 2
         }
@@ -12307,7 +13422,7 @@ export default {
       {
         "jurisdiction_id": "KZ",
         "review_status": "verified",
-        "researched_at": "2026-09-12",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "KZ-customs-passenger-declaration",
@@ -12336,6 +13451,32 @@ export default {
             "name_zh_hant": "旅客海關申報單（ПТД，紙質）",
             "applicability_zh_hant": "哈薩克斯坦海關受理並登記旅客申報不收費。跨聯盟外部關境時，現金及旅行支票超過等值1萬美元須申報，其他貨幣工具另有申報要求。同時，總統第830號令禁止攜出超過等值1萬美元的外幣現鈔或外幣貨幣工具，按攜出日國家銀行匯率計算；填申報不使超額出口合法。公佈令文列機構及政府特定例外，不將其擴成普通旅客豁免；該外幣限制亦非所有堅戈一律禁止。聯盟行李免稅條件為航空同時不超過1萬歐元和50公斤，非航空/步行同時不超過500歐元和25公斤。酒精度超0.5%的酒另有3升額度。附件1注3明確哈薩克斯坦菸酒優惠僅21歲及以上。",
             "timing_zh_hant": "在穿越 EAEU 關境哈薩克斯坦段的口岸現場（入境或出境時）向海關提交；現金匯率按提交申報當日計算。"
+          },
+          {
+            "id": "KZ-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Declaration of cash and monetary instruments carried across the EAEU customs border (Kazakhstan)",
+            "name_zh": "携带现金及货币工具跨欧亚经济联盟关境的申报（哈萨克斯坦）",
+            "agency": "Комитет государственных доходов Министерства финансов Республики Казахстан (State Revenue Committee, Ministry of Finance)",
+            "official_url": "https://eec.eaeunion.org/comission/department/dep_tamoj_zak/transferenceProduct.php",
+            "channel": "paper",
+            "applicability_en": "Applies in both directions to a traveller who crosses the customs border of the Eurasian Economic Union (EAEU) at a Kazakh border point, arriving from or leaving for a country outside the Union, carrying cash or traveller's cheques. If the total exceeds the equivalent of USD 10,000 per person, the whole amount, not only the excess, must be declared on the passenger customs declaration, together with its mandatory annex for cash and monetary instruments. At or below USD 10,000 declaring is optional. Bills of exchange, cheques (bank cheques) and securities must be declared whatever their amount. If the total exceeds the equivalent of USD 100,000, documents confirming where the money comes from must be handed in with the declaration.",
+            "applicability_zh": "适用于在哈萨克斯坦口岸跨越欧亚经济联盟（EAEU）关境的旅客，入境（自联盟以外国家来）和出境（前往联盟以外国家）均适用，所携为现金或旅行支票。合计超过等值1万美元（每人）时，须在旅客海关申报单上申报全部金额而非仅超出部分，并填写申报单关于现金和货币工具的附件。不超过1万美元时可自愿申报。汇票、支票（银行支票）和有价证券不论金额多少都须申报。合计超过等值10万美元时，申报时须同时提交证明资金来源的文件。",
+            "timing_en": "At the Kazakh border crossing when entering or leaving the EAEU customs territory, on the passenger customs declaration.",
+            "timing_zh": "在哈萨克斯坦口岸入境或出境联盟关境时，通过旅客海关申报单办理。",
+            "fee": "unknown",
+            "source_ids": [
+              "KZ-cash-eec-threshold",
+              "KZ-cash-eec-optional",
+              "KZ-cash-eec-instruments",
+              "KZ-cash-eec-form",
+              "KZ-cash-eec-origin",
+              "KZ-cash-ptd-field"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "攜帶現金及貨幣工具跨歐亞經濟聯盟關境的申報（哈薩克斯坦）",
+            "applicability_zh_hant": "適用於在哈薩克斯坦口岸跨越歐亞經濟聯盟（EAEU）關境的旅客，入境（自聯盟以外國家來）和出境（前往聯盟以外國家）均適用，所攜為現金或旅行支票。合計超過等值1萬美元（每人）時，須在旅客海關申報單上申報全部金額而非僅超出部分，並填寫申報單關於現金和貨幣工具的附件。不超過1萬美元時可自願申報。匯票、支票（銀行支票）和有價證券不論金額多少都須申報。合計超過等值10萬美元時，申報時須同時提交證明資金來源的文件。",
+            "timing_zh_hant": "在哈薩克斯坦口岸入境或出境聯盟關境時，通過旅客海關申報單辦理。"
           }
         ],
         "sources": [
@@ -12362,11 +13503,47 @@ export default {
             "url": "https://eec.eaeunion.org/upload/medialibrary/f10/20q0ib40qipuw2rqxux3giq629afbkij/Prilozhenie-1_107.pdf",
             "title": "Decision 107 Annex 1",
             "publisher": "Eurasian Economic Commission"
+          },
+          {
+            "id": "KZ-cash-eec-threshold",
+            "url": "https://eec.eaeunion.org/comission/department/dep_tamoj_zak/transferenceProduct.php",
+            "title": "Перемещение физическими лицами товаров для личного пользования, а также наличных денежных средств и (или) денежных инструментов — Евразийская экономическая комиссия",
+            "publisher": "Eurasian Economic Commission"
+          },
+          {
+            "id": "KZ-cash-eec-optional",
+            "url": "https://eec.eaeunion.org/comission/department/dep_tamoj_zak/transferenceProduct.php",
+            "title": "Перемещение физическими лицами товаров для личного пользования, а также наличных денежных средств и (или) денежных инструментов — Евразийская экономическая комиссия",
+            "publisher": "Eurasian Economic Commission"
+          },
+          {
+            "id": "KZ-cash-eec-instruments",
+            "url": "https://eec.eaeunion.org/comission/department/dep_tamoj_zak/transferenceProduct.php",
+            "title": "Перемещение физическими лицами товаров для личного пользования, а также наличных денежных средств и (или) денежных инструментов — Евразийская экономическая комиссия",
+            "publisher": "Eurasian Economic Commission"
+          },
+          {
+            "id": "KZ-cash-eec-form",
+            "url": "https://eec.eaeunion.org/comission/department/dep_tamoj_zak/transferenceProduct.php",
+            "title": "Перемещение физическими лицами товаров для личного пользования, а также наличных денежных средств и (или) денежных инструментов — Евразийская экономическая комиссия",
+            "publisher": "Eurasian Economic Commission"
+          },
+          {
+            "id": "KZ-cash-eec-origin",
+            "url": "https://eec.eaeunion.org/comission/department/dep_tamoj_zak/transferenceProduct.php",
+            "title": "Перемещение физическими лицами товаров для личного пользования, а также наличных денежных средств и (или) денежных инструментов — Евразийская экономическая комиссия",
+            "publisher": "Eurasian Economic Commission"
+          },
+          {
+            "id": "KZ-cash-ptd-field",
+            "url": "https://eec.eaeunion.org/upload/medialibrary/605/Passazhirskaya-tamozhennaya-deklaratsiya.pdf",
+            "title": "Пассажирская таможенная декларация — Евразийская экономическая комиссия",
+            "publisher": "Eurasian Economic Commission"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
           "open_questions": 0
         }
@@ -13256,7 +14433,7 @@ export default {
       {
         "jurisdiction_id": "MN",
         "review_status": "partial",
-        "researched_at": "2026-09-29",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "MN-customs-channel-declaration",
@@ -13367,6 +14544,34 @@ export default {
             "name_zh_hant": "旅客健康聲明表（Зорчигчийн эрүүл мэндийн мэдүүлэг）——標註“出境/入境”的線上表；AIP義務明說入境訪客",
             "applicability_zh_hant": "蒙古現行 eAIP GEN 1.3 規定：所有訪蒙旅客均須填寫健康聲明表（3.1.1），並須在表中填報本人當前健康狀況及在蒙古的聯繫地址（3.1.2）；該頁緩存 HTML 元資料標註版本生效日為2026-09-17，且2025-02-20生效的 AIRAC 版本載有同一 3.1.1 文本。AIP 屬航空出版文件：其義務表述採航空語境，本身既不能把義務外推至陸路口岸，也不能證明任何具體口岸設有查驗。現已存在可由旅客本人履行的現行官方線上渠道：衛生部旅客健康聲明表，託管於衛生髮展中心網站（dec.hdc.gov.mn/gate?q_id=1；2026-09-29 抓取 HTTP 200）。頁面雙語提示旅客按相關法律法規如實填寫本出境/入境健康聲明表，並警示拒絕申報、不如實申報或號召他人不履行者，依《違法法》第6.23、15.2條承擔責任；選擇“不同意”即無法提交。該頁面以單一“出境/入境”雙向界面呈現（頁面標題即“出境/入境健康聲明表”），而緩存官源中明文設定的義務只有 AIP 對訪蒙旅客（入境、航空語境）的要求，並無任何官源斷言出境方向對所有旅客同樣強制。表單採集：入境口岸——機場項 Buyant-Ukhaa 與 Chinggis Khaan，或陸路口岸 Altanbulag、Sukhbaatar、Tsagaannuur、Zamiin-Uud；交通方式——飛機/火車/汽車（含航空公司及航班/行程號欄位）；入境日期；個人資訊（護照或登記號、姓、名、國籍、性別、信箱）；在蒙有效聯繫電話；在蒙地址；近21天境外旅行史；症狀自查清單（發熱、咽痛、咳嗽、皮疹、眼紅流淚、流涕、其他）；真實性確認；算術校驗後點擊 ИЛГЭЭХ（SUBMIT）提交。下拉項列入陸路口岸及火車/汽車選項，只說明該表為這些口岸設計，不證明當地設有查驗。成吉思汗國際機場營運方2026-08-17公告以“Dear Passengers”請旅客完成本出境/入境健康聲明表並連結同一衛生部頁面；該公告標題面向“All COP17 guests and delegates”，而 UNCCD COP17 於2026-08-17至28在烏蘭巴托舉行且已結束——該公告屬活動期資訊，可佐證渠道本身及2026年8月機場對旅客的指引，但不能單獨證明當前所有普通航空旅客均須提交。官方文本明確三點：航空資料彙編（AIP）所載義務（針對入境蒙古旅客表述；版本生效日2026-09-17）、旅客可自行填寫並提交的現行官方線上表（界面標註“出境/入境”）、機場營運方2026-08-17 請旅客填寫該表的指引。官方文本未載明：相對過境何時可提交、有無提前時限或現場在何處查驗（AIP 與衛生部頁均未載明）；各口岸是否實際查驗提交；提交成功後是否出具回執或確認；有無紙質替代渠道；陸路口岸的實際執行情況。",
             "timing_zh_hant": "線上辦理：旅客在官網表單填寫——選“同意”、選口岸與交通方式、填寫身份/聯繫/健康欄位、回答算術校驗——並點擊 ИЛГЭЭХ（SUBMIT）提交；AIP 與衛生部頁均未載明相對過境的提交開放窗口、提前時限或現場驗收時點；提交成功後頁面返回什麼（回執或確認）未實測。"
+          },
+          {
+            "id": "MN-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Declaration of cash and equivalent instruments above MNT 15 million on the passenger customs declaration",
+            "name_zh": "超过1,500万图格里克的现金及等值工具须在旅客海关申报单上申报",
+            "agency": "Mongolian Customs General Administration (Гаалийн ерөнхий газар)",
+            "official_url": "https://legalinfo.mn/mn/detail?lawId=210201",
+            "channel": "paper",
+            "applicability_en": "Applies in both directions to a passenger who carries across the Mongolian border, in cash, more than MNT 15 million, or the equivalent in foreign currency, financial instruments or electronic money. The amount must be declared truthfully on the passenger customs declaration (AML/CFT Law Art 15.1). The customs regulation for travellers' personal items lists this amount among the items declared in writing to the customs inspector, and a passenger carrying such an amount uses the red channel at airports and border points that have the dual-channel system (5.5.2, 6.4). One provision of the same regulation (6.6) is worded \"MNT 15 million and above\": the declaration is then filled in two copies, the inspector checks the cash and stamps the declaration, and one copy goes back to the passenger. Because the texts differ at exactly MNT 15 million, a traveller carrying exactly that amount should declare it in writing. Entering, a passenger may bring in the currency carried on the person up to the amount declared to Customs (2.5).",
+            "applicability_zh": "适用于携带现金跨越蒙古国国境（入境、出境均适用）、金额超过1,500万图格里克或等值外币、金融工具、电子货币的旅客。该金额须在旅客海关申报单上如实申报（《反洗钱和打击资助恐怖主义法》第15.1条）。海关《旅客个人使用物品通过海关边境规程》将该金额列为须向海关检查员书面申报的事项；携带该金额的旅客，在设有双通道系统的机场和边境口岸须走红色通道（5.5.2、6.4）。同一规程第6.6条的表述为“1,500万图格里克及以上”：此时申报单一式两份填写，检查员查验现金并在申报单上盖章，其中一份交还旅客。由于两处条文在恰好1,500万图格里克这一点上表述不同，携带恰为该金额的旅客宜书面申报。入境时，随身携带的货币以向海关申报的数量为限带入（2.5）。",
+            "timing_en": "At the border crossing when entering or leaving: the passenger fills in and signs the customs declaration and hands it to the customs inspector.",
+            "timing_zh": "入境或出境时在口岸现场办理：旅客填写并签署海关申报单，交海关检查员。",
+            "fee": "unknown",
+            "source_ids": [
+              "MN-cash-aml-15-1",
+              "MN-cash-aml-15-1-declare",
+              "MN-cash-reg-5-5",
+              "MN-cash-reg-5-5-2",
+              "MN-cash-reg-6-4",
+              "MN-cash-reg-6-6",
+              "MN-cash-reg-6-6-stamp",
+              "MN-cash-reg-2-5"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "超過1,500萬圖格里克的現金及等值工具須在旅客海關申報單上申報",
+            "applicability_zh_hant": "適用於攜帶現金跨越蒙古國國境（入境、出境均適用）、金額超過1,500萬圖格里克或等值外幣、金融工具、電子貨幣的旅客。該金額須在旅客海關申報單上如實申報（《反洗錢和打擊資助恐怖主義法》第15.1條）。海關《旅客個人使用物品通過海關邊境規程》將該金額列為須向海關檢查員書面申報的事項；攜帶該金額的旅客，在設有雙通道系統的機場和邊境口岸須走紅色通道（5.5.2、6.4）。同一規程第6.6條的表述為“1,500萬圖格里克及以上”：此時申報單一式兩份填寫，檢查員查驗現金並在申報單上蓋章，其中一份交還旅客。由於兩處條文在恰好1,500萬圖格里克這一點上表述不同，攜帶恰為該金額的旅客宜書面申報。入境時，隨身攜帶的貨幣以向海關申報的數量為限帶入（2.5）。",
+            "timing_zh_hant": "入境或出境時在口岸現場辦理：旅客填寫並簽署海關申報單，交海關檢查員。"
           }
         ],
         "sources": [
@@ -13669,11 +14874,59 @@ export default {
             "url": "https://www.unccd.int/cop17",
             "title": "UNCCD COP17 official page — conference hosted by Mongolia in Ulaanbaatar from 17 to 28 August 2026 (event window of the airport notice, now ended)",
             "publisher": "United Nations Convention to Combat Desertification (unccd.int)"
+          },
+          {
+            "id": "MN-cash-aml-15-1",
+            "url": "https://legalinfo.mn/mn/detail/9242",
+            "title": "Мөнгө угаах болон терроризмыг санхүүжүүлэхтэй тэмцэх тухай хууль — legalinfo.mn, Article 15.1",
+            "publisher": "Mongolia Legal Information Center (legalinfo.mn)"
+          },
+          {
+            "id": "MN-cash-aml-15-1-declare",
+            "url": "https://legalinfo.mn/mn/detail/9242",
+            "title": "Мөнгө угаах болон терроризмыг санхүүжүүлэхтэй тэмцэх тухай хууль — legalinfo.mn, Article 15.1",
+            "publisher": "Mongolia Legal Information Center (legalinfo.mn)"
+          },
+          {
+            "id": "MN-cash-reg-5-5",
+            "url": "https://legalinfo.mn/mn/detail?lawId=210201",
+            "title": "Зорчигчийн хувийн хэрэглээний эд зүйлийг гаалийн хилээр нэвтрүүлэх журам — Гаалийн ерөнхий газар (Mongolian Customs General Administration), legalinfo.mn, 5.5",
+            "publisher": "Mongolia Legal Information Center (legalinfo.mn); issued by the Customs General Administration"
+          },
+          {
+            "id": "MN-cash-reg-5-5-2",
+            "url": "https://legalinfo.mn/mn/detail?lawId=210201",
+            "title": "Зорчигчийн хувийн хэрэглээний эд зүйлийг гаалийн хилээр нэвтрүүлэх журам — Гаалийн ерөнхий газар (Mongolian Customs General Administration), legalinfo.mn, 5.5.2",
+            "publisher": "Mongolia Legal Information Center (legalinfo.mn); issued by the Customs General Administration"
+          },
+          {
+            "id": "MN-cash-reg-6-4",
+            "url": "https://legalinfo.mn/mn/detail?lawId=210201",
+            "title": "Зорчигчийн хувийн хэрэглээний эд зүйлийг гаалийн хилээр нэвтрүүлэх журам — Гаалийн ерөнхий газар (Mongolian Customs General Administration), legalinfo.mn, 6.4",
+            "publisher": "Mongolia Legal Information Center (legalinfo.mn); issued by the Customs General Administration"
+          },
+          {
+            "id": "MN-cash-reg-6-6",
+            "url": "https://legalinfo.mn/mn/detail?lawId=210201",
+            "title": "Зорчигчийн хувийн хэрэглээний эд зүйлийг гаалийн хилээр нэвтрүүлэх журам — Гаалийн ерөнхий газар (Mongolian Customs General Administration), legalinfo.mn, 6.6",
+            "publisher": "Mongolia Legal Information Center (legalinfo.mn); issued by the Customs General Administration"
+          },
+          {
+            "id": "MN-cash-reg-6-6-stamp",
+            "url": "https://legalinfo.mn/mn/detail?lawId=210201",
+            "title": "Зорчигчийн хувийн хэрэглээний эд зүйлийг гаалийн хилээр нэвтрүүлэх журам — Гаалийн ерөнхий газар (Mongolian Customs General Administration), legalinfo.mn, 6.6",
+            "publisher": "Mongolia Legal Information Center (legalinfo.mn); issued by the Customs General Administration"
+          },
+          {
+            "id": "MN-cash-reg-2-5",
+            "url": "https://legalinfo.mn/mn/detail?lawId=210201",
+            "title": "Зорчигчийн хувийн хэрэглээний эд зүйлийг гаалийн хилээр нэвтрүүлэх журам — Гаалийн ерөнхий газар (Mongolian Customs General Administration), legalinfo.mn, 2.5",
+            "publisher": "Mongolia Legal Information Center (legalinfo.mn); issued by the Customs General Administration"
           }
         ],
         "coverage": {
-          "total_procedures": 3,
-          "published_procedures": 3,
+          "total_procedures": 4,
+          "published_procedures": 4,
           "withheld_procedures": 0,
           "open_questions": 4
         }
@@ -14334,7 +15587,7 @@ export default {
       {
         "jurisdiction_id": "PH",
         "review_status": "partial",
-        "researched_at": "2026-09-27",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "PH-etravel",
@@ -14361,6 +15614,31 @@ export default {
             "name_zh_hant": "eTravel——菲律賓一站式電子旅行申報系統（移民/健康/海關整合）",
             "applicability_zh_hant": "eTravel官方FAQ要求登記的範圍：抵達的菲律賓及外國旅客、抵達的菲律賓及外國機組船員、離境的菲律賓旅客——離境外國旅客不在要求登記之列。豁免：外國外交官及家屬、外國政要及代表團成員、9(e)簽證持有人，以及外交或公務/服務護照持有人。eTravel是菲律賓政府對出入境旅客的統一數字採集平臺，用於邊防管控、衛生監測與經濟分析；網頁版即可使用（無需下載應用，適配行動裝置），登記/更新免費，不收取任何線上付款。適用人群可在“抵達或離境菲律賓前72小時（3天）內”登記；截圖或列印 QR Code，登機前向航空公司職員出示——綠碼直接辦理入境邊檢，紅碼須先接受檢疫局(BOQ)複核。現金部分（據菲律賓海關局2026年3月2日通告）：海關接受經eTravel出行前申報，或在機場/海港指定櫃檯申報；出入境外幣超過等值1萬美元須全額申報；菲律賓比索超過5萬比索須申報並取得BSP事先書面許可（須在出發國離境前申請），批准用途限錢幣收藏、貨幣認知展示及點鈔分鈔設備測試校準配置。FAQ不含行李免稅額度或貨物申報欄位。",
             "timing_zh_hant": "適用人群的eTravel登記在相應抵達或離境前72小時（3天）內；QR Code 備妥供航空公司與邊檢查驗；現金可提前線上申報或在指定口岸櫃檯申報；超限比索須在離開始發國前取得BSP許可。"
+          },
+          {
+            "id": "PH-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Declaration of foreign currency above USD 10,000 and limit on Philippine currency (Bureau of Customs)",
+            "name_zh": "外币超过1万美元须申报及菲律宾比索携带限额（海关局）",
+            "agency": "Bureau of Customs (BOC), Philippines",
+            "official_url": "https://customs.gov.ph/boc-reiterates-existing-rules-on-currency-declaration-for-travelers/",
+            "channel": "conditional",
+            "applicability_en": "Applies on arrival and on departure. Foreign currency, including cash and similar travel funds, may be carried, but when the total exceeds US$10,000 or its equivalent in other foreign currencies, the full amount must be declared to the BOC. The declaration can be made through the eTravel system before travel or at designated BOC counters at airports and seaports. Philippine currency (banknotes, coins, cheques and other peso-denominated money): up to PHP 50,000 per person may be brought in or taken out without prior approval. Anything above that needs written authorization from the Bangko Sentral ng Pilipinas (BSP) and must be declared to the BOC. The BSP request must be filed before leaving the country of origin, and the BOC advisory says the BSP may authorize it only for numismatic purposes, currency awareness (for example museums, exhibits and literary materials) and testing, calibration and configuration of money counting or sorting machines. Peso amounts above PHP 50,000 carried without authorization are subject to confiscation.",
+            "applicability_zh": "入境和出境均适用。可携带外币（含现金及类似旅行资金），但合计超过1万美元或等值其他外币时，须向海关局（BOC）申报全部金额。可在出行前通过eTravel系统申报，或在机场、海港的海关局指定柜台申报。菲律宾货币（纸币、硬币、支票及其他以比索计价的货币形式）：每人携入或携出不超过5万比索无需事先批准；超过部分须取得菲律宾中央银行（BSP）书面授权，并向海关局申报。BSP授权申请须在离开出发国之前提出；据海关局通告，BSP仅可就钱币收藏、货币认知（如博物馆、展览和文学资料）以及点钞分钞设备的测试、校准和配置用途予以授权。未经授权携带超过5万比索的部分将被没收。",
+            "timing_en": "Foreign currency: on arrival or departure, online through eTravel before travel or at a BOC counter. Philippine currency above PHP 50,000: BSP authorization requested before leaving the country of origin, declared to the BOC at the border.",
+            "timing_zh": "外币：入境或出境时办理，可出行前通过eTravel在线申报，或在海关局柜台申报。超过5万比索的菲律宾货币：离开出发国前申请BSP授权，并在口岸向海关局申报。",
+            "fee": "unknown",
+            "source_ids": [
+              "PH-cash-boc-usd",
+              "PH-cash-boc-channel",
+              "PH-cash-boc-php-limit",
+              "PH-cash-boc-php-excess",
+              "PH-cash-boc-php-confiscation"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "外幣超過1萬美元須申報及菲律賓比索攜帶限額（海關局）",
+            "applicability_zh_hant": "入境和出境均適用。可攜帶外幣（含現金及類似旅行資金），但合計超過1萬美元或等值其他外幣時，須向海關局（BOC）申報全部金額。可在出行前通過eTravel系統申報，或在機場、海港的海關局指定櫃檯申報。菲律賓貨幣（紙幣、硬幣、支票及其他以比索計價的貨幣形式）：每人攜入或攜出不超過5萬比索無需事先批准；超過部分須取得菲律賓中央銀行（BSP）書面授權，並向海關局申報。BSP授權申請須在離開出發國之前提出；據海關局通告，BSP僅可就錢幣收藏、貨幣認知（如博物館、展覽和文學資料）以及點鈔分鈔設備的測試、校準和配置用途予以授權。未經授權攜帶超過5萬比索的部分將被沒收。",
+            "timing_zh_hant": "外幣：入境或出境時辦理，可出行前通過eTravel線上申報，或在海關局櫃檯申報。超過5萬比索的菲律賓貨幣：離開出發國前申請BSP授權，並在口岸向海關局申報。"
           }
         ],
         "sources": [
@@ -14375,11 +15653,41 @@ export default {
             "url": "https://customs.gov.ph/boc-reiterates-existing-rules-on-currency-declaration-for-travelers/",
             "title": "BOC Reiterates Existing Rules on Currency Declaration for Travelers, 2 March 2026 — Philippines Bureau of Customs",
             "publisher": "Philippines Bureau of Customs"
+          },
+          {
+            "id": "PH-cash-boc-usd",
+            "url": "https://customs.gov.ph/boc-reiterates-existing-rules-on-currency-declaration-for-travelers/",
+            "title": "BOC Reiterates Existing Rules on Currency Declaration for Travelers (2 March 2026) — Philippines Bureau of Customs",
+            "publisher": "Philippines Bureau of Customs"
+          },
+          {
+            "id": "PH-cash-boc-channel",
+            "url": "https://customs.gov.ph/boc-reiterates-existing-rules-on-currency-declaration-for-travelers/",
+            "title": "BOC Reiterates Existing Rules on Currency Declaration for Travelers (2 March 2026) — Philippines Bureau of Customs",
+            "publisher": "Philippines Bureau of Customs"
+          },
+          {
+            "id": "PH-cash-boc-php-limit",
+            "url": "https://customs.gov.ph/boc-reiterates-existing-rules-on-currency-declaration-for-travelers/",
+            "title": "BOC Reiterates Existing Rules on Currency Declaration for Travelers (2 March 2026) — Philippines Bureau of Customs",
+            "publisher": "Philippines Bureau of Customs"
+          },
+          {
+            "id": "PH-cash-boc-php-excess",
+            "url": "https://customs.gov.ph/boc-reiterates-existing-rules-on-currency-declaration-for-travelers/",
+            "title": "BOC Reiterates Existing Rules on Currency Declaration for Travelers (2 March 2026) — Philippines Bureau of Customs",
+            "publisher": "Philippines Bureau of Customs"
+          },
+          {
+            "id": "PH-cash-boc-php-confiscation",
+            "url": "https://customs.gov.ph/boc-reiterates-existing-rules-on-currency-declaration-for-travelers/",
+            "title": "BOC Reiterates Existing Rules on Currency Declaration for Travelers (2 March 2026) — Philippines Bureau of Customs",
+            "publisher": "Philippines Bureau of Customs"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
           "open_questions": 1
         }
@@ -14487,7 +15795,7 @@ export default {
       {
         "jurisdiction_id": "TH",
         "review_status": "verified",
-        "researched_at": "2026-09-12",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "TH-tdac",
@@ -14536,6 +15844,31 @@ export default {
             "name_zh_hant": "旅客免稅額度（泰國海關）——與TDAC分開",
             "applicability_zh_hant": "航空入境旅客僅在無應稅、禁止或受限物品時使用綠色通道。個人用品須為合理數量、總值不超過20,000泰銖，且不含禁限物品及食品。菸草限香菸200支，或菸草250克，或各類合計250克；酒不超過1升。超量菸酒須投入海關投棄箱，否則可能被追訴。非商業隨身物品總值不超過200,000泰銖時可在紅通道核稅；其他情形可能須另辦進口申報，申報本身不使禁限物品合法。",
             "timing_zh_hant": "抵達時在海關通道（紅/綠）核驗。"
+          },
+          {
+            "id": "TH-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Customs declaration of baht above THB 450,000 or foreign currency above USD 15,000",
+            "name_zh": "携带泰铢超过45万泰铢或外币超过1.5万美元须向海关申报",
+            "agency": "The Customs Department of Thailand (limits set by the Bank of Thailand)",
+            "official_url": "https://www.bot.or.th/en/our-roles/financial-markets/foreign-exchange-regulations/exchange-control-regulation.html",
+            "channel": "conditional",
+            "applicability_en": "Applies when entering and when leaving Thailand. Baht banknotes in an amount exceeding THB 450,000, or foreign currency banknotes in an amount exceeding USD 15,000 or its equivalent, require a Customs declaration. Entering, banknotes in baht and foreign currency may be brought in without an amount limit. Leaving, foreign currency banknotes may be taken out up to the amount bought from authorized banks or money changers, and baht banknotes up to THB 50,000 for most countries, or up to THB 2 million for countries bordering Thailand, Vietnam and China (Yunnan province only).",
+            "applicability_zh": "入境和出境均适用。携带泰铢纸币超过45万泰铢，或外币纸币超过1.5万美元（或等值外币），须向海关申报。入境时，泰铢和外币纸币的携带金额不设上限。出境时，外币纸币以向授权银行或兑换商购买的金额为限；泰铢纸币前往大多数国家最多5万泰铢，前往与泰国接壤的国家、越南以及中国（仅云南省）最多200万泰铢。",
+            "timing_en": "At the port or airport of entry or exit, when entering or leaving Thailand.",
+            "timing_zh": "入境或出境泰国时，在出入境口岸办理。",
+            "fee": "unknown",
+            "source_ids": [
+              "TH-cash-bot-declare",
+              "TH-cash-bot-in",
+              "TH-cash-bot-out-fx",
+              "TH-cash-bot-out-baht-neighbors",
+              "TH-cash-bot-out-baht-other"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "攜帶泰銖超過45萬泰銖或外幣超過1.5萬美元須向海關申報",
+            "applicability_zh_hant": "入境和出境均適用。攜帶泰銖紙幣超過45萬泰銖，或外幣紙幣超過1.5萬美元（或等值外幣），須向海關申報。入境時，泰銖和外幣紙幣的攜帶金額不設上限。出境時，外幣紙幣以向授權銀行或兌換商購買的金額為限；泰銖紙幣前往大多數國家最多5萬泰銖，前往與泰國接壤的國家、越南以及中國（僅雲南省）最多200萬泰銖。",
+            "timing_zh_hant": "入境或出境泰國時，在出入境口岸辦理。"
           }
         ],
         "sources": [
@@ -14562,11 +15895,41 @@ export default {
             "url": "https://www.customs.go.th/list_strc_simple_neted.php?empty=&ini_content=individual_160503_03_160905_01&lang=en&left_menu=menu_individual_submenu_01_160421_01&wcmmode=disabled",
             "title": "Customs procedures for arriving passengers",
             "publisher": "Thai Customs Department"
+          },
+          {
+            "id": "TH-cash-bot-declare",
+            "url": "https://www.bot.or.th/en/our-roles/financial-markets/foreign-exchange-regulations/exchange-control-regulation.html",
+            "title": "Exchange Control Regulation — Bank of Thailand",
+            "publisher": "Bank of Thailand"
+          },
+          {
+            "id": "TH-cash-bot-in",
+            "url": "https://www.bot.or.th/en/our-roles/financial-markets/foreign-exchange-regulations/exchange-control-regulation.html",
+            "title": "Exchange Control Regulation — Bank of Thailand",
+            "publisher": "Bank of Thailand"
+          },
+          {
+            "id": "TH-cash-bot-out-fx",
+            "url": "https://www.bot.or.th/en/our-roles/financial-markets/foreign-exchange-regulations/exchange-control-regulation.html",
+            "title": "Exchange Control Regulation — Bank of Thailand",
+            "publisher": "Bank of Thailand"
+          },
+          {
+            "id": "TH-cash-bot-out-baht-neighbors",
+            "url": "https://www.bot.or.th/en/our-roles/financial-markets/foreign-exchange-regulations/exchange-control-regulation.html",
+            "title": "Exchange Control Regulation — Bank of Thailand",
+            "publisher": "Bank of Thailand"
+          },
+          {
+            "id": "TH-cash-bot-out-baht-other",
+            "url": "https://www.bot.or.th/en/our-roles/financial-markets/foreign-exchange-regulations/exchange-control-regulation.html",
+            "title": "Exchange Control Regulation — Bank of Thailand",
+            "publisher": "Bank of Thailand"
           }
         ],
         "coverage": {
-          "total_procedures": 2,
-          "published_procedures": 2,
+          "total_procedures": 3,
+          "published_procedures": 3,
           "withheld_procedures": 0,
           "open_questions": 0
         }
@@ -16587,7 +17950,7 @@ export default {
       {
         "jurisdiction_id": "SY",
         "review_status": "partial",
-        "researched_at": "2026-09-12",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "SY-customs-rules-reference",
@@ -16623,7 +17986,7 @@ export default {
           "total_procedures": 1,
           "published_procedures": 1,
           "withheld_procedures": 0,
-          "open_questions": 1
+          "open_questions": 2
         }
       },
       {
@@ -18070,7 +19433,7 @@ export default {
       {
         "jurisdiction_id": "FI",
         "review_status": "partial",
-        "researched_at": "2026-09-27",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "fi-goods-declaration",
@@ -18095,6 +19458,36 @@ export default {
             "name_zh_hant": "超免稅額商品申報",
             "applicability_zh_hant": "自歐盟外入境芬蘭：乘飛機或輪船免稅商品價值上限430歐元，乘汽車、巴士或火車300歐元（乘遊艇或休閒用途飛行器抵達亦同）；商品須放入本人隨身行李攜帶，進口須為非商業性質（偶爾進口、本人或家人自用或作禮物）。超出限額時按整件商品全價徵收增值稅與關稅，而非僅超額部分；單件商品價格不可拆分為免稅與應稅兩部分，也不可與他人（含配偶）分攤，免稅攜帶權屬個人。超過價值限額或攜帶須向海關出示的受限商品時選擇紅通道；綠通道＝無申報物品，藍通道＝自歐盟乘飛機抵達且無申報物品；選錯通道貨物可能被扣留或沒收、被追繳雙倍稅款或涉嫌海關違規。傳統菸草製品（香菸、雪茄）不計入價值限額，鼻菸、電子煙及煙油計入限額；酒類與燃料另有單獨數量限制。自歐盟國家入境：自用商品免稅且不適用價值限額，但菸草、藥品等仍有限制。奧蘭群島、加那利群島等屬於歐盟但不在歐盟財政領土內的地區同樣適用430/300歐元規則。酒類額度與條件：未滿18週歲不得攜帶任何酒精飲料入境；未滿20週歲只能攜帶低度酒精飲料（≤22% vol）；年滿20週歲方可攜帶烈酒。自歐盟外入境免稅最高數量：16升啤酒（>0.5%）且4升靜止葡萄酒（紅、白、桃紅），另可攜帶1升烈酒（>22%、最高80%）或2升其他酒精飲料（≤22%，如起泡酒、long drink、蘋果酒、利口酒、味美思、苦艾酒、雪莉酒）；烈酒與≤22%飲料可按比例合併攜帶，只要總量不超（如0.5升烈酒＋1升起泡酒），靜止葡萄酒與啤酒不可合併；與抵達時使用的交通工具無關。自歐盟境內入境：供本人自用或作禮物、本人隨抵達車輛運輸即可免稅，無統一數量上限——110升啤酒、90升葡萄酒/蘋果酒/發酵型long drink（其中起泡酒最多60升）、20升中間產品（≤22%）、10升其他酒精飲料（>1.2%、最高80%）等數字僅為自用判斷參考，各類之間不可互相替代，超出須能可信證明供自用。加那利群島、奧蘭群島、途經奧蘭的芬瑞輪渡及其他屬於歐盟但不在歐盟財政領土內的地區屬例外：免稅量僅相當於自歐盟外的數量（16升啤酒、4升靜止葡萄酒、1升>22%烈酒或2升≤22%）；攜含稅購買的酒類（如自Alko購買）前往奧蘭群島時適用相同額度，僅在芬蘭本島與奧蘭群島之間航行的輪渡不得免稅向您出售超過2升啤酒。自EEA（歐盟國家及挪威、冰島、列支敦士登）外非空路入境的時間限制：居住在芬蘭者僅限旅程超過24小時方可攜帶酒類（不足24小時即使繳稅也不得攜帶）；居住在EEA外者僅限在芬停留超過72小時方可攜帶（過境旅程不適用）；自歐盟國家或奧蘭入境不適用該時限。自俄羅斯入境：烈性酒精飲料（>22%）及生產階段摻入酒精的低度飲料禁止進口（免稅店購買的同樣禁止）；僅可限量攜帶啤酒及發酵型葡萄酒、蘋果酒等其他低度飲料，供自用或作禮物。自用包括本人使用、家人使用及作禮物；收取金錢或任何其他對價即屬商業用途。菸草額度與條件：年滿18週歲方可攜帶。自歐盟外免稅攜帶：200支香菸或50支雪茄或100支小雪茄（每支≤3克）或250克手卷菸絲/菸斗絲/水煙絲；可按比例組合攜帶，只要總額度不超（如100支香菸＋50支小雪茄）；僅限本人自用——不得為家人攜帶或作禮物。繳稅攜帶（入境時向海關申報繳稅）時自歐盟外的最高數量為：200支香菸且50支雪茄且100支小雪茄且250克手卷菸絲/菸斗絲/水煙絲且200劑量單位其他菸草製品或250克其他散裝菸草製品（如煙棒、含菸草膠囊）且200單位已卷制草本吸菸製品另加250克散裝草本吸菸製品；即便繳稅也不得超過該量。自其他歐盟國家入境時，同等數量為僅限本人自用、須隨本人抵達車輛運輸的最高攜帶量，即便繳稅也不得增加；該限制針對包裝上無芬蘭文/瑞典文健康警示圖文的製品，故200/50/100/250等數字不應理解為對所有歐盟菸草進口的普遍硬上限。奧蘭群島適用不同的限制——詳見芬蘭海關旅行頁的奧蘭群島專節。自俄羅斯進口所有香菸、小雪茄及雪茄均被禁止。自EEA外非空路入境：居住在芬蘭者旅程不超過24小時不得攜帶菸草製品、煙油及鼻菸（例外：明顯在離芬前取得）；居住在EEA外者在芬停留非過境且不超過三日的，不得攜帶（例外：明顯供本人停留期間自用）。",
             "timing_zh_hant": "抵達芬蘭時：商品超過免稅價值限額、酒類或菸草超過免稅數量或不滿足免稅條件、或攜帶須向海關出示的受限商品時選擇紅通道；自歐盟外超過免稅量攜帶菸草須選擇紅通道向海關申報並繳稅（以繳稅上限為限）。如有疑問請走紅通道向關員諮詢。入境點無通道標識時，須以其他方式向海關申報。"
+          },
+          {
+            "id": "fi-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Cash declaration on entering or leaving the EU through Finland (EUR 10,000 or more)",
+            "name_zh": "经芬兰入出欧盟的现金申报（1 万欧元及以上）",
+            "agency": "Tulli (Finnish Customs)",
+            "official_url": "https://www.suomi.fi/services/declaring-cash-when-travelling-to-or-from-eu-nations-finnish-customs/5dc6e849-7d54-4847-83bd-7094033c380c",
+            "channel": "paper",
+            "applicability_en": "Direction: both. A traveller entering the EU or leaving the EU through Finland with cash worth EUR 10,000 or more (or the equivalent in another currency) must declare it to Finnish Customs and make it available for control. Under the Finnish Act 432/2021 the declaration goes to the competent authority, which is Customs (the police and the Border Guard are also competent when carrying out customs tasks). Cash here means banknotes and coins, other means of payment such as cheques and negotiable promissory notes, gold coins with at least 90% gold content, and pieces, bars and blocks of gold with at least 99.5% gold content. The declaration is not treated as made if the information is incorrect or incomplete or the cash is not made available for control. Failing to declare, or declaring incompletely or incorrectly, can be punished with a fine, and Customs can temporarily take the cash into custody. Cash sent as part of a consignment without a traveller is a separate matter and is not covered here.",
+            "applicability_zh": "方向：双向。经芬兰入境欧盟或从欧盟出境的旅客，携带价值 1 万欧元及以上（或等值外币）的现金，须向芬兰海关申报，并将现金交由检查。依芬兰第 432/2021 号法，申报对象是主管机关，即海关（警察和边防部队在履行海关职能时同样有权）。此处现金包括：纸币和硬币；支票、可转让本票等其他支付工具；含金量至少 90% 的金币；含金量至少 99.5% 的金块、金条和金锭。若所提供信息不实或不全，或现金未交由检查，不视为已申报。未申报或申报不全、不实，可被处罚金，海关可临时扣留现金。随货物发送、无旅客随行的现金属另一项事项，不在此列。",
+            "timing_en": "Print and fill in the cash declaration form before travelling and attach a copy of your passport or identity document. Hand the form to Finnish Customs when you arrive in or leave Finland; on arrival, use the red channel or declare the cash to Customs in another manner.",
+            "timing_zh": "出行前打印并填好现金申报表，并附上护照或身份证件复印件。抵达芬兰或离开芬兰时将申报表交给芬兰海关；入境时走红色通道，或以其他方式向海关申报现金。",
+            "fee": {
+              "amount": 0,
+              "currency": "EUR",
+              "note": "Finnish Customs lists the service as free of charge."
+            },
+            "source_ids": [
+              "fi-suomifi-cash",
+              "fi-suomifi-cash-form",
+              "fi-suomifi-cash-channel",
+              "fi-suomifi-cash-free",
+              "fi-finlex-432-2021",
+              "fi-eu-reg-2018-1672"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "經芬蘭入出歐盟的現金申報（1 萬歐元及以上）",
+            "applicability_zh_hant": "方向：雙向。經芬蘭入境歐盟或從歐盟出境的旅客，攜帶價值 1 萬歐元及以上（或等值外幣）的現金，須向芬蘭海關申報，並將現金交由檢查。依芬蘭第 432/2021 號法，申報對象是主管機關，即海關（警察和邊防部隊在履行海關職能時同樣有權）。此處現金包括：紙幣和硬幣；支票、可轉讓本票等其他支付工具；含金量至少 90% 的金幣；含金量至少 99.5% 的金塊、金條和金錠。若所提供資訊不實或不全，或現金未交由檢查，不視為已申報。未申報或申報不全、不實，可被處罰金，海關可臨時扣留現金。隨貨物發送、無旅客隨行的現金屬另一項事項，不在此列。",
+            "timing_zh_hant": "出行前列印並填好現金申報表，並附上護照或身份證件複印件。抵達芬蘭或離開芬蘭時將申報表交給芬蘭海關；入境時走紅色通道，或以其他方式向海關申報現金。"
           }
         ],
         "sources": [
@@ -18121,13 +19514,49 @@ export default {
             "url": "https://tulli.fi/en/restrictions/tobacco/traveller-imports",
             "title": "Traveller imports of tobacco - Finnish Customs",
             "publisher": "Finnish Customs (tulli.fi)"
+          },
+          {
+            "id": "fi-suomifi-cash",
+            "url": "https://www.suomi.fi/services/declaring-cash-when-travelling-to-or-from-eu-nations-finnish-customs/5dc6e849-7d54-4847-83bd-7094033c380c",
+            "title": "Declaring cash when travelling to or from EU nations — Suomi.fi (service of Finnish Customs)",
+            "publisher": "Suomi.fi / Finnish Customs (Tulli)"
+          },
+          {
+            "id": "fi-suomifi-cash-form",
+            "url": "https://www.suomi.fi/services/declaring-cash-when-travelling-to-or-from-eu-nations-finnish-customs/5dc6e849-7d54-4847-83bd-7094033c380c",
+            "title": "Declaring cash when travelling to or from EU nations — Suomi.fi (service of Finnish Customs)",
+            "publisher": "Suomi.fi / Finnish Customs (Tulli)"
+          },
+          {
+            "id": "fi-suomifi-cash-channel",
+            "url": "https://www.suomi.fi/services/declaring-cash-when-travelling-to-or-from-eu-nations-finnish-customs/5dc6e849-7d54-4847-83bd-7094033c380c",
+            "title": "Declaring cash when travelling to or from EU nations — Suomi.fi (service of Finnish Customs)",
+            "publisher": "Suomi.fi / Finnish Customs (Tulli)"
+          },
+          {
+            "id": "fi-suomifi-cash-free",
+            "url": "https://www.suomi.fi/services/declaring-cash-when-travelling-to-or-from-eu-nations-finnish-customs/5dc6e849-7d54-4847-83bd-7094033c380c",
+            "title": "Declaring cash when travelling to or from EU nations — Suomi.fi (service of Finnish Customs)",
+            "publisher": "Suomi.fi / Finnish Customs (Tulli)"
+          },
+          {
+            "id": "fi-finlex-432-2021",
+            "url": "https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/act/statute-consolidated/2021/432/fin@",
+            "title": "Laki Euroopan unioniin saapuvien tai sieltä poistuvien käteisvarojen valvonnasta 432/2021 (ajantasainen) — Finlex",
+            "publisher": "Finlex (Oikeusministeriö)"
+          },
+          {
+            "id": "fi-eu-reg-2018-1672",
+            "url": "https://publications.europa.eu/resource/celex/32018R1672",
+            "title": "Regulation (EU) 2018/1672 on controls on cash entering or leaving the Union — Official Journal of the European Union",
+            "publisher": "Publications Office of the European Union (EUR-Lex)"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
-          "open_questions": 3
+          "open_questions": 4
         }
       },
       {
@@ -18906,7 +20335,7 @@ export default {
       {
         "jurisdiction_id": "SJ",
         "review_status": "partial",
-        "researched_at": "2026-09-26",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "SJ-customs-rules-reference",
@@ -18942,13 +20371,13 @@ export default {
           "total_procedures": 1,
           "published_procedures": 1,
           "withheld_procedures": 0,
-          "open_questions": 2
+          "open_questions": 3
         }
       },
       {
         "jurisdiction_id": "SE",
         "review_status": "partial",
-        "researched_at": "2026-10-13",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "se-goods-declaration",
@@ -18974,6 +20403,30 @@ export default {
             "name_zh_hant": "超免稅額商品申報",
             "applicability_zh_hant": "入境瑞典：在免稅額度內且不涉特殊規定的貨物走綠色“Nothing to declare”通道（自歐盟直接抵達且無申報物走藍色通道）；攜超額貨物走綠/藍通道即構成走私。自歐盟外入境，貨物超過免稅額度或受特殊規定約束時，必須主動走紅“Goods to declare”通道申報；不確定時一律走紅通道。普通貨物價值免稅額（與菸酒消費稅規則分開計算，後者另有數量額度）：自 2026 年 7 月 1 日起按 Tullverket TFS 2026:6，航空/海路旅客 SEK 5,000（430 歐元）、其他旅客 SEK 3,500（300 歐元），取代 TFS 2023:6；超額時單件商品按整體價格計稅，多件商品則對使總額超過限額的商品計稅；該支出為按商品計徵的關稅與稅款，並非固定申報費，金額隨商品而異。消費指引將 SEK 5,000 額度表述為適用“乘飛機或渡輪（商業營運）”的旅客，未表明私人飛機/私人遊艇適用，此類旅客不應徑直套用高檔額度。酒精（須滿 20 歲，自行攜帶、自用/家用）：自歐盟外免稅額為 1 升烈酒或 2 升加強型葡萄酒（含起泡），另加 4 升葡萄酒與 16 升啤酒（指引對瑞典居民的非歐盟額度附加離境≥20 小時或搭乘商業航班條件）；自歐盟入境 10 升烈酒/20 升加強酒/90 升葡萄酒（含至多 60 升起泡）/110 升啤酒為個人用途評估參考值，非自動硬性進口上限。菸草及含尼古丁產品（須滿 18 歲，自用/家用）：自歐盟外免稅額為 200 支香菸或 100 支 cigariller 或 50 支雪茄或 250 克菸絲或 250 克其他菸草，可按比例組合；瑞典居民離境不足 20 小時（指引另列商業航班條件）降至 40 支香菸或 20 支雪茄/cigariller 或 100 克其他菸草製品（含口含煙）；自歐盟入境 800 支香菸/400 支 cigariller/200 支雪茄/1 公斤菸絲為個人用途評估參考，非自動硬性上限；自歐盟外攜帶煙油等尼古丁產品改按旅客價值額度 SEK 5,000/3,500 計算。",
             "timing_zh_hant": "在邊境：選擇紅色“Goods to declare”通道並向海關關員出示貨物；部分商品可線上申報。若無監管區或無關員在場，使用紅通道內的電話（撥打海報上的號碼）或前往最近的海關辦事處；丹麥—瑞典直達列車旅客應尋找制服關員或致電指揮中心。不確定時一律走紅通道。"
+          },
+          {
+            "id": "se-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Declaration of cash of EUR 10,000 or more when entering or leaving Sweden",
+            "name_zh": "进出瑞典携带现金 1 万欧元及以上申报",
+            "agency": "Tullverket (Swedish Customs)",
+            "official_url": "https://www.tullverket.se/en/startpage/private/travelling/travelling/travellingwithcashandorequivalentassets.4.311bf4f016e69d6ea0d9df.html",
+            "channel": "conditional",
+            "applicability_en": "Direction: both. A person carrying cash worth EUR 10,000 or more (or the equivalent in another currency) into or out of Sweden must declare it to Swedish Customs (Tullverket) and make it available for control. Two legal bases cover the two kinds of border. For travel into or out of the EU, Article 3 of Regulation (EU) 2018/1672 sets the duty. For travel between Sweden and another EU country, section 3 a of the Swedish Border Act (inregränslagen, 1996:701, in the version through SFS 2026:415) sets the same threshold and the same duty. Under the Swedish Act, cash means banknotes and coins, bearer negotiable instruments and commodities used as highly liquid stores of value; the EU Regulation also lists prepaid cards. The declaration counts as not made if the information given is incorrect or incomplete or the cash is not made available for control. Cash sent as part of a consignment without a traveller (unaccompanied cash) is a separate matter: Customs may ask the sender or recipient for a disclosure within 30 days, and that is not covered here.",
+            "applicability_zh": "方向：双向。携带价值 1 万欧元及以上（或等值外币）现金进入或离开瑞典的人员，须向瑞典海关（Tullverket）申报，并将现金交由检查。两类边境分别有法律依据：往来欧盟境外，依欧盟第 2018/1672 号条例第 3 条；往来瑞典与其他欧盟国家之间，依瑞典《内部边境法》（inregränslagen，1996:701，含至 SFS 2026:415 的修订）第 3 a 条，门槛和义务相同。按瑞典该法，现金指纸币和硬币、无记名可转让票据以及用作高流动性价值储存的商品；欧盟条例还列入预付卡。若所提供信息不实或不全，或现金未交由检查，不视为已申报。随货物发送、无旅客随行的现金属另一事项：海关可要求发送方或收件方在 30 天内披露，不在此列。",
+            "timing_en": "The Swedish Act says to declare immediately (genast) to Tullverket. According to the government bill, the declaration for the EU external border is filed either in the notification service on the Tullverket website or on a special form, which is available on the Tullverket website and at customs lanes and customs offices. The bill does not say which route to use when travelling to or from another EU country.",
+            "timing_zh": "瑞典法规定应立即（genast）向海关申报。据政府议案，对欧盟外部边境的申报，可通过海关网站上的申报服务办理，或使用专用表格；表格可在海关网站、海关通道和海关办事处取得。往来其他欧盟国家时用哪种途径，议案没有说明。",
+            "fee": "unknown",
+            "source_ids": [
+              "se-inregranslagen-threshold",
+              "se-inregranslagen-duty",
+              "se-eu-reg-2018-1672",
+              "se-prop-2025-26-81-how"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "進出瑞典攜帶現金 1 萬歐元及以上申報",
+            "applicability_zh_hant": "方向：雙向。攜帶價值 1 萬歐元及以上（或等值外幣）現金進入或離開瑞典的人員，須向瑞典海關（Tullverket）申報，並將現金交由檢查。兩類邊境分別有法律依據：往來歐盟境外，依歐盟第 2018/1672 號條例第 3 條；往來瑞典與其他歐盟國家之間，依瑞典《內部邊境法》（inregränslagen，1996:701，含至 SFS 2026:415 的修訂）第 3 a 條，門檻和義務相同。按瑞典該法，現金指紙幣和硬幣、無記名可轉讓票據以及用作高流動性價值儲存的商品；歐盟條例還列入預付卡。若所提供資訊不實或不全，或現金未交由檢查，不視為已申報。隨貨物發送、無旅客隨行的現金屬另一事項：海關可要求發送方或收件方在 30 天內披露，不在此列。",
+            "timing_zh_hant": "瑞典法規定應立即（genast）向海關申報。據政府議案，對歐盟外部邊境的申報，可通過海關網站上的申報服務辦理，或使用專用表格；表格可在海關網站、海關通道和海關辦事處取得。往來其他歐盟國家時用哪種途徑，議案沒有說明。"
           }
         ],
         "sources": [
@@ -19006,13 +20459,37 @@ export default {
             "url": "https://www.tullverket.se/en/startpage/private/travelling/bringinggoodswhentravelling/buyingtobaccoandothernicotinecontainingproductswhentravelling.4.311bf4f016e69d6ea0d633.html",
             "title": "Buying tobacco and other nicotine-containing products when travelling — Tullverket",
             "publisher": "Tullverket (tullverket.se)"
+          },
+          {
+            "id": "se-inregranslagen-threshold",
+            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inregranslag-1996701_sfs-1996-701/",
+            "title": "Inregränslag (1996:701), 3 a § (Skyldighet att anmäla kontanta medel) — Svensk författningssamling",
+            "publisher": "Sveriges riksdag (Svensk författningssamling)"
+          },
+          {
+            "id": "se-inregranslagen-duty",
+            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inregranslag-1996701_sfs-1996-701/",
+            "title": "Inregränslag (1996:701), 3 a § (Skyldighet att anmäla kontanta medel) — Svensk författningssamling",
+            "publisher": "Sveriges riksdag (Svensk författningssamling)"
+          },
+          {
+            "id": "se-eu-reg-2018-1672",
+            "url": "https://publications.europa.eu/resource/celex/32018R1672",
+            "title": "Regulation (EU) 2018/1672 on controls on cash entering or leaving the Union — Official Journal of the European Union",
+            "publisher": "Publications Office of the European Union (EUR-Lex)"
+          },
+          {
+            "id": "se-prop-2025-26-81-how",
+            "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/kontroller-av-kontanta-medel-vid-den-inre-gransen_hd0381/html/",
+            "title": "Proposition 2025/26:81 Kontroller av kontanta medel vid den inre gränsen — Regeringen / Sveriges riksdag",
+            "publisher": "Sveriges riksdag (Regeringens proposition 2025/26:81)"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
-          "open_questions": 1
+          "open_questions": 2
         }
       },
       {
@@ -20283,7 +21760,7 @@ export default {
       {
         "jurisdiction_id": "AT",
         "review_status": "verified",
-        "researched_at": "2026-09-27",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "at-goods-declaration",
@@ -20295,8 +21772,8 @@ export default {
             "channel": "conditional",
             "applicability_en": "Direction: travellers entering Austria from a non-EU (third) country. The figures below are the general travellers' duty-free amounts; the reduced cross-border-traffic amounts (including the Samnaun Valley tobacco amounts for travellers domiciled in Austria) are special regimes listed separately at the end and must not be read as the general values. Goods intended for your own personal use or for persons living in the same household can be brought into Austria without paying charges. When going through customs control you must declare the following goods — in other words you must submit a customs declaration for: goods not intended for your personal use; goods obtained outside the EU which exceed the duty-free amounts for tobacco products, alcoholic beverages and medicinal products or the duty-free allowance for other goods; and goods that are subject to prohibitions or restrictions on imports. Duty-free when imported in your personal luggage for your own personal use or as a gift, traveller aged 17 or older: tobacco — 200 cigarettes or 100 cigarillos or 50 cigars or 250 grams of smoking tobacco or a proportional combination of these goods (for the product category 'Tobacco for heating'/tobacco sticks the duty-free limits of the 'Other goods' section apply); alcoholic beverages — 1 litre of alcohol, distilled beverages and spirits with an alcohol content exceeding 22% vol. (including undenatured ethyl alcohol of 80% vol. and over), or 2 litres of alcohol and alcoholic beverages with an alcohol content not exceeding 22% vol., or a proportional combination of these goods, and in addition 4 litres of non-sparkling wines as well as 16 litres of beer; medicine — amounts consistent with your personal needs during the trip (without authorisation, travellers resident in the EU may import medication they already carried with them on departure; import of medication bought abroad is only permitted up to three retailer packages per person); other goods — with a cumulative value of EUR 430 for airline travellers or EUR 300 for all other travellers per calendar day, provided it is a non-commercial import; for travellers younger than 15 years those amounts are generally reduced to EUR 150. Within those amounts the product group 'Tobacco for heating' may not contain more than 800 tobacco sticks or, in other presentation, 250 grams of tobacco; when exceeding these indicative levels you must demonstrate that the goods really are for your personal use. Several travellers are not allowed to pool their allowances, and the duty-free allowance may be claimed once per calendar day. When travelling via another EU member state, that member state's individual regulations must be considered. Import prohibitions and restrictions also apply to the duty-free goods listed above. Special regime — reduced duty-free amounts in cross-border traffic: tobacco (17+) 25 cigarettes or 10 cigarillos or 5 cigars or 25 grams of smoking tobacco or a proportional combination; alcohol (17+) 0.25 litres exceeding 22% vol. or 0.75 litres not exceeding 22% vol. or a proportional combination; 1 litre non-sparkling wine (17+); 2 litres beer (17+); other goods up to a cumulative value of EUR 40 (non-commercial); the 'small' cross-border traffic agreement covers persons residing at the border of Austria's neighbouring countries Switzerland and Liechtenstein, with further food-related exemptions. Special regime — Samnaun Valley: for travellers domiciled in Austria entering from the Swiss customs exclave Samnaun Valley, reduced tobacco amounts apply (17+): 40 cigarettes or 20 cigarillos or 10 cigars or 50 grams of smoking tobacco or a proportional combination; other goods remain duty-free at the general cumulative values (EUR 430 airline / EUR 300 other travellers per calendar day, EUR 150 for travellers under 15); entries with tobacco products obtained in Samnaun Valley via the customs offices of Pfunds, Spiss or Martinsbruck are regarded as direct imports.",
             "applicability_zh": "方向：自非欧盟（第三国）国家入境奥地利的旅客。以下为一般旅客免税数值；边境通勤减免数值（含居住在奥地利的旅客自 Samnaun 飞地入境的烟草减免）为文末单列的特别制度，不得当作一般数值使用。自用或供同住家庭成员使用的物品，可免税带入奥地利。经海关检查时必须申报下列物品——即须提交海关申报（submit a customs declaration）：非自用物品；在欧盟境外获得、超过烟草制品、酒精饮料、药品免税数量或超过其他商品免税额度的物品；受进口禁止或限制的物品。在随身行李中自用或作为礼品免税（须满 17 周岁）：烟草——200 支香烟，或 100 支小雪茄（cigarillos），或 50 支雪茄，或 250 克吸用烟草，或按比例组合（'加热烟草'即烟草棒类产品适用'其他商品'一节的免税限额）；酒精饮料——酒精含量超过 22% vol. 的酒精、蒸馏饮料和烈酒（含 80% vol. 及以上的未变性乙醇）1 升，或酒精含量不超过 22% vol. 的酒精饮料 2 升，或按比例组合，另加 4 升不起泡葡萄酒以及 16 升啤酒；药品——与旅途个人需要相一致的数量（欧盟居民无需许可即可携带其出境时已随身携带的药品入境；在境外购买的药品每人仅限 3 个零售包装）；其他商品——每公历日累计价值航空旅客 430 欧元、其他所有旅客 300 欧元，以非商业性入境为前提；15 岁以下旅客该额度一般降为 150 欧元。在该额度内，'加热烟草'类产品不得超过 800 支烟草棒或以其他形态计 250 克烟草；超过该指示性数量时，须证明物品确为自用。多名旅客不得合并免税额度（例如两人不能合并 80 欧元额度免税带入一件商品）；免税额度每公历日只能主张一次。经另一欧盟成员国中转前来时，须注意该成员国自身的规定。上述免税商品同样适用进口禁止与限制。特别制度——边境通勤减免：烟草（17 周岁及以上）25 支香烟或 10 支小雪茄或 5 支雪茄或 25 克吸用烟草或按比例组合；酒精（17 周岁及以上）超过 22% vol. 的 0.25 升或不超过 22% vol. 的 0.75 升或按比例组合；不起泡葡萄酒（17 周岁及以上）1 升；啤酒（17 周岁及以上）2 升；其他商品累计价值不超过 40 欧元（非商业性）；'小'边境交通协议涵盖居住在奥地利邻国瑞士和列支敦士登边境的人员，并含特定食品的进一步豁免。特别制度——Samnaun 飞地：居住在奥地利的旅客自瑞士海关飞地 Samnaun 入境时，烟草适用减免数量（17 周岁及以上）：40 支香烟或 20 支小雪茄或 10 支雪茄或 50 克吸用烟草或按比例组合；其他商品仍按一般累计价值免税（航空旅客每公历日 430 欧元／其他旅客 300 欧元，15 岁以下 150 欧元）；自 Samnaun 购得烟草制品经 Pfunds、Spiss 或 Martinsbruck 海关办事处入境视同直接进口。",
-            "timing_en": "On arrival at the border: when going through customs control, submit the customs declaration there for goods not intended for personal use, goods obtained outside the EU exceeding the duty-free amounts/allowance, and prohibited or restricted goods; goods within the allowances for personal or same-household use pass without charges. Current BMF page: /topics/customs/travellers/entry-from-non-eu-countries/duty-free-amounts-and-allowances.html; the v21 URL /topics/customs/travelling/entry-from-non-eu-countries.html was re-verified as 404 on 2026-09-27 and is no longer citable.",
-            "timing_zh": "抵达边境时：经海关检查须当场提交海关申报，对象为非自用物品、在欧盟境外获得且超过免税数量/额度的物品以及禁止或限制进口的物品；额度内的自用或同住家庭用品免税放行。现行 BMF 页面为 /topics/customs/travellers/entry-from-non-eu-countries/duty-free-amounts-and-allowances.html；v21 旧地址 /topics/customs/travelling/entry-from-non-eu-countries.html 已于 2026-09-27 复核为 404，不得继续引用。",
+            "timing_en": "On arrival at the border: when going through customs control, submit the customs declaration there for goods not intended for personal use, goods obtained outside the EU exceeding the duty-free amounts/allowance, and prohibited or restricted goods; goods within the allowances for personal or same-household use pass without charges.",
+            "timing_zh": "抵达边境时：经海关检查须当场提交海关申报，对象为非自用物品、在欧盟境外获得且超过免税数量/额度的物品以及禁止或限制进口的物品；额度内的自用或同住家庭用品免税放行。",
             "fee": "unknown",
             "source_ids": [
               "at-bmf-allowances-current",
@@ -20305,26 +21782,81 @@ export default {
             "verified_at": "2026-09-27",
             "name_zh_hant": "自非歐盟國家入境奧地利的物品申報（免稅數量與免稅額度）——奧地利海關／財政部（BMF）",
             "applicability_zh_hant": "方向：自非歐盟（第三國）國家入境奧地利的旅客。以下為一般旅客免稅數值；邊境通勤減免數值（含居住在奧地利的旅客自 Samnaun 飛地入境的菸草減免）為文末單列的特別制度，不得當作一般數值使用。自用或供同住家庭成員使用的物品，可免稅帶入奧地利。經海關檢查時必須申報下列物品——即須提交海關申報（submit a customs declaration）：非自用物品；在歐盟境外獲得、超過菸草製品、酒精飲料、藥品免稅數量或超過其他商品免稅額度的物品；受進口禁止或限制的物品。在隨身行李中自用或作為禮品免稅（須滿 17 週歲）：菸草——200 支香菸，或 100 支小雪茄（cigarillos），或 50 支雪茄，或 250 克吸用菸草，或按比例組合（'加熱菸草'即菸草棒類產品適用'其他商品'一節的免稅限額）；酒精飲料——酒精含量超過 22% vol. 的酒精、蒸餾飲料和烈酒（含 80% vol. 及以上的未變性乙醇）1 升，或酒精含量不超過 22% vol. 的酒精飲料 2 升，或按比例組合，另加 4 升不起泡葡萄酒以及 16 升啤酒；藥品——與旅途個人需要相一致的數量（歐盟居民無需許可即可攜帶其出境時已隨身攜帶的藥品入境；在境外購買的藥品每人僅限 3 個零售包裝）；其他商品——每公曆日累計價值航空旅客 430 歐元、其他所有旅客 300 歐元，以非商業性入境為前提；15 歲以下旅客該額度一般降為 150 歐元。在該額度內，'加熱菸草'類產品不得超過 800 支菸草棒或以其他形態計 250 克菸草；超過該指示性數量時，須證明物品確為自用。多名旅客不得合併免稅額度（例如兩人不能合併 80 歐元額度免稅帶入一件商品）；免稅額度每公曆日只能主張一次。經另一歐盟成員國中轉前來時，須注意該成員國自身的規定。上述免稅商品同樣適用進口禁止與限制。特別制度——邊境通勤減免：菸草（17 週歲及以上）25 支香菸或 10 支小雪茄或 5 支雪茄或 25 克吸用菸草或按比例組合；酒精（17 週歲及以上）超過 22% vol. 的 0.25 升或不超過 22% vol. 的 0.75 升或按比例組合；不起泡葡萄酒（17 週歲及以上）1 升；啤酒（17 週歲及以上）2 升；其他商品累計價值不超過 40 歐元（非商業性）；'小'邊境交通協議涵蓋居住在奧地利鄰國瑞士和列支敦士登邊境的人員，並含特定食品的進一步豁免。特別制度——Samnaun 飛地：居住在奧地利的旅客自瑞士海關飛地 Samnaun 入境時，菸草適用減免數量（17 週歲及以上）：40 支香菸或 20 支小雪茄或 10 支雪茄或 50 克吸用菸草或按比例組合；其他商品仍按一般累計價值免稅（航空旅客每公曆日 430 歐元／其他旅客 300 歐元，15 歲以下 150 歐元）；自 Samnaun 購得菸草製品經 Pfunds、Spiss 或 Martinsbruck 海關辦事處入境視同直接進口。",
-            "timing_zh_hant": "抵達邊境時：經海關檢查須當場提交海關申報，對象為非自用物品、在歐盟境外獲得且超過免稅數量/額度的物品以及禁止或限制進口的物品；額度內的自用或同住家庭用品免稅放行。現行 BMF 頁面為 /topics/customs/travellers/entry-from-non-eu-countries/duty-free-amounts-and-allowances.html；v21 舊地址 /topics/customs/travelling/entry-from-non-eu-countries.html 已於 2026-09-27 複核為 404，不得繼續引用。"
+            "timing_zh_hant": "抵達邊境時：經海關檢查須當場提交海關申報，對象為非自用物品、在歐盟境外獲得且超過免稅數量/額度的物品以及禁止或限制進口的物品；額度內的自用或同住家庭用品免稅放行。"
+          },
+          {
+            "id": "at-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Cash declaration on entering or leaving the EU through Austria (EUR 10,000 or more)",
+            "name_zh": "经奥地利入出欧盟的现金申报（1 万欧元及以上）",
+            "agency": "Zollamt Österreich / Bundesministerium für Finanzen (BMF)",
+            "official_url": "https://www.oesterreich.gv.at/de/themen/eu_und_international/einfuhr-von-waren-nach-oesterreich-und-zoll/Seite.2960080",
+            "channel": "conditional",
+            "applicability_en": "Direction: both, at the EU external border. All travellers and crew members who enter or leave the EU by air, land, rail or sea carrying cash worth EUR 10,000 or more (or the equivalent in other currencies) must declare it to customs when Austria is the Member State of entry or exit. Cash includes banknotes and coins, bearer negotiable instruments such as cheques, travellers' cheques, promissory notes and money orders, gold coins with at least 90% gold content, and gold bars, nuggets or clumps with at least 99.5% gold content. Casino chips are not cash. The EUR 10,000 limit applies to each member of a travelling group separately. Parents or legal guardians declare for minors and adults without legal capacity. A traveller carrying cash for a company must name the company in the declaration. Undeclared cash of EUR 10,000 or more may be retained or seized and penalties may follow; customs may also act on smaller amounts if there are signs of criminal activity. Entering Austria from another EU member state does not call for an unprompted declaration: travellers only have to disclose cash of EUR 10,000 or more if customs ask.",
+            "applicability_zh": "方向：双向，指欧盟外部边境。所有经空运、陆路、铁路或海路入境或离开欧盟的旅客和机组人员，携带价值 1 万欧元及以上（或等值外币）现金，且以奥地利为入境或出境成员国时，须向海关申报。现金包括纸币和硬币、无记名可转让票据（如支票、旅行支票、本票和汇票）、含金量至少 90% 的金币、含金量至少 99.5% 的金条、金块或金锭；赌场筹码不算现金。1 万欧元限额对同行团体中的每个人分别适用。未成年人和无行为能力的成年人由父母或法定监护人代为申报。为公司携带现金的，须在申报中写明公司名称。未申报的 1 万欧元及以上现金可被扣留或没收并可能受罚；有犯罪迹象时，海关对更小金额也可采取行动。从其他欧盟成员国入境奥地利无须主动申报：仅在海关询问时，旅客才须说明 1 万欧元及以上的现金。",
+            "timing_en": "Fill in the cash declaration form (Barmittelerklärung, form CC2) and hand it to the customs office when you enter or leave the EU. Austrian customs recommend filling in the declaration beforehand and sending it electronically to Zollamt Österreich for quicker handling; customs officers answer questions and help with the form.",
+            "timing_zh": "入境或离开欧盟时填写现金申报表（Barmittelerklärung，表格 CC2）并交给海关办事处。奥地利海关建议提前填好申报并以电子方式发送给奥地利海关局（Zollamt Österreich）以加快办理；海关人员解答疑问并协助填表。",
+            "fee": "unknown",
+            "source_ids": [
+              "at-oegv-barmittel-duty",
+              "at-oegv-barmittel-form",
+              "at-oegv-barmittel-electronic",
+              "at-bmf-cash-controls",
+              "at-oegv-barmittel-intra-eu"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "經奧地利入出歐盟的現金申報（1 萬歐元及以上）",
+            "applicability_zh_hant": "方向：雙向，指歐盟外部邊境。所有經空運、陸路、鐵路或海路入境或離開歐盟的旅客和機組人員，攜帶價值 1 萬歐元及以上（或等值外幣）現金，且以奧地利為入境或出境成員國時，須向海關申報。現金包括紙幣和硬幣、無記名可轉讓票據（如支票、旅行支票、本票和匯票）、含金量至少 90% 的金幣、含金量至少 99.5% 的金條、金塊或金錠；賭場籌碼不算現金。1 萬歐元限額對同行團體中的每個人分別適用。未成年人和無行為能力的成年人由父母或法定監護人代為申報。為公司攜帶現金的，須在申報中寫明公司名稱。未申報的 1 萬歐元及以上現金可被扣留或沒收並可能受罰；有犯罪跡象時，海關對更小金額也可採取行動。從其他歐盟成員國入境奧地利無須主動申報：僅在海關詢問時，旅客才須說明 1 萬歐元及以上的現金。",
+            "timing_zh_hant": "入境或離開歐盟時填寫現金申報表（Barmittelerklärung，表格 CC2）並交給海關辦事處。奧地利海關建議提前填好申報並以電子方式發送給奧地利海關局（Zollamt Österreich）以加快辦理；海關人員解答疑問並協助填表。"
           }
         ],
         "sources": [
           {
             "id": "at-bmf-allowances-current",
             "url": "https://www.bmf.gv.at/en/topics/customs/travellers/entry-from-non-eu-countries/duty-free-amounts-and-allowances.html",
-            "title": "Duty-Free Amounts and Duty-Free Allowance — BMF (bmf.gv.at); captured live 2026-09-27 (HTTP 200); states the customs-declaration duty and the general, cross-border-traffic and Samnaun figures",
+            "title": "Duty-Free Amounts and Duty-Free Allowance — Bundesministerium für Finanzen (BMF)",
             "publisher": "Bundesministerium für Finanzen (BMF) / Zoll Austria — national customs authority"
           },
           {
             "id": "at-bmf-entry-current",
             "url": "https://www.bmf.gv.at/en/topics/customs/travellers/entry-from-non-eu-countries.html",
-            "title": "Entry from Non-EU Countries — BMF (bmf.gv.at); captured live 2026-09-27 (HTTP 200); current path replacing the 404 /topics/customs/travelling/ URL",
+            "title": "Entry from Non-EU Countries — Bundesministerium für Finanzen (BMF)",
             "publisher": "Bundesministerium für Finanzen (BMF) / Zoll Austria — national customs authority"
+          },
+          {
+            "id": "at-oegv-barmittel-duty",
+            "url": "https://www.oesterreich.gv.at/de/themen/eu_und_international/einfuhr-von-waren-nach-oesterreich-und-zoll/Seite.2960080",
+            "title": "Mitnahme von Bargeld bei Reisen aus der bzw. in die EU — oesterreich.gv.at (Bundesministerium für Finanzen)",
+            "publisher": "oesterreich.gv.at (Bundesministerium für Finanzen)"
+          },
+          {
+            "id": "at-oegv-barmittel-form",
+            "url": "https://www.oesterreich.gv.at/de/themen/eu_und_international/einfuhr-von-waren-nach-oesterreich-und-zoll/Seite.2960080",
+            "title": "Mitnahme von Bargeld bei Reisen aus der bzw. in die EU — oesterreich.gv.at (Bundesministerium für Finanzen)",
+            "publisher": "oesterreich.gv.at (Bundesministerium für Finanzen)"
+          },
+          {
+            "id": "at-oegv-barmittel-electronic",
+            "url": "https://www.oesterreich.gv.at/de/themen/eu_und_international/einfuhr-von-waren-nach-oesterreich-und-zoll/Seite.2960080",
+            "title": "Mitnahme von Bargeld bei Reisen aus der bzw. in die EU — oesterreich.gv.at (Bundesministerium für Finanzen)",
+            "publisher": "oesterreich.gv.at (Bundesministerium für Finanzen)"
+          },
+          {
+            "id": "at-bmf-cash-controls",
+            "url": "https://www.bmf.gv.at/en/topics/customs/travellers/cash-controls.html",
+            "title": "Cash controls — Bundesministerium für Finanzen (BMF)",
+            "publisher": "Bundesministerium für Finanzen (BMF) / Zoll Austria"
+          },
+          {
+            "id": "at-oegv-barmittel-intra-eu",
+            "url": "https://www.oesterreich.gv.at/de/themen/eu_und_international/einfuhr-von-waren-nach-oesterreich-und-zoll/Mitnahme-von-Bargeld-bei-Reisen-innerhalb-der-EU",
+            "title": "Mitnahme von Bargeld bei Reisen innerhalb der EU — oesterreich.gv.at",
+            "publisher": "oesterreich.gv.at"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
           "open_questions": 0
         }
@@ -20533,7 +22065,7 @@ export default {
       {
         "jurisdiction_id": "LI",
         "review_status": "partial",
-        "researched_at": "2026-09-27",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "LI-goods-declaration-external-border",
@@ -20563,27 +22095,27 @@ export default {
           {
             "id": "LI-zollvertrag-1923",
             "url": "https://www.gesetze.li/konso/pdf/1923024000?version=128",
-            "title": "Zollvertrag (ZV) vom 29. März 1923 zwischen der Schweiz und Liechtenstein über den Anschluss des Fürstentums Liechtenstein an das schweizerische Zollgebiet — LGBl 1923 Nr. 24, Lilex 0.631.112, Fassung 31.10.2025; official Lilex PDF, 19 pages, HTTP 200, captured 2026-09-27",
+            "title": "Zollvertrag (ZV) vom 29. März 1923 zwischen der Schweiz und Liechtenstein über den Anschluss des Fürstentums Liechtenstein an das schweizerische Zollgebiet — LGBl 1923 Nr. 24, Fassung 31.10.2025",
             "publisher": "Fürstentum Liechtenstein — Rechtsdienst der Regierung / Lilex (gesetze.li), official legal database"
           },
           {
             "id": "LI-egzv-1924",
             "url": "https://www.gesetze.li/konso/pdf/1924011000?version=15",
-            "title": "Einführungs-Gesetz zum Zollvertrag mit der Schweiz vom 13. Mai 1924 (EGZV) — LGBl 1924 Nr. 11, Lilex 631.112.1, Fassung 01.01.2026; official Lilex PDF, 57 pages, HTTP 200, captured 2026-09-27",
+            "title": "Einführungs-Gesetz zum Zollvertrag mit der Schweiz vom 13. Mai 1924 (EGZV) — LGBl 1924 Nr. 11, Fassung 01.01.2026",
             "publisher": "Fürstentum Liechtenstein — Rechtsdienst der Regierung / Lilex (gesetze.li), official legal database"
           },
           {
             "id": "LI-bazg-reisen",
             "url": "https://www.bazg.admin.ch/de/reisen-einkaufen-freimengen-zollanmeldung-schweiz",
-            "title": "Reisen und Einkaufen, Freimengen und Wertfreigrenze — BAZG",
-            "publisher": "Bundesamt für Zoll und Grenzsicherheit (BAZG / Federal Office for Customs and Border Security), Switzerland — customs authority of the customs territory that includes Liechtenstein"
+            "title": "Reisen und Einkaufen, Freimengen und Wertfreigrenze — Bundesamt für Zoll und Grenzsicherheit (BAZG)",
+            "publisher": "Bundesamt für Zoll und Grenzsicherheit (BAZG), Schweiz"
           }
         ],
         "coverage": {
           "total_procedures": 1,
           "published_procedures": 1,
           "withheld_procedures": 0,
-          "open_questions": 2
+          "open_questions": 3
         }
       },
       {
@@ -20818,7 +22350,7 @@ export default {
       {
         "jurisdiction_id": "CH",
         "review_status": "verified",
-        "researched_at": "2026-09-27",
+        "researched_at": "2026-10-14",
         "procedures": [
           {
             "id": "CH-customs-rules-reference",
@@ -20828,8 +22360,8 @@ export default {
             "agency": "Bundesamt für Zoll und Grenzsicherheit (BAZG / Federal Office for Customs and Border Security), Switzerland — national customs authority",
             "official_url": "https://www.bazg.admin.ch/de/reisen-einkaufen-freimengen-zollanmeldung-schweiz",
             "channel": "conditional",
-            "applicability_en": "Direction: travellers entering Switzerland (including residents returning from abroad). Per BAZG pages captured live on 2026-09-27 (all HTTP 200). This is a proactive goods-declaration procedure for goods that are not duty-free on entry. At the border crossing you contribute to a rapid customs assessment by keeping recognised valid travel documents ready and proactively declaring (unaufgefordert anmelden) the goods and animals you carry that are not duty-free — that is, that exceed the quantity allowances (Freimengen) or the CHF 150 VAT value-free limit, or that are prohibited or restricted; the customs declaration can be handled for most goods with the official BAZG app QuickZoll before crossing (the app also computes import charges in advance; it does not apply to internet shopping). Travellers with nothing to declare — those carrying only goods that are duty-free within the Freimengen and the value-free limit or already taxed via QuickZoll — can use the green way at airports; when crossing by car, the green visible customs declaration (grüne Sichtzollanmeldung) may be placed on the dashboard — it is a binding declaration that you and your fellow passengers carry only goods that are duty-free within the Freimengen and the value-free limit or that you have already taxed via QuickZoll, and customs staff may carry out checks without questioning; if you are unsure whether your goods must be declared, choose the red passage. VAT value-free limit (Wertfreigrenze): when returning from abroad or entering Switzerland you may import goods up to a total value of CHF 150 inclusive ('bis zu einem Gesamtwert von 150 Franken') free of VAT, provided they are for your private use or as gifts; only a total value strictly exceeding CHF 150 triggers VAT on the entire value of the imported goods; the limit may be used once per person per day and also applies to children; single items valued over CHF 150 are always VAT-taxable regardless of the number of persons; the decisive value is the price net of foreign VAT where this is shown on the receipt/invoice, and foreign-currency values are converted into Swiss francs; the VAT rate is 8.1%, with a reduced rate of 2.6% for certain goods (e.g. foodstuffs, non-alcoholic beverages, books, magazines, medicines); in principle all carried goods count towards the limit — including duty-free foodstuffs, tobacco products, alcoholic beverages, pets and repairs/maintenance carried out abroad on your own vehicle — while the value of personal effects, travel provisions (Reiseproviant) and vehicle fuel is not counted; presenting a receipt or other proof of value eases assessment. Quantity allowances (Freimengen) per person per day, calculation basis gross weight: meat and meat preparations of all animal species, excluding wild game, fish, crustaceans, molluscs and other aquatic invertebrates — 1 kg in total, excess CHF 17 per kg up to 10 kg and CHF 23 per kg above 10 kg (includes edible animal parts with or without bone, meat/blood sausages, other meat products, and prepared foods with more than 20% by weight of sausage, meat or blood assessed on total preparation weight; marrow bone and sauce bones and labelled retail-pack pet food are excluded); butter and cream with fat content from 15% — 1 kg/litre in total, excess CHF 16 per kg/litre; oils, fats and margarine for food purposes — 5 kg/litre in total, excess CHF 2 per kg/litre; alcoholic beverages (allowances only for persons aged at least 17): up to 18% vol. alcohol — 5 litres in total, excess CHF 2 per litre; over 18% vol. alcohol — 1 litre in total, excess CHF 15 per litre (beverages with an alcohol content up to 0.5% vol. do not count as alcoholic beverages); tobacco products (including tobacco substitute products): cigarettes/cigars/heated-tobacco products/nicotine cartridges for e-cigarettes — 250 pieces in total, excess CHF 0.25 per piece; other tobacco products — 250 g in total, excess CHF 0.10 per g; nicotine-containing liquids for e-cigarettes — 250 ml, excess CHF 0.25 per ml; electronic single-use cigarettes — 25 pieces, excess CHF 2.50 per piece; a proportional combination of these products is permitted; other foodstuffs and other goods are duty-free. Animal products may be imported exclusively from EU member states, Iceland, Northern Ireland and Norway — import from other countries is prohibited. If the total value of the carried goods (including the value of all foodstuffs) exceeds CHF 150, VAT must in any case be paid; in addition to VAT, customs duty is payable when the carried goods exceed the Freimengen for alcoholic beverages, tobacco products and certain foodstuffs. Certain goods are prohibited or subject to restrictions on import (e.g. species-protected plants, animals and goods, counterfeits, weapons, fireworks, medicines).",
-            "applicability_zh": "方向：进入瑞士（含自境外返程）的旅客。据 2026-09-27 实时取得的 BAZG 官方页面（均 HTTP 200）。这是一项针对入境不免税物品的主动申报程序。过境时，备好经认可的有效旅行证件、并主动（unaufgefordert anmelden）申报随身携带的不免税物品和动物——即超过免税量（Freimengen）或 150 瑞郎增值税免征限额、或受禁止/限制的物品——有助于快速完成海关核定；多数物品的海关申报可在过境前用 BAZG 官方应用 QuickZoll 办理（该应用还可预先计算进口税费；不适用于网购）。仅携带免税额度内物品或已经 QuickZoll 完税、无物申报的旅客，在机场可走绿色通道；自驾过境时可将绿色自行申报卡（grüne Sichtzollanmeldung）置于仪表板上——这是一项有约束力的声明，表示您与同行者仅携带在免税量（Freimengen）和免征限额内免税的物品、或已经 QuickZoll 完税的物品，海关人员可不经问询直接实施查验；如不确定物品是否须申报，建议选择红色通道。增值税免征限额（Wertfreigrenze）：自境外返回或进入瑞士时，总价值不超过（含）150 瑞郎（'bis zu einem Gesamtwert von 150 Franken'）的自用或礼品物品可免征增值税入境；只有总价值严格超过 150 瑞郎，才须对进口物品的全部价值缴纳增值税；该限额每人每日仅可使用一次，儿童同样适用；单件价值超过 150 瑞郎的物品不论同行人数一律应税；计值以收据/发票所列外国增值税扣除后的金额为准（如已列明），外币金额换算为瑞士法郎；增值税率为 8.1%，特定商品适用 2.6% 低税率（如食品、无酒精饮料、书籍、杂志、药品）；原则上全部随身物品计入限额——包括免税的食品、烟草制品、酒精饮料、宠物以及在境外对自有车辆进行的维修保养——但不计入个人随身物品、旅途口粮（Reiseproviant）和车辆燃料的价值；出示收据或其他价值证明有助于核定。免税量（Freimengen，每人每日，以毛重为计算基础）：各种动物的肉类及肉制品（野味、鱼、甲壳类、软体动物及其他水生无脊椎动物除外）合计 1 公斤，超出部分在 10 公斤以内每公斤 CHF 17、超过 10 公斤每公斤 CHF 23（含带骨或不带骨的可食动物部位、肉肠/血肠、其他肉制品，以及香肠、肉或血含量超过 20% 重量比的预制食品——按预制食品总重计；髓骨、汤骨及以零售包装标明为宠物食品的猫狗粮不计入）；脂肪含量 15% 及以上的黄油和奶油合计 1 公斤/升，超出部分每公斤/升 CHF 16；供食用的油、脂、人造奶油合计 5 公斤/升，超出部分每公斤/升 CHF 2；酒精饮料（仅年满 17 周岁者享有免税量）：酒精含量 18% vol. 及以下合计 5 升，超出每升 CHF 2；超过 18% vol. 合计 1 升，超出每升 CHF 15（酒精含量 0.5% vol. 及以下的饮料不属于酒精饮料）；烟草制品（含烟草替代品）：香烟/雪茄/加热烟草制品/电子烟尼古丁烟弹合计 250 支，超出每支 CHF 0.25；其他烟草制品合计 250 克，超出每克 CHF 0.10；电子烟尼古丁液体 250 毫升，超出每毫升 CHF 0.25；电子一次性香烟 25 支，超出每支 CHF 2.50；这些制品可按比例组合选用；其他食品和其他商品免税。动物源产品仅允许自欧盟成员国、冰岛、北爱尔兰和挪威进口，来自其他国家的进口被禁止。随身物品总价值（含全部食品价值）超过 150 瑞郎时，无论如何须缴纳增值税；超过酒精饮料、烟草制品和特定食品的免税量时，除增值税外还须缴纳关税。特定物品禁止入境或受限制（如受物种保护的动植物及其制品、仿冒品、武器、烟花爆竹、药品等）。",
+            "applicability_en": "Direction: travellers entering Switzerland (including residents returning from abroad). This is a proactive goods-declaration procedure for goods that are not duty-free on entry. At the border crossing you contribute to a rapid customs assessment by keeping recognised valid travel documents ready and proactively declaring (unaufgefordert anmelden) the goods and animals you carry that are not duty-free — that is, that exceed the quantity allowances (Freimengen) or the CHF 150 VAT value-free limit, or that are prohibited or restricted; the customs declaration can be handled for most goods with the official BAZG app QuickZoll before crossing (the app also computes import charges in advance; it does not apply to internet shopping). Travellers with nothing to declare — those carrying only goods that are duty-free within the Freimengen and the value-free limit or already taxed via QuickZoll — can use the green way at airports; when crossing by car, the green visible customs declaration (grüne Sichtzollanmeldung) may be placed on the dashboard — it is a binding declaration that you and your fellow passengers carry only goods that are duty-free within the Freimengen and the value-free limit or that you have already taxed via QuickZoll, and customs staff may carry out checks without questioning; if you are unsure whether your goods must be declared, choose the red passage. VAT value-free limit (Wertfreigrenze): when returning from abroad or entering Switzerland you may import goods up to a total value of CHF 150 inclusive ('bis zu einem Gesamtwert von 150 Franken') free of VAT, provided they are for your private use or as gifts; only a total value strictly exceeding CHF 150 triggers VAT on the entire value of the imported goods; the limit may be used once per person per day and also applies to children; single items valued over CHF 150 are always VAT-taxable regardless of the number of persons; the decisive value is the price net of foreign VAT where this is shown on the receipt/invoice, and foreign-currency values are converted into Swiss francs; the VAT rate is 8.1%, with a reduced rate of 2.6% for certain goods (e.g. foodstuffs, non-alcoholic beverages, books, magazines, medicines); in principle all carried goods count towards the limit — including duty-free foodstuffs, tobacco products, alcoholic beverages, pets and repairs/maintenance carried out abroad on your own vehicle — while the value of personal effects, travel provisions (Reiseproviant) and vehicle fuel is not counted; presenting a receipt or other proof of value eases assessment. Quantity allowances (Freimengen) per person per day, calculation basis gross weight: meat and meat preparations of all animal species, excluding wild game, fish, crustaceans, molluscs and other aquatic invertebrates — 1 kg in total, excess CHF 17 per kg up to 10 kg and CHF 23 per kg above 10 kg (includes edible animal parts with or without bone, meat/blood sausages, other meat products, and prepared foods with more than 20% by weight of sausage, meat or blood assessed on total preparation weight; marrow bone and sauce bones and labelled retail-pack pet food are excluded); butter and cream with fat content from 15% — 1 kg/litre in total, excess CHF 16 per kg/litre; oils, fats and margarine for food purposes — 5 kg/litre in total, excess CHF 2 per kg/litre; alcoholic beverages (allowances only for persons aged at least 17): up to 18% vol. alcohol — 5 litres in total, excess CHF 2 per litre; over 18% vol. alcohol — 1 litre in total, excess CHF 15 per litre (beverages with an alcohol content up to 0.5% vol. do not count as alcoholic beverages); tobacco products (including tobacco substitute products): cigarettes/cigars/heated-tobacco products/nicotine cartridges for e-cigarettes — 250 pieces in total, excess CHF 0.25 per piece; other tobacco products — 250 g in total, excess CHF 0.10 per g; nicotine-containing liquids for e-cigarettes — 250 ml, excess CHF 0.25 per ml; electronic single-use cigarettes — 25 pieces, excess CHF 2.50 per piece; a proportional combination of these products is permitted; other foodstuffs and other goods are duty-free. Animal products may be imported exclusively from EU member states, Iceland, Northern Ireland and Norway — import from other countries is prohibited. If the total value of the carried goods (including the value of all foodstuffs) exceeds CHF 150, VAT must in any case be paid; in addition to VAT, customs duty is payable when the carried goods exceed the Freimengen for alcoholic beverages, tobacco products and certain foodstuffs. Certain goods are prohibited or subject to restrictions on import (e.g. species-protected plants, animals and goods, counterfeits, weapons, fireworks, medicines).",
+            "applicability_zh": "方向：进入瑞士（含自境外返程）的旅客。这是一项针对入境不免税物品的主动申报程序。过境时，备好经认可的有效旅行证件、并主动（unaufgefordert anmelden）申报随身携带的不免税物品和动物——即超过免税量（Freimengen）或 150 瑞郎增值税免征限额、或受禁止/限制的物品——有助于快速完成海关核定；多数物品的海关申报可在过境前用 BAZG 官方应用 QuickZoll 办理（该应用还可预先计算进口税费；不适用于网购）。仅携带免税额度内物品或已经 QuickZoll 完税、无物申报的旅客，在机场可走绿色通道；自驾过境时可将绿色自行申报卡（grüne Sichtzollanmeldung）置于仪表板上——这是一项有约束力的声明，表示您与同行者仅携带在免税量（Freimengen）和免征限额内免税的物品、或已经 QuickZoll 完税的物品，海关人员可不经问询直接实施查验；如不确定物品是否须申报，建议选择红色通道。增值税免征限额（Wertfreigrenze）：自境外返回或进入瑞士时，总价值不超过（含）150 瑞郎（'bis zu einem Gesamtwert von 150 Franken'）的自用或礼品物品可免征增值税入境；只有总价值严格超过 150 瑞郎，才须对进口物品的全部价值缴纳增值税；该限额每人每日仅可使用一次，儿童同样适用；单件价值超过 150 瑞郎的物品不论同行人数一律应税；计值以收据/发票所列外国增值税扣除后的金额为准（如已列明），外币金额换算为瑞士法郎；增值税率为 8.1%，特定商品适用 2.6% 低税率（如食品、无酒精饮料、书籍、杂志、药品）；原则上全部随身物品计入限额——包括免税的食品、烟草制品、酒精饮料、宠物以及在境外对自有车辆进行的维修保养——但不计入个人随身物品、旅途口粮（Reiseproviant）和车辆燃料的价值；出示收据或其他价值证明有助于核定。免税量（Freimengen，每人每日，以毛重为计算基础）：各种动物的肉类及肉制品（野味、鱼、甲壳类、软体动物及其他水生无脊椎动物除外）合计 1 公斤，超出部分在 10 公斤以内每公斤 CHF 17、超过 10 公斤每公斤 CHF 23（含带骨或不带骨的可食动物部位、肉肠/血肠、其他肉制品，以及香肠、肉或血含量超过 20% 重量比的预制食品——按预制食品总重计；髓骨、汤骨及以零售包装标明为宠物食品的猫狗粮不计入）；脂肪含量 15% 及以上的黄油和奶油合计 1 公斤/升，超出部分每公斤/升 CHF 16；供食用的油、脂、人造奶油合计 5 公斤/升，超出部分每公斤/升 CHF 2；酒精饮料（仅年满 17 周岁者享有免税量）：酒精含量 18% vol. 及以下合计 5 升，超出每升 CHF 2；超过 18% vol. 合计 1 升，超出每升 CHF 15（酒精含量 0.5% vol. 及以下的饮料不属于酒精饮料）；烟草制品（含烟草替代品）：香烟/雪茄/加热烟草制品/电子烟尼古丁烟弹合计 250 支，超出每支 CHF 0.25；其他烟草制品合计 250 克，超出每克 CHF 0.10；电子烟尼古丁液体 250 毫升，超出每毫升 CHF 0.25；电子一次性香烟 25 支，超出每支 CHF 2.50；这些制品可按比例组合选用；其他食品和其他商品免税。动物源产品仅允许自欧盟成员国、冰岛、北爱尔兰和挪威进口，来自其他国家的进口被禁止。随身物品总价值（含全部食品价值）超过 150 瑞郎时，无论如何须缴纳增值税；超过酒精饮料、烟草制品和特定食品的免税量时，除增值税外还须缴纳关税。特定物品禁止入境或受限制（如受物种保护的动植物及其制品、仿冒品、武器、烟花爆竹、药品等）。",
             "timing_en": "At the border on entry into Switzerland: proactively declare the goods and animals you carry that exceed the Freimengen or the CHF 150 value-free limit or that are prohibited or restricted — for most goods via the QuickZoll app before crossing, otherwise at the red passage (choose the red passage also when unsure whether goods must be declared). With nothing to declare — only goods that are duty-free within the allowances or already taxed via QuickZoll — use the green way (airports) or place the green Sichtzollanmeldung on the dashboard (car); the green sign is itself a binding summary declaration, and customs may inspect without questioning. If the total value strictly exceeds CHF 150, VAT (8.1%, reduced 2.6%) is due on the entire value; quantities above the Freimengen additionally attract customs duty per kg/litre/piece as listed.",
             "timing_zh": "入境瑞士在边境时：主动申报随身携带的超过免税量（Freimengen）或 150 瑞郎免征限额、或受禁止/限制的物品和动物——多数物品可在过境前经 QuickZoll 应用办理，否则走红色通道当场申报（不确定物品是否须申报时亦应选择红色通道）。无物申报——即仅携带免税额度内物品或已经 QuickZoll 完税——则走绿色通道（机场）或将绿色自行申报卡置于仪表板（自驾），绿色标示本身即构成有约束力的概括声明，海关可不经问询直接查验。总价值严格超过 150 瑞郎时，须按全部价值缴纳增值税（8.1%，低税率 2.6%）；超过免税量的部分另按所列标准（每公斤/升/支）缴纳关税。",
             "fee": "unknown",
@@ -20840,7 +22372,7 @@ export default {
             ],
             "verified_at": "2026-09-27",
             "name_zh_hant": "入境瑞士物品主動申報及免稅量（Freimengen）與 150 瑞郎增值稅免徵限額——瑞士聯邦海關與邊境安全局（BAZG）",
-            "applicability_zh_hant": "方向：進入瑞士（含自境外返程）的旅客。據 2026-09-27 實時取得的 BAZG 官方頁面（均 HTTP 200）。這是一項針對入境不免稅物品的主動申報程序。過境時，備好經認可的有效旅行證件、並主動（unaufgefordert anmelden）申報隨身攜帶的不免稅物品和動物——即超過免稅量（Freimengen）或 150 瑞郎增值稅免徵限額、或受禁止/限制的物品——有助於快速完成海關核定；多數物品的海關申報可在過境前用 BAZG 官方應用 QuickZoll 辦理（該應用還可預先計算進口稅費；不適用於網購）。僅攜帶免稅額度內物品或已經 QuickZoll 完稅、無物申報的旅客，在機場可走綠色通道；自駕過境時可將綠色自行申報卡（grüne Sichtzollanmeldung）置於儀表板上——這是一項有約束力的聲明，表示您與同行者僅攜帶在免稅量（Freimengen）和免徵限額內免稅的物品、或已經 QuickZoll 完稅的物品，海關人員可不經問詢直接實施查驗；如不確定物品是否須申報，建議選擇紅色通道。增值稅免徵限額（Wertfreigrenze）：自境外返回或進入瑞士時，總價值不超過（含）150 瑞郎（'bis zu einem Gesamtwert von 150 Franken'）的自用或禮品物品可免徵增值稅入境；只有總價值嚴格超過 150 瑞郎，才須對進口物品的全部價值繳納增值稅；該限額每人每日僅可使用一次，兒童同樣適用；單件價值超過 150 瑞郎的物品不論同行人數一律應稅；計值以收據/發票所列外國增值稅扣除後的金額為準（如已列明），外幣金額換算為瑞士法郎；增值稅率為 8.1%，特定商品適用 2.6% 低稅率（如食品、無酒精飲料、書籍、雜誌、藥品）；原則上全部隨身物品計入限額——包括免稅的食品、菸草製品、酒精飲料、寵物以及在境外對自有車輛進行的維修保養——但不計入個人隨身物品、旅途口糧（Reiseproviant）和車輛燃料的價值；出示收據或其他價值證明有助於核定。免稅量（Freimengen，每人每日，以毛重為計算基礎）：各種動物的肉類及肉製品（野味、魚、甲殼類、軟體動物及其他水生無脊椎動物除外）合計 1 公斤，超出部分在 10 公斤以內每公斤 CHF 17、超過 10 公斤每公斤 CHF 23（含帶骨或不帶骨的可食動物部位、肉腸/血腸、其他肉製品，以及香腸、肉或血含量超過 20% 重量比的預製食品——按預製食品總重計；髓骨、湯骨及以零售包裝標明為寵物食品的貓狗糧不計入）；脂肪含量 15% 及以上的黃油和奶油合計 1 公斤/升，超出部分每公斤/升 CHF 16；供食用的油、脂、人造奶油合計 5 公斤/升，超出部分每公斤/升 CHF 2；酒精飲料（僅年滿 17 週歲者享有免稅量）：酒精含量 18% vol. 及以下合計 5 升，超出每升 CHF 2；超過 18% vol. 合計 1 升，超出每升 CHF 15（酒精含量 0.5% vol. 及以下的飲料不屬於酒精飲料）；菸草製品（含菸草替代品）：香菸/雪茄/加熱菸草製品/電子煙尼古丁煙彈合計 250 支，超出每支 CHF 0.25；其他菸草製品合計 250 克，超出每克 CHF 0.10；電子煙尼古丁液體 250 毫升，超出每毫升 CHF 0.25；電子一次性香菸 25 支，超出每支 CHF 2.50；這些製品可按比例組合選用；其他食品和其他商品免稅。動物源產品僅允許自歐盟成員國、冰島、北愛爾蘭和挪威進口，來自其他國家的進口被禁止。隨身物品總價值（含全部食品價值）超過 150 瑞郎時，無論如何須繳納增值稅；超過酒精飲料、菸草製品和特定食品的免稅量時，除增值稅外還須繳納關稅。特定物品禁止入境或受限制（如受物種保護的動植物及其製品、仿冒品、武器、煙花爆竹、藥品等）。",
+            "applicability_zh_hant": "方向：進入瑞士（含自境外返程）的旅客。這是一項針對入境不免稅物品的主動申報程序。過境時，備好經認可的有效旅行證件、並主動（unaufgefordert anmelden）申報隨身攜帶的不免稅物品和動物——即超過免稅量（Freimengen）或 150 瑞郎增值稅免徵限額、或受禁止/限制的物品——有助於快速完成海關核定；多數物品的海關申報可在過境前用 BAZG 官方應用 QuickZoll 辦理（該應用還可預先計算進口稅費；不適用於網購）。僅攜帶免稅額度內物品或已經 QuickZoll 完稅、無物申報的旅客，在機場可走綠色通道；自駕過境時可將綠色自行申報卡（grüne Sichtzollanmeldung）置於儀表板上——這是一項有約束力的聲明，表示您與同行者僅攜帶在免稅量（Freimengen）和免徵限額內免稅的物品、或已經 QuickZoll 完稅的物品，海關人員可不經問詢直接實施查驗；如不確定物品是否須申報，建議選擇紅色通道。增值稅免徵限額（Wertfreigrenze）：自境外返回或進入瑞士時，總價值不超過（含）150 瑞郎（'bis zu einem Gesamtwert von 150 Franken'）的自用或禮品物品可免徵增值稅入境；只有總價值嚴格超過 150 瑞郎，才須對進口物品的全部價值繳納增值稅；該限額每人每日僅可使用一次，兒童同樣適用；單件價值超過 150 瑞郎的物品不論同行人數一律應稅；計值以收據/發票所列外國增值稅扣除後的金額為準（如已列明），外幣金額換算為瑞士法郎；增值稅率為 8.1%，特定商品適用 2.6% 低稅率（如食品、無酒精飲料、書籍、雜誌、藥品）；原則上全部隨身物品計入限額——包括免稅的食品、菸草製品、酒精飲料、寵物以及在境外對自有車輛進行的維修保養——但不計入個人隨身物品、旅途口糧（Reiseproviant）和車輛燃料的價值；出示收據或其他價值證明有助於核定。免稅量（Freimengen，每人每日，以毛重為計算基礎）：各種動物的肉類及肉製品（野味、魚、甲殼類、軟體動物及其他水生無脊椎動物除外）合計 1 公斤，超出部分在 10 公斤以內每公斤 CHF 17、超過 10 公斤每公斤 CHF 23（含帶骨或不帶骨的可食動物部位、肉腸/血腸、其他肉製品，以及香腸、肉或血含量超過 20% 重量比的預製食品——按預製食品總重計；髓骨、湯骨及以零售包裝標明為寵物食品的貓狗糧不計入）；脂肪含量 15% 及以上的黃油和奶油合計 1 公斤/升，超出部分每公斤/升 CHF 16；供食用的油、脂、人造奶油合計 5 公斤/升，超出部分每公斤/升 CHF 2；酒精飲料（僅年滿 17 週歲者享有免稅量）：酒精含量 18% vol. 及以下合計 5 升，超出每升 CHF 2；超過 18% vol. 合計 1 升，超出每升 CHF 15（酒精含量 0.5% vol. 及以下的飲料不屬於酒精飲料）；菸草製品（含菸草替代品）：香菸/雪茄/加熱菸草製品/電子煙尼古丁煙彈合計 250 支，超出每支 CHF 0.25；其他菸草製品合計 250 克，超出每克 CHF 0.10；電子煙尼古丁液體 250 毫升，超出每毫升 CHF 0.25；電子一次性香菸 25 支，超出每支 CHF 2.50；這些製品可按比例組合選用；其他食品和其他商品免稅。動物源產品僅允許自歐盟成員國、冰島、北愛爾蘭和挪威進口，來自其他國家的進口被禁止。隨身物品總價值（含全部食品價值）超過 150 瑞郎時，無論如何須繳納增值稅；超過酒精飲料、菸草製品和特定食品的免稅量時，除增值稅外還須繳納關稅。特定物品禁止入境或受限制（如受物種保護的動植物及其製品、仿冒品、武器、煙花爆竹、藥品等）。",
             "timing_zh_hant": "入境瑞士在邊境時：主動申報隨身攜帶的超過免稅量（Freimengen）或 150 瑞郎免徵限額、或受禁止/限制的物品和動物——多數物品可在過境前經 QuickZoll 應用辦理，否則走紅色通道當場申報（不確定物品是否須申報時亦應選擇紅色通道）。無物申報——即僅攜帶免稅額度內物品或已經 QuickZoll 完稅——則走綠色通道（機場）或將綠色自行申報卡置於儀表板（自駕），綠色標示本身即構成有約束力的概括聲明，海關可不經問詢直接查驗。總價值嚴格超過 150 瑞郎時，須按全部價值繳納增值稅（8.1%，低稅率 2.6%）；超過免稅量的部分另按所列標準（每公斤/升/支）繳納關稅。"
           }
         ],
@@ -20848,20 +22380,20 @@ export default {
           {
             "id": "CH-bazg-declare",
             "url": "https://www.bazg.admin.ch/de/reisen-einkaufen-freimengen-zollanmeldung-schweiz",
-            "title": "Reisen und Einkaufen, Freimengen und Wertfreigrenze — BAZG; captured live 2026-09-27 (HTTP 200); establishes the proactive declaration duty, QuickZoll and green/red channels",
-            "publisher": "Bundesamt für Zoll und Grenzsicherheit (BAZG / Federal Office for Customs and Border Security), Switzerland — national customs authority"
+            "title": "Reisen und Einkaufen, Freimengen und Wertfreigrenze — Bundesamt für Zoll und Grenzsicherheit (BAZG)",
+            "publisher": "Bundesamt für Zoll und Grenzsicherheit (BAZG), Schweiz"
           },
           {
             "id": "CH-bazg-freimengen",
             "url": "https://www.bazg.admin.ch/de/freimengen-lebensmittel-alkohol-tabak",
-            "title": "Freimengen: Lebensmittel, Alkohol und Tabak — BAZG; captured live 2026-09-27 (HTTP 200); quantity table decoded from the hydration JSON embedded in the captured official body.bin and verified string-by-string against the raw original (offsets ≈295,267–304,100)",
-            "publisher": "Bundesamt für Zoll und Grenzsicherheit (BAZG / Federal Office for Customs and Border Security), Switzerland — national customs authority"
+            "title": "Freimengen: Lebensmittel, Alkohol und Tabak — Bundesamt für Zoll und Grenzsicherheit (BAZG)",
+            "publisher": "Bundesamt für Zoll und Grenzsicherheit (BAZG), Schweiz"
           },
           {
             "id": "CH-bazg-vat",
             "url": "https://www.bazg.admin.ch/de/wertfreigrenze-mehrwertsteuer-einreise-150-franken",
-            "title": "Mehrwertsteuer: Wertfreigrenze 150 Franken — BAZG; captured live 2026-09-27 (HTTP 200)",
-            "publisher": "Bundesamt für Zoll und Grenzsicherheit (BAZG / Federal Office for Customs and Border Security), Switzerland — national customs authority"
+            "title": "Mehrwertsteuer: Wertfreigrenze 150 Franken — Bundesamt für Zoll und Grenzsicherheit (BAZG)",
+            "publisher": "Bundesamt für Zoll und Grenzsicherheit (BAZG), Schweiz"
           }
         ],
         "coverage": {
@@ -21108,6 +22640,42 @@ export default {
             "name_zh_hant": "聖誕島入境旅客卡（Incoming Passenger Card）——入境航空旅客",
             "applicability_zh_hant": "乘飛機抵達聖誕島的每名旅客。在 AIP GEN 1.3 第 8 節（指定的澳大利亞外領地國際機場）範圍內，PDF 實體頁 90 第 8.3.3(a) 段要求入境旅客填寫一張同時用於海關（Customs）與移民（Immigration）目的的入境旅客卡（Incoming Passenger Card）；該卡含海關申報，其中包括申報全部禁止進口物品的要求。所引文本未說明卡片介質（紙質或電子）、完整欄位清單與發放方式；不主張海運或其他非航空路線。AIP未載明該卡提交費用，費用仍為未知。",
             "timing_zh_hant": "抵達（入境）聖誕島國際機場時。所引文本未說明該卡發放或收取的確切環節。"
+          },
+          {
+            "id": "CX-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Christmas Island: cash and other monetary instruments of AUD 10,000 or more — report when bringing them in from outside Australia or taking them out",
+            "name_zh": "圣诞岛：携带1万澳元或以上现金及其他货币票据——从澳大利亚境外带入或带出时须报告",
+            "agency": "AUSTRAC and the Australian Border Force (ABF); reporting duty under the Anti-Money Laundering and Counter-Terrorism Financing Act 2006",
+            "official_url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "channel": "conditional",
+            "applicability_en": "The Anti-Money Laundering and Counter-Terrorism Financing Act 2006 extends to every external Territory, including Christmas Island, and counts the external Territories as part of Australia. Under section 53, a person who brings monetary instruments into Australia, or takes them out of Australia, must report them when their total is AUD 10,000 or more. So the duty applies when you arrive from a place outside Australia, or leave for a place outside Australia; a trip only between the island and mainland Australia stays within Australia under the Act. Monetary instruments are physical currency (Australian or foreign) and bearer negotiable instruments (instruments payable to bearer, such as cheques, traveller’s cheques and money orders); they are added together. The report must be in the approved form and given to the AUSTRAC CEO, a customs officer or a police officer. Failing to report is an offence punishable by up to 2 years’ imprisonment or 500 penalty units, or both. The Incoming Passenger Card that arriving air passengers complete also asks, at question 5, whether you are bringing AUD$10,000 or more in Australian or foreign currency equivalent.",
+            "applicability_zh": "《2006年反洗钱与反恐怖融资法》适用于每一个澳大利亚外部领地（包括圣诞岛），并把外部领地视为澳大利亚的一部分。依据该法第53条，携带货币票据进入澳大利亚或带出澳大利亚、合计达1万澳元或以上的，必须报告。因此，从澳大利亚境外抵达，或前往澳大利亚境外时，须履行这项义务；仅在该岛与澳大利亚本土之间往返，依该法仍在澳大利亚境内。货币票据包括现金（澳元或外币）和不记名可转让票据（即付给持票人的支票、旅行支票、汇票等），合并计算。报告须使用批准的表格，交给AUSTRAC负责人、海关官员或警务人员。不报告属于犯罪，最高可处2年监禁或500个罚款单位，或两者并处。抵达的航空旅客填写的入境旅客卡（Incoming Passenger Card）第5题也询问是否携带1万澳元或以上的澳元现金或等值外币。",
+            "timing_en": "Arriving: no later than when you reach the place where customs officers examine baggage or, if there is no such place, at the first opportunity after arrival (AML/CTF Rules 2025, section 9-12(3)(a)). Leaving: no later than when you reach the customs officer who examines your passport for departure or, if there is no such examination, before your last opportunity to report before leaving (section 9-12(3)(c)).",
+            "timing_zh": "入境：最迟在到达海关查验行李的地点时报告；若没有这样的地点，则在抵达后第一次有机会时报告（《2025年反洗钱与反恐怖融资细则》第9-12(3)(a)条）。离境：最迟在走到为你办理离境护照查验的海关官员面前时报告；若没有这种查验，则在离开前最后一次有机会时报告（第9-12(3)(c)条）。",
+            "fee": "unknown",
+            "source_ids": [
+              "CX-aip-gen13-2026-p90-completion",
+              "CX-amlctf-s25",
+              "CX-amlctf-australia-def",
+              "CX-amlctf-s53-into",
+              "CX-amlctf-s53-out",
+              "CX-amlctf-definition",
+              "CX-amlctf-s17-bni",
+              "CX-amlctf-s53-recipient",
+              "CX-amlctf-s53-penalty",
+              "CX-amlctf-s56",
+              "CX-rules-9-12-entry",
+              "CX-rules-9-12-entry-fallback",
+              "CX-rules-9-12-exit",
+              "CX-rules-9-12-exit-fallback",
+              "CX-abf-external-territories",
+              "CX-abf-ipc-sample-q5"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "聖誕島：攜帶1萬澳元或以上現金及其他貨幣票據——從澳大利亞境外帶入或帶出時須報告",
+            "applicability_zh_hant": "《2006年反洗錢與反恐怖融資法》適用於每一個澳大利亞外部領地（包括聖誕島），並把外部領地視為澳大利亞的一部分。依據該法第53條，攜帶貨幣票據進入澳大利亞或帶出澳大利亞、合計達1萬澳元或以上的，必須報告。因此，從澳大利亞境外抵達，或前往澳大利亞境外時，須履行這項義務；僅在該島與澳大利亞本土之間往返，依該法仍在澳大利亞境內。貨幣票據包括現金（澳元或外幣）和不記名可轉讓票據（即付給持票人的支票、旅行支票、匯票等），合併計算。報告須使用批准的表格，交給AUSTRAC負責人、海關官員或警務人員。不報告屬於犯罪，最高可處2年監禁或500個罰款單位，或兩者並處。抵達的航空旅客填寫的入境旅客卡（Incoming Passenger Card）第5題也詢問是否攜帶1萬澳元或以上的澳元現金或等值外幣。",
+            "timing_zh_hant": "入境：最遲在到達海關查驗行李的地點時報告；若沒有這樣的地點，則在抵達後第一次有機會時報告（《2025年反洗錢與反恐怖融資細則》第9-12(3)(a)條）。離境：最遲在走到為你辦理離境護照查驗的海關官員面前時報告；若沒有這種查驗，則在離開前最後一次有機會時報告（第9-12(3)(c)條）。"
           }
         ],
         "sources": [
@@ -21122,11 +22690,101 @@ export default {
             "url": "https://www.airservicesaustralia.com/aip/current/aip/general_03SEP2026.pdf",
             "title": "AIP Australia GEN 1.3 — para 8.3.3(a) Customs Requirements – Christmas Island, card Customs-declaration content; physical PDF page 90 (printed GEN 1.3 page 30, footer 09 JUL 2026); complete 364-page official PDF, HTTP200, readable text layer (render aip-090.png also visually checked)",
             "publisher": "Airservices Australia"
+          },
+          {
+            "id": "CX-amlctf-s25",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CX-amlctf-australia-def",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CX-amlctf-s53-into",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CX-amlctf-s53-out",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CX-amlctf-definition",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CX-amlctf-s17-bni",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CX-amlctf-s53-recipient",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CX-amlctf-s53-penalty",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CX-amlctf-s56",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CX-rules-9-12-entry",
+            "url": "https://www.legislation.gov.au/F2025L01026/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Rules 2025 (compilation of 31 March 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CX-rules-9-12-entry-fallback",
+            "url": "https://www.legislation.gov.au/F2025L01026/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Rules 2025 (compilation of 31 March 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CX-rules-9-12-exit",
+            "url": "https://www.legislation.gov.au/F2025L01026/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Rules 2025 (compilation of 31 March 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CX-rules-9-12-exit-fallback",
+            "url": "https://www.legislation.gov.au/F2025L01026/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Rules 2025 (compilation of 31 March 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CX-abf-external-territories",
+            "url": "https://www.abf.gov.au/importing-exporting-and-manufacturing/fta/other-preferential-arrangements/external-territories",
+            "title": "External Territories — Australian Border Force",
+            "publisher": "Australian Border Force, Department of Home Affairs"
+          },
+          {
+            "id": "CX-abf-ipc-sample-q5",
+            "url": "https://www.abf.gov.au/entering-leaving-australia/files/ipc-sample-english.pdf",
+            "title": "Incoming passenger card — sample (English) — Australian Border Force",
+            "publisher": "Australian Border Force, Department of Home Affairs"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
           "open_questions": 3
         }
@@ -21157,6 +22815,42 @@ export default {
             "name_zh_hant": "入境旅客卡（科科斯（基林）群島）",
             "applicability_zh_hant": "所有乘飛機抵達科科斯（基林）群島指定國際機場的旅客（AIP GEN 1.3 第8.2.1(b)條、第8.4.2(a)條，頁腳日期2026年7月9日）均須填寫入境旅客卡（Incoming Passenger Card），兼作海關與移民用途。該卡包含海關申報，其中包括申報所有禁止進口物品的要求。本來源未確立海路抵達是否適用，海路抵達者是否須填此卡未獲明示。",
             "timing_zh_hant": "乘飛機入境抵達時；AIP摘錄未載明該卡的具體發放時點及任何填寫或提交期限。"
+          },
+          {
+            "id": "CC-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Cocos (Keeling) Islands: cash and other monetary instruments of AUD 10,000 or more — report when bringing them in from outside Australia or taking them out",
+            "name_zh": "科科斯（基林）群岛：携带1万澳元或以上现金及其他货币票据——从澳大利亚境外带入或带出时须报告",
+            "agency": "AUSTRAC and the Australian Border Force (ABF); reporting duty under the Anti-Money Laundering and Counter-Terrorism Financing Act 2006",
+            "official_url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "channel": "conditional",
+            "applicability_en": "The Anti-Money Laundering and Counter-Terrorism Financing Act 2006 extends to every external Territory, including Cocos (Keeling) Islands, and counts the external Territories as part of Australia. Under section 53, a person who brings monetary instruments into Australia, or takes them out of Australia, must report them when their total is AUD 10,000 or more. So the duty applies when you arrive from a place outside Australia, or leave for a place outside Australia; a trip only between the island and mainland Australia stays within Australia under the Act. Monetary instruments are physical currency (Australian or foreign) and bearer negotiable instruments (instruments payable to bearer, such as cheques, traveller’s cheques and money orders); they are added together. The report must be in the approved form and given to the AUSTRAC CEO, a customs officer or a police officer. Failing to report is an offence punishable by up to 2 years’ imprisonment or 500 penalty units, or both. The Incoming Passenger Card that arriving air passengers complete also asks, at question 5, whether you are bringing AUD$10,000 or more in Australian or foreign currency equivalent.",
+            "applicability_zh": "《2006年反洗钱与反恐怖融资法》适用于每一个澳大利亚外部领地（包括科科斯（基林）群岛），并把外部领地视为澳大利亚的一部分。依据该法第53条，携带货币票据进入澳大利亚或带出澳大利亚、合计达1万澳元或以上的，必须报告。因此，从澳大利亚境外抵达，或前往澳大利亚境外时，须履行这项义务；仅在该岛与澳大利亚本土之间往返，依该法仍在澳大利亚境内。货币票据包括现金（澳元或外币）和不记名可转让票据（即付给持票人的支票、旅行支票、汇票等），合并计算。报告须使用批准的表格，交给AUSTRAC负责人、海关官员或警务人员。不报告属于犯罪，最高可处2年监禁或500个罚款单位，或两者并处。抵达的航空旅客填写的入境旅客卡（Incoming Passenger Card）第5题也询问是否携带1万澳元或以上的澳元现金或等值外币。",
+            "timing_en": "Arriving: no later than when you reach the place where customs officers examine baggage or, if there is no such place, at the first opportunity after arrival (AML/CTF Rules 2025, section 9-12(3)(a)). Leaving: no later than when you reach the customs officer who examines your passport for departure or, if there is no such examination, before your last opportunity to report before leaving (section 9-12(3)(c)).",
+            "timing_zh": "入境：最迟在到达海关查验行李的地点时报告；若没有这样的地点，则在抵达后第一次有机会时报告（《2025年反洗钱与反恐怖融资细则》第9-12(3)(a)条）。离境：最迟在走到为你办理离境护照查验的海关官员面前时报告；若没有这种查验，则在离开前最后一次有机会时报告（第9-12(3)(c)条）。",
+            "fee": "unknown",
+            "source_ids": [
+              "CC-aip-gen13-inwards-card",
+              "CC-amlctf-s25",
+              "CC-amlctf-australia-def",
+              "CC-amlctf-s53-into",
+              "CC-amlctf-s53-out",
+              "CC-amlctf-definition",
+              "CC-amlctf-s17-bni",
+              "CC-amlctf-s53-recipient",
+              "CC-amlctf-s53-penalty",
+              "CC-amlctf-s56",
+              "CC-rules-9-12-entry",
+              "CC-rules-9-12-entry-fallback",
+              "CC-rules-9-12-exit",
+              "CC-rules-9-12-exit-fallback",
+              "CC-abf-external-territories",
+              "CC-abf-ipc-sample-q5"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "科科斯（基林）群島：攜帶1萬澳元或以上現金及其他貨幣票據——從澳大利亞境外帶入或帶出時須報告",
+            "applicability_zh_hant": "《2006年反洗錢與反恐怖融資法》適用於每一個澳大利亞外部領地（包括科科斯（基林）群島），並把外部領地視為澳大利亞的一部分。依據該法第53條，攜帶貨幣票據進入澳大利亞或帶出澳大利亞、合計達1萬澳元或以上的，必須報告。因此，從澳大利亞境外抵達，或前往澳大利亞境外時，須履行這項義務；僅在該島與澳大利亞本土之間往返，依該法仍在澳大利亞境內。貨幣票據包括現金（澳元或外幣）和不記名可轉讓票據（即付給持票人的支票、旅行支票、匯票等），合併計算。報告須使用批准的表格，交給AUSTRAC負責人、海關官員或警務人員。不報告屬於犯罪，最高可處2年監禁或500個罰款單位，或兩者並處。抵達的航空旅客填寫的入境旅客卡（Incoming Passenger Card）第5題也詢問是否攜帶1萬澳元或以上的澳元現金或等值外幣。",
+            "timing_zh_hant": "入境：最遲在到達海關查驗行李的地點時報告；若沒有這樣的地點，則在抵達後第一次有機會時報告（《2025年反洗錢與反恐怖融資細則》第9-12(3)(a)條）。離境：最遲在走到為你辦理離境護照查驗的海關官員面前時報告；若沒有這種查驗，則在離開前最後一次有機會時報告（第9-12(3)(c)條）。"
           }
         ],
         "sources": [
@@ -21171,11 +22865,101 @@ export default {
             "url": "https://www.airservicesaustralia.com/aip/current/aip/general_03SEP2026.pdf",
             "title": "Airservices Australia AIP GEN 1.3 §8.4.2(a) Cocos (Keeling) Islands — Customs-declaration content of the Incoming Passenger Card (currentness: complete current AIP general PDF general_03SEP2026.pdf, 364 pages, HTTP 200; physical page 91 = printed GEN 1.3 page 31, page footer 09 JUL 2026)",
             "publisher": "Airservices Australia"
+          },
+          {
+            "id": "CC-amlctf-s25",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CC-amlctf-australia-def",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CC-amlctf-s53-into",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CC-amlctf-s53-out",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CC-amlctf-definition",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CC-amlctf-s17-bni",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CC-amlctf-s53-recipient",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CC-amlctf-s53-penalty",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CC-amlctf-s56",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CC-rules-9-12-entry",
+            "url": "https://www.legislation.gov.au/F2025L01026/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Rules 2025 (compilation of 31 March 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CC-rules-9-12-entry-fallback",
+            "url": "https://www.legislation.gov.au/F2025L01026/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Rules 2025 (compilation of 31 March 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CC-rules-9-12-exit",
+            "url": "https://www.legislation.gov.au/F2025L01026/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Rules 2025 (compilation of 31 March 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CC-rules-9-12-exit-fallback",
+            "url": "https://www.legislation.gov.au/F2025L01026/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Rules 2025 (compilation of 31 March 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "CC-abf-external-territories",
+            "url": "https://www.abf.gov.au/importing-exporting-and-manufacturing/fta/other-preferential-arrangements/external-territories",
+            "title": "External Territories — Australian Border Force",
+            "publisher": "Australian Border Force, Department of Home Affairs"
+          },
+          {
+            "id": "CC-abf-ipc-sample-q5",
+            "url": "https://www.abf.gov.au/entering-leaving-australia/files/ipc-sample-english.pdf",
+            "title": "Incoming passenger card — sample (English) — Australian Border Force",
+            "publisher": "Australian Border Force, Department of Home Affairs"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
           "open_questions": 3
         }
@@ -21260,6 +23044,37 @@ export default {
             "name_zh_hant": "新西蘭旅客申報（NZTD）——移民、海關與生物安全統一數字申報",
             "applicability_zh_hant": "方向：所有進入新西蘭的旅客均須完成新西蘭旅客申報（NZTD），含新西蘭公民與居民；提交免費。可通過 www.TravellerDeclaration.govt.nz 網站或 NZTD 應用（App Store / Google Play）完成數字申報；如需，抵達時有紙質申報表可填，已完成數字申報者無須再填紙質表。線上表單另有14種語言版本，但問題須以英語回答；紙質申報表的翻譯樣本僅供參考，不可列印後向海關或MPI人員出示。經新西蘭中轉且不離開機場中轉區的空運旅客無須申報；因緊急情況（醫療後送、海上獲救、天氣原因臨時抵達）抵新的旅客可能無須申報。開始申報後將收到含參考號的電子郵件，憑該號可查看、完成或修改申報；任何修改後須重新提交；無須列印任何材料。NZTD 應用在部分國際區域可能無法使用；對海上旅客，應用僅限乘郵輪抵達新西蘭者使用，無法使用應用者仍可用線上表單完成數字申報。需提供的資訊：入境新西蘭所用護照的資料；新西蘭聯繫方式（多處住宿填首個住址）；過去30天旅行史；航班或航程資訊；攜入新西蘭的物品資訊（含託運與手提行李）；移民身份資訊（如需要，含簽證或NZETA）。每位旅客（含嬰幼兒）均須單獨申報；照護人可代同行兒童或嬰幼兒申報；應用可將旅行資訊複製到另一份申報，便於同一行程多人申報。提交時限：空運——最早可在開始赴新西蘭行程前24小時提交；中途停留並取行李離開機場者，為離開中轉地飛往新西蘭的航班起飛前24小時；多段航班且不停留者，為首段航程開始前24小時。海運——最早可在船舶離開最後一個境外港口前24小時提交。到達護照查驗或由邊境關員處理前可修改申報，之後不可再改；如有遺漏須告知邊境關員。須申報事項（在NZTD中選擇“是”）：藥品——超過三個月用量，或非處方給本人的藥品；受限或禁止物品——例如武器、不良出版物、瀕危動植物或野生動物製品、非法或管制藥物；酒類——超過烈酒3瓶（每瓶不超過1.125升）且葡萄酒或啤酒4.5升；菸草——超過50支香菸，或50克菸草製品（含香菸與其他菸草製品的混合物）；境外取得和/或在新西蘭免稅購買且總值超過 NZ$700 的物品（含禮品）；商業或公務用途物品；代他人攜帶的物品；現金——NZ$10,000 或以上（或外幣等值），含旅行支票、銀行匯票、匯票等。額度背景：上述酒類、菸草與 NZ$700 限額為旅客個人額度，無須另行申請——酒類和菸草免稅額度須年滿17歲方可享受（在新西蘭購買此類商品須年滿18歲）；家庭或同行團體不可合併各自的 NZ$700 物品額度；超出限額部分須繳納關稅與GST。符合生物安全要求的物品無須申報：僅供本人使用的衣物、鞋履、珠寶、洗漱用品（“個人自用品”）；請備好購物憑證。罰則：未申報受限或禁止物品或作虛假、錯誤申報，可處最低 NZ$400 即時罰款；虛假申報還可能導致物品沒收、起訴、監禁及被驅逐出新西蘭。抵達後須回答NZTD全部問題並出示身份證件，否則即屬違法。通過護照查驗並提取行李後，請沿相應通道接受生物安全篩查。",
             "timing_zh_hant": "抵達護照查驗前完成。空運：最早可在開始赴新西蘭行程前24小時提交（停留並取行李離開機場者，為離開中轉地航班起飛前24小時；多段航班不停留者，為首段航程前24小時）。海運：最早可在船舶離開最後一個境外港口前24小時提交。到達護照查驗或由邊境關員處理前均可修改，之後不可再改。"
+          },
+          {
+            "id": "NZ-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Cash of NZ$10,000 or more (or foreign equivalent) — complete a Border Cash Report when entering or leaving New Zealand",
+            "name_zh": "携带1万新西兰元或以上现金（或等值外币）——出入境新西兰时填写边境现金报告（Border Cash Report）",
+            "agency": "New Zealand Customs Service",
+            "official_url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/border-cash-report",
+            "channel": "conditional",
+            "applicability_en": "Anyone carrying NZ$10,000 or more in cash, or the foreign equivalent, into or out of New Zealand must complete a Border Cash Report. \"Cash\" means physical currency plus travellers’ cheques, cheques, money orders, postal orders or similar, bearer bonds, bills of exchange and promissory notes. You can complete the report on paper (form NZCS 337) or online; the online form can only be completed within 72 hours of your trip. Either way, speak to a Customs officer when you arrive in New Zealand. If you reach passport control without a completed report, a Border Officer gives you a form. On arrival, the New Zealand Traveller Declaration also lists cash of NZ$10,000 or more among the items you must declare. When leaving, the same report is required. Failing to declare cash on the report, or avoiding the report, is a criminal offence; you could be fined, imprisoned or have your cash seized.",
+            "applicability_zh": "出入新西兰携带1万新西兰元或以上现金（或等值外币）的旅客，必须填写边境现金报告（Border Cash Report）。“现金”包括纸币硬币等实体货币，以及旅行支票、支票、汇票、邮政汇票或类似票据、不记名债券、汇票（bill of exchange）和本票。可用纸质表格（NZCS 337）或在线表格填写；在线表格只能在出行前72小时内填写。无论哪种方式，抵达新西兰时都必须与海关官员当面说明。如果到护照查验时还没有填好报告，边境官员会发给你一张表格。入境时，新西兰旅客申报（New Zealand Traveller Declaration）也把1万新西兰元或以上现金列为必须申报的物品。离境时同样须填写该报告。不在报告中申报现金，或逃避填写报告，属于刑事犯罪，可能被罚款、监禁或被没收现金。",
+            "timing_en": "Arriving: complete the report before passport control (online within 72 hours of travel, or on paper) and speak to a Customs officer on arrival. Leaving: complete it when you pass through the Customs area after check-in.",
+            "timing_zh": "入境：在护照查验前填好报告（出行前72小时内可在线填写，或用纸质表格），抵达时与海关官员当面说明。离境：办理值机后，经过海关区域时填写。",
+            "fee": "unknown",
+            "source_ids": [
+              "NZ-bcr-page",
+              "NZ-bcr-how",
+              "NZ-bcr-passport-control",
+              "NZ-bcr-online-72h",
+              "NZ-bcr-cash-meaning",
+              "NZ-bcr-offence",
+              "NZ-bcr-penalty",
+              "NZ-arrival-cash",
+              "NZ-leaving-cash",
+              "NZ-leaving-forms",
+              "NZ-leaving-customs-area"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "攜帶1萬新西蘭元或以上現金（或等值外幣）——出入境新西蘭時填寫邊境現金報告（Border Cash Report）",
+            "applicability_zh_hant": "出入新西蘭攜帶1萬新西蘭元或以上現金（或等值外幣）的旅客，必須填寫邊境現金報告（Border Cash Report）。“現金”包括紙幣硬幣等實體貨幣，以及旅行支票、支票、匯票、郵政匯票或類似票據、不記名債券、匯票（bill of exchange）和本票。可用紙質表格（NZCS 337）或線上表格填寫；線上表格只能在出行前72小時內填寫。無論哪種方式，抵達新西蘭時都必須與海關官員當面說明。如果到護照查驗時還沒有填好報告，邊境官員會發給你一張表格。入境時，新西蘭旅客申報（New Zealand Traveller Declaration）也把1萬新西蘭元或以上現金列為必須申報的物品。離境時同樣須填寫該報告。不在報告中申報現金，或逃避填寫報告，屬於刑事犯罪，可能被罰款、監禁或被沒收現金。",
+            "timing_zh_hant": "入境：在護照查驗前填好報告（出行前72小時內可線上填寫，或用紙質表格），抵達時與海關官員當面說明。離境：辦理值機後，經過海關區域時填寫。"
           }
         ],
         "sources": [
@@ -21280,11 +23095,77 @@ export default {
             "url": "https://www.travellerdeclaration.govt.nz/completing-your-declaration/",
             "title": "Completing your declaration — New Zealand Traveller Declaration",
             "publisher": "New Zealand Customs Service (travellerdeclaration.govt.nz)"
+          },
+          {
+            "id": "NZ-bcr-page",
+            "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/border-cash-report",
+            "title": "Border Cash Report — New Zealand Customs Service",
+            "publisher": "New Zealand Customs Service"
+          },
+          {
+            "id": "NZ-bcr-how",
+            "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/border-cash-report",
+            "title": "Border Cash Report — New Zealand Customs Service",
+            "publisher": "New Zealand Customs Service"
+          },
+          {
+            "id": "NZ-bcr-passport-control",
+            "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/border-cash-report",
+            "title": "Border Cash Report — New Zealand Customs Service",
+            "publisher": "New Zealand Customs Service"
+          },
+          {
+            "id": "NZ-bcr-online-72h",
+            "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/border-cash-report",
+            "title": "Border Cash Report — New Zealand Customs Service",
+            "publisher": "New Zealand Customs Service"
+          },
+          {
+            "id": "NZ-bcr-cash-meaning",
+            "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/border-cash-report",
+            "title": "Border Cash Report — New Zealand Customs Service",
+            "publisher": "New Zealand Customs Service"
+          },
+          {
+            "id": "NZ-bcr-offence",
+            "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/border-cash-report",
+            "title": "Border Cash Report — New Zealand Customs Service",
+            "publisher": "New Zealand Customs Service"
+          },
+          {
+            "id": "NZ-bcr-penalty",
+            "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/border-cash-report",
+            "title": "Border Cash Report — New Zealand Customs Service",
+            "publisher": "New Zealand Customs Service"
+          },
+          {
+            "id": "NZ-arrival-cash",
+            "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/travel-by-air/on-your-arrival/",
+            "title": "On your arrival — New Zealand Customs Service",
+            "publisher": "New Zealand Customs Service"
+          },
+          {
+            "id": "NZ-leaving-cash",
+            "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/leaving-new-zealand",
+            "title": "Leaving New Zealand — New Zealand Customs Service",
+            "publisher": "New Zealand Customs Service"
+          },
+          {
+            "id": "NZ-leaving-forms",
+            "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/leaving-new-zealand",
+            "title": "Leaving New Zealand — New Zealand Customs Service",
+            "publisher": "New Zealand Customs Service"
+          },
+          {
+            "id": "NZ-leaving-customs-area",
+            "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/leaving-new-zealand",
+            "title": "Leaving New Zealand — New Zealand Customs Service",
+            "publisher": "New Zealand Customs Service"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
           "open_questions": 0
         }
@@ -21315,6 +23196,42 @@ export default {
             "name_zh_hant": "諾福克島入境旅客卡（IPC）",
             "applicability_zh_hant": "搭乘澳大利亞大陸（悉尼/布里斯班）與諾福克島（澳大利亞太平洋海外領地）之間空運航線、進入諾福克島的旅客：須填寫入境旅客卡（IPC），並在同一張卡上申報特定食品、植物材料（含木製品）和動物產品。此處說明的要求適用於進入諾福克島的行程；從諾福克島飛回澳大利亞大陸的航班是否需要同樣的旅客卡或其他證件，該頁面未作說明。",
             "timing_zh_hant": "進入諾福克島須填寫入境旅客卡（IPC）。諾福克島專用的官方旅行資訊頁面僅說明必須完成該卡，未說明其發放或填寫方式（例如是否在航班上填寫），也未規定明確的完成期限；澳大利亞大陸航班上旅客卡的發放規則是否同樣適用於這條航線，頁面未作說明。"
+          },
+          {
+            "id": "NF-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Norfolk Island: cash and other monetary instruments of AUD 10,000 or more — report when bringing them in from outside Australia or taking them out",
+            "name_zh": "诺福克岛：携带1万澳元或以上现金及其他货币票据——从澳大利亚境外带入或带出时须报告",
+            "agency": "AUSTRAC and the Australian Border Force (ABF); reporting duty under the Anti-Money Laundering and Counter-Terrorism Financing Act 2006",
+            "official_url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "channel": "conditional",
+            "applicability_en": "The Anti-Money Laundering and Counter-Terrorism Financing Act 2006 extends to every external Territory, including Norfolk Island, and counts the external Territories as part of Australia. Under section 53, a person who brings monetary instruments into Australia, or takes them out of Australia, must report them when their total is AUD 10,000 or more. So the duty applies when you arrive from a place outside Australia, or leave for a place outside Australia; a trip only between the island and mainland Australia stays within Australia under the Act. Monetary instruments are physical currency (Australian or foreign) and bearer negotiable instruments (instruments payable to bearer, such as cheques, traveller’s cheques and money orders); they are added together. The report must be in the approved form and given to the AUSTRAC CEO, a customs officer or a police officer. Failing to report is an offence punishable by up to 2 years’ imprisonment or 500 penalty units, or both. Arriving passengers also complete an incoming passenger card, which asks at question 5 whether you are bringing AUD$10,000 or more in Australian or foreign currency equivalent.",
+            "applicability_zh": "《2006年反洗钱与反恐怖融资法》适用于每一个澳大利亚外部领地（包括诺福克岛），并把外部领地视为澳大利亚的一部分。依据该法第53条，携带货币票据进入澳大利亚或带出澳大利亚、合计达1万澳元或以上的，必须报告。因此，从澳大利亚境外抵达，或前往澳大利亚境外时，须履行这项义务；仅在该岛与澳大利亚本土之间往返，依该法仍在澳大利亚境内。货币票据包括现金（澳元或外币）和不记名可转让票据（即付给持票人的支票、旅行支票、汇票等），合并计算。报告须使用批准的表格，交给AUSTRAC负责人、海关官员或警务人员。不报告属于犯罪，最高可处2年监禁或500个罚款单位，或两者并处。抵达的旅客还需填写入境旅客卡（incoming passenger card），其第5题询问是否携带1万澳元或以上的澳元现金或等值外币。",
+            "timing_en": "Arriving: no later than when you reach the place where customs officers examine baggage or, if there is no such place, at the first opportunity after arrival (AML/CTF Rules 2025, section 9-12(3)(a)). Leaving: no later than when you reach the customs officer who examines your passport for departure or, if there is no such examination, before your last opportunity to report before leaving (section 9-12(3)(c)).",
+            "timing_zh": "入境：最迟在到达海关查验行李的地点时报告；若没有这样的地点，则在抵达后第一次有机会时报告（《2025年反洗钱与反恐怖融资细则》第9-12(3)(a)条）。离境：最迟在走到为你办理离境护照查验的海关官员面前时报告；若没有这种查验，则在离开前最后一次有机会时报告（第9-12(3)(c)条）。",
+            "fee": "unknown",
+            "source_ids": [
+              "NF-infra-page",
+              "NF-amlctf-s25",
+              "NF-amlctf-australia-def",
+              "NF-amlctf-s53-into",
+              "NF-amlctf-s53-out",
+              "NF-amlctf-definition",
+              "NF-amlctf-s17-bni",
+              "NF-amlctf-s53-recipient",
+              "NF-amlctf-s53-penalty",
+              "NF-amlctf-s56",
+              "NF-rules-9-12-entry",
+              "NF-rules-9-12-entry-fallback",
+              "NF-rules-9-12-exit",
+              "NF-rules-9-12-exit-fallback",
+              "NF-abf-external-territories",
+              "NF-abf-ipc-sample-q5"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "諾福克島：攜帶1萬澳元或以上現金及其他貨幣票據——從澳大利亞境外帶入或帶出時須報告",
+            "applicability_zh_hant": "《2006年反洗錢與反恐怖融資法》適用於每一個澳大利亞外部領地（包括諾福克島），並把外部領地視為澳大利亞的一部分。依據該法第53條，攜帶貨幣票據進入澳大利亞或帶出澳大利亞、合計達1萬澳元或以上的，必須報告。因此，從澳大利亞境外抵達，或前往澳大利亞境外時，須履行這項義務；僅在該島與澳大利亞本土之間往返，依該法仍在澳大利亞境內。貨幣票據包括現金（澳元或外幣）和不記名可轉讓票據（即付給持票人的支票、旅行支票、匯票等），合併計算。報告須使用批准的表格，交給AUSTRAC負責人、海關官員或警務人員。不報告屬於犯罪，最高可處2年監禁或500個罰款單位，或兩者並處。抵達的旅客還需填寫入境旅客卡（incoming passenger card），其第5題詢問是否攜帶1萬澳元或以上的澳元現金或等值外幣。",
+            "timing_zh_hant": "入境：最遲在到達海關查驗行李的地點時報告；若沒有這樣的地點，則在抵達後第一次有機會時報告（《2025年反洗錢與反恐怖融資細則》第9-12(3)(a)條）。離境：最遲在走到為你辦理離境護照查驗的海關官員面前時報告；若沒有這種查驗，則在離開前最後一次有機會時報告（第9-12(3)(c)條）。"
           }
         ],
         "sources": [
@@ -21329,11 +23246,101 @@ export default {
             "url": "https://www.infrastructure.gov.au/territories-regions-cities/territories/norfolk-island/travel-information",
             "title": "Norfolk Island travel information — biosecurity declaration on the incoming passenger card",
             "publisher": "Department of Infrastructure, Transport, Regional Development, Communications, Sport and the Arts, Australia"
+          },
+          {
+            "id": "NF-amlctf-s25",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "NF-amlctf-australia-def",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "NF-amlctf-s53-into",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "NF-amlctf-s53-out",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "NF-amlctf-definition",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "NF-amlctf-s17-bni",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "NF-amlctf-s53-recipient",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "NF-amlctf-s53-penalty",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "NF-amlctf-s56",
+            "url": "https://www.legislation.gov.au/C2006A00169/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (compilation of 1 October 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "NF-rules-9-12-entry",
+            "url": "https://www.legislation.gov.au/F2025L01026/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Rules 2025 (compilation of 31 March 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "NF-rules-9-12-entry-fallback",
+            "url": "https://www.legislation.gov.au/F2025L01026/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Rules 2025 (compilation of 31 March 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "NF-rules-9-12-exit",
+            "url": "https://www.legislation.gov.au/F2025L01026/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Rules 2025 (compilation of 31 March 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "NF-rules-9-12-exit-fallback",
+            "url": "https://www.legislation.gov.au/F2025L01026/latest/text",
+            "title": "Anti-Money Laundering and Counter-Terrorism Financing Rules 2025 (compilation of 31 March 2026) — Federal Register of Legislation",
+            "publisher": "Office of Parliamentary Counsel, Australian Government (Federal Register of Legislation)"
+          },
+          {
+            "id": "NF-abf-external-territories",
+            "url": "https://www.abf.gov.au/importing-exporting-and-manufacturing/fta/other-preferential-arrangements/external-territories",
+            "title": "External Territories — Australian Border Force",
+            "publisher": "Australian Border Force, Department of Home Affairs"
+          },
+          {
+            "id": "NF-abf-ipc-sample-q5",
+            "url": "https://www.abf.gov.au/entering-leaving-australia/files/ipc-sample-english.pdf",
+            "title": "Incoming passenger card — sample (English) — Australian Border Force",
+            "publisher": "Australian Border Force, Department of Home Affairs"
           }
         ],
         "coverage": {
-          "total_procedures": 1,
-          "published_procedures": 1,
+          "total_procedures": 2,
+          "published_procedures": 2,
           "withheld_procedures": 0,
           "open_questions": 4
         }
@@ -24291,6 +26298,37 @@ export default {
             "name_zh_hant": "旅客離境申報單（海關C18表）——湯加稅務局與海關部",
             "applicability_zh_hant": "方向：離開湯加的旅客，含空路與海路。法定依據（海關與消費稅管理條例2008，部方官網託管文本）：離開王國的旅客須在離境時向海關關員提交填妥的海關C18表旅客申報單（第65條）；C18表為指定的旅客申報表（第62(a)條）；離開王國的旅客或機組人員須向海關關員申報是否攜帶禁止或限制的進出口貨物、檢疫受限貨物或未完稅貨物（第75條）。當前部方海關表單頁在TRAVELLERS（旅客）類目下列出“Passenger Departure Declaration”，表號為C18（相鄰的“Passenger Arrival Declaration”行在當前頁面上未標表號亦無連結）。官網託管的單頁C18表援引第62(a)條和第65條，為合併卡片式表單：表內註明由移民官撕下離境卡（departure card），印製說明為“PLEASE SUBMIT TO IMMIGRATION OFFICER ON YOUR DEPQRTURE FROM THE KINGDOM”（原文如此）。離境卡最終交給哪位關員（第65條的海關關員，還是表內印製的移民官）現有官方文本未能判定。表單本身未載費用；第64(1)款的加班海關服務費由航空器或船舶的船長/機長支付，非旅客費用。",
             "timing_zh_hant": "離境時在出境查驗點，按第65條及表內印製說明提交。"
+          },
+          {
+            "id": "TO-cash-declaration",
+            "type": "customs_declaration",
+            "name_en": "Cash of TOP 10,000 or more (or foreign equivalent) — declare it on the Border Currency Report when entering or leaving Tonga",
+            "name_zh": "携带1万汤加潘加（TOP）或以上现金（或等值外币）——出入境汤加时填写边境货币报告（Border Currency Report）申报",
+            "agency": "Ministry of Revenue and Customs, Kingdom of Tonga (Customs); declarations go to the Transaction Reporting Authority at the National Reserve Bank of Tonga",
+            "official_url": "https://www.reservebank.to/index.php/financial-intelligence/transactions-reporting-authority",
+            "channel": "paper",
+            "applicability_en": "Section 55 of the Money Laundering and Proceeds of Crime Act 2025 requires anyone who enters or leaves Tonga in possession of cash, or arranges for cash to be sent into or out of Tonga by cargo, courier, post or any other means, to declare cash of $10,000 or more to an authorised officer (a police officer, a customs officer or a person authorised by the Minister responsible for Customs) on the prescribed form. \"Cash\" means currency, and monetary instruments that may be exchanged for money, such as cheques, travellers’ cheques and money orders. The prescribed form is the Border Currency Report, which Customs publishes for both directions of travel and which states the amount in paʻanga (TOP) or the foreign equivalent. The Act says \"equal to or above\" $10,000 and Form C18 asks about \"TOP10,000 or more\", but the Border Currency Report form and the Reserve Bank page say \"more than TOP$10,000\"; if you carry exactly TOP$10,000, declare it. Intentionally or recklessly failing to declare, or making a false or misleading declaration, is an offence punishable by a fine of up to $50,000, imprisonment of up to 10 years, or both.",
+            "applicability_zh": "依据《2025年洗钱与犯罪所得法》第55条，进入或离开汤加时持有现金的人，或通过货运、快递、邮寄等任何方式安排现金运入或运出汤加的人，须使用规定表格向授权官员（警察、海关官员或经负责海关事务的部长授权的人）申报1万或以上现金。“现金”指货币，以及可兑换成钱的货币票据，如支票、旅行支票和汇票。规定表格即海关发布的边境货币报告（Border Currency Report），出入境均适用，金额以潘加（TOP）或等值外币填写。该法写的是“等于或高于”1万，C18表格问的是“TOP10,000或以上”，而边境货币报告表格和储备银行页面写的是“超过TOP$10,000”；恰好携带TOP$10,000时，请申报。故意或轻率地不申报，或作虚假或误导性申报，属于犯罪，可处最高5万罚款、最高10年监禁，或两者并处。",
+            "timing_en": "On arrival or on departure: hand the completed Border Currency Report to a Customs officer at any Tongan air or sea port at the time you arrive or leave.",
+            "timing_zh": "入境或离境时：抵达或离开时，把填好的边境货币报告交给任一汤加空港或海港的海关官员。",
+            "fee": "unknown",
+            "source_ids": [
+              "TO-form-c18-cash-question",
+              "TO-mlpc2025-s55-scope",
+              "TO-mlpc2025-s55-threshold",
+              "TO-mlpc2025-s55-form",
+              "TO-mlpc2025-s55-penalty",
+              "TO-mlpc2025-cash-def",
+              "TO-mlpc2025-authorised-officer",
+              "TO-bcr-form-threshold",
+              "TO-bcr-form-handover",
+              "TO-bcr-form-direction",
+              "TO-rbnt-bcr"
+            ],
+            "verified_at": "2026-10-14",
+            "name_zh_hant": "攜帶1萬湯加潘加（TOP）或以上現金（或等值外幣）——出入境湯加時填寫邊境貨幣報告（Border Currency Report）申報",
+            "applicability_zh_hant": "依據《2025年洗錢與犯罪所得法》第55條，進入或離開湯加時持有現金的人，或通過貨運、快遞、郵寄等任何方式安排現金運入或運出湯加的人，須使用規定表格向授權官員（警察、海關官員或經負責海關事務的部長授權的人）申報1萬或以上現金。“現金”指貨幣，以及可兌換成錢的貨幣票據，如支票、旅行支票和匯票。規定表格即海關發佈的邊境貨幣報告（Border Currency Report），出入境均適用，金額以潘加（TOP）或等值外幣填寫。該法寫的是“等於或高於”1萬，C18表格問的是“TOP10,000或以上”，而邊境貨幣報告表格和儲備銀行頁面寫的是“超過TOP$10,000”；恰好攜帶TOP$10,000時，請申報。故意或輕率地不申報，或作虛假或誤導性申報，屬於犯罪，可處最高5萬罰款、最高10年監禁，或兩者並處。",
+            "timing_zh_hant": "入境或離境時：抵達或離開時，把填好的邊境貨幣報告交給任一湯加空港或海港的海關官員。"
           }
         ],
         "sources": [
@@ -24369,7 +26407,7 @@ export default {
           {
             "id": "TO-form-c18-cash-question",
             "url": "https://www.revenue.gov.to/sites/default/files/inline-files/Form%20C18%20-%20Passenger%20Declaration.pdf",
-            "title": "Form C18 — Passenger Declaration (hosted single-page PDF citing Regulation 62(a) and 65; Customs Declaration section question; fetched 2026-09-27, HTTP 200, server file Last-Modified 2021-03-31)",
+            "title": "Form C18 — Passenger Declaration — Ministry of Revenue & Customs, Government of Tonga",
             "publisher": "Ministry of Revenue & Customs, Government of Tonga"
           },
           {
@@ -24377,11 +26415,71 @@ export default {
             "url": "https://www.revenue.gov.to/sites/default/files/inline-files/Form%20C18%20-%20Passenger%20Declaration.pdf",
             "title": "Form C18 — same PDF (detachable departure card; card states 'Immigration Officer will detach DEPARTURE CARD'; printed instruction as shown)",
             "publisher": "Ministry of Revenue & Customs, Government of Tonga"
+          },
+          {
+            "id": "TO-mlpc2025-s55-scope",
+            "url": "https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0048/MoneyLaunderingandProceedsofCrimeAct2025_1.pdf",
+            "title": "Money Laundering and Proceeds of Crime Act 2025 (Act 35 of 2025) — Attorney General’s Office, Kingdom of Tonga",
+            "publisher": "Attorney General’s Office, Kingdom of Tonga"
+          },
+          {
+            "id": "TO-mlpc2025-s55-threshold",
+            "url": "https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0048/MoneyLaunderingandProceedsofCrimeAct2025_1.pdf",
+            "title": "Money Laundering and Proceeds of Crime Act 2025 (Act 35 of 2025) — Attorney General’s Office, Kingdom of Tonga",
+            "publisher": "Attorney General’s Office, Kingdom of Tonga"
+          },
+          {
+            "id": "TO-mlpc2025-s55-form",
+            "url": "https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0048/MoneyLaunderingandProceedsofCrimeAct2025_1.pdf",
+            "title": "Money Laundering and Proceeds of Crime Act 2025 (Act 35 of 2025) — Attorney General’s Office, Kingdom of Tonga",
+            "publisher": "Attorney General’s Office, Kingdom of Tonga"
+          },
+          {
+            "id": "TO-mlpc2025-s55-penalty",
+            "url": "https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0048/MoneyLaunderingandProceedsofCrimeAct2025_1.pdf",
+            "title": "Money Laundering and Proceeds of Crime Act 2025 (Act 35 of 2025) — Attorney General’s Office, Kingdom of Tonga",
+            "publisher": "Attorney General’s Office, Kingdom of Tonga"
+          },
+          {
+            "id": "TO-mlpc2025-cash-def",
+            "url": "https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0048/MoneyLaunderingandProceedsofCrimeAct2025_1.pdf",
+            "title": "Money Laundering and Proceeds of Crime Act 2025 (Act 35 of 2025) — Attorney General’s Office, Kingdom of Tonga",
+            "publisher": "Attorney General’s Office, Kingdom of Tonga"
+          },
+          {
+            "id": "TO-mlpc2025-authorised-officer",
+            "url": "https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0048/MoneyLaunderingandProceedsofCrimeAct2025_1.pdf",
+            "title": "Money Laundering and Proceeds of Crime Act 2025 (Act 35 of 2025) — Attorney General’s Office, Kingdom of Tonga",
+            "publisher": "Attorney General’s Office, Kingdom of Tonga"
+          },
+          {
+            "id": "TO-bcr-form-threshold",
+            "url": "https://www.revenue.gov.to/sites/default/files/inline-files/BorderCurrencyForm_0.pdf",
+            "title": "Border Currency Report (BCR) form — Ministry of Revenue and Customs, Kingdom of Tonga",
+            "publisher": "Ministry of Revenue & Customs, Government of Tonga"
+          },
+          {
+            "id": "TO-bcr-form-handover",
+            "url": "https://www.revenue.gov.to/sites/default/files/inline-files/BorderCurrencyForm_0.pdf",
+            "title": "Border Currency Report (BCR) form — Ministry of Revenue and Customs, Kingdom of Tonga",
+            "publisher": "Ministry of Revenue & Customs, Government of Tonga"
+          },
+          {
+            "id": "TO-bcr-form-direction",
+            "url": "https://www.revenue.gov.to/sites/default/files/inline-files/BorderCurrencyForm_0.pdf",
+            "title": "Border Currency Report (BCR) form — Ministry of Revenue and Customs, Kingdom of Tonga",
+            "publisher": "Ministry of Revenue & Customs, Government of Tonga"
+          },
+          {
+            "id": "TO-rbnt-bcr",
+            "url": "https://www.reservebank.to/index.php/financial-intelligence/transactions-reporting-authority",
+            "title": "Transactions Reporting Authority — National Reserve Bank of Tonga",
+            "publisher": "National Reserve Bank of Tonga"
           }
         ],
         "coverage": {
-          "total_procedures": 2,
-          "published_procedures": 2,
+          "total_procedures": 3,
+          "published_procedures": 3,
           "withheld_procedures": 0,
           "open_questions": 4
         }
