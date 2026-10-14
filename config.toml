@@ -217,22 +217,30 @@ defaultContentLanguageInSubdir = false
       zh = "https://safetywing.com/?referenceID=26517368&utm_source=26517368&utm_medium=Ambassador"
       zh-hant = "https://safetywing.com/?referenceID=26517368&utm_source=26517368&utm_medium=Ambassador"
 
-  # Klook links come from the affiliate portal's link tool, never hand-built.
+  # Klook links come from the affiliate portal's link tool (Entry Card Guide,
+  # 2026-10-14), never hand-built. The only English eSIM target found was
+  # Klook's Japan page, so the English eSIM card is limited to Japan.
+  [[params.affiliate.cards]]
+    partner = "klook"
+    product = "esim"
+    countries = ["japan"]
+    [params.affiliate.cards.urls]
+      en = "https://affiliate.klook.com/redirect?aid=139113&aff_adid=1500418&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Fwifi-sim-card%2F%3Fcity_id%3D30"
+
   [[params.affiliate.cards]]
     partner = "klook"
     product = "esim"
     [params.affiliate.cards.urls]
-      en = ""
-      zh = ""
-      zh-hant = ""
+      zh = "https://affiliate.klook.com/redirect?aid=139113&aff_adid=1500421&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-CN%2Fwifi-sim-card%2F"
+      zh-hant = "https://affiliate.klook.com/redirect?aid=139113&aff_adid=1500423&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fesim%2F"
 
   [[params.affiliate.cards]]
     partner = "klook"
     product = "transfer"
     [params.affiliate.cards.urls]
-      en = ""
-      zh = ""
-      zh-hant = ""
+      en = "https://affiliate.klook.com/redirect?aid=139113&aff_adid=1500424&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Fairport-transfers%2F"
+      zh = "https://affiliate.klook.com/redirect?aid=139113&aff_adid=1500426&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-CN%2Ftransport%2Fairport-transfers%2F"
+      zh-hant = "https://affiliate.klook.com/redirect?aid=139113&aff_adid=1500427&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fairport-transfers%2F"
 
   # Copy sheet under the validator (docs/plans/2026-10-13-revenue-plan.md, A3).
   # The sheet's help text says the official form is free: list free forms only.
