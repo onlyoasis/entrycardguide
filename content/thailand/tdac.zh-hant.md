@@ -22,7 +22,7 @@ faq:
   - q: "有網站要收我 TDAC 的錢，它是官方嗎？"
     a: "不是。TDAC 在 tdac.immigration.go.th 上是免費的。2026 年 3 月，泰國移民局公開警告有非官方網站為免費的 TDAC 收費。"
 layout: country-form
-lastmod: 2026-10-12
+lastmod: 2026-10-14
 ---
 
 {{< official-link site="thailand.tdac" >}}
@@ -84,4 +84,4 @@ TDAC 共有 23 個欄位，分佈在 4 個部分：護照、行程、健康、�
 
 ---
 
-*本指南由 entrycardguide 維護。我們與泰國皇家移民局或任何旅行服務都沒有任何關聯。我們目前的聯盟收入來自符合條件頁面中清楚披露的旅行保險連結，詳見 [關於頁](/zh-hant/about/)。*
+*本指南由 entrycardguide 維護。我們與泰國皇家移民局或任何旅行服務都沒有任何關聯。我們目前的聯盟收入來自符合條件頁面中清楚披露的旅行聯盟連結（旅行保險、eSIM、機場接送），詳見 [關於頁](/zh-hant/about/)。*

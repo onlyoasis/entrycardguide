@@ -20,7 +20,7 @@ faq:
   - q: "有網站要收我 E-Ticket 的錢，它是官方嗎？"
     a: "不是。E-Ticket 在官方 DGM 網站上是免費的。任何收費的網站都是商業服務，與多米尼加移民局總局沒有關聯。"
 layout: country-form
-lastmod: 2026-10-12
+lastmod: 2026-10-14
 ---
 
 {{< official-link site="dominican.eticket" >}}
@@ -86,4 +86,4 @@ E-Ticket 大約有 10 個核心欄位，加一段海關申報：旅客身份、�
 
 ---
 
-*本指南由 entrycardguide 維護。我們與 DGM 或任何旅行服務都沒有任何關聯。我們目前的聯盟收入來自符合條件頁面中清楚披露的旅行保險連結。*
+*本指南由 entrycardguide 維護。我們與 DGM 或任何旅行服務都沒有任何關聯。我們目前的聯盟收入來自符合條件頁面中清楚披露的旅行聯盟連結（旅行保險、eSIM、機場接送）。*

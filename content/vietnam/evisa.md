@@ -79,4 +79,4 @@ If a site asks for your photo or payment but the URL is not `.gov.vn`, you are n
 
 ---
 
-*This guide is maintained by entrycardguide. We have no affiliation with the Vietnam Immigration Department or any travel service. Our current affiliate revenue comes from clearly disclosed travel insurance links on eligible pages.*
+*This guide is maintained by entrycardguide. We have no affiliation with the Vietnam Immigration Department or any travel service. Our current affiliate revenue comes from clearly disclosed travel affiliate links (travel insurance, eSIM, airport transfers) on eligible pages.*

@@ -2,7 +2,7 @@
 title: "About"
 description: "Who runs entrycardguide, why this site exists, how we make money, and what we promise we will never do."
 date: 2026-04-25
-lastmod: 2026-10-13
+lastmod: 2026-10-14
 url: "/about/"
 layout: about
 ---
@@ -49,11 +49,12 @@ Do not trust us because the site looks serious. Check the artifacts.
 
 ## How we make money
 
-Right now there is one affiliate partner. Its link appears on eligible guides and is labelled as an affiliate link:
+Right now there are two affiliate partners. Their links appear on eligible guides and are labelled as affiliate links:
 
-1. **Travel insurance through SafetyWing.** When you click through and buy a policy, we get a small commission from SafetyWing. The price you pay is the same as going direct.
+1. **Travel insurance through SafetyWing.** Shown only on guides for destinations whose entry rules ask for insurance: Cuba, Russia, Georgia and Oman. When you click through and buy a policy, we get a small commission from SafetyWing.
+2. **eSIM and airport transfers through Klook.** Shown on country guides for things people sort out in the days before landing. When you book through the link, we get a small commission from Klook.
 
-We may add links for things people sort out in the days before landing, such as an eSIM or an airport transfer. A link only appears once the partner link is live and clearly disclosed, and it will be listed here.
+The price you pay is the same as going direct. If we add a partner, it will be listed here first.
 
 We never make money from the forms themselves. If we add any other source of income, it will be listed on this page from the day it starts.
 

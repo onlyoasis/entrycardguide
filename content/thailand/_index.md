@@ -38,4 +38,4 @@ Immigration, customs limits, the cash declaration threshold, and the official ta
 
 We are not the Royal Thai Immigration Bureau. We are not a travel agency. We do not file your TDAC for you, and we would not take your money if you asked us to.
 
-Our current affiliate revenue comes from clearly disclosed travel insurance links in eligible guides. We have never taken money from a visa middleman, and we will not. That is the entire business model. Read more on our [about page](/about/).
+Our current affiliate revenue comes from clearly disclosed travel affiliate links (travel insurance, eSIM, airport transfers) in eligible guides. We have never taken money from a visa middleman, and we will not. Read more on our [about page](/about/).

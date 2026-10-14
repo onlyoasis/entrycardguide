@@ -75,4 +75,4 @@ If a site asks for either, you are not on the official site.
 
 ---
 
-*This guide is maintained by entrycardguide. We have no affiliation with the Indonesian Customs Directorate or any travel service. Our current affiliate revenue comes from clearly disclosed travel insurance links on eligible pages.*
+*This guide is maintained by entrycardguide. We have no affiliation with the Indonesian Customs Directorate or any travel service. Our current affiliate revenue comes from clearly disclosed travel affiliate links (travel insurance, eSIM, airport transfers) on eligible pages.*

@@ -98,4 +98,4 @@ The officer tears off part of the form and hands a stub back to you. **Keep it.*
 
 ---
 
-*This guide is maintained by entrycardguide. We have no affiliation with INM or any travel service. Our current affiliate revenue comes from clearly disclosed travel insurance links on eligible pages.*
+*This guide is maintained by entrycardguide. We have no affiliation with INM or any travel service. Our current affiliate revenue comes from clearly disclosed travel affiliate links (travel insurance, eSIM, airport transfers) on eligible pages.*

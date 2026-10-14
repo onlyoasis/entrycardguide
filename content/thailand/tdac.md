@@ -84,4 +84,4 @@ Check spam. If still missing after 1 hour, submit again. The official site is id
 
 ---
 
-*This guide is maintained by entrycardguide. We have no affiliation with the Royal Thai Immigration Bureau or any travel service. Our current affiliate revenue comes from clearly disclosed travel insurance links on eligible pages, and we are transparent about this in our [about page](/about/).*
+*This guide is maintained by entrycardguide. We have no affiliation with the Royal Thai Immigration Bureau or any travel service. Our current affiliate revenue comes from clearly disclosed travel affiliate links (travel insurance, eSIM, airport transfers) on eligible pages, and we are transparent about this in our [about page](/about/).*

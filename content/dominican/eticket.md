@@ -86,4 +86,4 @@ Check the confirmation shown by the official service and its retrieval or help o
 
 ---
 
-*This guide is maintained by entrycardguide. We have no affiliation with DGM or any travel service. Our current affiliate revenue comes from clearly disclosed travel insurance links on eligible pages.*
+*This guide is maintained by entrycardguide. We have no affiliation with DGM or any travel service. Our current affiliate revenue comes from clearly disclosed travel affiliate links (travel insurance, eSIM, airport transfers) on eligible pages.*
