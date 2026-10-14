@@ -201,9 +201,38 @@ defaultContentLanguageInSubdir = false
   [params.author]
     name = "entrycardguide"
 
-  [params.affiliate]
-    safetywing_url = "https://safetywing.com/?referenceID=26517368&utm_source=26517368&utm_medium=Ambassador"
-    airalo_url = ""
+  # Affiliate cards, picked per language (docs/plans/2026-10-13-revenue-plan.md, A2).
+  # A card renders only on languages with a url. `countries` limits a card to
+  # those country sections. At most two partners per language area (Task 04);
+  # layouts/partials/affiliate-cards.html stops the build when a language has more.
+  [[params.affiliate.cards]]
+    partner = "safetywing"
+    product = "insurance"
+    # Destinations whose own entry pages on this site list travel or medical
+    # insurance as a requirement. Saudi Arabia is left out: its insurance is
+    # sold inside the government eVisa checkout.
+    countries = ["cuba", "russia", "georgia", "oman"]
+    [params.affiliate.cards.urls]
+      en = "https://safetywing.com/?referenceID=26517368&utm_source=26517368&utm_medium=Ambassador"
+      zh = "https://safetywing.com/?referenceID=26517368&utm_source=26517368&utm_medium=Ambassador"
+      zh-hant = "https://safetywing.com/?referenceID=26517368&utm_source=26517368&utm_medium=Ambassador"
+
+  # Klook links come from the affiliate portal's link tool, never hand-built.
+  [[params.affiliate.cards]]
+    partner = "klook"
+    product = "esim"
+    [params.affiliate.cards.urls]
+      en = ""
+      zh = ""
+      zh-hant = ""
+
+  [[params.affiliate.cards]]
+    partner = "klook"
+    product = "transfer"
+    [params.affiliate.cards.urls]
+      en = ""
+      zh = ""
+      zh-hant = ""
 
   # Copy sheet under the validator (docs/plans/2026-10-13-revenue-plan.md, A3).
   # The sheet's help text says the official form is free: list free forms only.

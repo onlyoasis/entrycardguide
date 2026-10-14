@@ -282,7 +282,7 @@
   </ol>
 </section>
 
-{{- partial "affiliate-footer.html" "mid" -}}
+{{- partial "affiliate-footer.html" (dict "page" . "slot" "mid") -}}
 
 {{- /* Full markdown walkthrough — preserves the pre-existing per-field prose,
        validator shortcode, and any country-specific edge cases that aren't

@@ -33,6 +33,8 @@ function trackAffiliateClick(link: HTMLAnchorElement): void {
   analyticsWindow.gtag('event', affiliateClickEvent, {
     affiliate_partner: link.dataset.affiliatePartner || 'unknown',
     affiliate_slot: link.dataset.affiliateSlot || 'unknown',
+    affiliate_product: link.dataset.affiliateProduct || 'unknown',
+    page_lang: document.documentElement.lang || 'unknown',
     link_url: link.href,
   });
 }

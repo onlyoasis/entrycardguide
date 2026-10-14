@@ -79,9 +79,8 @@
   </div>
 </div>
 
-{{- /* Section-scoped, matching the guard single.html used before the card
-       moved into the rail — top-level pages like /changelog/ stay ad-free. */ -}}
-{{- if .Section }}
+{{- /* affiliate-cards.html returns none for top-level pages like /changelog/. */ -}}
+{{- if partial "affiliate-cards.html" . }}
 <div class="border-t-2 border-ink pt-md mb-xl">
   {{- partial "affiliate-rail.html" . -}}
 </div>

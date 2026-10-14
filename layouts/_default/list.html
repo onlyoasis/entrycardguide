@@ -157,7 +157,7 @@
 {{- if .Section }}
 {{- /* Own slot name so the 100 hub pages stay separable from rail / mid /
        bottom in GA4, and can be pulled back out on their own. */ -}}
-{{- partial "affiliate-footer.html" "hub" -}}
+{{- partial "affiliate-footer.html" (dict "page" . "slot" "hub") -}}
 
 {{- partial "related-guides.html" . -}}
 {{- partial "share-source.html" . -}}

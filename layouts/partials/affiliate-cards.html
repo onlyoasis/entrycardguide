@@ -1,0 +1,20 @@
+{{- /* Returns the affiliate cards for this page: cards with a url in the page
+       language, filtered to `countries` when the card lists them. Param is the
+       page. Pages without a section (about, changelog) get none. */ -}}
+{{- $lang := .Language.Lang -}}
+{{- $section := .Section -}}
+{{- $cards := slice -}}
+{{- $partners := slice -}}
+{{- range site.Params.affiliate.cards -}}
+  {{- $url := index (.urls | default dict) $lang | default "" -}}
+  {{- if $url -}}
+    {{- $partners = $partners | append .partner -}}
+    {{- if and $section (or (not .countries) (in .countries $section)) -}}
+      {{- $cards = $cards | append (dict "partner" .partner "product" .product "url" $url) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if gt (len (uniq $partners)) 2 -}}
+  {{- errorf "affiliate: %d partners have a %s url; Task 04 allows two per language area" (len (uniq $partners)) $lang -}}
+{{- end -}}
+{{- return $cards -}}

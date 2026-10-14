@@ -44,7 +44,7 @@
 
     {{- if .Section }}
     <div class="lg:hidden">
-      {{- partial "affiliate-footer.html" "bottom" -}}
+      {{- partial "affiliate-footer.html" (dict "page" . "slot" "bottom") -}}
     </div>
     {{- end }}
   </div>

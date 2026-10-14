@@ -105,6 +105,11 @@ R4 的依据：政府不免费提供照片，卖照片处理不违背承诺。�
 - GA4：`affiliate_click` 带 partner、slot、lang 三个参数。
 - about 页：改写 `content/about.md` 第 52–58 行"只用一个联盟链接、这就是全部商业模式"和第 94 行"买保险时点联盟链接"，`about.zh.md` 同步，繁体由 sync 生成。保留第 60–66 行"不收中介的钱、不为填表收费"。
 - 验收：三语页面渲染对应语言的伙伴；披露文案三语齐全；`check:seo`、`check:zh-hant` 通过。
+- 进度（2026-10-14）：
+  - 账号：Klook 已激活；KKday 待审核；Travelpayouts 注册报错，待站长提供报错原文。
+  - Klook 链接委派 Codex 两轮均未拿到：第一轮打开 www.klook.com 触发人机验证；第二轮联盟后台显示登录页（会话已失效），按规则停止。目标网址已从搜索结果取得（`/Volumes/ExternalProjects/Runtime/entrycardguide/klook-links-20261014/links.json`），英文 eSIM 只找到日本筛选页。待站长重新登录联盟后台后生成。
+  - 代码框架（分支 `feat/affiliate-by-language`，未上线）：`config.toml` 改为 `[[params.affiliate.cards]]`，每张卡有 partner、product、按语言的 urls，可选 countries；`layouts/partials/affiliate-cards.html` 按页面语言和国家栏目挑卡，某语言超过两个伙伴就终止构建。SafetyWing 收窄到站内页面写明要保险的古巴、俄罗斯、格鲁吉亚、阿曼（沙特的保险在电子签结账里购买，不列）；构建产物 36 页（4 国 × 3 页 × 3 语言）有卡，此前是所有国家页。Klook eSIM、接机两张卡网址留空，填入即渲染。`affiliate_click` 增加 `affiliate_product` 与 `page_lang`。Airalo 文案删除。
+  - 填入 Klook 网址时一起改：about 页“目前一个联盟伙伴”、12 个内容页页脚“联盟收入来自旅行保险链接”（会刷新这些页的核验日期）。
 
 **A3 网页版预填清单**
 
