@@ -41,6 +41,12 @@
 //                           verticals (Web, Chat, News, ...) since 2023-03-24
 //   GetCrawlStats           daily crawl counts, index size, inbound links,
 //                           last 6 months
+//
+// --pages adds the page-level view: GetPageStats lists the URLs Bing shows,
+// then one GetPageQueryStats call per URL returns the queries that page was
+// shown for (same weekly rows as GetQueryStats). GetQueryStats has no page
+// column, so this is the only way to see which country page a query lands on
+// (docs/plans/2026-10-14-country-longtail-keywords.md). ~130 calls.
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
@@ -62,7 +68,21 @@ for (const method of methods) {
   writeFileSync(path.join(outputDir, file), `${JSON.stringify(rows, null, 2)}\n`);
   console.log(`  ${file.padEnd(36)} ${String(rows.length).padStart(6)} rows`);
 }
-console.log(`\nWrote ${methods.length} files to ${outputDir}/`);
+let written = methods.length;
+if (process.argv.includes("--pages")) {
+  const pages = await callMethod("GetPageStats", apiKey);
+  writeFileSync(path.join(outputDir, "bing-get-page-stats.json"), `${JSON.stringify(pages, null, 2)}\n`);
+  const byPage = {};
+  for (const page of [...new Set(pages.map((row) => row.Query))]) {
+    byPage[page] = await callMethod("GetPageQueryStats", apiKey, { page });
+  }
+  writeFileSync(path.join(outputDir, "bing-get-page-query-stats.json"), `${JSON.stringify(byPage, null, 2)}\n`);
+  const rows = Object.values(byPage).reduce((sum, list) => sum + list.length, 0);
+  console.log(`  ${"bing-get-page-stats.json".padEnd(36)} ${String(pages.length).padStart(6)} rows`);
+  console.log(`  ${"bing-get-page-query-stats.json".padEnd(36)} ${String(rows).padStart(6)} rows (${Object.keys(byPage).length} pages)`);
+  written += 2;
+}
+console.log(`\nWrote ${written} files to ${outputDir}/`);
 
 function loadDotEnv() {
   const file = ".env";
@@ -88,8 +108,8 @@ function requireApiKey() {
   return value;
 }
 
-async function callMethod(method, apiKey) {
-  const url = `${apiBaseUrl}/${method}?${new URLSearchParams({ siteUrl, apikey: apiKey })}`;
+async function callMethod(method, apiKey, params = {}) {
+  const url = `${apiBaseUrl}/${method}?${new URLSearchParams({ siteUrl, apikey: apiKey, ...params })}`;
   const response = await fetch(url);
   const text = await response.text();
   if (!response.ok) {

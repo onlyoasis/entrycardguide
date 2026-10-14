@@ -182,6 +182,12 @@ BING_WEBMASTER_API_KEY=<API Key>
 | `bing-get-query-stats.json` | GetQueryStats | top query 的点击/曝光/平均排名，数据每周刷新 |
 | `bing-get-rank-and-traffic-stats.json` | GetRankAndTrafficStats | 全站按天的点击/曝光，含 Web/Chat/News 等全部垂直 |
 | `bing-get-crawl-stats.json` | GetCrawlStats | 按天抓取量分布、索引页数、外链数，近 6 个月 |
+| `bing-get-page-stats.json` | GetPageStats | 仅 `--pages`：各页面按周的点击/曝光（URL 在 `Query` 字段） |
+| `bing-get-page-query-stats.json` | GetPageQueryStats | 仅 `--pages`：`{页面 URL: [按周的查询行]}`，看某个查询落在哪个国家页 |
+
+`GetQueryStats` 没有页面列。要按国家页看长尾词（2026-10-14 长尾词规划就是这样做的），运行
+`npm run fetch:bing-data -- --pages`：先取页面列表，再对每个页面调一次 `GetPageQueryStats`，
+约 130 次请求。2026-10-14 实测 132 个页面、9,971 行，同样是每周一批。
 
 三条请求都只带 `siteUrl`（默认 `https://entrycardguide.com`，可用
 `BING_SITE_URL` 覆盖，不能用 GSC 的 `sc-domain:` 形态）和 `apikey` 参数，
