@@ -108,36 +108,68 @@ a_zh = "先看垃圾箱。1 小时还没收到，就换 Gmail 再提交一份作
 a_zh_hant = "先看垃圾箱。1 小時還沒收到，就換 Gmail 再提交一份作為備份，有些信箱會丟這類郵件。"
 
 [["korea/how-to-fill"]]
-q = "What is the official Korea e-Arrival Card website?"
-a = "www.e-arrivalcard.go.kr, on the government .go.kr domain. Filing there is free."
-q_zh = "韩国入境卡官网网址是什么？"
-q_zh_hant = "韓國入境卡官網網址是什麼？"
-a_zh = "www.e-arrivalcard.go.kr，在政府 .go.kr 域名下，填写免费。"
-a_zh_hant = "www.e-arrivalcard.go.kr，在政府 .go.kr 域名下，填寫免費。"
+q = "Does the Korea e-Arrival Card website support Chinese?"
+a = "Yes. The portal works in 7 languages: Korean, English, Simplified Chinese, Japanese, Thai, Vietnamese and Russian."
+q_zh = "韩国入境卡官网支持中文吗？"
+q_zh_hant = "韓國入境卡官網支持中文嗎？"
+a_zh = "支持。门户有 7 种语言：韩语、英语、简体中文、日语、泰语、越南语、俄语。"
+a_zh_hant = "支持。門戶有 7 種語言：韓語、英語、簡體中文、日語、泰語、越南語、俄語。"
+
+[["korea/how-to-fill"]]
+q = "How early can I fill in the Korea e-Arrival Card?"
+a = "From 3 days before arrival, in Korea Standard Time. Landing on 31 January means you can file on 29, 30 or 31 January, or after landing before immigration. A card expires 72 hours after submission."
+q_zh = "韩国入境卡提前几天填？"
+q_zh_hant = "韓國入境卡提前幾天填？"
+a_zh = "抵达前 3 天起，按韩国标准时间算。1 月 31 日抵达，可在 1 月 29、30、31 日提交，落地后过入境审查前也行。提交后 72 小时失效。"
+a_zh_hant = "抵達前 3 天起，按韓國標準時間算。1 月 31 日抵達，可在 1 月 29、30、31 日提交，落地後過入境審查前也行。提交後 72 小時失效。"
+
+[["korea/how-to-fill"]]
+q = "Do I need to print or show the Korea e-Arrival Card? Is there a QR code?"
+a = "No printout and nothing to show. The official guides describe an issue number and a PDF, also emailed, not a QR code you must present. If a detail was wrong, the officer may ask for the issue number, so keep the PDF on your phone."
+q_zh = "韩国入境卡要打印吗？有二维码吗？"
+q_zh_hant = "韓國入境卡要列印嗎？有 QR Code 嗎？"
+a_zh = "不用打印，也不必出示。官方指南写的是签发编号和 PDF（同样内容发到邮箱），没有要求出示二维码。资料有误时审查官可能要签发编号，手机里留一份 PDF。"
+a_zh_hant = "不用列印，也不必出示。官方指南寫的是簽發編號和 PDF（同樣內容發到信箱），沒有要求出示 QR Code。資料有誤時審查官可能要簽發編號，手機裡留一份 PDF。"
+
+[["korea/how-to-fill"]]
+q = "Can I change my Korea e-Arrival Card after submitting it?"
+a = "Yes, before immigration. Open Check/Edit with your issue number or email verification to change your place of stay, purpose, occupation or departure date. The arrival date can only be changed within 3 days of the first submission."
+q_zh = "韩国入境卡填错了怎么改？"
+q_zh_hant = "韓國入境卡填錯了怎麼改？"
+a_zh = "过入境审查前可以改。在“查询·修改”页用签发编号或邮件认证打开，滞留地、入境目的、职业、出境日期都能改；抵达日期只能在首次提交起 3 天内修改。"
+a_zh_hant = "過入境審查前可以改。在“查詢·修改”頁用簽發編號或郵件認證打開，滯留地、入境目的、職業、出境日期都能改；抵達日期只能在首次提交起 3 天內修改。"
 
 [["korea/how-to-fill"]]
 q = "Is the Korea e-Arrival Card the same as K-ETA?"
-a = "No. K-ETA, visas, Q-Code and the e-Arrival Card are separate systems. If a page asks you to pay a K-ETA or visa fee, you are not just filing the free e-Arrival Card."
+a = "No. They are separate systems. A traveller with a K-ETA that is still valid does not file the e-Arrival Card, unless entering on a visa. If a page asks you to pay a K-ETA or visa fee, you are not just filing the free e-Arrival Card."
 q_zh = "韩国入境卡和 K-ETA 是一回事吗？"
 q_zh_hant = "韓國入境卡和 K-ETA 是一回事嗎？"
-a_zh = "不是。K-ETA、签证、Q-Code 和 e-Arrival Card 是不同系统。如果页面要求你付 K-ETA 或签证费，你就不只是在填免费的电子入境卡。"
-a_zh_hant = "不是。K-ETA、簽證、Q-Code 和 e-Arrival Card 是不同系統。如果頁面要求你付 K-ETA 或簽證費，你就不只是在填免費的電子入境卡。"
+a_zh = "不是，两个系统各管各的。K-ETA 仍在有效期内就不用填电子入境卡，用签证入境的除外。如果页面要你付 K-ETA 或签证费，你就不只是在填免费的电子入境卡。"
+a_zh_hant = "不是，兩個系統各管各的。K-ETA 仍在有效期內就不用填電子入境卡，用簽證入境的除外。如果頁面要你付 K-ETA 或簽證費，你就不只是在填免費的電子入境卡。"
 
 [["korea/how-to-fill"]]
-q = "Which flight number goes on the Korea e-Arrival Card?"
-a = "The operating flight number, for example KE82, not the airline name. On a codeshare, match the operating carrier."
-q_zh = "韩国入境卡航班号怎么填？"
-q_zh_hant = "韓國入境卡航班號怎麼填？"
-a_zh = "填实际承运的航班号，例如 KE82，不要写航司名称；代码共享航班按实际承运航司填。"
-a_zh_hant = "填實際承運的航班號，例如 KE82，不要寫航司名稱；代碼共享航班按實際承運航司填。"
+q = "Do transit passengers need a Korea e-Arrival Card, and what address do they enter?"
+a = "Not if you transfer within 24 hours without entering Korea. A same-day transit passenger who passes immigration, for example to collect bags, files one and enters the airport's address, such as 272 Gonghang-ro, Jung-gu, Incheon (22382) for Incheon Terminal 1."
+q_zh = "转机要填韩国入境卡吗？地址填什么？"
+q_zh_hant = "轉機要填韓國入境卡嗎？地址填什麼？"
+a_zh = "24 小时内转机、不入境韩国就不用填。当天转机但要过入境审查（比如出去取行李）的，要填，地址写所在机场，例如仁川机场 T1 是 272 Gonghang-ro, Jung-gu, Incheon (22382)。"
+a_zh_hant = "24 小時內轉機、不入境韓國就不用填。當天轉機但要過入境審查（比如出去取行李）的，要填，地址寫所在機場，例如仁川機場 T1 是 272 Gonghang-ro, Jung-gu, Incheon (22382)。"
 
 [["korea/how-to-fill"]]
-q = "How do I write my name on the Korea e-Arrival Card?"
-a = "Use the Latin-letter name printed in your passport, for example KIM MINJUN, not a name in Korean or another non-Latin script."
-q_zh = "韩国入境卡姓名怎么填？"
-q_zh_hant = "韓國入境卡姓名怎麼填？"
-a_zh = "填护照上的拉丁字母姓名，例如 KIM MINJUN，不要填韩文等非拉丁文字。"
-a_zh_hant = "填護照上的拉丁字母姓名，例如 KIM MINJUN，不要填韓文等非拉丁文字。"
+q = "What phone number goes on the Korea e-Arrival Card?"
+a = "The contact field sits with your place of stay and asks for a contact number in Korea. A valid Korean visa number can fill in the stay address and contact for you."
+q_zh = "韩国入境卡的电话填什么？"
+q_zh_hant = "韓國入境卡的電話填什麼？"
+a_zh = "联系方式和滞留地址放在一起，输入框提示是“请输入韩国境内的联系方式”。持有效韩国签证的，输入签证号可以直接带出滞留地址和联系方式。"
+a_zh_hant = "聯繫方式和滯留地址放在一起，輸入框提示是“請輸入韓國境內的聯繫方式”。持有效韓國簽證的，輸入簽證號可以直接帶出滯留地址和聯繫方式。"
+
+[["korea/how-to-fill"]]
+q = "How do I fill in occupation on the Korea e-Arrival Card?"
+a = "Occupation is a required drop-down list. If nothing fits, choose Other and type it in; the official user guide's examples are athlete and religious worker. Each traveller in a family or group picks their own."
+q_zh = "韩国入境卡职业怎么填？"
+q_zh_hant = "韓國入境卡職業怎麼填？"
+a_zh = "职业是必选的下拉菜单。没有合适的选项就选“其他”再手动填写，官方用户指南举的例子是运动员、宗教人士。全家或团体申报时，每个人的职业要各自选择。"
+a_zh_hant = "職業是必選的下拉菜單。沒有合適的選項就選“其他”再手動填寫，官方用戶指南舉的例子是運動員、宗教人士。全家或團體申報時，每個人的職業要各自選擇。"
 
 [["philippines/how-to-fill"]]
 q = "What if my flight changes after I file eTravel?"

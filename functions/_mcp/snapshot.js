@@ -27297,7 +27297,7 @@ export default {
     },
     {
       "slug": "korea",
-      "validationMode": "field_rules",
+      "validationMode": "examples_only",
       "names": {
         "en": "South Korea",
         "zh": "韩国",
@@ -27326,12 +27326,92 @@ export default {
           "name": "Korea e-Arrival Card",
           "url": "https://www.e-arrivalcard.go.kr/portal/main/index.do",
           "agency": "Korea Immigration Service",
-          "lastVerified": "2026-10-12",
+          "lastVerified": "2026-10-14",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.e-arrivalcard.go.kr/portal/main/index.do",
-          "notes": "Reserved under .go.kr. Official Korea e-Arrival Card portal for eligible foreign arrivals. Free."
+          "notes": "Reserved under .go.kr. Read 2026-10-14 in a browser. The home page states: no fee; submit within 3 days before arrival in Korea, with the three open dates listed in Korea Standard Time; individual form for 1 to 9 people, group form for 2 to 1,000; Check/Edit by issue number or email verification. Interface languages: Korean, English, Simplified Chinese, Japanese, Vietnamese, Thai, Russian. A pop-up says www.e-arrivalcard.go.kr is the only official site and any site asking for payment information is not official."
+        },
+        {
+          "key": "guide",
+          "name": "e-Arrival Card Guide",
+          "url": "https://www.e-arrivalcard.go.kr/portal/guide/eacGuide.do",
+          "agency": "Korea Immigration Service",
+          "lastVerified": "2026-10-14",
+          "notes": "Read 2026-10-14. Filing opens 3 days before arrival (KST); the e-Arrival Card has the same validity as the paper card; free; the issue number is emailed and is not required at inspection; PC up to 1,000 people, mobile web up to 9; purpose, stay and departure date editable before inspection, arrival date only within 3 days of the first submission; validity lost 72 hours after submission or once the traveller has passed immigration; separate from K-ETA; false information can lead to penalties or entry restriction. Things to prepare: valid passport, email, entry date and flight, place of stay, departure date and flight (optional)."
+        },
+        {
+          "key": "procedure",
+          "name": "e-Arrival Card declaration procedure",
+          "url": "https://www.e-arrivalcard.go.kr/portal/guide/eacReportProcessGuide.do",
+          "agency": "Korea Immigration Service",
+          "lastVerified": "2026-10-14",
+          "notes": "Read 2026-10-14. Five steps: terms and representative email entered twice (a person aged 14 or younger cannot be the representative); passport photo upload or scan, with manual entry if the scan fails (up to 9 people); travel itinerary with arrival and departure, purpose of entry, stay information and occupation, which a valid Korean visa can pre-fill; check; submit, then save or print the PDF with the issue number and receive the same details by email. The group form takes common details first, then up to 1,000 passports, on PC only."
+        },
+        {
+          "key": "subject_guide",
+          "name": "Who must submit the e-Arrival Card",
+          "url": "https://www.e-arrivalcard.go.kr/portal/guide/eacTargetGuide.do",
+          "agency": "Korea Immigration Service",
+          "lastVerified": "2026-10-14",
+          "notes": "Read 2026-10-14. Must declare: Korean visa holders; K-ETA-exempt travellers (citizens of countries temporarily exempt from K-ETA, under-17s and over-65s from K-ETA countries, diplomatic or service passports); US forces under SOFA Article 8; UN Laissez-Passer holders; valid ABTC holders; seafarers joining or leaving vessels. Excluded: Korean citizens (dual nationals enter on the Korean passport); valid residence, permanent resident or Overseas Korean resident card holders; K-ETA holders, except those entering with a visa; group electronic visa holders from China, Vietnam, the Philippines and Indonesia, and group visa holders from India and Cambodia; listed visa-free groups at Yangyang and Muan; foreign flight crew."
+        },
+        {
+          "key": "faq",
+          "name": "e-Arrival Card FAQs",
+          "url": "https://www.e-arrivalcard.go.kr/portal/board/boardList.do?eacBbsKndCd=2",
+          "agency": "Korea Immigration Service",
+          "lastVerified": "2026-10-14",
+          "notes": "Read all 34 answers 2026-10-14. Used here: filing from 3 days before arrival (KST) and any time after landing before immigration; free; PC and mobile web, no app; a paper or e-Arrival Card can still be filled in before immigration if none was submitted; lost issue number does not require refiling; K-ETA fee 10,000 won, e-Arrival Card free; K-ETA holders with remaining validity are not subject; 7 languages; third parties may file when the traveller cannot; up to 1,000 people sharing an arrival date and flight; no need to present the issue number document; a card is single-use and invalid after 72 hours; representative place of stay or first place; approximate departure date allowed, departure flight optional; transit within 24 hours without entry exempt; same-day transit passengers who pass immigration use the airport address; date of birth with unknown day and month entered as 1999.00.00; separate from customs and quarantine declarations; submission shown by PDF and email."
+        },
+        {
+          "key": "fake_site_notice",
+          "name": "Notice: beware of fake e-Arrival Card websites",
+          "url": "https://www.e-arrivalcard.go.kr/portal/board/viewBoardDetail.do?bbsId=0000012054&eacBbsKndCd=1&flId=",
+          "agency": "Korea Immigration Service",
+          "lastVerified": "2026-10-14",
+          "notes": "Posted 2025-03-14, read 2026-10-14. Fake sites with similar names claim to be official and demand payment; the service is free; check for the go.kr domain and the government logo; official site https://www.e-arrivalcard.go.kr."
+        },
+        {
+          "key": "email_notice",
+          "name": "Notice: confirmation email delays",
+          "url": "https://www.e-arrivalcard.go.kr/portal/board/viewBoardDetail.do?bbsId=0000012531&eacBbsKndCd=1&flId=",
+          "agency": "Korea Immigration Service",
+          "lastVerified": "2026-10-14",
+          "notes": "Posted 2026-03-13, read 2026-10-14. Confirmation emails may be delayed or fail at Gmail, Outlook.com, Hotmail.com and QQ.com; use another address or save a copy right after submitting."
+        },
+        {
+          "key": "china_access_notice",
+          "name": "Notice: smartphone access from China",
+          "url": "https://www.e-arrivalcard.go.kr/portal/board/viewBoardDetail.do?bbsId=0000012051&eacBbsKndCd=1&flId=",
+          "agency": "Korea Immigration Service",
+          "lastVerified": "2026-10-14",
+          "notes": "Posted 2025-03-13, read 2026-10-14. Smartphone access from China may be unstable because of network conditions; use a desktop or laptop."
+        },
+        {
+          "key": "auth_notice",
+          "name": "Notice: verification code step",
+          "url": "https://www.e-arrivalcard.go.kr/portal/board/viewBoardDetail.do?bbsId=0000012631&eacBbsKndCd=1&flId=",
+          "agency": "Korea Immigration Service",
+          "lastVerified": "2026-10-14",
+          "notes": "Posted 2026-04-29, read 2026-10-14. From 6 May 2026 a verification code entry step is added on submission."
+        },
+        {
+          "key": "user_guide",
+          "name": "e-Arrival Card user guide (PDF manuals)",
+          "url": "https://www.e-arrivalcard.go.kr/portal/board/viewBoardDetail.do?bbsId=0000000006&eacBbsKndCd=1&flId=250000000000000000000306051243",
+          "agency": "Ministry of Justice / Korea Immigration Service",
+          "lastVerified": "2026-10-14",
+          "notes": "Notice hosting the 25.09.25 user-guide PDFs in 17 languages. Read the Simplified Chinese edition (38 pages) on 2026-10-14. Screens show: passport photo must include the machine-readable zone; surname and given name each have an 'unknown' checkbox; date of birth and passport expiry use year/month/day pickers; entry and exit by AIR or SEA with a flight-lookup button that fills the previous departure point or next destination, or manual country and city if the flight is not found; purpose of entry is a required list with 'Other' plus details; stay address is found by road-name address or 5-digit postcode in Korean or English, then a detail line; the contact field prompt reads 'enter a contact number in Korea'; a valid Korean visa number can pull in the stay address and contact; occupation is a required list with 'Other' plus free text (examples given: athlete, religious worker); temporary save keeps a draft for 72 hours; added travellers can copy the representative's entry, exit, purpose and stay details, which are then edited only on the representative; group bulk upload asks for passport photos under 6 MB. The occupation option list itself is not shown."
+        },
+        {
+          "key": "contact",
+          "name": "e-Arrival Card inquiry information",
+          "url": "https://www.e-arrivalcard.go.kr/portal/board/viewBoardDetail.do?bbsId=0000000007&eacBbsKndCd=1&flId=",
+          "agency": "Korea Immigration Service",
+          "lastVerified": "2026-10-14",
+          "notes": "Read 2026-10-14. Email earrivalcard@korea.kr (answers in Korean and English); Immigration Contact Center 1345, from abroad +82-2-1345 or +82-2-6908-1345 to 6; weekdays 09:00 to 22:00, with Korean, English and Chinese after 18:00."
         }
       ],
-      "lastVerified": "2026-10-12"
+      "lastVerified": "2026-10-14"
     },
     {
       "slug": "philippines",
@@ -36497,9 +36577,9 @@ export default {
         "mistake_why_en": "space copied from a profile",
         "mistake_why_zh": "从资料里复制时带了空格",
         "mistake_why_zh_hant": "從資料裡複製時帶了空格",
-        "copy_en": "Use the passport number on the photo page. No spaces or dashes.",
-        "copy_zh": "使用护照照片页上的护照号。不要空格或短横。",
-        "copy_zh_hant": "使用護照照片頁上的護照號。不要空格或短橫。"
+        "copy_en": "The portal reads the data page from a photo or upload; the image must include the two machine-readable lines at the bottom. Check the number it fills in against the photo page: no spaces or dashes. If the scan fails, type it yourself.",
+        "copy_zh": "门户会从护照资料页的照片或上传文件里读取信息，照片必须拍到资料页底部的两行机读码。把它填进去的号码和资料页对一遍：不能有空格或短横。扫描失败就手动输入。",
+        "copy_zh_hant": "門戶會從護照資料頁的照片或上傳文件裡讀取資訊，照片必須拍到資料頁底部的兩行機讀碼。把它填進去的號碼和資料頁對一遍：不能有空格或短橫。掃描失敗就手動輸入。"
       },
       {
         "n": "02",
@@ -36512,9 +36592,9 @@ export default {
         "mistake_why_en": "non-Latin name where passport Latin spelling is expected",
         "mistake_why_zh": "应填护照 Latin 拼写，却填了韩文",
         "mistake_why_zh_hant": "應填護照 Latin 拼寫，卻填了韓文",
-        "copy_en": "Use the Latin name from your passport.",
-        "copy_zh": "填写护照上的 Latin 姓名。",
-        "copy_zh_hant": "填寫護照上的 Latin 姓名。"
+        "copy_en": "Use the Latin name from your passport. Surname and given name are separate boxes; if your passport has no surname or no given name, tick that box's \"unknown\".",
+        "copy_zh": "填写护照上的 Latin 姓名。姓和名分两栏；护照上没有姓或没有名的，勾选该栏旁边的“unknown”。",
+        "copy_zh_hant": "填寫護照上的 Latin 姓名。姓和名分兩欄；護照上沒有姓或沒有名的，勾選該欄旁邊的“unknown”。"
       },
       {
         "n": "03",
@@ -36542,9 +36622,9 @@ export default {
         "mistake_why_en": "departure date used instead of Korea local arrival date",
         "mistake_why_zh": "用了出发日期，而不是韩国当地抵达日期",
         "mistake_why_zh_hant": "用了出發日期，而不是韓國當地抵達日期",
-        "copy_en": "Use the date you enter Korea, in Korea local time.",
-        "copy_zh": "填写按韩国当地时间入境的日期。",
-        "copy_zh_hant": "填寫按韓國當地時間入境的日期。"
+        "copy_en": "Use the date you enter Korea, in Korea local time. You can file from 3 days before it. After submitting, the arrival date can only be changed within 3 days of the first submission.",
+        "copy_zh": "填写按韩国当地时间入境的日期。从这天往前数 3 天起可以提交。提交后，抵达日期只能在首次提交起 3 天内修改。",
+        "copy_zh_hant": "填寫按韓國當地時間入境的日期。從這天往前數 3 天起可以提交。提交後，抵達日期只能在首次提交起 3 天內修改。"
       },
       {
         "n": "05",
@@ -36552,14 +36632,14 @@ export default {
         "section_en": "Section 4 · Contact",
         "section_zh": "第 4 段 · 联系方式",
         "section_zh_hant": "第 4 段 · 聯繫方式",
-        "example": "travel@gmail.com",
-        "mistake": "travel@gmial.com",
+        "example": "kim.minjun@example.com",
+        "mistake": "kim.minjun@exmaple.com",
         "mistake_why_en": "confirmation email typo",
         "mistake_why_zh": "确认邮件地址拼错",
         "mistake_why_zh_hant": "確認郵件地址拼錯",
-        "copy_en": "Use a monitored inbox. Save the confirmation page or QR if the portal shows one.",
-        "copy_zh": "使用能查看的邮箱。门户显示确认页或二维码时及时保存。",
-        "copy_zh_hant": "使用能查看的信箱。門戶顯示確認頁或 QR Code 時及時保存。"
+        "copy_en": "Type it twice; it becomes the representative email that receives every issue number. Gmail, Outlook.com, Hotmail.com and QQ.com can delay the email, so save the PDF right after you submit.",
+        "copy_zh": "要输入两次，它就是接收全部签发编号的代表邮箱。Gmail、Outlook.com、Hotmail.com、QQ.com 可能延迟收信，提交后马上保存 PDF。",
+        "copy_zh_hant": "要輸入兩次，它就是接收全部簽發編號的代表信箱。Gmail、Outlook.com、Hotmail.com、QQ.com 可能延遲收信，提交後馬上保存 PDF。"
       }
     ],
     "philippines": [
@@ -43253,6 +43333,13 @@ export default {
         "summary_zh": "韩国 e-Arrival Card 指南首版上线",
         "summary_zh_hant": "韓國 e-Arrival Card 指南首版上線",
         "detail": "Covers the official e-arrivalcard.go.kr portal and separates it from K-ETA, visa, and Q-Code workflows."
+      },
+      {
+        "date": "2026-10-14",
+        "summary": "Re-checked the official portal; added timing, exemptions, address and edit rules",
+        "summary_zh": "复核官方门户，补充提交时间、免填人群、住址和修改规则",
+        "summary_zh_hant": "複核官方門戶，補充提交時間、免填人群、住址和修改規則",
+        "detail": "Read the e-arrivalcard.go.kr guide, declaration procedure, who-must-declare page, all 34 FAQs, notices and the Chinese edition of the PDF user guide. Added the 3-day filing window, 72-hour validity, exempt groups (valid K-ETA, residence card holders, group e-visas), address rules including airport addresses for same-day transit, editing limits, family and group limits, the 7 languages, email-provider delays, the fake-site warning, and the contact-number, occupation and name fields."
       }
     ],
     "philippines": [

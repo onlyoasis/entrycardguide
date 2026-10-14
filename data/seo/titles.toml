@@ -262,9 +262,9 @@ h1_zh_hant = "泰國入境卡（TDAC）官網 2026：免費填寫、官方網址
 title = "Korea e-Arrival Card Official Website: e-arrivalcard.go.kr, Free"
 title_zh = "韩国入境卡官网：电子入境卡 www.e-arrivalcard.go.kr 免费"
 title_zh_hant = "韓國入境卡官網：電子入境卡 www.e-arrivalcard.go.kr 免費"
-description = "The official Korea e-Arrival Card website is www.e-arrivalcard.go.kr. Filing is free, and it is not the K-ETA, a visa or Q-Code. Official link, fields and middleman warnings."
-description_zh = "韩国入境卡（e-Arrival Card 电子入境卡）官网网址是 www.e-arrivalcard.go.kr，免费填写；它不是 K-ETA，也不是签证或 Q-Code。附官网入口、字段说明和中介提醒。"
-description_zh_hant = "韓國入境卡（e-Arrival Card 電子入境卡）官網網址是 www.e-arrivalcard.go.kr，免費填寫；它不是 K-ETA，也不是簽證或 Q-Code。附官網入口、欄位說明和中介提醒。"
+description = "The only official Korea e-Arrival Card site is www.e-arrivalcard.go.kr. It is free, opens 3 days before arrival (Korea time), works in 7 languages including Chinese, and is not the K-ETA."
+description_zh = "韩国入境卡（电子入境申报）官网只有 www.e-arrivalcard.go.kr：免费，抵达前 3 天起可填，支持简体中文；要求付款的网站都不是官方。它不是 K-ETA，持有效 K-ETA 的人不用填。"
+description_zh_hant = "韓國入境卡（電子入境申報）官網只有 www.e-arrivalcard.go.kr：免費，抵達前 3 天起可填，支持簡體中文；要求付款的網站都不是官方。它不是 K-ETA，持有效 K-ETA 的人不用填。"
 h1_zh = "韩国入境卡（e-Arrival Card）官网 2026：免费填写和字段说明"
 h1_zh_hant = "韓國入境卡（e-Arrival Card）官網 2026：免費填寫和欄位說明"
 
@@ -512,13 +512,14 @@ h1_zh = "泰国入境卡（TDAC）怎么填：最容易出错的字段，按表�
 h1_zh_hant = "泰國入境卡（TDAC）怎麼填：最容易出錯的欄位，按表單實際順序。"
 
 ["korea/how-to-fill"]
-title = "How to Fill the Korea e-Arrival Card: Field-by-Field Guide (2026)"
-title_zh = "韩国入境卡怎么填：e-Arrival Card 电子入境卡逐项说明"
-title_zh_hant = "韓國入境卡怎麼填：e-Arrival Card 電子入境卡逐項說明"
-description_zh = "韩国电子入境卡（e-Arrival Card）怎么填：护照号、护照姓名、实际承运航班号和抵达日期逐项给出范例和常见错误，官网 www.e-arrivalcard.go.kr，不要填进 K-ETA。"
-description_zh_hant = "韓國電子入境卡（e-Arrival Card）怎麼填：護照號、護照姓名、實際承運航班號和抵達日期逐項給出範例和常見錯誤，官網 www.e-arrivalcard.go.kr，不要填進 K-ETA。"
+title = "How to Fill the Korea e-Arrival Card: Passport Scan, Address, Edits (2026)"
+title_zh = "韩国入境卡怎么填：护照扫描、住宿地址、提前 3 天与修改"
+title_zh_hant = "韓國入境卡怎麼填：護照掃描、住宿地址、提前 3 天與修改"
+description_zh = "韩国电子入境卡怎么填：抵达前 3 天起可交、72 小时失效；护照扫描、住宿地址（当天转机填机场地址）、出境日期、全家一起填、提交后怎么修改，按官方 FAQ 整理。"
+description_zh_hant = "韓國電子入境卡怎麼填：抵達前 3 天起可交、72 小時失效；護照掃描、住宿地址（當天轉機填機場地址）、出境日期、全家一起填、提交後怎麼修改，按官方 FAQ 整理。"
 h1_zh = "韩国入境卡（e-Arrival Card）怎么填：最容易出错的字段，按表单实际顺序。"
 h1_zh_hant = "韓國入境卡（e-Arrival Card）怎麼填：最容易出錯的欄位，按表單實際順序。"
+description = "Korea e-Arrival Card, step by step: file from 3 days before arrival, scan the passport page, the address to use (airport address for same-day transit), approximate departure dates, families, and edits."
 
 ["malaysia/how-to-fill"]
 title = "How to Fill the Malaysia Arrival Card (MDAC): Field Guide (2026)"

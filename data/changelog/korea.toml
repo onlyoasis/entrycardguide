@@ -6,3 +6,10 @@ summary = "Initial Korea e-Arrival Card coverage published"
 summary_zh = "韩国 e-Arrival Card 指南首版上线"
 summary_zh_hant = "韓國 e-Arrival Card 指南首版上線"
 detail = "Covers the official e-arrivalcard.go.kr portal and separates it from K-ETA, visa, and Q-Code workflows."
+
+[[entries]]
+date = "2026-10-14"
+summary = "Re-checked the official portal; added timing, exemptions, address and edit rules"
+summary_zh = "复核官方门户，补充提交时间、免填人群、住址和修改规则"
+summary_zh_hant = "複核官方門戶，補充提交時間、免填人群、住址和修改規則"
+detail = "Read the e-arrivalcard.go.kr guide, declaration procedure, who-must-declare page, all 34 FAQs, notices and the Chinese edition of the PDF user guide. Added the 3-day filing window, 72-hour validity, exempt groups (valid K-ETA, residence card holders, group e-visas), address rules including airport addresses for same-day transit, editing limits, family and group limits, the 7 languages, email-provider delays, the fake-site warning, and the contact-number, occupation and name fields."
