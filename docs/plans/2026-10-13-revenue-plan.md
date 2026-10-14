@@ -160,7 +160,7 @@ R4 的依据：政府不免费提供照片，卖照片处理不违背承诺。�
 ### 持续：流量
 
 - **C1** 按 `docs/reports/2026-10-12-seo-audit/ACTION-PLAN.md` 推进：英国 ETA 地址字段那组词 28 天约 300 次曝光、排名 6–9、几乎 0 点击；印尼与多米尼加核验日期过期；表单页站内入链少。
-  - 进度（2026-10-13）：第 1 阶段 1～3 项已随 10-13 发布上线；第 2 阶段已做“表单页 Article 加 about: GovernmentService”（318 页）和“About 页删掉 scam-site list”。印尼两页字段数说法已一致，无需再改。待站长：ChatGPT 引用基线、Bing Webmaster 核对、是否引用政府警示；2026-10-13 续做：`static/favicon.ico`；“More stops”区块加填写页链接；中文 logo 链接可访问名称包含可见文字（修 label-content-name-mismatch）；填写页显示 FAQ（此前中国、南非、尼日利亚只在结构化数据里有），并新增 `data/seo/faq.toml` 给英国 ETA 填写页加 3 条地址与费用问答（不改内容文件）。待做：其余填写页 FAQ、编辑方针页、表单截图、sitemap x-default（需重写 sitemap 模板，暂缓）；约 10-27 用 `fetch-search-data.mjs --days=14` 对比四个 how-to-fill 页的 CTR。
+  - 进度（2026-10-13）：第 1 阶段 1～3 项已随 10-13 发布上线；第 2 阶段已做“表单页 Article 加 about: GovernmentService”（318 页）和“About 页删掉 scam-site list”。印尼两页字段数说法已一致，无需再改。待站长：ChatGPT 引用基线、Bing Webmaster 核对、是否引用政府警示；2026-10-13 续做：`static/favicon.ico`；“More stops”区块加填写页链接；中文 logo 链接可访问名称包含可见文字（修 label-content-name-mismatch）；填写页显示 FAQ（此前中国、南非、尼日利亚只在结构化数据里有），并新增 `data/seo/faq.toml` 给英国 ETA 填写页加 3 条地址与费用问答（不改内容文件）。2026-10-14：按 GSC 查询给印尼、卡塔尔、牙买加、印度、泰国、阿鲁巴、库拉索 7 个填写页加 FAQ（共 11 条×三语，答案只复述站内已有事实；库拉索“乘客定位卡”站内无出处，未写）。待做：其余填写页 FAQ（目前无查询信号）、编辑方针页、表单截图、sitemap x-default（需重写 sitemap 模板，暂缓）；约 10-27 用 `fetch-search-data.mjs --days=14` 对比四个 how-to-fill 页的 CTR。
 - **C2** "落地前后"内容试点：泰国、日本两地，三语。内容包括海关免税额度与现金申报门槛（来自 249 地资料库的公开事项）、自动通关资格、机场进城、落地上网，每条带官方来源和核验日期。4–6 周后看曝光，再决定是否扩到马来西亚、印尼、越南、新加坡、韩国、台湾。
 - **C3** ETIAS 准备：据报道已推迟到 2027 年，官方未定日期，费用 €20；台湾、香港护照持有人也要申请。官方公布日期后提前 2–3 个月上线，用已有设计稿。
 - **C4** `/ask/` 使用数据：上线 4 周后统计提问次数和未命中次数，未命中按国家粗分类，不记录原文。

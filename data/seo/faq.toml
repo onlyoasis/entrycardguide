@@ -354,3 +354,91 @@ q_zh = "新西兰入境卡（NZTD）收费吗？"
 q_zh_hant = "新西蘭入境卡（NZTD）收費嗎？"
 a_zh = "免费。新西兰海关不对填写或提交 NZTD 收费；NZeTA 是另一项，单独收费。"
 a_zh_hant = "免費。新西蘭海關不對填寫或提交 NZTD 收費；NZeTA 是另一項，單獨收費。"
+
+[["indonesia/how-to-fill"]]
+q = "Is the Indonesia customs declaration (e-CD) part of All Indonesia?"
+a = "Yes. The electronic customs declaration is one section of the All Indonesia arrival declaration on the official site allindonesia.imigrasi.go.id, run by the Directorate General of Immigration and the Directorate General of Customs and Excise. It is free."
+q_zh = "印尼海关申报（e-CD）是 All Indonesia 的一部分吗？"
+q_zh_hant = "印尼海關申報（e-CD）是 All Indonesia 的一部分嗎？"
+a_zh = "是。电子海关申报是 All Indonesia 入境申报里的一部分，在官方网站 allindonesia.imigrasi.go.id 填写，由印尼移民总局和海关总局负责，免费。"
+a_zh_hant = "是。電子海關申報是 All Indonesia 入境申報裡的一部分，在官方網站 allindonesia.imigrasi.go.id 填寫，由印尼移民總局和海關總局負責，免費。"
+
+[["indonesia/how-to-fill"]]
+q = "When can I submit the Indonesia customs declaration?"
+a = "Within 3 days before arrival. Earlier than that, the official site rejects the submission."
+q_zh = "印尼海关申报什么时候可以提交？"
+q_zh_hant = "印尼海關申報什麼時候可以提交？"
+a_zh = "抵达前 3 天内。更早提交会被官方网站拒绝。"
+a_zh_hant = "抵達前 3 天內。更早提交會被官方網站拒絕。"
+
+[["indonesia/how-to-fill"]]
+q = "What happens at customs after I submit it?"
+a = "You get a QR code. Most travelers scan it at the customs gate and use the green lane. If you answered yes to any customs question, the QR routes you to the red lane for a secondary check."
+q_zh = "提交后到了海关会怎样？"
+q_zh_hant = "提交後到了海關會怎樣？"
+a_zh = "你会拿到一个二维码。大多数旅客在海关闸口扫码后走绿色通道；如果任何一道海关问题回答了“是”，二维码会把你分到红色通道接受二次检查。"
+a_zh_hant = "你會拿到一個 QR Code。大多數旅客在海關閘口掃碼後走綠色通道；如果任何一道海關問題回答了“是”，QR Code 會把你分到紅色通道接受二次檢查。"
+
+[["qatar/how-to-fill"]]
+q = "Do I need a Hayya A1 visa to enter Qatar?"
+a = "Not always. Start with the Qatar Tourism checker: GCC citizens need no visa, and if the live result says Enter visa-free, a qualifying traveller has no required paid Hayya tourist visa. Use the Hayya category the checker offers; do not choose A1 when the result says free entry."
+q_zh = "去卡塔尔一定要办 Hayya A1 签证吗？"
+q_zh_hant = "去卡塔爾一定要辦 Hayya A1 簽證嗎？"
+a_zh = "不一定。先用 Qatar Tourism 的资格检查：海湾国家公民不需要签证；如果实时结果显示可免签入境，符合条件的旅客不需要付费的 Hayya 旅游签证。按检查结果给出的 Hayya 类别申请，结果显示免签时不要选 A1。"
+a_zh_hant = "不一定。先用 Qatar Tourism 的資格檢查：海灣國家公民不需要簽證；如果實時結果顯示可免簽入境，符合條件的旅客不需要付費的 Hayya 旅遊簽證。按檢查結果給出的 Hayya 類別申請，結果顯示免簽時不要選 A1。"
+
+[["qatar/how-to-fill"]]
+q = "What does the Hayya A1 application ask for?"
+a = "A passport valid for at least 3 months from arrival and a hotel reservation during the application. Qatar Tourism lists QAR 100 for the Hayya tourist visa, paid after approval."
+q_zh = "Hayya A1 申请需要什么？"
+q_zh_hant = "Hayya A1 申請需要什麼？"
+a_zh = "护照从入境起至少还有 3 个月有效期，申请时要提供酒店预订。Qatar Tourism 公布的 Hayya 旅游签证费用是 100 卡塔尔里亚尔，获批后支付。"
+a_zh_hant = "護照從入境起至少還有 3 個月有效期，申請時要提供酒店預訂。Qatar Tourism 公佈的 Hayya 旅遊簽證費用是 100 卡塔爾里亞爾，獲批後支付。"
+
+[["jamaica/how-to-fill"]]
+q = "What is the Departure Port on the Jamaica C5 form?"
+a = "The port immediately before arrival in Jamaica, not where your whole trip started."
+q_zh = "牙买加 C5 表的 Departure Port 填什么？"
+q_zh_hant = "牙買加 C5 表的 Departure Port 填什麼？"
+a_zh = "填抵达牙买加前一程的出发口岸，不是整趟旅程的出发地。"
+a_zh_hant = "填抵達牙買加前一程的出發口岸，不是整趟旅程的出發地。"
+
+[["jamaica/how-to-fill"]]
+q = "How do I enter the flight number on the C5 form?"
+a = "Select the airline first, then enter only the number portion from your booking. The number box is capped at 4 characters."
+q_zh = "C5 表的航班号怎么填？"
+q_zh_hant = "C5 表的航班號怎麼填？"
+a_zh = "先选择航空公司，再只填订单里的航班数字部分。数字框最多 4 个字符。"
+a_zh_hant = "先選擇航空公司，再只填訂單裡的航班數字部分。數字框最多 4 個字符。"
+
+[["india/how-to-fill"]]
+q = "What is the ISD code on the India e-Arrival Card?"
+a = "The international calling code of the country or region your phone number belongs to. Enter it with a number where you can be reached; the same applies to an emergency contact number if you give one."
+q_zh = "印度电子入境卡上的 ISD code 是什么？"
+q_zh_hant = "印度電子入境卡上的 ISD code 是什麼？"
+a_zh = "就是你手机号所属国家或地区的国际区号。连同能联系到你的号码一起填；如果填写紧急联系人号码，也要加国家或地区代码。"
+a_zh_hant = "就是你手機號所屬國家或地區的國際區號。連同能聯繫到你的號碼一起填；如果填寫緊急聯繫人號碼，也要加國家或地區代碼。"
+
+[["thailand/how-to-fill"]]
+q = "Is the phone number required on the TDAC?"
+a = "No, it is optional. If you fill it in, include the country code with a +. It is used only if immigration needs to reach you, and most travelers never get a call."
+q_zh = "TDAC 的电话号码必须填吗？"
+q_zh_hant = "TDAC 的電話號碼必須填嗎？"
+a_zh = "不是必填。如果填写，要带 + 号和国家代码。只在移民局需要联系你时才会用到，大多数旅客不会接到电话。"
+a_zh_hant = "不是必填。如果填寫，要帶 + 號和國家代碼。只在移民局需要聯繫你時才會用到，大多數旅客不會接到電話。"
+
+[["aruba/how-to-fill"]]
+q = "When should I fill out the Aruba ED Card?"
+a = "Within seven days before travel, on the official site edcardaruba.aw run by Aruba Immigration. Most air arrivals then pay the USD 20 sustainability fee. Save the approved confirmation as both a digital and a printed copy."
+q_zh = "阿鲁巴 ED Card 什么时候填？"
+q_zh_hant = "阿魯巴 ED Card 什麼時候填？"
+a_zh = "出行前 7 天内，在阿鲁巴移民局的官方网站 edcardaruba.aw 填写。多数航空抵达旅客随后要付 20 美元可持续发展费。获批确认要同时保存电子版和打印版。"
+a_zh_hant = "出行前 7 天內，在阿魯巴移民局的官方網站 edcardaruba.aw 填寫。多數航空抵達旅客隨後要付 20 美元可持續發展費。獲批確認要同時保存電子版和列印版。"
+
+[["curacao/how-to-fill"]]
+q = "When should I fill out the Curaçao Digital Immigration Card?"
+a = "Within seven days before departure, using the confirmed arrival date. If a flight is missed or cancelled, the card stays active for at least one day after the original date. Each traveller needs a card for each trip, and it is free."
+q_zh = "库拉索电子入境卡什么时候填？"
+q_zh_hant = "庫拉索電子入境卡什麼時候填？"
+a_zh = "出发前 7 天内，按确认的抵达日期填写。航班误机或取消时，卡片在原抵达日后至少还会保持 1 天有效。每位旅客每次出行都要填一张，免费。"
+a_zh_hant = "出發前 7 天內，按確認的抵達日期填寫。航班誤機或取消時，卡片在原抵達日後至少還會保持 1 天有效。每位旅客每次出行都要填一張，免費。"
