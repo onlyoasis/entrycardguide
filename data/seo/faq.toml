@@ -1,8 +1,9 @@
 # FAQ for pages whose content files should stay untouched (see
 # layouts/partials/page-faq.html). Keyed by language-neutral page path.
 # Fields: q / a (en), q_zh / a_zh (zh-Hans). `*_zh_hant` siblings are generated
-# by `npm run sync:zh-hant` — do not edit. Answers restate facts already on the
-# page; anything new needs a source on the page first.
+# by `npm run sync:zh-hant` — do not edit. Answers restate facts the country's
+# guides already publish (this page, or its hub / form page); anything new
+# needs a source on one of those pages first.
 # Questions follow Search Console queries for the page (2026-09-15..10-12).
 
 [["uk/how-to-fill"]]
@@ -28,3 +29,296 @@ q_zh = "UK ETA 多少钱？"
 q_zh_hant = "UK ETA 多少錢？"
 a_zh = "官方费用是每人 20 英镑，婴儿和儿童也一样，没有家庭优惠。如果某个网站收得更多，多出来的部分是商业服务费。"
 a_zh_hant = "官方費用是每人 20 英鎊，嬰兒和兒童也一樣，沒有家庭優惠。如果某個網站收得更多，多出來的部分是商業服務費。"
+
+# ---- Long-tail questions from GSC + Bing queries and search suggestions
+# (2026-10-14 pull, docs/plans/2026-10-14-country-longtail-keywords.md).
+# Each answer restates what this country's guides already publish (the
+# field guide itself, or the hub / form page next to it).
+
+[["thailand/how-to-fill"]]
+q = "How many days before arrival can I fill in the Thailand Arrival Card (TDAC)?"
+a = "Within 3 days before you arrive in Thailand. The official site rejects earlier submissions, so if you land on May 14, file on May 11 or later."
+q_zh = "泰国入境卡（TDAC）提前几天填？"
+q_zh_hant = "泰國入境卡（TDAC）提前幾天填？"
+a_zh = "抵达泰国前 3 天内。再早提交，官方站会拒绝；比如 5 月 14 日抵达，5 月 11 日起再填。"
+a_zh_hant = "抵達泰國前 3 天內。再早提交，官方站會拒絕；比如 5 月 14 日抵達，5 月 11 日起再填。"
+
+[["thailand/how-to-fill"]]
+q = "Do I need to print the Thailand Arrival Card QR code?"
+a = "No. After you submit, the official site shows a QR code and emails the same code as a PDF. A screenshot, the PDF or the email on your phone is fine at immigration."
+q_zh = "泰国入境卡要打印吗？"
+q_zh_hant = "泰國入境卡要列印嗎？"
+a_zh = "不用打印。提交后官网会显示二维码，邮件里也有同一份二维码 PDF。入境时出示截图、PDF 或邮件里的二维码都可以。"
+a_zh_hant = "不用列印。提交後官網會顯示 QR Code，郵件裡也有同一份 QR Code PDF。入境時出示截圖、PDF 或郵件裡的 QR Code 都可以。"
+
+[["thailand/how-to-fill"]]
+q = "What arrival date goes on the TDAC for an overnight flight?"
+a = "The local date you land in Thailand, in YYYY-MM-DD format. A flight that leaves on May 12 and lands in Bangkok on May 14 is entered as 2026-05-14."
+q_zh = "红眼航班的泰国入境卡抵达日期怎么填？"
+q_zh_hant = "紅眼航班的泰國入境卡抵達日期怎麼填？"
+a_zh = "填真正落地泰国的日期，按泰国本地时间，格式 YYYY-MM-DD。5 月 12 日起飞、5 月 14 日落地曼谷，就填 2026-05-14。"
+a_zh_hant = "填真正落地泰國的日期，按泰國本地時間，格式 YYYY-MM-DD。5 月 12 日起飛、5 月 14 日落地曼谷，就填 2026-05-14。"
+
+[["malaysia/how-to-fill"]]
+q = "When can I submit the Malaysia Arrival Card (MDAC)?"
+a = "Within 3 days before your arrival in Malaysia. The MDAC site rejects submissions outside that window."
+q_zh = "马来西亚入境卡（MDAC）提前几天填？"
+q_zh_hant = "馬來西亞入境卡（MDAC）提前幾天填？"
+a_zh = "抵达马来西亚前 3 天内。MDAC 官网会拒绝窗口外的提交。"
+a_zh_hant = "抵達馬來西亞前 3 天內。MDAC 官網會拒絕窗口外的提交。"
+
+[["malaysia/how-to-fill"]]
+q = "Do I need to print the MDAC confirmation?"
+a = "No. You do not need to print or show it: the officer scans your passport and your MDAC is already linked. Keep the email on your phone in case their system has issues."
+q_zh = "马来西亚入境卡要打印吗？"
+q_zh_hant = "馬來西亞入境卡要列印嗎？"
+a_zh = "不需要打印，也不必出示确认信。官员扫护照时，你的 MDAC 已在系统里关联好。手机上留着确认邮件，以防系统出问题。"
+a_zh_hant = "不需要列印，也不必出示確認信。官員掃護照時，你的 MDAC 已在系統裡關聯好。手機上留著確認郵件，以防系統出問題。"
+
+[["malaysia/how-to-fill"]]
+q = "What address do I enter on the Malaysia Arrival Card?"
+a = "Where you will stay. A hotel name and city is enough, for example Mandarin Oriental Kuala Lumpur. For an Airbnb use the host's confirmed address; with several stops use the first night."
+q_zh = "马来西亚入境卡地址怎么填？"
+q_zh_hant = "馬來西亞入境卡地址怎麼填？"
+a_zh = "填入住地。酒店名加城市就够，例如 Mandarin Oriental Kuala Lumpur；Airbnb 用房东确认的地址；多地停留填第一晚。"
+a_zh_hant = "填入住地。酒店名加城市就夠，例如 Mandarin Oriental Kuala Lumpur；Airbnb 用房東確認的地址；多地停留填第一晚。"
+
+[["malaysia/how-to-fill"]]
+q = "How do I enter my name on the MDAC?"
+a = "MDAC has one full-name field. Type your name in Latin letters in the order printed on your passport photo page, and do not reorder it."
+q_zh = "马来西亚入境卡名字怎么填？"
+q_zh_hant = "馬來西亞入境卡名字怎麼填？"
+a_zh = "MDAC 只有一个全名字段。按护照资料页印刷的顺序填拉丁字母，不要按姓、名重新排列。"
+a_zh_hant = "MDAC 只有一個全名欄位。按護照資料頁印刷的順序填拉丁字母，不要按姓、名重新排列。"
+
+[["indonesia/how-to-fill"]]
+q = "Can one person fill in the Indonesia e-CD for the whole family?"
+a = "Yes. One adult fills the form for the whole family, and each additional person adds a section to the same submission."
+q_zh = "印尼入境卡可以一个人帮全家填吗？"
+q_zh_hant = "印尼入境卡可以一個人幫全家填嗎？"
+a_zh = "可以。一名成年人为全家填，每位额外家人在同一份提交里加一段。"
+a_zh_hant = "可以。一名成年人為全家填，每位額外家人在同一份提交里加一段。"
+
+[["indonesia/how-to-fill"]]
+q = "I did not get the e-CD QR code email. What should I do?"
+a = "Check spam first. If it is still missing after an hour, submit again with a Gmail address as a backup; some mailboxes have lost these emails."
+q_zh = "没收到印尼入境卡二维码邮件怎么办？"
+q_zh_hant = "沒收到印尼入境卡 QR Code 郵件怎麼辦？"
+a_zh = "先看垃圾箱。1 小时还没收到，就换 Gmail 再提交一份作为备份，有些邮箱会丢这类邮件。"
+a_zh_hant = "先看垃圾箱。1 小時還沒收到，就換 Gmail 再提交一份作為備份，有些信箱會丟這類郵件。"
+
+[["korea/how-to-fill"]]
+q = "What is the official Korea e-Arrival Card website?"
+a = "www.e-arrivalcard.go.kr, on the government .go.kr domain. Filing there is free."
+q_zh = "韩国入境卡官网网址是什么？"
+q_zh_hant = "韓國入境卡官網網址是什麼？"
+a_zh = "www.e-arrivalcard.go.kr，在政府 .go.kr 域名下，填写免费。"
+a_zh_hant = "www.e-arrivalcard.go.kr，在政府 .go.kr 域名下，填寫免費。"
+
+[["korea/how-to-fill"]]
+q = "Is the Korea e-Arrival Card the same as K-ETA?"
+a = "No. K-ETA, visas, Q-Code and the e-Arrival Card are separate systems. If a page asks you to pay a K-ETA or visa fee, you are not just filing the free e-Arrival Card."
+q_zh = "韩国入境卡和 K-ETA 是一回事吗？"
+q_zh_hant = "韓國入境卡和 K-ETA 是一回事嗎？"
+a_zh = "不是。K-ETA、签证、Q-Code 和 e-Arrival Card 是不同系统。如果页面要求你付 K-ETA 或签证费，你就不只是在填免费的电子入境卡。"
+a_zh_hant = "不是。K-ETA、簽證、Q-Code 和 e-Arrival Card 是不同系統。如果頁面要求你付 K-ETA 或簽證費，你就不只是在填免費的電子入境卡。"
+
+[["korea/how-to-fill"]]
+q = "Which flight number goes on the Korea e-Arrival Card?"
+a = "The operating flight number, for example KE82, not the airline name. On a codeshare, match the operating carrier."
+q_zh = "韩国入境卡航班号怎么填？"
+q_zh_hant = "韓國入境卡航班號怎麼填？"
+a_zh = "填实际承运的航班号，例如 KE82，不要写航司名称；代码共享航班按实际承运航司填。"
+a_zh_hant = "填實際承運的航班號，例如 KE82，不要寫航司名稱；代碼共享航班按實際承運航司填。"
+
+[["korea/how-to-fill"]]
+q = "How do I write my name on the Korea e-Arrival Card?"
+a = "Use the Latin-letter name printed in your passport, for example KIM MINJUN, not a name in Korean or another non-Latin script."
+q_zh = "韩国入境卡姓名怎么填？"
+q_zh_hant = "韓國入境卡姓名怎麼填？"
+a_zh = "填护照上的拉丁字母姓名，例如 KIM MINJUN，不要填韩文等非拉丁文字。"
+a_zh_hant = "填護照上的拉丁字母姓名，例如 KIM MINJUN，不要填韓文等非拉丁文字。"
+
+[["philippines/how-to-fill"]]
+q = "What if my flight changes after I file eTravel?"
+a = "Update or refile before travel, using the passport and itinerary you will actually use, then save the new QR code."
+q_zh = "菲律宾入境卡填完航班改了怎么办？"
+q_zh_hant = "菲律賓入境卡填完航班改了怎麼辦？"
+a_zh = "出发前更新或重新提交，按你实际会使用的护照和行程填写，再保存新的二维码。"
+a_zh_hant = "出發前更新或重新提交，按你實際會使用的護照和行程填寫，再保存新的 QR Code。"
+
+[["philippines/how-to-fill"]]
+q = "How should I keep the Philippines eTravel QR code?"
+a = "Screenshot it right after you submit. You may be asked for it at check-in and on arrival, and a screenshot is safer than relying on airport Wi-Fi."
+q_zh = "菲律宾入境卡二维码怎么保存？"
+q_zh_hant = "菲律賓入境卡 QR Code 怎麼保存？"
+a_zh = "提交后马上截图保存。值机和入境时都可能被要求查看，截图比依赖机场 Wi-Fi 稳。"
+a_zh_hant = "提交後馬上截圖保存。值機和入境時都可能被要求查看，截圖比依賴機場 Wi-Fi 穩。"
+
+[["philippines/how-to-fill"]]
+q = "Is Philippines eTravel a visa?"
+a = "No. eTravel is a free electronic travel declaration at etravel.gov.ph. It is not a visa."
+q_zh = "菲律宾 eTravel 是签证吗？"
+q_zh_hant = "菲律賓 eTravel 是簽證嗎？"
+a_zh = "不是。eTravel 是免费的电子旅行申报，官网 etravel.gov.ph，它不是签证。"
+a_zh_hant = "不是。eTravel 是免費的電子旅行申報，官網 etravel.gov.ph，它不是簽證。"
+
+[["taiwan/how-to-fill"]]
+q = "Do I need to print the Taiwan Arrival Card?"
+a = "No. You get a confirmation email or file, but you do not have to show it: scanning your passport retrieves the TWAC record. Bring the same passport you used to submit."
+q_zh = "台湾入境卡要打印吗？"
+q_zh_hant = "臺灣入境卡要列印嗎？"
+a_zh = "不用。系统会发送确认邮件或电子文件，但查验时不必出示，扫描护照即可调出 TWAC 资料。携带提交时用的同一本护照就行。"
+a_zh_hant = "不用。系統會發送確認郵件或電子文件，但查驗時不必出示，掃描護照即可調出 TWAC 資料。攜帶提交時用的同一本護照就行。"
+
+[["taiwan/how-to-fill"]]
+q = "How many days before arrival can I submit the Taiwan Arrival Card?"
+a = "Within 7 days before arrival."
+q_zh = "台湾入境卡提前几天填？"
+q_zh_hant = "臺灣入境卡提前幾天填？"
+a_zh = "抵达前 7 天内提交。"
+a_zh_hant = "抵達前 7 天內提交。"
+
+[["taiwan/how-to-fill"]]
+q = "Can I fill in the Taiwan Arrival Card for my family or group?"
+a = "Yes. One person can file for up to 10 travellers in a single submission, and the group-file import supports up to 16."
+q_zh = "台湾入境卡可以帮家人一起填吗？"
+q_zh_hant = "臺灣入境卡可以幫家人一起填嗎？"
+a_zh = "可以。一人可单笔为最多 10 名旅客填写，团体档案汇入支持最多 16 人。"
+a_zh_hant = "可以。一人可單筆為最多 10 名旅客填寫，團體檔案匯入支持最多 16 人。"
+
+[["india/how-to-fill"]]
+q = "When do I submit the India e-Arrival Card?"
+a = "Within 72 hours before arrival. Foreign travellers file it, including OCI cardholders; Indian passport holders do not."
+q_zh = "印度入境卡提前几天填？"
+q_zh_hant = "印度入境卡提前幾天填？"
+a_zh = "抵达前 72 小时内提交。外国旅客都要填，OCI 持有人也一样；印度护照持有人不用填。"
+a_zh_hant = "抵達前 72 小時內提交。外國旅客都要填，OCI 持有人也一樣；印度護照持有人不用填。"
+
+[["india/how-to-fill"]]
+q = "Does the India e-Arrival Card replace the e-Visa?"
+a = "No. The confirmation does not replace a visa, e-Visa or OCI status. Completing either form does not complete the other."
+q_zh = "印度入境卡能代替 e-Visa 吗？"
+q_zh_hant = "印度入境卡能代替 e-Visa 嗎？"
+a_zh = "不能。入境卡的确认不能替代签证、e-Visa 或 OCI 身份，两个表单各填各的。"
+a_zh_hant = "不能。入境卡的確認不能替代簽證、e-Visa 或 OCI 身份，兩個表單各填各的。"
+
+[["japan/how-to-fill"]]
+q = "How do I prepare the Visit Japan Web QR codes?"
+a = "Generate them before you travel and keep a screenshot. If the airport asks for paper, fill in the paper form instead."
+q_zh = "日本入境卡（Visit Japan Web）二维码怎么准备？"
+q_zh_hant = "日本入境卡（Visit Japan Web）QR Code 怎麼準備？"
+a_zh = "出发前生成二维码并截图保存。如果机场要求纸质表，就填纸质表。"
+a_zh_hant = "出發前生成 QR Code 並截圖保存。如果機場要求紙質表，就填紙質表。"
+
+[["japan/how-to-fill"]]
+q = "Is Visit Japan Web free, and where is the official site?"
+a = "It is free. The official service page sits on the Digital Agency's .go.jp domain. Do not hand passport data to a lookalike that is not on .go.jp. It is not a visa."
+q_zh = "Visit Japan Web 收费吗？官网是哪个？"
+q_zh_hant = "Visit Japan Web 收費嗎？官網是哪個？"
+a_zh = "免费。官方服务说明页在日本数字厅的 .go.jp 域名下；不要把护照资料交给非 .go.jp 的仿冒服务。它也不是签证。"
+a_zh_hant = "免費。官方服務說明頁在日本數字廳的 .go.jp 域名下；不要把護照資料交給非 .go.jp 的仿冒服務。它也不是簽證。"
+
+[["cambodia/how-to-fill"]]
+q = "Does the Cambodia e-Arrival Card cost anything?"
+a = "The arrival declaration at arrival.gov.kh is free. If you need a visa, the visa fee is separate."
+q_zh = "柬埔寨入境卡收费吗？"
+q_zh_hant = "柬埔寨入境卡收費嗎？"
+a_zh = "在 arrival.gov.kh 填入境申报免费；如果你需要签证，签证费另算。"
+a_zh_hant = "在 arrival.gov.kh 填入境申報免費；如果你需要簽證，簽證費另算。"
+
+[["cambodia/how-to-fill"]]
+q = "What should I save after filing Cambodia e-Arrival?"
+a = "Save the confirmation page or QR code before you leave the page, and travel with the passport you used to file."
+q_zh = "柬埔寨入境卡填完要保存什么？"
+q_zh_hant = "柬埔寨入境卡填完要保存什麼？"
+a_zh = "离开页面前保存确认页或二维码，并携带填写时使用的那本护照。"
+a_zh_hant = "離開頁面前保存確認頁或 QR Code，並攜帶填寫時使用的那本護照。"
+
+[["vietnam/how-to-fill"]]
+q = "Do I need to print the Vietnam e-visa?"
+a = "Yes. Print the e-visa PDF. Airline check-in counters ask for a printed copy and some refuse boarding without it; hand it to the officer with your passport on arrival."
+q_zh = "越南电子签证要打印吗？"
+q_zh_hant = "越南電子簽證要列印嗎？"
+a_zh = "要。打印 e-visa PDF：机场值机柜台要看打印件，部分航司没有打印件不让登机；入境时把打印件和护照一起交给官员。"
+a_zh_hant = "要。列印 e-visa PDF：機場值機櫃臺要看列印件，部分航司沒有列印件不讓登機；入境時把列印件和護照一起交給官員。"
+
+[["vietnam/how-to-fill"]]
+q = "How long does the Vietnam e-visa take?"
+a = "3 working days as standard. The official site sells an express option for an extra USD $50 government fee with 1-working-day processing. The approval email carries the e-visa PDF."
+q_zh = "越南电子签证多久出签？"
+q_zh_hant = "越南電子簽證多久出籤？"
+a_zh = "标准 3 个工作日。官网有加急选项，另付 50 美元政府费用，1 个工作日处理。批准邮件会附带 e-visa PDF。"
+a_zh_hant = "標準 3 個工作日。官網有加急選項，另付 50 美元政府費用，1 個工作日處理。批准郵件會附帶 e-visa PDF。"
+
+[["mexico/how-to-fill"]]
+q = "Do I need to print the Mexico FMM-E?"
+a = "Print the FMM-E PDF or keep it on your phone. Airlines may ask for it at check-in; at a land border you show it at the INM desk. Keep the stub you receive at the border until you exit."
+q_zh = "墨西哥入境卡（FMM-E）要打印吗？"
+q_zh_hant = "墨西哥入境卡（FMM-E）要列印嗎？"
+a_zh = "打印或存在手机上都可以。航空入境时航司值机可能要看 PDF，陆路入境在 INM 柜台出示；边境给你的回执条要保留到出境。"
+a_zh_hant = "列印或存在手機上都可以。航空入境時航司值機可能要看 PDF，陸路入境在 INM 櫃檯出示；邊境給你的回執條要保留到出境。"
+
+[["mexico/how-to-fill"]]
+q = "When should I fill in the Mexico FMM-E?"
+a = "Any time before you arrive. Most travellers fill it within a week of departure."
+q_zh = "墨西哥入境卡什么时候填？"
+q_zh_hant = "墨西哥入境卡什麼時候填？"
+a_zh = "入境前任何时间都可以，多数旅客在出发前一周内填写。"
+a_zh_hant = "入境前任何時間都可以，多數旅客在出發前一週內填寫。"
+
+[["dominican/how-to-fill"]]
+q = "How early can I fill in the Dominican Republic E-Ticket?"
+a = "Within 72 hours before arrival. DGM recommends 24 to 48 hours before. Earlier submissions are accepted, but your flight details may not be final yet."
+q_zh = "多米尼加入境卡（E-Ticket）提前多久填？"
+q_zh_hant = "多米尼加入境卡（E-Ticket）提前多久填？"
+a_zh = "抵达前 72 小时内。DGM 推荐抵达前 24 至 48 小时；更早也接受，但航班信息可能还没敲定。"
+a_zh_hant = "抵達前 72 小時內。DGM 推薦抵達前 24 至 48 小時；更早也接受，但航班資訊可能還沒敲定。"
+
+[["dominican/how-to-fill"]]
+q = "Does one E-Ticket QR code cover both entry and exit?"
+a = "Do not assume it does. Complete both the entry and exit details the official service asks for, save the confirmation and QR code it generates, and keep an offline copy."
+q_zh = "多米尼加 E-Ticket 一个二维码能管入境和离境吗？"
+q_zh_hant = "多米尼加 E-Ticket 一個 QR Code 能管入境和離境嗎？"
+a_zh = "不要这样假定。按要求填写入境和离境资料，保存官方页面生成的确认信息及二维码，旅行时保留离线副本。"
+a_zh_hant = "不要這樣假定。按要求填寫入境和離境資料，保存官方頁面生成的確認資訊及 QR Code，旅行時保留離線副本。"
+
+[["maldives/how-to-fill"]]
+q = "When do I submit the Maldives Traveller Declaration (IMUGA)?"
+a = "Within the 96 hours before arrival. One declaration covers one entry."
+q_zh = "马尔代夫入境卡（IMUGA）提前几天填？"
+q_zh_hant = "馬爾代夫入境卡（IMUGA）提前幾天填？"
+a_zh = "抵达前 96 小时内提交。一份申报对应一次入境。"
+a_zh_hant = "抵達前 96 小時內提交。一份申報對應一次入境。"
+
+[["maldives/how-to-fill"]]
+q = "Do I fill in a Maldives declaration when I leave?"
+a = "No. Maldives Immigration dropped the departure declaration on 15 August 2024."
+q_zh = "离开马尔代夫还要填申报表吗？"
+q_zh_hant = "離開馬爾代夫還要填申報表嗎？"
+a_zh = "不用。马尔代夫移民局自 2024 年 8 月 15 日起取消了离境申报。"
+a_zh_hant = "不用。馬爾代夫移民局自 2024 年 8 月 15 日起取消了離境申報。"
+
+[["jamaica/how-to-fill"]]
+q = "How early can I submit the Jamaica C5 form?"
+a = "Up to 30 days before travel. Check the passport, flight and customs answers before submitting, then keep the confirmation email."
+q_zh = "牙买加入境卡（C5）提前多久填？"
+q_zh_hant = "牙買加入境卡（C5）提前多久填？"
+a_zh = "政府允许在出行日前最多 30 天提交。提交前核对护照、航班和海关答案，提交后保存确认邮件。"
+a_zh_hant = "政府允許在出行日前最多 30 天提交。提交前核對護照、航班和海關答案，提交後保存確認郵件。"
+
+[["new-zealand/how-to-fill"]]
+q = "When can I submit the New Zealand Traveller Declaration (NZTD)?"
+a = "Air travellers can submit from 24 hours before starting their journey to New Zealand. Sea travellers can submit from 24 hours before the ship leaves its last overseas port."
+q_zh = "新西兰入境卡（NZTD）什么时候能填？"
+q_zh_hant = "新西蘭入境卡（NZTD）什麼時候能填？"
+a_zh = "空路旅客从启程赴新西兰前 24 小时起可以提交；海路旅客从船舶离开最后一个境外港口前 24 小时起可以提交。"
+a_zh_hant = "空路旅客從啟程赴新西蘭前 24 小時起可以提交；海路旅客從船舶離開最後一個境外港口前 24 小時起可以提交。"
+
+[["new-zealand/how-to-fill"]]
+q = "Is the New Zealand arrival card (NZTD) free?"
+a = "Yes. New Zealand Customs does not charge to complete or submit the NZTD. The NZeTA is a separate, paid authority."
+q_zh = "新西兰入境卡（NZTD）收费吗？"
+q_zh_hant = "新西蘭入境卡（NZTD）收費嗎？"
+a_zh = "免费。新西兰海关不对填写或提交 NZTD 收费；NZeTA 是另一项，单独收费。"
+a_zh_hant = "免費。新西蘭海關不對填寫或提交 NZTD 收費；NZeTA 是另一項，單獨收費。"

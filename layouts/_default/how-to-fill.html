@@ -55,11 +55,23 @@
     <span aria-hidden="true">{{ $meta.flag }}</span>
     {{ $countryName }} {{ $formCode }} · {{ i18n "htf_eyebrow_suffix" }} · {{ $timeNeeded }}
   </div>
+  {{- /* H1 order: data/seo/titles.toml `h1` (search wording, keeps the content
+         file and its Git-derived "Last verified" date untouched), then the
+         page's guide_title, then "How to fill the <country> <form>". The
+         country is dropped when the form name already carries it
+         ("Visit Japan Web"). */ -}}
+  {{- $h1 := "" -}}
+  {{- $seoKey := strings.TrimPrefix "/" .Path -}}
+  {{- $seoSuffix := cond (eq $lang "en") "" (printf "_%s" (replace $lang "-" "_")) -}}
+  {{- with and $seoKey (index (hugo.Data.seo.titles | default dict) $seoKey) }}{{ with index . (printf "h1%s" $seoSuffix) }}{{ $h1 = . }}{{ end }}{{ end -}}
+  {{- $h1Label := cond (strings.Contains $formCode $countryName) $formCode (printf "%s %s" $countryName $formCode) -}}
   <h1 class="font-serif font-medium m-0" style="line-height: 1.06; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
-{{- with .Params.guide_title -}}
+{{- with $h1 -}}
+{{ . }}
+{{- else with .Params.guide_title -}}
 {{ . }}
 {{- else -}}
-{{ printf (i18n "htf_headline") $formCode | safeHTML }}
+{{ printf (i18n "htf_headline") $h1Label | safeHTML }}
 {{- end -}}
   </h1>
   {{- /* The default intro promises official regexes and a local validator on the
