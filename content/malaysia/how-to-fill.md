@@ -3,7 +3,7 @@ title: "How to Fill the Malaysia MDAC: Field Guide (2026)"
 kicker: "Field-by-field walkthrough of the official Immigration Department MDAC with common errors and what they mean. 7 minutes total."
 description: "Field guide to the Malaysia Digital Arrival Card (MDAC): passport, flight, arrival date and address fields, plus the errors that get it rejected. Free."
 date: 2026-04-24
-lastmod: 2026-10-12
+lastmod: 2026-10-15
 country: "malaysia"
 weight: 20
 layout: how-to-fill
@@ -96,19 +96,42 @@ Where you will stay.
 Where your MDAC confirmation is sent.
 
 - **Max 80 characters.**
-- Use a monitored inbox. Even though you do not strictly need to show the confirmation at immigration, having it on your phone is a safety net.
+- Use a monitored inbox. The confirmation and the PIN you need for Check Registration arrive here.
 
 ---
 
 ## What happens after you submit
 
 1. The site shows a confirmation page with your MDAC reference number.
-2. An email arrives from `no-reply@imi.gov.my` with the reference. There is usually no QR code; the reference number is the artifact.
+2. A confirmation email arrives. Keep it: it carries the PIN you need to look the registration up later.
 3. At Malaysian immigration (KLIA, KLIA2, Penang, etc.):
-   - Show your passport.
-   - The officer scans your passport. Your MDAC submission is already linked in their system.
+   - Show your passport and your MDAC registration. The Immigration Department's own posters tell visitors to present the MDAC registration at the counter during the passport check.
    - The officer stamps your passport and you are through. Most interactions are under 30 seconds.
-4. You do not need to print or show the confirmation. But having the email open on your phone is smart in case their system has issues.
+4. No official page we found asks you to print it. Keep the email or a screenshot on your phone so you can show it.
+
+## After you submit: check it, lost PIN, mistakes
+
+From the official MDAC portal and Immigration Department notices, read 2026-10-15.
+
+### Check that your MDAC went through
+
+1. On imigresen-online.imi.gov.my/mdac/main, open **CHECK REGISTRATION**.
+2. Enter your passport number, choose your nationality and type the **PIN** sent to your email.
+3. Drag the puzzle piece to verify, then search.
+
+If the puzzle will not take the piece, press **RESET** for a new one.
+
+### Lost the PIN
+
+On the same page, click **Forgot your PIN?**. Enter your passport number and nationality, and a new PIN goes to your registered email. The portal allows one reset a day.
+
+### Made a mistake
+
+The portal has no edit option. Its menu lists Registration, Check Registration, Check Visit Pass and Check eGate Eligibility Status. We found no official instructions for amending a submitted MDAC, or for what happens to a second registration. For a correction, ask the Immigration Department through the contact link the portal gives for MDAC questions: eapp.imi.gov.my/spo.
+
+### Filing in the app instead
+
+Since January 2026 the department's MyNIISe app can also file the MDAC, within the same 3 days before arrival.
 
 ## Common errors and what they mean
 
@@ -134,4 +157,4 @@ Trailing space or typo in the domain.
 The MDAC site sometimes struggles during peak travel periods. Wait 10 to 15 minutes and retry. If it keeps failing, try a different browser or a different network.
 
 **No confirmation email after 1 hour**
-Check spam. Refile if still missing. Duplicates are harmless; the most recent submission applies.
+Check spam. The PIN for Check Registration comes in that email; **Forgot your PIN?** sends a new one to the same address, once a day. If you typed the email address wrong, ask the Immigration Department at eapp.imi.gov.my/spo.

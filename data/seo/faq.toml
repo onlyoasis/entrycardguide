@@ -69,11 +69,11 @@ a_zh_hant = "抵達馬來西亞前 3 天內。MDAC 官網會拒絕窗口外的�
 
 [["malaysia/how-to-fill"]]
 q = "Do I need to print the MDAC confirmation?"
-a = "No. You do not need to print or show it: the officer scans your passport and your MDAC is already linked. Keep the email on your phone in case their system has issues."
+a = "No official page we found asks you to print it. The Immigration Department's posters do say to present your MDAC registration at the counter during the passport check, so keep the email or a screenshot on your phone."
 q_zh = "马来西亚入境卡要打印吗？"
 q_zh_hant = "馬來西亞入境卡要列印嗎？"
-a_zh = "不需要打印，也不必出示确认信。官员扫护照时，你的 MDAC 已在系统里关联好。手机上留着确认邮件，以防系统出问题。"
-a_zh_hant = "不需要列印，也不必出示確認信。官員掃護照時，你的 MDAC 已在系統裡關聯好。手機上留著確認郵件，以防系統出問題。"
+a_zh = "我们没找到要求打印的官方说明。不过移民局海报写明，入境时要在柜台核验护照时出示 MDAC 登记，所以手机上留好确认邮件或截图。"
+a_zh_hant = "我們沒找到要求列印的官方說明。不過移民局海報寫明，入境時要在櫃檯核驗護照時出示 MDAC 登記，所以手機上留好確認郵件或截圖。"
 
 [["malaysia/how-to-fill"]]
 q = "What address do I enter on the Malaysia Arrival Card?"
@@ -90,6 +90,30 @@ q_zh = "马来西亚入境卡名字怎么填？"
 q_zh_hant = "馬來西亞入境卡名字怎麼填？"
 a_zh = "MDAC 只有一个全名字段。按护照资料页印刷的顺序填拉丁字母，不要按姓、名重新排列。"
 a_zh_hant = "MDAC 只有一個全名欄位。按護照資料頁印刷的順序填拉丁字母，不要按姓、名重新排列。"
+
+[["malaysia/how-to-fill"]]
+q = "How do I check that my MDAC went through?"
+a = "Open CHECK REGISTRATION on imigresen-online.imi.gov.my/mdac/main, enter your passport number, choose your nationality and type the PIN sent to your email, then drag the puzzle piece to verify. If the puzzle will not take the piece, press RESET."
+q_zh = "马来西亚入境卡怎么查询是否提交成功？"
+q_zh_hant = "馬來西亞入境卡怎麼查詢是否提交成功？"
+a_zh = "在 imigresen-online.imi.gov.my/mdac/main 点 CHECK REGISTRATION，填护照号、选国籍，输入发到邮箱的 PIN，再拖动拼图验证。拼图拖不进去就点 RESET 换一张。"
+a_zh_hant = "在 imigresen-online.imi.gov.my/mdac/main 點 CHECK REGISTRATION，填護照號、選國籍，輸入發到信箱的 PIN，再拖動拼圖驗證。拼圖拖不進去就點 RESET 換一張。"
+
+[["malaysia/how-to-fill"]]
+q = "I lost my MDAC PIN. What do I do?"
+a = "Click Forgot your PIN? on the Check Registration page and enter your passport number and nationality. A new PIN goes to your registered email. The portal allows one reset a day."
+q_zh = "马来西亚入境卡 PIN 忘了怎么办？"
+q_zh_hant = "馬來西亞入境卡 PIN 忘了怎麼辦？"
+a_zh = "在查询登记页点 Forgot your PIN?，填护照号和国籍，新 PIN 会发到你登记的邮箱。每天只能重置一次。"
+a_zh_hant = "在查詢登記頁點 Forgot your PIN?，填護照號和國籍，新 PIN 會發到你登記的信箱。每天只能重置一次。"
+
+[["malaysia/how-to-fill"]]
+q = "Can I edit my MDAC after submitting it?"
+a = "The portal has no edit option, and we found no official instructions for amending a submitted MDAC. For a correction, ask the Immigration Department through the MDAC contact link on the portal: eapp.imi.gov.my/spo."
+q_zh = "马来西亚入境卡填错了怎么修改？"
+q_zh_hant = "馬來西亞入境卡填錯了怎麼修改？"
+a_zh = "MDAC 门户没有修改入口，我们也没找到官方公布的修改办法。需要更正的话，通过门户上的 MDAC 咨询渠道问移民局：eapp.imi.gov.my/spo。"
+a_zh_hant = "MDAC 門戶沒有修改入口，我們也沒找到官方公佈的修改辦法。需要更正的話，通過門戶上的 MDAC 諮詢渠道問移民局：eapp.imi.gov.my/spo。"
 
 [["indonesia/how-to-fill"]]
 q = "Can one person fill in the Indonesia e-CD for the whole family?"
@@ -421,11 +445,51 @@ a_zh_hant = "就是你手機號所屬國家或地區的國際區號。連同能�
 
 [["thailand/how-to-fill"]]
 q = "Is the phone number required on the TDAC?"
-a = "No, it is optional. If you fill it in, include the country code with a +. It is used only if immigration needs to reach you, and most travelers never get a call."
+a = "Yes, on the current form. It has two required boxes, Code and Phone No., and both take digits only, without + or spaces. The Code fills in from your Country/Territory of Residence."
 q_zh = "TDAC 的电话号码必须填吗？"
 q_zh_hant = "TDAC 的電話號碼必須填嗎？"
-a_zh = "不是必填。如果填写，要带 + 号和国家代码。只在移民局需要联系你时才会用到，大多数旅客不会接到电话。"
-a_zh_hant = "不是必填。如果填寫，要帶 + 號和國家代碼。只在移民局需要聯繫你時才會用到，大多數旅客不會接到電話。"
+a_zh = "必须填。现在的表单分 Code（区号）和 Phone No.（号码）两栏，都是必填，只能填数字，不加 + 号和空格。区号会按你选的居住国自动带出。"
+a_zh_hant = "必須填。現在的表單分 Code（區號）和 Phone No.（號碼）兩欄，都是必填，只能填數字，不加 + 號和空格。區號會按你選的居住國自動帶出。"
+
+[["thailand/how-to-fill"]]
+q = "What do I put for occupation on the TDAC?"
+a = "Your job, in English. Occupation is a required free-text box, not a dropdown: letters, spaces and ordinary punctuation, no digits, up to 100 characters. The site turns it into capitals. Examples: TEACHER, SOFTWARE ENGINEER, RETIRED."
+q_zh = "泰国入境卡职业怎么填？"
+q_zh_hant = "泰國入境卡職業怎麼填？"
+a_zh = "用英文写你的职业。职业是必填的自由文本框，不是下拉菜单：可以用字母、空格和常见标点，不能有数字，最多 100 个字符，系统会自动转成大写。例如 TEACHER、SOFTWARE ENGINEER、RETIRED。"
+a_zh_hant = "用英文寫你的職業。職業是必填的自由文本框，不是下拉菜單：可以用字母、空格和常見標點，不能有數字，最多 100 個字符，系統會自動轉成大寫。例如 TEACHER、SOFTWARE ENGINEER、RETIRED。"
+
+[["thailand/how-to-fill"]]
+q = "What is Country/Territory of Residence on the TDAC?"
+a = "The country where you live now, which can differ from your passport. Choose it before the phone number: it fills the phone Code box, and changing it later clears the phone and city fields. City/State of Residence opens after it; write the city in English."
+q_zh = "泰国入境卡居住国怎么填？"
+q_zh_hant = "泰國入境卡居住國怎麼填？"
+a_zh = "填你现在常住的国家，可以和护照国籍不同。先选居住国再填电话：它会自动带出电话区号，之后再改会清空电话和居住城市。居住城市在选好国家后才能填，用英文写，例如 SHANGHAI。"
+a_zh_hant = "填你現在常住的國家，可以和護照國籍不同。先選居住國再填電話：它會自動帶出電話區號，之後再改會清空電話和居住城市。居住城市在選好國家後才能填，用英文寫，例如 SHANGHAI。"
+
+[["thailand/how-to-fill"]]
+q = "What if no purpose of travel fits on the TDAC?"
+a = "Choose OTHERS (PLEASE SPECIFY) from the Purpose of Travel list and type the purpose in English, letters and spaces only, up to 100 characters."
+q_zh = "泰国入境卡旅行目的怎么选？"
+q_zh_hant = "泰國入境卡旅行目的怎麼選？"
+a_zh = "从 Purpose of Travel 下拉菜单选和这次行程相符的一项；都不合适就选 OTHERS (PLEASE SPECIFY)，再用英文写明目的，只能用字母和空格，最多 100 个字符。"
+a_zh_hant = "從 Purpose of Travel 下拉菜單選和這次行程相符的一項；都不合適就選 OTHERS (PLEASE SPECIFY)，再用英文寫明目的，只能用字母和空格，最多 100 個字符。"
+
+[["thailand/how-to-fill"]]
+q = "How do I change my TDAC after submitting it?"
+a = "Click Update Arrival Card on tdac.immigration.go.th and search with your TH Digital Arrival Card No., date of birth and nationality. You can update any time before travel, except full name, passport number, nationality and date of birth. If one of those is wrong, submit a new TDAC; the most recent submission is the valid one."
+q_zh = "泰国入境卡提交后怎么修改？"
+q_zh_hant = "泰國入境卡提交後怎麼修改？"
+a_zh = "在 tdac.immigration.go.th 点 Update Arrival Card，用入境卡编号（TH Digital Arrival Card No.）、出生日期和国籍查出记录再改。出行前随时能改，但姓名、护照号、国籍和出生日期改不了；这几项填错就重新提交一份，系统以最近一次提交为准。"
+a_zh_hant = "在 tdac.immigration.go.th 點 Update Arrival Card，用入境卡編號（TH Digital Arrival Card No.）、出生日期和國籍查出記錄再改。出行前隨時能改，但姓名、護照號、國籍和出生日期改不了；這幾項填錯就重新提交一份，系統以最近一次提交為準。"
+
+[["thailand/how-to-fill"]]
+q = "I entered the wrong phone number on my TDAC. What now?"
+a = "Correct it with Update Arrival Card; the phone number is not one of the locked fields. The official FAQ does not describe a separate consequence for a wrong phone number, but it says details must be accurate before entry and that passengers with incorrect information may be refused entry at immigration's discretion."
+q_zh = "泰国入境卡电话填错了怎么办？"
+q_zh_hant = "泰國入境卡電話填錯了怎麼辦？"
+a_zh = "用 Update Arrival Card 改过来就行，电话不在不能修改的字段里。官方 FAQ 没有单独说电话填错的后果，但写明入境前信息必须准确，信息有误的旅客可能被移民官酌情拒绝入境。"
+a_zh_hant = "用 Update Arrival Card 改過來就行，電話不在不能修改的欄位裡。官方 FAQ 沒有單獨說電話填錯的後果，但寫明入境前資訊必須準確，資訊有誤的旅客可能被移民官酌情拒絕入境。"
 
 [["aruba/how-to-fill"]]
 q = "When should I fill out the Aruba ED Card?"

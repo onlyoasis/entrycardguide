@@ -80,10 +80,10 @@
   },
   "phone": {
    "label": "電話號碼",
-   "help": "請包含國家/地區代碼。",
+   "help": "只填數字。官方表單的國碼另有一個 Code 欄。",
    "errors": {
-    "required": "請輸入電話號碼",
-    "invalidFormat": "請包含國家代碼，例如 +1 415 555 0100"
+    "required": "目前的 TDAC 電話為必填",
+    "invalidFormat": "只填數字，不加 +。國碼填在另一個 Code 欄。"
    }
   }
  }

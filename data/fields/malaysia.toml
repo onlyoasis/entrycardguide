@@ -149,6 +149,6 @@ why_zh_hant = "MDAC 伺服器在旅遊高峰易卡。等 10–15 分鐘，換瀏
 
 [[errors]]
 code = "No confirmation email after 1 hour"
-why_en = "Check spam. Refile if still missing — duplicates are harmless, the latest one applies."
-why_zh = "先看垃圾箱。还没有就重新提交——重复无害，以最新为准。"
-why_zh_hant = "先看垃圾箱。還沒有就重新提交——重複無害，以最新為準。"
+why_en = "Check spam. The email carries the PIN for Check Registration; Forgot your PIN? sends a new one, once a day. Wrong address typed: ask Immigration at eapp.imi.gov.my/spo."
+why_zh = "先看垃圾箱。邮件里有查询登记要用的 PIN；Forgot your PIN? 可补发新 PIN，每天一次。邮箱填错了，通过 eapp.imi.gov.my/spo 联系移民局。"
+why_zh_hant = "先看垃圾箱。郵件裡有查詢登記要用的 PIN；Forgot your PIN? 可補發新 PIN，每天一次。信箱填錯了，通過 eapp.imi.gov.my/spo 聯繫移民局。"

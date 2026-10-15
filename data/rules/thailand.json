@@ -104,11 +104,12 @@
     "phone": {
       "type": "phone",
       "label": "Phone number",
-      "required": false,
-      "placeholder": "+1 415 555 0100",
-      "help": "Include country code",
+      "required": true,
+      "placeholder": "4155550100",
+      "help": "Digits only. On the official form the country code goes in a separate Code box.",
       "errors": {
-        "invalidFormat": "Include country code, e.g. +1 415 555 0100"
+        "required": "Phone number is required on the current TDAC",
+        "invalidFormat": "Digits only, no + sign. Put the country code in the separate Code box."
       }
     }
   }

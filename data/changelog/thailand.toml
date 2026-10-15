@@ -20,3 +20,10 @@ summary = "Scam-site DNS audit"
 summary_zh = "山寨站点 DNS 审计"
 summary_zh_hant = "山寨網站 DNS 審計"
 detail = "Removed stale non-resolving scam domains and kept only live domains with documented evidence."
+
+[[entries]]
+date = "2026-10-15"
+summary = "Phone, occupation, residence, purpose and transport checked against the live TDAC"
+summary_zh = "对照官方 TDAC 核对电话、职业、居住国、旅行目的和交通方式"
+summary_zh_hant = "對照官方 TDAC 核對電話、職業、居住國、旅行目的和交通方式"
+detail = "The phone number is required on the current form, in a Code box and a Phone No. box, digits only; the guide had called it optional. Added the occupation, residence, purpose and transport rules from the live form, and the Update Arrival Card steps from the official user guide and FAQ."

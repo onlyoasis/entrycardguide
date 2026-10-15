@@ -26983,7 +26983,7 @@ export default {
           "name": "Malaysia Digital Arrival Card (MDAC)",
           "url": "https://imigresen-online.imi.gov.my/mdac/main",
           "agency": "Jabatan Imigresen Malaysia (Immigration Department of Malaysia)",
-          "lastVerified": "2026-10-12",
+          "lastVerified": "2026-10-15",
           "archiveUrl": "https://web.archive.org/web/2026/https://imigresen-online.imi.gov.my/mdac/main",
           "notes": "Reserved under .gov.my — only Malaysian government entities can register this domain suffix. Required for most foreign visitors since January 2024."
         },
@@ -26995,6 +26995,38 @@ export default {
           "lastVerified": "2026-10-12"
         },
         {
+          "key": "check_registration",
+          "name": "MDAC Check Registration",
+          "url": "https://imigresen-online.imi.gov.my/mdac/register?viewRegistration",
+          "agency": "Jabatan Imigresen Malaysia (Immigration Department of Malaysia)",
+          "lastVerified": "2026-10-15",
+          "notes": "Read 2026-10-15. Asks for Passport No. (max 12), Nationality / Citizenship and PIN (max 8), then a slider puzzle with a RESET button. Portal menu: Registration, Check Registration, Check Visit Pass, Check eGate Eligibility Status; no edit entry. The main page's contact line sends MDAC inquiries to eapp.imi.gov.my/spo."
+        },
+        {
+          "key": "forgot_pin",
+          "name": "MDAC Forgot PIN",
+          "url": "https://imigresen-online.imi.gov.my/mdac/manage?forgotPin",
+          "agency": "Jabatan Imigresen Malaysia (Immigration Department of Malaysia)",
+          "lastVerified": "2026-10-15",
+          "notes": "Read 2026-10-15. Passport number and nationality; a new PIN is sent to the registered email; reset allowed once a day."
+        },
+        {
+          "key": "infographic",
+          "name": "How to register MDAC (infographic)",
+          "url": "https://imigresen-online.imi.gov.my/mdac/img/infographic_1.png",
+          "agency": "Jabatan Imigresen Malaysia (Immigration Department of Malaysia)",
+          "lastVerified": "2026-10-15",
+          "notes": "Read 2026-10-15. Step 1: complete and submit MDAC within 3 days before arrival. Step 2: show the MDAC registration and verify your passport at the Immigration counter. Prepared by the Security and Passport Division."
+        },
+        {
+          "key": "myniise_notice",
+          "name": "MDAC can now be filled in the MyNIISe app (notice)",
+          "url": "https://www.imi.gov.my/index.php/pengumuman/mdac-kini-boleh-diisi-terus-melalui-aplikasi-myniise/",
+          "agency": "Jabatan Imigresen Malaysia",
+          "lastVerified": "2026-10-15",
+          "notes": "Notice dated 2026-01-21, read 2026-10-15. Complete the form in the MyNIISe app within 3 days before arrival; on arrival, present the MDAC registration at the immigration counter during passport verification."
+        },
+        {
           "key": "exemptions",
           "name": "MDAC exemptions",
           "url": "https://www.kln.gov.my/web/can_vancouver/travel_advisory",
@@ -27003,7 +27035,7 @@ export default {
           "notes": "Exemption text reviewed through the official KLN search-indexed page on 2026-09-14; direct page fetch returned 502. This reference is not an application endpoint."
         }
       ],
-      "lastVerified": "2026-10-12"
+      "lastVerified": "2026-10-15"
     },
     {
       "slug": "singapore",
@@ -27169,7 +27201,7 @@ export default {
           "name": "Thailand Digital Arrival Card",
           "url": "https://tdac.immigration.go.th",
           "agency": "Royal Thai Immigration Bureau",
-          "lastVerified": "2026-10-12",
+          "lastVerified": "2026-10-15",
           "archiveUrl": "https://web.archive.org/web/2026/https://tdac.immigration.go.th",
           "notes": "Reserved under .go.th — only Thai government entities can register this domain suffix."
         },
@@ -27179,9 +27211,25 @@ export default {
           "url": "https://www.immigration.go.th",
           "agency": "Royal Thai Immigration Bureau",
           "lastVerified": "2026-06-11"
+        },
+        {
+          "key": "user_guide",
+          "name": "TDAC user guide",
+          "url": "https://tdac.immigration.go.th/manual/en/index.html",
+          "agency": "Royal Thai Immigration Bureau",
+          "lastVerified": "2026-10-15",
+          "notes": "Read 2026-10-15. Submit 3 days in advance of arrival; individual or group submission, up to 10 per submission; an MRZ scan or upload can fill personal details; Update Arrival Card searches by TH Digital Arrival Card No., date of birth and nationality and works any time before travel; full name, nationality and date of birth cannot be updated; all details must be entered in English; dropdowns filter after three typed characters."
+        },
+        {
+          "key": "faq",
+          "name": "TDAC FAQ and version updates",
+          "url": "https://tdac.immigration.go.th/manual/en/faq.html",
+          "agency": "Royal Thai Immigration Bureau",
+          "lastVerified": "2026-10-15",
+          "notes": "Read 2026-10-15. Used here: Update Arrival Card changes anything except full name, passport number, nationality and date of birth (the user guide's list leaves out passport number); otherwise submit a new form, and the most recent submission is the valid one; no airline penalty for incorrect information, but passengers may be denied entry at immigration's discretion; release notes name the occupation, country and city of residence, country boarded and accommodation type fields, Flight No./Vehicle No. up to 20 characters and address up to 215. Field rules in the live form (version 2026.09.00), read the same day: occupation required free text, English letters, spaces and punctuation, max 100; City/State of Residence required, max 100, no digits; phone Code and Phone No. both required, digits only, max 10 and 25; choosing the country of residence fills the phone code and changing it clears phone and city; purpose of travel is a required list with OTHERS (PLEASE SPECIFY) plus English letters and spaces up to 100; mode of travel required, and the mode of transport list depends on it. The option lists load only after the Cloudflare check and were not read."
         }
       ],
-      "lastVerified": "2026-10-12"
+      "lastVerified": "2026-10-15"
     },
     {
       "slug": "dominican",
@@ -30838,11 +30886,12 @@ export default {
         "phone": {
           "type": "phone",
           "label": "Phone number",
-          "required": false,
-          "placeholder": "+1 415 555 0100",
-          "help": "Include country code",
+          "required": true,
+          "placeholder": "4155550100",
+          "help": "Digits only. On the official form the country code goes in a separate Code box.",
           "errors": {
-            "invalidFormat": "Include country code, e.g. +1 415 555 0100"
+            "required": "Phone number is required on the current TDAC",
+            "invalidFormat": "Digits only, no + sign. Put the country code in the separate Code box."
           }
         }
       }
@@ -36153,14 +36202,14 @@ export default {
         "section_en": "Section 3 · Contact",
         "section_zh": "第 3 段 · 联系方式",
         "section_zh_hant": "第 3 段 · 聯繫方式",
-        "example": "+1 415 555 0100",
-        "mistake": "415-555-0100",
-        "mistake_why_en": "missing country code prefix — required even for US numbers",
-        "mistake_why_zh": "少了国家代码前缀——即便是美国号码也要写 +1",
-        "mistake_why_zh_hant": "少了國家代碼前綴——即便是美國號碼也要寫 +1",
-        "copy_en": "Optional. Include the country code with a +. Used only if immigration needs to reach you. Most travelers never get a call.",
-        "copy_zh": "可选。带 + 的国家代码必须有。仅在移民局需要联系你时才会用上，大部分旅客根本不会接到电话。",
-        "copy_zh_hant": "可選。帶 + 的國家代碼必須有。僅在移民局需要聯繫你時才會用上，大部分旅客根本不會接到電話。"
+        "example": "1 · 4155550100",
+        "mistake": "+1 415-555-0100",
+        "mistake_why_en": "plus sign, spaces and dashes: both boxes take digits only",
+        "mistake_why_zh": "带了 + 号、空格和短横：两栏都只收数字",
+        "mistake_why_zh_hant": "帶了 + 號、空格和短橫：兩欄都只收數字",
+        "copy_en": "Required on the current form, in two boxes: Code (up to 10 digits) and Phone No. (up to 25). Digits only, no + or spaces. The Code fills in from your Country/Territory of Residence. Typed it wrong? The phone is not a locked field, so fix it with Update Arrival Card.",
+        "copy_zh": "现在的表单里是必填项，分 Code（区号，最多 10 位）和 Phone No.（号码，最多 25 位）两栏，只能填数字，不加 + 号和空格。区号按居住国自动带出。填错了也不要紧，电话不是锁定字段，用 Update Arrival Card 改。",
+        "copy_zh_hant": "現在的表單裡是必填項，分 Code（區號，最多 10 位）和 Phone No.（號碼，最多 25 位）兩欄，只能填數字，不加 + 號和空格。區號按居住國自動帶出。填錯了也不要緊，電話不是鎖定欄位，用 Update Arrival Card 改。"
       }
     ],
     "dominican": [
@@ -43334,6 +43383,13 @@ export default {
         "summary_zh": "马来西亚 MDAC 指南首版上线",
         "summary_zh_hant": "馬來西亞 MDAC 指南首版上線",
         "detail": "Covers Malaysia Digital Arrival Card official URL, field guidance, and known paid middleman patterns."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "How to check an MDAC, reset the PIN and ask for a correction",
+        "summary_zh": "补充 MDAC 查询登记、重置 PIN 和申请更正的方法",
+        "summary_zh_hant": "補充 MDAC 查詢登記、重置 PIN 和申請更正的方法",
+        "detail": "From the official portal: Check Registration with passport number, nationality and the emailed PIN; Forgot your PIN? once a day; no edit option, corrections through eapp.imi.gov.my/spo. The guide now says to present the MDAC registration at the counter, as the Immigration Department's posters do."
       }
     ],
     "singapore": [
@@ -43389,6 +43445,13 @@ export default {
         "summary_zh": "山寨站点 DNS 审计",
         "summary_zh_hant": "山寨網站 DNS 審計",
         "detail": "Removed stale non-resolving scam domains and kept only live domains with documented evidence."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Phone, occupation, residence, purpose and transport checked against the live TDAC",
+        "summary_zh": "对照官方 TDAC 核对电话、职业、居住国、旅行目的和交通方式",
+        "summary_zh_hant": "對照官方 TDAC 核對電話、職業、居住國、旅行目的和交通方式",
+        "detail": "The phone number is required on the current form, in a Code box and a Phone No. box, digits only; the guide had called it optional. Added the occupation, residence, purpose and transport rules from the live form, and the Update Arrival Card steps from the official user guide and FAQ."
       }
     ],
     "dominican": [

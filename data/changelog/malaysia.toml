@@ -6,3 +6,10 @@ summary = "Initial MDAC coverage published"
 summary_zh = "马来西亚 MDAC 指南首版上线"
 summary_zh_hant = "馬來西亞 MDAC 指南首版上線"
 detail = "Covers Malaysia Digital Arrival Card official URL, field guidance, and known paid middleman patterns."
+
+[[entries]]
+date = "2026-10-15"
+summary = "How to check an MDAC, reset the PIN and ask for a correction"
+summary_zh = "补充 MDAC 查询登记、重置 PIN 和申请更正的方法"
+summary_zh_hant = "補充 MDAC 查詢登記、重置 PIN 和申請更正的方法"
+detail = "From the official portal: Check Registration with passport number, nationality and the emailed PIN; Forgot your PIN? once a day; no edit option, corrections through eapp.imi.gov.my/spo. The guide now says to present the MDAC registration at the counter, as the Immigration Department's posters do."

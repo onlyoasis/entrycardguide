@@ -6,7 +6,7 @@
 url = "https://imigresen-online.imi.gov.my/mdac/main"
 name = "Malaysia Digital Arrival Card (MDAC)"
 agency = "Jabatan Imigresen Malaysia (Immigration Department of Malaysia)"
-last_verified = "2026-10-12"
+last_verified = "2026-10-15"
 archive_url = "https://web.archive.org/web/2026/https://imigresen-online.imi.gov.my/mdac/main"
 notes = "Reserved under .gov.my — only Malaysian government entities can register this domain suffix. Required for most foreign visitors since January 2024."
 
@@ -15,6 +15,34 @@ url = "https://www.imi.gov.my"
 name = "Jabatan Imigresen Malaysia (home)"
 agency = "Jabatan Imigresen Malaysia"
 last_verified = "2026-10-12"
+
+[check_registration]
+url = "https://imigresen-online.imi.gov.my/mdac/register?viewRegistration"
+name = "MDAC Check Registration"
+agency = "Jabatan Imigresen Malaysia (Immigration Department of Malaysia)"
+last_verified = "2026-10-15"
+notes = "Read 2026-10-15. Asks for Passport No. (max 12), Nationality / Citizenship and PIN (max 8), then a slider puzzle with a RESET button. Portal menu: Registration, Check Registration, Check Visit Pass, Check eGate Eligibility Status; no edit entry. The main page's contact line sends MDAC inquiries to eapp.imi.gov.my/spo."
+
+[forgot_pin]
+url = "https://imigresen-online.imi.gov.my/mdac/manage?forgotPin"
+name = "MDAC Forgot PIN"
+agency = "Jabatan Imigresen Malaysia (Immigration Department of Malaysia)"
+last_verified = "2026-10-15"
+notes = "Read 2026-10-15. Passport number and nationality; a new PIN is sent to the registered email; reset allowed once a day."
+
+[infographic]
+url = "https://imigresen-online.imi.gov.my/mdac/img/infographic_1.png"
+name = "How to register MDAC (infographic)"
+agency = "Jabatan Imigresen Malaysia (Immigration Department of Malaysia)"
+last_verified = "2026-10-15"
+notes = "Read 2026-10-15. Step 1: complete and submit MDAC within 3 days before arrival. Step 2: show the MDAC registration and verify your passport at the Immigration counter. Prepared by the Security and Passport Division."
+
+[myniise_notice]
+url = "https://www.imi.gov.my/index.php/pengumuman/mdac-kini-boleh-diisi-terus-melalui-aplikasi-myniise/"
+name = "MDAC can now be filled in the MyNIISe app (notice)"
+agency = "Jabatan Imigresen Malaysia"
+last_verified = "2026-10-15"
+notes = "Notice dated 2026-01-21, read 2026-10-15. Complete the form in the MyNIISe app within 3 days before arrival; on arrival, present the MDAC registration at the immigration counter during passport verification."
 
 # Country-page metadata (consumed by country-form layout).
 # Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.

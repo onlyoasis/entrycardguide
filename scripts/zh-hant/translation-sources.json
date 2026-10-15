@@ -1582,13 +1582,14 @@
    },
    "phone": {
     "label": "Phone number",
-    "help": "Include country code",
-    "placeholder": "+1 415 555 0100",
+    "help": "Digits only. On the official form the country code goes in a separate Code box.",
+    "placeholder": "4155550100",
     "errors": {
-     "invalidFormat": "Include country code, e.g. +1 415 555 0100"
+     "required": "Phone number is required on the current TDAC",
+     "invalidFormat": "Digits only, no + sign. Put the country code in the separate Code box."
     },
     "type": "phone",
-    "required": false
+    "required": true
    }
   },
   "turkey": {

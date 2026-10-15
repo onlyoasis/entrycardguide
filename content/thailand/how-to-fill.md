@@ -3,7 +3,7 @@ title: "How to Fill Thailand's Free TDAC Form (2026)"
 kicker: "Field-by-field walkthrough of the official TDAC form with common errors and what they mean. 8 minutes total."
 description: "Field guide to the Thailand Digital Arrival Card (TDAC): passport, flight, arrival date and contact fields, plus the errors that get it rejected. Free."
 date: 2026-04-22
-lastmod: 2026-10-12
+lastmod: 2026-10-15
 country: "thailand"
 weight: 20
 layout: how-to-fill
@@ -83,10 +83,12 @@ Where your confirmation and QR code arrive. This is the only thing you show at i
 
 ### Phone
 
-Optional. Include the country code with a `+`.
+Required on the current form, in two boxes: **Code** and **Phone No.** Both take digits only.
 
-- `+1 415 555 0100` or `+14155550100`, both accepted.
-- Used only if immigration needs to reach you. Most travelers never get a call. Fill it if you have a travel SIM or eSIM active on arrival, skip it if you do not.
+- No `+`, spaces, dashes or brackets. A US number +1 415 555 0100 goes in as Code `1` and Phone No. `4155550100`.
+- Code holds up to 10 digits, Phone No. up to 25.
+- The Code fills in when you choose your Country/Territory of Residence. Change it if your phone number belongs to another country.
+- Typed it wrong? See "Phone number typed wrong" below.
 
 ## Section 4: Health
 
@@ -96,6 +98,61 @@ Thailand's health declaration is currently a short set of yes/no questions about
 - If you answer "yes" to any symptom question, you will be routed to a secondary health screening on arrival. This is not a denial of entry. It is a 5 to 15 minute check.
 
 *Last reviewed against the live TDAC site: 2026-04-22. If the section has changed when you read this, trust the live site, not this page, and email us so we can update.*
+
+## Occupation, residence, purpose and transport
+
+Checked against the field rules in the live TDAC form (version 2026.09.00) on 2026-10-15. The option lists for Purpose of Travel and Mode of Transport load only after the site's human check, so this page does not copy them. The official user guide asks for every detail in English.
+
+### Occupation
+
+A free-text box on the Personal Information page, not a dropdown. It is required.
+
+- English letters, spaces and ordinary punctuation. No digits.
+- Max 100 characters. The site turns what you type into capitals.
+- There is no list to match. Write the job in plain English: `TEACHER`, `NURSE`, `SOFTWARE ENGINEER`, `RETIRED`.
+
+### Country/Territory of Residence
+
+The country where you live now. It can differ from your passport: a Chinese citizen living in Singapore picks Singapore.
+
+- A dropdown. Type three letters and matching countries appear, shown as `CODE: NAME`, for example `USA: THE UNITED STATES OF AMERICA`.
+- Choose it before you type a phone number. It fills the phone Code box, and changing the country later clears both phone boxes and the city.
+
+### City/State of Residence
+
+Opens once the country is chosen. Required.
+
+- Suggestions appear as you type. Pick one or type your own.
+- Max 100 characters, no digits. The box accepts other scripts, but the guide asks for English: `SHANGHAI`, not `上海`.
+
+### Purpose of Travel
+
+A required dropdown on the Trip & Accommodation page.
+
+- Choose the option that matches this trip.
+- If none fits, choose `OTHERS (PLEASE SPECIFY)` and type the purpose in English. Letters and spaces only, max 100 characters.
+
+### Mode of Travel and Mode of Transport
+
+- **Mode of Travel** is required: how you cross into Thailand. The official guide covers arrivals by air, land and sea.
+- **Mode of Transport** opens after it, and its list changes with the Mode of Travel you picked. Some choices open a text box for details.
+- **Flight No./Vehicle No.** comes next, max 20 characters.
+
+## Fixing a mistake after you submit
+
+From the official user guide and FAQ, read 2026-10-15.
+
+1. On tdac.immigration.go.th, click **Update Arrival Card**.
+2. Search with your **TH Digital Arrival Card No.**, date of birth and nationality.
+3. Correct the details, review them, enter your email, accept the terms and submit. Download the updated card; a copy also goes to your email.
+
+- You can update any time before you travel.
+- Full name, passport number, nationality and date of birth cannot be updated. If one of them is wrong, submit a new TDAC with the right details. The system counts the most recent submission as the valid one.
+- Flight or hotel changed? Update the card or submit a new one before you enter Thailand.
+
+### Phone number typed wrong
+
+The official FAQ does not single out the phone number. It does say a submission must be accurate before entry, and that passengers with incorrect information may be refused entry at immigration's discretion. The phone number is not one of the locked fields, so correct it with Update Arrival Card.
 
 ---
 

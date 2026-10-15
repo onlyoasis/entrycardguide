@@ -6,7 +6,7 @@
 url = "https://tdac.immigration.go.th"
 name = "Thailand Digital Arrival Card"
 agency = "Royal Thai Immigration Bureau"
-last_verified = "2026-10-12"
+last_verified = "2026-10-15"
 archive_url = "https://web.archive.org/web/2026/https://tdac.immigration.go.th"
 notes = "Reserved under .go.th — only Thai government entities can register this domain suffix."
 
@@ -15,6 +15,20 @@ url = "https://www.immigration.go.th"
 name = "Thai Immigration Bureau (home)"
 agency = "Royal Thai Immigration Bureau"
 last_verified = "2026-06-11"
+
+[user_guide]
+url = "https://tdac.immigration.go.th/manual/en/index.html"
+name = "TDAC user guide"
+agency = "Royal Thai Immigration Bureau"
+last_verified = "2026-10-15"
+notes = "Read 2026-10-15. Submit 3 days in advance of arrival; individual or group submission, up to 10 per submission; an MRZ scan or upload can fill personal details; Update Arrival Card searches by TH Digital Arrival Card No., date of birth and nationality and works any time before travel; full name, nationality and date of birth cannot be updated; all details must be entered in English; dropdowns filter after three typed characters."
+
+[faq]
+url = "https://tdac.immigration.go.th/manual/en/faq.html"
+name = "TDAC FAQ and version updates"
+agency = "Royal Thai Immigration Bureau"
+last_verified = "2026-10-15"
+notes = "Read 2026-10-15. Used here: Update Arrival Card changes anything except full name, passport number, nationality and date of birth (the user guide's list leaves out passport number); otherwise submit a new form, and the most recent submission is the valid one; no airline penalty for incorrect information, but passengers may be denied entry at immigration's discretion; release notes name the occupation, country and city of residence, country boarded and accommodation type fields, Flight No./Vehicle No. up to 20 characters and address up to 215. Field rules in the live form (version 2026.09.00), read the same day: occupation required free text, English letters, spaces and punctuation, max 100; City/State of Residence required, max 100, no digits; phone Code and Phone No. both required, digits only, max 10 and 25; choosing the country of residence fills the phone code and changing it clears phone and city; purpose of travel is a required list with OTHERS (PLEASE SPECIFY) plus English letters and spaces up to 100; mode of travel required, and the mode of transport list depends on it. The option lists load only after the Cloudflare check and were not read."
 
 # Country-page metadata (consumed by country-form layout).
 # Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
