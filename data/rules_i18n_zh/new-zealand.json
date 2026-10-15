@@ -6,57 +6,57 @@
  "fields": {
   "passport_number": {
    "label": "护照号码",
-   "help": "从你将持用入境新西兰的护照复制号码。NZTD 未公布统一的网页长度上限，本检查器采用较宽的英数范围。",
+   "help": "照入境新西兰所用护照上的号码填写：3 到 9 个字母或数字，不加空格。新西兰、澳洲和德国护照另有各自的格式检查。",
    "errors": {
     "required": "请输入护照号码",
-    "tooShort": "请输入照片页上印刷的护照号码",
-    "tooLong": "请检查护照号码——本机检查器最多允许 20 个字符",
+    "tooShort": "至少 3 个字符",
+    "tooLong": "最多 9 个字符",
     "invalidChars": "只能使用字母和数字——不含空格或机读区填充符",
-    "invalidFormat": "请输入照片页上印刷的字母与数字"
+    "invalidFormat": "须为 3 到 9 个字母或数字"
    }
   },
   "passport_expiry": {
    "label": "护照效期",
-   "help": "与你将持用入境新西兰的护照效期一致。本机检查器使用 YYYY-MM-DD；提交时请用官方表单的日期控制项。",
+   "help": "与入境新西兰所用护照上的到期日一致。这里按 YYYY-MM-DD 检查。2026 年 10 月 15 日核对时，NZTD 没有问这一项。",
    "errors": {
     "required": "请输入护照效期",
     "invalidFormat": "请使用 YYYY-MM-DD 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
-    "tooEarly": "护照效期不能早于 2026-07-14"
+    "tooEarly": "这本护照已经过期"
    }
   },
   "family_name": {
    "label": "姓（Surname / Family name）",
-   "help": "使用你将持用入境新西兰的护照上的英文或拉丁拼写。",
+   "help": "使用护照上的英文或拉丁拼写：字母、空格、连字号和撇号，最多 39 个字符。只有一个名字时，填在这一格。",
    "errors": {
     "required": "请输入姓",
     "tooShort": "请输入护照上显示的姓",
-    "tooLong": "最多 80 个字符",
+    "tooLong": "最多 39 个字符",
     "invalidChars": "使用护照上的英文或拉丁拼写"
    }
   },
   "given_names": {
    "label": "名（Given name(s)）",
-   "help": "输入你将持用入境新西兰的护照上的所有名。不要漏掉任何一个中间名。",
+   "help": "填写护照上的所有名字，最多 39 个字符，不要漏掉中间名。只有单一名字的人，NZTD 允许这格留空。",
    "errors": {
     "required": "请输入名",
     "tooShort": "请输入护照上显示的名",
-    "tooLong": "最多 80 个字符",
+    "tooLong": "最多 39 个字符",
     "invalidChars": "使用护照上的英文或拉丁拼写"
    }
   },
   "date_of_birth": {
    "label": "出生日期",
-   "help": "与护照日期一致。本机检查器使用 YYYY-MM-DD；提交时请用官方表单的日期控制项。",
+   "help": "与护照上的日期一致。这里按 YYYY-MM-DD 检查；NZTD 上分三格：日、月（英文前三个字母，例如 Aug）、年。",
    "errors": {
     "required": "请输入出生日期",
     "invalidFormat": "请使用 YYYY-MM-DD 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
-    "tooLate": "出生日期不能晚于 2026-07-14"
+    "tooLate": "出生日期不能晚于今天"
    }
   },
   "country_of_birth": {
@@ -75,14 +75,15 @@
   },
   "arrival_date": {
    "label": "抵达新西兰日期",
-   "help": "填你的航班或船班抵达新西兰的日期，不是离开第一个国家的日期。本机检查器使用 YYYY-MM-DD。",
+   "help": "填班机或船抵达新西兰的日期，不是出发日期。搭机入境时，NZTD 提供今天、明天、后天（新西兰时间）三个选项，也可分日、月、年三格自填；更晚的日期表示还太早，不能开始填。这里按 YYYY-MM-DD 检查。",
    "errors": {
     "required": "请输入抵达日期",
     "invalidFormat": "请使用 YYYY-MM-DD 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
-    "tooEarly": "抵达日期不能早于 2026-07-14"
+    "tooEarly": "抵达日期不能早于昨天",
+    "tooLate": "还太早——NZTD 只开放 2 天内抵达的申报"
    }
   },
   "arrival_method": {
@@ -95,27 +96,27 @@
   },
   "flight_number": {
    "label": "航班号码",
-   "help": "空路旅客请填抵达新西兰的航班。海路旅客改用船班与港口字段。本检查器接受常见的航空公司代码＋编号格式。",
+   "help": "搭机入境者填抵达新西兰的那班航班：两个字符的航空公司代码加最多 4 位数字，共 3 到 7 个字符，例如 NZ1 或 NZ 1。6 码订位代号会被拒。搭船者改填船舶字段。",
    "errors": {
     "required": "请输入航班号码",
-    "invalidFormat": "请使用航空公司代码＋航班编号，例如 NZ1 或 SQ285"
+    "invalidFormat": "请填航空公司代码和航班号，例如 NZ1 或 SQ285"
    }
   },
   "email": {
    "label": "电子邮件",
-   "help": "请使用你自有的信箱。NZTD 会把参考号码与提交信息寄到这里。",
+   "help": "使用你能收信的信箱。NZTD 会把申报编号与提交信息寄到这里。NZTD 不接受连续两个点，或 @ 旁边紧接着点。",
    "errors": {
     "required": "请输入电子邮件",
-    "invalidFormat": "格式必须类似 name@example.com",
+    "invalidFormat": "请检查地址——不能有空格、连续两个点，@ 旁边也不能是点",
     "tooLong": "电子邮件太长——本检查器最多 254 个字符"
    }
   },
   "phone": {
    "label": "联系电话号码",
-   "help": "请包含国家/地区代码，确保能联系到你。",
+   "help": "国码在另一格选。号码栏只收数字、空格、连字号和一对括号，至少 5 个字符，不能连续两个空格或连字号。",
    "errors": {
     "required": "请输入联系电话号码",
-    "invalidFormat": "请包含国家代码和 7–15 位数字"
+    "invalidFormat": "只能用数字、空格、连字号和括号，至少 5 个字符——不要加 +（国码在另一格）"
    }
   },
   "nz_address": {

@@ -88,3 +88,10 @@ headline_zh_hant = "沒有生成任何 QR Code。"
 body_en = "Use the official Digital Agency page or the paper forms at the airport. Do not upload passport data to non-.go.jp imitators."
 body_zh = "使用日本数字厅官方页面，或在机场填纸质表。不要把护照资料上传到非 .go.jp 仿冒站。"
 body_zh_hant = "使用日本數字廳官方頁面，或在機場填紙質表。不要把護照資料上傳到非 .go.jp 仿冒站。"
+
+[form_checks]
+url = "https://www.vjw.digital.go.jp/main/"
+name = "Visit Japan Web app"
+agency = "Digital Agency of Japan"
+last_verified = "2026-10-15"
+notes = "Read 2026-10-15 from the app script. Passport number required, max 9, /^[A-Z0-9]*$/; family and given names required, max 39, /^[A-Z0-9 \\-.,]*$/; date of birth year, month and day fields; arrival date YYYY/MM/DD, from today to 31 December of next year; flight number max 20, /^[A-Z0-9]*$/; login email max 128."

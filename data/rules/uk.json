@@ -1,8 +1,8 @@
 {
   "country": "uk",
   "officialUrl": "https://www.gov.uk/eta",
-  "lastVerified": "2026-07-14",
-  "source": "https://www.gov.uk/eta/apply, https://www.gov.uk/guidance/using-the-uk-eta-app, and https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-electronic-travel-authorisation; re-checked 2026-07-14. GOV.UK confirms the passport, email, address, job, other-nationality, criminal-conviction, and conditional parental-contact steps. Passport photo, chip scan, face scan, and face photo are non-text steps and are excluded from this checker. The Home Office publishes no fixed passport-number or text-length limits for ETA, so this local checker uses broad conservative limits rather than presenting them as official.",
+  "lastVerified": "2026-10-15",
+  "source": "https://www.gov.uk/eta/apply, https://www.gov.uk/guidance/using-the-uk-eta-app, and https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-electronic-travel-authorisation (re-checked 2026-07-14), plus the online form at https://apply-for-an-eta.homeoffice.gov.uk/form (front-end read 2026-10-15: dates are GOV.UK Day, Month, Year boxes; its date-of-birth and email checks). GOV.UK confirms the passport, email, address, job, other-nationality, criminal-conviction, and conditional parental-contact steps. Passport photo, chip scan, face scan, and face photo are non-text steps and are excluded from this checker. The Home Office publishes no fixed passport-number or text-length limits for ETA, so this local checker uses broad conservative limits rather than presenting them as official.",
   "fields": {
     "passport": {
       "type": "passport",
@@ -40,14 +40,14 @@
       "type": "date",
       "label": "Date of birth",
       "required": true,
-      "maxDate": "2026-07-14",
       "placeholder": "1991-08-22",
-      "help": "Use YYYY-MM-DD in this local checker. Match the date shown on the passport.",
+      "help": "Match the date shown on the passport. Checked here as YYYY-MM-DD; the online form asks it in three boxes: Day, Month, Year.",
       "errors": {
         "required": "Date of birth is required",
         "invalidFormat": "Use YYYY-MM-DD",
-        "tooLate": "Date of birth cannot be after 2026-07-14"
-      }
+        "tooLate": "Date of birth must be in the past"
+      },
+      "maxDaysFromToday": 0
     },
     "email": {
       "type": "email",
@@ -58,9 +58,10 @@
       "help": "Use an inbox you control. The Home Office sends submission and decision emails, including the 16-digit ETA reference number.",
       "errors": {
         "required": "Email is required",
-        "invalidFormat": "Must look like name@example.com",
+        "invalidFormat": "Enter a real email address",
         "tooLong": "Email is too long — max 254 characters in this checker"
-      }
+      },
+      "pattern": "^(([^<>()[\\]\\\\.,;:\\s@\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$"
     },
     "home_address": {
       "type": "text",

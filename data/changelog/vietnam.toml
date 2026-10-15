@@ -13,3 +13,10 @@ summary = "Initial Vietnam e-visa coverage published"
 summary_zh = "越南电子签证指南首版上线"
 summary_zh_hant = "越南電子簽證指南首版上線"
 detail = "Covers the official e-visa site and explains the difference between a real government fee and commercial middleman markups."
+
+[[entries]]
+date = "2026-10-15"
+summary = "Checker follows the live e-Visa form: DD/MM/YYYY dates, 50-letter name boxes"
+summary_zh = "本地检查器按在线电子签表单更新：日期 DD/MM/YYYY，姓名框 50 字符"
+summary_zh_hant = "本地檢查器按線上電子簽表單更新：日期 DD/MM/YYYY，姓名框 50 字符"
+detail = "Read the e-Visa application scripts on evisa.gov.vn. Dates are DD/MM/YYYY; date of birth cannot be after today and passport expiry cannot be before today. Surname and given names take 50 letters and spaces each (the guide said 60). Passport number letters and digits up to 20. Email uses the form's own pattern, max 100."

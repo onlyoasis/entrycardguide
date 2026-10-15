@@ -6,52 +6,52 @@
  "fields": {
   "passport": {
    "label": "护照号码",
-   "help": "从你将持用的 VWP 电子护照原样复制号码。CBP 未公布固定长度，本检查器接受较宽的英数范围。",
+   "help": "照旅行用的免签计划电子护照逐字填写：6 到 10 个字母或数字。ESTA 还会按签发国格式检查；多数国家最多 9 个字符。",
    "errors": {
     "required": "请输入护照号码",
-    "tooShort": "请输入照片页上印刷的护照号码",
-    "tooLong": "请检查护照号码——本机检查器最多允许 20 个字符",
+    "tooShort": "至少 6 个字符",
+    "tooLong": "最多 10 个字符",
     "invalidChars": "只能使用字母和数字",
-    "invalidFormat": "请输入照片页上印刷的字母与数字"
+    "invalidFormat": "须为 6 到 10 个字母或数字"
    }
   },
   "full_name": {
    "label": "全名",
-   "help": "以护照显示的拉丁拼写填入所有姓与名。",
+   "help": "ESTA 分姓（family name）和名（first name）两格，各最多 45 个字符：字母、空格、撇号、连字号和逗号。所有名字都照护照上的拉丁拼写填写。",
    "errors": {
     "required": "请输入全名",
     "tooShort": "请输入护照上显示的姓名",
     "tooLong": "最多 80 个字符",
-    "invalidChars": "使用护照上的拉丁拼写"
+    "invalidChars": "只能用字母、空格、撇号、连字号和逗号"
    }
   },
   "date_of_birth": {
    "label": "出生日期",
-   "help": "在本机检查器中使用 YYYY-MM-DD 格式，与护照日期一致。",
+   "help": "与护照上的日期一致。这里按 YYYY-MM-DD 检查；ESTA 用日、月、年三个下拉菜单选择。",
    "errors": {
     "required": "请输入出生日期",
     "invalidFormat": "请使用 YYYY-MM-DD 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
-    "tooLate": "出生日期不能晚于 2026-07-13"
+    "tooLate": "出生日期不能晚于今天"
    }
   },
   "email": {
    "label": "电子邮件",
-   "help": "使用你自有的信箱。ESTA 需要验证电子邮件，申请编号将寄到这里。",
+   "help": "使用你能收信的地址。ESTA 需要验证电子邮件，申请编号也会寄到这里。最多 100 个字符。",
    "errors": {
     "required": "请输入电子邮件",
     "invalidFormat": "格式必须类似 name@example.com",
-    "tooLong": "电子邮件太长——本检查器最多 254 个字符"
+    "tooLong": "最多 100 个字符"
    }
   },
   "phone": {
    "label": "电话号码",
-   "help": "包含国家/地区代码。没有电话时，CBP 允许填一个可接通的第三方联系电话。",
+   "help": "国码从 ESTA 的清单选。号码栏只收数字和空格，最多 20 个字符。没有电话时，CBP 允许填可联系到的第三方电话。",
    "errors": {
     "required": "请输入联系电话号码",
-    "invalidFormat": "请包含国家代码和 7–15 位数字"
+    "invalidFormat": "只能用数字和空格，最多 20 个字符——国码在另一个清单"
    }
   },
   "home_address": {

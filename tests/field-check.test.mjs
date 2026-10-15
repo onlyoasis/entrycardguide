@@ -193,3 +193,280 @@ test("MDAC: address line 1 needs three words and the form's characters, up to 10
   assert.equal(check(`A B ${"C".repeat(97)}`, MY.accommodation).ok, false);
   assert.equal(check("", MY.accommodation).ok, false);
 });
+
+// ---- 2026-10-15: the other validator countries, checked against each live form ----
+
+test("a date rule can use MM/DD/YYYY or DD.MM.YYYY, with one- or two-digit day and month", () => {
+  const mdy = { type: "date", label: "d", required: true, format: "MM/DD/YYYY" };
+  assert.equal(check("08/22/1991", mdy).ok, true);
+  assert.equal(check("8/22/1991", mdy).ok, true);
+  assert.equal(check("22/08/1991", mdy).ok, false);
+  assert.equal(check("1991-08-22", mdy).ok, false);
+  const dot = { type: "date", label: "d", required: true, format: "DD.MM.YYYY" };
+  assert.equal(check("22.08.1991", dot).ok, true);
+  assert.equal(check("22/08/1991", dot).ok, false);
+  assert.equal(check("31.02.1991", dot).ok, false);
+});
+
+const VN = rules("vietnam");
+test("Vietnam e-visa: dates are DD/MM/YYYY; birth date up to today, passport not expired", () => {
+  assert.equal(check("22/08/1991", VN.date_of_birth).ok, true);
+  assert.equal(check("1991-08-22", VN.date_of_birth).ok, false);
+  assert.equal(check("12/05/2026", VN.date_of_birth).ok, true);
+  assert.equal(check("13/05/2026", VN.date_of_birth).ok, false);
+  assert.equal(check("11/05/2026", VN.passport_expiry).ok, false);
+  assert.equal(check("12/05/2030", VN.passport_expiry).ok, true);
+  assert.equal(check("14/05/2026", VN.intended_arrival).ok, true);
+  assert.equal(check("2026-05-14", VN.intended_arrival).ok, false);
+});
+test("Vietnam e-visa: names letters and spaces, passport up to 20, the form's email check", () => {
+  assert.equal(check("NGUYEN VAN AN", VN.full_name).ok, true);
+  assert.equal(check("O'BRIEN", VN.full_name).ok, false);
+  assert.equal(check("NGUYỄN", VN.full_name).ok, false);
+  assert.equal(check("B12345678", VN.passport).ok, true);
+  assert.equal(check("A".repeat(21), VN.passport).ok, false);
+  assert.equal(check("an.nguyen@gmail.com", VN.email).ok, true);
+  assert.equal(check("a+b@gmail.com", VN.email).ok, true);
+  assert.equal(check("an@gmail", VN.email).ok, false);
+  assert.equal(check("an nguyen@gmail.com", VN.email).ok, false);
+});
+
+const PH = rules("philippines");
+test("eTravel: dates are MM/DD/YYYY; arrival today to 4 days ahead", () => {
+  assert.equal(check("08/22/1991", PH.date_of_birth).ok, true);
+  assert.equal(check("22/08/1991", PH.date_of_birth).ok, false);
+  assert.equal(check("05/13/2026", PH.date_of_birth).ok, false);
+  assert.equal(check("05/12/2026", PH.arrival_date).ok, true);
+  assert.equal(check("05/16/2026", PH.arrival_date).ok, true);
+  assert.equal(check("05/17/2026", PH.arrival_date).ok, false);
+  assert.equal(check("05/11/2026", PH.arrival_date).ok, false);
+});
+test("eTravel: passport number at least 5 characters", () => {
+  assert.equal(check("P1234", PH.passport).ok, true);
+  assert.equal(check("P123", PH.passport).ok, false);
+});
+
+const IN = rules("india");
+test("India e-Arrival: arrival DD/MM/YYYY, today to 4 days ahead", () => {
+  assert.equal(check("12/05/2026", IN.arrival_date).ok, true);
+  assert.equal(check("16/05/2026", IN.arrival_date).ok, true);
+  assert.equal(check("17/05/2026", IN.arrival_date).ok, false);
+  assert.equal(check("11/05/2026", IN.arrival_date).ok, false);
+  assert.equal(check("2026-05-14", IN.arrival_date).ok, false);
+});
+test("India e-Arrival: name, passport, phone and address follow the form", () => {
+  assert.equal(check("TARO KEN YAMADA", IN.full_name).ok, true);
+  assert.equal(check("O'NEIL", IN.full_name).ok, false);
+  assert.equal(check("A".repeat(201), IN.full_name).ok, false);
+  assert.equal(check("A123456", IN.passport_number).ok, true);
+  assert.equal(check("A1234", IN.passport_number).ok, false);
+  assert.equal(check("A".repeat(16), IN.passport_number).ok, false);
+  assert.equal(check("9012345678", IN.contact_number).ok, true);
+  assert.equal(check("+81 90 1234 5678", IN.contact_number).ok, false);
+  assert.equal(check("1234", IN.contact_number).ok, false);
+  assert.equal(check("1".repeat(16), IN.contact_number).ok, false);
+  assert.equal(check("8012345678", IN.emergency_contact_number).ok, true);
+  assert.equal(check("80-1234-5678", IN.emergency_contact_number).ok, false);
+  assert.equal(check("Hotel Taj, 1 Mansingh Road #2, New Delhi", IN.india_address).ok, true);
+  assert.equal(check("Hotel; New Delhi", IN.india_address).ok, false);
+  assert.equal(check("A".repeat(501), IN.india_address).ok, false);
+});
+
+const NZ = rules("new-zealand");
+test("NZTD: names up to 39, given names optional; passport 3 to 9", () => {
+  assert.equal(check("O'NEIL-SMITH", NZ.family_name).ok, true);
+  assert.equal(check("JOSÉ", NZ.family_name).ok, false);
+  assert.equal(check("A".repeat(40), NZ.family_name).ok, false);
+  assert.equal(check("", NZ.given_names).ok, true);
+  assert.equal(check("AB123456", NZ.passport_number).ok, true);
+  assert.equal(check("AB", NZ.passport_number).ok, false);
+  assert.equal(check("A1234567890", NZ.passport_number).ok, false);
+});
+test("NZTD: birth date up to today; air arrival from yesterday to 2 days ahead", () => {
+  assert.equal(check("2026-05-12", NZ.date_of_birth).ok, true);
+  assert.equal(check("2026-05-13", NZ.date_of_birth).ok, false);
+  assert.equal(check("2026-05-11", NZ.arrival_date).ok, true);
+  assert.equal(check("2026-05-14", NZ.arrival_date).ok, true);
+  assert.equal(check("2026-05-10", NZ.arrival_date).ok, false);
+  assert.equal(check("2026-05-15", NZ.arrival_date).ok, false);
+});
+test("NZTD: flight search, email and phone use the form's patterns", () => {
+  assert.equal(check("NZ1", NZ.flight_number).ok, true);
+  assert.equal(check("NZ 1", NZ.flight_number).ok, true);
+  assert.equal(check("nz1", NZ.flight_number).ok, true);
+  assert.equal(check("3C123", NZ.flight_number).ok, true);
+  assert.equal(check("ABC123", NZ.flight_number).ok, false);
+  assert.equal(check("NZ12345", NZ.flight_number).ok, false);
+  assert.equal(check("kiri@example.co.nz", NZ.email).ok, true);
+  assert.equal(check("kiri..x@example.com", NZ.email).ok, false);
+  assert.equal(check(".kiri@example.com", NZ.email).ok, false);
+  assert.equal(check("kiri@example", NZ.email).ok, false);
+  assert.equal(check("21 123 4567", NZ.phone).ok, true);
+  assert.equal(check("(21) 123-4567", NZ.phone).ok, true);
+  assert.equal(check("+64 21 123 4567", NZ.phone).ok, false);
+  assert.equal(check("21  123 4567", NZ.phone).ok, false);
+  assert.equal(check("(21 123 4567", NZ.phone).ok, false);
+  assert.equal(check("1234", NZ.phone).ok, false);
+});
+
+const UK = rules("uk");
+test("UK ETA: date of birth in the past; the form's email check", () => {
+  assert.equal(check("2026-05-12", UK.date_of_birth).ok, true);
+  assert.equal(check("2026-05-13", UK.date_of_birth).ok, false);
+  assert.equal(check("taro@example.co.uk", UK.email).ok, true);
+  assert.equal(check("taro@example", UK.email).ok, false);
+});
+
+const US = rules("usa");
+test("ESTA: name characters, passport 6 to 10, birth date up to today", () => {
+  assert.equal(check("O'NEIL, JR", US.full_name).ok, true);
+  assert.equal(check("JOSÉ", US.full_name).ok, false);
+  assert.equal(check("A1234567", US.passport).ok, true);
+  assert.equal(check("A1234", US.passport).ok, false);
+  assert.equal(check("A1234567890", US.passport).ok, false);
+  assert.equal(check("2026-05-13", US.date_of_birth).ok, false);
+});
+test("ESTA: email up to 100 with the form's pattern; phone digits and spaces up to 20", () => {
+  assert.equal(check("a+b@example.com", US.email).ok, true);
+  assert.equal(check("a@b", US.email).ok, false);
+  assert.equal(check(`${"a".repeat(90)}@example.com`, US.email).ok, false);
+  assert.equal(check("20 7946 0958", US.phone).ok, true);
+  assert.equal(check("+44 20 7946 0958", US.phone).ok, false);
+  assert.equal(check("1".repeat(21), US.phone).ok, false);
+});
+
+const TR = rules("turkey");
+test("Türkiye e-Visa: dates are DD.MM.YYYY with the form's windows", () => {
+  assert.equal(check("15.09.2026", TR.arrival_date).ok, true);
+  assert.equal(check("2026-09-15", TR.arrival_date).ok, false);
+  assert.equal(check("11.05.2026", TR.arrival_date).ok, false);
+  assert.equal(check("22.08.1991", TR.date_of_birth).ok, true);
+  assert.equal(check("13.05.2026", TR.date_of_birth).ok, false);
+  assert.equal(check("13.05.2026", TR.passport_issue_date).ok, false);
+  assert.equal(check("11.05.2026", TR.passport_expiry).ok, false);
+  assert.equal(check("29.09.2033", TR.passport_expiry).ok, true);
+});
+test("Türkiye e-Visa: web form lengths for passport, email and address", () => {
+  assert.equal(check("A".repeat(20), TR.passport_number).ok, true);
+  assert.equal(check("A".repeat(21), TR.passport_number).ok, false);
+  assert.equal(check(`${"a".repeat(80)}@example.com`, TR.email).ok, true);
+  assert.equal(check(`${"a".repeat(90)}@example.com`, TR.email).ok, false);
+  assert.equal(check("A".repeat(51), TR.mothers_name).ok, false);
+});
+
+const CA = rules("canada");
+test("Canada eTA: date of birth up to today", () => {
+  assert.equal(check("2026-05-12", CA.date_of_birth).ok, true);
+  assert.equal(check("2026-05-13", CA.date_of_birth).ok, false);
+});
+
+const KH = rules("cambodia");
+test("Cambodia e-Arrival: m/d/yyyy dates, arrival today to 6 days ahead", () => {
+  assert.equal(check("5/12/2026", KH.arrival_date).ok, true);
+  assert.equal(check("05/18/2026", KH.arrival_date).ok, true);
+  assert.equal(check("05/19/2026", KH.arrival_date).ok, false);
+  assert.equal(check("12/05/2026", KH.arrival_date).ok, false);
+  assert.equal(check("2026-05-14", KH.arrival_date).ok, false);
+  assert.equal(check("8/22/1991", KH.date_of_birth).ok, true);
+  assert.equal(check("5/13/2026", KH.date_of_birth).ok, false);
+});
+test("Cambodia e-Arrival: names letters, digits and spaces; flight box digits only", () => {
+  assert.equal(check("SOK DARA", KH.full_name).ok, true);
+  assert.equal(check("O'BRIEN", KH.full_name).ok, false);
+  assert.equal(check("817", KH.flight_number).ok, true);
+  assert.equal(check("K6817", KH.flight_number).ok, false);
+});
+
+const ID = rules("indonesia");
+test("All Indonesia: DD/MM/YYYY dates; arrival from yesterday to 2 days ahead", () => {
+  assert.equal(check("22/08/1991", ID.date_of_birth).ok, true);
+  assert.equal(check("1991-08-22", ID.date_of_birth).ok, false);
+  assert.equal(check("13/05/2026", ID.date_of_birth).ok, false);
+  assert.equal(check("11/05/2026", ID.arrival_date).ok, true);
+  assert.equal(check("14/05/2026", ID.arrival_date).ok, true);
+  assert.equal(check("15/05/2026", ID.arrival_date).ok, false);
+  assert.equal(check("10/05/2026", ID.arrival_date).ok, false);
+});
+test("All Indonesia: full name letters and spaces only", () => {
+  assert.equal(check("PUTRI AYU", ID.full_name).ok, true);
+  assert.equal(check("O'BRIEN", ID.full_name).ok, false);
+});
+
+const JP = rules("japan");
+test("Visit Japan Web: arrival YYYY/MM/DD from today; capital-letter names", () => {
+  assert.equal(check("2026/05/12", JP.arrival_date).ok, true);
+  assert.equal(check("2026-05-12", JP.arrival_date).ok, false);
+  assert.equal(check("2026/05/11", JP.arrival_date).ok, false);
+  assert.equal(check("2026-05-13", JP.date_of_birth).ok, false);
+  assert.equal(check("YAMADA TARO", JP.full_name).ok, true);
+  assert.equal(check("SMITH-JONES", JP.full_name).ok, true);
+  assert.equal(check("yamada taro", JP.full_name).ok, false);
+  assert.equal(check("O'NEIL", JP.full_name).ok, false);
+});
+test("Visit Japan Web: passport up to 9, flight capitals and digits up to 20", () => {
+  assert.equal(check("TR1234567", JP.passport).ok, true);
+  assert.equal(check("TR12345678", JP.passport).ok, false);
+  assert.equal(check("JL5", JP.flight_number).ok, true);
+  assert.equal(check("JL 5", JP.flight_number).ok, false);
+  assert.equal(check("jl5", JP.flight_number).ok, false);
+  assert.equal(check("A".repeat(21), JP.flight_number).ok, false);
+});
+
+const KR = rules("korea");
+test("K-EAC: passport name letters and spaces; email box drops +", () => {
+  assert.equal(check("KIM MINJUN", KR.full_name).ok, true);
+  assert.equal(check("KIM-MINJUN", KR.full_name).ok, false);
+  assert.equal(check("2026-05-13", KR.date_of_birth).ok, false);
+  assert.equal(check("minjun@naver.com", KR.email).ok, true);
+  assert.equal(check("min+jun@naver.com", KR.email).ok, false);
+  // The form's own check is loose (its '\.' sits in a string, so it matches any character).
+  assert.equal(check("minjun.naver.com", KR.email).ok, false);
+});
+
+const MX = rules("mexico");
+test("FMM: dates DD/MM/YYYY; arrival today to 29 days ahead", () => {
+  assert.equal(check("12/05/2026", MX.arrival_date).ok, true);
+  assert.equal(check("10/06/2026", MX.arrival_date).ok, true);
+  assert.equal(check("11/06/2026", MX.arrival_date).ok, false);
+  assert.equal(check("11/05/2026", MX.arrival_date).ok, false);
+  assert.equal(check("2026-05-14", MX.arrival_date).ok, false);
+  assert.equal(check("22/08/1991", MX.date_of_birth).ok, true);
+  assert.equal(check("13/05/2026", MX.date_of_birth).ok, false);
+});
+test("FMM: ICAO names up to 100, passport up to 15, address up to 40, email without +", () => {
+  assert.equal(check("JOSÉ MARÍA", MX.given_name).ok, true);
+  assert.equal(check("O'NEIL", MX.family_name).ok, true);
+  assert.equal(check("SMITH-JONES", MX.family_name).ok, true);
+  assert.equal(check("JOHN  SMITH", MX.given_name).ok, false);
+  assert.equal(check("A".repeat(101), MX.given_name).ok, false);
+  assert.equal(check("G12345678", MX.passport).ok, true);
+  assert.equal(check("A".repeat(16), MX.passport).ok, false);
+  assert.equal(check("HOTEL RIU, AV. KUKULCAN 5", MX.destination_address).ok, true);
+  assert.equal(check("Hotel #5", MX.destination_address).ok, false);
+  assert.equal(check("A".repeat(41), MX.destination_address).ok, false);
+  assert.equal(check("john.doe@example.com", MX.email).ok, true);
+  assert.equal(check("john+doe@example.com", MX.email).ok, false);
+});
+
+const SG = rules("singapore");
+test("SG Arrival Card: DD/MM/YYYY; arrival today to 2 days ahead", () => {
+  assert.equal(check("12/05/2026", SG.arrival_date).ok, true);
+  assert.equal(check("14/05/2026", SG.arrival_date).ok, true);
+  assert.equal(check("15/05/2026", SG.arrival_date).ok, false);
+  assert.equal(check("22/08/1991", SG.date_of_birth).ok, true);
+  assert.equal(check("1991-08-22", SG.date_of_birth).ok, false);
+  assert.equal(check("13/05/2026", SG.date_of_birth).ok, false);
+});
+test("SG Arrival Card: name, passport, flight and email follow the form", () => {
+  assert.equal(check("TAN WEI MING", SG.full_name).ok, true);
+  assert.equal(check("O'NEIL-LEE (JR.)", SG.full_name).ok, true);
+  assert.equal(check("1TAN", SG.full_name).ok, false);
+  assert.equal(check("A".repeat(67), SG.full_name).ok, false);
+  assert.equal(check("K1234567A", SG.passport).ok, true);
+  assert.equal(check("A".repeat(21), SG.passport).ok, false);
+  assert.equal(check("32", SG.flight_number).ok, true);
+  assert.equal(check("SQ32", SG.flight_number).ok, false);
+  assert.equal(check("a@b.co", SG.email).ok, true);
+  assert.equal(check("a@b", SG.email).ok, false);
+  assert.equal(check(`${"a".repeat(95)}@b.com`, SG.email).ok, false);
+});

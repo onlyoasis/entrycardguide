@@ -56,4 +56,4 @@ Keep the SGAC acknowledgement and D/E number. An **e-Pass** is a different recor
 
 If an email is missing, check spam and the official retrieval/help options. Do not assume that submitting again is harmless or required after a fixed number of minutes. Use **Update SGAC** for changes while the record remains valid.
 
-The cards below are practical checks, not certified government regexes. The optional [local checker on the SGAC overview](/singapore/sgac/) applies this site's own limits and cannot submit or retrieve an ICA record.
+The cards below are practical checks. The optional [local checker on the SGAC overview](/singapore/sgac/) follows the field checks read from the live SG Arrival Card on 15 October 2026 and cannot submit or retrieve an ICA record.

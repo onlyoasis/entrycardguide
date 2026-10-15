@@ -6,3 +6,10 @@ summary = "Initial FMM coverage published"
 summary_zh = "墨西哥 FMM 指南首版上线"
 summary_zh_hant = "墨西哥 FMM 指南首版上線"
 detail = "Covers Mexico FMM/FMM-E official URLs, field guidance, and known commercial middleman patterns."
+
+[[entries]]
+date = "2026-10-15"
+summary = "Checker follows the live FMM: DD/MM/YYYY dates, 40-character address"
+summary_zh = "本地检查器按在线 FMM 更新：日期 DD/MM/YYYY，地址 40 字符"
+summary_zh_hant = "本地檢查器按線上 FMM 更新：日期 DD/MM/YYYY，地址 40 字符"
+detail = "Read the FMM application and validator scripts. Dates DD/MM/YYYY; arrival today to 29 days ahead. Names max 100 and accept accented Latin letters; passport number max 15; address in Mexico max 40, letters, digits and - . , \" ' only; email pattern from the form. The guide had said YYYY-MM-DD, 50-character names and a 200-character address."

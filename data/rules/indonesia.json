@@ -1,8 +1,8 @@
 {
   "country": "indonesia",
   "officialUrl": "https://allindonesia.imigrasi.go.id",
-  "lastVerified": "2026-06-11",
-  "source": "https://allindonesia.imigrasi.go.id and legacy https://ecd.beacukai.go.id (arrival declaration fields re-checked 2026-06-11)",
+  "lastVerified": "2026-10-15",
+  "source": "https://allindonesia.imigrasi.go.id (arrival card form: date picker, name and passport filters, flight boxes and arrival-date options read from its front-end in a browser, 2026-10-15) and legacy https://ecd.beacukai.go.id",
   "fields": {
     "passport": {
       "type": "passport",
@@ -25,13 +25,13 @@
       "label": "Full name (as in passport)",
       "required": true,
       "minLength": 1,
-      "maxLength": 80,
-      "help": "Exactly as shown on your passport (Latin letters only).",
+      "help": "Exactly as shown on your passport. The All Indonesia form keeps letters and spaces only and turns them into capitals.",
       "errors": {
         "required": "Full name is required",
         "tooLong": "Max 80 characters",
-        "invalidChars": "Use the Latin spelling from your passport — no accents or special characters"
-      }
+        "invalidChars": "Letters and spaces only — the form drops anything else"
+      },
+      "pattern": "^[A-Za-z\\s]+$"
     },
     "nationality": {
       "type": "nationality",
@@ -48,23 +48,24 @@
       "type": "date",
       "label": "Date of birth",
       "required": true,
-      "minDate": "1900-01-01",
-      "maxDate": "2026-12-31",
-      "placeholder": "1991-08-22",
-      "help": "Format: YYYY-MM-DD",
+      "minDate": "1920-01-01",
+      "placeholder": "22/08/1991",
+      "help": "DD/MM/YYYY, as the All Indonesia date picker shows it. The calendar runs from January 1920 to today.",
       "errors": {
         "required": "Date of birth is required",
-        "invalidFormat": "Use YYYY-MM-DD",
-        "tooEarly": "Date of birth seems too far in the past — double check",
-        "tooLate": "Date of birth cannot be in the future"
-      }
+        "invalidFormat": "Use DD/MM/YYYY",
+        "tooEarly": "The form's calendar starts in 1920 — double check",
+        "tooLate": "Date of birth cannot be later than today"
+      },
+      "format": "DD/MM/YYYY",
+      "maxDaysFromToday": 0
     },
     "flight_number": {
       "type": "flight",
       "label": "Flight or vessel number",
       "required": true,
       "placeholder": "GA456",
-      "help": "Airline 2-letter IATA code + flight number (e.g. GA456 for Garuda Indonesia, AK788 for AirAsia). For cruise, use the ship's identifier.",
+      "help": "The form has two boxes: the airline code (up to 3 characters, e.g. GA) and the flight number (up to 8), letters and digits only. Check them together here, e.g. GA456. For cruise, use the ship's identifier.",
       "errors": {
         "required": "Flight or vessel number is required",
         "invalidFormat": "Format: airline code + number (e.g. GA456). No spaces."
@@ -74,15 +75,17 @@
       "type": "date",
       "label": "Arrival date in Indonesia",
       "required": true,
-      "minDate": "2026-01-01",
-      "maxDate": "2027-12-31",
-      "placeholder": "2026-05-14",
-      "help": "Format: YYYY-MM-DD — the date you land in Indonesia (Jakarta time)",
+      "placeholder": "14/05/2026",
+      "help": "DD/MM/YYYY, the date you land in Indonesia. The form offers yesterday, today, tomorrow and the day after, so fill it in within 2 days of arrival.",
       "errors": {
         "required": "Arrival date is required",
-        "invalidFormat": "Use YYYY-MM-DD",
-        "tooLate": "Arrival date seems too far in the future"
-      }
+        "invalidFormat": "Use DD/MM/YYYY",
+        "tooLate": "Too early — the form takes arrivals up to 2 days ahead",
+        "tooEarly": "The form goes back only to yesterday"
+      },
+      "format": "DD/MM/YYYY",
+      "minDaysFromToday": -1,
+      "maxDaysFromToday": 2
     },
     "port_of_entry": {
       "type": "text",

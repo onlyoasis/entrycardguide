@@ -7,7 +7,7 @@ country: "indonesia"
 weight: 20
 keywords: ["印尼海關申報怎麼填", "All Indonesia 欄位", "巴厘島海關表欄位", "印尼海關申報幫助", "allindonesia.imigrasi.go.id 欄位"]
 layout: how-to-fill
-lastmod: 2026-10-12
+lastmod: 2026-10-15
 ---
 
 {{< official-link site="indonesia.ecd" >}}
@@ -42,7 +42,7 @@ lastmod: 2026-10-12
 
 ### 出生日期
 
-格式 `YYYY-MM-DD`。多數瀏覽器有日期選擇器；如要貼上，用 ISO 格式。
+格式 `DD/MM/YYYY`，與日期選擇器顯示一致。日曆範圍是 1920 年 1 月到今天。
 
 ## 第 2 部分：行程
 
@@ -56,7 +56,7 @@ lastmod: 2026-10-12
 
 ### 抵達日期
 
-格式 `YYYY-MM-DD`。落地印尼的日期，按**印尼本地時間**（雅加達時間，WIB）。
+格式 `DD/MM/YYYY`。落地印尼的日期，按**印尼本地時間**（雅加達時間，WIB）。表單提供昨天、今天和之後 2 天的選項。
 
 - 巴釐（DPS）屬於中部時區（WITA），比雅加達早 1 小時。表單一律用雅加達時間。
 - 紅眼陷阱：從新加坡晚 11 點起飛，凌晨 1 點落地巴釐，抵達日期是第二天。
@@ -136,7 +136,7 @@ QR Code 發到這裡。
 含空格、連字符，或貼上自 MRZ。用資料頁上的短號。
 
 **"Invalid date of arrival"（抵達日期無效）**
-你用了 `MM/DD/YYYY` 或 `DD/MM/YYYY`。用日期選擇器，或貼上 `YYYY-MM-DD`。
+你用了 `MM/DD/YYYY` 或 `YYYY-MM-DD`，或日期不在可選範圍內。用日期選擇器，它會填成 `DD/MM/YYYY`。
 
 **"Flight number not recognized"（航班號未識別）**
 最常見原因：共享航班代碼不對。看登機牌上的承運航司代碼。有時小航司有效航班也會被表單拒絕；遇到就手動輸入而不是從下拉選。

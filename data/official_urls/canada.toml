@@ -103,3 +103,10 @@ domain = "canadavisas.net"
 path = "/"
 first_observed = "2026-07-14"
 evidence = "Observed 2026-07-14: the page advertised a USD $99 final price, including a USD $93 service fee, and separately displayed a USD $6 government fee while its footer said the total included the CAD $7 fee. The official Canada.ca fee was CAD $7."
+
+[form_checks]
+url = "https://www.canada.ca/content/dam/ircc/migration/ircc/english/pdf/eta/english.pdf"
+name = "IRCC eTA help guide (PDF)"
+agency = "Immigration, Refugees and Citizenship Canada (IRCC)"
+last_verified = "2026-10-15"
+notes = "Read 2026-10-15; the online form sits behind a waiting room and was not opened. Dates are selected as on the passport; names in Roman letters with French accents, apostrophes and hyphens as printed; most passport numbers 8 to 11 letters and digits, no hyphens or spaces. No patterns or length limits are published."

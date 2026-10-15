@@ -1,89 +1,89 @@
 {
- "ui": {
-  "fix": "修正 ✗",
-  "ok": "正確 ✓"
- },
- "fields": {
-  "passport": {
-   "label": "護照號碼",
-   "help": "從你將持用的 VWP 電子護照原樣複製號碼。CBP 未公布固定長度，本檢查器接受較寬的英數範圍。",
-   "errors": {
-    "required": "請輸入護照號碼",
-    "tooShort": "請輸入照片頁上印刷的護照號碼",
-    "tooLong": "請檢查護照號碼——本機檢查器最多允許 20 個字元",
-    "invalidChars": "只能使用字母和數字",
-    "invalidFormat": "請輸入照片頁上印刷的字母與數字"
-   }
+  "ui": {
+    "fix": "修正 ✗",
+    "ok": "正確 ✓"
   },
-  "full_name": {
-   "label": "全名",
-   "help": "以護照顯示的拉丁拼寫填入所有姓與名。",
-   "errors": {
-    "required": "請輸入全名",
-    "tooShort": "請輸入護照上顯示的姓名",
-    "tooLong": "最多 80 個字元",
-    "invalidChars": "使用護照上的拉丁拼寫"
-   }
-  },
-  "date_of_birth": {
-   "label": "出生日期",
-   "help": "在本機檢查器中使用 YYYY-MM-DD 格式，與護照日期一致。",
-   "errors": {
-    "required": "請輸入出生日期",
-    "invalidFormat": "請使用 YYYY-MM-DD 格式",
-    "invalidMonth": "月份必須是 01–12",
-    "invalidDay": "日期不正確——請對照該月份天數檢查",
-    "invalid": "不是真實存在的日期",
-    "tooLate": "出生日期不能晚於 2026-07-13"
-   }
-  },
-  "email": {
-   "label": "電子郵件",
-   "help": "使用你自有的信箱。ESTA 需要驗證電子郵件，申請編號將寄到這裡。",
-   "errors": {
-    "required": "請輸入電子郵件",
-    "invalidFormat": "格式必須類似 name@example.com",
-    "tooLong": "電子郵件太長——本檢查器最多 254 個字元"
-   }
-  },
-  "phone": {
-   "label": "電話號碼",
-   "help": "包含國家/地區代碼。沒有電話時，CBP 允許填一個可接通的第三方聯絡電話。",
-   "errors": {
-    "required": "請輸入聯絡電話號碼",
-    "invalidFormat": "請包含國家代碼和 7–15 位數字"
-   }
-  },
-  "home_address": {
-   "label": "住家地址",
-   "help": "填寫目前的住家地址。CBP 將住家地址列為必填申請資訊。",
-   "errors": {
-    "required": "請輸入住家地址"
-   },
-   "placeholder": "街道、城市、地區、國家"
-  },
-  "employer": {
-   "label": "現任或前任僱主",
-   "help": "回答是或否。若「是」，請填 ESTA 要求的現任或前任僱主資訊；僱主地址與電話僅在有僱主可申報時適用。",
-   "errors": {
-    "required": "請回答是否有現任或前任僱主"
-   }
-  },
-  "us_contact": {
-   "label": "美國聯絡人",
-   "help": "可填朋友、親屬、商務聯絡人或你的住宿地點。不清楚時 CBP 允許填 UNKNOWN。",
-   "errors": {
-    "required": "請填美國聯絡人、住宿地點或 UNKNOWN"
-   },
-   "placeholder": "飯店名稱或 UNKNOWN"
-  },
-  "social_media": {
-   "label": "社群媒體",
-   "help": "官方 ESTA 可列印版申請將此區標為選填。可自行加社群識別碼、選擇「無網路帳號」，或留空。",
-   "errors": {
-    "required": "請回答社群媒體問題",
-    "invalidOption": "請選擇清單選項，或將此選填欄留空"
-   }
+  "fields": {
+    "passport": {
+      "label": "護照號碼",
+      "help": "照旅行用的免簽計畫電子護照逐字填寫：6 到 10 個字母或數字。ESTA 還會按簽發國格式檢查；多數國家最多 9 個字元。",
+      "errors": {
+        "required": "請輸入護照號碼",
+        "tooShort": "至少 6 個字元",
+        "tooLong": "最多 10 個字元",
+        "invalidChars": "只能使用字母和數字",
+        "invalidFormat": "須為 6 到 10 個字母或數字"
+      }
+    },
+    "full_name": {
+      "label": "全名",
+      "help": "ESTA 分姓（family name）和名（first name）兩格，各最多 45 個字元：字母、空格、撇號、連字號和逗號。所有名字都照護照上的拉丁拼寫填寫。",
+      "errors": {
+        "required": "請輸入全名",
+        "tooShort": "請輸入護照上顯示的姓名",
+        "tooLong": "最多 80 個字元",
+        "invalidChars": "只能用字母、空格、撇號、連字號和逗號"
+      }
+    },
+    "date_of_birth": {
+      "label": "出生日期",
+      "help": "與護照上的日期一致。這裡按 YYYY-MM-DD 檢查；ESTA 用日、月、年三個下拉選單選擇。",
+      "errors": {
+        "required": "請輸入出生日期",
+        "invalidFormat": "請使用 YYYY-MM-DD 格式",
+        "invalidMonth": "月份必須是 01–12",
+        "invalidDay": "日期不正確——請對照該月份天數檢查",
+        "invalid": "不是真實存在的日期",
+        "tooLate": "出生日期不能晚於今天"
+      }
+    },
+    "email": {
+      "label": "電子郵件",
+      "help": "使用你能收信的地址。ESTA 需要驗證電子郵件，申請編號也會寄到這裡。最多 100 個字元。",
+      "errors": {
+        "required": "請輸入電子郵件",
+        "invalidFormat": "格式必須類似 name@example.com",
+        "tooLong": "最多 100 個字元"
+      }
+    },
+    "phone": {
+      "label": "電話號碼",
+      "help": "國碼從 ESTA 的清單選。號碼欄只收數字和空格，最多 20 個字元。沒有電話時，CBP 允許填可聯絡到的第三方電話。",
+      "errors": {
+        "required": "請輸入聯絡電話號碼",
+        "invalidFormat": "只能用數字和空格，最多 20 個字元——國碼在另一個清單"
+      }
+    },
+    "home_address": {
+      "label": "住家地址",
+      "help": "填寫目前的住家地址。CBP 將住家地址列為必填申請資訊。",
+      "errors": {
+        "required": "請輸入住家地址"
+      },
+      "placeholder": "街道、城市、地區、國家"
+    },
+    "employer": {
+      "label": "現任或前任僱主",
+      "help": "回答是或否。若「是」，請填 ESTA 要求的現任或前任僱主資訊；僱主地址與電話僅在有僱主可申報時適用。",
+      "errors": {
+        "required": "請回答是否有現任或前任僱主"
+      }
+    },
+    "us_contact": {
+      "label": "美國聯絡人",
+      "help": "可填朋友、親屬、商務聯絡人或你的住宿地點。不清楚時 CBP 允許填 UNKNOWN。",
+      "errors": {
+        "required": "請填美國聯絡人、住宿地點或 UNKNOWN"
+      },
+      "placeholder": "飯店名稱或 UNKNOWN"
+    },
+    "social_media": {
+      "label": "社群媒體",
+      "help": "官方 ESTA 可列印版申請將此區標為選填。可自行加社群識別碼、選擇「無網路帳號」，或留空。",
+      "errors": {
+        "required": "請回答社群媒體問題",
+        "invalidOption": "請選擇清單選項，或將此選填欄留空"
+      }
+    }
   }
- }
 }

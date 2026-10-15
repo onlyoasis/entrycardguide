@@ -6,3 +6,10 @@ summary = "India guide published"
 summary_zh = "印度 e-Arrival Card 指南上线"
 summary_zh_hant = "印度 e-Arrival Card 指南上線"
 detail = "Adds the free official e-Arrival Card, the separate nationality-based e-Visa fees and authorized ports, field rules, and documented commercial middlemen."
+
+[[entries]]
+date = "2026-10-15"
+summary = "Checker follows the live e-Arrival form: DD/MM/YYYY arrival, 6-15 character passport, 5-15 digit phones"
+summary_zh = "本地检查器按在线 e-Arrival 表单更新：抵达日 DD/MM/YYYY，护照号 6–15 位，电话 5–15 位数字"
+summary_zh_hant = "本地檢查器按線上 e-Arrival 表單更新：抵達日 DD/MM/YYYY，護照號 6–15 位，電話 5–15 位數字"
+detail = "Read the e-Arrival form script and its arrival-date service. Arrival date DD/MM/YYYY, today to 4 days ahead on 15 October 2026. Full name letters and spaces, max 200; passport number letters and digits, 6 to 15; contact and emergency numbers 5 to 15 digits after a separate ISD code box; address max 500. Error messages are quoted from the form. The web form has no flight number or visa/OCI number box."

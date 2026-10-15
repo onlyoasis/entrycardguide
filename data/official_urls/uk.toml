@@ -139,3 +139,10 @@ url = "https://www.gov.uk/guidance/using-the-uk-eta-app#complete-the-application
 name = "Home Office application guidance"
 agency = "Home Office"
 last_verified = "2026-10-12"
+
+[form_checks]
+url = "https://apply-for-an-eta.homeoffice.gov.uk/form"
+name = "UK ETA web application"
+agency = "Home Office"
+last_verified = "2026-10-15"
+notes = "Read 2026-10-15 from the web form script; page questions and their checks are sent by the server per session and were not read. Shared checks: date of birth in the future -> 'Date of birth must be in the past'; email pattern -> 'Enter a real email address'. Dates are GOV.UK Day / Month / Year boxes."

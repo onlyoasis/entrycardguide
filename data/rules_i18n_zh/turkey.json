@@ -22,19 +22,19 @@
   },
   "arrival_date": {
    "label": "抵达土耳其日期",
-   "help": "填预计的首次抵达日期。电子签效力期间自官方申请中选择的日期起算。",
+   "help": "DD.MM.YYYY，与电子签日期选择器写法一致；日历从今天开始。填预计首次抵达日期。电子签效期从官方申请中选定的日期起算。",
    "errors": {
     "required": "请输入抵达日期",
-    "invalidFormat": "本机检查器请使用 YYYY-MM-DD 格式",
+    "invalidFormat": "请使用 DD.MM.YYYY 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
-    "tooEarly": "抵达日期不能早于 2026-07-14"
+    "tooEarly": "抵达日期不能早于今天"
    }
   },
   "given_names": {
    "label": "名（Given name(s)）",
-   "help": "输入护照上显示的所有名。官方团体指南设置含空格在内最多 50 字符。",
+   "help": "照护照填写所有名字，含空格最多 50 个字符。网页表单另有一格选填的第二个名字，同样最多 50 个字符。",
    "errors": {
     "required": "请输入名",
     "tooShort": "请输入护照上显示的名",
@@ -44,7 +44,7 @@
   },
   "surname": {
    "label": "姓（Surname(s)）",
-   "help": "原样输入护照上的姓。仅当护照没有姓时才留空。官方团体指南设置最多 50 字符。",
+   "help": "照护照逐字填写姓氏。只有护照上没有姓氏时才留空。最多 50 个字符。",
    "errors": {
     "required": "请输入姓",
     "tooShort": "请输入护照上显示的姓",
@@ -54,14 +54,14 @@
   },
   "date_of_birth": {
    "label": "出生日期",
-   "help": "与护照日期一致。本机检查器使用 YYYY-MM-DD；官方传输指南使用 YYYYMMDD。",
+   "help": "与护照上的日期一致。DD.MM.YYYY，与电子签日期选择器写法一致；日历最晚只到今天。",
    "errors": {
     "required": "请输入出生日期",
-    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidFormat": "请使用 DD.MM.YYYY 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
-    "tooLate": "出生日期不能晚于 2026-07-14"
+    "tooLate": "出生日期不能晚于今天"
    }
   },
   "place_of_birth": {
@@ -74,53 +74,53 @@
   },
   "mothers_name": {
    "label": "母亲姓名",
-   "help": "被要求时输入全部姓名。官方团体指南允许在未标示母亲姓名时留空，并设置最多 40 字符。",
+   "help": "需要时填写全部名字，网页表单最多 50 个字符（团体指南的传输档为 40）。团体指南允许母亲姓名未载明时留空。",
    "errors": {
     "required": "请输入母亲姓名",
     "tooShort": "请输入母亲姓名",
-    "tooLong": "母亲姓名不能超过 40 个字符",
+    "tooLong": "最多 50 个字符",
     "invalidChars": "只能使用拉丁字母、空格、短横或撇号"
    }
   },
   "fathers_name": {
    "label": "父亲姓名",
-   "help": "被要求时输入全部姓名。官方团体指南允许在未标示父亲姓名时留空，并设置最多 40 字符。",
+   "help": "需要时填写全部名字，网页表单最多 50 个字符（团体指南的传输档为 40）。团体指南允许父亲姓名未载明时留空。",
    "errors": {
     "required": "请输入父亲姓名",
     "tooShort": "请输入父亲姓名",
-    "tooLong": "父亲姓名不能超过 40 个字符",
+    "tooLong": "最多 50 个字符",
     "invalidChars": "只能使用拉丁字母、空格、短横或撇号"
    }
   },
   "passport_number": {
    "label": "旅行证件号码",
-   "help": "从先前选择的旅行证件原样复制号码。官方团体指南不允许空格与特殊字符，最多 16 字符。",
+   "help": "照前面选定的旅行证件逐字填写：字母和数字，不加空格或特殊字符。网页表单最多 20 个字符（团体指南的传输档为 16）。",
    "errors": {
     "required": "请输入旅行证件号码",
     "tooShort": "请输入证件上印刷的号码",
-    "tooLong": "旅行证件号码不能超过 16 个字符",
+    "tooLong": "最多 20 个字符",
     "invalidChars": "只能使用大写字母和数字，不含空格",
     "invalidFormat": "请输入证件上印刷的字母与数字"
    }
   },
   "passport_issue_date": {
    "label": "旅行证件签发日期",
-   "help": "与证件上的签发日期一致。本机检查器使用 YYYY-MM-DD。",
+   "help": "与旅行证件上的签发日期一致。DD.MM.YYYY；日历最晚只到今天。",
    "errors": {
     "required": "请输入签发日期",
-    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidFormat": "请使用 DD.MM.YYYY 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
-    "tooLate": "签发日期不能晚于 2026-07-14"
+    "tooLate": "签发日期不能晚于今天"
    }
   },
   "passport_expiry": {
    "label": "旅行证件效期",
-   "help": "与证件效期一致。土耳其一般要求效期至少比允许停留多 60 天，官方资格结果可能要求更多。",
+   "help": "DD.MM.YYYY。与证件到期日一致；日历从今天开始。土耳其一般要求证件效期比允许停留期多至少 60 天，官方资格结果可能要求更多。",
    "errors": {
     "required": "请输入证件效期",
-    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidFormat": "请使用 DD.MM.YYYY 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
@@ -129,16 +129,16 @@
   },
   "email": {
    "label": "电子邮件",
-   "help": "使用你自有的小写信箱。付款链接与电子签下载链接将以电子邮件寄送。官方团体指南设置最多 40 字符。",
+   "help": "使用你能收信的小写电子邮箱地址。付款链接与电子签下载链接都会寄到这里。网页表单最多 100 个字符（团体指南的传输档为 40）。",
    "errors": {
     "required": "请输入电子邮件",
     "invalidFormat": "格式必须类似 name@example.com",
-    "tooLong": "官方团体指南中电子邮件不能超过 40 个字符"
+    "tooLong": "最多 100 个字符"
    }
   },
   "phone": {
    "label": "电话号码",
-   "help": "包含国家/地区代码。官方团体指南显示上限 20 字符；本机检查器接受 7–15 位数的国际号码。",
+   "help": "国码或地区码从清单选。号码栏只保留数字，长度上限依该国号码而定（最多 15 位）。",
    "errors": {
     "required": "请输入电话号码",
     "invalidFormat": "请包含国家代码和 7–15 位数字",
@@ -147,10 +147,10 @@
   },
   "home_address": {
    "label": "居住地址",
-   "help": "填申请人目前的居住地址。官方团体指南设置含空格在内最多 200 字符。",
+   "help": "填申请人目前的居住地址，网页表单最多 100 个字符（团体指南的传输档为 200）。",
    "errors": {
     "required": "请输入居住地址",
-    "tooLong": "居住地址不能超过 200 个字符"
+    "tooLong": "最多 100 个字符"
    },
    "placeholder": "街道、城市、地区、国家"
   },
@@ -172,10 +172,10 @@
   },
   "supporting_document_expiry": {
    "label": "辅助证件效期",
-   "help": "辅助证件有到期日时，请填写该日期。它必须在官方电子签系统显示的条件下保持有效。",
+   "help": "DD.MM.YYYY。辅助证件有到期日时填写。它必须符合官方电子签系统显示的有效条件。",
    "errors": {
     "required": "请输入辅助证件效期",
-    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidFormat": "请使用 DD.MM.YYYY 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",

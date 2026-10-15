@@ -6,3 +6,10 @@ summary = "Initial Visit Japan Web coverage published"
 summary_zh = "日本 Visit Japan Web 指南首版上线"
 summary_zh_hant = "日本 Visit Japan Web 指南首版上線"
 detail = "Covers the Digital Agency service page, free Visit Japan Web workflow, and the difference between arrival QR workflows and visa services."
+
+[[entries]]
+date = "2026-10-15"
+summary = "Checker follows Visit Japan Web: passport up to 9 characters, YYYY/MM/DD arrival"
+summary_zh = "本地检查器按 Visit Japan Web 更新：护照号最多 9 位，入境日 YYYY/MM/DD"
+summary_zh_hant = "本地檢查器按 Visit Japan Web 更新：護照號最多 9 位，入境日 YYYY/MM/DD"
+detail = "Read the Visit Japan Web app script. Passport number capitals and digits, max 9; names capitals, digits, space and . , -; arrival date YYYY/MM/DD, not before today; flight number capitals and digits, max 20; email max 128."

@@ -1,23 +1,24 @@
 {
   "country": "singapore",
   "officialUrl": "https://eservices.ica.gov.sg/sgarrivalcard/",
-  "lastVerified": "2026-04-26",
-  "source": "https://eservices.ica.gov.sg/sgarrivalcard/ (HTML field attributes, scraped 2026-04-26)",
+  "lastVerified": "2026-10-15",
+  "source": "https://eservices.ica.gov.sg/arrivalcard/ (SG Arrival Card web form: date handling, arrival-date options and field validators read from its front-end, 2026-10-15)",
   "fields": {
     "passport": {
       "type": "passport",
       "label": "Passport number",
       "required": true,
-      "minLength": 6,
-      "maxLength": 12,
-      "pattern": "^[A-Z0-9]{6,12}$",
+      "minLength": 1,
+      "maxLength": 20,
+      "pattern": "^[A-Z0-9]{1,20}$",
       "placeholder": "A12345678",
-      "help": "Printed on the photo page of your passport. Letters and numbers only.",
+      "help": "Printed on the photo page of your passport. Letters and digits, up to 20.",
       "errors": {
         "required": "Passport number is required",
-        "tooShort": "Passport number too short — min 6 characters",
-        "tooLong": "Passport number too long — max 12 characters",
-        "invalidChars": "Letters and numbers only — no spaces or symbols"
+        "tooShort": "Enter the passport number",
+        "tooLong": "Passport number too long — max 20 characters",
+        "invalidChars": "Letters and numbers only — no spaces or symbols",
+        "invalidFormat": "Letters and digits only, up to 20"
       }
     },
     "full_name": {
@@ -25,13 +26,14 @@
       "label": "Full name (as in passport)",
       "required": true,
       "minLength": 1,
-      "maxLength": 80,
-      "help": "The current ICA Foreign Visitor form prompts given names followed by surname. This local checker applies its own length limit.",
+      "maxLength": 66,
+      "help": "Given names followed by surname, as the form prompts. Up to 66 characters, starting with a letter: letters, spaces and ' / . ( ) - @ , only.",
       "errors": {
         "required": "Full name is required",
-        "tooLong": "Max 80 characters",
-        "invalidChars": "Use the Latin spelling from your passport — no accents or special characters"
-      }
+        "tooLong": "Max 66 characters",
+        "invalidChars": "Start with a letter; letters, spaces and ' / . ( ) - @ , only"
+      },
+      "pattern": "^[A-Za-z][A-Za-z' /.()\\-@,]*$"
     },
     "nationality": {
       "type": "nationality",
@@ -49,53 +51,57 @@
       "label": "Date of birth",
       "required": true,
       "minDate": "1900-01-01",
-      "maxDate": "2026-12-31",
-      "placeholder": "1991-08-22",
-      "help": "Format: DD/MM/YYYY on the form, but accept YYYY-MM-DD here",
+      "placeholder": "22/08/1991",
+      "help": "DD/MM/YYYY, as the SG Arrival Card uses it. It cannot be later than today (Singapore time).",
       "errors": {
         "required": "Date of birth is required",
-        "invalidFormat": "Use YYYY-MM-DD",
+        "invalidFormat": "Use DD/MM/YYYY",
         "tooEarly": "Date of birth seems too far in the past — double check",
-        "tooLate": "Date of birth cannot be in the future"
-      }
+        "tooLate": "Date of birth cannot be later than today"
+      },
+      "format": "DD/MM/YYYY",
+      "maxDaysFromToday": 0
     },
     "passport_expiry": {
       "type": "date",
       "label": "Passport expiry date",
       "required": true,
-      "placeholder": "2030-08-22",
-      "help": "Check ICA passport-validity requirements for your travel document; Singapore passport holders have different requirements from foreign visitors.",
+      "placeholder": "22/08/2030",
+      "help": "DD/MM/YYYY. Check ICA passport-validity requirements for your travel document; Singapore passport holders have different requirements from foreign visitors.",
       "errors": {
         "required": "Passport expiry is required",
-        "invalidFormat": "Use YYYY-MM-DD",
+        "invalidFormat": "Use DD/MM/YYYY",
         "tooEarly": "Passport must be valid at least 6 months after arrival"
-      }
+      },
+      "format": "DD/MM/YYYY"
     },
     "flight_number": {
       "type": "flight",
       "label": "Flight or vessel number",
       "required": true,
-      "placeholder": "SQ32",
-      "help": "Airline 2-letter IATA code + flight number, no space (e.g. SQ32 for Singapore Airlines, TR123 for Scoot).",
+      "placeholder": "32",
+      "help": "Pick the airline code (e.g. SQ) from the form's list; the flight-number box takes digits only, so SQ32 is entered as SQ + 32.",
       "errors": {
         "required": "Flight number is required",
-        "invalidFormat": "Format: airline code + number (e.g. SQ32). No spaces."
-      }
+        "invalidFormat": "Digits only — the airline code is picked separately"
+      },
+      "pattern": "^[0-9]+$"
     },
     "arrival_date": {
       "type": "date",
       "label": "Arrival date",
       "required": true,
-      "minDate": "2026-01-01",
-      "maxDate": "2027-12-31",
-      "placeholder": "2026-05-14",
-      "help": "Format: YYYY-MM-DD — the date you arrive in Singapore (Singapore time)",
+      "placeholder": "14/05/2026",
+      "help": "DD/MM/YYYY — the date you arrive in Singapore. The form lists today and the next 2 days (Singapore time) to choose from.",
       "errors": {
         "required": "Arrival date is required",
-        "invalidFormat": "Use YYYY-MM-DD",
-        "tooEarly": "SGAC must be filed within 3 days before arrival",
-        "tooLate": "Arrival date seems too far in the future"
-      }
+        "invalidFormat": "Use DD/MM/YYYY",
+        "tooEarly": "Arrival date cannot be in the past",
+        "tooLate": "The SG Arrival Card opens 3 days before arrival — come back closer to the date"
+      },
+      "format": "DD/MM/YYYY",
+      "minDaysFromToday": 0,
+      "maxDaysFromToday": 2
     },
     "accommodation": {
       "type": "text",
@@ -113,14 +119,15 @@
       "type": "email",
       "label": "Email",
       "required": true,
-      "maxLength": 80,
+      "maxLength": 100,
       "placeholder": "name@example.com",
       "help": "Confirmation is sent here.",
       "errors": {
         "required": "Email is required",
         "invalidFormat": "Must look like name@example.com",
-        "tooLong": "Email too long — max 80 characters"
-      }
+        "tooLong": "Email too long — max 100 characters"
+      },
+      "pattern": "^[^\\s@]+@(?:[^\\s@.]+\\.)+[^\\s@.]+$"
     }
   }
 }

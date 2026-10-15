@@ -178,3 +178,10 @@ headline_zh_hant = "沒有任何提交記錄。"
 body_en = "File directly on the official .go.kr portal and keep the confirmation."
 body_zh = "直接在官方 .go.kr 门户提交，并保存确认页。"
 body_zh_hant = "直接在官方 .go.kr 門戶提交，並保存確認頁。"
+
+[form_checks]
+url = "https://www.e-arrivalcard.go.kr/portal/apply/agreementPolicy.do"
+name = "e-Arrival Card application entry page"
+agency = "Korea Immigration Service"
+last_verified = "2026-10-15"
+notes = "Read 2026-10-15 from the page's shared input script; the arrival card form opens only after an email confirmation and was not opened. Passport names keep letters and spaces and are turned into capitals; passport number letters and digits; typed dates become YYYY-MM-DD; email max 100, characters a-z 0-9 _ - @ . only, checked with the portal's own pattern ('The email format is incorrect. Please check again.')."

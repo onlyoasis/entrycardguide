@@ -13,3 +13,10 @@ summary = "Guide correction: name order, submission window and official service 
 summary_zh = "指南勘误：姓名顺序、提交窗口与官方服务入口"
 summary_zh_hant = "指南勘誤：姓名順序、提交窗口與官方服務入口"
 detail = "Checked ICA's current Foreign Visitor screen and guidance. Distinguished translated interface from English input, corrected resident land-checkpoint exemptions, and removed unsupported duplicate-submission advice. This records a guide correction, not a newly announced immigration policy."
+
+[[entries]]
+date = "2026-10-15"
+summary = "Checker follows the live SG Arrival Card field checks"
+summary_zh = "本地检查器按在线 SG Arrival Card 字段规则更新"
+summary_zh_hant = "本地檢查器按線上 SG Arrival Card 欄位規則更新"
+detail = "Read the SG Arrival Card scripts. Dates DD/MM/YYYY; arrival today to 2 days ahead (Singapore time); full name max 66, starting with a letter; passport number up to 20; flight number digits only after the airline is picked; email max 100 with the form's pattern."

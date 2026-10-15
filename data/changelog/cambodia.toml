@@ -6,3 +6,10 @@ summary = "Initial Cambodia e-Arrival coverage published"
 summary_zh = "柬埔寨 e-Arrival 指南首版上线"
 summary_zh_hant = "柬埔寨 e-Arrival 指南首版上線"
 detail = "Covers arrival.gov.kh, the free arrival declaration, and the distinction between arrival declaration and visa fees."
+
+[[entries]]
+date = "2026-10-15"
+summary = "Checker follows the live e-Arrival: M/D/YYYY dates, digits-only flight number"
+summary_zh = "本地检查器按在线 e-Arrival 更新：日期 M/D/YYYY，航班号只填数字"
+summary_zh_hant = "本地檢查器按線上 e-Arrival 更新：日期 M/D/YYYY，航班號只填數字"
+detail = "Read the e-Arrival submission module. Date boxes take m/d/yyyy; arrival today to 6 days ahead; date of birth up to today. Names take letters, digits and spaces. The flight number box takes digits only; the airline code is picked separately."

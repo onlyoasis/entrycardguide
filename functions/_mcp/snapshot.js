@@ -26922,9 +26922,9 @@ export default {
           "name": "All Indonesia arrival declaration (includes e-CD customs declaration)",
           "url": "https://allindonesia.imigrasi.go.id",
           "agency": "Direktorat Jenderal Imigrasi / Direktorat Jenderal Bea dan Cukai",
-          "lastVerified": "2026-10-12",
+          "lastVerified": "2026-10-15",
           "archiveUrl": "https://web.archive.org/web/2026/https://allindonesia.imigrasi.go.id",
-          "notes": "Reserved under .go.id. Current unified arrival portal for the Indonesia arrival declaration, including the e-CD customs declaration. Free. Re-checked 2026-10-12 in a browser: the portal is live, its help centre calls All Indonesia the official platform of the Directorate General of Immigration, and the foreign-visitor arrival card runs in 4 steps (personal information, trip details, transport and address, declaration) with no payment step."
+          "notes": "Reserved under .go.id. Current unified arrival portal for the Indonesia arrival declaration, including the e-CD customs declaration. Free. Re-checked 2026-10-12 in a browser: the portal is live, its help centre calls All Indonesia the official platform of the Directorate General of Immigration, and the foreign-visitor arrival card runs in 4 steps (personal information, trip details, transport and address, declaration) with no payment step. Field checks read 2026-10-15 from the form script: dates DD/MM/YYYY; date of birth from January 1920 to today; passport expiry from today; arrival yesterday, today, tomorrow or the day after; full name letters and spaces, turned into capitals; passport number letters and digits."
         },
         {
           "key": "evoa",
@@ -26950,7 +26950,7 @@ export default {
           "notes": "Legacy standalone e-CD portal still resolves. The current traveler-facing entry point is All Indonesia."
         }
       ],
-      "lastVerified": "2026-10-12"
+      "lastVerified": "2026-10-15"
     },
     {
       "slug": "malaysia",
@@ -27107,7 +27107,8 @@ export default {
           "name": "ICA enhanced SGAC service",
           "url": "https://eservices.ica.gov.sg/arrivalcard/sgac",
           "agency": "Immigration & Checkpoints Authority",
-          "lastVerified": "2026-10-12"
+          "lastVerified": "2026-10-15",
+          "notes": "Field checks read 2026-10-15 from the arrival card scripts: dates DD/MM/YYYY; arrival today to 2 days ahead, Singapore time; date of birth up to today; full name max 66, /^[A-Za-z][A-Za-z' /.()\\-@,]*$/; passport number max 20; flight number digits only after the airline is picked; email max 100, /^[^\\s@]+@(?:[^\\s@.]+\\.)+[^\\s@.]+$/; mobile number digits, max 12."
         },
         {
           "key": "arrival_date_help",
@@ -27131,7 +27132,7 @@ export default {
           "lastVerified": "2026-10-12"
         }
       ],
-      "lastVerified": "2026-10-12"
+      "lastVerified": "2026-10-15"
     },
     {
       "slug": "vietnam",
@@ -27182,9 +27183,17 @@ export default {
           "url": "https://www.xuatnhapcanh.gov.vn",
           "agency": "Vietnam Immigration Department",
           "lastVerified": "2026-10-12"
+        },
+        {
+          "key": "form_checks",
+          "name": "Vietnam e-Visa application form",
+          "url": "https://evisa.gov.vn/e-visa/foreigners",
+          "agency": "Vietnam Immigration Department (Cục Quản lý xuất nhập cảnh)",
+          "lastVerified": "2026-10-15",
+          "notes": "Read 2026-10-15 from the application scripts (step 1 and validation). All dates DD/MM/YYYY; date of birth up to today; passport expiry from today and at least 30 days after the e-Visa end date; e-Visa from today, at most 90 days. Surname and given names max 50 each, /^[A-Za-z\\s]+$/ ('Only Latin characters allowed, no special characters'), turned into capitals. Passport number /^[A-Z0-9]+$/, max 20. Email max 100 with the form's RFC-style pattern ('Email wrong format'). Address max 500."
         }
       ],
-      "lastVerified": "2026-10-12"
+      "lastVerified": "2026-10-15"
     },
     {
       "slug": "thailand",
@@ -27346,9 +27355,9 @@ export default {
           "name": "Forma Migratoria Múltiple Electrónica (FMM-E)",
           "url": "https://www.inm.gob.mx/fmme/publico/en/solicitud.html",
           "agency": "Instituto Nacional de Migración (INM)",
-          "lastVerified": "2026-10-05",
+          "lastVerified": "2026-10-15",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.inm.gob.mx/fmme/publico/en/solicitud.html",
-          "notes": "Reserved under .gob.mx — only Mexican government entities can register this domain suffix. Since 2023, most air arrivals at major airports receive a passport stamp instead of FMM; the electronic FMM is still used for land crossings and some other entry points."
+          "notes": "Reserved under .gob.mx — only Mexican government entities can register this domain suffix. Since 2023, most air arrivals at major airports receive a passport stamp instead of FMM; the electronic FMM is still used for land crossings and some other entry points. Field checks read 2026-10-15 from the application and common validator scripts: dates dd/mm/yyyy; arrival today to 29 days ahead; date of birth up to today; given names and surnames max 100 with the ICAO name pattern (accented Latin letters, single separators, or a lone _); document number /^[A-Z0-9\\-]+$/ max 15; address in Mexico /^[-A-Z0-9.,\"' ]*$/ max 40, turned into capitals; email pattern from the form, no +."
         },
         {
           "key": "inm_home",
@@ -27358,7 +27367,7 @@ export default {
           "lastVerified": "2026-10-05"
         }
       ],
-      "lastVerified": "2026-10-05"
+      "lastVerified": "2026-10-15"
     },
     {
       "slug": "japan",
@@ -27401,9 +27410,17 @@ export default {
           "url": "https://www.moj.go.jp/isa/index.html",
           "agency": "Immigration Services Agency of Japan",
           "lastVerified": "2026-10-12"
+        },
+        {
+          "key": "form_checks",
+          "name": "Visit Japan Web app",
+          "url": "https://www.vjw.digital.go.jp/main/",
+          "agency": "Digital Agency of Japan",
+          "lastVerified": "2026-10-15",
+          "notes": "Read 2026-10-15 from the app script. Passport number required, max 9, /^[A-Z0-9]*$/; family and given names required, max 39, /^[A-Z0-9 \\-.,]*$/; date of birth year, month and day fields; arrival date YYYY/MM/DD, from today to 31 December of next year; flight number max 20, /^[A-Z0-9]*$/; login email max 128."
         }
       ],
-      "lastVerified": "2026-10-12"
+      "lastVerified": "2026-10-15"
     },
     {
       "slug": "india",
@@ -27436,9 +27453,9 @@ export default {
           "name": "Official India e-Arrival Card",
           "url": "https://indianvisaonline.gov.in/earrival/",
           "agency": "Bureau of Immigration, Ministry of Home Affairs",
-          "lastVerified": "2026-10-12",
+          "lastVerified": "2026-10-15",
           "archiveUrl": "https://web.archive.org/web/2026/https://indianvisaonline.gov.in/earrival/",
-          "notes": "Verified 2026-07-14 against https://indianvisaonline.gov.in/earrival/, https://indianvisaonline.gov.in/, https://ociservices.gov.in/onlineOCI/onlineOCI/faq, and the Bureau of Immigration advisory at https://www.cgisf.gov.in/section/public-advisories/digitization-of-disembarkation-card-for-foreign-nationals-visiting-india/. The official form labels the service free of cost. Foreign nationals, including OCI cardholders, must submit it within the 72 hours before arrival; Indian passport holders are not foreign nationals and do not submit it. It records arrival information and does not replace a visa or OCI status. The current web form asks for identity, passport, purpose, arrival, recent travel, India address, contact, emergency-contact, and declaration information. Government mission notices also tell travellers to have flight and visa or OCI details ready; fields may vary by channel or prefilled record."
+          "notes": "Verified 2026-07-14 against https://indianvisaonline.gov.in/earrival/, https://indianvisaonline.gov.in/, https://ociservices.gov.in/onlineOCI/onlineOCI/faq, and the Bureau of Immigration advisory at https://www.cgisf.gov.in/section/public-advisories/digitization-of-disembarkation-card-for-foreign-nationals-visiting-india/. The official form labels the service free of cost. Foreign nationals, including OCI cardholders, must submit it within the 72 hours before arrival; Indian passport holders are not foreign nationals and do not submit it. It records arrival information and does not replace a visa or OCI status. The current web form asks for identity, passport, purpose, arrival, recent travel, India address, contact, emergency-contact, and declaration information. Government mission notices also tell travellers to have flight and visa or OCI details ready; fields may vary by channel or prefilled record. Field checks read 2026-10-15 from the form script and /arrivalcard/dcard/arrival/dates: arrival DD/MM/YYYY, today to 4 days ahead; full name letters and spaces, max 200; passport number /^[A-Za-z0-9]{6,15}$/; contact and emergency numbers /^\\d{5,15}$/ after an ISD code box (max 4 digits); address max 500, letters, digits, spaces and -#@:()/.,&_. No flight number or visa/OCI number box."
         },
         {
           "key": "evisa",
@@ -27450,7 +27467,7 @@ export default {
           "notes": "Verified 2026-07-14 against https://indianvisaonline.gov.in/evisa/tvoa.html and the official 09-July-2026 tourist-fee table at https://indianvisaonline.gov.in/evisa/images/Etourist_fee_final.pdf. The e-Visa is separate from the free e-Arrival Card. Fees vary by nationality and duration. Examples in the current table: Australia and Canada pay USD $10 for a 30-day tourist e-Visa from April to June or USD $25 from July to March, USD $40 for 1 year, and USD $200 for 5 years; the United States has the same 30-day and 1-year fees but USD $160 for 5 years; the United Kingdom has the same 30-day and 1-year fees but USD $484 for 5 years; Japan pays USD $10 or $25 for 30 days and USD $25 for either 1 or 5 years. Some nationalities are listed at USD $0. A 3% bank charge is additional. The official page currently permits first entry through 33 named airports and 19 named seaports; travellers may depart through any authorized Immigration Check Post. Check the live eligibility, fee table, and port list before paying."
         }
       ],
-      "lastVerified": "2026-10-12"
+      "lastVerified": "2026-10-15"
     },
     {
       "slug": "korea",
@@ -27574,6 +27591,14 @@ export default {
           "agency": "Korea Ministry of Justice",
           "lastVerified": "2026-10-15",
           "notes": "Read 2026-10-15. A separate system from the e-Arrival Card; a traveller with a valid K-ETA does not file the arrival card. Fee 10,000 KRW. FAQ Q23 and Q37 set the photo rule: colour JPG under 20 MB for the face photo and the passport bio page."
+        },
+        {
+          "key": "form_checks",
+          "name": "e-Arrival Card application entry page",
+          "url": "https://www.e-arrivalcard.go.kr/portal/apply/agreementPolicy.do",
+          "agency": "Korea Immigration Service",
+          "lastVerified": "2026-10-15",
+          "notes": "Read 2026-10-15 from the page's shared input script; the arrival card form opens only after an email confirmation and was not opened. Passport names keep letters and spaces and are turned into capitals; passport number letters and digits; typed dates become YYYY-MM-DD; email max 100, characters a-z 0-9 _ - @ . only, checked with the portal's own pattern ('The email format is incorrect. Please check again.')."
         }
       ],
       "lastVerified": "2026-10-15"
@@ -27609,12 +27634,12 @@ export default {
           "name": "Philippine eTravel",
           "url": "https://etravel.gov.ph",
           "agency": "Philippine Travel Information System",
-          "lastVerified": "2026-10-12",
+          "lastVerified": "2026-10-15",
           "archiveUrl": "https://web.archive.org/web/2026/https://etravel.gov.ph",
-          "notes": "Reserved under .gov.ph. The official homepage states that eTravel is free. Used for the Philippine electronic travel declaration before arrival or departure."
+          "notes": "Reserved under .gov.ph. The official homepage states that eTravel is free. Used for the Philippine electronic travel declaration before arrival or departure. Field checks read 2026-10-15 from the form scripts: dates MM/DD/YYYY (react-datepicker default), arrival today to 4 days ahead, date of birth up to today, passport number at least 5 characters."
         }
       ],
-      "lastVerified": "2026-10-12"
+      "lastVerified": "2026-10-15"
     },
     {
       "slug": "cambodia",
@@ -27647,9 +27672,9 @@ export default {
           "name": "Cambodia e-Arrival",
           "url": "https://arrival.gov.kh",
           "agency": "Cambodia General Department of Immigration",
-          "lastVerified": "2026-10-12",
+          "lastVerified": "2026-10-15",
           "archiveUrl": "https://web.archive.org/web/2026/https://arrival.gov.kh",
-          "notes": "Reserved under .gov.kh. The e-Arrival system combines arrival card, customs declaration, and health declaration flows. The arrival declaration itself is free; visa fees are separate when a visa is needed."
+          "notes": "Reserved under .gov.kh. The e-Arrival system combines arrival card, customs declaration, and health declaration flows. The arrival declaration itself is free; visa fees are separate when a visa is needed. Field checks read 2026-10-15 from the e-arrival submission module: arrival date placeholder m/d/yyyy, today to 6 days ahead; surname optional, given name required, names and passport number letters, digits and spaces; flight number digits only, airline code picked separately."
         },
         {
           "key": "evisa",
@@ -27693,9 +27718,9 @@ export default {
           "name": "Official ESTA Application",
           "url": "https://esta.cbp.dhs.gov/",
           "agency": "U.S. Customs and Border Protection (CBP)",
-          "lastVerified": "2026-10-12",
+          "lastVerified": "2026-10-15",
           "archiveUrl": "https://web.archive.org/web/2026/https://esta.cbp.dhs.gov/",
-          "notes": "Verified 2026-07-14 against https://esta.cbp.dhs.gov/, https://www.help.cbp.gov/s/article/Article-1437, and https://www.cbp.gov/newsroom/local-media-release/cbp-buffalo-reminder-esta-requirement-land-border-ports-entry. ESTA is a travel authorization, not a visa. The official site displays USD $40.27: a $4.00 processing fee plus $36.27 authorization fee charged only if approved (raised from $21.00 total on 2025-09-30). CBP says to apply when travel plans begin and no later than 72 hours before arrival. VWP travelers need ESTA for air, sea, and land entry. Approval is generally valid for 2 years or until the passport expires, whichever comes first; Brunei passports are limited to 1 year."
+          "notes": "Verified 2026-07-14 against https://esta.cbp.dhs.gov/, https://www.help.cbp.gov/s/article/Article-1437, and https://www.cbp.gov/newsroom/local-media-release/cbp-buffalo-reminder-esta-requirement-land-border-ports-entry. ESTA is a travel authorization, not a visa. The official site displays USD $40.27: a $4.00 processing fee plus $36.27 authorization fee charged only if approved (raised from $21.00 total on 2025-09-30). CBP says to apply when travel plans begin and no later than 72 hours before arrival. VWP travelers need ESTA for air, sea, and land entry. Approval is generally valid for 2 years or until the passport expires, whichever comes first; Brunei passports are limited to 1 year. Field checks read 2026-10-15 from the applicant page script: last and first names max 45, letters, spaces and ' - , plus typographic apostrophes and dashes; passport number 6 to 10, capitals and digits; date of birth Day/Month/Year lists, not after today; email max 100 with the form's pattern; phone max 20, digits and spaces, after a country code list."
         },
         {
           "key": "vwp_info",
@@ -27706,7 +27731,7 @@ export default {
           "notes": "Verified 2026-07-14. The State Department page lists 42 VWP countries and authorities. Eligible citizens or nationals may travel for tourism or business for 90 days or less if they meet every VWP requirement and hold an approved ESTA. ESTA is not a visa and does not guarantee admission."
         }
       ],
-      "lastVerified": "2026-10-12"
+      "lastVerified": "2026-10-15"
     },
     {
       "slug": "uk",
@@ -27765,9 +27790,17 @@ export default {
           "url": "https://www.gov.uk/guidance/using-the-uk-eta-app#complete-the-application",
           "agency": "Home Office",
           "lastVerified": "2026-10-12"
+        },
+        {
+          "key": "form_checks",
+          "name": "UK ETA web application",
+          "url": "https://apply-for-an-eta.homeoffice.gov.uk/form",
+          "agency": "Home Office",
+          "lastVerified": "2026-10-15",
+          "notes": "Read 2026-10-15 from the web form script; page questions and their checks are sent by the server per session and were not read. Shared checks: date of birth in the future -> 'Date of birth must be in the past'; email pattern -> 'Enter a real email address'. Dates are GOV.UK Day / Month / Year boxes."
         }
       ],
-      "lastVerified": "2026-10-12"
+      "lastVerified": "2026-10-15"
     },
     {
       "slug": "canada",
@@ -27811,9 +27844,17 @@ export default {
           "agency": "Immigration, Refugees and Citizenship Canada (IRCC)",
           "lastVerified": "2026-10-12",
           "notes": "Verified 2026-07-14. Visa-exempt foreign nationals generally need an eTA only for air travel. Some citizens of selected visa-required countries may qualify for an eTA for air travel if they meet the listed conditions; they still need a visitor visa for land or sea entry. Canadian citizens and permanent residents use Canadian documents instead of an eTA."
+        },
+        {
+          "key": "form_checks",
+          "name": "IRCC eTA help guide (PDF)",
+          "url": "https://www.canada.ca/content/dam/ircc/migration/ircc/english/pdf/eta/english.pdf",
+          "agency": "Immigration, Refugees and Citizenship Canada (IRCC)",
+          "lastVerified": "2026-10-15",
+          "notes": "Read 2026-10-15; the online form sits behind a waiting room and was not opened. Dates are selected as on the passport; names in Roman letters with French accents, apostrophes and hyphens as printed; most passport numbers 8 to 11 letters and digits, no hyphens or spaces. No patterns or length limits are published."
         }
       ],
-      "lastVerified": "2026-10-12"
+      "lastVerified": "2026-10-15"
     },
     {
       "slug": "new-zealand",
@@ -27858,9 +27899,17 @@ export default {
           "lastVerified": "2026-10-12",
           "archiveUrl": "https://web.archive.org/web/2026/https://nzeta.immigration.govt.nz/",
           "notes": "Verified 2026-07-14 against https://www.immigration.govt.nz/visas/new-zealand-electronic-travel-authority-nzeta/, https://www.immigration.govt.nz/visit/what-you-need-to-visit-new-zealand/nzeta-application-guide-for-citizens-of-china/, and https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/fees-processing-times-and-refunds/how-much-visa-applications-cost-and-when-to-pay/. NZeTA is a separate travel requirement from the free NZTD. It costs NZD $17 in the official app or NZD $23 on the official website. Most visitors also pay the NZD $100 International Visitor Conservation and Tourism Levy with the request; exemptions apply, including Australian permanent residents. A traveller NZeTA is valid for 2 years and may be used for multiple journeys. Visa-waiver air travellers, cruise or cargo ship passengers, Australian permanent residents, and some transit travellers need one. Australian citizens travelling on Australian passports do not need an NZeTA. Australian permanent residents normally do, unless they already hold a valid New Zealand visa."
+        },
+        {
+          "key": "form_checks",
+          "name": "NZTD application",
+          "url": "https://app.travellerdeclaration.govt.nz/",
+          "agency": "New Zealand Customs Service",
+          "lastVerified": "2026-10-15",
+          "notes": "Read 2026-10-15 from the app scripts and appSettings.json. includePassportExpiryDate is false, so the form does not ask for passport expiry. Names max 39, ^[a-zA-Z-\\s']+$, surname required and given names optional; passport number 3 to 9, ^[A-Z0-9]+$; date of birth up to today; air arrival today, tomorrow or the day after, or a typed date from yesterday (declaration can start 2 days before arrival); flight number /^(?=.{3,7}$)\\s*(?:3C|3U|D7|[A-Z]{2})[ -]?\\d{1,4}\\s*$/; email and phone patterns from the form."
         }
       ],
-      "lastVerified": "2026-10-12"
+      "lastVerified": "2026-10-15"
     },
     {
       "slug": "australia",
@@ -27948,9 +27997,9 @@ export default {
           "name": "Official Türkiye e-Visa Application",
           "url": "https://www.evisa.gov.tr/",
           "agency": "Republic of Türkiye Ministry of Foreign Affairs",
-          "lastVerified": "2026-10-12",
+          "lastVerified": "2026-10-15",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.evisa.gov.tr/",
-          "notes": "Verified 2026-07-14 against https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/, https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/, https://www.evisa.gov.tr/en/tour/thats/, and https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa. Check visa exemption before applying. Ordinary passport holders from the United States, United Kingdom, Canada, and Australia are currently visa-exempt for tourist visits up to 90 days in any 180-day period, so each has no current e-Visa price. Ordinary People's Republic of China passport holders are also visa-exempt for up to 90 days in any 180-day period from 2 January 2026, so China also has no current e-Visa price. These five requested representative quotes are therefore not applicable, not historical fee figures. For passports that remain eligible, the fee varies by nationality and the official system displays it only after nationality, travel-document type, and travel dates are selected; use the live quote. Some nationalities, including India, Bangladesh, Pakistan, and the Philippines, may obtain a 30-day single-entry e-Visa only when they meet added conditions such as holding a valid Schengen, US, UK, or Ireland visa or residence permit."
+          "notes": "Verified 2026-07-14 against https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/, https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/, https://www.evisa.gov.tr/en/tour/thats/, and https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa. Check visa exemption before applying. Ordinary passport holders from the United States, United Kingdom, Canada, and Australia are currently visa-exempt for tourist visits up to 90 days in any 180-day period, so each has no current e-Visa price. Ordinary People's Republic of China passport holders are also visa-exempt for up to 90 days in any 180-day period from 2 January 2026, so China also has no current e-Visa price. These five requested representative quotes are therefore not applicable, not historical fee figures. For passports that remain eligible, the fee varies by nationality and the official system displays it only after nationality, travel-document type, and travel dates are selected; use the live quote. Some nationalities, including India, Bangladesh, Pakistan, and the Philippines, may obtain a 30-day single-entry e-Visa only when they meet added conditions such as holding a valid Schengen, US, UK, or Ireland visa or residence permit. Field checks read 2026-10-15 from the Angular scripts: dates DD.MM.YYYY (flatpickr d.m.Y); date of birth and passport issue date up to today, passport expiry and arrival from today; first, second, last, mother's and father's names max 50, passport number max 20, address max 100, email max 100; phone digits only after a country code list. These web-form limits differ from the group e-Visa guide's transfer-file limits."
         },
         {
           "key": "mfa_visa_info",
@@ -27962,7 +28011,7 @@ export default {
           "notes": "Verified 2026-07-14. This is the Ministry of Foreign Affairs country-by-country source for visa exemption, direct e-Visa eligibility, conditional e-Visa eligibility, and sticker-visa requirements. Examples currently exempt for ordinary tourist passports include Germany, France, Italy, Spain, Belgium, Portugal, Switzerland, Norway, Denmark, Finland, Japan, South Korea, Hong Kong SAR, Singapore, Malaysia, the United Kingdom, the United States, Canada, Australia, and China. Stay limits and passport-type rules differ, so check the entry for the exact passport."
         }
       ],
-      "lastVerified": "2026-10-12"
+      "lastVerified": "2026-10-15"
     },
     {
       "slug": "sri-lanka",
@@ -30283,8 +30332,8 @@ export default {
     "indonesia": {
       "country": "indonesia",
       "officialUrl": "https://allindonesia.imigrasi.go.id",
-      "lastVerified": "2026-06-11",
-      "source": "https://allindonesia.imigrasi.go.id and legacy https://ecd.beacukai.go.id (arrival declaration fields re-checked 2026-06-11)",
+      "lastVerified": "2026-10-15",
+      "source": "https://allindonesia.imigrasi.go.id (arrival card form: date picker, name and passport filters, flight boxes and arrival-date options read from its front-end in a browser, 2026-10-15) and legacy https://ecd.beacukai.go.id",
       "fields": {
         "passport": {
           "type": "passport",
@@ -30307,13 +30356,13 @@ export default {
           "label": "Full name (as in passport)",
           "required": true,
           "minLength": 1,
-          "maxLength": 80,
-          "help": "Exactly as shown on your passport (Latin letters only).",
+          "help": "Exactly as shown on your passport. The All Indonesia form keeps letters and spaces only and turns them into capitals.",
           "errors": {
             "required": "Full name is required",
             "tooLong": "Max 80 characters",
-            "invalidChars": "Use the Latin spelling from your passport — no accents or special characters"
-          }
+            "invalidChars": "Letters and spaces only — the form drops anything else"
+          },
+          "pattern": "^[A-Za-z\\s]+$"
         },
         "nationality": {
           "type": "nationality",
@@ -30330,23 +30379,24 @@ export default {
           "type": "date",
           "label": "Date of birth",
           "required": true,
-          "minDate": "1900-01-01",
-          "maxDate": "2026-12-31",
-          "placeholder": "1991-08-22",
-          "help": "Format: YYYY-MM-DD",
+          "minDate": "1920-01-01",
+          "placeholder": "22/08/1991",
+          "help": "DD/MM/YYYY, as the All Indonesia date picker shows it. The calendar runs from January 1920 to today.",
           "errors": {
             "required": "Date of birth is required",
-            "invalidFormat": "Use YYYY-MM-DD",
-            "tooEarly": "Date of birth seems too far in the past — double check",
-            "tooLate": "Date of birth cannot be in the future"
-          }
+            "invalidFormat": "Use DD/MM/YYYY",
+            "tooEarly": "The form's calendar starts in 1920 — double check",
+            "tooLate": "Date of birth cannot be later than today"
+          },
+          "format": "DD/MM/YYYY",
+          "maxDaysFromToday": 0
         },
         "flight_number": {
           "type": "flight",
           "label": "Flight or vessel number",
           "required": true,
           "placeholder": "GA456",
-          "help": "Airline 2-letter IATA code + flight number (e.g. GA456 for Garuda Indonesia, AK788 for AirAsia). For cruise, use the ship's identifier.",
+          "help": "The form has two boxes: the airline code (up to 3 characters, e.g. GA) and the flight number (up to 8), letters and digits only. Check them together here, e.g. GA456. For cruise, use the ship's identifier.",
           "errors": {
             "required": "Flight or vessel number is required",
             "invalidFormat": "Format: airline code + number (e.g. GA456). No spaces."
@@ -30356,15 +30406,17 @@ export default {
           "type": "date",
           "label": "Arrival date in Indonesia",
           "required": true,
-          "minDate": "2026-01-01",
-          "maxDate": "2027-12-31",
-          "placeholder": "2026-05-14",
-          "help": "Format: YYYY-MM-DD — the date you land in Indonesia (Jakarta time)",
+          "placeholder": "14/05/2026",
+          "help": "DD/MM/YYYY, the date you land in Indonesia. The form offers yesterday, today, tomorrow and the day after, so fill it in within 2 days of arrival.",
           "errors": {
             "required": "Arrival date is required",
-            "invalidFormat": "Use YYYY-MM-DD",
-            "tooLate": "Arrival date seems too far in the future"
-          }
+            "invalidFormat": "Use DD/MM/YYYY",
+            "tooLate": "Too early — the form takes arrivals up to 2 days ahead",
+            "tooEarly": "The form goes back only to yesterday"
+          },
+          "format": "DD/MM/YYYY",
+          "minDaysFromToday": -1,
+          "maxDaysFromToday": 2
         },
         "port_of_entry": {
           "type": "text",
@@ -30583,23 +30635,24 @@ export default {
     "singapore": {
       "country": "singapore",
       "officialUrl": "https://eservices.ica.gov.sg/sgarrivalcard/",
-      "lastVerified": "2026-04-26",
-      "source": "https://eservices.ica.gov.sg/sgarrivalcard/ (HTML field attributes, scraped 2026-04-26)",
+      "lastVerified": "2026-10-15",
+      "source": "https://eservices.ica.gov.sg/arrivalcard/ (SG Arrival Card web form: date handling, arrival-date options and field validators read from its front-end, 2026-10-15)",
       "fields": {
         "passport": {
           "type": "passport",
           "label": "Passport number",
           "required": true,
-          "minLength": 6,
-          "maxLength": 12,
-          "pattern": "^[A-Z0-9]{6,12}$",
+          "minLength": 1,
+          "maxLength": 20,
+          "pattern": "^[A-Z0-9]{1,20}$",
           "placeholder": "A12345678",
-          "help": "Printed on the photo page of your passport. Letters and numbers only.",
+          "help": "Printed on the photo page of your passport. Letters and digits, up to 20.",
           "errors": {
             "required": "Passport number is required",
-            "tooShort": "Passport number too short — min 6 characters",
-            "tooLong": "Passport number too long — max 12 characters",
-            "invalidChars": "Letters and numbers only — no spaces or symbols"
+            "tooShort": "Enter the passport number",
+            "tooLong": "Passport number too long — max 20 characters",
+            "invalidChars": "Letters and numbers only — no spaces or symbols",
+            "invalidFormat": "Letters and digits only, up to 20"
           }
         },
         "full_name": {
@@ -30607,13 +30660,14 @@ export default {
           "label": "Full name (as in passport)",
           "required": true,
           "minLength": 1,
-          "maxLength": 80,
-          "help": "The current ICA Foreign Visitor form prompts given names followed by surname. This local checker applies its own length limit.",
+          "maxLength": 66,
+          "help": "Given names followed by surname, as the form prompts. Up to 66 characters, starting with a letter: letters, spaces and ' / . ( ) - @ , only.",
           "errors": {
             "required": "Full name is required",
-            "tooLong": "Max 80 characters",
-            "invalidChars": "Use the Latin spelling from your passport — no accents or special characters"
-          }
+            "tooLong": "Max 66 characters",
+            "invalidChars": "Start with a letter; letters, spaces and ' / . ( ) - @ , only"
+          },
+          "pattern": "^[A-Za-z][A-Za-z' /.()\\-@,]*$"
         },
         "nationality": {
           "type": "nationality",
@@ -30631,53 +30685,57 @@ export default {
           "label": "Date of birth",
           "required": true,
           "minDate": "1900-01-01",
-          "maxDate": "2026-12-31",
-          "placeholder": "1991-08-22",
-          "help": "Format: DD/MM/YYYY on the form, but accept YYYY-MM-DD here",
+          "placeholder": "22/08/1991",
+          "help": "DD/MM/YYYY, as the SG Arrival Card uses it. It cannot be later than today (Singapore time).",
           "errors": {
             "required": "Date of birth is required",
-            "invalidFormat": "Use YYYY-MM-DD",
+            "invalidFormat": "Use DD/MM/YYYY",
             "tooEarly": "Date of birth seems too far in the past — double check",
-            "tooLate": "Date of birth cannot be in the future"
-          }
+            "tooLate": "Date of birth cannot be later than today"
+          },
+          "format": "DD/MM/YYYY",
+          "maxDaysFromToday": 0
         },
         "passport_expiry": {
           "type": "date",
           "label": "Passport expiry date",
           "required": true,
-          "placeholder": "2030-08-22",
-          "help": "Check ICA passport-validity requirements for your travel document; Singapore passport holders have different requirements from foreign visitors.",
+          "placeholder": "22/08/2030",
+          "help": "DD/MM/YYYY. Check ICA passport-validity requirements for your travel document; Singapore passport holders have different requirements from foreign visitors.",
           "errors": {
             "required": "Passport expiry is required",
-            "invalidFormat": "Use YYYY-MM-DD",
+            "invalidFormat": "Use DD/MM/YYYY",
             "tooEarly": "Passport must be valid at least 6 months after arrival"
-          }
+          },
+          "format": "DD/MM/YYYY"
         },
         "flight_number": {
           "type": "flight",
           "label": "Flight or vessel number",
           "required": true,
-          "placeholder": "SQ32",
-          "help": "Airline 2-letter IATA code + flight number, no space (e.g. SQ32 for Singapore Airlines, TR123 for Scoot).",
+          "placeholder": "32",
+          "help": "Pick the airline code (e.g. SQ) from the form's list; the flight-number box takes digits only, so SQ32 is entered as SQ + 32.",
           "errors": {
             "required": "Flight number is required",
-            "invalidFormat": "Format: airline code + number (e.g. SQ32). No spaces."
-          }
+            "invalidFormat": "Digits only — the airline code is picked separately"
+          },
+          "pattern": "^[0-9]+$"
         },
         "arrival_date": {
           "type": "date",
           "label": "Arrival date",
           "required": true,
-          "minDate": "2026-01-01",
-          "maxDate": "2027-12-31",
-          "placeholder": "2026-05-14",
-          "help": "Format: YYYY-MM-DD — the date you arrive in Singapore (Singapore time)",
+          "placeholder": "14/05/2026",
+          "help": "DD/MM/YYYY — the date you arrive in Singapore. The form lists today and the next 2 days (Singapore time) to choose from.",
           "errors": {
             "required": "Arrival date is required",
-            "invalidFormat": "Use YYYY-MM-DD",
-            "tooEarly": "SGAC must be filed within 3 days before arrival",
-            "tooLate": "Arrival date seems too far in the future"
-          }
+            "invalidFormat": "Use DD/MM/YYYY",
+            "tooEarly": "Arrival date cannot be in the past",
+            "tooLate": "The SG Arrival Card opens 3 days before arrival — come back closer to the date"
+          },
+          "format": "DD/MM/YYYY",
+          "minDaysFromToday": 0,
+          "maxDaysFromToday": 2
         },
         "accommodation": {
           "type": "text",
@@ -30695,37 +30753,39 @@ export default {
           "type": "email",
           "label": "Email",
           "required": true,
-          "maxLength": 80,
+          "maxLength": 100,
           "placeholder": "name@example.com",
           "help": "Confirmation is sent here.",
           "errors": {
             "required": "Email is required",
             "invalidFormat": "Must look like name@example.com",
-            "tooLong": "Email too long — max 80 characters"
-          }
+            "tooLong": "Email too long — max 100 characters"
+          },
+          "pattern": "^[^\\s@]+@(?:[^\\s@.]+\\.)+[^\\s@.]+$"
         }
       }
     },
     "vietnam": {
       "country": "vietnam",
       "officialUrl": "https://evisa.gov.vn",
-      "lastVerified": "2026-06-11",
-      "source": "https://evisa.gov.vn and https://thithucdientu.gov.vn (official e-visa domains re-checked 2026-06-11)",
+      "lastVerified": "2026-10-15",
+      "source": "https://evisa.gov.vn/e-visa/foreigners (form fields and the front-end checks in its step-1 and validation modules, read 2026-10-15); https://thithucdientu.gov.vn is the Vietnamese-language twin",
       "fields": {
         "passport": {
           "type": "passport",
           "label": "Passport number",
           "required": true,
-          "minLength": 6,
-          "maxLength": 12,
-          "pattern": "^[A-Z0-9]{6,12}$",
+          "minLength": 1,
+          "maxLength": 20,
+          "pattern": "^[A-Z0-9]{1,20}$",
           "placeholder": "A12345678",
-          "help": "Printed on the photo page of your passport. Letters and numbers only.",
+          "help": "Printed on the photo page. Capital letters and digits only, up to 20. The e-visa form warns you to check the number when it is not 8 or 9 characters.",
           "errors": {
             "required": "Passport number is required",
-            "tooShort": "Passport number too short — min 6 characters",
-            "tooLong": "Passport number too long — max 12 characters",
-            "invalidChars": "Letters and numbers only — no spaces or symbols"
+            "tooShort": "Enter the passport number from the photo page",
+            "tooLong": "Passport number too long — max 20 characters",
+            "invalidChars": "Letters and numbers only — no spaces or symbols",
+            "invalidFormat": "Capital letters and digits only, up to 20"
           }
         },
         "full_name": {
@@ -30733,13 +30793,13 @@ export default {
           "label": "Full name (as in passport)",
           "required": true,
           "minLength": 1,
-          "maxLength": 80,
-          "help": "Exactly as shown on your passport (Latin letters only). Family name first, then given names — this matches Vietnamese name order convention.",
+          "help": "Exactly as on the passport's machine-readable (ICAO) line, surname first. The form has two boxes, Surname and Middle and given name, up to 50 characters each, letters and spaces only, and it turns them into capitals. If the passport shows only one name, it goes in the given-name box.",
           "errors": {
             "required": "Full name is required",
-            "tooLong": "Max 80 characters",
-            "invalidChars": "Use the Latin spelling from your passport — no accents or special characters"
-          }
+            "tooLong": "Each name box on the form takes up to 50 characters",
+            "invalidChars": "Only Latin characters allowed, no special characters"
+          },
+          "pattern": "^[A-Za-z\\s]+$"
         },
         "nationality": {
           "type": "nationality",
@@ -30757,27 +30817,30 @@ export default {
           "label": "Date of birth",
           "required": true,
           "minDate": "1900-01-01",
-          "maxDate": "2026-12-31",
-          "placeholder": "1991-08-22",
-          "help": "Format: DD/MM/YYYY on the form, but accept YYYY-MM-DD here",
+          "placeholder": "22/08/1991",
+          "help": "DD/MM/YYYY, as the e-visa calendar shows it. It cannot be later than today. If you only know the year, the form has a year-only option.",
           "errors": {
             "required": "Date of birth is required",
-            "invalidFormat": "Use YYYY-MM-DD",
+            "invalidFormat": "Use DD/MM/YYYY",
             "tooEarly": "Date of birth seems too far in the past — double check",
-            "tooLate": "Date of birth cannot be in the future"
-          }
+            "tooLate": "Date of birth cannot be later than today"
+          },
+          "format": "DD/MM/YYYY",
+          "maxDaysFromToday": 0
         },
         "passport_expiry": {
           "type": "date",
           "label": "Passport expiry date",
           "required": true,
-          "placeholder": "2030-08-22",
-          "help": "Must be at least 6 months after your planned arrival",
+          "placeholder": "22/08/2030",
+          "help": "DD/MM/YYYY. The e-visa form rejects an expired passport and needs it valid at least 30 days past the e-visa end date. Keep at least 6 months of validity after your planned arrival.",
           "errors": {
             "required": "Passport expiry is required",
-            "invalidFormat": "Use YYYY-MM-DD",
-            "tooEarly": "Passport must be valid at least 6 months after arrival"
-          }
+            "invalidFormat": "Use DD/MM/YYYY",
+            "tooEarly": "This passport has already expired"
+          },
+          "format": "DD/MM/YYYY",
+          "minDaysFromToday": 0
         },
         "intended_arrival": {
           "type": "date",
@@ -30785,13 +30848,14 @@ export default {
           "required": true,
           "minDate": "2026-01-01",
           "maxDate": "2027-12-31",
-          "placeholder": "2026-05-14",
-          "help": "Format: YYYY-MM-DD — when you plan to enter Vietnam. E-visa is valid for 90 days from this date.",
+          "placeholder": "14/05/2026",
+          "help": "DD/MM/YYYY — when you plan to enter Vietnam. The e-visa's own valid-from and valid-to dates are two more boxes on the form, at most 90 days apart and not before today.",
           "errors": {
             "required": "Intended date of entry is required",
-            "invalidFormat": "Use YYYY-MM-DD",
+            "invalidFormat": "Use DD/MM/YYYY",
             "tooLate": "Date too far in the future"
-          }
+          },
+          "format": "DD/MM/YYYY"
         },
         "port_of_entry": {
           "type": "text",
@@ -30830,14 +30894,15 @@ export default {
           "type": "email",
           "label": "Email",
           "required": true,
-          "maxLength": 80,
+          "maxLength": 100,
           "placeholder": "name@example.com",
-          "help": "Approval letter and e-visa PDF are sent here.",
+          "help": "Approval letter and e-visa PDF are sent here. Up to 100 characters; you type it twice, and the confirm box does not accept pasting.",
           "errors": {
             "required": "Email is required",
-            "invalidFormat": "Must look like name@example.com",
-            "tooLong": "Email too long — max 80 characters"
-          }
+            "invalidFormat": "Email wrong format — check the address",
+            "tooLong": "Email too long — max 100 characters"
+          },
+          "pattern": "^[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$"
         }
       }
     },
@@ -31121,23 +31186,24 @@ export default {
     "mexico": {
       "country": "mexico",
       "officialUrl": "https://www.inm.gob.mx/fmme/publico/en/solicitud.html",
-      "lastVerified": "2026-04-24",
-      "source": "https://www.inm.gob.mx/fmme/ (HTML field attributes, scraped 2026-04-24)",
+      "lastVerified": "2026-10-15",
+      "source": "https://www.inm.gob.mx/fmme/publico/en/solicitud.html (form HTML and its field checks in jquery.inm.fmme.solicitud and jquery.inm.common.validator, read 2026-10-15)",
       "fields": {
         "passport": {
           "type": "passport",
           "label": "Passport number",
           "required": true,
-          "minLength": 6,
-          "maxLength": 12,
-          "pattern": "^[A-Z0-9]{6,12}$",
+          "minLength": 1,
+          "maxLength": 15,
+          "pattern": "^[A-Z0-9]{1,15}$",
           "placeholder": "A12345678",
-          "help": "Printed on the photo page of your passport. Letters and numbers only.",
+          "help": "Printed on the photo page of your passport. Letters and digits, up to 15; the FMM asks for it twice and blocks pasting.",
           "errors": {
             "required": "Passport number is required",
-            "tooShort": "Passport number too short — min 6 characters",
-            "tooLong": "Passport number too long — max 12 characters",
-            "invalidChars": "Letters and numbers only — no spaces or symbols"
+            "tooShort": "Enter the passport number",
+            "tooLong": "Passport number too long — max 15 characters",
+            "invalidChars": "Letters and numbers only — no spaces or symbols",
+            "invalidFormat": "Letters and digits only, up to 15"
           }
         },
         "given_name": {
@@ -31145,26 +31211,28 @@ export default {
           "label": "Given name (Nombre)",
           "required": true,
           "minLength": 1,
-          "maxLength": 50,
-          "help": "Exactly as shown on your passport (Latin letters only)",
+          "maxLength": 100,
+          "help": "Exactly as shown on your passport. The FMM accepts Latin letters with accents (é, ñ, ü), single spaces, hyphens and apostrophes, up to 100 characters.",
           "errors": {
             "required": "Given name is required",
-            "tooLong": "Max 50 characters",
-            "invalidChars": "Use the Latin spelling from your passport — no accents"
-          }
+            "tooLong": "Max 100 characters",
+            "invalidChars": "Letters (accents allowed), single spaces, hyphens and apostrophes only"
+          },
+          "pattern": "^(?:[A-Za-zÑñÁÉÍÓÚáéíóúÀÈÌÒÙàèìòùÄËÏÖÜäëïöüÆÂÃÅÊÎÔÕØÛßÇç]+'?(?:(?:\\. |, |[ '-])[A-Za-zÑñÁÉÍÓÚáéíóúÀÈÌÒÙàèìòùÄËÏÖÜäëïöüÆÂÃÅÊÎÔÕØÛßÇç]+'?)*|_)$"
         },
         "family_name": {
           "type": "name",
           "label": "Family name (Apellidos)",
           "required": true,
           "minLength": 1,
-          "maxLength": 50,
-          "help": "Exactly as shown on your passport (Latin letters only)",
+          "maxLength": 100,
+          "help": "Exactly as shown on your passport. The FMM accepts Latin letters with accents (é, ñ, ü), single spaces, hyphens and apostrophes, up to 100 characters.",
           "errors": {
             "required": "Family name is required",
-            "tooLong": "Max 50 characters",
-            "invalidChars": "Use the Latin spelling from your passport — no accents"
-          }
+            "tooLong": "Max 100 characters",
+            "invalidChars": "Letters (accents allowed), single spaces, hyphens and apostrophes only"
+          },
+          "pattern": "^(?:[A-Za-zÑñÁÉÍÓÚáéíóúÀÈÌÒÙàèìòùÄËÏÖÜäëïöüÆÂÃÅÊÎÔÕØÛßÇç]+'?(?:(?:\\. |, |[ '-])[A-Za-zÑñÁÉÍÓÚáéíóúÀÈÌÒÙàèìòùÄËÏÖÜäëïöüÆÂÃÅÊÎÔÕØÛßÇç]+'?)*|_)$"
         },
         "nationality": {
           "type": "nationality",
@@ -31181,31 +31249,33 @@ export default {
           "type": "date",
           "label": "Date of birth",
           "required": true,
-          "minDate": "1900-01-01",
-          "maxDate": "2026-12-31",
-          "placeholder": "1991-08-22",
-          "help": "Format: YYYY-MM-DD",
+          "placeholder": "22/08/1991",
+          "help": "DD/MM/YYYY, day first, as the FMM's date boxes check. It cannot be later than today.",
           "errors": {
             "required": "Date of birth is required",
-            "invalidFormat": "Use YYYY-MM-DD (e.g. 1991-08-22)",
-            "tooEarly": "Date of birth seems too far in the past — double check",
-            "tooLate": "Date of birth cannot be in the future"
-          }
+            "invalidFormat": "Use DD/MM/YYYY (e.g. 22/08/1991)",
+            "tooEarly": "The FMM does not take a birth date about 110 years back or more",
+            "tooLate": "Date of birth cannot be later than today"
+          },
+          "format": "DD/MM/YYYY",
+          "minDaysFromToday": -40177,
+          "maxDaysFromToday": 0
         },
         "arrival_date": {
           "type": "date",
           "label": "Arrival date",
           "required": true,
-          "minDate": "2026-01-01",
-          "maxDate": "2027-12-31",
-          "placeholder": "2026-05-14",
-          "help": "Format: YYYY-MM-DD — the date you enter Mexico",
+          "placeholder": "14/05/2026",
+          "help": "DD/MM/YYYY — the date you enter Mexico. The FMM takes today through 29 days ahead, by the INM server's date.",
           "errors": {
             "required": "Arrival date is required",
-            "invalidFormat": "Use YYYY-MM-DD",
-            "tooEarly": "FMM-E is typically filed within 30 days of arrival",
-            "tooLate": "Arrival date seems too far in the future"
-          }
+            "invalidFormat": "Use DD/MM/YYYY",
+            "tooEarly": "Arrival date cannot be in the past",
+            "tooLate": "The FMM takes arrivals up to 29 days ahead"
+          },
+          "format": "DD/MM/YYYY",
+          "minDaysFromToday": 0,
+          "maxDaysFromToday": 29
         },
         "entry_point": {
           "type": "text",
@@ -31232,13 +31302,15 @@ export default {
           "type": "text",
           "label": "Address in Mexico",
           "required": true,
-          "maxLength": 200,
-          "placeholder": "Hotel name, street, city",
-          "help": "Where you will stay. Hotel name and city is enough for tourism.",
+          "maxLength": 40,
+          "placeholder": "Hotel name, street and number",
+          "help": "Where you will stay: hotel name, street and number, up to 40 characters. Letters, digits, spaces and - . , \" ' only; the FMM turns it into capitals.",
           "errors": {
             "required": "Address in Mexico is required",
-            "tooLong": "Max 200 characters"
-          }
+            "tooLong": "Max 40 characters",
+            "invalidFormat": "Letters, digits, spaces and - . , \" ' only"
+          },
+          "pattern": "^[-A-Za-z0-9.,\"' ]+$"
         },
         "email": {
           "type": "email",
@@ -31246,35 +31318,37 @@ export default {
           "required": true,
           "maxLength": 80,
           "placeholder": "name@example.com",
-          "help": "Your FMM PDF and reference number are sent here.",
+          "help": "Your FMM PDF and reference number are sent here. The FMM asks for it twice, blocks pasting, and does not accept + in the address.",
           "errors": {
             "required": "Email is required",
-            "invalidFormat": "Must look like name@example.com",
+            "invalidFormat": "Must look like name@example.com — letters, digits, dots, hyphens and underscores; no +",
             "tooLong": "Email too long — max 80 characters"
-          }
+          },
+          "pattern": "^([\\w-]+(?:\\.[\\w-]+)*)@((?:[\\w-]+\\.)*\\w[\\w-]{0,66})\\.([A-Za-z]{2,6}(?:\\.[A-Za-z]{2})?)$"
         }
       }
     },
     "japan": {
       "country": "japan",
       "officialUrl": "https://services.digital.go.jp/en/visit-japan-web/",
-      "lastVerified": "2026-06-11",
-      "source": "https://services.digital.go.jp/en/visit-japan-web/ (Digital Agency service page re-checked 2026-06-11)",
+      "lastVerified": "2026-10-15",
+      "source": "https://www.vjw.digital.go.jp/main/ (Visit Japan Web front-end: passport registration and entry-information checks, read 2026-10-15), plus https://services.digital.go.jp/en/visit-japan-web/ (Digital Agency service page)",
       "fields": {
         "passport": {
           "type": "passport",
           "label": "Passport number",
           "required": true,
-          "minLength": 6,
-          "maxLength": 12,
-          "pattern": "^[A-Z0-9]{6,12}$",
+          "minLength": 1,
+          "maxLength": 9,
+          "pattern": "^[A-Z0-9]{1,9}$",
           "placeholder": "A12345678",
-          "help": "Use the passport number from the photo page.",
+          "help": "Use the passport number from the photo page: capital letters and digits, up to 9 (e.g. AB1234567).",
           "errors": {
             "required": "Passport number is required",
-            "tooShort": "Passport number too short",
-            "tooLong": "Passport number too long",
-            "invalidChars": "Letters and numbers only"
+            "tooShort": "Enter the passport number",
+            "tooLong": "Max 9 characters",
+            "invalidChars": "Letters and numbers only",
+            "invalidFormat": "Capital letters and digits only, up to 9"
           }
         },
         "full_name": {
@@ -31282,63 +31356,67 @@ export default {
           "label": "Full name",
           "required": true,
           "minLength": 1,
-          "maxLength": 80,
           "placeholder": "TARO YAMADA",
-          "help": "Use the Latin passport spelling.",
+          "help": "VJW has two boxes, family name and given name, up to 39 characters each, in capital letters A–Z, digits, spaces and - . , only. Check the name here in the same capitals.",
           "errors": {
             "required": "Full name is required",
-            "tooLong": "Max 80 characters",
-            "invalidChars": "Use Latin letters only"
-          }
+            "tooLong": "Each name box on VJW takes up to 39 characters",
+            "invalidChars": "Capital letters A–Z, digits, spaces and - . , only"
+          },
+          "pattern": "^[A-Z0-9 .,-]+$"
         },
         "date_of_birth": {
           "type": "date",
           "label": "Date of birth",
           "required": true,
           "minDate": "1900-01-01",
-          "maxDate": "2026-12-31",
           "placeholder": "1991-08-22",
-          "help": "Use YYYY-MM-DD in this local checker.",
+          "help": "Checked here as YYYY-MM-DD; on VJW it is three boxes: year, month, day.",
           "errors": {
             "required": "Date of birth is required",
-            "invalidFormat": "Use YYYY-MM-DD"
-          }
+            "invalidFormat": "Use YYYY-MM-DD",
+            "tooLate": "Date of birth cannot be later than today"
+          },
+          "maxDaysFromToday": 0
         },
         "flight_number": {
           "type": "flight",
           "label": "Flight number",
           "required": true,
           "placeholder": "JL5",
-          "help": "Use the operating flight number.",
+          "help": "Capital letters and digits only, no space, up to 20 — e.g. JL5, not JL 5.",
           "errors": {
             "required": "Flight number is required",
-            "invalidFormat": "Use carrier code + number"
-          }
+            "invalidFormat": "Capital letters and digits only, no spaces (e.g. JL5)"
+          },
+          "pattern": "^[A-Z0-9]+$",
+          "maxLength": 20
         },
         "arrival_date": {
           "type": "date",
           "label": "Arrival date",
           "required": true,
-          "minDate": "2026-01-01",
-          "maxDate": "2028-12-31",
-          "placeholder": "2026-07-14",
-          "help": "Date you arrive in Japan.",
+          "placeholder": "2026/07/14",
+          "help": "YYYY/MM/DD, as VJW's date box hints. VJW takes today through 31 December of next year.",
           "errors": {
             "required": "Arrival date is required",
-            "invalidFormat": "Use YYYY-MM-DD"
-          }
+            "invalidFormat": "Use YYYY/MM/DD",
+            "tooEarly": "Arrival date cannot be in the past"
+          },
+          "format": "YYYY/MM/DD",
+          "minDaysFromToday": 0
         },
         "email": {
           "type": "email",
           "label": "Email",
           "required": true,
-          "maxLength": 80,
+          "maxLength": 128,
           "placeholder": "name@example.com",
-          "help": "Use the email tied to your Visit Japan Web account.",
+          "help": "Use the email tied to your Visit Japan Web account (up to 128 characters).",
           "errors": {
             "required": "Email is required",
             "invalidFormat": "Must look like name@example.com",
-            "tooLong": "Email too long — max 80 characters"
+            "tooLong": "Email too long — max 128 characters"
           }
         }
       }
@@ -31346,23 +31424,24 @@ export default {
     "india": {
       "country": "india",
       "officialUrl": "https://indianvisaonline.gov.in/earrival/",
-      "lastVerified": "2026-07-14",
-      "source": "https://indianvisaonline.gov.in/earrival/ (current official web form), https://indianvisaonline.gov.in/ and https://ociservices.gov.in/onlineOCI/onlineOCI/faq (72-hour window and OCI applicability), plus https://www.cgisf.gov.in/section/public-advisories/digitization-of-disembarkation-card-for-foreign-nationals-visiting-india/ and https://www.eoisaotome.gov.in/page/e-arrival-card-information/ (official government mission guidance); re-checked 2026-07-14. The current crawlable form directly shows full name, nationality, passport number, purpose, arrival date, countries visited in the last 6 days, India address, state, district, email, phone, emergency phone, and a truth declaration. Government mission guidance also tells travellers to have flight and visa or OCI details ready, so those two travel-document fields are retained here because the form may prefill or reveal them by route or record. The official sources publish no general name, passport, visa or OCI number, address, email, or phone length limits. This local checker therefore uses broad conservative limits and YYYY-MM-DD dates; these are local checks, not quoted government restrictions.",
+      "lastVerified": "2026-10-15",
+      "source": "https://indianvisaonline.gov.in/earrival/ (current web form; field limits and checks read from its front-end assets/index-DBv8aLuY.js, and the arrival-date range from the form's own date service, 2026-10-15), https://indianvisaonline.gov.in/ and https://ociservices.gov.in/onlineOCI/onlineOCI/faq (72-hour window and OCI applicability), plus https://www.cgisf.gov.in/section/public-advisories/digitization-of-disembarkation-card-for-foreign-nationals-visiting-india/ and https://www.eoisaotome.gov.in/page/e-arrival-card-information/ (official government mission guidance). The web form shows full name, nationality, passport number, purpose, arrival date, countries visited in the last 6 days, India address, state, district, email, phone and emergency phone (each with a separate ISD code box), and a truth declaration. Mission guidance also tells travellers to have flight and visa or OCI details ready, so those two fields are kept here although the web form read on 2026-10-15 did not show them.",
       "fields": {
         "full_name": {
           "type": "name",
           "label": "Full name as in passport",
           "required": true,
           "minLength": 1,
-          "maxLength": 100,
+          "maxLength": 200,
           "placeholder": "TARO KEN YAMADA",
-          "help": "Copy the full Latin-script name from the passport used to enter India. Do not shorten middle names.",
+          "help": "Copy the full Latin-script name from the passport used to enter India. Do not shorten middle names. The form keeps letters and spaces only, up to 200 characters.",
           "errors": {
             "required": "Full name is required",
             "tooShort": "Enter the name shown on the passport",
-            "tooLong": "Check the name; this local checker allows up to 100 characters",
-            "invalidChars": "Use the Latin spelling shown on the passport"
-          }
+            "tooLong": "Max 200 characters",
+            "invalidChars": "Letters and spaces only — the form drops anything else"
+          },
+          "pattern": "^[A-Za-z\\s]+$"
         },
         "nationality": {
           "type": "select",
@@ -31378,17 +31457,17 @@ export default {
           "type": "passport",
           "label": "Passport number",
           "required": true,
-          "minLength": 1,
-          "maxLength": 20,
-          "pattern": "^[A-Z0-9]{1,20}$",
+          "minLength": 6,
+          "maxLength": 15,
+          "pattern": "^[A-Z0-9]{6,15}$",
           "placeholder": "A12345678",
-          "help": "Copy the passport number from the photo page. The official form publishes no universal length limit, so this checker uses a broad alphanumeric range.",
+          "help": "Copy the passport number from the photo page: letters and digits, 6 to 15 characters.",
           "errors": {
             "required": "Passport number is required",
-            "tooShort": "Enter the passport number printed on the photo page",
-            "tooLong": "Check the passport number; this local checker allows up to 20 characters",
+            "tooShort": "Passport number must be alphanumeric with 6 to 15 characters",
+            "tooLong": "Passport number must be alphanumeric with 6 to 15 characters",
             "invalidChars": "Use letters and numbers only, with no spaces or MRZ filler marks",
-            "invalidFormat": "Use the letters and numbers printed as the passport number"
+            "invalidFormat": "Passport number must be alphanumeric with 6 to 15 characters"
           }
         },
         "visa_or_oci_number": {
@@ -31415,14 +31494,17 @@ export default {
           "type": "date",
           "label": "Date of arrival in India",
           "required": true,
-          "minDate": "2026-07-14",
-          "placeholder": "2026-09-15",
-          "help": "Use the local date you reach India. The official form displays DD/MM/YYYY; this local checker uses YYYY-MM-DD. Submit within the 72 hours before arrival.",
+          "placeholder": "15/09/2026",
+          "help": "DD/MM/YYYY, the local date you reach India, as the form's label shows. The form's calendar takes only the dates India's server allows; on 15 October 2026 that was today through 4 days ahead.",
           "errors": {
             "required": "Arrival date is required",
-            "invalidFormat": "Use YYYY-MM-DD in this local checker",
-            "tooEarly": "Arrival date cannot be before 2026-07-14"
-          }
+            "invalidFormat": "Use DD/MM/YYYY",
+            "tooEarly": "Arrival date cannot be in the past",
+            "tooLate": "The form's calendar went only 4 days ahead when checked — come back closer to the date"
+          },
+          "format": "DD/MM/YYYY",
+          "minDaysFromToday": 0,
+          "maxDaysFromToday": 4
         },
         "flight_number": {
           "type": "flight",
@@ -31450,10 +31532,14 @@ export default {
           "label": "Address in India",
           "required": true,
           "placeholder": "Hotel name, street, city",
-          "help": "Enter the full address of the first hotel, host, or residence in India, not only a city name.",
+          "help": "Enter the full address of the first hotel, host, or residence in India, not only a city name. Up to 500 characters; the form drops anything other than letters, digits, spaces and - # @ : ( ) / . , & _",
           "errors": {
-            "required": "An address in India is required"
-          }
+            "required": "An address in India is required",
+            "invalidFormat": "Use letters, digits, spaces and - # @ : ( ) / . , & _ only",
+            "tooLong": "Max 500 characters"
+          },
+          "pattern": "^[A-Za-z0-9\\s#@:()/.,&_-]+$",
+          "maxLength": 500
         },
         "state": {
           "type": "select",
@@ -31492,22 +31578,26 @@ export default {
           "type": "phone",
           "label": "Contact number",
           "required": true,
-          "placeholder": "+81 90 1234 5678",
-          "help": "Enter the country or region code and a number where Indian immigration can reach you.",
+          "placeholder": "9012345678",
+          "help": "The form has a separate ISD code box (up to 4 digits, e.g. 81). Type the number itself here: 5 to 15 digits, no + or spaces.",
           "errors": {
             "required": "Contact number is required",
-            "invalidFormat": "Include the country code and 7-15 digits"
-          }
+            "invalidFormat": "Mobile number must be 5 to 15 digits."
+          },
+          "pattern": "^\\d{5,15}$",
+          "maxLength": 15
         },
         "emergency_contact_number": {
           "type": "phone",
           "label": "Emergency contact number",
           "required": false,
-          "placeholder": "+81 80 9876 5432",
-          "help": "If provided, use a different reachable contact and include the country or region code.",
+          "placeholder": "8098765432",
+          "help": "If provided, use a different reachable contact. The ISD code goes in its own box; the number box takes 5 to 15 digits.",
           "errors": {
-            "invalidFormat": "Include the country code and 7-15 digits"
-          }
+            "invalidFormat": "Emergency contact number must be 5 to 15 digits."
+          },
+          "pattern": "^\\d{5,15}$",
+          "maxLength": 15
         },
         "declaration": {
           "type": "select",
@@ -31524,8 +31614,8 @@ export default {
     "korea": {
       "country": "korea",
       "officialUrl": "https://www.e-arrivalcard.go.kr/portal/main/index.do",
-      "lastVerified": "2026-06-11",
-      "source": "https://www.e-arrivalcard.go.kr/portal/main/index.do (official e-Arrival Card portal re-checked 2026-06-11)",
+      "lastVerified": "2026-10-15",
+      "source": "https://www.e-arrivalcard.go.kr/portal/main/index.do and the application entry page https://www.e-arrivalcard.go.kr/portal/apply/agreementPolicy.do (email box and the portal's shared input checks for passport number, passport name and dates, read 2026-10-15; the form behind the email step was not opened)",
       "fields": {
         "passport": {
           "type": "passport",
@@ -31548,27 +31638,28 @@ export default {
           "label": "Full name",
           "required": true,
           "minLength": 1,
-          "maxLength": 80,
           "placeholder": "KIM MINJUN",
-          "help": "Use the Latin spelling from your passport.",
+          "help": "Use the Latin spelling from your passport. The K-EAC passport-name boxes keep English letters and spaces only and turn them into capitals.",
           "errors": {
             "required": "Full name is required",
             "tooLong": "Max 80 characters",
-            "invalidChars": "Use Latin letters only"
-          }
+            "invalidChars": "English letters and spaces only — the form drops hyphens and other marks"
+          },
+          "pattern": "^[A-Za-z ]+$"
         },
         "date_of_birth": {
           "type": "date",
           "label": "Date of birth",
           "required": true,
           "minDate": "1900-01-01",
-          "maxDate": "2026-12-31",
           "placeholder": "1991-08-22",
-          "help": "Use YYYY-MM-DD in this local checker.",
+          "help": "YYYY-MM-DD — the K-EAC date boxes take digits and format them the same way.",
           "errors": {
             "required": "Date of birth is required",
-            "invalidFormat": "Use YYYY-MM-DD"
-          }
+            "invalidFormat": "Use YYYY-MM-DD",
+            "tooLate": "Date of birth cannot be later than today"
+          },
+          "maxDaysFromToday": 0
         },
         "flight_number": {
           "type": "flight",
@@ -31588,7 +31679,7 @@ export default {
           "minDate": "2026-01-01",
           "maxDate": "2028-12-31",
           "placeholder": "2026-07-14",
-          "help": "Date you arrive in Korea.",
+          "help": "YYYY-MM-DD, the date you arrive in Korea.",
           "errors": {
             "required": "Arrival date is required",
             "invalidFormat": "Use YYYY-MM-DD"
@@ -31598,35 +31689,36 @@ export default {
           "type": "email",
           "label": "Email",
           "required": true,
-          "maxLength": 80,
+          "maxLength": 100,
           "placeholder": "name@example.com",
-          "help": "Confirmation is sent here.",
+          "help": "Confirmation is sent here. The K-EAC email box keeps only letters, digits and _ - . @ — a + is dropped without warning, so use an address without one. Up to 100 characters, typed twice.",
           "errors": {
             "required": "Email is required",
-            "invalidFormat": "Must look like name@example.com",
-            "tooLong": "Email too long — max 80 characters"
-          }
+            "invalidFormat": "The email format is incorrect. Please check again. (No +)",
+            "tooLong": "Max 100 characters"
+          },
+          "pattern": "^(?=.*[A-Za-z0-9_-]@[A-Za-z0-9]+.[A-Za-z]{2,3})[A-Za-z0-9_.@-]+$"
         }
       }
     },
     "philippines": {
       "country": "philippines",
       "officialUrl": "https://etravel.gov.ph",
-      "lastVerified": "2026-09-04",
-      "source": "https://etravel.gov.ph — Data Policy (collected items), declaration form i18n catalog (field labels, MM/DD/YYYY date hint), FAQ (QR rules), re-checked 2026-09-04",
+      "lastVerified": "2026-10-15",
+      "source": "https://etravel.gov.ph — registration wizard front-end (date picker, profile and travel-detail checks) and the embedded field labels with the (MM/DD/YYYY) date hint, read 2026-10-15; Data Policy and FAQ re-checked 2026-09-04",
       "fields": {
         "passport": {
           "type": "passport",
           "label": "Passport Number",
           "required": true,
-          "minLength": 6,
+          "minLength": 5,
           "maxLength": 12,
-          "pattern": "^[A-Z0-9]{6,12}$",
+          "pattern": "^[A-Z0-9]{5,12}$",
           "placeholder": "A12345678",
-          "help": "Use the passport number from the photo page. No spaces or dashes.",
+          "help": "Use the passport number from the photo page. No spaces or dashes. eTravel needs at least 5 characters.",
           "errors": {
             "required": "Passport number is required",
-            "tooShort": "Passport number too short — min 6 characters",
+            "tooShort": "eTravel needs at least 5 characters",
             "tooLong": "Passport number too long — max 12 characters",
             "invalidChars": "Letters and numbers only — no spaces or symbols"
           }
@@ -31650,15 +31742,16 @@ export default {
           "label": "Date of birth",
           "required": true,
           "minDate": "1900-01-01",
-          "maxDate": "2026-12-31",
-          "placeholder": "1991-08-22",
-          "help": "The official form marks date fields (MM/DD/YYYY). This local checker takes YYYY-MM-DD.",
+          "placeholder": "08/22/1991",
+          "help": "MM/DD/YYYY, month first, as eTravel labels its date boxes. The calendar stops at today.",
           "errors": {
             "required": "Date of birth is required",
-            "invalidFormat": "Use YYYY-MM-DD",
+            "invalidFormat": "Use MM/DD/YYYY (month first)",
             "tooEarly": "Date of birth seems too far in the past",
-            "tooLate": "Date of birth cannot be in the future"
-          }
+            "tooLate": "Date of birth cannot be later than today"
+          },
+          "format": "MM/DD/YYYY",
+          "maxDaysFromToday": 0
         },
         "mobile_number": {
           "type": "phone",
@@ -31684,14 +31777,17 @@ export default {
           "type": "date",
           "label": "Arrival date",
           "required": true,
-          "minDate": "2026-01-01",
-          "maxDate": "2028-12-31",
-          "placeholder": "2026-07-14",
-          "help": "Date you land in Philippine local time. The form shows (MM/DD/YYYY); this checker takes YYYY-MM-DD. Registration opens 72 hours before arrival.",
+          "placeholder": "07/14/2026",
+          "help": "MM/DD/YYYY, the date you land in Philippine local time. Registration opens 72 hours before arrival; for an arrival the eTravel calendar offers today through 4 days ahead.",
           "errors": {
             "required": "Arrival date is required",
-            "invalidFormat": "Use YYYY-MM-DD"
-          }
+            "invalidFormat": "Use MM/DD/YYYY (month first)",
+            "tooEarly": "Arrival date cannot be in the past",
+            "tooLate": "The eTravel calendar goes only 4 days ahead — come back closer to the date"
+          },
+          "format": "MM/DD/YYYY",
+          "minDaysFromToday": 0,
+          "maxDaysFromToday": 4
         },
         "email": {
           "type": "email",
@@ -31711,8 +31807,8 @@ export default {
     "cambodia": {
       "country": "cambodia",
       "officialUrl": "https://arrival.gov.kh",
-      "lastVerified": "2026-06-11",
-      "source": "https://arrival.gov.kh (official e-Arrival portal re-checked 2026-06-11)",
+      "lastVerified": "2026-10-15",
+      "source": "https://arrival.gov.kh/e-arrival (e-Arrival submission form: date boxes, calendar range and field checks read from its front-end, 2026-10-15)",
       "fields": {
         "passport": {
           "type": "passport",
@@ -31735,51 +31831,57 @@ export default {
           "label": "Full name",
           "required": true,
           "minLength": 1,
-          "maxLength": 80,
           "placeholder": "JOHN SMITH",
-          "help": "Use the Latin passport spelling.",
+          "help": "Use the Latin passport spelling. The e-Arrival has a surname box (optional) and a given-name box, both letters, digits and spaces only.",
           "errors": {
             "required": "Full name is required",
             "tooLong": "Max 80 characters",
-            "invalidChars": "Use Latin letters only"
-          }
+            "invalidChars": "Letters, digits and spaces only"
+          },
+          "pattern": "^[A-Za-z0-9\\s]+$"
         },
         "date_of_birth": {
           "type": "date",
           "label": "Date of birth",
           "required": true,
           "minDate": "1900-01-01",
-          "maxDate": "2026-12-31",
-          "placeholder": "1991-08-22",
-          "help": "Use YYYY-MM-DD in this local checker.",
+          "placeholder": "8/22/1991",
+          "help": "Month first: the e-Arrival date boxes use m/d/yyyy. It cannot be later than today.",
           "errors": {
             "required": "Date of birth is required",
-            "invalidFormat": "Use YYYY-MM-DD"
-          }
+            "invalidFormat": "Use M/D/YYYY (month first)",
+            "tooLate": "Date of birth cannot be later than today"
+          },
+          "format": "MM/DD/YYYY",
+          "maxDaysFromToday": 0
         },
         "flight_number": {
           "type": "flight",
           "label": "Flight number",
           "required": true,
-          "placeholder": "K6817",
-          "help": "Use the operating flight number.",
+          "placeholder": "817",
+          "help": "Pick the airline from the e-Arrival list first; the flight-number box then takes digits only (K6 817 → 817).",
           "errors": {
             "required": "Flight number is required",
-            "invalidFormat": "Use carrier code + number"
-          }
+            "invalidFormat": "Digits only — the airline code is picked separately"
+          },
+          "pattern": "^[0-9]+$"
         },
         "arrival_date": {
           "type": "date",
           "label": "Arrival date",
           "required": true,
-          "minDate": "2026-01-01",
-          "maxDate": "2028-12-31",
-          "placeholder": "2026-07-14",
-          "help": "Date you arrive in Cambodia.",
+          "placeholder": "7/14/2026",
+          "help": "Month first (m/d/yyyy). The e-Arrival calendar offers today through 6 days ahead, by the server's date.",
           "errors": {
             "required": "Arrival date is required",
-            "invalidFormat": "Use YYYY-MM-DD"
-          }
+            "invalidFormat": "Use M/D/YYYY (month first)",
+            "tooEarly": "Arrival date cannot be in the past",
+            "tooLate": "The e-Arrival takes arrivals up to 6 days ahead — come back closer to the date"
+          },
+          "format": "MM/DD/YYYY",
+          "minDaysFromToday": 0,
+          "maxDaysFromToday": 6
         },
         "email": {
           "type": "email",
@@ -31799,24 +31901,24 @@ export default {
     "usa": {
       "country": "usa",
       "officialUrl": "https://esta.cbp.dhs.gov/",
-      "lastVerified": "2026-07-14",
-      "source": "https://esta.cbp.dhs.gov/ and https://esta.cbp.dhs.gov/download/app?hideClose=true (official CBP home and printable application), plus https://www.cbp.gov/sites/default/files/documents/Vol_49_No_17_Title.pdf (CBP mandatory-field notice); re-checked 2026-07-14. CBP publishes no passport-number length limit, so this local checker uses a broad 1-20 alphanumeric range instead of treating the plan's 6-15 range as official.",
+      "lastVerified": "2026-10-15",
+      "source": "https://esta.cbp.dhs.gov/ and https://esta.cbp.dhs.gov/download/app?hideClose=true (official CBP home and printable application), plus https://www.cbp.gov/sites/default/files/documents/Vol_49_No_17_Title.pdf (CBP mandatory-field notice); re-checked 2026-07-14. Field limits and patterns read from the ESTA application front-end on 2026-10-15: family and first name 45 characters each, passport number 6 to 10 (most issuing countries 9 at most, checked against the country's own format), email 100, phone number box digits and spaces up to 20 after a country-code list, and dates picked from day, month and year lists.",
       "fields": {
         "passport": {
           "type": "passport",
           "label": "Passport number",
           "required": true,
-          "minLength": 1,
-          "maxLength": 20,
-          "pattern": "^[A-Z0-9]{1,20}$",
+          "minLength": 6,
+          "maxLength": 10,
+          "pattern": "^[A-Z0-9]{6,10}$",
           "placeholder": "A12345678",
-          "help": "Copy the number exactly from the VWP e-passport used for travel. This checker accepts a broad alphanumeric range because CBP publishes no fixed length.",
+          "help": "Copy the number exactly from the VWP e-passport used for travel: 6 to 10 letters and digits. ESTA also checks the issuing country's own format; for most countries that means 9 characters at most.",
           "errors": {
             "required": "Passport number is required",
-            "tooShort": "Enter the passport number printed on the photo page",
-            "tooLong": "Check the passport number — this local checker allows up to 20 characters",
+            "tooShort": "At least 6 characters",
+            "tooLong": "Max 10 characters",
             "invalidChars": "Use letters and numbers only",
-            "invalidFormat": "Use the letters and numbers printed as the passport number"
+            "invalidFormat": "6 to 10 letters and digits"
           }
         },
         "full_name": {
@@ -31825,49 +31927,53 @@ export default {
           "required": true,
           "minLength": 1,
           "placeholder": "TARO YAMADA",
-          "help": "Enter every family and given name in the Latin spelling shown on the passport.",
+          "help": "ESTA has two boxes, family name and first (given) name, up to 45 characters each: letters, spaces, apostrophes, hyphens and commas. Enter every name in the Latin spelling shown on the passport.",
           "errors": {
             "required": "Full name is required",
             "tooShort": "Enter the name shown on the passport",
-            "invalidChars": "Use the Latin passport spelling"
-          }
+            "invalidChars": "Letters, spaces, apostrophes, hyphens and commas only"
+          },
+          "pattern": "^(?!\\s*$)[a-zA-Z '\\-,‘‛’′‵—–]*$"
         },
         "date_of_birth": {
           "type": "date",
           "label": "Date of birth",
           "required": true,
-          "maxDate": "2026-07-13",
           "placeholder": "1991-08-22",
-          "help": "Use YYYY-MM-DD in this local checker. Match the passport date.",
+          "help": "Match the passport date. Checked here as YYYY-MM-DD; ESTA asks it with three lists: day, month, year.",
           "errors": {
             "required": "Date of birth is required",
             "invalidFormat": "Use YYYY-MM-DD",
-            "tooLate": "Date of birth cannot be after 2026-07-13"
-          }
+            "tooLate": "Date of birth cannot be later than today"
+          },
+          "maxDaysFromToday": 0
         },
         "email": {
           "type": "email",
           "label": "Email",
           "required": true,
-          "maxLength": 254,
+          "maxLength": 100,
           "placeholder": "name@example.com",
-          "help": "Use an address you control. ESTA requires email verification and sends the application number here.",
+          "help": "Use an address you control. ESTA requires email verification and sends the application number here. Up to 100 characters.",
           "errors": {
             "required": "Email is required",
             "invalidFormat": "Must look like name@example.com",
-            "tooLong": "Email is too long — max 254 characters in this checker"
-          }
+            "tooLong": "Max 100 characters"
+          },
+          "pattern": "^[A-Za-z0-9.\\-_%!#$*/?|^~`'{}&+=‘‛’′‵—–]+@[A-Za-z0-9.\\-—–]+\\.[A-Za-z]+$"
         },
         "phone": {
           "type": "phone",
           "label": "Phone number",
           "required": true,
-          "placeholder": "+44 20 7946 0958",
-          "help": "Include the country code. If you have no phone, CBP permits a reachable third-party contact number.",
+          "placeholder": "20 7946 0958",
+          "help": "Pick the country code from ESTA's list. The number box takes digits and spaces, up to 20. If you have no phone, CBP permits a reachable third-party contact number.",
           "errors": {
             "required": "A contact phone number is required",
-            "invalidFormat": "Include country code and 7-15 digits"
-          }
+            "invalidFormat": "Digits and spaces only, up to 20 — the country code is a separate list"
+          },
+          "pattern": "^[0-9\\s]+$",
+          "maxLength": 20
         },
         "home_address": {
           "type": "text",
@@ -31912,8 +32018,8 @@ export default {
     "uk": {
       "country": "uk",
       "officialUrl": "https://www.gov.uk/eta",
-      "lastVerified": "2026-07-14",
-      "source": "https://www.gov.uk/eta/apply, https://www.gov.uk/guidance/using-the-uk-eta-app, and https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-electronic-travel-authorisation; re-checked 2026-07-14. GOV.UK confirms the passport, email, address, job, other-nationality, criminal-conviction, and conditional parental-contact steps. Passport photo, chip scan, face scan, and face photo are non-text steps and are excluded from this checker. The Home Office publishes no fixed passport-number or text-length limits for ETA, so this local checker uses broad conservative limits rather than presenting them as official.",
+      "lastVerified": "2026-10-15",
+      "source": "https://www.gov.uk/eta/apply, https://www.gov.uk/guidance/using-the-uk-eta-app, and https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-electronic-travel-authorisation (re-checked 2026-07-14), plus the online form at https://apply-for-an-eta.homeoffice.gov.uk/form (front-end read 2026-10-15: dates are GOV.UK Day, Month, Year boxes; its date-of-birth and email checks). GOV.UK confirms the passport, email, address, job, other-nationality, criminal-conviction, and conditional parental-contact steps. Passport photo, chip scan, face scan, and face photo are non-text steps and are excluded from this checker. The Home Office publishes no fixed passport-number or text-length limits for ETA, so this local checker uses broad conservative limits rather than presenting them as official.",
       "fields": {
         "passport": {
           "type": "passport",
@@ -31951,14 +32057,14 @@ export default {
           "type": "date",
           "label": "Date of birth",
           "required": true,
-          "maxDate": "2026-07-14",
           "placeholder": "1991-08-22",
-          "help": "Use YYYY-MM-DD in this local checker. Match the date shown on the passport.",
+          "help": "Match the date shown on the passport. Checked here as YYYY-MM-DD; the online form asks it in three boxes: Day, Month, Year.",
           "errors": {
             "required": "Date of birth is required",
             "invalidFormat": "Use YYYY-MM-DD",
-            "tooLate": "Date of birth cannot be after 2026-07-14"
-          }
+            "tooLate": "Date of birth must be in the past"
+          },
+          "maxDaysFromToday": 0
         },
         "email": {
           "type": "email",
@@ -31969,9 +32075,10 @@ export default {
           "help": "Use an inbox you control. The Home Office sends submission and decision emails, including the 16-digit ETA reference number.",
           "errors": {
             "required": "Email is required",
-            "invalidFormat": "Must look like name@example.com",
+            "invalidFormat": "Enter a real email address",
             "tooLong": "Email is too long — max 254 characters in this checker"
-          }
+          },
+          "pattern": "^(([^<>()[\\]\\\\.,;:\\s@\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$"
         },
         "home_address": {
           "type": "text",
@@ -32028,8 +32135,8 @@ export default {
     "canada": {
       "country": "canada",
       "officialUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html",
-      "lastVerified": "2026-07-14",
-      "source": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html and https://www.canada.ca/content/dam/ircc/migration/ircc/english/pdf/eta/english.pdf (official IRCC eTA help guide); re-checked 2026-07-14. The guide covers passport, name, birth, marital-status, employment, email, residential-address, optional travel-date, and background fields. IRCC says most passport numbers are 8-11 characters but does not make that a universal limit, so this local checker accepts a broad 1-20 alphanumeric range. The official form accepts Roman-script names including French accents; name entries therefore use non-restrictive text rules here instead of the site's narrower Latin-name validator.",
+      "lastVerified": "2026-10-15",
+      "source": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html and https://www.canada.ca/content/dam/ircc/migration/ircc/english/pdf/eta/english.pdf (official IRCC eTA help guide); re-checked 2026-07-14. The guide covers passport, name, birth, marital-status, employment, email, residential-address, optional travel-date, and background fields. IRCC says most passport numbers are 8-11 characters but does not make that a universal limit, so this local checker accepts a broad 1-20 alphanumeric range. The official form accepts Roman-script names including French accents; name entries therefore use non-restrictive text rules here instead of the site's narrower Latin-name validator. The help guide was re-read on 2026-10-15 (passport number p. 9, names p. 12, dates p. 13-14: dates are selected on the form, the travel date by year, month and day); the online form sits behind a waiting room and was not opened.",
       "fields": {
         "passport": {
           "type": "passport",
@@ -32072,14 +32179,14 @@ export default {
           "type": "date",
           "label": "Date of birth",
           "required": true,
-          "maxDate": "2026-07-14",
           "placeholder": "1991-08-22",
-          "help": "Use YYYY-MM-DD in this local checker. Match the passport date.",
+          "help": "Match the passport date. Checked here as YYYY-MM-DD; on the eTA form you select the date.",
           "errors": {
             "required": "Date of birth is required",
             "invalidFormat": "Use YYYY-MM-DD",
-            "tooLate": "Date of birth cannot be after 2026-07-14"
-          }
+            "tooLate": "Date of birth cannot be later than today"
+          },
+          "maxDaysFromToday": 0
         },
         "place_of_birth": {
           "type": "text",
@@ -32161,38 +32268,38 @@ export default {
     "new-zealand": {
       "country": "new-zealand",
       "officialUrl": "https://www.travellerdeclaration.govt.nz/",
-      "lastVerified": "2026-07-14",
-      "source": "https://www.travellerdeclaration.govt.nz/privacy/border-agencies-collecting-information/ and https://www.travellerdeclaration.govt.nz/completing-your-declaration/, plus https://www.customs.govt.nz/media/vuyeg3sf/customs-arrival-information-rules-2024.pdf (official NZTD field inventory, completion guidance, and prescribed information under the current Customs (Arrival Information) Rules 2024); re-checked 2026-07-14. The live form does not publish general web regexes, name or passport-number length limits, or a fixed typed date format. This local checker therefore uses broad passport and contact rules and ISO dates for consistency; these are local checks, not quoted government limits. Flight number is optional here because sea travellers receive vessel fields instead.",
+      "lastVerified": "2026-10-15",
+      "source": "https://app.travellerdeclaration.govt.nz/ (NZTD web app: field checks in its front-end and in assets/config/base/appSettings.json, read 2026-10-15), plus https://www.travellerdeclaration.govt.nz/privacy/border-agencies-collecting-information/, https://www.travellerdeclaration.govt.nz/completing-your-declaration/ and https://www.customs.govt.nz/media/vuyeg3sf/customs-arrival-information-rules-2024.pdf (field inventory, completion guidance and prescribed information, re-checked 2026-07-14). Dates on the NZTD are three boxes (day, month name, year), so this checker takes them as YYYY-MM-DD. The app setting that adds a passport-expiry question was off on 2026-10-15.",
       "fields": {
         "passport_number": {
           "type": "passport",
           "label": "Passport number",
           "required": true,
-          "minLength": 1,
-          "maxLength": 20,
-          "pattern": "^[A-Z0-9]{1,20}$",
+          "minLength": 3,
+          "maxLength": 9,
+          "pattern": "^[A-Z0-9]{3,9}$",
           "placeholder": "A12345678",
-          "help": "Copy the number from the passport you will use to enter New Zealand. This checker uses a broad alphanumeric range because NZTD publishes no universal web length limit.",
+          "help": "Copy the number from the passport you will use to enter New Zealand: 3 to 9 letters and digits, no spaces. The NZTD also checks New Zealand, Australian and German passports against their own formats.",
           "errors": {
             "required": "Passport number is required",
-            "tooShort": "Enter the passport number printed on the photo page",
-            "tooLong": "Check the passport number — this local checker allows up to 20 characters",
+            "tooShort": "At least 3 characters",
+            "tooLong": "Max 9 characters",
             "invalidChars": "Use letters and numbers only — no spaces or MRZ filler marks",
-            "invalidFormat": "Use the letters and numbers printed as the passport number"
+            "invalidFormat": "3 to 9 letters and digits"
           }
         },
         "passport_expiry": {
           "type": "date",
           "label": "Passport expiry date",
           "required": true,
-          "minDate": "2026-07-14",
           "placeholder": "2028-09-30",
-          "help": "Match the expiry date on the passport used to enter New Zealand. This local checker uses YYYY-MM-DD; use the official form's date controls when submitting.",
+          "help": "Match the expiry date on the passport used to enter New Zealand. Checked here as YYYY-MM-DD. The NZTD read on 15 October 2026 did not ask for it.",
           "errors": {
             "required": "Passport expiry date is required",
             "invalidFormat": "Use YYYY-MM-DD",
-            "tooEarly": "Passport expiry date cannot be before 2026-07-14"
-          }
+            "tooEarly": "This passport has already expired"
+          },
+          "minDaysFromToday": 0
         },
         "family_name": {
           "type": "name",
@@ -32200,38 +32307,44 @@ export default {
           "required": true,
           "minLength": 1,
           "placeholder": "YAMADA",
-          "help": "Use the English or Latin spelling shown in the passport you will use to enter New Zealand.",
+          "help": "Use the English or Latin spelling shown in the passport: letters, spaces, hyphens and apostrophes, up to 39 characters. If you have only one name, it goes here.",
           "errors": {
             "required": "Surname or family name is required",
             "tooShort": "Enter the surname or family name shown on the passport",
-            "invalidChars": "Use the English or Latin passport spelling"
-          }
+            "invalidChars": "Use the English or Latin passport spelling",
+            "tooLong": "Max 39 characters"
+          },
+          "maxLength": 39,
+          "pattern": "^[a-zA-Z\\s'-]+$"
         },
         "given_names": {
           "type": "name",
           "label": "Given name(s)",
-          "required": true,
+          "required": false,
           "minLength": 1,
           "placeholder": "TARO KEN",
-          "help": "Enter every given name from the passport used to enter New Zealand. Do not drop a middle given name.",
+          "help": "Enter every given name from the passport, up to 39 characters. Do not drop a middle given name. The NZTD leaves this box optional for people with a single name.",
           "errors": {
             "required": "Given name or names are required",
             "tooShort": "Enter the given name or names shown on the passport",
-            "invalidChars": "Use the English or Latin passport spelling"
-          }
+            "invalidChars": "Use the English or Latin passport spelling",
+            "tooLong": "Max 39 characters"
+          },
+          "maxLength": 39,
+          "pattern": "^[a-zA-Z\\s'-]+$"
         },
         "date_of_birth": {
           "type": "date",
           "label": "Date of birth",
           "required": true,
-          "maxDate": "2026-07-14",
           "placeholder": "1991-08-22",
-          "help": "Match the passport date. This local checker uses YYYY-MM-DD; use the official form's date controls when submitting.",
+          "help": "Match the passport date. Checked here as YYYY-MM-DD; on the NZTD it goes in three boxes: day, month (first three letters, e.g. Aug) and year.",
           "errors": {
             "required": "Date of birth is required",
             "invalidFormat": "Use YYYY-MM-DD",
-            "tooLate": "Date of birth cannot be after 2026-07-14"
-          }
+            "tooLate": "Date of birth cannot be later than today"
+          },
+          "maxDaysFromToday": 0
         },
         "country_of_birth": {
           "type": "text",
@@ -32257,14 +32370,16 @@ export default {
           "type": "date",
           "label": "Arrival date in New Zealand",
           "required": true,
-          "minDate": "2026-07-14",
           "placeholder": "2026-09-15",
-          "help": "Use the date your flight or vessel reaches New Zealand, not the date it leaves the first country. This local checker uses YYYY-MM-DD.",
+          "help": "The date your flight or vessel reaches New Zealand, not the date it leaves. For air travel the NZTD offers today, tomorrow and the day after (New Zealand time), or day, month and year boxes; a later date means it is too early to start. Checked here as YYYY-MM-DD.",
           "errors": {
             "required": "Arrival date is required",
             "invalidFormat": "Use YYYY-MM-DD",
-            "tooEarly": "Arrival date cannot be before 2026-07-14"
-          }
+            "tooEarly": "Arrival date cannot be before yesterday",
+            "tooLate": "Too early — the NZTD opens for arrivals within the next 2 days"
+          },
+          "minDaysFromToday": -1,
+          "maxDaysFromToday": 2
         },
         "arrival_method": {
           "type": "select",
@@ -32281,10 +32396,12 @@ export default {
           "label": "Flight number",
           "required": false,
           "placeholder": "NZ1",
-          "help": "Air travellers should enter the flight arriving in New Zealand. Sea travellers use the vessel and port fields instead. This checker accepts common airline-code and flight-number formats.",
+          "help": "Air travellers enter the flight that arrives in New Zealand: the two-character airline code and up to 4 digits, 3 to 7 characters, e.g. NZ1 or NZ 1. A 6-character booking reference is rejected. Sea travellers use the vessel fields instead.",
           "errors": {
             "invalidFormat": "Use the airline code and flight number, for example NZ1 or SQ285"
-          }
+          },
+          "maxLength": 7,
+          "pattern": "^(?=.{3,7}$)\\s*(?:3[Cc]|3[Uu]|[Dd]7|[A-Za-z]{2})[ -]?\\d{1,4}\\s*$"
         },
         "email": {
           "type": "email",
@@ -32292,23 +32409,25 @@ export default {
           "required": true,
           "maxLength": 254,
           "placeholder": "name@example.com",
-          "help": "Use an inbox you control. NZTD sends the reference number and submission information by email.",
+          "help": "Use an inbox you control. NZTD sends the reference number and submission information by email. The NZTD rejects two dots in a row or a dot next to the @.",
           "errors": {
             "required": "Email is required",
-            "invalidFormat": "Must look like name@example.com",
+            "invalidFormat": "Check the address — no spaces, no two dots in a row, no dot next to the @",
             "tooLong": "Email is too long — max 254 characters in this checker"
-          }
+          },
+          "pattern": "^(?!.*\\.\\.)[^@.\\s]([^@\\s]*[^@.\\s])?@[^@.\\s]+\\.[^@\\s]*[^@.\\s]$"
         },
         "phone": {
           "type": "phone",
           "label": "Contact phone number",
           "required": true,
-          "placeholder": "+81 90 1234 5678",
-          "help": "Include the country or region code for a number where you can be reached.",
+          "placeholder": "90 1234 5678",
+          "help": "Pick the country code in its own box. The number box takes digits, spaces, dashes and one pair of brackets, at least 5 characters, with no double spaces or dashes.",
           "errors": {
             "required": "Contact phone number is required",
-            "invalidFormat": "Include the country code and 7-15 digits"
-          }
+            "invalidFormat": "Digits, spaces, dashes and brackets only, at least 5 — no + (the country code is a separate box)"
+          },
+          "pattern": "^(?!.*[-\\s]{2})(?=(?:[^()]*\\([^()]*\\)[^()]*|[^()]*)$)[0-9()\\-\\s]{5,}(x\\d+)?$"
         },
         "nz_address": {
           "type": "text",
@@ -32485,8 +32604,8 @@ export default {
     "turkey": {
       "country": "turkey",
       "officialUrl": "https://www.evisa.gov.tr/",
-      "lastVerified": "2026-07-14",
-      "source": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/, https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/, https://www.evisa.gov.tr/en/tour/thats/, https://www.evisa.gov.tr/assets/files/guide_en.pdf, and https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa; re-checked 2026-07-14. The official flow first uses nationality, travel-document type, and arrival date to determine visa exemption, direct eligibility, conditional eligibility, or sticker-visa routing. The official group e-Visa guide then documents the applicant, passport, contact, address, and conditional supporting-document fields and publishes exact maximum lengths for those transferred fields. The local checker uses YYYY-MM-DD rather than the guide's compact YYYYMMDD transfer-file format. It uses the guide's published limits where available. The e-Visa flow can vary by nationality, so supporting-document fields are conditional and no local check can decide eligibility or price.",
+      "lastVerified": "2026-10-15",
+      "source": "https://www.evisa.gov.tr/en/apply/ (web form front-end read 2026-10-15: dates are DD.MM.YYYY from its date picker, name boxes 50, mother's and father's name 50, document number 20, address 100, email 100, phone digits after a country-code list), plus https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/, https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/, https://www.evisa.gov.tr/en/tour/thats/, https://www.evisa.gov.tr/assets/files/guide_en.pdf (group e-Visa guide, whose transfer file uses YYYYMMDD and its own limits), and https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa; re-checked 2026-07-14. The official flow first uses nationality, travel-document type, and arrival date to determine visa exemption, direct eligibility, conditional eligibility, or sticker-visa routing. The e-Visa flow can vary by nationality, so supporting-document fields are conditional and no local check can decide eligibility or price.",
       "fields": {
         "nationality": {
           "type": "select",
@@ -32512,14 +32631,15 @@ export default {
           "type": "date",
           "label": "Arrival date in Türkiye",
           "required": true,
-          "minDate": "2026-07-14",
-          "placeholder": "2026-09-15",
-          "help": "Enter the planned first arrival date. The e-Visa validity period begins from the date selected in the official application.",
+          "placeholder": "15.09.2026",
+          "help": "DD.MM.YYYY, as the e-Visa date picker writes it; the calendar starts at today. Enter the planned first arrival date. The e-Visa validity period begins from the date selected in the official application.",
           "errors": {
             "required": "Arrival date is required",
-            "invalidFormat": "Use YYYY-MM-DD in this local checker",
-            "tooEarly": "Arrival date cannot be before 2026-07-14"
-          }
+            "invalidFormat": "Use DD.MM.YYYY",
+            "tooEarly": "Arrival date cannot be in the past"
+          },
+          "format": "DD.MM.YYYY",
+          "minDaysFromToday": 0
         },
         "given_names": {
           "type": "name",
@@ -32528,7 +32648,7 @@ export default {
           "minLength": 1,
           "maxLength": 50,
           "placeholder": "TARO KEN",
-          "help": "Enter every given name as shown in the passport. The official group guide sets a 50-character maximum including spaces.",
+          "help": "Enter every given name as shown in the passport, up to 50 characters including spaces. The web form has a separate optional box for a second name, also 50.",
           "errors": {
             "required": "Given or first name is required",
             "tooShort": "Enter the given name shown on the passport",
@@ -32542,7 +32662,7 @@ export default {
           "required": false,
           "maxLength": 50,
           "placeholder": "YAMADA",
-          "help": "Enter the surname exactly as shown in the passport. Leave it blank only when the passport has no surname. The official group guide sets a 50-character maximum.",
+          "help": "Enter the surname exactly as shown in the passport. Leave it blank only when the passport has no surname. Max 50 characters.",
           "errors": {
             "tooLong": "Surname cannot exceed 50 characters",
             "invalidChars": "Use the Latin passport spelling"
@@ -32552,14 +32672,15 @@ export default {
           "type": "date",
           "label": "Date of birth",
           "required": true,
-          "maxDate": "2026-07-14",
-          "placeholder": "1991-08-22",
-          "help": "Match the passport date. This local checker uses YYYY-MM-DD; the official transfer guide uses YYYYMMDD.",
+          "placeholder": "22.08.1991",
+          "help": "Match the passport date. DD.MM.YYYY, as the e-Visa date picker writes it; the calendar stops at today.",
           "errors": {
             "required": "Date of birth is required",
-            "invalidFormat": "Use YYYY-MM-DD",
-            "tooLate": "Date of birth cannot be after 2026-07-14"
-          }
+            "invalidFormat": "Use DD.MM.YYYY",
+            "tooLate": "Date of birth cannot be later than today"
+          },
+          "format": "DD.MM.YYYY",
+          "maxDaysFromToday": 0
         },
         "place_of_birth": {
           "type": "text",
@@ -32577,11 +32698,11 @@ export default {
           "type": "name",
           "label": "Mother's name",
           "required": false,
-          "maxLength": 40,
+          "maxLength": 50,
           "placeholder": "HANAKO YAMADA",
-          "help": "Enter all names when requested. The official group guide allows this field to be blank when the mother's name is not indicated and sets a 40-character maximum.",
+          "help": "Enter all names when requested, up to 50 characters on the web form (the group guide's transfer file allows 40). The group guide allows this field to be blank when the mother's name is not indicated.",
           "errors": {
-            "tooLong": "Mother's name cannot exceed 40 characters",
+            "tooLong": "Max 50 characters",
             "invalidChars": "Use Latin letters, spaces, hyphens, or apostrophes"
           }
         },
@@ -32589,11 +32710,11 @@ export default {
           "type": "name",
           "label": "Father's name",
           "required": false,
-          "maxLength": 40,
+          "maxLength": 50,
           "placeholder": "ICHIRO YAMADA",
-          "help": "Enter all names when requested. The official group guide allows this field to be blank when the father's name is not indicated and sets a 40-character maximum.",
+          "help": "Enter all names when requested, up to 50 characters on the web form (the group guide's transfer file allows 40). The group guide allows this field to be blank when the father's name is not indicated.",
           "errors": {
-            "tooLong": "Father's name cannot exceed 40 characters",
+            "tooLong": "Max 50 characters",
             "invalidChars": "Use Latin letters, spaces, hyphens, or apostrophes"
           }
         },
@@ -32602,14 +32723,14 @@ export default {
           "label": "Travel document number",
           "required": true,
           "minLength": 1,
-          "maxLength": 16,
-          "pattern": "^[A-Z0-9]{1,16}$",
+          "maxLength": 20,
+          "pattern": "^[A-Z0-9]{1,20}$",
           "placeholder": "A12345678",
-          "help": "Copy the number exactly from the travel document selected earlier. The official group guide disallows spaces and special characters and sets a 16-character maximum.",
+          "help": "Copy the number exactly from the travel document selected earlier: letters and digits, no spaces or special characters. The web form takes up to 20 characters (the group guide's transfer file allows 16).",
           "errors": {
             "required": "Travel document number is required",
             "tooShort": "Enter the number printed on the travel document",
-            "tooLong": "Travel document number cannot exceed 16 characters",
+            "tooLong": "Max 20 characters",
             "invalidChars": "Use capital letters and numbers only, with no spaces",
             "invalidFormat": "Use the letters and numbers printed as the document number"
           }
@@ -32618,64 +32739,64 @@ export default {
           "type": "date",
           "label": "Travel document issue date",
           "required": true,
-          "maxDate": "2026-07-14",
-          "placeholder": "2023-09-30",
-          "help": "Match the issue date on the travel document. This local checker uses YYYY-MM-DD.",
+          "placeholder": "30.09.2023",
+          "help": "Match the issue date on the travel document. DD.MM.YYYY; the calendar stops at today.",
           "errors": {
             "required": "Travel document issue date is required",
-            "invalidFormat": "Use YYYY-MM-DD",
-            "tooLate": "Issue date cannot be after 2026-07-14"
-          }
+            "invalidFormat": "Use DD.MM.YYYY",
+            "tooLate": "Issue date cannot be later than today"
+          },
+          "format": "DD.MM.YYYY",
+          "maxDaysFromToday": 0
         },
         "passport_expiry": {
           "type": "date",
           "label": "Travel document expiry date",
           "required": true,
-          "minDate": "2026-07-14",
-          "placeholder": "2033-09-29",
-          "help": "Match the document expiry date. Türkiye generally requires validity at least 60 days beyond the permitted stay, and the official eligibility result can impose more.",
+          "placeholder": "29.09.2033",
+          "help": "DD.MM.YYYY. Match the document expiry date; the calendar starts at today. Türkiye generally requires validity at least 60 days beyond the permitted stay, and the official eligibility result can impose more.",
           "errors": {
             "required": "Travel document expiry date is required",
-            "invalidFormat": "Use YYYY-MM-DD",
+            "invalidFormat": "Use DD.MM.YYYY",
             "tooEarly": "Travel document is already expired"
-          }
+          },
+          "format": "DD.MM.YYYY",
+          "minDaysFromToday": 0
         },
         "email": {
           "type": "email",
           "label": "Email",
           "required": true,
-          "maxLength": 40,
+          "maxLength": 100,
           "placeholder": "name@example.com",
-          "help": "Use a lowercase email address you control. The payment link and e-Visa download link are sent by email. The official group guide sets a 40-character maximum.",
+          "help": "Use a lowercase email address you control. The payment link and e-Visa download link are sent by email. The web form takes up to 100 characters (the group guide's transfer file allows 40).",
           "errors": {
             "required": "Email is required",
             "invalidFormat": "Must look like name@example.com",
-            "tooLong": "Email cannot exceed 40 characters in the official group guide"
+            "tooLong": "Max 100 characters"
           }
         },
         "phone": {
           "type": "phone",
           "label": "Phone number",
           "required": true,
-          "maxLength": 20,
           "placeholder": "+91 98765 43210",
-          "help": "Include the country or region code. The official group guide sets a 20-character display maximum; this local checker accepts an international number with 7-15 digits.",
+          "help": "Pick the country or region code from the list. The number box keeps digits only, up to the length of that country's numbers (15 at most).",
           "errors": {
             "required": "Phone number is required",
-            "invalidFormat": "Include the country code and 7-15 digits",
-            "tooLong": "Phone number cannot exceed 20 displayed characters"
+            "invalidFormat": "Include the country code and 7-15 digits"
           }
         },
         "home_address": {
           "type": "text",
           "label": "Residence address",
           "required": true,
-          "maxLength": 200,
+          "maxLength": 100,
           "placeholder": "Street, city, region, country",
-          "help": "Enter the applicant's current residence address. The official group guide sets a 200-character maximum including spaces.",
+          "help": "Enter the applicant's current residence address, up to 100 characters on the web form (the group guide's transfer file allows 200).",
           "errors": {
             "required": "Residence address is required",
-            "tooLong": "Residence address cannot exceed 200 characters"
+            "tooLong": "Max 100 characters"
           }
         },
         "supporting_document_type": {
@@ -32700,13 +32821,12 @@ export default {
           "type": "date",
           "label": "Supporting document expiry date",
           "required": false,
-          "minDate": "2026-07-14",
-          "placeholder": "2027-05-31",
-          "help": "Enter the expiry date when the supporting document has one. It must remain valid under the conditions shown by the official e-Visa system.",
+          "placeholder": "31.05.2027",
+          "help": "DD.MM.YYYY. Enter the expiry date when the supporting document has one. It must remain valid under the conditions shown by the official e-Visa system.",
           "errors": {
-            "invalidFormat": "Use YYYY-MM-DD",
-            "tooEarly": "The supporting document is already expired"
-          }
+            "invalidFormat": "Use DD.MM.YYYY"
+          },
+          "format": "DD.MM.YYYY"
         }
       }
     },
@@ -35786,9 +35906,9 @@ export default {
         "mistake_why_en": "academic titles (S.E., M.M.) not on passport — leave them out",
         "mistake_why_zh": "护照上没有的学位/职称（如 S.E.、M.M.）不要写",
         "mistake_why_zh_hant": "護照上沒有的學位/職稱（如 S.E.、M.M.）不要寫",
-        "copy_en": "Single field — type your full name exactly as on the passport photo page. Latin letters only. Leave out any academic or professional titles that aren't printed on the passport itself.",
-        "copy_zh": "单字段——完整名字按护照照片页原样填，仅限 Latin 字母。护照上没印的学位/职称不要加。",
-        "copy_zh_hant": "單欄位——完整名字按護照照片頁原樣填，僅限 Latin 字母。護照上沒印的學位/職稱不要加。"
+        "copy_en": "Single field — type your full name exactly as on the passport photo page. The form keeps letters and spaces only, in capitals. Leave out any academic or professional titles that aren't printed on the passport itself.",
+        "copy_zh": "单字段——完整名字按护照照片页原样填。表单只保留字母和空格，并转成大写。护照上没印的学位/职称不要加。",
+        "copy_zh_hant": "單欄位——完整名字按護照照片頁原樣填。表單只保留字母和空格，並轉成大寫。護照上沒印的學位/職稱不要加。"
       },
       {
         "n": "03",
@@ -35796,14 +35916,14 @@ export default {
         "section_en": "Section 1 · Traveler identity",
         "section_zh": "第 1 段 · 旅客身份",
         "section_zh_hant": "第 1 段 · 旅客身份",
-        "example": "1991-08-22",
+        "example": "22/08/1991",
         "mistake": "08/22/1991",
-        "mistake_why_en": "US format — e-CD wants ISO YYYY-MM-DD",
-        "mistake_why_zh": "美式格式——e-CD 要 ISO YYYY-MM-DD",
-        "mistake_why_zh_hant": "美式格式——e-CD 要 ISO YYYY-MM-DD",
-        "copy_en": "ISO 8601 (YYYY-MM-DD). On mobile use the date picker.",
-        "copy_zh": "ISO 8601（YYYY-MM-DD）。手机上用日期选择器。",
-        "copy_zh_hant": "ISO 8601（YYYY-MM-DD）。手機上用日期選擇器。"
+        "mistake_why_en": "US order — the All Indonesia date picker is DD/MM/YYYY",
+        "mistake_why_zh": "美式顺序——All Indonesia 的日期选择器是 DD/MM/YYYY",
+        "mistake_why_zh_hant": "美式順序——All Indonesia 的日期選擇器是 DD/MM/YYYY",
+        "copy_en": "DD/MM/YYYY, as the date picker shows it. The calendar runs from January 1920 to today.",
+        "copy_zh": "DD/MM/YYYY，与日期选择器显示一致。日历范围是 1920 年 1 月到今天。",
+        "copy_zh_hant": "DD/MM/YYYY，與日期選擇器顯示一致。日曆範圍是 1920 年 1 月到今天。"
       },
       {
         "n": "04",
@@ -35816,9 +35936,9 @@ export default {
         "mistake_why_en": "space in the flight code",
         "mistake_why_zh": "航班代码里有空格",
         "mistake_why_zh_hant": "航班代碼裡有空格",
-        "copy_en": "2-letter IATA code + number, no space. GA (Garuda Indonesia), QZ (AirAsia Indonesia), SQ (Singapore Airlines), CX (Cathay). For small regional carriers the dropdown sometimes misses entries — type the number manually if the dropdown rejects a valid flight.",
-        "copy_zh": "2 位 IATA 代码 + 航班号，不加空格。GA（鹰航）、QZ（亚航印尼）、SQ（新航）、CX（国泰）。小航司有时下拉漏掉，下拉拒了就手动键入。",
-        "copy_zh_hant": "2 位 IATA 代碼 + 航班號，不加空格。GA（鷹航）、QZ（亞航印尼）、SQ（新航）、CX（國泰）。小航司有時下拉漏掉，下拉拒了就手動鍵入。"
+        "copy_en": "Two boxes: the airline code (GA for Garuda Indonesia, QZ for AirAsia Indonesia, SQ, CX — up to 3 characters) and the flight number (up to 8), letters and digits. For small regional carriers the dropdown sometimes misses entries — type the number manually if the dropdown rejects a valid flight.",
+        "copy_zh": "分两格：航空公司代码（GA 鹰航、QZ 亚航印尼、SQ、CX，最多 3 个字符）和航班号（最多 8 个字符），字母和数字。小航司有时下拉漏掉，下拉拒了就手动键入。",
+        "copy_zh_hant": "分兩格：航空公司代碼（GA 鷹航、QZ 亞航印尼、SQ、CX，最多 3 個字符）和航班號（最多 8 個字符），字母和數字。小航司有時下拉漏掉，下拉拒了就手動鍵入。"
       },
       {
         "n": "05",
@@ -35826,14 +35946,14 @@ export default {
         "section_en": "Section 2 · Trip",
         "section_zh": "第 2 段 · 行程",
         "section_zh_hant": "第 2 段 · 行程",
-        "example": "2026-05-14",
-        "mistake": "2026-05-13",
+        "example": "14/05/2026",
+        "mistake": "13/05/2026",
         "mistake_why_en": "used departure date — use the date you land in Indonesia local time",
         "mistake_why_zh": "用了起飞日期——要用印尼本地落地日期",
         "mistake_why_zh_hant": "用了起飛日期——要用印尼本地落地日期",
-        "copy_en": "Date you land in Indonesia, local time. Submit within 3 days before arrival — earlier rejects. Bali red-eyes from Australia often roll into the next day, watch for that.",
-        "copy_zh": "在印尼本地时间落地的那天。提前 3 天内提交——超前会被拒。澳洲飞巴厘的红眼经常跨日，要留意。",
-        "copy_zh_hant": "在印尼本地時間落地的那天。提前 3 天內提交——超前會被拒。澳洲飛巴釐的紅眼經常跨日，要留意。"
+        "copy_en": "Date you land in Indonesia, local time, as DD/MM/YYYY. The form offers yesterday, today and the next 2 days, so fill it in within 2 days of arrival. Bali red-eyes from Australia often roll into the next day, watch for that.",
+        "copy_zh": "在印尼本地时间落地的那天，格式 DD/MM/YYYY。表单提供昨天、今天和之后 2 天的选项，所以要在抵达前 2 天内填写。澳洲飞巴厘的红眼经常跨日，要留意。",
+        "copy_zh_hant": "在印尼本地時間落地的那天，格式 DD/MM/YYYY。表單提供昨天、今天和之後 2 天的選項，所以要在抵達前 2 天內填寫。澳洲飛巴釐的紅眼經常跨日，要留意。"
       },
       {
         "n": "06",
@@ -35985,9 +36105,9 @@ export default {
         "mistake_why_en": "MRZ filler copied into the number",
         "mistake_why_zh": "把 MRZ 填充符复制进了号码",
         "mistake_why_zh_hant": "把 MRZ 填充符複製進了號碼",
-        "copy_en": "Copy the passport number from your travel document. Check every character; do not append MRZ check digits or filler symbols.",
-        "copy_zh": "从旅行证件核对护照号，逐字符检查，不要附加 MRZ 校验位或填充符。",
-        "copy_zh_hant": "從旅行證件核對護照號，逐字符檢查，不要附加 MRZ 校驗位或填充符。"
+        "copy_en": "Copy the passport number from your travel document: letters and digits, up to 20. Check every character; do not append MRZ check digits or filler symbols.",
+        "copy_zh": "从旅行证件核对护照号：字母和数字，最多 20 位。逐字符检查，不要附加 MRZ 校验位或填充符。",
+        "copy_zh_hant": "從旅行證件核對護照號：字母和數字，最多 20 位。逐字符檢查，不要附加 MRZ 校驗位或填充符。"
       },
       {
         "n": "02",
@@ -36000,9 +36120,9 @@ export default {
         "mistake_why_en": "surname-first example does not follow the current prompt",
         "mistake_why_zh": "姓在前的示例不符合当前页面提示",
         "mistake_why_zh_hant": "姓在前的示例不符合當前頁面提示",
-        "copy_en": "The current Foreign Visitor form prompts Given Name followed by Surname. Follow the labels of the version you use.",
-        "copy_zh": "当前外国旅客表单提示 Given Name followed by Surname。按所用版本的标签填写。",
-        "copy_zh_hant": "當前外國旅客表單提示 Given Name followed by Surname。按所用版本的標籤填寫。"
+        "copy_en": "The current Foreign Visitor form prompts Given Name followed by Surname. Up to 66 characters, starting with a letter: letters, spaces and ' / . ( ) - @ , only.",
+        "copy_zh": "当前外国旅客表单提示 Given Name followed by Surname。最多 66 个字符，第一个字符必须是字母：只能用字母、空格和 ' / . ( ) - @ ,。",
+        "copy_zh_hant": "當前外國旅客表單提示 Given Name followed by Surname。最多 66 個字符，第一個字符必須是字母：只能用字母、空格和 ' / . ( ) - @ ,。"
       },
       {
         "n": "03",
@@ -36015,9 +36135,9 @@ export default {
         "mistake_why_en": "month/day order differs from the displayed day/month format",
         "mistake_why_zh": "月日在前的顺序与页面显示的日月格式不同",
         "mistake_why_zh_hant": "月日在前的順序與頁面顯示的日月格式不同",
-        "copy_en": "The current form displays DD/MM/YYYY. Use the date picker and check the result against your passport.",
-        "copy_zh": "当前表单显示 DD/MM/YYYY，使用日期控件，并与护照核对。",
-        "copy_zh_hant": "當前表單顯示 DD/MM/YYYY，使用日期控件，並與護照核對。"
+        "copy_en": "The form uses DD/MM/YYYY, and so does the pre-check above. Use the date picker and check the result against your passport.",
+        "copy_zh": "表单使用 DD/MM/YYYY，上面的预校验也一样。使用日期控件，并与护照核对。",
+        "copy_zh_hant": "表單使用 DD/MM/YYYY，上面的預校驗也一樣。使用日期控件，並與護照核對。"
       },
       {
         "n": "04",
@@ -36030,9 +36150,9 @@ export default {
         "mistake_why_en": "expired document example",
         "mistake_why_zh": "已过期证件示例",
         "mistake_why_zh_hant": "已過期證件示例",
-        "copy_en": "The current form displays DD/MM/YYYY. Check ICA entry requirements for your passport category before travel.",
-        "copy_zh": "当前表单显示 DD/MM/YYYY，出行前按证件类别核对 ICA 入境要求。",
-        "copy_zh_hant": "當前表單顯示 DD/MM/YYYY，出行前按證件類別核對 ICA 入境要求。"
+        "copy_en": "The form uses DD/MM/YYYY. Check ICA entry requirements for your passport category before travel.",
+        "copy_zh": "表单使用 DD/MM/YYYY，出行前按证件类别核对 ICA 入境要求。",
+        "copy_zh_hant": "表單使用 DD/MM/YYYY，出行前按證件類別核對 ICA 入境要求。"
       },
       {
         "n": "05",
@@ -36040,14 +36160,14 @@ export default {
         "section_en": "Section 2 · Trip",
         "section_zh": "第 2 段 · 行程",
         "section_zh_hant": "第 2 段 · 行程",
-        "example": "SQ319",
-        "mistake": "SQ391",
+        "example": "SQ · 319",
+        "mistake": "SQ · 391",
         "mistake_why_en": "transposed digits in an illustrative booking",
         "mistake_why_zh": "示例订单中的数字顺序填反",
         "mistake_why_zh_hant": "示例訂單中的數字順序填反",
-        "copy_en": "Check the Singapore-bound segment on your itinerary. If the service cannot match a valid flight, use ICA help rather than inventing a code.",
-        "copy_zh": "核对前往新加坡的航段；合法航班无法匹配时向 ICA 求助，不要编造代码。",
-        "copy_zh_hant": "核對前往新加坡的航段；合法航班無法匹配時向 ICA 求助，不要編造代碼。"
+        "copy_en": "Pick the airline code (e.g. SQ) from the form's list, then type the flight-number digits. Check the Singapore-bound segment on your itinerary. If the service cannot match a valid flight, use ICA help rather than inventing a code.",
+        "copy_zh": "航空公司代码（例如 SQ）从表单清单里选，再填航班号数字。核对前往新加坡的航段；合法航班无法匹配时向 ICA 求助，不要编造代码。",
+        "copy_zh_hant": "航空公司代碼（例如 SQ）從表單清單裡選，再填航班號數字。核對前往新加坡的航段；合法航班無法匹配時向 ICA 求助，不要編造代碼。"
       },
       {
         "n": "06",
@@ -36075,9 +36195,9 @@ export default {
         "mistake_why_en": "email domain typo",
         "mistake_why_zh": "邮箱域名拼写错误",
         "mistake_why_zh_hant": "信箱域名拼寫錯誤",
-        "copy_en": "Use an inbox you can access and check its spelling. Keep your SGAC acknowledgement and D/E number.",
-        "copy_zh": "使用能登录的邮箱并核对拼写，保存 SGAC 确认信息及 D/E 编号。",
-        "copy_zh_hant": "使用能登入的信箱並核對拼寫，保存 SGAC 確認資訊及 D/E 編號。"
+        "copy_en": "Use an inbox you can access and check its spelling (up to 100 characters). Keep your SGAC acknowledgement and D/E number.",
+        "copy_zh": "使用能登录的邮箱并核对拼写（最多 100 个字符），保存 SGAC 确认信息及 D/E 编号。",
+        "copy_zh_hant": "使用能登入的信箱並核對拼寫（最多 100 個字符），保存 SGAC 確認資訊及 D/E 編號。"
       }
     ],
     "vietnam": [
@@ -36092,9 +36212,9 @@ export default {
         "mistake_why_en": "lowercase + space — Vietnam Immigration Department wants uppercase, no spaces",
         "mistake_why_zh": "小写 + 空格——越南移民局要全大写、无空格",
         "mistake_why_zh_hant": "小寫 + 空格——越南移民局要全大寫、無空格",
-        "copy_en": "The string next to \"Passport No.\" on the photo page. 6 to 12 alphanumeric characters. Do not paste from the MRZ at the bottom — those rows include check digits.",
-        "copy_zh": "护照照片页 \"Passport No.\" 那栏，6 到 12 位字母+数字。不要从底部 MRZ 复制——那两行包含校验位。",
-        "copy_zh_hant": "護照照片頁 \"Passport No.\" 那欄，6 到 12 位字母+數字。不要從底部 MRZ 複製——那兩行包含校驗位。"
+        "copy_en": "The string next to \"Passport No.\" on the photo page: capital letters and digits, up to 20. The form asks you to double-check a number that is not 8 or 9 characters. Do not paste from the MRZ at the bottom — those rows include check digits.",
+        "copy_zh": "护照照片页 \"Passport No.\" 那栏：大写字母和数字，最多 20 位；号码不是 8 或 9 位时，表单会提示你再核对。不要从底部 MRZ 复制——那两行包含校验位。",
+        "copy_zh_hant": "護照照片頁 \"Passport No.\" 那欄：大寫字母和數字，最多 20 位；號碼不是 8 或 9 位時，表單會提示你再核對。不要從底部 MRZ 複製——那兩行包含校驗位。"
       },
       {
         "n": "02",
@@ -36107,9 +36227,9 @@ export default {
         "mistake_why_en": "Vietnamese diacritics not accepted in the official passport field — Latin only",
         "mistake_why_zh": "护照字段不接受越南语重音符——只接受 Latin",
         "mistake_why_zh_hant": "護照欄位不接受越南語重音符——只接受 Latin",
-        "copy_en": "Full name exactly as on the MRZ row of your passport. Surname first, given names after, all uppercase Latin. No diacritics — even for Vietnamese names, use the ASCII MRZ form.",
-        "copy_zh": "按护照 MRZ 行的全名原样填，姓在前、名在后，全大写 Latin。不带重音符——越南语名字也要用 MRZ 的 ASCII 写法。",
-        "copy_zh_hant": "按護照 MRZ 行的全名原樣填，姓在前、名在後，全大寫 Latin。不帶重音符——越南語名字也要用 MRZ 的 ASCII 寫法。"
+        "copy_en": "Full name exactly as on the MRZ row of your passport. Surname first, given names after, all uppercase Latin. No diacritics — even for Vietnamese names, use the ASCII MRZ form. The form splits it into Surname and Middle and given name, up to 50 characters each, letters and spaces only.",
+        "copy_zh": "按护照 MRZ 行的全名原样填，姓在前、名在后，全大写 Latin。不带重音符——越南语名字也要用 MRZ 的 ASCII 写法。表单分成姓（Surname）和中间名与名（Middle and given name）两格，各最多 50 个字符，只能用字母和空格。",
+        "copy_zh_hant": "按護照 MRZ 行的全名原樣填，姓在前、名在後，全大寫 Latin。不帶重音符——越南語名字也要用 MRZ 的 ASCII 寫法。表單分成姓（Surname）和中間名與名（Middle and given name）兩格，各最多 50 個字符，只能用字母和空格。"
       },
       {
         "n": "03",
@@ -36122,9 +36242,9 @@ export default {
         "mistake_why_en": "US format — the official Vietnam UI is DD/MM/YYYY; always pick from the date widget instead of typing",
         "mistake_why_zh": "美式格式——越南官方 UI 是 DD/MM/YYYY；始终从选择器里选，不要手动键入",
         "mistake_why_zh_hant": "美式格式——越南官方 UI 是 DD/MM/YYYY；始終從選擇器裡選，不要手動鍵入",
-        "copy_en": "On the official Vietnam Immigration site, dates are DD/MM/YYYY (the local convention). Use the calendar widget rather than typing — typing in any other format is the most common rejection. Our local validator on this page accepts ISO YYYY-MM-DD as a convenience, but the live form does not.",
-        "copy_zh": "越南移民局官方站日期是 DD/MM/YYYY（当地写法）。用日历控件选，不要手动键入——手动用别的格式是最常见的退回原因。本页本地校验器为了方便也接受 ISO YYYY-MM-DD，但真表单不接受。",
-        "copy_zh_hant": "越南移民局官方站日期是 DD/MM/YYYY（當地寫法）。用日曆控件選，不要手動鍵入——手動用別的格式是最常見的退回原因。本頁本地校驗器為了方便也接受 ISO YYYY-MM-DD，但真表單不接受。"
+        "copy_en": "On the e-visa form, dates are DD/MM/YYYY (the local convention). Use the calendar widget rather than typing — typing in any other format is the most common rejection. The pre-check on this page takes the same DD/MM/YYYY.",
+        "copy_zh": "电子签表单日期是 DD/MM/YYYY（当地写法）。用日历控件选，不要手动键入——手动用别的格式是最常见的退回原因。本页预校验也按 DD/MM/YYYY 检查。",
+        "copy_zh_hant": "電子簽表單日期是 DD/MM/YYYY（當地寫法）。用日曆控件選，不要手動鍵入——手動用別的格式是最常見的退回原因。本頁預校驗也按 DD/MM/YYYY 檢查。"
       },
       {
         "n": "04",
@@ -36132,14 +36252,14 @@ export default {
         "section_en": "Section 2 · Passport",
         "section_zh": "第 2 段 · 护照",
         "section_zh_hant": "第 2 段 · 護照",
-        "example": "2030-08-22",
-        "mistake": "2026-08-01",
+        "example": "22/08/2030",
+        "mistake": "01/08/2026",
         "mistake_why_en": "must be valid at least 6 months past entry — Vietnam strictly enforces this",
         "mistake_why_zh": "必须比入境日期至少晚 6 个月有效——越南严格执行",
         "mistake_why_zh_hant": "必須比入境日期至少晚 6 個月有效——越南嚴格執行",
-        "copy_en": "ISO 8601. Must be at least 6 months after your entry date. Vietnam rejects e-visa applications that don't meet this; airlines also block boarding.",
-        "copy_zh": "ISO 8601。必须比入境日期至少晚 6 个月。不满足越南直接拒签；航司也会拦在登机前。",
-        "copy_zh_hant": "ISO 8601。必須比入境日期至少晚 6 個月。不滿足越南直接拒簽；航司也會攔在登機前。"
+        "copy_en": "DD/MM/YYYY. Must be at least 6 months after your entry date. Vietnam rejects e-visa applications that don't meet this; airlines also block boarding. The form itself refuses an expired passport and one that runs out less than 30 days after the e-visa end date.",
+        "copy_zh": "DD/MM/YYYY。必须比入境日期至少晚 6 个月。不满足越南直接拒签；航司也会拦在登机前。表单本身不接受已过期的护照，也不接受比电子签结束日晚不到 30 天就到期的护照。",
+        "copy_zh_hant": "DD/MM/YYYY。必須比入境日期至少晚 6 個月。不滿足越南直接拒簽；航司也會攔在登機前。表單本身不接受已過期的護照，也不接受比電子簽結束日晚不到 30 天就到期的護照。"
       },
       {
         "n": "05",
@@ -36147,14 +36267,14 @@ export default {
         "section_en": "Section 4 · Trip",
         "section_zh": "第 4 段 · 行程",
         "section_zh_hant": "第 4 段 · 行程",
-        "example": "2026-05-14",
-        "mistake": "2026-05-12",
+        "example": "14/05/2026",
+        "mistake": "12/05/2026",
         "mistake_why_en": "filed too close — Vietnam takes 3 working days to process, so leave a buffer",
         "mistake_why_zh": "递交太晚——越南处理需 3 个工作日，要留 buffer",
         "mistake_why_zh_hant": "遞交太晚——越南處理需 3 個工作日，要留 buffer",
-        "copy_en": "Date you intend to enter Vietnam. The e-visa is single-entry by default; the 90-day validity window is calculated from this declared entry date, not from approval — so don't pick an early entry date just to be safe, it shortens your useful window. Apply at least 4–5 working days before the entry date — standard processing is 3 working days, plus weekend buffer.",
-        "copy_zh": "你打算入境越南的日期。电子签默认单次；90 天有效期是从你声明的这个入境日期起算的，而不是从批准日——所以别为了「保险」故意填一个偏早的日期，那只会压缩你能用的窗口。至少在入境日期前 4–5 个工作日提交——标准处理需 3 个工作日，再加周末 buffer。",
-        "copy_zh_hant": "你打算入境越南的日期。電子簽默認單次；90 天有效期是從你聲明的這個入境日期起算的，而不是從批准日——所以別為了「保險」故意填一個偏早的日期，那隻會壓縮你能用的窗口。至少在入境日期前 4–5 個工作日提交——標準處理需 3 個工作日，再加週末 buffer。"
+        "copy_en": "DD/MM/YYYY. Date you intend to enter Vietnam. The e-visa is single-entry by default; its valid-from and valid-to dates are two more boxes on the form, at most 90 days apart and not before today — so don't pick an early start just to be safe, it shortens your useful window. Apply at least 4–5 working days before the entry date — standard processing is 3 working days, plus weekend buffer.",
+        "copy_zh": "DD/MM/YYYY。你打算入境越南的日期。电子签默认单次；它的生效日和截止日是表单上另外两格，最多相隔 90 天，且不能早于今天——所以别为了「保险」故意把生效日填早，那只会压缩你能用的窗口。至少在入境日期前 4–5 个工作日提交——标准处理需 3 个工作日，再加周末 buffer。",
+        "copy_zh_hant": "DD/MM/YYYY。你打算入境越南的日期。電子簽默認單次；它的生效日和截止日是表單上另外兩格，最多相隔 90 天，且不能早於今天——所以別為了「保險」故意把生效日填早，那隻會壓縮你能用的窗口。至少在入境日期前 4–5 個工作日提交——標準處理需 3 個工作日，再加週末 buffer。"
       },
       {
         "n": "06",
@@ -36439,13 +36559,13 @@ export default {
         "section_zh": "第 1 段 · 旅客身份",
         "section_zh_hant": "第 1 段 · 旅客身份",
         "example": "A12345678",
-        "mistake": "a 1234 5678",
-        "mistake_why_en": "lowercase + spaces — INM rejects both",
-        "mistake_why_zh": "小写 + 空格——INM 都拒",
-        "mistake_why_zh_hant": "小寫 + 空格——INM 都拒",
-        "copy_en": "The string next to \"Passport No.\" on the photo page. 6 to 12 alphanumeric characters. Do not paste from the MRZ at the bottom — those rows include check digits.",
-        "copy_zh": "护照照片页 \"Passport No.\" 那栏，6 到 12 位字母+数字。不要从底部 MRZ 复制——那两行包含校验位。",
-        "copy_zh_hant": "護照照片頁 \"Passport No.\" 那欄，6 到 12 位字母+數字。不要從底部 MRZ 複製——那兩行包含校驗位。"
+        "mistake": "A 1234 5678",
+        "mistake_why_en": "spaces — the FMM takes letters and digits only",
+        "mistake_why_zh": "带空格——FMM 只收字母和数字",
+        "mistake_why_zh_hant": "帶空格——FMM 只收字母和數字",
+        "copy_en": "The string next to \"Passport No.\" on the photo page: letters and digits, up to 15. The FMM asks for it twice and blocks pasting. Do not copy from the MRZ at the bottom — those rows include check digits.",
+        "copy_zh": "护照照片页 \"Passport No.\" 那栏：字母和数字，最多 15 位。FMM 要输入两次，而且不能粘贴。不要照底部 MRZ 抄——那两行包含校验位。",
+        "copy_zh_hant": "護照照片頁 \"Passport No.\" 那欄：字母和數字，最多 15 位。FMM 要輸入兩次，而且不能貼上。不要照底部 MRZ 抄——那兩行包含校驗位。"
       },
       {
         "n": "02",
@@ -36454,13 +36574,13 @@ export default {
         "section_zh": "第 1 段 · 旅客身份",
         "section_zh_hant": "第 1 段 · 旅客身份",
         "example": "JOHN QUINCY",
-        "mistake": "José",
-        "mistake_why_en": "diacritics not accepted — use the MRZ Latin spelling",
-        "mistake_why_zh": "不接受重音符——用 MRZ 行的 Latin 拼写",
-        "mistake_why_zh_hant": "不接受重音符——用 MRZ 行的 Latin 拼寫",
-        "copy_en": "Given names exactly as on the passport photo page, in Latin letters. Max 50 characters. No accents, no non-Latin scripts. The MRZ row is always ASCII; use that as your source of truth.",
-        "copy_zh": "护照照片页的名，原样填，仅限 Latin 字母，最长 50 字符。不带重音符或非 Latin 文字。MRZ 行永远 ASCII，照搬即可。",
-        "copy_zh_hant": "護照照片頁的名，原樣填，僅限 Latin 字母，最長 50 字符。不帶重音符或非 Latin 文字。MRZ 行永遠 ASCII，照搬即可。"
+        "mistake": "JOHN  QUINCY",
+        "mistake_why_en": "two spaces in a row — the FMM takes one space between names",
+        "mistake_why_zh": "连续两个空格——FMM 名字之间只能有一个空格",
+        "mistake_why_zh_hant": "連續兩個空格——FMM 名字之間只能有一個空格",
+        "copy_en": "Given names exactly as on the passport photo page. Max 100 characters. The FMM takes Latin letters with accents (é, ñ, ü), single spaces, hyphens and apostrophes.",
+        "copy_zh": "护照照片页的名，原样填，最长 100 字符。FMM 接受带重音的 Latin 字母（é、ñ、ü）、单个空格、连字号和撇号。",
+        "copy_zh_hant": "護照照片頁的名，原樣填，最長 100 字符。FMM 接受帶重音的 Latin 字母（é、ñ、ü）、單個空格、連字號和撇號。"
       },
       {
         "n": "03",
@@ -36469,13 +36589,13 @@ export default {
         "section_zh": "第 1 段 · 旅客身份",
         "section_zh_hant": "第 1 段 · 旅客身份",
         "example": "SMITH-JONES",
-        "mistake": "smith jones",
-        "mistake_why_en": "lowercase + hyphen dropped — keep the hyphen, uppercase only",
-        "mistake_why_zh": "小写 + 丢掉了连字符——保留连字符，全大写",
-        "mistake_why_zh_hant": "小寫 + 丟掉了連字符——保留連字符，全大寫",
-        "copy_en": "Apellidos, as printed. Keep hyphens. Max 50 characters. If your passport has a blank surname field, repeat the given name here.",
-        "copy_zh": "Apellidos（姓），原样填，保留连字符，最长 50 字符。如果护照姓氏栏空白，把给定名复制一遍。",
-        "copy_zh_hant": "Apellidos（姓），原樣填，保留連字符，最長 50 字符。如果護照姓氏欄空白，把給定名複製一遍。"
+        "mistake": "SMITH JONES",
+        "mistake_why_en": "hyphen dropped — keep it as printed",
+        "mistake_why_zh": "丢掉了连字符——按护照原样保留",
+        "mistake_why_zh_hant": "丟掉了連字符——按護照原樣保留",
+        "copy_en": "Apellidos, as printed. Keep hyphens. Max 100 characters. If your passport has a blank surname field, repeat the given name here.",
+        "copy_zh": "Apellidos（姓），原样填，保留连字符，最长 100 字符。如果护照姓氏栏空白，把给定名复制一遍。",
+        "copy_zh_hant": "Apellidos（姓），原樣填，保留連字符，最長 100 字符。如果護照姓氏欄空白，把給定名複製一遍。"
       },
       {
         "n": "04",
@@ -36483,14 +36603,14 @@ export default {
         "section_en": "Section 1 · Traveler identity",
         "section_zh": "第 1 段 · 旅客身份",
         "section_zh_hant": "第 1 段 · 旅客身份",
-        "example": "1991-08-22",
+        "example": "22/08/1991",
         "mistake": "08/22/1991",
-        "mistake_why_en": "US format — INM wants ISO YYYY-MM-DD",
-        "mistake_why_zh": "美式格式——INM 要 ISO YYYY-MM-DD",
-        "mistake_why_zh_hant": "美式格式——INM 要 ISO YYYY-MM-DD",
-        "copy_en": "ISO 8601 (YYYY-MM-DD). On mobile, use the date picker.",
-        "copy_zh": "ISO 8601（YYYY-MM-DD）。手机上用日期选择器。",
-        "copy_zh_hant": "ISO 8601（YYYY-MM-DD）。手機上用日期選擇器。"
+        "mistake_why_en": "US order — the FMM wants dd/mm/yyyy",
+        "mistake_why_zh": "美式顺序——FMM 要 dd/mm/yyyy",
+        "mistake_why_zh_hant": "美式順序——FMM 要 dd/mm/yyyy",
+        "copy_en": "dd/mm/yyyy, as the FMM's date boxes show (it also takes ddmmyy). On mobile, use the date picker.",
+        "copy_zh": "dd/mm/yyyy，与 FMM 日期栏的提示一致（也接受 ddmmyy）。手机上用日期选择器。",
+        "copy_zh_hant": "dd/mm/yyyy，與 FMM 日期欄的提示一致（也接受 ddmmyy）。手機上用日期選擇器。"
       },
       {
         "n": "05",
@@ -36498,14 +36618,14 @@ export default {
         "section_en": "Section 2 · Trip",
         "section_zh": "第 2 段 · 行程",
         "section_zh_hant": "第 2 段 · 行程",
-        "example": "2026-05-14",
-        "mistake": "2026-05-13",
+        "example": "14/05/2026",
+        "mistake": "13/05/2026",
         "mistake_why_en": "used departure date — use Mexico local arrival date",
         "mistake_why_zh": "用了起飞日期——用墨西哥本地到达日期",
         "mistake_why_zh_hant": "用了起飛日期——用墨西哥本地到達日期",
-        "copy_en": "Date you actually land in Mexico, in Mexico local time. INM accepts submissions further out than most arrival cards — the form is valid for up to 180 days from issue.",
-        "copy_zh": "在墨西哥本地时间落地的那天。INM 接受比大多数入境卡更早的提交——表单自签发起 180 天内都有效。",
-        "copy_zh_hant": "在墨西哥本地時間落地的那天。INM 接受比大多數入境卡更早的提交——表單自簽發起 180 天內都有效。"
+        "copy_en": "Date you actually land in Mexico, in Mexico local time, as dd/mm/yyyy. The FMM takes an arrival date from today through 29 days ahead; the form is valid for up to 180 days from issue.",
+        "copy_zh": "在墨西哥本地时间落地的那天，格式 dd/mm/yyyy。FMM 的抵达日期可填今天到 29 天后；表单自签发起 180 天内都有效。",
+        "copy_zh_hant": "在墨西哥本地時間落地的那天，格式 dd/mm/yyyy。FMM 的抵達日期可填今天到 29 天后；表單自簽發起 180 天內都有效。"
       },
       {
         "n": "06",
@@ -36513,14 +36633,14 @@ export default {
         "section_en": "Section 3 · Address",
         "section_zh": "第 3 段 · 地址",
         "section_zh_hant": "第 3 段 · 地址",
-        "example": "Hotel Xcaret, Carretera Chetumal-Puerto Juarez Km 282, Playa del Carmen",
+        "example": "HOTEL XCARET, CARR. CHETUMAL KM 282",
         "mistake": "Hotel",
         "mistake_why_en": "name + street + town is the minimum — \"Hotel\" alone is rejected",
         "mistake_why_zh": "至少名字 + 街道 + 城市——只写 \"Hotel\" 会被退",
         "mistake_why_zh_hant": "至少名字 + 街道 + 城市——只寫 \"Hotel\" 會被退",
-        "copy_en": "Hotel / Airbnb name + street + town. INM accepts addresses without postal codes for tourist stays. For multiple cities, use your first night. Spanish characters (ñ, accents) are fine for addresses, just not for the name fields.",
-        "copy_zh": "酒店 / Airbnb 名 + 街道 + 城市。游客住宿允许不写邮编。多城行程填第一晚的。地址里西语字符（ñ、重音符）可以，名字字段才不行。",
-        "copy_zh_hant": "酒店 / Airbnb 名 + 街道 + 城市。遊客住宿允許不寫郵編。多城行程填第一晚的。地址裡西語字符（ñ、重音符）可以，名字欄位才不行。"
+        "copy_en": "Hotel / Airbnb name, street and number, up to 40 characters: letters, digits, spaces and - . , \" ' only — no ñ or accents here; the FMM turns it into capitals. For multiple cities, use your first night.",
+        "copy_zh": "酒店 / Airbnb 名、街道和门牌号，最多 40 个字符：只能用字母、数字、空格和 - . , \" '——这里不能用 ñ 或重音符；FMM 会转成大写。多城行程填第一晚的。",
+        "copy_zh_hant": "酒店 / Airbnb 名、街道和門牌號，最多 40 個字符：只能用字母、數字、空格和 - . , \" '——這裡不能用 ñ 或重音符；FMM 會轉成大寫。多城行程填第一晚的。"
       }
     ],
     "japan": [
@@ -36535,9 +36655,9 @@ export default {
         "mistake_why_en": "MRZ filler character copied from the passport scan",
         "mistake_why_zh": "从 MRZ 扫描里复制了填充符",
         "mistake_why_zh_hant": "從 MRZ 掃描裡複製了填充符",
-        "copy_en": "Use the passport number only. Do not include MRZ filler characters.",
-        "copy_zh": "只填护照号。不要带 MRZ 填充符。",
-        "copy_zh_hant": "只填護照號。不要帶 MRZ 填充符。"
+        "copy_en": "Use the passport number only: capital letters and digits, up to 9. Do not include MRZ filler characters.",
+        "copy_zh": "只填护照号：大写字母和数字，最多 9 位。不要带 MRZ 填充符。",
+        "copy_zh_hant": "只填護照號：大寫字母和數字，最多 9 位。不要帶 MRZ 填充符。"
       },
       {
         "n": "02",
@@ -36550,9 +36670,9 @@ export default {
         "mistake_why_en": "passport matching uses Latin passport data",
         "mistake_why_zh": "护照匹配用 Latin 护照资料",
         "mistake_why_zh_hant": "護照匹配用 Latin 護照資料",
-        "copy_en": "Use the Latin passport name. Japanese characters belong in address/contact fields only when the form asks.",
-        "copy_zh": "使用护照上的 Latin 姓名。只有地址/联系方式字段明确要求时才使用日文字符。",
-        "copy_zh_hant": "使用護照上的 Latin 姓名。只有地址/聯繫方式欄位明確要求時才使用日文字符。"
+        "copy_en": "Use the Latin passport name in capitals. VJW has a family-name box and a given-name box, up to 39 characters each, A–Z, digits, spaces and - . , only. Japanese characters belong in address/contact fields only when the form asks.",
+        "copy_zh": "使用护照上的 Latin 姓名，全大写。VJW 分姓和名两格，各最多 39 个字符，只能用 A–Z、数字、空格和 - . ,。只有地址/联系方式字段明确要求时才使用日文字符。",
+        "copy_zh_hant": "使用護照上的 Latin 姓名，全大寫。VJW 分姓和名兩格，各最多 39 個字符，只能用 A–Z、數字、空格和 - . ,。只有地址/聯繫方式欄位明確要求時才使用日文字符。"
       },
       {
         "n": "03",
@@ -36565,9 +36685,9 @@ export default {
         "mistake_why_en": "airline name instead of flight code",
         "mistake_why_zh": "写了航司名称而不是航班代码",
         "mistake_why_zh_hant": "寫了航司名稱而不是航班代碼",
-        "copy_en": "Use the operating flight code. For codeshare tickets, use the operating carrier.",
-        "copy_zh": "使用实际承运航班代码。代码共享航班用 operating carrier。",
-        "copy_zh_hant": "使用實際承運航班代碼。代碼共享航班用 operating carrier。"
+        "copy_en": "Use the operating flight code: capital letters and digits only, no space, up to 20 (JL5, not JL 5). For codeshare tickets, use the operating carrier.",
+        "copy_zh": "使用实际承运航班代码：只能用大写字母和数字，不加空格，最多 20 个字符（JL5，不是 JL 5）。代码共享航班用 operating carrier。",
+        "copy_zh_hant": "使用實際承運航班代碼：只能用大寫字母和數字，不加空格，最多 20 個字符（JL5，不是 JL 5）。代碼共享航班用 operating carrier。"
       },
       {
         "n": "04",
@@ -36575,14 +36695,14 @@ export default {
         "section_en": "Section 2 · Trip",
         "section_zh": "第 2 段 · 行程",
         "section_zh_hant": "第 2 段 · 行程",
-        "example": "2026-07-14",
-        "mistake": "2026-07-13",
+        "example": "2026/07/14",
+        "mistake": "2026/07/13",
         "mistake_why_en": "departure date used on a red-eye itinerary",
         "mistake_why_zh": "红眼航班误用了出发日期",
         "mistake_why_zh_hant": "紅眼航班誤用了出發日期",
-        "copy_en": "Use the date you land in Japan, in Japan local time.",
-        "copy_zh": "填写按日本当地时间落地的日期。",
-        "copy_zh_hant": "填寫按日本當地時間落地的日期。"
+        "copy_en": "Use the date you land in Japan, in Japan local time, as YYYY/MM/DD. VJW takes today through 31 December of next year.",
+        "copy_zh": "填写按日本当地时间落地的日期，格式 YYYY/MM/DD。VJW 可填今天到明年 12 月 31 日。",
+        "copy_zh_hant": "填寫按日本當地時間落地的日期，格式 YYYY/MM/DD。VJW 可填今天到明年 12 月 31 日。"
       },
       {
         "n": "05",
@@ -36595,9 +36715,9 @@ export default {
         "mistake_why_en": "account email typo",
         "mistake_why_zh": "账号邮箱拼错",
         "mistake_why_zh_hant": "賬號信箱拼錯",
-        "copy_en": "Use the email you can access for Visit Japan Web login and confirmation.",
-        "copy_zh": "使用你能登录 Visit Japan Web 并接收确认的邮箱。",
-        "copy_zh_hant": "使用你能登入 Visit Japan Web 並接收確認的信箱。"
+        "copy_en": "Use the email you can access for Visit Japan Web login and confirmation (up to 128 characters).",
+        "copy_zh": "使用你能登录 Visit Japan Web 并接收确认的邮箱（最多 128 个字符）。",
+        "copy_zh_hant": "使用你能登入 Visit Japan Web 並接收確認的信箱（最多 128 個字符）。"
       }
     ],
     "india": [
@@ -36612,9 +36732,9 @@ export default {
         "mistake_why_en": "middle given name omitted",
         "mistake_why_zh": "漏填了护照上的中间名",
         "mistake_why_zh_hant": "漏填了護照上的中間名",
-        "copy_en": "Copy the complete Latin-script name from the passport used for this trip.",
-        "copy_zh": "按本次旅行使用的护照，填写完整 Latin 字母姓名。",
-        "copy_zh_hant": "按本次旅行使用的護照，填寫完整 Latin 字母姓名。"
+        "copy_en": "Copy the complete Latin-script name from the passport used for this trip. The form keeps letters and spaces only, up to 200 characters.",
+        "copy_zh": "按本次旅行使用的护照，填写完整 Latin 字母姓名。表单只保留字母和空格，最多 200 个字符。",
+        "copy_zh_hant": "按本次旅行使用的護照，填寫完整 Latin 字母姓名。表單只保留字母和空格，最多 200 個字符。"
       },
       {
         "n": "02",
@@ -36642,9 +36762,9 @@ export default {
         "mistake_why_en": "MRZ filler mark copied with the passport number",
         "mistake_why_zh": "把机读区填充符和护照号一起复制了",
         "mistake_why_zh_hant": "把機讀區填充符和護照號一起複製了",
-        "copy_en": "Copy only the passport number from the photo page. Do not add spaces or MRZ filler marks.",
-        "copy_zh": "只填写资料页上的护照号，不要加入空格或机读区填充符。",
-        "copy_zh_hant": "只填寫資料頁上的護照號，不要加入空格或機讀區填充符。"
+        "copy_en": "Copy only the passport number from the photo page: letters and digits, 6 to 15 characters. Do not add spaces or MRZ filler marks.",
+        "copy_zh": "只填写资料页上的护照号：字母和数字，6 到 15 位。不要加入空格或机读区填充符。",
+        "copy_zh_hant": "只填寫資料頁上的護照號：字母和數字，6 到 15 位。不要加入空格或機讀區填充符。"
       },
       {
         "n": "04",
@@ -36682,14 +36802,14 @@ export default {
         "section_en": "Section 2 · Visit",
         "section_zh": "第 2 段 · 访问",
         "section_zh_hant": "第 2 段 · 訪問",
-        "example": "2026-09-15",
-        "mistake": "2026-09-14",
+        "example": "15/09/2026",
+        "mistake": "14/09/2026",
         "mistake_why_en": "departure date entered instead of India arrival date",
         "mistake_why_zh": "填了出发日期，没有填抵达印度日期",
         "mistake_why_zh_hant": "填了出發日期，沒有填抵達印度日期",
-        "copy_en": "Use the local date the flight reaches India. This checker uses YYYY-MM-DD; the official form displays DD/MM/YYYY.",
-        "copy_zh": "填写航班抵达印度的当地日期。本地检查器使用 YYYY-MM-DD；官网显示 DD/MM/YYYY。",
-        "copy_zh_hant": "填寫航班抵達印度的當地日期。本地檢查器使用 YYYY-MM-DD；官網顯示 DD/MM/YYYY。"
+        "copy_en": "Use the local date the flight reaches India, as DD/MM/YYYY — the format the form's label shows. The form's calendar offers only the next few days: today through 4 days ahead when checked on 15 October 2026.",
+        "copy_zh": "填写航班抵达印度的当地日期，格式 DD/MM/YYYY，与表单标签一致。表单日历只开放接下来几天：2026 年 10 月 15 日核对时为今天到 4 天后。",
+        "copy_zh_hant": "填寫航班抵達印度的當地日期，格式 DD/MM/YYYY，與表單標籤一致。表單日曆只開放接下來幾天：2026 年 10 月 15 日核對時為今天到 4 天后。"
       },
       {
         "n": "07",
@@ -36732,9 +36852,9 @@ export default {
         "mistake_why_en": "city entered without the hotel or street address",
         "mistake_why_zh": "只填了城市，没有酒店或街道地址",
         "mistake_why_zh_hant": "只填了城市，沒有酒店或街道地址",
-        "copy_en": "Enter the first full hotel, host, or residence address in India.",
-        "copy_zh": "填写抵达后的第一个完整酒店、亲友或住所地址。",
-        "copy_zh_hant": "填寫抵達後的第一個完整酒店、親友或住所地址。"
+        "copy_en": "Enter the first full hotel, host, or residence address in India. Up to 500 characters; the form drops anything other than letters, digits, spaces and - # @ : ( ) / . , & _",
+        "copy_zh": "填写抵达后的第一个完整酒店、亲友或住所地址。最多 500 个字符；表单会删掉字母、数字、空格和 - # @ : ( ) / . , & _ 以外的字符。",
+        "copy_zh_hant": "填寫抵達後的第一個完整酒店、親友或住所地址。最多 500 個字符；表單會刪掉字母、數字、空格和 - # @ : ( ) / . , & _ 以外的字符。"
       },
       {
         "n": "10",
@@ -36787,14 +36907,14 @@ export default {
         "section_en": "Section 4 · Contact",
         "section_zh": "第 4 段 · 联系方式",
         "section_zh_hant": "第 4 段 · 聯繫方式",
-        "example": "+81 90 1234 5678",
-        "mistake": "090 1234 5678",
-        "mistake_why_en": "country code omitted from an international contact number",
-        "mistake_why_zh": "国际联系电话漏了国家或地区代码",
-        "mistake_why_zh_hant": "國際聯繫電話漏了國家或地區代碼",
-        "copy_en": "Include the country or region code and a number where you can be reached.",
-        "copy_zh": "填写国家或地区代码，以及可以联系到你的号码。",
-        "copy_zh_hant": "填寫國家或地區代碼，以及可以聯繫到你的號碼。"
+        "example": "81 · 9012345678",
+        "mistake": "+81 90 1234 5678",
+        "mistake_why_en": "code typed into the number box — the ISD code has its own box, and the number box takes 5 to 15 digits, no + or spaces",
+        "mistake_why_zh": "把区号也打进了号码栏——国际区号另有一栏，号码栏只收 5 到 15 位数字，不能有 + 或空格",
+        "mistake_why_zh_hant": "把區號也打進了號碼欄——國際區號另有一欄，號碼欄只收 5 到 15 位數字，不能有 + 或空格",
+        "copy_en": "The form has an ISD code box (digits only, up to 4) and a number box (5 to 15 digits). Use a number where you can be reached.",
+        "copy_zh": "表单分国际区号栏（只收数字，最多 4 位）和号码栏（5 到 15 位数字）。填写可以联系到你的号码。",
+        "copy_zh_hant": "表單分國際區號欄（只收數字，最多 4 位）和號碼欄（5 到 15 位數字）。填寫可以聯繫到你的號碼。"
       },
       {
         "n": "14",
@@ -36802,14 +36922,14 @@ export default {
         "section_en": "Section 4 · Contact",
         "section_zh": "第 4 段 · 联系方式",
         "section_zh_hant": "第 4 段 · 聯繫方式",
-        "example": "+81 80 9876 5432",
-        "mistake": "+81 90 1234 5678",
+        "example": "81 · 8098765432",
+        "mistake": "81 · 9012345678",
         "mistake_why_en": "traveller's own number repeated as the emergency contact",
         "mistake_why_zh": "把旅客本人的号码重复填成紧急联系人",
         "mistake_why_zh_hant": "把旅客本人的號碼重複填成緊急聯繫人",
-        "copy_en": "If supplied, use a reachable emergency contact and include the country or region code.",
-        "copy_zh": "如填写，请使用能接通的紧急联系人号码，并加国家或地区代码。",
-        "copy_zh_hant": "如填寫，請使用能接通的緊急聯繫人號碼，並加國家或地區代碼。"
+        "copy_en": "If supplied, use a reachable emergency contact: the ISD code in its own box, then 5 to 15 digits.",
+        "copy_zh": "如填写，请使用能接通的紧急联系人号码：国际区号填在单独一栏，号码填 5 到 15 位数字。",
+        "copy_zh_hant": "如填寫，請使用能接通的緊急聯繫人號碼：國際區號填在單獨一欄，號碼填 5 到 15 位數字。"
       },
       {
         "n": "15",
@@ -36854,9 +36974,9 @@ export default {
         "mistake_why_en": "non-Latin name where passport Latin spelling is expected",
         "mistake_why_zh": "应填护照 Latin 拼写，却填了韩文",
         "mistake_why_zh_hant": "應填護照 Latin 拼寫，卻填了韓文",
-        "copy_en": "Use the Latin name from your passport. Surname and given name are separate boxes; if your passport has no surname or no given name, tick that box's \"unknown\".",
-        "copy_zh": "填写护照上的 Latin 姓名。姓和名分两栏；护照上没有姓或没有名的，勾选该栏旁边的“unknown”。",
-        "copy_zh_hant": "填寫護照上的 Latin 姓名。姓和名分兩欄；護照上沒有姓或沒有名的，勾選該欄旁邊的“unknown”。"
+        "copy_en": "Use the Latin name from your passport. Surname and given name are separate boxes; if your passport has no surname or no given name, tick that box's \"unknown\". The boxes keep English letters and spaces only (hyphens are dropped) and turn them into capitals.",
+        "copy_zh": "填写护照上的 Latin 姓名。姓和名分两栏；护照上没有姓或没有名的，勾选该栏旁边的“unknown”。这两栏只保留英文字母和空格（连字号会被删掉），并转成大写。",
+        "copy_zh_hant": "填寫護照上的 Latin 姓名。姓和名分兩欄；護照上沒有姓或沒有名的，勾選該欄旁邊的“unknown”。這兩欄只保留英文字母和空格（連字號會被刪掉），並轉成大寫。"
       },
       {
         "n": "03",
@@ -36899,9 +37019,9 @@ export default {
         "mistake_why_en": "confirmation email typo",
         "mistake_why_zh": "确认邮件地址拼错",
         "mistake_why_zh_hant": "確認郵件地址拼錯",
-        "copy_en": "Type it twice; it becomes the representative email that receives every issue number. Gmail, Outlook.com, Hotmail.com and QQ.com can delay the email, so save the PDF right after you submit.",
-        "copy_zh": "要输入两次，它就是接收全部签发编号的代表邮箱。Gmail、Outlook.com、Hotmail.com、QQ.com 可能延迟收信，提交后马上保存 PDF。",
-        "copy_zh_hant": "要輸入兩次，它就是接收全部簽發編號的代表信箱。Gmail、Outlook.com、Hotmail.com、QQ.com 可能延遲收信，提交後馬上保存 PDF。"
+        "copy_en": "Type it twice; it becomes the representative email that receives every issue number. The box keeps only letters, digits and _ - . @ — a + is dropped without warning, so use an address without one. Gmail, Outlook.com, Hotmail.com and QQ.com can delay the email, so save the PDF right after you submit.",
+        "copy_zh": "要输入两次，它就是接收全部签发编号的代表邮箱。这一栏只保留字母、数字和 _ - . @——+ 会被直接删掉且不提示，请用不含 + 的地址。Gmail、Outlook.com、Hotmail.com、QQ.com 可能延迟收信，提交后马上保存 PDF。",
+        "copy_zh_hant": "要輸入兩次，它就是接收全部簽發編號的代表信箱。這一欄只保留字母、數字和 _ - . @——+ 會被直接刪掉且不提示，請用不含 + 的地址。Gmail、Outlook.com、Hotmail.com、QQ.com 可能延遲收信，提交後馬上保存 PDF。"
       }
     ],
     "philippines": [
@@ -36946,9 +37066,9 @@ export default {
         "mistake_why_en": "space copied from the photo page layout or an airline profile",
         "mistake_why_zh": "照照片页版式或航司资料复制时带进了空格",
         "mistake_why_zh_hant": "照照片頁版式或航司資料複製時帶進了空格",
-        "copy_en": "Official label: Passport Number. Type the number from the photo page as one string. Do not paste the two long lines at the bottom of the data page: that is the MRZ, with check digits, not the number itself.",
-        "copy_zh": "官方字段名「Passport Number」。照资料页逐位输入，作为一个连续字符串。别把资料页底部那两长串粘进来：那是 MRZ，含校验位，不是护照号。",
-        "copy_zh_hant": "官方欄位名「Passport Number」。照資料頁逐位輸入，作為一個連續字符串。別把資料頁底部那兩長串粘進來：那是 MRZ，含校驗位，不是護照號。"
+        "copy_en": "Official label: Passport Number. Type the number from the photo page as one string; eTravel needs at least 5 characters. Do not paste the two long lines at the bottom of the data page: that is the MRZ, with check digits, not the number itself.",
+        "copy_zh": "官方字段名「Passport Number」。照资料页逐位输入，作为一个连续字符串；eTravel 要求至少 5 个字符。别把资料页底部那两长串粘进来：那是 MRZ，含校验位，不是护照号。",
+        "copy_zh_hant": "官方欄位名「Passport Number」。照資料頁逐位輸入，作為一個連續字符串；eTravel 要求至少 5 個字符。別把資料頁底部那兩長串粘進來：那是 MRZ，含校驗位，不是護照號。"
       },
       {
         "n": "04",
@@ -36961,9 +37081,9 @@ export default {
         "mistake_why_en": "day-first order — there is no month 22 in (MM/DD/YYYY)",
         "mistake_why_zh": "日在前的写法——（MM/DD/YYYY）里没有第 22 个月",
         "mistake_why_zh_hant": "日在前的寫法——（MM/DD/YYYY）裡沒有第 22 個月",
-        "copy_en": "Official label: Birth Date, and the form marks every date field (MM/DD/YYYY): month, then day, then year. 08/22/1991 means August 22, 1991. The local checker below is the opposite — it takes YYYY-MM-DD.",
-        "copy_zh": "官方字段名「Birth Date」。表单所有日期栏都标注（MM/DD/YYYY）：先月、再日、后年。08/22/1991 是 1991 年 8 月 22 日。下方本地校验器相反，输入格式是 YYYY-MM-DD。",
-        "copy_zh_hant": "官方欄位名「Birth Date」。表單所有日期欄都標註（MM/DD/YYYY）：先月、再日、後年。08/22/1991 是 1991 年 8 月 22 日。下方本地校驗器相反，輸入格式是 YYYY-MM-DD。"
+        "copy_en": "Official label: Birth Date, and the form marks every date field (MM/DD/YYYY): month, then day, then year. 08/22/1991 means August 22, 1991. The pre-check below takes the same MM/DD/YYYY.",
+        "copy_zh": "官方字段名「Birth Date」。表单所有日期栏都标注（MM/DD/YYYY）：先月、再日、后年。08/22/1991 是 1991 年 8 月 22 日。下方预校验也按 MM/DD/YYYY 检查。",
+        "copy_zh_hant": "官方欄位名「Birth Date」。表單所有日期欄都標註（MM/DD/YYYY）：先月、再日、後年。08/22/1991 是 1991 年 8 月 22 日。下方預校驗也按 MM/DD/YYYY 檢查。"
       },
       {
         "n": "05",
@@ -36991,9 +37111,9 @@ export default {
         "mistake_why_en": "departure-city date — the form wants the arrival date in Philippine local time",
         "mistake_why_zh": "填了出发地日期——表单要的是菲律宾当地的抵达日期",
         "mistake_why_zh_hant": "填了出發地日期——表單要的是菲律賓當地的抵達日期",
-        "copy_en": "Official label: Date of Arrival, marked (MM/DD/YYYY) like every date field. Use the date you land in Philippine local time; red-eye flights often arrive the next calendar day. This date also controls the registration window — see the error decoder below.",
-        "copy_zh": "官方字段名「Date of Arrival」，和其他日期栏一样按（MM/DD/YYYY）填。用菲律宾当地落地日期；红眼航班常常跨到第二天。这个日期还决定注册窗口，见下方错误解码。",
-        "copy_zh_hant": "官方欄位名「Date of Arrival」，和其他日期欄一樣按（MM/DD/YYYY）填。用菲律賓當地落地日期；紅眼航班常常跨到第二天。這個日期還決定註冊窗口，見下方錯誤解碼。"
+        "copy_en": "Official label: Date of Arrival, marked (MM/DD/YYYY) like every date field. Use the date you land in Philippine local time; red-eye flights often arrive the next calendar day. For an arrival the eTravel calendar offers today through 4 days ahead. This date also controls the registration window — see the error decoder below.",
+        "copy_zh": "官方字段名「Date of Arrival」，和其他日期栏一样按（MM/DD/YYYY）填。用菲律宾当地落地日期；红眼航班常常跨到第二天。入境登记的 eTravel 日历可选今天到 4 天后。这个日期还决定注册窗口，见下方错误解码。",
+        "copy_zh_hant": "官方欄位名「Date of Arrival」，和其他日期欄一樣按（MM/DD/YYYY）填。用菲律賓當地落地日期；紅眼航班常常跨到第二天。入境登記的 eTravel 日曆可選今天到 4 天后。這個日期還決定註冊窗口，見下方錯誤解碼。"
       },
       {
         "n": "07",
@@ -37038,9 +37158,9 @@ export default {
         "mistake_why_en": "emoji or non-passport characters",
         "mistake_why_zh": "包含 emoji 或护照上没有的字符",
         "mistake_why_zh_hant": "包含 emoji 或護照上沒有的字符",
-        "copy_en": "Match the Latin passport spelling. Keep the order shown on the official form.",
-        "copy_zh": "按护照 Latin 拼写填写。顺序按官方表单字段来。",
-        "copy_zh_hant": "按護照 Latin 拼寫填寫。順序按官方表單欄位來。"
+        "copy_en": "Match the Latin passport spelling. Keep the order shown on the official form. The e-Arrival takes letters, digits and spaces only.",
+        "copy_zh": "按护照 Latin 拼写填写。顺序按官方表单字段来。e-Arrival 只接受字母、数字和空格。",
+        "copy_zh_hant": "按護照 Latin 拼寫填寫。順序按官方表單欄位來。e-Arrival 只接受字母、數字和空格。"
       },
       {
         "n": "03",
@@ -37048,14 +37168,14 @@ export default {
         "section_en": "Section 2 · Trip",
         "section_zh": "第 2 段 · 行程",
         "section_zh_hant": "第 2 段 · 行程",
-        "example": "K6817",
-        "mistake": "Cambodia Angkor Air 817",
-        "mistake_why_en": "airline name instead of code",
-        "mistake_why_zh": "写了航司名称而不是代码",
-        "mistake_why_zh_hant": "寫了航司名稱而不是代碼",
-        "copy_en": "Use the flight number on your boarding pass. For land entry, use the border crossing details the official flow asks for.",
-        "copy_zh": "使用登机牌上的航班号。陆路入境按官方流程填写口岸信息。",
-        "copy_zh_hant": "使用登機牌上的航班號。陸路入境按官方流程填寫口岸資訊。"
+        "example": "K6 · 817",
+        "mistake": "K6 · K6817",
+        "mistake_why_en": "airline code typed again — pick it from the list; the number box takes digits only",
+        "mistake_why_zh": "又打了一遍航司代码——代码从清单里选，号码栏只收数字",
+        "mistake_why_zh_hant": "又打了一遍航司代碼——代碼從清單裡選，號碼欄只收數字",
+        "copy_en": "Pick the airline from the e-Arrival list, then type the flight-number digits from your boarding pass. For land entry, use the border crossing details the official flow asks for.",
+        "copy_zh": "先从 e-Arrival 清单里选航空公司，再填登机牌上航班号的数字。陆路入境按官方流程填写口岸信息。",
+        "copy_zh_hant": "先從 e-Arrival 清單裡選航空公司，再填登機牌上航班號的數字。陸路入境按官方流程填寫口岸資訊。"
       },
       {
         "n": "04",
@@ -37063,14 +37183,14 @@ export default {
         "section_en": "Section 2 · Trip",
         "section_zh": "第 2 段 · 行程",
         "section_zh_hant": "第 2 段 · 行程",
-        "example": "2026-07-14",
-        "mistake": "14/07/2026",
-        "mistake_why_en": "local display format may differ; use the picker",
-        "mistake_why_zh": "页面显示格式可能不同；用日期选择器",
-        "mistake_why_zh_hant": "頁面顯示格式可能不同；用日期選擇器",
-        "copy_en": "Use the date you enter Cambodia. The e-Arrival flow is built around that arrival window.",
-        "copy_zh": "填写你进入柬埔寨的日期。e-Arrival 流程围绕这个抵达窗口。",
-        "copy_zh_hant": "填寫你進入柬埔寨的日期。e-Arrival 流程圍繞這個抵達窗口。"
+        "example": "7/14/2026",
+        "mistake": "14/7/2026",
+        "mistake_why_en": "day first — the e-Arrival date boxes are month first (m/d/yyyy)",
+        "mistake_why_zh": "日写在前——e-Arrival 的日期栏是月份在前（m/d/yyyy）",
+        "mistake_why_zh_hant": "日寫在前——e-Arrival 的日期欄是月份在前（m/d/yyyy）",
+        "copy_en": "Use the date you enter Cambodia, month first (m/d/yyyy). The e-Arrival calendar offers today through 6 days ahead.",
+        "copy_zh": "填写你进入柬埔寨的日期，月份在前（m/d/yyyy）。e-Arrival 日历可选今天到 6 天后。",
+        "copy_zh_hant": "填寫你進入柬埔寨的日期，月份在前（m/d/yyyy）。e-Arrival 日曆可選今天到 6 天后。"
       },
       {
         "n": "05",
@@ -37100,9 +37220,9 @@ export default {
         "mistake_why_en": "MRZ filler character copied with the passport number",
         "mistake_why_zh": "把 MRZ 填充符和护照号一起复制了",
         "mistake_why_zh_hant": "把 MRZ 填充符和護照號一起複製了",
-        "copy_en": "Copy only the passport number from the photo page. Use the VWP e-passport you will carry to the United States.",
-        "copy_zh": "只抄资料页上的护照号。使用这次赴美时随身携带的 VWP 电子护照。",
-        "copy_zh_hant": "只抄資料頁上的護照號。使用這次赴美時隨身攜帶的 VWP 電子護照。"
+        "copy_en": "Copy only the passport number from the photo page: 6 to 10 letters and digits. Use the VWP e-passport you will carry to the United States.",
+        "copy_zh": "只抄资料页上的护照号：6 到 10 位字母和数字。使用这次赴美时随身携带的 VWP 电子护照。",
+        "copy_zh_hant": "只抄資料頁上的護照號：6 到 10 位字母和數字。使用這次赴美時隨身攜帶的 VWP 電子護照。"
       },
       {
         "n": "02",
@@ -37115,9 +37235,9 @@ export default {
         "mistake_why_en": "non-Latin name used instead of the passport spelling",
         "mistake_why_zh": "用了非 Latin 姓名，没有照抄护照拼写",
         "mistake_why_zh_hant": "用了非 Latin 姓名，沒有照抄護照拼寫",
-        "copy_en": "Enter every family and given name in the Latin spelling printed on the passport. Do not follow a shortened airline-ticket name.",
-        "copy_zh": "按护照上的 Latin 拼写填写全部姓和名。不要照抄机票上的姓名缩写。",
-        "copy_zh_hant": "按護照上的 Latin 拼寫填寫全部姓和名。不要照抄機票上的姓名縮寫。"
+        "copy_en": "Enter every family and given name in the Latin spelling printed on the passport. ESTA has two boxes, up to 45 characters each: letters, spaces, apostrophes, hyphens and commas. Do not follow a shortened airline-ticket name.",
+        "copy_zh": "按护照上的 Latin 拼写填写全部姓和名。ESTA 分两格，各最多 45 个字符：字母、空格、撇号、连字号和逗号。不要照抄机票上的姓名缩写。",
+        "copy_zh_hant": "按護照上的 Latin 拼寫填寫全部姓和名。ESTA 分兩格，各最多 45 個字符：字母、空格、撇號、連字號和逗號。不要照抄機票上的姓名縮寫。"
       },
       {
         "n": "03",
@@ -37130,9 +37250,9 @@ export default {
         "mistake_why_en": "US date format used in the local checker",
         "mistake_why_zh": "在本地检查器里用了美式日期格式",
         "mistake_why_zh_hant": "在本地檢查器裡用了美式日期格式",
-        "copy_en": "Match the passport date. This local checker uses YYYY-MM-DD; on the ESTA site, use its date controls.",
-        "copy_zh": "日期要和护照一致。本地检查器使用 YYYY-MM-DD；ESTA 官网请用页面提供的日期控件。",
-        "copy_zh_hant": "日期要和護照一致。本地檢查器使用 YYYY-MM-DD；ESTA 官網請用頁面提供的日期控件。"
+        "copy_en": "Match the passport date. ESTA asks it with three lists: day, month, year. The pre-check above takes it as YYYY-MM-DD.",
+        "copy_zh": "日期要和护照一致。ESTA 用日、月、年三个下拉选单选择。上面的预校验按 YYYY-MM-DD 填。",
+        "copy_zh_hant": "日期要和護照一致。ESTA 用日、月、年三個下拉選單選擇。上面的預校驗按 YYYY-MM-DD 填。"
       },
       {
         "n": "04",
@@ -37155,14 +37275,14 @@ export default {
         "section_en": "Section 2 · Contact",
         "section_zh": "第 2 段 · 联系方式",
         "section_zh_hant": "第 2 段 · 聯繫方式",
-        "example": "+44 20 7946 0958",
-        "mistake": "020 7946 0958",
-        "mistake_why_en": "country code omitted from an international contact number",
-        "mistake_why_zh": "国际联系电话漏了国家或地区代码",
-        "mistake_why_zh_hant": "國際聯繫電話漏了國家或地區代碼",
-        "copy_en": "Include the country code and a reachable number. If you have no phone, CBP permits a reachable third-party number.",
-        "copy_zh": "填写国家或地区代码和可接通的号码。本人没有电话时，CBP 允许填写能联系到的第三方号码。",
-        "copy_zh_hant": "填寫國家或地區代碼和可接通的號碼。本人沒有電話時，CBP 允許填寫能聯繫到的第三方號碼。"
+        "example": "+44 · 20 7946 0958",
+        "mistake": "+44 20 7946 0958",
+        "mistake_why_en": "country code typed into the number box — pick it from ESTA's list; the box takes digits and spaces only",
+        "mistake_why_zh": "把国家代码打进了号码栏——国家代码在 ESTA 的清单里选，号码栏只收数字和空格",
+        "mistake_why_zh_hant": "把國家代碼打進了號碼欄——國家代碼在 ESTA 的清單裡選，號碼欄只收數字和空格",
+        "copy_en": "Pick the country code from ESTA's list, then type the number: digits and spaces, up to 20. If you have no phone, CBP permits a reachable third-party number.",
+        "copy_zh": "先在 ESTA 的清单里选国家代码，再填号码：数字和空格，最多 20 个字符。本人没有电话时，CBP 允许填写能联系到的第三方号码。",
+        "copy_zh_hant": "先在 ESTA 的清單裡選國家代碼，再填號碼：數字和空格，最多 20 個字符。本人沒有電話時，CBP 允許填寫能聯繫到的第三方號碼。"
       },
       {
         "n": "06",
@@ -37262,14 +37382,14 @@ export default {
         "section_en": "Section 1 · Passport",
         "section_zh": "第 1 段 · 护照",
         "section_zh_hant": "第 1 段 · 護照",
-        "example": "1991-08-22",
-        "mistake": "1991-22-08",
-        "mistake_why_en": "day and month reversed in the local checker",
-        "mistake_why_zh": "在本地检查器里把日和月写反了",
-        "mistake_why_zh_hant": "在本地檢查器裡把日和月寫反了",
-        "copy_en": "Match the passport date. This local checker uses YYYY-MM-DD; use the controls provided by the official application.",
-        "copy_zh": "日期要和护照一致。本地检查器使用 YYYY-MM-DD；官网申请请用页面提供的日期控件。",
-        "copy_zh_hant": "日期要和護照一致。本地檢查器使用 YYYY-MM-DD；官網申請請用頁面提供的日期控件。"
+        "example": "22 · 08 · 1991",
+        "mistake": "08 · 22 · 1991",
+        "mistake_why_en": "month and day swapped: the boxes run Day, Month, Year",
+        "mistake_why_zh": "月和日填反了：三个格依次是 Day、Month、Year",
+        "mistake_why_zh_hant": "月和日填反了：三個格依次是 Day、Month、Year",
+        "copy_en": "Three boxes on the online form: Day, Month, Year. Match the passport date. The pre-check above takes the same date as YYYY-MM-DD.",
+        "copy_zh": "线上表单分三格：Day、Month、Year。日期要和护照一致。上面的预校验按 YYYY-MM-DD 填同一个日期。",
+        "copy_zh_hant": "線上表單分三格：Day、Month、Year。日期要和護照一致。上面的預校驗按 YYYY-MM-DD 填同一個日期。"
       },
       {
         "n": "04",
@@ -37416,12 +37536,12 @@ export default {
         "section_zh_hant": "第 1 段 · 護照",
         "example": "1991-08-22",
         "mistake": "1991-22-08",
-        "mistake_why_en": "day and month reversed in the local checker",
-        "mistake_why_zh": "在本地检查器里把日和月写反了",
-        "mistake_why_zh_hant": "在本地檢查器裡把日和月寫反了",
-        "copy_en": "Match the passport date. This local checker uses YYYY-MM-DD; use the official form's date controls when applying.",
-        "copy_zh": "日期要和护照一致。本地检查器使用 YYYY-MM-DD；正式申请时使用官网日期控件。",
-        "copy_zh_hant": "日期要和護照一致。本地檢查器使用 YYYY-MM-DD；正式申請時使用官網日期控件。"
+        "mistake_why_en": "day and month reversed in the pre-check",
+        "mistake_why_zh": "在预校验里把日和月写反了",
+        "mistake_why_zh_hant": "在預校驗裡把日和月寫反了",
+        "copy_en": "Match the passport date. On the eTA form you select the date; the pre-check above takes it as YYYY-MM-DD.",
+        "copy_zh": "日期要和护照一致。eTA 表单上是用选的；上面的预校验按 YYYY-MM-DD 填。",
+        "copy_zh_hant": "日期要和護照一致。eTA 表單上是用選的；上面的預校驗按 YYYY-MM-DD 填。"
       },
       {
         "n": "05",
@@ -37541,9 +37661,9 @@ export default {
         "mistake_why_en": "MRZ filler mark copied with the passport number",
         "mistake_why_zh": "把机读区填充符和护照号一起复制了",
         "mistake_why_zh_hant": "把機讀區填充符和護照號一起複製了",
-        "copy_en": "Copy the number from the passport you will use to enter New Zealand. Do not add spaces or MRZ filler marks.",
-        "copy_zh": "填写入境新西兰时使用的护照号。不要加入空格或机读区填充符。",
-        "copy_zh_hant": "填寫入境新西蘭時使用的護照號。不要加入空格或機讀區填充符。"
+        "copy_en": "Copy the number from the passport you will use to enter New Zealand: 3 to 9 letters and digits. Do not add spaces or MRZ filler marks.",
+        "copy_zh": "填写入境新西兰时使用的护照号：3 到 9 位字母和数字。不要加入空格或机读区填充符。",
+        "copy_zh_hant": "填寫入境新西蘭時使用的護照號：3 到 9 位字母和數字。不要加入空格或機讀區填充符。"
       },
       {
         "n": "02",
@@ -37556,9 +37676,9 @@ export default {
         "mistake_why_en": "date of birth entered instead of passport expiry",
         "mistake_why_zh": "把出生日期填进了护照到期日",
         "mistake_why_zh_hant": "把出生日期填進了護照到期日",
-        "copy_en": "Match the passport expiry date. This local checker uses YYYY-MM-DD; use the date controls on the NZTD form.",
-        "copy_zh": "按护照填写到期日。本地检查器使用 YYYY-MM-DD；NZTD 官网请使用日期控件。",
-        "copy_zh_hant": "按護照填寫到期日。本地檢查器使用 YYYY-MM-DD；NZTD 官網請使用日期控件。"
+        "copy_en": "Match the passport expiry date. The pre-check takes it as YYYY-MM-DD. The NZTD read on 15 October 2026 did not ask for it.",
+        "copy_zh": "按护照填写到期日。预校验按 YYYY-MM-DD 填。2026 年 10 月 15 日核对时，NZTD 没有问这一项。",
+        "copy_zh_hant": "按護照填寫到期日。預校驗按 YYYY-MM-DD 填。2026 年 10 月 15 日核對時，NZTD 沒有問這一項。"
       },
       {
         "n": "03",
@@ -37571,9 +37691,9 @@ export default {
         "mistake_why_en": "title added even though it is not part of the passport name",
         "mistake_why_zh": "护照姓名里没有头衔，却多填了 MR",
         "mistake_why_zh_hant": "護照姓名裡沒有頭銜，卻多填了 MR",
-        "copy_en": "Enter every surname or family name in the English or Latin spelling shown on the passport.",
-        "copy_zh": "按护照上的英文或 Latin 拼写填写全部姓。",
-        "copy_zh_hant": "按護照上的英文或 Latin 拼寫填寫全部姓。"
+        "copy_en": "Enter every surname or family name in the English or Latin spelling shown on the passport: letters, spaces, hyphens and apostrophes, up to 39 characters. With only one name, it goes here.",
+        "copy_zh": "按护照上的英文或 Latin 拼写填写全部姓：字母、空格、连字号和撇号，最多 39 个字符。只有一个名字时填在这里。",
+        "copy_zh_hant": "按護照上的英文或 Latin 拼寫填寫全部姓：字母、空格、連字號和撇號，最多 39 個字符。只有一個名字時填在這裡。"
       },
       {
         "n": "04",
@@ -37586,9 +37706,9 @@ export default {
         "mistake_why_en": "middle given name omitted",
         "mistake_why_zh": "漏填了护照上的中间名",
         "mistake_why_zh_hant": "漏填了護照上的中間名",
-        "copy_en": "Enter all given names from the passport used for the trip, including middle given names.",
-        "copy_zh": "填写本次旅行护照上的全部名，包括中间名。",
-        "copy_zh_hant": "填寫本次旅行護照上的全部名，包括中間名。"
+        "copy_en": "Enter all given names from the passport used for the trip, including middle given names, up to 39 characters. The box is optional for people with a single name.",
+        "copy_zh": "填写本次旅行护照上的全部名，包括中间名，最多 39 个字符。只有单一名字的人可以留空。",
+        "copy_zh_hant": "填寫本次旅行護照上的全部名，包括中間名，最多 39 個字符。只有單一名字的人可以留空。"
       },
       {
         "n": "05",
@@ -37596,14 +37716,14 @@ export default {
         "section_en": "Section 1 · Passport",
         "section_zh": "第 1 段 · 护照",
         "section_zh_hant": "第 1 段 · 護照",
-        "example": "1991-08-22",
-        "mistake": "1991-22-08",
-        "mistake_why_en": "day and month reversed in the local checker",
-        "mistake_why_zh": "在本地检查器里把日和月写反了",
-        "mistake_why_zh_hant": "在本地檢查器裡把日和月寫反了",
-        "copy_en": "Match the passport date. This local checker uses YYYY-MM-DD; use the official form's date controls when submitting.",
-        "copy_zh": "日期要和护照一致。本地检查器使用 YYYY-MM-DD；正式提交时使用官网日期控件。",
-        "copy_zh_hant": "日期要和護照一致。本地檢查器使用 YYYY-MM-DD；正式提交時使用官網日期控件。"
+        "example": "22 · Aug · 1991",
+        "mistake": "22 · 08 · 1991",
+        "mistake_why_en": "the month box takes the month's short name (Aug), not a number",
+        "mistake_why_zh": "月份格要填英文月份缩写（Aug），不是数字",
+        "mistake_why_zh_hant": "月份格要填英文月份縮寫（Aug），不是數字",
+        "copy_en": "Three boxes on the NZTD: day, month (first three letters, e.g. Aug) and year. The pre-check above takes the same date as YYYY-MM-DD.",
+        "copy_zh": "NZTD 上是三格：日、月（英文前三个字母，例如 Aug）、年。上面的预校验按 YYYY-MM-DD 填同一个日期。",
+        "copy_zh_hant": "NZTD 上是三格：日、月（英文前三個字母，例如 Aug）、年。上面的預校驗按 YYYY-MM-DD 填同一個日期。"
       },
       {
         "n": "06",
@@ -37646,9 +37766,9 @@ export default {
         "mistake_why_en": "departure date entered instead of New Zealand arrival date",
         "mistake_why_zh": "填了出发日期，没有填抵达新西兰日期",
         "mistake_why_zh_hant": "填了出發日期，沒有填抵達新西蘭日期",
-        "copy_en": "Use the date the flight or vessel reaches New Zealand. Check the local arrival date across time zones.",
-        "copy_zh": "填写航班或船舶抵达新西兰的日期。跨时区旅行要核对当地抵达日。",
-        "copy_zh_hant": "填寫航班或船舶抵達新西蘭的日期。跨時區旅行要核對當地抵達日。"
+        "copy_en": "Use the date the flight or vessel reaches New Zealand. Check the local arrival date across time zones. For flights the NZTD offers today, tomorrow and the day after (New Zealand time); a later arrival is too early to start.",
+        "copy_zh": "填写航班或船舶抵达新西兰的日期。跨时区旅行要核对当地抵达日。搭机时 NZTD 提供今天、明天、后天（新西兰时间）三个选项；更晚抵达的还不能开始填。",
+        "copy_zh_hant": "填寫航班或船舶抵達新西蘭的日期。跨時區旅行要核對當地抵達日。搭機時 NZTD 提供今天、明天、後天（新西蘭時間）三個選項；更晚抵達的還不能開始填。"
       },
       {
         "n": "09",
@@ -37676,9 +37796,9 @@ export default {
         "mistake_why_en": "booking reference entered instead of the arriving flight number",
         "mistake_why_zh": "把订位编号填成了抵达航班号",
         "mistake_why_zh_hant": "把訂位編號填成了抵達航班號",
-        "copy_en": "Air travellers should enter the flight that lands in New Zealand. Sea travellers use the vessel and port questions instead.",
-        "copy_zh": "空路旅客填写落地新西兰的航班号。海路旅客改填船舶和港口问题。",
-        "copy_zh_hant": "空路旅客填寫落地新西蘭的航班號。海路旅客改填船舶和港口問題。"
+        "copy_en": "Air travellers should enter the flight that lands in New Zealand: the airline code and up to 4 digits, e.g. NZ1 or NZ 1. Sea travellers use the vessel and port questions instead.",
+        "copy_zh": "空路旅客填写落地新西兰的航班号：航空公司代码加最多 4 位数字，例如 NZ1 或 NZ 1。海路旅客改填船舶和港口问题。",
+        "copy_zh_hant": "空路旅客填寫落地新西蘭的航班號：航空公司代碼加最多 4 位數字，例如 NZ1 或 NZ 1。海路旅客改填船舶和港口問題。"
       },
       {
         "n": "11",
@@ -37701,14 +37821,14 @@ export default {
         "section_en": "Section 3 · Contact",
         "section_zh": "第 3 段 · 联系方式",
         "section_zh_hant": "第 3 段 · 聯繫方式",
-        "example": "+81 90 1234 5678",
-        "mistake": "090 1234 5678",
-        "mistake_why_en": "country code omitted from an international contact number",
-        "mistake_why_zh": "国际联系电话漏了国家或地区代码",
-        "mistake_why_zh_hant": "國際聯繫電話漏了國家或地區代碼",
-        "copy_en": "Include the country or region code and a number where you can be reached.",
-        "copy_zh": "填写国家或地区代码，以及可以联系到你的号码。",
-        "copy_zh_hant": "填寫國家或地區代碼，以及可以聯繫到你的號碼。"
+        "example": "+81 · 90 1234 5678",
+        "mistake": "+81 90 1234 5678",
+        "mistake_why_en": "country code typed into the number box — it has its own box, and the number box rejects +",
+        "mistake_why_zh": "把国家代码打进了号码栏——国家代码有单独一栏，号码栏不接受 +",
+        "mistake_why_zh_hant": "把國家代碼打進了號碼欄——國家代碼有單獨一欄，號碼欄不接受 +",
+        "copy_en": "Pick the country or region code in its own box, then the number: digits, spaces, dashes or one pair of brackets, at least 5 characters.",
+        "copy_zh": "先在单独一栏选国家或地区代码，再填号码：数字、空格、连字号或一对括号，至少 5 个字符。",
+        "copy_zh_hant": "先在單獨一欄選國家或地區代碼，再填號碼：數字、空格、連字號或一對括號，至少 5 個字符。"
       },
       {
         "n": "13",
@@ -37975,14 +38095,14 @@ export default {
         "section_en": "Section 1 · Eligibility",
         "section_zh": "第 1 段 · 资格",
         "section_zh_hant": "第 1 段 · 資格",
-        "example": "2026-09-15",
-        "mistake": "2026-09-14",
+        "example": "15.09.2026",
+        "mistake": "14.09.2026",
         "mistake_why_en": "departure date entered instead of Türkiye arrival date",
         "mistake_why_zh": "填了出发日期，没有填抵达土耳其日期",
         "mistake_why_zh_hant": "填了出發日期，沒有填抵達土耳其日期",
-        "copy_en": "Use the planned first arrival date. The e-Visa validity period starts from the date selected.",
-        "copy_zh": "填写计划首次抵达日期。e-Visa 有效期从所选日期开始计算。",
-        "copy_zh_hant": "填寫計劃首次抵達日期。e-Visa 有效期從所選日期開始計算。"
+        "copy_en": "Use the planned first arrival date, DD.MM.YYYY as the e-Visa date picker writes it; the calendar starts at today. The e-Visa validity period starts from the date selected.",
+        "copy_zh": "填写计划首次抵达日期，格式 DD.MM.YYYY，与 e-Visa 日期选择器的写法一致；日历从今天开始。e-Visa 有效期从所选日期开始计算。",
+        "copy_zh_hant": "填寫計劃首次抵達日期，格式 DD.MM.YYYY，與 e-Visa 日期選擇器的寫法一致；日曆從今天開始。e-Visa 有效期從所選日期開始計算。"
       },
       {
         "n": "04",
@@ -38020,14 +38140,14 @@ export default {
         "section_en": "Section 2 · Applicant",
         "section_zh": "第 2 段 · 申请人",
         "section_zh_hant": "第 2 段 · 申請人",
-        "example": "1991-08-22",
-        "mistake": "1991-22-08",
-        "mistake_why_en": "day and month reversed in the local checker",
-        "mistake_why_zh": "在本地检查器里把日和月写反了",
-        "mistake_why_zh_hant": "在本地檢查器裡把日和月寫反了",
-        "copy_en": "Match the passport date. This local checker uses YYYY-MM-DD.",
-        "copy_zh": "日期要和护照一致。本地检查器使用 YYYY-MM-DD。",
-        "copy_zh_hant": "日期要和護照一致。本地檢查器使用 YYYY-MM-DD。"
+        "example": "22.08.1991",
+        "mistake": "08.22.1991",
+        "mistake_why_en": "month and day swapped — the date picker writes day.month.year",
+        "mistake_why_zh": "月和日填反了——日期选择器的写法是 日.月.年",
+        "mistake_why_zh_hant": "月和日填反了——日期選擇器的寫法是 日.月.年",
+        "copy_en": "Match the passport date. DD.MM.YYYY, as the e-Visa date picker writes it; the pre-check above takes the same.",
+        "copy_zh": "日期要和护照一致。格式 DD.MM.YYYY，与 e-Visa 日期选择器一致；上面的预校验也按这个格式。",
+        "copy_zh_hant": "日期要和護照一致。格式 DD.MM.YYYY，與 e-Visa 日期選擇器一致；上面的預校驗也按這個格式。"
       },
       {
         "n": "07",
@@ -38055,9 +38175,9 @@ export default {
         "mistake_why_en": "part of the requested name omitted",
         "mistake_why_zh": "漏填了要求填写的部分姓名",
         "mistake_why_zh_hant": "漏填了要求填寫的部分姓名",
-        "copy_en": "Enter all requested names. Leave blank only when the official flow permits it. Maximum 40 characters.",
-        "copy_zh": "填写要求的全部姓名。官网允许时才能留空，最多 40 个字符。",
-        "copy_zh_hant": "填寫要求的全部姓名。官網允許時才能留空，最多 40 個字符。"
+        "copy_en": "Enter all requested names. Leave blank only when the official flow permits it. Maximum 50 characters on the web form (40 in the group guide's transfer file).",
+        "copy_zh": "填写要求的全部姓名。官网允许时才能留空。网页表单最多 50 个字符（团体指南传输文件为 40）。",
+        "copy_zh_hant": "填寫要求的全部姓名。官網允許時才能留空。網頁表單最多 50 個字符（團體指南傳輸文件為 40）。"
       },
       {
         "n": "09",
@@ -38070,9 +38190,9 @@ export default {
         "mistake_why_en": "part of the requested name omitted",
         "mistake_why_zh": "漏填了要求填写的部分姓名",
         "mistake_why_zh_hant": "漏填了要求填寫的部分姓名",
-        "copy_en": "Enter all requested names. Leave blank only when the official flow permits it. Maximum 40 characters.",
-        "copy_zh": "填写要求的全部姓名。官网允许时才能留空，最多 40 个字符。",
-        "copy_zh_hant": "填寫要求的全部姓名。官網允許時才能留空，最多 40 個字符。"
+        "copy_en": "Enter all requested names. Leave blank only when the official flow permits it. Maximum 50 characters on the web form (40 in the group guide's transfer file).",
+        "copy_zh": "填写要求的全部姓名。官网允许时才能留空。网页表单最多 50 个字符（团体指南传输文件为 40）。",
+        "copy_zh_hant": "填寫要求的全部姓名。官網允許時才能留空。網頁表單最多 50 個字符（團體指南傳輸文件為 40）。"
       },
       {
         "n": "10",
@@ -38085,9 +38205,9 @@ export default {
         "mistake_why_en": "MRZ filler mark copied with the document number",
         "mistake_why_zh": "把机读区填充符和证件号一起复制了",
         "mistake_why_zh_hant": "把機讀區填充符和證件號一起複製了",
-        "copy_en": "Copy the travel document number with no spaces or special characters. Maximum 16 characters.",
-        "copy_zh": "填写旅行证件号，不加空格或特殊字符，最多 16 个字符。",
-        "copy_zh_hant": "填寫旅行證件號，不加空格或特殊字符，最多 16 個字符。"
+        "copy_en": "Copy the travel document number with no spaces or special characters. Maximum 20 characters on the web form (16 in the group guide's transfer file).",
+        "copy_zh": "填写旅行证件号，不加空格或特殊字符。网页表单最多 20 个字符（团体指南传输文件为 16）。",
+        "copy_zh_hant": "填寫旅行證件號，不加空格或特殊字符。網頁表單最多 20 個字符（團體指南傳輸文件為 16）。"
       },
       {
         "n": "11",
@@ -38095,14 +38215,14 @@ export default {
         "section_en": "Section 3 · Travel document",
         "section_zh": "第 3 段 · 旅行证件",
         "section_zh_hant": "第 3 段 · 旅行證件",
-        "example": "2023-09-30",
-        "mistake": "2033-09-29",
+        "example": "30.09.2023",
+        "mistake": "29.09.2033",
         "mistake_why_en": "expiry date entered instead of issue date",
         "mistake_why_zh": "把到期日填进了签发日期",
         "mistake_why_zh_hant": "把到期日填進了簽發日期",
-        "copy_en": "Match the issue date on the travel document. This local checker uses YYYY-MM-DD.",
-        "copy_zh": "按旅行证件填写签发日期。本地检查器使用 YYYY-MM-DD。",
-        "copy_zh_hant": "按旅行證件填寫簽發日期。本地檢查器使用 YYYY-MM-DD。"
+        "copy_en": "Match the issue date on the travel document, DD.MM.YYYY; the calendar stops at today.",
+        "copy_zh": "按旅行证件填写签发日期，格式 DD.MM.YYYY；日历最晚只到今天。",
+        "copy_zh_hant": "按旅行證件填寫簽發日期，格式 DD.MM.YYYY；日曆最晚只到今天。"
       },
       {
         "n": "12",
@@ -38110,14 +38230,14 @@ export default {
         "section_en": "Section 3 · Travel document",
         "section_zh": "第 3 段 · 旅行证件",
         "section_zh_hant": "第 3 段 · 旅行證件",
-        "example": "2033-09-29",
-        "mistake": "2026-10-01",
+        "example": "29.09.2033",
+        "mistake": "01.10.2026",
         "mistake_why_en": "expiry may not cover the stay plus Türkiye's additional validity rule",
         "mistake_why_zh": "有效期可能不足以覆盖停留期和土耳其额外要求",
         "mistake_why_zh_hant": "有效期可能不足以覆蓋停留期和土耳其額外要求",
-        "copy_en": "Match the expiry date, then check that it satisfies the official eligibility result and the additional 60-day rule.",
-        "copy_zh": "按证件填写到期日，再核对官网资格结果和额外 60 天有效期规则。",
-        "copy_zh_hant": "按證件填寫到期日，再核對官網資格結果和額外 60 天有效期規則。"
+        "copy_en": "DD.MM.YYYY. Match the expiry date, then check that it satisfies the official eligibility result and the additional 60-day rule.",
+        "copy_zh": "格式 DD.MM.YYYY。按证件填写到期日，再核对官网资格结果和额外 60 天有效期规则。",
+        "copy_zh_hant": "格式 DD.MM.YYYY。按證件填寫到期日，再核對官網資格結果和額外 60 天有效期規則。"
       },
       {
         "n": "13",
@@ -38130,9 +38250,9 @@ export default {
         "mistake_why_en": "domain typo blocks the payment and download links",
         "mistake_why_zh": "邮箱域名拼错，收不到付款和下载链接",
         "mistake_why_zh_hant": "信箱域名拼錯，收不到付款和下載連結",
-        "copy_en": "Use a lowercase inbox you control. The official group guide sets a 40-character maximum.",
-        "copy_zh": "使用自己掌握的小写邮箱。官方团体申请指南上限为 40 个字符。",
-        "copy_zh_hant": "使用自己掌握的小寫信箱。官方團體申請指南上限為 40 個字符。"
+        "copy_en": "Use a lowercase inbox you control. Up to 100 characters on the web form (40 in the group guide's transfer file).",
+        "copy_zh": "使用自己掌握的小写邮箱。网页表单最多 100 个字符（团体指南传输文件为 40）。",
+        "copy_zh_hant": "使用自己掌握的小寫信箱。網頁表單最多 100 個字符（團體指南傳輸文件為 40）。"
       },
       {
         "n": "14",
@@ -38140,14 +38260,14 @@ export default {
         "section_en": "Section 4 · Contact",
         "section_zh": "第 4 段 · 联系方式",
         "section_zh_hant": "第 4 段 · 聯繫方式",
-        "example": "+91 98765 43210",
-        "mistake": "098765 43210",
-        "mistake_why_en": "country code omitted from an international number",
-        "mistake_why_zh": "国际联系电话漏了国家或地区代码",
-        "mistake_why_zh_hant": "國際聯繫電話漏了國家或地區代碼",
-        "copy_en": "Include the country or region code. The official group guide allows up to 20 displayed characters.",
-        "copy_zh": "填写国家或地区代码。官方团体申请指南允许最多 20 个显示字符。",
-        "copy_zh_hant": "填寫國家或地區代碼。官方團體申請指南允許最多 20 個顯示字符。"
+        "example": "+91 · 98765 43210",
+        "mistake": "+91 · 91 98765 43210",
+        "mistake_why_en": "country code typed again in the number box — the + is dropped and 91 stays in the number",
+        "mistake_why_zh": "在号码栏里又打了一遍国家代码——+ 会被删掉，91 留在号码里",
+        "mistake_why_zh_hant": "在號碼欄裡又打了一遍國家代碼——+ 會被刪掉，91 留在號碼裡",
+        "copy_en": "Pick the country or region code from the list. The number box keeps digits only, up to the length of that country's numbers.",
+        "copy_zh": "国家或地区代码从清单里选。号码栏只保留数字，长度上限按该国号码而定。",
+        "copy_zh_hant": "國家或地區代碼從清單裡選。號碼欄只保留數字，長度上限按該國號碼而定。"
       },
       {
         "n": "15",
@@ -38160,9 +38280,9 @@ export default {
         "mistake_why_en": "Türkiye accommodation entered instead of the applicant's residence",
         "mistake_why_zh": "把土耳其住宿填成了申请人的居住地址",
         "mistake_why_zh_hant": "把土耳其住宿填成了申請人的居住地址",
-        "copy_en": "Enter the applicant's current residence address. Maximum 200 characters.",
-        "copy_zh": "填写申请人当前居住地址，最多 200 个字符。",
-        "copy_zh_hant": "填寫申請人當前居住地址，最多 200 個字符。"
+        "copy_en": "Enter the applicant's current residence address. Maximum 100 characters on the web form (200 in the group guide's transfer file).",
+        "copy_zh": "填写申请人当前居住地址。网页表单最多 100 个字符（团体指南传输文件为 200）。",
+        "copy_zh_hant": "填寫申請人當前居住地址。網頁表單最多 100 個字符（團體指南傳輸文件為 200）。"
       },
       {
         "n": "16",
@@ -38200,14 +38320,14 @@ export default {
         "section_en": "Section 5 · Conditional eligibility",
         "section_zh": "第 5 段 · 有条件资格",
         "section_zh_hant": "第 5 段 · 有條件資格",
-        "example": "2027-05-31",
-        "mistake": "2026-06-30",
+        "example": "31.05.2027",
+        "mistake": "30.06.2026",
         "mistake_why_en": "expired supporting document used for a conditional application",
         "mistake_why_zh": "有条件申请使用了已经过期的附加证明",
         "mistake_why_zh_hant": "有條件申請使用了已經過期的附加證明",
-        "copy_en": "Enter the expiry date when the supporting document has one and confirm it remains valid under the official conditions.",
-        "copy_zh": "附加证明有到期日时据实填写，并确认在官网条件下仍然有效。",
-        "copy_zh_hant": "附加證明有到期日時據實填寫，並確認在官網條件下仍然有效。"
+        "copy_en": "DD.MM.YYYY. Enter the expiry date when the supporting document has one and confirm it remains valid under the official conditions.",
+        "copy_zh": "格式 DD.MM.YYYY。附加证明有到期日时据实填写，并确认在官网条件下仍然有效。",
+        "copy_zh_hant": "格式 DD.MM.YYYY。附加證明有到期日時據實填寫，並確認在官網條件下仍然有效。"
       }
     ],
     "sri-lanka": [
@@ -43486,6 +43606,13 @@ export default {
         "summary_zh": "印尼 e-CD 海关申报指南首版上线",
         "summary_zh_hant": "印尼 e-CD 海關申報指南首版上線",
         "detail": "Covers the electronic customs declaration and related iVisa/non-official site confusion."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Checker follows the All Indonesia form: DD/MM/YYYY dates, arrival yesterday to 2 days ahead",
+        "summary_zh": "本地检查器按 All Indonesia 表单更新：日期 DD/MM/YYYY，抵达日为昨天到后天",
+        "summary_zh_hant": "本地檢查器按 All Indonesia 表單更新：日期 DD/MM/YYYY，抵達日為昨天到後天",
+        "detail": "Read the All Indonesia form script. Dates are DD/MM/YYYY; date of birth from 1920 to today; arrival date yesterday, today or the next 2 days. Full name keeps letters and spaces and is turned into capitals."
       }
     ],
     "malaysia": [
@@ -43525,6 +43652,13 @@ export default {
         "summary_zh": "指南勘误：姓名顺序、提交窗口与官方服务入口",
         "summary_zh_hant": "指南勘誤：姓名順序、提交窗口與官方服務入口",
         "detail": "Checked ICA's current Foreign Visitor screen and guidance. Distinguished translated interface from English input, corrected resident land-checkpoint exemptions, and removed unsupported duplicate-submission advice. This records a guide correction, not a newly announced immigration policy."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Checker follows the live SG Arrival Card field checks",
+        "summary_zh": "本地检查器按在线 SG Arrival Card 字段规则更新",
+        "summary_zh_hant": "本地檢查器按線上 SG Arrival Card 欄位規則更新",
+        "detail": "Read the SG Arrival Card scripts. Dates DD/MM/YYYY; arrival today to 2 days ahead (Singapore time); full name max 66, starting with a letter; passport number up to 20; flight number digits only after the airline is picked; email max 100 with the form's pattern."
       }
     ],
     "vietnam": [
@@ -43541,6 +43675,13 @@ export default {
         "summary_zh": "越南电子签证指南首版上线",
         "summary_zh_hant": "越南電子簽證指南首版上線",
         "detail": "Covers the official e-visa site and explains the difference between a real government fee and commercial middleman markups."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Checker follows the live e-Visa form: DD/MM/YYYY dates, 50-letter name boxes",
+        "summary_zh": "本地检查器按在线电子签表单更新：日期 DD/MM/YYYY，姓名框 50 字符",
+        "summary_zh_hant": "本地檢查器按線上電子簽表單更新：日期 DD/MM/YYYY，姓名框 50 字符",
+        "detail": "Read the e-Visa application scripts on evisa.gov.vn. Dates are DD/MM/YYYY; date of birth cannot be after today and passport expiry cannot be before today. Surname and given names take 50 letters and spaces each (the guide said 60). Passport number letters and digits up to 20. Email uses the form's own pattern, max 100."
       }
     ],
     "thailand": [
@@ -43596,6 +43737,13 @@ export default {
         "summary_zh": "墨西哥 FMM 指南首版上线",
         "summary_zh_hant": "墨西哥 FMM 指南首版上線",
         "detail": "Covers Mexico FMM/FMM-E official URLs, field guidance, and known commercial middleman patterns."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Checker follows the live FMM: DD/MM/YYYY dates, 40-character address",
+        "summary_zh": "本地检查器按在线 FMM 更新：日期 DD/MM/YYYY，地址 40 字符",
+        "summary_zh_hant": "本地檢查器按線上 FMM 更新：日期 DD/MM/YYYY，地址 40 字符",
+        "detail": "Read the FMM application and validator scripts. Dates DD/MM/YYYY; arrival today to 29 days ahead. Names max 100 and accept accented Latin letters; passport number max 15; address in Mexico max 40, letters, digits and - . , \" ' only; email pattern from the form. The guide had said YYYY-MM-DD, 50-character names and a 200-character address."
       }
     ],
     "japan": [
@@ -43605,6 +43753,13 @@ export default {
         "summary_zh": "日本 Visit Japan Web 指南首版上线",
         "summary_zh_hant": "日本 Visit Japan Web 指南首版上線",
         "detail": "Covers the Digital Agency service page, free Visit Japan Web workflow, and the difference between arrival QR workflows and visa services."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Checker follows Visit Japan Web: passport up to 9 characters, YYYY/MM/DD arrival",
+        "summary_zh": "本地检查器按 Visit Japan Web 更新：护照号最多 9 位，入境日 YYYY/MM/DD",
+        "summary_zh_hant": "本地檢查器按 Visit Japan Web 更新：護照號最多 9 位，入境日 YYYY/MM/DD",
+        "detail": "Read the Visit Japan Web app script. Passport number capitals and digits, max 9; names capitals, digits, space and . , -; arrival date YYYY/MM/DD, not before today; flight number capitals and digits, max 20; email max 128."
       }
     ],
     "india": [
@@ -43614,6 +43769,13 @@ export default {
         "summary_zh": "印度 e-Arrival Card 指南上线",
         "summary_zh_hant": "印度 e-Arrival Card 指南上線",
         "detail": "Adds the free official e-Arrival Card, the separate nationality-based e-Visa fees and authorized ports, field rules, and documented commercial middlemen."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Checker follows the live e-Arrival form: DD/MM/YYYY arrival, 6-15 character passport, 5-15 digit phones",
+        "summary_zh": "本地检查器按在线 e-Arrival 表单更新：抵达日 DD/MM/YYYY，护照号 6–15 位，电话 5–15 位数字",
+        "summary_zh_hant": "本地檢查器按線上 e-Arrival 表單更新：抵達日 DD/MM/YYYY，護照號 6–15 位，電話 5–15 位數字",
+        "detail": "Read the e-Arrival form script and its arrival-date service. Arrival date DD/MM/YYYY, today to 4 days ahead on 15 October 2026. Full name letters and spaces, max 200; passport number letters and digits, 6 to 15; contact and emergency numbers 5 to 15 digits after a separate ISD code box; address max 500. Error messages are quoted from the form. The web form has no flight number or visa/OCI number box."
       }
     ],
     "korea": [
@@ -43630,6 +43792,13 @@ export default {
         "summary_zh": "复核官方门户，补充提交时间、免填人群、住址和修改规则",
         "summary_zh_hant": "複核官方門戶，補充提交時間、免填人群、住址和修改規則",
         "detail": "Read the e-arrivalcard.go.kr guide, declaration procedure, who-must-declare page, all 34 FAQs, notices and the Chinese edition of the PDF user guide. Added the 3-day filing window, 72-hour validity, exempt groups (valid K-ETA, residence card holders, group e-visas), address rules including airport addresses for same-day transit, editing limits, family and group limits, the 7 languages, email-provider delays, the fake-site warning, and the contact-number, occupation and name fields."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Name and email follow the e-Arrival Card portal's input checks",
+        "summary_zh": "姓名和邮箱按电子入境卡门户的输入校验更新",
+        "summary_zh_hant": "姓名和信箱按電子入境卡門戶的輸入校驗更新",
+        "detail": "Read the portal's shared input script on the application entry page; the arrival card form opens only after an email confirmation and was not opened. Passport names keep letters and spaces; email max 100 and must pass the portal's own email check."
       }
     ],
     "philippines": [
@@ -43646,6 +43815,13 @@ export default {
         "summary_zh": "字段指南改用 eTravel 官方向导文案重构",
         "summary_zh_hant": "欄位指南改用 eTravel 官方向導文案重構",
         "detail": "Cards now use the form's own labels and step order (Data Policy item list plus the form page's i18n catalog: MM/DD/YYYY dates, Mobile Number card added, official flight-number notice). Three unsourced error strings were replaced with verbatim FAQ quotes (QR colors, 72-hour window, lost-QR recovery, free of charge, duplicate registration). meta.field_count re-counted to the 28 items the Data Policy enumerates."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Checker follows the live eTravel dates: MM/DD/YYYY, arrival within 4 days",
+        "summary_zh": "本地检查器按在线 eTravel 更新：日期 MM/DD/YYYY，抵达日在 4 天内",
+        "summary_zh_hant": "本地檢查器按線上 eTravel 更新：日期 MM/DD/YYYY，抵達日在 4 天內",
+        "detail": "Read the eTravel form scripts. The date picker uses MM/DD/YYYY; date of birth up to today; arrival date today to 4 days ahead. Passport number at least 5 characters."
       }
     ],
     "cambodia": [
@@ -43655,6 +43831,13 @@ export default {
         "summary_zh": "柬埔寨 e-Arrival 指南首版上线",
         "summary_zh_hant": "柬埔寨 e-Arrival 指南首版上線",
         "detail": "Covers arrival.gov.kh, the free arrival declaration, and the distinction between arrival declaration and visa fees."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Checker follows the live e-Arrival: M/D/YYYY dates, digits-only flight number",
+        "summary_zh": "本地检查器按在线 e-Arrival 更新：日期 M/D/YYYY，航班号只填数字",
+        "summary_zh_hant": "本地檢查器按線上 e-Arrival 更新：日期 M/D/YYYY，航班號只填數字",
+        "detail": "Read the e-Arrival submission module. Date boxes take m/d/yyyy; arrival today to 6 days ahead; date of birth up to today. Names take letters, digits and spaces. The flight number box takes digits only; the airline code is picked separately."
       }
     ],
     "usa": [
@@ -43664,6 +43847,13 @@ export default {
         "summary_zh": "美国 ESTA 指南上线",
         "summary_zh_hant": "美國 ESTA 指南上線",
         "detail": "Adds the official CBP application, current fee, VWP eligibility source, field rules, and documented commercial middlemen."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Checker follows the live ESTA applicant page",
+        "summary_zh": "本地检查器按在线 ESTA 申请人页面更新",
+        "summary_zh_hant": "本地檢查器按線上 ESTA 申請人頁面更新",
+        "detail": "Read the ESTA application script. Names take letters, spaces and ' - , only; passport number 6 to 10; date of birth not after today; email max 100 with the form's pattern; phone digits and spaces, max 20, after a separate country code list."
       }
     ],
     "uk": [
@@ -43673,6 +43863,13 @@ export default {
         "summary_zh": "英国 ETA 指南上线",
         "summary_zh_hant": "英國 ETA 指南上線",
         "detail": "Adds the official Home Office application and app links, current £20 fee, eligibility and exemption sources, field rules, and documented commercial middlemen."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Date of birth and email follow the ETA form's shared checks",
+        "summary_zh": "出生日期和邮箱按 ETA 表单的通用校验更新",
+        "summary_zh_hant": "出生日期和信箱按 ETA 表單的通用校驗更新",
+        "detail": "Read the ETA web form script. Its date of birth check rejects a future date ('Date of birth must be in the past') and its email check is now the rule ('Enter a real email address'). Page-level rules are sent by the server per session and were not read, so passport and name checks stay as before."
       }
     ],
     "canada": [
@@ -43682,6 +43879,13 @@ export default {
         "summary_zh": "加拿大 eTA 指南上线",
         "summary_zh_hant": "加拿大 eTA 指南上線",
         "detail": "Adds the official IRCC application, CAD $7 fee, air-travel and U.S. permanent-resident rules, field rules, and documented commercial middlemen."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Date of birth cannot be later than today",
+        "summary_zh": "出生日期不能晚于今天",
+        "summary_zh_hant": "出生日期不能晚於今天",
+        "detail": "Read the IRCC eTA help guide (PDF); the online form sits behind a waiting room and was not opened. The guide publishes no patterns or length limits, so only the date of birth check changed."
       }
     ],
     "new-zealand": [
@@ -43691,6 +43895,13 @@ export default {
         "summary_zh": "新西兰 NZTD 指南上线",
         "summary_zh_hant": "新西蘭 NZTD 指南上線",
         "detail": "Adds the free official NZTD, current submission windows, the separate NZeTA and IVL charges, field rules, and documented commercial middlemen."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Checker follows the live NZTD: name, passport, arrival, flight, email and phone rules",
+        "summary_zh": "本地检查器按在线 NZTD 更新：姓名、护照、抵达日、航班、邮箱和电话规则",
+        "summary_zh_hant": "本地檢查器按線上 NZTD 更新：姓名、護照、抵達日、航班、信箱和電話規則",
+        "detail": "Read the NZTD app scripts and settings. Names max 39, letters, spaces, hyphens and apostrophes, given names optional; passport number 3 to 9 letters and digits; arrival yesterday to 2 days ahead; flight number 3 to 7 characters; email and phone use the form's patterns. The NZTD did not ask for passport expiry on 15 October 2026."
       }
     ],
     "australia": [
@@ -43716,6 +43927,13 @@ export default {
         "summary_zh": "土耳其 e-Visa 指南上线",
         "summary_zh_hant": "土耳其 e-Visa 指南上線",
         "detail": "Adds the official e-Visa and MFA eligibility sources, current visa-exemption and conditional e-Visa rules, field rules, and documented commercial middlemen."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Checker follows the live e-Visa site: DD.MM.YYYY dates and web-form lengths",
+        "summary_zh": "本地检查器按在线 e-Visa 网站更新：日期 DD.MM.YYYY，长度按网页表单",
+        "summary_zh_hant": "本地檢查器按線上 e-Visa 網站更新：日期 DD.MM.YYYY，長度按網頁表單",
+        "detail": "Read the e-Visa site scripts. Dates are DD.MM.YYYY; arrival and passport expiry from today, birth and passport issue dates up to today. Web-form limits: names and parents' names 50, passport number 20, email 100, address 100; the phone box keeps digits only after a country code list. The guide had used the group e-Visa guide's transfer-file limits."
       }
     ],
     "sri-lanka": [

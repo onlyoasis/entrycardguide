@@ -6,28 +6,28 @@
  "fields": {
   "passport": {
    "label": "护照号码",
-   "help": "使用护照照片页上的护照号码。",
+   "help": "使用护照照片页上的号码：大写字母和数字，最多 9 个字符（例如 AB1234567）。",
    "errors": {
     "required": "请输入护照号码",
-    "tooShort": "护照号码太短",
-    "tooLong": "护照号码太长",
+    "tooShort": "请输入护照号码",
+    "tooLong": "最多 9 个字符",
     "invalidChars": "只能使用字母和数字",
-    "invalidFormat": "请输入照片页上印刷的字母与数字"
+    "invalidFormat": "只能用大写字母和数字，最多 9 个字符"
    }
   },
   "full_name": {
    "label": "全名",
-   "help": "使用护照上的拉丁拼写。",
+   "help": "VJW 分姓和名两格，各最多 39 个字符，只能用大写字母 A–Z、数字、空格和 - . ,。这里也请用同样的大写检查。",
    "errors": {
     "required": "请输入全名",
     "tooShort": "请输入护照上显示的姓名",
-    "tooLong": "最多 80 个字符",
-    "invalidChars": "只能使用拉丁字母"
+    "tooLong": "VJW 每个姓名格最多 39 个字符",
+    "invalidChars": "只能用大写字母 A–Z、数字、空格和 - . ,"
    }
   },
   "date_of_birth": {
    "label": "出生日期",
-   "help": "在本机检查器中使用 YYYY-MM-DD 格式。",
+   "help": "这里按 YYYY-MM-DD 检查；VJW 上分年、月、日三格。",
    "errors": {
     "required": "请输入出生日期",
     "invalidFormat": "请使用 YYYY-MM-DD 格式",
@@ -35,37 +35,37 @@
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
     "tooEarly": "出生日期不能早于 1900-01-01",
-    "tooLate": "出生日期不能晚于 2026-12-31"
+    "tooLate": "出生日期不能晚于今天"
    }
   },
   "flight_number": {
    "label": "航班号码",
-   "help": "使用实际执飞的航班号码。",
+   "help": "只能用大写字母和数字，不加空格，最多 20 个字符——例如 JL5，不是 JL 5。",
    "errors": {
     "required": "请输入航班号码",
-    "invalidFormat": "格式：航空公司代码＋编号"
+    "invalidFormat": "只能用大写字母和数字，不加空格（例如 JL5）"
    }
   },
   "arrival_date": {
    "label": "抵达日期",
-   "help": "你抵达日本的日期。",
+   "help": "YYYY/MM/DD，与 VJW 日期栏的提示一致。VJW 可填今天到明年 12 月 31 日。",
    "errors": {
     "required": "请输入抵达日期",
-    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidFormat": "请使用 YYYY/MM/DD 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
-    "tooEarly": "抵达日期不能早于 2026-01-01",
+    "tooEarly": "抵达日期不能早于今天",
     "tooLate": "抵达日期不能晚于 2028-12-31"
    }
   },
   "email": {
    "label": "电子邮件",
-   "help": "使用 Visit Japan Web 帐号绑定的电子邮件。",
+   "help": "使用你的 Visit Japan Web 帐号绑定的电子邮件（最多 128 个字符）。",
    "errors": {
     "required": "请输入电子邮件",
     "invalidFormat": "格式必须类似 name@example.com",
-    "tooLong": "电子邮件太长——最多 80 个字符"
+    "tooLong": "电子邮件太长——最多 128 个字符"
    }
   }
  }

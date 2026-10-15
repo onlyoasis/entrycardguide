@@ -116,3 +116,10 @@ domain = "newzealandvisaonline.com"
 path = "/news/new-zealand-traveller-declaration"
 first_observed = "2026-07-14"
 evidence = "Observed 2026-07-14: the page offered optional New Zealand Traveller Declaration support for USD $39 while acknowledging that the official NZTD is free and that the service is not affiliated with the New Zealand Government or the official NZTD website."
+
+[form_checks]
+url = "https://app.travellerdeclaration.govt.nz/"
+name = "NZTD application"
+agency = "New Zealand Customs Service"
+last_verified = "2026-10-15"
+notes = "Read 2026-10-15 from the app scripts and appSettings.json. includePassportExpiryDate is false, so the form does not ask for passport expiry. Names max 39, ^[a-zA-Z-\\s']+$, surname required and given names optional; passport number 3 to 9, ^[A-Z0-9]+$; date of birth up to today; air arrival today, tomorrow or the day after, or a typed date from yesterday (declaration can start 2 days before arrival); flight number /^(?=.{3,7}$)\\s*(?:3C|3U|D7|[A-Z]{2})[ -]?\\d{1,4}\\s*$/; email and phone patterns from the form."

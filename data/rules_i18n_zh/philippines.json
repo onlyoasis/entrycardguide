@@ -6,10 +6,10 @@
  "fields": {
   "passport": {
    "label": "护照号码",
-   "help": "使用护照照片页上的护照号码，无空格或短横。",
+   "help": "使用护照照片页上的号码，不要加空格或连字号。eTravel 要求至少 5 个字符。",
    "errors": {
     "required": "请输入护照号码",
-    "tooShort": "护照号码太短——至少 6 个字符",
+    "tooShort": "eTravel 要求至少 5 个字符",
     "tooLong": "护照号码太长——最多 12 个字符",
     "invalidChars": "只能使用字母和数字——不含空格或符号",
     "invalidFormat": "请输入照片页上印刷的字母与数字"
@@ -27,10 +27,10 @@
   },
   "date_of_birth": {
    "label": "出生日期",
-   "help": "官方表单日期栏为 MM/DD/YYYY；本机检查器接受 YYYY-MM-DD。",
+   "help": "MM/DD/YYYY，月份在前，与 eTravel 日期栏的标示一致。日历最晚只到今天。",
    "errors": {
     "required": "请输入出生日期",
-    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidFormat": "请使用 MM/DD/YYYY（月份在前）",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
@@ -56,15 +56,15 @@
   },
   "arrival_date": {
    "label": "抵达日期",
-   "help": "你落地当地的日期（当地时间）。表单显示 MM/DD/YYYY；本检查器接受 YYYY-MM-DD。注册于抵达前 72 小时开放。",
+   "help": "MM/DD/YYYY，抵达菲律宾的当地日期。登记在抵达前 72 小时开放；入境登记的 eTravel 日历可选今天到 4 天后。",
    "errors": {
     "required": "请输入抵达日期",
-    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidFormat": "请使用 MM/DD/YYYY（月份在前）",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
-    "tooEarly": "抵达日期不能早于 2026-01-01",
-    "tooLate": "抵达日期不能晚于 2028-12-31"
+    "tooEarly": "抵达日期不能早于今天",
+    "tooLate": "eTravel 日历最多只到 4 天后——请接近出发时再填"
    }
   },
   "email": {

@@ -13,3 +13,10 @@ summary = "Initial Indonesia e-CD coverage published"
 summary_zh = "印尼 e-CD 海关申报指南首版上线"
 summary_zh_hant = "印尼 e-CD 海關申報指南首版上線"
 detail = "Covers the electronic customs declaration and related iVisa/non-official site confusion."
+
+[[entries]]
+date = "2026-10-15"
+summary = "Checker follows the All Indonesia form: DD/MM/YYYY dates, arrival yesterday to 2 days ahead"
+summary_zh = "本地检查器按 All Indonesia 表单更新：日期 DD/MM/YYYY，抵达日为昨天到后天"
+summary_zh_hant = "本地檢查器按 All Indonesia 表單更新：日期 DD/MM/YYYY，抵達日為昨天到後天"
+detail = "Read the All Indonesia form script. Dates are DD/MM/YYYY; date of birth from 1920 to today; arrival date yesterday, today or the next 2 days. Full name keeps letters and spaces and is turned into capitals."

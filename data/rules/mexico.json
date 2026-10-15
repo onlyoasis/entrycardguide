@@ -1,23 +1,24 @@
 {
   "country": "mexico",
   "officialUrl": "https://www.inm.gob.mx/fmme/publico/en/solicitud.html",
-  "lastVerified": "2026-04-24",
-  "source": "https://www.inm.gob.mx/fmme/ (HTML field attributes, scraped 2026-04-24)",
+  "lastVerified": "2026-10-15",
+  "source": "https://www.inm.gob.mx/fmme/publico/en/solicitud.html (form HTML and its field checks in jquery.inm.fmme.solicitud and jquery.inm.common.validator, read 2026-10-15)",
   "fields": {
     "passport": {
       "type": "passport",
       "label": "Passport number",
       "required": true,
-      "minLength": 6,
-      "maxLength": 12,
-      "pattern": "^[A-Z0-9]{6,12}$",
+      "minLength": 1,
+      "maxLength": 15,
+      "pattern": "^[A-Z0-9]{1,15}$",
       "placeholder": "A12345678",
-      "help": "Printed on the photo page of your passport. Letters and numbers only.",
+      "help": "Printed on the photo page of your passport. Letters and digits, up to 15; the FMM asks for it twice and blocks pasting.",
       "errors": {
         "required": "Passport number is required",
-        "tooShort": "Passport number too short — min 6 characters",
-        "tooLong": "Passport number too long — max 12 characters",
-        "invalidChars": "Letters and numbers only — no spaces or symbols"
+        "tooShort": "Enter the passport number",
+        "tooLong": "Passport number too long — max 15 characters",
+        "invalidChars": "Letters and numbers only — no spaces or symbols",
+        "invalidFormat": "Letters and digits only, up to 15"
       }
     },
     "given_name": {
@@ -25,26 +26,28 @@
       "label": "Given name (Nombre)",
       "required": true,
       "minLength": 1,
-      "maxLength": 50,
-      "help": "Exactly as shown on your passport (Latin letters only)",
+      "maxLength": 100,
+      "help": "Exactly as shown on your passport. The FMM accepts Latin letters with accents (é, ñ, ü), single spaces, hyphens and apostrophes, up to 100 characters.",
       "errors": {
         "required": "Given name is required",
-        "tooLong": "Max 50 characters",
-        "invalidChars": "Use the Latin spelling from your passport — no accents"
-      }
+        "tooLong": "Max 100 characters",
+        "invalidChars": "Letters (accents allowed), single spaces, hyphens and apostrophes only"
+      },
+      "pattern": "^(?:[A-Za-zÑñÁÉÍÓÚáéíóúÀÈÌÒÙàèìòùÄËÏÖÜäëïöüÆÂÃÅÊÎÔÕØÛßÇç]+'?(?:(?:\\. |, |[ '-])[A-Za-zÑñÁÉÍÓÚáéíóúÀÈÌÒÙàèìòùÄËÏÖÜäëïöüÆÂÃÅÊÎÔÕØÛßÇç]+'?)*|_)$"
     },
     "family_name": {
       "type": "name",
       "label": "Family name (Apellidos)",
       "required": true,
       "minLength": 1,
-      "maxLength": 50,
-      "help": "Exactly as shown on your passport (Latin letters only)",
+      "maxLength": 100,
+      "help": "Exactly as shown on your passport. The FMM accepts Latin letters with accents (é, ñ, ü), single spaces, hyphens and apostrophes, up to 100 characters.",
       "errors": {
         "required": "Family name is required",
-        "tooLong": "Max 50 characters",
-        "invalidChars": "Use the Latin spelling from your passport — no accents"
-      }
+        "tooLong": "Max 100 characters",
+        "invalidChars": "Letters (accents allowed), single spaces, hyphens and apostrophes only"
+      },
+      "pattern": "^(?:[A-Za-zÑñÁÉÍÓÚáéíóúÀÈÌÒÙàèìòùÄËÏÖÜäëïöüÆÂÃÅÊÎÔÕØÛßÇç]+'?(?:(?:\\. |, |[ '-])[A-Za-zÑñÁÉÍÓÚáéíóúÀÈÌÒÙàèìòùÄËÏÖÜäëïöüÆÂÃÅÊÎÔÕØÛßÇç]+'?)*|_)$"
     },
     "nationality": {
       "type": "nationality",
@@ -61,31 +64,33 @@
       "type": "date",
       "label": "Date of birth",
       "required": true,
-      "minDate": "1900-01-01",
-      "maxDate": "2026-12-31",
-      "placeholder": "1991-08-22",
-      "help": "Format: YYYY-MM-DD",
+      "placeholder": "22/08/1991",
+      "help": "DD/MM/YYYY, day first, as the FMM's date boxes check. It cannot be later than today.",
       "errors": {
         "required": "Date of birth is required",
-        "invalidFormat": "Use YYYY-MM-DD (e.g. 1991-08-22)",
-        "tooEarly": "Date of birth seems too far in the past — double check",
-        "tooLate": "Date of birth cannot be in the future"
-      }
+        "invalidFormat": "Use DD/MM/YYYY (e.g. 22/08/1991)",
+        "tooEarly": "The FMM does not take a birth date about 110 years back or more",
+        "tooLate": "Date of birth cannot be later than today"
+      },
+      "format": "DD/MM/YYYY",
+      "minDaysFromToday": -40177,
+      "maxDaysFromToday": 0
     },
     "arrival_date": {
       "type": "date",
       "label": "Arrival date",
       "required": true,
-      "minDate": "2026-01-01",
-      "maxDate": "2027-12-31",
-      "placeholder": "2026-05-14",
-      "help": "Format: YYYY-MM-DD — the date you enter Mexico",
+      "placeholder": "14/05/2026",
+      "help": "DD/MM/YYYY — the date you enter Mexico. The FMM takes today through 29 days ahead, by the INM server's date.",
       "errors": {
         "required": "Arrival date is required",
-        "invalidFormat": "Use YYYY-MM-DD",
-        "tooEarly": "FMM-E is typically filed within 30 days of arrival",
-        "tooLate": "Arrival date seems too far in the future"
-      }
+        "invalidFormat": "Use DD/MM/YYYY",
+        "tooEarly": "Arrival date cannot be in the past",
+        "tooLate": "The FMM takes arrivals up to 29 days ahead"
+      },
+      "format": "DD/MM/YYYY",
+      "minDaysFromToday": 0,
+      "maxDaysFromToday": 29
     },
     "entry_point": {
       "type": "text",
@@ -112,13 +117,15 @@
       "type": "text",
       "label": "Address in Mexico",
       "required": true,
-      "maxLength": 200,
-      "placeholder": "Hotel name, street, city",
-      "help": "Where you will stay. Hotel name and city is enough for tourism.",
+      "maxLength": 40,
+      "placeholder": "Hotel name, street and number",
+      "help": "Where you will stay: hotel name, street and number, up to 40 characters. Letters, digits, spaces and - . , \" ' only; the FMM turns it into capitals.",
       "errors": {
         "required": "Address in Mexico is required",
-        "tooLong": "Max 200 characters"
-      }
+        "tooLong": "Max 40 characters",
+        "invalidFormat": "Letters, digits, spaces and - . , \" ' only"
+      },
+      "pattern": "^[-A-Za-z0-9.,\"' ]+$"
     },
     "email": {
       "type": "email",
@@ -126,12 +133,13 @@
       "required": true,
       "maxLength": 80,
       "placeholder": "name@example.com",
-      "help": "Your FMM PDF and reference number are sent here.",
+      "help": "Your FMM PDF and reference number are sent here. The FMM asks for it twice, blocks pasting, and does not accept + in the address.",
       "errors": {
         "required": "Email is required",
-        "invalidFormat": "Must look like name@example.com",
+        "invalidFormat": "Must look like name@example.com — letters, digits, dots, hyphens and underscores; no +",
         "tooLong": "Email too long — max 80 characters"
-      }
+      },
+      "pattern": "^([\\w-]+(?:\\.[\\w-]+)*)@((?:[\\w-]+\\.)*\\w[\\w-]{0,66})\\.([A-Za-z]{2,6}(?:\\.[A-Za-z]{2})?)$"
     }
   }
 }

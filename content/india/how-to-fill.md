@@ -14,7 +14,7 @@ layout: how-to-fill
 
 The e-Arrival Card is free. Foreign travellers, including OCI cardholders, submit it within 72 hours before arrival. Use the passport and visa, e-Visa, or OCI record that apply to this trip.
 
-The checker reads the 15 rules in `data/rules/india.json`. It runs in your browser and sends nothing to us. Broad local length checks are not published Indian government limits. The live form decides what can be submitted.
+The checker reads the 15 rules in `data/rules/india.json`. It runs in your browser and sends nothing to us. Name, passport number, phone and address limits follow the live web form, read on 15 October 2026. The live form decides what can be submitted.
 
 {{< validator country="india" >}}
 
@@ -28,7 +28,7 @@ The checker reads the 15 rules in `data/rules/india.json`. It runs in your brows
 ## Section 2: Visit
 
 5. **Purpose of visit:** choose the activity that matches both the trip and your travel permission, such as tourism, business, medical treatment, conference, study, or employment.
-6. **Date of arrival in India:** use the local date the flight reaches India. The official form displays `DD/MM/YYYY`; this checker uses `YYYY-MM-DD`. Submit within the preceding 72 hours.
+6. **Date of arrival in India:** use the local date the flight reaches India. The official form and this checker both use `DD/MM/YYYY`; the form's calendar offered today through 4 days ahead when checked on 15 October 2026. Submit within the preceding 72 hours.
 7. **Flight number:** enter the airline code and flight number landing in India, such as `AI302`, not the booking reference. The crawlable web page did not display this field at verification, but government mission materials list flight details among the information to have ready. Display can vary by route, channel, or record.
 8. **Countries visited in the last 6 days:** report every country requested for the previous 6 days. Choose `No Country Visited` only when no country applies.
 

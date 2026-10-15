@@ -21,7 +21,7 @@ The checker below reads the 18 rules in `data/rules/new-zealand.json`. It runs i
 ## Section 1: Passport
 
 1. **Passport number:** copy only the passport number. Do not include spaces or the `<` filler marks from the machine-readable zone.
-2. **Passport expiry date:** match the photo page. This checker uses `YYYY-MM-DD`; the official form uses its own date control.
+2. **Passport expiry date:** match the photo page; this checker takes `YYYY-MM-DD`. The NZTD read on 15 October 2026 did not ask for it.
 3. **Surname or family name:** use the English or Latin passport spelling. Do not add titles such as Mr or Ms.
 4. **Given name(s):** copy every given name, including middle given names.
 5. **Date of birth:** match the passport, and do not swap the day and month.

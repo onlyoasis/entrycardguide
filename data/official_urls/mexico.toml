@@ -6,9 +6,9 @@
 url = "https://www.inm.gob.mx/fmme/publico/en/solicitud.html"
 name = "Forma Migratoria Múltiple Electrónica (FMM-E)"
 agency = "Instituto Nacional de Migración (INM)"
-last_verified = "2026-10-05"
+last_verified = "2026-10-15"
 archive_url = "https://web.archive.org/web/2026/https://www.inm.gob.mx/fmme/publico/en/solicitud.html"
-notes = "Reserved under .gob.mx — only Mexican government entities can register this domain suffix. Since 2023, most air arrivals at major airports receive a passport stamp instead of FMM; the electronic FMM is still used for land crossings and some other entry points."
+notes = "Reserved under .gob.mx — only Mexican government entities can register this domain suffix. Since 2023, most air arrivals at major airports receive a passport stamp instead of FMM; the electronic FMM is still used for land crossings and some other entry points. Field checks read 2026-10-15 from the application and common validator scripts: dates dd/mm/yyyy; arrival today to 29 days ahead; date of birth up to today; given names and surnames max 100 with the ICAO name pattern (accented Latin letters, single separators, or a lone _); document number /^[A-Z0-9\\-]+$/ max 15; address in Mexico /^[-A-Z0-9.,\"' ]*$/ max 40, turned into capitals; email pattern from the form, no +."
 
 [inm_home]
 url = "https://www.inm.gob.mx"

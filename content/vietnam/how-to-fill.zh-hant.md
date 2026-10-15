@@ -7,7 +7,7 @@ country: "vietnam"
 weight: 20
 keywords: ["越南 e-visa 怎麼填", "越南電子簽證欄位", "越南簽證申請幫助", "越南 e-visa 照片"]
 layout: how-to-fill
-lastmod: 2026-10-12
+lastmod: 2026-10-15
 ---
 
 {{< official-link site="vietnam.evisa" >}}
@@ -33,14 +33,14 @@ lastmod: 2026-10-12
 
 護照上的姓，僅拉丁字母。
 
-- 上限 60 字符。
+- 上限 50 字符，只能用字母和空格；表單會轉成大寫。
 - 如果你的護照是姓在前（部分亞洲護照），用真正的姓，不是排在前面的那個。
 
 ### 名 / Middle and given name (Tên đệm và tên)
 
 護照上的名（含中間名）。
 
-- 上限 60 字符。
+- 上限 50 字符，只能用字母和空格；表單會轉成大寫。
 - 僅拉丁字母。如果護照印刷部分有重音字符，參考 MRZ 區域的純 ASCII 拼寫。
 
 ### 出生日期

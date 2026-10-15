@@ -6,3 +6,10 @@ summary = "UK guide published"
 summary_zh = "英国 ETA 指南上线"
 summary_zh_hant = "英國 ETA 指南上線"
 detail = "Adds the official Home Office application and app links, current £20 fee, eligibility and exemption sources, field rules, and documented commercial middlemen."
+
+[[entries]]
+date = "2026-10-15"
+summary = "Date of birth and email follow the ETA form's shared checks"
+summary_zh = "出生日期和邮箱按 ETA 表单的通用校验更新"
+summary_zh_hant = "出生日期和信箱按 ETA 表單的通用校驗更新"
+detail = "Read the ETA web form script. Its date of birth check rejects a future date ('Date of birth must be in the past') and its email check is now the rule ('Enter a real email address'). Page-level rules are sent by the server per session and were not read, so passport and name checks stay as before."

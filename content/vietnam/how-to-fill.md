@@ -33,14 +33,14 @@ The upload happens **only at `evisa.gov.vn`** and **only via HTTPS**. If a site 
 
 Your last name as printed on the passport. Latin letters only.
 
-- Max 60 characters.
+- Max 50 characters, letters and spaces only; the form turns them into capitals.
 - If your passport shows family name first (some Asian passports), use the actual family name, not whichever name appears first.
 
 ### Middle and given name (Tên đệm và tên)
 
 Your first and middle names as printed on the passport.
 
-- Max 60 characters.
+- Max 50 characters, letters and spaces only; the form turns them into capitals.
 - Latin letters only. Use the spelling from the MRZ if your passport has accented characters in the printed name.
 
 ### Date of birth

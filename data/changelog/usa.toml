@@ -6,3 +6,10 @@ summary = "USA guide published"
 summary_zh = "美国 ESTA 指南上线"
 summary_zh_hant = "美國 ESTA 指南上線"
 detail = "Adds the official CBP application, current fee, VWP eligibility source, field rules, and documented commercial middlemen."
+
+[[entries]]
+date = "2026-10-15"
+summary = "Checker follows the live ESTA applicant page"
+summary_zh = "本地检查器按在线 ESTA 申请人页面更新"
+summary_zh_hant = "本地檢查器按線上 ESTA 申請人頁面更新"
+detail = "Read the ESTA application script. Names take letters, spaces and ' - , only; passport number 6 to 10; date of birth not after today; email max 100 with the form's pattern; phone digits and spaces, max 20, after a separate country code list."

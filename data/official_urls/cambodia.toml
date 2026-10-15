@@ -6,9 +6,9 @@
 url = "https://arrival.gov.kh"
 name = "Cambodia e-Arrival"
 agency = "Cambodia General Department of Immigration"
-last_verified = "2026-10-12"
+last_verified = "2026-10-15"
 archive_url = "https://web.archive.org/web/2026/https://arrival.gov.kh"
-notes = "Reserved under .gov.kh. The e-Arrival system combines arrival card, customs declaration, and health declaration flows. The arrival declaration itself is free; visa fees are separate when a visa is needed."
+notes = "Reserved under .gov.kh. The e-Arrival system combines arrival card, customs declaration, and health declaration flows. The arrival declaration itself is free; visa fees are separate when a visa is needed. Field checks read 2026-10-15 from the e-arrival submission module: arrival date placeholder m/d/yyyy, today to 6 days ahead; surname optional, given name required, names and passport number letters, digits and spaces; flight number digits only, airline code picked separately."
 
 [evisa]
 url = "https://www.evisa.gov.kh"

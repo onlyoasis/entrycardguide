@@ -17,17 +17,17 @@
   },
   "full_name": {
    "label": "全名",
-   "help": "使用护照上的拉丁拼写。",
+   "help": "使用护照上的拉丁拼写。K-EAC 的护照姓名栏只保留英文字母和空格，并转成大写。",
    "errors": {
     "required": "请输入全名",
     "tooShort": "请输入护照上显示的姓名",
     "tooLong": "最多 80 个字符",
-    "invalidChars": "只能使用拉丁字母"
+    "invalidChars": "只能用英文字母和空格——表单会删掉连字号等符号"
    }
   },
   "date_of_birth": {
    "label": "出生日期",
-   "help": "在本机检查器中使用 YYYY-MM-DD 格式。",
+   "help": "YYYY-MM-DD——K-EAC 的日期栏输入数字后也会整理成这个格式。",
    "errors": {
     "required": "请输入出生日期",
     "invalidFormat": "请使用 YYYY-MM-DD 格式",
@@ -35,7 +35,7 @@
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
     "tooEarly": "出生日期不能早于 1900-01-01",
-    "tooLate": "出生日期不能晚于 2026-12-31"
+    "tooLate": "出生日期不能晚于今天"
    }
   },
   "flight_number": {
@@ -48,7 +48,7 @@
   },
   "arrival_date": {
    "label": "抵达日期",
-   "help": "你抵达韩国的日期。",
+   "help": "YYYY-MM-DD，抵达韩国的日期。",
    "errors": {
     "required": "请输入抵达日期",
     "invalidFormat": "请使用 YYYY-MM-DD 格式",
@@ -61,11 +61,11 @@
   },
   "email": {
    "label": "电子邮件",
-   "help": "确认信将寄到此信箱。",
+   "help": "确认信会寄到这里。K-EAC 的电子邮件栏只保留字母、数字和 _ - . @——+ 会被直接删掉且不提示，请用不含 + 的地址。最多 100 个字符，要输入两次。",
    "errors": {
     "required": "请输入电子邮件",
-    "invalidFormat": "格式必须类似 name@example.com",
-    "tooLong": "电子邮件太长——最多 80 个字符"
+    "invalidFormat": "电子邮件格式不正确，请再检查。（不能有 +）",
+    "tooLong": "最多 100 个字符"
    }
   }
  }

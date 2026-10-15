@@ -6,33 +6,33 @@
  "fields": {
   "passport": {
    "label": "护照号码",
-   "help": "印在护照照片页上，只含字母和数字。",
+   "help": "印在护照照片页上。字母和数字，最多 15 个字符；FMM 要输入两次，而且不能粘贴。",
    "errors": {
     "required": "请输入护照号码",
-    "tooShort": "护照号码太短——至少 6 个字符",
-    "tooLong": "护照号码太长——最多 12 个字符",
+    "tooShort": "请输入护照号码",
+    "tooLong": "护照号码太长——最多 15 个字符",
     "invalidChars": "只能使用字母和数字——不含空格或符号",
-    "invalidFormat": "请输入照片页上印刷的字母与数字"
+    "invalidFormat": "只能用字母和数字，最多 15 个字符"
    }
   },
   "given_name": {
    "label": "名（Nombre）",
-   "help": "与护照显示完全一致（仅拉丁字母）。",
+   "help": "与护照显示完全一致。FMM 接受带重音的拉丁字母（é、ñ、ü）、单个空格、连字号和撇号，最多 100 个字符。",
    "errors": {
     "required": "请输入名（Given name）",
     "tooShort": "请输入护照上显示的姓名",
-    "tooLong": "最多 50 个字符",
-    "invalidChars": "使用护照上的拉丁拼写——不带重音符号"
+    "tooLong": "最多 100 个字符",
+    "invalidChars": "只能用字母（可带重音）、单个空格、连字号和撇号"
    }
   },
   "family_name": {
    "label": "姓（Apellidos）",
-   "help": "与护照显示完全一致（仅拉丁字母）。",
+   "help": "与护照显示完全一致。FMM 接受带重音的拉丁字母（é、ñ、ü）、单个空格、连字号和撇号，最多 100 个字符。",
    "errors": {
     "required": "请输入姓（Family name）",
     "tooShort": "请输入护照上显示的姓名",
-    "tooLong": "最多 50 个字符",
-    "invalidChars": "使用护照上的拉丁拼写——不带重音符号"
+    "tooLong": "最多 100 个字符",
+    "invalidChars": "只能用字母（可带重音）、单个空格、连字号和撇号"
    }
   },
   "nationality": {
@@ -45,28 +45,28 @@
   },
   "date_of_birth": {
    "label": "出生日期",
-   "help": "格式：YYYY-MM-DD。",
+   "help": "DD/MM/YYYY，日在前，与 FMM 日期栏的检查一致。不能晚于今天。",
    "errors": {
     "required": "请输入出生日期",
-    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidFormat": "请使用 DD/MM/YYYY 格式（例如 22/08/1991）",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
-    "tooEarly": "出生日期似乎过早——请再次确认",
+    "tooEarly": "FMM 不接受约 110 年前或更早的出生日期",
     "tooLate": "出生日期不能晚于今天"
    }
   },
   "arrival_date": {
    "label": "抵达日期",
-   "help": "格式：YYYY-MM-DD——你进入墨西哥的日期。",
+   "help": "DD/MM/YYYY——进入墨西哥的日期。FMM 依 INM 服务器日期，可填今天到 29 天后。",
    "errors": {
     "required": "请输入抵达日期",
-    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidFormat": "请使用 DD/MM/YYYY 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
-    "tooEarly": "FMM-E 通常在抵达前 30 天内提交",
-    "tooLate": "抵达日期似乎过远"
+    "tooEarly": "抵达日期不能早于今天",
+    "tooLate": "FMM 只收 29 天内的抵达日期"
    }
   },
   "entry_point": {
@@ -86,19 +86,20 @@
   },
   "destination_address": {
    "label": "墨西哥境内地址",
-   "help": "你的住宿地点。旅游填饭店名＋城市即可。",
+   "help": "住宿地点：饭店名称、街道与门牌号，最多 40 个字符。只能用字母、数字、空格和 - . , \" '；FMM 会转成大写。",
    "errors": {
     "required": "请输入墨西哥境内地址",
-    "tooLong": "最多 200 个字符"
+    "tooLong": "最多 40 个字符",
+    "invalidFormat": "只能用字母、数字、空格和 - . , \" '"
    },
-   "placeholder": "饭店名称、街道、城市"
+   "placeholder": "饭店名称、街道与门牌号"
   },
   "email": {
    "label": "电子邮件",
-   "help": "FMM PDF 与参考号码将寄到此信箱。",
+   "help": "FMM 的 PDF 与参考编号会寄到这里。FMM 要输入两次、不能粘贴，地址里也不能有 +。",
    "errors": {
     "required": "请输入电子邮件",
-    "invalidFormat": "格式必须类似 name@example.com",
+    "invalidFormat": "格式须类似 name@example.com——只能用字母、数字、点、连字号和底线；不能有 +",
     "tooLong": "电子邮件太长——最多 80 个字符"
    }
   }

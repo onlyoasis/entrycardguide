@@ -6,3 +6,10 @@ summary = "New Zealand guide published"
 summary_zh = "新西兰 NZTD 指南上线"
 summary_zh_hant = "新西蘭 NZTD 指南上線"
 detail = "Adds the free official NZTD, current submission windows, the separate NZeTA and IVL charges, field rules, and documented commercial middlemen."
+
+[[entries]]
+date = "2026-10-15"
+summary = "Checker follows the live NZTD: name, passport, arrival, flight, email and phone rules"
+summary_zh = "本地检查器按在线 NZTD 更新：姓名、护照、抵达日、航班、邮箱和电话规则"
+summary_zh_hant = "本地檢查器按線上 NZTD 更新：姓名、護照、抵達日、航班、信箱和電話規則"
+detail = "Read the NZTD app scripts and settings. Names max 39, letters, spaces, hyphens and apostrophes, given names optional; passport number 3 to 9 letters and digits; arrival yesterday to 2 days ahead; flight number 3 to 7 characters; email and phone use the form's patterns. The NZTD did not ask for passport expiry on 15 October 2026."

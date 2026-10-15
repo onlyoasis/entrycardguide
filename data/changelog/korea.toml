@@ -13,3 +13,10 @@ summary = "Re-checked the official portal; added timing, exemptions, address and
 summary_zh = "复核官方门户，补充提交时间、免填人群、住址和修改规则"
 summary_zh_hant = "複核官方門戶，補充提交時間、免填人群、住址和修改規則"
 detail = "Read the e-arrivalcard.go.kr guide, declaration procedure, who-must-declare page, all 34 FAQs, notices and the Chinese edition of the PDF user guide. Added the 3-day filing window, 72-hour validity, exempt groups (valid K-ETA, residence card holders, group e-visas), address rules including airport addresses for same-day transit, editing limits, family and group limits, the 7 languages, email-provider delays, the fake-site warning, and the contact-number, occupation and name fields."
+
+[[entries]]
+date = "2026-10-15"
+summary = "Name and email follow the e-Arrival Card portal's input checks"
+summary_zh = "姓名和邮箱按电子入境卡门户的输入校验更新"
+summary_zh_hant = "姓名和信箱按電子入境卡門戶的輸入校驗更新"
+detail = "Read the portal's shared input script on the application entry page; the arrival card form opens only after an email confirmation and was not opened. Passport names keep letters and spaces; email max 100 and must pass the portal's own email check."

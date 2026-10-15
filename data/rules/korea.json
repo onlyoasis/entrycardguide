@@ -1,8 +1,8 @@
 {
   "country": "korea",
   "officialUrl": "https://www.e-arrivalcard.go.kr/portal/main/index.do",
-  "lastVerified": "2026-06-11",
-  "source": "https://www.e-arrivalcard.go.kr/portal/main/index.do (official e-Arrival Card portal re-checked 2026-06-11)",
+  "lastVerified": "2026-10-15",
+  "source": "https://www.e-arrivalcard.go.kr/portal/main/index.do and the application entry page https://www.e-arrivalcard.go.kr/portal/apply/agreementPolicy.do (email box and the portal's shared input checks for passport number, passport name and dates, read 2026-10-15; the form behind the email step was not opened)",
   "fields": {
     "passport": {
       "type": "passport",
@@ -25,27 +25,28 @@
       "label": "Full name",
       "required": true,
       "minLength": 1,
-      "maxLength": 80,
       "placeholder": "KIM MINJUN",
-      "help": "Use the Latin spelling from your passport.",
+      "help": "Use the Latin spelling from your passport. The K-EAC passport-name boxes keep English letters and spaces only and turn them into capitals.",
       "errors": {
         "required": "Full name is required",
         "tooLong": "Max 80 characters",
-        "invalidChars": "Use Latin letters only"
-      }
+        "invalidChars": "English letters and spaces only — the form drops hyphens and other marks"
+      },
+      "pattern": "^[A-Za-z ]+$"
     },
     "date_of_birth": {
       "type": "date",
       "label": "Date of birth",
       "required": true,
       "minDate": "1900-01-01",
-      "maxDate": "2026-12-31",
       "placeholder": "1991-08-22",
-      "help": "Use YYYY-MM-DD in this local checker.",
+      "help": "YYYY-MM-DD — the K-EAC date boxes take digits and format them the same way.",
       "errors": {
         "required": "Date of birth is required",
-        "invalidFormat": "Use YYYY-MM-DD"
-      }
+        "invalidFormat": "Use YYYY-MM-DD",
+        "tooLate": "Date of birth cannot be later than today"
+      },
+      "maxDaysFromToday": 0
     },
     "flight_number": {
       "type": "flight",
@@ -65,7 +66,7 @@
       "minDate": "2026-01-01",
       "maxDate": "2028-12-31",
       "placeholder": "2026-07-14",
-      "help": "Date you arrive in Korea.",
+      "help": "YYYY-MM-DD, the date you arrive in Korea.",
       "errors": {
         "required": "Arrival date is required",
         "invalidFormat": "Use YYYY-MM-DD"
@@ -75,14 +76,15 @@
       "type": "email",
       "label": "Email",
       "required": true,
-      "maxLength": 80,
+      "maxLength": 100,
       "placeholder": "name@example.com",
-      "help": "Confirmation is sent here.",
+      "help": "Confirmation is sent here. The K-EAC email box keeps only letters, digits and _ - . @ — a + is dropped without warning, so use an address without one. Up to 100 characters, typed twice.",
       "errors": {
         "required": "Email is required",
-        "invalidFormat": "Must look like name@example.com",
-        "tooLong": "Email too long — max 80 characters"
-      }
+        "invalidFormat": "The email format is incorrect. Please check again. (No +)",
+        "tooLong": "Max 100 characters"
+      },
+      "pattern": "^(?=.*[A-Za-z0-9_-]@[A-Za-z0-9]+.[A-Za-z]{2,3})[A-Za-z0-9_.@-]+$"
     }
   }
 }

@@ -1,23 +1,24 @@
 {
   "country": "india",
   "officialUrl": "https://indianvisaonline.gov.in/earrival/",
-  "lastVerified": "2026-07-14",
-  "source": "https://indianvisaonline.gov.in/earrival/ (current official web form), https://indianvisaonline.gov.in/ and https://ociservices.gov.in/onlineOCI/onlineOCI/faq (72-hour window and OCI applicability), plus https://www.cgisf.gov.in/section/public-advisories/digitization-of-disembarkation-card-for-foreign-nationals-visiting-india/ and https://www.eoisaotome.gov.in/page/e-arrival-card-information/ (official government mission guidance); re-checked 2026-07-14. The current crawlable form directly shows full name, nationality, passport number, purpose, arrival date, countries visited in the last 6 days, India address, state, district, email, phone, emergency phone, and a truth declaration. Government mission guidance also tells travellers to have flight and visa or OCI details ready, so those two travel-document fields are retained here because the form may prefill or reveal them by route or record. The official sources publish no general name, passport, visa or OCI number, address, email, or phone length limits. This local checker therefore uses broad conservative limits and YYYY-MM-DD dates; these are local checks, not quoted government restrictions.",
+  "lastVerified": "2026-10-15",
+  "source": "https://indianvisaonline.gov.in/earrival/ (current web form; field limits and checks read from its front-end assets/index-DBv8aLuY.js, and the arrival-date range from the form's own date service, 2026-10-15), https://indianvisaonline.gov.in/ and https://ociservices.gov.in/onlineOCI/onlineOCI/faq (72-hour window and OCI applicability), plus https://www.cgisf.gov.in/section/public-advisories/digitization-of-disembarkation-card-for-foreign-nationals-visiting-india/ and https://www.eoisaotome.gov.in/page/e-arrival-card-information/ (official government mission guidance). The web form shows full name, nationality, passport number, purpose, arrival date, countries visited in the last 6 days, India address, state, district, email, phone and emergency phone (each with a separate ISD code box), and a truth declaration. Mission guidance also tells travellers to have flight and visa or OCI details ready, so those two fields are kept here although the web form read on 2026-10-15 did not show them.",
   "fields": {
     "full_name": {
       "type": "name",
       "label": "Full name as in passport",
       "required": true,
       "minLength": 1,
-      "maxLength": 100,
+      "maxLength": 200,
       "placeholder": "TARO KEN YAMADA",
-      "help": "Copy the full Latin-script name from the passport used to enter India. Do not shorten middle names.",
+      "help": "Copy the full Latin-script name from the passport used to enter India. Do not shorten middle names. The form keeps letters and spaces only, up to 200 characters.",
       "errors": {
         "required": "Full name is required",
         "tooShort": "Enter the name shown on the passport",
-        "tooLong": "Check the name; this local checker allows up to 100 characters",
-        "invalidChars": "Use the Latin spelling shown on the passport"
-      }
+        "tooLong": "Max 200 characters",
+        "invalidChars": "Letters and spaces only — the form drops anything else"
+      },
+      "pattern": "^[A-Za-z\\s]+$"
     },
     "nationality": {
       "type": "select",
@@ -33,17 +34,17 @@
       "type": "passport",
       "label": "Passport number",
       "required": true,
-      "minLength": 1,
-      "maxLength": 20,
-      "pattern": "^[A-Z0-9]{1,20}$",
+      "minLength": 6,
+      "maxLength": 15,
+      "pattern": "^[A-Z0-9]{6,15}$",
       "placeholder": "A12345678",
-      "help": "Copy the passport number from the photo page. The official form publishes no universal length limit, so this checker uses a broad alphanumeric range.",
+      "help": "Copy the passport number from the photo page: letters and digits, 6 to 15 characters.",
       "errors": {
         "required": "Passport number is required",
-        "tooShort": "Enter the passport number printed on the photo page",
-        "tooLong": "Check the passport number; this local checker allows up to 20 characters",
+        "tooShort": "Passport number must be alphanumeric with 6 to 15 characters",
+        "tooLong": "Passport number must be alphanumeric with 6 to 15 characters",
         "invalidChars": "Use letters and numbers only, with no spaces or MRZ filler marks",
-        "invalidFormat": "Use the letters and numbers printed as the passport number"
+        "invalidFormat": "Passport number must be alphanumeric with 6 to 15 characters"
       }
     },
     "visa_or_oci_number": {
@@ -70,14 +71,17 @@
       "type": "date",
       "label": "Date of arrival in India",
       "required": true,
-      "minDate": "2026-07-14",
-      "placeholder": "2026-09-15",
-      "help": "Use the local date you reach India. The official form displays DD/MM/YYYY; this local checker uses YYYY-MM-DD. Submit within the 72 hours before arrival.",
+      "placeholder": "15/09/2026",
+      "help": "DD/MM/YYYY, the local date you reach India, as the form's label shows. The form's calendar takes only the dates India's server allows; on 15 October 2026 that was today through 4 days ahead.",
       "errors": {
         "required": "Arrival date is required",
-        "invalidFormat": "Use YYYY-MM-DD in this local checker",
-        "tooEarly": "Arrival date cannot be before 2026-07-14"
-      }
+        "invalidFormat": "Use DD/MM/YYYY",
+        "tooEarly": "Arrival date cannot be in the past",
+        "tooLate": "The form's calendar went only 4 days ahead when checked — come back closer to the date"
+      },
+      "format": "DD/MM/YYYY",
+      "minDaysFromToday": 0,
+      "maxDaysFromToday": 4
     },
     "flight_number": {
       "type": "flight",
@@ -105,10 +109,14 @@
       "label": "Address in India",
       "required": true,
       "placeholder": "Hotel name, street, city",
-      "help": "Enter the full address of the first hotel, host, or residence in India, not only a city name.",
+      "help": "Enter the full address of the first hotel, host, or residence in India, not only a city name. Up to 500 characters; the form drops anything other than letters, digits, spaces and - # @ : ( ) / . , & _",
       "errors": {
-        "required": "An address in India is required"
-      }
+        "required": "An address in India is required",
+        "invalidFormat": "Use letters, digits, spaces and - # @ : ( ) / . , & _ only",
+        "tooLong": "Max 500 characters"
+      },
+      "pattern": "^[A-Za-z0-9\\s#@:()/.,&_-]+$",
+      "maxLength": 500
     },
     "state": {
       "type": "select",
@@ -147,22 +155,26 @@
       "type": "phone",
       "label": "Contact number",
       "required": true,
-      "placeholder": "+81 90 1234 5678",
-      "help": "Enter the country or region code and a number where Indian immigration can reach you.",
+      "placeholder": "9012345678",
+      "help": "The form has a separate ISD code box (up to 4 digits, e.g. 81). Type the number itself here: 5 to 15 digits, no + or spaces.",
       "errors": {
         "required": "Contact number is required",
-        "invalidFormat": "Include the country code and 7-15 digits"
-      }
+        "invalidFormat": "Mobile number must be 5 to 15 digits."
+      },
+      "pattern": "^\\d{5,15}$",
+      "maxLength": 15
     },
     "emergency_contact_number": {
       "type": "phone",
       "label": "Emergency contact number",
       "required": false,
-      "placeholder": "+81 80 9876 5432",
-      "help": "If provided, use a different reachable contact and include the country or region code.",
+      "placeholder": "8098765432",
+      "help": "If provided, use a different reachable contact. The ISD code goes in its own box; the number box takes 5 to 15 digits.",
       "errors": {
-        "invalidFormat": "Include the country code and 7-15 digits"
-      }
+        "invalidFormat": "Emergency contact number must be 5 to 15 digits."
+      },
+      "pattern": "^\\d{5,15}$",
+      "maxLength": 15
     },
     "declaration": {
       "type": "select",

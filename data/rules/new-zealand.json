@@ -1,38 +1,38 @@
 {
   "country": "new-zealand",
   "officialUrl": "https://www.travellerdeclaration.govt.nz/",
-  "lastVerified": "2026-07-14",
-  "source": "https://www.travellerdeclaration.govt.nz/privacy/border-agencies-collecting-information/ and https://www.travellerdeclaration.govt.nz/completing-your-declaration/, plus https://www.customs.govt.nz/media/vuyeg3sf/customs-arrival-information-rules-2024.pdf (official NZTD field inventory, completion guidance, and prescribed information under the current Customs (Arrival Information) Rules 2024); re-checked 2026-07-14. The live form does not publish general web regexes, name or passport-number length limits, or a fixed typed date format. This local checker therefore uses broad passport and contact rules and ISO dates for consistency; these are local checks, not quoted government limits. Flight number is optional here because sea travellers receive vessel fields instead.",
+  "lastVerified": "2026-10-15",
+  "source": "https://app.travellerdeclaration.govt.nz/ (NZTD web app: field checks in its front-end and in assets/config/base/appSettings.json, read 2026-10-15), plus https://www.travellerdeclaration.govt.nz/privacy/border-agencies-collecting-information/, https://www.travellerdeclaration.govt.nz/completing-your-declaration/ and https://www.customs.govt.nz/media/vuyeg3sf/customs-arrival-information-rules-2024.pdf (field inventory, completion guidance and prescribed information, re-checked 2026-07-14). Dates on the NZTD are three boxes (day, month name, year), so this checker takes them as YYYY-MM-DD. The app setting that adds a passport-expiry question was off on 2026-10-15.",
   "fields": {
     "passport_number": {
       "type": "passport",
       "label": "Passport number",
       "required": true,
-      "minLength": 1,
-      "maxLength": 20,
-      "pattern": "^[A-Z0-9]{1,20}$",
+      "minLength": 3,
+      "maxLength": 9,
+      "pattern": "^[A-Z0-9]{3,9}$",
       "placeholder": "A12345678",
-      "help": "Copy the number from the passport you will use to enter New Zealand. This checker uses a broad alphanumeric range because NZTD publishes no universal web length limit.",
+      "help": "Copy the number from the passport you will use to enter New Zealand: 3 to 9 letters and digits, no spaces. The NZTD also checks New Zealand, Australian and German passports against their own formats.",
       "errors": {
         "required": "Passport number is required",
-        "tooShort": "Enter the passport number printed on the photo page",
-        "tooLong": "Check the passport number — this local checker allows up to 20 characters",
+        "tooShort": "At least 3 characters",
+        "tooLong": "Max 9 characters",
         "invalidChars": "Use letters and numbers only — no spaces or MRZ filler marks",
-        "invalidFormat": "Use the letters and numbers printed as the passport number"
+        "invalidFormat": "3 to 9 letters and digits"
       }
     },
     "passport_expiry": {
       "type": "date",
       "label": "Passport expiry date",
       "required": true,
-      "minDate": "2026-07-14",
       "placeholder": "2028-09-30",
-      "help": "Match the expiry date on the passport used to enter New Zealand. This local checker uses YYYY-MM-DD; use the official form's date controls when submitting.",
+      "help": "Match the expiry date on the passport used to enter New Zealand. Checked here as YYYY-MM-DD. The NZTD read on 15 October 2026 did not ask for it.",
       "errors": {
         "required": "Passport expiry date is required",
         "invalidFormat": "Use YYYY-MM-DD",
-        "tooEarly": "Passport expiry date cannot be before 2026-07-14"
-      }
+        "tooEarly": "This passport has already expired"
+      },
+      "minDaysFromToday": 0
     },
     "family_name": {
       "type": "name",
@@ -40,38 +40,44 @@
       "required": true,
       "minLength": 1,
       "placeholder": "YAMADA",
-      "help": "Use the English or Latin spelling shown in the passport you will use to enter New Zealand.",
+      "help": "Use the English or Latin spelling shown in the passport: letters, spaces, hyphens and apostrophes, up to 39 characters. If you have only one name, it goes here.",
       "errors": {
         "required": "Surname or family name is required",
         "tooShort": "Enter the surname or family name shown on the passport",
-        "invalidChars": "Use the English or Latin passport spelling"
-      }
+        "invalidChars": "Use the English or Latin passport spelling",
+        "tooLong": "Max 39 characters"
+      },
+      "maxLength": 39,
+      "pattern": "^[a-zA-Z\\s'-]+$"
     },
     "given_names": {
       "type": "name",
       "label": "Given name(s)",
-      "required": true,
+      "required": false,
       "minLength": 1,
       "placeholder": "TARO KEN",
-      "help": "Enter every given name from the passport used to enter New Zealand. Do not drop a middle given name.",
+      "help": "Enter every given name from the passport, up to 39 characters. Do not drop a middle given name. The NZTD leaves this box optional for people with a single name.",
       "errors": {
         "required": "Given name or names are required",
         "tooShort": "Enter the given name or names shown on the passport",
-        "invalidChars": "Use the English or Latin passport spelling"
-      }
+        "invalidChars": "Use the English or Latin passport spelling",
+        "tooLong": "Max 39 characters"
+      },
+      "maxLength": 39,
+      "pattern": "^[a-zA-Z\\s'-]+$"
     },
     "date_of_birth": {
       "type": "date",
       "label": "Date of birth",
       "required": true,
-      "maxDate": "2026-07-14",
       "placeholder": "1991-08-22",
-      "help": "Match the passport date. This local checker uses YYYY-MM-DD; use the official form's date controls when submitting.",
+      "help": "Match the passport date. Checked here as YYYY-MM-DD; on the NZTD it goes in three boxes: day, month (first three letters, e.g. Aug) and year.",
       "errors": {
         "required": "Date of birth is required",
         "invalidFormat": "Use YYYY-MM-DD",
-        "tooLate": "Date of birth cannot be after 2026-07-14"
-      }
+        "tooLate": "Date of birth cannot be later than today"
+      },
+      "maxDaysFromToday": 0
     },
     "country_of_birth": {
       "type": "text",
@@ -97,14 +103,16 @@
       "type": "date",
       "label": "Arrival date in New Zealand",
       "required": true,
-      "minDate": "2026-07-14",
       "placeholder": "2026-09-15",
-      "help": "Use the date your flight or vessel reaches New Zealand, not the date it leaves the first country. This local checker uses YYYY-MM-DD.",
+      "help": "The date your flight or vessel reaches New Zealand, not the date it leaves. For air travel the NZTD offers today, tomorrow and the day after (New Zealand time), or day, month and year boxes; a later date means it is too early to start. Checked here as YYYY-MM-DD.",
       "errors": {
         "required": "Arrival date is required",
         "invalidFormat": "Use YYYY-MM-DD",
-        "tooEarly": "Arrival date cannot be before 2026-07-14"
-      }
+        "tooEarly": "Arrival date cannot be before yesterday",
+        "tooLate": "Too early — the NZTD opens for arrivals within the next 2 days"
+      },
+      "minDaysFromToday": -1,
+      "maxDaysFromToday": 2
     },
     "arrival_method": {
       "type": "select",
@@ -121,10 +129,12 @@
       "label": "Flight number",
       "required": false,
       "placeholder": "NZ1",
-      "help": "Air travellers should enter the flight arriving in New Zealand. Sea travellers use the vessel and port fields instead. This checker accepts common airline-code and flight-number formats.",
+      "help": "Air travellers enter the flight that arrives in New Zealand: the two-character airline code and up to 4 digits, 3 to 7 characters, e.g. NZ1 or NZ 1. A 6-character booking reference is rejected. Sea travellers use the vessel fields instead.",
       "errors": {
         "invalidFormat": "Use the airline code and flight number, for example NZ1 or SQ285"
-      }
+      },
+      "maxLength": 7,
+      "pattern": "^(?=.{3,7}$)\\s*(?:3[Cc]|3[Uu]|[Dd]7|[A-Za-z]{2})[ -]?\\d{1,4}\\s*$"
     },
     "email": {
       "type": "email",
@@ -132,23 +142,25 @@
       "required": true,
       "maxLength": 254,
       "placeholder": "name@example.com",
-      "help": "Use an inbox you control. NZTD sends the reference number and submission information by email.",
+      "help": "Use an inbox you control. NZTD sends the reference number and submission information by email. The NZTD rejects two dots in a row or a dot next to the @.",
       "errors": {
         "required": "Email is required",
-        "invalidFormat": "Must look like name@example.com",
+        "invalidFormat": "Check the address — no spaces, no two dots in a row, no dot next to the @",
         "tooLong": "Email is too long — max 254 characters in this checker"
-      }
+      },
+      "pattern": "^(?!.*\\.\\.)[^@.\\s]([^@\\s]*[^@.\\s])?@[^@.\\s]+\\.[^@\\s]*[^@.\\s]$"
     },
     "phone": {
       "type": "phone",
       "label": "Contact phone number",
       "required": true,
-      "placeholder": "+81 90 1234 5678",
-      "help": "Include the country or region code for a number where you can be reached.",
+      "placeholder": "90 1234 5678",
+      "help": "Pick the country code in its own box. The number box takes digits, spaces, dashes and one pair of brackets, at least 5 characters, with no double spaces or dashes.",
       "errors": {
         "required": "Contact phone number is required",
-        "invalidFormat": "Include the country code and 7-15 digits"
-      }
+        "invalidFormat": "Digits, spaces, dashes and brackets only, at least 5 — no + (the country code is a separate box)"
+      },
+      "pattern": "^(?!.*[-\\s]{2})(?=(?:[^()]*\\([^()]*\\)[^()]*|[^()]*)$)[0-9()\\-\\s]{5,}(x\\d+)?$"
     },
     "nz_address": {
       "type": "text",

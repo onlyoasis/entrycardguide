@@ -159,3 +159,10 @@ domain = "ivisa.com"
 path = "/vietnam"
 first_observed = "2023-01-01"
 evidence = "Commercial visa middleman charging multiple times the $25 government e-visa fee."
+
+[form_checks]
+url = "https://evisa.gov.vn/e-visa/foreigners"
+name = "Vietnam e-Visa application form"
+agency = "Vietnam Immigration Department (Cục Quản lý xuất nhập cảnh)"
+last_verified = "2026-10-15"
+notes = "Read 2026-10-15 from the application scripts (step 1 and validation). All dates DD/MM/YYYY; date of birth up to today; passport expiry from today and at least 30 days after the e-Visa end date; e-Visa from today, at most 90 days. Surname and given names max 50 each, /^[A-Za-z\\s]+$/ ('Only Latin characters allowed, no special characters'), turned into capitals. Passport number /^[A-Z0-9]+$/, max 20. Email max 100 with the form's RFC-style pattern ('Email wrong format'). Address max 500."

@@ -1,8 +1,8 @@
 {
   "country": "cambodia",
   "officialUrl": "https://arrival.gov.kh",
-  "lastVerified": "2026-06-11",
-  "source": "https://arrival.gov.kh (official e-Arrival portal re-checked 2026-06-11)",
+  "lastVerified": "2026-10-15",
+  "source": "https://arrival.gov.kh/e-arrival (e-Arrival submission form: date boxes, calendar range and field checks read from its front-end, 2026-10-15)",
   "fields": {
     "passport": {
       "type": "passport",
@@ -25,51 +25,57 @@
       "label": "Full name",
       "required": true,
       "minLength": 1,
-      "maxLength": 80,
       "placeholder": "JOHN SMITH",
-      "help": "Use the Latin passport spelling.",
+      "help": "Use the Latin passport spelling. The e-Arrival has a surname box (optional) and a given-name box, both letters, digits and spaces only.",
       "errors": {
         "required": "Full name is required",
         "tooLong": "Max 80 characters",
-        "invalidChars": "Use Latin letters only"
-      }
+        "invalidChars": "Letters, digits and spaces only"
+      },
+      "pattern": "^[A-Za-z0-9\\s]+$"
     },
     "date_of_birth": {
       "type": "date",
       "label": "Date of birth",
       "required": true,
       "minDate": "1900-01-01",
-      "maxDate": "2026-12-31",
-      "placeholder": "1991-08-22",
-      "help": "Use YYYY-MM-DD in this local checker.",
+      "placeholder": "8/22/1991",
+      "help": "Month first: the e-Arrival date boxes use m/d/yyyy. It cannot be later than today.",
       "errors": {
         "required": "Date of birth is required",
-        "invalidFormat": "Use YYYY-MM-DD"
-      }
+        "invalidFormat": "Use M/D/YYYY (month first)",
+        "tooLate": "Date of birth cannot be later than today"
+      },
+      "format": "MM/DD/YYYY",
+      "maxDaysFromToday": 0
     },
     "flight_number": {
       "type": "flight",
       "label": "Flight number",
       "required": true,
-      "placeholder": "K6817",
-      "help": "Use the operating flight number.",
+      "placeholder": "817",
+      "help": "Pick the airline from the e-Arrival list first; the flight-number box then takes digits only (K6 817 → 817).",
       "errors": {
         "required": "Flight number is required",
-        "invalidFormat": "Use carrier code + number"
-      }
+        "invalidFormat": "Digits only — the airline code is picked separately"
+      },
+      "pattern": "^[0-9]+$"
     },
     "arrival_date": {
       "type": "date",
       "label": "Arrival date",
       "required": true,
-      "minDate": "2026-01-01",
-      "maxDate": "2028-12-31",
-      "placeholder": "2026-07-14",
-      "help": "Date you arrive in Cambodia.",
+      "placeholder": "7/14/2026",
+      "help": "Month first (m/d/yyyy). The e-Arrival calendar offers today through 6 days ahead, by the server's date.",
       "errors": {
         "required": "Arrival date is required",
-        "invalidFormat": "Use YYYY-MM-DD"
-      }
+        "invalidFormat": "Use M/D/YYYY (month first)",
+        "tooEarly": "Arrival date cannot be in the past",
+        "tooLate": "The e-Arrival takes arrivals up to 6 days ahead — come back closer to the date"
+      },
+      "format": "MM/DD/YYYY",
+      "minDaysFromToday": 0,
+      "maxDaysFromToday": 6
     },
     "email": {
       "type": "email",

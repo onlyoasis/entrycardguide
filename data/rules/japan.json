@@ -1,23 +1,24 @@
 {
   "country": "japan",
   "officialUrl": "https://services.digital.go.jp/en/visit-japan-web/",
-  "lastVerified": "2026-06-11",
-  "source": "https://services.digital.go.jp/en/visit-japan-web/ (Digital Agency service page re-checked 2026-06-11)",
+  "lastVerified": "2026-10-15",
+  "source": "https://www.vjw.digital.go.jp/main/ (Visit Japan Web front-end: passport registration and entry-information checks, read 2026-10-15), plus https://services.digital.go.jp/en/visit-japan-web/ (Digital Agency service page)",
   "fields": {
     "passport": {
       "type": "passport",
       "label": "Passport number",
       "required": true,
-      "minLength": 6,
-      "maxLength": 12,
-      "pattern": "^[A-Z0-9]{6,12}$",
+      "minLength": 1,
+      "maxLength": 9,
+      "pattern": "^[A-Z0-9]{1,9}$",
       "placeholder": "A12345678",
-      "help": "Use the passport number from the photo page.",
+      "help": "Use the passport number from the photo page: capital letters and digits, up to 9 (e.g. AB1234567).",
       "errors": {
         "required": "Passport number is required",
-        "tooShort": "Passport number too short",
-        "tooLong": "Passport number too long",
-        "invalidChars": "Letters and numbers only"
+        "tooShort": "Enter the passport number",
+        "tooLong": "Max 9 characters",
+        "invalidChars": "Letters and numbers only",
+        "invalidFormat": "Capital letters and digits only, up to 9"
       }
     },
     "full_name": {
@@ -25,63 +26,67 @@
       "label": "Full name",
       "required": true,
       "minLength": 1,
-      "maxLength": 80,
       "placeholder": "TARO YAMADA",
-      "help": "Use the Latin passport spelling.",
+      "help": "VJW has two boxes, family name and given name, up to 39 characters each, in capital letters A–Z, digits, spaces and - . , only. Check the name here in the same capitals.",
       "errors": {
         "required": "Full name is required",
-        "tooLong": "Max 80 characters",
-        "invalidChars": "Use Latin letters only"
-      }
+        "tooLong": "Each name box on VJW takes up to 39 characters",
+        "invalidChars": "Capital letters A–Z, digits, spaces and - . , only"
+      },
+      "pattern": "^[A-Z0-9 .,-]+$"
     },
     "date_of_birth": {
       "type": "date",
       "label": "Date of birth",
       "required": true,
       "minDate": "1900-01-01",
-      "maxDate": "2026-12-31",
       "placeholder": "1991-08-22",
-      "help": "Use YYYY-MM-DD in this local checker.",
+      "help": "Checked here as YYYY-MM-DD; on VJW it is three boxes: year, month, day.",
       "errors": {
         "required": "Date of birth is required",
-        "invalidFormat": "Use YYYY-MM-DD"
-      }
+        "invalidFormat": "Use YYYY-MM-DD",
+        "tooLate": "Date of birth cannot be later than today"
+      },
+      "maxDaysFromToday": 0
     },
     "flight_number": {
       "type": "flight",
       "label": "Flight number",
       "required": true,
       "placeholder": "JL5",
-      "help": "Use the operating flight number.",
+      "help": "Capital letters and digits only, no space, up to 20 — e.g. JL5, not JL 5.",
       "errors": {
         "required": "Flight number is required",
-        "invalidFormat": "Use carrier code + number"
-      }
+        "invalidFormat": "Capital letters and digits only, no spaces (e.g. JL5)"
+      },
+      "pattern": "^[A-Z0-9]+$",
+      "maxLength": 20
     },
     "arrival_date": {
       "type": "date",
       "label": "Arrival date",
       "required": true,
-      "minDate": "2026-01-01",
-      "maxDate": "2028-12-31",
-      "placeholder": "2026-07-14",
-      "help": "Date you arrive in Japan.",
+      "placeholder": "2026/07/14",
+      "help": "YYYY/MM/DD, as VJW's date box hints. VJW takes today through 31 December of next year.",
       "errors": {
         "required": "Arrival date is required",
-        "invalidFormat": "Use YYYY-MM-DD"
-      }
+        "invalidFormat": "Use YYYY/MM/DD",
+        "tooEarly": "Arrival date cannot be in the past"
+      },
+      "format": "YYYY/MM/DD",
+      "minDaysFromToday": 0
     },
     "email": {
       "type": "email",
       "label": "Email",
       "required": true,
-      "maxLength": 80,
+      "maxLength": 128,
       "placeholder": "name@example.com",
-      "help": "Use the email tied to your Visit Japan Web account.",
+      "help": "Use the email tied to your Visit Japan Web account (up to 128 characters).",
       "errors": {
         "required": "Email is required",
         "invalidFormat": "Must look like name@example.com",
-        "tooLong": "Email too long — max 80 characters"
+        "tooLong": "Email too long — max 128 characters"
       }
     }
   }

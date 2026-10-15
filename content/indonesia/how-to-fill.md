@@ -32,7 +32,7 @@ The string printed next to "Passport No." on your passport photo page.
 
 Single full-name field. Type your name as printed on the passport.
 
-- Max 80 characters.
+- Letters and spaces only; the form drops anything else and turns it into capitals.
 - Latin letters only. Use the spelling from the MRZ if your printed name has accented characters.
 - Order: match what your passport prints. Don't reorder. Some passports print family-first; some given-first.
 
@@ -42,7 +42,7 @@ Select from the dropdown. The list is in English alphabetical order.
 
 ### Date of birth
 
-Format: `YYYY-MM-DD`. The site uses a date picker on most browsers; if you paste, paste ISO format.
+Format: `DD/MM/YYYY`, as the date picker shows it. The calendar runs from January 1920 to today.
 
 ## Section 2: Trip
 
@@ -56,7 +56,7 @@ Airline 2-letter IATA code + flight number, no space.
 
 ### Arrival date
 
-Format: `YYYY-MM-DD`. The date you land in Indonesia, in **Indonesia local time** (Jakarta time, WIB).
+Format: `DD/MM/YYYY`. The date you land in Indonesia, in **Indonesia local time** (Jakarta time, WIB). The form offers yesterday, today and the next 2 days.
 
 - Bali (DPS) is in Central Indonesia time (WITA), one hour ahead of Jakarta. Use Jakarta time for the form regardless.
 - Red-eye trap: if you depart Singapore at 11pm and land in Bali at 1am, your arrival date is the next day.
@@ -136,7 +136,7 @@ This is yellow-fever screening. If yes, you may be asked to show a yellow-fever 
 You included a space, a dash, or pasted from the MRZ. Use the short passport number from the photo page.
 
 **"Invalid date of arrival"**
-You used `MM/DD/YYYY` or `DD/MM/YYYY`. Use the date picker, or paste `YYYY-MM-DD`.
+You used `MM/DD/YYYY` or `YYYY-MM-DD`, or a date outside the offered range. Use the date picker; it fills `DD/MM/YYYY`.
 
 **"Flight number not recognized"**
 Most often: codeshare carrier mismatch. Check your boarding pass for the operating carrier code. Sometimes the form rejects perfectly valid flights from smaller airlines; in that case, type the flight manually instead of selecting from the dropdown.

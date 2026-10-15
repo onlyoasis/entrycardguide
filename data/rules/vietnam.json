@@ -1,23 +1,24 @@
 {
   "country": "vietnam",
   "officialUrl": "https://evisa.gov.vn",
-  "lastVerified": "2026-06-11",
-  "source": "https://evisa.gov.vn and https://thithucdientu.gov.vn (official e-visa domains re-checked 2026-06-11)",
+  "lastVerified": "2026-10-15",
+  "source": "https://evisa.gov.vn/e-visa/foreigners (form fields and the front-end checks in its step-1 and validation modules, read 2026-10-15); https://thithucdientu.gov.vn is the Vietnamese-language twin",
   "fields": {
     "passport": {
       "type": "passport",
       "label": "Passport number",
       "required": true,
-      "minLength": 6,
-      "maxLength": 12,
-      "pattern": "^[A-Z0-9]{6,12}$",
+      "minLength": 1,
+      "maxLength": 20,
+      "pattern": "^[A-Z0-9]{1,20}$",
       "placeholder": "A12345678",
-      "help": "Printed on the photo page of your passport. Letters and numbers only.",
+      "help": "Printed on the photo page. Capital letters and digits only, up to 20. The e-visa form warns you to check the number when it is not 8 or 9 characters.",
       "errors": {
         "required": "Passport number is required",
-        "tooShort": "Passport number too short — min 6 characters",
-        "tooLong": "Passport number too long — max 12 characters",
-        "invalidChars": "Letters and numbers only — no spaces or symbols"
+        "tooShort": "Enter the passport number from the photo page",
+        "tooLong": "Passport number too long — max 20 characters",
+        "invalidChars": "Letters and numbers only — no spaces or symbols",
+        "invalidFormat": "Capital letters and digits only, up to 20"
       }
     },
     "full_name": {
@@ -25,13 +26,13 @@
       "label": "Full name (as in passport)",
       "required": true,
       "minLength": 1,
-      "maxLength": 80,
-      "help": "Exactly as shown on your passport (Latin letters only). Family name first, then given names — this matches Vietnamese name order convention.",
+      "help": "Exactly as on the passport's machine-readable (ICAO) line, surname first. The form has two boxes, Surname and Middle and given name, up to 50 characters each, letters and spaces only, and it turns them into capitals. If the passport shows only one name, it goes in the given-name box.",
       "errors": {
         "required": "Full name is required",
-        "tooLong": "Max 80 characters",
-        "invalidChars": "Use the Latin spelling from your passport — no accents or special characters"
-      }
+        "tooLong": "Each name box on the form takes up to 50 characters",
+        "invalidChars": "Only Latin characters allowed, no special characters"
+      },
+      "pattern": "^[A-Za-z\\s]+$"
     },
     "nationality": {
       "type": "nationality",
@@ -49,27 +50,30 @@
       "label": "Date of birth",
       "required": true,
       "minDate": "1900-01-01",
-      "maxDate": "2026-12-31",
-      "placeholder": "1991-08-22",
-      "help": "Format: DD/MM/YYYY on the form, but accept YYYY-MM-DD here",
+      "placeholder": "22/08/1991",
+      "help": "DD/MM/YYYY, as the e-visa calendar shows it. It cannot be later than today. If you only know the year, the form has a year-only option.",
       "errors": {
         "required": "Date of birth is required",
-        "invalidFormat": "Use YYYY-MM-DD",
+        "invalidFormat": "Use DD/MM/YYYY",
         "tooEarly": "Date of birth seems too far in the past — double check",
-        "tooLate": "Date of birth cannot be in the future"
-      }
+        "tooLate": "Date of birth cannot be later than today"
+      },
+      "format": "DD/MM/YYYY",
+      "maxDaysFromToday": 0
     },
     "passport_expiry": {
       "type": "date",
       "label": "Passport expiry date",
       "required": true,
-      "placeholder": "2030-08-22",
-      "help": "Must be at least 6 months after your planned arrival",
+      "placeholder": "22/08/2030",
+      "help": "DD/MM/YYYY. The e-visa form rejects an expired passport and needs it valid at least 30 days past the e-visa end date. Keep at least 6 months of validity after your planned arrival.",
       "errors": {
         "required": "Passport expiry is required",
-        "invalidFormat": "Use YYYY-MM-DD",
-        "tooEarly": "Passport must be valid at least 6 months after arrival"
-      }
+        "invalidFormat": "Use DD/MM/YYYY",
+        "tooEarly": "This passport has already expired"
+      },
+      "format": "DD/MM/YYYY",
+      "minDaysFromToday": 0
     },
     "intended_arrival": {
       "type": "date",
@@ -77,13 +81,14 @@
       "required": true,
       "minDate": "2026-01-01",
       "maxDate": "2027-12-31",
-      "placeholder": "2026-05-14",
-      "help": "Format: YYYY-MM-DD — when you plan to enter Vietnam. E-visa is valid for 90 days from this date.",
+      "placeholder": "14/05/2026",
+      "help": "DD/MM/YYYY — when you plan to enter Vietnam. The e-visa's own valid-from and valid-to dates are two more boxes on the form, at most 90 days apart and not before today.",
       "errors": {
         "required": "Intended date of entry is required",
-        "invalidFormat": "Use YYYY-MM-DD",
+        "invalidFormat": "Use DD/MM/YYYY",
         "tooLate": "Date too far in the future"
-      }
+      },
+      "format": "DD/MM/YYYY"
     },
     "port_of_entry": {
       "type": "text",
@@ -122,14 +127,15 @@
       "type": "email",
       "label": "Email",
       "required": true,
-      "maxLength": 80,
+      "maxLength": 100,
       "placeholder": "name@example.com",
-      "help": "Approval letter and e-visa PDF are sent here.",
+      "help": "Approval letter and e-visa PDF are sent here. Up to 100 characters; you type it twice, and the confirm box does not accept pasting.",
       "errors": {
         "required": "Email is required",
-        "invalidFormat": "Must look like name@example.com",
-        "tooLong": "Email too long — max 80 characters"
-      }
+        "invalidFormat": "Email wrong format — check the address",
+        "tooLong": "Email too long — max 100 characters"
+      },
+      "pattern": "^[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$"
     }
   }
 }

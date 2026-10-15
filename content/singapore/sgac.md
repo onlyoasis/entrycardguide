@@ -47,6 +47,6 @@ If a confirmation is missing, check the official retrieval/help options before s
 
 ## Optional local checks
 
-The checker below applies this guide's local limits. It does not reproduce every question or verify an ICA record. Follow the live form's requirements if they differ; a warning here does not prove the government will reject your entry.
+The checker below follows the field checks read from the live SG Arrival Card on 15 October 2026. It does not reproduce every question or verify an ICA record. Follow the live form's requirements if they differ; a warning here does not prove the government will reject your entry.
 
 {{< validator country="singapore" >}}

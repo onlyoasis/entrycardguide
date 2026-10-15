@@ -1,24 +1,24 @@
 {
   "country": "usa",
   "officialUrl": "https://esta.cbp.dhs.gov/",
-  "lastVerified": "2026-07-14",
-  "source": "https://esta.cbp.dhs.gov/ and https://esta.cbp.dhs.gov/download/app?hideClose=true (official CBP home and printable application), plus https://www.cbp.gov/sites/default/files/documents/Vol_49_No_17_Title.pdf (CBP mandatory-field notice); re-checked 2026-07-14. CBP publishes no passport-number length limit, so this local checker uses a broad 1-20 alphanumeric range instead of treating the plan's 6-15 range as official.",
+  "lastVerified": "2026-10-15",
+  "source": "https://esta.cbp.dhs.gov/ and https://esta.cbp.dhs.gov/download/app?hideClose=true (official CBP home and printable application), plus https://www.cbp.gov/sites/default/files/documents/Vol_49_No_17_Title.pdf (CBP mandatory-field notice); re-checked 2026-07-14. Field limits and patterns read from the ESTA application front-end on 2026-10-15: family and first name 45 characters each, passport number 6 to 10 (most issuing countries 9 at most, checked against the country's own format), email 100, phone number box digits and spaces up to 20 after a country-code list, and dates picked from day, month and year lists.",
   "fields": {
     "passport": {
       "type": "passport",
       "label": "Passport number",
       "required": true,
-      "minLength": 1,
-      "maxLength": 20,
-      "pattern": "^[A-Z0-9]{1,20}$",
+      "minLength": 6,
+      "maxLength": 10,
+      "pattern": "^[A-Z0-9]{6,10}$",
       "placeholder": "A12345678",
-      "help": "Copy the number exactly from the VWP e-passport used for travel. This checker accepts a broad alphanumeric range because CBP publishes no fixed length.",
+      "help": "Copy the number exactly from the VWP e-passport used for travel: 6 to 10 letters and digits. ESTA also checks the issuing country's own format; for most countries that means 9 characters at most.",
       "errors": {
         "required": "Passport number is required",
-        "tooShort": "Enter the passport number printed on the photo page",
-        "tooLong": "Check the passport number — this local checker allows up to 20 characters",
+        "tooShort": "At least 6 characters",
+        "tooLong": "Max 10 characters",
         "invalidChars": "Use letters and numbers only",
-        "invalidFormat": "Use the letters and numbers printed as the passport number"
+        "invalidFormat": "6 to 10 letters and digits"
       }
     },
     "full_name": {
@@ -27,49 +27,53 @@
       "required": true,
       "minLength": 1,
       "placeholder": "TARO YAMADA",
-      "help": "Enter every family and given name in the Latin spelling shown on the passport.",
+      "help": "ESTA has two boxes, family name and first (given) name, up to 45 characters each: letters, spaces, apostrophes, hyphens and commas. Enter every name in the Latin spelling shown on the passport.",
       "errors": {
         "required": "Full name is required",
         "tooShort": "Enter the name shown on the passport",
-        "invalidChars": "Use the Latin passport spelling"
-      }
+        "invalidChars": "Letters, spaces, apostrophes, hyphens and commas only"
+      },
+      "pattern": "^(?!\\s*$)[a-zA-Z '\\-,‘‛’′‵—–]*$"
     },
     "date_of_birth": {
       "type": "date",
       "label": "Date of birth",
       "required": true,
-      "maxDate": "2026-07-13",
       "placeholder": "1991-08-22",
-      "help": "Use YYYY-MM-DD in this local checker. Match the passport date.",
+      "help": "Match the passport date. Checked here as YYYY-MM-DD; ESTA asks it with three lists: day, month, year.",
       "errors": {
         "required": "Date of birth is required",
         "invalidFormat": "Use YYYY-MM-DD",
-        "tooLate": "Date of birth cannot be after 2026-07-13"
-      }
+        "tooLate": "Date of birth cannot be later than today"
+      },
+      "maxDaysFromToday": 0
     },
     "email": {
       "type": "email",
       "label": "Email",
       "required": true,
-      "maxLength": 254,
+      "maxLength": 100,
       "placeholder": "name@example.com",
-      "help": "Use an address you control. ESTA requires email verification and sends the application number here.",
+      "help": "Use an address you control. ESTA requires email verification and sends the application number here. Up to 100 characters.",
       "errors": {
         "required": "Email is required",
         "invalidFormat": "Must look like name@example.com",
-        "tooLong": "Email is too long — max 254 characters in this checker"
-      }
+        "tooLong": "Max 100 characters"
+      },
+      "pattern": "^[A-Za-z0-9.\\-_%!#$*/?|^~`'{}&+=‘‛’′‵—–]+@[A-Za-z0-9.\\-—–]+\\.[A-Za-z]+$"
     },
     "phone": {
       "type": "phone",
       "label": "Phone number",
       "required": true,
-      "placeholder": "+44 20 7946 0958",
-      "help": "Include the country code. If you have no phone, CBP permits a reachable third-party contact number.",
+      "placeholder": "20 7946 0958",
+      "help": "Pick the country code from ESTA's list. The number box takes digits and spaces, up to 20. If you have no phone, CBP permits a reachable third-party contact number.",
       "errors": {
         "required": "A contact phone number is required",
-        "invalidFormat": "Include country code and 7-15 digits"
-      }
+        "invalidFormat": "Digits and spaces only, up to 20 — the country code is a separate list"
+      },
+      "pattern": "^[0-9\\s]+$",
+      "maxLength": 20
     },
     "home_address": {
       "type": "text",

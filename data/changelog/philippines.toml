@@ -13,3 +13,10 @@ summary = "Field guide rebuilt on the official eTravel wizard text"
 summary_zh = "字段指南改用 eTravel 官方向导文案重构"
 summary_zh_hant = "欄位指南改用 eTravel 官方向導文案重構"
 detail = "Cards now use the form's own labels and step order (Data Policy item list plus the form page's i18n catalog: MM/DD/YYYY dates, Mobile Number card added, official flight-number notice). Three unsourced error strings were replaced with verbatim FAQ quotes (QR colors, 72-hour window, lost-QR recovery, free of charge, duplicate registration). meta.field_count re-counted to the 28 items the Data Policy enumerates."
+
+[[entries]]
+date = "2026-10-15"
+summary = "Checker follows the live eTravel dates: MM/DD/YYYY, arrival within 4 days"
+summary_zh = "本地检查器按在线 eTravel 更新：日期 MM/DD/YYYY，抵达日在 4 天内"
+summary_zh_hant = "本地檢查器按線上 eTravel 更新：日期 MM/DD/YYYY，抵達日在 4 天內"
+detail = "Read the eTravel form scripts. The date picker uses MM/DD/YYYY; date of birth up to today; arrival date today to 4 days ahead. Passport number at least 5 characters."

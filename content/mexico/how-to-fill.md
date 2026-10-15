@@ -29,15 +29,15 @@ The string printed next to "Passport No." on your passport photo page.
 
 Your first and middle names, exactly as shown on the passport.
 
-- **Max 50 characters.**
-- **Latin letters only.** The INM form rejects accented characters and non-Latin scripts. Use the spelling from the MRZ line of your passport, which is always ASCII.
+- **Max 100 characters.**
+- **Latin letters.** The FMM accepts accents (é, ñ, ü), single spaces, hyphens and apostrophes, but not non-Latin scripts. Copy the Latin name printed on the passport.
 - If your passport shows both a native-script name and a Latin transliteration, use the Latin one.
 
 ### Family name (Apellidos)
 
 Your surname. In Spanish-speaking countries, people use two last names (paternal + maternal). If your passport lists both, include both, separated by a space. If your passport lists only one, use that.
 
-- **Max 50 characters.**
+- **Max 100 characters.**
 - **Hyphenated names:** keep the hyphen exactly as on the passport.
 
 ### Nationality
@@ -49,16 +49,16 @@ The country that issued your passport, as an ISO 3-letter code.
 
 ### Date of birth
 
-Format: `YYYY-MM-DD`. The INM site uses a date picker on most browsers, but if you paste, paste ISO format.
+Format: `DD/MM/YYYY`, day first; the FMM's date boxes check for that pattern. A date picker opens on most browsers.
 
-- `1991-08-22`, not `22/08/1991` and not `08-22-1991`.
-- **Common error:** "Fecha inválida" almost always means you used the US `MM/DD/YYYY` format. Mexico uses `DD/MM/YYYY` in everyday life, but the INM form accepts `YYYY-MM-DD` via its picker.
+- `22/08/1991`, not `08/22/1991` and not `1991-08-22`.
+- **Common error:** "Fecha inválida" almost always means you used the US `MM/DD/YYYY` format. The FMM wants `DD/MM/YYYY`, day first.
 
 ## Section 2: Trip
 
 ### Arrival date
 
-Format: `YYYY-MM-DD`. The date you actually enter Mexico.
+Format: `DD/MM/YYYY`. The date you actually enter Mexico: today through 29 days ahead.
 
 - For air arrivals, use the date printed on your ticket for the Mexico segment.
 - For land crossings, use the date you plan to cross. If that slips by a day, you can file again or update at the border.
@@ -91,9 +91,9 @@ If you are unsure, pick tourism. The difference mostly affects the days authoriz
 
 Where you will stay.
 
-- **Max 200 characters.**
-- Hotel name plus city is enough for tourism.
-- Example: `Hotel Xcaret Mexico, Carretera Chetumal-Puerto Juarez Km 282, Playa del Carmen, Quintana Roo`.
+- **Max 40 characters**: letters, digits, spaces and `- . , " '` only, no ñ or accents; the FMM turns it into capitals.
+- Hotel name, street and number, as the form's hint says.
+- Example: `HOTEL XCARET, CARR. CHETUMAL KM 282`.
 - If you are staying at multiple places, use your first night's address. The INM does not require a full itinerary.
 - Airbnb is fine. Use the address the host provided in your booking confirmation.
 
@@ -122,7 +122,7 @@ Where your FMM-E PDF is sent. Use a monitored inbox.
 You included a space, a dash, or pasted from the MRZ. Use the short passport number from the photo page.
 
 **"Fecha inválida" / "Invalid date"**
-You used `MM/DD/YYYY` or `DD/MM/YYYY`. Use the date picker, or paste `YYYY-MM-DD`.
+You used `MM/DD/YYYY` or `YYYY-MM-DD`, or an arrival more than 29 days out. Use `DD/MM/YYYY`, or the date picker.
 
 **"Nacionalidad no encontrada" / "Nationality not found"**
 You typed the country name in English but searched in Spanish. Try the 3-letter code (`USA`, `CAN`, `GBR`).

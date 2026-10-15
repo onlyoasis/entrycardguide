@@ -6,3 +6,10 @@ summary = "Turkey guide published"
 summary_zh = "土耳其 e-Visa 指南上线"
 summary_zh_hant = "土耳其 e-Visa 指南上線"
 detail = "Adds the official e-Visa and MFA eligibility sources, current visa-exemption and conditional e-Visa rules, field rules, and documented commercial middlemen."
+
+[[entries]]
+date = "2026-10-15"
+summary = "Checker follows the live e-Visa site: DD.MM.YYYY dates and web-form lengths"
+summary_zh = "本地检查器按在线 e-Visa 网站更新：日期 DD.MM.YYYY，长度按网页表单"
+summary_zh_hant = "本地檢查器按線上 e-Visa 網站更新：日期 DD.MM.YYYY，長度按網頁表單"
+detail = "Read the e-Visa site scripts. Dates are DD.MM.YYYY; arrival and passport expiry from today, birth and passport issue dates up to today. Web-form limits: names and parents' names 50, passport number 20, email 100, address 100; the phone box keeps digits only after a country code list. The guide had used the group e-Visa guide's transfer-file limits."

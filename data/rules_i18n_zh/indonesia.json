@@ -17,12 +17,12 @@
   },
   "full_name": {
    "label": "全名（与护照相同）",
-   "help": "与护照显示完全一致（仅拉丁字母）。",
+   "help": "与护照显示完全一致。All Indonesia 表单只保留字母和空格，并转成大写。",
    "errors": {
     "required": "请输入全名",
     "tooShort": "请输入护照上显示的姓名",
     "tooLong": "最多 80 个字符",
-    "invalidChars": "使用护照上的拉丁拼写——不带重音符号或特殊字符"
+    "invalidChars": "只能用字母和空格——表单会删掉其他字符"
    }
   },
   "nationality": {
@@ -35,20 +35,20 @@
   },
   "date_of_birth": {
    "label": "出生日期",
-   "help": "格式：YYYY-MM-DD。",
+   "help": "DD/MM/YYYY，与 All Indonesia 日期选择器显示一致。日历范围是 1920 年 1 月到今天。",
    "errors": {
     "required": "请输入出生日期",
-    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidFormat": "请使用 DD/MM/YYYY 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
-    "tooEarly": "出生日期似乎过早——请再次确认",
+    "tooEarly": "表单日历从 1920 年开始——请再确认",
     "tooLate": "出生日期不能晚于今天"
    }
   },
   "flight_number": {
    "label": "航班或船班编号",
-   "help": "航空公司两位 IATA 代码＋航班编号（例如嘉鲁达 GA456、亚航 AK788）。邮轮请填船舶识别号。",
+   "help": "表单分两格：航空公司代码（最多 3 个字符，例如 GA）和航班号（最多 8 个字符），只能用字母和数字。这里合在一起检查，例如 GA456。搭邮轮时填船舶识别码。",
    "errors": {
     "required": "请输入航班或船班编号",
     "invalidFormat": "格式：航空公司代码＋编号（例如 GA456），中间无空格。"
@@ -56,15 +56,15 @@
   },
   "arrival_date": {
    "label": "抵达印尼日尔期",
-   "help": "格式：YYYY-MM-DD——你落地印尼的日期（雅加达时间）。",
+   "help": "DD/MM/YYYY，抵达印尼的日期。表单提供昨天、今天、明天、后天四个选项，所以请在抵达前 2 天内填写。",
    "errors": {
     "required": "请输入抵达日期",
-    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidFormat": "请使用 DD/MM/YYYY 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
-    "tooLate": "抵达日期似乎过远",
-    "tooEarly": "抵达日期不能早于 2026-01-01"
+    "tooLate": "还太早——表单只收 2 天内的抵达日期",
+    "tooEarly": "表单最早只能选昨天"
    }
   },
   "port_of_entry": {

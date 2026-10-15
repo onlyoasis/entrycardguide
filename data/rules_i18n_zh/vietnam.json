@@ -6,23 +6,23 @@
  "fields": {
   "passport": {
    "label": "护照号码",
-   "help": "印在护照照片页上，只含字母和数字。",
+   "help": "印在护照照片页上。只能用大写字母和数字，最多 20 个字符；号码不是 8 或 9 位时，电子签表单会提示你再核对。",
    "errors": {
     "required": "请输入护照号码",
-    "tooShort": "护照号码太短——至少 6 个字符",
-    "tooLong": "护照号码太长——最多 12 个字符",
+    "tooShort": "请输入照片页上的护照号码",
+    "tooLong": "护照号码太长——最多 20 个字符",
     "invalidChars": "只能使用字母和数字——不含空格或符号",
-    "invalidFormat": "请输入照片页上印刷的字母与数字"
+    "invalidFormat": "只能用大写字母和数字，最多 20 个字符"
    }
   },
   "full_name": {
    "label": "全名（与护照相同）",
-   "help": "与护照显示完全一致（仅拉丁字母）。越南姓名顺序：姓在前，名在后。",
+   "help": "照护照机读区（ICAO 行）填，姓在前。表单分两格：姓（Surname）和中间名与名（Middle and given name），各最多 50 个字符，只能用字母和空格，系统会转成大写。护照上只有一个名字时，填在名的那一格。",
    "errors": {
     "required": "请输入全名",
     "tooShort": "请输入护照上显示的姓名",
-    "tooLong": "最多 80 个字符",
-    "invalidChars": "使用护照上的拉丁拼写——不带重音符号或特殊字符"
+    "tooLong": "表单上每个姓名格最多 50 个字符",
+    "invalidChars": "只能使用拉丁字母，不能有特殊字符"
    }
   },
   "nationality": {
@@ -35,10 +35,10 @@
   },
   "date_of_birth": {
    "label": "出生日期",
-   "help": "表单上为 DD/MM/YYYY，但本检查器接受 YYYY-MM-DD。",
+   "help": "DD/MM/YYYY，与电子签日历显示一致。不能晚于今天。只知道出生年份时，表单有「仅年份」选项。",
    "errors": {
     "required": "请输入出生日期",
-    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidFormat": "请使用 DD/MM/YYYY 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
@@ -48,22 +48,22 @@
   },
   "passport_expiry": {
    "label": "护照效期",
-   "help": "必须比预计抵达日至少晚 6 个月",
+   "help": "DD/MM/YYYY。电子签表单不接受已过期的护照，并要求效期比电子签结束日至少多 30 天。计划入境后护照最好还有 6 个月以上效期。",
    "errors": {
     "required": "请输入护照效期",
-    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidFormat": "请使用 DD/MM/YYYY 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
-    "tooEarly": "护照必须在抵达后至少还有 6 个月效期"
+    "tooEarly": "这本护照已经过期"
    }
   },
   "intended_arrival": {
    "label": "预计入境日期",
-   "help": "格式：YYYY-MM-DD——你计划进入越南的日期。电子签自该日期起 90 天有效。",
+   "help": "DD/MM/YYYY——预计入境越南的日期。电子签本身的生效日与截止日是表单上另外两格，最多相隔 90 天，且不能早于今天。",
    "errors": {
     "required": "请输入预计入境日期",
-    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidFormat": "请使用 DD/MM/YYYY 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
@@ -96,11 +96,11 @@
   },
   "email": {
    "label": "电子邮件",
-   "help": "核准函与电子签 PDF 将寄到此信箱。",
+   "help": "核准函与电子签 PDF 将寄到此信箱。最多 100 个字符；要输入两次，确认栏不能粘贴。",
    "errors": {
     "required": "请输入电子邮件",
-    "invalidFormat": "格式必须类似 name@example.com",
-    "tooLong": "电子邮件太长——最多 80 个字符"
+    "invalidFormat": "电子邮件格式错误，请检查地址",
+    "tooLong": "电子邮件太长——最多 100 个字符"
    }
   }
  }

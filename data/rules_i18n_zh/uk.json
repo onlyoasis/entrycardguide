@@ -27,14 +27,14 @@
   },
   "date_of_birth": {
    "label": "出生日期",
-   "help": "在本机检查器中使用 YYYY-MM-DD 格式，与护照显示的日期一致。",
+   "help": "与护照上的日期一致。这里按 YYYY-MM-DD 检查；在线表单分 Day、Month、Year 三格填写。",
    "errors": {
     "required": "请输入出生日期",
     "invalidFormat": "请使用 YYYY-MM-DD 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
-    "tooLate": "出生日期不能晚于 2026-07-14"
+    "tooLate": "出生日期必须是过去的日期"
    }
   },
   "email": {
@@ -42,7 +42,7 @@
    "help": "请使用你可收信的信箱。内政部会寄送提交与结果通知，包括 16 位 ETA 参考号。",
    "errors": {
     "required": "请输入电子邮件",
-    "invalidFormat": "格式必须类似 name@example.com",
+    "invalidFormat": "请输入真实的电子邮箱地址",
     "tooLong": "电子邮件太长——本检查器最多 254 个字符"
    }
   },

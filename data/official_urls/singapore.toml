@@ -140,7 +140,8 @@ last_verified = "2026-10-12"
 url = "https://eservices.ica.gov.sg/arrivalcard/sgac"
 name = "ICA enhanced SGAC service"
 agency = "Immigration & Checkpoints Authority"
-last_verified = "2026-10-12"
+last_verified = "2026-10-15"
+notes = "Field checks read 2026-10-15 from the arrival card scripts: dates DD/MM/YYYY; arrival today to 2 days ahead, Singapore time; date of birth up to today; full name max 66, /^[A-Za-z][A-Za-z' /.()\\-@,]*$/; passport number max 20; flight number digits only after the airline is picked; email max 100, /^[^\\s@]+@(?:[^\\s@.]+\\.)+[^\\s@.]+$/; mobile number digits, max 12."
 
 [arrival_date_help]
 url = "https://ask.gov.sg/ica/questions/cluuhsp9l001afxu700snp0f0"
