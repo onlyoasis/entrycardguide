@@ -1,0 +1,36 @@
+# Russia — unified e-Visa uploads.
+# Checked 2026-10-15 on evisa.kdmid.ru/Home/Instruction: digital photo of the
+# passport data in JPEG; digital face photo in JPEG, no more than six months
+# old, face 70-80 percent of the photo, rectangular with the 35x45 aspect
+# ratio, no frames. No file size is published.
+
+[[forms]]
+form = "evisa"
+label_en = "Unified e-Visa"
+label_zh = "统一电子签证"
+label_zh_hant = "統一電子簽證"
+source = "https://evisa.kdmid.ru/Home/Instruction"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+ratio_w = 35
+ratio_h = 45
+face_min = 70
+face_max = 80
+formats = ["jpg"]
+out_w = 700
+out_h = 900
+note_en = "Taken within 6 months. Full face, neutral expression, nose on the centre line, plain light background, no frame, no shadows or flash glare."
+note_zh = "6 个月内拍摄。完整正脸，表情自然，鼻子在中线上，浅色纯背景，不加边框，没有阴影和闪光反光。"
+note_zh_hant = "6 個月內拍攝。完整正臉，表情自然，鼻子在中線上，淺色純背景，不加邊框，沒有陰影和閃光反光。"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+formats = ["jpg"]
+out_long = 1600
+note_en = "A JPEG photo of the data page of the passport you will carry at the border, with the whole page in frame."
+note_zh = "过境时所持护照的资料页，JPEG 格式，整页都在画面里。"
+note_zh_hant = "過境時所持護照的資料頁，JPEG 格式，整頁都在畫面裡。"

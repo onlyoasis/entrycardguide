@@ -15,6 +15,8 @@ For each country, in this order:
    - No new fee has been added.
    - No new exemptions or eligibility changes were announced.
 
+   - If `data/photo_specs/{country}.toml` exists, open each form's `source` page and compare the photo size, pixel range, file-size limit and formats. Change only numbers the official page publishes, then set that form's `checked` date. Run `npm run sync:zh-hant` after editing any `note_zh`.
+
 2. ~~DNS-audit the `scam_sites` list.~~ **No longer part of the review.** The site
    stopped publishing middleman and lookalike-site listings on 2026-08-10. The
    `[[scam_sites]]` arrays remain in the TOML files as an internal record, but

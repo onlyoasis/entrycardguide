@@ -1,0 +1,29 @@
+# Ethiopia — eVisa uploads.
+# From data/fields/ethiopia.toml (evisa.gov.et upload note, verified
+# 2026-10-12): a recent passport-size photo and a scanned colour passport
+# copy, as JPEG, JPG or PNG. No pixel size or file size is published.
+
+[[forms]]
+form = "evisa"
+label_en = "eVisa"
+label_zh = "电子签证"
+label_zh_hant = "電子簽證"
+source = "https://www.evisa.gov.et/information/tourist"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+formats = ["jpg", "png"]
+tool = false
+note_en = "Recent passport-size photo. The upload note accepts JPEG, JPG and PNG and publishes no pixel or file size."
+note_zh = "近期护照规格照片。上传说明接受 JPEG、JPG 和 PNG，没有公布像素和文件大小。"
+note_zh_hant = "近期護照規格照片。上傳說明接受 JPEG、JPG 和 PNG，沒有公佈像素和文件大小。"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+formats = ["jpg", "png"]
+tool = false
+note_en = "A scanned colour copy of the passport."
+note_zh = "彩色扫描的护照副本。"
+note_zh_hant = "彩色掃描的護照副本。"

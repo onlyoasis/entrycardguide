@@ -1,0 +1,45 @@
+# United Kingdom — ETA photos.
+# Checked 2026-10-15. gov.uk/eta/apply: the app scans the passport and the
+# face; the online form needs a photo of the passport and a photo of the face
+# that follows "the rules for digital photos of faces". Those rules
+# (gov.uk/guidance/how-to-take-a-photo-for-a-visa-application-or-permission):
+# at least 600 pixels wide and 750 pixels tall, at least 50KB and no more than
+# 6MB, jpg or jpeg, vertically orientated, not altered by computer software,
+# not mirrored or flipped.
+
+[[forms]]
+form = "eta"
+label_en = "ETA"
+label_zh = "电子旅行授权"
+label_zh_hant = "電子旅行授權"
+source = "https://www.gov.uk/guidance/how-to-take-a-photo-for-a-visa-application-or-permission"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+px_min_w = 600
+px_min_h = 750
+kb_min = 50
+kb_max = 6000
+formats = ["jpg"]
+out_w = 900
+out_h = 1125
+note_en = "Online form. Colour, in focus, taken in a well-lit room, upright. No filters or software edits, not mirrored."
+note_zh = "网页申请用。彩色、对焦清楚、光线充足、竖拍。不加滤镜，不用软件修改，不镜像翻转。"
+note_zh_hant = "網頁申請用。彩色、對焦清楚、光線充足、豎拍。不加濾鏡，不用軟件修改，不鏡像翻轉。"
+
+[[forms.items]]
+kind = "face"
+capture = "live"
+note_en = "UK ETA app. The app photographs and scans your face with the phone camera; there is no file to upload."
+note_zh = "UK ETA App 用手机摄像头现场拍照并扫描面部，不需要上传文件。"
+note_zh_hant = "UK ETA App 用手機攝像頭現場拍照並掃描面部，不需要上傳文件。"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+tool = false
+note_en = "The app photographs the original passport and may scan its chip. The online form needs a clear photo of the passport page."
+note_zh = "App 会拍原本护照，可能还会读取芯片。网页申请需要一张清晰的护照资料页照片。"
+note_zh_hant = "App 會拍原本護照，可能還會讀取芯片。網頁申請需要一張清晰的護照資料頁照片。"

@@ -1,0 +1,25 @@
+# Pakistan — Visa Prior to Arrival.
+# From data/fields/pakistan.toml (verified 2026-08-30): the official mobile
+# guide includes a live-photograph step; the passport document is uploaded as
+# the current screen asks. No pixel or file size is published.
+
+[[forms]]
+form = "vpa"
+label_en = "VPA"
+label_zh = "落地前签证（VPA）"
+label_zh_hant = "落地前簽證（VPA）"
+
+[[forms.items]]
+kind = "face"
+capture = "live"
+note_en = "The official mobile guide includes a live-photograph step. Follow the capture prompt."
+note_zh = "官方手机指南里有现场拍照这一步，按提示拍。"
+note_zh_hant = "官方手機指南里有現場拍照這一步，按提示拍。"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+tool = false
+note_en = "Upload the passport document the current screen asks for. No pixel or file-size limit is published."
+note_zh = "按当前页面要求上传护照文件。官方没有公布像素和文件大小上限。"
+note_zh_hant = "按當前頁面要求上傳護照文件。官方沒有公佈像素和文件大小上限。"

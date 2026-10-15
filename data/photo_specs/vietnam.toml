@@ -1,0 +1,36 @@
+# Vietnam — photo and document uploads for the e-Visa.
+# Schema and rendering: layouts/partials/photo-spec-text.html.
+# Checked 2026-10-15 against the interface text served by evisa.gov.vn:
+# "Photo of the person requesting an electronic visa (newly taken, photo size
+# 4x6 cm, jpg, jpeg format, size <2MB, straight face, no hat, no glasses,
+# formal clothes, white background). Only upload 1 passport data page". The
+# same bundle carries an "Image quality is too low" error.
+
+[[forms]]
+form = "evisa"
+label_en = "e-Visa"
+label_zh = "电子签证"
+label_zh_hant = "電子簽證"
+source = "https://evisa.gov.vn"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+mm_w = 40
+mm_h = 60
+kb_max = 2000
+formats = ["jpg"]
+out_w = 600
+out_h = 900
+note_en = "Recent photo on a white background. Face straight to the camera, no hat, no glasses, formal clothes. The portal also rejects images it judges too low in quality."
+note_zh = "近期照片，白色背景。正脸对着镜头，不戴帽子，不戴眼镜，穿正装。画质太低的图片也会被系统拒收。"
+note_zh_hant = "近期照片，白色背景。正臉對著鏡頭，不戴帽子，不戴眼鏡，穿正裝。畫質太低的圖片也會被系統拒收。"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+tool = false
+note_en = "Upload one clear image of the passport data page. The portal reads it to fill in your personal details, so check every field it fills."
+note_zh = "上传一张清晰的护照资料页。系统会读取它自动填写个人信息，提交前逐项核对。"
+note_zh_hant = "上傳一張清晰的護照資料頁。系統會讀取它自動填寫個人資訊，提交前逐項核對。"

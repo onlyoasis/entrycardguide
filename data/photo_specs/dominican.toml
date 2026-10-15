@@ -1,0 +1,11 @@
+# Dominican Republic — no photo or passport image upload.
+# Evidence: content/dominican/eticket.md says none of the form fields requires a photo upload.
+
+[[forms]]
+form = "eticket"
+label_en = "E-Ticket"
+label_zh = "E-Ticket 电子票"
+label_zh_hant = "E-Ticket 電子票"
+
+[[forms.items]]
+kind = "none"

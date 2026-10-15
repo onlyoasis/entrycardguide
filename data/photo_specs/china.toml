@@ -1,0 +1,20 @@
+# China — arrival card passport image.
+# From data/fields/china.toml (live form, verified 2026-10-12): the passport
+# upload accepts JPEG or PNG, rejects PDF, compresses the image itself and
+# then checks a 102400-byte limit. The tool aims under 100,000 bytes.
+
+[[forms]]
+form = "arrivalcard"
+label_en = "Arrival Card"
+label_zh = "入境卡"
+label_zh_hant = "入境卡"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+kb_max = 100
+formats = ["jpg", "png"]
+out_long = 1200
+note_en = "A clear JPEG or PNG of the document data page; PDF is refused. The page compresses your image before it checks the 102,400-byte limit, and a file under the limit is still not a guarantee. No face photo is asked for."
+note_zh = "证件资料页的清晰 JPEG 或 PNG，不收 PDF。页面会先压缩图片再检查 102400 字节上限；文件低于上限也不保证一定通过。不需要人像照片。"
+note_zh_hant = "證件資料頁的清晰 JPEG 或 PNG，不收 PDF。頁面會先壓縮圖片再檢查 102400 字節上限；文件低於上限也不保證一定通過。不需要人像照片。"

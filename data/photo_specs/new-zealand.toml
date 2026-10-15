@@ -1,0 +1,54 @@
+# New Zealand — two forms.
+# NZ Traveller Declaration: no upload; data/fields/new-zealand.toml covers
+# all 18 fields.
+# NZeTA: checked 2026-10-15 on INZ "Acceptable photos for a visa or NZeTA"
+# (512 KB to 3.14 MB, portrait with 3:4 aspect ratio, JPG or JPEG, face
+# 70%-80% of the image, taken within 6 months; no AI or other digital edits,
+# including brightness, contrast, sharpness and cutting the head out onto a
+# plain background; selfies only in the NZeTA app) and "Fixing errors when
+# uploading a photo" (900 x 1200 to 2250 x 3000 pixels, 500 KB to 3 MB).
+# The stricter of each pair is used: 512 KB to 3 MB.
+
+[[forms]]
+form = "nztd"
+label_en = "NZ Traveller Declaration"
+label_zh = "新西兰旅客申报"
+label_zh_hant = "新西蘭旅客申報"
+
+[[forms.items]]
+kind = "none"
+
+[[forms]]
+form = "nzeta"
+label_en = "NZeTA (separate)"
+label_zh = "NZeTA（另办）"
+label_zh_hant = "NZeTA（另辦）"
+source = "https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/applying-online/uploading-documents-and-photos/visa-and-nzeta-photos/"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+ratio_w = 3
+ratio_h = 4
+px_min_w = 900
+px_min_h = 1200
+px_max_w = 2250
+px_max_h = 3000
+face_min = 70
+face_max = 80
+kb_min = 512
+kb_max = 3000
+formats = ["jpg"]
+out_w = 1200
+out_h = 1600
+note_en = "Website request. Taken within 6 months by someone else, face in the middle of the frame. INZ refuses photos changed with AI or editing tools, including brightness, contrast, sharpness or a cut-out background. Resizing is what INZ itself suggests when a file is too big or too small."
+note_zh = "网页申请用。6 个月内、最好请别人拍，脸在画面正中。INZ 拒收用 AI 或修图工具改过的照片，包括调亮度、对比度、锐度和抠图换背景。文件太大或太小时，INZ 自己建议的做法就是调整尺寸。"
+note_zh_hant = "網頁申請用。6 個月內、最好請別人拍，臉在畫面正中。INZ 拒收用 AI 或修圖工具改過的照片，包括調亮度、對比度、銳度和摳圖換背景。文件太大或太小時，INZ 自己建議的做法就是調整尺寸。"
+
+[[forms.items]]
+kind = "face"
+capture = "live"
+note_en = "NZeTA app. Selfies are accepted only when you request the NZeTA in the app."
+note_zh = "NZeTA App。只有在 App 里申请时才接受自拍。"
+note_zh_hant = "NZeTA App。只有在 App 裡申請時才接受自拍。"

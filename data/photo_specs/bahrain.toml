@@ -1,0 +1,18 @@
+# Bahrain — eVisa passport copy.
+# From data/fields/bahrain.toml (verified 2026-08-30): upload a clear copy of
+# the passport you will use. No size or file type is published on the pages
+# this guide reads.
+
+[[forms]]
+form = "evisa"
+label_en = "eVisa"
+label_zh = "电子签证"
+label_zh_hant = "電子簽證"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+tool = false
+note_en = "A clear copy of the passport you will travel on, with the identity details readable."
+note_zh = "出行所用护照的清晰副本，身份信息要看得清。"
+note_zh_hant = "出行所用護照的清晰副本，身份資訊要看得清。"

@@ -1,0 +1,51 @@
+# India — two forms.
+# e-Arrival Card: no upload. data/official_urls/india.toml lists what the web
+# form asks for (identity, passport, purpose, arrival, recent travel, India
+# address, contact, emergency contact, declaration).
+# e-Visa: checked 2026-10-15 on indianvisaonline.gov.in/evisa/tvoa.html:
+# photo "Format - JPEG Size Minimum 10 KB Maximum 1 MB", height and width
+# equal, full face, front view, eyes open, without spectacles, plain light or
+# white background, no shadows, without borders; scanned bio page "Format -PDF
+# Size : Minimum 10 KB ,Maximum 300 KB".
+
+[[forms]]
+form = "earrival"
+label_en = "e-Arrival Card"
+label_zh = "电子入境卡"
+label_zh_hant = "電子入境卡"
+
+[[forms.items]]
+kind = "none"
+
+[[forms]]
+form = "evisa"
+label_en = "e-Visa (separate)"
+label_zh = "电子签证（另办）"
+label_zh_hant = "電子簽證（另辦）"
+source = "https://indianvisaonline.gov.in/evisa/tvoa.html"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+ratio_w = 1
+ratio_h = 1
+kb_min = 10
+kb_max = 1000
+formats = ["jpg"]
+out_w = 600
+out_h = 600
+note_en = "Full face, front view, eyes open, no glasses. Centre the head with all of it in frame, top of hair to bottom of chin. Plain light or white background, no shadows, no border."
+note_zh = "完整正脸，双眼睁开，不戴眼镜。头部居中，从发顶到下巴完整入画。浅色或白色纯背景，没有阴影，不加边框。"
+note_zh_hant = "完整正臉，雙眼睜開，不戴眼鏡。頭部居中，從髮頂到下巴完整入畫。淺色或白色純背景，沒有陰影，不加邊框。"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+kb_min = 10
+kb_max = 300
+formats = ["pdf"]
+out_long = 1600
+note_en = "A scan of the bio page showing your photo and details, as a PDF."
+note_zh = "带照片和个人信息的护照资料页扫描件，PDF 格式。"
+note_zh_hant = "帶照片和個人資訊的護照資料頁掃描件，PDF 格式。"

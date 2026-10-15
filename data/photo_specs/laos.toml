@@ -1,0 +1,37 @@
+# Laos — eVisa uploads.
+# Photo rules checked 2026-10-15 on laoevisa.gov.la/faq ("Sized 4 x 6 cm, in
+# color, taken within the last 6 months, with no shadows, with a plain white
+# background, face the camera, neutral expression, both eyes open"). File
+# types and the 2 MB cap come from the application page, as recorded in
+# data/fields/laos.toml (verified 2026-10-12).
+
+[[forms]]
+form = "evisa"
+label_en = "eVisa"
+label_zh = "电子签证"
+label_zh_hant = "電子簽證"
+source = "https://laoevisa.gov.la/faq"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+mm_w = 40
+mm_h = 60
+kb_max = 2000
+formats = ["jpg", "png"]
+out_w = 600
+out_h = 900
+note_en = "Colour, taken within 6 months, plain white background, no shadows. Face the camera with a neutral expression and both eyes open."
+note_zh = "彩色，6 个月内拍摄，纯白背景，没有阴影。正对镜头，表情自然，双眼睁开。"
+note_zh_hant = "彩色，6 個月內拍攝，純白背景，沒有陰影。正對鏡頭，表情自然，雙眼睜開。"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+kb_max = 2000
+formats = ["jpg", "png"]
+out_long = 1600
+note_en = "The whole bio page, with every edge and both machine-readable lines at the bottom in frame."
+note_zh = "整张资料页，四条边和底部两行机读码都要在画面里。"
+note_zh_hant = "整張資料頁，四條邊和底部兩行機讀碼都要在畫面裡。"

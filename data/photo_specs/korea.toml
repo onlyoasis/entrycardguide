@@ -1,0 +1,18 @@
+# Korea — e-Arrival Card passport scan.
+# From data/fields/korea.toml (verified 2026-10-14): the portal reads the data
+# page from a camera photo or an upload; the image must include both
+# machine-readable lines; if the scan fails, type the details. K-ETA is a
+# separate form and is not covered here.
+
+[[forms]]
+form = "earrivalcard"
+label_en = "e-Arrival Card"
+label_zh = "电子入境卡"
+label_zh_hant = "電子入境卡"
+
+[[forms.items]]
+kind = "passport"
+capture = "optional"
+note_en = "The portal reads the data page from a camera photo or an uploaded image; include both machine-readable lines. If the scan fails, type the details yourself. No face photo is asked for."
+note_zh = "系统从拍照或上传的资料页读取信息，图片要包含底部两行机读码。识别失败就手动输入。不需要人像照片。"
+note_zh_hant = "系統從拍照或上傳的資料頁讀取資訊，圖片要包含底部兩行機讀碼。識別失敗就手動輸入。不需要人像照片。"

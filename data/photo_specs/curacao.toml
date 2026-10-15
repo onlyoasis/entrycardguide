@@ -1,0 +1,16 @@
+# Curaçao — DI Card passport image.
+# From content/curacao/how-to-fill.md (verified 2026-10-12): uploading a
+# passport image is optional; if it fails, complete the fields manually.
+
+[[forms]]
+form = "dicard"
+label_en = "DI Card"
+label_zh = "数字入境卡"
+label_zh_hant = "數字入境卡"
+
+[[forms.items]]
+kind = "passport"
+capture = "optional"
+note_en = "Uploading a passport image is optional. If it fails, complete the fields by hand. No face photo is asked for."
+note_zh = "上传护照图片是可选的。上传失败就手动填写。不需要人像照片。"
+note_zh_hant = "上傳護照圖片是可選的。上傳失敗就手動填寫。不需要人像照片。"

@@ -1,0 +1,17 @@
+# Taiwan — TWAC passport upload.
+# From content/taiwan/twac.md and the official English user manual (verified
+# 2026-10-12): passport upload or manual entry.
+
+[[forms]]
+form = "twac"
+label_en = "TWAC"
+label_zh = "台湾入境登记表"
+label_zh_hant = "臺灣入境登記表"
+source = "https://twac.immigration.gov.tw/files/UserManual_Eng.pdf"
+
+[[forms.items]]
+kind = "passport"
+capture = "optional"
+note_en = "The official manual offers a passport upload or manual entry. No face photo is asked for."
+note_zh = "官方手册提供两种方式：上传护照或手动输入。不需要人像照片。"
+note_zh_hant = "官方手冊提供兩種方式：上傳護照或手動輸入。不需要人像照片。"

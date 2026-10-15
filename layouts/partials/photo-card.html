@@ -1,0 +1,46 @@
+{{- /* "What this form asks you to upload" on a country's how-to-fill page.
+       Renders only when data/photo_specs/{country}.toml exists. Rows come
+       from photo-rows.html, so the card, the /photo-requirements/ table and
+       the tool show the same rule. */ -}}
+{{- $country := .Section -}}
+{{- $rows := where (partialCached "photo-rows.html" . site.Language.Lang) "key" $country -}}
+{{- with $rows -}}
+{{- $toolPath := "/photo-requirements/" | relLangURL -}}
+{{- $forms := slice }}{{ range . }}{{ if not (in $forms .form) }}{{ $forms = $forms | append .form }}{{ end }}{{ end -}}
+<section id="photo-uploads" class="pb-xl" aria-labelledby="photo-uploads-heading">
+  <div class="text-meta font-mono uppercase text-muted mb-2">{{ i18n "photo_card_eyebrow" }}</div>
+  <h2 id="photo-uploads-heading" class="font-serif font-medium m-0 mb-lg" style="font-size: 32px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144;">{{ i18n "photo_card_heading" }}</h2>
+  <div class="border border-rule rounded-md overflow-hidden">
+    {{- range $n, $form := $forms }}
+    {{- $items := where $rows "form" $form }}
+    {{- $first := index $items 0 }}
+    <div class="photo-card-form{{ if gt $n 0 }} border-t border-rule{{ end }}">
+      <h3 class="font-serif font-medium m-0 mb-4" style="font-size: 24px; letter-spacing: -0.01em; font-variation-settings: 'opsz' 144;">{{ $first.formLabel }}</h3>
+      {{- range $items }}
+      {{- if eq .kind "none" }}
+      <p class="m-0 text-verified font-medium">{{ .kindLabel }}</p>
+      <p class="m-0 mt-1" style="font-size: 16px; line-height: 1.6;">{{ i18n "photo_none_body" }}</p>
+      {{- else }}
+      <div class="photo-card-item">
+        <div class="text-meta font-mono uppercase text-muted mb-2">{{ .kindLabel }} · {{ .captureLabel }}</div>
+        {{- if ne .capture "live" }}
+        <dl class="photo-facts">
+          <div><dt>{{ i18n "photo_label_size" }}</dt><dd>{{ .size }}</dd></div>
+          <div><dt>{{ i18n "photo_label_file" }}</dt><dd>{{ .file }}</dd></div>
+          <div><dt>{{ i18n "photo_label_format" }}</dt><dd>{{ .format }}</dd></div>
+        </dl>
+        {{- end }}
+        {{- with .note }}<p class="m-0" style="font-size: 16px; line-height: 1.6;">{{ . }}</p>{{ end }}
+        {{- if .preset }}
+        <p class="m-0 mt-2"><a href="{{ $toolPath }}#photo-{{ .id }}" class="text-ink underline underline-offset-4 font-medium">{{ i18n "photo_tool_link" }}</a></p>
+        {{- end }}
+      </div>
+      {{- end }}
+      {{- end }}
+      <p class="text-xs text-muted m-0 mt-4">{{ i18n "photo_label_source" }}: <a href="{{ $first.source }}" target="_blank" rel="noopener" class="text-muted underline underline-offset-2">{{ replaceRE "^https?://([^/]+).*$" "$1" $first.source }} ↗</a> · {{ i18n "photo_label_checked" }} <span class="font-mono">{{ $first.checked }}</span></p>
+    </div>
+    {{- end }}
+  </div>
+  <p class="text-small mt-4 mb-0"><a href="{{ $toolPath }}" class="text-ink underline underline-offset-4">{{ i18n "photo_all_link" }}</a></p>
+</section>
+{{- end -}}

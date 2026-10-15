@@ -1,0 +1,25 @@
+# Georgia — e-Visa photo.
+# Checked 2026-10-15 on the evisa.gov.ge FAQ, "Photo requirements": taken
+# within 6 months, facing the camera, head 50%-70% of the image height (top of
+# head with hair to bottom of chin). Snapshots, mobile-device photos and
+# copies of photos from other official documents are not accepted. The FAQ
+# publishes no pixel size, file size or file type. Because phone photos are
+# refused, the browser tool is not offered for this form.
+
+[[forms]]
+form = "evisa"
+label_en = "e-Visa"
+label_zh = "电子签证"
+label_zh_hant = "電子簽證"
+source = "https://www.evisa.gov.ge/GeoVisa/en/Home/FAQ"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+face_min = 50
+face_max = 70
+tool = false
+note_en = "Taken within 6 months, facing the camera. The FAQ refuses snapshots, mobile-device photos and photos copied from another official document, so use a proper passport-style photo."
+note_zh = "6 个月内拍摄，正对镜头。FAQ 明确拒收随手拍、手机照片和从其他证件翻拍的照片，请用正规证件照。"
+note_zh_hant = "6 個月內拍攝，正對鏡頭。FAQ 明確拒收隨手拍、手機照片和從其他證件翻拍的照片，請用正規證件照。"

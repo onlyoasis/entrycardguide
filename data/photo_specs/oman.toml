@@ -1,0 +1,29 @@
+# Oman — eVisa uploads.
+# From data/fields/oman.toml (evisa.rop.gov.om FAQ, verified 2026-10-12): the
+# passport file and the personal photo are each capped at 512 KB. The FAQ
+# publishes no pixel size or file type.
+
+[[forms]]
+form = "evisa"
+label_en = "eVisa"
+label_zh = "电子签证"
+label_zh_hant = "電子簽證"
+source = "https://evisa.rop.gov.om/en/frequently-asked-questions"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+kb_max = 512
+out_long = 1200
+note_en = "Keep the picture at or below 512 KB. No pixel size or file type is published."
+note_zh = "照片不超过 512 KB。官方没有公布像素尺寸和文件格式。"
+note_zh_hant = "照片不超過 512 KB。官方沒有公佈像素尺寸和文件格式。"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+kb_max = 512
+out_long = 1600
+note_en = "Compress carefully so the name, number and dates stay readable."
+note_zh = "压缩时保证姓名、号码和日期仍然看得清。"
+note_zh_hant = "壓縮時保證姓名、號碼和日期仍然看得清。"

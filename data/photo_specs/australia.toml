@@ -1,0 +1,17 @@
+# Australia — ETA (subclass 601).
+# From content/australia/eta.md (Home Affairs, verified 2026-10-12): apply in
+# the AustralianETA app; it scans the data page, reads the chip and takes a
+# live face photo. The eVisitor (651) guide on this site has no photo step.
+
+[[forms]]
+form = "eta601"
+label_en = "ETA (subclass 601)"
+label_zh = "ETA（601 类）"
+label_zh_hant = "ETA（601 類）"
+
+[[forms.items]]
+kind = "face"
+capture = "live"
+note_en = "Apply only in the AustralianETA app. It scans the passport data page, reads the chip and takes a live face photo; there is nothing to upload."
+note_zh = "只能在 AustralianETA App 里申请。App 扫描护照资料页、读取芯片并现场拍脸，没有文件要上传。"
+note_zh_hant = "只能在 AustralianETA App 裡申請。App 掃描護照資料頁、讀取芯片並現場拍臉，沒有文件要上傳。"

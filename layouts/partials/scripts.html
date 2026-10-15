@@ -68,6 +68,17 @@
 <script src="{{ $ask.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $ask.Data.Integrity }}"{{ end }} defer></script>
 {{- end }}
 
+{{- /* Photo tool — /photo-requirements/ only (gated like ask.js). The photo is
+       processed in the browser; the script makes no request and sends no event. */ -}}
+{{- if .HasShortcode "photo-tool" }}
+  {{- $photoOpts := dict "targetPath" "js/photo.js" "minify" hugo.IsProduction "target" "es2020" "format" "iife" }}
+  {{- $photo := resources.Get "js/photo.ts" | js.Build $photoOpts }}
+  {{- if hugo.IsProduction }}
+    {{- $photo = $photo | resources.Fingerprint "sha256" }}
+  {{- end }}
+<script src="{{ $photo.RelPermalink }}"{{ if hugo.IsProduction }} integrity="{{ $photo.Data.Integrity }}"{{ end }} defer></script>
+{{- end }}
+
 {{- partial "nav-script.html" . -}}
 
 {{- if eq .Section "library" }}

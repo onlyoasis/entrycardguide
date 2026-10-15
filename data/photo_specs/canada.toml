@@ -1,0 +1,11 @@
+# Canada — no photo or passport image upload.
+# Evidence: data/fields/canada.toml documents all 11 fields; none asks for an image.
+
+[[forms]]
+form = "eta"
+label_en = "eTA"
+label_zh = "eTA 电子旅行授权"
+label_zh_hant = "eTA 電子旅行授權"
+
+[[forms.items]]
+kind = "none"

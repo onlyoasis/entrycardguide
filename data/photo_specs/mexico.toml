@@ -1,0 +1,11 @@
+# Mexico — no photo or passport image upload.
+# Evidence: content/mexico/fmm.md says none of the form fields requires a photo upload.
+
+[[forms]]
+form = "fmm"
+label_en = "FMM-E"
+label_zh = "FMM-E 电子移民表"
+label_zh_hant = "FMM-E 電子移民表"
+
+[[forms.items]]
+kind = "none"

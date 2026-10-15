@@ -1,0 +1,11 @@
+# Malaysia — no photo or passport image upload.
+# Evidence: content/malaysia/how-to-fill.md walks every section of the form; none asks for an image.
+
+[[forms]]
+form = "mdac"
+label_en = "MDAC"
+label_zh = "MDAC 数字入境卡"
+label_zh_hant = "MDAC 數字入境卡"
+
+[[forms.items]]
+kind = "none"

@@ -1,0 +1,27 @@
+# Tanzania — eVisa photo.
+# Checked 2026-10-15 on visa.immigration.go.tz/guidelines, section 10 "Photo
+# specifications": colour, plain background, full face from top of hair to
+# bottom of chin, no distracting shadows, "should not exceed 45mm (length) X
+# 35 mm (Width)", "should not exceed 500KB", JPG or JPEG.
+
+[[forms]]
+form = "evisa"
+label_en = "eVisa"
+label_zh = "电子签证"
+label_zh_hant = "電子簽證"
+source = "https://visa.immigration.go.tz/guidelines"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+mm_w = 35
+mm_h = 45
+mm_is_max = true
+kb_max = 500
+formats = ["jpg"]
+out_w = 700
+out_h = 900
+note_en = "Colour, plain background, full face from top of hair to bottom of chin, eyes open, no shadows. Glasses are allowed if you wear them every day. Head coverings only for religious reasons."
+note_zh = "彩色，纯色背景，从发顶到下巴完整正脸，双眼睁开，没有阴影。平时戴眼镜的可以戴着拍。头巾仅限宗教原因。"
+note_zh_hant = "彩色，純色背景，從髮頂到下巴完整正臉，雙眼睜開，沒有陰影。平時戴眼鏡的可以戴著拍。頭巾僅限宗教原因。"

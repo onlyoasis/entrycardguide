@@ -1,0 +1,23 @@
+# Morocco — eVisa uploads.
+# From data/fields/morocco.toml (official eVisa guide, verified 2026-10-12):
+# a good-quality 35 x 45 mm colour photo taken within the last 6 months.
+# The guide caps scanned attachments at 1 MB but gives no file limit or file
+# type for the photo itself, so none is shown here.
+
+[[forms]]
+form = "evisa"
+label_en = "eVisa"
+label_zh = "电子签证"
+label_zh_hant = "電子簽證"
+source = "https://www.acces-maroc.ma/assets/docs/Guide%20eVisa.pdf"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+mm_w = 35
+mm_h = 45
+out_w = 700
+out_h = 900
+note_en = "Good-quality colour photo taken within the last 6 months, with facial features clearly shown."
+note_zh = "清晰的彩色照片，6 个月内拍摄，五官清楚可见。"
+note_zh_hant = "清晰的彩色照片，6 個月內拍攝，五官清楚可見。"

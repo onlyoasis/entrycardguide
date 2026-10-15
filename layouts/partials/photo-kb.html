@@ -1,0 +1,6 @@
+{{- /* A published file-size number from data/photo_specs (kb_min/kb_max, in
+       KB as the government writes it) as display text: 2000 → "2 MB",
+       512 → "512 KB". */ -}}
+{{- $text := printf "%d KB" . -}}
+{{- if and (ge . 1000) (eq (mod . 1000) 0) }}{{ $text = printf "%d MB" (div . 1000) }}{{ end -}}
+{{- return $text -}}

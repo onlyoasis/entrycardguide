@@ -276,6 +276,83 @@
     @apply mt-2;
   }
 
+  /* Photo rules and tool — photo-card.html, photo-specs / photo-tool shortcodes, photo.ts */
+  .photo-tool {
+    @apply border border-rule rounded-md p-4 sm:p-6 my-lg bg-white;
+  }
+  .photo-step + .photo-step {
+    @apply mt-lg pt-md border-t border-rule;
+  }
+  .photo-file {
+    @apply block w-full text-small;
+  }
+  .photo-canvas {
+    @apply block border border-ink rounded-sm cursor-grab;
+    max-width: 100%;
+    touch-action: none;
+  }
+  .photo-canvas:active {
+    @apply cursor-grabbing;
+  }
+  .photo-canvas:focus-visible,
+  .photo-file:focus-visible,
+  .photo-use:focus-visible {
+    outline: 2px solid theme('colors.verified');
+    outline-offset: 3px;
+  }
+  .photo-controls {
+    @apply flex flex-wrap items-center gap-3 mt-3;
+  }
+  .photo-controls input[type="range"] {
+    @apply flex-1;
+    min-width: 8rem;
+    max-width: 16rem;
+    accent-color: theme('colors.ink');
+  }
+  .photo-preview {
+    @apply block border border-rule rounded-sm;
+    max-width: 100%;
+  }
+  .photo-checks {
+    @apply list-none p-0 m-0 mt-3 grid gap-1 text-small;
+  }
+  .photo-status {
+    @apply mt-md mb-0 text-scam font-medium;
+  }
+  .photo-status:empty {
+    display: none;
+  }
+  .photo-facts {
+    @apply grid gap-x-6 gap-y-2 m-0 mb-3;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  }
+  .photo-facts dt {
+    @apply text-meta font-mono uppercase text-muted;
+  }
+  .photo-facts dd {
+    @apply m-0 text-small text-ink;
+  }
+  .photo-card-form {
+    @apply p-6;
+  }
+  .photo-card-item + .photo-card-item {
+    @apply mt-5 pt-5 border-t border-rule;
+  }
+  .photo-use {
+    @apply text-xs px-3 py-1;
+  }
+  .photo-col-country { width: 11%; }
+  .photo-col-form { width: 13%; }
+  .photo-col-upload { width: 32%; }
+  .photo-col-size { width: 16%; }
+  .photo-col-file { width: 10%; }
+  .photo-col-format { width: 8%; }
+  .photo-col-checked { width: 10%; }
+  .photo-none-list {
+    @apply list-none p-0 my-md grid gap-2 text-small;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  }
+
   .directory-input {
     @apply w-full min-w-0 border border-rule rounded-sm bg-paper text-ink px-3 py-2;
     min-height: 2.75rem;

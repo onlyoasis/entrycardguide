@@ -184,6 +184,9 @@
   </div>
 </section>
 
+{{- /* Photo and upload rules, when data/photo_specs/{country}.toml exists */ -}}
+{{- partial "photo-card.html" . -}}
+
 {{- /* Error decoder band ------------------------------------------- */ -}}
 {{- with $errors }}
 <section class="-mx-md px-md py-xl border-y border-rule" style="background:#F4F2EC;">

@@ -1,0 +1,18 @@
+# Nepal — tourist visa form.
+# From data/fields/nepal.toml (verified 2026-10-12): the online guidance asks
+# for a recent passport-size digital photograph. No pixel or file size is
+# published.
+
+[[forms]]
+form = "tourist_visa_form"
+label_en = "Tourist visa form"
+label_zh = "旅游签证表"
+label_zh_hant = "旅遊簽證表"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+tool = false
+note_en = "Recent passport-size digital photo, ready before you open the form. No pixel or file-size limit is published."
+note_zh = "近期护照规格的数码照片，打开表单前准备好。官方没有公布像素和文件大小上限。"
+note_zh_hant = "近期護照規格的數碼照片，打開表單前準備好。官方沒有公佈像素和文件大小上限。"

@@ -1,0 +1,11 @@
+# Aruba — no photo or passport image upload.
+# Evidence: data/fields/aruba.toml documents all 10 fields; none asks for an image.
+
+[[forms]]
+form = "ed_card"
+label_en = "ED Card"
+label_zh = "ED 入境卡"
+label_zh_hant = "ED 入境卡"
+
+[[forms.items]]
+kind = "none"

@@ -1,0 +1,28 @@
+# United States — ESTA.
+# Checked 2026-10-15. ESTA asks for a photo of the passport biographic page;
+# the ESTA Mobile app also takes a live face photo. Federal Register notice
+# 2025-22461 (10 December 2025) proposes a face photo for every applicant and
+# app-only applications. This guide found no final rule.
+
+[[forms]]
+form = "esta"
+label_en = "ESTA"
+label_zh = "ESTA"
+label_zh_hant = "ESTA"
+source = "https://www.govinfo.gov/content/pkg/FR-2025-12-10/html/2025-22461.htm"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+tool = false
+note_en = "A photo of the passport biographic page, on the website or in the app."
+note_zh = "护照个人信息页的照片，网页和 App 都要。"
+note_zh_hant = "護照個人資訊頁的照片，網頁和 App 都要。"
+
+[[forms.items]]
+kind = "face"
+capture = "live"
+note_en = "The ESTA Mobile app takes a live photo of your face. A December 2025 CBP notice proposes a face photo for every applicant and an app-only process; check the live site before you apply."
+note_zh = "ESTA Mobile App 会现场拍脸。CBP 2025 年 12 月的公告提议所有申请人都要拍脸，并只能用 App 申请；申请前以官网现行要求为准。"
+note_zh_hant = "ESTA Mobile App 會現場拍臉。CBP 2025 年 12 月的公告提議所有申請人都要拍臉，並只能用 App 申請；申請前以官網現行要求為準。"

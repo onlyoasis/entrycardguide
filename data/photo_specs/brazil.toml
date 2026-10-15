@@ -1,0 +1,20 @@
+# Brazil — eVisa photo (contractor portal).
+# From data/fields/brazil.toml (verified 2026-10-12): a recent front-facing
+# photo; the application shows its own background, pose and file controls and
+# the contractor checks the photo before verified submission. No numbers are
+# published on the pages this guide reads.
+
+[[forms]]
+form = "evisa"
+label_en = "eVisa"
+label_zh = "电子签证"
+label_zh_hant = "電子簽證"
+source = "https://brazil.vfsevisa.com/tourist-visa.html"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+tool = false
+note_en = "Recent front-facing photo. Follow the background, pose and file rules the application shows; the contractor checks the photo before submission."
+note_zh = "近期正面照。按申请页面显示的背景、姿势和文件要求准备，代理机构会在提交前审核照片。"
+note_zh_hant = "近期正面照。按申請頁面顯示的背景、姿勢和文件要求準備，代理機構會在提交前審核照片。"

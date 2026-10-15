@@ -1,0 +1,57 @@
+{{- /* Photo and upload rules from data/photo_specs, in roster order.
+       {{< photo-specs >}}             one table row per upload or live photo step
+       {{< photo-specs show="none" >}} forms whose official version asks for no image
+       Each row's id (photo-{country}-{form}-{kind}-{capture}) is the anchor the
+       country cards link to; for tool presets, photo.ts also selects that preset. */ -}}
+{{- $rows := partialCached "photo-rows.html" .Page site.Language.Lang -}}
+{{- if eq (.Get "show") "none" }}
+<ul class="not-prose photo-none-list" aria-label="{{ i18n "photo_none_list_label" }}">
+  {{- range where $rows "kind" "none" }}
+  <li id="photo-{{ .id }}">
+    <a href="{{ printf "/%s/how-to-fill/" .key | relLangURL }}" class="text-ink no-underline hover:underline underline-offset-4 font-medium">{{ .name }}</a>
+    <span class="text-muted"> · </span>
+    <a href="{{ .formUrl }}" target="_blank" rel="noopener" class="text-ink underline underline-offset-4" data-analytics-event="official_link_click" data-country="{{ .key }}" data-official-key="{{ .form }}" data-link-slot="photo">{{ .formLabel }}</a>
+  </li>
+  {{- end }}
+</ul>
+{{- else }}
+<div class="not-prose photo-specs">
+  <p id="photo-scroll-hint" class="directory-scroll-hint text-small text-muted my-3">{{ i18n "directory_scroll_hint" }}</p>
+  <div class="directory-scroll" role="region" aria-label="{{ i18n "photo_table_label" }}" aria-describedby="photo-scroll-hint" tabindex="0">
+  <table class="directory-table photo-table">
+    <caption class="sr-only">{{ i18n "photo_table_label" }}</caption>
+    <colgroup>
+      <col class="photo-col-country"><col class="photo-col-form"><col class="photo-col-upload"><col class="photo-col-size"><col class="photo-col-file"><col class="photo-col-format"><col class="photo-col-checked">
+    </colgroup>
+    <thead>
+      <tr>
+        {{- range slice (i18n "directory_country") (i18n "photo_col_form") (i18n "photo_col_upload") (i18n "photo_label_size") (i18n "photo_label_file") (i18n "photo_label_format") (i18n "photo_label_checked") }}
+        <th scope="col">{{ . }}</th>
+        {{- end }}
+      </tr>
+    </thead>
+    <tbody>
+      {{- range where $rows "kind" "ne" "none" }}
+      {{- $live := eq .capture "live" }}
+      <tr id="photo-{{ .id }}">
+        <th scope="row"><a href="{{ printf "/%s/how-to-fill/" .key | relLangURL }}" class="text-ink no-underline hover:underline underline-offset-4">{{ .name }}</a></th>
+        <td><a href="{{ .formUrl }}" target="_blank" rel="noopener" class="text-ink underline underline-offset-4" data-analytics-event="official_link_click" data-country="{{ .key }}" data-official-key="{{ .form }}" data-link-slot="photo">{{ .formLabel }}</a></td>
+        <td>
+          <span class="font-medium">{{ .kindLabel }}</span>
+          <div class="text-xs text-muted mt-1">{{ .captureLabel }}</div>
+          {{- with .note }}<p class="text-xs text-muted m-0 mt-2">{{ . }}</p>{{ end }}
+          {{- if .preset }}
+          <button type="button" class="photo-use btn-ghost mt-3" data-photo-use="{{ .id }}" hidden>{{ i18n "photo_tool_use" }}</button>
+          {{- end }}
+        </td>
+        <td>{{ if $live }}<span class="text-muted">—</span>{{ else }}{{ .size }}{{ end }}</td>
+        <td>{{ if $live }}<span class="text-muted">—</span>{{ else }}{{ .file }}{{ end }}</td>
+        <td>{{ if $live }}<span class="text-muted">—</span>{{ else }}{{ .format }}{{ end }}</td>
+        <td class="directory-date"><a href="{{ .source }}" target="_blank" rel="noopener" class="text-muted underline underline-offset-2">{{ .checked }}</a></td>
+      </tr>
+      {{- end }}
+    </tbody>
+  </table>
+  </div>
+</div>
+{{- end }}

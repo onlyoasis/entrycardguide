@@ -1,0 +1,71 @@
+{{- /* Browser-only photo tool (assets/js/photo.ts). Presets are the
+       data/photo_specs items that are file uploads with at least one
+       published number; tool = false in the data keeps an item out.
+
+       Rendered hidden; photo.ts reveals it. The photo is decoded, cropped,
+       resized and encoded in this browser and never leaves it: the script
+       makes no network request and sends no analytics. */ -}}
+{{- $rows := where (partialCached "photo-rows.html" .Page site.Language.Lang) "preset" true -}}
+{{- $presets := slice -}}
+{{- range $rows -}}
+  {{- $s := .spec -}}
+  {{- $presets = $presets | append (dict
+    "id" .id "group" .name "label" (printf "%s · %s · %s" .name .formLabel .kindLabel) "kind" .kind
+    "size" .size "file" .file "format" .format "note" .note
+    "ratioW" $s.ratioW "ratioH" $s.ratioH "outW" $s.outW "outH" $s.outH "outLong" $s.outLong
+    "pxMinW" $s.pxMinW "pxMinH" $s.pxMinH "pxMaxW" $s.pxMaxW "pxMaxH" $s.pxMaxH
+    "kbMin" $s.kbMin "kbMax" $s.kbMax "mmW" $s.mmW "faceMin" $s.faceMin "faceMax" $s.faceMax
+    "formats" $s.formats) -}}
+{{- end -}}
+{{- $strings := dict -}}
+{{- range slice "choose_form" "drag_hint" "working" "make" "download" "check_format" "check_pixels" "check_ratio" "check_bytes" "pass" "fail" "err_read" "err_big" "err_small" "upscaled" "output" "no_limit" "pdf_note" "guide_top" "guide_chin" -}}
+  {{- $strings = merge $strings (dict . (i18n (printf "photo_tool_%s" .))) -}}
+{{- end -}}
+{{- $strings = merge $strings (dict "size" (i18n "photo_label_size") "file" (i18n "photo_label_file") "format" (i18n "photo_label_format")) -}}
+<section class="photo-tool not-prose" id="photo-tool" aria-labelledby="photo-tool-title">
+  <h2 id="photo-tool-title" class="font-serif font-medium text-h2 mb-1">{{ i18n "photo_tool_heading" }}</h2>
+  <p class="text-small text-muted mb-4">{{ i18n "photo_tool_intro" }}</p>
+  <noscript><p class="text-small">{{ i18n "photo_tool_noscript" }}</p></noscript>
+  <div data-photo-tool hidden>
+    <div class="photo-step">
+      <label for="photo-preset" class="directory-label">{{ i18n "photo_tool_step_form" }}</label>
+      <select id="photo-preset" class="directory-input" data-photo-preset>
+        <option value="">{{ i18n "photo_tool_choose_form" }}</option>
+        {{- $group := "" }}
+        {{- range $i, $p := $presets }}
+        {{- if ne $p.group $group }}{{ if $group }}</optgroup>{{ end }}<optgroup label="{{ $p.group }}">{{ $group = $p.group }}{{ end }}
+          <option value="{{ $p.id }}">{{ $p.label }}</option>
+        {{- end }}
+        {{- if $group }}</optgroup>{{ end }}
+      </select>
+      <div class="photo-spec text-small mt-3" data-photo-spec hidden></div>
+    </div>
+    <div class="photo-step">
+      <label for="photo-file" class="directory-label">{{ i18n "photo_tool_step_photo" }}</label>
+      <input id="photo-file" type="file" class="photo-file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif" aria-describedby="photo-file-help" data-photo-file disabled>
+      <p id="photo-file-help" class="text-xs text-muted mt-2 mb-0">{{ i18n "photo_tool_file_label" }}</p>
+    </div>
+    <div class="photo-step" data-photo-stage hidden>
+      <div class="directory-label">{{ i18n "photo_tool_step_frame" }}</div>
+      <p class="text-xs text-muted mt-0 mb-3">{{ i18n "photo_tool_drag_hint" }}</p>
+      <canvas class="photo-canvas" tabindex="0" role="img" aria-label="{{ i18n "photo_tool_canvas_label" }}" data-photo-canvas></canvas>
+      <div class="photo-controls">
+        <label for="photo-zoom" class="text-small">{{ i18n "photo_tool_zoom" }}</label>
+        <input id="photo-zoom" type="range" min="1" max="4" step="0.01" value="1" data-photo-zoom>
+        <button type="button" class="btn-ghost" data-photo-rotate>{{ i18n "photo_tool_rotate" }}</button>
+      </div>
+      <button type="button" class="btn-ink mt-4" data-photo-make>{{ i18n "photo_tool_make" }}</button>
+    </div>
+    <div class="photo-step photo-result" data-photo-result hidden>
+      <div class="directory-label">{{ i18n "photo_tool_step_result" }}</div>
+      <canvas class="photo-preview" role="img" aria-label="{{ i18n "photo_tool_result_label" }}" data-photo-preview></canvas>
+      <ul class="photo-checks" data-photo-checks></ul>
+      <p class="text-small m-0 mt-3" data-photo-note hidden></p>
+      <a class="btn-ink no-underline inline-block mt-4" data-photo-download href="#photo-tool">{{ i18n "photo_tool_download" }}</a>
+      <p class="text-xs text-muted mt-4 mb-0">{{ i18n "photo_tool_reminder" }}</p>
+    </div>
+    <p class="photo-status text-small" role="status" aria-live="polite" data-photo-status></p>
+    <p class="text-xs text-muted mt-4 mb-0">{{ i18n "photo_tool_note_edit" }}</p>
+  </div>
+  <script type="application/json" data-photo-tool-data>{{ dict "t" $strings "p" $presets | jsonify | safeJS }}</script>
+</section>

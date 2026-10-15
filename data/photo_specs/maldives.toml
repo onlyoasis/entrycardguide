@@ -1,0 +1,17 @@
+# Maldives — IMUGA traveller declaration passport page.
+# From data/fields/maldives.toml (verified 2026-10-12): the first public step
+# scans or uploads the passport data page.
+
+[[forms]]
+form = "traveller_declaration"
+label_en = "Traveller Declaration (IMUGA)"
+label_zh = "旅客申报（IMUGA）"
+label_zh_hant = "旅客申報（IMUGA）"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+tool = false
+note_en = "The first step scans or uploads the passport data page, not a visa page."
+note_zh = "第一步扫描或上传护照资料页，不是签证页。"
+note_zh_hant = "第一步掃描或上傳護照資料頁，不是簽證頁。"

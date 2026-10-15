@@ -1,0 +1,11 @@
+# Turkey — no photo or passport image upload.
+# Evidence: data/fields/turkey.toml documents all 18 fields; none asks for an image.
+
+[[forms]]
+form = "evisa"
+label_en = "e-Visa"
+label_zh = "电子签证"
+label_zh_hant = "電子簽證"
+
+[[forms.items]]
+kind = "none"

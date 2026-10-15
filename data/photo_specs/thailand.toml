@@ -1,0 +1,11 @@
+# Thailand — no photo or passport image upload.
+# Evidence: content/thailand/tdac.md says none of the form fields requires a photo upload; data/fields/thailand.toml.
+
+[[forms]]
+form = "tdac"
+label_en = "TDAC"
+label_zh = "TDAC 电子入境卡"
+label_zh_hant = "TDAC 電子入境卡"
+
+[[forms.items]]
+kind = "none"

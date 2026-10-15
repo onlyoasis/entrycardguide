@@ -1,0 +1,17 @@
+# Panama — customs traveller declaration (DJV).
+# From content/panama/traveler-declaration.md (verified 2026-10-12): on the
+# digital route the traveller takes a photograph, which replaces the
+# handwritten signature.
+
+[[forms]]
+form = "traveler_declaration"
+label_en = "Traveller declaration (DJV)"
+label_zh = "旅客申报（DJV）"
+label_zh_hant = "旅客申報（DJV）"
+
+[[forms.items]]
+kind = "face"
+capture = "live"
+note_en = "On the digital route you take a photograph during the declaration. Customs rules say it replaces the handwritten signature."
+note_zh = "走线上流程时，申报中要现场拍一张照片。海关规定它代替手写签名。"
+note_zh_hant = "走線上流程時，申報中要現場拍一張照片。海關規定它代替手寫簽名。"

@@ -1,0 +1,33 @@
+# Myanmar — Tourist eVisa uploads.
+# Checked 2026-10-15 in the official user guide (evisa.moip.gov.mm
+# userGuide.pdf): "Accepted file formats: JPG or PDF. File size limit: 2MB."
+# After the upload the portal asks you to drag a frame over your face, so it
+# crops the photo itself.
+
+[[forms]]
+form = "tourist_evisa"
+label_en = "Tourist eVisa"
+label_zh = "旅游电子签证"
+label_zh_hant = "旅遊電子簽證"
+source = "https://evisa.moip.gov.mm/assets/dist/img/guide/userGuide.pdf"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+kb_max = 2000
+formats = ["jpg", "pdf"]
+out_long = 1200
+note_en = "Recent passport-sized photo. After the upload, the portal asks you to fit your face inside its own frame."
+note_zh = "近期护照规格照片。上传后，系统会让你拖动框线把脸框进去。"
+note_zh_hant = "近期護照規格照片。上傳後，系統會讓你拖動框線把臉框進去。"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+kb_max = 2000
+formats = ["jpg", "pdf"]
+out_long = 1600
+note_en = "A readable copy of the bio-data page. It is a separate upload from the face photo."
+note_zh = "清晰的资料页副本，和人像照片分开上传。"
+note_zh_hant = "清晰的資料頁副本，和人像照片分開上傳。"

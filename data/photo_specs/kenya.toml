@@ -1,0 +1,19 @@
+# Kenya — eTA photo.
+# Checked 2026-10-15 on etakenya.go.ke "How to apply": "Selfie or
+# passport-type photo". No size or file limit is published there.
+
+[[forms]]
+form = "eta"
+label_en = "eTA"
+label_zh = "电子旅行许可"
+label_zh_hant = "電子旅行許可"
+source = "https://etakenya.go.ke/form/apply/how-to-apply?type=tourist"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+tool = false
+note_en = "The portal accepts a selfie or a passport-type photo and publishes no size or file limit."
+note_zh = "系统接受自拍或护照规格照片，没有公布尺寸和文件大小上限。"
+note_zh_hant = "系統接受自拍或護照規格照片，沒有公佈尺寸和文件大小上限。"

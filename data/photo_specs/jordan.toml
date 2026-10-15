@@ -1,0 +1,11 @@
+# Jordan — no photo or passport image upload.
+# Evidence: data/fields/jordan.toml documents all 17 purchase-form fields; none asks for an image.
+
+[[forms]]
+form = "jordan_pass"
+label_en = "Jordan Pass"
+label_zh = "约旦通票"
+label_zh_hant = "約旦通票"
+
+[[forms.items]]
+kind = "none"

@@ -1,0 +1,11 @@
+# Indonesia — no photo or passport image upload.
+# Evidence: content/indonesia/e-cd.md: no photo upload required; the official e-CD does not ask for a passport photo. The e-VOA is a separate form and is not covered here.
+
+[[forms]]
+form = "ecd"
+label_en = "All Indonesia (e-CD)"
+label_zh = "All Indonesia（e-CD）"
+label_zh_hant = "All Indonesia（e-CD）"
+
+[[forms.items]]
+kind = "none"

@@ -1,0 +1,58 @@
+{{- /* Display text for one data/photo_specs item — size, file size and format —
+       shared by the country card, the comparison table and the tool presets
+       so a rule reads the same everywhere. Returns a dict.
+
+       data/photo_specs/{country}.toml:
+         [[forms]]        form: key in data/official_urls/{country}.toml
+                          label_en / label_zh: the form's short name
+                          source: where the rule was read (default: the form URL)
+                          checked: date the rule was checked (default: the
+                          form's last_verified)
+         [[forms.items]]  kind: face | passport | none
+                          capture: upload | live | optional
+                          mm_w, mm_h (+ mm_is_max) · ratio_w, ratio_h · dpi
+                          px_min_w/h, px_max_w/h · face_min/face_max (percent)
+                          kb_min, kb_max (as published) · formats: jpg|png|pdf
+                          out_w/out_h or out_long: the tool's output, not a rule
+                          tool = false keeps an item out of the tool
+                          note_en / note_zh
+       Rule fields hold published numbers only; nothing is inferred. */ -}}
+{{- $i := . -}}
+{{- $size := slice -}}
+{{- if $i.mm_w -}}
+  {{- $mm := printf "%d × %d mm" $i.mm_w $i.mm_h -}}
+  {{- if and (eq (mod $i.mm_w 10) 0) (eq (mod $i.mm_h 10) 0) }}{{ $mm = printf "%d × %d cm" (div $i.mm_w 10) (div $i.mm_h 10) }}{{ end -}}
+  {{- if $i.mm_is_max }}{{ $mm = printf (i18n "photo_up_to") $mm }}{{ end -}}
+  {{- $size = $size | append $mm -}}
+{{- else if $i.ratio_w -}}
+  {{- if eq $i.ratio_w $i.ratio_h }}{{ $size = $size | append (i18n "photo_square") }}
+  {{- else }}{{ $size = $size | append (printf (i18n "photo_ratio") (printf "%d:%d" $i.ratio_w $i.ratio_h)) }}{{ end -}}
+{{- end -}}
+{{- if and $i.px_min_w $i.px_max_w -}}
+  {{- $size = $size | append (printf (i18n "photo_range") (printf "%d × %d" $i.px_min_w $i.px_min_h) (printf "%d × %d px" $i.px_max_w $i.px_max_h)) -}}
+{{- else if $i.px_min_w -}}
+  {{- $size = $size | append (printf (i18n "photo_at_least") (printf "%d × %d px" $i.px_min_w $i.px_min_h)) -}}
+{{- end -}}
+{{- with $i.dpi }}{{ $size = $size | append (printf "%d dpi" .) }}{{ end -}}
+{{- with $i.face_min }}{{ $size = $size | append (printf (i18n "photo_face_share") $i.face_min $i.face_max) }}{{ end -}}
+
+{{- $file := i18n "photo_not_published" -}}
+{{- if and $i.kb_min $i.kb_max -}}
+  {{- $file = printf (i18n "photo_range") (partial "photo-kb.html" $i.kb_min) (partial "photo-kb.html" $i.kb_max) -}}
+{{- else if $i.kb_max -}}
+  {{- $file = printf (i18n "photo_up_to") (partial "photo-kb.html" $i.kb_max) -}}
+{{- else if $i.kb_min -}}
+  {{- $file = printf (i18n "photo_at_least") (partial "photo-kb.html" $i.kb_min) -}}
+{{- end -}}
+
+{{- $format := i18n "photo_not_published" -}}
+{{- with $i.formats -}}
+  {{- $names := slice }}{{ range . }}{{ $names = $names | append (upper .) }}{{ end -}}
+  {{- $format = delimit $names " / " -}}
+{{- end -}}
+
+{{- return dict
+  "size" (cond (gt (len $size) 0) (delimit $size " · ") (i18n "photo_not_published"))
+  "file" $file
+  "format" $format
+-}}

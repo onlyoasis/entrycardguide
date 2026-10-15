@@ -1,0 +1,35 @@
+# Uzbekistan — eVisa uploads.
+# From data/fields/uzbekistan.toml (e-visa.gov.uz guidance and live error
+# text, verified 2026-10-12): face photo 35 x 45 mm at 300 dpi, JPG or JPEG,
+# below 1024 KB; passport data page JPG or JPEG, no more than 500 KB.
+
+[[forms]]
+form = "evisa"
+label_en = "eVisa"
+label_zh = "电子签证"
+label_zh_hant = "電子簽證"
+source = "https://e-visa.gov.uz/what-you-need-to-know"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+mm_w = 35
+mm_h = 45
+dpi = 300
+kb_max = 1024
+formats = ["jpg"]
+out_w = 413
+out_h = 531
+note_en = "Follow the ICAO example shown by the portal. The error text requires JPG or JPEG below 1024 KB."
+note_zh = "照门户上的 ICAO 样例拍。报错提示要求 JPG 或 JPEG，小于 1024 KB。"
+note_zh_hant = "照門戶上的 ICAO 樣例拍。報錯提示要求 JPG 或 JPEG，小於 1024 KB。"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+kb_max = 500
+formats = ["jpg"]
+out_long = 1600
+note_en = "A readable copy of the passport data page."
+note_zh = "清晰可读的护照资料页。"
+note_zh_hant = "清晰可讀的護照資料頁。"

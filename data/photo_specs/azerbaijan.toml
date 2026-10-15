@@ -1,0 +1,18 @@
+# Azerbaijan — ASAN e-Visa passport scan.
+# From data/fields/azerbaijan.toml (verified 2026-08-30): a clear image of the
+# page containing the photo; the portal warns an unreadable copy can be
+# rejected. No size or file type is published.
+
+[[forms]]
+form = "evisa"
+label_en = "ASAN e-Visa"
+label_zh = "ASAN 电子签证"
+label_zh_hant = "ASAN 電子簽證"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+tool = false
+note_en = "A clear image of the passport page with your photo, every edge and line readable. The portal warns that an unreadable copy can be rejected."
+note_zh = "带照片那一页的清晰图片，四边和每行字都看得清。门户提示，看不清的副本可能被拒。"
+note_zh_hant = "帶照片那一頁的清晰圖片，四邊和每行字都看得清。門戶提示，看不清的副本可能被拒。"

@@ -37,6 +37,7 @@ npm run clean        # 清理 public/ 和 resources/
 - `data/official_urls/{country}.toml` — 官方 URL、机构名、`last_verified` 日期。`{{< official-link >}}` 从这里读。文件里仍保留 `[[scam_sites]]` 数组作为内部记录，但**站点不再渲染它**（2026-08-10 移除中介名单）。
 - `data/decision/tree.json` — `/decide/` 决策树状态机。被 `{{< decide >}}` shortcode 嵌入，`assets/js/decide.ts` 消费。
 - `data/changelog/{country}.toml` — 国家变更日志（`docs/maintenance/monthly-review.md` 描述了月度审查流程）。
+- `data/photo_specs/{country}.toml`（可选）— 照片与上传规则：每张表要人像还是护照页、上传/现场拍/可选、官方公布的尺寸·像素·文件上限·格式、来源与核对日期。`partials/photo-rows.html` 统一展开，喂给填写页“照片与上传”卡、`/photo-requirements/` 对照表和浏览器照片工具。**只写官方公布的数字**；`out_*` 是工具输出尺寸不是规则；`tool = false` 不进工具；`kind = "none"` 只用于有字段级证据的表。
 
 **改任何 URL、字段规则、决策状态时只改 data 文件，不要去翻 markdown。**
 
@@ -64,6 +65,7 @@ npm run clean        # 清理 public/ 和 resources/
 - `validator.ts` — 客户端字段校验，零网络请求（站内全局加载）
 - `decide.ts` — 决策树状态机渲染器（站内全局加载）
 - `search.ts` — 首页国家网格过滤；`directory.ts` / `nav.ts` / `analytics.ts` — 目录、导航、点击埋点
+- `photo.ts` — `/photo-requirements/` 照片工具：浏览器内裁切、缩放、压缩到官方 KB 范围，印度护照页封装成单页 PDF；零网络请求、不发统计、不改颜色/背景/人脸（新西兰、英国拒收修图）；纯函数在 `lib/photo-fit.ts`（`tests/photo-fit.test.mjs`，属 `test:ui`）；仅含 `{{< photo-tool >}}` 的页面加载
 - `ask.ts` — `/ask/` 页问答引擎：同源拉取构建期生成的 `/ask-index.json`（每语言一份，来自各页 faq 前置元数据 + 国家 roster，见 `layouts/index.ask.json`），浏览器内做中英混合检索匹配，答案全部带出处链接；仅含 `{{< ask >}}` shortcode 的页面加载（`scripts.html` 里 `.HasShortcode` 门控）
 
 没有对应容器的页面静默 no-op。**改字段验证不需要改代码**。

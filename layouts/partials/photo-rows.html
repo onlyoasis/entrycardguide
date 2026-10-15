@@ -1,0 +1,60 @@
+{{- /* Every item in data/photo_specs, flattened to display rows in roster
+       order (the same order as the homepage grid). Feeds the country card
+       (photo-card.html), the comparison table and the browser tool
+       (shortcodes photo-specs / photo-tool), so they never disagree.
+       Call with partialCached "photo-rows.html" . site.Language.Lang. */ -}}
+{{- $lang := site.Language.Lang -}}
+{{- $suffix := "en" }}{{ $nameKey := "en" -}}
+{{- if eq $lang "zh" }}{{ $suffix = "zh" }}{{ $nameKey = "zh" -}}
+{{- else if eq $lang "zh-hant" }}{{ $suffix = "zh_hant" }}{{ $nameKey = "zht" }}{{ end -}}
+{{- $specs := hugo.Data.photo_specs | default dict -}}
+{{- $rows := slice -}}
+{{- range partial "country-roster.html" . -}}
+  {{- $c := . -}}
+  {{- with index $specs $c.key -}}
+    {{- $urls := index hugo.Data.official_urls $c.key -}}
+    {{- range $f := .forms -}}
+      {{- $official := index $urls $f.form -}}
+      {{- if not $official.url }}{{ errorf "data/photo_specs/%s.toml: form %q is not in data/official_urls/%s.toml" $c.key $f.form $c.key }}{{ end -}}
+      {{- range $i := $f.items -}}
+        {{- if not (in (slice "face" "passport" "none") $i.kind) }}{{ errorf "data/photo_specs/%s.toml: unknown kind %q" $c.key $i.kind }}{{ end -}}
+        {{- $capture := $i.capture | default "" -}}
+        {{- if and (ne $i.kind "none") (not (in (slice "upload" "live" "optional") $capture)) }}{{ errorf "data/photo_specs/%s.toml: item needs capture upload, live or optional" $c.key }}{{ end -}}
+        {{- $id := printf "%s-%s-%s" $c.key $f.form $i.kind -}}
+        {{- if ne $i.kind "none" }}{{ $id = printf "%s-%s" $id $capture }}{{ end -}}
+        {{- $id = replace $id "_" "-" -}}
+        {{- $text := partial "photo-spec-text.html" $i -}}
+        {{- $hasRule := or $i.ratio_w $i.out_w $i.kb_min $i.kb_max (in ($i.formats | default slice) "pdf") -}}
+        {{- $toolOff := and (isset $i "tool") (not $i.tool) -}}
+        {{- $preset := not (not (and (ne $i.kind "none") (eq $capture "upload") (not $toolOff) $hasRule)) -}}
+        {{- $rows = $rows | append (dict
+          "id" $id
+          "key" $c.key
+          "name" (index $c $nameKey)
+          "form" $f.form
+          "formLabel" (index $f (printf "label_%s" $suffix))
+          "formUrl" $official.url
+          "source" ($f.source | default $official.url)
+          "checked" ($f.checked | default $official.last_verified)
+          "kind" $i.kind
+          "capture" $capture
+          "kindLabel" (i18n (printf "photo_kind_%s" $i.kind))
+          "captureLabel" (cond (ne $capture "") (i18n (printf "photo_capture_%s" $capture)) "")
+          "size" $text.size
+          "file" $text.file
+          "format" $text.format
+          "note" (index $i (printf "note_%s" $suffix) | default "")
+          "preset" $preset
+          "spec" (dict
+            "ratioW" ($i.ratio_w | default $i.mm_w) "ratioH" ($i.ratio_h | default $i.mm_h)
+            "outW" $i.out_w "outH" $i.out_h "outLong" $i.out_long
+            "pxMinW" $i.px_min_w "pxMinH" $i.px_min_h "pxMaxW" $i.px_max_w "pxMaxH" $i.px_max_h
+            "kbMin" $i.kb_min "kbMax" $i.kb_max
+            "mmW" $i.mm_w "faceMin" $i.face_min "faceMax" $i.face_max
+            "formats" $i.formats)
+        ) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $rows -}}

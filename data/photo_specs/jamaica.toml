@@ -1,0 +1,11 @@
+# Jamaica — no photo or passport image upload.
+# Evidence: data/fields/jamaica.toml documents all 20 fields; none asks for an image.
+
+[[forms]]
+form = "c5"
+label_en = "C5 declaration"
+label_zh = "C5 旅客申报"
+label_zh_hant = "C5 旅客申報"
+
+[[forms.items]]
+kind = "none"
