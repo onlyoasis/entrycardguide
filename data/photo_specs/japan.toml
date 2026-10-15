@@ -1,0 +1,25 @@
+# Japan — Visit Japan Web passport scan. Checked 2026-10-15 in the official
+# Instruction Manual, Version 3.16, July 22, 2026
+# (vjw.digital.go.jp/manual/main/visitjapanweb_manual_en.html), 3-1 (3)-(6):
+# "Select 'Scan with camera' to scan your passport details with OCR, or
+# 'Enter information yourself' ... 'Scan with camera' is selected by
+# default." (5): "Align your passport with the white guide frame shown on the
+# screen, and click 'Take photo of passport'." "Photo of face: The OCR scanned
+# photo of your face is shown when responding 'Yes' to 'Will you use a
+# Tax-free QR Code?'" The scan uses the camera; there is no file upload and
+# no published size.
+
+[[forms]]
+form = "vjw"
+label_en = "Visit Japan Web"
+label_zh = "Visit Japan Web"
+label_zh_hant = "Visit Japan Web"
+source = "https://www.vjw.digital.go.jp/manual/main/visitjapanweb_manual_en.html"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "passport"
+capture = "live"
+note_en = "Optional camera scan of the passport, selected by default; choose \"Enter information yourself\" to type the details instead. There is no file upload. If you use the Tax-free QR Code, the face photo read from the passport is registered with it."
+note_zh = "可选：用摄像头扫描护照，默认选中；选“Enter information yourself”就改为手动输入。没有文件上传。如果使用免税二维码，会登记从护照读出的人像。"
+note_zh_hant = "可選：用攝像頭掃描護照，默認選中；選“Enter information yourself”就改為手動輸入。沒有文件上傳。如果使用免稅 QR Code，會登記從護照讀出的人像。"

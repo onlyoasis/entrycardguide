@@ -1,0 +1,29 @@
+# Israel — ETA-IL passport upload. Checked 2026-10-15 in the interface text of
+# the ETA-IL form (israel-entry.piba.gov.il/form/): "you must upload a photo
+# of your passport. Make sure to upload the full biographic page ... capture a
+# clear image of the entire passport biographic page"; on phones "Use your
+# device camera to scan your passport or select a photo of your passport from
+# the gallery"; "(file types: jpg, jpeg and png)"; "The maximum file size is
+# 2M (2MB)"; "Capture the passport photo page with a clear background and
+# visible margins around the image. Do not crop exactly along the photo's
+# edges." The ETA-IL steps are email, code, travel, passport, personal
+# details, questions and review: no face photo step. The 5 x 5 cm photo rule
+# on the same site belongs to the eVisa-B2, not the ETA-IL.
+
+[[forms]]
+form = "eta_il"
+label_en = "ETA-IL"
+label_zh = "ETA-IL 电子旅行许可"
+label_zh_hant = "ETA-IL 電子旅行許可"
+source = "https://israel-entry.piba.gov.il/form/"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+kb_max = 2000
+formats = ["jpg", "png"]
+out_long = 1600
+note_en = "The whole biographic page, with a clear background and a margin around the page; do not crop along its edges. On a phone you can scan it with the camera instead. The form reads your details from it. No face photo is asked for."
+note_zh = "整张个人资料页，背景干净，四周留边，不要贴着资料页边缘裁切。手机上也可以直接用摄像头扫描。表单会从中读取个人信息。不需要人像照片。"
+note_zh_hant = "整張個人資料頁，背景乾淨，四周留邊，不要貼著資料頁邊緣裁切。手機上也可以直接用攝像頭掃描。表單會從中讀取個人資訊。不需要人像照片。"

@@ -1,0 +1,26 @@
+# Singapore — SG Arrival Card optional passport upload. Checked 2026-10-15 in
+# the interface text the SGAC e-service serves
+# (eservices.ica.gov.sg/arrivalcard/assets/i18n/en.json): "You may upload or
+# scan your passport to autofill your details", "Supported file types: PNG,
+# JPG, BPM, HEIC, HEIF", "Maximum file size: 10MB". The live configuration
+# had MRZ_UPLOAD_ENABLED and MRZ_SCAN_ENABLED set to TRUE, and the visitor
+# card on the page offers "Autofill with Passport/Visa" or "Fill in Manually".
+# The tool lists only formats the schema knows; BMP, HEIC and HEIF are in the
+# note.
+
+[[forms]]
+form = "sgac"
+label_en = "SG Arrival Card"
+label_zh = "新加坡入境卡 SGAC"
+label_zh_hant = "新加坡入境卡 SGAC"
+source = "https://eservices.ica.gov.sg/arrivalcard/sgac"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "passport"
+capture = "optional"
+kb_max = 10000
+formats = ["jpg", "png"]
+note_en = "Optional: upload or scan the passport to fill in your details, or type them yourself. The image needs the machine-readable lines in view. BMP, HEIC and HEIF files are also accepted. No face photo is asked for."
+note_zh = "可选：上传或扫描护照自动填表，也可以手动输入。图片里要看得清底部机读码。也接受 BMP、HEIC、HEIF 文件。不需要人像照片。"
+note_zh_hant = "可選：上傳或掃描護照自動填表，也可以手動輸入。圖片裡要看得清底部機讀碼。也接受 BMP、HEIC、HEIF 文件。不需要人像照片。"

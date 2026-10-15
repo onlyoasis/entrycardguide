@@ -1,0 +1,22 @@
+# Sri Lanka — ETA: no photo or passport image upload.
+# Checked 2026-10-15 in the live Tourist ETA individual application on
+# eta.gov.lk (opened through the terms page with "I Agree"; nothing was typed
+# or submitted). The form has no file input. Its fields: surname, other
+# names, title, date of birth (twice), gender, nationality, country of birth,
+# occupation, passport number (twice), passport issue and expiry dates,
+# children on the parent's passport, where you were in the last 14 days, visa
+# days, intended arrival date, purpose, port of departure, airline, flight
+# number, home address, address in Sri Lanka, email (twice), telephone,
+# mobile, fax, three yes/no visa questions and a confirmation box. The steps
+# after it are review, payment and the ETA confirmation.
+
+[[forms]]
+form = "eta"
+label_en = "ETA"
+label_zh = "ETA 电子旅行许可"
+label_zh_hant = "ETA 電子旅行許可"
+source = "https://eta.gov.lk/etaslvisa/pages/termnconuser.jsp?ucode=123"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "none"

@@ -80,6 +80,13 @@ agency = "Korea Immigration Service"
 last_verified = "2026-10-14"
 notes = "Read 2026-10-14. Email earrivalcard@korea.kr (answers in Korean and English); Immigration Contact Center 1345, from abroad +82-2-1345 or +82-2-6908-1345 to 6; weekdays 09:00 to 22:00, with Korean, English and Chinese after 18:00."
 
+[keta]
+url = "https://www.k-eta.go.kr/portal/apply/index.do"
+name = "K-ETA (Korea Electronic Travel Authorization)"
+agency = "Korea Ministry of Justice"
+last_verified = "2026-10-15"
+notes = "Read 2026-10-15. A separate system from the e-Arrival Card; a traveller with a valid K-ETA does not file the arrival card. Fee 10,000 KRW. FAQ Q23 and Q37 set the photo rule: colour JPG under 20 MB for the face photo and the passport bio page."
+
 [meta]
 fields_examples_only = true
 fields_intro_en = "Five checks for the details people most often get wrong. The portal does not publish field-by-field validation rules, so these are examples, not a guarantee of acceptance. The sections after them follow the portal's own guide and FAQ."

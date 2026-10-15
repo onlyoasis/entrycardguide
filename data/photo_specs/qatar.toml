@@ -1,0 +1,53 @@
+# Qatar — Hayya e-Visa uploads. Checked 2026-10-15.
+# Face photo rules from "Hayya Personal Photo Guideline", the PDF the form
+# links for photo upload instructions
+# (beta-cms.hayya.qa/wp-content/uploads/2025/06/Hayya-Guidelines-EN-2.pdf,
+# 2 pages, file dated 2025-06-23). Size: "Dimensions: 40mm (height) x 30mm
+# (width). Minimum resolution: 720px. The photo must show a close-up of your
+# face and the top of your shoulders. Your face should occupy 70% to 80% of
+# the photo. File size should not exceed 2 MB. Use only JPEG or JPG formats."
+# Image quality: colour, "plain white or light grey background", sharp, no
+# shadows or glare. Photo date: taken within the last 12 months. Head
+# centred, neutral expression, mouth closed, no sunglasses or tinted glasses,
+# no head covering except for religious reasons. "720px" does not say which
+# side, so it is in the note, not in the pixel fields; the tool's 900 x 1200
+# output clears it either way. The older 2024-01 PDF the form links as the
+# passport instructions (Hayya-Personal-Photo-Instructions.pdf) is the same
+# photo guideline and gives no passport-image rule.
+# Passport: Hayya's own page data and interface text, "Only image files (.jpg
+# or .jpeg) are allowed. Max file size should be 2MB." under Upload Personal
+# Photo and Upload Passport; "After uploading your ID, your data will be
+# extracted automatically."
+
+[[forms]]
+form = "hayya"
+label_en = "Hayya e-Visa"
+label_zh = "Hayya 电子签证"
+label_zh_hant = "Hayya 電子簽證"
+source = "https://beta-cms.hayya.qa/wp-content/uploads/2025/06/Hayya-Guidelines-EN-2.pdf"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+mm_w = 30
+mm_h = 40
+face_min = 70
+face_max = 80
+kb_max = 2000
+formats = ["jpg"]
+out_w = 900
+out_h = 1200
+note_en = "Colour photo taken in the last 12 months, against a plain white or light grey background, showing your face and the top of your shoulders. Minimum resolution 720 px. Head centred, neutral expression, mouth closed, eyes open and not covered by hair. No sunglasses or tinted glasses; no hat or head covering except for religious reasons, with the face fully visible. The portal checks the face automatically and compares it with your passport photo."
+note_zh = "12 个月内拍的彩色照片，白色或浅灰纯色背景，拍到脸和肩膀上沿。最低分辨率 720 px。头居中，表情自然，闭嘴，睁眼，头发不挡眼睛。不戴墨镜或有色眼镜；除宗教原因外不戴帽子或头饰，宗教头饰也要露出整张脸。系统会自动检查人脸，并和护照照片比对。"
+note_zh_hant = "12 個月內拍的彩色照片，白色或淺灰純色背景，拍到臉和肩膀上沿。最低分辨率 720 px。頭居中，表情自然，閉嘴，睜眼，頭髮不擋眼睛。不戴墨鏡或有色眼鏡；除宗教原因外不戴帽子或頭飾，宗教頭飾也要露出整張臉。系統會自動檢查人臉，並和護照照片比對。"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+kb_max = 2000
+formats = ["jpg"]
+out_long = 1600
+note_en = "The portal reads your details from the passport image, so check the filled fields before you continue."
+note_zh = "系统会从护照图片读取信息自动填表，继续之前核对一遍。"
+note_zh_hant = "系統會從護照圖片讀取資訊自動填表，繼續之前核對一遍。"

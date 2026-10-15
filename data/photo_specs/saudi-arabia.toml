@@ -1,0 +1,45 @@
+# Saudi Arabia — KSA Visa (ksavisa.sa, Ministry of Foreign Affairs) uploads.
+# Checked 2026-10-15 in the interface text the site serves
+# (ksavisa.sa/assets/i18n/en.json) and its visa form configuration.
+# Headshot: "Upload Headshot", hint "PNG, JPEG, maximum size is 5 MB";
+# "How to upload a good photo?": "Photo size: 35x45mm", "Use a plain
+# background", "Face the camera directly with your head straight", "Neutral
+# face expression. No smile and mouth closed", "Ensure proper lighting to
+# avoid shadows", "Dress appropriately for the visa application".
+# Passport: "Upload a Passport Scanned Copy", hint "PNG, JPEG, maximum size is
+# 5 MB". The tourism, business visit and ETA forms use the same two uploads.
+# The Tourist eVisa portal (visa.visitsaudi.com) shows its photo rules only
+# after registration; its public pages and the visitsaudi.com visa FAQ give
+# none, so those rules are not recorded here. The 200 x 200 px / 5-100 KB
+# figures on photo websites have no official source that could be found.
+
+[[forms]]
+form = "ksa_visa"
+label_en = "KSA Visa"
+label_zh = "KSA Visa 签证平台"
+label_zh_hant = "KSA Visa 簽證平臺"
+source = "https://ksavisa.sa/"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+mm_w = 35
+mm_h = 45
+kb_max = 5000
+formats = ["jpg", "png"]
+out_w = 700
+out_h = 900
+note_en = "Plain background, head straight and facing the camera, neutral expression with the mouth closed, even light with no shadows. These are the KSA Visa rules; the Tourist eVisa portal shows its own rules only after you register. The page lets you crop and rotate the photo after the upload."
+note_zh = "纯色背景，头摆正、正对镜头，表情自然、闭嘴不笑，光线均匀没有阴影。这是 KSA Visa 平台的规定；旅游电子签门户要注册后才显示它自己的照片要求。上传后页面可以裁切、旋转。"
+note_zh_hant = "純色背景，頭擺正、正對鏡頭，表情自然、閉嘴不笑，光線均勻沒有陰影。這是 KSA Visa 平臺的規定；旅遊電子簽門戶要註冊後才顯示它自己的照片要求。上傳後頁面可以裁切、旋轉。"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+kb_max = 5000
+formats = ["jpg", "png"]
+out_long = 1600
+note_en = "A scanned copy of the passport, PNG or JPEG, up to 5 MB."
+note_zh = "护照扫描件，PNG 或 JPEG，不超过 5 MB。"
+note_zh_hant = "護照掃描件，PNG 或 JPEG，不超過 5 MB。"

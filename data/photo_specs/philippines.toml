@@ -1,0 +1,24 @@
+# Philippines — eTravel photo. Checked 2026-10-15 in the eTravel web app
+# (etravel.gov.ph). The personal-information form used for sign-up, "for me",
+# "for others" and the no-account flow has a required photo field: the button
+# reads "Take a selfie or upload image" (camera or file; file only when signed
+# in through the eGov app) and the site's message list says "Photo is
+# Required!". A Filipino passport holder is asked again in the trip step.
+# The eTravel Data Policy field list does not name a photo, but it still lists
+# COVID-19 vaccine fields and is older than the form. The form needs an
+# account, so the step was not seen live. No size or file limit is published.
+
+[[forms]]
+form = "etravel"
+label_en = "eTravel"
+label_zh = "eTravel 电子入境登记"
+label_zh_hant = "eTravel 電子入境登記"
+source = "https://etravel.gov.ph"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+note_en = "The personal-information step asks for a photo of you: take a selfie or upload an image. eTravel is free, so a site that charges for this step is not the official one. No size or file limit is published."
+note_zh = "个人信息这一步要一张本人照片：现场自拍或上传图片。eTravel 免费，在这一步收钱的网站不是官方。官方没有公布尺寸和文件上限。"
+note_zh_hant = "個人資訊這一步要一張本人照片：現場自拍或上傳圖片。eTravel 免費，在這一步收錢的網站不是官方。官方沒有公佈尺寸和文件上限。"

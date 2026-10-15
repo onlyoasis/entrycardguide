@@ -1,0 +1,60 @@
+# Cambodia — e-Arrival and e-Visa uploads. Checked 2026-10-15.
+# e-Arrival: interface text served by arrival.gov.kh (/assets/en.json):
+# "Photo Portrait", "Please upload a clear face photo", "Passport photo",
+# "Passport photo is required.", "Click here to upload passport photo",
+# "SCAN PASSPORT", "Place your camera near the MRZ code to scan". The form
+# code asks for both photos when a traveller profile is saved, in the
+# traveller form, and when Visa T, E or D is applied for in the same flow.
+# No size or file limit is shown for either photo.
+# e-Visa: evisa.gov.kh/information/visa_type/4 (Last Updated Jan 01, 2025),
+# Visa T and E: "a recent passport-size photo in digital format (JPEG or PNG
+# format)". The news page says the Passport Reader "will detect the passport
+# information including passport photo and automatic fill into the
+# information form after you upload the passport image". "Passport-size" is
+# not a number, so no size is shown. Step 1 of the application is a captcha;
+# nothing past it was read.
+
+[[forms]]
+form = "earrival"
+label_en = "e-Arrival"
+label_zh = "电子入境卡"
+label_zh_hant = "電子入境卡"
+source = "https://arrival.gov.kh"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+note_en = "The official form asks for a clear face photo. It is free, so a site that charges for this step is not the official one. No size or file limit is published."
+note_zh = "官方表单要一张清晰的正脸照片。入境卡本身免费，在这一步收钱的网站不是官方。官方没有公布尺寸和文件上限。"
+note_zh_hant = "官方表單要一張清晰的正臉照片。入境卡本身免費，在這一步收錢的網站不是官方。官方沒有公佈尺寸和文件上限。"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+note_en = "Upload a photo of the passport, or scan the machine-readable lines with the phone camera so the form fills in your details."
+note_zh = "上传护照照片，或用手机摄像头扫描底部机读码，表单会自动填写个人信息。"
+note_zh_hant = "上傳護照照片，或用手機攝像頭掃描底部機讀碼，表單會自動填寫個人資訊。"
+
+[[forms]]
+form = "evisa"
+label_en = "e-Visa"
+label_zh = "电子签证"
+label_zh_hant = "電子簽證"
+source = "https://www.evisa.gov.kh/information/visa_type/4"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+formats = ["jpg", "png"]
+note_en = "A recent passport-size photo. The site gives no size in millimetres or pixels and no file limit. To change the photo after you submit, email it to info@evisa.gov.kh with your reference number."
+note_zh = "近期护照规格照片。官网没有写具体毫米数、像素和文件上限。提交后想换照片，把照片和申请编号发到 info@evisa.gov.kh。"
+note_zh_hant = "近期護照規格照片。官網沒有寫具體毫米數、像素和文件上限。提交後想換照片，把照片和申請編號發到 info@evisa.gov.kh。"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+note_en = "Upload an image of the passport. The Passport Reader fills the form from it, so check every field it fills."
+note_zh = "上传护照图片。系统的 Passport Reader 会据此自动填表，逐项核对它填的内容。"
+note_zh_hant = "上傳護照圖片。系統的 Passport Reader 會據此自動填表，逐項核對它填的內容。"

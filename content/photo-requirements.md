@@ -1,6 +1,6 @@
 ---
 title: "Visa and entry form photo requirements by country"
-kicker: "Which official forms ask for a photo, the published size and file limits, and a tool that resizes your photo in this browser. The free arrival cards listed here ask for no face photo."
+kicker: "Which official forms ask for a photo, the published size and file limits, and a tool that resizes your photo in this browser. Most free arrival cards ask for no face photo; Philippine eTravel and Cambodia e-Arrival are the exceptions."
 description: "Official photo rules for the Vietnam e-Visa (4 × 6 cm, under 2 MB), India e-Visa (square JPEG, 10 KB to 1 MB), NZeTA, UK ETA, Laos, Uzbekistan, Tanzania and more, with a free tool that crops and compresses your photo without uploading it."
 date: 2026-10-15
 layout: tool
@@ -9,7 +9,7 @@ faq:
   - q: "Do arrival cards like TDAC or MDAC need a photo?"
     a: "No. The official TDAC, MDAC and All Indonesia forms ask for no face photo and no passport image. If a site asks you to upload one for these cards, it is not the government form."
   - q: "Which forms need a photo upload?"
-    a: "E-visas and travel authorisations. This page lists file uploads for Vietnam, India, Laos, Russia, Uzbekistan, Tanzania, Morocco, Oman, Myanmar, Georgia, Ethiopia, Brazil, Nepal, Kenya, the UK ETA online form and the NZeTA. Australia's ETA and the ESTA app take the face photo live inside the app."
+    a: "Mostly e-visas and travel authorisations. This page lists file uploads for Vietnam, India, Laos, Russia, Uzbekistan, Tanzania, Morocco, Oman, Myanmar, Georgia, Ethiopia, Brazil, Nepal, Kenya, Cambodia, Korea's K-ETA, Saudi Arabia's KSA Visa, Qatar's Hayya, Israel's ETA-IL (passport page only), the UK ETA online form and the NZeTA. Two free arrival forms also ask for a face photo: Philippine eTravel and Cambodia e-Arrival. Australia's ETA and the ESTA app take the face photo live inside the app."
   - q: "What size is the Vietnam e-Visa photo?"
     a: "4 × 6 cm, JPG or JPEG, under 2 MB, white background, no hat and no glasses. That is the wording on evisa.gov.vn, checked on 15 October 2026."
   - q: "What size is the India e-Visa photo?"
@@ -22,7 +22,7 @@ faq:
 
 Most free arrival cards ask for no photo at all. Thailand's TDAC, Malaysia's MDAC and All Indonesia are typed forms with no upload step. Photos come in with e-visas and travel authorisations, and each government sets its own size, file limit and format.
 
-If a site asks for your face photo to file a free arrival card, you are not on the government form.
+If a site asks for your face photo to file TDAC, MDAC or another card listed below as having no upload, you are not on the government form. Philippine eTravel and Cambodia e-Arrival are different: their official forms do ask for a face photo.
 
 {{< photo-tool >}}
 
@@ -56,7 +56,7 @@ No. The official TDAC, MDAC and All Indonesia forms ask for no face photo and no
 
 ### Which forms need a photo upload?
 
-E-visas and travel authorisations. This page lists file uploads for Vietnam, India, Laos, Russia, Uzbekistan, Tanzania, Morocco, Oman, Myanmar, Georgia, Ethiopia, Brazil, Nepal, Kenya, the UK ETA online form and the NZeTA. Australia's ETA and the ESTA app take the face photo live inside the app.
+Mostly e-visas and travel authorisations. This page lists file uploads for Vietnam, India, Laos, Russia, Uzbekistan, Tanzania, Morocco, Oman, Myanmar, Georgia, Ethiopia, Brazil, Nepal, Kenya, Cambodia, Korea's K-ETA, Saudi Arabia's KSA Visa, Qatar's Hayya, Israel's ETA-IL (passport page only), the UK ETA online form and the NZeTA. Two free arrival forms also ask for a face photo: Philippine eTravel and Cambodia e-Arrival. Australia's ETA and the ESTA app take the face photo live inside the app.
 
 ### What size is the Vietnam e-Visa photo?
 

@@ -27494,9 +27494,17 @@ export default {
           "agency": "Korea Immigration Service",
           "lastVerified": "2026-10-14",
           "notes": "Read 2026-10-14. Email earrivalcard@korea.kr (answers in Korean and English); Immigration Contact Center 1345, from abroad +82-2-1345 or +82-2-6908-1345 to 6; weekdays 09:00 to 22:00, with Korean, English and Chinese after 18:00."
+        },
+        {
+          "key": "keta",
+          "name": "K-ETA (Korea Electronic Travel Authorization)",
+          "url": "https://www.k-eta.go.kr/portal/apply/index.do",
+          "agency": "Korea Ministry of Justice",
+          "lastVerified": "2026-10-15",
+          "notes": "Read 2026-10-15. A separate system from the e-Arrival Card; a traveller with a valid K-ETA does not file the arrival card. Fee 10,000 KRW. FAQ Q23 and Q37 set the photo rule: colour JPG under 20 MB for the face photo and the passport bio page."
         }
       ],
-      "lastVerified": "2026-10-14"
+      "lastVerified": "2026-10-15"
     },
     {
       "slug": "philippines",
@@ -27570,9 +27578,17 @@ export default {
           "lastVerified": "2026-10-12",
           "archiveUrl": "https://web.archive.org/web/2026/https://arrival.gov.kh",
           "notes": "Reserved under .gov.kh. The e-Arrival system combines arrival card, customs declaration, and health declaration flows. The arrival declaration itself is free; visa fees are separate when a visa is needed."
+        },
+        {
+          "key": "evisa",
+          "name": "Cambodia e-Visa",
+          "url": "https://www.evisa.gov.kh",
+          "agency": "Ministry of Foreign Affairs and International Cooperation of Cambodia",
+          "lastVerified": "2026-10-15",
+          "notes": "Read 2026-10-15. Visa T (tourist) USD 30 and Visa E (business) USD 35, single entry, processed in 3 business days. The site sits behind a Nexusguard browser check. The application asks for a recent passport-size photo in JPEG or PNG and an image of the passport, which its Passport Reader uses to fill the form."
         }
       ],
-      "lastVerified": "2026-10-12"
+      "lastVerified": "2026-10-15"
     },
     {
       "slug": "usa",

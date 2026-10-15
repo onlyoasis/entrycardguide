@@ -1,8 +1,14 @@
-# Korea — e-Arrival Card passport scan.
+# Korea — e-Arrival Card passport scan, and K-ETA uploads.
 # From data/fields/korea.toml (verified 2026-10-14): the portal reads the data
 # page from a camera photo or an upload; the image must include both
-# machine-readable lines; if the scan fails, type the details. K-ETA is a
-# separate form and is not covered here.
+# machine-readable lines; if the scan fails, type the details.
+# K-ETA checked 2026-10-15 in the k-eta.go.kr FAQ. Q23: "Should be in color -
+# Should be in JPG format - Image size not exceeding 20MB - No accessories such
+# as hats, scarves, sunglasses ... Full face, front view (75% of the image),
+# eyes should be open looking straight at the camera". Q37: "your portrait
+# photo and passport bio page image should be less than 20MB and in JPG format.
+# If you use the K-ETA mobile app, the size and capacity are automatically
+# adjusted". Q57: the uploaded bio page fills in the name from the MRZ.
 
 [[forms]]
 form = "earrivalcard"
@@ -16,3 +22,31 @@ capture = "optional"
 note_en = "The portal reads the data page from a camera photo or an uploaded image; include both machine-readable lines. If the scan fails, type the details yourself. No face photo is asked for."
 note_zh = "系统从拍照或上传的资料页读取信息，图片要包含底部两行机读码。识别失败就手动输入。不需要人像照片。"
 note_zh_hant = "系統從拍照或上傳的資料頁讀取資訊，圖片要包含底部兩行機讀碼。識別失敗就手動輸入。不需要人像照片。"
+
+[[forms]]
+form = "keta"
+label_en = "K-ETA"
+label_zh = "K-ETA 电子旅行许可"
+label_zh_hant = "K-ETA 電子旅行許可"
+source = "https://www.k-eta.go.kr/portal/board/viewboardlist.do?tmpltNm=faq2"
+checked = "2026-10-15"
+
+[[forms.items]]
+kind = "face"
+capture = "upload"
+kb_max = 20000
+formats = ["jpg"]
+out_long = 1200
+note_en = "Colour photo, full face from the front, filling about 75% of the image, eyes open and looking at the camera. No hat, scarf or sunglasses; a religious head covering is fine if the face shows from forehead to chin. It does not have to be your passport photo. The K-ETA phone app resizes the file for you."
+note_zh = "彩色照片，正脸，人脸约占画面 75%，睁眼看镜头。不戴帽子、围巾、墨镜；宗教头巾可以，但额头到下巴要露出来。不必和护照上的照片是同一张。用 K-ETA 手机 App 申请时，App 会自动调整文件大小。"
+note_zh_hant = "彩色照片，正臉，人臉約佔畫面 75%，睜眼看鏡頭。不戴帽子、圍巾、墨鏡；宗教頭巾可以，但額頭到下巴要露出來。不必和護照上的照片是同一張。用 K-ETA 手機 App 申請時，App 會自動調整文件大小。"
+
+[[forms.items]]
+kind = "passport"
+capture = "upload"
+kb_max = 20000
+formats = ["jpg"]
+out_long = 1600
+note_en = "The passport bio page. The form reads the machine-readable lines to fill in your name, so check the name fields after the upload."
+note_zh = "护照资料页。表单会读取底部机读码自动填姓名，上传后核对姓名栏。"
+note_zh_hant = "護照資料頁。表單會讀取底部機讀碼自動填姓名，上傳後核對姓名欄。"
