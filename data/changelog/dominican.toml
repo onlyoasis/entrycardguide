@@ -6,3 +6,10 @@ summary = "Initial E-Ticket coverage published"
 summary_zh = "多米尼加 E-Ticket 指南首版上线"
 summary_zh_hant = "多米尼加 E-Ticket 指南首版上線"
 detail = "Covers the Dominican Republic E-Ticket at eticket.migracion.gob.do, including field guidance and scam-site warnings."
+
+[[entries]]
+date = "2026-10-15"
+summary = "Checker drops an address limit the guide could not confirm"
+summary_zh = "本地检查器去掉未经核实的地址字数上限"
+summary_zh_hant = "本地檢查器去掉未經核實的地址字數上限"
+detail = "The checker had capped the address at 200 characters. The E-Ticket site sits behind a bot check, so that number could not be confirmed against the form; the address is now only checked as required."

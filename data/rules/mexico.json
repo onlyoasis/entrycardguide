@@ -96,12 +96,10 @@
       "type": "text",
       "label": "Port of entry",
       "required": true,
-      "maxLength": 60,
       "placeholder": "MEX (Mexico City)",
       "help": "Airport or land crossing where you enter Mexico. Use the IATA code for airports.",
       "errors": {
-        "required": "Port of entry is required",
-        "tooLong": "Max 60 characters"
+        "required": "Port of entry is required"
       }
     },
     "trip_purpose": {

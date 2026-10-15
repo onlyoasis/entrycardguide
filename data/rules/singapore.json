@@ -107,12 +107,10 @@
       "type": "text",
       "label": "Address in Singapore",
       "required": true,
-      "maxLength": 200,
       "placeholder": "Marina Bay Sands, 10 Bayfront Avenue",
       "help": "Hotel name and address. For Singapore residents, use your home address.",
       "errors": {
-        "required": "Address in Singapore is required",
-        "tooLong": "Max 200 characters"
+        "required": "Address in Singapore is required"
       }
     },
     "email": {

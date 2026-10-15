@@ -33,7 +33,7 @@ npm run clean        # 清理 public/ 和 resources/
 
 每个国家的所有内容由四份 data 文件驱动，shortcode 直接读取，**没有重复的字符串**：
 
-- `data/rules/{country}.json` — 字段验证规则（label、pattern、minLength、错误信息）。`{{< validator >}}` shortcode 把它嵌成 `<script type="application/json">`，`assets/js/validator.ts` 在浏览器读，校验逻辑在 `assets/js/lib/field-check.ts`（单测 `tests/field-check.test.mjs`，属 `test:ui`）。可选键：`pattern` 写官方表单自己的正则，name/email/phone/flight/text 有它就按它校验（phone/flight/text 同时查 `maxLength`），没有就用各类型的默认规则；日期 `format`（`YYYY-MM-DD` 默认、`DD/MM/YYYY`、`YYYY/MM/DD`）和 `minDaysFromToday`/`maxDaysFromToday`（按今天算的可选日期窗口）。只写官方表单里核实过的规则。
+- `data/rules/{country}.json` — 字段验证规则（label、pattern、minLength、错误信息）。`{{< validator >}}` shortcode 把它嵌成 `<script type="application/json">`，`assets/js/validator.ts` 在浏览器读，校验逻辑在 `assets/js/lib/field-check.ts`（单测 `tests/field-check.test.mjs`，属 `test:ui`）。可选键：`pattern` 写官方表单自己的正则，name/email/phone/flight/text 有它就按它校验（phone/flight/text 同时查 `maxLength`），没有就用各类型的默认规则（text 没有 pattern 时只查必填和 `maxLength`，所以 text 的 `maxLength` 只写官方表单的上限）；日期 `format`（`YYYY-MM-DD` 默认、`DD/MM/YYYY`、`YYYY/MM/DD`）和 `minDaysFromToday`/`maxDaysFromToday`（按今天算的可选日期窗口）。只写官方表单里核实过的规则。
 - `data/official_urls/{country}.toml` — 官方 URL、机构名、`last_verified` 日期。`{{< official-link >}}` 从这里读。文件里仍保留 `[[scam_sites]]` 数组作为内部记录，但**站点不再渲染它**（2026-08-10 移除中介名单）。
 - `data/decision/tree.json` — `/decide/` 决策树状态机。被 `{{< decide >}}` shortcode 嵌入，`assets/js/decide.ts` 消费。
 - `data/changelog/{country}.toml` — 国家变更日志（`docs/maintenance/monthly-review.md` 描述了月度审查流程）。

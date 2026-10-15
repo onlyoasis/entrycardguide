@@ -94,12 +94,10 @@
       "type": "text",
       "label": "Allowed port of entry",
       "required": true,
-      "maxLength": 60,
       "placeholder": "SGN (Tan Son Nhat International Airport)",
       "help": "Pick the airport, land border, or seaport you plan to use. Vietnam's e-visa lists ~30 approved entry points.",
       "errors": {
-        "required": "Port of entry is required",
-        "tooLong": "Max 60 characters"
+        "required": "Port of entry is required"
       }
     },
     "purpose_of_entry": {
@@ -115,12 +113,12 @@
       "type": "text",
       "label": "Address in Vietnam",
       "required": true,
-      "maxLength": 200,
+      "maxLength": 500,
       "placeholder": "Hotel Example, 123 Nguyen Hue, District 1, Ho Chi Minh City",
       "help": "First night's address. Hotel name + street + city is enough.",
       "errors": {
         "required": "Address in Vietnam is required",
-        "tooLong": "Max 200 characters"
+        "tooLong": "Max 500 characters"
       }
     },
     "email": {

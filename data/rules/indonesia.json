@@ -91,24 +91,20 @@
       "type": "text",
       "label": "Port of entry",
       "required": true,
-      "maxLength": 60,
       "placeholder": "DPS (Bali / Ngurah Rai International)",
       "help": "Airport IATA code or named seaport. CGK = Jakarta, DPS = Bali, SUB = Surabaya, BPN = Balikpapan.",
       "errors": {
-        "required": "Port of entry is required",
-        "tooLong": "Max 60 characters"
+        "required": "Port of entry is required"
       }
     },
     "accommodation": {
       "type": "text",
       "label": "Address in Indonesia",
       "required": true,
-      "maxLength": 200,
       "placeholder": "Hotel Example, Jl. Sunset Road, Kuta, Bali",
       "help": "Where you will stay first night. Hotel name + address is enough for tourism.",
       "errors": {
-        "required": "Address in Indonesia is required",
-        "tooLong": "Max 200 characters"
+        "required": "Address in Indonesia is required"
       }
     },
     "email": {

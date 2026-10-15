@@ -73,8 +73,7 @@
       "label": "入境口岸",
       "help": "你進入墨西哥的機場或陸路口岸。機場請用 IATA 代碼。",
       "errors": {
-        "required": "請輸入入境口岸",
-        "tooLong": "最多 60 個字元"
+        "required": "請輸入入境口岸"
       }
     },
     "trip_purpose": {

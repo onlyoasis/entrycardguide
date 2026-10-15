@@ -179,8 +179,16 @@ test("TDAC: phone number is digits only, up to 25", () => {
   assert.equal(check("1".repeat(26), TH.phone).ok, false);
 });
 
-test("text fields stay unchecked unless the rule carries a pattern", () => {
-  assert.equal(check("", { type: "text", label: "t", required: true }).ok, true);
+test("text fields check required and maxLength, with or without a pattern", () => {
+  const rule = { type: "text", label: "t", required: true, maxLength: 5, errors: { required: "need it", tooLong: "too long" } };
+  assert.deepEqual(check("", rule), { ok: false, message: "need it" });
+  assert.deepEqual(check("   ", rule), { ok: false, message: "need it" });
+  assert.equal(check("abcde", rule).ok, true);
+  assert.deepEqual(check("abcdef", rule), { ok: false, message: "too long" });
+  const optional = { type: "text", label: "t", required: false, maxLength: 5 };
+  assert.equal(check("", optional).ok, true);
+  assert.deepEqual(check("abcdef", optional), { ok: false, message: "Max 5 characters" });
+  assert.equal(check("x".repeat(500), { type: "text", label: "t", required: true }).ok, true);
   assert.equal(check("x", { type: "text", label: "t", required: true, pattern: "^\\d+$", errors: { invalidFormat: "digits" } }).message, "digits");
 });
 
@@ -469,4 +477,36 @@ test("SG Arrival Card: name, passport, flight and email follow the form", () => 
   assert.equal(check("a@b.co", SG.email).ok, true);
   assert.equal(check("a@b", SG.email).ok, false);
   assert.equal(check(`${"a".repeat(95)}@b.com`, SG.email).ok, false);
+});
+
+// ---- text fields without a pattern: required, and only the official maxLength ----
+
+test("Turkey e-Visa: residence address up to 100, place of birth up to 40, both required", () => {
+  assert.equal(check("A".repeat(100), TR.home_address).ok, true);
+  assert.deepEqual(check("A".repeat(101), TR.home_address), { ok: false, message: TR.home_address.errors.tooLong });
+  assert.equal(check("A".repeat(40), TR.place_of_birth).ok, true);
+  assert.equal(check("A".repeat(41), TR.place_of_birth).ok, false);
+  assert.deepEqual(check("", TR.home_address), { ok: false, message: TR.home_address.errors.required });
+  assert.equal(check("   ", TR.place_of_birth).ok, false);
+});
+
+test("Vietnam e-visa: address in Vietnam takes up to 500, like the form", () => {
+  assert.equal(check("A".repeat(500), VN.accommodation).ok, true);
+  assert.equal(check("A".repeat(501), VN.accommodation).ok, false);
+  assert.equal(check("", VN.accommodation).ok, false);
+});
+
+test("text fields carry no length limit the official form does not set", () => {
+  // Drop-downs on the forms (VN, MX, ID ports of entry), split address fields
+  // (SG), an address box with no maxLength (ID), a form not yet read (DO).
+  const DO = rules("dominican");
+  for (const rule of [VN.port_of_entry, MX.entry_point, ID.port_of_entry, ID.accommodation, SG.accommodation, DO.accommodation]) {
+    assert.equal(rule.maxLength, undefined, rule.label);
+    assert.equal(check("A".repeat(300), rule).ok, true, rule.label);
+  }
+});
+
+test("Canada eTA: required free-text fields can no longer be left blank", () => {
+  assert.equal(check("", CA.home_address).ok, false);
+  assert.equal(check("12 MAPLE ST, TORONTO ON M5V 2T6", CA.home_address).ok, true);
 });

@@ -5,8 +5,10 @@
  * A rule that carries `pattern` is checked against that regex (the official
  * form's own rule) instead of the built-in default for its type; for phone and
  * flight rules `maxLength` is then enforced too. Rules without `pattern` keep
- * the defaults, and a `text` rule without one is not checked at all. Dates may set `format` (default YYYY-MM-DD) and a window in
- * days from today (`minDaysFromToday` / `maxDaysFromToday`).
+ * the defaults; a `text` rule without one checks `required` and `maxLength`
+ * only, so its `maxLength` must be the official form's own limit. Dates may
+ * set `format` (default YYYY-MM-DD) and a window in days from today
+ * (`minDaysFromToday` / `maxDaysFromToday`).
  */
 
 export type FieldType = 'passport' | 'date' | 'flight' | 'name' | 'email' | 'phone' | 'text';
@@ -223,14 +225,17 @@ function validatePhone(value: string, rule: FieldRule): ValidationResult {
 }
 
 function validateText(value: string, rule: FieldRule): ValidationResult {
-  if (!rule.pattern) return { ok: true };
   const v = value.trim();
   if (!v) {
     return rule.required
       ? { ok: false, message: rule.errors?.required || 'Required' }
       : { ok: true };
   }
-  return checkPattern(v, rule, 'Not accepted by the official form');
+  if (rule.pattern) return checkPattern(v, rule, 'Not accepted by the official form');
+  if (rule.maxLength && v.length > rule.maxLength) {
+    return { ok: false, message: rule.errors?.tooLong || `Max ${rule.maxLength} characters` };
+  }
+  return { ok: true };
 }
 
 export function validateField(value: string, rule: FieldRule, today: Date = new Date()): ValidationResult {

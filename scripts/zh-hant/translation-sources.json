@@ -328,12 +328,10 @@
     "help": "Where you will stay. Hotel name and city is enough for tourism.",
     "placeholder": "Hotel Example, Punta Cana",
     "errors": {
-     "required": "Address in Dominican Republic is required",
-     "tooLong": "Max 200 characters"
+     "required": "Address in Dominican Republic is required"
     },
     "type": "text",
-    "required": true,
-    "maxLength": 200
+    "required": true
    },
    "email": {
     "label": "Email",
@@ -622,24 +620,20 @@
     "help": "Airport IATA code or named seaport. CGK = Jakarta, DPS = Bali, SUB = Surabaya, BPN = Balikpapan.",
     "placeholder": "DPS (Bali / Ngurah Rai International)",
     "errors": {
-     "required": "Port of entry is required",
-     "tooLong": "Max 60 characters"
+     "required": "Port of entry is required"
     },
     "type": "text",
-    "required": true,
-    "maxLength": 60
+    "required": true
    },
    "accommodation": {
     "label": "Address in Indonesia",
     "help": "Where you will stay first night. Hotel name + address is enough for tourism.",
     "placeholder": "Hotel Example, Jl. Sunset Road, Kuta, Bali",
     "errors": {
-     "required": "Address in Indonesia is required",
-     "tooLong": "Max 200 characters"
+     "required": "Address in Indonesia is required"
     },
     "type": "text",
-    "required": true,
-    "maxLength": 200
+    "required": true
    },
    "email": {
     "label": "Email",
@@ -1089,12 +1083,10 @@
     "help": "Airport or land crossing where you enter Mexico. Use the IATA code for airports.",
     "placeholder": "MEX (Mexico City)",
     "errors": {
-     "required": "Port of entry is required",
-     "tooLong": "Max 60 characters"
+     "required": "Port of entry is required"
     },
     "type": "text",
-    "required": true,
-    "maxLength": 60
+    "required": true
    },
    "trip_purpose": {
     "label": "Purpose of trip",
@@ -1556,12 +1548,10 @@
     "help": "Hotel name and address. For Singapore residents, use your home address.",
     "placeholder": "Marina Bay Sands, 10 Bayfront Avenue",
     "errors": {
-     "required": "Address in Singapore is required",
-     "tooLong": "Max 200 characters"
+     "required": "Address in Singapore is required"
     },
     "type": "text",
-    "required": true,
-    "maxLength": 200
+    "required": true
    },
    "email": {
     "label": "Email",
@@ -2246,12 +2236,10 @@
     "help": "Pick the airport, land border, or seaport you plan to use. Vietnam's e-visa lists ~30 approved entry points.",
     "placeholder": "SGN (Tan Son Nhat International Airport)",
     "errors": {
-     "required": "Port of entry is required",
-     "tooLong": "Max 60 characters"
+     "required": "Port of entry is required"
     },
     "type": "text",
-    "required": true,
-    "maxLength": 60
+    "required": true
    },
    "purpose_of_entry": {
     "label": "Purpose of entry",
@@ -2268,11 +2256,11 @@
     "placeholder": "Hotel Example, 123 Nguyen Hue, District 1, Ho Chi Minh City",
     "errors": {
      "required": "Address in Vietnam is required",
-     "tooLong": "Max 200 characters"
+     "tooLong": "Max 500 characters"
     },
     "type": "text",
     "required": true,
-    "maxLength": 200
+    "maxLength": 500
    },
    "email": {
     "label": "Email",

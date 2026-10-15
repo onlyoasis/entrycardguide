@@ -115,12 +115,10 @@
       "type": "text",
       "label": "Address or hotel in DR",
       "required": true,
-      "maxLength": 200,
       "placeholder": "Hotel Example, Punta Cana",
       "help": "Where you will stay. Hotel name and city is enough for tourism.",
       "errors": {
-        "required": "Address in Dominican Republic is required",
-        "tooLong": "Max 200 characters"
+        "required": "Address in Dominican Republic is required"
       }
     },
     "email": {

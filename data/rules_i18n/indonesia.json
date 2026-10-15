@@ -71,16 +71,14 @@
       "label": "入境口岸",
       "help": "機場 IATA 代碼或指定海港。CGK＝雅加達，DPS＝峇里島，SUB＝泗水，BPN＝巴厘巴板。",
       "errors": {
-        "required": "請輸入入境口岸",
-        "tooLong": "最多 60 個字元"
+        "required": "請輸入入境口岸"
       }
     },
     "accommodation": {
       "label": "印尼境內地址",
       "help": "第一晚住宿地點。旅遊填飯店名＋地址即可。",
       "errors": {
-        "required": "請輸入印尼境內地址",
-        "tooLong": "最多 200 個字元"
+        "required": "請輸入印尼境內地址"
       }
     },
     "email": {

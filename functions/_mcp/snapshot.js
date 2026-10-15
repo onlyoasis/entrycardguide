@@ -30422,24 +30422,20 @@ export default {
           "type": "text",
           "label": "Port of entry",
           "required": true,
-          "maxLength": 60,
           "placeholder": "DPS (Bali / Ngurah Rai International)",
           "help": "Airport IATA code or named seaport. CGK = Jakarta, DPS = Bali, SUB = Surabaya, BPN = Balikpapan.",
           "errors": {
-            "required": "Port of entry is required",
-            "tooLong": "Max 60 characters"
+            "required": "Port of entry is required"
           }
         },
         "accommodation": {
           "type": "text",
           "label": "Address in Indonesia",
           "required": true,
-          "maxLength": 200,
           "placeholder": "Hotel Example, Jl. Sunset Road, Kuta, Bali",
           "help": "Where you will stay first night. Hotel name + address is enough for tourism.",
           "errors": {
-            "required": "Address in Indonesia is required",
-            "tooLong": "Max 200 characters"
+            "required": "Address in Indonesia is required"
           }
         },
         "email": {
@@ -30741,12 +30737,10 @@ export default {
           "type": "text",
           "label": "Address in Singapore",
           "required": true,
-          "maxLength": 200,
           "placeholder": "Marina Bay Sands, 10 Bayfront Avenue",
           "help": "Hotel name and address. For Singapore residents, use your home address.",
           "errors": {
-            "required": "Address in Singapore is required",
-            "tooLong": "Max 200 characters"
+            "required": "Address in Singapore is required"
           }
         },
         "email": {
@@ -30861,12 +30855,10 @@ export default {
           "type": "text",
           "label": "Allowed port of entry",
           "required": true,
-          "maxLength": 60,
           "placeholder": "SGN (Tan Son Nhat International Airport)",
           "help": "Pick the airport, land border, or seaport you plan to use. Vietnam's e-visa lists ~30 approved entry points.",
           "errors": {
-            "required": "Port of entry is required",
-            "tooLong": "Max 60 characters"
+            "required": "Port of entry is required"
           }
         },
         "purpose_of_entry": {
@@ -30882,12 +30874,12 @@ export default {
           "type": "text",
           "label": "Address in Vietnam",
           "required": true,
-          "maxLength": 200,
+          "maxLength": 500,
           "placeholder": "Hotel Example, 123 Nguyen Hue, District 1, Ho Chi Minh City",
           "help": "First night's address. Hotel name + street + city is enough.",
           "errors": {
             "required": "Address in Vietnam is required",
-            "tooLong": "Max 200 characters"
+            "tooLong": "Max 500 characters"
           }
         },
         "email": {
@@ -31160,12 +31152,10 @@ export default {
           "type": "text",
           "label": "Address or hotel in DR",
           "required": true,
-          "maxLength": 200,
           "placeholder": "Hotel Example, Punta Cana",
           "help": "Where you will stay. Hotel name and city is enough for tourism.",
           "errors": {
-            "required": "Address in Dominican Republic is required",
-            "tooLong": "Max 200 characters"
+            "required": "Address in Dominican Republic is required"
           }
         },
         "email": {
@@ -31281,12 +31271,10 @@ export default {
           "type": "text",
           "label": "Port of entry",
           "required": true,
-          "maxLength": 60,
           "placeholder": "MEX (Mexico City)",
           "help": "Airport or land crossing where you enter Mexico. Use the IATA code for airports.",
           "errors": {
-            "required": "Port of entry is required",
-            "tooLong": "Max 60 characters"
+            "required": "Port of entry is required"
           }
         },
         "trip_purpose": {
@@ -43612,7 +43600,7 @@ export default {
         "summary": "Checker follows the All Indonesia form: DD/MM/YYYY dates, arrival yesterday to 2 days ahead",
         "summary_zh": "本地检查器按 All Indonesia 表单更新：日期 DD/MM/YYYY，抵达日为昨天到后天",
         "summary_zh_hant": "本地檢查器按 All Indonesia 表單更新：日期 DD/MM/YYYY，抵達日為昨天到後天",
-        "detail": "Read the All Indonesia form script. Dates are DD/MM/YYYY; date of birth from 1920 to today; arrival date yesterday, today or the next 2 days. Full name keeps letters and spaces and is turned into capitals."
+        "detail": "Read the All Indonesia form script. Dates are DD/MM/YYYY; date of birth from 1920 to today; arrival date yesterday, today or the next 2 days. Full name keeps letters and spaces and is turned into capitals. The place of arrival is picked from a list and the address box sets no length, so the checker drops the 60- and 200-character limits it had for them."
       }
     ],
     "malaysia": [
@@ -43658,7 +43646,7 @@ export default {
         "summary": "Checker follows the live SG Arrival Card field checks",
         "summary_zh": "本地检查器按在线 SG Arrival Card 字段规则更新",
         "summary_zh_hant": "本地檢查器按線上 SG Arrival Card 欄位規則更新",
-        "detail": "Read the SG Arrival Card scripts. Dates DD/MM/YYYY; arrival today to 2 days ahead (Singapore time); full name max 66, starting with a letter; passport number up to 20; flight number digits only after the airline is picked; email max 100 with the form's pattern."
+        "detail": "Read the SG Arrival Card scripts. Dates DD/MM/YYYY; arrival today to 2 days ahead (Singapore time); full name max 66, starting with a letter; passport number up to 20; flight number digits only after the airline is picked; email max 100 with the form's pattern. The form splits the address into accommodation type, hotel, postal code, block and street, so the single address box here no longer carries a 200-character limit."
       }
     ],
     "vietnam": [
@@ -43681,7 +43669,7 @@ export default {
         "summary": "Checker follows the live e-Visa form: DD/MM/YYYY dates, 50-letter name boxes",
         "summary_zh": "本地检查器按在线电子签表单更新：日期 DD/MM/YYYY，姓名框 50 字符",
         "summary_zh_hant": "本地檢查器按線上電子簽表單更新：日期 DD/MM/YYYY，姓名框 50 字符",
-        "detail": "Read the e-Visa application scripts on evisa.gov.vn. Dates are DD/MM/YYYY; date of birth cannot be after today and passport expiry cannot be before today. Surname and given names take 50 letters and spaces each (the guide said 60). Passport number letters and digits up to 20. Email uses the form's own pattern, max 100."
+        "detail": "Read the e-Visa application scripts on evisa.gov.vn. Dates are DD/MM/YYYY; date of birth cannot be after today and passport expiry cannot be before today. Surname and given names take 50 letters and spaces each (the guide said 60). Passport number letters and digits up to 20. Email uses the form's own pattern, max 100. Address in Vietnam takes up to 500 characters (the guide said 200); the port of entry is picked from a list, so the checker no longer sets a length for it."
       }
     ],
     "thailand": [
@@ -43728,6 +43716,13 @@ export default {
         "summary_zh": "多米尼加 E-Ticket 指南首版上线",
         "summary_zh_hant": "多米尼加 E-Ticket 指南首版上線",
         "detail": "Covers the Dominican Republic E-Ticket at eticket.migracion.gob.do, including field guidance and scam-site warnings."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Checker drops an address limit the guide could not confirm",
+        "summary_zh": "本地检查器去掉未经核实的地址字数上限",
+        "summary_zh_hant": "本地檢查器去掉未經核實的地址字數上限",
+        "detail": "The checker had capped the address at 200 characters. The E-Ticket site sits behind a bot check, so that number could not be confirmed against the form; the address is now only checked as required."
       }
     ],
     "mexico": [
@@ -43743,7 +43738,7 @@ export default {
         "summary": "Checker follows the live FMM: DD/MM/YYYY dates, 40-character address",
         "summary_zh": "本地检查器按在线 FMM 更新：日期 DD/MM/YYYY，地址 40 字符",
         "summary_zh_hant": "本地檢查器按線上 FMM 更新：日期 DD/MM/YYYY，地址 40 字符",
-        "detail": "Read the FMM application and validator scripts. Dates DD/MM/YYYY; arrival today to 29 days ahead. Names max 100 and accept accented Latin letters; passport number max 15; address in Mexico max 40, letters, digits and - . , \" ' only; email pattern from the form. The guide had said YYYY-MM-DD, 50-character names and a 200-character address."
+        "detail": "Read the FMM application and validator scripts. Dates DD/MM/YYYY; arrival today to 29 days ahead. Names max 100 and accept accented Latin letters; passport number max 15; address in Mexico max 40, letters, digits and - . , \" ' only; email pattern from the form. The guide had said YYYY-MM-DD, 50-character names and a 200-character address. The port of entry is picked from a list on the form, so the checker no longer sets a 60-character limit for it."
       }
     ],
     "japan": [

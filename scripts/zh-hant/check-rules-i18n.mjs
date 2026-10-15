@@ -86,6 +86,8 @@ for (const c of countries) {
     // A rule pattern switches text/flight/email/phone to the official regex,
     // whose failure message is invalidFormat (names use invalidChars).
     if (rule.pattern && ["text", "flight", "email", "phone"].includes(rule.type)) required.add("invalidFormat");
+    // Text checks maxLength with or without a pattern; its message is tooLong.
+    if (rule.type === "text" && rule.maxLength) required.add("tooLong");
     for (const k of Object.keys(rule.errors || {})) required.add(k);
     for (const k of required) {
       const v = o.errors?.[k];
