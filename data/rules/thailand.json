@@ -1,116 +1,137 @@
 {
   "country": "thailand",
   "officialUrl": "https://tdac.immigration.go.th",
-  "lastVerified": "2026-04-22",
-  "source": "https://tdac.immigration.go.th (HTML field attributes, scraped 2026-04-22)",
+  "lastVerified": "2026-10-15",
+  "source": "https://tdac.immigration.go.th/arrival-card/ (live form field rules, version 2026.09.00) and the official user guide, read 2026-10-15",
   "fields": {
     "passport": {
       "type": "passport",
       "label": "Passport number",
       "required": true,
-      "minLength": 6,
-      "maxLength": 9,
-      "pattern": "^[A-Z][A-Z0-9]{5,8}$",
+      "maxLength": 20,
+      "pattern": "^[A-Z0-9]{1,20}$",
       "placeholder": "A12345678",
-      "help": "Printed on the photo page of your passport. Usually starts with a letter.",
+      "help": "Printed on the photo page of your passport. Letters and digits only, up to 20, no spaces.",
       "errors": {
         "required": "Passport number is required",
-        "tooShort": "Passport number too short — min 6 characters",
-        "tooLong": "Passport number too long — max 9 characters",
+        "tooShort": "Check the number on your passport photo page",
+        "tooLong": "Passport number too long — max 20 characters",
         "invalidChars": "Letters and numbers only — no spaces or symbols",
-        "invalidFormat": "Most passports start with a letter. Double check yours."
-      }
+        "invalidFormat": "Letters and numbers only, up to 20 — no spaces or dashes"
+      },
+      "minLength": 1
     },
     "given_name": {
       "type": "name",
-      "label": "Given name",
+      "label": "First name",
       "required": true,
       "minLength": 1,
-      "maxLength": 40,
-      "help": "Exactly as shown on your passport (Latin letters only)",
+      "maxLength": 60,
+      "help": "Given names exactly as shown on your passport. Letters A–Z and spaces only. A middle name may go in the separate Middle Name box.",
       "errors": {
-        "required": "Given name is required",
-        "tooLong": "Max 40 characters. Use the Latin abbreviation shown on your passport.",
-        "invalidChars": "Use the Latin spelling from your passport — no accents or special characters"
-      }
+        "required": "First name is required",
+        "tooLong": "Max 60 characters. Use the Latin abbreviation shown on your passport.",
+        "invalidChars": "Letters A–Z and spaces only — no accents, hyphens or other characters"
+      },
+      "pattern": "^[A-Za-z ]+$"
+    },
+    "middle_name": {
+      "type": "name",
+      "label": "Middle name",
+      "required": false,
+      "maxLength": 60,
+      "help": "Optional. Letters A–Z and spaces only. Leave it empty if you keep every given name in First Name.",
+      "errors": {
+        "tooLong": "Max 60 characters",
+        "invalidChars": "Letters A–Z and spaces only — no accents, dots or other characters"
+      },
+      "pattern": "^[A-Za-z ]+$"
     },
     "family_name": {
       "type": "name",
       "label": "Family name",
       "required": true,
       "minLength": 1,
-      "maxLength": 40,
-      "help": "Exactly as shown on your passport (Latin letters only)",
+      "maxLength": 60,
+      "help": "Exactly as shown on your passport. The TDAC takes letters A–Z and spaces only: type a space for a hyphen. No family name? Type a single -.",
       "errors": {
-        "required": "Family name is required",
-        "tooLong": "Max 40 characters",
-        "invalidChars": "Use the Latin spelling from your passport — no accents or special characters"
-      }
+        "required": "Family name is required — type - if your passport has none",
+        "tooLong": "Max 60 characters",
+        "invalidChars": "Letters A–Z and spaces only (a hyphen becomes a space), or a single - if you have no family name"
+      },
+      "pattern": "^([A-Za-z ]+|-)$"
     },
     "date_of_birth": {
       "type": "date",
       "label": "Date of birth",
       "required": true,
       "minDate": "1900-01-01",
-      "maxDate": "2026-12-31",
       "placeholder": "1991-08-22",
-      "help": "Format: YYYY-MM-DD",
+      "help": "Check it here as YYYY-MM-DD. On the TDAC it goes in three boxes: year, month, day.",
       "errors": {
         "required": "Date of birth is required",
         "invalidFormat": "Use YYYY-MM-DD (e.g. 1991-08-22)",
         "tooEarly": "Date of birth seems too far in the past — double check",
         "tooLate": "Date of birth cannot be in the future"
-      }
+      },
+      "maxDaysFromToday": 0
     },
     "flight_number": {
       "type": "flight",
-      "label": "Flight number",
+      "label": "Flight No./Vehicle No.",
       "required": true,
+      "maxLength": 20,
       "placeholder": "TG312",
-      "help": "Airline 2-letter code + flight number, no spaces (e.g. TG312, UA1234)",
+      "help": "Up to 20 characters: letters, digits, spaces and common punctuation, not starting with - + = or @. By land, the vehicle number.",
       "errors": {
         "required": "Flight number is required",
-        "invalidFormat": "Format: airline code + number (e.g. TG312, UA1234). No spaces."
-      }
+        "invalidFormat": "Letters, digits, spaces and common punctuation only; it cannot start with - + = or @",
+        "tooLong": "Max 20 characters"
+      },
+      "pattern": "^(?!\\s*[=+@-])[a-zA-Z0-9 ~`!@#$%^&*()_+={}[\\]\\\\:;\"'‘’“”<,>.?/-]+$"
     },
     "arrival_date": {
       "type": "date",
       "label": "Arrival date",
       "required": true,
-      "minDate": "2026-01-01",
-      "maxDate": "2027-12-31",
-      "placeholder": "2026-05-14",
-      "help": "Format: YYYY-MM-DD — the date you land in Thailand",
+      "placeholder": "2026/05/14",
+      "help": "yyyy/mm/dd, as the TDAC date box shows it. The TDAC accepts today through 3 days ahead.",
       "errors": {
         "required": "Arrival date is required",
-        "invalidFormat": "Use YYYY-MM-DD",
-        "tooEarly": "TDAC must be filed within 3 days before arrival",
-        "tooLate": "Arrival date seems too far in the future"
-      }
+        "invalidFormat": "Use YYYY/MM/DD",
+        "tooEarly": "Arrival date cannot be in the past",
+        "tooLate": "The TDAC only takes an arrival date up to 3 days ahead. Come back closer to the date."
+      },
+      "format": "YYYY/MM/DD",
+      "minDaysFromToday": 0,
+      "maxDaysFromToday": 3
     },
     "email": {
       "type": "email",
       "label": "Email",
       "required": true,
-      "maxLength": 80,
+      "maxLength": 50,
       "placeholder": "name@example.com",
-      "help": "Confirmation is sent here. Use an email you can check on your phone.",
+      "help": "Asked once, after the preview, for the whole submission. Max 50 characters. Use an email you can check on your phone.",
       "errors": {
         "required": "Email is required",
-        "invalidFormat": "Must look like name@example.com",
-        "tooLong": "Email too long — max 80 characters"
-      }
+        "invalidFormat": "Not accepted by the TDAC: check for spaces, a missing dot in the domain, or a typo",
+        "tooLong": "Email too long — max 50 characters"
+      },
+      "pattern": "^(?!\\s*[=+@-])[a-zA-Z0-9!#$%&'+/=?^_`{|}~-]+(\\.[a-zA-Z0-9!#$%&'+/=?^_`{|}~-]+)*@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)+$"
     },
     "phone": {
       "type": "phone",
       "label": "Phone number",
       "required": true,
       "placeholder": "4155550100",
-      "help": "Digits only. On the official form the country code goes in a separate Code box.",
+      "help": "Digits only, up to 25. On the official form the country code goes in a separate Code box.",
       "errors": {
         "required": "Phone number is required on the current TDAC",
-        "invalidFormat": "Digits only, no + sign. Put the country code in the separate Code box."
-      }
+        "invalidFormat": "Digits only, up to 25 — no + or spaces. Put the country code in the separate Code box."
+      },
+      "pattern": "^\\d+$",
+      "maxLength": 25
     }
   }
 }

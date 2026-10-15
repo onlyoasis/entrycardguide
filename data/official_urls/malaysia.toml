@@ -37,6 +37,20 @@ agency = "Jabatan Imigresen Malaysia (Immigration Department of Malaysia)"
 last_verified = "2026-10-15"
 notes = "Read 2026-10-15. Step 1: complete and submit MDAC within 3 days before arrival. Step 2: show the MDAC registration and verify your passport at the Immigration counter. Prepared by the Security and Passport Division."
 
+[registration_form]
+url = "https://imigresen-online.imi.gov.my/mdac/main?registerMain"
+name = "MDAC registration form"
+agency = "Jabatan Imigresen Malaysia (Immigration Department of Malaysia)"
+last_verified = "2026-10-15"
+notes = "Read 2026-10-15 (HTML attributes, key filters and submit checks). Two sections, Personal Information and Traveling Information, 21 labelled fields all marked required. Name max 60, letters and spaces only; Passport No. max 12; Date of Birth, Date of Passport Expiry, Date of Arrival and Date of Departure are read-only calendar boxes in DD/MM/YYYY; the arrival calendar offers today to two days ahead and the form notes the trip must be within 3 days including the date of submission; expiry calendar starts today and does not enforce six months. Nationality / Citizenship and Place of Birth are country lists (CODE - NAME). Email and Confirm Email max 100, must match, and the email check allows letters, digits, dot, hyphen and underscore before the @ (no +). Country / Region Code list and Mobile No. (digits only, max 12) both required. Flight / Vessel / Transportation No. max 30, letters, digits, spaces and @ / - ( ) , ' ; Mode of Travel AIR, LAND or SEA; Last Port of Embarkation before Malaysia is a country list (no port-of-entry field). Accommodation of Stay: HOTEL/MOTEL/REST HOUSE, RESIDENCE OF FRIENDS/RELATIVES or OTHERS; 'Please key-in alphanumeric only'; Address two lines of max 100, line 1 needs at least three words, NA/N/A/NULL/NIL refused; State list of 16, City list by state, Postcode 5 digits; slider captcha before submit. Pop-up messages quoted on the guide are copied from the form's script."
+
+[entry_requirements]
+url = "https://www.imi.gov.my/wp-content/uploads/2023/02/2023-CR-Portal-JIM-24022023-BI.pdf"
+name = "Requirements for visitors entering Malaysia (PDF)"
+agency = "Jabatan Imigresen Malaysia"
+last_verified = "2026-10-15"
+notes = "Read 2026-10-15. Item 1.1(e): documents must be valid for six months or more from the date of entry into Malaysia."
+
 [myniise_notice]
 url = "https://www.imi.gov.my/index.php/pengumuman/mdac-kini-boleh-diisi-terus-melalui-aplikasi-myniise/"
 name = "MDAC can now be filled in the MyNIISe app (notice)"
@@ -70,8 +84,8 @@ suffix = ".gov.my"
 form_type = "arrival_card"
 
 # Used by the how-to-fill layout.
-field_count = 15
-sections = 3
+field_count = 21
+sections = 2
 time_needed_en = "~7 minutes"
 time_needed_zh = "约 7 分钟"
 time_needed_zh_hant = "約 7 分鐘"

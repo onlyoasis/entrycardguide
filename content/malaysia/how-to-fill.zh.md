@@ -12,92 +12,111 @@ layout: how-to-fill
 
 {{< official-link site="malaysia.mdac" >}}
 
-本指南按官方 MDAC 表单的实际顺序，逐字段讲解填写。粘贴到官方站点之前，先在下面预校验。
+本指南按官方 MDAC 登记表的实际顺序讲解：先个人信息（Personal Information），再行程信息（Traveling Information）。表单共 21 个字段，全部标为必填，只有地址第二行可以空着。填到官方站点之前，先在下面预校验。
 
 {{< validator country="malaysia" >}}
 
-## 第 1 部分：旅客身份
+以下字段规则来自 imigresen-online.imi.gov.my 上的在线登记表，2026-10-15 读取。
 
-### 护照号
+## 第 1 部分：个人信息（Personal Information）
 
-资料页上 "Passport No." 旁边的字符串。
+### 姓名（Name）
 
-- **格式**：字母+数字，6 到 12 位。无空格、连字符。
+**一个框填全名。** MDAC 不分名和姓。
+
+- **上限 60 字符。** 只能填字母和空格：逗号、连字符、撇号和数字都打不进去。
+- **顺序**：照护照资料页印刷的顺序填。不少西方护照是名在前，部分亚洲护照是姓在前。按护照来，不要重排。
+- **名字里有连字符或撇号**：连字符换成空格，撇号去掉。资料页底部 MRZ 那一行就是这么写的，所以 `SMITH-JONES` 填 `SMITH JONES`，`O'BRIEN` 填 `OBRIEN`。
+
+### 护照号（Passport No.）
+
+资料页上 "Passport No." 旁边的号码。
+
+- **上限 12 位**，字母和数字。照印刷填，不加空格。框里打不进短横。
 - **不要用 MRZ。** 资料页底部那两行长字符串含校验位。用上面的短号。
-- **常见错误**："Invalid passport number" 通常是含空格或粘贴自 MRZ。
 
-### 全名（与护照一致）
+### 出生日期（Date of Birth）
 
-**单字段。** MDAC 不分名和姓。整个名字按护照资料页印刷的填。
+- **这个框不能手打。** 点开后在日历里选，填出来是 `DD/MM/YYYY`，例如 `22/08/1991`。
+- 在上面的预校验工具里也按 `DD/MM/YYYY` 填。
 
-- **上限 80 字符。**
-- **仅拉丁字母。** 参考护照 MRZ 区域的纯 ASCII 拼写。
-- **顺序**：跟护照印刷一致。多数西方护照是名在前姓在后。部分亚洲护照是姓在前。**按护照来，不要重排**。
-- **常见错误**：按表单看似期望的顺序填，而不是按护照顺序。一律按护照。
+### 国籍（Nationality / Citizenship）
 
-### 国籍
+国家下拉列表，每项是三字母代码加国名：`CHN - CHINA`、`GBR - UNITED KINGDOM`。
 
-下拉选护照颁发国。
+- 选签发你护照的国家。三字母代码就是护照 MRZ 行里那个。
+- 香港特区（`HKG`）、澳门特区（`MAC`）、台湾（`TWN`）各有单独一项；`GBR` 以外的英国护照也各有一项，例如 `GBN - BRITISH NATIONAL OVERSEAS`。
 
-- 列表英文字母排序。
-- 马来西亚移民系统区分多种护照类型（普通、公务、外交）。普通游客选 regular（普通）。
+### 出生地（Place of Birth）
 
-### 出生日期
+同一份国家列表。选你出生的国家。
 
-格式：`YYYY-MM-DD`。
+### 性别（Sex）
 
-- `1991-08-22`，不是 `22/08/1991` 也不是 `08-22-1991`。
-- 手机端用日期选择器。
+`MALE` 或 `FEMALE`。
 
-### 护照有效期
+### 护照有效期（Date of Passport Expiry）
 
-格式：`YYYY-MM-DD`。
+- 也是日历，`DD/MM/YYYY`，今天以后的日期都能选。
+- 马来西亚移民局要求护照自入境之日起有效期不少于六个月。日历不会替你检查，自己算一下，不够就先换护照。
 
-- 必须在你计划抵达马来西亚后**至少 6 个月**有效。这是国际通行的入境规则。
-- 如果护照早于此到期，航司在马来西亚移民局之前就会拒绝登机。先续护照。
+### 邮箱和确认邮箱（Email Address、Confirm Email Address）
 
-## 第 2 部分：行程
+- **上限 100 字符**，要输两遍。两次不一致会提示 "Your emails do not match. Please try again."
+- **地址里不能有 `+`。** `@` 前面只接受字母、数字、点、连字符和下划线。`name+trip@gmail.com` 会被提示 "Please enter a valid email address."，改用不带 + 的原地址。
+- 用你常看的邮箱。确认信和“查询登记”要用的 PIN 都发到这里。
 
-### 航班号
+### 国家/地区代码和手机号（Country / Region Code、Mobile No.）
 
-航司 2 位 IATA 代码 + 航班号，无空格。
+两项都必填。
 
-- `MH123`（马航）、`AK456`（亚航）、`SQ102`（新航）、`EK343`（阿联酋）。
-- **共享航班陷阱**：用**承运**航司。马来西亚移民局看的是旅客名单上的承运航司。
+- **Country / Region Code** 是下拉列表，显示为 `( 86 ) CHINA`、`( 1 ) UNITED STATES`。选你手机号所属的国家。
+- **Mobile No.** 只能填数字，最多 12 位，不加 `+`、空格和短横：`+86 138 1234 5678` 就是区号选 `86`，号码填 `13812345678`。
 
-### 抵达日期
+## 第 2 部分：行程信息（Traveling Information）
 
-格式：`YYYY-MM-DD`。落地马来西亚的日期，按马来西亚本地时间。
+表单上写明：行程必须在 3 天之内，提交当天也算一天。
 
-- 必须在今天起 3 天内。MDAC 站会拒绝窗口外的提交。
-- 红眼陷阱：5 月 13 日 23:00 起飞，5 月 14 日凌晨 02:00 落地，抵达日期是 `2026-05-14`。
+### 抵达日期（Date of Arrival）
 
-### 入境口岸
+- **只能用日历选，`DD/MM/YYYY`。** 只开放今天和之后两天。5 月 14 日落地的话，5 月 12 日起才能选到这一天。
+- 填落地日期，按马来西亚本地时间。红眼陷阱：5 月 13 日 23:00 起飞，5 月 14 日凌晨 02:00 落地，抵达日期是 `14/05/2026`。
 
-马来西亚机场（IATA 代码）或陆路过境点。
+### 离境日期（Date of Departure）
 
-- 机场：`KUL`（吉隆坡国际）、`PEN`（槟城）、`BKI`（亚庇）、`KCH`（古晋）、`JHB`（新山）、`LGK`（兰卡威）、`TGG`（瓜拉登嘉楼）。
-- 从泰国陆路：`Bukit Kayu Hitam / Padang Besar / Wang Kelian`。
-- 从新加坡陆路：`Johor Bahru - Woodlands` 或 `Tuas - Tuas`。
-- 海路：按名称列出（`Pulau Langkawi Jetty`、`Penang Ferry Terminal`）。
+- **必填。** 日历选，`DD/MM/YYYY`，从抵达日期开始可选；改了抵达日期，离境日期会被清空。
 
-## 第 3 部分：马来西亚停留
+### 航班/船/交通工具编号（Flight / Vessel / Transportation No.）
 
-### 马来西亚地址
+- **不管哪种出行方式都必填，上限 30 字符。** 可以有字母、数字、空格，以及 `@ / - ( ) , '`。
+- 坐飞机：填机票上的航班号，如 `MH123`（马航）、`AK456`（亚航）、`SQ102`（新航）。共享航班用承运航司的航班号。
+- 走海路或陆路：填船、大巴或车辆的编号。
 
-入住地。
+### 出行方式（Mode of Travel）
 
-- **上限 200 字符。**
-- 酒店名 + 城市就够。`Mandarin Oriental Kuala Lumpur` 没问题。
-- Airbnb：用房东确认的地址。
-- 多地停留？用第一晚。不需要完整行程。
+`AIR`（航空）、`LAND`（陆路）或 `SEA`（海路）。
 
-### 邮箱
+### 入境前最后登乘地（Last Port of Embarkation before Malaysia）
 
-MDAC 确认信发到这里。
+MDAC 没有“入境口岸”这一栏。这里问的是你搭乘入境马来西亚的航班、船或车是在哪里上的，而且是国家列表，不是机场代码。
 
-- **上限 80 字符。**
-- 用持续可查的邮箱。确认信和“查询登记”要用的 PIN 都发到这里。
+- 曼谷直飞吉隆坡：选 `THA - THAILAND`。曼谷经新加坡转机到吉隆坡：选 `SGP - SINGAPORE`。
+- 陆路或渡轮：选你离开的那个国家，例如从新加坡过关进柔佛选 `SGP - SINGAPORE`。
+
+### 住宿类型（Accommodation of Stay）
+
+`HOTEL/MOTEL/REST HOUSE`（酒店/汽车旅馆/招待所）、`RESIDENCE OF FRIENDS/RELATIVES`（亲友住所）或 `OTHERS`（其他）。
+
+### 马来西亚地址、州、邮编、城市（Address (In Malaysia)、State、Postcode、City）
+
+地址框上方写着 "Please key-in alphanumeric only"（只填字母和数字）。
+
+- **两行，每行最多 100 字符。** 只能用字母、数字、空格和 `@ / - ( ) , '`，别的字符输入时会被删掉。
+- **第一行至少要三个词。** `MANDARIN ORIENTAL KUALA LUMPUR` 能过；只写 `AIRBNB` 会提示 "Please enter Address (In Malaysia) properly."。`NA`、`N/A`、`NULL`、`NIL` 都不接受。
+- **State** 是 13 个州和 3 个联邦直辖区（`WP KUALA LUMPUR`、`WP LABUAN`、`WP PUTRAJAYA`）的列表；选好州后 **City** 才会加载；**Postcode** 填 5 位数字。
+- 酒店：照订单抄街道地址。Airbnb：用房东确认的地址。多地停留：填第一晚。
+
+表单最下方拖动滑块完成验证，再提交。
 
 ---
 
@@ -136,23 +155,31 @@ MDAC 确认信发到这里。
 
 ## 常见错误及含义
 
-**"Invalid passport number"**
-含空格、连字符，或粘贴自 MRZ。用资料页上的短号。
+MDAC 用弹窗提示错误。下面是登记表可能弹出的提示，原文照录。
 
-**"Invalid date of birth" / "Invalid passport expiry"**
-用了 `MM/DD/YYYY` 或 `DD/MM/YYYY`。用 `YYYY-MM-DD` 或日期选择器。
+**"Please enter …" / "Please choose …"**
+有必填框没填，提示里会写明是哪一项，例如 "Please enter Mobile No."、"Please enter Date of Departure."。表单上每一项都是必填。
 
-**"Passport not valid for travel"**
-护照在你抵达日期之后不到 6 个月就到期。出发前必须续护照。
+**"Please enter a valid email address."**
+邮箱里有表单不接受的字符，多半是 `@` 前面的 `+`，或者漏了点之类的笔误。表单会清空这一框，重新输入不带 + 的原地址。
 
-**"Arrival date out of range"**
-抵达前超过 3 天提交。等到窗口内再提交。
+**"Your emails do not match. Please try again."**
+确认邮箱和邮箱不一致。重新手打一遍，别把同一个笔误粘贴两次。
 
-**"Flight not recognized"**
-航班号含空格，或用了共享航班的营销代码。看登机牌的承运航司。
+**"Please enter Address (In Malaysia) properly."**
+地址第一行不到三个词。写街道地址，不要只写酒店名或 Airbnb。
 
-**"Invalid email"**
-尾随空格或域名拼错。
+**"NA, N/A, NULL, NIL is not allowed for Address (In Malaysia)"**
+要填真实的马来西亚地址。
+
+**"Postcode cannot less than 5 digit!"**
+马来西亚邮编是 5 位数字，对照订单上的邮编。
+
+**"Please verify the captcha before proceeding"**
+提交前先拖动表单下方的滑块拼图。
+
+**要选的抵达日期是灰的**
+日历只开放今天和之后两天。等抵达日进入这个范围再来填。
 
 **站点超时或卡死**
 MDAC 站在出行高峰偶尔不稳。等 10-15 分钟再试。一直不行换浏览器或换网络。

@@ -11,7 +11,7 @@ layout: how-to-fill
 
 {{< official-link site="thailand.tdac" >}}
 
-This guide walks through the fields the official TDAC asks for, in the order the form presents them. Pre-check your entries with the tool below before you paste them into the official site.
+This guide covers the TDAC fields people get wrong most often. The official form runs in three steps, Personal Information, Trip & Accommodation Information and Health Declaration, then a preview where you enter your email and submit. Field rules below were checked against the live form (version 2026.09.00) and the official user guide on 2026-10-15. Pre-check your entries with the tool below before you type them into the official site.
 
 {{< validator country="thailand" >}}
 
@@ -19,67 +19,68 @@ This guide walks through the fields the official TDAC asks for, in the order the
 
 Have your passport open to the photo page. Every value in this section comes off that one page. Copy it exactly. No creative spelling.
 
+The site's **Retrieve with Passport** button can read the MRZ from a camera scan or an uploaded photo and fill in your name, passport number, nationality and date of birth. The official guide asks you to recheck everything it fills in.
+
 ### Passport number
 
-The string printed next to "Passport No." or "Passport No./No. de passeport" on the photo page. Usually 6 to 9 characters. Almost always starts with a letter.
+The string printed next to "Passport No." or "Passport No./No. de passeport" on the photo page.
 
-- **Format:** `^[A-Z][A-Z0-9]{5,8}$` — one uppercase letter, then 5 to 8 letters or digits.
-- **No spaces, no dashes.** If your passport prints `A 1234567`, type `A1234567`.
+- **Letters and digits only, up to 20 characters.** No spaces, no dashes: if your passport prints `A 1234567`, type `A1234567`. Lowercase is fine; the site turns it into capitals.
 - **Do not use the MRZ.** The two long strings at the bottom of the photo page (the machine-readable zone) include check digits that are not your passport number. Use the short number printed above them.
-- **Common error:** "Invalid passport number" usually means you included a space, pasted from the MRZ, or used a lowercase letter. The official site uppercases for you, but the validator below flags it early so you notice.
+- A space or dash gets the form's "Invalid format." message.
 
-### Given name
+### First name and middle name
 
-Your first and middle names, exactly as printed on the passport, in Latin letters.
-
-- **Max 40 characters.** Passports truncate long names. If yours is truncated on the passport, use the truncated version, not the full legal name.
-- **No accents, no diacritics, no non-Latin scripts.** If your passport shows both a native-script name and a Latin transliteration, use the Latin one. The TDAC will not accept `José` or `Müller` even if that is how your name is spelled at home. Use the spelling in the passport's MRZ row, which is always ASCII.
-- **Middle names:** include them in this field, separated by a single space, only if they appear on the passport photo page. If your passport says `JOHN QUINCY`, type `JOHN QUINCY`. If it says `JOHN Q`, type `JOHN Q`.
+- **First Name** is required: your given names, exactly as printed, in Latin letters. Max 60 characters, letters A–Z and spaces only.
+- **Middle Name** is a separate box and optional, with the same rules. The site's own passport scan puts every given name into First Name and leaves Middle Name empty, so `JOHN QUINCY` in First Name is fine. Either way, type only the names printed on the photo page.
+- **No accents, no diacritics, no non-Latin scripts.** `José` or `Müller` gets "Invalid format." Use the spelling in the passport's MRZ row, which is always ASCII: `JOSE`, `MUELLER` or however your MRZ writes it.
+- Passports truncate long names. If yours is truncated on the passport, use the truncated version, not the full legal name.
 
 ### Family name
 
-Your surname, exactly as printed on the passport.
+Your surname, exactly as printed on the passport. On the form it comes before First Name.
 
-- **Max 40 characters.**
-- **Hyphenated names:** keep the hyphen. `SMITH-JONES` stays `SMITH-JONES`.
+- **Required. Max 60 characters, letters A–Z and spaces only.**
+- **No hyphens or apostrophes.** `SMITH-JONES` gets "Invalid format." Type `SMITH JONES`: the MRZ line writes it `SMITH<JONES`, with the same separator it uses between words.
+- **No family name on your passport?** Type a single `-`. That is the form's own hint, and the passport scan does the same when it finds only one name, putting that name in First Name.
 - **Suffixes** like `JR` or `III`: include them only if they appear on the passport.
-- If your family name field on the passport is blank (some countries issue passports with a single name in the given-name field), repeat the given name here. Thai immigration has accepted this at the counter for years.
 
 ### Date of birth
 
-Format: `YYYY-MM-DD`. This is the single most common place people get rejected.
+Three boxes, in this order: **year (yyyy), month (mm), day (dd).** Type or pick each value from the list that appears. The month and day boxes open once the year is in.
 
-- `1991-08-22`, not `08/22/1991`, not `22-08-1991`.
-- The official site uses a date picker on desktop and a native date input on mobile. The picker hides the format question, but if you paste, paste ISO format.
-- **Common error:** "Invalid date" almost always means you used the US format `MM/DD/YYYY` or the EU format `DD/MM/YYYY`. The validator below catches this.
+- `1991`, `08`, `22`. Not day first.
+- The pre-check tool above takes the same date as `YYYY-MM-DD`.
+- Date of birth cannot be changed with Update Arrival Card. If it is wrong, submit a new TDAC.
 
 ## Section 2: Trip
 
-### Flight number
+### Flight No./Vehicle No.
 
-Airline 2-letter IATA code, then the flight number, no space.
-
-- `TG312`, not `TG 312` and not `THAI312`.
-- If your ticket shows a codeshare (e.g. "operated by Thai Airways, marketed as United UA7231"), use the **operating** carrier's flight number. That is the one immigration sees on the passenger manifest.
+- **Required, up to 20 characters.** Spaces and ordinary punctuation are accepted, so `TG312` and `TG 312` both go through. Type it as your ticket shows it.
+- Arriving by land: the vehicle number goes here. If you pick `OTHERS (PLEASE SPECIFY)` as Mode of Transport, you describe the transport in a text box instead (letters and spaces, up to 50 characters) and this box becomes optional.
+- If your ticket shows a codeshare (e.g. "operated by Thai Airways, marketed as United UA7231"), use the **operating** carrier's flight number.
 - Charter flights sometimes have 4-digit numbers with a letter suffix (e.g. `XL8842A`). Include the suffix.
-- **Common error:** "Flight not found" almost never means the form actually validates against a flight database. It usually means you typed a space or the wrong airline code. Re-check your boarding pass.
 
 ### Arrival date
 
-Format: `YYYY-MM-DD`. The date you actually land in Thailand, in Thailand local time.
+The date you actually land in Thailand, in Thailand local time. The form uses a date picker, and the box shows the date as `yyyy/mm/dd`. The tool above takes it the same way and flags a date outside the window.
 
-- **Red-eye trap:** if you depart JFK at 11pm on May 12 and land in Bangkok at 1am on May 14 local time, your arrival date is `2026-05-14`. Use the date printed on your boarding pass under the Bangkok (BKK) segment, not your departure date.
-- **3-day window:** the official site rejects submissions more than 3 days before arrival. If today is April 24 and you arrive May 14, come back on May 11 or later. The validator below will warn you, but the official site is the one that enforces.
+- **Red-eye trap:** if you depart JFK at 11pm on May 12 and land in Bangkok at 1am on May 14 local time, your arrival date is May 14. Use the date printed on your boarding pass under the Bangkok (BKK) segment, not your departure date.
+- **3-day window:** the arrival date box accepts today through 3 days ahead. If today is April 24 and you arrive May 14, come back on May 11 or later. A date outside that range gets "Invalid format."
+- **Date of Departure** sits next to it and is optional.
 
-## Section 3: Contact
+## Section 3: Email and phone
+
+These two are on different steps. The phone boxes are on the Personal Information page. The email comes last, after the preview.
 
 ### Email
 
-Where your confirmation and QR code arrive. This is the only thing you show at immigration. Pick an address you can open on the phone you will actually have in the airport.
+After you review the preview, the form asks you to "specify an email to send Thailand Digital Arrival Card". It asks once per submission, so a group of up to 10 travelers gets one email. Pick an address you can open on the phone you will actually have in the airport.
 
-- **Max 80 characters.**
+- **Max 50 characters,** one address.
 - **Use a real, monitored inbox.** We have seen travelers use throwaway addresses, lose the confirmation, and have to refile in the arrivals hall on airport wifi. Not fun.
-- If the confirmation does not arrive in an hour, check spam, then refile. The official site is idempotent. Duplicate submissions are harmless and the latest one applies.
+- If the email does not arrive, check spam. The confirmation screen also has a PDF download of the card. The official FAQ says to contact the Immigration Officer at the entry checkpoint if the QR code email never came. You can also submit again: the system counts only the most recent submission.
 
 ### Phone
 
@@ -92,12 +93,14 @@ Required on the current form, in two boxes: **Code** and **Phone No.** Both take
 
 ## Section 4: Health
 
-Thailand's health declaration is currently a short set of yes/no questions about recent travel to countries with active outbreak advisories and any current symptoms. The questions change with public health policy, so we do not list them field-by-field here. They are written in plain English on the official site and take about 30 seconds.
+The Health Declaration step asks for the countries or territories where you stayed within two weeks before arrival. The official user guide says the system asks for more only if one of those countries, the country where you boarded, your nationality or your flight is on the Ministry of Public Health's list. Then it asks:
 
-- Answer truthfully. Lying on a Thai health declaration is a separate offense from lying on the arrival card.
-- If you answer "yes" to any symptom question, you will be routed to a secondary health screening on arrival. This is not a denial of entry. It is a 5 to 15 minute check.
+- whether you have a Yellow Fever Vaccination Certificate, with the date of vaccination and an optional upload (JPG, JPEG, PNG or PDF, up to 5 MB);
+- which symptoms from a list you have had in the past two weeks.
 
-*Last reviewed against the live TDAC site: 2026-04-22. If the section has changed when you read this, trust the live site, not this page, and email us so we can update.*
+It may then tell you to go to the Department of Disease Control counter before the immigration checkpoint. Answer truthfully. The official FAQ says passengers who give incorrect information may be refused entry at immigration's discretion.
+
+*Last checked against the official user guide and the live TDAC form: 2026-10-15. If the form has changed when you read this, trust the live site, not this page, and email us so we can update.*
 
 ## Occupation, residence, purpose and transport
 
@@ -167,23 +170,19 @@ If the QR will not scan (rare, usually a glare issue), the officer can look up y
 
 ## Common errors and what they mean
 
-**"Invalid passport number"**
-You included a space, a dash, or a lowercase letter, or you pasted from the MRZ at the bottom of the passport photo page instead of the short number above it.
+The TDAC shows the same few messages under every box. These are the ones in the live form's code, plus two connection errors the official FAQ names.
 
-**"Date rejected" or "Invalid date format"**
-You used `MM/DD/YYYY` or `DD/MM/YYYY`. The TDAC wants `YYYY-MM-DD`. On mobile, tap the date field and use the native picker to avoid typing format mistakes entirely.
+**"This field is required."**
+A required box is empty. Family Name counts: type `-` if your passport has none. Code and Phone No. are both required, and so is Flight No./Vehicle No. unless you chose `OTHERS (PLEASE SPECIFY)` as Mode of Transport.
 
-**"Arrival date out of range"**
-You are submitting more than 3 days before arrival, or your arrival date is more than 18 months out. Wait until you are inside the 3-day window.
+**"Invalid format."**
+The box got a character or a value it does not take. Common causes: a hyphen, apostrophe or accent in a name; a space or dash in the passport number; `+` or spaces in the phone boxes; more than 20 characters in Flight No./Vehicle No.; an email with a space or over 50 characters; an arrival date outside today to 3 days ahead.
 
-**"Email format invalid"**
-You have a trailing space, a missing `@`, or a typo in the domain (`gmial.com` is the classic).
+**"Http failure response … 429 OK"**
+The official FAQ lists this one after submitting and says refresh the page and try again.
 
-**"Flight number not recognized"**
-You used the marketing carrier's code on a codeshare, added a space, or mistyped the airline prefix. Check your boarding pass for the operating carrier.
+**"Http failure response … 0 Unknown Error"**
+The official FAQ says check that you are connected to the internet.
 
-**"Name contains invalid characters"**
-You typed an accented character or a non-Latin script. Use the Latin spelling from the MRZ line of your passport, which is always ASCII.
-
-**No confirmation email after 1 hour**
-Check spam. If still missing, refile. Duplicate submissions are harmless. The most recent one is the one that counts.
+**No confirmation email**
+Check spam, and download the card from the confirmation screen. The official FAQ says to contact the Immigration Officer at the entry checkpoint if the QR code email never arrived. A new submission is also allowed; the most recent one is the one that counts.

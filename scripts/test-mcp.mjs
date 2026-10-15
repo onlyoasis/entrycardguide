@@ -164,7 +164,7 @@ let payload = await tool("list_countries", {});
 check("country list includes existing guide destinations", payload.count >= 50 && payload.countries.some((country) => country.slug === "thailand" || country.iso2 === "TH"));
 check("list countries provides attribution", payload.source?.license?.includes("CC BY-SA"));
 payload = await tool("get_field_rules", { country: "thailand" });
-check("Thailand passport constraint preserved", payload.fields.passport.pattern === "^[A-Z][A-Z0-9]{5,8}$");
+check("Thailand passport constraint preserved", payload.fields.passport.pattern === "^[A-Z0-9]{1,20}$");
 check("field rules identify validation mode", payload.validationMode === "field_rules");
 payload = await tool("get_field_guide", { country: "thailand", lang: "zh" });
 check("Chinese field guide preserved", payload.lang === "zh" && /护照/.test(payload.fields[0].howToFill || ""));

@@ -26970,8 +26970,8 @@ export default {
         "zh": "免费",
         "zh-hant": "免費"
       },
-      "fieldCount": 15,
-      "sections": 3,
+      "fieldCount": 21,
+      "sections": 2,
       "timeNeeded": {
         "en": "~7 minutes",
         "zh": "约 7 分钟",
@@ -27017,6 +27017,22 @@ export default {
           "agency": "Jabatan Imigresen Malaysia (Immigration Department of Malaysia)",
           "lastVerified": "2026-10-15",
           "notes": "Read 2026-10-15. Step 1: complete and submit MDAC within 3 days before arrival. Step 2: show the MDAC registration and verify your passport at the Immigration counter. Prepared by the Security and Passport Division."
+        },
+        {
+          "key": "registration_form",
+          "name": "MDAC registration form",
+          "url": "https://imigresen-online.imi.gov.my/mdac/main?registerMain",
+          "agency": "Jabatan Imigresen Malaysia (Immigration Department of Malaysia)",
+          "lastVerified": "2026-10-15",
+          "notes": "Read 2026-10-15 (HTML attributes, key filters and submit checks). Two sections, Personal Information and Traveling Information, 21 labelled fields all marked required. Name max 60, letters and spaces only; Passport No. max 12; Date of Birth, Date of Passport Expiry, Date of Arrival and Date of Departure are read-only calendar boxes in DD/MM/YYYY; the arrival calendar offers today to two days ahead and the form notes the trip must be within 3 days including the date of submission; expiry calendar starts today and does not enforce six months. Nationality / Citizenship and Place of Birth are country lists (CODE - NAME). Email and Confirm Email max 100, must match, and the email check allows letters, digits, dot, hyphen and underscore before the @ (no +). Country / Region Code list and Mobile No. (digits only, max 12) both required. Flight / Vessel / Transportation No. max 30, letters, digits, spaces and @ / - ( ) , ' ; Mode of Travel AIR, LAND or SEA; Last Port of Embarkation before Malaysia is a country list (no port-of-entry field). Accommodation of Stay: HOTEL/MOTEL/REST HOUSE, RESIDENCE OF FRIENDS/RELATIVES or OTHERS; 'Please key-in alphanumeric only'; Address two lines of max 100, line 1 needs at least three words, NA/N/A/NULL/NIL refused; State list of 16, City list by state, Postcode 5 digits; slider captcha before submit. Pop-up messages quoted on the guide are copied from the form's script."
+        },
+        {
+          "key": "entry_requirements",
+          "name": "Requirements for visitors entering Malaysia (PDF)",
+          "url": "https://www.imi.gov.my/wp-content/uploads/2023/02/2023-CR-Portal-JIM-24022023-BI.pdf",
+          "agency": "Jabatan Imigresen Malaysia",
+          "lastVerified": "2026-10-15",
+          "notes": "Read 2026-10-15. Item 1.1(e): documents must be valid for six months or more from the date of entry into Malaysia."
         },
         {
           "key": "myniise_notice",
@@ -27227,6 +27243,14 @@ export default {
           "agency": "Royal Thai Immigration Bureau",
           "lastVerified": "2026-10-15",
           "notes": "Read 2026-10-15. Used here: Update Arrival Card changes anything except full name, passport number, nationality and date of birth (the user guide's list leaves out passport number); otherwise submit a new form, and the most recent submission is the valid one; no airline penalty for incorrect information, but passengers may be denied entry at immigration's discretion; release notes name the occupation, country and city of residence, country boarded and accommodation type fields, Flight No./Vehicle No. up to 20 characters and address up to 215. Field rules in the live form (version 2026.09.00), read the same day: occupation required free text, English letters, spaces and punctuation, max 100; City/State of Residence required, max 100, no digits; phone Code and Phone No. both required, digits only, max 10 and 25; choosing the country of residence fills the phone code and changing it clears phone and city; purpose of travel is a required list with OTHERS (PLEASE SPECIFY) plus English letters and spaces up to 100; mode of travel required, and the mode of transport list depends on it. The option lists load only after the Cloudflare check and were not read."
+        },
+        {
+          "key": "arrival_card_form",
+          "name": "TDAC arrival card form",
+          "url": "https://tdac.immigration.go.th/arrival-card/",
+          "agency": "Royal Thai Immigration Bureau",
+          "lastVerified": "2026-10-15",
+          "notes": "Read 2026-10-15 from the form's interface text (assets/bundle/tac/arrival-card/en.json) and its field validators (version 2026.09.00); the form itself sits behind a Cloudflare human check that was not passed. Family Name required, letters and spaces or a single '-' when none (placeholder: Enter '-' if none), max 60; First Name required and Middle Name optional, letters and spaces, max 60; the Retrieve with Passport scan fills family and first name and leaves Middle Name empty. Passport No. letters and digits only, max 20. Date of Birth is three boxes, yyyy, mm, dd, month and day unlocking after the year. Arrival date picker (placeholder yyyy/mm/dd) accepts today to 3 days ahead; Date of Departure optional. Flight No./Vehicle No. required, max 20, letters, digits, spaces and punctuation; optional when Mode of Transport is OTHERS (PLEASE SPECIFY), whose text box takes letters and spaces up to 50. Email asked once on the preview step ('Please specify an email to send Thailand Digital Arrival Card'), max 50, single address. Field messages are only 'This field is required.' and 'Invalid format.'. Health Declaration lists countries stayed in within two weeks; Yellow Fever certificate, vaccination date, optional upload (JPG, JPEG, PNG, PDF, max 5MB) and a symptom list appear only when the system flags the trip, per the user guide."
         }
       ],
       "lastVerified": "2026-10-15"
@@ -30384,44 +30408,46 @@ export default {
     "malaysia": {
       "country": "malaysia",
       "officialUrl": "https://imigresen-online.imi.gov.my/mdac/main",
-      "lastVerified": "2026-04-24",
-      "source": "https://imigresen-online.imi.gov.my/mdac/main (HTML field attributes, scraped 2026-04-24)",
+      "lastVerified": "2026-10-15",
+      "source": "https://imigresen-online.imi.gov.my/mdac/main?registerMain (field attributes, key filters and submit checks, read 2026-10-15)",
       "fields": {
-        "passport": {
-          "type": "passport",
-          "label": "Passport number",
-          "required": true,
-          "minLength": 6,
-          "maxLength": 12,
-          "pattern": "^[A-Z0-9]{6,12}$",
-          "placeholder": "A12345678",
-          "help": "Printed on the photo page of your passport. Letters and numbers only.",
-          "errors": {
-            "required": "Passport number is required",
-            "tooShort": "Passport number too short — min 6 characters",
-            "tooLong": "Passport number too long — max 12 characters",
-            "invalidChars": "Letters and numbers only — no spaces or symbols"
-          }
-        },
         "full_name": {
           "type": "name",
-          "label": "Full name (as in passport)",
+          "label": "Name (full name)",
           "required": true,
           "minLength": 1,
-          "maxLength": 80,
-          "help": "Exactly as shown on your passport (Latin letters only). The MDAC uses one full-name field, not separate given/family.",
+          "maxLength": 60,
+          "help": "One box for your full name, as printed on the passport photo page and in the same order. The MDAC takes letters and spaces only: type a space for a hyphen and leave apostrophes out.",
           "errors": {
-            "required": "Full name is required",
-            "tooLong": "Max 80 characters",
-            "invalidChars": "Use the Latin spelling from your passport — no accents or special characters"
-          }
+            "required": "Name is required",
+            "tooLong": "Max 60 characters",
+            "invalidChars": "Use the Latin spelling from your passport, letters and spaces only"
+          },
+          "pattern": "^[A-Za-z ]+$"
+        },
+        "passport": {
+          "type": "passport",
+          "label": "Passport No.",
+          "required": true,
+          "maxLength": 12,
+          "pattern": "^[A-Z0-9]{1,12}$",
+          "placeholder": "A12345678",
+          "help": "Printed on the photo page of your passport. Up to 12 letters and digits, no spaces.",
+          "errors": {
+            "required": "Passport number is required",
+            "tooShort": "Check the number on your passport photo page",
+            "tooLong": "Passport number too long — max 12 characters",
+            "invalidChars": "Letters and numbers only — no spaces or symbols",
+            "invalidFormat": "Letters and numbers only, up to 12 — no spaces or dashes"
+          },
+          "minLength": 1
         },
         "nationality": {
           "type": "nationality",
-          "label": "Nationality",
+          "label": "Nationality / Citizenship",
           "required": true,
-          "placeholder": "USA",
-          "help": "Country that issued your passport",
+          "placeholder": "CHN",
+          "help": "The country that issued your passport. On the MDAC you pick it from a list such as CHN - CHINA.",
           "errors": {
             "required": "Nationality is required",
             "invalidFormat": "Select from the dropdown"
@@ -30429,93 +30455,128 @@ export default {
         },
         "date_of_birth": {
           "type": "date",
-          "label": "Date of birth",
+          "label": "Date of Birth",
           "required": true,
           "minDate": "1900-01-01",
-          "maxDate": "2026-12-31",
-          "placeholder": "1991-08-22",
-          "help": "Format: YYYY-MM-DD",
+          "placeholder": "22/08/1991",
+          "help": "DD/MM/YYYY, as the MDAC calendar fills it in. The calendar stops at yesterday.",
           "errors": {
             "required": "Date of birth is required",
-            "invalidFormat": "Use YYYY-MM-DD",
+            "invalidFormat": "Use DD/MM/YYYY",
             "tooEarly": "Date of birth seems too far in the past — double check",
-            "tooLate": "Date of birth cannot be in the future"
-          }
+            "tooLate": "Date of birth must be before today"
+          },
+          "format": "DD/MM/YYYY",
+          "maxDaysFromToday": -1
         },
         "passport_expiry": {
           "type": "date",
-          "label": "Passport expiry date",
+          "label": "Date of Passport Expiry",
           "required": true,
-          "placeholder": "2030-08-22",
-          "help": "Must be at least 6 months after your planned arrival",
+          "placeholder": "22/08/2030",
+          "help": "DD/MM/YYYY. The MDAC calendar starts from today. Malaysia also requires six months or more of validity from your date of entry, which the calendar does not check.",
           "errors": {
             "required": "Passport expiry is required",
-            "invalidFormat": "Use YYYY-MM-DD",
-            "tooEarly": "Passport must be valid at least 6 months after arrival"
-          }
+            "invalidFormat": "Use DD/MM/YYYY",
+            "tooEarly": "This date has passed — the passport has expired"
+          },
+          "format": "DD/MM/YYYY",
+          "minDaysFromToday": 0
         },
-        "flight_number": {
-          "type": "flight",
-          "label": "Flight number",
+        "email": {
+          "type": "email",
+          "label": "Email Address",
           "required": true,
-          "placeholder": "MH123",
-          "help": "Airline 2-letter code + flight number (e.g. MH123, AK456). No spaces.",
+          "maxLength": 100,
+          "placeholder": "name@example.com",
+          "help": "Typed twice on the MDAC. Up to 100 characters; before the @ the form takes letters, digits, dots, hyphens and underscores only, so no +.",
           "errors": {
-            "required": "Flight number is required",
-            "invalidFormat": "Format: airline code + number (e.g. MH123). No spaces."
-          }
+            "required": "Email is required",
+            "invalidFormat": "Not accepted by the MDAC: before the @ use letters, digits, dots, hyphens or underscores (no +)",
+            "tooLong": "Email too long — max 100 characters"
+          },
+          "pattern": "^([a-zA-Z0-9_\\.\\-])+\\@(([a-zA-Z0-9\\-])+\\.)+([a-zA-Z0-9]{2,4})+$"
+        },
+        "mobile": {
+          "type": "phone",
+          "label": "Mobile No.",
+          "required": true,
+          "maxLength": 12,
+          "placeholder": "13812345678",
+          "help": "Digits only, up to 12. The country code goes in the separate Country / Region Code list.",
+          "errors": {
+            "required": "Mobile number is required on the MDAC",
+            "invalidFormat": "Digits only, up to 12 — no +, spaces or dashes. Pick the country code from the separate list."
+          },
+          "pattern": "^\\d+$"
         },
         "arrival_date": {
           "type": "date",
-          "label": "Arrival date",
+          "label": "Date of Arrival",
           "required": true,
-          "minDate": "2026-01-01",
-          "maxDate": "2027-12-31",
-          "placeholder": "2026-05-14",
-          "help": "Format: YYYY-MM-DD — the date you arrive in Malaysia",
+          "placeholder": "14/05/2026",
+          "help": "DD/MM/YYYY. The MDAC calendar offers only today and the next two days.",
           "errors": {
             "required": "Arrival date is required",
-            "invalidFormat": "Use YYYY-MM-DD",
-            "tooEarly": "MDAC must be filed within 3 days before arrival",
-            "tooLate": "Arrival date seems too far in the future"
-          }
+            "invalidFormat": "Use DD/MM/YYYY",
+            "tooEarly": "Arrival date cannot be in the past",
+            "tooLate": "The MDAC only takes an arrival date from today to two days ahead. Come back closer to the date."
+          },
+          "format": "DD/MM/YYYY",
+          "minDaysFromToday": 0,
+          "maxDaysFromToday": 2
         },
-        "port_of_entry": {
-          "type": "text",
-          "label": "Port of entry",
+        "departure_date": {
+          "type": "date",
+          "label": "Date of Departure",
           "required": true,
-          "maxLength": 60,
-          "placeholder": "KUL (Kuala Lumpur)",
-          "help": "Airport IATA code or named land crossing",
+          "placeholder": "20/05/2026",
+          "help": "Required on the MDAC. DD/MM/YYYY; the calendar there starts from your arrival date.",
           "errors": {
-            "required": "Port of entry is required",
-            "tooLong": "Max 60 characters"
+            "required": "Departure date is required",
+            "invalidFormat": "Use DD/MM/YYYY",
+            "tooEarly": "Departure date cannot be in the past"
+          },
+          "format": "DD/MM/YYYY",
+          "minDaysFromToday": 0
+        },
+        "flight_number": {
+          "type": "flight",
+          "label": "Flight / Vessel / Transportation No.",
+          "required": true,
+          "maxLength": 30,
+          "placeholder": "MH123",
+          "help": "Required for air, land and sea, up to 30 characters: letters, digits, spaces and @ / - ( ) , ' only. By sea or road, the vessel, bus or vehicle number.",
+          "errors": {
+            "required": "Flight, vessel or transport number is required",
+            "invalidFormat": "Letters, digits, spaces and @ / - ( ) , ' only",
+            "tooLong": "Max 30 characters"
+          },
+          "pattern": "^[A-Za-z0-9/@(),' \\-]+$"
+        },
+        "last_port": {
+          "type": "text",
+          "label": "Last Port of Embarkation before Malaysia",
+          "required": true,
+          "placeholder": "SGP - SINGAPORE",
+          "help": "A country list, not an airport code: the country where you boarded the flight, ship or vehicle into Malaysia.",
+          "errors": {
+            "required": "Choose the country where you boarded"
           }
         },
         "accommodation": {
           "type": "text",
-          "label": "Address in Malaysia",
+          "label": "Address (In Malaysia)",
           "required": true,
-          "maxLength": 200,
-          "placeholder": "Hotel Example, Kuala Lumpur",
-          "help": "Hotel name and city is enough for tourism",
+          "maxLength": 100,
+          "placeholder": "MANDARIN ORIENTAL KUALA LUMPUR",
+          "help": "First address line, up to 100 characters: at least three words, letters, digits, spaces and @ / - ( ) , ' only. On the MDAC a second line, State, City and a 5-digit Postcode follow.",
           "errors": {
             "required": "Address in Malaysia is required",
-            "tooLong": "Max 200 characters"
-          }
-        },
-        "email": {
-          "type": "email",
-          "label": "Email",
-          "required": true,
-          "maxLength": 80,
-          "placeholder": "name@example.com",
-          "help": "Confirmation is sent here",
-          "errors": {
-            "required": "Email is required",
-            "invalidFormat": "Must look like name@example.com",
-            "tooLong": "Email too long — max 80 characters"
-          }
+            "tooLong": "Max 100 characters per line",
+            "invalidFormat": "At least three words, using letters, digits, spaces and @ / - ( ) , ' only"
+          },
+          "pattern": "^(?=(?:[^ ]* ){2})[A-Za-z0-9/@(),' \\-]+$"
         }
       }
     },
@@ -30783,116 +30844,137 @@ export default {
     "thailand": {
       "country": "thailand",
       "officialUrl": "https://tdac.immigration.go.th",
-      "lastVerified": "2026-04-22",
-      "source": "https://tdac.immigration.go.th (HTML field attributes, scraped 2026-04-22)",
+      "lastVerified": "2026-10-15",
+      "source": "https://tdac.immigration.go.th/arrival-card/ (live form field rules, version 2026.09.00) and the official user guide, read 2026-10-15",
       "fields": {
         "passport": {
           "type": "passport",
           "label": "Passport number",
           "required": true,
-          "minLength": 6,
-          "maxLength": 9,
-          "pattern": "^[A-Z][A-Z0-9]{5,8}$",
+          "maxLength": 20,
+          "pattern": "^[A-Z0-9]{1,20}$",
           "placeholder": "A12345678",
-          "help": "Printed on the photo page of your passport. Usually starts with a letter.",
+          "help": "Printed on the photo page of your passport. Letters and digits only, up to 20, no spaces.",
           "errors": {
             "required": "Passport number is required",
-            "tooShort": "Passport number too short — min 6 characters",
-            "tooLong": "Passport number too long — max 9 characters",
+            "tooShort": "Check the number on your passport photo page",
+            "tooLong": "Passport number too long — max 20 characters",
             "invalidChars": "Letters and numbers only — no spaces or symbols",
-            "invalidFormat": "Most passports start with a letter. Double check yours."
-          }
+            "invalidFormat": "Letters and numbers only, up to 20 — no spaces or dashes"
+          },
+          "minLength": 1
         },
         "given_name": {
           "type": "name",
-          "label": "Given name",
+          "label": "First name",
           "required": true,
           "minLength": 1,
-          "maxLength": 40,
-          "help": "Exactly as shown on your passport (Latin letters only)",
+          "maxLength": 60,
+          "help": "Given names exactly as shown on your passport. Letters A–Z and spaces only. A middle name may go in the separate Middle Name box.",
           "errors": {
-            "required": "Given name is required",
-            "tooLong": "Max 40 characters. Use the Latin abbreviation shown on your passport.",
-            "invalidChars": "Use the Latin spelling from your passport — no accents or special characters"
-          }
+            "required": "First name is required",
+            "tooLong": "Max 60 characters. Use the Latin abbreviation shown on your passport.",
+            "invalidChars": "Letters A–Z and spaces only — no accents, hyphens or other characters"
+          },
+          "pattern": "^[A-Za-z ]+$"
+        },
+        "middle_name": {
+          "type": "name",
+          "label": "Middle name",
+          "required": false,
+          "maxLength": 60,
+          "help": "Optional. Letters A–Z and spaces only. Leave it empty if you keep every given name in First Name.",
+          "errors": {
+            "tooLong": "Max 60 characters",
+            "invalidChars": "Letters A–Z and spaces only — no accents, dots or other characters"
+          },
+          "pattern": "^[A-Za-z ]+$"
         },
         "family_name": {
           "type": "name",
           "label": "Family name",
           "required": true,
           "minLength": 1,
-          "maxLength": 40,
-          "help": "Exactly as shown on your passport (Latin letters only)",
+          "maxLength": 60,
+          "help": "Exactly as shown on your passport. The TDAC takes letters A–Z and spaces only: type a space for a hyphen. No family name? Type a single -.",
           "errors": {
-            "required": "Family name is required",
-            "tooLong": "Max 40 characters",
-            "invalidChars": "Use the Latin spelling from your passport — no accents or special characters"
-          }
+            "required": "Family name is required — type - if your passport has none",
+            "tooLong": "Max 60 characters",
+            "invalidChars": "Letters A–Z and spaces only (a hyphen becomes a space), or a single - if you have no family name"
+          },
+          "pattern": "^([A-Za-z ]+|-)$"
         },
         "date_of_birth": {
           "type": "date",
           "label": "Date of birth",
           "required": true,
           "minDate": "1900-01-01",
-          "maxDate": "2026-12-31",
           "placeholder": "1991-08-22",
-          "help": "Format: YYYY-MM-DD",
+          "help": "Check it here as YYYY-MM-DD. On the TDAC it goes in three boxes: year, month, day.",
           "errors": {
             "required": "Date of birth is required",
             "invalidFormat": "Use YYYY-MM-DD (e.g. 1991-08-22)",
             "tooEarly": "Date of birth seems too far in the past — double check",
             "tooLate": "Date of birth cannot be in the future"
-          }
+          },
+          "maxDaysFromToday": 0
         },
         "flight_number": {
           "type": "flight",
-          "label": "Flight number",
+          "label": "Flight No./Vehicle No.",
           "required": true,
+          "maxLength": 20,
           "placeholder": "TG312",
-          "help": "Airline 2-letter code + flight number, no spaces (e.g. TG312, UA1234)",
+          "help": "Up to 20 characters: letters, digits, spaces and common punctuation, not starting with - + = or @. By land, the vehicle number.",
           "errors": {
             "required": "Flight number is required",
-            "invalidFormat": "Format: airline code + number (e.g. TG312, UA1234). No spaces."
-          }
+            "invalidFormat": "Letters, digits, spaces and common punctuation only; it cannot start with - + = or @",
+            "tooLong": "Max 20 characters"
+          },
+          "pattern": "^(?!\\s*[=+@-])[a-zA-Z0-9 ~`!@#$%^&*()_+={}[\\]\\\\:;\"'‘’“”<,>.?/-]+$"
         },
         "arrival_date": {
           "type": "date",
           "label": "Arrival date",
           "required": true,
-          "minDate": "2026-01-01",
-          "maxDate": "2027-12-31",
-          "placeholder": "2026-05-14",
-          "help": "Format: YYYY-MM-DD — the date you land in Thailand",
+          "placeholder": "2026/05/14",
+          "help": "yyyy/mm/dd, as the TDAC date box shows it. The TDAC accepts today through 3 days ahead.",
           "errors": {
             "required": "Arrival date is required",
-            "invalidFormat": "Use YYYY-MM-DD",
-            "tooEarly": "TDAC must be filed within 3 days before arrival",
-            "tooLate": "Arrival date seems too far in the future"
-          }
+            "invalidFormat": "Use YYYY/MM/DD",
+            "tooEarly": "Arrival date cannot be in the past",
+            "tooLate": "The TDAC only takes an arrival date up to 3 days ahead. Come back closer to the date."
+          },
+          "format": "YYYY/MM/DD",
+          "minDaysFromToday": 0,
+          "maxDaysFromToday": 3
         },
         "email": {
           "type": "email",
           "label": "Email",
           "required": true,
-          "maxLength": 80,
+          "maxLength": 50,
           "placeholder": "name@example.com",
-          "help": "Confirmation is sent here. Use an email you can check on your phone.",
+          "help": "Asked once, after the preview, for the whole submission. Max 50 characters. Use an email you can check on your phone.",
           "errors": {
             "required": "Email is required",
-            "invalidFormat": "Must look like name@example.com",
-            "tooLong": "Email too long — max 80 characters"
-          }
+            "invalidFormat": "Not accepted by the TDAC: check for spaces, a missing dot in the domain, or a typo",
+            "tooLong": "Email too long — max 50 characters"
+          },
+          "pattern": "^(?!\\s*[=+@-])[a-zA-Z0-9!#$%&'+/=?^_`{|}~-]+(\\.[a-zA-Z0-9!#$%&'+/=?^_`{|}~-]+)*@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)+$"
         },
         "phone": {
           "type": "phone",
           "label": "Phone number",
           "required": true,
           "placeholder": "4155550100",
-          "help": "Digits only. On the official form the country code goes in a separate Code box.",
+          "help": "Digits only, up to 25. On the official form the country code goes in a separate Code box.",
           "errors": {
             "required": "Phone number is required on the current TDAC",
-            "invalidFormat": "Digits only, no + sign. Put the country code in the separate Code box."
-          }
+            "invalidFormat": "Digits only, up to 25 — no + or spaces. Put the country code in the separate Code box."
+          },
+          "pattern": "^\\d+$",
+          "maxLength": 25
         }
       }
     },
@@ -35772,108 +35854,123 @@ export default {
     "malaysia": [
       {
         "n": "01",
-        "key": "passport",
-        "section_en": "Section 1 · Traveler identity",
-        "section_zh": "第 1 段 · 旅客身份",
-        "section_zh_hant": "第 1 段 · 旅客身份",
-        "example": "A12345678",
-        "mistake": "A 12345678",
-        "mistake_why_en": "space in the middle — strip all spaces and dashes",
-        "mistake_why_zh": "中间有空格——去掉所有空格和短横",
-        "mistake_why_zh_hant": "中間有空格——去掉所有空格和短橫",
-        "copy_en": "The string next to \"Passport No.\" on the photo page. 6 to 12 alphanumeric characters. Do not paste from the two long lines at the bottom of the page (the MRZ) — those include check digits, not your passport number.",
-        "copy_zh": "护照照片页 \"Passport No.\" 那一栏的字符串，6 到 12 位字母+数字。不要从照片页底部那两长串复制（那是 MRZ，包含校验位，不是护照号）。",
-        "copy_zh_hant": "護照照片頁 \"Passport No.\" 那一欄的字符串，6 到 12 位字母+數字。不要從照片頁底部那兩長串複製（那是 MRZ，包含校驗位，不是護照號）。"
+        "key": "full_name",
+        "section_en": "Section 1 · Personal Information",
+        "section_zh": "第 1 段 · 个人信息",
+        "section_zh_hant": "第 1 段 · 個人資訊",
+        "example": "LIM WEI MING",
+        "mistake": "Lim, Wei Ming",
+        "mistake_why_en": "the Name box takes letters and spaces only, so the comma will not type",
+        "mistake_why_zh": "姓名框只收字母和空格，逗号打不进去",
+        "mistake_why_zh_hant": "姓名框只收字母和空格，逗號打不進去",
+        "copy_en": "One box for your full name, up to 60 characters, letters and spaces only. MDAC does not split given and family names. Type the name in the order printed on the passport photo page. A hyphen becomes a space and an apostrophe is left out, the way the MRZ line writes it.",
+        "copy_zh": "一个框填全名，最多 60 字符，只能用字母和空格。MDAC 不分名和姓，按护照资料页印刷的顺序填。连字符换成空格，撇号去掉，和 MRZ 那一行的写法一样。",
+        "copy_zh_hant": "一個框填全名，最多 60 字符，只能用字母和空格。MDAC 不分名和姓，按護照資料頁印刷的順序填。連字符換成空格，撇號去掉，和 MRZ 那一行的寫法一樣。"
       },
       {
         "n": "02",
-        "key": "full_name",
-        "section_en": "Section 1 · Traveler identity",
-        "section_zh": "第 1 段 · 旅客身份",
-        "section_zh_hant": "第 1 段 · 旅客身份",
-        "example": "LIM WEI MING",
-        "mistake": "Lim, Wei Ming",
-        "mistake_why_en": "MDAC is a single name field, no comma. Use the order shown on your passport",
-        "mistake_why_zh": "MDAC 是单字段，不加逗号。按护照印的顺序填",
-        "mistake_why_zh_hant": "MDAC 是單欄位，不加逗號。按護照印的順序填",
-        "copy_en": "Single field — MDAC does not split given and family names. Type your full name exactly as on the passport photo page, in the same order. Western passports usually go given-first; some Asian passports go family-first. Match the passport, do not reorder.",
-        "copy_zh": "单字段——MDAC 不分名和姓。完整名字按护照照片页原样填，顺序也照搬。西式护照通常名在前、姓在后；某些亚洲护照是姓在前。看护照怎么印，别擅自调换。",
-        "copy_zh_hant": "單欄位——MDAC 不分名和姓。完整名字按護照照片頁原樣填，順序也照搬。西式護照通常名在前、姓在後；某些亞洲護照是姓在前。看護照怎麼印，別擅自調換。"
+        "key": "passport",
+        "section_en": "Section 1 · Personal Information",
+        "section_zh": "第 1 段 · 个人信息",
+        "section_zh_hant": "第 1 段 · 個人資訊",
+        "example": "A12345678",
+        "mistake": "A-12345678",
+        "mistake_why_en": "the box takes letters and digits, so a dash will not type",
+        "mistake_why_zh": "框里只收字母和数字，短横打不进去",
+        "mistake_why_zh_hant": "框裡只收字母和數字，短橫打不進去",
+        "copy_en": "The number next to \"Passport No.\" on the photo page, up to 12 letters and digits. Type it as printed, without spaces. Do not paste from the two long lines at the bottom of the page (the MRZ): those include check digits.",
+        "copy_zh": "护照资料页 \"Passport No.\" 那一栏的号码，最多 12 位字母和数字。照印刷填，不加空格。不要从资料页底部那两长串复制（那是 MRZ，含校验位）。",
+        "copy_zh_hant": "護照資料頁 \"Passport No.\" 那一欄的號碼，最多 12 位字母和數字。照印刷填，不加空格。不要從資料頁底部那兩長串複製（那是 MRZ，含校驗位）。"
       },
       {
         "n": "03",
-        "key": "date_of_birth",
-        "section_en": "Section 1 · Traveler identity",
-        "section_zh": "第 1 段 · 旅客身份",
-        "section_zh_hant": "第 1 段 · 旅客身份",
-        "example": "1991-08-22",
-        "mistake": "22/08/1991",
-        "mistake_why_en": "EU format — MDAC wants ISO YYYY-MM-DD",
-        "mistake_why_zh": "欧式格式——MDAC 要 ISO YYYY-MM-DD",
-        "mistake_why_zh_hant": "歐式格式——MDAC 要 ISO YYYY-MM-DD",
-        "copy_en": "ISO 8601 (YYYY-MM-DD). On mobile, tap the field and use the native date picker — that bypasses format errors entirely.",
-        "copy_zh": "ISO 8601（YYYY-MM-DD）。手机上点开字段用原生选择器，能跳过所有格式问题。",
-        "copy_zh_hant": "ISO 8601（YYYY-MM-DD）。手機上點開欄位用原生選擇器，能跳過所有格式問題。"
+        "key": "email",
+        "section_en": "Section 1 · Personal Information",
+        "section_zh": "第 1 段 · 个人信息",
+        "section_zh_hant": "第 1 段 · 個人資訊",
+        "example": "lim.weiming@gmail.com",
+        "mistake": "lim+mdac@gmail.com",
+        "mistake_why_en": "a + before the @ gets \"Please enter a valid email address.\"",
+        "mistake_why_zh": "@ 前面有 +，会提示 \"Please enter a valid email address.\"",
+        "mistake_why_zh_hant": "@ 前面有 +，會提示 \"Please enter a valid email address.\"",
+        "copy_en": "Up to 100 characters, typed twice: Confirm Email Address must match. Before the @ the form takes letters, digits, dots, hyphens and underscores only. The confirmation and the PIN for Check Registration arrive here.",
+        "copy_zh": "最多 100 字符，要输两遍，确认邮箱必须一致。@ 前面只接受字母、数字、点、连字符和下划线。确认信和查询登记要用的 PIN 都发到这里。",
+        "copy_zh_hant": "最多 100 字符，要輸兩遍，確認信箱必須一致。@ 前面只接受字母、數字、點、連字符和下劃線。確認信和查詢登記要用的 PIN 都發到這裡。"
       },
       {
         "n": "04",
-        "key": "passport_expiry",
-        "section_en": "Section 1 · Traveler identity",
-        "section_zh": "第 1 段 · 旅客身份",
-        "section_zh_hant": "第 1 段 · 旅客身份",
-        "example": "2030-08-22",
-        "mistake": "2026-06-01",
-        "mistake_why_en": "passport must be valid 6+ months past arrival date — airline will refuse boarding",
-        "mistake_why_zh": "护照需到达后仍有 6 个月+有效期——否则航司根本不让登机",
-        "mistake_why_zh_hant": "護照需到達後仍有 6 個月+有效期——否則航司根本不讓登機",
-        "copy_en": "ISO 8601. Must be at least 6 months after your planned arrival in Malaysia — this is a standard international immigration rule. If your passport expires sooner, the airline will deny boarding before you reach Malaysian immigration.",
-        "copy_zh": "ISO 8601。必须比你到达马来西亚的日期至少晚 6 个月——这是国际通行规则。早于这个，航司就会拒载，根本到不了马来西亚移民局。",
-        "copy_zh_hant": "ISO 8601。必須比你到達馬來西亞的日期至少晚 6 個月——這是國際通行規則。早於這個，航司就會拒載，根本到不了馬來西亞移民局。"
+        "key": "mobile",
+        "section_en": "Section 1 · Personal Information",
+        "section_zh": "第 1 段 · 个人信息",
+        "section_zh_hant": "第 1 段 · 個人資訊",
+        "example": "86 · 13812345678",
+        "mistake": "+86 138-1234-5678",
+        "mistake_why_en": "Mobile No. takes digits only; the + and dashes will not type",
+        "mistake_why_zh": "Mobile No. 只收数字，+ 号和短横打不进去",
+        "mistake_why_zh_hant": "Mobile No. 只收數字，+ 號和短橫打不進去",
+        "copy_en": "Required, in two parts: pick the code from the Country / Region Code list, shown as ( 86 ) CHINA, then type the number in Mobile No., digits only, up to 12.",
+        "copy_zh": "必填，分两部分：先在 Country / Region Code 列表里选区号（显示为 ( 86 ) CHINA），再在 Mobile No. 填号码，只能是数字，最多 12 位。",
+        "copy_zh_hant": "必填，分兩部分：先在 Country / Region Code 列表裡選區號（顯示為 ( 86 ) CHINA），再在 Mobile No. 填號碼，只能是數字，最多 12 位。"
       },
       {
         "n": "05",
-        "key": "flight_number",
-        "section_en": "Section 2 · Trip",
-        "section_zh": "第 2 段 · 行程",
-        "section_zh_hant": "第 2 段 · 行程",
-        "example": "MH123",
-        "mistake": "MH 123",
-        "mistake_why_en": "space in the flight code",
-        "mistake_why_zh": "航班代码里有空格",
-        "mistake_why_zh_hant": "航班代碼裡有空格",
-        "copy_en": "2-letter IATA carrier code + number, no space. MH (Malaysia Airlines), AK (AirAsia), SQ (Singapore Airlines), EK (Emirates). Codeshare trap: use the operating carrier, not the marketing one.",
-        "copy_zh": "2 位 IATA 航司代码 + 航班号，中间不加空格。MH（马航）、AK（亚航）、SQ（新航）、EK（阿航）。代码共享要用 operating carrier，不是 marketing carrier。",
-        "copy_zh_hant": "2 位 IATA 航司代碼 + 航班號，中間不加空格。MH（馬航）、AK（亞航）、SQ（新航）、EK（阿航）。代碼共享要用 operating carrier，不是 marketing carrier。"
+        "key": "arrival_date",
+        "section_en": "Section 2 · Traveling Information",
+        "section_zh": "第 2 段 · 行程信息",
+        "section_zh_hant": "第 2 段 · 行程資訊",
+        "example": "14/05/2026",
+        "mistake": "15/05/2026 (filing on 12 May)",
+        "mistake_why_en": "the calendar offers only today and the next two days",
+        "mistake_why_zh": "日历只开放今天和之后两天",
+        "mistake_why_zh_hant": "日曆只開放今天和之後兩天",
+        "copy_en": "Picked from a calendar that fills in DD/MM/YYYY; you cannot type it. It offers today and the next two days only. Use the date you land, in Malaysia local time: depart 11pm 13 May, land 2am 14 May, and the arrival date is 14/05/2026.",
+        "copy_zh": "只能在日历里选，填出来是 DD/MM/YYYY，不能手打。只开放今天和之后两天。填马来西亚本地时间的落地日期：5/13 晚 11 点起飞、5/14 凌晨 2 点落地，就选 14/05/2026。",
+        "copy_zh_hant": "只能在日曆裡選，填出來是 DD/MM/YYYY，不能手打。只開放今天和之後兩天。填馬來西亞本地時間的落地日期：5/13 晚 11 點起飛、5/14 凌晨 2 點落地，就選 14/05/2026。"
       },
       {
         "n": "06",
-        "key": "arrival_date",
-        "section_en": "Section 2 · Trip",
-        "section_zh": "第 2 段 · 行程",
-        "section_zh_hant": "第 2 段 · 行程",
-        "example": "2026-05-14",
-        "mistake": "2026-05-13",
-        "mistake_why_en": "used departure date — use the date you land in Malaysia local time",
-        "mistake_why_zh": "用了起飞日期——要用马来西亚本地落地的日期",
-        "mistake_why_zh_hant": "用了起飛日期——要用馬來西亞本地落地的日期",
-        "copy_en": "Date you land in Malaysia, in Malaysia local time. Must be within 3 days from today — earlier submissions are rejected. Red-eye trap: depart 11pm May 13, land 2am May 14 → arrival date is 2026-05-14.",
-        "copy_zh": "你在马来西亚本地时间落地的那天。必须在 3 天之内——超前提交会被拒。红眼航班：5/13 晚 11 点起飞，5/14 凌晨 2 点落地 → 到达日期是 2026-05-14。",
-        "copy_zh_hant": "你在馬來西亞本地時間落地的那天。必須在 3 天之內——超前提交會被拒。紅眼航班：5/13 晚 11 點起飛，5/14 凌晨 2 點落地 → 到達日期是 2026-05-14。"
+        "key": "flight_number",
+        "section_en": "Section 2 · Traveling Information",
+        "section_zh": "第 2 段 · 行程信息",
+        "section_zh_hant": "第 2 段 · 行程資訊",
+        "example": "MH123",
+        "mistake": "(blank, arriving by bus)",
+        "mistake_why_en": "required for every mode of travel: by road, give the bus or vehicle number",
+        "mistake_why_zh": "不管哪种出行方式都必填：走陆路就填大巴或车辆编号",
+        "mistake_why_zh_hant": "不管哪種出行方式都必填：走陸路就填大巴或車輛編號",
+        "copy_en": "Flight / Vessel / Transportation No., up to 30 characters. Spaces are accepted. By air, the flight number on your ticket: MH (Malaysia Airlines), AK (AirAsia), SQ (Singapore Airlines). On a codeshare, use the operating carrier's number.",
+        "copy_zh": "Flight / Vessel / Transportation No.，最多 30 字符，可以有空格。坐飞机填机票上的航班号：MH（马航）、AK（亚航）、SQ（新航）。共享航班用承运航司的航班号。",
+        "copy_zh_hant": "Flight / Vessel / Transportation No.，最多 30 字符，可以有空格。坐飛機填機票上的航班號：MH（馬航）、AK（亞航）、SQ（新航）。共享航班用承運航司的航班號。"
       },
       {
         "n": "07",
-        "key": "port_of_entry",
-        "section_en": "Section 2 · Trip",
-        "section_zh": "第 2 段 · 行程",
-        "section_zh_hant": "第 2 段 · 行程",
-        "example": "KUL",
-        "mistake": "Kuala Lumpur",
-        "mistake_why_en": "use the IATA code, not the city name",
-        "mistake_why_zh": "用 IATA 代码，不是城市名",
-        "mistake_why_zh_hant": "用 IATA 代碼，不是城市名",
-        "copy_en": "Malaysian airport IATA code, or named land/sea crossing. Airports: KUL (KL), PEN (Penang), BKI (Kota Kinabalu), KCH (Kuching), JHB (Johor Bahru), LGK (Langkawi). Land from Thailand: Bukit Kayu Hitam / Padang Besar / Wang Kelian. Land from Singapore: Johor Bahru–Woodlands or Tuas–Tuas.",
-        "copy_zh": "马来西亚机场的 IATA 代码，或带名字的陆路/海路口岸。机场：KUL（吉隆坡）、PEN（槟城）、BKI（亚庇）、KCH（古晋）、JHB（新山）、LGK（兰卡威）。泰马陆路：Bukit Kayu Hitam / Padang Besar / Wang Kelian。新马陆路：Johor Bahru–Woodlands 或 Tuas–Tuas。",
-        "copy_zh_hant": "馬來西亞機場的 IATA 代碼，或帶名字的陸路/海路口岸。機場：KUL（吉隆坡）、PEN（檳城）、BKI（亞庇）、KCH（古晉）、JHB（新山）、LGK（蘭卡威）。泰馬陸路：Bukit Kayu Hitam / Padang Besar / Wang Kelian。新馬陸路：Johor Bahru–Woodlands 或 Tuas–Tuas。"
+        "key": "last_port",
+        "section_en": "Section 2 · Traveling Information",
+        "section_zh": "第 2 段 · 行程信息",
+        "section_zh_hant": "第 2 段 · 行程資訊",
+        "example": "SGP - SINGAPORE",
+        "mistake": "KUL",
+        "mistake_why_en": "not an airport code: this is a country list, and there is no port-of-entry box",
+        "mistake_why_zh": "不是机场代码：这是国家列表，MDAC 也没有入境口岸这一栏",
+        "mistake_why_zh_hant": "不是機場代碼：這是國家列表，MDAC 也沒有入境口岸這一欄",
+        "copy_en": "Last Port of Embarkation before Malaysia: the country where you boarded the flight, ship or vehicle that brings you in, picked from a list. Bangkok to Kuala Lumpur via Singapore is SGP - SINGAPORE.",
+        "copy_zh": "Last Port of Embarkation before Malaysia：你搭乘入境马来西亚的航班、船或车是在哪个国家上的，从列表里选。曼谷经新加坡转机到吉隆坡，选 SGP - SINGAPORE。",
+        "copy_zh_hant": "Last Port of Embarkation before Malaysia：你搭乘入境馬來西亞的航班、船或車是在哪個國家上的，從列表裡選。曼谷經新加坡轉機到吉隆坡，選 SGP - SINGAPORE。"
+      },
+      {
+        "n": "08",
+        "key": "accommodation",
+        "section_en": "Section 2 · Traveling Information",
+        "section_zh": "第 2 段 · 行程信息",
+        "section_zh_hant": "第 2 段 · 行程資訊",
+        "example": "MANDARIN ORIENTAL KUALA LUMPUR",
+        "mistake": "AIRBNB",
+        "mistake_why_en": "line 1 needs at least three words: \"Please enter Address (In Malaysia) properly.\"",
+        "mistake_why_zh": "第一行至少要三个词，否则提示 \"Please enter Address (In Malaysia) properly.\"",
+        "mistake_why_zh_hant": "第一行至少要三個詞，否則提示 \"Please enter Address (In Malaysia) properly.\"",
+        "copy_en": "Address (In Malaysia): two lines of up to 100 characters each, letters, digits, spaces and @ / - ( ) , ' only. Then State and City from lists and a 5-digit Postcode. Pick the Accommodation of Stay type first. NA, N/A, NULL and NIL are refused.",
+        "copy_zh": "Address (In Malaysia)：两行，每行最多 100 字符，只能用字母、数字、空格和 @ / - ( ) , '。下面再从列表选 State、City，填 5 位 Postcode。先选住宿类型（Accommodation of Stay）。NA、N/A、NULL、NIL 都不接受。",
+        "copy_zh_hant": "Address (In Malaysia)：兩行，每行最多 100 字符，只能用字母、數字、空格和 @ / - ( ) , '。下面再從列表選 State、City，填 5 位 Postcode。先選住宿類型（Accommodation of Stay）。NA、N/A、NULL、NIL 都不接受。"
       }
     ],
     "singapore": [
@@ -36098,13 +36195,13 @@ export default {
         "section_zh": "第 1 段 · 护照",
         "section_zh_hant": "第 1 段 · 護照",
         "example": "A1234567",
-        "mistake": "a 1234567",
-        "mistake_why_en": "lowercase letter and a space — also a common paste from the MRZ row",
-        "mistake_why_zh": "小写字母 + 空格；也常见于直接从 MRZ 行复制",
-        "mistake_why_zh_hant": "小寫字母 + 空格；也常見於直接從 MRZ 行複製",
-        "copy_en": "The string next to \"Passport No.\" on the photo page. Six to nine characters, almost always starts with a letter. No spaces, no dashes. Do not use the two long rows of letters and digits at the bottom of the page — that's the MRZ, not your passport number.",
-        "copy_zh": "护照照片页 \"Passport No.\" 那一栏的字符串。6 到 9 位，几乎一定以字母开头。无空格、无短横。不要用照片页底部那两长串字母数字（MRZ），那不是你的护照号。",
-        "copy_zh_hant": "護照照片頁 \"Passport No.\" 那一欄的字符串。6 到 9 位，幾乎一定以字母開頭。無空格、無短橫。不要用照片頁底部那兩長串字母數字（MRZ），那不是你的護照號。"
+        "mistake": "A 1234567",
+        "mistake_why_en": "the space: the box takes letters and digits only (lowercase is fine, the site capitalises it)",
+        "mistake_why_zh": "多了空格：这一栏只收字母和数字（小写没关系，网站会转成大写）",
+        "mistake_why_zh_hant": "多了空格：這一欄只收字母和數字（小寫沒關係，網站會轉成大寫）",
+        "copy_en": "The string next to \"Passport No.\" on the photo page. Letters and digits only, up to 20; no spaces, no dashes. Do not use the two long rows of letters and digits at the bottom of the page — that's the MRZ, not your passport number.",
+        "copy_zh": "护照照片页 \"Passport No.\" 那一栏的字符串。只能是字母和数字，最多 20 位，无空格、无短横。不要用照片页底部那两长串字母数字（MRZ），那不是你的护照号。",
+        "copy_zh_hant": "護照照片頁 \"Passport No.\" 那一欄的字符串。只能是字母和數字，最多 20 位，無空格、無短橫。不要用照片頁底部那兩長串字母數字（MRZ），那不是你的護照號。"
       },
       {
         "n": "02",
@@ -36112,96 +36209,111 @@ export default {
         "section_en": "Section 1 · Passport",
         "section_zh": "第 1 段 · 护照",
         "section_zh_hant": "第 1 段 · 護照",
-        "example": "JOHN QUINCY",
+        "example": "JOHN",
         "mistake": "José",
-        "mistake_why_en": "TDAC rejects diacritics — use the Latin MRZ spelling",
-        "mistake_why_zh": "TDAC 不接受重音符；用护照 MRZ 行里的 Latin 拼写",
-        "mistake_why_zh_hant": "TDAC 不接受重音符；用護照 MRZ 行裡的 Latin 拼寫",
-        "copy_en": "First and middle names in Latin letters, exactly as printed. Max 40 characters. No accents, no non-Latin scripts. The MRZ row of your passport is always ASCII — use it as your source of truth.",
-        "copy_zh": "名 + 中间名，用 Latin 字母原样填，最长 40 字符。不接受重音符或非 Latin 文字。护照 MRZ 行永远是 ASCII，可以拿来对照。",
-        "copy_zh_hant": "名 + 中間名，用 Latin 字母原樣填，最長 40 字符。不接受重音符或非 Latin 文字。護照 MRZ 行永遠是 ASCII，可以拿來對照。"
+        "mistake_why_en": "accented letter: the box takes A–Z and spaces only, so type the MRZ spelling, JOSE",
+        "mistake_why_zh": "带重音字母：这一栏只收 A–Z 和空格，按 MRZ 拼写填 JOSE",
+        "mistake_why_zh_hant": "帶重音字母：這一欄只收 A–Z 和空格，按 MRZ 拼寫填 JOSE",
+        "copy_en": "Given names in Latin letters, exactly as printed. Max 60 characters, letters A–Z and spaces only. A separate Middle Name box is optional; the site's own passport scan puts every given name in First Name and leaves Middle Name empty.",
+        "copy_zh": "名，用拉丁字母原样填，最长 60 字符，只能用字母 A–Z 和空格。另有一栏选填的 Middle Name（中间名）；网站自己的护照扫描会把所有名都放进 First Name，中间名一栏留空。",
+        "copy_zh_hant": "名，用拉丁字母原樣填，最長 60 字符，只能用字母 A–Z 和空格。另有一欄選填的 Middle Name（中間名）；網站自己的護照掃描會把所有名都放進 First Name，中間名一欄留空。"
       },
       {
         "n": "03",
+        "key": "middle_name",
+        "section_en": "Section 1 · Passport",
+        "section_zh": "第 1 段 · 护照",
+        "section_zh_hant": "第 1 段 · 護照",
+        "example": "QUINCY",
+        "mistake": "Q.",
+        "mistake_why_en": "the dot: Middle Name takes letters A–Z and spaces only",
+        "mistake_why_zh": "多了点号：Middle Name 只收字母 A–Z 和空格",
+        "mistake_why_zh_hant": "多了點號：Middle Name 只收字母 A–Z 和空格",
+        "copy_en": "Optional, up to 60 characters, letters A–Z and spaces only. Leave it empty if you keep every given name in First Name, which is what the site's own passport scan does. Only names printed on the photo page belong here.",
+        "copy_zh": "选填，最多 60 字符，只能用字母 A–Z 和空格。所有名都填在 First Name 的话就留空，网站自己的护照扫描就是这么处理的。只填护照资料页上印的名字。",
+        "copy_zh_hant": "選填，最多 60 字符，只能用字母 A–Z 和空格。所有名都填在 First Name 的話就留空，網站自己的護照掃描就是這麼處理的。只填護照資料頁上印的名字。"
+      },
+      {
+        "n": "04",
         "key": "family_name",
         "section_en": "Section 1 · Passport",
         "section_zh": "第 1 段 · 护照",
         "section_zh_hant": "第 1 段 · 護照",
-        "example": "SMITH-JONES",
-        "mistake": "(blank)",
-        "mistake_why_en": "some passports leave surname blank — repeat the given name",
-        "mistake_why_zh": "某些护照姓氏栏是空的——把给定名再写一遍即可",
-        "mistake_why_zh_hant": "某些護照姓氏欄是空的——把給定名再寫一遍即可",
-        "copy_en": "Surname, as printed. Keep hyphens. Include suffixes (JR, III) only if printed on the photo page. If your passport's family-name field is blank, repeat the given name.",
-        "copy_zh": "姓氏原样填，保留连字符。后缀（JR、III）只在护照印上才填。如果护照姓氏栏空白，把给定名复制一遍。",
-        "copy_zh_hant": "姓氏原樣填，保留連字符。後綴（JR、III）只在護照印上才填。如果護照姓氏欄空白，把給定名複製一遍。"
+        "example": "SMITH JONES",
+        "mistake": "SMITH-JONES",
+        "mistake_why_en": "hyphen inside the name: the box takes letters and spaces, or a lone - when there is no family name",
+        "mistake_why_zh": "姓里有连字符：这一栏只收字母和空格，没有姓时才单独填一个 -",
+        "mistake_why_zh_hant": "姓裡有連字符：這一欄只收字母和空格，沒有姓時才單獨填一個 -",
+        "copy_en": "Surname, as printed, up to 60 characters, letters A–Z and spaces only. A hyphen becomes a space, the way the MRZ line writes it (SMITH<JONES). No family name on the passport? Type a single - , as the form's own hint says. Include suffixes (JR, III) only if printed on the photo page.",
+        "copy_zh": "姓氏原样填，最多 60 字符，只能用字母 A–Z 和空格。连字符换成空格，和 MRZ 那一行的写法一样（SMITH<JONES）。护照上没有姓？按表单提示填一个 -。后缀（JR、III）只在护照印上才填。",
+        "copy_zh_hant": "姓氏原樣填，最多 60 字符，只能用字母 A–Z 和空格。連字符換成空格，和 MRZ 那一行的寫法一樣（SMITH<JONES）。護照上沒有姓？按表單提示填一個 -。後綴（JR、III）只在護照印上才填。"
       },
       {
-        "n": "04",
+        "n": "05",
         "key": "date_of_birth",
         "section_en": "Section 1 · Passport",
         "section_zh": "第 1 段 · 护照",
         "section_zh_hant": "第 1 段 · 護照",
-        "example": "1991-08-22",
-        "mistake": "08/22/1991",
-        "mistake_why_en": "US format — the official site only accepts YYYY-MM-DD",
-        "mistake_why_zh": "美国格式——官方站只认 YYYY-MM-DD",
-        "mistake_why_zh_hant": "美國格式——官方站只認 YYYY-MM-DD",
-        "copy_en": "ISO 8601 format. Not US, not EU. This is the single most-rejected field on the form. On mobile, tap the field and use the native date picker — it bypasses format errors entirely.",
-        "copy_zh": "ISO 8601 格式。既不是美式也不是欧式。这是整份表格最容易被退回的字段。手机上点开字段用原生日期选择器，能避开所有格式错误。",
-        "copy_zh_hant": "ISO 8601 格式。既不是美式也不是歐式。這是整份表格最容易被退回的欄位。手機上點開欄位用原生日期選擇器，能避開所有格式錯誤。"
+        "example": "1991 · 08 · 22",
+        "mistake": "22 · 08 · 1991",
+        "mistake_why_en": "day first: the boxes run year, month, day, and the year box wants four digits",
+        "mistake_why_zh": "日写在前面：三个框的顺序是年、月、日，年份框要 4 位数",
+        "mistake_why_zh_hant": "日寫在前面：三個框的順序是年、月、日，年份框要 4 位數",
+        "copy_en": "Three boxes on the form, in this order: year (yyyy), month (mm), day (dd). The month and day boxes open once the year is in. The pre-check above takes the same date as YYYY-MM-DD. Date of birth cannot be changed later with Update Arrival Card.",
+        "copy_zh": "表单上是三个框，顺序是年（yyyy）、月（mm）、日（dd），填好年份后月和日才能填。上面的预校验按 YYYY-MM-DD 填同一个日期。出生日期之后不能用 Update Arrival Card 修改。",
+        "copy_zh_hant": "表單上是三個框，順序是年（yyyy）、月（mm）、日（dd），填好年份後月和日才能填。上面的預校驗按 YYYY-MM-DD 填同一個日期。出生日期之後不能用 Update Arrival Card 修改。"
       },
       {
-        "n": "05",
+        "n": "06",
         "key": "flight_number",
         "section_en": "Section 2 · Trip",
         "section_zh": "第 2 段 · 行程",
         "section_zh_hant": "第 2 段 · 行程",
         "example": "TG312",
-        "mistake": "THAI 312",
-        "mistake_why_en": "airline name + space; use the 2-letter IATA code",
-        "mistake_why_zh": "写了航司全名 + 空格；要用 2 位 IATA 代码",
-        "mistake_why_zh_hant": "寫了航司全名 + 空格；要用 2 位 IATA 代碼",
-        "copy_en": "Two-letter IATA carrier code, then the flight number, no space. On a codeshare ticket (\"operated by X, marketed as Y\"), use the operating carrier — that's the one on the passenger manifest.",
-        "copy_zh": "2 位 IATA 航司代码 + 航班号，中间不加空格。代码共享航班（\"operated by X, marketed as Y\"）用 operating carrier，那才是旅客名单上的承运方。",
-        "copy_zh_hant": "2 位 IATA 航司代碼 + 航班號，中間不加空格。代碼共享航班（\"operated by X, marketed as Y\"）用 operating carrier，那才是旅客名單上的承運方。"
+        "mistake": "(blank)",
+        "mistake_why_en": "required for air, land and sea, unless Mode of Transport is OTHERS (PLEASE SPECIFY)",
+        "mistake_why_zh": "空中、陆路、海路都必填，除非 Mode of Transport 选了 OTHERS (PLEASE SPECIFY)",
+        "mistake_why_zh_hant": "空中、陸路、海路都必填，除非 Mode of Transport 選了 OTHERS (PLEASE SPECIFY)",
+        "copy_en": "Flight No./Vehicle No., up to 20 characters. Spaces are accepted. By air, the flight number on your ticket; by land, the vehicle number. On a codeshare ticket (\"operated by X, marketed as Y\"), use the operating carrier's number.",
+        "copy_zh": "Flight No./Vehicle No.，最多 20 个字符，可以有空格。坐飞机填机票上的航班号，陆路填车辆号。代码共享航班（\"operated by X, marketed as Y\"）用 operating carrier 的航班号。",
+        "copy_zh_hant": "Flight No./Vehicle No.，最多 20 個字符，可以有空格。坐飛機填機票上的航班號，陸路填車輛號。代碼共享航班（\"operated by X, marketed as Y\"）用 operating carrier 的航班號。"
       },
       {
-        "n": "06",
+        "n": "07",
         "key": "arrival_date",
         "section_en": "Section 2 · Trip",
         "section_zh": "第 2 段 · 行程",
         "section_zh_hant": "第 2 段 · 行程",
-        "example": "2026-05-14",
-        "mistake": "2026-05-12",
+        "example": "2026/05/14",
+        "mistake": "2026/05/12",
         "mistake_why_en": "used departure date — red-eye trap. Use the BKK arrival date",
         "mistake_why_zh": "用了起飞日期——红眼航班的常见错误。要用 BKK 实际抵达日期",
         "mistake_why_zh_hant": "用了起飛日期——紅眼航班的常見錯誤。要用 BKK 實際抵達日期",
-        "copy_en": "The date you actually land in Thailand, in Thailand local time. Red-eye trap: if you depart JFK at 11pm May 12 and land in Bangkok at 1am May 14 local, the arrival date is 2026-05-14. The official site rejects submissions more than 3 days before arrival.",
-        "copy_zh": "你真正在泰国本地时间落地的那一天。红眼航班陷阱：5 月 12 日晚 11 点从 JFK 起飞、5 月 14 日凌晨 1 点抵达曼谷，到达日期就是 2026-05-14。官方站点拒绝提交时间早于到达前 3 天的表单。",
-        "copy_zh_hant": "你真正在泰國本地時間落地的那一天。紅眼航班陷阱：5 月 12 日晚 11 點從 JFK 起飛、5 月 14 日凌晨 1 點抵達曼谷，到達日期就是 2026-05-14。官方網站拒絕提交時間早於到達前 3 天的表單。"
-      },
-      {
-        "n": "07",
-        "key": "email",
-        "section_en": "Section 3 · Contact",
-        "section_zh": "第 3 段 · 联系方式",
-        "section_zh_hant": "第 3 段 · 聯繫方式",
-        "example": "travel@gmail.com",
-        "mistake": "travel@gmial.com",
-        "mistake_why_en": "classic domain typo — TDAC doesn't bounce the address, it just never delivers",
-        "mistake_why_zh": "经典域名笔误——TDAC 不会退信，是直接不送达",
-        "mistake_why_zh_hant": "經典域名筆誤——TDAC 不會退信，是直接不送達",
-        "copy_en": "Where the confirmation and QR code arrive. Pick an inbox you can open on the phone you'll actually have in the airport. Max 80 chars. If nothing arrives within an hour, check spam, then refile — the official site is idempotent.",
-        "copy_zh": "确认信和二维码会发到这个邮箱。挑一个你在机场也能用手机打开的邮箱。最长 80 字符。一小时内没收到先看垃圾箱，再不行就重新提交——官方站是幂等的。",
-        "copy_zh_hant": "確認信和 QR Code 會發到這個信箱。挑一個你在機場也能用手機打開的信箱。最長 80 字符。一小時內沒收到先看垃圾箱，再不行就重新提交——官方站是冪等的。"
+        "copy_en": "The date you actually land in Thailand, in Thailand local time. Red-eye trap: if you depart JFK at 11pm May 12 and land in Bangkok at 1am May 14 local, the arrival date is May 14 (the TDAC date box shows 2026/05/14). The box accepts today through 3 days ahead.",
+        "copy_zh": "你真正在泰国本地时间落地的那一天。红眼航班陷阱：5 月 12 日晚 11 点从 JFK 起飞、5 月 14 日凌晨 1 点抵达曼谷，到达日期就是 5 月 14 日（TDAC 日期框显示为 2026/05/14）。这一栏只接受今天到 3 天后的日期。",
+        "copy_zh_hant": "你真正在泰國本地時間落地的那一天。紅眼航班陷阱：5 月 12 日晚 11 點從 JFK 起飛、5 月 14 日凌晨 1 點抵達曼谷，到達日期就是 5 月 14 日（TDAC 日期框顯示為 2026/05/14）。這一欄只接受今天到 3 天后的日期。"
       },
       {
         "n": "08",
+        "key": "email",
+        "section_en": "Section 3 · Email and phone",
+        "section_zh": "第 3 段 · 邮箱和电话",
+        "section_zh_hant": "第 3 段 · 信箱和電話",
+        "example": "travel@gmail.com",
+        "mistake": "travel @gmail.com",
+        "mistake_why_en": "space inside the address gets \"Invalid format.\" A typo like gmial.com passes the check and never reaches you",
+        "mistake_why_zh": "地址中间有空格，会提示 \"Invalid format.\"。gmial.com 这类笔误能通过检查，但邮件永远到不了你手里",
+        "mistake_why_zh_hant": "地址中間有空格，會提示 \"Invalid format.\"。gmial.com 這類筆誤能通過檢查，但郵件永遠到不了你手裡",
+        "copy_en": "Asked once, on the last step after the preview, for the whole submission. Max 50 characters, one address. The card with its QR code arrives here. If nothing comes, check spam and download the PDF from the confirmation screen; the official FAQ says to contact the Immigration Officer at the entry checkpoint.",
+        "copy_zh": "只问一次，在预览之后的最后一步，整份提交共用。最多 50 字符，只能填一个地址。带二维码的入境卡会发到这里。没收到先看垃圾箱，并从提交成功页下载 PDF；官方 FAQ 说可到入境口岸联系移民官。",
+        "copy_zh_hant": "只問一次，在預覽之後的最後一步，整份提交共用。最多 50 字符，只能填一個地址。帶 QR Code 的入境卡會發到這裡。沒收到先看垃圾箱，並從提交成功頁下載 PDF；官方 FAQ 說可到入境口岸聯繫移民官。"
+      },
+      {
+        "n": "09",
         "key": "phone",
-        "section_en": "Section 3 · Contact",
-        "section_zh": "第 3 段 · 联系方式",
-        "section_zh_hant": "第 3 段 · 聯繫方式",
+        "section_en": "Section 3 · Email and phone",
+        "section_zh": "第 3 段 · 邮箱和电话",
+        "section_zh_hant": "第 3 段 · 信箱和電話",
         "example": "1 · 4155550100",
         "mistake": "+1 415-555-0100",
         "mistake_why_en": "plus sign, spaces and dashes: both boxes take digits only",
@@ -43390,6 +43502,13 @@ export default {
         "summary_zh": "补充 MDAC 查询登记、重置 PIN 和申请更正的方法",
         "summary_zh_hant": "補充 MDAC 查詢登記、重置 PIN 和申請更正的方法",
         "detail": "From the official portal: Check Registration with passport number, nationality and the emailed PIN; Forgot your PIN? once a day; no edit option, corrections through eapp.imi.gov.my/spo. The guide now says to present the MDAC registration at the counter, as the Immigration Department's posters do."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Field guide rebuilt from the live MDAC registration form",
+        "summary_zh": "按在线 MDAC 登记表重写字段指南",
+        "summary_zh_hant": "按線上 MDAC 登記表重寫欄位指南",
+        "detail": "Fields now follow the form's two sections. Corrections: dates are calendar picks shown as DD/MM/YYYY, not typed YYYY-MM-DD; Name max 60, letters and spaces only; Email max 100 with no + allowed; Country / Region Code and Mobile No. are required; there is no port-of-entry field, it is Last Port of Embarkation before Malaysia (a country list); the address is two lines of 100 with State, City and Postcode; Date of Departure is required. Error messages are now the form's own pop-ups."
       }
     ],
     "singapore": [
@@ -43452,6 +43571,13 @@ export default {
         "summary_zh": "对照官方 TDAC 核对电话、职业、居住国、旅行目的和交通方式",
         "summary_zh_hant": "對照官方 TDAC 核對電話、職業、居住國、旅行目的和交通方式",
         "detail": "The phone number is required on the current form, in a Code box and a Phone No. box, digits only; the guide had called it optional. Added the occupation, residence, purpose and transport rules from the live form, and the Update Arrival Card steps from the official user guide and FAQ."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Name, passport, date, flight, email and health fields corrected against the live TDAC",
+        "summary_zh": "对照在线 TDAC 更正姓名、护照、日期、航班、邮箱和健康声明说明",
+        "summary_zh_hant": "對照線上 TDAC 更正姓名、護照、日期、航班、信箱和健康聲明說明",
+        "detail": "First and family name take up to 60 characters, letters and spaces only, with a separate optional Middle Name; a hyphenated surname goes in with a space, and no surname is typed as -. Passport number is letters and digits up to 20. Date of birth is three boxes, year, month, day. Flight No./Vehicle No. accepts spaces, up to 20. The email is asked once after the preview, max 50. Health questions beyond the two-week country list appear only when the system flags the trip. Error messages are now the form's own: This field is required. and Invalid format."
       }
     ],
     "dominican": [

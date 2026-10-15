@@ -799,39 +799,41 @@
    }
   },
   "malaysia": {
-   "passport": {
-    "label": "Passport number",
-    "help": "Printed on the photo page of your passport. Letters and numbers only.",
-    "placeholder": "A12345678",
-    "errors": {
-     "required": "Passport number is required",
-     "tooShort": "Passport number too short — min 6 characters",
-     "tooLong": "Passport number too long — max 12 characters",
-     "invalidChars": "Letters and numbers only — no spaces or symbols"
-    },
-    "type": "passport",
-    "required": true,
-    "pattern": "^[A-Z0-9]{6,12}$",
-    "minLength": 6,
-    "maxLength": 12
-   },
    "full_name": {
-    "label": "Full name (as in passport)",
-    "help": "Exactly as shown on your passport (Latin letters only). The MDAC uses one full-name field, not separate given/family.",
+    "label": "Name (full name)",
+    "help": "One box for your full name, as printed on the passport photo page and in the same order. The MDAC takes letters and spaces only: type a space for a hyphen and leave apostrophes out.",
     "errors": {
-     "required": "Full name is required",
-     "tooLong": "Max 80 characters",
-     "invalidChars": "Use the Latin spelling from your passport — no accents or special characters"
+     "required": "Name is required",
+     "tooLong": "Max 60 characters",
+     "invalidChars": "Use the Latin spelling from your passport, letters and spaces only"
     },
     "type": "name",
     "required": true,
+    "pattern": "^[A-Za-z ]+$",
     "minLength": 1,
-    "maxLength": 80
+    "maxLength": 60
+   },
+   "passport": {
+    "label": "Passport No.",
+    "help": "Printed on the photo page of your passport. Up to 12 letters and digits, no spaces.",
+    "placeholder": "A12345678",
+    "errors": {
+     "required": "Passport number is required",
+     "tooShort": "Check the number on your passport photo page",
+     "tooLong": "Passport number too long — max 12 characters",
+     "invalidChars": "Letters and numbers only — no spaces or symbols",
+     "invalidFormat": "Letters and numbers only, up to 12 — no spaces or dashes"
+    },
+    "type": "passport",
+    "required": true,
+    "pattern": "^[A-Z0-9]{1,12}$",
+    "minLength": 1,
+    "maxLength": 12
    },
    "nationality": {
-    "label": "Nationality",
-    "help": "Country that issued your passport",
-    "placeholder": "USA",
+    "label": "Nationality / Citizenship",
+    "help": "The country that issued your passport. On the MDAC you pick it from a list such as CHN - CHINA.",
+    "placeholder": "CHN",
     "errors": {
      "required": "Nationality is required",
      "invalidFormat": "Select from the dropdown"
@@ -840,94 +842,129 @@
     "required": true
    },
    "date_of_birth": {
-    "label": "Date of birth",
-    "help": "Format: YYYY-MM-DD",
-    "placeholder": "1991-08-22",
+    "label": "Date of Birth",
+    "help": "DD/MM/YYYY, as the MDAC calendar fills it in. The calendar stops at yesterday.",
+    "placeholder": "22/08/1991",
     "errors": {
      "required": "Date of birth is required",
-     "invalidFormat": "Use YYYY-MM-DD",
+     "invalidFormat": "Use DD/MM/YYYY",
      "tooEarly": "Date of birth seems too far in the past — double check",
-     "tooLate": "Date of birth cannot be in the future"
+     "tooLate": "Date of birth must be before today"
     },
     "type": "date",
     "required": true,
     "minDate": "1900-01-01",
-    "maxDate": "2026-12-31"
+    "format": "DD/MM/YYYY",
+    "maxDaysFromToday": -1
    },
    "passport_expiry": {
-    "label": "Passport expiry date",
-    "help": "Must be at least 6 months after your planned arrival",
-    "placeholder": "2030-08-22",
+    "label": "Date of Passport Expiry",
+    "help": "DD/MM/YYYY. The MDAC calendar starts from today. Malaysia also requires six months or more of validity from your date of entry, which the calendar does not check.",
+    "placeholder": "22/08/2030",
     "errors": {
      "required": "Passport expiry is required",
-     "invalidFormat": "Use YYYY-MM-DD",
-     "tooEarly": "Passport must be valid at least 6 months after arrival"
-    },
-    "type": "date",
-    "required": true
-   },
-   "flight_number": {
-    "label": "Flight number",
-    "help": "Airline 2-letter code + flight number (e.g. MH123, AK456). No spaces.",
-    "placeholder": "MH123",
-    "errors": {
-     "required": "Flight number is required",
-     "invalidFormat": "Format: airline code + number (e.g. MH123). No spaces."
-    },
-    "type": "flight",
-    "required": true
-   },
-   "arrival_date": {
-    "label": "Arrival date",
-    "help": "Format: YYYY-MM-DD — the date you arrive in Malaysia",
-    "placeholder": "2026-05-14",
-    "errors": {
-     "required": "Arrival date is required",
-     "invalidFormat": "Use YYYY-MM-DD",
-     "tooEarly": "MDAC must be filed within 3 days before arrival",
-     "tooLate": "Arrival date seems too far in the future"
+     "invalidFormat": "Use DD/MM/YYYY",
+     "tooEarly": "This date has passed — the passport has expired"
     },
     "type": "date",
     "required": true,
-    "minDate": "2026-01-01",
-    "maxDate": "2027-12-31"
-   },
-   "port_of_entry": {
-    "label": "Port of entry",
-    "help": "Airport IATA code or named land crossing",
-    "placeholder": "KUL (Kuala Lumpur)",
-    "errors": {
-     "required": "Port of entry is required",
-     "tooLong": "Max 60 characters"
-    },
-    "type": "text",
-    "required": true,
-    "maxLength": 60
-   },
-   "accommodation": {
-    "label": "Address in Malaysia",
-    "help": "Hotel name and city is enough for tourism",
-    "placeholder": "Hotel Example, Kuala Lumpur",
-    "errors": {
-     "required": "Address in Malaysia is required",
-     "tooLong": "Max 200 characters"
-    },
-    "type": "text",
-    "required": true,
-    "maxLength": 200
+    "format": "DD/MM/YYYY",
+    "minDaysFromToday": 0
    },
    "email": {
-    "label": "Email",
-    "help": "Confirmation is sent here",
+    "label": "Email Address",
+    "help": "Typed twice on the MDAC. Up to 100 characters; before the @ the form takes letters, digits, dots, hyphens and underscores only, so no +.",
     "placeholder": "name@example.com",
     "errors": {
      "required": "Email is required",
-     "invalidFormat": "Must look like name@example.com",
-     "tooLong": "Email too long — max 80 characters"
+     "invalidFormat": "Not accepted by the MDAC: before the @ use letters, digits, dots, hyphens or underscores (no +)",
+     "tooLong": "Email too long — max 100 characters"
     },
     "type": "email",
     "required": true,
-    "maxLength": 80
+    "pattern": "^([a-zA-Z0-9_\\.\\-])+\\@(([a-zA-Z0-9\\-])+\\.)+([a-zA-Z0-9]{2,4})+$",
+    "maxLength": 100
+   },
+   "mobile": {
+    "label": "Mobile No.",
+    "help": "Digits only, up to 12. The country code goes in the separate Country / Region Code list.",
+    "placeholder": "13812345678",
+    "errors": {
+     "required": "Mobile number is required on the MDAC",
+     "invalidFormat": "Digits only, up to 12 — no +, spaces or dashes. Pick the country code from the separate list."
+    },
+    "type": "phone",
+    "required": true,
+    "pattern": "^\\d+$",
+    "maxLength": 12
+   },
+   "arrival_date": {
+    "label": "Date of Arrival",
+    "help": "DD/MM/YYYY. The MDAC calendar offers only today and the next two days.",
+    "placeholder": "14/05/2026",
+    "errors": {
+     "required": "Arrival date is required",
+     "invalidFormat": "Use DD/MM/YYYY",
+     "tooEarly": "Arrival date cannot be in the past",
+     "tooLate": "The MDAC only takes an arrival date from today to two days ahead. Come back closer to the date."
+    },
+    "type": "date",
+    "required": true,
+    "format": "DD/MM/YYYY",
+    "minDaysFromToday": 0,
+    "maxDaysFromToday": 2
+   },
+   "departure_date": {
+    "label": "Date of Departure",
+    "help": "Required on the MDAC. DD/MM/YYYY; the calendar there starts from your arrival date.",
+    "placeholder": "20/05/2026",
+    "errors": {
+     "required": "Departure date is required",
+     "invalidFormat": "Use DD/MM/YYYY",
+     "tooEarly": "Departure date cannot be in the past"
+    },
+    "type": "date",
+    "required": true,
+    "format": "DD/MM/YYYY",
+    "minDaysFromToday": 0
+   },
+   "flight_number": {
+    "label": "Flight / Vessel / Transportation No.",
+    "help": "Required for air, land and sea, up to 30 characters: letters, digits, spaces and @ / - ( ) , ' only. By sea or road, the vessel, bus or vehicle number.",
+    "placeholder": "MH123",
+    "errors": {
+     "required": "Flight, vessel or transport number is required",
+     "invalidFormat": "Letters, digits, spaces and @ / - ( ) , ' only",
+     "tooLong": "Max 30 characters"
+    },
+    "type": "flight",
+    "required": true,
+    "pattern": "^[A-Za-z0-9/@(),' \\-]+$",
+    "maxLength": 30
+   },
+   "last_port": {
+    "label": "Last Port of Embarkation before Malaysia",
+    "help": "A country list, not an airport code: the country where you boarded the flight, ship or vehicle into Malaysia.",
+    "placeholder": "SGP - SINGAPORE",
+    "errors": {
+     "required": "Choose the country where you boarded"
+    },
+    "type": "text",
+    "required": true
+   },
+   "accommodation": {
+    "label": "Address (In Malaysia)",
+    "help": "First address line, up to 100 characters: at least three words, letters, digits, spaces and @ / - ( ) , ' only. On the MDAC a second line, State, City and a 5-digit Postcode follow.",
+    "placeholder": "MANDARIN ORIENTAL KUALA LUMPUR",
+    "errors": {
+     "required": "Address in Malaysia is required",
+     "tooLong": "Max 100 characters per line",
+     "invalidFormat": "At least three words, using letters, digits, spaces and @ / - ( ) , ' only"
+    },
+    "type": "text",
+    "required": true,
+    "pattern": "^(?=(?:[^ ]* ){2})[A-Za-z0-9/@(),' \\-]+$",
+    "maxLength": 100
    }
   },
   "mexico": {
@@ -1485,50 +1522,64 @@
   "thailand": {
    "passport": {
     "label": "Passport number",
-    "help": "Printed on the photo page of your passport. Usually starts with a letter.",
+    "help": "Printed on the photo page of your passport. Letters and digits only, up to 20, no spaces.",
     "placeholder": "A12345678",
     "errors": {
      "required": "Passport number is required",
-     "tooShort": "Passport number too short — min 6 characters",
-     "tooLong": "Passport number too long — max 9 characters",
+     "tooShort": "Check the number on your passport photo page",
+     "tooLong": "Passport number too long — max 20 characters",
      "invalidChars": "Letters and numbers only — no spaces or symbols",
-     "invalidFormat": "Most passports start with a letter. Double check yours."
+     "invalidFormat": "Letters and numbers only, up to 20 — no spaces or dashes"
     },
     "type": "passport",
     "required": true,
-    "pattern": "^[A-Z][A-Z0-9]{5,8}$",
-    "minLength": 6,
-    "maxLength": 9
+    "pattern": "^[A-Z0-9]{1,20}$",
+    "minLength": 1,
+    "maxLength": 20
    },
    "given_name": {
-    "label": "Given name",
-    "help": "Exactly as shown on your passport (Latin letters only)",
+    "label": "First name",
+    "help": "Given names exactly as shown on your passport. Letters A–Z and spaces only. A middle name may go in the separate Middle Name box.",
     "errors": {
-     "required": "Given name is required",
-     "tooLong": "Max 40 characters. Use the Latin abbreviation shown on your passport.",
-     "invalidChars": "Use the Latin spelling from your passport — no accents or special characters"
+     "required": "First name is required",
+     "tooLong": "Max 60 characters. Use the Latin abbreviation shown on your passport.",
+     "invalidChars": "Letters A–Z and spaces only — no accents, hyphens or other characters"
     },
     "type": "name",
     "required": true,
+    "pattern": "^[A-Za-z ]+$",
     "minLength": 1,
-    "maxLength": 40
+    "maxLength": 60
+   },
+   "middle_name": {
+    "label": "Middle name",
+    "help": "Optional. Letters A–Z and spaces only. Leave it empty if you keep every given name in First Name.",
+    "errors": {
+     "tooLong": "Max 60 characters",
+     "invalidChars": "Letters A–Z and spaces only — no accents, dots or other characters"
+    },
+    "type": "name",
+    "required": false,
+    "pattern": "^[A-Za-z ]+$",
+    "maxLength": 60
    },
    "family_name": {
     "label": "Family name",
-    "help": "Exactly as shown on your passport (Latin letters only)",
+    "help": "Exactly as shown on your passport. The TDAC takes letters A–Z and spaces only: type a space for a hyphen. No family name? Type a single -.",
     "errors": {
-     "required": "Family name is required",
-     "tooLong": "Max 40 characters",
-     "invalidChars": "Use the Latin spelling from your passport — no accents or special characters"
+     "required": "Family name is required — type - if your passport has none",
+     "tooLong": "Max 60 characters",
+     "invalidChars": "Letters A–Z and spaces only (a hyphen becomes a space), or a single - if you have no family name"
     },
     "type": "name",
     "required": true,
+    "pattern": "^([A-Za-z ]+|-)$",
     "minLength": 1,
-    "maxLength": 40
+    "maxLength": 60
    },
    "date_of_birth": {
     "label": "Date of birth",
-    "help": "Format: YYYY-MM-DD",
+    "help": "Check it here as YYYY-MM-DD. On the TDAC it goes in three boxes: year, month, day.",
     "placeholder": "1991-08-22",
     "errors": {
      "required": "Date of birth is required",
@@ -1539,57 +1590,64 @@
     "type": "date",
     "required": true,
     "minDate": "1900-01-01",
-    "maxDate": "2026-12-31"
+    "maxDaysFromToday": 0
    },
    "flight_number": {
-    "label": "Flight number",
-    "help": "Airline 2-letter code + flight number, no spaces (e.g. TG312, UA1234)",
+    "label": "Flight No./Vehicle No.",
+    "help": "Up to 20 characters: letters, digits, spaces and common punctuation, not starting with - + = or @. By land, the vehicle number.",
     "placeholder": "TG312",
     "errors": {
      "required": "Flight number is required",
-     "invalidFormat": "Format: airline code + number (e.g. TG312, UA1234). No spaces."
+     "invalidFormat": "Letters, digits, spaces and common punctuation only; it cannot start with - + = or @",
+     "tooLong": "Max 20 characters"
     },
     "type": "flight",
-    "required": true
+    "required": true,
+    "pattern": "^(?!\\s*[=+@-])[a-zA-Z0-9 ~`!@#$%^&*()_+={}[\\]\\\\:;\"'‘’“”<,>.?/-]+$",
+    "maxLength": 20
    },
    "arrival_date": {
     "label": "Arrival date",
-    "help": "Format: YYYY-MM-DD — the date you land in Thailand",
-    "placeholder": "2026-05-14",
+    "help": "yyyy/mm/dd, as the TDAC date box shows it. The TDAC accepts today through 3 days ahead.",
+    "placeholder": "2026/05/14",
     "errors": {
      "required": "Arrival date is required",
-     "invalidFormat": "Use YYYY-MM-DD",
-     "tooEarly": "TDAC must be filed within 3 days before arrival",
-     "tooLate": "Arrival date seems too far in the future"
+     "invalidFormat": "Use YYYY/MM/DD",
+     "tooEarly": "Arrival date cannot be in the past",
+     "tooLate": "The TDAC only takes an arrival date up to 3 days ahead. Come back closer to the date."
     },
     "type": "date",
     "required": true,
-    "minDate": "2026-01-01",
-    "maxDate": "2027-12-31"
+    "format": "YYYY/MM/DD",
+    "minDaysFromToday": 0,
+    "maxDaysFromToday": 3
    },
    "email": {
     "label": "Email",
-    "help": "Confirmation is sent here. Use an email you can check on your phone.",
+    "help": "Asked once, after the preview, for the whole submission. Max 50 characters. Use an email you can check on your phone.",
     "placeholder": "name@example.com",
     "errors": {
      "required": "Email is required",
-     "invalidFormat": "Must look like name@example.com",
-     "tooLong": "Email too long — max 80 characters"
+     "invalidFormat": "Not accepted by the TDAC: check for spaces, a missing dot in the domain, or a typo",
+     "tooLong": "Email too long — max 50 characters"
     },
     "type": "email",
     "required": true,
-    "maxLength": 80
+    "pattern": "^(?!\\s*[=+@-])[a-zA-Z0-9!#$%&'+/=?^_`{|}~-]+(\\.[a-zA-Z0-9!#$%&'+/=?^_`{|}~-]+)*@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)+$",
+    "maxLength": 50
    },
    "phone": {
     "label": "Phone number",
-    "help": "Digits only. On the official form the country code goes in a separate Code box.",
+    "help": "Digits only, up to 25. On the official form the country code goes in a separate Code box.",
     "placeholder": "4155550100",
     "errors": {
      "required": "Phone number is required on the current TDAC",
-     "invalidFormat": "Digits only, no + sign. Put the country code in the separate Code box."
+     "invalidFormat": "Digits only, up to 25 — no + or spaces. Put the country code in the separate Code box."
     },
     "type": "phone",
-    "required": true
+    "required": true,
+    "pattern": "^\\d+$",
+    "maxLength": 25
    }
   },
   "turkey": {

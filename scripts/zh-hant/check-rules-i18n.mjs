@@ -81,8 +81,11 @@ for (const c of countries) {
       if (!hasHan(o.placeholder)) problems.push(`${c}.${key}: placeholder override not Traditional`);
     }
     const required = new Set(VALIDATOR_TYPES[rule.type] || ["required"]);
-    if (rule.minDate) required.add("tooEarly");
-    if (rule.maxDate) required.add("tooLate");
+    if (rule.minDate || rule.minDaysFromToday !== undefined) required.add("tooEarly");
+    if (rule.maxDate || rule.maxDaysFromToday !== undefined) required.add("tooLate");
+    // A rule pattern switches text/flight/email/phone to the official regex,
+    // whose failure message is invalidFormat (names use invalidChars).
+    if (rule.pattern && ["text", "flight", "email", "phone"].includes(rule.type)) required.add("invalidFormat");
     for (const k of Object.keys(rule.errors || {})) required.add(k);
     for (const k of required) {
       const v = o.errors?.[k];

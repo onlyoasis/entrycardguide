@@ -11,92 +11,111 @@ layout: how-to-fill
 
 {{< official-link site="malaysia.mdac" >}}
 
-This guide walks through the fields the official MDAC asks for, in the order the form presents them. Pre-check your entries below before pasting them into the official site.
+This guide walks through the MDAC registration form in the order it presents its fields: Personal Information, then Traveling Information. It has 21 fields, all marked required; only the second address line can stay empty. Pre-check your entries below before you type them into the official site.
 
 {{< validator country="malaysia" >}}
 
-## Section 1: Traveler identity
+Field rules below come from the live registration form at imigresen-online.imi.gov.my, read 2026-10-15.
 
-### Passport number
+## Section 1: Personal Information
 
-The string printed next to "Passport No." on the photo page.
+### Name
 
-- **Format:** letters and digits, 6 to 12 characters. No spaces or dashes.
+**One box for your full name.** The MDAC does not split given and family names.
+
+- **Max 60 characters.** Letters and spaces only: the box will not take a comma, hyphen, apostrophe or digit.
+- **Order:** follow the order printed on your passport photo page. Many Western passports print given names first; some Asian passports print the family name first. Match the passport, do not reorder.
+- **Hyphen or apostrophe in your name:** type a space for the hyphen and leave the apostrophe out. That is how the MRZ line at the bottom of the photo page writes the name, so `SMITH-JONES` becomes `SMITH JONES` and `O'BRIEN` becomes `OBRIEN`.
+
+### Passport No.
+
+The number printed next to "Passport No." on the photo page.
+
+- **Max 12 characters,** letters and digits. Type it as printed, without spaces. The box will not take a dash.
 - **Do not use the MRZ.** The two long lines at the bottom of the photo page include check digits. Use the short number above them.
-- **Common error:** "Invalid passport number" usually means you included a space or pasted from the MRZ.
 
-### Full name (as in passport)
+### Date of Birth
 
-**Single field.** The MDAC does not split given and family names. You type your entire name as it appears on the passport photo page.
+- **You cannot type in this box.** Tap it and pick the date in the calendar. It fills in as `DD/MM/YYYY`, for example `22/08/1991`.
+- Type it the same way, `DD/MM/YYYY`, in the pre-check tool above.
 
-- **Max 80 characters.**
-- **Latin letters only.** Use the spelling from the MRZ line of your passport, which is always ASCII.
-- **Order:** follow the order printed on your passport. For most Western passports, that is given names first, then family name. For some Asian passports, the order is family name first. Match what your passport prints, do not reorder.
-- **Common mistake:** entering the name in the order the form seems to expect instead of the passport order. Match the passport.
+### Nationality / Citizenship
 
-### Nationality
+A dropdown of countries, each shown as a three-letter code and a name: `CHN - CHINA`, `GBR - UNITED KINGDOM`.
 
-Select the country that issued your passport from the dropdown.
+- Pick the country that issued your passport. The three-letter code is the one in the MRZ line of your passport.
+- Hong Kong SAR (`HKG`), Macao SAR (`MAC`) and Taiwan (`TWN`) have their own entries, and so do British passports other than `GBR`, such as `GBN - BRITISH NATIONAL OVERSEAS`.
 
-- The list is in English and sorted alphabetically.
-- Malaysia's immigration system differentiates several passport types (regular, official, diplomatic). For regular tourists, pick the regular option.
+### Place of Birth
 
-### Date of birth
+The same country list. Pick the country you were born in.
 
-Format: `YYYY-MM-DD`.
+### Sex
 
-- `1991-08-22`, not `22/08/1991` and not `08-22-1991`.
-- Use the date picker on mobile.
+`MALE` or `FEMALE`.
 
-### Passport expiry date
+### Date of Passport Expiry
 
-Format: `YYYY-MM-DD`.
+- Calendar again, `DD/MM/YYYY`. It accepts any date from today on.
+- Malaysia's Immigration Department requires a passport valid for six months or more from the date you enter Malaysia. The calendar does not check this, so check it yourself and renew first if your passport runs out sooner.
 
-- Must be at least **6 months** after your planned arrival in Malaysia. This is a standard international immigration rule.
-- If your passport expires sooner, you will be denied boarding by the airline before you even reach Malaysian immigration. Renew the passport first.
+### Email Address and Confirm Email Address
 
-## Section 2: Trip
+- **Max 100 characters,** typed twice. If the two differ, the form says "Your emails do not match. Please try again."
+- **No `+` in the address.** The form only takes letters, digits, dots, hyphens and underscores before the `@`. `name+trip@gmail.com` gets "Please enter a valid email address." Use the plain address.
+- Use an inbox you check. The confirmation and the PIN you need for Check Registration arrive here.
 
-### Flight number
+### Country / Region Code and Mobile No.
 
-Airline 2-letter IATA code + flight number, no space.
+Both are required.
 
-- `MH123` (Malaysia Airlines), `AK456` (AirAsia), `SQ102` (Singapore Airlines), `EK343` (Emirates).
-- **Codeshare trap:** use the **operating** carrier's flight. That is the one on the passenger manifest that Malaysian immigration sees.
+- **Country / Region Code** is a list shown as `( 86 ) CHINA`, `( 1 ) UNITED STATES`. Pick the country your phone number belongs to.
+- **Mobile No.** takes digits only, up to 12. No `+`, spaces or dashes: `+86 138 1234 5678` goes in as code `86` and number `13812345678`.
 
-### Arrival date
+## Section 2: Traveling Information
 
-Format: `YYYY-MM-DD`. The date you arrive in Malaysia, in Malaysia local time.
+The form notes that your trip must be within 3 days, including the date of submission.
 
-- Must be within 3 days from today. The MDAC site rejects submissions outside this window.
-- Red-eye trap: if you depart at 11pm May 13 and land at 2am May 14, your arrival date is `2026-05-14`.
+### Date of Arrival
 
-### Port of entry
+- **Calendar only, `DD/MM/YYYY`.** It offers today and the next two days, nothing later. If you land on 14 May, the calendar offers that date from 12 May.
+- Use the date you land, in Malaysia local time. Red-eye trap: depart 11pm 13 May, land 2am 14 May, and the arrival date is `14/05/2026`.
 
-The Malaysian airport (IATA code) or land crossing.
+### Date of Departure
 
-- Airports: `KUL` (Kuala Lumpur International), `PEN` (Penang), `BKI` (Kota Kinabalu), `KCH` (Kuching), `JHB` (Johor Bahru), `LGK` (Langkawi), `TGG` (Terengganu).
-- Land crossings from Thailand: `Bukit Kayu Hitam / Padang Besar / Wang Kelian`.
-- Land crossings from Singapore: `Johor Bahru - Woodlands` or `Tuas - Tuas`.
-- Sea entries: listed by name (`Pulau Langkawi Jetty`, `Penang Ferry Terminal`).
+- **Required.** Calendar, `DD/MM/YYYY`. It starts from your arrival date, and picking a new arrival date clears it.
 
-## Section 3: Stay in Malaysia
+### Flight / Vessel / Transportation No.
 
-### Address in Malaysia
+- **Required for every mode of travel, max 30 characters.** Letters, digits and spaces are accepted, plus `@ / - ( ) , '`.
+- By air: the flight number on your ticket, such as `MH123` (Malaysia Airlines), `AK456` (AirAsia), `SQ102` (Singapore Airlines). On a codeshare, use the operating carrier's flight number.
+- By sea or road: the vessel, bus or vehicle number.
 
-Where you will stay.
+### Mode of Travel
 
-- **Max 200 characters.**
-- Hotel name plus city is enough. `Mandarin Oriental Kuala Lumpur` works.
-- Airbnb: use the address the host confirmed.
-- Multiple places? Use your first night. No full itinerary required.
+`AIR`, `LAND` or `SEA`.
 
-### Email
+### Last Port of Embarkation before Malaysia
 
-Where your MDAC confirmation is sent.
+The MDAC has no port-of-entry box. This field asks where you boarded the flight, ship or vehicle that brings you into Malaysia, and it is a country list, not an airport code.
 
-- **Max 80 characters.**
-- Use a monitored inbox. The confirmation and the PIN you need for Check Registration arrive here.
+- Flying Bangkok to Kuala Lumpur: `THA - THAILAND`. Bangkok to Kuala Lumpur via Singapore: `SGP - SINGAPORE`.
+- By road or ferry, pick the country you are leaving, for example `SGP - SINGAPORE` when you cross into Johor.
+
+### Accommodation of Stay
+
+`HOTEL/MOTEL/REST HOUSE`, `RESIDENCE OF FRIENDS/RELATIVES` or `OTHERS`.
+
+### Address (In Malaysia), State, Postcode, City
+
+The form says "Please key-in alphanumeric only" above the address.
+
+- **Two lines, up to 100 characters each.** Letters, digits, spaces and `@ / - ( ) , '` only; other characters disappear as you type.
+- **The first line needs at least three words.** `MANDARIN ORIENTAL KUALA LUMPUR` passes; `AIRBNB` alone gets "Please enter Address (In Malaysia) properly." `NA`, `N/A`, `NULL` and `NIL` are refused.
+- **State** is a list of the 13 states and 3 federal territories (`WP KUALA LUMPUR`, `WP LABUAN`, `WP PUTRAJAYA`). **City** loads after you pick the state. **Postcode** takes 5 digits.
+- Hotel: copy the street address from your booking. Airbnb: use the address the host confirmed. Several places: use your first night.
+
+Under the form, drag the slider to verify, then submit.
 
 ---
 
@@ -135,23 +154,31 @@ Since January 2026 the department's MyNIISe app can also file the MDAC, within t
 
 ## Common errors and what they mean
 
-**"Invalid passport number"**
-You included a space, a dash, or pasted from the MRZ. Use the short passport number.
+The MDAC shows its messages as pop-ups. These are the ones the registration form can show, word for word.
 
-**"Invalid date of birth" / "Invalid passport expiry"**
-You used `MM/DD/YYYY` or `DD/MM/YYYY`. Use `YYYY-MM-DD` or the date picker.
+**"Please enter …" / "Please choose …"**
+A required box is empty, and the message names it, for example "Please enter Mobile No." or "Please enter Date of Departure." Every box on the form is required.
 
-**"Passport not valid for travel"**
-Your passport expiry is less than 6 months after your arrival date. You must renew before flying.
+**"Please enter a valid email address."**
+The address has a character the form does not take, usually a `+` before the `@`, or a typo such as a missing dot. The form clears the box; type the plain address again.
 
-**"Arrival date out of range"**
-You are submitting more than 3 days before arrival. Wait until within the window.
+**"Your emails do not match. Please try again."**
+Confirm Email Address differs from Email Address. Retype it rather than pasting a typo twice.
 
-**"Flight not recognized"**
-Space in the flight number, or you used a marketing carrier code on a codeshare. Check your boarding pass for the operating carrier.
+**"Please enter Address (In Malaysia) properly."**
+The first address line has fewer than three words. Write the street address, not just a hotel or Airbnb name.
 
-**"Invalid email"**
-Trailing space or typo in the domain.
+**"NA, N/A, NULL, NIL is not allowed for Address (In Malaysia)"**
+Give a real address in Malaysia.
+
+**"Postcode cannot less than 5 digit!"**
+Malaysian postcodes have 5 digits. Check the one on your booking.
+
+**"Please verify the captcha before proceeding"**
+Drag the slider puzzle under the form before you submit.
+
+**The arrival date you need is greyed out**
+The calendar only offers today and the next two days. Come back when your arrival is inside that window.
 
 **Site times out or hangs**
 The MDAC site sometimes struggles during peak travel periods. Wait 10 to 15 minutes and retry. If it keeps failing, try a different browser or a different network.

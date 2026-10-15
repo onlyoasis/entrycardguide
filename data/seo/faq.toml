@@ -53,19 +53,19 @@ a_zh_hant = "不用列印。提交後官網會顯示 QR Code，郵件裡也有�
 
 [["thailand/how-to-fill"]]
 q = "What arrival date goes on the TDAC for an overnight flight?"
-a = "The local date you land in Thailand, in YYYY-MM-DD format. A flight that leaves on May 12 and lands in Bangkok on May 14 is entered as 2026-05-14."
+a = "The local date you land in Thailand. A flight that leaves on May 12 and lands in Bangkok on May 14 is entered as May 14; the TDAC date box shows it as 2026/05/14."
 q_zh = "红眼航班的泰国入境卡抵达日期怎么填？"
 q_zh_hant = "紅眼航班的泰國入境卡抵達日期怎麼填？"
-a_zh = "填真正落地泰国的日期，按泰国本地时间，格式 YYYY-MM-DD。5 月 12 日起飞、5 月 14 日落地曼谷，就填 2026-05-14。"
-a_zh_hant = "填真正落地泰國的日期，按泰國本地時間，格式 YYYY-MM-DD。5 月 12 日起飛、5 月 14 日落地曼谷，就填 2026-05-14。"
+a_zh = "填真正落地泰国的日期，按泰国本地时间。5 月 12 日起飞、5 月 14 日落地曼谷，就选 5 月 14 日，TDAC 日期框显示为 2026/05/14。"
+a_zh_hant = "填真正落地泰國的日期，按泰國本地時間。5 月 12 日起飛、5 月 14 日落地曼谷，就選 5 月 14 日，TDAC 日期框顯示為 2026/05/14。"
 
 [["malaysia/how-to-fill"]]
 q = "When can I submit the Malaysia Arrival Card (MDAC)?"
-a = "Within 3 days before your arrival in Malaysia. The MDAC site rejects submissions outside that window."
+a = "Within 3 days before your arrival in Malaysia. The arrival-date calendar on the MDAC only offers today and the next two days."
 q_zh = "马来西亚入境卡（MDAC）提前几天填？"
 q_zh_hant = "馬來西亞入境卡（MDAC）提前幾天填？"
-a_zh = "抵达马来西亚前 3 天内。MDAC 官网会拒绝窗口外的提交。"
-a_zh_hant = "抵達馬來西亞前 3 天內。MDAC 官網會拒絕窗口外的提交。"
+a_zh = "抵达马来西亚前 3 天内。MDAC 上的抵达日期日历只开放今天和之后两天。"
+a_zh_hant = "抵達馬來西亞前 3 天內。MDAC 上的抵達日期日曆只開放今天和之後兩天。"
 
 [["malaysia/how-to-fill"]]
 q = "Do I need to print the MDAC confirmation?"
@@ -77,19 +77,19 @@ a_zh_hant = "我們沒找到要求列印的官方說明。不過移民局海報�
 
 [["malaysia/how-to-fill"]]
 q = "What address do I enter on the Malaysia Arrival Card?"
-a = "Where you will stay. A hotel name and city is enough, for example Mandarin Oriental Kuala Lumpur. For an Airbnb use the host's confirmed address; with several stops use the first night."
+a = "Where you will stay, in two lines of up to 100 characters. The first line needs at least three words, such as the street address from your booking or MANDARIN ORIENTAL KUALA LUMPUR; a single word like AIRBNB is refused. Then pick the State and City from the lists and type the 5-digit Postcode. For an Airbnb use the host's confirmed address; with several stops use the first night."
 q_zh = "马来西亚入境卡地址怎么填？"
 q_zh_hant = "馬來西亞入境卡地址怎麼填？"
-a_zh = "填入住地。酒店名加城市就够，例如 Mandarin Oriental Kuala Lumpur；Airbnb 用房东确认的地址；多地停留填第一晚。"
-a_zh_hant = "填入住地。酒店名加城市就夠，例如 Mandarin Oriental Kuala Lumpur；Airbnb 用房東確認的地址；多地停留填第一晚。"
+a_zh = "填入住地，分两行，每行最多 100 字符。第一行至少三个词，例如订单上的街道地址或 MANDARIN ORIENTAL KUALA LUMPUR；只写 AIRBNB 这样一个词会被拒。然后从列表选州（State）和城市（City），填 5 位邮编。Airbnb 用房东确认的地址；多地停留填第一晚。"
+a_zh_hant = "填入住地，分兩行，每行最多 100 字符。第一行至少三個詞，例如訂單上的街道地址或 MANDARIN ORIENTAL KUALA LUMPUR；只寫 AIRBNB 這樣一個詞會被拒。然後從列表選州（State）和城市（City），填 5 位郵編。Airbnb 用房東確認的地址；多地停留填第一晚。"
 
 [["malaysia/how-to-fill"]]
 q = "How do I enter my name on the MDAC?"
-a = "MDAC has one full-name field. Type your name in Latin letters in the order printed on your passport photo page, and do not reorder it."
+a = "MDAC has one Name box for your full name, up to 60 characters, letters and spaces only. Type it in the order printed on your passport photo page, and do not reorder it."
 q_zh = "马来西亚入境卡名字怎么填？"
 q_zh_hant = "馬來西亞入境卡名字怎麼填？"
-a_zh = "MDAC 只有一个全名字段。按护照资料页印刷的顺序填拉丁字母，不要按姓、名重新排列。"
-a_zh_hant = "MDAC 只有一個全名欄位。按護照資料頁印刷的順序填拉丁字母，不要按姓、名重新排列。"
+a_zh = "MDAC 只有一个姓名框填全名，最多 60 字符，只能用字母和空格。按护照资料页印刷的顺序填，不要按姓、名重新排列。"
+a_zh_hant = "MDAC 只有一個姓名框填全名，最多 60 字符，只能用字母和空格。按護照資料頁印刷的順序填，不要按姓、名重新排列。"
 
 [["malaysia/how-to-fill"]]
 q = "How do I check that my MDAC went through?"

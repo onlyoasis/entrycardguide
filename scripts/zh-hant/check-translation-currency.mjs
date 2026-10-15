@@ -51,7 +51,7 @@ for (const [country, fields] of Object.entries(snapshot.rules ?? {})) {
     if (rule.errors) now.errors = rule.errors;
     // Constraint inputs the translated messages may reference (review-14):
     // a changed maxLength/fee must invalidate the old translation text.
-    for (const k of ["type", "required", "pattern", "minLength", "maxLength", "minDate", "maxDate"]) {
+    for (const k of ["type", "required", "pattern", "minLength", "maxLength", "minDate", "maxDate", "format", "minDaysFromToday", "maxDaysFromToday"]) {
       if (rule[k] !== undefined) now[k] = rule[k];
     }
     diff(snapField, now, `rules/${country}.${key}`, problems);

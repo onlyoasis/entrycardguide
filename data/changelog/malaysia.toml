@@ -13,3 +13,10 @@ summary = "How to check an MDAC, reset the PIN and ask for a correction"
 summary_zh = "补充 MDAC 查询登记、重置 PIN 和申请更正的方法"
 summary_zh_hant = "補充 MDAC 查詢登記、重置 PIN 和申請更正的方法"
 detail = "From the official portal: Check Registration with passport number, nationality and the emailed PIN; Forgot your PIN? once a day; no edit option, corrections through eapp.imi.gov.my/spo. The guide now says to present the MDAC registration at the counter, as the Immigration Department's posters do."
+
+[[entries]]
+date = "2026-10-15"
+summary = "Field guide rebuilt from the live MDAC registration form"
+summary_zh = "按在线 MDAC 登记表重写字段指南"
+summary_zh_hant = "按線上 MDAC 登記表重寫欄位指南"
+detail = "Fields now follow the form's two sections. Corrections: dates are calendar picks shown as DD/MM/YYYY, not typed YYYY-MM-DD; Name max 60, letters and spaces only; Email max 100 with no + allowed; Country / Region Code and Mobile No. are required; there is no port-of-entry field, it is Last Port of Embarkation before Malaysia (a country list); the address is two lines of 100 with State, City and Postcode; Date of Departure is required. Error messages are now the form's own pop-ups."

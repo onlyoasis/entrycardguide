@@ -4,30 +4,30 @@
   "ok": "正确 ✓"
  },
  "fields": {
-  "passport": {
-   "label": "护照号码",
-   "help": "印在护照照片页上，只含字母和数字。",
+  "full_name": {
+   "label": "姓名（全名）",
+   "help": "一个字段填全名，按护照照片页印刷的内容和顺序填。MDAC 只收字母和空格：连字符改成空格，撇号省略。",
    "errors": {
-    "required": "请输入护照号码",
-    "tooShort": "护照号码太短——至少 6 个字符",
-    "tooLong": "护照号码太长——最多 12 个字符",
-    "invalidChars": "只能使用字母和数字——不含空格或符号",
-    "invalidFormat": "请输入照片页上印刷的字母与数字"
+    "required": "请输入姓名",
+    "tooShort": "请输入护照上显示的姓名",
+    "tooLong": "最多 60 个字符",
+    "invalidChars": "使用护照上的拉丁拼写，只能用字母和空格"
    }
   },
-  "full_name": {
-   "label": "全名（与护照相同）",
-   "help": "与护照显示完全一致（仅拉丁字母）。MDAC 使用一个完整姓名字段，不分开填写名字与姓氏。",
+  "passport": {
+   "label": "护照号码",
+   "help": "印在护照照片页上。最多 12 位字母和数字，不含空格。",
    "errors": {
-    "required": "请输入全名",
-    "tooShort": "请输入护照上显示的姓名",
-    "tooLong": "最多 80 个字符",
-    "invalidChars": "使用护照上的拉丁拼写——不带重音符号或特殊字符"
+    "required": "请输入护照号码",
+    "tooShort": "请对照护照照片页上的号码",
+    "tooLong": "护照号码太长——最多 12 个字符",
+    "invalidChars": "只能使用字母和数字——不含空格或符号",
+    "invalidFormat": "只能使用字母和数字，最多 12 位——不含空格或短横"
    }
   },
   "nationality": {
    "label": "国籍",
-   "help": "签发你护照的国家。",
+   "help": "签发你护照的国家。MDAC 上从列表中选，例如 CHN - CHINA。",
    "errors": {
     "required": "请选择国籍",
     "invalidFormat": "请从下拉菜单中选择"
@@ -35,73 +35,94 @@
   },
   "date_of_birth": {
    "label": "出生日期",
-   "help": "格式：YYYY-MM-DD。",
+   "help": "DD/MM/YYYY，与 MDAC 日历填入的格式相同。日历最晚只到昨天。",
    "errors": {
     "required": "请输入出生日期",
-    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidFormat": "请使用 DD/MM/YYYY 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
     "tooEarly": "出生日期似乎过早——请再次确认",
-    "tooLate": "出生日期不能晚于今天"
+    "tooLate": "出生日期必须早于今天"
    }
   },
   "passport_expiry": {
    "label": "护照效期",
-   "help": "必须比预计抵达日至少晚 6 个月",
+   "help": "DD/MM/YYYY。MDAC 日历从今天开始可选。马来西亚另要求护照自入境之日起有效期不少于六个月，日历不会检查这一点。",
    "errors": {
     "required": "请输入护照效期",
-    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidFormat": "请使用 DD/MM/YYYY 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
-    "tooEarly": "护照必须在抵达后至少还有 6 个月效期"
-   }
-  },
-  "flight_number": {
-   "label": "航班号码",
-   "help": "航空公司两位代码＋航班编号（例如 MH123、AK456），中间无空格。",
-   "errors": {
-    "required": "请输入航班号码",
-    "invalidFormat": "格式：航空公司代码＋编号（例如 MH123），中间无空格。"
-   }
-  },
-  "arrival_date": {
-   "label": "抵达日期",
-   "help": "格式：YYYY-MM-DD——你抵达马来西亚的日期。",
-   "errors": {
-    "required": "请输入抵达日期",
-    "invalidFormat": "请使用 YYYY-MM-DD 格式",
-    "invalidMonth": "月份必须是 01–12",
-    "invalidDay": "日期不正确——请对照该月份天数检查",
-    "invalid": "不是真实存在的日期",
-    "tooEarly": "MDAC 必须在抵达前 3 天内提交",
-    "tooLate": "抵达日期似乎过远"
-   }
-  },
-  "port_of_entry": {
-   "label": "入境口岸",
-   "help": "机场 IATA 代码或指定的陆路口岸。",
-   "errors": {
-    "required": "请输入入境口岸",
-    "tooLong": "最多 60 个字符"
-   }
-  },
-  "accommodation": {
-   "label": "马来西亚境内地址",
-   "help": "旅游填饭店名＋城市即可。",
-   "errors": {
-    "required": "请输入马来西亚境内地址",
-    "tooLong": "最多 200 个字符"
+    "tooEarly": "这个日期已过——护照已经过期"
    }
   },
   "email": {
    "label": "电子邮件",
-   "help": "确认信将寄到此信箱",
+   "help": "MDAC 上要输入两次。最多 100 个字符；@ 前面只收字母、数字、点、连字符和下划线，不能有 +。",
    "errors": {
     "required": "请输入电子邮件",
-    "invalidFormat": "格式必须类似 name@example.com",
-    "tooLong": "电子邮件太长——最多 80 个字符"
+    "invalidFormat": "MDAC 不接受：@ 前面只能用字母、数字、点、连字符或下划线（不能有 +）",
+    "tooLong": "电子邮件太长——最多 100 个字符"
+   }
+  },
+  "mobile": {
+   "label": "手机号码",
+   "help": "只填数字，最多 12 位。区号在另一个 Country / Region Code 列表里选。",
+   "errors": {
+    "required": "MDAC 的手机号码为必填",
+    "invalidFormat": "只填数字，最多 12 位——不加 +、空格或短横。区号在另一个列表里选。"
+   }
+  },
+  "arrival_date": {
+   "label": "抵达日期",
+   "help": "DD/MM/YYYY。MDAC 日历只开放今天和之后两天。",
+   "errors": {
+    "required": "请输入抵达日期",
+    "invalidFormat": "请使用 DD/MM/YYYY 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "抵达日期不能早于今天",
+    "tooLate": "MDAC 只接受今天到两天后的抵达日期。请接近抵达时再填。"
+   }
+  },
+  "departure_date": {
+   "label": "离境日期",
+   "help": "MDAC 上为必填。DD/MM/YYYY；MDAC 日历从抵达日期开始可选。",
+   "errors": {
+    "required": "请输入离境日期",
+    "invalidFormat": "请使用 DD/MM/YYYY 格式",
+    "invalidMonth": "月份必须是 01–12",
+    "invalidDay": "日期不正确——请对照该月份天数检查",
+    "invalid": "不是真实存在的日期",
+    "tooEarly": "离境日期不能早于今天"
+   }
+  },
+  "flight_number": {
+   "label": "航班／船／交通工具编号",
+   "help": "航空、陆路、海路都必填，最多 30 个字符：只能用字母、数字、空格和 @ / - ( ) , '。走海路或陆路就填船、大巴或车辆的编号。",
+   "errors": {
+    "required": "请输入航班、船或交通工具编号",
+    "invalidFormat": "只能用字母、数字、空格和 @ / - ( ) , '",
+    "tooLong": "最多 30 个字符"
+   }
+  },
+  "last_port": {
+   "label": "入境前最后登乘地",
+   "help": "这是国家列表，不是机场代码：填你搭乘入境马来西亚的航班、船或车是在哪个国家上的。",
+   "errors": {
+    "required": "请选择你登乘的国家"
+   }
+  },
+  "accommodation": {
+   "label": "马来西亚境内地址",
+   "help": "地址第一行，最多 100 个字符：至少三个词，只能用字母、数字、空格和 @ / - ( ) , '。MDAC 上还有第二行、州、城市和 5 位邮编。",
+   "errors": {
+    "required": "请输入马来西亚境内地址",
+    "tooLong": "每行最多 100 个字符",
+    "invalidFormat": "至少三个词，只能用字母、数字、空格和 @ / - ( ) , '"
    }
   }
  }

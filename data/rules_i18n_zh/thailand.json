@@ -6,38 +6,48 @@
  "fields": {
   "passport": {
    "label": "护照号码",
-   "help": "印在护照照片页上，通常以字母开头。",
+   "help": "印在护照照片页上。只能是字母和数字，最多 20 位，不含空格。",
    "errors": {
     "required": "请输入护照号码",
-    "tooShort": "护照号码太短——至少 6 个字符",
-    "tooLong": "护照号码太长——最多 9 个字符",
+    "tooShort": "请对照护照照片页上的号码",
+    "tooLong": "护照号码太长——最多 20 个字符",
     "invalidChars": "只能使用字母和数字——不含空格或符号",
-    "invalidFormat": "大多数护照以字母开头，请再次确认。"
+    "invalidFormat": "只能使用字母和数字，最多 20 位——不含空格或短横"
    }
   },
   "given_name": {
-   "label": "名（Given name）",
-   "help": "与护照显示完全一致（仅拉丁字母）。",
+   "label": "名（First name）",
+   "help": "与护照显示完全一致。只能用字母 A–Z 和空格。中间名可以填在另一栏 Middle Name。",
    "errors": {
-    "required": "请输入名（Given name）",
+    "required": "请输入名（First name）",
     "tooShort": "请输入护照上显示的姓名",
-    "tooLong": "最多 40 个字符。请使用护照上显示的拉丁缩写。",
-    "invalidChars": "使用护照上的拉丁拼写——不带重音符号或特殊字符"
+    "tooLong": "最多 60 个字符。请使用护照上显示的拉丁缩写。",
+    "invalidChars": "只能用字母 A–Z 和空格——不能有重音、连字符或其他字符"
+   }
+  },
+  "middle_name": {
+   "label": "中间名（Middle name）",
+   "help": "选填。只能用字母 A–Z 和空格。所有名都填在 First Name 的话，这一栏留空。",
+   "errors": {
+    "required": "请输入中间名（Middle name）",
+    "tooShort": "请输入护照上显示的姓名",
+    "tooLong": "最多 60 个字符",
+    "invalidChars": "只能用字母 A–Z 和空格——不能有重音、点号或其他字符"
    }
   },
   "family_name": {
    "label": "姓（Family name）",
-   "help": "与护照显示完全一致（仅拉丁字母）。",
+   "help": "与护照显示完全一致。TDAC 只收字母 A–Z 和空格：连字符改成空格。护照上没有姓？填一个 -。",
    "errors": {
-    "required": "请输入姓（Family name）",
+    "required": "请输入姓（Family name）——护照上没有姓就填 -",
     "tooShort": "请输入护照上显示的姓名",
-    "tooLong": "最多 40 个字符",
-    "invalidChars": "使用护照上的拉丁拼写——不带重音符号或特殊字符"
+    "tooLong": "最多 60 个字符",
+    "invalidChars": "只能用字母 A–Z 和空格（连字符改成空格）；没有姓就填一个 -"
    }
   },
   "date_of_birth": {
    "label": "出生日期",
-   "help": "格式：YYYY-MM-DD。",
+   "help": "这里按 YYYY-MM-DD 检查。TDAC 上分成年、月、日三个字段。",
    "errors": {
     "required": "请输入出生日期",
     "invalidFormat": "请使用 YYYY-MM-DD 格式",
@@ -49,41 +59,42 @@
    }
   },
   "flight_number": {
-   "label": "航班号码",
-   "help": "航空公司两位代码＋航班编号，无空格（例如 TG312、UA1234）。",
+   "label": "航班号／车辆号",
+   "help": "最多 20 个字符：字母、数字、空格和常见标点，不能以 - + = 或 @ 开头。陆路入境填车辆号。",
    "errors": {
     "required": "请输入航班号码",
-    "invalidFormat": "格式：航空公司代码＋编号（例如 TG312、UA1234），中间无空格。"
+    "invalidFormat": "只能用字母、数字、空格和常见标点，且不能以 - + = 或 @ 开头",
+    "tooLong": "最多 20 个字符"
    }
   },
   "arrival_date": {
    "label": "抵达日期",
-   "help": "格式：YYYY-MM-DD——你抵达泰国的日期。",
+   "help": "yyyy/mm/dd，与 TDAC 日期栏显示的格式相同。TDAC 只接受今天到 3 天后。",
    "errors": {
     "required": "请输入抵达日期",
-    "invalidFormat": "请使用 YYYY-MM-DD 格式",
+    "invalidFormat": "请使用 YYYY/MM/DD 格式",
     "invalidMonth": "月份必须是 01–12",
     "invalidDay": "日期不正确——请对照该月份天数检查",
     "invalid": "不是真实存在的日期",
-    "tooEarly": "TDAC 必须在抵达前 3 天内提交",
-    "tooLate": "抵达日期似乎过远"
+    "tooEarly": "抵达日期不能早于今天",
+    "tooLate": "TDAC 只接受 3 天内的抵达日期。请接近抵达时再填。"
    }
   },
   "email": {
    "label": "电子邮件",
-   "help": "确认信将寄到此信箱。请使用手机上可打开的信箱。",
+   "help": "预览之后只问一次，整份提交共用。最多 50 个字符。请使用手机上可打开的信箱。",
    "errors": {
     "required": "请输入电子邮件",
-    "invalidFormat": "格式必须类似 name@example.com",
-    "tooLong": "电子邮件太长——最多 80 个字符"
+    "invalidFormat": "TDAC 不接受：检查有没有空格、域名少了点，或拼写错误",
+    "tooLong": "电子邮件太长——最多 50 个字符"
    }
   },
   "phone": {
    "label": "电话号码",
-   "help": "只填数字。官方表单的国码另有一个 Code 栏。",
+   "help": "只填数字，最多 25 位。官方表单的区号另填在 Code 栏。",
    "errors": {
     "required": "目前的 TDAC 电话为必填",
-    "invalidFormat": "只填数字，不加 +。国码填在另一个 Code 栏。"
+    "invalidFormat": "只填数字，最多 25 位——不加 + 或空格。区号填在另一个 Code 栏。"
    }
   }
  }

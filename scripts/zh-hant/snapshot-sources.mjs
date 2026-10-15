@@ -32,6 +32,9 @@ for (const f of readdirSync(path.join(ROOT, "data/rules")).filter((n) => n.endsW
       maxLength: rule.maxLength,
       minDate: rule.minDate,
       maxDate: rule.maxDate,
+      format: rule.format,
+      minDaysFromToday: rule.minDaysFromToday,
+      maxDaysFromToday: rule.maxDaysFromToday,
     });
   }
   sources.rules[country] = snap;

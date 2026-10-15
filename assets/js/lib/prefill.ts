@@ -3,8 +3,8 @@
  * shared by validator.ts and tests/prefill-sheet.test.mjs.
  *
  * Formatting only cleans up what the validator already accepts (case, spaces,
- * separators). Dates stay ISO YYYY-MM-DD, the format the guides tell people
- * to paste.
+ * separators). Dates stay as typed, in the format the field's rule asks for
+ * (YYYY-MM-DD unless the rule sets another, e.g. DD/MM/YYYY for the MDAC).
  */
 
 export type SheetStatus = 'ok' | 'fix' | 'missing' | 'skip';
