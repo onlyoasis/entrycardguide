@@ -27787,9 +27787,10 @@ export default {
         {
           "key": "application_help",
           "name": "Home Office application guidance",
-          "url": "https://www.gov.uk/guidance/using-the-uk-eta-app#complete-the-application",
+          "url": "https://www.gov.uk/guidance/using-the-uk-eta-app",
           "agency": "Home Office",
-          "lastVerified": "2026-10-12"
+          "lastVerified": "2026-10-17",
+          "notes": "Public guide confirms address questions and recommends the online route or official ETA webchat for app problems. Checked 2026-10-17; it does not publish address-line character limits or an address-specific error fix. The live address step was not accessed."
         },
         {
           "key": "form_checks",
@@ -27798,9 +27799,32 @@ export default {
           "agency": "Home Office",
           "lastVerified": "2026-10-15",
           "notes": "Read 2026-10-15 from the web form script; page questions and their checks are sent by the server per session and were not read. Shared checks: date of birth in the future -> 'Date of birth must be in the past'; email pattern -> 'Enter a real email address'. Dates are GOV.UK Day / Month / Year boxes."
+        },
+        {
+          "key": "eta_apply",
+          "name": "Apply for an ETA",
+          "url": "https://www.gov.uk/eta/apply",
+          "agency": "Home Office",
+          "lastVerified": "2026-10-17"
+        },
+        {
+          "key": "eta_online",
+          "name": "Official UK ETA online application",
+          "url": "https://apply-for-an-eta.homeoffice.gov.uk/apply/electronic-travel-authorisation/how-to-apply",
+          "agency": "Home Office",
+          "lastVerified": "2026-10-17",
+          "notes": "Linked by GOV.UK as the online alternative for app problems. Entry point checked; JavaScript application and address validation not exercised."
+        },
+        {
+          "key": "eta_support",
+          "name": "Official UK ETA support webchat",
+          "url": "https://ukvi-eta-support-webchat.homeoffice.gov.uk/",
+          "agency": "UK Visas and Immigration",
+          "lastVerified": "2026-10-17",
+          "notes": "Destination confirmed from the links in GOV.UK ETA overview and app guidance. No chat was started; availability and support response were not tested."
         }
       ],
-      "lastVerified": "2026-10-15"
+      "lastVerified": "2026-10-17"
     },
     {
       "slug": "canada",
