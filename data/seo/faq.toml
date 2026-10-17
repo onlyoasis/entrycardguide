@@ -8,7 +8,7 @@
 
 [["uk/how-to-fill"]]
 q = "What goes in address line 1 on the UK ETA?"
-a = "Your home address: the place you live, not where you will stay in the UK. In a typical split, line 1 holds the house number and street, for example 12 Example Road, and a flat number goes on an additional line. Town, postal code and country go in their own boxes when the form provides them. Follow the labels shown in your application."
+a = "Your home address: the place you live, not where you will stay in the UK. In a typical split, line 1 holds the house number and street, for example the fictional 12 Example Road, and a flat number goes on an additional line. Town, postal code and country go in their own boxes when the form provides them. Follow the labels shown in your application."
 q_zh = "UK ETA 的 Address line 1 填什么？"
 q_zh_hant = "UK ETA 的 Address line 1 填什麼？"
 a_zh = "填你的家庭住址，也就是你实际居住的地方，不是这次在英国的住处。常见的写法是第 1 行写门牌号和街道，例如 12 Example Road，公寓号写在附加行；城镇、邮编和国家有单独的框就分开填。以申请页面上显示的字段名为准。"
