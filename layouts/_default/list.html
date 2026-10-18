@@ -48,7 +48,12 @@
   {{- end }}
 
   <h1 class="font-serif font-medium m-0" style="line-height: 1.05; letter-spacing: -0.022em; font-variation-settings: 'opsz' 144;">
-    {{- if $countryMeta -}}
+    {{- $seoKey := strings.TrimPrefix "/" .Path -}}
+    {{- $seoSuffix := cond (eq $lang "en") "" (printf "_%s" (replace $lang "-" "_")) -}}
+    {{- $seo := index (hugo.Data.seo.titles | default dict) $seoKey | default dict -}}
+    {{- if index $seo (printf "h1%s" $seoSuffix) -}}
+      {{- index $seo (printf "h1%s" $seoSuffix) -}}
+    {{- else if $countryMeta -}}
       {{- if $isPaid -}}
         {{- if eq $formType "travel_authorization" -}}
         {{ $countryName }} {{ $countryMeta.form_code }}{{ i18n "hub_paid_authorisation" }}

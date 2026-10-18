@@ -27634,12 +27634,20 @@ export default {
           "name": "Philippine eTravel",
           "url": "https://etravel.gov.ph",
           "agency": "Philippine Travel Information System",
-          "lastVerified": "2026-10-15",
+          "lastVerified": "2026-10-18",
           "archiveUrl": "https://web.archive.org/web/2026/https://etravel.gov.ph",
           "notes": "Reserved under .gov.ph. The official homepage states that eTravel is free. Used for the Philippine electronic travel declaration before arrival or departure. Field checks read 2026-10-15 from the form scripts: dates MM/DD/YYYY (react-datepicker default), arrival today to 4 days ahead, date of birth up to today, passport number at least 5 characters."
+        },
+        {
+          "key": "faq",
+          "name": "Philippine eTravel official FAQ",
+          "url": "https://etravel.gov.ph/frequently-asked-questions",
+          "agency": "Philippine Travel Information System",
+          "lastVerified": "2026-10-18",
+          "notes": "Official FAQ checked for registration categories and exemptions, free registration and updates, the 72-hour arrival/departure window, and saving the QR code to present before boarding. This check does not reverify form-field constraints."
         }
       ],
-      "lastVerified": "2026-10-15"
+      "lastVerified": "2026-10-18"
     },
     {
       "slug": "cambodia",
