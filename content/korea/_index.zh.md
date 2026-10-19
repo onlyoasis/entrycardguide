@@ -2,7 +2,7 @@
 title: "韩国 e-Arrival Card 官方网站、免费填写和防中介指南"
 kicker: "韩国 e-Arrival Card 官方链接、免费填写方式，以及它和 K-ETA / Q-Code 的区别。"
 description: "韩国电子入境卡概览：在 www.e-arrivalcard.go.kr 免费填写，抵达前 3 天起可交，72 小时失效，支持简体中文；持有效 K-ETA、在韩登记居民等不用填。"
-lastmod: 2026-10-14
+lastmod: 2026-10-19
 ---
 
 韩国 e-Arrival Card 是官方电子入境卡门户，网址是 `e-arrivalcard.go.kr`。它和 K-ETA、签证、Q-Code 健康申报是不同系统。
