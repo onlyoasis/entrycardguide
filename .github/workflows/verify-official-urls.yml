@@ -120,9 +120,21 @@ jobs:
             exit 1
           }
 
-      - name: Check MCP deployment configuration
+      # Use the same static/full release boundary as cloudflare-pages.yml.
+      - name: Detect release mode
+        id: mode
         if: steps.changes.outputs.changed == 'true'
+        run: echo "mode=$(node scripts/release-mode.mjs)" >> "$GITHUB_OUTPUT"
+
+      - name: Check MCP deployment configuration
+        if: steps.changes.outputs.changed == 'true' && steps.mode.outputs.mode == 'full'
         run: npx --yes --package=wrangler@4.85.0 -- npm run check:release -- --deployment
+
+      # The release structure was checked above while wrangler.toml was present.
+      # A static release must not send the placeholder D1 binding to Pages.
+      - name: Set aside the MCP binding config
+        if: steps.changes.outputs.changed == 'true' && steps.mode.outputs.mode == 'static'
+        run: mv wrangler.toml wrangler.toml.mcp-pending
 
       - name: Deploy to Cloudflare Pages
         if: steps.changes.outputs.changed == 'true'
