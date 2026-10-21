@@ -7,7 +7,7 @@ country: "vietnam"
 weight: 20
 keywords: ["越南 e-visa 怎麼填", "越南電子簽證欄位", "越南簽證申請幫助", "越南 e-visa 照片"]
 layout: how-to-fill
-lastmod: 2026-10-19
+lastmod: 2026-10-21
 ---
 
 {{< official-link site="vietnam.evisa" >}}
@@ -102,19 +102,17 @@ lastmod: 2026-10-19
 
 計劃在越南停留的天數。可以小於簽證有效期。簽證最多 90 天但你不必住滿 90 天。
 
-### 允許的入境口岸
+### 預期入境口岸
 
-你計劃用的機場、陸路口岸或海港。
+只能選一個，從可以搜索的下拉里點選。2026 年 10 月 15 日列表裡有 79 個口岸：機場、陸路口岸和海港。搜索只匹配口岸的英文名，不認 IATA 代碼，所以要輸入 `Tan Son`，不是 `SGN`。
 
-- 機場：`SGN`（胡志明 / 新山一）、`HAN`（河內 / 內排）、`DAD`（峴港）、`CXR`（金蘭 / 芽莊）、`PQC`（富國島）。
-- 陸路：下拉列出每一個，例如 `Moc Bai`（柬埔寨方向）、`Lao Bao`（寮國方向）、`Huu Nghi`（中國方向）。
-- 海港：`Saigon Port`、`Da Nang Port` 等。
+- 機場：`Tan Son Nhat Int Airport (Ho Chi Minh City)`（胡志明 / 新山一）、`Noi Bai Int Airport`（河內 / 內排）、`Da Nang International Airport`（峴港）、`Cam Ranh Int Airport (Khanh Hoa)`（金蘭 / 芽莊）、`Phu Quoc International Airport`（富國島）。
+- 陸路：`Moc Bai Landport`（柬埔寨方向）、`Lao Bao Landport`（老撾方向）、`Huu Nghi Landport`（中國方向）。
+- 海港：`Ho Chi Minh City Seaport`、`Da Nang Seaport` 等。
 
-可多選。任何選中的口岸都有效；簽證不綁定單一口岸。
+### 預期出境口岸
 
-### 允許的出境口岸
-
-同樣的下拉。默認與入境一致。出境與入境不同也可以，選實際會用的口岸。
+第二個下拉，同樣必填。它不會自動沿用入境口岸，要自己選。出境口岸和入境口岸不同，表單也接受。
 
 ## 第 5 部分：越南境內地址
 

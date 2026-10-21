@@ -30423,7 +30423,7 @@ export default {
           "label": "Port of entry",
           "required": true,
           "placeholder": "DPS (Bali / Ngurah Rai International)",
-          "help": "Airport IATA code or named seaport. CGK = Jakarta, DPS = Bali, SUB = Surabaya, BPN = Balikpapan.",
+          "help": "Picked from the form's Port of Entry list after you choose air, land or sea. CGK = Jakarta, DPS = Bali, SUB = Surabaya, BPN = Balikpapan.",
           "errors": {
             "required": "Port of entry is required"
           }
@@ -30432,8 +30432,8 @@ export default {
           "type": "text",
           "label": "Address in Indonesia",
           "required": true,
-          "placeholder": "Hotel Example, Jl. Sunset Road, Kuta, Bali",
-          "help": "Where you will stay first night. Hotel name + address is enough for tourism.",
+          "placeholder": "JL. SUNSET ROAD NO. 89 KUTA",
+          "help": "For a villa, Airbnb or private home; hotels are picked from a list on the form. The official box keeps letters, digits, dots, hyphens and spaces in capitals, so commas and slashes disappear.",
           "errors": {
             "required": "Address in Indonesia is required"
           }
@@ -30853,10 +30853,10 @@ export default {
         },
         "port_of_entry": {
           "type": "text",
-          "label": "Allowed port of entry",
+          "label": "Intended border gate of entry",
           "required": true,
-          "placeholder": "SGN (Tan Son Nhat International Airport)",
-          "help": "Pick the airport, land border, or seaport you plan to use. Vietnam's e-visa lists ~30 approved entry points.",
+          "placeholder": "Tan Son Nhat Int Airport (Ho Chi Minh City)",
+          "help": "Picked from the form's list of airports, land border gates and seaports. Search by gate name, e.g. Tan Son or Noi Bai; IATA codes like SGN are not in the names.",
           "errors": {
             "required": "Port of entry is required"
           }
@@ -31269,12 +31269,12 @@ export default {
         },
         "entry_point": {
           "type": "text",
-          "label": "Port of entry",
+          "label": "Point of entry",
           "required": true,
-          "placeholder": "MEX (Mexico City)",
-          "help": "Airport or land crossing where you enter Mexico. Use the IATA code for airports.",
+          "placeholder": "El Chaparral",
+          "help": "Picked from the form's list after you choose By air or By land. Names are in Spanish, e.g. El Chaparral or Mesa De Otay for Tijuana.",
           "errors": {
-            "required": "Port of entry is required"
+            "required": "Point of entry is required"
           }
         },
         "trip_purpose": {
@@ -35946,17 +35946,17 @@ export default {
       {
         "n": "06",
         "key": "accommodation",
-        "section_en": "Section 3 · Customs",
-        "section_zh": "第 3 段 · 海关",
-        "section_zh_hant": "第 3 段 · 海關",
-        "example": "Hotel Indigo Bali Seminyak, Jl. Camplung Tanduk No.10",
-        "mistake": "Hotel",
-        "mistake_why_en": "name + street is the minimum — \"Hotel\" alone is rejected",
-        "mistake_why_zh": "至少名字 + 街道——只写 \"Hotel\" 会被退",
-        "mistake_why_zh_hant": "至少名字 + 街道——只寫 \"Hotel\" 會被退",
-        "copy_en": "Hotel/villa name + street name + town is enough. Bali addresses with no street number work if the name is recognizable. For multiple stops, use the first night.",
-        "copy_zh": "酒店/民宿名 + 街道 + 区即可。巴厘有些地址没门牌号也行，名字能识别就够。多地行程填第一晚的。",
-        "copy_zh_hant": "酒店/民宿名 + 街道 + 區即可。巴釐有些地址沒門牌號也行，名字能識別就夠。多地行程填第一晚的。"
+        "section_en": "Section 3 · Stay in Indonesia",
+        "section_zh": "第 3 段 · 印尼住宿",
+        "section_zh_hant": "第 3 段 · 印尼住宿",
+        "example": "JL. SUNSET ROAD NO. 89 KUTA",
+        "mistake": "HOTEL INDIGO",
+        "mistake_why_en": "typed into Name of Hotel but no result picked — the form stops with \"Name of Hotel is required\"",
+        "mistake_why_zh": "在 Name of Hotel 里打了字却没点选结果——表单会报 \"Name of Hotel is required\"",
+        "mistake_why_zh_hant": "在 Name of Hotel 裡打了字卻沒點選結果——表單會報 \"Name of Hotel is required\"",
+        "copy_en": "Pick Type of Accommodation first. Hotel: type 4+ characters of the name and pick a result; if it is not listed, choose the unlisted option, type the name and pick the city. Villa, Airbnb or a friend's home: pick Province and City, then type the street address. The address box has no length limit and keeps letters, digits, dots, hyphens and spaces only, in capitals, so commas and slashes disappear. For multiple stops, use the first place you stay.",
+        "copy_zh": "先选 Type of Accommodation。酒店：输入酒店名至少 4 个字符，再从结果里点选；找不到就选未列出酒店的选项，手动输入酒店名并选城市。别墅、Airbnb 或朋友家：先选 Province 和 City，再写街道地址。地址栏没有长度上限，只保留字母、数字、点、横线和空格并转成大写，逗号和斜杠会被删掉。多地行程填第一站住的地方。",
+        "copy_zh_hant": "先選 Type of Accommodation。酒店：輸入酒店名至少 4 個字符，再從結果裡點選；找不到就選未列出酒店的選項，手動輸入酒店名並選城市。別墅、Airbnb 或朋友家：先選 Province 和 City，再寫街道地址。地址欄沒有長度上限，只保留字母、數字、點、橫線和空格並轉成大寫，逗號和斜槓會被刪掉。多地行程填第一站住的地方。"
       }
     ],
     "malaysia": [
@@ -36270,14 +36270,14 @@ export default {
         "section_en": "Section 4 · Trip",
         "section_zh": "第 4 段 · 行程",
         "section_zh_hant": "第 4 段 · 行程",
-        "example": "Tan Son Nhat Intl Airport",
+        "example": "Tan Son Nhat Int Airport (Ho Chi Minh City)",
         "mistake": "Saigon",
-        "mistake_why_en": "must pick from the dropdown — typed city names aren't matched",
-        "mistake_why_zh": "必须从下拉选——手动键入城市名匹配不上",
-        "mistake_why_zh_hant": "必須從下拉選——手動鍵入城市名匹配不上",
-        "copy_en": "Pick from the dropdown of approved e-visa ports. Major airports: Tan Son Nhat (SGN, Ho Chi Minh City), Noi Bai (HAN, Hanoi), Da Nang (DAD), Cam Ranh (CXR, Nha Trang). Land crossings and seaports also listed but limited. You can only enter through the port you picked.",
-        "copy_zh": "从下拉里选已开放电子签证的口岸。主要机场：新山一（SGN，胡志明）、内排（HAN，河内）、岘港（DAD）、金兰（CXR，芽庄）。陆路 / 海路口岸也有但有限。只能从你选的口岸入境。",
-        "copy_zh_hant": "從下拉里選已開放電子簽證的口岸。主要機場：新山一（SGN，胡志明）、內排（HAN，河內）、峴港（DAD）、金蘭（CXR，芽莊）。陸路 / 海路口岸也有但有限。只能從你選的口岸入境。"
+        "mistake_why_en": "the dropdown search matches gate names only — \"Saigon\" and \"SGN\" find nothing; type \"Tan Son\"",
+        "mistake_why_zh": "下拉搜索只匹配口岸名——\"Saigon\" 和 \"SGN\" 都搜不到，要输入 \"Tan Son\"",
+        "mistake_why_zh_hant": "下拉搜索只匹配口岸名——\"Saigon\" 和 \"SGN\" 都搜不到，要輸入 \"Tan Son\"",
+        "copy_en": "Pick one gate from the searchable dropdown: 79 airports, land border gates and seaports on 15 Oct 2026. Major airports: Tan Son Nhat (Ho Chi Minh City), Noi Bai (Hanoi), Da Nang, Cam Ranh (Nha Trang). The exit gate is a separate dropdown. You can only enter through the port you picked.",
+        "copy_zh": "从可搜索的下拉里选一个口岸：2026 年 10 月 15 日共 79 个机场、陆路口岸和海港。主要机场：新山一（胡志明）、内排（河内）、岘港、金兰（芽庄）。出境口岸是另一个下拉。只能从你选的口岸入境。",
+        "copy_zh_hant": "從可搜索的下拉里選一個口岸：2026 年 10 月 15 日共 79 個機場、陸路口岸和海港。主要機場：新山一（胡志明）、內排（河內）、峴港、金蘭（芽莊）。出境口岸是另一個下拉。只能從你選的口岸入境。"
       },
       {
         "n": "07",
@@ -43601,6 +43601,13 @@ export default {
         "summary_zh": "本地检查器按 All Indonesia 表单更新：日期 DD/MM/YYYY，抵达日为昨天到后天",
         "summary_zh_hant": "本地檢查器按 All Indonesia 表單更新：日期 DD/MM/YYYY，抵達日為昨天到後天",
         "detail": "Read the All Indonesia form script. Dates are DD/MM/YYYY; date of birth from 1920 to today; arrival date yesterday, today or the next 2 days. Full name keeps letters and spaces and is turned into capitals. The place of arrival is picked from a list and the address box sets no length, so the checker drops the 60- and 200-character limits it had for them."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Guide follows the All Indonesia address and port fields",
+        "summary_zh": "填写指南按 All Indonesia 地址和口岸栏更正",
+        "summary_zh_hant": "填寫指南按 All Indonesia 地址和口岸欄更正",
+        "detail": "Read the All Indonesia form script. The address step starts with Type of Accommodation: hotels are picked from a search list, a home or villa needs Province, City and a typed address, and Others picks from a list. The address box has no length limit and keeps letters, digits, dots, hyphens and spaces in capitals, so the guide drops its 200-character limit and its comma-separated example. Port of Entry is a list loaded after you pick air, land or sea, not a typed IATA code."
       }
     ],
     "malaysia": [
@@ -43670,6 +43677,13 @@ export default {
         "summary_zh": "本地检查器按在线电子签表单更新：日期 DD/MM/YYYY，姓名框 50 字符",
         "summary_zh_hant": "本地檢查器按線上電子簽表單更新：日期 DD/MM/YYYY，姓名框 50 字符",
         "detail": "Read the e-Visa application scripts on evisa.gov.vn. Dates are DD/MM/YYYY; date of birth cannot be after today and passport expiry cannot be before today. Surname and given names take 50 letters and spaces each (the guide said 60). Passport number letters and digits up to 20. Email uses the form's own pattern, max 100. Address in Vietnam takes up to 500 characters (the guide said 200); the port of entry is picked from a list, so the checker no longer sets a length for it."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Guide follows the e-Visa border gate fields",
+        "summary_zh": "填写指南按电子签口岸栏更正",
+        "summary_zh_hant": "填寫指南按電子簽口岸欄更正",
+        "detail": "Read the e-Visa application scripts and the gate list on evisa.gov.vn. Entry and exit gates are two separate single-choice lists of 79 gates, searched by gate name. The guide had said you could pick several entry ports, that exit defaults to the entry port, and that about 30 ports are listed."
       }
     ],
     "thailand": [
@@ -43739,6 +43753,13 @@ export default {
         "summary_zh": "本地检查器按在线 FMM 更新：日期 DD/MM/YYYY，地址 40 字符",
         "summary_zh_hant": "本地檢查器按線上 FMM 更新：日期 DD/MM/YYYY，地址 40 字符",
         "detail": "Read the FMM application and validator scripts. Dates DD/MM/YYYY; arrival today to 29 days ahead. Names max 100 and accept accented Latin letters; passport number max 15; address in Mexico max 40, letters, digits and - . , \" ' only; email pattern from the form. The guide had said YYYY-MM-DD, 50-character names and a 200-character address. The port of entry is picked from a list on the form, so the checker no longer sets a 60-character limit for it."
+      },
+      {
+        "date": "2026-10-15",
+        "summary": "Guide follows the FMM point-of-entry lists",
+        "summary_zh": "填写指南按 FMM 入境口岸列表更正",
+        "summary_zh_hant": "填寫指南按 FMM 入境口岸列表更正",
+        "detail": "Read the FMM application page and its catalogue. Means of entry offers only By air and By land; Point of entry is a list of 38 airports and 60 land crossings in Spanish. Mexico City, Cancún, Guadalajara, Puerto Vallarta and Los Cabos are not on the air list, and there is no sea option. The guide had told travelers to enter IATA codes and listed sea ports."
       }
     ],
     "japan": [

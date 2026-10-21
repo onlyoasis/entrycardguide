@@ -69,14 +69,14 @@
     },
     "port_of_entry": {
       "label": "入境口岸",
-      "help": "機場 IATA 代碼或指定海港。CGK＝雅加達，DPS＝峇里島，SUB＝泗水，BPN＝巴厘巴板。",
+      "help": "選好空路、陸路或海路後，從官網 Port of Entry 清單選。CGK＝雅加達，DPS＝峇里島，SUB＝泗水，BPN＝巴厘巴板。",
       "errors": {
         "required": "請輸入入境口岸"
       }
     },
     "accommodation": {
       "label": "印尼境內地址",
-      "help": "第一晚住宿地點。旅遊填飯店名＋地址即可。",
+      "help": "適用於別墅、Airbnb 或私人住宅；飯店在官網上從清單選。官網地址欄只保留字母、數字、點、連字號和空格並轉成大寫，逗號和斜線會被刪掉。",
       "errors": {
         "required": "請輸入印尼境內地址"
       }
