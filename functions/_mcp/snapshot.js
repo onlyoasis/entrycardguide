@@ -29737,13 +29737,13 @@ export default {
         {
           "key": "digital_resolution",
           "name": "Resolution 079 adopting the digital sworn traveler declaration",
-          "url": "https://www.ana.gob.pa/w_ana/images/ANA_pdf/slider/2024/RES_079_29042024.pdf",
+          "url": "https://www.gacetaoficial.gob.pa/pdfTemp/30018_B/104423.pdf",
           "agency": "Autoridad Nacional de Aduanas",
-          "lastVerified": "2026-08-30",
+          "lastVerified": "2026-10-20",
           "notes": "Adopts the digital declaration portal and requires the traveller to present its QR response code."
         }
       ],
-      "lastVerified": "2026-10-19"
+      "lastVerified": "2026-10-20"
     },
     {
       "slug": "peru",
