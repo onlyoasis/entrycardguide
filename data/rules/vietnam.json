@@ -92,10 +92,10 @@
     },
     "port_of_entry": {
       "type": "text",
-      "label": "Allowed port of entry",
+      "label": "Intended border gate of entry",
       "required": true,
-      "placeholder": "SGN (Tan Son Nhat International Airport)",
-      "help": "Pick the airport, land border, or seaport you plan to use. Vietnam's e-visa lists ~30 approved entry points.",
+      "placeholder": "Tan Son Nhat Int Airport (Ho Chi Minh City)",
+      "help": "Picked from the form's list of airports, land border gates and seaports. Search by gate name, e.g. Tan Son or Noi Bai; IATA codes like SGN are not in the names.",
       "errors": {
         "required": "Port of entry is required"
       }

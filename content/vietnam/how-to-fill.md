@@ -3,7 +3,7 @@ title: "How to Fill the Vietnam E-Visa Application Form (2026)"
 kicker: "Field-by-field walkthrough of the official Vietnam E-Visa form with common errors and what they actually mean. About 12 minutes total."
 description: "Step-by-step 2026 guide to Vietnam's official e-visa application form at evisa.gov.vn. Government fee is $25 single entry, $50 multiple. No middleman markup."
 date: 2026-04-26
-lastmod: 2026-10-19
+lastmod: 2026-10-21
 country: "vietnam"
 weight: 20
 keywords: ["vietnam e-visa how to fill", "vietnam evisa fields", "vietnam visa application help", "evisa.gov.vn fields", "vietnam e-visa photo upload"]
@@ -102,19 +102,17 @@ Tourism, business, transit, family visit, student, etc. The dropdown has about 1
 
 Number of days you plan to spend in Vietnam. Can be less than the visa validity. The visa allows up to 90 days but you do not have to stay 90.
 
-### Allowed port of entry
+### Intended border gate of entry
 
-The airport, land border, or seaport you will use to enter Vietnam.
+One gate, picked from a dropdown you can search. On 15 October 2026 the list held 79 gates: airports, land border gates and seaports. The search matches gate names, not IATA codes, so type `Tan Son`, not `SGN`.
 
-- Airports: `SGN` (Ho Chi Minh / Tan Son Nhat), `HAN` (Hanoi / Noi Bai), `DAD` (Da Nang), `CXR` (Cam Ranh / Nha Trang), `PQC` (Phu Quoc).
-- Land borders: dropdown lists each, e.g. `Moc Bai (Cambodia)`, `Lao Bao (Laos)`, `Huu Nghi (China)`.
-- Seaports: `Saigon Port`, `Da Nang Port`, etc.
+- Airports: `Tan Son Nhat Int Airport (Ho Chi Minh City)`, `Noi Bai Int Airport` (Hanoi), `Da Nang International Airport`, `Cam Ranh Int Airport (Khanh Hoa)` (Nha Trang), `Phu Quoc International Airport`.
+- Land border gates: `Moc Bai Landport` (from Cambodia), `Lao Bao Landport` (from Laos), `Huu Nghi Landport` (from China).
+- Seaports: `Ho Chi Minh City Seaport`, `Da Nang Seaport`, etc.
 
-You can select multiple. Any port you select is valid; the visa is not pinned to one specific port.
+### Intended border gate of exit
 
-### Allowed port of exit
-
-Same dropdown list. Defaults to the entry port. Different exit is fine; just select the actual port you'll use.
+A second dropdown, also required. It does not copy your entry gate, so pick it yourself. The form accepts an exit gate different from the entry gate.
 
 ## Section 5: Address in Vietnam
 

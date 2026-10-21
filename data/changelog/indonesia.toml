@@ -20,3 +20,10 @@ summary = "Checker follows the All Indonesia form: DD/MM/YYYY dates, arrival yes
 summary_zh = "本地检查器按 All Indonesia 表单更新：日期 DD/MM/YYYY，抵达日为昨天到后天"
 summary_zh_hant = "本地檢查器按 All Indonesia 表單更新：日期 DD/MM/YYYY，抵達日為昨天到後天"
 detail = "Read the All Indonesia form script. Dates are DD/MM/YYYY; date of birth from 1920 to today; arrival date yesterday, today or the next 2 days. Full name keeps letters and spaces and is turned into capitals. The place of arrival is picked from a list and the address box sets no length, so the checker drops the 60- and 200-character limits it had for them."
+
+[[entries]]
+date = "2026-10-15"
+summary = "Guide follows the All Indonesia address and port fields"
+summary_zh = "填写指南按 All Indonesia 地址和口岸栏更正"
+summary_zh_hant = "填寫指南按 All Indonesia 地址和口岸欄更正"
+detail = "Read the All Indonesia form script. The address step starts with Type of Accommodation: hotels are picked from a search list, a home or villa needs Province, City and a typed address, and Others picks from a list. The address box has no length limit and keeps letters, digits, dots, hyphens and spaces in capitals, so the guide drops its 200-character limit and its comma-separated example. Port of Entry is a list loaded after you pick air, land or sea, not a typed IATA code."

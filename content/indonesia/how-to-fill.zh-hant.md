@@ -7,7 +7,7 @@ country: "indonesia"
 weight: 20
 keywords: ["印尼海關申報怎麼填", "All Indonesia 欄位", "巴厘島海關表欄位", "印尼海關申報幫助", "allindonesia.imigrasi.go.id 欄位"]
 layout: how-to-fill
-lastmod: 2026-10-15
+lastmod: 2026-10-21
 ---
 
 {{< official-link site="indonesia.ecd" >}}
@@ -63,10 +63,10 @@ lastmod: 2026-10-15
 
 ### 入境口岸
 
-印尼機場（IATA 代碼）或海港。
+從 **Port of Entry** 下拉里選，不能手動鍵入。表單先問 **Mode of Transport**（空路、陸路或海路），再加載對應的列表：機場、陸路口岸或海港。
 
-- `CGK`（雅加達 / 蘇加諾-哈達）、`DPS`（巴釐 / 努拉萊）、`SUB`（泗水）、`BPN`（巴釐巴板）、`KNO`（棉蘭 / 庫阿拉納穆）、`UPG`（望加錫）、`BTH`（巴淡）。
-- 海港下拉列出：`Tanjung Priok`、`Benoa Bali` 等。
+- 主要機場，供對照：`CGK`（雅加達 / 蘇加諾-哈達）、`DPS`（巴釐 / 努拉萊）、`SUB`（泗水）、`BPN`（巴釐巴板）、`KNO`（棉蘭 / 庫阿拉納穆）、`UPG`（望加錫）、`BTH`（巴淡）。在列表裡選對應的機場。
+- 坐渡輪或郵輪入境（新加坡到巴淡、郵輪靠巴釐伯諾阿港）：交通方式選海路，再選海港。
 
 ### 同行家人數
 
@@ -79,12 +79,18 @@ e-CD 支持家庭合併申報。一名成年人為全家填，每位額外家人
 
 ### 印尼地址
 
-第一晚要住的地方。
+表單要的是你在印尼居住的地址。先選 **Type of Accommodation**（住宿類型）：residential、hotel 或 others，下面的格子隨選擇變化。
 
-- 上限 200 字符。
-- 酒店名 + 街道 + 區域 + 城市就夠：`Hotel Example, Jl. Sunset Road No. 89, Kuta, Badung, Bali`。
-- Airbnb 用房東在訂單確認中給的地址。
-- 多城旅行：只填第一晚。不需要完整行程。
+- **Hotel（酒店）**：在 **Name of Hotel** 裡輸入酒店名的至少 4 個字符，再從結果裡點選。只打字不點選，這一欄仍是空的，表單會報 "Name of Hotel is required"。結果裡找不到你的酒店，就選未列出酒店的選項，手動輸入酒店名（只能用字母、數字和空格），再選 **City of Hotel**。
+- **Residential（住宅）**（別墅、Airbnb、朋友家）：先選 **Province** 和 **City**，再在 **Address in Indonesia** 裡寫街道地址，例如 `JL. SUNSET ROAD NO. 89 KUTA`。Airbnb 用房東給的地址。**Nearest Immigration Office** 是灰色的，不用填。
+- **Others（其他）**：從 **Accomodation** 列表裡選（官網就是這麼拼的）。
+
+**Address in Indonesia** 這一欄沒有長度上限。它只保留字母、數字、點、橫線和空格，輸入時自動轉成大寫；逗號、斜槓、`#` 和括號會被直接刪掉：
+
+- `Jl. Sunset Road No. 89, Kuta` 會變成 `JL. SUNSET ROAD NO. 89 KUTA`。
+- 寫 `RT 02 RW 05`，不要寫 `RT 02/RW 05`，否則數字會連成 `RT 02RW 05`。
+
+多城旅行：表單只收一個地址，填第一站住的地方。不需要完整行程。
 
 ### 信箱
 

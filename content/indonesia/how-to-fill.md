@@ -3,7 +3,7 @@ title: "How to Fill the Indonesia e-CD Customs Declaration (2026)"
 kicker: "Field-by-field walkthrough of Indonesia's official All Indonesia / e-CD declaration with common errors and what they mean. About 7 minutes total."
 description: "Step-by-step 2026 guide to every field on Indonesia's official All Indonesia arrival declaration at allindonesia.imigrasi.go.id. Free, no fees, Bali / Jakarta / all ports."
 date: 2026-04-26
-lastmod: 2026-10-12
+lastmod: 2026-10-21
 country: "indonesia"
 weight: 20
 keywords: ["indonesia e-cd how to fill", "all indonesia fields", "bali customs form fields", "indonesia customs declaration help", "allindonesia.imigrasi.go.id fields"]
@@ -63,10 +63,10 @@ Format: `DD/MM/YYYY`. The date you land in Indonesia, in **Indonesia local time*
 
 ### Port of entry
 
-Indonesian airport (IATA code) or named seaport.
+Picked from the **Port of Entry** dropdown, not typed. The form asks for **Mode of Transport** first (air, land or sea) and then loads the matching list: airports, land border posts or seaports.
 
-- `CGK` (Jakarta / Soekarno-Hatta), `DPS` (Bali / Ngurah Rai), `SUB` (Surabaya), `BPN` (Balikpapan), `KNO` (Medan / Kualanamu), `UPG` (Makassar), `BTH` (Batam).
-- Seaports listed by name: `Tanjung Priok`, `Benoa Bali`, etc.
+- Main airports, for orientation: `CGK` (Jakarta / Soekarno-Hatta), `DPS` (Bali / Ngurah Rai), `SUB` (Surabaya), `BPN` (Balikpapan), `KNO` (Medan / Kualanamu), `UPG` (Makassar), `BTH` (Batam). Pick the matching airport in the list.
+- Arriving by ferry or cruise ship (Singapore to Batam, a cruise into Benoa): choose sea as the mode of transport, then the seaport.
 
 ### Number of family members traveling together
 
@@ -79,12 +79,18 @@ The e-CD supports family bundling. One adult fills the form for the whole family
 
 ### Address in Indonesia
 
-Where you will stay first night.
+The form asks for the address where you will be living in Indonesia. Start with **Type of Accommodation**: residential, hotel or others. The boxes below it change with your choice.
 
-- Max 200 characters.
-- Hotel name + street + neighborhood + city is plenty: `Hotel Example, Jl. Sunset Road No. 89, Kuta, Badung, Bali`.
-- Airbnb: use the address the host provided.
-- Multi-city trips: just first night. No full itinerary required.
+- **Hotel**: type at least 4 characters of the name into **Name of Hotel** and pick it from the results. Typing without picking leaves the field empty, and the form stops with "Name of Hotel is required". If your hotel is not in the results, choose the option for an unlisted hotel, type the name (letters, digits and spaces only) and pick **City of Hotel**.
+- **Residential** (villa, Airbnb, a friend's home): pick **Province** and **City**, then type the street address into **Address in Indonesia**, for example `JL. SUNSET ROAD NO. 89 KUTA`. For an Airbnb, use the address the host gave you. **Nearest Immigration Office** is greyed out; you do not type it.
+- **Others**: pick from the **Accomodation** list (the form spells it that way).
+
+The **Address in Indonesia** box has no length limit. It keeps only letters, digits, dots, hyphens and spaces, and turns letters into capitals as you type. Commas, slashes, `#` and brackets vanish:
+
+- `Jl. Sunset Road No. 89, Kuta` becomes `JL. SUNSET ROAD NO. 89 KUTA`.
+- Write `RT 02 RW 05`, not `RT 02/RW 05`, or the numbers run together as `RT 02RW 05`.
+
+Multi-city trips: the form takes one address. Use the first place you stay. No full itinerary required.
 
 ### Email
 
