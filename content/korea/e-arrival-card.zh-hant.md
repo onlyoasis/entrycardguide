@@ -22,7 +22,7 @@ faq:
   - q: "還需要填紙質入境卡嗎？"
     a: "不需要。電子入境卡和紙質入境卡效力相同。沒在網上提交的，入境審查前仍可以填電子入境卡或紙質入境卡。"
 layout: country-form
-lastmod: 2026-10-14
+lastmod: 2026-10-19
 ---
 
 {{< official-link site="korea.earrivalcard" >}}
