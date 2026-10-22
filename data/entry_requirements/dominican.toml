@@ -1,0 +1,44 @@
+# Dominican Republic — passport and documents for a short visit (tourists).
+# Source: Ministry of Tourism, "Requisitos de Entrada" (godominicanrepublic.com).
+# Checked 2026-10-23. The passport exception runs 1 Dec 2024 – 31 Dec 2026.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "other"
+value_en = "At least 6 months' validity"
+value_zh = "至少 6 个月有效期"
+value_zh_hant = "至少 6 個月有效期"
+note_en = "The ministry does not say which date to count from. To be safe, count from the day you leave."
+note_zh = "旅游部没写从哪天算起，稳妥起见按离境那天算。"
+note_zh_hant = "旅遊部沒寫從哪天算起，穩妥起見按離境那天算。"
+source = "https://es.godominicanrepublic.com/planea-tu-viaje/requisitos-de-viaje"
+quote = "Pasaporte con vigencia mínima de seis (6) meses."
+
+[[items]]
+topic = "validity"
+basis = "stay"
+applies_en = "Tourists from the EU, UK, US, Canada, Brazil, Chile, Argentina, Colombia and Ecuador, until 31 Dec 2026"
+applies_zh = "欧盟、英国、美国、加拿大、巴西、智利、阿根廷、哥伦比亚、厄瓜多尔游客，至 2026 年 12 月 31 日"
+applies_zh_hant = "歐盟、英國、美國、加拿大、巴西、智利、阿根廷、哥倫比亞、厄瓜多爾遊客，至 2026 年 12 月 31 日"
+note_en = "The passport must stay valid until you leave the country."
+note_zh = "护照要一直有效到你离开多米尼加。"
+note_zh_hant = "護照要一直有效到你離開多米尼加。"
+source = "https://es.godominicanrepublic.com/planea-tu-viaje/requisitos-de-viaje"
+quote = "a hacerlo con sus pasaportes válidos y vigentes, y que los mismos permanezcan vigentes durante su estadía y salida del territorio dominicano."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+note_en = "Air, sea or land, in and out."
+note_zh = "进出境的机票、船票或陆路车票都可以。"
+note_zh_hant = "進出境的機票、船票或陸路車票都可以。"
+source = "https://es.godominicanrepublic.com/planea-tu-viaje/requisitos-de-viaje"
+quote = "Boleto aéreo, marítimo o terrestre de ingreso y regreso."
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+source = "https://es.godominicanrepublic.com/planea-tu-viaje/requisitos-de-viaje"
+quote = "Prueba de solvencia económica suficiente para cubrir sus gastos durante su estancia en la República Dominicana."

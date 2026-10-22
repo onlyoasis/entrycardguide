@@ -1,0 +1,46 @@
+# Thailand — passport and documents for a short visit (tourist visa exemption).
+# Sources: Royal Thai Embassies in Wellington (updated 22 Sep 2026) and
+# Washington (updated 17 Sep 2026), both describing the scheme in force from
+# 15 September 2026. Checked 2026-10-23.
+# Money: Doha, Washington and London list THB 20,000 per person; Wellington and
+# the 2000 Interior Ministry announcement list THB 10,000. The higher figure is
+# shown, with the lower one in the note.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "arrival"
+months = 6
+applies_en = "Tourist visa exemption"
+applies_zh = "旅游免签"
+applies_zh_hant = "旅遊免簽"
+source = "https://wellington.thaiembassy.org/th/publicservice/19038-visa-exemption"
+quote = "Passports or travel documents must be valid for at least 6 months upon the date of first entry."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+applies_en = "Tourist visa exemption"
+applies_zh = "旅游免签"
+applies_zh_hant = "旅遊免簽"
+note_en = "A confirmed air, train, bus or boat ticket out of Thailand within 30 days of arrival. Without one, get a tourist visa first."
+note_zh = "要有入境后 30 天内离开泰国的确认票，飞机、火车、大巴、船都可以。没有就先办旅游签证。"
+note_zh_hant = "要有入境後 30 天內離開泰國的確認票，飛機、火車、大巴、船都可以。沒有就先辦旅遊簽證。"
+source = "https://wellington.thaiembassy.org/th/publicservice/19038-visa-exemption"
+quote = "are required at the port of entry to have proof of onward travel (confirmed air, train, bus or boat tickets) to leave Thailand within 30 days after the date of arrival, otherwise a tourist visa must be obtained before entering Thailand."
+
+[[items]]
+topic = "funds"
+status = "amount"
+value_en = "THB 20,000 per person or THB 40,000 per family"
+value_zh = "每人 2 万泰铢，或每个家庭 4 万泰铢"
+value_zh_hant = "每人 2 萬泰銖，或每個家庭 4 萬泰銖"
+applies_en = "Tourist visa exemption"
+applies_zh = "旅游免签"
+applies_zh_hant = "旅遊免簽"
+note_en = "Cash or the equivalent. The Thai embassy in Wellington lists THB 10,000 per person or THB 20,000 per family; carry the higher amount."
+note_zh = "现金或等值。泰国驻惠灵顿使馆写的是每人 1 万、家庭 2 万泰铢，按高的准备。"
+note_zh_hant = "現金或等值。泰國駐惠靈頓使館寫的是每人 1 萬、家庭 2 萬泰銖，按高的準備。"
+source = "https://washingtondc.thaiembassy.org/en/page/visaexempt-voajul2024"
+quote = "Travelers entering Thailand under the Tourist Visa Exemption Scheme must possess adequate cash of or equivalent to 20,000 Baht per person or 40,000 Baht per family."

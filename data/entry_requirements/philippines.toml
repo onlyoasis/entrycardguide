@@ -1,0 +1,38 @@
+# Philippines — passport and documents for a short visit.
+# Sources: Philippine Embassy in Tokyo (DFA), visa-free entry page, and Bureau
+# of Immigration Operations Order SBM-2015-026. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "departure"
+months = 6
+applies_en = "Visa-free entry"
+applies_zh = "免签入境"
+applies_zh_hant = "免簽入境"
+note_en = "Counted from the end of your planned stay."
+note_zh = "从计划停留期结束那天算起。"
+note_zh_hant = "從計劃停留期結束那天算起。"
+source = "https://tokyo.philembassy.net/consular-section/services/visa/visa-free-entry-for-temporary-visits/"
+quote = "at least six (6) months beyond their contemplated period of stay in the Philippines."
+
+[[items]]
+topic = "passport"
+value_en = "Under 6 months accepted for 41 nationalities"
+value_zh = "41 个国籍不足 6 个月也可入境"
+value_zh_hant = "41 個國籍不足 6 個月也可入境"
+note_en = "A 2015 Bureau of Immigration order lists visa-free nationalities, including the US, Japan, Korea, Australia, Canada, Singapore and Thailand, who may enter with less than 6 months left, if their embassy in the Philippines can renew the passport."
+note_zh = "移民局 2015 年的命令列出 41 个免签国籍（含美国、日本、韩国、澳大利亚、加拿大、新加坡、泰国），护照不足 6 个月也可放行，前提是本国驻菲使领馆能为护照续期。"
+note_zh_hant = "移民局 2015 年的命令列出 41 個免簽國籍（含美國、日本、韓國、澳大利亞、加拿大、新加坡、泰國），護照不足 6 個月也可放行，前提是本國駐菲使領館能為護照續期。"
+source = "https://immigration.gov.ph/wp-content/uploads/2023/12/SBM-2015-026.pdf"
+quote = "the following is the list of countries whose nationals may be admitted into the country with passports or official travel documents of less than six (6) months validity from date of arrival"
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+applies_en = "Visa-free entry"
+applies_zh = "免签入境"
+applies_zh_hant = "免簽入境"
+source = "https://tokyo.philembassy.net/consular-section/services/visa/visa-free-entry-for-temporary-visits/"
+quote = "valid tickets for their return journey"

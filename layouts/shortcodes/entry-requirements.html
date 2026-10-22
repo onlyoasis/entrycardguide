@@ -1,0 +1,49 @@
+{{- /* Passport and entry-document rules from data/entry_requirements, one row
+       per country in roster order. Each row's id (req-{country}) is the anchor
+       other pages link to. Photo cells come from data/photo_specs. */ -}}
+{{- $rows := partialCached "entry-req-rows.html" .Page site.Language.Lang }}
+<div class="not-prose req-specs">
+  <p id="req-scroll-hint" class="directory-scroll-hint text-small text-muted my-3">{{ i18n "directory_scroll_hint" }}</p>
+  <div class="directory-scroll" role="region" aria-label="{{ i18n "req_table_label" }}" aria-describedby="req-scroll-hint" tabindex="0">
+  <table class="directory-table req-table">
+    <caption class="sr-only">{{ i18n "req_table_label" }}</caption>
+    <colgroup>
+      <col class="req-col-country"><col class="req-col-validity"><col class="req-col-epass"><col class="req-col-ticket"><col class="req-col-funds"><col class="req-col-photo"><col class="req-col-checked">
+    </colgroup>
+    <thead>
+      <tr>
+        {{- range slice (i18n "directory_country") (i18n "req_topic_validity") (i18n "req_topic_e_passport") (i18n "req_topic_onward_ticket") (i18n "req_topic_funds") (i18n "req_topic_photo") (i18n "req_label_checked") }}
+        <th scope="col">{{ . }}</th>
+        {{- end }}
+      </tr>
+    </thead>
+    <tbody>
+      {{- range $rows }}
+      {{- $t := .topics }}
+      <tr id="req-{{ .key }}">
+        <th scope="row"><a href="{{ printf "/%s/#entry-requirements" .key | relLangURL }}" class="text-ink no-underline hover:underline underline-offset-4">{{ .name }}</a></th>
+        <td>
+          {{- partial "entry-req-items.html" (dict "items" (index $t "validity") "empty" "req_none" "notes" false) }}
+          {{- with index $t "blank_pages" }}{{ partial "entry-req-items.html" (dict "items" . "empty" "req_none" "notes" false) }}{{ end }}
+          {{- with index $t "passport" }}{{ partial "entry-req-items.html" (dict "items" . "empty" "req_none" "notes" false) }}{{ end }}
+        </td>
+        <td>{{ partial "entry-req-items.html" (dict "items" (index $t "e_passport") "empty" "req_e_passport_none" "notes" false) }}</td>
+        <td>{{ partial "entry-req-items.html" (dict "items" (index $t "onward_ticket") "empty" "req_none" "notes" false) }}</td>
+        <td>{{ partial "entry-req-items.html" (dict "items" (index $t "funds") "empty" "req_none" "notes" false) }}</td>
+        <td>
+          {{- range .photo }}
+          <div class="req-item">
+            <p class="req-value">{{ .form }}</p>
+            <a href="{{ "/photo-requirements/" | relLangURL }}#photo-{{ .id }}" class="req-src">{{ .text }}</a>
+          </div>
+          {{- else }}
+          <p class="req-value req-none">{{ i18n "req_photo_unreviewed" }}</p>
+          {{- end }}
+        </td>
+        <td class="directory-date">{{ .checked }}</td>
+      </tr>
+      {{- end }}
+    </tbody>
+  </table>
+  </div>
+</div>

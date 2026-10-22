@@ -1,0 +1,27 @@
+# Malaysia — passport and documents for a short visit.
+# Source: Immigration Department of Malaysia, entry requirements (PDF, English).
+# Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "arrival"
+months = 6
+source = "https://www.imi.gov.my/wp-content/uploads/2023/02/2023-CR-Portal-JIM-24022023-BI.pdf"
+quote = "Documents must be valid for six months or more from the date of entry into Malaysia."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+note_en = "A fixed return ticket home or to another country."
+note_zh = "回国或前往其他国家的定期机票都可以。"
+note_zh_hant = "回國或前往其他國家的定期機票都可以。"
+source = "https://www.imi.gov.my/wp-content/uploads/2023/02/2023-CR-Portal-JIM-24022023-BI.pdf"
+quote = "Every visitor is also required to prove the financial ability to declare himself in Malaysia along with a fixed return ticket to return to his home country or to another country."
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+source = "https://www.imi.gov.my/wp-content/uploads/2023/02/2023-CR-Portal-JIM-24022023-BI.pdf"
+quote = "Have a valid return ticket and sufficient expenses."
