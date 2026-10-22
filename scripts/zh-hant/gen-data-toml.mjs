@@ -1,7 +1,8 @@
 // Upsert Traditional display siblings (`*_zh_hant`) next to every Simplified
 // display field (`*_zh`) in data/fields/*.toml, data/official_urls/*.toml,
-// data/changelog/*.toml, data/seo/*.toml (search-result title overrides) and
-// data/photo_specs/*.toml (photo and upload rules).
+// data/changelog/*.toml, data/seo/*.toml (search-result title overrides),
+// data/photo_specs/*.toml (photo and upload rules) and
+// data/entry_requirements/*.toml (passport and entry-document rules).
 //
 //   node scripts/zh-hant/gen-data-toml.mjs [--check]
 //   (DATA_ROOT env overrides the data dir — test hook for isolated fixtures)
@@ -33,10 +34,11 @@ const ROOT = path.resolve(import.meta.dirname, "../..");
 const DATA_ROOT = process.env.DATA_ROOT ? path.resolve(process.env.DATA_ROOT) : path.join(ROOT, "data");
 const CHECK = process.argv.includes("--check");
 
-const SUBDIRS = ["fields", "official_urls", "changelog", "seo", "photo_specs"];
-// seo/ (search-title overrides) and photo_specs/ (photo rules) are optional;
+const SUBDIRS = ["fields", "official_urls", "changelog", "seo", "photo_specs", "entry_requirements"];
+// seo/ (search-title overrides), photo_specs/ (photo rules) and
+// entry_requirements/ (passport and entry-document rules) are optional;
 // isolated fixtures may omit them.
-const OPTIONAL_SUBDIRS = new Set(["seo", "photo_specs"]);
+const OPTIONAL_SUBDIRS = new Set(["seo", "photo_specs", "entry_requirements"]);
 const fatal = []; // unsupported syntax — early exit, both modes
 const problems = []; // missing/stale/orphan coverage findings — reported together
 let parsed = 0, inserted = 0, updated = 0, removed = 0, unchanged = 0;

@@ -37347,7 +37347,7 @@ export default {
         "mistake_why_zh_hant": "把 MRZ 填充符和護照號一起複製了",
         "copy_en": "Use the passport you will carry. The app photographs the original passport and may scan its chip; the online route needs a clear photo of the passport page.",
         "copy_zh": "使用这次旅行随身携带的护照。App 会拍摄护照原件并可能扫描芯片；网页申请需要清晰的护照资料页照片。",
-        "copy_zh_hant": "使用這次旅行隨身攜帶的護照。App 會拍攝護照原件並可能掃描芯片；網頁申請需要清晰的護照資料頁照片。"
+        "copy_zh_hant": "使用這次旅行隨身攜帶的護照。App 會拍攝護照原件並可能掃描晶片；網頁申請需要清晰的護照資料頁照片。"
       },
       {
         "n": "02",
@@ -37362,7 +37362,7 @@ export default {
         "mistake_why_zh_hant": "照抄了機票縮寫，沒有填寫護照全名",
         "copy_en": "Check every family and given name read from the passport photo or chip. Correct any scan error before continuing.",
         "copy_zh": "核对从护照照片或芯片读取的全部姓和名。继续前改正所有识别错误。",
-        "copy_zh_hant": "核對從護照照片或芯片讀取的全部姓和名。繼續前改正所有識別錯誤。"
+        "copy_zh_hant": "核對從護照照片或晶片讀取的全部姓和名。繼續前改正所有識別錯誤。"
       },
       {
         "n": "03",

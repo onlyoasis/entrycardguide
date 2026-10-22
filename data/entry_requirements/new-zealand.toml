@@ -1,0 +1,42 @@
+# New Zealand — passport and documents for a short visit.
+# Sources: Immigration New Zealand operational manual (A2.5, V2.20) and the
+# INZ 1018 Visitor Visa Guide (October 2026). Visa-waiver visitors apply for a
+# visitor visa through the arrival card, so the visitor rules apply to them.
+# The main INZ pages answered automated reads with a bot check, so the manual
+# and the guide are cited instead. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "departure"
+months = 3
+note_en = "One month after you leave is enough if your country has a consulate in New Zealand that can issue and renew passports."
+note_zh = "如果你的国家在新西兰设有能签发和续期护照的领馆，离境后剩 1 个月即可。"
+note_zh_hant = "如果你的國家在新西蘭設有能簽發和續期護照的領館，離境後剩 1 個月即可。"
+source = "https://www.immigration.govt.nz/opsmanual/35025.htm"
+quote = "for at least 3 months beyond the date they intend to depart; or for one month beyond the date they intend to depart, if the issuing government has consular representation in New Zealand that is able to issue and renew travel documents."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+applies_en = "Visa-waiver visitors (NZeTA)"
+applies_zh = "免签旅客（NZeTA）"
+applies_zh_hant = "免簽旅客（NZeTA）"
+note_en = "The ticket must take you to a country you have the right to enter."
+note_zh = "机票目的地须是你有权入境的国家。"
+note_zh_hant = "機票目的地須是你有權入境的國家。"
+source = "https://www.immigration.govt.nz/assets/inz/documents/forms-and-guides/inz1018.pdf"
+quote = "hold a valid ticket out of New Zealand to a country you have the right of entry to"
+
+[[items]]
+topic = "funds"
+status = "amount"
+value_en = "NZD 1,000 a month, or NZD 400 if accommodation is prepaid"
+value_zh = "每月 1,000 新西兰元，住宿已付清则每月 400 新西兰元"
+value_zh_hant = "每月 1,000 新西蘭元，住宿已付清則每月 400 新西蘭元"
+note_en = "Or a sponsor who meets INZ's sponsorship rules."
+note_zh = "也可以由符合新西兰移民局规定的担保人担保。"
+note_zh_hant = "也可以由符合新西蘭移民局規定的擔保人擔保。"
+source = "https://www.immigration.govt.nz/opsmanual/43000.htm"
+quote = "of at least NZ$1000 per month for maintenance and accommodation, or NZ$400 per month if the accommodation has been prepaid"

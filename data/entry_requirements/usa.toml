@@ -1,0 +1,51 @@
+# United States — passport and documents for a short visit.
+# Sources are the US Code and the Code of Federal Regulations on govinfo.gov
+# (travel.state.gov and cbp.gov block automated reads). Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "departure"
+months = 6
+note_en = "Counted from the end of your planned stay. Countries with a passport agreement are exempt; see the next line."
+note_zh = "从计划停留期结束那天算起。与美国签有护照协议的国家不受此限，见下一条。"
+note_zh_hant = "從計劃停留期結束那天算起。與美國簽有護照協議的國家不受此限，見下一條。"
+source = "https://www.govinfo.gov/content/pkg/CFR-2025-title8-vol1/xml/CFR-2025-title8-vol1-sec214-1.xml"
+quote = "The passport of an alien applying for admission must be valid for a minimum of six months from the expiration date of the contemplated period of stay"
+
+[[items]]
+topic = "validity"
+basis = "stay"
+applies_en = "Countries with a US passport agreement"
+applies_zh = "与美国签有护照协议的国家"
+applies_zh_hant = "與美國簽有護照協議的國家"
+note_en = "The State Department lists these countries in its Foreign Affairs Manual, 9 FAM 403.9-3(B)(2)."
+note_zh = "国家名单见美国国务院《外交事务手册》9 FAM 403.9-3(B)(2)。"
+note_zh_hant = "國家名單見美國國務院《外交事務手冊》9 FAM 403.9-3(B)(2)。"
+source = "https://www.govinfo.gov/content/pkg/FR-2024-01-18/html/2024-00645.htm"
+quote = "need only have a passport valid for their intended period of stay."
+
+[[items]]
+topic = "e_passport"
+status = "required"
+applies_en = "Visa Waiver Program (ESTA)"
+applies_zh = "免签计划（ESTA）"
+applies_zh_hant = "免簽計劃（ESTA）"
+note_en = "US law requires an electronic passport for every Visa Waiver Program entry. A passport without a chip cannot be used under the program."
+note_zh = "美国法律规定，走免签计划入境必须持电子护照。没有芯片的护照不能走免签计划。"
+note_zh_hant = "美國法律規定，走免簽計劃入境必須持電子護照。沒有晶片的護照不能走免簽計劃。"
+source = "https://www.govinfo.gov/content/pkg/USCODE-2024-title8/html/USCODE-2024-title8-chap12-subchapII-partII-sec1187.htm"
+quote = "Beginning on April 1, 2016, the passport is an electronic passport that is fraud-resistant, contains relevant biographic and biometric information"
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+applies_en = "Visa Waiver Program, by air or sea"
+applies_zh = "免签计划，空路或海路入境"
+applies_zh_hant = "免簽計劃，空路或海路入境"
+note_en = "The ticket must take you out of the US. A trip that ends in Canada, Mexico or a nearby island only counts if you live there."
+note_zh = "机票要把你带离美国。行程终点是加拿大、墨西哥或邻近岛屿的，只有你住在那里才算数。"
+note_zh_hant = "機票要把你帶離美國。行程終點是加拿大、墨西哥或鄰近島嶼的，只有你住在那裡才算數。"
+source = "https://www.govinfo.gov/content/pkg/CFR-2025-title8-vol1/xml/CFR-2025-title8-vol1-sec217-2.xml"
+quote = "at the time of arrival must have a round trip ticket that will transport the traveler out of the United States to any other foreign port or place as long as the trip does not terminate in contiguous territory or an adjacent island"

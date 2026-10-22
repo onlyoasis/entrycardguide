@@ -1,0 +1,66 @@
+# Japan — passport and documents for a short visit.
+# Sources: Ministry of Foreign Affairs of Japan, the Consulate-General in
+# Seattle (page dated 2026-07-08) and the Embassy in the Netherlands.
+# Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "stay"
+note_en = "Japan sets no minimum remaining validity."
+note_zh = "日本不设最低剩余有效期。"
+note_zh_hant = "日本不設最低剩餘有效期。"
+source = "https://www.seattle.us.emb-japan.go.jp/itpr_en/TravelingJapanQuickFacts.html"
+quote = "No minimum remaining period of validity required, but passports must be valid for entire duration of stay in Japan."
+
+[[items]]
+topic = "blank_pages"
+pages = 1
+note_en = "For the entry stamp or a visa."
+note_zh = "用于盖入境章或贴签证。"
+note_zh_hant = "用於蓋入境章或貼簽證。"
+source = "https://www.seattle.us.emb-japan.go.jp/itpr_en/TravelingJapanQuickFacts.html"
+quote = "One blank passport page required for entry stamp or visa insert."
+
+[[items]]
+topic = "e_passport"
+status = "required"
+applies_en = "Visa-free entry on passports of Thailand, Malaysia, Brazil, the UAE, Panama, Paraguay, Peru, Serbia and Montenegro"
+applies_zh = "泰国、马来西亚、巴西、阿联酋、巴拿马、巴拉圭、秘鲁、塞尔维亚、黑山护照免签入境"
+applies_zh_hant = "泰國、馬來西亞、巴西、阿聯酋、巴拿馬、巴拉圭、秘魯、塞爾維亞、黑山護照免簽入境"
+note_en = "Only ICAO-standard e-passports get visa-free entry. Without one, get a visa first. MOFA says travellers from the eight countries other than Malaysia will otherwise be refused entry, and Malaysians will be strictly examined."
+note_zh = "只有符合 ICAO 标准的电子护照才能免签。没有电子护照就先办签证：外务省写明，马来西亚以外的 8 国旅客否则会被拒绝入境，马来西亚旅客会被严格审查。"
+note_zh_hant = "只有符合 ICAO 標準的電子護照才能免簽。沒有電子護照就先辦簽證：外務省寫明，馬來西亞以外的 8 國旅客否則會被拒絕入境，馬來西亞旅客會被嚴格審查。"
+source = "https://www.mofa.go.jp/j_info/visit/visa/short/novisa.html"
+quote = "visas are not required only for holders of ePassport in compliance with ICAO standards."
+
+[[items]]
+topic = "e_passport"
+status = "required"
+applies_en = "Visa-free entry on Indonesian passports"
+applies_zh = "印尼护照免签入境"
+applies_zh_hant = "印尼護照免簽入境"
+note_en = "Register the e-passport with a Japanese embassy or consulate in Indonesia first. The registration lasts 3 years or until the passport expires."
+note_zh = "要先在日本驻印尼使领馆登记电子护照。登记有效 3 年，或到护照到期为止。"
+note_zh_hant = "要先在日本駐印尼使領館登記電子護照。登記有效 3 年，或到護照到期為止。"
+source = "https://www.mofa.go.jp/j_info/visit/visa/short/novisa.html"
+quote = "visas are not required only for those who have registered ICAO-compliant ePassport to diplomatic missions of Japan in Indonesia"
+
+[[items]]
+topic = "onward_ticket"
+status = "may_be_asked"
+note_en = "You must arrange to leave within the permitted stay. Officers may ask for the ticket on arrival."
+note_zh = "你要自己安排在获准停留期内离境，入境时可能被要求出示机票。"
+note_zh_hant = "你要自己安排在獲准停留期內離境，入境時可能被要求出示機票。"
+source = "https://www.seattle.us.emb-japan.go.jp/itpr_en/TravelingJapanQuickFacts.html"
+quote = "immigration authorities may request to see return tickets or proof of next travel from Japan upon arrival."
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+note_en = "The embassy advises carrying proof of funds, with your return ticket and itinerary, for the landing examination. No amount is published."
+note_zh = "使馆建议入境审查时随身带资金证明、返程机票和行程资料。没有公布金额。"
+note_zh_hant = "使館建議入境審查時隨身帶資金證明、返程機票和行程資料。沒有公佈金額。"
+source = "https://www.nl.emb-japan.go.jp/itpr_en/r_visa_necessary_yes_or_no.html"
+quote = "relevant documentation concerning your itinerary (i.e. hotel reservations, conference details…) and proof of sufficient funds"

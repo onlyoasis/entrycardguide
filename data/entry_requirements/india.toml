@@ -1,0 +1,72 @@
+# India — passport and documents for a short visit (e-Visa).
+# Sources: Indian Visa Online e-Visa portal (Ministry of Home Affairs) and the
+# Consulate General of India in San Francisco. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "arrival"
+months = 6
+applies_en = "e-Visa"
+applies_zh = "电子签"
+applies_zh_hant = "電子簽"
+source = "https://www.cgisf.gov.in/page/e-visa/"
+quote = "Passport used by the applicant should have at least six-months validity from the date of arrival in India."
+
+[[items]]
+topic = "validity"
+basis = "application"
+months = 6
+applies_en = "e-Visa application"
+applies_zh = "电子签申请"
+applies_zh_hant = "電子簽申請"
+source = "https://indianvisaonline.gov.in/evisa/tvoa.html"
+quote = "Passport should have at least six months validity at the time of making application for grant of e-Visa"
+
+[[items]]
+topic = "blank_pages"
+pages = 2
+applies_en = "e-Visa"
+applies_zh = "电子签"
+applies_zh_hant = "電子簽"
+note_en = "For the immigration officer's stamps."
+note_zh = "供移民官盖章。"
+note_zh_hant = "供移民官蓋章。"
+source = "https://indianvisaonline.gov.in/evisa/tvoa.html"
+quote = "The passport should have at least two blank pages for stamping by the Immigration Officer."
+
+[[items]]
+topic = "passport"
+value_en = "Travel on the passport you used for the e-Visa"
+value_zh = "入境用申请电子签的那本护照"
+value_zh_hant = "入境用申請電子簽的那本護照"
+applies_en = "e-Visa"
+applies_zh = "电子签"
+applies_zh_hant = "電子簽"
+note_en = "If you have a new passport, you can still enter on it, but carry the old passport the e-Visa was granted on."
+note_zh = "换了新护照也可以凭新护照入境，但要同时带上办电子签的旧护照。"
+note_zh_hant = "換了新護照也可以憑新護照入境，但要同時帶上辦電子簽的舊護照。"
+source = "https://www.cgisf.gov.in/page/e-visa/"
+quote = "Entry into India will be allowed on a new passport even if the e-Visa has been granted on the old passport. However, in such cases, the traveler must also carry the old passport on which the e-Visa has been granted."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+value_en = "Should have one"
+value_zh = "应当持有"
+value_zh_hant = "應當持有"
+applies_en = "e-Visa"
+applies_zh = "电子签"
+applies_zh_hant = "電子簽"
+source = "https://indianvisaonline.gov.in/evisa/tvoa.html"
+quote = "The foreigner should have return ticket or onward journey ticket, with sufficient money to spend during his/her stay in India."
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+applies_en = "e-Visa"
+applies_zh = "电子签"
+applies_zh_hant = "電子簽"
+source = "https://indianvisaonline.gov.in/evisa/tvoa.html"
+quote = "The foreigner should have return ticket or onward journey ticket, with sufficient money to spend during his/her stay in India."

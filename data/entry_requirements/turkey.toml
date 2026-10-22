@@ -1,0 +1,39 @@
+# Turkey (Türkiye) — passport and documents for a short visit.
+# Sources: Ministry of Foreign Affairs (Law No. 6458, art. 7.1b) and the
+# Consulate General in Los Angeles on the conditional e-Visa. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "permitted_stay"
+days = 60
+note_en = "For a 90-day stay, that is 150 days left when you arrive. The ministry also advises 6 months from arrival. Citizens who may enter with a national ID card are exempt."
+note_zh = "获准停留 90 天的，入境时护照要剩 150 天。外交部另外建议入境时剩 6 个月。可凭身份证入境的国家公民不受此限。"
+note_zh_hant = "獲准停留 90 天的，入境時護照要剩 150 天。外交部另外建議入境時剩 6 個月。可憑身份證入境的國家公民不受此限。"
+source = "https://www.mfa.gov.tr/passport-validity-requirements-while-entering-turkey-in-accordance-with-law-on-foreigners-and-international-protection.en.mfa"
+quote = "foreigners wishing to enter Türkiye should carry a travel document (passport) with an expiration date at least 60 days beyond the “duration of stay” of their visa, e-Visa, visa exemption, or residence permit."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+applies_en = "Conditional e-Visa"
+applies_zh = "有条件电子签"
+applies_zh_hant = "有條件電子簽"
+note_en = "The conditional e-Visa is for some nationalities who hold a valid Schengen, US, UK or Irish visa or residence permit."
+note_zh = "有条件电子签面向持有效申根、美国、英国或爱尔兰签证或居留许可的部分国籍。"
+note_zh_hant = "有條件電子簽面向持有效申根、美國、英國或愛爾蘭簽證或居留許可的部分國籍。"
+source = "https://losangeles-bk.mfa.gov.tr/Mission/ShowInfoNote/411459"
+quote = "proving that s/he holds a return ticket"
+
+[[items]]
+topic = "funds"
+status = "amount"
+value_en = "USD 50 a day"
+value_zh = "每天 50 美元"
+value_zh_hant = "每天 50 美元"
+applies_en = "Conditional e-Visa"
+applies_zh = "有条件电子签"
+applies_zh_hant = "有條件電子簽"
+source = "https://losangeles-bk.mfa.gov.tr/Mission/ShowInfoNote/411459"
+quote = "at least 50 USD per each day of his/her stay"

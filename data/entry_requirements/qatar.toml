@@ -1,0 +1,28 @@
+# Qatar — passport and documents for a short visit.
+# Sources: Visit Qatar (Qatar Tourism) visa page and the Ministry of Interior
+# visit-visa page. An older MOI page for Pakistani visitors still says
+# 6 months and QAR 5,000; the current pages say 3 months. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "arrival"
+months = 3
+applies_en = "Visa-free entry"
+applies_zh = "免签入境"
+applies_zh_hant = "免簽入境"
+note_en = "Visa-free visitors also need a confirmed hotel booking on arrival."
+note_zh = "免签旅客入境时还要有确认的酒店预订。"
+note_zh_hant = "免簽旅客入境時還要有確認的酒店預訂。"
+source = "https://visitqatar.com/intl-en/plan-your-trip/visas"
+quote = "The visitor's passport must be valid for at least three months from the date of arrival in Qatar and must hold a confirmed hotel booking on arrival."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+note_en = "A confirmed return ticket, or a confirmed ticket to your next destination. The same page also requires health insurance from an insurer registered with Qatar's Ministry of Public Health."
+note_zh = "确认的回程票，或前往下一站的确认机票。同一页面还要求入境须有在卡塔尔公共卫生部注册的保险公司出具的健康保险。"
+note_zh_hant = "確認的回程票，或前往下一站的確認機票。同一頁面還要求入境須有在卡塔爾公共衛生部註冊的保險公司出具的健康保險。"
+source = "https://portal.moi.gov.qa/qatarvisas/"
+quote = "A valid passport with at least three months' validity and a confirmed ticket to continue the journey or a confirmed return ticket are mandatory for that, in addition to compulsory health insurance"

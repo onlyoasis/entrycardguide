@@ -1,0 +1,36 @@
+{{- /* "What the border checks besides the form" on a country hub page.
+       Renders only when data/entry_requirements/{country}.toml exists. Rows
+       come from entry-req-rows.html, so the card and the /entry-requirements/
+       table show the same rule. */ -}}
+{{- $country := .Section -}}
+{{- with index (where (partialCached "entry-req-rows.html" . site.Language.Lang) "key" $country) 0 -}}
+{{- $row := . -}}
+<section id="entry-requirements" class="pb-xl" aria-labelledby="entry-req-heading">
+  <div class="text-meta font-mono uppercase text-muted mb-2">{{ i18n "req_card_eyebrow" }}</div>
+  <h2 id="entry-req-heading" class="font-serif font-medium m-0 mb-lg" style="font-size: 32px; line-height: 1.1; letter-spacing: -0.015em; font-variation-settings: 'opsz' 144;">{{ i18n "req_card_heading" }}</h2>
+  <dl class="req-list border border-rule rounded-md">
+    {{- range $t := slice "validity" "blank_pages" "passport" "e_passport" "onward_ticket" "funds" }}
+    {{- $items := index $row.topics $t }}
+    {{- if or $items (in (slice "validity" "e_passport" "onward_ticket" "funds") $t) }}
+    <div class="req-list-row">
+      <dt>{{ i18n (printf "req_topic_%s" $t) }}</dt>
+      <dd>{{ partial "entry-req-items.html" (dict "items" $items "empty" (cond (eq $t "e_passport") "req_e_passport_none" "req_none") "notes" true) }}</dd>
+    </div>
+    {{- end }}
+    {{- end }}
+    {{- with $row.photo }}
+    <div class="req-list-row">
+      <dt>{{ i18n "req_topic_photo" }}</dt>
+      <dd>
+        {{- range . }}
+        <p class="req-value">{{ .form }} <span class="req-applies">· {{ .text }}</span></p>
+        {{- end }}
+        <a href="{{ printf "/%s/how-to-fill/#photo-uploads" $country | relLangURL }}" class="req-src">{{ i18n "req_photo_link" }}</a>
+      </dd>
+    </div>
+    {{- end }}
+  </dl>
+  <p class="text-xs text-muted m-0 mt-3">{{ i18n "req_label_checked" }} <span class="font-mono">{{ $row.checked }}</span> · {{ i18n "req_card_disclaimer" }}</p>
+  <p class="text-small mt-4 mb-0"><a href="{{ "/entry-requirements/" | relLangURL }}" class="text-ink underline underline-offset-4">{{ i18n "req_all_link" }}</a></p>
+</section>
+{{- end -}}

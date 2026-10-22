@@ -353,6 +353,54 @@
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   }
 
+  /* Passport and entry documents — entry-req-card.html, entry-requirements shortcode */
+  .req-list {
+    @apply m-0;
+  }
+  .req-list-row {
+    @apply grid gap-x-6 gap-y-2 px-6 py-5 border-t border-rule;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .req-list-row:first-child {
+    border-top: 0;
+  }
+  .req-list dt {
+    @apply text-meta font-mono uppercase text-muted pt-1;
+  }
+  .req-list dd {
+    @apply m-0;
+  }
+  @media (min-width: 640px) {
+    .req-list-row {
+      grid-template-columns: 11rem minmax(0, 1fr);
+    }
+  }
+  .req-item + .req-item {
+    @apply mt-3;
+  }
+  .req-value {
+    @apply m-0 font-medium text-ink;
+  }
+  .req-applies {
+    @apply font-normal text-muted;
+  }
+  .req-none {
+    @apply font-normal text-muted;
+  }
+  .req-note {
+    @apply m-0 mt-1 text-small text-ink;
+  }
+  .req-src {
+    @apply text-xs text-muted underline underline-offset-2;
+  }
+  .req-col-country { width: 11%; }
+  .req-col-validity { width: 21%; }
+  .req-col-epass { width: 14%; }
+  .req-col-ticket { width: 14%; }
+  .req-col-funds { width: 15%; }
+  .req-col-photo { width: 15%; }
+  .req-col-checked { width: 10%; }
+
   .directory-input {
     @apply w-full min-w-0 border border-rule rounded-sm bg-paper text-ink px-3 py-2;
     min-height: 2.75rem;

@@ -1,0 +1,15 @@
+# South Korea — passport and documents for a short visit.
+# Source: Embassy of the Republic of Korea in Singapore (MOFA), page dated
+# 2026-08-31. Checked 2026-10-23. The onward-ticket wording found so far is
+# generic and undated, so it is left out.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "stay"
+note_en = "Korea sets no minimum remaining validity."
+note_zh = "韩国不设最低剩余有效期。"
+note_zh_hant = "韓國不設最低剩餘有效期。"
+source = "https://www.mofa.go.kr/sg-en/brd/m_2435/view.do?seq=761395"
+quote = "There is no requirement on the passport's remainder validity for entry. You may travel to Korea as long as your passport remains valid throughout your stay in Korea."

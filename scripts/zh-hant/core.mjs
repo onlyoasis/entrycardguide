@@ -57,6 +57,9 @@ const PRE_SIMP = [
   [/网络/g, "網路"],
   [/数据库/g, "資料庫"],
   [/服务器/g, "伺服器"],
+  // Passport chip → 晶片 (Taiwan BOCA and HK write 晶片護照). 格式芯片 in the
+  // Philippine field intro means a UI tag, not a chip, and stays as it is.
+  [/(?<!格式)芯片/g, "晶片"],
   [/字段/g, "栏位"], // → 欄位
   [/信息/g, "資訊"],
   [/链接/g, "連結"],
