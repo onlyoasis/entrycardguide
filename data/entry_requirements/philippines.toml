@@ -1,6 +1,7 @@
 # Philippines — passport and documents for a short visit.
-# Sources: Philippine Embassy in Tokyo (DFA), visa-free entry page, and Bureau
-# of Immigration Operations Order SBM-2015-026. Checked 2026-10-23.
+# Sources: Philippine Embassy in Tokyo (DFA), visa-free entry page, Bureau of
+# Immigration Operations Order SBM-2015-026, and the DFA eVisa visa policy page
+# (a single-page app, read in a browser). Checked 2026-10-23.
 
 checked = "2026-10-23"
 
@@ -36,3 +37,24 @@ applies_zh = "免签入境"
 applies_zh_hant = "免簽入境"
 source = "https://tokyo.philembassy.net/consular-section/services/visa/visa-free-entry-for-temporary-visits/"
 quote = "valid tickets for their return journey"
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+applies_en = "Chinese nationals, 14-day visa-free entry (from 16 Jan 2026)"
+applies_zh = "中国公民 14 天免签（2026 年 1 月 16 日起）"
+applies_zh_hant = "中國公民 14 天免簽（2026 年 1 月 16 日起）"
+note_en = "You also need a confirmed hotel booking, and this visa-free entry only works at Manila (NAIA) and Mactan-Cebu airports."
+note_zh = "还要有已确认的酒店预订；这项免签只能从马尼拉 NAIA 机场和宿雾麦克坦机场入境。"
+note_zh_hant = "還要有已確認的酒店預訂；這項免簽只能從馬尼拉 NAIA 機場和宿霧麥克坦機場入境。"
+source = "https://evisa.gov.ph/page/policy"
+quote = "A return or onward ticket to the next country of destination."
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+applies_en = "Indian nationals, 14-day visa-free entry"
+applies_zh = "印度公民 14 天免签"
+applies_zh_hant = "印度公民 14 天免簽"
+source = "https://evisa.gov.ph/page/policy"
+quote = "confirmed hotel accommodation / booking, proof of financial capacity, and return or onward ticket to the next country of destination."

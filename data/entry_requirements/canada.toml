@@ -13,6 +13,21 @@ source = "https://www.canada.ca/en/immigration-refugees-citizenship/services/vis
 quote = "you can only stay in Canada for up to 6 months from the day you initially entered the country, or until your passport expires, whichever comes first."
 
 [[items]]
+topic = "validity"
+basis = "other"
+value_en = "Should be valid for at least 6 months from your travel date"
+value_zh = "从出行日起应至少还剩 6 个月"
+value_zh_hant = "從出行日起應至少還剩 6 個月"
+applies_en = "Visitor visa applicants"
+applies_zh = "申请访客签证的旅客"
+applies_zh_hant = "申請訪客簽證的旅客"
+note_en = "If you need a new passport, get it before you apply for the visa."
+note_zh = "要换护照的，先换好再申请签证。"
+note_zh_hant = "要換護照的，先換好再申請簽證。"
+source = "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa.html"
+quote = "Your passport or travel document should be valid for at least 6 months from the date you plan to travel."
+
+[[items]]
 topic = "funds"
 status = "sufficient"
 note_en = "The amount depends on how long you stay and whether you stay in a hotel or with friends or relatives."

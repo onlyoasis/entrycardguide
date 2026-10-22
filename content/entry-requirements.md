@@ -7,7 +7,7 @@ layout: tool
 eyebrow: "Reference · official sources"
 faq:
   - q: "How many months must my passport be valid to travel?"
-    a: "It depends on the country. Thailand, Malaysia, Indonesia, Taiwan and India ask for 6 months left on the day you arrive. The Philippines and the US count 6 months from the end of your stay, and both exempt many nationalities. New Zealand wants 3 months after you leave, Qatar 3 months on arrival. The UK, Japan, Korea, Canada, Mexico and Australia only need the passport to last for your stay."
+    a: "It depends on the country. Thailand, Malaysia, Indonesia, Taiwan and India ask for 6 months left on the day you arrive. The Philippines and the US count 6 months from the end of your stay, and both exempt many nationalities. New Zealand wants 3 months after you leave, Qatar 3 months on arrival. The UK, Japan, Korea, Canada, Mexico and Australia only need the passport to last for your stay, though Canada asks visitor visa applicants for 6 months from the travel date."
   - q: "Do I need an e-passport?"
     a: "Only for some routes. The US Visa Waiver Program (ESTA) requires one by law. Australia's ETA is applied for in an app that reads the passport chip. Japan gives visa-free entry to Thai, Malaysian, Brazilian, UAE and five other passports only if they are ICAO-standard e-passports, and Indonesians must register theirs first. The UK ETA app works without a chip."
   - q: "Do I need a return ticket to enter Thailand?"
@@ -35,7 +35,7 @@ The table counts in four ways. Use the dates on your ticket, not today's date.
 - **For your whole stay.** The UK, Japan, Korea, Canada, Mexico and Australia only need the passport to be valid until you leave.
 - **No start date given.** Singapore and the Dominican Republic say 6 months without saying from when. Count from the day you leave to be safe.
 
-Exceptions are common. A Philippine immigration order lets 41 visa-free nationalities enter with less than 6 months, and passport agreements exempt many countries from the US rule. Each country row says who an exception covers.
+Exceptions are common. A Philippine immigration order lets 41 visa-free nationalities enter with less than 6 months, and passport agreements exempt many countries from the US rule. Canada goes the other way for visitor visa applicants: their passport should be valid for 6 months from the travel date. Each country row says who an exception covers.
 
 ## E-passports
 
@@ -50,7 +50,7 @@ For the other destinations we found no chip rule. Their official pages ask for a
 
 ## Return ticket and money
 
-Most destinations in Asia ask for a ticket out. Thailand wants one leaving within 30 days of arrival. Malaysia, Indonesia, Taiwan, the Philippines, Qatar and the Dominican Republic require one, and Japan and Mexico say officers may ask for it. Australia says no return ticket is required, but officers still need to see that you can pay to leave.
+Most destinations in Asia ask for a ticket out. Thailand wants one leaving within 30 days of arrival. Malaysia, Indonesia, Taiwan, the Philippines, Qatar and the Dominican Republic require one, and Japan and Mexico say officers may ask for it. Australia says no return ticket is required, but officers still need to see that you can pay to leave. The Philippines' 14-day visa-free entry for Chinese nationals, in force since 16 January 2026, also needs a confirmed hotel booking and only works at Manila (NAIA) and Mactan-Cebu airports.
 
 Fixed amounts are rare. New Zealand asks for NZD 1,000 a month, or NZD 400 if your accommodation is paid. Thailand lists THB 20,000 per person. Most other countries ask for enough money for the stay and publish no number.
 
@@ -66,7 +66,7 @@ We read the immigration, foreign-ministry and embassy pages for each country and
 
 ### How many months must my passport be valid to travel?
 
-It depends on the country. Thailand, Malaysia, Indonesia, Taiwan and India ask for 6 months left on the day you arrive. The Philippines and the US count 6 months from the end of your stay, and both exempt many nationalities. New Zealand wants 3 months after you leave, Qatar 3 months on arrival. The UK, Japan, Korea, Canada, Mexico and Australia only need the passport to last for your stay.
+It depends on the country. Thailand, Malaysia, Indonesia, Taiwan and India ask for 6 months left on the day you arrive. The Philippines and the US count 6 months from the end of your stay, and both exempt many nationalities. New Zealand wants 3 months after you leave, Qatar 3 months on arrival. The UK, Japan, Korea, Canada, Mexico and Australia only need the passport to last for your stay, though Canada asks visitor visa applicants for 6 months from the travel date.
 
 ### Do I need an e-passport?
 
