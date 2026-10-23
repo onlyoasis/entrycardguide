@@ -1,25 +1,25 @@
 # Panama — official URLs
-# Last verified: 2026-08-30
+# Last verified: 2026-10-23
 
 [traveler_declaration]
 url = "https://declaraciondeviajero.ana.gob.pa/"
 name = "Panama Digital Sworn Traveler Declaration"
 agency = "Autoridad Nacional de Aduanas"
-last_verified = "2026-10-19"
+last_verified = "2026-10-23"
 notes = "Official Panama Customs portal for declaring goods and values when entering or leaving the country. The portal has Spanish and English interfaces."
 
 [customs_process]
 url = "https://tramites.ana.gob.pa/w_proceso/GestiondeDespacho.html"
 name = "Panama traveler declaration process"
 agency = "Autoridad Nacional de Aduanas"
-last_verified = "2026-10-19"
+last_verified = "2026-10-23"
 notes = "States that the declaration is free of charge, may be digital or manual, may cover one family group with a single declaration, and must be filed and presented within the published 72-hour window."
 
 [digital_resolution]
 url = "https://www.gacetaoficial.gob.pa/pdfTemp/30018_B/104423.pdf"
 name = "Resolution 079 adopting the digital sworn traveler declaration"
 agency = "Autoridad Nacional de Aduanas"
-last_verified = "2026-10-20"
+last_verified = "2026-10-23"
 notes = "Adopts the digital declaration portal and requires the traveller to present its QR response code."
 
 [meta]
