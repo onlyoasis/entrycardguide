@@ -52,7 +52,7 @@ How to read it:
 | Fetch failed | HTTP error, timeout or too little text, after the retry | Run it again later; if it keeps failing, open the page in a browser |
 | Manual review | Source is on the browser-only list in `scripts/helpers/entry-quotes.mjs` (curl gets 403, times out, or the page needs JavaScript) | Open it in a browser and look for the quote. Do not try to get past a captcha or bot check |
 
-On 2026-10-23 the full run gave 176 items: 149 found, 0 missing, 26 manual review (the 17 browser-only sources these files cite; `eta.dha.gov.za/faq` is listed for the South Africa ETA items that are not in this data yet), and 1 fetch failed (`mfa.gov.az` timed out from that machine; the research run read it on the same day). An earlier run that day also saw one-off 520, 503 and TLS errors on three other sources; the retry is there for those.
+On 2026-10-23 the full run gave 179 items: 149 found, 0 missing, 29 manual review (items citing the 18 browser-only sources) and 1 fetch failed (`mfa.gov.az` timed out from that machine; the research run read it on the same day). An earlier run that day also saw one-off 520, 503 and TLS errors on three other sources; the retry is there for those.
 
 When a quote is missing:
 
