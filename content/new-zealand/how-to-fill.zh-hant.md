@@ -7,7 +7,7 @@ country: "new-zealand"
 weight: 20
 keywords: ["新西蘭入境卡怎麼填", "NZTD 怎麼填", "NZTD 欄位", "新西蘭海關申報", "新西蘭入境卡中文版"]
 layout: how-to-fill
-lastmod: 2026-10-19
+lastmod: 2026-10-23
 ---
 
 {{< official-link site="new-zealand.nztd" >}}

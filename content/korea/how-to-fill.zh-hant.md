@@ -7,7 +7,7 @@ country: "korea"
 weight: 20
 keywords: ["韓國 e-Arrival Card 怎麼填", "韓國入境卡怎麼填", "韓國電子入境申報", "韓國入境卡地址怎麼填", "韓國入境卡修改"]
 layout: how-to-fill
-lastmod: 2026-10-19
+lastmod: 2026-10-23
 ---
 
 {{< official-link site="korea.earrivalcard" >}}

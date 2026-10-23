@@ -7,7 +7,7 @@ country: "peru"
 weight: 20
 keywords: ["秘魯 TAM Virtual 查詢", "下載秘魯 TAM", "秘魯出入境記錄欄位"]
 layout: how-to-fill
-lastmod: 2026-10-19
+lastmod: 2026-10-23
 ---
 
 {{< official-link site="peru.tam_virtual" >}}

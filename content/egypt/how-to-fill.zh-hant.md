@@ -7,7 +7,7 @@ country: "egypt"
 weight: 20
 keywords: ["埃及電子簽怎麼辦", "埃及簽證材料", "埃及電子簽申請", "visa2egypt.gov.eg"]
 layout: how-to-fill
-lastmod: 2026-10-19
+lastmod: 2026-10-23
 ---
 
 {{< official-link site="egypt.evisa" >}}

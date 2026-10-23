@@ -7,7 +7,7 @@ country: "aruba"
 weight: 20
 keywords: ["阿魯巴 ED Card 怎麼填", "阿魯巴 ED Card 欄位", "edcardaruba 表單"]
 layout: how-to-fill
-lastmod: 2026-10-19
+lastmod: 2026-10-23
 ---
 
 {{< official-link site="aruba.ed_card" >}}
