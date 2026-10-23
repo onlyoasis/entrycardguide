@@ -1,0 +1,34 @@
+# Kenya — passport and documents for a short visit.
+# Sources: Kenya eTA official site (etakenya.go.ke) and the Directorate of
+# Immigration Services pages on traveller obligations and arrival procedures.
+# Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "arrival"
+months = 6
+source = "https://etakenya.go.ke/form/apply/how-to-apply?type=tourist"
+quote = "Valid passport for at least six (6) months after your planned date of arrival into Kenya, with at least one blank page"
+
+[[items]]
+topic = "blank_pages"
+pages = 1
+source = "https://etakenya.go.ke/form/apply/how-to-apply?type=tourist"
+quote = "Valid passport for at least six (6) months after your planned date of arrival into Kenya, with at least one blank page"
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+source = "https://immigration.go.ke/travelers-obligations/"
+quote = "Possession of Valid Travel Documents, ETA, Entry Permit, return or onward ticket."
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+note_en = "The immigration officer can ask for evidence."
+note_zh = "边检可以要求出示证明。"
+note_zh_hant = "邊檢可以要求出示證明。"
+source = "https://immigration.go.ke/arrival-procedures-and-the-responsibility-of-travelers-on-arrival/"
+quote = "enough funds for sustenance for the duration of stay in Kenya"

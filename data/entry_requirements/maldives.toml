@@ -1,0 +1,40 @@
+# Maldives — passport and documents for a short visit.
+# Source: Maldives Immigration, tourist visa page (updated 10 September 2026).
+# Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "other"
+value_en = "At least 1 month"
+value_zh = "至少 1 个月"
+value_zh_hant = "至少 1 個月"
+note_en = "Maldives Immigration does not say which date to count from. To be safe, count from the day you leave."
+note_zh = "移民局没写从哪天算起，稳妥起见按离境那天算。"
+note_zh_hant = "移民局沒寫從哪天算起，穩妥起見按離境那天算。"
+source = "https://www.immigration.gov.mv/visa/tourist-visa"
+quote = "A passport or travel document with a Machine-Readable Zone (MRZ) and at least 1 month's validity."
+
+[[items]]
+topic = "passport"
+value_en = "Machine-readable, with an MRZ"
+value_zh = "须为机读护照（有机读区 MRZ）"
+value_zh_hant = "須為機讀護照（有機讀區 MRZ）"
+source = "https://www.immigration.gov.mv/visa/tourist-visa"
+quote = "A passport or travel document with a Machine-Readable Zone (MRZ) and at least 1 month's validity."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+note_en = "You also need a prepaid, confirmed booking at a registered place to stay. A sponsorship approved by Maldives Immigration can replace the ticket, the booking and the funds."
+note_zh = "还要有在登记住宿场所的已付款确认预订。持移民局批准的担保，可以代替机票、住宿预订和资金。"
+note_zh_hant = "還要有在登記住宿場所的已付款確認預訂。持移民局批准的擔保，可以代替機票、住宿預訂和資金。"
+source = "https://www.immigration.gov.mv/visa/tourist-visa"
+quote = "A complete travel itinerary, including confirmed return journey tickets, a prepaid confirmed booking at a registered facility, and sufficient funds to cover the stay in the Maldives, or hold a sponsorship approved by Maldives Immigration."
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+source = "https://www.immigration.gov.mv/visa/tourist-visa"
+quote = "A complete travel itinerary, including confirmed return journey tickets, a prepaid confirmed booking at a registered facility, and sufficient funds to cover the stay in the Maldives, or hold a sponsorship approved by Maldives Immigration."

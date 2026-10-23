@@ -1,0 +1,24 @@
+# Sri Lanka — passport and documents for a short visit.
+# Source: Department of Immigration and Emigration, ETA site (eta.gov.lk),
+# requirements at the port of entry. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "arrival"
+months = 6
+source = "https://www.eta.gov.lk/slvisa/visainfo/apply.jsp?locale=en_US"
+quote = "A passport valid for not less than 6 months from the date of arrival."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+source = "https://www.eta.gov.lk/slvisa/visainfo/apply.jsp?locale=en_US"
+quote = "A confirmed return ticket."
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+source = "https://www.eta.gov.lk/slvisa/visainfo/apply.jsp?locale=en_US"
+quote = "Sufficient funds to meet the expenses during the stay."

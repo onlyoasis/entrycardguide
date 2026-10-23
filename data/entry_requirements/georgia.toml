@@ -1,0 +1,48 @@
+# Georgia — passport and documents for a short visit.
+# Source: Ministry of Foreign Affairs e-Visa portal (evisa.gov.ge): FAQ, about
+# the visa and the application page. Most visitors enter visa-free, and no
+# separate passport rule is published for them. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "other"
+value_en = "Must outlast the visa by at least 3 months"
+value_zh = "护照有效期要比签证长至少 3 个月"
+value_zh_hant = "護照有效期要比簽證長至少 3 個月"
+applies_en = "e-Visa"
+applies_zh = "电子签"
+applies_zh_hant = "電子簽"
+source = "https://www.evisa.gov.ge/GeoVisa/en/Home/FAQ"
+quote = "Its validity shall extend at least for 3 months after the validity period of requested Georgian visa"
+
+[[items]]
+topic = "blank_pages"
+pages = 2
+applies_en = "e-Visa"
+applies_zh = "电子签"
+applies_zh_hant = "電子簽"
+source = "https://www.evisa.gov.ge/GeoVisa/en/Home/FAQ"
+quote = "not less then 2 free pages."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+applies_en = "e-Visa"
+applies_zh = "电子签"
+applies_zh_hant = "電子簽"
+source = "https://www.evisa.gov.ge/GeoVisa/en/VisaApp"
+quote = "Round flight ticket"
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+applies_en = "e-Visa"
+applies_zh = "电子签"
+applies_zh_hant = "電子簽"
+note_en = "For example, bank statements for the past three months, an employer's reference showing your income, or a sponsor's letter."
+note_zh = "可以用最近三个月的银行流水、写明职位和收入的雇主证明，或担保人信函。"
+note_zh_hant = "可以用最近三個月的銀行流水、寫明職位和收入的僱主證明，或擔保人信函。"
+source = "https://www.evisa.gov.ge/GeoVisa/en/Home/AboutVisa"
+quote = "Document proving sufficient financial means"

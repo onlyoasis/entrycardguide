@@ -37,7 +37,7 @@ npm run clean        # 清理 public/ 和 resources/
 - `data/official_urls/{country}.toml` — 官方 URL、机构名、`last_verified` 日期。`{{< official-link >}}` 从这里读。文件里仍保留 `[[scam_sites]]` 数组作为内部记录，但**站点不再渲染它**（2026-08-10 移除中介名单）。
 - `data/decision/tree.json` — `/decide/` 决策树状态机。被 `{{< decide >}}` shortcode 嵌入，`assets/js/decide.ts` 消费。
 - `data/changelog/{country}.toml` — 国家变更日志（`docs/maintenance/monthly-review.md` 描述了月度审查流程）。
-- `data/entry_requirements/{country}.toml`（可选，2026-10-23 起 20 个热门国家）— 护照与入境材料：护照有效期（`basis` arrival/departure/stay/application/permitted_stay + `months`/`days`；官方没写起算日用 `other` 并写 `value_*`）、空白页、其他护照条件、电子护照（芯片）、返程/续程票、资金证明。每条 `[[items]]` 必须有 https 官方 `source` 和原文 `quote`，只写原文明确写出的规则；没有条目的主题显示“未见官方规定”。`partials/entry-req-rows.html` 统一展开并在构建时校验，喂给国家枢纽页“护照与入境材料”卡和 `/entry-requirements/` 对照表；照片列取自 `data/photo_specs`。改后跑 `npm run sync:zh-hant`。
+- `data/entry_requirements/{country}.toml`（2026-10-23 起覆盖全部 53 个详细指南国；新国家可选）— 护照与入境材料：护照有效期（`basis` arrival/departure/stay/application/permitted_stay + `months`/`days`；官方没写起算日用 `other` 并写 `value_*`）、空白页、其他护照条件、电子护照（芯片）、返程/续程票、资金证明。每条 `[[items]]` 必须有 https 官方 `source` 和原文 `quote`，只写原文明确写出的规则；每个文件至少一条，有效期也可以没有（如巴林）；没有条目的主题显示“未见官方规定”。`partials/entry-req-rows.html` 统一展开并在构建时校验，喂给国家枢纽页“护照与入境材料”卡和 `/entry-requirements/` 对照表；照片列取自 `data/photo_specs`。改后跑 `npm run sync:zh-hant`。
 - `data/photo_specs/{country}.toml`（可选）— 照片与上传规则：每张表要人像还是护照页、上传/现场拍/可选、官方公布的尺寸·像素·文件上限·格式、来源与核对日期。`partials/photo-rows.html` 统一展开，喂给填写页“照片与上传”卡、`/photo-requirements/` 对照表和浏览器照片工具。**只写官方公布的数字**；`out_*` 是工具输出尺寸不是规则；`tool = false` 不进工具；`kind = "none"` 只用于有字段级证据的表。
 
 **改任何 URL、字段规则、决策状态时只改 data 文件，不要去翻 markdown。**

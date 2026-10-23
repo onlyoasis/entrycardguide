@@ -1,0 +1,33 @@
+# Laos — passport and documents for a short visit.
+# Source: Lao eVisa official site (laoevisa.gov.la), terms and FAQ.
+# Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "arrival"
+months = 6
+note_en = "The eVisa FAQ puts the same rule as more than 180 days from arrival."
+note_zh = "电子签 FAQ 的写法是入境日起超过 180 天。"
+note_zh_hant = "電子簽 FAQ 的寫法是入境日起超過 180 天。"
+source = "https://laoevisa.gov.la/term/"
+quote = "the passport should have minimum validity of 6 months from the date of arrival in Laos."
+
+[[items]]
+topic = "blank_pages"
+pages = 1
+note_en = "For the entry sticker and stamps, with room left for stamps on your way home."
+note_zh = "用来贴入境许可贴纸和盖章，还要给回程留出盖章位置。"
+note_zh_hant = "用來貼入境許可貼紙和蓋章，還要給回程留出蓋章位置。"
+source = "https://laoevisa.gov.la/term/"
+quote = "The passport should have at least 1 blank page for the Entry Permission Sticker and for stamping by the Immigration Officer and sufficient space for your return trip to your country."
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+note_en = "Not having enough money for the stay is listed as a reason to refuse entry."
+note_zh = "钱不够停留期间花费，会被列为拒绝入境的理由。"
+note_zh_hant = "錢不夠停留期間花費，會被列為拒絕入境的理由。"
+source = "https://laoevisa.gov.la/term/"
+quote = "Evidence of a lack of sufficient funds to cover expense during the stay in Laos."

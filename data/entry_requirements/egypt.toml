@@ -1,0 +1,13 @@
+# Egypt — passport and documents for a short visit.
+# Source: Egypt e-Visa portal FAQ (Ministry of Interior). The Egyptian embassy
+# in Washington gives the same 6 months for visas on arrival.
+# Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "arrival"
+months = 6
+source = "https://www.visa2egypt.gov.eg/eVisa/FAQ"
+quote = "Passport valid for at least 6 months from arrival date."

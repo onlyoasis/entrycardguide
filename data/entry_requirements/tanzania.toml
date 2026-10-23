@@ -1,0 +1,40 @@
+# Tanzania — passport and documents for a short visit.
+# Sources: Immigration Department online visa guidelines
+# (visa.immigration.go.tz) and the government business portal
+# (business.go.tz). Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "application"
+months = 6
+applies_en = "Visa applicants"
+applies_zh = "申请签证的旅客"
+applies_zh_hant = "申請簽證的旅客"
+source = "https://visa.immigration.go.tz/guidelines"
+quote = "Visa applicants must ensure that, their passports have a validity of at least six months and at least one unused visa page before submitting their application."
+
+[[items]]
+topic = "blank_pages"
+pages = 1
+applies_en = "Visa applicants"
+applies_zh = "申请签证的旅客"
+applies_zh_hant = "申請簽證的旅客"
+source = "https://visa.immigration.go.tz/guidelines"
+quote = "Visa applicants must ensure that, their passports have a validity of at least six months and at least one unused visa page before submitting their application."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+note_en = "Show it at the entry point when you arrive."
+note_zh = "抵达入境口岸时要出示。"
+note_zh_hant = "抵達入境口岸時要出示。"
+source = "https://visa.immigration.go.tz/guidelines"
+quote = "Visitors MUST show their Return Ticket upon arrival (at the entry point) in Tanzania;"
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+source = "https://business.go.tz/immigration-and-visa-advisory"
+quote = "sufficient funds for subsistence while in the United Republic of Tanzania"

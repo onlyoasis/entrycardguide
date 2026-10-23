@@ -1,0 +1,26 @@
+# Barbados — passport and documents for a short visit.
+# Source: Barbados Immigration Department, visitor requirements.
+# Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "stay"
+source = "https://immigration.gov.bb/pages/visitor.aspx"
+quote = "Passport valid for duration of your trip."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+note_en = "A ticket back to your country of residence."
+note_zh = "要有回居住国的机票。"
+note_zh_hant = "要有回居住國的機票。"
+source = "https://immigration.gov.bb/pages/visitor.aspx"
+quote = "Return ticket to country of residence."
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+source = "https://immigration.gov.bb/pages/visitor.aspx"
+quote = "Evidence of personal support."

@@ -1,0 +1,26 @@
+# Jamaica — passport and documents for a short visit.
+# Source: Consulate General of Jamaica in New York, requirements for entry
+# into Jamaica. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "stay"
+source = "https://congenjamaica-ny.org/requirements-for-entry-into-jamaica/"
+quote = "The passport or other travel document must be valid for the period of intended stay in the island."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+note_en = "The ticket must take you to a country you are allowed to enter."
+note_zh = "机票目的地须是你能合法入境的国家。"
+note_zh_hant = "機票目的地須是你能合法入境的國家。"
+source = "https://congenjamaica-ny.org/requirements-for-entry-into-jamaica/"
+quote = "be in possession of a return or round-trip ticket to another country to which they are admissible."
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+source = "https://congenjamaica-ny.org/requirements-for-entry-into-jamaica/"
+quote = "Visitors are also required to show evidence of sufficient funds to support themselves during their stay"
