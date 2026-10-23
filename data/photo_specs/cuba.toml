@@ -1,0 +1,40 @@
+# Cuba — D'Viajeros and the separate e-Visa: no photo or passport image upload.
+# D'Viajeros, checked 2026-10-23: the official brochure
+# (dviajeros.mitrans.gob.cu/assets/pdf/BeneficiosDViajeros.pdf) groups the form
+# into traveller, immigration, customs and health information. The app's only
+# script bundle (main.45221f5cee8ce1662704.js, 1.37 MB, no lazy-loaded chunks)
+# has no file input, FileReader or camera code, and the personal-details page
+# has no file input.
+# e-Visa, checked 2026-10-23 in the official Visa Portal User's Manual
+# (evisacuba.cu/doc/en/info.pdf), pages 5–7: step 1 asks for nationality,
+# passport number, names, date of birth, email, sex and an optional phone
+# number; steps 2–4 add applicants, confirm the payment method and show the
+# summary before the captcha and SEND. The manual has no photo or upload step.
+# The portal's interface strings (evisacuba.cu/app.d4b6d56d96eac9b0.yssr.js)
+# list "Valid passport" and "A valid email" as what you need; its only file
+# upload is the payment receipt: "Upload an image file (format: jpg, png) of
+# the payment receipt, with good visibility and no larger than 512 Kb".
+
+[[forms]]
+form = "dviajeros"
+label_en = "D'Viajeros"
+label_zh = "D'Viajeros 旅客信息表"
+label_zh_hant = "D'Viajeros 旅客資訊表"
+checked = "2026-10-23"
+
+[[forms.items]]
+kind = "none"
+
+[[forms]]
+form = "evisa"
+label_en = "e-Visa (separate)"
+label_zh = "电子签证（另办）"
+label_zh_hant = "電子簽證（另辦）"
+source = "https://evisacuba.cu/doc/en/info.pdf"
+checked = "2026-10-23"
+
+[[forms.items]]
+kind = "none"
+note_en = "The only file it asks for is an image of your payment receipt (JPG or PNG, up to 512 KB), not a photo of you or your passport."
+note_zh = "唯一要上传的是付款凭证图片（JPG 或 PNG，不超过 512 KB），不是人像或护照照片。"
+note_zh_hant = "唯一要上傳的是付款憑證圖片（JPG 或 PNG，不超過 512 KB），不是人像或護照照片。"

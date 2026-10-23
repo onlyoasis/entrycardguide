@@ -1,0 +1,29 @@
+# The Bahamas — Exempt C17 customs declaration: passport scan.
+# Checked 2026-10-23. The Exempt app page (exempt.gov.bs): "In order to submit
+# forms to Customs, you must complete your user profile by scanning your
+# Passport Information." The web version on the same official domain
+# (exempt.gov.bs/bahamas-arrival) shows "Upload Passport (Optional Autofill)"
+# for the main traveller and each companion. No size, file limit or format is
+# published for either.
+
+[[forms]]
+form = "c17"
+label_en = "C17 customs declaration"
+label_zh = "C17 海关申报"
+label_zh_hant = "C17 海關申報"
+source = "https://exempt.gov.bs/"
+checked = "2026-10-23"
+
+[[forms.items]]
+kind = "passport"
+capture = "live"
+note_en = "In the Exempt app you scan your passport to complete your profile before you can submit the C17. No size or file rule is published."
+note_zh = "用 Exempt App 提交 C17 前，要先扫描护照完善个人资料。官方没有公布尺寸或文件要求。"
+note_zh_hant = "用 Exempt App 提交 C17 前，要先掃描護照完善個人資料。官方沒有公佈尺寸或文件要求。"
+
+[[forms.items]]
+kind = "passport"
+capture = "optional"
+note_en = "On the website version the passport upload is optional and only fills in your details."
+note_zh = "网页版的护照上传可以不传，只用来自动填写资料。"
+note_zh_hant = "網頁版的護照上傳可以不傳，只用來自動填寫資料。"

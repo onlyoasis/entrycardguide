@@ -39,7 +39,7 @@ Countries count in six ways. Use the dates on your ticket, not today's date.
 - **Against the visa.** Vietnam wants the passport to expire at least 30 days after the visa. Georgia, Azerbaijan and Uzbekistan want it to outlast the visa by at least 3 months.
 - **No start date given.** Singapore, the Dominican Republic, Jordan, Oman, Pakistan and Nigeria say 6 months, Panama 3 months and the Maldives 1 month, without saying from when. China asks visa applicants for 6 months and 240-hour transit passengers for 3 months, also with no start date. Count from the day you leave to be safe.
 
-Exceptions are common. A Philippine immigration order lets 41 visa-free nationalities enter with less than 6 months, and passport agreements exempt many countries from the US rule. Canada goes the other way for visitor visa applicants: their passport should be valid for 6 months from the travel date. Each country row says who an exception covers.
+Exceptions are common. A Philippine immigration order lets 41 visa-free nationalities enter with less than 6 months, and passport agreements exempt many countries from the US rule. Canada goes the other way for visitor visa applicants: their passport should be valid for 6 months from the travel date. South Africa's new ETA asks for 7 months from the travel date. Each country row says who an exception covers.
 
 ## E-passports
 
@@ -56,7 +56,7 @@ For the other destinations we found no chip rule. Their official pages ask for a
 
 ## Return ticket and money
 
-Most destinations ask for a ticket out. Thailand wants one leaving within 30 days of arrival. Malaysia, Indonesia, Sri Lanka, the Maldives, Qatar, Kenya, Tanzania, Cuba, Panama, Peru, Colombia and most of the Caribbean require one, and so do Taiwan, the Philippines and Oman on their visa-free routes. Japan, Mexico and Brazil say officers may ask for it, and so does Morocco for eVisa holders. China advises visa-free visitors to carry their air tickets and hotel bookings. Australia says no return ticket is required, but officers still need to see that you can pay to leave. The Philippines' 14-day visa-free entry for Chinese nationals, in force since 16 January 2026, also needs a confirmed hotel booking and only works at Manila (NAIA) and Mactan-Cebu airports.
+Most destinations ask for a ticket out. Thailand wants one leaving within 30 days of arrival. Malaysia, Indonesia, Sri Lanka, the Maldives, Qatar, Kenya, Tanzania, Cuba, Panama, Peru, Colombia and most of the Caribbean require one, and so do Taiwan, the Philippines and Oman on their visa-free routes. Japan, Mexico and Brazil say officers may ask for it, and so do Morocco for eVisa holders and South Africa for ETA holders. China advises visa-free visitors to carry their air tickets and hotel bookings. Australia says no return ticket is required, but officers still need to see that you can pay to leave. The Philippines' 14-day visa-free entry for Chinese nationals, in force since 16 January 2026, also needs a confirmed hotel booking and only works at Manila (NAIA) and Mactan-Cebu airports.
 
 Some countries publish an amount. New Zealand asks for NZD 1,000 a month, or NZD 400 if your accommodation is paid. Thailand lists THB 20,000 per person, Panama at least PAB 500, and Aruba and Curaçao USD 150–200 a day in a hotel. Morocco's eVisa asks for an international bank card or more than EUR 70 in cash a day. Colombia's tourist visa needs a monthly income of at least 10 minimum wages. Most other countries ask for enough money for the stay and publish no number.
 
