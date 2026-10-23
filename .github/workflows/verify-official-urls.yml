@@ -15,6 +15,44 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Report only. Runs beside the date-refresh job and never feeds its commit
+  # or deploy steps; a failure here does not block anything.
+  entry-quotes:
+    name: Check entry requirement quotes
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install pdftotext
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends poppler-utils
+
+      - name: Check quotes against their sources
+        run: npm run check:entry-quotes -- --out entry-quotes-report
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: entry-quotes-report
+          path: entry-quotes-report/
+          retention-days: 90
+          if-no-files-found: warn
+
   verify:
     name: Verify official URLs and refresh dates
     if: github.ref == 'refs/heads/main'
