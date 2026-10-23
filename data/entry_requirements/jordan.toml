@@ -1,0 +1,21 @@
+# Jordan — passport and documents for a short visit.
+# Source: Jordan Gate, the government portal (jordan.gov.jo), travel visas
+# page. Embassy checklists differ from mission to mission and are not used.
+# Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "other"
+value_en = "At least 6 months"
+value_zh = "至少 6 个月"
+value_zh_hant = "至少 6 個月"
+applies_en = "Tourist visa, on arrival or e-visa"
+applies_zh = "旅游签证（落地签或电子签）"
+applies_zh_hant = "旅遊簽證（落地簽或電子簽）"
+note_en = "The portal does not say which date to count from. To be safe, count from the day you leave. It also lists a flight itinerary and hotel reservation details among the documents."
+note_zh = "门户没写从哪天算起，稳妥起见按离境那天算。所需材料里还列了航班行程和酒店预订信息。"
+note_zh_hant = "門戶沒寫從哪天算起，穩妥起見按離境那天算。所需材料裡還列了航班行程和酒店預訂資訊。"
+source = "https://jordan.gov.jo/EN/Pages/Travel_Visas"
+quote = "Required Documents Passport with a minimum validity of six months. Passport-sized photo. Flight itinerary. Hotel reservation details."

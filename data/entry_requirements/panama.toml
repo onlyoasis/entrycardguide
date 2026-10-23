@@ -1,0 +1,38 @@
+# Panama — passport and documents for a short visit.
+# Source: National Migration Service (migracion.gob.pa), FAQ "Requisitos para
+# ingresar al país". Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "other"
+value_en = "At least 3 months"
+value_zh = "至少 3 个月"
+value_zh_hant = "至少 3 個月"
+note_en = "The Migration Service does not say which date to count from. To be safe, count from the day you leave."
+note_zh = "移民局没写从哪天算起，稳妥起见按离境那天算。"
+note_zh_hant = "移民局沒寫從哪天算起，穩妥起見按離境那天算。"
+source = "https://www.migracion.gob.pa/preguntas-frecuentes"
+quote = "A-. Presentar pasaporte o documento de viaje original, con un mínimo de 3 meses de vigencia."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+note_en = "A confirmed booking to leave within the stay you are allowed."
+note_zh = "要有在获准停留期内离境的确认预订。"
+note_zh_hant = "要有在獲准停留期內離境的確認預訂。"
+source = "https://www.migracion.gob.pa/preguntas-frecuentes"
+quote = "C-. Reserva comprobada de salida del país, dentro del periodo establecido."
+
+[[items]]
+topic = "funds"
+status = "amount"
+value_en = "At least PAB 500 (USD 500), in line with how long you stay"
+value_zh = "至少 500 巴波亚（等同 500 美元），并与停留时间相称"
+value_zh_hant = "至少 500 巴波亞（等同 500 美元），並與停留時間相稱"
+note_en = "Children under 18 do not need to show funds."
+note_zh = "未满 18 岁的儿童不用出示资金证明。"
+note_zh_hant = "未滿 18 歲的兒童不用出示資金證明。"
+source = "https://www.migracion.gob.pa/preguntas-frecuentes"
+quote = "en ningún caso podrá ser inferior a quinientos balboas (B/.500.00)."

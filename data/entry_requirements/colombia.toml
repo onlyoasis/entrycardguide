@@ -1,0 +1,57 @@
+# Colombia — passport and documents for a short visit.
+# Sources: Migración Colombia, entry and exit requirements, and the Ministry of
+# Foreign Affairs (Cancillería) visa pages. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "other"
+value_en = "Valid and in date, no minimum period stated"
+value_zh = "有效、未过期即可，没写最低剩余期限"
+value_zh_hant = "有效、未過期即可，沒寫最低剩餘期限"
+applies_en = "Entry without a visa"
+applies_zh = "免签入境"
+applies_zh_hant = "免簽入境"
+source = "https://portal.migracioncolombia.gov.co/tramites-y-servicios/instructivos/requisitos-de-entrada-y-salida-del-pais"
+quote = "Un(a) nacional extranjero(a) podrá presentar alguno de los siguientes documentos: Pasaporte válido y vigente."
+
+[[items]]
+topic = "validity"
+basis = "application"
+months = 6
+applies_en = "Visa applicants"
+applies_zh = "申请签证的旅客"
+applies_zh_hant = "申請簽證的旅客"
+source = "https://cancilleria.gov.co/node/18628"
+quote = "con vigencia mínima de seis (6) meses al momento de la solicitud de la visa"
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+note_en = "Migración Colombia lists an exit ticket and proof of funds \"as applicable\"."
+note_zh = "移民局写的是“视情况”需要离境机票和资金证明。"
+note_zh_hant = "移民局寫的是“視情況”需要離境機票和資金證明。"
+source = "https://portal.migracioncolombia.gov.co/tramites-y-servicios/instructivos/requisitos-de-entrada-y-salida-del-pais"
+quote = "Los documentos anteriores, deben estar acompañados de Visa, si la nacionalidad o actividad a desarrollar lo requiere, tiquete de viaje de salida y demostrar solvencia económica, según corresponda."
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+source = "https://portal.migracioncolombia.gov.co/tramites-y-servicios/instructivos/requisitos-de-entrada-y-salida-del-pais"
+quote = "Los documentos anteriores, deben estar acompañados de Visa, si la nacionalidad o actividad a desarrollar lo requiere, tiquete de viaje de salida y demostrar solvencia económica, según corresponda."
+
+[[items]]
+topic = "funds"
+status = "amount"
+value_en = "Monthly income of at least 10 Colombian minimum wages"
+value_zh = "月收入不低于 10 倍哥伦比亚法定月最低工资"
+value_zh_hant = "月收入不低於 10 倍哥倫比亞法定月最低工資"
+applies_en = "Tourist visitor visa (V) applicants"
+applies_zh = "申请旅游访客签证（V）的旅客"
+applies_zh_hant = "申請旅遊訪客簽證（V）的旅客"
+note_en = "Shown with bank statements for the last 6 months, yours or those of the person inviting you."
+note_zh = "用最近 6 个月的银行流水证明，可以是本人或邀请人的。"
+note_zh_hant = "用最近 6 個月的銀行流水證明，可以是本人或邀請人的。"
+source = "https://www.cancilleria.gov.co/atencion-y-servicio-al-ciudadano/tramites-y-servicios/visa/necesito-un-visa"
+quote = "ingresos mensuales no inferiores a diez (10) salarios mínimos legales mensuales vigentes (SMLMV)."

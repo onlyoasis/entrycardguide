@@ -13,7 +13,8 @@
          e_passport     status required | not_required
          onward_ticket  status required | may_be_asked | not_required
          funds          status amount (value_* is the amount) | sufficient
-       Every item needs an https source and the quoted official wording. */ -}}
+       Every item needs an https source and the quoted official wording. A topic
+       with no item, validity included, shows "No official rule found". */ -}}
 {{- $lang := site.Language.Lang -}}
 {{- $suffix := "en" }}{{ $nameKey := "en" -}}
 {{- if eq $lang "zh" }}{{ $suffix = "zh" }}{{ $nameKey = "zh" -}}
@@ -63,7 +64,7 @@
         "checked" ($i.checked | default $file.checked) -}}
       {{- $topics = merge $topics (dict $i.topic ((index $topics $i.topic | default slice) | append $item)) -}}
     {{- end -}}
-    {{- if not (index $topics "validity") }}{{ errorf "data/entry_requirements/%s.toml: needs a validity item" $c.key }}{{ end -}}
+    {{- if not $file.items }}{{ errorf "data/entry_requirements/%s.toml: needs at least one item" $c.key }}{{ end -}}
     {{- /* Photo: one line per form in data/photo_specs, e.g. "Face photo (upload)". */ -}}
     {{- $photo := slice -}}
     {{- $mine := where $photoRows "key" $c.key -}}

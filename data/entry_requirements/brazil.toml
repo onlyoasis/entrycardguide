@@ -1,0 +1,82 @@
+# Brazil — passport and documents for a short visit.
+# Sources: Decree 9.199/2017, art. 170 (consolidated text, Chamber of
+# Deputies), and Ministry of Foreign Affairs pages on gov.br: the
+# Consulate-General in San Francisco (e-Visa) and the Embassy in Beijing
+# (visa rules for Chinese nationals). Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "other"
+value_en = "Valid ordinary passport, no minimum period stated"
+value_zh = "有效的普通护照即可，没写最低剩余期限"
+value_zh_hant = "有效的普通護照即可，沒寫最低剩餘期限"
+applies_en = "Chinese nationals, visa-free from 11 May 2026 (up to 30 days)"
+applies_zh = "中国公民免签（2026 年 5 月 11 日起，最多 30 天）"
+applies_zh_hant = "中國公民免簽（2026 年 5 月 11 日起，最多 30 天）"
+source = "https://www.gov.br/mre/pt-br/embaixada-pequim/setor-consular-2/novas-regras-de-visto-para-nacionais-chineses-4e2d56fd516c6c118d745df47b7e8bc165b089c4"
+quote = "cidadãos chineses portadores de passaporte comum válido, emitido pela República Popular da China, poderão ingressar no território nacional para visitas de curta duração, sem necessidade de visto."
+
+[[items]]
+topic = "validity"
+basis = "stay"
+applies_en = "e-Visa (US, Canadian and Australian passports)"
+applies_zh = "电子签（美国、加拿大、澳大利亚护照）"
+applies_zh_hant = "電子簽（美國、加拿大、澳大利亞護照）"
+source = "https://www.gov.br/mre/pt-br/consulado-sao-francisco/electronic-visitor-visa-e-visa"
+quote = "Valid Passport (signed, valid throughout the entire length of the trip to Brazil, with 2 free visa pages)"
+
+[[items]]
+topic = "blank_pages"
+pages = 2
+applies_en = "e-Visa (US, Canadian and Australian passports)"
+applies_zh = "电子签（美国、加拿大、澳大利亚护照）"
+applies_zh_hant = "電子簽（美國、加拿大、澳大利亞護照）"
+source = "https://www.gov.br/mre/pt-br/consulado-sao-francisco/electronic-visitor-visa-e-visa"
+quote = "Valid Passport (signed, valid throughout the entire length of the trip to Brazil, with 2 free visa pages)"
+
+[[items]]
+topic = "onward_ticket"
+status = "may_be_asked"
+note_en = "Border officers can ask for proof of how you will leave Brazil."
+note_zh = "边检可以要求出示离开巴西的交通凭证。"
+note_zh_hant = "邊檢可以要求出示離開巴西的交通憑證。"
+source = "https://www2.camara.leg.br/legin/fed/decret/2017/decreto-9199-20-novembro-2017-785772-normaatualizada-pe.pdf"
+quote = "Na fiscalização de entrada, poderão ser exigidos: I - comprovante de meio de transporte de saída do território nacional;"
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+applies_en = "e-Visa (US, Canadian and Australian passports)"
+applies_zh = "电子签（美国、加拿大、澳大利亚护照）"
+applies_zh_hant = "電子簽（美國、加拿大、澳大利亞護照）"
+note_en = "Upload a flight booking that shows entry into and exit from Brazil."
+note_zh = "申请时上传显示出入境航班的机票预订。"
+note_zh_hant = "申請時上傳顯示出入境航班的機票預訂。"
+source = "https://www.gov.br/mre/pt-br/consulado-sao-francisco/electronic-visitor-visa-e-visa"
+quote = "Confirmation of flight reservation (showing entrance into, and exit from, Brazil)"
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+note_en = "Border officers can ask for proof of means to support yourself for the length and purpose of the trip."
+note_zh = "边检可以要求出示与停留期限和目的相称的生活费证明。"
+note_zh_hant = "邊檢可以要求出示與停留期限和目的相稱的生活費證明。"
+source = "https://www2.camara.leg.br/legin/fed/decret/2017/decreto-9199-20-novembro-2017-785772-normaatualizada-pe.pdf"
+quote = "II - comprovante de meios de subsistência compatíveis com o prazo e com o objetivo da viagem pretendida;"
+
+[[items]]
+topic = "funds"
+status = "amount"
+value_en = "Bank statement showing at least USD 2,000 for the trip"
+value_zh = "银行流水显示至少 2,000 美元旅费"
+value_zh_hant = "銀行流水顯示至少 2,000 美元旅費"
+applies_en = "e-Visa (US, Canadian and Australian passports)"
+applies_zh = "电子签（美国、加拿大、澳大利亚护照）"
+applies_zh_hant = "電子簽（美國、加拿大、澳大利亞護照）"
+note_en = "The statement must cover the last 30 days."
+note_zh = "流水要覆盖最近 30 天。"
+note_zh_hant = "流水要覆蓋最近 30 天。"
+source = "https://www.gov.br/mre/pt-br/consulado-sao-francisco/electronic-visitor-visa-e-visa"
+quote = "Printed bank statement showing transactions for the last 30 days and showing at least US$ 2,000.00 for travel."

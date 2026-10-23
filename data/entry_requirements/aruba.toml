@@ -1,0 +1,72 @@
+# Aruba — passport and documents for a short visit.
+# Sources: Aruba Tourism Authority immigration pages (aruba.com, US and UK
+# editions) and Netherlands Worldwide, which handles the Caribbean visa for the
+# Kingdom's Caribbean parts. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "stay"
+applies_en = "Visa-free visitors"
+applies_zh = "免签旅客"
+applies_zh_hant = "免簽旅客"
+source = "https://www.aruba.com/us/plan-your-visit/getting-to-aruba/immigration-regulations"
+quote = "Your passport must be valid for the whole of your stay."
+
+[[items]]
+topic = "validity"
+basis = "departure"
+months = 3
+applies_en = "Caribbean visa applicants"
+applies_zh = "申请加勒比签证的旅客"
+applies_zh_hant = "申請加勒比簽證的旅客"
+note_en = "Chinese and Indian nationals with a valid multiple-entry US or Canadian visa (not an ESTA) do not need this visa."
+note_zh = "中国、印度公民持有效的美国或加拿大多次入境签证（不含 ESTA），不用办这个签证。"
+note_zh_hant = "中國、印度公民持有效的美國或加拿大多次入境簽證（不含 ESTA），不用辦這個簽證。"
+source = "https://www.netherlandsworldwide.nl/caribbean-visa/checklist/tourism"
+quote = "it must be valid for at least 3 months after you leave the Caribbean parts of the Kingdom"
+
+[[items]]
+topic = "blank_pages"
+pages = 2
+applies_en = "Caribbean visa applicants"
+applies_zh = "申请加勒比签证的旅客"
+applies_zh_hant = "申請加勒比簽證的旅客"
+source = "https://www.netherlandsworldwide.nl/caribbean-visa/checklist/tourism"
+quote = "it must have at least 2 empty visa pages"
+
+[[items]]
+topic = "passport"
+value_en = "Issued no more than 10 years ago"
+value_zh = "签发不超过 10 年"
+value_zh_hant = "簽發不超過 10 年"
+source = "https://www.aruba.com/us/plan-your-visit/getting-to-aruba/immigration-regulations"
+quote = "Your passport must not be more than 10 years old."
+
+[[items]]
+topic = "e_passport"
+status = "required"
+applies_en = "Ukrainian nationals, visa-free entry"
+applies_zh = "乌克兰公民免签入境"
+applies_zh_hant = "烏克蘭公民免簽入境"
+source = "https://www.netherlandsworldwide.nl/caribbean-visa/visa-needed-caribbean"
+quote = "Ukraine: You do not need a visa if you have a biometric passport."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+source = "https://www.aruba.com/uk/plan-your-visit-today/getting-to-aruba/immigration-regulations"
+quote = "A valid return- or onward ticket"
+
+[[items]]
+topic = "funds"
+status = "amount"
+value_en = "USD 150–200 per person per day in a hotel, USD 100 staying with family"
+value_zh = "住酒店每人每天 150–200 美元，住亲友家每人每天 100 美元"
+value_zh_hant = "住酒店每人每天 150–200 美元，住親友家每人每天 100 美元"
+note_en = "A sponsor who takes on the costs also works."
+note_zh = "有担保人承担费用也可以。"
+note_zh_hant = "有擔保人承擔費用也可以。"
+source = "https://www.aruba.com/us/plan-your-visit/getting-to-aruba/immigration-regulations"
+quote = "between 150 and 200 US dollars per person per day"

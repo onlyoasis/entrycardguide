@@ -1,0 +1,19 @@
+# Nepal — passport and documents for a short visit.
+# Source: Department of Immigration, eVisa/ETA page (immigration.gov.np). The
+# visa-on-arrival document list only asks for a valid ordinary passport.
+# Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "application"
+months = 6
+applies_en = "eVisa applied for online"
+applies_zh = "在线申请的电子签"
+applies_zh_hant = "線上申請的電子簽"
+note_en = "The visa-on-arrival document list only asks for a valid ordinary passport and gives no number of months."
+note_zh = "落地签材料清单上写的是有效的普通护照，没写要剩几个月。"
+note_zh_hant = "落地簽材料清單上寫的是有效的普通護照，沒寫要剩幾個月。"
+source = "https://immigration.gov.np/eta-visa-nepal"
+quote = "Upload a scanned passport copy (valid ≥6 months) and a recent passport photo with white background."

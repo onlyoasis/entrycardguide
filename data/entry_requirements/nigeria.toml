@@ -1,0 +1,55 @@
+# Nigeria — passport and documents for a short visit.
+# Sources: Nigeria Immigration Service visa page (immigration.gov.ng) and the
+# NIS Service Level Agreement 2025, F5A Tourism Visa (PDF, page 11; its text
+# layer scrambles the table, so the page was read as an image).
+# Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "other"
+value_en = "At least 6 months"
+value_zh = "至少 6 个月"
+value_zh_hant = "至少 6 個月"
+applies_en = "Tourism visa"
+applies_zh = "旅游签证"
+applies_zh_hant = "旅遊簽證"
+note_en = "The e-Visa form checks this on the day you submit the application."
+note_zh = "电子签申请表按提交申请当天检查。"
+note_zh_hant = "電子簽申請表按提交申請當天檢查。"
+source = "https://immigration.gov.ng/wp-content/uploads/2025/10/SERVICE_LEVEL_AGREEMENT_2025_.pdf"
+quote = "Valid passport (not less than 6 months validity with at least 2 blank visa pages)."
+
+[[items]]
+topic = "blank_pages"
+pages = 2
+applies_en = "Tourism visa"
+applies_zh = "旅游签证"
+applies_zh_hant = "旅遊簽證"
+source = "https://immigration.gov.ng/wp-content/uploads/2025/10/SERVICE_LEVEL_AGREEMENT_2025_.pdf"
+quote = "Valid passport (not less than 6 months validity with at least 2 blank visa pages)."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+applies_en = "Tourism visa"
+applies_zh = "旅游签证"
+applies_zh_hant = "旅遊簽證"
+note_en = "You also need proof of accommodation."
+note_zh = "还要有住宿证明。"
+note_zh_hant = "還要有住宿證明。"
+source = "https://immigration.gov.ng/nigerian-visa/"
+quote = "Applicants must have a valid passport, return ticket, evidence of accommodation and bank statement to show sufficient funds."
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+applies_en = "Tourism visa"
+applies_zh = "旅游签证"
+applies_zh_hant = "旅遊簽證"
+note_en = "The Service Level Agreement asks for 180 days of bank statements."
+note_zh = "服务标准写明要 180 天的银行流水。"
+note_zh_hant = "服務標準寫明要 180 天的銀行流水。"
+source = "https://immigration.gov.ng/nigerian-visa/"
+quote = "Applicants must have a valid passport, return ticket, evidence of accommodation and bank statement to show sufficient funds."

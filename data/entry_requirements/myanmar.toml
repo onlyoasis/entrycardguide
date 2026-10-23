@@ -1,0 +1,41 @@
+# Myanmar — passport and documents for a short visit.
+# Sources: Ministry of Foreign Affairs, visa on arrival information, and
+# Ministry of Hotels and Tourism, e-Visa page (tourism.gov.mm).
+# Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "arrival"
+months = 6
+applies_en = "Visa on arrival"
+applies_zh = "落地签"
+applies_zh_hant = "落地簽"
+source = "https://www.mofa.gov.mm/consular-information/on-arrival-visa-information/"
+quote = "Have a valid passport not expiring for at least 6 months from the date of entry into Myanmar."
+
+[[items]]
+topic = "validity"
+basis = "application"
+months = 6
+applies_en = "Tourist eVisa"
+applies_zh = "旅游电子签"
+applies_zh_hant = "旅遊電子簽"
+note_en = "The eVisa application form itself asks for six months from the date of your planned departure."
+note_zh = "电子签申请表上写的是从计划出发日起至少 6 个月。"
+note_zh_hant = "電子簽申請表上寫的是從計劃出發日起至少 6 個月。"
+source = "https://tourism.gov.mm/en/e-visa"
+quote = "Your passport validity must have at least (6) months."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+applies_en = "Tourist eVisa"
+applies_zh = "旅游电子签"
+applies_zh_hant = "旅遊電子簽"
+note_en = "Attach it to the eVisa application, together with proof of a hotel booking."
+note_zh = "申请电子签时要上传，同时附上酒店预订证明。"
+note_zh_hant = "申請電子簽時要上傳，同時附上酒店預訂證明。"
+source = "https://tourism.gov.mm/en/e-visa"
+quote = "A proof of return ticket from Myanmar must be attached to the application."

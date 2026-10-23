@@ -1,0 +1,40 @@
+# Morocco — passport and documents for a short visit.
+# Source: conditions of use of the Moroccan eVisa (acces-maroc.ma, English
+# PDF). No published rule was found for visa-exempt visitors, including
+# Chinese citizens. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "application"
+days = 90
+applies_en = "eVisa"
+applies_zh = "电子签"
+applies_zh_hant = "電子簽"
+source = "https://www.acces-maroc.ma/assets/docs/Conditions%20utilisation%20eVisa%20-%20An.pdf"
+quote = "holders of an ordinary passport, valid for at least 90 days from the date of the evisa application."
+
+[[items]]
+topic = "onward_ticket"
+status = "may_be_asked"
+applies_en = "eVisa"
+applies_zh = "电子签"
+applies_zh_hant = "電子簽"
+note_en = "eVisa holders must be able to show it if the border checks."
+note_zh = "持电子签入境，边检检查时要能出示。"
+note_zh_hant = "持電子簽入境，邊檢檢查時要能出示。"
+source = "https://www.acces-maroc.ma/assets/docs/Conditions%20utilisation%20eVisa%20-%20An.pdf"
+quote = "A return ticket,"
+
+[[items]]
+topic = "funds"
+status = "amount"
+value_en = "An international bank card, or more than EUR 70 in cash per person per day"
+value_zh = "国际银行卡，或每人每天 70 欧元以上现金"
+value_zh_hant = "國際銀行卡，或每人每天 70 歐元以上現金"
+applies_en = "eVisa"
+applies_zh = "电子签"
+applies_zh_hant = "電子簽"
+source = "https://www.acces-maroc.ma/assets/docs/Conditions%20utilisation%20eVisa%20-%20An.pdf"
+quote = "Proof of livelihoods: international bank card or the equivalent of more than 70 euros, in cash per person and per day during the stay in Morocco,"
