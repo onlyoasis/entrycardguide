@@ -20,6 +20,7 @@
       {{- if eq .kind "none" }}
       <p class="m-0 text-verified font-medium">{{ .kindLabel }}</p>
       <p class="m-0 mt-1" style="font-size: 16px; line-height: 1.6;">{{ i18n "photo_none_body" }}</p>
+      {{- with .note }}<p class="m-0 mt-2" style="font-size: 16px; line-height: 1.6;">{{ . }}</p>{{ end }}
       {{- else }}
       <div class="photo-card-item">
         <div class="text-meta font-mono uppercase text-muted mb-2">{{ .kindLabel }} · {{ .captureLabel }}</div>
