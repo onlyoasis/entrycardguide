@@ -7,7 +7,7 @@ country: "russia"
 weight: 20
 keywords: ["俄羅斯電子簽怎麼辦", "俄羅斯電子簽材料", "俄羅斯電子簽照片要求", "evisa.kdmid.ru 申請"]
 layout: how-to-fill
-lastmod: 2026-10-23
+lastmod: 2026-10-26
 ---
 
 {{< official-link site="russia.instruction" >}}

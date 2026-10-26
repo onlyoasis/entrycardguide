@@ -7,7 +7,7 @@ country: "colombia"
 weight: 20
 keywords: ["哥倫比亞 Check-Mig 怎麼填", "Check-Mig 欄位", "哥倫比亞移民預登記"]
 layout: how-to-fill
-lastmod: 2026-10-23
+lastmod: 2026-10-26
 ---
 
 {{< official-link site="colombia.checkmig" >}}

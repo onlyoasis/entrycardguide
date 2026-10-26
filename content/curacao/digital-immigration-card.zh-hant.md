@@ -18,7 +18,7 @@ faq:
   - q: "機場要出示什麼？"
     a: "在航司值機和抵達移民檢查時，出示下載或郵件收到的確認 PDF，電子版或列印件均可。"
 layout: country-form
-lastmod: 2026-10-23
+lastmod: 2026-10-26
 ---
 
 ## DI Card 免費

@@ -7,7 +7,7 @@ country: "curacao"
 weight: 20
 keywords: ["庫拉索 DI Card 怎麼填", "庫拉索移民卡欄位", "dicardcuracao 表單"]
 layout: how-to-fill
-lastmod: 2026-10-23
+lastmod: 2026-10-26
 ---
 
 {{< official-link site="curacao.dicard" >}}
