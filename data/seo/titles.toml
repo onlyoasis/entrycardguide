@@ -185,10 +185,12 @@ title_zh_hant = "秘魯入境卡 TAM Virtual：邊檢自動生成，免費查詢
 
 [philippines]
 title = "Philippines eTravel Guide: What to Prepare, Free QR Code"
-title_zh = "菲律宾入境卡 eTravel 指南：要准备什么、二维码怎么用"
-title_zh_hant = "菲律賓入境卡 eTravel 指南：要準備什麼、QR Code 怎麼用"
-description_zh = "菲律宾入境卡（eTravel）概览：免费，不是签证；准备护照、航班或船舶信息、抵达或离境日期和邮箱，提交后截图保存二维码。"
-description_zh_hant = "菲律賓入境卡（eTravel）概覽：免費，不是簽證；準備護照、航班或船舶資訊、抵達或離境日期和信箱，提交後截圖保存 QR Code。"
+title_zh = "菲律宾 eTravel 入境指南：官方入口、适用对象与办理时间"
+title_zh_hant = "菲律賓 eTravel 入境指南：官方入口、適用對象與辦理時間"
+description_zh = "菲律宾 eTravel 入境指南：官方入口 etravel.gov.ph、免费申报、适用对象与抵达前 72 小时办理时间，并提供 eTravel 专页和字段填写指南。"
+description_zh_hant = "菲律賓 eTravel 入境指南：官方入口 etravel.gov.ph、免費申報、適用對象與抵達前 72 小時辦理時間，並提供 eTravel 專頁和欄位填寫指南。"
+h1_zh = "菲律宾 eTravel 入境指南"
+h1_zh_hant = "菲律賓 eTravel 入境指南"
 
 [qatar]
 title = "Qatar Hayya Guide: Visa-Free Entry Check and Official e-Visa"
