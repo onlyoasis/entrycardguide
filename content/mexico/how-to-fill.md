@@ -3,7 +3,7 @@ title: "How to fill every field on the Mexico FMM-E"
 kicker: "Field-by-field walkthrough of the official INM form with common errors and what they mean. 10 minutes total."
 description: "Step-by-step guide to every field on Mexico's Forma Migratoria Múltiple Electrónica. Free and independent."
 date: 2026-04-24
-lastmod: 2026-10-05
+lastmod: 2026-10-26
 country: "mexico"
 weight: 20
 layout: how-to-fill
@@ -63,13 +63,13 @@ Format: `DD/MM/YYYY`. The date you actually enter Mexico: today through 29 days 
 - For air arrivals, use the date printed on your ticket for the Mexico segment.
 - For land crossings, use the date you plan to cross. If that slips by a day, you can file again or update at the border.
 
-### Port of entry
+### Point of entry
 
-The airport (IATA code) or land crossing point.
+Two dropdowns, nothing typed. **Means of entry** offers only *By air* and *By land*. **Point of entry** then lists the matching places by their Spanish names. On 15 October 2026 the lists held:
 
-- Airports: `MEX` (Mexico City), `CUN` (Cancún), `GDL` (Guadalajara), `TIJ` (Tijuana), `PVR` (Puerto Vallarta), `SJD` (Los Cabos), etc.
-- Land crossings: the INM dropdown lists each by name (e.g. `San Ysidro / Tijuana`, `Laredo / Nuevo Laredo`).
-- Sea ports: listed by name (`Cozumel`, `Progreso`, etc).
+- By air: 38 airports, mostly regional and border ones, such as `Aeropuerto Internacional de Chihuahua` or `Aeropuerto Internacional "General Abelardo L. Rodríguez"` (Tijuana). Mexico City, Cancún, Guadalajara, Puerto Vallarta and Los Cabos are not on the list.
+- By land: 60 crossings, such as `El Chaparral` and `Mesa De Otay` (Tijuana), `Nuevo Laredo II (Juárez - Lincoln)` or `Libertad (Paso Del Norte)` (Ciudad Juárez).
+- There is no sea option.
 
 If you arrive at a port not in the dropdown, you almost certainly do not need an FMM-E: check the [overview page](/mexico/fmm/) for which entries use passport stamps instead.
 

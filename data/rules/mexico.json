@@ -94,12 +94,12 @@
     },
     "entry_point": {
       "type": "text",
-      "label": "Port of entry",
+      "label": "Point of entry",
       "required": true,
-      "placeholder": "MEX (Mexico City)",
-      "help": "Airport or land crossing where you enter Mexico. Use the IATA code for airports.",
+      "placeholder": "El Chaparral",
+      "help": "Picked from the form's list after you choose By air or By land. Names are in Spanish, e.g. El Chaparral or Mesa De Otay for Tijuana.",
       "errors": {
-        "required": "Port of entry is required"
+        "required": "Point of entry is required"
       }
     },
     "trip_purpose": {

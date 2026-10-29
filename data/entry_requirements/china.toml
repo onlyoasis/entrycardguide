@@ -1,0 +1,78 @@
+# China — passport and documents for a short visit.
+# Sources: Embassy of China in the United States, unilateral visa exemption
+# notice (updated 2026-02-22) and visa application materials page, and National
+# Immigration Administration pages on visa-free transit. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "stay"
+applies_en = "30-day visa exemption for eligible nationalities"
+applies_zh = "适用国籍 30 天免签"
+applies_zh_hant = "適用國籍 30 天免簽"
+source = "https://us.china-embassy.gov.cn/lsfw/zj/qz/202412/t20241224_11516389.htm"
+quote = "外国人需持有效普通护照来华，有效期须满足在华旅行需要。"
+
+[[items]]
+topic = "validity"
+basis = "other"
+value_en = "At least 6 months"
+value_zh = "至少 6 个月"
+value_zh_hant = "至少 6 個月"
+applies_en = "Visa applicants"
+applies_zh = "申请签证的旅客"
+applies_zh_hant = "申請簽證的旅客"
+note_en = "Wording of the Chinese embassies in the US and the Bahamas. Neither says which date to count from."
+note_zh = "中国驻美国、驻巴哈马使馆的写法，都没写从哪天算起。"
+note_zh_hant = "中國駐美國、駐巴哈馬使館的寫法，都沒寫從哪天算起。"
+source = "https://us.china-embassy.gov.cn/lsfw/zj/qz/202509/t20250920_11712381.htm"
+quote = "护照剩余有效期须为6个月以上、且须有2张以上空白签证页"
+
+[[items]]
+topic = "blank_pages"
+pages = 2
+applies_en = "Visa applicants"
+applies_zh = "申请签证的旅客"
+applies_zh_hant = "申請簽證的旅客"
+source = "https://us.china-embassy.gov.cn/lsfw/zj/qz/202509/t20250920_11712381.htm"
+quote = "护照剩余有效期须为6个月以上、且须有2张以上空白签证页"
+
+[[items]]
+topic = "validity"
+basis = "other"
+value_en = "At least 3 months"
+value_zh = "至少 3 个月"
+value_zh_hant = "至少 3 個月"
+applies_en = "240-hour visa-free transit"
+applies_zh = "240 小时过境免签"
+applies_zh_hant = "240 小時過境免簽"
+note_en = "The National Immigration Administration does not say which date to count from."
+note_zh = "国家移民管理局没写从哪天算起。"
+note_zh_hant = "國家移民管理局沒寫從哪天算起。"
+source = "https://www.nia.gov.cn/n741435/n1194535/n1689182/index.html"
+quote = "持用有效期不少于3个月的本人护照"
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+applies_en = "240-hour visa-free transit"
+applies_zh = "240 小时过境免签"
+applies_zh_hant = "240 小時過境免簽"
+note_en = "A connecting ticket with a fixed date to a third country or region. You can only enter at the listed ports."
+note_zh = "要有确定日期、前往第三国或地区的联程客票，只能从指定口岸入境。"
+note_zh_hant = "要有確定日期、前往第三國或地區的聯程客票，只能從指定口岸入境。"
+source = "https://www.nia.gov.cn/n794014/n1050181/n1050484/c1731205/content.html"
+quote = "相关国家人员持本人普通护照和确定日期及行程的联程客票"
+
+[[items]]
+topic = "onward_ticket"
+status = "may_be_asked"
+applies_en = "30-day visa exemption for eligible nationalities"
+applies_zh = "适用国籍 30 天免签"
+applies_zh_hant = "適用國籍 30 天免簽"
+note_en = "Border officers check the purpose of your visit. The embassy advises carrying an invitation, air tickets and hotel bookings that match it."
+note_zh = "边检会核查来华事由，使馆建议随身带上与来华事由相符的邀请函、机票和酒店订单。"
+note_zh_hant = "邊檢會核查來華事由，使館建議隨身帶上與來華事由相符的邀請函、機票和酒店訂單。"
+source = "https://us.china-embassy.gov.cn/lsfw/zj/qz/202412/t20241224_11516389.htm"
+quote = "建议携带邀请函、机票酒店订单等与来华事由相符合的证明材料。"

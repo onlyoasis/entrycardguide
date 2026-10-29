@@ -1,0 +1,42 @@
+# The Bahamas — passport and documents for a short visit.
+# Sources: Department of Immigration entry requirements (immigration.gov.bs)
+# and the Embassy of The Bahamas in Washington, D.C., FAQ section 4.
+# Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "departure"
+months = 6
+note_en = "The Department of Immigration says at least 6 months without naming the date; the embassy in Washington counts from the day you leave. Only US and UK passport holders may travel with less than 6 months left."
+note_zh = "移民局只写至少 6 个月，没写起算日；驻美使馆写明从离开巴哈马那天算起。只有美国、英国护照可以在剩余不足 6 个月时入境。"
+note_zh_hant = "移民局只寫至少 6 個月，沒寫起算日；駐美使館寫明從離開巴哈馬那天算起。只有美國、英國護照可以在剩餘不足 6 個月時入境。"
+source = "https://www.bahamasembdc.org/contact/faq/"
+quote = "A valid passport with six months validity from the date of departure from The Bahamas"
+
+[[items]]
+topic = "passport"
+value_en = "A passport book, not a passport card"
+value_zh = "须用护照本，不接受护照卡"
+value_zh_hant = "須用護照本，不接受護照卡"
+source = "https://www.immigration.gov.bs/entry-requirements/before-your-arrival/"
+quote = "present a passport that is valid for at least six months (passport cards will not be accepted)"
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+source = "https://www.immigration.gov.bs/entry-requirements/"
+quote = "All visitors must have a return or onward ticket, and a valid travel document (such as a passport and visa) to allow entry into another country as applicable."
+
+[[items]]
+topic = "funds"
+status = "amount"
+value_en = "About USD 200 a day"
+value_zh = "每天约 200 美元"
+value_zh_hant = "每天約 200 美元"
+note_en = "The embassy in Washington gives this figure and does not say whether it is per person or per family. The Department of Immigration only asks for enough money for the stay, or a local sponsor."
+note_zh = "这是驻美使馆给的数字，没写按人还是按家庭算。移民局只要求钱够停留期间花费，或有当地担保人。"
+note_zh_hant = "這是駐美使館給的數字，沒寫按人還是按家庭算。移民局只要求錢夠停留期間花費，或有當地擔保人。"
+source = "https://www.bahamasembdc.org/contact/faq/"
+quote = "Sufficient funds to finance the visit (approx. $200USD per day)"

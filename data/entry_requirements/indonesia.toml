@@ -1,0 +1,65 @@
+# Indonesia — passport and documents for a short visit.
+# Sources: Directorate General of Immigration e-Visa portal, and the Semarang
+# and Central Jakarta immigration offices (imigrasi.go.id). Checked 2026-10-23.
+# The Bontang office page used before went 404 on 2026-10-23; the same wording
+# was re-sourced from the Semarang and Central Jakarta pages.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "arrival"
+months = 6
+note_en = "Regulation 44 of 2015 of the Minister of Law and Human Rights, art. 22(1)(b)."
+note_zh = "依据印尼法律和人权部 2015 年第 44 号条例第 22(1)(b) 条。"
+note_zh_hant = "依據印尼法律和人權部 2015 年第 44 號條例第 22(1)(b) 條。"
+source = "https://evisa.imigrasi.go.id/front/info/evoa"
+quote = "Foreigners who wish to enter Indonesia must hold a passport with an expiration date at least 6 (six) months from the date of arrival"
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+applies_en = "Visa exemption"
+applies_zh = "免签"
+applies_zh_hant = "免簽"
+note_en = "A return ticket, or a ticket on to another country."
+note_zh = "回程票，或前往其他国家的续程票。"
+note_zh_hant = "回程票，或前往其他國家的續程票。"
+source = "https://semarang.imigrasi.go.id/layanan-warga-negara-asing/bebas-visa-kunjungan/"
+quote = "Tiket kembali atau tiket terusan untuk melanjutkan perjalanan ke negara lain."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+applies_en = "e-VOA"
+applies_zh = "电子落地签"
+applies_zh_hant = "電子落地簽"
+note_en = "Upload a return ticket, or a ticket on to another country, with the application."
+note_zh = "申请时上传回程票，或前往其他国家的续程票。"
+note_zh_hant = "申請時上傳回程票，或前往其他國家的續程票。"
+source = "https://jakartapusat.imigrasi.go.id/layanan/warga-negara-asing-wna/visa-republik-indonesia/b1-visa-saat-kedatangan-wisata"
+quote = "tiket kembali atau tiket terusan ke negara lain"
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+applies_en = "Visa exemption"
+applies_zh = "免签"
+applies_zh_hant = "免簽"
+source = "https://semarang.imigrasi.go.id/layanan-warga-negara-asing/bebas-visa-kunjungan/"
+quote = "Memiliki biaya hidup yang cukup selama berada di Indonesia."
+
+[[items]]
+topic = "funds"
+status = "amount"
+value_en = "USD 2,000 in bank statements"
+value_zh = "银行流水 2,000 美元"
+value_zh_hant = "銀行流水 2,000 美元"
+applies_en = "C1 tourist e-Visa application"
+applies_zh = "C1 旅游电子签申请"
+applies_zh_hant = "C1 旅遊電子簽申請"
+note_en = "The last 3 months of statements, in your name or your sponsor's, showing at least USD 2,000 or the equivalent."
+note_zh = "近 3 个月的银行流水，本人或担保人名下，余额不少于 2,000 美元或等值外币。"
+note_zh_hant = "近 3 個月的銀行流水，本人或擔保人名下，餘額不少於 2,000 美元或等值外幣。"
+source = "https://jakartapusat.imigrasi.go.id/layanan/warga-negara-asing-wna/visa-republik-indonesia/c1-visa-wisata"
+quote = "atas nama Orang Asing atau penjamin sebesar minimal USD2000"

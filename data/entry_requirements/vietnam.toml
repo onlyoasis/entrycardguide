@@ -1,0 +1,32 @@
+# Vietnam — passport and documents for a short visit.
+# Sources: Law amending the Law on Entry, Exit, Transit and Residence of
+# Foreigners (2019), art. 20, English text on asemconnectvietnam.gov.vn, and
+# the Consulate General of Vietnam in Osaka. evisa.gov.vn did not load in the
+# browser on 2026-10-23. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "arrival"
+months = 6
+applies_en = "Visa-free entry under Vietnam's unilateral exemption"
+applies_zh = "越南单方面免签入境"
+applies_zh_hant = "越南單方面免簽入境"
+source = "https://asemconnectvietnam.gov.vn/law.aspx?CapBanHanhID=100&ID1=2&MaVB_Id=2798&TukhoaCoSanID=14&ZID1=0&key=&pagenum=4"
+quote = "Passport of a foreigner wishing to make entry in form of unilateral visa-free must be valid at least for another 6 months"
+
+[[items]]
+topic = "validity"
+basis = "other"
+value_en = "Must expire at least 30 days after the visa"
+value_zh = "护照要比签证晚至少 30 天到期"
+value_zh_hant = "護照要比簽證晚至少 30 天到期"
+applies_en = "Visas, including the e-Visa"
+applies_zh = "签证，含电子签"
+applies_zh_hant = "簽證，含電子簽"
+note_en = "Vietnam's embassy in Washington asks for 6 months' validity on the planned entry date for the visas it issues, to meet airline and immigration requirements."
+note_zh = "越南驻美使馆对它签发的签证，要求按计划入境日护照还剩 6 个月，说是为了满足航空公司和入境检查的要求。"
+note_zh_hant = "越南駐美使館對它簽發的簽證，要求按計劃入境日護照還剩 6 個月，說是為了滿足航空公司和入境檢查的要求。"
+source = "https://vnconsulate-osaka.org/en/visa"
+quote = "Visa validity shall be at least 30 days shorter than passport or international travel document validity."

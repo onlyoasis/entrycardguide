@@ -7,7 +7,7 @@ country: "mexico"
 weight: 20
 keywords: ["FMM 怎麼填", "墨西哥入境表欄位", "FMM-E 欄位填寫", "INM 表單幫助"]
 layout: how-to-fill
-lastmod: 2026-10-15
+lastmod: 2026-10-26
 ---
 
 {{< official-link site="mexico.fmm" >}}
@@ -66,11 +66,11 @@ lastmod: 2026-10-15
 
 ### 入境口岸
 
-機場（IATA 代碼）或陸路口岸。
+兩個下拉框，都不能手動鍵入。**Means of entry**（入境方式）只有 *By air* 和 *By land*；選好後，**Point of entry**（入境口岸）按西班牙語名稱列出對應的地點。2026 年 10 月 15 日的列表：
 
-- 機場：`MEX`（墨西哥城）、`CUN`（坎昆）、`GDL`（瓜達拉哈拉）、`TIJ`（蒂華納）、`PVR`（巴亞爾塔港）、`SJD`（洛斯卡沃斯）等。
-- 陸路口岸：INM 下拉按名稱列出（例如 `San Ysidro / Tijuana`、`Laredo / Nuevo Laredo`）。
-- 海港：按名稱列出（`Cozumel`、`Progreso` 等）。
+- 空路：38 個機場，多是地方和邊境機場，例如 `Aeropuerto Internacional de Chihuahua`、`Aeropuerto Internacional "General Abelardo L. Rodríguez"`（蒂華納）。墨西哥城、坎昆、瓜達拉哈拉、巴亞爾塔港、洛斯卡沃斯都不在列表裡。
+- 陸路：60 個口岸，例如 `El Chaparral`、`Mesa De Otay`（蒂華納），`Nuevo Laredo II (Juárez - Lincoln)`、`Libertad (Paso Del Norte)`（華雷斯城）。
+- 沒有海路選項。
 
 如果你的入境口岸不在下拉里，幾乎肯定你不需要 FMM-E：參考 [概覽頁](/zh-hant/mexico/fmm/) 看哪些入境改用護照蓋章。
 

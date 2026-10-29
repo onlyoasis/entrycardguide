@@ -1,0 +1,29 @@
+# Uzbekistan — passport and documents for a short visit.
+# Source: Ministry of Foreign Affairs, visas of the Republic of Uzbekistan
+# (gov.uz, updated 2026-06-01). Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "other"
+value_en = "Must outlast the visa by at least 3 months"
+value_zh = "护照有效期要比签证长至少 3 个月"
+value_zh_hant = "護照有效期要比簽證長至少 3 個月"
+applies_en = "Visas from Uzbek embassies and consulates"
+applies_zh = "在使领馆申请的签证"
+applies_zh_hant = "在使領館申請的簽證"
+source = "https://gov.uz/en/mfa/pages/o-zbekiston-respublikasi-vizasi"
+quote = "passport or stateless person document (the validity of these documents must be at least 3 months longer than the visa)"
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+applies_en = "Visa-free airport transit, up to 5 days"
+applies_zh = "机场过境免签（最多 5 天）"
+applies_zh_hant = "機場過境免簽（最多 5 天）"
+note_en = "The ticket to a third country must be issued by Uzbekistan Airways."
+note_zh = "前往第三国的机票须由乌兹别克斯坦航空出票。"
+note_zh_hant = "前往第三國的機票須由烏茲別克斯坦航空出票。"
+source = "https://gov.uz/en/mfa/pages/o-zbekiston-respublikasi-vizasi"
+quote = "A visa-free regime for up to five days in Uzbekistan has been introduced for citizens of the countries listed in Annex 2, provided that foreign citizens transit through international airports of the Republic of Uzbekistan and have a flight ticket to a third country issued by Uzbekistan Airways JSC."

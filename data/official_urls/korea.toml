@@ -1,12 +1,12 @@
 # South Korea — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-10-14
+# Last verified: 2026-10-26
 
 [earrivalcard]
 url = "https://www.e-arrivalcard.go.kr/portal/main/index.do"
 name = "Korea e-Arrival Card"
 agency = "Korea Immigration Service"
-last_verified = "2026-10-14"
+last_verified = "2026-10-26"
 archive_url = "https://web.archive.org/web/2026/https://www.e-arrivalcard.go.kr/portal/main/index.do"
 notes = "Reserved under .go.kr. Read 2026-10-14 in a browser. The home page states: no fee; submit within 3 days before arrival in Korea, with the three open dates listed in Korea Standard Time; individual form for 1 to 9 people, group form for 2 to 1,000; Check/Edit by issue number or email verification. Interface languages: Korean, English, Simplified Chinese, Japanese, Vietnamese, Thai, Russian. A pop-up says www.e-arrivalcard.go.kr is the only official site and any site asking for payment information is not official."
 
@@ -14,77 +14,77 @@ notes = "Reserved under .go.kr. Read 2026-10-14 in a browser. The home page stat
 url = "https://www.e-arrivalcard.go.kr/portal/guide/eacGuide.do"
 name = "e-Arrival Card Guide"
 agency = "Korea Immigration Service"
-last_verified = "2026-10-14"
+last_verified = "2026-10-26"
 notes = "Read 2026-10-14. Filing opens 3 days before arrival (KST); the e-Arrival Card has the same validity as the paper card; free; the issue number is emailed and is not required at inspection; PC up to 1,000 people, mobile web up to 9; purpose, stay and departure date editable before inspection, arrival date only within 3 days of the first submission; validity lost 72 hours after submission or once the traveller has passed immigration; separate from K-ETA; false information can lead to penalties or entry restriction. Things to prepare: valid passport, email, entry date and flight, place of stay, departure date and flight (optional)."
 
 [procedure]
 url = "https://www.e-arrivalcard.go.kr/portal/guide/eacReportProcessGuide.do"
 name = "e-Arrival Card declaration procedure"
 agency = "Korea Immigration Service"
-last_verified = "2026-10-14"
+last_verified = "2026-10-26"
 notes = "Read 2026-10-14. Five steps: terms and representative email entered twice (a person aged 14 or younger cannot be the representative); passport photo upload or scan, with manual entry if the scan fails (up to 9 people); travel itinerary with arrival and departure, purpose of entry, stay information and occupation, which a valid Korean visa can pre-fill; check; submit, then save or print the PDF with the issue number and receive the same details by email. The group form takes common details first, then up to 1,000 passports, on PC only."
 
 [subject_guide]
 url = "https://www.e-arrivalcard.go.kr/portal/guide/eacTargetGuide.do"
 name = "Who must submit the e-Arrival Card"
 agency = "Korea Immigration Service"
-last_verified = "2026-10-14"
+last_verified = "2026-10-26"
 notes = "Read 2026-10-14. Must declare: Korean visa holders; K-ETA-exempt travellers (citizens of countries temporarily exempt from K-ETA, under-17s and over-65s from K-ETA countries, diplomatic or service passports); US forces under SOFA Article 8; UN Laissez-Passer holders; valid ABTC holders; seafarers joining or leaving vessels. Excluded: Korean citizens (dual nationals enter on the Korean passport); valid residence, permanent resident or Overseas Korean resident card holders; K-ETA holders, except those entering with a visa; group electronic visa holders from China, Vietnam, the Philippines and Indonesia, and group visa holders from India and Cambodia; listed visa-free groups at Yangyang and Muan; foreign flight crew."
 
 [faq]
 url = "https://www.e-arrivalcard.go.kr/portal/board/boardList.do?eacBbsKndCd=2"
 name = "e-Arrival Card FAQs"
 agency = "Korea Immigration Service"
-last_verified = "2026-10-14"
+last_verified = "2026-10-26"
 notes = "Read all 34 answers 2026-10-14. Used here: filing from 3 days before arrival (KST) and any time after landing before immigration; free; PC and mobile web, no app; a paper or e-Arrival Card can still be filled in before immigration if none was submitted; lost issue number does not require refiling; K-ETA fee 10,000 won, e-Arrival Card free; K-ETA holders with remaining validity are not subject; 7 languages; third parties may file when the traveller cannot; up to 1,000 people sharing an arrival date and flight; no need to present the issue number document; a card is single-use and invalid after 72 hours; representative place of stay or first place; approximate departure date allowed, departure flight optional; transit within 24 hours without entry exempt; same-day transit passengers who pass immigration use the airport address; date of birth with unknown day and month entered as 1999.00.00; separate from customs and quarantine declarations; submission shown by PDF and email."
 
 [fake_site_notice]
 url = "https://www.e-arrivalcard.go.kr/portal/board/viewBoardDetail.do?bbsId=0000012054&eacBbsKndCd=1&flId="
 name = "Notice: beware of fake e-Arrival Card websites"
 agency = "Korea Immigration Service"
-last_verified = "2026-10-14"
+last_verified = "2026-10-26"
 notes = "Posted 2025-03-14, read 2026-10-14. Fake sites with similar names claim to be official and demand payment; the service is free; check for the go.kr domain and the government logo; official site https://www.e-arrivalcard.go.kr."
 
 [email_notice]
 url = "https://www.e-arrivalcard.go.kr/portal/board/viewBoardDetail.do?bbsId=0000012531&eacBbsKndCd=1&flId="
 name = "Notice: confirmation email delays"
 agency = "Korea Immigration Service"
-last_verified = "2026-10-14"
+last_verified = "2026-10-26"
 notes = "Posted 2026-03-13, read 2026-10-14. Confirmation emails may be delayed or fail at Gmail, Outlook.com, Hotmail.com and QQ.com; use another address or save a copy right after submitting."
 
 [china_access_notice]
 url = "https://www.e-arrivalcard.go.kr/portal/board/viewBoardDetail.do?bbsId=0000012051&eacBbsKndCd=1&flId="
 name = "Notice: smartphone access from China"
 agency = "Korea Immigration Service"
-last_verified = "2026-10-14"
+last_verified = "2026-10-26"
 notes = "Posted 2025-03-13, read 2026-10-14. Smartphone access from China may be unstable because of network conditions; use a desktop or laptop."
 
 [auth_notice]
 url = "https://www.e-arrivalcard.go.kr/portal/board/viewBoardDetail.do?bbsId=0000012631&eacBbsKndCd=1&flId="
 name = "Notice: verification code step"
 agency = "Korea Immigration Service"
-last_verified = "2026-10-14"
+last_verified = "2026-10-26"
 notes = "Posted 2026-04-29, read 2026-10-14. From 6 May 2026 a verification code entry step is added on submission."
 
 [user_guide]
 url = "https://www.e-arrivalcard.go.kr/portal/board/viewBoardDetail.do?bbsId=0000000006&eacBbsKndCd=1&flId=250000000000000000000306051243"
 name = "e-Arrival Card user guide (PDF manuals)"
 agency = "Ministry of Justice / Korea Immigration Service"
-last_verified = "2026-10-14"
+last_verified = "2026-10-26"
 notes = "Notice hosting the 25.09.25 user-guide PDFs in 17 languages. Read the Simplified Chinese edition (38 pages) on 2026-10-14. Screens show: passport photo must include the machine-readable zone; surname and given name each have an 'unknown' checkbox; date of birth and passport expiry use year/month/day pickers; entry and exit by AIR or SEA with a flight-lookup button that fills the previous departure point or next destination, or manual country and city if the flight is not found; purpose of entry is a required list with 'Other' plus details; stay address is found by road-name address or 5-digit postcode in Korean or English, then a detail line; the contact field prompt reads 'enter a contact number in Korea'; a valid Korean visa number can pull in the stay address and contact; occupation is a required list with 'Other' plus free text (examples given: athlete, religious worker); temporary save keeps a draft for 72 hours; added travellers can copy the representative's entry, exit, purpose and stay details, which are then edited only on the representative; group bulk upload asks for passport photos under 6 MB. The occupation option list itself is not shown."
 
 [contact]
 url = "https://www.e-arrivalcard.go.kr/portal/board/viewBoardDetail.do?bbsId=0000000007&eacBbsKndCd=1&flId="
 name = "e-Arrival Card inquiry information"
 agency = "Korea Immigration Service"
-last_verified = "2026-10-14"
+last_verified = "2026-10-26"
 notes = "Read 2026-10-14. Email earrivalcard@korea.kr (answers in Korean and English); Immigration Contact Center 1345, from abroad +82-2-1345 or +82-2-6908-1345 to 6; weekdays 09:00 to 22:00, with Korean, English and Chinese after 18:00."
 
 [keta]
 url = "https://www.k-eta.go.kr/portal/apply/index.do"
 name = "K-ETA (Korea Electronic Travel Authorization)"
 agency = "Korea Ministry of Justice"
-last_verified = "2026-10-15"
+last_verified = "2026-10-26"
 notes = "Read 2026-10-15. A separate system from the e-Arrival Card; a traveller with a valid K-ETA does not file the arrival card. Fee 10,000 KRW. FAQ Q23 and Q37 set the photo rule: colour JPG under 20 MB for the face photo and the passport bio page."
 
 [meta]
@@ -183,5 +183,5 @@ body_zh_hant = "直接在官方 .go.kr 門戶提交，並保存確認頁。"
 url = "https://www.e-arrivalcard.go.kr/portal/apply/agreementPolicy.do"
 name = "e-Arrival Card application entry page"
 agency = "Korea Immigration Service"
-last_verified = "2026-10-15"
+last_verified = "2026-10-26"
 notes = "Read 2026-10-15 from the page's shared input script; the arrival card form opens only after an email confirmation and was not opened. Passport names keep letters and spaces and are turned into capitals; passport number letters and digits; typed dates become YYYY-MM-DD; email max 100, characters a-z 0-9 _ - @ . only, checked with the portal's own pattern ('The email format is incorrect. Please check again.')."

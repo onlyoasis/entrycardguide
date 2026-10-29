@@ -1,0 +1,89 @@
+{{- /* Every country in data/entry_requirements, in roster order, with its
+       items grouped by topic and turned into display strings for the current
+       language. Feeds the hub card (entry-req-card.html) and the comparison
+       table (shortcode entry-requirements), so the two never disagree.
+       Call with partialCached "entry-req-rows.html" . site.Language.Lang.
+
+       Topics and what each item needs (value_* overrides the generated text):
+         validity       basis arrival | departure | stay | application | permitted_stay,
+                        plus months or days (stay needs neither); basis other when the
+                        source names no start date, with value_* as the display text
+         blank_pages    pages
+         passport       value_* (any other passport condition the source states)
+         e_passport     status required | not_required
+         onward_ticket  status required | may_be_asked | not_required
+         funds          status amount (value_* is the amount) | sufficient
+       Every item needs an https source and the quoted official wording. A topic
+       with no item, validity included, shows "No official rule found". */ -}}
+{{- $lang := site.Language.Lang -}}
+{{- $suffix := "en" }}{{ $nameKey := "en" -}}
+{{- if eq $lang "zh" }}{{ $suffix = "zh" }}{{ $nameKey = "zh" -}}
+{{- else if eq $lang "zh-hant" }}{{ $suffix = "zh_hant" }}{{ $nameKey = "zht" }}{{ end -}}
+{{- $data := hugo.Data.entry_requirements | default dict -}}
+{{- $photoRows := partialCached "photo-rows.html" . site.Language.Lang -}}
+{{- $statuses := dict "e_passport" (slice "required" "not_required") "onward_ticket" (slice "required" "may_be_asked" "not_required") "funds" (slice "amount" "sufficient") -}}
+{{- $rows := slice -}}
+{{- range partial "country-roster.html" . -}}
+  {{- $c := . -}}
+  {{- with index $data $c.key -}}
+    {{- $file := . -}}
+    {{- if not $file.checked }}{{ errorf "data/entry_requirements/%s.toml: needs a top-level checked date" $c.key }}{{ end -}}
+    {{- $topics := dict -}}
+    {{- range $i := $file.items -}}
+      {{- $where := printf "data/entry_requirements/%s.toml (%s)" $c.key $i.topic -}}
+      {{- if not (in (slice "validity" "blank_pages" "passport" "e_passport" "onward_ticket" "funds") $i.topic) }}{{ errorf "%s: unknown topic" $where }}{{ end -}}
+      {{- if not (hasPrefix ($i.source | default "") "https://") }}{{ errorf "%s: needs an https source" $where }}{{ end -}}
+      {{- if not $i.quote }}{{ errorf "%s: needs the quoted official wording" $where }}{{ end -}}
+      {{- $value := index $i (printf "value_%s" $suffix) | default "" -}}
+      {{- with index $statuses $i.topic -}}
+        {{- if not (in . $i.status) }}{{ errorf "%s: status must be one of %v" $where . }}{{ end -}}
+      {{- end -}}
+      {{- if eq $i.topic "validity" -}}
+        {{- if not (in (slice "arrival" "departure" "stay" "application" "permitted_stay" "other") $i.basis) }}{{ errorf "%s: basis must be arrival, departure, stay, application, permitted_stay or other" $where }}{{ end -}}
+        {{- if not $value -}}
+          {{- if eq $i.basis "other" }}{{ errorf "%s: basis other needs value_en, value_zh" $where -}}
+          {{- else if eq $i.basis "stay" }}{{ $value = i18n "req_validity_stay" -}}
+          {{- else if $i.months }}{{ $value = printf (i18n (printf "req_validity_%s_months" $i.basis)) $i.months -}}
+          {{- else if $i.days }}{{ $value = printf (i18n (printf "req_validity_%s_days" $i.basis)) $i.days -}}
+          {{- else }}{{ errorf "%s: needs months or days" $where }}{{ end -}}
+        {{- end -}}
+      {{- else if eq $i.topic "blank_pages" -}}
+        {{- if not $i.pages }}{{ errorf "%s: needs pages" $where }}{{ end -}}
+        {{- if not $value }}{{ $value = cond (eq $i.pages 1) (i18n "req_blank_pages_one") (printf (i18n "req_blank_pages_many") $i.pages) }}{{ end -}}
+      {{- else if not $value -}}
+        {{- if or (eq $i.topic "passport") (eq $i.status "amount") }}{{ errorf "%s: needs value_en, value_zh" $where }}{{ end -}}
+        {{- $value = i18n (printf "req_%s_%s" $i.topic $i.status) -}}
+      {{- end -}}
+      {{- $item := dict
+        "value" $value
+        "status" ($i.status | default "")
+        "applies" (index $i (printf "applies_%s" $suffix) | default "")
+        "note" (index $i (printf "note_%s" $suffix) | default "")
+        "source" $i.source
+        "host" (replaceRE "^https://(?:www\\.)?([^/]+).*$" "$1" $i.source)
+        "checked" ($i.checked | default $file.checked) -}}
+      {{- $topics = merge $topics (dict $i.topic ((index $topics $i.topic | default slice) | append $item)) -}}
+    {{- end -}}
+    {{- if not $file.items }}{{ errorf "data/entry_requirements/%s.toml: needs at least one item" $c.key }}{{ end -}}
+    {{- /* Photo: one line per form in data/photo_specs, e.g. "Face photo (upload)". */ -}}
+    {{- $photo := slice -}}
+    {{- $mine := where $photoRows "key" $c.key -}}
+    {{- $forms := slice }}{{ range $mine }}{{ if not (in $forms .form) }}{{ $forms = $forms | append .form }}{{ end }}{{ end -}}
+    {{- range $form := $forms -}}
+      {{- $items := where $mine "form" $form -}}
+      {{- $labels := slice -}}
+      {{- range $items -}}
+        {{- if eq .kind "none" }}{{ $labels = $labels | append .kindLabel -}}
+        {{- else }}{{ $labels = $labels | append (printf (i18n "req_photo_item") .kindLabel (i18n (printf "req_photo_capture_%s" .capture))) }}{{ end -}}
+      {{- end -}}
+      {{- $photo = $photo | append (dict "form" (index $items 0).formLabel "text" (delimit (uniq $labels) (i18n "req_photo_join")) "id" (index $items 0).id "none" (eq (index $items 0).kind "none")) -}}
+    {{- end -}}
+    {{- $rows = $rows | append (dict
+      "key" $c.key
+      "name" (index $c $nameKey)
+      "checked" $file.checked
+      "topics" $topics
+      "photo" $photo) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $rows -}}

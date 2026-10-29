@@ -7,7 +7,7 @@ country: "bahamas"
 weight: 20
 keywords: ["巴哈馬 C17 怎麼填", "巴哈馬 Exempt", "巴哈馬電子海關申報"]
 layout: how-to-fill
-lastmod: 2026-10-12
+lastmod: 2026-10-26
 ---
 
 {{< official-link site="bahamas.c17" >}}

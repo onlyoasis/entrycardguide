@@ -1,0 +1,16 @@
+# Ethiopia — passport and documents for a short visit.
+# Source: Ethiopian e-Visa portal (evisa.gov.et), tourist visa requirements.
+# The portal is a single-page app and was read in a browser. The Ethiopian
+# embassy in Washington gives the same 6 months. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "arrival"
+months = 6
+applies_en = "Tourist e-Visa"
+applies_zh = "旅游电子签"
+applies_zh_hant = "旅遊電子簽"
+source = "https://www.evisa.gov.et/information/tourist"
+quote = "Passport of the visa applicant which is valid for at least 6 months from the intended date of entry to Ethiopia."

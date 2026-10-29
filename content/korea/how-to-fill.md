@@ -3,7 +3,7 @@ title: "How to Fill Korea e-Arrival Card: Field-by-Field Guide (2026)"
 kicker: "Who files, the 3-day window, the passport scan, your address in Korea, families, and changing a card after you submit."
 description: "How to fill the Korea e-Arrival Card: file from 3 days before arrival, scan the passport page, the address to enter (airport address for same-day transit), approximate departure dates, families, and edits."
 date: 2026-06-11
-lastmod: 2026-10-14
+lastmod: 2026-10-26
 country: "korea"
 weight: 20
 keywords: ["korea e-arrival card how to fill", "e-arrivalcard fields", "korea arrival card address", "korea e-arrival card edit"]

@@ -1,0 +1,22 @@
+# Pakistan — passport and documents for a short visit.
+# Source: Ministry of Foreign Affairs, Embassy of Pakistan in Paris, e-Visa
+# page (mofa.gov.pk). The central online visa system publishes no passport
+# rule; Pakistan's missions in New Delhi and Hong Kong also give 6 months.
+# Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "other"
+value_en = "At least 6 months"
+value_zh = "至少 6 个月"
+value_zh_hant = "至少 6 個月"
+applies_en = "e-Visa"
+applies_zh = "电子签"
+applies_zh_hant = "電子簽"
+note_en = "The embassy does not say which date to count from. The High Commission in New Delhi counts it on the day you apply."
+note_zh = "使馆没写从哪天算起；驻新德里高专署写的是按申请当天算。"
+note_zh_hant = "使館沒寫從哪天算起；駐新德里高專署寫的是按申請當天算。"
+source = "https://mofa.gov.pk/paris-e-visa"
+quote = "Minimum 6 months valid passport is required for the visa processing."

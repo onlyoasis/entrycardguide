@@ -1,12 +1,12 @@
 # Japan — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-10-12
+# Last verified: 2026-10-26
 
 [vjw]
 url = "https://services.digital.go.jp/en/visit-japan-web/"
 name = "Visit Japan Web"
 agency = "Digital Agency of Japan"
-last_verified = "2026-10-12"
+last_verified = "2026-10-26"
 archive_url = "https://web.archive.org/web/2026/https://services.digital.go.jp/en/visit-japan-web/"
 notes = "Reserved under .go.jp. Visit Japan Web is the official service information page for Japan arrival, customs, and tax-free QR workflows. The service is free."
 
@@ -14,7 +14,7 @@ notes = "Reserved under .go.jp. Visit Japan Web is the official service informat
 url = "https://www.moj.go.jp/isa/index.html"
 name = "Immigration Services Agency of Japan"
 agency = "Immigration Services Agency of Japan"
-last_verified = "2026-10-12"
+last_verified = "2026-10-26"
 
 [meta]
 flag = "🇯🇵"
@@ -93,5 +93,5 @@ body_zh_hant = "使用日本數字廳官方頁面，或在機場填紙質表。�
 url = "https://www.vjw.digital.go.jp/main/"
 name = "Visit Japan Web app"
 agency = "Digital Agency of Japan"
-last_verified = "2026-10-15"
+last_verified = "2026-10-26"
 notes = "Read 2026-10-15 from the app script. Passport number required, max 9, /^[A-Z0-9]*$/; family and given names required, max 39, /^[A-Z0-9 \\-.,]*$/; date of birth year, month and day fields; arrival date YYYY/MM/DD, from today to 31 December of next year; flight number max 20, /^[A-Z0-9]*$/; login email max 128."

@@ -36,7 +36,7 @@ lastmod: 2026-10-12
 - [Apple App Store 的 AustralianETA](https://apps.apple.com/au/app/australianeta/id1527982364)
 - [Google Play 的 AustralianETA](https://play.google.com/store/apps/details?id=au.gov.homeaffairs.eta)
 
-手機要有相機和 NFC，並開啟定位。還要準備有效信箱和付款方式。App 會掃描護照資料頁，讀取電子護照芯片，拍攝本人實時照片，收集申報答案，再提交付款。
+手機要有相機和 NFC，並開啟定位。還要準備有效信箱和付款方式。App 會掃描護照資料頁，讀取電子護照晶片，拍攝本人實時照片，收集申報答案，再提交付款。
 
 ## 澳大利亞 ETA 多少錢
 

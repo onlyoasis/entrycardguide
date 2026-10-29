@@ -42,4 +42,4 @@ capture = "upload"
 tool = false
 note_en = "The app photographs the original passport and may scan its chip. The online form needs a clear photo of the passport page."
 note_zh = "App 会拍原本护照，可能还会读取芯片。网页申请需要一张清晰的护照资料页照片。"
-note_zh_hant = "App 會拍原本護照，可能還會讀取芯片。網頁申請需要一張清晰的護照資料頁照片。"
+note_zh_hant = "App 會拍原本護照，可能還會讀取晶片。網頁申請需要一張清晰的護照資料頁照片。"

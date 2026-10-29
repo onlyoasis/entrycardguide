@@ -3,7 +3,7 @@ title: "印尼 e-CD 海关申报怎么填 2026：巴厘岛入境字段指南"
 kicker: "印尼官方 All Indonesia / e-CD 申报字段逐项讲解，常见错误及含义。约 7 分钟看完。"
 description: "印尼 All Indonesia / e-CD 怎么填：按官方表单讲解护照、航班、行李、现金和海关问题，巴厘岛/雅加达通用。"
 date: 2026-04-26
-lastmod: 2026-10-12
+lastmod: 2026-10-21
 country: "indonesia"
 weight: 20
 keywords: ["印尼海关申报怎么填", "All Indonesia 字段", "巴厘岛海关表字段", "印尼海关申报帮助", "allindonesia.imigrasi.go.id 字段"]
@@ -63,10 +63,10 @@ layout: how-to-fill
 
 ### 入境口岸
 
-印尼机场（IATA 代码）或海港。
+从 **Port of Entry** 下拉里选，不能手动键入。表单先问 **Mode of Transport**（空路、陆路或海路），再加载对应的列表：机场、陆路口岸或海港。
 
-- `CGK`（雅加达 / 苏加诺-哈达）、`DPS`（巴厘 / 努拉莱）、`SUB`（泗水）、`BPN`（巴厘巴板）、`KNO`（棉兰 / 库阿拉纳穆）、`UPG`（望加锡）、`BTH`（巴淡）。
-- 海港下拉列出：`Tanjung Priok`、`Benoa Bali` 等。
+- 主要机场，供对照：`CGK`（雅加达 / 苏加诺-哈达）、`DPS`（巴厘 / 努拉莱）、`SUB`（泗水）、`BPN`（巴厘巴板）、`KNO`（棉兰 / 库阿拉纳穆）、`UPG`（望加锡）、`BTH`（巴淡）。在列表里选对应的机场。
+- 坐渡轮或邮轮入境（新加坡到巴淡、邮轮靠巴厘伯诺阿港）：交通方式选海路，再选海港。
 
 ### 同行家人数
 
@@ -79,12 +79,18 @@ e-CD 支持家庭合并申报。一名成年人为全家填，每位额外家人
 
 ### 印尼地址
 
-第一晚要住的地方。
+表单要的是你在印尼居住的地址。先选 **Type of Accommodation**（住宿类型）：residential、hotel 或 others，下面的格子随选择变化。
 
-- 上限 200 字符。
-- 酒店名 + 街道 + 区域 + 城市就够：`Hotel Example, Jl. Sunset Road No. 89, Kuta, Badung, Bali`。
-- Airbnb 用房东在订单确认中给的地址。
-- 多城旅行：只填第一晚。不需要完整行程。
+- **Hotel（酒店）**：在 **Name of Hotel** 里输入酒店名的至少 4 个字符，再从结果里点选。只打字不点选，这一栏仍是空的，表单会报 "Name of Hotel is required"。结果里找不到你的酒店，就选未列出酒店的选项，手动输入酒店名（只能用字母、数字和空格），再选 **City of Hotel**。
+- **Residential（住宅）**（别墅、Airbnb、朋友家）：先选 **Province** 和 **City**，再在 **Address in Indonesia** 里写街道地址，例如 `JL. SUNSET ROAD NO. 89 KUTA`。Airbnb 用房东给的地址。**Nearest Immigration Office** 是灰色的，不用填。
+- **Others（其他）**：从 **Accomodation** 列表里选（官网就是这么拼的）。
+
+**Address in Indonesia** 这一栏没有长度上限。它只保留字母、数字、点、横线和空格，输入时自动转成大写；逗号、斜杠、`#` 和括号会被直接删掉：
+
+- `Jl. Sunset Road No. 89, Kuta` 会变成 `JL. SUNSET ROAD NO. 89 KUTA`。
+- 写 `RT 02 RW 05`，不要写 `RT 02/RW 05`，否则数字会连成 `RT 02RW 05`。
+
+多城旅行：表单只收一个地址，填第一站住的地方。不需要完整行程。
 
 ### 邮箱
 

@@ -1,0 +1,65 @@
+# Australia — passport and documents for a short visit.
+# Sources: Department of Home Affairs (ETA 601, eVisitor 651, ETA app guidance
+# for industry), the Australian High Commission in New Zealand and the
+# Australian Embassy in Denmark. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "stay"
+note_en = "There is no six-month rule."
+note_zh = "没有 6 个月规则。"
+note_zh_hant = "沒有 6 個月規則。"
+source = "https://newzealand.highcommission.gov.au/wltn/passportvalidity.html"
+quote = "Australia requires that your passport must be valid only for the period of your intended travel in and out of Australia. There is no requirement for your passport to be valid for six months after your travel."
+
+[[items]]
+topic = "passport"
+value_en = "Enter on the passport you used for the ETA"
+value_zh = "入境用申请 ETA 时的那本护照"
+value_zh_hant = "入境用申請 ETA 時的那本護照"
+applies_en = "ETA (subclass 601)"
+applies_zh = "ETA（601 类）"
+applies_zh_hant = "ETA（601 類）"
+note_en = "The ETA is linked to that passport. If it expires or you get a new one, apply for a new ETA."
+note_zh = "ETA 与这本护照电子绑定。护照过期或换了新护照，要重新申请 ETA。"
+note_zh_hant = "ETA 與這本護照電子綁定。護照過期或換了新護照，要重新申請 ETA。"
+source = "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601"
+quote = "You must enter Australia using the same passport."
+
+[[items]]
+topic = "e_passport"
+status = "required"
+value_en = "Needed for the ETA app"
+value_zh = "ETA App 要读护照芯片"
+value_zh_hant = "ETA App 要讀護照晶片"
+applies_en = "ETA (subclass 601)"
+applies_zh = "ETA（601 类）"
+applies_zh_hant = "ETA（601 類）"
+note_en = "ETA applications go through the Australian ETA app, which scans the passport and reads its chip."
+note_zh = "ETA 只能用官方 Australian ETA App 申请，App 会扫描护照并读取芯片。"
+note_zh_hant = "ETA 只能用官方 Australian ETA App 申請，App 會掃描護照並讀取晶片。"
+source = "https://immi.homeaffairs.gov.au/supporting/files/australian-eta-app-industry-guidance.pdf"
+quote = "The first steps will require you to scan the applicant’s passport and read the passport chip."
+
+[[items]]
+topic = "onward_ticket"
+status = "not_required"
+note_en = "Officers still need to see that you intend to leave and can pay to leave before your visa ends. On a one-way ticket, carry a bank statement showing you can buy a flight out."
+note_zh = "但边检要确认你打算并且有能力在签证到期前离境。只买了单程票的，带上能证明买得起离境机票的银行流水。"
+note_zh_hant = "但邊檢要確認你打算並且有能力在簽證到期前離境。只買了單程票的，帶上能證明買得起離境機票的銀行流水。"
+source = "https://denmark.embassy.gov.au/cpgn/Immi_FAQs.html"
+quote = "There is no requirement to have a return ticket when you arrive in Australia."
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+applies_en = "eVisitor (subclass 651)"
+applies_zh = "eVisitor（651 类）"
+applies_zh_hant = "eVisitor（651 類）"
+note_en = "Enough to support yourself in Australia and to leave at the end of your stay."
+note_zh = "够你在澳洲期间的开销，也够停留结束时离境。"
+note_zh_hant = "夠你在澳洲期間的開銷，也夠停留結束時離境。"
+source = "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/evisitor-651"
+quote = "You must have enough money to:"

@@ -1,0 +1,28 @@
+# Saudi Arabia — passport and documents for a short visit.
+# Source: Saudi tourist eVisa terms and conditions (Ministry of Tourism,
+# visa.visitsaudi.com). The page blocks automated reads and was read in a
+# browser. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "arrival"
+months = 6
+applies_en = "Tourist eVisa"
+applies_zh = "旅游电子签"
+applies_zh_hant = "旅遊電子簽"
+source = "https://visa.visitsaudi.com/Home/TermsConditions"
+quote = "your passport must be valid for at least 6 months at the time of entry into KSA."
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+applies_en = "Tourist eVisa"
+applies_zh = "旅游电子签"
+applies_zh_hant = "旅遊電子簽"
+note_en = "This covers any dependants travelling with you."
+note_zh = "包括随行家属的花费。"
+note_zh_hant = "包括隨行家屬的花費。"
+source = "https://visa.visitsaudi.com/Home/TermsConditions"
+quote = "You must be able to support yourself (and any dependents) during the visit."

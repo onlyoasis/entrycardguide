@@ -1,0 +1,17 @@
+# South Africa — SARS online traveller declaration: no photo or passport image
+# upload. Checked 2026-10-23 in the SARS external guide SC-PA-01-12, revision 8
+# (effective 21 October 2026, 50 pages), sections 4.1–4.6: traveller details,
+# travel details, currency, goods and vehicle branches, the captcha and the
+# confirmation of submission. The passport is typed in as document type,
+# number and country. The guide has no photo, upload, image or scan step.
+
+[[forms]]
+form = "traveller_declaration"
+label_en = "Traveller declaration"
+label_zh = "旅客申报"
+label_zh_hant = "旅客申報"
+source = "https://www.sars.gov.za/wp-content/uploads/Ops/Guides/SC-PA-01-12-SATMS-Through-SARS-Website-External-Guide.pdf"
+checked = "2026-10-23"
+
+[[forms.items]]
+kind = "none"

@@ -1,0 +1,46 @@
+# United Kingdom — passport and documents for a short visit.
+# Each [[items]] entry quotes the GOV.UK page in `source`. Checked 2026-10-23.
+# No onward-ticket rule: GOV.UK asks for money that covers the journey home.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "stay"
+source = "https://www.gov.uk/standard-visitor"
+quote = "It should be valid for the whole of your stay."
+
+[[items]]
+topic = "passport"
+value_en = "Travel on the passport you used for the ETA"
+value_zh = "入境用申请 ETA 时的那本护照"
+value_zh_hant = "入境用申請 ETA 時的那本護照"
+applies_en = "ETA"
+applies_zh = "ETA"
+applies_zh_hant = "ETA"
+note_en = "The ETA is linked to the passport you applied with."
+note_zh = "ETA 与申请时用的护照绑定。"
+note_zh_hant = "ETA 與申請時用的護照綁定。"
+source = "https://www.gov.uk/eta/apply"
+quote = "Your ETA will be linked to the passport you applied with."
+
+[[items]]
+topic = "e_passport"
+status = "not_required"
+applies_en = "ETA"
+applies_zh = "ETA"
+applies_zh_hant = "ETA"
+note_en = "The UK ETA app scans the chip if your passport has one. If it cannot scan the passport, it takes the details from the photo of the passport page."
+note_zh = "护照有芯片，UK ETA App 就扫芯片；扫不了，App 从护照资料页照片里读取信息。"
+note_zh_hant = "護照有晶片，UK ETA App 就掃晶片；掃不了，App 從護照資料頁照片裡讀取資訊。"
+source = "https://www.gov.uk/guidance/using-the-uk-eta-app"
+quote = "The app will take your passport details from the photo of your passport."
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+note_en = "The money must also cover your return or onward journey."
+note_zh = "这笔钱还要够付回程或前往下一站的路费。"
+note_zh_hant = "這筆錢還要夠付回程或前往下一站的路費。"
+source = "https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-v-visitor"
+quote = "must have sufficient funds to cover all reasonable costs in relation to their visit without working or accessing public funds, including the cost of the return or onward journey"

@@ -1,0 +1,38 @@
+# Singapore — passport and documents for a short visit.
+# Source: Immigration & Checkpoints Authority (ICA), "Entering Singapore".
+# Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "other"
+value_en = "At least 6 months left"
+value_zh = "至少还剩 6 个月"
+value_zh_hant = "至少還剩 6 個月"
+note_en = "ICA does not say which date to count from. To be safe, count from the day you leave Singapore."
+note_zh = "ICA 没写从哪天算起，稳妥起见按离开新加坡那天算。"
+note_zh_hant = "ICA 沒寫從哪天算起，穩妥起見按離開新加坡那天算。"
+source = "https://www.ica.gov.sg/enter-transit-depart/entering-singapore"
+quote = "All travellers, except Singapore passport holders, must ensure their passport has a minimum validity of 6 months."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+value_en = "Should have one"
+value_zh = "应当持有"
+value_zh_hant = "應當持有"
+note_en = "ICA lists tickets or visas for your next trip as proof of onward travel."
+note_zh = "ICA 把离境机票或下一站签证列为后续行程证明。"
+note_zh_hant = "ICA 把離境機票或下一站簽證列為後續行程證明。"
+source = "https://www.ica.gov.sg/enter-transit-depart/entering-singapore"
+quote = "Short-Term travellers should have sufficient cash and proof of onward travel (tickets, visas), and ensure that you do not stay beyond your Visit Pass validity"
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+value_en = "Should have enough cash"
+value_zh = "应带足够现金"
+value_zh_hant = "應帶足夠現金"
+source = "https://www.ica.gov.sg/enter-transit-depart/entering-singapore"
+quote = "Short-Term travellers should have sufficient cash and proof of onward travel (tickets, visas), and ensure that you do not stay beyond your Visit Pass validity"

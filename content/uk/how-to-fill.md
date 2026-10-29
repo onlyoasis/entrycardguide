@@ -3,7 +3,7 @@ title: "UK ETA Home Address: Address Line 1 Examples and Errors"
 kicker: "Understand the home-address question, split address lines, and find official help if the app will not continue."
 description: "What the UK ETA home-address question means, what to enter in address line 1, fictional examples, and official help for address errors."
 date: 2026-07-14
-lastmod: 2026-10-17
+lastmod: 2026-10-26
 country: "uk"
 weight: 20
 keywords: ["UK ETA home address", "UK ETA address line 1", "how to fill UK ETA"]
