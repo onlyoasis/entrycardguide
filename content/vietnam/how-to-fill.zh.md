@@ -3,7 +3,7 @@ title: "越南 E-Visa 申请表怎么填 2026：照片要求和易错字段"
 kicker: "越南官方 E-Visa 表单字段逐项讲解，常见错误与真实原因。约 12 分钟看完。"
 description: "越南 E-Visa 申请表怎么填：按官方 evisa.gov.vn 表单讲解照片、护照、入境口岸和付款字段。官方费用单次 $25、多次 $50，不含中介加价。"
 date: 2026-04-26
-lastmod: 2026-10-12
+lastmod: 2026-10-26
 country: "vietnam"
 weight: 20
 keywords: ["越南 e-visa 怎么填", "越南电子签证字段", "越南签证申请帮助", "越南 e-visa 照片"]
@@ -102,19 +102,17 @@ layout: how-to-fill
 
 计划在越南停留的天数。可以小于签证有效期。签证最多 90 天但你不必住满 90 天。
 
-### 允许的入境口岸
+### 预期入境口岸
 
-你计划用的机场、陆路口岸或海港。
+只能选一个，从可以搜索的下拉里点选。2026 年 10 月 15 日列表里有 79 个口岸：机场、陆路口岸和海港。搜索只匹配口岸的英文名，不认 IATA 代码，所以要输入 `Tan Son`，不是 `SGN`。
 
-- 机场：`SGN`（胡志明 / 新山一）、`HAN`（河内 / 内排）、`DAD`（岘港）、`CXR`（金兰 / 芽庄）、`PQC`（富国岛）。
-- 陆路：下拉列出每一个，例如 `Moc Bai（柬埔寨方向）`、`Lao Bao（老挝方向）`、`Huu Nghi（中国方向）`。
-- 海港：`Saigon Port`、`Da Nang Port` 等。
+- 机场：`Tan Son Nhat Int Airport (Ho Chi Minh City)`（胡志明 / 新山一）、`Noi Bai Int Airport`（河内 / 内排）、`Da Nang International Airport`（岘港）、`Cam Ranh Int Airport (Khanh Hoa)`（金兰 / 芽庄）、`Phu Quoc International Airport`（富国岛）。
+- 陆路：`Moc Bai Landport`（柬埔寨方向）、`Lao Bao Landport`（老挝方向）、`Huu Nghi Landport`（中国方向）。
+- 海港：`Ho Chi Minh City Seaport`、`Da Nang Seaport` 等。
 
-可多选。任何选中的口岸都有效；签证不绑定单一口岸。
+### 预期出境口岸
 
-### 允许的出境口岸
-
-同样的下拉。默认与入境一致。出境与入境不同也可以，选实际会用的口岸。
+第二个下拉，同样必填。它不会自动沿用入境口岸，要自己选。出境口岸和入境口岸不同，表单也接受。
 
 ## 第 5 部分：越南境内地址
 

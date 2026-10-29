@@ -92,7 +92,7 @@
       "label": "Port of entry",
       "required": true,
       "placeholder": "DPS (Bali / Ngurah Rai International)",
-      "help": "Airport IATA code or named seaport. CGK = Jakarta, DPS = Bali, SUB = Surabaya, BPN = Balikpapan.",
+      "help": "Picked from the form's Port of Entry list after you choose air, land or sea. CGK = Jakarta, DPS = Bali, SUB = Surabaya, BPN = Balikpapan.",
       "errors": {
         "required": "Port of entry is required"
       }
@@ -101,8 +101,8 @@
       "type": "text",
       "label": "Address in Indonesia",
       "required": true,
-      "placeholder": "Hotel Example, Jl. Sunset Road, Kuta, Bali",
-      "help": "Where you will stay first night. Hotel name + address is enough for tourism.",
+      "placeholder": "JL. SUNSET ROAD NO. 89 KUTA",
+      "help": "For a villa, Airbnb or private home; hotels are picked from a list on the form. The official box keeps letters, digits, dots, hyphens and spaces in capitals, so commas and slashes disappear.",
       "errors": {
         "required": "Address in Indonesia is required"
       }

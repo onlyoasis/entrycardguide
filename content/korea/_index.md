@@ -2,7 +2,7 @@
 title: "South Korea"
 kicker: "Official Korea e-Arrival Card link, free filing, and how it differs from K-ETA and Q-Code."
 description: "Korea e-Arrival Card overview: free at www.e-arrivalcard.go.kr, file from 3 days before arrival, valid 72 hours, 7 languages, and who does not need it (K-ETA holders, residents)."
-lastmod: 2026-10-14
+lastmod: 2026-10-26
 ---
 
 Korea e-Arrival Card is the official electronic arrival-card portal at `e-arrivalcard.go.kr`. It is separate from K-ETA, visas, and Q-Code health declarations.

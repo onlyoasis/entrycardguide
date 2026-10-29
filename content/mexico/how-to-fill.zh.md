@@ -3,7 +3,7 @@ title: "墨西哥 FMM-E 怎么填：每个字段填写指南和常见错误"
 kicker: "墨西哥官方 INM 表单字段逐项讲解，常见错误及含义。约 10 分钟看完。"
 description: "墨西哥 FMM-E 怎么填：按 INM 官方表单顺序讲解护照、航班、入境信息和常见错误，附免费官网入口。"
 date: 2026-04-24
-lastmod: 2026-10-05
+lastmod: 2026-10-26
 country: "mexico"
 weight: 20
 keywords: ["FMM 怎么填", "墨西哥入境表字段", "FMM-E 字段填写", "INM 表单帮助"]
@@ -66,11 +66,11 @@ layout: how-to-fill
 
 ### 入境口岸
 
-机场（IATA 代码）或陆路口岸。
+两个下拉框，都不能手动键入。**Means of entry**（入境方式）只有 *By air* 和 *By land*；选好后，**Point of entry**（入境口岸）按西班牙语名称列出对应的地点。2026 年 10 月 15 日的列表：
 
-- 机场：`MEX`（墨西哥城）、`CUN`（坎昆）、`GDL`（瓜达拉哈拉）、`TIJ`（蒂华纳）、`PVR`（巴亚尔塔港）、`SJD`（洛斯卡沃斯）等。
-- 陆路口岸：INM 下拉按名称列出（例如 `San Ysidro / Tijuana`、`Laredo / Nuevo Laredo`）。
-- 海港：按名称列出（`Cozumel`、`Progreso` 等）。
+- 空路：38 个机场，多是地方和边境机场，例如 `Aeropuerto Internacional de Chihuahua`、`Aeropuerto Internacional "General Abelardo L. Rodríguez"`（蒂华纳）。墨西哥城、坎昆、瓜达拉哈拉、巴亚尔塔港、洛斯卡沃斯都不在列表里。
+- 陆路：60 个口岸，例如 `El Chaparral`、`Mesa De Otay`（蒂华纳），`Nuevo Laredo II (Juárez - Lincoln)`、`Libertad (Paso Del Norte)`（华雷斯城）。
+- 没有海路选项。
 
 如果你的入境口岸不在下拉里，几乎肯定你不需要 FMM-E：参考 [概览页](/zh/mexico/fmm/) 看哪些入境改用护照盖章。
 

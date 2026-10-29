@@ -71,7 +71,7 @@
   },
   "entry_point": {
    "label": "入境口岸",
-   "help": "你进入墨西哥的机场或陆路口岸。机场请用 IATA 代码。",
+   "help": "选好 By air 或 By land 后，从官网清单选。名称是西班牙文，例如 Tijuana 的 El Chaparral 或 Mesa De Otay。",
    "errors": {
     "required": "请输入入境口岸"
    }

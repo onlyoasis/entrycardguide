@@ -13,3 +13,10 @@ summary = "Checker follows the live FMM: DD/MM/YYYY dates, 40-character address"
 summary_zh = "本地检查器按在线 FMM 更新：日期 DD/MM/YYYY，地址 40 字符"
 summary_zh_hant = "本地檢查器按線上 FMM 更新：日期 DD/MM/YYYY，地址 40 字符"
 detail = "Read the FMM application and validator scripts. Dates DD/MM/YYYY; arrival today to 29 days ahead. Names max 100 and accept accented Latin letters; passport number max 15; address in Mexico max 40, letters, digits and - . , \" ' only; email pattern from the form. The guide had said YYYY-MM-DD, 50-character names and a 200-character address. The port of entry is picked from a list on the form, so the checker no longer sets a 60-character limit for it."
+
+[[entries]]
+date = "2026-10-15"
+summary = "Guide follows the FMM point-of-entry lists"
+summary_zh = "填写指南按 FMM 入境口岸列表更正"
+summary_zh_hant = "填寫指南按 FMM 入境口岸列表更正"
+detail = "Read the FMM application page and its catalogue. Means of entry offers only By air and By land; Point of entry is a list of 38 airports and 60 land crossings in Spanish. Mexico City, Cancún, Guadalajara, Puerto Vallarta and Los Cabos are not on the air list, and there is no sea option. The guide had told travelers to enter IATA codes and listed sea ports."

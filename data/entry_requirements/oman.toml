@@ -1,0 +1,52 @@
+# Oman — passport and documents for a short visit.
+# Sources: Ministry of Foreign Affairs, entry visas page (updated 2026-09-22),
+# for the 14-day visa exemption, and the Royal Oman Police eVisa FAQ.
+# Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "other"
+value_en = "At least 6 months"
+value_zh = "至少 6 个月"
+value_zh_hant = "至少 6 個月"
+applies_en = "14-day visa exemption"
+applies_zh = "14 天免签"
+applies_zh_hant = "14 天免簽"
+note_en = "The ministry does not say which date to count from. To be safe, count from the day you leave."
+note_zh = "外交部没写从哪天算起，稳妥起见按离境那天算。"
+note_zh_hant = "外交部沒寫從哪天算起，穩妥起見按離境那天算。"
+source = "https://www.fm.gov.om/en/visitors/entry-visas/"
+quote = "The visitor must hold a passport valid for no less than six (6) months."
+
+[[items]]
+topic = "validity"
+basis = "arrival"
+months = 6
+applies_en = "eVisa"
+applies_zh = "电子签"
+applies_zh_hant = "電子簽"
+source = "https://evisa.rop.gov.om/Evisa-home-theme/faq_pages/faq_en.html"
+quote = "A normal passport should be at least 6 month valid prior to entering Oman."
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+applies_en = "14-day visa exemption"
+applies_zh = "14 天免签"
+applies_zh_hant = "14 天免簽"
+note_en = "You also need a confirmed hotel booking and health insurance."
+note_zh = "还要有已确认的酒店预订和医疗保险。"
+note_zh_hant = "還要有已確認的酒店預訂和醫療保險。"
+source = "https://www.fm.gov.om/en/visitors/entry-visas/"
+quote = "He must have a return ticket, a confirmed hotel reservation, health insurance, and a sum of money that will enable him to bear the burden of living during his stay in the Sultanate."
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+applies_en = "14-day visa exemption"
+applies_zh = "14 天免签"
+applies_zh_hant = "14 天免簽"
+source = "https://www.fm.gov.om/en/visitors/entry-visas/"
+quote = "He must have a return ticket, a confirmed hotel reservation, health insurance, and a sum of money that will enable him to bear the burden of living during his stay in the Sultanate."

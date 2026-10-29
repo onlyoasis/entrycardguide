@@ -131,6 +131,10 @@
   {{ .Content }}
 </article>
 
+{{- /* Passport validity, e-passport, ticket and money rules — only for
+       countries with data/entry_requirements/{country}.toml. */ -}}
+{{- partial "entry-req-card.html" . -}}
+
 {{- /* Child page navigation — every page in this section, sorted by weight
        (so main-form pages come before how-to-fill). The
        hub's own _index.md doesn't always list its children manually, so this

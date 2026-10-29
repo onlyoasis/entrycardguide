@@ -1,0 +1,19 @@
+# Peru — TAM Virtual: nothing to upload.
+# Checked 2026-10-23 on the live Migraciones lookup page
+# (cel.migraciones.gob.pe/ConsultaTAMVirtual/VerificarTAM), read in a browser
+# without typing. Its only controls are document type, document number,
+# nationality, arrival or departure date, a departure checkbox, the captcha
+# text and the verify and clear buttons. There is no file input; the page
+# downloads the TAM. Migraciones says the TAM Virtual "se genera de forma
+# automática durante el control migratorio" (gob.pe news 882413, 15 December
+# 2023).
+
+[[forms]]
+form = "tam_virtual"
+label_en = "TAM Virtual"
+label_zh = "TAM 电子入境卡"
+label_zh_hant = "TAM 電子入境卡"
+checked = "2026-10-23"
+
+[[forms.items]]
+kind = "none"

@@ -1,0 +1,34 @@
+# Bahrain — passport and documents for a short visit.
+# Source: Bahrain government services portal (bahrain.bh), visit eVisa for two
+# weeks; the service provider is Nationality, Passports and Residence Affairs.
+# The NPRA pages that state a passport validity rule could not be opened, so
+# no validity rule is listed. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+applies_en = "Two-week visit eVisa"
+applies_zh = "两周访问电子签"
+applies_zh_hant = "兩週訪問電子簽"
+note_en = "Upload it with the application, together with a hotel reservation."
+note_zh = "申请时上传，同时附酒店预订。"
+note_zh_hant = "申請時上傳，同時附酒店預訂。"
+source = "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1871"
+quote = "A copy of the passport Hotel reservation Return ticket"
+
+[[items]]
+topic = "funds"
+status = "amount"
+value_en = "Regular income of BD 300–500 a month, or BD 150 for each day of the visit"
+value_zh = "月固定收入 300–500 巴林第纳尔，或按访问天数每天 150 第纳尔"
+value_zh_hant = "月固定收入 300–500 巴林第納爾，或按訪問天數每天 150 第納爾"
+applies_en = "Two-week visit eVisa"
+applies_zh = "两周访问电子签"
+applies_zh_hant = "兩週訪問電子簽"
+note_en = "Shown with a three-month bank statement in English."
+note_zh = "用最近三个月的英文银行流水证明。"
+note_zh_hant = "用最近三個月的英文銀行流水證明。"
+source = "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1871"
+quote = "A three-month bank statement with a minimum regular income of 300-500 BD per month (whether a regular salary or pension) or any amount equivalent to 150 BD for each day of the visit, provided in English"

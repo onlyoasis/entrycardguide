@@ -1,0 +1,12 @@
+{{- /* One topic's items from entry-req-rows.html: value, who it applies to,
+       optional note and the source link. Shared by the hub card and the table.
+       Call with (dict "items" $items "empty" "i18n_key" "notes" true|false). */ -}}
+{{- range .items }}
+<div class="req-item">
+  <p class="req-value">{{ .value }}{{ with .applies }} <span class="req-applies">· {{ . }}</span>{{ end }}</p>
+  {{- if and $.notes .note }}<p class="req-note">{{ .note }}</p>{{ end }}
+  <a href="{{ .source }}" target="_blank" rel="noopener" class="req-src">{{ .host }} ↗</a>
+</div>
+{{- else }}
+<p class="req-value req-none">{{ i18n .empty }}</p>
+{{- end }}

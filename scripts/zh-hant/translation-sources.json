@@ -617,7 +617,7 @@
    },
    "port_of_entry": {
     "label": "Port of entry",
-    "help": "Airport IATA code or named seaport. CGK = Jakarta, DPS = Bali, SUB = Surabaya, BPN = Balikpapan.",
+    "help": "Picked from the form's Port of Entry list after you choose air, land or sea. CGK = Jakarta, DPS = Bali, SUB = Surabaya, BPN = Balikpapan.",
     "placeholder": "DPS (Bali / Ngurah Rai International)",
     "errors": {
      "required": "Port of entry is required"
@@ -627,8 +627,8 @@
    },
    "accommodation": {
     "label": "Address in Indonesia",
-    "help": "Where you will stay first night. Hotel name + address is enough for tourism.",
-    "placeholder": "Hotel Example, Jl. Sunset Road, Kuta, Bali",
+    "help": "For a villa, Airbnb or private home; hotels are picked from a list on the form. The official box keeps letters, digits, dots, hyphens and spaces in capitals, so commas and slashes disappear.",
+    "placeholder": "JL. SUNSET ROAD NO. 89 KUTA",
     "errors": {
      "required": "Address in Indonesia is required"
     },
@@ -1079,11 +1079,11 @@
     "maxDaysFromToday": 29
    },
    "entry_point": {
-    "label": "Port of entry",
-    "help": "Airport or land crossing where you enter Mexico. Use the IATA code for airports.",
-    "placeholder": "MEX (Mexico City)",
+    "label": "Point of entry",
+    "help": "Picked from the form's list after you choose By air or By land. Names are in Spanish, e.g. El Chaparral or Mesa De Otay for Tijuana.",
+    "placeholder": "El Chaparral",
     "errors": {
-     "required": "Port of entry is required"
+     "required": "Point of entry is required"
     },
     "type": "text",
     "required": true
@@ -2232,9 +2232,9 @@
     "format": "DD/MM/YYYY"
    },
    "port_of_entry": {
-    "label": "Allowed port of entry",
-    "help": "Pick the airport, land border, or seaport you plan to use. Vietnam's e-visa lists ~30 approved entry points.",
-    "placeholder": "SGN (Tan Son Nhat International Airport)",
+    "label": "Intended border gate of entry",
+    "help": "Picked from the form's list of airports, land border gates and seaports. Search by gate name, e.g. Tan Son or Noi Bai; IATA codes like SGN are not in the names.",
+    "placeholder": "Tan Son Nhat Int Airport (Ho Chi Minh City)",
     "errors": {
      "required": "Port of entry is required"
     },

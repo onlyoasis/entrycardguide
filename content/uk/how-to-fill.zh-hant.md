@@ -9,7 +9,7 @@ keywords: ["UK ETA 怎麼填", "英國 ETA 填寫", "UK ETA 護照掃描", "UK E
 layout: how-to-fill
 guide_title: "英國 ETA 填寫：家庭地址及其他欄位"
 walkthrough_first: true
-lastmod: 2026-10-12
+lastmod: 2026-10-26
 ---
 
 {{< official-link site="uk.eta" >}}
@@ -26,7 +26,7 @@ lastmod: 2026-10-12
 
 下面的本地檢查器覆蓋 9 組文字欄位。資料只在瀏覽器內檢查，不會發給本站。最終問題和填寫要求以英國內政部實際申請頁面為準。
 
-正式申請還要拍攝護照和人臉照片。App 可能掃描護照芯片；使用 App 且年滿 10 歲的申請人還要做人臉掃描。這些圖片和掃描步驟不在本地檢查器中模擬。
+正式申請還要拍攝護照和人臉照片。App 可能掃描護照晶片；使用 App 且年滿 10 歲的申請人還要做人臉掃描。這些圖片和掃描步驟不在本地檢查器中模擬。
 
 {{< validator country="uk" >}}
 

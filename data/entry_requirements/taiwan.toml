@@ -1,0 +1,48 @@
+# Taiwan — passport and documents for a short visit.
+# Sources: Bureau of Consular Affairs (MOFA) visa-exemption page and the
+# Regulations Governing Visa-Exempt Entry and Visa-on-Arrival. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "arrival"
+months = 6
+applies_en = "Visa-free entry"
+applies_zh = "免签入境"
+applies_zh_hant = "免簽入境"
+source = "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+quote = "A passport with remaining validity of at least six months as of the date of entry"
+
+[[items]]
+topic = "validity"
+basis = "stay"
+applies_en = "US and Japanese passports"
+applies_zh = "美国、日本护照"
+applies_zh_hant = "美國、日本護照"
+source = "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+quote = "valid for the intended period of stay"
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+applies_en = "Visa-free entry and visa on arrival"
+applies_zh = "免签入境与落地签"
+applies_zh_hant = "免簽入境與落地簽"
+note_en = "The ticket must leave before your permitted stay ends. You also need a visa for the next destination if it requires one."
+note_zh = "离境日期要在获准停留期结束之前。下一站要签证的，还要先办好签证。"
+note_zh_hant = "離境日期要在獲准停留期結束之前。下一站要簽證的，還要先辦好簽證。"
+source = "https://www.boca.gov.tw/fp-160-269-14e8b-2.html"
+quote = "The applicant has booked a return or onward air ticket/sea passage with the date of departure preceding the expiration of the length of stay"
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+applies_en = "Visa-free entry on Brunei, Philippine and Thai passports"
+applies_zh = "文莱、菲律宾、泰国护照免签入境"
+applies_zh_hant = "文萊、菲律賓、泰國護照免簽入境"
+note_en = "These travellers also need a hotel booking and a host or sponsor's contact details."
+note_zh = "这三国旅客还要有酒店预订和接待人或担保人的联系方式。"
+note_zh_hant = "這三國旅客還要有酒店預訂和接待人或擔保人的聯繫方式。"
+source = "https://www.boca.gov.tw/cp-149-4486-7785a-2.html"
+quote = "Holders of Brunei, Philippines and Thailand passports must have proof of accommodation (hotel) booking, host/sponsor's contact information and sufficient travel funds."

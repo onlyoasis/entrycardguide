@@ -1,0 +1,92 @@
+# South Africa — passport and documents for a short visit.
+# Sources: Immigration Regulations, 2014 (Department of Home Affairs,
+# consolidated PDF updated 2018), the Border Management Authority's 2026
+# Easter operational plan on gov.za, and the Department of Home Affairs ETA
+# FAQ (eta.dha.gov.za/faq, a single-page app read in a browser). Checked
+# 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "departure"
+days = 30
+source = "https://www.dha.gov.za/images/PDFs/ImmigrationRegulations2014-Updated2018-compressed.pdf"
+quote = "The period of validity of a passport contemplated in section 9(4)(a) of the Act shall not be less than 30 days after the foreigner's intended date of departure from the Republic."
+
+[[items]]
+topic = "validity"
+basis = "other"
+value_en = "At least 7 months from your travel date"
+value_zh = "从出行日起至少还剩 7 个月"
+value_zh_hant = "從出行日起至少還剩 7 個月"
+applies_en = "ETA applications"
+applies_zh = "申请 ETA 的旅客"
+applies_zh_hant = "申請 ETA 的旅客"
+note_en = "The passport must also stay valid for 30 days after the visa expires. The ETA is in use at OR Tambo, Cape Town, Lanseria and King Shaka airports."
+note_zh = "护照还要在签证到期后再有效 30 天。ETA 目前用于 OR 坦博、开普敦、兰塞里亚和沙卡国王机场。"
+note_zh_hant = "護照還要在簽證到期後再有效 30 天。ETA 目前用於 OR 坦博、開普敦、蘭塞里亞和沙卡國王機場。"
+source = "https://eta.dha.gov.za/faq"
+quote = "Be valid for at least 7 months from your intended travel or employment start date"
+
+[[items]]
+topic = "blank_pages"
+pages = 2
+source = "https://www.dha.gov.za/images/PDFs/ImmigrationRegulations2014-Updated2018-compressed.pdf"
+quote = "have at least two unused pages when presented for purposes of endorsing a port of entry visa, visa, permanent residence permit or entry or departure stamp."
+
+[[items]]
+topic = "passport"
+value_en = "Machine-readable"
+value_zh = "须为机读护照"
+value_zh_hant = "須為機讀護照"
+source = "https://www.gov.za/news/media-statements/border-management-authority-2026-easter-operational-plan-29-mar-2026"
+quote = "All travellers must present valid machine-readable passports with at least two blank pages"
+
+[[items]]
+topic = "onward_ticket"
+status = "required"
+applies_en = "Visitor visa applicants"
+applies_zh = "申请访客签证的旅客"
+applies_zh_hant = "申請訪客簽證的旅客"
+note_en = "A booking is accepted with the application."
+note_zh = "申请时提供机票预订也可以。"
+note_zh_hant = "申請時提供機票預訂也可以。"
+source = "https://www.dha.gov.za/images/PDFs/ImmigrationRegulations2014-Updated2018-compressed.pdf"
+quote = "a valid return air flight ticket or proof of reservation thereof; and"
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+applies_en = "Visitor visa applicants"
+applies_zh = "申请访客签证的旅客"
+applies_zh_hant = "申請訪客簽證的旅客"
+note_en = "Shown as bank statements for the last three months."
+note_zh = "以最近三个月的银行流水证明。"
+note_zh_hant = "以最近三個月的銀行流水證明。"
+source = "https://www.dha.gov.za/images/PDFs/ImmigrationRegulations2014-Updated2018-compressed.pdf"
+quote = "The proof of sufficient available financial resources contemplated in section 11(1)(b) of the Act shall be in the form of a recently bank certified statement"
+
+[[items]]
+topic = "onward_ticket"
+status = "may_be_asked"
+applies_en = "ETA holders"
+applies_zh = "持 ETA 的旅客"
+applies_zh_hant = "持 ETA 的旅客"
+note_en = "Listed among the documents you may be asked for at the port of entry, with proof of accommodation."
+note_zh = "列在入境口岸可能要求出示的材料里，同时列了住宿证明。"
+note_zh_hant = "列在入境口岸可能要求出示的材料裡，同時列了住宿證明。"
+source = "https://eta.dha.gov.za/faq"
+quote = "Return or onward ticket"
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+applies_en = "ETA holders"
+applies_zh = "持 ETA 的旅客"
+applies_zh_hant = "持 ETA 的旅客"
+note_en = "Listed among the documents you may be asked for at the port of entry."
+note_zh = "列在入境口岸可能要求出示的材料里。"
+note_zh_hant = "列在入境口岸可能要求出示的材料裡。"
+source = "https://eta.dha.gov.za/faq"
+quote = "Proof of sufficient funds"

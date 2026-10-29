@@ -1,0 +1,32 @@
+# Mexico — passport and documents for a short visit.
+# Sources: Consulate General of Mexico in Montreal (SRE) and the Reglamento de
+# la Ley de Migración, art. 61. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "stay"
+note_en = "The consulate says no minimum such as 6 months is needed. One other Mexican embassy page (Korea) says 6 months."
+note_zh = "领馆原文写明不需要 6 个月这类最低有效期。另有一个墨西哥使馆页面（驻韩国）写的是 6 个月。"
+note_zh_hant = "領館原文寫明不需要 6 個月這類最低有效期。另有一個墨西哥使館頁面（駐韓國）寫的是 6 個月。"
+source = "https://consulmex.sre.gob.mx/montreal/index.php/es/extranjeros/visas/340-visas-2"
+quote = "No es necesario que el pasaporte cuente con un mínimo de validez (por ejemplo de 6 meses) sin embargo, debe ser un documento vigente durante todo el tiempo de su estancia."
+
+[[items]]
+topic = "onward_ticket"
+status = "may_be_asked"
+note_en = "For tourists, the officer can also ask for hotel bookings."
+note_zh = "旅游入境的，边检还可能要看酒店预订。"
+note_zh_hant = "旅遊入境的，邊檢還可能要看酒店預訂。"
+source = "https://consulmex.sre.gob.mx/montreal/index.php/es/extranjeros/visas/340-visas-2"
+quote = "Turismo: Reservaciones de hotel, boletos de avión de regreso."
+
+[[items]]
+topic = "funds"
+status = "sufficient"
+note_en = "The officer at the border can ask you to prove you can pay for lodging and living costs during the stay."
+note_zh = "边检可以要求你证明有钱支付停留期间的住宿和生活费用。"
+note_zh_hant = "邊檢可以要求你證明有錢支付停留期間的住宿和生活費用。"
+source = "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LMigra.pdf"
+quote = "podrá solicitar que se compruebe el motivo de viaje o solvencia económica para cubrir el monto de los gastos de alojamiento y manutención"

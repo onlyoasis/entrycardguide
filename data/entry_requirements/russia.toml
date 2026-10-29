@@ -1,0 +1,30 @@
+# Russia — passport and documents for a short visit.
+# Source: Ministry of Foreign Affairs unified e-visa instructions
+# (evisa.kdmid.ru). The visa-free rule for Chinese citizens is from the
+# Prosecutor's Office legal explainer of 30 July 2026. Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "application"
+months = 6
+applies_en = "Unified e-visa"
+applies_zh = "统一电子签"
+applies_zh_hant = "統一電子簽"
+note_en = "Chinese citizens can visit visa-free with an ordinary passport, up to 30 days at a time, until 31 December 2027. No extra validity rule is published for them."
+note_zh = "中国公民持普通护照可以免签入境，每次最多 30 天，政策延至 2027 年 12 月 31 日；官方没写额外的有效期要求。"
+note_zh_hant = "中國公民持普通護照可以免簽入境，每次最多 30 天，政策延至 2027 年 12 月 31 日；官方沒寫額外的有效期要求。"
+source = "https://evisa.kdmid.ru/Home/Instruction"
+quote = "valid for at least 6 months from the date of submitting the application for a unified e-visa."
+
+[[items]]
+topic = "passport"
+value_en = "Machine-readable, issued by your country of nationality"
+value_zh = "机读护照，由国籍国签发"
+value_zh_hant = "機讀護照，由國籍國簽發"
+applies_en = "Unified e-visa"
+applies_zh = "统一电子签"
+applies_zh_hant = "統一電子簽"
+source = "https://evisa.kdmid.ru/Home/Instruction"
+quote = "Your passport must be machine-readable and issued by your country of nationality."

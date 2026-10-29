@@ -1,0 +1,22 @@
+# Cambodia — passport and documents for a short visit.
+# Source: visitor information on francophonie2026.gov.kh, run by Cambodia's
+# Ministry of Foreign Affairs and International Cooperation for the 2026
+# summit. The e-Visa FAQ at evisa.gov.kh showed no text on 2026-10-23.
+# Checked 2026-10-23.
+
+checked = "2026-10-23"
+
+[[items]]
+topic = "validity"
+basis = "other"
+value_en = "More than 6 months left on the day you arrive"
+value_zh = "入境当天剩余有效期超过 6 个月"
+value_zh_hant = "入境當天剩餘有效期超過 6 個月"
+applies_en = "e-Visa"
+applies_zh = "电子签"
+applies_zh_hant = "電子簽"
+note_en = "The page says more than six months, so exactly six months may not be enough."
+note_zh = "原文是“超过”6 个月，正好 6 个月可能不够。"
+note_zh_hant = "原文是“超過”6 個月，正好 6 個月可能不夠。"
+source = "https://francophonie2026.gov.kh/en/InformationForVisitor"
+quote = "For a Cambodian e-Visa, your passport must have more than six months’ validity at entry."
