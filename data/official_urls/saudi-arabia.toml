@@ -6,7 +6,7 @@
 url = "https://visa.visitsaudi.com/"
 name = "Saudi Tourist eVisa portal"
 agency = "Saudi Ministry of Tourism"
-last_verified = "2026-08-30"
+last_verified = "2026-11-02"
 archive_url = "https://web.archive.org/web/2026/https://visa.visitsaudi.com/"
 notes = "Read 2026-08-30. This is the live portal for the ordinary eligible-country tourist eVisa. It calls itself the official tourist eVisa portal, and its terms page says the service is operated by the Ministry of Tourism. The host is NOT a .gov.sa suffix, so every page that links here must tell the traveller to reach it from the Saudi National Platform or Visit Saudi and to check the exact hostname before entering passport or card details. 66 eligible-country passports can apply. The eVisa is normally one year, multiple entry, up to 90 days per stay, and the passport needs at least 6 months validity at entry. The candidate address visa.mofa.gov.sa is not the clearest current entry point for this product."
 
@@ -14,7 +14,7 @@ notes = "Read 2026-08-30. This is the live portal for the ordinary eligible-coun
 url = "https://visa.visitsaudi.com/Home/TermsConditions"
 name = "Tourist eVisa terms and conditions"
 agency = "Saudi Ministry of Tourism"
-last_verified = "2026-08-30"
+last_verified = "2026-11-02"
 archive_url = "https://web.archive.org/web/2026/https://visa.visitsaudi.com/Home/TermsConditions"
 notes = "Read 2026-08-30. States that the service is operated by the Ministry of Tourism, and sets out what the tourist visa covers: tourism, events, family and relative visits, leisure, and Umrah excluding Hajj. It does not cover Hajj, study or work. Same non-government host caveat as the portal itself."
 
@@ -38,7 +38,7 @@ notes = "Read 2026-08-30. Current government overview of which visa route applie
 url = "https://ksavisa.sa/"
 name = "KSA Visa platform"
 agency = "Saudi Ministry of Foreign Affairs"
-last_verified = "2026-10-26"
+last_verified = "2026-11-02"
 archive_url = "https://web.archive.org/web/2026/https://ksavisa.sa/"
 notes = "Read 2026-08-30. The broad Saudi visa platform run by the Ministry of Foreign Affairs, covering routes beyond the ordinary tourist eVisa. Passports outside the 66-country list use this platform or a Saudi mission."
 
