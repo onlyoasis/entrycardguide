@@ -1,9 +1,9 @@
 ---
-title: "China Arrival Card: Official NIA Site, Free Filing (2026)"
-kicker: "Foreign nationals entering China can file the free Arrival Card online before departure, or complete it at the port. Official URL, exemptions, timing and the receipt."
-description: "China's online Arrival Card for foreign nationals: the official s.nia.gov.cn site, free filing, the 8 exemption categories, official channels, timing and the declaration receipt."
+title: "China Arrival Card Online: Free Form & Receipt Guide"
+kicker: "File free with China's National Immigration Administration, save your receipt and show it at immigration. This is an independent guide."
+description: "Find China's free NIA arrival card form. Learn what the Entry Declaration Receipt for Foreigner means, how to save it and how to use it at immigration."
 date: 2026-09-05
-lastmod: 2026-10-26
+lastmod: 2026-11-02
 country: "china"
 weight: 10
 keywords: ["china arrival card", "china arrival card online", "china arrival card official site", "s.nia.gov.cn", "foreigner arrival card china"]
@@ -19,23 +19,29 @@ faq:
   - q: "Who does not need to file the China Arrival Card?"
     a: "Eight categories, including holders of a valid Foreign Permanent Resident ID, holders of a Hong Kong or Macau travel permit (non-Chinese nationals), 24-hour direct transit passengers staying inside the port restricted area, and members of group-visa or visa-free tour groups. The full list is on this page."
   - q: "What do I get after submitting?"
-    a: "An Entry Declaration Receipt for Foreigner. The receipt screen offers Download to Local and Send to Email. Keep the file or a screenshot reachable for inspection."
+    a: "An Entry Declaration Receipt for Foreigner from the National Immigration Administration. It records your arrival-card submission. Save it using Download to Local or Send to Email, and present its QR code at immigration inspection. It does not replace your passport or any required visa or entry permission."
+  - q: "Do I need to print the receipt?"
+    a: "The official guidance reviewed explains PDF download, email delivery and showing the record at border control. It does not establish a universal printout requirement. Save an offline copy and follow instructions at your port of entry."
   - q: "Is the form available in English?"
     a: "Yes. The interface offers 13 languages, including English, Russian, French, Spanish, Arabic, Japanese, Korean and Chinese."
 layout: country-form
 ---
 
+**Official filing fee: free (CNY 0).** Use the NIA government service below.
+
+{{< official-link site="china.arrivalcard" >}}
+
+The {{< source-link site="china.nia_notice_en" text="NIA's official fee and website warning" >}} confirms this address and that filing is free. After submitting, save your [entry declaration receipt](#declaration-receipt) for immigration inspection. Need help entering your details? Read the [passport upload, address and invitation guidance](/china/how-to-fill/).
+
 ## What the card is
 
 China's Arrival Card is the entry registration form for foreign nationals. Since 20 November 2025 it can be filed online through the National Immigration Administration's system, and the card can also be completed at the port of entry.
 
-The online filing is free. The National Immigration Administration’s fee warning confirms that filing is free. It collects document, personal and travel details. The ordinary filing screen currently has five steps, ending with accompanying-person information. A declaration receipt is available after submission.
+The form collects document, personal and travel details. A declaration receipt is available after submission. You may see this online service called the China digital arrival card or e-arrival card; use the NIA entry above.
 
 ## The official entry
 
 The web form lives at <mark>s.nia.gov.cn/ArrivalCardFillingPC/</mark>, on the government's `.gov.cn` domain.
-
-{{< official-link site="china.arrivalcard" >}}
 
 The implementing notice names five more official channels for the same filing:
 
@@ -77,9 +83,30 @@ Transit-policy durations are stay limits, not filing deadlines. This guide does 
 
 Prepare your document, address and travel details before opening the form. If you cannot file online, the NIA notice provides equipment and paper-card options at the port.
 
-## What you get
+## What is the National Immigration Administration Entry Declaration Receipt for Foreigner? {#declaration-receipt}
 
-The system returns an Entry Declaration Receipt for Foreigner. The receipt screen offers two buttons, "Download to Local" and "Send to Email". Pick one before you close the page and keep the file or screenshot reachable on the device you travel with.
+It is the record produced after you submit China's online Arrival Card through the National Immigration Administration (NIA). The receipt identifies your entry declaration and includes a QR code for inspection. Getting it records your submission; you still need to undergo immigration inspection with your passport and any required visa or entry permission.
+
+### How to get and save the receipt
+
+1. Open the official NIA filing service above, choose English and select Entry Declaration. Follow the form's instructions for your trip.
+2. Check your information, submit it and complete the declaration statement and signature as prompted. Continue until the receipt screen appears.
+3. Choose **Download to Local** to save the receipt, or **Send to Email** to send it to your email address. Official guidance confirms that the receipt can be downloaded or sent as a PDF.
+4. Before travelling, open the saved file on the phone or device you will carry. As a practical backup, keep a readable screenshot with the whole QR code visible. If you used email, download the attachment so you can open it without a connection.
+
+The screenshot and offline-copy steps are our preparation advice. Do not rely solely on a browser tab remaining open or an email arriving automatically.
+
+### How to use it when entering China
+
+Have your passport and saved receipt ready at immigration inspection. Show the receipt's QR code or entry record to border-control staff and follow their instructions. The {{< source-link site="china.receipt_guide" text="NIA guide republished by the Beijing government" >}} says to show the record to border control upon entry; the {{< source-link site="china.receipt_faq" text="Nantong government FAQ, step 7" >}} explains signing the declaration, showing the QR code at clearance and downloading or sending the PDF receipt.
+
+The receipt is for your arrival-card declaration. Do not use it as a substitute for a visa or as proof that entry has already been approved. If you cannot complete the online filing, the NIA confirms that port equipment and paper arrival cards remain available. Ask staff for help if you cannot open your saved receipt.
+
+### Do I need a printout, and can I retrieve it later?
+
+The official guidance reviewed does not establish a universal printout requirement. It also does not confirm a receipt validity period or a general recovery procedure for a lost receipt. These points remain **unconfirmed**; follow the current portal and port instructions. Save your copy before closing the receipt page rather than assuming you can retrieve it later.
+
+*Sources checked: 2 November 2026. The official web entry and published guidance were reviewed; no personal declaration was submitted. The receipt-saving guidance is documented by official sources, not a completed filing test by this site.*
 
 ## Help with the form
 
@@ -89,7 +116,7 @@ The passport upload accepts JPEG or PNG images. It compresses the image before c
 
 Invitation details appear only when you answer that you have an inviting entity or person in China. A hotel booking does not by itself make the hotel your inviter; the accommodation address is a separate question.
 
-See the [China Arrival Card filling guide](/china/how-to-fill/) for eight selected items and the upload, address and invitation rules. This guide does not provide an online pre-check.
+See [how to fill the China Arrival Card: passport upload, address and invitation fields](/china/how-to-fill/) for eight selected items and their rules. This guide does not provide an online pre-check.
 
 ## Frequently asked
 
@@ -109,7 +136,10 @@ Eight categories, from Foreign Permanent Resident ID holders to fast-channel use
 Yes. The interface offers 13 languages in total, including Chinese and English.
 
 ### What do I get after submitting?
-An Entry Declaration Receipt for Foreigner. Use Download to Local or Send to Email, and keep it reachable for inspection.
+An Entry Declaration Receipt for Foreigner from the National Immigration Administration. It records your arrival-card submission. Save it using Download to Local or Send to Email, and present its QR code at immigration inspection. It does not replace your passport or any required visa or entry permission.
+
+### Do I need to print the receipt?
+The official guidance reviewed explains PDF download, email delivery and showing the record at border control. It does not establish a universal printout requirement. Save an offline copy and follow instructions at your port of entry.
 
 ---
 
