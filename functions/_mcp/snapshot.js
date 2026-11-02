@@ -30167,8 +30167,8 @@ export default {
           "name": "Arrival Card Filling (入境卡填报)",
           "url": "https://s.nia.gov.cn/ArrivalCardFillingPC/",
           "agency": "National Immigration Administration (国家移民管理局)",
-          "lastVerified": "2026-10-26",
-          "notes": "The online arrival card for foreign nationals, run by the NIA on the .gov.cn domain. Interface offers 13 languages including English. Free. The filing notice on the site lists 8 exemption categories, says transit travellers leaving the port (24-hour and 240-hour stays) may also file here, and the implementing notice confirms the card can be completed at the port. Selected controls and conditional branches were checked in the saved official bundle js/app.bc4b0fcf.js on 2026-09-05. This is not a completed end-to-end filing or a verification of every branch."
+          "lastVerified": "2026-11-02",
+          "notes": "The online arrival card for foreign nationals, run by the NIA on the .gov.cn domain. Interface offers 13 languages including English. Free. The filing notice on the site lists 8 exemption categories, says transit travellers leaving the port (24-hour and 240-hour stays) may also file here, and the implementing notice confirms the card can be completed at the port. Selected controls and conditional branches were checked in the saved official bundle js/app.bc4b0fcf.js on 2026-09-05. On 2026-11-02 the public entry page was reachable as a JavaScript application shell and the NIA English notice confirmed its URL and free filing. This is not a completed end-to-end filing or a verification of every branch."
         },
         {
           "key": "consulate_notice",
@@ -30185,9 +30185,33 @@ export default {
           "agency": "National Immigration Administration",
           "lastVerified": "2026-10-26",
           "notes": "Published 2025-12-02. States that offshore operators have been imitating the arrival card filing site and taking fees from travellers, and restates that the official filing carries no fee."
+        },
+        {
+          "key": "nia_notice_en",
+          "name": "Beware of Fraudulent Websites for Arrival Card Filling",
+          "url": "https://en.nia.gov.cn/n147418/n147463/c191530/content.html",
+          "agency": "National Immigration Administration",
+          "lastVerified": "2026-11-02",
+          "notes": "Published 2025-12-05. Confirms the official ArrivalCardFillingPC URL, free filing and the continued availability of port equipment and paper arrival cards. English notice read on 2026-11-02."
+        },
+        {
+          "key": "receipt_guide",
+          "name": "Comic-Style Guide to Online Arrival Card",
+          "url": "https://english.beijing.gov.cn/mostrequested/list/202603/t20260318_4560102.html",
+          "agency": "Beijing government, republishing National Immigration Administration guidance",
+          "lastVerified": "2026-11-02",
+          "notes": "The page credits NIA and instructs travellers to submit information and show the record to border control upon entry. Page text read on 2026-11-02; the linked mobile-instructions image timed out, so this check does not verify its image-only details."
+        },
+        {
+          "key": "receipt_faq",
+          "name": "Foreigners' online Arrival Card FAQ (Chinese)",
+          "url": "https://wb.nantong.gov.cn/ntszfwqswbgs/wdzsk/content/0a02c6e4-49b2-4bef-a1ed-be2a3b9946dd.html",
+          "agency": "Nantong Municipal Foreign Affairs Office",
+          "lastVerified": "2026-11-02",
+          "notes": "Published 2026-03-12. Step 7 states: 签署声明，通关时出示二维码，可下载/发送PDF回执。 Full search-indexed official text reviewed on 2026-11-02; a direct page fetch returned HTTP 403, so current live availability remains unverified. Does not establish a universal printout requirement, receipt validity period or retrieval procedure."
         }
       ],
-      "lastVerified": "2026-10-26"
+      "lastVerified": "2026-11-02"
     },
     {
       "slug": "south-africa",
@@ -44273,6 +44297,13 @@ export default {
       }
     ],
     "china": [
+      {
+        "date": "2026-11-02",
+        "summary": "English arrival-card guide: official free filing entry and declaration receipt",
+        "summary_zh": "英文入境卡指南补充官方免费入口和申报回执说明",
+        "summary_zh_hant": "英文入境卡指南補充官方免費入口和申報回執說明",
+        "detail": "Moved the official filing link and free fee explanation to the beginning of the English guide. Added receipt meaning, saving options, use at border control and official sources. Printout requirements, validity and recovery remain unconfirmed. Source review did not include a completed declaration; the Nantong FAQ was available in search-indexed official text but returned 403 on direct fetch. Local revision only; publication and search impact are not verified."
+      },
       {
         "date": "2026-09-05",
         "summary": "China Arrival Card guide prepared and corrected after review",
