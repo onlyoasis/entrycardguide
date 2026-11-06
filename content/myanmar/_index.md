@@ -3,7 +3,7 @@ title: "Myanmar"
 kicker: "The Tourist eVisa costs USD 50 in the official guide and works only at 4 named entry points."
 description: "Independent Myanmar Tourist eVisa guide: official evisa.moip.gov.mm portal, USD 50 guide price, 28-day stay, 90-day Approval Letter and 4 entry points."
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 Myanmar's **Tourist eVisa** is a paid, single-entry visa. The current official FAQ lists 100 eligible nationalities. Check that list before creating an account.
@@ -21,6 +21,14 @@ The Tourist eVisa permits a 28-day stay. Its Approval Letter is valid for 90 day
 ### 2. Prepare the application
 Eleven checks from the official FAQ and 25-page guide. No invented regexes or form error text.
 → [Open the application guide](/myanmar/how-to-fill/)
+
+## Who applies, and who does not
+
+- **Who applies:** nationals on the tourist eVisa eligibility list.
+- **Who does not:** ordinary passport holders from the countries on the official exemption list, for tourist visits within the stated exemption period.
+- **By nationality:** there is no separate form by nationality. Whether your passport can use it, or needs it at all, is on the official {{< source-link site="myanmar.tourist_eligibility" text="tourist eVisa page" >}}.
+
+Source: {{< source-link site="myanmar.tourist_eligibility" text="Ministry of Hotels and Tourism" >}}.
 
 ## Fast facts
 

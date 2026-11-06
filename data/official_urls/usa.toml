@@ -109,3 +109,24 @@ domain = "travelusaesta.com"
 path = "/terms.html"
 first_observed = "2026-07-13"
 evidence = "Observed 2026-07-13: the terms page listed USD $140 per application, including the government fee, for ESTA submission support. The official ESTA site displayed USD $40.27, a difference of USD $99.73."
+
+[esta_exemptions]
+url = "https://www.help.cbp.gov/s/article/Article-1441?language=en_US"
+name = "Canadian citizen: do I need ESTA? (CBP)"
+agency = "U.S. Customs and Border Protection"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 in a browser for the hub page's who-applies section. Canadian citizens on a Canadian passport and US lawful permanent residents who are VWP citizens do not need ESTA; VWP citizens transiting the US by air must apply."
+
+[esta_land]
+url = "https://www.help.cbp.gov/s/article/Article-1291?language=en_US"
+name = "Do I need an ESTA to enter by land? (CBP)"
+agency = "U.S. Customs and Border Protection"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 in a browser for the hub page's who-applies section. VWP travellers need ESTA by air, sea or land; children of any age need their own ESTA."
+
+[esta_visa_exemption]
+url = "https://www.help.cbp.gov/s/article/Article-1437?language=en_US"
+name = "What is ESTA? (CBP)"
+agency = "U.S. Customs and Border Protection"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 in a browser for the hub page's who-applies section. Travellers on valid visas are not required to apply for an ESTA."

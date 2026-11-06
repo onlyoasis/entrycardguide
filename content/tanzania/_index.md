@@ -3,7 +3,7 @@ title: "Tanzania"
 kicker: "The fee and route depend on the passport and purpose. Check those before opening the payment flow."
 description: "Independent Tanzania Online Visa guide: official .go.tz portal, USD 50 Ordinary Visa, USD 100 United States tourist route, USD 30 Transit Visa and application documents."
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 Tanzania uses one government portal for online visas to Tanzania Mainland and Zanzibar. That does not mean every traveller buys the same visa.
@@ -21,6 +21,14 @@ Compare exemption, referral, Ordinary, Multiple and Transit routes.
 ### 2. Prepare the public start screen and documents
 Ten checks from the live first page and the current government guidelines.
 → [Open the application guide](/tanzania/how-to-fill/)
+
+## Who applies, and who does not
+
+- **Who applies:** travellers who need a visa for Tanzania Mainland or Zanzibar. Every passport holder submits their own application.
+- **Who does not:** nationals of the countries on the official list of those who do not require a visa.
+- **By nationality:** there is no separate form by nationality. Whether your passport can use it, or needs it at all, is on the official {{< source-link site="tanzania.visa_free_countries" text="visa-free country list" >}}.
+
+Sources: {{< source-link site="tanzania.evisa" text="online visa portal" >}}, {{< source-link site="tanzania.guidelines" text="guidelines" >}} and the {{< source-link site="tanzania.visa_free_countries" text="visa-free list" >}}.
 
 ## Fast facts
 

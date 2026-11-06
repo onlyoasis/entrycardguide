@@ -87,3 +87,24 @@ verification_title_zh_hant = "口岸仍有決定權"
 verification_body_en = "An ETA is an authorisation to travel. Passport validity, the return ticket and funds can still be checked at the port of entry."
 verification_body_zh = "ETA 只是出行授权。护照有效期、返程票和资金在口岸仍可能被查验。"
 verification_body_zh_hant = "ETA 只是出行授權。護照有效期、返程票和資金在口岸仍可能被查驗。"
+
+[eta_faq]
+url = "https://www.eta.gov.lk/slvisa/visainfo/faq.jsp?locale=en_US"
+name = "ETA FAQ"
+agency = "Department of Immigration and Emigration, Sri Lanka"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-applies section. Holders of a valid residence visa or multiple-entry visa cannot lodge a fresh ETA until that visa expires or is cancelled."
+
+[eta_scope]
+url = "https://www.eta.gov.lk/slvisa/visainfo/center.jsp?locale=en_US"
+name = "ETA information centre"
+agency = "Department of Immigration and Emigration, Sri Lanka"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-applies section. All foreign nationals, except listed exemptions, including nationals of the 40 fee-waiver countries and of the Maldives, Seychelles and Singapore, must obtain an ETA before arrival."
+
+[official_exemptions]
+url = "https://www.eta.gov.lk/slvisa/visainfo/diplo.jsp?locale=en_US"
+name = "ETA exemptions for diplomatic and official passports"
+agency = "Department of Immigration and Emigration, Sri Lanka"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-applies section. Exemption table for diplomatic and official/service passports; also lists citizens of Hong Kong SAR, up to 30 days."

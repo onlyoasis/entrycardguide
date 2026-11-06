@@ -3,7 +3,7 @@ title: "The Bahamas"
 kicker: "C17 is digital, but not every visitor follows the same declaration route."
 description: "Independent Bahamas C17 guide: who files electronically, official Exempt .gov.bs portal, operator identity, free filing, QR clearance and the limited BDAC pilot."
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 The Bahamas has a government-authorized digital Customs C17 route at `exempt.gov.bs`. Check the traveller category before opening it.
@@ -21,6 +21,14 @@ See who files, who makes an oral declaration, why Exempt Technologies appears on
 ### 2. Prepare the digital declaration
 Twelve checks covering the passport profile, passenger and travel data, baggage, invoices, alcohol, tobacco, goods and QR submission.
 → [Open the C17 field guide](/bahamas/how-to-fill/)
+
+## Who has to file it
+
+- **Must file:** returning residents, whether or not they have anything to declare; visitors with items to declare.
+- **Visitors with only used personal belongings:** they make an oral baggage declaration instead.
+- **By nationality:** there is no US or Chinese version. Customs sorts you by residence and by what you carry, not by passport.
+
+Sources: {{< source-link site="bahamas.airport_notice" text="airport notice" >}} and {{< source-link site="bahamas.customs_arriving" text="Bahamas Customs arrivals page" >}}. Whether you also need a visa is a separate question.
 
 ## Fast facts
 

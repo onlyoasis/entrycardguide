@@ -116,3 +116,10 @@ domain = "visasforms.com"
 path = "/Turkey"
 first_observed = "2026-07-14"
 evidence = "Observed 2026-07-14: the page called itself an 'Official Turkey eVisa Service' and advertised a USD $95 service fee including the government fee, while later acknowledging that applicants can apply directly on the government website."
+
+[general_visa_guidance]
+url = "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa"
+name = "General information about Turkish visas"
+agency = "Republic of Türkiye Ministry of Foreign Affairs"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-applies section. Some applicants are exempt from a visa for tourist or business visits; others can obtain an e-Visa."

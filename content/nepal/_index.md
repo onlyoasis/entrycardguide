@@ -3,7 +3,7 @@ title: "Nepal"
 kicker: "Most eligible tourists can pre-fill the visa-on-arrival form online. The barcode receipt is not the visa."
 description: "Independent Nepal Tourist Visa guide: official NepaliPort form, USD 30 / 50 / 125 tiers, gratis categories, 15-day receipt and separate ETA route."
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 Nepal's **online Tourist Visa form** is a pre-fill for visa on arrival. Submit it before travel, save the barcode receipt, pay the applicable fee, and present everything to the immigration officer who issues the visa at the port.
@@ -21,6 +21,14 @@ Indian citizens need no visa. Chinese nationals currently receive a gratis Touri
 ### 2. Prepare the pre-fill
 Ten checks from the live NepaliPort screen and official Department guidance.
 → [Open the field guide](/nepal/how-to-fill/)
+
+## Who applies, and who does not
+
+- **Who applies:** visa-on-arrival travellers. Nationals of all but a few countries can get one, and the embassy lists the online application form among the documents.
+- **Who does not:** we found no official text with a general exemption from this form, so this page does not list one.
+- **By nationality:** there is no separate form by nationality. Whether your passport can use it, or needs it at all, is on the official {{< source-link site="nepal.china_tourist_visa" text="Nepal Embassy visa page" >}}.
+
+Source: {{< source-link site="nepal.china_tourist_visa" text="Embassy of Nepal in Beijing" >}}.
 
 ## Fast facts
 

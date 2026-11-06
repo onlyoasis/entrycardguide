@@ -2,7 +2,7 @@
 title: "Thailand"
 kicker: "Everything you need to know about the Thailand Digital Arrival Card (TDAC), without paying a middleman."
 description: "Free, independent guides to Thailand's TDAC. Official URL, every field explained."
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 The Thailand Digital Arrival Card (TDAC) replaced the paper arrival card in May 2025. It is required for every foreign arrival, free to file, and accepted only at `tdac.immigration.go.th`.
@@ -24,6 +24,14 @@ Field-by-field walkthrough, in the exact order the form asks. Covers every error
 ### 3. After you land
 Immigration, customs limits, the cash declaration threshold, and the official taxi rules at Suvarnabhumi.
 → [Landing in Thailand](/thailand/landing/)
+
+## Who has to file it
+
+- **Must file:** every non-Thai national entering Thailand, including infants and children.
+- **Does not file:** Thai nationals; transit or transfer passengers who do not pass immigration control; travellers entering on a Border Pass; crew.
+- **By nationality:** there is no separate TDAC for Indian, US, Singaporean or other travellers. Mainland Chinese, Hong Kong, Macao and Taiwan passports are non-Thai too, so they file the same free form.
+
+Sources: {{< source-link site="thailand.user_guide" text="TDAC user guide" >}}, {{< source-link site="thailand.faq" text="TDAC FAQ" >}} and the {{< source-link site="thailand.consulate_scope" text="Thai Consulate-General in Hong Kong" >}}. Whether you also need a visa is a separate question.
 
 ## The fast facts
 

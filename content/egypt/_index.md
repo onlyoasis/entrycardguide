@@ -3,7 +3,7 @@ title: "Egypt"
 kicker: "The government e-Visa is USD 30 single entry and USD 65 multiple entry. Check the eligible-nationality list before you start."
 description: "Independent Egypt e-Visa guide: the official visa2egypt.gov.eg portal, current USD 30 and USD 65 fees, the 7-day lead time and the official entry checklist."
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 Egypt's e-Visa is applied for on a government portal run by the Ministry of Interior. Current tourism fees are **USD 30 single entry** and **USD 65 multiple entry**.
@@ -23,6 +23,14 @@ What USD 30 and USD 65 buy, the 7-day lead time, and why arrival visas depend on
 ### 2. What the application and the border ask for
 Ten items from the portal and its FAQ, including the official entry checklist.
 → [Open the field guide](/egypt/how-to-fill/)
+
+## Who applies, and who does not
+
+- **Who applies:** citizens of the countries shown on the portal. It issues tourist visas only.
+- **Who does not:** we found no general exemption text on the portal, so this page does not give one.
+- **By nationality:** there is no separate form by nationality. Whether your passport can use it, or needs it at all, is on the official {{< source-link site="egypt.faq" text="e-Visa FAQ" >}}.
+
+Sources: {{< source-link site="egypt.faq" text="e-Visa FAQ" >}} and {{< source-link site="egypt.embassy_visa_requirements" text="embassy visa requirements" >}}.
 
 ## Fast facts
 

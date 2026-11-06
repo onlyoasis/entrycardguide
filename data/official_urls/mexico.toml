@@ -123,3 +123,10 @@ domain = "ivisa.com"
 path = "/mexico"
 first_observed = "2024-06-01"
 evidence = "Commercial visa middleman charging fees for the free FMM-E."
+
+[air_fmmd]
+url = "https://www.gob.mx/inm/articulos/forma-migratoria-multiple-digital-fmmd?idiom=es"
+name = "Forma Migratoria Múltiple Digital (FMMd)"
+agency = "Instituto Nacional de Migración"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-files section. INM: if you enter by air, you do not have to fill in the electronic FMM (FMMe)."

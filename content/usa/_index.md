@@ -2,7 +2,7 @@
 title: "United States ESTA: Official Website, $40.27 Fee, and Middleman Check"
 kicker: "The official ESTA site is esta.cbp.dhs.gov. ESTA is a paid travel authorization, not a visa."
 description: "United States ESTA guide: official CBP website, USD $40.27 fee, VWP eligibility, application fields, and commercial middleman warnings."
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 ESTA is the United States travel authorization for eligible Visa Waiver Program travelers. It is not a visa. Apply on the U.S. Customs and Border Protection website.
@@ -18,6 +18,14 @@ No. An approved application costs **USD $40.27**. See the official fee split, va
 ### 2. Every field, in order
 Passport, name, contact, employer, U.S. contact, and optional social media details.
 → [Field-by-field guide](/usa/how-to-fill/)
+
+## Who applies, and who does not
+
+- **Who applies:** citizens of Visa Waiver Program countries travelling under the VWP, by air, sea or land. Children of any age need their own ESTA, and VWP citizens transiting the United States by air still apply.
+- **Who does not:** Canadian citizens travelling on a Canadian passport; US lawful permanent residents who are citizens of a VWP country; travellers on a valid US visa.
+- **By nationality:** UK citizens on a VWP trip use the same ESTA. If your passport is not from a VWP country, ESTA is not your route.
+
+Sources: CBP answers on {{< source-link site="usa.esta_land" text="who needs ESTA" >}}, {{< source-link site="usa.esta_exemptions" text="Canadians and green-card holders" >}} and {{< source-link site="usa.esta_visa_exemption" text="visa holders" >}}.
 
 ## The fast facts
 

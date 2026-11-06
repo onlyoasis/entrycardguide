@@ -3,7 +3,7 @@ title: "Israel"
 kicker: "ETA-IL is only for visa-exempt passports. Check eligibility before paying ILS 25."
 description: "Independent Israel ETA-IL guide: visa-exempt eligibility, official PIBA URL, ILS 25 fee and 72-hour decision window."
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 ETA-IL is Israel's electronic travel authorisation for short visitors from visa-exempt countries. It became mandatory on 1 January 2025. It does not turn a visa-required passport into a visa-exempt one.
@@ -23,6 +23,14 @@ Who can use ETA-IL, the official fee and what approval covers.
 ### 2. Prepare the application
 Six public preparation checks. No invented form regexes or error messages.
 → [Open the application guide](/israel/how-to-fill/)
+
+## Who applies, and who does not
+
+- **Who applies:** visitors from visa-exempt countries, who must get ETA-IL before departing for Israel.
+- **Who does not:** Israeli citizens and holders of an Israeli identity number.
+- **By nationality:** the UK Foreign Office says British citizens need an ETA before they arrive. If your passport is visa-required, ETA-IL is not your route.
+
+Sources: {{< source-link site="israel.eta_scope_notice" text="Israeli Embassy ETA-IL notice" >}} and {{< source-link site="israel.british_eta_guidance" text="UK travel advice for Israel" >}}.
 
 ## Fast facts
 

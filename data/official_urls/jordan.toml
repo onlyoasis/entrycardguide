@@ -114,3 +114,10 @@ verification_body_zh_hant = "簽證仍由口岸官員簽發。通票只有在出
 fields_walkthrough_en = "The 17 items that actually cause trouble, in form order."
 fields_walkthrough_zh = "按表单顺序整理的 17 个真正容易出错的环节。"
 fields_walkthrough_zh_hant = "按表單順序整理的 17 個真正容易出錯的環節。"
+
+[pass_faq]
+url = "https://www.jordanpass.jo/Contents/FAQs.aspx"
+name = "Jordan Pass FAQs"
+agency = "Ministry of Tourism and Antiquities of Jordan"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-buys section. The Jordan Pass is not a visa; it is not available to Arabic nationality holders; children under 12 accompanied by parents enter the tourist sites free."

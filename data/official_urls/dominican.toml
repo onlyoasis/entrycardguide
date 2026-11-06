@@ -142,3 +142,17 @@ url = "https://migracion.gob.do/servicio/solicitud-de-e-ticket-entrada-y-salida-
 name = "E-Ticket service requirements"
 agency = "Dirección General de Migración"
 last_verified = "2026-10-12"
+
+[filing_exemptions]
+url = "https://es.godominicanrepublic.com/planea-tu-viaje/requisitos-de-viaje"
+name = "E-Ticket transport exceptions (Spanish)"
+agency = "Ministry of Tourism"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-files section. Passengers arriving on private flights, non-commercial vessels, ferries or cruise ships do not need to complete the E-Ticket."
+
+[filing_scope]
+url = "https://www.godominicanrepublic.com/travel/entry-requirements"
+name = "Entry requirements and E-Ticket scope"
+agency = "Ministry of Tourism"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-files section. All foreign and Dominican passengers entering or departing on commercial flights must complete the free electronic entry and exit form."

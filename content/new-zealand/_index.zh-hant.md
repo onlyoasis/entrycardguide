@@ -2,7 +2,7 @@
 title: "新西蘭入境卡官網指南：NZTD 免費，NZeTA 另算"
 kicker: "所有入境新西蘭的人都要填免費的 NZTD。NZeTA 是另一項旅行授權。"
 description: "新西蘭入境卡中文指南：NZTD 官方網站、免費規則、NZeTA 多少錢和適用人群、18 個欄位及常見加價區間。"
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 每個入境新西蘭的人都要填寫 New Zealand Traveller Declaration，包括新西蘭公民、嬰兒和兒童。NZTD 不收填寫費或提交費。
@@ -18,6 +18,14 @@ lastmod: 2026-11-02
 ### 2. 18 個欄位怎麼填
 按護照、行程、聯繫方式、入境身份、限制品和生物安全申報逐項核對。
 → [查看 NZTD 欄位指南](/zh-hant/new-zealand/how-to-fill/)
+
+## 誰要填，誰不用填
+
+- **要填**：所有進入新西蘭的人，新西蘭護照持有人也要填。每人一份，嬰兒和兒童也要單獨填。
+- **不用填**：在轉機區停留 24 小時以內、不入境新西蘭的轉機旅客。
+- **按國籍或證件**：不分國籍。中國大陸、香港、臺灣護照和新西蘭、澳大利亞護照填同一張免費 NZTD。NZeTA 另算。
+
+來源：{{< source-link site="new-zealand.nztd" text="NZTD 官網" >}}、{{< source-link site="new-zealand.completion_guide" text="填寫說明" >}}、{{< source-link site="new-zealand.air_transit" text="新西蘭海關轉機規定" >}}。要不要簽證或 NZeTA 是另一回事。
 
 ## 先記住這 6 點
 

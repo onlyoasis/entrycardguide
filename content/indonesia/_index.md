@@ -2,7 +2,7 @@
 title: "Indonesia"
 kicker: "Everything you need to know about Indonesia's All Indonesia arrival declaration and e-CD customs record, without paying a middleman."
 description: "Free, independent guide to Indonesia's official All Indonesia arrival declaration. Required for arrivals, free, and filed at allindonesia.imigrasi.go.id."
-lastmod: 2026-10-12
+lastmod: 2026-11-06
 ---
 
 Indonesia's current traveler-facing arrival declaration is **All Indonesia** at `allindonesia.imigrasi.go.id`. It includes the free customs declaration record that replaced the paper e-CD workflow.
@@ -16,6 +16,14 @@ Indonesia also has a separate **e-Visa on Arrival (e-VOA)** at `evisa.imigrasi.g
 ### 1. The All Indonesia / e-CD declaration, explained without a fee
 Who must file, when, and how to tell the official government site from a reseller.
 → [Read the overview](/indonesia/e-cd/)
+
+## Who has to file it
+
+- **Must file:** every Indonesian citizen and foreign national entering Indonesia. Air and sea arrivals use All Indonesia.
+- **Land borders:** arrivals by land use the separate customs e-CD route instead. That is a different channel, not an exemption.
+- **By nationality:** there is no US, Australian or Hong Kong version. Foreigners and Indonesians file the same declaration.
+
+Sources: {{< source-link site="indonesia.immigration_scope" text="Directorate General of Immigration" >}} and {{< source-link site="indonesia.customs_arrival_channels" text="Indonesian Customs arrival channels" >}}. Whether you also need a visa is a separate question.
 
 ## The fast facts
 
