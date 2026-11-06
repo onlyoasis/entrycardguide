@@ -3,7 +3,7 @@ title: "Cuba"
 kicker: "D'Viajeros is free. A tourist eVisa is separate and may be paid. Do not buy them as one form."
 description: "Independent Cuba D'Viajeros guide: official free form, seven-day window, QR code and separate eVisa requirement."
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 Cuba has two different entry steps that are often presented as one product.
@@ -24,6 +24,14 @@ Understand the two documents before entering personal or payment details.
 ### 2. Prepare the four information sections
 Traveller, immigration, customs and health information, with no invented regexes.
 → [Open the field guide](/cuba/how-to-fill/)
+
+## Who has to file it
+
+- **Must file:** every passenger arriving in Cuba completes D'Viajeros, truthfully, for each arrival.
+- **Exemptions:** we found no official text that exempts Cuban citizens, residents, crew or transit passengers, so this page does not list any.
+- **By nationality:** there is no separate form by nationality. Every passenger fills the same D'Viajeros.
+
+Source: {{< source-link site="cuba.mandatory_notice" text="D'Viajeros mandatory notice" >}}. Whether you also need a visa or tourist card is a separate question.
 
 ## Fast facts
 

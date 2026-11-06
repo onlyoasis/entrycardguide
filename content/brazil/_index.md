@@ -3,7 +3,7 @@ title: "Brazil"
 kicker: "Check eligibility first. Brazil sends eligible Australian, Canadian and U.S. passport holders from gov.br to the VFS Global e-Visa portal."
 description: "Independent Brazil e-Visa guide: eligibility-first check, government-designated contractor, USD 80.90 fee and emailed PDF."
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 Do not start with payment. Brazil's current VFS e-Visa route is exclusively for eligible holders of valid Australian, Canadian and United States passports. Other travellers must check the current Brazilian government visa rules for their own passport.
@@ -23,6 +23,14 @@ Check the passport group, government link chain, USD 80.90 fee and issued validi
 ### 2. Prepare the application
 Collect the passport page, photograph, current travel details and email.
 → [Open the field guide](/brazil/how-to-fill/)
+
+## Who applies, and who does not
+
+- **Who applies:** visitors who need a Brazilian visitor visa can request it as an e-Visa, without going to a consulate.
+- **Who does not:** if your passport does not need a visitor visa, there is no e-Visa to request.
+- **By nationality:** there is no separate form by nationality. Whether your passport can use it, or needs it at all, is on the official {{< source-link site="brazil.visitor_eligibility" text="visitor visa page" >}}.
+
+Source: {{< source-link site="brazil.visitor_eligibility" text="Brazilian consulate visitor visa page" >}}.
 
 ## Fast facts
 

@@ -3,7 +3,7 @@ title: "Qatar"
 kicker: "Citizens of more than 102 countries can use free entry. Hayya is the e-Visa route for travellers who still need one."
 description: "Independent Qatar entry guide: visa-free checks, the official Hayya e-Visa platform, A1/A2/A3 categories and QAR 100 tourist visa."
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 Qatar's current visitor system is passport-first. Qatar Tourism says citizens of more than 102 countries can use free entry. GCC citizens do not need a visa.
@@ -21,6 +21,14 @@ Use the live Qatar Tourism checker, then choose the Hayya category only if the r
 ### 2. Prepare the route
 Eight checks from the public policy checker and Hayya category page. No invented form regexes or error text.
 → [Open the application guide](/qatar/how-to-fill/)
+
+## Who applies, and who does not
+
+- **Who applies:** visitors who need an entry visa, through Hayya. Visitors offered the visa-free option can enter visa-free or choose a Hayya A1 visa instead.
+- **Who does not:** GCC nationals, who can visit Qatar without a visa.
+- **By nationality:** there is no separate form by nationality. Whether your passport can use it, or needs it at all, is on the official {{< source-link site="qatar.visa_guide" text="visa guide" >}}.
+
+Sources: {{< source-link site="qatar.visa_guide" text="Visit Qatar visa guide" >}} and {{< source-link site="qatar.hayya" text="Hayya" >}}.
 
 ## Fast facts
 

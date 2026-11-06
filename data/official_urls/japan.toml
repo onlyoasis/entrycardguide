@@ -95,3 +95,10 @@ name = "Visit Japan Web app"
 agency = "Digital Agency of Japan"
 last_verified = "2026-11-02"
 notes = "Read 2026-10-15 from the app script. Passport number required, max 9, /^[A-Z0-9]*$/; family and given names required, max 39, /^[A-Z0-9 \\-.,]*$/; date of birth year, month and day fields; arrival date YYYY/MM/DD, from today to 31 December of next year; flight number max 20, /^[A-Z0-9]*$/; login email max 128."
+
+[customs_declaration]
+url = "https://www.customs.go.jp/english/passenger/declaration/declaration_app.html"
+name = "Declaration of Accompanied Articles and Unaccompanied Articles"
+agency = "Japan Customs, Ministry of Finance"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-files section. Japan Customs requires all passengers entering Japan to submit the declaration, recommends submitting it through Visit Japan Web, and says the paper form can still be used."

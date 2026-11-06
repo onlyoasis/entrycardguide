@@ -81,3 +81,10 @@ verification_title_zh_hant = "簽證在櫃檯簽發"
 verification_body_en = "The tourist visa on arrival has no pre-approval. The declaration does not replace it, and it does not decide admission."
 verification_body_zh = "落地旅游签证没有事前审批。申报表不能替代签证，也不决定是否准入。"
 verification_body_zh_hant = "落地旅遊簽證沒有事前審批。申報表不能替代簽證，也不決定是否准入。"
+
+[citizen_exemption]
+url = "https://www.immigration.gov.mv/news/6659"
+name = "Traveller Declaration discontinued for Maldivians"
+agency = "Maldives Immigration"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-files section. The Controller General of Immigration discontinued the Traveller Declaration form for Maldivians."

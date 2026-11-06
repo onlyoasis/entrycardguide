@@ -115,3 +115,10 @@ verification_title_zh_hant = "使用同一本護照"
 verification_body_en = "NPRA says entry must use the same passport used for the online application. Approval still does not guarantee admission at the border."
 verification_body_zh = "NPRA 要求入境使用在线申请时的同一本护照。获批仍不保证口岸一定准入。"
 verification_body_zh_hant = "NPRA 要求入境使用線上申請時的同一本護照。獲批仍不保證口岸一定準入。"
+
+[national_id_entry]
+url = "https://www.bahrain.bh/wps/portal/en/BNP/HomeNationalPortal/ContentDetailsPage/%21ut/p/z0/nVBdT8IwFP0r92WPpmWDgY8iidMEmZoo9IXcbWW7UtrR1kX_vRMIMS4uxsdzcnK-mGBLJjQ2VKIno1G1eCXi9eB2xJPJNefpbBjyh-fLx3g6H_D5TcTumPguSO7TGY8XyWQcjqfR8Cn8cqDX_V5cMZEb7eW7Z8tM12u0ATe-ktYFXOGHefMBt1KhlwV4U1PuzvhnSLfFbyFSB7y1tqBoI4E0ZFhZpJbVp4VAhdSeNpQfCEBdQEMO3R8k_eMXaX8vzNrN0D4AW9JlYXYBP7UjULIkpw5xrntLJVH5qj-dR_955eico5Xd1NpS0xJw1ICTuTeW1VuRjVSze7kQq0_gAUoI/"
+name = "National identification and visas"
+agency = "Bahrain National Portal"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-applies section. States that citizens of GCC countries may enter Bahrain using only their national ID cards."
