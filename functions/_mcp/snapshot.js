@@ -30158,7 +30158,7 @@ export default {
           "url": "https://www.gov.br/mre/pt-br/consulado-chicago/Visas/types-of-visa-1/vivis-visitor-visa",
           "agency": "Ministry of Foreign Affairs of Brazil",
           "lastVerified": "2026-11-06",
-          "notes": "Read 2026-11-06 for the hub page's who-applies section. Consulate page: visitors who need a visitor visa can request an electronic visa without coming to the consulate."
+          "notes": "Read 2026-11-06 for the hub page's who-applies section. Consulate page, section E-VISA - AUSTRALIA, CANADA AND UNITED STATES: nationals of those three countries need a visitor visa from 10 April 2025 and can request an e-Visa without coming to the consulate; other visa-required travellers use the regular VIVIS documents on the same page."
         }
       ],
       "lastVerified": "2026-11-06"
