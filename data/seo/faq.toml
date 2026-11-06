@@ -379,6 +379,12 @@ q_zh_hant = "新西蘭入境卡（NZTD）收費嗎？"
 a_zh = "免费。新西兰海关不对填写或提交 NZTD 收费；NZeTA 是另一项，单独收费。"
 a_zh_hant = "免費。新西蘭海關不對填寫或提交 NZTD 收費；NZeTA 是另一項，單獨收費。"
 
+[["new-zealand/how-to-fill"]]
+q = "What goes in \"full contact or residential address in New Zealand\" on the NZTD?"
+a = "The address where you will be in New Zealand, such as your hotel or the home you are staying at. New Zealand Customs says that if you are staying in several places, use the first address you will be at. The form searches for the address as you type; if it does not come up, switch to manual entry, which splits it into unit, street number, street, suburb, town and a 4-digit postcode."
+q_zh = "NZTD 的“full contact or residential address in New Zealand”填什么？"
+a_zh = "填你在新西兰落脚的地址，比如酒店或借住的住宅。新西兰海关写明：住多个地方时，填抵达后第一个住处的地址。表单会边输入边搜索地址；搜不到就改成手动填写，分门牌（unit）、街道号、街道、区（suburb）、城镇和 4 位邮编几栏。"
+
 [["indonesia/how-to-fill"]]
 q = "Is the Indonesia customs declaration (e-CD) part of All Indonesia?"
 a = "Yes. The electronic customs declaration is one section of the All Indonesia arrival declaration on the official site allindonesia.imigrasi.go.id, run by the Directorate General of Immigration and the Directorate General of Customs and Excise. It is free."
@@ -437,10 +443,10 @@ a_zh_hant = "先選擇航空公司，再只填訂單裡的航班數字部分。�
 
 [["india/how-to-fill"]]
 q = "What is the ISD code on the India e-Arrival Card?"
-a = "The international calling code of the country or region your phone number belongs to. Enter it with a number where you can be reached; the same applies to an emergency contact number if you give one."
+a = "The country calling code of the phone number you enter, typed in its own box as digits only: no +, up to 4 digits. For an Indian mobile number that is 91; a US or Canadian number uses 1, a UK number 44 and a Chinese number 86. The box is required. The number box next to it takes 5 to 15 digits without the code, and the emergency contact number has its own code box."
 q_zh = "印度电子入境卡上的 ISD code 是什么？"
 q_zh_hant = "印度電子入境卡上的 ISD code 是什麼？"
-a_zh = "就是你手机号所属国家或地区的国际区号。连同能联系到你的号码一起填；如果填写紧急联系人号码，也要加国家或地区代码。"
+a_zh = "填你所留手机号所属国家或地区的国际区号，单独一栏，只填数字，不加 +，最多 4 位。印度手机号填 91；美国、加拿大号码填 1，英国 44，中国 86。这一栏必填；旁边的号码栏填 5 到 15 位数字，不要再带区号。紧急联系人号码也有自己的区号栏。"
 a_zh_hant = "就是你手機號所屬國家或地區的國際區號。連同能聯繫到你的號碼一起填；如果填寫緊急聯繫人號碼，也要加國家或地區代碼。"
 
 [["thailand/how-to-fill"]]
@@ -506,3 +512,75 @@ q_zh = "库拉索电子入境卡什么时候填？"
 q_zh_hant = "庫拉索電子入境卡什麼時候填？"
 a_zh = "出发前 7 天内，按确认的抵达日期填写。航班误机或取消时，卡片在原抵达日后至少还会保持 1 天有效。每位旅客每次出行都要填一张，免费。"
 a_zh_hant = "出發前 7 天內，按確認的抵達日期填寫。航班誤機或取消時，卡片在原抵達日後至少還會保持 1 天有效。每位旅客每次出行都要填一張，免費。"
+
+[["india/how-to-fill"]]
+q = "How do OCI cardholders fill in the India e-Arrival Card?"
+a = "The same way as other foreign travellers. The Bureau of Immigration says foreigners and OCI cardholders submit it within 72 hours before arrival, at boi.gov.in or indianvisaonline.gov.in or in the official Indian Visa Su-Swagatam app. The current web form has no box for an OCI or visa number. It asks for name, nationality, passport number, purpose, arrival date, countries visited in the last 6 days, address, state and district in India, email and phone numbers. The official pages do not say which purpose an OCI cardholder should pick."
+q_zh = "OCI 持卡人怎么填印度电子入境卡？"
+a_zh = "和其他外国旅客一样填。印度移民局（Bureau of Immigration）写明，外国人和 OCI 持卡人都要在抵达前 72 小时内提交，渠道是 boi.gov.in、indianvisaonline.gov.in 或官方 Indian Visa Su-Swagatam App。现在的网页表单没有填 OCI 号或签证号的栏，要填的是姓名、国籍、护照号、入境目的、抵达日期、近 6 天去过的国家、印度地址、邦和县、邮箱和电话。官方页面没有说 OCI 持卡人的入境目的该选哪一项。"
+
+[["india/how-to-fill"]]
+q = "Is the India e-Arrival Card available in Chinese or other languages?"
+a = "No. The web form at indianvisaonline.gov.in/earrival is in English only and has no language switch. The Bureau of Immigration site boi.gov.in has a language menu that includes Chinese, but it changes the information site, not the arrival card form."
+q_zh = "印度电子入境卡有中文版吗？"
+a_zh = "没有。indianvisaonline.gov.in/earrival 上的网页表单只有英文，没有语言切换。印度移民局网站 boi.gov.in 的语言菜单里有中文，但切换的是说明网站，不是入境卡表单。"
+
+[["japan/how-to-fill"]]
+q = "Can I add family members on Visit Japan Web?"
+a = "Yes, after you register your own details. You can add up to 10 family members who go through immigration at the same time as you. Each person's details are registered separately, and the entry procedures are done one person at a time."
+q_zh = "Visit Japan Web 怎么添加同行家人？"
+a_zh = "先登记本人信息，之后才能添加同行家人，最多 10 人，条件是和你同时办理入境手续。每个人的信息要分别登记，入境手续也是一人一人办。"
+
+[["japan/how-to-fill"]]
+q = "How does the Visit Japan Web tax-free QR code work?"
+a = "It is for foreign nationals whose status of residence is Temporary Visitor, Diplomat or Official. Register your passport photo page, then scan the landing permission seal put in your passport at immigration; Visit Japan Web then creates a Tax-Free QR code. Show it at shops that accept the code instead of your passport. Screenshots cannot be used, and the code does not replace your passport. If you did not use Visit Japan Web on entry, you can still set it up after you arrive."
+q_zh = "Visit Japan Web 免税二维码怎么用？"
+a_zh = "只适用于在留资格为短期滞在（Temporary Visitor）、外交、公用的外国人。先登记护照资料页，再扫描入境时贴在护照上的上陆许可证印（landing permission seal），系统才会生成免税二维码。在支持免税二维码的店铺出示它，可以代替出示护照；不能用截图，二维码也不能代替护照。入境时没用 Visit Japan Web，入境后也可以补登。"
+
+[["japan/how-to-fill"]]
+q = "How far in advance can I register on Visit Japan Web?"
+a = "The official guide sets no number of days before arrival. It says to register the information in advance and show the QR code at immigration. Planned trips can be registered up to 31 December of the following year, with up to 100 plans."
+q_zh = "Visit Japan Web 提前多久登记？"
+a_zh = "官方说明没有规定入境前几天才能登记，只写了事先登记、入境时出示二维码。行程计划最远可登记到次年 12 月 31 日，最多 100 条。"
+
+[["philippines/how-to-fill"]]
+q = "What do I choose for Occupation on eTravel?"
+a = "Occupation is a required field in the traveller details. You pick it from the list the site loads, sorted by name, instead of typing it. The official FAQ does not explain the options, so pick the one that matches your job."
+q_zh = "菲律宾 eTravel 职业怎么填？"
+a_zh = "职业（Occupation）是旅客资料里的必填项，从网站加载的列表里选，按名称排序，不是手写。官方 FAQ 没有解释各个选项，选和你工作相符的一项。"
+
+[["philippines/how-to-fill"]]
+q = "The eTravel verification code has not arrived. What should I do?"
+a = "The site asks you to wait at least 3 minutes for the 6-digit code, because it can be delayed, and offers a resend after a countdown. If it never arrives, check the email address for typos: the code only goes to the address you typed."
+q_zh = "菲律宾 eTravel 收不到验证码怎么办？"
+a_zh = "网站提示：6 位验证码可能延迟，至少等 3 分钟；倒计时结束后可以重新发送。一直收不到，就检查邮箱有没有拼错，验证码只会发到你填的地址。"
+
+[["philippines/how-to-fill"]]
+q = "Do I need eTravel when leaving the Philippines?"
+a = "Only as a Filipino passenger. The official FAQ lists who must register: arriving Filipino and foreign crew members, arriving Filipino and foreign passengers, and departing Filipino passengers. Departing foreign passengers are not on that list. Foreign diplomats, dignitaries and their delegations and dependants, 9(e) visa holders, and holders of diplomatic or official/service passports are exempt."
+q_zh = "离开菲律宾也要填 eTravel 吗？"
+a_zh = "只有菲律宾籍旅客要填。官方 FAQ 列出的必须登记人群是：入境的菲律宾籍和外籍机组、入境的菲律宾籍和外籍旅客，以及出境的菲律宾籍旅客。出境的外国旅客不在名单里。外国外交人员、政要及其代表团和家属、9(e) 签证持有人、外交或公务护照持有人豁免。"
+
+[["philippines/how-to-fill"]]
+q = "What does a red eTravel QR code mean?"
+a = "The official FAQ says a red QR code is issued when the data is incomplete or incorrect, or when you report being sick, or exposed to someone sick, in the past 30 days. With a red code, the Bureau of Quarantine checks you before immigration. A green code means the submission was complete and you go straight to immigration. Use Edit Registration to correct your details."
+q_zh = "eTravel 红色二维码是什么意思？"
+a_zh = "官方 FAQ 写明：资料不完整或有误，或者申报近 30 天生病、接触过病人，会拿到红码，入境前要先接受检疫局（BOQ）进一步检查。绿码表示资料完整，可以直接去移民检查。资料填错可以用 Edit Registration 修改。"
+
+[["cambodia/how-to-fill"]]
+q = "Is there an official Cambodia e-Arrival app?"
+a = "Yes. arrival.gov.kh links an app called Cambodia e-Arrival on Google Play and the App Store. The website itself also takes the declaration, and we found no official statement that the app is required."
+q_zh = "柬埔寨电子入境卡有官方 App 吗？"
+a_zh = "有。官网 arrival.gov.kh 上有 Cambodia e-Arrival App 的下载链接，分别指向 Google Play 和 App Store。官网网页本身也能填，我们没找到要求必须用 App 的官方说明。"
+
+[["cambodia/how-to-fill"]]
+q = "My return date or flight changed after I filed Cambodia e-Arrival. What do I do?"
+a = "arrival.gov.kh has an Update e-Arrivals option that finds your submission so you can update it. The declaration you accept says that if your information changes, you inform the General Department of Immigration by submitting a fresh declaration. The official pages do not list which fields can be edited. A new declaration can only be made within 7 days before arrival, counting the arrival day."
+q_zh = "柬埔寨电子入境卡提交后回程日期或航班改了怎么办？"
+a_zh = "官网 arrival.gov.kh 有 Update e-Arrivals 入口，可以找回已提交的申报再更新。提交时同意的声明写明：信息有变，要通过提交一份新的申报告知柬埔寨移民总局。官方页面没有列出哪些字段能改。新申报只能在抵达前 7 天内提交，含抵达当天。"
+
+[["malaysia/how-to-fill"]]
+q = "What does \"Please key-in alphanumeric only\" mean on the MDAC?"
+a = "It applies to the two Address (In Malaysia) lines under it. Type the address in letters, digits and spaces; the only symbols the boxes take are @ / - ( ) , and '. Full stops and # are blocked, and pasting is turned off, so type the address by hand. Each line holds up to 100 characters."
+q_zh = "MDAC 上的“Please key-in alphanumeric only”是什么意思？"
+a_zh = "这句提示针对下面两行 Address (In Malaysia)。地址用字母、数字和空格写，符号只收 @ / - ( ) , 和 '，句点和 # 输不进去；输入框也不能粘贴，要手动打字。每行最多 100 个字符。"

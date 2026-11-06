@@ -56,8 +56,8 @@ mistake = "e-Arrival reference"
 mistake_why_en = "arrival-card reference entered instead of visa, e-Visa, or OCI record"
 mistake_why_zh = "把入境卡参考编号当成签证、e-Visa 或 OCI 编号"
 mistake_why_zh_hant = "把入境卡參考編號當成簽證、e-Visa 或 OCI 編號"
-copy_en = "Use the visa or e-Visa reference that permits this trip, or the OCI number if travelling as an OCI cardholder."
-copy_zh = "签证旅客填写本次签证或 e-Visa 编号；OCI 持有人填写 OCI 编号。"
+copy_en = "The current web form, checked on 6 November 2026, has no box for a visa, e-Visa or OCI number. Indian missions still tell travellers to keep visa or OCI details ready, and a box may appear on another channel or a prefilled record. If one does, enter the visa or e-Visa reference for this trip, or the OCI number."
+copy_zh = "2026 年 11 月 6 日核对时，现行网页表单没有签证、e-Visa 或 OCI 编号栏。印度驻外使领馆仍提醒旅客备好签证或 OCI 资料；其他渠道或预填记录可能出现这一栏，出现时填本次行程的签证或 e-Visa 编号，OCI 持有人填 OCI 编号。"
 copy_zh_hant = "簽證旅客填寫本次簽證或 e-Visa 編號；OCI 持有人填寫 OCI 編號。"
 
 [[fields]]
