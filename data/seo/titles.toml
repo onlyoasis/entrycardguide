@@ -122,6 +122,8 @@ title = "Kenya eTA Guide: Official Site, Fee and Exemptions"
 title = "South Korea e-Arrival Card Guide: Free, and Not the K-ETA"
 title_zh = "韩国入境卡指南：e-Arrival Card 与 K-ETA、Q-Code 的区别"
 title_zh_hant = "韓國入境卡指南：e-Arrival Card 與 K-ETA、Q-Code 的區別"
+description_zh = "韩国入境卡概览：谁要填、什么时候填（抵达前 3 天起可交，72 小时失效），以及 e-Arrival Card 和 K-ETA、Q-Code 的区别；持有效 K-ETA、在韩登记居民等不用填。"
+description_zh_hant = "韓國入境卡概覽：誰要填、什麼時候填（抵達前 3 天起可交，72 小時失效），以及 e-Arrival Card 和 K-ETA、Q-Code 的區別；持有效 K-ETA、在韓登記居民等不用填。"
 
 [laos]
 title = "Laos eVisa Guide: Official Site, Fees and Entry Ports"
@@ -272,14 +274,18 @@ h1_zh_hant = "韓國入境卡（e-Arrival Card）官網 2026：免費填寫和�
 
 ["malaysia/mdac"]
 title = "Malaysia Arrival Card (MDAC) Official Website: Free, Who Needs It"
-title_zh = "马来西亚入境卡官网：MDAC 免费入口、豁免名单与提交时间"
-title_zh_hant = "馬來西亞入境卡官網：MDAC 免費入口、豁免名單與提交時間"
+title_zh = "马来西亚入境卡官网：MDAC 免费填写入口 imigresen-online.imi.gov.my"
+title_zh_hant = "馬來西亞入境卡官網：MDAC 免費填寫入口 imigresen-online.imi.gov.my"
 description = "The official Malaysia Digital Arrival Card (MDAC) is free on imigresen-online.imi.gov.my. Check the exemptions and the three-day window, then fill in your travel details."
 description_zh = "马来西亚入境卡（MDAC 电子入境卡）官网是 imigresen-online.imi.gov.my，免费，抵达前三天内提交。附豁免名单、填写前准备清单和中介提醒。"
 description_zh_hant = "馬來西亞入境卡（MDAC 電子入境卡）官網是 imigresen-online.imi.gov.my，免費，抵達前三天內提交。附豁免名單、填寫前準備清單和中介提醒。"
 h1 = "Malaysia Arrival Card (MDAC): Official Free Form, Who Needs It and How to Submit"
 h1_zh = "马来西亚入境卡（MDAC）官网：免费、豁免条件与填写步骤"
 h1_zh_hant = "馬來西亞入境卡（MDAC）官網：免費、豁免條件與填寫步驟"
+
+["singapore/sgac"]
+title = "SG Arrival Card (SGAC) Official Website: Free on eservices.ica.gov.sg"
+description = "The official Singapore Arrival Card (SG Arrival Card) is ICA's free service at eservices.ica.gov.sg. Submit within the three days that include your arrival day; residents entering by land are exempt."
 
 ["indonesia/e-cd"]
 title = "Indonesia Arrival Card (All Indonesia / e-CD): Official Site, Free"
@@ -527,8 +533,8 @@ description = "Korea e-Arrival Card, step by step: file from 3 days before arriv
 title = "How to Fill the Malaysia Arrival Card (MDAC): Field Guide (2026)"
 title_zh = "马来西亚入境卡怎么填：MDAC 护照、行程和住宿地址字段"
 title_zh_hant = "馬來西亞入境卡怎麼填：MDAC 護照、行程和住宿地址欄位"
-description_zh = "马来西亚入境卡（MDAC）怎么填：按官方表单顺序讲护照、行程、住宿地址和邮箱字段，附常见错误和免费官网入口。"
-description_zh_hant = "馬來西亞入境卡（MDAC）怎麼填：按官方表單順序講護照、行程、住宿地址和信箱欄位，附常見錯誤和免費官網入口。"
+description_zh = "马来西亚入境卡（MDAC）怎么填：按官方表单顺序讲护照、行程、住宿地址和邮箱字段，以及每一栏最容易填错的地方。"
+description_zh_hant = "馬來西亞入境卡（MDAC）怎麼填：按官方表單順序講護照、行程、住宿地址和信箱欄位，以及每一欄最容易填錯的地方。"
 h1 = "How to fill the Malaysia Arrival Card (MDAC): the fields people get wrong, in form order."
 h1_zh = "马来西亚入境卡（MDAC）怎么填：最容易出错的字段，按表单实际顺序。"
 h1_zh_hant = "馬來西亞入境卡（MDAC）怎麼填：最容易出錯的欄位，按表單實際順序。"
@@ -713,8 +719,8 @@ title = "UK ETA Home Address: Address Line 1 Examples and Errors"
 description = "What the UK ETA home-address question means, what to enter in address line 1, fictional examples, and official help for address errors."
 
 ["singapore/how-to-fill"]
-title = "SG Arrival Card (SGAC) How to Fill: Name, Dates, Last Port"
-description = "SG Arrival Card help: enter given names before surname, submit within the three days that include your arrival day, and pick the last city of embarkation. Free on ICA's service."
+title = "How to Fill the Singapore Arrival Card (SGAC): Name, Dates, Last Port"
+description = "How to fill the Singapore Arrival Card (SGAC): enter given names before surname, submit within the three days that include your arrival day, and pick the last city of embarkation."
 
 # ---- Global library: the roster carries the formal state name ----
 
