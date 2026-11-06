@@ -26,7 +26,7 @@ Download the official App, read the passport chip with NFC, take a live face pho
 ## Who applies, and who does not
 
 - **Who applies:** holders of an ETA-eligible passport, through the Australian ETA App. Each family member submits a separate application, including people listed on your passport.
-- **Who does not:** Australian citizens. A dual citizen with an eligible passport cannot apply for an ETA either.
+- **Who does not:** Australian citizens. An Australian citizen who also holds an ETA-eligible passport cannot apply for an ETA either.
 - **By nationality:** US, UK (British Citizen and BN(O)) and Hong Kong SAR passports are on the ETA list, as are Taiwan passports other than official or diplomatic ones. Passports not on the list cannot use the ETA.
 
 Source: {{< source-link site="australia.eta601" text="Home Affairs ETA 601 page" >}}.

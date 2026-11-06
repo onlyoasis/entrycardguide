@@ -101,12 +101,12 @@
 | 国家 | 类型 | 页面写的“不用填 / 例外”（中文摘要） | 引用的来源键 | 新登记 |
 |---|---|---|---|---|
 | aruba | ED Card（arrival_card） | 只有所乘船只需要办阿鲁巴入境手续的，才填 ED Card。 | official_guide, sustainability_fee | — |
-| australia | ETA（travel_authorization） | 澳大利亚公民。持适用护照的双重国籍者也不能申请 ETA。 | eta601 | — |
+| australia | ETA（travel_authorization） | 澳大利亚公民。同时持有 ETA 适用护照的澳大利亚公民（澳大利亚双重国籍者）也不能申请 ETA。 | eta601 | — |
 | azerbaijan | ASAN e-Visa（evisa） | 外交部免签名单覆盖的旅客，名单写明护照类型、停留期限和生效日期。 | eligible_countries, visa_free | — |
 | bahamas | C17（arrival_card） | 改为口头申报行李。 | airport_notice, customs_arriving | customs_arriving |
 | bahrain | eVisa（evisa） | 海湾合作委员会国家公民，凭身份证就能入境巴林。 | national_id_entry, online_countries | national_id_entry |
 | barbados | ED Form（arrival_card） | 居民、机组、机场转机的规定没找到现行官方原文，这里不列。 | visitor_rules | — |
-| brazil | eVisa（evisa） | 护照本来不需要访问签证的，就没有电子签要办。 | visitor_eligibility | visitor_eligibility |
+| brazil | eVisa（evisa） | 电子签只对澳大利亚、加拿大、美国公民开放；其他需要访问签证的护照走领馆普通签证（PR #21 审查后更正） | visitor_eligibility | visitor_eligibility |
 | cambodia | e-Arrival（arrival_card） | 我们读到的政府页面没有列豁免。柬埔寨公民、居民、机组、不入境转机的规定没找到官方原文，属于这几类的先问移民局。 | government_visitor_scope | government_visitor_scope |
 | canada | eTA（travel_authorization） | 美国公民；身份有效的美国永久居民；用加拿大证件出行的加拿大公民（含双重国籍）；加拿大永久居民；多数情况下坐汽车、大巴、火车或船抵达的旅客。 | eligibility, eta_facts | eta_facts |
 | china | Arrival Card（arrival_card） | 持外国人永久居留身份证；持港澳居民来往内地通行证（非中国籍）；持团体签证或符合团体免签入境；24 小时直接过境、不离开口岸限定区域；乘邮轮入出境并随原邮轮返回；走快捷通道入境；… | consulate_notice | — |

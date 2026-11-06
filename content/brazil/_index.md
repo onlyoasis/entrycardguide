@@ -26,9 +26,9 @@ Collect the passport page, photograph, current travel details and email.
 
 ## Who applies, and who does not
 
-- **Who applies:** visitors who need a Brazilian visitor visa can request it as an e-Visa, without going to a consulate.
-- **Who does not:** if your passport does not need a visitor visa, there is no e-Visa to request.
-- **By nationality:** there is no separate form by nationality. Whether your passport can use it, or needs it at all, is on the official {{< source-link site="brazil.visitor_eligibility" text="visitor visa page" >}}.
+- **Who applies:** citizens of Australia, Canada and the United States, who need a visitor visa from 10 April 2025, can request it as an e-Visa without going to a consulate. The e-Visa route is for those three nationalities only.
+- **Who does not:** other passports that need a visitor visa use the regular consular visa, not the e-Visa. If your passport does not need a visitor visa, there is nothing to apply for.
+- **By nationality:** the passport decides the route. Check yours on the official {{< source-link site="brazil.visitor_eligibility" text="visitor visa page" >}}.
 
 Source: {{< source-link site="brazil.visitor_eligibility" text="Brazilian consulate visitor visa page" >}}.
 
