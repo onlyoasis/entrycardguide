@@ -227,11 +227,42 @@ defaultContentLanguageInSubdir = false
     [params.affiliate.cards.urls]
       en = "https://affiliate.klook.com/redirect?aid=139113&aff_adid=1500418&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Fwifi-sim-card%2F%3Fcity_id%3D30"
 
+  # Country eSIM products, generated in the affiliate portal on 2026-11-06
+  # (AIS / SKT / Telkomsel). Only en-US product links exist, so all three
+  # languages use them; they replace the generic zh/zh-Hant list below.
   [[params.affiliate.cards]]
     partner = "klook"
     product = "esim"
+    countries = ["thailand"]
     [params.affiliate.cards.urls]
-      zh = "https://affiliate.klook.com/redirect?aid=139113&aff_adid=1500421&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-CN%2Fwifi-sim-card%2F"
+      en = "https://affiliate.klook.com/redirect?aid=139113&aff_adid=1549588&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F110438-thailand-esim-high-speed-internet-qr-code-in-the-voucher%2F"
+      zh = "https://affiliate.klook.com/redirect?aid=139113&aff_adid=1549588&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F110438-thailand-esim-high-speed-internet-qr-code-in-the-voucher%2F"
+      zh-hant = "https://affiliate.klook.com/redirect?aid=139113&aff_adid=1549588&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F110438-thailand-esim-high-speed-internet-qr-code-in-the-voucher%2F"
+
+  [[params.affiliate.cards]]
+    partner = "klook"
+    product = "esim"
+    countries = ["korea"]
+    [params.affiliate.cards.urls]
+      en = "https://affiliate.klook.com/redirect?aid=139113&aff_adid=1549590&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F109354-south-korea-esim-high-speed-internet-qr-code-voucher%2F"
+      zh = "https://affiliate.klook.com/redirect?aid=139113&aff_adid=1549590&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F109354-south-korea-esim-high-speed-internet-qr-code-voucher%2F"
+      zh-hant = "https://affiliate.klook.com/redirect?aid=139113&aff_adid=1549590&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F109354-south-korea-esim-high-speed-internet-qr-code-voucher%2F"
+
+  [[params.affiliate.cards]]
+    partner = "klook"
+    product = "esim"
+    countries = ["indonesia"]
+    [params.affiliate.cards.urls]
+      en = "https://affiliate.klook.com/redirect?aid=139113&aff_adid=1549591&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F109371-indonesia-esim-high-speed-internet-qr-code-voucher%2F"
+      zh = "https://affiliate.klook.com/redirect?aid=139113&aff_adid=1549591&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F109371-indonesia-esim-high-speed-internet-qr-code-voucher%2F"
+      zh-hant = "https://affiliate.klook.com/redirect?aid=139113&aff_adid=1549591&k_site=https%3A%2F%2Fwww.klook.com%2Fen-US%2Factivity%2F109371-indonesia-esim-high-speed-internet-qr-code-voucher%2F"
+
+  [[params.affiliate.cards]]
+    partner = "klook"
+    product = "esim"
+    exclude_countries = ["thailand", "korea", "indonesia"]
+    [params.affiliate.cards.urls]
+      zh ="https://affiliate.klook.com/redirect?aid=139113&aff_adid=1500421&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-CN%2Fwifi-sim-card%2F"
       zh-hant = "https://affiliate.klook.com/redirect?aid=139113&aff_adid=1500423&k_site=https%3A%2F%2Fwww.klook.com%2Fzh-TW%2Fesim%2F"
 
   [[params.affiliate.cards]]
