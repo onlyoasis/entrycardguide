@@ -122,7 +122,7 @@ url = "https://app.travellerdeclaration.govt.nz/"
 name = "NZTD application"
 agency = "New Zealand Customs Service"
 last_verified = "2026-11-02"
-notes = "Read 2026-10-15 from the app scripts and appSettings.json. includePassportExpiryDate is false, so the form does not ask for passport expiry. Names max 39, ^[a-zA-Z-\\s']+$, surname required and given names optional; passport number 3 to 9, ^[A-Z0-9]+$; date of birth up to today; air arrival today, tomorrow or the day after, or a typed date from yesterday (declaration can start 2 days before arrival); flight number /^(?=.{3,7}$)\\s*(?:3C|3U|D7|[A-Z]{2})[ -]?\\d{1,4}\\s*$/; email and phone patterns from the form."
+notes = "Read 2026-10-15 from the app scripts and appSettings.json. includePassportExpiryDate is false, so the form does not ask for passport expiry. Names max 39, ^[a-zA-Z-\\s']+$, surname required and given names optional; passport number 3 to 9, ^[A-Z0-9]+$; date of birth up to today; air arrival today, tomorrow or the day after, or a typed date from yesterday (declaration can start 2 days before arrival); flight number /^(?=.{3,7}$)\\s*(?:3C|3U|D7|[A-Z]{2})[ -]?\\d{1,4}\\s*$/; email and phone patterns from the form. Re-read 2026-11-06: the New Zealand address is an address search with a manual option that splits it into unit, street number, street, suburb, town and postcode (postcode ^\\d{4}$); cruise passengers can use the vessel as the address. The page https://www.travellerdeclaration.govt.nz/completing-your-declaration/ lists \"Contact details in New Zealand (if staying in multiple locations, use the first address you will be at in New Zealand)\"."
 
 [air_transit]
 url = "https://www.customs.govt.nz/travel-to-and-from-new-zealand/travel-by-air"

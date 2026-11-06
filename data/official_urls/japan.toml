@@ -16,6 +16,20 @@ name = "Immigration Services Agency of Japan"
 agency = "Immigration Services Agency of Japan"
 last_verified = "2026-11-02"
 
+[vjw_manual]
+url = "https://www.vjw.digital.go.jp/manual/main/visitjapanweb_manual_en.html"
+name = "Visit Japan Web user manual"
+agency = "Digital Agency of Japan"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06. 3-3: register your own details first; \"You can register up to 10 family members traveling with you.\"; family members who undergo immigration procedures at the same time; \"Entry and return procedures will be processed one person at a time.\" Plans: \"You can register plans up to December 31 the following year.\", up to 100 plans. 9-1: the Tax-Free QR Code can be shown instead of the passport at shops that accept it; \"If you were unable to use Visit Japan Web when entering Japan, it can be used after you enter.\" No advance-day window is stated."
+
+[tax_free_guide]
+url = "https://services.digital.go.jp/en/visit-japan-web/guide/"
+name = "Visit Japan Web: how to use (tax-free)"
+agency = "Digital Agency of Japan"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 via the page data. \"Eligible users are foreign nationals whose status of residence is Temporary Visitor, Diplomat, or Official.\" A Tax-Free 2D Code needs the passport facial image and landing permission seal details; show it at shops that support it; \"Screenshots cannot be used.\" The app text adds that it is not a replacement for the passport, residence card or proof of entry/exit."
+
 [meta]
 flag = "🇯🇵"
 name_en = "Japan"

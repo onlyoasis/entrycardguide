@@ -3,7 +3,7 @@ title: "China Arrival Card: Official NIA Site, Free Filing (2026)"
 kicker: "Foreign nationals entering China can file the free Arrival Card online before departure, or complete it at the port. Official URL, exemptions, timing and the receipt."
 description: "China's online Arrival Card for foreign nationals: the official s.nia.gov.cn site, free filing, the 8 exemption categories, official channels, timing and the declaration receipt."
 date: 2026-09-05
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 country: "china"
 weight: 10
 keywords: ["china arrival card", "china arrival card online", "china arrival card official site", "s.nia.gov.cn", "foreigner arrival card china"]
@@ -20,6 +20,8 @@ faq:
     a: "Eight categories, including holders of a valid Foreign Permanent Resident ID, holders of a Hong Kong or Macau travel permit (non-Chinese nationals), 24-hour direct transit passengers staying inside the port restricted area, and members of group-visa or visa-free tour groups. The full list is on this page."
   - q: "What do I get after submitting?"
     a: "An Entry Declaration Receipt for Foreigner. The receipt screen offers Download to Local and Send to Email. Keep the file or a screenshot reachable for inspection."
+  - q: "What is the National Immigration Administration Entry Declaration Receipt for Foreigner?"
+    a: "It is the receipt the NIA system issues after you submit the online Arrival Card. Its heading reads National Immigration Administration, with the subtitle Entry Declaration Receipt for Foreigner (外国人入境填报回执 in Chinese). Download it or have it emailed; the site then shows \"The entry declaration receipt has been sent to your email.\" The pages reviewed do not say it must be printed."
   - q: "Is the form available in English?"
     a: "Yes. The interface offers 13 languages, including English, Russian, French, Spanish, Arabic, Japanese, Korean and Chinese."
 layout: country-form

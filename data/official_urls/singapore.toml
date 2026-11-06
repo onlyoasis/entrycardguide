@@ -135,13 +135,14 @@ url = "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/sg-arrival
 name = "ICA SGAC requirements"
 agency = "Immigration & Checkpoints Authority"
 last_verified = "2026-11-02"
+notes = "Read 2026-11-06 (page last updated 28 Oct 2026): \"You will receive an acknowledgement email sent to your declared email address upon successful submission.\"; changes are made with the \"Update SGAC\" feature."
 
 [sgac_enhanced]
 url = "https://eservices.ica.gov.sg/arrivalcard/sgac"
 name = "ICA enhanced SGAC service"
 agency = "Immigration & Checkpoints Authority"
 last_verified = "2026-11-02"
-notes = "Field checks read 2026-10-15 from the arrival card scripts: dates DD/MM/YYYY; arrival today to 2 days ahead, Singapore time; date of birth up to today; full name max 66, /^[A-Za-z][A-Za-z' /.()\\-@,]*$/; passport number max 20; flight number digits only after the airline is picked; email max 100, /^[^\\s@]+@(?:[^\\s@.]+\\.)+[^\\s@.]+$/; mobile number digits, max 12."
+notes = "Field checks read 2026-10-15 from the arrival card scripts: dates DD/MM/YYYY; arrival today to 2 days ahead, Singapore time; date of birth up to today; full name max 66, /^[A-Za-z][A-Za-z' /.()\\-@,]*$/; passport number max 20; flight number digits only after the airline is picked; email max 100, /^[^\\s@]+@(?:[^\\s@.]+\\.)+[^\\s@.]+$/; mobile number digits, max 12. Re-read 2026-11-06 from the scripts and assets/i18n/en.json: Country Code and Place of Residence are searchable lists (SEARCH_SELECT); codes display as +N; Place of Residence options join country, state and city; Mobile Number is numeric. Update: \"You may update your submitted information prior to your trip if required.\"; foreign visitors cannot update Date of Arrival, Full Name, Passport Number, Date of Passport Expiry, Date of Birth or Nationality/Citizenship and must make a new submission; the DE number is in the acknowledgement email; \"Please check your junk or spam folder if you cannot find the email.\""
 
 [arrival_date_help]
 url = "https://ask.gov.sg/ica/questions/cluuhsp9l001afxu700snp0f0"

@@ -3,7 +3,7 @@ title: "How to Fill the Singapore Arrival Card: Name, Dates and SGAC Help"
 kicker: "Choose the ICA service, check your name and arrival date, and save the acknowledgement."
 description: "Singapore Arrival Card field help: given names before surname, the three-day window, last city of embarkation, Chinese interface and finding your confirmation."
 date: 2026-04-26
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 country: singapore
 weight: 20
 layout: how-to-fill
@@ -16,6 +16,14 @@ faq:
     a: "The current ICA service offers a Simplified Chinese interface. Its instructions still require the information you provide to be in English."
   - q: "Which name comes first?"
     a: "The current Foreign Visitor form prompts Given Name followed by Surname. Check the prompt in the version you are using and include the names from your passport."
+  - q: "How do I fill in the country code for my phone number?"
+    a: "Country Code is a list you search and pick from; each code shows as + and its digits, such as +86. Type the rest of the number in Mobile Number, digits only."
+  - q: "What is Place of Residence on the SG Arrival Card?"
+    a: "Where you normally live. It is a searchable list of country, state and city combinations. It is not your accommodation in Singapore, which the form asks for separately as the place you reside during your stay."
+  - q: "I made a mistake on my SG Arrival Card. What now?"
+    a: "Use Update SGAC on the ICA e-Service before your trip, finding the record with the DE number from the acknowledgement email. Foreign visitors cannot update Date of Arrival, Full Name, Passport Number, Date of Passport Expiry, Date of Birth or Nationality/Citizenship. To change any of those, make a new submission."
+  - q: "How do I know my SG Arrival Card went through?"
+    a: "The screen says the submission is successful, and ICA sends an acknowledgement email to the address you declared. Check junk or spam if it is missing. The email carries your Disembarkation/Embarkation (DE) number, which you need to update the card."
   - q: "Should I submit in both ICA versions?"
     a: "No. ICA currently links an enhanced version alongside the existing service and says one submission per trip is required."
 ---

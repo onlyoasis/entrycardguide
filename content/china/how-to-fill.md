@@ -3,7 +3,7 @@ title: "How to Fill the China Arrival Card (2026): Upload, Dates and Entity Cont
 kicker: "Passport image uploads, date fields, the address in China and conditional inviter details in the ordinary filing flow."
 description: "China Arrival Card filling guide: JPEG/PNG passport uploads, date format, address limits, when Entity Contact Information is required, and saving the receipt."
 date: 2026-09-05
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 country: "china"
 weight: 20
 keywords: ["how to fill china arrival card", "china arrival card date format", "china arrival card entity contact information", "china arrival card step by step", "china arrival card when to fill"]
@@ -12,6 +12,8 @@ faq:
     a: "The official notices reviewed do not specify an advance filing window. They allow filing before travel and completing the card at the port. Transit-policy durations are stay limits, not filing deadlines."
   - q: "What date format does the China arrival card use?"
     a: "Use the date controls on the official site. The entry-date control uses YYYY-MM-DD, for example 2026-09-15. Match your birth date to your travel document."
+  - q: "What does \"Do you have any inviting entities or inviters in China?\" mean?"
+    a: "It asks whether an organisation in China (the form's \"Inviting entity in China\") or a person in China (\"Inviter in China\") invited you. Choose No if nobody did; the inviter fields stay hidden. Choose Yes only if one did, then pick the type and enter the Entity Name or Inviter's Name and a contact number."
   - q: "What goes in Entity Contact Information?"
     a: "First answer whether you have an inviting entity or person in China. If yes, choose the invitation type and provide the relevant name and contact number. The contact is required in this branch; its input keeps digits only, up to 12 characters. A hotel booking does not by itself make the hotel your inviter."
   - q: "Why does my contact number lose spaces and brackets?"
