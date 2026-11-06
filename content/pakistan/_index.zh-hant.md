@@ -3,7 +3,7 @@ title: "巴基斯坦"
 kicker: "先按護照判斷路徑。部分旅客免簽；符合 VPA 資格的旅客使用免費官方申請。"
 description: "巴基斯坦入境前簽證獨立指南：海合會國家豁免、120 國 VPA 資格、免費官方申請，以及常規線上簽證路徑。"
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 巴基斯坦面向遊客有三條不同路徑。適用豁免的 6 個海合會國家公民無需 ETA 或簽證。DGI&P 當前寫明，120 個國家的公民可使用免費的 **Visa Prior to Arrival**。其他旅客要走適用的常規簽證路徑。
@@ -21,6 +21,14 @@ VPA 和常規簽證共用 Pakistan Online Visa System。先查護照資格，再
 ### 2. 準備官方申請
 8 項檢查覆蓋路徑、類別、護照、照片、上傳文件和獲批通知。
 → [打開填寫指南](/zh-hant/pakistan/how-to-fill/)
+
+## 誰要申請，誰不用申請
+
+- **要申請**：入境前簽證（VPA）名單上 120 國的公民，用於商務、旅遊或錫克教朝聖。
+- **不用申請**：海灣合作委員會國家公民，商務和旅遊免簽。
+- **按國籍或證件**：沒有按國籍分的另一張表。你的護照能不能用、要不要申請，看官方{{< source-link site="pakistan.eligibility" text="VPA 國家名單" >}}。
+
+來源：{{< source-link site="pakistan.eligibility" text="巴基斯坦移民護照總局 VPA 說明" >}}、{{< source-link site="pakistan.gcc_exemption" text="外交部海合會公告" >}}。
 
 ## 快速事實
 

@@ -3,7 +3,7 @@ title: "俄羅斯"
 kicker: "統一電子簽證只對 64 個國籍開放，單次入境，且要在個人賬戶裡付費。先查名單再動手。"
 description: "俄羅斯電子簽中文指南：64 國資格名單、官方 evisa.kdmid.ru 申請入口、30 天停留期規則，以及指定的入境出境口岸。"
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 俄羅斯統一電子簽證由**外交部領事司**簽發，僅限單次入境。它不對所有護照開放：俄方公佈了 64 個可申請國家，名單外的旅客必須在俄羅斯駐外使領館辦理普通簽證。
@@ -21,6 +21,14 @@ lastmod: 2026-11-02
 ### 2. 準備申請
 從俄方 Instruction 頁面和 FAQ 整理的 13 個檢查項，含 35x45 照片規格和 DD.MM.YYYY 日期格式。
 → [打開欄位指南](/zh-hant/russia/how-to-fill/)
+
+## 誰要申請，誰不用申請
+
+- **要申請**：外交部電子簽名單上國家的公民。隨父母出行的未成年子女要各自辦。
+- **不用申請**：護照上已有有效俄羅斯簽證的人。
+- **按國籍或證件**：沒有按國籍分的另一張表。你的護照能不能用、要不要申請，看官方{{< source-link site="russia.nationalities" text="電子簽國家名單" >}}。
+
+來源：{{< source-link site="russia.nationalities" text="電子簽國家" >}}、{{< source-link site="russia.instruction" text="申請須知" >}}、{{< source-link site="russia.faq" text="常見問題" >}}。
 
 ## 速記要點
 

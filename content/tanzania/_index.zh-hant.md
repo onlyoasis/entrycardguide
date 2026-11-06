@@ -3,7 +3,7 @@ title: "坦桑尼亞電子簽官網、費用與簽證類別指南"
 kicker: "費用和申請路徑取決於護照與目的。進入付款流程前先核對這兩項。"
 description: "坦桑尼亞電子簽中文指南：官方 .go.tz 入口、50 美元普通簽、美國護照 100 美元旅遊路徑、30 美元轉機簽與材料。"
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 坦桑尼亞本土和桑給巴爾共用一個政府線上簽證門戶，但不同旅客並不是購買同一種簽證。
@@ -21,6 +21,14 @@ lastmod: 2026-11-02
 ### 2. 準備首屏與申請材料
 根據實時首屏和現行政府指南整理的 10 項檢查。
 → [打開申請準備指南](/zh-hant/tanzania/how-to-fill/)
+
+## 誰要申請，誰不用申請
+
+- **要申請**：去坦桑尼亞大陸或桑給巴爾、需要簽證的旅客。每本護照單獨申請。
+- **不用申請**：官方免簽名單上國家的公民。
+- **按國籍或證件**：沒有按國籍分的另一張表。你的護照能不能用、要不要申請，看官方{{< source-link site="tanzania.visa_free_countries" text="免簽國家名單" >}}。
+
+來源：{{< source-link site="tanzania.evisa" text="線上簽證官網" >}}、{{< source-link site="tanzania.guidelines" text="申請指南" >}}、{{< source-link site="tanzania.visa_free_countries" text="免簽名單" >}}。
 
 ## 速記要點
 

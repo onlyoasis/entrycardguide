@@ -26948,9 +26948,25 @@ export default {
           "agency": "Direktorat Jenderal Bea dan Cukai",
           "lastVerified": "2026-11-02",
           "notes": "Legacy standalone e-CD portal still resolves. The current traveler-facing entry point is All Indonesia."
+        },
+        {
+          "key": "customs_arrival_channels",
+          "name": "Customs arrival channels",
+          "url": "https://www.beacukai.go.id/selamat-datang",
+          "agency": "Directorate General of Customs and Excise",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-files section. Air and sea arrivals use All Indonesia; land arrivals and international departures use the customs e-CD."
+        },
+        {
+          "key": "immigration_scope",
+          "name": "All Indonesia: who must fill it",
+          "url": "https://karawang.imigrasi.go.id/imigrasi-karawang-sosialisasikan-aplikasi-all-indonesia-untuk-kemudahan-masuk-ke-indonesia/",
+          "agency": "Karawang Immigration Office, Directorate General of Immigration",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-files section. Immigration office article: filling in the All Indonesia form is mandatory for all Indonesian citizens (WNI) and foreign nationals (WNA) entering Indonesia."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "malaysia",
@@ -27049,9 +27065,17 @@ export default {
           "agency": "Ministry of Foreign Affairs Malaysia",
           "lastVerified": "2026-11-02",
           "notes": "Exemption text reviewed through the official KLN search-indexed page on 2026-09-14; direct page fetch returned 502. This reference is not an application endpoint."
+        },
+        {
+          "key": "singapore_mdac_advice",
+          "name": "Malaysia travel advice: MDAC (Singapore MFA)",
+          "url": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/malaysia/",
+          "agency": "Ministry of Foreign Affairs, Singapore",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-files section. Singaporeans who intend to enrol their fingerprints for Malaysia's e-gates on later entries should submit the MDAC."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "singapore",
@@ -27191,9 +27215,25 @@ export default {
           "agency": "Vietnam Immigration Department (Cục Quản lý xuất nhập cảnh)",
           "lastVerified": "2026-11-02",
           "notes": "Read 2026-10-15 from the application scripts (step 1 and validation). All dates DD/MM/YYYY; date of birth up to today; passport expiry from today and at least 30 days after the e-Visa end date; e-Visa from today, at most 90 days. Surname and given names max 50 each, /^[A-Za-z\\s]+$/ ('Only Latin characters allowed, no special characters'), turned into capitals. Passport number /^[A-Z0-9]+$/, max 20. Email max 100 with the form's RFC-style pattern ('Email wrong format'). Address max 500."
+        },
+        {
+          "key": "evisa_scope",
+          "name": "Electronic visa for citizens of all countries",
+          "url": "https://vietnamembassy-usa.org/vi/node/6887",
+          "agency": "Embassy of Viet Nam in the United States",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-applies section. Embassy notice: Viet Nam's e-visa applies to citizens of all countries and territories."
+        },
+        {
+          "key": "visa_exemption_list",
+          "name": "Viet Nam visa exemption list",
+          "url": "https://mofa.gov.vn/vi/tin-chi-tiet/chi-tiet/viet-nam-39-s-visa-exemption-list-57163-596.html",
+          "agency": "Ministry of Foreign Affairs, Viet Nam",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-applies section. Ministry of Foreign Affairs table of visa exemptions by nationality and passport type."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "thailand",
@@ -27260,9 +27300,17 @@ export default {
           "agency": "Royal Thai Immigration Bureau",
           "lastVerified": "2026-11-02",
           "notes": "Read 2026-10-15 from the form's interface text (assets/bundle/tac/arrival-card/en.json) and its field validators (version 2026.09.00); the form itself sits behind a Cloudflare human check that was not passed. Family Name required, letters and spaces or a single '-' when none (placeholder: Enter '-' if none), max 60; First Name required and Middle Name optional, letters and spaces, max 60; the Retrieve with Passport scan fills family and first name and leaves Middle Name empty. Passport No. letters and digits only, max 20. Date of Birth is three boxes, yyyy, mm, dd, month and day unlocking after the year. Arrival date picker (placeholder yyyy/mm/dd) accepts today to 3 days ahead; Date of Departure optional. Flight No./Vehicle No. required, max 20, letters, digits, spaces and punctuation; optional when Mode of Transport is OTHERS (PLEASE SPECIFY), whose text box takes letters and spaces up to 50. Email asked once on the preview step ('Please specify an email to send Thailand Digital Arrival Card'), max 50, single address. Field messages are only 'This field is required.' and 'Invalid format.'. Health Declaration lists countries stayed in within two weeks; Yellow Fever certificate, vaccination date, optional upload (JPG, JPEG, PNG, PDF, max 5MB) and a symptom list appear only when the system flags the trip, per the user guide."
+        },
+        {
+          "key": "consulate_scope",
+          "name": "TDAC scope and exceptions",
+          "url": "https://hongkong.thaiembassy.org/en/page/entry-regulation%3Fmenu=61dbe1897551c82a7158d383",
+          "agency": "Royal Thai Consulate-General, Hong Kong",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-files section. Thai consulate page: TDAC is not required for travellers transiting or transferring without passing immigration control, or for those entering on a Border Pass."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "dominican",
@@ -27320,9 +27368,25 @@ export default {
           "url": "https://migracion.gob.do/servicio/solicitud-de-e-ticket-entrada-y-salida-de-pasajeros/",
           "agency": "Dirección General de Migración",
           "lastVerified": "2026-10-12"
+        },
+        {
+          "key": "filing_exemptions",
+          "name": "E-Ticket transport exceptions (Spanish)",
+          "url": "https://es.godominicanrepublic.com/planea-tu-viaje/requisitos-de-viaje",
+          "agency": "Ministry of Tourism",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-files section. Passengers arriving on private flights, non-commercial vessels, ferries or cruise ships do not need to complete the E-Ticket."
+        },
+        {
+          "key": "filing_scope",
+          "name": "Entry requirements and E-Ticket scope",
+          "url": "https://www.godominicanrepublic.com/travel/entry-requirements",
+          "agency": "Ministry of Tourism",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-files section. All foreign and Dominican passengers entering or departing on commercial flights must complete the free electronic entry and exit form."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "mexico",
@@ -27365,9 +27429,17 @@ export default {
           "url": "https://www.inm.gob.mx",
           "agency": "Instituto Nacional de Migración (INM)",
           "lastVerified": "2026-11-02"
+        },
+        {
+          "key": "air_fmmd",
+          "name": "Forma Migratoria Múltiple Digital (FMMd)",
+          "url": "https://www.gob.mx/inm/articulos/forma-migratoria-multiple-digital-fmmd?idiom=es",
+          "agency": "Instituto Nacional de Migración",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-files section. INM: if you enter by air, you do not have to fill in the electronic FMM (FMMe)."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "japan",
@@ -27418,9 +27490,17 @@ export default {
           "agency": "Digital Agency of Japan",
           "lastVerified": "2026-11-02",
           "notes": "Read 2026-10-15 from the app script. Passport number required, max 9, /^[A-Z0-9]*$/; family and given names required, max 39, /^[A-Z0-9 \\-.,]*$/; date of birth year, month and day fields; arrival date YYYY/MM/DD, from today to 31 December of next year; flight number max 20, /^[A-Z0-9]*$/; login email max 128."
+        },
+        {
+          "key": "customs_declaration",
+          "name": "Declaration of Accompanied Articles and Unaccompanied Articles",
+          "url": "https://www.customs.go.jp/english/passenger/declaration/declaration_app.html",
+          "agency": "Japan Customs, Ministry of Finance",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-files section. Japan Customs requires all passengers entering Japan to submit the declaration, recommends submitting it through Visit Japan Web, and says the paper form can still be used."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "india",
@@ -27465,9 +27545,17 @@ export default {
           "lastVerified": "2026-11-02",
           "archiveUrl": "https://web.archive.org/web/2026/https://indianvisaonline.gov.in/evisa/tvoa.html",
           "notes": "Verified 2026-07-14 against https://indianvisaonline.gov.in/evisa/tvoa.html and the official 09-July-2026 tourist-fee table at https://indianvisaonline.gov.in/evisa/images/Etourist_fee_final.pdf. The e-Visa is separate from the free e-Arrival Card. Fees vary by nationality and duration. Examples in the current table: Australia and Canada pay USD $10 for a 30-day tourist e-Visa from April to June or USD $25 from July to March, USD $40 for 1 year, and USD $200 for 5 years; the United States has the same 30-day and 1-year fees but USD $160 for 5 years; the United Kingdom has the same 30-day and 1-year fees but USD $484 for 5 years; Japan pays USD $10 or $25 for 30 days and USD $25 for either 1 or 5 years. Some nationalities are listed at USD $0. A 3% bank charge is additional. The official page currently permits first entry through 33 named airports and 19 named seaports; travellers may depart through any authorized Immigration Check Post. Check the live eligibility, fee table, and port list before paying."
+        },
+        {
+          "key": "portal_filing_advisory",
+          "name": "Indian Visa Online: e-Arrival Card notice",
+          "url": "https://indianvisaonline.gov.in/",
+          "agency": "Bureau of Immigration, Ministry of Home Affairs",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-files section. Home page notice: foreign nationals and OCI/eOCI cardholders must complete and submit the e-Arrival Card."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "korea",
@@ -27599,9 +27687,25 @@ export default {
           "agency": "Korea Immigration Service",
           "lastVerified": "2026-11-02",
           "notes": "Read 2026-10-15 from the page's shared input script; the arrival card form opens only after an email confirmation and was not opened. Passport names keep letters and spaces and are turned into capitals; passport number letters and digits; typed dates become YYYY-MM-DD; email max 100, characters a-z 0-9 _ - @ . only, checked with the portal's own pattern ('The email format is incorrect. Please check again.')."
+        },
+        {
+          "key": "navigator_scope",
+          "name": "e-Arrival Card navigator",
+          "url": "https://www.e-arrivalcard.go.kr/portal/guide/navigator.do?locale=EN",
+          "agency": "Korea Immigration Service",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-files section. If you have K-ETA, you do not need to submit the e-Arrival Card, except K-ETA holders entering with a visa."
+        },
+        {
+          "key": "system_scope_notice",
+          "name": "About the e-Arrival Card (notice)",
+          "url": "https://www.e-arrivalcard.go.kr/portal/board/viewBoardDetail.do?bbsId=0000000008&eacBbsKndCd=1&flId=&locale=EN",
+          "agency": "Korea Immigration Service",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-files section. Names group tourist e-visa holders from China, Vietnam, the Philippines and Indonesia, and group tourist visa holders from India and Cambodia issued by overseas missions, as exempt."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "philippines",
@@ -27691,9 +27795,17 @@ export default {
           "agency": "Ministry of Foreign Affairs and International Cooperation of Cambodia",
           "lastVerified": "2026-10-15",
           "notes": "Read 2026-10-15. Visa T (tourist) USD 30 and Visa E (business) USD 35, single entry, processed in 3 business days. The site sits behind a Nexusguard browser check. The application asks for a recent passport-size photo in JPEG or PNG and an image of the passport, which its Passport Reader uses to fill the form."
+        },
+        {
+          "key": "government_visitor_scope",
+          "name": "Visitor information: passport, visa and e-Arrival",
+          "url": "https://francophonie2026.gov.kh/en/InformationForVisitor",
+          "agency": "Ministry of Foreign Affairs and International Cooperation, Cambodia",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-files section. Government visitor page: all travellers must submit the free Cambodia e-Arrival within seven days before arrival or on arrival. Lists no exemptions."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "usa",
@@ -27737,9 +27849,33 @@ export default {
           "agency": "U.S. Department of State",
           "lastVerified": "2026-07-14",
           "notes": "Verified 2026-07-14. The State Department page lists 42 VWP countries and authorities. Eligible citizens or nationals may travel for tourism or business for 90 days or less if they meet every VWP requirement and hold an approved ESTA. ESTA is not a visa and does not guarantee admission."
+        },
+        {
+          "key": "esta_exemptions",
+          "name": "Canadian citizen: do I need ESTA? (CBP)",
+          "url": "https://www.help.cbp.gov/s/article/Article-1441?language=en_US",
+          "agency": "U.S. Customs and Border Protection",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 in a browser for the hub page's who-applies section. Canadian citizens on a Canadian passport and US lawful permanent residents who are VWP citizens do not need ESTA; VWP citizens transiting the US by air must apply."
+        },
+        {
+          "key": "esta_land",
+          "name": "Do I need an ESTA to enter by land? (CBP)",
+          "url": "https://www.help.cbp.gov/s/article/Article-1291?language=en_US",
+          "agency": "U.S. Customs and Border Protection",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 in a browser for the hub page's who-applies section. VWP travellers need ESTA by air, sea or land; children of any age need their own ESTA."
+        },
+        {
+          "key": "esta_visa_exemption",
+          "name": "What is ESTA? (CBP)",
+          "url": "https://www.help.cbp.gov/s/article/Article-1437?language=en_US",
+          "agency": "U.S. Customs and Border Protection",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 in a browser for the hub page's who-applies section. Travellers on valid visas are not required to apply for an ESTA."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "uk",
@@ -27830,9 +27966,17 @@ export default {
           "agency": "UK Visas and Immigration",
           "lastVerified": "2026-11-02",
           "notes": "Destination confirmed from the links in GOV.UK ETA overview and app guidance. No chat was started; availability and support response were not tested."
+        },
+        {
+          "key": "eta_exemptions",
+          "name": "When you do not need an ETA",
+          "url": "https://www.gov.uk/eta/when-not-need-eta",
+          "agency": "Home Office",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-applies section. Exemptions include British and Irish citizens, UK visa holders, people with permission to live, work or study in the UK, airside transit, and BN(O) and British overseas territories citizen passports."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "canada",
@@ -27884,9 +28028,17 @@ export default {
           "agency": "Immigration, Refugees and Citizenship Canada (IRCC)",
           "lastVerified": "2026-11-02",
           "notes": "Read 2026-10-15; the online form sits behind a waiting room and was not opened. Dates are selected as on the passport; names in Roman letters with French accents, apostrophes and hyphens as printed; most passport numbers 8 to 11 letters and digits, no hyphens or spaces. No patterns or length limits are published."
+        },
+        {
+          "key": "eta_facts",
+          "name": "Find out about electronic travel authorization (eTA)",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/facts.html",
+          "agency": "Immigration, Refugees and Citizenship Canada",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 in a browser for the hub page's who-applies section. Visa-exempt foreign nationals need an eTA to fly to or transit through a Canadian airport; US lawful permanent residents with valid status are exempt; Canadian citizens, including dual citizens, travel on Canadian documents."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "new-zealand",
@@ -27939,9 +28091,25 @@ export default {
           "agency": "New Zealand Customs Service",
           "lastVerified": "2026-11-02",
           "notes": "Read 2026-10-15 from the app scripts and appSettings.json. includePassportExpiryDate is false, so the form does not ask for passport expiry. Names max 39, ^[a-zA-Z-\\s']+$, surname required and given names optional; passport number 3 to 9, ^[A-Z0-9]+$; date of birth up to today; air arrival today, tomorrow or the day after, or a typed date from yesterday (declaration can start 2 days before arrival); flight number /^(?=.{3,7}$)\\s*(?:3C|3U|D7|[A-Z]{2})[ -]?\\d{1,4}\\s*$/; email and phone patterns from the form."
+        },
+        {
+          "key": "air_transit",
+          "name": "Travel by air (NZ Customs)",
+          "url": "https://www.customs.govt.nz/travel-to-and-from-new-zealand/travel-by-air",
+          "agency": "New Zealand Customs Service",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-files section. Transit passengers do not need an NZTD if they stay in the transit area for 24 hours or less and do not enter New Zealand."
+        },
+        {
+          "key": "completion_guide",
+          "name": "Completing your declaration",
+          "url": "https://www.travellerdeclaration.govt.nz/completing-your-declaration/",
+          "agency": "New Zealand Customs Service",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-files section. Individual declarations are needed for each person travelling, including babies and children."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "australia",
@@ -28041,9 +28209,17 @@ export default {
           "lastVerified": "2026-11-02",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
           "notes": "Verified 2026-07-14. This is the Ministry of Foreign Affairs country-by-country source for visa exemption, direct e-Visa eligibility, conditional e-Visa eligibility, and sticker-visa requirements. Examples currently exempt for ordinary tourist passports include Germany, France, Italy, Spain, Belgium, Portugal, Switzerland, Norway, Denmark, Finland, Japan, South Korea, Hong Kong SAR, Singapore, Malaysia, the United Kingdom, the United States, Canada, Australia, and China. Stay limits and passport-type rules differ, so check the entry for the exact passport."
+        },
+        {
+          "key": "general_visa_guidance",
+          "name": "General information about Turkish visas",
+          "url": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "agency": "Republic of Türkiye Ministry of Foreign Affairs",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-applies section. Some applicants are exempt from a visa for tourist or business visits; others can obtain an e-Visa."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "sri-lanka",
@@ -28106,9 +28282,33 @@ export default {
           "lastVerified": "2026-11-02",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.eta.gov.lk/slvisa/visainfo/apply.jsp?locale=en_US",
           "notes": "Read 2026-08-30. Describes what the application requires: a correct passport number, nationality exactly as written in the travel document, and date of birth. The same travel document must be used for the application and at arrival. The traveller also needs a passport valid at least 6 months, a confirmed return ticket and sufficient funds."
+        },
+        {
+          "key": "eta_faq",
+          "name": "ETA FAQ",
+          "url": "https://www.eta.gov.lk/slvisa/visainfo/faq.jsp?locale=en_US",
+          "agency": "Department of Immigration and Emigration, Sri Lanka",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-applies section. Holders of a valid residence visa or multiple-entry visa cannot lodge a fresh ETA until that visa expires or is cancelled."
+        },
+        {
+          "key": "eta_scope",
+          "name": "ETA information centre",
+          "url": "https://www.eta.gov.lk/slvisa/visainfo/center.jsp?locale=en_US",
+          "agency": "Department of Immigration and Emigration, Sri Lanka",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-applies section. All foreign nationals, except listed exemptions, including nationals of the 40 fee-waiver countries and of the Maldives, Seychelles and Singapore, must obtain an ETA before arrival."
+        },
+        {
+          "key": "official_exemptions",
+          "name": "ETA exemptions for diplomatic and official passports",
+          "url": "https://www.eta.gov.lk/slvisa/visainfo/diplo.jsp?locale=en_US",
+          "agency": "Department of Immigration and Emigration, Sri Lanka",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-applies section. Exemption table for diplomatic and official/service passports; also lists citizens of Hong Kong SAR, up to 30 days."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "maldives",
@@ -28171,9 +28371,17 @@ export default {
           "lastVerified": "2026-11-02",
           "archiveUrl": "https://web.archive.org/web/2026/https://www.immigration.gov.mv/news",
           "notes": "Read 2026-08-30. The 13 August 2024 item states that outbound travellers are no longer required to submit the declaration from 15 August 2024. Older guides that tell travellers to file a departure form are describing a rule that no longer applies."
+        },
+        {
+          "key": "citizen_exemption",
+          "name": "Traveller Declaration discontinued for Maldivians",
+          "url": "https://www.immigration.gov.mv/news/6659",
+          "agency": "Maldives Immigration",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-files section. The Controller General of Immigration discontinued the Traveller Declaration form for Maldivians."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "taiwan",
@@ -28245,9 +28453,17 @@ export default {
           "lastVerified": "2026-11-02",
           "archiveUrl": "https://web.archive.org/web/2026/https://twac.immigration.gov.tw/files/UserManual_Eng.pdf",
           "notes": "Read 2026-08-30. The official manual confirms email verification; passport upload or manual entry; nationality, passport expiry, conditional visa type and number, conditional occupation and job title, email and phone; arrival and departure flight or vessel, departure date in DD/MM/YYYY, purpose and accommodation; a relative contact when the purpose is visiting relatives; and a reason when the purpose is Other. A confirmation email or electronic document is sent. The traveller does not need to show it at inspection because scanning the passport retrieves the TWAC data. One person may file individually for up to 10 travellers, and the group-file import supports up to 16."
+        },
+        {
+          "key": "egov_filing_scope",
+          "name": "Online arrival card: who must file",
+          "url": "https://www.gov.tw/News_Content_2_371274",
+          "agency": "National Immigration Agency via Government Services Portal",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-files section. Filing groups: foreigners without a Taiwan residence certificate, diplomatic ID or resident visa; nationals without household registration lacking a residence certificate. Hong Kong and Macao residents on single-entry permits, online permits, landing visas or residence certificates do not file. Nationals with household registration never file."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "egypt",
@@ -28495,9 +28711,25 @@ export default {
           "lastVerified": "2026-11-02",
           "archiveUrl": "https://web.archive.org/web/2026/https://embassies.gov.il/en/announcements/eta-il-entrance-tourists-visa-exempt-countries",
           "notes": "States that the official application costs ILS 25, the decision is emailed within 72 hours, and a payment receipt is sent by the official site."
+        },
+        {
+          "key": "british_eta_guidance",
+          "name": "Israel entry requirements (UK travel advice)",
+          "url": "https://www.gov.uk/foreign-travel-advice/israel/entry-requirements",
+          "agency": "UK Foreign, Commonwealth and Development Office",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-applies section. UK government advice for full British citizen passport holders: from 1 January 2025 you need an ETA before you arrive in Israel."
+        },
+        {
+          "key": "eta_scope_notice",
+          "name": "ETA-IL announcement",
+          "url": "https://embassies.gov.il/wellington/en/announcements/eta-il",
+          "agency": "Israel Ministry of Foreign Affairs",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-applies section. Visitors from visa-exempt countries must obtain an ETA-IL before departure; Israeli citizens and holders of an Israeli identity number do not apply."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "cuba",
@@ -28871,9 +29103,17 @@ export default {
           "lastVerified": "2026-11-02",
           "archiveUrl": "https://web.archive.org/web/2026/https://evisa.moip.gov.mm/assets/dist/img/guide/userGuide.pdf",
           "notes": "Read 2026-08-30. The 25-page official guide covers account activation, the five-step Tourist or Business eVisa flow, passport validity, MRZ name entry, JPG/PDF uploads up to 2 MB, the Tourist payment acknowledgement showing a USD 50 processing fee, the minimum 3-working-day approval time, and printing the Approval Letter."
+        },
+        {
+          "key": "tourist_eligibility",
+          "name": "Tourist eVisa eligibility and exemptions",
+          "url": "https://tourism.gov.mm/en/e-visa",
+          "agency": "Ministry of Hotels and Tourism, Myanmar",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-applies section. Lists eligible nationalities and the ordinary passports exempt from a tourist visa within the stated exemption period."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "nepal",
@@ -29330,9 +29570,17 @@ export default {
           "agency": "Ministry of Interior - Nationality, Passports and Residence Affairs",
           "lastVerified": "2026-11-02",
           "notes": "Read 2026-08-30. The government service directory describes a five-year multiple-entry product for nationals of 68 countries, BD 64, the same four supporting-document categories and a 3-to-5-working-day process."
+        },
+        {
+          "key": "national_id_entry",
+          "name": "National identification and visas",
+          "url": "https://www.bahrain.bh/wps/portal/en/BNP/HomeNationalPortal/ContentDetailsPage/%21ut/p/z0/nVBdT8IwFP0r92WPpmWDgY8iidMEmZoo9IXcbWW7UtrR1kX_vRMIMS4uxsdzcnK-mGBLJjQ2VKIno1G1eCXi9eB2xJPJNefpbBjyh-fLx3g6H_D5TcTumPguSO7TGY8XyWQcjqfR8Cn8cqDX_V5cMZEb7eW7Z8tM12u0ATe-ktYFXOGHefMBt1KhlwV4U1PuzvhnSLfFbyFSB7y1tqBoI4E0ZFhZpJbVp4VAhdSeNpQfCEBdQEMO3R8k_eMXaX8vzNrN0D4AW9JlYXYBP7UjULIkpw5xrntLJVH5qj-dR_955eico5Xd1NpS0xJw1ICTuTeW1VuRjVSze7kQq0_gAUoI/",
+          "agency": "Bahrain National Portal",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-applies section. States that citizens of GCC countries may enter Bahrain using only their national ID cards."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "tanzania",
@@ -29391,9 +29639,17 @@ export default {
           "agency": "Tanzania Immigration Services Department",
           "lastVerified": "2026-11-02",
           "notes": "Read 2026-08-30. The fee table lists USD 50 for an Ordinary Visa, USD 100 for Multiple Entry and USD 30 for Transit. Eligibility and visa category must be checked before payment."
+        },
+        {
+          "key": "visa_free_countries",
+          "name": "Countries whose nationals do not require a visa",
+          "url": "https://visa.immigration.go.tz/visafreecountry",
+          "agency": "Tanzania Immigration Services Department",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-applies section. Official list of countries whose nationals do not require a visa."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "ethiopia",
@@ -29667,9 +29923,17 @@ export default {
           "agency": "Exempt Technologies, Inc.",
           "lastVerified": "2026-11-02",
           "notes": "Read 2026-08-30. Exempt Technologies identifies itself as the app builder and states that the service is provided at no cost. Customs duties are separate and may be prepaid through the app."
+        },
+        {
+          "key": "customs_arriving",
+          "name": "Arriving in The Bahamas: visitors and returning residents",
+          "url": "https://www.bahamascustoms.gov.bs/visitor-info/arriving/",
+          "agency": "The Bahamas Customs Department",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-files section. Visitors carrying only used personal belongings make an oral baggage declaration; returning residents declare whether or not they have items to declare."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "aruba",
@@ -29887,9 +30151,17 @@ export default {
           "agency": "VFS Global",
           "lastVerified": "2026-11-02",
           "notes": "Identifies the commercial operator as VF Worldwide Holdings Ltd trading as VFS Global and states that visa grants, duration and refusal sit with the immigration authorities' sole discretion and that fees are non-refundable. Verified against the Internet Archive snapshot of 2026-07-14 because the live host blocks automated sessions."
+        },
+        {
+          "key": "visitor_eligibility",
+          "name": "Visitor visa (VIVIS)",
+          "url": "https://www.gov.br/mre/pt-br/consulado-chicago/Visas/types-of-visa-1/vivis-visitor-visa",
+          "agency": "Ministry of Foreign Affairs of Brazil",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-applies section. Consulate page: visitors who need a visitor visa can request an electronic visa without coming to the consulate."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "barbados",
@@ -30132,9 +30404,17 @@ export default {
           "lastVerified": "2026-11-02",
           "archiveUrl": "https://web.archive.org/web/2026/https://jordan.gov.jo/EN/Pages/Travel_Visas",
           "notes": "Read 2026-08-30. The national portal states that most tourists opt for the single-entry tourist visa, that visa on arrival is available at major entry points including Queen Alia International Airport, that tourist visas typically allow stays of 1 month or 3 months, and that required documents are a passport with at least six months of validity, a passport-sized photo, a flight itinerary and hotel reservation details. Its e-visa step links to moi.gov.jo/EN/Pages/Visa_E_Applications."
+        },
+        {
+          "key": "pass_faq",
+          "name": "Jordan Pass FAQs",
+          "url": "https://www.jordanpass.jo/Contents/FAQs.aspx",
+          "agency": "Ministry of Tourism and Antiquities of Jordan",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 for the hub page's who-buys section. The Jordan Pass is not a visa; it is not available to Arabic nationality holders; children under 12 accompanied by parents enter the tourist sites free."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "china",

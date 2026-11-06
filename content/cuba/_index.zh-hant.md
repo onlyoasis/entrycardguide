@@ -3,7 +3,7 @@ title: "古巴 D'Viajeros 免費入境表官網與 eVisa 區別"
 kicker: "D'Viajeros 免費，旅遊 eVisa 另辦且可能收費，不要把兩件事打包買。"
 description: "古巴 D'Viajeros 中文指南：免費官網、旅行前 7 天窗口、QR Code，以及單獨的 eVisa 要求。"
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 古巴有兩道不同的入境手續，經常被包裝成一件商品。
@@ -24,6 +24,14 @@ lastmod: 2026-11-02
 ### 2. 準備 4 類資訊
 旅客、移民、海關和衛生資訊，不編官方正則。
 → [打開欄位指南](/zh-hant/cuba/how-to-fill/)
+
+## 誰要填，誰不用填
+
+- **要填**：每一位抵達古巴的旅客，每次入境都要如實填寫 D'Viajeros。
+- **豁免**：沒找到給古巴公民、居民、機組或轉機旅客免填的官方原文，這裡不列。
+- **按國籍或證件**：不分國籍，所有旅客填同一張 D'Viajeros。中國大陸、香港、臺灣護照都一樣。
+
+來源：{{< source-link site="cuba.mandatory_notice" text="D'Viajeros 強制填寫通知" >}}。要不要簽證或旅遊卡是另一回事。
 
 ## 速記要點
 

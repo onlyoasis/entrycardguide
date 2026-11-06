@@ -2,7 +2,7 @@
 title: "澳大利亞 ETA 多少錢？官方 App 與免費 eVisitor 651 指南"
 kicker: "澳大利亞 ETA 601 沒有官方網頁申請表。請使用 AustralianETA App；符合條件的歐洲護照可改走免費的 eVisitor 651。"
 description: "澳大利亞 ETA 中文指南：AustralianETA 官方 App、20 澳元服務費、免費 eVisitor 651、App 申請步驟、有效期和常見加價區間。"
-lastmod: 2026-10-12
+lastmod: 2026-11-06
 ---
 
 澳大利亞 ETA 601 **沒有官方網頁申請表**。唯一官方申請途徑，是澳大利亞內政部發布的 AustralianETA App。
@@ -22,6 +22,14 @@ ETA 本身沒有簽證申請費，但每份申請要在官方 App 內支付 **20
 下載官方 App，用 NFC 讀取護照晶片，拍攝本人實時照片，回答申報問題，支付 20 澳元，再等待結果。
 
 → [按 6 步完成 App 申請](/zh-hant/australia/how-to-fill/)
+
+## 誰要申請，誰不用申請
+
+- **要申請**：持 ETA 適用護照的旅客，通過 Australian ETA App 申請。每位家庭成員都要單獨申請，護照上附帶的人也一樣。
+- **不用申請**：澳大利亞公民。持適用護照的雙重國籍者也不能申請 ETA。
+- **按國籍或證件**：ETA 名單包括香港特區護照、臺灣護照（公務和外交護照除外），以及美國、英國（英國公民和 BN(O)）護照。名單裡沒有中國大陸護照。
+
+來源：{{< source-link site="australia.eta601" text="澳大利亞內政部 ETA 601 頁面" >}}。
 
 ## ETA 601 還是 eVisitor 651？
 

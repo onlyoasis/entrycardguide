@@ -2,7 +2,7 @@
 title: "墨西哥 FMM-E 官方網站、免費線上填寫和防中介指南"
 kicker: "關於墨西哥電子入境表（FMM-E）你需要知道的一切，不必經手任何中介。"
 description: "墨西哥 FMM-E 中文指南：INM 官方網址 inm.gob.mx/fmme、免費線上填寫、每個欄位怎麼填。"
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 電子入境表（Forma Migratoria Múltiple Electrónica，簡稱 FMM-E）是墨西哥的數字入境許可。多數外國遊客進入墨西哥時都需要它，**免費**，在墨西哥國家移民局（INM）的官方網站提交。
@@ -20,6 +20,14 @@ lastmod: 2026-11-02
 ### 2. 每個欄位怎麼填
 按官方表單順序的逐欄位講解，常見錯誤和真實原因。
 → [欄位逐項指南](/zh-hant/mexico/how-to-fill/)
+
+## 誰要填，誰不用填
+
+- **陸路入境**：經陸路入境墨西哥的外國人，可以在 INM 網站上辦電子 FMM。
+- **航空入境**：INM 說明，坐飛機入境不用填 FMMe。
+- **按國籍或證件**：不分國籍，看入境方式：陸路用 FMM-E，坐飛機不用預填。中國大陸、臺灣、香港護照都一樣。
+
+來源：{{< source-link site="mexico.fmm" text="INM FMM-E 申請條件" >}}、{{< source-link site="mexico.air_fmmd" text="INM 數字 FMM 說明" >}}。要不要簽證是另一回事。
 
 ## 速記要點
 
