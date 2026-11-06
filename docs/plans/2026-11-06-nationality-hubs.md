@@ -145,7 +145,7 @@
 | singapore | SGAC（arrival_card） | 不过移民检查的转机旅客；经兀兰（Woodlands）、大士（Tuas）关卡入境的新加坡公民、永久居民和长期准证持有人。 | sgac_guidance | — |
 | south-africa | Traveller Declaration（arrival_card） | 在指定转机区停留，或不离开原航班、原船只的空海路过境旅客。 | faq, processing_policy, rules, service | — |
 | sri-lanka | ETA（travel_authorization） | 官方表格列出的外交、公务护照持有人，在表格写明的访问范围内。持有效居留签证或多次入境签证的，签证到期或取消前不能再申请新的 ETA。 | eta_faq, eta_scope, official_exemptions | eta_faq, eta_scope, official_exemptions |
-| taiwan | TWAC（arrival_card） | 有户籍的国民；持上述证件的外国人；持单次入出境许可证、网签、落地签或中华民国居留证的港澳居民。 | egov_filing_scope, launch_notice | egov_filing_scope |
+| taiwan | TWAC（arrival_card） | 有户籍的国民；持上述证件的外国人；持单次入出境许可证、网上申请的入台证、落地签或中华民国居留证的港澳居民。 | egov_filing_scope, launch_notice | egov_filing_scope |
 | tanzania | eVisa（evisa） | 官方免签名单上国家的公民。 | evisa, guidelines, visa_free_countries | visa_free_countries |
 | thailand | TDAC（arrival_card） | 泰国公民；不过移民检查的转机旅客；持边境通行证（Border Pass）入境的人；机组人员。 | consulate_scope, faq, user_guide | consulate_scope |
 | turkey | e-Visa（evisa） | 旅游或商务访问本来就免签的人。 | general_visa_guidance, mfa_visa_info | general_visa_guidance |
