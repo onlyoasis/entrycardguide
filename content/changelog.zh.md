@@ -4,6 +4,9 @@ description: "entrycardguide.com 的重要变更：政府政策更新、新国�
 date: 2026-04-27
 lastmod: 2026-09-14
 url: "/zh/changelog/"
+noindex: true
+sitemap:
+  disable: true
 ---
 
 这里记录实质性更新。出现这些情况时，我们会新增一条：
