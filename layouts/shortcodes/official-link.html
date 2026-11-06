@@ -33,3 +33,13 @@
     </div>
   </div>
 </div>
+{{- /* Affiliate strip under the first top-level official-link only. Ordinal
+       counts every shortcode, so find which opening tag in the raw content is
+       the first official-link; page state (Store) would break on rebuilds. */ -}}
+{{- if not .Parent }}
+  {{- $first := -1 }}
+  {{- range $i, $tag := findRE `\{\{[<%]\s*[^/\s][^>%]*[>%]\}\}` .Page.RawContent }}
+    {{- if and (lt $first 0) (strings.HasPrefix (strings.TrimLeft "{<% " $tag) "official-link") }}{{ $first = $i }}{{ end }}
+  {{- end }}
+  {{- if eq .Ordinal $first }}{{ partial "affiliate-inline.html" .Page }}{{ end }}
+{{- end }}
