@@ -1,6 +1,8 @@
 {{- /* Returns the affiliate cards for this page: cards with a url in the page
-       language, filtered to `countries` when the card lists them. Param is the
-       page. Pages without a section (about, changelog) get none. */ -}}
+       language, filtered to `countries` when the card lists them and skipped
+       for `exclude_countries` (a generic card that a country-specific one
+       replaces). Param is the page. Pages without a section (about,
+       changelog) get none. */ -}}
 {{- $lang := .Language.Lang -}}
 {{- $section := .Section -}}
 {{- $cards := slice -}}
@@ -9,7 +11,7 @@
   {{- $url := index (.urls | default dict) $lang | default "" -}}
   {{- if $url -}}
     {{- $partners = $partners | append .partner -}}
-    {{- if and $section (or (not .countries) (in .countries $section)) -}}
+    {{- if and $section (or (not .countries) (in .countries $section)) (not (in (.exclude_countries | default slice) $section)) -}}
       {{- $cards = $cards | append (dict "partner" .partner "product" .product "url" $url) -}}
     {{- end -}}
   {{- end -}}
