@@ -3,7 +3,7 @@ title: "Saudi Arabia"
 kicker: "66 passports can apply for the tourist eVisa. The base fee is SAR 300, and the portal host is not a .gov.sa address, so reach it from a government page."
 description: "Independent Saudi tourist eVisa guide: the 66-country list, SAR 300 base fee plus insurance and VAT, what the visa covers, and the finder route for other passports."
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 Saudi Arabia's tourist eVisa is open to **66 eligible-country passports**. It is normally valid for one year, allows multiple entries, and permits stays of up to 90 days.
@@ -23,6 +23,14 @@ The 66-country eVisa, the finder route for US, UK, Schengen and GCC holders, and
 ### 2. Nine checks before you pay
 Eligibility, hostname, passport, insurance and the real total.
 → [Open the field guide](/saudi-arabia/how-to-fill/)
+
+## Who applies, and who does not
+
+- **Who applies:** international visitors with a valid passport from one of the portal's eligible countries.
+- **Who does not:** the portal lists who can apply; we found no exemption text there, so this page does not give one.
+- **By nationality:** there is no separate form by nationality. Whether your passport can use it, or needs it at all, is on the official {{< source-link site="saudi-arabia.tourist_evisa" text="eVisa portal" >}}.
+
+Sources: {{< source-link site="saudi-arabia.tourist_evisa" text="Saudi eVisa portal" >}} and {{< source-link site="saudi-arabia.terms" text="terms" >}}.
 
 ## Fast facts
 

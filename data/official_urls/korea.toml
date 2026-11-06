@@ -185,3 +185,17 @@ name = "e-Arrival Card application entry page"
 agency = "Korea Immigration Service"
 last_verified = "2026-11-02"
 notes = "Read 2026-10-15 from the page's shared input script; the arrival card form opens only after an email confirmation and was not opened. Passport names keep letters and spaces and are turned into capitals; passport number letters and digits; typed dates become YYYY-MM-DD; email max 100, characters a-z 0-9 _ - @ . only, checked with the portal's own pattern ('The email format is incorrect. Please check again.')."
+
+[navigator_scope]
+url = "https://www.e-arrivalcard.go.kr/portal/guide/navigator.do?locale=EN"
+name = "e-Arrival Card navigator"
+agency = "Korea Immigration Service"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-files section. If you have K-ETA, you do not need to submit the e-Arrival Card, except K-ETA holders entering with a visa."
+
+[system_scope_notice]
+url = "https://www.e-arrivalcard.go.kr/portal/board/viewBoardDetail.do?bbsId=0000000008&eacBbsKndCd=1&flId=&locale=EN"
+name = "About the e-Arrival Card (notice)"
+agency = "Korea Immigration Service"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-files section. Names group tourist e-visa holders from China, Vietnam, the Philippines and Indonesia, and group tourist visa holders from India and Cambodia issued by overseas missions, as exempt."

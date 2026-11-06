@@ -110,3 +110,10 @@ name = "IRCC eTA help guide (PDF)"
 agency = "Immigration, Refugees and Citizenship Canada (IRCC)"
 last_verified = "2026-11-02"
 notes = "Read 2026-10-15; the online form sits behind a waiting room and was not opened. Dates are selected as on the passport; names in Roman letters with French accents, apostrophes and hyphens as printed; most passport numbers 8 to 11 letters and digits, no hyphens or spaces. No patterns or length limits are published."
+
+[eta_facts]
+url = "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/facts.html"
+name = "Find out about electronic travel authorization (eTA)"
+agency = "Immigration, Refugees and Citizenship Canada"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 in a browser for the hub page's who-applies section. Visa-exempt foreign nationals need an eTA to fly to or transit through a Canadian airport; US lawful permanent residents with valid status are exempt; Canadian citizens, including dual citizens, travel on Canadian documents."

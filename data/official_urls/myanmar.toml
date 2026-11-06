@@ -59,3 +59,9 @@ fields_intro_en = "The public FAQ and 25-page application guide expose required 
 fields_intro_zh = "公开 FAQ 和 25 页申请手册给出了必填步骤、按机读区填写姓名、护照至少 6 个月有效、JPG/PDF 最大 2 MB，以及材料清单。实际个人资料表需要激活账号，未公开可读取的文本字段正则、字符上限或校验报错原文。本页不编造 `pattern`，也不挂本地校验器。"
 fields_intro_zh_hant = "公開 FAQ 和 25 頁申請手冊給出了必填步驟、按機讀區填寫姓名、護照至少 6 個月有效、JPG/PDF 最大 2 MB，以及材料清單。實際個人資料表需要激活賬號，未公開可讀取的文本欄位正則、字符上限或校驗報錯原文。本頁不編造 `pattern`，也不掛本地校驗器。"
 
+[tourist_eligibility]
+url = "https://tourism.gov.mm/en/e-visa"
+name = "Tourist eVisa eligibility and exemptions"
+agency = "Ministry of Hotels and Tourism, Myanmar"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-applies section. Lists eligible nationalities and the ordinary passports exempt from a tourist visa within the stated exemption period."

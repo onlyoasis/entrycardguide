@@ -161,3 +161,10 @@ url = "https://www.kln.gov.my/web/can_vancouver/travel_advisory"
 name = "MDAC exemptions"
 agency = "Ministry of Foreign Affairs Malaysia"
 last_verified = "2026-11-02"
+
+[singapore_mdac_advice]
+url = "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/malaysia/"
+name = "Malaysia travel advice: MDAC (Singapore MFA)"
+agency = "Ministry of Foreign Affairs, Singapore"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-files section. Singaporeans who intend to enrol their fingerprints for Malaysia's e-gates on later entries should submit the MDAC."

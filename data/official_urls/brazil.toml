@@ -77,3 +77,10 @@ verification_title_zh_hant = "審批權屬於巴西移民機關"
 verification_body_en = "VFS Global receives the application but does not decide it. Check the issued validity and stay conditions on the approved document."
 verification_body_zh = "VFS Global 接收申请但不作审批决定。以获批文件显示的有效期和停留条件为准。"
 verification_body_zh_hant = "VFS Global 接收申請但不作審批決定。以獲批文件顯示的有效期和停留條件為準。"
+
+[visitor_eligibility]
+url = "https://www.gov.br/mre/pt-br/consulado-chicago/Visas/types-of-visa-1/vivis-visitor-visa"
+name = "Visitor visa (VIVIS)"
+agency = "Ministry of Foreign Affairs of Brazil"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-applies section. Consulate page, section E-VISA - AUSTRALIA, CANADA AND UNITED STATES: nationals of those three countries need a visitor visa from 10 April 2025 and can request an e-Visa without coming to the consulate; other visa-required travellers use the regular VIVIS documents on the same page."

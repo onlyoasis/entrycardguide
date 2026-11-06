@@ -66,3 +66,10 @@ output_zh_hant = "電子提交後，Exempt 門戶生成 QR Code，用於指定�
 fields_intro_en = "The public C17 page exposes the form title, seven section headings and an all-fields-mandatory notice. The portal also says passport information must be scanned before forms can be submitted. It publishes no field regexes, character limits or complete official error set. No invented pattern or error decoder is used, and no local validator is mounted."
 fields_intro_zh = "公开 C17 页面能读到表单名称、7 个分段标题和所有字段必填提示；门户还说明提交前必须扫描护照资料。页面没有公开字段正则、字符上限或完整官方报错。本页不编 pattern 或错误解码，也不挂本地校验器。"
 fields_intro_zh_hant = "公開 C17 頁面能讀到表單名稱、7 個分段標題和所有欄位必填提示；門戶還說明提交前必須掃描護照資料。頁面沒有公開欄位正則、字符上限或完整官方報錯。本頁不編 pattern 或錯誤解碼，也不掛本地校驗器。"
+
+[customs_arriving]
+url = "https://www.bahamascustoms.gov.bs/visitor-info/arriving/"
+name = "Arriving in The Bahamas: visitors and returning residents"
+agency = "The Bahamas Customs Department"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-files section. Visitors carrying only used personal belongings make an oral baggage declaration; returning residents declare whether or not they have items to declare."

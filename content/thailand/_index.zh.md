@@ -2,7 +2,7 @@
 title: "泰国 TDAC 官方网站、免费填写和防中介指南"
 kicker: "关于泰国数字入境卡（TDAC）你需要知道的一切，不必经手任何中介。"
 description: "泰国 TDAC 中文指南：官方网址 tdac.immigration.go.th、免费填写、每个字段怎么填。"
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 泰国数字入境卡（TDAC）于 2025 年 5 月取代纸质入境卡。所有外国入境者都必须填写，免费，且只在 `tdac.immigration.go.th` 受理。
@@ -24,6 +24,14 @@ lastmod: 2026-11-02
 ### 3. 落地之后
 入境审查、海关限额、现金申报线，以及素万那普的官方出租车规则。
 → [泰国落地流程](/zh/thailand/landing/)
+
+## 谁要填，谁不用填
+
+- **要填**：所有入境泰国的非泰国籍旅客，婴儿和儿童也要填。
+- **不用填**：泰国公民；不过移民检查的转机旅客；持边境通行证（Border Pass）入境的人；机组人员。
+- **按国籍或证件**：TDAC 不分国籍，没有中国人专用版本。中国大陆、香港、澳门、台湾护照都属于非泰国籍，填同一张免费表。
+
+来源：{{< source-link site="thailand.user_guide" text="TDAC 用户指南" >}}、{{< source-link site="thailand.faq" text="TDAC 常见问题" >}}、{{< source-link site="thailand.consulate_scope" text="泰国驻香港总领事馆" >}}。要不要签证是另一回事。
 
 ## 速记要点
 

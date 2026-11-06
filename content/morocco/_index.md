@@ -3,7 +3,7 @@ title: "Morocco"
 kicker: "Many travellers need no visa. Run the official eligibility checker before paying MAD 770 or MAD 1,100."
 description: "Independent Morocco eVisa guide: visa-exemption-first checker, official Accès Maroc portal, standard and express prices, eligibility and documents."
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 Do not begin with the eVisa application. Morocco's official checker can return four different routes: no visa, a consular visa, AEVM or eVisa.
@@ -21,6 +21,14 @@ Run the live checker, then read the eVisa categories, price and stay rules only 
 ### 2. Prepare the offered route
 Twelve documented checks from the live eligibility page and official briefing note.
 → [Open the application guide](/morocco/how-to-fill/)
+
+## Who applies, and who does not
+
+- **Who applies:** certain categories of foreign citizens who need a visa to enter Morocco.
+- **Who does not:** travellers who do not need a visa for Morocco have nothing to apply for.
+- **By nationality:** there is no separate form by nationality. Whether your passport can use it, or needs it at all, is on the official {{< source-link site="morocco.evisa" text="Accès Maroc portal" >}}.
+
+Source: {{< source-link site="morocco.terms" text="eVisa terms of use" >}}.
 
 ## Fast facts
 

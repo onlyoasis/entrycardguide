@@ -3,7 +3,7 @@ title: "秘魯 TAM Virtual：自動生成、免費查詢和下載"
 kicker: "TAM Virtual 在邊檢時自動生成。官網是免費查詢，不是入境前要填的表。"
 description: "秘魯 TAM Virtual 中文指南：邊檢自動記錄、Migraciones 免費查詢、證件格式和下載憑證。"
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 秘魯以電子記錄取代了國際航班移民檢查中的紙質卡和護照蓋章。虛擬安第斯移民卡 TAM Virtual 在邊檢時自動生成。
@@ -23,6 +23,14 @@ lastmod: 2026-11-02
 ### 2. 使用官方查詢
 匹配證件、國籍和出入境日期，再下載記錄。
 → [打開查詢欄位指南](/zh-hant/peru/how-to-fill/)
+
+## 誰要填，誰不用填
+
+- **沒人需要填**：TAM Virtual 在入境檢查時自動生成，記錄個人資訊、出入境日期時間、口岸和獲准停留期。
+- **你能做的**：入境後免費查詢、下載這份記錄。
+- **按國籍或證件**：任何護照都不用填 TAM Virtual，也就沒有按國籍分的版本。
+
+來源：{{< source-link site="peru.record_explanation" text="秘魯移民局 TAM Virtual 說明" >}}。要不要簽證是另一回事。
 
 ## 速記要點
 

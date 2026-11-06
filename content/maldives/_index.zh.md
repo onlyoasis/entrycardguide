@@ -3,7 +3,7 @@ title: "马尔代夫 IMUGA 入境申报官网、免费填写与 96 小时规则"
 kicker: "IMUGA 旅客申报表免费，抵达前 96 小时内提交一次即可。离境申报 2024 年已取消。"
 description: "马尔代夫 IMUGA 中文指南：政府门户上的免费旅客申报表、96 小时提交窗口，以及它和落地签的区别。"
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 所有外国入境旅客都要在**抵达前 96 小时内**提交 IMUGA 旅客申报表。它免费，并且运行在政府域名上。
@@ -21,6 +21,14 @@ lastmod: 2026-11-02
 ### 2. 表单会收集什么
 7 项资料，来自门户公开的第一步和官方旅游入境页面。
 → [打开字段指南](/zh/maldives/how-to-fill/)
+
+## 谁要填，谁不用填
+
+- **要填**：所有旅客，在抵达航班前 96 小时内提交。每人一份，儿童和未成年人也要单独填。
+- **不用填**：马尔代夫公民。移民局已停止要求马尔代夫人填写旅客申报。
+- **按国籍或证件**：不分国籍。中国大陆、香港、台湾护照都填同一张免费 IMUGA 表。
+
+来源：{{< source-link site="maldives.traveller_declaration" text="IMUGA 旅客申报" >}}、{{< source-link site="maldives.tourist_visa" text="旅游签证页" >}}、{{< source-link site="maldives.citizen_exemption" text="移民局对本国公民的公告" >}}。要不要签证是另一回事。
 
 ## 速记要点
 

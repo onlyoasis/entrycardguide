@@ -30,20 +30,26 @@ title_zh_hant = "阿魯巴入境卡 ED Card 指南：7 天窗口與海空入境�
 
 [azerbaijan]
 title = "Azerbaijan e-Visa Guide: ASAN Portal and Visa-Free Check"
+title_zh = "阿塞拜疆电子签与免签资格指南"
+title_zh_hant = "阿塞拜疆電子簽與免簽資格指南"
 
 [bahamas]
 title = "Bahamas Entry Guide: Free C17 Digital Customs Form"
-title_zh = "巴哈马入境指南：C17 免费电子海关申报官方入口"
-title_zh_hant = "巴哈馬入境指南：C17 免費電子海關申報官方入口"
+title_zh = "巴哈马入境指南：C17 免费电子海关申报与适用范围"
+title_zh_hant = "巴哈馬入境指南：C17 免費電子海關申報與適用範圍"
 
 [bahrain]
-title = "Bahrain eVisa Guide: Official Portal and On-Arrival Rules"
+title = "Bahrain eVisa Guide: Online and On-Arrival Rules"
+title_zh = "巴林电子签、落地签与资格指南"
+title_zh_hant = "巴林電子簽、落地簽與資格指南"
 
 [barbados]
 title = "Barbados ED Form Guide: Free Official Arrival Form"
+title_zh = "巴巴多斯入境和海关表指南：免费与 72 小时窗口"
+title_zh_hant = "巴巴多斯入境和海關表指南：免費與 72 小時窗口"
 
 [brazil]
-title = "Brazil e-Visa Guide: Official Application Route and Fee"
+title = "Brazil e-Visa Guide: Who Needs One, Eligibility and Fee"
 
 [cambodia]
 title = "Cambodia e-Arrival Card Guide: What to Prepare, Visa Fees Separate"
@@ -53,9 +59,9 @@ description_zh = "柬埔寨入境卡（e-Arrival 电子入境卡）概览：入�
 description_zh_hant = "柬埔寨入境卡（e-Arrival 電子入境卡）概覽：入境申報免費，需要簽證時費用另算；準備護照、抵達資訊和信箱，提交後得到確認或 QR Code。"
 
 [china]
-title = "China Arrival Card Guide: Official NIA Site, Free Filing"
-title_zh = "中国入境卡指南：NIA 官方网址、免费网上填报"
-title_zh_hant = "中國入境卡指南：NIA 官方網址、免費網上填報"
+title = "China Arrival Card Guide: Who Must File and Who Is Exempt"
+title_zh = "中国入境卡指南：谁要填、谁免填、什么时候填"
+title_zh_hant = "中國入境卡指南：誰要填、誰免填、什麼時候填"
 
 [colombia]
 title = "Colombia Check-Mig Guide: Free Official Pre-Registration"
@@ -81,15 +87,19 @@ description_zh = "多米尼加入境卡（E-Ticket）概览：免费，抵达前
 description_zh_hant = "多米尼加入境卡（E-Ticket）概覽：免費，抵達前 72 小時內提交，準備護照、航班、住宿地和信箱，全家出行按表格裡的團體選項填寫。"
 
 [egypt]
-title = "Egypt e-Visa Guide: Official Portal and Fees"
+title = "Egypt e-Visa Guide: Documents, 7-Day Lead Time, Entry Checklist"
 title_zh = "埃及电子签证指南：所需材料、提前 7 天与入境清单"
 title_zh_hant = "埃及電子簽證指南：所需材料、提前 7 天與入境清單"
 
 [ethiopia]
-title = "Ethiopia eVisa Guide: Official Portal and Fees"
+title = "Ethiopia eVisa Guide: 30-Day and 90-Day Tourist Options"
+title_zh = "埃塞俄比亚电子签指南：30 天与 90 天选项"
+title_zh_hant = "埃塞俄比亞電子簽指南：30 天與 90 天選項"
 
 [georgia]
-title = "Georgia e-Visa Guide: Visa-Free Check and Official Portal"
+title = "Georgia e-Visa Guide: Visa-Free Check and Who Needs One"
+title_zh = "格鲁吉亚电子签与免签资格指南"
+title_zh_hant = "格魯吉亞電子簽與免簽資格指南"
 
 [india]
 title = "India e-Arrival Card Guide: 72-Hour Rule, e-Visa and Fees"
@@ -100,7 +110,9 @@ title_zh_hant = "印度入境卡指南：72 小時規則、誰要填、e-Visa �
 title = "Indonesia Entry Forms: Arrival Card, e-CD and e-VOA Guide"
 
 [israel]
-title = "Israel ETA-IL Guide: Official Site and Who Needs It"
+title = "Israel ETA-IL Guide: Who Needs It, Fee and Validity"
+title_zh = "以色列 ETA-IL 指南：免签资格、费用和有效期"
+title_zh_hant = "以色列 ETA-IL 指南：免簽資格、費用和有效期"
 
 [jamaica]
 title = "Jamaica C5 Guide: Free Official Passenger Declaration"
@@ -114,9 +126,13 @@ title_zh_hant = "日本入境卡指南：Visit Japan Web 免費入境 QR Code �
 
 [jordan]
 title = "Jordan Entry Guide: Jordan Pass and Visa Fees"
+title_zh = "约旦入境指南：Jordan Pass、签证费与口岸"
+title_zh_hant = "約旦入境指南：Jordan Pass、簽證費與口岸"
 
 [kenya]
-title = "Kenya eTA Guide: Official Site, Fee and Exemptions"
+title = "Kenya eTA Guide: Who Is Exempt and What to Prepare"
+title_zh = "肯尼亚 eTA 指南：豁免国籍与申请材料"
+title_zh_hant = "肯尼亞 eTA 指南：豁免國籍與申請材料"
 
 [korea]
 title = "South Korea e-Arrival Card Guide: Free, and Not the K-ETA"
@@ -126,7 +142,7 @@ description_zh = "韩国入境卡概览：谁要填、什么时候填（抵达�
 description_zh_hant = "韓國入境卡概覽：誰要填、什麼時候填（抵達前 3 天起可交，72 小時失效），以及 e-Arrival Card 和 K-ETA、Q-Code 的區別；持有效 K-ETA、在韓登記居民等不用填。"
 
 [laos]
-title = "Laos eVisa Guide: Official Site, Fees and Entry Ports"
+title = "Laos eVisa Guide: eVisa, Visa on Arrival and Entry Ports"
 title_zh = "老挝签证指南：电子签、落地签与 9 个适用口岸"
 title_zh_hant = "老撾簽證指南：電子簽、落地簽與 9 個適用口岸"
 
@@ -149,10 +165,14 @@ title_zh = "墨西哥入境卡 FMM 指南：什么时候填、要准备什么"
 title_zh_hant = "墨西哥入境卡 FMM 指南：什麼時候填、要準備什麼"
 
 [morocco]
-title = "Morocco eVisa Guide: Who Needs One and Official Portal"
+title = "Morocco eVisa Guide: Who Needs One and Visa-Free Check"
+title_zh = "摩洛哥电子签指南：免签资格与费用"
+title_zh_hant = "摩洛哥電子簽指南：免簽資格與費用"
 
 [myanmar]
-title = "Myanmar eVisa Guide: Official Site, Fee and Entry Points"
+title = "Myanmar eVisa Guide: Tourist eVisa and Entry Points"
+title_zh = "缅甸旅游电子签指南：4 个适用口岸"
+title_zh_hant = "緬甸旅遊電子簽指南：4 個適用口岸"
 
 [nepal]
 title = "Nepal Visa on Arrival Guide: Official Online Form and Fees"
@@ -163,17 +183,19 @@ title_zh = "新西兰入境卡指南：NZTD 什么时候填，NZeTA 另算"
 title_zh_hant = "新西蘭入境卡指南：NZTD 什麼時候填，NZeTA 另算"
 
 [nigeria]
-title = "Nigeria Landing and Exit Card: Official NIS Portal, Free"
-title_zh = "尼日利亚入境卡指南：NIS 官方入口、免费办理"
-title_zh_hant = "尼日利亞入境卡指南：NIS 官方入口、免費辦理"
+title = "Nigeria Landing and Exit Card Guide: Who Files, Free"
+title_zh = "尼日利亚入境卡指南：谁要办、免费、登机前完成"
+title_zh_hant = "尼日利亞入境卡指南：誰要辦、免費、登機前完成"
 
 [oman]
-title = "Oman eVisa Guide: 14-Day Exemption and Official Portal"
+title = "Oman eVisa Guide: 14-Day Exemption and Who Needs a Visa"
+title_zh = "阿曼电子签与 14 天免签资格指南"
+title_zh_hant = "阿曼電子簽與 14 天免簽資格指南"
 
 [pakistan]
 title = "Pakistan Visa Guide: Free Visa Prior to Arrival Portal"
-title_zh = "巴基斯坦签证指南：免费入境前签证官方入口"
-title_zh_hant = "巴基斯坦簽證指南：免費入境前簽證官方入口"
+title_zh = "巴基斯坦签证指南：免费入境前签证与适用资格"
+title_zh_hant = "巴基斯坦簽證指南：免費入境前簽證與適用資格"
 
 [panama]
 title = "Panama Traveler Declaration Guide: Free Official Form"
@@ -187,8 +209,8 @@ title_zh_hant = "秘魯入境卡 TAM Virtual：邊檢自動生成，免費查詢
 
 [philippines]
 title = "Philippines eTravel Guide: What to Prepare, Free QR Code"
-title_zh = "菲律宾 eTravel 入境指南：官方入口、适用对象与办理时间"
-title_zh_hant = "菲律賓 eTravel 入境指南：官方入口、適用對象與辦理時間"
+title_zh = "菲律宾 eTravel 入境指南：适用对象与办理时间"
+title_zh_hant = "菲律賓 eTravel 入境指南：適用對象與辦理時間"
 description_zh = "菲律宾 eTravel 入境指南：官方入口 etravel.gov.ph、免费申报、适用对象与抵达前 72 小时办理时间，并提供 eTravel 专页和字段填写指南。"
 description_zh_hant = "菲律賓 eTravel 入境指南：官方入口 etravel.gov.ph、免費申報、適用對象與抵達前 72 小時辦理時間，並提供 eTravel 專頁和欄位填寫指南。"
 h1_zh = "菲律宾 eTravel 入境指南"
@@ -196,27 +218,33 @@ h1_zh_hant = "菲律賓 eTravel 入境指南"
 
 [qatar]
 title = "Qatar Hayya Guide: Visa-Free Entry Check and Official e-Visa"
+title_zh = "卡塔尔免签与 Hayya 电子签指南"
+title_zh_hant = "卡塔爾免簽與 Hayya 電子簽指南"
 
 [russia]
-title = "Russia e-Visa Guide: Official Site and Eligible Countries"
-title_zh = "俄罗斯电子签指南：官方网站与适用国家"
-title_zh_hant = "俄羅斯電子簽指南：官方網站與適用國家"
+title = "Russia e-Visa Guide: Eligible Countries and Stay Rules"
+title_zh = "俄罗斯电子签指南：适用国家与停留规则"
+title_zh_hant = "俄羅斯電子簽指南：適用國家與停留規則"
 
 [saudi-arabia]
-title = "Saudi Arabia eVisa Guide: Official Portal and Real Cost"
+title = "Saudi Arabia eVisa Guide: Who Can Apply and Real Cost"
+title_zh = "沙特旅游电子签指南：66 国名单与费用构成"
+title_zh_hant = "沙特旅遊電子簽指南：66 國名單與費用構成"
 
 [singapore]
-title = "Singapore Arrival Card (SGAC) Guide: Official ICA Site, Free"
+title = "Singapore Arrival Card (SGAC) Guide: When to Submit, Who Is Exempt"
 title_zh = "新加坡入境卡 SGAC 指南：ICA 入境卡怎么填与常见问题"
 title_zh_hant = "新加坡入境卡 SGAC 指南：ICA 入境卡怎麼填與常見問題"
 
 [south-africa]
-title = "South Africa Traveller Declaration Guide: Official SARS Site"
+title = "South Africa Traveller Declaration Guide: Who Files and When"
 title_zh = "南非入境申报指南：SARS 旅客海关申报与 24 小时规则"
 title_zh_hant = "南非入境申報指南：SARS 旅客海關申報與 24 小時規則"
 
 [sri-lanka]
-title = "Sri Lanka ETA Guide: Official Site and Fee Check"
+title = "Sri Lanka ETA Guide: Free-Scheme List and Fee Check"
+title_zh = "斯里兰卡 ETA 指南：免费名单与费用查询"
+title_zh_hant = "斯里蘭卡 ETA 指南：免費名單與費用查詢"
 
 [taiwan]
 title = "Taiwan Arrival Card (TWAC) Guide: 7-Day Window, No Printout"
@@ -226,7 +254,9 @@ description_zh = "台湾入境卡（入境登记表 TWAC）概览：免费，抵
 description_zh_hant = "臺灣入境卡（入境登記表 TWAC）概覽：免費，抵達前 7 天內提交，一人可為最多 10 位旅客填寫；查驗時掃護照即可調出記錄，不需要列印。"
 
 [tanzania]
-title = "Tanzania eVisa Guide: Official Site and Fees"
+title = "Tanzania eVisa Guide: Visa Categories and Fees"
+title_zh = "坦桑尼亚电子签指南：费用与签证类别"
+title_zh_hant = "坦桑尼亞電子簽指南：費用與簽證類別"
 
 [thailand]
 title = "Thailand Arrival Card (TDAC) Guide: When to File, What to Bring"
@@ -237,14 +267,33 @@ description_zh = "泰国入境卡（TDAC）概览：免费，抵达前 3 天内�
 description_zh_hant = "泰國入境卡（TDAC）概覽：免費，抵達前 3 天內提交，準備護照、航班號、到達日期和信箱，約 8 分鐘，提交後保存 QR Code。"
 
 [uzbekistan]
-title = "Uzbekistan eVisa Guide: Visa-Free Check and Official Portal"
-title_zh = "乌兹别克斯坦电子签指南：免签核查与官方入口"
-title_zh_hant = "烏茲別克斯坦電子簽指南：免簽核查與官方入口"
+title = "Uzbekistan eVisa Guide: Visa-Free Check and Who Needs One"
+title_zh = "乌兹别克斯坦电子签指南：免签核查与谁需要办"
+title_zh_hant = "烏茲別克斯坦電子簽指南：免簽核查與誰需要辦"
 
 [vietnam]
-title = "Vietnam e-Visa Guide: Official Site and Government Fee"
+title = "Vietnam e-Visa Guide: Who Needs One and Government Fee"
 title_zh = "越南签证指南：E-Visa 电子签证真实费用与中介加价"
 title_zh_hant = "越南簽證指南：E-Visa 電子簽證真實費用與中介加價"
+
+[canada]
+title = "Canada eTA Guide: Who Needs It and the Air-Only Rule"
+title_zh = "加拿大 eTA 指南：谁需要办与仅限空路规则"
+title_zh_hant = "加拿大 eTA 指南：誰需要辦與僅限空路規則"
+
+[turkey]
+title_zh = "土耳其需要签证吗？免签、e-Visa 与费用（2026）"
+title_zh_hant = "土耳其需要簽證嗎？免簽、e-Visa 與費用（2026）"
+
+[uk]
+title = "UK ETA Guide: Who Needs It, Fee and Middleman Check"
+title_zh = "英国 ETA 指南：谁需要办、费用和中介核查"
+title_zh_hant = "英國 ETA 指南：誰需要辦、費用和中介核查"
+
+[usa]
+title = "United States ESTA Guide: Who Needs It, Fee and Middleman Check"
+title_zh = "美国 ESTA 指南：谁需要办、费用和中介核查"
+title_zh_hant = "美國 ESTA 指南：誰需要辦、費用和中介核查"
 
 # ---- Form pages: "<country> arrival card official website" ----
 # Lead with the phrase searchers type; the official host goes in the title
@@ -288,24 +337,25 @@ title = "SG Arrival Card (SGAC) Official Website: Free on eservices.ica.gov.sg"
 description = "The official Singapore Arrival Card (SG Arrival Card) is ICA's free service at eservices.ica.gov.sg. Submit within the three days that include your arrival day; residents entering by land are exempt."
 
 ["indonesia/e-cd"]
-title = "Indonesia Arrival Card (All Indonesia / e-CD): Official Site, Free"
-title_zh = "印尼入境卡官网：All Indonesia 入境申报免费入口（e-CD）"
-title_zh_hant = "印尼入境卡官網：All Indonesia 入境申報免費入口（e-CD）"
+title = "Indonesia Arrival Card Official Site: allindonesia.imigrasi.go.id, Free"
+title_zh = "印尼入境卡官网：All Indonesia 免费入境申报 allindonesia.imigrasi.go.id"
+title_zh_hant = "印尼入境卡官網：All Indonesia 免費入境申報 allindonesia.imigrasi.go.id"
 description_zh = "印尼入境卡（印度尼西亚入境申报 All Indonesia）官网是 allindonesia.imigrasi.go.id，免费，e-CD 海关申报也在这里。巴厘岛、雅加达入境通用，每个字段逐项讲解。"
 description_zh_hant = "印尼入境卡（印度尼西亞入境申報 All Indonesia）官網是 allindonesia.imigrasi.go.id，免費，e-CD 海關申報也在這裡。巴厘島、雅加達入境通用，每個欄位逐項講解。"
 h1_zh = "印尼入境卡（All Indonesia / e-CD）官网 2026：免费填写、巴厘岛入境"
 h1_zh_hant = "印尼入境卡（All Indonesia / e-CD）官網 2026：免費填寫、巴厘島入境"
 
 ["taiwan/twac"]
-title_zh = "台湾入境卡官网：入境登记表 TWAC 免费，抵达前 7 天内提交"
-title_zh_hant = "臺灣入境卡官網：入境登記表 TWAC 免費，抵達前 7 天內提交"
+title = "Taiwan Arrival Card (TWAC) Official Website: twac.immigration.gov.tw, Free"
+title_zh = "台湾入境卡官网：TWAC 免费 twac.immigration.gov.tw，抵达前 7 天内"
+title_zh_hant = "臺灣入境卡官網：TWAC 免費 twac.immigration.gov.tw，抵達前 7 天內"
 h1_zh = "台湾入境卡（入境登记表 TWAC）官网：免费、抵达前 7 天内提交（2026）"
 h1_zh_hant = "臺灣入境卡（入境登記表 TWAC）官網：免費、抵達前 7 天內提交（2026）"
 
 ["philippines/etravel"]
-title = "Philippines eTravel Official Website: Free Arrival QR Code (2026)"
-title_zh = "菲律宾入境卡官网：eTravel 电子入境申报免费入口"
-title_zh_hant = "菲律賓入境卡官網：eTravel 電子入境申報免費入口"
+title = "Philippines eTravel Official Website: etravel.gov.ph, Free Arrival QR"
+title_zh = "菲律宾入境卡官网：eTravel 免费电子入境申报 etravel.gov.ph"
+title_zh_hant = "菲律賓入境卡官網：eTravel 免費電子入境申報 etravel.gov.ph"
 description = "The official Philippines eTravel is free at etravel.gov.ph. It is not a visa. Submit your passport and flight details, then save the QR confirmation for check-in and arrival."
 description_zh = "菲律宾入境卡（eTravel 电子旅行申报，常被叫作入境码）官网是 etravel.gov.ph，免费，不是签证。提交后保存二维码，值机和入境时都可能要看。"
 description_zh_hant = "菲律賓入境卡（eTravel 電子旅行申報，常被叫作入境碼）官網是 etravel.gov.ph，免費，不是簽證。提交後保存 QR Code，值機和入境時都可能要看。"
@@ -313,19 +363,25 @@ h1_zh = "菲律宾入境卡（eTravel）官网 2026：免费二维码和字段�
 h1_zh_hant = "菲律賓入境卡（eTravel）官網 2026：免費 QR Code 和欄位填寫"
 
 ["india/e-arrival-card"]
-title_zh = "印度入境卡官网：e-Arrival Card 免费吗？e-Visa 另算（2026）"
-title_zh_hant = "印度入境卡官網：e-Arrival Card 免費嗎？e-Visa 另算（2026）"
+title = "India e-Arrival Card Official Website: indianvisaonline.gov.in, Free"
+title_zh = "印度入境卡官网：e-Arrival Card 免费 indianvisaonline.gov.in"
+title_zh_hant = "印度入境卡官網：e-Arrival Card 免費 indianvisaonline.gov.in"
+description = "Official site: indianvisaonline.gov.in. Use the India e-Arrival Card official site for free. Learn who must file, the 72-hour rule, separate e-Visa fees, and eligible entry ports."
+description_zh = "官网是 indianvisaonline.gov.in。印度 e-Arrival Card 中文指南：免费官网、适用人群、72 小时规则、另行办理的 e-Visa 费用和指定入境口岸。"
+description_zh_hant = "官網是 indianvisaonline.gov.in。印度 e-Arrival Card 中文指南：免費官網、適用人群、72 小時規則、另行辦理的 e-Visa 費用和指定入境口岸。"
 
 ["dominican/eticket"]
-title_zh = "多米尼加入境卡官网：E-Ticket 免费填写，防中介收费"
-title_zh_hant = "多米尼加入境卡官網：E-Ticket 免費填寫，防中介收費"
+title = "Dominican Republic E-Ticket Official Site: eticket.migracion.gob.do, Free"
+title_zh = "多米尼加入境卡官网：E-Ticket 免费填写 eticket.migracion.gob.do"
+title_zh_hant = "多米尼加入境卡官網：E-Ticket 免費填寫 eticket.migracion.gob.do"
 description_zh = "多米尼加入境卡（E-Ticket 电子入境/离境表）官网是 eticket.migracion.gob.do，免费，抵达前 72 小时内提交，一份电子表单处理入境和离境资料。附字段讲解和二维码说明。"
 description_zh_hant = "多米尼加入境卡（E-Ticket 電子入境/離境表）官網是 eticket.migracion.gob.do，免費，抵達前 72 小時內提交，一份電子表單處理入境和離境資料。附欄位講解和 QR Code 說明。"
 
 ["mexico/fmm"]
-title = "Mexico FMM Form Online (FMM-E): Official INM Site, Free (2026)"
-title_zh = "墨西哥入境卡官网：FMM-E 电子入境表免费在线填写"
-title_zh_hant = "墨西哥入境卡官網：FMM-E 電子入境表免費線上填寫"
+title = "Mexico FMM Form Online (FMM-E): Official Site inm.gob.mx, Free (2026)"
+title_zh = "墨西哥入境卡官网：FMM-E 电子入境表免费填写 inm.gob.mx"
+title_zh_hant = "墨西哥入境卡官網：FMM-E 電子入境表免費填寫 inm.gob.mx"
+description = "Official site: inm.gob.mx. Free, independent 2026 guide to Mexico's Forma Migratoria Múltiple Electrónica (FMM-E). Official INM URL, every field explained, no fees."
 description_zh = "墨西哥入境卡（FMM-E 电子入境表）官网是 INM 的 inm.gob.mx/fmme，在线提前填写免费，出发前任何时间都可以填。附每个字段讲解和中介提醒。"
 description_zh_hant = "墨西哥入境卡（FMM-E 電子入境表）官網是 INM 的 inm.gob.mx/fmme，線上提前填寫免費，出發前任何時間都可以填。附每個欄位講解和中介提醒。"
 h1 = "Mexico FMM Form Online (FMM-E): Official Site, Free, Scam-Free Guide (2026)"
@@ -333,6 +389,7 @@ h1_zh = "墨西哥入境卡（FMM-E）官网 2026：免费在线填写、防中�
 h1_zh_hant = "墨西哥入境卡（FMM-E）官網 2026：免費線上填寫、防中介詐騙"
 
 ["vietnam/evisa"]
+title = "Vietnam E-Visa Official Website: evisa.gov.vn, $25/$50 Fee (2026)"
 title_zh = "越南电子签证官网：evisa.gov.vn 申请入口与 $25/$50 费用"
 title_zh_hant = "越南電子簽證官網：evisa.gov.vn 申請入口與 $25/$50 費用"
 description_zh = "越南电子签证（E-Visa）官网是 evisa.gov.vn，单次 $25、多次 $50，付给越南政府；中介同一份表收 $80–200。附直接申请步骤。"
@@ -341,7 +398,7 @@ h1_zh = "越南电子签证（E-Visa）官网 2026：$25/$50 美元费用和直�
 h1_zh_hant = "越南電子簽證（E-Visa）官網 2026：$25/$50 美元費用和直接申請"
 
 ["cambodia/e-arrival"]
-title = "Cambodia e-Arrival Card Official Website: Free Declaration (2026)"
+title = "Cambodia e-Arrival Card Official Website: arrival.gov.kh, Free"
 title_zh = "柬埔寨入境卡官网：e-Arrival 电子入境卡 arrival.gov.kh"
 title_zh_hant = "柬埔寨入境卡官網：e-Arrival 電子入境卡 arrival.gov.kh"
 description_zh = "柬埔寨入境卡（e-Arrival 电子入境卡）官网是 arrival.gov.kh，入境申报免费，签证费另算。附字段填写和中介提醒。"
@@ -351,157 +408,304 @@ h1_zh = "柬埔寨入境卡（e-Arrival）官网 2026：免费申报和字段填
 h1_zh_hant = "柬埔寨入境卡（e-Arrival）官網 2026：免費申報和欄位填寫"
 
 ["japan/visit-japan-web"]
-title = "Visit Japan Web Official Site: Free Japan Arrival QR (2026)"
-title_zh = "日本入境卡官网：Visit Japan Web 免费入境二维码入口"
-title_zh_hant = "日本入境卡官網：Visit Japan Web 免費入境 QR Code 入口"
-description_zh = "日本入境卡（Visit Japan Web）官方入口在日本数字厅 .go.jp 页面，免费，用于入境和海关二维码流程，不是签证。附字段填写和仿冒站提醒。"
-description_zh_hant = "日本入境卡（Visit Japan Web）官方入口在日本數字廳 .go.jp 頁面，免費，用於入境和海關 QR Code 流程，不是簽證。附欄位填寫和仿冒站提醒。"
+title = "Visit Japan Web Official Site: services.digital.go.jp, Free Arrival QR"
+title_zh = "日本入境卡官网：Visit Japan Web 免费入境二维码 services.digital.go.jp"
+title_zh_hant = "日本入境卡官網：Visit Japan Web 免費入境 QR Code services.digital.go.jp"
+description = "Official site: services.digital.go.jp. Free 2026 guide to Visit Japan Web: official Digital Agency URL, QR workflows, fields, and fake-site warnings."
+description_zh = "官网是 services.digital.go.jp。日本入境卡（Visit Japan Web）官方入口在日本数字厅 .go.jp 页面，免费，用于入境和海关二维码流程，不是签证。附字段填写和仿冒站提醒。"
+description_zh_hant = "官網是 services.digital.go.jp。日本入境卡（Visit Japan Web）官方入口在日本數字廳 .go.jp 頁面，免費，用於入境和海關 QR Code 流程，不是簽證。附欄位填寫和仿冒站提醒。"
 h1_zh = "日本入境卡（Visit Japan Web）2026 指南：官方入口、免费二维码和字段填写"
 h1_zh_hant = "日本入境卡（Visit Japan Web）2026 指南：官方入口、免費 QR Code 和欄位填寫"
 
 ["maldives/traveller-declaration"]
-title = "Maldives IMUGA Traveller Declaration Official Site: Free (2026)"
-title_zh = "马尔代夫入境卡官网：IMUGA 旅客申报表免费，只填入境"
-title_zh_hant = "馬爾代夫入境卡官網：IMUGA 旅客申報表免費，只填入境"
+title = "Maldives Arrival Card (IMUGA) Official Site: imuga.immigration.gov.mv, Free"
+title_zh = "马尔代夫入境卡官网：IMUGA 免费 imuga.immigration.gov.mv，只填入境"
+title_zh_hant = "馬爾代夫入境卡官網：IMUGA 免費 imuga.immigration.gov.mv，只填入境"
 
 ["jamaica/c5"]
-title = "Jamaica C5 Form Online: Free Official Passenger Declaration (2026)"
-title_zh = "牙买加入境卡官网：C5 电子旅客申报表免费填写"
-title_zh_hant = "牙買加入境卡官網：C5 電子旅客申報表免費填寫"
+title = "Jamaica C5 Form Online Official Site: enterjamaica.gov.jm, Free"
+title_zh = "牙买加入境卡官网：C5 旅客申报表免费填写 enterjamaica.gov.jm"
+title_zh_hant = "牙買加入境卡官網：C5 旅客申報表免費填寫 enterjamaica.gov.jm"
 
 ["new-zealand/nztd"]
-title = "New Zealand Arrival Card (NZTD) Official Site: Is It Free? (2026)"
+title = "New Zealand Arrival Card (NZTD) Official Site: travellerdeclaration.govt.nz"
+title_zh = "新西兰入境卡官网：NZTD 免费 travellerdeclaration.govt.nz"
+title_zh_hant = "新西蘭入境卡官網：NZTD 免費 travellerdeclaration.govt.nz"
+description = "Official site: travellerdeclaration.govt.nz. Is NZTD free? Yes. Use the official New Zealand Traveller Declaration site. Learn the 24-hour submission rule and separate NZeTA cost."
+description_zh = "官网是 travellerdeclaration.govt.nz。新西兰入境卡 NZTD 中文指南：官方入口、免费规则、提交时间、适用人群，以及 NZeTA 费用和有效期。"
+description_zh_hant = "官網是 travellerdeclaration.govt.nz。新西蘭入境卡 NZTD 中文指南：官方入口、免費規則、提交時間、適用人群，以及 NZeTA 費用和有效期。"
 
 ["egypt/evisa"]
+title = "Egypt e-Visa Official Website: visa2egypt.gov.eg, USD $30 / $65 Fees"
 title_zh = "埃及电子签证官网：visa2egypt.gov.eg 入口与 30/65 美元费用"
 title_zh_hant = "埃及電子簽證官網：visa2egypt.gov.eg 入口與 30/65 美元費用"
 
 ["laos/evisa"]
+title = "Laos eVisa Official Website: laoevisa.gov.la, Fees and 9 Entry Ports"
 title_zh = "老挝电子签证官网：laoevisa.gov.la、费用与 9 个口岸"
 title_zh_hant = "老撾電子簽證官網：laoevisa.gov.la、費用與 9 個口岸"
 
 ["turkey/evisa"]
+title = "Turkey e-Visa Official Website: evisa.gov.tr, Check Visa-Free First"
 title_zh = "土耳其电子签证官网：evisa.gov.tr，先确认是否免签"
 title_zh_hant = "土耳其電子簽證官網：evisa.gov.tr，先確認是否免簽"
 
 ["cuba/dviajeros"]
-title = "Cuba Entry Form (D'Viajeros): Free Official Site, eVisa Separate"
-title_zh = "古巴入境卡官网：D'Viajeros 免费入境表，旅游 eVisa 另办"
-title_zh_hant = "古巴入境卡官網：D'Viajeros 免費入境表，旅遊 eVisa 另辦"
+title = "Cuba Entry Form (D'Viajeros) Official Site: dviajeros.mitrans.gob.cu, Free"
+title_zh = "古巴入境卡官网：D'Viajeros 免费 dviajeros.mitrans.gob.cu，eVisa 另办"
+title_zh_hant = "古巴入境卡官網：D'Viajeros 免費 dviajeros.mitrans.gob.cu，eVisa 另辦"
+description = "Official site: dviajeros.mitrans.gob.cu. Cuba D'Viajeros guide: official free form, seven-day filing window, QR result and separate tourist eVisa."
+description_zh = "官网是 dviajeros.mitrans.gob.cu。古巴 D'Viajeros 中文指南：免费官网、旅行前 7 天窗口、二维码和单独的旅游 eVisa。"
+description_zh_hant = "官網是 dviajeros.mitrans.gob.cu。古巴 D'Viajeros 中文指南：免費官網、旅行前 7 天窗口、QR Code 和單獨的旅遊 eVisa。"
 
 ["curacao/digital-immigration-card"]
-title = "Curaçao Digital Immigration Card (DI Card): Official Free Form"
-title_zh = "库拉索入境卡官网：数字移民卡 DI Card 免费，不要付费"
-title_zh_hant = "庫拉索入境卡官網：數字移民卡 DI Card 免費，不要付費"
+title = "Curaçao Digital Immigration Card Official Site: dicardcuracao.com, Free"
+title_zh = "库拉索入境卡官网：DI Card 免费 dicardcuracao.com，不要付费"
+title_zh_hant = "庫拉索入境卡官網：DI Card 免費 dicardcuracao.com，不要付費"
+description = "Official site: dicardcuracao.com. Curaçao Digital Immigration Card guide: free official form, seven-day window, each traveller and confirmation PDF."
+description_zh = "官网是 dicardcuracao.com。库拉索数字移民卡中文指南：免费官方表、7 天窗口、每人一份和确认 PDF。"
+description_zh_hant = "官網是 dicardcuracao.com。庫拉索數字移民卡中文指南：免費官方表、7 天窗口、每人一份和確認 PDF。"
 
 ["colombia/check-mig"]
-title = "Colombia Check-Mig Form: Official Free Pre-Registration (2026)"
-title_zh = "哥伦比亚入境卡官网：Check-Mig 免费预登记与填写时间"
-title_zh_hant = "哥倫比亞入境卡官網：Check-Mig 免費預登記與填寫時間"
+title = "Colombia Check-Mig Official Site: apps.migracioncolombia.gov.co, Free"
+title_zh = "哥伦比亚入境卡官网：Check-Mig 免费预登记 apps.migracioncolombia.gov.co"
+title_zh_hant = "哥倫比亞入境卡官網：Check-Mig 免費預登記 apps.migracioncolombia.gov.co"
+description = "Official site: apps.migracioncolombia.gov.co. Colombia Check-Mig guide: official free app, optional status, exact filing window, entry and exit use and confirmation."
+description_zh = "官网是 apps.migracioncolombia.gov.co。哥伦比亚 Check-Mig 中文指南：免费官方应用、可选性质、确切窗口、入境出境用途和确认。"
+description_zh_hant = "官網是 apps.migracioncolombia.gov.co。哥倫比亞 Check-Mig 中文指南：免費官方應用、可選性質、確切窗口、入境出境用途和確認。"
 
 ["panama/traveler-declaration"]
-title = "Panama Traveler Declaration Form: Free Official Site and QR"
-title_zh = "巴拿马入境申报官网：电子旅客宣誓申报免费与 QR"
-title_zh_hant = "巴拿馬入境申報官網：電子旅客宣誓申報免費與 QR"
+title = "Panama Traveler Declaration Official Site: declaraciondeviajero.ana.gob.pa"
+title_zh = "巴拿马入境申报官网：declaraciondeviajero.ana.gob.pa 免费与 QR"
+title_zh_hant = "巴拿馬入境申報官網：declaraciondeviajero.ana.gob.pa 免費與 QR"
+description = "Official site: declaraciondeviajero.ana.gob.pa. Panama customs declaration guide: official bilingual portal, free filing, 72-hour timing, family rule and QR receipt."
+description_zh = "官网是 declaraciondeviajero.ana.gob.pa。巴拿马海关申报中文指南：官方双语门户、免费、72 小时时间、家庭规则和 QR 回执。"
+description_zh_hant = "官網是 declaraciondeviajero.ana.gob.pa。巴拿馬海關申報中文指南：官方雙語門戶、免費、72 小時時間、家庭規則和 QR 回執。"
 
 ["peru/tam-virtual"]
-title_zh = "秘鲁入境卡 TAM Virtual：免费官方查询与下载（2026）"
-title_zh_hant = "秘魯入境卡 TAM Virtual：免費官方查詢與下載（2026）"
+title = "Peru TAM Virtual Official Lookup: cel.migraciones.gob.pe, Free"
+title_zh = "秘鲁入境卡 TAM Virtual 官网查询：cel.migraciones.gob.pe 免费下载"
+title_zh_hant = "秘魯入境卡 TAM Virtual 官網查詢：cel.migraciones.gob.pe 免費下載"
+description = "Official lookup: cel.migraciones.gob.pe. Peru TAM Virtual guide: automatic immigration record, free official lookup, recorded stay and downloadable proof."
+description_zh = "官方查询网站是 cel.migraciones.gob.pe。秘鲁 TAM Virtual 中文指南：自动出入境记录、免费官网查询、获准停留信息和下载凭证。"
+description_zh_hant = "官方查詢網站是 cel.migraciones.gob.pe。秘魯 TAM Virtual 中文指南：自動出入境記錄、免費官網查詢、獲准停留資訊和下載憑證。"
 
 ["aruba/ed-card"]
-title_zh = "阿鲁巴入境卡官网：ED Card 官方表和 20 美元费用"
-title_zh_hant = "阿魯巴入境卡官網：ED Card 官方表和 20 美元費用"
+title = "Aruba ED Card Official Website: edcardaruba.aw, USD 20 Fee (2026)"
+title_zh = "阿鲁巴入境卡官网：ED Card edcardaruba.aw，官方表和 20 美元费用"
+title_zh_hant = "阿魯巴入境卡官網：ED Card edcardaruba.aw，官方表和 20 美元費用"
+description = "Official site: edcardaruba.aw. Aruba ED Card guide: official link, seven-day filing window, air and sea rules, sustainability fee and exemptions."
+description_zh = "官网是 edcardaruba.aw。阿鲁巴 ED Card 中文指南：官方入口、7 天窗口、海空规则、可持续发展费和豁免。"
+description_zh_hant = "官網是 edcardaruba.aw。阿魯巴 ED Card 中文指南：官方入口、7 天窗口、海空規則、可持續發展費和豁免。"
 
 ["bahamas/c17"]
-title_zh = "巴哈马入境申报：C17 免费电子海关申报，谁需要填"
-title_zh_hant = "巴哈馬入境申報：C17 免費電子海關申報，誰需要填"
+title = "Bahamas C17 Form Online Official Site: exempt.gov.bs, Free Customs Form"
+title_zh = "巴哈马入境申报官网：C17 免费电子海关申报 exempt.gov.bs"
+title_zh_hant = "巴哈馬入境申報官網：C17 免費電子海關申報 exempt.gov.bs"
+description = "Official site: exempt.gov.bs. Bahamas Customs C17 guide: official Exempt .gov.bs portal, filing scope, Exempt Technologies disclosure, free service, separate duties and QR clearance."
+description_zh = "官网是 exempt.gov.bs。巴哈马海关 C17 指南：官方 Exempt `.gov.bs` 入口、适用范围、Exempt Technologies 披露、免费服务、关税另算和二维码查验。"
+description_zh_hant = "官網是 exempt.gov.bs。巴哈馬海關 C17 指南：官方 Exempt `.gov.bs` 入口、適用範圍、Exempt Technologies 披露、免費服務、關稅另算和 QR Code 查驗。"
 
 ["barbados/ed-form"]
-title = "Barbados ED Form: Free Official Immigration and Customs Form"
-title_zh = "巴巴多斯入境卡官网：ED Form 入境和海关表免费"
-title_zh_hant = "巴巴多斯入境卡官網：ED Form 入境和海關表免費"
+title = "Barbados ED Form Official Website: travelform.gov.bb, Free"
+title_zh = "巴巴多斯入境卡官网：ED Form 免费 travelform.gov.bb，入境和海关表"
+title_zh_hant = "巴巴多斯入境卡官網：ED Form 免費 travelform.gov.bb，入境和海關表"
+description = "Official site: travelform.gov.bb. Barbados online Immigration and Customs Form guide: free government portal, timing, documents, email and receipts."
+description_zh = "官网是 travelform.gov.bb。巴巴多斯在线入境和海关表中文指南：免费政府门户、时间、材料、邮箱和回执。"
+description_zh_hant = "官網是 travelform.gov.bb。巴巴多斯線上入境和海關表中文指南：免費政府門戶、時間、材料、信箱和回執。"
 
 ["south-africa/traveller-declaration"]
-title_zh = "南非入境海关申报官网：SARS 旅客申报与 24 小时规则"
-title_zh_hant = "南非入境海關申報官網：SARS 旅客申報與 24 小時規則"
+title = "South Africa Traveller Declaration Official Site: tools.sars.gov.za"
+title_zh = "南非入境海关申报官网：SARS 旅客申报 tools.sars.gov.za，24 小时规则"
+title_zh_hant = "南非入境海關申報官網：SARS 旅客申報 tools.sars.gov.za，24 小時規則"
+description = "Official site: tools.sars.gov.za. Official South Africa SARS Traveller Declaration guide: who files, the 24-hour departure window, Full or Nil, transit, children, fees and Customs confirmation."
+description_zh = "官网是 tools.sars.gov.za。南非 SARS 旅客海关申报指南：适用人群、出发前24小时窗口、Full与Nil、纯过境、儿童、费用和海关确认。"
+description_zh_hant = "官網是 tools.sars.gov.za。南非 SARS 旅客海關申報指南：適用人群、出發前24小時窗口、Full與Nil、純過境、兒童、費用和海關確認。"
 
 ["nigeria/landing-exit-card"]
-title_zh = "尼日利亚入境卡官网：Landing & Exit Card NIS 免费办理"
-title_zh_hant = "尼日利亞入境卡官網：Landing & Exit Card NIS 免費辦理"
+title = "Nigeria Landing & Exit Card Official Site: lecard.immigration.gov.ng, Free"
+title_zh = "尼日利亚入境卡官网：Landing & Exit Card 免费 lecard.immigration.gov.ng"
+title_zh_hant = "尼日利亞入境卡官網：Landing & Exit Card 免費 lecard.immigration.gov.ng"
+description = "Official site: lecard.immigration.gov.ng. Nigeria Landing and Exit Card official guide: free NIS portal, foreign travellers, transit limits, pre-boarding filing, printed cards and correcting errors."
+description_zh = "官网是 lecard.immigration.gov.ng。尼日利亚 Landing & Exit Card 官方指南：NIS 免费入口、外国旅客、纯过境范围、登机前办理、打印和资料更正。"
+description_zh_hant = "官網是 lecard.immigration.gov.ng。尼日利亞 Landing & Exit Card 官方指南：NIS 免費入口、外國旅客、純過境範圍、登機前辦理、列印和資料更正。"
 
 ["brazil/evisa"]
-title_zh = "巴西电子签证官网：VFS 官方指定路径和 80.90 美元费用"
-title_zh_hant = "巴西電子簽證官網：VFS 官方指定路徑和 80.90 美元費用"
+title = "Brazil e-Visa Official VFS Route: brazil.vfsevisa.com, USD 80.90 Fee"
+title_zh = "巴西电子签证官网：VFS 官方指定 brazil.vfsevisa.com，80.90 美元"
+title_zh_hant = "巴西電子簽證官網：VFS 官方指定 brazil.vfsevisa.com，80.90 美元"
+description = "Official VFS application site: brazil.vfsevisa.com. Brazil e-Visa guide: eligible passports, gov.br verification chain, VFS contractor, fee, processing and issued validity."
+description_zh = "官方指定申请网站是 brazil.vfsevisa.com。巴西电子签中文指南：适用护照、gov.br 核验链、VFS 承包商、费用、处理时间和获批有效期。"
+description_zh_hant = "官方指定申請網站是 brazil.vfsevisa.com。巴西電子簽中文指南：適用護照、gov.br 核驗鏈、VFS 承包商、費用、處理時間和獲批有效期。"
 
 ["georgia/evisa"]
-title_zh = "格鲁吉亚电子签证官网：付款前先查一年免签资格（2026）"
-title_zh_hant = "格魯吉亞電子簽證官網：付款前先查一年免簽資格（2026）"
+title = "Georgia e-Visa Official Website: evisa.gov.ge, Check Visa-Free First"
+title_zh = "格鲁吉亚电子签证官网：evisa.gov.ge，付款前先查一年免签资格"
+title_zh_hant = "格魯吉亞電子簽證官網：evisa.gov.ge，付款前先查一年免簽資格"
+description = "Official site: evisa.gov.ge. Georgia e-Visa guide: visa-free eligibility, official portal, USD 20 plus 2% fee, mandatory USD 15 DuVerify and required documents."
+description_zh = "官网是 evisa.gov.ge。格鲁吉亚电子签指南：免签资格、官方入口、20 美元加 2% 费用、强制 15 美元 DuVerify 和申请材料。"
+description_zh_hant = "官網是 evisa.gov.ge。格魯吉亞電子簽指南：免簽資格、官方入口、20 美元加 2% 費用、強制 15 美元 DuVerify 和申請材料。"
 
 ["azerbaijan/evisa"]
-title_zh = "阿塞拜疆电子签证官网：ASAN 入口，付款前先查免签"
-title_zh_hant = "阿塞拜疆電子簽證官網：ASAN 入口，付款前先查免簽"
+title = "Azerbaijan ASAN e-Visa Official Website: evisa.gov.az, Check Visa-Free"
+title_zh = "阿塞拜疆电子签证官网：evisa.gov.az，ASAN 入口，付款前先查免签"
+title_zh_hant = "阿塞拜疆電子簽證官網：evisa.gov.az，ASAN 入口，付款前先查免簽"
+description = "Official site: evisa.gov.az. Azerbaijan ASAN e-Visa guide: visa-free checks, the official portal, USD 25 standard charge, processing time, validity and passport rules."
+description_zh = "官网是 evisa.gov.az。阿塞拜疆 ASAN 电子签指南：免签查询、官方入口、25 美元标准费用、审理时间、有效期和护照要求。"
+description_zh_hant = "官網是 evisa.gov.az。阿塞拜疆 ASAN 電子簽指南：免簽查詢、官方入口、25 美元標準費用、審理時間、有效期和護照要求。"
 
 ["myanmar/tourist-evisa"]
-title = "Myanmar Tourist eVisa: Official Site, Fee and Entry Points (2026)"
-title_zh = "缅甸电子签证官网：旅游电子签、50 美元参考费用与 4 个口岸"
-title_zh_hant = "緬甸電子簽證官網：旅遊電子簽、50 美元參考費用與 4 個口岸"
+title = "Myanmar Tourist eVisa Official Website: evisa.moip.gov.mm, 4 Entry Points"
+title_zh = "缅甸电子签证官网：evisa.moip.gov.mm，50 美元参考费用与 4 个口岸"
+title_zh_hant = "緬甸電子簽證官網：evisa.moip.gov.mm，50 美元參考費用與 4 個口岸"
+description = "Official site: evisa.moip.gov.mm. Myanmar Tourist eVisa guide: official portal, USD 50 guide price, documents, minimum 3-working-day processing, 28-day stay and 90-day Approval Letter."
+description_zh = "官网是 evisa.moip.gov.mm。缅甸旅游电子签指南：官方入口、手册中的 50 美元费用、材料、至少 3 个工作日处理、28 天停留和 90 天批准函。"
+description_zh_hant = "官網是 evisa.moip.gov.mm。緬甸旅遊電子簽指南：官方入口、手冊中的 50 美元費用、材料、至少 3 個工作日處理、28 天停留和 90 天批准函。"
 
 ["uzbekistan/evisa"]
-title_zh = "乌兹别克斯坦电子签证官网：付款前先查免签（2026）"
-title_zh_hant = "烏茲別克斯坦電子簽證官網：付款前先查免簽（2026）"
+title = "Uzbekistan eVisa Official Website: e-visa.gov.uz, Check Visa-Free First"
+title_zh = "乌兹别克斯坦电子签证官网：e-visa.gov.uz，付款前先查免签"
+title_zh_hant = "烏茲別克斯坦電子簽證官網：e-visa.gov.uz，付款前先查免簽"
+description = "Official site: e-visa.gov.uz. Uzbekistan eVisa guide: visa-free check, eligible passports, USD 20 / 35 / 50 fees, 30-day stay, 90-day entry validity and two-day processing."
+description_zh = "官网是 e-visa.gov.uz。乌兹别克斯坦电子签指南：免签判断、适用护照、20 / 35 / 50 美元费用、30 天停留、90 天入境有效期与两日处理。"
+description_zh_hant = "官網是 e-visa.gov.uz。烏茲別克斯坦電子簽指南：免簽判斷、適用護照、20 / 35 / 50 美元費用、30 天停留、90 天入境有效期與兩日處理。"
 
 ["oman/evisa"]
-title_zh = "阿曼电子签证官网：先查 14 天免签（2026）"
-title_zh_hant = "阿曼電子簽證官網：先查 14 天免簽（2026）"
+title = "Oman eVisa Official Website: evisa.rop.gov.om, Check 14-Day Exemption"
+title_zh = "阿曼电子签证官网：evisa.rop.gov.om，先查 14 天免签"
+title_zh_hant = "阿曼電子簽證官網：evisa.rop.gov.om，先查 14 天免簽"
+description = "Official site: evisa.rop.gov.om. Oman eVisa guide: 14-day visa exemption, official ROP portal, eligibility, fees, timing, passport validity and file limits."
+description_zh = "官网是 evisa.rop.gov.om。阿曼电子签指南：14 天免签、皇家警察官网、资格、费用、审理时间、护照有效期和文件上限。"
+description_zh_hant = "官網是 evisa.rop.gov.om。阿曼電子簽指南：14 天免簽、皇家警察官網、資格、費用、審理時間、護照有效期和文件上限。"
 
 ["bahrain/evisa"]
-title_zh = "巴林电子签证官网：先查线上与落地资格（2026）"
-title_zh_hant = "巴林電子簽證官網：先查線上與落地資格（2026）"
+title = "Bahrain eVisa Official Website: evisa.gov.bh, Online vs On-Arrival"
+title_zh = "巴林电子签证官网：evisa.gov.bh，先查线上与落地资格"
+title_zh_hant = "巴林電子簽證官網：evisa.gov.bh，先查線上與落地資格"
+description = "Official site: evisa.gov.bh. Bahrain eVisa guide: official NPRA portal, online versus on-arrival eligibility, Visit eVisa products, fees, timing and documents."
+description_zh = "官网是 evisa.gov.bh。巴林电子签指南：NPRA 官方入口、线上与落地资格、访问电子签产品、费用、处理时间和材料。"
+description_zh_hant = "官網是 evisa.gov.bh。巴林電子簽指南：NPRA 官方入口、線上與落地資格、訪問電子簽產品、費用、處理時間和材料。"
 
 ["morocco/evisa"]
-title_zh = "摩洛哥电子签证官网：付款前先查免签资格（2026）"
-title_zh_hant = "摩洛哥電子簽證官網：付款前先查免簽資格（2026）"
+title = "Morocco eVisa Official Website: acces-maroc.ma, Check Visa-Free First"
+title_zh = "摩洛哥电子签证官网：acces-maroc.ma，付款前先查免签资格"
+title_zh_hant = "摩洛哥電子簽證官網：acces-maroc.ma，付款前先查免簽資格"
+description = "Official site: acces-maroc.ma. Morocco eVisa guide: exemption-first eligibility, official portal verification, MAD 770 and MAD 1,100 prices, stay, timing and documents."
+description_zh = "官网是 acces-maroc.ma。摩洛哥电子签指南：免签优先、官方入口核对、770 与 1,100 迪拉姆费用、停留、时限和材料。"
+description_zh_hant = "官網是 acces-maroc.ma。摩洛哥電子簽指南：免簽優先、官方入口核對、770 與 1,100 迪拉姆費用、停留、時限和材料。"
 
 ["tanzania/evisa"]
-title_zh = "坦桑尼亚电子签证官网：先按护照和目的选类别（2026）"
-title_zh_hant = "坦桑尼亞電子簽證官網：先按護照和目的選類別（2026）"
+title = "Tanzania eVisa Official Website: visa.immigration.go.tz, Fees by Route"
+title_zh = "坦桑尼亚电子签证官网：visa.immigration.go.tz，先按护照和目的选类别"
+title_zh_hant = "坦桑尼亞電子簽證官網：visa.immigration.go.tz，先按護照和目的選類別"
+description = "Official site: visa.immigration.go.tz. Tanzania eVisa guide: official portal, Ordinary, United States tourist and Transit fees, processing time, validity and required documents."
+description_zh = "官网是 visa.immigration.go.tz。坦桑尼亚电子签指南：官方入口、普通签、美国护照旅游与转机签费用、处理时间、有效期和材料。"
+description_zh_hant = "官網是 visa.immigration.go.tz。坦桑尼亞電子簽指南：官方入口、普通簽、美國護照旅遊與轉機簽費用、處理時間、有效期和材料。"
 
 ["ethiopia/evisa"]
-title_zh = "埃塞俄比亚电子签证官网：30 天 62 美元、90 天 152 美元"
-title_zh_hant = "埃塞俄比亞電子簽證官網：30 天 62 美元、90 天 152 美元"
+title = "Ethiopia eVisa Official Website: evisa.gov.et, USD $62 / $152"
+title_zh = "埃塞俄比亚电子签证官网：evisa.gov.et，30 天 62 美元、90 天 152 美元"
+title_zh_hant = "埃塞俄比亞電子簽證官網：evisa.gov.et，30 天 62 美元、90 天 152 美元"
+description = "Official site: evisa.gov.et. Ethiopia Tourist eVisa guide: official site, 30-day and 90-day fees, processing, documents, validity, extensions and overstay rule."
+description_zh = "官网是 evisa.gov.et。埃塞俄比亚旅游电子签指南：官网、30 天与 90 天费用、处理时间、材料、有效期、延期和逾期规则。"
+description_zh_hant = "官網是 evisa.gov.et。埃塞俄比亞旅遊電子簽指南：官網、30 天與 90 天費用、處理時間、材料、有效期、延期和逾期規則。"
 
 ["russia/evisa"]
-title_zh = "俄罗斯电子签证官网：64 国名单与 30 天停留规则（2026）"
-title_zh_hant = "俄羅斯電子簽證官網：64 國名單與 30 天停留規則（2026）"
+title = "Russia e-Visa Official Website: evisa.kdmid.ru, 64 Eligible States"
+title_zh = "俄罗斯电子签证官网：evisa.kdmid.ru，64 国名单与 30 天停留"
+title_zh_hant = "俄羅斯電子簽證官網：evisa.kdmid.ru，64 國名單與 30 天停留"
 
 ["saudi-arabia/tourist-evisa"]
-title_zh = "沙特电子签证官网：谁能申请，300 里亚尔实际要付多少"
-title_zh_hant = "沙特電子簽證官網：誰能申請，300 里亞爾實際要付多少"
+title = "Saudi Arabia Tourist eVisa Official Site: visa.visitsaudi.com"
+title_zh = "沙特电子签证官网：visa.visitsaudi.com，300 里亚尔实际要付多少"
+title_zh_hant = "沙特電子簽證官網：visa.visitsaudi.com，300 里亞爾實際要付多少"
+description = "Official site: visa.visitsaudi.com. Saudi tourist eVisa guide: the 66-country list, the Ministry of Tourism portal and its non-government hostname, SAR 300 plus insurance and VAT, and the finder route."
+description_zh = "官网是 visa.visitsaudi.com。沙特旅游电子签指南：66 国名单、旅游部运营的门户及其非政府主机名、300 里亚尔加保险与增值税，以及签证查询工具路径。"
+description_zh_hant = "官網是 visa.visitsaudi.com。沙特旅遊電子簽指南：66 國名單、旅遊部營運的門戶及其非政府主機名、300 里亞爾加保險與增值稅，以及簽證查詢工具路徑。"
 
 ["pakistan/visa-prior-to-arrival"]
-title = "Pakistan Visa Prior to Arrival: Free Application and Eligibility"
-title_zh = "巴基斯坦电子签证官网：免费入境前签证 VPA 与资格"
-title_zh_hant = "巴基斯坦電子簽證官網：免費入境前簽證 VPA 與資格"
+title = "Pakistan Visa Prior to Arrival Official Site: visa.nadra.gov.pk, Free"
+title_zh = "巴基斯坦电子签证官网：visa.nadra.gov.pk，免费入境前签证 VPA"
+title_zh_hant = "巴基斯坦電子簽證官網：visa.nadra.gov.pk，免費入境前簽證 VPA"
+description = "Official site: visa.nadra.gov.pk. Pakistan VPA guide: current 120-country eligibility, six-country GCC exemption, free application, official portal and Visa Grant Notice."
+description_zh = "官网是 visa.nadra.gov.pk。巴基斯坦 VPA 指南：现行 120 国资格、6 个海合会国家豁免、免费申请、官方门户与 Visa Grant Notice。"
+description_zh_hant = "官網是 visa.nadra.gov.pk。巴基斯坦 VPA 指南：現行 120 國資格、6 個海合會國家豁免、免費申請、官方門戶與 Visa Grant Notice。"
 
 ["nepal/visa-on-arrival"]
-title_zh = "尼泊尔落地签官网：在线预填、费用与中国护照免费规则"
-title_zh_hant = "尼泊爾落地簽官網：線上預填、費用與中國護照免費規則"
+title = "Nepal Visa on Arrival Official Form: nepaliport.immigration.gov.np"
+title_zh = "尼泊尔落地签官网：nepaliport.immigration.gov.np 在线预填与费用"
+title_zh_hant = "尼泊爾落地簽官網：nepaliport.immigration.gov.np 線上預填與費用"
+description = "Official site: nepaliport.immigration.gov.np. Nepal visa-on-arrival guide: official NepaliPort form, USD 30 / 50 / 125 fees, Chinese gratis treatment, restricted passports and separate ETA."
+description_zh = "官网是 nepaliport.immigration.gov.np。尼泊尔落地签指南：NepaliPort 官方表单、30/50/125 美元费用、中国护照免费、受限国籍和单独的 ETA。"
+description_zh_hant = "官網是 nepaliport.immigration.gov.np。尼泊爾落地簽指南：NepaliPort 官方表單、30/50/125 美元費用、中國護照免費、受限國籍和單獨的 ETA。"
 
 ["qatar/hayya-evisa"]
-title_zh = "卡塔尔电子签证官网：Hayya 平台，付 100 里亚尔前先查免签"
-title_zh_hant = "卡塔爾電子簽證官網：Hayya 平臺，付 100 里亞爾前先查免簽"
+title = "Qatar Hayya e-Visa Official Website: hayya.qa, Check Free Entry First"
+title_zh = "卡塔尔电子签证官网：Hayya 平台 hayya.qa，付 100 里亚尔前先查免签"
+title_zh_hant = "卡塔爾電子簽證官網：Hayya 平臺 hayya.qa，付 100 里亞爾前先查免簽"
+description = "Official site: hayya.qa. Qatar Hayya e-Visa guide: free entry, official portal, A1/A2/A3 routes, QAR 100 fee, passport validity and accommodation."
+description_zh = "官网是 hayya.qa。卡塔尔 Hayya 电子签指南：免费入境、官方平台、A1/A2/A3 路径、100 里亚尔费用、护照和住宿。"
+description_zh_hant = "官網是 hayya.qa。卡塔爾 Hayya 電子簽指南：免費入境、官方平臺、A1/A2/A3 路徑、100 里亞爾費用、護照和住宿。"
 
 ["kenya/eta"]
-title_zh = "肯尼亚 eTA 官网：付款前先查豁免国籍（2026）"
-title_zh_hant = "肯尼亞 eTA 官網：付款前先查豁免國籍（2026）"
+title = "Kenya eTA Official Website: etakenya.go.ke, Check Exemptions First"
+title_zh = "肯尼亚 eTA 官网：etakenya.go.ke，付款前先查豁免国籍"
+title_zh_hant = "肯尼亞 eTA 官網：etakenya.go.ke，付款前先查豁免國籍"
 
 ["sri-lanka/eta"]
-title_zh = "斯里兰卡 ETA 官网收费吗？先确认你的费用是不是零"
-title_zh_hant = "斯里蘭卡 ETA 官網收費嗎？先確認你的費用是不是零"
+title = "Sri Lanka ETA Official Website: eta.gov.lk, Check If Your Fee Is Zero"
+title_zh = "斯里兰卡 ETA 官网：eta.gov.lk，先确认你的费用是不是零"
+title_zh_hant = "斯里蘭卡 ETA 官網：eta.gov.lk，先確認你的費用是不是零"
 
 ["usa/esta"]
-title_zh = "美国 ESTA 多少钱？官网申请费用 40.27 美元（2026）"
-title_zh_hant = "美國 ESTA 多少錢？官網申請費用 40.27 美元（2026）"
+title = "US ESTA Official Website: esta.cbp.dhs.gov, USD $40.27 Fee (2026)"
+title_zh = "美国 ESTA 官网 esta.cbp.dhs.gov：多少钱？申请费 40.27 美元"
+title_zh_hant = "美國 ESTA 官網 esta.cbp.dhs.gov：多少錢？申請費 40.27 美元"
+description = "Official site: esta.cbp.dhs.gov. Is ESTA free? No. The official ESTA total is USD $40.27 if approved. Use the CBP website and avoid commercial application markups."
+description_zh = "官网是 esta.cbp.dhs.gov。ESTA 费用中文指南：获批总价 40.27 美元、4 美元处理费、CBP 官方网站、有效期和中介加价。"
+description_zh_hant = "官網是 esta.cbp.dhs.gov。ESTA 費用中文指南：獲批總價 40.27 美元、4 美元處理費、CBP 官方網站、有效期和中介加價。"
+
+["uk/eta"]
+title = "UK ETA Official Website: gov.uk/eta, £20 Fee, Not Free (2026)"
+title_zh = "英国 ETA 官网：gov.uk/eta，申请费 20 英镑（2026）"
+title_zh_hant = "英國 ETA 官網：gov.uk/eta，申請費 20 英鎊（2026）"
+description = "Official site: gov.uk/eta. Is UK ETA free? No. The official UK ETA fee is £20 per person. Use GOV.UK or the Home Office app and avoid commercial application markups."
+description_zh = "官网是 gov.uk/eta。英国 ETA 费用中文指南：每人 20 英镑、GOV.UK 官方网站、Home Office 官方 App、适用人群、处理时间和有效期。"
+description_zh_hant = "官網是 gov.uk/eta。英國 ETA 費用中文指南：每人 20 英鎊、GOV.UK 官方網站、Home Office 官方 App、適用人群、處理時間和有效期。"
+
+["canada/eta"]
+title = "Canada eTA Official Website: canada.ca, CAD $7 Fee (2026)"
+title_zh = "加拿大 eTA 官网：canada.ca，申请费 7 加元（2026）"
+title_zh_hant = "加拿大 eTA 官網：canada.ca，申請費 7 加元（2026）"
+description = "Official site: canada.ca. Is eTA Canada free? No. The official Canada eTA fee is CAD $7. Check the air-only rule, exemptions, validity, and Canada.ca application site."
+description_zh = "官网是 canada.ca。加拿大 eTA 费用中文指南：官网收费 7 加元，说明仅限空路的适用规则、美国公民和绿卡豁免、有效期及官方入口。"
+description_zh_hant = "官網是 canada.ca。加拿大 eTA 費用中文指南：官網收費 7 加元，說明僅限空路的適用規則、美國公民和綠卡豁免、有效期及官方入口。"
+
+["australia/eta"]
+title = "Australia ETA Official Site: immi.homeaffairs.gov.au, App Only, AUD $20"
+title_zh = "澳大利亚 ETA 官网：immi.homeaffairs.gov.au，仅限 App，20 澳元"
+title_zh_hant = "澳大利亞 ETA 官網：immi.homeaffairs.gov.au，僅限 App，20 澳元"
+description = "Official ETA page: immi.homeaffairs.gov.au. Is Australia ETA free? ETA 601 has no visa application charge, but the official App charges AUD $20. Eligible European passports can use free eVisitor 651."
+description_zh = "官方 ETA 页面是 immi.homeaffairs.gov.au。澳大利亚 ETA 多少钱：ETA 601 没有签证申请费，但官方 App 收 20 澳元服务费；符合条件的欧洲护照可免费申请 eVisitor 651。"
+description_zh_hant = "官方 ETA 頁面是 immi.homeaffairs.gov.au。澳大利亞 ETA 多少錢：ETA 601 沒有簽證申請費，但官方 App 收 20 澳元服務費；符合條件的歐洲護照可免費申請 eVisitor 651。"
+
+["israel/eta-il"]
+title = "Israel ETA-IL Official Website: israel-entry.piba.gov.il, ILS 25"
+title_zh = "以色列 ETA-IL 官网：israel-entry.piba.gov.il，仅限免签护照"
+title_zh_hant = "以色列 ETA-IL 官網：israel-entry.piba.gov.il，僅限免簽護照"
+description = "Official site: israel-entry.piba.gov.il. Israel ETA-IL guide: eligibility first, official PIBA application, ILS 25 fee, 72-hour decision and two-year validity."
+description_zh = "官网是 israel-entry.piba.gov.il。以色列 ETA-IL 中文指南：资格先行、PIBA 官方申请、25 新谢克尔、72 小时决定和两年有效期。"
+description_zh_hant = "官網是 israel-entry.piba.gov.il。以色列 ETA-IL 中文指南：資格先行、PIBA 官方申請、25 新謝克爾、72 小時決定和兩年有效期。"
+
+["jordan/jordan-pass"]
+title = "Jordan Pass Official Website: jordanpass.jo, JD 70 / 75 / 80 Prices"
+title_zh = "约旦通票 Jordan Pass 官网：jordanpass.jo，票价与可免的签证费"
+title_zh_hant = "約旦通票 Jordan Pass 官網：jordanpass.jo，票價與可免的簽證費"
+
+["china/arrival-card"]
+title = "China Arrival Card Official Website: s.nia.gov.cn, Free Online Filing"
+title_zh = "中国入境卡官网：s.nia.gov.cn 外国人入境卡网上填报，免费"
+title_zh_hant = "中國入境卡官網：s.nia.gov.cn 外國人入境卡網上填報，免費"
 
 # ---- how-to-fill pages: "how to fill the <country> arrival card" ----
 # Titles lead with the field people search for; descriptions answer it first.

@@ -3,7 +3,7 @@ title: "馬爾代夫 IMUGA 入境申報官網、免費填寫與 96 小時規則"
 kicker: "IMUGA 旅客申報表免費，抵達前 96 小時內提交一次即可。離境申報 2024 年已取消。"
 description: "馬爾代夫 IMUGA 中文指南：政府門戶上的免費旅客申報表、96 小時提交窗口，以及它和落地簽的區別。"
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 所有外國入境旅客都要在**抵達前 96 小時內**提交 IMUGA 旅客申報表。它免費，並且運行在政府域名上。
@@ -21,6 +21,14 @@ lastmod: 2026-11-02
 ### 2. 表單會收集什麼
 7 項資料，來自門戶公開的第一步和官方旅遊入境頁面。
 → [打開欄位指南](/zh-hant/maldives/how-to-fill/)
+
+## 誰要填，誰不用填
+
+- **要填**：所有旅客，在抵達航班前 96 小時內提交。每人一份，兒童和未成年人也要單獨填。
+- **不用填**：馬爾代夫公民。移民局已停止要求馬爾代夫人填寫旅客申報。
+- **按國籍或證件**：不分國籍。中國大陸、香港、臺灣護照都填同一張免費 IMUGA 表。
+
+來源：{{< source-link site="maldives.traveller_declaration" text="IMUGA 旅客申報" >}}、{{< source-link site="maldives.tourist_visa" text="旅遊簽證頁" >}}、{{< source-link site="maldives.citizen_exemption" text="移民局對本國公民的公告" >}}。要不要簽證是另一回事。
 
 ## 速記要點
 

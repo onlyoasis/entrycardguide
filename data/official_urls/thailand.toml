@@ -146,3 +146,10 @@ domain = "ivisa.com"
 path = "/thailand"
 first_observed = "2024-06-01"
 evidence = "Commercial visa middleman charging fees for the free TDAC. Named in Thai immigration public warning coverage."
+
+[consulate_scope]
+url = "https://hongkong.thaiembassy.org/en/page/entry-regulation%3Fmenu=61dbe1897551c82a7158d383"
+name = "TDAC scope and exceptions"
+agency = "Royal Thai Consulate-General, Hong Kong"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-files section. Thai consulate page: TDAC is not required for travellers transiting or transferring without passing immigration control, or for those entering on a Border Pass."

@@ -123,3 +123,17 @@ name = "NZTD application"
 agency = "New Zealand Customs Service"
 last_verified = "2026-11-02"
 notes = "Read 2026-10-15 from the app scripts and appSettings.json. includePassportExpiryDate is false, so the form does not ask for passport expiry. Names max 39, ^[a-zA-Z-\\s']+$, surname required and given names optional; passport number 3 to 9, ^[A-Z0-9]+$; date of birth up to today; air arrival today, tomorrow or the day after, or a typed date from yesterday (declaration can start 2 days before arrival); flight number /^(?=.{3,7}$)\\s*(?:3C|3U|D7|[A-Z]{2})[ -]?\\d{1,4}\\s*$/; email and phone patterns from the form."
+
+[air_transit]
+url = "https://www.customs.govt.nz/travel-to-and-from-new-zealand/travel-by-air"
+name = "Travel by air (NZ Customs)"
+agency = "New Zealand Customs Service"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-files section. Transit passengers do not need an NZTD if they stay in the transit area for 24 hours or less and do not enter New Zealand."
+
+[completion_guide]
+url = "https://www.travellerdeclaration.govt.nz/completing-your-declaration/"
+name = "Completing your declaration"
+agency = "New Zealand Customs Service"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-files section. Individual declarations are needed for each person travelling, including babies and children."

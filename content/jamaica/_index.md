@@ -3,7 +3,7 @@ title: "Jamaica"
 kicker: "The Electronic Passenger Declaration (C5) is free. Use the current .gov.jm portal."
 description: "Independent Jamaica C5 guide: current government portal, PICA and JCA ownership, free filing, submission timing and live form fields."
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 Jamaica requires arriving passengers to submit the Electronic Passenger Declaration (C5) for immigration and customs clearance at its international airports.
@@ -21,6 +21,14 @@ See why the current `.gov.jm` address replaces paid lookalikes and why C5 is sep
 ### 2. Prepare the live form
 Twenty checks from the public government HTML, including email verification, a 4-character flight-number box and the `mm/dd/yyyy` arrival date.
 → [Open the C5 field guide](/jamaica/how-to-fill/)
+
+## Who has to file it
+
+- **Must file:** all passengers arriving at Jamaica's international airports submit the electronic C5 passenger declaration.
+- **Cost:** free of charge to visitors and residents.
+- **By nationality:** there is no German, Canadian or US version. Visitors and Jamaican residents file the same C5. Rules for crew and cruise passengers are not covered here: we found no official text that names them.
+
+Source: {{< source-link site="jamaica.customs_passenger" text="Jamaica Customs Agency passenger page" >}}. Whether you also need a visa is a separate question.
 
 ## Fast facts
 

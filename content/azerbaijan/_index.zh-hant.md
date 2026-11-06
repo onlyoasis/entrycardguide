@@ -3,7 +3,7 @@ title: "阿塞拜疆電子簽官網與免簽資格指南"
 kicker: "你的護照可能已經免簽。先查資格，再決定是否支付 25 美元辦 ASAN 電子簽。"
 description: "阿塞拜疆電子簽中文指南：免簽資格、官方 evisa.gov.az 入口、20 美元加 5 美元費用，以及申請前要準備什麼。"
 date: 2026-08-30
-lastmod: 2026-10-26
+lastmod: 2026-11-06
 ---
 
 阿塞拜疆 ASAN 電子簽是付費、單次入境簽證，但它不是所有旅客的第一步。外交部另有免簽名單，不同護照類型、停留期和生效日期都要分開核對。
@@ -23,6 +23,14 @@ lastmod: 2026-10-26
 ### 2. 準備申請
 8 項內容全部來自 ASAN 公開頁面，不編正則、字符限制或報錯原文。
 → [打開申請準備指南](/zh-hant/azerbaijan/how-to-fill/)
+
+## 誰要申請，誰不用申請
+
+- **要申請**：ASAN 電子簽國家名單上的護照。這是收費的單次入境簽證。
+- **不用申請**：外交部免簽名單覆蓋的旅客，名單寫明護照類型、停留期限和生效日期。
+- **按國籍或證件**：沒有按國籍分的另一張表。你的護照能不能用、要不要申請，看官方{{< source-link site="azerbaijan.eligible_countries" text="電子簽國家名單" >}}。
+
+來源：{{< source-link site="azerbaijan.eligible_countries" text="ASAN 電子簽國家" >}}、{{< source-link site="azerbaijan.visa_free" text="外交部免簽名單" >}}。
 
 ## 速記要點
 

@@ -2,7 +2,7 @@
 title: "日本 Visit Japan Web 官方入口、免费二维码和防仿冒指南"
 kicker: "日本 Visit Japan Web 官方来源、免费二维码流程，以及如何避开假登录页。"
 description: "日本 Visit Japan Web 中文指南：日本数字厅官方 URL、免费入境二维码流程、字段填写。"
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 Visit Japan Web 是日本官方的入境相关二维码服务。稳定的政府服务说明页在日本数字厅 `.go.jp` 域名下。
@@ -22,6 +22,14 @@ Visit Japan Web 是日本官方的入境相关二维码服务。稳定的政府�
 ### 3. 落地之后
 检查顺序、海关和现金限额、铁路进东京，以及 2026 年 11 月 1 日起的免税退税制。
 → [日本落地流程](/zh/japan/landing/)
+
+## 谁要填，谁不用填
+
+- **海关申报**：日本海关要求所有入境旅客提交携带品和另寄物品申报。
+- **Visit Japan Web**：海关建议在 Visit Japan Web 上做电子申报，纸质海关申报单仍然可以用。
+- **按国籍或证件**：不分国籍。中国大陆、香港、台湾旅客和其他人一样做海关申报，网上或纸质都行。
+
+来源：{{< source-link site="japan.customs_declaration" text="日本海关申报说明" >}}。要不要签证是另一回事。
 
 ## 速记要点
 

@@ -59,3 +59,10 @@ output_zh_hant = "門戶通過郵件發送決定，也可從狀態查詢下載 V
 fields_intro_en = "The public first step exposes required labels, exact error text and 100-character limits for email and the security answer. Later application screens were not opened because doing so would create a live application. No passport regex or later-screen limits are claimed, and no local validator is mounted."
 fields_intro_zh = "公开首屏给出了必填标签、原始报错文案，以及邮箱和安全问题答案的 100 字符上限。继续操作会创建真实申请，所以没有进入后续页面。本页不编护照正则或后续字段上限，也不挂本地校验器。"
 fields_intro_zh_hant = "公開首屏給出了必填標籤、原始報錯文案，以及信箱和安全問題答案的 100 字符上限。繼續操作會創建真實申請，所以沒有進入後續頁面。本頁不編護照正則或後續欄位上限，也不掛本地校驗器。"
+
+[visa_free_countries]
+url = "https://visa.immigration.go.tz/visafreecountry"
+name = "Countries whose nationals do not require a visa"
+agency = "Tanzania Immigration Services Department"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-applies section. Official list of countries whose nationals do not require a visa."

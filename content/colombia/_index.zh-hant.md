@@ -3,7 +3,7 @@ title: "哥倫比亞"
 kicker: "Check-Mig 是政府提供的免費、可選入境與出境預登記。"
 description: "哥倫比亞 Check-Mig 中文指南：免費官網、提前 72 小時至 1 小時窗口、入境與出境登記和確認。"
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 Check-Mig 在哥倫比亞移民檢查前預載行程資料。Migración Colombia 寫明該服務免費且不強制，哥倫比亞人與外國旅客入境或出境都可使用。
@@ -21,6 +21,14 @@ Check-Mig 在哥倫比亞移民檢查前預載行程資料。Migración Colombia
 ### 2. 準備 5 個步驟
 行程方向、旅行、個人、住宿和當前問題。
 → [打開欄位指南](/zh-hant/colombia/how-to-fill/)
+
+## 誰要填，誰不用填
+
+- **不是必填**：Check-Mig 是免費的線上預登記，哥倫比亞移民局寫明不強制使用。
+- **誰能用**：出入哥倫比亞的本國人和外國人。
+- **按國籍或證件**：不分國籍，任何護照都可以自願預登記。
+
+來源：{{< source-link site="colombia.service_guide" text="哥倫比亞移民局服務說明" >}}、{{< source-link site="colombia.checkmig" text="Check-Mig 官網" >}}。要不要簽證是另一回事。
 
 ## 速記要點
 

@@ -73,3 +73,17 @@ verification_title_zh_hant = "仍須接受入境審查"
 verification_body_en = "ETA-IL authorises travel for an eligible visitor. The border officer still decides admission and the permitted stay."
 verification_body_zh = "ETA-IL 只允许符合资格的旅客前往以色列，是否准入及停留期限仍由口岸决定。"
 verification_body_zh_hant = "ETA-IL 只允許符合資格的旅客前往以色列，是否准入及停留期限仍由口岸決定。"
+
+[british_eta_guidance]
+url = "https://www.gov.uk/foreign-travel-advice/israel/entry-requirements"
+name = "Israel entry requirements (UK travel advice)"
+agency = "UK Foreign, Commonwealth and Development Office"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-applies section. UK government advice for full British citizen passport holders: from 1 January 2025 you need an ETA before you arrive in Israel."
+
+[eta_scope_notice]
+url = "https://embassies.gov.il/wellington/en/announcements/eta-il"
+name = "ETA-IL announcement"
+agency = "Israel Ministry of Foreign Affairs"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-applies section. Visitors from visa-exempt countries must obtain an ETA-IL before departure; Israeli citizens and holders of an Israeli identity number do not apply."

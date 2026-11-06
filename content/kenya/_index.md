@@ -3,7 +3,7 @@ title: "Kenya"
 kicker: "Check the current exemption list before paying for a Kenya eTA."
 description: "Independent Kenya eTA guide: official etakenya.go.ke URL, passport exemptions, USD $30 standard fee and application documents."
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 Kenya replaced its old visitor-visa entry route with the Electronic Travel Authorisation system in January 2024. The current rule is not “everyone pays.” The official portal now lists exempt travellers and passport nationalities, including EAC partner-state citizens and named nationalities with 90-day or 60-day exemptions.
@@ -23,6 +23,14 @@ Read the exemption rule, official fee, required documents and approval process.
 ### 2. Prepare the published inputs
 Eight cards based on the public application guide, with no invented regexes.
 → [Open the field guide](/kenya/how-to-fill/)
+
+## Who applies, and who does not
+
+- **Who applies:** all visitors to Kenya, infants and children included, unless exempt. Approval must come before the journey starts.
+- **Who does not:** Kenyan permanent residents and holders of valid work permits, passes or re-entry passes; citizens of the East African partner states for up to 180 days; the nationalities on the official 90-day and 60-day lists; airside transit passengers; ship passengers who stay on board; manifest-listed crew continuing outside Kenya.
+- **By nationality:** look up your passport on the official exemption list. There is no separate form by nationality.
+
+Source: {{< source-link site="kenya.eligibility" text="eTA Kenya exemptions" >}}.
 
 ## Fast facts
 
