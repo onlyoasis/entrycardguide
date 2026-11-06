@@ -27024,7 +27024,7 @@ export default {
           "url": "https://imigresen-online.imi.gov.my/mdac/main?registerMain",
           "agency": "Jabatan Imigresen Malaysia (Immigration Department of Malaysia)",
           "lastVerified": "2026-11-02",
-          "notes": "Read 2026-10-15 (HTML attributes, key filters and submit checks). Two sections, Personal Information and Traveling Information, 21 labelled fields all marked required. Name max 60, letters and spaces only; Passport No. max 12; Date of Birth, Date of Passport Expiry, Date of Arrival and Date of Departure are read-only calendar boxes in DD/MM/YYYY; the arrival calendar offers today to two days ahead and the form notes the trip must be within 3 days including the date of submission; expiry calendar starts today and does not enforce six months. Nationality / Citizenship and Place of Birth are country lists (CODE - NAME). Email and Confirm Email max 100, must match, and the email check allows letters, digits, dot, hyphen and underscore before the @ (no +). Country / Region Code list and Mobile No. (digits only, max 12) both required. Flight / Vessel / Transportation No. max 30, letters, digits, spaces and @ / - ( ) , ' ; Mode of Travel AIR, LAND or SEA; Last Port of Embarkation before Malaysia is a country list (no port-of-entry field). Accommodation of Stay: HOTEL/MOTEL/REST HOUSE, RESIDENCE OF FRIENDS/RELATIVES or OTHERS; 'Please key-in alphanumeric only'; Address two lines of max 100, line 1 needs at least three words, NA/N/A/NULL/NIL refused; State list of 16, City list by state, Postcode 5 digits; slider captcha before submit. Pop-up messages quoted on the guide are copied from the form's script."
+          "notes": "Read 2026-10-15 (HTML attributes, key filters and submit checks). Two sections, Personal Information and Traveling Information, 21 labelled fields all marked required. Name max 60, letters and spaces only; Passport No. max 12; Date of Birth, Date of Passport Expiry, Date of Arrival and Date of Departure are read-only calendar boxes in DD/MM/YYYY; the arrival calendar offers today to two days ahead and the form notes the trip must be within 3 days including the date of submission; expiry calendar starts today and does not enforce six months. Nationality / Citizenship and Place of Birth are country lists (CODE - NAME). Email and Confirm Email max 100, must match, and the email check allows letters, digits, dot, hyphen and underscore before the @ (no +). Country / Region Code list and Mobile No. (digits only, max 12) both required. Flight / Vessel / Transportation No. max 30, letters, digits, spaces and @ / - ( ) , ' ; Mode of Travel AIR, LAND or SEA; Last Port of Embarkation before Malaysia is a country list (no port-of-entry field). Accommodation of Stay: HOTEL/MOTEL/REST HOUSE, RESIDENCE OF FRIENDS/RELATIVES or OTHERS; 'Please key-in alphanumeric only'; Address two lines of max 100, line 1 needs at least three words, NA/N/A/NULL/NIL refused; State list of 16, City list by state, Postcode 5 digits; slider captcha before submit. Pop-up messages quoted on the guide are copied from the form's script. Re-read 2026-11-06: \"Please key-in alphanumeric only\" appears once, above the two Address (In Malaysia) lines (maxlength 100, paste disabled); their key filter isNumberCharacterKeyAccom accepts digits, letters, space and @ / - ( ) , ' only."
         },
         {
           "key": "entry_requirements",
@@ -27100,7 +27100,8 @@ export default {
           "name": "ICA SGAC requirements",
           "url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/sg-arrival-card",
           "agency": "Immigration & Checkpoints Authority",
-          "lastVerified": "2026-11-02"
+          "lastVerified": "2026-11-02",
+          "notes": "Read 2026-11-06 (page last updated 28 Oct 2026): \"You will receive an acknowledgement email sent to your declared email address upon successful submission.\"; changes are made with the \"Update SGAC\" feature."
         },
         {
           "key": "sgac_enhanced",
@@ -27108,7 +27109,7 @@ export default {
           "url": "https://eservices.ica.gov.sg/arrivalcard/sgac",
           "agency": "Immigration & Checkpoints Authority",
           "lastVerified": "2026-11-02",
-          "notes": "Field checks read 2026-10-15 from the arrival card scripts: dates DD/MM/YYYY; arrival today to 2 days ahead, Singapore time; date of birth up to today; full name max 66, /^[A-Za-z][A-Za-z' /.()\\-@,]*$/; passport number max 20; flight number digits only after the airline is picked; email max 100, /^[^\\s@]+@(?:[^\\s@.]+\\.)+[^\\s@.]+$/; mobile number digits, max 12."
+          "notes": "Field checks read 2026-10-15 from the arrival card scripts: dates DD/MM/YYYY; arrival today to 2 days ahead, Singapore time; date of birth up to today; full name max 66, /^[A-Za-z][A-Za-z' /.()\\-@,]*$/; passport number max 20; flight number digits only after the airline is picked; email max 100, /^[^\\s@]+@(?:[^\\s@.]+\\.)+[^\\s@.]+$/; mobile number digits, max 12. Re-read 2026-11-06 from the scripts and assets/i18n/en.json: Country Code and Place of Residence are searchable lists (SEARCH_SELECT); codes display as +N; Place of Residence options join country, state and city; Mobile Number is numeric. Update: \"You may update your submitted information prior to your trip if required.\"; foreign visitors cannot update Date of Arrival, Full Name, Passport Number, Date of Passport Expiry, Date of Birth or Nationality/Citizenship and must make a new submission; the DE number is in the acknowledgement email; \"Please check your junk or spam folder if you cannot find the email.\""
         },
         {
           "key": "arrival_date_help",
@@ -27412,6 +27413,22 @@ export default {
           "lastVerified": "2026-11-02"
         },
         {
+          "key": "vjw_manual",
+          "name": "Visit Japan Web user manual",
+          "url": "https://www.vjw.digital.go.jp/manual/main/visitjapanweb_manual_en.html",
+          "agency": "Digital Agency of Japan",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06. 3-3: register your own details first; \"You can register up to 10 family members traveling with you.\"; family members who undergo immigration procedures at the same time; \"Entry and return procedures will be processed one person at a time.\" Plans: \"You can register plans up to December 31 the following year.\", up to 100 plans. 9-1: the Tax-Free QR Code can be shown instead of the passport at shops that accept it; \"If you were unable to use Visit Japan Web when entering Japan, it can be used after you enter.\" No advance-day window is stated."
+        },
+        {
+          "key": "tax_free_guide",
+          "name": "Visit Japan Web: how to use (tax-free)",
+          "url": "https://services.digital.go.jp/en/visit-japan-web/guide/",
+          "agency": "Digital Agency of Japan",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06 via the page data. \"Eligible users are foreign nationals whose status of residence is Temporary Visitor, Diplomat, or Official.\" A Tax-Free 2D Code needs the passport facial image and landing permission seal details; show it at shops that support it; \"Screenshots cannot be used.\" The app text adds that it is not a replacement for the passport, residence card or proof of entry/exit."
+        },
+        {
           "key": "form_checks",
           "name": "Visit Japan Web app",
           "url": "https://www.vjw.digital.go.jp/main/",
@@ -27420,7 +27437,7 @@ export default {
           "notes": "Read 2026-10-15 from the app script. Passport number required, max 9, /^[A-Z0-9]*$/; family and given names required, max 39, /^[A-Z0-9 \\-.,]*$/; date of birth year, month and day fields; arrival date YYYY/MM/DD, from today to 31 December of next year; flight number max 20, /^[A-Z0-9]*$/; login email max 128."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "india",
@@ -27455,7 +27472,7 @@ export default {
           "agency": "Bureau of Immigration, Ministry of Home Affairs",
           "lastVerified": "2026-11-02",
           "archiveUrl": "https://web.archive.org/web/2026/https://indianvisaonline.gov.in/earrival/",
-          "notes": "Verified 2026-07-14 against https://indianvisaonline.gov.in/earrival/, https://indianvisaonline.gov.in/, https://ociservices.gov.in/onlineOCI/onlineOCI/faq, and the Bureau of Immigration advisory at https://www.cgisf.gov.in/section/public-advisories/digitization-of-disembarkation-card-for-foreign-nationals-visiting-india/. The official form labels the service free of cost. Foreign nationals, including OCI cardholders, must submit it within the 72 hours before arrival; Indian passport holders are not foreign nationals and do not submit it. It records arrival information and does not replace a visa or OCI status. The current web form asks for identity, passport, purpose, arrival, recent travel, India address, contact, emergency-contact, and declaration information. Government mission notices also tell travellers to have flight and visa or OCI details ready; fields may vary by channel or prefilled record. Field checks read 2026-10-15 from the form script and /arrivalcard/dcard/arrival/dates: arrival DD/MM/YYYY, today to 4 days ahead; full name letters and spaces, max 200; passport number /^[A-Za-z0-9]{6,15}$/; contact and emergency numbers /^\\d{5,15}$/ after an ISD code box (max 4 digits); address max 500, letters, digits, spaces and -#@:()/.,&_. No flight number or visa/OCI number box."
+          "notes": "Verified 2026-07-14 against https://indianvisaonline.gov.in/earrival/, https://indianvisaonline.gov.in/, https://ociservices.gov.in/onlineOCI/onlineOCI/faq, and the Bureau of Immigration advisory at https://www.cgisf.gov.in/section/public-advisories/digitization-of-disembarkation-card-for-foreign-nationals-visiting-india/. The official form labels the service free of cost. Foreign nationals, including OCI cardholders, must submit it within the 72 hours before arrival; Indian passport holders are not foreign nationals and do not submit it. It records arrival information and does not replace a visa or OCI status. The current web form asks for identity, passport, purpose, arrival, recent travel, India address, contact, emergency-contact, and declaration information. Government mission notices also tell travellers to have flight and visa or OCI details ready; fields may vary by channel or prefilled record. Field checks read 2026-10-15 from the form script and /arrivalcard/dcard/arrival/dates: arrival DD/MM/YYYY, today to 4 days ahead; full name letters and spaces, max 200; passport number /^[A-Za-z0-9]{6,15}$/; contact and emergency numbers /^\\d{5,15}$/ after an ISD code box (max 4 digits); address max 500, letters, digits, spaces and -#@:()/.,&_. No flight number or visa/OCI number box. Re-read 2026-11-06 in a browser from assets/index-DBv8aLuY.js: the ISD box (countryCodeMbl) is a required text input, digits only, maxLength 4, placeholder \"Enter ISD Code\", submit check \"Please provide ISD Code\"; the emergency contact has its own code box; still no visa, e-Visa or OCI number box and no language switch. ISD examples on the guide follow the ITU list of E.164 assigned country codes (https://www.itu.int/dms_pub/itu-t/opb/sp/T-SP-E.164D-2016-PDF-E.pdf, read 2026-11-06): 91 India, 1 United States and Canada, 44 United Kingdom, 86 China."
         },
         {
           "key": "evisa",
@@ -27465,9 +27482,17 @@ export default {
           "lastVerified": "2026-11-02",
           "archiveUrl": "https://web.archive.org/web/2026/https://indianvisaonline.gov.in/evisa/tvoa.html",
           "notes": "Verified 2026-07-14 against https://indianvisaonline.gov.in/evisa/tvoa.html and the official 09-July-2026 tourist-fee table at https://indianvisaonline.gov.in/evisa/images/Etourist_fee_final.pdf. The e-Visa is separate from the free e-Arrival Card. Fees vary by nationality and duration. Examples in the current table: Australia and Canada pay USD $10 for a 30-day tourist e-Visa from April to June or USD $25 from July to March, USD $40 for 1 year, and USD $200 for 5 years; the United States has the same 30-day and 1-year fees but USD $160 for 5 years; the United Kingdom has the same 30-day and 1-year fees but USD $484 for 5 years; Japan pays USD $10 or $25 for 30 days and USD $25 for either 1 or 5 years. Some nationalities are listed at USD $0. A 3% bank charge is additional. The official page currently permits first entry through 33 named airports and 19 named seaports; travellers may depart through any authorized Immigration Check Post. Check the live eligibility, fee table, and port list before paying."
+        },
+        {
+          "key": "boi",
+          "name": "Bureau of Immigration",
+          "url": "https://boi.gov.in/boi",
+          "agency": "Bureau of Immigration, Ministry of Home Affairs",
+          "lastVerified": "2026-11-06",
+          "notes": "Read 2026-11-06. What's New: \"Foreigners and OCI Card holders can complete and submit the e-Arrival card online within 72 hours before their arrival in India at boi.gov.in or indianvisaonline.gov.in or via official 'Indian Visa Su-Swagatam' Mobile App. This is for arrival information, not a visa.\" The site's language menu includes 中文, 日本語 and Français; it covers this information site, not the arrival card form."
         }
       ],
-      "lastVerified": "2026-11-02"
+      "lastVerified": "2026-11-06"
     },
     {
       "slug": "korea",
@@ -27636,7 +27661,7 @@ export default {
           "agency": "Philippine Travel Information System",
           "lastVerified": "2026-11-02",
           "archiveUrl": "https://web.archive.org/web/2026/https://etravel.gov.ph",
-          "notes": "Reserved under .gov.ph. The official homepage states that eTravel is free. Used for the Philippine electronic travel declaration before arrival or departure. Field checks read 2026-10-15 from the form scripts: dates MM/DD/YYYY (react-datepicker default), arrival today to 4 days ahead, date of birth up to today, passport number at least 5 characters."
+          "notes": "Reserved under .gov.ph. The official homepage states that eTravel is free. Used for the Philippine electronic travel declaration before arrival or departure. Field checks read 2026-10-15 from the form scripts: dates MM/DD/YYYY (react-datepicker default), arrival today to 4 days ahead, date of birth up to today, passport number at least 5 characters. Read 2026-11-06 from the site script: occupation_code is a required field, chosen from the site's occupation list sorted by name."
         },
         {
           "key": "faq",
@@ -27644,7 +27669,7 @@ export default {
           "url": "https://etravel.gov.ph/frequently-asked-questions",
           "agency": "Philippine Travel Information System",
           "lastVerified": "2026-11-02",
-          "notes": "Official FAQ checked for registration categories and exemptions, free registration and updates, the 72-hour arrival/departure window, and saving the QR code to present before boarding. This check does not reverify form-field constraints."
+          "notes": "Official FAQ checked for registration categories and exemptions, free registration and updates, the 72-hour arrival/departure window, and saving the QR code to present before boarding. This check does not reverify form-field constraints. Re-read 2026-11-06: must register \"Arriving Filipino and foreign crewmembers; Arriving Filipino and foreign passengers; and Departing Filipino passengers.\", with the listed diplomatic and 9(e) exemptions; green QR when the submission is proper and complete, red QR when data is incomplete/incorrect or for illness or exposure in the past 30 days, followed by a BOQ check before immigration; Edit Registration. The OTP note reads \"Kindly wait for at least 3 minutes for the 6-digit code to arrive. Sometimes, there may be delays in receiving it.\""
         }
       ],
       "lastVerified": "2026-11-02"
@@ -27682,7 +27707,7 @@ export default {
           "agency": "Cambodia General Department of Immigration",
           "lastVerified": "2026-11-02",
           "archiveUrl": "https://web.archive.org/web/2026/https://arrival.gov.kh",
-          "notes": "Reserved under .gov.kh. The e-Arrival system combines arrival card, customs declaration, and health declaration flows. The arrival declaration itself is free; visa fees are separate when a visa is needed. Field checks read 2026-10-15 from the e-arrival submission module: arrival date placeholder m/d/yyyy, today to 6 days ahead; surname optional, given name required, names and passport number letters, digits and spaces; flight number digits only, airline code picked separately."
+          "notes": "Reserved under .gov.kh. The e-Arrival system combines arrival card, customs declaration, and health declaration flows. The arrival declaration itself is free; visa fees are separate when a visa is needed. Field checks read 2026-10-15 from the e-arrival submission module: arrival date placeholder m/d/yyyy, today to 6 days ahead; surname optional, given name required, names and passport number letters, digits and spaces; flight number digits only, airline code picked separately. Read 2026-11-06 from the site scripts and assets/en.json: the home page links the Cambodia e-Arrival app on Google Play (cambodiaarrivalform.immigration.gov.kh) and the App Store (id1492455515); \"Update e-Arrivals\" / \"Find and update your submission form in a few easy steps.\"; the declaration says changes are reported \"by submitting a fresh declaration\"; \"Declaration can only be done within 7 days prior to date of arrival (including the day of arrival) to Cambodia\"."
         },
         {
           "key": "evisa",
@@ -27938,7 +27963,7 @@ export default {
           "url": "https://app.travellerdeclaration.govt.nz/",
           "agency": "New Zealand Customs Service",
           "lastVerified": "2026-11-02",
-          "notes": "Read 2026-10-15 from the app scripts and appSettings.json. includePassportExpiryDate is false, so the form does not ask for passport expiry. Names max 39, ^[a-zA-Z-\\s']+$, surname required and given names optional; passport number 3 to 9, ^[A-Z0-9]+$; date of birth up to today; air arrival today, tomorrow or the day after, or a typed date from yesterday (declaration can start 2 days before arrival); flight number /^(?=.{3,7}$)\\s*(?:3C|3U|D7|[A-Z]{2})[ -]?\\d{1,4}\\s*$/; email and phone patterns from the form."
+          "notes": "Read 2026-10-15 from the app scripts and appSettings.json. includePassportExpiryDate is false, so the form does not ask for passport expiry. Names max 39, ^[a-zA-Z-\\s']+$, surname required and given names optional; passport number 3 to 9, ^[A-Z0-9]+$; date of birth up to today; air arrival today, tomorrow or the day after, or a typed date from yesterday (declaration can start 2 days before arrival); flight number /^(?=.{3,7}$)\\s*(?:3C|3U|D7|[A-Z]{2})[ -]?\\d{1,4}\\s*$/; email and phone patterns from the form. Re-read 2026-11-06: the New Zealand address is an address search with a manual option that splits it into unit, street number, street, suburb, town and postcode (postcode ^\\d{4}$); cruise passengers can use the vessel as the address. The page https://www.travellerdeclaration.govt.nz/completing-your-declaration/ lists \"Contact details in New Zealand (if staying in multiple locations, use the first address you will be at in New Zealand)\"."
         }
       ],
       "lastVerified": "2026-11-02"
@@ -30168,7 +30193,7 @@ export default {
           "url": "https://s.nia.gov.cn/ArrivalCardFillingPC/",
           "agency": "National Immigration Administration (国家移民管理局)",
           "lastVerified": "2026-11-02",
-          "notes": "The online arrival card for foreign nationals, run by the NIA on the .gov.cn domain. Interface offers 13 languages including English. Free. The filing notice on the site lists 8 exemption categories, says transit travellers leaving the port (24-hour and 240-hour stays) may also file here, and the implementing notice confirms the card can be completed at the port. Selected controls and conditional branches were checked in the saved official bundle js/app.bc4b0fcf.js on 2026-09-05. This is not a completed end-to-end filing or a verification of every branch."
+          "notes": "The online arrival card for foreign nationals, run by the NIA on the .gov.cn domain. Interface offers 13 languages including English. Free. The filing notice on the site lists 8 exemption categories, says transit travellers leaving the port (24-hour and 240-hour stays) may also file here, and the implementing notice confirms the card can be completed at the port. Selected controls and conditional branches were checked in the saved official bundle js/app.bc4b0fcf.js on 2026-09-05. This is not a completed end-to-end filing or a verification of every branch. Re-read 2026-11-06 from the same bundle: the invitation question reads \"Do you have any inviting entities or inviters in China?\" (您是否有中方邀请单位或邀请人), with the types \"Inviting entity in China\" (中方邀请单位) and \"Inviter in China\" (中方邀请人) and the fields Entity Name, Inviter's Name, Entity Contact Information and Inviter's Contact Information; the receipt screen is headed National Immigration Administration / Entry Declaration Receipt for Foreigner (国家移民管理局 / 外国人入境填报回执), with buttons Download to Local and Send to Email and the message \"The entry declaration receipt has been sent to your email.\""
         },
         {
           "key": "consulate_notice",
@@ -36797,9 +36822,9 @@ export default {
         "mistake_why_en": "arrival-card reference entered instead of visa, e-Visa, or OCI record",
         "mistake_why_zh": "把入境卡参考编号当成签证、e-Visa 或 OCI 编号",
         "mistake_why_zh_hant": "把入境卡參考編號當成簽證、e-Visa 或 OCI 編號",
-        "copy_en": "Use the visa or e-Visa reference that permits this trip, or the OCI number if travelling as an OCI cardholder.",
-        "copy_zh": "签证旅客填写本次签证或 e-Visa 编号；OCI 持有人填写 OCI 编号。",
-        "copy_zh_hant": "簽證旅客填寫本次簽證或 e-Visa 編號；OCI 持有人填寫 OCI 編號。"
+        "copy_en": "The current web form, checked on 6 November 2026, has no box for a visa, e-Visa or OCI number. Indian missions still tell travellers to keep visa or OCI details ready, and a box may appear on another channel or a prefilled record. If one does, enter the visa or e-Visa reference for this trip, or the OCI number.",
+        "copy_zh": "2026 年 11 月 6 日核对时，现行网页表单没有签证、e-Visa 或 OCI 编号栏。印度驻外使领馆仍提醒旅客备好签证或 OCI 资料；其他渠道或预填记录可能出现这一栏，出现时填本次行程的签证或 e-Visa 编号，OCI 持有人填 OCI 编号。",
+        "copy_zh_hant": "2026 年 11 月 6 日核對時，現行網頁表單沒有簽證、e-Visa 或 OCI 編號欄。印度駐外使領館仍提醒旅客備好簽證或 OCI 資料；其他渠道或預填記錄可能出現這一欄，出現時填本次行程的簽證或 e-Visa 編號，OCI 持有人填 OCI 編號。"
       },
       {
         "n": "05",
