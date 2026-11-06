@@ -2,7 +2,7 @@
 title: "印度入境卡官网指南：e-Arrival Card 免费，e-Visa 另算"
 kicker: "印度 e-Arrival Card 免费。e-Visa 是另一项收费的旅行许可。"
 description: "印度入境指南：e-Arrival Card 官网、抵达前 72 小时规则、e-Visa 费用、15 个字段和常见加价区间。"
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 外国旅客入境印度前要填免费的 e-Arrival Card，OCI 持有人也包括在内。提交时间是抵达前 72 小时内。持印度护照的人不用填。
@@ -18,6 +18,14 @@ lastmod: 2026-11-02
 ### 2. 印度入境卡怎么填
 按身份、签证或 OCI、行程、印度地址、联系方式和声明，逐项核对 15 个字段。
 → [查看 e-Arrival Card 字段指南](/zh/india/how-to-fill/)
+
+## 谁要填，谁不用填
+
+- **要填**：外国人，以及 OCI、eOCI 卡持有人。
+- **不用填**：持印度护照的印度公民不在填报范围内。
+- **按国籍或证件**：中国大陆、香港、台湾护照都按外国人填同一张免费表。OCI 卡持有人也要填。尼泊尔、不丹公民的规定没找到点名的官方原文，这里不写。
+
+来源：{{< source-link site="india.portal_filing_advisory" text="印度签证网站入境卡通知" >}}。要不要办 e-Visa 是另一回事。
 
 ## 先记住这 6 点
 

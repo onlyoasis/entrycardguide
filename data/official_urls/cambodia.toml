@@ -93,3 +93,10 @@ headline_zh_hant = "中介什麼也沒提交。"
 body_en = "File directly at arrival.gov.kh. Use the official .gov.kh domain and keep the confirmation."
 body_zh = "直接到 arrival.gov.kh 提交。确认域名是 .gov.kh，并保存确认页。"
 body_zh_hant = "直接到 arrival.gov.kh 提交。確認域名是 .gov.kh，並保存確認頁。"
+
+[government_visitor_scope]
+url = "https://francophonie2026.gov.kh/en/InformationForVisitor"
+name = "Visitor information: passport, visa and e-Arrival"
+agency = "Ministry of Foreign Affairs and International Cooperation, Cambodia"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-files section. Government visitor page: all travellers must submit the free Cambodia e-Arrival within seven days before arrival or on arrival. Lists no exemptions."

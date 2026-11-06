@@ -3,7 +3,7 @@ title: "Curaçao"
 kicker: "The official Digital Immigration Card is mandatory for visitors and completely free."
 description: "Independent Curaçao DI Card guide: designated official portal, seven-day filing window, free fee and confirmation PDF."
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 All foreign visitors to Curaçao must complete a Digital Immigration Card for each person and each trip. Residents are exempt. The card is free and separate from visa status.
@@ -23,6 +23,14 @@ Who must file, the non-government host and the seven-day window.
 ### 2. Prepare the application
 Travel, passport, personal and contact information with no invented regexes.
 → [Open the field guide](/curacao/how-to-fill/)
+
+## Who has to file it
+
+- **Must file:** all foreign travellers clearing immigration in Curaçao. Transit passengers who check in again with a different carrier also file.
+- **Does not file:** residents of Curaçao.
+- **By nationality:** there is no US, Dutch or Venezuelan version. Every foreign passport uses the same free DI Card.
+
+Sources: {{< source-link site="curacao.dicard" text="Digital Immigration Card portal" >}} and {{< source-link site="curacao.faq" text="DI Card FAQ" >}}. Whether you also need a visa is a separate question.
 
 ## Fast facts
 

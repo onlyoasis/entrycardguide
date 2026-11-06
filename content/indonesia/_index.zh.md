@@ -2,7 +2,7 @@
 title: "印尼 All Indonesia 入境申报、e-CD 海关记录和巴厘岛入境指南"
 kicker: "关于印尼 All Indonesia 入境申报和 e-CD 海关记录你需要知道的一切，不必经手任何中介。"
 description: "印尼 All Indonesia 中文指南：官方网址 allindonesia.imigrasi.go.id、免费入境申报、巴厘岛/雅加达入境怎么填。"
-lastmod: 2026-10-12
+lastmod: 2026-11-06
 ---
 
 印尼当前面向旅客的入境申报入口是 **All Indonesia**：`allindonesia.imigrasi.go.id`。它包含免费的海关申报记录，也就是原 e-CD 流程对应的海关信息。
@@ -20,6 +20,14 @@ lastmod: 2026-10-12
 ### 2. 每个字段怎么填
 按印尼官方 e-CD 海关申报表顺序解释护照、航班、行李、现金和海关问题。
 → [字段逐项指南](/zh/indonesia/how-to-fill/)
+
+## 谁要填，谁不用填
+
+- **要填**：所有入境印尼的印尼公民和外国人。坐飞机、坐船入境的用 All Indonesia。
+- **陆路口岸**：走陆路入境的改用海关 e-CD，这是另一条申报渠道，不是免填。
+- **按国籍或证件**：不分国籍，外国人和印尼公民填同一份申报。中国大陆、香港、台湾护照都一样。
+
+来源：{{< source-link site="indonesia.immigration_scope" text="印尼移民总局" >}}、{{< source-link site="indonesia.customs_arrival_channels" text="印尼海关入境渠道" >}}。要不要签证是另一回事。
 
 ## 速记要点
 

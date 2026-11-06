@@ -3,7 +3,7 @@ title: "China"
 kicker: "Foreign nationals entering China can file the free Arrival Card online before departure or complete it at the port. Official URL, exemptions, timing and help with selected fields."
 description: "China Arrival Card guide: the official s.nia.gov.cn filing site, free of charge, the 8 exemption categories, when to file, and field-by-field help."
 date: 2026-09-05
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 China runs an online Arrival Card for foreign nationals, available since 20 November 2025. It is run by the National Immigration Administration, it is free, and the website is one of six official channels: the web form, the government service platform, the "NIA 12367" app, the WeChat and Alipay mini-programs, and scanning an arrival card QR code at the port.
@@ -21,6 +21,14 @@ Who files, who is exempt, the official channels, timing, and the receipt.
 ### 2. How to fill the form
 Passport image uploads, date fields, the address in China and conditional inviter details explained.
 → [Field-by-field guide](/china/how-to-fill/)
+
+## Who has to file it
+
+- **Must file:** foreign nationals entering China, online before arrival or on paper at the port.
+- **Does not file:** holders of a Foreign Permanent Resident ID Card; non-Chinese holders of a Mainland Travel Permit for Hong Kong and Macao Residents; group-visa or visa-free tour-group members; 24-hour direct transit without leaving the port area; cruise passengers returning on the same ship; fast-channel users; foreign crew of the arriving transport.
+- **By nationality:** it is an arrival card for foreigners. We found no official text that names Chinese-citizen residents of Hong Kong, Macao or Taiwan, so we do not cover them here.
+
+Source: {{< source-link site="china.consulate_notice" text="Chinese Consulate-General notice" >}}. Whether you also need a visa is a separate question.
 
 ## Fast facts
 

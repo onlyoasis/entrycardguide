@@ -3,7 +3,7 @@ title: "Laos"
 kicker: "The official eVisa is a paid tourist visa for ordinary passports and 9 designated ports. Check both before paying."
 description: "Independent Laos eVisa guide: the official laoevisa.gov.la application, passport-based fee, 9 entry ports, 30-day stay and the separate visa-on-arrival route."
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 The Lao eVisa is a **single-entry Tourist Visa**. It is not the same thing as a visa on arrival, and it only works at the 9 ports named by the Ministry of Foreign Affairs.
@@ -21,6 +21,14 @@ Check the passport list, the live fee, and whether the trip uses a designated eV
 ### 2. What the live application asks for
 Eleven high-risk items from the public form, FAQ and terms, including the 2 MB image limit and DD-MM-YYYY dates.
 → [Open the field guide](/laos/how-to-fill/)
+
+## Who applies, and who does not
+
+- **Who applies:** tourist-visa applicants from the countries on the official list, with an ordinary passport. Temporary, emergency and special passports cannot use it.
+- **Who does not:** we found no general exemption text on the eVisa site, so this page does not give one.
+- **By nationality:** there is no separate form by nationality. Whether your passport can use it, or needs it at all, is on the official {{< source-link site="laos.information" text="eVisa country list" >}}.
+
+Sources: {{< source-link site="laos.information" text="Lao eVisa information" >}}, {{< source-link site="laos.faq" text="eVisa FAQ" >}} and {{< source-link site="laos.terms" text="terms" >}}.
 
 ## Fast facts
 

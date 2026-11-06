@@ -2,7 +2,7 @@
 title: "日本 Visit Japan Web 官方入口、免費 QR Code 和防仿冒指南"
 kicker: "日本 Visit Japan Web 官方來源、免費 QR Code 流程，以及如何避開假登入頁。"
 description: "日本 Visit Japan Web 中文指南：日本數字廳官方 URL、免費入境 QR Code 流程、欄位填寫。"
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 Visit Japan Web 是日本官方的入境相關 QR Code 服務。穩定的政府服務說明頁在日本數字廳 `.go.jp` 域名下。
@@ -22,6 +22,14 @@ Visit Japan Web 是日本官方的入境相關 QR Code 服務。穩定的政府�
 ### 3. 落地之後
 檢查順序、海關和現金限額、鐵路進東京，以及 2026 年 11 月 1 日起的免稅退稅制。
 → [日本落地流程](/zh-hant/japan/landing/)
+
+## 誰要填，誰不用填
+
+- **海關申報**：日本海關要求所有入境旅客提交攜帶品和另寄物品申報。
+- **Visit Japan Web**：海關建議在 Visit Japan Web 上做電子申報，紙質海關申報單仍然可以用。
+- **按國籍或證件**：不分國籍。中國大陸、香港、臺灣旅客和其他人一樣做海關申報，網上或紙質都行。
+
+來源：{{< source-link site="japan.customs_declaration" text="日本海關申報說明" >}}。要不要簽證是另一回事。
 
 ## 速記要點
 

@@ -2,7 +2,7 @@
 title: "多米尼加 E-Ticket 官方網站、免費填寫和 QR Code 指南"
 kicker: "關於多米尼加 E-Ticket 你需要知道的一切，不必經手任何中介。"
 description: "多米尼加 E-Ticket 中文指南：官方 DGM 網址 eticket.migracion.gob.do、免費填寫、QR Code、每個欄位怎麼填。"
-lastmod: 2026-10-12
+lastmod: 2026-11-06
 ---
 
 多米尼加 E-Ticket 是一份免費的電子表單，所有入境和離境旅客都必須填寫。它在 2021 年取代了紙質入境卡和離境卡，並且只在 `eticket.migracion.gob.do` 受理。
@@ -20,6 +20,14 @@ lastmod: 2026-10-12
 ### 2. 每個欄位怎麼填
 逐欄位講解，常見錯誤和真實原因。
 → [欄位逐項指南](/zh-hant/dominican/how-to-fill/)
+
+## 誰要填，誰不用填
+
+- **要填**：乘商業航班入境或離境的所有外國旅客和多米尼加旅客。
+- **不用填**：乘私人飛機、非商業船隻、渡輪或郵輪抵達的旅客。兒童只是不填海關部分，整張 E-Ticket 還是要有。
+- **按國籍或證件**：不分國籍。中國大陸、香港、臺灣護照和多米尼加公民一樣，乘商業航班入境、離境都填同一張免費表。
+
+來源：{{< source-link site="dominican.filing_scope" text="多米尼加旅遊部入境規定" >}}、{{< source-link site="dominican.filing_exemptions" text="E-Ticket 交通方式例外" >}}、{{< source-link site="dominican.embassy_faq_usa" text="多米尼加駐美使館問答" >}}。要不要簽證是另一回事。
 
 ## 速記要點
 

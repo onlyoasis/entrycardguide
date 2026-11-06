@@ -168,3 +168,10 @@ name = "Official UK ETA support webchat"
 agency = "UK Visas and Immigration"
 last_verified = "2026-11-02"
 notes = "Destination confirmed from the links in GOV.UK ETA overview and app guidance. No chat was started; availability and support response were not tested."
+
+[eta_exemptions]
+url = "https://www.gov.uk/eta/when-not-need-eta"
+name = "When you do not need an ETA"
+agency = "Home Office"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-applies section. Exemptions include British and Irish citizens, UK visa holders, people with permission to live, work or study in the UK, airside transit, and BN(O) and British overseas territories citizen passports."

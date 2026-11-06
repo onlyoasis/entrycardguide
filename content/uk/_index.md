@@ -2,7 +2,7 @@
 title: "UK ETA Official Website, £20 Fee, and Middleman Check"
 kicker: "The UK ETA official website is gov.uk/eta. It is a paid travel authorization, not a visa."
 description: "UK ETA guide: official GOV.UK application, £20 fee, eligibility, application fields, validity, and commercial middleman warnings."
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 The UK Electronic Travel Authorisation is for eligible visa-free visitors. It is not a visa. Apply through GOV.UK or the official UK ETA app published by the Home Office.
@@ -18,6 +18,14 @@ No. The official fee is **£20 per person**. See the price history, eligibility 
 ### 2. Every field, in order
 Passport, name, birth date, email, home address, job, other nationalities, conviction history, and a parent or guardian contact when required.
 → [Field-by-field guide](/uk/how-to-fill/)
+
+## Who applies, and who does not
+
+- **Who applies:** visitors from Europe, the USA, Australia, Canada and certain other countries usually need an ETA rather than a visa. Each person needs one, babies and children included.
+- **Who does not:** British and Irish citizens; UK visa holders; people with permission to live, work or study in the UK; airside transit passengers who do not pass border control; British National (Overseas) and British overseas territories citizen passport holders.
+- **By nationality:** US citizens are in the ETA group. Hong Kong travellers on a BN(O) passport do not apply; the HKSAR passport follows the nationality check on GOV.UK.
+
+Sources: {{< source-link site="uk.eta" text="GOV.UK ETA page" >}}, {{< source-link site="uk.eta_exemptions" text="when you do not need an ETA" >}} and the {{< source-link site="uk.eligibility" text="nationality check" >}}.
 
 ## The fast facts
 

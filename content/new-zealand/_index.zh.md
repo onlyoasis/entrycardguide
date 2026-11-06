@@ -2,7 +2,7 @@
 title: "新西兰入境卡官网指南：NZTD 免费，NZeTA 另算"
 kicker: "所有入境新西兰的人都要填免费的 NZTD。NZeTA 是另一项旅行授权。"
 description: "新西兰入境卡中文指南：NZTD 官方网站、免费规则、NZeTA 多少钱和适用人群、18 个字段及常见加价区间。"
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 每个入境新西兰的人都要填写 New Zealand Traveller Declaration，包括新西兰公民、婴儿和儿童。NZTD 不收填写费或提交费。
@@ -18,6 +18,14 @@ lastmod: 2026-11-02
 ### 2. 18 个字段怎么填
 按护照、行程、联系方式、入境身份、限制品和生物安全申报逐项核对。
 → [查看 NZTD 字段指南](/zh/new-zealand/how-to-fill/)
+
+## 谁要填，谁不用填
+
+- **要填**：所有进入新西兰的人，新西兰护照持有人也要填。每人一份，婴儿和儿童也要单独填。
+- **不用填**：在转机区停留 24 小时以内、不入境新西兰的转机旅客。
+- **按国籍或证件**：不分国籍。中国大陆、香港、台湾护照和新西兰、澳大利亚护照填同一张免费 NZTD。NZeTA 另算。
+
+来源：{{< source-link site="new-zealand.nztd" text="NZTD 官网" >}}、{{< source-link site="new-zealand.completion_guide" text="填写说明" >}}、{{< source-link site="new-zealand.air_transit" text="新西兰海关转机规定" >}}。要不要签证或 NZeTA 是另一回事。
 
 ## 先记住这 6 点
 

@@ -3,7 +3,7 @@ title: "Uzbekistan"
 kicker: "Check visa-free status first. Many travellers need no form; the paid eVisa is only for eligible passports that still need a visa."
 description: "Independent Uzbekistan entry guide: current visa-free routes, separate eVisa eligibility, USD 20 / 35 / 50 fees and official application fields."
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 Do not begin with the paid form. Uzbekistan publishes several visa-free regimes with different durations and conditions. A traveller who meets the current visa-free rule needs no eVisa.
@@ -21,6 +21,14 @@ The current government page is the source for both lists. Ticket, passport and d
 ### 2. Prepare the application
 Thirteen checks cover the route, passport, stay, images, activation and emailed PDF.
 → [Open the field guide](/uzbekistan/how-to-fill/)
+
+## Who applies, and who does not
+
+- **Who applies:** citizens of the countries that can get an electronic entry visa.
+- **Who does not:** citizens of countries with a visa-free regime, when the trip meets its conditions.
+- **By nationality:** there is no separate form by nationality. Whether your passport can use it, or needs it at all, is on the official {{< source-link site="uzbekistan.visa_policy" text="visa policy page" >}}.
+
+Source: {{< source-link site="uzbekistan.visa_policy" text="MFA visa policy" >}}.
 
 ## Fast facts
 

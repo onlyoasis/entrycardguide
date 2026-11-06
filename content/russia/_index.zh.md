@@ -3,7 +3,7 @@ title: "俄罗斯"
 kicker: "统一电子签证只对 64 个国籍开放，单次入境，且要在个人账户里付费。先查名单再动手。"
 description: "俄罗斯电子签中文指南：64 国资格名单、官方 evisa.kdmid.ru 申请入口、30 天停留期规则，以及指定的入境出境口岸。"
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 俄罗斯统一电子签证由**外交部领事司**签发，仅限单次入境。它不对所有护照开放：俄方公布了 64 个可申请国家，名单外的旅客必须在俄罗斯驻外使领馆办理普通签证。
@@ -21,6 +21,14 @@ lastmod: 2026-11-02
 ### 2. 准备申请
 从俄方 Instruction 页面和 FAQ 整理的 13 个检查项，含 35x45 照片规格和 DD.MM.YYYY 日期格式。
 → [打开字段指南](/zh/russia/how-to-fill/)
+
+## 谁要申请，谁不用申请
+
+- **要申请**：外交部电子签名单上国家的公民。随父母出行的未成年子女要各自办。
+- **不用申请**：护照上已有有效俄罗斯签证的人。
+- **按国籍或证件**：没有按国籍分的另一张表。你的护照能不能用、要不要申请，看官方{{< source-link site="russia.nationalities" text="电子签国家名单" >}}。
+
+来源：{{< source-link site="russia.nationalities" text="电子签国家" >}}、{{< source-link site="russia.instruction" text="申请须知" >}}、{{< source-link site="russia.faq" text="常见问题" >}}。
 
 ## 速记要点
 

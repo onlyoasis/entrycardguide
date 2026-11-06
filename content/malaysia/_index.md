@@ -2,7 +2,7 @@
 title: "Malaysia"
 kicker: "Everything you need to know about the Malaysia Digital Arrival Card (MDAC), without paying a middleman."
 description: "Free, independent guides to Malaysia's MDAC. Official URL, every field explained."
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 The Malaysia Digital Arrival Card (MDAC) is a free digital form required for most foreign visitors since January 2024. It is accepted only at `imigresen-online.imi.gov.my/mdac/main`.
@@ -18,6 +18,14 @@ Who must file, who is exempt, and how to tell the official Immigration Departmen
 ### 2. How to fill every field
 Field-by-field walkthrough with common errors and what they mean.
 → [Field-by-field guide](/malaysia/how-to-fill/)
+
+## Who has to file it
+
+- **Must file:** foreign visitors entering Malaysia, unless they are on the exemption list.
+- **Does not file:** Singapore citizens; diplomatic or official passport holders; Malaysian permanent residents and long-term pass holders; holders of Brunei's GCI or the Brunei Malaysia Frequent Traveller Facility; Thailand Border Pass holders; Indonesia PLB holders. Malaysian citizens are outside the foreign-visitor rule.
+- **By nationality:** Indian, US, Australian and Hong Kong visitors file the same MDAC. Singaporeans are exempt, but Singapore's foreign ministry asks those enrolling fingerprints for Malaysia's e-gates to submit an MDAC for that trip.
+
+Sources: {{< source-link site="malaysia.exemptions" text="MDAC exemption list" >}} and {{< source-link site="malaysia.singapore_mdac_advice" text="Singapore MFA advice" >}}. Whether you also need a visa is a separate question.
 
 ## The fast facts
 

@@ -123,3 +123,10 @@ domain = "indiasevisa.org"
 path = "/visa-fees"
 first_observed = "2026-07-14"
 evidence = "Observed 2026-07-14: the page listed totals including service fees of USD $179 or $199 for a 30-day tourist e-Visa and USD $199 for a 1-year tourist e-Visa, while acknowledging official government fees of USD $10-$25 and USD $40."
+
+[portal_filing_advisory]
+url = "https://indianvisaonline.gov.in/"
+name = "Indian Visa Online: e-Arrival Card notice"
+agency = "Bureau of Immigration, Ministry of Home Affairs"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-files section. Home page notice: foreign nationals and OCI/eOCI cardholders must complete and submit the e-Arrival Card."

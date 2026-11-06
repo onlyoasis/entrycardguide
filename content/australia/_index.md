@@ -2,7 +2,7 @@
 title: "Australian ETA App Official Guide: ETA 601 and Free eVisitor 651"
 kicker: "Australia has no official web form for ETA 601. Use the AustralianETA App, or the free eVisitor 651 route if your European passport is eligible."
 description: "Australia entry guide: official AustralianETA App, AUD $20 service charge, free eVisitor 651, App steps, validity, and documented middleman prices."
-lastmod: 2026-10-12
+lastmod: 2026-11-06
 ---
 
 There is **no official web application form for Australia ETA 601**. The only official ETA 601 application channel is the AustralianETA App from the Department of Home Affairs.
@@ -22,6 +22,14 @@ The ETA has no Visa Application Charge, but submitting it in the official App co
 Download the official App, read the passport chip with NFC, take a live face photo, answer declaration questions, pay AUD $20, and wait for the result.
 
 → [Follow the six App steps](/australia/how-to-fill/)
+
+## Who applies, and who does not
+
+- **Who applies:** holders of an ETA-eligible passport, through the Australian ETA App. Each family member submits a separate application, including people listed on your passport.
+- **Who does not:** Australian citizens. An Australian citizen who also holds an ETA-eligible passport cannot apply for an ETA either.
+- **By nationality:** US, UK (British Citizen and BN(O)) and Hong Kong SAR passports are on the ETA list, as are Taiwan passports other than official or diplomatic ones. Passports not on the list cannot use the ETA.
+
+Source: {{< source-link site="australia.eta601" text="Home Affairs ETA 601 page" >}}.
 
 ## ETA 601 or eVisitor 651?
 

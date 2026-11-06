@@ -3,7 +3,7 @@ title: "坦桑尼亚电子签官网、费用与签证类别指南"
 kicker: "费用和申请路径取决于护照与目的。进入付款流程前先核对这两项。"
 description: "坦桑尼亚电子签中文指南：官方 .go.tz 入口、50 美元普通签、美国护照 100 美元旅游路径、30 美元转机签与材料。"
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 坦桑尼亚本土和桑给巴尔共用一个政府在线签证门户，但不同旅客并不是购买同一种签证。
@@ -21,6 +21,14 @@ lastmod: 2026-11-02
 ### 2. 准备首屏与申请材料
 根据实时首屏和现行政府指南整理的 10 项检查。
 → [打开申请准备指南](/zh/tanzania/how-to-fill/)
+
+## 谁要申请，谁不用申请
+
+- **要申请**：去坦桑尼亚大陆或桑给巴尔、需要签证的旅客。每本护照单独申请。
+- **不用申请**：官方免签名单上国家的公民。
+- **按国籍或证件**：没有按国籍分的另一张表。你的护照能不能用、要不要申请，看官方{{< source-link site="tanzania.visa_free_countries" text="免签国家名单" >}}。
+
+来源：{{< source-link site="tanzania.evisa" text="在线签证官网" >}}、{{< source-link site="tanzania.guidelines" text="申请指南" >}}、{{< source-link site="tanzania.visa_free_countries" text="免签名单" >}}。
 
 ## 速记要点
 

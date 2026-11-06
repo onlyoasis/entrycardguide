@@ -4,6 +4,9 @@ description: "What changed on entrycardguide.com: government policy updates, new
 date: 2026-04-27
 lastmod: 2026-09-14
 url: "/changelog/"
+noindex: true
+sitemap:
+  disable: true
 ---
 
 A running log of substantive updates. We publish a new entry when:

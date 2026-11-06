@@ -3,7 +3,7 @@ title: "尼日利亞"
 kicker: "查找 NIS 免費入境與出境卡官方入口，選擇本次行程方向，下載並列印卡片。"
 description: "尼日利亞 Landing & Exit Card 指南：NIS 官方入口、免費申報、外國旅客範圍、過境、辦理時間與列印憑證。"
 date: 2026-09-05
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 尼日利亞移民局 Nigeria Immigration Service（NIS）營運免費的 Landing & Exit Card 門戶，自2025年5月1日起啟用。選擇入境或出境業務，入境卡不自動覆蓋離境，也不替代所需簽證。
@@ -14,6 +14,14 @@ lastmod: 2026-11-02
 
 - [入境與出境卡總覽](/zh-hant/nigeria/landing-exit-card/)：適用範圍、免費辦理、時間、更正和憑證。
 - [資料準備指南](/zh-hant/nigeria/how-to-fill/)：八項選列資料、登入入口與找卡步驟。
+
+## 誰要填，誰不用填
+
+- **要填**：尼日利亞移民局說明，入境和離境的所有旅客都需要入境卡和離境卡。
+- **不用填**：持尼日利亞護照出行的人。這個網站也不受理過境。
+- **按國籍或證件**：中國大陸、香港、臺灣和其他外國護照都要填。雙重國籍的人只有用尼日利亞護照出行時才免填。
+
+來源：{{< source-link site="nigeria.nis_overview" text="尼日利亞移民局介紹" >}}、{{< source-link site="nigeria.faq" text="入境離境卡常見問題" >}}。要不要簽證是另一回事。
 
 ## 出發前核對
 

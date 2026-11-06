@@ -95,3 +95,10 @@ verification_title_zh_hant = "以護照為索引"
 verification_body_en = "Because the record is retrieved by passport scan, the passport used in the submission is the one to carry."
 verification_body_zh = "记录通过扫描护照调出，所以要携带提交时使用的那本护照。"
 verification_body_zh_hant = "記錄通過掃描護照調出，所以要攜帶提交時使用的那本護照。"
+
+[egov_filing_scope]
+url = "https://www.gov.tw/News_Content_2_371274"
+name = "Online arrival card: who must file"
+agency = "National Immigration Agency via Government Services Portal"
+last_verified = "2026-11-06"
+notes = "Read 2026-11-06 for the hub page's who-files section. Filing groups: foreigners without a Taiwan residence certificate, diplomatic ID or resident visa; nationals without household registration lacking a residence certificate. Hong Kong and Macao residents on single-entry permits, online permits, landing visas or residence certificates do not file. Nationals with household registration never file."

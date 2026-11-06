@@ -3,7 +3,7 @@ title: "South Africa"
 kicker: "The free SARS Traveller Declaration covers customs on entry and exit. Find the official portal, the 24-hour filing window and the details to prepare."
 description: "South Africa customs declaration guide: official SARS portal, free filing, Full or Nil, transit exemption, children and when to submit."
 date: 2026-09-05
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 South Africa's SARS Traveller Declaration is a customs declaration for goods, currency and related items. It does not replace a visa or the Department of Home Affairs ETA. The current electronic declaration rules took effect on 1 July 2026.
@@ -14,6 +14,14 @@ South Africa's SARS Traveller Declaration is a customs declaration for goods, cu
 
 - [Traveller Declaration overview](/south-africa/traveller-declaration/): who files, the transit exemption, fees and the filing window.
 - [Details to prepare](/south-africa/how-to-fill/): 12 selected preparation items and what to do with the confirmation.
+
+## Who has to file it
+
+- **Must file:** travellers entering or leaving South Africa by air, land or sea, including South African citizens, residents, foreign travellers and crew. Children and infants must be covered by a declaration, and you declare even with nothing to declare.
+- **Does not file:** air or sea transit travellers who stay in the designated transit area or on board their aircraft or vessel.
+- **By nationality:** there is no separate form by nationality. Citizens and foreigners use the same SARS declaration.
+
+Sources: {{< source-link site="south-africa.service" text="SARS service page" >}}, {{< source-link site="south-africa.faq" text="SARS FAQ" >}}, {{< source-link site="south-africa.rules" text="customs rules" >}} and the {{< source-link site="south-africa.processing_policy" text="processing policy" >}}. Whether you also need a visa is a separate question.
 
 ## Before you travel
 

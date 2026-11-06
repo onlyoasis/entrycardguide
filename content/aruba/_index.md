@@ -3,7 +3,7 @@ title: "Aruba"
 kicker: "Every passenger needs the ED Card. Most air arrivals also pay a separate USD 20 sustainability fee in the same flow."
 description: "Independent Aruba ED Card guide: official .aw portal, seven-day window, air and sea arrivals, and the separate sustainability fee."
 date: 2026-08-30
-lastmod: 2026-11-02
+lastmod: 2026-11-06
 ---
 
 The Aruba ED Card is a mandatory online admission step for every passenger, including infants and children. It applies at air and seaports and opens within seven days before travel.
@@ -23,6 +23,14 @@ Learn who files, when the seven-day window opens and why the USD 20 item appears
 ### 2. Prepare the form
 Check the live passport, name, flight and address controls before submission.
 → [Open the field guide](/aruba/how-to-fill/)
+
+## Who has to file it
+
+- **Must file:** every passenger travelling to Aruba, infants and children included.
+- **Cruise passengers:** only passengers on vessels that must go through Aruba Immigration complete the ED Card.
+- **By nationality:** there is no US, Dutch or Venezuelan version. Every passenger uses the same ED Card. The resident and child exemptions apply to the sustainability fee, not to the card.
+
+Sources: {{< source-link site="aruba.official_guide" text="ED Card guide" >}} and the {{< source-link site="aruba.sustainability_fee" text="sustainability fee page" >}}. Whether you also need a visa is a separate question.
 
 ## Fast facts
 
