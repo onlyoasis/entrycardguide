@@ -301,7 +301,7 @@ title_zh_hant = "美國 ESTA 指南：誰需要辦、費用和中介核查"
 # impressions in 11 weeks).
 
 ["thailand/tdac"]
-title = "Thailand Arrival Card (TDAC) Official Website: Free, Scam Check (2026)"
+title = "Thailand Arrival Card (TDAC) Official Website: tdac.immigration.go.th, Free"
 title_zh = "泰国入境卡官网：TDAC 免费填写入口 tdac.immigration.go.th"
 title_zh_hant = "泰國入境卡官網：TDAC 免費填寫入口 tdac.immigration.go.th"
 description = "The only official Thailand Digital Arrival Card (TDAC) website is tdac.immigration.go.th. Filing is free and opens 3 days before arrival; any site that charges you is a middleman."
@@ -322,7 +322,7 @@ h1_zh = "韩国入境卡（e-Arrival Card）官网 2026：免费填写和字段�
 h1_zh_hant = "韓國入境卡（e-Arrival Card）官網 2026：免費填寫和欄位說明"
 
 ["malaysia/mdac"]
-title = "Malaysia Arrival Card (MDAC) Official Website: Free, Who Needs It"
+title = "Malaysia Arrival Card (MDAC) Official Website: imigresen-online.imi.gov.my, Free"
 title_zh = "马来西亚入境卡官网：MDAC 免费填写入口 imigresen-online.imi.gov.my"
 title_zh_hant = "馬來西亞入境卡官網：MDAC 免費填寫入口 imigresen-online.imi.gov.my"
 description = "The official Malaysia Digital Arrival Card (MDAC) is free on imigresen-online.imi.gov.my. Check the exemptions and the three-day window, then fill in your travel details."
@@ -334,6 +334,8 @@ h1_zh_hant = "馬來西亞入境卡（MDAC）官網：免費、豁免條件與�
 
 ["singapore/sgac"]
 title = "SG Arrival Card (SGAC) Official Website: Free on eservices.ica.gov.sg"
+title_zh = "新加坡入境卡官网：SGAC 免费填写入口 eservices.ica.gov.sg"
+title_zh_hant = "新加坡入境卡官網：SGAC 免費填寫入口 eservices.ica.gov.sg"
 description = "The official Singapore Arrival Card (SG Arrival Card) is ICA's free service at eservices.ica.gov.sg. Submit within the three days that include your arrival day; residents entering by land are exempt."
 
 ["indonesia/e-cd"]
