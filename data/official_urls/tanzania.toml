@@ -1,32 +1,32 @@
 # Tanzania — official government URLs
-# Last verified: 2026-11-02
+# Last verified: 2026-11-09
 
 [evisa]
 url = "https://visa.immigration.go.tz/"
 name = "Tanzania Electronic Visa Application System"
 agency = "Tanzania Immigration Services Department"
-last_verified = "2026-11-02"
+last_verified = "2026-11-09"
 notes = "Read 2026-08-30. The .go.tz portal accepts applications for Tanzania Mainland and Zanzibar, takes online payment, emails decisions and provides status tracking."
 
 [guidelines]
 url = "https://visa.immigration.go.tz/guidelines"
 name = "Tanzania Visa Guidelines"
 agency = "Tanzania Immigration Services Department"
-last_verified = "2026-11-02"
+last_verified = "2026-11-09"
 notes = "Read 2026-08-30. The page publishes exemption and referral routes, a normal processing period within ten days, passport and photo requirements, visa types, validity and fees."
 
 [start]
 url = "https://visa.immigration.go.tz/start"
 name = "Start a Tanzania Online Visa Application"
 agency = "Tanzania Immigration Services Department"
-last_verified = "2026-11-02"
+last_verified = "2026-11-09"
 notes = "Read 2026-08-30. The public first step asks for email, passport number, passport issue country, security question and security answer. Its HTML publishes a 100-character maximum for email and security answer, but no passport-number pattern."
 
 [fees]
 url = "https://www.immigration.go.tz/index.php/fees-for-visa"
 name = "Fees for Visa"
 agency = "Tanzania Immigration Services Department"
-last_verified = "2026-11-02"
+last_verified = "2026-11-09"
 notes = "Read 2026-08-30. The fee table lists USD 50 for an Ordinary Visa, USD 100 for Multiple Entry and USD 30 for Transit. Eligibility and visa category must be checked before payment."
 
 [meta]
@@ -64,5 +64,5 @@ fields_intro_zh_hant = "公開首屏給出了必填標籤、原始報錯文案�
 url = "https://visa.immigration.go.tz/visafreecountry"
 name = "Countries whose nationals do not require a visa"
 agency = "Tanzania Immigration Services Department"
-last_verified = "2026-11-06"
+last_verified = "2026-11-09"
 notes = "Read 2026-11-06 for the hub page's who-applies section. Official list of countries whose nationals do not require a visa."

@@ -1,12 +1,12 @@
 # Japan — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-11-02
+# Last verified: 2026-11-09
 
 [vjw]
 url = "https://services.digital.go.jp/en/visit-japan-web/"
 name = "Visit Japan Web"
 agency = "Digital Agency of Japan"
-last_verified = "2026-11-02"
+last_verified = "2026-11-09"
 archive_url = "https://web.archive.org/web/2026/https://services.digital.go.jp/en/visit-japan-web/"
 notes = "Reserved under .go.jp. Visit Japan Web is the official service information page for Japan arrival, customs, and tax-free QR workflows. The service is free."
 
@@ -14,20 +14,20 @@ notes = "Reserved under .go.jp. Visit Japan Web is the official service informat
 url = "https://www.moj.go.jp/isa/index.html"
 name = "Immigration Services Agency of Japan"
 agency = "Immigration Services Agency of Japan"
-last_verified = "2026-11-02"
+last_verified = "2026-11-09"
 
 [vjw_manual]
 url = "https://www.vjw.digital.go.jp/manual/main/visitjapanweb_manual_en.html"
 name = "Visit Japan Web user manual"
 agency = "Digital Agency of Japan"
-last_verified = "2026-11-06"
+last_verified = "2026-11-09"
 notes = "Read 2026-11-06. 3-3: register your own details first; \"You can register up to 10 family members traveling with you.\"; family members who undergo immigration procedures at the same time; \"Entry and return procedures will be processed one person at a time.\" Plans: \"You can register plans up to December 31 the following year.\", up to 100 plans. 9-1: the Tax-Free QR Code can be shown instead of the passport at shops that accept it; \"If you were unable to use Visit Japan Web when entering Japan, it can be used after you enter.\" No advance-day window is stated."
 
 [tax_free_guide]
 url = "https://services.digital.go.jp/en/visit-japan-web/guide/"
 name = "Visit Japan Web: how to use (tax-free)"
 agency = "Digital Agency of Japan"
-last_verified = "2026-11-06"
+last_verified = "2026-11-09"
 notes = "Read 2026-11-06 via the page data. \"Eligible users are foreign nationals whose status of residence is Temporary Visitor, Diplomat, or Official.\" A Tax-Free 2D Code needs the passport facial image and landing permission seal details; show it at shops that support it; \"Screenshots cannot be used.\" The app text adds that it is not a replacement for the passport, residence card or proof of entry/exit."
 
 [meta]
@@ -107,12 +107,12 @@ body_zh_hant = "使用日本數字廳官方頁面，或在機場填紙質表。�
 url = "https://www.vjw.digital.go.jp/main/"
 name = "Visit Japan Web app"
 agency = "Digital Agency of Japan"
-last_verified = "2026-11-02"
+last_verified = "2026-11-09"
 notes = "Read 2026-10-15 from the app script. Passport number required, max 9, /^[A-Z0-9]*$/; family and given names required, max 39, /^[A-Z0-9 \\-.,]*$/; date of birth year, month and day fields; arrival date YYYY/MM/DD, from today to 31 December of next year; flight number max 20, /^[A-Z0-9]*$/; login email max 128."
 
 [customs_declaration]
 url = "https://www.customs.go.jp/english/passenger/declaration/declaration_app.html"
 name = "Declaration of Accompanied Articles and Unaccompanied Articles"
 agency = "Japan Customs, Ministry of Finance"
-last_verified = "2026-11-06"
+last_verified = "2026-11-09"
 notes = "Read 2026-11-06 for the hub page's who-files section. Japan Customs requires all passengers entering Japan to submit the declaration, recommends submitting it through Visit Japan Web, and says the paper form can still be used."

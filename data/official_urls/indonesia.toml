@@ -27,7 +27,7 @@ last_verified = "2026-06-17"
 url = "https://ecd.beacukai.go.id"
 name = "Indonesia e-CD legacy customs portal"
 agency = "Direktorat Jenderal Bea dan Cukai"
-last_verified = "2026-11-02"
+last_verified = "2026-11-09"
 notes = "Legacy standalone e-CD portal still resolves. The current traveler-facing entry point is All Indonesia."
 
 # Country-page metadata (consumed by country-form layout).
@@ -139,12 +139,12 @@ evidence = "Commercial visa middleman charging fees on top of Indonesia's free e
 url = "https://www.beacukai.go.id/selamat-datang"
 name = "Customs arrival channels"
 agency = "Directorate General of Customs and Excise"
-last_verified = "2026-11-06"
+last_verified = "2026-11-09"
 notes = "Read 2026-11-06 for the hub page's who-files section. Air and sea arrivals use All Indonesia; land arrivals and international departures use the customs e-CD."
 
 [immigration_scope]
 url = "https://karawang.imigrasi.go.id/imigrasi-karawang-sosialisasikan-aplikasi-all-indonesia-untuk-kemudahan-masuk-ke-indonesia/"
 name = "All Indonesia: who must fill it"
 agency = "Karawang Immigration Office, Directorate General of Immigration"
-last_verified = "2026-11-06"
+last_verified = "2026-11-09"
 notes = "Read 2026-11-06 for the hub page's who-files section. Immigration office article: filling in the All Indonesia form is mandatory for all Indonesian citizens (WNI) and foreign nationals (WNA) entering Indonesia."

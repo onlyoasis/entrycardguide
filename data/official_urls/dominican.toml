@@ -20,7 +20,7 @@ last_verified = "2026-04-24"
 url = "https://usa.mirex.gob.do/preguntas-frecuentes/"
 name = "Dominican Embassy in the USA — travel FAQ"
 agency = "Ministerio de Relaciones Exteriores (MIREX)"
-last_verified = "2026-11-02"
+last_verified = "2026-11-09"
 notes = "Source for the USD 20 departure tax being included in the airline ticket, and for the paid extension when staying past 30 days. The E-Ticket itself stays free."
 
 # Country-page metadata (consumed by country-form layout).
@@ -147,12 +147,12 @@ last_verified = "2026-10-12"
 url = "https://es.godominicanrepublic.com/planea-tu-viaje/requisitos-de-viaje"
 name = "E-Ticket transport exceptions (Spanish)"
 agency = "Ministry of Tourism"
-last_verified = "2026-11-06"
+last_verified = "2026-11-09"
 notes = "Read 2026-11-06 for the hub page's who-files section. Passengers arriving on private flights, non-commercial vessels, ferries or cruise ships do not need to complete the E-Ticket."
 
 [filing_scope]
 url = "https://www.godominicanrepublic.com/travel/entry-requirements"
 name = "Entry requirements and E-Ticket scope"
 agency = "Ministry of Tourism"
-last_verified = "2026-11-06"
+last_verified = "2026-11-09"
 notes = "Read 2026-11-06 for the hub page's who-files section. All foreign and Dominican passengers entering or departing on commercial flights must complete the free electronic entry and exit form."

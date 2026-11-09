@@ -6,7 +6,7 @@
 url = "https://arrival.gov.kh"
 name = "Cambodia e-Arrival"
 agency = "Cambodia General Department of Immigration"
-last_verified = "2026-11-02"
+last_verified = "2026-11-09"
 archive_url = "https://web.archive.org/web/2026/https://arrival.gov.kh"
 notes = "Reserved under .gov.kh. The e-Arrival system combines arrival card, customs declaration, and health declaration flows. The arrival declaration itself is free; visa fees are separate when a visa is needed. Field checks read 2026-10-15 from the e-arrival submission module: arrival date placeholder m/d/yyyy, today to 6 days ahead; surname optional, given name required, names and passport number letters, digits and spaces; flight number digits only, airline code picked separately. Read 2026-11-06 from the site scripts and assets/en.json: the home page links the Cambodia e-Arrival app on Google Play (cambodiaarrivalform.immigration.gov.kh) and the App Store (id1492455515); \"Update e-Arrivals\" / \"Find and update your submission form in a few easy steps.\"; the declaration says changes are reported \"by submitting a fresh declaration\"; \"Declaration can only be done within 7 days prior to date of arrival (including the day of arrival) to Cambodia\"."
 
@@ -98,5 +98,5 @@ body_zh_hant = "直接到 arrival.gov.kh 提交。確認域名是 .gov.kh，並�
 url = "https://francophonie2026.gov.kh/en/InformationForVisitor"
 name = "Visitor information: passport, visa and e-Arrival"
 agency = "Ministry of Foreign Affairs and International Cooperation, Cambodia"
-last_verified = "2026-11-06"
+last_verified = "2026-11-09"
 notes = "Read 2026-11-06 for the hub page's who-files section. Government visitor page: all travellers must submit the free Cambodia e-Arrival within seven days before arrival or on arrival. Lists no exemptions."

@@ -40,28 +40,28 @@ notes = "Read 2026-08-30. The FAQ identifies NPRA, explains guarantor cases, tel
 url = "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1871"
 name = "Two-week single-entry Visit eVisa"
 agency = "Ministry of Interior - Nationality, Passports and Residence Affairs"
-last_verified = "2026-11-02"
+last_verified = "2026-11-09"
 notes = "Read 2026-08-30. The government service directory describes a two-week single-entry product for nationals of 212 countries, a BD 9 visa fee plus BD 4 application fee, four supporting-document categories and a 3-to-5-working-day process."
 
 [three_month]
 url = "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1870"
 name = "Three-month multiple-entry Visit eVisa"
 agency = "Ministry of Interior - Nationality, Passports and Residence Affairs"
-last_verified = "2026-11-02"
+last_verified = "2026-11-09"
 notes = "Read 2026-08-30. The government service directory describes a three-month multiple-entry product for nationals of 212 countries, BD 29 total, the same four supporting-document categories and a 3-to-5-working-day process."
 
 [one_year]
 url = "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1875"
 name = "One-year multiple-entry Visitor eVisa"
 agency = "Ministry of Interior - Nationality, Passports and Residence Affairs"
-last_verified = "2026-11-02"
+last_verified = "2026-11-09"
 notes = "Read 2026-08-30. The government service directory describes a one-year multiple-entry product for nationals of 212 countries, BD 44, the same four supporting-document categories and a 3-to-5-working-day process."
 
 [five_year]
 url = "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1874"
 name = "Five-year multiple-entry Visit eVisa"
 agency = "Ministry of Interior - Nationality, Passports and Residence Affairs"
-last_verified = "2026-11-02"
+last_verified = "2026-11-09"
 notes = "Read 2026-08-30. The government service directory describes a five-year multiple-entry product for nationals of 68 countries, BD 64, the same four supporting-document categories and a 3-to-5-working-day process."
 
 [meta]
@@ -120,5 +120,5 @@ verification_body_zh_hant = "NPRA 要求入境使用線上申請時的同一本�
 url = "https://www.bahrain.bh/wps/portal/en/BNP/HomeNationalPortal/ContentDetailsPage/%21ut/p/z0/nVBdT8IwFP0r92WPpmWDgY8iidMEmZoo9IXcbWW7UtrR1kX_vRMIMS4uxsdzcnK-mGBLJjQ2VKIno1G1eCXi9eB2xJPJNefpbBjyh-fLx3g6H_D5TcTumPguSO7TGY8XyWQcjqfR8Cn8cqDX_V5cMZEb7eW7Z8tM12u0ATe-ktYFXOGHefMBt1KhlwV4U1PuzvhnSLfFbyFSB7y1tqBoI4E0ZFhZpJbVp4VAhdSeNpQfCEBdQEMO3R8k_eMXaX8vzNrN0D4AW9JlYXYBP7UjULIkpw5xrntLJVH5qj-dR_955eico5Xd1NpS0xJw1ICTuTeW1VuRjVSze7kQq0_gAUoI/"
 name = "National identification and visas"
 agency = "Bahrain National Portal"
-last_verified = "2026-11-06"
+last_verified = "2026-11-09"
 notes = "Read 2026-11-06 for the hub page's who-applies section. States that citizens of GCC countries may enter Bahrain using only their national ID cards."
