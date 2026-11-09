@@ -7,7 +7,7 @@ country: "georgia"
 weight: 20
 keywords: ["格魯吉亞電子簽怎麼填", "格魯吉亞電子簽申請", "格魯吉亞電子簽材料", "evisa.gov.ge"]
 layout: how-to-fill
-lastmod: 2026-11-02
+lastmod: 2026-11-09
 ---
 
 {{< official-link site="georgia.evisa" >}}

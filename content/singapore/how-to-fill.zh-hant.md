@@ -25,7 +25,7 @@ faq:
     a: "頁面會顯示提交成功，ICA 也會給你填寫的信箱發確認郵件；收不到先查垃圾郵件。郵件裡有 Disembarkation/Embarkation（DE）編號，之後修改要用到。"
   - q: "新版和舊版都要提交嗎？"
     a: "不需要。ICA 當前同時提供原版和增強版入口，明確說明每次行程只需提交一次。"
-lastmod: 2026-11-06
+lastmod: 2026-11-09
 ---
 
 {{< official-link site="singapore.sgac" >}}
