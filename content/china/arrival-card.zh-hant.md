@@ -92,7 +92,7 @@ lastmod: 2026-11-09
 
 只有回答「有中方邀請單位或邀請人」之後才展開邀請資料。訂了酒店不代表酒店就是邀請方；住宿地址是另一組問題。
 
-這份 [中國入境卡填寫指南](/zh-hant/china/how-to-fill/) 選列八項資料，說明上傳、地址和邀請資訊的規則。本指南不提供線上預檢。
+這份 [中國入境卡填寫指南](/zh-hant/china/how-to-fill/) 選列八項資料，說明上傳、地址和邀請資訊的規則，包括[有邀請方、沒有邀請方時 Entity Contact Information 怎麼填](/zh-hant/china/how-to-fill/#inviter-cases)。本指南不提供線上預檢。
 
 ## 常見問題
 

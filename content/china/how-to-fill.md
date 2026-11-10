@@ -3,7 +3,7 @@ title: "How to Fill the China Arrival Card (2026): Upload, Dates and Entity Cont
 kicker: "Passport image uploads, date fields, the address in China and conditional inviter details in the ordinary filing flow."
 description: "China Arrival Card filling guide: JPEG/PNG passport uploads, date format, address limits, when Entity Contact Information is required, and saving the receipt."
 date: 2026-09-05
-lastmod: 2026-11-09
+lastmod: 2026-11-10
 country: "china"
 weight: 20
 keywords: ["how to fill china arrival card", "china arrival card date format", "china arrival card entity contact information", "china arrival card step by step", "china arrival card when to fill"]
@@ -26,6 +26,8 @@ layout: how-to-fill
 {{< official-link site="china.arrivalcard" >}}
 
 This guide selects eight items for the ordinary filing flow. It does not count every question or cover every conditional branch. The screen and its public script were checked on 2026-09-05; no personal information was submitted. Use the official form for validation.
+
+Looking for the government site, the exemption list or the receipt instead? Those are on the [China Arrival Card overview](/china/arrival-card/). This page is about what to type in each field.
 
 ## When to fill it
 
@@ -71,7 +73,7 @@ Use the official site's date controls. The entry-date control stores a value in 
 
 For date of birth, use the date printed in your travel document. A correctly formatted date alone does not prove the date is valid for your trip.
 
-## Entity Contact Information: first check whether you have an inviter
+## Entity Contact Information: first check whether you have an inviter {#entity-contact}
 
 The form asks: **Do you have any inviting entities or inviters in China?** Answer according to your actual arrangement. If you have no inviter, do not turn a hotel booking into an invitation just to fill these fields. Your accommodation address belongs in Address in China.
 
@@ -80,6 +82,24 @@ When you answer yes, the invitation group appears:
 - For an **inviting entity**, choose that type and enter the actual entity name. The name is required for this type and has a **200-byte** limit.
 - For an **individual inviter**, choose that type and enter the person's name. The name is required for this type; its input has a **32-byte** limit.
 - Enter that entity's or person's **contact number**. This is required within the invitation group. The input removes non-digits and allows up to **12 characters**. Use the contact supplied by your inviter and check it after pasting.
+
+### The two cases, with the form's own labels {#inviter-cases}
+
+The labels below are copied from the English interface of the official form. The values are **made up** to show the shape of an answer. Do not copy them.
+
+| Your situation | “Do you have any inviting entities or inviters in China?” | Fields that appear | Fictional example |
+| --- | --- | --- | --- |
+| Nobody in China invited you: tourist, hotel or self-booked stay, transit | No | None. Entity Name, Inviter's Name and both contact fields stay hidden. | Nothing to enter. The hotel goes in Address in China. |
+| A company, school, organiser or other organisation invited you | Yes, then **Inviting entity in China** | **Entity Name**; **Entity Contact Information** | Entity Name: `Example Trading (Shanghai) Co., Ltd.` Entity Contact Information: `02155550100` |
+| A person invited you, such as a relative or friend | Yes, then **Inviter in China** | **Inviter's Name**; **Inviter's Contact Information** | Inviter's Name: `LI XIAOMING` Inviter's Contact Information: `01055550199` |
+
+Three things trip people up:
+
+- **Entity Contact Information is a phone number, not an address or an email.** The input drops everything except digits and stops at 12 characters, so `021-5555 0100` becomes `02155550100` and a `+86` prefix loses its plus sign.
+- **Blank after Yes.** Once you answer Yes, the name and the contact number for the type you picked are both required.
+- **Yes because of a hotel.** A booking is where you stay, and it belongs in Address in China. It is not an invitation.
+
+Labels re-read from the form's public script on 10 November 2026 (the script file is the same one checked on 5 September). Nothing was submitted.
 
 These name limits are bytes, not character counts. The placeholder “Please enter the entity name” is an instruction in the name input, not the specific required-field error.
 

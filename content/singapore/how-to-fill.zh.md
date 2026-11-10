@@ -3,7 +3,7 @@ title: "新加坡入境卡怎么填：姓名顺序、三天窗口与 SGAC 确认
 kicker: "先打开 ICA 官网，再核对姓名、抵达日期和确认信息。"
 description: "新加坡 SGAC 入境卡中文填写说明：名与姓的顺序、包含抵达当天的三天窗口、最后出发城市、中文界面及确认信息找回。"
 date: 2026-04-26
-lastmod: 2026-11-09
+lastmod: 2026-11-10
 country: singapore
 weight: 20
 layout: how-to-fill
@@ -15,7 +15,7 @@ faq:
   - q: "SGAC 可以用中文吗？"
     a: "当前 ICA 网页可以选择简体中文界面，但说明仍要求提交的资料使用英文。"
   - q: "姓名是名在前还是姓在前？"
-    a: "当前外国旅客表单提示 Given Name followed by Surname，即名在前、姓在后。核对你所用版本的提示，填写护照上的姓名。"
+    a: "名在前，姓在后。表单的 Full Name (In Passport) 一栏提示 Given name followed by Surname，中文界面的提示是名字在前、姓氏在后。护照上姓 TAN、名 WEI MING 的示例，填 WEI MING TAN，中间用空格，不加逗号。"
   - q: "新加坡入境卡的电话国家区号怎么填？"
     a: "Country Code 是可搜索的下拉列表，区号显示为 + 加数字，比如 +86。号码其余部分填在 Mobile Number，只填数字。"
   - q: "新加坡入境卡的 Place of Residence（居住地）填什么？"
@@ -47,6 +47,27 @@ SGAC 免费，不等于签证。ICA 提供网页服务和 MyICA App。网页首�
 ## Full Name：名在前，姓在后 {#passport-name}
 
 当前外国旅客表单的字段为 **Full Name (In Passport)**，提示 **Given Name followed by Surname**。例如，一本示例护照的名为 WEI MING、姓为 TAN，按该提示填写 **WEI MING TAN**。
+
+### 护照上的姓、名，对应表单哪一段 {#name-order}
+
+表单只有一个姓名栏，不分姓和名两格。把护照资料页上的两栏按下面的顺序拼成一行：
+
+| 护照资料页 | 示例护照上的内容 | 在 SGAC 姓名栏里的位置 |
+| --- | --- | --- |
+| 名（Given names） | WEI MING | 写在前面 |
+| 姓（Surname） | TAN | 写在后面，和名之间空一格 |
+| 合起来 | 姓 TAN，名 WEI MING | **WEI MING TAN** |
+
+表单用语对照：英文界面这一栏叫 **Full Name (In Passport)**，栏内提示 **Given name followed by Surname**；表单的中文界面只有简体，这一栏叫护照全名，提示的意思是名字在前、姓氏在后。以上示例姓名是虚构的。
+
+几种常见填法，对不对：
+
+- `TAN WEI MING`：顺序反了。护照和中文习惯是姓在前，这张表要名在前。
+- `TAN, WEI MING`：逗号是允许的符号，但顺序仍然是姓在前，不符合提示。
+- 中文姓名：不行。表单的姓名规则只收字母、空格和 `' / ( ) - , @ .` 这几种符号，中文字输不进。
+- `HSIAO-MING CHEN`：可以。护照上的名带连字符时照抄，连字符在允许的符号里。
+
+标签和规则于 2026 年 11 月 10 日从 ICA 表单（eservices.ica.gov.sg/arrivalcard）的中英文界面文本读取，没有提交任何资料。
 
 请使用你自己的护照姓名，不要因为旧攻略写“姓在前”就自行加逗号。如果增强版使用分开的姓名输入框，按该版本标签填写。本站没有逐屏核验增强版的全部步骤。
 

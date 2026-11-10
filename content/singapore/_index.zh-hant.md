@@ -13,6 +13,7 @@ lastmod: 2026-11-09
 
 - [官方服務、提交時間與豁免條件](/zh-hant/singapore/sgac/)。
 - [姓名、日期、最後出發地與確認資訊](/zh-hant/singapore/how-to-fill/)。
+- [Full Name (In Passport) 姓名順序：名在前，姓在後](/zh-hant/singapore/how-to-fill/#name-order)。
 
 三天窗口包含抵達當天。從陸路檢查站入境的居民、不辦理入境的過境旅客等有豁免；居民乘飛機或船抵達時，應核對提交要求。
 

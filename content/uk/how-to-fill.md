@@ -3,10 +3,10 @@ title: "UK ETA Home Address: Address Line 1 Examples and Errors"
 kicker: "Understand the home-address question, split address lines, and find official help if the app will not continue."
 description: "What the UK ETA home-address question means, what to enter in address line 1, fictional examples, and official help for address errors."
 date: 2026-07-14
-lastmod: 2026-11-09
+lastmod: 2026-11-10
 country: "uk"
 weight: 20
-keywords: ["UK ETA home address", "UK ETA address line 1", "how to fill UK ETA"]
+keywords: ["UK ETA home address", "UK ETA address line 1", "provide the address where you live most of the time", "how to fill UK ETA"]
 layout: how-to-fill
 guide_title: "UK ETA home address: address line 1 and errors"
 walkthrough_first: true
@@ -15,6 +15,20 @@ walkthrough_first: true
 {{< official-link site="uk.eta" >}}
 
 When the UK ETA asks you to **provide the address where you live most of the time**, read this as your usual home address. Address line 1 starts that home address; it is separate from accommodation for your UK visit.
+
+## Quick answers {#quick-answers}
+
+| What you see or ask | Short answer |
+| --- | --- |
+| “Provide the address where you live most of the time” | Your usual home address, in the country where you live now. Not your UK hotel, your host or your workplace. [Details](#home-address) |
+| What goes in address line 1 | The house number and street, or the building name. Fictional example: `12 Example Road`. [Examples](#address-line-1) |
+| Where the flat or unit number goes | In address line 2 if your screen has one. Otherwise in line 1 with the street: `Flat 4, 24 Sample Street` (fictional). |
+| “Enter address line 1” will not go away | Look at the first address box. Retype your address there by hand and check it is not blank, spaces only, or sitting in line 2. [All checks](#address-errors) |
+| Your home has no postal code | Do not invent one or borrow a UK postcode. If the form blocks you, ask UKVI through the official webchat. |
+| The app will not continue | The Home Office says you can apply online instead if you have problems using the app. [Official options](#official-options) |
+| You already submitted a wrong address | The Home Office app guide says that to change the details in an application you need to apply again, and that there is no refund. [What that means](#wrong-address) |
+
+The first five rows are this guide's reading and basic input checks. The last two rows restate the {{< source-link site="uk.application_help" text="Home Office app guide" >}}, re-read on 10 November 2026.
 
 **On this page**
 
@@ -62,13 +76,19 @@ These are basic input checks suggested by this guide, **not verified fixes for a
 3. Read the whole error message and any field-level hint. If the live form gives a length or format rule, follow that rule while keeping your address accurate. We have not verified a universal ETA rule requiring you to remove punctuation, accents or spaces.
 4. Check the country, town and postal-code boxes against your actual home address where those boxes are shown. Do not replace your home with a UK hotel or enter a made-up postal code to get past an error. If your address has no postal code and the form blocks you, ask UKVI what to enter.
 
-### Official options if the app still will not continue
+### Official options if the app still will not continue {#official-options}
 
 The Home Office says you can {{< source-link site="uk.eta_online" text="apply online instead" >}} if you have problems using the app. That is an official alternative, not a guaranteed address-error fix. The guidance does not promise that an unfinished app application will transfer to the browser.
 
 You can also {{< source-link site="uk.eta_support" text="use the official ETA webchat" >}}. Note the exact error wording, whether you used the app or browser, your device and app version, and the step where it stopped. Use official support for application details; do not post your passport or full home address in public comments.
 
 **Official troubleshooting source checked: 17 October 2026:** {{< source-link site="uk.application_help" text="Using the UK ETA app, “If you need help using the app”" >}}. No address-specific bug or guaranteed workaround was verified for this guide. If you already paid or submitted, check your confirmation and ask official support before starting another application just to troubleshoot.
+
+### If you already submitted the wrong address {#wrong-address}
+
+The app guide's “After you apply” section says: “You cannot get a refund after you apply. If your application is rejected or you need to change the details in your application, you’ll need to apply again.” The guide does not describe a way to edit an address after submission.
+
+So read the address screen once more before you pay the £20. If you spot a mistake after paying, {{< source-link site="uk.eta_support" text="ask UKVI through the official webchat" >}} whether your case needs a new application before you pay a second time. **Source checked: 10 November 2026.**
 
 ## Other ETA fields and the local checker {#other-fields}
 

@@ -22,6 +22,8 @@ lastmod: 2026-11-09
 護照圖片上傳、日期、境內地址，以及有邀請方時怎麼填聯繫方式。
 → [欄位逐項指南](/zh-hant/china/how-to-fill/)
 
+問得最多的兩欄：[“您是否有中方邀請單位或邀請人”](/zh-hant/china/how-to-fill/#entity-contact)和 [Entity Contact Information（邀請方聯繫電話）](/zh-hant/china/how-to-fill/#inviter-cases)。
+
 ## 誰要填，誰不用填
 
 - **要填**：入境中國的外國人。可以出發前網上填，也可以在口岸填紙質外國人入境卡。
