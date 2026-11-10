@@ -1,7 +1,7 @@
 ---
 title: "入境卡和電子簽證官方填寫指南：免費表單、官網、防中介詐騙"
 description: "泰國 TDAC、馬來西亞 MDAC、新加坡 SGAC、印尼 All Indonesia、墨西哥 FMM、多米尼加 E-Ticket、越南 E-Visa、菲律賓 eTravel、柬埔寨 e-Arrival、日本 Visit Japan Web、韓國 e-Arrival Card 的中文官網指南。"
-lastmod: 2026-06-11
+lastmod: 2026-11-10
 ---
 
 2026 年 3 月，泰國皇家移民局公開聲明：約有 [10% 的外國入境者](/zh-hant/thailand/tdac/#問題在哪)曾向非官方網站付款以提交 TDAC——而這份表單一直都是免費的。
