@@ -6,7 +6,7 @@
 url = "https://www.jordanpass.jo/"
 name = "Jordan Pass official website"
 agency = "Ministry of Tourism and Antiquities of Jordan"
-last_verified = "2026-11-09"
+last_verified = "2026-11-16"
 archive_url = "https://web.archive.org/web/2026/https://www.jordanpass.jo/"
 notes = "Read 2026-08-30. The package costs JD 70 (Jordan Wanderer, 1 day in Petra), JD 75 (Jordan Explorer, 2 consecutive days) or JD 80 (Jordan Expert, 3 consecutive days), and each tier carries the same condition: waiving of tourist entry visa fees if you purchase the pass before arrival and stay a minimum of two nights (3 days). The FAQ states the pass is not a visa, that it waives only the single-entry visa fee of JD 40, that it is not available to Arabic nationality holders, and that the printed PDF must be shown at the visa office because the QR code may not scan from a phone. jordanpass.jo is not a government-suffix domain: the footer reads Ministry of Tourism and Antiquities, the privacy policy is written in the Ministry's name, and the Ministry's own page at mota.gov.jo/En/Pages/General_Information links to https://www.jordanpass.jo/. Enter from that Ministry page if you want a government-anchored path to the purchase form."
 
@@ -14,7 +14,7 @@ notes = "Read 2026-08-30. The package costs JD 70 (Jordan Wanderer, 1 day in Pet
 url = "https://www.jordanpass.jo/buynow.aspx?type=Wanderer"
 name = "Jordan Pass purchase form"
 agency = "Ministry of Tourism and Antiquities of Jordan"
-last_verified = "2026-11-09"
+last_verified = "2026-11-16"
 archive_url = "https://web.archive.org/web/2026/https://www.jordanpass.jo/buynow.aspx?type=Wanderer"
 notes = "Read 2026-08-30. The live form asks for name, email, re-entered email, telephone, main purpose of visit, accommodation type, City of Stay, Residency Address in Jordan, number of nights (dropdown starts at 2), airline, travel party, expected month of arrival, ticket type and number of tickets. The page HTML carries maxlength 100 on the name and both email fields, 150 on the telephone and 250 on the address, the validator script carries the email pattern ^([\\w\\.\\-]+)@([\\w\\.\\-]+)((\\.(\\w){2,4})+)$, and the validator labels read Full name required, You must enter the email, Not Valid Email, Telephone is required, Purpose visit is required and Nights is required."
 
@@ -30,7 +30,7 @@ notes = "Read 2026-08-30. The Ministry states the entry visa value for all natio
 url = "https://eservices.moi.gov.jo/MOI_EVISA/"
 name = "Ministry of Interior e-visa e-service (account login)"
 agency = "Ministry of Interior of Jordan"
-last_verified = "2026-11-09"
+last_verified = "2026-11-16"
 archive_url = "https://web.archive.org/web/2026/https://eservices.moi.gov.jo/MOI_EVISA/"
 notes = "Read 2026-08-30. The live address returns an Oracle ADF JavaScript shell that only redirects to a login page; no application fields are readable without an account. A verified Internet Archive snapshot of 2022-05-19 shows the same shape: Ministry of Interior E-Services Site with username, password, confirmation code, Create New Account and User Manual. Treat this as the government e-visa channel reachable from the Interior Ministry page, not as a public tourist checkout."
 
@@ -54,7 +54,7 @@ notes = "Read 2026-08-30. The Ministry defines restricted countries as countries
 url = "https://jordan.gov.jo/EN/Pages/Travel_Visas"
 name = "Travel Visas (Jordan Gate national portal)"
 agency = "Government of Jordan"
-last_verified = "2026-11-09"
+last_verified = "2026-11-16"
 archive_url = "https://web.archive.org/web/2026/https://jordan.gov.jo/EN/Pages/Travel_Visas"
 notes = "Read 2026-08-30. The national portal states that most tourists opt for the single-entry tourist visa, that visa on arrival is available at major entry points including Queen Alia International Airport, that tourist visas typically allow stays of 1 month or 3 months, and that required documents are a passport with at least six months of validity, a passport-sized photo, a flight itinerary and hotel reservation details. Its e-visa step links to moi.gov.jo/EN/Pages/Visa_E_Applications."
 
@@ -119,5 +119,5 @@ fields_walkthrough_zh_hant = "按表單順序整理的 17 個真正容易出錯�
 url = "https://www.jordanpass.jo/Contents/FAQs.aspx"
 name = "Jordan Pass FAQs"
 agency = "Ministry of Tourism and Antiquities of Jordan"
-last_verified = "2026-11-09"
+last_verified = "2026-11-16"
 notes = "Read 2026-11-06 for the hub page's who-buys section. The Jordan Pass is not a visa; it is not available to Arabic nationality holders; children under 12 accompanied by parents enter the tourist sites free."
