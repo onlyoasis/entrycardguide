@@ -43945,6 +43945,13 @@ export default {
         "summary_zh": "填写指南按 All Indonesia 地址和口岸栏更正",
         "summary_zh_hant": "填寫指南按 All Indonesia 地址和口岸欄更正",
         "detail": "Read the All Indonesia form script. The address step starts with Type of Accommodation: hotels are picked from a search list, a home or villa needs Province, City and a typed address, and Others picks from a list. The address box has no length limit and keeps letters, digits, dots, hyphens and spaces in capitals, so the guide drops its 200-character limit and its comma-separated example. Port of Entry is a list loaded after you pick air, land or sea, not a typed IATA code."
+      },
+      {
+        "date": "2026-11-18",
+        "summary": "Filing window now matches the form: no earlier than 2 days before you land",
+        "summary_zh": "提交时间按表单统一：最早落地前 2 天",
+        "summary_zh_hant": "提交時間按表單統一：最早落地前 2 天",
+        "detail": "Re-read the All Indonesia form script on 18 November 2026: the arrival date list is still yesterday, today and the next 2 days. The hub, the e-CD page FAQ and its search description said \"within 3 days\"; they now say no earlier than 2 days before landing. Some customs pages still say H-3, but the form does not accept an arrival date three days out."
       }
     ],
     "malaysia": [

@@ -32,4 +32,5 @@ detail = "Read the All Indonesia form script. The address step starts with Type 
 date = "2026-11-18"
 summary = "Filing window now matches the form: no earlier than 2 days before you land"
 summary_zh = "提交时间按表单统一：最早落地前 2 天"
+summary_zh_hant = "提交時間按表單統一：最早落地前 2 天"
 detail = "Re-read the All Indonesia form script on 18 November 2026: the arrival date list is still yesterday, today and the next 2 days. The hub, the e-CD page FAQ and its search description said \"within 3 days\"; they now say no earlier than 2 days before landing. Some customs pages still say H-3, but the form does not accept an arrival date three days out."
