@@ -29,7 +29,7 @@ Sources: {{< source-link site="indonesia.immigration_scope" text="Directorate Ge
 
 - **Official URL:** `allindonesia.imigrasi.go.id` — the current unified arrival declaration entry point.
 - **Cost:** free. Always free.
-- **Required for:** every arriving traveler, including Indonesian citizens. Submitted within 3 days of arrival.
+- **Required for:** every arriving traveler, including Indonesian citizens. Submitted no earlier than 2 days before you land.
 - **What you need:** passport, flight number, address in Indonesia, email, about 7 minutes.
 - **What you get:** a QR code emailed to you. Show it at customs.
 - **e-VOA is separate:** if you need a visa on arrival ($35 USD government fee), file at `evisa.imigrasi.go.id`. That's a different form, different domain, different agency. Both may be required for your trip.

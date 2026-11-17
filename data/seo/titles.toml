@@ -113,7 +113,7 @@ title_zh_hant = "印度入境卡指南：72 小時規則、誰要填、e-Visa �
 title = "Indonesia Entry Guide: Arrival Declaration, e-VOA and Passport Rules"
 description = "Overview of entering Indonesia: who must file the free All Indonesia arrival declaration, when to file it, what to bring, and why the paid e-VOA is a separate form."
 h1 = "Indonesia entry: who files the free arrival declaration, when, and where the e-VOA fits."
-title_zh = "印尼入境卡指南：谁要填、抵达前 3 天内提交、e-VOA 另算"
+title_zh = "印尼入境卡指南：谁要填、落地前 2 天内提交、e-VOA 另算"
 title_zh_hant = "印尼入境卡指南：誰要填、抵達前 3 天內提交、e-VOA 另算"
 description_zh = "印尼入境概览：谁要填免费的 All Indonesia 入境申报、什么时候提交、要带什么材料，付费的 e-VOA 落地签是另一张表。"
 description_zh_hant = "印尼入境概覽：誰要填免費的 All Indonesia 入境申報、什麼時候提交、要帶什麼材料，付費的 e-VOA 落地簽是另一張表。"
@@ -351,7 +351,7 @@ description = "The official Singapore Arrival Card (SG Arrival Card) is ICA's fr
 
 ["indonesia/e-cd"]
 title = "Indonesia e-CD Official Site: Free e-Declaration Form at allindonesia.imigrasi.go.id"
-description = "Indonesia's e-CD customs declaration is filed free on the All Indonesia e-declaration form at allindonesia.imigrasi.go.id, within 3 days before arrival. Bali, Jakarta and every air or sea port; every field explained."
+description = "Indonesia's e-CD customs declaration is filed free on the All Indonesia e-declaration form at allindonesia.imigrasi.go.id, up to 2 days before you land. Bali, Jakarta and every air or sea port; every field explained."
 h1 = "Indonesia e-CD and e-Declaration Form: the free official All Indonesia site (2026)"
 title_zh = "印尼入境卡官网：All Indonesia 免费入境申报 allindonesia.imigrasi.go.id"
 title_zh_hant = "印尼入境卡官網：All Indonesia 免費入境申報 allindonesia.imigrasi.go.id"
