@@ -107,7 +107,18 @@ title_zh = "印度入境卡指南：72 小时规则、谁要填、e-Visa 另算"
 title_zh_hant = "印度入境卡指南：72 小時規則、誰要填、e-Visa 另算"
 
 [indonesia]
-title = "Indonesia Entry Forms: Arrival Card, e-CD and e-VOA Guide"
+# The hub carried "e-CD" in its title and H1 and took "e cd indonesia" /
+# "e declaration form indonesia" from the form page (GSC 10-18..11-14). The
+# hub keeps the overview wording; the form page owns the e-CD phrases.
+title = "Indonesia Entry Guide: Arrival Declaration, e-VOA and Passport Rules"
+description = "Overview of entering Indonesia: who must file the free All Indonesia arrival declaration, when to file it, what to bring, and why the paid e-VOA is a separate form."
+h1 = "Indonesia entry: who files the free arrival declaration, when, and where the e-VOA fits."
+title_zh = "印尼入境卡指南：谁要填、抵达前 3 天内提交、e-VOA 另算"
+title_zh_hant = "印尼入境卡指南：誰要填、抵達前 3 天內提交、e-VOA 另算"
+description_zh = "印尼入境概览：谁要填免费的 All Indonesia 入境申报、什么时候提交、要带什么材料，付费的 e-VOA 落地签是另一张表。"
+description_zh_hant = "印尼入境概覽：誰要填免費的 All Indonesia 入境申報、什麼時候提交、要帶什麼材料，付費的 e-VOA 落地簽是另一張表。"
+h1_zh = "印度尼西亚入境：谁要填免费入境申报、何时提交、e-VOA 怎么分开办。"
+h1_zh_hant = "印度尼西亞入境：誰要填免費入境申報、何時提交、e-VOA 怎麼分開辦。"
 
 [israel]
 title = "Israel ETA-IL Guide: Who Needs It, Fee and Validity"
@@ -339,7 +350,9 @@ title_zh_hant = "新加坡入境卡官網：SGAC 免費填寫入口 eservices.ic
 description = "The official Singapore Arrival Card (SG Arrival Card) is ICA's free service at eservices.ica.gov.sg. Submit within the three days that include your arrival day; residents entering by land are exempt."
 
 ["indonesia/e-cd"]
-title = "Indonesia Arrival Card Official Site: allindonesia.imigrasi.go.id, Free"
+title = "Indonesia e-CD Official Site: Free e-Declaration Form at allindonesia.imigrasi.go.id"
+description = "Indonesia's e-CD customs declaration is filed free on the All Indonesia e-declaration form at allindonesia.imigrasi.go.id, within 3 days before arrival. Bali, Jakarta and every air or sea port; every field explained."
+h1 = "Indonesia e-CD and e-Declaration Form: the free official All Indonesia site (2026)"
 title_zh = "印尼入境卡官网：All Indonesia 免费入境申报 allindonesia.imigrasi.go.id"
 title_zh_hant = "印尼入境卡官網：All Indonesia 免費入境申報 allindonesia.imigrasi.go.id"
 description_zh = "印尼入境卡（印度尼西亚入境申报 All Indonesia）官网是 allindonesia.imigrasi.go.id，免费，e-CD 海关申报也在这里。巴厘岛、雅加达入境通用，每个字段逐项讲解。"
