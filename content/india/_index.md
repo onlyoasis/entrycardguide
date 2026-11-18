@@ -2,7 +2,7 @@
 title: "India e-Arrival Card Official Guide: Free Card, e-Visa, and Fees"
 kicker: "The India e-Arrival Card is free. An e-Visa is a separate, paid travel permission."
 description: "India entry guide: official e-Arrival Card website, 72-hour rule, separate e-Visa fees, all 15 fields, and documented middleman prices."
-lastmod: 2026-11-16
+lastmod: 2026-11-18
 ---
 
 Foreign travellers entering India, including OCI cardholders, must submit the free e-Arrival Card within the 72 hours before arrival. Indian passport holders do not submit it.
@@ -18,6 +18,10 @@ Yes. See the official `.gov.in` portal, the 72-hour submission window, and why t
 ### 2. Every field, in order
 Identity, visa or OCI details, travel, India address, contact information, and the final declaration.
 → [Field-by-field e-Arrival Card guide](/india/how-to-fill/)
+
+### 3. Air Suvidha 2.0, the second free form
+Every international air arrival, Indian citizens included, also files this health declaration up to 72 hours before landing. Side-by-side table with the e-Arrival Card.
+→ [Read the Air Suvidha 2.0 guide](/india/air-suvidha/)
 
 ## Who has to file it
 

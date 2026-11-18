@@ -396,7 +396,7 @@ export default {
         "name_en": "Ghana",
         "name_zh": "加纳",
         "region": "Africa",
-        "existing_site_key": null,
+        "existing_site_key": "ghana",
         "name_zh_hant": "加納"
       },
       {
@@ -27232,9 +27232,65 @@ export default {
           "agency": "Ministry of Foreign Affairs, Viet Nam",
           "lastVerified": "2026-11-16",
           "notes": "Read 2026-11-06 for the hub page's who-applies section. Ministry of Foreign Affairs table of visa exemptions by nationality and passport type."
+        },
+        {
+          "key": "prearrival",
+          "name": "Official Vietnam Pre-Arrival Information",
+          "url": "https://prearrival.immigration.gov.vn/",
+          "agency": "Immigration Department, Ministry of Public Security",
+          "lastVerified": "2026-11-18",
+          "notes": "Read 2026-11-18 in a browser. Home page (EN): 'To ensure a smooth immigration process, please complete this declaration fully and accurately before arrival.' Three services: Create & Submit Pre-arrival Information, Lookup & Update Declaration, Lookup E-Pass Information. A CAPTCHA opens the form; we did not submit one. The portal's English strings (assets/v1.0.0/en-DCeEXg7L.js): 'The expected arrival date must be today or within the next 2 days.' and 'The estimated arrival date must be yesterday, today, or within the next two days.'; a 6-digit code is emailed to verify the address; phone 'must contain only digits and be between 3 and 14 characters long'; a PDF of the submission can be downloaded; updates need the PAI Number, passport number and an emailed OTP, and Date of Arrival, Date of Passport Expiry and Nationality cannot be updated ('please make a new' declaration). No fee or payment step appears in the strings or on the home page."
+        },
+        {
+          "key": "prearrival_us_sgn",
+          "name": "Change to Entry Requirements for Passengers Arriving at Tan Son Nhat (SGN)",
+          "url": "https://vn.usembassy.gov/change-to-entry-requirements-for-passengers-arriving-at-tan-son-nhat-international-airport-sgn/",
+          "agency": "U.S. Embassy & Consulate in Vietnam",
+          "lastVerified": "2026-11-18",
+          "notes": "Dated 2026-04-22, read 2026-11-18 in a browser: 'Starting April 15, 2026, all foreign passport holders must complete a pre-arrival declaration form prior to their arrival at the international terminal of Tan Son Nhat Airport'; applies to foreign passport holders and overseas Vietnamese entering with a visa; 'Currently, this form is not required for travelers arriving via any other airport in Vietnam'; available 'as early as three days prior to their arrival date'."
+        },
+        {
+          "key": "prearrival_us_all",
+          "name": "Notice: Implementation of pre-arrival declaration at airports in Vietnam",
+          "url": "https://vn.usembassy.gov/notice-implementation-of-pre-arrival-declaration-for-international-visitors-arriving-at-airports-in-vietnam/",
+          "agency": "U.S. Embassy & Consulate in Vietnam",
+          "lastVerified": "2026-11-18",
+          "notes": "Dated 2026-06-17, read 2026-11-18 in a browser: 'Vietnam is expanding its mandatory pre-arrival personal information declaration for international arrivals to all airports in Vietnam.' Who: 'All international passengers who do not hold a Vietnamese passport.' When: 'upon arrival, or not more than three days before arrival.' 'It will also be available on arrival via QR code or paper form at the airport.' No effective date for the expansion is given."
+        },
+        {
+          "key": "prearrival_sg_hanoi",
+          "name": "Pre-Arrival Declaration for Foreign Travellers Entering Vietnam",
+          "url": "https://hanoi.mfa.gov.sg/mission-updates/pre-arrival-declaration-for-foreign-travellers-entering-vietnam/",
+          "agency": "Embassy of the Republic of Singapore in Hanoi",
+          "lastVerified": "2026-11-18",
+          "notes": "Dated 2026-06-25, read 2026-11-18: names Noi Bai (Ha Noi), Tan Son Nhat (Ho Chi Minh City) and the airports in Da Nang, Nha Trang and Phu Quoc; visitors 'are encouraged to complete the declaration'; on arrival or 'not more than three days before arrival'; the system generates a confirmation QR code."
+        },
+        {
+          "key": "prearrival_vn_sg",
+          "name": "Notice on Viet Nam's Pre-Arrival Information Declaration",
+          "url": "https://vnembassy-singapore.mofa.gov.vn/tin-chi-tiet/chi-tiet/notice-on-viet-nam-39-s-pre-arrival-information-declaration-60731-1390.html",
+          "agency": "Embassy of Viet Nam in Singapore",
+          "lastVerified": "2026-11-18",
+          "notes": "Dated 2026-07-02, read 2026-11-18: major international airports including Noi Bai, Tan Son Nhat, Da Nang, Cam Ranh (Nha Trang) and Phu Quoc; 'The Vietnamese authorities strongly encourage all foreign travellers to complete the declaration before travelling'; 'within three days prior to arrival or upon arrival'."
+        },
+        {
+          "key": "prearrival_vn_delhi",
+          "name": "Notice on the Pre-arrival Information Application for Foreigners Entering Viet Nam",
+          "url": "https://vietnamembassydelhi.in/notice-on-the-implementation-of-the-pre-arrival-information-application-for-foreigners-entering-viet-nam/",
+          "agency": "Embassy of Viet Nam in India",
+          "lastVerified": "2026-11-18",
+          "notes": "Dated 2026-05-21, read 2026-11-18: pilot at Tan Son Nhat 'on a voluntary, non-mandatory basis'; the system generates a QR code for immigration; 'several fraudulent websites impersonating the official platform have been detected', use only prearrival.immigration.gov.vn."
+        },
+        {
+          "key": "prearrival_sg_hcmc",
+          "name": "Tan Son Nhat Airport introduces pre-arrival declaration for foreigners",
+          "url": "https://hochiminhcity.mfa.gov.sg/mission-updates/tan-son-nhat-airport-introduces-pre-arrival-declaration-for-foreigners/",
+          "agency": "Consulate-General of the Republic of Singapore in Ho Chi Minh City",
+          "lastVerified": "2026-11-18",
+          "notes": "Dated 2026-04-20, read 2026-11-18: 'a mandatory pre-arrival information declaration' at Tan Son Nhat; foreign nationals entering Vietnam and overseas Vietnamese using visas must submit before arrival; '(Transit passengers are exempt.)'; recommends completing it before departure."
         }
       ],
-      "lastVerified": "2026-11-16"
+      "lastVerified": "2026-11-18"
     },
     {
       "slug": "thailand",
@@ -27578,9 +27634,33 @@ export default {
           "agency": "Bureau of Immigration, Ministry of Home Affairs",
           "lastVerified": "2026-11-16",
           "notes": "Read 2026-11-06 for the hub page's who-files section. Home page notice: foreign nationals and OCI/eOCI cardholders must complete and submit the e-Arrival Card."
+        },
+        {
+          "key": "air_suvidha",
+          "name": "Official Air Suvidha 2.0 Self Declaration Form",
+          "url": "https://airsuvidha.civilaviation.gov.in/",
+          "agency": "Ministry of Health & Family Welfare / Ministry of Civil Aviation",
+          "lastVerified": "2026-11-18",
+          "notes": "Read 2026-11-18 in a browser (curl and WebFetch get 403). Form page: 'Passenger can fill the application up to 72 hrs before arriving in India.' The arrival-date picker allowed 2026-11-18 to 2026-11-21 that day; arrival time is IST. Footer 'Last Updated: 7 Oct 2026'; helpline 1075, idsp-alert@nic.in. Front-end checks (assets/index-B8XoKYWM.js): full name 3 to 120 characters, letters with spaces, hyphens, apostrophes, commas and periods; passport number 7 to 20, letters and digits (/^[A-Z0-9]+$/i), Indian passports 7 to 8 characters with up to 2 letters at the start; age 0 to 120; Indian mobile /^[6-9]\\d{9}$/, other mobiles 7 to 15 digits; seat number optional, max 4. We did not submit the form."
+        },
+        {
+          "key": "air_suvidha_faq",
+          "name": "FAQs on Self-Declaration in Air Suvidha 2.0",
+          "url": "https://airsuvidha.civilaviation.gov.in/faq",
+          "agency": "Ministry of Health & Family Welfare / Ministry of Civil Aviation",
+          "lastVerified": "2026-11-18",
+          "notes": "Read 2026-11-18 in a browser. Advisory: per the June 2026 travel advisory of the Directorate General of Health Services, 'all air travelers arriving in India are required to fill a Self-Declaration Form in the Air Suvidha 2.0 portal in view of on-going Ebola disease outbreak.' Q3: 'All international travellers (Indian and Foreign nationals) and airline crew arriving in India should fill' it. Q4: departing passengers are not required. Q5: up to 4 family members per submission, each gets an individual SDF. Q7: 'preferably along with the Web Check-in', 'up to 72 hrs before arriving in India.' Q11: 'No. Submission of the Air Suvidha Self-Declaration Form is completely free.' Q16/Q28: edit until arrival in India, after that the APHO health desk. Q17: new form if the itinerary changes significantly. Q18: needed if you clear immigration in India. Q21: DR Congo, Uganda, South Sudan (the form also lists Kenya). Q27: do not give a travel agent's contact details. Q35: download and present at the immigration desk at the first international airport. Q37: does not replace immigration, visa or customs requirements. Q41: 'The official Air Suvidha service is completely free.' OCI: yes, choose Foreigner and 'OCI Card Holder Visa'. Families: infants need it; children may use a parent's email."
+        },
+        {
+          "key": "air_suvidha_instructions",
+          "name": "Air Suvidha 2.0 passenger instructions",
+          "url": "https://airsuvidha.civilaviation.gov.in/instructions",
+          "agency": "Ministry of Health & Family Welfare / Ministry of Civil Aviation",
+          "lastVerified": "2026-11-18",
+          "notes": "Read 2026-11-18 in a browser: 'All international passengers arriving in India are required to submit a health self-declaration under the International Health Regulations (IHR) 2005'; four steps (personal and flight details; contact and OTP; health declaration, shown only after declaring Ebola-affected travel; consent and submit); amend up to the arrival date and time, then via the airport health desk; registration number, acknowledgement and confirmation email; an Airport Port Health Officer may screen."
         }
       ],
-      "lastVerified": "2026-11-16"
+      "lastVerified": "2026-11-18"
     },
     {
       "slug": "korea",
@@ -30663,6 +30743,67 @@ export default {
         }
       ],
       "lastVerified": "2026-11-16"
+    },
+    {
+      "slug": "ghana",
+      "validationMode": "field_rules",
+      "names": {
+        "en": "Ghana",
+        "zh": "加纳",
+        "zh-hant": "加納"
+      },
+      "flag": "🇬🇭",
+      "formCode": "Health Declaration",
+      "formKey": "ehds",
+      "guideSlug": "health-declaration",
+      "formType": "arrival_card",
+      "fee": {
+        "en": "Free",
+        "zh": "免费",
+        "zh-hant": "免費"
+      },
+      "fieldCount": 6,
+      "sections": 6,
+      "timeNeeded": {
+        "en": "~10 minutes",
+        "zh": "约 10 分钟",
+        "zh-hant": "約 10 分鐘"
+      },
+      "forms": [
+        {
+          "key": "ehds",
+          "name": "Official Ghana Health Declaration",
+          "url": "https://ehds.ghs.gov.gh/",
+          "agency": "Port Health Department, Ministry of Health / Ghana Health Service",
+          "lastVerified": "2026-11-18",
+          "notes": "Read 2026-11-18 in a browser. Home page: 'Required for all arriving passengers'; 'Complete the form within 48 hours before you depart.'; three steps: your travel (passenger details, flight and countries visited in the last 21 days), your health (symptoms and possible exposure), your QR code ('Show it to the Port Health officer when you arrive'); 'Get my receipt again'; Port Health checks every passenger's temperature and reviews the declaration; travellers from countries with ongoing transmission may be followed up for up to 21 days; emergency health line 1800. Form page /declaration, step 1 'Before You Begin': 'MANDATORY FOR ALL ARRIVING PASSENGERS'; 'A parent or guardian completes it for a child under 12.'; 'Port Health may contact you within 21 days of arrival.'; false information may lead to action under the Public Health Act 2012 (Act 851). Six steps: Before You Begin, Passenger Information, Travel Information, Health Screening, Accommodation, Declaration; none is a payment step, and the form's loaded scripts contain no payment code. Form script checks: ID type passport, national ID card or other; document number 2 to 30 characters; email optional, max 254; flight number max 20; seat number optional, max 10; arrival date and departure date cannot be in the past; countries visited and transited in the last 21 days, or Not Applicable; land and sea arrivals have their own transport fields. We did not submit the form."
+        },
+        {
+          "key": "ehds_form",
+          "name": "Ghana Health Declaration form",
+          "url": "https://ehds.ghs.gov.gh/declaration",
+          "agency": "Port Health Department, Ministry of Health / Ghana Health Service",
+          "lastVerified": "2026-11-18",
+          "notes": "Direct link to step 1 of the form. See [ehds] notes for what was read."
+        },
+        {
+          "key": "graphic_release",
+          "name": "Travelling to Ghana: new mandatory health declaration rule takes effect next week",
+          "url": "https://www.graphic.com.gh/news/general-news/travelling-to-ghana-new-mandatory-health-declaration-rule-takes-effect-next-week.html",
+          "agency": "Daily Graphic (report of the Ghana Health Service release)",
+          "lastVerified": "2026-11-18",
+          "notes": "News report, not a government page; the GHS release itself was not found online. Dated 2026-11-07, read 2026-11-18: the GHS press release issued on 7 November and signed by Director-General Dr Samuel Kaba Akoriyea makes the Health Declaration Form mandatory for all travellers arriving in Ghana, 'effective Thursday, November 12, 2026'; form at https://ehds.ghs.gov.gh/declaration."
+        },
+        {
+          "key": "gna_moh",
+          "name": "Ghana tightens Ebola surveillance at International Airports",
+          "url": "https://gna.org.gh/2026/11/ghana-tightens-ebola-surveillance-at-international-airports/",
+          "agency": "Ghana News Agency (report of the Ministry of Health statement)",
+          "lastVerified": "2026-11-18",
+          "notes": "State news agency report dated 2026-11-03, read 2026-11-18: Ministry of Health statement signed by Health Minister Kwabena Mintah Akandoh; passengers arriving through Accra, Prempeh and Yakubu international airports 'are required to complete a Health Declaration Form'; arrivals from countries with ongoing Ebola transmission monitored for up to 21 days."
+        }
+      ],
+      "lastVerified": "2026-11-18"
     }
   ],
   "rules": {
@@ -36199,6 +36340,65 @@ export default {
           "type": "text",
           "label": "Phone number / 联系电话",
           "help": "Prepare a current number where you can be contacted. Follow the official input instructions; this guide has not verified prefix rules, length limits or mandatory status. Do not use a copied sample number as your own contact."
+        }
+      }
+    },
+    "ghana": {
+      "country": "ghana",
+      "officialUrl": "https://ehds.ghs.gov.gh/declaration",
+      "lastVerified": "2026-11-18",
+      "source": "https://ehds.ghs.gov.gh/declaration (form steps and the length checks in its loaded scripts, read 2026-11-18 in a browser). Only length limits were readable; the form was not submitted.",
+      "fields": {
+        "document_number": {
+          "type": "text",
+          "label": "Passport or ID number",
+          "required": true,
+          "pattern": "^\\S.{0,28}\\S$",
+          "maxLength": 30,
+          "placeholder": "G1234567",
+          "help": "The form takes a passport, a national ID card or another document, and its number must be 2 to 30 characters.",
+          "errors": {
+            "required": "Document number is required",
+            "invalidFormat": "2 to 30 characters, as printed on the document",
+            "tooLong": "Max 30 characters"
+          }
+        },
+        "flight_number": {
+          "type": "text",
+          "label": "Flight number",
+          "required": true,
+          "maxLength": 20,
+          "placeholder": "KQ 512",
+          "help": "For arrivals by air, up to 20 characters. The form's own example is KQ 512. Land and sea arrivals get vehicle or vessel fields instead.",
+          "errors": {
+            "required": "Flight number is required",
+            "tooLong": "Max 20 characters"
+          }
+        },
+        "seat_number": {
+          "type": "text",
+          "label": "Seat number (optional)",
+          "required": false,
+          "maxLength": 10,
+          "placeholder": "14A",
+          "help": "Optional, up to 10 characters.",
+          "errors": {
+            "tooLong": "Max 10 characters",
+            "required": "Seat number is optional"
+          }
+        },
+        "email": {
+          "type": "email",
+          "label": "Email (optional)",
+          "required": false,
+          "maxLength": 254,
+          "placeholder": "name@example.com",
+          "help": "Optional, up to 254 characters. The form also asks for a phone number and how Port Health can reach you.",
+          "errors": {
+            "invalidFormat": "Must look like name@example.com",
+            "tooLong": "Max 254 characters",
+            "required": "Email is optional"
+          }
         }
       }
     }
@@ -43914,7 +44114,8 @@ export default {
         "copy_zh": "准备当前能联系到本人的号码。按官方说明输入；本指南未验证区号规则、长度或统一必填性。不要把照抄的示例号码用作本人联系方式。",
         "copy_zh_hant": "準備當前能聯繫到本人的號碼。按官方說明輸入；本指南未驗證區號規則、長度或統一必填性。不要把照抄的示例號碼用作本人聯繫方式。"
       }
-    ]
+    ],
+    "ghana": []
   },
   "changelogs": {
     "indonesia": [
@@ -44028,6 +44229,13 @@ export default {
         "summary_zh": "填写指南按电子签口岸栏更正",
         "summary_zh_hant": "填寫指南按電子簽口岸欄更正",
         "detail": "Read the e-Visa application scripts and the gate list on evisa.gov.vn. Entry and exit gates are two separate single-choice lists of 79 gates, searched by gate name. The guide had said you could pick several entry ports, that exit defaults to the entry port, and that about 30 ports are listed."
+      },
+      {
+        "date": "2026-11-18",
+        "summary": "Pre-Arrival Information guide added",
+        "summary_zh": "新增越南入境前申报（Pre-Arrival）指南",
+        "summary_zh_hant": "新增越南入境前申報（Pre-Arrival）指南",
+        "detail": "New page /vietnam/pre-arrival/: the free prearrival.immigration.gov.vn portal, an airport table with the source and date for each claim (SGN required from 15 April 2026; the U.S. Embassy's 17 June 2026 notice says all airports; Vietnamese and Singapore missions name HAN, SGN, DAD, CXR and PQC), the arrival-date window read from the portal's own messages, fields, a local checker and what to do after a wrong submission."
       }
     ],
     "thailand": [
@@ -44136,6 +44344,13 @@ export default {
         "summary_zh": "本地检查器按在线 e-Arrival 表单更新：抵达日 DD/MM/YYYY，护照号 6–15 位，电话 5–15 位数字",
         "summary_zh_hant": "本地檢查器按線上 e-Arrival 表單更新：抵達日 DD/MM/YYYY，護照號 6–15 位，電話 5–15 位數字",
         "detail": "Read the e-Arrival form script and its arrival-date service. Arrival date DD/MM/YYYY, today to 4 days ahead on 15 October 2026. Full name letters and spaces, max 200; passport number letters and digits, 6 to 15; contact and emergency numbers 5 to 15 digits after a separate ISD code box; address max 500. Error messages are quoted from the form. The web form has no flight number or visa/OCI number box."
+      },
+      {
+        "date": "2026-11-18",
+        "summary": "Air Suvidha 2.0 guide added: India now has two free forms",
+        "summary_zh": "新增 Air Suvidha 2.0 指南：入境印度要填两张免费表",
+        "summary_zh_hant": "新增 Air Suvidha 2.0 指南：入境印度要填兩張免費表",
+        "detail": "New page /india/air-suvidha/ from the official portal, its FAQ and instructions read 2026-11-18: all international arrivals, Indian nationals and airline crew included, up to 72 hours before arrival, free, editable until arrival. Includes a side-by-side table with the e-Arrival Card and a local checker built from the form's own limits."
       }
     ],
     "korea": [
@@ -44610,6 +44825,15 @@ export default {
         "summary_zh_hant": "首次新增尼日利亞入境與出境卡本地指南",
         "detail": "依据 NIS 门户、FAQ、公开账户与找卡入口和政府公告整理双语指南。8项准备资料分4组，说明免费、外国旅客范围、登机前办理、打印和错误重提。未注册，未核验登录后全表，未提交，未部署。"
       }
+    ],
+    "ghana": [
+      {
+        "date": "2026-11-18",
+        "summary": "Ghana guide published: Health Declaration at ehds.ghs.gov.gh",
+        "summary_zh": "加纳指南上线：健康申报在 ehds.ghs.gov.gh",
+        "summary_zh_hant": "加納指南上線：健康申報在 ehds.ghs.gov.gh",
+        "detail": "Adds the official Ghana Health Declaration portal read 2026-11-18: required for all arriving passengers, filed within 48 hours before departure, QR code for Port Health, a parent or guardian files for a child under 12. Warns that ghs-hdf.org, shared on Facebook, opened as a wellness blog titled 'Ghs Hdf - Wellness Wisdom Within' on 18 November 2026."
+      }
     ]
   },
   "decisionTree": {
@@ -44885,6 +45109,11 @@ export default {
             "value": "nigeria",
             "label": "Nigeria",
             "next": "nigeria_transit"
+          },
+          {
+            "value": "ghana",
+            "label": "Ghana",
+            "next": "ghana_result"
           }
         ]
       },
@@ -45063,8 +45292,17 @@ export default {
         "type": "result",
         "country": "vietnam",
         "summary": "You can enter Vietnam visa-free for tourism (typically 15-45 days, depending on your nationality).",
-        "forms": [],
-        "note": "No e-visa needed for visa-exempt nationalities. Just bring your passport. Verify your specific stay limit on the official Vietnam Immigration Department page before flying.",
+        "forms": [
+          {
+            "name": "Pre-Arrival Information",
+            "fee": "FREE",
+            "url": "https://prearrival.immigration.gov.vn/",
+            "guide": "/vietnam/pre-arrival/",
+            "agency": "Immigration Department, Ministry of Public Security",
+            "deadline": "Arrival today or within the next 2 days"
+          }
+        ],
+        "note": "No e-visa needed for visa-exempt nationalities. File the free Pre-Arrival Information before you land: required at Tan Son Nhat (SGN) since 15 April 2026 and, per a U.S. Embassy notice, being extended to all airports. Verify your stay limit on the official Vietnam Immigration Department page before flying.",
         "fallback_guide": "/vietnam/evisa/",
         "fallback_label": "Read the e-visa guide for context"
       },
@@ -45080,6 +45318,14 @@ export default {
             "guide": "/vietnam/evisa/",
             "agency": "Vietnam Immigration Department",
             "deadline": "Apply 3-5 working days before flight"
+          },
+          {
+            "name": "Pre-Arrival Information",
+            "fee": "FREE",
+            "url": "https://prearrival.immigration.gov.vn/",
+            "guide": "/vietnam/pre-arrival/",
+            "agency": "Immigration Department, Ministry of Public Security",
+            "deadline": "Arrival today or within the next 2 days"
           }
         ],
         "note": "$25 USD is the official government fee. Anyone charging more is a middleman. Multi-entry option ($50) and express ($50 surcharge) are also government tiers. Commercial sites typically charge $99-179 for the same e-visa."
@@ -45592,7 +45838,7 @@ export default {
       "india_earrival_result": {
         "type": "result",
         "country": "india",
-        "summary": "You need to file the free India e-Arrival Card.",
+        "summary": "You need to file the free India e-Arrival Card and the free Air Suvidha 2.0 health declaration.",
         "forms": [
           {
             "name": "e-Arrival Card",
@@ -45601,9 +45847,17 @@ export default {
             "guide": "/india/e-arrival-card/",
             "agency": "Bureau of Immigration, Ministry of Home Affairs",
             "deadline": "Within 72 hours before arrival"
+          },
+          {
+            "name": "Air Suvidha 2.0 health declaration",
+            "fee": "FREE",
+            "url": "https://airsuvidha.civilaviation.gov.in/",
+            "guide": "/india/air-suvidha/",
+            "agency": "Ministry of Health & Family Welfare / Ministry of Civil Aviation",
+            "deadline": "Up to 72 hours before arrival"
           }
         ],
-        "note": "Foreign nationals, including OCI cardholders, submit the free e-Arrival Card. It records arrival information and does not replace a visa or OCI status."
+        "note": "Foreign nationals, including OCI cardholders, submit the free e-Arrival Card. It records arrival information and does not replace a visa or OCI status. Air Suvidha 2.0 is a separate free health declaration for every international air arrival."
       },
       "india_both_result": {
         "type": "result",
@@ -45625,6 +45879,14 @@ export default {
             "guide": "/india/e-arrival-card/",
             "agency": "Bureau of Immigration, Ministry of Home Affairs",
             "deadline": "Apply before travel; check eligibility and the permitted entry ports"
+          },
+          {
+            "name": "Air Suvidha 2.0 health declaration",
+            "fee": "FREE",
+            "url": "https://airsuvidha.civilaviation.gov.in/",
+            "guide": "/india/air-suvidha/",
+            "agency": "Ministry of Health & Family Welfare / Ministry of Civil Aviation",
+            "deadline": "Up to 72 hours before arrival"
           }
         ],
         "note": "These are separate official procedures. The e-Arrival Card is free. e-Visa fees vary by nationality and validity, carry an additional 3% bank charge, and permit first entry only through listed airports and seaports."
@@ -45641,6 +45903,14 @@ export default {
             "guide": "/india/e-arrival-card/",
             "agency": "Bureau of Immigration, Ministry of Home Affairs",
             "deadline": "Within 72 hours before arrival"
+          },
+          {
+            "name": "Air Suvidha 2.0 health declaration",
+            "fee": "FREE",
+            "url": "https://airsuvidha.civilaviation.gov.in/",
+            "guide": "/india/air-suvidha/",
+            "agency": "Ministry of Health & Family Welfare / Ministry of Civil Aviation",
+            "deadline": "Up to 72 hours before arrival"
           }
         ],
         "note": "The free e-Arrival Card does not grant permission to travel. Check whether your passport and trip require an e-Visa or another Indian visa on the official indianvisaonline.gov.in service before departure.",
@@ -47623,6 +47893,22 @@ export default {
           }
         ],
         "note": "Select the departure application in the official portal; an earlier Landing Card does not complete this separate departure step. Submit each traveller individually, then save the email and download and print the card or confirmation. For missing or incorrect details, use the portal guidance and NIS support rather than assuming the earlier record will be corrected automatically."
+      },
+      "ghana_result": {
+        "type": "result",
+        "country": "ghana",
+        "summary": "You need the free Ghana Health Declaration.",
+        "forms": [
+          {
+            "name": "Health Declaration",
+            "fee": "FREE",
+            "url": "https://ehds.ghs.gov.gh/declaration",
+            "guide": "/ghana/health-declaration/",
+            "agency": "Port Health Department, Ministry of Health / Ghana Health Service",
+            "deadline": "Within 48 hours before departure"
+          }
+        ],
+        "note": "Required for all arriving passengers. A parent or guardian completes it for a child under 12. Show the QR code to Port Health on arrival. ghs-hdf.org is not the form. Visa requirements are separate."
       }
     }
   }

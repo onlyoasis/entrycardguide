@@ -13,7 +13,7 @@
 
 export type FieldType = 'passport' | 'date' | 'flight' | 'name' | 'email' | 'phone' | 'text';
 
-export type DateFormat = 'YYYY-MM-DD' | 'DD/MM/YYYY' | 'YYYY/MM/DD' | 'MM/DD/YYYY' | 'DD.MM.YYYY';
+export type DateFormat = 'YYYY-MM-DD' | 'DD/MM/YYYY' | 'DD-MM-YYYY' | 'YYYY/MM/DD' | 'MM/DD/YYYY' | 'DD.MM.YYYY';
 
 export interface FieldRule {
   type: FieldType;
@@ -78,6 +78,7 @@ function validatePassport(value: string, rule: FieldRule): ValidationResult {
 const DATE_FORMATS: Record<DateFormat, { re: RegExp; y: number; m: number; d: number }> = {
   'YYYY-MM-DD': { re: /^(\d{4})-(\d{2})-(\d{2})$/, y: 1, m: 2, d: 3 },
   'DD/MM/YYYY': { re: /^(\d{2})\/(\d{2})\/(\d{4})$/, y: 3, m: 2, d: 1 },
+  'DD-MM-YYYY': { re: /^(\d{2})-(\d{2})-(\d{4})$/, y: 3, m: 2, d: 1 },
   'YYYY/MM/DD': { re: /^(\d{4})\/(\d{2})\/(\d{2})$/, y: 1, m: 2, d: 3 },
   'MM/DD/YYYY': { re: /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/, y: 3, m: 1, d: 2 },
   'DD.MM.YYYY': { re: /^(\d{1,2})\.(\d{1,2})\.(\d{4})$/, y: 3, m: 2, d: 1 },

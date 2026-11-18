@@ -347,6 +347,59 @@
     "maxLength": 80
    }
   },
+  "ghana": {
+   "document_number": {
+    "label": "Passport or ID number",
+    "help": "The form takes a passport, a national ID card or another document, and its number must be 2 to 30 characters.",
+    "placeholder": "G1234567",
+    "errors": {
+     "required": "Document number is required",
+     "invalidFormat": "2 to 30 characters, as printed on the document",
+     "tooLong": "Max 30 characters"
+    },
+    "type": "text",
+    "required": true,
+    "pattern": "^\\S.{0,28}\\S$",
+    "maxLength": 30
+   },
+   "flight_number": {
+    "label": "Flight number",
+    "help": "For arrivals by air, up to 20 characters. The form's own example is KQ 512. Land and sea arrivals get vehicle or vessel fields instead.",
+    "placeholder": "KQ 512",
+    "errors": {
+     "required": "Flight number is required",
+     "tooLong": "Max 20 characters"
+    },
+    "type": "text",
+    "required": true,
+    "maxLength": 20
+   },
+   "seat_number": {
+    "label": "Seat number (optional)",
+    "help": "Optional, up to 10 characters.",
+    "placeholder": "14A",
+    "errors": {
+     "tooLong": "Max 10 characters",
+     "required": "Seat number is optional"
+    },
+    "type": "text",
+    "required": false,
+    "maxLength": 10
+   },
+   "email": {
+    "label": "Email (optional)",
+    "help": "Optional, up to 254 characters. The form also asks for a phone number and how Port Health can reach you.",
+    "placeholder": "name@example.com",
+    "errors": {
+     "invalidFormat": "Must look like name@example.com",
+     "tooLong": "Max 254 characters",
+     "required": "Email is optional"
+    },
+    "type": "email",
+    "required": false,
+    "maxLength": 254
+   }
+  },
   "india": {
    "full_name": {
     "label": "Full name as in passport",
@@ -528,6 +581,110 @@
      "invalidOption": "Confirm only after reviewing every answer"
     },
     "type": "select",
+    "required": true
+   }
+  },
+  "india_air_suvidha": {
+   "full_name": {
+    "label": "Full name (as per passport)",
+    "help": "The form takes 3 to 120 characters: letters, plus spaces, hyphens, apostrophes, commas and periods. No digits or other symbols.",
+    "placeholder": "TARO KEN YAMADA",
+    "errors": {
+     "required": "Please enter full name (at least 3 characters)",
+     "tooShort": "Please enter full name (at least 3 characters)",
+     "tooLong": "Full name must be at most 120 characters",
+     "invalidChars": "Use letters only, as on your passport (spaces, hyphens, apostrophes, commas, and periods are allowed)"
+    },
+    "type": "name",
+    "required": true,
+    "pattern": "^[A-Za-z\\s\\-',.]+$",
+    "minLength": 3,
+    "maxLength": 120
+   },
+   "passport_number": {
+    "label": "Passport number",
+    "help": "Exactly as printed on the passport: 7 to 20 letters and digits. Indian passports must be 7 to 8 characters with up to 2 letters at the start, such as A1234567.",
+    "placeholder": "A1234567",
+    "errors": {
+     "required": "Please enter passport number",
+     "tooShort": "Passport number must be at least 7 characters (as on your passport)",
+     "tooLong": "Passport number is too long",
+     "invalidChars": "Use letters and digits only",
+     "invalidFormat": "Use letters and digits only"
+    },
+    "type": "passport",
+    "required": true,
+    "pattern": "^[A-Z0-9]{7,20}$",
+    "minLength": 7,
+    "maxLength": 20
+   },
+   "age": {
+    "label": "Age",
+    "help": "Whole years, digits only, 0 to 120. The form asks for age, not date of birth.",
+    "placeholder": "34",
+    "errors": {
+     "required": "Please enter a valid age",
+     "invalidFormat": "Age must be a whole number between 0 and 120"
+    },
+    "type": "text",
+    "required": true,
+    "pattern": "^(\\d{1,2}|1[01]\\d|120)$"
+   },
+   "arrival_date": {
+    "label": "Arrival date in India (IST)",
+    "help": "dd-mm-yyyy in India time. The form opens 72 hours before arrival: on 18 November 2026 its date picker allowed 18 to 21 November. Arrival time is a separate 15-minute list.",
+    "placeholder": "21-11-2026",
+    "errors": {
+     "required": "Please choose a valid arrival date",
+     "invalidFormat": "Use dd-mm-yyyy",
+     "tooEarly": "The arrival date cannot be in the past",
+     "tooLate": "Too early: the form can only be filled up to 72 hours before arrival in India",
+     "invalidMonth": "Month must be 01-12",
+     "invalidDay": "That day does not exist in this month",
+     "invalid": "Not a real date"
+    },
+    "type": "date",
+    "required": true,
+    "format": "DD-MM-YYYY",
+    "minDaysFromToday": 0,
+    "maxDaysFromToday": 3
+   },
+   "mobile_india": {
+    "label": "Mobile number, if Indian (+91)",
+    "help": "Only for a +91 number: 10 digits starting with 6, 7, 8 or 9, no country code. The OTP goes to this number and to your email.",
+    "placeholder": "9812345678",
+    "errors": {
+     "invalidFormat": "Enter a valid Indian mobile number (10 digits starting with 6, 7, 8, or 9)",
+     "required": "Please enter your mobile number"
+    },
+    "type": "phone",
+    "required": false,
+    "pattern": "^[6-9]\\d{9}$",
+    "maxLength": 10
+   },
+   "mobile_other": {
+    "label": "Mobile number, if not Indian",
+    "help": "7 to 15 digits; the country code is chosen in a separate list. With a non-Indian number the OTP is sent by email only.",
+    "placeholder": "9012345678",
+    "errors": {
+     "invalidFormat": "Enter a valid mobile number (7–15 digits)",
+     "required": "Please enter your mobile number"
+    },
+    "type": "phone",
+    "required": false,
+    "pattern": "^\\d{7,15}$",
+    "maxLength": 15
+   },
+   "email": {
+    "label": "Email address",
+    "help": "Your own address, not a travel agent's: the OTP, the confirmation and later edits all go through it.",
+    "placeholder": "name@example.com",
+    "errors": {
+     "required": "Email is required",
+     "invalidFormat": "Must look like name@example.com",
+     "tooLong": "Email is too long"
+    },
+    "type": "email",
     "required": true
    }
   },
@@ -2276,6 +2433,86 @@
     "pattern": "^[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$",
     "maxLength": 100
    }
+  },
+  "vietnam_prearrival": {
+   "arrival_date": {
+    "label": "Expected arrival date",
+    "help": "DD/MM/YYYY. The portal says: 'The expected arrival date must be today or within the next 2 days.' Open it once your arrival is at most two calendar days away.",
+    "placeholder": "20/11/2026",
+    "errors": {
+     "required": "Expected arrival date is required",
+     "invalidFormat": "Use DD/MM/YYYY",
+     "tooEarly": "The expected arrival date must be today or within the next 2 days",
+     "tooLate": "Too early to submit: the expected arrival date must be today or within the next 2 days",
+     "invalidMonth": "Month must be 01-12",
+     "invalidDay": "That day does not exist in this month",
+     "invalid": "Not a real date"
+    },
+    "type": "date",
+    "required": true,
+    "format": "DD/MM/YYYY",
+    "minDaysFromToday": 0,
+    "maxDaysFromToday": 2
+   },
+   "date_of_birth": {
+    "label": "Date of birth",
+    "help": "As on the passport. The portal rejects a date in the future.",
+    "placeholder": "22/08/1991",
+    "errors": {
+     "required": "Date of birth is required",
+     "invalidFormat": "Use DD/MM/YYYY",
+     "tooLate": "Date of birth cannot be in the future.",
+     "invalidMonth": "Month must be 01-12",
+     "invalidDay": "That day does not exist in this month",
+     "invalid": "Not a real date"
+    },
+    "type": "date",
+    "required": true,
+    "format": "DD/MM/YYYY",
+    "maxDaysFromToday": 0
+   },
+   "passport_expiry": {
+    "label": "Passport expiry date",
+    "help": "The portal rejects an expired passport. It also checks that a visa ends at least 30 days before the passport does. This field cannot be changed later; a wrong value means a new declaration.",
+    "placeholder": "22/08/2031",
+    "errors": {
+     "required": "Passport expiry date is required",
+     "invalidFormat": "Use DD/MM/YYYY",
+     "tooEarly": "Passport expiry date cannot be in the past.",
+     "invalidMonth": "Month must be 01-12",
+     "invalidDay": "That day does not exist in this month",
+     "invalid": "Not a real date"
+    },
+    "type": "date",
+    "required": true,
+    "format": "DD/MM/YYYY",
+    "minDaysFromToday": 0
+   },
+   "phone": {
+    "label": "Phone number (without country code)",
+    "help": "Digits only, 3 to 14. The country code is a separate box.",
+    "placeholder": "4155550100",
+    "errors": {
+     "required": "Phone number is required",
+     "invalidFormat": "The phone number must contain only digits and be between 3 and 14 characters long."
+    },
+    "type": "phone",
+    "required": true,
+    "pattern": "^\\d{3,14}$",
+    "maxLength": 14
+   },
+   "email": {
+    "label": "Email address",
+    "help": "A 6-digit code is sent here before you submit, and the lookup and update service sends its OTP here too. Use an inbox you control.",
+    "placeholder": "name@example.com",
+    "errors": {
+     "required": "Email is required",
+     "invalidFormat": "Invalid email format",
+     "tooLong": "Email address is too long."
+    },
+    "type": "email",
+    "required": true
+   }
   }
  },
  "tree": {
@@ -2334,7 +2571,8 @@
     "jordan": "Jordan",
     "china": "China",
     "south-africa": "South Africa",
-    "nigeria": "Nigeria"
+    "nigeria": "Nigeria",
+    "ghana": "Ghana"
    }
   },
   "thailand_result": {
@@ -2429,9 +2667,16 @@
   },
   "vietnam_visa_exempt": {
    "summary": "You can enter Vietnam visa-free for tourism (typically 15-45 days, depending on your nationality).",
-   "note": "No e-visa needed for visa-exempt nationalities. Just bring your passport. Verify your specific stay limit on the official Vietnam Immigration Department page before flying.",
+   "note": "No e-visa needed for visa-exempt nationalities. File the free Pre-Arrival Information before you land: required at Tan Son Nhat (SGN) since 15 April 2026 and, per a U.S. Embassy notice, being extended to all airports. Verify your stay limit on the official Vietnam Immigration Department page before flying.",
    "fallback_label": "Read the e-visa guide for context",
-   "forms": []
+   "forms": [
+    {
+     "name": "Pre-Arrival Information",
+     "fee": "FREE",
+     "agency": "Immigration Department, Ministry of Public Security",
+     "deadline": "Arrival today or within the next 2 days"
+    }
+   ]
   },
   "vietnam_need_evisa": {
    "summary": "You need a Vietnam E-Visa.",
@@ -2442,6 +2687,12 @@
      "fee": "$25 USD",
      "agency": "Vietnam Immigration Department",
      "deadline": "Apply 3-5 working days before flight"
+    },
+    {
+     "name": "Pre-Arrival Information",
+     "fee": "FREE",
+     "agency": "Immigration Department, Ministry of Public Security",
+     "deadline": "Arrival today or within the next 2 days"
     }
    ]
   },
@@ -2752,14 +3003,20 @@
    }
   },
   "india_earrival_result": {
-   "summary": "You need to file the free India e-Arrival Card.",
-   "note": "Foreign nationals, including OCI cardholders, submit the free e-Arrival Card. It records arrival information and does not replace a visa or OCI status.",
+   "summary": "You need to file the free India e-Arrival Card and the free Air Suvidha 2.0 health declaration.",
+   "note": "Foreign nationals, including OCI cardholders, submit the free e-Arrival Card. It records arrival information and does not replace a visa or OCI status. Air Suvidha 2.0 is a separate free health declaration for every international air arrival.",
    "forms": [
     {
      "name": "e-Arrival Card",
      "fee": "FREE",
      "agency": "Bureau of Immigration, Ministry of Home Affairs",
      "deadline": "Within 72 hours before arrival"
+    },
+    {
+     "name": "Air Suvidha 2.0 health declaration",
+     "fee": "FREE",
+     "agency": "Ministry of Health & Family Welfare / Ministry of Civil Aviation",
+     "deadline": "Up to 72 hours before arrival"
     }
    ]
   },
@@ -2778,6 +3035,12 @@
      "fee": "Varies by nationality and validity",
      "agency": "Bureau of Immigration, Ministry of Home Affairs",
      "deadline": "Apply before travel; check eligibility and the permitted entry ports"
+    },
+    {
+     "name": "Air Suvidha 2.0 health declaration",
+     "fee": "FREE",
+     "agency": "Ministry of Health & Family Welfare / Ministry of Civil Aviation",
+     "deadline": "Up to 72 hours before arrival"
     }
    ]
   },
@@ -2791,6 +3054,12 @@
      "fee": "FREE",
      "agency": "Bureau of Immigration, Ministry of Home Affairs",
      "deadline": "Within 72 hours before arrival"
+    },
+    {
+     "name": "Air Suvidha 2.0 health declaration",
+     "fee": "FREE",
+     "agency": "Ministry of Health & Family Welfare / Ministry of Civil Aviation",
+     "deadline": "Up to 72 hours before arrival"
     }
    ]
   },
@@ -3975,6 +4244,18 @@
      "fee": "FREE",
      "agency": "Nigeria Immigration Service",
      "deadline": "Complete before boarding and before departure immigration checks; no specific advance-hour window is verified in this guide."
+    }
+   ]
+  },
+  "ghana_result": {
+   "summary": "You need the free Ghana Health Declaration.",
+   "note": "Required for all arriving passengers. A parent or guardian completes it for a child under 12. Show the QR code to Port Health on arrival. ghs-hdf.org is not the form. Visa requirements are separate.",
+   "forms": [
+    {
+     "name": "Health Declaration",
+     "fee": "FREE",
+     "agency": "Port Health Department, Ministry of Health / Ghana Health Service",
+     "deadline": "Within 48 hours before departure"
     }
    ]
   }

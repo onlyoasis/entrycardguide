@@ -19,7 +19,7 @@
 // drift at midnight. Freshness comes from the real last_verified dates inside
 // the data itself.
 
-import { readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import TOML from "@iarna/toml";
 import { validatePublicTravelLibrary } from "./travel-library-public.mjs";
@@ -144,7 +144,11 @@ const snapshot = {
     countries.map((c) => [c.slug, readJson(`data/rules/${c.slug}.json`)]),
   ),
   fieldGuides: Object.fromEntries(
-    countries.map((c) => [c.slug, readToml(`data/fields/${c.slug}.toml`).fields ?? []]),
+    // A country without a how-to-fill page (Ghana) has no fields file.
+    countries.map((c) => {
+      const file = `data/fields/${c.slug}.toml`;
+      return [c.slug, existsSync(path.join(ROOT, file)) ? readToml(file).fields ?? [] : []];
+    }),
   ),
   changelogs: Object.fromEntries(
     countries.map((c) => [c.slug, readToml(`data/changelog/${c.slug}.toml`).entries ?? []]),

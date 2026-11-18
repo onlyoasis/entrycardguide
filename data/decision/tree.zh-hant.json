@@ -271,6 +271,11 @@
      "value": "nigeria",
      "label": "奈及利亞",
      "next": "nigeria_transit"
+    },
+    {
+     "value": "ghana",
+     "label": "迦納",
+     "next": "ghana_result"
     }
    ]
   },
@@ -453,8 +458,18 @@
    "type": "result",
    "country": "vietnam",
    "summary": "你可免簽入境越南觀光（一般 15–45 天，依國籍而定）。",
-   "forms": [],
-   "note": "免簽國籍不需要電子簽。帶好護照即可。出發前請在越南移民局官方頁面確認你的具體停留上限。",
+   "forms": [
+    {
+     "name": "入境前申報（Pre-Arrival）",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://prearrival.immigration.gov.vn/",
+     "guide": "/zh-hant/vietnam/pre-arrival/",
+     "agency": "越南公安部出入境管理局",
+     "deadline": "抵達日為今天或之後兩天內時填寫"
+    }
+   ],
+   "note": "免簽國籍不需要電子簽。落地前請免費填寫入境前申報：胡志明市新山一機場（SGN）自 2026 年 4 月 15 日起要求填寫；美國駐越使館通知稱正擴展到所有機場。出發前請在越南出入境管理局官方頁面核對你的停留期限。",
    "fallback_guide": "/zh-hant/vietnam/evisa/",
    "fallback_label": "先讀電子簽指南了解背景"
   },
@@ -471,6 +486,15 @@
      "guide": "/zh-hant/vietnam/evisa/",
      "agency": "越南移民局",
      "deadline": "航班前 3–5 個工作日申請"
+    },
+    {
+     "name": "入境前申報（Pre-Arrival）",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://prearrival.immigration.gov.vn/",
+     "guide": "/zh-hant/vietnam/pre-arrival/",
+     "agency": "越南公安部出入境管理局",
+     "deadline": "抵達日為今天或之後兩天內時填寫"
     }
    ],
    "note": "25 美元是官方政府費用。多收你錢的就是中介。多次入境（50 美元）與加急（加收 50 美元）同樣是政府檔位。商業網站對同一份電子簽通常收 99–179 美元。"
@@ -1000,7 +1024,7 @@
   "india_earrival_result": {
    "type": "result",
    "country": "india",
-   "summary": "你需要填寫免費的印度 e-Arrival Card。",
+   "summary": "你需要填免費的印度 e-Arrival Card，以及免費的 Air Suvidha 2.0 健康申報。",
    "forms": [
     {
      "name": "e-Arrival Card",
@@ -1010,9 +1034,18 @@
      "guide": "/zh-hant/india/e-arrival-card/",
      "agency": "印度內政部移民局",
      "deadline": "抵達前 72 小時內"
+    },
+    {
+     "name": "Air Suvidha 2.0 健康申報",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://airsuvidha.civilaviation.gov.in/",
+     "guide": "/zh-hant/india/air-suvidha/",
+     "agency": "印度衛生與家庭福利部／民航部",
+     "deadline": "抵達前 72 小時內"
     }
    ],
-   "note": "外國國民（包括 OCI 卡持有人）都需提交免費的 e-Arrival Card。它記錄入境資訊，不能取代簽證或 OCI 身分。"
+   "note": "外國國民（包括 OCI 卡持有人）都需提交免費的 e-Arrival Card。它記錄入境資訊，不能取代簽證或 OCI 身分。Air Suvidha 2.0 是另一份免費健康申報，所有坐國際航班入境的旅客都要填。"
   },
   "india_both_result": {
    "type": "result",
@@ -1036,6 +1069,15 @@
      "guide": "/zh-hant/india/e-arrival-card/",
      "agency": "印度內政部移民局",
      "deadline": "出發前申請；請確認資格與獲准入境口岸"
+    },
+    {
+     "name": "Air Suvidha 2.0 健康申報",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://airsuvidha.civilaviation.gov.in/",
+     "guide": "/zh-hant/india/air-suvidha/",
+     "agency": "印度衛生與家庭福利部／民航部",
+     "deadline": "抵達前 72 小時內"
     }
    ],
    "note": "這是兩條獨立的官方程序。e-Arrival Card 免費。電子簽費用依國籍與效期而異，另有 3% 銀行手續費，且首次入境只能經列明的機場與海港。"
@@ -1052,6 +1094,15 @@
      "url": "https://indianvisaonline.gov.in/earrival/",
      "guide": "/zh-hant/india/e-arrival-card/",
      "agency": "印度內政部移民局",
+     "deadline": "抵達前 72 小時內"
+    },
+    {
+     "name": "Air Suvidha 2.0 健康申報",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://airsuvidha.civilaviation.gov.in/",
+     "guide": "/zh-hant/india/air-suvidha/",
+     "agency": "印度衛生與家庭福利部／民航部",
      "deadline": "抵達前 72 小時內"
     }
    ],
@@ -3087,6 +3138,23 @@
     }
    ],
    "note": "在官方入口選擇離境申請；先前入境卡不能完成此獨立離境步驟。每位旅客單獨提交，再保存郵件並下載、列印卡片或確認。缺漏或錯誤時依入口說明與NIS支援辦理，不假定舊紀錄會自動更正。"
+  },
+  "ghana_result": {
+   "type": "result",
+   "country": "ghana",
+   "summary": "你需要填免費的迦納健康申報。",
+   "forms": [
+    {
+     "name": "健康申報",
+     "fee": "FREE",
+     "feeDisplay": "免費",
+     "url": "https://ehds.ghs.gov.gh/declaration",
+     "guide": "/zh-hant/ghana/health-declaration/",
+     "agency": "迦納衛生部／迦納衛生局 衛生檢疫部門",
+     "deadline": "出發前 48 小時內"
+    }
+   ],
+   "note": "所有入境旅客必填。12 歲以下兒童由父母或監護人代填。抵達時把 QR 碼給衛生檢疫官看。ghs-hdf.org 不是申報表。簽證要求另計。"
   }
  }
 }

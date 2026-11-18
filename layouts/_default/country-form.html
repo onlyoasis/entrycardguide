@@ -9,9 +9,11 @@
 {{- $data := index hugo.Data.official_urls $country -}}
 {{- $meta := $data.meta -}}
 {{- $news := $data.news -}}
-{{- $formCode := $meta.form_code -}}
+{{- /* A country's second form (India Air Suvidha, Vietnam Pre-Arrival) sets
+       form_code / since in front matter; the [meta] values describe the main form. */ -}}
+{{- $formCode := .Params.form_code | default $meta.form_code -}}
 {{- $formName := index $meta (printf "form_name_%s" $suffix) -}}
-{{- $since := index $meta (printf "since_%s" $suffix) -}}
+{{- $since := .Params.since | default (index $meta (printf "since_%s" $suffix)) -}}
 {{- $fee := index $meta (printf "fee_%s" $suffix) -}}
 {{- /* Short country name. The hub's .Parent.Title is the SEO-loaded long form
        in ZH ("新加坡 SGAC 官方网站..."); use the [meta] short name everywhere

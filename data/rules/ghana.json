@@ -1,0 +1,59 @@
+{
+  "country": "ghana",
+  "officialUrl": "https://ehds.ghs.gov.gh/declaration",
+  "lastVerified": "2026-11-18",
+  "source": "https://ehds.ghs.gov.gh/declaration (form steps and the length checks in its loaded scripts, read 2026-11-18 in a browser). Only length limits were readable; the form was not submitted.",
+  "fields": {
+    "document_number": {
+      "type": "text",
+      "label": "Passport or ID number",
+      "required": true,
+      "pattern": "^\\S.{0,28}\\S$",
+      "maxLength": 30,
+      "placeholder": "G1234567",
+      "help": "The form takes a passport, a national ID card or another document, and its number must be 2 to 30 characters.",
+      "errors": {
+        "required": "Document number is required",
+        "invalidFormat": "2 to 30 characters, as printed on the document",
+        "tooLong": "Max 30 characters"
+      }
+    },
+    "flight_number": {
+      "type": "text",
+      "label": "Flight number",
+      "required": true,
+      "maxLength": 20,
+      "placeholder": "KQ 512",
+      "help": "For arrivals by air, up to 20 characters. The form's own example is KQ 512. Land and sea arrivals get vehicle or vessel fields instead.",
+      "errors": {
+        "required": "Flight number is required",
+        "tooLong": "Max 20 characters"
+      }
+    },
+    "seat_number": {
+      "type": "text",
+      "label": "Seat number (optional)",
+      "required": false,
+      "maxLength": 10,
+      "placeholder": "14A",
+      "help": "Optional, up to 10 characters.",
+      "errors": {
+        "tooLong": "Max 10 characters",
+        "required": "Seat number is optional"
+      }
+    },
+    "email": {
+      "type": "email",
+      "label": "Email (optional)",
+      "required": false,
+      "maxLength": 254,
+      "placeholder": "name@example.com",
+      "help": "Optional, up to 254 characters. The form also asks for a phone number and how Port Health can reach you.",
+      "errors": {
+        "invalidFormat": "Must look like name@example.com",
+        "tooLong": "Max 254 characters",
+        "required": "Email is optional"
+      }
+    }
+  }
+}

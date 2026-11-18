@@ -3,7 +3,7 @@ title: "India e-Arrival Card Official Site: Is It Free? (2026)"
 kicker: "The e-Arrival Card is free for foreign travellers. Submit it within 72 hours before arrival."
 description: "Use the India e-Arrival Card official site for free. Learn who must file, the 72-hour rule, separate e-Visa fees, and eligible entry ports."
 date: 2026-07-14
-lastmod: 2026-11-16
+lastmod: 2026-11-18
 country: "india"
 weight: 10
 keywords: ["india e-arrival card official", "India e-Arrival Card official site", "is India e-Arrival Card free", "India arrival card", "India eVisa official site"]
@@ -40,6 +40,10 @@ The official service does not charge a filing fee. A site charging £15 or $59.9
 Submit during the 72 hours immediately before reaching India. For example, if the flight lands at 18:00 on July 20, the filing window starts at 18:00 on July 17.
 
 Use the local arrival date shown by the airline, not the date the journey begins. Save the digital confirmation or reference after submission.
+
+## Air Suvidha 2.0 is a second free form
+
+Since a June 2026 health advisory, every international air arrival also files the Air Suvidha 2.0 health declaration at `airsuvidha.civilaviation.gov.in`, up to 72 hours before arrival. It is free, and Indian citizens file it too. Foreign nationals therefore file two forms. See the [Air Suvidha 2.0 guide](/india/air-suvidha/) for a side-by-side table.
 
 ## e-Visa is a separate paid procedure
 

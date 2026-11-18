@@ -28,6 +28,7 @@ const ZHT = {
   china: "中國",
   "south-africa": "南非",
   nigeria: "奈及利亞",
+  ghana: "迦納",
   indonesia: "印尼",
   malaysia: "馬來西亞",
   singapore: "新加坡",

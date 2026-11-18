@@ -64,9 +64,13 @@
         <td>
           <a href="{{ $guidePath }}" class="text-ink underline underline-offset-4">{{ $official.name }}</a>
           <div class="text-xs text-muted mt-2">
+            {{- /* Not every country has a how-to-fill page (Ghana). */ -}}
+            {{- $howTo := site.GetPage (printf "/%s/how-to-fill" .key) }}
+            {{- with $howTo }}
             <a href="{{ printf "%show-to-fill/" $countryPath }}" class="text-muted underline underline-offset-4">{{ i18n "directory_how_to_fill" }}</a>
+            {{- end }}
             {{- with $official.archive_url }}
-            <span aria-hidden="true"> · </span>
+            {{- if $howTo }}<span aria-hidden="true"> · </span>{{ end }}
             <a href="{{ . }}" rel="noopener" class="text-muted underline underline-offset-4">{{ i18n "directory_archive" }}</a>
             {{- end }}
           </div>

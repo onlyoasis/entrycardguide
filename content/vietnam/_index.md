@@ -2,7 +2,7 @@
 title: "Vietnam"
 kicker: "Everything you need to know about the Vietnam E-Visa, without paying a middleman a 4x markup."
 description: "Free, independent guide to Vietnam's official E-Visa. The government fee is $25. Middlemen charge $80-200 for the same form."
-lastmod: 2026-11-16
+lastmod: 2026-11-18
 ---
 
 Vietnam's E-Visa is filed at `evisa.gov.vn`. Unlike Thailand's TDAC or Malaysia's MDAC, Vietnam's e-visa **has a real government fee**: $25 USD single-entry, $50 USD multiple-entry. That fee is real and paid to the Vietnamese government.
@@ -16,6 +16,10 @@ The scam isn't that the form is free. The scam is that **middlemen charge $80 to
 ### 1. The E-Visa, explained without the markup
 Who needs an e-visa, the real $25 fee, the official site, and how middlemen extract 4x more.
 → [Read the overview](/vietnam/evisa/)
+
+### 2. The free Pre-Arrival form, filed before you land
+Separate from the e-visa. Which airports require it, the two-day window, and the QR code.
+→ [Read the Pre-Arrival guide](/vietnam/pre-arrival/)
 
 ## Who applies, and who does not
 

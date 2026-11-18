@@ -510,3 +510,48 @@ test("Canada eTA: required free-text fields can no longer be left blank", () => 
   assert.equal(check("", CA.home_address).ok, false);
   assert.equal(check("12 MAPLE ST, TORONTO ON M5V 2T6", CA.home_address).ok, true);
 });
+
+const AS = rules("india_air_suvidha");
+test("Air Suvidha: arrival dd-mm-yyyy, today to 3 days ahead", () => {
+  assert.equal(check("12-05-2026", AS.arrival_date).ok, true);
+  assert.equal(check("15-05-2026", AS.arrival_date).ok, true);
+  assert.equal(check("16-05-2026", AS.arrival_date).ok, false);
+  assert.equal(check("11-05-2026", AS.arrival_date).ok, false);
+  assert.equal(check("12/05/2026", AS.arrival_date).ok, false);
+});
+test("Air Suvidha: name, passport, age and mobiles follow the form", () => {
+  assert.equal(check("O'NEIL-SMITH, JR.", AS.full_name).ok, true);
+  assert.equal(check("AB", AS.full_name).ok, false);
+  assert.equal(check("R2D2", AS.full_name).ok, false);
+  assert.equal(check("A1234567", AS.passport_number).ok, true);
+  assert.equal(check("A12345", AS.passport_number).ok, false);
+  assert.equal(check("0", AS.age).ok, true);
+  assert.equal(check("120", AS.age).ok, true);
+  assert.equal(check("121", AS.age).ok, false);
+  assert.equal(check("9812345678", AS.mobile_india).ok, true);
+  assert.equal(check("5812345678", AS.mobile_india).ok, false);
+  assert.equal(check("", AS.mobile_india).ok, true);
+  assert.equal(check("123456", AS.mobile_other).ok, false);
+});
+
+const VNP = rules("vietnam_prearrival");
+test("Vietnam Pre-Arrival: arrival today to 2 days ahead; phone 3 to 14 digits", () => {
+  assert.equal(check("12/05/2026", VNP.arrival_date).ok, true);
+  assert.equal(check("14/05/2026", VNP.arrival_date).ok, true);
+  assert.equal(check("15/05/2026", VNP.arrival_date).ok, false);
+  assert.equal(check("11/05/2026", VNP.arrival_date).ok, false);
+  assert.equal(check("11/05/2026", VNP.passport_expiry).ok, false);
+  assert.equal(check("4155550100", VNP.phone).ok, true);
+  assert.equal(check("+1 415", VNP.phone).ok, false);
+  assert.equal(check("12", VNP.phone).ok, false);
+});
+
+const GH = rules("ghana");
+test("Ghana Health Declaration: document 2 to 30, flight up to 20", () => {
+  assert.equal(check("G1234567", GH.document_number).ok, true);
+  assert.equal(check("G", GH.document_number).ok, false);
+  assert.equal(check("A".repeat(31), GH.document_number).ok, false);
+  assert.equal(check("KQ 512", GH.flight_number).ok, true);
+  assert.equal(check("A".repeat(21), GH.flight_number).ok, false);
+  assert.equal(check("", GH.seat_number).ok, true);
+});

@@ -59,7 +59,8 @@
         { "value": "jordan", "label": "Jordan", "next": "jordan_restricted" },
         {"value": "china", "label": "China", "next": "china_exempt"},
         {"value": "south-africa", "label": "South Africa", "next": "south_africa_transit"},
-        {"value": "nigeria", "label": "Nigeria", "next": "nigeria_transit"}
+        {"value": "nigeria", "label": "Nigeria", "next": "nigeria_transit"},
+        {"value": "ghana", "label": "Ghana", "next": "ghana_result"}
       ]
     },
 
@@ -186,8 +187,17 @@
       "type": "result",
       "country": "vietnam",
       "summary": "You can enter Vietnam visa-free for tourism (typically 15-45 days, depending on your nationality).",
-      "forms": [],
-      "note": "No e-visa needed for visa-exempt nationalities. Just bring your passport. Verify your specific stay limit on the official Vietnam Immigration Department page before flying.",
+      "forms": [
+        {
+          "name": "Pre-Arrival Information",
+          "fee": "FREE",
+          "url": "https://prearrival.immigration.gov.vn/",
+          "guide": "/vietnam/pre-arrival/",
+          "agency": "Immigration Department, Ministry of Public Security",
+          "deadline": "Arrival today or within the next 2 days"
+        }
+      ],
+      "note": "No e-visa needed for visa-exempt nationalities. File the free Pre-Arrival Information before you land: required at Tan Son Nhat (SGN) since 15 April 2026 and, per a U.S. Embassy notice, being extended to all airports. Verify your stay limit on the official Vietnam Immigration Department page before flying.",
       "fallback_guide": "/vietnam/evisa/",
       "fallback_label": "Read the e-visa guide for context"
     },
@@ -203,6 +213,14 @@
           "guide": "/vietnam/evisa/",
           "agency": "Vietnam Immigration Department",
           "deadline": "Apply 3-5 working days before flight"
+        },
+        {
+          "name": "Pre-Arrival Information",
+          "fee": "FREE",
+          "url": "https://prearrival.immigration.gov.vn/",
+          "guide": "/vietnam/pre-arrival/",
+          "agency": "Immigration Department, Ministry of Public Security",
+          "deadline": "Arrival today or within the next 2 days"
         }
       ],
       "note": "$25 USD is the official government fee. Anyone charging more is a middleman. Multi-entry option ($50) and express ($50 surcharge) are also government tiers. Commercial sites typically charge $99-179 for the same e-visa."
@@ -623,7 +641,7 @@
     "india_earrival_result": {
       "type": "result",
       "country": "india",
-      "summary": "You need to file the free India e-Arrival Card.",
+      "summary": "You need to file the free India e-Arrival Card and the free Air Suvidha 2.0 health declaration.",
       "forms": [
         {
           "name": "e-Arrival Card",
@@ -632,9 +650,17 @@
           "guide": "/india/e-arrival-card/",
           "agency": "Bureau of Immigration, Ministry of Home Affairs",
           "deadline": "Within 72 hours before arrival"
+        },
+        {
+          "name": "Air Suvidha 2.0 health declaration",
+          "fee": "FREE",
+          "url": "https://airsuvidha.civilaviation.gov.in/",
+          "guide": "/india/air-suvidha/",
+          "agency": "Ministry of Health & Family Welfare / Ministry of Civil Aviation",
+          "deadline": "Up to 72 hours before arrival"
         }
       ],
-      "note": "Foreign nationals, including OCI cardholders, submit the free e-Arrival Card. It records arrival information and does not replace a visa or OCI status."
+      "note": "Foreign nationals, including OCI cardholders, submit the free e-Arrival Card. It records arrival information and does not replace a visa or OCI status. Air Suvidha 2.0 is a separate free health declaration for every international air arrival."
     },
     "india_both_result": {
       "type": "result",
@@ -656,6 +682,14 @@
           "guide": "/india/e-arrival-card/",
           "agency": "Bureau of Immigration, Ministry of Home Affairs",
           "deadline": "Apply before travel; check eligibility and the permitted entry ports"
+        },
+        {
+          "name": "Air Suvidha 2.0 health declaration",
+          "fee": "FREE",
+          "url": "https://airsuvidha.civilaviation.gov.in/",
+          "guide": "/india/air-suvidha/",
+          "agency": "Ministry of Health & Family Welfare / Ministry of Civil Aviation",
+          "deadline": "Up to 72 hours before arrival"
         }
       ],
       "note": "These are separate official procedures. The e-Arrival Card is free. e-Visa fees vary by nationality and validity, carry an additional 3% bank charge, and permit first entry only through listed airports and seaports."
@@ -672,6 +706,14 @@
           "guide": "/india/e-arrival-card/",
           "agency": "Bureau of Immigration, Ministry of Home Affairs",
           "deadline": "Within 72 hours before arrival"
+        },
+        {
+          "name": "Air Suvidha 2.0 health declaration",
+          "fee": "FREE",
+          "url": "https://airsuvidha.civilaviation.gov.in/",
+          "guide": "/india/air-suvidha/",
+          "agency": "Ministry of Health & Family Welfare / Ministry of Civil Aviation",
+          "deadline": "Up to 72 hours before arrival"
         }
       ],
       "note": "The free e-Arrival Card does not grant permission to travel. Check whether your passport and trip require an e-Visa or another Indian visa on the official indianvisaonline.gov.in service before departure.",
@@ -2761,6 +2803,22 @@
           }
         ],
         "note": "Select the departure application in the official portal; an earlier Landing Card does not complete this separate departure step. Submit each traveller individually, then save the email and download and print the card or confirmation. For missing or incorrect details, use the portal guidance and NIS support rather than assuming the earlier record will be corrected automatically."
+      },
+      "ghana_result": {
+        "type": "result",
+        "country": "ghana",
+        "summary": "You need the free Ghana Health Declaration.",
+        "forms": [
+          {
+            "name": "Health Declaration",
+            "fee": "FREE",
+            "url": "https://ehds.ghs.gov.gh/declaration",
+            "guide": "/ghana/health-declaration/",
+            "agency": "Port Health Department, Ministry of Health / Ghana Health Service",
+            "deadline": "Within 48 hours before departure"
+          }
+        ],
+        "note": "Required for all arriving passengers. A parent or guardian completes it for a child under 12. Show the QR code to Port Health on arrival. ghs-hdf.org is not the form. Visa requirements are separate."
       }
   }
 }

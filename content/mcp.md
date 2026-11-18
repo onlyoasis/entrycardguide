@@ -18,7 +18,7 @@ Registration and sign-in do not grant MCP access. On the account page, explicitl
 |---|---|
 | `list_countries` | All 249 destinations, their review status, library link and available guide |
 | `get_jurisdiction` | Public source-backed declaration items, original verification dates, sources and coverage for one destination |
-| `get_country_forms` | Official links and fees for one of the 53 detailed form guides |
+| `get_country_forms` | Official links and fees for one of the 54 detailed form guides |
 | `get_field_rules` | Published field rules or preparation notes, with their validation mode |
 | `get_field_guide` | Field examples and filling guidance in English, Simplified or Traditional Chinese |
 | `run_decision_tree` | Supported guide questions, fees and filing instructions |

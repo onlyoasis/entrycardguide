@@ -3,7 +3,7 @@ title: "印度 e-Arrival Card 免费吗？官网与 e-Visa 费用（2026）"
 kicker: "外国旅客要免费填写 e-Arrival Card，并在抵达前 72 小时内提交。"
 description: "印度 e-Arrival Card 中文指南：免费官网、适用人群、72 小时规则、另行办理的 e-Visa 费用和指定入境口岸。"
 date: 2026-07-14
-lastmod: 2026-11-16
+lastmod: 2026-11-18
 country: "india"
 weight: 10
 keywords: ["印度入境卡", "印度 e-Arrival Card 官网", "印度入境卡免费吗", "印度电子签多少钱", "India eVisa 官网"]
@@ -40,6 +40,10 @@ layout: country-form
 要在抵达印度前连续 72 小时内提交。例如航班在 7 月 20 日 18:00 落地，窗口从 7 月 17 日 18:00 开始。
 
 日期按航班抵达印度的当地日期填写，不是出发日期。提交后保存电子确认或参考编号。
+
+## Air Suvidha 2.0 是第二张免费表
+
+印度 2026 年 6 月发布卫生通告后，所有坐国际航班入境的旅客还要在 `airsuvidha.civilaviation.gov.in` 填 Air Suvidha 2.0 健康申报，抵达前 72 小时内可填。它免费，印度公民也要填。所以外国公民要填两张表。两张表的对照见 [Air Suvidha 2.0 指南](/zh/india/air-suvidha/)。
 
 ## e-Visa 是另一项收费手续
 

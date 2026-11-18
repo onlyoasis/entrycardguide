@@ -130,3 +130,25 @@ name = "Indian Visa Online: e-Arrival Card notice"
 agency = "Bureau of Immigration, Ministry of Home Affairs"
 last_verified = "2026-11-16"
 notes = "Read 2026-11-06 for the hub page's who-files section. Home page notice: foreign nationals and OCI/eOCI cardholders must complete and submit the e-Arrival Card."
+
+# ---- Air Suvidha 2.0 health self-declaration, added 2026-11-18 ----
+[air_suvidha]
+url = "https://airsuvidha.civilaviation.gov.in/"
+name = "Official Air Suvidha 2.0 Self Declaration Form"
+agency = "Ministry of Health & Family Welfare / Ministry of Civil Aviation"
+last_verified = "2026-11-18"
+notes = "Read 2026-11-18 in a browser (curl and WebFetch get 403). Form page: 'Passenger can fill the application up to 72 hrs before arriving in India.' The arrival-date picker allowed 2026-11-18 to 2026-11-21 that day; arrival time is IST. Footer 'Last Updated: 7 Oct 2026'; helpline 1075, idsp-alert@nic.in. Front-end checks (assets/index-B8XoKYWM.js): full name 3 to 120 characters, letters with spaces, hyphens, apostrophes, commas and periods; passport number 7 to 20, letters and digits (/^[A-Z0-9]+$/i), Indian passports 7 to 8 characters with up to 2 letters at the start; age 0 to 120; Indian mobile /^[6-9]\\d{9}$/, other mobiles 7 to 15 digits; seat number optional, max 4. We did not submit the form."
+
+[air_suvidha_faq]
+url = "https://airsuvidha.civilaviation.gov.in/faq"
+name = "FAQs on Self-Declaration in Air Suvidha 2.0"
+agency = "Ministry of Health & Family Welfare / Ministry of Civil Aviation"
+last_verified = "2026-11-18"
+notes = "Read 2026-11-18 in a browser. Advisory: per the June 2026 travel advisory of the Directorate General of Health Services, 'all air travelers arriving in India are required to fill a Self-Declaration Form in the Air Suvidha 2.0 portal in view of on-going Ebola disease outbreak.' Q3: 'All international travellers (Indian and Foreign nationals) and airline crew arriving in India should fill' it. Q4: departing passengers are not required. Q5: up to 4 family members per submission, each gets an individual SDF. Q7: 'preferably along with the Web Check-in', 'up to 72 hrs before arriving in India.' Q11: 'No. Submission of the Air Suvidha Self-Declaration Form is completely free.' Q16/Q28: edit until arrival in India, after that the APHO health desk. Q17: new form if the itinerary changes significantly. Q18: needed if you clear immigration in India. Q21: DR Congo, Uganda, South Sudan (the form also lists Kenya). Q27: do not give a travel agent's contact details. Q35: download and present at the immigration desk at the first international airport. Q37: does not replace immigration, visa or customs requirements. Q41: 'The official Air Suvidha service is completely free.' OCI: yes, choose Foreigner and 'OCI Card Holder Visa'. Families: infants need it; children may use a parent's email."
+
+[air_suvidha_instructions]
+url = "https://airsuvidha.civilaviation.gov.in/instructions"
+name = "Air Suvidha 2.0 passenger instructions"
+agency = "Ministry of Health & Family Welfare / Ministry of Civil Aviation"
+last_verified = "2026-11-18"
+notes = "Read 2026-11-18 in a browser: 'All international passengers arriving in India are required to submit a health self-declaration under the International Health Regulations (IHR) 2005'; four steps (personal and flight details; contact and OTP; health declaration, shown only after declaring Ebola-affected travel; consent and submit); amend up to the arrival date and time, then via the airport health desk; registration number, acknowledgement and confirmation email; an Airport Port Health Officer may screen."
