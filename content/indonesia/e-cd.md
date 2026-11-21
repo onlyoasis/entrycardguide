@@ -1,9 +1,9 @@
 ---
 title: "Indonesia All Indonesia / e-CD: Official Site, Free Customs Declaration, Bali Travel Guide (2026)"
 kicker: "Indonesia's All Indonesia arrival declaration includes the free e-CD customs record. Here is the official site, every field, and how to tell real from fake."
-description: "Free, independent 2026 guide to Indonesia's official All Indonesia arrival declaration at allindonesia.imigrasi.go.id. Every field explained, no fees, required for Bali / Jakarta / all ports."
+description: "Free, independent 2026 guide to Indonesia's official All Indonesia arrival declaration at allindonesia.imigrasi.go.id. Every field explained, no fees, required for Bali / Jakarta / air and sea ports."
 date: 2026-04-26
-lastmod: 2026-10-12
+lastmod: 2026-11-21
 country: "indonesia"
 weight: 10
 keywords: ["indonesia e-cd", "indonesia customs declaration", "allindonesia.imigrasi.go.id", "bali customs form", "bali arrival form", "indonesia customs online"]
@@ -11,7 +11,7 @@ faq:
   - q: "Is there a fee for Indonesia's e-CD?"
     a: "No. The All Indonesia / e-CD arrival declaration is free. The Indonesian government does not charge for it. The current official entry point is allindonesia.imigrasi.go.id and any declaration fee is from a middleman."
   - q: "What is the official Indonesia e-CD website?"
-    a: "Use allindonesia.imigrasi.go.id, the current unified arrival declaration entry point. The legacy ecd.beacukai.go.id customs portal still resolves, but it is no longer the primary traveler-facing URL."
+    a: "Use allindonesia.imigrasi.go.id for air and sea arrivals. Land border (PLBN) arrivals and international departures carrying declarable cash or goods still use the separate customs e-CD portal at ecd.beacukai.go.id."
   - q: "Do I need an e-CD if I'm flying to Bali?"
     a: "Yes. The e-CD is required for all arrivals into Indonesia, including Bali (DPS / Ngurah Rai International). You file it no earlier than 2 days before you land, once per trip."
   - q: "Is the e-CD the same as the Visa on Arrival (e-VOA)?"
@@ -35,7 +35,7 @@ The All Indonesia arrival declaration is the current digital entry point for arr
 
 It is free.
 
-No one can charge you for it. The current official destination is `allindonesia.imigrasi.go.id`. The old standalone customs portal at `ecd.beacukai.go.id` still resolves, but travelers should start from All Indonesia.
+No one can charge you for it. Air and sea arrivals file through `allindonesia.imigrasi.go.id`. Land border (PLBN) arrivals and international departures carrying declarable cash or goods still use the standalone customs e-CD portal at `ecd.beacukai.go.id`.
 
 ## What about a visa?
 

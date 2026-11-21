@@ -10,7 +10,7 @@ faq:
   - q: "印尼 e-CD 要收費嗎？"
     a: "不收。All Indonesia / e-CD 入境申報是免費的。印尼政府不為它收費。當前官方入口是 allindonesia.imigrasi.go.id，任何申報費都來自中介。"
   - q: "印尼 e-CD 的官方網址是什麼？"
-    a: "使用 allindonesia.imigrasi.go.id，這是當前統一入境申報入口。舊的 ecd.beacukai.go.id 海關門戶仍可解析，但不再作為主要旅客入口。"
+    a: "空路和海路入境使用 allindonesia.imigrasi.go.id。經陸路口岸（PLBN）入境，以及攜帶須申報現金或物品出境的旅客，仍使用獨立的印尼海關 e-CD 門戶 ecd.beacukai.go.id。"
   - q: "我去巴厘島也要填 e-CD 嗎？"
     a: "要。印尼所有入境點都要求 e-CD，包括巴厘島（DPS / 努拉萊國際機場）。最早落地前 2 天填，整趟行程只填一次。"
   - q: "e-CD 和落地簽 e-VOA 是同一回事嗎？"
@@ -35,7 +35,7 @@ All Indonesia 入境申報是當前面向旅客的數字入口。它包含原本
 
 它是免費的。
 
-沒有人能向你收這筆錢。當前官方目的地是 `allindonesia.imigrasi.go.id`。舊的獨立海關門戶 `ecd.beacukai.go.id` 仍可訪問，但旅客應從 All Indonesia 開始。
+沒有人能向你收這筆錢。空路和海路入境在 `allindonesia.imigrasi.go.id` 填報；經陸路口岸（PLBN）入境，以及攜帶須申報現金或物品出境的旅客，仍使用獨立的海關門戶 `ecd.beacukai.go.id`。
 
 ## 這個不是簽證
 

@@ -26943,19 +26943,19 @@ export default {
         },
         {
           "key": "customs_legacy",
-          "name": "Indonesia e-CD legacy customs portal",
+          "name": "Indonesia Customs e-CD portal (land arrivals and departures)",
           "url": "https://ecd.beacukai.go.id",
           "agency": "Direktorat Jenderal Bea dan Cukai",
-          "lastVerified": "2026-11-16",
-          "notes": "Legacy standalone e-CD portal still resolves. The current traveler-facing entry point is All Indonesia."
+          "lastVerified": "2026-11-21",
+          "notes": "Re-checked 2026-11-21 in a browser. Active standalone customs portal for land border arrivals (PLBN) and international departures. Its arrival screen directs air and sea arrivals ((UDARA & LAUT)) to allindonesia.imigrasi.go.id and land arrivals ((DARAT) ECD) to /forms/bc22 (BC 2.2, listing 7 PLBN border posts: Wini, Motaain, Motamasin, Napan, Aruk, Nanga Badau, Skouw; arrival dates from yesterday to +2 days); departures list cash (BC 32) and goods (BC 34)."
         },
         {
           "key": "customs_arrival_channels",
           "name": "Customs arrival channels",
           "url": "https://www.beacukai.go.id/selamat-datang",
           "agency": "Directorate General of Customs and Excise",
-          "lastVerified": "2026-11-16",
-          "notes": "Read 2026-11-06 for the hub page's who-files section. Air and sea arrivals use All Indonesia; land arrivals and international departures use the customs e-CD."
+          "lastVerified": "2026-11-21",
+          "notes": "Re-checked 2026-11-21 in a browser. Directs air and sea arrivals (Udara dan Laut) to All Indonesia (allindonesia.imigrasi.go.id), and land border arrivals (jalur darat / PLBN) plus international departures carrying cash of Rp 100 million or more or specified goods to the standalone customs e-CD (ecd.beacukai.go.id)."
         },
         {
           "key": "immigration_scope",
@@ -26964,9 +26964,17 @@ export default {
           "agency": "Karawang Immigration Office, Directorate General of Immigration",
           "lastVerified": "2026-11-16",
           "notes": "Read 2026-11-06 for the hub page's who-files section. Immigration office article: filling in the All Indonesia form is mandatory for all Indonesian citizens (WNI) and foreign nationals (WNA) entering Indonesia."
+        },
+        {
+          "key": "immigration_tutorial",
+          "name": "All Indonesia arrival card tutorial",
+          "url": "https://bengkalis.imigrasi.go.id/panduan/tutorial-panduan-pengisian-all-indonesia-arrival-card-terbaru/",
+          "agency": "Bengkalis Immigration Office, Directorate General of Immigration",
+          "lastVerified": "2026-11-21",
+          "notes": "Read 2026-11-21 in a browser. Step 2 (Detail Perjalanan) asks for the arrival date in Indonesia (tanggal kedatangan di Indonesia) with no rule to convert to Jakarta time (WIB); Step 3 (Moda Transportasi) lists two transport modes only: Udara (Air) and Laut (Sea)."
         }
       ],
-      "lastVerified": "2026-11-16"
+      "lastVerified": "2026-11-21"
     },
     {
       "slug": "malaysia",
@@ -30811,7 +30819,7 @@ export default {
       "country": "indonesia",
       "officialUrl": "https://allindonesia.imigrasi.go.id",
       "lastVerified": "2026-10-15",
-      "source": "https://allindonesia.imigrasi.go.id (arrival card form: date picker, name and passport filters, flight boxes and arrival-date options read from its front-end in a browser, 2026-10-15) and legacy https://ecd.beacukai.go.id",
+      "source": "https://allindonesia.imigrasi.go.id (arrival card form fields read from its front-end in a browser, 2026-10-15; returned HTTP 403 on 2026-11-21), https://bengkalis.imigrasi.go.id/panduan/tutorial-panduan-pengisian-all-indonesia-arrival-card-terbaru/ (2026-11-21), https://www.beacukai.go.id/selamat-datang (2026-11-21) and https://ecd.beacukai.go.id (land PLBN e-CD, 2026-11-21)",
       "fields": {
         "passport": {
           "type": "passport",
@@ -30885,7 +30893,7 @@ export default {
           "label": "Arrival date in Indonesia",
           "required": true,
           "placeholder": "14/05/2026",
-          "help": "DD/MM/YYYY, the date you land in Indonesia. The form offers yesterday, today, tomorrow and the day after, so fill it in within 2 days of arrival.",
+          "help": "DD/MM/YYYY, local arrival date at your Indonesian port (do not convert Bali WITA to Jakarta WIB). The form offers yesterday, today, tomorrow and the day after, so fill it in within 2 days of arrival.",
           "errors": {
             "required": "Arrival date is required",
             "invalidFormat": "Use DD/MM/YYYY",
@@ -30901,7 +30909,7 @@ export default {
           "label": "Port of entry",
           "required": true,
           "placeholder": "DPS (Bali / Ngurah Rai International)",
-          "help": "Picked from the form's Port of Entry list after you choose air, land or sea. CGK = Jakarta, DPS = Bali, SUB = Surabaya, BPN = Balikpapan.",
+          "help": "Picked from the All Indonesia Port of Entry list after you choose Air or Sea (land border PLBN arrivals use ecd.beacukai.go.id). CGK = Jakarta, DPS = Bali, SUB = Surabaya, BPN = Balikpapan.",
           "errors": {
             "required": "Port of entry is required"
           }
@@ -36473,12 +36481,12 @@ export default {
         "section_zh_hant": "第 2 段 · 行程",
         "example": "14/05/2026",
         "mistake": "13/05/2026",
-        "mistake_why_en": "used departure date — use the date you land in Indonesia local time",
-        "mistake_why_zh": "用了起飞日期——要用印尼本地落地日期",
-        "mistake_why_zh_hant": "用了起飛日期——要用印尼本地落地日期",
-        "copy_en": "Date you land in Indonesia, local time, as DD/MM/YYYY. The form offers yesterday, today and the next 2 days, so fill it in within 2 days of arrival. Bali red-eyes from Australia often roll into the next day, watch for that.",
-        "copy_zh": "在印尼本地时间落地的那天，格式 DD/MM/YYYY。表单提供昨天、今天和之后 2 天的选项，所以要在抵达前 2 天内填写。澳洲飞巴厘的红眼经常跨日，要留意。",
-        "copy_zh_hant": "在印尼本地時間落地的那天，格式 DD/MM/YYYY。表單提供昨天、今天和之後 2 天的選項，所以要在抵達前 2 天內填寫。澳洲飛巴釐的紅眼經常跨日，要留意。"
+        "mistake_why_en": "used departure date or converted to Jakarta time — use the local arrival date at your Indonesian port",
+        "mistake_why_zh": "用了起飞日期或换算成雅加达时间——应按抵达口岸当地时间填落地日期",
+        "mistake_why_zh_hant": "用了起飛日期或換算成雅加達時間——應按抵達口岸當地時間填落地日期",
+        "copy_en": "Local date you land at your Indonesian port of entry, as DD/MM/YYYY (WIB in Jakarta, WITA in Bali, WIT in Papua — do not convert Bali arrivals to Jakarta time). The form offers yesterday, today and the next 2 days, so fill it in within 2 days of arrival. Red-eyes landing after midnight count as the next day at that port.",
+        "copy_zh": "按抵达口岸当地时间填写落地日期，格式 DD/MM/YYYY（雅加达用 WIB、巴厘岛用 WITA、巴布亚用 WIT，不要把巴厘岛抵达时间换算成雅加达时间）。表单提供昨天、今天和之后 2 天的选项，所以最早在抵达前 2 天填写。跨午夜落地的红眼航班按该口岸当地的第二天算。",
+        "copy_zh_hant": "按抵達口岸當地時間填寫落地日期，格式 DD/MM/YYYY（雅加達用 WIB、巴厘島用 WITA、巴布亞用 WIT，不要把巴厘島抵達時間換算成雅加達時間）。表單提供昨天、今天和之後 2 天的選項，所以最早在抵達前 2 天填寫。跨午夜落地的紅眼航班按該口岸當地的第二天算。"
       },
       {
         "n": "06",
@@ -44153,6 +44161,13 @@ export default {
         "summary_zh": "提交时间按表单统一：最早落地前 2 天",
         "summary_zh_hant": "提交時間按表單統一：最早落地前 2 天",
         "detail": "Re-read the All Indonesia form script on 18 November 2026: the arrival date list is still yesterday, today and the next 2 days. The hub, the e-CD page FAQ and its search description said \"within 3 days\"; they now say no earlier than 2 days before landing. Some customs pages still say H-3, but the form does not accept an arrival date three days out."
+      },
+      {
+        "date": "2026-11-21",
+        "summary": "Removed Jakarta-time conversion for arrival date and corrected land border routing to customs e-CD",
+        "summary_zh": "更正抵达日期时区说法（不再要求换算成雅加达时间）与陆路入境渠道（改走独立海关 e-CD）",
+        "summary_zh_hant": "更正抵達日期時區說法（不再要求換算成雅加達時間）與陸路入境渠道（改走獨立海關 e-CD）",
+        "detail": "Checked official sources in a browser on 21 November 2026: the Bengkalis Immigration All Indonesia tutorial asks for the arrival date in Indonesia without requiring conversion to Jakarta time (WIB) and lists only two transport modes (Udara/Air and Laut/Sea); Indonesian Customs (beacukai.go.id/selamat-datang) and the live ecd.beacukai.go.id portal route air and sea arrivals to All Indonesia and land border (PLBN) arrivals to the standalone customs e-CD (/forms/bc22, listing 7 PLBN land border posts). Updated the how-to-fill guide, e-CD overview, field card, validator help text, FAQ and decision tree. Note: allindonesia.imigrasi.go.id returned HTTP 403 from CloudFront on 21 November 2026, so its live front-end script was not re-read today and its last_verified date stays 2026-10-15."
       }
     ],
     "malaysia": [
@@ -45362,10 +45377,10 @@ export default {
             "url": "https://allindonesia.imigrasi.go.id",
             "guide": "/indonesia/e-cd/",
             "agency": "Direktorat Jenderal Imigrasi / Bea dan Cukai",
-            "deadline": "Within 3 days before arrival"
+            "deadline": "No earlier than 2 days before arrival"
           }
         ],
-        "note": "All arrivals need the free arrival declaration. Visa-free nationalities don't need a separate e-VOA. Use the official .go.id portal."
+        "note": "All arrivals need the free arrival declaration. Air and sea arrivals use All Indonesia; land border (PLBN) arrivals use the separate customs e-CD at ecd.beacukai.go.id. Visa-free nationalities don't need a separate e-VOA. Use the official .go.id portal."
       },
       "indonesia_both": {
         "type": "result",
@@ -45378,7 +45393,7 @@ export default {
             "url": "https://allindonesia.imigrasi.go.id",
             "guide": "/indonesia/e-cd/",
             "agency": "Direktorat Jenderal Imigrasi / Bea dan Cukai",
-            "deadline": "Within 3 days before arrival"
+            "deadline": "No earlier than 2 days before arrival"
           },
           {
             "name": "e-VOA",
@@ -45389,7 +45404,7 @@ export default {
             "deadline": "Apply before flight"
           }
         ],
-        "note": "Two separate official flows. Don't let middlemen bundle them: the arrival declaration is free and the e-VOA has a real $35 government fee."
+        "note": "Two separate official flows. Don't let middlemen bundle them: the arrival declaration is free (All Indonesia for air and sea; ecd.beacukai.go.id for PLBN land borders) and the e-VOA has a real $35 government fee."
       },
       "singapore_status": {
         "type": "question",

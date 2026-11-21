@@ -246,10 +246,10 @@
           "url": "https://allindonesia.imigrasi.go.id",
           "guide": "/indonesia/e-cd/",
           "agency": "Direktorat Jenderal Imigrasi / Bea dan Cukai",
-          "deadline": "Within 3 days before arrival"
+          "deadline": "No earlier than 2 days before arrival"
         }
       ],
-      "note": "All arrivals need the free arrival declaration. Visa-free nationalities don't need a separate e-VOA. Use the official .go.id portal."
+      "note": "All arrivals need the free arrival declaration. Air and sea arrivals use All Indonesia; land border (PLBN) arrivals use the separate customs e-CD at ecd.beacukai.go.id. Visa-free nationalities don't need a separate e-VOA. Use the official .go.id portal."
     },
     "indonesia_both": {
       "type": "result",
@@ -262,7 +262,7 @@
           "url": "https://allindonesia.imigrasi.go.id",
           "guide": "/indonesia/e-cd/",
           "agency": "Direktorat Jenderal Imigrasi / Bea dan Cukai",
-          "deadline": "Within 3 days before arrival"
+          "deadline": "No earlier than 2 days before arrival"
         },
         {
           "name": "e-VOA",
@@ -273,7 +273,7 @@
           "deadline": "Apply before flight"
         }
       ],
-      "note": "Two separate official flows. Don't let middlemen bundle them: the arrival declaration is free and the e-VOA has a real $35 government fee."
+      "note": "Two separate official flows. Don't let middlemen bundle them: the arrival declaration is free (All Indonesia for air and sea; ecd.beacukai.go.id for PLBN land borders) and the e-VOA has a real $35 government fee."
     },
 
     "singapore_status": {

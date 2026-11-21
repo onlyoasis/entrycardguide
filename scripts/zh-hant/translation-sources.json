@@ -758,7 +758,7 @@
    },
    "arrival_date": {
     "label": "Arrival date in Indonesia",
-    "help": "DD/MM/YYYY, the date you land in Indonesia. The form offers yesterday, today, tomorrow and the day after, so fill it in within 2 days of arrival.",
+    "help": "DD/MM/YYYY, local arrival date at your Indonesian port (do not convert Bali WITA to Jakarta WIB). The form offers yesterday, today, tomorrow and the day after, so fill it in within 2 days of arrival.",
     "placeholder": "14/05/2026",
     "errors": {
      "required": "Arrival date is required",
@@ -774,7 +774,7 @@
    },
    "port_of_entry": {
     "label": "Port of entry",
-    "help": "Picked from the form's Port of Entry list after you choose air, land or sea. CGK = Jakarta, DPS = Bali, SUB = Surabaya, BPN = Balikpapan.",
+    "help": "Picked from the All Indonesia Port of Entry list after you choose Air or Sea (land border PLBN arrivals use ecd.beacukai.go.id). CGK = Jakarta, DPS = Bali, SUB = Surabaya, BPN = Balikpapan.",
     "placeholder": "DPS (Bali / Ngurah Rai International)",
     "errors": {
      "required": "Port of entry is required"
@@ -2706,25 +2706,25 @@
   },
   "indonesia_ecd_only": {
    "summary": "You need the All Indonesia arrival declaration. No visa required.",
-   "note": "All arrivals need the free arrival declaration. Visa-free nationalities don't need a separate e-VOA. Use the official .go.id portal.",
+   "note": "All arrivals need the free arrival declaration. Air and sea arrivals use All Indonesia; land border (PLBN) arrivals use the separate customs e-CD at ecd.beacukai.go.id. Visa-free nationalities don't need a separate e-VOA. Use the official .go.id portal.",
    "forms": [
     {
      "name": "All Indonesia",
      "fee": "FREE",
      "agency": "Direktorat Jenderal Imigrasi / Bea dan Cukai",
-     "deadline": "Within 3 days before arrival"
+     "deadline": "No earlier than 2 days before arrival"
     }
    ]
   },
   "indonesia_both": {
    "summary": "You need BOTH the All Indonesia arrival declaration and the e-VOA (visa).",
-   "note": "Two separate official flows. Don't let middlemen bundle them: the arrival declaration is free and the e-VOA has a real $35 government fee.",
+   "note": "Two separate official flows. Don't let middlemen bundle them: the arrival declaration is free (All Indonesia for air and sea; ecd.beacukai.go.id for PLBN land borders) and the e-VOA has a real $35 government fee.",
    "forms": [
     {
      "name": "All Indonesia",
      "fee": "FREE",
      "agency": "Direktorat Jenderal Imigrasi / Bea dan Cukai",
-     "deadline": "Within 3 days before arrival"
+     "deadline": "No earlier than 2 days before arrival"
     },
     {
      "name": "e-VOA",

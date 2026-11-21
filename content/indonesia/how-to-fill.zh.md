@@ -3,7 +3,7 @@ title: "印尼 e-CD 海关申报怎么填 2026：巴厘岛入境字段指南"
 kicker: "印尼官方 All Indonesia / e-CD 申报字段逐项讲解，常见错误及含义。约 7 分钟看完。"
 description: "印尼 All Indonesia / e-CD 怎么填：按官方表单讲解护照、航班、行李、现金和海关问题，巴厘岛/雅加达通用。"
 date: 2026-04-26
-lastmod: 2026-10-21
+lastmod: 2026-11-21
 country: "indonesia"
 weight: 20
 keywords: ["印尼海关申报怎么填", "All Indonesia 字段", "巴厘岛海关表字段", "印尼海关申报帮助", "allindonesia.imigrasi.go.id 字段"]
@@ -56,17 +56,18 @@ layout: how-to-fill
 
 ### 抵达日期
 
-格式 `DD/MM/YYYY`。落地印尼的日期，按**印尼本地时间**（雅加达时间，WIB）。表单提供昨天、今天和之后 2 天的选项。
+格式 `DD/MM/YYYY`。按你**抵达口岸的当地时间**填落地日期，与机票或登机牌上的到达日期一致。表单提供昨天、今天和之后 2 天的选项。
 
-- 巴厘（DPS）属于中部时区（WITA），比雅加达早 1 小时。表单一律用雅加达时间。
+- **不要换算成雅加达时间（WIB）**。印尼横跨三个时区：西部 WIB（雅加达/爪哇/苏门答腊）、中部 WITA（巴厘岛/龙目岛/望加锡，比雅加达快 1 小时）和东部 WIT（巴布亚/马鲁古）。例如周二凌晨 00:30 落地巴厘岛，就按巴厘岛当地时间填周二，不要因为雅加达还是周一 23:30 而改填周一。{{< source-link site="indonesia.immigration_tutorial" text="印尼移民局教程" >}}只要求填写抵达印尼的日期，未要求统一换算成雅加达时间。
 - 红眼陷阱：从新加坡晚 11 点起飞，凌晨 1 点落地巴厘，抵达日期是第二天。
 
 ### 入境口岸
 
-从 **Port of Entry** 下拉里选，不能手动键入。表单先问 **Mode of Transport**（空路、陆路或海路），再加载对应的列表：机场、陆路口岸或海港。
+从 **Port of Entry** 下拉里选，不能手动键入。All Indonesia 仅用于**空路和海路**入境：{{< source-link site="indonesia.immigration_tutorial" text="印尼移民局教程" >}}列出的 **Mode of Transport**（交通方式）只有 **Air（空路 / Udara）** 和 **Sea（海路 / Laut）** 两项，选定后加载对应的机场或海港列表。
 
 - 主要机场，供对照：`CGK`（雅加达 / 苏加诺-哈达）、`DPS`（巴厘 / 努拉莱）、`SUB`（泗水）、`BPN`（巴厘巴板）、`KNO`（棉兰 / 库阿拉纳穆）、`UPG`（望加锡）、`BTH`（巴淡）。在列表里选对应的机场。
 - 坐渡轮或邮轮入境（新加坡到巴淡、邮轮靠巴厘伯诺阿港）：交通方式选海路，再选海港。
+- **陆路口岸（PLBN）入境**：不要走 All Indonesia 填海关申报。按{{< source-link site="indonesia.customs_arrival_channels" text="印尼海关指引" >}}，经陆路入境的海关申报走独立的 {{< source-link site="indonesia.customs_legacy" text="ecd.beacukai.go.id" >}}（选 `(DARAT) ECD` / BC 2.2，下拉列有 7 个 PLBN 陆路口岸）。
 
 ### 同行家人数
 

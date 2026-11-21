@@ -55,8 +55,8 @@
    }
   },
   "arrival_date": {
-   "label": "抵达印尼日尔期",
-   "help": "DD/MM/YYYY，抵达印尼的日期。表单提供昨天、今天、明天、后天四个选项，所以请在抵达前 2 天内填写。",
+   "label": "抵达印尼日期",
+   "help": "DD/MM/YYYY，按抵达口岸当地时间填落地日期（巴厘岛 WITA 不必换算成雅加达 WIB）。表单提供昨天、今天、明天、后天四个选项，所以最早在抵达前 2 天填写。",
    "errors": {
     "required": "请输入抵达日期",
     "invalidFormat": "请使用 DD/MM/YYYY 格式",
@@ -69,7 +69,7 @@
   },
   "port_of_entry": {
    "label": "入境口岸",
-   "help": "选好空路、陆路或海路后，从官网 Port of Entry 清单选。CGK＝雅加达，DPS＝峇里岛，SUB＝泗水，BPN＝巴厘巴板。",
+   "help": "在 All Indonesia 选好空路（Air）或海路（Sea）后，从官网 Port of Entry 清单选（陆路口岸 PLBN 改走 ecd.beacukai.go.id）。CGK＝雅加达，DPS＝巴厘岛，SUB＝泗水，BPN＝巴厘巴板。",
    "errors": {
     "required": "请输入入境口岸"
    }

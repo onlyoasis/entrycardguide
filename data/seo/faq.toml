@@ -389,19 +389,19 @@ a_zh_hant = "填你在新西蘭落腳的地址，比如酒店或借住的住宅�
 
 [["indonesia/how-to-fill"]]
 q = "Is the Indonesia customs declaration (e-CD) part of All Indonesia?"
-a = "Yes. The electronic customs declaration is one section of the All Indonesia arrival declaration on the official site allindonesia.imigrasi.go.id, run by the Directorate General of Immigration and the Directorate General of Customs and Excise. It is free."
+a = "For air and sea arrivals, yes. The electronic customs declaration is part of the All Indonesia arrival declaration at allindonesia.imigrasi.go.id, run by the Directorate General of Immigration and the Directorate General of Customs and Excise, and it is free. Land border (PLBN) arrivals use the separate customs e-CD at ecd.beacukai.go.id."
 q_zh = "印尼海关申报（e-CD）是 All Indonesia 的一部分吗？"
 q_zh_hant = "印尼海關申報（e-CD）是 All Indonesia 的一部分嗎？"
-a_zh = "是。电子海关申报是 All Indonesia 入境申报里的一部分，在官方网站 allindonesia.imigrasi.go.id 填写，由印尼移民总局和海关总局负责，免费。"
-a_zh_hant = "是。電子海關申報是 All Indonesia 入境申報裡的一部分，在官方網站 allindonesia.imigrasi.go.id 填寫，由印尼移民總局和海關總局負責，免費。"
+a_zh = "空路和海路入境是的。电子海关申报已并入官方网站 allindonesia.imigrasi.go.id 的 All Indonesia 入境申报，由印尼移民总局和海关总署负责，免费。经陆路口岸（PLBN）入境则使用独立的印尼海关 e-CD（ecd.beacukai.go.id）。"
+a_zh_hant = "空路和海路入境是的。電子海關申報已併入官方網站 allindonesia.imigrasi.go.id 的 All Indonesia 入境申報，由印尼移民總局和海關總署負責，免費。經陸路口岸（PLBN）入境則使用獨立的印尼海關 e-CD（ecd.beacukai.go.id）。"
 
 [["indonesia/how-to-fill"]]
 q = "When can I submit the Indonesia customs declaration?"
-a = "Within 3 days before arrival. Earlier than that, the official site rejects the submission."
+a = "No earlier than 2 days before you land. The official form only offers arrival dates from yesterday to two days ahead, even though some customs pages still say H-3."
 q_zh = "印尼海关申报什么时候可以提交？"
 q_zh_hant = "印尼海關申報什麼時候可以提交？"
-a_zh = "抵达前 3 天内。更早提交会被官方网站拒绝。"
-a_zh_hant = "抵達前 3 天內。更早提交會被官方網站拒絕。"
+a_zh = "最早落地前 2 天。虽然部分海关页面仍写 H-3，但官方表单的抵达日期只提供昨天到两天后。"
+a_zh_hant = "最早落地前 2 天。雖然部分海關頁面仍寫 H-3，但官方表單的抵達日期只提供昨天到兩天後。"
 
 [["indonesia/how-to-fill"]]
 q = "What happens at customs after I submit it?"

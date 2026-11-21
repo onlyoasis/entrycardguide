@@ -3,7 +3,7 @@ title: "印尼 All Indonesia / e-CD 2026 完整指南：官方网址、免费填
 kicker: "印尼 All Indonesia 入境申报包含免费的 e-CD 海关记录。这里是官方网址、所有字段、以及如何分辨真假。"
 description: "免费、独立的印尼 All Indonesia 入境申报中文指南。官方网址 allindonesia.imigrasi.go.id，每个字段逐项讲解，巴厘岛/雅加达入境必填。"
 date: 2026-04-26
-lastmod: 2026-10-12
+lastmod: 2026-11-21
 country: "indonesia"
 weight: 10
 keywords: ["印尼海关申报", "印尼 e-CD", "All Indonesia", "巴厘岛海关表", "印尼入境申报", "印尼海关在线"]
@@ -11,7 +11,7 @@ faq:
   - q: "印尼 e-CD 要收费吗？"
     a: "不收。All Indonesia / e-CD 入境申报是免费的。印尼政府不为它收费。当前官方入口是 allindonesia.imigrasi.go.id，任何申报费都来自中介。"
   - q: "印尼 e-CD 的官方网址是什么？"
-    a: "使用 allindonesia.imigrasi.go.id，这是当前统一入境申报入口。旧的 ecd.beacukai.go.id 海关门户仍可解析，但不再作为主要旅客入口。"
+    a: "空路和海路入境使用 allindonesia.imigrasi.go.id。经陆路口岸（PLBN）入境，以及携带须申报现金或物品出境的旅客，仍使用独立的印尼海关 e-CD 门户 ecd.beacukai.go.id。"
   - q: "我去巴厘岛也要填 e-CD 吗？"
     a: "要。印尼所有入境点都要求 e-CD，包括巴厘岛（DPS / 努拉莱国际机场）。最早落地前 2 天填，整趟行程只填一次。"
   - q: "e-CD 和落地签 e-VOA 是同一回事吗？"
@@ -35,7 +35,7 @@ All Indonesia 入境申报是当前面向旅客的数字入口。它包含原本
 
 它是免费的。
 
-没有人能向你收这笔钱。当前官方目的地是 `allindonesia.imigrasi.go.id`。旧的独立海关门户 `ecd.beacukai.go.id` 仍可访问，但旅客应从 All Indonesia 开始。
+没有人能向你收这笔钱。空路和海路入境在 `allindonesia.imigrasi.go.id` 填报；经陆路口岸（PLBN）入境，以及携带须申报现金或物品出境的旅客，仍使用独立的海关门户 `ecd.beacukai.go.id`。
 
 ## 这个不是签证
 

@@ -176,10 +176,10 @@
    {
     "feeDisplay": "免費",
     "agency": "印尼移民總局／海關",
-    "deadline": "抵達前 3 天內"
+    "deadline": "最早抵達前 2 天"
    }
   ],
-  "note": "所有入境者都需填寫免費的入境申報。免簽國籍不需另辦電子落地簽。請使用官方 .go.id 入口網。"
+  "note": "所有入境者都需填寫免費的入境申報。空路與海路入境使用 All Indonesia；陸路口岸（PLBN）入境改用獨立海關 e-CD（ecd.beacukai.go.id）。免簽國籍不需另辦電子落地簽。請使用官方 .go.id 入口網。"
  },
  "indonesia_both": {
   "summary": "你需要「同時」辦理 All Indonesia 入境申報與電子落地簽（簽證）。",
@@ -187,7 +187,7 @@
    {
     "feeDisplay": "免費",
     "agency": "印尼移民總局／海關",
-    "deadline": "抵達前 3 天內"
+    "deadline": "最早抵達前 2 天"
    },
    {
     "name": "電子落地簽（e-VOA）",
@@ -196,7 +196,7 @@
     "deadline": "出發前申請"
    }
   ],
-  "note": "兩條獨立的官方流程。別讓中介打包收費：入境申報免費，電子落地簽的 35 美元是真實的政府費用。"
+  "note": "兩條獨立的官方流程。別讓中介打包收費：入境申報免費（空路與海路用 All Indonesia，陸路口岸 PLBN 改用 ecd.beacukai.go.id），電子落地簽的 35 美元是真實的政府費用。"
  },
  "singapore_status": {
   "label": "哪一項最符合你的情況？",
