@@ -3,7 +3,7 @@ title: "Vietnam Pre-Arrival Form: Official Site, Airports and Filing Window (202
 kicker: "File the free Pre-Arrival Information at prearrival.immigration.gov.vn once your arrival is today or at most two days away. Show the QR code at immigration."
 description: "Vietnam Pre-Arrival Form guide: the free official portal, which airports require it with a source for each, the 2-day filing window, every field, and how to fix a wrong declaration."
 date: 2026-11-18
-lastmod: 2026-11-18
+lastmod: 2026-11-23
 country: "vietnam"
 weight: 15
 form_code: "Pre-Arrival"

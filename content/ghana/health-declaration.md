@@ -3,7 +3,7 @@ title: "Ghana Health Declaration Form: Official Site ehds.ghs.gov.gh (2026)"
 kicker: "The official form is at ehds.ghs.gov.gh, not ghs-hdf.org. It is free, required for every arriving passenger, and filed within 48 hours before you depart."
 description: "Ghana Health Declaration Form guide: the official ehds.ghs.gov.gh portal, the 48-hour window, children under 12, the six steps, the QR code for Port Health, and why ghs-hdf.org is not the form."
 date: 2026-11-18
-lastmod: 2026-11-18
+lastmod: 2026-11-23
 country: "ghana"
 weight: 10
 keywords: ["ghana health declaration form", "ghana health declaration", "ehds.ghs.gov.gh", "ghs-hdf.org", "ghana port health declaration"]

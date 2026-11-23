@@ -3,7 +3,7 @@ title: "Air Suvidha 2.0 印度健康申报官网：72 小时规则与谁要填�
 kicker: "坐国际航班入境印度的人都要免费填 Air Suvidha 2.0 健康申报，印度公民也要填，落地前 72 小时内可填。外国人还要另填 e-Arrival Card。"
 description: "Air Suvidha 2.0 中文指南：免费官网 airsuvidha.civilaviation.gov.in、72 小时窗口、哪些人要填、抵达前可修改，以及它和印度 e-Arrival Card 的区别。"
 date: 2026-11-18
-lastmod: 2026-11-18
+lastmod: 2026-11-23
 country: "india"
 weight: 15
 form_code: "Air Suvidha 2.0"

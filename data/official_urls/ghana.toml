@@ -1,33 +1,33 @@
 # Ghana — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-11-18
+# Last verified: 2026-11-23
 
 [ehds]
 url = "https://ehds.ghs.gov.gh/"
 name = "Official Ghana Health Declaration"
 agency = "Port Health Department, Ministry of Health / Ghana Health Service"
-last_verified = "2026-11-18"
+last_verified = "2026-11-23"
 notes = "Read 2026-11-18 in a browser. Home page: 'Required for all arriving passengers'; 'Complete the form within 48 hours before you depart.'; three steps: your travel (passenger details, flight and countries visited in the last 21 days), your health (symptoms and possible exposure), your QR code ('Show it to the Port Health officer when you arrive'); 'Get my receipt again'; Port Health checks every passenger's temperature and reviews the declaration; travellers from countries with ongoing transmission may be followed up for up to 21 days; emergency health line 1800. Form page /declaration, step 1 'Before You Begin': 'MANDATORY FOR ALL ARRIVING PASSENGERS'; 'A parent or guardian completes it for a child under 12.'; 'Port Health may contact you within 21 days of arrival.'; false information may lead to action under the Public Health Act 2012 (Act 851). Six steps: Before You Begin, Passenger Information, Travel Information, Health Screening, Accommodation, Declaration; none is a payment step, and the form's loaded scripts contain no payment code. Form script checks: ID type passport, national ID card or other; document number 2 to 30 characters; email optional, max 254; flight number max 20; seat number optional, max 10; arrival date and departure date cannot be in the past; countries visited and transited in the last 21 days, or Not Applicable; land and sea arrivals have their own transport fields. We did not submit the form."
 
 [ehds_form]
 url = "https://ehds.ghs.gov.gh/declaration"
 name = "Ghana Health Declaration form"
 agency = "Port Health Department, Ministry of Health / Ghana Health Service"
-last_verified = "2026-11-18"
+last_verified = "2026-11-23"
 notes = "Direct link to step 1 of the form. See [ehds] notes for what was read."
 
 [graphic_release]
 url = "https://www.graphic.com.gh/news/general-news/travelling-to-ghana-new-mandatory-health-declaration-rule-takes-effect-next-week.html"
 name = "Travelling to Ghana: new mandatory health declaration rule takes effect next week"
 agency = "Daily Graphic (report of the Ghana Health Service release)"
-last_verified = "2026-11-18"
+last_verified = "2026-11-23"
 notes = "News report, not a government page; the GHS release itself was not found online. Dated 2026-11-07, read 2026-11-18: the GHS press release issued on 7 November and signed by Director-General Dr Samuel Kaba Akoriyea makes the Health Declaration Form mandatory for all travellers arriving in Ghana, 'effective Thursday, November 12, 2026'; form at https://ehds.ghs.gov.gh/declaration."
 
 [gna_moh]
 url = "https://gna.org.gh/2026/11/ghana-tightens-ebola-surveillance-at-international-airports/"
 name = "Ghana tightens Ebola surveillance at International Airports"
 agency = "Ghana News Agency (report of the Ministry of Health statement)"
-last_verified = "2026-11-18"
+last_verified = "2026-11-23"
 notes = "State news agency report dated 2026-11-03, read 2026-11-18: Ministry of Health statement signed by Health Minister Kwabena Mintah Akandoh; passengers arriving through Accra, Prempeh and Yakubu international airports 'are required to complete a Health Declaration Form'; arrivals from countries with ongoing Ebola transmission monitored for up to 21 days."
 
 [meta]

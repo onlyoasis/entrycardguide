@@ -3,7 +3,7 @@ title: "Air Suvidha 2.0 Form: Official Site, 72-Hour Rule and Who Must File (202
 kicker: "Every international air arrival in India files the free Air Suvidha 2.0 health declaration, Indian citizens included, up to 72 hours before landing. Foreign nationals file the e-Arrival Card as well."
 description: "Air Suvidha 2.0 form guide: the free official portal airsuvidha.civilaviation.gov.in, the 72-hour window, who must file, editing until arrival, and how it differs from India's e-Arrival Card."
 date: 2026-11-18
-lastmod: 2026-11-18
+lastmod: 2026-11-23
 country: "india"
 weight: 15
 form_code: "Air Suvidha 2.0"

@@ -6,7 +6,7 @@
 url = "https://indianvisaonline.gov.in/earrival/"
 name = "Official India e-Arrival Card"
 agency = "Bureau of Immigration, Ministry of Home Affairs"
-last_verified = "2026-11-16"
+last_verified = "2026-11-23"
 archive_url = "https://web.archive.org/web/2026/https://indianvisaonline.gov.in/earrival/"
 notes = "Verified 2026-07-14 against https://indianvisaonline.gov.in/earrival/, https://indianvisaonline.gov.in/, https://ociservices.gov.in/onlineOCI/onlineOCI/faq, and the Bureau of Immigration advisory at https://www.cgisf.gov.in/section/public-advisories/digitization-of-disembarkation-card-for-foreign-nationals-visiting-india/. The official form labels the service free of cost. Foreign nationals, including OCI cardholders, must submit it within the 72 hours before arrival; Indian passport holders are not foreign nationals and do not submit it. It records arrival information and does not replace a visa or OCI status. The current web form asks for identity, passport, purpose, arrival, recent travel, India address, contact, emergency-contact, and declaration information. Government mission notices also tell travellers to have flight and visa or OCI details ready; fields may vary by channel or prefilled record. Field checks read 2026-10-15 from the form script and /arrivalcard/dcard/arrival/dates: arrival DD/MM/YYYY, today to 4 days ahead; full name letters and spaces, max 200; passport number /^[A-Za-z0-9]{6,15}$/; contact and emergency numbers /^\\d{5,15}$/ after an ISD code box (max 4 digits); address max 500, letters, digits, spaces and -#@:()/.,&_. No flight number or visa/OCI number box. Re-read 2026-11-06 in a browser from assets/index-DBv8aLuY.js: the ISD box (countryCodeMbl) is a required text input, digits only, maxLength 4, placeholder \"Enter ISD Code\", submit check \"Please provide ISD Code\"; the emergency contact has its own code box; still no visa, e-Visa or OCI number box and no language switch. ISD examples on the guide follow the ITU list of E.164 assigned country codes (https://www.itu.int/dms_pub/itu-t/opb/sp/T-SP-E.164D-2016-PDF-E.pdf, read 2026-11-06): 91 India, 1 United States and Canada, 44 United Kingdom, 86 China."
 
@@ -14,7 +14,7 @@ notes = "Verified 2026-07-14 against https://indianvisaonline.gov.in/earrival/, 
 url = "https://indianvisaonline.gov.in/evisa/tvoa.html"
 name = "Official India e-Visa"
 agency = "Bureau of Immigration, Ministry of Home Affairs"
-last_verified = "2026-11-16"
+last_verified = "2026-11-23"
 archive_url = "https://web.archive.org/web/2026/https://indianvisaonline.gov.in/evisa/tvoa.html"
 notes = "Verified 2026-07-14 against https://indianvisaonline.gov.in/evisa/tvoa.html and the official 09-July-2026 tourist-fee table at https://indianvisaonline.gov.in/evisa/images/Etourist_fee_final.pdf. The e-Visa is separate from the free e-Arrival Card. Fees vary by nationality and duration. Examples in the current table: Australia and Canada pay USD $10 for a 30-day tourist e-Visa from April to June or USD $25 from July to March, USD $40 for 1 year, and USD $200 for 5 years; the United States has the same 30-day and 1-year fees but USD $160 for 5 years; the United Kingdom has the same 30-day and 1-year fees but USD $484 for 5 years; Japan pays USD $10 or $25 for 30 days and USD $25 for either 1 or 5 years. Some nationalities are listed at USD $0. A 3% bank charge is additional. The official page currently permits first entry through 33 named airports and 19 named seaports; travellers may depart through any authorized Immigration Check Post. Check the live eligibility, fee table, and port list before paying."
 
@@ -128,7 +128,7 @@ evidence = "Observed 2026-07-14: the page listed totals including service fees o
 url = "https://indianvisaonline.gov.in/"
 name = "Indian Visa Online: e-Arrival Card notice"
 agency = "Bureau of Immigration, Ministry of Home Affairs"
-last_verified = "2026-11-16"
+last_verified = "2026-11-23"
 notes = "Read 2026-11-06 for the hub page's who-files section. Home page notice: foreign nationals and OCI/eOCI cardholders must complete and submit the e-Arrival Card."
 
 # ---- Air Suvidha 2.0 health self-declaration, added 2026-11-18 ----
@@ -136,19 +136,19 @@ notes = "Read 2026-11-06 for the hub page's who-files section. Home page notice:
 url = "https://airsuvidha.civilaviation.gov.in/"
 name = "Official Air Suvidha 2.0 Self Declaration Form"
 agency = "Ministry of Health & Family Welfare / Ministry of Civil Aviation"
-last_verified = "2026-11-18"
+last_verified = "2026-11-23"
 notes = "Read 2026-11-18 in a browser (curl and WebFetch get 403). Form page: 'Passenger can fill the application up to 72 hrs before arriving in India.' The arrival-date picker allowed 2026-11-18 to 2026-11-21 that day; arrival time is IST. Footer 'Last Updated: 7 Oct 2026'; helpline 1075, idsp-alert@nic.in. Front-end checks (assets/index-B8XoKYWM.js): full name 3 to 120 characters, letters with spaces, hyphens, apostrophes, commas and periods; passport number 7 to 20, letters and digits (/^[A-Z0-9]+$/i), Indian passports 7 to 8 characters with up to 2 letters at the start; age 0 to 120; Indian mobile /^[6-9]\\d{9}$/, other mobiles 7 to 15 digits; seat number optional, max 4. We did not submit the form."
 
 [air_suvidha_faq]
 url = "https://airsuvidha.civilaviation.gov.in/faq"
 name = "FAQs on Self-Declaration in Air Suvidha 2.0"
 agency = "Ministry of Health & Family Welfare / Ministry of Civil Aviation"
-last_verified = "2026-11-18"
+last_verified = "2026-11-23"
 notes = "Read 2026-11-18 in a browser. Advisory: per the June 2026 travel advisory of the Directorate General of Health Services, 'all air travelers arriving in India are required to fill a Self-Declaration Form in the Air Suvidha 2.0 portal in view of on-going Ebola disease outbreak.' Q3: 'All international travellers (Indian and Foreign nationals) and airline crew arriving in India should fill' it. Q4: departing passengers are not required. Q5: up to 4 family members per submission, each gets an individual SDF. Q7: 'preferably along with the Web Check-in', 'up to 72 hrs before arriving in India.' Q11: 'No. Submission of the Air Suvidha Self-Declaration Form is completely free.' Q16/Q28: edit until arrival in India, after that the APHO health desk. Q17: new form if the itinerary changes significantly. Q18: needed if you clear immigration in India. Q21: DR Congo, Uganda, South Sudan (the form also lists Kenya). Q27: do not give a travel agent's contact details. Q35: download and present at the immigration desk at the first international airport. Q37: does not replace immigration, visa or customs requirements. Q41: 'The official Air Suvidha service is completely free.' OCI: yes, choose Foreigner and 'OCI Card Holder Visa'. Families: infants need it; children may use a parent's email."
 
 [air_suvidha_instructions]
 url = "https://airsuvidha.civilaviation.gov.in/instructions"
 name = "Air Suvidha 2.0 passenger instructions"
 agency = "Ministry of Health & Family Welfare / Ministry of Civil Aviation"
-last_verified = "2026-11-18"
+last_verified = "2026-11-23"
 notes = "Read 2026-11-18 in a browser: 'All international passengers arriving in India are required to submit a health self-declaration under the International Health Regulations (IHR) 2005'; four steps (personal and flight details; contact and OTP; health declaration, shown only after declaring Ebola-affected travel; consent and submit); amend up to the arrival date and time, then via the airport health desk; registration number, acknowledgement and confirmation email; an Airport Port Health Officer may screen."

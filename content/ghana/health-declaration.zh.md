@@ -3,7 +3,7 @@ title: "加纳健康申报表官网：ehds.ghs.gov.gh 免费填写（2026）"
 kicker: "官方表单在 ehds.ghs.gov.gh，不是 ghs-hdf.org。免费，所有入境旅客必填，出发前 48 小时内填。"
 description: "加纳健康申报表中文指南：官方门户 ehds.ghs.gov.gh、48 小时窗口、12 岁以下儿童、六个步骤、给卫生检疫看的 QR 码，以及为什么 ghs-hdf.org 不是申报表。"
 date: 2026-11-18
-lastmod: 2026-11-18
+lastmod: 2026-11-23
 country: "ghana"
 weight: 10
 keywords: ["加纳健康申报", "加纳入境健康申报表", "ehds.ghs.gov.gh", "ghs-hdf.org", "加纳入境卡"]

@@ -3,7 +3,7 @@ title: "越南入境前申报（Pre-Arrival）官网：适用机场与填写时�
 kicker: "在 prearrival.immigration.gov.vn 免费填写。抵达日是今天或最多两天后时才能提交，入境时出示 QR 码。"
 description: "越南入境前申报（Pre-Arrival Information）中文指南：免费官网、哪些机场要填（逐条注明出处）、两天填写窗口、全部栏目、填错了怎么改。"
 date: 2026-11-18
-lastmod: 2026-11-18
+lastmod: 2026-11-23
 country: "vietnam"
 weight: 15
 form_code: "Pre-Arrival"

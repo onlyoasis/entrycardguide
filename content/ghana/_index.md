@@ -3,7 +3,7 @@ title: "Ghana"
 kicker: "Every passenger arriving in Ghana files the free Health Declaration at ehds.ghs.gov.gh within 48 hours before departure, then shows the QR code to Port Health."
 description: "Ghana entry guide: the official Health Declaration portal ehds.ghs.gov.gh, the 48-hour window, children under 12, the QR code, and the old ghs-hdf.org address that is not the form."
 date: 2026-11-18
-lastmod: 2026-11-18
+lastmod: 2026-11-23
 ---
 
 Ghana's Port Health Department runs the free Health Declaration at `ehds.ghs.gov.gh`. The portal says it is required for all arriving passengers. File it within 48 hours before you depart, and show the QR code to the Port Health officer when you land.

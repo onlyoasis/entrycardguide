@@ -3,7 +3,7 @@ title: "加纳"
 kicker: "所有入境加纳的旅客都要在出发前 48 小时内，到 ehds.ghs.gov.gh 免费填写健康申报，落地后把 QR 码给卫生检疫官看。"
 description: "加纳入境指南：官方健康申报门户 ehds.ghs.gov.gh、48 小时窗口、12 岁以下儿童、QR 码，以及不是申报表的旧地址 ghs-hdf.org。"
 date: 2026-11-18
-lastmod: 2026-11-18
+lastmod: 2026-11-23
 ---
 
 加纳卫生检疫部门（Port Health Department）在 `ehds.ghs.gov.gh` 运营免费的健康申报。门户写明所有入境旅客必填。出发前 48 小时内填好，落地后把 QR 码给卫生检疫官看。
