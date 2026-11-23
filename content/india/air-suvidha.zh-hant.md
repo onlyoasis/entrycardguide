@@ -22,7 +22,7 @@ faq:
   - q: "Air Suvidha 提交後還能改嗎？"
     a: "能，抵達印度前都可以改，用發到信箱的驗證碼登入。落地後要改，找機場衛生檢疫櫃檯（APHO）。"
 layout: country-form
-lastmod: 2026-11-18
+lastmod: 2026-11-23
 ---
 
 {{< official-link site="india.air_suvidha" >}}

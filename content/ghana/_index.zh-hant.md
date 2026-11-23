@@ -3,7 +3,7 @@ title: "加納"
 kicker: "所有入境加納的旅客都要在出發前 48 小時內，到 ehds.ghs.gov.gh 免費填寫健康申報，落地後把 QR 碼給衛生檢疫官看。"
 description: "加納入境指南：官方健康申報門戶 ehds.ghs.gov.gh、48 小時窗口、12 歲以下兒童、QR 碼，以及不是申報表的舊地址 ghs-hdf.org。"
 date: 2026-11-18
-lastmod: 2026-11-18
+lastmod: 2026-11-23
 ---
 
 加納衛生檢疫部門（Port Health Department）在 `ehds.ghs.gov.gh` 營運免費的健康申報。門戶寫明所有入境旅客必填。出發前 48 小時內填好，落地後把 QR 碼給衛生檢疫官看。

@@ -22,7 +22,7 @@ faq:
   - q: "越南入境前申報填錯了怎麼辦？"
     a: "用門戶的 Lookup & Update Declaration，輸入 PAI 編號和護照號，驗證碼會發到你的信箱。抵達日期、護照到期日和國籍不能改，這三項填錯要重新申報。"
 layout: country-form
-lastmod: 2026-11-18
+lastmod: 2026-11-23
 ---
 
 {{< official-link site="vietnam.prearrival" >}}

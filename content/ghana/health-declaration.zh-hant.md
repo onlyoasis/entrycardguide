@@ -20,7 +20,7 @@ faq:
   - q: "提交之後做什麼？"
     a: "馬上拿到 QR 碼，落地後給衛生檢疫官看。丟了可以在門戶點 Get my receipt again 找回。"
 layout: country-form
-lastmod: 2026-11-18
+lastmod: 2026-11-23
 ---
 
 {{< official-link site="ghana.ehds" >}}
