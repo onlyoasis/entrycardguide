@@ -41,7 +41,9 @@
     <span class="block text-xs mt-1{{ if eq $tone "verified" }} text-verified{{ end }}{{ if eq $tone "stale" }} text-mark{{ end }}{{ if eq $tone "very-stale" }} text-scam{{ end }}">
       {{ $days }} {{ i18n "freshness_days_ago" }}
     </span>
-    <span class="rail-verified mt-2 block">{{ i18n "verified_badge" }}</span>
+    {{- if $hasVerifiedAt }}
+    <span class="rail-verified mt-2 block">{{ i18n "official_url_checked_badge" }}</span>
+    {{- end }}
   </div>
   {{- end }}
 

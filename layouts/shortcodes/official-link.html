@@ -21,7 +21,7 @@
 {{- end }}
 
 <div class="official-callout not-prose" role="note">
-  <span class="official-badge">{{ i18n "verified_badge" }}</span>
+  <span class="official-badge">{{ i18n "official_url_checked_badge" }}</span>
   <div>
     <div class="text-meta text-muted font-mono uppercase mb-1">{{ i18n "official_url_label" }}</div>
     <div><a data-analytics-event="official_link_click" data-country="{{ $country }}" data-official-key="{{ $key }}" data-link-slot="callout" href="{{ $entry.url }}" target="_blank" rel="noopener" class="no-underline"><mark>{{ $entry.url | replaceRE "^https?://" "" }}</mark></a></div>
