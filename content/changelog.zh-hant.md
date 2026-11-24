@@ -6,7 +6,7 @@ url: "/zh-hant/changelog/"
 noindex: true
 sitemap:
   disable: true
-lastmod: 2026-11-06
+lastmod: 2026-09-14
 ---
 
 這裡記錄實質性更新。出現這些情況時，我們會新增一條：

@@ -7,7 +7,7 @@ country: "indonesia"
 weight: 20
 keywords: ["印尼海關申報怎麼填", "All Indonesia 欄位", "巴厘島海關表欄位", "印尼海關申報幫助", "allindonesia.imigrasi.go.id 欄位"]
 layout: how-to-fill
-lastmod: 2026-11-21
+lastmod: 2026-10-21
 ---
 
 {{< official-link site="indonesia.ecd" >}}

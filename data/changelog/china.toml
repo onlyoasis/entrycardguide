@@ -1,6 +1,13 @@
 # 中国指南变更记录；本地内容修订不代表已发布。
 
 [[entries]]
+date = "2026-11-02"
+summary = "English arrival-card guide: official free filing entry and declaration receipt"
+summary_zh = "英文入境卡指南补充官方免费入口和申报回执说明"
+summary_zh_hant = "英文入境卡指南補充官方免費入口和申報回執說明"
+detail = "Moved the official filing link and free fee explanation to the beginning of the English guide. Added receipt meaning, saving options, use at border control and official sources. Printout requirements, validity and recovery remain unconfirmed. Source review did not include a completed declaration; the Nantong FAQ was available in search-indexed official text but returned 403 on direct fetch. Local revision only; publication and search impact are not verified."
+
+[[entries]]
 date = "2026-09-05"
 summary = "China Arrival Card guide prepared and corrected after review"
 summary_zh = "中国入境卡指南完成本地初稿与复核修订"
