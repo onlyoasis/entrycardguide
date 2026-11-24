@@ -19,6 +19,18 @@ lastmod: 2026-10-26
 按身份、簽證或 OCI、行程、印度地址、聯繫方式和聲明，逐項核對 15 個欄位。
 → [查看 e-Arrival Card 欄位指南](/zh-hant/india/how-to-fill/)
 
+### 3. Air Suvidha 2.0：第二張免費表
+所有坐國際航班入境的人，包括印度公民，還要在落地前 72 小時內填這份健康申報。附和 e-Arrival Card 的對照表。
+→ [查看 Air Suvidha 2.0 指南](/zh-hant/india/air-suvidha/)
+
+## 誰要填，誰不用填
+
+- **要填**：外國人，以及 OCI、eOCI 卡持有人。
+- **不用填**：持印度護照的印度公民不在填報範圍內。
+- **按國籍或證件**：中國大陸、香港、臺灣護照都按外國人填同一張免費表。OCI 卡持有人也要填。尼泊爾、不丹公民的規定沒找到點名的官方原文，這裡不寫。
+
+來源：{{< source-link site="india.portal_filing_advisory" text="印度簽證網站入境卡通知" >}}。要不要辦 e-Visa 是另一回事。
+
 ## 先記住這 6 點
 
 - **e-Arrival Card 費用**：免費。官網明確寫著 free of cost。

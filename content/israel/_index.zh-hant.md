@@ -24,6 +24,14 @@ PIBA 資格檢查顯示需要 B/2 訪客簽證，就不要支付 ETA-IL 費用�
 6 項公開準備檢查，不編表單正則或錯誤提示。
 → [打開申請指南](/zh-hant/israel/how-to-fill/)
 
+## 誰要申請，誰不用申請
+
+- **要申請**：來自免簽國家的訪客，出發去以色列前要先辦 ETA-IL。
+- **不用申請**：以色列公民和持以色列身份號碼的人。
+- **按國籍或證件**：ETA-IL 只給免簽國家的護照用，沒有按國籍分的另一張表。
+
+來源：{{< source-link site="israel.eta_scope_notice" text="以色列使館 ETA-IL 通知" >}}、{{< source-link site="israel.british_eta_guidance" text="英國外交部以色列旅行建議" >}}。
+
 ## 速記要點
 
 - **官方網址**：`israel-entry.piba.gov.il`。

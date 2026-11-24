@@ -3,7 +3,7 @@ title: "Bahrain"
 kicker: "Check the separate online and on-arrival lists before choosing a paid eVisa product."
 description: "Independent Bahrain visa guide: official NPRA eligibility, online and on-arrival routes, current Visit eVisa products, fees and application documents."
 date: 2026-08-30
-lastmod: 2026-08-30
+lastmod: 2026-11-06
 ---
 
 Bahrain publishes separate country lists for online visas and visas on arrival. Do not assume that appearing on one list gives the same route or conditions as the other.
@@ -25,6 +25,14 @@ Compare online eligibility, on-arrival eligibility and the guarantor route. Then
 ### 2. Prepare the application
 Eleven checks from the public eligibility screen, NPRA FAQ and government service directory.
 → [Open the application guide](/bahrain/how-to-fill/)
+
+## Who applies, and who does not
+
+- **Who applies:** travellers whose country is on the online eVisa list; terms apply, and each country page shows its own eligibility.
+- **Who does not:** GCC citizens, who can enter Bahrain with only their national ID card.
+- **By nationality:** there is no separate form by nationality. Whether your passport can use it, or needs it at all, is on the official {{< source-link site="bahrain.online_countries" text="eVisa country list" >}}.
+
+Sources: {{< source-link site="bahrain.online_countries" text="eVisa country list" >}} and the {{< source-link site="bahrain.national_id_entry" text="Bahrain National Portal" >}}.
 
 ## Fast facts
 

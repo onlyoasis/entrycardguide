@@ -3,6 +3,9 @@ title: "變更日誌"
 description: "entrycardguide.com 的重要變更：政府政策更新、新國家和內容勘誤。"
 date: 2026-04-27
 url: "/zh-hant/changelog/"
+noindex: true
+sitemap:
+  disable: true
 lastmod: 2026-09-14
 ---
 

@@ -41,6 +41,10 @@ lastmod: 2026-10-26
 
 日期按航班抵達印度的當地日期填寫，不是出發日期。提交後保存電子確認或參考編號。
 
+## Air Suvidha 2.0 是第二張免費表
+
+印度 2026 年 6 月發佈衛生通告後，所有坐國際航班入境的旅客還要在 `airsuvidha.civilaviation.gov.in` 填 Air Suvidha 2.0 健康申報，抵達前 72 小時內可填。它免費，印度公民也要填。所以外國公民要填兩張表。兩張表的對照見 [Air Suvidha 2.0 指南](/zh-hant/india/air-suvidha/)。
+
 ## e-Visa 是另一項收費手續
 
 e-Visa 決定你能否持該旅行許可前往印度。e-Arrival Card 則申報這次抵達。很多外國旅客兩項都要辦；OCI 持有人通常使用 OCI 身份，再提交免費的入境卡。

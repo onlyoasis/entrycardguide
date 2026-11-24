@@ -2,7 +2,7 @@
 title: "Dominican Republic"
 kicker: "Everything you need to know about the Dominican Republic E-Ticket, without paying a middleman."
 description: "Free, independent guides to the DR's E-Ticket. Official URL, every field explained."
-lastmod: 2026-10-12
+lastmod: 2026-11-06
 ---
 
 The Dominican Republic E-Ticket is a free digital form required for all arrivals and departures. It replaced the paper entry and exit cards in 2021 and is accepted only at `eticket.migracion.gob.do`.
@@ -20,6 +20,14 @@ Who must file, when, and how to tell the official DGM site from a reseller.
 ### 2. How to fill every field
 Field-by-field walkthrough with common errors and what they mean.
 → [Field-by-field guide](/dominican/how-to-fill/)
+
+## Who has to file it
+
+- **Must file:** all foreign and Dominican passengers entering or leaving the Dominican Republic on commercial flights.
+- **Does not file:** passengers arriving on private flights, non-commercial vessels, ferries or cruise ships. Children skip only the customs section, not the whole E-Ticket.
+- **By nationality:** there is no US, Canadian or Spanish version. Foreigners and Dominicans on commercial flights file the same free form, on arrival and on departure.
+
+Sources: {{< source-link site="dominican.filing_scope" text="Ministry of Tourism entry rules" >}}, {{< source-link site="dominican.filing_exemptions" text="E-Ticket transport exceptions" >}} and the {{< source-link site="dominican.embassy_faq_usa" text="Dominican Embassy FAQ" >}}. Whether you also need a visa is a separate question.
 
 ## The fast facts
 

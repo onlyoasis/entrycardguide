@@ -27,3 +27,17 @@ summary = "Guide follows the All Indonesia address and port fields"
 summary_zh = "填写指南按 All Indonesia 地址和口岸栏更正"
 summary_zh_hant = "填寫指南按 All Indonesia 地址和口岸欄更正"
 detail = "Read the All Indonesia form script. The address step starts with Type of Accommodation: hotels are picked from a search list, a home or villa needs Province, City and a typed address, and Others picks from a list. The address box has no length limit and keeps letters, digits, dots, hyphens and spaces in capitals, so the guide drops its 200-character limit and its comma-separated example. Port of Entry is a list loaded after you pick air, land or sea, not a typed IATA code."
+
+[[entries]]
+date = "2026-11-18"
+summary = "Filing window now matches the form: no earlier than 2 days before you land"
+summary_zh = "提交时间按表单统一：最早落地前 2 天"
+summary_zh_hant = "提交時間按表單統一：最早落地前 2 天"
+detail = "Re-read the All Indonesia form script on 18 November 2026: the arrival date list is still yesterday, today and the next 2 days. The hub, the e-CD page FAQ and its search description said \"within 3 days\"; they now say no earlier than 2 days before landing. Some customs pages still say H-3, but the form does not accept an arrival date three days out."
+
+[[entries]]
+date = "2026-11-21"
+summary = "Removed Jakarta-time conversion for arrival date and corrected land border routing to customs e-CD"
+summary_zh = "更正抵达日期时区说法（不再要求换算成雅加达时间）与陆路入境渠道（改走独立海关 e-CD）"
+summary_zh_hant = "更正抵達日期時區說法（不再要求換算成雅加達時間）與陸路入境渠道（改走獨立海關 e-CD）"
+detail = "Checked official sources in a browser on 21 November 2026: the Bengkalis Immigration All Indonesia tutorial asks for the arrival date in Indonesia without requiring conversion to Jakarta time (WIB) and lists only two transport modes (Udara/Air and Laut/Sea); Indonesian Customs (beacukai.go.id/selamat-datang) and the live ecd.beacukai.go.id portal route air and sea arrivals to All Indonesia and land border (PLBN) arrivals to the standalone customs e-CD (/forms/bc22, listing 7 PLBN land border posts). Updated the how-to-fill guide, e-CD overview, field card, validator help text, FAQ and decision tree. Note: allindonesia.imigrasi.go.id returned HTTP 403 from CloudFront on 21 November 2026, so its live front-end script was not re-read today and its last_verified date stays 2026-10-15."

@@ -21,6 +21,14 @@ lastmod: 2026-10-12
 逐欄位講解，常見錯誤和真實原因。
 → [欄位逐項指南](/zh-hant/dominican/how-to-fill/)
 
+## 誰要填，誰不用填
+
+- **要填**：乘商業航班入境或離境的所有外國旅客和多米尼加旅客。
+- **不用填**：乘私人飛機、非商業船隻、渡輪或郵輪抵達的旅客。兒童只是不填海關部分，整張 E-Ticket 還是要有。
+- **按國籍或證件**：不分國籍。中國大陸、香港、臺灣護照和多米尼加公民一樣，乘商業航班入境、離境都填同一張免費表。
+
+來源：{{< source-link site="dominican.filing_scope" text="多米尼加旅遊部入境規定" >}}、{{< source-link site="dominican.filing_exemptions" text="E-Ticket 交通方式例外" >}}、{{< source-link site="dominican.embassy_faq_usa" text="多米尼加駐美使館問答" >}}。要不要簽證是另一回事。
+
 ## 速記要點
 
 - **官方網址**：`eticket.migracion.gob.do`，沒有別的網址以 `.gob.do` 結尾，這個後綴只對多米尼加政府機構開放。

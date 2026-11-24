@@ -2,7 +2,7 @@
   "country": "indonesia",
   "officialUrl": "https://allindonesia.imigrasi.go.id",
   "lastVerified": "2026-10-15",
-  "source": "https://allindonesia.imigrasi.go.id (arrival card form: date picker, name and passport filters, flight boxes and arrival-date options read from its front-end in a browser, 2026-10-15) and legacy https://ecd.beacukai.go.id",
+  "source": "https://allindonesia.imigrasi.go.id (arrival card form fields read from its front-end in a browser, 2026-10-15; returned HTTP 403 on 2026-11-21), https://bengkalis.imigrasi.go.id/panduan/tutorial-panduan-pengisian-all-indonesia-arrival-card-terbaru/ (2026-11-21), https://www.beacukai.go.id/selamat-datang (2026-11-21) and https://ecd.beacukai.go.id (land PLBN e-CD, 2026-11-21)",
   "fields": {
     "passport": {
       "type": "passport",
@@ -76,7 +76,7 @@
       "label": "Arrival date in Indonesia",
       "required": true,
       "placeholder": "14/05/2026",
-      "help": "DD/MM/YYYY, the date you land in Indonesia. The form offers yesterday, today, tomorrow and the day after, so fill it in within 2 days of arrival.",
+      "help": "DD/MM/YYYY, local arrival date at your Indonesian port (do not convert Bali WITA to Jakarta WIB). The form offers yesterday, today, tomorrow and the day after, so fill it in within 2 days of arrival.",
       "errors": {
         "required": "Arrival date is required",
         "invalidFormat": "Use DD/MM/YYYY",
@@ -92,7 +92,7 @@
       "label": "Port of entry",
       "required": true,
       "placeholder": "DPS (Bali / Ngurah Rai International)",
-      "help": "Picked from the form's Port of Entry list after you choose air, land or sea. CGK = Jakarta, DPS = Bali, SUB = Surabaya, BPN = Balikpapan.",
+      "help": "Picked from the All Indonesia Port of Entry list after you choose Air or Sea (land border PLBN arrivals use ecd.beacukai.go.id). CGK = Jakarta, DPS = Bali, SUB = Surabaya, BPN = Balikpapan.",
       "errors": {
         "required": "Port of entry is required"
       }

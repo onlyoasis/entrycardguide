@@ -13,3 +13,10 @@ summary = "Checker follows the live e-Arrival form: DD/MM/YYYY arrival, 6-15 cha
 summary_zh = "本地检查器按在线 e-Arrival 表单更新：抵达日 DD/MM/YYYY，护照号 6–15 位，电话 5–15 位数字"
 summary_zh_hant = "本地檢查器按線上 e-Arrival 表單更新：抵達日 DD/MM/YYYY，護照號 6–15 位，電話 5–15 位數字"
 detail = "Read the e-Arrival form script and its arrival-date service. Arrival date DD/MM/YYYY, today to 4 days ahead on 15 October 2026. Full name letters and spaces, max 200; passport number letters and digits, 6 to 15; contact and emergency numbers 5 to 15 digits after a separate ISD code box; address max 500. Error messages are quoted from the form. The web form has no flight number or visa/OCI number box."
+
+[[entries]]
+date = "2026-11-18"
+summary = "Air Suvidha 2.0 guide added: India now has two free forms"
+summary_zh = "新增 Air Suvidha 2.0 指南：入境印度要填两张免费表"
+summary_zh_hant = "新增 Air Suvidha 2.0 指南：入境印度要填兩張免費表"
+detail = "New page /india/air-suvidha/ from the official portal, its FAQ and instructions read 2026-11-18: all international arrivals, Indian nationals and airline crew included, up to 72 hours before arrival, free, editable until arrival. Includes a side-by-side table with the e-Arrival Card and a local checker built from the form's own limits."

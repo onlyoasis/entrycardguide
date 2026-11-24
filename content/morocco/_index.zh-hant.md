@@ -22,6 +22,14 @@ lastmod: 2026-10-26
 根據實時資格頁和官方說明整理的 12 項檢查。
 → [打開申請準備指南](/zh-hant/morocco/how-to-fill/)
 
+## 誰要申請，誰不用申請
+
+- **要申請**：需要簽證才能入境摩洛哥的部分類別外國公民。
+- **不用申請**：去摩洛哥本來免簽的，不用申請。
+- **按國籍或證件**：沒有按國籍分的另一張表。你的護照能不能用、要不要申請，看官方{{< source-link site="morocco.evisa" text="Accès Maroc 官網" >}}。
+
+來源：{{< source-link site="morocco.terms" text="電子簽使用條款" >}}。
+
 ## 速記要點
 
 - **入境檢查與電子簽入口**：`acces-maroc.ma`。

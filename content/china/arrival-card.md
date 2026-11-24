@@ -3,7 +3,7 @@ title: "China Arrival Card Online: Free Form & Receipt Guide"
 kicker: "File free with China's National Immigration Administration, save your receipt and show it at immigration. This is an independent guide."
 description: "Find China's free NIA arrival card form. Learn what the Entry Declaration Receipt for Foreigner means, how to save it and how to use it at immigration."
 date: 2026-09-05
-lastmod: 2026-11-02
+lastmod: 2026-11-23
 country: "china"
 weight: 10
 keywords: ["china arrival card", "china arrival card online", "china arrival card official site", "s.nia.gov.cn", "foreigner arrival card china"]
@@ -20,6 +20,8 @@ faq:
     a: "Eight categories, including holders of a valid Foreign Permanent Resident ID, holders of a Hong Kong or Macau travel permit (non-Chinese nationals), 24-hour direct transit passengers staying inside the port restricted area, and members of group-visa or visa-free tour groups. The full list is on this page."
   - q: "What do I get after submitting?"
     a: "An Entry Declaration Receipt for Foreigner from the National Immigration Administration. It records your arrival-card submission. Save it using Download to Local or Send to Email, and present its QR code at immigration inspection. It does not replace your passport or any required visa or entry permission."
+  - q: "What is the National Immigration Administration Entry Declaration Receipt for Foreigner?"
+    a: "It is the receipt the NIA system issues after you submit the online Arrival Card. Its heading reads National Immigration Administration, with the subtitle Entry Declaration Receipt for Foreigner (外国人入境填报回执 in Chinese). Download it or have it emailed; the site then shows \"The entry declaration receipt has been sent to your email.\" The pages reviewed do not say it must be printed."
   - q: "Do I need to print the receipt?"
     a: "The official guidance reviewed explains PDF download, email delivery and showing the record at border control. It does not establish a universal printout requirement. Save an offline copy and follow instructions at your port of entry."
   - q: "Is the form available in English?"
@@ -116,7 +118,7 @@ The passport upload accepts JPEG or PNG images. It compresses the image before c
 
 Invitation details appear only when you answer that you have an inviting entity or person in China. A hotel booking does not by itself make the hotel your inviter; the accommodation address is a separate question.
 
-See [how to fill the China Arrival Card: passport upload, address and invitation fields](/china/how-to-fill/) for eight selected items and their rules. This guide does not provide an online pre-check.
+See the [China Arrival Card filling guide](/china/how-to-fill/) for eight selected items and the upload, address and invitation rules, including [Entity Contact Information with and without an inviter](/china/how-to-fill/#inviter-cases). This guide does not provide an online pre-check.
 
 ## Frequently asked
 

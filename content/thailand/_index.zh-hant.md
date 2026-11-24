@@ -25,6 +25,14 @@ lastmod: 2026-10-26
 入境審查、海關限額、現金申報線，以及素萬那普的官方出租車規則。
 → [泰國落地流程](/zh-hant/thailand/landing/)
 
+## 誰要填，誰不用填
+
+- **要填**：所有入境泰國的非泰國籍旅客，嬰兒和兒童也要填。
+- **不用填**：泰國公民；不過移民檢查的轉機旅客；持邊境通行證（Border Pass）入境的人；機組人員。
+- **按國籍或證件**：TDAC 不分國籍，沒有中國人專用版本。中國大陸、香港、澳門、臺灣護照都屬於非泰國籍，填同一張免費表。
+
+來源：{{< source-link site="thailand.user_guide" text="TDAC 用戶指南" >}}、{{< source-link site="thailand.faq" text="TDAC 常見問題" >}}、{{< source-link site="thailand.consulate_scope" text="泰國駐香港總領事館" >}}。要不要簽證是另一回事。
+
 ## 速記要點
 
 - **官方網址**：`tdac.immigration.go.th`，沒有別的網址以 `.go.th` 結尾，這個後綴只對泰國政府機構開放。

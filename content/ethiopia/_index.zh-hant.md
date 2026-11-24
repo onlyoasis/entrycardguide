@@ -22,6 +22,14 @@ lastmod: 2026-10-26
 根據公開申請頁和旅遊簽說明整理的 13 個易錯項。
 → [打開申請準備指南](/zh-hant/ethiopia/how-to-fill/)
 
+## 誰要申請，誰不用申請
+
+- **要申請**：符合公佈條件的任何國家公民，都能申請旅遊電子簽。
+- **不用申請**：持有效護照的肯尼亞、吉布提公民，免簽入境。
+- **按國籍或證件**：沒有按國籍分的另一張表。你的護照能不能用、要不要申請，看官方{{< source-link site="ethiopia.on_arrival" text="豁免和落地簽頁面" >}}。
+
+來源：{{< source-link site="ethiopia.tourist" text="旅遊電子簽" >}}、{{< source-link site="ethiopia.on_arrival" text="豁免與落地簽" >}}。
+
 ## 速記要點
 
 - **官方入口**：`evisa.gov.et`。

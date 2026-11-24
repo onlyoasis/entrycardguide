@@ -24,6 +24,14 @@ ED Card 與可持續發展費不是同一個概念。多數航空入境者會在
 提交前檢查實時頁面的護照、姓名、航班和地址限制。
 → [打開欄位指南](/zh-hant/aruba/how-to-fill/)
 
+## 誰要填，誰不用填
+
+- **要填**：每一位前往阿魯巴的旅客，嬰兒和兒童也要填。
+- **郵輪旅客**：只有所乘船隻需要辦阿魯巴入境手續的，才填 ED Card。
+- **按國籍或證件**：不分國籍，所有旅客填同一張 ED Card。居民和兒童的豁免只針對可持續發展費，不是免填這張卡。
+
+來源：{{< source-link site="aruba.official_guide" text="ED Card 指南" >}}、{{< source-link site="aruba.sustainability_fee" text="可持續發展費頁面" >}}。要不要簽證是另一回事。
+
 ## 速記要點
 
 - **官方入口**：`edcardaruba.aw`。

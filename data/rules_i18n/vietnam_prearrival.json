@@ -1,0 +1,62 @@
+{
+  "ui": {
+    "fix": "修正 ✗",
+    "ok": "正確 ✓"
+  },
+  "fields": {
+    "arrival_date": {
+      "label": "預計抵達日期",
+      "help": "日/月/年（DD/MM/YYYY）。門戶的提示是：預計抵達日期必須是今天或之後兩天內。抵達日最多還差兩個日曆天時再打開表單。",
+      "errors": {
+        "required": "請輸入預計抵達日期",
+        "invalidFormat": "請用 DD/MM/YYYY（日/月/年）",
+        "tooEarly": "預計抵達日期必須是今天或之後兩天內",
+        "tooLate": "現在還太早：預計抵達日期必須是今天或之後兩天內",
+        "invalidMonth": "月份必須是 01 到 12",
+        "invalidDay": "這個月沒有這一天",
+        "invalid": "不是有效的日期"
+      }
+    },
+    "date_of_birth": {
+      "label": "出生日期",
+      "help": "與護照相同。門戶不接受未來的日期。",
+      "errors": {
+        "required": "請輸入出生日期",
+        "invalidFormat": "請用 DD/MM/YYYY（日/月/年）",
+        "tooLate": "出生日期不能是未來的日期。",
+        "invalidMonth": "月份必須是 01 到 12",
+        "invalidDay": "這個月沒有這一天",
+        "invalid": "不是有效的日期"
+      }
+    },
+    "passport_expiry": {
+      "label": "護照到期日",
+      "help": "門戶不接受已過期的護照，也會檢查簽證比護照至少早 30 天到期。這一欄提交後不能修改，填錯只能重新申報。",
+      "errors": {
+        "required": "請輸入護照到期日",
+        "invalidFormat": "請用 DD/MM/YYYY（日/月/年）",
+        "tooEarly": "護照到期日不能早於今天。",
+        "invalidMonth": "月份必須是 01 到 12",
+        "invalidDay": "這個月沒有這一天",
+        "invalid": "不是有效的日期"
+      }
+    },
+    "phone": {
+      "label": "電話號碼（不含國碼）",
+      "help": "只填數字，3 到 14 位。國碼在另一個欄位。",
+      "errors": {
+        "required": "請輸入電話號碼",
+        "invalidFormat": "電話號碼只能是數字，長度 3 到 14 位。"
+      }
+    },
+    "email": {
+      "label": "電子郵件",
+      "help": "提交前會發 6 位數驗證碼到這裡，之後查詢和修改的驗證碼也發到這裡。請用你自己能收信的郵箱。",
+      "errors": {
+        "required": "請輸入電子郵件",
+        "invalidFormat": "電子郵件格式不正確",
+        "tooLong": "電子郵件地址太長。"
+      }
+    }
+  }
+}

@@ -22,6 +22,14 @@ lastmod: 2026-10-26
 按表單順序整理的 17 個環節，附實時表單顯示的字符上限和報錯原文。
 → [打開欄位指南](/zh-hant/jordan/how-to-fill/)
 
+## 誰要買，誰不用買
+
+- **不是必買**：Jordan Pass 是旅遊套票，官方常見問題寫明它不是簽證。
+- **誰不能買**：持阿拉伯國家國籍的人。
+- **兒童**：12 歲以下兒童跟父母同行，景點免費，不用單獨買。你的國籍能不能辦落地簽是另一回事。
+
+來源：{{< source-link site="jordan.pass_faq" text="Jordan Pass 常見問題" >}}。
+
 ## 速記要點
 
 - **官方購買入口**：`jordanpass.jo`。域名不是政府後綴；營運方是旅遊和文物部，`mota.gov.jo/En/Pages/General_Information` 頁面連結到它。

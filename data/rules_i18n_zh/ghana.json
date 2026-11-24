@@ -1,0 +1,42 @@
+{
+ "ui": {
+  "fix": "修正 ✗",
+  "ok": "正确 ✓"
+ },
+ "fields": {
+  "document_number": {
+   "label": "护照或证件号码",
+   "help": "表单接受护照、身分证或其他证件，号码长度 2 到 30 个字符。",
+   "errors": {
+    "required": "请输入证件号码",
+    "invalidFormat": "2 到 30 个字符，照证件上印的填",
+    "tooLong": "最多 30 个字符"
+   }
+  },
+  "flight_number": {
+   "label": "航班号",
+   "help": "坐飞机入境时填，最多 20 个字符。表单自己的范例是 KQ 512。陆路和海路入境改填车辆或船舶字段。",
+   "errors": {
+    "required": "请输入航班号",
+    "tooLong": "最多 20 个字符"
+   }
+  },
+  "seat_number": {
+   "label": "座位号（选填）",
+   "help": "选填，最多 10 个字符。",
+   "errors": {
+    "tooLong": "最多 10 个字符",
+    "required": "座位号为选填"
+   }
+  },
+  "email": {
+   "label": "电子邮件（选填）",
+   "help": "选填，最多 254 个字符。表单另外会问电话号码，以及卫生检疫部门怎么联系你。",
+   "errors": {
+    "invalidFormat": "格式应类似 name@example.com",
+    "tooLong": "最多 254 个字符",
+    "required": "电子邮件为选填"
+   }
+  }
+ }
+}

@@ -1,0 +1,110 @@
+{
+  "country": "india_air_suvidha",
+  "officialUrl": "https://airsuvidha.civilaviation.gov.in/",
+  "lastVerified": "2026-11-18",
+  "source": "https://airsuvidha.civilaviation.gov.in/ (form page and its front-end checks in assets/index-B8XoKYWM.js, read 2026-11-18 in a browser; the arrival-date picker allowed today to 3 days ahead), https://airsuvidha.civilaviation.gov.in/faq (72-hour window, OTP by email for non-Indian numbers). Only checks the form itself applies are kept. We did not submit the form.",
+  "fields": {
+    "full_name": {
+      "type": "name",
+      "label": "Full name (as per passport)",
+      "required": true,
+      "minLength": 3,
+      "maxLength": 120,
+      "pattern": "^[A-Za-z\\s\\-',.]+$",
+      "placeholder": "TARO KEN YAMADA",
+      "help": "The form takes 3 to 120 characters: letters, plus spaces, hyphens, apostrophes, commas and periods. No digits or other symbols.",
+      "errors": {
+        "required": "Please enter full name (at least 3 characters)",
+        "tooShort": "Please enter full name (at least 3 characters)",
+        "tooLong": "Full name must be at most 120 characters",
+        "invalidChars": "Use letters only, as on your passport (spaces, hyphens, apostrophes, commas, and periods are allowed)"
+      }
+    },
+    "passport_number": {
+      "type": "passport",
+      "label": "Passport number",
+      "required": true,
+      "minLength": 7,
+      "maxLength": 20,
+      "pattern": "^[A-Z0-9]{7,20}$",
+      "placeholder": "A1234567",
+      "help": "Exactly as printed on the passport: 7 to 20 letters and digits. Indian passports must be 7 to 8 characters with up to 2 letters at the start, such as A1234567.",
+      "errors": {
+        "required": "Please enter passport number",
+        "tooShort": "Passport number must be at least 7 characters (as on your passport)",
+        "tooLong": "Passport number is too long",
+        "invalidChars": "Use letters and digits only",
+        "invalidFormat": "Use letters and digits only"
+      }
+    },
+    "age": {
+      "type": "text",
+      "label": "Age",
+      "required": true,
+      "pattern": "^(\\d{1,2}|1[01]\\d|120)$",
+      "placeholder": "34",
+      "help": "Whole years, digits only, 0 to 120. The form asks for age, not date of birth.",
+      "errors": {
+        "required": "Please enter a valid age",
+        "invalidFormat": "Age must be a whole number between 0 and 120"
+      }
+    },
+    "arrival_date": {
+      "type": "date",
+      "label": "Arrival date in India (IST)",
+      "required": true,
+      "format": "DD-MM-YYYY",
+      "minDaysFromToday": 0,
+      "maxDaysFromToday": 3,
+      "placeholder": "21-11-2026",
+      "help": "dd-mm-yyyy in India time. The form opens 72 hours before arrival: on 18 November 2026 its date picker allowed 18 to 21 November. Arrival time is a separate 15-minute list.",
+      "errors": {
+        "required": "Please choose a valid arrival date",
+        "invalidFormat": "Use dd-mm-yyyy",
+        "tooEarly": "The arrival date cannot be in the past",
+        "tooLate": "Too early: the form can only be filled up to 72 hours before arrival in India",
+        "invalidMonth": "Month must be 01-12",
+        "invalidDay": "That day does not exist in this month",
+        "invalid": "Not a real date"
+      }
+    },
+    "mobile_india": {
+      "type": "phone",
+      "label": "Mobile number, if Indian (+91)",
+      "required": false,
+      "pattern": "^[6-9]\\d{9}$",
+      "maxLength": 10,
+      "placeholder": "9812345678",
+      "help": "Only for a +91 number: 10 digits starting with 6, 7, 8 or 9, no country code. The OTP goes to this number and to your email.",
+      "errors": {
+        "invalidFormat": "Enter a valid Indian mobile number (10 digits starting with 6, 7, 8, or 9)",
+        "required": "Please enter your mobile number"
+      }
+    },
+    "mobile_other": {
+      "type": "phone",
+      "label": "Mobile number, if not Indian",
+      "required": false,
+      "pattern": "^\\d{7,15}$",
+      "maxLength": 15,
+      "placeholder": "9012345678",
+      "help": "7 to 15 digits; the country code is chosen in a separate list. With a non-Indian number the OTP is sent by email only.",
+      "errors": {
+        "invalidFormat": "Enter a valid mobile number (7–15 digits)",
+        "required": "Please enter your mobile number"
+      }
+    },
+    "email": {
+      "type": "email",
+      "label": "Email address",
+      "required": true,
+      "placeholder": "name@example.com",
+      "help": "Your own address, not a travel agent's: the OTP, the confirmation and later edits all go through it.",
+      "errors": {
+        "required": "Email is required",
+        "invalidFormat": "Must look like name@example.com",
+        "tooLong": "Email is too long"
+      }
+    }
+  }
+}

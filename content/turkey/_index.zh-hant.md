@@ -25,6 +25,14 @@ lastmod: 2026-10-26
 
 → [查看土耳其 e-Visa 18 個欄位](/zh-hant/turkey/how-to-fill/)
 
+## 誰要申請，誰不用申請
+
+- **要申請**：去旅遊或經商、護照又不免簽的旅客。電子簽只適用這兩種目的。
+- **不用申請**：旅遊或商務訪問本來就免簽的人。
+- **按國籍或證件**：沒有按國籍分的另一張表。你的護照能不能用、要不要申請，看官方{{< source-link site="turkey.mfa_visa_info" text="外國人簽證資訊" >}}。
+
+來源：{{< source-link site="turkey.mfa_visa_info" text="土耳其外交部簽證資訊" >}}、{{< source-link site="turkey.general_visa_guidance" text="簽證總說明" >}}。
+
 ## 先記住這 5 條
 
 - **中國普通護照：**2026 年 1 月 2 日起，旅遊訪問可 90/180 免簽。

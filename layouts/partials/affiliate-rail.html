@@ -8,7 +8,7 @@
 
 {{- range $cards }}
 {{- $key := printf "affiliate_%s_%s" .partner .product }}
-<a href="{{ .url }}" rel="sponsored noopener noreferrer" data-analytics-event="affiliate_click" data-affiliate-partner="{{ .partner }}" data-affiliate-product="{{ .product }}" data-affiliate-slot="rail" class="block no-underline mb-3">
+<a href="{{ .url }}" target="_blank" rel="sponsored noopener" data-analytics-event="affiliate_click" data-affiliate-partner="{{ .partner }}" data-affiliate-product="{{ .product }}" data-affiliate-slot="rail" class="block no-underline mb-3">
   <span class="block text-xs text-muted font-mono uppercase tracking-wide2">{{ i18n (printf "%s_label" $key) }}</span>
   <span class="block text-small text-ink underline underline-offset-2">{{ i18n (printf "%s_heading" $key) }}</span>
 </a>

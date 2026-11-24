@@ -22,6 +22,14 @@ lastmod: 2026-10-26
 11 項內容來自官方 FAQ 和 25 頁手冊，不編造正則或表單報錯原文。
 → [打開申請準備指南](/zh-hant/myanmar/how-to-fill/)
 
+## 誰要申請，誰不用申請
+
+- **要申請**：旅遊電子簽適用名單上的國籍。
+- **不用申請**：官方豁免名單上國家的普通護照持有人，在寫明的免簽期內旅遊。
+- **按國籍或證件**：沒有按國籍分的另一張表。你的護照能不能用、要不要申請，看官方{{< source-link site="myanmar.tourist_eligibility" text="旅遊電子簽頁面" >}}。
+
+來源：{{< source-link site="myanmar.tourist_eligibility" text="緬甸酒店與旅遊部" >}}。
+
 ## 速記要點
 
 - **官方入口**：`evisa.moip.gov.mm/home`。

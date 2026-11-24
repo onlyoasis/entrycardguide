@@ -24,6 +24,14 @@ lastmod: 2026-10-26
 匹配證件、國籍和出入境日期，再下載記錄。
 → [打開查詢欄位指南](/zh-hant/peru/how-to-fill/)
 
+## 誰要填，誰不用填
+
+- **沒人需要填**：TAM Virtual 在入境檢查時自動生成，記錄個人資訊、出入境日期時間、口岸和獲准停留期。
+- **你能做的**：入境後免費查詢、下載這份記錄。
+- **按國籍或證件**：任何護照都不用填 TAM Virtual，也就沒有按國籍分的版本。
+
+來源：{{< source-link site="peru.record_explanation" text="秘魯移民局 TAM Virtual 說明" >}}。要不要簽證是另一回事。
+
 ## 速記要點
 
 - **官方查詢**：`cel.migraciones.gob.pe`。

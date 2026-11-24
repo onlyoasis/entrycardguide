@@ -26,6 +26,14 @@ lastmod: 2026-08-30
 11 項內容來自公開資格頁、NPRA FAQ 和政府服務目錄。
 → [打開申請準備指南](/zh-hant/bahrain/how-to-fill/)
 
+## 誰要申請，誰不用申請
+
+- **要申請**：國家在網上電子簽名單裡的旅客。有附加條款，各國頁面寫明自己的條件。
+- **不用申請**：海灣合作委員會國家公民，憑身份證就能入境巴林。
+- **按國籍或證件**：沒有按國籍分的另一張表。你的護照能不能用、要不要申請，看官方{{< source-link site="bahrain.online_countries" text="電子簽國家名單" >}}。
+
+來源：{{< source-link site="bahrain.online_countries" text="電子簽國家名單" >}}、{{< source-link site="bahrain.national_id_entry" text="巴林國家門戶" >}}。
+
 ## 速記要點
 
 - **官方門戶**：`evisa.gov.bh`。

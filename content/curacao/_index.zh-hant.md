@@ -24,6 +24,14 @@ lastmod: 2026-10-26
 行程、護照、個人和聯繫方式，不編正則。
 → [打開欄位指南](/zh-hant/curacao/how-to-fill/)
 
+## 誰要填，誰不用填
+
+- **要填**：在庫拉索辦入境手續的所有外國旅客。轉機時要換航空公司重新值機的，也要填。
+- **不用填**：庫拉索居民。
+- **按國籍或證件**：不分國籍，所有外國護照填同一張免費 DI Card。中國大陸、香港、臺灣護照都一樣。
+
+來源：{{< source-link site="curacao.dicard" text="數字入境卡官網" >}}、{{< source-link site="curacao.faq" text="DI Card 常見問題" >}}。要不要簽證是另一回事。
+
 ## 速記要點
 
 - **指定門戶**：`dicardcuracao.com/dicard/`。

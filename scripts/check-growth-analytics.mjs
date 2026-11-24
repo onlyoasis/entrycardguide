@@ -12,6 +12,7 @@ function browser(hostname) {
   const window = { location: { hostname, protocol: 'https:' } };
   const document = {
     currentScript: { dataset: { ga4MeasurementId: 'G-TEST', ga4Hostname: 'entrycardguide.com' } },
+    documentElement: { lang: 'zh-Hans' },
     addEventListener: (name, callback) => { handlers[name] = callback; },
   };
   runInNewContext(code, { window, document, Element, URL });
@@ -29,11 +30,12 @@ assert.equal(b.window.dataLayer.filter(x => x[0] === 'config').length, 1);
 b.click({ analyticsEvent: 'official_link_click', country: 'uk', officialKey: 'eta', linkSlot: 'callout' });
 const event = b.window.dataLayer.find(x => x[1] === 'official_link_click');
 assert.ok(event, 'official link click is recorded');
-assert.deepEqual(JSON.parse(JSON.stringify(event[2])), { destination: 'uk', official_key: 'eta', link_slot: 'callout' });
+assert.deepEqual(JSON.parse(JSON.stringify(event[2])), { destination: 'uk', official_key: 'eta', link_slot: 'callout', transport_type: 'beacon' });
 assert.ok(!JSON.stringify(b.window.dataLayer).includes('DO-NOT-SEND'), 'no input or URL query data');
 const count = b.window.dataLayer.length;
 b.click({});
 assert.equal(b.window.dataLayer.length, count, 'unmarked/archive links are not official clicks');
 b.click({ analyticsEvent: 'affiliate_click', affiliatePartner: 'safetywing', affiliateSlot: 'rail' });
 assert.equal(b.window.dataLayer.at(-1)[1], 'affiliate_click', 'affiliate tracking is preserved');
+assert.equal(b.window.dataLayer.at(-1)[2].transport_type, 'beacon', 'affiliate click is sent as a beacon');
 console.log('Growth analytics behavior checks passed.');

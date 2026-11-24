@@ -22,6 +22,14 @@ NepaliPort 裡還有單獨的 Electronic Travel Authorization 和使領館簽證
 10 項內容來自 NepaliPort 實時頁面和移民局官方說明。
 → [打開欄位指南](/zh-hant/nepal/how-to-fill/)
 
+## 誰要申請，誰不用申請
+
+- **要申請**：辦落地簽的旅客。除少數國家外都能辦，使館把網上申請表列為必備材料。
+- **不用申請**：沒找到這張表的一般豁免原文，這裡不列。
+- **按國籍或證件**：沒有按國籍分的另一張表。你的護照能不能用、要不要申請，看官方{{< source-link site="nepal.china_tourist_visa" text="尼泊爾使館簽證頁" >}}。
+
+來源：{{< source-link site="nepal.china_tourist_visa" text="尼泊爾駐華使館" >}}。
+
 ## 速記要點
 
 - **官方預填入口**：`nepaliport.immigration.gov.np/on-arrival/tourist-visa`。

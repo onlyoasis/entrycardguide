@@ -22,6 +22,14 @@ Check-Mig 在哥倫比亞移民檢查前預載行程資料。Migración Colombia
 行程方向、旅行、個人、住宿和當前問題。
 → [打開欄位指南](/zh-hant/colombia/how-to-fill/)
 
+## 誰要填，誰不用填
+
+- **不是必填**：Check-Mig 是免費的線上預登記，哥倫比亞移民局寫明不強制使用。
+- **誰能用**：出入哥倫比亞的本國人和外國人。
+- **按國籍或證件**：不分國籍，任何護照都可以自願預登記。
+
+來源：{{< source-link site="colombia.service_guide" text="哥倫比亞移民局服務說明" >}}、{{< source-link site="colombia.checkmig" text="Check-Mig 官網" >}}。要不要簽證是另一回事。
+
 ## 速記要點
 
 - **官方應用**：`apps.migracioncolombia.gov.co/pre-registro/public/`。

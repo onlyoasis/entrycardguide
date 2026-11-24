@@ -24,6 +24,14 @@ lastmod: 2026-08-30
 資格、主機名、護照、保險，以及真實總額。
 → [打開欄位指南](/zh-hant/saudi-arabia/how-to-fill/)
 
+## 誰要申請，誰不用申請
+
+- **要申請**：持官網所列適用國家有效護照的國際訪客。
+- **不用申請**：官網列的是誰能申請，沒找到豁免原文，這裡不列。
+- **按國籍或證件**：沒有按國籍分的另一張表。你的護照能不能用、要不要申請，看官方{{< source-link site="saudi-arabia.tourist_evisa" text="電子簽官網" >}}。
+
+來源：{{< source-link site="saudi-arabia.tourist_evisa" text="沙特電子簽官網" >}}、{{< source-link site="saudi-arabia.terms" text="使用條款" >}}。
+
 ## 速記要點
 
 - **申請入口**：由沙特旅遊部營運的旅遊電子簽門戶，主機名不是 `.gov.sa` 後綴。

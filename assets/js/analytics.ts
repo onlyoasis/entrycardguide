@@ -36,6 +36,8 @@ function trackAffiliateClick(link: HTMLAnchorElement): void {
     affiliate_product: link.dataset.affiliateProduct || 'unknown',
     page_lang: document.documentElement.lang || 'unknown',
     link_url: link.href,
+    // Beacon survives the click even if the browser drops the page.
+    transport_type: 'beacon',
   });
 }
 
@@ -52,6 +54,7 @@ document.addEventListener('click', event => {
       destination: official.dataset.country,
       official_key: official.dataset.officialKey,
       link_slot: official.dataset.linkSlot,
+      transport_type: 'beacon',
     });
     return;
   }

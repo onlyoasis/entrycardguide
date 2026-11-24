@@ -22,6 +22,14 @@ lastmod: 2026-10-26
 從公開表單、FAQ 和條款整理的 11 個易錯項，含 2 MB 圖片上限和 DD-MM-YYYY 日期格式。
 → [打開欄位指南](/zh-hant/laos/how-to-fill/)
 
+## 誰要申請，誰不用申請
+
+- **要申請**：官方名單上國家、持普通護照的旅遊簽證申請人。臨時護照、緊急護照、特殊護照不能用。
+- **不用申請**：電子簽網站上沒找到一般豁免的原文，這裡不列。
+- **按國籍或證件**：沒有按國籍分的另一張表。你的護照能不能用、要不要申請，看官方{{< source-link site="laos.information" text="電子簽國家名單" >}}。
+
+來源：{{< source-link site="laos.information" text="老撾電子簽說明" >}}、{{< source-link site="laos.faq" text="電子簽常見問題" >}}、{{< source-link site="laos.terms" text="使用條款" >}}。
+
 ## 速記要點
 
 - **官方申請入口**：`laoevisa.gov.la/application`，在政府 `.gov.la` 域名下。

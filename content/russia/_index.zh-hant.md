@@ -22,6 +22,14 @@ lastmod: 2026-10-26
 從俄方 Instruction 頁面和 FAQ 整理的 13 個檢查項，含 35x45 照片規格和 DD.MM.YYYY 日期格式。
 → [打開欄位指南](/zh-hant/russia/how-to-fill/)
 
+## 誰要申請，誰不用申請
+
+- **要申請**：外交部電子簽名單上國家的公民。隨父母出行的未成年子女要各自辦。
+- **不用申請**：護照上已有有效俄羅斯簽證的人。
+- **按國籍或證件**：沒有按國籍分的另一張表。你的護照能不能用、要不要申請，看官方{{< source-link site="russia.nationalities" text="電子簽國家名單" >}}。
+
+來源：{{< source-link site="russia.nationalities" text="電子簽國家" >}}、{{< source-link site="russia.instruction" text="申請須知" >}}、{{< source-link site="russia.faq" text="常見問題" >}}。
+
 ## 速記要點
 
 - **官方申請入口**：`evisa.kdmid.ru`，通過個人賬戶或俄外交部手機 App 提交。

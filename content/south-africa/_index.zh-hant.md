@@ -15,6 +15,14 @@ lastmod: 2026-10-26
 - [旅客申報總覽](/zh-hant/south-africa/traveller-declaration/)：誰要填、純過境豁免、費用與時間窗口。
 - [資料準備指南](/zh-hant/south-africa/how-to-fill/)：12項選列資料，以及收到確認後的辦理流程。
 
+## 誰要填，誰不用填
+
+- **要填**：經空路、陸路、海路出入南非的旅客，包括南非公民、居民、外國旅客和機組。兒童和嬰兒也要包含在申報裡，沒有物品要申報也要報。
+- **不用填**：在指定轉機區停留，或不離開原航班、原船隻的空海路過境旅客。
+- **按國籍或證件**：不分國籍，公民和外國人用同一份南非稅務局申報。
+
+來源：{{< source-link site="south-africa.service" text="SARS 服務頁" >}}、{{< source-link site="south-africa.faq" text="SARS 常見問題" >}}、{{< source-link site="south-africa.rules" text="海關規則" >}}、{{< source-link site="south-africa.processing_policy" text="處理規定" >}}。要不要簽證是另一回事。
+
 ## 出發前核對
 
 - **費用：**申報免費。攜帶物品仍可能產生關稅、VAT 或特定海關擔保款。

@@ -56,17 +56,18 @@ lastmod: 2026-10-21
 
 ### 抵達日期
 
-格式 `DD/MM/YYYY`。落地印尼的日期，按**印尼本地時間**（雅加達時間，WIB）。表單提供昨天、今天和之後 2 天的選項。
+格式 `DD/MM/YYYY`。按你**抵達口岸的當地時間**填落地日期，與機票或登機牌上的到達日期一致。表單提供昨天、今天和之後 2 天的選項。
 
-- 巴釐（DPS）屬於中部時區（WITA），比雅加達早 1 小時。表單一律用雅加達時間。
+- **不要換算成雅加達時間（WIB）**。印尼橫跨三個時區：西部 WIB（雅加達/爪哇/蘇門答臘）、中部 WITA（巴厘島/龍目島/望加錫，比雅加達快 1 小時）和東部 WIT（巴布亞/馬魯古）。例如週二凌晨 00:30 落地巴厘島，就按巴厘島當地時間填週二，不要因為雅加達還是週一 23:30 而改填週一。{{< source-link site="indonesia.immigration_tutorial" text="印尼移民局教程" >}}只要求填寫抵達印尼的日期，未要求統一換算成雅加達時間。
 - 紅眼陷阱：從新加坡晚 11 點起飛，凌晨 1 點落地巴釐，抵達日期是第二天。
 
 ### 入境口岸
 
-從 **Port of Entry** 下拉里選，不能手動鍵入。表單先問 **Mode of Transport**（空路、陸路或海路），再加載對應的列表：機場、陸路口岸或海港。
+從 **Port of Entry** 下拉里選，不能手動鍵入。All Indonesia 僅用於**空路和海路**入境：{{< source-link site="indonesia.immigration_tutorial" text="印尼移民局教程" >}}列出的 **Mode of Transport**（交通方式）只有 **Air（空路 / Udara）** 和 **Sea（海路 / Laut）** 兩項，選定後加載對應的機場或海港列表。
 
 - 主要機場，供對照：`CGK`（雅加達 / 蘇加諾-哈達）、`DPS`（巴釐 / 努拉萊）、`SUB`（泗水）、`BPN`（巴釐巴板）、`KNO`（棉蘭 / 庫阿拉納穆）、`UPG`（望加錫）、`BTH`（巴淡）。在列表裡選對應的機場。
 - 坐渡輪或郵輪入境（新加坡到巴淡、郵輪靠巴釐伯諾阿港）：交通方式選海路，再選海港。
+- **陸路口岸（PLBN）入境**：不要走 All Indonesia 填海關申報。按{{< source-link site="indonesia.customs_arrival_channels" text="印尼海關指引" >}}，經陸路入境的海關申報走獨立的 {{< source-link site="indonesia.customs_legacy" text="ecd.beacukai.go.id" >}}（選 `(DARAT) ECD` / BC 2.2，下拉列有 7 個 PLBN 陸路口岸）。
 
 ### 同行家人數
 

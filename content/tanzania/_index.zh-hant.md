@@ -22,6 +22,14 @@ lastmod: 2026-10-26
 根據實時首屏和現行政府指南整理的 10 項檢查。
 → [打開申請準備指南](/zh-hant/tanzania/how-to-fill/)
 
+## 誰要申請，誰不用申請
+
+- **要申請**：去坦桑尼亞大陸或桑給巴爾、需要簽證的旅客。每本護照單獨申請。
+- **不用申請**：官方免簽名單上國家的公民。
+- **按國籍或證件**：沒有按國籍分的另一張表。你的護照能不能用、要不要申請，看官方{{< source-link site="tanzania.visa_free_countries" text="免簽國家名單" >}}。
+
+來源：{{< source-link site="tanzania.evisa" text="線上簽證官網" >}}、{{< source-link site="tanzania.guidelines" text="申請指南" >}}、{{< source-link site="tanzania.visa_free_countries" text="免簽名單" >}}。
+
 ## 速記要點
 
 - **官方入口**：`visa.immigration.go.tz`。

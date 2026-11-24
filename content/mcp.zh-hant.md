@@ -18,7 +18,7 @@ lastmod: 2026-10-02
 |---|---|
 | `list_countries` | 全部249個目的地、核實狀態、資料庫連結與已有指南 |
 | `get_jurisdiction` | 一個目的地可公開的有來源申報事項、原核實日期、來源與覆蓋情況 |
-| `get_country_forms` | 53個詳細表單指南中的一個國家的官方連結與費用 |
+| `get_country_forms` | 54個詳細表單指南中的一個國家的官方連結與費用 |
 | `get_field_rules` | 欄位規則或準備資料說明，明確其校驗模式 |
 | `get_field_guide` | 英文、簡體或繁體的欄位示例及填寫說明 |
 | `run_decision_tree` | 已支持指南的決策問題、費用和填報說明 |

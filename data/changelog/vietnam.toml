@@ -27,3 +27,10 @@ summary = "Guide follows the e-Visa border gate fields"
 summary_zh = "填写指南按电子签口岸栏更正"
 summary_zh_hant = "填寫指南按電子簽口岸欄更正"
 detail = "Read the e-Visa application scripts and the gate list on evisa.gov.vn. Entry and exit gates are two separate single-choice lists of 79 gates, searched by gate name. The guide had said you could pick several entry ports, that exit defaults to the entry port, and that about 30 ports are listed."
+
+[[entries]]
+date = "2026-11-18"
+summary = "Pre-Arrival Information guide added"
+summary_zh = "新增越南入境前申报（Pre-Arrival）指南"
+summary_zh_hant = "新增越南入境前申報（Pre-Arrival）指南"
+detail = "New page /vietnam/pre-arrival/: the free prearrival.immigration.gov.vn portal, an airport table with the source and date for each claim (SGN required from 15 April 2026; the U.S. Embassy's 17 June 2026 notice says all airports; Vietnamese and Singapore missions name HAN, SGN, DAD, CXR and PQC), the arrival-date window read from the portal's own messages, fields, a local checker and what to do after a wrong submission."

@@ -18,7 +18,7 @@ url: "/zh/mcp/"
 |---|---|
 | `list_countries` | 全部249个目的地、核实状态、资料库链接与已有指南 |
 | `get_jurisdiction` | 一个目的地可公开的有来源申报事项、原核实日期、来源与覆盖情况 |
-| `get_country_forms` | 53个详细表单指南中的一个国家的官方链接与费用 |
+| `get_country_forms` | 54个详细表单指南中的一个国家的官方链接与费用 |
 | `get_field_rules` | 字段规则或准备资料说明，明确其校验模式 |
 | `get_field_guide` | 英文、简体或繁体的字段示例及填写说明 |
 | `run_decision_tree` | 已支持指南的决策问题、费用和填报说明 |

@@ -30,7 +30,7 @@
 {{- $width := add (strings.RuneCount $seoTitle) (len (findRE $wideRE $seoTitle)) -}}
 {{- $brandWidth := add 3 (add (strings.RuneCount $brand) (len (findRE $wideRE $brand))) -}}
 {{- $fullTitle := cond (le (add $width $brandWidth) 65) (printf "%s · %s" $seoTitle $brand) $seoTitle -}}
-<title>{{ if .IsHome }}{{ if $isCn }}{{ .Title }} · {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}{{ else }}{{ $fullTitle }}{{ end }}</title>
+<title>{{ if .IsHome }}{{ if $isCn }}{{ .Title }} · {{ .Site.Title }}{{ else }}{{ .Params.seo_title | default .Site.Title }}{{ end }}{{ else }}{{ $fullTitle }}{{ end }}</title>
 
 {{- if hugo.IsProduction }}
 {{- with .Site.Params.analytics.ga4.measurement.id }}

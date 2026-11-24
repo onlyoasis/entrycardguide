@@ -1,0 +1,62 @@
+{
+ "ui": {
+  "fix": "修正 ✗",
+  "ok": "正确 ✓"
+ },
+ "fields": {
+  "arrival_date": {
+   "label": "预计抵达日期",
+   "help": "日/月/年（DD/MM/YYYY）。门户的提示是：预计抵达日期必须是今天或之后两天内。抵达日最多还差两个日历天时再打开表单。",
+   "errors": {
+    "required": "请输入预计抵达日期",
+    "invalidFormat": "请用 DD/MM/YYYY（日/月/年）",
+    "tooEarly": "预计抵达日期必须是今天或之后两天内",
+    "tooLate": "现在还太早：预计抵达日期必须是今天或之后两天内",
+    "invalidMonth": "月份必须是 01 到 12",
+    "invalidDay": "这个月没有这一天",
+    "invalid": "不是有效的日期"
+   }
+  },
+  "date_of_birth": {
+   "label": "出生日期",
+   "help": "与护照相同。门户不接受未来的日期。",
+   "errors": {
+    "required": "请输入出生日期",
+    "invalidFormat": "请用 DD/MM/YYYY（日/月/年）",
+    "tooLate": "出生日期不能是未来的日期。",
+    "invalidMonth": "月份必须是 01 到 12",
+    "invalidDay": "这个月没有这一天",
+    "invalid": "不是有效的日期"
+   }
+  },
+  "passport_expiry": {
+   "label": "护照到期日",
+   "help": "门户不接受已过期的护照，也会检查签证比护照至少早 30 天到期。这一栏提交后不能修改，填错只能重新申报。",
+   "errors": {
+    "required": "请输入护照到期日",
+    "invalidFormat": "请用 DD/MM/YYYY（日/月/年）",
+    "tooEarly": "护照到期日不能早于今天。",
+    "invalidMonth": "月份必须是 01 到 12",
+    "invalidDay": "这个月没有这一天",
+    "invalid": "不是有效的日期"
+   }
+  },
+  "phone": {
+   "label": "电话号码（不含国码）",
+   "help": "只填数字，3 到 14 位。国码在另一个字段。",
+   "errors": {
+    "required": "请输入电话号码",
+    "invalidFormat": "电话号码只能是数字，长度 3 到 14 位。"
+   }
+  },
+  "email": {
+   "label": "电子邮件",
+   "help": "提交前会发 6 位数验证码到这里，之后查找和修改的验证码也发到这里。请用你自己能收信的邮箱。",
+   "errors": {
+    "required": "请输入电子邮件",
+    "invalidFormat": "电子邮件格式不正确",
+    "tooLong": "电子邮箱地址太长。"
+   }
+  }
+ }
+}

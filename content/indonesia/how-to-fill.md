@@ -1,9 +1,9 @@
 ---
 title: "How to Fill the Indonesia e-CD Customs Declaration (2026)"
 kicker: "Field-by-field walkthrough of Indonesia's official All Indonesia / e-CD declaration with common errors and what they mean. About 7 minutes total."
-description: "Step-by-step 2026 guide to every field on Indonesia's official All Indonesia arrival declaration at allindonesia.imigrasi.go.id. Free, no fees, Bali / Jakarta / all ports."
+description: "Step-by-step 2026 guide to every field on Indonesia's official All Indonesia arrival declaration at allindonesia.imigrasi.go.id. Free, no fees, air and sea arrivals including Bali and Jakarta."
 date: 2026-04-26
-lastmod: 2026-10-21
+lastmod: 2026-11-21
 country: "indonesia"
 weight: 20
 keywords: ["indonesia e-cd how to fill", "all indonesia fields", "bali customs form fields", "indonesia customs declaration help", "allindonesia.imigrasi.go.id fields"]
@@ -56,17 +56,18 @@ Airline 2-letter IATA code + flight number, no space.
 
 ### Arrival date
 
-Format: `DD/MM/YYYY`. The date you land in Indonesia, in **Indonesia local time** (Jakarta time, WIB). The form offers yesterday, today and the next 2 days.
+Format: `DD/MM/YYYY`. Enter the local calendar date you arrive at your Indonesian port of entry, as shown on your ticket or boarding pass. The form offers yesterday, today and the next 2 days.
 
-- Bali (DPS) is in Central Indonesia time (WITA), one hour ahead of Jakarta. Use Jakarta time for the form regardless.
+- **Do not convert to Jakarta time (WIB).** Indonesia spans three time zones: WIB (Jakarta/Java/Sumatra), WITA (Bali/Lombok/Makassar, one hour ahead of Jakarta) and WIT (Papua/Maluku). A flight landing in Bali at 00:30 on Tuesday is Tuesday (WITA), even though Jakarta is still 23:30 on Monday. The {{< source-link site="indonesia.immigration_tutorial" text="Immigration tutorial" >}} asks for your arrival date in Indonesia and does not require converting to WIB.
 - Red-eye trap: if you depart Singapore at 11pm and land in Bali at 1am, your arrival date is the next day.
 
 ### Port of entry
 
-Picked from the **Port of Entry** dropdown, not typed. The form asks for **Mode of Transport** first (air, land or sea) and then loads the matching list: airports, land border posts or seaports.
+Picked from the **Port of Entry** dropdown, not typed. All Indonesia covers **air and sea arrivals** only: the {{< source-link site="indonesia.immigration_tutorial" text="Immigration tutorial" >}} lists two **Mode of Transport** choices, **Air** (`Udara`) and **Sea** (`Laut`), which load the matching airport or seaport list.
 
 - Main airports, for orientation: `CGK` (Jakarta / Soekarno-Hatta), `DPS` (Bali / Ngurah Rai), `SUB` (Surabaya), `BPN` (Balikpapan), `KNO` (Medan / Kualanamu), `UPG` (Makassar), `BTH` (Batam). Pick the matching airport in the list.
 - Arriving by ferry or cruise ship (Singapore to Batam, a cruise into Benoa): choose sea as the mode of transport, then the seaport.
+- **Arriving by land border (PLBN):** do not use All Indonesia for customs. {{< source-link site="indonesia.customs_arrival_channels" text="Indonesian Customs" >}} directs land border arrivals to the separate customs e-CD at {{< source-link site="indonesia.customs_legacy" text="ecd.beacukai.go.id" >}} (`(DARAT) ECD` / BC 2.2, which lists Indonesia's 7 PLBN land border posts).
 
 ### Number of family members traveling together
 

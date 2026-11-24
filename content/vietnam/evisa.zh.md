@@ -3,7 +3,7 @@ title: "越南 Evisa 官方网站 2026：$25/$50 美元费用和直接申请"
 kicker: "越南 evisa 官方网站是 evisa.gov.vn。单次 $25，多次 $50，费用直接付给政府。"
 description: "越南 evisa 官方网站中文指南：使用 evisa.gov.vn，单次 $25、多次 $50，避开签证中介加价。"
 date: 2026-04-26
-lastmod: 2026-10-26
+lastmod: 2026-11-23
 country: "vietnam"
 weight: 10
 keywords: ["越南 e-visa", "越南电子签证", "越南签证官网", "越南 evisa 费用", "越南签证骗局"]
@@ -36,6 +36,10 @@ layout: country-form
 - 单次入境越南 evisa：**$25 美元**。
 - 多次入境越南 evisa：**$50 美元**。
 - 商业签证网站可能对同一份政府申请收 $80-200 美元。
+
+## 落地前还有一张免费表
+
+电子签不是唯一一步。越南还要求入境旅客在 `prearrival.immigration.gov.vn` 免费填写入境前申报，最早抵达前两天填。胡志明市新山一机场（SGN）从 2026 年 4 月 15 日起要求填写。适用机场和出处见[入境前申报指南](/zh/vietnam/pre-arrival/)。
 
 ## 越南 E-Visa 到底是什么
 

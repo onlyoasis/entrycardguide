@@ -1,12 +1,12 @@
 # Vietnam — official government URLs
 # Update this file when policy changes. All pages auto-update via {{< official-link >}} shortcode.
-# Last verified: 2026-10-26
+# Last verified: 2026-11-16
 
 [evisa]
 url = "https://evisa.gov.vn"
 name = "Vietnam E-Visa (Official)"
 agency = "Vietnam Immigration Department (Cục Quản lý xuất nhập cảnh)"
-last_verified = "2026-10-26"
+last_verified = "2026-11-23"
 archive_url = "https://web.archive.org/web/2026/https://evisa.gov.vn"
 notes = "Reserved under .gov.vn — only Vietnamese government entities can register this domain suffix. The legacy evisa.xuatnhapcanh.gov.vn page says the e-visa portal moved to evisa.gov.vn and thithucdientu.gov.vn on 2024-11-11. Government fee: USD $25 single-entry, USD $50 multi-entry. This is a real fee, not free."
 
@@ -14,14 +14,14 @@ notes = "Reserved under .gov.vn — only Vietnamese government entities can regi
 url = "https://thithucdientu.gov.vn"
 name = "Vietnam National Electronic Visa System (Vietnamese domain)"
 agency = "Vietnam Immigration Department"
-last_verified = "2026-10-26"
+last_verified = "2026-11-23"
 notes = "Second official domain named in the old Immigration Department portal notice."
 
 [immigration_home]
 url = "https://www.xuatnhapcanh.gov.vn"
 name = "Vietnam Immigration Department (home)"
 agency = "Vietnam Immigration Department"
-last_verified = "2026-10-26"
+last_verified = "2026-11-23"
 
 # Country-page metadata (consumed by country-form layout).
 # Bilingual fields use `_en` / `_zh` suffixes. Keep both translations in sync.
@@ -164,5 +164,69 @@ evidence = "Commercial visa middleman charging multiple times the $25 government
 url = "https://evisa.gov.vn/e-visa/foreigners"
 name = "Vietnam e-Visa application form"
 agency = "Vietnam Immigration Department (Cục Quản lý xuất nhập cảnh)"
-last_verified = "2026-10-26"
+last_verified = "2026-11-23"
 notes = "Read 2026-10-15 from the application scripts (step 1 and validation). All dates DD/MM/YYYY; date of birth up to today; passport expiry from today and at least 30 days after the e-Visa end date; e-Visa from today, at most 90 days. Surname and given names max 50 each, /^[A-Za-z\\s]+$/ ('Only Latin characters allowed, no special characters'), turned into capitals. Passport number /^[A-Z0-9]+$/, max 20. Email max 100 with the form's RFC-style pattern ('Email wrong format'). Address max 500."
+
+[evisa_scope]
+url = "https://vietnamembassy-usa.org/vi/node/6887"
+name = "Electronic visa for citizens of all countries"
+agency = "Embassy of Viet Nam in the United States"
+last_verified = "2026-11-23"
+notes = "Read 2026-11-06 for the hub page's who-applies section. Embassy notice: Viet Nam's e-visa applies to citizens of all countries and territories."
+
+[visa_exemption_list]
+url = "https://mofa.gov.vn/vi/tin-chi-tiet/chi-tiet/viet-nam-39-s-visa-exemption-list-57163-596.html"
+name = "Viet Nam visa exemption list"
+agency = "Ministry of Foreign Affairs, Viet Nam"
+last_verified = "2026-11-16"
+notes = "Read 2026-11-06 for the hub page's who-applies section. Ministry of Foreign Affairs table of visa exemptions by nationality and passport type."
+
+# ---- Pre-Arrival Information (PAI), added 2026-11-18 ----
+[prearrival]
+url = "https://prearrival.immigration.gov.vn/"
+name = "Official Vietnam Pre-Arrival Information"
+agency = "Immigration Department, Ministry of Public Security"
+last_verified = "2026-11-23"
+notes = "Read 2026-11-18 in a browser. Home page (EN): 'To ensure a smooth immigration process, please complete this declaration fully and accurately before arrival.' Three services: Create & Submit Pre-arrival Information, Lookup & Update Declaration, Lookup E-Pass Information. A CAPTCHA opens the form; we did not submit one. The portal's English strings (assets/v1.0.0/en-DCeEXg7L.js): 'The expected arrival date must be today or within the next 2 days.' and 'The estimated arrival date must be yesterday, today, or within the next two days.'; a 6-digit code is emailed to verify the address; phone 'must contain only digits and be between 3 and 14 characters long'; a PDF of the submission can be downloaded; updates need the PAI Number, passport number and an emailed OTP, and Date of Arrival, Date of Passport Expiry and Nationality cannot be updated ('please make a new' declaration). No fee or payment step appears in the strings or on the home page."
+
+[prearrival_us_sgn]
+url = "https://vn.usembassy.gov/change-to-entry-requirements-for-passengers-arriving-at-tan-son-nhat-international-airport-sgn/"
+name = "Change to Entry Requirements for Passengers Arriving at Tan Son Nhat (SGN)"
+agency = "U.S. Embassy & Consulate in Vietnam"
+last_verified = "2026-11-23"
+notes = "Dated 2026-04-22, read 2026-11-18 in a browser: 'Starting April 15, 2026, all foreign passport holders must complete a pre-arrival declaration form prior to their arrival at the international terminal of Tan Son Nhat Airport'; applies to foreign passport holders and overseas Vietnamese entering with a visa; 'Currently, this form is not required for travelers arriving via any other airport in Vietnam'; available 'as early as three days prior to their arrival date'."
+
+[prearrival_us_all]
+url = "https://vn.usembassy.gov/notice-implementation-of-pre-arrival-declaration-for-international-visitors-arriving-at-airports-in-vietnam/"
+name = "Notice: Implementation of pre-arrival declaration at airports in Vietnam"
+agency = "U.S. Embassy & Consulate in Vietnam"
+last_verified = "2026-11-23"
+notes = "Dated 2026-06-17, read 2026-11-18 in a browser: 'Vietnam is expanding its mandatory pre-arrival personal information declaration for international arrivals to all airports in Vietnam.' Who: 'All international passengers who do not hold a Vietnamese passport.' When: 'upon arrival, or not more than three days before arrival.' 'It will also be available on arrival via QR code or paper form at the airport.' No effective date for the expansion is given."
+
+[prearrival_sg_hanoi]
+url = "https://hanoi.mfa.gov.sg/mission-updates/pre-arrival-declaration-for-foreign-travellers-entering-vietnam/"
+name = "Pre-Arrival Declaration for Foreign Travellers Entering Vietnam"
+agency = "Embassy of the Republic of Singapore in Hanoi"
+last_verified = "2026-11-23"
+notes = "Dated 2026-06-25, read 2026-11-18: names Noi Bai (Ha Noi), Tan Son Nhat (Ho Chi Minh City) and the airports in Da Nang, Nha Trang and Phu Quoc; visitors 'are encouraged to complete the declaration'; on arrival or 'not more than three days before arrival'; the system generates a confirmation QR code."
+
+[prearrival_vn_sg]
+url = "https://vnembassy-singapore.mofa.gov.vn/tin-chi-tiet/chi-tiet/notice-on-viet-nam-39-s-pre-arrival-information-declaration-60731-1390.html"
+name = "Notice on Viet Nam's Pre-Arrival Information Declaration"
+agency = "Embassy of Viet Nam in Singapore"
+last_verified = "2026-11-18"
+notes = "Dated 2026-07-02, read 2026-11-18: major international airports including Noi Bai, Tan Son Nhat, Da Nang, Cam Ranh (Nha Trang) and Phu Quoc; 'The Vietnamese authorities strongly encourage all foreign travellers to complete the declaration before travelling'; 'within three days prior to arrival or upon arrival'."
+
+[prearrival_vn_delhi]
+url = "https://vietnamembassydelhi.in/notice-on-the-implementation-of-the-pre-arrival-information-application-for-foreigners-entering-viet-nam/"
+name = "Notice on the Pre-arrival Information Application for Foreigners Entering Viet Nam"
+agency = "Embassy of Viet Nam in India"
+last_verified = "2026-11-23"
+notes = "Dated 2026-05-21, read 2026-11-18: pilot at Tan Son Nhat 'on a voluntary, non-mandatory basis'; the system generates a QR code for immigration; 'several fraudulent websites impersonating the official platform have been detected', use only prearrival.immigration.gov.vn."
+
+[prearrival_sg_hcmc]
+url = "https://hochiminhcity.mfa.gov.sg/mission-updates/tan-son-nhat-airport-introduces-pre-arrival-declaration-for-foreigners/"
+name = "Tan Son Nhat Airport introduces pre-arrival declaration for foreigners"
+agency = "Consulate-General of the Republic of Singapore in Ho Chi Minh City"
+last_verified = "2026-11-23"
+notes = "Dated 2026-04-20, read 2026-11-18: 'a mandatory pre-arrival information declaration' at Tan Son Nhat; foreign nationals entering Vietnam and overseas Vietnamese using visas must submit before arrival; '(Transit passengers are exempt.)'; recommends completing it before departure."

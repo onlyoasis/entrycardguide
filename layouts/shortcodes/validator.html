@@ -106,3 +106,16 @@
     ✓ {{ i18n "validator_rules_verified" }} <strong class="text-ink">{{ $rules.lastVerified }}</strong>.
   </div>
 </section>
+{{- /* Affiliate strip after the first top-level validator, i.e. once the
+       reader has checked the form, not under the official link where they
+       are about to leave for the government site. How-to-fill pages skip it:
+       their "after you submit" steps already end in the mid slot. Ordinal
+       counts every shortcode, so find which opening tag in the raw content is
+       the first validator; page state (Store) would break on rebuilds. */ -}}
+{{- if and (not .Parent) (ne .Page.Layout "how-to-fill") }}
+  {{- $first := -1 }}
+  {{- range $i, $tag := findRE `\{\{[<%]\s*[^/\s][^>%]*[>%]\}\}` .Page.RawContent }}
+    {{- if and (lt $first 0) (strings.HasPrefix (strings.TrimLeft "{<% " $tag) "validator") }}{{ $first = $i }}{{ end }}
+  {{- end }}
+  {{- if eq .Ordinal $first }}{{ partial "affiliate-inline.html" .Page }}{{ end }}
+{{- end }}

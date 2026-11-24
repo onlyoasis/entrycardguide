@@ -22,6 +22,14 @@ lastmod: 2026-10-26
 8 項內容來自公開政策查詢器和 Hayya 類別頁，不編表單正則或報錯。
 → [打開申請準備指南](/zh-hant/qatar/how-to-fill/)
 
+## 誰要申請，誰不用申請
+
+- **要申請**：需要入境簽證的訪客，通過 Hayya 申請。可以免簽入境的訪客，免簽入境或改辦 Hayya A1 簽證都行。
+- **不用申請**：海灣合作委員會國家公民，去卡塔爾免簽。
+- **按國籍或證件**：沒有按國籍分的另一張表。你的護照能不能用、要不要申請，看官方{{< source-link site="qatar.visa_guide" text="簽證指南" >}}。
+
+來源：{{< source-link site="qatar.visa_guide" text="卡塔爾旅遊局簽證指南" >}}、{{< source-link site="qatar.hayya" text="Hayya" >}}。
+
 ## 速記要點
 
 - **免費入境**：102 個以上護照國家，具體條件看實時結果。

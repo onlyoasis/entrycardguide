@@ -21,6 +21,14 @@ lastmod: 2026-10-26
 按官方表單順序的逐欄位講解，常見錯誤和真實原因。
 → [欄位逐項指南](/zh-hant/mexico/how-to-fill/)
 
+## 誰要填，誰不用填
+
+- **陸路入境**：經陸路入境墨西哥的外國人，可以在 INM 網站上辦電子 FMM。
+- **航空入境**：INM 說明，坐飛機入境不用填 FMMe。
+- **按國籍或證件**：不分國籍，看入境方式：陸路用 FMM-E，坐飛機不用預填。中國大陸、臺灣、香港護照都一樣。
+
+來源：{{< source-link site="mexico.fmm" text="INM FMM-E 申請條件" >}}、{{< source-link site="mexico.air_fmmd" text="INM 數字 FMM 說明" >}}。要不要簽證是另一回事。
+
 ## 速記要點
 
 - **官方網址**：`inm.gob.mx/fmme/`，沒有別的網址以 `.gob.mx` 結尾，這個後綴只對墨西哥政府機構開放。

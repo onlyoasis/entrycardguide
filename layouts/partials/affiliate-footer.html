@@ -11,7 +11,7 @@
   <div class="grid grid-cols-1{{ if gt (len $cards) 1 }} md:grid-cols-2{{ end }} gap-md">
     {{- range $cards }}
     {{- $key := printf "affiliate_%s_%s" .partner .product }}
-    <a href="{{ .url }}" rel="sponsored noopener noreferrer" data-analytics-event="affiliate_click" data-affiliate-partner="{{ .partner }}" data-affiliate-product="{{ .product }}" data-affiliate-slot="{{ $slot }}" class="block border border-rule p-md no-underline hover:border-ink">
+    <a href="{{ .url }}" target="_blank" rel="sponsored noopener" data-analytics-event="affiliate_click" data-affiliate-partner="{{ .partner }}" data-affiliate-product="{{ .product }}" data-affiliate-slot="{{ $slot }}" class="block border border-rule p-md no-underline hover:border-ink">
       <span class="block text-meta text-muted font-mono uppercase mb-2">{{ i18n (printf "%s_label" $key) }}</span>
       <strong class="block text-ink mb-2">{{ i18n (printf "%s_heading" $key) }}</strong>
       <span class="block text-small text-muted leading-relaxed mb-3">{{ i18n (printf "%s_body" $key) }}</span>

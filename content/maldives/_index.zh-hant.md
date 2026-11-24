@@ -22,6 +22,14 @@ lastmod: 2026-10-26
 7 項資料，來自門戶公開的第一步和官方旅遊入境頁面。
 → [打開欄位指南](/zh-hant/maldives/how-to-fill/)
 
+## 誰要填，誰不用填
+
+- **要填**：所有旅客，在抵達航班前 96 小時內提交。每人一份，兒童和未成年人也要單獨填。
+- **不用填**：馬爾代夫公民。移民局已停止要求馬爾代夫人填寫旅客申報。
+- **按國籍或證件**：不分國籍。中國大陸、香港、臺灣護照都填同一張免費 IMUGA 表。
+
+來源：{{< source-link site="maldives.traveller_declaration" text="IMUGA 旅客申報" >}}、{{< source-link site="maldives.tourist_visa" text="旅遊簽證頁" >}}、{{< source-link site="maldives.citizen_exemption" text="移民局對本國公民的公告" >}}。要不要簽證是另一回事。
+
 ## 速記要點
 
 - **官方門戶**：`imuga.immigration.gov.mv`，在政府 `.gov.mv` 域名下。

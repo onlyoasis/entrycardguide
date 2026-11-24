@@ -25,6 +25,14 @@ lastmod: 2026-10-23
 旅客、移民、海關和衛生資訊，不編官方正則。
 → [打開欄位指南](/zh-hant/cuba/how-to-fill/)
 
+## 誰要填，誰不用填
+
+- **要填**：每一位抵達古巴的旅客，每次入境都要如實填寫 D'Viajeros。
+- **豁免**：沒找到給古巴公民、居民、機組或轉機旅客免填的官方原文，這裡不列。
+- **按國籍或證件**：不分國籍，所有旅客填同一張 D'Viajeros。中國大陸、香港、臺灣護照都一樣。
+
+來源：{{< source-link site="cuba.mandatory_notice" text="D'Viajeros 強制填寫通知" >}}。要不要簽證或旅遊卡是另一回事。
+
 ## 速記要點
 
 - **D'Viajeros 官網**：`dviajeros.mitrans.gob.cu`。

@@ -24,6 +24,14 @@ lastmod: 2026-10-26
 門戶和 FAQ 中的 10 項資料，含官方入境清單。
 → [打開欄位指南](/zh-hant/egypt/how-to-fill/)
 
+## 誰要申請，誰不用申請
+
+- **要申請**：官網列出國家的公民。網上只辦旅遊簽證。
+- **不用申請**：官網上沒找到一般豁免的原文，這裡不列。
+- **按國籍或證件**：沒有按國籍分的另一張表。你的護照能不能用、要不要申請，看官方{{< source-link site="egypt.faq" text="電子簽常見問題" >}}。
+
+來源：{{< source-link site="egypt.faq" text="埃及電子簽常見問題" >}}、{{< source-link site="egypt.embassy_visa_requirements" text="使館簽證要求" >}}。
+
 ## 速記要點
 
 - **官方門戶**：`visa2egypt.gov.eg`，在政府 `.gov.eg` 域名下。

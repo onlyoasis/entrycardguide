@@ -24,6 +24,14 @@ lastmod: 2026-10-26
 8 項內容全部來自 ASAN 公開頁面，不編正則、字符限制或報錯原文。
 → [打開申請準備指南](/zh-hant/azerbaijan/how-to-fill/)
 
+## 誰要申請，誰不用申請
+
+- **要申請**：ASAN 電子簽國家名單上的護照。這是收費的單次入境簽證。
+- **不用申請**：外交部免簽名單覆蓋的旅客，名單寫明護照類型、停留期限和生效日期。
+- **按國籍或證件**：沒有按國籍分的另一張表。你的護照能不能用、要不要申請，看官方{{< source-link site="azerbaijan.eligible_countries" text="電子簽國家名單" >}}。
+
+來源：{{< source-link site="azerbaijan.eligible_countries" text="ASAN 電子簽國家" >}}、{{< source-link site="azerbaijan.visa_free" text="外交部免簽名單" >}}。
+
 ## 速記要點
 
 - **官方申請入口**：`evisa.gov.az`。

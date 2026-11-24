@@ -22,6 +22,14 @@ lastmod: 2026-10-26
 13 項檢查覆蓋路徑、護照、住宿、圖片、激活與郵件 PDF。
 → [打開填寫指南](/zh-hant/uzbekistan/how-to-fill/)
 
+## 誰要申請，誰不用申請
+
+- **要申請**：可以辦電子入境簽證的國家的公民。
+- **不用申請**：享受免簽制度國家的公民，行程符合免簽條件時。
+- **按國籍或證件**：沒有按國籍分的另一張表。你的護照能不能用、要不要申請，看官方{{< source-link site="uzbekistan.visa_policy" text="簽證政策頁面" >}}。
+
+來源：{{< source-link site="uzbekistan.visa_policy" text="烏茲別克斯坦外交部簽證政策" >}}。
+
 ## 快速事實
 
 - **官方門戶：** `e-visa.gov.uz/application`。

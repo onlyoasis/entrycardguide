@@ -258,7 +258,7 @@ const globalUser = await fixture();
 database.prepare("UPDATE mcp_users SET plan='enterprise' WHERE id=?").run(globalUser.id);
 payload = await tool("list_countries", {}, globalUser.key);
 check("all 249 destinations available without duplicate ISO2 IDs", payload.count === 249 && payload.countries.length === 249 && new Set(payload.countries.map(item => item.iso2)).size === 249);
-check("53 detailed country guides remain available", payload.detailedGuideCount === 53 && payload.countries.filter(item => item.guide).length === 53);
+check("54 detailed country guides remain available", payload.detailedGuideCount === 54 && payload.countries.filter(item => item.guide).length === 54);
 for (const [args, expected] of [[{}, -32602], [{ id: "th" }, -32602], [{ id: "TH", extra: true }, -32602], [{ id: 42 }, -32602]]) {
   response = await mcpPost(context(rpc("tools/call", { name: "get_jurisdiction", arguments: args }, globalUser.key)));
   check("global tool validates ID and rejects unknown properties", (await response.json()).error?.code === expected);

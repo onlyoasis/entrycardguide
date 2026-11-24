@@ -22,6 +22,14 @@ VPA 和常規簽證共用 Pakistan Online Visa System。先查護照資格，再
 8 項檢查覆蓋路徑、類別、護照、照片、上傳文件和獲批通知。
 → [打開填寫指南](/zh-hant/pakistan/how-to-fill/)
 
+## 誰要申請，誰不用申請
+
+- **要申請**：入境前簽證（VPA）名單上 120 國的公民，用於商務、旅遊或錫克教朝聖。
+- **不用申請**：海灣合作委員會國家公民，商務和旅遊免簽。
+- **按國籍或證件**：沒有按國籍分的另一張表。你的護照能不能用、要不要申請，看官方{{< source-link site="pakistan.eligibility" text="VPA 國家名單" >}}。
+
+來源：{{< source-link site="pakistan.eligibility" text="巴基斯坦移民護照總局 VPA 說明" >}}、{{< source-link site="pakistan.gcc_exemption" text="外交部海合會公告" >}}。
+
 ## 快速事實
 
 - **官方門戶：** `visa.nadra.gov.pk`。

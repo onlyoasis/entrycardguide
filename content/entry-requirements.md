@@ -24,7 +24,7 @@ faq:
 
 The arrival card is one check. At the counter, the officer also reads your passport's expiry date and can ask how you will leave and how you will pay for the stay. Airlines check the passport rule at check-in as well.
 
-This table covers all 53 destinations with a full guide on this site. Every rule is quoted from a government page: an immigration department, a foreign ministry, an official e-visa portal, an embassy or the law itself. The domain under each rule links to that page. Many rules cover one route only, such as an e-visa or visa-free entry. The label after a rule says which.
+This table covers 53 of the 54 destinations with a full guide on this site; Ghana is not in it yet. Every rule is quoted from a government page: an immigration department, a foreign ministry, an official e-visa portal, an embassy or the law itself. The domain under each rule links to that page. Many rules cover one route only, such as an e-visa or visa-free entry. The label after a rule says which.
 
 {{< entry-requirements >}}
 

@@ -38,12 +38,11 @@ const hasHan = (s) => /[\u3400-\u9fff]/.test(s);
 // English sentence is a gap, never a pass (review-12).
 const ERROR_ALLOWLIST = new Set([]);
 
-// discover validator countries from the EN content (single source)
-const out = execFileSync("grep", ["-rl", "{{< validator", contentRoot, "--include=*.md"], { encoding: "utf8" });
-const countries = [...new Set(out.trim().split("\n").map((line) => {
-  const rel = path.relative(contentRoot, line);
-  return rel.split(path.sep)[0];
-}))].sort();
+// discover validator rule files from the content (single source): the
+// shortcode's country="…" names data/rules/{name}.json, which can differ from
+// the folder (a country's second form, e.g. india_air_suvidha).
+const out = execFileSync("grep", ["-rhoE", '\\{\\{< validator country="[^"]+"', contentRoot, "--include=*.md"], { encoding: "utf8" });
+const countries = [...new Set(out.trim().split("\n").map((line) => line.match(/country="([^"]+)"/)[1]))].sort();
 
 const problems = [];
 let fields = 0, errs = 0;

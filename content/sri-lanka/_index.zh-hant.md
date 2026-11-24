@@ -26,6 +26,14 @@ lastmod: 2026-10-26
 8 項準備清單，全部來自移民局公開頁面，不編造正則和報錯原文。
 → [打開申請指南](/zh-hant/sri-lanka/how-to-fill/)
 
+## 誰要申請，誰不用申請
+
+- **要申請**：所有外國人，豁免者除外。免費的 40 國，以及馬爾代夫、塞舌爾、新加坡公民也要申請。
+- **不用申請**：官方表格列出的外交、公務護照持有人，在表格寫明的訪問範圍內。持有效居留簽證或多次入境簽證的，簽證到期或取消前不能再申請新的 ETA。
+- **按國籍或證件**：同一張豁免表列有香港特區公民，停留 30 天以內。
+
+來源：{{< source-link site="sri-lanka.eta_scope" text="ETA 資訊中心" >}}、{{< source-link site="sri-lanka.official_exemptions" text="豁免表" >}}、{{< source-link site="sri-lanka.eta_faq" text="ETA 常見問題" >}}。
+
 ## 速記要點
 
 - **官方申請入口**：`eta.gov.lk`，由移民局官網連結過去。

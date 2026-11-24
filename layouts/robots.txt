@@ -1,4 +1,9 @@
 User-agent: *
+# MCP account and API endpoints (Pages Functions) are not pages. In a static
+# release they answer 503, and GET on POST-only routes answers 405; keep
+# crawlers off them so Search Console does not report 5xx/4xx index errors.
+# Disallow comes first for parsers that take the first matching rule.
+Disallow: /api/
 Allow: /
 
 Sitemap: {{ "sitemap.xml" | absURL }}
